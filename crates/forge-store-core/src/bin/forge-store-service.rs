@@ -91,7 +91,7 @@ mod linux {
     pub async fn main() -> Result<(), Box<dyn std::error::Error>> {
         let paths = Paths::from_args()?;
         private_directory(&paths.state)?;
-        private_directory(&paths.cache)?;
+        prepare_cache_directory(&paths.cache)?;
         let socket_dir = paths.socket.parent().ok_or("invalid socket path")?;
         private_directory(socket_dir)?;
         let metadata = Url::from_directory_path(paths.share.join("tuf/metadata"))
@@ -146,6 +146,11 @@ mod linux {
         std::fs::create_dir_all(path)?;
         std::fs::set_permissions(path, std::fs::Permissions::from_mode(0o700))?;
         Ok(())
+    }
+
+    fn prepare_cache_directory(path: &Path) -> Result<(), Box<dyn std::error::Error>> {
+        private_directory(path.parent().ok_or("cache path has no parent")?)?;
+        private_directory(path)
     }
 
     async fn serve_connection(
@@ -857,6 +862,32 @@ mod linux {
             let token = CancellationToken::new();
             register_running_token(&queue, &running, &job, &token).unwrap();
             assert!(token.is_cancelled());
+        }
+
+        #[test]
+        fn cache_parent_is_private_for_package_service_staging() {
+            use std::os::unix::fs::PermissionsExt;
+            let directory = tempfile::tempdir().unwrap();
+            let cache = directory.path().join(".cache/forge-store");
+            std::fs::create_dir_all(cache.parent().unwrap()).unwrap();
+            std::fs::set_permissions(
+                cache.parent().unwrap(),
+                std::fs::Permissions::from_mode(0o755),
+            )
+            .unwrap();
+            prepare_cache_directory(&cache).unwrap();
+            assert_eq!(
+                std::fs::metadata(cache.parent().unwrap())
+                    .unwrap()
+                    .permissions()
+                    .mode()
+                    & 0o777,
+                0o700
+            );
+            assert_eq!(
+                std::fs::metadata(cache).unwrap().permissions().mode() & 0o777,
+                0o700
+            );
         }
     }
 }

@@ -222,7 +222,6 @@ impl VerifiedCache {
             }
             let client = reqwest::Client::builder()
                 .redirect(reqwest::redirect::Policy::none())
-                .no_proxy()
                 .resolve_to_addrs(host, &addresses)
                 .connect_timeout(Duration::from_secs(10))
                 .timeout(Duration::from_secs(120))
