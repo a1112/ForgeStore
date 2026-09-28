@@ -95,6 +95,10 @@ def inspect(archive: tarfile.TarFile) -> tuple[dict, dict]:
         stream = archive.extractfile(member)
         if stream is None:
             raise ValueError("bundle member unreadable")
+        first = stream.read(256)
+        if member.mode & 0o111 and first.startswith(b"#!") and b"\r" in first.split(b"\n", 1)[0]:
+            raise ValueError("executable script has a CRLF shebang")
+        digest.update(first)
         for block in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(block)
         if digest.hexdigest() != record["sha256"]:

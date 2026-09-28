@@ -14,11 +14,13 @@ def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def bundle(path: Path, *, bad_hash=False, linked=False):
+def bundle(path: Path, *, bad_hash=False, linked=False, crlf_script=False):
     payloads = {
         "/usr/bin/forge-store-service": (b"service", "0755"),
         "/usr/lib/systemd/user/forge-store.service": (b"[Install]\nWantedBy=default.target\n", "0644"),
     }
+    if crlf_script:
+        payloads["/usr/lib/forge-store/provision-flatpak-fixture"] = (b"#!/bin/sh\r\nexit 0\r\n", "0755")
     records = [{"path": target, "sha256": "0" * 64 if bad_hash else digest(data),
                 "mode": mode, "size": len(data)}
                for target, (data, mode) in sorted(payloads.items())]
@@ -66,6 +68,9 @@ class BundleInstallTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 install(archive, root / "image")
             bundle(archive, linked=True)
+            with self.assertRaises(ValueError):
+                install(archive, root / "image")
+            bundle(archive, crlf_script=True)
             with self.assertRaises(ValueError):
                 install(archive, root / "image")
 

@@ -72,6 +72,42 @@ pub fn compatforge_poll_status<'a>(
     Ok(status)
 }
 
+pub fn compatforge_selected_install(summary: &Value, app_id: &str) -> Option<(String, bool)> {
+    if summary.get("installed") != Some(&json!(true))
+        || summary.get("application")?.get("id")?.as_str()? != app_id
+    {
+        return None;
+    }
+    let state = summary.get("generations")?;
+    if state.get("applicationId")?.as_str()? != app_id {
+        return None;
+    }
+    let selected = state.get("selectedGeneration")?.as_str()?;
+    let generations = state.get("generations")?.as_array()?;
+    let current = generations.iter().find(|generation| {
+        generation.get("id").and_then(Value::as_str) == Some(selected)
+            && generation.get("status").and_then(Value::as_str) == Some("ready")
+    })?;
+    if current.get("definition")?.get("id")?.as_str()? != app_id {
+        return None;
+    }
+    let version = current
+        .get("definition")?
+        .get("version")?
+        .as_str()?
+        .to_string();
+    let can_rollback = generations.iter().any(|generation| {
+        generation.get("id").and_then(Value::as_str) != Some(selected)
+            && generation.get("status").and_then(Value::as_str) == Some("ready")
+            && generation
+                .get("definition")
+                .and_then(|value| value.get("id"))
+                .and_then(Value::as_str)
+                == Some(app_id)
+    });
+    Some((version, can_rollback))
+}
+
 pub struct CompatForgeClient {
     executable: PathBuf,
     request_dir: PathBuf,
@@ -227,7 +263,7 @@ pub struct FlatpakInvocation {
 
 impl FlatpakInvocation {
     pub fn new(remote: &str, reference: &str, action: Action) -> Result<Self, BackendError> {
-        let valid_remote = matches!(remote, "flathub" | "forge-store-fixture");
+        let valid_remote = remote == "forge-store-fixture";
         let valid_ref = reference.starts_with("app/")
             && reference.split('/').count() == 4
             && reference.len() <= 256
@@ -270,6 +306,25 @@ impl FlatpakInvocation {
         Ok(Self {
             args: args.into_iter().map(str::to_string).collect(),
         })
+    }
+}
+
+pub fn flatpak_record_matches(record: &Value, reference: &str, remote: &str) -> bool {
+    let parts = reference.split('/').collect::<Vec<_>>();
+    parts.len() == 4
+        && parts[0] == "app"
+        && record.get("application_id").and_then(Value::as_str) == Some(parts[1])
+        && record.get("arch").and_then(Value::as_str) == Some(parts[2])
+        && record.get("branch").and_then(Value::as_str) == Some(parts[3])
+        && record.get("origin").and_then(Value::as_str) == Some(remote)
+}
+
+pub fn flatpak_action_completed(action: Action, before: Option<&str>, after: Option<&str>) -> bool {
+    match action {
+        Action::Install => before.is_none() && after.is_some(),
+        Action::Update => before.is_some() && after.is_some() && before != after,
+        Action::Uninstall => before.is_some() && after.is_none(),
+        Action::Rollback => false,
     }
 }
 

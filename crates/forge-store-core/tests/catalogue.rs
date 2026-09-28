@@ -72,4 +72,6 @@ fn reviewed_local_flatpak_fixture_is_allowed() {
     assert!(Catalog::parse(serde_json::to_vec(&catalog).unwrap().as_slice()).is_ok());
     catalog["entries"][0]["delivery"]["remote"] = "unknown-remote".into();
     assert!(Catalog::parse(serde_json::to_vec(&catalog).unwrap().as_slice()).is_err());
+    catalog["entries"][0]["delivery"]["remote"] = "flathub".into();
+    assert!(Catalog::parse(serde_json::to_vec(&catalog).unwrap().as_slice()).is_err());
 }

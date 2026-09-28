@@ -74,6 +74,11 @@ def build(args) -> dict:
         size = source.stat().st_size
         if size > MAX_FILE:
             raise ValueError(f"oversized bundle file: {target}")
+        if mode == "0755":
+            with source.open("rb") as stream:
+                first = stream.read(256)
+            if first.startswith(b"#!") and b"\r" in first.split(b"\n", 1)[0]:
+                raise ValueError(f"executable source has a CRLF shebang: {target}")
         records.append({"path": target, "sha256": sha256(source), "mode": mode, "size": size})
     manifest = {"schemaVersion": 1, "sourceCommit": args.source_commit, "files": records}
     encoded = (json.dumps(manifest, sort_keys=True, separators=(",", ":")) + "\n").encode("ascii")
@@ -93,6 +98,7 @@ def build(args) -> dict:
             info.mode = 0o644
             info.uid = info.gid = info.mtime = 0
             archive.addfile(info, io.BytesIO(encoded))
+    args.output.chmod(0o644)
     return {"bundle": str(args.output), "sha256": sha256(args.output),
             "files": len(records), "bytes": sum(item["size"] for item in records),
             "sourceCommit": args.source_commit}

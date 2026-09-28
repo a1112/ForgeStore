@@ -13,7 +13,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #[cfg(unix)]
 mod linux {
     use forge_store_core::backends::{
-        compatforge_poll_status, fixture_remote_is_trusted, CompatForgeClient, CompatForgeRequest,
+        compatforge_poll_status, compatforge_selected_install, fixture_remote_is_trusted,
+        flatpak_action_completed, flatpak_record_matches, CompatForgeClient, CompatForgeRequest,
         FlatpakInvocation, PackageClient, PackageRequest,
     };
     use forge_store_core::cache::VerifiedCache;
@@ -308,15 +309,13 @@ mod linux {
         let Some(records) = result.as_array() else {
             return (false, Vec::new());
         };
-        let installed = records.iter().filter(|record| record.get("installed") == Some(&json!(true)))
-            .filter_map(|record| {
-                let id = record.get("application")?.get("id")?.as_str()?;
-                if !store.catalogue.entries.iter().any(|entry| entry.id == id) { return None; }
-                let version = record.get("application")?.get("version")?.as_str()?;
-                let count = record.get("generations")?.get("generations")?.as_array()?
-                    .iter().filter(|generation| generation.get("status") == Some(&json!("ready"))).count();
-                Some(json!({"appId":id,"backend":"compatforge","version":version,"canRollback":count>1}))
-            }).collect();
+        let installed = records.iter().filter_map(|record| {
+            let id = record.get("application")?.get("id")?.as_str()?;
+            if !store.catalogue.entries.iter().any(|entry|
+                entry.id == id && matches!(entry.delivery, Delivery::Compatforge { .. })) { return None; }
+            let (version, can_rollback) = compatforge_selected_install(record, id)?;
+            Some(json!({"appId":id,"backend":"compatforge","version":version,"canRollback":can_rollback}))
+        }).collect();
         (true, installed)
     }
 
@@ -345,7 +344,7 @@ mod linux {
         let result = tokio::time::timeout(
             Duration::from_secs(3),
             tokio::process::Command::new("/usr/bin/flatpak")
-                .args(["--user", "list", "--app", "--columns=application,version"])
+                .args(["--user", "list", "--app", "--json"])
                 .kill_on_drop(true)
                 .output(),
         )
@@ -356,14 +355,13 @@ mod linux {
         if !result.status.success() || result.stdout.len() > 1024 * 1024 {
             return (false, Vec::new());
         }
-        let lines = String::from_utf8_lossy(&result.stdout);
+        let Ok(rows) = serde_json::from_slice::<Vec<Value>>(&result.stdout) else {
+            return (false, Vec::new());
+        };
         let installed = store.catalogue.entries.iter().filter_map(|entry| {
-            let Delivery::Flatpak { reference, .. } = &entry.delivery else { return None; };
-            let app = reference.split('/').nth(1)?;
-            let version = lines.lines().find_map(|line| {
-                let mut columns = line.split_whitespace();
-                if columns.next() == Some(app) { Some(columns.next().unwrap_or("")) } else { None }
-            })?;
+            let Delivery::Flatpak { remote, reference } = &entry.delivery else { return None; };
+            let row = rows.iter().find(|row| flatpak_record_matches(row, reference, remote))?;
+            let version = row.get("version").and_then(Value::as_str).unwrap_or("");
             Some(json!({"appId":entry.id,"backend":"flatpak","version":version,"canRollback":false}))
         }).collect();
         (true, installed)
@@ -391,12 +389,13 @@ mod linux {
                     .entries
                     .iter()
                     .find(|entry| entry.id == id)?;
-                let version = if let Delivery::ForgePackage { artifact } = &entry.delivery {
-                    if app.get("active").and_then(Value::as_str) == Some(artifact.sha256.as_str()) {
-                        entry.version.as_str()
-                    } else {
-                        ""
-                    }
+                let Delivery::ForgePackage { artifact } = &entry.delivery else {
+                    return None;
+                };
+                let version = if app.get("active").and_then(Value::as_str)
+                    == Some(artifact.sha256.as_str())
+                {
+                    entry.version.as_str()
                 } else {
                     ""
                 };
@@ -414,8 +413,18 @@ mod linux {
             match store.queue.start_next() {
                 Ok(Some(job)) => {
                     let token = CancellationToken::new();
-                    if let Ok(mut guard) = store.running.lock() {
-                        *guard = Some((job.id.clone(), token.clone()));
+                    if let Err(error) =
+                        register_running_token(&store.queue, &store.running, &job, &token)
+                    {
+                        eprintln!("job {} token registration failed: {error}", job.id);
+                        if let Err(write_error) =
+                            store
+                                .queue
+                                .finish(&job.id, false, Some("worker registration failed"))
+                        {
+                            eprintln!("job {} terminal state write failed: {write_error}", job.id);
+                        }
+                        continue;
                     }
                     let outcome = run_job(&store, &job, &token).await;
                     if let Ok(mut guard) = store.running.lock() {
@@ -473,6 +482,26 @@ mod linux {
                 Err(_) => tokio::time::sleep(Duration::from_secs(5)).await,
             }
         }
+    }
+
+    fn register_running_token(
+        queue: &JobQueue,
+        running: &Mutex<Option<(String, CancellationToken)>>,
+        job: &Job,
+        token: &CancellationToken,
+    ) -> Result<(), String> {
+        let mut guard = running.lock().map_err(|_| "running job lock poisoned")?;
+        *guard = Some((job.id.clone(), token.clone()));
+        // Hold the lock while re-reading. A cancel racing after this read waits
+        // for the lock, then finds and cancels the newly registered token.
+        let current = queue
+            .get(&job.id)
+            .map_err(|e| e.to_string())?
+            .ok_or("running job disappeared")?;
+        if current.state == JobState::Cancelling {
+            token.cancel();
+        }
+        Ok(())
     }
 
     async fn run_job(
@@ -638,18 +667,98 @@ mod linux {
         {
             return Err("Flatpak fixture remote URL differs from the image".into());
         }
+        let before = flatpak_installed_commit(remote, reference).await?;
+        match action {
+            Action::Install if before.is_some() => {
+                return Err("Flatpak application is already installed".into())
+            }
+            Action::Update | Action::Uninstall if before.is_none() => {
+                return Err("Flatpak application is not installed from the reviewed remote".into())
+            }
+            _ => {}
+        }
         let invocation = FlatpakInvocation::new(remote, reference, action)?;
+        if cancel.is_cancelled() {
+            return Ok(RunOutcome::Cancelled);
+        }
         let mut command = tokio::process::Command::new("/usr/bin/flatpak");
-        command.args(&invocation.args).kill_on_drop(true);
-        let child = command.spawn()?;
-        let status = tokio::select! {
-            _ = cancel.cancelled() => return Ok(RunOutcome::Cancelled),
-            status = child.wait_with_output() => status?,
+        command
+            .args(&invocation.args)
+            .kill_on_drop(true)
+            .stdout(std::process::Stdio::null())
+            .stderr(std::process::Stdio::null());
+        let mut child = command.spawn()?;
+        let (status, cancelled) = tokio::select! {
+            status = child.wait() => (status?, false),
+            _ = cancel.cancelled() => {
+                let _ = child.start_kill();
+                let status = tokio::time::timeout(Duration::from_secs(10), child.wait()).await??;
+                (status, true)
+            },
         };
-        if !status.status.success() {
-            return Err(format!("Flatpak exited with {}", status.status).into());
+        let after = flatpak_installed_commit(remote, reference).await?;
+        if cancelled {
+            if flatpak_action_completed(action, before.as_deref(), after.as_deref()) {
+                return Ok(RunOutcome::Completed);
+            }
+            if before == after {
+                return Ok(RunOutcome::Cancelled);
+            }
+            return Err("Flatpak state is ambiguous after cancellation".into());
+        }
+        if !status.success() {
+            return Err(format!("Flatpak exited with {status}").into());
+        }
+        if action == Action::Uninstall && after.is_some()
+            || matches!(action, Action::Install | Action::Update) && after.is_none()
+        {
+            return Err("Flatpak reported success without the expected installed state".into());
         }
         Ok(RunOutcome::Completed)
+    }
+
+    async fn flatpak_installed_commit(
+        remote: &str,
+        reference: &str,
+    ) -> Result<Option<String>, Box<dyn std::error::Error + Send + Sync>> {
+        let listed = tokio::time::timeout(
+            Duration::from_secs(5),
+            tokio::process::Command::new("/usr/bin/flatpak")
+                .args(["--user", "list", "--app", "--json"])
+                .kill_on_drop(true)
+                .output(),
+        )
+        .await??;
+        if !listed.status.success() || listed.stdout.len() > 1024 * 1024 {
+            return Err("Flatpak installed list is unavailable or oversized".into());
+        }
+        let rows: Vec<Value> = serde_json::from_slice(&listed.stdout)?;
+        let matches = rows
+            .iter()
+            .filter(|row| flatpak_record_matches(row, reference, remote))
+            .count();
+        if matches > 1 {
+            return Err("duplicate Flatpak installed reference".into());
+        }
+        if matches == 0 {
+            return Ok(None);
+        }
+        let info = tokio::time::timeout(
+            Duration::from_secs(5),
+            tokio::process::Command::new("/usr/bin/flatpak")
+                .args(["info", "--user", "--show-commit", reference])
+                .kill_on_drop(true)
+                .output(),
+        )
+        .await??;
+        if !info.status.success() || info.stdout.len() > 128 {
+            return Err("Flatpak commit lookup failed".into());
+        }
+        let commit = std::str::from_utf8(&info.stdout)?.trim();
+        if commit.len() != 64 || !commit.bytes().all(|b| b.is_ascii_hexdigit()) {
+            return Err("Flatpak commit ID is invalid".into());
+        }
+        Ok(Some(commit.to_ascii_lowercase()))
     }
 
     async fn run_package(
@@ -728,6 +837,26 @@ mod linux {
             JobState::Succeeded => "succeeded",
             JobState::Failed => "failed",
             JobState::Cancelled => "cancelled",
+        }
+    }
+
+    #[cfg(test)]
+    mod tests {
+        use super::*;
+
+        #[test]
+        fn cancellation_between_start_and_token_registration_is_delivered() {
+            let directory = tempfile::tempdir().unwrap();
+            let queue = JobQueue::open(&directory.path().join("jobs.sqlite")).unwrap();
+            let job = queue
+                .enqueue("7zip", Backend::Compatforge, Action::Install)
+                .unwrap();
+            queue.start_next().unwrap();
+            queue.cancel(&job.id).unwrap();
+            let running = Mutex::new(None);
+            let token = CancellationToken::new();
+            register_running_token(&queue, &running, &job, &token).unwrap();
+            assert!(token.is_cancelled());
         }
     }
 }

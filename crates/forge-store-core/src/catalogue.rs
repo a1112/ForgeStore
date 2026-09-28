@@ -136,9 +136,7 @@ impl Catalog {
                     artifact.validate_remote(MAX_ARTIFACT_BYTES)?;
                 }
                 Delivery::Flatpak { remote, reference } => {
-                    if !matches!(remote.as_str(), "flathub" | "forge-store-fixture")
-                        || !valid_flatpak_ref(reference)
-                    {
+                    if remote != "forge-store-fixture" || !valid_flatpak_ref(reference) {
                         return Err(CatalogError::Invalid(
                             "unreviewed Flatpak remote or invalid ref",
                         ));

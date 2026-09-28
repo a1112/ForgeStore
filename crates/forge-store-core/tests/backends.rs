@@ -1,5 +1,6 @@
 use forge_store_core::backends::{
-    compatforge_poll_status, decode_compatforge_reply, fixture_remote_is_trusted,
+    compatforge_poll_status, compatforge_selected_install, decode_compatforge_reply,
+    fixture_remote_is_trusted, flatpak_action_completed, flatpak_record_matches,
     CompatForgeRequest, FlatpakInvocation, PackageRequest,
 };
 use forge_store_core::catalogue::Artifact;
@@ -67,7 +68,8 @@ fn windows_install_must_match_reviewed_service_recipe() {
 #[test]
 fn flatpak_actions_use_fixed_arguments() {
     let reference = "app/org.forgeos.StoreFixture/x86_64/stable";
-    let install = FlatpakInvocation::new("flathub", reference, Action::Install).unwrap();
+    let install =
+        FlatpakInvocation::new("forge-store-fixture", reference, Action::Install).unwrap();
     assert_eq!(
         install.args,
         [
@@ -75,11 +77,11 @@ fn flatpak_actions_use_fixed_arguments() {
             "install",
             "--noninteractive",
             "--assumeyes",
-            "flathub",
+            "forge-store-fixture",
             reference
         ]
     );
-    let update = FlatpakInvocation::new("flathub", reference, Action::Update).unwrap();
+    let update = FlatpakInvocation::new("forge-store-fixture", reference, Action::Update).unwrap();
     assert_eq!(
         update.args,
         [
@@ -91,12 +93,82 @@ fn flatpak_actions_use_fixed_arguments() {
         ]
     );
     assert!(FlatpakInvocation::new(
-        "flathub",
+        "forge-store-fixture",
         "app/evil;touch /tmp/pwn/x86_64/stable",
         Action::Install
     )
     .is_err());
-    assert!(FlatpakInvocation::new("flathub", reference, Action::Rollback).is_err());
+    assert!(FlatpakInvocation::new("forge-store-fixture", reference, Action::Rollback).is_err());
+    assert!(FlatpakInvocation::new("flathub", reference, Action::Install).is_err());
+}
+
+#[test]
+fn flatpak_installed_identity_binds_ref_arch_branch_and_remote() {
+    let reference = "app/org.forgeos.StoreFixture/x86_64/stable";
+    let row = json!({"application_id":"org.forgeos.StoreFixture","arch":"x86_64",
+        "branch":"stable","origin":"forge-store-fixture","version":"1.0"});
+    assert!(flatpak_record_matches(
+        &row,
+        reference,
+        "forge-store-fixture"
+    ));
+    for (field, value) in [
+        ("arch", "aarch64"),
+        ("branch", "beta"),
+        ("origin", "evil-remote"),
+        ("application_id", "org.forgeos.Other"),
+    ] {
+        let mut wrong = row.clone();
+        wrong[field] = value.into();
+        assert!(!flatpak_record_matches(
+            &wrong,
+            reference,
+            "forge-store-fixture"
+        ));
+    }
+}
+
+#[test]
+fn flatpak_cancel_resolution_uses_provider_commit_state() {
+    assert!(flatpak_action_completed(Action::Install, None, Some("new")));
+    assert!(!flatpak_action_completed(Action::Install, None, None));
+    assert!(flatpak_action_completed(
+        Action::Update,
+        Some("old"),
+        Some("new")
+    ));
+    assert!(!flatpak_action_completed(
+        Action::Update,
+        Some("old"),
+        Some("old")
+    ));
+    assert!(flatpak_action_completed(
+        Action::Uninstall,
+        Some("old"),
+        None
+    ));
+    assert!(!flatpak_action_completed(
+        Action::Uninstall,
+        Some("old"),
+        Some("old")
+    ));
+}
+
+#[test]
+fn compatforge_installed_version_tracks_selected_generation_after_rollback() {
+    let summary = json!({"installed":true,"application":{"id":"7zip","version":"26.01"},
+        "generations":{"applicationId":"7zip","selectedGeneration":"old",
+            "generations":[
+                {"id":"old","status":"ready","definition":{"id":"7zip","version":"25.01"}},
+                {"id":"new","status":"ready","definition":{"id":"7zip","version":"26.01"}}]}});
+    assert_eq!(
+        compatforge_selected_install(&summary, "7zip"),
+        Some(("25.01".into(), true))
+    );
+    assert_eq!(compatforge_selected_install(&summary, "other"), None);
+    let mut bad = summary;
+    bad["generations"]["generations"][0]["definition"]["id"] = "other".into();
+    assert_eq!(compatforge_selected_install(&bad, "7zip"), None);
 }
 
 #[test]
