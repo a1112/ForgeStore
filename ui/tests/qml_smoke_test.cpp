@@ -21,6 +21,7 @@ private slots:
     void treatsCatalogueNamesAsPlainText();
     void searchesCatalogueIds();
     void cardsFillTheirPagesAtReferenceSize();
+    void actionsRespectBackendAndJobState();
 };
 
 void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
@@ -140,6 +141,82 @@ void StoreWindowTest::cardsFillTheirPagesAtReferenceSize() {
         QVERIFY(card != nullptr);
         QTRY_VERIFY2(card->width() >= 600, qPrintable(page + QStringLiteral(" card too narrow: ") + QString::number(card->width())));
     }
+}
+
+void StoreWindowTest::actionsRespectBackendAndJobState() {
+    StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
+    QQmlEngine engine;
+    engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
+    std::unique_ptr<QObject> window(component.create());
+    QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+
+    const QVariantMap packageEntry{{"id", "forge-app"}, {"name", QVariantMap{{"zhCN", "Forge 应用"}}},
+                                   {"delivery", QVariantMap{{"backend", "forge-package"}}}};
+    const QVariantMap compatEntry{{"id", "compat-app"}, {"name", QVariantMap{{"zhCN", "兼容应用"}}},
+                                  {"delivery", QVariantMap{{"backend", "compatforge"}}}};
+    const QVariantMap packageInstall{{"appId", "forge-app"}, {"backend", "forge-package"},
+                                     {"version", "1"}, {"canRollback", true}};
+    const QVariantMap compatInstall{{"appId", "compat-app"}, {"backend", "compatforge"},
+                                    {"version", "1"}, {"canRollback", false}};
+    const QVariantMap runningPackage{{"id", "job-package"}, {"appId", "forge-app"},
+                                     {"backend", "forge-package"}, {"action", "update"}, {"state", "running"}};
+    const QVariantMap interruptedCompat{{"id", "job-interrupted"}, {"appId", "compat-app"},
+                                        {"backend", "compatforge"}, {"action", "install"}, {"state", "interrupted"}};
+    const QVariantMap queuedPackage{{"id", "job-queued"}, {"appId", "forge-app"},
+                                    {"backend", "forge-package"}, {"action", "update"}, {"state", "queued"}};
+    const QVariantMap runningCompat{{"id", "job-compat"}, {"appId", "compat-app"},
+                                    {"backend", "compatforge"}, {"action", "install"}, {"state", "running"}};
+    const QVariantMap state{{"catalogue", QVariantMap{{"entries", QVariantList{packageEntry, compatEntry}}}},
+                            {"installed", QVariantList{packageInstall, compatInstall}},
+                            {"jobs", QVariantList{runningPackage, interruptedCompat, queuedPackage, runningCompat}},
+                            {"backends", QVariantMap{}}};
+    QVERIFY(window->setProperty("state", state));
+    QVERIFY(window->setProperty("page", QStringLiteral("installed")));
+    auto *installedRepeater = window->findChild<QObject *>(QStringLiteral("installedRepeater"));
+    QVERIFY(installedRepeater != nullptr);
+    QQuickItem *packageCard = nullptr;
+    QQuickItem *compatCard = nullptr;
+    QVERIFY(QMetaObject::invokeMethod(installedRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, packageCard), Q_ARG(int, 0)));
+    QVERIFY(QMetaObject::invokeMethod(installedRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, compatCard), Q_ARG(int, 1)));
+    QVERIFY(packageCard != nullptr && compatCard != nullptr);
+    auto *packageUninstall = packageCard->findChild<QObject *>(QStringLiteral("installedUninstallButton"));
+    auto *compatUninstall = compatCard->findChild<QObject *>(QStringLiteral("installedUninstallButton"));
+    QVERIFY(packageUninstall != nullptr && compatUninstall != nullptr);
+    QCOMPARE(packageUninstall->property("visible").toBool(), false);
+    QCOMPARE(compatUninstall->property("visible").toBool(), true);
+
+    QVERIFY(QMetaObject::invokeMethod(window.get(), "openDetails", Q_ARG(QVariant, QVariant(packageEntry))));
+    auto *drawer = window->findChild<QObject *>(QStringLiteral("detailsDrawer"));
+    QVERIFY(drawer != nullptr);
+    QTRY_VERIFY(drawer->property("opened").toBool());
+    auto *detailsUninstall = drawer->findChild<QObject *>(QStringLiteral("detailsUninstallButton"));
+    QVERIFY(detailsUninstall != nullptr);
+    QCOMPARE(detailsUninstall->property("visible").toBool(), false);
+    QVERIFY(window->setProperty("selectedEntry", compatEntry));
+    QTRY_COMPARE(detailsUninstall->property("visible").toBool(), true);
+
+    QVERIFY(window->setProperty("page", QStringLiteral("queue")));
+    auto *queueRepeater = window->findChild<QObject *>(QStringLiteral("queueRepeater"));
+    QVERIFY(queueRepeater != nullptr);
+    QQuickItem *runningPackageCard = nullptr;
+    QQuickItem *interruptedCard = nullptr;
+    QQuickItem *queuedPackageCard = nullptr;
+    QQuickItem *runningCompatCard = nullptr;
+    QVERIFY(QMetaObject::invokeMethod(queueRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, runningPackageCard), Q_ARG(int, 0)));
+    QVERIFY(QMetaObject::invokeMethod(queueRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, interruptedCard), Q_ARG(int, 1)));
+    QVERIFY(QMetaObject::invokeMethod(queueRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, queuedPackageCard), Q_ARG(int, 2)));
+    QVERIFY(QMetaObject::invokeMethod(queueRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, runningCompatCard), Q_ARG(int, 3)));
+    QVERIFY(runningPackageCard && interruptedCard && queuedPackageCard && runningCompatCard);
+    auto *packageCancel = runningPackageCard->findChild<QObject *>(QStringLiteral("queueCancelButton"));
+    auto *interruptedRetry = interruptedCard->findChild<QObject *>(QStringLiteral("queueRetryButton"));
+    auto *queuedCancel = queuedPackageCard->findChild<QObject *>(QStringLiteral("queueCancelButton"));
+    auto *compatCancel = runningCompatCard->findChild<QObject *>(QStringLiteral("queueCancelButton"));
+    QVERIFY(packageCancel && interruptedRetry && queuedCancel && compatCancel);
+    QCOMPARE(packageCancel->property("visible").toBool(), false);
+    QCOMPARE(interruptedRetry->property("enabled").toBool(), true);
+    QCOMPARE(queuedCancel->property("visible").toBool(), true);
+    QCOMPARE(compatCancel->property("visible").toBool(), true);
 }
 
 int main(int argc, char **argv) {

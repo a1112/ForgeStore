@@ -285,7 +285,12 @@ ApplicationWindow {
                                     Button { visible: entry !== null; text: root.labels.details; onClicked: root.openDetails(entry) }
                                     Button { text: root.labels.update; enabled: entry !== null && root.backendReady(entry); onClicked: storeBridge.enqueue(modelData.appId, "update") }
                                     Button { text: root.labels.rollback; enabled: modelData.canRollback === true; onClicked: storeBridge.enqueue(modelData.appId, "rollback") }
-                                    Button { text: root.labels.uninstall; onClicked: storeBridge.enqueue(modelData.appId, "uninstall") }
+                                    Button {
+                                        objectName: "installedUninstallButton"
+                                        text: root.labels.uninstall
+                                        visible: modelData.backend !== "forge-package"
+                                        onClicked: storeBridge.enqueue(modelData.appId, "uninstall")
+                                    }
                                 }
                             }
                         }
@@ -328,13 +333,17 @@ ApplicationWindow {
                                         }
                                     }
                                     Button {
+                                        objectName: "queueCancelButton"
                                         text: root.labels.cancel
+                                        visible: ["queued", "running"].indexOf(modelData.state) >= 0
+                                                 && !(modelData.backend === "forge-package" && modelData.state === "running")
                                         enabled: ["queued", "preparing", "running"].indexOf(modelData.state) >= 0
                                         onClicked: storeBridge.cancel(modelData.id)
                                     }
                                     Button {
+                                        objectName: "queueRetryButton"
                                         text: root.labels.retry
-                                        enabled: ["failed", "cancelled"].indexOf(modelData.state) >= 0
+                                        enabled: ["interrupted", "failed", "cancelled"].indexOf(modelData.state) >= 0
                                         onClicked: storeBridge.retry(modelData.id)
                                     }
                                 }
@@ -446,8 +455,10 @@ ApplicationWindow {
                         onClicked: { storeBridge.enqueue(root.selectedEntry.id, root.installedRecord(root.selectedEntry.id) ? "update" : "install"); details.close(); root.page = "queue" }
                     }
                     Button {
+                        objectName: "detailsUninstallButton"
                         text: root.labels.uninstall
                         visible: root.selectedEntry !== null && root.installedRecord(root.selectedEntry.id) !== null
+                                 && root.backendKey(root.selectedEntry) !== "forgePackage"
                         onClicked: { storeBridge.enqueue(root.selectedEntry.id, "uninstall"); details.close(); root.page = "queue" }
                     }
                 }
