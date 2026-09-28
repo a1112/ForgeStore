@@ -23,6 +23,7 @@ private slots:
     void cardsFillTheirPagesAtReferenceSize();
     void actionsRespectBackendAndJobState();
     void unavailableBackendsDisableMutationsAndShowReasons();
+    void longMetadataKeepsActionsInsideCard();
 };
 
 void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
@@ -295,6 +296,55 @@ void StoreWindowTest::unavailableBackendsDisableMutationsAndShowReasons() {
     QCOMPARE(discoverInstall->property("enabled").toBool(), true);
     QCOMPARE(detailsInstall->property("enabled").toBool(), true);
     QCOMPARE(detailsUninstall->property("enabled").toBool(), true);
+}
+
+void StoreWindowTest::longMetadataKeepsActionsInsideCard() {
+    StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
+    QQmlEngine engine;
+    engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
+    std::unique_ptr<QObject> window(component.create());
+    QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    const QVariantMap entry{{"id", "7zip"}, {"name", QVariantMap{{"zhCN", "7-Zip"}}},
+                            {"summary", QVariantMap{{"zhCN", "压缩与解压文件"}}},
+                            {"version", "26.01"},
+                            {"license", "LGPL-2.1-or-later AND BSD-3-Clause AND BSD-2-Clause AND LicenseRef-unRAR-restriction"},
+                            {"delivery", QVariantMap{{"backend", "compatforge"}}}};
+    const QVariantMap state{{"catalogue", QVariantMap{{"entries", QVariantList{entry}}}},
+                            {"jobs", QVariantList{}}, {"installed", QVariantList{}},
+                            {"backends", QVariantMap{{"compatforge", QVariantMap{{"available", true}}}}}};
+    QVERIFY(window->setProperty("state", state));
+    auto *repeater = window->findChild<QObject *>(QStringLiteral("discoverRepeater"));
+    QVERIFY(repeater != nullptr);
+    QQuickItem *card = nullptr;
+    QVERIFY(QMetaObject::invokeMethod(repeater, "itemAt", Q_RETURN_ARG(QQuickItem *, card), Q_ARG(int, 0)));
+    QVERIFY(card != nullptr);
+    QQuickItem *detailsButton = nullptr;
+    for (auto *child : card->findChildren<QObject *>()) {
+        if (QString::fromLatin1(child->metaObject()->className()).contains(QStringLiteral("Button"))
+            && child->property("text").toString() == QStringLiteral("详情")) {
+            detailsButton = qobject_cast<QQuickItem *>(child);
+            break;
+        }
+    }
+    auto *installButton = card->findChild<QQuickItem *>(QStringLiteral("discoverInstallButton"));
+    QVERIFY(detailsButton != nullptr && installButton != nullptr);
+
+    for (const QSize size : {QSize(1160, 760), QSize(820, 580)}) {
+        QVERIFY(window->setProperty("width", size.width()));
+        QVERIFY(window->setProperty("height", size.height()));
+        QTRY_VERIFY(card->width() > 400);
+        QTest::qWait(80);
+        for (QQuickItem *button : {detailsButton, installButton}) {
+            const QPointF position = button->mapToItem(card, QPointF(0, 0));
+            QVERIFY2(button->width() >= 80, "action button shrank below a useful width");
+            QVERIFY2(position.x() >= -1 && position.x() + button->width() <= card->width() + 1,
+                     qPrintable(QStringLiteral("%1 button clipped at %2x%3: x=%4 width=%5 card=%6")
+                                    .arg(button->property("text").toString())
+                                    .arg(size.width()).arg(size.height())
+                                    .arg(position.x()).arg(button->width()).arg(card->width())));
+        }
+    }
 }
 
 int main(int argc, char **argv) {

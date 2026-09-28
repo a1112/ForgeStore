@@ -237,11 +237,22 @@ ApplicationWindow {
                                     }
                                     ColumnLayout {
                                         Layout.fillWidth: true
-                                        SafeLabel { objectName: "appName"; text: root.localized(modelData.name); color: "#f2f6fc"; font.pixelSize: 18; font.bold: true }
-                                        SafeLabel { text: root.localized(modelData.summary); color: "#b7c7da"; elide: Text.ElideRight; Layout.fillWidth: true }
+                                        Layout.minimumWidth: 0
+                                        SafeLabel {
+                                            objectName: "appName"
+                                            text: root.localized(modelData.name)
+                                            color: "#f2f6fc"; font.pixelSize: 18; font.bold: true
+                                            elide: Text.ElideRight; Layout.fillWidth: true; Layout.minimumWidth: 0
+                                        }
+                                        SafeLabel {
+                                            text: root.localized(modelData.summary)
+                                            color: "#b7c7da"
+                                            elide: Text.ElideRight; Layout.fillWidth: true; Layout.minimumWidth: 0
+                                        }
                                         SafeLabel {
                                             text: root.backendLabel(root.backendKey(modelData)) + " · " + (modelData.version || "") + " · " + (modelData.license || "")
                                             color: "#87a9d2"; font.pixelSize: 12
+                                            elide: Text.ElideRight; Layout.fillWidth: true; Layout.minimumWidth: 0
                                         }
                                         SafeLabel {
                                             objectName: "discoverBackendReason"
