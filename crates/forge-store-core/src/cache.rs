@@ -23,6 +23,12 @@ pub enum CacheError {
     Cancelled,
     #[error("artifact length or digest mismatch")]
     Mismatch,
+    #[error("local fixture rejected: {0}")]
+    LocalFixture(&'static str),
+    #[error("artifact length mismatch")]
+    LengthMismatch,
+    #[error("artifact SHA-256 mismatch")]
+    DigestMismatch,
     #[error("artifact source resolved to a non-public address")]
     PrivateAddress,
     #[error("artifact source redirected or returned HTTP error")]
@@ -113,9 +119,9 @@ impl VerifiedCache {
             let chunk = chunk?;
             length = length
                 .checked_add(chunk.len() as u64)
-                .ok_or(CacheError::Mismatch)?;
+                .ok_or(CacheError::LengthMismatch)?;
             if length > artifact.size {
-                return Err(CacheError::Mismatch);
+                return Err(CacheError::LengthMismatch);
             }
             file.write_all(&chunk).await?;
             hash.update(&chunk);
@@ -123,10 +129,11 @@ impl VerifiedCache {
         if cancel.is_cancelled() {
             return Err(CacheError::Cancelled);
         }
-        if length != artifact.size
-            || hex::encode(hash.finalize()) != artifact.sha256.to_ascii_lowercase()
-        {
-            return Err(CacheError::Mismatch);
+        if length != artifact.size {
+            return Err(CacheError::LengthMismatch);
+        }
+        if hex::encode(hash.finalize()) != artifact.sha256.to_ascii_lowercase() {
+            return Err(CacheError::DigestMismatch);
         }
         file.sync_all().await?;
         drop(file);
@@ -152,7 +159,9 @@ impl VerifiedCache {
         }
         #[cfg(unix)]
         if url.scheme() == "file" {
-            let path = url.to_file_path().map_err(|_| CacheError::Mismatch)?;
+            let path = url
+                .to_file_path()
+                .map_err(|_| CacheError::LocalFixture("file URL could not be decoded"))?;
             return self.ingest_local_file(&path, artifact, true, cancel).await;
         }
         #[cfg(not(unix))]
@@ -318,13 +327,38 @@ impl VerifiedCache {
     ) -> Result<PathBuf, CacheError> {
         use std::os::unix::fs::{MetadataExt, PermissionsExt};
         let metadata = tokio::fs::symlink_metadata(path).await?;
-        if !metadata.file_type().is_file()
-            || metadata.len() != artifact.size
-            || metadata.nlink() != 1
-            || metadata.permissions().mode() & 0o022 != 0
-            || (require_root && metadata.uid() != 0)
-        {
-            return Err(CacheError::Mismatch);
+        if !metadata.file_type().is_file() {
+            eprintln!(
+                "ForgeStore local fixture is not regular: {}",
+                path.display()
+            );
+            return Err(CacheError::LocalFixture("not a regular file"));
+        }
+        if metadata.len() != artifact.size {
+            eprintln!(
+                "ForgeStore local fixture length {} differs from signed {}",
+                metadata.len(),
+                artifact.size
+            );
+            return Err(CacheError::LocalFixture("wrong file length"));
+        }
+        if metadata.nlink() != 1 {
+            eprintln!("ForgeStore local fixture has {} links", metadata.nlink());
+            return Err(CacheError::LocalFixture("hard-linked file"));
+        }
+        if metadata.permissions().mode() & 0o022 != 0 {
+            eprintln!(
+                "ForgeStore local fixture mode {:o} is writable",
+                metadata.permissions().mode()
+            );
+            return Err(CacheError::LocalFixture("file is group or world writable"));
+        }
+        if require_root && metadata.uid() != 0 {
+            eprintln!(
+                "ForgeStore local fixture owner UID {} is not root",
+                metadata.uid()
+            );
+            return Err(CacheError::LocalFixture("file is not root-owned"));
         }
         if require_root {
             let allowed = format!(
@@ -332,7 +366,14 @@ impl VerifiedCache {
                 artifact.sha256
             );
             if path != Path::new(&allowed) {
-                return Err(CacheError::Mismatch);
+                eprintln!(
+                    "ForgeStore local fixture path {} differs from {}",
+                    path.display(),
+                    allowed
+                );
+                return Err(CacheError::LocalFixture(
+                    "path differs from signed image fixture path",
+                ));
             }
             for directory in path
                 .ancestors()
@@ -344,7 +385,16 @@ impl VerifiedCache {
                     || info.uid() != 0
                     || info.permissions().mode() & 0o022 != 0
                 {
-                    return Err(CacheError::Mismatch);
+                    eprintln!(
+                        "ForgeStore local fixture ancestor {}: dir={} uid={} mode={:o}",
+                        directory.display(),
+                        info.file_type().is_dir(),
+                        info.uid(),
+                        info.permissions().mode()
+                    );
+                    return Err(CacheError::LocalFixture(
+                        "ancestor directory ownership or mode is unsafe",
+                    ));
                 }
             }
         }
@@ -460,9 +510,10 @@ mod local_file_tests {
         assert_eq!(tokio::fs::read(file).await.unwrap(), b"package fixture");
         let link = tmp.path().join("link.forgepkg");
         symlink(&source, &link).unwrap();
-        assert!(cache
+        let rejected = cache
             .ingest_local_file(&link, &artifact, false, &CancellationToken::new())
             .await
-            .is_err());
+            .unwrap_err();
+        assert!(rejected.to_string().contains("not a regular file"));
     }
 }
