@@ -9,6 +9,7 @@ use std::time::Duration;
 use thiserror::Error;
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
 use tokio_util::sync::CancellationToken;
+use url::{Host, Url};
 use uuid::Uuid;
 
 #[derive(Debug, Error)]
@@ -37,6 +38,40 @@ pub enum CacheError {
 
 pub struct VerifiedCache {
     root: PathBuf,
+}
+
+pub fn reviewed_redirect(initial: &Url, current: &Url, location: &str) -> Result<Url, CacheError> {
+    if location.len() > 4096 {
+        return Err(CacheError::HttpStatus);
+    }
+    let target = current.join(location).map_err(|_| CacheError::HttpStatus)?;
+    let Some(Host::Domain(host)) = target.host() else {
+        return Err(CacheError::PrivateAddress);
+    };
+    let source = initial.host_str().ok_or(CacheError::PrivateAddress)?;
+    let approved = match source {
+        "www.7-zip.org" => matches!(
+            host,
+            "www.7-zip.org" | "github.com" | "release-assets.githubusercontent.com"
+        ),
+        "github.com" => matches!(host, "github.com" | "release-assets.githubusercontent.com"),
+        "www.sumatrapdfreader.org" => matches!(
+            host,
+            "www.sumatrapdfreader.org" | "files.sumatrapdfreader.org"
+        ),
+        _ => host == source,
+    };
+    if !approved
+        || target.scheme() != "https"
+        || target.username() != ""
+        || target.password().is_some()
+        || target.fragment().is_some()
+        || target.port().is_some_and(|port| port != 443)
+        || target.query().is_some() && host != "release-assets.githubusercontent.com"
+    {
+        return Err(CacheError::HttpStatus);
+    }
+    Ok(target)
 }
 
 impl VerifiedCache {
@@ -168,42 +203,70 @@ impl VerifiedCache {
         if url.scheme() == "file" {
             return Err(CacheError::Mismatch);
         }
-        let host = url.host_str().ok_or(CacheError::PrivateAddress)?;
-        let port = url
-            .port_or_known_default()
-            .ok_or(CacheError::PrivateAddress)?;
-        let addresses = tokio::time::timeout(
-            Duration::from_secs(10),
-            tokio::net::lookup_host((host, port)),
-        )
-        .await
-        .map_err(|_| io::Error::new(io::ErrorKind::TimedOut, "DNS timed out"))??
-        .collect::<Vec<SocketAddr>>();
-        if addresses.is_empty() || addresses.iter().any(|addr| !is_public_address(addr.ip())) {
-            return Err(CacheError::PrivateAddress);
+        let original = url.clone();
+        let mut current = url;
+        for hop in 0..=4 {
+            let host = current.host_str().ok_or(CacheError::PrivateAddress)?;
+            let port = current
+                .port_or_known_default()
+                .ok_or(CacheError::PrivateAddress)?;
+            let addresses = tokio::time::timeout(
+                Duration::from_secs(10),
+                tokio::net::lookup_host((host, port)),
+            )
+            .await
+            .map_err(|_| io::Error::new(io::ErrorKind::TimedOut, "DNS timed out"))??
+            .collect::<Vec<SocketAddr>>();
+            if addresses.is_empty() || addresses.iter().any(|addr| !is_public_address(addr.ip())) {
+                return Err(CacheError::PrivateAddress);
+            }
+            let client = reqwest::Client::builder()
+                .redirect(reqwest::redirect::Policy::none())
+                .no_proxy()
+                .resolve_to_addrs(host, &addresses)
+                .connect_timeout(Duration::from_secs(10))
+                .timeout(Duration::from_secs(120))
+                .build()?;
+            let response = tokio::select! {
+                _ = cancel.cancelled() => return Err(CacheError::Cancelled),
+                response = client.get(current.clone()).send() => response?,
+            };
+            if response.status().is_redirection() {
+                if !matches!(
+                    response.status(),
+                    reqwest::StatusCode::MOVED_PERMANENTLY
+                        | reqwest::StatusCode::FOUND
+                        | reqwest::StatusCode::SEE_OTHER
+                        | reqwest::StatusCode::TEMPORARY_REDIRECT
+                        | reqwest::StatusCode::PERMANENT_REDIRECT
+                ) {
+                    return Err(CacheError::HttpStatus);
+                }
+                if hop == 4 {
+                    return Err(CacheError::HttpStatus);
+                }
+                let location = response
+                    .headers()
+                    .get(reqwest::header::LOCATION)
+                    .ok_or(CacheError::HttpStatus)?
+                    .to_str()
+                    .map_err(|_| CacheError::HttpStatus)?;
+                current = reviewed_redirect(&original, &current, location)?;
+                continue;
+            }
+            if response.status() != reqwest::StatusCode::OK {
+                return Err(CacheError::HttpStatus);
+            }
+            if response
+                .content_length()
+                .is_some_and(|size| size != artifact.size)
+            {
+                return Err(CacheError::LengthMismatch);
+            }
+            let chunks = response.bytes_stream().map_err(io::Error::other);
+            return self.ingest(artifact, chunks, cancel).await;
         }
-        let client = reqwest::Client::builder()
-            .redirect(reqwest::redirect::Policy::none())
-            .no_proxy()
-            .resolve_to_addrs(host, &addresses)
-            .connect_timeout(Duration::from_secs(10))
-            .timeout(Duration::from_secs(120))
-            .build()?;
-        let response = tokio::select! {
-            _ = cancel.cancelled() => return Err(CacheError::Cancelled),
-            response = client.get(url).send() => response?,
-        };
-        if response.status() != reqwest::StatusCode::OK {
-            return Err(CacheError::HttpStatus);
-        }
-        if response
-            .content_length()
-            .is_some_and(|size| size != artifact.size)
-        {
-            return Err(CacheError::Mismatch);
-        }
-        let chunks = response.bytes_stream().map_err(io::Error::other);
-        self.ingest(artifact, chunks, cancel).await
+        Err(CacheError::HttpStatus)
     }
 
     pub async fn stage_forge_package(&self, artifact: &Artifact) -> Result<PathBuf, CacheError> {

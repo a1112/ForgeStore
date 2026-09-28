@@ -1,5 +1,5 @@
 use bytes::Bytes;
-use forge_store_core::cache::VerifiedCache;
+use forge_store_core::cache::{reviewed_redirect, VerifiedCache};
 use forge_store_core::catalogue::Artifact;
 use futures_util::stream;
 use sha2::{Digest, Sha256};
@@ -13,6 +13,65 @@ fn artifact(bytes: &[u8]) -> Artifact {
         sha256: hex::encode(Sha256::digest(bytes)),
         size: bytes.len() as u64,
     }
+}
+
+#[test]
+fn redirect_policy_allows_pinned_release_hosts_and_rejects_other_destinations() {
+    let start = url::Url::parse("https://www.7-zip.org/a/7z2601-x64.exe").unwrap();
+    let github = reviewed_redirect(
+        &start,
+        &start,
+        "https://github.com/ip7z/7zip/releases/download/26.01/7z2601-x64.exe",
+    )
+    .unwrap();
+    assert_eq!(github.host_str(), Some("github.com"));
+    assert!(reviewed_redirect(
+        &start,
+        &github,
+        "https://release-assets.githubusercontent.com/file?sig=abc"
+    )
+    .is_ok());
+    for target in [
+        "http://github.com/file",
+        "https://127.0.0.1/file",
+        "https://www.7-zip.org.evil.example/file",
+        "https://evil.example/file",
+        "https://github.com/file?unreviewed=1",
+    ] {
+        assert!(
+            reviewed_redirect(&start, &github, target).is_err(),
+            "{target}"
+        );
+    }
+    let sumatra = url::Url::parse("https://www.sumatrapdfreader.org/dl/file.exe").unwrap();
+    assert!(reviewed_redirect(
+        &sumatra,
+        &sumatra,
+        "https://files.sumatrapdfreader.org/software/file.exe"
+    )
+    .is_ok());
+}
+
+#[tokio::test]
+#[ignore = "requires the reviewed upstream release URL"]
+async fn live_official_7zip_redirect_reaches_verified_bytes() {
+    let temporary = tempfile::tempdir().unwrap();
+    let cache = VerifiedCache::open(temporary.path()).unwrap();
+    let artifact = Artifact {
+        target: "7z2601-x64.exe".into(),
+        url: "https://www.7-zip.org/a/7z2601-x64.exe".into(),
+        sha256: "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d".into(),
+        size: 1658851,
+    };
+    let downloaded = cache
+        .download(&artifact, &CancellationToken::new())
+        .await
+        .unwrap();
+    assert_eq!(downloaded.metadata().unwrap().len(), artifact.size);
+    assert_eq!(
+        hex::encode(Sha256::digest(std::fs::read(downloaded).unwrap())),
+        artifact.sha256
+    );
 }
 
 #[tokio::test]
