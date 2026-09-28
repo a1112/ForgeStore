@@ -19,6 +19,8 @@ private slots:
     void loadsBundledQmlResources();
     void launchedApplicationKeepsWindowAlive();
     void treatsCatalogueNamesAsPlainText();
+    void searchesCatalogueIds();
+    void cardsFillTheirPagesAtReferenceSize();
 };
 
 void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
@@ -32,6 +34,7 @@ void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
     QCOMPARE(window->objectName(), QStringLiteral("forgeStoreWindow"));
     QCOMPARE(window->property("language").toString(), QStringLiteral("zh_CN"));
     QCOMPARE(window->property("title").toString(), QStringLiteral("Forge 应用市场"));
+    QVERIFY(window->findChild<QObject *>(QStringLiteral("detailsDrawer")) != nullptr);
     QVERIFY(window->setProperty("language", QStringLiteral("en")));
     QTRY_COMPARE(window->property("title").toString(), QStringLiteral("Forge Store"));
 }
@@ -90,6 +93,53 @@ void StoreWindowTest::treatsCatalogueNamesAsPlainText() {
     QVERIFY(name != nullptr);
     QCOMPARE(name->property("text").toString(), QStringLiteral("<b>测试</b>"));
     QCOMPARE(name->property("textFormat").toInt(), 0); // Text.PlainText
+}
+
+void StoreWindowTest::searchesCatalogueIds() {
+    StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
+    QQmlEngine engine;
+    engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
+    std::unique_ptr<QObject> window(component.create());
+    QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    const QVariantMap entry{{"id", "7zip"}, {"name", QVariantMap{{"zhCN", "压缩工具"}, {"en", "Archive tool"}}},
+                            {"summary", QVariantMap{{"zhCN", "文件管理"}, {"en", "File manager"}}}};
+    QVERIFY(window->setProperty("state", QVariantMap{{"catalogue", QVariantMap{{"entries", QVariantList{entry}}}}}));
+    QVERIFY(window->setProperty("query", QStringLiteral("7zip")));
+    QTRY_COMPARE(window->property("visibleEntries").toList().size(), 1);
+}
+
+void StoreWindowTest::cardsFillTheirPagesAtReferenceSize() {
+    StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
+    QQmlEngine engine;
+    engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
+    std::unique_ptr<QObject> window(component.create());
+    QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QCOMPARE(window->property("width").toInt(), 1160);
+    QCOMPARE(window->property("height").toInt(), 760);
+    const QVariantMap entry{{"id", "7zip"}, {"name", QVariantMap{{"zhCN", "压缩工具"}}},
+                            {"delivery", QVariantMap{{"backend", "compatforge"}}}};
+    const QVariantMap job{{"id", "job-1"}, {"appId", "7zip"}, {"backend", "compatforge"},
+                          {"action", "install"}, {"state", "failed"}, {"detail", "backend unavailable"}};
+    const QVariantMap installed{{"appId", "7zip"}, {"backend", "compatforge"},
+                                {"version", "1"}, {"canRollback", false}};
+    const QVariantMap backends{{"compatforge", QVariantMap{{"available", false}, {"reason", "service unavailable"}}}};
+    const QVariantMap state{{"catalogue", QVariantMap{{"entries", QVariantList{entry}}}},
+                            {"jobs", QVariantList{job}}, {"installed", QVariantList{installed}},
+                            {"backends", backends}};
+    QVERIFY(window->setProperty("state", state));
+
+    for (const QString &page : {QStringLiteral("discover"), QStringLiteral("installed"),
+                                QStringLiteral("queue"), QStringLiteral("diagnostics")}) {
+        QVERIFY(window->setProperty("page", page));
+        auto *repeater = window->findChild<QObject *>(page + QStringLiteral("Repeater"));
+        QVERIFY2(repeater != nullptr, qPrintable(page + QStringLiteral(" repeater missing")));
+        QQuickItem *card = nullptr;
+        QVERIFY(QMetaObject::invokeMethod(repeater, "itemAt", Q_RETURN_ARG(QQuickItem *, card), Q_ARG(int, 0)));
+        QVERIFY(card != nullptr);
+        QTRY_VERIFY2(card->width() >= 600, qPrintable(page + QStringLiteral(" card too narrow: ") + QString::number(card->width())));
+    }
 }
 
 int main(int argc, char **argv) {

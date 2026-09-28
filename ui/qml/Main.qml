@@ -27,7 +27,7 @@ ApplicationWindow {
     property var visibleEntries: entries.filter(function(entry) {
         const needle = query.trim().toLocaleLowerCase()
         if (needle.length === 0) return true
-        const fields = [localized(entry.name), localized(entry.summary), entry.publisher || "", entry.origin || ""]
+        const fields = [entry.id || "", localized(entry.name), localized(entry.summary), entry.publisher || "", entry.origin || ""]
         return fields.some(function(field) { return String(field).toLocaleLowerCase().indexOf(needle) >= 0 })
     })
 
@@ -195,12 +195,14 @@ ApplicationWindow {
                 }
 
                 ScrollView {
+                    id: discoverScroll
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     clip: true
                     visible: root.page === "discover"
+                    contentWidth: availableWidth
                     ColumnLayout {
-                        width: parent.width
+                        width: discoverScroll.availableWidth
                         spacing: 10
                         SafeLabel {
                             visible: root.visibleEntries.length === 0
@@ -255,15 +257,18 @@ ApplicationWindow {
                 }
 
                 ScrollView {
+                    id: installedScroll
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     clip: true
                     visible: root.page === "installed"
+                    contentWidth: availableWidth
                     ColumnLayout {
-                        width: parent.width
+                        width: installedScroll.availableWidth
                         spacing: 10
                         SafeLabel { visible: root.installed.length === 0; text: root.labels.emptyInstalled; color: "#a9bed8" }
                         Repeater {
+                            objectName: "installedRepeater"
                             model: root.installed
                             delegate: Rectangle {
                                 required property var modelData
@@ -288,15 +293,18 @@ ApplicationWindow {
                 }
 
                 ScrollView {
+                    id: queueScroll
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     clip: true
                     visible: root.page === "queue"
+                    contentWidth: availableWidth
                     ColumnLayout {
-                        width: parent.width
+                        width: queueScroll.availableWidth
                         spacing: 10
                         SafeLabel { visible: root.jobs.length === 0; text: root.labels.emptyQueue; color: "#a9bed8" }
                         Repeater {
+                            objectName: "queueRepeater"
                             model: root.jobs
                             delegate: Rectangle {
                                 required property var modelData
@@ -336,15 +344,18 @@ ApplicationWindow {
                 }
 
                 ScrollView {
+                    id: diagnosticsScroll
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     clip: true
                     visible: root.page === "diagnostics"
+                    contentWidth: availableWidth
                     ColumnLayout {
-                        width: parent.width
+                        width: diagnosticsScroll.availableWidth
                         spacing: 12
                         SafeLabel { text: root.labels.partialAvailability; color: "#f2f6fc"; font.pixelSize: 20; font.bold: true }
                         Repeater {
+                            objectName: "diagnosticsRepeater"
                             model: Object.keys(root.backends).sort()
                             delegate: Rectangle {
                                 required property string modelData
@@ -382,17 +393,20 @@ ApplicationWindow {
 
     Drawer {
         id: details
+        objectName: "detailsDrawer"
         edge: Qt.RightEdge
         width: Math.min(root.width * 0.42, 430)
         height: root.height
         modal: true
         background: Rectangle { color: "#142135"; border.color: "#34506f" }
         ScrollView {
+            id: detailsScroll
             anchors.fill: parent
             anchors.margins: 24
             clip: true
+            contentWidth: availableWidth
             ColumnLayout {
-                width: parent.width
+                width: detailsScroll.availableWidth
                 spacing: 14
                 RowLayout {
                     Layout.fillWidth: true

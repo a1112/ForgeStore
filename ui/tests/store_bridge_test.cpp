@@ -15,6 +15,7 @@ private slots:
     void snapshotUsesPrivateJsonLineAndPublishesState();
     void rejectsMismatchedReplyWithoutPublishingState();
     void enqueuesThenRefreshesRealState();
+    void cancelUsesJobIdInPayload();
     void unreachableServiceReportsTranslatableErrorCode();
 };
 
@@ -110,6 +111,23 @@ void StoreBridgeTest::enqueuesThenRefreshesRealState() {
     QLocalSocket *snapshotPeer = nullptr;
     const auto snapshotRequest = receiveRequest(server, snapshotPeer);
     QCOMPARE(snapshotRequest.value("operation").toString(), QStringLiteral("snapshot"));
+}
+
+void StoreBridgeTest::cancelUsesJobIdInPayload() {
+    QTemporaryDir directory;
+    QVERIFY(directory.isValid());
+    QLocalServer server;
+    const QString path = directory.filePath("store.sock");
+    QVERIFY(server.listen(path));
+    StoreBridge bridge(path);
+    bridge.cancel(QStringLiteral("job-7"));
+    QLocalSocket *peer = nullptr;
+    const auto request = receiveRequest(server, peer);
+    QCOMPARE(request.value("schemaVersion").toInt(), 1);
+    QVERIFY(!request.value("requestId").toString().isEmpty());
+    QCOMPARE(request.value("operation").toString(), QStringLiteral("cancel"));
+    const QJsonObject expectedPayload{{"jobId", "job-7"}};
+    QCOMPARE(request.value("payload").toObject(), expectedPayload);
 }
 
 void StoreBridgeTest::unreachableServiceReportsTranslatableErrorCode() {
