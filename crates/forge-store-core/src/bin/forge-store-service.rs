@@ -14,8 +14,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 mod linux {
     use forge_store_core::backends::{
         compatforge_poll_status, compatforge_selected_install, fixture_remote_is_trusted,
-        flatpak_action_completed, flatpak_record_matches, CompatForgeClient, CompatForgeRequest,
-        FlatpakInvocation, PackageClient, PackageRequest,
+        flatpak_action_completed, flatpak_record_matches, package_display_version,
+        parse_flatpak_list, CompatForgeClient, CompatForgeRequest, FlatpakInvocation,
+        PackageClient, PackageRequest,
     };
     use forge_store_core::cache::VerifiedCache;
     use forge_store_core::catalogue::{AppEntry, Catalog, Delivery};
@@ -349,7 +350,15 @@ mod linux {
         let result = tokio::time::timeout(
             Duration::from_secs(3),
             tokio::process::Command::new("/usr/bin/flatpak")
-                .args(["--user", "list", "--app", "--json"])
+                .args([
+                    "--user",
+                    "list",
+                    "--app",
+                    "--json",
+                    "--columns=application,arch,branch,origin,version",
+                ])
+                .env("LC_ALL", "C")
+                .env("LANGUAGE", "C")
                 .kill_on_drop(true)
                 .output(),
         )
@@ -360,7 +369,7 @@ mod linux {
         if !result.status.success() || result.stdout.len() > 1024 * 1024 {
             return (false, Vec::new());
         }
-        let Ok(rows) = serde_json::from_slice::<Vec<Value>>(&result.stdout) else {
+        let Ok(rows) = parse_flatpak_list(&result.stdout) else {
             return (false, Vec::new());
         };
         let installed = store.catalogue.entries.iter().filter_map(|entry| {
@@ -397,13 +406,8 @@ mod linux {
                 let Delivery::ForgePackage { artifact } = &entry.delivery else {
                     return None;
                 };
-                let version = if app.get("active").and_then(Value::as_str)
-                    == Some(artifact.sha256.as_str())
-                {
-                    entry.version.as_str()
-                } else {
-                    ""
-                };
+                let active = app.get("active")?.as_str()?;
+                let version = package_display_version(active, &artifact.sha256, &entry.version)?;
                 Some(
                     json!({"appId":id,"backend":"forge-package","version":version,
                 "canRollback":app.get("previous").is_some_and(|v| !v.is_null())}),
@@ -729,7 +733,15 @@ mod linux {
         let listed = tokio::time::timeout(
             Duration::from_secs(5),
             tokio::process::Command::new("/usr/bin/flatpak")
-                .args(["--user", "list", "--app", "--json"])
+                .args([
+                    "--user",
+                    "list",
+                    "--app",
+                    "--json",
+                    "--columns=application,arch,branch,origin,version",
+                ])
+                .env("LC_ALL", "C")
+                .env("LANGUAGE", "C")
                 .kill_on_drop(true)
                 .output(),
         )
@@ -737,7 +749,7 @@ mod linux {
         if !listed.status.success() || listed.stdout.len() > 1024 * 1024 {
             return Err("Flatpak installed list is unavailable or oversized".into());
         }
-        let rows: Vec<Value> = serde_json::from_slice(&listed.stdout)?;
+        let rows = parse_flatpak_list(&listed.stdout)?;
         let matches = rows
             .iter()
             .filter(|row| flatpak_record_matches(row, reference, remote))

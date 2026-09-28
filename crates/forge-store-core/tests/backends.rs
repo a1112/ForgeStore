@@ -1,7 +1,8 @@
 use forge_store_core::backends::{
     compatforge_poll_status, compatforge_selected_install, decode_compatforge_reply,
     fixture_remote_is_trusted, flatpak_action_completed, flatpak_record_matches,
-    CompatForgeRequest, FlatpakInvocation, PackageRequest,
+    package_display_version, parse_flatpak_list, CompatForgeRequest, FlatpakInvocation,
+    PackageRequest,
 };
 use forge_store_core::catalogue::Artifact;
 use forge_store_core::queue::Action;
@@ -126,6 +127,56 @@ fn flatpak_installed_identity_binds_ref_arch_branch_and_remote() {
             "forge-store-fixture"
         ));
     }
+}
+
+#[test]
+fn flatpak_json_list_accepts_empty_success_and_rejects_malformed_output() {
+    assert!(parse_flatpak_list(b"").unwrap().is_empty());
+    assert!(parse_flatpak_list(b"\n").unwrap().is_empty());
+    assert!(parse_flatpak_list(b"[]\n").unwrap().is_empty());
+    let records = parse_flatpak_list(br#"[{"application_id":"org.forgeos.StoreFixture","arch":"x86_64","branch":"stable","origin":"forge-store-fixture","version":"1"}]"#).unwrap();
+    assert_eq!(records.len(), 1);
+    assert!(parse_flatpak_list(b"not json").is_err());
+}
+
+#[cfg(unix)]
+#[test]
+#[ignore = "run in the pinned Arch image with Flatpak 1.18 installed"]
+fn pinned_flatpak_cli_columns_parse_under_chinese_desktop_locale() {
+    let result = std::process::Command::new("/usr/bin/flatpak")
+        .args([
+            "--user",
+            "list",
+            "--app",
+            "--json",
+            "--columns=application,arch,branch,origin,version",
+        ])
+        .env("LANG", "zh_CN.UTF-8")
+        .env("LC_ALL", "C")
+        .env("LANGUAGE", "C")
+        .output()
+        .unwrap();
+    assert!(
+        result.status.success(),
+        "{}",
+        String::from_utf8_lossy(&result.stderr)
+    );
+    parse_flatpak_list(&result.stdout).unwrap();
+}
+
+#[test]
+fn old_forge_package_digest_is_labeled_without_unverified_semantic_version() {
+    let old = "a".repeat(64);
+    let current = "b".repeat(64);
+    assert_eq!(
+        package_display_version(&current, &current, "2.0.0").as_deref(),
+        Some("2.0.0")
+    );
+    assert_eq!(
+        package_display_version(&old, &current, "2.0.0").as_deref(),
+        Some("SHA-256 aaaaaaaaaaaa")
+    );
+    assert!(package_display_version("invalid", &current, "2.0.0").is_none());
 }
 
 #[test]

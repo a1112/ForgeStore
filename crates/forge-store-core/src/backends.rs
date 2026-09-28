@@ -319,6 +319,30 @@ pub fn flatpak_record_matches(record: &Value, reference: &str, remote: &str) -> 
         && record.get("origin").and_then(Value::as_str) == Some(remote)
 }
 
+/// Flatpak 1.18 emits no bytes for a successful empty JSON list. The selected
+/// columns are part of our provenance check and must all be present otherwise.
+pub fn parse_flatpak_list(bytes: &[u8]) -> Result<Vec<Value>, BackendError> {
+    if bytes.len() > 1024 * 1024 {
+        return Err(BackendError::Invalid(
+            "Flatpak installed list exceeds limit",
+        ));
+    }
+    if bytes.iter().all(u8::is_ascii_whitespace) {
+        return Ok(Vec::new());
+    }
+    let rows: Vec<Value> = serde_json::from_slice(bytes)?;
+    for row in &rows {
+        for field in ["application_id", "arch", "branch", "origin", "version"] {
+            if row.get(field).and_then(Value::as_str).is_none() {
+                return Err(BackendError::Invalid(
+                    "Flatpak installed row lacks selected column",
+                ));
+            }
+        }
+    }
+    Ok(rows)
+}
+
 pub fn flatpak_action_completed(action: Action, before: Option<&str>, after: Option<&str>) -> bool {
     match action {
         Action::Install => before.is_none() && after.is_some(),
@@ -326,6 +350,23 @@ pub fn flatpak_action_completed(action: Action, before: Option<&str>, after: Opt
         Action::Uninstall => before.is_some() && after.is_none(),
         Action::Rollback => false,
     }
+}
+
+/// The package service supplies the active digest. A semantic version is shown
+/// only when that digest matches the current TUF-verified catalogue entry.
+pub fn package_display_version(
+    active: &str,
+    catalogue_digest: &str,
+    version: &str,
+) -> Option<String> {
+    if active.len() != 64 || !active.bytes().all(|byte| byte.is_ascii_hexdigit()) {
+        return None;
+    }
+    Some(if active == catalogue_digest {
+        version.to_string()
+    } else {
+        format!("SHA-256 {}", &active[..12])
+    })
 }
 
 #[derive(Debug, Clone)]
