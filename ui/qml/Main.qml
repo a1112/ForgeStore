@@ -54,14 +54,19 @@ ApplicationWindow {
         if (backend === "forge-package" || backend === "forgePackage") return labels.forgePackage
         return backend || labels.unknown
     }
-    function backendReady(entry) {
-        const record = backends[backendKey(entry)]
+    function backendState(backend) {
+        return backends[backend === "forge-package" ? "forgePackage" : backend]
+    }
+    function backendReadyFor(backend) {
+        const record = backendState(backend)
         return record !== undefined && record.available === true
     }
-    function backendReason(entry) {
-        const record = backends[backendKey(entry)]
+    function backendReasonFor(backend) {
+        const record = backendState(backend)
         return record && record.reason ? record.reason : labels.unavailable
     }
+    function backendReady(entry) { return backendReadyFor(backendKey(entry)) }
+    function backendReason(entry) { return backendReasonFor(backendKey(entry)) }
     function permissionList(entry) {
         const permissions = entry && entry.permissions ? entry.permissions : []
         if (Array.isArray(permissions)) return permissions.map(function(item) { return String(item) }).join(" · ")
@@ -238,6 +243,13 @@ ApplicationWindow {
                                             text: root.backendLabel(root.backendKey(modelData)) + " · " + (modelData.version || "") + " · " + (modelData.license || "")
                                             color: "#87a9d2"; font.pixelSize: 12
                                         }
+                                        SafeLabel {
+                                            objectName: "discoverBackendReason"
+                                            visible: !root.backendReady(modelData)
+                                            text: root.backendReason(modelData)
+                                            color: "#ffbd87"; font.pixelSize: 11
+                                            elide: Text.ElideRight; Layout.fillWidth: true
+                                        }
                                     }
                                     Button {
                                         text: root.labels.details
@@ -245,6 +257,7 @@ ApplicationWindow {
                                         Accessible.name: root.labels.openDetails + " " + root.localized(modelData.name)
                                     }
                                     Button {
+                                        objectName: "discoverInstallButton"
                                         text: root.installedRecord(modelData.id) ? root.labels.update : root.labels.install
                                         enabled: root.backendReady(modelData)
                                         onClicked: storeBridge.enqueue(modelData.id, root.installedRecord(modelData.id) ? "update" : "install")
@@ -281,14 +294,32 @@ ApplicationWindow {
                                         Layout.fillWidth: true
                                         SafeLabel { text: entry ? root.localized(entry.name) : modelData.appId; color: "#f2f6fc"; font.pixelSize: 18; font.bold: true }
                                         SafeLabel { text: root.backendLabel(modelData.backend) + " · " + (modelData.version || root.labels.unknown); color: "#a9bed8" }
+                                        SafeLabel {
+                                            objectName: "installedBackendReason"
+                                            visible: !root.backendReadyFor(modelData.backend)
+                                            text: root.backendReasonFor(modelData.backend)
+                                            color: "#ffbd87"; font.pixelSize: 11
+                                            elide: Text.ElideRight; Layout.fillWidth: true
+                                        }
                                     }
                                     Button { visible: entry !== null; text: root.labels.details; onClicked: root.openDetails(entry) }
-                                    Button { text: root.labels.update; enabled: entry !== null && root.backendReady(entry); onClicked: storeBridge.enqueue(modelData.appId, "update") }
-                                    Button { text: root.labels.rollback; enabled: modelData.canRollback === true; onClicked: storeBridge.enqueue(modelData.appId, "rollback") }
+                                    Button {
+                                        objectName: "installedUpdateButton"
+                                        text: root.labels.update
+                                        enabled: entry !== null && root.backendReady(entry) && root.backendReadyFor(modelData.backend)
+                                        onClicked: storeBridge.enqueue(modelData.appId, "update")
+                                    }
+                                    Button {
+                                        objectName: "installedRollbackButton"
+                                        text: root.labels.rollback
+                                        enabled: modelData.canRollback === true && root.backendReadyFor(modelData.backend)
+                                        onClicked: storeBridge.enqueue(modelData.appId, "rollback")
+                                    }
                                     Button {
                                         objectName: "installedUninstallButton"
                                         text: root.labels.uninstall
                                         visible: modelData.backend !== "forge-package"
+                                        enabled: root.backendReadyFor(modelData.backend)
                                         onClicked: storeBridge.enqueue(modelData.appId, "uninstall")
                                     }
                                 }
@@ -450,6 +481,7 @@ ApplicationWindow {
                 RowLayout {
                     Layout.fillWidth: true
                     Button {
+                        objectName: "detailsInstallButton"
                         text: root.selectedEntry && root.installedRecord(root.selectedEntry.id) ? root.labels.update : root.labels.install
                         enabled: root.selectedEntry !== null && root.backendReady(root.selectedEntry)
                         onClicked: { storeBridge.enqueue(root.selectedEntry.id, root.installedRecord(root.selectedEntry.id) ? "update" : "install"); details.close(); root.page = "queue" }
@@ -459,6 +491,7 @@ ApplicationWindow {
                         text: root.labels.uninstall
                         visible: root.selectedEntry !== null && root.installedRecord(root.selectedEntry.id) !== null
                                  && root.backendKey(root.selectedEntry) !== "forgePackage"
+                        enabled: root.selectedEntry !== null && root.backendReady(root.selectedEntry)
                         onClicked: { storeBridge.enqueue(root.selectedEntry.id, "uninstall"); details.close(); root.page = "queue" }
                     }
                 }

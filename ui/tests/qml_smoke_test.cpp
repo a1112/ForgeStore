@@ -22,6 +22,7 @@ private slots:
     void searchesCatalogueIds();
     void cardsFillTheirPagesAtReferenceSize();
     void actionsRespectBackendAndJobState();
+    void unavailableBackendsDisableMutationsAndShowReasons();
 };
 
 void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
@@ -217,6 +218,83 @@ void StoreWindowTest::actionsRespectBackendAndJobState() {
     QCOMPARE(interruptedRetry->property("enabled").toBool(), true);
     QCOMPARE(queuedCancel->property("visible").toBool(), true);
     QCOMPARE(compatCancel->property("visible").toBool(), true);
+}
+
+void StoreWindowTest::unavailableBackendsDisableMutationsAndShowReasons() {
+    StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
+    QQmlEngine engine;
+    engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
+    std::unique_ptr<QObject> window(component.create());
+    QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+
+    const QVariantMap compatEntry{{"id", "compat-app"}, {"name", QVariantMap{{"zhCN", "兼容应用"}}},
+                                  {"delivery", QVariantMap{{"backend", "compatforge"}}}};
+    const QVariantMap packageEntry{{"id", "forge-app"}, {"name", QVariantMap{{"zhCN", "Forge 应用"}}},
+                                   {"delivery", QVariantMap{{"backend", "forge-package"}}}};
+    const QVariantMap compatInstall{{"appId", "compat-app"}, {"backend", "compatforge"},
+                                    {"version", "1"}, {"canRollback", true}};
+    const QVariantMap packageInstall{{"appId", "forge-app"}, {"backend", "forge-package"},
+                                     {"version", "1"}, {"canRollback", true}};
+    const QVariantMap unavailable{{"compatforge", QVariantMap{{"available", false}, {"reason", "CompatForge offline"}}},
+                                  {"forgePackage", QVariantMap{{"available", false}, {"reason", "Package service offline"}}}};
+    const QVariantMap catalogue{{"entries", QVariantList{compatEntry, packageEntry}}};
+    const QVariantList installed{compatInstall, packageInstall};
+    QVERIFY(window->setProperty("state", QVariantMap{{"catalogue", catalogue}, {"installed", installed},
+                                                    {"jobs", QVariantList{}}, {"backends", unavailable}}));
+    QVERIFY(window->setProperty("page", QStringLiteral("installed")));
+    auto *installedRepeater = window->findChild<QObject *>(QStringLiteral("installedRepeater"));
+    QVERIFY(installedRepeater != nullptr);
+    QQuickItem *compatCard = nullptr;
+    QQuickItem *packageCard = nullptr;
+    QVERIFY(QMetaObject::invokeMethod(installedRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, compatCard), Q_ARG(int, 0)));
+    QVERIFY(QMetaObject::invokeMethod(installedRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, packageCard), Q_ARG(int, 1)));
+    QVERIFY(compatCard && packageCard);
+    auto *uninstall = compatCard->findChild<QObject *>(QStringLiteral("installedUninstallButton"));
+    QVERIFY(uninstall != nullptr);
+    QCOMPARE(uninstall->property("enabled").toBool(), false);
+    auto *update = compatCard->findChild<QObject *>(QStringLiteral("installedUpdateButton"));
+    auto *rollback = compatCard->findChild<QObject *>(QStringLiteral("installedRollbackButton"));
+    auto *packageRollback = packageCard->findChild<QObject *>(QStringLiteral("installedRollbackButton"));
+    auto *installedReason = compatCard->findChild<QObject *>(QStringLiteral("installedBackendReason"));
+    QVERIFY(update && rollback && packageRollback && installedReason);
+    QCOMPARE(update->property("enabled").toBool(), false);
+    QCOMPARE(rollback->property("enabled").toBool(), false);
+    QCOMPARE(packageRollback->property("enabled").toBool(), false);
+    QCOMPARE(installedReason->property("text").toString(), QStringLiteral("CompatForge offline"));
+
+    QVERIFY(window->setProperty("page", QStringLiteral("discover")));
+    auto *discoverRepeater = window->findChild<QObject *>(QStringLiteral("discoverRepeater"));
+    QVERIFY(discoverRepeater != nullptr);
+    QQuickItem *discoverCard = nullptr;
+    QVERIFY(QMetaObject::invokeMethod(discoverRepeater, "itemAt", Q_RETURN_ARG(QQuickItem *, discoverCard), Q_ARG(int, 0)));
+    QVERIFY(discoverCard != nullptr);
+    auto *discoverInstall = discoverCard->findChild<QObject *>(QStringLiteral("discoverInstallButton"));
+    auto *discoverReason = discoverCard->findChild<QObject *>(QStringLiteral("discoverBackendReason"));
+    QVERIFY(discoverInstall && discoverReason);
+    QCOMPARE(discoverInstall->property("enabled").toBool(), false);
+    QCOMPARE(discoverReason->property("text").toString(), QStringLiteral("CompatForge offline"));
+
+    QVERIFY(QMetaObject::invokeMethod(window.get(), "openDetails", Q_ARG(QVariant, QVariant(compatEntry))));
+    auto *drawer = window->findChild<QObject *>(QStringLiteral("detailsDrawer"));
+    QVERIFY(drawer != nullptr);
+    auto *detailsInstall = drawer->findChild<QObject *>(QStringLiteral("detailsInstallButton"));
+    auto *detailsUninstall = drawer->findChild<QObject *>(QStringLiteral("detailsUninstallButton"));
+    QVERIFY(detailsInstall && detailsUninstall);
+    QCOMPARE(detailsInstall->property("enabled").toBool(), false);
+    QCOMPARE(detailsUninstall->property("enabled").toBool(), false);
+
+    const QVariantMap available{{"compatforge", QVariantMap{{"available", true}}},
+                                {"forgePackage", QVariantMap{{"available", true}}}};
+    QVERIFY(window->setProperty("state", QVariantMap{{"catalogue", catalogue}, {"installed", installed},
+                                                    {"jobs", QVariantList{}}, {"backends", available}}));
+    QTRY_COMPARE(uninstall->property("enabled").toBool(), true);
+    QCOMPARE(update->property("enabled").toBool(), true);
+    QCOMPARE(rollback->property("enabled").toBool(), true);
+    QCOMPARE(packageRollback->property("enabled").toBool(), true);
+    QCOMPARE(discoverInstall->property("enabled").toBool(), true);
+    QCOMPARE(detailsInstall->property("enabled").toBool(), true);
+    QCOMPARE(detailsUninstall->property("enabled").toBool(), true);
 }
 
 int main(int argc, char **argv) {
