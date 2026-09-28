@@ -16,6 +16,7 @@ MAX_TOTAL = 512 * 1024 * 1024
 MAX_MANIFEST = 64 * 1024
 UNIT = "/usr/lib/systemd/user/forge-store.service"
 ENABLE = "etc/systemd/user/default.target.wants/forge-store.service"
+OSTREE_EMPTY_DIRS = ("extensions", "refs/remotes", "refs/mirrors", "tmp/cache", "state")
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
 HEX40 = re.compile(r"[0-9a-f]{40}\Z")
 
@@ -148,6 +149,16 @@ def install(bundle: Path, rootfs: Path) -> dict:
                 raise ValueError("post-install file verification failed")
             if os.name != "nt" and stat.S_IMODE(destination.stat().st_mode) != int(record["mode"], 8):
                 raise ValueError("post-install mode verification failed")
+    for version in ("repo-v1", "repo-v2"):
+        repository = rootfs / "usr/share/forge-store/flatpak" / version
+        if (repository / "config").is_file():
+            for relative in OSTREE_EMPTY_DIRS:
+                directory = repository / relative
+                ensure_real_parents(rootfs, directory / ".path-check")
+                if directory.is_symlink() or not directory.is_dir():
+                    raise ValueError("OSTree directory is linked or absent")
+                if os.name != "nt":
+                    directory.chmod(0o755)
     enable = rootfs / ENABLE
     ensure_real_parents(rootfs, enable)
     if enable.is_symlink():

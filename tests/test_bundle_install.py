@@ -18,6 +18,8 @@ def bundle(path: Path, *, bad_hash=False, linked=False, crlf_script=False):
     payloads = {
         "/usr/bin/forge-store-service": (b"service", "0755"),
         "/usr/lib/systemd/user/forge-store.service": (b"[Install]\nWantedBy=default.target\n", "0644"),
+        "/usr/share/forge-store/flatpak/repo-v1/config": (b"[core]\nrepo_version=1\n", "0644"),
+        "/usr/share/forge-store/flatpak/repo-v2/config": (b"[core]\nrepo_version=1\n", "0644"),
     }
     if crlf_script:
         payloads["/usr/lib/forge-store/provision-flatpak-fixture"] = (b"#!/bin/sh\r\nexit 0\r\n", "0755")
@@ -58,6 +60,9 @@ class BundleInstallTest(unittest.TestCase):
             self.assertEqual((image / "usr/bin/forge-store-service").read_bytes(), b"service")
             link = image / "etc/systemd/user/default.target.wants/forge-store.service"
             self.assertEqual(link.readlink().as_posix(), "/usr/lib/systemd/user/forge-store.service")
+            for version in ("repo-v1", "repo-v2"):
+                self.assertTrue((image / f"usr/share/forge-store/flatpak/{version}/tmp/cache").is_dir())
+                self.assertTrue((image / f"usr/share/forge-store/flatpak/{version}/state").is_dir())
 
     def test_rejects_wrong_digest_and_linked_member(self):
         with tempfile.TemporaryDirectory() as name:
