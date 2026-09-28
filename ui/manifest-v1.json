@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "component": "ForgeStore UI",
+  "version": "0.1.0-local-candidate",
+  "distribution": "local-candidate-only",
+  "socket": "${XDG_RUNTIME_DIR}/forge-store/store.sock",
+  "source": {
+    "path": "ui/",
+    "origin": "ForgeStore project",
+    "license": "NOASSERTION",
+    "note": "No repository-wide license has been declared; public redistribution is not asserted."
+  },
+  "originalAssets": [
+    "ui/qml/Main.qml",
+    "ui/translations/Strings.js",
+    "ui/assets/forge-store.svg",
+    "ui/assets/forge-store.desktop"
+  ],
+  "runtimeDependencies": [
+    {
+      "package": "qt6-base",
+      "testedVersion": "6.11.1-1",
+      "modules": ["Core", "Gui", "Network"],
+      "archPackageLicenses": ["GPL-3.0-only", "LGPL-3.0-only", "LicenseRef-Qt-Commercial", "Qt-GPL-exception-1.0"]
+    },
+    {
+      "package": "qt6-declarative",
+      "testedVersion": "6.11.1-3",
+      "modules": ["Qml", "Quick", "QtQuick", "QtQuick.Controls", "QtQuick.Layouts"],
+      "archPackageLicenses": ["GPL-3.0-only", "LGPL-3.0-only", "LicenseRef-Qt-Commercial", "Qt-GPL-exception-1.0"]
+    }
+  ]
+}
