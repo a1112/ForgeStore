@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "distribution": "local-candidate-only",
+  "components": [
+    {
+      "name": "forge-store-core",
+      "source": "crates/forge-store-core",
+      "license": "NOASSERTION",
+      "note": "Project-wide redistribution terms have not been declared."
+    },
+    {
+      "name": "forge-store-ui",
+      "source": "ui/",
+      "license": "NOASSERTION",
+      "note": "Original Qt/QML interface; see ui/manifest-v1.json."
+    },
+    {
+      "name": "ForgeStore Flatpak and ForgeOS package fixtures",
+      "source": "fixtures/flatpak and scripts/build_fixture_packages.py",
+      "license": "MIT",
+      "licenseFile": "/usr/share/forge-store/fixture-LICENSE"
+    },
+    {
+      "name": "TUF candidate catalogue",
+      "source": "catalogue/candidate-v1 and catalogue/candidate-v2",
+      "license": "NOASSERTION",
+      "note": "Public metadata only. Private signing keys and third-party installers are excluded."
+    }
+  ],
+  "systemDependencies": [
+    "flatpak",
+    "gnupg",
+    "qt6-base",
+    "qt6-declarative",
+    "polkit",
+    "compatforge-cli",
+    "forge-packaged"
+  ],
+  "thirdPartyInstallers": [
+    "7-Zip 26.01",
+    "Notepad++ 8.9.6.2",
+    "SumatraPDF 3.6.1"
+  ],
+  "installerPolicy": "Installers are downloaded from reviewed URLs and verified against signed TUF target length and SHA-256. No installer bytes are redistributed in this bundle."
+}

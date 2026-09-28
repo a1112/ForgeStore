@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+if ! command -v flatpak >/dev/null 2>&1; then
+    exit 0
+fi
+name=forge-store-fixture
+expected=file:///usr/share/forge-store/flatpak/repo-v1
+upgraded=file:///usr/share/forge-store/flatpak/repo-v2
+actual=$(flatpak remotes --user --columns=name,url | awk -v name="$name" '$1 == name {print $2}')
+if [ -z "$actual" ]; then
+    exec flatpak remote-add --user --gpg-import=/usr/share/forge-store/flatpak/fixture-public.gpg \
+        "$name" "$expected"
+fi
+case "$actual" in
+    "$expected"|"$upgraded") exit 0 ;;
+    *) echo 'forge-store-fixture remote URL differs from signed local fixture' >&2; exit 1 ;;
+esac

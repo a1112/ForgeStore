@@ -1,0 +1,15 @@
+[Unit]
+Description=ForgeStore signed application catalogue and job service
+
+[Service]
+Type=simple
+ExecStartPre=-/usr/lib/forge-store/provision-flatpak-fixture
+ExecStart=/usr/bin/forge-store-service
+Restart=on-failure
+RestartSec=2s
+NoNewPrivileges=yes
+ProtectSystem=full
+PrivateTmp=yes
+
+[Install]
+WantedBy=default.target

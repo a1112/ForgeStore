@@ -1,0 +1,26 @@
+[package]
+name = "forge-store-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+bytes = "=1.10.1"
+futures-util = "=0.3.31"
+hex = "=0.4.3"
+libc = "=0.2.189"
+reqwest = { version = "=0.12.23", default-features = false, features = ["rustls-tls", "stream"] }
+rusqlite = { version = "=0.37.0", features = ["bundled"] }
+serde = { version = "=1.0.219", features = ["derive"] }
+serde_json = "=1.0.143"
+sha2 = "=0.10.9"
+thiserror = "=2.0.16"
+tokio = { version = "=1.47.1", features = ["fs", "io-util", "macros", "rt-multi-thread", "time", "sync", "process", "net"] }
+tokio-util = { version = "=0.7.16", features = ["io"] }
+tough = { version = "=0.24.0", features = ["http"] }
+url = "=2.5.7"
+uuid = { version = "=1.18.0", features = ["v4"] }
+
+[dev-dependencies]
+tempfile = "=3.21.0"
+
