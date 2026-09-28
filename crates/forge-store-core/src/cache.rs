@@ -540,6 +540,14 @@ fn mapped_root_fixture_owner_is_safe(
     {
         return false;
     }
+    matches!(
+        effective_mount_read_only(mountinfo, Path::new("/usr")),
+        Some((4, true))
+    ) && matches!(effective_mount_read_only(mountinfo, path), Some((depth, true)) if depth >= 4)
+}
+
+#[cfg(unix)]
+fn effective_mount_read_only(mountinfo: &str, path: &Path) -> Option<(usize, bool)> {
     let mut longest_mount = 0;
     let mut read_only = false;
     for line in mountinfo.lines() {
@@ -565,7 +573,7 @@ fn mapped_root_fixture_owner_is_safe(
             read_only &= ro;
         }
     }
-    longest_mount >= "/usr".len() && read_only
+    (longest_mount != 0).then_some((longest_mount, read_only))
 }
 
 async fn private_dir(path: &Path) -> Result<(), CacheError> {
@@ -734,6 +742,18 @@ mod local_file_tests {
             "1000 1000 1\n",
             "65534\n",
             &nested_writable,
+            zero_caps,
+            fixture
+        ));
+        let writable_usr_with_read_only_fixture = format!(
+            "{writable_usr}823 822 0:44 / /usr/share/forge-store/fixtures ro,relatime - tmpfs tmpfs rw\n"
+        );
+        assert!(!mapped_root_fixture_owner_is_safe(
+            65534,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            &writable_usr_with_read_only_fixture,
             zero_caps,
             fixture
         ));
