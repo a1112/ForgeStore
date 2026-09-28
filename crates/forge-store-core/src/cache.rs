@@ -415,13 +415,6 @@ impl VerifiedCache {
             );
             return Err(CacheError::LocalFixture("file is group or world writable"));
         }
-        if require_root && metadata.uid() != 0 {
-            eprintln!(
-                "ForgeStore local fixture owner UID {} is not root",
-                metadata.uid()
-            );
-            return Err(CacheError::LocalFixture("file is not root-owned"));
-        }
         if require_root {
             let allowed = format!(
                 "/usr/share/forge-store/fixtures/{}.forgepkg",
@@ -437,6 +430,17 @@ impl VerifiedCache {
                     "path differs from signed image fixture path",
                 ));
             }
+            // A hardened systemd --user unit may map only its own UID. Host
+            // root then appears as overflowuid inside its read-only /usr view.
+            // Accept that view only after checking the kernel namespace and
+            // mount facts; the signed length and SHA are rechecked on ingest.
+            let owner = metadata.uid();
+            if owner != 0 && !mapped_root_process_view_allows(owner, path) {
+                eprintln!(
+                    "ForgeStore local fixture owner UID {owner} is not trusted in this namespace"
+                );
+                return Err(CacheError::LocalFixture("file owner is not trusted"));
+            }
             for directory in path
                 .ancestors()
                 .skip(1)
@@ -444,7 +448,7 @@ impl VerifiedCache {
             {
                 let info = tokio::fs::symlink_metadata(directory).await?;
                 if !info.file_type().is_dir()
-                    || info.uid() != 0
+                    || info.uid() != owner
                     || info.permissions().mode() & 0o022 != 0
                 {
                     eprintln!(
@@ -464,6 +468,104 @@ impl VerifiedCache {
         let stream = tokio_util::io::ReaderStream::new(file);
         self.ingest(artifact, stream, cancel).await
     }
+}
+
+#[cfg(unix)]
+fn mapped_root_process_view_allows(owner: u32, path: &Path) -> bool {
+    let Ok(uid_map) = std::fs::read_to_string("/proc/self/uid_map") else {
+        return false;
+    };
+    let Ok(overflowuid) = std::fs::read_to_string("/proc/sys/kernel/overflowuid") else {
+        return false;
+    };
+    let Ok(mountinfo) = std::fs::read_to_string("/proc/self/mountinfo") else {
+        return false;
+    };
+    let Ok(status) = std::fs::read_to_string("/proc/self/status") else {
+        return false;
+    };
+    mapped_root_fixture_owner_is_safe(
+        owner,
+        unsafe { libc::geteuid() },
+        &uid_map,
+        &overflowuid,
+        &mountinfo,
+        &status,
+        path,
+    )
+}
+
+#[cfg(unix)]
+fn mapped_root_fixture_owner_is_safe(
+    owner: u32,
+    effective_uid: u32,
+    uid_map: &str,
+    overflowuid: &str,
+    mountinfo: &str,
+    status: &str,
+    path: &Path,
+) -> bool {
+    if owner != 65534
+        || effective_uid == 0
+        || overflowuid.trim() != "65534"
+        || path.parent() != Some(Path::new("/usr/share/forge-store/fixtures"))
+    {
+        return false;
+    }
+    let mut map_lines = uid_map.lines();
+    let Some(line) = map_lines.next() else {
+        return false;
+    };
+    if map_lines.next().is_some() {
+        return false;
+    }
+    let numbers = line
+        .split_ascii_whitespace()
+        .map(str::parse::<u64>)
+        .collect::<Result<Vec<_>, _>>();
+    let Ok(numbers) = numbers else {
+        return false;
+    };
+    if numbers != [effective_uid as u64, effective_uid as u64, 1] {
+        return false;
+    }
+    let cap_eff = status
+        .lines()
+        .find_map(|line| line.strip_prefix("CapEff:").map(str::trim));
+    let no_new_privs = status
+        .lines()
+        .find_map(|line| line.strip_prefix("NoNewPrivs:").map(str::trim));
+    if cap_eff.and_then(|value| u64::from_str_radix(value, 16).ok()) != Some(0)
+        || no_new_privs != Some("1")
+    {
+        return false;
+    }
+    let mut longest_mount = 0;
+    let mut read_only = false;
+    for line in mountinfo.lines() {
+        let Some(before_separator) = line.split(" - ").next() else {
+            continue;
+        };
+        let fields = before_separator
+            .split_ascii_whitespace()
+            .collect::<Vec<_>>();
+        if fields.len() < 6 {
+            continue;
+        }
+        let mountpoint = Path::new(fields[4]);
+        if !mountpoint.is_absolute() || !path.starts_with(mountpoint) {
+            continue;
+        }
+        let length = fields[4].len();
+        let ro = fields[5].split(',').any(|flag| flag == "ro");
+        if length > longest_mount {
+            longest_mount = length;
+            read_only = ro;
+        } else if length == longest_mount {
+            read_only &= ro;
+        }
+    }
+    longest_mount >= "/usr".len() && read_only
 }
 
 async fn private_dir(path: &Path) -> Result<(), CacheError> {
@@ -547,6 +649,95 @@ fn public_v6(ip: Ipv6Addr) -> bool {
 mod local_file_tests {
     use super::*;
     use std::os::unix::fs::symlink;
+
+    #[test]
+    fn mapped_root_fixture_requires_single_uid_map_read_only_usr_and_no_caps() {
+        let fixture = Path::new("/usr/share/forge-store/fixtures/abc.forgepkg");
+        let read_only_usr =
+            "822 791 254:2 /usr /usr ro,nosuid,relatime shared:768 master:1 - ext4 /dev/vda2 rw\n";
+        let zero_caps = "Name:\tforge-store\nCapEff:\t0000000000000000\nNoNewPrivs:\t1\n";
+        assert!(mapped_root_fixture_owner_is_safe(
+            65534,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            read_only_usr,
+            zero_caps,
+            fixture
+        ));
+        for map in [
+            "0 0 4294967295\n",
+            "1000 1000 2\n",
+            "1000 1000 1\n1001 1001 1\n",
+            "0 1000 1\n",
+        ] {
+            assert!(!mapped_root_fixture_owner_is_safe(
+                65534,
+                1000,
+                map,
+                "65534\n",
+                read_only_usr,
+                zero_caps,
+                fixture
+            ));
+        }
+        assert!(!mapped_root_fixture_owner_is_safe(
+            65534,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            read_only_usr,
+            "CapEff:\t0000000000200000\nNoNewPrivs:\t1\n",
+            fixture
+        ));
+        assert!(!mapped_root_fixture_owner_is_safe(
+            65534,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            read_only_usr,
+            "CapEff:\t0000000000000000\nNoNewPrivs:\t0\n",
+            fixture
+        ));
+        assert!(!mapped_root_fixture_owner_is_safe(
+            65534,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            read_only_usr,
+            zero_caps,
+            Path::new("/home/forge/fixtures/abc.forgepkg")
+        ));
+        assert!(!mapped_root_fixture_owner_is_safe(
+            1000,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            read_only_usr,
+            zero_caps,
+            fixture
+        ));
+        let writable_usr = read_only_usr.replace("/usr ro,", "/usr rw,");
+        assert!(!mapped_root_fixture_owner_is_safe(
+            65534,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            &writable_usr,
+            zero_caps,
+            fixture
+        ));
+        let nested_writable = format!("{read_only_usr}823 822 0:44 / /usr/share/forge-store/fixtures rw,relatime - tmpfs tmpfs rw\n");
+        assert!(!mapped_root_fixture_owner_is_safe(
+            65534,
+            1000,
+            "1000 1000 1\n",
+            "65534\n",
+            &nested_writable,
+            zero_caps,
+            fixture
+        ));
+    }
 
     #[tokio::test]
     async fn local_fixture_verifies_content_and_rejects_symlink() {
