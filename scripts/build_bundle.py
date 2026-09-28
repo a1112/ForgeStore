@@ -52,6 +52,9 @@ def collect(args) -> dict[str, tuple[Path, str]]:
         if any(path.is_symlink() for path in source.rglob("*")):
             raise ValueError("Flatpak repository has a symlink")
         for path in sorted(source.rglob("*")):
+            # OSTree creates a root-owned coordination lock. It is not repository data.
+            if path.name == ".lock" and path.parent == source:
+                continue
             if path.is_file():
                 add("/usr/share/forge-store/flatpak/" + version + "/" + path.relative_to(source).as_posix(), path)
     add("/usr/lib/systemd/user/forge-store.service", args.source_root / "packaging/forge-store.service")
