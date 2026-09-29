@@ -1,6 +1,6 @@
 # Windows 应用滚动适配流程
 
-本流程面向 ForgeOS 上通过 CompatForge 运行、通过 ForgeStore 分发的 Windows 应用。当前首批为 7-Zip、Notepad++、SumatraPDF。最近执行记录见 [2026-09-29 第一轮](evidence/2026-09-29-windows-rolling.md)。
+本流程面向 ForgeOS 上通过 CompatForge 运行、通过 ForgeStore 分发的 Windows 应用。当前本地市场已验收 7-Zip、Notepad++、SumatraPDF、SQLiteStudio，共 4/1000 款。执行记录见 [2026-09-29 第一轮](evidence/2026-09-29-windows-rolling.md)和 [SQLiteStudio 接续轮](evidence/2026-09-30-sqlitestudio-rolling.md)；持续计数见[进度账本](windows-1000-progress.json)。
 
 | 阶段 | 要保存的事实 | 进入下一阶段的条件 |
 |---|---|---|

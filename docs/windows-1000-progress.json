@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "targetDistinctWindowsApps": 1000,
+  "countingRule": "Count one distinct Windows application ID only after pinned artifact verification, successful installation, real GUI file workflow, signed acceptance target, and observed local ForgeStore activation. Versions, fixtures, launch-only probes, and queued candidates do not count.",
+  "acceptedLocalMarket": [
+    {
+      "id": "7zip",
+      "version": "26.01",
+      "sha256": "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d",
+      "evidence": "docs/evidence/windows-rolling-20260929.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v3/tuf"
+    },
+    {
+      "id": "notepad-plus-plus",
+      "version": "8.9.6.2",
+      "sha256": "7c243203265ce8fdac76c839bf744ae35dcf620760eb97c2ea279af498560e45",
+      "evidence": "docs/evidence/windows-rolling-20260929.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v3/tuf"
+    },
+    {
+      "id": "sumatrapdf",
+      "version": "3.6.1",
+      "sha256": "1eee71cccd2ea6e94d5bcea54ee2f759844da3e1a0ee2f6045035b1d17b94381",
+      "evidence": "docs/evidence/windows-rolling-20260929.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v3/tuf"
+    },
+    {
+      "id": "sqlitestudio",
+      "version": "3.4.17",
+      "sha256": "5018ea571c2a3416944267d387cb75eea99d46ebd010f6aa5c35df1f7690c894",
+      "evidence": "docs/evidence/windows-sqlitestudio-20260929.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v4/tuf",
+      "publication": "docs/evidence/2026-09-30-sqlitestudio-publication.json"
+    }
+  ],
+  "queue": [
+    {
+      "id": "firefox",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/firefox.json",
+      "sourceSha256": "5017cecb5c77738b1866016659a0357e2fa2e8efa093f6aeeae62a63c6e2c119"
+    },
+    {
+      "id": "hoyoplay-cn",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/hoyoplay-cn.json",
+      "sourceSha256": "2c66c2001d3ad679a8df292172bc950db7f259a723dfce23ee7ed3035ccfd6f7"
+    },
+    {
+      "id": "jasp-stats",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/jasp-stats.json",
+      "sourceSha256": "ebaf01b7de53da849c9aa45e3c87f24e6c8e69ef3f742ca5eaedd6a0f8c79dd4"
+    },
+    {
+      "id": "lenovo-app-store",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/lenovo-app-store.json",
+      "sourceSha256": "37c2abfd4fe1fd1d6e0ee85a79592112c0f85a7d1eb452375617b8bee874b10e"
+    },
+    {
+      "id": "libreoffice",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/libreoffice.json",
+      "sourceSha256": "60b8de3c52df0380b039ae07e608c494a63f69d0483195bc4471afcb5384ff12"
+    },
+    {
+      "id": "ltspice",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/ltspice.json",
+      "sourceSha256": "03157bcc29c24fbd555c485bd14fab9f1a102a57b880086ee0aa25181eeacf0b"
+    },
+    {
+      "id": "portableapps-platform",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/portableapps-platform.json",
+      "sourceSha256": "f81ea7243ecd916d20e48e08d259cd24a152a444704b7f7c9332e96c0f62661a"
+    },
+    {
+      "id": "steam",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/steam.json",
+      "sourceSha256": "5b405e719271aed976042c46763ec494405fd580215ad65e2da6efba32488565"
+    },
+    {
+      "id": "texstudio",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/texstudio.json",
+      "sourceSha256": "95ffa27ad03cadd6cd38f90883fa7fedbd2e77f0f874ec5d2eaac24017f9383d"
+    },
+    {
+      "id": "vlc",
+      "stage": "source-review-needed",
+      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/vlc.json",
+      "sourceSha256": "35eed21393942c8632250defc1d9eef60f0ad1cc1ad073bd53126b599a4d908c"
+    }
+  ],
+  "excludedInternalFixtures": [
+    "macwin-core-capability-tests",
+    "macwin-game-tests",
+    "macwin-probes"
+  ],
+  "next": "vlc",
+  "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
+  "lastReviewed": "2026-09-30"
+}

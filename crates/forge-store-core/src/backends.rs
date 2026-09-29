@@ -222,6 +222,7 @@ impl CompatForgeRequest {
         artifact: &Artifact,
         path: &str,
         reviewed_definition: &Value,
+        session_environment: Option<(&str, &str)>,
     ) -> Result<Value, BackendError> {
         artifact.validate(crate::catalogue::MAX_ARTIFACT_BYTES)?;
         let app = reviewed_definition
@@ -248,10 +249,30 @@ impl CompatForgeRequest {
                 "catalogue differs from reviewed recipe or cache path",
             ));
         }
+        let mut payload = json!({"schemaVersion":"1","applicationId":app_id,
+            "kind":"install","executablePath":path});
+        if let Some((display, xauthority)) = session_environment {
+            let local_display = display.strip_prefix(':').is_some_and(|suffix| {
+                !suffix.is_empty()
+                    && suffix
+                        .bytes()
+                        .all(|byte| byte.is_ascii_digit() || byte == b'.')
+            });
+            if !local_display
+                || !xauthority.starts_with('/')
+                || xauthority.contains("..")
+                || xauthority.len() > 4096
+                || xauthority.chars().any(char::is_control)
+            {
+                return Err(BackendError::Invalid(
+                    "invalid local GUI session environment",
+                ));
+            }
+            payload["environmentOverrides"] = json!({"DISPLAY":display,"XAUTHORITY":xauthority});
+        }
         Ok(
             json!({"schemaVersion":"1","requestId":format!("store-{}",uuid::Uuid::new_v4()),
-            "operation":"jobs.submit","payload":{"schemaVersion":"1","applicationId":app_id,
-            "kind":"install","executablePath":path}}),
+            "operation":"jobs.submit","payload":payload}),
         )
     }
 }

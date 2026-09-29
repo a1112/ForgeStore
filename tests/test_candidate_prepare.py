@@ -13,6 +13,35 @@ SPEC.loader.exec_module(MODULE)
 
 
 class CandidatePreparationTest(unittest.TestCase):
+    def test_new_application_larger_than_32_mib_uses_reviewed_metadata(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            installer = root / "sqlite.exe"
+            with installer.open("wb") as stream:
+                stream.truncate(35 * 1024 * 1024)
+            package = root / "fixture.forgepkg"
+            package.write_bytes(b"package fixture")
+            pins = root / "pins.json"
+            pins.write_text(json.dumps({"applications": [{
+                "id": "sqlitestudio", "file": installer.name, "version": "3.4.17",
+                "sha256": hashlib.sha256(installer.read_bytes()).hexdigest(),
+                "url": "https://example.org/sqlite.exe", "license": "GPL-3.0-only",
+                "name": {"zhCN": "SQLiteStudio", "en": "SQLiteStudio"},
+                "summary": {"zhCN": "数据库编辑器", "en": "Database editor"},
+                "publisher": "SQLiteStudio", "origin": "https://example.org/"
+            }]}))
+            receipt = root / "receipt.json"
+            receipt.write_text(json.dumps({"packages": {"1.0.0": {
+                "file": package.name, "sha256": hashlib.sha256(package.read_bytes()).hexdigest(),
+                "size": package.stat().st_size
+            }}}))
+            catalog = MODULE.prepare(pins, root, receipt, root, root / "out")
+            app = catalog["entries"][0]
+            self.assertEqual(app["id"], "sqlitestudio")
+            self.assertEqual(app["delivery"]["artifact"]["size"], 35 * 1024 * 1024)
+            self.assertEqual(app["name"]["zhCN"], "SQLiteStudio")
+            self.assertEqual(app["compatibility"], {"status": "unknown", "evidence": None})
+
     def test_new_installer_is_unknown_until_actual_acceptance_review(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

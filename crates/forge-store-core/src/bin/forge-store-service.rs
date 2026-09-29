@@ -557,12 +557,15 @@ mod linux {
                 }
                 downloaded?;
                 let cached = store.cache.stage_compat_installer(artifact).await?;
+                let display = std::env::var("DISPLAY").ok();
+                let xauthority = std::env::var("XAUTHORITY").ok();
                 let request = CompatForgeRequest::install(
                     id,
                     &entry.version,
                     artifact,
                     cached.to_str().ok_or("cache path is not UTF-8")?,
                     &definition,
+                    display.as_deref().zip(xauthority.as_deref()),
                 )?;
                 let submitted = store.compat.call(request).await?;
                 let job_id = submitted

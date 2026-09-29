@@ -41,27 +41,44 @@ fn windows_install_must_match_reviewed_service_recipe() {
         &sample(),
         "/home/forge/.cache/forge-store/d64a",
         &definition,
+        Some((":0", "/run/user/1000/xauth_test")),
     )
     .unwrap();
     assert_eq!(request["operation"], "jobs.submit");
     assert_eq!(request["payload"]["applicationId"], "7zip");
     assert_eq!(request["payload"]["kind"], "install");
+    assert_eq!(request["payload"]["environmentOverrides"]["DISPLAY"], ":0");
+    assert_eq!(
+        request["payload"]["environmentOverrides"]["XAUTHORITY"],
+        "/run/user/1000/xauth_test"
+    );
     assert!(CompatForgeRequest::install(
         "7zip",
         "26.02",
         &sample(),
         "/home/forge/.cache/forge-store/d64a",
-        &definition
+        &definition,
+        None
     )
     .is_err());
-    let mut mismatched = definition;
+    let mut mismatched = definition.clone();
     mismatched["application"]["installer"]["sha256"] = json!("00".repeat(32));
     assert!(CompatForgeRequest::install(
         "7zip",
         "26.01",
         &sample(),
         "/home/forge/.cache/forge-store/d64a",
-        &mismatched
+        &mismatched,
+        None
+    )
+    .is_err());
+    assert!(CompatForgeRequest::install(
+        "7zip",
+        "26.01",
+        &sample(),
+        "/home/forge/.cache/forge-store/d64a",
+        &definition,
+        Some(("evil.example:0", "/run/user/1000/xauth_test"))
     )
     .is_err());
 }

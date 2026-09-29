@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "scope": "isolated ForgeOS v12 local ForgeStore",
+  "signedCatalogueVersion": 13,
+  "catalogueEntries": 6,
+  "windowsPublishedAndInstalled": 4,
+  "windowsIds": [
+    "7zip",
+    "notepad-plus-plus",
+    "sqlitestudio",
+    "sumatrapdf"
+  ],
+  "storeBinarySha256": "9845c7b2df83bf7f6a061423fe7f69151c4b22444f84b027a1f4b24c9507fd3e",
+  "compatforgeBinarySha256": "201dffa0e69c712b1548f72227d80fab59ec5c27a0051ab69b2af1a46a6bbbb5",
+  "storeJobs": {
+    "418c43b5-4dd7-4975-a8a5-bcc1638bb1d1": {
+      "state": "failed",
+      "detail": "file operation: error decoding response body"
+    },
+    "155eb5f9-bacc-45b2-8a8e-bfa8ebe3f077": {
+      "state": "failed",
+      "detail": "CompatForge job failed: process exited unsuccessfully"
+    },
+    "52ce07ae-12b1-45fc-a611-5eb2a3d6b0e2": {
+      "state": "succeeded",
+      "detail": null
+    },
+    "dd7b6087-0e28-4aa3-b365-62c94afcb6da": {
+      "state": "succeeded",
+      "detail": null
+    }
+  },
+  "sqliteInstalled": {
+    "appId": "sqlitestudio",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "3.4.17"
+  },
+  "services": {
+    "forge-store.service": "active",
+    "compatforge.service": "active"
+  },
+  "allJobsTerminal": true
+}

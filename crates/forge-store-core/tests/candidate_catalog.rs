@@ -85,4 +85,50 @@ async fn reviewed_candidate_upgrade_and_rollback_protection() {
             assert_eq!(acceptance["guiFileOperation"], "passed");
         }
     }
+
+    let v4 = load("candidate-v4").await.unwrap();
+    assert_eq!(v4.entries.len(), 6);
+    let sqlite = v4
+        .entries
+        .iter()
+        .find(|entry| entry.id == "sqlitestudio")
+        .unwrap();
+    assert_eq!(sqlite.version, "3.4.17");
+    assert!(matches!(
+        sqlite.compatibility.status,
+        CompatibilityStatus::Tested
+    ));
+    assert_eq!(
+        sqlite.compatibility.evidence.as_deref(),
+        Some("windows-sqlitestudio-20260929.acceptance.json#sqlitestudio")
+    );
+    let sqlite_tuf = source.join("catalogue/candidate-v4/tuf");
+    let sqlite_repository = RepositoryLoader::new(
+        &std::fs::read(sqlite_tuf.join("trusted-root.json")).unwrap(),
+        Url::from_directory_path(sqlite_tuf.join("metadata")).unwrap(),
+        Url::from_directory_path(sqlite_tuf.join("targets")).unwrap(),
+    )
+    .load()
+    .await
+    .unwrap();
+    let sqlite_evidence = sqlite_repository
+        .read_target(&TargetName::new("windows-sqlitestudio-20260929.acceptance.json").unwrap())
+        .await
+        .unwrap()
+        .unwrap()
+        .into_vec()
+        .await
+        .unwrap();
+    let sqlite_evidence: serde_json::Value = serde_json::from_slice(&sqlite_evidence).unwrap();
+    let sqlite_acceptance = &sqlite_evidence["applications"][0];
+    assert_eq!(sqlite_acceptance["id"], "sqlitestudio");
+    assert_eq!(sqlite_acceptance["guiFileOperation"], "passed");
+    assert_eq!(sqlite_acceptance["sqliteRows"], serde_json::json!([["ok"]]));
+    if let Delivery::Compatforge { artifact, .. } = &sqlite.delivery {
+        assert_eq!(sqlite_acceptance["sha256"], artifact.sha256);
+        assert_eq!(sqlite_acceptance["size"], artifact.size);
+    } else {
+        panic!("SQLiteStudio must use CompatForge delivery");
+    }
+    assert!(load("candidate-v3").await.is_err());
 }

@@ -7,7 +7,7 @@ from pathlib import Path
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
-MAX_WINDOWS_BYTES = 32 * 1024 * 1024
+MAX_WINDOWS_BYTES = 1024 * 1024 * 1024
 
 
 def digest(path: Path) -> tuple[str, int]:
@@ -37,7 +37,12 @@ def prepare(pins: Path, windows_cache: Path, fixture_receipt: Path, fixture_dir:
     }
     for pin in pin_data["applications"]:
         app_id = pin["id"]
-        zh_name, en_name, zh_summary, en_summary, publisher, origin = names[app_id]
+        if app_id in names:
+            zh_name, en_name, zh_summary, en_summary, publisher, origin = names[app_id]
+        else:
+            zh_name, en_name = pin["name"]["zhCN"], pin["name"]["en"]
+            zh_summary, en_summary = pin["summary"]["zhCN"], pin["summary"]["en"]
+            publisher, origin = pin["publisher"], pin["origin"]
         source = windows_cache / pin["file"]
         sha, size = digest(source)
         if sha != pin["sha256"] or not 0 < size <= MAX_WINDOWS_BYTES:
