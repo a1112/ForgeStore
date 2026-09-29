@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "scope": "isolated ForgeOS v12 local ForgeStore",
+  "signedCatalogueVersion": 15,
+  "catalogueEntries": 8,
+  "windowsPublishedAndInstalled": 6,
+  "windowsIds": [
+    "7zip",
+    "notepad-plus-plus",
+    "sqlitestudio",
+    "sumatrapdf",
+    "texstudio",
+    "vlc"
+  ],
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "storeBinarySha256": "9845c7b2df83bf7f6a061423fe7f69151c4b22444f84b027a1f4b24c9507fd3e",
+  "compatforgeBinarySha256": "201dffa0e69c712b1548f72227d80fab59ec5c27a0051ab69b2af1a46a6bbbb5",
+  "storeJobs": {
+    "06232e0d-cfc6-403b-8efd-55930dcb9cc8": {
+      "state": "succeeded",
+      "detail": null
+    },
+    "22966b50-2238-4499-b449-5c71eaf7e029": {
+      "state": "succeeded",
+      "detail": null
+    }
+  },
+  "texstudioInstalled": {
+    "appId": "texstudio",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "4.9.5"
+  },
+  "services": {
+    "forge-store.service": "active",
+    "compatforge.service": "active"
+  },
+  "allJobsTerminal": true,
+  "onlineTexstudioDownloadVerified": false
+}

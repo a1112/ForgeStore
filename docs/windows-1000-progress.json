@@ -40,6 +40,15 @@
       "signedCatalogue": "catalogue/candidate-v5/tuf",
       "publication": "docs/evidence/2026-09-30-vlc-publication.json",
       "limitation": "Official URL redirects to external mirror; local market update used verified cache; online download not verified."
+    },
+    {
+      "id": "texstudio",
+      "version": "4.9.5",
+      "sha256": "618c633e1ad6d9aba90ff8c4498d265b2cbfb6d02173d4577ca8ba3c989cc1e4",
+      "evidence": "docs/evidence/windows-texstudio-20260930.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v6/tuf",
+      "publication": "docs/evidence/2026-09-30-texstudio-publication.json",
+      "limitation": "GUI edit/save, cached Store update and rollback passed; TeX compilation and online download not verified."
     }
   ],
   "queue": [
@@ -90,12 +99,6 @@
       "stage": "source-review-needed",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/steam.json",
       "sourceSha256": "5b405e719271aed976042c46763ec494405fd580215ad65e2da6efba32488565"
-    },
-    {
-      "id": "texstudio",
-      "stage": "source-review-needed",
-      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/texstudio.json",
-      "sourceSha256": "95ffa27ad03cadd6cd38f90883fa7fedbd2e77f0f874ec5d2eaac24017f9383d"
     }
   ],
   "excludedInternalFixtures": [
@@ -104,7 +107,7 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "texstudio",
+  "next": "firefox",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-09-30"
 }

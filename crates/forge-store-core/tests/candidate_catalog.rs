@@ -173,4 +173,53 @@ async fn reviewed_candidate_upgrade_and_rollback_protection() {
         panic!("VLC must use CompatForge delivery");
     }
     assert!(load("candidate-v4").await.is_err());
+
+    let v6 = load("candidate-v6").await.unwrap();
+    assert_eq!(v6.entries.len(), 8);
+    let texstudio = v6
+        .entries
+        .iter()
+        .find(|entry| entry.id == "texstudio")
+        .unwrap();
+    assert_eq!(texstudio.version, "4.9.5");
+    assert!(matches!(
+        texstudio.compatibility.status,
+        CompatibilityStatus::Tested
+    ));
+    assert_eq!(
+        texstudio.compatibility.evidence.as_deref(),
+        Some("windows-texstudio-20260930.acceptance.json#texstudio")
+    );
+    let tuf = source.join("catalogue/candidate-v6/tuf");
+    let repository = RepositoryLoader::new(
+        &std::fs::read(tuf.join("trusted-root.json")).unwrap(),
+        Url::from_directory_path(tuf.join("metadata")).unwrap(),
+        Url::from_directory_path(tuf.join("targets")).unwrap(),
+    )
+    .load()
+    .await
+    .unwrap();
+    let evidence = repository
+        .read_target(&TargetName::new("windows-texstudio-20260930.acceptance.json").unwrap())
+        .await
+        .unwrap()
+        .unwrap()
+        .into_vec()
+        .await
+        .unwrap();
+    let acceptance: serde_json::Value = serde_json::from_slice(&evidence).unwrap();
+    let app = &acceptance["applications"][0];
+    assert_eq!(app["id"], "texstudio");
+    assert_eq!(app["guiFileOperation"], "passed");
+    assert_eq!(
+        app["savedDocumentSha256"],
+        "2a2bfb50d9f81b7c70fbbb83466f88cc90b49b096331c9b29ad1056f3fb06cd3"
+    );
+    if let Delivery::Compatforge { artifact, .. } = &texstudio.delivery {
+        assert_eq!(app["sha256"], artifact.sha256);
+        assert_eq!(app["size"], artifact.size);
+    } else {
+        panic!("TeXstudio must use CompatForge delivery");
+    }
+    assert!(load("candidate-v5").await.is_err());
 }
