@@ -1,6 +1,7 @@
-use forge_store_core::catalogue::Delivery;
+use forge_store_core::catalogue::{CompatibilityStatus, Delivery};
 use forge_store_core::trusted_catalogue::TrustedCatalogue;
 use std::path::Path;
+use tough::{IntoVec, RepositoryLoader, TargetName};
 use url::Url;
 
 #[tokio::test]
@@ -35,4 +36,53 @@ async fn reviewed_candidate_upgrade_and_rollback_protection() {
     assert_eq!(pkg.version, "2.0.0");
     assert!(matches!(pkg.delivery, Delivery::ForgePackage { .. }));
     assert!(load("candidate-v1").await.is_err());
+    let v3 = load("candidate-v3").await.unwrap();
+    assert_eq!(v3.entries.len(), 5);
+    for entry in &v3.entries {
+        if matches!(entry.delivery, Delivery::Compatforge { .. }) {
+            assert!(matches!(
+                entry.compatibility.status,
+                CompatibilityStatus::Tested
+            ));
+            assert_eq!(
+                entry.compatibility.evidence.as_deref(),
+                Some(format!("windows-rolling-20260929.acceptance.json#{}", entry.id).as_str())
+            );
+        }
+    }
+    assert!(load("candidate-v2").await.is_err());
+
+    let tuf = source.join("catalogue/candidate-v3/tuf");
+    let root = std::fs::read(tuf.join("trusted-root.json")).unwrap();
+    let repository = RepositoryLoader::new(
+        &root,
+        Url::from_directory_path(tuf.join("metadata")).unwrap(),
+        Url::from_directory_path(tuf.join("targets")).unwrap(),
+    )
+    .load()
+    .await
+    .unwrap();
+    let evidence = repository
+        .read_target(&TargetName::new("windows-rolling-20260929.acceptance.json").unwrap())
+        .await
+        .unwrap()
+        .unwrap()
+        .into_vec()
+        .await
+        .unwrap();
+    let evidence: serde_json::Value = serde_json::from_slice(&evidence).unwrap();
+    for entry in &v3.entries {
+        if let Delivery::Compatforge { artifact, .. } = &entry.delivery {
+            let acceptance = evidence["applications"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .find(|app| app["id"] == entry.id)
+                .unwrap();
+            assert_eq!(acceptance["version"], entry.version);
+            assert_eq!(acceptance["sha256"], artifact.sha256);
+            assert_eq!(acceptance["size"], artifact.size);
+            assert_eq!(acceptance["guiFileOperation"], "passed");
+        }
+    }
 }

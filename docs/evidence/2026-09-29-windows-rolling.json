@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-29",
+  "scope": "isolated v12 VM; existing signed candidate-v2; no new publication",
+  "bootId": "3cdbb247-caac-46c2-90c7-492812680f11",
+  "binaries": {
+    "/usr/bin/forge-store-service": "67fd7d618bb90939aa4d38bc98c446e1295b1430233e2e2d0fc9466a5cc9265f",
+    "/usr/bin/compatforge-cli": "b0fb6755ec12d552a3846197281e982ccdbc761fffef0b3dfd30030e0f23e332"
+  },
+  "artifacts": {
+    "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d": {
+      "sha256": "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d",
+      "size": 1658851
+    },
+    "7c243203265ce8fdac76c839bf744ae35dcf620760eb97c2ea279af498560e45": {
+      "sha256": "7c243203265ce8fdac76c839bf744ae35dcf620760eb97c2ea279af498560e45",
+      "size": 6898288
+    },
+    "1eee71cccd2ea6e94d5bcea54ee2f759844da3e1a0ee2f6045035b1d17b94381": {
+      "sha256": "1eee71cccd2ea6e94d5bcea54ee2f759844da3e1a0ee2f6045035b1d17b94381",
+      "size": 11075960
+    }
+  },
+  "catalogueFiles": {
+    "0d7be96f8ad446bf45d48d5f8401aca3ed79740067ffe217a77f1f9604a25d9d.catalogue.json": "0d7be96f8ad446bf45d48d5f8401aca3ed79740067ffe217a77f1f9604a25d9d",
+    "372cccc2c40498bd9eaf1cf2781a25c2478b74a99ed6d71fd6bf7acada0abfda.catalogue.json": "372cccc2c40498bd9eaf1cf2781a25c2478b74a99ed6d71fd6bf7acada0abfda"
+  },
+  "beforeInstalled": [
+    {
+      "appId": "7zip",
+      "backend": "compatforge",
+      "canRollback": false,
+      "version": "26.01"
+    },
+    {
+      "appId": "org.forgeos.storefixture-flatpak",
+      "backend": "flatpak",
+      "canRollback": false,
+      "version": ""
+    },
+    {
+      "appId": "org.forgeos.storefixture",
+      "backend": "forge-package",
+      "canRollback": true,
+      "version": "SHA-256 20802d45b911"
+    }
+  ],
+  "installed": [
+    {
+      "appId": "7zip",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "26.01"
+    },
+    {
+      "appId": "notepad-plus-plus",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "8.9.6.2"
+    },
+    {
+      "appId": "sumatrapdf",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "3.6.1"
+    },
+    {
+      "appId": "org.forgeos.storefixture-flatpak",
+      "backend": "flatpak",
+      "canRollback": false,
+      "version": ""
+    },
+    {
+      "appId": "org.forgeos.storefixture",
+      "backend": "forge-package",
+      "canRollback": true,
+      "version": "SHA-256 20802d45b911"
+    }
+  ],
+  "backends": {
+    "compatforge": {
+      "available": true,
+      "reason": ""
+    },
+    "flatpak": {
+      "available": true,
+      "reason": ""
+    },
+    "forgePackage": {
+      "available": true,
+      "reason": ""
+    }
+  },
+  "storeJobs": [
+    {
+      "action": "install",
+      "appId": "7zip",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "461e33ad-7c09-417a-9550-b83c330b3e78",
+      "state": "succeeded"
+    },
+    {
+      "action": "install",
+      "appId": "notepad-plus-plus",
+      "backend": "compatforge",
+      "detail": "HTTP operation: error sending request for url (https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.6.2/npp.8.9.6.2.Installer.x64.exe)",
+      "id": "1a6b92de-6d21-4a8c-a4c7-372fb4582cee",
+      "state": "failed"
+    },
+    {
+      "action": "install",
+      "appId": "sumatrapdf",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "3ed22590-6735-4f7a-942e-2c3d3fd0028b",
+      "state": "succeeded"
+    },
+    {
+      "action": "install",
+      "appId": "notepad-plus-plus",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "65010d6b-0778-4183-a15e-55a7dc440294",
+      "state": "succeeded"
+    },
+    {
+      "action": "update",
+      "appId": "7zip",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "4357e805-d47e-4672-b8e6-81638b456078",
+      "state": "succeeded"
+    },
+    {
+      "action": "rollback",
+      "appId": "7zip",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "e7b28456-ecc8-4bcc-91bf-551b815bfb69",
+      "state": "succeeded"
+    },
+    {
+      "action": "update",
+      "appId": "notepad-plus-plus",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "76e8f5d0-3b63-4e3f-a3c1-7e3442b8ea65",
+      "state": "succeeded"
+    },
+    {
+      "action": "rollback",
+      "appId": "notepad-plus-plus",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "168df765-7c44-4f29-8beb-f51d62d5dda2",
+      "state": "succeeded"
+    },
+    {
+      "action": "update",
+      "appId": "sumatrapdf",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "4ac90cc6-d0d5-4739-b9d7-879158883550",
+      "state": "succeeded"
+    },
+    {
+      "action": "rollback",
+      "appId": "sumatrapdf",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "add96fea-765c-464b-88c2-d6a4d3ea6ef2",
+      "state": "succeeded"
+    }
+  ],
+  "lifecycle": {
+    "operations": [
+      {
+        "action": "update",
+        "appId": "7zip",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "4357e805-d47e-4672-b8e6-81638b456078",
+        "state": "succeeded"
+      },
+      {
+        "action": "rollback",
+        "appId": "7zip",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "e7b28456-ecc8-4bcc-91bf-551b815bfb69",
+        "state": "succeeded"
+      },
+      {
+        "action": "update",
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "76e8f5d0-3b63-4e3f-a3c1-7e3442b8ea65",
+        "state": "succeeded"
+      },
+      {
+        "action": "rollback",
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "168df765-7c44-4f29-8beb-f51d62d5dda2",
+        "state": "succeeded"
+      },
+      {
+        "action": "update",
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "4ac90cc6-d0d5-4739-b9d7-879158883550",
+        "state": "succeeded"
+      },
+      {
+        "action": "rollback",
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "add96fea-765c-464b-88c2-d6a4d3ea6ef2",
+        "state": "succeeded"
+      }
+    ],
+    "restartPersistence": true,
+    "installed": [
+      {
+        "appId": "7zip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "26.01"
+      },
+      {
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "8.9.6.2"
+      },
+      {
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.6.1"
+      },
+      {
+        "appId": "org.forgeos.storefixture-flatpak",
+        "backend": "flatpak",
+        "canRollback": false,
+        "version": ""
+      },
+      {
+        "appId": "org.forgeos.storefixture",
+        "backend": "forge-package",
+        "canRollback": true,
+        "version": "SHA-256 20802d45b911"
+      }
+    ],
+    "desktopEntries": {
+      "org.forgeos.CompatForge.sumatrapdf.main.desktop": "[Desktop Entry]\nType=Application\nVersion=1.0\nName=SumatraPDF\nExec=/usr/bin/compatforge-cli desktop-launch sumatrapdf main -- %F\nTryExec=/usr/bin/compatforge-cli\nIcon=application-pdf\nTerminal=false\nCategories=Utility;\nX-Forge-Managed=true\nStartupWMClass=sumatrapdf.exe\nMimeType=application/pdf;\n",
+      "org.forgeos.CompatForge.notepad-plus-plus.main.desktop": "[Desktop Entry]\nType=Application\nVersion=1.0\nName=Notepad++\nExec=/usr/bin/compatforge-cli desktop-launch notepad-plus-plus main -- %F\nTryExec=/usr/bin/compatforge-cli\nIcon=text-editor\nTerminal=false\nCategories=Utility;\nX-Forge-Managed=true\nStartupWMClass=notepad++.exe\nMimeType=text/plain;\n",
+      "org.forgeos.CompatForge.7zip.main.desktop": "[Desktop Entry]\nType=Application\nVersion=1.0\nName=7-Zip\nExec=/usr/bin/compatforge-cli desktop-launch 7zip main -- %F\nTryExec=/usr/bin/compatforge-cli\nIcon=package-x-generic\nTerminal=false\nCategories=Utility;\nX-Forge-Managed=true\nStartupWMClass=7zfm.exe\nMimeType=application/zip;application/x-7z-compressed;\n"
+    },
+    "bootId": "3cdbb247-caac-46c2-90c7-492812680f11"
+  },
+  "launches": {
+    "7zip": {
+      "jobId": "job-1790683173040-8",
+      "status": "running",
+      "generationId": "gen-job-1790641285622-1",
+      "arguments": [
+        "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790641285622-1/prefix/drive_c/Program Files/7-Zip/7zFM.exe",
+        "Z:\\home\\forge\\forge-rolling-20260929\\inputs\\中文 压缩包.zip"
+      ],
+      "finalStatus": "cancelled"
+    },
+    "notepad-plus-plus": {
+      "jobId": "job-1790683177021-9",
+      "status": "running",
+      "generationId": "gen-job-1790682962501-3",
+      "arguments": [
+        "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790682962501-3/prefix/drive_c/Program Files/Notepad++/notepad++.exe",
+        "Z:\\home\\forge\\forge-rolling-20260929\\inputs\\中文 文档 100%.txt"
+      ],
+      "finalStatus": "cancelled"
+    },
+    "sumatrapdf": {
+      "jobId": "job-1790683181039-10",
+      "status": "running",
+      "generationId": "gen-job-1790682891047-2",
+      "arguments": [
+        "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790682891047-2/prefix/drive_c/Program Files/SumatraPDF/SumatraPDF.exe",
+        "Z:\\home\\forge\\forge-rolling-20260929\\inputs\\中文 文件名 100%.pdf"
+      ],
+      "finalStatus": "cancelled"
+    }
+  },
+  "windows": {
+    "7zip": "WM_CLASS(STRING) = \"7zfm.exe\", \"7zfm.exe\"\n_NET_WM_NAME(UTF8_STRING) = \"Z:\\\\home\\\\forge\\\\forge-rolling-20260929\\\\inputs\\\\中文 压缩包.zip\\\\\"\n_NET_WM_PID(CARDINAL) = 28491\n",
+    "notepad-plus-plus": "WM_CLASS(STRING) = \"notepad++.exe\", \"notepad++.exe\"\n_NET_WM_NAME(UTF8_STRING) = \"Z:\\\\home\\\\forge\\\\forge-rolling-20260929\\\\inputs\\\\中文 文档 100%.txt - Notepad++ [Administrator]\"\n_NET_WM_PID(CARDINAL) = 28650\n",
+    "sumatrapdf": "WM_CLASS(STRING) = \"sumatrapdf.exe\", \"sumatrapdf.exe\"\n_NET_WM_NAME(UTF8_STRING) = \"中文 文件名 100%.pdf - SumatraPDF\"\n_NET_WM_PID(CARDINAL) = 28901\n"
+  },
+  "visualAcceptance": false,
+  "pending": [
+    "unlock session for new visual and save/extract checks",
+    "new signed publication after acceptance"
+  ],
+  "fixtures": {
+    "中文 文件名 100%.pdf": "7295797c972d8f64a1b2f562862d232ee877443f7c6526cd2547f6151db81499",
+    "中文 文档 100%.txt": "60e164b9603392a2b34e4c7217cc4dc6c2f94f5c43dcab7e85a51ca72430073a",
+    "中文 压缩包.zip": "0e2096c904ecf2169718fd6eebd551103996cdb09ae3c3061d15c3a1a4b6366a"
+  }
+}

@@ -1,5 +1,9 @@
 * text eol=lf
 *.png -text
+*.jpg -text
+# Preserve signed CRLF targets and receipt; CR is part of their hashed bytes.
+docs/evidence/windows-rolling-20260929.acceptance.json -text whitespace=cr-at-eol
+catalogue/candidate-v3/tuf/targets/*.json -text whitespace=cr-at-eol
 catalogue/** -text
 crates/forge-store-core/tests/fixtures/** -text
 packaging/* text eol=lf

@@ -47,7 +47,9 @@ def prepare(pins: Path, windows_cache: Path, fixture_receipt: Path, fixture_dir:
                         "summary": {"zhCN": zh_summary, "en": en_summary},
                         "publisher": publisher, "license": pin["license"], "version": pin["version"],
                         "origin": origin, "permissions": ["user-files"],
-                        "compatibility": {"status": "tested", "evidence": "2026-09-28-real-vm-gui"},
+                        # A hash check proves artifact identity, not compatibility. A new
+                        # version must undergo acceptance review before TUF signing.
+                        "compatibility": {"status": "unknown", "evidence": None},
                         "delivery": {"backend": "compatforge", "reviewedApplicationId": app_id,
                                      "artifact": {"target": pin["file"], "url": pin["url"],
                                                   "sha256": sha, "size": size}}})
