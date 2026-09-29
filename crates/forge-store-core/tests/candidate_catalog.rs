@@ -131,4 +131,46 @@ async fn reviewed_candidate_upgrade_and_rollback_protection() {
         panic!("SQLiteStudio must use CompatForge delivery");
     }
     assert!(load("candidate-v3").await.is_err());
+
+    let v5 = load("candidate-v5").await.unwrap();
+    assert_eq!(v5.entries.len(), 7);
+    let vlc = v5.entries.iter().find(|entry| entry.id == "vlc").unwrap();
+    assert_eq!(vlc.version, "3.0.23");
+    assert!(matches!(
+        vlc.compatibility.status,
+        CompatibilityStatus::Tested
+    ));
+    assert_eq!(
+        vlc.compatibility.evidence.as_deref(),
+        Some("windows-vlc-20260930.acceptance.json#vlc")
+    );
+    let tuf = source.join("catalogue/candidate-v5/tuf");
+    let repository = RepositoryLoader::new(
+        &std::fs::read(tuf.join("trusted-root.json")).unwrap(),
+        Url::from_directory_path(tuf.join("metadata")).unwrap(),
+        Url::from_directory_path(tuf.join("targets")).unwrap(),
+    )
+    .load()
+    .await
+    .unwrap();
+    let evidence = repository
+        .read_target(&TargetName::new("windows-vlc-20260930.acceptance.json").unwrap())
+        .await
+        .unwrap()
+        .unwrap()
+        .into_vec()
+        .await
+        .unwrap();
+    let acceptance: serde_json::Value = serde_json::from_slice(&evidence).unwrap();
+    let app = &acceptance["applications"][0];
+    assert_eq!(app["id"], "vlc");
+    assert_eq!(app["guiFileOperation"], "passed");
+    assert_eq!(app["mediaDurationSeconds"], 20.041667);
+    if let Delivery::Compatforge { artifact, .. } = &vlc.delivery {
+        assert_eq!(app["sha256"], artifact.sha256);
+        assert_eq!(app["size"], artifact.size);
+    } else {
+        panic!("VLC must use CompatForge delivery");
+    }
+    assert!(load("candidate-v4").await.is_err());
 }

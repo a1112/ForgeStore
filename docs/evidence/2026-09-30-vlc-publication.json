@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "scope": "isolated ForgeOS v12 local ForgeStore",
+  "signedCatalogueVersion": 14,
+  "catalogueEntries": 7,
+  "windowsPublishedAndInstalled": 5,
+  "windowsIds": [
+    "7zip",
+    "notepad-plus-plus",
+    "sqlitestudio",
+    "sumatrapdf",
+    "vlc"
+  ],
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "storeBinarySha256": "9845c7b2df83bf7f6a061423fe7f69151c4b22444f84b027a1f4b24c9507fd3e",
+  "compatforgeBinarySha256": "201dffa0e69c712b1548f72227d80fab59ec5c27a0051ab69b2af1a46a6bbbb5",
+  "storeJobs": {
+    "a7500443-fa6c-4eae-a2fa-30b0932a7f1d": {
+      "state": "failed",
+      "detail": "artifact source redirected or returned HTTP error"
+    },
+    "d8c077b7-fcf4-45ca-b61d-82f17977b835": {
+      "state": "succeeded",
+      "detail": null
+    },
+    "b4aa3032-d633-427d-b8f4-de15ce0b731f": {
+      "state": "succeeded",
+      "detail": null
+    }
+  },
+  "vlcInstalled": {
+    "appId": "vlc",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "3.0.23"
+  },
+  "services": {
+    "forge-store.service": "active",
+    "compatforge.service": "active"
+  },
+  "allJobsTerminal": true,
+  "onlineVlcDownloadVerified": false
+}

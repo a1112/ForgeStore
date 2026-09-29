@@ -31,6 +31,15 @@
       "evidence": "docs/evidence/windows-sqlitestudio-20260929.acceptance.json",
       "signedCatalogue": "catalogue/candidate-v4/tuf",
       "publication": "docs/evidence/2026-09-30-sqlitestudio-publication.json"
+    },
+    {
+      "id": "vlc",
+      "version": "3.0.23",
+      "sha256": "20ad191348684b470ddc4e05204316f3d8e39655f412b3e392a0eef97639daaf",
+      "evidence": "docs/evidence/windows-vlc-20260930.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v5/tuf",
+      "publication": "docs/evidence/2026-09-30-vlc-publication.json",
+      "limitation": "Official URL redirects to external mirror; local market update used verified cache; online download not verified."
     }
   ],
   "queue": [
@@ -87,12 +96,6 @@
       "stage": "source-review-needed",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/texstudio.json",
       "sourceSha256": "95ffa27ad03cadd6cd38f90883fa7fedbd2e77f0f874ec5d2eaac24017f9383d"
-    },
-    {
-      "id": "vlc",
-      "stage": "source-review-needed",
-      "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/vlc.json",
-      "sourceSha256": "35eed21393942c8632250defc1d9eef60f0ad1cc1ad073bd53126b599a4d908c"
     }
   ],
   "excludedInternalFixtures": [
@@ -100,7 +103,8 @@
     "macwin-game-tests",
     "macwin-probes"
   ],
-  "next": "vlc",
+  "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
+  "next": "texstudio",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-09-30"
 }
