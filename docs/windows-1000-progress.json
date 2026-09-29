@@ -49,14 +49,25 @@
       "signedCatalogue": "catalogue/candidate-v6/tuf",
       "publication": "docs/evidence/2026-09-30-texstudio-publication.json",
       "limitation": "GUI edit/save, cached Store update and rollback passed; TeX compilation and online download not verified."
+    },
+    {
+      "id": "winmerge",
+      "version": "2.16.58.2",
+      "sha256": "6ac1e3c0028c39e49962dacd662ab553989d7e817a5cdf96ebbbc1fb345bcff4",
+      "evidence": "docs/evidence/windows-winmerge-20260930.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v7/tuf",
+      "publication": "docs/evidence/2026-09-30-winmerge-publication.json",
+      "limitation": "GUI compare/merge/save, verified-cache Store update and rollback passed; application definition is registered in this VM, while fresh-machine registration, online guest download and cross-version upgrade remain unverified."
     }
   ],
   "queue": [
     {
       "id": "firefox",
-      "stage": "source-review-needed",
+      "stage": "installed-gui-first-run-terms-awaiting-user-confirmation",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/firefox.json",
-      "sourceSha256": "5017cecb5c77738b1866016659a0357e2fa2e8efa093f6aeeae62a63c6e2c119"
+      "sourceSha256": "5017cecb5c77738b1866016659a0357e2fa2e8efa093f6aeeae62a63c6e2c119",
+      "evidence": "docs/evidence/2026-09-30-firefox-pending.md",
+      "blocker": "Firefox first-run Continue accepts Mozilla terms and enables diagnostic/interaction data; UI acceptance awaits action-time user confirmation."
     },
     {
       "id": "hoyoplay-cn",
@@ -107,7 +118,7 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "firefox",
+  "next": "portableapps-platform",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-09-30"
 }

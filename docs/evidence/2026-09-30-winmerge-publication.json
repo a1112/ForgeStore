@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "scope": "isolated ForgeOS v12 local ForgeStore",
+  "signedCatalogueVersion": 16,
+  "catalogueEntries": 9,
+  "windowsPublishedAndInstalled": 7,
+  "windowsIds": [
+    "7zip",
+    "notepad-plus-plus",
+    "sqlitestudio",
+    "sumatrapdf",
+    "texstudio",
+    "vlc",
+    "winmerge"
+  ],
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "storeBinarySha256": "9845c7b2df83bf7f6a061423fe7f69151c4b22444f84b027a1f4b24c9507fd3e",
+  "compatforgeBinarySha256": "201dffa0e69c712b1548f72227d80fab59ec5c27a0051ab69b2af1a46a6bbbb5",
+  "storeJobs": {
+    "update": {
+      "id": "8180e7f3-4f63-46dd-a2b5-7d841c3765d0",
+      "state": "succeeded",
+      "detail": null
+    },
+    "rollback": {
+      "id": "337745b1-c4e4-4832-af10-0f4ca3d1c70e",
+      "state": "succeeded",
+      "detail": null
+    }
+  },
+  "winmergeInstalled": {
+    "appId": "winmerge",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "2.16.58.2"
+  },
+  "mergedRightSha256AfterRollback": "e1c9b784c6f6f85ee0574a687960658c7513c55ebbe93341fd370b16897d25ce",
+  "services": {
+    "forge-store.service": "active",
+    "compatforge.service": "active"
+  },
+  "allJobsTerminal": true,
+  "restartPersistence": true,
+  "onlineWinMergeDownloadVerified": false,
+  "remotePublicMarketPublished": false
+}
