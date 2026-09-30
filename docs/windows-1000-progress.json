@@ -77,9 +77,16 @@
     },
     {
       "id": "jasp-stats",
-      "stage": "source-review-needed",
+      "stage": "verified-msi-service-install-failed",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/jasp-stats.json",
-      "sourceSha256": "ebaf01b7de53da849c9aa45e3c87f24e6c8e69ef3f742ca5eaedd6a0f8c79dd4"
+      "sourceSha256": "ebaf01b7de53da849c9aa45e3c87f24e6c8e69ef3f742ca5eaedd6a0f8c79dd4",
+      "version": "0.97.1",
+      "sha256": "360410ff1cbf63dea1821f6df5c6b883c65e3a9ccc9aed3324fbb2aa4cf71e93",
+      "sizeBytes": 1299197952,
+      "installationJobId": "job-1790744678544-9",
+      "installationJobStatus": "failed",
+      "evidence": "docs/evidence/2026-09-30-jasp-pending.md",
+      "blocker": "Real guest install rejected before execution: MSI sent to PE inspection exceeds 268435456-byte PE bound. Independent closed MSI contract has 1 GiB bound. Prepared Install execution integration design awaits review; no installation, GUI acceptance or publication."
     },
     {
       "id": "lenovo-app-store",
