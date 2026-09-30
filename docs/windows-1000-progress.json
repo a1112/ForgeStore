@@ -76,6 +76,15 @@
       "signedCatalogue": "catalogue/candidate-v9/tuf",
       "publication": "docs/evidence/2026-09-30-kdiff3-publication.json",
       "limitation": "GUI two-file compare/conflict resolution/save/reopen, verified-cache local Store update/rollback and restart passed. Fresh-machine registration, guest online download, three-way/directory merge and cross-version upgrade unverified."
+    },
+    {
+      "id": "krita",
+      "version": "5.3.4",
+      "sha256": "0dd4d6f86878d42b058aa33bb2fded01c888768e6f1daa0319e5f5b5cc49e465",
+      "evidence": "docs/evidence/windows-krita-20260930.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v10/tuf",
+      "publication": "docs/evidence/2026-09-30-krita-publication.json",
+      "limitation": "GUI single-layer painting, PNG save, native KRZ save/reopen, verified-cache local Store update/rollback and restart passed. Tablets, animation, advanced formats, fresh-machine registration, guest online download and cross-version upgrade unverified."
     }
   ],
   "queue": [
@@ -110,9 +119,11 @@
     },
     {
       "id": "lenovo-app-store",
-      "stage": "source-review-needed",
+      "stage": "local-artifact-source-version-review-needed",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/lenovo-app-store.json",
-      "sourceSha256": "37c2abfd4fe1fd1d6e0ee85a79592112c0f85a7d1eb452375617b8bee874b10e"
+      "sourceSha256": "37c2abfd4fe1fd1d6e0ee85a79592112c0f85a7d1eb452375617b8bee874b10e",
+      "evidence": "docs/evidence/2026-09-30-lenovo-source-review.md",
+      "blocker": "Local-file recipe has only filename and SHA-256; fixed installer not located in rolling workspace artifact inventory. Fixed version, provenance, size and applicable license need verification before installation/publication."
     },
     {
       "id": "libreoffice",
@@ -161,14 +172,14 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "lenovo-app-store",
+  "next": "libreoffice",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-09-30",
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 9,
-    "explicitlyBlockedCandidates": 6,
-    "remainingSourceReviewCandidates": 3,
+    "acceptedLocalMarket": 10,
+    "explicitlyBlockedCandidates": 7,
+    "remainingSourceReviewCandidates": 2,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
   }
 }

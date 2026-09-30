@@ -1,0 +1,42 @@
+{
+  "applications": [
+    {
+      "guiFileOperation": "passed",
+      "id": "vlc",
+      "installJobId": "job-1790700543879-5",
+      "launchJobId": "job-1790700619275-6",
+      "launcherSha256": "bfa5740f028a8f310ca01c779bbc5f2f1b435c41539c54de592f715bb0c10389",
+      "mediaBytes": 4442000,
+      "mediaDurationSeconds": 20.041667,
+      "mediaSha256": "1bf2987304d2827b75a44a1ca02170d40ad03b2eace9212bc24ef22c6d7af8ac",
+      "mediaStreams": [
+        "mpeg4 video 640x360",
+        "mp3 audio"
+      ],
+      "observedVideoProgressSeconds": [
+        2,
+        18
+      ],
+      "screenshotsSha256": {
+        "2026-09-30-vlc-gui-progress.jpg": "b08a3dcdcdfcd7c952eaa586b37d84c81896acab5e6fe96938d7053e24c1cc60",
+        "2026-09-30-vlc-gui.jpg": "1df45ef4f7d893143754a41e422927e46e29360cf6274b0bf04878d873d3ff7f"
+      },
+      "sha256": "20ad191348684b470ddc4e05204316f3d8e39655f412b3e392a0eef97639daaf",
+      "size": 45948080,
+      "version": "3.0.23"
+    }
+  ],
+  "date": "2026-09-30",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14; ordinary Linux UID 1000",
+  "licenseEvidence": "https://images.videolan.org/press/lgpl-modules.html",
+  "limits": [
+    "Visual playback and elapsed time were verified; audible output was not independently captured.",
+    "No cross-version upgrade or full VM reboot in this round.",
+    "Store-side install and activation must be verified after signing."
+  ],
+  "runtime": {
+    "compatforgeCliSha256": "201dffa0e69c712b1548f72227d80fab59ec5c27a0051ab69b2af1a46a6bbbb5"
+  },
+  "schemaVersion": 1,
+  "scope": "Official NSIS installer and actual VLC GUI playback of generated media; local-market candidate only."
+}
