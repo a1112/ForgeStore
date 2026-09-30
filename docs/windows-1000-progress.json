@@ -127,14 +127,16 @@
     },
     {
       "id": "libreoffice",
-      "stage": "fixed-current-msi-source-reviewed-execution-pending",
+      "stage": "fixed-current-msi-download-failed",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/libreoffice.json",
       "sourceSha256": "60b8de3c52df0380b039ae07e608c494a63f69d0483195bc4471afcb5384ff12",
       "version": "26.8.0",
       "sha256": "4aa6c6e1895f4055104effcb556bd3362d20c6ad707c149543304f395ef9db95",
       "sizeBytes": 374906880,
       "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
-      "blocker": "Old 26.2.4 source URL returns HTTP 404. Current fixed 26.8.0 official metadata reviewed; managed MSI execution integration awaits design approval. No installation, GUI acceptance or publication."
+      "blocker": "Current fixed 26.8.0 official metadata reviewed. Download from redirected mirror.nevacloud.com ended in ConnectionResetError; partial data is not a verified artifact. Managed MSI execution remains unimplemented. No installation, GUI acceptance or publication. Officially listed BFSU retry returned HTTP 403 with no package bytes.",
+      "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json",
+      "retryEvidence": "docs/evidence/2026-09-30-libreoffice-mirror-retry.json"
     },
     {
       "id": "ltspice",
@@ -175,11 +177,30 @@
     {
       "id": "audacity",
       "version": "4.0.0",
-      "stage": "fixed-msi-source-reviewed-execution-pending",
+      "stage": "fixed-msi-artifact-verified-execution-pending",
       "sha256": "2aecc44d28a004d15ae7c23c099f232ba8c5b3e6b19ebdbaf7d6c596316dc5b3",
       "sizeBytes": 49532928,
       "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
-      "blocker": "Official fixed MSI, digest, size and GPLv3 source license reviewed; managed MSI execution integration awaits design approval. No installation, GUI acceptance or publication."
+      "blocker": "Full fixed official MSI size, SHA-256 and compound-file magic verified. Managed MSI execution remains unimplemented; no installation, GUI acceptance or publication.",
+      "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json"
+    },
+    {
+      "id": "peazip",
+      "version": "11.3.0",
+      "stage": "installed-post-fix-gui-roundtrip-passed-profile-integration-pending",
+      "sourceUrl": "https://github.com/peazip/PeaZip/releases/download/11.3.0/peazip-11.3.0.WIN64.exe",
+      "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76",
+      "sizeBytes": 11391512,
+      "installationJobId": "job-1790755724792-27",
+      "installationJobStatus": "succeeded",
+      "launchJobId": "job-1790756115185-28",
+      "evidence": "docs/evidence/2026-09-30-peazip-pending.md",
+      "blocker": "Classic-theme trial restores Add/Extract OK/Cancel captions and post-fix GUI ZIP roundtrip passed. Initial extraction command/path triggered vendor concatenation guard; cause unresolved, guard retained, default-directory retry passed. Automatic configuration in fresh managed generations and Settings GUI regression remain unimplemented/unverified. No signed acceptance or local-market publication.",
+      "themeEvidence": "docs/evidence/2026-09-30-peazip-theme-config-trial.json",
+      "themeLaunchJobId": "job-1790758534698-30",
+      "postFixEvidence": "docs/evidence/2026-09-30-peazip-fixed-files.json",
+      "themeLaunchJobStatus": "succeeded",
+      "profileDesign": "../CompatForge/docs/plans/2026-09-30-peazip-classic-theme-design.md"
     }
   ],
   "excludedInternalFixtures": [
@@ -188,13 +209,13 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "msi-execution-integration",
+  "next": "peazip-reviewed-classic-profile-integration-and-extraction-guard-investigation",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-09-30",
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 10,
-    "explicitlyBlockedCandidates": 10,
+    "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
   }
