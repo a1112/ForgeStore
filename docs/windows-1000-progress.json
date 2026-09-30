@@ -67,6 +67,15 @@
       "signedCatalogue": "catalogue/candidate-v8/tuf",
       "publication": "docs/evidence/2026-09-30-geany-publication.json",
       "limitation": "Fontconfig launcher option must be included before installation. Chinese editing/find-replace/save/reopen, signed local market cached update/rollback and Store restart passed; fresh-machine recipe registration, guest online download, compiler/debugger and cross-version upgrade unverified."
+    },
+    {
+      "id": "kdiff3",
+      "version": "1.12.4",
+      "sha256": "2d58b4d675934290146faf08a239788ffc36fd6ac2c480456100fb1d8ab2bb16",
+      "evidence": "docs/evidence/windows-kdiff3-20260930.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v9/tuf",
+      "publication": "docs/evidence/2026-09-30-kdiff3-publication.json",
+      "limitation": "GUI two-file compare/conflict resolution/save/reopen, verified-cache local Store update/rollback and restart passed. Fresh-machine registration, guest online download, three-way/directory merge and cross-version upgrade unverified."
     }
   ],
   "queue": [
@@ -80,9 +89,11 @@
     },
     {
       "id": "hoyoplay-cn",
-      "stage": "source-review-needed",
+      "stage": "existing-install-only-no-pinned-artifact",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/hoyoplay-cn.json",
-      "sourceSha256": "2c66c2001d3ad679a8df292172bc950db7f259a723dfce23ee7ed3035ccfd6f7"
+      "sourceSha256": "2c66c2001d3ad679a8df292172bc950db7f259a723dfce23ee7ed3035ccfd6f7",
+      "evidence": "docs/evidence/2026-09-30-hoyoplay-source-review.md",
+      "blocker": "Existing-install-only Mac recipe has a path hint but no fixed installation URL, artifact size or SHA-256. No Windows installation or GUI acceptance."
     },
     {
       "id": "jasp-stats",
@@ -150,8 +161,14 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "hoyoplay-cn",
+  "next": "lenovo-app-store",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-09-30",
-  "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json"
+  "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
+  "statusSummary": {
+    "acceptedLocalMarket": 9,
+    "explicitlyBlockedCandidates": 6,
+    "remainingSourceReviewCandidates": 3,
+    "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
+  }
 }
