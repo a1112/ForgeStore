@@ -123,5 +123,23 @@
       "test": "classic_auxiliary_cleanup_error_preserves_cleanup_stage",
       "result": "RED: structured capture boundary absent before fix"
     }
-  ]
+  ],
+  "windowsCoreRegression": {
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "compatforge-domain",
+      "-p",
+      "compatforge-orchestrator",
+      "-p",
+      "compatforge-service",
+      "--locked",
+      "--offline"
+    ],
+    "exitCode": 0,
+    "domainPassed": 16,
+    "orchestratorPassed": 36,
+    "servicePassed": 5
+  }
 }
