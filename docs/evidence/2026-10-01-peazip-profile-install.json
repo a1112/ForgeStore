@@ -1,0 +1,42 @@
+{
+  "definitionDigest": "sha256:715cd1640d48fbe97081460f7deee2427d01b181326c2d898164ca1282a0c80e",
+  "job": {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 421002,
+        "requestId": "job-1790781229872-2",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 7176,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790781229872-2/prefix",
+        "requestId": "job-1790781229872-2",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 7219,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790781229872-2",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1790781229872-2",
+    "id": "job-1790781229872-2",
+    "status": "succeeded"
+  },
+  "launcherDigests": {
+    "main": "sha256:06c65579764ee817db94292901b7d12f81b7e32412e7ad29c9eddffc0905663e"
+  },
+  "selectedGeneration": "gen-job-1790781229872-2",
+  "wineAppearance": "classic"
+}

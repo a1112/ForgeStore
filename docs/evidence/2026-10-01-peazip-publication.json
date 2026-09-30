@@ -1,0 +1,474 @@
+{
+  "activation": {
+    "activated": true,
+    "catalogueEntries": 13,
+    "fullJobCount": 36,
+    "fullJobRecordsSha256": "b1a2764bef4f340d52e435e004c14d3a2f8ecbf73b7796b4b15382e276d9e974",
+    "historicalInterruptedJobs": [],
+    "installedAfter": [
+      {
+        "appId": "7zip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "26.01"
+      },
+      {
+        "appId": "geany",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.1"
+      },
+      {
+        "appId": "kdiff3",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.12.4"
+      },
+      {
+        "appId": "krita",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "5.3.4"
+      },
+      {
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "8.9.6.2"
+      },
+      {
+        "appId": "peazip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "11.3.0"
+      },
+      {
+        "appId": "sqlitestudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.4.17"
+      },
+      {
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.6.1"
+      },
+      {
+        "appId": "texstudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "4.9.5"
+      },
+      {
+        "appId": "vlc",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.0.23"
+      },
+      {
+        "appId": "winmerge",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.16.58.2"
+      },
+      {
+        "appId": "org.forgeos.storefixture-flatpak",
+        "backend": "flatpak",
+        "canRollback": false,
+        "version": ""
+      },
+      {
+        "appId": "org.forgeos.storefixture",
+        "backend": "forge-package",
+        "canRollback": true,
+        "version": "SHA-256 20802d45b911"
+      }
+    ],
+    "installedBefore": [
+      {
+        "appId": "7zip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "26.01"
+      },
+      {
+        "appId": "geany",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.1"
+      },
+      {
+        "appId": "kdiff3",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.12.4"
+      },
+      {
+        "appId": "krita",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "5.3.4"
+      },
+      {
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "8.9.6.2"
+      },
+      {
+        "appId": "sqlitestudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.4.17"
+      },
+      {
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.6.1"
+      },
+      {
+        "appId": "texstudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "4.9.5"
+      },
+      {
+        "appId": "vlc",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.0.23"
+      },
+      {
+        "appId": "winmerge",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.16.58.2"
+      },
+      {
+        "appId": "org.forgeos.storefixture-flatpak",
+        "backend": "flatpak",
+        "canRollback": false,
+        "version": ""
+      },
+      {
+        "appId": "org.forgeos.storefixture",
+        "backend": "forge-package",
+        "canRollback": true,
+        "version": "SHA-256 20802d45b911"
+      }
+    ],
+    "installedIds": [
+      "7zip",
+      "geany",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge"
+    ],
+    "jobsPreserved": true,
+    "metadataVersion": 20,
+    "peazip": {
+      "compatibility": {
+        "evidence": "windows-peazip-20261001.acceptance.json#peazip",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76",
+          "size": 11391512,
+          "target": "peazip-11.3.0.WIN64.exe",
+          "url": "https://github.com/peazip/PeaZip/releases/download/11.3.0/peazip-11.3.0.WIN64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "peazip",
+        "wineAppearance": "classic"
+      },
+      "id": "peazip",
+      "license": "LGPL-3.0; bundled component notices apply",
+      "name": {
+        "en": "PeaZip",
+        "zhCN": "PeaZip"
+      },
+      "origin": "https://peazip.github.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Giorgio Tani",
+      "summary": {
+        "en": "Archive creation, extraction and file management",
+        "zhCN": "文件压缩、解压与归档管理工具"
+      },
+      "version": "11.3.0"
+    },
+    "previousInstalledPreserved": true,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+  },
+  "applicationId": "peazip",
+  "coreFinal": {
+    "allCoreJobsTerminal": true,
+    "generationStates": {
+      "gen-job-1790755724792-27": "ready",
+      "gen-job-1790781085831-1": "cancelled",
+      "gen-job-1790781229872-2": "ready",
+      "gen-job-1790781753689-3": "cancelled",
+      "gen-job-1790787576467-3": "ready"
+    },
+    "marketInstall": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 424128,
+          "requestId": "job-1790787576467-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 6847,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790787576467-3/prefix",
+          "requestId": "job-1790787576467-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 6889,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790787576467-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790787576467-3",
+      "id": "job-1790787576467-3",
+      "status": "succeeded"
+    },
+    "originalContextPreserved": true,
+    "selectedGeneration": "gen-job-1790781229872-2",
+    "servicesActive": true,
+    "tufPersistedMetadataVersions": {
+      "root.json": 1,
+      "snapshot.json": 20,
+      "targets.json": 20,
+      "timestamp.json": 20
+    },
+    "wineAppearance": "classic"
+  },
+  "date": "2026-10-01",
+  "guiObservations": {
+    "freshGeneration": "ZIP create/extract, Chinese names, readable Add/Extract/Settings controls, exit/reopen",
+    "marketUpdatedGeneration": "Browse copied original acceptance ZIP, GUI extract into marketroundtrip, readable Extract/Settings controls, normal exit; archive was copied as fixture and was not created anew in this generation",
+    "rollbackGeneration": "Reopen original accepted ZIP, browse ASCII/Chinese entries, normal exit"
+  },
+  "harnessFailuresRetained": [
+    "Initial market GUI inspection expected an ok field used by Store, while CompatForge returns result; failed before launch/staging and was corrected.",
+    "Initial TUF datastore inspection assumed every JSON signed value was an object; terminal/selection assertions had passed, then guarded parsing was corrected. These are harness failures, not application success or application failures."
+  ],
+  "limits": [
+    "Verified-cache local update and same-version generation rollback; guest online download, fresh-machine recipe registration, cross-version upgrade and public remote distribution unverified.",
+    "Earlier PeaZip command-concatenation guard rejection remains unresolved and retained; guard was not disabled.",
+    "Evidence recording date uses host Asia/Shanghai calendar; original guest job timestamps and elapsed times are retained without forcing clock changes."
+  ],
+  "localSignatureVerification": {
+    "archiveSha256": "24a897b7156887f6b56ef6a80ef21d63d8cf43618882c9560de1d92b697df2bd",
+    "catalogueSha256": "c813b4f61006a764cd574d419e3cb1e23fe6e084fd37b8b6e258e20be12480b4",
+    "entries": 13,
+    "files": 15,
+    "metadataVersion": 20,
+    "receiptCount": 9,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+  },
+  "restart": {
+    "catalogueEntries": 13,
+    "cataloguePreserved": true,
+    "fullJobCount": 38,
+    "fullJobRecordsSha256": "8dc0ca2af840952c923df2ea4797d50868ccc378e12f737ce875c152b65b7c13",
+    "installedIds": [
+      "7zip",
+      "geany",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge"
+    ],
+    "installedPreserved": true,
+    "jobsPreserved": true,
+    "metadataVersion": 20,
+    "peazip": {
+      "appId": "peazip",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "11.3.0"
+    },
+    "restarted": true,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+  },
+  "rollbackGui": {
+    "archiveFixtureCopied": false,
+    "definitionDigest": "sha256:715cd1640d48fbe97081460f7deee2427d01b181326c2d898164ca1282a0c80e",
+    "generationId": "gen-job-1790781229872-2",
+    "jobId": "job-1790787990539-5",
+    "launcherSha256": "06c65579764ee817db94292901b7d12f81b7e32412e7ad29c9eddffc0905663e",
+    "status": "running",
+    "themeActive": "0"
+  },
+  "rollbackGuiTerminal": {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 424824,
+        "requestId": "job-1790787990539-5",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 79572,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790781229872-2/prefix",
+        "requestId": "job-1790787990539-5",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 79614,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790787990539-5",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1790781229872-2",
+    "id": "job-1790787990539-5",
+    "status": "succeeded"
+  },
+  "schemaVersion": 1,
+  "screenshots": {
+    "2026-10-01-peazip-market-extract.png": "b11d53e4b73b29bace489f8a5c3f669f592a889f02af5ca492e2020c0aa88015",
+    "2026-10-01-peazip-market-rollback-reopened.png": "b25e51667d7fa8e46329bc649b2ac8e53c09da5767218deb87217d26ff6c57cd",
+    "2026-10-01-peazip-market-settings.png": "72f097617cc469ebaa31e4c2b6821bffe30c5c424e49feb8d7e9a1dc10271c88",
+    "2026-10-01-peazip-market-updated.png": "408eadd5e451f8d472be989537aad87ba2b3fcef9ea186265c6740555ff6026f"
+  },
+  "signatureVerifier": {
+    "exitCode": 0,
+    "rootUnchanged": true,
+    "tool": "tuftool 0.17 clone --metadata-only",
+    "trustedRoot": "candidate-v10 trusted-root.json"
+  },
+  "signedCatalogue": "catalogue/candidate-v11/tuf",
+  "sourceReceipt": "windows-peazip-20261001.acceptance.json",
+  "storeJobs": {
+    "catalogueEntries": 13,
+    "installed": {
+      "appId": "peazip",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "11.3.0"
+    },
+    "jobs": {
+      "rollback": {
+        "action": "rollback",
+        "appId": "peazip",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "e31f99d0-d3c1-44aa-a2db-9f6b292bbb43",
+        "state": "succeeded"
+      },
+      "update": {
+        "action": "update",
+        "appId": "peazip",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "266cd519-a90f-4337-b309-cd80d35ddf6c",
+        "state": "succeeded"
+      }
+    }
+  },
+  "updatedGui": {
+    "archiveFixtureCopied": true,
+    "definitionDigest": "sha256:715cd1640d48fbe97081460f7deee2427d01b181326c2d898164ca1282a0c80e",
+    "generationId": "gen-job-1790787576467-3",
+    "jobId": "job-1790787653099-4",
+    "launcherSha256": "06c65579764ee817db94292901b7d12f81b7e32412e7ad29c9eddffc0905663e",
+    "status": "running",
+    "themeActive": "0"
+  },
+  "updatedGuiFiles": {
+    "archiveFixtureWasCopied": true,
+    "extractedBytesEqual": true,
+    "files": {
+      "sample.txt": {
+        "output": "marketroundtrip/sample.txt",
+        "sha256": "666b8f44ef76a4d18a3fcca278be0a5d435d6bc677922a7770195f70ace289d2",
+        "sizeBytes": 740
+      },
+      "中文文件.txt": {
+        "output": "marketroundtrip/中文文件.txt",
+        "sha256": "941e07b7bcecae0aea2b2b17d37b00ba83bb298d47500a39a775551b64ff4333",
+        "sizeBytes": 53
+      }
+    },
+    "generationId": "gen-job-1790787576467-3",
+    "marketUpdatedGuiExtracted": true,
+    "zipCRCValidated": true
+  },
+  "updatedGuiTerminal": {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 424397,
+        "requestId": "job-1790787653099-4",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 262053,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790787576467-3/prefix",
+        "requestId": "job-1790787653099-4",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 262095,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790787653099-4",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1790787576467-3",
+    "id": "job-1790787653099-4",
+    "status": "succeeded"
+  },
+  "version": "11.3.0"
+}

@@ -1,0 +1,31 @@
+{
+  "cancelSeconds": 0.242,
+  "cancelledGenerationStatus": "cancelled",
+  "installerStarted": false,
+  "job": {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "exit": {
+          "success": false
+        },
+        "kind": "exited",
+        "requestId": "job-1790781085831-1",
+        "schemaVersion": "1",
+        "sequence": 0
+      }
+    ],
+    "generationId": "gen-job-1790781085831-1",
+    "id": "job-1790781085831-1",
+    "status": "cancelled"
+  },
+  "mismatchError": "compatforge-cli: conflict: reviewed Wine appearance differs from install expectation",
+  "mismatchRejectedBeforeStaging": true,
+  "remainingPrefixProcessCount": 0,
+  "selectedGenerationPreserved": "gen-job-1790755724792-27",
+  "transitions": [
+    "preparing",
+    "cancelling",
+    "cancelled"
+  ]
+}

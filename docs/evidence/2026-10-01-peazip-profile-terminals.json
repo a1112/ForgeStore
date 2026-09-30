@@ -1,0 +1,82 @@
+[
+  {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 421473,
+        "requestId": "job-1790781757453-1",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 1310601,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790781229872-2/prefix",
+        "requestId": "job-1790781757453-1",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 1310643,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790781757453-1",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1790781229872-2",
+    "jobId": "job-1790781757453-1",
+    "kind": "launch",
+    "status": "succeeded"
+  },
+  {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 422257,
+        "requestId": "job-1790783354532-2",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 539412,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790781229872-2/prefix",
+        "requestId": "job-1790783354532-2",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 539455,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790783354532-2",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1790781229872-2",
+    "jobId": "job-1790783354532-2",
+    "kind": "reopen",
+    "status": "succeeded"
+  },
+  {
+    "cancelledGenerationStatus": "cancelled",
+    "selectedGenerationPreserved": "gen-job-1790781229872-2",
+    "shutdownProof": {
+      "error": "service closed after confirmed supervisor cleanup",
+      "generationId": "gen-job-1790781753689-3",
+      "id": "job-1790781753689-3",
+      "status": "cancelled"
+    }
+  }
+]

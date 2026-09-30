@@ -1,0 +1,139 @@
+{
+  "actualSourcePatch": "../../../.worktrees/compatforge-peazip-classic/docs/patches/2026-09-30-stage2-profile-preparing.patch",
+  "core": {
+    "activated": true,
+    "applicationCount": 15,
+    "backupPrivate": true,
+    "binarySha256": "12c0404f79f2d063e2e5e71d42981ebbecd102b5770d363588f1e7c1a4938f62",
+    "runtimeBindingsUnchanged": true,
+    "selectedGenerationsUnchanged": true,
+    "service": "ActiveState=active\nDropInPaths=/home/forge/.config/systemd/user/compatforge.service.d/40-rolling-import-name.conf /home/forge/.config/systemd/user/compatforge.service.d/50-peazip-classic.conf\nExecStart={ path=/home/forge/forge-rolling-20260929/bin/compatforge-cli-peazip-classic ; argv[]=/home/forge/forge-rolling-20260929/bin/compatforge-cli-peazip-classic service-daemon /home/forge/.config/compatforge/context-peazip-classic.json /home/forge/.config/compatforge/service.json ; ignore_errors=no ; start_time=[Wed 2026-09-30 15:08:17 UTC] ; stop_time=[n/a] ; pid=420504 ; code=(null) ; status=0/0 }\n"
+  },
+  "implementation": {
+    "branch": "fix/peazip-classic-theme",
+    "commit": "7061efc131cc0b3167e65c628928a89eba4f6ccd",
+    "deploymentBasis": "retained exact stage2 adapter with source pins; main-tree CLI alone is not the deployed build",
+    "repository": "CompatForge",
+    "worktree": "../.worktrees/compatforge-peazip-classic"
+  },
+  "limits": [
+    "The observed early cancellation completed in 0.242 seconds; this is not a maximum for every preparation stage. Existing individual font registry operations remain bounded commands; unsafe cleanup retains ownership/quarantine.",
+    "Two initial activation attempts restored the original service: original-context initializer integrity check, then an older source tree lacking deployed debuggerRuntime support. The final stage2 source retains debugger and generation contracts.",
+    "An initial shutdown verification harness accessed an omitted empty events field after the cancellation assertion; the subsequent terminal query confirmed cleanup and cancelled generation."
+  ],
+  "regressions": [
+    {
+      "command": [
+        "cargo",
+        "fmt",
+        "--all"
+      ],
+      "exitCode": 0,
+      "summaries": []
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "compatforge-domain",
+        "-p",
+        "compatforge-process",
+        "-p",
+        "compatforge-orchestrator",
+        "-p",
+        "compatforge-service",
+        "-p",
+        "compatforge-debug",
+        "--locked",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "summaries": [
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 37 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 111 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.20s",
+        "test result: ok. 14 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.02s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 85 filtered out; finished in 0.00s",
+        "test result: ok. 84 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 1.37s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ]
+    },
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "-p",
+        "compatforge-cli",
+        "--locked",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "summaries": []
+    },
+    {
+      "binary": "/srv/forge-apps-build/targets/compatforge-stage2-peazip-classic/release/compatforge-cli",
+      "sha256": "12c0404f79f2d063e2e5e71d42981ebbecd102b5770d363588f1e7c1a4938f62",
+      "sizeBytes": 6413008
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "forge-store-core",
+        "--locked",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "summaries": [
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 13 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s",
+        "test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ]
+    },
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--release",
+        "-p",
+        "forge-store-core",
+        "--bin",
+        "forge-store-service",
+        "--locked",
+        "--offline"
+      ],
+      "exitCode": 0,
+      "summaries": []
+    },
+    {
+      "binary": "/srv/forge-apps-build/targets/forge-store-peazip-classic/release/forge-store-service",
+      "sha256": "eafd2d9d07f20d6413e2a55bae17bec7e637b44b57745f8e3829786ea8cd3ca3",
+      "sizeBytes": 16674552
+    }
+  ],
+  "store": {
+    "activated": true,
+    "cataloguePreserved": true,
+    "entries": 12,
+    "installedPreserved": true,
+    "jobsPreserved": true,
+    "storeSha256": "eafd2d9d07f20d6413e2a55bae17bec7e637b44b57745f8e3829786ea8cd3ca3"
+  }
+}

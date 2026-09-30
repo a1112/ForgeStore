@@ -85,6 +85,15 @@
       "signedCatalogue": "catalogue/candidate-v10/tuf",
       "publication": "docs/evidence/2026-09-30-krita-publication.json",
       "limitation": "GUI single-layer painting, PNG save, native KRZ save/reopen, verified-cache local Store update/rollback and restart passed. Tablets, animation, advanced formats, fresh-machine registration, guest online download and cross-version upgrade unverified."
+    },
+    {
+      "id": "peazip",
+      "version": "11.3.0",
+      "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76",
+      "evidence": "docs/evidence/windows-peazip-20261001.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v11/tuf",
+      "limitation": "Reviewed classic appearance and cancellable preparing owner applied automatically. Fresh GUI ZIP create/extract, ASCII/Chinese byte equality, Settings captions, signed local cached update, updated GUI extraction, rollback/reopen and restart passed. Earlier command guard rejection remains unresolved; encryption/other formats, fresh-machine recipe registration, online download and cross-version upgrade unverified.",
+      "publication": "docs/evidence/2026-10-01-peazip-publication.json"
     }
   ],
   "queue": [
@@ -183,32 +192,6 @@
       "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
       "blocker": "Full fixed official MSI size, SHA-256 and compound-file magic verified. Managed MSI execution remains unimplemented; no installation, GUI acceptance or publication.",
       "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json"
-    },
-    {
-      "id": "peazip",
-      "version": "11.3.0",
-      "stage": "installed-post-fix-roundtrip-profile-reviewed-cancellation-pending",
-      "sourceUrl": "https://github.com/peazip/PeaZip/releases/download/11.3.0/peazip-11.3.0.WIN64.exe",
-      "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76",
-      "sizeBytes": 11391512,
-      "installationJobId": "job-1790755724792-27",
-      "installationJobStatus": "succeeded",
-      "launchJobId": "job-1790756115185-28",
-      "evidence": "docs/evidence/2026-09-30-peazip-pending.md",
-      "blocker": "Approved classic-profile implementation and trusted registry-tool authorization/cleanup regressions passed review. Preparing stage still starts synchronously before obtaining a cancellable owner; cancellation/shutdown must be repaired and tested before deployment. Fresh managed generation, Settings GUI, market update/rollback and initial vendor command guard investigation remain pending. No signed acceptance or publication.",
-      "themeEvidence": "docs/evidence/2026-09-30-peazip-theme-config-trial.json",
-      "themeLaunchJobId": "job-1790758534698-30",
-      "postFixEvidence": "docs/evidence/2026-09-30-peazip-fixed-files.json",
-      "themeLaunchJobStatus": "succeeded",
-      "profileDesign": "../CompatForge/docs/plans/2026-09-30-peazip-classic-theme-design.md",
-      "profileReview": "docs/evidence/2026-09-30-peazip-profile-review.json",
-      "profileImplementation": {
-        "repository": "CompatForge",
-        "branch": "fix/peazip-classic-theme",
-        "commit": "4b929d4f8fd5a0cbd56a8327ff29de341ce62860",
-        "workspace": "../.worktrees/compatforge-peazip-classic",
-        "deploymentGate": "preparing-cancellation"
-      }
     }
   ],
   "excludedInternalFixtures": [
@@ -217,14 +200,23 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "peazip-preparing-cancellation-owner-and-spawn-boundary-before-fresh-gui-and-publication",
+  "next": "review-next-fixed-official-windows-artifact-and-license; retain-all-blocked-candidates",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-09-30",
+  "lastReviewed": "2026-10-01",
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 10,
-    "explicitlyBlockedCandidates": 11,
+    "acceptedLocalMarket": 11,
+    "explicitlyBlockedCandidates": 10,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
+  },
+  "activeLocalMarket": {
+    "acceptedDistinctWindowsApps": 11,
+    "catalogueEntries": 13,
+    "excludedFixtures": 2,
+    "metadataVersion": 20,
+    "publicationEvidence": "docs/evidence/2026-10-01-peazip-publication.json",
+    "signedCatalogue": "catalogue/candidate-v11/tuf",
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
   }
 }
