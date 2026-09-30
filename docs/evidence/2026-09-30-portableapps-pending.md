@@ -21,3 +21,6 @@ CompatForge 注册了此虚拟机专用的临时应用定义，安装作业为 `
 [LTspice 官方页](https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html)当前列出 Windows x64 26.1.1。其配方使用的移动地址 `https://ltspice.analog.com/software/LTspice64.msi` 已下载核对：187,368,960 字节，Last-Modified 为 `Mon, 14 Sep 2026 21:50:42 GMT`，SHA-256 `249ebde3c84e01f4ce5b5ff78c6c7588f049bac85ae1635f968cfdbe4f4ecd03`。它与旧配方摘要 `485dabd2d7d8293de733a399719f6538efda4a54b48b181a14e07271186984d3` 不同，因此未传入 guest 或安装，也未继承旧 tested 信息。安装包内部版本、许可及新配方仍需审查。
 
 Firefox 的首次运行确认仍保留为独立待办。以上候选均不计入已完成数。
+
+
+Heartbeat capacity follow-up: job `job-1790729328158-5` was cancelled to release the sole global service slot. No I Agree acceptance occurred. Artifacts and prior license evidence retained; retry requires the pending user decision.

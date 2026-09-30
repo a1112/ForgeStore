@@ -108,13 +108,24 @@
       "sourceSha256": "f81ea7243ecd916d20e48e08d259cd24a152a444704b7f7c9332e96c0f62661a",
       "evidence": "docs/evidence/2026-09-30-portableapps-pending.md",
       "installationJobId": "job-1790729328158-5",
-      "blocker": "Official pinned installer verified. /S did not suppress interactive setup. GUI is at I Agree; acceptance awaits action-time user confirmation. Do not submit a duplicate installation while this job is active."
+      "blocker": "Pinned installer verified; interactive I Agree still awaits action-time user confirmation. Waiting install job cancelled to free the sole service slot; artifacts and evidence retained. No acceptance or publication.",
+      "installationJobStatus": "cancelled"
     },
     {
       "id": "steam",
       "stage": "source-review-needed",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/steam.json",
       "sourceSha256": "5b405e719271aed976042c46763ec494405fd580215ad65e2da6efba32488565"
+    },
+    {
+      "id": "winscp",
+      "version": "6.5.7",
+      "stage": "installed-sftp-authentication-blocked",
+      "sourceUrl": "https://downloads.sourceforge.net/project/winscp/WinSCP/6.5.7/WinSCP-6.5.7-Setup.exe",
+      "sha256": "65103dad94a907bf8b7b9b8db8174dfb60010237d9125db066f34d89817bcd99",
+      "evidence": "docs/evidence/2026-09-30-winscp-pending.md",
+      "installationJobId": "job-1790730879400-6",
+      "blocker": "GUI reaches verified host but server only offers publickey authentication. No SFTP upload/download/edit acceptance, signed acceptance or market publication. Launch exit success is not functional acceptance."
     }
   ],
   "excludedInternalFixtures": [
@@ -123,7 +134,8 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "portableapps-platform",
+  "next": "jasp-stats",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-09-30"
+  "lastReviewed": "2026-09-30",
+  "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json"
 }
