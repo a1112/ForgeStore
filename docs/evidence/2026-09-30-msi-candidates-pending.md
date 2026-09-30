@@ -1,0 +1,9 @@
+# MSI candidates — 2026-09-30
+
+LibreOffice recipe 26.2.4 direct URL and its mirror list now return HTTP 404. The official download page links current 26.8.0 x86-64 MSI; official mirror list declares 374906880 bytes and SHA-256 4aa6c6e1895f4055104effcb556bd3362d20c6ad707c149543304f395ef9db95. License page identifies MPL-2.0 and component-specific notices. Writer/Calc/Impress workflows remain untested.
+
+Audacity official Windows page links 4.0.0 x86_64 MSI and SHA-256 2aecc44d28a004d15ae7c23c099f232ba8c5b3e6b19ebdbaf7d6c596316dc5b3. Official GitHub release asset agrees on digest and reports 49532928 bytes. LICENSE.txt at the exact Audacity-4.0.0 tag identifies GPLv3 with component-specific licenses. No audio import/edit/export or project save/reopen acceptance yet.
+
+Both require managed MSI execution. The deployed service currently inspects install input as PE, as demonstrated by the preserved JASP failure. The existing MSI validator is non-executing. The proposed Prepared Install integration remains awaiting human design approval; no workaround raw Wine invocation, CAB extraction or portable substitution was performed. These candidates are not counted as installed, GUI accepted or published.
+
+Sources: https://www.libreoffice.org/download/ ; https://download.documentfoundation.org/libreoffice/stable/26.8.0/win/x86_64/LibreOffice_26.8.0_Win_x86-64.msi.mirrorlist ; https://www.libreoffice.org/licenses/ ; https://www.audacityteam.org/download/windows/ ; https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0 ; https://raw.githubusercontent.com/audacity/audacity/Audacity-4.0.0/LICENSE.txt . Download verification is still pending: exec session 81849 is live, and the observed LibreOffice partial file has 4194304 bytes. See 2026-09-30-msi-download-progress.json. Successful full-artifact verification will be written to 2026-09-30-msi-source-artifacts.json when the process finishes; no partial file is counted as verified.
