@@ -95,15 +95,20 @@
     },
     {
       "id": "ltspice",
-      "stage": "source-review-needed",
+      "stage": "official-moving-url-artifact-changed",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/ltspice.json",
-      "sourceSha256": "03157bcc29c24fbd555c485bd14fab9f1a102a57b880086ee0aa25181eeacf0b"
+      "sourceSha256": "03157bcc29c24fbd555c485bd14fab9f1a102a57b880086ee0aa25181eeacf0b",
+      "evidence": "docs/evidence/2026-09-30-portableapps-pending.md",
+      "blocker": "Official URL now returns a 187368960-byte MSI with SHA-256 249ebde3c84e01f4ce5b5ff78c6c7588f049bac85ae1635f968cfdbe4f4ecd03, different from the old recipe. New version, license and installation need review."
     },
     {
       "id": "portableapps-platform",
-      "stage": "source-review-needed",
+      "stage": "installer-license-awaiting-user-confirmation",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/portableapps-platform.json",
-      "sourceSha256": "f81ea7243ecd916d20e48e08d259cd24a152a444704b7f7c9332e96c0f62661a"
+      "sourceSha256": "f81ea7243ecd916d20e48e08d259cd24a152a444704b7f7c9332e96c0f62661a",
+      "evidence": "docs/evidence/2026-09-30-portableapps-pending.md",
+      "installationJobId": "job-1790729328158-5",
+      "blocker": "Official pinned installer verified. /S did not suppress interactive setup. GUI is at I Agree; acceptance awaits action-time user confirmation. Do not submit a duplicate installation while this job is active."
     },
     {
       "id": "steam",
