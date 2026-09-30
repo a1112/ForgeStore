@@ -201,7 +201,14 @@
       "postFixEvidence": "docs/evidence/2026-09-30-peazip-fixed-files.json",
       "themeLaunchJobStatus": "succeeded",
       "profileDesign": "../CompatForge/docs/plans/2026-09-30-peazip-classic-theme-design.md",
-      "profileReview": "docs/evidence/2026-09-30-peazip-profile-review.json"
+      "profileReview": "docs/evidence/2026-09-30-peazip-profile-review.json",
+      "profileImplementation": {
+        "repository": "CompatForge",
+        "branch": "fix/peazip-classic-theme",
+        "commit": "4b929d4f8fd5a0cbd56a8327ff29de341ce62860",
+        "workspace": "../.worktrees/compatforge-peazip-classic",
+        "deploymentGate": "preparing-cancellation"
+      }
     }
   ],
   "excludedInternalFixtures": [
