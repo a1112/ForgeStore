@@ -15,6 +15,20 @@ fn valid_reviewed_windows_app_is_accepted() {
 }
 
 #[test]
+fn classic_appearance_is_a_closed_signed_delivery_field() {
+    let mut source: serde_json::Value = serde_json::from_str(&example()).unwrap();
+    source["entries"][0]["delivery"]["wineAppearance"] = serde_json::json!("classic");
+    let catalog =
+        Catalog::parse(&serde_json::to_vec(&source).unwrap()).expect("reviewed classic appearance");
+    assert_eq!(
+        serde_json::to_value(catalog).unwrap()["entries"][0]["delivery"]["wineAppearance"],
+        "classic"
+    );
+    source["entries"][0]["delivery"]["wineAppearance"] = serde_json::json!("script");
+    assert!(Catalog::parse(&serde_json::to_vec(&source).unwrap()).is_err());
+}
+
+#[test]
 fn duplicate_application_ids_are_rejected() {
     let source = example().replace("}]}", "}]}");
     let entry = serde_json::from_str::<serde_json::Value>(&source).unwrap()["entries"][0].clone();

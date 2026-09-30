@@ -559,13 +559,20 @@ mod linux {
                 let cached = store.cache.stage_compat_installer(artifact).await?;
                 let display = std::env::var("DISPLAY").ok();
                 let xauthority = std::env::var("XAUTHORITY").ok();
-                let request = CompatForgeRequest::install(
+                let expected_appearance = match &entry.delivery {
+                    Delivery::Compatforge {
+                        wine_appearance, ..
+                    } => *wine_appearance,
+                    _ => return Err("application is not a CompatForge delivery".into()),
+                };
+                let request = CompatForgeRequest::install_with_appearance(
                     id,
                     &entry.version,
                     artifact,
                     cached.to_str().ok_or("cache path is not UTF-8")?,
                     &definition,
                     display.as_deref().zip(xauthority.as_deref()),
+                    expected_appearance,
                 )?;
                 let submitted = store.compat.call(request).await?;
                 let job_id = submitted

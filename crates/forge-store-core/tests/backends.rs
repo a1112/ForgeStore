@@ -4,7 +4,7 @@ use forge_store_core::backends::{
     package_display_version, parse_flatpak_list, CompatForgeRequest, FlatpakInvocation,
     PackageRequest,
 };
-use forge_store_core::catalogue::Artifact;
+use forge_store_core::catalogue::{Artifact, WineAppearance};
 use forge_store_core::queue::Action;
 use serde_json::json;
 
@@ -47,6 +47,7 @@ fn windows_install_must_match_reviewed_service_recipe() {
     assert_eq!(request["operation"], "jobs.submit");
     assert_eq!(request["payload"]["applicationId"], "7zip");
     assert_eq!(request["payload"]["kind"], "install");
+    assert_eq!(request["payload"]["expectedWineAppearance"], "default");
     assert_eq!(request["payload"]["environmentOverrides"]["DISPLAY"], ":0");
     assert_eq!(
         request["payload"]["environmentOverrides"]["XAUTHORITY"],
@@ -81,6 +82,50 @@ fn windows_install_must_match_reviewed_service_recipe() {
         Some(("evil.example:0", "/run/user/1000/xauth_test"))
     )
     .is_err());
+}
+
+#[test]
+fn windows_install_rejects_unsigned_appearance_changes() {
+    let definition = json!({"application":{"id":"7zip","version":"26.01","wineAppearance":"classic",
+        "installer":{"fileName":"7z2601-x64.exe","sha256":sample().sha256}}});
+    assert!(CompatForgeRequest::install(
+        "7zip",
+        "26.01",
+        &sample(),
+        "/home/forge/.cache/forge-store/d64a",
+        &definition,
+        None
+    )
+    .is_err());
+}
+
+#[test]
+fn windows_install_requires_exact_signed_appearance() {
+    let mut definition = json!({"application":{"id":"7zip","version":"26.01","wineAppearance":"classic",
+        "installer":{"fileName":"7z2601-x64.exe","sha256":sample().sha256}}});
+    let submit = |definition: &serde_json::Value| {
+        CompatForgeRequest::install_with_appearance(
+            "7zip",
+            "26.01",
+            &sample(),
+            "/home/forge/.cache/forge-store/d64a",
+            definition,
+            None,
+            Some(WineAppearance::Classic),
+        )
+    };
+    assert_eq!(submit(&definition).unwrap()["payload"]["kind"], "install");
+    assert_eq!(
+        submit(&definition).unwrap()["payload"]["expectedWineAppearance"],
+        "classic"
+    );
+    definition["application"]
+        .as_object_mut()
+        .unwrap()
+        .remove("wineAppearance");
+    assert!(submit(&definition).is_err());
+    definition["application"]["wineAppearance"] = json!("reg.exe");
+    assert!(submit(&definition).is_err());
 }
 
 #[test]

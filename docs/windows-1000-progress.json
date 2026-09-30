@@ -187,7 +187,7 @@
     {
       "id": "peazip",
       "version": "11.3.0",
-      "stage": "installed-post-fix-gui-roundtrip-passed-profile-integration-pending",
+      "stage": "installed-post-fix-roundtrip-profile-reviewed-cancellation-pending",
       "sourceUrl": "https://github.com/peazip/PeaZip/releases/download/11.3.0/peazip-11.3.0.WIN64.exe",
       "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76",
       "sizeBytes": 11391512,
@@ -195,12 +195,13 @@
       "installationJobStatus": "succeeded",
       "launchJobId": "job-1790756115185-28",
       "evidence": "docs/evidence/2026-09-30-peazip-pending.md",
-      "blocker": "Classic-theme trial restores Add/Extract OK/Cancel captions and post-fix GUI ZIP roundtrip passed. Initial extraction command/path triggered vendor concatenation guard; cause unresolved, guard retained, default-directory retry passed. Automatic configuration in fresh managed generations and Settings GUI regression remain unimplemented/unverified. No signed acceptance or local-market publication.",
+      "blocker": "Approved classic-profile implementation and trusted registry-tool authorization/cleanup regressions passed review. Preparing stage still starts synchronously before obtaining a cancellable owner; cancellation/shutdown must be repaired and tested before deployment. Fresh managed generation, Settings GUI, market update/rollback and initial vendor command guard investigation remain pending. No signed acceptance or publication.",
       "themeEvidence": "docs/evidence/2026-09-30-peazip-theme-config-trial.json",
       "themeLaunchJobId": "job-1790758534698-30",
       "postFixEvidence": "docs/evidence/2026-09-30-peazip-fixed-files.json",
       "themeLaunchJobStatus": "succeeded",
-      "profileDesign": "../CompatForge/docs/plans/2026-09-30-peazip-classic-theme-design.md"
+      "profileDesign": "../CompatForge/docs/plans/2026-09-30-peazip-classic-theme-design.md",
+      "profileReview": "docs/evidence/2026-09-30-peazip-profile-review.json"
     }
   ],
   "excludedInternalFixtures": [
@@ -209,7 +210,7 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "peazip-reviewed-classic-profile-integration-and-extraction-guard-investigation",
+  "next": "peazip-preparing-cancellation-owner-and-spawn-boundary-before-fresh-gui-and-publication",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-09-30",
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",

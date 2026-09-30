@@ -70,6 +70,12 @@ pub enum Delivery {
         #[serde(rename = "reviewedApplicationId")]
         reviewed_application_id: String,
         artifact: Artifact,
+        #[serde(
+            rename = "wineAppearance",
+            default,
+            skip_serializing_if = "Option::is_none"
+        )]
+        wine_appearance: Option<WineAppearance>,
     },
     Flatpak {
         remote: String,
@@ -78,6 +84,12 @@ pub enum Delivery {
     ForgePackage {
         artifact: Artifact,
     },
+}
+
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Deserialize, Serialize)]
+#[serde(rename_all = "lowercase")]
+pub enum WineAppearance {
+    Classic,
 }
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
@@ -129,6 +141,7 @@ impl Catalog {
                 Delivery::Compatforge {
                     reviewed_application_id,
                     artifact,
+                    ..
                 } => {
                     if reviewed_application_id != &entry.id {
                         return Err(CatalogError::Invalid("reviewed application ID differs"));

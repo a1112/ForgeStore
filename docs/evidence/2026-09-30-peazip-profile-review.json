@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "peazip",
+  "version": "11.3.0",
+  "status": "implementation-reviewed-preparing-cancellation-pending",
+  "userApproval": "Approved closed classic-theme profile design on 2026-09-30",
+  "changes": [
+    "Closed classic appearance on reviewed recipes, prepared plans and signed delivery metadata",
+    "Explicit default/classic install expectation checked before staging",
+    "Registry tool bound separately from historical runtime binding snapshots",
+    "Fixed absolute registry executable path and digest; builtin-only DLL loading; runtime-owned working directory",
+    "Direct serialized-plan authorization verifies trusted tool binding",
+    "Bounded nonblocking output capture preserves auxiliary cleanup failure and poisons prefix lease"
+  ],
+  "linuxRegression": {
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "compatforge-domain",
+      "-p",
+      "compatforge-service",
+      "-p",
+      "compatforge-orchestrator",
+      "-p",
+      "compatforge-process",
+      "--locked",
+      "--offline"
+    ],
+    "exitCode": 0,
+    "retainedSuiteSummaries": [
+      {
+        "passed": 107,
+        "failed": 0,
+        "ignored": 0
+      },
+      {
+        "passed": 14,
+        "failed": 0,
+        "ignored": 1
+      },
+      {
+        "passed": 1,
+        "failed": 0,
+        "ignored": 0
+      },
+      {
+        "passed": 76,
+        "failed": 0,
+        "ignored": 2
+      },
+      {
+        "passed": 0,
+        "failed": 0,
+        "ignored": 0
+      },
+      {
+        "passed": 0,
+        "failed": 0,
+        "ignored": 0
+      },
+      {
+        "passed": 0,
+        "failed": 0,
+        "ignored": 0
+      },
+      {
+        "passed": 0,
+        "failed": 0,
+        "ignored": 0
+      }
+    ]
+  },
+  "windowsStoreRegression": {
+    "backendsPassed": 13,
+    "cataloguePassed": 7,
+    "formatCheck": "passed after correcting multiline assertion"
+  },
+  "realRuntimeQuery": {
+    "operation": "fixed-runtime-registry-query",
+    "exitCode": 0,
+    "stdout": "\nHKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\ThemeManager\n    ThemeActive    REG_SZ    0\n\n",
+    "stderr": "",
+    "toolDigest": "sha256:cb41b77b7e2a8dd20b886608a8b4bdf3c121eb3d30702e913ea9949f8ec84021",
+    "builtinOnly": true,
+    "mutation": false
+  },
+  "review": {
+    "toolAuthorization": "passed",
+    "cleanupFailureRetention": "passed",
+    "newlineNoise": "removed",
+    "deploymentApproval": "not passed; preparing cancellation remains"
+  },
+  "remainingGates": [
+    "Return a cancellable preparing job ID before runtime configuration and preserve cancellation through installer spawn",
+    "Configuration cancellation/shutdown tests must prove installer not executed, old selected generation unchanged, cleanup confirmed",
+    "Fresh managed classic install and Add/Extract/Settings GUI regression",
+    "Retain and investigate initial vendor concatenation warning without disabling guard",
+    "Market-driven generation, update, restart and rollback evidence before acceptance"
+  ],
+  "deployment": {
+    "changed": false,
+    "signedCatalogue": "candidate-v10",
+    "metadataVersion": 19,
+    "newAcceptanceReceipt": false,
+    "stagedCliSha256": "cb2224bbb059a5ef2b2e938b771c18d79258bba0a4ba5c03bb945230b5f42618",
+    "activeCliSha256": "201dffa0e69c712b1548f72227d80fab59ec5c27a0051ab69b2af1a46a6bbbb5",
+    "selectedGeneration": "gen-job-1790755724792-27"
+  },
+  "acceptedDistinctWindowsApps": 10,
+  "targetDistinctWindowsApps": 1000,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "rejectedAttempts": [
+    {
+      "test": "classic_requires_a_verified_registry_tool",
+      "result": "RED: missing tool accepted before fix"
+    },
+    {
+      "test": "classic_direct_authorization_rejects_untrusted_tool_bindings",
+      "result": "RED: substituted tool accepted before authorization fix"
+    },
+    {
+      "test": "classic_auxiliary_cleanup_error_preserves_cleanup_stage",
+      "result": "RED: structured capture boundary absent before fix"
+    }
+  ]
+}

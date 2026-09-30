@@ -1,4 +1,4 @@
-use crate::catalogue::{Artifact, CatalogError, MAX_FORGEPKG_BYTES};
+use crate::catalogue::{Artifact, CatalogError, WineAppearance, MAX_FORGEPKG_BYTES};
 use crate::queue::Action;
 use serde_json::{json, Map, Value};
 use std::collections::BTreeMap;
@@ -224,6 +224,26 @@ impl CompatForgeRequest {
         reviewed_definition: &Value,
         session_environment: Option<(&str, &str)>,
     ) -> Result<Value, BackendError> {
+        Self::install_with_appearance(
+            app_id,
+            version,
+            artifact,
+            path,
+            reviewed_definition,
+            session_environment,
+            None,
+        )
+    }
+
+    pub fn install_with_appearance(
+        app_id: &str,
+        version: &str,
+        artifact: &Artifact,
+        path: &str,
+        reviewed_definition: &Value,
+        session_environment: Option<(&str, &str)>,
+        expected_appearance: Option<WineAppearance>,
+    ) -> Result<Value, BackendError> {
         artifact.validate(crate::catalogue::MAX_ARTIFACT_BYTES)?;
         let app = reviewed_definition
             .get("application")
@@ -231,6 +251,16 @@ impl CompatForgeRequest {
         let installer = app
             .get("installer")
             .ok_or(BackendError::Invalid("missing reviewed installer"))?;
+        let appearance = match app.get("wineAppearance") {
+            None | Some(Value::Null) => None,
+            Some(Value::String(value)) if value == "classic" => Some(WineAppearance::Classic),
+            _ => return Err(BackendError::Invalid("unknown reviewed Wine appearance")),
+        };
+        if appearance != expected_appearance {
+            return Err(BackendError::Invalid(
+                "catalogue differs from reviewed Wine appearance",
+            ));
+        }
         let file_name = artifact
             .target
             .rsplit('/')
@@ -250,7 +280,8 @@ impl CompatForgeRequest {
             ));
         }
         let mut payload = json!({"schemaVersion":"1","applicationId":app_id,
-            "kind":"install","executablePath":path});
+            "kind":"install","executablePath":path,
+            "expectedWineAppearance":if expected_appearance.is_some(){"classic"}else{"default"}});
         if let Some((display, xauthority)) = session_environment {
             let local_display = display.strip_prefix(':').is_some_and(|suffix| {
                 !suffix.is_empty()
