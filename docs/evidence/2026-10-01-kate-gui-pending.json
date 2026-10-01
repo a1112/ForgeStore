@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "kate",
+  "version": "26.08.1-build12388",
+  "stage": "gui-workflow-passed-publication-license-blocked",
+  "artifact": {
+    "sha256": "480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+    "sizeBytes": 102660176,
+    "evidence": "2026-10-01-kate-source.json"
+  },
+  "failedInstallation": {
+    "jobId": "job-1790817049484-6",
+    "status": "failed",
+    "installerExitCode": 0,
+    "error": "registry I/O failed: No such file or directory (os error 2)",
+    "preserved": true,
+    "causeEvidence": "Expected drive_c/Kate/bin/kate.exe was absent; fixed installer placed executable at drive_c/Program Files/Kate/bin/kate.exe."
+  },
+  "recipeFix": {
+    "installerArguments": [
+      "/S"
+    ],
+    "launcherExecutable": "Program Files/Kate/bin/kate.exe",
+    "coreBinaryChanged": false,
+    "evidence": "2026-10-01-kate-recipe.json"
+  },
+  "installation": {
+    "jobId": "job-1790817232316-7",
+    "status": "succeeded",
+    "generationId": "gen-job-1790817232316-7",
+    "generationStatus": "ready",
+    "definitionDigest": "sha256:468abc182adb8c144b553174e43e9c45da1110e2893288891fd85d66a2750881"
+  },
+  "gui": {
+    "result": "passed-limited-file-workflow",
+    "checks": [
+      "About shows 26.08.1",
+      "UTF-8 input containing Chinese opened visibly",
+      "Find/replace pending -> passed performed in GUI",
+      "Save As created previously absent rolling-kate-output.txt",
+      "56 output bytes exactly matched expected UTF-8 including Chinese",
+      "Input remained unchanged",
+      "Normal first exit code 0",
+      "Output reopened visibly in a new managed launch",
+      "Normal reopen exit code 0; output verified again unchanged"
+    ],
+    "firstLaunchJobId": "job-1790817268851-8",
+    "reopenJobId": "job-1790817468597-9",
+    "output": {
+      "path": "drive_c/users/forge/Documents/rolling-kate-output.txt",
+      "sizeBytes": 56,
+      "sha256": "77aadcac8b4a0ce2f933139774ba39756de67886f36b08b63d04884f23dc5118",
+      "utf8": "ForgeOS Kate smoke\nstatus: passed\n中文编辑与保存\n",
+      "inputUnchanged": true,
+      "verifiedAgainAfterReopen": true
+    },
+    "screenshots": [
+      {
+        "path": "2026-10-01-kate-about.jpg",
+        "sha256": "7e8e6c8916fb81ef7cf61ed14c2d6823c03dab46d67d17130e6eced718c55d91",
+        "mediaType": "image/jpeg"
+      },
+      {
+        "path": "2026-10-01-kate-license.jpg",
+        "sha256": "9ded3ebce928ba120cf70fc3aa0de6a31fb23e4c9200e94fa66dcbfb16b8b0cc",
+        "mediaType": "image/jpeg"
+      },
+      {
+        "path": "2026-10-01-kate-edit-save.jpg",
+        "sha256": "eaac9c43a62d473fa32d9f8dee3df1cb41c39ce1b5a8096d3b27c9617e59a86f",
+        "mediaType": "image/jpeg"
+      },
+      {
+        "path": "2026-10-01-kate-reopen.jpg",
+        "sha256": "d8f84f118bf2216883f30174a8b93c93e410ec3b30118da6130f14290b77b29b",
+        "mediaType": "image/jpeg"
+      }
+    ]
+  },
+  "publication": {
+    "attempted": false,
+    "signedAcceptance": false,
+    "marketPublished": false,
+    "countsAsCompleted": false,
+    "blocker": "Fixed CI build licensing differs from reference source declarations; exact build source/license mapping awaits reconciliation.",
+    "existingMarket": {
+      "katePublished": false,
+      "catalogueEntries": 13,
+      "fullJobCount": 38,
+      "fullJobRecordsSha256": "8dc0ca2af840952c923df2ea4797d50868ccc378e12f737ce875c152b65b7c13",
+      "installedPreserved": true,
+      "installedIds": [
+        "7zip",
+        "geany",
+        "kdiff3",
+        "krita",
+        "notepad-plus-plus",
+        "org.forgeos.storefixture",
+        "org.forgeos.storefixture-flatpak",
+        "peazip",
+        "sqlitestudio",
+        "sumatrapdf",
+        "texstudio",
+        "vlc",
+        "winmerge"
+      ],
+      "tufState": {
+        "timestamp.json": 20,
+        "root.json": 1,
+        "snapshot.json": 20,
+        "targets.json": 20
+      },
+      "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "catalogueBinding": "candidate-v11"
+    }
+  },
+  "limitations": [
+    "Limited editor file workflow only; project, plugin, LSP, terminal, debugger and network features unverified.",
+    "No market update/rollback or fresh-machine registration tested for Kate.",
+    "Release-branch CI binary is pinned by filename and hash; reference v26.08.1 source tag is not asserted to be its exact compiled commit."
+  ],
+  "backendEvidence": "2026-10-01-kate-backend.json",
+  "review": {
+    "status": "passed-record-verification",
+    "date": "2026-10-01",
+    "scope": "Evidence, counts, retained history and TUF preservation; publication license blocker remains.",
+    "resolvedFinding": "Four CUA images were JPEG with PNG extensions; renamed to .jpg without changing bytes, updated references."
+  }
+}

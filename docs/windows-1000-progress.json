@@ -192,6 +192,25 @@
       "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
       "blocker": "Full fixed official MSI size, SHA-256 and compound-file magic verified. Managed MSI execution remains unimplemented; no installation, GUI acceptance or publication.",
       "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json"
+    },
+    {
+      "id": "kate",
+      "version": "26.08.1-build12388",
+      "observedGuiVersion": "26.08.1",
+      "stage": "installed-gui-workflow-passed-license-reconciliation-blocked",
+      "sourceUrl": "https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/windows/kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+      "sha256": "480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+      "sizeBytes": 102660176,
+      "installationJobId": "job-1790817232316-7",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1790817232316-7",
+      "failedInstallationJobId": "job-1790817049484-6",
+      "guiEvidence": "docs/evidence/2026-10-01-kate-gui-pending.json",
+      "artifactEvidence": "docs/evidence/2026-10-01-kate-source.json",
+      "evidence": "docs/windows-rolling-20261001-kate-pending.md",
+      "published": false,
+      "countsAsCompleted": false,
+      "blocker": "Pinned release-branch CI build passed limited GUI editor workflow. Binary About displays GPL v3; reference v26.08.1 main declares GPL_V2 and AppStream LGPL-2.1+. Exact CI build source/license mapping is unverified; reconcile before signing or publication. First launcher-path failure retained."
     }
   ],
   "excludedInternalFixtures": [
@@ -206,7 +225,7 @@
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 11,
-    "explicitlyBlockedCandidates": 10,
+    "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
   },
@@ -218,5 +237,6 @@
     "publicationEvidence": "docs/evidence/2026-10-01-peazip-publication.json",
     "signedCatalogue": "catalogue/candidate-v11/tuf",
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
-  }
+  },
+  "lastReviewEvidence": "docs/windows-rolling-20261001-kate-pending.md"
 }

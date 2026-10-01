@@ -1,0 +1,1057 @@
+{
+  "jobs": [
+    {
+      "applicationId": "kate",
+      "createdAtMilliseconds": 1790817049484,
+      "error": "registry I/O failed: No such file or directory (os error 2)",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 434227,
+          "requestId": "job-1790817049484-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 10883,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817049484-6/prefix",
+          "requestId": "job-1790817049484-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 10926,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790817049484-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790817049484-6",
+      "id": "job-1790817049484-6",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 13618,
+        "fileDigest": "sha256:480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+        "fileSizeBytes": 102660176,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "gdi32.dll",
+          "kernel32.dll",
+          "ole32.dll",
+          "shell32.dll",
+          "user32.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 27136,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 26840,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 5632,
+            "readable": true,
+            "virtualAddress": 32768,
+            "virtualSize": 5220,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 1536,
+            "readable": true,
+            "virtualAddress": 40960,
+            "virtualSize": 174104,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".ndata",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 217088,
+            "virtualSize": 196608,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 157184,
+            "readable": true,
+            "virtualAddress": 413696,
+            "virtualSize": 156824,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "install",
+      "launchPlan": {
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "guest-artifact sha256:480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286 pinned",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "guestArtifact": {
+          "architecture": "i386",
+          "digest": "sha256:480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+          "sizeBytes": 102660176,
+          "storedPath": "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+          "subsystem": "windowsGui"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817049484-6/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+            "/S",
+            "/D=C:\\Kate"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817049484-6/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_ZoTwYo"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817049484-6"
+        },
+        "requestId": "job-1790817049484-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "failed",
+      "updatedAtMilliseconds": 1790817068759
+    },
+    {
+      "applicationId": "kate",
+      "createdAtMilliseconds": 1790817232316,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 434555,
+          "requestId": "job-1790817232316-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 12812,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix",
+          "requestId": "job-1790817232316-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 12854,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790817232316-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790817232316-7",
+      "id": "job-1790817232316-7",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 13618,
+        "fileDigest": "sha256:480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+        "fileSizeBytes": 102660176,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "gdi32.dll",
+          "kernel32.dll",
+          "ole32.dll",
+          "shell32.dll",
+          "user32.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 27136,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 26840,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 5632,
+            "readable": true,
+            "virtualAddress": 32768,
+            "virtualSize": 5220,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 1536,
+            "readable": true,
+            "virtualAddress": 40960,
+            "virtualSize": 174104,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".ndata",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 217088,
+            "virtualSize": 196608,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 157184,
+            "readable": true,
+            "virtualAddress": 413696,
+            "virtualSize": 156824,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "install",
+      "launchPlan": {
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "guest-artifact sha256:480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286 pinned",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "guestArtifact": {
+          "architecture": "i386",
+          "digest": "sha256:480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+          "sizeBytes": 102660176,
+          "storedPath": "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+          "subsystem": "windowsGui"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+            "/S"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_ZoTwYo"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7"
+        },
+        "requestId": "job-1790817232316-7",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1790817253514
+    },
+    {
+      "applicationId": "kate",
+      "createdAtMilliseconds": 1790817268851,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 434721,
+          "requestId": "job-1790817268851-8",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 171867,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix",
+          "requestId": "job-1790817268851-8",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 171909,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790817268851-8",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790817232316-7",
+      "id": "job-1790817268851-8",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 7201,
+        "fileDigest": "sha256:b42e8e146098b764d65bf284580096ae345e60eb7e60a0a4397fb892498b7b09",
+        "fileSizeBytes": 438712,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "kateprivate.dll",
+          "kernel32.dll",
+          "kf6coreaddons.dll",
+          "kf6i18n.dll",
+          "kf6texteditor.dll",
+          "kf6windowsystem.dll",
+          "msvcp140.dll",
+          "qt6core.dll",
+          "qt6gui.dll",
+          "qt6network.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 151552,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 151499,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 32768,
+            "readable": true,
+            "virtualAddress": 155648,
+            "virtualSize": 32409,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 2560,
+            "readable": true,
+            "virtualAddress": 188416,
+            "virtualSize": 4481,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 8192,
+            "readable": true,
+            "virtualAddress": 196608,
+            "virtualSize": 7716,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 27648,
+            "readable": true,
+            "virtualAddress": 204800,
+            "virtualSize": 27226,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtversi",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 233472,
+            "virtualSize": 275,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 1024,
+            "readable": true,
+            "virtualAddress": 237568,
+            "virtualSize": 777,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".00cfg",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 241664,
+            "virtualSize": 373,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 184832,
+            "readable": true,
+            "virtualAddress": 245760,
+            "virtualSize": 184652,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 2048,
+            "readable": true,
+            "virtualAddress": 434176,
+            "virtualSize": 1725,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1790817232316-7",
+          "digest": "sha256:b42e8e146098b764d65bf284580096ae345e60eb7e60a0a4397fb892498b7b09",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "kate.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix/drive_c/Program Files/Kate/bin/kate.exe",
+          "sizeBytes": 438712,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:b42e8e146098b764d65bf284580096ae345e60eb7e60a0a4397fb892498b7b09 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix/drive_c/Program Files/Kate/bin/kate.exe",
+            "C:\\users\\forge\\Documents\\rolling-kate-input.txt"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_ZoTwYo"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7"
+        },
+        "requestId": "job-1790817268851-8",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1790817442807
+    },
+    {
+      "applicationId": "kate",
+      "createdAtMilliseconds": 1790817468597,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 435048,
+          "requestId": "job-1790817468597-9",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 228680,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix",
+          "requestId": "job-1790817468597-9",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 228722,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790817468597-9",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790817232316-7",
+      "id": "job-1790817468597-9",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 7201,
+        "fileDigest": "sha256:b42e8e146098b764d65bf284580096ae345e60eb7e60a0a4397fb892498b7b09",
+        "fileSizeBytes": 438712,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "kateprivate.dll",
+          "kernel32.dll",
+          "kf6coreaddons.dll",
+          "kf6i18n.dll",
+          "kf6texteditor.dll",
+          "kf6windowsystem.dll",
+          "msvcp140.dll",
+          "qt6core.dll",
+          "qt6gui.dll",
+          "qt6network.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 151552,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 151499,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 32768,
+            "readable": true,
+            "virtualAddress": 155648,
+            "virtualSize": 32409,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 2560,
+            "readable": true,
+            "virtualAddress": 188416,
+            "virtualSize": 4481,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 8192,
+            "readable": true,
+            "virtualAddress": 196608,
+            "virtualSize": 7716,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 27648,
+            "readable": true,
+            "virtualAddress": 204800,
+            "virtualSize": 27226,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtversi",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 233472,
+            "virtualSize": 275,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 1024,
+            "readable": true,
+            "virtualAddress": 237568,
+            "virtualSize": 777,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".00cfg",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 241664,
+            "virtualSize": 373,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 184832,
+            "readable": true,
+            "virtualAddress": 245760,
+            "virtualSize": 184652,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 2048,
+            "readable": true,
+            "virtualAddress": 434176,
+            "virtualSize": 1725,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1790817232316-7",
+          "digest": "sha256:b42e8e146098b764d65bf284580096ae345e60eb7e60a0a4397fb892498b7b09",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "kate.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix/drive_c/Program Files/Kate/bin/kate.exe",
+          "sizeBytes": 438712,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:b42e8e146098b764d65bf284580096ae345e60eb7e60a0a4397fb892498b7b09 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix/drive_c/Program Files/Kate/bin/kate.exe",
+            "C:\\users\\forge\\Documents\\rolling-kate-output.txt"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_ZoTwYo"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790817232316-7"
+        },
+        "requestId": "job-1790817468597-9",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1790817699402
+    }
+  ],
+  "generations": {
+    "applicationId": "kate",
+    "generations": [
+      {
+        "bottleId": "gen-job-1790817049484-6",
+        "createdAtMilliseconds": 1790817049489,
+        "definition": {
+          "bottleId": "gui-kate",
+          "category": "development",
+          "compatibilityRating": "unknown",
+          "id": "kate",
+          "installer": {
+            "arguments": [
+              "/S",
+              "/D=C:\\Kate"
+            ],
+            "fileName": "kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+            "sha256": "480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286"
+          },
+          "launchers": [
+            {
+              "executable": "Kate/bin/kate.exe",
+              "id": "main",
+              "name": "Kate"
+            }
+          ],
+          "name": "Kate",
+          "publisher": "KDE",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000"
+          ],
+          "version": "26.08.1-build12388"
+        },
+        "definitionDigest": "sha256:20f8e7c9fa3e6e640501f2100b0123010cab83eeb99ecc811259bd623c235e04",
+        "error": "registry I/O failed: No such file or directory (os error 2)",
+        "id": "gen-job-1790817049484-6",
+        "launcherDigests": {},
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "failed",
+        "updatedAtMilliseconds": 1790817068782
+      },
+      {
+        "bottleId": "gen-job-1790817232316-7",
+        "createdAtMilliseconds": 1790817232323,
+        "definition": {
+          "bottleId": "gui-kate",
+          "category": "development",
+          "compatibilityRating": "unknown",
+          "id": "kate",
+          "installer": {
+            "arguments": [
+              "/S"
+            ],
+            "fileName": "kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+            "sha256": "480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286"
+          },
+          "launchers": [
+            {
+              "executable": "Program Files/Kate/bin/kate.exe",
+              "id": "main",
+              "name": "Kate"
+            }
+          ],
+          "name": "Kate",
+          "publisher": "KDE",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000"
+          ],
+          "version": "26.08.1-build12388"
+        },
+        "definitionDigest": "sha256:468abc182adb8c144b553174e43e9c45da1110e2893288891fd85d66a2750881",
+        "id": "gen-job-1790817232316-7",
+        "launcherDigests": {
+          "main": "sha256:b42e8e146098b764d65bf284580096ae345e60eb7e60a0a4397fb892498b7b09"
+        },
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "ready",
+        "updatedAtMilliseconds": 1790817253525
+      }
+    ],
+    "recoveryCapability": "kernel-boot-identity",
+    "schemaVersion": "1",
+    "selectedGeneration": "gen-job-1790817232316-7"
+  },
+  "application": {
+    "bottleId": "gui-kate",
+    "category": "development",
+    "compatibilityRating": "unknown",
+    "id": "kate",
+    "installer": {
+      "arguments": [
+        "/S"
+      ],
+      "fileName": "kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+      "sha256": "480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286"
+    },
+    "launchers": [
+      {
+        "executable": "Program Files/Kate/bin/kate.exe",
+        "id": "main",
+        "name": "Kate"
+      }
+    ],
+    "name": "Kate",
+    "publisher": "KDE",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000"
+    ],
+    "version": "26.08.1-build12388"
+  },
+  "output": {
+    "path": "drive_c/users/forge/Documents/rolling-kate-output.txt",
+    "sizeBytes": 56,
+    "sha256": "77aadcac8b4a0ce2f933139774ba39756de67886f36b08b63d04884f23dc5118",
+    "utf8": "ForgeOS Kate smoke\nstatus: passed\n中文编辑与保存\n",
+    "inputUnchanged": true,
+    "verifiedAgainAfterReopen": true
+  },
+  "market": {
+    "katePublished": false,
+    "catalogueEntries": 13,
+    "fullJobCount": 38,
+    "fullJobRecordsSha256": "8dc0ca2af840952c923df2ea4797d50868ccc378e12f737ce875c152b65b7c13",
+    "installedPreserved": true,
+    "installedIds": [
+      "7zip",
+      "geany",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge"
+    ],
+    "tufState": {
+      "timestamp.json": 20,
+      "root.json": 1,
+      "snapshot.json": 20,
+      "targets.json": 20
+    },
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "catalogueBinding": "candidate-v11"
+  },
+  "services": {
+    "compatforge.service": "active",
+    "forge-store.service": "active"
+  }
+}

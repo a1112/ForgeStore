@@ -1,0 +1,129 @@
+{
+  "id": "kate",
+  "observedGuiVersion": "26.08.1",
+  "buildIdentity": "kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+  "releaseBranch": "release-26.08",
+  "url": "https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/windows/kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe",
+  "checksumUrl": "https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/windows/kate-release_26.08-12388-windows-cl-msvc2022-x86_64.exe.sha256",
+  "sizeBytes": 102660176,
+  "sha256": "480aa82b61e299b5636f801366a23377b9ce8ff5f815e1663652bfef32054286",
+  "officialChecksumMatched": true,
+  "builderAndGuestVerified": true,
+  "sourceReference": {
+    "referenceSourceCommit": "b219b9435490f2a9e26af72aecded08e36dfc774",
+    "records": [
+      {
+        "path": "apps/kate/data/org.kde.kate.appdata.xml",
+        "url": "https://raw.githubusercontent.com/KDE/kate/v26.08.1/apps/kate/data/org.kde.kate.appdata.xml",
+        "lines": [
+          "<project_license>LGPL-2.1+</project_license>",
+          "<release version=\"26.08.1\" date=\"2026-09-10\"/>",
+          "<release version=\"26.08.0\" date=\"2026-08-20\"/>",
+          "<release version=\"26.04.3\" date=\"2026-07-02\"/>",
+          "<release version=\"26.04.2\" date=\"2026-06-04\"/>",
+          "<release version=\"26.04.1\" date=\"2026-05-07\"/>",
+          "<release version=\"26.04.0\" date=\"2026-04-16\"/>",
+          "<release version=\"25.12.3\" date=\"2026-03-05\"/>",
+          "<release version=\"25.12.2\" date=\"2026-02-05\"/>",
+          "<release version=\"25.12.1\" date=\"2026-01-08\"/>",
+          "<release version=\"25.12.0\" date=\"2025-12-11\"/>",
+          "<release version=\"25.08.3\" date=\"2025-11-06\"/>",
+          "<release version=\"25.08.2\" date=\"2025-10-09\"/>",
+          "<release version=\"25.08.1\" date=\"2025-09-11\"/>",
+          "<release version=\"25.08.0\" date=\"2025-08-14\"/>",
+          "<release version=\"25.04.3\" date=\"2025-07-03\"/>",
+          "<release version=\"25.04.2\" date=\"2025-06-05\"/>",
+          "<release version=\"25.04.1\" date=\"2025-05-08\"/>",
+          "<release version=\"25.04.0\" date=\"2025-04-17\"/>",
+          "<release version=\"24.12.3\" date=\"2025-03-06\"/>"
+        ]
+      },
+      {
+        "path": "apps/kwrite/data/org.kde.kwrite.appdata.xml",
+        "url": "https://raw.githubusercontent.com/KDE/kate/v26.08.1/apps/kwrite/data/org.kde.kwrite.appdata.xml",
+        "lines": [
+          "<project_license>LGPL-2.1+</project_license>",
+          "<release version=\"26.08.1\" date=\"2026-09-10\"/>",
+          "<release version=\"26.08.0\" date=\"2026-08-20\"/>",
+          "<release version=\"26.04.3\" date=\"2026-07-02\"/>",
+          "<release version=\"26.04.2\" date=\"2026-06-04\"/>",
+          "<release version=\"26.04.1\" date=\"2026-05-07\"/>",
+          "<release version=\"26.04.0\" date=\"2026-04-16\"/>",
+          "<release version=\"25.12.3\" date=\"2026-03-05\"/>",
+          "<release version=\"25.12.2\" date=\"2026-02-05\"/>",
+          "<release version=\"25.12.1\" date=\"2026-01-08\"/>",
+          "<release version=\"25.12.0\" date=\"2025-12-11\"/>",
+          "<release version=\"25.08.3\" date=\"2025-11-06\"/>",
+          "<release version=\"25.08.2\" date=\"2025-10-09\"/>",
+          "<release version=\"25.08.1\" date=\"2025-09-11\"/>",
+          "<release version=\"25.08.0\" date=\"2025-08-14\"/>",
+          "<release version=\"25.04.3\" date=\"2025-07-03\"/>",
+          "<release version=\"25.04.2\" date=\"2025-06-05\"/>",
+          "<release version=\"25.04.1\" date=\"2025-05-08\"/>",
+          "<release version=\"25.04.0\" date=\"2025-04-17\"/>",
+          "<release version=\"24.12.3\" date=\"2025-03-06\"/>"
+        ]
+      },
+      {
+        "path": "apps/lib/kateapp.cpp",
+        "url": "https://raw.githubusercontent.com/KDE/kate/v26.08.1/apps/lib/kateapp.cpp",
+        "lines": [
+          "SPDX-License-Identifier: LGPL-2.0-only",
+          "#if KICONTHEMES_VERSION >= QT_VERSION_CHECK(6, 3, 0)"
+        ]
+      },
+      {
+        "path": "CMakeLists.txt",
+        "url": "https://raw.githubusercontent.com/KDE/kate/v26.08.1/CMakeLists.txt",
+        "lines": [
+          "cmake_minimum_required(VERSION 3.16 FATAL_ERROR)",
+          "set(RELEASE_SERVICE_VERSION_MAJOR \"26\")",
+          "set(RELEASE_SERVICE_VERSION_MINOR \"08\")",
+          "set(RELEASE_SERVICE_VERSION_MICRO \"1\")",
+          "set(RELEASE_SERVICE_VERSION \"${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}\")",
+          "project(kate VERSION ${RELEASE_SERVICE_VERSION})",
+          "set(QT_MIN_VERSION \"6.5.0\")",
+          "set(KF6_DEP_VERSION \"6.0.0\")",
+          "set(QT_MAJOR_VERSION \"6\")",
+          "find_package(ECM ${KF6_DEP_VERSION} QUIET REQUIRED NO_MODULE)",
+          "find_package(Qt6Widgets ${QT_MIN_VERSION} CONFIG REQUIRED)",
+          "find_package(Qt6Concurrent ${QT_MIN_VERSION} CONFIG REQUIRED)",
+          "if (Qt6Gui_VERSION VERSION_GREATER_EQUAL \"6.10.0\")",
+          "find_package(Qt6GuiPrivate ${QT_MIN_VERSION} REQUIRED NO_MODULE)",
+          "find_package(KF6 ${KF6_DEP_VERSION}"
+        ]
+      }
+    ]
+  },
+  "sourceMain": {
+    "url": "https://raw.githubusercontent.com/KDE/kate/v26.08.1/apps/kate/main.cpp",
+    "sha256": "bc0914b8ee24e71234cedf510e3083700969ceed9dcc63d643fb2189e4e0c289",
+    "licenseLines": [
+      "* SPDX-FileCopyrightText: 2001-2022 Christoph Cullmann <cullmann@kde.org>",
+      "* SPDX-FileCopyrightText: 2001-2002 Joseph Wenninger <jowenn@kde.org>",
+      "* SPDX-FileCopyrightText: 2001 Anders Lund <anders.lund@lund.tdcadsl.dk>",
+      "* SPDX-License-Identifier: LGPL-2.0-or-later",
+      "KAboutLicense::GPL_V2,"
+    ]
+  },
+  "licenseReview": {
+    "status": "blocked-pending-build-license-reconciliation",
+    "binaryAboutLicenseText": "GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007",
+    "referenceMainDeclaration": "KAboutLicense::GPL_V2",
+    "referenceAppStreamDeclaration": "LGPL-2.1+",
+    "referenceSourceTag": "v26.08.1",
+    "ciBuildCommitVerified": false,
+    "interpretation": "Observed declarations differ; do not infer the exact CI build license from the reference source tag. No upstream license files or labels changed. Local market publication withheld pending explanation/binding of this fixed build."
+  },
+  "sourceAcquisitionHistory": [
+    {
+      "step": "builder GitHub tree request after successful official artifact download",
+      "outcome": "ConnectionResetError",
+      "artifactVerified": true
+    },
+    {
+      "step": "host GitHub tree and fixed source file review",
+      "outcome": "succeeded"
+    }
+  ]
+}
