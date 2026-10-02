@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "speedcrunch",
+  "cancelledInstall": {
+    "id": "job-1790967701850-15",
+    "generationId": "gen-job-1790967701850-15",
+    "status": "cancelled",
+    "error": "installation did not complete",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 9972,
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 136515,
+        "kind": "terminate-requested",
+        "message": "termination requested",
+        "processId": 9972,
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 136537,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790967701850-15/prefix",
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 2
+      },
+      {
+        "elapsedMilliseconds": 136622,
+        "exit": {
+          "success": false
+        },
+        "kind": "exited",
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 3
+      }
+    ]
+  },
+  "harnessFailuresRetained": [
+    "Initial Inno arguments left the actual NSIS installer running. Cancelled via supported job API; corrected recipe /S /D=C:\\SpeedCrunch passed.",
+    "Cancellation helper initially assumed jobs.poll result contained status at the top level; KeyError after cancellation, then jobs.get confirmed cancelled before retry.",
+    "noVNC unshifted symbolic key aliases produced sqrt9a0=2610; actual extra assignment remains in session. Explicit shifted digit/equal key combinations produced the intended expressions. Fast typeText did not complete the expression; incomplete input was continued explicitly. These are harness observations, not application calculation failures."
+  ],
+  "sourceLookupFailures": [
+    "Bitbucket download listing API returned HTTP 402; download used the fixed link on the official website. Initial tag name lookup assumed v0.12/0.12; authoritative tag list identified release-0.12.0. Observed source files pin exact commit; upstream installer digest unavailable."
+  ],
+  "installerMarker": {
+    "NullsoftInstByteOffset": 417800,
+    "InnoSetupDataMarkerPresent": false
+  },
+  "minimalRecipeFix": {
+    "before": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/DIR=C:\\SpeedCrunch"
+    ],
+    "after": [
+      "/S",
+      "/D=C:\\SpeedCrunch"
+    ]
+  },
+  "applicationOrEngineCodeChanged": false
+}

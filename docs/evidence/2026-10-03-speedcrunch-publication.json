@@ -1,0 +1,793 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "speedcrunch",
+  "version": "0.12",
+  "signedCatalogue": "catalogue/candidate-v14/tuf",
+  "activation": {
+    "activated": true,
+    "metadataVersion": 23,
+    "catalogueEntries": 16,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "jobsPreserved": true,
+    "fullJobCount": 42,
+    "fullJobRecordsSha256": "77c42f18cd57fcc45d4d699c3bf0d6ecb7c9ef583c08d3f6250d555634de883f",
+    "historicalInterruptedJobs": [],
+    "previousInstalledPreserved": true,
+    "installedBefore": [
+      {
+        "appId": "7zip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "26.01"
+      },
+      {
+        "appId": "doublecmd",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.2.9"
+      },
+      {
+        "appId": "geany",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.1"
+      },
+      {
+        "appId": "kdiff3",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.12.4"
+      },
+      {
+        "appId": "krita",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "5.3.4"
+      },
+      {
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "8.9.6.2"
+      },
+      {
+        "appId": "peazip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "11.3.0"
+      },
+      {
+        "appId": "sqlitestudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.4.17"
+      },
+      {
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.6.1"
+      },
+      {
+        "appId": "texstudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "4.9.5"
+      },
+      {
+        "appId": "vlc",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.0.23"
+      },
+      {
+        "appId": "winmerge",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.16.58.2"
+      },
+      {
+        "appId": "xournalpp",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.3.8"
+      },
+      {
+        "appId": "org.forgeos.storefixture-flatpak",
+        "backend": "flatpak",
+        "canRollback": false,
+        "version": ""
+      },
+      {
+        "appId": "org.forgeos.storefixture",
+        "backend": "forge-package",
+        "canRollback": true,
+        "version": "SHA-256 20802d45b911"
+      }
+    ],
+    "installedAfter": [
+      {
+        "appId": "7zip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "26.01"
+      },
+      {
+        "appId": "doublecmd",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.2.9"
+      },
+      {
+        "appId": "geany",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.1"
+      },
+      {
+        "appId": "kdiff3",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.12.4"
+      },
+      {
+        "appId": "krita",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "5.3.4"
+      },
+      {
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "8.9.6.2"
+      },
+      {
+        "appId": "peazip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "11.3.0"
+      },
+      {
+        "appId": "sqlitestudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.4.17"
+      },
+      {
+        "appId": "speedcrunch",
+        "backend": "compatforge",
+        "canRollback": false,
+        "version": "0.12"
+      },
+      {
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.6.1"
+      },
+      {
+        "appId": "texstudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "4.9.5"
+      },
+      {
+        "appId": "vlc",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.0.23"
+      },
+      {
+        "appId": "winmerge",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.16.58.2"
+      },
+      {
+        "appId": "xournalpp",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.3.8"
+      },
+      {
+        "appId": "org.forgeos.storefixture-flatpak",
+        "backend": "flatpak",
+        "canRollback": false,
+        "version": ""
+      },
+      {
+        "appId": "org.forgeos.storefixture",
+        "backend": "forge-package",
+        "canRollback": true,
+        "version": "SHA-256 20802d45b911"
+      }
+    ],
+    "installedIds": [
+      "7zip",
+      "doublecmd",
+      "geany",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "speedcrunch",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge",
+      "xournalpp"
+    ],
+    "speedcrunch": {
+      "compatibility": {
+        "evidence": "windows-speedcrunch-20261003.acceptance.json#speedcrunch",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89",
+          "size": 9451219,
+          "target": "SpeedCrunch-0.12-win32.exe",
+          "url": "https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12-win32.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "speedcrunch"
+      },
+      "id": "speedcrunch",
+      "license": "GPL-2.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "SpeedCrunch",
+        "zhCN": "SpeedCrunch"
+      },
+      "origin": "https://www.speedcrunch.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The SpeedCrunch Developers",
+      "summary": {
+        "en": "High-precision calculator",
+        "zhCN": "高精度科学计算器"
+      },
+      "version": "0.12"
+    }
+  },
+  "updatedGui": {
+    "storeJob": {
+      "action": "update",
+      "appId": "speedcrunch",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "2986ac2e-d86b-48da-b686-4ea8265a7977",
+      "state": "succeeded"
+    },
+    "selectedGeneration": "gen-job-1790969382283-19",
+    "generation": {
+      "bottleId": "gen-job-1790969382283-19",
+      "createdAtMilliseconds": 1790969382289,
+      "definition": {
+        "bottleId": "gui-speedcrunch",
+        "category": "utilities",
+        "compatibilityRating": "unknown",
+        "id": "speedcrunch",
+        "installer": {
+          "arguments": [
+            "/S",
+            "/D=C:\\SpeedCrunch"
+          ],
+          "fileName": "SpeedCrunch-0.12-win32.exe",
+          "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89"
+        },
+        "launchers": [
+          {
+            "executable": "SpeedCrunch/speedcrunch.exe",
+            "id": "main",
+            "name": "SpeedCrunch"
+          }
+        ],
+        "name": "SpeedCrunch",
+        "publisher": "The SpeedCrunch Developers",
+        "schemaVersion": "1",
+        "tags": [
+          "rolling-1000"
+        ],
+        "version": "0.12"
+      },
+      "definitionDigest": "sha256:b81648be841b33d4a1ec6788f0a53541ebd1c659a779b7d043169b05f8716b9f",
+      "id": "gen-job-1790969382283-19",
+      "launcherDigests": {
+        "main": "sha256:da69df37412c3d7bb67addd6984147060acff1cb15db4f16d44f251ab936f5af"
+      },
+      "runtime": {
+        "binding": {
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINESERVER": "/usr/bin/wineserver"
+          },
+          "executable": "/usr/bin/wine",
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "providerId": "wine-linux-x86-64-preview",
+          "wineserverExecutable": "/usr/bin/wineserver"
+        },
+        "selection": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "version": "11.14"
+      },
+      "status": "ready",
+      "updatedAtMilliseconds": 1790969392729
+    },
+    "guiJobId": "job-1790969393162-20",
+    "status": "running",
+    "copiedFixtureSha256": "64c1a1668f31679e34d253dc2a5941ee8baae101b073ab7d2fba2b3a00da22b6",
+    "copiedFixtureHistoryCount": 5,
+    "fixtureWasCopiedNotCreatedByUpdatedGui": true,
+    "outputAbsentBeforeGui": true
+  },
+  "updatedFilesAndReopen": {
+    "updatedGuiJob": {
+      "id": "job-1790969393162-20",
+      "generationId": "gen-job-1790969382283-19",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 11968,
+          "requestId": "job-1790969393162-20",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 564731,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790969382283-19/prefix",
+          "requestId": "job-1790969393162-20",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 564773,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790969393162-20",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "files": {
+      "calc.json": {
+        "path": "drive_c/users/forge/Documents/calc.json",
+        "sizeBytes": 2312,
+        "sha256": "64c1a1668f31679e34d253dc2a5941ee8baae101b073ab7d2fba2b3a00da22b6",
+        "session": {
+          "functions": [],
+          "history": [
+            {
+              "expression": "a=81",
+              "result": {
+                "numeric_value": {
+                  "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "sqrt9a0=2610",
+              "result": {
+                "numeric_value": {
+                  "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "0.1+0.2",
+              "result": {
+                "numeric_value": {
+                  "value": "0.300000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "sqrt(a)+2^10",
+              "result": {
+                "numeric_value": {
+                  "value": "1033.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "20!",
+              "result": {
+                "numeric_value": {
+                  "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            }
+          ],
+          "variables": [
+            {
+              "identifier": "a",
+              "type": "User",
+              "value": {
+                "numeric_value": {
+                  "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "identifier": "ans",
+              "type": "BuiltIn",
+              "value": {
+                "numeric_value": {
+                  "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "identifier": "sqrt9a0",
+              "type": "User",
+              "value": {
+                "numeric_value": {
+                  "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            }
+          ],
+          "version": "0.12"
+        }
+      },
+      "updated.json": {
+        "path": "drive_c/users/forge/Documents/updated.json",
+        "sizeBytes": 2553,
+        "sha256": "80af2b26b19930222e1e59ac01db5d81c69ca753cb8329c8a302123c035657e4",
+        "session": {
+          "functions": [],
+          "history": [
+            {
+              "expression": "a=81",
+              "result": {
+                "numeric_value": {
+                  "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "sqrt9a0=2610",
+              "result": {
+                "numeric_value": {
+                  "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "0.1+0.2",
+              "result": {
+                "numeric_value": {
+                  "value": "0.300000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "sqrt(a)+2^10",
+              "result": {
+                "numeric_value": {
+                  "value": "1033.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "20!",
+              "result": {
+                "numeric_value": {
+                  "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "expression": "a+2",
+              "result": {
+                "numeric_value": {
+                  "value": "83.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            }
+          ],
+          "variables": [
+            {
+              "identifier": "a",
+              "type": "User",
+              "value": {
+                "numeric_value": {
+                  "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "identifier": "ans",
+              "type": "BuiltIn",
+              "value": {
+                "numeric_value": {
+                  "value": "83.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            },
+            {
+              "identifier": "sqrt9a0",
+              "type": "User",
+              "value": {
+                "numeric_value": {
+                  "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                }
+              }
+            }
+          ],
+          "version": "0.12"
+        }
+      }
+    },
+    "newCalculationAndSavePassed": true,
+    "copiedInputUnchanged": true,
+    "reopenJobId": "job-1790969962035-21",
+    "generationId": "gen-job-1790969382283-19",
+    "status": "running"
+  },
+  "updatedReopenTerminal": {
+    "id": "job-1790969962035-21",
+    "generationId": "gen-job-1790969382283-19",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 12370,
+        "requestId": "job-1790969962035-21",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 60482,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790969382283-19/prefix",
+        "requestId": "job-1790969962035-21",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 60525,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790969962035-21",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "rollbackGui": {
+    "storeJob": {
+      "action": "rollback",
+      "appId": "speedcrunch",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "443ad1ca-1f7a-4234-a60a-9a997fec8625",
+      "state": "succeeded"
+    },
+    "selectedGeneration": "gen-job-1790967885841-16",
+    "originalFilesUnchanged": {
+      "calc.json": {
+        "sizeBytes": 2312,
+        "sha256": "64c1a1668f31679e34d253dc2a5941ee8baae101b073ab7d2fba2b3a00da22b6"
+      },
+      "calc2.json": {
+        "sizeBytes": 2553,
+        "sha256": "d1bbb644dbb13f1dc16edc10e79e40659e6c204b7296044ffcb9f71b231ae92b"
+      }
+    },
+    "guiJobId": "job-1790970104210-22",
+    "generationId": "gen-job-1790967885841-16",
+    "status": "running"
+  },
+  "final": {
+    "rollbackGuiJob": {
+      "id": "job-1790970104210-22",
+      "generationId": "gen-job-1790967885841-16",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12646,
+          "requestId": "job-1790970104210-22",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 51397,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790967885841-16/prefix",
+          "requestId": "job-1790970104210-22",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 51439,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790970104210-22",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "allCoreJobsTerminal": true,
+    "selectedGeneration": "gen-job-1790967885841-16",
+    "generationStatuses": {
+      "gen-job-1790967701850-15": "cancelled",
+      "gen-job-1790967885841-16": "ready",
+      "gen-job-1790969382283-19": "ready"
+    },
+    "filesUnchanged": {
+      "gen-job-1790967885841-16/calc.json": {
+        "sha256": "64c1a1668f31679e34d253dc2a5941ee8baae101b073ab7d2fba2b3a00da22b6",
+        "sizeBytes": 2312
+      },
+      "gen-job-1790967885841-16/calc2.json": {
+        "sha256": "d1bbb644dbb13f1dc16edc10e79e40659e6c204b7296044ffcb9f71b231ae92b",
+        "sizeBytes": 2553
+      },
+      "gen-job-1790969382283-19/calc.json": {
+        "sha256": "64c1a1668f31679e34d253dc2a5941ee8baae101b073ab7d2fba2b3a00da22b6",
+        "sizeBytes": 2312
+      },
+      "gen-job-1790969382283-19/updated.json": {
+        "sha256": "80af2b26b19930222e1e59ac01db5d81c69ca753cb8329c8a302123c035657e4",
+        "sizeBytes": 2553
+      }
+    },
+    "serviceRestarted": true,
+    "snapshotAndFullRowsEqualAfterRestart": true,
+    "historicalRowsUnchanged": true,
+    "previousJobCount": 42,
+    "fullJobCount": 44,
+    "fullJobRecordsSha256": "40a263e0bf505814fbe62b7ba3330c197d8cbe6318d7854ef59ea94c5f6f227b",
+    "catalogueEntries": 16,
+    "installedIds": [
+      "7zip",
+      "doublecmd",
+      "geany",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "speedcrunch",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge",
+      "xournalpp"
+    ],
+    "speedcrunch": {
+      "appId": "speedcrunch",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "0.12"
+    },
+    "tufMetadata": {
+      "timestamp.json": {
+        "version": 23,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "root.json": {
+        "version": 1,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "snapshot.json": {
+        "version": 23,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "targets.json": {
+        "version": 23,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      }
+    },
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "storeBinarySha256": "857d88c90cbc4384885fa19da0ff25fd9579fb8e241214ed640b8f99072a1f75",
+    "guardSettingsPreserved": true,
+    "originalContextPreserved": true,
+    "cacheRawBytesPreservationClaimed": false
+  },
+  "componentIdentity": {
+    "cliSha256": "b0fb6755ec12d552a3846197281e982ccdbc761fffef0b3dfd30030e0f23e332",
+    "cliResolved": "/usr/bin/compatforge-cli",
+    "coreServiceBinarySha256": "12c0404f79f2d063e2e5e71d42981ebbecd102b5770d363588f1e7c1a4938f62",
+    "coreServiceExe": "/home/forge/forge-rolling-20260929/bin/compatforge-cli-peazip-classic",
+    "storeGuards": {
+      "NoNewPrivileges=yes": true,
+      "ProtectSystem=full": true,
+      "PrivateTmp=yes": true,
+      "catalogue-v14": true,
+      "70-bytes-1.11.1.conf": true
+    },
+    "originalContextUnchanged": true
+  },
+  "localSignatureVerification": {
+    "tool": "tuftool 0.17 clone --metadata-only",
+    "exitCode": 0,
+    "trustedRoot": "candidate-v13 trusted-root.json",
+    "rootUnchanged": true,
+    "metadataVersion": 23,
+    "catalogueEntries": 16,
+    "receiptCount": 12,
+    "publicFileSha256": {
+      "trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "metadata/23.snapshot.json": "d9d8ae07ae4fcfa01037caa9871c5a689574bd4e0f5c9880fed231cf33622aa0",
+      "metadata/23.targets.json": "fc3ad41ebea68203aef44fa6be2dbe3a9fe88cc01053c9deb66a18edd93073a4",
+      "metadata/timestamp.json": "dc21349aef7e32cffb98f2cbdd8397f4a199da1e7da753dbb54dad8cc35bf931",
+      "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "targets/beffd20657723299e8a903450cf565a3cc7e023415e1dbce48399ec2c0cd9b42.catalogue.json": "beffd20657723299e8a903450cf565a3cc7e023415e1dbce48399ec2c0cd9b42",
+      "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+    }
+  },
+  "screenshots": {
+    "2026-10-03-speedcrunch-market-rollback-reopened.jpg": "2342ed6f8696753176c435cabbade05e24990bfb5619a3dca32263c12876ae80",
+    "2026-10-03-speedcrunch-market-update-reopened.jpg": "fa2513435435e5bc0a34a9bcd5224731a00cffce4b0f4574818e63703b2f2f20",
+    "2026-10-03-speedcrunch-market-update.jpg": "80e8fe275829de594898f3a43e63dc1c8de479080c6ea35f9eac91a278c100fb"
+  },
+  "harnessFailuresRetained": [
+    {
+      "stage": "reopen terminal helper generation",
+      "result": "PowerShell nested quoting failed before helper creation; dependent read failed on missing helper. No rollback enqueued. A direct ASCII helper then verified terminal success before rollback."
+    },
+    {
+      "stage": "final component identity gate",
+      "result": "Expected hash of running CompatForge service was mistakenly compared to /usr/bin/compatforge-cli client. Earlier restart equality and TUF gates passed and their snapshots were persisted. Read-only identity diagnosis found expected service hash at /proc/MainPID/exe, guards and original context unchanged. Corrected target verified against existing restart snapshots without another restart."
+    }
+  ],
+  "limits": [
+    "Verified-cache same-version update and installation-generation rollback, not cross-version upgrade or guest online download.",
+    "Updated-generation calc.json was copied as a fixture; GUI loaded it, computed a+2=83, saved updated.json and normally exited. Reopen restored the auto-saved session history containing 83; explicit loading updated.json in that second updated session was not tested.",
+    "Rollback GUI reopened auto-saved original history containing a+1=82; original calc.json/calc2.json bytes stayed unchanged.",
+    "Advanced calculator functions, units, complex numbers, localization, fresh-machine recipe registration and remote public distribution unverified.",
+    "No cache raw-byte preservation claim for reserialized TUF metadata; full parsed signed documents and signatures equal immutable public metadata."
+  ]
+}

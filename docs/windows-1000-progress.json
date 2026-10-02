@@ -112,6 +112,15 @@
       "signedCatalogue": "catalogue/candidate-v13/tuf",
       "publication": "docs/evidence/2026-10-03-xournalpp-publication.json",
       "limitation": "GUI pen drawing, ASCII text insertion, existing Chinese preservation, native save/reopen and one-page PDF export; verified-cache market update repeated drawing/save/PDF/reopen, original-generation rollback/reopen and restart passed. Silent installer default directory used; failed custom-path attempt retained. Chinese keyboard entry, tablets/audio/LaTeX/plugins, guest online download, fresh-machine registration and cross-version upgrade unverified."
+    },
+    {
+      "id": "speedcrunch",
+      "version": "0.12",
+      "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89",
+      "evidence": "docs/evidence/windows-speedcrunch-20261003.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v14/tuf",
+      "publication": "docs/evidence/2026-10-03-speedcrunch-publication.json",
+      "limitation": "GUI exact arithmetic and JSON save/explicit load/reopen, verified-cache same-version market update with new calculation/save, auto-history reopen, original-generation rollback/reopen and service restart passed. Upstream installer digest, build reproducibility, advanced functions/units/complex numbers/localization, guest online download, fresh-machine registration and cross-version upgrade unverified. Initial wrong installer arguments cancelled and retained."
     }
   ],
   "queue": [
@@ -242,20 +251,20 @@
   "lastReviewed": "2026-10-03",
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 13,
+    "acceptedLocalMarket": 14,
     "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v13/tuf",
-    "metadataVersion": 22,
-    "catalogueEntries": 15,
-    "acceptedDistinctWindowsApps": 13,
+    "signedCatalogue": "catalogue/candidate-v14/tuf",
+    "metadataVersion": 23,
+    "catalogueEntries": 16,
+    "acceptedDistinctWindowsApps": 14,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-03-xournalpp-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-03-speedcrunch-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261003-xournalpp.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261003-speedcrunch.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json"
 }

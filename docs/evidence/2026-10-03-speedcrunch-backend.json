@@ -1,0 +1,429 @@
+{
+  "application": {
+    "bottleId": "gui-speedcrunch",
+    "category": "utilities",
+    "compatibilityRating": "unknown",
+    "id": "speedcrunch",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/D=C:\\SpeedCrunch"
+      ],
+      "fileName": "SpeedCrunch-0.12-win32.exe",
+      "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89"
+    },
+    "launchers": [
+      {
+        "executable": "SpeedCrunch/speedcrunch.exe",
+        "id": "main",
+        "name": "SpeedCrunch"
+      }
+    ],
+    "name": "SpeedCrunch",
+    "publisher": "The SpeedCrunch Developers",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000"
+    ],
+    "version": "0.12"
+  },
+  "generation": {
+    "bottleId": "gen-job-1790967885841-16",
+    "createdAtMilliseconds": 1790967885846,
+    "definition": {
+      "bottleId": "gui-speedcrunch",
+      "category": "utilities",
+      "compatibilityRating": "unknown",
+      "id": "speedcrunch",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\SpeedCrunch"
+        ],
+        "fileName": "SpeedCrunch-0.12-win32.exe",
+        "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89"
+      },
+      "launchers": [
+        {
+          "executable": "SpeedCrunch/speedcrunch.exe",
+          "id": "main",
+          "name": "SpeedCrunch"
+        }
+      ],
+      "name": "SpeedCrunch",
+      "publisher": "The SpeedCrunch Developers",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000"
+      ],
+      "version": "0.12"
+    },
+    "definitionDigest": "sha256:b81648be841b33d4a1ec6788f0a53541ebd1c659a779b7d043169b05f8716b9f",
+    "id": "gen-job-1790967885841-16",
+    "launcherDigests": {
+      "main": "sha256:da69df37412c3d7bb67addd6984147060acff1cb15db4f16d44f251ab936f5af"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1790967897783
+  },
+  "selectedGeneration": "gen-job-1790967885841-16",
+  "jobs": [
+    {
+      "id": "job-1790967885841-16",
+      "generationId": "gen-job-1790967885841-16",
+      "kind": "install",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 10294,
+          "requestId": "job-1790967885841-16",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4863,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790967885841-16/prefix",
+          "requestId": "job-1790967885841-16",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4905,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790967885841-16",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790967909613-17",
+      "generationId": "gen-job-1790967885841-16",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 10470,
+          "requestId": "job-1790967909613-17",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 807442,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790967885841-16/prefix",
+          "requestId": "job-1790967909613-17",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 807484,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790967909613-17",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790968744692-18",
+      "generationId": "gen-job-1790967885841-16",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 10946,
+          "requestId": "job-1790968744692-18",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 418202,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790967885841-16/prefix",
+          "requestId": "job-1790968744692-18",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 418244,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790968744692-18",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "cancelledInstall": {
+    "id": "job-1790967701850-15",
+    "generationId": "gen-job-1790967701850-15",
+    "status": "cancelled",
+    "error": "installation did not complete",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 9972,
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 136515,
+        "kind": "terminate-requested",
+        "message": "termination requested",
+        "processId": 9972,
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 136537,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790967701850-15/prefix",
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 2
+      },
+      {
+        "elapsedMilliseconds": 136622,
+        "exit": {
+          "success": false
+        },
+        "kind": "exited",
+        "requestId": "job-1790967701850-15",
+        "schemaVersion": "1",
+        "sequence": 3
+      }
+    ]
+  },
+  "allCoreJobsTerminal": true,
+  "guiCalculationSaveLoadReopenPassed": true,
+  "files": {
+    "calc.json": {
+      "path": "drive_c/users/forge/Documents/calc.json",
+      "sizeBytes": 2312,
+      "sha256": "64c1a1668f31679e34d253dc2a5941ee8baae101b073ab7d2fba2b3a00da22b6",
+      "session": {
+        "functions": [],
+        "history": [
+          {
+            "expression": "a=81",
+            "result": {
+              "numeric_value": {
+                "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "sqrt9a0=2610",
+            "result": {
+              "numeric_value": {
+                "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "0.1+0.2",
+            "result": {
+              "numeric_value": {
+                "value": "0.300000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "sqrt(a)+2^10",
+            "result": {
+              "numeric_value": {
+                "value": "1033.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "20!",
+            "result": {
+              "numeric_value": {
+                "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          }
+        ],
+        "variables": [
+          {
+            "identifier": "a",
+            "type": "User",
+            "value": {
+              "numeric_value": {
+                "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "identifier": "ans",
+            "type": "BuiltIn",
+            "value": {
+              "numeric_value": {
+                "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "identifier": "sqrt9a0",
+            "type": "User",
+            "value": {
+              "numeric_value": {
+                "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          }
+        ],
+        "version": "0.12"
+      }
+    },
+    "calc2.json": {
+      "path": "drive_c/users/forge/Documents/calc2.json",
+      "sizeBytes": 2553,
+      "sha256": "d1bbb644dbb13f1dc16edc10e79e40659e6c204b7296044ffcb9f71b231ae92b",
+      "session": {
+        "functions": [],
+        "history": [
+          {
+            "expression": "a=81",
+            "result": {
+              "numeric_value": {
+                "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "sqrt9a0=2610",
+            "result": {
+              "numeric_value": {
+                "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "0.1+0.2",
+            "result": {
+              "numeric_value": {
+                "value": "0.300000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "sqrt(a)+2^10",
+            "result": {
+              "numeric_value": {
+                "value": "1033.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "20!",
+            "result": {
+              "numeric_value": {
+                "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "expression": "a+1",
+            "result": {
+              "numeric_value": {
+                "value": "82.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          }
+        ],
+        "variables": [
+          {
+            "identifier": "sqrt9a0",
+            "type": "User",
+            "value": {
+              "numeric_value": {
+                "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "identifier": "ans",
+            "type": "BuiltIn",
+            "value": {
+              "numeric_value": {
+                "value": "82.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          },
+          {
+            "identifier": "a",
+            "type": "User",
+            "value": {
+              "numeric_value": {
+                "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              }
+            }
+          }
+        ],
+        "version": "0.12"
+      }
+    }
+  },
+  "launcherSha256": "da69df37412c3d7bb67addd6984147060acff1cb15db4f16d44f251ab936f5af",
+  "licenseBasis": "Fixed-tag project_license GPL-2.0+ and src/main.cpp GPL 2 or any later declaration. Installed About 0.12 observed; source build reproducibility not verified.",
+  "harnessFailuresRetained": [
+    "Initial Inno arguments left the actual NSIS installer running. Cancelled via supported job API; corrected recipe /S /D=C:\\SpeedCrunch passed.",
+    "Cancellation helper initially assumed jobs.poll result contained status at the top level; KeyError after cancellation, then jobs.get confirmed cancelled before retry.",
+    "noVNC unshifted symbolic key aliases produced sqrt9a0=2610; actual extra assignment remains in session. Explicit shifted digit/equal key combinations produced the intended expressions. Fast typeText did not complete the expression; incomplete input was continued explicitly. These are harness observations, not application calculation failures."
+  ]
+}

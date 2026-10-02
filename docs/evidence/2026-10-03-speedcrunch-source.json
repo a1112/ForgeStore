@@ -1,0 +1,88 @@
+{
+  "tag": "release-0.12.0",
+  "commit": "ea93b21f9498de620d6669c6048a2c501f3a13fe",
+  "sourceRootFiles": [
+    "adm",
+    "doc",
+    "gfx",
+    "pkg",
+    "src",
+    ".gitattributes",
+    ".gitignore",
+    "README.md"
+  ],
+  "downloadPage": "https://www.speedcrunch.org/download.html",
+  "sourceUrl": "https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12-win32.exe",
+  "apiDownloadListingFailure": "HTTP 402 Payment Required; official fixed link used instead.",
+  "references": [
+    {
+      "url": "https://api.bitbucket.org/2.0/repositories/heldercorreia/speedcrunch/src/ea93b21f9498de620d6669c6048a2c501f3a13fe/src/main.cpp",
+      "path": "src/main.cpp",
+      "sizeBytes": 1350,
+      "sha256": "934d728849b1e872dfb3111e4311db20a5a00feb16ef95880cb3494fbb7a832d",
+      "relevantLines": [
+        "// modify it under the terms of the GNU General Public License",
+        "// as published by the Free Software Foundation; either version 2",
+        "// of the License, or (at your option) any later version.",
+        "// GNU General Public License for more details.",
+        "// You should have received a copy of the GNU General Public License"
+      ]
+    },
+    {
+      "url": "https://api.bitbucket.org/2.0/repositories/heldercorreia/speedcrunch/src/ea93b21f9498de620d6669c6048a2c501f3a13fe/pkg/winsetup.iss",
+      "path": "pkg/winsetup.iss",
+      "sizeBytes": 3384,
+      "sha256": "dcbe7fb7e2b33403834183b77d6ea51be1f9bad6480a777427ca0adc8486ce0c",
+      "relevantLines": [
+        "#define NUMERICVERSION GetFileVersion(SPEEDCRUNCHEXE)",
+        "#define VERSION \"trunk\" ; GetFileVersionString(SPEEDCRUNCHEXE)",
+        "AppPublisher={#APPTITLE}",
+        "AppPublisherURL={#URL}",
+        "AppVerName={#APPTITLE} {#VERSION}",
+        "DefaultDirName={pf}\\{#APPTITLE}",
+        "LicenseFile=COPYING.rtf",
+        "OutputBaseFilename={#APPTITLE}-{#VERSION}",
+        "VersionInfoCompany={#URL}",
+        "VersionInfoCopyright=Copyright (C) {#COPYRIGHT}",
+        "VersionInfoDescription=Keyboard-oriented high-precision scientific calculator",
+        "VersionInfoTextVersion={#VERSION}",
+        "VersionInfoVersion={#NUMERICVERSION}",
+        "Source: {#SPEEDCRUNCHEXE}; DestDir: \"{app}\"; Flags: ignoreversion"
+      ]
+    },
+    {
+      "url": "https://api.bitbucket.org/2.0/repositories/heldercorreia/speedcrunch/src/ea93b21f9498de620d6669c6048a2c501f3a13fe/pkg/COPYING.rtf",
+      "path": "pkg/COPYING.rtf",
+      "sizeBytes": 20407,
+      "sha256": "ecd637d56048edde0da3d881b7582f62c22f44136d247f1cec3f1293cb06ec9d",
+      "relevantLines": [
+        "{\\*\\generator Msftedit 5.41.21.2508;}\\viewkind4\\uc1\\pard\\ri-22\\qc\\tx284\\tx568\\lang1031\\b\\f0\\fs16 GNU GENERAL PUBLIC LICENSE\\par",
+        "\\b0 Version 2, June 1991\\par",
+        "\\pard\\ri-22\\qc\\tx284\\tx568\\lang1031\\b\\fs16 GNU GENERAL PUBLIC LICENSE\\par",
+        "\\lang1031\\fs16 You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\\lang1023\\fs24\\par",
+        "\\pard\\li142\\ri-22\\tx284\\tx568\\lang1031\\f1\\fs16 Gnomovision version 69, Copyright (C) \\i year name of author\\lang1023\\i0\\fs24\\par"
+      ]
+    },
+    {
+      "url": "https://api.bitbucket.org/2.0/repositories/heldercorreia/speedcrunch/src/ea93b21f9498de620d6669c6048a2c501f3a13fe/pkg/speedcrunch.appdata.xml",
+      "path": "pkg/speedcrunch.appdata.xml",
+      "sizeBytes": 10149,
+      "sha256": "ec1b3d99d9bca72c46d90dffc61cb7133bdd8896df71b6e0299a4f0c60ee0fdb",
+      "relevantLines": [
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "<metadata_license>CC0-1.0</metadata_license>",
+        "<project_license>GPL-2.0+</project_license>"
+      ]
+    }
+  ],
+  "fileName": "SpeedCrunch-0.12-win32.exe",
+  "sizeBytes": 9451219,
+  "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89",
+  "artifactVerified": true,
+  "digestSource": "Locally calculated from official fixed-version download; upstream digest not available.",
+  "applicationId": "speedcrunch",
+  "version": "0.12",
+  "license": "GPL-2.0-or-later; bundled component notices apply",
+  "licenseBasis": "Fixed-tag project_license GPL-2.0+ in appdata, corroborated by src/main.cpp version 2 or any later declaration; GPL template alone is not used to infer or-later.",
+  "sourceBuildReproducibilityVerified": false
+}
