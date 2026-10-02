@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "advisory": "https://github.com/tokio-rs/bytes/security/advisories/GHSA-434x-w66g-qw3r",
+  "cve": "CVE-2026-25541",
+  "dependency": {
+    "before": "bytes 1.10.1",
+    "after": "bytes 1.11.1",
+    "lockChecksum": "1e748733b7cbc798e1434b6ac524f0c1ff2ab456fe201501e6497c8417a4fc33"
+  },
+  "regression": {
+    "command": "cargo test --locked --release --test dependency_safety",
+    "before": {
+      "exitCode": 1,
+      "passed": 0,
+      "failed": 1,
+      "failure": "overflowing reserve must be rejected"
+    },
+    "after": {
+      "exitCode": 0,
+      "passed": 1,
+      "failed": 0
+    },
+    "safety": "Creates and splits 11 bytes, drops the original owner, catches reserve overflow; never calls put_u8 or spare_capacity_mut after the reserve."
+  },
+  "linuxReleaseTest": {
+    "command": [
+      "cargo",
+      "test",
+      "-p",
+      "forge-store-core",
+      "--release",
+      "--locked",
+      "--offline"
+    ],
+    "exitCode": 0,
+    "summaries": [
+      "test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 13 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 7 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s",
+      "test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+      "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+    ],
+    "passed": 45,
+    "failed": 0,
+    "ignored": 2,
+    "ignoredReason": "Existing backend/cache integration tests require optional test infrastructure."
+  },
+  "linuxReleaseBuild": {
+    "command": [
+      "cargo",
+      "build",
+      "--release",
+      "-p",
+      "forge-store-core",
+      "--bin",
+      "forge-store-service",
+      "--locked",
+      "--offline"
+    ],
+    "exitCode": 0,
+    "artifact": {
+      "binary": "/srv/forge-apps-build/targets/forge-store-peazip-classic/release/forge-store-service",
+      "sha256": "857d88c90cbc4384885fa19da0ff25fd9579fb8e241214ed640b8f99072a1f75",
+      "sizeBytes": 16691608,
+      "bytesVersions": [
+        "1.11.1"
+      ]
+    }
+  },
+  "deployment": {
+    "deployed": true,
+    "binary": "/home/forge/forge-rolling-20260929/bin/forge-store-service-bytes-1.11.1",
+    "binarySha256": "857d88c90cbc4384885fa19da0ff25fd9579fb8e241214ed640b8f99072a1f75",
+    "binarySizeBytes": 16691608,
+    "pid": 9517,
+    "oldBinaryRetained": true,
+    "checks": {
+      "jobs": true,
+      "catalogue": true,
+      "installed": true,
+      "backends": true,
+      "jobsHasMore": true,
+      "fullRowsEqual": true,
+      "cachedTufDocumentsEqual": {
+        "timestamp.json": true,
+        "root.json": true,
+        "snapshot.json": true,
+        "targets.json": true
+      },
+      "cachedTufBytesEqual": {
+        "timestamp.json": true,
+        "root.json": false,
+        "snapshot.json": true,
+        "targets.json": false
+      }
+    },
+    "tufMetadata": {
+      "timestamp.json": {
+        "equal": true,
+        "sourceSha256": "5fb112feb88ec58723aff55930a9160f04bd24a7dc3c34b965e762f55c76e3ab",
+        "version": 22,
+        "beforeCachedSha256": "75d33f78b9ddbd3bc3747909f6c12d5d8e96fccee7b2d263f22c1e8946081c80",
+        "afterCachedSha256": "75d33f78b9ddbd3bc3747909f6c12d5d8e96fccee7b2d263f22c1e8946081c80"
+      },
+      "root.json": {
+        "equal": true,
+        "sourceSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+        "version": 1,
+        "beforeCachedSha256": "6e108b07277c3122de8255dcf6b8d026f5a7a81937824620e2ecbe5fbca51207",
+        "afterCachedSha256": "d34212dea145d4c58499a4f013e83a7881b5b3d6cc81f820cb70ee4f1a4abb0d"
+      },
+      "snapshot.json": {
+        "equal": true,
+        "sourceSha256": "d24e1039342da183aaf2b7796cf9d376f7327a1735f1dcb07a90d1893ae34fc7",
+        "version": 22,
+        "beforeCachedSha256": "2638ca293c199cb85645ea30b409a73c00db85c34968ed3887a3cba8f2fa7917",
+        "afterCachedSha256": "2638ca293c199cb85645ea30b409a73c00db85c34968ed3887a3cba8f2fa7917"
+      },
+      "targets.json": {
+        "equal": true,
+        "sourceSha256": "329bf2e906da89473675a9fba3bb054f4237d067e91ef58bc2a7c178242a9235",
+        "version": 22,
+        "beforeCachedSha256": "7b7677bd690999327e7cff36587df56c783c419d10c8bd23b6913913ddd8cd51",
+        "afterCachedSha256": "c6cfdce06ec8a6a810258bc6e758eae8b9aac6d00fb428d16cbd2cd43aee5f9a"
+      }
+    },
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "fullJobCount": 42,
+    "fullJobRecordsSha256": "77c42f18cd57fcc45d4d699c3bf0d6ecb7c9ef583c08d3f6250d555634de883f",
+    "catalogueEntries": 15,
+    "installedCount": 15,
+    "coreJobsTerminal": true,
+    "guardSettingsPreserved": true,
+    "originalContextPreserved": true,
+    "initialFailure": {
+      "result": "compound equality assertion failed after service restart",
+      "beforeAndAfterSaved": false,
+      "exactFailedOperand": "not recorded"
+    },
+    "diagnosticFailure": {
+      "result": "public metadata lookup outside service mount namespace failed",
+      "recovery": "used existing bind source catalogue-v13; persistent before/after snapshots recovered"
+    },
+    "controlledRestartResult": "all jobs/catalogue/installed/backend fields and parsed signed TUF documents equal; cached root/targets byte hashes differ; public signed metadata exactly equals both parsed caches",
+    "limitations": [
+      "Initial failed assertion lost its in-memory snapshots, so this controlled reproduction explains a reproducible failure mode, not a proven operand of the first assertion.",
+      "No byte-preservation claim for cached metadata serialization; signed data, signatures, versions and published trust root are preserved."
+    ]
+  },
+  "counts": {
+    "acceptedDistinctWindowsApps": 13,
+    "blockedWindowsApps": 11,
+    "targetDistinctWindowsApps": 1000
+  },
+  "failuresRetained": [
+    {
+      "stage": "offline build",
+      "failure": "Default Cargo cache lacked reqwest; the existing dedicated cache lacked bytes 1.11.1.",
+      "recovery": "cargo fetch --locked using the dedicated cache; lock file unchanged; final locked offline release tests/build passed."
+    },
+    {
+      "result": "compound equality assertion failed after service restart",
+      "beforeAndAfterSaved": false,
+      "exactFailedOperand": "not recorded"
+    },
+    {
+      "result": "public metadata lookup outside service mount namespace failed",
+      "recovery": "used existing bind source catalogue-v13; persistent before/after snapshots recovered"
+    }
+  ]
+}
