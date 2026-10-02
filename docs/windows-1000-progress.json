@@ -103,6 +103,15 @@
       "signedCatalogue": "catalogue/candidate-v12/tuf",
       "publication": "docs/evidence/2026-10-02-doublecmd-publication.json",
       "limitation": "GUI copy/rename, Chinese viewer, exit/reopen, verified-cache market update repeated workflow, rollback original output/reopen and restart passed. Existing per-bottle classic appearance used. Archives/plugins/FTP/network shares, guest online download, fresh registration and cross-version upgrade unverified."
+    },
+    {
+      "id": "xournalpp",
+      "version": "1.3.8",
+      "sha256": "0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637",
+      "evidence": "docs/evidence/windows-xournalpp-20261003.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v13/tuf",
+      "publication": "docs/evidence/2026-10-03-xournalpp-publication.json",
+      "limitation": "GUI pen drawing, ASCII text insertion, existing Chinese preservation, native save/reopen and one-page PDF export; verified-cache market update repeated drawing/save/PDF/reopen, original-generation rollback/reopen and restart passed. Silent installer default directory used; failed custom-path attempt retained. Chinese keyboard entry, tablets/audio/LaTeX/plugins, guest online download, fresh-machine registration and cross-version upgrade unverified."
     }
   ],
   "queue": [
@@ -230,23 +239,23 @@
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
   "next": "review-next-fixed-official-windows-artifact-and-license; retain-all-blocked-candidates",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-10-02",
+  "lastReviewed": "2026-10-03",
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 12,
+    "acceptedLocalMarket": 13,
     "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v12/tuf",
-    "metadataVersion": 21,
-    "catalogueEntries": 14,
-    "acceptedDistinctWindowsApps": 12,
+    "signedCatalogue": "catalogue/candidate-v13/tuf",
+    "metadataVersion": 22,
+    "catalogueEntries": 15,
+    "acceptedDistinctWindowsApps": 13,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-02-doublecmd-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-03-xournalpp-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261002-doublecmd.md",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-02-rolling-vm-recovery.json"
+  "lastReviewEvidence": "docs/windows-rolling-20261003-xournalpp.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json"
 }

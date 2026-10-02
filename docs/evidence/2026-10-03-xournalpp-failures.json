@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "xournalpp",
+  "firstInstall": {
+    "applicationId": "xournalpp",
+    "createdAtMilliseconds": 1790963571997,
+    "error": "registry I/O failed: No such file or directory (os error 2)",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 6034,
+        "requestId": "job-1790963571997-7",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 7300,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790963571997-7/prefix",
+        "requestId": "job-1790963571997-7",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 7342,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790963571997-7",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1790963571997-7",
+    "id": "job-1790963571997-7",
+    "inspection": {
+      "architecture": "x86",
+      "entryPointRva": 13650,
+      "fileDigest": "sha256:0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637",
+      "fileSizeBytes": 96924916,
+      "format": "pe32",
+      "imageKind": "executable",
+      "importLibraries": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "machineCode": 332,
+      "schemaVersion": "1",
+      "sections": [
+        {
+          "executable": true,
+          "name": ".text",
+          "rawDataSize": 27136,
+          "readable": true,
+          "virtualAddress": 4096,
+          "virtualSize": 26872,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".rdata",
+          "rawDataSize": 5632,
+          "readable": true,
+          "virtualAddress": 32768,
+          "virtualSize": 5220,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".data",
+          "rawDataSize": 1536,
+          "readable": true,
+          "virtualAddress": 40960,
+          "virtualSize": 174104,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".ndata",
+          "rawDataSize": 0,
+          "readable": true,
+          "virtualAddress": 217088,
+          "virtualSize": 200704,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".rsrc",
+          "rawDataSize": 19968,
+          "readable": true,
+          "virtualAddress": 417792,
+          "virtualSize": 19536,
+          "writable": false
+        }
+      ],
+      "subsystem": "windowsGui",
+      "subsystemCode": 2
+    },
+    "kind": "install",
+    "launchPlan": {
+      "decisionTrace": [
+        "runtime provider wine-linux-x86-64-preview selected as wine",
+        "translator native selected",
+        "graphics backend wined3d selected",
+        "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+        "Bottle CJK font pinned by digest",
+        "guest-artifact sha256:0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637 pinned",
+        "inspection i386 windowsGui accepted"
+      ],
+      "graphics": {
+        "backend": "wined3d",
+        "version": "11.14"
+      },
+      "guestArtifact": {
+        "architecture": "i386",
+        "digest": "sha256:0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637",
+        "imageKind": "executable",
+        "inspectionSchemaVersion": "1",
+        "originalName": "xournalpp-1.3.8-windows-setup-AMD64.exe",
+        "sizeBytes": 96924916,
+        "storedPath": "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637",
+        "subsystem": "windowsGui"
+      },
+      "lifecycle": {
+        "terminationGraceMilliseconds": 3000,
+        "wineserver": {
+          "executable": "/usr/bin/wineserver",
+          "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790963571997-7/prefix"
+        }
+      },
+      "process": {
+        "arguments": [
+          "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637",
+          "/S",
+          "/D=C:\\Xournalpp"
+        ],
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "DISPLAY": ":0",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790963571997-7/prefix",
+          "WINESERVER": "/usr/bin/wineserver",
+          "XAUTHORITY": "/run/user/1000/xauth_bnYzaM"
+        },
+        "executable": "/usr/bin/wine",
+        "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790963571997-7"
+      },
+      "requestId": "job-1790963571997-7",
+      "runtime": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "sandbox": {
+        "network": "deny",
+        "profile": "desktop"
+      },
+      "schemaVersion": "1",
+      "translator": {
+        "provider": "native"
+      }
+    },
+    "schemaVersion": "1",
+    "status": "failed",
+    "updatedAtMilliseconds": 1790963589206
+  },
+  "diagnosis": {
+    "failedGeneration": "gen-job-1790963571997-7",
+    "paths": [
+      {
+        "path": "drive_c/Program Files/Xournal++/bin/xournalpp-wrapper.exe",
+        "sizeBytes": 7419283,
+        "sha256": "31a4ab7e47d4256dff7205d155b2a5b7b2385dcc19cfb80346aae92b1b94c778"
+      },
+      {
+        "path": "drive_c/Program Files/Xournal++/bin/xournalpp.exe",
+        "sizeBytes": 142780460,
+        "sha256": "b0a18ce4ba1a8f9104214bd21496b29d78fe6a8ef945103fb561c3029894a0f3"
+      }
+    ],
+    "prefixEntries": [
+      "system.reg",
+      "drive_c",
+      ".update-timestamp",
+      "dosdevices",
+      "user.reg",
+      "userdef.reg"
+    ],
+    "cRoot": [
+      "windows",
+      "ProgramData",
+      "Program Files (x86)",
+      "users",
+      "Program Files"
+    ]
+  },
+  "minimalRecipeFix": {
+    "before": {
+      "arguments": [
+        "/S",
+        "/D=C:\\Xournalpp"
+      ],
+      "launcher": "Xournalpp/bin/xournalpp.exe"
+    },
+    "after": {
+      "arguments": [
+        "/S"
+      ],
+      "launcher": "Program Files/Xournal++/bin/xournalpp.exe"
+    },
+    "basis": "NSIS MultiUser default path and actual installed executable matched; custom /D path did not exist despite installer exit 0. No engine guard changed."
+  },
+  "firstFailureRetained": true,
+  "uiHarnessObservations": [
+    "Panel resize invalidated coordinate mapping and caused an accidental LaTeX tool invocation; missing external LaTeX support prompt cancelled. LaTeX feature remains unverified.",
+    "noVNC key entry created the actual filename rrolling-xournalpp-output.xopp and two text regions gui pa / ssed. Actual bytes and names were retained, not silently normalized. These observations are not asserted as application defects."
+  ],
+  "retryInstallJobId": "job-1790963642854-8"
+}

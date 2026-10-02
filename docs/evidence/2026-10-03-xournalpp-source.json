@@ -1,0 +1,84 @@
+{
+  "applicationId": "xournalpp",
+  "version": "1.3.8",
+  "releaseUrl": "https://github.com/xournalpp/xournalpp/releases/tag/v1.3.8",
+  "publishedAt": "2026-09-26T06:23:53Z",
+  "sourceCommit": "938bdb8de4d32f38f48dd7f6544886722157a848",
+  "fileName": "xournalpp-1.3.8-windows-setup-AMD64.exe",
+  "sourceUrl": "https://github.com/xournalpp/xournalpp/releases/download/v1.3.8/xournalpp-1.3.8-windows-setup-AMD64.exe",
+  "sizeBytes": 96924916,
+  "sha256": "0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637",
+  "artifactVerified": true,
+  "references": [
+    {
+      "url": "https://raw.githubusercontent.com/xournalpp/xournalpp/938bdb8de4d32f38f48dd7f6544886722157a848/LICENSE",
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+      "sizeBytes": 18091,
+      "relevantLines": [
+        "Version 2, June 1991",
+        "License is intended to guarantee your freedom to share and change free",
+        "General Public License applies to most of the Free Software",
+        "the GNU Lesser General Public License instead.)  You can apply it to",
+        "price.  Our General Public Licenses are designed to make sure that you",
+        "0. This License applies to any program or other work which contains",
+        "under the terms of this General Public License.  The \"Program\", below,",
+        "covered by this License; they are outside its scope.  The act of",
+        "notices that refer to this License and to the absence of any warranty;",
+        "and give any other recipients of the Program a copy of this License",
+        "parties under the terms of this License.",
+        "License.  (Exception: if the Program itself is interactive but",
+        "themselves, then this License, and its terms, do not apply to those",
+        "this License, whose permissions for other licensees extend to the",
+        "the scope of this License.",
+        "except as expressly provided under this License.  Any attempt",
+        "void, and will automatically terminate your rights under this License.",
+        "this License will not have their licenses terminated so long as such",
+        "5. You are not required to accept this License, since you have not",
+        "prohibited by law if you do not accept this License.  Therefore, by",
+        "Program), you indicate your acceptance of this License to do so, and",
+        "this License.",
+        "otherwise) that contradict the conditions of this License, they do not",
+        "excuse you from the conditions of this License.  If you cannot",
+        "License and any other pertinent obligations, then as a consequence you",
+        "the only way you could satisfy both it and this License would be to",
+        "be a consequence of the rest of this License.",
+        "original copyright holder who places the Program under this License",
+        "countries not thus excluded.  In such case, this License incorporates",
+        "the limitation as if written in the body of this License."
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xournalpp/xournalpp/938bdb8de4d32f38f48dd7f6544886722157a848/windows-setup/xournalpp.nsi",
+      "sha256": "00bb9cb5137df7a63ceef68189db92eeaa7fa889d38f03e94326ebe0e4c5ed07",
+      "sizeBytes": 11167,
+      "relevantLines": [
+        "WriteRegStr SHCTX \"Software\\Classes\\Applications\\xournalpp.exe\\SupportedTypes\" \"${EXT}\" \"\"",
+        "SetOutPath \"$INSTDIR\"",
+        "WriteRegStr SHCTX \"Software\\Classes\\Applications\\xournalpp.exe\" \"\" '\"$INSTDIR\\bin\\xournalpp-wrapper.exe\"'",
+        "WriteRegStr SHCTX \"Software\\Classes\\Applications\\xournalpp.exe\" \"FriendlyAppName\" \"Xournal++\"",
+        "WriteRegExpandStr SHCTX \"Software\\Classes\\Applications\\xournalpp.exe\" \"DefaultIcon\" '\"$INSTDIR\\bin\\xournalpp-wrapper.exe\",0'",
+        "WriteRegStr SHCTX \"Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\xournalpp.exe\" \"\" '\"$INSTDIR\\bin\\xournalpp-wrapper.exe\"'",
+        "DeleteRegKey SHCTX \"Software\\Classes\\Applications\\xournalpp.exe\"",
+        "DeleteRegKey SHCTX \"Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\xournalpp.exe\""
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xournalpp/xournalpp/938bdb8de4d32f38f48dd7f6544886722157a848/src/core/control/XournalMain.cpp",
+      "sha256": "6daf8b5f45b1b183bbe088498066dd5a39581ec4311e61aba57eb4a4a063f536",
+      "sizeBytes": 32562,
+      "relevantLines": [
+        "Util::getConfigFolder().parent_path() / \"com.github.xournalpp.xournalpp.exe\","
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/xournalpp/xournalpp/938bdb8de4d32f38f48dd7f6544886722157a848/src/core/gui/dialog/AboutDialog.cpp",
+      "sha256": "8910662e87d504ba2cf422cc724eb75e8e5aeaa7be869eecb83aa9964f3b4292",
+      "sizeBytes": 3244,
+      "relevantStatement": "GNU GPLv2 or later"
+    }
+  ],
+  "license": "GPL-2.0-or-later; bundled component notices apply",
+  "licenseBasis": "Fixed-tag AboutDialog.cpp explicitly states GNU GPLv2 or later, corroborated by the installed About window. The fixed LICENSE is the GPL v2 template; or-later is not inferred from the template alone.",
+  "aboutScreenshot": "2026-10-03-xournalpp-about.jpg",
+  "sourceBuildReproducibilityVerified": false
+}
