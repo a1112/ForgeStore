@@ -1,0 +1,36 @@
+{
+  "applications": [
+    {
+      "firstAttempt": {
+        "cause": "Launcher path used TeXstudio but actual installed directory was texstudio on case-sensitive filesystem.",
+        "jobId": "job-1790702224230-8",
+        "status": "failed"
+      },
+      "guiFileOperation": "passed",
+      "id": "texstudio",
+      "installJobId": "job-1790702457484-9",
+      "launchJobId": "job-1790702501596-10",
+      "launcherSha256": "d037bba7ceec90ce2e3493181c7f6c19907baf25e3522a42979c4d070e962340",
+      "savedDocumentBytes": 87,
+      "savedDocumentSha256": "2a2bfb50d9f81b7c70fbbb83466f88cc90b49b096331c9b29ad1056f3fb06cd3",
+      "screenshotSha256": "d427d525ce23a45956fef224d817eead6ab91446bb4f77d57a47caa506933b02",
+      "sha256": "618c633e1ad6d9aba90ff8c4498d265b2cbfb6d02173d4577ca8ba3c989cc1e4",
+      "size": 154728568,
+      "version": "4.9.5"
+    }
+  ],
+  "date": "2026-09-30",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14; ordinary Linux UID 1000",
+  "licenseEvidence": [
+    "https://www.texstudio.org/",
+    "https://github.com/texstudio-org/texstudio/blob/4.9.5/src/texstudio.cpp",
+    "https://github.com/texstudio-org/texstudio/blob/4.9.5/COPYING"
+  ],
+  "limits": [
+    "No TeX distribution was installed; compilation and PDF output were not tested.",
+    "The project site and main source header say GPL v2 or later; the repository COPYING contains GPL v3 text.",
+    "Store-side signed activation must be verified after signing."
+  ],
+  "schemaVersion": 1,
+  "scope": "Official TeXstudio 4.9.5 Windows Qt6 installer and actual GUI file edit/save; local-market candidate only."
+}

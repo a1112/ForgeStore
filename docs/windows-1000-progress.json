@@ -94,6 +94,15 @@
       "signedCatalogue": "catalogue/candidate-v11/tuf",
       "limitation": "Reviewed classic appearance and cancellable preparing owner applied automatically. Fresh GUI ZIP create/extract, ASCII/Chinese byte equality, Settings captions, signed local cached update, updated GUI extraction, rollback/reopen and restart passed. Earlier command guard rejection remains unresolved; encryption/other formats, fresh-machine recipe registration, online download and cross-version upgrade unverified.",
       "publication": "docs/evidence/2026-10-01-peazip-publication.json"
+    },
+    {
+      "id": "doublecmd",
+      "version": "1.2.9",
+      "sha256": "3824250b280d1eaefe6422690bb6a0fc652aa8006545c05a63f9d2e1cababfd4",
+      "evidence": "docs/evidence/windows-doublecmd-20261002.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v12/tuf",
+      "publication": "docs/evidence/2026-10-02-doublecmd-publication.json",
+      "limitation": "GUI copy/rename, Chinese viewer, exit/reopen, verified-cache market update repeated workflow, rollback original output/reopen and restart passed. Existing per-bottle classic appearance used. Archives/plugins/FTP/network shares, guest online download, fresh registration and cross-version upgrade unverified."
     }
   ],
   "queue": [
@@ -221,22 +230,23 @@
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
   "next": "review-next-fixed-official-windows-artifact-and-license; retain-all-blocked-candidates",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-10-01",
+  "lastReviewed": "2026-10-02",
   "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 11,
+    "acceptedLocalMarket": 12,
     "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
   },
   "activeLocalMarket": {
-    "acceptedDistinctWindowsApps": 11,
-    "catalogueEntries": 13,
+    "signedCatalogue": "catalogue/candidate-v12/tuf",
+    "metadataVersion": 21,
+    "catalogueEntries": 14,
+    "acceptedDistinctWindowsApps": 12,
     "excludedFixtures": 2,
-    "metadataVersion": 20,
-    "publicationEvidence": "docs/evidence/2026-10-01-peazip-publication.json",
-    "signedCatalogue": "catalogue/candidate-v11/tuf",
-    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "publicationEvidence": "docs/evidence/2026-10-02-doublecmd-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261001-kate-pending.md"
+  "lastReviewEvidence": "docs/windows-rolling-20261002-doublecmd.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-02-rolling-vm-recovery.json"
 }

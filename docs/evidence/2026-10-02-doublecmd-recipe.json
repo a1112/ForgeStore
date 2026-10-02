@@ -1,0 +1,32 @@
+{
+  "bottleId": "gui-doublecmd",
+  "category": "utilities",
+  "compatibilityRating": "unknown",
+  "id": "doublecmd",
+  "installer": {
+    "arguments": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/DIR=C:\\DoubleCommander"
+    ],
+    "fileName": "doublecmd-1.2.9.x86_64-win64.exe",
+    "sha256": "3824250b280d1eaefe6422690bb6a0fc652aa8006545c05a63f9d2e1cababfd4"
+  },
+  "launchers": [
+    {
+      "executable": "DoubleCommander/doublecmd.exe",
+      "id": "main",
+      "name": "Double Commander"
+    }
+  ],
+  "name": "Double Commander",
+  "publisher": "Double Commander Project",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000"
+  ],
+  "version": "1.2.9",
+  "wineAppearance": "classic"
+}

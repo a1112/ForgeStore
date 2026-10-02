@@ -1,0 +1,203 @@
+{
+  "wrapperSha256": "8b7172764afd6c4b1c29ba19cd124710ce59402cb97c7cc5eefea513fc43b909",
+  "wrapperSource": "import importlib.util,json\nfrom pathlib import Path\nspec=importlib.util.spec_from_file_location('existing_vm_harness','/srv/forge-apps-build/sources/forgeos-task4-committed/tools/qemu_daily_vm.py')\nm=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)\nexpected=json.loads(Path('/srv/forge-apps-fast/lab/apps-v12-final/run-ba8c3b8f770240cea047dbd8c19b8d4f/started.json').read_text())['command']\noriginal=m.qemu_command\ndef reviewed_command(*args,**kwargs):\n command=original(*args,**kwargs)\n i=command.index('-netdev')+1\n assert command[i]=='user,id=net0'\n command[i]=expected[expected.index('-netdev')+1]\n def normalized(c):\n  c=c.copy()\n  c[c.index('-serial')+1]='SERIAL'\n  c[c.index('-qmp')+1]='QMP'\n  return c\n assert normalized(command)==normalized(expected),(command,expected)\n return command\nm.qemu_command=reviewed_command\ndef reviewed_chain(instance,metadata,image_tool='qemu-img'):\n import subprocess\n assert metadata['instance_id']=='d37397c7-dcee-4d83-b6d2-3b7628de1cba'\n assert metadata['base_size']==21474836480\n assert metadata['base_sha256']=='59715e4b286d40d4597f7dadca3d2866b4d836608568c06e6b88d67f5ab546ca'\n result=subprocess.run([image_tool,'info','--output=json','--backing-chain',str(instance/'disk.qcow2')],check=True,text=True,capture_output=True)\n assert len(result.stdout)<=65536\n chain=json.loads(result.stdout)\n assert isinstance(chain,list) and len(chain)==2 and all(isinstance(x,dict) for x in chain)\n overlay,base=chain\n assert overlay.get('filename')==str(instance/'disk.qcow2')\n assert overlay.get('format')=='qcow2'\n assert overlay.get('full-backing-filename')==metadata['base'] and overlay.get('backing-filename')==metadata['base']\n assert overlay.get('backing-filename-format')=='raw'\n assert overlay.get('virtual-size')==42949672960\n assert base.get('format')=='raw' and base.get('filename')==metadata['base']\n assert base.get('virtual-size')==metadata['base_size'] and 'backing-filename' not in base\n assert not overlay.get('format-specific',{}).get('data',{}).get('corrupt',False)\n print('CAPACITY_RESUME_VALIDATED overlay=42949672960 base=21474836480 approved=2026-09-30-rolling-capacity.json',flush=True)\n return chain\nm.inspect_chain=reviewed_chain\nm.start_instance(Path('/srv/forge-apps-fast/lab/apps-v12-final'),cpus=2,accelerator='kvm',audio='none')\n",
+  "current": {
+    "instance_id": "d37397c7-dcee-4d83-b6d2-3b7628de1cba",
+    "qemu_pid": 4990,
+    "run": "run-96228816ac6c4b24a29f6d896952a018",
+    "supervisor_pid": 4965
+  },
+  "units": {
+    "forge-windows-rolling-vm-20261002-capacity.service": "active",
+    "forge-windows-rolling-novnc-20261002.service": "active"
+  },
+  "qemuOwner": "fosdev   qemu-system-x86",
+  "started": {
+    "accelerator": {
+      "enabled": true,
+      "present": true
+    },
+    "audio": "emulated-hda-none-no-host-playback",
+    "base_readonly": true,
+    "base_sha256": "59715e4b286d40d4597f7dadca3d2866b4d836608568c06e6b88d67f5ab546ca",
+    "clipboard": "disabled",
+    "command": [
+      "qemu-system-x86_64",
+      "-name",
+      "forge-daily-d37397c7-dcee-4d83-b6d2-3b7628de1cba",
+      "-machine",
+      "q35,accel=kvm",
+      "-smp",
+      "2",
+      "-m",
+      "4G",
+      "-S",
+      "-cpu",
+      "host",
+      "-drive",
+      "if=pflash,format=raw,readonly=on,file=/srv/forge-apps-fast/lab/apps-v12-final/OVMF_CODE.fd",
+      "-drive",
+      "if=pflash,format=raw,file=/srv/forge-apps-fast/lab/apps-v12-final/OVMF_VARS.fd",
+      "-blockdev",
+      "{\"driver\":\"file\",\"node-name\":\"base-file\",\"filename\":\"/srv/forge-apps-fast/images/forgeos-store-final-v12.raw\",\"read-only\":true}",
+      "-blockdev",
+      "{\"driver\":\"raw\",\"node-name\":\"base\",\"file\":\"base-file\",\"read-only\":true}",
+      "-blockdev",
+      "{\"driver\":\"file\",\"node-name\":\"overlay-file\",\"filename\":\"/srv/forge-apps-fast/lab/apps-v12-final/disk.qcow2\"}",
+      "-blockdev",
+      "{\"driver\":\"qcow2\",\"node-name\":\"os\",\"file\":\"overlay-file\",\"backing\":\"base\"}",
+      "-device",
+      "virtio-blk-pci,drive=os",
+      "-vga",
+      "none",
+      "-device",
+      "virtio-vga",
+      "-device",
+      "qemu-xhci",
+      "-device",
+      "usb-tablet",
+      "-display",
+      "none",
+      "-vnc",
+      "unix:/srv/forge-apps-fast/lab/apps-v12-final/vnc.sock",
+      "-netdev",
+      "user,id=net0,hostfwd=tcp:127.0.0.1:2254-:22",
+      "-device",
+      "virtio-net-pci,netdev=net0",
+      "-audiodev",
+      "none,id=audio0",
+      "-device",
+      "ich9-intel-hda",
+      "-device",
+      "hda-duplex,audiodev=audio0",
+      "-serial",
+      "file:/srv/forge-apps-fast/lab/apps-v12-final/run-96228816ac6c4b24a29f6d896952a018/serial.log",
+      "-qmp",
+      "unix:/srv/forge-apps-fast/lab/apps-v12-final/run-96228816ac6c4b24a29f6d896952a018/qmp.sock,server=on,wait=off"
+    ],
+    "network": "user-nat-no-hostfwd",
+    "vnc_socket": "/srv/forge-apps-fast/lab/apps-v12-final/vnc.sock"
+  },
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "capacityApprovalEvidence": "2026-09-30-rolling-capacity.json",
+  "beforeNewCandidate": {
+    "market": {
+      "katePublished": false,
+      "catalogueEntries": 13,
+      "fullJobCount": 38,
+      "fullJobRecordsSha256": "8dc0ca2af840952c923df2ea4797d50868ccc378e12f737ce875c152b65b7c13",
+      "installedPreserved": true,
+      "installedIds": [
+        "7zip",
+        "geany",
+        "kdiff3",
+        "krita",
+        "notepad-plus-plus",
+        "org.forgeos.storefixture",
+        "org.forgeos.storefixture-flatpak",
+        "peazip",
+        "sqlitestudio",
+        "sumatrapdf",
+        "texstudio",
+        "vlc",
+        "winmerge"
+      ],
+      "tufState": {
+        "timestamp.json": 20,
+        "root.json": 1,
+        "snapshot.json": 20,
+        "targets.json": 20
+      },
+      "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "catalogueBinding": "candidate-v11"
+    },
+    "services": {
+      "compatforge.service": "active",
+      "forge-store.service": "active"
+    },
+    "peazipCore": {
+      "selectedGeneration": "gen-job-1790781229872-2",
+      "wineAppearance": "classic",
+      "marketInstall": {
+        "id": "job-1790787576467-3",
+        "generationId": "gen-job-1790787576467-3",
+        "status": "succeeded",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 424128,
+            "requestId": "job-1790787576467-3",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 6847,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790787576467-3/prefix",
+            "requestId": "job-1790787576467-3",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 6889,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1790787576467-3",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ]
+      },
+      "generationStates": {
+        "gen-job-1790755724792-27": "ready",
+        "gen-job-1790781085831-1": "cancelled",
+        "gen-job-1790781229872-2": "ready",
+        "gen-job-1790781753689-3": "cancelled",
+        "gen-job-1790787576467-3": "ready"
+      },
+      "allCoreJobsTerminal": true,
+      "originalContextPreserved": true,
+      "servicesActive": true,
+      "tufPersistedMetadataVersions": {
+        "timestamp.json": 20,
+        "root.json": 1,
+        "snapshot.json": 20,
+        "targets.json": 20
+      }
+    }
+  },
+  "failures": [
+    {
+      "stage": "builder SSH",
+      "result": "Original 172.25.250.176 timeout after host restart; authenticated same pinned host at 172.17.219.31 obtained from Hyper-V NIC MAC and neighbor table."
+    },
+    {
+      "stage": "nested VM",
+      "result": "Prior process IDs stale; disk and original firmware/base preserved, inner 2254 refused."
+    },
+    {
+      "stage": "user transient supervisor",
+      "result": "Stopped during base verification when final SSH session closed, Linger=no; no guest started. Linger unchanged."
+    },
+    {
+      "stage": "system supervisor under fosdev",
+      "result": "Old harness rejected legitimate 40 GiB overlay against 20 GiB raw base. Prior capacity evidence used for closed exact-instance chain validation."
+    },
+    {
+      "stage": "guest RPC before graphical login",
+      "result": "CompatForge inactive and DISPLAY/XAUTHORITY absent; RPC socket missing. Existing authorized Linux login restored session and existing units; no credential/security setting changes."
+    }
+  ],
+  "notes": [
+    "Same approved base SHA, firmware SHA, exact instance, 2-layer qcow2/raw chain and 40 GiB capacity; no resizing, rebasing, reinitialization or deletion.",
+    "Wrapper preserves original private-path checks, full base digest verification, firmware checks and verification of read-only base through QMP. Exact old argv compared except current run serial/QMP paths; same loopback hostfwd 2254, Unix VNC socket.",
+    "started.json network label remains original harness default user-nat-no-hostfwd and is inaccurate for this resumed argv. The actual command above contains the unchanged loopback 2254 mapping.",
+    "System transient units keep supervisor/websockify alive after SSH logout, while processes run as fosdev. They are not enabled boot services; restart recovery remains operational and manual.",
+    "Local noVNC SSH tunnel bound 127.0.0.1:6096. Existing host-key validation retained. Signing key and login password not copied to source."
+  ]
+}
