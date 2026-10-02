@@ -1,0 +1,65 @@
+{
+  "officialPage": "https://inkscape.org/release/inkscape-1.4.4/windows/64-bit/",
+  "downloadPage": "https://inkscape.org/release/inkscape-1.4.4/windows/64-bit/exe/dl/",
+  "resolvedPage": "https://inkscape.org/release/inkscape-1.4.4/windows/64-bit/exe/dl/",
+  "tag": "INKSCAPE_1_4_4",
+  "commit": "dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871",
+  "references": [
+    {
+      "path": "COPYING",
+      "url": "https://gitlab.com/api/v4/projects/inkscape%2Finkscape/repository/files/COPYING/raw?ref=dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871",
+      "sha256": "6dade9d083ebec650d74dcfcdd93e9646214113eb1ecd1e8a9c3bf2dad91481e",
+      "sizeBytes": 1814
+    },
+    {
+      "path": "share/doc/LICENSE",
+      "url": "https://gitlab.com/api/v4/projects/inkscape%2Finkscape/repository/files/share%2Fdoc%2FLICENSE/raw?ref=dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871",
+      "sha256": "534200aff254864912ae0387543f2268f5bd77dece6f3900dbbff8b1826fc835",
+      "sizeBytes": 1234
+    },
+    {
+      "path": "packaging/win32/inkscape.nsi",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "CMakeScripts/CPack.cmake",
+      "url": "https://gitlab.com/api/v4/projects/inkscape%2Finkscape/repository/files/CMakeScripts%2FCPack.cmake/raw?ref=dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871",
+      "sizeBytes": 1046,
+      "sha256": "bd9456042e6dde1c34267a86f64e8903ce143c02a300ee2c35f87de7acc3c86c"
+    }
+  ],
+  "sourceUrl": "https://inkscape.org/gallery/item/59502/inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe",
+  "resolvedArtifactUrl": "https://media.inkscape.org/dl/resources/file/inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe",
+  "fileName": "inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe",
+  "sizeBytes": 118507928,
+  "sha256": "fa21d25e56dbfe41e9b014a4f37689edda4bb41d5a3597fe2787dff6c10e651f",
+  "upstreamSha256Url": "https://media.inkscape.org/media/resources/sigs/inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe.sha256",
+  "upstreamDigestMatched": true,
+  "license": "GPL-3.0-or-later; bundled component notices apply",
+  "licenseBasis": "Pinned release COPYING explicitly licenses complete binaries as GPL v3 or later; bundled LICENSE says v3.",
+  "artifactVerified": true,
+  "authenticodeVerified": false,
+  "buildReproducibilityVerified": false,
+  "reviewFailures": [
+    "Web fetch returned 403; local HTTPS request succeeded with normal certificate verification.",
+    "Assumed packaging/win32/inkscape.nsi does not exist (404); authoritative source tree will be used.",
+    "Host Python lacks hashlib.file_digest; complete downloaded bytes retained and then verified using a streaming SHA-256 loop."
+  ],
+  "installerMarker": {
+    "name": "NullsoftInst",
+    "offset": 457224
+  },
+  "applicationId": "inkscape",
+  "version": "1.4.4",
+  "installedLicense": {
+    "COPYING": {
+      "sha256": "ee286a57243ee0f50de9e0f904a92d5f2ad6456ab3665938e8a18da0175001ea",
+      "sizeBytes": 1849
+    },
+    "LICENSE": {
+      "sha256": "d9f6312a9e13b9cb95b0f175a45cc371121dcebbadfba457c9570ea13885e99e",
+      "sizeBytes": 1246
+    }
+  },
+  "installedLicenseTextEqualsPinnedSourceAfterNewlineDecoding": true
+}

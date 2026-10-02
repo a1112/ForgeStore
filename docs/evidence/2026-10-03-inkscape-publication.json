@@ -1,0 +1,788 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "inkscape",
+  "version": "1.4.4",
+  "activation": {
+    "activated": true,
+    "metadataVersion": 24,
+    "catalogueEntries": 17,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "jobsPreserved": true,
+    "fullJobCount": 44,
+    "fullJobRecordsSha256": "40a263e0bf505814fbe62b7ba3330c197d8cbe6318d7854ef59ea94c5f6f227b",
+    "historicalInterruptedJobs": [],
+    "previousInstalledPreserved": true,
+    "installedBefore": [
+      {
+        "appId": "7zip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "26.01"
+      },
+      {
+        "appId": "doublecmd",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.2.9"
+      },
+      {
+        "appId": "geany",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.1"
+      },
+      {
+        "appId": "kdiff3",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.12.4"
+      },
+      {
+        "appId": "krita",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "5.3.4"
+      },
+      {
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "8.9.6.2"
+      },
+      {
+        "appId": "peazip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "11.3.0"
+      },
+      {
+        "appId": "sqlitestudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.4.17"
+      },
+      {
+        "appId": "speedcrunch",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "0.12"
+      },
+      {
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.6.1"
+      },
+      {
+        "appId": "texstudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "4.9.5"
+      },
+      {
+        "appId": "vlc",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.0.23"
+      },
+      {
+        "appId": "winmerge",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.16.58.2"
+      },
+      {
+        "appId": "xournalpp",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.3.8"
+      },
+      {
+        "appId": "org.forgeos.storefixture-flatpak",
+        "backend": "flatpak",
+        "canRollback": false,
+        "version": ""
+      },
+      {
+        "appId": "org.forgeos.storefixture",
+        "backend": "forge-package",
+        "canRollback": true,
+        "version": "SHA-256 20802d45b911"
+      }
+    ],
+    "installedAfter": [
+      {
+        "appId": "7zip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "26.01"
+      },
+      {
+        "appId": "doublecmd",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.2.9"
+      },
+      {
+        "appId": "geany",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.1"
+      },
+      {
+        "appId": "inkscape",
+        "backend": "compatforge",
+        "canRollback": false,
+        "version": "1.4.4"
+      },
+      {
+        "appId": "kdiff3",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.12.4"
+      },
+      {
+        "appId": "krita",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "5.3.4"
+      },
+      {
+        "appId": "notepad-plus-plus",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "8.9.6.2"
+      },
+      {
+        "appId": "peazip",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "11.3.0"
+      },
+      {
+        "appId": "sqlitestudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.4.17"
+      },
+      {
+        "appId": "speedcrunch",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "0.12"
+      },
+      {
+        "appId": "sumatrapdf",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.6.1"
+      },
+      {
+        "appId": "texstudio",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "4.9.5"
+      },
+      {
+        "appId": "vlc",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "3.0.23"
+      },
+      {
+        "appId": "winmerge",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "2.16.58.2"
+      },
+      {
+        "appId": "xournalpp",
+        "backend": "compatforge",
+        "canRollback": true,
+        "version": "1.3.8"
+      },
+      {
+        "appId": "org.forgeos.storefixture-flatpak",
+        "backend": "flatpak",
+        "canRollback": false,
+        "version": ""
+      },
+      {
+        "appId": "org.forgeos.storefixture",
+        "backend": "forge-package",
+        "canRollback": true,
+        "version": "SHA-256 20802d45b911"
+      }
+    ],
+    "installedIds": [
+      "7zip",
+      "doublecmd",
+      "geany",
+      "inkscape",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "speedcrunch",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge",
+      "xournalpp"
+    ],
+    "inkscape": {
+      "compatibility": {
+        "evidence": "windows-inkscape-20261003.acceptance.json#inkscape",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "fa21d25e56dbfe41e9b014a4f37689edda4bb41d5a3597fe2787dff6c10e651f",
+          "size": 118507928,
+          "target": "inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe",
+          "url": "https://inkscape.org/gallery/item/59502/inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "inkscape"
+      },
+      "id": "inkscape",
+      "license": "GPL-3.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "Inkscape",
+        "zhCN": "Inkscape"
+      },
+      "origin": "https://inkscape.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Inkscape Project",
+      "summary": {
+        "en": "Vector graphics editor",
+        "zhCN": "Vector graphics editor"
+      },
+      "version": "1.4.4"
+    }
+  },
+  "updatedGuiStarted": {
+    "storeJob": {
+      "action": "update",
+      "appId": "inkscape",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "b8ea0739-b8c0-40ad-90a6-93e94b4205a3",
+      "state": "succeeded"
+    },
+    "selectedGeneration": "gen-job-1790973033474-26",
+    "generation": {
+      "bottleId": "gen-job-1790973033474-26",
+      "createdAtMilliseconds": 1790973033479,
+      "definition": {
+        "bottleId": "gui-inkscape",
+        "category": "graphics",
+        "compatibilityRating": "unknown",
+        "id": "inkscape",
+        "installer": {
+          "arguments": [
+            "/S",
+            "/D=C:\\Inkscape"
+          ],
+          "fileName": "inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe",
+          "sha256": "fa21d25e56dbfe41e9b014a4f37689edda4bb41d5a3597fe2787dff6c10e651f"
+        },
+        "launchers": [
+          {
+            "executable": "Inkscape/bin/inkscape.exe",
+            "id": "main",
+            "name": "Inkscape"
+          }
+        ],
+        "name": "Inkscape",
+        "publisher": "The Inkscape Project",
+        "schemaVersion": "1",
+        "tags": [
+          "rolling-1000"
+        ],
+        "version": "1.4.4"
+      },
+      "definitionDigest": "sha256:7fcac7308d67b05d24caaee38fc1c7f003629dd35e8f3865bb599cd0d33f2ea2",
+      "id": "gen-job-1790973033474-26",
+      "launcherDigests": {
+        "main": "sha256:afef2f49862a87da96348cc80f07a4ee55ca159f86ea64753aa163044e2a1d92"
+      },
+      "runtime": {
+        "binding": {
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINESERVER": "/usr/bin/wineserver"
+          },
+          "executable": "/usr/bin/wine",
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "providerId": "wine-linux-x86-64-preview",
+          "wineserverExecutable": "/usr/bin/wineserver"
+        },
+        "selection": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "version": "11.14"
+      },
+      "status": "ready",
+      "updatedAtMilliseconds": 1790973057929
+    },
+    "guiJobId": "job-1790973078812-27",
+    "status": "running",
+    "copiedFixtureSha256": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+    "fixtureCopiedNotCreatedByUpdatedGui": true,
+    "newOutputsAbsentBeforeGui": true,
+    "remainingDiskBytes": 1011609600
+  },
+  "updatedFilesVerified": {
+    "selectedGeneration": "gen-job-1790973033474-26",
+    "files": {
+      "updated.png": {
+        "sizeBytes": 16989,
+        "sha256": "7b7ecef8c4d7b5e4dfdd906faa3c307dbe583e12377fe0cfc8d77ce507253b41",
+        "width": 794,
+        "height": 1123
+      },
+      "updated.svg": {
+        "sizeBytes": 2198,
+        "sha256": "94cc3f45cd965a32333e6d60eec2da3f8631cbfcf06b35d76ba085c244716e3d",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n   id=\"svg1\"\n   inkscape:version=\"1.4.4 (dcaf3e7, 2026-05-05)\"\n   sodipodi:docname=\"updated.svg\"\n   inkscape:export-filename=\"updated.png\"\n   inkscape:export-xdpi=\"96\"\n   inkscape:export-ydpi=\"96\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\">\n  <sodipodi:namedview\n     id=\"namedview1\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#000000\"\n     borderopacity=\"0.25\"\n     inkscape:showpageshadow=\"2\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pagecheckerboard=\"0\"\n     inkscape:deskcolor=\"#d1d1d1\"\n     inkscape:document-units=\"mm\"\n     inkscape:zoom=\"0.43028199\"\n     inkscape:cx=\"396.25177\"\n     inkscape:cy=\"563.5839\"\n     inkscape:window-width=\"1280\"\n     inkscape:window-height=\"726\"\n     inkscape:window-x=\"-4\"\n     inkscape:window-y=\"-2\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"layer1\" />\n  <defs\n     id=\"defs1\" />\n  <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n    <rect\n       style=\"fill:#ff0000;stroke-width:0.264583\"\n       id=\"rect1\"\n       width=\"126.67081\"\n       height=\"56.57143\"\n       x=\"27.670807\"\n       y=\"48.577637\" />\n    <ellipse\n       style=\"fill:#0000ff;stroke-width:0.264583\"\n       id=\"path1\"\n       cx=\"107.60869\"\n       cy=\"171.25154\"\n       rx=\"60.260868\"\n       ry=\"43.965839\" />\n    <text\n       xml:space=\"preserve\"\n       style=\"font-size:14.1111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583\"\n       x=\"27.670807\"\n       y=\"253.34161\"\n       id=\"text1\"><tspan\n         sodipodi:role=\"line\"\n         id=\"tspan1\"\n         style=\"stroke-width:0.264583\"\n         x=\"27.670807\"\n         y=\"253.34161\">Forge 15</tspan></text>\n    <rect\n       style=\"fill:#00ff00;stroke-width:0.264583\"\n       id=\"rect2\"\n       width=\"110.06832\"\n       height=\"19.677019\"\n       x=\"27.670807\"\n       y=\"15.37267\" />\n  </g>\n</svg>\n",
+        "svgAttributes": {
+          "width": "210mm",
+          "height": "297mm",
+          "viewBox": "0 0 210 297",
+          "version": "1.1",
+          "id": "svg1",
+          "{http://www.inkscape.org/namespaces/inkscape}version": "1.4.4 (dcaf3e7, 2026-05-05)",
+          "{http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}docname": "updated.svg",
+          "{http://www.inkscape.org/namespaces/inkscape}export-filename": "updated.png",
+          "{http://www.inkscape.org/namespaces/inkscape}export-xdpi": "96",
+          "{http://www.inkscape.org/namespaces/inkscape}export-ydpi": "96"
+        },
+        "objects": [
+          {
+            "tag": "rect",
+            "attributes": {
+              "style": "fill:#ff0000;stroke-width:0.264583",
+              "id": "rect1",
+              "width": "126.67081",
+              "height": "56.57143",
+              "x": "27.670807",
+              "y": "48.577637"
+            },
+            "text": ""
+          },
+          {
+            "tag": "ellipse",
+            "attributes": {
+              "style": "fill:#0000ff;stroke-width:0.264583",
+              "id": "path1",
+              "cx": "107.60869",
+              "cy": "171.25154",
+              "rx": "60.260868",
+              "ry": "43.965839"
+            },
+            "text": ""
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+              "style": "font-size:14.1111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583",
+              "x": "27.670807",
+              "y": "253.34161",
+              "id": "text1"
+            },
+            "text": "Forge 15"
+          },
+          {
+            "tag": "rect",
+            "attributes": {
+              "style": "fill:#00ff00;stroke-width:0.264583",
+              "id": "rect2",
+              "width": "110.06832",
+              "height": "19.677019",
+              "x": "27.670807",
+              "y": "15.37267"
+            },
+            "text": ""
+          }
+        ]
+      },
+      "verified.svg": {
+        "sizeBytes": 2028,
+        "sha256": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+        "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n   id=\"svg1\"\n   inkscape:version=\"1.4.4 (dcaf3e7, 2026-05-05)\"\n   sodipodi:docname=\"verified.svg\"\n   inkscape:export-filename=\"verified.png\"\n   inkscape:export-xdpi=\"96\"\n   inkscape:export-ydpi=\"96\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\">\n  <sodipodi:namedview\n     id=\"namedview1\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#000000\"\n     borderopacity=\"0.25\"\n     inkscape:showpageshadow=\"2\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pagecheckerboard=\"0\"\n     inkscape:deskcolor=\"#d1d1d1\"\n     inkscape:document-units=\"mm\"\n     inkscape:zoom=\"0.43028199\"\n     inkscape:cx=\"396.25177\"\n     inkscape:cy=\"561.25984\"\n     inkscape:window-width=\"1280\"\n     inkscape:window-height=\"726\"\n     inkscape:window-x=\"-4\"\n     inkscape:window-y=\"-2\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"layer1\" />\n  <defs\n     id=\"defs1\" />\n  <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n    <rect\n       style=\"fill:#ff0000;stroke-width:0.264583\"\n       id=\"rect1\"\n       width=\"126.67081\"\n       height=\"56.57143\"\n       x=\"27.670807\"\n       y=\"48.577637\" />\n    <ellipse\n       style=\"fill:#0000ff;stroke-width:0.264583\"\n       id=\"path1\"\n       cx=\"107.60869\"\n       cy=\"171.25154\"\n       rx=\"60.260868\"\n       ry=\"43.965839\" />\n    <text\n       xml:space=\"preserve\"\n       style=\"font-size:14.1111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583\"\n       x=\"27.670807\"\n       y=\"253.34161\"\n       id=\"text1\"><tspan\n         sodipodi:role=\"line\"\n         id=\"tspan1\"\n         style=\"stroke-width:0.264583\"\n         x=\"27.670807\"\n         y=\"253.34161\">Forge 15</tspan></text>\n  </g>\n</svg>\n",
+        "svgAttributes": {
+          "width": "210mm",
+          "height": "297mm",
+          "viewBox": "0 0 210 297",
+          "version": "1.1",
+          "id": "svg1",
+          "{http://www.inkscape.org/namespaces/inkscape}version": "1.4.4 (dcaf3e7, 2026-05-05)",
+          "{http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}docname": "verified.svg",
+          "{http://www.inkscape.org/namespaces/inkscape}export-filename": "verified.png",
+          "{http://www.inkscape.org/namespaces/inkscape}export-xdpi": "96",
+          "{http://www.inkscape.org/namespaces/inkscape}export-ydpi": "96"
+        },
+        "objects": [
+          {
+            "tag": "rect",
+            "attributes": {
+              "style": "fill:#ff0000;stroke-width:0.264583",
+              "id": "rect1",
+              "width": "126.67081",
+              "height": "56.57143",
+              "x": "27.670807",
+              "y": "48.577637"
+            },
+            "text": ""
+          },
+          {
+            "tag": "ellipse",
+            "attributes": {
+              "style": "fill:#0000ff;stroke-width:0.264583",
+              "id": "path1",
+              "cx": "107.60869",
+              "cy": "171.25154",
+              "rx": "60.260868",
+              "ry": "43.965839"
+            },
+            "text": ""
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+              "style": "font-size:14.1111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583",
+              "x": "27.670807",
+              "y": "253.34161",
+              "id": "text1"
+            },
+            "text": "Forge 15"
+          }
+        ]
+      }
+    },
+    "pixelValidation": {
+      "greenPixels": 30295,
+      "redPixels": 101814,
+      "bluePixels": 119944,
+      "changedPixels": 31275,
+      "changedPixelBounds": [
+        104,
+        58,
+        520,
+        132
+      ],
+      "everyChangedPixelIsGreenOverPreviouslyTransparentPixel": true
+    }
+  },
+  "updatedGuiTerminal": {
+    "id": "job-1790973078812-27",
+    "generationId": "gen-job-1790973033474-26",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 15182,
+        "requestId": "job-1790973078812-27",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 380687,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790973033474-26/prefix",
+        "requestId": "job-1790973078812-27",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 380728,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1790973078812-27",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "updatedExplicitLoadReopenTerminal": {
+    "reopenedGuiJob": {
+      "id": "job-1790973480852-28",
+      "generationId": "gen-job-1790973033474-26",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 15586,
+          "requestId": "job-1790973480852-28",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 86327,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790973033474-26/prefix",
+          "requestId": "job-1790973480852-28",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 86368,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790973480852-28",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "allCoreJobsTerminal": true,
+    "updatedFilesUnchanged": {
+      "verified.svg": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+      "updated.svg": "94cc3f45cd965a32333e6d60eec2da3f8631cbfcf06b35d76ba085c244716e3d",
+      "updated.png": "7b7ecef8c4d7b5e4dfdd906faa3c307dbe583e12377fe0cfc8d77ce507253b41"
+    }
+  },
+  "rollbackGuiStarted": {
+    "storeRollbackJob": {
+      "action": "rollback",
+      "appId": "inkscape",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "8e6f1cd3-f69d-47ce-ba9a-7683ba77f137",
+      "state": "succeeded"
+    },
+    "selectedGeneration": "gen-job-1790971324958-23",
+    "guiJobId": "job-1790973609674-29",
+    "status": "running",
+    "originalSvgAndPngUnchanged": true
+  },
+  "final": {
+    "rollbackGuiJob": {
+      "id": "job-1790973609674-29",
+      "generationId": "gen-job-1790971324958-23",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 15877,
+          "requestId": "job-1790973609674-29",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 75340,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790971324958-23/prefix",
+          "requestId": "job-1790973609674-29",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 75382,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790973609674-29",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "allCoreJobsTerminal": true,
+    "selectedGeneration": "gen-job-1790971324958-23",
+    "generationStatuses": {
+      "gen-job-1790971324958-23": "ready",
+      "gen-job-1790973033474-26": "ready"
+    },
+    "filesUnchanged": {
+      "gen-job-1790971324958-23/verified.svg": {
+        "sha256": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+        "sizeBytes": 2028
+      },
+      "gen-job-1790971324958-23/verified.png": {
+        "sha256": "54eb0299584dda306b50982172770b8a19f7235b6fb64cf7b8fcda484ced80d8",
+        "sizeBytes": 16939
+      },
+      "gen-job-1790971324958-23/vector.svg": {
+        "sha256": "489702595aa25858f758e54f77f9f521e186e36d9866d01339ca925d904f5bc8",
+        "sizeBytes": 2722
+      },
+      "gen-job-1790971324958-23/verified.jpg": {
+        "sha256": "2e8c70d2376be6ee77be676c437799c04465edda50e90132e31ffeb104d6b1d5",
+        "sizeBytes": 23989
+      },
+      "gen-job-1790973033474-26/verified.svg": {
+        "sha256": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+        "sizeBytes": 2028
+      },
+      "gen-job-1790973033474-26/updated.svg": {
+        "sha256": "94cc3f45cd965a32333e6d60eec2da3f8631cbfcf06b35d76ba085c244716e3d",
+        "sizeBytes": 2198
+      },
+      "gen-job-1790973033474-26/updated.png": {
+        "sha256": "7b7ecef8c4d7b5e4dfdd906faa3c307dbe583e12377fe0cfc8d77ce507253b41",
+        "sizeBytes": 16989
+      }
+    },
+    "serviceRestarted": true,
+    "snapshotAndFullRowsEqualAfterRestart": true,
+    "historicalRowsUnchanged": true,
+    "previousJobCount": 44,
+    "fullJobCount": 46,
+    "fullJobRecordsSha256": "e137eb4fe2c64c1f2b84ef4594ab3380a6ec409d8ee919ba70f43768fe3c4238",
+    "catalogueEntries": 17,
+    "installedIds": [
+      "7zip",
+      "doublecmd",
+      "geany",
+      "inkscape",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "speedcrunch",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge",
+      "xournalpp"
+    ],
+    "inkscape": {
+      "appId": "inkscape",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "1.4.4"
+    },
+    "tufMetadata": {
+      "timestamp.json": {
+        "version": 24,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "root.json": {
+        "version": 1,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "snapshot.json": {
+        "version": 24,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "targets.json": {
+        "version": 24,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      }
+    },
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "componentIdentities": {
+      "forge-store.service": {
+        "binary": "/home/forge/forge-rolling-20260929/bin/forge-store-service-bytes-1.11.1",
+        "sha256": "857d88c90cbc4384885fa19da0ff25fd9579fb8e241214ed640b8f99072a1f75"
+      },
+      "compatforge.service": {
+        "binary": "/home/forge/forge-rolling-20260929/bin/compatforge-cli-peazip-classic",
+        "sha256": "12c0404f79f2d063e2e5e71d42981ebbecd102b5770d363588f1e7c1a4938f62"
+      }
+    },
+    "guardSettingsPreserved": true,
+    "originalContextPreserved": true,
+    "cacheRawBytesPreservationClaimed": false,
+    "remainingDiskBytes": 1011273728
+  },
+  "localSignatureVerification": {
+    "tool": "tuftool 0.17 clone --metadata-only",
+    "exitCode": 0,
+    "trustedRoot": "candidate-v14 trusted-root.json",
+    "rootUnchanged": true,
+    "metadataVersion": 24,
+    "catalogueEntries": 17,
+    "receiptCount": 13,
+    "publicFileSha256": {
+      "metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "metadata/24.snapshot.json": "ed953cd9428599e3cbd14c49242ad3199d3a8c06736a7de36194fd2a5c947a4e",
+      "metadata/24.targets.json": "db3799a70c1ac3484e643a8bc23d9a0c93577b2dc3233f91dc73f885556d5eb8",
+      "metadata/timestamp.json": "6c889ec8a9b70b49c89591dadf8c3b16cca15626cac43a44bf1e5de357d2687a",
+      "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "targets/9b4866cd492b78f372fae70f2337e366f4996a452521ee323d05006d0d585f54.catalogue.json": "9b4866cd492b78f372fae70f2337e366f4996a452521ee323d05006d0d585f54",
+      "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    }
+  },
+  "screenshots": {
+    "2026-10-03-inkscape-market-rollback-reopened.jpg": "ff7e5f0e295781f814df3b65dfa86447d218b33d0b7e7280ed40315b4e5634a3",
+    "2026-10-03-inkscape-market-update-reopened.jpg": "b326f1ad3b2771b56092a6c2cb3f73356578438b95535a2264c4a0888ddce194",
+    "2026-10-03-inkscape-market-update.jpg": "9b1d1c38ec7d1dd1f0c85322242fe4d8c5ea5fa52039480f7d26b2c84fae21c4"
+  },
+  "exportPngEvidence": {
+    "original": {
+      "path": "2026-10-03-inkscape-export.png",
+      "sha256": "54eb0299584dda306b50982172770b8a19f7235b6fb64cf7b8fcda484ced80d8"
+    },
+    "updated": {
+      "path": "2026-10-03-inkscape-market-update.png",
+      "sha256": "7b7ecef8c4d7b5e4dfdd906faa3c307dbe583e12377fe0cfc8d77ce507253b41"
+    }
+  },
+  "limits": [
+    "Updated generation received a controlled copy of original verified.svg; this input was not GUI-created in the updated generation. GUI explicitly opened it, added a green rectangle, saved updated.svg and exported updated.png, then a new process explicitly opened updated.svg.",
+    "Original and updated reopen used explicit file chooser loading, not auto-history. Rollback selected original generation and explicitly loaded its original verified.svg; all seven checked files remained unchanged.",
+    "Verified-cache same-version update and installation-generation rollback; guest online download, fresh-machine registration, cross-version upgrades and remote public distribution unverified.",
+    "Authenticode, reproducible builds, advanced paths/filters/extensions/printing/tablets/Chinese text and other export formats unverified.",
+    "No application/engine code changed. Failed small-text/toolbar/menu/export attempts retained; modifier behavior cause not isolated.",
+    "TUF cache raw byte preservation not claimed; full parsed signed documents including signatures equal immutable public metadata."
+  ],
+  "nextCapacityAction": {
+    "remainingBytes": 1011273728,
+    "requiredBeforeNextNewInstallation": "Inspect and expand the existing isolated VM overlay and guest root while preserving current base image, generations, failures, market jobs and TUF trust.",
+    "status": "completed-after-publication",
+    "evidence": "2026-10-03-rolling-capacity.json",
+    "guestVirtualBytes": 137438953472,
+    "guestAvailableBytesAfter": 94008922112
+  }
+}

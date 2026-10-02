@@ -121,6 +121,15 @@
       "signedCatalogue": "catalogue/candidate-v14/tuf",
       "publication": "docs/evidence/2026-10-03-speedcrunch-publication.json",
       "limitation": "GUI exact arithmetic and JSON save/explicit load/reopen, verified-cache same-version market update with new calculation/save, auto-history reopen, original-generation rollback/reopen and service restart passed. Upstream installer digest, build reproducibility, advanced functions/units/complex numbers/localization, guest online download, fresh-machine registration and cross-version upgrade unverified. Initial wrong installer arguments cancelled and retained."
+    },
+    {
+      "id": "inkscape",
+      "version": "1.4.4",
+      "sha256": "fa21d25e56dbfe41e9b014a4f37689edda4bb41d5a3597fe2787dff6c10e651f",
+      "evidence": "docs/evidence/windows-inkscape-20261003.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v15/tuf",
+      "publication": "docs/evidence/2026-10-03-inkscape-publication.json",
+      "limitation": "GUI red rectangle/blue ellipse/ASCII text, SVG save/explicit load/reopen and PNG export; verified-cache same-version market update adds green rectangle/save/export/explicit reopen, original-generation rollback/explicit reopen and service restart passed. Official installer checksum matched. Failed input/export attempts retained. Authenticode, reproducibility, advanced paths/filters/extensions/printing/tablets/Chinese text, guest online download, fresh registration and cross-version upgrade unverified."
     }
   ],
   "queue": [
@@ -246,25 +255,26 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "review-next-fixed-official-windows-artifact-and-license; retain-all-blocked-candidates",
+  "next": "review-next-fixed-official-windows-artifact-and-license; retain-all-blocked-candidates; monitor-guest-and-host-physical-capacity",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-03",
-  "capacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
+  "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 14,
+    "acceptedLocalMarket": 15,
     "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v14/tuf",
-    "metadataVersion": 23,
-    "catalogueEntries": 16,
-    "acceptedDistinctWindowsApps": 14,
+    "signedCatalogue": "catalogue/candidate-v15/tuf",
+    "metadataVersion": 24,
+    "catalogueEntries": 17,
+    "acceptedDistinctWindowsApps": 15,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-03-speedcrunch-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-03-inkscape-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261003-speedcrunch.md",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json"
+  "lastReviewEvidence": "docs/windows-rolling-20261003-inkscape.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
+  "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json"
 }

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "inkscape",
+  "sourceReviewFailures": [
+    "Web fetch returned 403; local HTTPS request succeeded with normal certificate verification.",
+    "Assumed packaging/win32/inkscape.nsi does not exist (404); authoritative source tree will be used.",
+    "Host Python lacks hashlib.file_digest; complete downloaded bytes retained and then verified using a streaming SHA-256 loop."
+  ],
+  "harnessFailures": [
+    "Initial combined keyboard/tool switch and drag did not produce a rectangle; explicit toolbar selection then drawing passed.",
+    "Small initial text was incorrectly judged absent. Persisted initial SVG proves exact Forge 15 at font size 3.175; later failed numeric toolbar focus inserted 20/newline into text, and dragging with the text tool created a second flowed text object. A menu command assumed to be Revert actually saved this diagnostic SVG. Original bad vector.svg retained and a new blank document was drawn through GUI as verified.svg with exactly one rect, ellipse and Forge 15 text.",
+    "Control combinations and menu-name interpretation were not reliable in this noVNC/Wine workflow; concrete outcomes were checked, menus and highlighted native filename fields used. Exact cause of modifier behavior not isolated; not claimed as application repair.",
+    "Initial export chooser had SVG selected and prompted existing-file replacement. Cancelled. A later row was misread as PNG but exported verified.jpg. JPEG and unchanged SVG objects retained; the observed PNG item then produced verified.png with validated PNG magic, dimensions and pixels.",
+    "Default host Python has no PIL; bundled Python/Pillow used without installation. Export pixel checks passed; initial missing-module invocation did not perform validation."
+  ],
+  "initialSmallTextSvg": {
+    "sizeBytes": 1923,
+    "sha256": "a21098b882ae90f02fc694825a30e4bf03486cf78d53b978f0c017a48cc4b020",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n   id=\"svg1\"\n   inkscape:version=\"1.4.4 (dcaf3e7, 2026-05-05)\"\n   sodipodi:docname=\"vector.svg\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\">\n  <sodipodi:namedview\n     id=\"namedview1\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#000000\"\n     borderopacity=\"0.25\"\n     inkscape:showpageshadow=\"2\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pagecheckerboard=\"0\"\n     inkscape:deskcolor=\"#d1d1d1\"\n     inkscape:document-units=\"mm\"\n     inkscape:zoom=\"0.43028199\"\n     inkscape:cx=\"396.25177\"\n     inkscape:cy=\"561.25984\"\n     inkscape:window-width=\"1280\"\n     inkscape:window-height=\"726\"\n     inkscape:window-x=\"-4\"\n     inkscape:window-y=\"-2\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"layer1\" />\n  <defs\n     id=\"defs1\" />\n  <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n    <rect\n       style=\"fill:#ff0000;stroke-width:0.264583\"\n       id=\"rect1\"\n       width=\"126.67081\"\n       height=\"56.57143\"\n       x=\"27.670807\"\n       y=\"48.577637\" />\n    <ellipse\n       style=\"fill:#0000ff;stroke-width:0.264583\"\n       id=\"path1\"\n       cx=\"107.60869\"\n       cy=\"171.25154\"\n       rx=\"60.260868\"\n       ry=\"43.965839\" />\n    <text\n       xml:space=\"preserve\"\n       style=\"font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583\"\n       x=\"27.670807\"\n       y=\"253.34161\"\n       id=\"text1\"><tspan\n         sodipodi:role=\"line\"\n         id=\"tspan1\"\n         style=\"stroke-width:0.264583\"\n         x=\"27.670807\"\n         y=\"253.34161\">Forge 15</tspan></text>\n  </g>\n</svg>\n",
+    "svgAttributes": {
+      "width": "210mm",
+      "height": "297mm",
+      "viewBox": "0 0 210 297",
+      "version": "1.1",
+      "id": "svg1",
+      "{http://www.inkscape.org/namespaces/inkscape}version": "1.4.4 (dcaf3e7, 2026-05-05)",
+      "{http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}docname": "vector.svg"
+    },
+    "objects": [
+      {
+        "tag": "rect",
+        "attributes": {
+          "style": "fill:#ff0000;stroke-width:0.264583",
+          "id": "rect1",
+          "width": "126.67081",
+          "height": "56.57143",
+          "x": "27.670807",
+          "y": "48.577637"
+        },
+        "text": ""
+      },
+      {
+        "tag": "ellipse",
+        "attributes": {
+          "style": "fill:#0000ff;stroke-width:0.264583",
+          "id": "path1",
+          "cx": "107.60869",
+          "cy": "171.25154",
+          "rx": "60.260868",
+          "ry": "43.965839"
+        },
+        "text": ""
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+          "style": "font-size:3.175px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583",
+          "x": "27.670807",
+          "y": "253.34161",
+          "id": "text1"
+        },
+        "text": "Forge 15"
+      }
+    ]
+  },
+  "mistypedSvg": {
+    "path": "drive_c/users/forge/Documents/vector.svg",
+    "sizeBytes": 2722,
+    "sha256": "489702595aa25858f758e54f77f9f521e186e36d9866d01339ca925d904f5bc8",
+    "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n   id=\"svg1\"\n   inkscape:version=\"1.4.4 (dcaf3e7, 2026-05-05)\"\n   sodipodi:docname=\"vector.svg\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\">\n  <sodipodi:namedview\n     id=\"namedview1\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#000000\"\n     borderopacity=\"0.25\"\n     inkscape:showpageshadow=\"2\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pagecheckerboard=\"0\"\n     inkscape:deskcolor=\"#d1d1d1\"\n     inkscape:document-units=\"mm\"\n     inkscape:zoom=\"0.43028199\"\n     inkscape:cx=\"396.25177\"\n     inkscape:cy=\"561.25984\"\n     inkscape:window-width=\"1280\"\n     inkscape:window-height=\"726\"\n     inkscape:window-x=\"-4\"\n     inkscape:window-y=\"-2\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"layer1\" />\n  <defs\n     id=\"defs1\">\n    <rect\n       x=\"99.934465\"\n       y=\"922.65076\"\n       width=\"206.8411\"\n       height=\"102.25852\"\n       id=\"rect2\" />\n  </defs>\n  <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n    <rect\n       style=\"fill:#ff0000;stroke-width:0.264583\"\n       id=\"rect1\"\n       width=\"126.67081\"\n       height=\"56.57143\"\n       x=\"27.670807\"\n       y=\"48.577637\" />\n    <ellipse\n       style=\"fill:#0000ff;stroke-width:0.264583\"\n       id=\"path1\"\n       cx=\"107.60869\"\n       cy=\"171.25154\"\n       rx=\"60.260868\"\n       ry=\"43.965839\" />\n    <text\n       xml:space=\"preserve\"\n       style=\"font-size:14.11111111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583\"\n       x=\"27.670807\"\n       y=\"253.34161\"\n       id=\"text1\"><tspan\n         sodipodi:role=\"line\"\n         id=\"tspan1\"\n         style=\"stroke-width:0.264583;font-size:14.11111111px\"\n         x=\"27.670807\"\n         y=\"253.34161\">Forg20</tspan><tspan\n         sodipodi:role=\"line\"\n         style=\"stroke-width:0.264583;font-size:14.11111111px\"\n         x=\"27.670807\"\n         y=\"257.31036\"\n         id=\"tspan2\">e 15</tspan></text>\n    <text\n       xml:space=\"preserve\"\n       transform=\"scale(0.26458333)\"\n       id=\"text2\"\n       style=\"font-size:53.3333px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#0000ff\"><tspan\n         x=\"99.933594\"\n         y=\"976.25036\"\n         id=\"tspan4\">Forge </tspan><tspan\n         x=\"99.933594\"\n         y=\"1078.5101\"\n         id=\"tspan6\"><tspan\n           dx=\"0 29.599998\"\n           id=\"tspan5\">15</tspan></tspan></text>\n  </g>\n</svg>\n",
+    "objects": [
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "99.934465",
+          "y": "922.65076",
+          "width": "206.8411",
+          "height": "102.25852",
+          "id": "rect2"
+        },
+        "text": ""
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "style": "fill:#ff0000;stroke-width:0.264583",
+          "id": "rect1",
+          "width": "126.67081",
+          "height": "56.57143",
+          "x": "27.670807",
+          "y": "48.577637"
+        },
+        "text": ""
+      },
+      {
+        "tag": "ellipse",
+        "attributes": {
+          "style": "fill:#0000ff;stroke-width:0.264583",
+          "id": "path1",
+          "cx": "107.60869",
+          "cy": "171.25154",
+          "rx": "60.260868",
+          "ry": "43.965839"
+        },
+        "text": ""
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+          "style": "font-size:14.11111111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583",
+          "x": "27.670807",
+          "y": "253.34161",
+          "id": "text1"
+        },
+        "text": "Forg20e 15"
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+          "transform": "scale(0.26458333)",
+          "id": "text2",
+          "style": "font-size:53.3333px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#0000ff"
+        },
+        "text": "Forge 15"
+      }
+    ]
+  },
+  "wrongFormatJpeg": {
+    "path": "drive_c/users/forge/Documents/verified.jpg",
+    "sizeBytes": 23989,
+    "sha256": "2e8c70d2376be6ee77be676c437799c04465edda50e90132e31ffeb104d6b1d5"
+  },
+  "failedInputScreenshotSha256": "02a2963cc27da3b213df011947cccce7f6db3d0b449f7c81077e241f6c3e8cf4",
+  "applicationOrEngineCodeChanged": false
+}

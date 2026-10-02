@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "scope": "Expand existing isolated rolling Windows application VM and its dedicated host storage without resetting environment or authentication.",
+  "hyperV": {
+    "vmId": "5d386d5a-1cbe-413d-bfe2-ca4696ed6a03",
+    "path": "F:\\VMs\\FOS-Ubuntu-26.04\\forge-windows-apps-ssd.vhdx",
+    "controller": "SCSI 0:5",
+    "diskIdentifier": "B2203593-45B8-4FDF-B103-812E8B6BBDE9",
+    "beforeSizeBytes": 137438953472,
+    "physicalFreeBefore": 209047638016,
+    "afterSizeBytes": 274877906944,
+    "physicalFreeAfter": 209047638016
+  },
+  "hostFilesystem": {
+    "device": "/dev/sde",
+    "mount": "/srv/forge-apps-fast",
+    "uuid": "5dc05d25-c00a-4198-82a0-bdf3db2f28da",
+    "before": {
+      "freeBytes": 4748345344,
+      "totalBytes": 134682497024,
+      "deviceSizeBytes": 274877906944
+    },
+    "after": {
+      "freeBytes": 134534004736,
+      "totalBytes": 269965578240,
+      "deviceSizeBytes": 274877906944
+    },
+    "resizeStdout": "Filesystem at /dev/sde is mounted on /srv/forge-apps-fast; on-line resizing required\nold_desc_blocks = 16, new_desc_blocks = 32\nThe filesystem on /dev/sde is now 67108864 (4k) blocks long.\n\n",
+    "resizeStderr": "resize2fs 1.47.2 (1-Jan-2025)\n"
+  },
+  "qemuOverlay": {
+    "overlay": "/srv/forge-apps-fast/lab/apps-v12-final/disk.qcow2",
+    "beforeVirtualBytes": 42949672960,
+    "afterVirtualBytes": 137438953472,
+    "baseStatPreserved": {
+      "sizeBytes": 21474836480,
+      "mtimeNs": 1790613617297425364,
+      "inode": 2359314
+    },
+    "baseReadOnly": true,
+    "vmId": "d37397c7-dcee-4d83-b6d2-3b7628de1cba",
+    "status": {
+      "status": "running",
+      "running": true
+    },
+    "remainingHostPartitionBytes": 134533869568
+  },
+  "guestRoot": {
+    "device": "/dev/vda",
+    "virtualBytes": 137438953472,
+    "partitionBefore": {
+      "node": "/dev/vda2",
+      "start": 1050624,
+      "size": 82835423,
+      "type": "4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709",
+      "uuid": "E1A65516-B511-4896-B72A-ED8E16D73712",
+      "name": "root-x86-64",
+      "attrs": "GUID:59"
+    },
+    "partitionAfter": {
+      "node": "/dev/vda2",
+      "start": 1050624,
+      "size": 267384799,
+      "type": "4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709",
+      "uuid": "E1A65516-B511-4896-B72A-ED8E16D73712",
+      "name": "root-x86-64",
+      "attrs": "GUID:59"
+    },
+    "bootPartitionUnchanged": true,
+    "filesystemUuid": "5156847f-7985-4196-8be6-c344f20d6848",
+    "growpartSha256": "5b52d058d8c6d21494e1f2a2bdeba63c06f217690136def8fb666c29b29a580e",
+    "attempts": [
+      {
+        "arguments": [
+          "-N"
+        ],
+        "exitCode": 0,
+        "stdout": "CHANGE: partition=2 start=1050624 old: size=82835423 end=83886046 new: size=267384799 end=268435422\n",
+        "stderr": "# === old sfdisk -d ===\nlabel: gpt\nlabel-id: DB3AB8E1-866B-495B-97F4-369B50365EFB\ndevice: /dev/vda\nunit: sectors\nfirst-lba: 2048\nsector-size: 512\n\n/dev/vda1 : start=        2048, size=     1048576, type=C12A7328-F81F-11D2-BA4B-00A0C93EC93B, uuid=80E850F5-3F7A-4AB8-BB98-52C5D88385BC, name=\"esp\"\n/dev/vda2 : start=     1050624, size=    82835423, type=4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709, uuid=E1A65516-B511-4896-B72A-ED8E16D73712, name=\"root-x86-64\", attrs=\"GUID:59\"\n# === new sfdisk -d ===\nlabel: gpt\nlabel-id: DB3AB8E1-866B-495B-97F4-369B50365EFB\ndevice: /dev/vda\nunit: sectors\nfirst-lba: 2048\nsector-size: 512\n\n/dev/vda1 : start=        2048, size=     1048576, type=C12A7328-F81F-11D2-BA4B-00A0C93EC93B, uuid=80E850F5-3F7A-4AB8-BB98-52C5D88385BC, name=\"esp\"\n/dev/vda2 : start=     1050624, size=    267384799, type=4F68BCE3-E8CD-4DB1-96E7-FBCAF984B709, uuid=E1A65516-B511-4896-B72A-ED8E16D73712, name=\"root-x86-64\", attrs=\"GUID:59\"\n"
+      },
+      {
+        "arguments": [
+          "-u",
+          "on"
+        ],
+        "exitCode": 0,
+        "stdout": "CHANGED: partition=2 start=1050624 old: size=82835423 end=83886046 new: size=267384799 end=268435422\n",
+        "stderr": ""
+      }
+    ],
+    "resizeStdout": "/dev/vda2 上的文件系统已被挂载于 /；需要进行在线调整大小\n\nold_desc_blocks = 5, new_desc_blocks = 16\n/dev/vda2 上的文件系统大小已经调整为 33423099 个块（每块 4k）。\n\n",
+    "resizeStderr": "resize2fs 1.47.4 (6-Mar-2025)\n",
+    "rootExpanded": true,
+    "capacityBefore": {
+      "total": 41641537536,
+      "free": 1011249152
+    },
+    "capacityAfter": {
+      "total": 134639206400,
+      "free": 94008926208
+    },
+    "partitionBackupPath": "/home/forge/forge-rolling-20260929/capacity-20261003-before-grow.sfdisk",
+    "partitionBackupSha256": "72fc93c072df890976c00da9e74fa1b5f0c70fadf45eae1f414e69cacab2617c"
+  },
+  "unitTerminal": {
+    "state": "inactive/dead",
+    "result": "success",
+    "exitCode": 0
+  },
+  "postBuilder": {
+    "virtualBytes": 137438953472,
+    "baseStat": {
+      "sizeBytes": 21474836480,
+      "mtimeNs": 1790613617297425364,
+      "inode": 2359314
+    },
+    "baseReadOnly": true,
+    "status": {
+      "status": "running",
+      "running": true
+    },
+    "hostFreeBytes": 134526337024
+  },
+  "postMarket": {
+    "rollbackGuiJob": {
+      "id": "job-1790973609674-29",
+      "generationId": "gen-job-1790971324958-23",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 15877,
+          "requestId": "job-1790973609674-29",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 75340,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790971324958-23/prefix",
+          "requestId": "job-1790973609674-29",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 75382,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790973609674-29",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "allCoreJobsTerminal": true,
+    "selectedGeneration": "gen-job-1790971324958-23",
+    "generationStatuses": {
+      "gen-job-1790971324958-23": "ready",
+      "gen-job-1790973033474-26": "ready"
+    },
+    "filesUnchanged": {
+      "gen-job-1790971324958-23/verified.svg": {
+        "sha256": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+        "sizeBytes": 2028
+      },
+      "gen-job-1790971324958-23/verified.png": {
+        "sha256": "54eb0299584dda306b50982172770b8a19f7235b6fb64cf7b8fcda484ced80d8",
+        "sizeBytes": 16939
+      },
+      "gen-job-1790971324958-23/vector.svg": {
+        "sha256": "489702595aa25858f758e54f77f9f521e186e36d9866d01339ca925d904f5bc8",
+        "sizeBytes": 2722
+      },
+      "gen-job-1790971324958-23/verified.jpg": {
+        "sha256": "2e8c70d2376be6ee77be676c437799c04465edda50e90132e31ffeb104d6b1d5",
+        "sizeBytes": 23989
+      },
+      "gen-job-1790973033474-26/verified.svg": {
+        "sha256": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+        "sizeBytes": 2028
+      },
+      "gen-job-1790973033474-26/updated.svg": {
+        "sha256": "94cc3f45cd965a32333e6d60eec2da3f8631cbfcf06b35d76ba085c244716e3d",
+        "sizeBytes": 2198
+      },
+      "gen-job-1790973033474-26/updated.png": {
+        "sha256": "7b7ecef8c4d7b5e4dfdd906faa3c307dbe583e12377fe0cfc8d77ce507253b41",
+        "sizeBytes": 16989
+      }
+    },
+    "previousRestartEvidenceRevalidated": true,
+    "snapshotAndFullRowsEqualAfterRestart": true,
+    "historicalRowsUnchanged": true,
+    "previousJobCount": 44,
+    "fullJobCount": 46,
+    "fullJobRecordsSha256": "e137eb4fe2c64c1f2b84ef4594ab3380a6ec409d8ee919ba70f43768fe3c4238",
+    "catalogueEntries": 17,
+    "installedIds": [
+      "7zip",
+      "doublecmd",
+      "geany",
+      "inkscape",
+      "kdiff3",
+      "krita",
+      "notepad-plus-plus",
+      "org.forgeos.storefixture",
+      "org.forgeos.storefixture-flatpak",
+      "peazip",
+      "speedcrunch",
+      "sqlitestudio",
+      "sumatrapdf",
+      "texstudio",
+      "vlc",
+      "winmerge",
+      "xournalpp"
+    ],
+    "inkscape": {
+      "appId": "inkscape",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "1.4.4"
+    },
+    "tufMetadata": {
+      "timestamp.json": {
+        "version": 24,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "root.json": {
+        "version": 1,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "snapshot.json": {
+        "version": 24,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      },
+      "targets.json": {
+        "version": 24,
+        "signedDocumentAndSignaturesEqualPublicMetadata": true
+      }
+    },
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "componentIdentities": {
+      "forge-store.service": {
+        "binary": "/home/forge/forge-rolling-20260929/bin/forge-store-service-bytes-1.11.1",
+        "sha256": "857d88c90cbc4384885fa19da0ff25fd9579fb8e241214ed640b8f99072a1f75"
+      },
+      "compatforge.service": {
+        "binary": "/home/forge/forge-rolling-20260929/bin/compatforge-cli-peazip-classic",
+        "sha256": "12c0404f79f2d063e2e5e71d42981ebbecd102b5770d363588f1e7c1a4938f62"
+      }
+    },
+    "guardSettingsPreserved": true,
+    "originalContextPreserved": true,
+    "cacheRawBytesPreservationClaimed": false,
+    "remainingDiskBytes": 94008922112
+  },
+  "marketExceptAvailableCapacityEqualsBefore": true,
+  "rootScriptSha256": "16482db0bf5032479c528af7f7f4259808f7b8c92d874a294d4a4578fcc2dc2b",
+  "failuresRetained": [
+    {
+      "stage": "first builder preflight",
+      "result": "Capacity assertion rejected before mutation. Full QMP/block-node and mount diagnostics subsequently recorded dedicated storage only had 4748345344 bytes available; expanded verified Hyper-V SCSI 0:5 VHDX and host filesystem before guest overlay growth."
+    },
+    {
+      "stage": "old guest preflight helper",
+      "result": "sudo is absent in guest; helper raised FileNotFoundError before mutation. Read-only tool inventory recorded existing pkexec, then used existing authorized GUI authentication for one transient root resize unit."
+    }
+  ],
+  "preservationBasis": [
+    "QEMU base node remains read-only; same base size, mtime and inode before/after. Fresh full base-image hashing not performed, and byte equality is not claimed from stat alone.",
+    "Guest boot partition and root partition fields except size equal before/after; filesystem UUID unchanged; original partition dump retained privately.",
+    "Market snapshot and all 46 SQLite job rows equal saved pre/post-restart records; historical 44 rows unchanged; seven Inkscape artifacts unchanged; both generations ready and original generation selected.",
+    "TUF root/version/signatures, running Store/Core binaries, service guards and original Core context revalidated. Authentication settings not changed."
+  ],
+  "limits": [
+    "Expanded logical volumes are dynamic; continue monitoring physical F drive and host filesystem during later batches.",
+    "Build host root and separate build volume also have low free space; no deletion or expansion of those unrelated volumes performed."
+  ]
+}
