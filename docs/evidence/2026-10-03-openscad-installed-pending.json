@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-03",
+  "applicationId": "openscad",
+  "version": "2021.01",
+  "stage": "installed-gui-tool-blocked",
+  "sourceEvidence": "docs/evidence/2026-10-03-openscad-source.json",
+  "application": {
+    "bottleId": "gui-openscad",
+    "category": "graphics",
+    "compatibilityRating": "unknown",
+    "id": "openscad",
+    "installer": {
+      "arguments": [
+        "/S"
+      ],
+      "fileName": "OpenSCAD-2021.01-x86-64-Installer.exe",
+      "sha256": "fbe1e590e1af2af863f5d92bd263eb4644d0ee29352e3ab566366e87a8f6ed12"
+    },
+    "launchers": [
+      {
+        "executable": "Program Files/OpenSCAD/openscad.exe",
+        "id": "main",
+        "name": "OpenSCAD"
+      }
+    ],
+    "name": "OpenSCAD",
+    "publisher": "The OpenSCAD Developers",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "2021.01"
+  },
+  "installJob": {
+    "id": "job-1791003419276-1",
+    "status": "succeeded",
+    "generationId": "gen-job-1791003419276-1",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 39549,
+        "requestId": "job-1791003419276-1",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 4601,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791003419276-1/prefix",
+        "requestId": "job-1791003419276-1",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 4643,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791003419276-1",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "artifactSha256": "sha256:fbe1e590e1af2af863f5d92bd263eb4644d0ee29352e3ab566366e87a8f6ed12",
+    "artifactSizeBytes": 21876824,
+    "inspectedInstallerArchitecture": "x86",
+    "arguments": [
+      "/S"
+    ],
+    "wineArchitecture": "win64",
+    "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+  },
+  "generation": {
+    "id": "gen-job-1791003419276-1",
+    "status": "ready",
+    "definitionDigest": "sha256:624c48b05969d79a24614fd7dfd93625bd01cd9dffb4873ac578729c78069165",
+    "launcherDigests": {
+      "main": "sha256:c6b741fc0907e4d571b8a91097a1a5e1e426f5c422385c77b788ebca76e369d0"
+    },
+    "selectedGeneration": "gen-job-1791003419276-1"
+  },
+  "launcher": {
+    "relativeFile": "Program Files/OpenSCAD/openscad.exe",
+    "sizeBytes": 43975680,
+    "sha256": "c6b741fc0907e4d571b8a91097a1a5e1e426f5c422385c77b788ebca76e369d0",
+    "peMachine": "0x8664",
+    "resourceSignatureCandidates": [
+      {
+        "offset": 43810704,
+        "fileVersion": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "productVersion": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fileType": 2
+      }
+    ],
+    "resourceParsingLimitation": "VS_FIXEDFILEINFO signature scan only; not a full PE resource-tree parse or GUI About version observation"
+  },
+  "installedNotices": [
+    {
+      "relativeFile": "examples/COPYING-CC0.txt",
+      "sizeBytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "relativeFile": "fonts/Liberation-2.00.1/LICENSE",
+      "sizeBytes": 4414,
+      "sha256": "93fed46019c38bbe566b479d22148e2e8a1e85ada614accb0211c37b2c61c19b"
+    }
+  ],
+  "applicationDirectoryFileCount": 183,
+  "fixture": {
+    "relativeInputFile": "input/模型.scad",
+    "windowsInputFile": "C:\\ForgeQA\\input\\模型.scad",
+    "sizeBytes": 104,
+    "sha256": "6f123b4af0ddef990e3c0bfcb6a8b5e98ae444c9d15a2ede5eafc229a29e583e",
+    "utf8Text": "// ForgeOS OpenSCAD original modelling acceptance\n// 中文路径与建模保存验证\ncube([18,12,7]);\n",
+    "outputEmptyBeforeGui": true
+  },
+  "preservation": {
+    "totalCoreJobs": 150,
+    "previous149CoreJobsUnchanged": true,
+    "full57StoreRowsAndMarketUnchanged": true,
+    "fullTufTrustDocumentsAndSignaturesUnchanged": true,
+    "public24SignedFilesBytePreserved": true,
+    "oldCoreConfigBytesUnchanged": true
+  },
+  "installed": true,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "acceptedDistinctWindowsApps": 20,
+  "limits": [
+    "Installation only: successful managed installer and ready generation with pinned x86_64 launcher; no real application function proven",
+    "VS_FIXEDFILEINFO signature candidate is zero version with DLL file type; not a full resource parse, and no usable installed version is claimed",
+    "Installed main-program COPYING/license text was not observed among filename-based installed notice inventory; fixed source GPL declaration remains recorded, and GUI notice/version observation is pending",
+    "No GUI launch, modelling, source edit, save, render, STL export, output validation or fresh reopen performed",
+    "No OpenSCAD signing, local market update, rollback, restart or publication performed",
+    "Shortcut, association, registry effects, installer/source build correspondence and full dependency redistribution audit unverified"
+  ],
+  "failuresRetained": [
+    {
+      "stage": "Initial source/recipe helper lookup",
+      "result": "Nonexistent recipes/schemas directories caused a read-only search failure; corrected repository file discovery, with no application or trust mutation."
+    },
+    {
+      "stage": "Graphical testing tool",
+      "result": "Browser URL confidence checks stopped the tool in two prior turns, including after Edge opened noVNC; installation was performed through the authorized managed backend, with no Windows UI input and no policy bypass."
+    }
+  ]
+}

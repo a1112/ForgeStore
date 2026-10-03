@@ -296,7 +296,7 @@
       "id": "openscad",
       "name": "OpenSCAD",
       "version": "2021.01",
-      "stage": "source-verified-gui-tool-blocked",
+      "stage": "installed-gui-tool-blocked",
       "sourceUrl": "https://github.com/openscad/openscad/releases/download/openscad-2021.01/OpenSCAD-2021.01-x86-64-Installer.exe",
       "sha256": "fbe1e590e1af2af863f5d92bd263eb4644d0ee29352e3ab566366e87a8f6ed12",
       "sizeBytes": 21876824,
@@ -304,11 +304,15 @@
       "sourceCommit": "41f58fe57c03457a3a8b4dc541ef5654ec3e8c78",
       "artifactEvidence": "docs/evidence/2026-10-03-openscad-source.json",
       "evidence": "docs/windows-rolling-20261003-openscad-pending.md",
-      "installed": false,
+      "installed": true,
       "guiAccepted": false,
       "published": false,
       "countsAsCompleted": false,
-      "blocker": "Installer matches official fixed-version checksum and main license is pinned. Computer Use stopped before browser observation because it could not verify the current Edge URL. No installation or GUI workflow performed; requires a visible noVNC URL in an independent supported browser and fresh tool observation."
+      "blocker": "Managed fixed NSIS installation succeeded with ready 64-bit launcher. Computer Use still cannot verify the Edge URL after noVNC was opened. Real GUI modelling/save/render/STL export, fresh reopen, About version/license and local signed market lifecycle are pending.",
+      "installationJobId": "job-1791003419276-1",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1791003419276-1",
+      "installationEvidence": "docs/evidence/2026-10-03-openscad-installed-pending.json"
     }
   ],
   "excludedInternalFixtures": [
