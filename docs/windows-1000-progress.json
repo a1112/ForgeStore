@@ -130,6 +130,16 @@
       "signedCatalogue": "catalogue/candidate-v15/tuf",
       "publication": "docs/evidence/2026-10-03-inkscape-publication.json",
       "limitation": "GUI red rectangle/blue ellipse/ASCII text, SVG save/explicit load/reopen and PNG export; verified-cache same-version market update adds green rectangle/save/export/explicit reopen, original-generation rollback/explicit reopen and service restart passed. Official installer checksum matched. Failed input/export attempts retained. Authenticode, reproducibility, advanced paths/filters/extensions/printing/tablets/Chinese text, guest online download, fresh registration and cross-version upgrade unverified."
+    },
+    {
+      "id": "qalculate",
+      "version": "5.12.0",
+      "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+      "sizeBytes": 70448128,
+      "evidence": "docs/evidence/windows-qalculate-20261003.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v16/tuf",
+      "publication": "docs/evidence/2026-10-03-qalculate-publication.json",
+      "limitation": "Qt exact arithmetic/unit conversion and native persistent-variable save/reopen; verified-cache same-version market update with fresh qamarket save/reopen, newest-other-ready canary rollback/GUI, explicit Core original rollback/qaforge reopen and Core/Store restart passed. No explicit file chooser/CSV/advanced/GTK/CLI workflow, guest online download, fresh-machine registration, cross-version upgrade, Authenticode, upstream checksum match or reproducible-build claim. Five failed installs retained; custom directory spaces rejected."
     }
   ],
   "queue": [
@@ -160,7 +170,7 @@
       "installationJobId": "job-1790744678544-9",
       "installationJobStatus": "failed",
       "evidence": "docs/evidence/2026-09-30-jasp-pending.md",
-      "blocker": "Real guest install rejected before execution: MSI sent to PE inspection exceeds 268435456-byte PE bound. Independent closed MSI contract has 1 GiB bound. Prepared Install execution integration design awaits review; no installation, GUI acceptance or publication."
+      "blocker": "Historical real guest installation failed when MSI entered 256 MiB PE inspection; failed job retained. Managed MSI path is now implemented and Qalculate-tested with a separate 2 GiB Core bound, but JASP 1,299,197,952 bytes exceeds unchanged 1 GiB Store signed-artifact bound. JASP-specific package, installation and GUI/publication retest remain pending."
     },
     {
       "id": "lenovo-app-store",
@@ -179,7 +189,7 @@
       "sha256": "4aa6c6e1895f4055104effcb556bd3362d20c6ad707c149543304f395ef9db95",
       "sizeBytes": 374906880,
       "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
-      "blocker": "Current fixed 26.8.0 official metadata reviewed. Download from redirected mirror.nevacloud.com ended in ConnectionResetError; partial data is not a verified artifact. Managed MSI execution remains unimplemented. No installation, GUI acceptance or publication. Officially listed BFSU retry returned HTTP 403 with no package bytes.",
+      "blocker": "Fixed 26.8.0 official metadata reviewed. Redirected mirror reset connection; officially listed BFSU retry HTTP 403, no verified full package. Managed MSI execution is now implemented and Qalculate-tested; LibreOffice artifact download, app-specific installation and GUI/publication remain pending.",
       "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json",
       "retryEvidence": "docs/evidence/2026-09-30-libreoffice-mirror-retry.json"
     },
@@ -222,11 +232,11 @@
     {
       "id": "audacity",
       "version": "4.0.0",
-      "stage": "fixed-msi-artifact-verified-execution-pending",
+      "stage": "fixed-msi-artifact-verified-app-specific-execution-pending",
       "sha256": "2aecc44d28a004d15ae7c23c099f232ba8c5b3e6b19ebdbaf7d6c596316dc5b3",
       "sizeBytes": 49532928,
       "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
-      "blocker": "Full fixed official MSI size, SHA-256 and compound-file magic verified. Managed MSI execution remains unimplemented; no installation, GUI acceptance or publication.",
+      "blocker": "Fixed official MSI size, SHA-256 and compound-file magic verified. Managed MSI execution is now implemented and Qalculate-tested; Audacity-specific licensing/recipe, installation, audio GUI save/reopen and publication retest remain pending.",
       "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json"
     },
     {
@@ -255,26 +265,29 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "review-next-fixed-official-windows-artifact-and-license; retain-all-blocked-candidates; monitor-guest-and-host-physical-capacity",
+  "next": "Audacity 4.0.0 fixed official MSI app-specific licensing/recipe and real audio file workflow; keep failed/blocked candidates and trust state; one distinct application per complete acceptance/publication.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-03",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 15,
-    "explicitlyBlockedCandidates": 11,
+    "acceptedLocalMarket": 16,
+    "explicitlyBlockedCandidates": 10,
     "remainingSourceReviewCandidates": 0,
-    "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications."
+    "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
+    "executionPendingCandidates": 1,
+    "pendingCandidates": 11
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v15/tuf",
-    "metadataVersion": 24,
-    "catalogueEntries": 17,
-    "acceptedDistinctWindowsApps": 15,
+    "signedCatalogue": "catalogue/candidate-v16/tuf",
+    "metadataVersion": 25,
+    "catalogueEntries": 18,
+    "acceptedDistinctWindowsApps": 16,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-03-inkscape-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-03-qalculate-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261003-inkscape.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261003-qalculate.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
-  "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json"
+  "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
+  "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json"
 }

@@ -1,0 +1,1209 @@
+{
+  "application": {
+    "bottleId": "gui-qalculate",
+    "category": "productivity",
+    "compatibilityRating": "unknown",
+    "id": "qalculate",
+    "installer": {
+      "fileName": "qalculate-5.12.0-x64.msi",
+      "msi": {
+        "architecture": "x86_64",
+        "handler": {
+          "action": "install",
+          "kind": "msiexec",
+          "properties": {},
+          "reboot": "suppress",
+          "ui": "none"
+        },
+        "maximumRuntimeMilliseconds": 300000,
+        "sizeBytes": 70448128
+      },
+      "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25"
+    },
+    "launchers": [
+      {
+        "executable": "Program Files/Qalculate/qalculate-qt.exe",
+        "id": "main",
+        "name": "Qalculate! Qt"
+      }
+    ],
+    "name": "Qalculate!",
+    "publisher": "Hanna Knutsson",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-msi-canary"
+    ],
+    "version": "5.12.0"
+  },
+  "generation": {
+    "bottleId": "gen-job-1790982218603-1",
+    "createdAtMilliseconds": 1790982218608,
+    "definition": {
+      "bottleId": "gui-qalculate",
+      "category": "productivity",
+      "compatibilityRating": "unknown",
+      "id": "qalculate",
+      "installer": {
+        "fileName": "qalculate-5.12.0-x64.msi",
+        "msi": {
+          "architecture": "x86_64",
+          "handler": {
+            "action": "install",
+            "kind": "msiexec",
+            "properties": {},
+            "reboot": "suppress",
+            "ui": "none"
+          },
+          "maximumRuntimeMilliseconds": 300000,
+          "sizeBytes": 70448128
+        },
+        "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25"
+      },
+      "launchers": [
+        {
+          "executable": "Program Files/Qalculate/qalculate-qt.exe",
+          "id": "main",
+          "name": "Qalculate! Qt"
+        }
+      ],
+      "name": "Qalculate!",
+      "publisher": "Hanna Knutsson",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-msi-canary"
+      ],
+      "version": "5.12.0"
+    },
+    "definitionDigest": "sha256:e52b88afe8159e90135514dcce611a885943649644fd41f6a8c17894451ead35",
+    "id": "gen-job-1790982218603-1",
+    "launcherDigests": {
+      "main": "sha256:f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1790982232083
+  },
+  "selectedGeneration": "gen-job-1790982218603-1",
+  "allCoreJobsTerminal": true,
+  "jobs": [
+    {
+      "applicationId": "qalculate",
+      "createdAtMilliseconds": 1790982218603,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 20442,
+          "requestId": "d0fa2226-a127-e3d7-10c1-bba1d0a5c578",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5624,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix",
+          "requestId": "d0fa2226-a127-e3d7-10c1-bba1d0a5c578",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5666,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "d0fa2226-a127-e3d7-10c1-bba1d0a5c578",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790982218603-1",
+      "id": "job-1790982218603-1",
+      "inspection": {
+        "exitCodeSemantics": "Unix Wine process status; full Win32 MSI exit code is not captured; nonzero fails closed; reboot is suppressed",
+        "expectedPackage": {
+          "architecture": "x86_64",
+          "package": {
+            "fileName": "qalculate-5.12.0-x64.msi",
+            "mediaType": "application/x-msi",
+            "path": "/home/forge/forge-rolling-20260929/qalculate-5.12.0-x64.msi",
+            "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+            "sizeBytes": 70448128
+          },
+          "storedPath": "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi"
+        },
+        "kind": "msi",
+        "verifiedBeforeSpawn": true
+      },
+      "kind": "install",
+      "launchPlan": {
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "MSI identity declared; bytes require owned preparation before execution"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "maximumRuntimeMilliseconds": 300000,
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix"
+          }
+        },
+        "msiInstall": {
+          "handler": {
+            "action": "install",
+            "kind": "msiexec",
+            "properties": {},
+            "reboot": "suppress",
+            "ui": "none"
+          },
+          "maximumRuntimeMilliseconds": 300000,
+          "package": {
+            "architecture": "x86_64",
+            "package": {
+              "fileName": "qalculate-5.12.0-x64.msi",
+              "mediaType": "application/x-msi",
+              "path": "/home/forge/forge-rolling-20260929/qalculate-5.12.0-x64.msi",
+              "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+              "sizeBytes": 70448128
+            },
+            "storedPath": "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi"
+          },
+          "tool": {
+            "architecture": "x86_64",
+            "digest": "sha256:897fbdac3dfb66112a924426176c05eddb30b2128aec09ae7e9ca9b3377c4c37",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "path": "/usr/lib/wine/x86_64-windows/msiexec.exe"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/usr/lib/wine/x86_64-windows/msiexec.exe",
+            "/i",
+            "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi",
+            "/qn",
+            "/norestart",
+            "REBOOT=ReallySuppress"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_bnYzaM"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1"
+        },
+        "requestId": "d0fa2226-a127-e3d7-10c1-bba1d0a5c578",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1790982232068
+    },
+    {
+      "applicationId": "qalculate",
+      "createdAtMilliseconds": 1790982332074,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 20662,
+          "requestId": "job-1790982332074-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 736148,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix",
+          "requestId": "job-1790982332074-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 736189,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790982332074-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790982218603-1",
+      "id": "job-1790982332074-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5184,
+        "fileDigest": "sha256:f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167",
+        "fileSizeBytes": 3690496,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "kernel32.dll",
+          "libgcc_s_seh-1.dll",
+          "libqalculate-23.dll",
+          "libstdc++-6.dll",
+          "libwinpthread-1.dll",
+          "qt6core.dll",
+          "qt6gui.dll",
+          "qt6network.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "user32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 2094080,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 2093600,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 7168,
+            "readable": true,
+            "virtualAddress": 2101248,
+            "virtualSize": 6928,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 958976,
+            "readable": true,
+            "virtualAddress": 2109440,
+            "virtualSize": 958528,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtversi",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 3072000,
+            "virtualSize": 16,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 25600,
+            "readable": true,
+            "virtualAddress": 3076096,
+            "virtualSize": 25476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 147456,
+            "readable": true,
+            "virtualAddress": 3104768,
+            "virtualSize": 147120,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 3252224,
+            "virtualSize": 41040,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 148480,
+            "readable": true,
+            "virtualAddress": 3297280,
+            "virtualSize": 148216,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 3448832,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 296424,
+            "readable": true,
+            "virtualAddress": 3452928,
+            "virtualSize": 296424,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 10240,
+            "readable": true,
+            "virtualAddress": 3751936,
+            "virtualSize": 9972,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1790982218603-1",
+          "digest": "sha256:f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "qalculate-qt.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix/drive_c/Program Files/Qalculate/qalculate-qt.exe",
+          "sizeBytes": 3690496,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix/drive_c/Program Files/Qalculate/qalculate-qt.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_bnYzaM"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1"
+        },
+        "requestId": "job-1790982332074-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1790983070313
+    },
+    {
+      "applicationId": "qalculate",
+      "createdAtMilliseconds": 1790983094180,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 21152,
+          "requestId": "job-1790983094180-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 43102,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix",
+          "requestId": "job-1790983094180-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 43144,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790983094180-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1790982218603-1",
+      "id": "job-1790983094180-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5184,
+        "fileDigest": "sha256:f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167",
+        "fileSizeBytes": 3690496,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "kernel32.dll",
+          "libgcc_s_seh-1.dll",
+          "libqalculate-23.dll",
+          "libstdc++-6.dll",
+          "libwinpthread-1.dll",
+          "qt6core.dll",
+          "qt6gui.dll",
+          "qt6network.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "user32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 2094080,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 2093600,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 7168,
+            "readable": true,
+            "virtualAddress": 2101248,
+            "virtualSize": 6928,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 958976,
+            "readable": true,
+            "virtualAddress": 2109440,
+            "virtualSize": 958528,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtversi",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 3072000,
+            "virtualSize": 16,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 25600,
+            "readable": true,
+            "virtualAddress": 3076096,
+            "virtualSize": 25476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 147456,
+            "readable": true,
+            "virtualAddress": 3104768,
+            "virtualSize": 147120,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 3252224,
+            "virtualSize": 41040,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 148480,
+            "readable": true,
+            "virtualAddress": 3297280,
+            "virtualSize": 148216,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 3448832,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 296424,
+            "readable": true,
+            "virtualAddress": 3452928,
+            "virtualSize": 296424,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 10240,
+            "readable": true,
+            "virtualAddress": 3751936,
+            "virtualSize": 9972,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1790982218603-1",
+          "digest": "sha256:f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "qalculate-qt.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix/drive_c/Program Files/Qalculate/qalculate-qt.exe",
+          "sizeBytes": 3690496,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix/drive_c/Program Files/Qalculate/qalculate-qt.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_bnYzaM"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982218603-1"
+        },
+        "requestId": "job-1790983094180-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1790983139228
+    }
+  ],
+  "savedVariables": [
+    {
+      "path": "drive_c/users/forge/AppData/Local/Qalculate/definitions/variables.xml",
+      "sha256": "c631e98dd302ac0fe44a0ec6f6462f095525dbfd07f87f50d5fc4ff269c8aa63",
+      "sizeBytes": 148,
+      "text": "<?xml version=\"1.0\"?>\n<QALCULATE version=\"5.12.0\">\n  <variable>\n    <names>r:qaforge</names>\n    <value>83810215</value>\n  </variable>\n</QALCULATE>\n"
+    }
+  ],
+  "installedLicenses": {
+    "licenses/libnghttp2/COPYING": {
+      "sizeBytes": 1156,
+      "sha256": "6b94f3abc1aabd0c72a7c7d92a77f79dda7c8a0cb3df839a97890b4116a2de2a"
+    },
+    "licenses/pango/COPYING": {
+      "sizeBytes": 25292,
+      "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5"
+    },
+    "licenses/harfbuzz/COPYING": {
+      "sizeBytes": 1971,
+      "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+    },
+    "licenses/expat/COPYING": {
+      "sizeBytes": 1144,
+      "sha256": "122f2c27000472a201d337b9b31f7eb2b52d091b02857061a8880371612d9534"
+    },
+    "licenses/lerc/LICENSE": {
+      "sizeBytes": 9198,
+      "sha256": "77a8b761727c75e2167b15bfdf61b2c0bcf8792271228bebe80779106ad00671"
+    },
+    "licenses/mingw-w64-libraries/COPYING.libmangle": {
+      "sizeBytes": 1109,
+      "sha256": "ae7a4090983e6ea0780c60c454016fd5e93b414b0de26ad041608ec66fbb54bb"
+    },
+    "licenses/pcre/LICENCE": {
+      "sizeBytes": 3190,
+      "sha256": "51b3dea44f63338b84b9c97b3d793826a8397309068cf9379a423216ab8ea5b2"
+    },
+    "licenses/pcre/COPYING": {
+      "sizeBytes": 95,
+      "sha256": "17abe1dbb92b21ab173cf9757dd57b0b15cd8d863b2ccdef635fdbef03077fb0"
+    },
+    "licenses/librsvg/COPYING.LIB": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "licenses/cairo/COPYING-LGPL-2.1": {
+      "sizeBytes": 26533,
+      "sha256": "9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d"
+    },
+    "licenses/cairo/COPYING-MPL-1.1": {
+      "sizeBytes": 25755,
+      "sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f"
+    },
+    "licenses/cairo/COPYING": {
+      "sizeBytes": 1576,
+      "sha256": "67228a9f7c5f9b67c58f556f1be178f62da4d9e2e6285318d8c74d567255abdf"
+    },
+    "licenses/libthai/COPYING": {
+      "sizeBytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    "licenses/adwaita-icon-theme/COPYING": {
+      "sizeBytes": 453,
+      "sha256": "51f83b2b4e9ed2beebc9b8eed2ecad29314a58ed8c5184b22ad8f9df703d3ce5"
+    },
+    "licenses/adwaita-icon-theme/COPYING_CCBYSA3": {
+      "sizeBytes": 409,
+      "sha256": "207fe75c396c0ae197c57d42c727163428b6667d98cef3644e41c6f1afe1895f"
+    },
+    "licenses/adwaita-icon-theme/COPYING_LGPL": {
+      "sizeBytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "licenses/libtasn1/COPYING": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/libtasn1/COPYING.LESSER": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "licenses/gtk3/COPYING": {
+      "sizeBytes": 25383,
+      "sha256": "b7993225104d90ddd8024fd838faf300bea5e83d91203eab98e29512acebd69c"
+    },
+    "licenses/qt6-svg/GFDL-1.3-no-invariants-only.txt": {
+      "sizeBytes": 22955,
+      "sha256": "110535522396708cea37c72a802c5e7e81391139f5f7985631c93ef242b206a4"
+    },
+    "licenses/qt6-svg/LicenseRef-Qt-Commercial.txt": {
+      "sizeBytes": 462,
+      "sha256": "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+    },
+    "licenses/qt6-svg/Qt-GPL-exception-1.0.txt": {
+      "sizeBytes": 965,
+      "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2"
+    },
+    "licenses/qt6-svg/GPL-2.0-only.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "licenses/qt6-svg/BSD-3-Clause.txt": {
+      "sizeBytes": 1469,
+      "sha256": "9f0490f18656c6f2435bd14f603ef0c96434d1825615363dce43abb42ed1dcce"
+    },
+    "licenses/qt6-svg/LGPL-3.0-only.txt": {
+      "sizeBytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "licenses/qt6-svg/GPL-3.0-only.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/curl/LICENSE": {
+      "sizeBytes": 1088,
+      "sha256": "adb1fc06547fd136244179809f7b7c2d2ae6c4534f160aa513af9b6a12866a32"
+    },
+    "licenses/libepoxy/COPYING": {
+      "sizeBytes": 2465,
+      "sha256": "8d5144666f9c4df9bbd69b8900086d5979259152a1060421cdcc0fb9061a1c12"
+    },
+    "licenses/gnuplot/Copyright": {
+      "sizeBytes": 1495,
+      "sha256": "895928ec0735cca1c8cec42656c7e314a065d0242813bb8693c0c1bf61fd4e4d"
+    },
+    "licenses/openssl/LICENSE": {
+      "sizeBytes": 10175,
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    "licenses/libpng/LICENSE": {
+      "sizeBytes": 5345,
+      "sha256": "7317e078e2d3b5d7ba5a6159e650945153262b44b76f6700f8e9edb261c5143e"
+    },
+    "licenses/libb2/LICENSE": {
+      "sizeBytes": 6556,
+      "sha256": "6a1ee543e5282cd9061881edf462e6fdab181f328da71fc2c9a6950a80e94d01"
+    },
+    "licenses/bzip2/LICENSE": {
+      "sizeBytes": 1896,
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+    },
+    "licenses/double-conversion/LICENSE": {
+      "sizeBytes": 1527,
+      "sha256": "4af93c12062c58058378de2397dc1c92bbff9ddfb1d583a01c84127557ce97ca"
+    },
+    "licenses/p11-kit/COPYING": {
+      "sizeBytes": 1447,
+      "sha256": "2e1ba993904df807a10c3eda1e5c272338edc35674b679773a8b3ad460731054"
+    },
+    "licenses/libjpeg-turbo/README.ijg": {
+      "sizeBytes": 12715,
+      "sha256": "f4a85f8677ca4e41b185c0a9f7c31a30ddb9ce43c561483ee92ef12db37c2a10"
+    },
+    "licenses/libjpeg-turbo/LICENSE.md": {
+      "sizeBytes": 5620,
+      "sha256": "e548c96c0c09397c94b5c5531836c02ff2c403f1f2b130cad8e3ec9439b5a7cc"
+    },
+    "licenses/libjpeg-turbo/README.md": {
+      "sizeBytes": 17643,
+      "sha256": "aabf29bfc2fac03c1c31d74a1c7a15043f834bc31cef04d9caa8e566beedc257"
+    },
+    "licenses/jbigkit/COPYING": {
+      "sizeBytes": 17982,
+      "sha256": "91df39d1816bfb17a4dda2d3d2c83b1f6f2d38d53e53e41e8f97ad5ac46a0cad"
+    },
+    "licenses/icu/LICENSE": {
+      "sizeBytes": 25223,
+      "sha256": "3ae033da0bfd60f4609c5c99fe50c0c840685889d3b705d3f527fd7b52032f5c"
+    },
+    "licenses/pixman/COPYING": {
+      "sizeBytes": 2087,
+      "sha256": "fac9270f0987b96ff4533fca3548c633e02083cbba4a0172a3b149b2e4019793"
+    },
+    "licenses/gdk-pixbuf2/COPYING": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "licenses/libdatrie/COPYING": {
+      "sizeBytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    "licenses/libssh2/LICENSE": {
+      "sizeBytes": 1959,
+      "sha256": "fda5e2522c58ba1f31c9f2044747616457466f4aebec16ade4af86e3a16a8e02"
+    },
+    "licenses/libunistring/LICENSE.LIB": {
+      "sizeBytes": 7639,
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c"
+    },
+    "licenses/libunistring/LICENSE": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/brotli/LICENSE": {
+      "sizeBytes": 1084,
+      "sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94"
+    },
+    "licenses/glib2/COPYING": {
+      "sizeBytes": 25967,
+      "sha256": "fa6f36630bb1e0c571d34b2bbdf188d08495c9dbf58f28cac112f303fc1f58fb"
+    },
+    "licenses/libxml2/COPYING": {
+      "sizeBytes": 1289,
+      "sha256": "7fb0a66f3989f9bd5c7e5438a3de02cd4a7a47dde0aea2f7ea2ba2ff454ee6a4"
+    },
+    "licenses/zstd/LICENSE": {
+      "sizeBytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+    },
+    "licenses/graphite2/COPYING": {
+      "sizeBytes": 1235,
+      "sha256": "2c272829ff23f182c8bf7ea12fedea69b0ae148663123ed5240c117cb129c9c1"
+    },
+    "licenses/graphite2/LICENSE": {
+      "sizeBytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    "licenses/fribidi/COPYING": {
+      "sizeBytes": 26440,
+      "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+    },
+    "licenses/libwinpthread/COPYING": {
+      "sizeBytes": 2883,
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+    },
+    "licenses/libiconv/COPYING.LIB": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "licenses/libiconv/COPYING": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/libiconv/README": {
+      "sizeBytes": 5664,
+      "sha256": "dd37af33149d9722d6edca08aeb1e18591dda95bb645d81a2f011a5d83088929"
+    },
+    "licenses/qt6-base/MIT.txt": {
+      "sizeBytes": 1111,
+      "sha256": "d040359701c01996a017d5c515678929cd1b0625e64cb86db44025fbb6cdf1fc"
+    },
+    "licenses/qt6-base/GFDL-1.3-no-invariants-only.txt": {
+      "sizeBytes": 22955,
+      "sha256": "110535522396708cea37c72a802c5e7e81391139f5f7985631c93ef242b206a4"
+    },
+    "licenses/qt6-base/LicenseRef-Qt-Commercial.txt": {
+      "sizeBytes": 462,
+      "sha256": "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+    },
+    "licenses/qt6-base/Unicode-3.0.txt": {
+      "sizeBytes": 1995,
+      "sha256": "80bb6294022d8764adb36a9d65ebb6bd94efb1865918a71e31e6c247607d7634"
+    },
+    "licenses/qt6-base/BSL-1.0.txt": {
+      "sizeBytes": 1340,
+      "sha256": "3abd6471b9a9a08d65ce771143f8e278bb4c1aeb10c1c2d476935a6b049653f5"
+    },
+    "licenses/qt6-base/Unicode-DFS-2016.txt": {
+      "sizeBytes": 2858,
+      "sha256": "1a33fc12a3abb0b3eb14db70e36ef1d0af51c93b1cc1f80f022c3bd406e9b874"
+    },
+    "licenses/qt6-base/Qt-GPL-exception-1.0.txt": {
+      "sizeBytes": 965,
+      "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2"
+    },
+    "licenses/qt6-base/GPL-2.0-only.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "licenses/qt6-base/GPL-2.0-or-later.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "licenses/qt6-base/blessing.txt": {
+      "sizeBytes": 244,
+      "sha256": "592db1199aab67aafe4515db9808b420db122083807c5329b2f061951e79acbe"
+    },
+    "licenses/qt6-base/BSD-3-Clause.txt": {
+      "sizeBytes": 1469,
+      "sha256": "9f0490f18656c6f2435bd14f603ef0c96434d1825615363dce43abb42ed1dcce"
+    },
+    "licenses/qt6-base/Apache-2.0.txt": {
+      "sizeBytes": 10398,
+      "sha256": "e3ba223bb1423f0aad8c3dfce0fe3148db48926d41e6fbc3afbbf5ff9e1c89cb"
+    },
+    "licenses/qt6-base/LGPL-3.0-only.txt": {
+      "sizeBytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "licenses/qt6-base/AFL-2.1.txt": {
+      "sizeBytes": 8948,
+      "sha256": "93bb4f7417aa775bab9026cc3d0af28aeb64451fc5a8ec651876785edd8eaf9b"
+    },
+    "licenses/qt6-base/GPL-3.0-only.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/qt6-base/LicenseRef-SHA1-Public-Domain.txt": {
+      "sizeBytes": 144,
+      "sha256": "65d86b8ec6b1cd8b8f6e64fd8710274ba00d6a3c520e00dfdcd1c3d2071f3305"
+    },
+    "licenses/qt6-base/LicenseRef-BSD-3-Clause-with-PCRE2-Binary-Like-Packages-Exception.txt": {
+      "sizeBytes": 1852,
+      "sha256": "0526625fcc746a42d3f19a0ab357d3dc8479fdbe3bfd168825498f50215c7a63"
+    },
+    "licenses/qt6-base/CC0-1.0.txt": {
+      "sizeBytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    "licenses/qt6-base/LicenseRef-Lcs-Telegraphics.txt": {
+      "sizeBytes": 139,
+      "sha256": "c10225ebbd5191bfdd761b0d7752c785f2453ab665d6c454473fb12d254668aa"
+    },
+    "licenses/qt6-translations/LicenseRef-Qt-Commercial.txt": {
+      "sizeBytes": 462,
+      "sha256": "9b1f50aae6267f9d5e0ceb6775ee86450262c25ec7c0573e151fe5d3f18a4700"
+    },
+    "licenses/qt6-translations/Qt-GPL-exception-1.0.txt": {
+      "sizeBytes": 965,
+      "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2"
+    },
+    "licenses/qt6-translations/BSD-3-Clause.txt": {
+      "sizeBytes": 1469,
+      "sha256": "9f0490f18656c6f2435bd14f603ef0c96434d1825615363dce43abb42ed1dcce"
+    },
+    "licenses/qt6-translations/GPL-3.0-only.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/zlib/LICENSE": {
+      "sizeBytes": 1002,
+      "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+    },
+    "licenses/libpsl/COPYING": {
+      "sizeBytes": 1060,
+      "sha256": "322392e6001b2b3b0fca705dc9f11f26e12441188ecde50eb1d22909980b2925"
+    },
+    "licenses/gettext/COPYING": {
+      "sizeBytes": 35151,
+      "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+    },
+    "licenses/freetype/FTL.TXT": {
+      "sizeBytes": 6743,
+      "sha256": "08c135755dd589039470f1fdbb400daaabaaa50d0b366d19cebff4d22986baa1"
+    },
+    "licenses/freetype/GPLv2.TXT": {
+      "sizeBytes": 17994,
+      "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18"
+    },
+    "licenses/libtiff/LICENSE.md": {
+      "sizeBytes": 1164,
+      "sha256": "0780558a8bfba0af1160ec1ff11ade4f41c0d7deafd6ecfc796b492a788e380d"
+    },
+    "licenses/fontconfig/COPYING": {
+      "sizeBytes": 8616,
+      "sha256": "51a51aa9823704fd90bccc616cdd17ebabb5b2b3e9cbde886ca02c7002288067"
+    },
+    "licenses/gcc-libs/COPYING.LIB": {
+      "sizeBytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    "licenses/gcc-libs/COPYING.RUNTIME": {
+      "sizeBytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    "licenses/gcc-libs/README": {
+      "sizeBytes": 236,
+      "sha256": "33400d067fa3e2bd670a0868dcdb60c9486e8f559b675cf9ff1ff55d4e0d06ab"
+    },
+    "licenses/gcc-libs/COPYING3": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/libffi/LICENSE": {
+      "sizeBytes": 1132,
+      "sha256": "67894089811f93fca47a76f85e017da6f8582d4ba0905963c6e0f1ad6df7a195"
+    },
+    "licenses/readline/COPYING": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "licenses/libdeflate/COPYING": {
+      "sizeBytes": 1078,
+      "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a"
+    },
+    "licenses/libwebp/COPYING": {
+      "sizeBytes": 1496,
+      "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+    },
+    "licenses/atk/COPYING": {
+      "sizeBytes": 25292,
+      "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5"
+    },
+    "licenses/gettext/gnulib-local/lib/libxml/COPYING": {
+      "sizeBytes": 1289,
+      "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd"
+    },
+    "licenses/libiconv/libcharset/COPYING.LIB": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "licenses/libjpeg-turbo/simd/jsimdext.inc": {
+      "sizeBytes": 15399,
+      "sha256": "000b2df5469d2f94ea20a1b3d638b94031dad296f006600e1dbff79eded5facb"
+    }
+  },
+  "launcherSha256": "f69e2a26d134421763442d7b721a5df5f5a005e19a495afe8679efd9425e6167",
+  "failedGenerationsRetained": [
+    {
+      "id": "gen-job-1790981639581-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully"
+    },
+    {
+      "id": "gen-job-1790981949788-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully"
+    },
+    {
+      "id": "gen-job-1790982073517-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully"
+    },
+    {
+      "id": "gen-job-1790983168704-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully"
+    },
+    {
+      "id": "gen-job-1790983214570-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully"
+    }
+  ],
+  "guiWorkflow": "12345 x 6789 + 10 = 83810215; 100 cm to m = 1 m; GUI save result 83810215 as persistent qaforge, normally exit, new process evaluates qaforge = 83810215. Native definitions/variables.xml parsed and retained; no explicit file chooser import/export was tested.",
+  "screenshots": {
+    "2026-10-03-qalculate-arithmetic.jpg": "9e4aa049d3064d77840c943550bc819b46ed817156acec1882a46b53f7bac774",
+    "2026-10-03-qalculate-reopen-variable.jpg": "32bda4bfcd53f5cc6e7639c9b12d07a60ebc58a137c6bd2ccbb0ba91dadbe0cf",
+    "2026-10-03-qalculate-save-variable.jpg": "8fb0ecce1fada404be06884db7cfd4630c09e5a9cdbbf3b82d609ba1015c3450",
+    "2026-10-03-qalculate-unit.jpg": "57eacd952307f547b57cc5d5719be09ae4a489191dc02551e2a1cb702a6d0d81"
+  }
+}

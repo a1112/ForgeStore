@@ -329,7 +329,7 @@ impl VerifiedCache {
         let name = artifact.target.as_str();
         if name.len() > 128
             || name.starts_with('.')
-            || !name.ends_with(".exe")
+            || !(name.ends_with(".exe") || name.ends_with(".msi"))
             || !name
                 .bytes()
                 .all(|byte| byte.is_ascii_alphanumeric() || b"._-".contains(&byte))

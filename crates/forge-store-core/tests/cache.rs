@@ -205,6 +205,42 @@ async fn compat_installer_alias_preserves_reviewed_basename_and_digest() {
     assert!(cache.stage_compat_installer(&declared).await.is_err());
 }
 
+#[tokio::test]
+async fn compat_msi_alias_preserves_pin_and_rejects_other_extensions() {
+    let tmp = tempfile::tempdir().unwrap();
+    let cache = VerifiedCache::open(tmp.path()).unwrap();
+    let bytes = b"opaque MSI cache fixture; Core performs MSI format validation";
+    let mut declared = artifact(bytes);
+    declared.target = "qalculate-5.12.0-x64.msi".into();
+    cache
+        .ingest(
+            &declared,
+            stream::iter([Ok::<Bytes, io::Error>(Bytes::from_static(bytes))]),
+            &CancellationToken::new(),
+        )
+        .await
+        .unwrap();
+    let alias = cache.stage_compat_installer(&declared).await.unwrap();
+    assert_eq!(alias.file_name().unwrap(), "qalculate-5.12.0-x64.msi");
+    assert_eq!(std::fs::read(&alias).unwrap(), bytes);
+    for name in [
+        "canary.msix",
+        "canary.mst",
+        "canary.msi.exe.tmp",
+        "../canary.msi",
+        "canary.msi/child",
+    ] {
+        declared.target = name.into();
+        assert!(
+            cache.stage_compat_installer(&declared).await.is_err(),
+            "{name}"
+        );
+    }
+    declared.target = "qalculate-5.12.0-x64.msi".into();
+    std::fs::write(&alias, b"tampered").unwrap();
+    assert!(cache.stage_compat_installer(&declared).await.is_err());
+}
+
 #[test]
 fn private_and_reserved_addresses_are_not_public_sources() {
     use forge_store_core::cache::is_public_address;

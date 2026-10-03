@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "qalculate",
+  "installationFailures": [
+    {
+      "evidenceFile": "qalculate-install-status2.json",
+      "jobId": "job-1790981639581-1",
+      "generationId": "gen-job-1790981639581-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully",
+      "inspection": {
+        "exitCodeSemantics": "Unix Wine process status; full Win32 MSI exit code is not captured; nonzero fails closed; reboot is suppressed",
+        "expectedPackage": {
+          "architecture": "x86_64",
+          "package": {
+            "fileName": "qalculate-5.12.0-x64.msi",
+            "mediaType": "application/x-msi",
+            "path": "/home/forge/forge-rolling-20260929/qalculate-5.12.0-x64.msi",
+            "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+            "sizeBytes": 70448128
+          },
+          "storedPath": "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi"
+        },
+        "kind": "msi",
+        "verifiedBeforeSpawn": true
+      },
+      "arguments": [
+        "/usr/lib/wine/x86_64-windows/msiexec.exe",
+        "/i",
+        "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi",
+        "/qn",
+        "/norestart",
+        "REBOOT=ReallySuppress",
+        "ALLUSERS=\"1\"",
+        "TARGETDIR=\"C:\\Qalculate\""
+      ],
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 19279,
+          "requestId": "d82dfe99-eaf6-b967-e87c-003cc4727854",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5765,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790981639581-1/prefix",
+          "requestId": "d82dfe99-eaf6-b967-e87c-003cc4727854",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5807,
+          "exit": {
+            "code": 67,
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "d82dfe99-eaf6-b967-e87c-003cc4727854",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "capturedOutputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "evidenceFile": "qalculate-retry2-status.json",
+      "jobId": "job-1790981949788-1",
+      "generationId": "gen-job-1790981949788-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully",
+      "inspection": {
+        "exitCodeSemantics": "Unix Wine process status; full Win32 MSI exit code is not captured; nonzero fails closed; reboot is suppressed",
+        "expectedPackage": {
+          "architecture": "x86_64",
+          "package": {
+            "fileName": "qalculate-5.12.0-x64.msi",
+            "mediaType": "application/x-msi",
+            "path": "/home/forge/forge-rolling-20260929/qalculate-5.12.0-x64.msi",
+            "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+            "sizeBytes": 70448128
+          },
+          "storedPath": "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi"
+        },
+        "kind": "msi",
+        "verifiedBeforeSpawn": true
+      },
+      "arguments": [
+        "/usr/lib/wine/x86_64-windows/msiexec.exe",
+        "/i",
+        "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi",
+        "/qn",
+        "/norestart",
+        "REBOOT=ReallySuppress",
+        "ALLUSERS=\"1\"",
+        "TARGETDIR=\"C:\\Qalculate\""
+      ],
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 19792,
+          "requestId": "890a01b9-219c-ac08-b2d1-66be68542599",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5772,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790981949788-1/prefix",
+          "requestId": "890a01b9-219c-ac08-b2d1-66be68542599",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5814,
+          "exit": {
+            "code": 67,
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "890a01b9-219c-ac08-b2d1-66be68542599",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "capturedOutputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "evidenceFile": "qalculate-diagnostic-status.json",
+      "jobId": "job-1790982073517-1",
+      "generationId": "gen-job-1790982073517-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully",
+      "inspection": {
+        "exitCodeSemantics": "Unix Wine process status; full Win32 MSI exit code is not captured; nonzero fails closed; reboot is suppressed",
+        "expectedPackage": {
+          "architecture": "x86_64",
+          "package": {
+            "fileName": "qalculate-5.12.0-x64.msi",
+            "mediaType": "application/x-msi",
+            "path": "/home/forge/forge-rolling-20260929/qalculate-5.12.0-x64.msi",
+            "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+            "sizeBytes": 70448128
+          },
+          "storedPath": "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi"
+        },
+        "kind": "msi",
+        "verifiedBeforeSpawn": true
+      },
+      "arguments": [
+        "/usr/lib/wine/x86_64-windows/msiexec.exe",
+        "/i",
+        "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi",
+        "/qn",
+        "/norestart",
+        "REBOOT=ReallySuppress",
+        "ALLUSERS=\"1\"",
+        "TARGETDIR=\"C:\\Qalculate\""
+      ],
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 20086,
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 6,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 2
+        },
+        {
+          "elapsedMilliseconds": 8,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 3
+        },
+        {
+          "elapsedMilliseconds": 9,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 4
+        },
+        {
+          "elapsedMilliseconds": 10,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 5
+        },
+        {
+          "elapsedMilliseconds": 12,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 6
+        },
+        {
+          "elapsedMilliseconds": 13,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 7
+        },
+        {
+          "elapsedMilliseconds": 14,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 8
+        },
+        {
+          "elapsedMilliseconds": 16,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 9
+        },
+        {
+          "elapsedMilliseconds": 41,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 10
+        },
+        {
+          "elapsedMilliseconds": 42,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 11
+        },
+        {
+          "elapsedMilliseconds": 75,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 12
+        },
+        {
+          "elapsedMilliseconds": 90,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 13
+        },
+        {
+          "elapsedMilliseconds": 370,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 14
+        },
+        {
+          "elapsedMilliseconds": 371,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 15
+        },
+        {
+          "elapsedMilliseconds": 372,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 16
+        },
+        {
+          "elapsedMilliseconds": 373,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 17
+        },
+        {
+          "elapsedMilliseconds": 613,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 18
+        },
+        {
+          "elapsedMilliseconds": 655,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 19
+        },
+        {
+          "elapsedMilliseconds": 889,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 20
+        },
+        {
+          "elapsedMilliseconds": 900,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 21
+        },
+        {
+          "elapsedMilliseconds": 1143,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 22
+        },
+        {
+          "elapsedMilliseconds": 1163,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 23
+        },
+        {
+          "elapsedMilliseconds": 1381,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 24
+        },
+        {
+          "elapsedMilliseconds": 1393,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 25
+        },
+        {
+          "elapsedMilliseconds": 1616,
+          "kind": "output",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 26
+        },
+        {
+          "elapsedMilliseconds": 5707,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790982073517-1/prefix",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 27
+        },
+        {
+          "elapsedMilliseconds": 5748,
+          "exit": {
+            "code": 67,
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "4c1c5eab-2f3a-07bf-4f25-0a855287f181",
+          "schemaVersion": "1",
+          "sequence": 28
+        }
+      ],
+      "capturedOutputSha256": "86b6eb39ba40cb9fa4b8533fb748c2ffd67c36df665f95851139ed2899727228"
+    },
+    {
+      "evidenceFile": "qalculate-space-status.json",
+      "jobId": "job-1790983168704-1",
+      "generationId": "gen-job-1790983168704-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully",
+      "inspection": {
+        "exitCodeSemantics": "Unix Wine process status; full Win32 MSI exit code is not captured; nonzero fails closed; reboot is suppressed",
+        "expectedPackage": {
+          "architecture": "x86_64",
+          "package": {
+            "fileName": "qalculate-5.12.0-x64.msi",
+            "mediaType": "application/x-msi",
+            "path": "/home/forge/forge-rolling-20260929/qalculate-5.12.0-x64.msi",
+            "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+            "sizeBytes": 70448128
+          },
+          "storedPath": "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi"
+        },
+        "kind": "msi",
+        "verifiedBeforeSpawn": true
+      },
+      "arguments": [
+        "/usr/lib/wine/x86_64-windows/msiexec.exe",
+        "/i",
+        "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi",
+        "/qn",
+        "/norestart",
+        "REBOOT=ReallySuppress",
+        "ALLUSERS=1",
+        "TARGETDIR=C:\\Qalculate Canary"
+      ],
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 21614,
+          "requestId": "db8e8872-cc58-ecab-b2d2-51bbe44eeef1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4261,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790983168704-1/prefix",
+          "requestId": "db8e8872-cc58-ecab-b2d2-51bbe44eeef1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4303,
+          "exit": {
+            "code": 103,
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "db8e8872-cc58-ecab-b2d2-51bbe44eeef1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "capturedOutputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "evidenceFile": "qalculate-space-diagnostic-status.json",
+      "jobId": "job-1790983214570-1",
+      "generationId": "gen-job-1790983214570-1",
+      "status": "failed",
+      "error": "process exited unsuccessfully",
+      "inspection": {
+        "exitCodeSemantics": "Unix Wine process status; full Win32 MSI exit code is not captured; nonzero fails closed; reboot is suppressed",
+        "expectedPackage": {
+          "architecture": "x86_64",
+          "package": {
+            "fileName": "qalculate-5.12.0-x64.msi",
+            "mediaType": "application/x-msi",
+            "path": "/home/forge/forge-rolling-20260929/qalculate-5.12.0-x64.msi",
+            "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+            "sizeBytes": 70448128
+          },
+          "storedPath": "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi"
+        },
+        "kind": "msi",
+        "verifiedBeforeSpawn": true
+      },
+      "arguments": [
+        "/usr/lib/wine/x86_64-windows/msiexec.exe",
+        "/i",
+        "/home/forge/.local/share/compatforge/storage/installer-packages/objects/sha256/f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25/package.msi",
+        "/qn",
+        "/norestart",
+        "REBOOT=ReallySuppress",
+        "ALLUSERS=1",
+        "TARGETDIR=C:\\Qalculate Canary"
+      ],
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 21871,
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 141,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 141,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 2
+        },
+        {
+          "elapsedMilliseconds": 143,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 3
+        },
+        {
+          "elapsedMilliseconds": 144,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 4
+        },
+        {
+          "elapsedMilliseconds": 144,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 5
+        },
+        {
+          "elapsedMilliseconds": 159,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 6
+        },
+        {
+          "elapsedMilliseconds": 160,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 7
+        },
+        {
+          "elapsedMilliseconds": 163,
+          "kind": "output",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 8
+        },
+        {
+          "elapsedMilliseconds": 4238,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790983214570-1/prefix",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 9
+        },
+        {
+          "elapsedMilliseconds": 4279,
+          "exit": {
+            "code": 103,
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "8d447e9b-20f0-f0b2-66ec-b4029a65f984",
+          "schemaVersion": "1",
+          "sequence": 10
+        }
+      ],
+      "capturedOutputSha256": "17546e26bafaf38ee99c7714fca2de256e8d8a43fcc21947fa404455cf278951"
+    }
+  ],
+  "diagnosis": [
+    "v6/v7 literal property quotes produced malformed target paths; default empty-properties install succeeded through the same pinned package/tool file descriptor execution path, disproving the earlier loader-failure hypothesis.",
+    "v8 space-containing TARGETDIR failed with Unix exit status 103; diagnostic MsiInstallProductW showed outer argv quotes retained as part of the property name. v9 rejects spaces in custom directory overrides consistently in Rust/Python/schema before execution. Default MSI destinations such as Program Files remain supported; space override support is not claimed.",
+    "Unix Wine exit code 67 or 103 is not a complete Win32 MSI/NTSTATUS result. Every nonzero result fails closed; failed generations and previous selected ready generation retained."
+  ],
+  "diagnosticPins": {
+    "qalculate-wine-diagnostic.log": "86b6eb39ba40cb9fa4b8533fb748c2ffd67c36df665f95851139ed2899727228",
+    "qalculate-space-diagnostic.log": "17546e26bafaf38ee99c7714fca2de256e8d8a43fcc21947fa404455cf278951"
+  },
+  "harnessFailures": [
+    "First upsert comparison expected serialized empty arguments, but optional empty fields are omitted; assertion failed before job submission.",
+    "First job response parsing incorrectly expected Store ok instead of Core result; corrected without another install.",
+    "MSI table dump was initially decoded as UTF-16 instead of actual UTF-8; corrected.",
+    "noVNC shifted-key arithmetic produced an incorrect expression; retained in GUI history. Digits plus observed GUI multiply/add keys then produced the verified expression.",
+    "Original final XML assertion expected bare qaforge, but native format stores r:qaforge; corrected using the actual XML while preserving saved bytes.",
+    "Temporary diagnostic context restored after terminal jobs. Original runtime binding and configuration bytes retained.",
+    "GUI auto-lock required authorized existing login; password and authentication settings were not changed."
+  ]
+}

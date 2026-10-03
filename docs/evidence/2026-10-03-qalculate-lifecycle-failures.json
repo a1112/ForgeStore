@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "qalculate",
+  "originalFailureEvidence": "docs/evidence/2026-10-03-qalculate-failures.json",
+  "retainedFailures": [
+    {
+      "stage": "Core v9 deployment",
+      "error": "invalid MSI handler definition",
+      "diagnosis": "Strict directory-property validation initially made retained failed space-override generations unreadable. Deployment restored v8, then v10 adds historical-only Failed/Cancelled metadata validation; new execution and Ready/rollback remain strict."
+    },
+    {
+      "stage": "Store first update",
+      "jobId": "fe65ba4c-3ced-48c1-86f5-61351702912a",
+      "state": "failed",
+      "error": "artifact length or digest mismatch",
+      "diagnosis": "Compat installer alias accepted only EXE names. MSI suffix support added while retaining basename/hash/size/URL guards and 1 GiB limit; no Core job was created by the failed attempt."
+    },
+    {
+      "stage": "Store Linux first build",
+      "sourceArchiveSha256": "24a22529d005a908f2a6cc47cb4983653f914fe9d0f10ea963ea4e4365ddab54",
+      "error": "signed catalogue target hash mismatch",
+      "diagnosis": "Build helper normalized signed JSON line endings. v2 preserves raw catalogue/fixture JSON bytes; no trust bypass or live trust change."
+    },
+    {
+      "stage": "Store builder path",
+      "error": "Permission denied creating direct fast-volume child",
+      "diagnosis": "Used existing owned 0700 compatforge-msi-work subdirectory; no permissions broadened."
+    },
+    {
+      "stage": "Store deployment equality harness",
+      "error": "latest_known_time.json changed",
+      "diagnosis": "Recorded before/after snapshots confirm only monotonic trusted time advancement; signed documents and full jobs/generations unchanged."
+    },
+    {
+      "stage": "Final restart harness",
+      "error": "raw TUF root/targets cache hashes changed",
+      "diagnosis": "root.json and targets.json serialized bytes changed across restart; JSON content and signatures match pre-deployment snapshot. No trust reset or rollback."
+    },
+    {
+      "stage": "Final restart guard harness",
+      "error": "Expected Store hardening directives on Core",
+      "diagnosis": "harness incorrectly expected Store guard directives on Core; recorded baseline and current units confirm Core guard lines remained empty and Store protections remained enabled"
+    },
+    {
+      "stage": "Final restart metadata path harness",
+      "error": "snapshot.json absent",
+      "diagnosis": "Consistent-snapshot source publishes 25.snapshot.json and 25.targets.json; all 20 source files checked byte-for-byte against original manifest."
+    }
+  ],
+  "failedInstallationGenerationsRetained": 5,
+  "failedStoreRowsRetained": true,
+  "negativeTestEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
+  "passwordStored": false,
+  "authenticationSettingsChanged": false,
+  "trustReset": false
+}

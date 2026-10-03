@@ -1,0 +1,84 @@
+{
+  "applications": [
+    {
+      "adaptation": "Closed reviewed wineAppearance=classic, applied automatically before installer spawn using separately authorized absolute digest-pinned registry utility; ThemeManager/ThemeActive REG_SZ 0. Installation expectation checked before staging. Preparing owner and spawn boundary support cancellation and confirmed shutdown cleanup.",
+      "coreServiceSha256": "12c0404f79f2d063e2e5e71d42981ebbecd102b5770d363588f1e7c1a4938f62",
+      "definitionDigest": "sha256:715cd1640d48fbe97081460f7deee2427d01b181326c2d898164ca1282a0c80e",
+      "files": {
+        "archive": {
+          "members": [
+            {
+              "crc32": "00000000",
+              "name": "rolling-peazip-profile-input/",
+              "sizeBytes": 0
+            },
+            {
+              "crc32": "d5b25e2d",
+              "name": "rolling-peazip-profile-input/sample.txt",
+              "sizeBytes": 740
+            },
+            {
+              "crc32": "62816806",
+              "name": "rolling-peazip-profile-input/中文文件.txt",
+              "sizeBytes": 53
+            }
+          ],
+          "name": "rolling-peazip-profile-input.zip",
+          "sha256": "a457083371fea1222708d509348a6dcf8bb795c5e079f5fb1227dc85b095598e",
+          "sizeBytes": 696
+        },
+        "files": {
+          "sample.txt": {
+            "crc32": "d5b25e2d",
+            "sha256": "666b8f44ef76a4d18a3fcca278be0a5d435d6bc677922a7770195f70ace289d2",
+            "sizeBytes": 740
+          },
+          "中文文件.txt": {
+            "crc32": "62816806",
+            "sha256": "941e07b7bcecae0aea2b2b17d37b00ba83bb298d47500a39a775551b64ff4333",
+            "sizeBytes": 53
+          }
+        },
+        "generationId": "gen-job-1790781229872-2",
+        "guiExtractedByteEqual": true,
+        "guiZipCreated": true,
+        "zipCRCValidated": true,
+        "zipMembersByteEqual": true
+      },
+      "generationId": "gen-job-1790781229872-2",
+      "guiFileOperation": "passed",
+      "id": "peazip",
+      "installJobId": "job-1790781229872-2",
+      "launchJobId": "job-1790781757453-1",
+      "launcherSha256": "06c65579764ee817db94292901b7d12f81b7e32412e7ad29c9eddffc0905663e",
+      "registryToolSha256": "cb41b77b7e2a8dd20b886608a8b4bdf3c121eb3d30702e913ea9949f8ec84021",
+      "reopenJobId": "job-1790783354532-2",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "screenshots": {
+        "2026-09-30-peazip-profile-add.png": "5853b8349e2161b51d82bac27f3f165fb517271a6e83f820661933ca06cf05ea",
+        "2026-09-30-peazip-profile-extract.png": "b113ae049b3a1f5bd7aec2dee9d4ee2da7f24ffcc434688fa5293cb8ba000f1a",
+        "2026-09-30-peazip-profile-reopened.png": "f9f544a2c759337d72ca69e6aa5cbc4069d512c955313b835213a9719dece27a",
+        "2026-09-30-peazip-profile-settings.png": "b878f984e2e7b0c69ece9eee0a4cedf2c7765968c9597ef48af92a3f75b59f04"
+      },
+      "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76",
+      "size": 11391512,
+      "storeServiceSha256": "eafd2d9d07f20d6413e2a55bae17bec7e637b44b57745f8e3829786ea8cd3ca3",
+      "version": "11.3.0",
+      "workflow": "In the fresh managed classic-profile generation, use real Add GUI to create ZIP from ASCII and Chinese-named files, use Extract GUI to restore both, inspect readable OK/Cancel captions in Add, Extract and General Settings, close normally and reopen ZIP via managed service. All member CRCs and original/archived/extracted bytes agree."
+    }
+  ],
+  "date": "2026-10-01",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14; UID 1000",
+  "licenseBasis": "PeaZip LGPLv3; bundled component licenses and notices apply. The local catalogue references the official installer; installer bytes and signing keys are not published in the source repository.",
+  "licenseEvidence": [
+    "https://peazip.github.io/peazip-64bit.html",
+    "https://github.com/peazip/PeaZip/releases/tag/11.3.0"
+  ],
+  "limits": [
+    "Only ZIP creation/extraction, Chinese filenames, settings caption readability, archive browsing/reopen and normal exits tested; encryption, other formats and plugin interoperability unverified.",
+    "The earlier command-concatenation guard rejection remains recorded in 2026-09-30-peazip-pending.md and its screenshot; cause unresolved and guard not disabled. Tested output roundtripprofile succeeded.",
+    "Fresh-machine recipe registration, guest online download, cross-version upgrade and public remote distribution unverified.",
+    "Signed local-market lifecycle observations follow this receipt; installation alone does not increase the accepted count."
+  ],
+  "schemaVersion": 1
+}

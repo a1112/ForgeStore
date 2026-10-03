@@ -1,0 +1,37 @@
+{
+  "bottleId": "gui-qalculate",
+  "category": "productivity",
+  "compatibilityRating": "unknown",
+  "id": "qalculate",
+  "installer": {
+    "fileName": "qalculate-5.12.0-x64.msi",
+    "msi": {
+      "architecture": "x86_64",
+      "handler": {
+        "action": "install",
+        "kind": "msiexec",
+        "properties": {},
+        "reboot": "suppress",
+        "ui": "none"
+      },
+      "maximumRuntimeMilliseconds": 300000,
+      "sizeBytes": 70448128
+    },
+    "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25"
+  },
+  "launchers": [
+    {
+      "executable": "Program Files/Qalculate/qalculate-qt.exe",
+      "id": "main",
+      "name": "Qalculate! Qt"
+    }
+  ],
+  "name": "Qalculate!",
+  "publisher": "Hanna Knutsson",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000",
+    "managed-msi-canary"
+  ],
+  "version": "5.12.0"
+}
