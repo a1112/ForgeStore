@@ -40,7 +40,6 @@
     },
     "jobsRowsMarketTrustConfigsGenerationsAndGuardsEqualJpegviewFinal": true,
     "public24SignedCatalogueFilesBytePreserved": true,
-    "jpegviewInputOutputsPreserved": true,
     "latestKnownTime": {
       "before": "2026-10-03T02:43:42.44391294Z",
       "after": "2026-10-03T02:43:42.44391294Z",
@@ -48,7 +47,10 @@
     },
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
     "servicesRestarted": false,
-    "authenticationChanged": false
+    "authenticationChanged": false,
+    "jpegviewOutputsPreserved": true,
+    "jpegviewInputsVerifiedAtOriginalObservation": null,
+    "jpegviewInputVerificationLimit": "Original host-connection recovery helper checked PNG outputs, not BMP input fixtures. Both inputs were separately verified later after system startup; see docs/evidence/2026-10-03-system-boot-capacity128.json."
   },
   "acceptedDistinctWindowsApps": 20,
   "openscad": {
@@ -62,6 +64,10 @@
     {
       "stage": "First recovery record helper patch",
       "result": "Patch syntax rejected before file changes; corrected add-file patch then wrote evidence."
+    },
+    {
+      "stage": "Later review of shared recovery verification helper",
+      "result": "Restricted original JPEGView input/output preservation claim to the two PNGs actually checked; retained original timing and referenced fresh supplemental two-input verification after system startup."
     }
   ]
 }

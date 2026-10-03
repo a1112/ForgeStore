@@ -20,7 +20,7 @@
 
 可核对长度、摘要、固定许可及安装脚本 pin 见 [初始来源证据](evidence/2026-10-03-openscad-source.json)，其中 installed=false 是安装前观察，保留不改。最新状态见 [安装待验收证据](evidence/2026-10-03-openscad-installed-pending.json)；已有 20 款通过项、旧队列记录及活动市场指针保持。
 
-后续用户说明 Windows 主机已重启，要求恢复环境。只读检查发现 Hyper-V 虚拟机、原 QEMU run 和 noVNC 服务仍 active；Default Switch 中地址已变化，旧 SSH 地址超时，本地 6096 监听不存在。按虚拟机 MAC 获取当前地址，保留严格 SSH 主机密钥校验，恢复隐藏的 localhost 转发；noVNC 页面返回 HTTP 200 且内容正确。未重启存活的虚拟机或 Core/Store，未修改密码。149 个完整 Core 终态作业、57 条 Store 记录、市场、完整 TUF 文档及签名、配置摘要、全部应用代次和服务约束与 JPEGView 最终快照一致；24 个签名目录源文件与输入/输出逐字节保持。桌面显示、登录和 GUI 功能尚未重新观察；工具的本回合停止仍需于新回合解决。见 [重启后连接恢复证据](evidence/2026-10-03-host-restart-recovery.json)。
+后续用户说明 Windows 主机已重启，要求恢复环境。只读检查发现 Hyper-V 虚拟机、原 QEMU run 和 noVNC 服务仍 active；Default Switch 中地址已变化，旧 SSH 地址超时，本地 6096 监听不存在。按虚拟机 MAC 获取当前地址，保留严格 SSH 主机密钥校验，恢复隐藏的 localhost 转发；noVNC 页面返回 HTTP 200 且内容正确。未重启存活的虚拟机或 Core/Store，未修改密码。149 个完整 Core 终态作业、57 条 Store 记录、市场、完整 TUF 文档及签名、配置摘要、全部应用代次和服务约束与 JPEGView 最终快照一致；24 个签名目录源文件与两份 JPEGView 输出 PNG pin 保持；当时没有单独核对两份输入 BMP，已在后续系统启动恢复中补查，见 [启动恢复证据](evidence/2026-10-03-system-boot-capacity128.json)。桌面显示、登录和 GUI 功能尚未重新观察；工具的本回合停止仍需于新回合解决。见 [重启后连接恢复证据](evidence/2026-10-03-host-restart-recovery.json)。
 
 随后在新回合执行正常 managed NSIS 安装，仅使用 [NSIS 官方文档](https://nsis.sourceforge.io/Docs/Chapter3.html)规定的 `/S` 静默参数，没有使用关闭 CRC 的参数，没有手工解包替代安装。作业 `job-1791003419276-1` 正常结束，Unix Wine 退出 0；代次 `gen-job-1791003419276-1` ready 并被选中。程序实际为 `Program Files/OpenSCAD/openscad.exe`，43,975,680 字节，SHA-256 `c6b741fc0907e4d571b8a91097a1a5e1e426f5c422385c77b788ebca76e369d0`，与代次 main launcher pin 一致。应用目录共 183 个文件。
 

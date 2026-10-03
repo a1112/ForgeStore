@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "request": "Restart the current ForgeOS test system shown through noVNC.",
+  "scope": "Existing isolated ForgeOS application-test guest; Windows host and outer Hyper-V builder were not rebooted.",
+  "observedBefore": {
+    "outerHyperVState": "Running",
+    "innerGuestSsh": "Connection refused on the existing pinned guest port before preflight snapshot could be captured.",
+    "innerQemuProcessAbsent": true,
+    "oldVmService": "inactive; recent startup failed at obsolete overlay size assertion",
+    "oldWrapperExpectedOverlayBytes": 42949672960,
+    "actualPreviouslyApprovedOverlayBytes": 137438953472,
+    "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
+    "localRemoteDesktopListenerPresent": false
+  },
+  "startup": {
+    "oldWrapperSha256": "8b7172764afd6c4b1c29ba19cd124710ce59402cb97c7cc5eefea513fc43b909",
+    "newWrapperSha256": "3294b2f02c6a7e3d06cbb45ad418e234b9543675684a29091cde01ef05e9fe25",
+    "overlayVirtualBytes": 137438953472,
+    "baseVirtualBytes": 21474836480,
+    "change": "Replace two obsolete 40-GiB capacity assertions/log values with the already approved 128-GiB size; keep base pin, identity, backing chain and QEMU command checks.",
+    "unit": "forge-windows-rolling-vm-20261003-capacity128.service",
+    "previousRun": {
+      "instance_id": "d37397c7-dcee-4d83-b6d2-3b7628de1cba",
+      "qemu_pid": 4990,
+      "run": "run-96228816ac6c4b24a29f6d896952a018",
+      "supervisor_pid": 4965
+    },
+    "imageChain": [
+      {
+        "children": [
+          {
+            "name": "file",
+            "info": {
+              "children": [],
+              "virtual-size": 49084235776,
+              "filename": "/srv/forge-apps-fast/lab/apps-v12-final/disk.qcow2",
+              "format": "file",
+              "actual-size": 49086976000,
+              "format-specific": {
+                "type": "file",
+                "data": {}
+              },
+              "dirty-flag": false
+            }
+          }
+        ],
+        "backing-filename-format": "raw",
+        "virtual-size": 137438953472,
+        "filename": "/srv/forge-apps-fast/lab/apps-v12-final/disk.qcow2",
+        "cluster-size": 65536,
+        "format": "qcow2",
+        "actual-size": 49086976000,
+        "format-specific": {
+          "type": "qcow2",
+          "data": {
+            "compat": "1.1",
+            "compression-type": "zlib",
+            "lazy-refcounts": false,
+            "refcount-bits": 16,
+            "corrupt": false,
+            "extended-l2": false
+          }
+        },
+        "full-backing-filename": "/srv/forge-apps-fast/images/forgeos-store-final-v12.raw",
+        "backing-filename": "/srv/forge-apps-fast/images/forgeos-store-final-v12.raw",
+        "dirty-flag": false
+      },
+      {
+        "children": [
+          {
+            "name": "file",
+            "info": {
+              "children": [],
+              "virtual-size": 21474836480,
+              "filename": "/srv/forge-apps-fast/images/forgeos-store-final-v12.raw",
+              "format": "file",
+              "actual-size": 6367514624,
+              "format-specific": {
+                "type": "file",
+                "data": {}
+              },
+              "dirty-flag": false
+            }
+          }
+        ],
+        "virtual-size": 21474836480,
+        "filename": "/srv/forge-apps-fast/images/forgeos-store-final-v12.raw",
+        "format": "raw",
+        "actual-size": 6367514624,
+        "dirty-flag": false
+      }
+    ],
+    "startExitCode": 0,
+    "stderr": "Running as unit: forge-windows-rolling-vm-20261003-capacity128.service; invocation ID: d1b5df71e4c04917a474130bf7f4e984\n"
+  },
+  "builderVerification": {
+    "current": {
+      "instance_id": "d37397c7-dcee-4d83-b6d2-3b7628de1cba",
+      "qemu_pid": 76100,
+      "run": "run-2a528af69f134ebd99513b682b6e5412",
+      "supervisor_pid": 76079
+    },
+    "units": {
+      "forge-windows-rolling-vm-20261003-capacity128.service": "active",
+      "forge-windows-rolling-novnc-20261002.service": "active"
+    },
+    "qmpStatus": {
+      "status": "running",
+      "running": true
+    },
+    "baseBlockNodesReadOnly": true,
+    "kvmEnabled": true,
+    "originalPortForwardPreserved": true,
+    "startedBaseReadOnly": true
+  },
+  "guestVerification": {
+    "bootId": "3d9454c0-7f84-4df4-aad3-9525b5a89648",
+    "coreJobs": 150,
+    "fullStoreRows": 57,
+    "catalogueEntries": 22,
+    "services": {
+      "compatforge.service": "active",
+      "forge-store.service": "active"
+    },
+    "previous149JobsAndOpenScadInstallJobUnchanged": true,
+    "fullStoreRowsMarketAndTrustDocumentsUnchanged": true,
+    "allPriorGenerationsAndOpenScadGenerationUnchanged": true,
+    "oldCoreConfigBytesUnchanged": true,
+    "serviceGuardsUnchanged": true,
+    "public24SignedCatalogueFilesBytePreserved": true,
+    "jpegviewInputsOutputsPreserved": true,
+    "openscadLauncherAndInputPreserved": true,
+    "openscadOutputStillEmpty": true,
+    "latestKnownTime": {
+      "before": "2026-10-03T02:43:42.44391294Z",
+      "after": "2026-10-03T10:54:36.186001913Z",
+      "monotonic": true
+    },
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "authenticationChanged": false,
+    "acceptedDistinctWindowsApps": 20,
+    "guiObserved": false
+  },
+  "localRemoteDesktop": {
+    "localBind": "127.0.0.1:6096",
+    "remoteLoopbackPort": 6093,
+    "sshTunnelPidAtObservation": 57740,
+    "strictHostKeyCheckingPreserved": true,
+    "http": {
+      "httpStatus": 200,
+      "containsNoVnc": true,
+      "bytes": 17810,
+      "guiObserved": false
+    }
+  },
+  "persistentWrapperFix": {
+    "existingWrapperUpdated": true,
+    "oldWrapperSha256": "8b7172764afd6c4b1c29ba19cd124710ce59402cb97c7cc5eefea513fc43b909",
+    "correctedWrapperSha256": "3294b2f02c6a7e3d06cbb45ad418e234b9543675684a29091cde01ef05e9fe25",
+    "originalBackupRetained": true,
+    "mutation": "Only already-approved overlay capacity assertion/log and evidence reference updated; no disk, trust or authentication changes."
+  },
+  "guestServiceLifetime": {
+    "keyAuthenticatedSessionPidAtObservation": 53540,
+    "purpose": "Keep the existing key-authenticated guest user session active so per-user test services remain available before desktop login. No login/password/linger configuration changed.",
+    "userServicesStartedAfterBoot": true,
+    "desktopSessionEnvironmentImported": false,
+    "passwordOrLingerConfigurationChanged": false
+  },
+  "acceptedDistinctWindowsApps": 20,
+  "openscadStatus": "Installed, GUI acceptance and publication pending; not counted as completed.",
+  "failuresRetained": [
+    {
+      "stage": "First preflight connection",
+      "result": "Existing guest port refused connection; no preflight snapshot or guest mutation occurred. Found missing QEMU and the old capacity assertion failure."
+    },
+    {
+      "stage": "First post-boot Core snapshot",
+      "result": "Core socket was absent because graphical user session had not started. Read-only diagnostics showed Core inactive and Store active. Started existing user services and retained an existing key-authenticated session without changing password/linger settings; full verification then passed."
+    },
+    {
+      "stage": "Readonly review of startup evidence",
+      "result": "Initial post-boot helper checked the two JPEGView output PNGs but omitted input BMPs despite broad preservation flag. Supplementary read-only verification checked both pinned input BMP byte lengths and SHA-256 values successfully; no runtime changes."
+    }
+  ],
+  "limits": [
+    "No true before-reboot guest snapshot was captured while the guest was down; preservation is compared against retained JPEGView final records plus the OpenSCAD successful-install job and generation.",
+    "GUI pixels, login, browser URL detection and OpenSCAD functionality were not observed or revalidated.",
+    "The 128-GiB assertion update keeps exact existing disk identity/backing/base pin and QEMU command validation; no disk recreation, capacity change, trust reset or authentication change."
+  ],
+  "jpegviewInputVerificationSupplement": {
+    "jpegviewTwoInputBmpFilesVerified": true,
+    "checks": [
+      {
+        "fixture": "jpegview-input-fixture.json",
+        "generationId": "gen-job-1790994464257-1",
+        "relativeFile": "input/彩色.bmp",
+        "sizeBytes": 192054,
+        "sha256": "c64eba6205f507b0d573a34f995809d64f2742dbf57540adce2714b48bdf454f",
+        "pinnedSizeAndHashMatch": true
+      },
+      {
+        "fixture": "jpegview-market-input-fixture.json",
+        "generationId": "gen-job-1790995058054-4",
+        "relativeFile": "input/市场彩色.bmp",
+        "sizeBytes": 259254,
+        "sha256": "84e2023c5a5c11c5d9274b75d71b26b9e10bf740823eb5f7656494377588cad8",
+        "pinnedSizeAndHashMatch": true
+      }
+    ],
+    "mutation": false
+  },
+  "jpegviewInputVerificationHelperSha256": "a135e4daa1a0e78a3577b4a6bd7d340a6fc22571257235908926eadc358ce3e4"
+}
