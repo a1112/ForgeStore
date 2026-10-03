@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "trigger": "User reported a Windows host restart and requested restoration of the test environment.",
+  "diagnosis": {
+    "hyperVVm": "FOS-Ubuntu-26.04",
+    "hyperVState": "Running",
+    "newNetworkAddressResolvedBy": "Hyper-V adapter MAC matched to Default Switch neighbour; pinned SSH host key and known_hosts retained.",
+    "oldSshAddressReachable": false,
+    "outerVmService": "forge-windows-rolling-vm-20261002-capacity.service: active",
+    "outerNoVncService": "forge-windows-rolling-novnc-20261002.service: active",
+    "qemuRun": "run-96228816ac6c4b24a29f6d896952a018",
+    "vmInstanceId": "d37397c7-dcee-4d83-b6d2-3b7628de1cba",
+    "qemuPidAtObservation": 4990,
+    "localRemoteDesktopPortPresentBefore": false
+  },
+  "recovery": {
+    "action": "Restore hidden SSH loopback forwarding to the existing noVNC service and update private SSH helper address.",
+    "localBind": "127.0.0.1:6096",
+    "remoteLoopbackPort": 6093,
+    "sshStrictHostKeyChecking": true,
+    "sshExitOnForwardFailure": true,
+    "localTunnelPidAtObservation": 45624,
+    "httpStatus": 200,
+    "httpBodyContainsNoVnc": true,
+    "browserOpenRequested": true,
+    "browserOpenResult": "queued by Codex app; no GUI state observation claimed",
+    "vmRestarted": false,
+    "servicesRestarted": false,
+    "passwordRemoved": false,
+    "authenticationChanged": false
+  },
+  "runtimeVerification": {
+    "coreJobs": 149,
+    "fullStoreRows": 57,
+    "marketEntries": 22,
+    "services": {
+      "compatforge.service": "active",
+      "forge-store.service": "active"
+    },
+    "jobsRowsMarketTrustConfigsGenerationsAndGuardsEqualJpegviewFinal": true,
+    "public24SignedCatalogueFilesBytePreserved": true,
+    "jpegviewInputOutputsPreserved": true,
+    "latestKnownTime": {
+      "before": "2026-10-03T02:43:42.44391294Z",
+      "after": "2026-10-03T02:43:42.44391294Z",
+      "monotonic": true
+    },
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "servicesRestarted": false,
+    "authenticationChanged": false
+  },
+  "acceptedDistinctWindowsApps": 20,
+  "openscad": {
+    "installed": false,
+    "guiAccepted": false,
+    "published": false,
+    "countsAsCompleted": false
+  },
+  "remainingBlocker": "Computer Use stopped this turn before browser capture because it could not verify the Edge URL. Desktop rendering, login and GUI functionality have not been rechecked. A new turn must observe a supported independent browser with the visible noVNC URL; no policy bypass attempted.",
+  "failuresRetained": [
+    {
+      "stage": "First recovery record helper patch",
+      "result": "Patch syntax rejected before file changes; corrected add-file patch then wrote evidence."
+    }
+  ]
+}
