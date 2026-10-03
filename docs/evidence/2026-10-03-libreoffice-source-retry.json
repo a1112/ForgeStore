@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "libreoffice",
+  "version": "26.8.0",
+  "officialMetadataUrl": "https://download.documentfoundation.org/libreoffice/stable/26.8.0/win/x86_64/LibreOffice_26.8.0_Win_x86-64.msi.mirrorlist",
+  "historicallyReviewedArtifact": {
+    "fileName": "LibreOffice_26.8.0_Win_x86-64.msi",
+    "sizeBytes": 374906880,
+    "sha256": "4aa6c6e1895f4055104effcb556bd3362d20c6ad707c149543304f395ef9db95",
+    "basis": "2026-09-30 official mirror metadata review; current mirror metadata was not fetched successfully."
+  },
+  "attempts": [
+    {
+      "environment": "Windows host",
+      "transport": "Python HTTPS with normal certificate validation",
+      "errorType": "URLError",
+      "error": "<urlopen error _ssl.c:1112: The handshake operation timed out>"
+    },
+    {
+      "environment": "isolated build host",
+      "transport": "Python HTTPS with normal certificate validation",
+      "errorType": "URLError",
+      "error": "<urlopen error [Errno 101] Network is unreachable>"
+    },
+    {
+      "environment": "Windows host IPv4",
+      "transport": "curl -4 HTTPS with default certificate validation, 15 second connect timeout",
+      "exitCode": 28,
+      "httpStatus": 0,
+      "error": "Connection timed out after 15013 milliseconds; no HTTP response or verified metadata."
+    }
+  ],
+  "artifactVerified": false,
+  "installed": false,
+  "guiAccepted": false,
+  "marketPublished": false,
+  "countsAsCompleted": false,
+  "previousFailuresPreserved": [
+    "docs/evidence/2026-09-30-msi-source-artifacts.json",
+    "docs/evidence/2026-09-30-libreoffice-mirror-retry.json"
+  ],
+  "trustReset": false,
+  "tlsVerificationWeakened": false,
+  "newInstallationJobSubmitted": false,
+  "limits": [
+    "Three source-metadata attempts failed. This does not establish that every official mirror is unavailable. No unlisted mirror or guessed package was installed.",
+    "The host web fetch tool could not open the mirror list either. Official download landing page was readable and currently mentions download problems; no causal link to these local failures is established."
+  ],
+  "officialDownloadLandingPage": "https://www.libreoffice.org/download/"
+}

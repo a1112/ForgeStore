@@ -193,16 +193,16 @@
     },
     {
       "id": "libreoffice",
-      "stage": "fixed-current-msi-download-failed",
+      "stage": "fixed-msi-current-source-metadata-unreachable",
       "sourcePath": "MacWinManager/Sources/MacWinManagerApp/Resources/Catalog/recipes/libreoffice.json",
       "sourceSha256": "60b8de3c52df0380b039ae07e608c494a63f69d0483195bc4471afcb5384ff12",
       "version": "26.8.0",
       "sha256": "4aa6c6e1895f4055104effcb556bd3362d20c6ad707c149543304f395ef9db95",
       "sizeBytes": 374906880,
       "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
-      "blocker": "Fixed 26.8.0 official metadata reviewed. Redirected mirror reset connection; officially listed BFSU retry HTTP 403, no verified full package. Managed MSI execution is now implemented and Qalculate-tested; LibreOffice artifact download, app-specific installation and GUI/publication remain pending.",
+      "blocker": "Previous full-package download reset and BFSU HTTP 403 retained. Current official mirror metadata retries failed: host TLS handshake timeout, builder network unreachable and host IPv4 connection timeout. No verified full installer or new install job; original fixed size/hash still historical review only. Managed MSI support remains implemented; LibreOffice app-specific GUI/publication remains unverified.",
       "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json",
-      "retryEvidence": "docs/evidence/2026-09-30-libreoffice-mirror-retry.json"
+      "retryEvidence": "docs/evidence/2026-10-03-libreoffice-source-retry.json"
     },
     {
       "id": "ltspice",
@@ -266,7 +266,7 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Retry fixed official LibreOffice artifact download and license review; keep Audacity 4.0.0 GUI failure and all other blocked candidates. Count one distinct application per complete GUI/local publication acceptance.",
+  "next": "Review a fixed official WinDirStat release, license and x64 MSI as the next independent application candidate. Preserve LibreOffice source-access failures, Audacity 4.0.0 GUI failures and all blocked candidates; count only full GUI/local market acceptance.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-03",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
