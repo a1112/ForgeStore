@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "jpegview",
+  "version": "1.3.46",
+  "jobs": [
+    {
+      "id": "job-1790994464257-1",
+      "kind": "install",
+      "status": "succeeded",
+      "generationId": "gen-job-1790994464257-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 4341,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "8e4d1f8f-4716-3c69-943b-46865e53621b",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790994542617-2",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790994464257-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 149877,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790994542617-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790994740097-3",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790994464257-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 32724,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790994740097-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "selectedGeneration": "gen-job-1790994464257-1",
+  "definitionDigest": "sha256:878c4d6c54a0d60c0d5b7b1ef98fd7c39a0491bd36e178f886f2659d077b8ddf",
+  "launcherSha256": "59cf443bd42a6643319898c1f30a6a1355b56281fa6aa5c9c4472fbb81bc8d0f",
+  "runtime": {
+    "binding": {
+      "environment": {
+        "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+        "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+        "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+        "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+        "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "WINEARCH": "win64",
+        "WINEDEBUG": "-all",
+        "WINEDLLOVERRIDES": "mscoree,mshtml=",
+        "WINESERVER": "/usr/bin/wineserver"
+      },
+      "executable": "/usr/bin/wine",
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "providerId": "wine-linux-x86-64-preview",
+      "wineserverExecutable": "/usr/bin/wineserver"
+    },
+    "selection": {
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "provider": "wine"
+    },
+    "version": "11.14"
+  },
+  "allCoreJobsTerminal": true,
+  "totalCoreJobs": 145,
+  "previous142CoreJobsUnchanged": true,
+  "inputFixture": {
+    "generationId": "gen-job-1790994464257-1",
+    "windowsInputFile": "C:\\ForgeQA\\input\\彩色.bmp",
+    "relativeInputFile": "input/彩色.bmp",
+    "sizeBytes": 192054,
+    "sha256": "c64eba6205f507b0d573a34f995809d64f2742dbf57540adce2714b48bdf454f",
+    "width": 320,
+    "height": 200,
+    "format": "24-bit uncompressed BMP",
+    "pattern": "Asymmetric four-color quadrants with a white L in the top-left red quadrant. Top-left red, top-right green, bottom-left blue, bottom-right yellow.",
+    "outputDirectoryEmptyBeforeGui": true
+  },
+  "outputVerification": {
+    "relativeFile": "output/jvoriginal.png",
+    "sizeBytes": 1380,
+    "sha256": "d14b53820306315071c47b3b6733d5993f07f886b0e30b10a21cf11c7ae42c3b",
+    "format": "PNG",
+    "width": 200,
+    "height": 320,
+    "bitDepth": 8,
+    "pngColorType": 2,
+    "interlaced": false,
+    "chunkTypes": [
+      "IHDR",
+      "pHYs",
+      "IDAT",
+      "IEND"
+    ],
+    "inputUnchanged": true,
+    "expectedTransform": "clockwise rotation by 90 degrees",
+    "decodedRgbSha256": "49b58b154f8a05d1e91fc98982ee6cb39d7a0e349f85c43dd88d15cc954146d3",
+    "expectedRotatedRgbSha256": "49b58b154f8a05d1e91fc98982ee6cb39d7a0e349f85c43dd88d15cc954146d3",
+    "exactExpectedPixels": true,
+    "differentPixels": 0,
+    "maximumChannelDelta": 0
+  },
+  "installedLicenseVerification": {
+    "relativeFile": "LICENSE.txt",
+    "sizeBytes": 893,
+    "sha256": "63c5c94f0a6a3b122f677275ac89ee9165e895e0cd1d4ec01147c43a22f28319",
+    "normalization": "CRLF to LF only",
+    "normalizedSizeBytes": 875,
+    "normalizedSha256": "3834a17ceecdf637633fedab1eb95a49fd12c8524a1c24b1edd131c289d3f4ef",
+    "fixedSourceContentMatchesAfterLineEndingNormalization": true,
+    "byteIdenticalToSource": false
+  },
+  "reopenedOutputBytesUnchanged": true,
+  "screenshots": {
+    "2026-10-03-jpegview-about-version.jpg": "2e29d23b50d33497dd26edddf7511a670cf4aacc74b12b3dc6f51c31d1766e46",
+    "2026-10-03-jpegview-original-input-opened.jpg": "5e54910897ba4f0a0ade550332c26b375606c5dc7f8f1be64101504f8d9fa0b5",
+    "2026-10-03-jpegview-original-reopened.jpg": "e11061b4a0890f9b8a14c9785b2c82e8760fe1e85192f02ee8be0893f81df9c3",
+    "2026-10-03-jpegview-original-saved.jpg": "9dd055280aa48b9c3b85b61aa262e1e2d1284f87b6d059fd4e969f9e84c8dd6e"
+  },
+  "limits": [
+    "Controlled Chinese-path 24-bit BMP open, GUI clockwise 90-degree rotation, save processed PNG, explicit visible fresh-process open and normal exit verified. Every decoded PNG RGB pixel matches the expected rotation; original BMP and reopened PNG bytes unchanged.",
+    "Crop, arbitrary rotation, color correction, other formats/encodings/EXIF/ICC/RAW/PSD/animation/batch/slideshow/printing and file association or registry results unverified.",
+    "Official MSI SHA256 matches exact filename row in release-body checksums; API asset digest is absent. Release not marked immutable; exact bytes and fixed source commit pinned. Authenticode, reproducible build and complete component-source/custom-action audit unverified."
+  ]
+}

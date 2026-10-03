@@ -1,0 +1,34 @@
+{
+  "applications": [
+    {
+      "adaptation": "Correct launcher to Program Files/KDiff3/bin/kdiff3.exe and use /S; first failed installation evidence retained.",
+      "guiFileOperation": "passed",
+      "id": "kdiff3",
+      "inputASha256": "eef6b3fa39bbdb58fb28af3f7ac9d3ce112c081e07c3c3b61d590c53dc24908b",
+      "inputBSha256": "c33aa0f457d694175a95b8763d0a682dd00f016938e1c78885625aa0016fae37",
+      "installJobId": "job-1790747482506-19",
+      "launchJobId": "job-1790747560345-20",
+      "launcherSha256": "cfb8e14df21b449c4106ab827056c84cd4c54a569ff5ae3fc2dee468ef5e567a",
+      "outputBytes": 46,
+      "outputSha256": "c33aa0f457d694175a95b8763d0a682dd00f016938e1c78885625aa0016fae37",
+      "reopenJobId": "job-1790747695013-21",
+      "screenshotSha256": "57ac3079d6080d21482488ba11ce21be00223ce07bfc34642aed8bf4d5e4dad5",
+      "sha256": "2d58b4d675934290146faf08a239788ffc36fd6ac2c480456100fb1d8ab2bb16",
+      "size": 81410248,
+      "version": "1.12.4",
+      "workflow": "GUI compare two UTF-8 files with Chinese, select B to resolve conflict, save new output and reopen against B; binary equal reported"
+    }
+  ],
+  "bundledNoticesEvidence": "2026-09-30-kdiff3-files.json",
+  "date": "2026-09-30",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14; UID 1000",
+  "licenseEvidence": [
+    "https://raw.githubusercontent.com/KDE/kdiff3/1.12.4/src/kdiff3.cpp"
+  ],
+  "limits": [
+    "Three-way merge, directory merge and cross-version upgrade not tested.",
+    "Fresh-machine recipe registration, guest online download and remote public distribution not verified.",
+    "Signed local-market lifecycle verification follows this receipt."
+  ],
+  "schemaVersion": 1
+}
