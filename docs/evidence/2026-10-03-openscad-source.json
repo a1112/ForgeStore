@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "openscad",
+  "version": "2021.01",
+  "reviewedAt": "2026-10-03",
+  "releaseUrl": "https://github.com/openscad/openscad/releases/tag/openscad-2021.01",
+  "releaseTag": "openscad-2021.01",
+  "sourceCommit": "41f58fe57c03457a3a8b4dc541ef5654ec3e8c78",
+  "publishedAt": "2021-02-07T00:14:34Z",
+  "immutableRelease": false,
+  "prerelease": false,
+  "artifact": {
+    "fileName": "OpenSCAD-2021.01-x86-64-Installer.exe",
+    "sourceUrl": "https://github.com/openscad/openscad/releases/download/openscad-2021.01/OpenSCAD-2021.01-x86-64-Installer.exe",
+    "sizeBytes": 21876824,
+    "sha256": "fbe1e590e1af2af863f5d92bd263eb4644d0ee29352e3ab566366e87a8f6ed12",
+    "githubApiSizeMatches": true,
+    "githubApiAssetDigest": null,
+    "officialChecksumMatches": true,
+    "checksumFileName": "releases/OpenSCAD-2021.01-x86-64-Installer.exe",
+    "peInstallerMachine": "0x14c",
+    "payloadArchitecture": "x86_64 according to fixed official release filename; installed launcher not yet inspected"
+  },
+  "license": {
+    "mainProgram": "GPL-2.0-or-later with CGAL linking exception",
+    "basis": "Fixed src/mainwin.cc header declares version 2 or later and CGAL exception; fixed COPYING contains full GPL v2 text and exception.",
+    "bundledComponents": "Own terms; complete component correspondence and redistribution audit unverified."
+  },
+  "references": [
+    {
+      "path": "OpenSCAD-2021.01-x86-64-Installer.exe",
+      "requestedUrl": "https://github.com/openscad/openscad/releases/download/openscad-2021.01/OpenSCAD-2021.01-x86-64-Installer.exe",
+      "sizeBytes": 21876824,
+      "sha256": "fbe1e590e1af2af863f5d92bd263eb4644d0ee29352e3ab566366e87a8f6ed12"
+    },
+    {
+      "path": "source/COPYING",
+      "requestedUrl": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/COPYING",
+      "sizeBytes": 18382,
+      "sha256": "1805a29c3bccbc0428ce0048a1dfdeb9b1867677410e99c89c3c30932ae8c7d5"
+    },
+    {
+      "path": "source/README.md",
+      "requestedUrl": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/README.md",
+      "sizeBytes": 11253,
+      "sha256": "a74c6bd3141b0beba7d3a62d923feedd8e2dcf20fadb22ac518c9bd6cfe3d1f7"
+    },
+    {
+      "path": "source/src/mainwin.cc",
+      "requestedUrl": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/mainwin.cc",
+      "sizeBytes": 106115,
+      "sha256": "e0379703c1aaa0a33ec1dc690d0d341f95ce83e2ad93b2f1c3690df32c8fced8"
+    },
+    {
+      "path": "source/scripts/installer.nsi",
+      "requestedUrl": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/scripts/installer.nsi",
+      "sizeBytes": 2335,
+      "sha256": "1acca881d184f495cdc5c8342a1d94c2219b0eb26b2575ed37c25abbaaca3243"
+    },
+    {
+      "path": "source/scripts/installer64.nsi",
+      "requestedUrl": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/scripts/installer64.nsi",
+      "sizeBytes": 203,
+      "sha256": "57d44a33149aa7b184b4de073e44e8232641000dad4d0d1905987b56e39f22c1"
+    },
+    {
+      "path": "installer-upstream.sha256",
+      "requestedUrl": "https://files.openscad.org/OpenSCAD-2021.01-x86-64-Installer.exe.sha256",
+      "sizeBytes": 113,
+      "sha256": "10420b43ea281eec174e983aa45775badea657a26b57d80c7db31ffd9f4c53f0"
+    }
+  ],
+  "installerSourceReview": {
+    "fixedScript": "scripts/installer.nsi",
+    "architectureScript": "scripts/installer64.nsi",
+    "expectedInstallDirectory": "Program Files/OpenSCAD",
+    "expectedLauncher": "openscad.exe",
+    "observedSourceEffects": [
+      "Install program, examples, libraries, fonts, locale, color schemes and templates",
+      "Register .scad file association",
+      "Create all-users Start menu shortcut and uninstaller",
+      "Write HKLM uninstall metadata"
+    ],
+    "limitations": "Bounded source review only; installer correspondence, installed paths, registry results and full safety audit unverified."
+  },
+  "guiToolBlocker": {
+    "tool": "Computer Use @oai/sky",
+    "action": "get_window_state for the one returned Microsoft Edge window",
+    "message": "Computer Use has been stopped for this turn because it could not determine the current browser URL on Windows with enough confidence to enforce policy.",
+    "inputsAfterStop": 0,
+    "classification": "Test tool policy stop; no OpenSCAD installation or functional failure observed.",
+    "nextAction": "User opens existing noVNC URL in Microsoft Edge with visible address bar, then a new turn reobserves the returned browser window. Do not bypass the tool stop."
+  },
+  "installed": false,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "trustMutation": false,
+  "signingAttempted": false,
+  "limitations": [
+    "No installation, GUI modelling, saving, rendering, STL export or fresh reopening yet",
+    "No local market update, rollback or restart evidence for OpenSCAD",
+    "AuthentiCode, independent GPG verification, build reproducibility and complete component redistribution audit unverified"
+  ]
+}

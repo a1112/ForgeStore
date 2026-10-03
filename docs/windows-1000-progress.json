@@ -291,6 +291,24 @@
       "published": false,
       "countsAsCompleted": false,
       "blocker": "Pinned release-branch CI build passed limited GUI editor workflow. Binary About displays GPL v3; reference v26.08.1 main declares GPL_V2 and AppStream LGPL-2.1+. Exact CI build source/license mapping is unverified; reconcile before signing or publication. First launcher-path failure retained."
+    },
+    {
+      "id": "openscad",
+      "name": "OpenSCAD",
+      "version": "2021.01",
+      "stage": "source-verified-gui-tool-blocked",
+      "sourceUrl": "https://github.com/openscad/openscad/releases/download/openscad-2021.01/OpenSCAD-2021.01-x86-64-Installer.exe",
+      "sha256": "fbe1e590e1af2af863f5d92bd263eb4644d0ee29352e3ab566366e87a8f6ed12",
+      "sizeBytes": 21876824,
+      "license": "GPL-2.0-or-later with CGAL linking exception",
+      "sourceCommit": "41f58fe57c03457a3a8b4dc541ef5654ec3e8c78",
+      "artifactEvidence": "docs/evidence/2026-10-03-openscad-source.json",
+      "evidence": "docs/windows-rolling-20261003-openscad-pending.md",
+      "installed": false,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "blocker": "Installer matches official fixed-version checksum and main license is pinned. Computer Use stopped before browser observation because it could not verify the current Edge URL. No installation or GUI workflow performed; requires a visible noVNC URL in an independent supported browser and fresh tool observation."
     }
   ],
   "excludedInternalFixtures": [
@@ -305,11 +323,11 @@
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 20,
-    "explicitlyBlockedCandidates": 10,
+    "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 10
+    "pendingCandidates": 11
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v20/tuf",
@@ -320,7 +338,7 @@
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
     "publicationEvidence": "docs/evidence/2026-10-03-jpegview-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261003-jpegview.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261003-openscad-pending.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json"
