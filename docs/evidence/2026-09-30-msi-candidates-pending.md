@@ -12,3 +12,5 @@ After that session terminated, a bounded retry used the BFSU HTTPS mirror, first
 # 2026-10-03 后续状态
 
 托管 MSI 已实现，并通过 Qalculate! 5.12.0 的安装、真实 GUI 持久文件、签名本地市场缓存更新、回滚及重启验收。详见 [本轮报告](../windows-rolling-20261003-qalculate.md)。上文是 2026-09-30 的历史状态，失败记录保留；其中“未实现”不代表当前状态。Audacity 待逐应用复测，LibreOffice 下载阻塞未解除。Core MSI 上限现为 2 GiB；ForgeStore 上限仍为 1 GiB，JASP 包仍超过市场上限。
+
+2026-10-03 后续：Audacity 4.0.0 托管 MSI 安装成功，但默认及软件渲染的首次启动向导均未推进，两次 GUI 作业取消并保留，未通过验收。官方 3.7.9 维护分支的托管 Inno 安装、真实音调生成/AUP3 保存/WAV 导出/显式重开、签名本地市场更新/回滚和服务重启通过，作为 Audacity 一款计入累计 17 项。详见 [Audacity 报告](../windows-rolling-20261003-audacity.md)。LibreOffice 下载和 JASP 市场体积上限阻塞仍保留。

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "audacity",
+  "version": "3.7.9",
+  "jobs": [
+    {
+      "id": "job-1790987450702-4",
+      "kind": "install",
+      "status": "succeeded",
+      "generationId": "gen-job-1790987450702-4",
+      "events": [
+        {
+          "elapsedMilliseconds": 5849,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790987450702-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790987612870-5",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790987450702-4",
+      "events": [
+        {
+          "elapsedMilliseconds": 877216,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790987612870-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790988541262-6",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790987450702-4",
+      "events": [
+        {
+          "elapsedMilliseconds": 85450,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790988541262-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "selectedGeneration": "gen-job-1790987450702-4",
+  "definitionDigest": "sha256:a6c37b76d718f2e378818dacbb678148e8e4e75bf93885bad4ccb366ec4406c5",
+  "launcherSha256": "300a173a11ebed0d5786e5d5ed984bd812e6e9b944c58c9ae97233e52dbed33f",
+  "runtime": {
+    "binding": {
+      "environment": {
+        "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+        "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+        "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+        "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+        "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "WINEARCH": "win64",
+        "WINEDEBUG": "-all",
+        "WINEDLLOVERRIDES": "mscoree,mshtml=",
+        "WINESERVER": "/usr/bin/wineserver"
+      },
+      "executable": "/usr/bin/wine",
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "providerId": "wine-linux-x86-64-preview",
+      "wineserverExecutable": "/usr/bin/wineserver"
+    },
+    "selection": {
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "provider": "wine"
+    },
+    "version": "11.14"
+  },
+  "allCoreJobsTerminal": true,
+  "totalCoreJobs": 123,
+  "outputVerification": {
+    "applicationId": "audacity",
+    "version": "3.7.9",
+    "generationId": "gen-job-1790987450702-4",
+    "guiJobId": "job-1790987612870-5",
+    "jobStatus": "succeeded",
+    "files": {
+      "audacity-original.wav": {
+        "sizeBytes": 264644,
+        "sha256": "500091313aeeadcf3fbbe09fbebafc1fd3490ac0936dc730ff06e939ed65e1c2"
+      },
+      "audacity-original.aup3": {
+        "sizeBytes": 851968,
+        "sha256": "82ef153d720a1d880167eea0b80a39c06c9844df808b288308ce11a4921b911a"
+      }
+    },
+    "sqliteIntegrity": "ok",
+    "sqliteTables": [
+      "autosave",
+      "project",
+      "sampleblocks",
+      "sqlite_sequence"
+    ],
+    "sampleBlocks": 1,
+    "wav": {
+      "channels": 1,
+      "sampleWidthBytes": 2,
+      "sampleRate": 44100,
+      "frames": 132300,
+      "compression": "NONE"
+    },
+    "audioAnalysis": {
+      "durationSeconds": 3,
+      "expectedToneHz": 440,
+      "positiveCrossingFrequencyHz": 440.0,
+      "peakNormalized": 0.250213623046875,
+      "rmsNormalized": 0.17677670060662604,
+      "tone440Amplitude": 0.24999999218722294,
+      "physicalAudioOutputHeard": false,
+      "recordingTested": false
+    },
+    "installedNotices": {
+      "LICENSE.txt": {
+        "sizeBytes": 73540,
+        "sha256": "1580ffb4a0c6bbb716324c645682964120eae418b9a1c51842cda140343cb139"
+      }
+    }
+  },
+  "reopenedOutputBytesUnchanged": true,
+  "screenshots": {
+    "2026-10-03-audacity-379-playback.jpg": "d0447244b8b453ed2212ab8ad6dd1621bb873759892f43cbdd4f3901619f5410",
+    "2026-10-03-audacity-379-project-reopened.jpg": "62d5f6aaab050a5d342d0053834f8be8ebd0b3a3d06dd75d151c14fec5350866",
+    "2026-10-03-audacity-379-project-saved.jpg": "6e4d63b03aa47abbc49a9e854f045104b47989ef29e3640d5b1cc1dab6edd4f0",
+    "2026-10-03-audacity-379-tone-parameters.jpg": "298fdae6a4b432fbee6609899229ee5d03ff3b9a55b71f5f0593702c1e422744",
+    "2026-10-03-audacity-379-tone-waveform.jpg": "00206d751f09ca6d1681ea83edaa995b225541fc69eb1d8b0dae4148d8b100c0",
+    "2026-10-03-audacity-379-wav-export-parameters.jpg": "9b097ffa656fb5ca76799d06a7c71c9fa4c6574f1c8b8e6efbe71c5b09067409"
+  },
+  "limits": [
+    "Physical audio output was not independently heard. Playback progress and output meter were observed; recording and audio device input remain unverified.",
+    "Acceptance covers sine tone generation, local AUP3 save, WAV export and explicit AUP3 load in a fresh managed process only. Cloud upload, plugins, effects, multitrack editing and advanced formats unverified."
+  ]
+}

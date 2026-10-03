@@ -140,6 +140,17 @@
       "signedCatalogue": "catalogue/candidate-v16/tuf",
       "publication": "docs/evidence/2026-10-03-qalculate-publication.json",
       "limitation": "Qt exact arithmetic/unit conversion and native persistent-variable save/reopen; verified-cache same-version market update with fresh qamarket save/reopen, newest-other-ready canary rollback/GUI, explicit Core original rollback/qaforge reopen and Core/Store restart passed. No explicit file chooser/CSV/advanced/GTK/CLI workflow, guest online download, fresh-machine registration, cross-version upgrade, Authenticode, upstream checksum match or reproducible-build claim. Five failed installs retained; custom directory spaces rejected."
+    },
+    {
+      "id": "audacity",
+      "version": "3.7.9",
+      "sha256": "e3096847ac4270d304e9b112d153642a72b66b42e13f83a32f06eecfb4ce7e48",
+      "sizeBytes": 19943880,
+      "evidence": "docs/evidence/windows-audacity-20261003.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v17/tuf",
+      "publication": "docs/evidence/2026-10-03-audacity-publication.json",
+      "failureEvidence": "docs/evidence/2026-10-03-audacity-failures.json",
+      "limitation": "Maintenance branch 3.7.9 only: GUI sine generation, AUP3 save/explicit fresh-process reopen, PCM WAV export and playback indicators; verified-cache local same-version update repeats independent 880 Hz workflow, original-generation rollback/reopen and Core/Store restart passed. 4.0.0 first-launch wizard unresolved; informational welcome HTML links have layout issues. Recording/device input, heard physical output, effects/plugins/cloud, guest online download, fresh registration, cross-version upgrade, Authenticode/reproducibility/full component audit unverified."
     }
   ],
   "queue": [
@@ -230,16 +241,6 @@
       "blocker": "GUI reaches verified host but server only offers publickey authentication. No SFTP upload/download/edit acceptance, signed acceptance or market publication. Launch exit success is not functional acceptance."
     },
     {
-      "id": "audacity",
-      "version": "4.0.0",
-      "stage": "fixed-msi-artifact-verified-app-specific-execution-pending",
-      "sha256": "2aecc44d28a004d15ae7c23c099f232ba8c5b3e6b19ebdbaf7d6c596316dc5b3",
-      "sizeBytes": 49532928,
-      "evidence": "docs/evidence/2026-09-30-msi-candidates-pending.md",
-      "blocker": "Fixed official MSI size, SHA-256 and compound-file magic verified. Managed MSI execution is now implemented and Qalculate-tested; Audacity-specific licensing/recipe, installation, audio GUI save/reopen and publication retest remain pending.",
-      "artifactEvidence": "docs/evidence/2026-09-30-msi-source-artifacts.json"
-    },
-    {
       "id": "kate",
       "version": "26.08.1-build12388",
       "observedGuiVersion": "26.08.1",
@@ -265,28 +266,28 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Audacity 4.0.0 fixed official MSI app-specific licensing/recipe and real audio file workflow; keep failed/blocked candidates and trust state; one distinct application per complete acceptance/publication.",
+  "next": "Retry fixed official LibreOffice artifact download and license review; keep Audacity 4.0.0 GUI failure and all other blocked candidates. Count one distinct application per complete GUI/local publication acceptance.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-03",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 16,
+    "acceptedLocalMarket": 17,
     "explicitlyBlockedCandidates": 10,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
-    "executionPendingCandidates": 1,
-    "pendingCandidates": 11
+    "executionPendingCandidates": 0,
+    "pendingCandidates": 10
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v16/tuf",
-    "metadataVersion": 25,
-    "catalogueEntries": 18,
-    "acceptedDistinctWindowsApps": 16,
+    "signedCatalogue": "catalogue/candidate-v17/tuf",
+    "metadataVersion": 26,
+    "catalogueEntries": 19,
+    "acceptedDistinctWindowsApps": 17,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-03-qalculate-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-03-audacity-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261003-qalculate.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261003-audacity.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json"

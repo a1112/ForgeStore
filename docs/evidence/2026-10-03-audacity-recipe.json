@@ -1,0 +1,33 @@
+{
+  "bottleId": "gui-audacity-379",
+  "category": "multimedia",
+  "compatibilityRating": "unknown",
+  "id": "audacity",
+  "installer": {
+    "arguments": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/DIR=C:\\Audacity379",
+      "/LOG"
+    ],
+    "fileName": "audacity-win-3.7.9-64bit.exe",
+    "sha256": "e3096847ac4270d304e9b112d153642a72b66b42e13f83a32f06eecfb4ce7e48"
+  },
+  "launchers": [
+    {
+      "executable": "Audacity379/Audacity.exe",
+      "id": "main",
+      "name": "Audacity"
+    }
+  ],
+  "name": "Audacity",
+  "publisher": "Audacity Team",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000",
+    "audacity-3-maintenance-branch"
+  ],
+  "version": "3.7.9"
+}

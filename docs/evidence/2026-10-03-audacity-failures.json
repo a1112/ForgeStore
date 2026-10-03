@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "audacity",
+  "notAcceptedVersion": "4.0.0",
+  "artifact": {
+    "fileName": "audacity-win-4.0.0-x86_64.msi",
+    "sizeBytes": 49532928,
+    "sha256": "2aecc44d28a004d15ae7c23c099f232ba8c5b3e6b19ebdbaf7d6c596316dc5b3",
+    "fixedUrl": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.0/audacity-win-4.0.0-x86_64.msi"
+  },
+  "jobs": [
+    {
+      "id": "job-1790986345905-1",
+      "kind": "install",
+      "generationId": "gen-job-1790986345905-1",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 5104,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790986345905-1/prefix",
+          "requestId": "e544adaa-2c65-cc21-fc14-19750daef6e3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5146,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "e544adaa-2c65-cc21-fc14-19750daef6e3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "environmentOverride": {}
+    },
+    {
+      "id": "job-1790986436431-2",
+      "kind": "launch",
+      "generationId": "gen-job-1790986345905-1",
+      "status": "cancelled",
+      "events": [
+        {
+          "elapsedMilliseconds": 344298,
+          "kind": "terminate-requested",
+          "message": "termination requested",
+          "processId": 26046,
+          "requestId": "job-1790986436431-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 344333,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790986345905-1/prefix",
+          "requestId": "job-1790986436431-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        },
+        {
+          "elapsedMilliseconds": 344522,
+          "exit": {
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "job-1790986436431-2",
+          "schemaVersion": "1",
+          "sequence": 3
+        }
+      ],
+      "environmentOverride": {}
+    },
+    {
+      "id": "job-1790986826881-3",
+      "kind": "launch",
+      "generationId": "gen-job-1790986345905-1",
+      "status": "cancelled",
+      "events": [
+        {
+          "elapsedMilliseconds": 311619,
+          "kind": "terminate-requested",
+          "message": "termination requested",
+          "processId": 26492,
+          "requestId": "job-1790986826881-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 311639,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1790986345905-1/prefix",
+          "requestId": "job-1790986826881-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        },
+        {
+          "elapsedMilliseconds": 311722,
+          "exit": {
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "job-1790986826881-3",
+          "schemaVersion": "1",
+          "sequence": 3
+        }
+      ],
+      "environmentOverride": {
+        "QT_QUICK_BACKEND": "software"
+      }
+    }
+  ],
+  "generationRetained": true,
+  "guiFailure": "Managed MSI installation succeeded, but the first-launch Qt Quick wizard did not advance under the default or software rendering backend. Both GUI jobs were explicitly cancelled by the owning Core service after observation. No 4.0 acceptance, onboarding bypass or market publication.",
+  "logObservations": [
+    "DirectComposition device creation failed with COM 0x80004001 (not implemented).",
+    "FirstLaunchSetupDialog reports a missing floating property; FlatButton reports QML binding loops.",
+    "Return/Escape actions appeared in the main-thread log; a complete process/main-thread deadlock is not established."
+  ],
+  "defaultGuiLogSha256": "4b6ae3d05cc82cee0d61dd1f129ac4ad95178ab03c54fe907ea2a0a70c16daf9",
+  "rootCauseEstablished": false,
+  "screenshots": {
+    "2026-10-03-audacity-software-wizard-unresponsive.jpg": "a99e44ad5a6761de35849e91e869c1265291f31bc23dc322506a26d61b83772d",
+    "2026-10-03-audacity-update-notice.jpg": "c15d02c44a7364ccd692ae0ec86c4ac695b2a1420a5e02581efd6b70ffa35223",
+    "2026-10-03-audacity-wizard-unresponsive.jpg": "4be91dcf38c0dd3072f548e45cc63c2caf8d7b63dba368d96323262caf2d060c"
+  },
+  "maintenanceBranchStartupLimitation": {
+    "screenshot": "2026-10-03-audacity-379-startup-layout.jpg",
+    "sha256": "a2b3ffbdca245ba8812d60efdd6d58c25753fe9cf1cc8551c55e588a80ea4061",
+    "observation": "Welcome/update informational HTML hyperlinks rendered vertically. Informational update notices were closed normally, Welcome OK opened the native editor. No cloud or MuseHub link was followed, no application upgrade/terms acceptance or privacy preference changes were performed. Editor tone/save/export/open dialogs functioned."
+  },
+  "harnessFailuresRetained": [
+    "Unauthenticated GitHub release API returned HTTP 403 rate limit; existing authenticated gh API obtained official release metadata.",
+    "Builder HTTPS license fetch reset the TLS connection; a normal verified HTTPS host fetch succeeded and transferred exact pinned bytes. Certificate validation was not weakened.",
+    "Full file path typed through noVNC produced an invalid-character save warning. Cancelled warning, navigated C drive and ForgeQA through file picker, entered basename and saved normally. No output fixture was injected.",
+    "An initial Silence menu selection was cancelled, then Tone chosen; the created empty track was populated by the real tone operation.",
+    "Two JavaScript coordinate calls contained an undefined variable and failed before any UI action.",
+    "First restart helper accessed Core socket immediately after systemctl restart before it was ready, causing ENOENT. Retained original before snapshot, verified recovered Core against it, waited for readiness and completed Store restart without repeating Core restart. No trust reset or job/generation history rewrite.",
+    "Initial host Python source-file invocation rejected the valid UTF-8 Chinese report script before executing it. A read_bytes UTF-8 decode and compile check passed; adding an explicit UTF-8 encoding declaration then executed normally. No publication/ledger mutation occurred during the failed invocation."
+  ]
+}
