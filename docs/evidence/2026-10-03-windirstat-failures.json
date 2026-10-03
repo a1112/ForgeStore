@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "windirstat",
+  "applicationWorkflowFailures": [],
+  "harnessFailuresRetained": [
+    "Initial checksum script tested a lowercase digest against official uppercase text. Installer and checksum-file byte hashes already matched API pins. Read actual SHA256/WinDirStat-x64.msi row, compare hexadecimal case-insensitively and preserve original checksum bytes. No installation or output generation occurred during this failure.",
+    "noVNC toolbar overlapped a file-picker navigation control; moved the dialog through its title bar and used visible folder navigation. No alternate output generation.",
+    "An initial Ctrl+L did not open the import picker; used the observed File > Load Results From CSV/JSON menu.",
+    "Initial generated market cache helper accidentally changed the expected 19943880-byte Audacity constant to 20943880 during entry-count replacement; assertion stopped before cache insertion or Store enqueue. Replaced with verified WinDirStat size 2433024 and retried. This was not an installer digest mismatch.",
+    "Initial market-launch probe ran while the asynchronous update was still running and stopped before GUI/fixture creation. Waited for a terminal Store state using bounded polling, then launched the successful generation.",
+    "Ctrl+S did not open the application save picker; used the visible File menu (actual shortcut Ctrl+Alt+S)."
+  ],
+  "authentication": "Existing authorized login reused after automatic lock; password and authentication settings unchanged.",
+  "elevation": "Declined run-elevated prompt and unchecked extended scanning before controlled-folder scan."
+}

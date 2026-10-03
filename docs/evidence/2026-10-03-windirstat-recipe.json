@@ -1,0 +1,37 @@
+{
+  "bottleId": "gui-windirstat",
+  "category": "utilities",
+  "compatibilityRating": "unknown",
+  "id": "windirstat",
+  "installer": {
+    "fileName": "WinDirStat-2.9.0-x64.msi",
+    "msi": {
+      "architecture": "x86_64",
+      "handler": {
+        "action": "install",
+        "kind": "msiexec",
+        "properties": {},
+        "reboot": "suppress",
+        "ui": "none"
+      },
+      "maximumRuntimeMilliseconds": 300000,
+      "sizeBytes": 2433024
+    },
+    "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d"
+  },
+  "launchers": [
+    {
+      "executable": "Program Files/WinDirStat/WinDirStat.exe",
+      "id": "main",
+      "name": "WinDirStat"
+    }
+  ],
+  "name": "WinDirStat",
+  "publisher": "WinDirStat Team",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000",
+    "managed-msi"
+  ],
+  "version": "2.9.0"
+}

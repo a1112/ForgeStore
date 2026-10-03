@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "windirstat",
+  "version": "2.9.0",
+  "jobs": [
+    {
+      "id": "job-1790990708319-1",
+      "kind": "install",
+      "status": "succeeded",
+      "generationId": "gen-job-1790990708319-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 4319,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "3b927f48-93a0-1c8b-2435-43e3ccc9a2e3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790990760531-2",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790990708319-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 526920,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790990760531-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790991316284-3",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790990708319-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 75084,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790991316284-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "selectedGeneration": "gen-job-1790990708319-1",
+  "definitionDigest": "sha256:f612a12685ddfef092343ea54aac1a801f0c11542d562f6cef9d9710b53cdfb4",
+  "launcherSha256": "fe67a2377a176ede389816e8ca667d5588e6032403ae1a2ac913124739d71447",
+  "runtime": {
+    "binding": {
+      "environment": {
+        "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+        "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+        "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+        "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+        "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "WINEARCH": "win64",
+        "WINEDEBUG": "-all",
+        "WINEDLLOVERRIDES": "mscoree,mshtml=",
+        "WINESERVER": "/usr/bin/wineserver"
+      },
+      "executable": "/usr/bin/wine",
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "providerId": "wine-linux-x86-64-preview",
+      "wineserverExecutable": "/usr/bin/wineserver"
+    },
+    "selection": {
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "provider": "wine"
+    },
+    "version": "11.14"
+  },
+  "allCoreJobsTerminal": true,
+  "totalCoreJobs": 130,
+  "previous127CoreJobsUnchanged": true,
+  "inputFixture": {
+    "schemaVersion": 1,
+    "purpose": "Controlled pre-existing scan inputs only; application must GUI-create its own saved scan/export output.",
+    "generationId": "gen-job-1790990708319-1",
+    "windowsInputDirectory": "C:\\ForgeQA\\input",
+    "windowsOutputDirectory": "C:\\ForgeQA\\output",
+    "files": {
+      "a.bin": {
+        "sizeBytes": 1024,
+        "sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9"
+      },
+      "nested/b.bin": {
+        "sizeBytes": 2048,
+        "sha256": "10fc3c51a152e90e5b90319b601d92ccf37290ef53c35ff92507687d8a911a08"
+      },
+      "nested/deeper/c.txt": {
+        "sizeBytes": 38,
+        "sha256": "09b1d4637d5aeba8cf35b9ded05fc08c92315c95744e23273adfacb045aa631a"
+      },
+      "nested/中文.txt": {
+        "sizeBytes": 19,
+        "sha256": "579e9c7c61f74cc5a232063cb682841fdfac1482aec8838f06054f845e88a1a2"
+      }
+    },
+    "totalLogicalBytes": 3129,
+    "fileCount": 4,
+    "subdirectoryCount": 2,
+    "outputDirectoryEmptyBeforeGui": true
+  },
+  "outputVerification": {
+    "fileName": "wdoriginal.csv",
+    "sizeBytes": 808,
+    "sha256": "8b6983f157c31a8ccdab2fe32eb89ccd2d9ff764ebec14cd55ac8d60d238992c",
+    "csvDataRows": [
+      {
+        "Name": "C:\\ForgeQA\\input",
+        "Files": "4",
+        "Folders": "2",
+        "Logical Size": "3129",
+        "Physical Size": "16384",
+        "Attributes": "",
+        "Last Change": "2026-10-03T01:26:00Z",
+        "WinDirStat Attributes": "0x30000004",
+        "Index": "0x0000000000000000"
+      },
+      {
+        "Name": "C:\\ForgeQA\\input\\a.bin",
+        "Files": "0",
+        "Folders": "0",
+        "Logical Size": "1024",
+        "Physical Size": "4096",
+        "Attributes": "A",
+        "Last Change": "2026-10-03T01:26:00Z",
+        "WinDirStat Attributes": "0x20000008",
+        "Index": "0x00000000003009D6"
+      },
+      {
+        "Name": "C:\\ForgeQA\\input\\nested",
+        "Files": "3",
+        "Folders": "1",
+        "Logical Size": "2105",
+        "Physical Size": "12288",
+        "Attributes": "",
+        "Last Change": "2026-10-03T01:26:00Z",
+        "WinDirStat Attributes": "0x20000004",
+        "Index": "0x00000000003009D3"
+      },
+      {
+        "Name": "C:\\ForgeQA\\input\\nested\\b.bin",
+        "Files": "0",
+        "Folders": "0",
+        "Logical Size": "2048",
+        "Physical Size": "4096",
+        "Attributes": "A",
+        "Last Change": "2026-10-03T01:26:00Z",
+        "WinDirStat Attributes": "0x20000008",
+        "Index": "0x00000000003009D7"
+      },
+      {
+        "Name": "C:\\ForgeQA\\input\\nested\\deeper",
+        "Files": "1",
+        "Folders": "0",
+        "Logical Size": "38",
+        "Physical Size": "4096",
+        "Attributes": "",
+        "Last Change": "2026-10-03T01:26:00Z",
+        "WinDirStat Attributes": "0x20000004",
+        "Index": "0x00000000003009D4"
+      },
+      {
+        "Name": "C:\\ForgeQA\\input\\nested\\deeper\\c.txt",
+        "Files": "0",
+        "Folders": "0",
+        "Logical Size": "38",
+        "Physical Size": "4096",
+        "Attributes": "A",
+        "Last Change": "2026-10-03T01:26:00Z",
+        "WinDirStat Attributes": "0x20000008",
+        "Index": "0x00000000003009D8"
+      },
+      {
+        "Name": "C:\\ForgeQA\\input\\nested\\中文.txt",
+        "Files": "0",
+        "Folders": "0",
+        "Logical Size": "19",
+        "Physical Size": "4096",
+        "Attributes": "A",
+        "Last Change": "2026-10-03T01:26:00Z",
+        "WinDirStat Attributes": "0x20000008",
+        "Index": "0x00000000003009D9"
+      }
+    ],
+    "fileCount": 4,
+    "subdirectoryCount": 2,
+    "totalLogicalBytes": 3129,
+    "allFileNamesAndLogicalSizesMatched": true,
+    "inputFixtureUnchanged": true
+  },
+  "reopenedOutputBytesUnchanged": true,
+  "screenshots": {
+    "2026-10-03-windirstat-about-license.jpg": "e5c6c36197e683406194c2e63292d09d9f9cae3e15fb27dfeb5d410daa13f7e6",
+    "2026-10-03-windirstat-original-reopened.jpg": "3d721f0aa712bff0bb64c43250b6240e7545ed9cd894587de9bc382c01902bbe",
+    "2026-10-03-windirstat-original-saved.jpg": "24be81eacad859dc2896dd878298eaa42716cae21ecfdfac61933d9fb7f6f6d6",
+    "2026-10-03-windirstat-original-scan.jpg": "0bb96e6bf33ac29f59e365b0465a7504716e1d086c341115ad0d0c2ce50cf6b1"
+  },
+  "limits": [
+    "Acceptance covers ordinary user-permission controlled-folder scan, nested and Chinese file names, GUI CSV save, explicit CSV load in a fresh managed process and normal exit only.",
+    "Whole disk scan, elevated/extended scanning, duplicate detection, cleanup/deletion, physical disk allocation correctness and JSON export unverified. Physical-size CSV values are retained as observed Wine values, not asserted to match native NTFS.",
+    "CSV import changes displayed size proportions from the initial physical-size view to logical-size proportions; saved logical sizes and counts match controlled inputs."
+  ]
+}

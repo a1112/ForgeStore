@@ -1,0 +1,288 @@
+{
+  "applicationId": "windirstat",
+  "version": "2.9.0",
+  "artifactSha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d",
+  "sizeBytes": 2433024,
+  "guestStaged": true,
+  "inspectorBinarySha256": "d5d8f21631f3d8c531392c478badf9c550a9d484da2f4e087fe742ac936b50eb",
+  "tables": [
+    {
+      "columns": [
+        "Property",
+        "Value"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"ALLUSERS\"",
+          "\"1\""
+        ],
+        [
+          "\"ARPCONTACT\"",
+          "\"team@windirstat.net\""
+        ],
+        [
+          "\"ARPHELPLINK\"",
+          "\"https://windirstat.net\""
+        ],
+        [
+          "\"ARPPRODUCTICON\"",
+          "\"WinDirStat.ico\""
+        ],
+        [
+          "\"ARPREADME\"",
+          "\"https://windirstat.net\""
+        ],
+        [
+          "\"ARPSIZE\"",
+          "\"2699\""
+        ],
+        [
+          "\"ARPURLINFOABOUT\"",
+          "\"https://windirstat.net\""
+        ],
+        [
+          "\"ARPURLUPDATEINFO\"",
+          "\"https://windirstat.net\""
+        ],
+        [
+          "\"ARPCOMMENTS\"",
+          "\"WinDirStat 2.9.0 (x64)\""
+        ],
+        [
+          "\"WIXUI_INSTALLDIR\"",
+          "\"INSTALLFOLDER\""
+        ],
+        [
+          "\"Manufacturer\"",
+          "\"WinDirStat Team\""
+        ],
+        [
+          "\"ProductCode\"",
+          "\"{F0A81AE9-2903-413F-A65F-20F08FB56143}\""
+        ],
+        [
+          "\"ProductLanguage\"",
+          "\"1033\""
+        ],
+        [
+          "\"ProductName\"",
+          "\"WinDirStat 2.9.0\""
+        ],
+        [
+          "\"ProductVersion\"",
+          "\"2.9.0\""
+        ],
+        [
+          "\"UpgradeCode\"",
+          "\"{46F106C9-090C-43D0-8815-D03BA9FA55A9}\""
+        ],
+        [
+          "\"DefaultUIFont\"",
+          "\"WixUI_Font_Normal\""
+        ],
+        [
+          "\"ARPNOMODIFY\"",
+          "\"1\""
+        ],
+        [
+          "\"ErrorDialog\"",
+          "\"ErrorDlg\""
+        ],
+        [
+          "\"WixUIRMOption\"",
+          "\"UseRM\""
+        ],
+        [
+          "\"SecureCustomProperties\"",
+          "\"BURNMSIMODIFY;BURNMSIREPAIR;BURNMSIUNINSTALL;OLDPRODUCTS;WIX_DOWNGRADE_DETECTED;WIX_UPGRADE_DETECTED\""
+        ]
+      ],
+      "table": "Property"
+    },
+    {
+      "columns": [
+        "Directory",
+        "Directory_Parent",
+        "DefaultDir"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"INSTALLFOLDER\"",
+          "\"ProgramFiles64Folder\"",
+          "\"cmavwgk4|WinDirStat\""
+        ],
+        [
+          "\"ProgramFiles64Folder\"",
+          "\"TARGETDIR\"",
+          "\"PFiles64\""
+        ],
+        [
+          "\"TARGETDIR\"",
+          "NULL",
+          "\"SourceDir\""
+        ],
+        [
+          "\"ProgramMenuFolder\"",
+          "\"TARGETDIR\"",
+          "\"PMenu\""
+        ],
+        [
+          "\"TempFolder\"",
+          "\"TARGETDIR\"",
+          "\"Temp\""
+        ],
+        [
+          "\"DesktopFolder\"",
+          "\"TARGETDIR\"",
+          "\"Desktop\""
+        ]
+      ],
+      "table": "Directory"
+    },
+    {
+      "columns": [
+        "Component",
+        "ComponentId",
+        "Directory_",
+        "Attributes",
+        "Condition",
+        "KeyPath"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"Component_Main\"",
+          "\"{48E1104D-2466-4ADC-8BC0-521B6EBA8621}\"",
+          "\"INSTALLFOLDER\"",
+          "256",
+          "NULL",
+          "\"File_Main\""
+        ],
+        [
+          "\"Component_DesktopShortcut\"",
+          "\"{82879C46-B937-405B-8931-EB8FE3CF606A}\"",
+          "\"DesktopFolder\"",
+          "260",
+          "\"DESKTOP_SHORTCUT\"",
+          "\"regQ.Non9OPG9.6UCWLAd8o0G3wAyQ\""
+        ],
+        [
+          "\"Component_AddToPath\"",
+          "\"{D5A7D5D0-3D45-4A41-8F4F-6F8E6C2A9F13}\"",
+          "\"INSTALLFOLDER\"",
+          "256",
+          "\"ADD_TO_PATH\"",
+          "NULL"
+        ],
+        [
+          "\"Component_ContextMenuEntry\"",
+          "\"{7B6A2A2E-BF9E-4F37-8EAA-0E7E6B98D87A}\"",
+          "\"TARGETDIR\"",
+          "260",
+          "\"CONTEXTMENU_ENTRY\"",
+          "\"regJmejptQoBnDFD4vr1vbk5lgtq_E\""
+        ]
+      ],
+      "table": "Component"
+    },
+    {
+      "columns": [
+        "File",
+        "Component_",
+        "FileName",
+        "FileSize",
+        "Version",
+        "Language",
+        "Attributes",
+        "Sequence"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"File_Main\"",
+          "\"Component_Main\"",
+          "\"ud-2xcrt.exe|WinDirStat.exe\"",
+          "2763952",
+          "\"2.9.0.2158\"",
+          "\"0\"",
+          "512",
+          "1"
+        ]
+      ],
+      "table": "File"
+    },
+    {
+      "columns": [
+        "DiskId",
+        "LastSequence",
+        "DiskPrompt",
+        "Cabinet",
+        "VolumeLabel",
+        "Source"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "1",
+          "1",
+          "NULL",
+          "\"#cab1.cab\"",
+          "NULL",
+          "NULL"
+        ]
+      ],
+      "table": "Media"
+    },
+    {
+      "columns": [
+        "Action",
+        "Type",
+        "Source",
+        "Target",
+        "ExtendedType"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"SetARPINSTALLLOCATION\"",
+          "51",
+          "\"ARPINSTALLLOCATION\"",
+          "\"[INSTALLFOLDER]\"",
+          "NULL"
+        ],
+        [
+          "\"DoLegacyUninstall\"",
+          "3154",
+          "\"File_Main\"",
+          "\"/LegacyUninstall\"",
+          "NULL"
+        ],
+        [
+          "\"SetDESKTOP_SHORTCUT\"",
+          "307",
+          "\"DESKTOP_SHORTCUT\"",
+          "\"1\"",
+          "NULL"
+        ],
+        [
+          "\"SetCONTEXTMENU_ENTRY\"",
+          "307",
+          "\"CONTEXTMENU_ENTRY\"",
+          "\"1\"",
+          "NULL"
+        ],
+        [
+          "\"SetADD_TO_PATH\"",
+          "307",
+          "\"ADD_TO_PATH\"",
+          "\"1\"",
+          "NULL"
+        ]
+      ],
+      "table": "CustomAction"
+    }
+  ],
+  "limits": "Read-only bounded review of six MSI tables, not a complete custom-action/security audit. No manual package extraction substituted for installation."
+}

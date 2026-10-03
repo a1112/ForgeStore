@@ -151,6 +151,17 @@
       "publication": "docs/evidence/2026-10-03-audacity-publication.json",
       "failureEvidence": "docs/evidence/2026-10-03-audacity-failures.json",
       "limitation": "Maintenance branch 3.7.9 only: GUI sine generation, AUP3 save/explicit fresh-process reopen, PCM WAV export and playback indicators; verified-cache local same-version update repeats independent 880 Hz workflow, original-generation rollback/reopen and Core/Store restart passed. 4.0.0 first-launch wizard unresolved; informational welcome HTML links have layout issues. Recording/device input, heard physical output, effects/plugins/cloud, guest online download, fresh registration, cross-version upgrade, Authenticode/reproducibility/full component audit unverified."
+    },
+    {
+      "id": "windirstat",
+      "version": "2.9.0",
+      "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d",
+      "sizeBytes": 2433024,
+      "evidence": "docs/evidence/windows-windirstat-20261003.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v18/tuf",
+      "publication": "docs/evidence/2026-10-03-windirstat-publication.json",
+      "failureEvidence": "docs/evidence/2026-10-03-windirstat-failures.json",
+      "limitation": "Ordinary-permission controlled scan, nested/Chinese paths, GUI CSV save and explicit fresh-process import; independent five-file updated scan/save/import, original-generation rollback/import and Core/Store restart passed. Whole disk/elevated scan, duplicate detection, deletion, JSON export, NTFS physical allocation correctness, guest online download, fresh registration, cross-version upgrade, Authenticode/reproducibility/full component/custom-action audit unverified."
     }
   ],
   "queue": [
@@ -266,12 +277,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Review a fixed official WinDirStat release, license and x64 MSI as the next independent application candidate. Preserve LibreOffice source-access failures, Audacity 4.0.0 GUI failures and all blocked candidates; count only full GUI/local market acceptance.",
+  "next": "Select next uncompleted candidate with fixed official installer/license, real GUI file workflow and verified local signed market lifecycle. Keep LibreOffice source failures, Audacity 4.0.0 GUI failure and other blocked candidates.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-03",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 17,
+    "acceptedLocalMarket": 18,
     "explicitlyBlockedCandidates": 10,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -279,15 +290,15 @@
     "pendingCandidates": 10
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v17/tuf",
-    "metadataVersion": 26,
-    "catalogueEntries": 19,
-    "acceptedDistinctWindowsApps": 17,
+    "signedCatalogue": "catalogue/candidate-v18/tuf",
+    "metadataVersion": 27,
+    "catalogueEntries": 20,
+    "acceptedDistinctWindowsApps": 18,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-03-audacity-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-03-windirstat-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261003-audacity.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261003-windirstat.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json"

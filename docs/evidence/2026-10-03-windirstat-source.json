@@ -1,0 +1,54 @@
+{
+  "applicationId": "windirstat",
+  "version": "2.9.0",
+  "tag": "release/v2.9.0",
+  "sourceCommit": "9bf36ccd282d7e5059faff78896e677b54d50727",
+  "releaseUrl": "https://github.com/windirstat/windirstat/releases/tag/release/v2.9.0",
+  "publishedAt": "2026-09-26T20:32:48Z",
+  "immutableRelease": true,
+  "prerelease": false,
+  "artifact": {
+    "fileName": "WinDirStat-2.9.0-x64.msi",
+    "upstreamAssetName": "WinDirStat-x64.msi",
+    "sourceUrl": "https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat-x64.msi",
+    "sizeBytes": 2433024,
+    "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d",
+    "publishedGitHubAssetDigestMatched": true,
+    "officialHashFileUrl": "https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat-Hashes.txt",
+    "officialHashFileSha256": "fe501649d4ba3b22bb6e330f23652ac75b860750fdf4850edd1d02e0515992b9",
+    "officialHashFileContainsInstallerDigest": true,
+    "compoundFileMagicVerified": true,
+    "localBasenameReason": "Versioned local basename avoids collision across upstream releases; bytes match fixed upstream WinDirStat-x64.msi."
+  },
+  "license": {
+    "fixedUrl": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/LICENSE.md",
+    "sizeBytes": 17886,
+    "sha256": "5d05a329bdd65bc1212fda57942ea90a2a810ff7ce192dc38d7042a55caa4a28",
+    "classificationPending": false,
+    "spdx": "GPL-2.0-only",
+    "basis": "Fixed release README explicitly says application GPL v2 and forbids upgrading beyond v2. Resource license and MSI license references pinned at the same exact commit; parts of source and CC-BY-3.0 logo retain their own terms.",
+    "fixedAdditionalReferences": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/README.md",
+        "sizeBytes": 8122,
+        "sha256": "dd5b873c2547cb1347e28e37418873e82bc627701e7e64630230e77dbdee12eb"
+      },
+      "windirstat/res/license.txt": {
+        "url": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/windirstat/res/license.txt",
+        "sizeBytes": 17985,
+        "sha256": "4f2416509c30c4f0c4de101cc30c571e3be33fdb5c42cabc0d2915e8ed5ea51e"
+      },
+      "setup/msi/license.rtf": {
+        "url": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/setup/msi/license.rtf",
+        "sizeBytes": 36675,
+        "sha256": "7cb73d87857982c0b3c8b06b9907f01b3c18c1d435c01df75406114a8b184d1d"
+      }
+    },
+    "completeComponentSourceAudit": false
+  },
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "sourceHarnessFailures": [
+    "Initial checksum script tested a lowercase digest against official uppercase text. Installer and checksum-file byte hashes already matched API pins. Read actual SHA256/WinDirStat-x64.msi row, compare hexadecimal case-insensitively and preserve original checksum bytes. No installation or output generation occurred during this failure."
+  ]
+}

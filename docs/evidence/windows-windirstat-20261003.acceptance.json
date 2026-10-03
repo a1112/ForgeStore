@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "environment": "Original isolated ForgeOS v12 x86_64 VM, Wine 11.14, Core managed-MSI-v10. Official fixed MSI installed via supported managed msiexec with default properties; no manual extraction. Existing authorized login used, authentication unchanged.",
+  "applications": [
+    {
+      "id": "windirstat",
+      "version": "2.9.0",
+      "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d",
+      "size": 2433024,
+      "installJobId": "job-1790990708319-1",
+      "generationId": "gen-job-1790990708319-1",
+      "definitionDigest": "sha256:f612a12685ddfef092343ea54aac1a801f0c11542d562f6cef9d9710b53cdfb4",
+      "launcherSha256": "fe67a2377a176ede389816e8ca667d5588e6032403ae1a2ac913124739d71447",
+      "launchJobId": "job-1790990760531-2",
+      "reopenJobId": "job-1790991316284-3",
+      "guiFileOperation": "passed",
+      "workflow": "GUI select C:\\ForgeQA\\input with extended scanning and duplicates disabled; scan four known input files (1024, 2048, 38 and 19 bytes), two nested subdirectories and Chinese filename; logical total 3129 bytes; GUI save wdoriginal.csv; normal exit; fresh managed process cancels automatic scan selection and explicitly loads saved CSV via File menu; observe loaded file tree/treemap; normal exit. Seven CSV data rows, every filename/logical size and folder counts verified. Input and saved output bytes unchanged.",
+      "inputFixture": {
+        "schemaVersion": 1,
+        "purpose": "Controlled pre-existing scan inputs only; application must GUI-create its own saved scan/export output.",
+        "generationId": "gen-job-1790990708319-1",
+        "windowsInputDirectory": "C:\\ForgeQA\\input",
+        "windowsOutputDirectory": "C:\\ForgeQA\\output",
+        "files": {
+          "a.bin": {
+            "sizeBytes": 1024,
+            "sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9"
+          },
+          "nested/b.bin": {
+            "sizeBytes": 2048,
+            "sha256": "10fc3c51a152e90e5b90319b601d92ccf37290ef53c35ff92507687d8a911a08"
+          },
+          "nested/deeper/c.txt": {
+            "sizeBytes": 38,
+            "sha256": "09b1d4637d5aeba8cf35b9ded05fc08c92315c95744e23273adfacb045aa631a"
+          },
+          "nested/中文.txt": {
+            "sizeBytes": 19,
+            "sha256": "579e9c7c61f74cc5a232063cb682841fdfac1482aec8838f06054f845e88a1a2"
+          }
+        },
+        "totalLogicalBytes": 3129,
+        "fileCount": 4,
+        "subdirectoryCount": 2,
+        "outputDirectoryEmptyBeforeGui": true
+      },
+      "outputVerification": {
+        "fileName": "wdoriginal.csv",
+        "sizeBytes": 808,
+        "sha256": "8b6983f157c31a8ccdab2fe32eb89ccd2d9ff764ebec14cd55ac8d60d238992c",
+        "csvDataRows": [
+          {
+            "Name": "C:\\ForgeQA\\input",
+            "Files": "4",
+            "Folders": "2",
+            "Logical Size": "3129",
+            "Physical Size": "16384",
+            "Attributes": "",
+            "Last Change": "2026-10-03T01:26:00Z",
+            "WinDirStat Attributes": "0x30000004",
+            "Index": "0x0000000000000000"
+          },
+          {
+            "Name": "C:\\ForgeQA\\input\\a.bin",
+            "Files": "0",
+            "Folders": "0",
+            "Logical Size": "1024",
+            "Physical Size": "4096",
+            "Attributes": "A",
+            "Last Change": "2026-10-03T01:26:00Z",
+            "WinDirStat Attributes": "0x20000008",
+            "Index": "0x00000000003009D6"
+          },
+          {
+            "Name": "C:\\ForgeQA\\input\\nested",
+            "Files": "3",
+            "Folders": "1",
+            "Logical Size": "2105",
+            "Physical Size": "12288",
+            "Attributes": "",
+            "Last Change": "2026-10-03T01:26:00Z",
+            "WinDirStat Attributes": "0x20000004",
+            "Index": "0x00000000003009D3"
+          },
+          {
+            "Name": "C:\\ForgeQA\\input\\nested\\b.bin",
+            "Files": "0",
+            "Folders": "0",
+            "Logical Size": "2048",
+            "Physical Size": "4096",
+            "Attributes": "A",
+            "Last Change": "2026-10-03T01:26:00Z",
+            "WinDirStat Attributes": "0x20000008",
+            "Index": "0x00000000003009D7"
+          },
+          {
+            "Name": "C:\\ForgeQA\\input\\nested\\deeper",
+            "Files": "1",
+            "Folders": "0",
+            "Logical Size": "38",
+            "Physical Size": "4096",
+            "Attributes": "",
+            "Last Change": "2026-10-03T01:26:00Z",
+            "WinDirStat Attributes": "0x20000004",
+            "Index": "0x00000000003009D4"
+          },
+          {
+            "Name": "C:\\ForgeQA\\input\\nested\\deeper\\c.txt",
+            "Files": "0",
+            "Folders": "0",
+            "Logical Size": "38",
+            "Physical Size": "4096",
+            "Attributes": "A",
+            "Last Change": "2026-10-03T01:26:00Z",
+            "WinDirStat Attributes": "0x20000008",
+            "Index": "0x00000000003009D8"
+          },
+          {
+            "Name": "C:\\ForgeQA\\input\\nested\\中文.txt",
+            "Files": "0",
+            "Folders": "0",
+            "Logical Size": "19",
+            "Physical Size": "4096",
+            "Attributes": "A",
+            "Last Change": "2026-10-03T01:26:00Z",
+            "WinDirStat Attributes": "0x20000008",
+            "Index": "0x00000000003009D9"
+          }
+        ],
+        "fileCount": 4,
+        "subdirectoryCount": 2,
+        "totalLogicalBytes": 3129,
+        "allFileNamesAndLogicalSizesMatched": true,
+        "inputFixtureUnchanged": true
+      },
+      "screenshots": {
+        "2026-10-03-windirstat-about-license.jpg": "e5c6c36197e683406194c2e63292d09d9f9cae3e15fb27dfeb5d410daa13f7e6",
+        "2026-10-03-windirstat-original-reopened.jpg": "3d721f0aa712bff0bb64c43250b6240e7545ed9cd894587de9bc382c01902bbe",
+        "2026-10-03-windirstat-original-saved.jpg": "24be81eacad859dc2896dd878298eaa42716cae21ecfdfac61933d9fb7f6f6d6",
+        "2026-10-03-windirstat-original-scan.jpg": "0bb96e6bf33ac29f59e365b0465a7504716e1d086c341115ad0d0c2ce50cf6b1"
+      },
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+    }
+  ],
+  "licenseEvidence": {
+    "applicationId": "windirstat",
+    "version": "2.9.0",
+    "tag": "release/v2.9.0",
+    "sourceCommit": "9bf36ccd282d7e5059faff78896e677b54d50727",
+    "releaseUrl": "https://github.com/windirstat/windirstat/releases/tag/release/v2.9.0",
+    "publishedAt": "2026-09-26T20:32:48Z",
+    "immutableRelease": true,
+    "prerelease": false,
+    "artifact": {
+      "fileName": "WinDirStat-2.9.0-x64.msi",
+      "upstreamAssetName": "WinDirStat-x64.msi",
+      "sourceUrl": "https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat-x64.msi",
+      "sizeBytes": 2433024,
+      "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d",
+      "publishedGitHubAssetDigestMatched": true,
+      "officialHashFileUrl": "https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat-Hashes.txt",
+      "officialHashFileSha256": "fe501649d4ba3b22bb6e330f23652ac75b860750fdf4850edd1d02e0515992b9",
+      "officialHashFileContainsInstallerDigest": true,
+      "compoundFileMagicVerified": true,
+      "localBasenameReason": "Versioned local basename avoids collision across upstream releases; bytes match fixed upstream WinDirStat-x64.msi."
+    },
+    "license": {
+      "fixedUrl": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/LICENSE.md",
+      "sizeBytes": 17886,
+      "sha256": "5d05a329bdd65bc1212fda57942ea90a2a810ff7ce192dc38d7042a55caa4a28",
+      "classificationPending": false,
+      "spdx": "GPL-2.0-only",
+      "basis": "Fixed release README explicitly says application GPL v2 and forbids upgrading beyond v2. Resource license and MSI license references pinned at the same exact commit; parts of source and CC-BY-3.0 logo retain their own terms.",
+      "fixedAdditionalReferences": {
+        "README.md": {
+          "url": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/README.md",
+          "sizeBytes": 8122,
+          "sha256": "dd5b873c2547cb1347e28e37418873e82bc627701e7e64630230e77dbdee12eb"
+        },
+        "windirstat/res/license.txt": {
+          "url": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/windirstat/res/license.txt",
+          "sizeBytes": 17985,
+          "sha256": "4f2416509c30c4f0c4de101cc30c571e3be33fdb5c42cabc0d2915e8ed5ea51e"
+        },
+        "setup/msi/license.rtf": {
+          "url": "https://raw.githubusercontent.com/windirstat/windirstat/9bf36ccd282d7e5059faff78896e677b54d50727/setup/msi/license.rtf",
+          "sizeBytes": 36675,
+          "sha256": "7cb73d87857982c0b3c8b06b9907f01b3c18c1d435c01df75406114a8b184d1d"
+        }
+      },
+      "completeComponentSourceAudit": false
+    },
+    "authenticodeVerified": false,
+    "reproducibleBuildVerified": false,
+    "sourceHarnessFailures": [
+      "Initial checksum script tested a lowercase digest against official uppercase text. Installer and checksum-file byte hashes already matched API pins. Read actual SHA256/WinDirStat-x64.msi row, compare hexadecimal case-insensitively and preserve original checksum bytes. No installation or output generation occurred during this failure."
+    ]
+  },
+  "limits": [
+    "Acceptance covers ordinary user-permission controlled-folder scan, nested and Chinese file names, GUI CSV save, explicit CSV load in a fresh managed process and normal exit only.",
+    "Whole disk scan, elevated/extended scanning, duplicate detection, cleanup/deletion, physical disk allocation correctness and JSON export unverified. Physical-size CSV values are retained as observed Wine values, not asserted to match native NTFS.",
+    "CSV import changes displayed size proportions from the initial physical-size view to logical-size proportions; saved logical sizes and counts match controlled inputs.",
+    "Official GitHub asset digest and official SHA256 hash-file row match the installer. Fixed source references and GUI license tab reviewed; full component-source/custom-action security audit, Authenticode and reproducible build unverified.",
+    "Local signed market activation/update/rollback/restart validation follows this original receipt. Guest online download, fresh-machine registration, cross-version upgrade and remote installer redistribution unverified."
+  ]
+}
