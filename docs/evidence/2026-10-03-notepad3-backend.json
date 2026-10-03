@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "notepad3",
+  "version": "7.26.602.1",
+  "jobs": [
+    {
+      "id": "job-1790992599487-1",
+      "kind": "install",
+      "status": "succeeded",
+      "generationId": "gen-job-1790992599487-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 4762,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790992599487-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790992656124-2",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790992599487-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 186999,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790992656124-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790992881868-3",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790992599487-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 46960,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790992881868-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1790992963770-4",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1790992599487-1",
+      "events": [
+        {
+          "elapsedMilliseconds": 61994,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1790992963770-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "selectedGeneration": "gen-job-1790992599487-1",
+  "definitionDigest": "sha256:4a91599ff235abd4c1fd054faa73c18362a2e9a103854df885a3367d8e8e2b51",
+  "launcherSha256": "92bc17ffc6300d7c73b4ca735f65e510dda7243a490cedef14385cf142d57a96",
+  "runtime": {
+    "binding": {
+      "environment": {
+        "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+        "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+        "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+        "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+        "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "WINEARCH": "win64",
+        "WINEDEBUG": "-all",
+        "WINEDLLOVERRIDES": "mscoree,mshtml=",
+        "WINESERVER": "/usr/bin/wineserver"
+      },
+      "executable": "/usr/bin/wine",
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "providerId": "wine-linux-x86-64-preview",
+      "wineserverExecutable": "/usr/bin/wineserver"
+    },
+    "selection": {
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "provider": "wine"
+    },
+    "version": "11.14"
+  },
+  "allCoreJobsTerminal": true,
+  "totalCoreJobs": 138,
+  "previous134CoreJobsUnchanged": true,
+  "inputFixture": {
+    "generationId": "gen-job-1790992599487-1",
+    "windowsInputFile": "C:\\ForgeQA\\input\\输入.txt",
+    "relativeInputFile": "input/输入.txt",
+    "sizeBytes": 96,
+    "sha256": "dd66aa9435cdb568fa28ac3639b031f5f991bc306a7caf8f7ea6929b85e635be",
+    "text": "ForgeOS Notepad3 rolling acceptance\r\n中文路径与内容验证\r\nvalue=17\r\nreplace_target=old\r\n",
+    "outputDirectoryEmptyBeforeGui": true
+  },
+  "outputVerification": {
+    "relativeFile": "output/np3original.txt",
+    "sizeBytes": 107,
+    "sha256": "33e67eb5ca58ba4afad555b85ab620832e22e590756c748edcde105a6ec16476",
+    "text": "ForgeOS Notepad3 rolling acceptance\r\n中文路径与内容验证\r\nvalue=17\r\nreplace_target=originalpassed\r\n",
+    "utf8NoBom": true,
+    "crlfPreserved": true,
+    "chineseContentPreserved": true,
+    "expectedReplacementMatched": true
+  },
+  "installedLicenseVerification": {
+    "relativeFile": "Docs/License.txt",
+    "sizeBytes": 3407,
+    "sha256": "8d6739ff11b904bd12d5534d8cc5da43f30f13fe2db9b903eeb3a3f73e55cd93",
+    "normalization": "CRLF to LF only",
+    "normalizedSizeBytes": 3371,
+    "normalizedSha256": "bdf8ba94fb60b92a5a6b6219028d45d5f3b9d38495e3bc59f61781bb69e6efff",
+    "fixedSourceContentMatchesAfterLineEndingNormalization": true,
+    "byteIdenticalToSource": false
+  },
+  "reopenedOutputBytesUnchanged": true,
+  "installationLogs": [
+    {
+      "relativeFile": "drive_c/users/forge/AppData/Local/Temp/Setup Log 2026-10-03 #001.txt",
+      "sha256": "bd92c9bc3f12b0e82b3d14a710577d35ba3aea24c250f6c32ba4e5992a50ab89",
+      "sizeBytes": 84429
+    }
+  ],
+  "visibleReopenJobId": "job-1790992963770-4",
+  "screenshots": {
+    "2026-10-03-notepad3-about-version.jpg": "9fca6fba9313989bf5bdc94d9178e76f10d6dc92c96cc504bdff3eabded7f777",
+    "2026-10-03-notepad3-original-input-opened.jpg": "ae8c410c69e3227a309567cfc366d1ee240cf4434f139ca71ed7f53be249bec2",
+    "2026-10-03-notepad3-original-reopened.jpg": "38f37d85b9bafed45162cfc184875d6e5f8d17131d26a75187812587f4de7bea",
+    "2026-10-03-notepad3-original-saved.jpg": "5ce344449be7bae3b6946344dbf1dc938014d637d7cd4df34c805841dd81ed8a"
+  },
+  "limits": [
+    "Acceptance covers UTF-8 Chinese-path input read, GUI literal find/replace, Save As to a new output, visible explicit file open in a fresh managed process and normal exit. UTF-8 without BOM and CRLF preserved; input bytes unchanged.",
+    "Regex, syntax highlighting across languages, other encodings, large files, printing, encryption and bundled MiniPath/grepWin workflows unverified; bundled utilities do not count as separate accepted apps.",
+    "Official installer SHA256 matches published GitHub asset digest. Fixed release is not marked immutable; exact installer bytes and source commit pinned. Authenticode, reproducible build and complete component-source/installer-code audit unverified."
+  ]
+}

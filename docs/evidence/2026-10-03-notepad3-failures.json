@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "applicationId": "notepad3",
+  "applicationWorkflowFailures": [],
+  "harnessFailuresRetained": [
+    "Ctrl+Shift+S did not open Save As; observed File menu shows F6 and used File > Save As. Source was not overwritten.",
+    "First saved-file reopen job job-1790992881868-3 reached correct title/status but screenshot preceded editor repaint and it was closed. Kept the normal-exit job, performed a separate fresh explicit reopen job-1790992963770-4 and observed real text before acceptance. The first probe alone is not counted as visible-content acceptance.",
+    "Initial post-restart Core readiness probe returned transient ENOENT before the service socket was ready. Bounded retry reached both services and all state comparisons passed; no trust reset or extra service restart was used."
+  ],
+  "authentication": "Existing authorized login reused after automatic lock; password and authentication unchanged."
+}

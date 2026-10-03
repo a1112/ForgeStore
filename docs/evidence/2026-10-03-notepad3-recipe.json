@@ -1,0 +1,34 @@
+{
+  "bottleId": "gui-notepad3",
+  "category": "development",
+  "compatibilityRating": "unknown",
+  "id": "notepad3",
+  "installer": {
+    "arguments": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/DIR=C:\\Notepad3",
+      "/TASKS=",
+      "/LOG"
+    ],
+    "fileName": "Notepad3_7.26.602.1_x64_Setup.exe",
+    "sha256": "9cf68b38bcc1aa679050b9069174ab222383ba004c37bdd47056cafc71626be9"
+  },
+  "launchers": [
+    {
+      "executable": "Notepad3/Notepad3.exe",
+      "id": "main",
+      "name": "Notepad3"
+    }
+  ],
+  "name": "Notepad3",
+  "publisher": "Rizonesoft",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000",
+    "managed-inno"
+  ],
+  "version": "7.26.602.1"
+}

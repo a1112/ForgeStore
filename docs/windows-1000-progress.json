@@ -162,6 +162,17 @@
       "publication": "docs/evidence/2026-10-03-windirstat-publication.json",
       "failureEvidence": "docs/evidence/2026-10-03-windirstat-failures.json",
       "limitation": "Ordinary-permission controlled scan, nested/Chinese paths, GUI CSV save and explicit fresh-process import; independent five-file updated scan/save/import, original-generation rollback/import and Core/Store restart passed. Whole disk/elevated scan, duplicate detection, deletion, JSON export, NTFS physical allocation correctness, guest online download, fresh registration, cross-version upgrade, Authenticode/reproducibility/full component/custom-action audit unverified."
+    },
+    {
+      "id": "notepad3",
+      "version": "7.26.602.1",
+      "sha256": "9cf68b38bcc1aa679050b9069174ab222383ba004c37bdd47056cafc71626be9",
+      "sizeBytes": 4882616,
+      "evidence": "docs/evidence/windows-notepad3-20261003.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v19/tuf",
+      "publication": "docs/evidence/2026-10-03-notepad3-publication.json",
+      "failureEvidence": "docs/evidence/2026-10-03-notepad3-failures.json",
+      "limitation": "UTF-8 Chinese-path input, GUI literal replace, Save As and explicit visible fresh-process reopen; independent updated edit/save/reopen, original-generation rollback/reopen and Core/Store restart passed. Main BSD-3-Clause and bundled component notices retained; installed license matches fixed source after line-ending normalization only. Regex/highlighting/other encodings/large files/printing/encryption/bundled utility workflows, guest online download, fresh registration, cross-version upgrade, Authenticode/reproducibility/full component-source/installer/task audit unverified."
     }
   ],
   "queue": [
@@ -277,12 +288,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next uncompleted candidate with fixed official installer/license, real GUI file workflow and verified local signed market lifecycle. Keep LibreOffice source failures, Audacity 4.0.0 GUI failure and other blocked candidates.",
+  "next": "Select next uncompleted candidate with fixed official installer/license, real GUI file workflow and verified local signed market lifecycle. Preserve all prior blocked candidates and failure evidence.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-03",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 18,
+    "acceptedLocalMarket": 19,
     "explicitlyBlockedCandidates": 10,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -290,15 +301,15 @@
     "pendingCandidates": 10
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v18/tuf",
-    "metadataVersion": 27,
-    "catalogueEntries": 20,
-    "acceptedDistinctWindowsApps": 18,
+    "signedCatalogue": "catalogue/candidate-v19/tuf",
+    "metadataVersion": 28,
+    "catalogueEntries": 21,
+    "acceptedDistinctWindowsApps": 19,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-03-windirstat-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-03-notepad3-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261003-windirstat.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261003-notepad3.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json"
