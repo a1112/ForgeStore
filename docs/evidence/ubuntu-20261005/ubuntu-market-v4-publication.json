@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-05T16:12:04Z",
+  "runtimeProfile": "ubuntu-26.04",
+  "channel": "ubuntu-accepted-v4",
+  "phase": "RUNTIME_VERIFIED",
+  "acceptance": {
+    "publishedAccepted": true,
+    "publishedIds": [
+      "org.kde.kate",
+      "org.gnome.calculator"
+    ],
+    "publishedCount": 2,
+    "ubuntuDeploymentReady": false,
+    "windowsCompletedUnchanged": 22,
+    "windowsGoalUnchanged": 1000
+  },
+  "fixedDeliveryById": {
+    "org.kde.kate": {
+      "architecture": "amd64",
+      "artifact": {
+        "sha256": "a0f42af31e4bc1fa2d449029b3eb8229f822c236f90dc54950b130a575ca03aa",
+        "size": 2749472,
+        "target": "kate_25.12.3-0ubuntu1_amd64.deb",
+        "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kate/kate_25.12.3-0ubuntu1_amd64.deb"
+      },
+      "backend": "ubuntu-deb",
+      "distribution": "ubuntu",
+      "package": "kate",
+      "release": "26.04",
+      "reviewedPackageId": "org.kde.kate",
+      "version": "4:25.12.3-0ubuntu1"
+    },
+    "org.gnome.calculator": {
+      "backend": "snap",
+      "channel": "latest/stable",
+      "confinement": "strict",
+      "name": "gnome-calculator",
+      "reviewedPackageId": "org.gnome.calculator",
+      "revision": 972,
+      "snapId": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG"
+    }
+  },
+  "proofSha256ById": {
+    "org.kde.kate": "f131aeec0bda1434414fd18be4d107d6b300d6e4beb36684421f9e1f48773162",
+    "org.gnome.calculator": "eec0392a9d04fd3f5bf762e2807808003775975db5438e36a1eaa83502d20f96"
+  },
+  "trust": {
+    "trustedRootSha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
+    "rootVersion": 1,
+    "rootSourceBytesAndInodePreserved": true,
+    "previousOnlineRoleVersion": 2,
+    "currentOnlineRoleVersion": 4,
+    "expires": "2026-11-05T00:00:00Z",
+    "version3RemainsPreparedInactive": true,
+    "rawCacheEqualityClaimed": false,
+    "roles": [
+      {
+        "role": "root",
+        "version": 1,
+        "expires": "2027-10-05T00:00:00Z",
+        "completeSignedContentAndSignaturesMatchPublic": true,
+        "beforeRawCacheSha256": "e5593fe1f12e2c6a04fdbf5c35337f0d8f047b5700cbb578e514fc7b72d55284",
+        "afterRawCacheSha256": "d0d606f9462958467b8fdf3e03dee9b6b5aab2c2de3d82378acbbd6d19ab6c0f",
+        "publicSha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a"
+      },
+      {
+        "role": "targets",
+        "version": 4,
+        "expires": "2026-11-05T00:00:00Z",
+        "completeSignedContentAndSignaturesMatchPublic": true,
+        "beforeRawCacheSha256": "0d3c1d97e242074f04304b78bc13061c12ecf9dbd69258dd7a3de53ada94d1a7",
+        "afterRawCacheSha256": "88f02b3f6c7aac8203d40ca7e1b3889788d9c5660b0984568a5460f8ccf1924f",
+        "publicSha256": "cd8a264492bf8ca43182739b411b881d876bc09467c5f9c96b95a9efa2a13d6d"
+      },
+      {
+        "role": "snapshot",
+        "version": 4,
+        "expires": "2026-11-05T00:00:00Z",
+        "completeSignedContentAndSignaturesMatchPublic": true,
+        "beforeRawCacheSha256": "f3cb102c9c57e4db68da61a9e57282829026290113f5b8d7da6d9b62262ba3b4",
+        "afterRawCacheSha256": "73b9075179edfa30371db358819b76bde1347b32ea08ebc6b4c3d01011efef7d",
+        "publicSha256": "208793ad835072d574f16220b0bddc73fb8051b5b585b82b0a98f8d674e1ef12"
+      },
+      {
+        "role": "timestamp",
+        "version": 4,
+        "expires": "2026-11-05T00:00:00Z",
+        "completeSignedContentAndSignaturesMatchPublic": true,
+        "beforeRawCacheSha256": "9e8bdd71e5b493717935c3bbb76c16e9e61e632f51248de9aea25b0271a2ea4e",
+        "afterRawCacheSha256": "e192bbb5edd58a6f8ceb1cb27dfcb5afec7e5402b105414468ecdd070642197f",
+        "publicSha256": "f1805c1ac500af11a88545163153e705a82bf99b164c6717460b230742bea9f8"
+      }
+    ]
+  },
+  "service": {
+    "oldPid": 180592,
+    "newPid": 279517,
+    "binarySha256": "4e53cd24444d3dd50542519914355e79c54fe24b0e76e53965d203f4519d6f35",
+    "nativeServiceSha256": "91eb026185e590c22b75fd488d4a3ac486c1e789762d659959e3549d2410d847",
+    "onlyStoreRestarted": true
+  },
+  "persistence": {
+    "fullRowCountBefore": 9,
+    "fullRowCountAfter": 9,
+    "completeRowsExactlyPreserved": true,
+    "fullRowsNormalizedJsonSha256": "5435a70307dde215610b5608703bd0af80655fae893dd0eccd6618948852d3e1",
+    "jobStates": {
+      "succeeded": 4,
+      "failed": 5
+    },
+    "jobs": [
+      {
+        "id": "065e62f9-7830-44cd-a076-a636bab54167",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "action": "install",
+        "state": "succeeded",
+        "nativePending": false
+      },
+      {
+        "id": "596e48b5-45ce-42e4-8947-ffd035fdebce",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "action": "install",
+        "state": "failed",
+        "nativePending": false
+      },
+      {
+        "id": "75282aa5-4b6c-43f1-8164-80d5a6a422b7",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "action": "uninstall",
+        "state": "succeeded",
+        "nativePending": false
+      },
+      {
+        "id": "9d5e11a2-5ca8-40b0-984e-b84d990af9f1",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "action": "install",
+        "state": "succeeded",
+        "nativePending": false
+      },
+      {
+        "id": "a95e9234-b7c4-410c-a861-204c70d1a27c",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "action": "install",
+        "state": "failed",
+        "nativePending": false
+      },
+      {
+        "id": "cd5de4d2-4ea1-42de-bee4-f9b25b3341af",
+        "appId": "org.gnome.calculator",
+        "backend": "snap",
+        "action": "install",
+        "state": "succeeded",
+        "nativePending": false
+      },
+      {
+        "id": "cdc80c3a-709e-4e45-9be9-510b1a621f5c",
+        "appId": "org.gnome.texteditor",
+        "backend": "flatpak",
+        "action": "install",
+        "state": "failed",
+        "nativePending": false
+      },
+      {
+        "id": "e4992255-9d17-4d03-8a26-29034f58c0b7",
+        "appId": "org.gnome.texteditor",
+        "backend": "flatpak",
+        "action": "install",
+        "state": "failed",
+        "nativePending": false
+      },
+      {
+        "id": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "action": "install",
+        "state": "failed",
+        "nativePending": false
+      }
+    ],
+    "completeNativeRecords": 6,
+    "nativeJournalExactBytesPreserved": true,
+    "nativeRecordSha256ByName": {
+      "0ed7551233f35ee831ed3d8453f1ba5ae7f26b37abfa25ce2db4cb9a5afed822.json": "4063a972c94e57f8f2e0ce1ef2bedadbde9cff5a840b7bdbf9c74f577e1ecc97",
+      "44eb4c0464ce1de30796dd1be10ec3d2cccc73252a75296f53bec1df16fd49f4.json": "b27c970e8ce5f487d474c52f13778ca63f5893f6c9146b0c2efa02c4c2da44b6",
+      "6abb50376a2de0bec9146d75d627f0b5d54b0df746d2e6812c8a5aeff38af847.json": "00fbd539cb09cc883ce478045c65dbdb7c71f4c3c8a916e604ba8d8c1c229acf",
+      "7168a5e69a0f72b331eb64b62485396511442341043d2542ede5c91613f5b167.json": "55a121006041a456ff04c6fa5f022a221428d62076eca1556489547beb152b7d",
+      "73e671bc2a987341994686f4aac83f106703b93b4ec1467ff1285c20057259ce.json": "417f4c5fdc30a6f131caec0ce479b4b73d7c2487f5199c4d608d85fdfac83def",
+      "f4a09db75a82f0771b0792ad1b38dd5c73e2aa1487681eb8fc2aef70c2d26199.json": "e8a21cb5693df7ebbd3804b5931def66ce4fa7182e34623a6364f48786144354"
+    },
+    "installedBefore": [
+      {
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "canRollback": false,
+        "version": "4:25.12.3-0ubuntu1"
+      },
+      {
+        "appId": "org.gnome.calculator",
+        "backend": "snap",
+        "canRollback": false,
+        "version": "48.1"
+      }
+    ],
+    "installedAfter": [
+      {
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "canRollback": false,
+        "version": "4:25.12.3-0ubuntu1"
+      },
+      {
+        "appId": "org.gnome.calculator",
+        "backend": "snap",
+        "canRollback": false,
+        "version": "48.1"
+      }
+    ],
+    "ordinaryPrivateStateAndCacheBackedUp": true,
+    "coherentSqliteBackup": true,
+    "admissionGate": "SQLite BEGIN IMMEDIATE, complete terminal rows rechecked, held until Store independently inactive; no job cancellation"
+  },
+  "preflight": {
+    "actualPinnedBinaryUid": 1000,
+    "validPassed": true,
+    "catalogueTamperRejected": true,
+    "signatureTamperRejected": true,
+    "independentEvidenceAndSignatureReview": "APPROVED; no Critical/Important"
+  },
+  "retainedFailures": {
+    "flatpakInstallationTimeouts": 2,
+    "flatpakInstalled": false,
+    "flatpakGuiAccepted": false,
+    "permissionGuards": [
+      "~/.local/state 0775 rejected before stop; group write removed to 0755",
+      "~/.local/state/forge-store/private-maintenance 0775 rejected before stop; made private 0700"
+    ],
+    "rootTrustOrAuthenticationChangedByPermissionFix": false,
+    "originalCloseScreenshotCapturedPreCloseFrame": true,
+    "closeEvidenceCorrection": "snap-close-evidence-correction.json"
+  },
+  "publicFileManifest": {
+    "metadata/1.root.json": {
+      "sha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
+      "size": 2577
+    },
+    "metadata/4.snapshot.json": {
+      "sha256": "208793ad835072d574f16220b0bddc73fb8051b5b585b82b0a98f8d674e1ef12",
+      "size": 1250
+    },
+    "metadata/4.targets.json": {
+      "sha256": "cd8a264492bf8ca43182739b411b881d876bc09467c5f9c96b95a9efa2a13d6d",
+      "size": 1883
+    },
+    "metadata/timestamp.json": {
+      "sha256": "f1805c1ac500af11a88545163153e705a82bf99b164c6717460b230742bea9f8",
+      "size": 1252
+    },
+    "targets/933b31c676a5de99d37de088448d8cf404b9384573923464584ada9f402b34bb.catalogue.json": {
+      "sha256": "933b31c676a5de99d37de088448d8cf404b9384573923464584ada9f402b34bb",
+      "size": 1851
+    },
+    "targets/eec0392a9d04fd3f5bf762e2807808003775975db5438e36a1eaa83502d20f96.snap-calculator-gui-acceptance.json": {
+      "sha256": "eec0392a9d04fd3f5bf762e2807808003775975db5438e36a1eaa83502d20f96",
+      "size": 10470
+    },
+    "targets/f131aeec0bda1434414fd18be4d107d6b300d6e4beb36684421f9e1f48773162.kate-lifecycle-acceptance.json": {
+      "sha256": "f131aeec0bda1434414fd18be4d107d6b300d6e4beb36684421f9e1f48773162",
+      "size": 21565
+    },
+    "trusted-root.json": {
+      "sha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
+      "size": 2577
+    }
+  },
+  "privateRuntimeReceiptExportSha256": "dfd4584a72273f655395b3f1dc04b7bf89234e8ed8dc8471b7f7a9dd5a0b1d37",
+  "controllerSourceSha256": "5338c05937070295e7e66582c7721d7cf30c37805b38638adb716bb993fe998e",
+  "publicEvidenceManifest": {
+    "market-accepted-v4.jpg": {
+      "size": 56610,
+      "sha256": "6c58f7a4b03158fecdcf0ee349d4fa8411b19fb7bf63fdad1ee68e41113f9de2"
+    },
+    "market-accepted-v4-calculator-details.jpg": {
+      "size": 61929,
+      "sha256": "0fd7d4323214e75ba5d262e002fcf11e225d5db731dfccce84be132a4512f691"
+    },
+    "snap-close-evidence-correction.json": {
+      "size": 1710,
+      "sha256": "90842ce13e8d3d56dddf16cb88183966bf668475dc3eba9cea27bd46c69fa0da"
+    },
+    "snap-calculator-closed-confirmed.jpg": {
+      "size": 20560,
+      "sha256": "8e57dc3969f30eda825f584e4f86fa8b5b02e528fb6953104ed5cab3c29a8e50"
+    },
+    "flatpak-retry-timeout-readback.json": {
+      "size": 7227,
+      "sha256": "9b9b58841d1301868a3a7853e1d22499f89f46f101e3f2e9967efe754e0c561b"
+    }
+  },
+  "limitations": [
+    "Flatpak has no installed app or GUI acceptance",
+    "Snap session, uninstall/reinstall and cold reboot persistence remain untested",
+    "complete Ubuntu dependency/license closure is not reviewed",
+    "generic Snap menu icon remains a cosmetic follow-up"
+  ],
+  "privacy": {
+    "passwordsRecorded": false,
+    "privateKeysRecorded": false,
+    "rawPrivateReceiptPublished": false,
+    "privateBackupPathsPublished": false
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUTC": "2026-10-05T15:50:08Z",
+  "runtimeProfile": "ubuntu-26.04",
+  "appId": "org.gnome.texteditor",
+  "fixedDelivery": {
+    "backend": "flatpak",
+    "remote": "flathub",
+    "reference": "app/org.gnome.TextEditor/x86_64/stable",
+    "commit": "76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91"
+  },
+  "acceptance": {
+    "installed": false,
+    "guiAccepted": false,
+    "publishedAccepted": false,
+    "observedInstalledCommit": null,
+    "downloadCacheIsAcceptance": false,
+    "windowsCompletedUnchanged": 22,
+    "windowsGoalUnchanged": 1000,
+    "ubuntuDeploymentReady": false
+  },
+  "attempts": [
+    {
+      "jobId": "e4992255-9d17-4d03-8a26-29034f58c0b7",
+      "state": "failed",
+      "nativePending": false,
+      "detail": "Flatpak operation timed out; observed=None; expected=Some(\"76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91\")",
+      "timeoutSeconds": 1800,
+      "observedCommit": null,
+      "completionCause": "Store enforced operation deadline, not manual parent process kill",
+      "repositoryCacheBytesAtAttemptObservation": 177134629
+    },
+    {
+      "jobId": "cdc80c3a-709e-4e45-9be9-510b1a621f5c",
+      "state": "failed",
+      "nativePending": false,
+      "detail": "Flatpak operation timed out; observed=None; expected=Some(\"76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91\")",
+      "timeoutSeconds": 1800,
+      "observedCommit": null,
+      "completionCause": "Store enforced operation deadline, not manual parent process kill",
+      "repositoryCacheBytesAtAttemptObservation": 197183037
+    }
+  ],
+  "finalReadOnlyConfirmation": {
+    "flatpakProcesses": [],
+    "psExitCode": 1,
+    "psExitCodeInterpretation": "No matching Flatpak process; output contained only the header.",
+    "cachedRepositoryBytes": 197183037,
+    "ordinaryUserAppList": [],
+    "appListExitCode": 0,
+    "userUid": 1000,
+    "queries": [
+      "ps -C flatpak -o pid,etime,args",
+      "du -sb user Flatpak repo",
+      "flatpak --user list --app --columns=application,version,origin,ref,installation"
+    ],
+    "queryTimeoutSeconds": 15,
+    "packageMutation": false,
+    "serviceRestart": false,
+    "guiAutomation": false,
+    "sourceReceipt": {
+      "name": "ubuntu-flatpak-retry-final-readonly.json",
+      "sha256": "553a966c21a42f60a4d7e7640aee55dfdb04face39113ebcda88fbb329894e84"
+    }
+  },
+  "earlierRunningObservation": {
+    "sourceReceipt": "ubuntu-flatpak-running-1546.json",
+    "sha256": "ae9f1d02b865eb0d66b0bb7e32d4007b01594f37956268d7951914d1460539cb",
+    "processPid": 196051,
+    "elapsed": "29:21",
+    "notFinalEvidence": true
+  },
+  "publicJobSnapshot": {
+    "jobs": [
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": "file operation: error decoding response body",
+        "id": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+        "id": "596e48b5-45ce-42e4-8947-ffd035fdebce",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.gnome.texteditor",
+        "backend": "flatpak",
+        "detail": "Flatpak operation timed out; observed=None; expected=Some(\"76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91\")",
+        "id": "e4992255-9d17-4d03-8a26-29034f58c0b7",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+        "id": "a95e9234-b7c4-410c-a861-204c70d1a27c",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": null,
+        "id": "065e62f9-7830-44cd-a076-a636bab54167",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "uninstall",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": null,
+        "id": "75282aa5-4b6c-43f1-8164-80d5a6a422b7",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": null,
+        "id": "9d5e11a2-5ca8-40b0-984e-b84d990af9f1",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "install",
+        "appId": "org.gnome.calculator",
+        "backend": "snap",
+        "detail": null,
+        "id": "cd5de4d2-4ea1-42de-bee4-f9b25b3341af",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "install",
+        "appId": "org.gnome.texteditor",
+        "backend": "flatpak",
+        "detail": "Flatpak operation timed out; observed=None; expected=Some(\"76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91\")",
+        "id": "cdc80c3a-709e-4e45-9be9-510b1a621f5c",
+        "nativePending": false,
+        "state": "failed"
+      }
+    ],
+    "jobsHasMore": false,
+    "allNineTerminal": true,
+    "failed": 5,
+    "succeeded": 4,
+    "installed": [
+      {
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "canRollback": false,
+        "version": "4:25.12.3-0ubuntu1"
+      },
+      {
+        "appId": "org.gnome.calculator",
+        "backend": "snap",
+        "canRollback": false,
+        "version": "48.1"
+      }
+    ],
+    "originalKateFailuresPreserved": true,
+    "bothFlatpakTimeoutFailuresPreserved": true,
+    "sourceReceipt": {
+      "name": "ubuntu-store-flatpak-retry-terminal.json",
+      "sha256": "13c9d3a8ed44240a4ffd7ae739a05a408b743f686fe6ac987b00eae4a9005cf3"
+    },
+    "rawJournalLogsCopied": false
+  },
+  "historicalEvidence": {
+    "flatpak-download-timeout.jpg": {
+      "sha256": "bfc4605a82d0dbf56f504f6a5bcfa2b183bdaa5f347c03b6c115012e5cf31be9",
+      "size": 56462
+    }
+  },
+  "immutableProofHashes": {
+    "kate-lifecycle-acceptance.json": "f131aeec0bda1434414fd18be4d107d6b300d6e4beb36684421f9e1f48773162",
+    "snap-calculator-gui-acceptance.json": "eec0392a9d04fd3f5bf762e2807808003775975db5438e36a1eaa83502d20f96",
+    "native-journal-readonly-state.json": "2839bd81cd23d6258a447d620ae46acf80fdae414ee81e99e4d876f8774a7533"
+  },
+  "privacy": {
+    "passwordsRecorded": false,
+    "privateKeysRecorded": false,
+    "privateLogsCopied": false,
+    "privateBackupsCopied": false
+  },
+  "finalGuiEvidence": {
+    "file": "flatpak-retry-timeout.jpg",
+    "sha256": "9401c46f67e4620899ae256603cb6713adf244998bdcab53f27cf0d432f43258",
+    "size": 55200,
+    "observed": "Actual queue shows Snap completed and the final Flatpak attempt failed.",
+    "storeUiClosedNormallyAfterEvidence": true,
+    "backgroundStoreServiceNotStopped": true
+  }
+}

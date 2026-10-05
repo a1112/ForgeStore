@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-05T15:38:24Z",
+  "kind": "sanitized export of actual root journal and fixed-identity readbacks",
+  "journal": {
+    "allComplete": true,
+    "records": 6,
+    "sha256ByName": {
+      "0ed7551233f35ee831ed3d8453f1ba5ae7f26b37abfa25ce2db4cb9a5afed822.json": "4063a972c94e57f8f2e0ce1ef2bedadbde9cff5a840b7bdbf9c74f577e1ecc97",
+      "44eb4c0464ce1de30796dd1be10ec3d2cccc73252a75296f53bec1df16fd49f4.json": "b27c970e8ce5f487d474c52f13778ca63f5893f6c9146b0c2efa02c4c2da44b6",
+      "6abb50376a2de0bec9146d75d627f0b5d54b0df746d2e6812c8a5aeff38af847.json": "00fbd539cb09cc883ce478045c65dbdb7c71f4c3c8a916e604ba8d8c1c229acf",
+      "7168a5e69a0f72b331eb64b62485396511442341043d2542ede5c91613f5b167.json": "55a121006041a456ff04c6fa5f022a221428d62076eca1556489547beb152b7d",
+      "73e671bc2a987341994686f4aac83f106703b93b4ec1467ff1285c20057259ce.json": "417f4c5fdc30a6f131caec0ce479b4b73d7c2487f5199c4d608d85fdfac83def",
+      "f4a09db75a82f0771b0792ad1b38dd5c73e2aa1487681eb8fc2aef70c2d26199.json": "e8a21cb5693df7ebbd3804b5931def66ce4fa7182e34623a6364f48786144354"
+    },
+    "unchangedExactBytes": true
+  },
+  "ordinaryUserStatusReadbacks": [
+    {
+      "ordinaryUid": 1000,
+      "reply": {
+        "ok": true,
+        "requestId": "cdb3c86f-580b-4539-a9aa-d917bc2e59f3",
+        "result": {
+          "backend": "ubuntu-deb",
+          "id": "org.kde.kate",
+          "identity": {
+            "architecture": "amd64",
+            "distribution": "ubuntu",
+            "package": "kate",
+            "release": "26.04"
+          },
+          "installed": true,
+          "matchesPolicy": true,
+          "revision": null,
+          "version": "4:25.12.3-0ubuntu1"
+        },
+        "schemaVersion": 1
+      }
+    },
+    {
+      "ordinaryUid": 1000,
+      "reply": {
+        "ok": true,
+        "requestId": "d213cce4-5147-4a20-804f-28d7c0192289",
+        "result": {
+          "backend": "snap",
+          "id": "org.gnome.calculator",
+          "identity": {
+            "confinement": "strict",
+            "name": "gnome-calculator",
+            "snapId": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG"
+          },
+          "installed": true,
+          "matchesPolicy": true,
+          "revision": 972,
+          "version": "48.1"
+        },
+        "schemaVersion": 1
+      }
+    }
+  ],
+  "nativeService": {
+    "sourceCommit": "bbb857de319e46feddbb4040ee397a14ada9e475",
+    "sha256": "91eb026185e590c22b75fd488d4a3ac486c1e789762d659959e3549d2410d847",
+    "pid": 250263,
+    "active": true,
+    "policyCliUnitAndPolkitHashesUnchanged": {
+      "cli": "e53f0f537647b285ca2fcdce6bb868973f9043fd74d2019c3da9b979456a0129",
+      "policy": "aec9339c1956a9636077848391460f644708106af2b65e65fcbcaa0f7d0a8b16",
+      "polkit": "74e7d9c16890eb6aaf99746847d3d2d155c502be97f6a135d3e789227592f1cf",
+      "unit": "28d3a021f59aa05bf491d41734d44eb648581850c8759e191b0800a350d515eb"
+    }
+  },
+  "storeHistory": {
+    "jobs": [
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": "file operation: error decoding response body",
+        "id": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+        "id": "596e48b5-45ce-42e4-8947-ffd035fdebce",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.gnome.texteditor",
+        "backend": "flatpak",
+        "detail": "Flatpak operation timed out; observed=None; expected=Some(\"76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91\")",
+        "id": "e4992255-9d17-4d03-8a26-29034f58c0b7",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+        "id": "a95e9234-b7c4-410c-a861-204c70d1a27c",
+        "nativePending": false,
+        "state": "failed"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": null,
+        "id": "065e62f9-7830-44cd-a076-a636bab54167",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "uninstall",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": null,
+        "id": "75282aa5-4b6c-43f1-8164-80d5a6a422b7",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "install",
+        "appId": "org.kde.kate",
+        "backend": "ubuntu-deb",
+        "detail": null,
+        "id": "9d5e11a2-5ca8-40b0-984e-b84d990af9f1",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "install",
+        "appId": "org.gnome.calculator",
+        "backend": "snap",
+        "detail": null,
+        "id": "cd5de4d2-4ea1-42de-bee4-f9b25b3341af",
+        "nativePending": false,
+        "state": "succeeded"
+      },
+      {
+        "action": "install",
+        "appId": "org.gnome.texteditor",
+        "backend": "flatpak",
+        "detail": null,
+        "id": "cdc80c3a-709e-4e45-9be9-510b1a621f5c",
+        "nativePending": false,
+        "state": "running"
+      }
+    ],
+    "nineIdsRetainedDuringNativeDeployment": true,
+    "storeOrUserSessionRestarted": false
+  },
+  "sourceReceipt": {
+    "receiptName": "ubuntu-native-concurrency-deployment-readback.json",
+    "sha256": "570410c2f0487d7cd36cc499e2d65c3190c1d0fc042d64d5f9df7c2b40e172d1"
+  },
+  "exportActions": {
+    "additionalPackageMutation": false,
+    "additionalServiceRestart": false,
+    "privateJournalBodiesCopied": false,
+    "privateLogsCopied": false,
+    "privateBackupsCopied": false
+  }
+}

@@ -1,27 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T15:04:00Z",
+  "updatedAt": "2026-10-05T16:12:04Z",
   "runtimeProfile": "ubuntu-26.04",
   "counts": {
     "candidates": 3,
-    "installed": 1,
-    "guiAccepted": 1,
-    "publishedAccepted": 0
+    "installed": 2,
+    "guiAccepted": 2,
+    "publishedAccepted": 2
   },
   "windowsProgressUnchanged": {
     "completed": 22,
     "goal": 1000
   },
   "trust": {
-    "channel": "ubuntu-candidate-v2",
+    "channel": "ubuntu-accepted-v4",
     "rootVersion": 1,
     "rootSha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
-    "roleVersion": 2,
+    "roleVersion": 4,
     "expires": "2026-11-05T00:00:00Z",
     "candidateChannelIsAcceptance": false,
     "rawCacheByteEqualityPassed": false,
     "signedContentAndSignaturesPreserved": true,
-    "cacheOrderEvidence": "evidence/ubuntu-20261005/tuf-cache-serialization-order.json"
+    "cacheOrderEvidence": "evidence/ubuntu-20261005/tuf-cache-serialization-order.json",
+    "acceptedChannelLoaded": true,
+    "publicationEvidence": "evidence/ubuntu-20261005/ubuntu-market-v4-publication.json"
   },
   "entries": [
     {
@@ -31,7 +33,7 @@
       "candidate": true,
       "installed": true,
       "guiAccepted": true,
-      "publishedAccepted": false,
+      "publishedAccepted": true,
       "failures": [
         {
           "jobId": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
@@ -60,23 +62,40 @@
         "install": "065e62f9-7830-44cd-a076-a636bab54167",
         "uninstall": "75282aa5-4b6c-43f1-8164-80d5a6a422b7",
         "reinstall": "9d5e11a2-5ca8-40b0-984e-b84d990af9f1"
-      }
+      },
+      "publicationEvidence": "evidence/ubuntu-20261005/ubuntu-market-v4-publication.json"
     },
     {
       "id": "org.gnome.calculator",
       "format": "snap",
       "revision": 972,
       "candidate": true,
-      "installed": false,
-      "guiAccepted": false,
-      "publishedAccepted": false,
+      "installed": true,
+      "guiAccepted": true,
+      "publishedAccepted": true,
       "failures": [],
-      "inProgress": {
-        "jobId": "cd5de4d2-4ea1-42de-bee4-f9b25b3341af",
-        "stage": "authorized-native-snap-install",
-        "observedAt": "2026-10-05T14:54:37Z",
-        "snapChangeId": "2"
-      }
+      "version": "48.1",
+      "snapId": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG",
+      "confinement": "strict",
+      "acceptanceEvidence": "evidence/ubuntu-20261005/snap-calculator-gui-acceptance.json",
+      "successfulJobs": {
+        "install": "cd5de4d2-4ea1-42de-bee4-f9b25b3341af"
+      },
+      "testHarnessFailures": [
+        {
+          "stage": "first-window-move",
+          "passed": false,
+          "detail": "Batched keyboard input did not move the window; separate input later succeeded.",
+          "evidence": "evidence/ubuntu-20261005/snap-calculator-move-first-attempt.jpg"
+        },
+        {
+          "stage": "first-artifact-hash",
+          "passed": false,
+          "detail": "PermissionError reading root-owned 0600 artifact; bounded root read-only maintenance hash matched official fixed SHA3-384 without relaxing permissions.",
+          "evidence": "evidence/ubuntu-20261005/snap-calculator-gui-acceptance.json"
+        }
+      ],
+      "publicationEvidence": "evidence/ubuntu-20261005/ubuntu-market-v4-publication.json"
     },
     {
       "id": "org.gnome.texteditor",
@@ -94,14 +113,26 @@
           "nativePending": false,
           "evidence": "evidence/ubuntu-20261005/flatpak-download-timeout.jpg",
           "cachedRepositoryBytes": 177134629
+        },
+        {
+          "jobId": "cdc80c3a-709e-4e45-9be9-510b1a621f5c",
+          "stage": "flatpak-runtime-download-retry",
+          "detail": "Flatpak operation timed out; observed=None; expected=Some(\"76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91\")",
+          "nativePending": false,
+          "state": "failed",
+          "evidence": "evidence/ubuntu-20261005/flatpak-retry-timeout-readback.json",
+          "cachedRepositoryBytes": 197183037,
+          "timeoutSeconds": 1800
         }
       ],
-      "inProgress": {
-        "jobId": "cdc80c3a-709e-4e45-9be9-510b1a621f5c",
-        "stage": "queued-behind-native-snap",
-        "observedAt": "2026-10-05T14:58:00Z",
-        "retainsEarlierFailure": true
+      "lastObservedState": {
+        "state": "failed",
+        "observedAt": "2026-10-05T15:50:08Z",
+        "installed": false,
+        "observedCommit": null,
+        "runningFlatpakProcesses": 0
       }
     }
-  ]
+  ],
+  "deploymentReady": false
 }

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-10-05",
+  "appId": "org.gnome.calculator",
+  "proofSha256": "eec0392a9d04fd3f5bf762e2807808003775975db5438e36a1eaa83502d20f96",
+  "originalEvidencePreserved": true,
+  "reviewCorrection": {
+    "originalScreenshot": "snap-calculator-closed.jpg",
+    "observed": "The original screenshot captured the window before its close update became visible. It is not visual proof of closure.",
+    "closeConclusionBasis": "The hash-bound ordinary-user closed-readback in the original proof independently confirms no calculator process; the later readback and screenshot below provide additional confirmation."
+  },
+  "finalClosedReadback": {
+    "uid": 1000,
+    "snapProcesses": [],
+    "artifact": {
+      "ordinaryUserReadAllowed": false,
+      "requiresReadOnlyMaintenanceHashCheck": true
+    },
+    "debug confinement": {
+      "exitCode": 0,
+      "stdout": "strict\n",
+      "stderr": ""
+    },
+    "list gnome-calculator": {
+      "exitCode": 0,
+      "stdout": "Name              Version  Rev  Tracking       Publisher    Notes\ngnome-calculator  48.1     972  latest/stable  canonical**  -\n",
+      "stderr": ""
+    }
+  },
+  "publicEvidenceManifest": {
+    "snap-calculator-closed.jpg": {
+      "size": 65628,
+      "sha256": "b80fd7564a2713879ca2be823475ea9111a44623a5d50847d41ed91f652c9821"
+    },
+    "snap-calculator-closed-confirmed.jpg": {
+      "size": 20560,
+      "sha256": "8e57dc3969f30eda825f584e4f86fa8b5b02e528fb6953104ed5cab3c29a8e50"
+    },
+    "snap-calculator-gui-acceptance.json": {
+      "size": 10470,
+      "sha256": "eec0392a9d04fd3f5bf762e2807808003775975db5438e36a1eaa83502d20f96"
+    }
+  }
+}

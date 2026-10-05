@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-05T16:27:33.005966",
+  "restoredProfile": "arch-windows-rolling-v12",
+  "windowsCompletedUnchanged": 22,
+  "windowsGoal": 1000,
+  "coreTerminalJobs": 170,
+  "coreJobsFullFieldsUnchanged": true,
+  "storeRowCount": 61,
+  "storeFullFieldsUnchanged": true,
+  "historicalInterruptedRowsPreserved": [],
+  "coreConfigsAndGenerationsPreserved": true,
+  "serviceGuardsPreserved": true,
+  "marketSnapshotPreserved": true,
+  "catalogueEntries": 24,
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "timestamp": 31,
+    "snapshot": 31,
+    "targets": 31
+  },
+  "public26SignedFilesExactBytesPreserved": true,
+  "cachedFullSignedDocumentsPreserved": true,
+  "cacheRawBytesUnchanged": false,
+  "latestKnownTimeMonotonic": true,
+  "powerNeverAndHashPreserved": true,
+  "powerSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+  "tuxpaintBothGenerationsDataAndLauncherAndLicensePreserved": true,
+  "previousBootId": "3d9454c0-7f84-4df4-aad3-9525b5a89648",
+  "currentBootId": "1293b392-48ba-46e2-a8bd-cd646bc07b80",
+  "components": {
+    "compatforge.service": {
+      "binary": "compatforge-cli-managed-msi-v10",
+      "sha256": "feaad5a5010fbf1506f2e4771bb7677345ccbba757b5d4aa97b65be2b502ce0a",
+      "pid": 933
+    },
+    "forge-store.service": {
+      "binary": "forge-store-service-managed-msi-v2",
+      "sha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f",
+      "pid": 862
+    }
+  },
+  "newAcceptanceClaimed": false,
+  "observedAtTimezone": "UTC (guest clock)",
+  "limitations": [
+    "Raw cache hashes differ; full parsed signed documents and signatures match the preserved checkpoint.",
+    "This is restoration of the existing Arch/Windows test profile, not a new application acceptance."
+  ],
+  "ubuntuCapacitySwitch": {
+    "allNineStoreJobsTerminalBeforeShutdown": true,
+    "normalPoweroffRequestExit": 0,
+    "ubuntuVmStoppedBeforeArchStart": true,
+    "ubuntuOverlayRetained": true,
+    "simultaneousFourGiBGuestsAvoided": true
+  },
+  "retainedRecoveryAttempts": [
+    {
+      "stage": "boot-wrapper preflight",
+      "result": "Old helper expected an obsolete wrapper hash; it failed before starting a VM. Existing wrapper was inspected and pinned without modification."
+    },
+    {
+      "stage": "readback before GUI login",
+      "result": "User service socket absent at SDDM login; normal authorized GUI login restored the services."
+    }
+  ],
+  "existingBootWrapperSha256": "3294b2f02c6a7e3d06cbb45ad418e234b9543675684a29091cde01ef05e9fe25",
+  "publicEvidenceManifest": {
+    "arch-rolling-restored-desktop.jpg": {
+      "size": 22741,
+      "sha256": "52f998b3c6de7e7cbaf2168652288e5b702ab88ea514df9d2e0e30654e352ae5"
+    }
+  }
+}

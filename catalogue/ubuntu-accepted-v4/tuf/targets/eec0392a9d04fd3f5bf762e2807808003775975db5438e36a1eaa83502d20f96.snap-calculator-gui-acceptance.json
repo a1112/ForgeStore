@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-10-05",
+  "runtimeProfile": "ubuntu-26.04",
+  "appId": "org.gnome.calculator",
+  "acceptance": {
+    "installed": true,
+    "guiAccepted": true,
+    "publishedAccepted": false,
+    "scope": "Fixed-revision strict Snap GUI function, basic window and close/relaunch sample",
+    "ubuntuDeploymentReady": false,
+    "windowsCompletedUnchanged": 22,
+    "windowsGoalUnchanged": 1000,
+    "notClaimed": [
+      "persistent calculation history",
+      "Snap uninstall/reinstall lifecycle",
+      "Snap session logout/login or cold reboot persistence",
+      "Flatpak GUI acceptance",
+      "accepted market publication",
+      "complete Ubuntu dependency/license closure"
+    ]
+  },
+  "fixedIdentity": {
+    "name": "gnome-calculator",
+    "snapId": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG",
+    "revision": 972,
+    "version": "48.1",
+    "architecture": "amd64",
+    "channel": "latest/stable",
+    "confinement": "strict"
+  },
+  "sourceAndLicense": {
+    "origin": "https://snapcraft.io/gnome-calculator",
+    "publisher": "Canonical",
+    "publisherVerified": true,
+    "snapStoreLicense": "GPL-3.0+",
+    "normalizedLicense": "GPL-3.0-or-later",
+    "aboutDialogLicense": "GNU General Public License version 3 or later",
+    "officialFixedArtifact": {
+      "deltas": [],
+      "sha3-384": "4b14f277af5be9803bf166b0f3fb77563dc7b8a5b7df325ba74af3b5137c9c0a913ed90636b9f4bab82ddfbaafa4ea72",
+      "size": 2150400,
+      "url": "https://api.snapcraft.io/api/v1/snaps/download/J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG_972.snap"
+    },
+    "candidateSourceReceipt": {
+      "receiptName": "ubuntu-snap-candidate.json",
+      "sha256": "f7630b7e0c62644923da0461b403a407b62624679004f68ca435c3e832304574"
+    },
+    "aboutEvidence": [
+      "snap-calculator-about-version.jpg",
+      "snap-calculator-about-license.jpg"
+    ]
+  },
+  "artifactVerification": {
+    "readOnly": true,
+    "bytes": 2150400,
+    "sha3-384": "4b14f277af5be9803bf166b0f3fb77563dc7b8a5b7df325ba74af3b5137c9c0a913ed90636b9f4bab82ddfbaafa4ea72",
+    "uid": 0,
+    "mode": "0o600",
+    "matchesOfficialFixedArtifact": true,
+    "ordinaryUserFirstHashAttempt": {
+      "passed": false,
+      "exception": "PermissionError",
+      "classification": "harness permission failure when reading the root-owned 0600 Snap artifact; not a Snap install or GUI failure",
+      "artifactPermissionsNotRelaxed": true,
+      "failedEmptyReceipt": {
+        "receiptName": "ubuntu-snap-gui-first-readback.json",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "boundedRootReadOnlyMaintenanceReadSucceeded": true,
+    "sourceReceipt": {
+      "receiptName": "ubuntu-snap-artifact-readonly.json",
+      "sha256": "027174f75036ddc9ce6c20b5229f04267681ada6290005130f8fd66090716e3d"
+    }
+  },
+  "installation": {
+    "jobId": "cd5de4d2-4ea1-42de-bee4-f9b25b3341af",
+    "state": "succeeded",
+    "nativePending": false,
+    "fixedActualStatus": {
+      "backend": "snap",
+      "id": "org.gnome.calculator",
+      "identity": {
+        "confinement": "strict",
+        "name": "gnome-calculator",
+        "snapId": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG"
+      },
+      "installed": true,
+      "matchesPolicy": true,
+      "revision": 972,
+      "version": "48.1"
+    },
+    "nativeRollbackClaimed": false,
+    "evidence": "native-journal-readonly-state.json"
+  },
+  "function": {
+    "cases": [
+      {
+        "expression": "6*7",
+        "result": "42",
+        "evidence": "snap-calculator-result-42.jpg"
+      },
+      {
+        "expression": "12.5*8",
+        "result": "100",
+        "evidence": "snap-calculator-result-100.jpg"
+      },
+      {
+        "expression": "6*7",
+        "result": "42",
+        "phase": "new process after close and menu relaunch",
+        "evidence": "snap-calculator-reopened-result-42.jpg"
+      }
+    ],
+    "calculationHistoryAfterRelaunch": {
+      "observed": "empty",
+      "persistencePassed": false,
+      "persistenceClaimed": false,
+      "evidence": "snap-calculator-reopened-empty-history.jpg"
+    }
+  },
+  "windowOperations": {
+    "count": 9,
+    "checks": [
+      {
+        "operation": "move",
+        "passed": true,
+        "evidence": "snap-calculator-moved.jpg"
+      },
+      {
+        "operation": "resize",
+        "passed": true,
+        "evidence": "snap-calculator-resized.jpg"
+      },
+      {
+        "operation": "maximize",
+        "passed": true,
+        "evidence": "snap-calculator-maximized.jpg"
+      },
+      {
+        "operation": "restore-from-maximized",
+        "passed": true,
+        "evidence": "snap-calculator-restored.jpg"
+      },
+      {
+        "operation": "minimize",
+        "passed": true,
+        "evidence": "snap-calculator-minimized.jpg"
+      },
+      {
+        "operation": "restore-from-taskbar",
+        "passed": true,
+        "evidence": "snap-calculator-task-restored.jpg"
+      },
+      {
+        "operation": "fullscreen",
+        "passed": true,
+        "evidence": "snap-calculator-fullscreen.jpg"
+      },
+      {
+        "operation": "exit-fullscreen",
+        "passed": true,
+        "evidence": "snap-calculator-fullscreen-restored.jpg"
+      },
+      {
+        "operation": "close",
+        "passed": true,
+        "evidence": "snap-calculator-closed.jpg"
+      }
+    ],
+    "firstMoveAttempt": {
+      "passed": false,
+      "method": "batched keyboard move input",
+      "observed": "window did not move",
+      "evidence": "snap-calculator-move-first-attempt.jpg"
+    },
+    "successfulMove": {
+      "method": "separate keyboard move inputs",
+      "passed": true,
+      "evidence": "snap-calculator-moved.jpg"
+    }
+  },
+  "processAndPlatform": {
+    "firstPid": 202486,
+    "closedPidAbsent": true,
+    "closedReadback": {
+      "receiptName": "ubuntu-snap-gui-closed-readback.json",
+      "sha256": "880e44ca62a175c8dd3bfccab84d66953cd9cd0c08c6220b1733d9d18b589a2f"
+    },
+    "reopenedNewPid": 253637,
+    "reopenedReadback": {
+      "receiptName": "ubuntu-snap-gui-reopened-readback.json",
+      "sha256": "d88edf0dc9e261669b5042fe3145be5cef6b367c26b6b97088faffa89dc569c5"
+    },
+    "ordinaryUserUid": 1000,
+    "exe": "/snap/gnome-calculator/972/usr/bin/gnome-calculator",
+    "gtk4Loaded": true,
+    "waylandClientLoaded": true,
+    "gdkBackend": "wayland",
+    "appArmorCurrent": "snap.gnome-calculator.gnome-calculator (enforce)",
+    "xwaylandNotUsedAsProofOfNativeWayland": true
+  },
+  "retainedFailures": {
+    "previousKateAndFlatpakFailuresPreserved": true,
+    "TufCacheByteEqualityFailurePreserved": true,
+    "kateLifecycleProofSha256": "f131aeec0bda1434414fd18be4d107d6b300d6e4beb36684421f9e1f48773162",
+    "evidence": [
+      "kate-lifecycle-acceptance.json",
+      "flatpak-download-timeout.jpg",
+      "tuf-cache-serialization-order.json"
+    ]
+  },
+  "publicEvidenceManifest": {
+    "snap-calculator-about-license.jpg": {
+      "size": 72542,
+      "sha256": "a5b14b8650eed9529dad92bc7c17ef4d4696bfbb78895af55199e54ce589bbd4"
+    },
+    "snap-calculator-about-version.jpg": {
+      "size": 68709,
+      "sha256": "05dd5587b65baf5ef86342eba4ab218ae73fa6ec5d9241a3d78d3319ce5bc408"
+    },
+    "snap-calculator-closed.jpg": {
+      "size": 65628,
+      "sha256": "b80fd7564a2713879ca2be823475ea9111a44623a5d50847d41ed91f652c9821"
+    },
+    "snap-calculator-fullscreen-restored.jpg": {
+      "size": 65696,
+      "sha256": "98dfeeaea373c0248ee9b056c3da65cc0d57cf9fbd404fd23b7088b0d59a21ce"
+    },
+    "snap-calculator-fullscreen.jpg": {
+      "size": 21634,
+      "sha256": "5b64037a97258f6ef1c16b455711582c62778bcfdf0865e87bd34f2f97212c5d"
+    },
+    "snap-calculator-maximized.jpg": {
+      "size": 28040,
+      "sha256": "7ed73a66f4ad46e013da1796f1ce748838e94236f4ab9a8c46d1a1ca19b4154e"
+    },
+    "snap-calculator-menu-refreshed.jpg": {
+      "size": 50453,
+      "sha256": "18fb528021186173626a0e3bdfbded92ae5344648a1e9887e948bac6e184a68e"
+    },
+    "snap-calculator-minimized.jpg": {
+      "size": 62949,
+      "sha256": "30423f9cff0982ccb0cd17420f0349d4f8dbf6cc6fa174f776ae6a00595be1e9"
+    },
+    "snap-calculator-move-first-attempt.jpg": {
+      "size": 66007,
+      "sha256": "cc726d0db3a23009e05fde6106f9665af7b33000e8d3a09ec126e276a9bbd139"
+    },
+    "snap-calculator-moved.jpg": {
+      "size": 66063,
+      "sha256": "03feb1bace9783c7f116520b10b97623b35cff3eb383eeb5cf2134ed62ea2667"
+    },
+    "snap-calculator-reopened-empty-history.jpg": {
+      "size": 63834,
+      "sha256": "cfda71b16930989be93ba85153145d583f025820e7d8e8018021cb0ef6786095"
+    },
+    "snap-calculator-reopened-result-42.jpg": {
+      "size": 65037,
+      "sha256": "d471762d06187331a9e79559d889b62a553756744ca5a806ff25233903330c7f"
+    },
+    "snap-calculator-resized.jpg": {
+      "size": 65698,
+      "sha256": "2836a4f449010fefc085ecbaa9a36678733070df29ed18bcdecbec5c4d0a24f1"
+    },
+    "snap-calculator-restored.jpg": {
+      "size": 66004,
+      "sha256": "c53e316ae7c77645bb7a6fe9dd04d5c1d6c4de0d1a29776e2dcf226ca4067ab0"
+    },
+    "snap-calculator-result-100.jpg": {
+      "size": 65942,
+      "sha256": "6bb919b9e2a770aaf8e9229a2dff8fd4f213f50c5d9fee0486eed4ccfb49cd28"
+    },
+    "snap-calculator-result-42.jpg": {
+      "size": 64827,
+      "sha256": "8e7de9fb812e99048b4efe1609da003e4d69e9b25a4743fd67bd09ff5b7880a3"
+    },
+    "snap-calculator-task-restored.jpg": {
+      "size": 65555,
+      "sha256": "6b52afbfe5bf186018bda70b56390b9541bfc31b20756a394a3bb344dcf1d99e"
+    },
+    "native-journal-readonly-state.json": {
+      "size": 6086,
+      "sha256": "2839bd81cd23d6258a447d620ae46acf80fdae414ee81e99e4d876f8774a7533"
+    },
+    "kate-lifecycle-acceptance.json": {
+      "size": 21565,
+      "sha256": "f131aeec0bda1434414fd18be4d107d6b300d6e4beb36684421f9e1f48773162"
+    },
+    "flatpak-download-timeout.jpg": {
+      "size": 56462,
+      "sha256": "bfc4605a82d0dbf56f504f6a5bcfa2b183bdaa5f347c03b6c115012e5cf31be9"
+    },
+    "tuf-cache-serialization-order.json": {
+      "size": 4053,
+      "sha256": "6cc0aed121ea2bb8366964d7b982b4921bb479eaff384a7c443ab2e7fc5195d4"
+    }
+  },
+  "privacy": {
+    "passwordsRecorded": false,
+    "privateKeysRecorded": false,
+    "rawLogsCopied": false,
+    "privateBackupsCopied": false
+  },
+  "fixedDelivery": {
+    "backend": "snap",
+    "channel": "latest/stable",
+    "confinement": "strict",
+    "name": "gnome-calculator",
+    "reviewedPackageId": "org.gnome.calculator",
+    "revision": 972,
+    "snapId": "J8OcDPQ0JM8dbvk29HRqpWVI9kBw0atG"
+  }
+}
