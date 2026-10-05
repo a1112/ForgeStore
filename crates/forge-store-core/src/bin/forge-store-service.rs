@@ -13,11 +13,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 #[cfg(unix)]
 mod linux {
     use forge_store_core::backends::{
-        compatforge_poll_status, compatforge_selected_install, fixture_remote_is_trusted,
-        flatpak_action_completed, flatpak_record_matches, native_identity_matches, native_probe,
-        native_status_matches, package_display_version, parse_flatpak_columns, wait_managed_child,
-        CompatForgeClient, CompatForgeRequest, FlatpakInvocation, NativeClient, NativeRequest,
-        PackageClient, PackageRequest,
+        bounded_process_output, compatforge_poll_status, compatforge_selected_install,
+        fixture_remote_is_trusted, flatpak_action_completed, flatpak_record_matches,
+        native_identity_matches, native_probe, native_status_matches, package_display_version,
+        parse_flatpak_columns, wait_managed_child, CompatForgeClient, CompatForgeRequest,
+        FlatpakInvocation, NativeClient, NativeRequest, PackageClient, PackageRequest,
     };
     use forge_store_core::cache::VerifiedCache;
     use forge_store_core::catalogue::{AppEntry, Catalog, Delivery};
@@ -177,10 +177,7 @@ mod linux {
             Ok(request) => {
                 let id = request.request_id().to_string();
                 let output = handle(&store, request).await;
-                response(
-                    &id,
-                    output.as_ref().map(Clone::clone).map_err(|e| (e.0, e.1)),
-                )
+                response(&id, output.clone())
             }
             Err(_) => response(
                 "invalid",
@@ -292,12 +289,18 @@ mod linux {
             "nativePending":job.native_pending,"detail":job.detail.as_deref().map(|text| bounded_text(text, 512))})
             })
             .collect::<Vec<_>>();
-        let (compat, flatpak, package, native) = tokio::join!(
-            probe_compat(store),
-            probe_flatpak(store),
-            probe_package(store),
-            probe_native(store)
-        );
+        // Leave room for IPC encoding before the UI's five-second request deadline.
+        let (compat, flatpak, package, native) =
+            tokio::time::timeout(Duration::from_secs(4), async {
+                tokio::join!(
+                    probe_compat(store),
+                    probe_flatpak(store),
+                    probe_package(store),
+                    probe_native(store)
+                )
+            })
+            .await
+            .map_err(|_| ("snapshot-timeout", "Backend snapshot exceeded total budget"))?;
         let mut installed = Vec::new();
         installed.extend(compat.1);
         installed.extend(flatpak.1);
@@ -388,93 +391,143 @@ mod linux {
     }
 
     async fn probe_flatpak(store: &Store) -> (bool, Vec<Value>) {
-        if !Path::new("/usr/bin/flatpak").is_file() {
-            return (false, Vec::new());
-        }
-        let remotes = tokio::time::timeout(
-            Duration::from_secs(3),
-            tokio::process::Command::new("/usr/bin/flatpak")
-                .args(["remotes", "--user", "--columns=name,url"])
-                .kill_on_drop(true)
-                .output(),
+        probe_flatpak_with_program(
+            &store.catalogue.entries,
+            Path::new("/usr/bin/flatpak"),
+            Duration::from_millis(3500),
         )
-        .await;
-        let Ok(Ok(remotes)) = remotes else {
-            return (false, Vec::new());
-        };
-        if !remotes.status.success() || remotes.stdout.len() > 64 * 1024 {
-            return (false, Vec::new());
-        }
-        let trusted_fixture = fixture_remote_is_trusted(&String::from_utf8_lossy(&remotes.stdout));
-        let trusted_flathub = forge_store_core::backends::flatpak_remote_is_trusted(
-            &String::from_utf8_lossy(&remotes.stdout),
-            "flathub",
-        );
-        if !trusted_fixture && !trusted_flathub {
+        .await
+    }
+
+    async fn probe_flatpak_with_program(
+        entries: &[AppEntry],
+        program: &Path,
+        budget: Duration,
+    ) -> (bool, Vec<Value>) {
+        if !program.is_file() {
             return (false, Vec::new());
         }
-        let result = tokio::time::timeout(
-            Duration::from_secs(3),
-            tokio::process::Command::new("/usr/bin/flatpak")
-                .args([
+        let deadline = tokio::time::Instant::now() + budget;
+        // The one deadline covers remotes, list and all bounded concurrent info calls.
+        let collected = async {
+            let remotes = flatpak_query(
+                program,
+                &["remotes", "--user", "--columns=name,url"],
+                64 * 1024,
+                deadline,
+            )
+            .await?;
+            if !remotes.status.success() {
+                return Err("Flatpak remote query failed".into());
+            }
+            let remote_text = String::from_utf8_lossy(&remotes.stdout);
+            let trusted_fixture = fixture_remote_is_trusted(&remote_text);
+            let trusted_flathub =
+                forge_store_core::backends::flatpak_remote_is_trusted(&remote_text, "flathub");
+            if !trusted_fixture && !trusted_flathub {
+                return Err("Flatpak remote is unavailable".into());
+            }
+            let listed = flatpak_query(
+                program,
+                &[
                     "--user",
                     "list",
                     "--app",
                     "--columns=application,arch,branch,origin,version",
-                ])
-                .env("LC_ALL", "C")
-                .env("LANGUAGE", "C")
-                .kill_on_drop(true)
-                .output(),
-        )
-        .await;
-        let Ok(Ok(result)) = result else {
-            return (false, Vec::new());
-        };
-        if !result.status.success() || result.stdout.len() > 1024 * 1024 {
-            return (false, Vec::new());
-        }
-        let Ok(rows) = parse_flatpak_columns(&result.stdout) else {
-            return (false, Vec::new());
-        };
-        let mut installed = Vec::new();
-        for entry in &store.catalogue.entries {
-            let Delivery::Flatpak {
-                remote,
-                reference,
-                commit,
-            } = &entry.delivery
-            else {
-                continue;
-            };
-            if remote == "flathub" && !trusted_flathub
-                || remote == "forge-store-fixture" && !trusted_fixture
-            {
-                continue;
+                ],
+                1024 * 1024,
+                deadline,
+            )
+            .await?;
+            if !listed.status.success() {
+                return Err("Flatpak list query failed".into());
             }
-            let Some(row) = rows
+            let rows = parse_flatpak_columns(&listed.stdout)?;
+            let queries = entries
                 .iter()
-                .find(|row| flatpak_record_matches(row, reference, remote))
-            else {
-                continue;
-            };
-            if let Some(expected) = commit {
-                if flatpak_installed_commit(remote, reference)
-                    .await
-                    .ok()
-                    .flatten()
-                    .as_ref()
-                    != Some(expected)
-                {
-                    continue;
+                .filter_map(|entry| {
+                    let Delivery::Flatpak {
+                        remote,
+                        reference,
+                        commit,
+                    } = &entry.delivery
+                    else {
+                        return None;
+                    };
+                    if remote == "flathub" && !trusted_flathub
+                        || remote == "forge-store-fixture" && !trusted_fixture
+                    {
+                        return None;
+                    }
+                    let row = rows
+                        .iter()
+                        .find(|row| flatpak_record_matches(row, reference, remote))?;
+                    Some((
+                        entry.id.clone(),
+                        reference.clone(),
+                        commit.clone(),
+                        row.get("version")
+                            .and_then(Value::as_str)
+                            .unwrap_or("")
+                            .to_string(),
+                    ))
+                })
+                .collect::<Vec<_>>();
+            use futures_util::{stream, StreamExt};
+            let installed = stream::iter(queries.into_iter().map(|(id, reference, commit, version)| async move {
+                if let Some(expected) = commit {
+                    if flatpak_commit_info(program, &reference, deadline).await.ok().as_ref() != Some(&expected) { return None; }
                 }
-            }
-            let version = row.get("version").and_then(Value::as_str).unwrap_or("");
-            installed.push(
-                json!({"appId":entry.id,"backend":"flatpak","version":version,"canRollback":false}),
-            );
+                Some(json!({"appId":id,"backend":"flatpak","version":version,"canRollback":false}))
+            })).buffer_unordered(4).filter_map(|row| async move { row }).collect::<Vec<_>>().await;
+            Ok::<_, Box<dyn std::error::Error + Send + Sync>>(installed)
+        };
+        match tokio::time::timeout_at(deadline, collected).await {
+            Ok(Ok(installed)) => (true, installed),
+            _ => (false, Vec::new()),
         }
-        (true, installed)
+    }
+
+    async fn flatpak_query(
+        program: &Path,
+        args: &[&str],
+        limit: usize,
+        deadline: tokio::time::Instant,
+    ) -> Result<std::process::Output, Box<dyn std::error::Error + Send + Sync>> {
+        if tokio::time::Instant::now() >= deadline {
+            return Err("Flatpak query total budget exhausted".into());
+        }
+        let mut command = tokio::process::Command::new(program);
+        command.args(args).env("LC_ALL", "C").env("LANGUAGE", "C");
+        Ok(bounded_process_output(
+            &mut command,
+            limit,
+            16 * 1024,
+            deadline.saturating_duration_since(tokio::time::Instant::now()),
+        )
+        .await?)
+    }
+
+    async fn flatpak_commit_info(
+        program: &Path,
+        reference: &str,
+        deadline: tokio::time::Instant,
+    ) -> Result<String, Box<dyn std::error::Error + Send + Sync>> {
+        let info = flatpak_query(
+            program,
+            &["info", "--user", "--show-commit", reference],
+            128,
+            deadline,
+        )
+        .await?;
+        if !info.status.success() {
+            return Err("Flatpak commit lookup failed".into());
+        }
+        let commit = std::str::from_utf8(&info.stdout)?.trim();
+        if commit.len() != 64 || !commit.bytes().all(|b| b.is_ascii_hexdigit()) {
+            return Err("Flatpak commit ID is invalid".into());
+        }
+        Ok(commit.to_ascii_lowercase())
     }
 
     async fn probe_package(store: &Store) -> (bool, Vec<Value>) {
@@ -781,17 +834,35 @@ mod linux {
         action: Action,
         cancel: &CancellationToken,
     ) -> Result<RunOutcome, Box<dyn std::error::Error + Send + Sync>> {
+        run_flatpak_with_program(
+            Path::new("/usr/bin/flatpak"),
+            remote,
+            reference,
+            commit,
+            action,
+            cancel,
+        )
+        .await
+    }
+
+    async fn run_flatpak_with_program(
+        program: &Path,
+        remote: &str,
+        reference: &str,
+        commit: Option<&str>,
+        action: Action,
+        cancel: &CancellationToken,
+    ) -> Result<RunOutcome, Box<dyn std::error::Error + Send + Sync>> {
         if remote != "forge-store-fixture" && !(remote == "flathub" && commit.is_some()) {
             return Err("Flatpak remote is not in the trusted local fixture allowlist".into());
         }
-        let remotes = tokio::time::timeout(
-            Duration::from_secs(3),
-            tokio::process::Command::new("/usr/bin/flatpak")
-                .args(["remotes", "--user", "--columns=name,url"])
-                .kill_on_drop(true)
-                .output(),
+        let remotes = flatpak_query(
+            program,
+            &["remotes", "--user", "--columns=name,url"],
+            64 * 1024,
+            tokio::time::Instant::now() + Duration::from_secs(3),
         )
-        .await??;
+        .await?;
         if !remotes.status.success()
             || remotes.stdout.len() > 64 * 1024
             || !forge_store_core::backends::flatpak_remote_is_trusted(
@@ -801,9 +872,9 @@ mod linux {
         {
             return Err("Flatpak fixture remote URL differs from the image".into());
         }
-        let before = flatpak_installed_commit(remote, reference).await?;
+        let before = flatpak_installed_commit_with_program(program, remote, reference).await?;
         match action {
-            Action::Install if before.is_some() => {
+            Action::Install if before.is_some() && commit.is_none() => {
                 return Err("Flatpak application is already installed".into())
             }
             Action::Update | Action::Uninstall if before.is_none() => {
@@ -811,14 +882,27 @@ mod linux {
             }
             _ => {}
         }
+        // A prior initial install can leave the tip after a failed pin. The exact
+        // reviewed list identity was confirmed above; retry resumes only pin update.
+        if action == Action::Install && commit.is_some() && before.as_deref() == commit {
+            return Ok(RunOutcome::Completed);
+        }
+        let invocation_action = if action == Action::Install && before.is_some() && commit.is_some()
+        {
+            Action::Update
+        } else {
+            action
+        };
         let invocation = match commit {
-            Some(commit) => FlatpakInvocation::pinned(remote, reference, action, commit)?,
-            None => FlatpakInvocation::new(remote, reference, action)?,
+            Some(commit) => {
+                FlatpakInvocation::pinned(remote, reference, invocation_action, commit)?
+            }
+            None => FlatpakInvocation::new(remote, reference, invocation_action)?,
         };
         if cancel.is_cancelled() {
             return Ok(RunOutcome::Cancelled);
         }
-        let mut command = tokio::process::Command::new("/usr/bin/flatpak");
+        let mut command = tokio::process::Command::new(program);
         command
             .args(&invocation.args)
             .kill_on_drop(true)
@@ -831,10 +915,10 @@ mod linux {
         let mut timed_out = waited.timed_out;
         // The documented CLI pins only update, not install. Keep the job running through
         // initial deployment and the exact-commit update; never advertise the interim tip.
-        if !cancelled && !timed_out && status.success() && action == Action::Install {
+        if !cancelled && !timed_out && status.success() && invocation_action == Action::Install {
             if let Some(commit) = commit {
                 let pin = FlatpakInvocation::pinned(remote, reference, Action::Update, commit)?;
-                let mut pinned = tokio::process::Command::new("/usr/bin/flatpak")
+                let mut pinned = tokio::process::Command::new(program)
                     .args(pin.args)
                     .stdout(std::process::Stdio::null())
                     .stderr(std::process::Stdio::null())
@@ -847,7 +931,7 @@ mod linux {
                 timed_out = waited.timed_out;
             }
         }
-        let after = flatpak_installed_commit(remote, reference).await?;
+        let after = flatpak_installed_commit_with_program(program, remote, reference).await?;
         let pinned = commit.is_none_or(|expected| {
             action == Action::Uninstall || after.as_deref() == Some(expected)
         });
@@ -881,27 +965,26 @@ mod linux {
         Ok(RunOutcome::Completed)
     }
 
-    async fn flatpak_installed_commit(
+    async fn flatpak_installed_commit_with_program(
+        program: &Path,
         remote: &str,
         reference: &str,
     ) -> Result<Option<String>, Box<dyn std::error::Error + Send + Sync>> {
-        let listed = tokio::time::timeout(
-            Duration::from_secs(5),
-            tokio::process::Command::new("/usr/bin/flatpak")
-                .args([
-                    "--user",
-                    "list",
-                    "--app",
-                    "--columns=application,arch,branch,origin,version",
-                ])
-                .env("LC_ALL", "C")
-                .env("LANGUAGE", "C")
-                .kill_on_drop(true)
-                .output(),
+        let deadline = tokio::time::Instant::now() + Duration::from_secs(5);
+        let listed = flatpak_query(
+            program,
+            &[
+                "--user",
+                "list",
+                "--app",
+                "--columns=application,arch,branch,origin,version",
+            ],
+            1024 * 1024,
+            deadline,
         )
-        .await??;
-        if !listed.status.success() || listed.stdout.len() > 1024 * 1024 {
-            return Err("Flatpak installed list is unavailable or oversized".into());
+        .await?;
+        if !listed.status.success() {
+            return Err("Flatpak installed list is unavailable".into());
         }
         let rows = parse_flatpak_columns(&listed.stdout)?;
         let matches = rows
@@ -914,22 +997,9 @@ mod linux {
         if matches == 0 {
             return Ok(None);
         }
-        let info = tokio::time::timeout(
-            Duration::from_secs(5),
-            tokio::process::Command::new("/usr/bin/flatpak")
-                .args(["info", "--user", "--show-commit", reference])
-                .kill_on_drop(true)
-                .output(),
-        )
-        .await??;
-        if !info.status.success() || info.stdout.len() > 128 {
-            return Err("Flatpak commit lookup failed".into());
-        }
-        let commit = std::str::from_utf8(&info.stdout)?.trim();
-        if commit.len() != 64 || !commit.bytes().all(|b| b.is_ascii_hexdigit()) {
-            return Err("Flatpak commit ID is invalid".into());
-        }
-        Ok(Some(commit.to_ascii_lowercase()))
+        Ok(Some(
+            flatpak_commit_info(program, reference, deadline).await?,
+        ))
     }
 
     async fn run_package(
@@ -1154,6 +1224,153 @@ mod linux {
                 "job delivery differs from signed catalogue"
             );
             assert!(store.queue.get(&old.id).unwrap().unwrap().native_pending);
+        }
+
+        fn fake_flatpak(root: &Path, count: usize, info_delay: f64) -> PathBuf {
+            use std::os::unix::fs::PermissionsExt;
+            let program = root.join("flatpak-test");
+            let script = format!(
+                r#"#!/usr/bin/python3
+import pathlib,sys,time,os
+root=pathlib.Path(__file__).parent
+args=sys.argv[1:]
+with (root/'calls').open('a') as f: f.write(' '.join(args)+'\n')
+with (root/'pids').open('a') as f: f.write(str(os.getpid())+'\n')
+state=root/'commit'
+if 'remotes' in args:
+ print('forge-store-fixture\tfile:///usr/share/forge-store/flatpak/repo-v1')
+elif 'list' in args:
+ if state.exists():
+  for i in range({count}): print('org.example.Test'+str(i)+'\tx86_64\tstable\tforge-store-fixture\t1.0')
+elif 'info' in args:
+ time.sleep({info_delay})
+ print(state.read_text())
+elif 'install' in args:
+ state.write_text('a'*64)
+elif 'update' in args:
+ fail=root/'fail-pin'
+ if fail.exists():
+  fail.unlink()
+  sys.exit(1)
+ state.write_text('b'*64)
+"#
+            );
+            std::fs::write(&program, script).unwrap();
+            std::fs::set_permissions(&program, std::fs::Permissions::from_mode(0o700)).unwrap();
+            program
+        }
+
+        fn flatpak_entries(count: usize) -> Vec<AppEntry> {
+            (0..count).map(|i| serde_json::from_value(json!({"id":format!("org.example.Test{i}"),
+                "name":{"zhCN":"test","en":"test"},"summary":{"zhCN":"test","en":"test"},
+                "publisher":"test","license":"MIT","version":"1","origin":"https://example.org/",
+                "permissions":[],"compatibility":{"status":"unknown","evidence":null},
+                "delivery":{"backend":"flatpak","remote":"forge-store-fixture",
+                    "reference":format!("app/org.example.Test{i}/x86_64/stable"),"commit":"b".repeat(64)}})).unwrap()).collect()
+        }
+
+        #[tokio::test]
+        async fn flatpak_pin_retry_recovers_partial_initial_deployment() {
+            let temp = tempfile::tempdir().unwrap();
+            let program = fake_flatpak(temp.path(), 1, 0.0);
+            std::fs::write(temp.path().join("fail-pin"), "fail once").unwrap();
+            let expected = "b".repeat(64);
+            let cancel = CancellationToken::new();
+            let initial = run_flatpak_with_program(
+                &program,
+                "forge-store-fixture",
+                "app/org.example.Test0/x86_64/stable",
+                Some(&expected),
+                Action::Install,
+                &cancel,
+            )
+            .await
+            .unwrap_err();
+            assert!(initial.to_string().contains("observed=Some"));
+            assert_eq!(
+                std::fs::read_to_string(temp.path().join("commit")).unwrap(),
+                "a".repeat(64)
+            );
+            let retry = run_flatpak_with_program(
+                &program,
+                "forge-store-fixture",
+                "app/org.example.Test0/x86_64/stable",
+                Some(&expected),
+                Action::Install,
+                &cancel,
+            )
+            .await
+            .unwrap();
+            assert_eq!(retry, RunOutcome::Completed);
+            assert_eq!(
+                std::fs::read_to_string(temp.path().join("commit")).unwrap(),
+                expected
+            );
+            let calls = std::fs::read_to_string(temp.path().join("calls")).unwrap();
+            assert_eq!(
+                calls
+                    .lines()
+                    .filter(|line| line.contains(" install "))
+                    .count(),
+                1
+            );
+            let again = run_flatpak_with_program(
+                &program,
+                "forge-store-fixture",
+                "app/org.example.Test0/x86_64/stable",
+                Some(&expected),
+                Action::Install,
+                &cancel,
+            )
+            .await
+            .unwrap();
+            assert_eq!(again, RunOutcome::Completed);
+        }
+
+        #[tokio::test]
+        async fn flatpak_snapshot_reuses_list_queries_commits_concurrently_and_has_total_budget() {
+            let temp = tempfile::tempdir().unwrap();
+            let program = fake_flatpak(temp.path(), 8, 0.08);
+            std::fs::write(temp.path().join("commit"), "b".repeat(64)).unwrap();
+            let start = std::time::Instant::now();
+            let (available, installed) = probe_flatpak_with_program(
+                &flatpak_entries(8),
+                &program,
+                Duration::from_millis(600),
+            )
+            .await;
+            assert!(available);
+            assert_eq!(installed.len(), 8);
+            assert!(
+                start.elapsed() < Duration::from_millis(600),
+                "snapshot exceeded total budget"
+            );
+            let calls = std::fs::read_to_string(temp.path().join("calls")).unwrap();
+            assert_eq!(
+                calls.lines().filter(|line| line.contains(" list ")).count(),
+                1
+            );
+            let slow = fake_flatpak(temp.path(), 8, 1.0);
+            let start = std::time::Instant::now();
+            let (available, installed) =
+                probe_flatpak_with_program(&flatpak_entries(8), &slow, Duration::from_millis(150))
+                    .await;
+            assert!(!available);
+            assert!(installed.is_empty());
+            assert!(
+                start.elapsed() < Duration::from_millis(400),
+                "slow lookup exceeded total budget"
+            );
+            tokio::time::sleep(Duration::from_millis(50)).await;
+            for pid in std::fs::read_to_string(temp.path().join("pids"))
+                .unwrap()
+                .lines()
+            {
+                assert!(
+                    !Path::new(&format!("/proc/{pid}")).exists(),
+                    "query child was not stopped/reaped"
+                );
+            }
         }
 
         #[test]

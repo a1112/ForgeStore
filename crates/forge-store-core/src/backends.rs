@@ -42,6 +42,74 @@ pub async fn wait_managed_child(
     })
 }
 
+/// Capture ordinary-user query output with independent hard pipe limits.
+/// Child drop kills and Tokio reaps it if the calling snapshot is abandoned.
+pub async fn bounded_process_output(
+    command: &mut tokio::process::Command,
+    stdout_limit: usize,
+    stderr_limit: usize,
+    deadline: std::time::Duration,
+) -> Result<std::process::Output, BackendError> {
+    use tokio::io::{AsyncRead, AsyncReadExt};
+    async fn read_pipe<R: AsyncRead + Unpin>(
+        mut pipe: R,
+        limit: usize,
+    ) -> Result<Vec<u8>, BackendError> {
+        let mut bytes = Vec::with_capacity(limit);
+        let mut chunk = [0u8; 4096];
+        loop {
+            let read = pipe.read(&mut chunk).await?;
+            if read == 0 {
+                return Ok(bytes);
+            }
+            if read > limit.saturating_sub(bytes.len()) {
+                return Err(BackendError::Process("process output exceeds limit".into()));
+            }
+            bytes.extend_from_slice(&chunk[..read]);
+        }
+    }
+    if stdout_limit > 1024 * 1024 || stderr_limit > 1024 * 1024 {
+        return Err(BackendError::Invalid("query pipe limit is too large"));
+    }
+    let mut child = command
+        .kill_on_drop(true)
+        .stdout(std::process::Stdio::piped())
+        .stderr(std::process::Stdio::piped())
+        .spawn()?;
+    let stdout = child
+        .stdout
+        .take()
+        .ok_or(BackendError::Invalid("missing stdout pipe"))?;
+    let stderr = child
+        .stderr
+        .take()
+        .ok_or(BackendError::Invalid("missing stderr pipe"))?;
+    let captured = tokio::time::timeout(deadline, async {
+        let (stdout, stderr, status) = tokio::try_join!(
+            read_pipe(stdout, stdout_limit),
+            read_pipe(stderr, stderr_limit),
+            async { child.wait().await.map_err(BackendError::from) }
+        )?;
+        Ok::<_, BackendError>(std::process::Output {
+            status,
+            stdout,
+            stderr,
+        })
+    })
+    .await;
+    let error = match captured {
+        Ok(Ok(output)) => return Ok(output),
+        Ok(Err(error)) => error,
+        Err(_) => BackendError::Process("query process timed out".into()),
+    };
+    // An exited child needs no signal, but pipes held by another writer still timed out.
+    if child.try_wait()?.is_none() {
+        let _ = child.start_kill();
+        let _ = tokio::time::timeout(std::time::Duration::from_millis(250), child.wait()).await;
+    }
+    Err(error)
+}
+
 #[derive(Debug, Error)]
 pub enum BackendError {
     #[error("invalid reviewed backend input: {0}")]

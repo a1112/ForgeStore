@@ -416,3 +416,58 @@ fn upstream_flatpak_machine_columns_preserve_identity_and_empty_version() {
     );
     assert!(parse_flatpak_columns(b"org.example.Test\tx86_64\tstable\tflathub\t1.2\norg.example.Test\tx86_64\tstable\tflathub\t1.2\n").is_err());
 }
+
+#[tokio::test]
+async fn bounded_process_output_stops_at_each_pipe_limit_and_deadline() {
+    use forge_store_core::backends::bounded_process_output;
+    use std::time::{Duration, Instant};
+    #[cfg(windows)]
+    fn command(script: &str) -> tokio::process::Command {
+        let mut command = tokio::process::Command::new(
+            std::env::var("FORGE_TEST_PYTHON").unwrap_or_else(|_| "python".into()),
+        );
+        command.args(["-c", script]);
+        command
+    }
+    #[cfg(not(windows))]
+    fn command(script: &str) -> tokio::process::Command {
+        let mut command = tokio::process::Command::new("/usr/bin/python3");
+        command.args(["-c", script]);
+        command
+    }
+    let output = bounded_process_output(
+        &mut command("import sys;sys.stdout.write('ok');sys.stderr.write('warning')"),
+        16,
+        16,
+        Duration::from_secs(2),
+    )
+    .await
+    .unwrap();
+    assert_eq!(output.stdout, b"ok");
+    assert_eq!(output.stderr, b"warning");
+    for pipe in ["stdout", "stderr"] {
+        let script = format!(
+            "import sys,time;sys.{pipe}.write('x'*1000000);sys.{pipe}.flush();time.sleep(30)"
+        );
+        let start = Instant::now();
+        let error = bounded_process_output(&mut command(&script), 128, 128, Duration::from_secs(2))
+            .await
+            .unwrap_err();
+        assert!(
+            error.to_string().contains("output exceeds limit"),
+            "{error}"
+        );
+        assert!(start.elapsed() < Duration::from_secs(2));
+    }
+    let start = Instant::now();
+    let error = bounded_process_output(
+        &mut command("import time;time.sleep(30)"),
+        128,
+        128,
+        Duration::from_millis(20),
+    )
+    .await
+    .unwrap_err();
+    assert!(error.to_string().contains("timed out"), "{error}");
+    assert!(start.elapsed() < Duration::from_secs(1));
+}
