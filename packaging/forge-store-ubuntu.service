@@ -1,0 +1,18 @@
+[Unit]
+Description=ForgeStore signed Ubuntu application catalogue and job service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/forge-store-service
+Restart=on-failure
+RestartSec=2s
+NoNewPrivileges=yes
+UMask=0077
+# Unprivileged systemd user filesystem namespaces remap the external root peer.
+# Keep the initial user namespace for strict SO_PEERCRED root authentication.
+PrivateUsers=no
+ProtectSystem=no
+PrivateTmp=no
+
+[Install]
+WantedBy=default.target

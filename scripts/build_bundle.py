@@ -22,6 +22,9 @@ def sha256(path: Path) -> str:
 
 
 def collect(args) -> dict[str, tuple[Path, str]]:
+    profile = getattr(args, "profile", "arch")
+    if profile not in ("arch", "ubuntu"):
+        raise ValueError("unsupported ForgeStore bundle profile")
     files: dict[str, tuple[Path, str]] = {}
 
     def add(target: str, source: Path, mode: str = "0644") -> None:
@@ -57,7 +60,8 @@ def collect(args) -> dict[str, tuple[Path, str]]:
                 continue
             if path.is_file():
                 add("/usr/share/forge-store/flatpak/" + version + "/" + path.relative_to(source).as_posix(), path)
-    add("/usr/lib/systemd/user/forge-store.service", args.source_root / "packaging/forge-store.service")
+    unit = "forge-store-ubuntu.service" if profile == "ubuntu" else "forge-store.service"
+    add("/usr/lib/systemd/user/forge-store.service", args.source_root / "packaging" / unit)
     add("/usr/lib/forge-store/provision-flatpak-fixture",
         args.source_root / "packaging/provision-flatpak-fixture", "0755")
     add("/usr/share/forge-store/source-inventory.json", args.source_root / "docs/source-inventory.json")
@@ -110,6 +114,8 @@ def main() -> int:
                  "flatpak-dir", "source-root", "output"):
         parser.add_argument("--" + name, type=Path, required=True)
     parser.add_argument("--source-commit", required=True)
+    parser.add_argument("--profile", choices=("arch", "ubuntu"), default="arch",
+                        help="select the user service; default preserves the Arch fixture profile")
     args = parser.parse_args()
     if len(args.source_commit) != 40 or not all(ch in "0123456789abcdef" for ch in args.source_commit):
         raise ValueError("source commit must be a full lowercase Git SHA")
