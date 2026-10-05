@@ -1,4 +1,6 @@
+use crate::catalogue::Delivery;
 use rusqlite::{params, Connection, OptionalExtension};
+use sha2::{Digest, Sha256};
 use std::path::Path;
 use std::sync::Mutex;
 use thiserror::Error;
@@ -14,6 +16,8 @@ pub enum QueueError {
     InvalidTransition,
     #[error("invalid application ID")]
     InvalidAppId,
+    #[error("job delivery differs from signed catalogue")]
+    DeliveryChanged,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -53,6 +57,7 @@ pub struct Job {
     pub state: JobState,
     pub detail: Option<String>,
     pub native_pending: bool,
+    pub delivery_sha256: Option<String>,
 }
 
 pub struct JobQueue {
@@ -60,6 +65,15 @@ pub struct JobQueue {
 }
 
 impl Backend {
+    pub fn for_delivery(delivery: &Delivery) -> Self {
+        match delivery {
+            Delivery::Compatforge { .. } => Self::Compatforge,
+            Delivery::Flatpak { .. } => Self::Flatpak,
+            Delivery::ForgePackage { .. } => Self::ForgePackage,
+            Delivery::UbuntuDeb { .. } => Self::UbuntuDeb,
+            Delivery::Snap { .. } => Self::Snap,
+        }
+    }
     fn as_str(self) -> &'static str {
         match self {
             Self::Compatforge => "compatforge",
@@ -77,6 +91,28 @@ impl Backend {
             "ubuntu-deb" => Ok(Self::UbuntuDeb),
             "snap" => Ok(Self::Snap),
             _ => Err(rusqlite::Error::InvalidQuery),
+        }
+    }
+}
+
+fn delivery_digest(delivery: &Delivery) -> Result<String, QueueError> {
+    let bytes = serde_json::to_vec(delivery).map_err(|_| QueueError::DeliveryChanged)?;
+    Ok(hex::encode(Sha256::digest(bytes)))
+}
+
+impl Job {
+    pub fn verify_delivery(&self, delivery: &Delivery) -> Result<(), QueueError> {
+        if self.backend != Backend::for_delivery(delivery) {
+            return Err(QueueError::DeliveryChanged);
+        }
+        match &self.delivery_sha256 {
+            Some(pin) if pin == &delivery_digest(delivery)? => Ok(()),
+            None if !self.native_pending
+                && !matches!(self.backend, Backend::UbuntuDeb | Backend::Snap) =>
+            {
+                Ok(())
+            }
+            _ => Err(QueueError::DeliveryChanged),
         }
     }
 }
@@ -128,10 +164,11 @@ fn row_job(row: &rusqlite::Row<'_>) -> rusqlite::Result<Job> {
         state: JobState::parse(&state)?,
         detail: row.get(5)?,
         native_pending: row.get(6)?,
+        delivery_sha256: row.get(7)?,
     })
 }
 
-const COLUMNS: &str = "id,app_id,backend,action,state,detail,native_pending";
+const COLUMNS: &str = "id,app_id,backend,action,state,detail,native_pending,delivery_sha256";
 
 impl JobQueue {
     pub fn open(path: &Path) -> Result<Self, QueueError> {
@@ -150,6 +187,16 @@ impl JobQueue {
         };
         if !has_pending {
             conn.execute_batch("ALTER TABLE jobs ADD COLUMN native_pending INTEGER NOT NULL DEFAULT 0 CHECK(native_pending IN (0,1));")?;
+        }
+        let has_digest = {
+            let mut stmt = conn.prepare("PRAGMA table_info(jobs)")?;
+            let names = stmt
+                .query_map([], |row| row.get::<_, String>(1))?
+                .collect::<rusqlite::Result<Vec<_>>>()?;
+            names.iter().any(|name| name == "delivery_sha256")
+        };
+        if !has_digest {
+            conn.execute_batch("ALTER TABLE jobs ADD COLUMN delivery_sha256 TEXT;")?;
         }
         conn.execute_batch("BEGIN IMMEDIATE; DROP INDEX IF EXISTS one_active_job_per_app;\
              UPDATE jobs SET state='interrupted', detail='worker stopped before confirmation'\
@@ -173,6 +220,29 @@ impl JobQueue {
         backend: Backend,
         action: Action,
     ) -> Result<Job, QueueError> {
+        self.enqueue_with_pin(app_id, backend, action, None)
+    }
+
+    pub fn enqueue_reviewed(
+        &self,
+        app_id: &str,
+        backend: Backend,
+        action: Action,
+        delivery: &Delivery,
+    ) -> Result<Job, QueueError> {
+        if backend != Backend::for_delivery(delivery) {
+            return Err(QueueError::DeliveryChanged);
+        }
+        self.enqueue_with_pin(app_id, backend, action, Some(delivery_digest(delivery)?))
+    }
+
+    fn enqueue_with_pin(
+        &self,
+        app_id: &str,
+        backend: Backend,
+        action: Action,
+        pin: Option<String>,
+    ) -> Result<Job, QueueError> {
         if !valid_app_id(app_id) {
             return Err(QueueError::InvalidAppId);
         }
@@ -187,10 +257,11 @@ impl JobQueue {
             state: JobState::Queued,
             detail: None,
             native_pending: false,
+            delivery_sha256: pin,
         };
         self.lock()?.execute(
-            "INSERT INTO jobs(id,app_id,backend,action,state) VALUES (?1,?2,?3,?4,'queued')",
-            params![job.id, job.app_id, backend.as_str(), action.as_str()],
+            "INSERT INTO jobs(id,app_id,backend,action,state,delivery_sha256) VALUES (?1,?2,?3,?4,'queued',?5)",
+            params![job.id, job.app_id, backend.as_str(), action.as_str(),job.delivery_sha256],
         )?;
         Ok(job)
     }
@@ -313,7 +384,7 @@ impl JobQueue {
         ) {
             return Err(QueueError::InvalidTransition);
         }
-        self.enqueue(&old.app_id, old.backend, old.action)
+        self.enqueue_with_pin(&old.app_id, old.backend, old.action, old.delivery_sha256)
     }
 
     /// Unknown native results retain their provider request ID and block new operations.

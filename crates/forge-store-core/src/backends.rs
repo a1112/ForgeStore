@@ -10,6 +10,38 @@ use std::path::Path;
 use std::path::PathBuf;
 use thiserror::Error;
 
+#[derive(Debug)]
+pub struct ManagedChildOutcome {
+    pub status: std::process::ExitStatus,
+    pub cancelled: bool,
+    pub timed_out: bool,
+}
+
+/// Wait for ordinary-user package processes, reap after stop, and bound both waits.
+/// Never use this for privileged APT/dpkg transactions in the native OS service.
+pub async fn wait_managed_child(
+    child: &mut tokio::process::Child,
+    cancel: &tokio_util::sync::CancellationToken,
+    deadline: std::time::Duration,
+) -> Result<ManagedChildOutcome, BackendError> {
+    let (cancelled, timed_out) = tokio::select! {
+        status=child.wait()=>return Ok(ManagedChildOutcome{status:status?,cancelled:false,timed_out:false}),
+        _=cancel.cancelled()=>(true,false),
+        _=tokio::time::sleep(deadline)=>(false,true),
+    };
+    child.start_kill()?;
+    let status = tokio::time::timeout(std::time::Duration::from_secs(10), child.wait())
+        .await
+        .map_err(|_| {
+            BackendError::Process("package process did not stop after deadline".into())
+        })??;
+    Ok(ManagedChildOutcome {
+        status,
+        cancelled,
+        timed_out,
+    })
+}
+
 #[derive(Debug, Error)]
 pub enum BackendError {
     #[error("invalid reviewed backend input: {0}")]

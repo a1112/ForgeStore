@@ -203,6 +203,111 @@ fn native_preflight_allows_old_version_but_never_other_package_identity() {
 }
 
 #[test]
+fn unresolved_job_cannot_change_backend_or_same_backend_delivery_on_retry() {
+    let old = Catalog::parse(&serde_json::to_vec(&catalog(deb(), 2)).unwrap()).unwrap();
+    let dir = tempfile::tempdir().unwrap();
+    let path = dir.path().join("queue.sqlite");
+    let q = JobQueue::open(&path).unwrap();
+    let job = q
+        .enqueue_reviewed(
+            "org.forge.test",
+            Backend::UbuntuDeb,
+            Action::Install,
+            &old.entries[0].delivery,
+        )
+        .unwrap();
+    q.start_next().unwrap();
+    q.interrupt(&job.id, "provider pending").unwrap();
+    drop(q);
+    let q = JobQueue::open(&path).unwrap();
+    let retry = q.retry(&job.id).unwrap();
+    assert!(retry.verify_delivery(&old.entries[0].delivery).is_ok());
+    for mut replacement in [
+        deb(),
+        snap(),
+        json!({"backend":"flatpak","remote":"flathub",
+        "reference":"app/org.example.Test/x86_64/stable","commit":"a".repeat(64)}),
+    ] {
+        if replacement["backend"] == "ubuntu-deb" {
+            replacement["version"] = json!("2.0-1");
+        }
+        let current =
+            Catalog::parse(&serde_json::to_vec(&catalog(replacement, 2)).unwrap()).unwrap();
+        assert!(retry.verify_delivery(&current.entries[0].delivery).is_err());
+    }
+    assert!(q.get(&job.id).unwrap().unwrap().native_pending);
+}
+
+#[test]
+fn queue_binding_migration_preserves_old_history_and_keeps_unbound_native_unknown() {
+    let dir = tempfile::tempdir().unwrap();
+    let path = dir.path().join("legacy.sqlite");
+    let conn = rusqlite::Connection::open(&path).unwrap();
+    conn.execute_batch("CREATE TABLE jobs(sequence INTEGER PRIMARY KEY AUTOINCREMENT,id TEXT NOT NULL UNIQUE,app_id TEXT NOT NULL,backend TEXT NOT NULL,action TEXT NOT NULL,state TEXT NOT NULL,detail TEXT); INSERT INTO jobs(id,app_id,backend,action,state,detail) VALUES ('old-windows','7zip','compatforge','install','succeeded','original evidence'),('old-native','org.forge.test','ubuntu-deb','install','running',NULL);").unwrap();
+    drop(conn);
+    let q = JobQueue::open(&path).unwrap();
+    let windows = q.get("old-windows").unwrap().unwrap();
+    assert_eq!(windows.state, JobState::Succeeded);
+    assert_eq!(windows.detail.as_deref(), Some("original evidence"));
+    assert!(windows.delivery_sha256.is_none());
+    assert!(!windows.native_pending);
+    let native = q.get("old-native").unwrap().unwrap();
+    assert_eq!(native.state, JobState::Interrupted);
+    let d = Catalog::parse(&serde_json::to_vec(&catalog(deb(), 2)).unwrap()).unwrap();
+    assert!(native.native_pending);
+    assert!(native.verify_delivery(&d.entries[0].delivery).is_err());
+    assert_eq!(q.list().unwrap().len(), 2);
+}
+
+#[tokio::test]
+async fn managed_child_wait_bounds_timeout_and_honors_cancellation() {
+    use forge_store_core::backends::wait_managed_child;
+    use std::time::Duration;
+    use tokio_util::sync::CancellationToken;
+    fn sleeping_child() -> tokio::process::Child {
+        #[cfg(windows)]
+        let mut command = {
+            let mut c = tokio::process::Command::new("powershell.exe");
+            c.args([
+                "-NoProfile",
+                "-NonInteractive",
+                "-Command",
+                "Start-Sleep -Seconds 30",
+            ]);
+            c
+        };
+        #[cfg(not(windows))]
+        let mut command = {
+            let mut c = tokio::process::Command::new("/bin/sleep");
+            c.arg("30");
+            c
+        };
+        command
+            .kill_on_drop(true)
+            .stdout(std::process::Stdio::null())
+            .stderr(std::process::Stdio::null())
+            .spawn()
+            .unwrap()
+    }
+    let mut child = sleeping_child();
+    let cancel = CancellationToken::new();
+    let outcome = wait_managed_child(&mut child, &cancel, Duration::from_millis(20))
+        .await
+        .unwrap();
+    assert!(outcome.timed_out);
+    assert!(!outcome.cancelled);
+    assert!(child.try_wait().unwrap().is_some());
+    let mut child = sleeping_child();
+    cancel.cancel();
+    let outcome = wait_managed_child(&mut child, &cancel, Duration::from_secs(30))
+        .await
+        .unwrap();
+    assert!(outcome.cancelled);
+    assert!(!outcome.timed_out);
+    assert!(child.try_wait().unwrap().is_some());
+}
+
+#[test]
 fn native_interruption_survives_restart_and_retry_reuses_provider_identity() {
     let dir = tempfile::tempdir().unwrap();
     let path = dir.path().join("queue.sqlite");

@@ -15,9 +15,9 @@ mod linux {
     use forge_store_core::backends::{
         compatforge_poll_status, compatforge_selected_install, fixture_remote_is_trusted,
         flatpak_action_completed, flatpak_record_matches, native_identity_matches, native_probe,
-        native_status_matches, package_display_version, parse_flatpak_columns, CompatForgeClient,
-        CompatForgeRequest, FlatpakInvocation, NativeClient, NativeRequest, PackageClient,
-        PackageRequest,
+        native_status_matches, package_display_version, parse_flatpak_columns, wait_managed_child,
+        CompatForgeClient, CompatForgeRequest, FlatpakInvocation, NativeClient, NativeRequest,
+        PackageClient, PackageRequest,
     };
     use forge_store_core::cache::VerifiedCache;
     use forge_store_core::catalogue::{AppEntry, Catalog, Delivery};
@@ -233,7 +233,7 @@ mod linux {
                 }
                 let job = store
                     .queue
-                    .enqueue(&app_id, backend, action)
+                    .enqueue_reviewed(&app_id, backend, action, &entry.delivery)
                     .map_err(|_| ("conflict", "Application already has an active operation"))?;
                 store.notify.notify_one();
                 Ok(json!({"jobId":job.id}))
@@ -355,21 +355,31 @@ mod linux {
             platforms[usize::from(backend == "snap")] =
                 json!({"available":available,"reason":detail});
         }
-        let collect = async {
+        let entries = store
+            .catalogue
+            .entries
+            .iter()
+            .filter(|entry| {
+                matches!(
+                    entry.delivery,
+                    Delivery::UbuntuDeb { .. } | Delivery::Snap { .. }
+                )
+            })
+            .cloned()
+            .collect::<Vec<_>>();
+        let collect = async move {
             use futures_util::{stream, StreamExt};
-            stream::iter(store.catalogue.entries.iter().filter_map(|entry| {
-                let (id,backend)=match &entry.delivery {
-                    Delivery::UbuntuDeb{reviewed_package_id,..} => (reviewed_package_id,"ubuntu-deb"),
-                    Delivery::Snap{reviewed_package_id,..} => (reviewed_package_id,"snap"),
+            stream::iter(entries.into_iter().map(|entry| async move {
+                let (id, backend) = match &entry.delivery {
+                    Delivery::UbuntuDeb { reviewed_package_id, .. } => (reviewed_package_id, "ubuntu-deb"),
+                    Delivery::Snap { reviewed_package_id, .. } => (reviewed_package_id, "snap"),
                     _ => return None,
                 };
-                Some(async move {
-                    let req=NativeRequest::status(&format!("status-{}",uuid::Uuid::new_v4()),id).ok()?;
-                    let value=NativeClient.call(req).await.ok()?;
-                    native_status_matches(&value,&entry.delivery,true).ok()?;
-                    Some(json!({"appId":entry.id,"backend":backend,"version":value["version"],"canRollback":false}))
-                })
-            })).buffer_unordered(16).filter_map(|row|async move {row}).collect::<Vec<_>>().await
+                let req = NativeRequest::status(&format!("status-{}", uuid::Uuid::new_v4()), id).ok()?;
+                let value = NativeClient.call(req).await.ok()?;
+                native_status_matches(&value, &entry.delivery, true).ok()?;
+                Some(json!({"appId":entry.id,"backend":backend,"version":value["version"],"canRollback":false}))
+            })).buffer_unordered(16).filter_map(|row| async move {row}).collect::<Vec<_>>().await
         };
         match tokio::time::timeout(Duration::from_secs(3), collect).await {
             Ok(installed) => (platforms, installed),
@@ -619,6 +629,7 @@ mod linux {
             .iter()
             .find(|entry| entry.id == job.app_id)
             .ok_or("application disappeared from signed catalogue")?;
+        job.verify_delivery(&entry.delivery)?;
         match &entry.delivery {
             Delivery::Compatforge { artifact, .. } => {
                 run_compat(store, entry, artifact, job.action, cancel).await
@@ -814,39 +825,38 @@ mod linux {
             .stdout(std::process::Stdio::null())
             .stderr(std::process::Stdio::null());
         let mut child = command.spawn()?;
-        let (status, cancelled) = tokio::select! {
-            status = child.wait() => (status?, false),
-            _ = cancel.cancelled() => {
-                let _ = child.start_kill();
-                let status = tokio::time::timeout(Duration::from_secs(10), child.wait()).await??;
-                (status, true)
-            },
-        };
+        let waited = wait_managed_child(&mut child, cancel, Duration::from_secs(1800)).await?;
+        let mut status = waited.status;
+        let mut cancelled = waited.cancelled;
+        let mut timed_out = waited.timed_out;
         // The documented CLI pins only update, not install. Keep the job running through
         // initial deployment and the exact-commit update; never advertise the interim tip.
-        if !cancelled && status.success() && action == Action::Install {
+        if !cancelled && !timed_out && status.success() && action == Action::Install {
             if let Some(commit) = commit {
                 let pin = FlatpakInvocation::pinned(remote, reference, Action::Update, commit)?;
-                let pinned = tokio::process::Command::new("/usr/bin/flatpak")
+                let mut pinned = tokio::process::Command::new("/usr/bin/flatpak")
                     .args(pin.args)
                     .stdout(std::process::Stdio::null())
                     .stderr(std::process::Stdio::null())
                     .kill_on_drop(true)
-                    .status()
-                    .await?;
-                if !pinned.success() {
-                    let observed = flatpak_installed_commit(remote, reference).await;
-                    return Err(format!(
-                        "Flatpak commit pinning failed; expected={commit}; observed={observed:?}"
-                    )
-                    .into());
-                }
+                    .spawn()?;
+                let waited =
+                    wait_managed_child(&mut pinned, cancel, Duration::from_secs(1800)).await?;
+                status = waited.status;
+                cancelled = waited.cancelled;
+                timed_out = waited.timed_out;
             }
         }
         let after = flatpak_installed_commit(remote, reference).await?;
         let pinned = commit.is_none_or(|expected| {
             action == Action::Uninstall || after.as_deref() == Some(expected)
         });
+        if timed_out {
+            return Err(format!(
+                "Flatpak operation timed out; observed={after:?}; expected={commit:?}"
+            )
+            .into());
+        }
         if cancelled {
             if pinned && flatpak_action_completed(action, before.as_deref(), after.as_deref()) {
                 return Ok(RunOutcome::Completed);
@@ -1108,6 +1118,43 @@ mod linux {
     #[cfg(test)]
     mod tests {
         use super::*;
+
+        #[tokio::test]
+        async fn replay_rejects_catalogue_backend_change_before_any_provider_call() {
+            let temp = tempfile::tempdir().unwrap();
+            let queue = JobQueue::open(&temp.path().join("jobs.sqlite")).unwrap();
+            let old = queue
+                .enqueue("org.forge.test", Backend::UbuntuDeb, Action::Install)
+                .unwrap();
+            queue.start_next().unwrap();
+            queue.interrupt(&old.id, "native provider unknown").unwrap();
+            queue.retry(&old.id).unwrap();
+            let replay = queue.start_next().unwrap().unwrap();
+            let entry:AppEntry=serde_json::from_value(json!({"id":"org.forge.test",
+                "name":{"zhCN":"test","en":"test"},"summary":{"zhCN":"test","en":"test"},
+                "publisher":"test","license":"MIT","version":"1","origin":"https://example.org/",
+                "permissions":[],"compatibility":{"status":"unknown","evidence":null},
+                "delivery":{"backend":"flatpak","remote":"forge-store-fixture","reference":"app/org.example.Test/x86_64/stable"}})).unwrap();
+            let store = Store {
+                catalogue: Catalog {
+                    schema_version: 1,
+                    entries: vec![entry],
+                },
+                queue,
+                cache: VerifiedCache::open(&temp.path().join("cache")).unwrap(),
+                compat: CompatForgeClient::system(&temp.path().join("requests")),
+                notify: Notify::new(),
+                running: Mutex::new(None),
+            };
+            let error = run_job(&store, &replay, &CancellationToken::new())
+                .await
+                .unwrap_err();
+            assert_eq!(
+                error.to_string(),
+                "job delivery differs from signed catalogue"
+            );
+            assert!(store.queue.get(&old.id).unwrap().unwrap().native_pending);
+        }
 
         #[test]
         fn cancellation_between_start_and_token_registration_is_delivered() {
