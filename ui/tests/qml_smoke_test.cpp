@@ -24,6 +24,7 @@ private slots:
     void actionsRespectBackendAndJobState();
     void unavailableBackendsDisableMutationsAndShowReasons();
     void longMetadataKeepsActionsInsideCard();
+    void nativeBackendsHaveTranslatedLabelsAndNoUnsafeCancel();
 };
 
 void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
@@ -345,6 +346,40 @@ void StoreWindowTest::longMetadataKeepsActionsInsideCard() {
                                     .arg(position.x()).arg(button->width()).arg(card->width())));
         }
     }
+}
+
+void StoreWindowTest::nativeBackendsHaveTranslatedLabelsAndNoUnsafeCancel() {
+    StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
+    QQmlEngine engine;
+    engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
+    std::unique_ptr<QObject> window(component.create());
+    QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVariant label;
+    QVERIFY(QMetaObject::invokeMethod(window.get(), "backendLabel", Q_RETURN_ARG(QVariant,label), Q_ARG(QVariant,QStringLiteral("ubuntu-deb"))));
+    QCOMPARE(label.toString(), QStringLiteral("Ubuntu 软件包"));
+    QVERIFY(QMetaObject::invokeMethod(window.get(), "backendLabel", Q_RETURN_ARG(QVariant,label), Q_ARG(QVariant,QStringLiteral("snap"))));
+    QCOMPARE(label.toString(), QStringLiteral("Snap 应用"));
+    QVERIFY(window->setProperty("page", QStringLiteral("queue")));
+    const QVariantMap job{{"id","job-1"},{"appId","org.forge.test"},{"backend","ubuntu-deb"},
+        {"action","install"},{"state","running"}};
+    QVERIFY(window->setProperty("state",QVariantMap{{"jobs",QVariantList{job}}}));
+    auto *repeater=window->findChild<QObject *>(QStringLiteral("queueRepeater"));
+    QVERIFY(repeater!=nullptr);
+    QQuickItem *card=nullptr;
+    QVERIFY(QMetaObject::invokeMethod(repeater,"itemAt",Q_RETURN_ARG(QQuickItem *,card),Q_ARG(int,0)));
+    QVERIFY(card!=nullptr);
+    auto *cancel=card->findChild<QObject *>(QStringLiteral("queueCancelButton"));
+    QVERIFY(cancel!=nullptr);
+    QCOMPARE(cancel->property("visible").toBool(),false);
+    auto recovering=job;
+    recovering["state"]=QStringLiteral("queued");recovering["nativePending"]=true;
+    QVERIFY(window->setProperty("state",QVariantMap{{"jobs",QVariantList{recovering}}}));
+    QVERIFY(QMetaObject::invokeMethod(repeater,"itemAt",Q_RETURN_ARG(QQuickItem *,card),Q_ARG(int,0)));
+    QVERIFY(card!=nullptr);
+    cancel=card->findChild<QObject *>(QStringLiteral("queueCancelButton"));
+    QVERIFY(cancel!=nullptr);
+    QCOMPARE(cancel->property("visible").toBool(),false);
 }
 
 int main(int argc, char **argv) {

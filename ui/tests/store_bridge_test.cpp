@@ -13,6 +13,7 @@ class StoreBridgeTest final : public QObject {
 
 private slots:
     void snapshotUsesPrivateJsonLineAndPublishesState();
+    void snapshotAcceptsV2NativeCatalogue();
     void rejectsMismatchedReplyWithoutPublishingState();
     void enqueuesThenRefreshesRealState();
     void cancelUsesJobIdInPayload();
@@ -93,6 +94,23 @@ void StoreBridgeTest::rejectsMismatchedReplyWithoutPublishingState() {
     QTRY_VERIFY(failed.count() > 0);
     QCOMPARE(changed.count(), 0);
     QVERIFY(bridge.snapshot().isEmpty());
+}
+
+void StoreBridgeTest::snapshotAcceptsV2NativeCatalogue() {
+    QTemporaryDir directory;
+    QLocalServer server;
+    const QString path = directory.filePath("store.sock");
+    QVERIFY(server.listen(path));
+    StoreBridge bridge(path);
+    QSignalSpy changed(&bridge, &StoreBridge::snapshotChanged);
+    bridge.refresh();
+    QLocalSocket *peer = nullptr;
+    const auto request = receiveRequest(server, peer);
+    answer(peer, request, QJsonObject{{"catalogue", QJsonObject{{"schemaVersion", 2}, {"entries", QJsonArray{}}}},
+        {"jobs", QJsonArray{}}, {"installed", QJsonArray{}},
+        {"backends", QJsonObject{{"ubuntu-deb", QJsonObject{{"available", true}}}}}});
+    QTRY_COMPARE(changed.count(), 1);
+    QCOMPARE(bridge.snapshot().value("catalogue").toMap().value("schemaVersion").toInt(), 2);
 }
 
 void StoreBridgeTest::enqueuesThenRefreshesRealState() {

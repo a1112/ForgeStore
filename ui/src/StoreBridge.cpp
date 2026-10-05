@@ -23,7 +23,8 @@ struct Pending {
 
 bool isSnapshot(const QJsonObject &result) {
     const auto catalogue = result.value(QStringLiteral("catalogue")).toObject();
-    return catalogue.value(QStringLiteral("schemaVersion")).toInt() == 1
+    const auto version = catalogue.value(QStringLiteral("schemaVersion")).toInt();
+    return (version == 1 || version == 2)
            && catalogue.value(QStringLiteral("entries")).isArray()
            && result.value(QStringLiteral("jobs")).isArray()
            && result.value(QStringLiteral("installed")).isArray()

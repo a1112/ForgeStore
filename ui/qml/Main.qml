@@ -51,6 +51,8 @@ ApplicationWindow {
     function backendLabel(backend) {
         if (backend === "compatforge") return labels.windows
         if (backend === "flatpak") return labels.flatpak
+        if (backend === "ubuntu-deb") return labels.ubuntuDeb
+        if (backend === "snap") return labels.snap
         if (backend === "forge-package" || backend === "forgePackage") return labels.forgePackage
         return backend || labels.unknown
     }
@@ -377,8 +379,9 @@ ApplicationWindow {
                                     Button {
                                         objectName: "queueCancelButton"
                                         text: root.labels.cancel
-                                        visible: ["queued", "running"].indexOf(modelData.state) >= 0
-                                                 && !(modelData.backend === "forge-package" && modelData.state === "running")
+                                         visible: ["queued", "running"].indexOf(modelData.state) >= 0
+                                                  && modelData.nativePending !== true
+                                                 && !(["forge-package", "ubuntu-deb", "snap"].indexOf(modelData.backend) >= 0 && modelData.state === "running")
                                         enabled: ["queued", "preparing", "running"].indexOf(modelData.state) >= 0
                                         onClicked: storeBridge.cancel(modelData.id)
                                     }

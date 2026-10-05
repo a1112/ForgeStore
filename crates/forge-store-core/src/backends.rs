@@ -1,4 +1,8 @@
 use crate::catalogue::{Artifact, CatalogError, WineAppearance, MAX_FORGEPKG_BYTES};
+pub use crate::native_backends::{
+    decode_native_reply, native_identity_matches, native_probe, native_status_matches,
+    NativeClient, NativeRequest,
+};
 use crate::queue::Action;
 use serde_json::{json, Map, Value};
 use std::collections::BTreeMap;
@@ -314,6 +318,28 @@ pub struct FlatpakInvocation {
 }
 
 impl FlatpakInvocation {
+    pub fn pinned(
+        remote: &str,
+        reference: &str,
+        action: Action,
+        commit: &str,
+    ) -> Result<Self, BackendError> {
+        if !matches!(remote, "flathub" | "forge-store-fixture")
+            || !crate::catalogue::valid_digest(commit)
+        {
+            return Err(BackendError::Invalid("invalid pinned Flatpak delivery"));
+        }
+        // Reuse strict ref validation without widening the legacy fixture-only API.
+        let mut invocation = Self::new("forge-store-fixture", reference, action)?;
+        if action == Action::Install {
+            invocation.args[4] = remote.into();
+        }
+        if action == Action::Update {
+            invocation.args.insert(4, format!("--commit={commit}"));
+        }
+        Ok(invocation)
+    }
+
     pub fn new(remote: &str, reference: &str, action: Action) -> Result<Self, BackendError> {
         let valid_remote = remote == "forge-store-fixture";
         let valid_ref = reference.starts_with("app/")
@@ -391,6 +417,42 @@ pub fn parse_flatpak_list(bytes: &[u8]) -> Result<Vec<Value>, BackendError> {
                 ));
             }
         }
+    }
+    Ok(rows)
+}
+
+/// Upstream Flatpak has --columns, not --json. Non-TTY output is tab-separated.
+pub fn parse_flatpak_columns(bytes: &[u8]) -> Result<Vec<Value>, BackendError> {
+    if bytes.len() > 1024 * 1024 {
+        return Err(BackendError::Invalid("Flatpak columns exceed limit"));
+    }
+    let text = std::str::from_utf8(bytes)
+        .map_err(|_| BackendError::Invalid("Flatpak columns are not UTF-8"))?;
+    let mut rows = Vec::new();
+    let mut seen = std::collections::HashSet::new();
+    for line in text.lines() {
+        let cols: Vec<_> = line.split('\t').collect();
+        if cols.len() != 5
+            || rows.len() >= 1024
+            || cols
+                .iter()
+                .any(|s| s.len() > 512 || s.chars().any(char::is_control))
+        {
+            return Err(BackendError::Invalid(
+                "invalid Flatpak column count or length",
+            ));
+        }
+        let reference = format!("app/{}/{}/{}", cols[0], cols[1], cols[2]);
+        FlatpakInvocation::new("forge-store-fixture", &reference, Action::Uninstall)?;
+        if cols[..4].iter().any(|s| s.is_empty())
+            || !safe_token(cols[3], 64)
+            || !seen.insert((cols[0], cols[1], cols[2], cols[3]))
+        {
+            return Err(BackendError::Invalid(
+                "invalid or duplicate Flatpak identity",
+            ));
+        }
+        rows.push(json!({"application_id":cols[0],"arch":cols[1],"branch":cols[2],"origin":cols[3],"version":cols[4]}));
     }
     Ok(rows)
 }
@@ -652,6 +714,22 @@ pub fn fixture_remote_is_trusted(output: &str) -> bool {
             )
             && columns.next().is_none()
     })
+}
+
+pub fn flatpak_remote_is_trusted(output: &str, remote: &str) -> bool {
+    if remote == "forge-store-fixture" {
+        return fixture_remote_is_trusted(output);
+    }
+    remote == "flathub"
+        && output.lines().any(|line| {
+            let mut cols = line.split_whitespace();
+            cols.next() == Some("flathub")
+                && matches!(
+                    cols.next(),
+                    Some("https://dl.flathub.org/repo/" | "https://dl.flathub.org/repo")
+                )
+                && cols.next().is_none()
+        })
 }
 
 fn canonical_value(value: &Value, output: &mut Vec<u8>) -> Result<(), BackendError> {

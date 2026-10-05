@@ -6,6 +6,7 @@ use url::{Host, Url};
 pub const MAX_CATALOG_BYTES: usize = 512 * 1024;
 pub const MAX_ARTIFACT_BYTES: u64 = 1024 * 1024 * 1024;
 pub const MAX_FORGEPKG_BYTES: u64 = 64 * 1024 * 1024;
+pub const MAX_NATIVE_DEB_BYTES: u64 = 256 * 1024 * 1024;
 
 #[derive(Debug, Error)]
 pub enum CatalogError {
@@ -80,6 +81,29 @@ pub enum Delivery {
     Flatpak {
         remote: String,
         reference: String,
+        #[serde(default, skip_serializing_if = "Option::is_none")]
+        commit: Option<String>,
+    },
+    UbuntuDeb {
+        #[serde(rename = "reviewedPackageId")]
+        reviewed_package_id: String,
+        package: String,
+        version: String,
+        architecture: String,
+        distribution: String,
+        release: String,
+        #[serde(default, skip_serializing_if = "Option::is_none")]
+        artifact: Option<Artifact>,
+    },
+    Snap {
+        #[serde(rename = "reviewedPackageId")]
+        reviewed_package_id: String,
+        name: String,
+        #[serde(rename = "snapId")]
+        snap_id: String,
+        revision: u64,
+        channel: String,
+        confinement: String,
     },
     ForgePackage {
         artifact: Artifact,
@@ -107,8 +131,22 @@ impl Catalog {
             return Err(CatalogError::TooLarge);
         }
         let catalog: Self = serde_json::from_slice(bytes)?;
-        if catalog.schema_version != 1 || catalog.entries.len() > 1024 {
+        if !matches!(catalog.schema_version, 1 | 2) || catalog.entries.len() > 1024 {
             return Err(CatalogError::Invalid("unsupported version or entry count"));
+        }
+        // Option<T> treats an explicit null as absent. v1's closed wire format never
+        // admitted this v2 field, including null; keep that compatibility boundary.
+        if catalog.schema_version == 1 {
+            let raw: serde_json::Value = serde_json::from_slice(bytes)?;
+            if raw["entries"].as_array().is_some_and(|entries| {
+                entries
+                    .iter()
+                    .any(|entry| entry["delivery"].get("commit").is_some())
+            }) {
+                return Err(CatalogError::Invalid(
+                    "Flatpak commit requires catalogue v2",
+                ));
+            }
         }
         let mut ids = HashSet::new();
         for entry in &catalog.entries {
@@ -148,8 +186,18 @@ impl Catalog {
                     }
                     artifact.validate_remote(MAX_ARTIFACT_BYTES)?;
                 }
-                Delivery::Flatpak { remote, reference } => {
-                    if remote != "forge-store-fixture" || !valid_flatpak_ref(reference) {
+                Delivery::Flatpak {
+                    remote,
+                    reference,
+                    commit,
+                } => {
+                    let pinned = commit.as_ref().is_some_and(|c| valid_digest(c));
+                    let valid = if catalog.schema_version == 1 {
+                        remote == "forge-store-fixture" && commit.is_none()
+                    } else {
+                        matches!(remote.as_str(), "flathub" | "forge-store-fixture") && pinned
+                    };
+                    if !valid || !valid_flatpak_ref(reference) {
                         return Err(CatalogError::Invalid(
                             "unreviewed Flatpak remote or invalid ref",
                         ));
@@ -157,6 +205,50 @@ impl Catalog {
                 }
                 Delivery::ForgePackage { artifact } => {
                     artifact.validate(MAX_FORGEPKG_BYTES)?;
+                }
+                Delivery::UbuntuDeb {
+                    reviewed_package_id,
+                    package,
+                    version,
+                    architecture,
+                    distribution,
+                    release,
+                    artifact,
+                } => {
+                    if catalog.schema_version != 2
+                        || reviewed_package_id != &entry.id
+                        || !valid_deb_package(package)
+                        || !valid_deb_version(version)
+                        || !matches!(architecture.as_str(), "amd64" | "arm64" | "all")
+                        || distribution != "ubuntu"
+                        || !valid_release(release)
+                    {
+                        return Err(CatalogError::Invalid("invalid reviewed Ubuntu package"));
+                    }
+                    if let Some(artifact) = artifact {
+                        artifact.validate_remote(MAX_NATIVE_DEB_BYTES)?;
+                    }
+                }
+                Delivery::Snap {
+                    reviewed_package_id,
+                    name,
+                    snap_id,
+                    revision,
+                    channel,
+                    confinement,
+                } => {
+                    if catalog.schema_version != 2
+                        || reviewed_package_id != &entry.id
+                        || !valid_snap_name(name)
+                        || snap_id.len() != 32
+                        || !snap_id.bytes().all(|b| b.is_ascii_alphanumeric())
+                        || *revision == 0
+                        || *revision > i32::MAX as u64
+                        || confinement != "strict"
+                        || !valid_snap_channel(channel)
+                    {
+                        return Err(CatalogError::Invalid("invalid reviewed strict Snap"));
+                    }
                 }
             }
         }
@@ -250,4 +342,59 @@ fn valid_flatpak_ref(reference: &str) -> bool {
         && reference
             .bytes()
             .all(|b| b.is_ascii_alphanumeric() || b"./_-".contains(&b))
+}
+
+pub fn valid_digest(value: &str) -> bool {
+    value.len() == 64
+        && value
+            .bytes()
+            .all(|b| b.is_ascii_digit() || (b'a'..=b'f').contains(&b))
+}
+
+fn valid_deb_package(value: &str) -> bool {
+    (2..=128).contains(&value.len())
+        && value.as_bytes()[0].is_ascii_alphanumeric()
+        && value
+            .bytes()
+            .all(|b| b.is_ascii_lowercase() || b.is_ascii_digit() || b"+.-".contains(&b))
+}
+
+fn valid_deb_version(value: &str) -> bool {
+    !value.is_empty()
+        && value.len() <= 128
+        && value.as_bytes()[0].is_ascii_digit()
+        && value
+            .bytes()
+            .all(|b| b.is_ascii_alphanumeric() || b".+:~-".contains(&b))
+}
+
+fn valid_release(value: &str) -> bool {
+    value.len() == 5
+        && value.as_bytes()[2] == b'.'
+        && value
+            .bytes()
+            .enumerate()
+            .all(|(i, b)| i == 2 || b.is_ascii_digit())
+}
+
+fn valid_snap_name(value: &str) -> bool {
+    (2..=40).contains(&value.len())
+        && value.as_bytes()[0].is_ascii_lowercase()
+        && !value.ends_with('-')
+        && !value.contains("--")
+        && value
+            .bytes()
+            .all(|b| b.is_ascii_lowercase() || b.is_ascii_digit() || b == b'-')
+}
+
+fn valid_snap_channel(value: &str) -> bool {
+    let parts: Vec<_> = value.split('/').collect();
+    parts.len() == 2
+        && !parts[0].is_empty()
+        && parts[0].len() <= 40
+        && parts[0].as_bytes()[0].is_ascii_alphanumeric()
+        && parts[0]
+            .bytes()
+            .all(|b| b.is_ascii_alphanumeric() || b".-".contains(&b))
+        && matches!(parts[1], "stable" | "candidate" | "beta" | "edge")
 }

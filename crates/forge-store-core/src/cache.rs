@@ -1,4 +1,6 @@
-use crate::catalogue::{Artifact, CatalogError, MAX_ARTIFACT_BYTES, MAX_FORGEPKG_BYTES};
+use crate::catalogue::{
+    Artifact, CatalogError, MAX_ARTIFACT_BYTES, MAX_FORGEPKG_BYTES, MAX_NATIVE_DEB_BYTES,
+};
 use bytes::Bytes;
 use futures_util::{Stream, StreamExt, TryStreamExt};
 use sha2::{Digest, Sha256};
@@ -270,6 +272,22 @@ impl VerifiedCache {
 
     pub async fn stage_forge_package(&self, artifact: &Artifact) -> Result<PathBuf, CacheError> {
         artifact.validate(MAX_FORGEPKG_BYTES)?;
+        self.stage_private_artifact(artifact, "forgepkg").await
+    }
+
+    pub async fn stage_native_deb(&self, artifact: &Artifact) -> Result<PathBuf, CacheError> {
+        artifact.validate_remote(MAX_NATIVE_DEB_BYTES)?;
+        if !crate::catalogue::valid_digest(&artifact.sha256) {
+            return Err(CacheError::Mismatch);
+        }
+        self.stage_private_artifact(artifact, "deb").await
+    }
+
+    async fn stage_private_artifact(
+        &self,
+        artifact: &Artifact,
+        extension: &str,
+    ) -> Result<PathBuf, CacheError> {
         let cached = self.root.join(&artifact.sha256);
         if !file_matches(&cached, artifact).await? {
             return Err(CacheError::Mismatch);
@@ -289,7 +307,7 @@ impl VerifiedCache {
             use std::os::unix::fs::PermissionsExt;
             tokio::fs::set_permissions(&staging, std::fs::Permissions::from_mode(0o700)).await?;
         }
-        let output = staging.join(format!("{}.forgepkg", artifact.sha256));
+        let output = staging.join(format!("{}.{extension}", artifact.sha256));
         if output.exists() {
             return if file_matches(&output, artifact).await? {
                 Ok(output)

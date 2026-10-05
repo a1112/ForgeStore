@@ -21,6 +21,8 @@ pub enum Backend {
     Compatforge,
     Flatpak,
     ForgePackage,
+    UbuntuDeb,
+    Snap,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -50,6 +52,7 @@ pub struct Job {
     pub action: Action,
     pub state: JobState,
     pub detail: Option<String>,
+    pub native_pending: bool,
 }
 
 pub struct JobQueue {
@@ -62,6 +65,8 @@ impl Backend {
             Self::Compatforge => "compatforge",
             Self::Flatpak => "flatpak",
             Self::ForgePackage => "forge-package",
+            Self::UbuntuDeb => "ubuntu-deb",
+            Self::Snap => "snap",
         }
     }
     fn parse(value: &str) -> rusqlite::Result<Self> {
@@ -69,6 +74,8 @@ impl Backend {
             "compatforge" => Ok(Self::Compatforge),
             "flatpak" => Ok(Self::Flatpak),
             "forge-package" => Ok(Self::ForgePackage),
+            "ubuntu-deb" => Ok(Self::UbuntuDeb),
+            "snap" => Ok(Self::Snap),
             _ => Err(rusqlite::Error::InvalidQuery),
         }
     }
@@ -120,10 +127,11 @@ fn row_job(row: &rusqlite::Row<'_>) -> rusqlite::Result<Job> {
         action: Action::parse(&action)?,
         state: JobState::parse(&state)?,
         detail: row.get(5)?,
+        native_pending: row.get(6)?,
     })
 }
 
-const COLUMNS: &str = "id,app_id,backend,action,state,detail";
+const COLUMNS: &str = "id,app_id,backend,action,state,detail,native_pending";
 
 impl JobQueue {
     pub fn open(path: &Path) -> Result<Self, QueueError> {
@@ -132,10 +140,24 @@ impl JobQueue {
         conn.execute_batch("PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL;\
              CREATE TABLE IF NOT EXISTS jobs (sequence INTEGER PRIMARY KEY AUTOINCREMENT, id TEXT NOT NULL UNIQUE,\
              app_id TEXT NOT NULL, backend TEXT NOT NULL, action TEXT NOT NULL, state TEXT NOT NULL, detail TEXT);\
-             CREATE UNIQUE INDEX IF NOT EXISTS one_active_job_per_app ON jobs(app_id)\
-             WHERE state IN ('queued','running','cancelling');\
+             ")?;
+        let has_pending = {
+            let mut stmt = conn.prepare("PRAGMA table_info(jobs)")?;
+            let names = stmt
+                .query_map([], |row| row.get::<_, String>(1))?
+                .collect::<rusqlite::Result<Vec<_>>>()?;
+            names.iter().any(|name| name == "native_pending")
+        };
+        if !has_pending {
+            conn.execute_batch("ALTER TABLE jobs ADD COLUMN native_pending INTEGER NOT NULL DEFAULT 0 CHECK(native_pending IN (0,1));")?;
+        }
+        conn.execute_batch("BEGIN IMMEDIATE; DROP INDEX IF EXISTS one_active_job_per_app;\
              UPDATE jobs SET state='interrupted', detail='worker stopped before confirmation'\
-             WHERE state IN ('running','cancelling');")?;
+             WHERE state IN ('running','cancelling');\
+             UPDATE jobs SET native_pending=1 WHERE state='interrupted' AND backend IN ('ubuntu-deb','snap');\
+             CREATE UNIQUE INDEX one_active_job_per_app ON jobs(app_id)\
+             WHERE state IN ('queued','running','cancelling') OR\
+               (state='interrupted' AND backend IN ('ubuntu-deb','snap')); COMMIT;")?;
         Ok(Self {
             conn: Mutex::new(conn),
         })
@@ -154,6 +176,9 @@ impl JobQueue {
         if !valid_app_id(app_id) {
             return Err(QueueError::InvalidAppId);
         }
+        if matches!(backend, Backend::UbuntuDeb | Backend::Snap) && action == Action::Rollback {
+            return Err(QueueError::InvalidTransition);
+        }
         let job = Job {
             id: Uuid::new_v4().to_string(),
             app_id: app_id.into(),
@@ -161,6 +186,7 @@ impl JobQueue {
             action,
             state: JobState::Queued,
             detail: None,
+            native_pending: false,
         };
         self.lock()?.execute(
             "INSERT INTO jobs(id,app_id,backend,action,state) VALUES (?1,?2,?3,?4,'queued')",
@@ -208,7 +234,7 @@ impl JobQueue {
     pub fn cancel(&self, id: &str) -> Result<(), QueueError> {
         let count = self.lock()?.execute(
             "UPDATE jobs SET state=CASE state WHEN 'queued' THEN 'cancelled'\
-            WHEN 'running' THEN 'cancelling' END WHERE id=?1 AND state IN ('queued','running')",
+            WHEN 'running' THEN 'cancelling' END WHERE id=?1 AND state IN ('queued','running') AND native_pending=0 AND NOT (state='running' AND backend IN ('ubuntu-deb','snap'))",
             [id],
         )?;
         if count == 1 {
@@ -236,7 +262,7 @@ impl JobQueue {
         }
         let state = if success { "succeeded" } else { "failed" };
         let count = self.lock()?.execute(
-            "UPDATE jobs SET state=?2,detail=?3 WHERE id=?1 AND state='running'",
+            "UPDATE jobs SET state=?2,detail=?3,native_pending=0 WHERE id=?1 AND state='running'",
             params![id, state, detail],
         )?;
         if count == 1 {
@@ -269,6 +295,18 @@ impl JobQueue {
 
     pub fn retry(&self, id: &str) -> Result<Job, QueueError> {
         let old = self.get(id)?.ok_or(QueueError::InvalidTransition)?;
+        if matches!(old.backend, Backend::UbuntuDeb | Backend::Snap)
+            && old.state == JobState::Interrupted
+        {
+            let count = self.lock()?.execute(
+                "UPDATE jobs SET state='queued',detail=NULL WHERE id=?1 AND state='interrupted'",
+                [id],
+            )?;
+            if count != 1 {
+                return Err(QueueError::InvalidTransition);
+            }
+            return self.get(id)?.ok_or(QueueError::InvalidTransition);
+        }
         if !matches!(
             old.state,
             JobState::Interrupted | JobState::Failed | JobState::Cancelled
@@ -276,6 +314,19 @@ impl JobQueue {
             return Err(QueueError::InvalidTransition);
         }
         self.enqueue(&old.app_id, old.backend, old.action)
+    }
+
+    /// Unknown native results retain their provider request ID and block new operations.
+    pub fn interrupt(&self, id: &str, detail: &str) -> Result<(), QueueError> {
+        if detail.len() > 4096 {
+            return Err(QueueError::InvalidTransition);
+        }
+        let count = self.lock()?.execute("UPDATE jobs SET state='interrupted',detail=?2,native_pending=CASE WHEN backend IN ('ubuntu-deb','snap') THEN 1 ELSE 0 END WHERE id=?1 AND state IN ('running','cancelling')", params![id,detail])?;
+        if count == 1 {
+            Ok(())
+        } else {
+            Err(QueueError::InvalidTransition)
+        }
     }
 }
 

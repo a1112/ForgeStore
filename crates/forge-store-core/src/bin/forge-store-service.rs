@@ -14,9 +14,10 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 mod linux {
     use forge_store_core::backends::{
         compatforge_poll_status, compatforge_selected_install, fixture_remote_is_trusted,
-        flatpak_action_completed, flatpak_record_matches, package_display_version,
-        parse_flatpak_list, CompatForgeClient, CompatForgeRequest, FlatpakInvocation,
-        PackageClient, PackageRequest,
+        flatpak_action_completed, flatpak_record_matches, native_identity_matches, native_probe,
+        native_status_matches, package_display_version, parse_flatpak_columns, CompatForgeClient,
+        CompatForgeRequest, FlatpakInvocation, NativeClient, NativeRequest, PackageClient,
+        PackageRequest,
     };
     use forge_store_core::cache::VerifiedCache;
     use forge_store_core::catalogue::{AppEntry, Catalog, Delivery};
@@ -83,10 +84,12 @@ mod linux {
         running: Mutex<Option<(String, CancellationToken)>>,
     }
 
-    #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+    #[derive(Debug, Clone, PartialEq, Eq)]
     enum RunOutcome {
         Completed,
         Cancelled,
+        Interrupted,
+        ProviderFailed(String),
     }
 
     pub async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -217,10 +220,13 @@ mod linux {
                     Delivery::Compatforge { .. } => Backend::Compatforge,
                     Delivery::Flatpak { .. } => Backend::Flatpak,
                     Delivery::ForgePackage { .. } => Backend::ForgePackage,
+                    Delivery::UbuntuDeb { .. } => Backend::UbuntuDeb,
+                    Delivery::Snap { .. } => Backend::Snap,
                 };
                 if matches!(
                     (backend, action),
                     (Backend::Flatpak, Action::Rollback)
+                        | (Backend::UbuntuDeb | Backend::Snap, Action::Rollback)
                         | (Backend::ForgePackage, Action::Uninstall)
                 ) {
                     return Err(("unsupported", "Backend does not support this action"));
@@ -238,7 +244,11 @@ mod linux {
                     .get(&job_id)
                     .map_err(|_| ("internal", "Queue unavailable"))?
                     .ok_or(("not-found", "Job not found"))?;
-                if job.backend == Backend::ForgePackage && job.state == JobState::Running {
+                if matches!(
+                    job.backend,
+                    Backend::ForgePackage | Backend::UbuntuDeb | Backend::Snap
+                ) && job.state == JobState::Running
+                {
                     return Err((
                         "unsupported",
                         "Package transaction cannot be cancelled after starting",
@@ -279,23 +289,26 @@ mod linux {
                 json!({
             "id":job.id,"appId":job.app_id,"backend":backend_name(job.backend),
             "action":action_name(job.action),"state":state_name(job.state),
-            "detail":job.detail.as_deref().map(|text| bounded_text(text, 512))})
+            "nativePending":job.native_pending,"detail":job.detail.as_deref().map(|text| bounded_text(text, 512))})
             })
             .collect::<Vec<_>>();
-        let (compat, flatpak, package) = tokio::join!(
+        let (compat, flatpak, package, native) = tokio::join!(
             probe_compat(store),
             probe_flatpak(store),
-            probe_package(store)
+            probe_package(store),
+            probe_native(store)
         );
         let mut installed = Vec::new();
         installed.extend(compat.1);
         installed.extend(flatpak.1);
         installed.extend(package.1);
+        installed.extend(native.1);
         Ok(
             json!({"catalogue":store.catalogue,"jobs":jobs,"jobsHasMore":jobs_has_more,"installed":installed,"backends":{
                 "compatforge":{"available":compat.0,"reason":if compat.0 { "" } else { "CompatForge service unavailable" }},
                 "flatpak":{"available":flatpak.0,"reason":if flatpak.0 { "" } else { "Flatpak unavailable" }},
-                "forgePackage":{"available":package.0,"reason":if package.0 { "" } else { "ForgeOS package service unavailable" }}
+                "forgePackage":{"available":package.0,"reason":if package.0 { "" } else { "ForgeOS package service unavailable" }},
+                "ubuntu-deb":native.0[0],"snap":native.0[1]
             }}),
         )
     }
@@ -325,6 +338,45 @@ mod linux {
         (true, installed)
     }
 
+    async fn probe_native(store: &Store) -> ([Value; 2], Vec<Value>) {
+        let unavailable = json!({"available":false,"reason":"Authenticated Ubuntu native package service unavailable"});
+        let failed = ([unavailable.clone(), unavailable], Vec::new());
+        let request = NativeRequest::probe(&format!("probe-{}", uuid::Uuid::new_v4())).unwrap();
+        let Ok(Ok(result)) =
+            tokio::time::timeout(Duration::from_secs(3), NativeClient.call(request)).await
+        else {
+            return failed;
+        };
+        let Ok(probed) = native_probe(&result) else {
+            return failed;
+        };
+        let mut platforms = [Value::Null, Value::Null];
+        for (backend, available, detail) in probed {
+            platforms[usize::from(backend == "snap")] =
+                json!({"available":available,"reason":detail});
+        }
+        let collect = async {
+            use futures_util::{stream, StreamExt};
+            stream::iter(store.catalogue.entries.iter().filter_map(|entry| {
+                let (id,backend)=match &entry.delivery {
+                    Delivery::UbuntuDeb{reviewed_package_id,..} => (reviewed_package_id,"ubuntu-deb"),
+                    Delivery::Snap{reviewed_package_id,..} => (reviewed_package_id,"snap"),
+                    _ => return None,
+                };
+                Some(async move {
+                    let req=NativeRequest::status(&format!("status-{}",uuid::Uuid::new_v4()),id).ok()?;
+                    let value=NativeClient.call(req).await.ok()?;
+                    native_status_matches(&value,&entry.delivery,true).ok()?;
+                    Some(json!({"appId":entry.id,"backend":backend,"version":value["version"],"canRollback":false}))
+                })
+            })).buffer_unordered(16).filter_map(|row|async move {row}).collect::<Vec<_>>().await
+        };
+        match tokio::time::timeout(Duration::from_secs(3), collect).await {
+            Ok(installed) => (platforms, installed),
+            Err(_) => failed,
+        }
+    }
+
     async fn probe_flatpak(store: &Store) -> (bool, Vec<Value>) {
         if !Path::new("/usr/bin/flatpak").is_file() {
             return (false, Vec::new());
@@ -344,7 +396,11 @@ mod linux {
             return (false, Vec::new());
         }
         let trusted_fixture = fixture_remote_is_trusted(&String::from_utf8_lossy(&remotes.stdout));
-        if !trusted_fixture {
+        let trusted_flathub = forge_store_core::backends::flatpak_remote_is_trusted(
+            &String::from_utf8_lossy(&remotes.stdout),
+            "flathub",
+        );
+        if !trusted_fixture && !trusted_flathub {
             return (false, Vec::new());
         }
         let result = tokio::time::timeout(
@@ -354,7 +410,6 @@ mod linux {
                     "--user",
                     "list",
                     "--app",
-                    "--json",
                     "--columns=application,arch,branch,origin,version",
                 ])
                 .env("LC_ALL", "C")
@@ -369,15 +424,46 @@ mod linux {
         if !result.status.success() || result.stdout.len() > 1024 * 1024 {
             return (false, Vec::new());
         }
-        let Ok(rows) = parse_flatpak_list(&result.stdout) else {
+        let Ok(rows) = parse_flatpak_columns(&result.stdout) else {
             return (false, Vec::new());
         };
-        let installed = store.catalogue.entries.iter().filter_map(|entry| {
-            let Delivery::Flatpak { remote, reference } = &entry.delivery else { return None; };
-            let row = rows.iter().find(|row| flatpak_record_matches(row, reference, remote))?;
+        let mut installed = Vec::new();
+        for entry in &store.catalogue.entries {
+            let Delivery::Flatpak {
+                remote,
+                reference,
+                commit,
+            } = &entry.delivery
+            else {
+                continue;
+            };
+            if remote == "flathub" && !trusted_flathub
+                || remote == "forge-store-fixture" && !trusted_fixture
+            {
+                continue;
+            }
+            let Some(row) = rows
+                .iter()
+                .find(|row| flatpak_record_matches(row, reference, remote))
+            else {
+                continue;
+            };
+            if let Some(expected) = commit {
+                if flatpak_installed_commit(remote, reference)
+                    .await
+                    .ok()
+                    .flatten()
+                    .as_ref()
+                    != Some(expected)
+                {
+                    continue;
+                }
+            }
             let version = row.get("version").and_then(Value::as_str).unwrap_or("");
-            Some(json!({"appId":entry.id,"backend":"flatpak","version":version,"canRollback":false}))
-        }).collect();
+            installed.push(
+                json!({"appId":entry.id,"backend":"flatpak","version":version,"canRollback":false}),
+            );
+        }
         (true, installed)
     }
 
@@ -426,11 +512,17 @@ mod linux {
                         register_running_token(&store.queue, &store.running, &job, &token)
                     {
                         eprintln!("job {} token registration failed: {error}", job.id);
-                        if let Err(write_error) =
+                        let written = if job.native_pending {
+                            store.queue.interrupt(
+                                &job.id,
+                                "worker registration failed while native outcome remains unknown",
+                            )
+                        } else {
                             store
                                 .queue
                                 .finish(&job.id, false, Some("worker registration failed"))
-                        {
+                        };
+                        if let Err(write_error) = written {
                             eprintln!("job {} terminal state write failed: {write_error}", job.id);
                         }
                         continue;
@@ -444,6 +536,9 @@ mod linux {
                         .err()
                         .map(|e| bounded_detail(&e.to_string()));
                     let finished = match (store.queue.get(&job.id), &outcome) {
+                        (Ok(Some(_)), Ok(RunOutcome::ProviderFailed(detail))) => store.queue.finish(&job.id,false,Some(detail)),
+                        (Ok(Some(_)), Err(_)) if job.native_pending => store.queue.interrupt(&job.id,detail.as_deref().unwrap_or("Native replay remains unresolved")),
+                        (Ok(Some(_)), Ok(RunOutcome::Interrupted)) => store.queue.interrupt(&job.id,"Native outcome unknown; retry replays the same authenticated provider request"),
                         (Ok(Some(current)), Ok(RunOutcome::Cancelled))
                             if current.state == JobState::Cancelling =>
                         {
@@ -528,11 +623,16 @@ mod linux {
             Delivery::Compatforge { artifact, .. } => {
                 run_compat(store, entry, artifact, job.action, cancel).await
             }
-            Delivery::Flatpak { remote, reference } => {
-                run_flatpak(remote, reference, job.action, cancel).await
-            }
+            Delivery::Flatpak {
+                remote,
+                reference,
+                commit,
+            } => run_flatpak(remote, reference, commit.as_deref(), job.action, cancel).await,
             Delivery::ForgePackage { artifact } => {
                 run_package(store, entry, artifact, job.action, cancel).await
+            }
+            Delivery::UbuntuDeb { .. } | Delivery::Snap { .. } => {
+                run_native(store, entry, job, cancel).await
             }
         }
     }
@@ -666,10 +766,11 @@ mod linux {
     async fn run_flatpak(
         remote: &str,
         reference: &str,
+        commit: Option<&str>,
         action: Action,
         cancel: &CancellationToken,
     ) -> Result<RunOutcome, Box<dyn std::error::Error + Send + Sync>> {
-        if remote != "forge-store-fixture" {
+        if remote != "forge-store-fixture" && !(remote == "flathub" && commit.is_some()) {
             return Err("Flatpak remote is not in the trusted local fixture allowlist".into());
         }
         let remotes = tokio::time::timeout(
@@ -682,7 +783,10 @@ mod linux {
         .await??;
         if !remotes.status.success()
             || remotes.stdout.len() > 64 * 1024
-            || !fixture_remote_is_trusted(&String::from_utf8_lossy(&remotes.stdout))
+            || !forge_store_core::backends::flatpak_remote_is_trusted(
+                &String::from_utf8_lossy(&remotes.stdout),
+                remote,
+            )
         {
             return Err("Flatpak fixture remote URL differs from the image".into());
         }
@@ -696,7 +800,10 @@ mod linux {
             }
             _ => {}
         }
-        let invocation = FlatpakInvocation::new(remote, reference, action)?;
+        let invocation = match commit {
+            Some(commit) => FlatpakInvocation::pinned(remote, reference, action, commit)?,
+            None => FlatpakInvocation::new(remote, reference, action)?,
+        };
         if cancel.is_cancelled() {
             return Ok(RunOutcome::Cancelled);
         }
@@ -715,23 +822,51 @@ mod linux {
                 (status, true)
             },
         };
+        // The documented CLI pins only update, not install. Keep the job running through
+        // initial deployment and the exact-commit update; never advertise the interim tip.
+        if !cancelled && status.success() && action == Action::Install {
+            if let Some(commit) = commit {
+                let pin = FlatpakInvocation::pinned(remote, reference, Action::Update, commit)?;
+                let pinned = tokio::process::Command::new("/usr/bin/flatpak")
+                    .args(pin.args)
+                    .stdout(std::process::Stdio::null())
+                    .stderr(std::process::Stdio::null())
+                    .kill_on_drop(true)
+                    .status()
+                    .await?;
+                if !pinned.success() {
+                    let observed = flatpak_installed_commit(remote, reference).await;
+                    return Err(format!(
+                        "Flatpak commit pinning failed; expected={commit}; observed={observed:?}"
+                    )
+                    .into());
+                }
+            }
+        }
         let after = flatpak_installed_commit(remote, reference).await?;
+        let pinned = commit.is_none_or(|expected| {
+            action == Action::Uninstall || after.as_deref() == Some(expected)
+        });
         if cancelled {
-            if flatpak_action_completed(action, before.as_deref(), after.as_deref()) {
+            if pinned && flatpak_action_completed(action, before.as_deref(), after.as_deref()) {
                 return Ok(RunOutcome::Completed);
             }
             if before == after {
                 return Ok(RunOutcome::Cancelled);
             }
-            return Err("Flatpak state is ambiguous after cancellation".into());
+            return Err(format!("Flatpak state is ambiguous after cancellation; before={before:?}; observed={after:?}; expected={commit:?}").into());
         }
         if !status.success() {
-            return Err(format!("Flatpak exited with {status}").into());
+            return Err(format!(
+                "Flatpak exited with {status}; observed={after:?}; expected={commit:?}"
+            )
+            .into());
         }
-        if action == Action::Uninstall && after.is_some()
+        if !pinned
+            || action == Action::Uninstall && after.is_some()
             || matches!(action, Action::Install | Action::Update) && after.is_none()
         {
-            return Err("Flatpak reported success without the expected installed state".into());
+            return Err(format!("Flatpak reported success without expected installed state; observed={after:?}; expected={commit:?}").into());
         }
         Ok(RunOutcome::Completed)
     }
@@ -747,7 +882,6 @@ mod linux {
                     "--user",
                     "list",
                     "--app",
-                    "--json",
                     "--columns=application,arch,branch,origin,version",
                 ])
                 .env("LC_ALL", "C")
@@ -759,7 +893,7 @@ mod linux {
         if !listed.status.success() || listed.stdout.len() > 1024 * 1024 {
             return Err("Flatpak installed list is unavailable or oversized".into());
         }
-        let rows = parse_flatpak_list(&listed.stdout)?;
+        let rows = parse_flatpak_columns(&listed.stdout)?;
         let matches = rows
             .iter()
             .filter(|row| flatpak_record_matches(row, reference, remote))
@@ -828,6 +962,108 @@ mod linux {
         }
     }
 
+    async fn run_native(
+        store: &Store,
+        entry: &AppEntry,
+        job: &Job,
+        cancel: &CancellationToken,
+    ) -> Result<RunOutcome, Box<dyn std::error::Error + Send + Sync>> {
+        let (id, artifact) = match &entry.delivery {
+            Delivery::UbuntuDeb {
+                reviewed_package_id,
+                artifact,
+                ..
+            } => (reviewed_package_id, artifact.as_ref()),
+            Delivery::Snap {
+                reviewed_package_id,
+                ..
+            } => (reviewed_package_id, None),
+            _ => return Err("not a native delivery".into()),
+        };
+        let operation = match job.action {
+            Action::Install => "install",
+            Action::Update => "update",
+            Action::Uninstall => "uninstall",
+            Action::Rollback => return Err("Native rollback is unavailable".into()),
+        };
+        let preflight = NativeClient
+            .call(NativeRequest::status(
+                &format!("preflight-{}", uuid::Uuid::new_v4()),
+                id,
+            )?)
+            .await?;
+        native_identity_matches(&preflight, &entry.delivery)?;
+        if matches!(job.action, Action::Install | Action::Update) {
+            if let Some(artifact) = artifact {
+                let download = store.cache.download(artifact, cancel).await;
+                if cancel.is_cancelled() {
+                    return Ok(RunOutcome::Cancelled);
+                }
+                download?;
+                store.cache.stage_native_deb(artifact).await?;
+            }
+        }
+        if cancel.is_cancelled() {
+            return Ok(RunOutcome::Cancelled);
+        }
+        let request = NativeRequest::mutation(
+            &job.id,
+            operation,
+            id,
+            if job.action == Action::Uninstall {
+                None
+            } else {
+                artifact
+            },
+        )?;
+        // Do not select on cancellation or kill dpkg. Disconnect/timeout cannot prove
+        // the privileged provider stopped. Durable request ID permits safe replay.
+        let result = match NativeClient.call(request).await {
+            Ok(value) => value,
+            Err(forge_store_core::backends::BackendError::Service { code, message }) => {
+                if matches!(code.as_str(), "native_failed" | "identity_mismatch") {
+                    eprintln!(
+                        "Native provider {} terminal failure: {code}: {message}",
+                        job.id
+                    );
+                    return Ok(RunOutcome::ProviderFailed(format!(
+                        "Native provider terminal failure: {code}: {message}"
+                    )));
+                }
+                if matches!(
+                    code.as_str(),
+                    "interrupted"
+                        | "unknown-outcome"
+                        | "pending"
+                        | "recovery-required"
+                        | "io"
+                        | "unavailable"
+                ) {
+                    return Ok(RunOutcome::Interrupted);
+                }
+                return Err(
+                    format!("Native provider rejected operation: {code}: {message}").into(),
+                );
+            }
+            Err(error) => {
+                eprintln!("Native request {} outcome unknown: {error}", job.id);
+                return Ok(RunOutcome::Interrupted);
+            }
+        };
+        let installed = job.action != Action::Uninstall;
+        if native_status_matches(&result, &entry.delivery, installed).is_err() {
+            return Ok(RunOutcome::Interrupted);
+        }
+        let status_req = NativeRequest::status(&format!("confirm-{}", uuid::Uuid::new_v4()), id)?;
+        let checked = NativeClient.call(status_req).await;
+        match checked {
+            Ok(value) if native_status_matches(&value, &entry.delivery, installed).is_ok() => {
+                Ok(RunOutcome::Completed)
+            }
+            _ => Ok(RunOutcome::Interrupted),
+        }
+    }
+
     fn bounded_detail(message: &str) -> String {
         bounded_text(message, 4096)
     }
@@ -845,6 +1081,8 @@ mod linux {
             Backend::Compatforge => "compatforge",
             Backend::Flatpak => "flatpak",
             Backend::ForgePackage => "forge-package",
+            Backend::UbuntuDeb => "ubuntu-deb",
+            Backend::Snap => "snap",
         }
     }
     fn action_name(value: Action) -> &'static str {

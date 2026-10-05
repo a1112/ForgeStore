@@ -66,6 +66,8 @@ const zh = {
     compatibilityUnknown: "未测试",
     windows: "Windows 应用",
     flatpak: "Flatpak 应用",
+    ubuntuDeb: "Ubuntu 软件包",
+    snap: "Snap 应用",
     forgePackage: "Forge 软件包",
     continueInBackground: "关闭窗口不会中断后台任务。"
 }
@@ -136,6 +138,8 @@ const en = {
     compatibilityUnknown: "Untested",
     windows: "Windows app",
     flatpak: "Flatpak app",
+    ubuntuDeb: "Ubuntu package",
+    snap: "Snap app",
     forgePackage: "Forge package",
     continueInBackground: "Closing this window does not interrupt background jobs."
 }
