@@ -296,19 +296,19 @@
       "id": "openscad",
       "name": "OpenSCAD",
       "version": "2021.01",
-      "stage": "installed-gui-ascii-passed-chinese-path-blocked",
+      "stage": "installed-gui-unicode-save-passed-stl-name-blocked",
       "sourceUrl": "https://github.com/openscad/openscad/releases/download/openscad-2021.01/OpenSCAD-2021.01-x86-64-Installer.exe",
       "sha256": "fbe1e590e1af2af863f5d92bd263eb4644d0ee29352e3ab566366e87a8f6ed12",
       "sizeBytes": 21876824,
       "license": "GPL-2.0-or-later with CGAL linking exception",
       "sourceCommit": "41f58fe57c03457a3a8b4dc541ef5654ec3e8c78",
       "artifactEvidence": "docs/evidence/2026-10-03-openscad-source.json",
-      "evidence": "docs/windows-rolling-20261005-openscad-pending.md",
+      "evidence": "docs/windows-rolling-20261005-openscad-unicode-pending.md",
       "installed": true,
       "guiAccepted": false,
       "published": false,
       "countsAsCompleted": false,
-      "blocker": "ASCII-path GUI load/edit/save/F6 render/STL export and fresh-process reopen/render passed; identical UTF-8 input under Chinese filename fails File not found via actual native file-list selection, including temporary Qt dialog probe. Root cause unresolved; no signing or market lifecycle acceptance.",
+      "blocker": "Welcome path UTF-8/local-codepage mismatch isolated; main-editor Chinese load/edit/native save/render and fresh-process reopen pass. One empty positional filename bypasses welcome in a temporary job. Chinese STL filename export fails and expected file is absent; ASCII-name STL from reopened model validates 31x12x7. No persistent repair, signing or market publication.",
       "installationJobId": "job-1791003419276-1",
       "installationJobStatus": "succeeded",
       "selectedGeneration": "gen-job-1791003419276-1",
@@ -318,8 +318,16 @@
         "blocker": "Managed fixed NSIS installation succeeded with ready 64-bit launcher. Computer Use still cannot verify the Edge URL after noVNC was opened. Real GUI modelling/save/render/STL export, fresh reopen, About version/license and local signed market lifecycle are pending.",
         "evidence": "docs/windows-rolling-20261003-openscad-pending.md"
       },
-      "guiEvidence": "docs/evidence/2026-10-05-openscad-gui-pending.json",
-      "observedGuiVersion": "2021.01"
+      "guiEvidence": "docs/evidence/2026-10-05-openscad-unicode-pending.json",
+      "observedGuiVersion": "2021.01",
+      "guiHistory": [
+        {
+          "stage": "installed-gui-ascii-passed-chinese-path-blocked",
+          "blocker": "ASCII-path GUI load/edit/save/F6 render/STL export and fresh-process reopen/render passed; identical UTF-8 input under Chinese filename fails File not found via actual native file-list selection, including temporary Qt dialog probe. Root cause unresolved; no signing or market lifecycle acceptance.",
+          "evidence": "docs/windows-rolling-20261005-openscad-pending.md",
+          "guiEvidence": "docs/evidence/2026-10-05-openscad-gui-pending.json"
+        }
+      ]
     }
   ],
   "excludedInternalFixtures": [
@@ -349,7 +357,7 @@
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
     "publicationEvidence": "docs/evidence/2026-10-03-jpegview-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261005-openscad-pending.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261005-openscad-unicode-pending.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",

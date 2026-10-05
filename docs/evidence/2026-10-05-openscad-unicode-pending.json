@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-05T04:40:00.965817+00:00",
+  "applicationId": "openscad",
+  "version": "2021.01",
+  "stage": "installed-gui-unicode-save-passed-stl-name-blocked",
+  "previousGuiEvidence": "docs/evidence/2026-10-05-openscad-gui-pending.json",
+  "sourceEvidence": "docs/evidence/2026-10-03-openscad-source.json",
+  "installationEvidence": "docs/evidence/2026-10-03-openscad-installed-pending.json",
+  "result": {
+    "coreJobs": 155,
+    "storeRows": 57,
+    "guiJobs": [
+      {
+        "id": "job-1791174125576-4",
+        "status": "succeeded",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 25510,
+            "requestId": "job-1791174125576-4",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 281125,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791003419276-1/prefix",
+            "requestId": "job-1791174125576-4",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 281167,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791174125576-4",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "argumentOverrides": []
+      },
+      {
+        "id": "job-1791174865851-5",
+        "status": "succeeded",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 26204,
+            "requestId": "job-1791174865851-5",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 161122,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791003419276-1/prefix",
+            "requestId": "job-1791174865851-5",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 161165,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791174865851-5",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "argumentOverrides": [
+          ""
+        ]
+      }
+    ],
+    "defaultMainWindowChineseOpenEditSaveAndF6RenderPassed": true,
+    "emptyArgumentDirectEditorObserved": true,
+    "freshProcessChineseReopenF6RenderAndAsciiStlExportPassed": true,
+    "nativeChineseCommentsPreserved": true,
+    "files": {
+      "output/模型.scad": {
+        "sizeBytes": 107,
+        "sha256": "88d3f5c24b65a1e56d6a44e914c39a7cdbb3665fd3301adb1aa0899f5d102fe6"
+      },
+      "output/reopened31.stl": {
+        "sizeBytes": 684,
+        "sha256": "c9757151b86d8fd6674478526b3963a3856789cd3e8b6bd76eeb70ffda073149"
+      }
+    },
+    "stl": {
+      "format": "binary",
+      "triangles": 12,
+      "uniqueVertices": 8,
+      "undirectedEdges": 18,
+      "eachEdgeIncidentFaces": 2,
+      "eulerCharacteristic": 2,
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          31.0,
+          12.0,
+          7.0
+        ]
+      ],
+      "volume": 2604.0
+    },
+    "chineseStlExportAttempted": true,
+    "chineseStlGenerated": false,
+    "previousInputsAndAsciiOutputsUnchanged": true,
+    "previousFull153JobsUnchanged": true,
+    "full57StoreRowsUnchanged": true,
+    "marketTrustConfigsGenerationsAndGuardsUnchanged": true,
+    "latestKnownTimeMonotonic": true,
+    "emptyArgumentNotPersisted": true,
+    "services": {
+      "compatforge.service": "active",
+      "forge-store.service": "active"
+    },
+    "guiAccepted": false,
+    "published": false,
+    "countsAsCompleted": false
+  },
+  "screenshots": [
+    {
+      "file": "docs/evidence/2026-10-05-openscad-unicode/chinese-main-editor-loaded.jpg",
+      "captureFile": "chinese-main-editor-loaded.jpg",
+      "sizeBytes": 32458,
+      "sha256": "587bc4c061cd166b7d5ec5b635fea3891e30b3fd738d792d0be38ac3e66cbf1f",
+      "capture": "Unedited actual browser-control screenshot"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad-unicode/chinese-main-editor-rendered.jpg",
+      "captureFile": "chinese-main-editor-rendered.jpg",
+      "sizeBytes": 31744,
+      "sha256": "6ec2405dcfd718d738f109ba614e5054cace7232963faaa21e5f771b4df0eee5",
+      "capture": "Unedited actual browser-control screenshot"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad-unicode/chinese-model-ascii-stl-exported.jpg",
+      "captureFile": "chinese-model-ascii-stl-exported.jpg",
+      "sizeBytes": 31799,
+      "sha256": "8d94f793dbfd1f2080077839634cf03009f18eb1dbdd027cfe5b6b42edf724d6",
+      "capture": "Unedited actual browser-control screenshot"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad-unicode/chinese-saved-rendered.jpg",
+      "captureFile": "chinese-saved-rendered.jpg",
+      "sizeBytes": 31890,
+      "sha256": "2e28d2884075afa8a81aa205414ee847696b16c2b2a7b1e1239aef02443f217f",
+      "capture": "Unedited actual browser-control screenshot"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad-unicode/chinese-stl-export-failed.jpg",
+      "captureFile": "chinese-stl-exported.jpg",
+      "sizeBytes": 32013,
+      "sha256": "969bc9d952801d3c136d362c865b58651c28aa59357fc9df2d61651478a0002a",
+      "capture": "Unedited actual browser-control screenshot"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad-unicode/empty-argument-chinese-reopened-rendered.jpg",
+      "captureFile": "empty-argument-chinese-reopened-rendered.jpg",
+      "sizeBytes": 31884,
+      "sha256": "c7e2ac913bbb6feb97dcd08ea8cf5e0e8ae600059d01aa1b4b5029574c3444f2",
+      "capture": "Unedited actual browser-control screenshot"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad-unicode/empty-argument-direct-editor.jpg",
+      "captureFile": "empty-argument-direct-editor.jpg",
+      "sizeBytes": 27355,
+      "sha256": "780579d7360c1063a0cc2d0a03145df5d358b16a88ae790bd56dd3c82af63a6f",
+      "capture": "Unedited actual browser-control screenshot"
+    }
+  ],
+  "sourcePins": [
+    {
+      "file": "src/openscad.cc",
+      "sizeBytes": 39710,
+      "sha256": "47fad350f46556d23776d36eddfd2c9dd00905236937ec42430735f949343344",
+      "url": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/openscad.cc"
+    },
+    {
+      "file": "src/launchingscreen.cc",
+      "sizeBytes": 4528,
+      "sha256": "9106e69fa43eab87b6ae4c73a47c94d35801d56b1a7732bd3aa2cae0bfe17d81",
+      "url": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/launchingscreen.cc"
+    },
+    {
+      "file": "src/UIUtils.cc",
+      "sizeBytes": 5426,
+      "sha256": "951b3a94012665d8fa4694272791604851a5f7a97b5a5cc4db326157442c13d3",
+      "url": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/UIUtils.cc"
+    },
+    {
+      "file": "src/tabmanager.cc",
+      "sizeBytes": 21388,
+      "sha256": "f5227888fbc0cca7a59732d1db8900efc22877c8a663d89a057506d673ecfb13",
+      "url": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/tabmanager.cc"
+    },
+    {
+      "file": "src/mainwin.cc",
+      "sizeBytes": 106115,
+      "sha256": "e0379703c1aaa0a33ec1dc690d0d341f95ce83e2ad93b2f1c3690df32c8fced8",
+      "url": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/mainwin.cc"
+    }
+  ],
+  "wineReferencePins": [
+    {
+      "file": "dlls/ntdll/locale.c",
+      "sizeBytes": 47945,
+      "sha256": "d504e977313a57fde14b5e9b7d64ca65051482c9f7bed9f3ca1515aea71ba1e4",
+      "url": "https://raw.githubusercontent.com/wine-mirror/wine/wine-11.14/dlls/ntdll/locale.c"
+    },
+    {
+      "file": "dlls/ntdll/actctx.c",
+      "sizeBytes": 207212,
+      "sha256": "03ad309bd34f6aa5555d73395ed7638f18e6b57ef7a7457d16dffb512dce537a",
+      "url": "https://raw.githubusercontent.com/wine-mirror/wine/wine-11.14/dlls/ntdll/actctx.c"
+    },
+    {
+      "file": "dlls/kernelbase/locale.c",
+      "sizeBytes": 282657,
+      "sha256": "78f6abcbaf4c77e83f4b77b19de0f21214cbeef1ff5a4a74643344d81f6d0074",
+      "url": "https://raw.githubusercontent.com/wine-mirror/wine/wine-11.14/dlls/kernelbase/locale.c"
+    }
+  ],
+  "diagnosis": {
+    "welcomePathBoundary": "QString.toStdString() produces UTF-8, then assemblePath uses QString.fromLocal8Bit(); the main-window File/Open directly keeps QString paths. Same Chinese input fails through welcome but loads through main editor.",
+    "registryAnsiCodepageObserved": "1252",
+    "exportPathBoundary": "makeExportInfo assigns name2open from exportFilename.toLocal8Bit(), while name2display uses UTF-8. Console reports Cannot open file for export and later STL export finished; expected Chinese STL absent, ASCII export of same reopened geometry validated.",
+    "emptyArgumentProbe": {
+      "argumentOverrides": [
+        ""
+      ],
+      "observedDirectEditor": true,
+      "freshChineseReopenRenderPassed": true,
+      "persisted": false,
+      "installedGenerationDefinitionUnchanged": true
+    },
+    "unicodeScadSave": "QSaveFile/native QString path preserves actual Chinese filename and comments; independent file read verifies only width 18 to 31 changed.",
+    "sourceInferenceLimit": "Source boundaries and differential GUI behaviour support encoding diagnosis; registry ACP is not a direct runtime GetACP() observation, and native path bytes at the failed STL open were not captured.",
+    "manifestInspection": {
+      "actualPeResourceTreeParsed": true,
+      "resourcePath": [
+        24,
+        1,
+        1033
+      ],
+      "sizeBytes": 1206,
+      "sha256": "197004129be1c6918a24c2e8b48506f3f59825275ff6ecd1b4c3cdab4b408056",
+      "embeddedActiveCodePageDeclared": false,
+      "externalManifestExists": false,
+      "launcherSha256Preserved": true
+    },
+    "utf8FixResearch": "Wine 11.14 locale source supports activeCodePage through activation context; actctx source prefers an existing embedded manifest before a sidecar. Actual OpenSCAD has embedded resource 24/1/1033 without activeCodePage. No external manifest, PE patch, system/registry codepage edit or locale override was applied; upstream source/runtime build correspondence unverified."
+  },
+  "failuresRetained": [
+    {
+      "stage": "Chinese STL GUI export",
+      "result": "Export open failed; subsequent finished message not sufficient proof. Expected output/模型.stl does not exist."
+    },
+    {
+      "stage": "First independent output validation",
+      "result": "Expected Chinese STL was absent; verifier failed with FileNotFoundError before writing evidence or submitting the next job. Failure preserved, then actual negative result recorded."
+    },
+    {
+      "stage": "Fixed source lookups",
+      "result": "src/openscad_gui.cc and src/mainwin.h do not exist in this pinned tree; read-only errors preserved; used src/openscad.cc and actual PE resource inspection."
+    }
+  ],
+  "publicSignedFiles": {
+    "catalogue/candidate-v20/tuf/trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "catalogue/candidate-v20/tuf/metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "catalogue/candidate-v20/tuf/metadata/29.snapshot.json": "e094f8c9786a8fcf8c581c965f4d8d4c5b1a6d3d99e7516e1288d79769d2dd5b",
+    "catalogue/candidate-v20/tuf/metadata/29.targets.json": "27515cc7f0c23a9460e74e6f5fe9c1355a7dfba59f896e99b13411885903957f",
+    "catalogue/candidate-v20/tuf/metadata/timestamp.json": "8a195480e78626586c54d61ee7581ee75f19afc064b2d96f16ec0d38313db951",
+    "catalogue/candidate-v20/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+    "catalogue/candidate-v20/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+    "catalogue/candidate-v20/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+    "catalogue/candidate-v20/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+    "catalogue/candidate-v20/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+    "catalogue/candidate-v20/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+    "catalogue/candidate-v20/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+    "catalogue/candidate-v20/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+    "catalogue/candidate-v20/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+    "catalogue/candidate-v20/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+    "catalogue/candidate-v20/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+    "catalogue/candidate-v20/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+    "catalogue/candidate-v20/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+    "catalogue/candidate-v20/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+    "catalogue/candidate-v20/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+    "catalogue/candidate-v20/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+    "catalogue/candidate-v20/tuf/targets/bfafc5f6e691cf9dbbf0eb99b075ddcfdabbd590c818b4e853b54d57f2bcd206.catalogue.json": "bfafc5f6e691cf9dbbf0eb99b075ddcfdabbd590c818b4e853b54d57f2bcd206",
+    "catalogue/candidate-v20/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+    "catalogue/candidate-v20/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+  },
+  "installed": true,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "acceptedDistinctWindowsApps": 20,
+  "activeLocalMarket": {
+    "signedCatalogue": "catalogue/candidate-v20/tuf",
+    "metadataVersion": 29,
+    "catalogueEntries": 22,
+    "acceptedDistinctWindowsApps": 20,
+    "excludedFixtures": 2,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "publicationEvidence": "docs/evidence/2026-10-03-jpegview-publication.json"
+  },
+  "limits": [
+    "No persistent startup repair or full Unicode export repair; the empty argument is a temporary successful diagnostic workaround",
+    "No OpenSCAD signing, local market update, rollback, restart or publication",
+    "No removal of passwords or storing credentials; only authorized existing guest sign-in after automatic lock",
+    "Advanced modelling/formats, installer-source build correspondence and full component redistribution audit unverified"
+  ]
+}
