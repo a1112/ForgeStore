@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-05T01:32:27.771349+00:00",
+  "applicationId": "openscad",
+  "version": "2021.01",
+  "stage": "installed-gui-ascii-passed-chinese-path-blocked",
+  "sourceEvidence": "docs/evidence/2026-10-03-openscad-source.json",
+  "installationEvidence": "docs/evidence/2026-10-03-openscad-installed-pending.json",
+  "previousToolFailureReport": "docs/windows-rolling-20261003-openscad-pending.md",
+  "selectedGeneration": "gen-job-1791003419276-1",
+  "observedGuiVersion": "2021.01",
+  "observedGuiLicense": "GNU GPL version 2 or, at your option, any later version",
+  "guiJobs": [
+    {
+      "id": "job-1791162501179-1",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 20748,
+          "requestId": "job-1791162501179-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 541362,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791003419276-1/prefix",
+          "requestId": "job-1791162501179-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 541404,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791162501179-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "plannedQtEnvironment": {}
+    },
+    {
+      "id": "job-1791163079427-2",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 21220,
+          "requestId": "job-1791163079427-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 296266,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791003419276-1/prefix",
+          "requestId": "job-1791163079427-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 296308,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791163079427-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "plannedQtEnvironment": {
+        "QT_QPA_PLATFORM": "windows:dialogs=none"
+      }
+    },
+    {
+      "id": "job-1791163425220-3",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 21609,
+          "requestId": "job-1791163425220-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 102114,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791003419276-1/prefix",
+          "requestId": "job-1791163425220-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 102156,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791163425220-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "plannedQtEnvironment": {}
+    }
+  ],
+  "jobStatusMeaning": "Unix Wine exit 0 establishes normal managed process termination only; these jobs do not prove full functional acceptance.",
+  "guiWorkflow": {
+    "asciiControlLoad": true,
+    "chineseCommentsDisplayed": true,
+    "changedCubeWidthFrom18To26": true,
+    "savedNativeScad": true,
+    "f6CgalRender": true,
+    "stlExport": true,
+    "freshDefaultEnvironmentProcessExplicitReopenAndF6Render": true,
+    "aboutVersionLicenseObserved": true,
+    "chineseFilenameOpen": false
+  },
+  "input": {
+    "original": "C:\\ForgeQA\\input\\模型.scad",
+    "asciiControl": "C:\\ForgeQA\\input\\model-control.scad",
+    "sizeBytesEach": 104,
+    "sha256Each": "6f123b4af0ddef990e3c0bfcb6a8b5e98ae444c9d15a2ede5eafc229a29e583e",
+    "controlPreparation": "Same original UTF-8 input bytes copied to ASCII filename for diagnostic use only; no backend-generated output"
+  },
+  "semanticVerification": {
+    "files": {
+      "output/original.scad": {
+        "relativeFile": "output/original.scad",
+        "sizeBytes": 107,
+        "sha256": "3183d8b67e54d5a376765acbfaab98fe3b9e842d0105b5e420789b263ea6679a"
+      },
+      "output/original.stl": {
+        "relativeFile": "output/original.stl",
+        "sizeBytes": 684,
+        "sha256": "df51f268b798cff3350f45a3bdf6bc6e6eca3e4e6302cf0efa5b692518969101"
+      }
+    },
+    "utf8ChineseCommentsPreserved": true,
+    "expectedModel": "cube([26,12,7]);",
+    "stl": {
+      "format": "binary",
+      "triangles": 12,
+      "uniqueVertices": 8,
+      "undirectedEdges": 18,
+      "eachEdgeIncidentFaces": 2,
+      "eulerCharacteristic": 2,
+      "bounds": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          26.0,
+          12.0,
+          7.0
+        ]
+      ],
+      "volume": 2184.0
+    },
+    "bothInputsUnchanged": true,
+    "guiGeneratedOutputsOnly": true,
+    "chinesePathStillFailed": true,
+    "guiFullyAccepted": false,
+    "countsAsCompleted": false
+  },
+  "failuresRetained": [
+    {
+      "stage": "Chinese filename / normal environment",
+      "jobId": "job-1791162501179-1",
+      "action": "Selected original file through actual visible native file list, without typing or pasting the filename",
+      "result": "Title becomes mojibake, editor empty, console reports Failed to open file C:/ForgeQA/input/模型.scad: File not found."
+    },
+    {
+      "stage": "Chinese filename / single Qt dialog override probe",
+      "jobId": "job-1791163079427-2",
+      "action": "Repeated file-list selection with QT_QPA_PLATFORM=windows:dialogs=none",
+      "result": "Same File not found; no successful fix. Planned and actual native process environments confirmed override; no persistent application or recipe change."
+    },
+    {
+      "stage": "Remote UI input",
+      "result": "Whole-string typing did not arrive reliably; filename typing produced wrong punctuation, clipboard paste remained empty, and relative slash save path was rejected by the native dialog. Switched to visible file-list/folder navigation; these input failures are distinct from reproducible Chinese file-list failure."
+    },
+    {
+      "stage": "Source helper lookup",
+      "result": "Initial src/TabManager.cc lookup had wrong case; corrected to recorded src/tabmanager.cc. Read-only lookup failure retained; no runtime change."
+    },
+    {
+      "stage": "Prior graphical tool and transport failures",
+      "evidence": "docs/windows-rolling-20261003-openscad-pending.md",
+      "result": "Prior tool URL failures preserved. This turn supported browser-control works; localhost noVNC forwarding restored and actual guest desktop unlocked, with no password/configuration change."
+    }
+  ],
+  "qtProbe": {
+    "variable": "QT_QPA_PLATFORM",
+    "value": "windows:dialogs=none",
+    "plannedAndActualProcessEnvironmentVerified": true,
+    "actualEnvironmentEvidence": {
+      "jobId": "job-1791163079427-2",
+      "status": "running",
+      "plannedQtEnvironment": {
+        "QT_QPA_PLATFORM": "windows:dialogs=none"
+      },
+      "actualRelevantEnvironment": {
+        "DISPLAY": ":0",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "QT_QPA_PLATFORM": "windows:dialogs=none"
+      }
+    },
+    "chinesePathFailureFixed": false,
+    "persisted": false,
+    "freshReopenPlannedQtEnvironment": {}
+  },
+  "diagnosticSourcePins": [
+    {
+      "file": "src/UIUtils.cc",
+      "sizeBytes": 5426,
+      "sha256": "951b3a94012665d8fa4694272791604851a5f7a97b5a5cc4db326157442c13d3",
+      "url": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/UIUtils.cc"
+    },
+    {
+      "file": "src/tabmanager.cc",
+      "sizeBytes": 21388,
+      "sha256": "f5227888fbc0cca7a59732d1db8900efc22877c8a663d89a057506d673ecfb13",
+      "url": "https://raw.githubusercontent.com/openscad/openscad/41f58fe57c03457a3a8b4dc541ef5654ec3e8c78/src/tabmanager.cc"
+    }
+  ],
+  "rootCause": "Unresolved. Identical file bytes work under ASCII name but fail under Chinese filename; path encoding or Wine/Qt interaction remains a hypothesis, not an established root cause.",
+  "environmentRecovery": {
+    "supportedBrowserControlWorking": true,
+    "noVncLocalhostForwardRestored": true,
+    "actualGuestDesktopUnlocked": true,
+    "vmOrCoreOrStoreRestartedThisRound": false,
+    "passwordStoredOrChanged": false
+  },
+  "preservation": {
+    "coreJobs": 153,
+    "storeRows": 57,
+    "previousFull150CoreJobsUnchanged": true,
+    "full57StoreRowsUnchanged": true,
+    "marketSnapshotUnchanged": true,
+    "fullTufTrustDocumentsAndSignaturesUnchanged": true,
+    "coreConfigBytesAndAllGenerationsUnchanged": true,
+    "serviceGuardsUnchanged": true,
+    "latestKnownTimeMonotonic": true,
+    "originalAndControlInputsUnchanged": true,
+    "launcherPinUnchanged": true,
+    "guiOutputsUnchangedAfterFreshReopen": true,
+    "jpegviewInputPinsUnchanged": true,
+    "qtProbeNotPersisted": true,
+    "services": {
+      "compatforge.service": "active",
+      "forge-store.service": "active"
+    },
+    "bootId": "3d9454c0-7f84-4df4-aad3-9525b5a89648"
+  },
+  "publicSignedFiles": {
+    "catalogue/candidate-v20/tuf/trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "catalogue/candidate-v20/tuf/metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "catalogue/candidate-v20/tuf/metadata/29.snapshot.json": "e094f8c9786a8fcf8c581c965f4d8d4c5b1a6d3d99e7516e1288d79769d2dd5b",
+    "catalogue/candidate-v20/tuf/metadata/29.targets.json": "27515cc7f0c23a9460e74e6f5fe9c1355a7dfba59f896e99b13411885903957f",
+    "catalogue/candidate-v20/tuf/metadata/timestamp.json": "8a195480e78626586c54d61ee7581ee75f19afc064b2d96f16ec0d38313db951",
+    "catalogue/candidate-v20/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+    "catalogue/candidate-v20/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+    "catalogue/candidate-v20/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+    "catalogue/candidate-v20/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+    "catalogue/candidate-v20/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+    "catalogue/candidate-v20/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+    "catalogue/candidate-v20/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+    "catalogue/candidate-v20/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+    "catalogue/candidate-v20/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+    "catalogue/candidate-v20/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+    "catalogue/candidate-v20/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+    "catalogue/candidate-v20/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+    "catalogue/candidate-v20/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+    "catalogue/candidate-v20/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+    "catalogue/candidate-v20/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+    "catalogue/candidate-v20/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+    "catalogue/candidate-v20/tuf/targets/bfafc5f6e691cf9dbbf0eb99b075ddcfdabbd590c818b4e853b54d57f2bcd206.catalogue.json": "bfafc5f6e691cf9dbbf0eb99b075ddcfdabbd590c818b4e853b54d57f2bcd206",
+    "catalogue/candidate-v20/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+    "catalogue/candidate-v20/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+  },
+  "screenshots": [
+    {
+      "file": "docs/evidence/2026-10-05-openscad/about-version-license.jpg",
+      "sizeBytes": 93891,
+      "sha256": "f017b81256b55939d6ff8f61e6a5cdce8a4c9cabea4b46e3d4e71c2f5921dcaf",
+      "capture": "Unedited supported browser-control screenshot of real guest GUI"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad/ascii-control-loaded.jpg",
+      "sizeBytes": 79863,
+      "sha256": "e12c1a8fe4448fb5921c6344104f86f58bcbb4a7a1862b3f2868570139a8f712",
+      "capture": "Unedited supported browser-control screenshot of real guest GUI"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad/ascii-edited-rendered.jpg",
+      "sizeBytes": 79252,
+      "sha256": "d888ea93839d3af2fe634e41673a09b9a2f7b0fd1b169f72b20604246bdad832",
+      "capture": "Unedited supported browser-control screenshot of real guest GUI"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad/ascii-fresh-reopened-rendered.jpg",
+      "sizeBytes": 78602,
+      "sha256": "3c055fcc81278f68c747121e03ecf9074da9882ea285a0ec43def03e779b58fa",
+      "capture": "Unedited supported browser-control screenshot of real guest GUI"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad/ascii-stl-exported.jpg",
+      "sizeBytes": 79589,
+      "sha256": "8a182a005f984b36283fb503f1558e31f5d99588410f17a08a91498c3957546f",
+      "capture": "Unedited supported browser-control screenshot of real guest GUI"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad/chinese-open-failed.jpg",
+      "sizeBytes": 69564,
+      "sha256": "b0350b4551519d838a747058bf492418d08cecffbea772700e98f9108d4e07b5",
+      "capture": "Unedited supported browser-control screenshot of real guest GUI"
+    },
+    {
+      "file": "docs/evidence/2026-10-05-openscad/chinese-open-qt-probe-failed.jpg",
+      "sizeBytes": 69592,
+      "sha256": "cfae523a3da02b3aa81ba7f10c1a6132cc23e004d6f6ecdd0001bb06880d0b06",
+      "capture": "Unedited supported browser-control screenshot of real guest GUI"
+    }
+  ],
+  "installed": true,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "acceptedDistinctWindowsApps": 20,
+  "activeLocalMarket": {
+    "signedCatalogue": "catalogue/candidate-v20/tuf",
+    "metadataVersion": 29,
+    "catalogueEntries": 22,
+    "acceptedDistinctWindowsApps": 20,
+    "excludedFixtures": 2,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "publicationEvidence": "docs/evidence/2026-10-03-jpegview-publication.json"
+  },
+  "limits": [
+    "Chinese filename open failed twice; no full configured GUI acceptance",
+    "No OpenSCAD acceptance target, signing, Store update, rollback or publication performed",
+    "Unicode save/export, advanced modelling, printing and library workflows unverified",
+    "GUI About does not establish complete component notices, installer-source build mapping, Authenticode/GPG or reproducible-build verification",
+    "Qt override was a failed temporary diagnostic probe; no persistent fix claimed"
+  ],
+  "guiWorkflowEnvironment": {
+    "loadEditSaveRenderExportJobId": "job-1791163079427-2",
+    "temporaryQtOverride": "windows:dialogs=none",
+    "freshReopenRenderJobId": "job-1791163425220-3",
+    "freshReopenQtOverride": null
+  }
+}
