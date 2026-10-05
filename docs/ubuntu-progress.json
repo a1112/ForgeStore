@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-05T15:04:00Z",
+  "runtimeProfile": "ubuntu-26.04",
+  "counts": {
+    "candidates": 3,
+    "installed": 1,
+    "guiAccepted": 1,
+    "publishedAccepted": 0
+  },
+  "windowsProgressUnchanged": {
+    "completed": 22,
+    "goal": 1000
+  },
+  "trust": {
+    "channel": "ubuntu-candidate-v2",
+    "rootVersion": 1,
+    "rootSha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
+    "roleVersion": 2,
+    "expires": "2026-11-05T00:00:00Z",
+    "candidateChannelIsAcceptance": false,
+    "rawCacheByteEqualityPassed": false,
+    "signedContentAndSignaturesPreserved": true,
+    "cacheOrderEvidence": "evidence/ubuntu-20261005/tuf-cache-serialization-order.json"
+  },
+  "entries": [
+    {
+      "id": "org.kde.kate",
+      "format": "ubuntu-deb",
+      "version": "4:25.12.3-0ubuntu1",
+      "candidate": true,
+      "installed": true,
+      "guiAccepted": true,
+      "publishedAccepted": false,
+      "failures": [
+        {
+          "jobId": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+          "stage": "guest-https-download",
+          "detail": "file operation: error decoding response body",
+          "nativePending": false,
+          "evidence": "evidence/ubuntu-20261005/kate-download-failed.jpg"
+        },
+        {
+          "jobId": "596e48b5-45ce-42e4-8947-ffd035fdebce",
+          "stage": "authorized-native-install",
+          "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+          "nativePending": false,
+          "evidence": "evidence/ubuntu-20261005/kate-native-failed.jpg"
+        },
+        {
+          "jobId": "a95e9234-b7c4-410c-a861-204c70d1a27c",
+          "stage": "authorized-native-install",
+          "detail": "APT _apt UID 42 seteuid/setresuid failed with EPERM; HTTPS method exited 112",
+          "nativePending": false,
+          "evidence": "evidence/ubuntu-20261005/kate-native-sandbox-diagnostic.json"
+        }
+      ],
+      "acceptanceEvidence": "evidence/ubuntu-20261005/kate-lifecycle-acceptance.json",
+      "successfulJobs": {
+        "install": "065e62f9-7830-44cd-a076-a636bab54167",
+        "uninstall": "75282aa5-4b6c-43f1-8164-80d5a6a422b7",
+        "reinstall": "9d5e11a2-5ca8-40b0-984e-b84d990af9f1"
+      }
+    },
+    {
+      "id": "org.gnome.calculator",
+      "format": "snap",
+      "revision": 972,
+      "candidate": true,
+      "installed": false,
+      "guiAccepted": false,
+      "publishedAccepted": false,
+      "failures": [],
+      "inProgress": {
+        "jobId": "cd5de4d2-4ea1-42de-bee4-f9b25b3341af",
+        "stage": "authorized-native-snap-install",
+        "observedAt": "2026-10-05T14:54:37Z",
+        "snapChangeId": "2"
+      }
+    },
+    {
+      "id": "org.gnome.texteditor",
+      "format": "flatpak",
+      "commit": "76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91",
+      "candidate": true,
+      "installed": false,
+      "guiAccepted": false,
+      "publishedAccepted": false,
+      "failures": [
+        {
+          "jobId": "e4992255-9d17-4d03-8a26-29034f58c0b7",
+          "stage": "flatpak-runtime-download",
+          "detail": "Flatpak operation timed out; observed=None; expected fixed reviewed commit",
+          "nativePending": false,
+          "evidence": "evidence/ubuntu-20261005/flatpak-download-timeout.jpg",
+          "cachedRepositoryBytes": 177134629
+        }
+      ],
+      "inProgress": {
+        "jobId": "cdc80c3a-709e-4e45-9be9-510b1a621f5c",
+        "stage": "queued-behind-native-snap",
+        "observedAt": "2026-10-05T14:58:00Z",
+        "retainsEarlierFailure": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-10-05",
+  "runtimeProfile": "ubuntu-26.04",
+  "appId": "org.kde.kate",
+  "ordinaryUserUid": 1000,
+  "acceptance": {
+    "scope": "One Kate .deb GUI lifecycle sample on the separate Ubuntu runtime",
+    "installed": true,
+    "guiAccepted": true,
+    "publishedAccepted": false,
+    "candidateChannelRemainsCompatibilityUnknown": true,
+    "ubuntuDeploymentReady": false,
+    "ubuntuDependencyAndLicenseClosureReviewed": false,
+    "otherFormatsAccepted": false,
+    "windowsCompletedUnchanged": 22,
+    "windowsGoalUnchanged": 1000,
+    "notClaimed": [
+      "system reboot persistence",
+      "Snap GUI acceptance",
+      "Flatpak GUI acceptance",
+      "GTK/CSD interoperability",
+      "accepted market publication",
+      "complete Ubuntu runtime dependency/license closure"
+    ]
+  },
+  "fixedDelivery": {
+    "architecture": "amd64",
+    "artifact": {
+      "sha256": "a0f42af31e4bc1fa2d449029b3eb8229f822c236f90dc54950b130a575ca03aa",
+      "size": 2749472,
+      "target": "kate_25.12.3-0ubuntu1_amd64.deb",
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/k/kate/kate_25.12.3-0ubuntu1_amd64.deb"
+    },
+    "backend": "ubuntu-deb",
+    "distribution": "ubuntu",
+    "package": "kate",
+    "release": "26.04",
+    "reviewedPackageId": "org.kde.kate",
+    "version": "4:25.12.3-0ubuntu1"
+  },
+  "observedVersion": "4:25.12.3-0ubuntu1",
+  "license": "LGPL-2.0-or-later",
+  "fileRoundTrip": {
+    "relativeFile": "Documents/forge-kate-ubuntu-20261005.txt",
+    "bytes": 95,
+    "sha256": "b1581df97bf8af2a33906306020d058b8d9470db0dcfbed2ad3b8cde6377143d",
+    "exactGuiTypedBytes": true,
+    "savedThroughGui": true,
+    "closedProcessAbsent": true,
+    "firstProcessPid": 137461,
+    "reopenedNewProcessPid": 150205,
+    "afterNormalReloginProcessPid": 181296,
+    "sameSavedBytesAfterUninstallAndRelogin": true,
+    "evidence": [
+      "kate-gui-saved.jpg",
+      "kate-closed.jpg",
+      "kate-gui-reopened.jpg",
+      "kate-relogin-reopened.jpg",
+      "kate-file-and-platform.json"
+    ]
+  },
+  "windowOperations": {
+    "count": 9,
+    "source": "Observed GUI actions and saved screenshots; not inferred from window launch or install success.",
+    "checks": [
+      {
+        "operation": "move",
+        "passed": true,
+        "evidence": "kate-moved.jpg"
+      },
+      {
+        "operation": "resize",
+        "passed": true,
+        "evidence": "kate-resized.jpg"
+      },
+      {
+        "operation": "maximize",
+        "passed": true,
+        "evidence": "kate-maximized.jpg"
+      },
+      {
+        "operation": "restore-from-maximized",
+        "passed": true,
+        "evidence": "kate-restored.jpg"
+      },
+      {
+        "operation": "minimize",
+        "passed": true,
+        "evidence": "kate-minimized.jpg"
+      },
+      {
+        "operation": "restore-from-taskbar",
+        "passed": true,
+        "evidence": "kate-task-restored.jpg"
+      },
+      {
+        "operation": "fullscreen",
+        "passed": true,
+        "evidence": "kate-fullscreen.jpg"
+      },
+      {
+        "operation": "exit-fullscreen",
+        "passed": true,
+        "evidence": "kate-fullscreen-restored.jpg"
+      },
+      {
+        "operation": "close",
+        "passed": true,
+        "evidence": "kate-closed.jpg"
+      }
+    ]
+  },
+  "packageLifecycle": {
+    "installJobId": "065e62f9-7830-44cd-a076-a636bab54167",
+    "uninstallJobId": "75282aa5-4b6c-43f1-8164-80d5a6a422b7",
+    "reinstallJobId": "9d5e11a2-5ca8-40b0-984e-b84d990af9f1",
+    "allThreeSucceeded": true,
+    "uninstallPackageAbsent": true,
+    "uninstallDesktopEntryRemoved": true,
+    "userFilePreserved": true,
+    "sameFixedVersionReinstalled": true,
+    "dpkgAuditCleanAfterUninstall": true,
+    "realAdministratorPolkitAuthorization": true,
+    "guestOriginalArtifactDownloadPassed": false,
+    "artifactRecovery": "Exact independently verified official artifact seeded into ordinary user private digest cache; original guest HTTPS failure retained. Native APT dependencies later downloaded through verified HTTPS.",
+    "nativeRollbackClaimed": false,
+    "evidence": [
+      "kate-admin-auth-required.jpg",
+      "kate-installed-fixed.jpg",
+      "kate-install-success.json",
+      "kate-menu-refreshed.jpg",
+      "kate-market-uninstalled.jpg",
+      "kate-menu-uninstalled.jpg",
+      "kate-market-reinstalled.jpg"
+    ]
+  },
+  "retainedJobRows": [
+    {
+      "action": "install",
+      "appId": "org.kde.kate",
+      "backend": "ubuntu-deb",
+      "detail": "file operation: error decoding response body",
+      "id": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+      "nativePending": false,
+      "state": "failed"
+    },
+    {
+      "action": "install",
+      "appId": "org.kde.kate",
+      "backend": "ubuntu-deb",
+      "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+      "id": "596e48b5-45ce-42e4-8947-ffd035fdebce",
+      "nativePending": false,
+      "state": "failed"
+    },
+    {
+      "action": "install",
+      "appId": "org.gnome.texteditor",
+      "backend": "flatpak",
+      "detail": "Flatpak operation timed out; observed=None; expected=Some(\"76ecd1d6e9ecfa26f6939c54eec4e9db3491fce949c8808bdee9fb55758a1a91\")",
+      "id": "e4992255-9d17-4d03-8a26-29034f58c0b7",
+      "nativePending": false,
+      "state": "failed"
+    },
+    {
+      "action": "install",
+      "appId": "org.kde.kate",
+      "backend": "ubuntu-deb",
+      "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+      "id": "a95e9234-b7c4-410c-a861-204c70d1a27c",
+      "nativePending": false,
+      "state": "failed"
+    },
+    {
+      "action": "install",
+      "appId": "org.kde.kate",
+      "backend": "ubuntu-deb",
+      "detail": null,
+      "id": "065e62f9-7830-44cd-a076-a636bab54167",
+      "nativePending": false,
+      "state": "succeeded"
+    },
+    {
+      "action": "uninstall",
+      "appId": "org.kde.kate",
+      "backend": "ubuntu-deb",
+      "detail": null,
+      "id": "75282aa5-4b6c-43f1-8164-80d5a6a422b7",
+      "nativePending": false,
+      "state": "succeeded"
+    },
+    {
+      "action": "install",
+      "appId": "org.kde.kate",
+      "backend": "ubuntu-deb",
+      "detail": null,
+      "id": "9d5e11a2-5ca8-40b0-984e-b84d990af9f1",
+      "nativePending": false,
+      "state": "succeeded"
+    }
+  ],
+  "retainedFailures": {
+    "kateFailedJobs": [
+      "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+      "596e48b5-45ce-42e4-8947-ffd035fdebce",
+      "a95e9234-b7c4-410c-a861-204c70d1a27c"
+    ],
+    "flatpakFailedJobs": [
+      "e4992255-9d17-4d03-8a26-29034f58c0b7"
+    ],
+    "failuresNotErasedOrChangedToSuccess": true,
+    "evidence": [
+      "kate-download-failed.jpg",
+      "kate-native-failed.jpg",
+      "kate-native-sandbox-failed.jpg",
+      "kate-native-sandbox-diagnostic.json",
+      "kate-failure-readbacks.json",
+      "flatpak-download-timeout.jpg"
+    ]
+  },
+  "serviceRestartPersistence": {
+    "native": {
+      "privateReceipt": "ubuntu-kate-native-restart.json",
+      "sha256": "cb34161b08c3e578affacf1f2c44729d1f0cccf7def32f733fb14eae9a112e22",
+      "summary": {
+        "oldPid": 125642,
+        "newPid": 171376,
+        "journalCount": 5,
+        "allJournalBytesPreserved": true,
+        "journalSha256": {
+          "44eb4c0464ce1de30796dd1be10ec3d2cccc73252a75296f53bec1df16fd49f4.json": "b27c970e8ce5f487d474c52f13778ca63f5893f6c9146b0c2efa02c4c2da44b6",
+          "7168a5e69a0f72b331eb64b62485396511442341043d2542ede5c91613f5b167.json": "55a121006041a456ff04c6fa5f022a221428d62076eca1556489547beb152b7d",
+          "f4a09db75a82f0771b0792ad1b38dd5c73e2aa1487681eb8fc2aef70c2d26199.json": "e8a21cb5693df7ebbd3804b5931def66ce4fa7182e34623a6364f48786144354",
+          "0ed7551233f35ee831ed3d8453f1ba5ae7f26b37abfa25ce2db4cb9a5afed822.json": "4063a972c94e57f8f2e0ce1ef2bedadbde9cff5a840b7bdbf9c74f577e1ecc97",
+          "73e671bc2a987341994686f4aac83f106703b93b4ec1467ff1285c20057259ce.json": "417f4c5fdc30a6f131caec0ce479b4b73d7c2487f5199c4d608d85fdfac83def"
+        }
+      }
+    },
+    "store": {
+      "privateReceipt": "ubuntu-kate-store-restart.json",
+      "sha256": "ea1cf5cd3bfbe5f59bc04d4f46eeb72ab96beb63c327143e3a05711a16ba4ee1",
+      "summary": {
+        "oldPid": "13900",
+        "newPid": "171488",
+        "serviceRestarted": true
+      }
+    },
+    "fullRows": {
+      "privateReceipt": "ubuntu-kate-persistence-restart-diff.json",
+      "sha256": "404efcbe1b9d2300ad9958c91d3d0eef0a2944d3e584dd8c19f0230256c230ac",
+      "summary": {
+        "beforeRows": 7,
+        "afterRows": 7,
+        "differences": []
+      }
+    },
+    "originalRawTrustAssertion": {
+      "assertion": "trust == before[trustSha256]",
+      "passed": false,
+      "retainedAsFailure": true,
+      "reason": "Cached root.json and targets.json raw bytes changed. The original raw-byte equality assertion is not reported as passing.",
+      "followUp": "Changing only signed.roles and signed.targets order reproduced both before/after hashes exactly; all values, signatures and pinned public trust remained unchanged.",
+      "evidence": "tuf-cache-serialization-order.json"
+    }
+  },
+  "normalSessionRelogin": {
+    "normalLogoutAndSddmLoginObserved": true,
+    "activeOrdinaryUserWaylandSession": true,
+    "uid": 1000,
+    "newKateProcessPid": 181296,
+    "loadedPlatformPlugins": [
+      "libqwayland.so"
+    ],
+    "xwaylandPresenceNotUsedAsProofOfKatePlatform": true,
+    "fullRows": {
+      "privateReceipt": "ubuntu-kate-rows-after-relogin.json",
+      "sha256": "404efcbe1b9d2300ad9958c91d3d0eef0a2944d3e584dd8c19f0230256c230ac",
+      "summary": {
+        "beforeRows": 7,
+        "afterRows": 7,
+        "differences": []
+      }
+    },
+    "fileReadback": {
+      "privateReceipt": "ubuntu-kate-file-reopened-after-relogin.json",
+      "sha256": "3bd83001e7b20e8d00c3d0278de348fbd1ebe8fffc4ad0e2eb80e0380253a704",
+      "summary": {
+        "uid": 1000,
+        "relativeFile": "Documents/forge-kate-ubuntu-20261005.txt",
+        "bytes": 95,
+        "sha256": "b1581df97bf8af2a33906306020d058b8d9470db0dcfbed2ad3b8cde6377143d",
+        "exactGuiTypedBytes": true
+      }
+    },
+    "platformReadback": {
+      "privateReceipt": "ubuntu-kate-platform-after-relogin.json",
+      "sha256": "a04f24fbd20766e4392157c7d3f4702c1436d77b4b14933b8c54ba1749092ad0",
+      "summary": {
+        "pid": 181296,
+        "uid": 1000,
+        "sessionType": "wayland",
+        "loadedPlatformPlugins": [
+          "libqwayland.so"
+        ]
+      }
+    },
+    "sessionReadback": {
+      "privateReceipt": "ubuntu-session-after-relogin.json",
+      "sha256": "29d2efc264e8275f671ce5f20d5b8265898d8084e05445b6df8fd678ad13dc50",
+      "summary": {
+        "uid": 1000,
+        "displayManager": "sddm",
+        "sessionType": "wayland",
+        "active": true
+      }
+    },
+    "evidence": "kate-relogin-reopened.jpg"
+  },
+  "trustCheckpoints": [
+    {
+      "privateReceipt": "ubuntu-kate-trust-semantic-after-services.json",
+      "sha256": "35ba99ac8f6ede2ae44afd4b0579aa21edb8fae334723b47e698887b99fa7da9",
+      "summary": {
+        "trustPinUnchanged": true,
+        "cacheRawBytesUnchanged": false,
+        "roles": [
+          {
+            "role": "root",
+            "version": 1,
+            "expires": "2027-10-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "a30fe09de80558815a2bfa3c9613fec9e7f684db507a30b9e040f31b028ed5f7",
+            "afterCacheSha256": "6e1d700cd95e29046bea99e80a10a3ab951abaaa181cbfa40773d12447f999fb",
+            "publicSha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
+            "normalizedJsonSha256": "a82e3ac78177c69a00bde03a837f218665c2cc8067755914dd4c4f168a00fc23"
+          },
+          {
+            "role": "timestamp",
+            "version": 2,
+            "expires": "2026-11-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "9e8bdd71e5b493717935c3bbb76c16e9e61e632f51248de9aea25b0271a2ea4e",
+            "afterCacheSha256": "9e8bdd71e5b493717935c3bbb76c16e9e61e632f51248de9aea25b0271a2ea4e",
+            "publicSha256": "de9e2032f8a6b5436f1b59963b79716053f6b5b914a922efa56f5d1c8ec01eda",
+            "normalizedJsonSha256": "bcf66101c75c74eba52617ad36463be13f3541188959d1fd6dedce25a0c76fd6"
+          },
+          {
+            "role": "snapshot",
+            "version": 2,
+            "expires": "2026-11-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "f3cb102c9c57e4db68da61a9e57282829026290113f5b8d7da6d9b62262ba3b4",
+            "afterCacheSha256": "f3cb102c9c57e4db68da61a9e57282829026290113f5b8d7da6d9b62262ba3b4",
+            "publicSha256": "d8f6a496fc0aacda9ef6755ae4e1aaf2af9d2fa647136a9fb7763a921d803711",
+            "normalizedJsonSha256": "ea1995bcd7a3c0a90e772928c3e3dd1351ded02ce385cd2dcb3381788983f577"
+          },
+          {
+            "role": "targets",
+            "version": 2,
+            "expires": "2026-11-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "06794eb5fd4fa0a8a1692d61f4605f113d2489a87f02321c74294ade108d7d26",
+            "afterCacheSha256": "0d3c1d97e242074f04304b78bc13061c12ecf9dbd69258dd7a3de53ada94d1a7",
+            "publicSha256": "900c1c290013aa1740c87031cf95601c28a7c48b58d6f191249aec09a7e2011b",
+            "normalizedJsonSha256": "452671edc906572b24901a2e6e54fa0ec69b1a22834556aabb11efcdedfdf632"
+          }
+        ],
+        "normalizedJsonSha256Method": "SHA256 of complete parsed JSON including signatures, with sorted keys and compact ordinary JSON; not the OLPC canonical signed payload used to verify TUF signatures."
+      }
+    },
+    {
+      "privateReceipt": "ubuntu-kate-trust-after-relogin.json",
+      "sha256": "76021d4a38d51180b9b12d93869008bec226375067a3b09a04e2e903d5f7ce7f",
+      "summary": {
+        "trustPinUnchanged": true,
+        "cacheRawBytesUnchanged": false,
+        "roles": [
+          {
+            "role": "root",
+            "version": 1,
+            "expires": "2027-10-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "a30fe09de80558815a2bfa3c9613fec9e7f684db507a30b9e040f31b028ed5f7",
+            "afterCacheSha256": "e5593fe1f12e2c6a04fdbf5c35337f0d8f047b5700cbb578e514fc7b72d55284",
+            "publicSha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
+            "normalizedJsonSha256": "a82e3ac78177c69a00bde03a837f218665c2cc8067755914dd4c4f168a00fc23"
+          },
+          {
+            "role": "timestamp",
+            "version": 2,
+            "expires": "2026-11-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "9e8bdd71e5b493717935c3bbb76c16e9e61e632f51248de9aea25b0271a2ea4e",
+            "afterCacheSha256": "9e8bdd71e5b493717935c3bbb76c16e9e61e632f51248de9aea25b0271a2ea4e",
+            "publicSha256": "de9e2032f8a6b5436f1b59963b79716053f6b5b914a922efa56f5d1c8ec01eda",
+            "normalizedJsonSha256": "bcf66101c75c74eba52617ad36463be13f3541188959d1fd6dedce25a0c76fd6"
+          },
+          {
+            "role": "snapshot",
+            "version": 2,
+            "expires": "2026-11-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "f3cb102c9c57e4db68da61a9e57282829026290113f5b8d7da6d9b62262ba3b4",
+            "afterCacheSha256": "f3cb102c9c57e4db68da61a9e57282829026290113f5b8d7da6d9b62262ba3b4",
+            "publicSha256": "d8f6a496fc0aacda9ef6755ae4e1aaf2af9d2fa647136a9fb7763a921d803711",
+            "normalizedJsonSha256": "ea1995bcd7a3c0a90e772928c3e3dd1351ded02ce385cd2dcb3381788983f577"
+          },
+          {
+            "role": "targets",
+            "version": 2,
+            "expires": "2026-11-05T00:00:00Z",
+            "signedContentAndSignaturesMatchPublicPin": true,
+            "beforeCacheSha256": "06794eb5fd4fa0a8a1692d61f4605f113d2489a87f02321c74294ade108d7d26",
+            "afterCacheSha256": "0d3c1d97e242074f04304b78bc13061c12ecf9dbd69258dd7a3de53ada94d1a7",
+            "publicSha256": "900c1c290013aa1740c87031cf95601c28a7c48b58d6f191249aec09a7e2011b",
+            "normalizedJsonSha256": "452671edc906572b24901a2e6e54fa0ec69b1a22834556aabb11efcdedfdf632"
+          }
+        ],
+        "normalizedJsonSha256Method": "SHA256 of complete parsed JSON including signatures, with sorted keys and compact ordinary JSON; not the OLPC canonical signed payload used to verify TUF signatures."
+      }
+    }
+  ],
+  "privateSnapshotReceipt": {
+    "name": "ubuntu-store-after-relogin.json",
+    "sha256": "15bd50337cc6dc55de9a62695fd49073fcc54770371c127efdf4d713bd2d84a5",
+    "rawJournalLogsCopied": false
+  },
+  "publicEvidenceManifest": {
+    "flatpak-download-timeout.jpg": {
+      "size": 56462,
+      "sha256": "bfc4605a82d0dbf56f504f6a5bcfa2b183bdaa5f347c03b6c115012e5cf31be9"
+    },
+    "kate-about-license.jpg": {
+      "size": 61672,
+      "sha256": "c17ed4c30bfeb61e88368eebcc94e6759869e8d72ee1045a7b5600745f169a7f"
+    },
+    "kate-about-version.jpg": {
+      "size": 59776,
+      "sha256": "287d6daeb8c5334c43b200cc9e468ab7eeda19235fe4f7c874fb28cca0ad8b4b"
+    },
+    "kate-admin-auth-required.jpg": {
+      "size": 53680,
+      "sha256": "cf37563a8d9c130fd053587e47ee9839109d15dcfaddbb3f1c782cddc03574fb"
+    },
+    "kate-closed.jpg": {
+      "size": 20284,
+      "sha256": "1d94fd91ff27b95b0cc2fdce583228879df05a48373cb2264182b441ef743600"
+    },
+    "kate-download-failed.jpg": {
+      "size": 38713,
+      "sha256": "dcdd993339b9ba30d952b4b2f9273d7c3d01c74e399033441492fc09cb6ee255"
+    },
+    "kate-failure-readbacks.json": {
+      "size": 1867,
+      "sha256": "f0e3e9f2beaefc2202a92e71784756a1f21972b7a4b0010276c413c8a9578964"
+    },
+    "kate-file-and-platform.json": {
+      "size": 2408,
+      "sha256": "8ec2048d8f670df28930cda316537bb2ee43f9608d2341e78c6a4449b726c018"
+    },
+    "kate-fullscreen-restored.jpg": {
+      "size": 47774,
+      "sha256": "b9f0e43c106f65894e8ae28d50263ca2748accdfbc4c3fabffa80b97de52b8e9"
+    },
+    "kate-fullscreen.jpg": {
+      "size": 34826,
+      "sha256": "753c7d06572364691e0715df4337b99bfa5e7e0b2b9b6ac532bc2cc60bcf1665"
+    },
+    "kate-gui-reopened.jpg": {
+      "size": 48581,
+      "sha256": "ae066b969ccd756b77dd7582d258642dc5b439aec83f94d2b74a8331cbcb5593"
+    },
+    "kate-gui-saved.jpg": {
+      "size": 48570,
+      "sha256": "6993fc78bd65a88937d9c176c9daf20f5dbaace749fa6001c6e2dde2c8aad8cc"
+    },
+    "kate-install-success.json": {
+      "size": 11273,
+      "sha256": "3cd9bff7ef00ecd8c4958aaef9c0d90c10b695afeee84d719bba3252c8074004"
+    },
+    "kate-installed-fixed.jpg": {
+      "size": 38691,
+      "sha256": "45f817a4e28771f210271d49a0de2b23c60c475a9cf0352ecab74063bbe3aafe"
+    },
+    "kate-market-reinstalled.jpg": {
+      "size": 60668,
+      "sha256": "9768d0c6bc473138b2f7fd2c14e14783bd9d2f5e624f88b6298d71a0f53702d3"
+    },
+    "kate-market-uninstalled.jpg": {
+      "size": 34351,
+      "sha256": "3da226660475b6a11932866dadabd36d179e0e7b2b18579933047f1afbd78b9a"
+    },
+    "kate-maximized.jpg": {
+      "size": 40095,
+      "sha256": "049975ea405802fc5f98c2222fd572536d7c84be60a708e4a8087d81cc94c2ad"
+    },
+    "kate-menu-refreshed.jpg": {
+      "size": 35724,
+      "sha256": "46918aa7d1e22a959f2ca1f17ca82241804dd2df21fb7b42a8e4239f8843ddcf"
+    },
+    "kate-menu-uninstalled.jpg": {
+      "size": 35882,
+      "sha256": "0b623e469cf290a9d8ae07b8533745846109e26f7c7cce1d4e5102331b3a41fb"
+    },
+    "kate-minimized.jpg": {
+      "size": 21168,
+      "sha256": "c94af2d2991f821f9b1ecfc08a15fdc20a60edcfd4620ba29803c260d2514b36"
+    },
+    "kate-moved.jpg": {
+      "size": 47554,
+      "sha256": "5919ecf9e88c449ef501d2bbeb593a47f9833aeb11d088be1929c1d3ec8fc42e"
+    },
+    "kate-native-failed.jpg": {
+      "size": 46739,
+      "sha256": "64d7c9597efbf746898a70f26ddc250343c805793a6d052b68b05a10e309a57d"
+    },
+    "kate-native-sandbox-diagnostic.json": {
+      "size": 2398,
+      "sha256": "f5f1f85a34014ed1636e24fcecb6f2e84106a217586df55891abee0a7c73acec"
+    },
+    "kate-native-sandbox-failed.jpg": {
+      "size": 59977,
+      "sha256": "378d52d993fd785c489e28fb66e18d0b49f4df340874e3957f93efe1b60effca"
+    },
+    "kate-relogin-reopened.jpg": {
+      "size": 48821,
+      "sha256": "6e8f65a2e725dc9537cd902ef1e75b13985e9da33a584704e694a62d6db0a08b"
+    },
+    "kate-resized.jpg": {
+      "size": 47874,
+      "sha256": "a58819ddccea1cbe43728c85d0e2499590a4755c71114be788185acfc5bda239"
+    },
+    "kate-restored.jpg": {
+      "size": 48639,
+      "sha256": "d248010fcea4f603a2610d61da056f36b1a4442e9348f2e82352e326b40ba6aa"
+    },
+    "kate-task-restored.jpg": {
+      "size": 47691,
+      "sha256": "6fcc8ee4d436d0ddf77cf7434708c0cc24b0701e9ab97aead5f6585d93dd2819"
+    },
+    "network-diagnosis.json": {
+      "size": 2726,
+      "sha256": "41c27c252e8688dd396a9170162cf74005daf7d092256c6d7fc572cbc6ada3d3"
+    },
+    "store-candidates.jpg": {
+      "size": 62316,
+      "sha256": "a33e5d0bc9d34d7c17f5479aa46b0af334b67dd262495ab28260f597c05b3b2c"
+    },
+    "tuf-cache-serialization-order.json": {
+      "size": 4053,
+      "sha256": "6cc0aed121ea2bb8366964d7b982b4921bb479eaff384a7c443ab2e7fc5195d4"
+    }
+  },
+  "privacy": {
+    "passwordsRecorded": false,
+    "privateKeysRecorded": false,
+    "privateRawLogsCopied": false,
+    "privateBackupsCopied": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "privateReadbackSha256": "373e2e39aff6d336c3ff3bec9e841fc6e2ccb0460a256cafc6b913ea06e21e98",
+      "readback": {
+        "uid": 1000,
+        "relativeFile": "Documents/forge-kate-ubuntu-20261005.txt",
+        "bytes": 95,
+        "sha256": "b1581df97bf8af2a33906306020d058b8d9470db0dcfbed2ad3b8cde6377143d",
+        "utf8": "ForgeOS Ubuntu .deb GUI acceptance\nKate 25.12.3\nResult: 42\nSaved and reopened through the GUI.\n",
+        "exactGuiTypedBytes": true,
+        "processes": "    PID USER         ELAPSED COMMAND\n 137461 forge          00:58 /usr/bin/kate -b\n"
+      }
+    },
+    {
+      "privateReadbackSha256": "bc687a530ac10a68c3f16abb6d2608638d1f4870e8f89c33b8e7bae2bce7f29f",
+      "readback": {
+        "uid": 1000,
+        "relativeFile": "Documents/forge-kate-ubuntu-20261005.txt",
+        "bytes": 95,
+        "sha256": "b1581df97bf8af2a33906306020d058b8d9470db0dcfbed2ad3b8cde6377143d",
+        "utf8": "ForgeOS Ubuntu .deb GUI acceptance\nKate 25.12.3\nResult: 42\nSaved and reopened through the GUI.\n",
+        "exactGuiTypedBytes": true,
+        "processes": "    PID USER         ELAPSED COMMAND\n"
+      }
+    },
+    {
+      "privateReadbackSha256": "685c0cb9029f0488e6f3a9c2b25329c1695ee6520141f6d5ecbe5717530bc886",
+      "readback": {
+        "uid": 1000,
+        "relativeFile": "Documents/forge-kate-ubuntu-20261005.txt",
+        "bytes": 95,
+        "sha256": "b1581df97bf8af2a33906306020d058b8d9470db0dcfbed2ad3b8cde6377143d",
+        "utf8": "ForgeOS Ubuntu .deb GUI acceptance\nKate 25.12.3\nResult: 42\nSaved and reopened through the GUI.\n",
+        "exactGuiTypedBytes": true,
+        "processes": "    PID USER         ELAPSED COMMAND\n 150205 forge          03:29 /usr/bin/kate -b\n"
+      }
+    },
+    {
+      "privateReadbackSha256": "83f00dcde634b27c465ac6d38286b275b10127896135354a41b804a8c7df9a5f",
+      "readback": {
+        "kateProcesses": [
+          {
+            "pid": 150205,
+            "uid": 1000,
+            "platformEnvironment": {
+              "XDG_SESSION_TYPE": "wayland"
+            },
+            "loadedPlatformPlugins": [
+              "libqwayland.so"
+            ]
+          }
+        ],
+        "xwayland": {
+          "exitCode": 0,
+          "stdout": "    PID COMMAND\n   2780 Xwayland\n"
+        }
+      }
+    }
+  ]
+}

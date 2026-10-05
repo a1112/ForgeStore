@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sourceReadbackSha256": "ba5dd44c91a2db8c1fee567a2b1101c963898cccf962d5c22089fc37781d9d13",
+  "nativeRecord": {
+    "fingerprint": "70c4c961fe9a981eba898e2102332721590edb23af27bc5448045d08db329558",
+    "request": {
+      "id": "org.kde.kate",
+      "operation": "install",
+      "requestId": "065e62f9-7830-44cd-a076-a636bab54167",
+      "schemaVersion": 1,
+      "sha256": "a0f42af31e4bc1fa2d449029b3eb8229f822c236f90dc54950b130a575ca03aa",
+      "size": 2749472
+    },
+    "requestId": "065e62f9-7830-44cd-a076-a636bab54167",
+    "response": {
+      "ok": true,
+      "requestId": "065e62f9-7830-44cd-a076-a636bab54167",
+      "result": {
+        "backend": "ubuntu-deb",
+        "id": "org.kde.kate",
+        "identity": {
+          "architecture": "amd64",
+          "distribution": "ubuntu",
+          "package": "kate",
+          "release": "26.04"
+        },
+        "installed": true,
+        "matchesPolicy": true,
+        "revision": null,
+        "version": "4:25.12.3-0ubuntu1"
+      },
+      "schemaVersion": 1
+    },
+    "schemaVersion": 1,
+    "state": "complete",
+    "uid": 1000
+  },
+  "package": {
+    "exitCode": 0,
+    "stderr": "",
+    "stdout": "kate\t4:25.12.3-0ubuntu1\tamd64\tii \n"
+  },
+  "dpkgAuditClean": true,
+  "diagnostic": {
+    "backend": "ubuntu-deb",
+    "id": "org.kde.kate",
+    "operation": "install",
+    "outputBytes": 9228,
+    "outputTail": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nSolving dependencies...\nThe following additional packages will be installed:\n  gcr gcr4 gnome-keyring gnome-keyring-pkcs11 kate-data libgck-1-0 libgck-2-2\n  libgcr-4-4 libgcr-base-3-1 libgcr-ui-3-1 libhfstospell11\n  libkf6texteditor-katepart libpam-gnome-keyring libqt6keychain1 libvoikko1\n  p11-kit p11-kit-modules pinentry-gnome3 sonnet6-plugins\nSuggested packages:\n  darcs exuberant-ctags khelpcenter mercurial subversion voikko-fi\n  pinentry-doc hspell\nThe following NEW packages will be installed:\n  gcr gcr4 gnome-keyring gnome-keyring-pkcs11 kate kate-data libgck-1-0\n  libgck-2-2 libgcr-4-4 libgcr-base-3-1 libgcr-ui-3-1 libhfstospell11\n  libkf6texteditor-katepart libpam-gnome-keyring libqt6keychain1 libvoikko1\n  p11-kit p11-kit-modules pinentry-gnome3 sonnet6-plugins\n0 upgraded, 20 newly installed, 0 to remove and 14 not upgraded.\nNeed to get 13.0 MB of archives.\nAfter this operation, 49.0 MB of additional disk space will be used.\nGet:1 https://archive.ubuntu.com/ubuntu resolute/main amd64 libgck-2-2 amd64 4.4.0.1-8 [78.4 kB]\nGet:2 https://archive.ubuntu.com/ubuntu resolute/main amd64 libgcr-4-4 amd64 4.4.0.1-8 [205 kB]\nGet:3 https://archive.ubuntu.com/ubuntu resolute/main amd64 gcr4 amd64 4.4.0.1-8 [44.0 kB]\nGet:4 https://archive.ubuntu.com/ubuntu resolute/main amd64 libgck-1-0 amd64 3.41.2-6 [80.4 kB]\nGet:5 https://archive.ubuntu.com/ubuntu resolute/main amd64 libgcr-base-3-1 amd64 3.41.2-6 [201 kB]\nGet:6 https://archive.ubuntu.com/ubuntu resolute/main amd64 libgcr-ui-3-1 amd64 3.41.2-6 [125 kB]\nGet:7 https://archive.ubuntu.com/ubuntu resolute/main amd64 gcr amd64 3.41.2-6 [60.5 kB]\nGet:8 https://archive.ubuntu.com/ubuntu resolute/main amd64 p11-kit-modules amd64 0.26.2-2 [355 kB]\nGet:9 https://archive.ubuntu.com/ubuntu resolute/main amd64 p11-kit amd64 0.26.2-2 [153 kB]\nGet:10 https://archive.ubuntu.com/ubuntu resolute/main amd64 pinentry-gnome3 amd64 1.3.2-3ubuntu1 [44.3 kB]\nGet:11 https://archive.ubuntu.com/ubuntu resolute/main amd64 gnome-keyring amd64 50.0-1 [607 kB]\nGet:12 https://archive.ubuntu.com/ubuntu resolute/main amd64 gnome-keyring-pkcs11 amd64 50.0-1 [26.1 kB]\nGet:13 https://archive.ubuntu.com/ubuntu resolute/universe amd64 kate-data all 4:25.12.3-0ubuntu1 [7954 kB]\nGet:14 https://archive.ubuntu.com/ubuntu resolute/universe amd64 libkf6texteditor-katepart amd64 6.24.0-0ubuntu1 [12.7 kB]\nGet:15 https://archive.ubuntu.com/ubuntu resolute/universe amd64 libqt6keychain1 amd64 0.15.0-2 [60.9 kB]\nGet:16 https://archive.ubuntu.com/ubuntu resolute/universe amd64 kate amd64 4:25.12.3-0ubuntu1 [2749 kB]\nGet:17 https://archive.ubuntu.com/ubuntu resolute/main amd64 libhfstospell11 amd64 0.5.4-1build5 [64.0 kB]\nGet:18 https://archive.ubuntu.com/ubuntu resolute/main amd64 libpam-gnome-keyring amd64 50.0-1 [15.4 kB]\nGet:19 https://archive.ubuntu.com/ubuntu resolute/main amd64 libvoikko1 amd64 4.3.3-1 [103 kB]\nGet:20 https://archive.ubuntu.com/ubuntu resolute/universe amd64 sonnet6-plugins amd64 6.24.0-0ubuntu1 [74.6 kB]\nFetched 13.0 MB in 4min 24s (49.2 kB/s)\nSelecting previously unselected package libgck-2-2:amd64.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 177197 files and directories currently installed.)\r\nPreparing to unpack .../00-libgck-2-2_4.4.0.1-8_amd64.deb ...\r\nUnpacking libgck-2-2:amd64 (4.4.0.1-8) ...\r\nSelecting previously unselected package libgcr-4-4:amd64.\r\nPreparing to unpack .../01-libgcr-4-4_4.4.0.1-8_amd64.deb ...\r\nUnpacking libgcr-4-4:amd64 (4.4.0.1-8) ...\r\nSelecting previously unselected package gcr4.\r\nPreparing to unpack .../02-gcr4_4.4.0.1-8_amd64.deb ...\r\nUnpacking gcr4 (4.4.0.1-8) ...\r\nSelecting previously unselected package libgck-1-0:amd64.\r\nPreparing to unpack .../03-libgck-1-0_3.41.2-6_amd64.deb ...\r\nUnpacking libgck-1-0:amd64 (3.41.2-6) ...\r\nSelecting previously unselected package libgcr-base-3-1:amd64.\r\nPreparing to unpack .../04-libgcr-base-3-1_3.41.2-6_amd64.deb ...\r\nUnpacking libgcr-base-3-1:amd64 (3.41.2-6) ...\r\nSelecting previously unselected package libgcr-ui-3-1:amd64.\r\nPreparing to unpack .../05-libgcr-ui-3-1_3.41.2-6_amd64.deb ...\r\nUnpacking libgcr-ui-3-1:amd64 (3.41.2-6) ...\r\nSelecting previously unselected package gcr.\r\nPreparing to unpack .../06-gcr_3.41.2-6_amd64.deb ...\r\nUnpacking gcr (3.41.2-6) ...\r\nSelecting previously unselected package p11-kit-modules:amd64.\r\nPreparing to unpack .../07-p11-kit-modules_0.26.2-2_amd64.deb ...\r\nUnpacking p11-kit-modules:amd64 (0.26.2-2) ...\r\nSelecting previously unselected package p11-kit.\r\nPreparing to unpack .../08-p11-kit_0.26.2-2_amd64.deb ...\r\nUnpacking p11-kit (0.26.2-2) ...\r\nSelecting previously unselected package pinentry-gnome3.\r\nPreparing to unpack .../09-pinentry-gnome3_1.3.2-3ubuntu1_amd64.deb ...\r\nUnpacking pinentry-gnome3 (1.3.2-3ubuntu1) ...\r\nSelecting previously unselected package gnome-keyring.\r\nPreparing to unpack .../10-gnome-keyring_50.0-1_amd64.deb ...\r\nUnpacking gnome-keyring (50.0-1) ...\r\nSelecting previously unselected package gnome-keyring-pkcs11:amd64.\r\nPreparing to unpack .../11-gnome-keyring-pkcs11_50.0-1_amd64.deb ...\r\nUnpacking gnome-keyring-pkcs11:amd64 (50.0-1) ...\r\nSelecting previously unselected package kate-data.\r\nPreparing to unpack .../12-kate-data_4%3a25.12.3-0ubuntu1_all.deb ...\r\nUnpacking kate-data (4:25.12.3-0ubuntu1) ...\r\nSelecting previously unselected package libkf6texteditor-katepart.\r\nPreparing to unpack .../13-libkf6texteditor-katepart_6.24.0-0ubuntu1_amd64.deb ...\r\nUnpacking libkf6texteditor-katepart (6.24.0-0ubuntu1) ...\r\nSelecting previously unselected package libqt6keychain1:amd64.\r\nPreparing to unpack .../14-libqt6keychain1_0.15.0-2_amd64.deb ...\r\nUnpacking libqt6keychain1:amd64 (0.15.0-2) ...\r\nSelecting previously unselected package kate.\r\nPreparing to unpack .../15-kate_4%3a25.12.3-0ubuntu1_amd64.deb ...\r\nUnpacking kate (4:25.12.3-0ubuntu1) ...\r\nSelecting previously unselected package libhfstospell11:amd64.\r\nPreparing to unpack .../16-libhfstospell11_0.5.4-1build5_amd64.deb ...\r\nUnpacking libhfstospell11:amd64 (0.5.4-1build5) ...\r\nSelecting previously unselected package libpam-gnome-keyring:amd64.\r\nPreparing to unpack .../17-libpam-gnome-keyring_50.0-1_amd64.deb ...\r\nUnpacking libpam-gnome-keyring:amd64 (50.0-1) ...\r\nSelecting previously unselected package libvoikko1:amd64.\r\nPreparing to unpack .../18-libvoikko1_4.3.3-1_amd64.deb ...\r\nUnpacking libvoikko1:amd64 (4.3.3-1) ...\r\nSelecting previously unselected package sonnet6-plugins:amd64.\r\nPreparing to unpack .../19-sonnet6-plugins_6.24.0-0ubuntu1_amd64.deb ...\r\nUnpacking sonnet6-plugins:amd64 (6.24.0-0ubuntu1) ...\r\nSetting up libkf6texteditor-katepart (6.24.0-0ubuntu1) ...\r\nSetting up libgck-2-2:amd64 (4.4.0.1-8) ...\r\nSetting up libgcr-4-4:amd64 (4.4.0.1-8) ...\r\nSetting up p11-kit-modules:amd64 (0.26.2-2) ...\r\nSetting up kate-data (4:25.12.3-0ubuntu1) ...\r\nSetting up libqt6keychain1:amd64 (0.15.0-2) ...\r\nSetting up kate (4:25.12.3-0ubuntu1) ...\r\nSetting up gnome-keyring-pkcs11:amd64 (50.0-1) ...\r\nSetting up p11-kit (0.26.2-2) ...\r\nSetting up libgck-1-0:amd64 (3.41.2-6) ...\r\nSetting up libgcr-base-3-1:amd64 (3.41.2-6) ...\r\nSetting up libpam-gnome-keyring:amd64 (50.0-1) ...\r\nSetting up libhfstospell11:amd64 (0.5.4-1build5) ...\r\nSetting up libvoikko1:amd64 (4.3.3-1) ...\r\nSetting up libgcr-ui-3-1:amd64 (3.41.2-6) ...\r\nSetting up sonnet6-plugins:amd64 (6.24.0-0ubuntu1) ...\r\nSetting up gcr (3.41.2-6) ...\r\nProcessing triggers for libc-bin (2.43-2ubuntu2.4) ...\r\nProcessing triggers for man-db (2.13.1-1build1) ...\r\nProcessing triggers for libglib2.0-0t64:amd64 (2.88.0-1ubuntu0.1) ...\r\nSetting up pinentry-gnome3 (1.3.2-3ubuntu1) ...\r\nProcessing triggers for shared-mime-info (2.4-5build3) ...\r\nProcessing triggers for desktop-file-utils (0.28-1build1) ...\r\nProcessing triggers for hicolor-icon-theme (0.18-2build1) ...\r\nSetting up gnome-keyring (50.0-1) ...\r\nCreated symlink '/etc/systemd/user/graphical-session-pre.target.wants/gnome-keyring-daemon.service' \u2192 '/usr/lib/systemd/user/gnome-keyring-daemon.service'.\r\nCreated symlink '/etc/systemd/user/sockets.target.wants/gnome-keyring-daemon.socket' \u2192 '/usr/lib/systemd/user/gnome-keyring-daemon.socket'.\r\nSetting up gcr4 (4.4.0.1-8) ...\r\nCreated symlink '/etc/systemd/user/graphical-session-pre.target.wants/gcr-ssh-agent.service' \u2192 '/usr/lib/systemd/user/gcr-ssh-agent.service'.\r\nCreated symlink '/etc/systemd/user/sockets.target.wants/gcr-ssh-agent.socket' \u2192 '/usr/lib/systemd/user/gcr-ssh-agent.socket'.\r\n\nRunning kernel seems to be up-to-date.\n\nNo services need to be restarted.\n\nNo containers need to be restarted.\n\nNo user sessions are running outdated binaries.\n\nNo VM guests are running outdated hypervisor (qemu) binaries on this host.\n",
+    "returncode": 0,
+    "schemaVersion": 1,
+    "truncated": false
+  },
+  "diagnosticMetadata": {
+    "mode": "0o600",
+    "sha256": "b8645a107acc7dd22a3adc8b89c7a805049a2ca32aa162d82559c09749eb9e9a",
+    "size": 9646,
+    "uid": 0
+  },
+  "guiAcceptanceComplete": false,
+  "publishedAccepted": false
+}

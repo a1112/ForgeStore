@@ -1,0 +1,65 @@
+{
+  "kind": "read-only network diagnosis",
+  "recordedAtUTC": "2026-10-05T13:20:49Z",
+  "observed": {
+    "guestMTU": 1500,
+    "outerMTU": 1500,
+    "guestRoute": "SLIRP 10.0.2.2",
+    "outerIPv6DefaultRoute": false,
+    "sameOfficialKateIPv4AddressesTested": [
+      "185.125.190.81",
+      "91.189.92.24"
+    ],
+    "guestRange1MiBSeconds": 5.88,
+    "guestRange1MiBBytesPerSecond": 178330.0,
+    "outerDefaultHTTPSFailure": "TLS handshake timeout; 0 bytes",
+    "IPv6Both": "ENETUNREACH immediately",
+    "fixedIPv4TLSBoth": "TLSv1.3 with hostname certificate verification and SNI; both 64KiB ranges succeeded",
+    "flatpakProgress": {
+      "pid": 26730,
+      "elapsedSeconds": 412,
+      "activeTCPBytesBefore": 21648037,
+      "activeTCPBytesAfter": 21765133,
+      "sampleSeconds": 3.014,
+      "deltaBytes": 117096,
+      "repositoryBytes": 40661869
+    },
+    "urllibProxyEnvironmentBoth": "no configured proxies",
+    "OpenSSLBoth": "OpenSSL 3.5.5 27 Jan 2026"
+  },
+  "inference": {
+    "supported": "Variable low throughput or transient TLS stalls on the shared external path/upstream; guest-only SLIRP bottleneck is not supported by same-IP samples (guest was faster than outer).",
+    "notDemonstrated": [
+      "MTU black hole",
+      "permanent TLS/certificate incompatibility",
+      "IPv6 120-second stall",
+      "frozen Flatpak child"
+    ],
+    "limit": "Cannot distinguish CDN/upstream limiting from the shared Windows/outer WAN transport using these bounded samples alone. Guest TCP RTT is synthetic through SLIRP; outer TCP measurements are the relevant WAN leg."
+  },
+  "changesPerformed": [],
+  "receipts": {
+    "ubuntu-https-network-guest.json": {
+      "sha256": "f84abb185e3a8baf1194fccf3f1609cf44091af3f9519407371b89b7db4c36ea"
+    },
+    "ubuntu-https-network-outer.json": {
+      "sha256": "cbd1f4d1f47c43a0cd267394d4dd20e74d487fea91d41c1167e3686cf8182fab"
+    },
+    "ubuntu-https-family-guest.json": {
+      "sha256": "d44110e8febaef6b64a8cba462cdf94c52d55b6410b230e506c98162c2bd8689"
+    },
+    "ubuntu-https-family-outer.json": {
+      "sha256": "0978d33217e62337a8adeff6513d62f70f2a27bedd38b74128a706506b83bf65"
+    },
+    "ubuntu-flatpak-network-progress-readonly.json": {
+      "sha256": "fc23eec7a4306034362450c12e138d9ec88f2e1c3bd1c3f3d0bf915365e6c3c7"
+    },
+    "ubuntu-https-proxy-guest.json": {
+      "sha256": "224a882358160a1ae2369ce0ab2d0dd8e90d05f4e8c5f908a26fe98fd26a0daf"
+    },
+    "ubuntu-https-proxy-outer.json": {
+      "sha256": "4ad0af9d1533df3cbcf553a7c34b39fb63acdb6ff29c35da507abe421bfdc310"
+    }
+  },
+  "purpose": "diagnose failed guest HTTPS acquisition; not an application acceptance result"
+}

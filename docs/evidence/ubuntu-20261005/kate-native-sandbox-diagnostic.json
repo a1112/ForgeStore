@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "stage": "authorized-native-install",
+  "jobId": "a95e9234-b7c4-410c-a861-204c70d1a27c",
+  "diagnostic": {
+    "backend": "ubuntu-deb",
+    "id": "org.kde.kate",
+    "operation": "install",
+    "outputBytes": 1353,
+    "outputTail": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nSolving dependencies...\nThe following additional packages will be installed:\n  gcr gcr4 gnome-keyring gnome-keyring-pkcs11 kate-data libgck-1-0 libgck-2-2\n  libgcr-4-4 libgcr-base-3-1 libgcr-ui-3-1 libhfstospell11\n  libkf6texteditor-katepart libpam-gnome-keyring libqt6keychain1 libvoikko1\n  p11-kit p11-kit-modules pinentry-gnome3 sonnet6-plugins\nSuggested packages:\n  darcs exuberant-ctags khelpcenter mercurial subversion voikko-fi\n  pinentry-doc hspell\nThe following NEW packages will be installed:\n  gcr gcr4 gnome-keyring gnome-keyring-pkcs11 kate kate-data libgck-1-0\n  libgck-2-2 libgcr-4-4 libgcr-base-3-1 libgcr-ui-3-1 libhfstospell11\n  libkf6texteditor-katepart libpam-gnome-keyring libqt6keychain1 libvoikko1\n  p11-kit p11-kit-modules pinentry-gnome3 sonnet6-plugins\nE: seteuid 42 failed - seteuid (1: Operation not permitted)\n0 upgraded, 20 newly installed, 0 to remove and 14 not upgraded.\nNeed to get 13.0 MB of archives.\nAfter this operation, 49.0 MB of additional disk space will be used.\nE: seteuid 42 failed - seteuid (1: Operation not permitted)\nE: Method gave invalid 400 URI Failure message: Failed to set new user ids - setresuid (1: Operation not permitted)\nE: Method https has died unexpectedly!\nE: Sub-process https returned an error code (112)\n",
+    "returncode": 100,
+    "schemaVersion": 1,
+    "truncated": false
+  },
+  "diagnosticMetadata": {
+    "mode": "0o600",
+    "sha256": "26c93795071e99d3b4b63f674020a67d7e4ed8f8a24d08973ba70e2fac00f18d",
+    "size": 1532,
+    "uid": 0
+  },
+  "installedKate": false,
+  "dpkgAuditClean": true,
+  "nativeRecords": [
+    {
+      "requestId": "596e48b5-45ce-42e4-8947-ffd035fdebce",
+      "state": "complete",
+      "ok": false,
+      "errorCode": "native_failed"
+    },
+    {
+      "requestId": "a95e9234-b7c4-410c-a861-204c70d1a27c",
+      "state": "complete",
+      "ok": false,
+      "errorCode": "native_failed"
+    }
+  ],
+  "privateReadbackSha256": "4907a8a37306b9d08579766f2b1e50c58ea277b9aa3d58db63783b827a70d040"
+}

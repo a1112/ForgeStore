@@ -34,3 +34,8 @@ catalogue/candidate-v19/tuf/targets/*.json -text whitespace=cr-at-eol
 
 docs/evidence/windows-jpegview-20261003.acceptance.json -text
 catalogue/candidate-v20/tuf/targets/*.json -text whitespace=cr-at-eol
+
+# Preserve recorded Ubuntu evidence bytes used by the signed acceptance manifest.
+docs/evidence/ubuntu-20261005/*.json -text whitespace=cr-at-eol
+catalogue/ubuntu-candidate-v2/tuf/targets/*.json -text whitespace=cr-at-eol
+catalogue/ubuntu-accepted-v3/tuf/targets/*.json -text whitespace=cr-at-eol

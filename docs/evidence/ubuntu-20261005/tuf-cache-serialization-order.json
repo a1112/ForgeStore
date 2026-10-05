@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "runtimeProfile": "ubuntu-26.04",
+  "classification": "serialization-order-only",
+  "applicationAcceptanceEvidence": false,
+  "rawCacheBytesUnchanged": false,
+  "signedMetadataAndSignaturesUnchanged": true,
+  "trustedRootPinUnchanged": true,
+  "trustedRoot": {
+    "version": 1,
+    "sha256": "80407a2440177841da7fbd3e02a4757cc071ec49100d5d0762da58034be2831a",
+    "channel": "ubuntu-candidate-v2"
+  },
+  "method": {
+    "readOnly": true,
+    "source": "Saved restart byte-hash readbacks and parsed post-restart cache metadata, independently compared with the pinned public metadata including signatures.",
+    "exactReproduction": "Preserve all JSON values, signatures and other object orders. Enumerate only signed.roles for root.json and signed.targets for targets.json; serialize compact UTF-8 JSON. Both recorded before and after SHA256 values are reproduced exactly.",
+    "beforeAndAfterContentProof": "The same complete parsed document reproduces both historical byte hashes by changing only the specified object order. No key, role, version, expiry, target binding or signature value changes are needed.",
+    "scope": "This validates the cache reserialization explanation. It does not count an application as installed, GUI accepted or published."
+  },
+  "changedFiles": [
+    {
+      "file": "root.json",
+      "field": "signed.roles",
+      "permutationsTried": 24,
+      "beforeOrder": ["root", "timestamp", "targets", "snapshot"],
+      "afterOrder": ["targets", "snapshot", "root", "timestamp"],
+      "beforeSha256": "a30fe09de80558815a2bfa3c9613fec9e7f684db507a30b9e040f31b028ed5f7",
+      "afterSha256": "6e1d700cd95e29046bea99e80a10a3ab951abaaa181cbfa40773d12447f999fb",
+      "bothExactHashesReproduced": true,
+      "allFieldValuesAndSignaturesUnchanged": true
+    },
+    {
+      "file": "targets.json",
+      "field": "signed.targets",
+      "permutationsTried": 2,
+      "beforeOrder": ["kate_25.12.3-0ubuntu1_amd64.deb", "catalogue.json"],
+      "afterOrder": ["catalogue.json", "kate_25.12.3-0ubuntu1_amd64.deb"],
+      "beforeSha256": "06794eb5fd4fa0a8a1692d61f4605f113d2489a87f02321c74294ade108d7d26",
+      "afterSha256": "0d3c1d97e242074f04304b78bc13061c12ecf9dbd69258dd7a3de53ada94d1a7",
+      "bothExactHashesReproduced": true,
+      "allFieldValuesAndSignaturesUnchanged": true
+    }
+  ],
+  "unchangedFiles": [
+    {
+      "file": "timestamp.json",
+      "beforeAndAfterSha256": "9e8bdd71e5b493717935c3bbb76c16e9e61e632f51248de9aea25b0271a2ea4e",
+      "version": 2
+    },
+    {
+      "file": "snapshot.json",
+      "beforeAndAfterSha256": "f3cb102c9c57e4db68da61a9e57282829026290113f5b8d7da6d9b62262ba3b4",
+      "version": 2
+    }
+  ],
+  "dependencySourceReview": {
+    "crate": "tough",
+    "version": "0.24.0",
+    "cargoLockChecksum": "35b378d98765c2ae9cdc3e9963ea7e670da8cdd9ee39611b8d722083c7f1ac11",
+    "references": [
+      {
+        "path": "tough-0.24.0/src/datastore.rs",
+        "line": 63,
+        "finding": "Datastore.create serializes the parsed metadata using serde_json::to_vec, rather than preserving fetched raw bytes or sorting map keys."
+      },
+      {
+        "path": "tough-0.24.0/src/schema/mod.rs",
+        "line": 164,
+        "finding": "Root.roles is a HashMap."
+      },
+      {
+        "path": "tough-0.24.0/src/schema/mod.rs",
+        "line": 405,
+        "finding": "Targets.targets is a HashMap."
+      },
+      {
+        "path": "tough-0.24.0/src/lib.rs",
+        "line": 825,
+        "finding": "load_root rewrites root.json even when the trusted root version does not advance."
+      },
+      {
+        "path": "tough-0.24.0/src/lib.rs",
+        "line": 1283,
+        "finding": "load_targets writes the parsed targets after checking the fetched hash, signature, version and expiry."
+      },
+      {
+        "path": "tough-0.24.0/src/schema/verify.rs",
+        "line": 18,
+        "finding": "Signature verification uses OLPC CanonicalFormatter with sorted object keys; cache serialization order does not change the signed content."
+      }
+    ]
+  }
+}

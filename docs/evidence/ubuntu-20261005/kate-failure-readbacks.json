@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "runtimeProfile": "ubuntu-26.04",
+  "records": [
+    {
+      "privateReadbackSha256": "9e09e415343423d99124285d52076cc0001e9b8136d5e6217dd67d9e4b1c05c2",
+      "jobs": [
+        {
+          "action": "install",
+          "appId": "org.kde.kate",
+          "backend": "ubuntu-deb",
+          "detail": "file operation: error decoding response body",
+          "id": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+          "nativePending": false,
+          "state": "failed"
+        }
+      ],
+      "installed": []
+    },
+    {
+      "privateReadbackSha256": "ced8bdd163e4ef9f004cb2f302e293f10a8c6392f6742fa62bf46d0e67cd9899",
+      "jobs": [
+        {
+          "action": "install",
+          "appId": "org.kde.kate",
+          "backend": "ubuntu-deb",
+          "detail": "file operation: error decoding response body",
+          "id": "f4910d08-53dd-4cb1-85e7-105fb95f3bd7",
+          "nativePending": false,
+          "state": "failed"
+        },
+        {
+          "action": "install",
+          "appId": "org.kde.kate",
+          "backend": "ubuntu-deb",
+          "detail": "Native provider terminal failure: native_failed: native transaction failed; inspect upstream package state",
+          "id": "596e48b5-45ce-42e4-8947-ffd035fdebce",
+          "nativePending": false,
+          "state": "failed"
+        }
+      ],
+      "installed": []
+    }
+  ],
+  "downloadRecovery": {
+    "method": "seed exact independently verified official bytes into ordinary-user private VerifiedCache",
+    "sha256": "a0f42af31e4bc1fa2d449029b3eb8229f822c236f90dc54950b130a575ca03aa",
+    "size": 2749472,
+    "guestOnlineDownloadPassed": false
+  },
+  "authorization": {
+    "realPolkitDialog": true,
+    "existingCredentialSubmitted": true,
+    "credentialRecorded": false
+  },
+  "acceptedApps": 0
+}
