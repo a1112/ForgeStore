@@ -1,0 +1,33 @@
+{
+  "bottleId": "gui-tuxpaint",
+  "category": "graphics",
+  "compatibilityRating": "unknown",
+  "id": "tuxpaint",
+  "installer": {
+    "arguments": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART"
+    ],
+    "fileName": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+    "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c"
+  },
+  "launchers": [
+    {
+      "arguments": [
+        "--windowed"
+      ],
+      "executable": "Program Files/TuxPaint/tuxpaint.exe",
+      "id": "main",
+      "name": "Tux Paint"
+    }
+  ],
+  "name": "Tux Paint",
+  "publisher": "The Tux Paint Development Team",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000",
+    "managed-inno"
+  ],
+  "version": "0.9.35-3"
+}

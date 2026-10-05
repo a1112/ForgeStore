@@ -195,6 +195,17 @@
       "publication": "docs/evidence/2026-10-05-dia-publication.json",
       "report": "docs/windows-rolling-20261005-dia.md",
       "limitation": "Controlled Chinese input GUI open/add node and edge/native save/SVG export/fresh reopen, verified-cache same-version market update, rollback/native reopen and service restart passed. Chinese direct typing/clipboard, SVG external rendering, user-data migration, fresh-machine registration, online guest download, cross-version upgrade and full bundled-component source/redistribution audit unverified."
+    },
+    {
+      "id": "tuxpaint",
+      "version": "0.9.35-3",
+      "observedGuiVersion": "0.9.35",
+      "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c",
+      "evidence": "docs/evidence/windows-tuxpaint-20261005.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v22/tuf",
+      "publication": "docs/evidence/2026-10-05-tuxpaint-publication.json",
+      "report": "docs/windows-rolling-20261005-tuxpaint.md",
+      "limitation": "Controlled manual Paint/Undo/Redo/Save/native PNG/full pixel equality/fresh gallery reopen, verified-cache same-version market update into independent empty user data, original rollback/gallery reopen and service restart passed. Chinese text/filenames, stamps/labels/other tools/export/printing, user-data migration, fresh registration, online guest download, cross-version upgrade and full source/component/redistribution audit unverified. Failed first install retained."
     }
   ],
   "queue": [
@@ -347,12 +358,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select another uncompleted distinct application with verifiable fixed official installer, license and source. Preserve 11 blocked candidates including OpenSCAD Chinese STL filename failure; do not count them.",
+  "next": "Select next uncompleted distinct application with verifiable fixed official installer/license/source. Preserve 11 blocked candidates, including OpenSCAD Chinese STL filename failure; do not count them. AC display dimming/off now disabled; authentication/automatic lock unchanged.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-05",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 21,
+    "acceptedLocalMarket": 22,
     "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -360,15 +371,15 @@
     "pendingCandidates": 11
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v21/tuf",
-    "metadataVersion": 30,
-    "catalogueEntries": 23,
-    "acceptedDistinctWindowsApps": 21,
+    "signedCatalogue": "catalogue/candidate-v22/tuf",
+    "metadataVersion": 31,
+    "catalogueEntries": 24,
+    "acceptedDistinctWindowsApps": 22,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-05-dia-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-05-tuxpaint-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261005-dia.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261005-tuxpaint.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",

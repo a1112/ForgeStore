@@ -1,0 +1,961 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "applicationId": "tuxpaint",
+  "restartedCoreAndStore": true,
+  "allCoreJobsTerminal": true,
+  "coreJobCount": 170,
+  "previous162CoreJobsUnchanged": true,
+  "storeRowCount": 61,
+  "previous59FullStoreRowsUnchanged": true,
+  "fullStoreRowsSha256": "b5cbfc7ae589c9147f07fe67381c5b782cf465c57a15139203a561b831165499",
+  "historicalInterruptedStoreJobs": [],
+  "allPreexistingCoreConfigBytesAndGenerationsPreserved": true,
+  "fullRestartSnapshotStatePreserved": true,
+  "tufDocumentsIncludingSignaturesPreservedAcrossRestart": true,
+  "public26SignedFilesBytePreserved": true,
+  "latestKnownTime": {
+    "before": "2026-10-05T09:18:16.06275223Z",
+    "after": "2026-10-05T09:30:59.074485034Z",
+    "monotonic": true
+  },
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "timestamp": 31,
+    "snapshot": 31,
+    "targets": 31
+  },
+  "catalogueEntries": 24,
+  "installed": {
+    "appId": "tuxpaint",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "0.9.35-3"
+  },
+  "selectedGeneration": "gen-job-1791190704821-2",
+  "readyGenerations": 2,
+  "retainedFailedGenerations": 1,
+  "generations": {
+    "applicationId": "tuxpaint",
+    "generations": [
+      {
+        "bottleId": "gen-job-1791190499337-1",
+        "createdAtMilliseconds": 1791190499350,
+        "definition": {
+          "bottleId": "gui-tuxpaint",
+          "category": "graphics",
+          "compatibilityRating": "unknown",
+          "id": "tuxpaint",
+          "installer": {
+            "arguments": [
+              "/VERYSILENT",
+              "/SUPPRESSMSGBOXES",
+              "/NORESTART",
+              "/DIR=C:\\TuxPaint"
+            ],
+            "fileName": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+            "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c"
+          },
+          "launchers": [
+            {
+              "arguments": [
+                "--windowed"
+              ],
+              "executable": "TuxPaint/tuxpaint.exe",
+              "id": "main",
+              "name": "Tux Paint"
+            }
+          ],
+          "name": "Tux Paint",
+          "publisher": "The Tux Paint Development Team",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000",
+            "managed-inno"
+          ],
+          "version": "0.9.35-3"
+        },
+        "definitionDigest": "sha256:56b933205138ef3eb5672ad26466f482dc520826007cf08d3d9fafdf6aa6c5dd",
+        "error": "registry I/O failed: No such file or directory (os error 2)",
+        "id": "gen-job-1791190499337-1",
+        "launcherDigests": {},
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "failed",
+        "updatedAtMilliseconds": 1791190520836
+      },
+      {
+        "bottleId": "gen-job-1791190704821-2",
+        "createdAtMilliseconds": 1791190704827,
+        "definition": {
+          "bottleId": "gui-tuxpaint",
+          "category": "graphics",
+          "compatibilityRating": "unknown",
+          "id": "tuxpaint",
+          "installer": {
+            "arguments": [
+              "/VERYSILENT",
+              "/SUPPRESSMSGBOXES",
+              "/NORESTART"
+            ],
+            "fileName": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+            "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c"
+          },
+          "launchers": [
+            {
+              "arguments": [
+                "--windowed"
+              ],
+              "executable": "Program Files/TuxPaint/tuxpaint.exe",
+              "id": "main",
+              "name": "Tux Paint"
+            }
+          ],
+          "name": "Tux Paint",
+          "publisher": "The Tux Paint Development Team",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000",
+            "managed-inno"
+          ],
+          "version": "0.9.35-3"
+        },
+        "definitionDigest": "sha256:956e31aa1c03ce7856f271eddf6af57c57be5edfa1682c7c5eacdc8da10f4e56",
+        "id": "gen-job-1791190704821-2",
+        "launcherDigests": {
+          "main": "sha256:29d4bc7e902c5ce8c203c941e71b4e440e29cf469d88ec1c62bdf40c036e5344"
+        },
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "ready",
+        "updatedAtMilliseconds": 1791190723318
+      },
+      {
+        "bottleId": "gen-job-1791191897688-5",
+        "createdAtMilliseconds": 1791191897694,
+        "definition": {
+          "bottleId": "gui-tuxpaint",
+          "category": "graphics",
+          "compatibilityRating": "unknown",
+          "id": "tuxpaint",
+          "installer": {
+            "arguments": [
+              "/VERYSILENT",
+              "/SUPPRESSMSGBOXES",
+              "/NORESTART"
+            ],
+            "fileName": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+            "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c"
+          },
+          "launchers": [
+            {
+              "arguments": [
+                "--windowed"
+              ],
+              "executable": "Program Files/TuxPaint/tuxpaint.exe",
+              "id": "main",
+              "name": "Tux Paint"
+            }
+          ],
+          "name": "Tux Paint",
+          "publisher": "The Tux Paint Development Team",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000",
+            "managed-inno"
+          ],
+          "version": "0.9.35-3"
+        },
+        "definitionDigest": "sha256:956e31aa1c03ce7856f271eddf6af57c57be5edfa1682c7c5eacdc8da10f4e56",
+        "id": "gen-job-1791191897688-5",
+        "launcherDigests": {
+          "main": "sha256:29d4bc7e902c5ce8c203c941e71b4e440e29cf469d88ec1c62bdf40c036e5344"
+        },
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "ready",
+        "updatedAtMilliseconds": 1791191915818
+      }
+    ],
+    "recoveryCapability": "kernel-boot-identity",
+    "schemaVersion": "1",
+    "selectedGeneration": "gen-job-1791190704821-2"
+  },
+  "outputs": {
+    "original": {
+      "generationId": "gen-job-1791190704821-2",
+      "files": {
+        "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005090145.png": {
+          "sizeBytes": 3019,
+          "sha256": "13b90710899d4d1c9be97b1446d743000f1ded0ab62c8b6cd6e1b35d20c13322"
+        },
+        "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/.thumbs/20261005090145-t.png": {
+          "sizeBytes": 654,
+          "sha256": "0cf1a097f19aa9b6a566380ec003610f1b0add465d6c025628979063ebbdee70"
+        }
+      },
+      "pixelVerification": {
+        "generationId": "gen-job-1791190704821-2",
+        "relativeFile": "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005090145.png",
+        "sizeBytes": 3019,
+        "sha256": "13b90710899d4d1c9be97b1446d743000f1ded0ab62c8b6cd6e1b35d20c13322",
+        "width": 608,
+        "height": 472,
+        "decodedRgbSha256": "f0f9caa1224c90ce84be3ab6c0934412aa2d7a7772e2b7cb0a7a8980ebeabef1",
+        "colorCounts": {
+          "255,255,255": 284972,
+          "0,0,0": 1068,
+          "255,0,0": 936
+        },
+        "marks": {
+          "black": {
+            "pixels": 1068,
+            "bounds": [
+              96,
+              134,
+              256,
+              331
+            ]
+          },
+          "red": {
+            "pixels": 936,
+            "bounds": [
+              200,
+              155,
+              511,
+              157
+            ]
+          }
+        },
+        "format": {
+          "bitDepth": 8,
+          "colorType": 2,
+          "interlaced": true,
+          "chunks": [
+            "IHDR",
+            "sRGB",
+            "gAMA",
+            "cHRM",
+            "tEXt",
+            "IDAT",
+            "IEND"
+          ],
+          "allChunkCrcsValid": true,
+          "allAdam7PixelsDecoded": true
+        },
+        "notBlank": true,
+        "guiUndoAndRedoObserved": true,
+        "backendGeneratedOutput": false,
+        "expectedRgbSha256": "f0f9caa1224c90ce84be3ab6c0934412aa2d7a7772e2b7cb0a7a8980ebeabef1",
+        "differentPixels": 0,
+        "allPixelsMatchManuallyDrawnThreePixelStrokes": true,
+        "expectedGeometry": {
+          "blackVertical": [
+            96,
+            134,
+            98,
+            331
+          ],
+          "blackHorizontal": [
+            96,
+            329,
+            256,
+            331
+          ],
+          "redHorizontal": [
+            200,
+            155,
+            511,
+            157
+          ],
+          "background": [
+            255,
+            255,
+            255
+          ]
+        }
+      },
+      "explicitFreshProcessGalleryReopenObserved": true
+    },
+    "updated": {
+      "generationId": "gen-job-1791191897688-5",
+      "files": {
+        "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005092143.png": {
+          "sizeBytes": 3022,
+          "sha256": "e54c7e2adb28a0e44a55033f72e1c00b029c8353f69f11887aa7729ee9a136b3"
+        },
+        "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/.thumbs/20261005092143-t.png": {
+          "sizeBytes": 590,
+          "sha256": "91f7924fdaa29a4f906a26745b9143888e72a693a096b7297384fef1ab86745b"
+        }
+      },
+      "pixelVerification": {
+        "generationId": "gen-job-1791191897688-5",
+        "relativeFile": "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005092143.png",
+        "sizeBytes": 3022,
+        "sha256": "e54c7e2adb28a0e44a55033f72e1c00b029c8353f69f11887aa7729ee9a136b3",
+        "width": 608,
+        "height": 472,
+        "decodedRgbSha256": "fa97c226f344ca82cf4afefd8bb67f10fa1a2f927040e323de531dda4132fd42",
+        "expectedRgbSha256": "fa97c226f344ca82cf4afefd8bb67f10fa1a2f927040e323de531dda4132fd42",
+        "differentPixels": 0,
+        "colorCounts": {
+          "255,255,255": 285446,
+          "160,228,128": 594,
+          "50,100,255": 936
+        },
+        "format": {
+          "bitDepth": 8,
+          "colorType": 2,
+          "interlaced": true,
+          "chunks": [
+            "IHDR",
+            "sRGB",
+            "gAMA",
+            "cHRM",
+            "tEXt",
+            "IDAT",
+            "IEND"
+          ],
+          "allChunkCrcsValid": true,
+          "allAdam7PixelsDecoded": true
+        },
+        "allPixelsMatchManuallyDrawnThreePixelStrokes": true,
+        "expectedGeometry": {
+          "lightGreenVertical": [
+            96,
+            134,
+            98,
+            331
+          ],
+          "blueHorizontal": [
+            200,
+            155,
+            511,
+            157
+          ],
+          "background": [
+            255,
+            255,
+            255
+          ]
+        },
+        "paletteBasis": {
+          "sourceArchive": "tuxpaint-0.9.35.tar.gz",
+          "archivePath": "tuxpaint-0.9.35/src/colors.h",
+          "sha256": "7cf2f01a203226669d8b598b92645e4150c7bf4c59d60bc1fd902b5389aa8a84",
+          "lightGreen": [
+            160,
+            228,
+            128
+          ],
+          "blue": [
+            50,
+            100,
+            255
+          ]
+        },
+        "backendGeneratedOutput": false,
+        "independentUpdatedGenerationOutput": true
+      },
+      "freshGalleryReopenObserved": true
+    }
+  },
+  "inputOutputLauncherAndLicensePinsPreserved": true,
+  "originalRollbackExplicitGalleryReopenObserved": true,
+  "coreJobs": [
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 38407,
+          "requestId": "job-1791192543868-8",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 104331,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791190704821-2/prefix",
+          "requestId": "job-1791192543868-8",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 104373,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791192543868-8",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791190704821-2",
+      "id": "job-1791192543868-8",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 37896,
+          "requestId": "job-1791192273561-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 140900,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791191897688-5/prefix",
+          "requestId": "job-1791192273561-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 140942,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791192273561-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791191897688-5",
+      "id": "job-1791192273561-7",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 37469,
+          "requestId": "job-1791191961455-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 213657,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791191897688-5/prefix",
+          "requestId": "job-1791191961455-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 213699,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791191961455-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791191897688-5",
+      "id": "job-1791191961455-6",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 37171,
+          "requestId": "job-1791191897688-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 9166,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791191897688-5/prefix",
+          "requestId": "job-1791191897688-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 9208,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791191897688-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791191897688-5",
+      "id": "job-1791191897688-5",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 36409,
+          "requestId": "job-1791191516109-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 79747,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791190704821-2/prefix",
+          "requestId": "job-1791191516109-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 79790,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791191516109-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791190704821-2",
+      "id": "job-1791191516109-4",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 35787,
+          "requestId": "job-1791190778738-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 730980,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791190704821-2/prefix",
+          "requestId": "job-1791190778738-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 731022,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791190778738-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791190704821-2",
+      "id": "job-1791190778738-3",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 35558,
+          "requestId": "job-1791190704821-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 9023,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791190704821-2/prefix",
+          "requestId": "job-1791190704821-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 9065,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791190704821-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791190704821-2",
+      "id": "job-1791190704821-2",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "tuxpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 35216,
+          "requestId": "job-1791190499337-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 8907,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791190499337-1/prefix",
+          "requestId": "job-1791190499337-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 8948,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791190499337-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791190499337-1",
+      "id": "job-1791190499337-1",
+      "kind": "install",
+      "status": "failed"
+    }
+  ],
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "tuxpaint",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "62c01376-87ac-4904-9b33-bd0a56f55c38",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "tuxpaint",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "10c888c5-348d-4850-9cca-d07d4fa3026b",
+      "state": "succeeded"
+    }
+  },
+  "components": {
+    "compatforge.service": {
+      "binary": "compatforge-cli-managed-msi-v10",
+      "sha256": "feaad5a5010fbf1506f2e4771bb7677345ccbba757b5d4aa97b65be2b502ce0a"
+    },
+    "forge-store.service": {
+      "binary": "forge-store-service-managed-msi-v2",
+      "sha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f"
+    }
+  },
+  "serviceGuards": {
+    "compatforge.service": [],
+    "forge-store.service": [
+      "NoNewPrivileges=yes",
+      "ProtectSystem=full",
+      "PrivateTmp=yes"
+    ]
+  },
+  "readinessRetries": {
+    "core": 0,
+    "store": 0
+  },
+  "published": true,
+  "countsAsCompleted": true,
+  "bootId": "3d9454c0-7f84-4df4-aad3-9525b5a89648",
+  "powerConfigAfterServiceRestart": {
+    "text": "[AC][Display]\nDimDisplayIdleTimeoutSec=-1\nDimDisplayWhenIdle=false\nTurnOffDisplayIdleTimeoutSec=-1\nTurnOffDisplayWhenIdle=false\n",
+    "sha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+    "screenLockConfigStillAbsent": true,
+    "coldBootAndLongIdleTimingNotYetObserved": true
+  },
+  "version": "0.9.35-3",
+  "observedGuiVersion": "0.9.35",
+  "countDistinctWindowsApps": 1,
+  "acceptanceReceiptSha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+  "signedCatalogue": "catalogue/candidate-v22/tuf",
+  "catalogue26FilesSha256": {
+    "tuf/metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "tuf/metadata/31.snapshot.json": "70daa6df665a9ebb41a86838e917da95d573373f19d91dd8783023f412425d44",
+    "tuf/metadata/31.targets.json": "b9d31541c37c66ec65da9a485e97016eaf44c7cd9c6fcd29fc3e77a046e9e480",
+    "tuf/metadata/timestamp.json": "0d2b8318e2853b7124866c2356ba56d85a32c9fba35686d142d223d5570877f7",
+    "tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+    "tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+    "tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+    "tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+    "tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+    "tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+    "tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+    "tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+    "tuf/targets/5326909f040264e84b1f7012fe307e2b509a031a589a40c7d6f47a9289624941.catalogue.json": "5326909f040264e84b1f7012fe307e2b509a031a589a40c7d6f47a9289624941",
+    "tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+    "tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+    "tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+    "tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+    "tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+    "tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+    "tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+    "tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+    "tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+    "tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+    "tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+    "tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+    "tuf/trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+  },
+  "activation": {
+    "activated": true,
+    "metadataVersion": 31,
+    "catalogueEntries": 24,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "originalCoreJobsPreserved": true,
+    "coreJobs": 166,
+    "fullStoreRowsPreserved": true,
+    "storeRows": 59,
+    "previousInstalledAndEntriesPreserved": true,
+    "tuxpaintEntry": {
+      "compatibility": {
+        "evidence": "windows-tuxpaint-20261005.acceptance.json#tuxpaint",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c",
+          "size": 50412612,
+          "target": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+          "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.35/tuxpaint-0.9.35-3-windows-x86_64-installer.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "tuxpaint"
+      },
+      "id": "tuxpaint",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "Tux Paint",
+        "zhCN": "Tux Paint"
+      },
+      "origin": "https://tuxpaint.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Tux Paint Development Team",
+      "summary": {
+        "en": "Drawing program for children",
+        "zhCN": "儿童绘画与创作工具"
+      },
+      "version": "0.9.35-3"
+    },
+    "tuxpaintInstalled": {
+      "appId": "tuxpaint",
+      "backend": "compatforge",
+      "canRollback": false,
+      "version": "0.9.35-3"
+    },
+    "serviceGuardsPreserved": true
+  },
+  "localSignatureVerification": {
+    "tool": "tuftool 0.17 download",
+    "exitCode": 0,
+    "trustedRoot": "catalogue/candidate-v21/tuf/trusted-root.json",
+    "downloadedAndVerifiedTargets": [
+      "catalogue.json",
+      "windows-tuxpaint-20261005.acceptance.json"
+    ],
+    "rootUnchanged": true,
+    "metadataVersion": 31
+  },
+  "screenshots": {
+    "market-paint-saved.jpg": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/market-paint-saved.jpg",
+      "sha256": "5752361cfea9336f0e2040bc93d403261abc52573557fd2b1eeb9a3bca9c4f49",
+      "sizeBytes": 30702,
+      "purpose": "GUI saved independent light-green vertical and blue horizontal drawing in the updated generation"
+    },
+    "market-reopen-gallery.jpg": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/market-reopen-gallery.jpg",
+      "sha256": "1da94475aebf10f5e397ae2ca9e6299d0f2434a64ff15fe5623ad271d6368705",
+      "sizeBytes": 31228,
+      "purpose": "Fresh-process updated-generation Open gallery with saved thumbnail"
+    },
+    "market-reopened-paint.jpg": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/market-reopened-paint.jpg",
+      "sha256": "6ce7b3e02c0cf92d66fcc6280c56c7b04386fb30a0d318455ba792f5ab73135d",
+      "sizeBytes": 31067,
+      "purpose": "Explicitly reopened updated-generation green/blue drawing"
+    },
+    "rollback-original-gallery.jpg": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/rollback-original-gallery.jpg",
+      "sha256": "f1ea41c2b44b686b7252a4d65f4d6990d2c2e2b4fa734d5760d636d7c9093c58",
+      "sizeBytes": 31251,
+      "purpose": "Rollback-selected original-generation saved black/red thumbnail"
+    },
+    "rollback-original-reopened-paint.jpg": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/rollback-original-reopened-paint.jpg",
+      "sha256": "0133e70c745f13467a62d60dfed638c9d046683da8ae1818fc6189f1ed06b432",
+      "sizeBytes": 31242,
+      "purpose": "Explicitly reopened rollback-selected original black/red drawing"
+    }
+  },
+  "nativeOutputCopies": {
+    "original-drawing.png": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/original-drawing.png",
+      "sha256": "13b90710899d4d1c9be97b1446d743000f1ded0ab62c8b6cd6e1b35d20c13322",
+      "sizeBytes": 3019,
+      "generationId": "gen-job-1791190704821-2",
+      "nativeRelativeFile": "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005090145.png",
+      "verbatimNativeOutput": true
+    },
+    "original-thumbnail.png": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/original-thumbnail.png",
+      "sha256": "0cf1a097f19aa9b6a566380ec003610f1b0add465d6c025628979063ebbdee70",
+      "sizeBytes": 654,
+      "generationId": "gen-job-1791190704821-2",
+      "nativeRelativeFile": "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/.thumbs/20261005090145-t.png",
+      "verbatimNativeOutput": true
+    },
+    "updated-drawing.png": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/updated-drawing.png",
+      "sha256": "e54c7e2adb28a0e44a55033f72e1c00b029c8353f69f11887aa7729ee9a136b3",
+      "sizeBytes": 3022,
+      "generationId": "gen-job-1791191897688-5",
+      "nativeRelativeFile": "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005092143.png",
+      "verbatimNativeOutput": true
+    },
+    "updated-thumbnail.png": {
+      "path": "docs/evidence/2026-10-05-tuxpaint/updated-thumbnail.png",
+      "sha256": "91f7924fdaa29a4f906a26745b9143888e72a693a096b7297384fef1ab86745b",
+      "sizeBytes": 590,
+      "generationId": "gen-job-1791191897688-5",
+      "nativeRelativeFile": "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/.thumbs/20261005092143-t.png",
+      "verbatimNativeOutput": true
+    }
+  },
+  "updateDelivery": "Verified installer cache; same-version reinstall into independent generation; no guest online download, cross-version upgrade or user-data migration assertion",
+  "limitations": [
+    "Manual GUI Paint draws black L and red bar; Undo removes and Redo restores the red bar. GUI Save creates a native timestamp-named PNG. Standard-library PNG CRC/Adam7 decode checks all 286976 RGB pixels against the specified three-pixel stroke geometry, with zero differences.",
+    "Normal exit and fresh managed process explicitly opens the saved thumbnail through the real Open gallery. PNG and thumbnail byte pins unchanged. Startup splash displays 0.9.35 / 2026-02-09; fixed installer package revision is 0.9.35-3.",
+    "Only controlled Paint/Undo/Redo/Save/Open PNG workflow tested. Chinese keyboard/text/filenames, stamps, labels, other tools/formats, export, printing and external raster viewers unverified.",
+    "Official package bytes pinned locally; no upstream SHA-256 match, Authenticode, reproducible build, complete bundled component audit or exact updated installer revision source audit claimed. Installed main GPL license matches fixed source.",
+    "Fresh-machine registration, guest online artifact download, cross-version upgrade and public installer redistribution unverified. Actual signed local market activation/update/rollback/restart must pass before completion is counted.",
+    "Updated generation starts with absent Tux Paint user data and manually creates a different green/blue drawing. Original failed install remains failed; both successful generations retained.",
+    "Only Core/Store services restarted this round. Power setting persisted before/after restart and ordinary locked desktop remained visible, but cold guest boot and measured long-idle display test unverified. Automatic screen locking and authentication remain unchanged.",
+    "Original PNG was independently decoded by review using Pillow as well as the standard-library CRC/Adam7 decoder; full drawing PNG bytes are publicly copied for reproducibility."
+  ]
+}

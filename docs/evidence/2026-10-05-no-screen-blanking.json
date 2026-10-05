@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "environment": "Existing isolated ForgeOS v12 KVM test guest KDE Plasma, powered desktop with no battery device",
+  "operation": "User-requested disable automatic display dimming and screen power-off, using real System Settings > Power Management > AC Display > Never and Apply",
+  "observedDefaults": {
+    "dimAfterMinutes": 5,
+    "turnOffAfterMinutes": 10
+  },
+  "beforeConfig": null,
+  "savedConfig": "[AC][Display]\nDimDisplayIdleTimeoutSec=-1\nDimDisplayWhenIdle=false\nTurnOffDisplayIdleTimeoutSec=-1\nTurnOffDisplayWhenIdle=false\n",
+  "screenLockConfigPreserved": true,
+  "powerSupplyDevices": [],
+  "powerdevilProcessId": 3857,
+  "guiApplyPersisted": true,
+  "coldBootAndLongIdleTimingNotYetObserved": true,
+  "screenShot": {
+    "path": "docs/evidence/2026-10-05-runtime/power-never-screen-off.jpg",
+    "sha256": "9f3e3b6bd1ed534a8b3077f661d220ec4fa6b3309301cd26c8d0f3f4175cccb2",
+    "sizeBytes": 24416
+  },
+  "readbackAfterCoreAndStoreServiceRestart": {
+    "text": "[AC][Display]\nDimDisplayIdleTimeoutSec=-1\nDimDisplayWhenIdle=false\nTurnOffDisplayIdleTimeoutSec=-1\nTurnOffDisplayWhenIdle=false\n",
+    "sha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+    "screenLockConfigStillAbsent": true,
+    "coldBootAndLongIdleTimingNotYetObserved": true
+  },
+  "ordinaryLockedDesktopRemainedVisibleObserved": true,
+  "automaticScreenLockAndAuthenticationUnchanged": true
+}

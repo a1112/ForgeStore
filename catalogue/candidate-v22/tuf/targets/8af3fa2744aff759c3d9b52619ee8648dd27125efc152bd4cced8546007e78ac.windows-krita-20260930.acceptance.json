@@ -1,0 +1,64 @@
+{
+  "applications": [
+    {
+      "adaptation": "Official NSIS /S install; launcher Program Files/Krita (x64)/bin/krita.exe; no application patch required.",
+      "guiFileOperation": "passed",
+      "id": "krita",
+      "inputPngSha256": "35dbdd71438a2c8ade7be27e8469926582458dc29055585f2bcce59238b9b0e7",
+      "installJobId": "job-1790748290426-23",
+      "launchJobId": "job-1790748370626-24",
+      "launcherSha256": "9fca65de8bcde9f10f65a170d04504b376624c00b0be98766b25e7226cde1f20",
+      "nativeArchive": {
+        "documentXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE DOC PUBLIC '-//KDE//DTD krita 2.0//EN' 'http://www.calligra.org/DTD/krita-2.0.dtd'>\n<DOC xmlns=\"http://www.calligra.org/DTD/krita\" kritaVersion=\"5.3.4\" editor=\"Krita\" syntaxVersion=\"2.0\">\n <IMAGE profile=\"sRGB-elle-V2-srgbtrc.icc\" height=\"256\" width=\"256\" description=\"\" x-res=\"72\" y-res=\"72\" name=\"Unnamed\" colorspacename=\"RGBA\" mime=\"application/x-kra\">\n  <layers>\n   <layer locked=\"0\" name=\"Background\" filename=\"layer2\" selected=\"true\" channelflags=\"\" intimeline=\"0\" y=\"0\" opacity=\"255\" colorspacename=\"RGBA\" nodetype=\"paintlayer\" visible=\"1\" x=\"0\" colorlabel=\"0\" onionskin=\"0\" collapsed=\"0\" uuid=\"{d33d0785-2103-4fd1-845c-ec18fab72423}\" compositeop=\"normal\" channellockflags=\"\"/>\n  </layers>\n  <ProjectionBackgroundColor ColorData=\"AAAAAA==\"/>\n  <GlobalAssistantsColor SimpleColorData=\"176,176,176,255\"/>\n  <ColorHistory/>\n  <Palettes/>\n  <resources/>\n  <animation>\n   <framerate value=\"24\" type=\"value\"/>\n   <range from=\"0\" to=\"100\" type=\"timerange\"/>\n   <currentTime value=\"0\" type=\"value\"/>\n  </animation>\n </IMAGE>\n</DOC>\n",
+        "members": [
+          "mimetype",
+          "maindoc.xml",
+          "documentinfo.xml",
+          "preview.png",
+          "Unnamed/layers/layer2",
+          "Unnamed/layers/layer2.defaultpixel",
+          "Unnamed/layers/layer2.icc",
+          "Unnamed/annotations/icc",
+          "Unnamed/animation/index.xml"
+        ],
+        "mimetype": "application/x-krita",
+        "sha256": "b60780073301354362ad1e34c8ae6f7287fd971ba78d249494b0230291512c39",
+        "sizeBytes": 31909
+      },
+      "png": {
+        "pixels": {
+          "blackPixels": 15949,
+          "height": 256,
+          "rgbSha256": "087065e23d7c767c2407527592ac03d3b674fb1d4d68640969f5d29e7ef61306",
+          "whitePixels": 48716,
+          "width": 256
+        },
+        "sha256": "9d0b661734b9b6942b9ee3f4d09ff4905c6608656b0a162a449b59fe240415ed",
+        "sizeBytes": 7339
+      },
+      "reopenJobId": "job-1790749213670-25",
+      "screenshots": {
+        "2026-09-30-krita-reopened.jpg": "3925f9b892da6653fd8d632dcb1547ab1b57c51dc683755d6b7214c405da41af",
+        "2026-09-30-krita-saved.jpg": "ee0525418e406e093ce0404de07f5007a3d16e4ab6ac8203b0d20735b383fb99"
+      },
+      "sha256": "0dd4d6f86878d42b058aa33bb2fded01c888768e6f1daa0319e5f5b5cc49e465",
+      "size": 165547784,
+      "version": "5.3.4",
+      "workflow": "Open all-white 256x256 RGB PNG, draw two black strokes in GUI, save PNG, save Krita native KRZ archive, exit and reopen KRZ via service; X painting and paint layer preserved. PNG decoded independently: 15949 black pixels, 48716 white pixels. Native archive CRC, mimetype, image dimensions and paint layer structure verified."
+    }
+  ],
+  "date": "2026-09-30",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14; UID 1000",
+  "licenseBasis": "Official release states 5.3.4 Qt5 and 6.0.4 Qt6 share source code; COPYING at shared source tag v6.0.4 is GPL v3.",
+  "licenseEvidence": [
+    "https://krita.org/en/posts/2026/krita-5.3.4-released/",
+    "https://raw.githubusercontent.com/KDE/krita/v6.0.4/COPYING"
+  ],
+  "limits": [
+    "Only single-layer mouse painting, PNG save and KRZ save/reopen tested; tablets, animation, advanced formats and cross-version upgrade unverified.",
+    "Fresh-machine recipe registration, guest online download and remote public distribution not verified.",
+    "KRZ structure validated; raw proprietary tile pixel decoding not performed.",
+    "Signed local-market lifecycle verification follows this receipt."
+  ],
+  "schemaVersion": 1
+}

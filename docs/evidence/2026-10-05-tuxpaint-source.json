@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "applicationId": "tuxpaint",
+  "version": "0.9.35-3",
+  "observedGuiVersion": "0.9.35",
+  "observedGuiVersionBasis": "Fresh-process startup splash: Version: 0.9.35 – 2026-02-09; captured startup canvas JPEG does not show that splash. Installer revision 0.9.35-3 is pinned separately.",
+  "runtimeVersionStdout": "Tux Paint Version 0.9.35- x86_64 (2026-02-09)\nRunning on Microsoft Windows 10 (Build 19045)\n",
+  "artifact": {
+    "fileName": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+    "sizeBytes": 50412612,
+    "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c",
+    "sha1": "15cebc5246f24600f36ce935638fbc2d5e10ba5c",
+    "redirected": true,
+    "sourceUrl": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.35/tuxpaint-0.9.35-3-windows-x86_64-installer.exe"
+  },
+  "officialWindowsDownloadPage": "https://tuxpaint.org/download/windows/",
+  "sourceArchive": {
+    "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.35/tuxpaint-0.9.35.tar.gz",
+    "fileName": "tuxpaint-0.9.35.tar.gz",
+    "sizeBytes": 25674042,
+    "sha256": "c1c18af91be77e94fdaab2c928204c4c39ba39ac5da2f441aaf2ecab6d8bd0ad",
+    "sha1": "9e9ab312abb947cdcfc5bc0efd193122624b0ded",
+    "redirected": true
+  },
+  "sourceFiles": [
+    {
+      "archivePath": "tuxpaint-0.9.35/docs/COPYING.txt",
+      "sha256": "a1615a051f4bfcda0ae29cf608bb5c50a9f156267ce21be79aad308eadb29db6",
+      "sizeBytes": 18482
+    },
+    {
+      "archivePath": "tuxpaint-0.9.35/src/tuxpaint.c",
+      "sha256": "306299a0d427ab4b62f3ef31fafbc6134bad440c96952328b81ea7fb5cf63933",
+      "sizeBytes": 981372
+    },
+    {
+      "archivePath": "tuxpaint-0.9.35/win32/tuxpaint.iss",
+      "sha256": "f8913efa70fb8f9132410856736b3e9a4e923bc3b713906c6df54469fd95cb9a",
+      "sizeBytes": 22463
+    },
+    {
+      "archivePath": "tuxpaint-0.9.35/docs/en/README.txt",
+      "sha256": "bcbb4926ec39b6a530444e93cc8d0cbcdf95c90c47878e0fdbf949060a0091fd",
+      "sizeBytes": 58534
+    }
+  ],
+  "officialPages": [
+    {
+      "url": "https://tuxpaint.org/download/windows/",
+      "fileName": "official-windows.html",
+      "sizeBytes": 14654,
+      "sha256": "c35df2a806d45c9230501908f88619dd84523b02d8f80e88b3ae181ccacc0046",
+      "sha1": "47378d7b501f0a13e90001afdafead29be47109e",
+      "redirected": false
+    },
+    {
+      "url": "https://tuxpaint.org/download/source/",
+      "fileName": "official-source.html",
+      "sizeBytes": 13648,
+      "sha256": "47a8b31d3bc0ab71d6a57f5526e1e4e59779f6b03b8a49178aca15e66c2abd22",
+      "sha1": "5861700ad4398325baf3fd5b4a9be2dbda1d56f2",
+      "redirected": false
+    }
+  ],
+  "license": {
+    "spdx": "GPL-2.0-or-later",
+    "basis": "Pinned src/tuxpaint.c explicitly permits GPL version 2 or any later version. Installed docs/COPYING.txt matches fixed source docs/COPYING.txt byte for byte. Bundled fonts/components have their own terms.",
+    "installedCopyingSha256": "a1615a051f4bfcda0ae29cf608bb5c50a9f156267ce21be79aad308eadb29db6",
+    "guiLicensePageVerified": false,
+    "completeComponentSourceAudit": false
+  },
+  "upstreamSha256Matched": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerRevision3SourceCorrespondenceFullyVerified": false,
+  "installedLauncherArchitecture": "AMD64 0x8664",
+  "failures": []
+}

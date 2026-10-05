@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "applicationId": "tuxpaint",
+  "failedInstallationJob": {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 35216,
+        "requestId": "job-1791190499337-1",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 8907,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791190499337-1/prefix",
+        "requestId": "job-1791190499337-1",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 8948,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791190499337-1",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791190499337-1",
+    "id": "job-1791190499337-1",
+    "kind": "install",
+    "status": "failed"
+  },
+  "failedGeneration": {
+    "id": "gen-job-1791190499337-1",
+    "status": "failed",
+    "definitionDigest": "sha256:56b933205138ef3eb5672ad26466f482dc520826007cf08d3d9fafdf6aa6c5dd",
+    "error": "registry I/O failed: No such file or directory (os error 2)",
+    "definition": {
+      "bottleId": "gui-tuxpaint",
+      "category": "graphics",
+      "compatibilityRating": "unknown",
+      "id": "tuxpaint",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/DIR=C:\\TuxPaint"
+        ],
+        "fileName": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+        "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c"
+      },
+      "launchers": [
+        {
+          "arguments": [
+            "--windowed"
+          ],
+          "executable": "TuxPaint/tuxpaint.exe",
+          "id": "main",
+          "name": "Tux Paint"
+        }
+      ],
+      "name": "Tux Paint",
+      "publisher": "The Tux Paint Development Team",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "0.9.35-3"
+    }
+  },
+  "diagnosis": "Inno installer exited zero and installed 4000 files under Program Files/TuxPaint, but the initial recipe expected TuxPaint/tuxpaint.exe. Generation commit reported registry I/O failed: No such file or directory. Fixed source win32/tuxpaint.iss uses MyAppDir() and assigns WizardForm.DirEdit.Text at wpSelectDir, consistent with the observed default path despite /DIR. Exact revision-3 source correspondence unverified.",
+  "repair": "Fresh managed install removes the ineffective /DIR and pins Program Files/TuxPaint/tuxpaint.exe. Failed generation retained; no files moved/copied within installed prefixes and no failed state reclassified.",
+  "successfulInstallJobId": "job-1791190704821-2",
+  "harnessFailures": [
+    "A first readonly installed-path probe selected every path containing TuxPaint and returned a large private result; later probe bounded to launcher and main license.",
+    "Optional host PIL import was unavailable; standard-library CRC/Adam7 PNG decoding used without installing extra tooling.",
+    "Initial GUI Quit clicked text rather than the checkbox-sized Yes target and remained at confirmation. Full terminal snapshot assertion rejected that running job before any mutation. Fresh screenshot identified the Yes icon; normal exit then confirmed exit zero.",
+    "Startup screenshot was captured after the version splash disappeared; named original-reopen-start.jpg and no screenshot-version evidence claimed.",
+    "Updated GUI first clicked White at palette x215, so the horizontal stroke on a white canvas was invisible. Fresh screen reported White; selected actual Blue x330 (GUI reported Blue) and redrew the same stroke before Save. Fixed source src/colors.h confirms Blue RGB50,100,255 and Light green RGB160,228,128. Saved PNG passes complete pixel equality; no white-stroke persistence or product defect claimed.",
+    "Optional clipped browser screenshot of the palette showed blank framing and was not saved or accepted as evidence. Subsequent full screenshot and actual Blue feedback guided correction."
+  ],
+  "authentication": "Existing authorized test guest login reused. Automatic locking preserved. No password or key in repository.",
+  "retainedMarketGenerationIds": [
+    "gen-job-1791190499337-1",
+    "gen-job-1791190704821-2",
+    "gen-job-1791191897688-5"
+  ]
+}
