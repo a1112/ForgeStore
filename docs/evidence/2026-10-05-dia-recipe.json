@@ -1,0 +1,32 @@
+{
+  "bottleId": "gui-dia",
+  "category": "graphics",
+  "compatibilityRating": "unknown",
+  "id": "dia",
+  "installer": {
+    "arguments": [
+      "/S",
+      "/D=C:\\Dia"
+    ],
+    "fileName": "dia-setup-0.97.2-2-unsigned.exe",
+    "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c"
+  },
+  "launchers": [
+    {
+      "arguments": [
+        "--integrated"
+      ],
+      "executable": "Dia/bin/diaw.exe",
+      "id": "main",
+      "name": "Dia"
+    }
+  ],
+  "name": "Dia",
+  "publisher": "The Dia Developers",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000",
+    "managed-nsis"
+  ],
+  "version": "0.97.2-2"
+}

@@ -184,6 +184,17 @@
       "publication": "docs/evidence/2026-10-03-jpegview-publication.json",
       "failureEvidence": "docs/evidence/2026-10-03-jpegview-failures.json",
       "limitation": "Chinese-path BMP open, GUI clockwise/counterclockwise 90-degree rotation, processed PNG save and explicit visible fresh-process reopen; every RGB pixel matches expected rotation. Independent market update/save/reopen, original-generation rollback/reopen and Core/Store restart passed. Crop/other formats/EXIF/ICC/RAW/PSD/animation/batch/slideshow/printing/registry, guest online download, fresh registration, cross-version upgrade, Authenticode/reproducibility/full component-source/custom-action audit unverified. Installed GPL-2.0-or-later notice matches fixed source after line-ending normalization only."
+    },
+    {
+      "id": "dia",
+      "version": "0.97.2-2",
+      "observedGuiVersion": "0.97.2",
+      "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c",
+      "evidence": "docs/evidence/windows-dia-20261005.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v21/tuf",
+      "publication": "docs/evidence/2026-10-05-dia-publication.json",
+      "report": "docs/windows-rolling-20261005-dia.md",
+      "limitation": "Controlled Chinese input GUI open/add node and edge/native save/SVG export/fresh reopen, verified-cache same-version market update, rollback/native reopen and service restart passed. Chinese direct typing/clipboard, SVG external rendering, user-data migration, fresh-machine registration, online guest download, cross-version upgrade and full bundled-component source/redistribution audit unverified."
     }
   ],
   "queue": [
@@ -336,12 +347,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next uncompleted candidate with fixed official installer/license, real GUI file workflow and verified local signed market lifecycle. Preserve all prior blocked candidates and failure evidence.",
+  "next": "Select another uncompleted distinct application with verifiable fixed official installer, license and source. Preserve 11 blocked candidates including OpenSCAD Chinese STL filename failure; do not count them.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-05",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 20,
+    "acceptedLocalMarket": 21,
     "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -349,15 +360,15 @@
     "pendingCandidates": 11
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v20/tuf",
-    "metadataVersion": 29,
-    "catalogueEntries": 22,
-    "acceptedDistinctWindowsApps": 20,
+    "signedCatalogue": "catalogue/candidate-v21/tuf",
+    "metadataVersion": 30,
+    "catalogueEntries": 23,
+    "acceptedDistinctWindowsApps": 21,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-03-jpegview-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-05-dia-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261005-openscad-unicode-pending.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261005-dia.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",

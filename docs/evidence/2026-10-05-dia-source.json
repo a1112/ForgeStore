@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "applicationId": "dia",
+  "version": "0.97.2-2",
+  "observedGuiVersion": "0.97.2",
+  "artifact": {
+    "fileName": "dia-setup-0.97.2-2-unsigned.exe",
+    "sizeBytes": 19620143,
+    "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c",
+    "sha1": "bf774bf6902e390d2a4ade45dde41f905c60ceeb",
+    "officialSha1Matched": true,
+    "sourceUrl": "https://downloads.sourceforge.net/project/dia-installer/dia-win32-installer/0.97.2/dia-setup-0.97.2-2-unsigned.exe",
+    "redirectedToOfficialSourceForgeMirror": true
+  },
+  "officialHomepage": "https://dia-installer.de/",
+  "officialSha1Observation": {
+    "url": "https://dia-installer.de/",
+    "sha1": "bf774bf6902e390d2a4ade45dde41f905c60ceeb",
+    "retrieval": "Browser search provider returned official-page checksum and installer-revision notes; direct host page TLS fetch failed. Locally calculated installer SHA-1 matches that published value.",
+    "upstreamSha256Matched": false
+  },
+  "sourceArchive": {
+    "url": "https://download.gnome.org/sources/dia/0.97/dia-0.97.2.tar.xz",
+    "resolvedUrl": "https://download.gnome.org/sources/dia/0.97/dia-0.97.2.tar.xz",
+    "fileName": "dia-0.97.2.tar.xz",
+    "sizeBytes": 5507004,
+    "sha256": "a761478fb98697f71b00d3041d7c267f3db4b94fe33ac07c689cb89c4fe5eae1"
+  },
+  "sourceFiles": [
+    {
+      "archivePath": "dia-0.97.2/COPYING",
+      "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c",
+      "sizeBytes": 18002
+    },
+    {
+      "archivePath": "dia-0.97.2/app/main.c",
+      "sha256": "5e2ba600bbe7f8052a2c9fe2cbbc89ba9d57e3bc3d43bee11d59b91ebb3d78b7",
+      "sizeBytes": 1059
+    },
+    {
+      "archivePath": "dia-0.97.2/config.h.win32",
+      "sha256": "ed0ad3939a1e7fc3d39d36349d3b9556c18d8cf202d9f9ba0a333c75eec3f7aa",
+      "sizeBytes": 754
+    },
+    {
+      "archivePath": "dia-0.97.2/installer/win32/dia.nsi",
+      "sha256": "281bf8ddfcf4e7f74b2aab4d74654cb4a97cef732c502c4f80a049210f45f1a3",
+      "sizeBytes": 183576
+    },
+    {
+      "archivePath": "dia-0.97.2/app/menus.c",
+      "sha256": "521e870807bec179b11b9538be9fe8acaf183be212125f47573c46219138831f",
+      "sizeBytes": 45024
+    },
+    {
+      "archivePath": "dia-0.97.2/app/commands.c",
+      "sha256": "5a6c051a4759e01c1a7ea1380cef4ade4fdf7dbf3ea44c72ac271543557eef76",
+      "sizeBytes": 29933
+    }
+  ],
+  "license": {
+    "spdx": "GPL-2.0-or-later",
+    "basis": "Pinned 0.97.2 app/main.c and installer script explicitly permit version 2 or any later version; GUI License also displays this permission. Installed Dia/COPYING matches fixed source COPYING byte for byte. Updated bundled libraries have their own terms.",
+    "installedCopyingSha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c",
+    "completeComponentSourceAudit": false
+  },
+  "installerSourceCorrespondenceFullyVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "packageNameExplicitlyUnsigned": true,
+  "installedLauncherArchitecture": "x86",
+  "failures": [
+    {
+      "url": "https://dia-installer.de/",
+      "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+    }
+  ]
+}

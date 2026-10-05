@@ -1,0 +1,229 @@
+{
+  "generationId": "gen-job-1791178962804-6",
+  "files": {
+    "input/流程图.dia": {
+      "sizeBytes": 969,
+      "sha256": "d81299b5a3b1c50251c792bfc653d4caf1406adc8f586a84c8d65bde5ea27f59"
+    },
+    "output/流程图.dia": {
+      "sizeBytes": 1086,
+      "sha256": "27e9acda86813356fe0f82a62cec9de2f495c7489d37be8ffefe33a6a640f960"
+    },
+    "output/流程图.svg": {
+      "sizeBytes": 2327,
+      "sha256": "6ba2084f20f51bed5c244481b7b9301520776bc9df46551d6f58fdf1b5d0d7d4"
+    },
+    "output/workflow.dia": {
+      "sizeBytes": 994,
+      "sha256": "fb1d52a0354ae0c4838d76cfa629d5d4861181cd087234b5bbcd6caf8d7ca179"
+    },
+    "output/diaoriginal.dia": {
+      "sizeBytes": 929,
+      "sha256": "9da7393612d9b896c53d1bc4cf93eaf1da24d9eff25d15ab40395a2582695898"
+    }
+  },
+  "nativeSemantic": {
+    "objects": 5,
+    "boxes": 3,
+    "lines": 2,
+    "texts": [
+      "安装 1",
+      "验证 2",
+      "3"
+    ],
+    "bothLineEndsAttached": true,
+    "directedEdges": [
+      [
+        "安装 1",
+        "验证 2"
+      ],
+      [
+        "验证 2",
+        "3"
+      ]
+    ],
+    "inputGeometryAndChineseTextPreserved": true
+  },
+  "svgSemantic": {
+    "rectangles": 6,
+    "lines": 2,
+    "arrowPolygons": 4,
+    "texts": [
+      "安装 1",
+      "验证 2",
+      "3"
+    ],
+    "allBoxGeometryMatchesNativeScale20": true,
+    "scriptsAndExternalImagesAbsent": true
+  },
+  "previous155CoreJobsUnchanged": true,
+  "full57StoreRowsUnchanged": true,
+  "marketTrustOldConfigsOldGenerationsAndGuardsUnchanged": true,
+  "installedLicenseMatchesFixedSource": true,
+  "originalGuiOutputVerified": true,
+  "guiAccepted": true,
+  "published": false,
+  "countsAsCompleted": false,
+  "explicitFreshProcessNativeReopenObserved": true,
+  "reopenedFilesUnchanged": true,
+  "allCoreJobsTerminal": true,
+  "totalCoreJobs": 158,
+  "services": {
+    "compatforge.service": "active",
+    "forge-store.service": "active"
+  },
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "applicationId": "dia",
+  "jobs": [
+    {
+      "id": "job-1791178962804-6",
+      "kind": "install",
+      "status": "succeeded",
+      "generationId": "gen-job-1791178962804-6",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 28172,
+          "requestId": "job-1791178962804-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 7300,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791178962804-6/prefix",
+          "requestId": "job-1791178962804-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 7342,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791178962804-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791179045727-7",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1791178962804-6",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 28401,
+          "requestId": "job-1791179045727-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 1441847,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791178962804-6/prefix",
+          "requestId": "job-1791179045727-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 1441889,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791179045727-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791180565023-8",
+      "kind": "launch",
+      "status": "succeeded",
+      "generationId": "gen-job-1791178962804-6",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 29372,
+          "requestId": "job-1791180565023-8",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 145155,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791178962804-6/prefix",
+          "requestId": "job-1791180565023-8",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 145197,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791180565023-8",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "definitionDigest": "sha256:74e47337ef8d2dc3574ad3a73af3c5c1cccc33acdecdc53e5d2c31941bbcfca9",
+  "runtime": {
+    "binding": {
+      "environment": {
+        "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+        "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+        "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+        "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+        "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "WINEARCH": "win64",
+        "WINEDEBUG": "-all",
+        "WINEDLLOVERRIDES": "mscoree,mshtml=",
+        "WINESERVER": "/usr/bin/wineserver"
+      },
+      "executable": "/usr/bin/wine",
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "providerId": "wine-linux-x86-64-preview",
+      "wineserverExecutable": "/usr/bin/wineserver"
+    },
+    "selection": {
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "provider": "wine"
+    },
+    "version": "11.14"
+  },
+  "screenshots": {
+    "about-license.jpg": "898d91939fff30a2f7f8d35abc384501d4f3a76df5b3db70f948dc7aeaf47d9d",
+    "about-version.jpg": "4f4d07d2797a6a6919aecd2196241b4a357c3a3a409da5d1756d6e5b7d290d6b",
+    "chinese-native-reopened.jpg": "9c5d95ecaa8a4620d11215cbbfc8c26284d5fb94f8aa00539a119fd9af67eac3",
+    "chinese-native-saved.jpg": "3b08e38d141d59c8c75903c637062fc84fa6672e508e83d2962c995e78882952"
+  },
+  "limits": [
+    "Controlled synthetic Chinese filename/text fixture, GUI adds node 3 and fully attached line, native Chinese Save As, explicit fresh-process file-list reopen and Chinese-name native SVG export verified.",
+    "Chinese strings are seeded input preserved through the workflow; direct Chinese keyboard entry and clipboard-to-Wine transmission remain unverified. Rapid composite input and wrong shortcut use caused retained harness failures; no persistent application/Core/runtime fix claimed.",
+    "SVG XML/text/box geometry/line and arrow counts verified independently; external SVG viewer/rasterization, other formats/templates/layers/grouping/Python plugins/printing/network unverified.",
+    "Unsigned official 32-bit NSIS revision installed in Wine 11.14 win64 runtime. SHA-256 locally pinned; published SHA-1 matched. Authenticode, reproducibility, complete bundled-component/source/installer audit and exact updated-library source correspondence unverified.",
+    "Fresh-machine recipe registration, guest online download, cross-version upgrade and remote public installer redistribution unverified. Local signed market lifecycle follows this original receipt; original GUI pass alone does not increase the completed count."
+  ]
+}

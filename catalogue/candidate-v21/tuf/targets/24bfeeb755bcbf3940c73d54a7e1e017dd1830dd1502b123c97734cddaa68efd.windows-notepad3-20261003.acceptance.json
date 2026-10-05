@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "environment": "Isolated ForgeOS v12 x86_64 VM, Wine 11.14, Core managed-MSI-v10 supports normal managed PE/Inno install. Official fixed installer with /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:\\Notepad3 /TASKS= /LOG; no manual extraction. Existing authorized login, authentication unchanged.",
+  "applications": [
+    {
+      "id": "notepad3",
+      "version": "7.26.602.1",
+      "sha256": "9cf68b38bcc1aa679050b9069174ab222383ba004c37bdd47056cafc71626be9",
+      "size": 4882616,
+      "installJobId": "job-1790992599487-1",
+      "generationId": "gen-job-1790992599487-1",
+      "definitionDigest": "sha256:4a91599ff235abd4c1fd054faa73c18362a2e9a103854df885a3367d8e8e2b51",
+      "launcherSha256": "92bc17ffc6300d7c73b4ca735f65e510dda7243a490cedef14385cf142d57a96",
+      "launchJobId": "job-1790992656124-2",
+      "reopenJobId": "job-1790992963770-4",
+      "earlierReopenPaintUnverifiedJobId": "job-1790992881868-3",
+      "guiFileOperation": "passed",
+      "workflow": "GUI open C:\\ForgeQA\\input\\输入.txt, read UTF-8 Chinese text, literal Replace All old -> originalpassed (one replacement), File > Save As output/np3original.txt; normal exit. Fresh managed process explicitly opens output file and visible Chinese/ASCII replacement text is verified, then normal exit. Output exact expected UTF-8/no-BOM/CRLF bytes; original input and output bytes unchanged. Earlier repaint-unverified reopen kept as a separate probe.",
+      "inputFixture": {
+        "generationId": "gen-job-1790992599487-1",
+        "windowsInputFile": "C:\\ForgeQA\\input\\输入.txt",
+        "relativeInputFile": "input/输入.txt",
+        "sizeBytes": 96,
+        "sha256": "dd66aa9435cdb568fa28ac3639b031f5f991bc306a7caf8f7ea6929b85e635be",
+        "text": "ForgeOS Notepad3 rolling acceptance\r\n中文路径与内容验证\r\nvalue=17\r\nreplace_target=old\r\n",
+        "outputDirectoryEmptyBeforeGui": true
+      },
+      "outputVerification": {
+        "relativeFile": "output/np3original.txt",
+        "sizeBytes": 107,
+        "sha256": "33e67eb5ca58ba4afad555b85ab620832e22e590756c748edcde105a6ec16476",
+        "text": "ForgeOS Notepad3 rolling acceptance\r\n中文路径与内容验证\r\nvalue=17\r\nreplace_target=originalpassed\r\n",
+        "utf8NoBom": true,
+        "crlfPreserved": true,
+        "chineseContentPreserved": true,
+        "expectedReplacementMatched": true
+      },
+      "installedLicenseVerification": {
+        "relativeFile": "Docs/License.txt",
+        "sizeBytes": 3407,
+        "sha256": "8d6739ff11b904bd12d5534d8cc5da43f30f13fe2db9b903eeb3a3f73e55cd93",
+        "normalization": "CRLF to LF only",
+        "normalizedSizeBytes": 3371,
+        "normalizedSha256": "bdf8ba94fb60b92a5a6b6219028d45d5f3b9d38495e3bc59f61781bb69e6efff",
+        "fixedSourceContentMatchesAfterLineEndingNormalization": true,
+        "byteIdenticalToSource": false
+      },
+      "screenshots": {
+        "2026-10-03-notepad3-about-version.jpg": "9fca6fba9313989bf5bdc94d9178e76f10d6dc92c96cc504bdff3eabded7f777",
+        "2026-10-03-notepad3-original-input-opened.jpg": "ae8c410c69e3227a309567cfc366d1ee240cf4434f139ca71ed7f53be249bec2",
+        "2026-10-03-notepad3-original-reopened.jpg": "38f37d85b9bafed45162cfc184875d6e5f8d17131d26a75187812587f4de7bea",
+        "2026-10-03-notepad3-original-saved.jpg": "5ce344449be7bae3b6946344dbf1dc938014d637d7cd4df34c805841dd81ed8a"
+      },
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+    }
+  ],
+  "licenseEvidence": {
+    "applicationId": "notepad3",
+    "version": "7.26.602.1",
+    "tag": "RELEASE_7.26.602.1",
+    "sourceCommit": "f0b1b6544bee6b40aeeed050990e3737fd1af712",
+    "releaseUrl": "https://github.com/rizonesoft/Notepad3/releases/tag/RELEASE_7.26.602.1",
+    "publishedAt": "2026-06-02T11:26:58Z",
+    "immutableRelease": false,
+    "prerelease": false,
+    "artifact": {
+      "fileName": "Notepad3_7.26.602.1_x64_Setup.exe",
+      "sourceUrl": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_7.26.602.1/Notepad3_7.26.602.1_x64_Setup.exe",
+      "sizeBytes": 4882616,
+      "sha256": "9cf68b38bcc1aa679050b9069174ab222383ba004c37bdd47056cafc71626be9",
+      "publishedGitHubAssetDigestMatched": true
+    },
+    "license": {
+      "spdx": "BSD-3-Clause",
+      "basis": "Fixed Build/Docs/License.txt applies BSD three-clause terms to Notepad3 and MiniPath. It separately includes the Scintilla notice and GPL v3 notice for bundled grepWin. Market license denotes the main Notepad3 application; bundled components retain their own terms.",
+      "fixedReferences": {
+        "Build/Docs/License.txt": {
+          "fixedUrl": "https://raw.githubusercontent.com/rizonesoft/Notepad3/f0b1b6544bee6b40aeeed050990e3737fd1af712/Build/Docs/License.txt",
+          "sizeBytes": 3371,
+          "sha256": "bdf8ba94fb60b92a5a6b6219028d45d5f3b9d38495e3bc59f61781bb69e6efff"
+        },
+        "src/Config/LICENCE.txt": {
+          "fixedUrl": "https://raw.githubusercontent.com/rizonesoft/Notepad3/f0b1b6544bee6b40aeeed050990e3737fd1af712/src/Config/LICENCE.txt",
+          "sizeBytes": 1089,
+          "sha256": "1f8d19cba3d929f45f74b8e7cdf84b2fee5b96be69d08d0084ed728316f9f2c2"
+        },
+        "scintilla/License.txt": {
+          "fixedUrl": "https://raw.githubusercontent.com/rizonesoft/Notepad3/f0b1b6544bee6b40aeeed050990e3737fd1af712/scintilla/License.txt",
+          "sizeBytes": 864,
+          "sha256": "ac32743bd464c837e481beae20df65a9207f84d3ff1912f6003000343e9c753d"
+        },
+        "lexilla/License.txt": {
+          "fixedUrl": "https://raw.githubusercontent.com/rizonesoft/Notepad3/f0b1b6544bee6b40aeeed050990e3737fd1af712/lexilla/License.txt",
+          "sizeBytes": 864,
+          "sha256": "ac32743bd464c837e481beae20df65a9207f84d3ff1912f6003000343e9c753d"
+        },
+        "minipath/License.txt": {
+          "fixedUrl": "https://raw.githubusercontent.com/rizonesoft/Notepad3/f0b1b6544bee6b40aeeed050990e3737fd1af712/minipath/License.txt",
+          "sizeBytes": 2429,
+          "sha256": "7d0db1a17e0c9de44370a2c7c2f57f9f0b4c10e3b7e39bc9605451f771723d90"
+        }
+      },
+      "installedLicenseVerification": {
+        "relativeFile": "Docs/License.txt",
+        "sizeBytes": 3407,
+        "sha256": "8d6739ff11b904bd12d5534d8cc5da43f30f13fe2db9b903eeb3a3f73e55cd93",
+        "normalization": "CRLF to LF only",
+        "normalizedSizeBytes": 3371,
+        "normalizedSha256": "bdf8ba94fb60b92a5a6b6219028d45d5f3b9d38495e3bc59f61781bb69e6efff",
+        "fixedSourceContentMatchesAfterLineEndingNormalization": true,
+        "byteIdenticalToSource": false
+      },
+      "completeComponentSourceAudit": false
+    },
+    "authenticodeVerified": false,
+    "reproducibleBuildVerified": false,
+    "installerFormatMarker": "Inno Setup Setup Data (6.7.0)",
+    "installerStubArchitecture": "i386",
+    "installedLauncherArchitecture": "x86_64"
+  },
+  "limits": [
+    "Acceptance covers UTF-8 Chinese-path input read, GUI literal find/replace, Save As to a new output, visible explicit file open in a fresh managed process and normal exit. UTF-8 without BOM and CRLF preserved; input bytes unchanged.",
+    "Regex, syntax highlighting across languages, other encodings, large files, printing, encryption and bundled MiniPath/grepWin workflows unverified; bundled utilities do not count as separate accepted apps.",
+    "Official installer SHA256 matches published GitHub asset digest. Fixed release is not marked immutable; exact installer bytes and source commit pinned. Authenticode, reproducible build and complete component-source/installer-code audit unverified.",
+    "Local signed market activation/update/rollback/restart validation follows this original receipt. Guest online download, fresh-machine registration, cross-version upgrade and remote installer redistribution unverified."
+  ]
+}

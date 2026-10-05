@@ -1,0 +1,811 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "applicationId": "dia",
+  "restartedCoreAndStore": true,
+  "allCoreJobsTerminal": true,
+  "coreJobCount": 162,
+  "previous155CoreJobsUnchanged": true,
+  "storeRowCount": 59,
+  "previous57FullStoreRowsUnchanged": true,
+  "fullStoreRowsSha256": "04819c9323cce1f2f02a82f18c79a4d8a2a8f66add8bdf03932f179740818602",
+  "historicalInterruptedStoreJobs": [],
+  "allPreexistingCoreConfigBytesAndGenerationsPreserved": true,
+  "fullRestartSnapshotStatePreserved": true,
+  "tufDocumentsIncludingSignaturesPreservedAcrossRestart": true,
+  "public25SignedFilesBytePreserved": true,
+  "latestKnownTime": {
+    "before": "2026-10-05T06:25:01.610986691Z",
+    "after": "2026-10-05T06:36:45.796420802Z",
+    "monotonic": true
+  },
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "timestamp": 30,
+    "snapshot": 30,
+    "targets": 30
+  },
+  "catalogueEntries": 23,
+  "installed": {
+    "appId": "dia",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "0.97.2-2"
+  },
+  "selectedGeneration": "gen-job-1791178962804-6",
+  "readyGenerations": 2,
+  "generations": {
+    "applicationId": "dia",
+    "generations": [
+      {
+        "bottleId": "gen-job-1791178962804-6",
+        "createdAtMilliseconds": 1791178962809,
+        "definition": {
+          "bottleId": "gui-dia",
+          "category": "graphics",
+          "compatibilityRating": "unknown",
+          "id": "dia",
+          "installer": {
+            "arguments": [
+              "/S",
+              "/D=C:\\Dia"
+            ],
+            "fileName": "dia-setup-0.97.2-2-unsigned.exe",
+            "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c"
+          },
+          "launchers": [
+            {
+              "arguments": [
+                "--integrated"
+              ],
+              "executable": "Dia/bin/diaw.exe",
+              "id": "main",
+              "name": "Dia"
+            }
+          ],
+          "name": "Dia",
+          "publisher": "The Dia Developers",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000",
+            "managed-nsis"
+          ],
+          "version": "0.97.2-2"
+        },
+        "definitionDigest": "sha256:74e47337ef8d2dc3574ad3a73af3c5c1cccc33acdecdc53e5d2c31941bbcfca9",
+        "id": "gen-job-1791178962804-6",
+        "launcherDigests": {
+          "main": "sha256:4c38562afe57192c1a715b7749a4f3eb1581c6fe52e9122b79e8ccece1e5607e"
+        },
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "ready",
+        "updatedAtMilliseconds": 1791178979927
+      },
+      {
+        "bottleId": "gen-job-1791181511958-9",
+        "createdAtMilliseconds": 1791181511964,
+        "definition": {
+          "bottleId": "gui-dia",
+          "category": "graphics",
+          "compatibilityRating": "unknown",
+          "id": "dia",
+          "installer": {
+            "arguments": [
+              "/S",
+              "/D=C:\\Dia"
+            ],
+            "fileName": "dia-setup-0.97.2-2-unsigned.exe",
+            "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c"
+          },
+          "launchers": [
+            {
+              "arguments": [
+                "--integrated"
+              ],
+              "executable": "Dia/bin/diaw.exe",
+              "id": "main",
+              "name": "Dia"
+            }
+          ],
+          "name": "Dia",
+          "publisher": "The Dia Developers",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000",
+            "managed-nsis"
+          ],
+          "version": "0.97.2-2"
+        },
+        "definitionDigest": "sha256:74e47337ef8d2dc3574ad3a73af3c5c1cccc33acdecdc53e5d2c31941bbcfca9",
+        "id": "gen-job-1791181511958-9",
+        "launcherDigests": {
+          "main": "sha256:4c38562afe57192c1a715b7749a4f3eb1581c6fe52e9122b79e8ccece1e5607e"
+        },
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "ready",
+        "updatedAtMilliseconds": 1791181529642
+      }
+    ],
+    "recoveryCapability": "kernel-boot-identity",
+    "schemaVersion": "1",
+    "selectedGeneration": "gen-job-1791178962804-6"
+  },
+  "outputs": {
+    "original": {
+      "generationId": "gen-job-1791178962804-6",
+      "files": {
+        "input/流程图.dia": {
+          "sizeBytes": 969,
+          "sha256": "d81299b5a3b1c50251c792bfc653d4caf1406adc8f586a84c8d65bde5ea27f59"
+        },
+        "output/流程图.dia": {
+          "sizeBytes": 1086,
+          "sha256": "27e9acda86813356fe0f82a62cec9de2f495c7489d37be8ffefe33a6a640f960"
+        },
+        "output/流程图.svg": {
+          "sizeBytes": 2327,
+          "sha256": "6ba2084f20f51bed5c244481b7b9301520776bc9df46551d6f58fdf1b5d0d7d4"
+        },
+        "output/workflow.dia": {
+          "sizeBytes": 994,
+          "sha256": "fb1d52a0354ae0c4838d76cfa629d5d4861181cd087234b5bbcd6caf8d7ca179"
+        },
+        "output/diaoriginal.dia": {
+          "sizeBytes": 929,
+          "sha256": "9da7393612d9b896c53d1bc4cf93eaf1da24d9eff25d15ab40395a2582695898"
+        }
+      },
+      "nativeSemantic": {
+        "objects": 5,
+        "boxes": 3,
+        "lines": 2,
+        "texts": [
+          "安装 1",
+          "验证 2",
+          "3"
+        ],
+        "bothLineEndsAttached": true,
+        "directedEdges": [
+          [
+            "安装 1",
+            "验证 2"
+          ],
+          [
+            "验证 2",
+            "3"
+          ]
+        ],
+        "inputGeometryAndChineseTextPreserved": true
+      },
+      "svgSemantic": {
+        "rectangles": 6,
+        "lines": 2,
+        "arrowPolygons": 4,
+        "texts": [
+          "安装 1",
+          "验证 2",
+          "3"
+        ],
+        "allBoxGeometryMatchesNativeScale20": true,
+        "scriptsAndExternalImagesAbsent": true
+      },
+      "explicitFreshProcessNativeReopenObserved": true
+    },
+    "updated": {
+      "generationId": "gen-job-1791181511958-9",
+      "files": {
+        "input/市场流程.dia": {
+          "sizeBytes": 968,
+          "sha256": "0cdfb74eaf7ddf37cb6934bcdb9086bcdd78f769aaee2ec4240033379ff74b23"
+        },
+        "output/市场流程.dia": {
+          "sizeBytes": 1110,
+          "sha256": "53de8ee75dd0e26b264388a05f85b48d23366ef98cee8a6a78b1580405364d97"
+        },
+        "output/市场流程.svg": {
+          "sizeBytes": 2367,
+          "sha256": "ea60e3a08517dccc3a198e0c87b4a3f8272e81ad01f07556fcbccb077a2d5e12"
+        }
+      },
+      "nativeSemantic": {
+        "objects": 5,
+        "boxes": 3,
+        "lines": 2,
+        "texts": [
+          "市场 1",
+          "复验 2",
+          "4"
+        ],
+        "bothLineEndsAttached": true,
+        "directedEdges": [
+          [
+            "市场 1",
+            "复验 2"
+          ],
+          [
+            "复验 2",
+            "4"
+          ]
+        ],
+        "inputGeometryAndChineseTextPreserved": true
+      },
+      "svgSemantic": {
+        "rectangles": 6,
+        "lines": 2,
+        "arrowPolygons": 4,
+        "texts": [
+          "市场 1",
+          "复验 2",
+          "4"
+        ],
+        "allBoxGeometryMatchesNativeScale20": true,
+        "scriptsAndExternalImagesAbsent": true
+      },
+      "freshReopenObserved": true
+    }
+  },
+  "inputOutputLauncherAndLicensePinsPreserved": true,
+  "originalRollbackExplicitNativeReopenObserved": true,
+  "coreJobs": [
+    {
+      "applicationId": "dia",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 31639,
+          "requestId": "job-1791182045754-12",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 77954,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791178962804-6/prefix",
+          "requestId": "job-1791182045754-12",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 77996,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791182045754-12",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791178962804-6",
+      "id": "job-1791182045754-12",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dia",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 31018,
+          "requestId": "job-1791181850769-11",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 86983,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791181511958-9/prefix",
+          "requestId": "job-1791181850769-11",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 87025,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791181850769-11",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791181511958-9",
+      "id": "job-1791181850769-11",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dia",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 30604,
+          "requestId": "job-1791181578508-10",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 232441,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791181511958-9/prefix",
+          "requestId": "job-1791181578508-10",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 232484,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791181578508-10",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791181511958-9",
+      "id": "job-1791181578508-10",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dia",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 30342,
+          "requestId": "job-1791181511958-9",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 7586,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791181511958-9/prefix",
+          "requestId": "job-1791181511958-9",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 7629,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791181511958-9",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791181511958-9",
+      "id": "job-1791181511958-9",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dia",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 29372,
+          "requestId": "job-1791180565023-8",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 145155,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791178962804-6/prefix",
+          "requestId": "job-1791180565023-8",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 145197,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791180565023-8",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791178962804-6",
+      "id": "job-1791180565023-8",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dia",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 28401,
+          "requestId": "job-1791179045727-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 1441847,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791178962804-6/prefix",
+          "requestId": "job-1791179045727-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 1441889,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791179045727-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791178962804-6",
+      "id": "job-1791179045727-7",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dia",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 28172,
+          "requestId": "job-1791178962804-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 7300,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791178962804-6/prefix",
+          "requestId": "job-1791178962804-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 7342,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791178962804-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791178962804-6",
+      "id": "job-1791178962804-6",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "dia",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "69fc3dd4-08a6-4c4c-b1ec-08f4fac429b7",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "dia",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "f21012f7-8501-46f1-8372-925aa4c1ec28",
+      "state": "succeeded"
+    }
+  },
+  "components": {
+    "compatforge.service": {
+      "binary": "compatforge-cli-managed-msi-v10",
+      "sha256": "feaad5a5010fbf1506f2e4771bb7677345ccbba757b5d4aa97b65be2b502ce0a"
+    },
+    "forge-store.service": {
+      "binary": "forge-store-service-managed-msi-v2",
+      "sha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f"
+    }
+  },
+  "serviceGuards": {
+    "compatforge.service": [],
+    "forge-store.service": [
+      "NoNewPrivileges=yes",
+      "ProtectSystem=full",
+      "PrivateTmp=yes"
+    ]
+  },
+  "readinessRetries": {
+    "core": 0,
+    "store": 0
+  },
+  "published": true,
+  "countsAsCompleted": true,
+  "bootId": "3d9454c0-7f84-4df4-aad3-9525b5a89648",
+  "version": "0.97.2-2",
+  "observedGuiVersion": "0.97.2",
+  "countDistinctWindowsApps": 1,
+  "acceptanceReceiptSha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+  "signedCatalogue": "catalogue/candidate-v21/tuf",
+  "catalogue25FilesSha256": {
+    "tuf/metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "tuf/metadata/30.snapshot.json": "977dc8611bc2b1626c3ed6909c103c9677c453cbc954598fd5317d1977e65c79",
+    "tuf/metadata/30.targets.json": "8f1b59fd8cd431e876bfcd7ddbb39b50934cf2a774565070c139892c4499459d",
+    "tuf/metadata/timestamp.json": "3c2d58e10dbdd21b4ddb1478a5c11687bf3a7a492009edcf2a594b69bdb57a1c",
+    "tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+    "tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+    "tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+    "tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+    "tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+    "tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+    "tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+    "tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+    "tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+    "tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+    "tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+    "tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+    "tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+    "tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+    "tuf/targets/9afa09a1c9ed060cc679d000a7086556098a5bc7cd771977f6778758c02551bb.catalogue.json": "9afa09a1c9ed060cc679d000a7086556098a5bc7cd771977f6778758c02551bb",
+    "tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+    "tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+    "tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+    "tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+    "tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+    "tuf/trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+  },
+  "activation": {
+    "activated": true,
+    "metadataVersion": 30,
+    "catalogueEntries": 23,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "originalCoreJobsPreserved": true,
+    "coreJobs": 158,
+    "fullStoreRowsPreserved": true,
+    "storeRows": 57,
+    "previousInstalledAndEntriesPreserved": true,
+    "diaEntry": {
+      "compatibility": {
+        "evidence": "windows-dia-20261005.acceptance.json#dia",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c",
+          "size": 19620143,
+          "target": "dia-setup-0.97.2-2-unsigned.exe",
+          "url": "https://downloads.sourceforge.net/project/dia-installer/dia-win32-installer/0.97.2/dia-setup-0.97.2-2-unsigned.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "dia"
+      },
+      "id": "dia",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "Dia",
+        "zhCN": "Dia"
+      },
+      "origin": "https://dia-installer.de/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Dia Developers",
+      "summary": {
+        "en": "Structured diagram editor",
+        "zhCN": "结构化流程图与图形编辑器"
+      },
+      "version": "0.97.2-2"
+    },
+    "diaInstalled": {
+      "appId": "dia",
+      "backend": "compatforge",
+      "canRollback": false,
+      "version": "0.97.2-2"
+    },
+    "serviceGuardsPreserved": true
+  },
+  "localSignatureVerification": {
+    "tool": "tuftool 0.17 download",
+    "exitCode": 0,
+    "trustedRoot": "catalogue/candidate-v20/tuf/trusted-root.json",
+    "downloadedAndVerifiedTargets": [
+      "catalogue.json",
+      "windows-dia-20261005.acceptance.json"
+    ],
+    "rootUnchanged": true,
+    "metadataVersion": 30
+  },
+  "screenshots": {
+    "market-native-saved.jpg": {
+      "path": "docs/evidence/2026-10-05-dia/market-native-saved.jpg",
+      "sha256": "e32532062263545aefae16daf944bf5c9e27993c0d41c4bb08db0cd2278edfae",
+      "sizeBytes": 40618,
+      "purpose": "New GUI-created native output in updated generation"
+    },
+    "market-native-fit.jpg": {
+      "path": "docs/evidence/2026-10-05-dia/market-native-fit.jpg",
+      "sha256": "d46a35296499f07336ede002da13050c07e2648bcc3c5cf7fc37a6ac579c852a",
+      "sizeBytes": 40593,
+      "purpose": "Retained diagnostic: Ctrl+E fit of selected line only, not accepted whole-diagram visual evidence"
+    },
+    "market-reopen-path-error.jpg": {
+      "path": "docs/evidence/2026-10-05-dia/market-reopen-path-error.jpg",
+      "sha256": "d2336fa2397b5a5bd54b53264069e43522d0ed0a666802ad2c11085853aa7686",
+      "sizeBytes": 37854,
+      "purpose": "Retained failed native file-picker directory request"
+    },
+    "market-native-reopened.jpg": {
+      "path": "docs/evidence/2026-10-05-dia/market-native-reopened.jpg",
+      "sha256": "3c9e8d9b18ced9e66ef7d29c88b90df3857b6b915b70a704c519cacc8f1cbf17",
+      "sizeBytes": 38117,
+      "purpose": "Accepted fresh-process updated Chinese native diagram, fit all at 170%"
+    },
+    "rollback-original-reopened.jpg": {
+      "path": "docs/evidence/2026-10-05-dia/rollback-original-reopened.jpg",
+      "sha256": "2262cb67b31d9437f4cf2b52ba002ca8eba263a6e8ac395df16206094bcc0d1b",
+      "sizeBytes": 38023,
+      "purpose": "Accepted rollback-selected original native Chinese diagram, fit all at 170%"
+    }
+  },
+  "updateDelivery": "Verified installer cache; same-version reinstall into independent generation; no guest online download or cross-version upgrade assertion",
+  "updatedInputFixture": {
+    "generationId": "gen-job-1791181511958-9",
+    "relativeFile": "input/市场流程.dia",
+    "sizeBytes": 968,
+    "sha256": "0cdfb74eaf7ddf37cb6934bcdb9086bcdd78f769aaee2ec4240033379ff74b23",
+    "strings": [
+      "市场 1",
+      "复验 2"
+    ],
+    "objects": 3,
+    "basis": "Synthetic input only derived from original controlled fixture with two new Chinese labels; no backend-generated acceptance outputs.",
+    "preexistingQaFiles": [],
+    "newOutputsAbsentBeforeGui": true
+  },
+  "limitations": [
+    "Controlled Chinese-labelled input imported, GUI third node and second edge created; direct Chinese keyboard entry and clipboard propagation remain unverified.",
+    "SVG XML content and native-to-SVG box geometry checked; external SVG viewer rendering and raster pixel comparison not performed.",
+    "Updated generation used new controlled input, not preexisting output migration; no user-data migration assertion.",
+    "Full bundled-component source correspondence, redistribution audit, Authenticode, reproducible build, printing and broader shape/export workflows unverified.",
+    "Registered application in existing isolated VM and verified cache; fresh-machine recipe registration and remote installer distribution unverified."
+  ],
+  "finalReadOnlyVerification": {
+    "coreJobs": 162,
+    "storeRows": 59,
+    "fullFinalStatePreserved": true,
+    "trustDocuments": {
+      "timestamp.json": {
+        "type": "timestamp",
+        "version": 30
+      },
+      "root.json": {
+        "type": "root",
+        "version": 1
+      },
+      "snapshot.json": {
+        "type": "snapshot",
+        "version": 30
+      },
+      "targets.json": {
+        "type": "targets",
+        "version": 30
+      }
+    },
+    "latestKnownTimeMonotonic": true
+  },
+  "hostValidation": {
+    "pythonUnitTests": {
+      "command": "python -m unittest discover -s tests -v",
+      "exitCode": 0,
+      "passed": 4,
+      "skipped": 1,
+      "skipReason": "Linux ForgeOS package tool required"
+    },
+    "whitespaceCheck": {
+      "command": "git -c core.whitespace=cr-at-eol diff --cached --check",
+      "exitCode": 0,
+      "basis": "Preserve inherited frozen CRLF signed target bytes; ordinary whitespace checking treats their carriage returns as trailing whitespace."
+    },
+    "allRawJpegBytePinsVerified": true,
+    "actualOriginalAndUpdatedNativeSvgBytesIndependentlyParsed": true
+  },
+  "independentReview": {
+    "date": "2026-10-05",
+    "criticalFindings": 0,
+    "importantFindings": 0,
+    "readyToCommitAndPush": true,
+    "actualNativeAndSvgBytesVerified": true,
+    "rawScreensAndFrozenReceiptVerified": true,
+    "old20AcceptedAnd11BlockedPreserved": true,
+    "rsaPssSignatures": {
+      "rootVersion": 1,
+      "timestampVersion": 30,
+      "snapshotVersion": 30,
+      "targetsVersion": 30,
+      "allPassed": true,
+      "note": "Independent verifier initially used ordinary JSON string escaping for PEM newlines; correct TUF canonical bytes verified inherited root signature. No trust metadata modification."
+    },
+    "finalReadonlyRecordVerified": true,
+    "all42StagedBlobsEqualVerifiedDiskBytes": true
+  }
+}
