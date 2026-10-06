@@ -1,0 +1,35 @@
+{
+  "applications": [
+    {
+      "adaptation": "Fontconfig backend; app definition must be configured before generation installation. Older immutable generation remains preserved.",
+      "finalFileBytes": 26,
+      "finalFileSha256": "7e40375d4cb1c1f8519353c2503ce102222ef27ae4d3a8c7969c0d70c78be1e5",
+      "guiFileOperation": "passed",
+      "id": "geany",
+      "installJobId": "job-1790746389457-14",
+      "launchJobId": "job-1790746442149-15",
+      "launcherEnvironment": {
+        "PANGOCAIRO_BACKEND": "fc"
+      },
+      "launcherSha256": "6d65730f15e1dc425046412ac243e492467499d41647bc15090e93fe3768f016",
+      "screenshotSha256": "9223d895690796363bf98e1126117234b20ed6ad769025ecff537e86d902a4c0",
+      "sha256": "50c7835b31bc736d0b5e5f894aa8ec08a95185873fb64d29a95727d2859107d8",
+      "size": 28220816,
+      "version": "2.1",
+      "workflow": "Chinese UTF-8 editing, GUI find/replace, save; configured generation reopen, further edit and save"
+    }
+  ],
+  "bundledNoticesEvidence": "2026-09-30-geany-final-file.json",
+  "date": "2026-09-30",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14; UID 1000",
+  "licenseEvidence": [
+    "https://github.com/geany/geany/releases/download/2.1.0/geany-2.1_setup.exe",
+    "https://raw.githubusercontent.com/geany/geany/2.1.0/COPYING"
+  ],
+  "limits": [
+    "Compilation, debugging, plugin workflows and cross-version upgrade not tested.",
+    "Signed local-market lifecycle verification follows this receipt; remote/public binary redistribution not performed.",
+    "Fresh-machine recipe registration and guest online download remain unverified."
+  ],
+  "schemaVersion": 1
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "applicationId": "mpchc",
+  "forwardReceiptCorrection": true,
+  "previousOnlineVersion": 32,
+  "metadataVersion": 33,
+  "rootVersion": 1,
+  "rootDocumentsAndSignaturesPreserved": true,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "all177TerminalCoreJobsAnd63FullStoreRowsPreserved": true,
+  "oldCatalogueEntriesExceptMpcEvidenceReferencePreserved": true,
+  "oldSignedV23FilesAndTargetsPreserved": true,
+  "newSignedV24FilesVerified": 28,
+  "catalogueEntries": 25,
+  "marketEntry": {
+    "compatibility": {
+      "evidence": "windows-mpchc-20261006-corrected.acceptance.json#mpchc",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+        "size": 22986429,
+        "target": "MPC-HC.2.8.2.x64.exe",
+        "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "mpchc"
+    },
+    "id": "mpchc",
+    "license": "GPL-3.0-or-later",
+    "name": {
+      "en": "MPC-HC (limited compatibility)",
+      "zhCN": "MPC-HC（受限兼容）"
+    },
+    "origin": "https://github.com/clsid2/mpc-hc",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "MPC-HC Team",
+    "summary": {
+      "en": "Requires manual VMR9 renderless; limited video/frame workflow tested. Timing issue unresolved; EOF and A/V sync unverified.",
+      "zhCN": "需手动选择 VMR9 renderless；有限视频/帧保存测试通过，时间轴异常未修复，自动结束与音画同步未验收"
+    },
+    "version": "2.8.2"
+  },
+  "installed": {
+    "appId": "mpchc",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "2.8.2"
+  },
+  "selectedGeneration": "gen-job-1791248844496-1",
+  "generationsAndConfigurationsPreserved": true,
+  "fullCorrectedRestartSnapshotPreserved": true,
+  "fullSignedTrustDocumentsPreservedAcrossCorrectedRestart": true,
+  "latestKnownTimeMonotonic": true,
+  "powerNeverPreserved": true,
+  "trustResetOrDowngradePerformed": false,
+  "published": true,
+  "countsAsCompleted": true,
+  "fullPlayerAcceptance": false,
+  "timelineProblemFixed": false
+}

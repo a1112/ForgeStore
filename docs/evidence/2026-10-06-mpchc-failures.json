@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "applicationId": "mpchc",
+  "defaultRenderer": {
+    "passed": false,
+    "evidence": "2026-10-06-mpchc/default-renderer-failed.jpg",
+    "detail": "GUI reported failure to load the selected video renderer. No failing HRESULT was captured."
+  },
+  "basicFallbackSaveImage": {
+    "passed": false,
+    "attempts": 2,
+    "expectedPath": "output/frame-original.png",
+    "absentAfterNormalExit": true,
+    "detail": "Native PNG save dialog was submitted twice; independent reads failed FileNotFoundError. No modal error was captured; a short-lived OSD may have been missed."
+  },
+  "manualWorkaround": {
+    "passedForLimitedFrameWorkflow": true,
+    "setting": "Video Mixing Renderer 9 (renderless)",
+    "configuredThroughGui": true,
+    "automaticRecipeRepair": false
+  },
+  "timeline": {
+    "passed": false,
+    "observed": "00:40 / 00:20",
+    "fixed": false,
+    "evidence": "2026-10-06-mpchc/vmr9-frame-saved.jpg"
+  },
+  "reviewCorrection": {
+    "previousLicenseField": "GPL-3.0-only",
+    "correctedLicenseField": "GPL-3.0-or-later",
+    "basis": "Fixed mplayerc.cpp core source expressly permits any later version; COPYING/About alone do not settle only/or-later."
+  },
+  "harnessFailures": [
+    "Optional empty launch arguments normalized away; exact app comparison rejected before install submission. Corrected normalized definition readback retained.",
+    "Source probe for PlayerSettings.cpp returned 404; actual fixed AppSettings.cpp was obtained and pinned.",
+    "One fresh-process helper contained a mistyped expected PNG digest and stopped before submitting a job; corrected helper loads the previously verified digest.",
+    "Two host nested quoting attempts failed before creating helpers.",
+    "Initial forward-slash path did not navigate the native file dialog; backslash Windows path and real file list selection succeeded.",
+    "Local noVNC forwarding was absent; existing SSH loopback forward restored without restarting either VM.",
+    "Rollback verification initially expected an additional Core job; read-only full state showed rollback selects the existing generation directly, leaving 176 Core jobs and adding one Store row. Assertion stopped before GUI job submission; corrected exact count used.",
+    "Corrected-catalogue public packaging was attempted while signing was still running and stopped at absent metadata; signer completion was verified, empty partial public target directory checked and populated once. No signed files overwritten.",
+    "Corrected-catalogue stage retained stale expected role 32 after all 28 files were extracted; actual signed role is 33. Read-only resume verified every byte/owner before preflight and forward activation. No trust mutation happened at the failed stage."
+  ],
+  "authentication": "Existing authorized guest login used; no credential changes, passwords or signing private keys in repository.",
+  "receiptCorrection": {
+    "previousReceipt": "windows-mpchc-20261006.acceptance.json",
+    "previousReceiptSha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+    "correctedReceipt": "windows-mpchc-20261006-corrected.acceptance.json",
+    "correctedReceiptSha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+    "previousOnlineVersion": 32,
+    "nextOnlineVersion": 33,
+    "historyAndTargetPinsPreserved": true,
+    "diagnosis": "Initial receipt used the reverse-chronological jobs.list array as chronological: installJobId and reopenJobId were interchanged. Actual job records and functional evidence are unchanged. Retain the signed previous target and catalogue; this correction is a new target under increasing online role version."
+  }
+}

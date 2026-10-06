@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "applicationId": "mpchc",
+  "coreJobs": 176,
+  "storeRows": 62,
+  "previous173CoreAnd61FullStoreRowsPreserved": true,
+  "oldSourceDefinitionsAndOtherGenerationsPreserved": true,
+  "signedTrustAndGuardsPreserved": true,
+  "generationId": "gen-job-1791250002939-4",
+  "fixture": {
+    "path": "input/市场视频.avi",
+    "sizeBytes": 3452134,
+    "sha256": "0f37d42f35e6af437f3bd4a9ded800d1b803158717c6e7b658536f3ea648317b",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mpeg4",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360
+        },
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "12.042449"
+      }
+    },
+    "independentlyGenerated": true,
+    "settingsCopiedFromOriginal": false
+  },
+  "pixelVerification": {
+    "file": "output/market-frame.png",
+    "sizeBytes": 92021,
+    "sha256": "dfc94b486ab97234cb4bf7a122215e125a10665d017646119e09b5f38494050a",
+    "width": 640,
+    "height": 360,
+    "nearestDecodedFrame": 222,
+    "meanAbsoluteRgbDifference": 0.8685517939814815,
+    "maxRgbDifference": 3,
+    "decodedCandidateFrames": 10,
+    "sourceSha256": "0f37d42f35e6af437f3bd4a9ded800d1b803158717c6e7b658536f3ea648317b",
+    "outputGuiCreated": true
+  },
+  "outputs": {
+    "original": {
+      "generationId": "gen-job-1791248844496-1",
+      "file": "output/frame-vmr9.png",
+      "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+      "sizeBytes": 85416
+    },
+    "updated": {
+      "generationId": "gen-job-1791250002939-4",
+      "file": "output/market-frame.png",
+      "sha256": "dfc94b486ab97234cb4bf7a122215e125a10665d017646119e09b5f38494050a",
+      "sizeBytes": 92021
+    }
+  },
+  "jobs": [
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 14127,
+          "requestId": "job-1791250365369-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 78364,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+          "requestId": "job-1791250365369-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 78406,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791250365369-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791250002939-4",
+      "id": "job-1791250365369-6",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 13742,
+          "requestId": "job-1791250073557-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 275706,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+          "requestId": "job-1791250073557-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 275748,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791250073557-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791250002939-4",
+      "id": "job-1791250073557-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 13434,
+          "requestId": "job-1791250002939-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5750,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+          "requestId": "job-1791250002939-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5792,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791250002939-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791250002939-4",
+      "id": "job-1791250002939-4",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12615,
+          "requestId": "job-1791249455183-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 74831,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+          "requestId": "job-1791249455183-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 74874,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791249455183-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791248844496-1",
+      "id": "job-1791249455183-3",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 11957,
+          "requestId": "job-1791248888149-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 497578,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+          "requestId": "job-1791248888149-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 497621,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791248888149-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791248844496-1",
+      "id": "job-1791248888149-2",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 11765,
+          "requestId": "job-1791248844496-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5868,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+          "requestId": "job-1791248844496-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5910,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791248844496-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791248844496-1",
+      "id": "job-1791248844496-1",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "marketUpdate": {
+    "action": "update",
+    "appId": "mpchc",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "938c7ace-ba80-44f3-ba34-91ad89c3ee5f",
+    "state": "succeeded"
+  },
+  "freshVideoReplayObserved": true,
+  "freshGuiOutputSettingObserved": "Video Mixing Renderer 9 (renderless)",
+  "explicitFreshProcessPngReopenObserved": true,
+  "manualSettingsCopied": false,
+  "timelineDefectFixed": false
+}

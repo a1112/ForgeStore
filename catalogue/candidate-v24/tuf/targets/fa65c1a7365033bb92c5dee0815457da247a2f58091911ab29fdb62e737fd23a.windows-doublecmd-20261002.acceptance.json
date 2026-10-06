@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-02",
+  "environment": "Original isolated ForgeOS v12 x86_64 KVM VM, restored persistent 40 GiB overlay; Wine 11.14; UID 1000",
+  "applications": [
+    {
+      "id": "doublecmd",
+      "version": "1.2.9",
+      "sha256": "3824250b280d1eaefe6422690bb6a0fc652aa8006545c05a63f9d2e1cababfd4",
+      "size": 10639174,
+      "installJobId": "job-1790949239508-1",
+      "generationId": "gen-job-1790949239508-1",
+      "definitionDigest": "sha256:7842db61bf207578fb0de638ddba7db0a6bc053420cb5cf8ac02738f5fdaa918",
+      "launcherSha256": "06bd48bdda63ed2cddfbc5bdbfdf4275f4706e1e1cd270d8e67c45f20ec81b6f",
+      "launchJobId": "job-1790949294915-2",
+      "reopenJobId": "job-1790949406776-3",
+      "guiFileOperation": "passed",
+      "workflow": "GUI F5 copy ASCII and Chinese-named UTF-8 files to previously empty destination; F2 rename ASCII copy; F3 view Chinese output; inspect About version and GPL 2 statement; exit normally and reopen accepted output, view Chinese again, exit normally. Original inputs and copied/renamed outputs verified byte-for-byte.",
+      "files": [
+        {
+          "source": "rolling.txt",
+          "dest": "renamed.txt",
+          "sizeBytes": 48,
+          "sha256": "02bb7420c4aa158730135ee92c43a8db24b0868af6ca8a3a873d4ea3b008636a",
+          "byteEqual": true,
+          "inputUnchanged": true
+        },
+        {
+          "source": "中文.txt",
+          "dest": "中文.txt",
+          "sizeBytes": 51,
+          "sha256": "b8d4b3dddba42f9f8c9bbb8c2736c97525e29c8b17888d74c55b415d0a9066d7",
+          "byteEqual": true,
+          "inputUnchanged": true
+        }
+      ],
+      "screenshots": {
+        "2026-10-02-doublecmd-about.jpg": "ed1e8e19c5e62ff0dab66a812edd250de39326a8923d1be8b77b0ce01c3bb2f0",
+        "2026-10-02-doublecmd-copy-rename.jpg": "24242b054553110e12e4923dc2e8e0f3a0c1a476e4f0d7fedfd68aecab0a1361",
+        "2026-10-02-doublecmd-reopen-view.jpg": "67b493706ab8a037a4bd56b1879c4a80cb1453f8ee68fe0ba55de7c38b150701",
+        "2026-10-02-doublecmd-reopen.jpg": "544a64b0cf726b169311b926c8a9e2144dab5abe33ab451c9d5f249533c30e08",
+        "2026-10-02-doublecmd-view-cjk.jpg": "35ff298d817ec1dec79d003d571feced7cecc579df0a52e6a4594172d415cf4d"
+      },
+      "wineAppearance": "classic",
+      "adaptation": "Existing reviewed closed per-bottle classic appearance recipe; applied automatically before installer spawn. No service code or security guard changed.",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+    }
+  ],
+  "licenseEvidence": [
+    "https://github.com/doublecmd/doublecmd/releases/tag/v1.2.9",
+    "https://raw.githubusercontent.com/doublecmd/doublecmd/v1.2.9/doc/COPYING.txt"
+  ],
+  "licenseBasis": "About: GNU GPL 2 license; installed doc/COPYING.txt byte-identical to v1.2.9 source. Bundled component notices apply. No or-later inference from the license template.",
+  "limits": [
+    "Only copy, rename, UTF-8 Chinese viewer, exit and reopen accepted; archives, search, FTP, plugins, network shares and privileged filesystem operations unverified.",
+    "Installer is fixed official GitHub release asset with matching GitHub digest; tag commit is recorded as source reference, not a verified reproducible build.",
+    "Local Store lifecycle follows this receipt. GUI pass alone does not increase completed count. Guest online download, fresh-machine recipe registration, cross-version upgrade and remote public distribution unverified."
+  ]
+}

@@ -206,6 +206,17 @@
       "publication": "docs/evidence/2026-10-05-tuxpaint-publication.json",
       "report": "docs/windows-rolling-20261005-tuxpaint.md",
       "limitation": "Controlled manual Paint/Undo/Redo/Save/native PNG/full pixel equality/fresh gallery reopen, verified-cache same-version market update into independent empty user data, original rollback/gallery reopen and service restart passed. Chinese text/filenames, stamps/labels/other tools/export/printing, user-data migration, fresh registration, online guest download, cross-version upgrade and full source/component/redistribution audit unverified. Failed first install retained."
+    },
+    {
+      "id": "mpchc",
+      "version": "2.8.2",
+      "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+      "sizeBytes": 22986429,
+      "evidence": "docs/evidence/windows-mpchc-20261006-corrected.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v24/tuf",
+      "publication": "docs/evidence/2026-10-06-mpchc-publication.json",
+      "fullPlayerAcceptance": false,
+      "limitation": "Limited compatibility: manually select VMR9 renderless in each fresh installation generation. Chinese video playback/pause/seek, actual PNG save/source-frame comparison and fresh reopen passed in original and independent market generation; cached same-version market update, exact rollback and restart passed. Unresolved 00:40/00:20 timing issue remains; correct timing, EOF, A/V sync, physical audio, HDR/subtitles/network and fresh-machine unattended support unverified. Initial signed receipt ID error preserved and superseded by corrected target at role 33."
     }
   ],
   "queue": [
@@ -358,12 +369,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next uncompleted distinct application with verifiable fixed official installer/license/source. Preserve 11 blocked candidates, including OpenSCAD Chinese STL filename failure; do not count them. AC display dimming/off now disabled; authentication/automatic lock unchanged.",
+  "next": "Select next uncompleted distinct application with verified fixed official artifact/license. Preserve 11 blocked candidates; MPC-HC is a limited published compatibility item requiring manual VMR9, with unresolved timing issue. Windows root 1 / online roles 33 / 177 terminal Core jobs / 63 full Store rows; preserve data, trust and Never screen-off settings. Ubuntu counts remain separate at 2; Flatpak cache and two timeout failures retained.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-10-05",
+  "lastReviewed": "2026-10-06",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 22,
+    "acceptedLocalMarket": 23,
     "explicitlyBlockedCandidates": 11,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -371,15 +382,15 @@
     "pendingCandidates": 11
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v22/tuf",
-    "metadataVersion": 31,
-    "catalogueEntries": 24,
-    "acceptedDistinctWindowsApps": 22,
+    "signedCatalogue": "catalogue/candidate-v24/tuf",
+    "metadataVersion": 33,
+    "catalogueEntries": 25,
+    "acceptedDistinctWindowsApps": 23,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-05-tuxpaint-publication.json"
+    "publicationEvidence": "docs/evidence/2026-10-06-mpchc-publication.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261005-tuxpaint.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261006-mpchc.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",

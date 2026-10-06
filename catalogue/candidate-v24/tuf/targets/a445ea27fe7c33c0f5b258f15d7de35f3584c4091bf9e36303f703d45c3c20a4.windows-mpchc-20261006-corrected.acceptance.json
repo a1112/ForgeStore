@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14 win64; managed Inno install; normal user authentication retained.",
+  "applications": [
+    {
+      "id": "mpchc",
+      "version": "2.8.2",
+      "observedGuiVersion": "2.8.2 (a84d0cf38)",
+      "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+      "size": 22986429,
+      "installJobId": "job-1791248844496-1",
+      "launchJobId": "job-1791248888149-2",
+      "reopenJobId": "job-1791249455183-3",
+      "generationId": "gen-job-1791248844496-1",
+      "definitionDigest": "sha256:5bbc7c5af9991c367b77072e510b8f73c584448e72ee78d8b8f3682a271f9105",
+      "launcherSha256": "sha256:cb5a1ca49e9bcb237ec0b7d9fddc8c8f8f07ad749ee954c4e407089ad2df4c95",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "guiFileOperation": "passed-with-manual-renderer-and-known-timing-limitations",
+      "fixture": {
+        "sizeBytes": 4442000,
+        "sha256": "1bf2987304d2827b75a44a1ca02170d40ad03b2eace9212bc24ef22c6d7af8ac",
+        "names": [
+          "input/测试视频.avi",
+          "input/test-video.avi"
+        ],
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mpeg4",
+              "codec_type": "video",
+              "width": 640,
+              "height": 360
+            },
+            {
+              "codec_name": "mp3",
+              "codec_type": "audio"
+            }
+          ],
+          "format": {
+            "duration": "20.041667"
+          }
+        }
+      },
+      "output": {
+        "path": "output/frame-vmr9.png",
+        "sizeBytes": 85416,
+        "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7"
+      },
+      "pixelVerification": {
+        "file": "output/frame-vmr9.png",
+        "sizeBytes": 85416,
+        "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+        "width": 640,
+        "height": 360,
+        "nearestDecodedFrame": 479,
+        "meanAbsoluteRgbDifference": 0.8823712384259259,
+        "maxRgbDifference": 3,
+        "decodedCandidateFrames": 10,
+        "sourceSha256": "1bf2987304d2827b75a44a1ca02170d40ad03b2eace9212bc24ef22c6d7af8ac",
+        "outputGuiCreated": true
+      },
+      "explicitFreshProcessPngReopenObserved": true,
+      "videoRendererPersistenceVerified": false,
+      "fullPlayerAcceptance": false,
+      "screenshots": {
+        "about-version-license.jpg": {
+          "sha256": "baf3cd109c5aa8b719a08b3b10736de3d7acfa23a5d0d567c743b075c732227b",
+          "sizeBytes": 67428
+        },
+        "basic-renderer-no-export-feedback.jpg": {
+          "sha256": "0b124bee6a10f6ee1734ac7ff0968c5046dcb2c85d51fb5ad8204912022834e9",
+          "sizeBytes": 59535
+        },
+        "basic-renderer-playing.jpg": {
+          "sha256": "146546b621b80c7ab4289bdbd8b46adbe370e2bc8cba22c856d3778378632965",
+          "sizeBytes": 59952
+        },
+        "chinese-file-selection.jpg": {
+          "sha256": "3d0ddbd9c806bffba37c6c6ca487030d36ce0c1a72e44587db8d8a9ced449168",
+          "sizeBytes": 48061
+        },
+        "default-renderer-failed.jpg": {
+          "sha256": "aa7e0a69d4ddb7d16a127812705df17005244624d1af3daef96dabca0880c638",
+          "sizeBytes": 66115
+        },
+        "frame-save-dialog.jpg": {
+          "sha256": "7c8efb05691cefeb262f047a1c98193fcfcdd420ef5a227474fd75f7d87cf2f8",
+          "sizeBytes": 45929
+        },
+        "fresh-process-png-reopened.jpg": {
+          "sha256": "06fcffdde9f5e39f61d504c8916999e17d559952b4e00881f0e320fb05945076",
+          "sizeBytes": 59245
+        },
+        "paused-seek-frame228.jpg": {
+          "sha256": "6f95e8ef2302f367ba18a8bd0a3b0de649a0cb159a092055f7e1b18c05e114bb",
+          "sizeBytes": 59562
+        },
+        "player-created-vmr9.png": {
+          "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+          "sizeBytes": 85416
+        },
+        "vmr9-frame-saved.jpg": {
+          "sha256": "602b1329821e3bfd34e3576be9297af57f9169ac1847760b808b8bcf8d70678f",
+          "sizeBytes": 60098
+        },
+        "vmr9-output-setting.jpg": {
+          "sha256": "a79259038a2ba078866a4a6ee742cc526aad6750e4acfa2b3aec7264d3c4b11b",
+          "sizeBytes": 62921
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "sourceCommit": "a84d0cf38a1866f3518bb819c901300dacff5a9b",
+    "tag": "2.8.2",
+    "releaseUrl": "https://github.com/clsid2/mpc-hc/releases/tag/2.8.2",
+    "publishedAt": "2026-09-17T17:37:00Z",
+    "assets": [
+      {
+        "name": "MPC-HC.2.8.2.x64.exe",
+        "size": 22986429,
+        "digest": "sha256:4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+        "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.exe"
+      },
+      {
+        "name": "MPC-HC.2.8.2.x64.zip",
+        "size": 29990628,
+        "digest": "sha256:eefee5ac29fc33e6031e34e0e163e157212d272c1bcf576149d40c0c7abb32f4",
+        "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.zip"
+      },
+      {
+        "name": "MPC-HC.2.8.2.x86.exe",
+        "size": 21370241,
+        "digest": "sha256:4a2115a5ddd9d26945a2593410a2a47ab86b8eb5fc44c8397cab1b22911030d3",
+        "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x86.exe"
+      },
+      {
+        "name": "MPC-HC.2.8.2.x86.zip",
+        "size": 27871841,
+        "digest": "sha256:fd8e668fc239cd19bf764ccdfb787176a749315180a6470680511d2c8cad2675",
+        "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x86.zip"
+      }
+    ],
+    "sourceFiles": [
+      {
+        "path": "COPYING.txt",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/COPYING.txt",
+        "size": 35147,
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      },
+      {
+        "path": "Readme.md",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/Readme.md",
+        "size": 5813,
+        "sha256": "e65c824b15c2e8acc039f5868b95111f731180a0e4fe11ac71a17331fa20d55f"
+      },
+      {
+        "path": "version.txt",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/version.txt",
+        "size": 7,
+        "sha256": "b59f6a0a55c78ddd4963c3c8b9e155b91b03dcb12d39f4542f551930f82a7de8"
+      },
+      {
+        "path": "distrib/mpc-hc_setup.iss",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/distrib/mpc-hc_setup.iss",
+        "size": 26604,
+        "sha256": "57cc968f5906b0dd98fe60f153332d7f4188a2886f5a769da911db6c25e949e0"
+      }
+    ],
+    "selectedArtifact": {
+      "fileName": "MPC-HC.2.8.2.x64.exe",
+      "sizeBytes": 22986429,
+      "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+      "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.exe",
+      "upstreamGitHubDigestMatched": true
+    },
+    "license": "GPL-3.0-or-later (player core); bundled components have separate notices",
+    "fullComponentLicenseClosureClaimed": false,
+    "rendererSourceFiles": [
+      {
+        "path": "src/mpc-hc/MainFrm.cpp",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/src/mpc-hc/MainFrm.cpp",
+        "size": 928858,
+        "sha256": "75ccf5673f7c1279324805e9c97d701a10b352b42b695c593849d2d613126f5e"
+      },
+      {
+        "path": "src/mpc-hc/PPageOutput.cpp",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/src/mpc-hc/PPageOutput.cpp",
+        "size": 27697,
+        "sha256": "d333b97e1dc67fc0f29615bbed83e56855659fca6fa83740b975636cf0496bd8"
+      },
+      {
+        "path": "src/mpc-hc/mplayerc.cpp",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/src/mpc-hc/mplayerc.cpp",
+        "size": 115927,
+        "sha256": "b8af2589e02e43fe5c326b1a7c3a47df4434568773e783ffe5590b352def97ef"
+      },
+      {
+        "path": "src/mpc-hc/AppSettings.cpp",
+        "url": "https://raw.githubusercontent.com/clsid2/mpc-hc/a84d0cf38a1866f3518bb819c901300dacff5a9b/src/mpc-hc/AppSettings.cpp",
+        "size": 204764,
+        "sha256": "e609b90c676f64573733bd6ca62b11777f0713571d2dac6a2ebff0d178ce4e2d"
+      }
+    ],
+    "licenseBasis": "Fixed src/mpc-hc/mplayerc.cpp at a84d0cf38 explicitly permits GPL version 3 or any later version. Installed COPYING.txt matches fixed source. Full bundled component/source closure is not claimed.",
+    "schemaVersion": 1,
+    "date": "2026-10-06",
+    "applicationId": "mpchc",
+    "version": "2.8.2",
+    "observedGuiVersion": "2.8.2 (a84d0cf38)",
+    "authenticodeVerified": false,
+    "reproducibleBuildVerified": false
+  },
+  "limits": [
+    "Fresh installation requires manual Options > Playback > Output > Video Mixing Renderer 9 (renderless). Default renderer fails to load; its basic EVR fallback plays but two PNG Save Image attempts left the requested file absent. This recipe does not automatically configure VMR9.",
+    "VMR9 limited GUI workflow: open Chinese-name 20.041667-second MPEG4/MP3 AVI, visibly play, pause/seek, save one PNG, normal exit and fresh managed process reopen the PNG. PNG is 640x360 and matches candidate source frame 479 within mean absolute RGB error 0.8824 / maximum 3, among the final ten decoded candidates; this is not verification of all frames.",
+    "Known unresolved timing problem: UI displayed 00:40 / 00:20 near the end of the source. Correct playback timing, automatic end-of-file, A/V synchronization and precise seeking are not accepted. This is not proven to be merely a display defect.",
+    "PNG reopen proves file persistence and a fresh image-open workflow; it does not prove video renderer persistence or video replay across processes. No hardware audio observation, subtitles, hardware acceleration, HDR, streaming or network playback acceptance.",
+    "Official fixed installer digest matches GitHub release asset digest; GUI version/commit and installed COPYING match fixed source. Complete bundled source/license closure, Authenticode and reproducible build are not verified.",
+    "Signed catalogue activation, independent market installation generation, update/rollback and service restart remain pending at receipt freeze. Fresh-machine unattended registration, guest online download and cross-version upgrades are not verified."
+  ],
+  "publicationEvidenceSeparate": true,
+  "supersedes": {
+    "target": "windows-mpchc-20261006.acceptance.json",
+    "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+    "reason": "Initial receipt used the reverse-chronological jobs.list array as chronological: installJobId and reopenJobId were interchanged. Actual job records and functional evidence are unchanged. Retain the signed previous target and catalogue; this correction is a new target under increasing online role version."
+  }
+}

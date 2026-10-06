@@ -1,0 +1,1202 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "applicationId": "mpchc",
+  "version": "2.8.2",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited manual-VMR9 video/frame-save/fresh-reopen workflow, with unresolved timing issue; not complete player acceptance.",
+  "fullPlayerAcceptance": false,
+  "timingProblemFixed": false,
+  "freshMachineUnattendedSupport": false,
+  "signedCatalogue": "catalogue/candidate-v24/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 33,
+    "snapshot": 33,
+    "timestamp": 33
+  },
+  "catalogueEntries": 25,
+  "acceptedDistinctWindowsApplications": 23,
+  "coreJobCount": 177,
+  "storeRowCount": 63,
+  "acceptanceReceipt": "windows-mpchc-20261006-corrected.acceptance.json",
+  "acceptanceReceiptSha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+  "supersededReceiptPreserved": {
+    "name": "windows-mpchc-20261006.acceptance.json",
+    "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+    "reason": "Installation/reopen task IDs transposed in initial receipt; superseded with a new signed target and increasing version, not rewritten."
+  },
+  "initialActivationAtOnlineVersion32": {
+    "activated": true,
+    "metadataVersion": 32,
+    "catalogueEntries": 25,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "originalCoreJobsPreserved": true,
+    "coreJobs": 173,
+    "fullStoreRowsPreserved": true,
+    "storeRows": 61,
+    "previousInstalledAndEntriesPreserved": true,
+    "mpchcEntry": {
+      "compatibility": {
+        "evidence": "windows-mpchc-20261006.acceptance.json#mpchc",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+          "size": 22986429,
+          "target": "MPC-HC.2.8.2.x64.exe",
+          "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "mpchc"
+      },
+      "id": "mpchc",
+      "license": "GPL-3.0-or-later",
+      "name": {
+        "en": "MPC-HC (limited compatibility)",
+        "zhCN": "MPC-HC（受限兼容）"
+      },
+      "origin": "https://github.com/clsid2/mpc-hc",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "MPC-HC Team",
+      "summary": {
+        "en": "Requires manual VMR9 renderless; limited video/frame workflow tested. Timing issue unresolved; EOF and A/V sync unverified.",
+        "zhCN": "需手动选择 VMR9 renderless；有限视频/帧保存测试通过，时间轴异常未修复，自动结束与音画同步未验收"
+      },
+      "version": "2.8.2"
+    },
+    "mpchcInstalled": {
+      "appId": "mpchc",
+      "backend": "compatforge",
+      "canRollback": false,
+      "version": "2.8.2"
+    },
+    "serviceGuardsPreserved": true
+  },
+  "lifecycleAtOnlineVersion32": {
+    "schemaVersion": 1,
+    "date": "2026-10-06",
+    "applicationId": "mpchc",
+    "restartedCoreAndStore": true,
+    "allCoreJobsTerminal": true,
+    "coreJobCount": 177,
+    "previous170CoreJobsUnchanged": true,
+    "storeRowCount": 63,
+    "previous61FullStoreRowsUnchanged": true,
+    "fullStoreRowsSha256": "172f7c07be8262778d9b2caa2d267586fc1c37fdec1acb2c69e460c356900815",
+    "historicalInterruptedStoreJobs": [],
+    "allPreexistingCoreConfigBytesAndGenerationsPreserved": true,
+    "fullRestartSnapshotStatePreserved": true,
+    "tufDocumentsIncludingSignaturesPreservedAcrossRestart": true,
+    "public27NewAnd26PreviousSignedFilesBytePreserved": true,
+    "latestKnownTime": {
+      "before": "2026-10-06T01:26:36.636323852Z",
+      "after": "2026-10-06T01:37:42.055457083Z",
+      "monotonic": true
+    },
+    "trustedRootVersion": 1,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "metadataVersions": {
+      "timestamp": 32,
+      "snapshot": 32,
+      "targets": 32
+    },
+    "catalogueEntries": 25,
+    "entry": {
+      "compatibility": {
+        "evidence": "windows-mpchc-20261006.acceptance.json#mpchc",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+          "size": 22986429,
+          "target": "MPC-HC.2.8.2.x64.exe",
+          "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "mpchc"
+      },
+      "id": "mpchc",
+      "license": "GPL-3.0-or-later",
+      "name": {
+        "en": "MPC-HC (limited compatibility)",
+        "zhCN": "MPC-HC（受限兼容）"
+      },
+      "origin": "https://github.com/clsid2/mpc-hc",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "MPC-HC Team",
+      "summary": {
+        "en": "Requires manual VMR9 renderless; limited video/frame workflow tested. Timing issue unresolved; EOF and A/V sync unverified.",
+        "zhCN": "需手动选择 VMR9 renderless；有限视频/帧保存测试通过，时间轴异常未修复，自动结束与音画同步未验收"
+      },
+      "version": "2.8.2"
+    },
+    "installed": {
+      "appId": "mpchc",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "2.8.2"
+    },
+    "selectedGeneration": "gen-job-1791248844496-1",
+    "readyGenerations": 2,
+    "generations": {
+      "applicationId": "mpchc",
+      "generations": [
+        {
+          "bottleId": "gen-job-1791248844496-1",
+          "createdAtMilliseconds": 1791248844502,
+          "definition": {
+            "bottleId": "gui-mpchc",
+            "category": "media",
+            "compatibilityRating": "unknown",
+            "id": "mpchc",
+            "installer": {
+              "arguments": [
+                "/VERYSILENT",
+                "/SUPPRESSMSGBOXES",
+                "/NORESTART",
+                "/DIR=C:\\MPCHC"
+              ],
+              "fileName": "MPC-HC.2.8.2.x64.exe",
+              "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12"
+            },
+            "launchers": [
+              {
+                "executable": "MPCHC/mpc-hc64.exe",
+                "id": "main",
+                "name": "MPC-HC"
+              }
+            ],
+            "name": "MPC-HC",
+            "publisher": "MPC-HC Team",
+            "schemaVersion": "1",
+            "tags": [
+              "rolling-1000",
+              "managed-inno"
+            ],
+            "version": "2.8.2"
+          },
+          "definitionDigest": "sha256:5bbc7c5af9991c367b77072e510b8f73c584448e72ee78d8b8f3682a271f9105",
+          "id": "gen-job-1791248844496-1",
+          "launcherDigests": {
+            "main": "sha256:cb5a1ca49e9bcb237ec0b7d9fddc8c8f8f07ad749ee954c4e407089ad2df4c95"
+          },
+          "runtime": {
+            "binding": {
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINESERVER": "/usr/bin/wineserver"
+              },
+              "executable": "/usr/bin/wine",
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "providerId": "wine-linux-x86-64-preview",
+              "wineserverExecutable": "/usr/bin/wineserver"
+            },
+            "selection": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "version": "11.14"
+          },
+          "status": "ready",
+          "updatedAtMilliseconds": 1791248859044
+        },
+        {
+          "bottleId": "gen-job-1791250002939-4",
+          "createdAtMilliseconds": 1791250002944,
+          "definition": {
+            "bottleId": "gui-mpchc",
+            "category": "media",
+            "compatibilityRating": "unknown",
+            "id": "mpchc",
+            "installer": {
+              "arguments": [
+                "/VERYSILENT",
+                "/SUPPRESSMSGBOXES",
+                "/NORESTART",
+                "/DIR=C:\\MPCHC"
+              ],
+              "fileName": "MPC-HC.2.8.2.x64.exe",
+              "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12"
+            },
+            "launchers": [
+              {
+                "executable": "MPCHC/mpc-hc64.exe",
+                "id": "main",
+                "name": "MPC-HC"
+              }
+            ],
+            "name": "MPC-HC",
+            "publisher": "MPC-HC Team",
+            "schemaVersion": "1",
+            "tags": [
+              "rolling-1000",
+              "managed-inno"
+            ],
+            "version": "2.8.2"
+          },
+          "definitionDigest": "sha256:5bbc7c5af9991c367b77072e510b8f73c584448e72ee78d8b8f3682a271f9105",
+          "id": "gen-job-1791250002939-4",
+          "launcherDigests": {
+            "main": "sha256:cb5a1ca49e9bcb237ec0b7d9fddc8c8f8f07ad749ee954c4e407089ad2df4c95"
+          },
+          "runtime": {
+            "binding": {
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINESERVER": "/usr/bin/wineserver"
+              },
+              "executable": "/usr/bin/wine",
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "providerId": "wine-linux-x86-64-preview",
+              "wineserverExecutable": "/usr/bin/wineserver"
+            },
+            "selection": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "version": "11.14"
+          },
+          "status": "ready",
+          "updatedAtMilliseconds": 1791250016333
+        }
+      ],
+      "recoveryCapability": "kernel-boot-identity",
+      "schemaVersion": "1",
+      "selectedGeneration": "gen-job-1791248844496-1"
+    },
+    "outputs": {
+      "original": {
+        "generationId": "gen-job-1791248844496-1",
+        "file": "output/frame-vmr9.png",
+        "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+        "sizeBytes": 85416
+      },
+      "updated": {
+        "generationId": "gen-job-1791250002939-4",
+        "file": "output/market-frame.png",
+        "sha256": "dfc94b486ab97234cb4bf7a122215e125a10665d017646119e09b5f38494050a",
+        "sizeBytes": 92021
+      }
+    },
+    "marketFixture": {
+      "path": "input/市场视频.avi",
+      "sizeBytes": 3452134,
+      "sha256": "0f37d42f35e6af437f3bd4a9ded800d1b803158717c6e7b658536f3ea648317b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mpeg4",
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "12.042449"
+        }
+      },
+      "independentlyGenerated": true,
+      "settingsCopiedFromOriginal": false
+    },
+    "marketPixelVerification": {
+      "file": "output/market-frame.png",
+      "sizeBytes": 92021,
+      "sha256": "dfc94b486ab97234cb4bf7a122215e125a10665d017646119e09b5f38494050a",
+      "width": 640,
+      "height": 360,
+      "nearestDecodedFrame": 222,
+      "meanAbsoluteRgbDifference": 0.8685517939814815,
+      "maxRgbDifference": 3,
+      "decodedCandidateFrames": 10,
+      "sourceSha256": "0f37d42f35e6af437f3bd4a9ded800d1b803158717c6e7b658536f3ea648317b",
+      "outputGuiCreated": true
+    },
+    "inputOutputLauncherLicenseAndTuxPaintPinsPreserved": true,
+    "originalRollbackExplicitPngReopenObserved": true,
+    "marketFreshVideoAndPngReopenObserved": true,
+    "marketFreshGuiVmr9PersistenceObserved": true,
+    "coreJobs": [
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 14783,
+            "requestId": "job-1791250532177-7",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 58403,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+            "requestId": "job-1791250532177-7",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 58445,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791250532177-7",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791248844496-1",
+        "id": "job-1791250532177-7",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 14127,
+            "requestId": "job-1791250365369-6",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 78364,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+            "requestId": "job-1791250365369-6",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 78406,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791250365369-6",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791250002939-4",
+        "id": "job-1791250365369-6",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 13742,
+            "requestId": "job-1791250073557-5",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 275706,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+            "requestId": "job-1791250073557-5",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 275748,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791250073557-5",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791250002939-4",
+        "id": "job-1791250073557-5",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 13434,
+            "requestId": "job-1791250002939-4",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 5750,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+            "requestId": "job-1791250002939-4",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 5792,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791250002939-4",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791250002939-4",
+        "id": "job-1791250002939-4",
+        "kind": "install",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 12615,
+            "requestId": "job-1791249455183-3",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 74831,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+            "requestId": "job-1791249455183-3",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 74874,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791249455183-3",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791248844496-1",
+        "id": "job-1791249455183-3",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 11957,
+            "requestId": "job-1791248888149-2",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 497578,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+            "requestId": "job-1791248888149-2",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 497621,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791248888149-2",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791248844496-1",
+        "id": "job-1791248888149-2",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 11765,
+            "requestId": "job-1791248844496-1",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 5868,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+            "requestId": "job-1791248844496-1",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 5910,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791248844496-1",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791248844496-1",
+        "id": "job-1791248844496-1",
+        "kind": "install",
+        "status": "succeeded"
+      }
+    ],
+    "storeJobs": {
+      "update": {
+        "action": "update",
+        "appId": "mpchc",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "938c7ace-ba80-44f3-ba34-91ad89c3ee5f",
+        "state": "succeeded"
+      },
+      "rollback": {
+        "action": "rollback",
+        "appId": "mpchc",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "0e4fd3ea-00e6-491b-8d64-376b9b03b7e2",
+        "state": "succeeded"
+      }
+    },
+    "components": {
+      "compatforge.service": {
+        "binary": "compatforge-cli-managed-msi-v10",
+        "sha256": "feaad5a5010fbf1506f2e4771bb7677345ccbba757b5d4aa97b65be2b502ce0a"
+      },
+      "forge-store.service": {
+        "binary": "forge-store-service-managed-msi-v2",
+        "sha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f"
+      }
+    },
+    "serviceGuards": {
+      "compatforge.service": [],
+      "forge-store.service": [
+        "NoNewPrivileges=yes",
+        "ProtectSystem=full",
+        "PrivateTmp=yes"
+      ]
+    },
+    "readinessRetries": {
+      "core": 0,
+      "store": 0
+    },
+    "published": true,
+    "countsAsCompleted": true,
+    "fullPlayerAcceptance": false,
+    "timingProblemFixed": false,
+    "bootId": "1293b392-48ba-46e2-a8bd-cd646bc07b80",
+    "powerConfigAfterServiceRestart": {
+      "text": "[AC][Display]\nDimDisplayIdleTimeoutSec=-1\nDimDisplayWhenIdle=false\nTurnOffDisplayIdleTimeoutSec=-1\nTurnOffDisplayWhenIdle=false\n",
+      "sha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+      "screenLockConfigStillAbsent": true,
+      "coldBootAndLongIdleTimingNotYetObserved": true
+    }
+  },
+  "forwardCorrectionAndRestartAtOnlineVersion33": {
+    "schemaVersion": 1,
+    "date": "2026-10-06",
+    "applicationId": "mpchc",
+    "forwardReceiptCorrection": true,
+    "previousOnlineVersion": 32,
+    "metadataVersion": 33,
+    "rootVersion": 1,
+    "rootDocumentsAndSignaturesPreserved": true,
+    "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+    "all177TerminalCoreJobsAnd63FullStoreRowsPreserved": true,
+    "oldCatalogueEntriesExceptMpcEvidenceReferencePreserved": true,
+    "oldSignedV23FilesAndTargetsPreserved": true,
+    "newSignedV24FilesVerified": 28,
+    "catalogueEntries": 25,
+    "marketEntry": {
+      "compatibility": {
+        "evidence": "windows-mpchc-20261006-corrected.acceptance.json#mpchc",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+          "size": 22986429,
+          "target": "MPC-HC.2.8.2.x64.exe",
+          "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "mpchc"
+      },
+      "id": "mpchc",
+      "license": "GPL-3.0-or-later",
+      "name": {
+        "en": "MPC-HC (limited compatibility)",
+        "zhCN": "MPC-HC（受限兼容）"
+      },
+      "origin": "https://github.com/clsid2/mpc-hc",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "MPC-HC Team",
+      "summary": {
+        "en": "Requires manual VMR9 renderless; limited video/frame workflow tested. Timing issue unresolved; EOF and A/V sync unverified.",
+        "zhCN": "需手动选择 VMR9 renderless；有限视频/帧保存测试通过，时间轴异常未修复，自动结束与音画同步未验收"
+      },
+      "version": "2.8.2"
+    },
+    "installed": {
+      "appId": "mpchc",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "2.8.2"
+    },
+    "selectedGeneration": "gen-job-1791248844496-1",
+    "generationsAndConfigurationsPreserved": true,
+    "fullCorrectedRestartSnapshotPreserved": true,
+    "fullSignedTrustDocumentsPreservedAcrossCorrectedRestart": true,
+    "latestKnownTimeMonotonic": true,
+    "powerNeverPreserved": true,
+    "trustResetOrDowngradePerformed": false,
+    "published": true,
+    "countsAsCompleted": true,
+    "fullPlayerAcceptance": false,
+    "timelineProblemFixed": false
+  },
+  "independentMarketGenerationGui": {
+    "schemaVersion": 1,
+    "date": "2026-10-06",
+    "applicationId": "mpchc",
+    "coreJobs": 176,
+    "storeRows": 62,
+    "previous173CoreAnd61FullStoreRowsPreserved": true,
+    "oldSourceDefinitionsAndOtherGenerationsPreserved": true,
+    "signedTrustAndGuardsPreserved": true,
+    "generationId": "gen-job-1791250002939-4",
+    "fixture": {
+      "path": "input/市场视频.avi",
+      "sizeBytes": 3452134,
+      "sha256": "0f37d42f35e6af437f3bd4a9ded800d1b803158717c6e7b658536f3ea648317b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mpeg4",
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_name": "mp3",
+            "codec_type": "audio"
+          }
+        ],
+        "format": {
+          "duration": "12.042449"
+        }
+      },
+      "independentlyGenerated": true,
+      "settingsCopiedFromOriginal": false
+    },
+    "pixelVerification": {
+      "file": "output/market-frame.png",
+      "sizeBytes": 92021,
+      "sha256": "dfc94b486ab97234cb4bf7a122215e125a10665d017646119e09b5f38494050a",
+      "width": 640,
+      "height": 360,
+      "nearestDecodedFrame": 222,
+      "meanAbsoluteRgbDifference": 0.8685517939814815,
+      "maxRgbDifference": 3,
+      "decodedCandidateFrames": 10,
+      "sourceSha256": "0f37d42f35e6af437f3bd4a9ded800d1b803158717c6e7b658536f3ea648317b",
+      "outputGuiCreated": true
+    },
+    "outputs": {
+      "original": {
+        "generationId": "gen-job-1791248844496-1",
+        "file": "output/frame-vmr9.png",
+        "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+        "sizeBytes": 85416
+      },
+      "updated": {
+        "generationId": "gen-job-1791250002939-4",
+        "file": "output/market-frame.png",
+        "sha256": "dfc94b486ab97234cb4bf7a122215e125a10665d017646119e09b5f38494050a",
+        "sizeBytes": 92021
+      }
+    },
+    "jobs": [
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 14127,
+            "requestId": "job-1791250365369-6",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 78364,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+            "requestId": "job-1791250365369-6",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 78406,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791250365369-6",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791250002939-4",
+        "id": "job-1791250365369-6",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 13742,
+            "requestId": "job-1791250073557-5",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 275706,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+            "requestId": "job-1791250073557-5",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 275748,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791250073557-5",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791250002939-4",
+        "id": "job-1791250073557-5",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 13434,
+            "requestId": "job-1791250002939-4",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 5750,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791250002939-4/prefix",
+            "requestId": "job-1791250002939-4",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 5792,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791250002939-4",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791250002939-4",
+        "id": "job-1791250002939-4",
+        "kind": "install",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 12615,
+            "requestId": "job-1791249455183-3",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 74831,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+            "requestId": "job-1791249455183-3",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 74874,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791249455183-3",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791248844496-1",
+        "id": "job-1791249455183-3",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 11957,
+            "requestId": "job-1791248888149-2",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 497578,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+            "requestId": "job-1791248888149-2",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 497621,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791248888149-2",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791248844496-1",
+        "id": "job-1791248888149-2",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      {
+        "applicationId": "mpchc",
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 11765,
+            "requestId": "job-1791248844496-1",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 5868,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+            "requestId": "job-1791248844496-1",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 5910,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791248844496-1",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791248844496-1",
+        "id": "job-1791248844496-1",
+        "kind": "install",
+        "status": "succeeded"
+      }
+    ],
+    "marketUpdate": {
+      "action": "update",
+      "appId": "mpchc",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "938c7ace-ba80-44f3-ba34-91ad89c3ee5f",
+      "state": "succeeded"
+    },
+    "freshVideoReplayObserved": true,
+    "freshGuiOutputSettingObserved": "Video Mixing Renderer 9 (renderless)",
+    "explicitFreshProcessPngReopenObserved": true,
+    "manualSettingsCopied": false,
+    "timelineDefectFixed": false
+  },
+  "marketDetailsLimitationsAndCorrectedReceiptVisiblyObserved": true,
+  "screenshotsAndNativeOutputs": {
+    "about-version-license.jpg": {
+      "sha256": "baf3cd109c5aa8b719a08b3b10736de3d7acfa23a5d0d567c743b075c732227b",
+      "sizeBytes": 67428
+    },
+    "basic-renderer-no-export-feedback.jpg": {
+      "sha256": "0b124bee6a10f6ee1734ac7ff0968c5046dcb2c85d51fb5ad8204912022834e9",
+      "sizeBytes": 59535
+    },
+    "basic-renderer-playing.jpg": {
+      "sha256": "146546b621b80c7ab4289bdbd8b46adbe370e2bc8cba22c856d3778378632965",
+      "sizeBytes": 59952
+    },
+    "chinese-file-selection.jpg": {
+      "sha256": "3d0ddbd9c806bffba37c6c6ca487030d36ce0c1a72e44587db8d8a9ced449168",
+      "sizeBytes": 48061
+    },
+    "default-renderer-failed.jpg": {
+      "sha256": "aa7e0a69d4ddb7d16a127812705df17005244624d1af3daef96dabca0880c638",
+      "sizeBytes": 66115
+    },
+    "frame-save-dialog.jpg": {
+      "sha256": "7c8efb05691cefeb262f047a1c98193fcfcdd420ef5a227474fd75f7d87cf2f8",
+      "sizeBytes": 45929
+    },
+    "fresh-process-png-reopened.jpg": {
+      "sha256": "06fcffdde9f5e39f61d504c8916999e17d559952b4e00881f0e320fb05945076",
+      "sizeBytes": 59245
+    },
+    "market-chinese-video-selection.jpg": {
+      "sha256": "93f3d660591211aa54de91bbd839aecc6a1d751d3c34388a2924d91c31e90173",
+      "sizeBytes": 46775
+    },
+    "market-corrected-details.jpg": {
+      "sha256": "0b1e0676b8a388ac9137480d372b41673cb1707b18784253bed1d26ff0cb32af",
+      "sizeBytes": 60052
+    },
+    "market-fresh-png-reopened.jpg": {
+      "sha256": "5aad1d81205ef2fe6ff59393103eb09a6fea5e41460fa12b641de07c9452271e",
+      "sizeBytes": 62545
+    },
+    "market-fresh-video-replay.jpg": {
+      "sha256": "188dcac5311051beaaf47f78b7a683b782bf502a63fefc4ab17b171eb5832129",
+      "sizeBytes": 62104
+    },
+    "market-fresh-vmr9-persisted.jpg": {
+      "sha256": "764439e0737b946471c0dbfe7a156cf8f9b7f3492d505d8562948afa83d22d07",
+      "sizeBytes": 62887
+    },
+    "market-limited-list.jpg": {
+      "sha256": "d51ef3289f92e6ffd3d28d0ec3007e43046ff458bd0663826e9ea1f5890a86fc",
+      "sizeBytes": 55053
+    },
+    "market-manual-vmr9.jpg": {
+      "sha256": "b36d2080c91759915274bd4cc3f36017221fb80792c3d27fbf6f0ea8e44e57e3",
+      "sizeBytes": 57428
+    },
+    "market-paused-seek-frame222.jpg": {
+      "sha256": "10114eb6a4907b63664eaed708b22a5023f9fb896840978b737901960f276cca",
+      "sizeBytes": 63341
+    },
+    "market-playing.jpg": {
+      "sha256": "812d2a09957475d973ceae54d71ee42b09bb96e614743fd11e0a2352e851de9d",
+      "sizeBytes": 62124
+    },
+    "market-png-save-dialog.jpg": {
+      "sha256": "99b86f190a84cd53378aac5f233388d259f89480f7da6c48e50513b78ce04173",
+      "sizeBytes": 48695
+    },
+    "paused-seek-frame228.jpg": {
+      "sha256": "6f95e8ef2302f367ba18a8bd0a3b0de649a0cb159a092055f7e1b18c05e114bb",
+      "sizeBytes": 59562
+    },
+    "player-created-market.png": {
+      "sha256": "dfc94b486ab97234cb4bf7a122215e125a10665d017646119e09b5f38494050a",
+      "sizeBytes": 92021
+    },
+    "player-created-vmr9.png": {
+      "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+      "sizeBytes": 85416
+    },
+    "rollback-original-png-reopened.jpg": {
+      "sha256": "71a1a1e71d4aeb8bc95cc4ee969a6497114b6ea2ceb94bb94fca72e88bc639d5",
+      "sizeBytes": 59252
+    },
+    "vmr9-frame-saved.jpg": {
+      "sha256": "602b1329821e3bfd34e3576be9297af57f9169ac1847760b808b8bcf8d70678f",
+      "sizeBytes": 60098
+    },
+    "vmr9-output-setting.jpg": {
+      "sha256": "a79259038a2ba078866a4a6ee742cc526aad6750e4acfa2b3aec7264d3c4b11b",
+      "sizeBytes": 62921
+    }
+  },
+  "signedCatalogueFiles": {
+    "23": {
+      "tuf/metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "tuf/metadata/32.snapshot.json": "df1bfd29ec39ae3e41a7f86ebeca77dfdc910239a80a31b09404303a4a97c121",
+      "tuf/metadata/32.targets.json": "efad0d937f2da25c5affda6b88b937157088ec10230bfb24bd69066adc5b3faf",
+      "tuf/metadata/timestamp.json": "8232b968a9ed403305701390e764be34ad9e2ef94bd693bf254181d7fef98e20",
+      "tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "tuf/targets/1a3cdf0f7006a880d758cdfcd5863d7570aca70a7e0b3982eb31090a60fb14f3.catalogue.json": "1a3cdf0f7006a880d758cdfcd5863d7570aca70a7e0b3982eb31090a60fb14f3",
+      "tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "tuf/trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "24": {
+      "tuf/metadata/1.root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "tuf/metadata/33.snapshot.json": "826a4e05b432a168c0e3473a13453f43b2f1b40c3566963a793b030b9648a8bc",
+      "tuf/metadata/33.targets.json": "6996cef9d957ac8c3a7e5885783191b4b06eb9a5c3b638e1a3bbfe3324465a3f",
+      "tuf/metadata/timestamp.json": "b6a05a4f5ea25c1088f1633740931de1caab5be9337a6b09159047194bb32339",
+      "tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "tuf/targets/1433dfa964600a62a41a32e1d39a2ac97c60fd4e7618a86329a5b358452bb106.catalogue.json": "1433dfa964600a62a41a32e1d39a2ac97c60fd4e7618a86329a5b358452bb106",
+      "tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+      "tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "tuf/trusted-root.json": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    }
+  },
+  "verifiedTufClientDownload": {
+    "client": "tuftool 0.17",
+    "trustedRootExplicitlyProvided": true,
+    "unsafeOrExpiryBypassFlagsUsed": false,
+    "targets": [
+      "catalogue.json",
+      "windows-mpchc-20261006-corrected.acceptance.json",
+      "windows-mpchc-20261006.acceptance.json",
+      "MPC-HC.2.8.2.x64.exe"
+    ]
+  },
+  "ubuntuCountsChanged": false,
+  "limits": [
+    "Fresh installation requires manual Options > Playback > Output > Video Mixing Renderer 9 (renderless). Default renderer fails to load; its basic EVR fallback plays but two PNG Save Image attempts left the requested file absent. This recipe does not automatically configure VMR9.",
+    "VMR9 limited GUI workflow: open Chinese-name 20.041667-second MPEG4/MP3 AVI, visibly play, pause/seek, save one PNG, normal exit and fresh managed process reopen the PNG. PNG is 640x360 and matches candidate source frame 479 within mean absolute RGB error 0.8824 / maximum 3, among the final ten decoded candidates; this is not verification of all frames.",
+    "Known unresolved timing problem: UI displayed 00:40 / 00:20 near the end of the source. Correct playback timing, automatic end-of-file, A/V synchronization and precise seeking are not accepted. This is not proven to be merely a display defect.",
+    "PNG reopen proves file persistence and a fresh image-open workflow; it does not prove video renderer persistence or video replay across processes. No hardware audio observation, subtitles, hardware acceleration, HDR, streaming or network playback acceptance.",
+    "Official fixed installer digest matches GitHub release asset digest; GUI version/commit and installed COPYING match fixed source. Complete bundled source/license closure, Authenticode and reproducible build are not verified.",
+    "Signed catalogue activation, independent market installation generation, update/rollback and service restart remain pending at receipt freeze. Fresh-machine unattended registration, guest online download and cross-version upgrades are not verified.",
+    "This final publication adds independent market-generation visible replay, pause/seek, frame PNG verification, normal exit, fresh video replay with GUI-observed persisted VMR9, PNG reopen, exact original-generation rollback/PNG reopen, full Core/Store restart and forward corrected-proof activation. These later checks supersede only the frozen receipt statements that market lifecycle and renderer persistence were still pending."
+  ]
+}

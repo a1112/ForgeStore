@@ -1,0 +1,256 @@
+{
+  "coreJobs": 173,
+  "storeRows": 61,
+  "base170CoreAnd61FullStoreRowsPreserved": true,
+  "otherConfigurationsAndGenerationsPreserved": true,
+  "marketAndFullSignedTrustPreserved": true,
+  "powerNeverPreserved": true,
+  "guiOutput": {
+    "path": "output/frame-vmr9.png",
+    "sizeBytes": 85416,
+    "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7"
+  },
+  "failedBasicRendererOutputAbsent": true,
+  "explicitFreshProcessPngReopenObserved": true,
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "applicationId": "mpchc",
+  "jobs": [
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12615,
+          "requestId": "job-1791249455183-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 74831,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+          "requestId": "job-1791249455183-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 74874,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791249455183-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791248844496-1",
+      "id": "job-1791249455183-3",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 11957,
+          "requestId": "job-1791248888149-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 497578,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+          "requestId": "job-1791248888149-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 497621,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791248888149-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791248844496-1",
+      "id": "job-1791248888149-2",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "mpchc",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 11765,
+          "requestId": "job-1791248844496-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5868,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791248844496-1/prefix",
+          "requestId": "job-1791248844496-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5910,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791248844496-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791248844496-1",
+      "id": "job-1791248844496-1",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "generationId": "gen-job-1791248844496-1",
+  "definitionDigest": "sha256:5bbc7c5af9991c367b77072e510b8f73c584448e72ee78d8b8f3682a271f9105",
+  "runtime": {
+    "binding": {
+      "environment": {
+        "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+        "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+        "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+        "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+        "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8",
+        "WINEARCH": "win64",
+        "WINEDEBUG": "-all",
+        "WINEDLLOVERRIDES": "mscoree,mshtml=",
+        "WINESERVER": "/usr/bin/wineserver"
+      },
+      "executable": "/usr/bin/wine",
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "providerId": "wine-linux-x86-64-preview",
+      "wineserverExecutable": "/usr/bin/wineserver"
+    },
+    "selection": {
+      "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "packId": "wine-linux-x86-64-local-preview",
+      "provider": "wine"
+    },
+    "version": "11.14"
+  },
+  "fixture": {
+    "sizeBytes": 4442000,
+    "sha256": "1bf2987304d2827b75a44a1ca02170d40ad03b2eace9212bc24ef22c6d7af8ac",
+    "names": [
+      "input/测试视频.avi",
+      "input/test-video.avi"
+    ],
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mpeg4",
+          "codec_type": "video",
+          "width": 640,
+          "height": 360
+        },
+        {
+          "codec_name": "mp3",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "20.041667"
+      }
+    }
+  },
+  "pixelVerification": {
+    "file": "output/frame-vmr9.png",
+    "sizeBytes": 85416,
+    "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+    "width": 640,
+    "height": 360,
+    "nearestDecodedFrame": 479,
+    "meanAbsoluteRgbDifference": 0.8823712384259259,
+    "maxRgbDifference": 3,
+    "decodedCandidateFrames": 10,
+    "sourceSha256": "1bf2987304d2827b75a44a1ca02170d40ad03b2eace9212bc24ef22c6d7af8ac",
+    "outputGuiCreated": true
+  },
+  "screenshots": {
+    "about-version-license.jpg": {
+      "sha256": "baf3cd109c5aa8b719a08b3b10736de3d7acfa23a5d0d567c743b075c732227b",
+      "sizeBytes": 67428
+    },
+    "basic-renderer-no-export-feedback.jpg": {
+      "sha256": "0b124bee6a10f6ee1734ac7ff0968c5046dcb2c85d51fb5ad8204912022834e9",
+      "sizeBytes": 59535
+    },
+    "basic-renderer-playing.jpg": {
+      "sha256": "146546b621b80c7ab4289bdbd8b46adbe370e2bc8cba22c856d3778378632965",
+      "sizeBytes": 59952
+    },
+    "chinese-file-selection.jpg": {
+      "sha256": "3d0ddbd9c806bffba37c6c6ca487030d36ce0c1a72e44587db8d8a9ced449168",
+      "sizeBytes": 48061
+    },
+    "default-renderer-failed.jpg": {
+      "sha256": "aa7e0a69d4ddb7d16a127812705df17005244624d1af3daef96dabca0880c638",
+      "sizeBytes": 66115
+    },
+    "frame-save-dialog.jpg": {
+      "sha256": "7c8efb05691cefeb262f047a1c98193fcfcdd420ef5a227474fd75f7d87cf2f8",
+      "sizeBytes": 45929
+    },
+    "fresh-process-png-reopened.jpg": {
+      "sha256": "06fcffdde9f5e39f61d504c8916999e17d559952b4e00881f0e320fb05945076",
+      "sizeBytes": 59245
+    },
+    "paused-seek-frame228.jpg": {
+      "sha256": "6f95e8ef2302f367ba18a8bd0a3b0de649a0cb159a092055f7e1b18c05e114bb",
+      "sizeBytes": 59562
+    },
+    "player-created-vmr9.png": {
+      "sha256": "6db9e1b5198f2cb3bd3fbd8b6bffa2ddb4995b0605ba3d493cbed766ba21d3c7",
+      "sizeBytes": 85416
+    },
+    "vmr9-frame-saved.jpg": {
+      "sha256": "602b1329821e3bfd34e3576be9297af57f9169ac1847760b808b8bcf8d70678f",
+      "sizeBytes": 60098
+    },
+    "vmr9-output-setting.jpg": {
+      "sha256": "a79259038a2ba078866a4a6ee742cc526aad6750e4acfa2b3aec7264d3c4b11b",
+      "sizeBytes": 62921
+    }
+  },
+  "limitedGuiFileWorkflowPassed": true,
+  "completePlayerAcceptance": false,
+  "limits": [
+    "Fresh installation requires manual Options > Playback > Output > Video Mixing Renderer 9 (renderless). Default renderer fails to load; its basic EVR fallback plays but two PNG Save Image attempts left the requested file absent. This recipe does not automatically configure VMR9.",
+    "VMR9 limited GUI workflow: open Chinese-name 20.041667-second MPEG4/MP3 AVI, visibly play, pause/seek, save one PNG, normal exit and fresh managed process reopen the PNG. PNG is 640x360 and matches candidate source frame 479 within mean absolute RGB error 0.8824 / maximum 3, among the final ten decoded candidates; this is not verification of all frames.",
+    "Known unresolved timing problem: UI displayed 00:40 / 00:20 near the end of the source. Correct playback timing, automatic end-of-file, A/V synchronization and precise seeking are not accepted. This is not proven to be merely a display defect.",
+    "PNG reopen proves file persistence and a fresh image-open workflow; it does not prove video renderer persistence or video replay across processes. No hardware audio observation, subtitles, hardware acceleration, HDR, streaming or network playback acceptance.",
+    "Official fixed installer digest matches GitHub release asset digest; GUI version/commit and installed COPYING match fixed source. Complete bundled source/license closure, Authenticode and reproducible build are not verified.",
+    "Signed catalogue activation, independent market installation generation, update/rollback and service restart remain pending at receipt freeze. Fresh-machine unattended registration, guest online download and cross-version upgrades are not verified."
+  ]
+}
