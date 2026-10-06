@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-06",
+  "timezone": "Asia/Shanghai",
+  "trigger": "User reported host restart and asked to reopen the existing test system.",
+  "diagnosis": {
+    "outerHyperVVm": "FOS-Ubuntu-26.04",
+    "outerState": "Running",
+    "previousSshTransportAddressTimedOut": true,
+    "newTransportResolvedBy": "Hyper-V VM adapter MAC matched to Default Switch neighbor; SSH pinned host-key alias and strict known_hosts checks retained.",
+    "originalInnerVmAlreadyRunning": true,
+    "localNoVncTunnelAbsent": true
+  },
+  "recovery": {
+    "restoredExistingNoVncLoopbackForward": true,
+    "localBind": "127.0.0.1:6096",
+    "outerLoopbackPort": 6093,
+    "strictHostKeyChecking": true,
+    "exitOnForwardFailure": true,
+    "httpStatus": 200,
+    "pageContainsNoVnc": true,
+    "browserPanelOpenRequested": true,
+    "browserPanelOpenResult": "queued",
+    "vmRestartPerformed": false,
+    "servicesRestarted": false,
+    "diskRecreated": false,
+    "authenticationChanged": false
+  },
+  "runtimeVerification": {
+    "coreJobs": 177,
+    "allCoreJobsTerminal": true,
+    "storeRows": 63,
+    "completeStateAfterMarketUiRefreshPreserved": true,
+    "allSignedTrustDocumentsPreserved": true,
+    "knownTimeMonotonic": true,
+    "originalAndMarketOutputsPreserved": true,
+    "powerNeverPreserved": true,
+    "selectedGeneration": "gen-job-1791248844496-1"
+  },
+  "virtualMachineVerification": {
+    "instanceId": "d37397c7-dcee-4d83-b6d2-3b7628de1cba",
+    "run": "run-d9629124c8284279a81cebc010db3699",
+    "status": "running",
+    "kvmEnabled": true,
+    "baseAndBaseFileReadOnly": true,
+    "diskVirtualSize": 137438953472,
+    "wrapperSha256": "3294b2f02c6a7e3d06cbb45ad418e234b9543675684a29091cde01ef05e9fe25",
+    "vmRestartPerformed": false,
+    "diskRecreated": false
+  },
+  "resourceBoundary": {
+    "runningTestVms": 1,
+    "windowsCompatVmMemoryMiB": 4096,
+    "ubuntuVmInactive": true,
+    "outerSwapDevices": 0
+  },
+  "trustedRootVersion": 1,
+  "onlineMetadataVersion": 33,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "acceptedDistinctWindowsApps": 23,
+  "blockedCandidates": 11,
+  "newApplicationsAccepted": 0,
+  "guiRevalidatedThisTurn": false,
+  "guiLimit": "This recovery verified backend state, QMP running/KVM/readonly base, retained files and the noVNC HTTP endpoint. Actual desktop pixels, unlock and application GUI were not revalidated. The prior Computer Use browser-URL rejection is not claimed fixed.",
+  "failuresRetained": [
+    {
+      "stage": "Previous turn SSH connection",
+      "result": "Previous transport address timed out after host restart; no trust bypass performed."
+    },
+    {
+      "stage": "Previous turn Computer Use",
+      "result": "Edge window read was automatically stopped because the tool could not reliably identify its URL. No GUI input attempted during this backend recovery."
+    }
+  ]
+}
