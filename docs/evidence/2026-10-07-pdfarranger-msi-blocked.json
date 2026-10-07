@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-07",
+  "applicationId": "pdfarranger",
+  "artifactSha256": "33ba1c3028cc81eb364b8eed288389fc8a4869c015ce817b9408a3d31e0e90b0",
+  "artifactSizeBytes": 63311360,
+  "originalArtifactUnmodified": true,
+  "inspectorSha256": "d5d8f21631f3d8c531392c478badf9c550a9d484da2f4e087fe742ac936b50eb",
+  "inspectionRepeated": true,
+  "inspectionExitCode": 1,
+  "inspectionStderr": "Error: Custom { kind: InvalidData, error: \"DIFAT chain must terminate with 4294967294, not 4294967295\" }",
+  "compoundFile": {
+    "majorVersion": 3,
+    "sectorSizeBytes": 512,
+    "fatSectorCount": 967,
+    "difatSectorCount": 7,
+    "chain": [
+      {
+        "index": 0,
+        "sector": 13952,
+        "nextMarker": "0x7600",
+        "markerByteOffset": 7144444
+      },
+      {
+        "index": 1,
+        "sector": 30208,
+        "nextMarker": "0xb580",
+        "markerByteOffset": 15467516
+      },
+      {
+        "index": 2,
+        "sector": 46464,
+        "nextMarker": "0xf500",
+        "markerByteOffset": 23790588
+      },
+      {
+        "index": 3,
+        "sector": 62720,
+        "nextMarker": "0x13480",
+        "markerByteOffset": 32113660
+      },
+      {
+        "index": 4,
+        "sector": 78976,
+        "nextMarker": "0x17400",
+        "markerByteOffset": 40436732
+      },
+      {
+        "index": 5,
+        "sector": 95232,
+        "nextMarker": "0x1b380",
+        "markerByteOffset": 48759804
+      },
+      {
+        "index": 6,
+        "sector": 111488,
+        "nextMarker": "0xffffffff",
+        "markerByteOffset": 57082876
+      }
+    ],
+    "finalMarker": "0xffffffff",
+    "requiredEndOfChainMarker": "0xfffffffe",
+    "specificationUrl": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cfb/0afa4e43-b18f-432a-9917-4f276eca7a73"
+  },
+  "control": {
+    "applicationId": "windirstat",
+    "version": "2.9.0",
+    "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d",
+    "sizeBytes": 2433024,
+    "inspectionExitCode": 0,
+    "difatSectorCount": 0
+  },
+  "guestArtifactStaged": false,
+  "applicationRegistered": false,
+  "installationJobSubmitted": false,
+  "installed": false,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "validationRelaxed": false,
+  "codeChanged": false
+}

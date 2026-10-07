@@ -361,6 +361,26 @@
           "guiEvidence": "docs/evidence/2026-10-05-openscad-gui-pending.json"
         }
       ]
+    },
+    {
+      "id": "pdfarranger",
+      "name": "PDF Arranger",
+      "version": "1.14.0",
+      "stage": "verified-msi-structure-rejected-before-install",
+      "sourceUrl": "https://github.com/pdfarranger/pdfarranger/releases/download/1.14.0/pdfarranger-1.14.0-windows-installer.msi",
+      "sha256": "33ba1c3028cc81eb364b8eed288389fc8a4869c015ce817b9408a3d31e0e90b0",
+      "sizeBytes": 63311360,
+      "license": "GPL-3.0-or-later",
+      "sourceCommit": "29f306bb6932e28d3001b098f6dad9824ab74100",
+      "artifactEvidence": "docs/evidence/2026-10-07-pdfarranger-source.json",
+      "diagnosticEvidence": "docs/evidence/2026-10-07-pdfarranger-msi-blocked.json",
+      "evidence": "docs/windows-rolling-20261007-pdfarranger-pending.md",
+      "installationJobSubmitted": false,
+      "installed": false,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "blocker": "Official fixed MSI digest matched, but two bounded read-only inspections reject its final DIFAT link 0xffffffff; MS-CFB section 2.5 requires 0xfffffffe. Existing WinDirStat control passes the same pinned inspector. No guest package staging, app registration or installation job; artifact and validation remain unchanged. Official portable ZIP is not yet reviewed or integrated."
     }
   ],
   "excludedInternalFixtures": [
@@ -369,17 +389,17 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next uncompleted distinct application with verified fixed official artifact/license. Preserve 11 blocked candidates; MPC-HC is a limited published compatibility item requiring manual VMR9, with unresolved timing issue. Windows root 1 / online roles 33 / 177 terminal Core jobs / 63 full Store rows; preserve data, trust and Never screen-off settings. Ubuntu counts remain separate at 2; Flatpak cache and two timeout failures retained.",
+  "next": "Select next uncompleted distinct application with verified fixed official artifact/license. Preserve 12 blocked candidates, including PDF Arranger MSI rejected before installation; review an official alternative without altering the pinned package or weakening validation. MPC-HC remains limited with manual VMR9 and unresolved timing. Windows root 1 / online roles 33 / 177 terminal Core jobs / 63 full Store rows; data, trust and Never screen-off settings retained. In-app noVNC reconnects but desktop remains locked. Ubuntu is separate at 2; Flatpak cache and two timeout failures retained.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-10-06",
+  "lastReviewed": "2026-10-07",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 23,
-    "explicitlyBlockedCandidates": 11,
+    "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 11
+    "pendingCandidates": 12
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v24/tuf",
@@ -395,5 +415,7 @@
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
-  "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json"
+  "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261007-pdfarranger-pending.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-07-rolling-environment.json"
 }
