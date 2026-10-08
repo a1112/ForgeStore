@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "applicationId": "lazpaint",
+  "version": "7.3",
+  "job": {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 1690415,
+        "requestId": "job-1791421778900-1",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 5244,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791421778900-1/prefix",
+        "requestId": "job-1791421778900-1",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 5286,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791421778900-1",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791421778900-1",
+    "id": "job-1791421778900-1",
+    "kind": "install",
+    "status": "succeeded"
+  },
+  "generations": {
+    "applicationId": "lazpaint",
+    "generations": [
+      {
+        "bottleId": "gen-job-1791421778900-1",
+        "createdAtMilliseconds": 1791421778904,
+        "definition": {
+          "bottleId": "gui-lazpaint",
+          "category": "graphics",
+          "compatibilityRating": "unknown",
+          "id": "lazpaint",
+          "installer": {
+            "arguments": [
+              "/VERYSILENT",
+              "/SUPPRESSMSGBOXES",
+              "/NORESTART",
+              "/DIR=C:\\LazPaint"
+            ],
+            "fileName": "lazpaint7.3_setup_win32_win64.exe",
+            "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459"
+          },
+          "launchers": [
+            {
+              "executable": "LazPaint/lazpaint.exe",
+              "id": "main",
+              "name": "LazPaint"
+            }
+          ],
+          "name": "LazPaint",
+          "publisher": "Circular, Fabien Wang, Lainz and others",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000",
+            "managed-inno"
+          ],
+          "version": "7.3"
+        },
+        "definitionDigest": "sha256:5a18c6aebf7cdf2fb338f7683d9361d3a4ad66e081965a5149d948df77a3e791",
+        "id": "gen-job-1791421778900-1",
+        "launcherDigests": {
+          "main": "sha256:a59b76180412579bef367e1f678680067912a155b16c00649c86f9e6746592d6"
+        },
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "ready",
+        "updatedAtMilliseconds": 1791421791241
+      }
+    ],
+    "recoveryCapability": "kernel-boot-identity",
+    "schemaVersion": "1",
+    "selectedGeneration": "gen-job-1791421778900-1"
+  },
+  "application": {
+    "bottleId": "gui-lazpaint",
+    "category": "graphics",
+    "compatibilityRating": "unknown",
+    "id": "lazpaint",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/DIR=C:\\LazPaint"
+      ],
+      "fileName": "lazpaint7.3_setup_win32_win64.exe",
+      "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459"
+    },
+    "launchers": [
+      {
+        "executable": "LazPaint/lazpaint.exe",
+        "id": "main",
+        "name": "LazPaint"
+      }
+    ],
+    "name": "LazPaint",
+    "publisher": "Circular, Fabien Wang, Lainz and others",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "7.3"
+  },
+  "installed": true,
+  "activeJobIds": [],
+  "installedFileCount": 117,
+  "selectedInstalledFiles": {
+    "LazPaint/lazpaint.exe": {
+      "sizeBytes": 11631104,
+      "sha256": "a59b76180412579bef367e1f678680067912a155b16c00649c86f9e6746592d6",
+      "peMachine": "0x8664"
+    },
+    "LazPaint/readme.txt": {
+      "sizeBytes": 351,
+      "sha256": "f4e3494a1e3dc1f8b50d70a96a491d73d9baa6312f50956d8e885ca164410577",
+      "prefix": "LazPaint - A paint program made with Lazarus\r\n\r\nThis program is designed to draw like with Paint.Net, to experiment this kind of programming with Lazarus and to provide an example of use of BGRABitmap library.\r\n\r\nLazPaint itself is under license GPLv3 which means it must remain opensource, whereas BGRABitmap library can be used in any application.\r\n"
+    },
+    "LazPaint/dcraw.exe": {
+      "sizeBytes": 871520,
+      "sha256": "a8064435cf832f61b6eecdbc41eb4351090cff72b80ae9a77b51ff1e362dcaf9",
+      "peMachine": "0x8664"
+    },
+    "LazPaint/libwebp.dll": {
+      "sizeBytes": 492544,
+      "sha256": "89e87c9eaf5b789e8db698cd08aef70ab4bdd59b33ee5c191171c082040383f0"
+    }
+  },
+  "guiLaunched": false,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false
+}

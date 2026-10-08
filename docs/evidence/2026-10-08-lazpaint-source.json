@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "reviewedDate": "2026-10-08",
+  "applicationId": "lazpaint",
+  "version": "7.3",
+  "releaseUrl": "https://github.com/bgrabitmap/lazpaint/releases/tag/v7.3",
+  "publishedAt": "2025-05-24T20:47:56Z",
+  "sourceCommit": "a11930b418c7d9050886bd7d321fe78acfcd7ea6",
+  "artifact": {
+    "fileName": "lazpaint7.3_setup_win32_win64.exe",
+    "sourceUrl": "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_setup_win32_win64.exe",
+    "sizeBytes": 14153628,
+    "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459",
+    "publishedAssetSizeMatched": true,
+    "upstreamGitHubAssetDigest": null,
+    "upstreamGitHubAssetDigestMatched": false,
+    "sha256Basis": "Locally calculated from fixed official HTTPS release asset; this historical Windows asset has no published GitHub digest."
+  },
+  "fixedSourceFiles": {
+    "COPYING.txt": {
+      "url": "https://raw.githubusercontent.com/bgrabitmap/lazpaint/a11930b418c7d9050886bd7d321fe78acfcd7ea6/COPYING.txt",
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/bgrabitmap/lazpaint/a11930b418c7d9050886bd7d321fe78acfcd7ea6/README.md",
+      "sizeBytes": 5969,
+      "sha256": "b1b2f568d1fe0e99499f431a1a454bbc12e8c817a941b16618834b4883d4e58b"
+    },
+    "lazpaint/lazpaint.lpr": {
+      "url": "https://raw.githubusercontent.com/bgrabitmap/lazpaint/a11930b418c7d9050886bd7d321fe78acfcd7ea6/lazpaint/lazpaint.lpr",
+      "sizeBytes": 6723,
+      "sha256": "70898cd3756311ba541028e59585d2c6f324c1fb6b8988dd10aa2c2b43d650d2"
+    },
+    "lazpaint/dialog/uabout.pas": {
+      "url": "https://raw.githubusercontent.com/bgrabitmap/lazpaint/a11930b418c7d9050886bd7d321fe78acfcd7ea6/lazpaint/dialog/uabout.pas",
+      "sizeBytes": 4035,
+      "sha256": "b94d7e868f4de2264e339648e5702e5bcf4d27ce17f703bf5406ceef5d63220f"
+    },
+    "lazpaint/release/windows/lazpaint.iss": {
+      "url": "https://raw.githubusercontent.com/bgrabitmap/lazpaint/a11930b418c7d9050886bd7d321fe78acfcd7ea6/lazpaint/release/windows/lazpaint.iss",
+      "sizeBytes": 23838,
+      "sha256": "258f93bc20c7f09cd1d2a7ab1dd9d22491a63a40188954d68aaae5adaf610ee2"
+    }
+  },
+  "licenseClassificationPending": false,
+  "fullComponentLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "guiAccepted": false,
+  "published": false,
+  "license": "GPL-3.0-only",
+  "licenseBasis": "Pinned source uabout.pas SPDX declaration and COPYING version 3; bundled components have separate notices."
+}

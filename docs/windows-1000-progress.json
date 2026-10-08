@@ -381,6 +381,31 @@
       "published": false,
       "countsAsCompleted": false,
       "blocker": "Official fixed MSI digest matched, but two bounded read-only inspections reject its final DIFAT link 0xffffffff; MS-CFB section 2.5 requires 0xfffffffe. Existing WinDirStat control passes the same pinned inspector. No guest package staging, app registration or installation job; artifact and validation remain unchanged. Official portable ZIP is not yet reviewed or integrated."
+    },
+    {
+      "id": "lazpaint",
+      "name": "LazPaint",
+      "version": "7.3",
+      "stage": "installed-gui-acceptance-pending",
+      "sourceUrl": "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_setup_win32_win64.exe",
+      "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459",
+      "sizeBytes": 14153628,
+      "license": "GPL-3.0-only",
+      "sourceCommit": "a11930b418c7d9050886bd7d321fe78acfcd7ea6",
+      "artifactEvidence": "docs/evidence/2026-10-08-lazpaint-source.json",
+      "recipeEvidence": "docs/evidence/2026-10-08-lazpaint-recipe.json",
+      "installationEvidence": "docs/evidence/2026-10-08-lazpaint-installed-pending.json",
+      "runtimeEvidence": "docs/evidence/2026-10-08-lazpaint-runtime-preservation.json",
+      "evidence": "docs/windows-rolling-20261008-lazpaint-pending.md",
+      "installationJobId": "job-1791421778900-1",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1791421778900-1",
+      "installed": true,
+      "guiLaunched": false,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "pendingReason": "Known Plasma lock screen still observed; prior manual unlock request remains pending. No new GUI attempt, painting/save/export/reopen acceptance or signed market publication. Historical upstream Windows asset has no published GitHub digest; local fixed SHA-256 is recorded."
     }
   ],
   "excludedInternalFixtures": [
@@ -389,17 +414,17 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next uncompleted distinct application with verified fixed official artifact/license. Preserve 12 blocked candidates, including PDF Arranger MSI rejected before installation; review an official alternative without altering the pinned package or weakening validation. MPC-HC remains limited with manual VMR9 and unresolved timing. Windows root 1 / online roles 33 / 177 terminal Core jobs / 63 full Store rows; data, trust and Never screen-off settings retained. In-app noVNC reconnects but desktop remains locked. Ubuntu is separate at 2; Flatpak cache and two timeout failures retained.",
+  "next": "Resume installed LazPaint 7.3 after the already-requested manual desktop unlock: one ready x64 generation, GUI not launched, painting/Chinese-path save/PNG export/fresh reopen and signed market lifecycle pending. Preserve all 12 prior blocked candidates and 23 accepted applications. Windows root 1 / online roles 33 / 178 terminal Core jobs (original 177 complete fields preserved) / 63 full Store rows; data, trust and Never power settings retained. Private checkpoint: lazpaint-20261008/after-install.json; read-only helper .transfer/rolling-current-state-20261008.py. Ubuntu remains separate at 2 with Flatpak cache and two timeout failures retained; only one 4 GiB test VM may run.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-10-07",
+  "lastReviewed": "2026-10-08",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 23,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
-    "executionPendingCandidates": 0,
-    "pendingCandidates": 12
+    "executionPendingCandidates": 1,
+    "pendingCandidates": 13
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v24/tuf",
@@ -416,6 +441,6 @@
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261007-pdfarranger-pending.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-07-rolling-environment.json"
+  "latestAttemptEvidence": "docs/windows-rolling-20261008-lazpaint-pending.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-08-lazpaint-runtime-preservation.json"
 }

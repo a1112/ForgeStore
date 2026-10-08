@@ -1,0 +1,31 @@
+{
+  "bottleId": "gui-lazpaint",
+  "category": "graphics",
+  "compatibilityRating": "unknown",
+  "id": "lazpaint",
+  "installer": {
+    "arguments": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/DIR=C:\\LazPaint"
+    ],
+    "fileName": "lazpaint7.3_setup_win32_win64.exe",
+    "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459"
+  },
+  "launchers": [
+    {
+      "executable": "LazPaint/lazpaint.exe",
+      "id": "main",
+      "name": "LazPaint"
+    }
+  ],
+  "name": "LazPaint",
+  "publisher": "Circular, Fabien Wang, Lainz and others",
+  "schemaVersion": "1",
+  "tags": [
+    "rolling-1000",
+    "managed-inno"
+  ],
+  "version": "7.3"
+}
