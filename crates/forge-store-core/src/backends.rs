@@ -909,7 +909,7 @@ else:
             let BackendError::Provider(error) = client.preflight().await.unwrap_err() else {
                 panic!("expected bounded provider error");
             };
-            assert_eq!(error.code, expected);
+            assert_eq!(error.code, expected, "{body}: {error:?}");
             assert!(!root.path().join("requests").exists());
         }
     }
@@ -942,7 +942,11 @@ else:
             else {
                 panic!("expected actual execution identity rejection");
             };
-            assert_eq!(error.code, ErrorCode::SourceMismatch, "{identity}");
+            assert_eq!(
+                error.code,
+                ErrorCode::SourceMismatch,
+                "{identity}: {error:?}"
+            );
         }
     }
 
