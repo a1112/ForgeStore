@@ -1,0 +1,34 @@
+{
+  "capabilities": [
+    "generation-lifecycle-v1",
+    "managed-applications-v1",
+    "shared-service-v1"
+  ],
+  "commands": {
+    "service-call": "1"
+  },
+  "contractVersion": "1.0.0",
+  "operations": [
+    "applications.generations",
+    "applications.get",
+    "applications.list",
+    "applications.rollback",
+    "applications.uninstall",
+    "applications.upsert",
+    "jobs.cancel",
+    "jobs.get",
+    "jobs.poll",
+    "jobs.submit"
+  ],
+  "providerId": "compatforge",
+  "providerVersion": "0.12.0",
+  "schemaVersion": "1",
+  "schemas": {
+    "job": "1",
+    "service-request": "1",
+    "service-response": "1"
+  },
+  "serviceName": "compatforge.service",
+  "sourceCommit": "df263757da5cd7f6f83150e0c0fe9e603035e5b7",
+  "target": "x86_64-unknown-linux-gnu"
+}

@@ -293,27 +293,36 @@ mod linux {
         installed.extend(package.1);
         Ok(
             json!({"catalogue":store.catalogue,"jobs":jobs,"jobsHasMore":jobs_has_more,"installed":installed,"backends":{
-                "compatforge":{"available":compat.0,"reason":if compat.0 { "" } else { "CompatForge service unavailable" }},
+                "compatforge":{"available":compat.0,"reason":compat.2},
                 "flatpak":{"available":flatpak.0,"reason":if flatpak.0 { "" } else { "Flatpak unavailable" }},
                 "forgePackage":{"available":package.0,"reason":if package.0 { "" } else { "ForgeOS package service unavailable" }}
             }}),
         )
     }
 
-    async fn probe_compat(store: &Store) -> (bool, Vec<Value>) {
-        if !store.compat.available() {
-            return (false, Vec::new());
-        }
+    async fn probe_compat(store: &Store) -> (bool, Vec<Value>, String) {
         let result = tokio::time::timeout(
             Duration::from_secs(3),
             store.compat.operation("applications.list", json!({})),
         )
         .await;
-        let Ok(Ok(result)) = result else {
-            return (false, Vec::new());
+        let result = match result {
+            Ok(Ok(value)) => value,
+            Ok(Err(error)) => return (false, Vec::new(), bounded_text(&error.to_string(), 512)),
+            Err(_) => {
+                return (
+                    false,
+                    Vec::new(),
+                    "CompatForge preflight/service query timed out".into(),
+                )
+            }
         };
         let Some(records) = result.as_array() else {
-            return (false, Vec::new());
+            return (
+                false,
+                Vec::new(),
+                "CompatForge applications.list has an invalid result schema".into(),
+            );
         };
         let installed = records.iter().filter_map(|record| {
             let id = record.get("application")?.get("id")?.as_str()?;
@@ -322,7 +331,7 @@ mod linux {
             let (version, can_rollback) = compatforge_selected_install(record, id)?;
             Some(json!({"appId":id,"backend":"compatforge","version":version,"canRollback":can_rollback}))
         }).collect();
-        (true, installed)
+        (true, installed, String::new())
     }
 
     async fn probe_flatpak(store: &Store) -> (bool, Vec<Value>) {

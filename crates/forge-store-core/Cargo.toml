@@ -5,6 +5,7 @@ edition.workspace = true
 rust-version.workspace = true
 
 [dependencies]
+forge-provider-contract = { path = "../forge-provider-contract" }
 bytes = "=1.11.1"
 futures-util = "=0.3.31"
 hex = "=0.4.3"
