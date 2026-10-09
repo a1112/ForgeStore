@@ -1,5 +1,6 @@
 use crate::catalogue::{Artifact, CatalogError, WineAppearance, MAX_FORGEPKG_BYTES};
 use crate::queue::Action;
+use forge_provider_contract::{ContractError, ErrorCode, ProviderInfo};
 use serde_json::{json, Map, Value};
 use std::collections::BTreeMap;
 use std::path::Path;
@@ -8,6 +9,8 @@ use thiserror::Error;
 
 #[derive(Debug, Error)]
 pub enum BackendError {
+    #[error("{0}")]
+    Provider(#[from] ContractError),
     #[error("invalid reviewed backend input: {0}")]
     Invalid(&'static str),
     #[error("catalogue artifact: {0}")]
@@ -27,20 +30,16 @@ pub fn decode_compatforge_reply(
     request_id: &str,
     operation: &str,
 ) -> Result<Value, BackendError> {
-    if bytes.len() > 1024 * 1024 {
-        return Err(BackendError::Invalid("CompatForge reply exceeds limit"));
-    }
-    let reply: Value = serde_json::from_slice(bytes)?;
-    if reply.get("schemaVersion") != Some(&json!("1"))
-        || reply.get("requestId") != Some(&json!(request_id))
-        || reply.get("operation") != Some(&json!(operation))
-    {
-        return Err(BackendError::Invalid("CompatForge reply identity mismatch"));
-    }
-    reply
-        .get("result")
-        .cloned()
-        .ok_or(BackendError::Invalid("CompatForge reply lacks result"))
+    let required = forge_provider_contract::decode_requirements(include_bytes!(
+        "../../../contracts/compatforge-provider-lock-v1.json"
+    ))?;
+    Ok(forge_provider_contract::binding::decode_execution(
+        bytes,
+        1024 * 1024,
+        &required,
+        request_id,
+        operation,
+    )?)
 }
 
 pub fn compatforge_poll_status<'a>(
@@ -129,12 +128,69 @@ impl CompatForgeClient {
         }
     }
 
-    pub fn available(&self) -> bool {
-        self.executable.is_file()
+    /// Read-only protocol preflight. File presence is never evidence of support.
+    pub async fn preflight(&self) -> Result<ProviderInfo, BackendError> {
+        use tokio::io::AsyncReadExt;
+        let required = forge_provider_contract::decode_requirements(include_bytes!(
+            "../../../contracts/compatforge-provider-lock-v1.json"
+        ))?;
+        let mut child = tokio::process::Command::new(&self.executable)
+            .arg("provider-info")
+            .stdin(std::process::Stdio::null())
+            .stdout(std::process::Stdio::piped())
+            .stderr(std::process::Stdio::null())
+            .kill_on_drop(true)
+            .spawn()
+            .map_err(|_| {
+                ContractError::new(
+                    ErrorCode::ProviderUnavailable,
+                    "CompatForge CLI or provider-info command is unavailable",
+                )
+            })?;
+        let outcome = tokio::time::timeout(std::time::Duration::from_secs(2), async {
+            let mut raw = Vec::new();
+            child
+                .stdout
+                .take()
+                .expect("piped stdout")
+                .take((forge_provider_contract::MAX_CONTRACT_BYTES + 1) as u64)
+                .read_to_end(&mut raw)
+                .await
+                .map_err(|_| {
+                    ContractError::new(ErrorCode::ProviderUnavailable, "provider-info read failed")
+                })?;
+            if raw.len() > forge_provider_contract::MAX_CONTRACT_BYTES {
+                return Err(ContractError::new(
+                    ErrorCode::SchemaMismatch,
+                    "provider contract exceeds 64 KiB",
+                ));
+            }
+            let status = child.wait().await.map_err(|_| {
+                ContractError::new(ErrorCode::ProviderUnavailable, "provider-info wait failed")
+            })?;
+            if !status.success() {
+                return Err(ContractError::new(
+                    ErrorCode::ProviderUnavailable,
+                    "CompatForge provider-info is missing or failed; expected versioned CLI",
+                ));
+            }
+            let info = forge_provider_contract::decode_info(&raw)?;
+            forge_provider_contract::negotiate(&info, &required)?;
+            Ok(info)
+        })
+        .await
+        .map_err(|_| {
+            ContractError::new(
+                ErrorCode::ProviderUnavailable,
+                "CompatForge provider-info timed out",
+            )
+        })?;
+        Ok(outcome?)
     }
 
     pub async fn call(&self, request: Value) -> Result<Value, BackendError> {
         use tokio::io::AsyncWriteExt;
+        self.preflight().await?;
         let operation = request
             .get("operation")
             .and_then(Value::as_str)
@@ -145,7 +201,16 @@ impl CompatForgeClient {
             .and_then(Value::as_str)
             .ok_or(BackendError::Invalid("missing request ID"))?
             .to_string();
-        let encoded = serde_json::to_vec(&request)?;
+        let required = forge_provider_contract::decode_requirements(include_bytes!(
+            "../../../contracts/compatforge-provider-lock-v1.json"
+        ))?;
+        // The actual second execution must validate this lock before daemon admission.
+        let invocation = forge_provider_contract::binding::BoundInvocation {
+            schema_version: forge_provider_contract::binding::WIRE_VERSION.into(),
+            required_provider: required,
+            request,
+        };
+        let encoded = serde_json::to_vec(&invocation)?;
         if encoded.len() > 1024 * 1024 {
             return Err(BackendError::Invalid("CompatForge request exceeds limit"));
         }
@@ -686,6 +751,269 @@ fn canonical_value(value: &Value, output: &mut Vec<u8>) -> Result<(), BackendErr
         }
     }
     Ok(())
+}
+
+#[cfg(all(test, unix))]
+mod provider_preflight_tests {
+    use super::*;
+    use std::os::unix::fs::PermissionsExt;
+
+    fn fixture_script(root: &Path, mode: &str) -> String {
+        // Route libtest's own output to stderr; descriptor 3 carries only the
+        // protocol reply. This native child avoids external interpreter startup.
+        fn quote(value: &str) -> String {
+            format!("'{}'", value.replace('\'', "'\\''"))
+        }
+        format!(
+            "#!/bin/sh\nexec 3>&1 1>&2\nexport FORGE_TEST_PROVIDER_ROOT={}\nexport FORGE_TEST_PROVIDER_MODE={}\nexport FORGE_TEST_PROVIDER_COMMAND=\"$1\"\nexport FORGE_TEST_PROVIDER_REQUEST=\"${{2-}}\"\nexec {} --exact backends::provider_preflight_tests::provider_fixture_child --ignored --nocapture --test-threads=1\n",
+            quote(root.to_str().unwrap()),
+            quote(mode),
+            quote(std::env::current_exe().unwrap().to_str().unwrap()),
+        )
+    }
+
+    #[test]
+    #[ignore = "invoked only as the isolated native protocol fixture child"]
+    fn provider_fixture_child() {
+        use std::io::Write;
+        let root = PathBuf::from(std::env::var_os("FORGE_TEST_PROVIDER_ROOT").unwrap());
+        let mode = std::env::var("FORGE_TEST_PROVIDER_MODE").unwrap();
+        let command = std::env::var("FORGE_TEST_PROVIDER_COMMAND").unwrap();
+        let mut trace = std::fs::OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open(root.join("trace"))
+            .unwrap();
+        writeln!(trace, "{command}").unwrap();
+        if mode == "legacy" {
+            std::process::exit(2);
+        }
+        let mut output = std::fs::OpenOptions::new()
+            .write(true)
+            .open("/dev/fd/3")
+            .unwrap();
+        if command == "provider-info" {
+            let bytes = match mode.as_str() {
+                "malformed" => b"{bad\n".to_vec(),
+                "oversized" => vec![b'x'; 65537],
+                "timeout" => {
+                    std::thread::sleep(std::time::Duration::from_secs(3));
+                    Vec::new()
+                }
+                _ => std::fs::read(root.join("report.json")).unwrap(),
+            };
+            output.write_all(&bytes).unwrap();
+        } else {
+            assert_eq!(command, "service-call");
+            let invocation: Value = serde_json::from_slice(
+                &std::fs::read(std::env::var_os("FORGE_TEST_PROVIDER_REQUEST").unwrap()).unwrap(),
+            )
+            .unwrap();
+            let request = &invocation["request"];
+            let mut info: Value =
+                serde_json::from_slice(&std::fs::read(root.join("report.json")).unwrap()).unwrap();
+            if mode == "replaced-executor" {
+                info["sourceCommit"] = json!("f".repeat(40));
+            }
+            let daemon: Value = if root.join("daemon.json").exists() {
+                serde_json::from_slice(&std::fs::read(root.join("daemon.json")).unwrap()).unwrap()
+            } else {
+                info.clone()
+            };
+            let reply = json!({"schemaVersion":"2", "requestId":request["requestId"], "operation":request["operation"],
+                "executor":info, "daemon":{"schemaVersion":"2","instanceId":"synthetic-daemon-1","provider":daemon}, "result":[]});
+            output
+                .write_all(&serde_json::to_vec(&reply).unwrap())
+                .unwrap();
+        }
+        output.flush().unwrap();
+        // End immediately after the complete protocol reply, with no interpreter
+        // teardown or libtest footer able to delay EOF or contaminate JSON.
+        std::process::exit(0);
+    }
+
+    fn fixture() -> (tempfile::TempDir, CompatForgeClient, Value) {
+        let root = tempfile::tempdir().unwrap();
+        let executable = root.path().join("compatforge-cli");
+        std::fs::write(&executable, fixture_script(root.path(), "matching")).unwrap();
+        std::fs::set_permissions(&executable, std::fs::Permissions::from_mode(0o755)).unwrap();
+        let mut report: Value = serde_json::from_slice(include_bytes!(
+            "../../../contracts/compatforge-provider-lock-v1.json"
+        ))
+        .unwrap();
+        report["sourceDirty"] = json!(false);
+        let client = CompatForgeClient::for_test(&executable, &root.path().join("requests"));
+        (root, client, report)
+    }
+
+    fn write_report(root: &Path, report: &Value) {
+        std::fs::write(
+            root.join("report.json"),
+            serde_json::to_vec(report).unwrap(),
+        )
+        .unwrap();
+    }
+
+    #[tokio::test]
+    async fn matching_provider_allows_service_call_and_cleans_request() {
+        let (root, client, report) = fixture();
+        write_report(root.path(), &report);
+        assert_eq!(
+            client
+                .operation("applications.list", json!({}))
+                .await
+                .unwrap(),
+            json!([])
+        );
+        assert_eq!(
+            std::fs::read_to_string(root.path().join("trace")).unwrap(),
+            "provider-info\nservice-call\n"
+        );
+        assert_eq!(
+            std::fs::read_dir(root.path().join("requests"))
+                .unwrap()
+                .count(),
+            0
+        );
+    }
+
+    #[tokio::test]
+    async fn missing_commands_wrong_schema_and_versions_refuse_before_request_files() {
+        let cases = [
+            ("commands", json!({}), ErrorCode::CapabilityMissing),
+            (
+                "schemas",
+                json!({"job":"1","service-request":"1","service-response":"2"}),
+                ErrorCode::SchemaMismatch,
+            ),
+            (
+                "providerVersion",
+                json!("0.13.0"),
+                ErrorCode::UnsupportedVersion,
+            ),
+            (
+                "contractVersion",
+                json!("1.0.0"),
+                ErrorCode::UnsupportedVersion,
+            ),
+            (
+                "sourceCommit",
+                json!("f".repeat(40)),
+                ErrorCode::SourceMismatch,
+            ),
+            ("sourceDirty", json!(true), ErrorCode::SourceMismatch),
+        ];
+        for (field, value, expected) in cases {
+            let (root, client, mut report) = fixture();
+            report[field] = value;
+            write_report(root.path(), &report);
+            let error = client
+                .operation("applications.list", json!({}))
+                .await
+                .unwrap_err();
+            let BackendError::Provider(error) = error else {
+                panic!("expected provider rejection for {field}");
+            };
+            assert_eq!(error.code, expected);
+            assert_eq!(
+                std::fs::read_to_string(root.path().join("trace")).unwrap(),
+                "provider-info\n"
+            );
+            assert!(!root.path().join("requests").exists());
+        }
+    }
+
+    #[tokio::test]
+    async fn old_cli_missing_command_and_absent_binary_are_clear_rejections() {
+        let (root, client, _) = fixture();
+        std::fs::write(&client.executable, fixture_script(root.path(), "legacy")).unwrap();
+        for candidate in [
+            client,
+            CompatForgeClient::for_test(
+                &root.path().join("missing"),
+                &root.path().join("requests"),
+            ),
+        ] {
+            let error = candidate.preflight().await.unwrap_err();
+            assert!(matches!(
+                error,
+                BackendError::Provider(ContractError {
+                    code: ErrorCode::ProviderUnavailable,
+                    ..
+                })
+            ));
+            assert!(!root.path().join("requests").exists());
+        }
+    }
+
+    #[tokio::test]
+    async fn malformed_oversized_and_timed_out_provider_info_are_bounded() {
+        for body in ["malformed", "oversized", "timeout"] {
+            let (root, client, _) = fixture();
+            std::fs::write(&client.executable, fixture_script(root.path(), body)).unwrap();
+            let expected = if body == "timeout" {
+                ErrorCode::ProviderUnavailable
+            } else {
+                ErrorCode::SchemaMismatch
+            };
+            let BackendError::Provider(error) = client.preflight().await.unwrap_err() else {
+                panic!("expected bounded provider error");
+            };
+            assert_eq!(error.code, expected, "{body}: {error:?}");
+            assert!(!root.path().join("requests").exists());
+        }
+    }
+
+    #[tokio::test]
+    async fn foreign_daemon_and_replaced_executor_cannot_supply_results() {
+        for identity in ["daemon", "executor"] {
+            let (root, client, report) = fixture();
+            write_report(root.path(), &report);
+            let mut foreign = report.clone();
+            foreign["sourceCommit"] = json!("f".repeat(40));
+            if identity == "daemon" {
+                std::fs::write(
+                    root.path().join("daemon.json"),
+                    serde_json::to_vec(&foreign).unwrap(),
+                )
+                .unwrap();
+            } else {
+                // The actual second execution changes its reported build identity.
+                std::fs::write(
+                    &client.executable,
+                    fixture_script(root.path(), "replaced-executor"),
+                )
+                .unwrap();
+            }
+            let BackendError::Provider(error) = client
+                .operation("applications.list", json!({}))
+                .await
+                .unwrap_err()
+            else {
+                panic!("expected actual execution identity rejection");
+            };
+            assert_eq!(
+                error.code,
+                ErrorCode::SourceMismatch,
+                "{identity}: {error:?}"
+            );
+        }
+    }
+
+    #[tokio::test]
+    #[ignore = "requires an explicitly selected real CLI artifact; provider-info only"]
+    async fn real_cli_provider_info_rejection() {
+        let cli = std::env::var("FORGE_CONTRACT_TEST_CLI").expect("explicit CLI artifact");
+        let expected =
+            std::env::var("FORGE_CONTRACT_TEST_EXPECT_CODE").expect("expected failure code");
+        let root = tempfile::tempdir().unwrap();
+        let client = CompatForgeClient::for_test(Path::new(&cli), &root.path().join("requests"));
+        let BackendError::Provider(error) = client.preflight().await.unwrap_err() else {
+            panic!("expected provider rejection");
+        };
+        assert_eq!(error.code.as_str(), expected);
+        assert!(!root.path().join("requests").exists());
+    }
 }
 
 fn canonical_string(value: &str, output: &mut Vec<u8>) {

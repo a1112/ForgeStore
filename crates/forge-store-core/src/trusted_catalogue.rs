@@ -13,11 +13,17 @@ pub enum TrustError {
     #[error("invalid catalogue: {0}")]
     Catalog(#[from] CatalogError),
     #[error("TUF verification failed: {0}")]
-    Tuf(#[from] tough::error::Error),
+    Tuf(#[source] Box<tough::error::Error>),
     #[error("missing or mismatched signed target binding")]
     TargetBinding,
     #[error("metadata source is not an allowed directory URL")]
     Source,
+}
+
+impl From<tough::error::Error> for TrustError {
+    fn from(error: tough::error::Error) -> Self {
+        Self::Tuf(Box::new(error))
+    }
 }
 
 pub struct TrustedCatalogue;
