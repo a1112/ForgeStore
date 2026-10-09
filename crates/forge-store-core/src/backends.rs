@@ -30,27 +30,16 @@ pub fn decode_compatforge_reply(
     request_id: &str,
     operation: &str,
 ) -> Result<Value, BackendError> {
-    if bytes.len() > 1024 * 1024 {
-        return Err(BackendError::Invalid("CompatForge reply exceeds limit"));
-    }
-    let reply: Value = serde_json::from_slice(bytes)?;
-    if reply.get("schemaVersion") != Some(&json!("1")) {
-        return Err(ContractError::new(
-            ErrorCode::SchemaMismatch,
-            "CompatForge service-response requires schemaVersion 1",
-        )
-        .into());
-    }
-    if reply.as_object().map(serde_json::Map::len) != Some(4)
-        || reply.get("requestId") != Some(&json!(request_id))
-        || reply.get("operation") != Some(&json!(operation))
-    {
-        return Err(BackendError::Invalid("CompatForge reply identity mismatch"));
-    }
-    reply
-        .get("result")
-        .cloned()
-        .ok_or(BackendError::Invalid("CompatForge reply lacks result"))
+    let required = forge_provider_contract::decode_requirements(include_bytes!(
+        "../../../contracts/compatforge-provider-lock-v1.json"
+    ))?;
+    Ok(forge_provider_contract::binding::decode_execution(
+        bytes,
+        1024 * 1024,
+        &required,
+        request_id,
+        operation,
+    )?)
 }
 
 pub fn compatforge_poll_status<'a>(
@@ -212,7 +201,16 @@ impl CompatForgeClient {
             .and_then(Value::as_str)
             .ok_or(BackendError::Invalid("missing request ID"))?
             .to_string();
-        let encoded = serde_json::to_vec(&request)?;
+        let required = forge_provider_contract::decode_requirements(include_bytes!(
+            "../../../contracts/compatforge-provider-lock-v1.json"
+        ))?;
+        // The actual second execution must validate this lock before daemon admission.
+        let invocation = forge_provider_contract::binding::BoundInvocation {
+            schema_version: forge_provider_contract::binding::WIRE_VERSION.into(),
+            required_provider: required,
+            request,
+        };
+        let encoded = serde_json::to_vec(&invocation)?;
         if encoded.len() > 1024 * 1024 {
             return Err(BackendError::Invalid("CompatForge request exceeds limit"));
         }
@@ -770,8 +768,11 @@ with (root / 'trace').open('a') as stream: stream.write(sys.argv[1] + '\n')
 if sys.argv[1] == 'provider-info':
     print((root / 'report.json').read_text())
 else:
-    request = json.loads(pathlib.Path(sys.argv[2]).read_text())
-    print(json.dumps(dict(schemaVersion='1', requestId=request['requestId'], operation=request['operation'], result=[])))
+    invocation = json.loads(pathlib.Path(sys.argv[2]).read_text())
+    request = invocation['request']
+    info = json.loads((root / 'report.json').read_text())
+    daemon = json.loads((root / 'daemon.json').read_text()) if (root / 'daemon.json').exists() else info
+    print(json.dumps(dict(schemaVersion='2', requestId=request['requestId'], operation=request['operation'], executor=info, daemon=dict(schemaVersion='2', instanceId='synthetic-daemon-1', provider=daemon), result=[])))
 "#).unwrap();
         std::fs::set_permissions(&executable, std::fs::Permissions::from_mode(0o755)).unwrap();
         let mut report: Value = serde_json::from_slice(include_bytes!(
@@ -830,7 +831,7 @@ else:
             ),
             (
                 "contractVersion",
-                json!("2.0.0"),
+                json!("1.0.0"),
                 ErrorCode::UnsupportedVersion,
             ),
             (
@@ -910,6 +911,38 @@ else:
             };
             assert_eq!(error.code, expected);
             assert!(!root.path().join("requests").exists());
+        }
+    }
+
+    #[tokio::test]
+    async fn foreign_daemon_and_replaced_executor_cannot_supply_results() {
+        for identity in ["daemon", "executor"] {
+            let (root, client, report) = fixture();
+            write_report(root.path(), &report);
+            let mut foreign = report.clone();
+            foreign["sourceCommit"] = json!("f".repeat(40));
+            if identity == "daemon" {
+                std::fs::write(
+                    root.path().join("daemon.json"),
+                    serde_json::to_vec(&foreign).unwrap(),
+                )
+                .unwrap();
+            } else {
+                // The actual second execution changes its reported build identity.
+                let script = std::fs::read_to_string(&client.executable).unwrap().replace(
+                    "info = json.loads((root / 'report.json').read_text())",
+                    "info = json.loads((root / 'report.json').read_text()); info['sourceCommit'] = 'f' * 40",
+                );
+                std::fs::write(&client.executable, script).unwrap();
+            }
+            let BackendError::Provider(error) = client
+                .operation("applications.list", json!({}))
+                .await
+                .unwrap_err()
+            else {
+                panic!("expected actual execution identity rejection");
+            };
+            assert_eq!(error.code, ErrorCode::SourceMismatch, "{identity}");
         }
     }
 

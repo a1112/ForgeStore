@@ -10,7 +10,7 @@ rejection reason; an old binary merely existing on disk cannot enable the backen
 `service-response` schema/identity validation remains a separate reply gate.
 
 The Rust crate is an exact copy of CompatForge's independently versioned
-`forge-provider-contract` 1.0.0. Shared schemas and negative vectors are byte
+`forge-provider-contract` 2.0.0. Shared schemas and raw/decoded negative vectors are byte
 identical. The public-code adapter maps the domain errors to R-SDK interop v1
 families while preserving the independent Forge protocol/ABI and domain code.
 No R-SDK crate, native ABI or compatibility engine is modified.
@@ -30,3 +30,18 @@ reconciling its divergence with main. Rollback restores a matching complete
 consumer/provider combination; native and Flatpak backends are unchanged.
 Synthetic tests and the macOS `provider-info` binary do not establish Linux
 service readiness, Wine/application behavior, image boot or VM acceptance.
+
+Independent-review repairs require contract 2.0.0 and a bound invocation/reply
+v2. The actual executing CLI validates this lock before runtime initialization;
+the actual daemon negotiates source/version/schema/capabilities and instance on
+the same connection before dispatch. The Store validates both identities and
+request/operation correlation before using a result. Source-less v1 responses
+are refused after a matching CLI preflight. Engine payload schemas/ABIs are
+unchanged. Protocol 1.0.0 behavior described above is superseded at this boundary.
+
+Composition schema 2 uses bounded immutable Git blobs for all protocol inputs
+and executed adapter/verifier/producer modules, independent of index flags. It
+also fixes the actual Desktop receipt digest/profile, requires the provider pair
+and compares every resource to its source blob. External lock reads pin no-follow
+descriptors and reject links/FIFOs. Verification never installs the bundle or
+runs a desktop/service. The R-OS Rust producer remains unconfigured.

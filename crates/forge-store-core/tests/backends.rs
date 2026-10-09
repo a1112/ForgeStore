@@ -298,7 +298,13 @@ fn package_service_request_is_canonical_ascii_and_bounded() {
 
 #[test]
 fn compatforge_reply_must_match_request_and_operation() {
-    let value = json!({"schemaVersion":"1","requestId":"store-1","operation":"applications.get",
+    let mut provider: serde_json::Value = serde_json::from_slice(include_bytes!(
+        "../../../contracts/compatforge-provider-lock-v1.json"
+    ))
+    .unwrap();
+    provider["sourceDirty"] = json!(false);
+    let value = json!({"schemaVersion":"2","requestId":"store-1","operation":"applications.get",
+        "executor":provider,"daemon":{"schemaVersion":"2","instanceId":"synthetic-daemon-1","provider":provider},
         "result":{"application":{"id":"7zip"}}});
     assert_eq!(
         decode_compatforge_reply(
