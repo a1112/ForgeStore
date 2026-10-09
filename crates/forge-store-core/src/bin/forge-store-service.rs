@@ -174,10 +174,7 @@ mod linux {
             Ok(request) => {
                 let id = request.request_id().to_string();
                 let output = handle(&store, request).await;
-                response(
-                    &id,
-                    output.as_ref().map(Clone::clone).map_err(|e| (e.0, e.1)),
-                )
+                response(&id, output.clone())
             }
             Err(_) => response(
                 "invalid",

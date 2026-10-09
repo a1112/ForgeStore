@@ -30,7 +30,7 @@ fn classic_appearance_is_a_closed_signed_delivery_field() {
 
 #[test]
 fn duplicate_application_ids_are_rejected() {
-    let source = example().replace("}]}", "}]}");
+    let source = example();
     let entry = serde_json::from_str::<serde_json::Value>(&source).unwrap()["entries"][0].clone();
     let mut catalog: serde_json::Value = serde_json::from_str(&source).unwrap();
     catalog["entries"].as_array_mut().unwrap().push(entry);
