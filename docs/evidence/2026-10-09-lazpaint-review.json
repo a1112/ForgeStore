@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "applicationId": "lazpaint",
+  "reviewMode": "Independent read-only review of source/install/original GUI evidence before signing, signed candidate before activation, and final runtime/publication after lifecycle completion.",
+  "finalResult": "passed-no-blocking-findings",
+  "fullCheckpointStagesReviewed": [
+    "after-install",
+    "before-market",
+    "after-activation",
+    "before-rollback",
+    "after-rollback",
+    "before-restart",
+    "after-restart"
+  ],
+  "fullHistoricalFieldsChecked": true,
+  "stageCounts": [
+    [
+      178,
+      63
+    ],
+    [
+      180,
+      63
+    ],
+    [
+      180,
+      63
+    ],
+    [
+      183,
+      64
+    ],
+    [
+      183,
+      65
+    ],
+    [
+      184,
+      65
+    ],
+    [
+      184,
+      65
+    ]
+  ],
+  "sevenCoreJobsKindGenerationStatusAndZeroExitVerified": true,
+  "twoPngFilesSeparatelyDecodedWithStandardLibrary": true,
+  "pngCrcPixelsCornersAndOppositeStrokeDirectionsVerified": true,
+  "twoNativeLzpHeadersAndDigestsVerified": true,
+  "all24ImageAndOutputPinsVerified": true,
+  "frozenReceiptAnd29PublicSignedFilesAndTarBytesPreserved": true,
+  "original23CompletedAnd12BlockedEntriesExact": true,
+  "completedCount24Valid": true,
+  "scopeAndSocketActionAttributionAccurate": true,
+  "minorDescriptionCorrection": "Host Pillow absence retained; independent decoder attribution corrected to separate standard-library implementations.",
+  "historicalCrLfHandling": "One-time git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check. Signed CRLF receipt bytes preserved; persistent Git settings unchanged.",
+  "filesServicesGuiOrKeysModifiedByReviewer": false,
+  "privateKeysAndCredentialsReadByReviewer": false
+}

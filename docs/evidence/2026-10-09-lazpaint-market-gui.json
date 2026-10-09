@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "applicationId": "lazpaint",
+  "generationId": "gen-job-1791513323789-3",
+  "originalGeneration": "gen-job-1791421778900-1",
+  "newGenerationDistinct": true,
+  "storeUpdateJob": {
+    "action": "update",
+    "appId": "lazpaint",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "be9ed544-3827-409e-868e-ccd73941ab49",
+    "state": "succeeded"
+  },
+  "fixture": {
+    "width": 320,
+    "height": 240,
+    "sizeBytes": 1507,
+    "sha256": "17cfbef469be270787057faa462927241a7d235dadd8ee946e317084afa64abc",
+    "colors": [
+      [
+        250,
+        240,
+        245
+      ],
+      [
+        210,
+        255,
+        235
+      ],
+      [
+        235,
+        220,
+        255
+      ],
+      [
+        250,
+        250,
+        210
+      ]
+    ],
+    "names": [
+      "input/市场图像.png",
+      "input/input-market.png"
+    ],
+    "independentFromOriginal": true,
+    "basis": "New four-color quadrant fixture; not copied from original bottle or GUI output."
+  },
+  "manualSettingsCopied": false,
+  "jobs": [
+    {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 16119,
+          "requestId": "job-1791513323789-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5481,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791513323789-3/prefix",
+          "requestId": "job-1791513323789-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5523,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791513323789-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791513323789-3",
+      "id": "job-1791513323789-3",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 16416,
+          "requestId": "job-1791513588386-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 1125133,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791513323789-3/prefix",
+          "requestId": "job-1791513588386-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 1125175,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791513588386-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791513323789-3",
+      "id": "job-1791513588386-4",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 25637,
+          "requestId": "job-1791514770165-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 44784,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791513323789-3/prefix",
+          "requestId": "job-1791514770165-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 44826,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791514770165-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791513323789-3",
+      "id": "job-1791514770165-5",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  ],
+  "guiWorkflow": "Default image browser opened Chinese-name new fixture; single-layer black pen stroke; native LZP save; 24-bit PNG export; normal exit and new-process explicit LZP and PNG reopen.",
+  "nativeOutput": {
+    "file": "output/市场图像.lzp",
+    "sizeBytes": 15362,
+    "sha256": "231b7224aee63dcce770ae1327b6b89d17da02f38717b0c9bb3ff93b6fe275f3",
+    "magic": "LazPaint",
+    "headerWidth": 320,
+    "headerHeight": 240,
+    "headerLayerCount": 1,
+    "completeNativeParserClaimed": false
+  },
+  "pngOutput": {
+    "file": "output/市场图像.png",
+    "sizeBytes": 4474,
+    "sha256": "3e5626a1137f6ade350e3e722187df22cfb298093e16bb89ddb8a0539e19867f",
+    "width": 320,
+    "height": 240,
+    "bitDepth": 8,
+    "colorType": 2,
+    "allChunkCrcsVerified": true,
+    "independentDecodedPixels": true,
+    "changedPixelsComparedWithFixture": 2025,
+    "blackStrokePixels": 1272,
+    "fourUnchangedCornersVerified": true,
+    "blackStrokeRgbThresholdExclusive": 32,
+    "blackStrokeThresholdAppliesTo": "All RGB channels must be below 32; dark/near-black stroke pixels."
+  },
+  "explicitFreshProcessNativeReopenObserved": true,
+  "explicitFreshProcessPngReopenObserved": true,
+  "defaultImageBrowserPassed": true,
+  "fullImageEditorAcceptance": false,
+  "bothGenerationsOutputsAndInputsPreserved": true,
+  "prior180CoreAnd63FullStoreRowsPreserved": true,
+  "rollback": {
+    "schemaVersion": 1,
+    "date": "2026-10-09",
+    "applicationId": "lazpaint",
+    "coreJobs": 183,
+    "storeRows": 65,
+    "storeRollbackJob": {
+      "action": "rollback",
+      "appId": "lazpaint",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "c9596a63-a50a-437b-ba9a-1fa287b8a7c5",
+      "state": "succeeded"
+    },
+    "selectedOriginalGeneration": "gen-job-1791421778900-1",
+    "bothGenerationsReady": true,
+    "noCoreJobCreatedByRollback": true,
+    "full183CoreJobsAnd64PriorStoreRowsPreserved": true,
+    "bothGenerationsOutputPinsPreserved": true,
+    "allOtherApplicationGenerationsPreserved": true,
+    "trustConfigsAndGuardsPreserved": true,
+    "knownTimeMonotonic": true
+  },
+  "afterRollbackExplicitNativeAndPngReopenObserved": true,
+  "runtimeRecoveryEvidence": "2026-10-09-lazpaint-runtime-recovery.json",
+  "sourceOfLifecycleActions": "ForgeStore socket enqueue update/rollback; CompatForge managed GUI jobs; direct browser observation of application and market UI. No claim of GUI-clicking update or rollback.",
+  "cachedSameVersionOnly": true,
+  "guestOnlineDownloadAccepted": false,
+  "crossVersionUpgradeAccepted": false
+}

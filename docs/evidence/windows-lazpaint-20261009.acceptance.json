@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "environment": "Isolated original ForgeOS v12 x86_64 KVM VM; KDE Wayland and Wine 11.14 win64; managed Inno install; normal authentication retained.",
+  "applications": [
+    {
+      "id": "lazpaint",
+      "version": "7.3",
+      "observedGuiVersion": "7.3 (64-bit)",
+      "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459",
+      "size": 14153628,
+      "installJobId": "job-1791421778900-1",
+      "launchJobId": "job-1791508536714-1",
+      "reopenJobId": "job-1791510646663-2",
+      "generationId": "gen-job-1791421778900-1",
+      "definitionDigest": "sha256:5a18c6aebf7cdf2fb338f7683d9361d3a4ad66e081965a5149d948df77a3e791",
+      "launcherSha256": "sha256:a59b76180412579bef367e1f678680067912a155b16c00649c86f9e6746592d6",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "guiFileOperation": "passed-limited-single-raster-layer-workflow",
+      "fixture": {
+        "format": "PNG",
+        "width": 320,
+        "height": 240,
+        "sizeBytes": 1565,
+        "sha256": "1f57cd251430e19f6e93f0ee2af5fab8f0dfe87b3e63f07fba8175b23c6b5558",
+        "names": [
+          "input/输入图像.png",
+          "input/input-colors.png"
+        ],
+        "basis": "Programmatically generated four solid quadrants; fixture is not GUI output."
+      },
+      "nativeOutput": {
+        "file": "output/输入图像.lzp",
+        "sizeBytes": 14959,
+        "sha256": "f273d99c0ad8ddf9ec149469bab3ef11c574fb95016be721ab928b29afbacafa",
+        "magic": "LazPaint",
+        "headerWidth": 320,
+        "headerHeight": 240,
+        "headerLayerCount": 1,
+        "completeNativeParserClaimed": false
+      },
+      "pngOutput": {
+        "file": "output/输入图像.png",
+        "sizeBytes": 3629,
+        "sha256": "ccf03abff8400c93c1649e44bce88632b6cf4fc7c8f7b27a735e29fc4841a6e0",
+        "width": 320,
+        "height": 240,
+        "bitDepth": 8,
+        "colorType": 2,
+        "allChunkCrcsVerified": true,
+        "independentDecodedPixels": true,
+        "changedPixelsComparedWithFixture": 1700,
+        "blackStrokePixels": 1073,
+        "fourUnchangedCornersVerified": true,
+        "blackStrokeRgbThresholdExclusive": 32,
+        "blackStrokeThresholdAppliesTo": "All RGB channels must be below the threshold; dark/near-black stroke pixels.",
+        "exactBlackPixels": 1016
+      },
+      "explicitFreshProcessNativeReopenObserved": true,
+      "explicitFreshProcessPngReopenObserved": true,
+      "defaultImageBrowserFreshReopenPassed": true,
+      "fullImageEditorAcceptance": false,
+      "screenshotsAndOutput": {
+        "editor-created-original.png": {
+          "sha256": "ccf03abff8400c93c1649e44bce88632b6cf4fc7c8f7b27a735e29fc4841a6e0",
+          "sizeBytes": 3629
+        },
+        "original-fresh-default-browser-files.jpg": {
+          "sha256": "39b67e4372bd22fb0698cb095985e75428b48bd7fe2fc229c11e99f71aa9d97c",
+          "sizeBytes": 86224
+        },
+        "original-fresh-lzp-reopened.jpg": {
+          "sha256": "e80122f87391138c1403b0bd37b39ca506621c213e7b5dd928b30a826a87cc27",
+          "sizeBytes": 104970
+        },
+        "original-fresh-png-reopened.jpg": {
+          "sha256": "dccdac13173299e9d2c3543e410a8ebd32c87c0859847b06e3155e323dda079b",
+          "sizeBytes": 105150
+        },
+        "original-lzp-save-dialog.jpg": {
+          "sha256": "982346edb968e603e9032917776e8d9550b14597f87c62f3fbeea82e4584a0d0",
+          "sizeBytes": 75934
+        },
+        "original-native-saved-and-exported.jpg": {
+          "sha256": "74ea1b77ef80684c7a9417c1e72ccf73535115979060d1536b703a898827fe57",
+          "sizeBytes": 101714
+        },
+        "original-png-24bit-options.jpg": {
+          "sha256": "22b7440c369c3edb453b6bfc81c9493cc0e2dc621026b9fbb0bf3276a36d58aa",
+          "sizeBytes": 78644
+        },
+        "original-png-export-dialog.jpg": {
+          "sha256": "f156e41ce99760e4e25ab4f1d0fc1c2591b313eb335738ff939f3d963fb96d78",
+          "sizeBytes": 80296
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-08-lazpaint-source.json",
+    "sha256": "a52835c12a9af9e44cc4192ca478cbe4af9c51b90dc5d2b222fb742bfbd0d685",
+    "sourceCommit": "a11930b418c7d9050886bd7d321fe78acfcd7ea6",
+    "license": "GPL-3.0-only",
+    "artifact": {
+      "fileName": "lazpaint7.3_setup_win32_win64.exe",
+      "sourceUrl": "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_setup_win32_win64.exe",
+      "sizeBytes": 14153628,
+      "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459",
+      "publishedAssetSizeMatched": true,
+      "upstreamGitHubAssetDigest": null,
+      "upstreamGitHubAssetDigestMatched": false,
+      "sha256Basis": "Locally calculated from fixed official HTTPS release asset; this historical Windows asset has no published GitHub digest."
+    }
+  },
+  "limits": [
+    "Only this fixed 7.3 Windows installer and Wine 11.14 win64 generation are covered. Single raster layer, Chinese-name image load, black pen stroke, Chinese LZP save, 24-bit PNG export and explicit new-process native/PNG reopen passed.",
+    "Chinese output names were retained from the existing input filename and adapted through the GUI format selector. Direct Chinese keyboard entry was not verified; a noVNC text-input attempt did not establish a reliable result.",
+    "Layer composition, vector editing, transparency, animation, RAW, scripts, plugins, printing and tablets were not accepted. LZP header fields and real GUI parsing were checked; a complete independent LZP parser is not claimed.",
+    "Installer SHA-256 was calculated from a fixed official HTTPS release asset and checked on receipt in the guest. This historical Windows asset has no published GitHub digest. Authenticode, reproducible build and full component license/source closure are unverified.",
+    "Market activation, independent market generation, cached same-version update, rollback and service restart are pending at receipt freeze and recorded separately. Guest online download, fresh-machine registration and cross-version upgrades are unverified."
+  ],
+  "publicationEvidenceSeparate": true
+}

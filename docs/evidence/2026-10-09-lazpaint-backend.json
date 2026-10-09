@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "applicationId": "lazpaint",
+  "coreJobs": 180,
+  "storeRows": 63,
+  "all178PriorCoreJobsAnd63FullStoreRowsPreserved": true,
+  "fullSignedTrustAndMarketPreserved": true,
+  "allPriorConfigurationsAndGenerationsPreserved": true,
+  "knownTimeMonotonic": true,
+  "oldMpcOutputsPreserved": true,
+  "powerNeverPreserved": true,
+  "jobs": {
+    "install": {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 1690415,
+          "requestId": "job-1791421778900-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5244,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791421778900-1/prefix",
+          "requestId": "job-1791421778900-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5286,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791421778900-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791421778900-1",
+      "id": "job-1791421778900-1",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    "launch": {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 4036,
+          "requestId": "job-1791508536714-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 1976629,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791421778900-1/prefix",
+          "requestId": "job-1791508536714-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 1976671,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791508536714-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791421778900-1",
+      "id": "job-1791508536714-1",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    "reopen": {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12754,
+          "requestId": "job-1791510646663-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 189418,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791421778900-1/prefix",
+          "requestId": "job-1791510646663-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 189460,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791510646663-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791421778900-1",
+      "id": "job-1791510646663-2",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  },
+  "generation": {
+    "bottleId": "gen-job-1791421778900-1",
+    "createdAtMilliseconds": 1791421778904,
+    "definition": {
+      "bottleId": "gui-lazpaint",
+      "category": "graphics",
+      "compatibilityRating": "unknown",
+      "id": "lazpaint",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/DIR=C:\\LazPaint"
+        ],
+        "fileName": "lazpaint7.3_setup_win32_win64.exe",
+        "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459"
+      },
+      "launchers": [
+        {
+          "executable": "LazPaint/lazpaint.exe",
+          "id": "main",
+          "name": "LazPaint"
+        }
+      ],
+      "name": "LazPaint",
+      "publisher": "Circular, Fabien Wang, Lainz and others",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "7.3"
+    },
+    "definitionDigest": "sha256:5a18c6aebf7cdf2fb338f7683d9361d3a4ad66e081965a5149d948df77a3e791",
+    "id": "gen-job-1791421778900-1",
+    "launcherDigests": {
+      "main": "sha256:a59b76180412579bef367e1f678680067912a155b16c00649c86f9e6746592d6"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791421791241
+  },
+  "outputProof": {
+    "schemaVersion": 1,
+    "date": "2026-10-09",
+    "applicationId": "lazpaint",
+    "generationId": "gen-job-1791421778900-1",
+    "closedGuiJobId": "job-1791508536714-1",
+    "closedGuiJobStatus": "succeeded",
+    "closedGuiExitCode": 0,
+    "originalInputPreserved": true,
+    "native": {
+      "file": "output/输入图像.lzp",
+      "sizeBytes": 14959,
+      "sha256": "f273d99c0ad8ddf9ec149469bab3ef11c574fb95016be721ab928b29afbacafa",
+      "magic": "LazPaint",
+      "headerWidth": 320,
+      "headerHeight": 240,
+      "headerLayerCount": 1,
+      "completeNativeParserClaimed": false
+    },
+    "png": {
+      "file": "output/输入图像.png",
+      "sizeBytes": 3629,
+      "sha256": "ccf03abff8400c93c1649e44bce88632b6cf4fc7c8f7b27a735e29fc4841a6e0",
+      "width": 320,
+      "height": 240,
+      "bitDepth": 8,
+      "colorType": 2,
+      "allChunkCrcsVerified": true,
+      "independentDecodedPixels": true,
+      "changedPixelsComparedWithFixture": 1700,
+      "blackStrokePixels": 1073,
+      "fourUnchangedCornersVerified": true,
+      "blackStrokeRgbThresholdExclusive": 32,
+      "blackStrokeThresholdAppliesTo": "All RGB channels must be below the threshold; dark/near-black stroke pixels.",
+      "exactBlackPixels": 1016
+    },
+    "guiObserved": {
+      "loadedChinesePng": true,
+      "blackPenStroke": true,
+      "savedChineseLzp": true,
+      "exportedChinese24BitPng": true,
+      "defaultImageBrowserRestored": true
+    },
+    "guiFreshReopenPending": true,
+    "published": false
+  },
+  "explicitFreshProcessNativeReopenObserved": true,
+  "explicitFreshProcessPngReopenObserved": true,
+  "defaultImageBrowserObservedAfterReopen": true,
+  "limitedGuiFileWorkflowPassed": true,
+  "completeImageEditorAccepted": false,
+  "marketLifecyclePending": true,
+  "bootId": "890bdc39-6e2d-4ee8-81d2-3a8e6923f2cb",
+  "screenshotsAndOutput": {
+    "editor-created-original.png": {
+      "sha256": "ccf03abff8400c93c1649e44bce88632b6cf4fc7c8f7b27a735e29fc4841a6e0",
+      "sizeBytes": 3629
+    },
+    "original-fresh-default-browser-files.jpg": {
+      "sha256": "39b67e4372bd22fb0698cb095985e75428b48bd7fe2fc229c11e99f71aa9d97c",
+      "sizeBytes": 86224
+    },
+    "original-fresh-lzp-reopened.jpg": {
+      "sha256": "e80122f87391138c1403b0bd37b39ca506621c213e7b5dd928b30a826a87cc27",
+      "sizeBytes": 104970
+    },
+    "original-fresh-png-reopened.jpg": {
+      "sha256": "dccdac13173299e9d2c3543e410a8ebd32c87c0859847b06e3155e323dda079b",
+      "sizeBytes": 105150
+    },
+    "original-lzp-save-dialog.jpg": {
+      "sha256": "982346edb968e603e9032917776e8d9550b14597f87c62f3fbeea82e4584a0d0",
+      "sizeBytes": 75934
+    },
+    "original-native-saved-and-exported.jpg": {
+      "sha256": "74ea1b77ef80684c7a9417c1e72ccf73535115979060d1536b703a898827fe57",
+      "sizeBytes": 101714
+    },
+    "original-png-24bit-options.jpg": {
+      "sha256": "22b7440c369c3edb453b6bfc81c9493cc0e2dc621026b9fbb0bf3276a36d58aa",
+      "sizeBytes": 78644
+    },
+    "original-png-export-dialog.jpg": {
+      "sha256": "f156e41ce99760e4e25ab4f1d0fc1c2591b313eb335738ff939f3d963fb96d78",
+      "sizeBytes": 80296
+    }
+  },
+  "limits": [
+    "Only this fixed 7.3 Windows installer and Wine 11.14 win64 generation are covered. Single raster layer, Chinese-name image load, black pen stroke, Chinese LZP save, 24-bit PNG export and explicit new-process native/PNG reopen passed.",
+    "Chinese output names were retained from the existing input filename and adapted through the GUI format selector. Direct Chinese keyboard entry was not verified; a noVNC text-input attempt did not establish a reliable result.",
+    "Layer composition, vector editing, transparency, animation, RAW, scripts, plugins, printing and tablets were not accepted. LZP header fields and real GUI parsing were checked; a complete independent LZP parser is not claimed.",
+    "Installer SHA-256 was calculated from a fixed official HTTPS release asset and checked on receipt in the guest. This historical Windows asset has no published GitHub digest. Authenticode, reproducible build and full component license/source closure are unverified.",
+    "Market activation, independent market generation, cached same-version update, rollback and service restart are pending at receipt freeze and recorded separately. Guest online download, fresh-machine registration and cross-version upgrades are unverified."
+  ],
+  "sourceEvidenceReference": "2026-10-08-lazpaint-source.json",
+  "fixture": {
+    "format": "PNG",
+    "width": 320,
+    "height": 240,
+    "sizeBytes": 1565,
+    "sha256": "1f57cd251430e19f6e93f0ee2af5fab8f0dfe87b3e63f07fba8175b23c6b5558",
+    "names": [
+      "input/输入图像.png",
+      "input/input-colors.png"
+    ],
+    "basis": "Programmatically generated four solid quadrants; fixture is not GUI output."
+  },
+  "originalOutputProofFrozenBeforeReopen": true
+}

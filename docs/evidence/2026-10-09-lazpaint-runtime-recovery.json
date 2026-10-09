@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "applicationId": "lazpaint",
+  "coreJobs": 184,
+  "storeRows": 65,
+  "allTasksTerminal": true,
+  "restart": "normal systemctl --user restart after all jobs terminal",
+  "servicePidsBefore": {
+    "compatforge.service": "MainPID=3059",
+    "forge-store.service": "MainPID=15772"
+  },
+  "servicePidsAfter": {
+    "compatforge.service": "MainPID=27578",
+    "forge-store.service": "MainPID=27592"
+  },
+  "full184CoreJobsAnd65StoreRowsPreserved": true,
+  "fullMarketSnapshotPreserved": true,
+  "fullSignedTrustDocumentsPreserved": true,
+  "allConfigDigestsAndApplicationGenerationsPreserved": true,
+  "serviceGuardsPreserved": true,
+  "knownTimeMonotonic": true,
+  "latestKnownTimeBefore": "2026-10-09T02:32:51.990523412Z",
+  "latestKnownTimeAfter": "2026-10-09T03:03:43.62323404Z",
+  "selectedGeneration": "gen-job-1791421778900-1",
+  "bothGenerationsReady": true,
+  "bothGenerationsOutputInputAndLauncherPinsPreserved": true,
+  "oldMpcOutputPinsPreserved": true,
+  "powerNeverPreserved": true,
+  "outputs": {
+    "original-native": {
+      "file": "output/输入图像.lzp",
+      "sizeBytes": 14959,
+      "sha256": "f273d99c0ad8ddf9ec149469bab3ef11c574fb95016be721ab928b29afbacafa",
+      "magic": "LazPaint",
+      "headerWidth": 320,
+      "headerHeight": 240,
+      "headerLayerCount": 1,
+      "completeNativeParserClaimed": false,
+      "generationId": "gen-job-1791421778900-1"
+    },
+    "original-png": {
+      "file": "output/输入图像.png",
+      "sizeBytes": 3629,
+      "sha256": "ccf03abff8400c93c1649e44bce88632b6cf4fc7c8f7b27a735e29fc4841a6e0",
+      "width": 320,
+      "height": 240,
+      "bitDepth": 8,
+      "colorType": 2,
+      "allChunkCrcsVerified": true,
+      "independentDecodedPixels": true,
+      "changedPixelsComparedWithFixture": 1700,
+      "blackStrokePixels": 1073,
+      "fourUnchangedCornersVerified": true,
+      "generationId": "gen-job-1791421778900-1"
+    },
+    "market-native": {
+      "file": "output/市场图像.lzp",
+      "sizeBytes": 15362,
+      "sha256": "231b7224aee63dcce770ae1327b6b89d17da02f38717b0c9bb3ff93b6fe275f3",
+      "magic": "LazPaint",
+      "headerWidth": 320,
+      "headerHeight": 240,
+      "headerLayerCount": 1,
+      "completeNativeParserClaimed": false,
+      "generationId": "gen-job-1791513323789-3"
+    },
+    "market-png": {
+      "file": "output/市场图像.png",
+      "sizeBytes": 4474,
+      "sha256": "3e5626a1137f6ade350e3e722187df22cfb298093e16bb89ddb8a0539e19867f",
+      "width": 320,
+      "height": 240,
+      "bitDepth": 8,
+      "colorType": 2,
+      "allChunkCrcsVerified": true,
+      "independentDecodedPixels": true,
+      "changedPixelsComparedWithFixture": 2025,
+      "blackStrokePixels": 1272,
+      "fourUnchangedCornersVerified": true,
+      "generationId": "gen-job-1791513323789-3"
+    }
+  },
+  "afterRollbackGuiJob": {
+    "applicationId": "lazpaint",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 26754,
+        "requestId": "job-1791514921540-6",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 47486,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791421778900-1/prefix",
+        "requestId": "job-1791514921540-6",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 47528,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791514921540-6",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791421778900-1",
+    "id": "job-1791514921540-6",
+    "kind": "launch",
+    "status": "succeeded"
+  },
+  "afterRollbackExplicitNativeAndPngReopenObserved": true,
+  "privateFullCheckpoint": "lazpaint-20261009/after-restart.json",
+  "bootId": "890bdc39-6e2d-4ee8-81d2-3a8e6923f2cb"
+}

@@ -1,0 +1,50 @@
+{
+  "activated": true,
+  "metadataVersion": 34,
+  "catalogueEntries": 26,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "originalCoreJobsPreserved": true,
+  "coreJobs": 180,
+  "fullStoreRowsPreserved": true,
+  "storeRows": 63,
+  "previousInstalledAndEntriesPreserved": true,
+  "lazpaintEntry": {
+    "compatibility": {
+      "evidence": "windows-lazpaint-20261009.acceptance.json#lazpaint",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459",
+        "size": 14153628,
+        "target": "lazpaint7.3_setup_win32_win64.exe",
+        "url": "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_setup_win32_win64.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "lazpaint"
+    },
+    "id": "lazpaint",
+    "license": "GPL-3.0-only",
+    "name": {
+      "en": "LazPaint",
+      "zhCN": "LazPaint"
+    },
+    "origin": "https://github.com/bgrabitmap/lazpaint",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Circular, Fabien Wang, Lainz and others",
+    "summary": {
+      "en": "Chinese-name image load, single-layer painting, LZP save and PNG export tested; advanced editing and direct Chinese keyboard input unverified.",
+      "zhCN": "中文图像打开、单层绘图、LZP 保存与 PNG 导出已测；高级编辑和直接中文输入未验收"
+    },
+    "version": "7.3"
+  },
+  "lazpaintInstalled": {
+    "appId": "lazpaint",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "7.3"
+  },
+  "serviceGuardsPreserved": true
+}

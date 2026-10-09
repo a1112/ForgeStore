@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "applicationId": "lazpaint",
+  "productFailureConfirmed": false,
+  "harnessFailures": [
+    {
+      "stage": "initial GUI path entry",
+      "detail": "Initial focus/coordinate attempts entered a path into the wrong control; no fixture or output was overwritten."
+    },
+    {
+      "stage": "colon key alias",
+      "detail": "The colon keysym produced semicolon in the actual native filename; Windows treated C;\\... as relative and reported path not found. Shift_L+semicolon produced a real colon; the native dialog then listed both pinned PNG inputs."
+    },
+    {
+      "stage": "direct Chinese text input",
+      "detail": "noVNC keyboard textarea input did not establish reliable Chinese text in the application field. Cancelled without saving; Chinese filename was retained from source and changed through the GUI format selector."
+    },
+    {
+      "stage": "source diagnostic lookup",
+      "detail": "Initial browser-source path omitted dialog/ and returned 404; Git tree gave the actual pinned dialog/ubrowseimages.pas and .lfm files."
+    },
+    {
+      "stage": "pre-login backend query",
+      "detail": "After an externally observed VM reboot, graphical-session.target and CompatForge were inactive before normal login; CLI socket query failed. Normal authorized login activated the existing service, with all 178 Core jobs and 63 Store rows preserved."
+    },
+    {
+      "stage": "market format-selector batching",
+      "detail": "A batched Down/Return sequence selected JPEG and opened JPEG options before output-folder edits. Cancelled without submission; exact new-generation Pictures/市场图像.jpg absence verified. Subsequent explicit GUI dropdown selection saved LZP and 24-bit PNG to ForgeQA/output.",
+      "evidence": "2026-10-09-lazpaint/market-jpeg-options-unsubmitted.jpg"
+    },
+    {
+      "stage": "host independent image decoder probe",
+      "detail": "Host Python 3.9 did not provide Pillow. Parent and independent reviewer used separate standard-library PNG chunk/CRC/filter decoders. No product dependency was added."
+    }
+  ],
+  "nativeDialogProbe": {
+    "temporarilySelected": true,
+    "defaultImageBrowserRestored": true,
+    "defaultBrowserFreshProcessLzpAndPngOpenPassed": true
+  },
+  "authenticationChanged": false,
+  "productCodeChanged": false
+}

@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-09",
+  "applicationId": "lazpaint",
+  "version": "7.3",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited single-raster-layer Chinese-name file load, pen drawing, native LZP save, 24-bit PNG export and fresh-process native/PNG reopen in original and independent market generation; cached same-version update, exact rollback and service restart verified.",
+  "fullImageEditorAcceptance": false,
+  "signedCatalogue": "catalogue/candidate-v25/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 34,
+    "snapshot": 34,
+    "timestamp": 34
+  },
+  "catalogueEntries": 26,
+  "acceptedDistinctWindowsApplications": 24,
+  "excludedFixtures": 2,
+  "coreJobCount": 184,
+  "storeRowCount": 65,
+  "acceptanceReceipt": "windows-lazpaint-20261009.acceptance.json",
+  "acceptanceReceiptSha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7",
+  "activationEvidence": "2026-10-09-lazpaint-activation.json",
+  "marketGuiEvidence": "2026-10-09-lazpaint-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-09-lazpaint-runtime-recovery.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-lazpaint-20261009.acceptance.json#lazpaint",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459",
+        "size": 14153628,
+        "target": "lazpaint7.3_setup_win32_win64.exe",
+        "url": "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_setup_win32_win64.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "lazpaint"
+    },
+    "id": "lazpaint",
+    "license": "GPL-3.0-only",
+    "name": {
+      "en": "LazPaint",
+      "zhCN": "LazPaint"
+    },
+    "origin": "https://github.com/bgrabitmap/lazpaint",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Circular, Fabien Wang, Lainz and others",
+    "summary": {
+      "en": "Chinese-name image load, single-layer painting, LZP save and PNG export tested; advanced editing and direct Chinese keyboard input unverified.",
+      "zhCN": "中文图像打开、单层绘图、LZP 保存与 PNG 导出已测；高级编辑和直接中文输入未验收"
+    },
+    "version": "7.3"
+  },
+  "installed": {
+    "appId": "lazpaint",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "7.3"
+  },
+  "selectedOriginalGeneration": "gen-job-1791421778900-1",
+  "marketDetailsVersionLicenseTestedEvidenceAndLimitsVisiblyObserved": true,
+  "marketInstalledRowAndRollbackControlVisiblyObserved": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "lazpaint",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "be9ed544-3827-409e-868e-ccd73941ab49",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "lazpaint",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "c9596a63-a50a-437b-ba9a-1fa287b8a7c5",
+      "state": "succeeded"
+    }
+  },
+  "coreJobs": [
+    {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 16119,
+          "requestId": "job-1791513323789-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5481,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791513323789-3/prefix",
+          "requestId": "job-1791513323789-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5523,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791513323789-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791513323789-3",
+      "id": "job-1791513323789-3",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 16416,
+          "requestId": "job-1791513588386-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 1125133,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791513323789-3/prefix",
+          "requestId": "job-1791513588386-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 1125175,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791513588386-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791513323789-3",
+      "id": "job-1791513588386-4",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 25637,
+          "requestId": "job-1791514770165-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 44784,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791513323789-3/prefix",
+          "requestId": "job-1791514770165-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 44826,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791514770165-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791513323789-3",
+      "id": "job-1791514770165-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "lazpaint",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 26754,
+          "requestId": "job-1791514921540-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 47486,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791421778900-1/prefix",
+          "requestId": "job-1791514921540-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 47528,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791514921540-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791421778900-1",
+      "id": "job-1791514921540-6",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  ],
+  "full184CoreAnd65StoreFieldsPreservedAcrossRestart": true,
+  "fullCheckpointMatchAfterMarketGuiClosed": true,
+  "latestKnownTime": "2026-10-09T03:03:43.62323404Z",
+  "privateFullCheckpoint": "lazpaint-20261009/after-restart.json",
+  "readOnlyCurrentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-20261009.py",
+  "priorSignedHistoriesAndMpcOriginalAndCorrectedReceiptsPreserved": true,
+  "trustResetOrDowngradePerformed": false,
+  "publicationEvidenceSeparate": true,
+  "screenshotsAndOutputs": {
+    "editor-created-market.png": {
+      "sha256": "3e5626a1137f6ade350e3e722187df22cfb298093e16bb89ddb8a0539e19867f",
+      "sizeBytes": 4474
+    },
+    "editor-created-original.png": {
+      "sha256": "ccf03abff8400c93c1649e44bce88632b6cf4fc7c8f7b27a735e29fc4841a6e0",
+      "sizeBytes": 3629
+    },
+    "market-details-lazpaint.jpg": {
+      "sha256": "a5c7c266256599482aee2beedd9d486ec3ed66b05ddd43a9aa13387b0394d94e",
+      "sizeBytes": 107797
+    },
+    "market-discovery-lazpaint.jpg": {
+      "sha256": "d34dd816b47dee7ae0a4389c98c53f5c4dc1b497a2ff4766b142dea98d7bd0ca",
+      "sizeBytes": 102534
+    },
+    "market-fresh-default-browser-files.jpg": {
+      "sha256": "92778d02deeaf9ac4a5e8a346f8b460c2ccfa54a1434c9e44045c089f4afbb25",
+      "sizeBytes": 96724
+    },
+    "market-fresh-lzp-reopened.jpg": {
+      "sha256": "f483ab4a69d1ced29fc2134d49538c5e84d7ba182fc344ced5b99a16b816f7a3",
+      "sizeBytes": 115116
+    },
+    "market-fresh-png-reopened.jpg": {
+      "sha256": "10aedef9ba95c5c368f8a42cb46a80ce87fcc1872652ece037dac1e99788997d",
+      "sizeBytes": 114938
+    },
+    "market-independent-input-selection.jpg": {
+      "sha256": "0e059c5c4071991ce455de453d9effc168154ba074fcf55fbbcbcef1d7a18257",
+      "sizeBytes": 92300
+    },
+    "market-installed-after-rollback.jpg": {
+      "sha256": "9dac22ad20497b3c11e4bedc24f74a4ced8b302919b96268a69c4aaeb5126954",
+      "sizeBytes": 127527
+    },
+    "market-jpeg-options-unsubmitted.jpg": {
+      "sha256": "1a9e3e126839f56c84eea5af307fcc4a9d7330b3ce354666f6cd1a2e9c2662a2",
+      "sizeBytes": 91844
+    },
+    "market-lzp-save-dialog.jpg": {
+      "sha256": "04b9b30038c9599d44fe3098aa71d0a3b381fdc0732c657e7b040373cab35f38",
+      "sizeBytes": 87506
+    },
+    "market-native-saved-and-exported.jpg": {
+      "sha256": "5c9efb433a90b8eacda7ffc07390175e5e2f77ce62f2d3e4e9fd673d62c6170b",
+      "sizeBytes": 113289
+    },
+    "market-png-24bit-options.jpg": {
+      "sha256": "79ed5f6a74cb7d3699f68f96554e5652deba0daba18eab2cfb317e1e7f9aa198",
+      "sizeBytes": 88771
+    },
+    "market-png-export-dialog.jpg": {
+      "sha256": "1cedc23d752e6a762c238f41df5b7a7bd10cadcd93198f321465a382b3b7b945",
+      "sizeBytes": 90652
+    },
+    "original-fresh-default-browser-files.jpg": {
+      "sha256": "39b67e4372bd22fb0698cb095985e75428b48bd7fe2fc229c11e99f71aa9d97c",
+      "sizeBytes": 86224
+    },
+    "original-fresh-lzp-reopened.jpg": {
+      "sha256": "e80122f87391138c1403b0bd37b39ca506621c213e7b5dd928b30a826a87cc27",
+      "sizeBytes": 104970
+    },
+    "original-fresh-png-reopened.jpg": {
+      "sha256": "dccdac13173299e9d2c3543e410a8ebd32c87c0859847b06e3155e323dda079b",
+      "sizeBytes": 105150
+    },
+    "original-lzp-save-dialog.jpg": {
+      "sha256": "982346edb968e603e9032917776e8d9550b14597f87c62f3fbeea82e4584a0d0",
+      "sizeBytes": 75934
+    },
+    "original-native-saved-and-exported.jpg": {
+      "sha256": "74ea1b77ef80684c7a9417c1e72ccf73535115979060d1536b703a898827fe57",
+      "sizeBytes": 101714
+    },
+    "original-png-24bit-options.jpg": {
+      "sha256": "22b7440c369c3edb453b6bfc81c9493cc0e2dc621026b9fbb0bf3276a36d58aa",
+      "sizeBytes": 78644
+    },
+    "original-png-export-dialog.jpg": {
+      "sha256": "f156e41ce99760e4e25ab4f1d0fc1c2591b313eb335738ff939f3d963fb96d78",
+      "sizeBytes": 80296
+    },
+    "rollback-original-files.jpg": {
+      "sha256": "ae5378e9243a759963d5c33daa616359beade309a3351a60a0981d03da71e25d",
+      "sizeBytes": 96644
+    },
+    "rollback-original-lzp-reopened.jpg": {
+      "sha256": "91a2ce3965c642674c084de183b0ab20eeb81490a32e7816d7bf9fb7075f4444",
+      "sizeBytes": 114367
+    },
+    "rollback-original-png-reopened.jpg": {
+      "sha256": "95db1a26e2e30cf150c89755839021bc4128a132397a83cf43d98ae77a7fd410",
+      "sizeBytes": 114205
+    }
+  },
+  "signedCatalogueFiles": {
+    "metadata/1.root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    },
+    "metadata/34.snapshot.json": {
+      "sha256": "31090519fc1d06207f40a6997f035ff56ca66208339992cd926701229fe843c1",
+      "sizeBytes": 997
+    },
+    "metadata/34.targets.json": {
+      "sha256": "ea155ec85963863142f7c671d332bd8e94dac6334757726540b86302a1afad76",
+      "sizeBytes": 10617
+    },
+    "metadata/timestamp.json": {
+      "sha256": "52d7a4882da91d3fe5dccda8f387e22d62c165d6485f517ffe1191dfe5f8962d",
+      "sizeBytes": 997
+    },
+    "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "sizeBytes": 9031
+    },
+    "targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "sizeBytes": 21857
+    },
+    "targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "sizeBytes": 7918
+    },
+    "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "sizeBytes": 1676
+    },
+    "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "sizeBytes": 2738
+    },
+    "targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "sizeBytes": 7617
+    },
+    "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "sizeBytes": 1699
+    },
+    "targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "sizeBytes": 10640
+    },
+    "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "sizeBytes": 1617
+    },
+    "targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "sizeBytes": 12679
+    },
+    "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "sizeBytes": 1652
+    },
+    "targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "sizeBytes": 9285
+    },
+    "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "sizeBytes": 1146
+    },
+    "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "sizeBytes": 4783
+    },
+    "targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7",
+      "sizeBytes": 6220
+    },
+    "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "sizeBytes": 4223
+    },
+    "targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+      "sizeBytes": 11228
+    },
+    "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "sizeBytes": 1656
+    },
+    "targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "sizeBytes": 6071
+    },
+    "targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "sizeBytes": 10745
+    },
+    "targets/bbfd14043790adc56cc32388ac7930f7eea1ae8773d4e8b57ac233c842caf731.catalogue.json": {
+      "sha256": "bbfd14043790adc56cc32388ac7930f7eea1ae8773d4e8b57ac233c842caf731",
+      "sizeBytes": 19539
+    },
+    "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "sizeBytes": 4586
+    },
+    "targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "sizeBytes": 9388
+    },
+    "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "sizeBytes": 3517
+    },
+    "trusted-root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    }
+  },
+  "verifiedTufClientDownload": {
+    "client": "tuftool 0.17",
+    "trustedRootExplicitlyProvided": true,
+    "unsafeOrExpiryBypassFlagsUsed": false,
+    "targets": [
+      "catalogue.json",
+      "windows-lazpaint-20261009.acceptance.json",
+      "lazpaint7.3_setup_win32_win64.exe"
+    ]
+  },
+  "ubuntuCountsChanged": false,
+  "limits": [
+    "Only the fixed LazPaint 7.3 Windows installer and Wine 11.14 win64 are covered. This is not complete image-editor acceptance.",
+    "Chinese output names were retained from source and adapted through the GUI format selector. Direct Chinese keyboard input remains unverified.",
+    "Advanced layers/vector/alpha/animation/RAW/scripts/plugins/printing/tablets remain unverified; native header plus actual GUI parser verified, not a complete independent LZP parser.",
+    "Official historical Windows asset has no GitHub digest. Local SHA-256 pins official HTTPS download bytes. Authenticode, reproducible build and complete component license/source closure remain unverified.",
+    "Frozen original GUI receipt stated market lifecycle pending; this later separate publication records verified activation, independent generation, cached same-version update, exact rollback and normal service restart without changing frozen bytes.",
+    "Guest online downloads, fresh-machine registration and cross-version upgrades remain unverified."
+  ],
+  "finalVerificationEvidence": "2026-10-09-lazpaint-final-verification.json",
+  "independentReviewEvidence": "2026-10-09-lazpaint-review.json"
+}
