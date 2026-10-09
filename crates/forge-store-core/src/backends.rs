@@ -758,22 +758,84 @@ mod provider_preflight_tests {
     use super::*;
     use std::os::unix::fs::PermissionsExt;
 
+    fn fixture_script(root: &Path, mode: &str) -> String {
+        // Route libtest's own output to stderr; descriptor 3 carries only the
+        // protocol reply. This native child avoids external interpreter startup.
+        fn quote(value: &str) -> String {
+            format!("'{}'", value.replace('\'', "'\\''"))
+        }
+        format!(
+            "#!/bin/sh\nexec 3>&1 1>&2\nexport FORGE_TEST_PROVIDER_ROOT={}\nexport FORGE_TEST_PROVIDER_MODE={}\nexport FORGE_TEST_PROVIDER_COMMAND=\"$1\"\nexport FORGE_TEST_PROVIDER_REQUEST=\"${{2-}}\"\nexec {} --exact backends::provider_preflight_tests::provider_fixture_child --ignored --nocapture --test-threads=1\n",
+            quote(root.to_str().unwrap()),
+            quote(mode),
+            quote(std::env::current_exe().unwrap().to_str().unwrap()),
+        )
+    }
+
+    #[test]
+    #[ignore = "invoked only as the isolated native protocol fixture child"]
+    fn provider_fixture_child() {
+        use std::io::Write;
+        let root = PathBuf::from(std::env::var_os("FORGE_TEST_PROVIDER_ROOT").unwrap());
+        let mode = std::env::var("FORGE_TEST_PROVIDER_MODE").unwrap();
+        let command = std::env::var("FORGE_TEST_PROVIDER_COMMAND").unwrap();
+        let mut trace = std::fs::OpenOptions::new()
+            .create(true)
+            .append(true)
+            .open(root.join("trace"))
+            .unwrap();
+        writeln!(trace, "{command}").unwrap();
+        if mode == "legacy" {
+            std::process::exit(2);
+        }
+        let mut output = std::fs::OpenOptions::new()
+            .write(true)
+            .open("/dev/fd/3")
+            .unwrap();
+        if command == "provider-info" {
+            let bytes = match mode.as_str() {
+                "malformed" => b"{bad\n".to_vec(),
+                "oversized" => vec![b'x'; 65537],
+                "timeout" => {
+                    std::thread::sleep(std::time::Duration::from_secs(3));
+                    Vec::new()
+                }
+                _ => std::fs::read(root.join("report.json")).unwrap(),
+            };
+            output.write_all(&bytes).unwrap();
+        } else {
+            assert_eq!(command, "service-call");
+            let invocation: Value = serde_json::from_slice(
+                &std::fs::read(std::env::var_os("FORGE_TEST_PROVIDER_REQUEST").unwrap()).unwrap(),
+            )
+            .unwrap();
+            let request = &invocation["request"];
+            let mut info: Value =
+                serde_json::from_slice(&std::fs::read(root.join("report.json")).unwrap()).unwrap();
+            if mode == "replaced-executor" {
+                info["sourceCommit"] = json!("f".repeat(40));
+            }
+            let daemon: Value = if root.join("daemon.json").exists() {
+                serde_json::from_slice(&std::fs::read(root.join("daemon.json")).unwrap()).unwrap()
+            } else {
+                info.clone()
+            };
+            let reply = json!({"schemaVersion":"2", "requestId":request["requestId"], "operation":request["operation"],
+                "executor":info, "daemon":{"schemaVersion":"2","instanceId":"synthetic-daemon-1","provider":daemon}, "result":[]});
+            output
+                .write_all(&serde_json::to_vec(&reply).unwrap())
+                .unwrap();
+        }
+        output.flush().unwrap();
+        // End immediately after the complete protocol reply, with no interpreter
+        // teardown or libtest footer able to delay EOF or contaminate JSON.
+        std::process::exit(0);
+    }
+
     fn fixture() -> (tempfile::TempDir, CompatForgeClient, Value) {
         let root = tempfile::tempdir().unwrap();
         let executable = root.path().join("compatforge-cli");
-        std::fs::write(&executable, r#"#!/usr/bin/env python3
-import json, pathlib, sys
-root = pathlib.Path(__file__).parent
-with (root / 'trace').open('a') as stream: stream.write(sys.argv[1] + '\n')
-if sys.argv[1] == 'provider-info':
-    print((root / 'report.json').read_text())
-else:
-    invocation = json.loads(pathlib.Path(sys.argv[2]).read_text())
-    request = invocation['request']
-    info = json.loads((root / 'report.json').read_text())
-    daemon = json.loads((root / 'daemon.json').read_text()) if (root / 'daemon.json').exists() else info
-    print(json.dumps(dict(schemaVersion='2', requestId=request['requestId'], operation=request['operation'], executor=info, daemon=dict(schemaVersion='2', instanceId='synthetic-daemon-1', provider=daemon), result=[])))
-"#).unwrap();
+        std::fs::write(&executable, fixture_script(root.path(), "matching")).unwrap();
         std::fs::set_permissions(&executable, std::fs::Permissions::from_mode(0o755)).unwrap();
         let mut report: Value = serde_json::from_slice(include_bytes!(
             "../../../contracts/compatforge-provider-lock-v1.json"
@@ -864,11 +926,7 @@ else:
     #[tokio::test]
     async fn old_cli_missing_command_and_absent_binary_are_clear_rejections() {
         let (root, client, _) = fixture();
-        std::fs::write(
-            &client.executable,
-            "#!/usr/bin/env python3\nimport sys\nsys.exit(2)\n",
-        )
-        .unwrap();
+        std::fs::write(&client.executable, fixture_script(root.path(), "legacy")).unwrap();
         for candidate in [
             client,
             CompatForgeClient::for_test(
@@ -890,18 +948,10 @@ else:
 
     #[tokio::test]
     async fn malformed_oversized_and_timed_out_provider_info_are_bounded() {
-        for body in [
-            "print('{bad')",
-            "print('x' * 65537)",
-            "import time; time.sleep(3)",
-        ] {
+        for body in ["malformed", "oversized", "timeout"] {
             let (root, client, _) = fixture();
-            std::fs::write(
-                &client.executable,
-                format!("#!/usr/bin/env python3\n{body}\n"),
-            )
-            .unwrap();
-            let expected = if body.contains("sleep") {
+            std::fs::write(&client.executable, fixture_script(root.path(), body)).unwrap();
+            let expected = if body == "timeout" {
                 ErrorCode::ProviderUnavailable
             } else {
                 ErrorCode::SchemaMismatch
@@ -929,11 +979,11 @@ else:
                 .unwrap();
             } else {
                 // The actual second execution changes its reported build identity.
-                let script = std::fs::read_to_string(&client.executable).unwrap().replace(
-                    "info = json.loads((root / 'report.json').read_text())",
-                    "info = json.loads((root / 'report.json').read_text()); info['sourceCommit'] = 'f' * 40",
-                );
-                std::fs::write(&client.executable, script).unwrap();
+                std::fs::write(
+                    &client.executable,
+                    fixture_script(root.path(), "replaced-executor"),
+                )
+                .unwrap();
             }
             let BackendError::Provider(error) = client
                 .operation("applications.list", json!({}))
