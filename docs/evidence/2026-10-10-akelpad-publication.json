@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "applicationId": "akelpad",
+  "version": "4.9.9",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited Chinese-name UTF-8 BOM/CRLF text open, literal replace, ASCII append, GUI Save As and explicit fresh-process reopen in original and independent market generation; verified-cache same-version update, exact original-generation rollback and normal Core/Store restart.",
+  "fullEditorAcceptance": false,
+  "signedCatalogue": "catalogue/candidate-v26/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 35,
+    "snapshot": 35,
+    "timestamp": 35
+  },
+  "catalogueEntries": 27,
+  "acceptedDistinctWindowsApplications": 25,
+  "excludedFixtures": 2,
+  "coreJobCount": 191,
+  "storeRowCount": 67,
+  "acceptanceReceipt": "windows-akelpad-20261010.acceptance.json",
+  "acceptanceReceiptSha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f",
+  "sourceEvidence": "2026-10-10-akelpad-source.json",
+  "sourceEvidenceSha256": "de29476c316a1c3401de613fc64a2ca19bc81cadfbe19cc29a08110065d144d8",
+  "activationEvidence": "2026-10-10-akelpad-activation.json",
+  "marketGuiEvidence": "2026-10-10-akelpad-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-10-akelpad-runtime-recovery.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-akelpad-20261010.acceptance.json#akelpad",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "ad63ea4048d68721701a3c0d2d9041a158e90789c7fc24526380607aad136aca",
+        "size": 1241412,
+        "target": "AkelPad-4.9.9-setup.exe",
+        "url": "https://downloads.sourceforge.net/project/akelpad/AkelPad%204/4.9.9/AkelPad-4.9.9-setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "akelpad"
+    },
+    "id": "akelpad",
+    "license": "BSD (upstream declaration; clause count unverified)",
+    "name": {
+      "en": "AkelPad",
+      "zhCN": "AkelPad"
+    },
+    "origin": "https://akelpad.sourceforge.net/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Shengalts Aleksander and Kuznetsov Alexey",
+    "summary": {
+      "en": "Chinese-name UTF-8 BOM/CRLF text edit, save and fresh-process reopen tested; exact BSD clause count, advanced editor and direct Chinese input unverified.",
+      "zhCN": "中文名 UTF-8 BOM/CRLF 文本编辑、保存与新进程重开已测；BSD 条款数量、高级功能及直接中文输入未验收"
+    },
+    "version": "4.9.9"
+  },
+  "installed": {
+    "appId": "akelpad",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "4.9.9"
+  },
+  "selectedOriginalGeneration": "gen-job-1791594584878-1",
+  "marketDetailsVersionLicenseTestedEvidenceAndLimitsVisiblyObserved": true,
+  "marketInstalledRowAndRollbackControlVisiblyObserved": true,
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "akelpad",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "f64d305a-0d7a-4ef1-b434-0425c99bf48e",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "akelpad",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "4ae6e219-bdb4-4ac6-bc03-7fdefe23dff3",
+      "state": "succeeded"
+    }
+  },
+  "coreJobs": [
+    {
+      "applicationId": "akelpad",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 4382,
+          "requestId": "job-1791595869629-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 22021,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791594584878-1/prefix",
+          "requestId": "job-1791595869629-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 22063,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791595869629-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791594584878-1",
+      "id": "job-1791595869629-7",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "akelpad",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 3977,
+          "requestId": "job-1791595788478-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 20538,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791595434904-4/prefix",
+          "requestId": "job-1791595788478-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 20580,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791595788478-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791595434904-4",
+      "id": "job-1791595788478-6",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "akelpad",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 3647,
+          "requestId": "job-1791595462725-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 299814,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791595434904-4/prefix",
+          "requestId": "job-1791595462725-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 299856,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791595462725-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791595434904-4",
+      "id": "job-1791595462725-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "akelpad",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 3400,
+          "requestId": "job-1791595434904-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4379,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791595434904-4/prefix",
+          "requestId": "job-1791595434904-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4421,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791595434904-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791595434904-4",
+      "id": "job-1791595434904-4",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "full191CoreAnd67StoreFieldsPreservedAcrossRestart": true,
+  "fullCheckpointMatchAfterMarketGuiClosed": true,
+  "latestKnownTime": "2026-10-10T01:31:37.8452214Z",
+  "privateFullCheckpoint": "akelpad-20261010/after-restart.json",
+  "privateCheckpointReviewArchiveSha256": "58d7bb5e6f2c180e1284a04bc16220db3c4231f851577afe4df2faf5a6432984",
+  "readOnlyCurrentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-20261010.py",
+  "priorSignedHistoriesAndMpcOriginalAndCorrectedAndLazPaintReceiptsPreserved": true,
+  "trustResetOrDowngradePerformed": false,
+  "publicationEvidenceSeparate": true,
+  "screenshotsAndOutputs": {
+    "editor-created-market.utf8": {
+      "sha256": "0d7d96ac98adc0d893e82bf34dee9d0001039819e590077836767f1b4d9f12ac",
+      "sizeBytes": 97
+    },
+    "editor-created-original.utf8": {
+      "sha256": "176b23ca4684370f912a712945cedd60292bf419c2dbea79f6851d4294235f1a",
+      "sizeBytes": 98
+    },
+    "input-market.utf8": {
+      "sha256": "cb4f2b817ec91603a47e5501c4f028e24257c54cafb55a30ba64458a803698ed",
+      "sizeBytes": 87
+    },
+    "input-original.utf8": {
+      "sha256": "bea518d77885263b42c5b1b747a451ef74e1ff996e95818941867a829888d851",
+      "sizeBytes": 88
+    },
+    "market-fresh-process-reopened.jpg": {
+      "sha256": "ddd60f5a9f6a78d3b2f6f3c436b9ebf08f6fb8c7ab402ee66bc7be3155e9b1f7",
+      "sizeBytes": 44149
+    },
+    "market-replace-fields-verified.jpg": {
+      "sha256": "174319da4aa5f6593e8932a5ccc747759bf7da3580bdd00d4543ca6fbc26c036",
+      "sizeBytes": 56896
+    },
+    "market-replace-one-confirmed.jpg": {
+      "sha256": "a03979d4b3ba5ed5f54e3bea3086f708898b8f8dea1ec4235e2e3f9cf7234d15",
+      "sizeBytes": 59884
+    },
+    "market-save-chinese-utf8-bom.jpg": {
+      "sha256": "4b51d2910fa6d97f0570c3fcd554f90a6722ee1012ebade24a35ca8975903f50",
+      "sizeBytes": 48133
+    },
+    "market-saved-content.jpg": {
+      "sha256": "3c9129c001b5bad561d16ef40bb8573faa788b2e0f1509f475f24696581c1461",
+      "sizeBytes": 44222
+    },
+    "market-utf8-chinese-opened.jpg": {
+      "sha256": "69bc6a70ded75019faa058d4ada2f02ba6a3ac6471cd1bd89bf1df6269498c07",
+      "sizeBytes": 43108
+    },
+    "original-about-4.9.9.jpg": {
+      "sha256": "fc4cecf749d83d57cfe144c0073f2af227dc408a4a4c8dd26df121cd2a917fc2",
+      "sizeBytes": 54960
+    },
+    "original-fresh-process-reopened.jpg": {
+      "sha256": "b5112fdc0e30f0b58f037bc00f449aaf8681132b5abda1fb09c1e7b1a586d921",
+      "sizeBytes": 44230
+    },
+    "original-replace-fields-verified.jpg": {
+      "sha256": "a0214084a3a278f10aadcad4da00c6cecf22fff958b9da6111cbcba97c169d59",
+      "sizeBytes": 56719
+    },
+    "original-replace-input-failure.jpg": {
+      "sha256": "b9b45caa113eb287e9826144df3cfd5616e057e086cc2733a005370fd48d716d",
+      "sizeBytes": 60321
+    },
+    "original-replace-one-confirmed.jpg": {
+      "sha256": "681677b742f1083e6d60aa95e9e4285aab347cc13b8baf254a8ea2f76dac1cf0",
+      "sizeBytes": 59839
+    },
+    "original-save-chinese-utf8-bom.jpg": {
+      "sha256": "2f709f16ec6a006c91837fffbe5d98f9ef38b6e8f57b5046dcbdf18a6fba5b8b",
+      "sizeBytes": 48121
+    },
+    "original-saved-content.jpg": {
+      "sha256": "da4be66394f058b2405cfc73f9533a46fc71e48ec15a2063d17038d38a379ac0",
+      "sizeBytes": 44298
+    },
+    "original-utf8-chinese-opened.jpg": {
+      "sha256": "cead6a50fc6e67ced1f492fd681aad024c0f670782ad742b407fb14c33ae1063",
+      "sizeBytes": 43172
+    },
+    "rollback-original-reopened.jpg": {
+      "sha256": "3e3a9efbb4bb9fe52e028da34a1dcc70bc318ae621f478946a5d5b7699c2baf0",
+      "sizeBytes": 44050
+    },
+    "store-detail.jpg": {
+      "sha256": "8869893da35097418e8c1e5e646847fb80b70bb109b1d82b9517fa4ac8d0be20",
+      "sizeBytes": 60119
+    },
+    "store-installed-after-restart.jpg": {
+      "sha256": "9a8da9cb376d9dd4ba1db10caff33955fc4221fc692a19b141b1258f68192829",
+      "sizeBytes": 68882
+    },
+    "store-search.jpg": {
+      "sha256": "8cac0e8efe6c27f326b53dc717fa87b38dbc367656412064abd49453b9a3a4c6",
+      "sizeBytes": 56293
+    }
+  },
+  "signedCatalogueFiles": {
+    "metadata/1.root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    },
+    "metadata/35.snapshot.json": {
+      "sha256": "5d100b1e376e1c6724fbdaa2ed1771b8f5c59c273aaa4b39a0a5ba68b224af8f",
+      "sizeBytes": 997
+    },
+    "metadata/35.targets.json": {
+      "sha256": "ca963b4f35139af6a145f7e819847c977e0af3aeba9eb2d35989a9c2d9b46658",
+      "sizeBytes": 11007
+    },
+    "metadata/timestamp.json": {
+      "sha256": "3856124857eb79e888a3754a1a84884e82636f25d6a4c5930eb18cc419550c69",
+      "sizeBytes": 997
+    },
+    "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "sizeBytes": 9031
+    },
+    "targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f",
+      "sizeBytes": 5280
+    },
+    "targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "sizeBytes": 21857
+    },
+    "targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "sizeBytes": 7918
+    },
+    "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "sizeBytes": 1676
+    },
+    "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "sizeBytes": 2738
+    },
+    "targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "sizeBytes": 7617
+    },
+    "targets/386dbe641c8ed967534e647f67a368d3efed413dc9eeb64d8ef8e02713d9be8f.catalogue.json": {
+      "sha256": "386dbe641c8ed967534e647f67a368d3efed413dc9eeb64d8ef8e02713d9be8f",
+      "sizeBytes": 20533
+    },
+    "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "sizeBytes": 1699
+    },
+    "targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "sizeBytes": 10640
+    },
+    "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "sizeBytes": 1617
+    },
+    "targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "sizeBytes": 12679
+    },
+    "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "sizeBytes": 1652
+    },
+    "targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "sizeBytes": 9285
+    },
+    "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "sizeBytes": 1146
+    },
+    "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "sizeBytes": 4783
+    },
+    "targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7",
+      "sizeBytes": 6220
+    },
+    "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "sizeBytes": 4223
+    },
+    "targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+      "sizeBytes": 11228
+    },
+    "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "sizeBytes": 1656
+    },
+    "targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "sizeBytes": 6071
+    },
+    "targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "sizeBytes": 10745
+    },
+    "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "sizeBytes": 4586
+    },
+    "targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "sizeBytes": 9388
+    },
+    "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "sizeBytes": 3517
+    },
+    "trusted-root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    }
+  },
+  "verifiedTufClientDownload": {
+    "client": "tuftool 0.17",
+    "trustedRootExplicitlyProvided": true,
+    "unsafeOrExpiryBypassFlagsUsed": false,
+    "targets": [
+      "catalogue.json",
+      "windows-akelpad-20261010.acceptance.json",
+      "AkelPad-4.9.9-setup.exe"
+    ]
+  },
+  "ubuntuCountsChanged": false,
+  "limits": [
+    "Only fixed AkelPad 4.9.9 x86 on Wine 11.14 win64 and UTF-8 BOM/CRLF text files are accepted; this is not complete editor acceptance.",
+    "Chinese input names and text are pinned fixtures; Chinese output filenames were retained through GUI directory navigation. Direct Chinese keyboard input is unverified.",
+    "Only literal replacement, ASCII append, Save As and explicit fresh-process reopen were tested. Regex, other encodings, large files, plugins, scripts, updater and printing are unverified.",
+    "Fixed official manual declares generic BSD license. Exact clause count/SPDX identifier, complete bundled component license closure, Authenticode and reproducible builds are unverified.",
+    "Frozen original GUI receipt stated market lifecycle pending. Later separate market evidence records actual independent generation, cached same-version update, exact rollback and normal service restart without changing original receipt bytes.",
+    "Guest online download, new-machine application registration, user-settings migration and cross-version upgrades remain unverified."
+  ],
+  "finalVerificationEvidence": "2026-10-10-akelpad-final-verification.json",
+  "independentReviewEvidence": "2026-10-10-akelpad-review.json"
+}

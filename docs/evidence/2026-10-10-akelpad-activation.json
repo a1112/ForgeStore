@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 35,
+  "catalogueEntries": 27,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "originalCoreJobsPreserved": true,
+  "coreJobs": 187,
+  "fullStoreRowsPreserved": true,
+  "storeRows": 65,
+  "previousInstalledAndEntriesPreserved": true,
+  "akelpadEntry": {
+    "compatibility": {
+      "evidence": "windows-akelpad-20261010.acceptance.json#akelpad",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "ad63ea4048d68721701a3c0d2d9041a158e90789c7fc24526380607aad136aca",
+        "size": 1241412,
+        "target": "AkelPad-4.9.9-setup.exe",
+        "url": "https://downloads.sourceforge.net/project/akelpad/AkelPad%204/4.9.9/AkelPad-4.9.9-setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "akelpad"
+    },
+    "id": "akelpad",
+    "license": "BSD (upstream declaration; clause count unverified)",
+    "name": {
+      "en": "AkelPad",
+      "zhCN": "AkelPad"
+    },
+    "origin": "https://akelpad.sourceforge.net/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Shengalts Aleksander and Kuznetsov Alexey",
+    "summary": {
+      "en": "Chinese-name UTF-8 BOM/CRLF text edit, save and fresh-process reopen tested; exact BSD clause count, advanced editor and direct Chinese input unverified.",
+      "zhCN": "中文名 UTF-8 BOM/CRLF 文本编辑、保存与新进程重开已测；BSD 条款数量、高级功能及直接中文输入未验收"
+    },
+    "version": "4.9.9"
+  },
+  "akelpadInstalled": {
+    "appId": "akelpad",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "4.9.9"
+  },
+  "serviceGuardsPreserved": true,
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "signedCatalogue": "catalogue/candidate-v26/tuf",
+  "historicalPhase": "activation before independent market lifecycle"
+}

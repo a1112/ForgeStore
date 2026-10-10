@@ -39,3 +39,6 @@ docs/evidence/windows-mpchc-20261006.acceptance.json -text
 docs/evidence/windows-mpchc-20261006-corrected.acceptance.json -text
 catalogue/candidate-v23/tuf/targets/*.json -text whitespace=cr-at-eol
 catalogue/candidate-v24/tuf/targets/*.json -text whitespace=cr-at-eol
+
+# Preserve exact UTF-8 BOM and CRLF application output evidence.
+docs/evidence/2026-10-10-akelpad/*.utf8 -text

@@ -228,6 +228,19 @@
       "publication": "docs/evidence/2026-10-09-lazpaint-publication.json",
       "fullImageEditorAcceptance": false,
       "limitation": "Limited single-raster-layer Chinese-name load, pen drawing, LZP save, 24-bit PNG export and explicit fresh-process native/PNG reopen passed in original and independent market generation; cached same-version market update, exact rollback and full Core/Store restart passed. Direct Chinese keyboard input, advanced editing, guest online download, fresh-machine registration and cross-version upgrades remain unverified."
+    },
+    {
+      "id": "akelpad",
+      "version": "4.9.9",
+      "sha256": "ad63ea4048d68721701a3c0d2d9041a158e90789c7fc24526380607aad136aca",
+      "sizeBytes": 1241412,
+      "evidence": "docs/evidence/windows-akelpad-20261010.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v26/tuf",
+      "publication": "docs/evidence/2026-10-10-akelpad-publication.json",
+      "report": "docs/windows-rolling-20261010-akelpad.md",
+      "failureEvidence": "docs/evidence/2026-10-10-akelpad-failures.json",
+      "fullEditorAcceptance": false,
+      "limitation": "Limited Chinese-name UTF-8 BOM/CRLF text open/replace/ASCII append/Save As and explicit fresh-process reopen passed in original and independent market generation; cached same-version update, exact rollback and service restart passed. Exact BSD clauses/SPDX/component license closure, direct Chinese input, advanced editor/plugin workflows, guest online download, new-machine registration, settings migration and cross-version upgrades are unverified."
     }
   ],
   "queue": [
@@ -400,12 +413,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select the next source-, license-, fixed-version- and installer-verified independent candidate. Preserve 24 completed apps, 12 blocked candidates, root 1 / online roles 34, and complete 184 Core / 65 Store task fields. Use rolling-current-state-20261009.py for current exact checkpoint verification; old total-178 helpers are historical.",
+  "next": "Select next unaccepted official fixed artifact. Preserve 25 completed applications and 12 existing blocked candidates; AkelPad limited editor workflow and signed local market lifecycle passed, exact BSD clauses/SPDX and advanced functions remain unverified. Preserve full191 Core/67 Store records and role35 trust; historical fixed-count scripts are not current totals.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
-  "lastReviewed": "2026-10-09",
+  "lastReviewed": "2026-10-10",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 24,
+    "acceptedLocalMarket": 25,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -413,23 +426,23 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v25/tuf",
-    "metadataVersion": 34,
-    "catalogueEntries": 26,
-    "acceptedDistinctWindowsApps": 24,
+    "signedCatalogue": "catalogue/candidate-v26/tuf",
+    "metadataVersion": 35,
+    "catalogueEntries": 27,
+    "acceptedDistinctWindowsApps": 25,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-09-lazpaint-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-10-akelpad-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-06-mpchc-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-09-lazpaint-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-09-lazpaint-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-10-akelpad-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261009-lazpaint.md",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
+  "lastReviewEvidence": "docs/windows-rolling-20261010-akelpad.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-10-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
-  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-rolling-session-recovery.json",
+  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261009-lazpaint.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-09-lazpaint-runtime-recovery.json"
+  "latestAttemptEvidence": "docs/windows-rolling-20261010-akelpad.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-10-akelpad-final-verification.json"
 }

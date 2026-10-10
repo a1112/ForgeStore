@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "applicationId": "akelpad",
+  "coreJobs": 190,
+  "storeRows": 66,
+  "marketInstall": {
+    "schemaVersion": 1,
+    "date": "2026-10-10",
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "akelpad",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "f64d305a-0d7a-4ef1-b434-0425c99bf48e",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791595434904-4",
+    "originalGenerationId": "gen-job-1791594584878-1",
+    "generationId": "gen-job-1791595434904-4",
+    "newGenerationDistinct": true,
+    "allPrior187CoreJobsAnd65StoreRowsPreserved": true,
+    "manualSettingsCopied": false,
+    "fixture": {
+      "file": "input/市场验收.txt",
+      "sizeBytes": 87,
+      "sha256": "cb4f2b817ec91603a47e5501c4f028e24257c54cafb55a30ba64458a803698ed",
+      "independentFromOriginal": true,
+      "text": "ForgeStore AkelPad 4.9.9\r\n市场中文文件独立验收\r\nstatus=pending\r\nsum=40+2\r\n"
+    },
+    "guiJobId": "job-1791595462725-5",
+    "guiStatus": "running"
+  },
+  "outputProof": {
+    "schemaVersion": 1,
+    "date": "2026-10-10",
+    "generationId": "gen-job-1791595434904-4",
+    "launchJobId": "job-1791595462725-5",
+    "normalExitCode": 0,
+    "inputUnchanged": true,
+    "output": {
+      "file": "output/市场验收.txt",
+      "sizeBytes": 97,
+      "sha256": "0d7d96ac98adc0d893e82bf34dee9d0001039819e590077836767f1b4d9f12ac",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeStore AkelPad 4.9.9\r\n市场中文文件独立验收\r\nstatus=passed\r\nsum=40+2\r\nresult=42\r\n"
+    },
+    "actualAboutVersion": "4.9.9 (x86)",
+    "marketAccepted": false,
+    "guiFreshProcessReopenPending": true
+  },
+  "outputProofFrozenBeforeReopen": true,
+  "explicitFreshProcessOutputReopenObserved": true,
+  "bothGenerationInputOutputLauncherPinsPreserved": true,
+  "allPrior187CoreJobsAnd65StoreRowsPreserved": true,
+  "allOtherApplicationGenerationsPreserved": true,
+  "trustConfigsGuardsPreserved": true,
+  "knownTimeMonotonic": true,
+  "lazpaintAndMpcOutputsPreserved": true,
+  "powerNeverPreserved": true,
+  "outputs": {
+    "original": {
+      "file": "output/中文验收.txt",
+      "sizeBytes": 98,
+      "sha256": "176b23ca4684370f912a712945cedd60292bf419c2dbea79f6851d4294235f1a",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeOS AkelPad 4.9.9\r\n中文文件与 UTF-8 保存验收\r\nstatus=after\r\nsum=21+21\r\nresult=42\r\n",
+      "generationId": "gen-job-1791594584878-1"
+    },
+    "market": {
+      "file": "output/市场验收.txt",
+      "sizeBytes": 97,
+      "sha256": "0d7d96ac98adc0d893e82bf34dee9d0001039819e590077836767f1b4d9f12ac",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeStore AkelPad 4.9.9\r\n市场中文文件独立验收\r\nstatus=passed\r\nsum=40+2\r\nresult=42\r\n",
+      "generationId": "gen-job-1791595434904-4"
+    }
+  },
+  "newJobs": [
+    {
+      "applicationId": "akelpad",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 3400,
+          "requestId": "job-1791595434904-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4379,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791595434904-4/prefix",
+          "requestId": "job-1791595434904-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4421,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791595434904-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791595434904-4",
+      "id": "job-1791595434904-4",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "akelpad",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 3647,
+          "requestId": "job-1791595462725-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 299814,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791595434904-4/prefix",
+          "requestId": "job-1791595462725-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 299856,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791595462725-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791595434904-4",
+      "id": "job-1791595462725-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "akelpad",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 3977,
+          "requestId": "job-1791595788478-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 20538,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791595434904-4/prefix",
+          "requestId": "job-1791595788478-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 20580,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791595788478-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791595434904-4",
+      "id": "job-1791595788478-6",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  ],
+  "historicalPhase": "Independent market GUI completed before exact rollback",
+  "storeUpdateEnqueueMethod": "ForgeStore IPC enqueue, not GUI button activation",
+  "marketInstallFrozenBeforeGui": true,
+  "outputsVerifiedAfterReopen": true,
+  "rollback": {
+    "schemaVersion": 1,
+    "date": "2026-10-10",
+    "applicationId": "akelpad",
+    "coreJobs": 190,
+    "storeRows": 67,
+    "storeRollbackJob": {
+      "action": "rollback",
+      "appId": "akelpad",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "4ae6e219-bdb4-4ac6-bc03-7fdefe23dff3",
+      "state": "succeeded"
+    },
+    "selectedOriginalGeneration": "gen-job-1791594584878-1",
+    "bothGenerationsReady": true,
+    "noCoreJobCreatedByRollback": true,
+    "full190CoreJobsAnd66PriorStoreRowsPreserved": true,
+    "bothGenerationsOutputPinsPreserved": true,
+    "allOtherApplicationGenerationsPreserved": true,
+    "trustConfigsAndGuardsPreserved": true,
+    "knownTimeMonotonic": true
+  }
+}

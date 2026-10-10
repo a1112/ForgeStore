@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "applicationId": "akelpad",
+  "version": "4.9.9",
+  "outputProof": {
+    "schemaVersion": 1,
+    "date": "2026-10-10",
+    "generationId": "gen-job-1791594584878-1",
+    "launchJobId": "job-1791594645816-2",
+    "normalExitCode": 0,
+    "inputUnchanged": true,
+    "output": {
+      "file": "output/中文验收.txt",
+      "sizeBytes": 98,
+      "sha256": "176b23ca4684370f912a712945cedd60292bf419c2dbea79f6851d4294235f1a",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeOS AkelPad 4.9.9\r\n中文文件与 UTF-8 保存验收\r\nstatus=after\r\nsum=21+21\r\nresult=42\r\n"
+    },
+    "actualAboutVersion": "4.9.9 (x86)",
+    "marketAccepted": false,
+    "guiFreshProcessReopenPending": true
+  },
+  "explicitFreshProcessOutputReopenObserved": true,
+  "coreJobs": 187,
+  "storeRows": 65,
+  "oldFullFieldsPreserved": true,
+  "installedManualByteMatchesFixedSource": true,
+  "installedLicenseDeclaration": "BSD license; exact clause count not declared by fixed upstream text",
+  "productCodeChanged": false,
+  "marketLifecyclePending": true,
+  "generation": {
+    "bottleId": "gen-job-1791594584878-1",
+    "createdAtMilliseconds": 1791594584883,
+    "definition": {
+      "bottleId": "gui-akelpad",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "akelpad",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\AkelPad"
+        ],
+        "fileName": "AkelPad-4.9.9-setup.exe",
+        "sha256": "ad63ea4048d68721701a3c0d2d9041a158e90789c7fc24526380607aad136aca"
+      },
+      "launchers": [
+        {
+          "executable": "AkelPad/AkelPad.exe",
+          "id": "main",
+          "name": "AkelPad"
+        }
+      ],
+      "name": "AkelPad",
+      "publisher": "Shengalts Aleksander and Kuznetsov Alexey",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "4.9.9"
+    },
+    "definitionDigest": "sha256:26c5d8de765f6744063ea619a28838d3c95cf57a2fe2d1c97babf2813bf27260",
+    "id": "gen-job-1791594584878-1",
+    "launcherDigests": {
+      "main": "sha256:bcf96667f2b87623045580c7ab9ca93c19189fec9841fb07af3f54524fccafe8"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791594598147
+  },
+  "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+  "jobs": {
+    "install": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 2026,
+          "requestId": "job-1791594584878-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4462,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791594584878-1/prefix",
+          "requestId": "job-1791594584878-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4504,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791594584878-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791594584878-1",
+      "id": "job-1791594584878-1",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    "launch": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 2285,
+          "requestId": "job-1791594645816-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 227675,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791594584878-1/prefix",
+          "requestId": "job-1791594645816-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 227717,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791594645816-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791594584878-1",
+      "id": "job-1791594645816-2",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    "reopen": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 2584,
+          "requestId": "job-1791594898364-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 27009,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791594584878-1/prefix",
+          "requestId": "job-1791594898364-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 27051,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791594898364-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791594584878-1",
+      "id": "job-1791594898364-3",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  },
+  "screenshots": {
+    "original-about-4.9.9.jpg": {
+      "sizeBytes": 54960,
+      "sha256": "fc4cecf749d83d57cfe144c0073f2af227dc408a4a4c8dd26df121cd2a917fc2"
+    },
+    "original-fresh-process-reopened.jpg": {
+      "sizeBytes": 44230,
+      "sha256": "b5112fdc0e30f0b58f037bc00f449aaf8681132b5abda1fb09c1e7b1a586d921"
+    },
+    "original-replace-fields-verified.jpg": {
+      "sizeBytes": 56719,
+      "sha256": "a0214084a3a278f10aadcad4da00c6cecf22fff958b9da6111cbcba97c169d59"
+    },
+    "original-replace-input-failure.jpg": {
+      "sizeBytes": 60321,
+      "sha256": "b9b45caa113eb287e9826144df3cfd5616e057e086cc2733a005370fd48d716d"
+    },
+    "original-replace-one-confirmed.jpg": {
+      "sizeBytes": 59839,
+      "sha256": "681677b742f1083e6d60aa95e9e4285aab347cc13b8baf254a8ea2f76dac1cf0"
+    },
+    "original-save-chinese-utf8-bom.jpg": {
+      "sizeBytes": 48121,
+      "sha256": "2f709f16ec6a006c91837fffbe5d98f9ef38b6e8f57b5046dcbdf18a6fba5b8b"
+    },
+    "original-saved-content.jpg": {
+      "sizeBytes": 44298,
+      "sha256": "da4be66394f058b2405cfc73f9533a46fc71e48ec15a2063d17038d38a379ac0"
+    },
+    "original-utf8-chinese-opened.jpg": {
+      "sizeBytes": 43172,
+      "sha256": "cead6a50fc6e67ced1f492fd681aad024c0f670782ad742b407fb14c33ae1063"
+    }
+  },
+  "guiWorkflowPassed": true,
+  "published": false,
+  "countsAsCompleted": false,
+  "limits": [
+    "Only fixed AkelPad 4.9.9 x86 on Wine 11.14 win64, UTF-8 with BOM and CRLF were tested.",
+    "Chinese filename and contents were loaded from pinned fixture. Chinese output filename was retained through directory navigation; direct Chinese keyboard input was not tested.",
+    "One ordinary text replacement, ASCII append, GUI Save As and explicit fresh-process output reopen passed. Regex, other encodings, large files, scripts, plugins, updater, printing and complete editor support unverified.",
+    "Generic fixed upstream BSD declaration is verified and accurately labeled. Exact BSD clause count, complete component license closure and legal clearance remain unverified; market lifecycle is pending.",
+    "Independent market generation, same-version cached update, exact rollback and Core/Store restart are not completed at this proof."
+  ],
+  "outputProofFrozenBeforeReopen": true,
+  "outputProofPhase": "Historical immutable output byte proof captured after first process exit, before explicit new-process reopen; top-level explicitFreshProcessOutputReopenObserved records the subsequent completed reopen."
+}

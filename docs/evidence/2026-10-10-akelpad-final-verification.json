@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "applicationId": "akelpad",
+  "completedWindowsApplications": 25,
+  "explicitlyBlockedCandidates": 12,
+  "coreJobs": 191,
+  "storeRows": 67,
+  "fullGuestCheckpointMatchAfterMarketGuiClosed": true,
+  "originalAcceptanceReceiptBytesUnchanged": true,
+  "sourceEvidenceBytesBoundToReceiptUnchanged": true,
+  "allPriorSignedTargetPinsAndCatalogueEntriesPreserved": true,
+  "rootBytesUnchanged": true,
+  "all30PublicSignedFilesAnd22GuiFilesHashSizeChecked": true,
+  "actualOriginal98AndMarket97BytesUtf8BomCrlfChecked": true,
+  "tuftool017ExplicitOldTrustedRootDownloadVerified": true,
+  "unsafeOrExpiryBypassFlagsUsed": false,
+  "metadataVersions": {
+    "targets": 35,
+    "snapshot": 35,
+    "timestamp": 35
+  },
+  "allTasksTerminal": true,
+  "privateFullCheckpoint": "akelpad-20261010/after-restart.json",
+  "latestKnownTime": "2026-10-10T01:31:37.8452214Z",
+  "bootId": "7bf8f675-008c-4201-88f8-a554e2302c1d",
+  "genericUpstreamBsdDeclarationVerified": true,
+  "exactSpdxAndFullComponentLicenseClosureUnverified": true,
+  "productCodeChanged": false,
+  "fullRegressionSuiteRequired": false,
+  "validationScope": "Evidence, signed catalogue and application workflow only; no product-code changes.",
+  "ubuntuCountsChanged": false,
+  "guestRuntimeBinaries": {
+    "compatforge.service": {
+      "binary": "/home/forge/forge-rolling-20260929/bin/compatforge-cli-managed-msi-v10",
+      "sha256": "feaad5a5010fbf1506f2e4771bb7677345ccbba757b5d4aa97b65be2b502ce0a",
+      "sizeBytes": 6933768
+    },
+    "forge-store.service": {
+      "binary": "/home/forge/forge-rolling-20260929/bin/forge-store-service-managed-msi-v2",
+      "sha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f",
+      "sizeBytes": 16691608
+    }
+  },
+  "remoteSourceMergeObserved": "fe66b1aa8be8de4fc84b7418e2177d0b4a04c5cb",
+  "newProviderV2SourceNotDeployedOrGuiAccepted": true,
+  "sourceIntegrationPythonValidation": {
+    "sourceCommit": "fe66b1aa8be8de4fc84b7418e2177d0b4a04c5cb",
+    "exactSourceBlobs": {
+      "tests/test_provider_composition.py": "bbdc207785c5e8d192dc92f43ad4a55c17f2030e5769143cfeeb20b2d10e26b0",
+      "tools/verify_provider_composition.py": "81eea6ab43b359a03a9d64a7446c32b62b84fbb3a18ed81c53615b31429be459"
+    },
+    "testsPassed": 6,
+    "exitCode": 0,
+    "scope": "synthetic-contract-only",
+    "guestProviderV2Acceptance": false
+  },
+  "submissionSafety": {
+    "privateKeysCredentialsInstallersAndPrivateCheckpointsNotStaged": true,
+    "stagedFrozenCatalogueUtf8AndReceiptBytesExact": true,
+    "diffCheckPassedWithCrLfFrozenEvidenceAllowance": true
+  }
+}

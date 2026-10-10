@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-10",
+  "applicationId": "akelpad",
+  "coreJobs": 191,
+  "storeRows": 67,
+  "allTasksTerminal": true,
+  "restart": "normal systemctl --user restart after all jobs terminal",
+  "servicePidsBefore": {
+    "compatforge.service": "MainPID=876",
+    "forge-store.service": "MainPID=3082"
+  },
+  "servicePidsAfter": {
+    "compatforge.service": "MainPID=4547",
+    "forge-store.service": "MainPID=4562"
+  },
+  "full191CoreJobsAnd67StoreRowsPreserved": true,
+  "fullMarketSnapshotPreserved": true,
+  "fullSignedTrustDocumentsPreserved": true,
+  "allConfigDigestsAndApplicationGenerationsPreserved": true,
+  "serviceGuardsPreserved": true,
+  "knownTimeMonotonic": true,
+  "latestKnownTimeBefore": "2026-10-10T01:23:00.591428996Z",
+  "latestKnownTimeAfter": "2026-10-10T01:31:37.8452214Z",
+  "selectedGeneration": "gen-job-1791594584878-1",
+  "bothGenerationsReady": true,
+  "bothGenerationsOutputInputAndLauncherPinsPreserved": true,
+  "oldMpcOutputPinsPreserved": true,
+  "powerNeverPreserved": true,
+  "outputs": {
+    "original": {
+      "file": "output/中文验收.txt",
+      "sizeBytes": 98,
+      "sha256": "176b23ca4684370f912a712945cedd60292bf419c2dbea79f6851d4294235f1a",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeOS AkelPad 4.9.9\r\n中文文件与 UTF-8 保存验收\r\nstatus=after\r\nsum=21+21\r\nresult=42\r\n",
+      "generationId": "gen-job-1791594584878-1"
+    },
+    "market": {
+      "file": "output/市场验收.txt",
+      "sizeBytes": 97,
+      "sha256": "0d7d96ac98adc0d893e82bf34dee9d0001039819e590077836767f1b4d9f12ac",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeStore AkelPad 4.9.9\r\n市场中文文件独立验收\r\nstatus=passed\r\nsum=40+2\r\nresult=42\r\n",
+      "generationId": "gen-job-1791595434904-4"
+    }
+  },
+  "afterRollbackGuiJob": {
+    "applicationId": "akelpad",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 4382,
+        "requestId": "job-1791595869629-7",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 22021,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791594584878-1/prefix",
+        "requestId": "job-1791595869629-7",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 22063,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791595869629-7",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791594584878-1",
+    "id": "job-1791595869629-7",
+    "kind": "launch",
+    "status": "succeeded"
+  },
+  "afterRollbackExplicitOutputReopenObserved": true,
+  "privateFullCheckpoint": "akelpad-20261010/after-restart.json",
+  "bootId": "7bf8f675-008c-4201-88f8-a554e2302c1d"
+}
