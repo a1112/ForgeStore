@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "frhed",
+  "productCodeChanged": false,
+  "productFailureConfirmed": false,
+  "harnessFailures": [
+    {
+      "stage": "license inspection",
+      "detail": "The first helper incorrectly required all three GPL text members to have identical bytes and stopped before transfer. Distinct bytes and normalized comparisons were retained; installed GPL equals the installer and program member."
+    },
+    {
+      "stage": "output verification helper",
+      "detail": "One generated readback helper had an IndentationError before execution; corrected helper verified actual saved bytes and then submitted a new process."
+    },
+    {
+      "stage": "Save As shortcut",
+      "detail": "Ctrl+I was a misread of Ctrl+J and opened View Settings; cancelled without applying settings, then used actual File/Save As menu and verified saved output."
+    },
+    {
+      "stage": "rollback record date label",
+      "detail": "Adapted helper retained 2026-10-10 date label. Original private record retained and separate publication correction records actual 2026-10-11 operation and task timestamp."
+    },
+    {
+      "stage": "local final record timestamp parsing",
+      "detail": "Python3.9 rejected RFC3339 Z and nanosecond fractional timestamp forms in two helpers. Both stopped before publication record/ledger mutation; corrected Decimal fractional UTC parser preserves exact precision. Existing exported binary bytes were compared before reuse."
+    },
+    {
+      "stage": "Git binary evidence classification",
+      "detail": "Initial staged diff check treated a NUL-free 64-byte output as text and reported trailing whitespace. Added an explicit .bin binary attribute; actual evidence bytes stayed unchanged, all 51 frozen index files matched and the staged diff check passed."
+    }
+  ],
+  "authenticationChanged": false
+}

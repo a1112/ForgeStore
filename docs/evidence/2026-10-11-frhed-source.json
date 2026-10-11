@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "reviewedDate": "2026-10-11",
+  "applicationId": "frhed",
+  "version": "1.6.0",
+  "releaseUrl": "https://sourceforge.net/projects/frhed/files/1.%20Stable%20Releases/1.6.0/",
+  "publishedDate": "2009-06-23",
+  "artifact": {
+    "fileName": "Frhed-1.6.0-Setup.exe",
+    "sourceUrl": "https://downloads.sourceforge.net/project/frhed/1.%20Stable%20Releases/1.6.0/Frhed-1.6.0-Setup.exe",
+    "sizeBytes": 725124,
+    "sha256": "941b6b7c436653a7e4c0c55ee5180c343e4b9da86b080530c3b4af8092f5c4e0",
+    "sha256Basis": "Calculated fixed official HTTPS bytes, independently checked in guest; no upstream digest or Authenticode claim."
+  },
+  "sourceArchive": {
+    "fileName": "Frhed-1.6.0-src.zip",
+    "sourceUrl": "https://downloads.sourceforge.net/project/frhed/1.%20Stable%20Releases/1.6.0/Frhed-1.6.0-src.zip",
+    "sizeBytes": 1004237,
+    "sha256": "b9c394ebeb18bcd33fcb2255f1b25d742bb9ef73a59334913b39dfff7c7d16c0"
+  },
+  "fixedSourceMembers": {
+    "Frhed-1.6.0-src/GPL.txt": {
+      "sizeBytes": 18327,
+      "sha256": "d3533c10b656bec2782600b05b471abe3ac916e228b27929cda1f83c49d7e7a5"
+    },
+    "Frhed-1.6.0-src/FRHED/GPL.txt": {
+      "sizeBytes": 18037,
+      "sha256": "11b20503cb9fd1085088945d07084ec6d8da3c0a91f12d48b06d189a93b12507"
+    },
+    "Frhed-1.6.0-src/Installer/NSIS/GPL.txt": {
+      "sizeBytes": 18037,
+      "sha256": "11b20503cb9fd1085088945d07084ec6d8da3c0a91f12d48b06d189a93b12507"
+    },
+    "Frhed-1.6.0-src/FRHED/version.h": {
+      "sizeBytes": 1910,
+      "sha256": "2b9fce1b01ac76fc02a16e9e20341314deacaee6ef184d1fdcabf9d0de6dde00"
+    },
+    "Frhed-1.6.0-src/Installer/NSIS/frhed.nsi": {
+      "sizeBytes": 7175,
+      "sha256": "a1d7a6622160fc1cafefd82a14fe9e578638cecd12ff328ca2cbc6b755890db3"
+    }
+  },
+  "gplFilesEqualAfterCrLfNormalization": false,
+  "license": "GPL-2.0-or-later",
+  "licenseScope": "Fixed program version.h grants GPL version 2 or later; installer GPL and installed Docs/GPL.txt are byte-identical. Complete bundled component license closure is not verified.",
+  "exactMainProgramSpdxVerified": true,
+  "fullComponentLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerFamily": "NSIS",
+  "installerUsageReference": "https://nsis.sourceforge.io/Docs/Chapter3.html",
+  "actualAboutVersion": "1.6.0",
+  "installedLauncher": {
+    "relativeFile": "Frhed/frhed.exe",
+    "sizeBytes": 61440,
+    "sha256": "8ed1da5fafb4a02618fa2a51ae43e6cf34a7777938d85fba369c8650a48c2544"
+  },
+  "guiWorkflowPassed": true,
+  "published": false,
+  "countsAsCompleted": false
+}

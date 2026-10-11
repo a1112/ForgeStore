@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "result": "passed-no-blocking-or-important-issues",
+  "reviewer": "Independent read-only review_frhed_evidence agent",
+  "scope": "Source archive, artifacts, original six GUI screenshots, receipt/source binding, byte-level declared output and model serialization digest; no independent guest re-read in original review.",
+  "receiptSha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55",
+  "sourceSha256": "65bfe259ab4bcb67603d2c80c39645d8c0a7a83194402fe0a37ecd808d64efec",
+  "license": "MainGPL-2.0-or-later verified; full component closure unverified",
+  "digestSerialization": "serde_json::to_vec(ApplicationDefinition) uses Rust struct field order; independent reproduction matches sha256:b9a9cf6cd790f974edbc623c774858a06bf8d42a2575240b201e037a58ef57d6",
+  "gplMemberDifferences": "RootGPL differs in line wrapping, title case and sample placeholders; no substantive terms difference identified; normalized inequality preserved.",
+  "marketLifecycleNotCoveredAtOriginalReview": true
+}

@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "frhed",
+  "version": "1.6.0",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited64-byte binary GUI edit, Save As and explicit fresh-process output reopen in original and independent market generation; verified-cache same-version update, exact original-generation rollback and normal Core/Store restart.",
+  "fullEditorAcceptance": false,
+  "signedCatalogue": "catalogue/candidate-v27/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 36,
+    "snapshot": 36,
+    "timestamp": 36
+  },
+  "catalogueEntries": 28,
+  "acceptedDistinctWindowsApplications": 26,
+  "excludedFixtures": 2,
+  "coreJobCount": 198,
+  "storeRowCount": 69,
+  "acceptanceReceipt": "windows-frhed-20261011.acceptance.json",
+  "acceptanceReceiptSha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55",
+  "sourceEvidence": "2026-10-11-frhed-source.json",
+  "sourceEvidenceSha256": "65bfe259ab4bcb67603d2c80c39645d8c0a7a83194402fe0a37ecd808d64efec",
+  "activationEvidence": "2026-10-11-frhed-activation.json",
+  "marketGuiEvidence": "2026-10-11-frhed-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-frhed-runtime-recovery.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-frhed-20261011.acceptance.json#frhed",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "941b6b7c436653a7e4c0c55ee5180c343e4b9da86b080530c3b4af8092f5c4e0",
+        "size": 725124,
+        "target": "Frhed-1.6.0-Setup.exe",
+        "url": "https://downloads.sourceforge.net/project/frhed/1.%20Stable%20Releases/1.6.0/Frhed-1.6.0-Setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "frhed"
+    },
+    "id": "frhed",
+    "license": "GPL-2.0-or-later",
+    "name": {
+      "en": "Frhed",
+      "zhCN": "Frhed"
+    },
+    "origin": "https://frhed.sourceforge.net/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Raihan Kibria",
+    "summary": {
+      "en": "64-byte binary hex edit, Save As and fresh-process reopen tested; ASCII paths only, advanced editor and physical disk support unverified.",
+      "zhCN": "64 字节二进制修改、另存与新进程重开已测；仅 ASCII 路径，高级编辑及物理磁盘功能未验收"
+    },
+    "version": "1.6.0"
+  },
+  "installed": {
+    "appId": "frhed",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "1.6.0"
+  },
+  "selectedOriginalGeneration": "gen-job-1791680907933-1",
+  "marketVersionLicenseTestedEvidenceAndLimitsVisiblyObserved": true,
+  "marketInstalledRowAndRollbackControlVisiblyObserved": true,
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "frhed",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "41aa46b3-49cd-423b-9752-43580fc3c80a",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "frhed",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "bb7db551-bf2d-49f0-bec9-5c86da4d140c",
+      "state": "succeeded"
+    }
+  },
+  "coreJobs": [
+    {
+      "applicationId": "frhed",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33901,
+          "requestId": "job-1791681440567-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 25439,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791680907933-1/prefix",
+          "requestId": "job-1791681440567-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 25482,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681440567-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791680907933-1",
+      "id": "job-1791681440567-7",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "frhed",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33523,
+          "requestId": "job-1791681407286-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 23325,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791681323784-4/prefix",
+          "requestId": "job-1791681407286-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 23367,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681407286-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791681323784-4",
+      "id": "job-1791681407286-6",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "frhed",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33327,
+          "requestId": "job-1791681343934-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 59829,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791681323784-4/prefix",
+          "requestId": "job-1791681343934-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 59871,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681343934-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791681323784-4",
+      "id": "job-1791681343934-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "frhed",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33066,
+          "requestId": "job-1791681323784-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4389,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791681323784-4/prefix",
+          "requestId": "job-1791681323784-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4431,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681323784-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791681323784-4",
+      "id": "job-1791681323784-4",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "full198CoreAnd69StoreFieldsPreservedAcrossRestart": true,
+  "fullCheckpointMatchAfterMarketGuiClosed": true,
+  "latestKnownTime": "2026-10-11T01:17:51.953533079Z",
+  "privateFullCheckpoint": "frhed-20261011/after-restart.json",
+  "privateCheckpointReviewArchiveSha256": "003ddfee6550d1c9be686866116f6d0765a145335aefbe191926cfe19f101e79",
+  "readOnlyCurrentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-20261011.py",
+  "priorSignedHistoriesPreserved": true,
+  "trustResetOrDowngradePerformed": false,
+  "publicationEvidenceSeparate": true,
+  "screenshotsAndOutputs": {
+    "after-rollback-reopened.jpg": {
+      "sha256": "e7902c5743e70c594fd078761549beb34c3943f69a25196ff57e5a2266a7a5e5",
+      "sizeBytes": 140798
+    },
+    "editor-created-market.bin": {
+      "sha256": "3ff70c430f55ac033df9d1e6cd0e5d1cd2392e881a131cf32fdc1f50c9361232",
+      "sizeBytes": 64
+    },
+    "editor-created-original.bin": {
+      "sha256": "6fe36a18018f4642e320cd7b62966d2c1561ceaf2ee9fef33ebce1d4b51c88ca",
+      "sizeBytes": 64
+    },
+    "input-market.bin": {
+      "sha256": "bf86051d941bc496b3a75d2229962c216e614e8e67b4b73e293aa6960db28aba",
+      "sizeBytes": 64
+    },
+    "input-original.bin": {
+      "sha256": "fdeab9acf3710362bd2658cdc9a29e8f9c757fcf9811603a8c447cd1d9151108",
+      "sizeBytes": 64
+    },
+    "market-edited.jpg": {
+      "sha256": "481557d874e2dc508ce1122892c82e5d7edd9003343e3d898f9776fc5ea143e0",
+      "sizeBytes": 145538
+    },
+    "market-input.jpg": {
+      "sha256": "d3b8243199dacf37ec3ee5545d4be917c9f94225eb13c3eb4310f4e78edf30a4",
+      "sizeBytes": 146720
+    },
+    "market-new-process.jpg": {
+      "sha256": "6a21665a3382fb252dae851e8408b3a65e31404944c33863e9002e6ab421ad91",
+      "sizeBytes": 107896
+    },
+    "market-reopened.jpg": {
+      "sha256": "7213511640f0d81478cc6707f86b18cbcd09b7aa5f69eea3499c799240eb6c73",
+      "sizeBytes": 145752
+    },
+    "market-saved.jpg": {
+      "sha256": "f634e0fa6c5e02b8c54e2baace9598eb96b668d3ead0aeaf38f26872d7718f0c",
+      "sizeBytes": 146222
+    },
+    "original-about.jpg": {
+      "sha256": "345317045d1e80a8f42088c63d8563ab638d2980b7e778b39b3e0f8f84419b07",
+      "sizeBytes": 146975
+    },
+    "original-edited.jpg": {
+      "sha256": "7ad620fcf78d065cdcf2ab26e0d5cc375899f4fb36133ac9d12c8cda8727179c",
+      "sizeBytes": 141387
+    },
+    "original-input.jpg": {
+      "sha256": "01146b445717805bfe2a148b921752e5b0cb48efdb3b0666e46d9553d3390e8c",
+      "sizeBytes": 140632
+    },
+    "original-new-process.jpg": {
+      "sha256": "a907d1050cbc3d89e01d760b6774c1314b103a751c0c6765b3610f5e7c9e1d1e",
+      "sizeBytes": 109065
+    },
+    "original-reopened.jpg": {
+      "sha256": "f4202f1b7793d6283e20885a80f517edf81bbc14d62a7d0e3f637a102d68fb1f",
+      "sizeBytes": 142264
+    },
+    "original-saved.jpg": {
+      "sha256": "b238cddc0000bb280f19488f86074e8d3b3c2b2a3d17725ccc4013fa60872be3",
+      "sizeBytes": 141203
+    },
+    "store-details-after-restart.jpg": {
+      "sha256": "17e1ca053d2c359559c3e90b9eafd42c76de27dbc314e33357110bc69f12be5a",
+      "sizeBytes": 137680
+    },
+    "store-installed-after-restart.jpg": {
+      "sha256": "7afb4424461f8685c25a0134a2ba793b3a104e893517ca2b974ed2431508ae62",
+      "sizeBytes": 160498
+    }
+  },
+  "signedCatalogueFiles": {
+    "metadata/1.root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    },
+    "metadata/36.snapshot.json": {
+      "sha256": "e84734acd7764ac748258df37c01d867ab8f3af5290e822ff3cf21b31962fb08",
+      "sizeBytes": 997
+    },
+    "metadata/36.targets.json": {
+      "sha256": "8c7ae0311f59727b2908391421a6be486a1322c607f6ff2ab60e49c3c0a141dc",
+      "sizeBytes": 11392
+    },
+    "metadata/timestamp.json": {
+      "sha256": "6defcdf285de2313347c5eb14e46165f2e29b242878042634ce32ecd31d0a7e0",
+      "sizeBytes": 997
+    },
+    "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "sizeBytes": 9031
+    },
+    "targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f",
+      "sizeBytes": 5280
+    },
+    "targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "sizeBytes": 21857
+    },
+    "targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "sizeBytes": 7918
+    },
+    "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "sizeBytes": 1676
+    },
+    "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "sizeBytes": 2738
+    },
+    "targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "sizeBytes": 7617
+    },
+    "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "sizeBytes": 1699
+    },
+    "targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "sizeBytes": 10640
+    },
+    "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "sizeBytes": 1617
+    },
+    "targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "sizeBytes": 12679
+    },
+    "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "sizeBytes": 1652
+    },
+    "targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "sizeBytes": 9285
+    },
+    "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "sizeBytes": 1146
+    },
+    "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "sizeBytes": 4783
+    },
+    "targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7",
+      "sizeBytes": 6220
+    },
+    "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "sizeBytes": 4223
+    },
+    "targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55",
+      "sizeBytes": 4642
+    },
+    "targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+      "sizeBytes": 11228
+    },
+    "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "sizeBytes": 1656
+    },
+    "targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "sizeBytes": 6071
+    },
+    "targets/b64cdb91489386de3685d6a242b35e5f42f57c199082cfc4db0d4cabe411fdd6.catalogue.json": {
+      "sha256": "b64cdb91489386de3685d6a242b35e5f42f57c199082cfc4db0d4cabe411fdd6",
+      "sizeBytes": 21425
+    },
+    "targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "sizeBytes": 10745
+    },
+    "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "sizeBytes": 4586
+    },
+    "targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "sizeBytes": 9388
+    },
+    "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "sizeBytes": 3517
+    },
+    "trusted-root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    }
+  },
+  "verifiedTufClientDownload": {
+    "client": "tuftool 0.17",
+    "trustedRootExplicitlyProvided": true,
+    "unsafeOrExpiryBypassFlagsUsed": false,
+    "targets": [
+      "catalogue.json",
+      "windows-frhed-20261011.acceptance.json",
+      "Frhed-1.6.0-Setup.exe"
+    ]
+  },
+  "ubuntuCountsChanged": false,
+  "sourceProviderV2NotDeployedOrGuiAccepted": true,
+  "limits": [
+    "Only fixed Frhed 1.6.0 x86 on Wine 11.14 win64, 64-byte binary fixtures and ASCII paths are accepted; complete editor acceptance is not claimed.",
+    "GUI overwrite of offsets 0 and 1, separate Save As and explicit fresh-process reopen passed in original and independent market generations; all other bytes and both inputs remained unchanged.",
+    "Chinese paths and direct Chinese input, large/partial files, physical disk access, templates, searches, plugins and advanced workflows are unverified.",
+    "Main program fixed version.h grants GPL version 2 or later. Full bundled component license closure, upstream cryptographic digest, Authenticode and reproducible builds are unverified.",
+    "Original GUI receipt stays byte-frozen with market pending at that historical phase; later publication records market completion separately.",
+    "Cached same-version update, exact original-generation rollback and normal Core/Store restart passed; guest online downloads, fresh-machine registration, settings migration and cross-version upgrade are unverified."
+  ],
+  "finalVerificationEvidence": "2026-10-11-frhed-final-verification.json",
+  "independentReviewEvidence": "2026-10-11-frhed-review.json"
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "frhed",
+  "coreJobs": 197,
+  "storeRows": 68,
+  "marketInstall": {
+    "schemaVersion": 1,
+    "date": "2026-10-11",
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "frhed",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "41aa46b3-49cd-423b-9752-43580fc3c80a",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791681323784-4",
+    "originalGenerationId": "gen-job-1791680907933-1",
+    "generationId": "gen-job-1791681323784-4",
+    "newGenerationDistinct": true,
+    "allPrior194CoreJobsAnd67StoreRowsPreserved": true,
+    "fixture": {
+      "file": "input/hex-market.bin",
+      "sizeBytes": 64,
+      "sha256": "bf86051d941bc496b3a75d2229962c216e614e8e67b4b73e293aa6960db28aba",
+      "independentFromOriginal": true,
+      "hex": "fffefdfcfbfaf9f8f7f6f5f4f3f2f1f0efeeedecebeae9e8e7e6e5e4e3e2e1e0dfdedddcdbdad9d8d7d6d5d4d3d2d1d0cfcecdcccbcac9c8c7c6c5c4c3c2c1c0"
+    },
+    "guiJobId": "job-1791681343934-5",
+    "guiStatus": "running"
+  },
+  "outputProof": {
+    "schemaVersion": 1,
+    "generationId": "gen-job-1791681323784-4",
+    "fixture": {
+      "file": "input/hex-market.bin",
+      "sizeBytes": 64,
+      "sha256": "bf86051d941bc496b3a75d2229962c216e614e8e67b4b73e293aa6960db28aba",
+      "independentFromOriginal": true,
+      "hex": "fffefdfcfbfaf9f8f7f6f5f4f3f2f1f0efeeedecebeae9e8e7e6e5e4e3e2e1e0dfdedddcdbdad9d8d7d6d5d4d3d2d1d0cfcecdcccbcac9c8c7c6c5c4c3c2c1c0"
+    },
+    "savedOutput": {
+      "file": "output/hex-market-edited.bin",
+      "sizeBytes": 64,
+      "sha256": "3ff70c430f55ac033df9d1e6cd0e5d1cd2392e881a131cf32fdc1f50c9361232",
+      "hex": "4224fdfcfbfaf9f8f7f6f5f4f3f2f1f0efeeedecebeae9e8e7e6e5e4e3e2e1e0dfdedddcdbdad9d8d7d6d5d4d3d2d1d0cfcecdcccbcac9c8c7c6c5c4c3c2c1c0"
+    },
+    "changedOffsets": [
+      0,
+      1
+    ],
+    "allOtherBytesPreserved": true,
+    "inputUnchanged": true
+  },
+  "explicitFreshProcessOutputReopenObserved": true,
+  "bothGenerationInputOutputLauncherPinsPreserved": true,
+  "allPrior194CoreJobsAnd67StoreRowsPreserved": true,
+  "allOtherApplicationGenerationsPreserved": true,
+  "trustConfigsGuardsPreserved": true,
+  "knownTimeMonotonic": true,
+  "priorAkelPadLazPaintAndMpcOutputsPreserved": true,
+  "powerNeverPreserved": true,
+  "outputs": {
+    "original": {
+      "file": "output/中文验收.txt",
+      "sizeBytes": 98,
+      "sha256": "176b23ca4684370f912a712945cedd60292bf419c2dbea79f6851d4294235f1a",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeOS AkelPad 4.9.9\r\n中文文件与 UTF-8 保存验收\r\nstatus=after\r\nsum=21+21\r\nresult=42\r\n",
+      "generationId": "gen-job-1791594584878-1"
+    },
+    "market": {
+      "file": "output/市场验收.txt",
+      "sizeBytes": 97,
+      "sha256": "0d7d96ac98adc0d893e82bf34dee9d0001039819e590077836767f1b4d9f12ac",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeStore AkelPad 4.9.9\r\n市场中文文件独立验收\r\nstatus=passed\r\nsum=40+2\r\nresult=42\r\n",
+      "generationId": "gen-job-1791595434904-4"
+    },
+    "frhed-original": {
+      "file": "output/hex-edited.bin",
+      "sizeBytes": 64,
+      "sha256": "6fe36a18018f4642e320cd7b62966d2c1561ceaf2ee9fef33ebce1d4b51c88ca",
+      "hex": "a5ff02030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+      "generationId": "gen-job-1791680907933-1"
+    },
+    "frhed-market": {
+      "file": "output/hex-market-edited.bin",
+      "sizeBytes": 64,
+      "sha256": "3ff70c430f55ac033df9d1e6cd0e5d1cd2392e881a131cf32fdc1f50c9361232",
+      "hex": "4224fdfcfbfaf9f8f7f6f5f4f3f2f1f0efeeedecebeae9e8e7e6e5e4e3e2e1e0dfdedddcdbdad9d8d7d6d5d4d3d2d1d0cfcecdcccbcac9c8c7c6c5c4c3c2c1c0",
+      "generationId": "gen-job-1791681323784-4"
+    }
+  },
+  "newJobs": [
+    {
+      "applicationId": "frhed",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33066,
+          "requestId": "job-1791681323784-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4389,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791681323784-4/prefix",
+          "requestId": "job-1791681323784-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4431,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681323784-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791681323784-4",
+      "id": "job-1791681323784-4",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "frhed",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33327,
+          "requestId": "job-1791681343934-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 59829,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791681323784-4/prefix",
+          "requestId": "job-1791681343934-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 59871,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681343934-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791681323784-4",
+      "id": "job-1791681343934-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "frhed",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33523,
+          "requestId": "job-1791681407286-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 23325,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791681323784-4/prefix",
+          "requestId": "job-1791681407286-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 23367,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681407286-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791681323784-4",
+      "id": "job-1791681407286-6",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  ],
+  "historicalPhase": "Independent market GUI completed before exact rollback",
+  "storeUpdateEnqueueMethod": "ForgeStore IPC enqueue, not GUI button activation",
+  "outputsVerifiedAfterReopen": true,
+  "rollback": {
+    "schemaVersion": 1,
+    "date": "2026-10-11",
+    "applicationId": "frhed",
+    "coreJobs": 197,
+    "storeRows": 69,
+    "storeRollbackJob": {
+      "action": "rollback",
+      "appId": "frhed",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "bb7db551-bf2d-49f0-bec9-5c86da4d140c",
+      "state": "succeeded"
+    },
+    "selectedOriginalGeneration": "gen-job-1791680907933-1",
+    "bothGenerationsReady": true,
+    "noCoreJobCreatedByRollback": true,
+    "full197CoreJobsAnd68PriorStoreRowsPreserved": true,
+    "bothGenerationsOutputPinsPreserved": true,
+    "allOtherApplicationGenerationsPreserved": true,
+    "trustConfigsAndGuardsPreserved": true,
+    "knownTimeMonotonic": true,
+    "sourceRecordDate": "2026-10-10",
+    "dateCorrectionBasis": "Helper retained previous date label; actual current-run file and Core createdAtMilliseconds 1791681440567 identify 2026-10-11. Original private helper record retained."
+  }
+}

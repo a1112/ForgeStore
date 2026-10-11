@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "frhed",
+  "version": "1.6.0",
+  "fixture": {
+    "file": "input/hex-original.bin",
+    "sizeBytes": 64,
+    "sha256": "fdeab9acf3710362bd2658cdc9a29e8f9c757fcf9811603a8c447cd1d9151108",
+    "hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+  },
+  "savedOutput": {
+    "file": "output/hex-edited.bin",
+    "sizeBytes": 64,
+    "sha256": "6fe36a18018f4642e320cd7b62966d2c1561ceaf2ee9fef33ebce1d4b51c88ca",
+    "hex": "a5ff02030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f"
+  },
+  "changedOffsets": [
+    0,
+    1
+  ],
+  "allOtherBytesPreserved": true,
+  "inputUnchanged": true,
+  "explicitFreshProcessOutputReopenObserved": true,
+  "coreJobs": 194,
+  "storeRows": 67,
+  "oldFullFieldsPreserved": true,
+  "installedLicenseByteMatchesFixedSource": true,
+  "productCodeChanged": false,
+  "marketLifecyclePending": true,
+  "generation": {
+    "bottleId": "gen-job-1791680907933-1",
+    "createdAtMilliseconds": 1791680907940,
+    "definition": {
+      "bottleId": "gui-frhed",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "frhed",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\Frhed"
+        ],
+        "fileName": "Frhed-1.6.0-Setup.exe",
+        "sha256": "941b6b7c436653a7e4c0c55ee5180c343e4b9da86b080530c3b4af8092f5c4e0"
+      },
+      "launchers": [
+        {
+          "executable": "Frhed/frhed.exe",
+          "id": "main",
+          "name": "Frhed"
+        }
+      ],
+      "name": "Frhed",
+      "publisher": "Raihan Kibria",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "1.6.0"
+    },
+    "definitionDigest": "sha256:b9a9cf6cd790f974edbc623c774858a06bf8d42a2575240b201e037a58ef57d6",
+    "id": "gen-job-1791680907933-1",
+    "launcherDigests": {
+      "main": "sha256:8ed1da5fafb4a02618fa2a51ae43e6cf34a7777938d85fba369c8650a48c2544"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791680920436
+  },
+  "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+  "jobs": {
+    "install": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 31906,
+          "requestId": "job-1791680907933-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4406,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791680907933-1/prefix",
+          "requestId": "job-1791680907933-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4447,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791680907933-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791680907933-1",
+      "id": "job-1791680907933-1",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    "launch": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 32161,
+          "requestId": "job-1791680932326-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 86988,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791680907933-1/prefix",
+          "requestId": "job-1791680932326-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 87031,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791680932326-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791680907933-1",
+      "id": "job-1791680932326-2",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    "reopen": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 32374,
+          "requestId": "job-1791681031436-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 23725,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791680907933-1/prefix",
+          "requestId": "job-1791681031436-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 23767,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791681031436-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791680907933-1",
+      "id": "job-1791681031436-3",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  },
+  "screenshots": {
+    "original-about.jpg": {
+      "sizeBytes": 146975,
+      "sha256": "345317045d1e80a8f42088c63d8563ab638d2980b7e778b39b3e0f8f84419b07"
+    },
+    "original-edited.jpg": {
+      "sizeBytes": 141387,
+      "sha256": "7ad620fcf78d065cdcf2ab26e0d5cc375899f4fb36133ac9d12c8cda8727179c"
+    },
+    "original-input.jpg": {
+      "sizeBytes": 140632,
+      "sha256": "01146b445717805bfe2a148b921752e5b0cb48efdb3b0666e46d9553d3390e8c"
+    },
+    "original-new-process.jpg": {
+      "sizeBytes": 109065,
+      "sha256": "a907d1050cbc3d89e01d760b6774c1314b103a751c0c6765b3610f5e7c9e1d1e"
+    },
+    "original-reopened.jpg": {
+      "sizeBytes": 142264,
+      "sha256": "f4202f1b7793d6283e20885a80f517edf81bbc14d62a7d0e3f637a102d68fb1f"
+    },
+    "original-saved.jpg": {
+      "sizeBytes": 141203,
+      "sha256": "b238cddc0000bb280f19488f86074e8d3b3c2b2a3d17725ccc4013fa60872be3"
+    }
+  },
+  "guiWorkflowPassed": true,
+  "published": false,
+  "countsAsCompleted": false,
+  "limits": [
+    "Only fixed Frhed 1.6.0 x86 on Wine 11.14 win64, a 64-byte fixture and ASCII file paths were tested.",
+    "GUI changed offsets 0 and 1 to A5 FF, preserved all other bytes, saved a separate output and explicitly reopened it in a fresh process.",
+    "Chinese paths and input, large or partial files, physical disk access, templates, searches, plugins and full editor support were not tested.",
+    "Bundled component license closure, upstream digest, Authenticode and reproducible builds were not verified.",
+    "Independent market generation, cached same-version update, exact rollback and service restart were pending when original proof was frozen."
+  ]
+}

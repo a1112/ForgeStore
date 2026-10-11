@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 36,
+  "catalogueEntries": 28,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "originalCoreJobsPreserved": true,
+  "coreJobs": 194,
+  "fullStoreRowsPreserved": true,
+  "storeRows": 67,
+  "previousInstalledAndEntriesPreserved": true,
+  "frhedEntry": {
+    "compatibility": {
+      "evidence": "windows-frhed-20261011.acceptance.json#frhed",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "941b6b7c436653a7e4c0c55ee5180c343e4b9da86b080530c3b4af8092f5c4e0",
+        "size": 725124,
+        "target": "Frhed-1.6.0-Setup.exe",
+        "url": "https://downloads.sourceforge.net/project/frhed/1.%20Stable%20Releases/1.6.0/Frhed-1.6.0-Setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "frhed"
+    },
+    "id": "frhed",
+    "license": "GPL-2.0-or-later",
+    "name": {
+      "en": "Frhed",
+      "zhCN": "Frhed"
+    },
+    "origin": "https://frhed.sourceforge.net/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Raihan Kibria",
+    "summary": {
+      "en": "64-byte binary hex edit, Save As and fresh-process reopen tested; ASCII paths only, advanced editor and physical disk support unverified.",
+      "zhCN": "64 字节二进制修改、另存与新进程重开已测；仅 ASCII 路径，高级编辑及物理磁盘功能未验收"
+    },
+    "version": "1.6.0"
+  },
+  "frhedInstalled": {
+    "appId": "frhed",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "1.6.0"
+  },
+  "serviceGuardsPreserved": true,
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "signedCatalogue": "catalogue/candidate-v27/tuf",
+  "historicalPhase": "activation before independent market lifecycle"
+}
