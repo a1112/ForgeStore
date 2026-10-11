@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "tiled",
+  "version": "1.11.2",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Finite small orthogonal single-layer map erase/stamp, TMX Save As, JSON export, explicit new-process rendering and independent local market lifecycle.",
+  "localInstallerFilenameAlias": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+  "officialInstallerFilename": "Tiled-1.11.2_Windows-10+_x86_64.msi",
+  "officialDownloadUrl": "https://github.com/mapeditor/tiled/releases/download/v1.11.2/Tiled-1.11.2_Windows-10%2B_x86_64.msi",
+  "installerPackageBytesChanged": false,
+  "definitionDigest": "sha256:926343a11d29536e8ef01b5f9cc98eba025225b83689db84d9ae83ba67f13c27",
+  "coreCodeOrGlobalRuntimeChanged": false,
+  "inputsUnchanged": true,
+  "unattendedStartupVerified": false,
+  "bundleLicenseClosureVerified": false,
+  "signedCatalogue": "catalogue/candidate-v37/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 46,
+    "snapshot": 46,
+    "timestamp": 46
+  },
+  "catalogueEntries": 36,
+  "acceptedDistinctWindowsApplications": 34,
+  "excludedSyntheticFixtureApps": true,
+  "actualSignedTargets": 73,
+  "publicCatalogueFiles": 42,
+  "coreJobCount": 267,
+  "fullStoreRowCount": 86,
+  "acceptanceReceipt": "windows-tiled-20261011.alias.acceptance.json",
+  "acceptanceReceiptSha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9",
+  "sourceEvidence": "2026-10-11-tiled-source-alias.json",
+  "sourceEvidenceSha256": "2c18c2d3806da243bcb21ece5e1cba9b1b9928f7e719d70068bd12e0f78e8550",
+  "originalGuiEvidence": "2026-10-11-tiled-gui-alias.json",
+  "originalGuiEvidenceSha256": "1b2a5ce98010430772dd8ddc58c8274e7014898f8f195617febf963018070811",
+  "frozenOriginalSourceGuiAndReceiptBytesAndStageLabelsRetained": true,
+  "activationEvidence": "2026-10-11-tiled-activation.json",
+  "marketGuiEvidence": "2026-10-11-tiled-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-tiled-runtime-recovery.json",
+  "failureEvidence": "2026-10-11-tiled-failures.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-tiled-20261011.alias.acceptance.json#tiled",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+        "size": 22192128,
+        "target": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+        "url": "https://github.com/mapeditor/tiled/releases/download/v1.11.2/Tiled-1.11.2_Windows-10%2B_x86_64.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "tiled"
+    },
+    "id": "tiled",
+    "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "Tiled",
+      "zhCN": "Tiled 地图编辑器"
+    },
+    "origin": "https://github.com/mapeditor/tiled/releases/tag/v1.11.2",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "mapeditor.org",
+    "summary": {
+      "en": "Limited 4x4 orthogonal map erase/stamp, TMX save, JSON export and fresh-process reopen tested; advanced map and engine features unverified.",
+      "zhCN": "有限 4×4 正交地图擦除、图块绘制、TMX 保存、JSON 导出和新进程重开已测；高级地图和引擎功能未验收"
+    },
+    "version": "1.11.2"
+  },
+  "selectedOriginalGeneration": "gen-job-1791707208335-4",
+  "independentMarketGeneration": "gen-job-1791708025849-7",
+  "earlierOfficialFilenameGeneration": "gen-job-1791706281896-1",
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "storeGuiButtonsVerified": false,
+  "rootBytesPreserved": true,
+  "allOldSignedTargetsPreservedExceptCatalogueReplacement": true,
+  "tuftoolExplicitTrustedRootDownloadVerified": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "firstFailedUpdate": {
+      "action": "update",
+      "appId": "tiled",
+      "backend": "compatforge",
+      "detail": "invalid reviewed backend input: catalogue differs from reviewed recipe or cache path",
+      "id": "9ace0d36-dd89-4e5e-b53e-27df9a961ad9",
+      "state": "failed"
+    },
+    "update": {
+      "action": "update",
+      "appId": "tiled",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "66b01664-b14f-4aae-a95f-31e9583ad2f7",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "tiled",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "e9211c0c-8c42-45ce-a38d-313bea31bf36",
+      "state": "succeeded"
+    }
+  },
+  "beforeRollbackCheckpointSavedAndReadBack": true,
+  "beforeRollbackCoreJobs": 266,
+  "beforeRollbackStoreRows": 85,
+  "afterRollbackCoreJobs": 266,
+  "afterRollbackStoreRows": 86,
+  "normalRestartBeforeAndAfterCoreJobs": 267,
+  "normalRestartBeforeAndAfterStoreRows": 86,
+  "normalRestartFullFieldEqualityPassed": true,
+  "privateCheckpointPins": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "589ef1c3b7e44a213d37adb0f7b8302b4687d3799baf7abd44c63bdf7bd6c05b",
+      "coreJobs": 267,
+      "fullStoreRows": 86
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "16b429f18485ec975e15a85c7038b295f8ec88d2c90739957682449ec30d7e68",
+      "coreJobs": 267,
+      "fullStoreRows": 86
+    }
+  },
+  "outputPins": {
+    "earlier-original": {
+      "native": {
+        "file": "output/original-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "json": {
+        "file": "output/original-edited.json.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      }
+    },
+    "original": {
+      "native": {
+        "file": "output/original-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "json": {
+        "file": "output/original-edited.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      }
+    },
+    "market": {
+      "native": {
+        "file": "output/market-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "json": {
+        "file": "output/market-edited.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      }
+    }
+  },
+  "historicalRolesPreserved": {
+    "candidate-v34": 43,
+    "candidate-v35": 44,
+    "candidate-v36": 45
+  },
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two distinct small Chinese-name 4x4 finite orthogonal one-layer input maps with two synthetic tiles were tested: erase one red tile, stamp green tiles at (1,1) and (2,2), GUI Save As TMX to ASCII path, GUI JSON export and explicit new-process rendering of both saved formats. Each input is 515 bytes; TMX output 548 bytes, JSON output 947 bytes. Original and market inputs remain exact bytes. The same original fixture was repeated in the alias formal generation; neither fixtures nor repeat generations count as applications.",
+    "Infinite/isometric/hexagonal maps, multiple/object layers, terrain/automapping, animations, projects/worlds, engine integration, large maps, broad export/plugin formats, direct Chinese keyboard input and advanced editor features were not verified.",
+    "A local filename alias replaces upstream + with plus in the signed catalogue target and newly frozen installer definition only. Official download URL and upstream filename retain +, identical package bytes/SHA/size are checked. No Core code, launcher environment, working directory, fonts, global runtime context, program/DLL or runtime bytes were changed. Original definition/generation and all original GUI/source/signature receipts remain historical bytes.",
+    "The official release API asset digest was null. HTTPS downloaded bytes have a self-computed SHA-256 and matching published API asset size; no upstream digest, Authenticode, OpenPGP or reproducible build verification is claimed. Version 1.11.2 is pinned, not claimed latest.",
+    "Main program GPL-2.0-or-later is declared in fixed source src/tiled/mainwindow.cpp. Installed COPYING.txt, LICENSE.GPL.txt and LICENSE.BSD.txt exactly match selected fixed source bytes (CRLF normalization count zero). Full Qt, plugins, example assets, engine formats and bundled licence closure was not verified.",
+    "Same-version update uses verified pre-cache and Store IPC; rollback uses Store IPC. GUI update/rollback buttons, guest network download, fresh-machine recipe registration, configuration migration, cross-version upgrade and unattended startup were not verified. Network deny in a launch plan is not claimed actual enforced network isolation.",
+    "Preservation checks cover all full Core jobs and Store SQLite rows/fields, all generation records, config/trust/guards, prior fixed acceptance data, three Tiled generations installed-file hashes and new fixed map/program/licence/config/registry data. They do not enumerate all filesystem data of all previously tested applications."
+  ]
+}

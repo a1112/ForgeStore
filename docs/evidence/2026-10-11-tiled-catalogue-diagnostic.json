@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "tiled",
+  "firstActivationFailure": {
+    "candidate": "candidate-v35",
+    "role": 44,
+    "runtimeCatalogueError": "Catalog(Invalid(\"invalid artifact size or SHA-256\"))",
+    "ipcCaptureFailedWith": "ConnectionRefusedError",
+    "tufSignatureAndHashDownloadPassed": true,
+    "installedPackageHashAndSizeValid": true,
+    "catalogueTargetPlusRejected": true,
+    "newPassCountAdded": false
+  },
+  "firstUpdateFailure": {
+    "marketJob": {
+      "action": "update",
+      "appId": "tiled",
+      "backend": "compatforge",
+      "detail": "invalid reviewed backend input: catalogue differs from reviewed recipe or cache path",
+      "id": "9ace0d36-dd89-4e5e-b53e-27df9a961ad9",
+      "state": "failed"
+    },
+    "newCoreJobs": [],
+    "coreJobs": 260,
+    "fullStoreRows": 84,
+    "generations": {
+      "applicationId": "tiled",
+      "generations": [
+        {
+          "bottleId": "gen-job-1791706281896-1",
+          "createdAtMilliseconds": 1791706281902,
+          "definition": {
+            "bottleId": "gui-tiled",
+            "category": "development",
+            "compatibilityRating": "unknown",
+            "id": "tiled",
+            "installer": {
+              "fileName": "Tiled-1.11.2_Windows-10+_x86_64.msi",
+              "msi": {
+                "architecture": "x86_64",
+                "handler": {
+                  "action": "install",
+                  "kind": "msiexec",
+                  "properties": {},
+                  "reboot": "suppress",
+                  "ui": "none"
+                },
+                "maximumRuntimeMilliseconds": 300000,
+                "sizeBytes": 22192128
+              },
+              "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7"
+            },
+            "launchers": [
+              {
+                "executable": "Program Files/Tiled/tiled.exe",
+                "id": "main",
+                "name": "Tiled"
+              }
+            ],
+            "name": "Tiled",
+            "publisher": "mapeditor.org",
+            "schemaVersion": "1",
+            "tags": [
+              "rolling-1000",
+              "managed-msi"
+            ],
+            "version": "1.11.2"
+          },
+          "definitionDigest": "sha256:d05f8118371461a8eb054ca2b22cdbad2cf4b5e14ad39ee62e72d1b272fe80f8",
+          "id": "gen-job-1791706281896-1",
+          "launcherDigests": {
+            "main": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379"
+          },
+          "runtime": {
+            "binding": {
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINESERVER": "/usr/bin/wineserver"
+              },
+              "executable": "/usr/bin/wine",
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "providerId": "wine-linux-x86-64-preview",
+              "wineserverExecutable": "/usr/bin/wineserver"
+            },
+            "selection": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "version": "11.14"
+          },
+          "status": "ready",
+          "updatedAtMilliseconds": 1791706295646
+        }
+      ],
+      "recoveryCapability": "kernel-boot-identity",
+      "schemaVersion": "1",
+      "selectedGeneration": "gen-job-1791706281896-1"
+    },
+    "oldFullFieldsAndFixedDataPreserved": true,
+    "checkpoint": {
+      "file": "after-first-market-update.json",
+      "sha256": "a44ca78bd925511f246d0800c2f5fff091fb1a4f7688625bd7cca3d4a6e2a18a",
+      "coreJobs": 260,
+      "fullStoreRows": 84
+    },
+    "marketGuiSubmitted": false
+  },
+  "correctedRole45Activation": {
+    "activated": true,
+    "metadataVersion": 45,
+    "rootVersion": 1,
+    "entries": 36,
+    "coreJobs": 260,
+    "fullStoreRows": 83,
+    "entry": {
+      "compatibility": {
+        "evidence": "windows-tiled-20261011.corrected.acceptance.json#tiled",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+          "size": 22192128,
+          "target": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+          "url": "https://github.com/mapeditor/tiled/releases/download/v1.11.2/Tiled-1.11.2_Windows-10%2B_x86_64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "tiled"
+      },
+      "id": "tiled",
+      "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "Tiled",
+        "zhCN": "Tiled 地图编辑器"
+      },
+      "origin": "https://github.com/mapeditor/tiled/releases/tag/v1.11.2",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "mapeditor.org",
+      "summary": {
+        "en": "Limited 4x4 orthogonal map erase/stamp, TMX save, JSON export and fresh-process reopen tested; advanced map and engine features unverified.",
+        "zhCN": "有限 4×4 正交地图擦除、图块绘制、TMX 保存、JSON 导出和新进程重开已测；高级地图和引擎功能未验收"
+      },
+      "version": "1.11.2"
+    },
+    "installed": {
+      "appId": "tiled",
+      "backend": "compatforge",
+      "canRollback": false,
+      "version": "1.11.2"
+    },
+    "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+    "rootBytesPreserved": true,
+    "failedRole44PreservedAndTrustAdvancedTo45": true,
+    "independentMarketGenerationPending": true,
+    "checkpoint": {
+      "file": "after-activation.json",
+      "sha256": "a8306bd8495306e7ffcafc8fe01b6dca2ff4de331cb6cb1488c76c1f323f1720",
+      "coreJobs": 260,
+      "fullStoreRows": 83
+    }
+  },
+  "aliasRole46Activation": {
+    "activated": true,
+    "metadataVersion": 46,
+    "rootVersion": 1,
+    "entries": 36,
+    "coreJobs": 263,
+    "fullStoreRows": 84,
+    "entry": {
+      "compatibility": {
+        "evidence": "windows-tiled-20261011.alias.acceptance.json#tiled",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+          "size": 22192128,
+          "target": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+          "url": "https://github.com/mapeditor/tiled/releases/download/v1.11.2/Tiled-1.11.2_Windows-10%2B_x86_64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "tiled"
+      },
+      "id": "tiled",
+      "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "Tiled",
+        "zhCN": "Tiled 地图编辑器"
+      },
+      "origin": "https://github.com/mapeditor/tiled/releases/tag/v1.11.2",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "mapeditor.org",
+      "summary": {
+        "en": "Limited 4x4 orthogonal map erase/stamp, TMX save, JSON export and fresh-process reopen tested; advanced map and engine features unverified.",
+        "zhCN": "有限 4×4 正交地图擦除、图块绘制、TMX 保存、JSON 导出和新进程重开已测；高级地图和引擎功能未验收"
+      },
+      "version": "1.11.2"
+    },
+    "installed": {
+      "appId": "tiled",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "1.11.2"
+    },
+    "allOldJobsRowsGenerationsConfigurationAndEntryFieldsExceptTiledEvidencePreserved": true,
+    "rootBytesPreserved": true,
+    "priorRoles44And45PreservedAndTrustAdvancedTo46": true,
+    "independentMarketGenerationPending": true,
+    "checkpoint": {
+      "file": "after-alias-activation.json",
+      "sha256": "d15d02fe3efd0823d585610a9f9dacc371a47d1df667df1cdf659209f1009173",
+      "coreJobs": 263,
+      "fullStoreRows": 84
+    }
+  },
+  "localAliasPackageBytesUnchanged": true,
+  "oldRootRawBytesPreserved": true,
+  "oldSignedDirectoriesPreserved": [
+    "candidate-v35",
+    "candidate-v36"
+  ],
+  "limitations": [
+    "Only two distinct small Chinese-name 4x4 finite orthogonal one-layer input maps with two synthetic tiles were tested: erase one red tile, stamp green tiles at (1,1) and (2,2), GUI Save As TMX to ASCII path, GUI JSON export and explicit new-process rendering of both saved formats. Each input is 515 bytes; TMX output 548 bytes, JSON output 947 bytes. Original and market inputs remain exact bytes. The same original fixture was repeated in the alias formal generation; neither fixtures nor repeat generations count as applications.",
+    "Infinite/isometric/hexagonal maps, multiple/object layers, terrain/automapping, animations, projects/worlds, engine integration, large maps, broad export/plugin formats, direct Chinese keyboard input and advanced editor features were not verified.",
+    "A local filename alias replaces upstream + with plus in the signed catalogue target and newly frozen installer definition only. Official download URL and upstream filename retain +, identical package bytes/SHA/size are checked. No Core code, launcher environment, working directory, fonts, global runtime context, program/DLL or runtime bytes were changed. Original definition/generation and all original GUI/source/signature receipts remain historical bytes.",
+    "The official release API asset digest was null. HTTPS downloaded bytes have a self-computed SHA-256 and matching published API asset size; no upstream digest, Authenticode, OpenPGP or reproducible build verification is claimed. Version 1.11.2 is pinned, not claimed latest.",
+    "Main program GPL-2.0-or-later is declared in fixed source src/tiled/mainwindow.cpp. Installed COPYING.txt, LICENSE.GPL.txt and LICENSE.BSD.txt exactly match selected fixed source bytes (CRLF normalization count zero). Full Qt, plugins, example assets, engine formats and bundled licence closure was not verified.",
+    "Same-version update uses verified pre-cache and Store IPC; rollback uses Store IPC. GUI update/rollback buttons, guest network download, fresh-machine recipe registration, configuration migration, cross-version upgrade and unattended startup were not verified. Network deny in a launch plan is not claimed actual enforced network isolation.",
+    "Preservation checks cover all full Core jobs and Store SQLite rows/fields, all generation records, config/trust/guards, prior fixed acceptance data, three Tiled generations installed-file hashes and new fixed map/program/licence/config/registry data. They do not enumerate all filesystem data of all previously tested applications."
+  ]
+}

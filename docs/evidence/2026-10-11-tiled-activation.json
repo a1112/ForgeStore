@@ -1,0 +1,58 @@
+{
+  "activated": true,
+  "metadataVersion": 46,
+  "rootVersion": 1,
+  "entries": 36,
+  "coreJobs": 263,
+  "fullStoreRows": 84,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-tiled-20261011.alias.acceptance.json#tiled",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+        "size": 22192128,
+        "target": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+        "url": "https://github.com/mapeditor/tiled/releases/download/v1.11.2/Tiled-1.11.2_Windows-10%2B_x86_64.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "tiled"
+    },
+    "id": "tiled",
+    "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "Tiled",
+      "zhCN": "Tiled 地图编辑器"
+    },
+    "origin": "https://github.com/mapeditor/tiled/releases/tag/v1.11.2",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "mapeditor.org",
+    "summary": {
+      "en": "Limited 4x4 orthogonal map erase/stamp, TMX save, JSON export and fresh-process reopen tested; advanced map and engine features unverified.",
+      "zhCN": "有限 4×4 正交地图擦除、图块绘制、TMX 保存、JSON 导出和新进程重开已测；高级地图和引擎功能未验收"
+    },
+    "version": "1.11.2"
+  },
+  "installed": {
+    "appId": "tiled",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "1.11.2"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsExceptTiledEvidencePreserved": true,
+  "rootBytesPreserved": true,
+  "priorRoles44And45PreservedAndTrustAdvancedTo46": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-alias-activation.json",
+    "sha256": "d15d02fe3efd0823d585610a9f9dacc371a47d1df667df1cdf659209f1009173",
+    "coreJobs": 263,
+    "fullStoreRows": 84
+  },
+  "stage": "alias-activation-before-independent-market-gui",
+  "subsequentCompletionEvidence": "2026-10-11-tiled-publication.json"
+}

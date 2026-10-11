@@ -1,0 +1,1024 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "tiled",
+  "stage": "formal-original-gui-accepted-market-pending",
+  "generation": {
+    "bottleId": "gen-job-1791707208335-4",
+    "createdAtMilliseconds": 1791707208342,
+    "definition": {
+      "bottleId": "gui-tiled",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "tiled",
+      "installer": {
+        "fileName": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+        "msi": {
+          "architecture": "x86_64",
+          "handler": {
+            "action": "install",
+            "kind": "msiexec",
+            "properties": {},
+            "reboot": "suppress",
+            "ui": "none"
+          },
+          "maximumRuntimeMilliseconds": 300000,
+          "sizeBytes": 22192128
+        },
+        "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7"
+      },
+      "launchers": [
+        {
+          "executable": "Program Files/Tiled/tiled.exe",
+          "id": "main",
+          "name": "Tiled"
+        }
+      ],
+      "name": "Tiled",
+      "publisher": "mapeditor.org",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-msi"
+      ],
+      "version": "1.11.2"
+    },
+    "definitionDigest": "sha256:926343a11d29536e8ef01b5f9cc98eba025225b83689db84d9ae83ba67f13c27",
+    "id": "gen-job-1791707208335-4",
+    "launcherDigests": {
+      "main": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791707223693
+  },
+  "definition": {
+    "schemaVersion": "1",
+    "id": "tiled",
+    "name": "Tiled",
+    "version": "1.11.2",
+    "publisher": "mapeditor.org",
+    "category": "development",
+    "bottleId": "gui-tiled",
+    "installer": {
+      "fileName": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+      "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+      "msi": {
+        "sizeBytes": 22192128,
+        "architecture": "x86_64",
+        "handler": {
+          "kind": "msiexec",
+          "action": "install",
+          "ui": "none",
+          "reboot": "suppress",
+          "properties": {}
+        },
+        "maximumRuntimeMilliseconds": 300000
+      }
+    },
+    "launchers": [
+      {
+        "id": "main",
+        "name": "Tiled",
+        "executable": "Program Files/Tiled/tiled.exe"
+      }
+    ],
+    "compatibilityRating": "unknown",
+    "tags": [
+      "rolling-1000",
+      "managed-msi"
+    ]
+  },
+  "fixture": {
+    "generationId": "gen-job-1791707208335-4",
+    "input": {
+      "file": "input/中文地图.tmx",
+      "sizeBytes": 515,
+      "sha256": "e7912231adff2b63233cf25728e3656e80cc64e8035b88db9f7d376548899882"
+    },
+    "tileImage": {
+      "file": "input/tiles.png",
+      "sizeBytes": 130,
+      "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+    },
+    "expectedEditedGids": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expectedNative": "output/original-edited.tmx",
+    "expectedExport": "output/original-edited.tmj",
+    "helpersCreateInputOnly": true,
+    "outputDirectoryEmpty": true
+  },
+  "savedNative": {
+    "file": "output/original-edited.tmx",
+    "sizeBytes": 548,
+    "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+    "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+    "gids": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "exportedJson": {
+    "file": "output/original-edited.tmj",
+    "sizeBytes": 947,
+    "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+    "content": {
+      "compressionlevel": -1,
+      "height": 4,
+      "infinite": false,
+      "layers": [
+        {
+          "data": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "height": 4,
+          "id": 1,
+          "name": "Tiles",
+          "opacity": 1,
+          "type": "tilelayer",
+          "visible": true,
+          "width": 4,
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "nextlayerid": 2,
+      "nextobjectid": 1,
+      "orientation": "orthogonal",
+      "renderorder": "right-down",
+      "tiledversion": "1.11.2",
+      "tileheight": 32,
+      "tilesets": [
+        {
+          "columns": 2,
+          "firstgid": 1,
+          "image": "../input/tiles.png",
+          "imageheight": 32,
+          "imagewidth": 64,
+          "margin": 0,
+          "name": "ForgeQA",
+          "spacing": 0,
+          "tilecount": 2,
+          "tileheight": 32,
+          "tilewidth": 32
+        }
+      ],
+      "tilewidth": 32,
+      "type": "map",
+      "version": "1.10",
+      "width": 4
+    }
+  },
+  "licenses": {
+    "COPYING.txt": {
+      "sizeBytes": 941,
+      "sha256": "e18e839116ec0da1d50bd71a942509b31a07d00bd25529e9f8340c43b83a636f",
+      "CRLFNormalizationCount": 0,
+      "normalizedMatchesFixedSource": true,
+      "rawBytesEqualToSource": true
+    },
+    "LICENSE.GPL.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "CRLFNormalizationCount": 0,
+      "normalizedMatchesFixedSource": true,
+      "rawBytesEqualToSource": true
+    },
+    "LICENSE.BSD.txt": {
+      "sizeBytes": 1220,
+      "sha256": "2641e2c28b7ce04a29aa364979031500930324623b4770225109c14a02782ae2",
+      "CRLFNormalizationCount": 0,
+      "normalizedMatchesFixedSource": true,
+      "rawBytesEqualToSource": true
+    }
+  },
+  "saveJob": {
+    "applicationId": "tiled",
+    "createdAtMilliseconds": 1791707269071,
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 99872,
+        "requestId": "job-1791707269071-5",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 86404,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix",
+        "requestId": "job-1791707269071-5",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 86447,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791707269071-5",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791707208335-4",
+    "id": "job-1791707269071-5",
+    "inspection": {
+      "architecture": "x86_64",
+      "entryPointRva": 5072,
+      "fileDigest": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379",
+      "fileSizeBytes": 256440,
+      "format": "pe32Plus",
+      "imageKind": "executable",
+      "importLibraries": [
+        "kernel32.dll",
+        "libgcc_s_seh-1.dll",
+        "libstdc++-6.dll",
+        "libtiled.dll",
+        "msvcrt.dll",
+        "qt6core.dll",
+        "qt6gui.dll",
+        "qt6network.dll",
+        "qt6widgets.dll",
+        "tilededitor.dll"
+      ],
+      "machineCode": 34404,
+      "schemaVersion": "1",
+      "sections": [
+        {
+          "executable": true,
+          "name": ".text",
+          "rawDataSize": 52736,
+          "readable": true,
+          "virtualAddress": 4096,
+          "virtualSize": 52264,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".data",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 57344,
+          "virtualSize": 416,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".rdata",
+          "rawDataSize": 7680,
+          "readable": true,
+          "virtualAddress": 61440,
+          "virtualSize": 7576,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/4",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 69632,
+          "virtualSize": 16,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".pdata",
+          "rawDataSize": 2048,
+          "readable": true,
+          "virtualAddress": 73728,
+          "virtualSize": 2028,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".xdata",
+          "rawDataSize": 4096,
+          "readable": true,
+          "virtualAddress": 77824,
+          "virtualSize": 3860,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".bss",
+          "rawDataSize": 0,
+          "readable": true,
+          "virtualAddress": 81920,
+          "virtualSize": 416,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".idata",
+          "rawDataSize": 15872,
+          "readable": true,
+          "virtualAddress": 86016,
+          "virtualSize": 15376,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".CRT",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 102400,
+          "virtualSize": 96,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".tls",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 106496,
+          "virtualSize": 16,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".rsrc",
+          "rawDataSize": 35840,
+          "readable": true,
+          "virtualAddress": 110592,
+          "virtualSize": 35512,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".reloc",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 147456,
+          "virtualSize": 448,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/15",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 151552,
+          "virtualSize": 80,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/30",
+          "rawDataSize": 4096,
+          "readable": true,
+          "virtualAddress": 155648,
+          "virtualSize": 4061,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/42",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 159744,
+          "virtualSize": 175,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/56",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 163840,
+          "virtualSize": 164,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/68",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 167936,
+          "virtualSize": 72,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/81",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 172032,
+          "virtualSize": 165,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/92",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 176128,
+          "virtualSize": 510,
+          "writable": false
+        }
+      ],
+      "subsystem": "windowsGui",
+      "subsystemCode": 2
+    },
+    "kind": "launch",
+    "launchPlan": {
+      "bottleExecutable": {
+        "architecture": "x86_64",
+        "bottleId": "gen-job-1791707208335-4",
+        "digest": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379",
+        "imageKind": "executable",
+        "inspectionSchemaVersion": "1",
+        "originalName": "tiled.exe",
+        "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix/drive_c/Program Files/Tiled/tiled.exe",
+        "sizeBytes": 256440,
+        "subsystem": "windowsGui"
+      },
+      "decisionTrace": [
+        "runtime provider wine-linux-x86-64-preview selected as wine",
+        "translator native selected",
+        "graphics backend wined3d selected",
+        "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+        "Bottle CJK font pinned by digest",
+        "bottle-executable sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379 pinned in place",
+        "inspection x86_64 windowsGui accepted"
+      ],
+      "graphics": {
+        "backend": "wined3d",
+        "version": "11.14"
+      },
+      "lifecycle": {
+        "terminationGraceMilliseconds": 3000,
+        "wineserver": {
+          "executable": "/usr/bin/wineserver",
+          "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix"
+        }
+      },
+      "process": {
+        "arguments": [
+          "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix/drive_c/Program Files/Tiled/tiled.exe",
+          "C:\\ForgeQA\\input\\中文地图.tmx"
+        ],
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "DISPLAY": ":0",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix",
+          "WINESERVER": "/usr/bin/wineserver",
+          "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+        },
+        "executable": "/usr/bin/wine",
+        "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4"
+      },
+      "requestId": "job-1791707269071-5",
+      "runtime": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "sandbox": {
+        "network": "deny",
+        "profile": "desktop"
+      },
+      "schemaVersion": "1",
+      "translator": {
+        "provider": "native"
+      }
+    },
+    "schemaVersion": "1",
+    "status": "succeeded",
+    "updatedAtMilliseconds": 1791707357792
+  },
+  "reopenJob": {
+    "applicationId": "tiled",
+    "createdAtMilliseconds": 1791707362418,
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 100231,
+        "requestId": "job-1791707362418-6",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 12905,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix",
+        "requestId": "job-1791707362418-6",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 12948,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791707362418-6",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791707208335-4",
+    "id": "job-1791707362418-6",
+    "inspection": {
+      "architecture": "x86_64",
+      "entryPointRva": 5072,
+      "fileDigest": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379",
+      "fileSizeBytes": 256440,
+      "format": "pe32Plus",
+      "imageKind": "executable",
+      "importLibraries": [
+        "kernel32.dll",
+        "libgcc_s_seh-1.dll",
+        "libstdc++-6.dll",
+        "libtiled.dll",
+        "msvcrt.dll",
+        "qt6core.dll",
+        "qt6gui.dll",
+        "qt6network.dll",
+        "qt6widgets.dll",
+        "tilededitor.dll"
+      ],
+      "machineCode": 34404,
+      "schemaVersion": "1",
+      "sections": [
+        {
+          "executable": true,
+          "name": ".text",
+          "rawDataSize": 52736,
+          "readable": true,
+          "virtualAddress": 4096,
+          "virtualSize": 52264,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".data",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 57344,
+          "virtualSize": 416,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".rdata",
+          "rawDataSize": 7680,
+          "readable": true,
+          "virtualAddress": 61440,
+          "virtualSize": 7576,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/4",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 69632,
+          "virtualSize": 16,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".pdata",
+          "rawDataSize": 2048,
+          "readable": true,
+          "virtualAddress": 73728,
+          "virtualSize": 2028,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".xdata",
+          "rawDataSize": 4096,
+          "readable": true,
+          "virtualAddress": 77824,
+          "virtualSize": 3860,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".bss",
+          "rawDataSize": 0,
+          "readable": true,
+          "virtualAddress": 81920,
+          "virtualSize": 416,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".idata",
+          "rawDataSize": 15872,
+          "readable": true,
+          "virtualAddress": 86016,
+          "virtualSize": 15376,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".CRT",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 102400,
+          "virtualSize": 96,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".tls",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 106496,
+          "virtualSize": 16,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".rsrc",
+          "rawDataSize": 35840,
+          "readable": true,
+          "virtualAddress": 110592,
+          "virtualSize": 35512,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".reloc",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 147456,
+          "virtualSize": 448,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/15",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 151552,
+          "virtualSize": 80,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/30",
+          "rawDataSize": 4096,
+          "readable": true,
+          "virtualAddress": 155648,
+          "virtualSize": 4061,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/42",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 159744,
+          "virtualSize": 175,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/56",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 163840,
+          "virtualSize": 164,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/68",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 167936,
+          "virtualSize": 72,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/81",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 172032,
+          "virtualSize": 165,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": "/92",
+          "rawDataSize": 512,
+          "readable": true,
+          "virtualAddress": 176128,
+          "virtualSize": 510,
+          "writable": false
+        }
+      ],
+      "subsystem": "windowsGui",
+      "subsystemCode": 2
+    },
+    "kind": "launch",
+    "launchPlan": {
+      "bottleExecutable": {
+        "architecture": "x86_64",
+        "bottleId": "gen-job-1791707208335-4",
+        "digest": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379",
+        "imageKind": "executable",
+        "inspectionSchemaVersion": "1",
+        "originalName": "tiled.exe",
+        "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix/drive_c/Program Files/Tiled/tiled.exe",
+        "sizeBytes": 256440,
+        "subsystem": "windowsGui"
+      },
+      "decisionTrace": [
+        "runtime provider wine-linux-x86-64-preview selected as wine",
+        "translator native selected",
+        "graphics backend wined3d selected",
+        "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+        "Bottle CJK font pinned by digest",
+        "bottle-executable sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379 pinned in place",
+        "inspection x86_64 windowsGui accepted"
+      ],
+      "graphics": {
+        "backend": "wined3d",
+        "version": "11.14"
+      },
+      "lifecycle": {
+        "terminationGraceMilliseconds": 3000,
+        "wineserver": {
+          "executable": "/usr/bin/wineserver",
+          "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix"
+        }
+      },
+      "process": {
+        "arguments": [
+          "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix/drive_c/Program Files/Tiled/tiled.exe",
+          "C:\\ForgeQA\\output\\original-edited.tmx",
+          "C:\\ForgeQA\\output\\original-edited.tmj"
+        ],
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "DISPLAY": ":0",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix",
+          "WINESERVER": "/usr/bin/wineserver",
+          "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+        },
+        "executable": "/usr/bin/wine",
+        "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4"
+      },
+      "requestId": "job-1791707362418-6",
+      "runtime": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "sandbox": {
+        "network": "deny",
+        "profile": "desktop"
+      },
+      "schemaVersion": "1",
+      "translator": {
+        "provider": "native"
+      }
+    },
+    "schemaVersion": "1",
+    "status": "succeeded",
+    "updatedAtMilliseconds": 1791707377667
+  },
+  "inputUnchanged": true,
+  "bothSavedFormatsRenderedAfterExplicitNewProcessReopen": true,
+  "installedFilesUnchanged": true,
+  "finalDataAndConfigurationPins": {
+    "system.reg": {
+      "sizeBytes": 3905139,
+      "sha256": "aff19aa667650df391204470ad171cd2b8508f900f130a5ea39773272f4800a4"
+    },
+    "user.reg": {
+      "sizeBytes": 116252,
+      "sha256": "f33329fd403e959d1c1485502192349c80de43b064ea853957e07584ce056fc0"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "5482de23731840432c2c1ca58fa3e3f9cf6bab1fb158a8b38684e3482daa4277"
+    },
+    "drive_c/Program Files/Tiled/LICENSE.BSD.txt": {
+      "sizeBytes": 1220,
+      "sha256": "2641e2c28b7ce04a29aa364979031500930324623b4770225109c14a02782ae2"
+    },
+    "drive_c/Program Files/Tiled/LICENSE.GPL.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "drive_c/Program Files/Tiled/libtiled.dll": {
+      "sizeBytes": 2706544,
+      "sha256": "67c75848eacf0d3fae7bae5879eb7af425e2d9a7323560a6ab192d6a524e7984"
+    },
+    "drive_c/Program Files/Tiled/COPYING.txt": {
+      "sizeBytes": 941,
+      "sha256": "e18e839116ec0da1d50bd71a942509b31a07d00bd25529e9f8340c43b83a636f"
+    },
+    "drive_c/Program Files/Tiled/tiled.exe": {
+      "sizeBytes": 256440,
+      "sha256": "4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379"
+    },
+    "drive_c/Program Files/Tiled/tilededitor.dll": {
+      "sizeBytes": 10226864,
+      "sha256": "1e21d6d6678aad305293c7998041eeaf8b6082425359331b1a8aa1efbba089c9"
+    },
+    "drive_c/ForgeQA/output/original-edited.tmx": {
+      "sizeBytes": 548,
+      "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8"
+    },
+    "drive_c/ForgeQA/output/original-edited.tmj": {
+      "sizeBytes": 947,
+      "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db"
+    },
+    "drive_c/ForgeQA/input/tiles.png": {
+      "sizeBytes": 130,
+      "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+    },
+    "drive_c/ForgeQA/input/中文地图.tmx": {
+      "sizeBytes": 515,
+      "sha256": "e7912231adff2b63233cf25728e3656e80cc64e8035b88db9f7d376548899882"
+    },
+    "drive_c/windows/Installer/{8C2EF357-E6B0-4603-B84B-B930ECB448A2}/tiled.exe": {
+      "sizeBytes": 244459,
+      "sha256": "50d73421a293ce194ee5d4a2214a0b7637a5115065ae4506f7103c2acc868151"
+    }
+  },
+  "checkpoint": {
+    "file": "after-alias-original-gui.json",
+    "sha256": "4c1c46f625bb1ff481fadabd2dbdb29ed60133dbafcebc5170aed32eb018a76a",
+    "coreJobs": 263,
+    "fullStoreRows": 84
+  },
+  "previousFullHistoryDataTrustPreserved": true,
+  "guiAccepted": true,
+  "published": false,
+  "marketLifecyclePassed": false,
+  "fullBundledLicenseClosureVerified": false,
+  "failures": [],
+  "unvalidated": [
+    "infinite maps",
+    "isometric or hexagonal maps",
+    "multiple layers",
+    "object layers",
+    "terrain or automapping",
+    "animation",
+    "projects/worlds",
+    "Python or other plugins beyond finite JSON export",
+    "game-engine integration",
+    "large maps",
+    "direct Chinese keyboard input",
+    "guest network download",
+    "fresh machine registration",
+    "configuration migration",
+    "cross-version upgrade",
+    "advanced editor features"
+  ],
+  "priorOriginalAndFailedMarketHistoryPreserved": true,
+  "recipeInstallerFilenameAliasOnly": true,
+  "date": "2026-10-11",
+  "version": "1.11.2",
+  "screenshots": {
+    "08-alias-original-loaded.png": {
+      "sizeBytes": 34928,
+      "sha256": "b9b94ea2d7211a75787c78ebd84409f5b27e5afd7c557c0a0802c5dec7764f52"
+    },
+    "09-alias-original-edited.png": {
+      "sizeBytes": 31074,
+      "sha256": "de73e7bdacf87f7830b1dffa91a5a5f8996fd35bad8fe7168e051b4767861bab"
+    },
+    "10-alias-original-saved.png": {
+      "sizeBytes": 31039,
+      "sha256": "6c24293f2702da95ff0803cc41596476a80608a9c809145643c1bf6b845fa618"
+    },
+    "11-alias-original-exported.png": {
+      "sizeBytes": 31050,
+      "sha256": "c4770445eff69a9084c87da68565306c7e797b81c4f6def0e10cc64fb7b23ac1"
+    },
+    "12-alias-original-json-reopened.png": {
+      "sizeBytes": 35273,
+      "sha256": "2b5627144d5d9f89438de0b5b2b395cc84c054f9ac686cdbd59ee69952bd6cbc"
+    },
+    "13-alias-original-native-reopened.png": {
+      "sizeBytes": 35055,
+      "sha256": "e07f178c4019cf031a5021343fe6a3512374b8d559ad0d4796ef58ecc9041ba4"
+    }
+  },
+  "notAcceptanceScreenshot": {
+    "07-alias-original-open.png": "Idle lock screen before normal authorized unlock; not application-open acceptance"
+  },
+  "limitations": [
+    "Only one small finite 4x4 orthogonal, one-layer map with a two-tile generated PNG has been verified in the original generation: Chinese-name input opening, eraser, two stamp operations, GUI Save As to ASCII TMX, JSON export and explicit fresh-process rendering of both saved formats.",
+    "Initial original GUI exported original-edited.json.tmj and initial filename check failed. This new alias generation explicitly exported original-edited.tmj with the JSON map filter; both saved formats and image references were independently verified after new-process reopen. Original raw proof remains unchanged.",
+    "Native launcher default environment and working directory retained; no Core, global context, font, program, DLL or runtime changes required. Online news/update indicator appeared; unattended or offline startup and external network behavior unverified.",
+    "Infinite, isometric/hexagonal or large maps, multiple/object layers, terrain/automapping, animation, projects/worlds, scripts/Python or plugins beyond the finite JSON export, engine integration, direct Chinese keyboard input and advanced editor features unverified.",
+    "Fixed main source declares GPL-2.0-or-later; installed COPYING, LICENSE.GPL and LICENSE.BSD match fixed source in raw bytes. Complete Qt/plugins/examples/icons and bundled licensing closure, OpenPGP, Authenticode and build reproducibility unverified.",
+    "Guest network download, fresh-machine registration, migration, cross-version upgrade and GUI update/rollback buttons unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart remain pending at this original proof freeze.",
+    "Initial role44 catalogue target used upstream plus sign and failed existing target-name validation; role45 uses a safe local target alias with unchanged package bytes/URL and a separate corrected receipt. Original signed role44 directory remains frozen.",
+    "First Store update on role45 failed catalogue/recipe filename agreement before any Core job. A fresh native definition uses the exact same local alias as catalogue and a new formal installed generation repeats actual GUI testing. Main executable, all 206 installed files and runtime bytes are unchanged; no matcher or source code relaxation."
+  ],
+  "outputsWrittenByApplicationGui": true,
+  "verificationHelperWroteOutputs": false
+}

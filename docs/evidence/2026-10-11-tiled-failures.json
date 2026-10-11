@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "tiled",
+  "date": "2026-10-11",
+  "failures": [
+    {
+      "phase": "original-launch-helper",
+      "error": "Used arguments instead of native argumentOverrides; rejected before creating a Core launch job.",
+      "resolution": "Separate corrected helper with native argumentOverrides; original helper retained."
+    },
+    {
+      "phase": "original-export-path",
+      "error": "GUI JSON filter appended .tmj to requested original-edited.json. Expected path assertion failed; no dependent reopen at that step.",
+      "actualName": "original-edited.json.tmj",
+      "resolution": "Read-only directory/content diagnostic and separate actual-name proof; no helper rename."
+    },
+    {
+      "phase": "host-helper-construction",
+      "error": "PowerShell quote parse failed; the dependent missing-helper call was still attempted and failed before guest execution.",
+      "dependentCallAttemptedDespiteFailure": true,
+      "guestMutation": false,
+      "resolution": "Saved Python builder; failed attempts preserved."
+    },
+    {
+      "phase": "candidate-v35-role44-runtime-activation",
+      "error": "Store rejected catalogue artifact target containing + with misleading invalid artifact size or SHA-256 message. TUF verification itself had passed.",
+      "target": "Tiled-1.11.2_Windows-10+_x86_64.msi",
+      "cause": "Existing valid_target_name character allowlist rejects +; digest and size are valid.",
+      "resolution": "Save/read-back full jobs and SQLite/trust checkpoint, stop Store normally, sign higher role45 with local target alias; do not reset/downgrade trust or rewrite role44."
+    },
+    {
+      "phase": "post-stop-summary-helper",
+      "error": "Assumed latestKnownTime dict; actual JSON string caused AttributeError after normal service stop.",
+      "resolution": "Read-only type-aware verification of inactive Store and exact trust bytes; no dependent mutation at failure."
+    },
+    {
+      "phase": "first-store-update-role45",
+      "jobId": "9ace0d36-dd89-4e5e-b53e-27df9a961ad9",
+      "state": "failed",
+      "error": "invalid reviewed backend input: catalogue differs from reviewed recipe or cache path",
+      "newCoreJobCreated": false,
+      "resolution": "Catalogue alias must equal installer.fileName in frozen reviewed recipe. New native alias definition installed and full GUI repeated; separately signed alias acceptance at role46, then independent update succeeded. Failed full SQLite row retained."
+    },
+    {
+      "phase": "alias-install-observe",
+      "error": "Helper wrongly required whole market snapshot equality despite expected canRollback false-to-true after a fresh second generation.",
+      "resolution": "Stop dependencies; separately assert exact new Tiled installed state and all old fields/generation records, then save actual checkpoint."
+    },
+    {
+      "phase": "prepared-market-helper-audit",
+      "error": "Unused market helper contained duplicate save_checkpoint(after-market-install) and copied unrelated original failures.",
+      "executedDuplicate": false,
+      "resolution": "Separate corrected helper compiled before market execution, one checkpoint call and market-specific accounting."
+    },
+    {
+      "phase": "read-only-path-lookups",
+      "error": "Some guessed helper paths and Windows literal glob searches failed.",
+      "resolution": "rg --files/-g and verified actual paths; no runtime mutation caused."
+    },
+    {
+      "phase": "public-evidence-screenshot-count",
+      "error": "Initial *.png glob included the synthetic tiles.png input image and failed expected 21-screenshot assertion after copying new screenshots.",
+      "dependentEvidenceAndLedgerWritten": false,
+      "guestMutation": false,
+      "resolution": "Separate numbered screenshots from input image and preserve initial helper; no screenshots deleted or overwritten."
+    }
+  ],
+  "oldOriginalAndAliasSourceGuiReceiptStageLabelsFrozen": true,
+  "role44InvalidCatalogueAndRole45CorrectionAndRole46AliasSignedHistoryRetained": true,
+  "trustNotDeletedResetOrDowngraded": true,
+  "fullPrivateCheckpointBodiesNotPublished": true,
+  "naturalIdleLockScreenshot07NotGuiAcceptance": true,
+  "normalExistingAccountLoginPerformed": true,
+  "authenticationLockOrPowerSettingsChanged": false,
+  "allDependencyGatesUniversallyRespectedClaimed": false,
+  "subsequentMutationGatesExplicitlyAsserted": true,
+  "screenshots": {
+    "01-original-open.png": {
+      "sha256": "8054a67c2b206cde8277237f0b192cbdd15a4d59c4c402090767d7dbcdf08fb0",
+      "sizeBytes": 189116
+    },
+    "02-original-edited.png": {
+      "sha256": "7cc7c8c206e76199752daf1a23c220e684328d7600bd9ff3a1dc44b92ce8fd5a",
+      "sizeBytes": 162737
+    },
+    "03-original-saved.png": {
+      "sha256": "dee9f8eb4c5093b9dbe71ad1211fc362ad3c389c5485a7f137c8e3105ac8ab78",
+      "sizeBytes": 162551
+    },
+    "04-original-exported.png": {
+      "sha256": "c8ce27ee979f62377410191aab9a81bcbcea8c45d45f6237aea1cfc86fa57723",
+      "sizeBytes": 162536
+    },
+    "05-original-json-reopened.png": {
+      "sha256": "45f366c69c58b122ed3f229a1103599c4479a54cb272a1c414dffb134a7578dd",
+      "sizeBytes": 193477
+    },
+    "06-original-native-reopened.png": {
+      "sha256": "538e08e50635deb35cbc54b4769cbce332f95bd0b9407c10deaaebe24ebe92c6",
+      "sizeBytes": 192950
+    },
+    "07-alias-original-open.png": {
+      "sha256": "8262f84198813f60421382dce12f416a96386c56a7fffc9292975892f29412d5",
+      "sizeBytes": 25126
+    },
+    "08-alias-original-loaded.png": {
+      "sha256": "b9b94ea2d7211a75787c78ebd84409f5b27e5afd7c557c0a0802c5dec7764f52",
+      "sizeBytes": 34928
+    },
+    "09-alias-original-edited.png": {
+      "sha256": "de73e7bdacf87f7830b1dffa91a5a5f8996fd35bad8fe7168e051b4767861bab",
+      "sizeBytes": 31074
+    },
+    "10-alias-original-saved.png": {
+      "sha256": "6c24293f2702da95ff0803cc41596476a80608a9c809145643c1bf6b845fa618",
+      "sizeBytes": 31039
+    },
+    "11-alias-original-exported.png": {
+      "sha256": "c4770445eff69a9084c87da68565306c7e797b81c4f6def0e10cc64fb7b23ac1",
+      "sizeBytes": 31050
+    },
+    "12-alias-original-json-reopened.png": {
+      "sha256": "2b5627144d5d9f89438de0b5b2b395cc84c054f9ac686cdbd59ee69952bd6cbc",
+      "sizeBytes": 35273
+    },
+    "13-alias-original-native-reopened.png": {
+      "sha256": "e07f178c4019cf031a5021343fe6a3512374b8d559ad0d4796ef58ecc9041ba4",
+      "sizeBytes": 35055
+    },
+    "14-market-loaded.png": {
+      "sha256": "b823c97a3cd590b8f85f38c312982e1ba59a30fa9328caaddde7d0c545e0b9bf",
+      "sizeBytes": 35020
+    },
+    "15-market-edited.png": {
+      "sha256": "9e180795fef827fb1a1142a0f99c2cbb995f6ad61dde88e4875f3f6730b673d8",
+      "sizeBytes": 31056
+    },
+    "16-market-saved-tmx.png": {
+      "sha256": "0e02eb3caec4e24b00402df65074d2da136ae861ed7678300ee82f8b756218d3",
+      "sizeBytes": 31050
+    },
+    "17-market-exported.png": {
+      "sha256": "8601afff74b648c88fd3af573adf7baee270bb9b81faa5b70245089202c330a5",
+      "sizeBytes": 31077
+    },
+    "18-market-new-process-json.png": {
+      "sha256": "1cf29366dcdb2edd8a004869f0ca631740ae76cac124bf1db7bcb574e4554223",
+      "sizeBytes": 35235
+    },
+    "19-market-new-process-tmx.png": {
+      "sha256": "b00d861825951065e78b3839ada9e53843d75e23868c8a26fe0acf104079a1e5",
+      "sizeBytes": 35060
+    },
+    "20-rollback-original-json.png": {
+      "sha256": "f635193ee4745ec06f3b480dc872367886c08151cc0065c922346c7ce6ceba43",
+      "sizeBytes": 35114
+    },
+    "21-rollback-original-tmx.png": {
+      "sha256": "987480760d3f082edbf0ea8fc8ba2fd12ea3a38d29b9342238ce2805e30d7d4b",
+      "sizeBytes": 35074
+    }
+  },
+  "limitations": [
+    "Only two distinct small Chinese-name 4x4 finite orthogonal one-layer input maps with two synthetic tiles were tested: erase one red tile, stamp green tiles at (1,1) and (2,2), GUI Save As TMX to ASCII path, GUI JSON export and explicit new-process rendering of both saved formats. Each input is 515 bytes; TMX output 548 bytes, JSON output 947 bytes. Original and market inputs remain exact bytes. The same original fixture was repeated in the alias formal generation; neither fixtures nor repeat generations count as applications.",
+    "Infinite/isometric/hexagonal maps, multiple/object layers, terrain/automapping, animations, projects/worlds, engine integration, large maps, broad export/plugin formats, direct Chinese keyboard input and advanced editor features were not verified.",
+    "A local filename alias replaces upstream + with plus in the signed catalogue target and newly frozen installer definition only. Official download URL and upstream filename retain +, identical package bytes/SHA/size are checked. No Core code, launcher environment, working directory, fonts, global runtime context, program/DLL or runtime bytes were changed. Original definition/generation and all original GUI/source/signature receipts remain historical bytes.",
+    "The official release API asset digest was null. HTTPS downloaded bytes have a self-computed SHA-256 and matching published API asset size; no upstream digest, Authenticode, OpenPGP or reproducible build verification is claimed. Version 1.11.2 is pinned, not claimed latest.",
+    "Main program GPL-2.0-or-later is declared in fixed source src/tiled/mainwindow.cpp. Installed COPYING.txt, LICENSE.GPL.txt and LICENSE.BSD.txt exactly match selected fixed source bytes (CRLF normalization count zero). Full Qt, plugins, example assets, engine formats and bundled licence closure was not verified.",
+    "Same-version update uses verified pre-cache and Store IPC; rollback uses Store IPC. GUI update/rollback buttons, guest network download, fresh-machine recipe registration, configuration migration, cross-version upgrade and unattended startup were not verified. Network deny in a launch plan is not claimed actual enforced network isolation.",
+    "Preservation checks cover all full Core jobs and Store SQLite rows/fields, all generation records, config/trust/guards, prior fixed acceptance data, three Tiled generations installed-file hashes and new fixed map/program/licence/config/registry data. They do not enumerate all filesystem data of all previously tested applications."
+  ]
+}

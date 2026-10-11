@@ -1,0 +1,759 @@
+{
+  "passed": true,
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "metadataVersion": 46,
+  "rootVersion": 1,
+  "rootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "selectedGeneration": "gen-job-1791707208335-4",
+  "coreJobs": 267,
+  "fullStoreRows": 86,
+  "outputs": {
+    "earlier-original": {
+      "generationId": "gen-job-1791706281896-1",
+      "fixture": {
+        "generationId": "gen-job-1791706281896-1",
+        "input": {
+          "file": "input/中文地图.tmx",
+          "sizeBytes": 515,
+          "sha256": "e7912231adff2b63233cf25728e3656e80cc64e8035b88db9f7d376548899882"
+        },
+        "tileImage": {
+          "file": "input/tiles.png",
+          "sizeBytes": 130,
+          "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+        },
+        "expectedEditedGids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expectedNative": "output/original-edited.tmx",
+        "expectedExport": "output/original-edited.json",
+        "helpersCreateInputOnly": true,
+        "outputDirectoryEmpty": true
+      },
+      "savedNative": {
+        "file": "output/original-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exportedJson": {
+        "file": "output/original-edited.json.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      },
+      "finalDataAndConfigurationPins": {
+        "system.reg": {
+          "sizeBytes": 3905141,
+          "sha256": "2342594fcd34e81963fc91d80a02b75bbd476fb2d3ebe8314d790fa5ad8e9e39"
+        },
+        "user.reg": {
+          "sizeBytes": 116252,
+          "sha256": "c8c7521c7f27cca60b45ff1f562bcd410f8894944d660944bdaff143dd6db679"
+        },
+        "userdef.reg": {
+          "sizeBytes": 4052,
+          "sha256": "9ca8a1a213c8286486f7a0e91256a17c170c06c15c06a0a4d6ceb3f2b4077f8f"
+        },
+        "drive_c/Program Files/Tiled/LICENSE.BSD.txt": {
+          "sizeBytes": 1220,
+          "sha256": "2641e2c28b7ce04a29aa364979031500930324623b4770225109c14a02782ae2"
+        },
+        "drive_c/Program Files/Tiled/LICENSE.GPL.txt": {
+          "sizeBytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        "drive_c/Program Files/Tiled/libtiled.dll": {
+          "sizeBytes": 2706544,
+          "sha256": "67c75848eacf0d3fae7bae5879eb7af425e2d9a7323560a6ab192d6a524e7984"
+        },
+        "drive_c/Program Files/Tiled/COPYING.txt": {
+          "sizeBytes": 941,
+          "sha256": "e18e839116ec0da1d50bd71a942509b31a07d00bd25529e9f8340c43b83a636f"
+        },
+        "drive_c/Program Files/Tiled/tiled.exe": {
+          "sizeBytes": 256440,
+          "sha256": "4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379"
+        },
+        "drive_c/Program Files/Tiled/tilededitor.dll": {
+          "sizeBytes": 10226864,
+          "sha256": "1e21d6d6678aad305293c7998041eeaf8b6082425359331b1a8aa1efbba089c9"
+        },
+        "drive_c/ForgeQA/output/original-edited.tmx": {
+          "sizeBytes": 548,
+          "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8"
+        },
+        "drive_c/ForgeQA/output/original-edited.json.tmj": {
+          "sizeBytes": 947,
+          "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db"
+        },
+        "drive_c/ForgeQA/input/tiles.png": {
+          "sizeBytes": 130,
+          "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+        },
+        "drive_c/ForgeQA/input/中文地图.tmx": {
+          "sizeBytes": 515,
+          "sha256": "e7912231adff2b63233cf25728e3656e80cc64e8035b88db9f7d376548899882"
+        },
+        "drive_c/windows/Installer/{8C2EF357-E6B0-4603-B84B-B930ECB448A2}/tiled.exe": {
+          "sizeBytes": 244459,
+          "sha256": "50d73421a293ce194ee5d4a2214a0b7637a5115065ae4506f7103c2acc868151"
+        }
+      }
+    },
+    "original": {
+      "generationId": "gen-job-1791707208335-4",
+      "fixture": {
+        "generationId": "gen-job-1791707208335-4",
+        "input": {
+          "file": "input/中文地图.tmx",
+          "sizeBytes": 515,
+          "sha256": "e7912231adff2b63233cf25728e3656e80cc64e8035b88db9f7d376548899882"
+        },
+        "tileImage": {
+          "file": "input/tiles.png",
+          "sizeBytes": 130,
+          "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+        },
+        "expectedEditedGids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expectedNative": "output/original-edited.tmx",
+        "expectedExport": "output/original-edited.tmj",
+        "helpersCreateInputOnly": true,
+        "outputDirectoryEmpty": true
+      },
+      "savedNative": {
+        "file": "output/original-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exportedJson": {
+        "file": "output/original-edited.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      },
+      "finalDataAndConfigurationPins": {
+        "system.reg": {
+          "sizeBytes": 3905139,
+          "sha256": "da3ccaf8f9a680c577b577254f68ed8dcff5ce1fc50cb7f4ede076b22c2f60ef"
+        },
+        "user.reg": {
+          "sizeBytes": 116252,
+          "sha256": "8e25f46b121ff3eade93a8a41ab5a2d30f9ae8c3ebb3bee4b4b14ff034b32219"
+        },
+        "userdef.reg": {
+          "sizeBytes": 4052,
+          "sha256": "5482de23731840432c2c1ca58fa3e3f9cf6bab1fb158a8b38684e3482daa4277"
+        },
+        "drive_c/Program Files/Tiled/LICENSE.BSD.txt": {
+          "sizeBytes": 1220,
+          "sha256": "2641e2c28b7ce04a29aa364979031500930324623b4770225109c14a02782ae2"
+        },
+        "drive_c/Program Files/Tiled/LICENSE.GPL.txt": {
+          "sizeBytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        "drive_c/Program Files/Tiled/libtiled.dll": {
+          "sizeBytes": 2706544,
+          "sha256": "67c75848eacf0d3fae7bae5879eb7af425e2d9a7323560a6ab192d6a524e7984"
+        },
+        "drive_c/Program Files/Tiled/COPYING.txt": {
+          "sizeBytes": 941,
+          "sha256": "e18e839116ec0da1d50bd71a942509b31a07d00bd25529e9f8340c43b83a636f"
+        },
+        "drive_c/Program Files/Tiled/tiled.exe": {
+          "sizeBytes": 256440,
+          "sha256": "4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379"
+        },
+        "drive_c/Program Files/Tiled/tilededitor.dll": {
+          "sizeBytes": 10226864,
+          "sha256": "1e21d6d6678aad305293c7998041eeaf8b6082425359331b1a8aa1efbba089c9"
+        },
+        "drive_c/ForgeQA/output/original-edited.tmx": {
+          "sizeBytes": 548,
+          "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8"
+        },
+        "drive_c/ForgeQA/output/original-edited.tmj": {
+          "sizeBytes": 947,
+          "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db"
+        },
+        "drive_c/ForgeQA/input/tiles.png": {
+          "sizeBytes": 130,
+          "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+        },
+        "drive_c/ForgeQA/input/中文地图.tmx": {
+          "sizeBytes": 515,
+          "sha256": "e7912231adff2b63233cf25728e3656e80cc64e8035b88db9f7d376548899882"
+        },
+        "drive_c/windows/Installer/{8C2EF357-E6B0-4603-B84B-B930ECB448A2}/tiled.exe": {
+          "sizeBytes": 244459,
+          "sha256": "50d73421a293ce194ee5d4a2214a0b7637a5115065ae4506f7103c2acc868151"
+        }
+      }
+    },
+    "market": {
+      "generationId": "gen-job-1791708025849-7",
+      "fixture": {
+        "generationId": "gen-job-1791708025849-7",
+        "input": {
+          "file": "input/市场地图.tmx",
+          "sizeBytes": 515,
+          "sha256": "aa4796c3bf4225d5ef63639af506cea69c94f57b053a3aaadbe54547111b3ff7"
+        },
+        "tileImage": {
+          "file": "input/tiles.png",
+          "sizeBytes": 130,
+          "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+        },
+        "expectedEditedGids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expectedNative": "output/market-edited.tmx",
+        "expectedExport": "output/market-edited.tmj",
+        "helpersCreateInputOnly": true,
+        "outputDirectoryEmpty": true
+      },
+      "savedNative": {
+        "file": "output/market-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exportedJson": {
+        "file": "output/market-edited.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      },
+      "finalDataAndConfigurationPins": {
+        "system.reg": {
+          "sizeBytes": 3905140,
+          "sha256": "419009bc8877f6769e116b4320133d9cba480cb42a8401c4c442319bccdc6cff"
+        },
+        "user.reg": {
+          "sizeBytes": 116252,
+          "sha256": "bd828bf2d7efad3aa19b69d8e2b02aa224c1e23c53de0f20b7bfe6dc901420d1"
+        },
+        "userdef.reg": {
+          "sizeBytes": 4052,
+          "sha256": "fdafa10eb46bae24bd0ffbb5f991f33016fda7024fd39821aff58702e652ab53"
+        },
+        "drive_c/Program Files/Tiled/LICENSE.BSD.txt": {
+          "sizeBytes": 1220,
+          "sha256": "2641e2c28b7ce04a29aa364979031500930324623b4770225109c14a02782ae2"
+        },
+        "drive_c/Program Files/Tiled/LICENSE.GPL.txt": {
+          "sizeBytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        "drive_c/Program Files/Tiled/libtiled.dll": {
+          "sizeBytes": 2706544,
+          "sha256": "67c75848eacf0d3fae7bae5879eb7af425e2d9a7323560a6ab192d6a524e7984"
+        },
+        "drive_c/Program Files/Tiled/COPYING.txt": {
+          "sizeBytes": 941,
+          "sha256": "e18e839116ec0da1d50bd71a942509b31a07d00bd25529e9f8340c43b83a636f"
+        },
+        "drive_c/Program Files/Tiled/tiled.exe": {
+          "sizeBytes": 256440,
+          "sha256": "4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379"
+        },
+        "drive_c/Program Files/Tiled/tilededitor.dll": {
+          "sizeBytes": 10226864,
+          "sha256": "1e21d6d6678aad305293c7998041eeaf8b6082425359331b1a8aa1efbba089c9"
+        },
+        "drive_c/ForgeQA/output/market-edited.tmj": {
+          "sizeBytes": 947,
+          "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db"
+        },
+        "drive_c/ForgeQA/output/market-edited.tmx": {
+          "sizeBytes": 548,
+          "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8"
+        },
+        "drive_c/ForgeQA/input/tiles.png": {
+          "sizeBytes": 130,
+          "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+        },
+        "drive_c/ForgeQA/input/市场地图.tmx": {
+          "sizeBytes": 515,
+          "sha256": "aa4796c3bf4225d5ef63639af506cea69c94f57b053a3aaadbe54547111b3ff7"
+        },
+        "drive_c/windows/Installer/{8C2EF357-E6B0-4603-B84B-B930ECB448A2}/tiled.exe": {
+          "sizeBytes": 244459,
+          "sha256": "50d73421a293ce194ee5d4a2214a0b7637a5115065ae4506f7103c2acc868151"
+        }
+      }
+    }
+  },
+  "marketInstall": {
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "tiled",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "66b01664-b14f-4aae-a95f-31e9583ad2f7",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791708025849-7",
+    "originalGenerationId": "gen-job-1791707208335-4",
+    "generationId": "gen-job-1791708025849-7",
+    "newGenerationDistinct": true,
+    "oldFullFieldsPreserved": true,
+    "fixture": {
+      "generationId": "gen-job-1791708025849-7",
+      "input": {
+        "file": "input/市场地图.tmx",
+        "sizeBytes": 515,
+        "sha256": "aa4796c3bf4225d5ef63639af506cea69c94f57b053a3aaadbe54547111b3ff7"
+      },
+      "tileImage": {
+        "file": "input/tiles.png",
+        "sizeBytes": 130,
+        "sha256": "1c893ecbeb8722689bcd779fb17d349e38abd638ddd3be2943d73dc2d93c60db"
+      },
+      "expectedEditedGids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expectedNative": "output/market-edited.tmx",
+      "expectedExport": "output/market-edited.tmj",
+      "helpersCreateInputOnly": true,
+      "outputDirectoryEmpty": true
+    },
+    "guiJobId": "job-1791708056482-8",
+    "guiStatus": "running",
+    "checkpoint": {
+      "file": "after-market-install.json",
+      "sha256": "36fc1e4f15cb58455e288ef2f614cb0117cd5833d009328dc0066a742ad60057",
+      "coreJobs": 264,
+      "fullStoreRows": 85
+    }
+  },
+  "rollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "tiled",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "e9211c0c-8c42-45ce-a38d-313bea31bf36",
+      "state": "succeeded"
+    },
+    "exactAliasFormalOriginalGenerationRestored": true,
+    "earlierOfficialFilenameGenerationPreserved": true,
+    "selectedGeneration": "gen-job-1791707208335-4",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 266,
+    "beforeRollbackStoreRows": 85,
+    "afterRollbackCoreJobs": 266,
+    "afterRollbackStoreRows": 86,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "a1520eb5daabcbda6ec9e40d99b4fb58d95833e22064889052ac2e49da14501a",
+      "coreJobs": 266,
+      "fullStoreRows": 86
+    }
+  },
+  "rollbackGuiJob": {
+    "id": "job-1791708240084-10",
+    "generationId": "gen-job-1791707208335-4",
+    "kind": "launch",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 102731,
+        "requestId": "job-1791708240084-10",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 17074,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791707208335-4/prefix",
+        "requestId": "job-1791708240084-10",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 17116,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791708240084-10",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "normalRestartFullFieldEqualityPassed": true,
+  "oldProcessIds": {
+    "compatforge.service": "91805",
+    "forge-store.service": "100962"
+  },
+  "newProcessIds": {
+    "compatforge.service": "102943",
+    "forge-store.service": "102958"
+  },
+  "checkpoints": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "589ef1c3b7e44a213d37adb0f7b8302b4687d3799baf7abd44c63bdf7bd6c05b",
+      "coreJobs": 267,
+      "fullStoreRows": 86
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "16b429f18485ec975e15a85c7038b295f8ec88d2c90739957682449ec30d7e68",
+      "coreJobs": 267,
+      "fullStoreRows": 86
+    }
+  },
+  "allOldGenerationFieldsAndFixedEvidenceDataPreserved": true,
+  "allAppFilesystemFilesTraversed": false,
+  "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+  "advancedMapAndEngineFeaturesAccepted": false,
+  "marketInputUnchanged": true,
+  "directChineseKeyboardInputAccepted": false,
+  "localInstallerFilenameAliasOnly": true,
+  "earlierCatalogueAndMarketFailureHistoryPreserved": true,
+  "noCoreCodeGlobalContextOrProgramRuntimeByteChange": true,
+  "stage": "after-normal-core-store-restart",
+  "currentReadOnlyVerification": {
+    "passed": true,
+    "coreJobs": 267,
+    "fullStoreRows": 86,
+    "allTerminal": true,
+    "completeHistoryFieldEquality": true,
+    "allGenerationsCoreConfigAndTrustPreserved": true,
+    "fixedAcceptanceDataAndNewAppRegistryPinsPreserved": true,
+    "allApplicationFilesystemFilesTraversed": false,
+    "acceptedDistinctWindowsApps": 34,
+    "rootVersion": 1,
+    "onlineRoles": 46,
+    "candidate": "candidate-v37",
+    "selectedGeneration": "gen-job-1791707208335-4",
+    "afterRestartCheckpointSha256": "16b429f18485ec975e15a85c7038b295f8ec88d2c90739957682449ec30d7e68",
+    "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+    "guiAndFreshReopenPassed": true,
+    "independentMarketGenerationPassed": true,
+    "sameVersionCachedUpdatePassed": true,
+    "exactRollbackPassed": true,
+    "normalServiceRestartPassed": true,
+    "advancedMapAndEngineFeaturesAccepted": false,
+    "marketInputUnchanged": true,
+    "directChineseKeyboardInputAccepted": false
+  },
+  "currentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-tiled-20261011.py",
+  "guestExecutionHelper": "L:/project/FOS/.transfer/rolling-guest-20261010.py",
+  "privateCheckpoint": "tiled-20261011/after-restart.json",
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two distinct small Chinese-name 4x4 finite orthogonal one-layer input maps with two synthetic tiles were tested: erase one red tile, stamp green tiles at (1,1) and (2,2), GUI Save As TMX to ASCII path, GUI JSON export and explicit new-process rendering of both saved formats. Each input is 515 bytes; TMX output 548 bytes, JSON output 947 bytes. Original and market inputs remain exact bytes. The same original fixture was repeated in the alias formal generation; neither fixtures nor repeat generations count as applications.",
+    "Infinite/isometric/hexagonal maps, multiple/object layers, terrain/automapping, animations, projects/worlds, engine integration, large maps, broad export/plugin formats, direct Chinese keyboard input and advanced editor features were not verified.",
+    "A local filename alias replaces upstream + with plus in the signed catalogue target and newly frozen installer definition only. Official download URL and upstream filename retain +, identical package bytes/SHA/size are checked. No Core code, launcher environment, working directory, fonts, global runtime context, program/DLL or runtime bytes were changed. Original definition/generation and all original GUI/source/signature receipts remain historical bytes.",
+    "The official release API asset digest was null. HTTPS downloaded bytes have a self-computed SHA-256 and matching published API asset size; no upstream digest, Authenticode, OpenPGP or reproducible build verification is claimed. Version 1.11.2 is pinned, not claimed latest.",
+    "Main program GPL-2.0-or-later is declared in fixed source src/tiled/mainwindow.cpp. Installed COPYING.txt, LICENSE.GPL.txt and LICENSE.BSD.txt exactly match selected fixed source bytes (CRLF normalization count zero). Full Qt, plugins, example assets, engine formats and bundled licence closure was not verified.",
+    "Same-version update uses verified pre-cache and Store IPC; rollback uses Store IPC. GUI update/rollback buttons, guest network download, fresh-machine recipe registration, configuration migration, cross-version upgrade and unattended startup were not verified. Network deny in a launch plan is not claimed actual enforced network isolation.",
+    "Preservation checks cover all full Core jobs and Store SQLite rows/fields, all generation records, config/trust/guards, prior fixed acceptance data, three Tiled generations installed-file hashes and new fixed map/program/licence/config/registry data. They do not enumerate all filesystem data of all previously tested applications."
+  ]
+}
