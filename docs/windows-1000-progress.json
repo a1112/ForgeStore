@@ -401,6 +401,17 @@
       "signedCatalogue": "catalogue/candidate-v42/tuf",
       "publication": "docs/evidence/2026-10-11-windjview-publication.json",
       "limitation": "Two110-byte Chinese-name single-page bitonal DjVu fixtures: render,90-degree rotation,BMP GUI export6206B,49152 exact pixels each,explicit fresh reopen and cached Store IPC update/exact original rollback/restart. Manual English installer/path and default-viewer No prompt required; installer contains Yandex resources/downloader entry, full behavior not proven absent. Upstream installer digest/full bundle license closure/advanced/color/multipage/direct Chinese input/network/new registration/migration/cross-version/unattended/GUI update buttons unverified. Third original GUI changed two registry files; before/after raw private backups and new pins preserved."
+    },
+    {
+      "id": "nomacs",
+      "version": "3.22.3",
+      "sha256": "26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b",
+      "sizeBytes": 47280128,
+      "license": "GPL-3.0-or-later (main program; full bundle closure unverified)",
+      "evidence": "docs/evidence/windows-nomacs-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v43/tuf",
+      "publication": "docs/evidence/2026-10-11-nomacs-publication.json",
+      "limitation": "Two small64x48 Chinese-name RGB PNG inputs: render,clockwise90-degree rotation,GUI ASCII-path PNG Save As591B/48x64,3072 exact RGB pixels each and explicit fresh reopen; Store IPC cached same-version update/exact original rollback/restart. Welcome default-viewer choice and first version notice manually handled. Advanced formats/features/direct Chinese keyboard input/network/new registration/migration/cross-version/unattended startup/GUI update buttons/full bundled-license closure unverified. Third original GUI changed two registry raw streams; private before/after backups/diffs and current pins kept."
     }
   ],
   "queue": [
@@ -573,12 +584,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next official sourced/licensed/fixed candidate;39/1000 Windows accepted,12 unresolved. WinDjView2.1 limited bitonal render/rotate/BMP-export/fresh-reopen and local lifecycle accepted, candidate-v42/root1/role51,306 full Core tasks/96 full Store SQLite rows. Strict guest helper rolling-current-state-windjview-20261011.py. Preserve frozen bytes and trust history. Interactive installer/default-viewer prompt and promotion resources limit unattended claims; third GUI registry variation separately pinned. Push awaits restored GitHub authentication; do not reissue device codes each round.",
+  "next": "Select next official sourced/licensed/fixed candidate;40/1000 Windows accepted,12 unresolved. nomacs3.22.3 limited RGB PNG render/clockwise-rotate/GUI PNG-save/fresh-reopen and local lifecycle accepted,candidate-v43/root1/role52,313 full Core tasks/98 full Store SQLite rows. Strict guest helper rolling-current-state-nomacs-20261011.py. Preserve frozen bytes and trust history. Welcome/version prompts limit unattended claims; third GUI registry variation separately pinned. Push awaits restored GitHub authentication; do not reissue device codes each round.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 39,
+    "acceptedLocalMarket": 40,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -586,25 +597,25 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v42/tuf",
-    "metadataVersion": 51,
-    "catalogueEntries": 41,
-    "acceptedDistinctWindowsApps": 39,
+    "signedCatalogue": "catalogue/candidate-v43/tuf",
+    "metadataVersion": 52,
+    "catalogueEntries": 42,
+    "acceptedDistinctWindowsApps": 40,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-windjview-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-nomacs-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-rednotebook-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-windjview-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-windjview-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-nomacs-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-11-windjview-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-11-nomacs-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-windjview.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-windjview-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-nomacs.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-nomacs-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

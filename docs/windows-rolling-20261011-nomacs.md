@@ -1,0 +1,19 @@
+# nomacs 3.22.3 Windows 有限流程验收（2026-10-11）
+
+本轮新增1款，累计40/1000；12个未解决候选保留。安装、原正式GUI验收、独立市场GUI验收及本地发布分别记录；合成图像不计应用。Ubuntu台账独立，仍两款通过，本轮没有切换测试VM。
+
+官方固定MSI为47280128字节，SHA-256 26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b，与官方GitHub API公开size/digest一致。固定tag3.22.3直接指向commit 0f7931cc8b4dc3ea9135101ad06c971809e19ba7；源包12151823字节，SHA-256 d4124636c89488775661a1b68d21b78b3a00b1c8820842786efe20fcdd086cc9，仅本地摘要，无上游源包摘要验证。不称最新版本、源码/二进制对应、Authenticode、OpenPGP或可复现构建。main.cpp主程序GPL-3.0-or-later，GPL3根文本和指定源成员逐字节保存；完整Qt/OpenCV/插件/翻译和捆绑许可闭包未核验。各代次全部91个安装文件固定摘要且跨代次相同；未找到COPYING/LICENSE命名安装文件，不声称安装COPYING与源码比较。
+
+原代次 gen-job-1791727644409-1，独立市场代次 gen-job-1791728211264-4，冻结定义 sha256:bbf00d08bc02eadd3c8afb74e8beb651bee658750a55f424ada301f5eb0e478a。使用既有托管MSI后端无界面安装成功。launcher为Program Files/nomacs/bin/nomacs.exe，无Core/程序、全局context、launcher环境/工作目录、字体/DLL/runtime修复。两个新安装首次Welcome保留默认English、取消Set As Default Viewer、保留图像元数据选项，版本更新提示正常Cancel。About实际3.22.3 x64。首次提示说明完整无人值守启动未验收；提示存在不代表客体联网安装链路验收。
+
+两份64x48、小型RGB PNG中文名输入分别160/164字节且原字节保持。分别正常GUI显示、顺时针90度旋转、GUI Save As到ASCII PNG路径，输出均591字节、48x64；独立标准库解析PNG CRC、IDAT与过滤行，全部3072个RGB像素各自与输入独立旋转结果精确相同。原/市场输出SHA分别 75d66635ac920f71b6a248ea3715a0fd83a053a6255234b82b46e6ecddf1def2、6824093e97d18e689ba2dc268f75244382c8bd1a125d9749a065e1e643f9369d。两个新正式进程显式按输出路径重开实际显示；精确回滚后原代次第三进程再次打开原输出。五次正式GUI使用File/Exit正常退出0并请求wineserver停止。CtrlQ实际打开Quick Launch，Esc后改File/Exit，不把它当退出快捷键或修复。noVNC工具栏曾遮挡Save As点击，折叠后通过真实对话框明确路径与PNG，未改程序输出。
+
+本地candidate-v43/root1/在线角色52；42目录项为40应用和2内部夹具，85实际签名目标、48公共目录文件。角色51及此前全部目录与原root字节保留，MPC-HC角色32原证明和33更正证明继续继承。Store IPC预缓存同版本更新成功；GUI更新/回滚按钮未验收。回滚前312 Core/97 Store完整检查点先保存并读回，再提交回滚；回滚后312/98旧字段、全部代次记录保持且精确恢复原代次。最后原GUI任务退出后313/98，正常重启Core/Store前后全字段精确同，现有运行时摘要、信任、防护、不自动息屏配置保持。
+
+第三次原GUI使system.reg/user.reg大小不变而原字节变化，309/20行真实私有差分已保存；回滚前实际原文和第三次后的原文均私有固定，原因未确定，不声称原字节跨第三GUI保持。程序、夹具、输出、市场数据及既有固定验收数据不变；当前新registry pins跨服务重启相同。私有完整CP nomacs-20261011/after-restart.json，SHA-256 461b341f2a235092ca5c6c1af37ed4f6d92c4e1066768ae19213ed34d8d6a3d1；当前只读助手rolling-current-state-nomacs-20261011.py必须通过严格SSH在客体执行，旧固定总数助手仅历史。检查覆盖固定验收数据、本轮91程序文件、有限输入输出和三份registry，非全部应用文件系统或全部配置文件遍历；保留完整SQLite行，不把最近64条IPC摘要当完整历史。
+
+最初转发命令参数顺序错误使outer Python执行无关旧--builder文件而立即IndentationError，未转发或安装；恢复helper的首个重复路径patch被工具拒绝，无变更，正确update后受控转发成功。依赖安装在转发成功后才提交。桌面登录初始输入过渡无实际填充，重新连接后核对新鲜输入框一次正常提交；认证和锁屏未改，密码和输入画面未入库。安装成功不先计GUI通过。所有历史失败、原21份source/gui/acceptance冻结字节和市场待执行标签保持，后续完成另记；982份旧immutable复核一致。
+
+仅上述两份小型RGB PNG有限流程通过。其他格式、透明/动画、RAW/多页、裁切缩放色彩变换、元数据、插件批处理同步、打印/全屏、大型或坏文件、直接中文键盘输入、高级功能、客体联网、新机器注册、迁移、跨版本升级及完整无人值守未验收。签名私钥、密码、凭据及完整私有CP不入库；下载临时签名查询串没有发布。GitHub认证恢复仍待用户完成，本轮没有新发设备码或再次推送尝试，累积提交待普通推送。独立证据审查与实际Git索引/提交字节核验另记。
+
+Git 实际暂存前检查发现四份固定上游原尾空白，COPYRIGHT另有末尾空行；仅四条精确.gitattributes路径增加-blank-at-eol，该COPYRIGHT另加-blank-at-eof，源文件原字节保持。初始prospective清单作为先前审查阶段保留，v2清单及增量独立审查用于最终stage；没有声称发生真实stage失败。

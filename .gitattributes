@@ -118,3 +118,16 @@ docs/evidence/2026-10-11-windjview/fixed-source-DjVuView.cpp -text whitespace=cr
 docs/evidence/2026-10-11-windjview/fixed-source-WinDjView.cpp -text whitespace=cr-at-eol,-blank-at-eol
 docs/evidence/2026-10-11-windjview/fixed-source-WinDjView.rc -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 docs/evidence/2026-10-11-windjview/installer-static-list-v2.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# nomacs fixed upstream and evidence bytes.
+catalogue/candidate-v43/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-nomacs-20261011.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-nomacs*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-nomacs/* -text whitespace=cr-at-eol
+docs/windows-rolling-20261011-nomacs.md -text whitespace=cr-at-eol
+
+# Preserve exact nomacs upstream whitespace observed before staging.
+docs/evidence/2026-10-11-nomacs/fixed-source-COPYRIGHT -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/evidence/2026-10-11-nomacs/fixed-source-README.md -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-11-nomacs/fixed-source-license-README.md -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-11-nomacs/fixed-source-nomacs-setup.wxs -text whitespace=cr-at-eol,-blank-at-eol

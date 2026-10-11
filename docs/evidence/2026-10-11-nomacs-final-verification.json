@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "phase": "before-independent-review-and-git-stage",
+  "applicationId": "nomacs",
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "currentStateVerified": {
+    "verified": true,
+    "coreJobs": 313,
+    "fullStoreRows": 98,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "root": 1,
+      "targets": 52,
+      "timestamp": 52,
+      "snapshot": 52
+    },
+    "latestKnownTime": "2026-10-11T14:21:40.968049282Z",
+    "selectedNomacsGeneration": "gen-job-1791727644409-1",
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "checkpoint": {
+      "file": "nomacs-20261011/after-restart.json",
+      "sha256": "461b341f2a235092ca5c6c1af37ed4f6d92c4e1066768ae19213ed34d8d6a3d1"
+    }
+  },
+  "oldImmutableFilesMatched": 982,
+  "newOriginalFrozenFilesMatched": 21,
+  "signedMetadataPack": {
+    "metadataVersion": 52,
+    "rootVersion": 1,
+    "entries": 42,
+    "actualTargets": 85,
+    "files": 48,
+    "archiveSha256": "d01a4cef4f87035e3fae3f7fe0281bc7778d4d9fa90aff6f3d0a0ce9f6d0d37b",
+    "receiptSha256": "1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af",
+    "allOldSignedTargetPinsPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true
+  },
+  "sourceSha256": "153ff84ea09e5afa71bce4c89cfc408a9fbfe2e19694882f00534f01694befce",
+  "publicationSha256": "ee18608a3fdb3b5b11b128c0ddbc23446f941c41bb0d9ca09c1f9c2602be5ce3",
+  "independentReviewPendingAtFreeze": true,
+  "gitIndexAndCommitAuditPendingAtFreeze": true,
+  "remotePushPendingAuthentication": true
+}

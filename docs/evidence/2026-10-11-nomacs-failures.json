@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "nomacs",
+  "transferRunnerArgumentOrderFailure": {
+    "passed": false,
+    "stage": "guest-artifact-transfer",
+    "reason": "--builder passed before required script/output positional arguments; runner read an existing unrelated local --builder file and overwrote intended helper with empty stdout, outer Python rejected its first line with IndentationError",
+    "installationSubmitted": false,
+    "guestMutation": false,
+    "recovery": "restore intended helper, put --builder after positional arguments, check transfer success before installation"
+  },
+  "patchRestoreFailure": "First restore patch used delete/add on identical path and was rejected without mutation; update patch succeeded before controlled transfer retry.",
+  "loginInputTransition": "Initial remote key input did not populate masked password field. Reconnected browser then used fresh visible field and one normal submission; no authentication or locking settings modified, no password evidence published. Later natural locking normally unlocked.",
+  "guiShortcutMismatch": "CtrlQ triggered Quick Launch (documented menu) not Exit. Esc closed it; File/Exit completed normal exit. No shortcut repair claimed.",
+  "guiToolbarOverlay": "Collapsed noVNC toolbar after Save As click opened toolbar; actual CtrlShiftS opened dialog and verified path/PNG selected. No application repair claimed.",
+  "transientSnapshots": "Immediate postQuit frame still showed window before actual desktop; task terminal checked before new launch.",
+  "failuresPreserved": true,
+  "noPrivateCompleteCheckpointOrCredentialsPublished": true
+}

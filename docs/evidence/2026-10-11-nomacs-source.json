@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "nomacs",
+  "fixedVersion": "3.22.3",
+  "officialSite": "https://nomacs.org/",
+  "fixedRelease": "https://github.com/nomacs/nomacs/releases/tag/3.22.3",
+  "fixedCommit": "0f7931cc8b4dc3ea9135101ad06c971809e19ba7",
+  "installer": {
+    "file": "nomacs-setup-x64.msi",
+    "url": "https://github.com/nomacs/nomacs/releases/download/3.22.3/nomacs-setup-x64.msi",
+    "sizeBytes": 47280128,
+    "sha256": "26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b",
+    "officialApiSizeAndDigestMatched": true
+  },
+  "sourceArchive": {
+    "file": "nomacs-0f7931cc8b4dc3ea9135101ad06c971809e19ba7.tar.gz",
+    "url": "https://codeload.github.com/nomacs/nomacs/tar.gz/0f7931cc8b4dc3ea9135101ad06c971809e19ba7",
+    "sizeBytes": 12151823,
+    "sha256": "d4124636c89488775661a1b68d21b78b3a00b1c8820842786efe20fcdd086cc9",
+    "upstreamPublishedDigestVerified": false
+  },
+  "sourceMembers": {
+    "LICENSE": {
+      "reference": "2026-10-11-nomacs/fixed-source-LICENSE",
+      "sizeBytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "README.md": {
+      "reference": "2026-10-11-nomacs/fixed-source-README.md",
+      "sizeBytes": 12745,
+      "sha256": "fc59554afb6d35dc41f256365921265e108dca62dac3313157fe0d27315d271c"
+    },
+    "ImageLounge/src/main.cpp": {
+      "reference": "2026-10-11-nomacs/fixed-source-main.cpp",
+      "sizeBytes": 14255,
+      "sha256": "de2bb610ae311f5e20395a2dd42cc149d057b6312c8cbb95922ad6356635be55"
+    },
+    "ImageLounge/license/COPYRIGHT": {
+      "reference": "2026-10-11-nomacs/fixed-source-COPYRIGHT",
+      "sizeBytes": 869,
+      "sha256": "9e4c4d92a11e3acacda76aa94052ded71ba9da493e7543700bc601a30b98afc9"
+    },
+    "ImageLounge/license/README.md": {
+      "reference": "2026-10-11-nomacs/fixed-source-license-README.md",
+      "sizeBytes": 2125,
+      "sha256": "142ab1e1996166f6e264ec4773a7f1f6ee8e3eea043b73cffebceac8c090082b"
+    },
+    "installer/nomacs-setup.wxs": {
+      "reference": "2026-10-11-nomacs/fixed-source-nomacs-setup.wxs",
+      "sizeBytes": 3684,
+      "sha256": "392e1fed6a81c0efea4a633039fc1d499d9d55f4459e0c06467e2a708e93941a"
+    }
+  },
+  "mainProgramLicense": "GPL-3.0-or-later",
+  "installedLicenseNamedFiles": [],
+  "installedCopyingCompared": false,
+  "allBundledLicensesVerified": false,
+  "authenticodeVerified": false,
+  "openPgpVerified": false,
+  "binarySourceCorrespondenceVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerFormat": "MSI",
+  "managedMsiStructureInspectionPassed": true,
+  "installerArgumentsNotShellWrapper": {
+    "fileName": "nomacs-setup-x64.msi",
+    "msi": {
+      "architecture": "x86_64",
+      "handler": {
+        "action": "install",
+        "kind": "msiexec",
+        "properties": {},
+        "reboot": "suppress",
+        "ui": "none"
+      },
+      "maximumRuntimeMilliseconds": 300000,
+      "sizeBytes": 47280128
+    },
+    "sha256": "26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b"
+  },
+  "notClaimedLatest": true,
+  "ephemeralDownloadQueryPublished": false
+}

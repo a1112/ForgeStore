@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 52,
+  "rootVersion": 1,
+  "entries": 42,
+  "coreJobs": 309,
+  "fullStoreRows": 96,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-nomacs-20261011.acceptance.json#nomacs",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b",
+        "size": 47280128,
+        "target": "nomacs-setup-x64.msi",
+        "url": "https://github.com/nomacs/nomacs/releases/download/3.22.3/nomacs-setup-x64.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "nomacs"
+    },
+    "id": "nomacs",
+    "license": "GPL-3.0-or-later (main program; full bundle closure unverified)",
+    "name": {
+      "en": "nomacs",
+      "zhCN": "nomacs 图像查看器"
+    },
+    "origin": "https://nomacs.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "TU Wien",
+    "summary": {
+      "en": "Limited small RGB PNG render, clockwise rotation, GUI Save As and fresh reopen tested. Startup prompts and advanced features unverified.",
+      "zhCN": "有限小型RGB PNG显示、顺时针旋转、另存为和新进程重开已测；首次提示需处理，高级功能未验收"
+    },
+    "version": "3.22.3"
+  },
+  "installed": {
+    "appId": "nomacs",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "3.22.3"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "45de03f8c283ed728647bfae29450d3a6dbf5bf69327627c4461720b224547fe",
+    "coreJobs": 309,
+    "fullStoreRows": 96
+  },
+  "independentMarketGenerationPending": true
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "nomacs",
+  "version": "3.22.3",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 40,
+  "signedCatalogue": "catalogue/candidate-v43/tuf",
+  "metadataVersion": 52,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 42,
+  "excludedFixtures": 2,
+  "signedActualTargets": 85,
+  "publicCatalogueFiles": 48,
+  "sourceEvidence": {
+    "reference": "2026-10-11-nomacs-source.json",
+    "sha256": "153ff84ea09e5afa71bce4c89cfc408a9fbfe2e19694882f00534f01694befce"
+  },
+  "originalAcceptance": {
+    "reference": "windows-nomacs-20261011.acceptance.json",
+    "sha256": "1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af"
+  },
+  "originalGeneration": "gen-job-1791727644409-1",
+  "marketGeneration": "gen-job-1791728211264-4",
+  "definitionDigest": "sha256:bbf00d08bc02eadd3c8afb74e8beb651bee658750a55f424ada301f5eb0e478a",
+  "originalSave": {
+    "generationId": "gen-job-1791727644409-1",
+    "inputRelativePath": "NomacsTests/原始彩色.png",
+    "inputPin": {
+      "sizeBytes": 160,
+      "sha256": "777aee21cebbf58af183adf2e4ad7053b9cb06ca2bcc758d3fcb1be4e29dca5e"
+    },
+    "outputRelativePath": "NomacsTests/original-rotated.png",
+    "outputPin": {
+      "sizeBytes": 591,
+      "sha256": "75d66635ac920f71b6a248ea3715a0fd83a053a6255234b82b46e6ecddf1def2"
+    },
+    "width": 48,
+    "height": 64,
+    "decodedRgbSha256": "a750ea5758c3702d52bb60f62b5b32085bb0c1df22d8b9c685d47ea8c96abf4f",
+    "pixelCount": 3072,
+    "allRgbPixelsMatchIndependentClockwiseRotation": true,
+    "inputUnchanged": true
+  },
+  "marketSave": {
+    "generationId": "gen-job-1791728211264-4",
+    "inputRelativePath": "NomacsTests/市场彩色.png",
+    "inputPin": {
+      "sizeBytes": 164,
+      "sha256": "9b3f423a0ada2f31f50e6f275e33b812a0592e05346e5146f1db74056229d20f"
+    },
+    "outputRelativePath": "NomacsTests/market-rotated.png",
+    "outputPin": {
+      "sizeBytes": 591,
+      "sha256": "6824093e97d18e689ba2dc268f75244382c8bd1a125d9749a065e1e643f9369d"
+    },
+    "width": 48,
+    "height": 64,
+    "decodedRgbSha256": "5ec5c4ef45db07b513b59c387dccf491de5c750687540c407149bfa921de646a",
+    "pixelCount": 3072,
+    "allRgbPixelsMatchIndependentClockwiseRotation": true,
+    "inputUnchanged": true
+  },
+  "fiveNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "action": "update",
+    "appId": "nomacs",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "cb8c0472-9adf-40eb-9ace-7c8f36540084",
+    "state": "succeeded"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "nomacs",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "9b12967d-f18f-4cef-863d-cb2194a7de57",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791727644409-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 312,
+    "beforeRollbackStoreRows": 97,
+    "afterRollbackCoreJobs": 312,
+    "afterRollbackStoreRows": 98,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "d7df3e2358b31481213b7765bd51b57ec5b538b3b2b8f9e4ac6d34be380119c8",
+      "coreJobs": 312,
+      "fullStoreRows": 98
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 313,
+  "fullStoreRows": 98,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationsAndFixedEvidenceDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalRegistryRawBytesChanged": true,
+  "registryChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3924276,
+        "sha256": "701c1eeb92b19de187a23ad060afacd0ef4d16f38a7f94fda712d4a6c19fc291"
+      },
+      "after": {
+        "sizeBytes": 3924276,
+        "sha256": "a8f87c5ae77420ef33cb590c38b92e9157cde24d74722e81f13c424e959785c1"
+      },
+      "changedLineCount": 309,
+      "privateDiffPreserved": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 154625,
+        "sha256": "5898d64148ad95076f3ab01f58ec8a8fe4bc6cab6f241094588f36d773c9f9ee"
+      },
+      "after": {
+        "sizeBytes": 154625,
+        "sha256": "ed9e16e845c3653bcad4df442bc176cf6d5c77a18024ca7ce3f38527769496f4"
+      },
+      "changedLineCount": 20,
+      "privateDiffPreserved": true
+    }
+  },
+  "currentRegistryAndDataMatchedAcrossRestart": true,
+  "originalHistoricalFrozenFiles": 21,
+  "oldImmutableFilesMatched": 982,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "Only one small 64x48 RGB PNG fixture so far: Chinese-name input opened, clockwise 90-degree rotation, GUI Save As to ASCII PNG path and explicit fresh formal-process reopen. All3072 RGB pixels of48x64 output match independent rotation. Synthetic fixture is not another application.",
+    "First process Welcome required selecting language and declining Set As Default Viewer; image metadata checkbox retained. Version notification was cancelled. Untested unattended startup and network download; presence of notification is not network-delivery acceptance. CtrlQ opens Quick Launch rather than Exit; actual tested normal exit is File/Exit.",
+    "Main program fixed main.cpp GPL-3.0-or-later and root GPL3 text. Official installer matches official GitHub asset size/digest. Fixed source commit archive has only locally computed SHA; source upstream digest, installed COPYING comparison, complete Qt/OpenCV/plugins/translations license closure, Authenticode/OpenPGP, binary/source correspondence and reproducible build unverified. All91 installed files pinned, no LICENSE/COPYING-named installed file observed.",
+    "Only RGB PNG tested. Other formats/alpha/animation, raw image and multipage support, crop/resize/color operations, metadata changes, plugin/batch/synchronization, print/fullscreen, large/corrupt files, direct Chinese keyboard input, all advanced features, fresh registration, configuration migration and cross-version upgrade unverified.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Both small independent RGB PNG fixtures passed finite flow. Five formal GUI tasks normally File/Exit exited0 and requested wineserver stop; pre-cached same-version update and exact rollback via Store IPC and normal Core/Store restart passed. GUI update/rollback buttons not accepted.",
+    "Third original process changed system.reg/user.reg raw bytes while sizes remained equal. Actual prior and subsequent raw bytes and309/20 unified-diff lines saved privately; cause unestablished. Current pins verified across restart; old original proof and pending-market phase labels not rewritten."
+  ],
+  "remotePushed": false,
+  "githubAuthenticationStillPendingFromPriorRound": true,
+  "newDeviceCodeIssued": false,
+  "advancedViewerAccepted": false,
+  "unattendedStartupAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false
+}
