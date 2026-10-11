@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "artha",
+  "version": "1.0.3.0",
+  "stage": "native-core-repair-installed-formal-gui-pending",
+  "countsAsCompleted": false,
+  "acceptedDistinctWindowsAppsAtThisStage": 29,
+  "coreChange": {
+    "commit": "93650d1404df1c546eb689344e921c95bd041fad",
+    "branch": "fix/managed-launcher-working-directory",
+    "baseCommit": "cfc9b6cb9498844f4098cbe786694515568a3bc7",
+    "sourceArchiveSha256": "91f786cd32e8bd445edbfad383ee47fb682c54be02459daf779627f88e89c1da",
+    "binarySha256": "4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818",
+    "binarySizeBytes": 6942792,
+    "launcherField": "workingDirectory",
+    "semantics": "relative to selected frozen generation prefix/drive_c; omitted fields retain runtime/default cwd and serialized old definition bytes",
+    "rejected": "absolute, traversal, Windows prefix/separator, empty/dot components, ASCII control, missing/non-directory and ancestor symlink/reparse targets",
+    "jobScopedContextOnly": true,
+    "globalDaemonContextChanged": false,
+    "runtimeOrProgramPinChanged": false,
+    "sameUserConcurrentRenameAtomicallyPrevented": false,
+    "priorProviderV2ChangesDeployed": false
+  },
+  "verification": {
+    "linuxCommands": [
+      {
+        "command": [
+          "cargo",
+          "test",
+          "-p",
+          "compatforge-service",
+          "-p",
+          "compatforge-orchestrator",
+          "-p",
+          "compatforge-process",
+          "--locked",
+          "--offline",
+          "--config",
+          "source.crates-io.replace-with=\"msi-vendored\"",
+          "--config",
+          "source.msi-vendored.directory=\"/srv/forge-apps-fast/compatforge-msi-work/msi-vendor-20261003-v10\""
+        ],
+        "exitCode": 0,
+        "tail": [
+          "running 0 tests",
+          "",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "",
+          "   Doc-tests compatforge_process",
+          "",
+          "running 0 tests",
+          "",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "",
+          "   Doc-tests compatforge_service",
+          "",
+          "running 0 tests",
+          "",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          ""
+        ],
+        "testResults": [
+          "test result: ok. 37 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s",
+          "test result: ok. 114 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.22s",
+          "test result: ok. 14 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.02s",
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 96 filtered out; finished in 0.00s",
+          "test result: ok. 95 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 1.41s",
+          "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+        ],
+        "log": "/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-0-20261011.log"
+      },
+      {
+        "command": [
+          "cargo",
+          "clippy",
+          "-p",
+          "compatforge-service",
+          "--all-targets",
+          "--locked",
+          "--offline",
+          "--config",
+          "source.crates-io.replace-with=\"msi-vendored\"",
+          "--config",
+          "source.msi-vendored.directory=\"/srv/forge-apps-fast/compatforge-msi-work/msi-vendor-20261003-v10\"",
+          "--",
+          "-D",
+          "warnings"
+        ],
+        "exitCode": 0,
+        "tail": [
+          "    Checking compatforge-domain v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-domain)",
+          "    Checking compatforge-storage v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-storage)",
+          "    Checking compatforge-inspect v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-inspect)",
+          "    Checking compatforge-debug v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-debug)",
+          "    Checking compatforge-runtime v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-runtime)",
+          "    Checking compatforge-guest-artifact v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-guest-artifact)",
+          "    Checking compatforge-provider-linux v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-provider-linux)",
+          "    Checking compatforge-process v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-process)",
+          "    Checking compatforge-orchestrator v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-orchestrator)",
+          "    Checking compatforge-provider-macos v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-provider-macos)",
+          "    Checking compatforge-bottle v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-bottle)",
+          "    Checking compatforge-service v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-service)",
+          "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.98s"
+        ],
+        "testResults": [],
+        "log": "/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-1-20261011.log"
+      },
+      {
+        "command": [
+          "cargo",
+          "build",
+          "-p",
+          "compatforge-cli",
+          "--release",
+          "--locked",
+          "--offline",
+          "--config",
+          "source.crates-io.replace-with=\"msi-vendored\"",
+          "--config",
+          "source.msi-vendored.directory=\"/srv/forge-apps-fast/compatforge-msi-work/msi-vendor-20261003-v10\""
+        ],
+        "exitCode": 0,
+        "tail": [
+          "   Compiling compatforge-domain v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-domain)",
+          "   Compiling compatforge-storage v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-storage)",
+          "   Compiling compatforge-inspect v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-inspect)",
+          "   Compiling compatforge-debug v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-debug)",
+          "   Compiling compatforge-runtime v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-runtime)",
+          "   Compiling compatforge-guest-artifact v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-guest-artifact)",
+          "   Compiling compatforge-orchestrator v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-orchestrator)",
+          "   Compiling compatforge-process v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-process)",
+          "   Compiling compatforge-provider-linux v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-provider-linux)",
+          "   Compiling compatforge-provider-macos v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-provider-macos)",
+          "   Compiling compatforge-bottle v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-bottle)",
+          "   Compiling compatforge-service v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-service)",
+          "   Compiling compatforge-capability v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/crates/compatforge-capability)",
+          "   Compiling compatforge-cli v0.12.0 (/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-20261011/apps/cli)",
+          "    Finished `release` profile [optimized] target(s) in 27.48s"
+        ],
+        "testResults": [],
+        "log": "/srv/forge-apps-fast/compatforge-msi-work/artha-core-cwd-reviewed-2-20261011.log"
+      }
+    ],
+    "nodeEcmaScriptSchemaCases": 24,
+    "independentCodeReview": {
+      "schemaVersion": "1",
+      "reviewer": "/root/review_launcher_cwd",
+      "reviewedAtUtc": "2026-10-11T04:49:37.828916+00:00",
+      "workspace": "L:\\project\\FOS\\.worktrees\\compatforge-msi-install",
+      "base": "cfc9b6cb9498844f4098cbe786694515568a3bc7",
+      "reviewedRevision": "uncommitted working tree with pinned file bytes",
+      "mode": "read-only independent static code review; no shared cargo, VM or GUI operations",
+      "automatedChecks": 56,
+      "automatedChecksPassed": true,
+      "staticInvariantsReviewed": 22,
+      "totalChecks": 78,
+      "ecmaScriptSchemaCases": {
+        "command": "C:/Program Files/nodejs/node.exe tests/launcher-working-directory-schema.cjs",
+        "independentlyExecuted": true,
+        "result": "24 launcher directory schema cases passed"
+      },
+      "parentProvidedSourceArchive": {
+        "sha256": "91f786cd32e8bd445edbfad383ee47fb682c54be02459daf779627f88e89c1da",
+        "files": 501,
+        "independentlyVerifiedArchive": false
+      },
+      "critical": [],
+      "important": [],
+      "minor": [],
+      "resolvedDuringReview": [
+        {
+          "severity": "minor",
+          "file": "schemas/application.schema.json",
+          "line": 97,
+          "problem": "Original lookahead dot did not cross newlines: unsafe suffixes after newline passed schema while Rust rejected them.",
+          "reproducer": [
+            "Artha\n/../bin",
+            "Artha\n/bin\u0000",
+            "Artha\n/bin:other"
+          ],
+          "resolution": "Schema lookaheads now use [\\s\\S] and reject all ASCII controls; Rust rejects ASCII controls and tests add newline/tab/DEL cases.",
+          "status": "fixed in reviewed bytes; all 30 independent schema cases match expected behavior"
+        }
+      ],
+      "assessment": "Ready for controlled deployment after the separately executing Linux regressions/build and complete checkpoint gates pass; no code-review blocking findings remain.",
+      "boundaries": [
+        "Reported local service test results are parent-provided and were not independently rerun here.",
+        "No actual Artha managed GUI, lifecycle or market publication acceptance is inferred from these static checks.",
+        "Windows reparse handling was reviewed statically through reused lifecycle check_path; Unix symlink tests do not establish Windows junction execution coverage.",
+        "No atomic defense against malicious concurrent same-user filesystem renames is claimed.",
+        "JSON schema length is characters and Rust text limit is UTF-8 bytes, consistent with the repository existing text-field convention; Core remains authoritative."
+      ],
+      "pattern": "^(?![\\s\\S]*[\\\\:\\u0000-\\u001f\\u007f])(?![\\s\\S]*(?:^|/)\\.\\.?(?:/|$))[^/]+(?:/[^/]+)*$",
+      "schemaCases": [
+        {
+          "path": "Artha/bin",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "Program Files/Example",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "Ubuntu/bin",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "foo0/bar",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "resources",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "foo/bar",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "utf8-中/bin",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "a/b/c",
+          "expected": true,
+          "schemaPatternAccepts": true
+        },
+        {
+          "path": "",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": ".",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "..",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "../other",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha/../other",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha/./bin",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha//bin",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha/bin/",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "/tmp",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "C:/Artha",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "C:\\Artha",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha\\bin",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha/\u0000bin",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha/bin\n",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha\n/../bin",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha\n/bin\u0000",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha\n/bin\\other",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha\n/bin:other",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha/bin\t",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "Artha/bin",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "a\r/b",
+          "expected": false,
+          "schemaPatternAccepts": false
+        },
+        {
+          "path": "a/\u001fb",
+          "expected": false,
+          "schemaPatternAccepts": false
+        }
+      ],
+      "invariants": [
+        "Launcher directory is optional, serde default None and omitted on legacy serialization.",
+        "Model validates relative paths and rejects traversal, empty/dot components, backslash, colon, NUL and ASCII controls.",
+        "Launch resolution reads generation.definition rather than the mutable application registry.",
+        "Directory base is selected generation bottle prefix/drive_c.",
+        "Lifecycle full state validation checks generation identity and frozen definition digest before selection.",
+        "Directory lexical containment and all ancestor symlink/reparse-point checks occur before staging completion and each launch.",
+        "Missing targets and file targets are rejected; ready launcher digest calculation calls the directory validator.",
+        "Directory is never accepted from JobRequest argument or environment overrides.",
+        "Install resolution sets directory None; MSI installation route remains unchanged.",
+        "None returns original cloned context without modifications, retaining legacy runtime/default working directory.",
+        "Only in-memory cloned binding for installed pack identity gets changed; daemon context is never written.",
+        "InstalledRuntime compares against original self.config, retaining original installed binding and digest.",
+        "Prepared launch is built and authorized with the same scoped launch_config fingerprint.",
+        "Directory is rechecked after record persistence and immediately before authorization.",
+        "Bottle executable mode and installed launcher SHA-256 continue through preparation, authorization and process supervision.",
+        "Existing process supervisor rechecks working directory ancestors before current_dir; same-user concurrent rename is not claimed atomic.",
+        "Tests cover frozen definition despite registered launcher change, no installer override, no global context mutation and program-digest replacement rejection.",
+        "Filesystem tests cover missing/file directory targets and inside/outside/ancestor Unix symlinks.",
+        "Legacy serialization and digest tests verify omitted field and unchanged contextual plan behavior.",
+        "JSON schema adds optional field with launcher additionalProperties false, and explicitly documents default semantics.",
+        "No shell wrapper, copied resources, global directory change, executable patch or unrelated Provider v2 code is present.",
+        "Plan explicitly retains original failed generation/evidence and requires a fresh formal generation and managed GUI acceptance before market accounting."
+      ],
+      "filePins": [
+        {
+          "path": "crates/compatforge-service/src/jobs.rs",
+          "size": 103973,
+          "sha256": "bc67173c2b971ea43c31d87e7ad21fc9d6b48ebdfbd64fddb6ab53e49e0c183d"
+        },
+        {
+          "path": "crates/compatforge-service/src/lifecycle.rs",
+          "size": 47804,
+          "sha256": "98483f3b5d2d607425919438d05b363c22b48bae8169efd1b445ce2ba464e236"
+        },
+        {
+          "path": "crates/compatforge-service/src/model.rs",
+          "size": 32241,
+          "sha256": "d865a511450d3f5ff57c8bed2d167046a407db80e4685f4eab10b3c40f6d35b8"
+        },
+        {
+          "path": "crates/compatforge-service/src/registry.rs",
+          "size": 38407,
+          "sha256": "20fbaff9767a405976239061295185c8e5dec2a75fede26061dae4afe9db3288"
+        },
+        {
+          "path": "schemas/application.schema.json",
+          "size": 9700,
+          "sha256": "f505ab15482d9d5b2affdd3bde10e04f04e56ef3e4cad811b508e8cb362f0c6d"
+        },
+        {
+          "path": "docs/plans/2026-10-11-managed-launcher-working-directory.md",
+          "size": 3573,
+          "sha256": "f7c5c341d67419b4bb8239c1bb7b832ec5ddb90d1b59a31e2aa1779df04e5493"
+        },
+        {
+          "path": "tests/launcher-working-directory-schema.cjs",
+          "size": 1005,
+          "sha256": "06aadd1f70961383e15a09adf4253d15366fbe954cf57809facf3325dd2414f8"
+        }
+      ],
+      "gitDiffCheckPassed": true
+    },
+    "actualCoreDefinitionRejectionCases": [
+      {
+        "value": "",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher executable must be a bounded relative path"
+      },
+      {
+        "value": ".",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher executable must be a bounded relative path"
+      },
+      {
+        "value": "..",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher executable must be a bounded relative path"
+      },
+      {
+        "value": "../other",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher executable must be a bounded relative path"
+      },
+      {
+        "value": "Artha/../bin",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher executable must be a bounded relative path"
+      },
+      {
+        "value": "/tmp",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher executable must be a bounded relative path"
+      },
+      {
+        "value": "C:/Artha",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: path is not portable"
+      },
+      {
+        "value": "C:\\Artha",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: path is not portable"
+      },
+      {
+        "value": "Artha\\bin",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: path is not portable"
+      },
+      {
+        "value": "Artha//bin",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher working directory must contain normal components"
+      },
+      {
+        "value": "Artha/./bin",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher working directory must contain normal components"
+      },
+      {
+        "value": "Artha\n/bin",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: launcher working directory must contain normal components"
+      },
+      {
+        "value": "Artha/bin\u0000",
+        "rejected": true,
+        "exitCode": 1,
+        "error": "compatforge-cli: service-failed: path is not portable"
+      }
+    ],
+    "allRejectedCasesPreservedRegisteredDefinitionAndHistory": true,
+    "localRedTestsObserved": [
+      "unknown workingDirectory field rejected before model change",
+      "missing launcher directory accepted before lifecycle guard"
+    ],
+    "linuxRedLabelWasNotReliableEvidence": true
+  },
+  "deployment": {
+    "passed": true,
+    "normallyStoppedAndStarted": true,
+    "oldBinaryAndUnitRetained": true,
+    "binarySha256": "4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818",
+    "sourceArchiveSha256": "91f786cd32e8bd445edbfad383ee47fb682c54be02459daf779627f88e89c1da",
+    "coreJobs": 221,
+    "storeRows": 75,
+    "allHistoryFieldsTrustConfigAndGenerationsUnchanged": true,
+    "priorApplicationDataUnchanged": true,
+    "serviceGuardsUnchanged": true,
+    "afterCheckpointSha256": "67689806fbc7cf5fe5f0bb4972e3efa508c1ef86686a086ab41f230a2532b2cf"
+  },
+  "installation": {
+    "passed": true,
+    "generation": {
+      "bottleId": "gen-job-1791694338197-1",
+      "createdAtMilliseconds": 1791694338205,
+      "definition": {
+        "bottleId": "gui-artha",
+        "category": "education",
+        "compatibilityRating": "unknown",
+        "id": "artha",
+        "installer": {
+          "arguments": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/DIR=C:\\Artha"
+          ],
+          "fileName": "artha_1.0.3.0.exe",
+          "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2"
+        },
+        "launchers": [
+          {
+            "executable": "Artha/bin/artha.exe",
+            "id": "main",
+            "name": "Artha",
+            "workingDirectory": "Artha/bin"
+          }
+        ],
+        "name": "Artha",
+        "publisher": "Sundaram Ramaswamy",
+        "schemaVersion": "1",
+        "tags": [
+          "rolling-1000",
+          "managed-inno"
+        ],
+        "version": "1.0.3.0"
+      },
+      "definitionDigest": "sha256:3af1481bccc88f3fb32e2c4aa371bfc7f40394ed2f47629931b3c3383704f8d7",
+      "id": "gen-job-1791694338197-1",
+      "launcherDigests": {
+        "main": "sha256:a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+      },
+      "runtime": {
+        "binding": {
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINESERVER": "/usr/bin/wineserver"
+          },
+          "executable": "/usr/bin/wine",
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "providerId": "wine-linux-x86-64-preview",
+          "wineserverExecutable": "/usr/bin/wineserver"
+        },
+        "selection": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "version": "11.14"
+      },
+      "status": "ready",
+      "updatedAtMilliseconds": 1791694354113
+    },
+    "coreJobs": 222,
+    "storeRows": 75,
+    "oldGenerationTasksConfigTrustAndDataPreserved": true,
+    "formalGuiAccepted": false,
+    "published": false,
+    "privateCheckpointSha256": "41d533b2c17d4623c19ef353b382d7c042d98e2d2da67d39117aa8b72d7ac78a"
+  },
+  "firstFormalLaunch": {
+    "formalManagedJob": "job-1791694510665-2",
+    "generationId": "gen-job-1791694338197-1",
+    "status": "running",
+    "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix/drive_c/Artha/bin",
+    "programDigest": "sha256:a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f",
+    "frozenFixture": {
+      "generationId": "gen-job-1791694338197-1",
+      "words": [
+        "happy",
+        "computer"
+      ],
+      "expectedExportFile": "output/managed-history.txt",
+      "outputAndHistoryAbsentBeforeGui": true,
+      "launcherSha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f",
+      "workingDirectory": "Artha/bin",
+      "actualInstallerDirArgumentUtf8Hex": "2f4449523d433a5c4172746861"
+    },
+    "globalConfigUnchanged": true,
+    "guiAccepted": false,
+    "published": false
+  },
+  "guiAccepted": false,
+  "marketPublished": false,
+  "signedRolesChanged": false,
+  "oldArthaGenerationAndDiagnosticBytesPreserved": true,
+  "priorPublishedAppDataPreserved": true,
+  "limitations": [
+    "Formal GUI and independent market lifecycle pending at this receipt stage",
+    "No advanced functionality, Chinese path/input, full bundled license closure, guest network downloads, fresh-machine registration, migration or cross-version validation"
+  ]
+}

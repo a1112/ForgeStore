@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "stage": "verified-before-commit",
+  "passed": true,
+  "acceptedDistinctWindowsApps": 30,
+  "unresolvedCandidates": 12,
+  "candidate": "candidate-v31",
+  "rootVersion": 1,
+  "onlineRoleVersions": 40,
+  "coreTasks": 228,
+  "completeMarketTasks": 77,
+  "currentGuestReadOnlyVerification": {
+    "passed": true,
+    "coreJobs": 228,
+    "fullStoreRows": 77,
+    "allTerminal": true,
+    "completeHistoryFieldEquality": true,
+    "allGenerationsDataConfigAndTrustPreserved": true,
+    "acceptedDistinctWindowsApps": 30,
+    "rootVersion": 1,
+    "onlineRoles": 40,
+    "candidate": "candidate-v31",
+    "selectedGeneration": "gen-job-1791694338197-1",
+    "afterRestartCheckpointSha256": "12d0a7c7359e0a2e1ec25a32df9b8d8097967e40cdf5968e49627d5aa91548da",
+    "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+    "nativeManagedCwdRepairPassed": true,
+    "sameVersionCachedUpdatePassed": true,
+    "exactRollbackPassed": true,
+    "guiAndFreshReopenPassed": true,
+    "normalServiceRestartPassed": true
+  },
+  "byteAndPrivacyAuditBeforeFinalReviewFiles": {
+    "passed": true,
+    "oldFrozenFilesUnchanged": 69,
+    "newFilesByteAndPrivacyChecked": 64,
+    "gitFilteredEqualsRawBytes": true,
+    "ledgerDistinctAccepted": 30,
+    "currentBlocked": 12,
+    "historicalQueueRecordPreservedExactly": true,
+    "allPriorAcceptedRecordsPreserved": true,
+    "publicSignedDirectoryFiles": 36,
+    "privateKeysCredentialsAndCheckpointsNotIncluded": true
+  },
+  "independentReview": {
+    "reference": "2026-10-11-artha-cwd-independent-review.json",
+    "sha256": "4a9cd9f34938667f8c5d8dc27cf47255c71cfa9673d3edd45ad6a451db4d3869",
+    "automatedChecks": 460,
+    "passed": true,
+    "findings": [],
+    "actualTargetsChecked": 62,
+    "publicCatalogueFiles": 36,
+    "screenshotsVisuallyInspected": 15,
+    "coreArchiveCompiledCodeBytesMatchCommit": true,
+    "allArchiveMembersRawByteEquality": false,
+    "observations": [
+      {
+        "kind": "non-code-archive-line-ending-difference",
+        "path": "docs/evidence/linux-applications/2026-09-29-shared-desktop-service.json",
+        "committedBytes": 5931,
+        "archivedBytes": 5806,
+        "equalAfterCrLfNormalization": true,
+        "scope": "Only this historical non-code JSON differs; all other 500 members, compiled code, and all seven repair files match commit raw bytes. Report does not claim all 501 members match raw commit bytes."
+      }
+    ],
+    "limitations": [
+      "Historical private VM checkpoint and service operations were not independently rerun. Public receipts and private helper source were cross-checked; the parent fresh current-state run is evidence of actual guest verification.",
+      "GUI screenshots support the finite English query/export/history flows, not complete thesaurus functionality.",
+      "Full bundled licence closure, guest online download, new-machine registration, migration, cross-version upgrade, Windows junction execution and atomic same-user rename protection remain unverified."
+    ]
+  },
+  "evidencePins": {
+    "2026-10-11-artha-core-working-directory.json": {
+      "sha256": "b60147492dea4bdc153d870891eda1b33a3b6223d87d7b3fe3882c26e4ee07ea",
+      "sizeBytes": 27872
+    },
+    "2026-10-11-artha-core-working-directory-failures.json": {
+      "sha256": "136863b187a2c14ed0dd148eb6a0e7d0e7345b86e813996b819458f2699d3430",
+      "sizeBytes": 2390
+    },
+    "2026-10-11-artha-cwd-gui.json": {
+      "sha256": "11764284272ee0e9d0f03867640e67a7185c5980786135b75c941dd949e210b0",
+      "sizeBytes": 9552
+    },
+    "windows-artha-20261011-cwd.acceptance.json": {
+      "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73",
+      "sizeBytes": 4567
+    },
+    "2026-10-11-artha-cwd-market-gui.json": {
+      "sha256": "400c3495a174311d1ce1cfa5f9e9a9c2e172c48b71853d4f94e12e25f54bfa34",
+      "sizeBytes": 18622
+    },
+    "2026-10-11-artha-cwd-runtime-recovery.json": {
+      "sha256": "7c970163dd7e45c5ec5e3cac0284c9d3d20ba2f8fb19829acb188403e9e012ea",
+      "sizeBytes": 21437
+    },
+    "2026-10-11-artha-cwd-publication.json": {
+      "sha256": "554215c0278dd152bd97982d45aaa4c88a9616a208fef3bb02580be23291c8ab",
+      "sizeBytes": 7413
+    },
+    "2026-10-11-artha-cwd-final-failures.json": {
+      "sha256": "5048a5ad3eaa292d27b3baacb973d2a6be3ea1b23aac2f3b75f50d358e6c63bd",
+      "sizeBytes": 3279
+    },
+    "2026-10-11-artha-cwd-activation.json": {
+      "sha256": "291b3927045ea1ae683913fe20e854779f3e3511add68ee08b8195d7b2a1ec1e",
+      "sizeBytes": 1763
+    },
+    "2026-10-11-artha-cwd-current-state.json": {
+      "sha256": "3b024c2f19b29582ac3b1cceb8bf681d42e09b41b325726436d8ca4bad760781",
+      "sizeBytes": 718
+    },
+    "2026-10-11-artha-cwd-independent-review.json": {
+      "sha256": "4a9cd9f34938667f8c5d8dc27cf47255c71cfa9673d3edd45ad6a451db4d3869",
+      "sizeBytes": 64439
+    }
+  },
+  "oldFrozenGuiAndSourceAndSignatureHistoryPreserved": true,
+  "privateCheckpointsKeysAndCredentialsNotCommitted": true,
+  "nextCommitAndPushPendingAtThisFreeze": true
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "version": "1.0.3.0",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Native per-launcher managed cwd; limited happy/computer and friendly/machine English queries, GUI ASCII-path history exports, explicit fresh-process history recovery; independent market generation, verified-cache same-version update, exact original generation rollback and normal Core/Store restart.",
+  "fullThesaurusAcceptance": false,
+  "bundleLicenseClosureVerified": false,
+  "signedCatalogue": "catalogue/candidate-v31/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 40,
+    "snapshot": 40,
+    "timestamp": 40
+  },
+  "catalogueEntries": 32,
+  "acceptedDistinctWindowsApplications": 30,
+  "excludedFixtures": 2,
+  "coreJobCount": 228,
+  "storeRowCount": 77,
+  "acceptanceReceipt": "windows-artha-20261011-cwd.acceptance.json",
+  "acceptanceReceiptSha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73",
+  "sourceEvidence": "2026-10-11-artha-source.json",
+  "sourceEvidenceSha256": "a760c90052cabdf58e0ccbdf246a05979ee669e7ba7757f022f1d4eee83d4819",
+  "frozenOriginalGuiEvidence": "2026-10-11-artha-cwd-gui.json",
+  "originalFrozenSourceGuiAndReceiptStageLabelsRetained": true,
+  "activationEvidence": "2026-10-11-artha-cwd-activation.json",
+  "marketGuiEvidence": "2026-10-11-artha-cwd-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-artha-cwd-runtime-recovery.json",
+  "failureEvidence": "2026-10-11-artha-cwd-final-failures.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-artha-20261011-cwd.acceptance.json#artha",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2",
+        "size": 12711596,
+        "target": "artha_1.0.3.0.exe",
+        "url": "https://downloads.sourceforge.net/project/artha/artha/1.0.3/artha_1.0.3.0.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "artha"
+    },
+    "id": "artha",
+    "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "Artha",
+      "zhCN": "Artha"
+    },
+    "origin": "https://artha.sourceforge.net/wiki/index.php/Download",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Sundaram Ramaswamy",
+    "summary": {
+      "en": "Limited English queries, ASCII-path history export and fresh-process recovery tested with native managed cwd; advanced functions and bundled licence closure unverified.",
+      "zhCN": "原生托管工作目录下有限英文查词、ASCII 路径历史导出与新进程恢复已测；高级功能及捆绑许可闭包未验收"
+    },
+    "version": "1.0.3.0"
+  },
+  "installed": {
+    "appId": "artha",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "1.0.3.0"
+  },
+  "selectedOriginalGeneration": "gen-job-1791694338197-1",
+  "independentMarketGeneration": "gen-job-1791695212085-4",
+  "coreRepairCommit": "93650d1404df1c546eb689344e921c95bd041fad",
+  "launcherWorkingDirectory": "Artha/bin",
+  "globalRuntimeContextChanged": false,
+  "programAndRuntimePinsPreserved": true,
+  "allOldSignedTargetsPreservedExceptCatalogueReplacement": true,
+  "rootBytesPreserved": true,
+  "tuftoolExplicitTrustedRootDownloadVerified": true,
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "storeGuiButtonsVerified": false,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "artha",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "d82c17bc-6808-4f0e-a67c-9ea2f40f52b6",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "artha",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "7f4bf2b0-815a-45fe-a8be-b777eace160a",
+      "state": "succeeded"
+    }
+  },
+  "beforeRollbackCheckpointSavedAndReadBack": true,
+  "beforeRollbackCoreJobs": 227,
+  "beforeRollbackStoreRows": 76,
+  "afterRollbackCoreJobs": 227,
+  "afterRollbackStoreRows": 77,
+  "normalRestartBeforeAndAfterCoreJobs": 228,
+  "normalRestartBeforeAndAfterStoreRows": 77,
+  "allFullFieldsPreservedAcrossRestart": true,
+  "privateCheckpointPins": {
+    "after-core-switch.json": {
+      "sha256": "67689806fbc7cf5fe5f0bb4972e3efa508c1ef86686a086ab41f230a2532b2cf",
+      "sizeBytes": 2049391
+    },
+    "after-market-first-exit.json": {
+      "sha256": "230916dbf4433a0198663ba8cb3b53914f7b400b4b959f09303d9a992a5de591",
+      "sizeBytes": 2084688
+    },
+    "before-core-switch.json": {
+      "sha256": "72680242b8d9c105f2db4a15d5b2a28aa2d133957f54b817c8bd61663c39a921",
+      "sizeBytes": 2053738
+    },
+    "after-activation.json": {
+      "sha256": "96918e647a1bafc6b46d84d5a36da95d475f447d22e970caaf885a47b0e2a231",
+      "sizeBytes": 2070850
+    },
+    "before-rollback.json": {
+      "sha256": "a0b5f852355246eb215f3c8543847635dce1c265ed6fae0641f7c4776f390bab",
+      "sizeBytes": 2090918
+    },
+    "after-restart.json": {
+      "sha256": "12d0a7c7359e0a2e1ec25a32df9b8d8097967e40cdf5968e49627d5aa91548da",
+      "sizeBytes": 2097318
+    },
+    "after-market-install.json": {
+      "sha256": "3b69fd838e981364c84d2bdeff479009f5f28e18e986cf62c3c728eb8671af2a",
+      "sizeBytes": 2078458
+    },
+    "before-market.json": {
+      "sha256": "e4e5f7a1d99e2f2f913a0012703ddc4a27b3a7d1219ac507128cff733a6d0637",
+      "sizeBytes": 2069293
+    },
+    "before-restart.json": {
+      "sha256": "d586fab5281a519167ae426ae178ed219424232840ff48e853f12c564b04e793",
+      "sizeBytes": 2097318
+    },
+    "after-rollback.json": {
+      "sha256": "6c696142265fe34c9838ff04deeaf1e3860c6b360c68faaced29c5ee9f72a109",
+      "sizeBytes": 2091088
+    },
+    "after-formal-first-exit.json": {
+      "sha256": "8d539ff739c13edb8b9cbb9e068d7ed7e70706feda98e06acb5a0eec4288502e",
+      "sizeBytes": 2063063
+    },
+    "after-cwd-install.json": {
+      "sha256": "41d533b2c17d4623c19ef353b382d7c042d98e2d2da67d39117aa8b72d7ac78a",
+      "sizeBytes": 2056831
+    }
+  },
+  "actualOutputPins": {
+    "original": {
+      "file": "output/managed-history.txt",
+      "sizeBytes": 17,
+      "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+      "hex": "68617070790d0a636f6d70757465720d0a"
+    },
+    "market": {
+      "file": "output/market-history.txt",
+      "sizeBytes": 19,
+      "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0",
+      "hex": "667269656e646c790d0a6d616368696e650d0a"
+    }
+  },
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only four small English queries and ASCII history exports/recovery were exercised; complete thesaurus acceptance is unverified.",
+    "Advanced relationships, spelling, hotkeys, notifications, Chinese paths/input, full bundled licence closure, Authenticode and reproducibility were not verified.",
+    "Guest online download, fresh-machine registration, configuration migration and cross-version upgrade were not verified.",
+    "Store update/rollback submitted through IPC; GUI button function acceptance is not claimed.",
+    "No atomic protection against malicious same-user concurrent directory renames; Windows junction execution was not tested."
+  ]
+}

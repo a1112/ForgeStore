@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "environment": "Isolated ForgeOS v12 x86_64 VM, Wine 11.14, Core managed-MSI-v10. Official fixed MSI installed via managed msiexec /i /qn /norestart REBOOT=ReallySuppress with empty extra properties; no manual extraction. Existing authorized login, authentication unchanged.",
+  "applications": [
+    {
+      "id": "jpegview",
+      "version": "1.3.46",
+      "observedGuiVersion": "1.3.46.0",
+      "sha256": "3108a85b5d408fa17027b25454f0ee7e7b450e680dbc1dab68d26d9099e18bf2",
+      "size": 5165056,
+      "installJobId": "job-1790994464257-1",
+      "generationId": "gen-job-1790994464257-1",
+      "definitionDigest": "sha256:878c4d6c54a0d60c0d5b7b1ef98fd7c39a0491bd36e178f886f2659d077b8ddf",
+      "launcherSha256": "59cf443bd42a6643319898c1f30a6a1355b56281fa6aa5c9c4472fbb81bc8d0f",
+      "launchJobId": "job-1790994542617-2",
+      "reopenJobId": "job-1790994740097-3",
+      "guiFileOperation": "passed",
+      "workflow": "GUI explicitly opens C:\\ForgeQA\\input\\彩色.bmp (320x200 asymmetric quadrants/white L), context menu Transform Image > Rotate +90, Ctrl+S Save processed image, chooses PNG and saves output/jvoriginal.png; normal exit. Fresh managed process explicitly opens saved PNG and observes the rotated image, then normal exit. PNG CRCs/dimensions/decode/each RGB pixel match expected clockwise rotation; input/output bytes unchanged.",
+      "inputFixture": {
+        "generationId": "gen-job-1790994464257-1",
+        "windowsInputFile": "C:\\ForgeQA\\input\\彩色.bmp",
+        "relativeInputFile": "input/彩色.bmp",
+        "sizeBytes": 192054,
+        "sha256": "c64eba6205f507b0d573a34f995809d64f2742dbf57540adce2714b48bdf454f",
+        "width": 320,
+        "height": 200,
+        "format": "24-bit uncompressed BMP",
+        "pattern": "Asymmetric four-color quadrants with a white L in the top-left red quadrant. Top-left red, top-right green, bottom-left blue, bottom-right yellow.",
+        "outputDirectoryEmptyBeforeGui": true
+      },
+      "outputVerification": {
+        "relativeFile": "output/jvoriginal.png",
+        "sizeBytes": 1380,
+        "sha256": "d14b53820306315071c47b3b6733d5993f07f886b0e30b10a21cf11c7ae42c3b",
+        "format": "PNG",
+        "width": 200,
+        "height": 320,
+        "bitDepth": 8,
+        "pngColorType": 2,
+        "interlaced": false,
+        "chunkTypes": [
+          "IHDR",
+          "pHYs",
+          "IDAT",
+          "IEND"
+        ],
+        "inputUnchanged": true,
+        "expectedTransform": "clockwise rotation by 90 degrees",
+        "decodedRgbSha256": "49b58b154f8a05d1e91fc98982ee6cb39d7a0e349f85c43dd88d15cc954146d3",
+        "expectedRotatedRgbSha256": "49b58b154f8a05d1e91fc98982ee6cb39d7a0e349f85c43dd88d15cc954146d3",
+        "exactExpectedPixels": true,
+        "differentPixels": 0,
+        "maximumChannelDelta": 0
+      },
+      "installedLicenseVerification": {
+        "relativeFile": "LICENSE.txt",
+        "sizeBytes": 893,
+        "sha256": "63c5c94f0a6a3b122f677275ac89ee9165e895e0cd1d4ec01147c43a22f28319",
+        "normalization": "CRLF to LF only",
+        "normalizedSizeBytes": 875,
+        "normalizedSha256": "3834a17ceecdf637633fedab1eb95a49fd12c8524a1c24b1edd131c289d3f4ef",
+        "fixedSourceContentMatchesAfterLineEndingNormalization": true,
+        "byteIdenticalToSource": false
+      },
+      "screenshots": {
+        "2026-10-03-jpegview-about-version.jpg": "2e29d23b50d33497dd26edddf7511a670cf4aacc74b12b3dc6f51c31d1766e46",
+        "2026-10-03-jpegview-original-input-opened.jpg": "5e54910897ba4f0a0ade550332c26b375606c5dc7f8f1be64101504f8d9fa0b5",
+        "2026-10-03-jpegview-original-reopened.jpg": "e11061b4a0890f9b8a14c9785b2c82e8760fe1e85192f02ee8be0893f81df9c3",
+        "2026-10-03-jpegview-original-saved.jpg": "9dd055280aa48b9c3b85b61aa262e1e2d1284f87b6d059fd4e969f9e84c8dd6e"
+      },
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+    }
+  ],
+  "licenseEvidence": {
+    "applicationId": "jpegview",
+    "version": "1.3.46",
+    "tag": "v1.3.46",
+    "sourceCommit": "af075dbd1918554ea4491b42646f03286749a0e6",
+    "releaseUrl": "https://github.com/sylikc/jpegview/releases/tag/v1.3.46",
+    "publishedAt": "2023-10-07T07:35:29Z",
+    "immutableRelease": false,
+    "prerelease": false,
+    "artifact": {
+      "fileName": "JPEGView64_en-us_1.3.46.msi",
+      "sourceUrl": "https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView64_en-us_1.3.46.msi",
+      "sizeBytes": 5165056,
+      "sha256": "3108a85b5d408fa17027b25454f0ee7e7b450e680dbc1dab68d26d9099e18bf2",
+      "publishedReleaseBodySha256Matched": true,
+      "apiAssetDigest": null
+    },
+    "license": {
+      "spdx": "GPL-2.0-or-later",
+      "basis": "Fixed LICENSE.txt and installer License.rtf identify GPL version 2 or any later version for the main JPEGView application. Bundled image decoding/encoding libraries retain their own terms. Complete corresponding component-source audit unverified.",
+      "fixedReferences": {
+        "LICENSE.txt": {
+          "fixedUrl": "https://raw.githubusercontent.com/sylikc/jpegview/af075dbd1918554ea4491b42646f03286749a0e6/LICENSE.txt",
+          "sizeBytes": 875,
+          "sha256": "3834a17ceecdf637633fedab1eb95a49fd12c8524a1c24b1edd131c289d3f4ef"
+        },
+        "COPYING.txt": {
+          "fixedUrl": "https://raw.githubusercontent.com/sylikc/jpegview/af075dbd1918554ea4491b42646f03286749a0e6/COPYING.txt",
+          "sizeBytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        },
+        "src/JPEGView.Setup/res/License.rtf": {
+          "fixedUrl": "https://raw.githubusercontent.com/sylikc/jpegview/af075dbd1918554ea4491b42646f03286749a0e6/src/JPEGView.Setup/res/License.rtf",
+          "sizeBytes": 1629,
+          "sha256": "9715409e897081c26edb1a01068b02ec53eb688b539a21afd34624fb6953adeb"
+        }
+      },
+      "installedLicenseVerification": {
+        "relativeFile": "LICENSE.txt",
+        "sizeBytes": 893,
+        "sha256": "63c5c94f0a6a3b122f677275ac89ee9165e895e0cd1d4ec01147c43a22f28319",
+        "normalization": "CRLF to LF only",
+        "normalizedSizeBytes": 875,
+        "normalizedSha256": "3834a17ceecdf637633fedab1eb95a49fd12c8524a1c24b1edd131c289d3f4ef",
+        "fixedSourceContentMatchesAfterLineEndingNormalization": true,
+        "byteIdenticalToSource": false
+      },
+      "completeComponentSourceAudit": false
+    },
+    "authenticodeVerified": false,
+    "reproducibleBuildVerified": false,
+    "installedLauncherArchitecture": "x86_64",
+    "observedGuiVersion": "1.3.46.0"
+  },
+  "limits": [
+    "Controlled Chinese-path 24-bit BMP open, GUI clockwise 90-degree rotation, save processed PNG, explicit visible fresh-process open and normal exit verified. Every decoded PNG RGB pixel matches the expected rotation; original BMP and reopened PNG bytes unchanged.",
+    "Crop, arbitrary rotation, color correction, other formats/encodings/EXIF/ICC/RAW/PSD/animation/batch/slideshow/printing and file association or registry results unverified.",
+    "Official MSI SHA256 matches exact filename row in release-body checksums; API asset digest is absent. Release not marked immutable; exact bytes and fixed source commit pinned. Authenticode, reproducible build and complete component-source/custom-action audit unverified.",
+    "Local signed market activation/update/rollback/restart validation follows this original receipt. Guest online download, fresh-machine registration, cross-version upgrade and remote installer redistribution unverified."
+  ]
+}

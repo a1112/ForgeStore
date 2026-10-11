@@ -1,0 +1,51 @@
+{
+  "activated": true,
+  "metadataVersion": 40,
+  "rootVersion": 1,
+  "entries": 32,
+  "coreJobs": 224,
+  "storeRows": 75,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-artha-20261011-cwd.acceptance.json#artha",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2",
+        "size": 12711596,
+        "target": "artha_1.0.3.0.exe",
+        "url": "https://downloads.sourceforge.net/project/artha/artha/1.0.3/artha_1.0.3.0.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "artha"
+    },
+    "id": "artha",
+    "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "Artha",
+      "zhCN": "Artha"
+    },
+    "origin": "https://artha.sourceforge.net/wiki/index.php/Download",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Sundaram Ramaswamy",
+    "summary": {
+      "en": "Limited English queries, ASCII-path history export and fresh-process recovery tested with native managed cwd; advanced functions and bundled licence closure unverified.",
+      "zhCN": "原生托管工作目录下有限英文查词、ASCII 路径历史导出与新进程恢复已测；高级功能及捆绑许可闭包未验收"
+    },
+    "version": "1.0.3.0"
+  },
+  "installed": {
+    "appId": "artha",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "1.0.3.0"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "stage": "activation-before-independent-market-workflow",
+  "subsequentCompletionEvidence": "2026-10-11-artha-cwd-publication.json"
+}

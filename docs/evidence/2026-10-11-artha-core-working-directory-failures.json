@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "artha",
+  "stage": "native-repair-harness-and-session-failures",
+  "failures": [
+    {
+      "stage": "linux-shared-target-test",
+      "result": "0 tests executed because extracted source timestamps were older than cached fingerprint",
+      "resolution": "Retained log; separate target directory and refreshed extracted file mtimes; final reviewed source explicitly compiled and named new tests verified."
+    },
+    {
+      "stage": "linux-red-labelled-source",
+      "result": "Expected red assertion failed because two tests passed; host packaging was still running while lifecycle changes were made, so this archive label is not a historical red baseline",
+      "resolution": "Retained archive and logs. Only directly observed Windows red results count as red evidence; final reviewed archive packaged without concurrent edits and its exact code bytes checked before commit."
+    },
+    {
+      "stage": "read-install-result",
+      "result": "Read-only observer invoked before running installer helper had written its result file; FileNotFoundError",
+      "resolution": "Observer made no mutation; waited for helper exit 0, then observed succeeded task and saved actual complete checkpoint."
+    },
+    {
+      "stage": "core-definition-negative-test-harness",
+      "result": "Expected rejected CLI call returns exit 1 with stderr and no stdout; parsing stdout as JSON failed",
+      "resolution": "Retained failure; verified actual return/stderr convention then reran all 13 cases successfully without application/state changes."
+    },
+    {
+      "stage": "git-preflight",
+      "result": "Existing fix/managed-msi-install remote was ahead at 98bbf7a2b0ab1ebb7b4e5708478e55dcf52c178d",
+      "resolution": "No force or merge into tested v10 baseline; ordinarily pushed isolated fix/managed-launcher-working-directory branch and verified original remote tip unchanged."
+    },
+    {
+      "stage": "desktop-login",
+      "result": "Login transitions and keyboard submissions ended in visible three-attempt, ten-minute temporary account lock",
+      "resolution": "Stopped login attempts during lockout. Authentication and lock settings unchanged; no credentials retained in files. GUI acceptance remains pending at this receipt stage."
+    }
+  ],
+  "originalArthaFailuresRewritten": false,
+  "originalSignedHistoryRewritten": false
+}

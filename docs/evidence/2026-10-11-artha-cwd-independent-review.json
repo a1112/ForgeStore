@@ -1,0 +1,1885 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/review_artha_cwd_evidence",
+  "mode": "Independent read-only repository/evidence/crypto/byte review; no VM, GUI, service or network writes",
+  "baseline": "f53bf90600244a151b8a0eb68902dcbfda2b4f0c",
+  "checks": [
+    {
+      "name": "distinct accepted count",
+      "passed": true
+    },
+    {
+      "name": "old 29 accepted records retained",
+      "passed": true
+    },
+    {
+      "name": "Artha only newly accepted",
+      "passed": true
+    },
+    {
+      "name": "current 12 queue records retained",
+      "passed": true
+    },
+    {
+      "name": "resolved Artha history retained",
+      "passed": true
+    },
+    {
+      "name": "ledger summary exact",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-about.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-first-run.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-happy.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-history.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-reopen-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-reopen-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-save-as.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/diagnostic-save-success.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha/startup-error.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-artha-source.json",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/windows-dosbox-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox-source.json",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/windows-dosbox-20261011-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox-source-corrected.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/metadata/1.root.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/metadata/39.snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/metadata/39.targets.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/metadata/timestamp.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/8c0b85964d02fa216cb6efbb3061524789143f796ab35b81c511110df911d106.catalogue.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "frozen catalogue/candidate-v30/tuf/trusted-root.json",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-INPUT.BIN.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-VERIFY.COM.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-COPIED.BIN.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-RESULT.TXT.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-INPUT.BIN.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-VERIFY.COM.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-COPIED.BIN.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-RESULT.TXT.bin",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/after-rollback-reopened.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-executed.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-mounted.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-reopened.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/market-startup.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-executed.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-mounted.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-reopened.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/original-startup.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/store-details.jpg",
+      "passed": true
+    },
+    {
+      "name": "frozen docs/evidence/2026-10-11-dosbox/store-installed.jpg",
+      "passed": true
+    },
+    {
+      "name": "new core pending receipt hash",
+      "passed": true
+    },
+    {
+      "name": "new failure pending receipt hash",
+      "passed": true
+    },
+    {
+      "name": "new signed original GUI receipt hash",
+      "passed": true
+    },
+    {
+      "name": "frozen original GUI market pending flags",
+      "passed": true
+    },
+    {
+      "name": "signed original receipt keeps pending stage",
+      "passed": true
+    },
+    {
+      "name": "original source historical stage retained",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration output bytes",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration output pins",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration formal gen",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration semantic config truth",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration install succeeded",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration install stopped wineserver",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration install selected correct gen",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration install formal event request",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration launch succeeded",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration launch stopped wineserver",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration launch selected correct gen",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration launch formal event request",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration reopen succeeded",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration reopen stopped wineserver",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration reopen selected correct gen",
+      "passed": true
+    },
+    {
+      "name": "originalGeneration reopen formal event request",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration output bytes",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration output pins",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration formal gen",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration semantic config truth",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration launch succeeded",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration launch stopped wineserver",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration launch selected correct gen",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration launch formal event request",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration reopen succeeded",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration reopen stopped wineserver",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration reopen selected correct gen",
+      "passed": true
+    },
+    {
+      "name": "independentMarketGeneration reopen formal event request",
+      "passed": true
+    },
+    {
+      "name": "rollback normal formal process",
+      "passed": true
+    },
+    {
+      "name": "rollback exact original formal generation",
+      "passed": true
+    },
+    {
+      "name": "all five formal launch records",
+      "passed": true
+    },
+    {
+      "name": "screenshot 01-managed-happy.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 02-managed-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 03-managed-save-as.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 04-managed-save-success.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 05-managed-about.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 06-managed-reopen-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 07-managed-reopen-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 08-market-friendly.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 09-market-machine.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 10-market-save-as.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 11-market-save-success.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 12-market-reopen-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 13-market-reopen-machine.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 14-rollback-original-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "screenshot 15-rollback-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "15 screenshots",
+      "passed": true
+    },
+    {
+      "name": "original screenshots unchanged",
+      "passed": true
+    },
+    {
+      "name": "receipt screenshots match frozen GUI",
+      "passed": true
+    },
+    {
+      "name": "config 180 179 180 states",
+      "passed": true
+    },
+    {
+      "name": "old managed exit 3 retained",
+      "passed": true
+    },
+    {
+      "name": "diagnostics explicitly excluded",
+      "passed": true
+    },
+    {
+      "name": "before rollback checkpoint pin exact",
+      "passed": true
+    },
+    {
+      "name": "227 76 before 227 77 after",
+      "passed": true
+    },
+    {
+      "name": "228 77 before after restart",
+      "passed": true
+    },
+    {
+      "name": "checkpoint declarations consistent",
+      "passed": true
+    },
+    {
+      "name": "current state exact summary",
+      "passed": true
+    },
+    {
+      "name": "all fields and trust retained declarations",
+      "passed": true
+    },
+    {
+      "name": "IPC GUI distinction",
+      "passed": true
+    },
+    {
+      "name": "bundle and network boundaries",
+      "passed": true
+    },
+    {
+      "name": "no auth change declaration",
+      "passed": true
+    },
+    {
+      "name": "old root actual digest",
+      "passed": true
+    },
+    {
+      "name": "metadata root matches trusted root",
+      "passed": true
+    },
+    {
+      "name": "root RSA PSS scheme",
+      "passed": true
+    },
+    {
+      "name": "root threshold",
+      "passed": true
+    },
+    {
+      "name": "root expiry",
+      "passed": true
+    },
+    {
+      "name": "targets RSA PSS scheme",
+      "passed": true
+    },
+    {
+      "name": "targets threshold",
+      "passed": true
+    },
+    {
+      "name": "targets expiry",
+      "passed": true
+    },
+    {
+      "name": "targets version 40",
+      "passed": true
+    },
+    {
+      "name": "snapshot RSA PSS scheme",
+      "passed": true
+    },
+    {
+      "name": "snapshot threshold",
+      "passed": true
+    },
+    {
+      "name": "snapshot expiry",
+      "passed": true
+    },
+    {
+      "name": "snapshot version 40",
+      "passed": true
+    },
+    {
+      "name": "timestamp RSA PSS scheme",
+      "passed": true
+    },
+    {
+      "name": "timestamp threshold",
+      "passed": true
+    },
+    {
+      "name": "timestamp expiry",
+      "passed": true
+    },
+    {
+      "name": "timestamp version 40",
+      "passed": true
+    },
+    {
+      "name": "metadata chain targets.json",
+      "passed": true
+    },
+    {
+      "name": "metadata chain snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "62 signed targets",
+      "passed": true
+    },
+    {
+      "name": "actual signed target peazip-11.3.0.WIN64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target MPC-HC.2.8.2.x64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target 7z2601-x64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-vlc-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-winmerge-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target SpeedCrunch-0.12-win32.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target Frhed-1.6.0-Setup.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-qalculate-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-speedcrunch-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-geany-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-windirstat-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target krita-x64-5.3.4-setup.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-peazip-20261001.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-kdiff3-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target qalculate-5.12.0-x64.msi",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-dia-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target AkelPad-4.9.9-setup.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-notepad3-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target doublecmd-1.2.9.x86_64-win64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target SumatraPDF-3.6.1-64-install.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-jpegview-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-texstudio-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target Notepad3_7.26.602.1_x64_Setup.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-doublecmd-20261002.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-dosbox-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target artha_1.0.3.0.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target vlc-3.0.23-win64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target JPEGView64_en-us_1.3.46.msi",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-dbbrowser-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-lazpaint-20261009.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-mpchc-20261006.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target SQLiteStudio-3.4.17-windows-x64-installer.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target catalogue.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target lazpaint7.3_setup_win32_win64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-inkscape-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-xournalpp-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target org.forgeos.storefixture-2.0.0.forgepkg",
+      "passed": true
+    },
+    {
+      "name": "actual signed target geany-2.1_setup.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target DB.Browser.for.SQLite-v3.13.1-win64.msi",
+      "passed": true
+    },
+    {
+      "name": "actual signed target Notepad2-mod.4.2.25.998.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target xournalpp-1.3.8-windows-setup-AMD64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-akelpad-20261010.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target WinMerge-2.16.58.2-x64-PerUser-Setup.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target kdiff3-1.12.4-windows-x86_64.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-audacity-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-mpchc-20261006-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-tuxpaint-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-sqlitestudio-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target dia-setup-0.97.2-2-unsigned.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-rolling-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-krita-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target Texstudio-4.9.5-win-qt6-signed.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target DOSBox0.74-3-win32-installer.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-frhed-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target audacity-win-3.7.9-64bit.exe",
+      "passed": true
+    },
+    {
+      "name": "actual signed target WinDirStat-2.9.0-x64.msi",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-dosbox-20261011-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target windows-notepad2mod-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "actual signed target npp.8.9.6.2.Installer.x64.exe",
+      "passed": true
+    },
+    {
+      "name": "old 59 non catalogue targets exact",
+      "passed": true
+    },
+    {
+      "name": "32 unique catalogue entries",
+      "passed": true
+    },
+    {
+      "name": "all 30 accepted catalogue IDs exist",
+      "passed": true
+    },
+    {
+      "name": "old 31 catalogue entries identical",
+      "passed": true
+    },
+    {
+      "name": "Artha entry exact observed",
+      "passed": true
+    },
+    {
+      "name": "36 public catalogue files",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-notepad2mod-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-speedcrunch-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-dosbox-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-akelpad-20261010.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-qalculate-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-notepad3-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-vlc-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-rolling-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-jpegview-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-kdiff3-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-windirstat-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-texstudio-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-inkscape-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-geany-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-tuxpaint-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-sqlitestudio-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-peazip-20261001.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-lazpaint-20261009.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-krita-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-frhed-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-mpchc-20261006-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-winmerge-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-dosbox-20261011-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-audacity-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-mpchc-20261006.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-dbbrowser-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-xournalpp-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-dia-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name catalogue.json",
+      "passed": true
+    },
+    {
+      "name": "public hash name windows-doublecmd-20261002.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd-gui.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/13-market-reopen-machine.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/02-managed-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/03-managed-save-as.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/15-rollback-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd-activation.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/07-managed-reopen-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/11-market-save-success.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd-final-failures.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/01-managed-happy.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/metadata/timestamp.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-core-working-directory.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/metadata/1.root.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/market-history.bin",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd-current-state.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/metadata/40.targets.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/metadata/40.snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/e547105f27c7448f4ac5d996408be2401ef19587963c51f51287d98dc68790df.catalogue.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/05-managed-about.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/04-managed-save-success.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/12-market-reopen-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd-runtime-recovery.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/original-history.bin",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd-publication.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd-market-gui.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/08-market-friendly.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/09-market-machine.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/trusted-root.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-core-working-directory-failures.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/06-managed-reopen-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/14-rollback-original-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes docs/evidence/2026-10-11-artha-cwd/10-market-save-as.jpg",
+      "passed": true
+    },
+    {
+      "name": "git filter bytes catalogue/candidate-v31/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd-gui.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-cwd-gui.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/13-market-reopen-machine.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/02-managed-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/03-managed-save-as.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/15-rollback-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd-activation.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-cwd-activation.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/07-managed-reopen-computer.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/11-market-save-success.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd-final-failures.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-cwd-final-failures.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/01-managed-happy.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/metadata/timestamp.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/metadata/timestamp.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-core-working-directory.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-core-working-directory.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/metadata/1.root.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/metadata/1.root.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/market-history.bin",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/windows-rolling-20261011-artha-working-directory.md",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/windows-rolling-20261011-artha-working-directory.md",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd-current-state.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-cwd-current-state.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/metadata/40.targets.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/metadata/40.targets.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/metadata/40.snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/metadata/40.snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/e547105f27c7448f4ac5d996408be2401ef19587963c51f51287d98dc68790df.catalogue.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/e547105f27c7448f4ac5d996408be2401ef19587963c51f51287d98dc68790df.catalogue.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/05-managed-about.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/04-managed-save-success.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/12-market-reopen-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd-runtime-recovery.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-cwd-runtime-recovery.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/original-history.bin",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd-publication.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-cwd-publication.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd-market-gui.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-cwd-market-gui.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/08-market-friendly.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/09-market-machine.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/trusted-root.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/trusted-root.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-core-working-directory-failures.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint docs/evidence/2026-10-11-artha-core-working-directory-failures.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/06-managed-reopen-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/14-rollback-original-history.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key docs/evidence/2026-10-11-artha-cwd/10-market-save-as.jpg",
+      "passed": true
+    },
+    {
+      "name": "no private key catalogue/candidate-v31/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "no auth env/private full checkpoint catalogue/candidate-v31/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "new repo files only expected artifacts",
+      "passed": true
+    },
+    {
+      "name": "report local link windows-rolling-20261011-artha-pending.md",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-core-working-directory.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-source.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd-gui.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd/original-history.bin",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/windows-artha-20261011-cwd.acceptance.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd-activation.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd/market-history.bin",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd-market-gui.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd-runtime-recovery.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd-current-state.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd-publication.json",
+      "passed": true
+    },
+    {
+      "name": "report local link evidence/2026-10-11-artha-cwd-final-failures.json",
+      "passed": true
+    },
+    {
+      "name": "report explicitly finite scope",
+      "passed": true
+    },
+    {
+      "name": "report accurate config change",
+      "passed": true
+    },
+    {
+      "name": "report retained pending labels",
+      "passed": true
+    },
+    {
+      "name": "report IPC distinction",
+      "passed": true
+    },
+    {
+      "name": "git diff whitespace check",
+      "passed": true
+    },
+    {
+      "name": "actual Core archive pin",
+      "passed": true
+    },
+    {
+      "name": "Core archive source paths exact committed tree",
+      "passed": true
+    },
+    {
+      "name": "all Core compiled code and change files original bytes match commit",
+      "passed": true
+    },
+    {
+      "name": "one historical non code doc only CRLF normalization",
+      "passed": true
+    },
+    {
+      "name": "Core archive 501 source files",
+      "passed": true
+    },
+    {
+      "name": "public native proof matches local raw final record",
+      "passed": true
+    }
+  ],
+  "automatedChecks": 460,
+  "passed": true,
+  "findings": [],
+  "signatureAlgorithm": "RSA-PSS-SHA256; MGF1 SHA256; 32-byte salt; TUF canonical signed JSON",
+  "metadataVersion": 40,
+  "rootVersion": 1,
+  "actualTargetsChecked": 62,
+  "publicCatalogueFiles": 36,
+  "screenshotsVisuallyInspected": 15,
+  "coreArchiveActualFilesChecked": 501,
+  "coreArchiveMatchesCommit": false,
+  "coreArchiveCompiledCodeBytesMatchCommit": true,
+  "observations": [
+    {
+      "kind": "non-code-archive-line-ending-difference",
+      "path": "docs/evidence/linux-applications/2026-09-29-shared-desktop-service.json",
+      "committedBytes": 5931,
+      "archivedBytes": 5806,
+      "equalAfterCrLfNormalization": true,
+      "scope": "Only this historical non-code JSON differs; all other 500 members, compiled code, and all seven repair files match commit raw bytes. Report does not claim all 501 members match raw commit bytes."
+    }
+  ],
+  "commands": [
+    "Bundled Python .transfer/review-artha-cwd-audit-20261011.py",
+    "Git status/diff --check/hash-object --path and --no-filters/show baseline/git archive 93650d1",
+    "view_image of all 15 new JPGs"
+  ],
+  "reviewHarnessNotes": [
+    "Initial F:/Python/py39 interpreter lacked cryptography; rerun used bundled Python dependency runtime.",
+    "Initial generic JSON string serialization does not implement TUF canonical raw newline behavior in root public keys; corrected canonical encoder and reran all signature checks. These were review harness setup errors, not repository failures.",
+    "Initial all-archive-members raw equality predicate was broader than the report/source-code requirement. The one historical document line-ending difference was isolated, communicated and recorded rather than claiming full raw archive-to-commit equality."
+  ],
+  "limits": [
+    "Historical private VM checkpoint and service operations were not independently rerun. Public receipts and private helper source were cross-checked; the parent fresh current-state run is evidence of actual guest verification.",
+    "GUI screenshots support the finite English query/export/history flows, not complete thesaurus functionality.",
+    "Full bundled licence closure, guest online download, new-machine registration, migration, cross-version upgrade, Windows junction execution and atomic same-user rename protection remain unverified."
+  ]
+}

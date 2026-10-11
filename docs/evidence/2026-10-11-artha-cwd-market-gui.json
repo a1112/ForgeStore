@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "version": "1.0.3.0",
+  "stage": "formal-managed-independent-market-generation-lifecycle-passed",
+  "originalGeneration": {
+    "generationId": "gen-job-1791694338197-1",
+    "savedOutput": {
+      "file": "output/managed-history.txt",
+      "sizeBytes": 17,
+      "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+      "hex": "68617070790d0a636f6d70757465720d0a"
+    },
+    "firstExitPins": {
+      "ForgeQA/output/managed-history.txt": {
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+        "hex": "68617070790d0a636f6d70757465720d0a"
+      },
+      "users/forge/AppData/Local/artha.log": {
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+        "hex": "68617070790d0a636f6d70757465720d0a"
+      },
+      "users/forge/AppData/Local/artha.conf": {
+        "sizeBytes": 180,
+        "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb"
+      },
+      "Artha/bin/artha.exe": {
+        "sizeBytes": 347446,
+        "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+      },
+      "Artha/bin/gui.glade": {
+        "sizeBytes": 40362,
+        "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+      },
+      "Artha/COPYING": {
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      }
+    },
+    "originalReceiptFinalPins": {
+      "ForgeQA/output/managed-history.txt": {
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a"
+      },
+      "users/forge/AppData/Local/artha.log": {
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a"
+      },
+      "users/forge/AppData/Local/artha.conf": {
+        "sizeBytes": 179,
+        "sha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290"
+      },
+      "Artha/bin/artha.exe": {
+        "sizeBytes": 347446,
+        "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+      },
+      "Artha/bin/gui.glade": {
+        "sizeBytes": 40362,
+        "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+      },
+      "Artha/COPYING": {
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      }
+    },
+    "finalPins": {
+      "ForgeQA/output/managed-history.txt": {
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a"
+      },
+      "users/forge/AppData/Local/artha.log": {
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a"
+      },
+      "users/forge/AppData/Local/artha.conf": {
+        "sizeBytes": 180,
+        "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb"
+      },
+      "Artha/bin/artha.exe": {
+        "sizeBytes": 347446,
+        "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+      },
+      "Artha/bin/gui.glade": {
+        "sizeBytes": 40362,
+        "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+      },
+      "Artha/COPYING": {
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      }
+    },
+    "configurationRawByteEquality": false,
+    "configurationSemanticEquality": true,
+    "configurationPostRollbackChange": "Original third normal exit restored one blank line, 179 to 180 bytes; no key-value change. Old receipt preserved.",
+    "jobs": {
+      "install": {
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 54765,
+            "requestId": "job-1791694338197-1",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 5208,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix",
+            "requestId": "job-1791694338197-1",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 5250,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791694338197-1",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791694338197-1",
+        "id": "job-1791694338197-1",
+        "kind": "install",
+        "status": "succeeded"
+      },
+      "launch": {
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 55569,
+            "requestId": "job-1791694510665-2",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 452616,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix",
+            "requestId": "job-1791694510665-2",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 452658,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791694510665-2",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791694338197-1",
+        "id": "job-1791694510665-2",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      "reopen": {
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 56175,
+            "requestId": "job-1791695018150-3",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 23540,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix",
+            "requestId": "job-1791695018150-3",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 23582,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791695018150-3",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791694338197-1",
+        "id": "job-1791695018150-3",
+        "kind": "launch",
+        "status": "succeeded"
+      }
+    }
+  },
+  "independentMarketGeneration": {
+    "generationId": "gen-job-1791695212085-4",
+    "savedOutput": {
+      "file": "output/market-history.txt",
+      "sizeBytes": 19,
+      "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0",
+      "hex": "667269656e646c790d0a6d616368696e650d0a"
+    },
+    "firstExitPins": {
+      "ForgeQA/output/market-history.txt": {
+        "sizeBytes": 19,
+        "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0",
+        "hex": "667269656e646c790d0a6d616368696e650d0a"
+      },
+      "users/forge/AppData/Local/artha.log": {
+        "sizeBytes": 19,
+        "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0",
+        "hex": "667269656e646c790d0a6d616368696e650d0a"
+      },
+      "users/forge/AppData/Local/artha.conf": {
+        "sizeBytes": 180,
+        "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb"
+      },
+      "Artha/bin/artha.exe": {
+        "sizeBytes": 347446,
+        "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+      },
+      "Artha/bin/gui.glade": {
+        "sizeBytes": 40362,
+        "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+      },
+      "Artha/COPYING": {
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      }
+    },
+    "originalReceiptFinalPins": {
+      "ForgeQA/output/market-history.txt": {
+        "sizeBytes": 19,
+        "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0"
+      },
+      "users/forge/AppData/Local/artha.log": {
+        "sizeBytes": 19,
+        "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0"
+      },
+      "users/forge/AppData/Local/artha.conf": {
+        "sizeBytes": 179,
+        "sha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290"
+      },
+      "Artha/bin/artha.exe": {
+        "sizeBytes": 347446,
+        "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+      },
+      "Artha/bin/gui.glade": {
+        "sizeBytes": 40362,
+        "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+      },
+      "Artha/COPYING": {
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      }
+    },
+    "finalPins": {
+      "ForgeQA/output/market-history.txt": {
+        "sizeBytes": 19,
+        "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0"
+      },
+      "users/forge/AppData/Local/artha.log": {
+        "sizeBytes": 19,
+        "sha256": "9f19ae753198770dd38586cb8086fa809a80cbde6cfac1da2424b54cfaba82f0"
+      },
+      "users/forge/AppData/Local/artha.conf": {
+        "sizeBytes": 179,
+        "sha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290"
+      },
+      "Artha/bin/artha.exe": {
+        "sizeBytes": 347446,
+        "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+      },
+      "Artha/bin/gui.glade": {
+        "sizeBytes": 40362,
+        "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+      },
+      "Artha/COPYING": {
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      }
+    },
+    "configurationRawByteEquality": false,
+    "configurationSemanticEquality": true,
+    "configurationPostRollbackChange": "Second normal exit removed one blank line, 180 to 179 bytes; no key-value change. First receipt preserved.",
+    "jobs": {
+      "launch": {
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 57150,
+            "requestId": "job-1791695240450-5",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 92418,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791695212085-4/prefix",
+            "requestId": "job-1791695240450-5",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 92460,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791695240450-5",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791695212085-4",
+        "id": "job-1791695240450-5",
+        "kind": "launch",
+        "status": "succeeded"
+      },
+      "reopen": {
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 57484,
+            "requestId": "job-1791695338719-6",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 28367,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791695212085-4/prefix",
+            "requestId": "job-1791695338719-6",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 28409,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791695338719-6",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791695212085-4",
+        "id": "job-1791695338719-6",
+        "kind": "launch",
+        "status": "succeeded"
+      }
+    }
+  },
+  "marketInstallation": {
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "artha",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "d82c17bc-6808-4f0e-a67c-9ea2f40f52b6",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791695212085-4",
+    "originalGenerationId": "gen-job-1791694338197-1",
+    "generationId": "gen-job-1791695212085-4",
+    "newGenerationDistinct": true,
+    "oldFullFieldsPreserved": true,
+    "fixture": {
+      "generationId": "gen-job-1791695212085-4",
+      "words": [
+        "friendly",
+        "machine"
+      ],
+      "expectedExport": "friendly\r\nmachine\r\n",
+      "exportPath": "output/market-history.txt",
+      "outputsAbsentBeforeGui": true,
+      "expectedExportBytes": 19
+    },
+    "guiJobId": "job-1791695240450-5",
+    "guiStatus": "running",
+    "coreJobsBeforeGui": 225,
+    "storeRows": 76
+  },
+  "rollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "artha",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "7f4bf2b0-815a-45fe-a8be-b777eace160a",
+      "state": "succeeded"
+    },
+    "exactSelectedGeneration": "gen-job-1791694338197-1",
+    "coreJobsBeforeReopen": 227,
+    "storeRows": 77,
+    "completeOldFieldsAndAllGenerationDataPreserved": true,
+    "reopenJobId": "job-1791695429346-7",
+    "reopenStatus": "running",
+    "afterRollbackCheckpointSha256": "6c696142265fe34c9838ff04deeaf1e3860c6b360c68faaced29c5ee9f72a109"
+  },
+  "rollbackGuiJob": {
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 58017,
+        "requestId": "job-1791695429346-7",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 27279,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix",
+        "requestId": "job-1791695429346-7",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 27321,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791695429346-7",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791694338197-1",
+    "id": "job-1791695429346-7",
+    "kind": "launch",
+    "status": "succeeded"
+  },
+  "allScreenshots": {
+    "01-managed-happy.jpg": {
+      "sizeBytes": 167714,
+      "sha256": "9ab15bac93b1fef4bed7e70d2b286e9165505396d14b4c4175af2952a4cf3f2f"
+    },
+    "02-managed-computer.jpg": {
+      "sizeBytes": 168856,
+      "sha256": "1018dde86c2a2647371715149fc5eda4de74b27f3d5ae96fcea104388d32b0e9"
+    },
+    "03-managed-save-as.jpg": {
+      "sizeBytes": 169081,
+      "sha256": "0fc78abe31f2f4a0d343f88104267487aaedc00b4b4b951608bf1b8120fde883"
+    },
+    "04-managed-save-success.jpg": {
+      "sizeBytes": 172126,
+      "sha256": "55dfe97e25f9573b55d3b8a52b5ad0175db982bf3d56bc6dd43fba1dcbc05bbe"
+    },
+    "05-managed-about.jpg": {
+      "sizeBytes": 186453,
+      "sha256": "9c1556fdffcb4089a2865915d9e43319a27df0dc2e0e4d2a11b83cc6865928d5"
+    },
+    "06-managed-reopen-history.jpg": {
+      "sizeBytes": 135879,
+      "sha256": "2b8fe181ea144dbc100b92c85dea824fe203c88b5427a608a3f4102aa01c7df9"
+    },
+    "07-managed-reopen-computer.jpg": {
+      "sizeBytes": 163217,
+      "sha256": "2edb9aca3f188b8135985616c26c9a65231181ce01546adadcec857873383507"
+    },
+    "08-market-friendly.jpg": {
+      "sizeBytes": 177457,
+      "sha256": "255fa8ad6ea4d012d8cb787c6156f1f1345778bdce052174067c25c7acd424cd"
+    },
+    "09-market-machine.jpg": {
+      "sizeBytes": 168325,
+      "sha256": "e9c9119a21f8e3aa5407a6a735d93184a7da70de8e30a043ccc272c758b12baa"
+    },
+    "10-market-save-as.jpg": {
+      "sizeBytes": 171108,
+      "sha256": "995842e46775e9ec2b8dc419aa82d8ca5efab6b55a41a9da56d970afa3e246c0"
+    },
+    "11-market-save-success.jpg": {
+      "sizeBytes": 191734,
+      "sha256": "a55ca2bd8ebf875b2cb98de841e6d13767c06dda0b320c0ddafd1739e22278a2"
+    },
+    "12-market-reopen-history.jpg": {
+      "sizeBytes": 136016,
+      "sha256": "5bfa405e82eed10a418289c9902fabf395ab9365679e58f7546870a7341662b3"
+    },
+    "13-market-reopen-machine.jpg": {
+      "sizeBytes": 183099,
+      "sha256": "881e6d577d48f5f56188187d80d5da1dfd16843efcf190869dc53df792cb5ff7"
+    },
+    "14-rollback-original-history.jpg": {
+      "sizeBytes": 135828,
+      "sha256": "34306d28385209050bf48d040a2298821ca85ab60ca5e8a1a2870626edbd9b0b"
+    },
+    "15-rollback-computer.jpg": {
+      "sizeBytes": 163151,
+      "sha256": "8fa5753f539290fcb1f79a862692b6d7dc3e932e2781c8ac41d48f771a95816c"
+    }
+  },
+  "outputsWrittenByApplicationGui": true,
+  "verificationHelpersReadOnlyForOutputs": true,
+  "allFiveFormalLaunchesNormalExitZeroAndWineserverStopped": true,
+  "allRecordedStageLabelsRetained": true,
+  "countsAsCompleted": true,
+  "acceptedDistinctWindowsApps": 30,
+  "limitations": [
+    "Only four small English queries and ASCII history exports/recovery were exercised; complete thesaurus acceptance is unverified.",
+    "Advanced relationships, spelling, hotkeys, notifications, Chinese paths/input, full bundled licence closure, Authenticode and reproducibility were not verified.",
+    "Guest online download, fresh-machine registration, configuration migration and cross-version upgrade were not verified.",
+    "Store update/rollback submitted through IPC; GUI button function acceptance is not claimed.",
+    "No atomic protection against malicious same-user concurrent directory renames; Windows junction execution was not tested."
+  ]
+}

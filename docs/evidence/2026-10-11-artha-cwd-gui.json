@@ -1,0 +1,264 @@
+{
+  "savedOutput": {
+    "file": "output/managed-history.txt",
+    "sizeBytes": 17,
+    "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+    "hex": "68617070790d0a636f6d70757465720d0a"
+  },
+  "firstExitPins": {
+    "ForgeQA/output/managed-history.txt": {
+      "sizeBytes": 17,
+      "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+      "hex": "68617070790d0a636f6d70757465720d0a"
+    },
+    "users/forge/AppData/Local/artha.log": {
+      "sizeBytes": 17,
+      "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+      "hex": "68617070790d0a636f6d70757465720d0a"
+    },
+    "users/forge/AppData/Local/artha.conf": {
+      "sizeBytes": 180,
+      "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb"
+    },
+    "Artha/bin/artha.exe": {
+      "sizeBytes": 347446,
+      "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+    },
+    "Artha/bin/gui.glade": {
+      "sizeBytes": 40362,
+      "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+    },
+    "Artha/COPYING": {
+      "sizeBytes": 17987,
+      "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+    }
+  },
+  "finalPins": {
+    "ForgeQA/output/managed-history.txt": {
+      "sizeBytes": 17,
+      "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a"
+    },
+    "users/forge/AppData/Local/artha.log": {
+      "sizeBytes": 17,
+      "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a"
+    },
+    "users/forge/AppData/Local/artha.conf": {
+      "sizeBytes": 179,
+      "sha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290"
+    },
+    "Artha/bin/artha.exe": {
+      "sizeBytes": 347446,
+      "sha256": "a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+    },
+    "Artha/bin/gui.glade": {
+      "sizeBytes": 40362,
+      "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+    },
+    "Artha/COPYING": {
+      "sizeBytes": 17987,
+      "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+    }
+  },
+  "configurationSemanticEquality": true,
+  "configurationRawByteEquality": false,
+  "configurationChange": "Normal second exit removed one blank line; first-exit receipt retained.",
+  "originalGuiWorkflowPassed": true,
+  "marketLifecyclePending": true,
+  "countsAsCompleted": false,
+  "coreJobs": 224,
+  "storeRows": 75,
+  "checkpointSha256": "e4e5f7a1d99e2f2f913a0012703ddc4a27b3a7d1219ac507128cff733a6d0637",
+  "generation": {
+    "bottleId": "gen-job-1791694338197-1",
+    "createdAtMilliseconds": 1791694338205,
+    "definition": {
+      "bottleId": "gui-artha",
+      "category": "education",
+      "compatibilityRating": "unknown",
+      "id": "artha",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\Artha"
+        ],
+        "fileName": "artha_1.0.3.0.exe",
+        "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2"
+      },
+      "launchers": [
+        {
+          "executable": "Artha/bin/artha.exe",
+          "id": "main",
+          "name": "Artha",
+          "workingDirectory": "Artha/bin"
+        }
+      ],
+      "name": "Artha",
+      "publisher": "Sundaram Ramaswamy",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "1.0.3.0"
+    },
+    "definitionDigest": "sha256:3af1481bccc88f3fb32e2c4aa371bfc7f40394ed2f47629931b3c3383704f8d7",
+    "id": "gen-job-1791694338197-1",
+    "launcherDigests": {
+      "main": "sha256:a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791694354113
+  },
+  "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+  "jobs": {
+    "install": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 54765,
+          "requestId": "job-1791694338197-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5208,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix",
+          "requestId": "job-1791694338197-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5250,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791694338197-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791694338197-1",
+      "id": "job-1791694338197-1",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    "launch": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 55569,
+          "requestId": "job-1791694510665-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 452616,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix",
+          "requestId": "job-1791694510665-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 452658,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791694510665-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791694338197-1",
+      "id": "job-1791694510665-2",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    "reopen": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 56175,
+          "requestId": "job-1791695018150-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 23540,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791694338197-1/prefix",
+          "requestId": "job-1791695018150-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 23582,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791695018150-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791694338197-1",
+      "id": "job-1791695018150-3",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  },
+  "screenshots": {
+    "01-managed-happy.jpg": {
+      "sizeBytes": 167714,
+      "sha256": "9ab15bac93b1fef4bed7e70d2b286e9165505396d14b4c4175af2952a4cf3f2f"
+    },
+    "02-managed-computer.jpg": {
+      "sizeBytes": 168856,
+      "sha256": "1018dde86c2a2647371715149fc5eda4de74b27f3d5ae96fcea104388d32b0e9"
+    },
+    "03-managed-save-as.jpg": {
+      "sizeBytes": 169081,
+      "sha256": "0fc78abe31f2f4a0d343f88104267487aaedc00b4b4b951608bf1b8120fde883"
+    },
+    "04-managed-save-success.jpg": {
+      "sizeBytes": 172126,
+      "sha256": "55dfe97e25f9573b55d3b8a52b5ad0175db982bf3d56bc6dd43fba1dcbc05bbe"
+    },
+    "05-managed-about.jpg": {
+      "sizeBytes": 186453,
+      "sha256": "9c1556fdffcb4089a2865915d9e43319a27df0dc2e0e4d2a11b83cc6865928d5"
+    },
+    "06-managed-reopen-history.jpg": {
+      "sizeBytes": 135879,
+      "sha256": "2b8fe181ea144dbc100b92c85dea824fe203c88b5427a608a3f4102aa01c7df9"
+    },
+    "07-managed-reopen-computer.jpg": {
+      "sizeBytes": 163217,
+      "sha256": "2edb9aca3f188b8135985616c26c9a65231181ce01546adadcec857873383507"
+    }
+  },
+  "limits": [
+    "Only Artha Windows 1.0.3.0 (GUI 1.0.3) on Wine 11.14 win64, happy/computer English queries, GUI ASCII-path history export and fresh-process history recovery are covered by this frozen original proof.",
+    "Core native workingDirectory=Artha/bin is resolved from the selected frozen generation under prefix/drive_c. No shell wrapper, resource copy or executable patch; global context and old definitions remain unchanged.",
+    "Chinese input/path, detailed relations, spelling, notifications, hotkey integration, large histories and advanced functions are unverified.",
+    "Fixed source main program GPL-2.0-or-later and exact installed COPYING were checked. WordNet data.noun licence header was read; complete GTK/GLib/Cairo/fonts and other bundled licence closure, Authenticode and reproducible build remain unverified.",
+    "Guest online download, new-machine registration, migration and cross-version upgrades are unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal Core/Store restart were pending at this freeze; subsequent evidence recorded separately.",
+    "Same-user concurrent hostile rename is not atomically prevented by the existing path check. Linux real symlink refusal was tested; Windows junction runtime testing is unverified."
+  ],
+  "stage": "formal-managed-gui-passed-market-pending",
+  "published": false
+}

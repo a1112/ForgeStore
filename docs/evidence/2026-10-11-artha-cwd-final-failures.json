@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "earlierFrozenFailureEvidence": "2026-10-11-artha-core-working-directory-failures.json",
+  "earlierFrozenFailureSha256": "136863b187a2c14ed0dd148eb6a0e7d0e7345b86e813996b819458f2699d3430",
+  "earlierPendingStatusAndBytesRetained": true,
+  "loginFailureResolution": "Transient ten-minute lock expired; existing authorized account was normally logged in and desktop unlocked before formal GUI acceptance. No authentication or lock policy changed.",
+  "followupFailures": [
+    {
+      "stage": "original-first-exit-readback",
+      "failure": "Helper incorrectly assumed launchReport nesting; actual job events are top-level. KeyError stopped proof creation and subsequent reopen.",
+      "resolution": "Preserved failed result, read actual job fields, corrected helper; 17-byte GUI output and normal exit events passed before submitting new reopen task."
+    },
+    {
+      "stage": "signed-catalogue-stage-preflight",
+      "failure": "Naive replacement of role 39 with 40 in a copied helper also altered part of the expected archive SHA-256. Exact archive hash assertion failed before extraction or service mutation.",
+      "resolution": "Bad helper/result retained; retry used the fixed full SHA-256 and verified the 36 public files, role 40 and explicit old root before activation."
+    },
+    {
+      "stage": "pre-restart-output-verification",
+      "failure": "Third normal original-generation Artha exit restored one blank line: 179 to 180 bytes. Initial comparison to frozen second-exit configuration failed; no before-restart checkpoint or service restart was submitted.",
+      "resolution": "Retained failed result and frozen 179-byte receipt. Actual 180-byte pin recorded separately; only File\\n\\n[Settings] to File\\n[Settings] removal exactly reconstructs the prior fixed digest. Keys unchanged, history/export/program/resource/licence bytes unchanged. A new actual before-restart checkpoint was saved/read back before both normal restarts."
+    }
+  ],
+  "configurationChanges": {
+    "originalFirstExit": {
+      "sizeBytes": 180,
+      "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb"
+    },
+    "originalFrozenSecondExit": {
+      "sizeBytes": 179,
+      "sha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290"
+    },
+    "originalActualThirdExit": {
+      "sizeBytes": 180,
+      "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb"
+    },
+    "marketFirstExit": {
+      "sizeBytes": 180,
+      "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb"
+    },
+    "marketFrozenSecondExit": {
+      "sizeBytes": 179,
+      "sha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290"
+    },
+    "semanticEquality": true,
+    "rawByteEqualityAcrossExits": false
+  },
+  "historicalOriginalManagedLaunchFailureRetained": {
+    "job": "job-1791691304343-2",
+    "exitCode": 3,
+    "diagnosticEvidence": "2026-10-11-artha-gui-diagnostic.json",
+    "oldGeneration": "gen-job-1791691244756-1"
+  },
+  "diagnosticCopiesNotAcceptedAsFormalTasks": true,
+  "dependencyOperationsGatedOnSuccessfulPredecessor": true,
+  "allFailuresRetainedWithoutFabricatedHistoricalCheckpoints": true
+}
