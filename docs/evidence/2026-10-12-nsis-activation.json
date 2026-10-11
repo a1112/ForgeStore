@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 55,
+  "rootVersion": 1,
+  "entries": 45,
+  "coreJobs": 334,
+  "fullStoreRows": 102,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-nsis-20261012.acceptance.json#nsis",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a",
+        "size": 1564991,
+        "target": "nsis-3.11-setup.exe",
+        "url": "https://downloads.sourceforge.net/project/nsis/NSIS%203/3.11/nsis-3.11-setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "nsis"
+    },
+    "id": "nsis",
+    "license": "Zlib (main program; COPYING has additional component licenses; full closure unverified)",
+    "name": {
+      "en": "NSIS MakeNSISW",
+      "zhCN": "NSIS 安装器编译工具"
+    },
+    "origin": "https://nsis.sourceforge.io/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "NSIS Contributors",
+    "summary": {
+      "en": "Limited small-script GUI compile, generated silent installer output42 and fresh recompile tested.",
+      "zhCN": "有限小型脚本GUI编译、生成安装器执行与结果42、新进程重编译通过"
+    },
+    "version": "3.11"
+  },
+  "installed": {
+    "appId": "nsis",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "3.11"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "3fdc6cb056280a86f5e9764fcee964f1c528ea5a369341f89c54c1a59d578c79",
+    "coreJobs": 334,
+    "fullStoreRows": 102
+  },
+  "independentMarketGenerationPending": true
+}

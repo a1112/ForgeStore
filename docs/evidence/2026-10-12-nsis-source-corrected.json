@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-12",
+  "applicationId": "nsis",
+  "fixedVersion": "3.11",
+  "officialSite": "https://nsis.sourceforge.io/",
+  "installer": {
+    "fileName": "nsis-3.11-setup.exe",
+    "url": "https://downloads.sourceforge.net/project/nsis/NSIS%203/3.11/nsis-3.11-setup.exe",
+    "finalUrl": "https://zenlayer.dl.sourceforge.net/project/nsis/NSIS%203/3.11/nsis-3.11-setup.exe",
+    "sizeBytes": 1564991,
+    "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a",
+    "publicDigestUrl": "https://sourceforge.net/projects/nsis/files/NSIS%203/3.11/nsis-3.11-setup.exe/download",
+    "publicDigestMatched": true,
+    "transientMirrorQueryOmittedFromPublicRecord": true
+  },
+  "sourceArchive": {
+    "fileName": "nsis-3.11-src.tar.bz2",
+    "url": "https://downloads.sourceforge.net/project/nsis/NSIS%203/3.11/nsis-3.11-src.tar.bz2",
+    "finalUrl": "https://zenlayer.dl.sourceforge.net/project/nsis/NSIS%203/3.11/nsis-3.11-src.tar.bz2",
+    "sizeBytes": 1817928,
+    "sha256": "19e72062676ebdc67c11dc032ba80b979cdbffd3886c60b04bb442cdd401ff4b",
+    "publicDigestUrl": "https://sourceforge.net/projects/nsis/files/NSIS%203/3.11/nsis-3.11-src.tar.bz2/download",
+    "publicDigestMatched": true,
+    "transientMirrorQueryOmittedFromPublicRecord": true
+  },
+  "sourceMembers": {
+    "Contrib/Makensisw/makensisw.cpp": {
+      "reference": "2026-10-12-nsis/source/Contrib/Makensisw/makensisw.cpp",
+      "sizeBytes": 56533,
+      "sha256": "00dd144424c13edb8d67d94c76fa660f9fe7984aecaa61674c7203f3403abcb9"
+    },
+    "Contrib/Makensisw/makensisw.h": {
+      "reference": "2026-10-12-nsis/source/Contrib/Makensisw/makensisw.h",
+      "sizeBytes": 10179,
+      "sha256": "7c0a37bf8d246a5c3bd36481339e2927c354258aa6d2bab0060c16fa1045e29f"
+    },
+    "Contrib/Makensisw/version.cpp": {
+      "reference": "2026-10-12-nsis/source/Contrib/Makensisw/version.cpp",
+      "sizeBytes": 1262,
+      "sha256": "7f0020bb1cc8f592b05c8ea6767983dee8c1d7f1ba5f60f771c352cfe6e88db5"
+    },
+    "COPYING": {
+      "reference": "2026-10-12-nsis/source/COPYING",
+      "sizeBytes": 15632,
+      "sha256": "e7dd514003ab96cb3ddccbc028fe5c795fccf57dc41f21cfb9d4dd16ead23bf5"
+    },
+    "Examples/makensis.nsi": {
+      "reference": "2026-10-12-nsis/source/Examples/makensis.nsi",
+      "sizeBytes": 35197,
+      "sha256": "47fb8d79d484c418e6d5d731fd1f69df81daa3a1fd519f2077a9d71f4003b8a1"
+    },
+    "Source/makenssi.cpp": {
+      "reference": "2026-10-12-nsis/source/Source/makenssi.cpp",
+      "sizeBytes": 24719,
+      "sha256": "a68d8508780d9bcf407400948ea21dd6450d5a49d1180bb7707dc3f01732cfe4"
+    }
+  },
+  "mainProgramLicense": "Zlib (upstream zlib/libpng declaration)",
+  "componentLicenseCaveat": "COPYING includes bzip2/CPL-1.0 plus LZMA linking exception and further notices; full bundled closure unverified",
+  "installedCopyingByteEqualFixedSource": true,
+  "allBundledLicensesVerified": false,
+  "binarySourceCorrespondenceVerified": false,
+  "authenticodeVerified": false,
+  "openPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "nativeInstallerDefinition": {
+    "arguments": [
+      "/S",
+      "/D=C:\\NSIS"
+    ],
+    "fileName": "nsis-3.11-setup.exe",
+    "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a"
+  },
+  "notClaimedLatest": true,
+  "originalSourceEvidence": {
+    "reference": "2026-10-12-nsis-source.json",
+    "sha256": "7248332fa8489b9ea0178f52b0f9c542cf25d9e107894e45ab497e032e9775d1"
+  },
+  "installerParameterVerifiedFromDecodedBytes": {
+    "applicationId": "nsis",
+    "originalEvidencePreserved": true,
+    "originalIncorrectNarrativeBackslashes": 2,
+    "originalIncorrectUtf8Length": 13,
+    "actualParameter": "/D=C:\\NSIS",
+    "actualUtf8Length": 10,
+    "actualUtf8Hex": "2f443d433a5c4e534953",
+    "actualBackslashCount": 1,
+    "submittedAndFrozenDefinitionExactlyMatch": true,
+    "installerOrDefinitionChanged": false,
+    "guestInstallOrGuiRepeatedForCorrection": false,
+    "failure": "Initial final-publication helper asserted mistaken two-backslash narrative; failed before ledger/publication/report or Git change. Four partial post-market evidence files and market fixtures already written are kept unchanged. No dependent guest mutation followed failure. Original frozen acceptance/GUI/source/receipt and role55 kept unchanged. Corrected references signed with higher role56.",
+    "rootCause": "Assistant treated JSON-escaped backslash display as raw parameter bytes; direct decoded definition and request show single backslash and10bytes. No Core normalization defect claimed.",
+    "lockTransition": "Mislabeled initial lock-screen capture moved out of repository and privately preserved; not GUI acceptance. Later fresh login once, real app screenshot and Test Installer action. Login/password images excluded."
+  }
+}

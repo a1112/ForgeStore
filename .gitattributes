@@ -159,3 +159,19 @@ docs/evidence/windows-meld-20261011.acceptance.json -text whitespace=cr-at-eol
 docs/evidence/2026-10-11-meld*.json -text whitespace=cr-at-eol
 docs/evidence/2026-10-11-meld/** -text whitespace=cr-at-eol
 docs/windows-rolling-20261011-meld.md -text whitespace=cr-at-eol
+
+# NSIS fixed upstream and evidence bytes.
+catalogue/candidate-v46/tuf/targets/*.json -text whitespace=cr-at-eol
+catalogue/candidate-v47/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-nsis-20261012*.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-nsis*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-nsis/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261012-nsis.md -text whitespace=cr-at-eol
+
+# Preserve observed fixed NSIS upstream whitespace at exact paths.
+docs/evidence/2026-10-12-nsis/installed-license/COPYING -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-nsis/source/COPYING -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-nsis/source/Contrib/Makensisw/makensisw.cpp -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-nsis/source/Contrib/Makensisw/version.cpp -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-nsis/source/Examples/makensis.nsi -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-nsis/source/Source/makenssi.cpp -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

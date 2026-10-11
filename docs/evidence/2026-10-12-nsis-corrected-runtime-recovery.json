@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "correctedCatalogueActivated": true,
+  "metadataVersion": 56,
+  "rootVersion": 1,
+  "coreJobs": 338,
+  "fullStoreRows": 104,
+  "catalogueEntries": 45,
+  "correctedNsisEntry": {
+    "compatibility": {
+      "evidence": "windows-nsis-20261012.corrected.acceptance.json#nsis",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a",
+        "size": 1564991,
+        "target": "nsis-3.11-setup.exe",
+        "url": "https://downloads.sourceforge.net/project/nsis/NSIS%203/3.11/nsis-3.11-setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "nsis"
+    },
+    "id": "nsis",
+    "license": "Zlib (main program; COPYING has additional component licenses; full closure unverified)",
+    "name": {
+      "en": "NSIS MakeNSISW",
+      "zhCN": "NSIS 安装器编译工具"
+    },
+    "origin": "https://nsis.sourceforge.io/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "NSIS Contributors",
+    "summary": {
+      "en": "Limited small-script GUI compile, generated silent installer output42 and fresh recompile tested.",
+      "zhCN": "有限小型脚本GUI编译、生成安装器执行与结果42、新进程重编译通过"
+    },
+    "version": "3.11"
+  },
+  "oldOtherEntriesFullFieldsPreserved": true,
+  "allJobRowGenerationConfigurationGuardFieldsExactlyPreserved": true,
+  "allCurrentPinsExactlyPreserved": true,
+  "normalRestartFullFieldEqualityPassed": true,
+  "noNewInstallOrGuiJob": true,
+  "checkpoints": {
+    "beforeActivation": {
+      "file": "before-activation.json",
+      "sha256": "ee37209da2631e23f8aa34715bc9fc3440102c5b0f50fceb6815b9906bb6c49e",
+      "coreJobs": 338,
+      "fullStoreRows": 104
+    },
+    "afterActivation": {
+      "file": "after-activation.json",
+      "sha256": "18412130bd50e8b729aa9e365a822e8f14165471e44b01ccba9df9fe796ae89a",
+      "coreJobs": 338,
+      "fullStoreRows": 104
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "bb3f8dd948ac547398b661a2068b102071098dcde22d10861e9f3cb0e705a3b3",
+      "coreJobs": 338,
+      "fullStoreRows": 104
+    }
+  },
+  "oldRole55Retained": true,
+  "trustRootBytesPreserved": true,
+  "oldProcessIds": {
+    "compatforge.service": "158073",
+    "forge-store.service": "158779"
+  },
+  "newProcessIds": {
+    "compatforge.service": "158920",
+    "forge-store.service": "158934"
+  }
+}

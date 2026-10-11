@@ -1,0 +1,26 @@
+{
+  "applicationId": "nsis",
+  "phase": "before-v2-independent-review-and-stage",
+  "sourceBytesPreserved": true,
+  "affectedFileSha256": {
+    "docs/evidence/2026-10-12-nsis/installed-license/COPYING": "e7dd514003ab96cb3ddccbc028fe5c795fccf57dc41f21cfb9d4dd16ead23bf5",
+    "docs/evidence/2026-10-12-nsis/source/COPYING": "e7dd514003ab96cb3ddccbc028fe5c795fccf57dc41f21cfb9d4dd16ead23bf5",
+    "docs/evidence/2026-10-12-nsis/source/Contrib/Makensisw/makensisw.cpp": "00dd144424c13edb8d67d94c76fa660f9fe7984aecaa61674c7203f3403abcb9",
+    "docs/evidence/2026-10-12-nsis/source/Contrib/Makensisw/version.cpp": "7f0020bb1cc8f592b05c8ea6767983dee8c1d7f1ba5f60f771c352cfe6e88db5",
+    "docs/evidence/2026-10-12-nsis/source/Examples/makensis.nsi": "47fb8d79d484c418e6d5d731fd1f69df81daa3a1fd519f2077a9d71f4003b8a1",
+    "docs/evidence/2026-10-12-nsis/source/Source/makenssi.cpp": "a68d8508780d9bcf407400948ea21dd6450d5a49d1180bb7707dc3f01732cfe4"
+  },
+  "exactRules": [
+    "docs/evidence/2026-10-12-nsis/installed-license/COPYING -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-nsis/source/COPYING -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-nsis/source/Contrib/Makensisw/makensisw.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-nsis/source/Contrib/Makensisw/version.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-nsis/source/Examples/makensis.nsi -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-nsis/source/Source/makenssi.cpp -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof"
+  ],
+  "scope": "Only the six fixed upstream/license paths reported by the real Git gate; all original source/gui/receipt, first review/report and first stage freeze byte streams are preserved.",
+  "gitattributesBeforeSha256": "20bf2b608fff9d5109cc0145163e01e3000bfb07f2d39e9ff6f883356b1aa4dd",
+  "gitattributesAfterSha256": "da3dd11f2c1b5beca3ebb41c2053a9a653c1086a2e53db441be081fc4aa0cbc1",
+  "newStageAndCommitAuditPendingAtFreeze": true,
+  "guestOrTrustChanged": false
+}

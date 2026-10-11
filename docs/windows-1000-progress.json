@@ -435,6 +435,17 @@
       "signedCatalogue": "catalogue/candidate-v45/tuf",
       "publication": "docs/evidence/2026-10-11-meld-publication.json",
       "limitation": "Limited mouse-only comparison, one right-to-left difference-block merge, GUI Save Left Pane As and explicit fresh-process reopen of two small Chinese-name UTF8/LF text pairs. Keyboard editing/navigation/shortcuts remain broken and unfixed. Store IPC cached same-version update/exact original rollback/restart passed. No large files/other encoding/three-way/folder/VCS/advanced/direct Chinese input/network/new machine/migration/cross-version/unattended/full bundle-license closure accepted. Third GUI registry/log variation privately backed up, current pins preserved."
+    },
+    {
+      "id": "nsis",
+      "version": "3.11",
+      "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a",
+      "sizeBytes": 1564991,
+      "license": "Zlib (main program; COPYING has additional component licenses; full closure unverified)",
+      "evidence": "docs/evidence/windows-nsis-20261012.corrected.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v47/tuf",
+      "publication": "docs/evidence/2026-10-12-nsis-publication.json",
+      "limitation": "Limited two small UTF8BOM/CRLF Chinese-name NSIS scripts: GUI compile, Test Installer silent fixture execution, exact Chinese payload copy and IntOp21+21/40+2 result42, explicit fresh-process same-byte recompile. Store IPC cached same-version update/exact original rollback/restart passed. Broad syntax/plugins/macros/other compressors/UAC/admin/uninstall/registry/large/advanced/direct Chinese input/network/new machine/migration/cross-version/unattended/full component license closure unverified. Synthetic installers excluded from app count. Actual single-backslash installer parameter retained,10bytes verified; original two-backslash/13byte narrative corrected separately; third GUI registry changes privately backed up/current pins preserved."
     }
   ],
   "queue": [
@@ -628,12 +639,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "42/1000 Windows accepted with explicit finite limits;13 unresolved including installed unaccepted BowPad. Meld3.22.2 limited mouse compare/merge/save/fresh reopen and local market lifecycle only; keyboard navigation/editing remains broken. candidate-v45/root1/role54,331 complete Core tasks/102 full Store SQLite rows. Strict guest rolling-current-state-meld-v2-20261011.py. Preserve frozen evidence/trust and separate third GUI registry/log changes. Push awaits restored GitHub authentication; no new codes each round.",
+  "next": "43/1000 Windows accepted with finite limits;13 unresolved including installed unaccepted BowPad. NSIS3.11 limited GUI small-script compile/generated fixture result42/fresh recompile and local market lifecycle only. candidate-v47/root1/role56,338 complete Core tasks/104 full Store SQLite rows. Strict guest rolling-current-state-nsis-v2-20261012.py. Preserve frozen history/trust and separate third GUI registry changes; original parameter two-backslash/13byte narrative corrected to actual one-backslash/10bytes without rewriting old record. Push awaits restored GitHub auth; no recurring new codes.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 42,
+    "acceptedLocalMarket": 43,
     "explicitlyBlockedCandidates": 13,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -641,25 +652,25 @@
     "pendingCandidates": 13
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v45/tuf",
-    "metadataVersion": 54,
-    "catalogueEntries": 44,
-    "acceptedDistinctWindowsApps": 42,
+    "signedCatalogue": "catalogue/candidate-v47/tuf",
+    "metadataVersion": 56,
+    "catalogueEntries": 45,
+    "acceptedDistinctWindowsApps": 43,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-meld-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-nsis-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-transmission-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-meld-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-meld-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-nsis-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-11-meld-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-nsis-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-meld.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-meld-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-nsis.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-nsis-current-state-v2.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

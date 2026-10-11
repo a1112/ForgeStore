@@ -1,0 +1,17 @@
+# NSIS 3.11 Windows 有限编译与测试流程（2026-10-12）
+
+新增1款，累计43/1000；13个未解决候选和旧字段保留。日期采用亚洲/上海，实际客体UTC时间保持。Ubuntu仍两款独立验收，本轮未切换VM。合成脚本、payload、生成的安装器仅为测试夹具，不另计应用。
+
+官方SourceForge固定安装包1564991字节SHA-256 38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a，源码1817928字节SHA-256 19e72062676ebdc67c11dc032ba80b979cdbffd3886c60b04bb442cdd401ff4b，分别匹配官方固定下载页面公开SHA。不称最新版本。6份源码成员固定：COPYING、Examples/makensis.nsi、Source/makenssi.cpp及3份Contrib/Makensisw源文件。初始选取大小写错误仅提取3份，按真实tar路径增加3份后冻结，没有虚构初始提取。主程序zlib/libpng声明；安装COPYING15632字节与固定源码原字节同。COPYING另有bzip2/CPL1.0、LZMA链接例外及其他通知，未核完整组件许可闭包、二进制源码对应、Authenticode/PGP/可复现构建。
+
+原生NSIS托管安装成功，原代次gen-job-1791738228544-1、独立市场gen-job-1791738657408-4，冻结定义sha256:d00fd285a6066da353a7ba533e5230db22f78f7f8bd2ade4bf2ad06019879169。两代次442安装文件分别固定且全部原字节同。makensisw.exe1139200字节SHA-256 e1c77f0b4615ec5293be7f19f811e7fc907d36ef907658f4cc84f63ca77572f7。实际参数/S和/D=C:后一个反斜杠再NSIS，UTF8长度10、hex 2f443d433a5c4e534953；原冻结说明误称两个反斜杠、失败收据误记13，原字节保持，later-observations与publication另作更正。原始JSON显示的转义被误读，实际decoded参数与提交、冻结定义均一个反斜杠，不称Core归一化缺陷，未因此重装。没有Core/程序/globalcontext/launcher环境/workingDirectory/字体/DLL/runtime修复。
+
+正式原380字节、市场371字节中文名UTF8BOM/CRLF脚本，通过MakeNSISW正常自动GUI编译，窗口明确Finished Successfully与NSIS v3.11。输出PE分别39143/39137字节。点击真实Test Installer运行生成的silent/user级夹具安装器，分别实际复制52/48字节UTF8中文payload，与输入原字节精确同；IntOp21+21和40+2实际生成15/13字节ORIGINAL42=42与MARKET42=42 CRLF结果，验证助手不写输出。两个新正式进程显式重新打开脚本并编译，输出PE原字节相同；回滚后原进程同样重新编译且原输出保持。五次GUI真实Close正常退出0与wineserver停止。截图01/02原，03/04市场，05回滚。全部输入原字节保持。未验收GUI脚本编辑、广泛语法/includes/macros/plugins、其他压缩、复杂对话框/UAC/admin/卸载/注册表/大型安装器、直接中文输入、联网、新机注册、迁移/跨版本或完整无人值守。
+
+初次市场观察遇自然锁屏，误标截图移出库私有保留；批量坐标点击只唤起登录，不能当编译或Test Installer证据。确认新鲜登录框后已有授权账号一次正常提交，实际应用窗口重新截图并点击Test Installer。没有改认证或锁屏设置，不保存密码/登录画面。两条猜测旧Meld助手不存在的只读读取保留为辅助失败，没有客体依赖变更。
+
+当前candidate-v47/root1/targets、snapshot、timestamp56；45目录项=43应用+2内部夹具，92实际签名目标、52公共文件。全部旧目标pins及root原字节保持，旧角色54及本轮角色55原证明和目录保持，56引用更正收据；原55完整生命周期CP ee37209da2631e23f8aa34715bc9fc3440102c5b0f50fceb6815b9906bb6c49e保持。更正目录激活前完整CP保存读回，再启动角色56且正常两服务重启，338/104全部字段、应用数据和定义保持，没有新安装或GUI任务。全部历史不改，MPC-HC32原证明与33更正继承。Store IPC预缓存同版本更新和精确回滚成功，GUI更新/回滚按钮未验收。337 Core/103 Store回滚前完整检查点先保存读回，回滚后337/104旧全字段/全部代次保持，恢复精确原代次；第三原GUI后338/104正常两服务重启前后完整全字段相同。
+
+第三原GUI改变system.reg/user.reg原字节、大小不变；前后实际原文及287/20行差分私有保留，原因未确定，不称跨第三GUI原字节保持。其余程序/输入输出/市场和旧固定证据不变，当前新pins跨重启同。更正后私有完整检查点nsis-evidence-correction-20261012/after-restart.json SHA-256 bb3f8dd948ac547398b661a2068b102071098dcde22d10861e9f3cb0e705a3b3，当前只读rolling-current-state-nsis-v2-20261012.py必须通过严格SSH客体运行。旧Meld331/102等助手仅历史。覆盖固定证据、本轮442安装文件和有限配置/registry，不称遍历全部应用文件系统，不把最近64条IPC摘要替代完整SQLite历史。所有依赖操作逐步assert，false/非终态/缺断言/检查点失败即停。
+
+1277旧immutable及17原source/gui/acceptance冻结文件和市场待执行历史标签保持，初次最终发布助手在参数断言失败后停止，已写四份部分后续收据和市场夹具保持；当时未更新台账或report，未执行依赖客体变更。追加corrected source/gui/acceptance与role56，不改旧证明。后续市场完成单独记录。签名私钥、凭据、密码、登录画面和完整私有检查点不入库。不自动息屏保持。GitHub认证既有阻塞，本轮未重新检查或发设备码、未推送；恢复验证后普通推送累积提交。独立审查、真实index/commit字节检查另记。
