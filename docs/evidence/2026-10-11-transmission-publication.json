@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "transmission",
+  "version": "4.0.6",
+  "variant": "Qt5 Windows x64",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 41,
+  "signedCatalogue": "catalogue/candidate-v44/tuf",
+  "metadataVersion": 53,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 43,
+  "excludedFixtures": 2,
+  "signedActualTargets": 87,
+  "publicCatalogueFiles": 49,
+  "sourceEvidence": {
+    "reference": "2026-10-11-transmission-source.json",
+    "sha256": "a01e594d23ea054e9379d14fc33e4fd0b2a27db7f52e53179c726b4bcb326861"
+  },
+  "originalAcceptance": {
+    "reference": "windows-transmission-20261011.acceptance.json",
+    "sha256": "1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f"
+  },
+  "originalGeneration": "gen-job-1791731934014-4",
+  "marketGeneration": "gen-job-1791732876165-7",
+  "definitionDigest": "sha256:18f592b3bd360e69bc36e271f51f7e251bce624550cc8eb4ea22f12dfc404087",
+  "originalSave": {
+    "payloadBytes": 4096,
+    "pieceLength": 32768,
+    "pieceCount": 1,
+    "allPieceHashesMatchIndependentPayloadSha1": true,
+    "infoHashSha1": "859625458c0b7f287a661e69c988274227de4a4a",
+    "comment": "ORIGINAL42",
+    "infoNameUtf8": "原始数据.bin",
+    "createdBy": "Transmission/4.0.6 (38c164933e)",
+    "trackerless": true,
+    "bencodeCanonicalAndFullyParsed": true,
+    "generationId": "gen-job-1791731934014-4",
+    "inputPin": {
+      "sizeBytes": 4096,
+      "sha256": "60cc4e643d1a6b7ccfc5acdc5075725f9d2eb5fa3c81af4bec48b0df63de6f65"
+    },
+    "inputRelativePath": "TransmissionTests/原始数据.bin",
+    "inputUnchanged": true,
+    "outputPin": {
+      "sizeBytes": 216,
+      "sha256": "0f96dede8c779feeece7f699dc9feedc9bd171fdbff7c2aaa74bbbfd6de8b8e0"
+    },
+    "outputRelativePath": "TransmissionTests/原始数据.torrent"
+  },
+  "marketSave": {
+    "payloadBytes": 4096,
+    "pieceLength": 32768,
+    "pieceCount": 1,
+    "allPieceHashesMatchIndependentPayloadSha1": true,
+    "infoHashSha1": "72d16d61d2873a3ff81ab84242cf88ad26b86ab4",
+    "comment": "MARKET42",
+    "infoNameUtf8": "市场数据.bin",
+    "createdBy": "Transmission/4.0.6 (38c164933e)",
+    "trackerless": true,
+    "bencodeCanonicalAndFullyParsed": true,
+    "generationId": "gen-job-1791732876165-7",
+    "inputPin": {
+      "sizeBytes": 4096,
+      "sha256": "e02491650473da92a53f9b0521f0d2c451a64bde1e2ed6298421f0d51029e6a3"
+    },
+    "inputRelativePath": "TransmissionTests/市场数据.bin",
+    "inputUnchanged": true,
+    "outputPin": {
+      "sizeBytes": 213,
+      "sha256": "56041bc2db7cdc9c081b7920841ddc5c9dec54d245cfa9bf6bd650a7d3cf9738"
+    },
+    "outputRelativePath": "TransmissionTests/市场数据.torrent"
+  },
+  "fiveNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "action": "update",
+    "appId": "transmission",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "96188b4e-98d5-45e0-bc32-58aec9e2beac",
+    "state": "succeeded"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "transmission",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "7db606e0-9519-4ba4-bf83-3cf147a9152c",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791731934014-4",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 322,
+    "beforeRollbackStoreRows": 99,
+    "afterRollbackCoreJobs": 322,
+    "afterRollbackStoreRows": 100,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "6d293f2983d994b69b28a28df4e3d6161e16262ec316aa3f6e5063ac7ca1354c",
+      "coreJobs": 322,
+      "fullStoreRows": 100
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 323,
+  "fullStoreRows": 100,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationsAndFixedEvidenceDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalByteChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3463661,
+        "sha256": "7a2f7748d460640c42671e38925e13e6816775d7b88ecfb61e6cfe7ea2e6053c"
+      },
+      "after": {
+        "sizeBytes": 3463661,
+        "sha256": "0d660a695aeaaf651f483ed4a6561a7ed6c2efe5f03d24e69d67867d179bde3c"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 287,
+      "textDiffPreservedPrivately": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 101499,
+        "sha256": "8c974cae0fac52bfa6c3dfbbefd9227539bfab7c054f0764073489bbbc57c016"
+      },
+      "after": {
+        "sizeBytes": 101499,
+        "sha256": "2a348c30cbb3d6bef322286f13e701bb7ccd6d8b53c675d11026e9d4f5b821fb"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 20,
+      "textDiffPreservedPrivately": true
+    },
+    "drive_c/users/forge/AppData/Local/transmission/Resume/859625458c0b7f287a661e69c988274227de4a4a.resume": {
+      "before": {
+        "sizeBytes": 690,
+        "sha256": "0808c04056a62a2ada10546a730a097dd33a249e73cd3c1340cf3f0bdcc5ee94"
+      },
+      "after": {
+        "sizeBytes": 699,
+        "sha256": "5f9cda2c6f5585a80509e29492f82b996e0e14aef4015b200c02aeb9e216f0bb"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 5,
+      "textDiffPreservedPrivately": true
+    }
+  },
+  "currentDataAndConfigurationMatchedAcrossRestart": true,
+  "originalHistoricalFrozenFiles": 23,
+  "oldImmutableFilesMatched": 1091,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "Only one small4096-byte Chinese-name single-file trackerless torrent: GUI creation with ASCII comment, independent bencode/length/name/piece-SHA1 validation, explicit fresh-process reopen, paused add with original data folder, GUI Verify Local Data and properties Have100%, availability100%, statePaused. Synthetic file/torrent is not another application.",
+    "No peer connectivity, tracker/DHT/PEX, download/upload/seeding, magnet URI, private/multi-file/large torrents, damaged data, remote daemon/RPC, direct Chinese keyboard input, advanced features, fresh-machine registration, migration or cross-version upgrade accepted. Initial file-sharing notice and local-session chooser manually handled; unattended startup unverified. GUI Store update/rollback buttons unverified.",
+    "Fixed source COPYING and Qt source state GPL-2.0-only OR GPL-3.0-only, future license conditional on Mnemosyne endorsement, with OpenSSL linking permission. Installer/source local fixed HTTPS SHA only; API403 prevented upstream size/digest check. Complete Qt/OpenSSL/curl/DBus/translations license closure, installed-license comparison, binary-source correspondence, Authenticode/OpenPGP and reproducible build unverified.",
+    "Default MSI install selected Qt client/common libraries; actual113 files pinned and daemon/command-line tools absent. First ADDLOCAL definition rejected by closed Core property allowlist before application/job creation; corrected by omitting property and keeping native MSI defaults, without conditions bypass, Core/program/global context/launcher environment/working directory/font/DLL/runtime modification.",
+    "Two independent4096-byte Chinese-name single-file trackerless payloads tested; GUI-generated torrents216/213bytes. Five formal GUI tasks normalCtrlQ exit0 and wineserver stop. Cached same-version update and exact original rollback via Store IPC plus normal service restart passed. GUI update/rollback buttons and full BitTorrent/network client unverified.",
+    "Third original GUI changed system.reg,user.reg and one resume byte stream. Before/after actual raw bytes and287/20/5 diff lines kept privately; causes unestablished. Original proofs immutable; current new pins matched across restart. Explicit rollback file reopen recognized duplicate; original paused item re-verified, no duplicate added."
+  ],
+  "remotePushed": false,
+  "githubAuthenticationStillPendingFromPriorRound": true,
+  "authenticationCheckedThisRound": false,
+  "newDeviceCodeIssued": false,
+  "networkTransfersAccepted": false,
+  "fullBitTorrentClientAccepted": false,
+  "guiAboutVersionObserved": false,
+  "unattendedStartupAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false
+}

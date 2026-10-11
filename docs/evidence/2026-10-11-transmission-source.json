@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "transmission",
+  "fixedVersion": "4.0.6",
+  "variant": "Qt5 Windows x64",
+  "officialSite": "https://transmissionbt.com/",
+  "officialRelease": "https://github.com/transmission/transmission/releases/tag/4.0.6",
+  "installer": {
+    "fileName": "transmission-4.0.6-qt5-x64.msi",
+    "url": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6-qt5-x64.msi",
+    "sizeBytes": 18149376,
+    "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d",
+    "officialApiDigestMatched": false
+  },
+  "sourceArchive": {
+    "fileName": "transmission-4.0.6.tar.xz",
+    "url": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6.tar.xz",
+    "sizeBytes": 11908296,
+    "sha256": "2a38fe6d8a23991680b691c277a335f8875bdeca2b97c6b26b598bc9c7b0c45f",
+    "upstreamPublishedDigestVerified": false
+  },
+  "api": {
+    "url": "https://api.github.com/repos/transmission/transmission/releases/tags/4.0.6",
+    "status": 403,
+    "artifactSizeMatched": false,
+    "digest": null
+  },
+  "sourceMembers": {
+    "dist/msi/Transmission.wxs": {
+      "reference": "2026-10-11-transmission/source/dist/msi/Transmission.wxs",
+      "sizeBytes": 6334,
+      "sha256": "7ec27aa2f5ab0eb15595ec11bf487aa7deff0d3fedbe9807aea7d83c476b8831"
+    },
+    "dist/msi/components/CliTools.wxs": {
+      "reference": "2026-10-11-transmission/source/dist/msi/components/CliTools.wxs",
+      "sizeBytes": 1102,
+      "sha256": "5f5f847b560c4e81b133f4c6aea9f0299adcee74b4e0aa3f896b0581b587a779"
+    },
+    "dist/msi/components/CommonLibs.wxs": {
+      "reference": "2026-10-11-transmission/source/dist/msi/components/CommonLibs.wxs",
+      "sizeBytes": 1009,
+      "sha256": "c8bd0b04bb3fb4a0ea687f77564c46e7b8bd31af203093f54ecc347a2453fe7c"
+    },
+    "dist/msi/components/Daemon.wxs": {
+      "reference": "2026-10-11-transmission/source/dist/msi/components/Daemon.wxs",
+      "sizeBytes": 1275,
+      "sha256": "79834f78a75659198475f52277c4460f62053e0ff45950c2508e2b47bb36eef9"
+    },
+    "dist/msi/components/QtClient.wxs": {
+      "reference": "2026-10-11-transmission/source/dist/msi/components/QtClient.wxs",
+      "sizeBytes": 9169,
+      "sha256": "6d4041254f88428edf77b6aefed1f9593f3e607c68b6f494d8002e61d7f5ea28"
+    },
+    "qt/Application.cc": {
+      "reference": "2026-10-11-transmission/source/qt/Application.cc",
+      "sizeBytes": 18838,
+      "sha256": "cae8c6b694e782c0fb0d05c362f70a61b107d4695ba90a5ec183d92187c92cf9"
+    },
+    "qt/MakeDialog.cc": {
+      "reference": "2026-10-11-transmission/source/qt/MakeDialog.cc",
+      "sizeBytes": 8381,
+      "sha256": "6bcb4b5d9e83dcca08a8b290423b6456c950c8e7889e1c98d456d6db9c70e361"
+    },
+    "qt/MakeDialog.ui": {
+      "reference": "2026-10-11-transmission/source/qt/MakeDialog.ui",
+      "sizeBytes": 7879,
+      "sha256": "aa1d05d275d2d1fdc1c298e613c017837ae24b780c739b65bc959171b93a1413"
+    },
+    "COPYING": {
+      "reference": "2026-10-11-transmission/source/COPYING",
+      "sizeBytes": 711,
+      "sha256": "f56732960a61ecf3b9637404eef1a39221d2006336a98792b7b65a79f155449c"
+    },
+    "README.md": {
+      "reference": "2026-10-11-transmission/source/README.md",
+      "sizeBytes": 4267,
+      "sha256": "c44f4019a88c028df432f98808605084a5f1a1e536d6ab670a095180e4db0b5c"
+    }
+  },
+  "mainProgramLicense": "GPL-2.0-only OR GPL-3.0-only; OpenSSL linking permission; future-endorsed-license condition",
+  "installedLicenseComparisonVerified": false,
+  "allBundledLicensesVerified": false,
+  "authenticodeVerified": false,
+  "openPgpVerified": false,
+  "binarySourceCorrespondenceVerified": false,
+  "reproducibleBuildVerified": false,
+  "managedMsiStructureInspectionPassed": true,
+  "nativeInstallerDefinition": {
+    "fileName": "transmission-4.0.6-qt5-x64.msi",
+    "msi": {
+      "architecture": "x86_64",
+      "handler": {
+        "action": "install",
+        "kind": "msiexec",
+        "properties": {},
+        "reboot": "suppress",
+        "ui": "none"
+      },
+      "maximumRuntimeMilliseconds": 300000,
+      "sizeBytes": 18149376
+    },
+    "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d"
+  },
+  "notClaimedLatest": true
+}

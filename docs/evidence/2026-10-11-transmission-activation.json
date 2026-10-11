@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 53,
+  "rootVersion": 1,
+  "entries": 43,
+  "coreJobs": 319,
+  "fullStoreRows": 98,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-transmission-20261011.acceptance.json#transmission",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d",
+        "size": 18149376,
+        "target": "transmission-4.0.6-qt5-x64.msi",
+        "url": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6-qt5-x64.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "transmission"
+    },
+    "id": "transmission",
+    "license": "GPL-2.0-only OR GPL-3.0-only (OpenSSL linking permission; full bundle closure unverified)",
+    "name": {
+      "en": "Transmission",
+      "zhCN": "Transmission 种子工具"
+    },
+    "origin": "https://transmissionbt.com/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Transmission Project",
+    "summary": {
+      "en": "Limited offline trackerless torrent creation, metadata hashes and fresh-process local-file verification tested; network transfers unverified.",
+      "zhCN": "有限离线种子创建、元数据摘要和新进程本地文件核验已测；联网传输未验收"
+    },
+    "version": "4.0.6"
+  },
+  "installed": {
+    "appId": "transmission",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "4.0.6"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "0272bbacc1b9e36fe12e589dfd398fd2985bae8fc3c8b74b067cb0f21d1e4788",
+    "coreJobs": 319,
+    "fullStoreRows": 98
+  },
+  "independentMarketGenerationPending": true
+}

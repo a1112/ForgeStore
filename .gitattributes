@@ -142,3 +142,13 @@ docs/evidence/2026-10-11-bowpad/source/ext/scintilla/License.txt -text whitespac
 docs/evidence/2026-10-11-bowpad/source/ext/editorconfig-core/LICENSE -text whitespace=cr-at-eol
 docs/evidence/2026-10-11-bowpad/source/wine-11.14-uiribbon.c -text whitespace=cr-at-eol
 docs/evidence/2026-10-11-bowpad/source/wine-uiribbon-Makefile.in -text whitespace=cr-at-eol
+
+# Transmission fixed upstream and evidence bytes.
+catalogue/candidate-v44/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-transmission-20261011.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-transmission*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-transmission/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261011-transmission.md -text whitespace=cr-at-eol
+
+# Preserve the observed upstream README line9 trailing spaces.
+docs/evidence/2026-10-11-transmission/source/README.md -text whitespace=cr-at-eol,-blank-at-eol

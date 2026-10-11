@@ -1,0 +1,20 @@
+{
+  "applicationId": "transmission",
+  "phase": "first-real-stage",
+  "gate": "git diff --cached --check",
+  "passed": false,
+  "exitCode": 2,
+  "finding": "Fixed upstream README.md line9 contains two trailing spaces. First host preflight reported no trailing whitespace and did not detect actual Git gate issue.",
+  "sourceSha256": "c44f4019a88c028df432f98808605084a5f1a1e536d6ab670a095180e4db0b5c",
+  "actualLine9Hex": "2020",
+  "commitPerformed": false,
+  "fullIndexRawByteAuditAfterStoppedGate": true,
+  "indexFrozenFiles": 1183,
+  "allIndexAndWorkingTreeBytesMatchFirstFreeze": true,
+  "oldImmutableFiles": 1091,
+  "firstFreezeManifestPreserved": "transmission-all-frozen-files-20261011.json",
+  "firstReviewPreserved": "2026-10-11-transmission-independent-review.json",
+  "projectSourceBytesModified": false,
+  "guestOrTrustChanged": false,
+  "failurePreserved": true
+}

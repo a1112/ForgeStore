@@ -1,0 +1,1121 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791732876165-7",
+    "createdAtMilliseconds": 1791732876171,
+    "definition": {
+      "bottleId": "gui-transmission",
+      "category": "internet",
+      "compatibilityRating": "unknown",
+      "id": "transmission",
+      "installer": {
+        "fileName": "transmission-4.0.6-qt5-x64.msi",
+        "msi": {
+          "architecture": "x86_64",
+          "handler": {
+            "action": "install",
+            "kind": "msiexec",
+            "properties": {},
+            "reboot": "suppress",
+            "ui": "none"
+          },
+          "maximumRuntimeMilliseconds": 300000,
+          "sizeBytes": 18149376
+        },
+        "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d"
+      },
+      "launchers": [
+        {
+          "executable": "Program Files/Transmission/transmission-qt.exe",
+          "id": "main",
+          "name": "Transmission Qt"
+        }
+      ],
+      "name": "Transmission",
+      "publisher": "Transmission Project",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-msi",
+        "qt5"
+      ],
+      "version": "4.0.6"
+    },
+    "definitionDigest": "sha256:18f592b3bd360e69bc36e271f51f7e251bce624550cc8eb4ea22f12dfc404087",
+    "id": "gen-job-1791732876165-7",
+    "launcherDigests": {
+      "main": "sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791732890709
+  },
+  "definition": {
+    "bottleId": "gui-transmission",
+    "category": "internet",
+    "compatibilityRating": "unknown",
+    "id": "transmission",
+    "installer": {
+      "fileName": "transmission-4.0.6-qt5-x64.msi",
+      "msi": {
+        "architecture": "x86_64",
+        "handler": {
+          "action": "install",
+          "kind": "msiexec",
+          "properties": {},
+          "reboot": "suppress",
+          "ui": "none"
+        },
+        "maximumRuntimeMilliseconds": 300000,
+        "sizeBytes": 18149376
+      },
+      "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d"
+    },
+    "launchers": [
+      {
+        "executable": "Program Files/Transmission/transmission-qt.exe",
+        "id": "main",
+        "name": "Transmission Qt"
+      }
+    ],
+    "name": "Transmission",
+    "publisher": "Transmission Project",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-msi",
+      "qt5"
+    ],
+    "version": "4.0.6"
+  },
+  "installedFiles": {
+    "zlib.dll": {
+      "sizeBytes": 85504,
+      "sha256": "c2d9e28fb4b36a0e60a2d3527b3c40d6df7f93768817b77b00bcf1fa8b60eb01"
+    },
+    "Qt5DBus.dll": {
+      "sizeBytes": 429568,
+      "sha256": "32885b483961f75a7517473cfac9ddbd4d14bd8cd9cb5c2384ba6e086bcc736d"
+    },
+    "libcurl.dll": {
+      "sizeBytes": 348672,
+      "sha256": "057af6d28155993fe7d7bb99b6b2501b36dfde7f460d3e27f922e3b4b8f7c2bc"
+    },
+    "Qt5Network.dll": {
+      "sizeBytes": 1347072,
+      "sha256": "54a91534ce1b0fceeb974482a99b213dac7c2225f5f0447cbc4bfe86a7696bf7"
+    },
+    "Qt5Core.dll": {
+      "sizeBytes": 6009344,
+      "sha256": "891f5f976d0d893fec16c606df33f92be12a0b94930dd202f95c2d7c09050467"
+    },
+    "Qt5WinExtras.dll": {
+      "sizeBytes": 229888,
+      "sha256": "4a196ed4980c7be29e023cd20d5bdc5bde94f019fdb2d4dd51959b0fc52f9aec"
+    },
+    "transmission-qt.exe": {
+      "sizeBytes": 3017472,
+      "sha256": "f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259"
+    },
+    "qt.conf": {
+      "sizeBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "Qt5Widgets.dll": {
+      "sizeBytes": 5502976,
+      "sha256": "6c53ede3eb55ef04b305f2cb6eaa99900e2e44a776eecd590a0c1e1548e6cd76"
+    },
+    "Qt5Gui.dll": {
+      "sizeBytes": 4641280,
+      "sha256": "28230478c8ab4b3d4aeabaebacf96ca9326b89994b9f3be79d28409b66b1ef63"
+    },
+    "libcrypto-3-x64.dll": {
+      "sizeBytes": 4450304,
+      "sha256": "4983d27c0f93a9f03776e8ef0336512c62dcc602dacdbb68b24f2481f041b2c9"
+    },
+    "Qt5Svg.dll": {
+      "sizeBytes": 323072,
+      "sha256": "aa2ae91cd67728307b07c2a0df253eb33ad8be4bdbab0ab94bede66615e38cbb"
+    },
+    "dbus-1.dll": {
+      "sizeBytes": 422912,
+      "sha256": "99c9d3d72130e121bd5e042943ce18a66837d6d17192e113eef72cd885e3096e"
+    },
+    "libssl-3-x64.dll": {
+      "sizeBytes": 685056,
+      "sha256": "9bddd5a16e4cf5d38cd02080afc507aaae06692a680e9a3018b6e29fed24b331"
+    },
+    "translations/transmission_tr.qm": {
+      "sizeBytes": 49164,
+      "sha256": "991386ede70a8b74a9f0cf8dd225320cd4d7aa08833230078b3f67e07d2602ca"
+    },
+    "translations/qt_sl.qm": {
+      "sizeBytes": 228428,
+      "sha256": "c44e0313a9414cc0e490b65b0c036fa11bca959353b228886547bc2c8492034f"
+    },
+    "translations/qtbase_da.qm": {
+      "sizeBytes": 181387,
+      "sha256": "7d1e5ca3310b54d104c19bf2abd402b38e584e87039a70e153c4a9af74b25c22"
+    },
+    "translations/transmission_sv.qm": {
+      "sizeBytes": 51470,
+      "sha256": "6cb8585977ebb7b4db411da5473913e8d9cd35150f38a81b65e6ae372da0e0e1"
+    },
+    "translations/transmission_pt_PT.qm": {
+      "sizeBytes": 46246,
+      "sha256": "5adf42671ceb84065683c7ffae6aeefc5e09866f5b853a3e16da216d6ae0c6a2"
+    },
+    "translations/transmission_pt.qm": {
+      "sizeBytes": 45794,
+      "sha256": "d1e1bdeeaf3d4aae7385205bb3028d90260593fe2d50338a7e0c028725b6e7f0"
+    },
+    "translations/qtbase_ru.qm": {
+      "sizeBytes": 203767,
+      "sha256": "3da6605668f9178d11a838c4515478084dcfb4f9cf22f99d7a92b492db9c224b"
+    },
+    "translations/qtbase_ja.qm": {
+      "sizeBytes": 129911,
+      "sha256": "cba382acc44d3680d400f2c625de93d0c4bd72a90102769edfd1fe91cb9b617b"
+    },
+    "translations/transmission_ru.qm": {
+      "sizeBytes": 54324,
+      "sha256": "674e2f2158dafb3ad4f1e50f51c5a78dc8ac71743a62e98a49b1b29789b7c5c5"
+    },
+    "translations/transmission_pl.qm": {
+      "sizeBytes": 54329,
+      "sha256": "ab4c00fbf2fa03ea1cba21b00df78da113ff6000f49ed94f9468ff476757006b"
+    },
+    "translations/qt_uk.qm": {
+      "sizeBytes": 164,
+      "sha256": "f1621e680e1642f9463e4b07e7e78b50f9a7bdb7c321d7302039cb3405cbdea4"
+    },
+    "translations/qtbase_es.qm": {
+      "sizeBytes": 165170,
+      "sha256": "4ffda56ba3bb5414ab0482d1dde64a6f226e3488f6b7f3f11a150e01f53fa4c8"
+    },
+    "translations/qtbase_en.qm": {
+      "sizeBytes": 16,
+      "sha256": "9959b510b15d18937848ad13007e30459d2e993c67e564badbfc18f935695c85"
+    },
+    "translations/qtbase_fi.qm": {
+      "sizeBytes": 179941,
+      "sha256": "e47fe13713e184d07fa4495dde0c589b0e8f562e91574a3558a9363443a4fa72"
+    },
+    "translations/qt_pt_BR.qm": {
+      "sizeBytes": 180,
+      "sha256": "ecfab880b0bff58aa8eff2e5bd1fab530a7b495c73a21c7de1f528afc32a7f85"
+    },
+    "translations/qtbase_ar.qm": {
+      "sizeBytes": 160017,
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263"
+    },
+    "translations/qtbase_zh_TW.qm": {
+      "sizeBytes": 126185,
+      "sha256": "21012b2b427f8d09d31ce9cae582ca27955b478ca3dc2ec18a3068d808638c6a"
+    },
+    "translations/qtbase_it.qm": {
+      "sizeBytes": 161166,
+      "sha256": "7808ed542a7833c4bd94ec8bdfbbca00bb4f2fe15979b9121ce3249323687300"
+    },
+    "translations/transmission_it_IT.qm": {
+      "sizeBytes": 45047,
+      "sha256": "f5f9a4082cb0aeff09657ff0d4df1b44e9f6aa351dcefe77e0c88e4c08fa9a1b"
+    },
+    "translations/qt_es.qm": {
+      "sizeBytes": 153,
+      "sha256": "e25e43f046f61022ffe871a2f73c6a12edfc5c3efd958c0e019a721860a053b0"
+    },
+    "translations/qt_fr.qm": {
+      "sizeBytes": 153,
+      "sha256": "8624033d849e670b12c9532337fcbf260f20848e044fee7787cfe2ac92be28db"
+    },
+    "translations/qt_sv.qm": {
+      "sizeBytes": 65851,
+      "sha256": "4b4b6ff7fd237c9da0301b4946132e68653d15eb5faf38e4c5fbfebb12dd97f7"
+    },
+    "translations/transmission_id.qm": {
+      "sizeBytes": 47613,
+      "sha256": "d4b0039c8748b16e7d931920b02ca2141ca5eda3b6ee141da3643db16f9b025e"
+    },
+    "translations/qtbase_pl.qm": {
+      "sizeBytes": 162982,
+      "sha256": "ce99032a3b0bf8abad758895cc22837088ead99fd2d2514e2d180693081cfe57"
+    },
+    "translations/qt_nl.qm": {
+      "sizeBytes": 153,
+      "sha256": "b928e4380a4b5d4738e3ec7aacc7a57a225924cc96daf2d30e1852f14836e028"
+    },
+    "translations/qt_lt.qm": {
+      "sizeBytes": 165383,
+      "sha256": "47eb5f97467df769261421d54a5bea1131c9fb9b6388791d38bb6574335b64bf"
+    },
+    "translations/qt_fi.qm": {
+      "sizeBytes": 117,
+      "sha256": "048ca42dce4faf5fc21d843576e3c6fd963146ecc78554e7e5f34d07f64fb213"
+    },
+    "translations/qtbase_uk.qm": {
+      "sizeBytes": 158274,
+      "sha256": "51b8ff55b37dc5907d637a8ddda12fbe816852b0244c74eb4f0fb84867a786e0"
+    },
+    "translations/qtbase_lv.qm": {
+      "sizeBytes": 153608,
+      "sha256": "846e047573ae40c83671c3ba7f73e27efc24b98c82701da0df9973e574178bb2"
+    },
+    "translations/qtbase_bg.qm": {
+      "sizeBytes": 165337,
+      "sha256": "e448ac9e3f16c29eb27af3012efe21052daa78fabfb34cd6dff2f69ee3bd3cdb"
+    },
+    "translations/qt_da.qm": {
+      "sizeBytes": 153,
+      "sha256": "b5036161ce808c728e5fda985f792db565831fd01cf00b282547790c037353a2"
+    },
+    "translations/qtbase_hr.qm": {
+      "sizeBytes": 149711,
+      "sha256": "bb9eec9a9a652c1340dc75eb2e749be50df00f885b3d6900dfc76799c45b244d"
+    },
+    "translations/transmission_ja.qm": {
+      "sizeBytes": 40228,
+      "sha256": "1cbe5264c553cc1227fc3bd290781186f38409744c8ea1fb5435e18737712a06"
+    },
+    "translations/transmission_es.qm": {
+      "sizeBytes": 52982,
+      "sha256": "f0dc360082307baabdfefe998ae29a8cc0690600eb7392d12cee7722c5714700"
+    },
+    "translations/qtbase_de.qm": {
+      "sizeBytes": 220467,
+      "sha256": "553c046835db9adef15954fa9a576625366ba8bfd16637038c4bcd28e5ebace1"
+    },
+    "translations/transmission_fi.qm": {
+      "sizeBytes": 53026,
+      "sha256": "24cf75c762b04014ad99610c84102935ff27da98828acb702f0d490eff98b053"
+    },
+    "translations/qtbase_gd.qm": {
+      "sizeBytes": 189580,
+      "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+    },
+    "translations/qt_ar.qm": {
+      "sizeBytes": 130,
+      "sha256": "a8a1b0d6f958e7366d1c856be61000106d3e7fc993fb931675369892b9002d0b"
+    },
+    "translations/qtbase_cs.qm": {
+      "sizeBytes": 174701,
+      "sha256": "03028b42df5479270371e4c3bdc7df2f56cbbe6dda956a2864ac6f6415861fe8"
+    },
+    "translations/qt_pl.qm": {
+      "sizeBytes": 161,
+      "sha256": "bd7dd0c2cab119a973dc10c3bff7499d9728b928b541f86056921b30c8db78e6"
+    },
+    "translations/transmission_lt.qm": {
+      "sizeBytes": 47357,
+      "sha256": "3c29da7c6c10fea9d5c69100a7be216c9924a7a258fc3e12d321853cf3cb50b2"
+    },
+    "translations/qt_de.qm": {
+      "sizeBytes": 153,
+      "sha256": "5805b8ff3747849794e2d70661d737c69c15f1ae763c38e17084b1e5a81e9153"
+    },
+    "translations/qt_hr.qm": {
+      "sizeBytes": 164,
+      "sha256": "ab8b2c72ac07dd22bb20196655a0be0c2c6fa1c9248bceb04d6e67071860d9e8"
+    },
+    "translations/qtbase_fr.qm": {
+      "sizeBytes": 166167,
+      "sha256": "edb32a933cef376a2636634e14e2977ced6284e4aa9a4ac7e2292f9ca54c384a"
+    },
+    "translations/qt_tr.qm": {
+      "sizeBytes": 110,
+      "sha256": "f574a2cfd4715885c3dbdf5ae60995252673bd94fdaa9586f7e0586f6c1ac0ee"
+    },
+    "translations/transmission_pt_BR.qm": {
+      "sizeBytes": 52117,
+      "sha256": "bdeba81f1a5b4827fd62086188e2931d28c5600d78aa080fa5794baf1b071c97"
+    },
+    "translations/qtbase_ko.qm": {
+      "sizeBytes": 156799,
+      "sha256": "0179ed1b136e1cb3f583351eaa2c545ba3d83a6ee3f82c32505926a1a5f5f183"
+    },
+    "translations/transmission_kk.qm": {
+      "sizeBytes": 28374,
+      "sha256": "7067ad841c3a015eb15f4a9a72dee45793ab04a8ac8bc384e4500d5a70c5423e"
+    },
+    "translations/qt_gl.qm": {
+      "sizeBytes": 323590,
+      "sha256": "204a01ac7deb6b5bae193afecbd1e50d18c73bf7d94badeb2bbfdf6123c4ed93"
+    },
+    "translations/qt_ja.qm": {
+      "sizeBytes": 146,
+      "sha256": "23457ce8e44e233c6f85d56a4ee6a2cecd87c9c7bdde6d8b8a925902eed1cd9c"
+    },
+    "translations/transmission_hu.qm": {
+      "sizeBytes": 51460,
+      "sha256": "47a70b3f1b85fd1fc9a3336f3699863fb3238a7ffdfdd267f4346fe30b0755af"
+    },
+    "translations/transmission_eu.qm": {
+      "sizeBytes": 53082,
+      "sha256": "9bd2f5f56c57bbbcee330a14c6e50a46ba6a3fd974776d430bb7d45caf1f7695"
+    },
+    "translations/qt_cs.qm": {
+      "sizeBytes": 157,
+      "sha256": "3c0cbfd19490d67d1b3b9e944c3a4d9a9e7f87d7ae35e88d5d5a0077349b5b21"
+    },
+    "translations/qtbase_fa.qm": {
+      "sizeBytes": 148156,
+      "sha256": "f78e59b5bdd586181a999034ba418868ed17fe9c05707fb65e523f70e92253d2"
+    },
+    "translations/transmission_nl.qm": {
+      "sizeBytes": 52612,
+      "sha256": "062494d2ee59eed060eb82f583a666c0f1b3e1a1e9b69f4641ac6bac2db4dc59"
+    },
+    "translations/qt_zh_TW.qm": {
+      "sizeBytes": 141,
+      "sha256": "751ecda0c33e061d91241268357fbd2f6b7f70a1116e714f28d22efd61ec7a1a"
+    },
+    "translations/qt_he.qm": {
+      "sizeBytes": 83,
+      "sha256": "c113d14e218d5402b616dabea27969c6f83852676468c5ef051dddefb3ee0235"
+    },
+    "translations/qt_lv.qm": {
+      "sizeBytes": 89,
+      "sha256": "03467738042a15676e504ba02cb326dcdb773b171fada3cd62b7a0e0564314a0"
+    },
+    "translations/transmission_sl.qm": {
+      "sizeBytes": 53557,
+      "sha256": "dc628bf5478b2feaa64eebc26cb65c64ed2e52419960fd1c33c69a54ab84a4af"
+    },
+    "translations/qtbase_tr.qm": {
+      "sizeBytes": 194487,
+      "sha256": "6a0bf6e70e7920c2b193e76e92f78f315936955d3b06ac039d917f2e06c43281"
+    },
+    "translations/qtbase_ca.qm": {
+      "sizeBytes": 210185,
+      "sha256": "e4e2a6784354f16f840b490a01256129ed567895fe4b302768ed4534d244bfdb"
+    },
+    "translations/transmission_ca.qm": {
+      "sizeBytes": 45529,
+      "sha256": "c93cde246264f78036180a2b46f84de54b4a32ef757cabe972e8b62bbedd2d75"
+    },
+    "translations/qt_nn.qm": {
+      "sizeBytes": 153,
+      "sha256": "2c18b7faf6bc298154d2911b88afd80af8f7d8080d0b2c89dbdef868162cf52b"
+    },
+    "translations/qtbase_nl.qm": {
+      "sizeBytes": 202861,
+      "sha256": "f61513bcdbb6ad800585f9437a95d018aab17fa12ee414aa31462ff279d8240e"
+    },
+    "translations/qtbase_nn.qm": {
+      "sizeBytes": 196424,
+      "sha256": "983734b40aa4d250421ba0d1614416cb8b424d6f140f4a7dbf8b11e65eef63dc"
+    },
+    "translations/qt_ca.qm": {
+      "sizeBytes": 153,
+      "sha256": "171c7424b24d8502ab53cb3784ff34d8fcfae26557cf8af4dfddec6485acc2fe"
+    },
+    "translations/qtbase_hu.qm": {
+      "sizeBytes": 160494,
+      "sha256": "c61b67bb9d1e84f0ab0792b6518fe055414a68e44d0c7bc7c862773800fa8299"
+    },
+    "translations/qt_en.qm": {
+      "sizeBytes": 16,
+      "sha256": "9959b510b15d18937848ad13007e30459d2e993c67e564badbfc18f935695c85"
+    },
+    "translations/qtbase_pt_BR.qm": {
+      "sizeBytes": 208516,
+      "sha256": "8344f5bc333c45d37cfd425a09124eb11f12439f33737ec0b8683d04a416746e"
+    },
+    "translations/qt_it.qm": {
+      "sizeBytes": 153,
+      "sha256": "9117aac2d07bc86dfa55a29b8825ed27c7093300fcc90e143e135e00e85f09d7"
+    },
+    "translations/qt_bg.qm": {
+      "sizeBytes": 153,
+      "sha256": "9e1ce4d91852352043d9191f1a992838f919cba7e2f2d9bb1161e494e8bf5f5e"
+    },
+    "translations/qt_sk.qm": {
+      "sizeBytes": 157,
+      "sha256": "b6adffd889ff96bf195cb997327e7d7005a815cad67823fa6915a19c2d9bb668"
+    },
+    "translations/qt_fa.qm": {
+      "sizeBytes": 172,
+      "sha256": "5f7c17153dd2ce5c19e4e219805e426ec28867b97b942c4b2c926e61b792ab4b"
+    },
+    "translations/transmission_ka.qm": {
+      "sizeBytes": 45140,
+      "sha256": "9a6151c877a7ae5b08e74f3c3344300e87c3d910854ec432b68d57fe6f4a2d1c"
+    },
+    "translations/transmission_fr.qm": {
+      "sizeBytes": 52238,
+      "sha256": "f7ca43dc8fffc2ba8e60a2dffb02457d601922164b8cd544de20268c41df91d1"
+    },
+    "translations/transmission_ko.qm": {
+      "sizeBytes": 35876,
+      "sha256": "e72b5fb34751362836ff486d91fad1a1d3ff6a2d5a7135e42f1688c62b86fad6"
+    },
+    "translations/transmission_de.qm": {
+      "sizeBytes": 52252,
+      "sha256": "bb55d2132350809d90869c0c17218d5c84b8a35fb797d7243beadc765a444bb2"
+    },
+    "translations/transmission_af.qm": {
+      "sizeBytes": 43508,
+      "sha256": "24410889c210f14801e5e736610bc64169a1c10e66d4a0c00faeaaf2263f3c53"
+    },
+    "translations/transmission_en.qm": {
+      "sizeBytes": 5052,
+      "sha256": "4863c4979696c127c58ff38d45db93643ebd6ef83194185db2adf03cf60ca7ad"
+    },
+    "translations/transmission_zh_CN.qm": {
+      "sizeBytes": 38875,
+      "sha256": "7bf30fb6d86f8d0608c2d39a56899e3eccd863a160202c435653a76b826d7b90"
+    },
+    "translations/qt_gd.qm": {
+      "sizeBytes": 70,
+      "sha256": "49df855a004a17950338af3146466f6df4d5852410bd0b58ea80e0d0203a9d24"
+    },
+    "translations/transmission_da.qm": {
+      "sizeBytes": 45020,
+      "sha256": "4f853ac7f6c58d68e79302d4f4e30f5b8e8bf447e099f4d563dd273e2322c606"
+    },
+    "translations/qt_ko.qm": {
+      "sizeBytes": 146,
+      "sha256": "4cc1af37e771f0a43898849cff2cd42a820451b8d2b2e88931031629d781db05"
+    },
+    "translations/qt_hu.qm": {
+      "sizeBytes": 146,
+      "sha256": "bb246aabd501e14ced8b1ffc1369e3d5d26567aae62b3ead4d94c22fb77c3471"
+    },
+    "translations/qtbase_zh_CN.qm": {
+      "sizeBytes": 136673,
+      "sha256": "98fd4b97dbec8af5cdd15f85a16c33efc77301b1aeb0469daafc04b9ab2f3570"
+    },
+    "translations/qt_pt_PT.qm": {
+      "sizeBytes": 70334,
+      "sha256": "2c1e7bbf5168a64b43752dd4c547601c0bde6d610f8671fa3e3af38597e84783"
+    },
+    "translations/transmission_uk.qm": {
+      "sizeBytes": 54948,
+      "sha256": "c93df8597c6c56ceb410d1b7d2ea2eeb0281c976f8ec3a8a9e8967c10332fda5"
+    },
+    "translations/qtbase_sk.qm": {
+      "sizeBytes": 125763,
+      "sha256": "d586ae2c314074cf398417fdecb40709d5478dfeb0a67c2fe60d509ee9b59ed7"
+    },
+    "translations/qtbase_he.qm": {
+      "sizeBytes": 138690,
+      "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+    },
+    "translations/transmission_el.qm": {
+      "sizeBytes": 47435,
+      "sha256": "1d20f9e22d2e25634e1979d15c284b86877365cea81a17c4418b3a652414d5dc"
+    },
+    "translations/qt_zh_CN.qm": {
+      "sizeBytes": 173,
+      "sha256": "6a8f89ccd250fc0f002a2581dfb7bfba4366a7aeb5a9d981ea42fdc98dfc995e"
+    },
+    "translations/transmission_nb.qm": {
+      "sizeBytes": 44004,
+      "sha256": "81dbd80664dc88d36651b0b0dd353f7a6a3ce657b144e9efba90d2afd4486d78"
+    },
+    "translations/qt_ru.qm": {
+      "sizeBytes": 164,
+      "sha256": "6492b267608c6fb76907bd8fcfc8f1ef57e9f4ebbc2e81aca81715a88388f94a"
+    },
+    "styles/qwindowsvistastyle.dll": {
+      "sizeBytes": 141824,
+      "sha256": "8df1e912e408b108914703e052d44f990bb2e27dbf089fc5fd6776a7c16d7382"
+    },
+    "platforms/qwindows.dll": {
+      "sizeBytes": 675840,
+      "sha256": "a65e16228ec0be69962fc81e13d80a9f6662a9ffe114915ac22e810c4c5cd233"
+    },
+    "imageformats/qjpeg.dll": {
+      "sizeBytes": 452096,
+      "sha256": "d383646ce4e564bd7d682a038aa2c94f3d6219e5087cf485ccc03cee1c2af352"
+    },
+    "imageformats/qico.dll": {
+      "sizeBytes": 30720,
+      "sha256": "ef0c27b08591a75f665c36f4cf26430da864d913f32bd9898ba8f421e2a7876c"
+    },
+    "imageformats/qgif.dll": {
+      "sizeBytes": 32768,
+      "sha256": "62382b03ac5e951d3acdbf89813f3a249e6f8fa60374fecaefcb38ff9872e3c9"
+    },
+    "imageformats/qsvg.dll": {
+      "sizeBytes": 25600,
+      "sha256": "7b399662f1e4e3a31784445317e06422cdb5a157ab1809ba6a1f7a85cf0a5e09"
+    }
+  },
+  "save": {
+    "payloadBytes": 4096,
+    "pieceLength": 32768,
+    "pieceCount": 1,
+    "allPieceHashesMatchIndependentPayloadSha1": true,
+    "infoHashSha1": "72d16d61d2873a3ff81ab84242cf88ad26b86ab4",
+    "comment": "MARKET42",
+    "infoNameUtf8": "市场数据.bin",
+    "createdBy": "Transmission/4.0.6 (38c164933e)",
+    "trackerless": true,
+    "bencodeCanonicalAndFullyParsed": true,
+    "generationId": "gen-job-1791732876165-7",
+    "inputPin": {
+      "sizeBytes": 4096,
+      "sha256": "e02491650473da92a53f9b0521f0d2c451a64bde1e2ed6298421f0d51029e6a3"
+    },
+    "inputRelativePath": "TransmissionTests/市场数据.bin",
+    "inputUnchanged": true,
+    "outputPin": {
+      "sizeBytes": 213,
+      "sha256": "56041bc2db7cdc9c081b7920841ddc5c9dec54d245cfa9bf6bd650a7d3cf9738"
+    },
+    "outputRelativePath": "TransmissionTests/市场数据.torrent"
+  },
+  "guiJobs": [
+    {
+      "applicationId": "transmission",
+      "createdAtMilliseconds": 1791732898755,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 146095,
+          "requestId": "job-1791732898755-8",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 130235,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix",
+          "requestId": "job-1791732898755-8",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 130278,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791732898755-8",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791732876165-7",
+      "id": "job-1791732898755-8",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 1938292,
+        "fileDigest": "sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259",
+        "fileSizeBytes": 3017472,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "crypt32.dll",
+          "gdi32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "libcrypto-3-x64.dll",
+          "libcurl.dll",
+          "libssl-3-x64.dll",
+          "msvcp140.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "qt5core.dll",
+          "qt5dbus.dll",
+          "qt5gui.dll",
+          "qt5network.dll",
+          "qt5widgets.dll",
+          "qt5winextras.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll",
+          "ws2_32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1993216,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1992859,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 792064,
+            "readable": true,
+            "virtualAddress": 1998848,
+            "virtualSize": 791902,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 69632,
+            "readable": true,
+            "virtualAddress": 2793472,
+            "virtualSize": 104728,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 87040,
+            "readable": true,
+            "virtualAddress": 2899968,
+            "virtualSize": 86988,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 41984,
+            "readable": true,
+            "virtualAddress": 2990080,
+            "virtualSize": 41920,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 20480,
+            "readable": true,
+            "virtualAddress": 3035136,
+            "virtualSize": 20472,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791732876165-7",
+          "digest": "sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "transmission-qt.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix/drive_c/Program Files/Transmission/transmission-qt.exe",
+          "sizeBytes": 3017472,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix/drive_c/Program Files/Transmission/transmission-qt.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7"
+        },
+        "requestId": "job-1791732898755-8",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791733031378
+    },
+    {
+      "applicationId": "transmission",
+      "createdAtMilliseconds": 1791733039891,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 146419,
+          "requestId": "job-1791733039891-9",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 67292,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix",
+          "requestId": "job-1791733039891-9",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 67335,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791733039891-9",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791732876165-7",
+      "id": "job-1791733039891-9",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 1938292,
+        "fileDigest": "sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259",
+        "fileSizeBytes": 3017472,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "crypt32.dll",
+          "gdi32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "libcrypto-3-x64.dll",
+          "libcurl.dll",
+          "libssl-3-x64.dll",
+          "msvcp140.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "qt5core.dll",
+          "qt5dbus.dll",
+          "qt5gui.dll",
+          "qt5network.dll",
+          "qt5widgets.dll",
+          "qt5winextras.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll",
+          "ws2_32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1993216,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1992859,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 792064,
+            "readable": true,
+            "virtualAddress": 1998848,
+            "virtualSize": 791902,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 69632,
+            "readable": true,
+            "virtualAddress": 2793472,
+            "virtualSize": 104728,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 87040,
+            "readable": true,
+            "virtualAddress": 2899968,
+            "virtualSize": 86988,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 41984,
+            "readable": true,
+            "virtualAddress": 2990080,
+            "virtualSize": 41920,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 20480,
+            "readable": true,
+            "virtualAddress": 3035136,
+            "virtualSize": 20472,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791732876165-7",
+          "digest": "sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "transmission-qt.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix/drive_c/Program Files/Transmission/transmission-qt.exe",
+          "sizeBytes": 3017472,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix/drive_c/Program Files/Transmission/transmission-qt.exe",
+            "C:\\TransmissionTests\\市场数据.torrent"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791732876165-7"
+        },
+        "requestId": "job-1791733039891-9",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791733109252
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3463661,
+      "sha256": "636672880f2ffbc2df2350158d03352a45e90725e2a7803b5593a32ec90ce294"
+    },
+    "user.reg": {
+      "sizeBytes": 101499,
+      "sha256": "6896ab4bae02610ff16e88ccb365b71d078a8ce5305cee32710666757a61024c"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "a1a2a53eae39a0f8714a16926cfc3405d769bf652bba931e962d90752003d7d2"
+    }
+  },
+  "fixedDataPins": {
+    "TransmissionTests/市场数据.bin": {
+      "sizeBytes": 4096,
+      "sha256": "e02491650473da92a53f9b0521f0d2c451a64bde1e2ed6298421f0d51029e6a3"
+    },
+    "TransmissionTests/市场数据.torrent": {
+      "sizeBytes": 213,
+      "sha256": "56041bc2db7cdc9c081b7920841ddc5c9dec54d245cfa9bf6bd650a7d3cf9738"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/Desktop/Transmission Qt Client.lnk": {
+      "sizeBytes": 675,
+      "sha256": "604f3d914f89cacc5aa8533b751ca1a64b176ba1d39bb8f33a4ccaa2cf59cd6e"
+    },
+    "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Transmission Qt Client.lnk": {
+      "sizeBytes": 675,
+      "sha256": "604f3d914f89cacc5aa8533b751ca1a64b176ba1d39bb8f33a4ccaa2cf59cd6e"
+    },
+    "drive_c/users/forge/AppData/Local/transmission/settings.json": {
+      "sizeBytes": 3371,
+      "sha256": "968cfa53f3eeb235311e8aea4f18cf4b2a67ab84e98762737399f2dc295fe1f9"
+    },
+    "drive_c/users/forge/AppData/Local/transmission/Torrents/72d16d61d2873a3ff81ab84242cf88ad26b86ab4.torrent": {
+      "sizeBytes": 213,
+      "sha256": "56041bc2db7cdc9c081b7920841ddc5c9dec54d245cfa9bf6bd650a7d3cf9738"
+    },
+    "drive_c/users/forge/AppData/Local/transmission/Resume/72d16d61d2873a3ff81ab84242cf88ad26b86ab4.resume": {
+      "sizeBytes": 690,
+      "sha256": "7877dfe3edd057d57a088da78a753c1099b4d867ded7a3283b39bce560280450"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "guiObservedHavePercent": 100,
+  "guiObservedAvailabilityPercent": 100,
+  "guiObservedState": "Paused",
+  "checkpoint": {
+    "file": "before-rollback.json",
+    "sha256": "30362dd7e1effae160eb5e44906fbf5d572ca3adad2fcab71aca8ef3be8b13f2",
+    "coreJobs": 322,
+    "fullStoreRows": 99
+  },
+  "screenshots": {
+    "06-market-create-settings.jpg": {
+      "sizeBytes": 21271,
+      "sha256": "6c8703d372ea095f41de16c99decdc7c5d52b78417e478e797c73cbad59db46e"
+    },
+    "07-market-created.jpg": {
+      "sizeBytes": 22411,
+      "sha256": "3994b60c00c102c534e4ecb526bacabc05da99abfab02a12d10378b0a9720cf8"
+    },
+    "08-market-explicit-reopen.jpg": {
+      "sizeBytes": 19023,
+      "sha256": "10cbff5ac963ee5aa50190a084fe1a2ed5910f905f6411c28f46c84b8ccd1798"
+    },
+    "09-market-reopened-verified.jpg": {
+      "sizeBytes": 25386,
+      "sha256": "7e66eb264e1790cfc720b1c1306bab3e0e98ba7dc473ede2965a9e031e40a0b0"
+    },
+    "10-rollback-explicit-reopen.jpg": {
+      "sizeBytes": 20813,
+      "sha256": "2052c290f8027ca980d1d20c2510edd73c40e17461ec109e1194d6df02470219"
+    },
+    "11-rollback-duplicate-notice.jpg": {
+      "sizeBytes": 15936,
+      "sha256": "54360116af304071152ae813af1d3a2eedfc39cd4bc2368c4bdd742373093c6b"
+    },
+    "12-rollback-original-verified.jpg": {
+      "sizeBytes": 25332,
+      "sha256": "94a1c7734b2df1f8e88b24974b5af62663e7fb5e712edb2365b533f941c04ef6"
+    }
+  },
+  "programFilesAcrossGenerationsEqual": true,
+  "fixtureOnlyNotApplication": true,
+  "guiReopenObserved": true,
+  "notFullBitTorrentClientAcceptance": true
+}

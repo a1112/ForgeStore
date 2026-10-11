@@ -412,6 +412,18 @@
       "signedCatalogue": "catalogue/candidate-v43/tuf",
       "publication": "docs/evidence/2026-10-11-nomacs-publication.json",
       "limitation": "Two small64x48 Chinese-name RGB PNG inputs: render,clockwise90-degree rotation,GUI ASCII-path PNG Save As591B/48x64,3072 exact RGB pixels each and explicit fresh reopen; Store IPC cached same-version update/exact original rollback/restart. Welcome default-viewer choice and first version notice manually handled. Advanced formats/features/direct Chinese keyboard input/network/new registration/migration/cross-version/unattended startup/GUI update buttons/full bundled-license closure unverified. Third original GUI changed two registry raw streams; private before/after backups/diffs and current pins kept."
+    },
+    {
+      "id": "transmission",
+      "version": "4.0.6",
+      "variant": "Qt5 Windows x64",
+      "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d",
+      "sizeBytes": 18149376,
+      "license": "GPL-2.0-only OR GPL-3.0-only (OpenSSL linking permission; full bundle closure unverified)",
+      "evidence": "docs/evidence/windows-transmission-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v44/tuf",
+      "publication": "docs/evidence/2026-10-11-transmission-publication.json",
+      "limitation": "Two small4096B Chinese-name single-file trackerless torrents: GUI creation216/213B with ASCII comment, independent bencode/piece SHA1, explicit fresh reopen, paused add and GUI Verify Local Data/Have100%; Store IPC cached same-version update/exact original rollback/restart. No network transfers/peer/tracker/DHT/PEX/magnet/remote/advanced/unattended/direct Chinese input/new machine/migration/cross-version/full bundled-license closure accepted. Third GUI changed two registry and one resume stream; actual private before/after backups and current pins preserved."
     }
   ],
   "queue": [
@@ -605,12 +617,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "40/1000 accepted;13 unresolved including installed BowPad2.9.6 Ribbon/save workflow block. Current candidate-v43/root1/role52 with316 complete Core tasks/98 complete Store SQLite rows. Preserve all frozen evidence and trust. Use strict guest rolling-current-state-bowpad-20261011.py and private after-diagnostic checkpoint. Continue a bounded evidence-based Ribbon investigation or select another official fixed/licensed candidate; no acceptance based on normal exits. Push still awaits existing GitHub authentication recovery; no repeated device codes.",
+  "next": "41/1000 Windows accepted;13 unresolved including installed but unaccepted BowPad. Select next official sourced/licensed/fixed candidate. Transmission4.0.6 only offline single-file trackerless torrent create/independent hashes/fresh reopen/local verification and local market lifecycle accepted. candidate-v44/root1/role53,323 full Core tasks/100 full Store SQLite rows. Strict guest rolling-current-state-transmission-v2-20261011.py. Preserve frozen evidence and trust; third GUI registry/resume variations separately pinned. Push awaits restored GitHub authentication; do not issue device codes each round.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 40,
+    "acceptedLocalMarket": 41,
     "explicitlyBlockedCandidates": 13,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -618,25 +630,25 @@
     "pendingCandidates": 13
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v43/tuf",
-    "metadataVersion": 52,
-    "catalogueEntries": 42,
-    "acceptedDistinctWindowsApps": 40,
+    "signedCatalogue": "catalogue/candidate-v44/tuf",
+    "metadataVersion": 53,
+    "catalogueEntries": 43,
+    "acceptedDistinctWindowsApps": 41,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-nomacs-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-transmission-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-windjview-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-nomacs-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-nomacs-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-transmission-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-11-nomacs-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-11-transmission-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-bowpad-pending.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-bowpad-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-transmission.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-transmission-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

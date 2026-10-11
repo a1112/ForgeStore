@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "transmission",
+  "initialDefinitionRejected": {
+    "failedRequestRecorded": "transmission-install-submission-20261011.json",
+    "failure": "invalid MSI handler definition",
+    "cause": "ADDLOCAL is outside the deployed closed MSI property allowlist",
+    "correction": "Omit ADDLOCAL; fixed upstream MSI source selects QtClient and CommonLibs at default level 1 and Daemon/CmdTools/WebUi at level 2",
+    "coreModified": false,
+    "conditionBypass": false,
+    "originalScriptPreserved": true,
+    "correctedScriptSha256": "5788e946f983c60ed863313f1ab09b9ff3623178b1627f750989aab62ff14789"
+  },
+  "apiRateLimit": 403,
+  "auxiliaryReadFailures": "Initial attempts to read three guessed nomacs helper paths failed; subsequent rg discovered actual filenames. One search used incorrect CompatForge/schema and src paths; actual crates/schemas paths discovered. No dependent guest installation followed failed reads.",
+  "guiMenuAndShortcut": "First Verify Local Data click with unselected row did not act; selected row then actual menu action. CtrlI did not open Properties, next mistaken Open Folder action displayed file directory; closed it normally, selected actual first Properties command. Only subsequent actual properties Have100%, availability100%, comment and paused state count.",
+  "initialNotice": "Normal file-sharing warning and local-session selection manually handled; no unattended startup claim.",
+  "authentication": "Existing authorized account normally unlocked with fresh visible field and one submission per lock, no credential evidence or authentication/lock-setting changes.",
+  "noPrivateCompleteCheckpointOrCredentialsPublished": true,
+  "failuresPreserved": true
+}

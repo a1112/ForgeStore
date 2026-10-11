@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "phase": "before-independent-review-and-git-stage",
+  "applicationId": "transmission",
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "currentStateVerified": {
+    "verified": true,
+    "coreJobs": 323,
+    "fullStoreRows": 100,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "root": 1,
+      "timestamp": 53,
+      "snapshot": 53,
+      "targets": 53
+    },
+    "latestKnownTime": "2026-10-11T15:41:40.352430914Z",
+    "selectedTransmissionGeneration": "gen-job-1791731934014-4",
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "checkpoint": {
+      "file": "transmission-20261011/after-restart.json",
+      "sha256": "d853fc032db0c0f12458404d0a547a3d2c87e198c2e2d5c1596c7dc7ed992d94"
+    }
+  },
+  "oldImmutableFilesMatched": 1091,
+  "newOriginalFrozenFilesMatched": 23,
+  "signedMetadataPack": {
+    "metadataVersion": 53,
+    "rootVersion": 1,
+    "entries": 43,
+    "actualTargets": 87,
+    "files": 49,
+    "archiveSha256": "34626f36224eda268595f49547c2ff32ecb1acd85b0dcd09efd19c0f6a49da5b",
+    "receiptSha256": "1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f",
+    "allOldSignedTargetPinsPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true
+  },
+  "publicationSha256": "0054a80d45597c54745d26e87434fd264758c7e13bd17a6cef25eaa3f931d339",
+  "independentReviewPendingAtFreeze": true,
+  "gitIndexAndCommitAuditPendingAtFreeze": true,
+  "remotePushPendingAuthentication": true
+}
