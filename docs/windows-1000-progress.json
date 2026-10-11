@@ -348,6 +348,17 @@
       "signedCatalogue": "catalogue/candidate-v37/tuf",
       "publication": "docs/evidence/2026-10-11-tiled-publication.json",
       "limitation": "Only finite 4x4 one-layer map erase/stamp, TMX Save As, JSON export, explicit new-process render and independent IPC cached same-version update/exact alias-original rollback/normal Core-Store restart accepted. Local alias replaces + in catalogue target and new frozen installer.fileName, exact official package bytes retained. Role44 catalogue failure and role45 failed Store update preserved. Advanced maps/engine integration/direct Chinese input, full bundle licence closure, guest network, fresh registration, migration, cross-version and unattended startup unverified."
+    },
+    {
+      "id": "focuswriter",
+      "version": "1.8.13",
+      "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c",
+      "sizeBytes": 54323843,
+      "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+      "evidence": "docs/evidence/windows-focuswriter-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v38/tuf",
+      "publication": "docs/evidence/2026-10-11-focuswriter-publication.json",
+      "limitation": "Only two small UTF-8 text edits, TXT CRLF/ODT Save As, explicit new-process reading and independent IPC cached same-version update/exact original rollback/normal Core-Store restart accepted. Full writing functions, formatting, other formats/encodings, direct Chinese input, complete bundled licences, guest network, fresh registration, migration, cross-version and unattended launch unverified. Fixed main GPL-3.0-or-later source; installed licence text absent, no installed COPYING equality claimed."
     }
   ],
   "queue": [
@@ -520,12 +531,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next official sourced/licensed/pinned candidate. Tiled finite map edit/save/JSON/reopen and independent market lifecycle accepted using matching local filename alias only. Preserve roles44/45 failures and all old frozen evidence; role46/candidate-v37 current. 34 Windows accepted, 12 unresolved; full history267 Core/86 Store. Run rolling-current-state-tiled-20261011.py only through strict rolling-guest-20261010.py in guest. Require actual asserted preconditions; failed or false gates stop dependent changes.",
+  "next": "Select next official sourced/licensed/pinned candidate. FocusWriter limited text/TXT-ODT save/fresh reopen and independent market lifecycle accepted, candidate-v38/root1/role47, 35 Windows apps,12 unresolved,274 full Core tasks/88 full Store SQLite rows. Run rolling-current-state-focuswriter-20261011.py only through strict rolling-guest-20261010.py inside guest. Keep immutable history; assert actual preconditions, stop dependent changes after false or failed gate.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 34,
+    "acceptedLocalMarket": 35,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -533,25 +544,25 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v37/tuf",
-    "metadataVersion": 46,
-    "catalogueEntries": 36,
-    "acceptedDistinctWindowsApps": 34,
+    "signedCatalogue": "catalogue/candidate-v38/tuf",
+    "metadataVersion": 47,
+    "catalogueEntries": 37,
+    "acceptedDistinctWindowsApps": 35,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-tiled-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-focuswriter-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-sigil-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-tiled-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-tiled-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-focuswriter-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-tiled.md",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-tiled-runtime-recovery.json",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-focuswriter.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-focuswriter-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
-  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-sigil-runtime-recovery.json",
+  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-tiled-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-tiled.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-tiled-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-focuswriter.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-focuswriter-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

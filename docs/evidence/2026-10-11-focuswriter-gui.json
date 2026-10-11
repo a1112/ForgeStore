@@ -1,0 +1,2248 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791709749205-1",
+    "createdAtMilliseconds": 1791709749212,
+    "definition": {
+      "bottleId": "gui-focuswriter",
+      "category": "office",
+      "compatibilityRating": "unknown",
+      "id": "focuswriter",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\FocusWriter"
+        ],
+        "fileName": "FocusWriter_1.8.13.exe",
+        "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c"
+      },
+      "launchers": [
+        {
+          "executable": "FocusWriter/FocusWriter.exe",
+          "id": "main",
+          "name": "FocusWriter"
+        }
+      ],
+      "name": "FocusWriter",
+      "publisher": "Graeme Gott",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "1.8.13"
+    },
+    "definitionDigest": "sha256:46abf5cb66e0a05de30c665889d120dcb0f836189a8ee1bb3ee7326c7593fa0e",
+    "id": "gen-job-1791709749205-1",
+    "launcherDigests": {
+      "main": "sha256:741d87680b9cdded6a16d027033716ccae0171d03d61160c935f28bad5306bcc"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791709769294
+  },
+  "definition": {
+    "bottleId": "gui-focuswriter",
+    "category": "office",
+    "compatibilityRating": "unknown",
+    "id": "focuswriter",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/D=C:\\FocusWriter"
+      ],
+      "fileName": "FocusWriter_1.8.13.exe",
+      "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c"
+    },
+    "launchers": [
+      {
+        "executable": "FocusWriter/FocusWriter.exe",
+        "id": "main",
+        "name": "FocusWriter"
+      }
+    ],
+    "name": "FocusWriter",
+    "publisher": "Graeme Gott",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "1.8.13"
+  },
+  "fixture": {
+    "generationId": "gen-job-1791709749205-1",
+    "input": {
+      "file": "input/原稿.txt",
+      "sizeBytes": 75,
+      "sha256": "594ccc4d0540de95cd6632380caece4829875d6130e2213e8092793655a9c90a"
+    },
+    "inputUtf8": "FocusWriter original fixture.\n中文内容保留。\nSTATUS=BEFORE\nVALUE=42\n",
+    "expectedAddedLine": "ForgeOS original edited",
+    "installedLicenseFiles": []
+  },
+  "installedFiles": {
+    "Qt6Multimedia.dll": {
+      "sizeBytes": 1109672,
+      "sha256": "49e0fab72bea1a0d4cdf99cc08ba754d11e78be51a9987a4f912146b5b306af6"
+    },
+    "Qt6Network.dll": {
+      "sizeBytes": 2035368,
+      "sha256": "ab18c82a61b060a693f739e0144d2244f55c6b5fc822afaba6a6482a581202bf"
+    },
+    "libgcc_s_seh-1.dll": {
+      "sizeBytes": 109056,
+      "sha256": "5e27589147caa6d7a30f4cc058a14c455dc62233901ffff9a1797ede425e9f86"
+    },
+    "Qt6Widgets.dll": {
+      "sizeBytes": 7110312,
+      "sha256": "06b61615eaf3278644bc740018f1e846a3f733c6a0a9655bad210d98485e7362"
+    },
+    "swscale-8.dll": {
+      "sizeBytes": 662664,
+      "sha256": "71f8831350c1cbc5782e7a0a37814d1d826083b7ed5639f9719a0bc8017a2e9e"
+    },
+    "Qt6Core.dll": {
+      "sizeBytes": 10834608,
+      "sha256": "2e7d0414811ca493e7f00c54247a301ccb7eca5c4df00d02ba037fe7f5e8a35d"
+    },
+    "Qt6Gui.dll": {
+      "sizeBytes": 11327656,
+      "sha256": "1d916bf1467e2e3a4799274eab7054708fa98e7343b5e49b0aab79e55a2ccbad"
+    },
+    "libstdc++-6.dll": {
+      "sizeBytes": 2243072,
+      "sha256": "8013488c5528bad7966ca07f3ea2e7a9b743cacb258fe76b46a326f821cc83b0"
+    },
+    "Qt6Svg.dll": {
+      "sizeBytes": 598184,
+      "sha256": "b3a4f0ca08fc8ba6c02cd62201e80f957990753867c756c65f68d07b456cae6a"
+    },
+    "libwinpthread-1.dll": {
+      "sizeBytes": 53248,
+      "sha256": "c7c7dced65fff71c7bb61f80c771c562f533d26d72722d9d6091129a3b03d5ce"
+    },
+    "Uninstall.exe": {
+      "sizeBytes": 167473,
+      "sha256": "920cf28cd229b5b8670cbc9e63cd4905c0b2412f4b1ddcdf582ef43b9ca5c19b"
+    },
+    "Qt6PrintSupport.dll": {
+      "sizeBytes": 421032,
+      "sha256": "c750468b61d3b3035099dc717def0cab14a8bea80ada43cea90c69401a8f15ac"
+    },
+    "ReadMe.txt": {
+      "sizeBytes": 29282,
+      "sha256": "cd984348bde7d8df05120230d35d76628e0fd544207ca6b5a1fa14262a10c31e"
+    },
+    "FocusWriter.exe": {
+      "sizeBytes": 3404303,
+      "sha256": "741d87680b9cdded6a16d027033716ccae0171d03d61160c935f28bad5306bcc"
+    },
+    "avutil-59.dll": {
+      "sizeBytes": 1053320,
+      "sha256": "40a253effdf9d32d767f0a3ae000d79c909e1bce31045fb40d8da63afa4ec090"
+    },
+    "avcodec-61.dll": {
+      "sizeBytes": 15969416,
+      "sha256": "0a9b1e11f4331fad153a16209edd13897bf6e6e12ff5382de44bbc4b814071fd"
+    },
+    "swresample-5.dll": {
+      "sizeBytes": 134792,
+      "sha256": "caa8f6f0c5c2930e6a986a738bb284011f6bc83f7d187fe5eb0dcc8b37bf7dec"
+    },
+    "avformat-61.dll": {
+      "sizeBytes": 3565704,
+      "sha256": "87bb37f8008e003f0b596f7543c1bd82d069217cfebf32d8fc62a02b88e73d69"
+    },
+    "symbols1600.dat": {
+      "sizeBytes": 463741,
+      "sha256": "802ae357ec8431c5d710775616c2008bee977bb7797752f11784199a8347de36"
+    },
+    "translations/focuswriter_hy.qm": {
+      "sizeBytes": 37638,
+      "sha256": "7c85523c643d90956ae1c1de42cdca97f8773bfad8cf97e25c863ac9886f057d"
+    },
+    "translations/focuswriter_en.qm": {
+      "sizeBytes": 793,
+      "sha256": "af9f999f8994fd879050c8ef9fe5e17ae733ef4e11f690c4203f609faffbd04e"
+    },
+    "translations/focuswriter_fr.qm": {
+      "sizeBytes": 39170,
+      "sha256": "047c524b9ea15af841888609d612609c0e6dac505a713505c13a0ac45ed2568f"
+    },
+    "translations/focuswriter_fi.qm": {
+      "sizeBytes": 37386,
+      "sha256": "8e1480ba076ac1ad5d4cf2e2ea268957510e12951901a4dabc132f8998e833b9"
+    },
+    "translations/focuswriter_es.qm": {
+      "sizeBytes": 38360,
+      "sha256": "65973bdb6cf34f961b4d00b41613732185370b6ed1f2514dc08abca4f50767ec"
+    },
+    "translations/qt_uk.qm": {
+      "sizeBytes": 173968,
+      "sha256": "c4cd5c7ec6ed3b1a444e967fc9dbc5faf2dab2ba709c1860d30ed0c94ff667b1"
+    },
+    "translations/focuswriter_en_GB.qm": {
+      "sizeBytes": 26780,
+      "sha256": "ae6f224e6eafdc7738e05092cd81a71700a80fcc9aaadcfdec9e14b21357ffb8"
+    },
+    "translations/focuswriter_cs.qm": {
+      "sizeBytes": 36654,
+      "sha256": "01e410d4b46ce954767ecfbb2f4fc178f1831fbae535ecdfe7bb0ac26ff92e24"
+    },
+    "translations/focuswriter_eo.qm": {
+      "sizeBytes": 35073,
+      "sha256": "39d3f2db1f0eff8f152d09a2f05ab821b45d80dbc07df6c4d67756b385eb7200"
+    },
+    "translations/focuswriter_it.qm": {
+      "sizeBytes": 38390,
+      "sha256": "ab2cbf2d49b3aea26004d52dad09e22c82cf7e5e05ea5d43f02bc54ff6935f7f"
+    },
+    "translations/focuswriter_ig.qm": {
+      "sizeBytes": 1383,
+      "sha256": "2aeeba5d86698a16d2e4f7b85e9753177dbdc0d01447ab3b5aee07fff4c096b6"
+    },
+    "translations/qt_pt_BR.qm": {
+      "sizeBytes": 222923,
+      "sha256": "1e5b721d0f0671fe0bd7d95e091d43cb5d89411850a28e7eebcd19a069c45c9a"
+    },
+    "translations/focuswriter_vi.qm": {
+      "sizeBytes": 29231,
+      "sha256": "af4a43215c5dfff122a1be2bf8d17228436eba108d40754760540602dd32e3a5"
+    },
+    "translations/focuswriter_es_MX.qm": {
+      "sizeBytes": 28321,
+      "sha256": "8bf8cdd7a56e795a208b2b2306df5fda9294433f13edbb09dd873ff3c16883c3"
+    },
+    "translations/focuswriter_bs.qm": {
+      "sizeBytes": 37395,
+      "sha256": "1e4581e896b8abf8286adeef9e6b9c654bab256fefd55a2862ace70aab82d8e2"
+    },
+    "translations/focuswriter_zh_TW.qm": {
+      "sizeBytes": 28682,
+      "sha256": "88d7643ac1975aee5875e7d00754fe8cc411ba90f8710ee2d10da075adb17671"
+    },
+    "translations/focuswriter_ca.qm": {
+      "sizeBytes": 33968,
+      "sha256": "05499987fb0699b2464c6342bf0a8571a4c93bc6aba397aba972bfc814e04cc6"
+    },
+    "translations/focuswriter_tr.qm": {
+      "sizeBytes": 36399,
+      "sha256": "667bf2794a1ff702181ab03690b493043e71ef4690abe04ed8ec2de75a3cfd0e"
+    },
+    "translations/focuswriter_sk.qm": {
+      "sizeBytes": 35955,
+      "sha256": "c16b89c2c6c4cd315f66346349256db0c459854a565ed64cd8d8eb61dd75c760"
+    },
+    "translations/qt_es.qm": {
+      "sizeBytes": 182173,
+      "sha256": "09d1dc1036c759f888dfdbd907891064f2a4cc906cc09191aa0dcf956442080a"
+    },
+    "translations/qt_fr.qm": {
+      "sizeBytes": 172087,
+      "sha256": "7d89baeb26f17ea54cdd34e0bdff5bb485df346e2c1988b727fa69d232abd47d"
+    },
+    "translations/focuswriter_ru.qm": {
+      "sizeBytes": 38021,
+      "sha256": "02df6c7339cb52a5715638ce51afa044b158930253594dabab864bf7d0af0eb5"
+    },
+    "translations/focuswriter_fur.qm": {
+      "sizeBytes": 36589,
+      "sha256": "eb14ade9549706933b16525ee97114d70810e9e0dc7a0c1ed06242aaef8c5be0"
+    },
+    "translations/focuswriter_pl.qm": {
+      "sizeBytes": 37586,
+      "sha256": "04c30628a8191acfc92c4dcad744ec8ec384318cc825637259caf4575932ecce"
+    },
+    "translations/focuswriter_af_ZA.qm": {
+      "sizeBytes": 10814,
+      "sha256": "6d7019ec82461e20d1ac2ca2104fdcb5190b150ca3d611aa48810f73ab98b968"
+    },
+    "translations/qt_nl.qm": {
+      "sizeBytes": 216950,
+      "sha256": "36e61a7c2c32520c3229e7d6be14ce2d73a7897d37daa67be0f3427fe1f1513c"
+    },
+    "translations/focuswriter_pt.qm": {
+      "sizeBytes": 38658,
+      "sha256": "407c3aa00f569b2a5bc487754b71490e13e22a4af60e79b7762edc7ee70fee7c"
+    },
+    "translations/qt_fi.qm": {
+      "sizeBytes": 193784,
+      "sha256": "40f1b47e8dbf31ea1065276e19bff1a9ef65d290972c06a723f43c3fcac9e25d"
+    },
+    "translations/focuswriter_hu.qm": {
+      "sizeBytes": 37529,
+      "sha256": "e48f68dfad3fc9ce6c4974e3f364f3d71d89381259bf1d869212ba3d409652e8"
+    },
+    "translations/focuswriter_id.qm": {
+      "sizeBytes": 35135,
+      "sha256": "9ccc88119eae11e7f3ae108cc759d493468190ef63bb388b5a4c745ce0d53e42"
+    },
+    "translations/focuswriter_lt.qm": {
+      "sizeBytes": 38024,
+      "sha256": "f16c4fe081568792ba4131cb3332c5276a390bd859d3073a08ad864dbc79ac86"
+    },
+    "translations/qt_ka.qm": {
+      "sizeBytes": 215258,
+      "sha256": "7549c6f265a5a43b07e8387325d809add6eedfd14628a544e0f6027e40632834"
+    },
+    "translations/qt_da.qm": {
+      "sizeBytes": 195006,
+      "sha256": "a41adddb5acc3f706199820377db8ae3da85472362a3eeac46988decbfad5c0d"
+    },
+    "translations/qt_ar.qm": {
+      "sizeBytes": 171450,
+      "sha256": "584e5bc03a6305a1dc27a389cd089e9e14322b97d9405f6ad28e636bb5f4e0a2"
+    },
+    "translations/focuswriter_uk.qm": {
+      "sizeBytes": 37587,
+      "sha256": "cb202f9e411640a7fcf5b90278622e15f9e446bdbc2a221785e97d6821af53d4"
+    },
+    "translations/qt_pl.qm": {
+      "sizeBytes": 175148,
+      "sha256": "3f589cec79009b5cd917100ff683c2489f8590b99099e37ebe22b7230ba12048"
+    },
+    "translations/qt_de.qm": {
+      "sizeBytes": 238778,
+      "sha256": "ea4fa9dc4151951e6f528b2aeb18bf5e9dd261e5a895851c9056e453938cb32b"
+    },
+    "translations/qt_hr.qm": {
+      "sizeBytes": 163836,
+      "sha256": "a0e47524986a2bd5c363d1eaca3f0e1650d2951e7dc46ff9359632fb20be1db9"
+    },
+    "translations/focuswriter_mr.qm": {
+      "sizeBytes": 35520,
+      "sha256": "83c720bd2a379157f19e36d285df1a4d7eb5ec68c8973b4b8c908622a4505bcb"
+    },
+    "translations/focuswriter_da.qm": {
+      "sizeBytes": 35834,
+      "sha256": "fbe9a99f7b91bd3fe6e0abad10db49ce380dc4101e00fc2413469d600ec1bfc5"
+    },
+    "translations/qt_tr.qm": {
+      "sizeBytes": 262255,
+      "sha256": "3657f606d850a88d810ae7e1d02a64b85867bedff5a8b5129b6edd9d4ad58114"
+    },
+    "translations/focuswriter_ja.qm": {
+      "sizeBytes": 31357,
+      "sha256": "417fc0b25d85bbaf0a2b24031aebeb9005294d3d71aa2c22161b463efd7ee8c3"
+    },
+    "translations/qt_ja.qm": {
+      "sizeBytes": 144217,
+      "sha256": "66c03b5f56ade65ea254fc9b1a830ae0217ea4374d0ff63fd2eeaa05c71d3e87"
+    },
+    "translations/focuswriter_nl.qm": {
+      "sizeBytes": 38084,
+      "sha256": "f15a26aa6a13d010d5573ed3ea33a06f5a2992922b8f3efa5ada18f57fc74d01"
+    },
+    "translations/focuswriter_nb_NO.qm": {
+      "sizeBytes": 35961,
+      "sha256": "19e6b984430f52ae4678eee150fe582b1f8ca0b4592f597ac6ea5c6fab3113f5"
+    },
+    "translations/focuswriter_sl.qm": {
+      "sizeBytes": 37149,
+      "sha256": "9a6901d36153a544080f25ba7c0c220f36c16303634c4e38686c104c41c7b6a3"
+    },
+    "translations/focuswriter_de.qm": {
+      "sizeBytes": 38526,
+      "sha256": "af70de11e839a4f6aeababb8c1f84e5011f3f2407bea8b566dd06acbdee43f48"
+    },
+    "translations/qt_cs.qm": {
+      "sizeBytes": 190560,
+      "sha256": "b1078601807d3938c6acfa1cd0c762094fa76c2d276cda61c910fc0b643708db"
+    },
+    "translations/focuswriter_el.qm": {
+      "sizeBytes": 38818,
+      "sha256": "bff4a03224900c0df9261c16f69fb5ab9ec35e96dbeac9193051f372588be4cb"
+    },
+    "translations/qt_zh_TW.qm": {
+      "sizeBytes": 135976,
+      "sha256": "822163d1df063a87cdecec867c3d255175769c9f6d11497aaf8546652a7f648a"
+    },
+    "translations/qt_he.qm": {
+      "sizeBytes": 138690,
+      "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+    },
+    "translations/qt_lv.qm": {
+      "sizeBytes": 153608,
+      "sha256": "846e047573ae40c83671c3ba7f73e27efc24b98c82701da0df9973e574178bb2"
+    },
+    "translations/qt_nn.qm": {
+      "sizeBytes": 209809,
+      "sha256": "804ea972f7993c1d00803a914a73c44d80a6ccb3b425cbe57b386a8113261cdd"
+    },
+    "translations/focuswriter_sv.qm": {
+      "sizeBytes": 35944,
+      "sha256": "dada32cd638bba1983daf51f463199008913959eaf2f37908dead62b72bbad31"
+    },
+    "translations/qt_ca.qm": {
+      "sizeBytes": 225361,
+      "sha256": "a1a3d268fc945b52e4830bdd9d0ce20a06cfa97919cb3530949a1a27925137bd"
+    },
+    "translations/qt_en.qm": {
+      "sizeBytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    "translations/focuswriter_pt_BR.qm": {
+      "sizeBytes": 38259,
+      "sha256": "9ccaa92f166e4806bc82756274f2196a7eed5a02b5d791a14d36690d13d29e56"
+    },
+    "translations/qt_it.qm": {
+      "sizeBytes": 178284,
+      "sha256": "66c3b4928769d10154dd4e35522d50526acf9ba3ce83154796d7517539b865c7"
+    },
+    "translations/qt_bg.qm": {
+      "sizeBytes": 178980,
+      "sha256": "e4d7b5ccef9ef3f81f71c55e1bf1c251c6536205eeeca6bff4e5673b9979d196"
+    },
+    "translations/focuswriter_nb.qm": {
+      "sizeBytes": 36196,
+      "sha256": "0cf16124f4aefc02e8a6e26980964b0f6b6a42afa748fc9e6d328dda8a068cc5"
+    },
+    "translations/qt_sk.qm": {
+      "sizeBytes": 135612,
+      "sha256": "ee21e65e92a8cb6df9a331cbcab9c3cf4bd56d8350370ad729514dd4e06da4f7"
+    },
+    "translations/qt_fa.qm": {
+      "sizeBytes": 159398,
+      "sha256": "5c35f429393de7dd58a7822820aa556ef6cebc80a0f10775c776c52cb76d4b72"
+    },
+    "translations/focuswriter_sr.qm": {
+      "sizeBytes": 34870,
+      "sha256": "59e9aa85a3ef612f0919e64f449b6ce19cc1d24058701b7b065bfe96f61c970c"
+    },
+    "translations/focuswriter_ko.qm": {
+      "sizeBytes": 30407,
+      "sha256": "6aec40a7e051df5e2de738dcca491f5dee6e327027dce63e74f94726aa8fd7eb"
+    },
+    "translations/focuswriter_ka.qm": {
+      "sizeBytes": 1276,
+      "sha256": "08279b8ac905a82dbb773130bc68e70187b4d1f6a27b02c48fb74fb29cceb170"
+    },
+    "translations/qt_gd.qm": {
+      "sizeBytes": 189580,
+      "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+    },
+    "translations/qt_ko.qm": {
+      "sizeBytes": 167772,
+      "sha256": "eceb6da6842a37525280f2835fe739f3bd2cb4846dd2dc8b78255179fb30eefa"
+    },
+    "translations/focuswriter_gl.qm": {
+      "sizeBytes": 25567,
+      "sha256": "50eaa8a88458c95cbdd844643c84e09f621ed6e57a7f6e3539b6a1264f242769"
+    },
+    "translations/qt_hu.qm": {
+      "sizeBytes": 220582,
+      "sha256": "1cc92456521831c07ed8ddf5bf7952f04c2b956ef2a570a62915a6b0d031dfc6"
+    },
+    "translations/focuswriter_ar.qm": {
+      "sizeBytes": 14202,
+      "sha256": "584ba86621bbfa53d770ed70a6bdb4b6285d62e3f77b2dd33a0ecdc719dbc80b"
+    },
+    "translations/focuswriter_et.qm": {
+      "sizeBytes": 37622,
+      "sha256": "7698f6ad8a5071c48436cdd0e003423b1645bff696f96e9d3d20fd672e58c33f"
+    },
+    "translations/focuswriter_ro.qm": {
+      "sizeBytes": 37571,
+      "sha256": "0f031dd6d1418c43c917ac0c0e486439eaebc28d4986db22c8847f91e297ee8d"
+    },
+    "translations/focuswriter_zh_CN.qm": {
+      "sizeBytes": 28534,
+      "sha256": "08b39f0e445eb39510b08031edaf712512603ad13e459754fbfcfebebdf65b68"
+    },
+    "translations/focuswriter_he.qm": {
+      "sizeBytes": 32275,
+      "sha256": "09ec6f4df7569a1eedf5cfb6befd332f4e9b93e68395cc81c3282c1bec8f7c3a"
+    },
+    "translations/qt_zh_CN.qm": {
+      "sizeBytes": 146500,
+      "sha256": "50239e8e54494f18b713413aa1c4a82fe041b28fdb638ed1495c369c16d0e2cd"
+    },
+    "translations/qt_ru.qm": {
+      "sizeBytes": 217822,
+      "sha256": "38cc4ddfa2aff7f59ddc91f0e61520151a48f91ec96cfce5c2532ae55d6d624f"
+    },
+    "sounds/keyany.wav": {
+      "sizeBytes": 47596,
+      "sha256": "b7fedd7f2ab6c72f30441828738396d2debffc751a36975c4b51e7cd938a7298"
+    },
+    "sounds/keyenter.wav": {
+      "sizeBytes": 98348,
+      "sha256": "4da284f420382d52897a7c12bc1d31762d94f34df9738428af5527fd324148cd"
+    },
+    "styles/qmodernwindowsstyle.dll": {
+      "sizeBytes": 242360,
+      "sha256": "91eb6d0472bc3d077bad944f6bcac177bff3c8547de50f566c0fe0227c9e826a"
+    },
+    "iconengines/qsvgicon.dll": {
+      "sizeBytes": 75448,
+      "sha256": "1fd6daada6d7b5a1c7d203a7aac9e22433d798db79ab2371f853912ea59ce57c"
+    },
+    "themes/writingdesk.theme": {
+      "sizeBytes": 529,
+      "sha256": "13d4bf71fb2d6467b8c55258d108cb769631a4463caa14c5993bbe9f989faaca"
+    },
+    "themes/spacedreams.theme": {
+      "sizeBytes": 528,
+      "sha256": "30076959919294ca50cd1d9455f513a3d92870ca9f3e44a83bcb5f50eb469de5"
+    },
+    "themes/enchantment.theme": {
+      "sizeBytes": 527,
+      "sha256": "a6025ee06ac673553b532c950275fb07eceea278c8d7dcfd0909d2a7991f6e9e"
+    },
+    "themes/oldschool.theme": {
+      "sizeBytes": 509,
+      "sha256": "0ca2a31b0ed29f7e054a558c7a9fcdab044c6c861392c43873e64c506f3c490b"
+    },
+    "themes/tranquility.theme": {
+      "sizeBytes": 528,
+      "sha256": "42f97df27ab6e8f6193933029696d49afe53cc2d5ede53498762dd7958f906d7"
+    },
+    "themes/bitterskies.theme": {
+      "sizeBytes": 528,
+      "sha256": "5839098d65bcf3424de5568a4fabfb9d059a4dbc0cff4a0108811afb3c6cf4f0"
+    },
+    "themes/spygames.theme": {
+      "sizeBytes": 524,
+      "sha256": "75e4b99caf00ee3a05ff4f2485a7c3ccb299f23403eac86d7762ebb7f7202540"
+    },
+    "themes/gentleblues.theme": {
+      "sizeBytes": 513,
+      "sha256": "ac84f39168bca2c6807ac3aa0bbbfc56e37779e5c95e3159fd6f526014b0ec3e"
+    },
+    "tls/qschannelbackend.dll": {
+      "sizeBytes": 269496,
+      "sha256": "65d05ab6644c53549010b82178c6f72a4eeda630635087afbc9599febc74f3bf"
+    },
+    "tls/qopensslbackend.dll": {
+      "sizeBytes": 359096,
+      "sha256": "0b3827af7cf60378a9901910a17c12e2d63589540ffe6a5d559b5a85be213029"
+    },
+    "tls/qcertonlybackend.dll": {
+      "sizeBytes": 107192,
+      "sha256": "368737d6745fe7b2519d6d2b8c7a515a0f4124667f10e97ed3fcb70891a880f9"
+    },
+    "platforms/qwindows.dll": {
+      "sizeBytes": 1140408,
+      "sha256": "ea7f431bab617f5fd655b9d8080f5ba915e60d26b9bb876765f0b91a2181a3b1"
+    },
+    "generic/qtuiotouchplugin.dll": {
+      "sizeBytes": 99000,
+      "sha256": "c960a4463f9845df46f3acd9582ef678aca59597e977e673e4fa33fe40c34294"
+    },
+    "networkinformation/qnetworklistmanager.dll": {
+      "sizeBytes": 100536,
+      "sha256": "7ec2f56efd8752b472df0fc64c8144941c1768183218689f37de24943a7c3230"
+    },
+    "dictionaries/af_ZA.aff": {
+      "sizeBytes": 4969,
+      "sha256": "fdfcdd04d700fc4ac94be63930167fa942ee5ffb471b52a6f4e0c68362dd63d2"
+    },
+    "dictionaries/en_GB.aff": {
+      "sizeBytes": 35287,
+      "sha256": "66277af3d9465493ff58d6cfe0dd62a92f119d51eac4586d1b2a1d8a2acd459a"
+    },
+    "dictionaries/pt_PT.aff": {
+      "sizeBytes": 95089,
+      "sha256": "975a209fcc892cb382fa5f34a28c391a39668661ce373ae071287809c5fcae24"
+    },
+    "dictionaries/et.aff": {
+      "sizeBytes": 236336,
+      "sha256": "2fa53b7853762ec8c63ffa14b2d96d23433e3f2c2d3d218ad7c2461673099f95"
+    },
+    "dictionaries/es_MX.aff": {
+      "sizeBytes": 158014,
+      "sha256": "4dc9ddafc140e0fc27a40fe808ff3d77138e12bf3db5748832f03d780aadecfa"
+    },
+    "dictionaries/bs.aff": {
+      "sizeBytes": 17468,
+      "sha256": "c25f10c556319c5725ae186e1cef767541214e272422b11fadc519e4c2487ff6"
+    },
+    "dictionaries/de_AT.aff": {
+      "sizeBytes": 19067,
+      "sha256": "646bf3333ac69c23e9d794533ee5241d6f755c359e8fe10a648f87613743d594"
+    },
+    "dictionaries/ro.aff": {
+      "sizeBytes": 55181,
+      "sha256": "b1e0558a367f8ace1641fbc1cdce0246f89ee9279e457bc81b519f36c8089ee8"
+    },
+    "dictionaries/en_AU.dic": {
+      "sizeBytes": 554336,
+      "sha256": "aa07c46571f306b79fc1bc534357ed357af15687381b26f891ba66e8a2caed89"
+    },
+    "dictionaries/it.dic": {
+      "sizeBytes": 1295083,
+      "sha256": "bae1e3501dcd2a923669592493b3fde6c02aae7c7aab83bf5e5b49077e73dd64"
+    },
+    "dictionaries/hy.aff": {
+      "sizeBytes": 26515,
+      "sha256": "d2cf741803eb5731419df54b4338ab52a265c910f1a38d9b8029f599e57fc56c"
+    },
+    "dictionaries/de_DE.dic": {
+      "sizeBytes": 4356903,
+      "sha256": "4ca3c958b0e5545910999bc246f668840bf8ede3df8e5e6790d05edd5a586c38"
+    },
+    "dictionaries/es.aff": {
+      "sizeBytes": 167135,
+      "sha256": "892039d59db11d747061b81c3a92a52d48ba0e055b5835af1943cbd3c2fba85b"
+    },
+    "dictionaries/de_CH.aff": {
+      "sizeBytes": 19067,
+      "sha256": "646bf3333ac69c23e9d794533ee5241d6f755c359e8fe10a648f87613743d594"
+    },
+    "dictionaries/et.dic": {
+      "sizeBytes": 4383841,
+      "sha256": "cd1378434aefeaa8a31f49369dbf71caf4e6340badb5c2cf7a55820933ed4f13"
+    },
+    "dictionaries/gl.dic": {
+      "sizeBytes": 8325262,
+      "sha256": "9c0b9128a73473fde3199e807a78252c39a3885db1d0db161a2b0fcd286c7a4b"
+    },
+    "dictionaries/ru.dic": {
+      "sizeBytes": 3473191,
+      "sha256": "f6047416a0204adbecf3a451b874ec8a97ee37e2cbc714466ef04d8dbcc0d6fc"
+    },
+    "dictionaries/eo.dic": {
+      "sizeBytes": 377989,
+      "sha256": "d3d8f84c7b5d6fcb348ce8c11b07c70e007c4b0075350d6bd796196419d42ac4"
+    },
+    "dictionaries/en_US.aff": {
+      "sizeBytes": 3205,
+      "sha256": "e746c882dd6f303c2c46e7452804b9201115a6942cfeb15f18f8edf774d2e24e"
+    },
+    "dictionaries/ca.dic": {
+      "sizeBytes": 3086130,
+      "sha256": "4838bb46776f5d82a3823aa7abb17cd00b9dc0c301d1b6d002e1ab6558fa07ca"
+    },
+    "dictionaries/tr.aff": {
+      "sizeBytes": 2283891,
+      "sha256": "a04a227b2ee45574000b876a1afa982e3436d49ebb97a7a796ddc5ec0cc8191b"
+    },
+    "dictionaries/de_DE.aff": {
+      "sizeBytes": 19067,
+      "sha256": "646bf3333ac69c23e9d794533ee5241d6f755c359e8fe10a648f87613743d594"
+    },
+    "dictionaries/el.dic": {
+      "sizeBytes": 10125390,
+      "sha256": "e5b9b9c2cf05bbc59e03fe302b462dae85968f822f4fc219a8ed2879d6943720"
+    },
+    "dictionaries/lt.aff": {
+      "sizeBytes": 92208,
+      "sha256": "01ec7b4edc369f696c39918aa9b33e5e738005983f3a76ce4817af2ed361b060"
+    },
+    "dictionaries/nl.aff": {
+      "sizeBytes": 27835,
+      "sha256": "0ee9233fe1c5785f9a803a05ac882e8363ac785c06fbd455af88ce0c0a57324b"
+    },
+    "dictionaries/en_ZA.aff": {
+      "sizeBytes": 37884,
+      "sha256": "e98a5c0f0977ae4c58c27f03fcdce9fcf021b00b16dfeae761f96e3617c9180b"
+    },
+    "dictionaries/hu.aff": {
+      "sizeBytes": 2236063,
+      "sha256": "7fbfe784398e6605cae9d75988187cd59e8cfa1040cc30783a55cd92d3b9ea41"
+    },
+    "dictionaries/ar.aff": {
+      "sizeBytes": 86949,
+      "sha256": "cec30b8621001e49618feb05aec1984c5fcfbf7d2ec309901d5cbf66585217a3"
+    },
+    "dictionaries/pt_BR.dic": {
+      "sizeBytes": 4477695,
+      "sha256": "a38bfb26b68ece2834e79fe83e48d5792652970ace12db89d1b9674bf9933183"
+    },
+    "dictionaries/cs.dic": {
+      "sizeBytes": 3656362,
+      "sha256": "d8e8c88c006fdae72dac8c85df11b0c99a773e05a4ab0fcbe92244876668ca74"
+    },
+    "dictionaries/ru.aff": {
+      "sizeBytes": 71236,
+      "sha256": "38ce7d4af78e211e9bafe4bf7e3d6a2c420591136cb738ec6648f8fdf6524cd7"
+    },
+    "dictionaries/eo.aff": {
+      "sizeBytes": 19129,
+      "sha256": "28d48b2d17c9fd20ae9924f14dc2832c8277c9d03715f939957e2c93bcd767b1"
+    },
+    "dictionaries/sv.aff": {
+      "sizeBytes": 18583,
+      "sha256": "b721c9d44bee912feb182b601a1bc2ae3e7dffef660f4130cf2751867488a9dd"
+    },
+    "dictionaries/fr.aff": {
+      "sizeBytes": 201591,
+      "sha256": "4730775ff4488c4a9aa4833393c8b2187126336eed766866300a58a75fe874f0"
+    },
+    "dictionaries/ar.dic": {
+      "sizeBytes": 7217161,
+      "sha256": "2a3e5367f61c1583734db9d66734f5603e6be5c2d227cf5c5cd7e4ca586e34fe"
+    },
+    "dictionaries/sr.dic": {
+      "sizeBytes": 5878745,
+      "sha256": "48f4590eb63c2337a53c5a3b89b9071a80ee0d13d786c639a66744ce53803c20"
+    },
+    "dictionaries/da.aff": {
+      "sizeBytes": 82254,
+      "sha256": "bafceab060e26f61892a3e52d4a699d9059ccd62c48cf4cadffed60c63aceb92"
+    },
+    "dictionaries/de_AT.dic": {
+      "sizeBytes": 4359309,
+      "sha256": "d821e0a5a029b66df696c982a4cd55eb792139c33716ccbde364941db2448cbb"
+    },
+    "dictionaries/vi.aff": {
+      "sizeBytes": 788,
+      "sha256": "b58b31ba3cfbf1c5a3730f2cceb8652604180770020f291d2cf6c6fecc9721f4"
+    },
+    "dictionaries/sr-Latn.aff": {
+      "sizeBytes": 684540,
+      "sha256": "38b99cae0005ff20b015d829580a0f3533ffabc1f889a54144a74e90069548e6"
+    },
+    "dictionaries/uk.dic": {
+      "sizeBytes": 8533784,
+      "sha256": "f1dfcea9a84bac29b3d51843d84fca99d4ba91e461b5ab56c9b7f4b2e55f1c4e"
+    },
+    "dictionaries/bs.dic": {
+      "sizeBytes": 339863,
+      "sha256": "eb6778f2f311dbc71997fe790a28d26ea9d1183ef5579e6ec05f7f7141246cd6"
+    },
+    "dictionaries/lt.dic": {
+      "sizeBytes": 1085291,
+      "sha256": "1714f38f7b80f35799ab6abb8ff4a40fa1de805e1adc1d4d30c0b5a179887469"
+    },
+    "dictionaries/en_AU.aff": {
+      "sizeBytes": 3205,
+      "sha256": "e746c882dd6f303c2c46e7452804b9201115a6942cfeb15f18f8edf774d2e24e"
+    },
+    "dictionaries/libvoikko-1.dll": {
+      "sizeBytes": 1075193,
+      "sha256": "6e66b6b5ba76b1ea5e31b59fcfa97b8e7570ae09516488dac3859fdba19f93e5"
+    },
+    "dictionaries/pt_PT.dic": {
+      "sizeBytes": 1474739,
+      "sha256": "9d90cfd9fb15312db71fbe46c11f871df67684dae7c218ab270142e7ae68c377"
+    },
+    "dictionaries/sl.aff": {
+      "sizeBytes": 14730,
+      "sha256": "3cb3e84824959928c8004e07b37b9d2bcb84176095f514e134f006dbb14a0beb"
+    },
+    "dictionaries/sl.dic": {
+      "sizeBytes": 2967766,
+      "sha256": "e157aabf1a20d21f639d04cf79f019ff1a3eb623c6780a726ffa4293787fa0ab"
+    },
+    "dictionaries/hy.dic": {
+      "sizeBytes": 2278733,
+      "sha256": "c8b8900800f54946ccf8c75f3f91a1505b1532b7b1b82ec1146fef1310a192e6"
+    },
+    "dictionaries/sv.dic": {
+      "sizeBytes": 2321821,
+      "sha256": "8bf485a6b0be30bd901d7acbdc1a8ee9c70471885b476f2e42eeba6fe2959bee"
+    },
+    "dictionaries/fr.dic": {
+      "sizeBytes": 1227095,
+      "sha256": "b99447ab2e655c1e4b64509cfd2e6c24821242bff1f971b49eac723e388a2d19"
+    },
+    "dictionaries/af_ZA.dic": {
+      "sizeBytes": 1214886,
+      "sha256": "8d806f90146059ea18b49c2352d188bd27dcc571a06815794facaa176aa5a5de"
+    },
+    "dictionaries/de_CH.dic": {
+      "sizeBytes": 4358308,
+      "sha256": "80a4df38cdc3e16d2f042f8eba4a99668ab9c075662e4262c62f8bba46c7bd16"
+    },
+    "dictionaries/el.aff": {
+      "sizeBytes": 15647,
+      "sha256": "868dfe13ad7d34251915a745e44d38542831463d56e60732ba3a5bc1dcca582a"
+    },
+    "dictionaries/ko.dic": {
+      "sizeBytes": 2864524,
+      "sha256": "14117a72811ed6a083ed374ceb728b0846a689da6f4dbfe0a84d3b3bce124e80"
+    },
+    "dictionaries/sr.aff": {
+      "sizeBytes": 901060,
+      "sha256": "068bd94a48136ceb577a5a794097024af6ab7fbd82a6f75cad0531cc3bb92e0a"
+    },
+    "dictionaries/gl.aff": {
+      "sizeBytes": 1163541,
+      "sha256": "76c848fc7704be8ea035926fb524b6379d572212f10eb8cb8e847e98442b2f3a"
+    },
+    "dictionaries/he.aff": {
+      "sizeBytes": 78883,
+      "sha256": "6caf86b3a545be5614f135d33a48baa244a59aca43f051dda6173d5d9cbc7700"
+    },
+    "dictionaries/tr.dic": {
+      "sizeBytes": 36136702,
+      "sha256": "48e5352c5770956b24f355265aef7649b25bcb4d933c0b254ea8b419c241f4bd"
+    },
+    "dictionaries/uk.aff": {
+      "sizeBytes": 203317,
+      "sha256": "71a7dcce43736665973b56cab970bc1240d5894cbb90266c2b458b2ea5a49d58"
+    },
+    "dictionaries/pt_BR.aff": {
+      "sizeBytes": 979792,
+      "sha256": "21d8ad2a769a60e17e2b5ea4ef11d4d593a58b9e2a82d642ef82d6a4c5523865"
+    },
+    "dictionaries/id.dic": {
+      "sizeBytes": 453700,
+      "sha256": "775ff17a52801f3d2ee80120952fb44cc9bac6c3cf61740de775e439851a5803"
+    },
+    "dictionaries/sk.aff": {
+      "sizeBytes": 225271,
+      "sha256": "af67bbe8ea9dea74968ec01acd266b3f74177ca087ee6eb7898c576e0aef7a3d"
+    },
+    "dictionaries/pl.dic": {
+      "sizeBytes": 4539105,
+      "sha256": "215fd73aa47b11e7fdd2e4d655e9fe37be4acdae16ff833badcfdfce79110aad"
+    },
+    "dictionaries/cs.aff": {
+      "sizeBytes": 111575,
+      "sha256": "7ecb20620ecd46ebd9c36f3f33e69dd4eda385cba5b2bb4e6bc396d910e297f7"
+    },
+    "dictionaries/sr-Latn.dic": {
+      "sizeBytes": 3817505,
+      "sha256": "f51950195e5bd0aaf155d3488517d4dbc4c8fbc772ecbafbf9131e69a257b1ff"
+    },
+    "dictionaries/id.aff": {
+      "sizeBytes": 15274,
+      "sha256": "c625d5b237a489c452cf1f9c666600103e8093667dff89e7030a24217995dc79"
+    },
+    "dictionaries/en_US.dic": {
+      "sizeBytes": 551762,
+      "sha256": "f0b1a234bd178bdd01875b2a392a9647f888b8fe879f79c52aae62c2759b3647"
+    },
+    "dictionaries/sk.dic": {
+      "sizeBytes": 3362212,
+      "sha256": "3e3dbd5c6af8431a3a47652c69692f3f86d0cd82deb4418e49a057a33ef56063"
+    },
+    "dictionaries/ca.aff": {
+      "sizeBytes": 52471,
+      "sha256": "abcca353b16af2d91be51d68899f47e5076a47489d08f696717fbac44074ddb8"
+    },
+    "dictionaries/pl.aff": {
+      "sizeBytes": 246842,
+      "sha256": "7c37b9bde78054e43365b488a13859094c88bc66664b5b7a7bb073626454b38e"
+    },
+    "dictionaries/es.dic": {
+      "sizeBytes": 703244,
+      "sha256": "21cbea1e258f1fa98a035efd4e700ef41d9e6a8f07ed9023c4aa3915e5eb1362"
+    },
+    "dictionaries/en_GB.dic": {
+      "sizeBytes": 1234208,
+      "sha256": "d1ec5e0debb24ab1f1d58f3b63a8f130c93dda4ac1c73d43c9d29af58803ccd3"
+    },
+    "dictionaries/en_CA.dic": {
+      "sizeBytes": 551583,
+      "sha256": "53096689870246a78fa408b1e7a8c49bc140bd466a84a384cfb509445fff7173"
+    },
+    "dictionaries/ko.aff": {
+      "sizeBytes": 11094418,
+      "sha256": "43a984d8f1e2309490b69cfde31832d217a0b31164c67661e293efc096083688"
+    },
+    "dictionaries/it.aff": {
+      "sizeBytes": 70054,
+      "sha256": "951afaa19272f13555b8823e8bcf9ccf78f8fe1a07835bdfb912ab3e4d537c2b"
+    },
+    "dictionaries/he.dic": {
+      "sizeBytes": 7796259,
+      "sha256": "5f5331f90ed775bd527f6fb7ad1ead9a1b7d8ce46ad640c2387d9d1dc91d3058"
+    },
+    "dictionaries/es_MX.dic": {
+      "sizeBytes": 711100,
+      "sha256": "936a6c41b1663e68e352338e1f21bd3ba407b6bd7e0ec41a959996e39fd2ff47"
+    },
+    "dictionaries/en_CA.aff": {
+      "sizeBytes": 3205,
+      "sha256": "e746c882dd6f303c2c46e7452804b9201115a6942cfeb15f18f8edf774d2e24e"
+    },
+    "dictionaries/nl.dic": {
+      "sizeBytes": 1881063,
+      "sha256": "24782020d0d0bd465270027f51443b752f8ddaecf7c612a225e8668e1746aa24"
+    },
+    "dictionaries/hu.dic": {
+      "sizeBytes": 1756889,
+      "sha256": "2ec787f2992a8affe82a9aa912a0a881b21dfa6a61dc8a35aa160e5e41565bda"
+    },
+    "dictionaries/da.dic": {
+      "sizeBytes": 3795360,
+      "sha256": "bb62ffc4d5b4f3d56f133505114b41336d36d022c265d1c3b59707b7ba7681d7"
+    },
+    "dictionaries/ro.dic": {
+      "sizeBytes": 2196348,
+      "sha256": "618435dc96dd21494a9d5c0df4a42ae0fe7997a849f381768e41ae7e15d85b85"
+    },
+    "dictionaries/en_ZA.dic": {
+      "sizeBytes": 604580,
+      "sha256": "69dd1231efff0cbc5440258dde7f797119ce08fa4e1f2ca03b9abe5bf03652a9"
+    },
+    "dictionaries/vi.dic": {
+      "sizeBytes": 39852,
+      "sha256": "21d59c8385d2ac8d708bc5dfe83b62753d7769a8b2c9c38d319ce5c57bfba0c7"
+    },
+    "multimedia/ffmpegmediaplugin.dll": {
+      "sizeBytes": 630456,
+      "sha256": "8266ab78fcad6e29e3c85bf28d5ad01a5a31ec87abfe4a8c866696e8dbe1960c"
+    },
+    "multimedia/windowsmediaplugin.dll": {
+      "sizeBytes": 423608,
+      "sha256": "93999bdd685099511aa95845bfa4b2ea71ac89e6fe59021dc03118a6881fde07"
+    },
+    "imageformats/qtiff.dll": {
+      "sizeBytes": 515256,
+      "sha256": "df15b234058e71bc1cd42f508ea981644833a43b3126efe96d68635de7a9a904"
+    },
+    "imageformats/qwbmp.dll": {
+      "sizeBytes": 38072,
+      "sha256": "7e73b31e3d2e7fe0b3330c70d816030a923f77bdcce61135b38dcbb6f1880438"
+    },
+    "imageformats/qtga.dll": {
+      "sizeBytes": 39608,
+      "sha256": "675ba780f0bc6f55d4a8657bf8176aa7c88e16a819d20b59ecd3fe88e079f974"
+    },
+    "imageformats/qicns.dll": {
+      "sizeBytes": 58552,
+      "sha256": "014c6ceadbae97e62329b937102e4c808b4b6f02d69495ac24b86e4e70a7479d"
+    },
+    "imageformats/qwebp.dll": {
+      "sizeBytes": 535224,
+      "sha256": "20b6f3e3772451c832bbbb8332d449ae39bba7bfb63a6bac255dadb854c6cb49"
+    },
+    "imageformats/qjpeg.dll": {
+      "sizeBytes": 644280,
+      "sha256": "01b0731ef62b0df76d86247df8efe3f9a20b1f7bb971c976e224c7f977f4c233"
+    },
+    "imageformats/qico.dll": {
+      "sizeBytes": 50360,
+      "sha256": "e3ad35c014d8fb14508f91bf968edb16dc1eac7b5686fb8324abed0c4dfffcb5"
+    },
+    "imageformats/qgif.dll": {
+      "sizeBytes": 49336,
+      "sha256": "1778fbd4d262e084b107f0fdc5c6c28d6c306c6352eb67267cc92faa66ce6486"
+    },
+    "imageformats/qsvg.dll": {
+      "sizeBytes": 40120,
+      "sha256": "0127e2cfd2a41f12e8bb253508f7731d4da2991c49ac5778cf9f8e624bb9f95b"
+    },
+    "dictionaries/2/mor-standard/voikko-fi_FI.sym_l": {
+      "sizeBytes": 17163,
+      "sha256": "8821b6db2e255028173914e5e18d3b4e0e4a3f0592676f9be7c7542babe18643"
+    },
+    "dictionaries/2/mor-standard/voikko-fi_FI.lex_l": {
+      "sizeBytes": 7835438,
+      "sha256": "2a5b40a4066655645bd378ec044bf834bd3b1b80688b6727faf1b85a2f3b3659"
+    },
+    "dictionaries/2/mor-standard/voikko-fi_FI.pro": {
+      "sizeBytes": 1397,
+      "sha256": "fd151d07096cecd7cadabd56616a8339a23ce68190f26439d4d47c79ffd0cf0f"
+    },
+    "dictionaries/2/mor-standard/voikko-fi_FI.mor_l": {
+      "sizeBytes": 70107,
+      "sha256": "55d344a2edf25fd2632c881e54f83bb0c1bd1afbf73f417107e3a57d20b9e2f7"
+    },
+    "themes/images/writingdesk.jpg": {
+      "sizeBytes": 892086,
+      "sha256": "6e6f120d3e98d80cb2d72605555eb70b75bc922c4d975e1c45ca05b42ed1711a"
+    },
+    "themes/images/tranquility.jpg": {
+      "sizeBytes": 241918,
+      "sha256": "61a3b9acc1a316031884cbf6241f13d0958542641d0d6ba60e6da35e57fa6aed"
+    },
+    "themes/images/bitterskies.jpg": {
+      "sizeBytes": 355801,
+      "sha256": "0dda82d09fafe2cfec482c98da2dcf333223d667aa70ffa2223f6b42a99df50d"
+    },
+    "themes/images/spygames.jpg": {
+      "sizeBytes": 624906,
+      "sha256": "f66b51da87334999b23f240e972ee907066826848ab34a0570359d50d8ae59a2"
+    },
+    "themes/images/spacedreams.jpg": {
+      "sizeBytes": 769012,
+      "sha256": "b5be354da696502e4408a390857f1c3e168bf109ec01b2c27f859737c5ffff3d"
+    },
+    "themes/images/enchantment.jpg": {
+      "sizeBytes": 1604499,
+      "sha256": "44a6bcd6ef3c9fdf772624e9dbb09133843d0f1c3db0fe064557352b2830ff56"
+    },
+    "icons/hicolor/index.theme": {
+      "sizeBytes": 292,
+      "sha256": "226f7b2013b638b89623f96fa2762468005b0c4770ebc00a0c767d2c25c3c7d5"
+    },
+    "icons/hicolor/48/dialog-close.png": {
+      "sizeBytes": 3751,
+      "sha256": "84df5f2673e4244aa6098ecd448c7ba511fed79cf3d00fd60af8c181e3fd4147"
+    },
+    "icons/hicolor/48/application-exit.png": {
+      "sizeBytes": 3017,
+      "sha256": "7f25b713850cea7e7f5c8f5e47fcee7ecc7d9710664eb6e3bba94ad190056785"
+    },
+    "icons/hicolor/48/format-text-subscript.png": {
+      "sizeBytes": 2266,
+      "sha256": "a54314f8977de237729fa869720dcf7cd06ba3839c162839b7481b978d4a06f9"
+    },
+    "icons/hicolor/48/folder-open.png": {
+      "sizeBytes": 2355,
+      "sha256": "eafbb0e8c5b75fb168cbe40278c7f2614313128faf306629ed9a7ee2d8a30021"
+    },
+    "icons/hicolor/48/edit-undo.png": {
+      "sizeBytes": 3440,
+      "sha256": "070f3ad7db85aa6086df38567fe5dade0b8786f9112b11d3a7907e3cb56c005c"
+    },
+    "icons/hicolor/48/view-fullscreen.png": {
+      "sizeBytes": 883,
+      "sha256": "ede9a482e2d5b6c8d3873b98961fd5766edc2cf8ddf64d1d83d7547e7441e2aa"
+    },
+    "icons/hicolor/48/format-text-superscript.png": {
+      "sizeBytes": 2276,
+      "sha256": "fb1b9d426d2f0c427cfc24d6a39769ab6cc451071d696224e6777d77d705fa15"
+    },
+    "icons/hicolor/48/format-indent-more.png": {
+      "sizeBytes": 1350,
+      "sha256": "ffc6aa556ccf02b48f0a2fbd17fafbecc2bf754bf80aecea7936b6aa3680e8dc"
+    },
+    "icons/hicolor/48/go-up.png": {
+      "sizeBytes": 2426,
+      "sha256": "bec74c47de5abfda8b5c5a0a8c0000518bb0440f29b5fb35784528e5fbe8ffcd"
+    },
+    "icons/hicolor/48/document-save-all.png": {
+      "sizeBytes": 2585,
+      "sha256": "8f1f3edb1cc9ee86ac26552628ae8fe9364e66475c91c2a0f4a1664054ee1133"
+    },
+    "icons/hicolor/48/format-text-italic.png": {
+      "sizeBytes": 1321,
+      "sha256": "dff705638819402b8943d3c87e0dbeb2610e43a675cffa908b11ce5d233a6b0c"
+    },
+    "icons/hicolor/48/view-choose.png": {
+      "sizeBytes": 839,
+      "sha256": "144aef4d176ab40b36966e96e2c94dcedc7163dc835e95730d61d252bac6d915"
+    },
+    "icons/hicolor/48/document-close.png": {
+      "sizeBytes": 2613,
+      "sha256": "34783a736eabbea5a6c54e5784595db02686a9044031e4929e77044d77e413b9"
+    },
+    "icons/hicolor/48/arrow-down.png": {
+      "sizeBytes": 1544,
+      "sha256": "c520ad51bbe44196bc984c941d7cbc5e3c2780c74465111af8153f74ec0cd495"
+    },
+    "icons/hicolor/48/configure.png": {
+      "sizeBytes": 2575,
+      "sha256": "af034cd0f92acf490d649459d0e89b98d196289eaeb28746f54e7bb256ddda6c"
+    },
+    "icons/hicolor/48/edit-find-replace.png": {
+      "sizeBytes": 3881,
+      "sha256": "facc2c5a680a3ea458d4d70666530339481b99bf4112d35e2700ba71a538362c"
+    },
+    "icons/hicolor/48/format-justify-left.png": {
+      "sizeBytes": 423,
+      "sha256": "6f1deb552a67c595e300e19d6f7291c00497e6437063e4e4a8341e947dbaa5b3"
+    },
+    "icons/hicolor/48/edit-find.png": {
+      "sizeBytes": 3136,
+      "sha256": "524849dced9372b6dd11468d8899931fa64b6cd1e03c37895a3a379b7bd98234"
+    },
+    "icons/hicolor/48/format-justify-right.png": {
+      "sizeBytes": 536,
+      "sha256": "1dcfcf67f46f37b20ed9a2975dce3c7bc28bcf9c68aa04f0975d3440efd9df81"
+    },
+    "icons/hicolor/48/format-text-direction-rtl.png": {
+      "sizeBytes": 908,
+      "sha256": "e648c98831185ae8170f35913117740004c279b004fa5dbf34ff819a8d1f8f2d"
+    },
+    "icons/hicolor/48/format-text-strikethrough.png": {
+      "sizeBytes": 1107,
+      "sha256": "8764a0dc6a3a1dc8e0bd4225f425ea9dcd86ccb7fc23226c5578c4d62610b6ca"
+    },
+    "icons/hicolor/48/format-indent-less.png": {
+      "sizeBytes": 1223,
+      "sha256": "ac174b771b28c08bc7e64fcd28e5e88e7e37e0e35baecb319e371d37ca65058b"
+    },
+    "icons/hicolor/48/preferences-desktop-locale.png": {
+      "sizeBytes": 4883,
+      "sha256": "052d9243563eb509cc6cb93e44923d21ab8053780240219b1f3104379e51933f"
+    },
+    "icons/hicolor/48/edit-redo.png": {
+      "sizeBytes": 3383,
+      "sha256": "a811d18343c253dbe9255f1bc3f11001d0ec0baaf119090e2d78fde287d5f807"
+    },
+    "icons/hicolor/48/character-set.png": {
+      "sizeBytes": 1362,
+      "sha256": "721111566e1d9c0935b05cd859cec33463f9ace2ca734f39237c6f4c79d239a1"
+    },
+    "icons/hicolor/48/document-save-as.png": {
+      "sizeBytes": 3792,
+      "sha256": "27a54b9051fb04533a330bff0294c12a1a2bd662144f34b64f0ea976e0843a55"
+    },
+    "icons/hicolor/48/format-text-bold.png": {
+      "sizeBytes": 1330,
+      "sha256": "3b4b8fb7efc0aedd998094a8e60b2e1b4bc2a894d161e2f4ffb79cd6c0eb0835"
+    },
+    "icons/hicolor/48/edit-rename.png": {
+      "sizeBytes": 748,
+      "sha256": "f5f9ac34fc7a9283ede1189eb241a0fa4d3c3af993065ed3142bc815d14d3561"
+    },
+    "icons/hicolor/48/edit-copy.png": {
+      "sizeBytes": 1380,
+      "sha256": "f012339189d8b733f21868ee5ca3b06344c68bf2400f07fdddea96105296ae51"
+    },
+    "icons/hicolor/48/format-text-direction-ltr.png": {
+      "sizeBytes": 975,
+      "sha256": "46dfca1179789713710108b30c9518315df5ef02d56e69d200b64a855167ec27"
+    },
+    "icons/hicolor/48/document-save.png": {
+      "sizeBytes": 2122,
+      "sha256": "826fbe23c3c037e600ad668dcf6e4763cb1a49c0175b10927a322abc6c022920"
+    },
+    "icons/hicolor/48/window-new.png": {
+      "sizeBytes": 1883,
+      "sha256": "40b2724a6b20219f8defec5437d1d032c1441c582f4cf27748696afa1449009c"
+    },
+    "icons/hicolor/48/edit-paste.png": {
+      "sizeBytes": 1962,
+      "sha256": "68ef3fb5eb072f129950c1df1f9d4ee40b07bde4a3a1e917810452ffa148ae1e"
+    },
+    "icons/hicolor/48/edit-cut.png": {
+      "sizeBytes": 1666,
+      "sha256": "871be50d9a33ee2f7c06f78a0dac78c4fd2fc854785f7470c1907d3a5c851cd2"
+    },
+    "icons/hicolor/48/view-refresh.png": {
+      "sizeBytes": 3743,
+      "sha256": "937d3b7f4bd033bb68c63d2db1ba8fb318ab0d8629b95bc80634110976aeba98"
+    },
+    "icons/hicolor/48/folder.png": {
+      "sizeBytes": 2169,
+      "sha256": "7064550bec810efa839ab7a8df8d5313de7d8096bf0e8350171ed2f3eb96c384"
+    },
+    "icons/hicolor/48/edit-select-all.png": {
+      "sizeBytes": 2647,
+      "sha256": "d0d4a97b083e679caf8ae7d12274aaa1c043661b11c495709aaf19de8ed05898"
+    },
+    "icons/hicolor/48/format-text-underline.png": {
+      "sizeBytes": 1170,
+      "sha256": "c8a1067488cf863c3cf817ad2c1c0cf8f3482988a1e9a565f13fe09239e05b26"
+    },
+    "icons/hicolor/48/help-about.png": {
+      "sizeBytes": 2742,
+      "sha256": "b0a65f2a86e2dbaac40b96c227bed60c0f73d5f35e7f9868722f0aa813433b0a"
+    },
+    "icons/hicolor/48/tools-check-spelling.png": {
+      "sizeBytes": 2627,
+      "sha256": "ac283cf6b296e014a76412d5f950e4811226d3b3d38f9face5673d747d505b87"
+    },
+    "icons/hicolor/48/chronometer.png": {
+      "sizeBytes": 14551,
+      "sha256": "ebdd330245791b1904a0b8f1ef2abad8c0d7a96a6ac35b788b4a74da38aa31f5"
+    },
+    "icons/hicolor/48/document-print.png": {
+      "sizeBytes": 1991,
+      "sha256": "2a0fba251db2d7cf0b5fed0454adbe93644dd90a275369c71e735e185eefae38"
+    },
+    "icons/hicolor/48/document-open.png": {
+      "sizeBytes": 2798,
+      "sha256": "9a81ff00425b7c184474102165d57476fc9db2e955880d23e126deaf72edda1b"
+    },
+    "icons/hicolor/48/format-justify-center.png": {
+      "sizeBytes": 472,
+      "sha256": "9e481c12c30a6593e099f4520b9a07da4a50bdef0dd9749178b8c78c7ea22af9"
+    },
+    "icons/hicolor/48/document-new.png": {
+      "sizeBytes": 2461,
+      "sha256": "ed60e9c001eea26d1d5fa7d6353ba6b5edf56f971e52c47502a21928ca5e1756"
+    },
+    "icons/hicolor/48/view-calendar.png": {
+      "sizeBytes": 2051,
+      "sha256": "38cfcbd4463890a648bb2e4d4a5b51c973c3b4d255e167a610dab7f9297bc715"
+    },
+    "icons/hicolor/48/format-justify-fill.png": {
+      "sizeBytes": 365,
+      "sha256": "0269c04077864a02c445c9c5321ff4617308f6c28ce590cd888cc5e63bacf528"
+    },
+    "icons/hicolor/48/go-down.png": {
+      "sizeBytes": 2404,
+      "sha256": "a5f4f2ee8cc5edbce28e6f24efbc4ce9435dc4e329a7d28391348da852fe3a74"
+    },
+    "icons/hicolor/48/accessories-dictionary.png": {
+      "sizeBytes": 3656,
+      "sha256": "739e30550caecb79c9c076eafe5d5107e7a2be7c9bc9cbbad60340774c1e3848"
+    },
+    "icons/hicolor/48/preferences-desktop-color.png": {
+      "sizeBytes": 5609,
+      "sha256": "ec09f743b9095cb7189b64f07456931c41cfeccf7004bb654fa5a89c7e7bbcae"
+    },
+    "icons/hicolor/32/dialog-close.png": {
+      "sizeBytes": 2085,
+      "sha256": "e883d2cfc98ac868939de5b245092e9ff1d7ac2b141fabbfdf76ce50d30b09df"
+    },
+    "icons/hicolor/32/application-exit.png": {
+      "sizeBytes": 1760,
+      "sha256": "261218fb9448c2e663e39e15e7bc52cb8ef0baadfb8a3f97476658928e2e9dc9"
+    },
+    "icons/hicolor/32/format-text-subscript.png": {
+      "sizeBytes": 1487,
+      "sha256": "5eb16525fd997a54ec98b16321673cb413a7be7509b252da852757654242a975"
+    },
+    "icons/hicolor/32/folder-open.png": {
+      "sizeBytes": 1470,
+      "sha256": "bb81076dcfe1c038e916d19c2e080b9511e5b8bf5b0d8f9e6bcbafc20c3827b6"
+    },
+    "icons/hicolor/32/edit-undo.png": {
+      "sizeBytes": 2020,
+      "sha256": "0c47219ff42b6c343acd79d2798a820af2a583a3c1b8814de9c15d76f9242b78"
+    },
+    "icons/hicolor/32/view-fullscreen.png": {
+      "sizeBytes": 472,
+      "sha256": "b30362ecc90f0667d4f677f567f4562a502f956af856f4f58aa4148a7585e31a"
+    },
+    "icons/hicolor/32/format-text-superscript.png": {
+      "sizeBytes": 1513,
+      "sha256": "af392e2af071d937fed09eb1753867c392321afb50f0b2fc35ec35b7ac17b859"
+    },
+    "icons/hicolor/32/format-indent-more.png": {
+      "sizeBytes": 1054,
+      "sha256": "adda1b436e16c750bd4d3ae0ccf0dff16f24c87b11ef30785614c178ea000ccd"
+    },
+    "icons/hicolor/32/go-up.png": {
+      "sizeBytes": 1517,
+      "sha256": "a039e23eaaeb1f9689c31c081ff62dbbf1125de34a0673e144c3860511c80c15"
+    },
+    "icons/hicolor/32/document-save-all.png": {
+      "sizeBytes": 1351,
+      "sha256": "6ea4ae0c7b26ef691b943c4d4d144bab0466ab042a6c42b25d8e0edbb9dc255f"
+    },
+    "icons/hicolor/32/format-text-italic.png": {
+      "sizeBytes": 929,
+      "sha256": "3308443e0f0f08e79253be06f01de06cdcbba5073a2c0b22a8696c05fe380a99"
+    },
+    "icons/hicolor/32/view-choose.png": {
+      "sizeBytes": 725,
+      "sha256": "2d8913c86bc2103c92d7dc849c9e785fa3bbee9a5bba3983ce989f89cf32afb6"
+    },
+    "icons/hicolor/32/document-close.png": {
+      "sizeBytes": 1530,
+      "sha256": "4ab52a780b22969d3fbd1a0af200f38d4ee485512170c13eda792e54b97f5b29"
+    },
+    "icons/hicolor/32/arrow-down.png": {
+      "sizeBytes": 1006,
+      "sha256": "09c1566690e0b375bebf67b959be2e4c532ba78128c8fe82dc09ac47e39e696a"
+    },
+    "icons/hicolor/32/configure.png": {
+      "sizeBytes": 1450,
+      "sha256": "a798f366c037f34a3f5ed69174a21e8ff7a4598a0ebf6d7f55784529d46349bc"
+    },
+    "icons/hicolor/32/edit-find-replace.png": {
+      "sizeBytes": 2081,
+      "sha256": "6e5368c5afb3edafc22bd0268129e90ef63ad99d84c911c3a39cff85ab4fafca"
+    },
+    "icons/hicolor/32/format-justify-left.png": {
+      "sizeBytes": 392,
+      "sha256": "7988d0aaad354482a730511045c2fecf9519221b0d19591067957f445b7f68a1"
+    },
+    "icons/hicolor/32/edit-find.png": {
+      "sizeBytes": 1705,
+      "sha256": "7718443a7c69303cd6491fd88e12432b541a1d1f05e5c35e7e406ebcb2425a32"
+    },
+    "icons/hicolor/32/format-justify-right.png": {
+      "sizeBytes": 408,
+      "sha256": "e0fb15b77ce4a4fbe7eb150f9ee716017b44d9002767b2b8e75c2b5c65eb33c7"
+    },
+    "icons/hicolor/32/format-text-direction-rtl.png": {
+      "sizeBytes": 848,
+      "sha256": "ffed38788afccc0f41f372faae3b0163f2d4252d98a77f7f309b72f13b315977"
+    },
+    "icons/hicolor/32/format-text-strikethrough.png": {
+      "sizeBytes": 1359,
+      "sha256": "5eadb2972d35289be77d5054cac86e5f742b2b279c939fe3802050ea5b27fd7a"
+    },
+    "icons/hicolor/32/format-indent-less.png": {
+      "sizeBytes": 962,
+      "sha256": "604a36a5dab31776f4aa905029934dbdf247d1ba2604ce372831ef4143ccf408"
+    },
+    "icons/hicolor/32/preferences-desktop-locale.png": {
+      "sizeBytes": 2442,
+      "sha256": "b41eec95ebd7914efe48dcfc995f6681ecc3c47cfe0cf6bcee4f7540cf087bcc"
+    },
+    "icons/hicolor/32/edit-redo.png": {
+      "sizeBytes": 1998,
+      "sha256": "30cef793d6fa48d00dc518a2147c3d6070f4de3792798cf00221325704d33e97"
+    },
+    "icons/hicolor/32/character-set.png": {
+      "sizeBytes": 992,
+      "sha256": "931ee3a390412e49f7758d2064a7030954ee28b41ff7c50f6e4bfb2fe3e39d12"
+    },
+    "icons/hicolor/32/document-save-as.png": {
+      "sizeBytes": 2152,
+      "sha256": "c9c8812413874b6f9960d0278490136318c915d833079a7dd09baf75fb3c1159"
+    },
+    "icons/hicolor/32/format-text-bold.png": {
+      "sizeBytes": 1645,
+      "sha256": "7e1d44c7a30c5caa03c7179340db289c5dcb17c5a47771a842abcd9986281144"
+    },
+    "icons/hicolor/32/edit-rename.png": {
+      "sizeBytes": 496,
+      "sha256": "e51988c163c28a899714a0ffb994c160096cc6b3ef752d368e092fbd4e12b46d"
+    },
+    "icons/hicolor/32/edit-copy.png": {
+      "sizeBytes": 860,
+      "sha256": "d71052c2f79b522d5efb38ac1b68ef47fd915bc3e700016ba2a5a7b63ea663b7"
+    },
+    "icons/hicolor/32/format-text-direction-ltr.png": {
+      "sizeBytes": 856,
+      "sha256": "bc78cacffe95ff6974b23f0d435a29b49647e355ca439183e448bf13341c6456"
+    },
+    "icons/hicolor/32/document-save.png": {
+      "sizeBytes": 1263,
+      "sha256": "cee7118796949bd4427eaf2b6560a3952059c0d520f30c05e8a4510056b98107"
+    },
+    "icons/hicolor/32/window-new.png": {
+      "sizeBytes": 1103,
+      "sha256": "9a3b71c42eb454a84dcf34259ac6872f695f039b8f312688fb3137af7e40e281"
+    },
+    "icons/hicolor/32/edit-paste.png": {
+      "sizeBytes": 1406,
+      "sha256": "834cf4375c41852ec2f43e685ae6b0f1529f51394cac7feb61e90948d4534c26"
+    },
+    "icons/hicolor/32/edit-cut.png": {
+      "sizeBytes": 892,
+      "sha256": "13350cde225b8728817f1dbdb7367c4cf4276921d08a78361dfad759476e6715"
+    },
+    "icons/hicolor/32/view-refresh.png": {
+      "sizeBytes": 2182,
+      "sha256": "9c79ebca5d023b691a7f3ae8f29b5ab6d9d9a6e3ca709796e9de3f0a95dc0e09"
+    },
+    "icons/hicolor/32/folder.png": {
+      "sizeBytes": 1387,
+      "sha256": "f87812a8e0f041fd258b57c3798f7c1471a00044da225f74d76f7282cebdd518"
+    },
+    "icons/hicolor/32/edit-select-all.png": {
+      "sizeBytes": 1358,
+      "sha256": "b2a7390b1dd3d3e1264a595830ce8339aba68f1feba3cc25d4b1cfad83d8361a"
+    },
+    "icons/hicolor/32/format-text-underline.png": {
+      "sizeBytes": 964,
+      "sha256": "1193d8253e7e357a432ecd5ed96049a542e48dabc5796f9dcbb126a0bb18e6fc"
+    },
+    "icons/hicolor/32/help-about.png": {
+      "sizeBytes": 1636,
+      "sha256": "5315f4f8b62b5efc71c836c3d1136a5b2e38d322692ff927d22d1ef9d98f1be1"
+    },
+    "icons/hicolor/32/tools-check-spelling.png": {
+      "sizeBytes": 1796,
+      "sha256": "f2e52b9df5ad03fbf62df16b49c163dd13dda38a45aa00233c79c74c16c1e59d"
+    },
+    "icons/hicolor/32/chronometer.png": {
+      "sizeBytes": 7133,
+      "sha256": "fa3eea4a03f5235426a3fcd71ae435ef1bd104618610f3cf723df14c431ce026"
+    },
+    "icons/hicolor/32/document-print.png": {
+      "sizeBytes": 1255,
+      "sha256": "b08e1f3b6d7efe485c409ca000925cff00bf8a5f0cfb424292341aee8475d335"
+    },
+    "icons/hicolor/32/document-open.png": {
+      "sizeBytes": 1798,
+      "sha256": "23e20fd8b5a36a70fdf352857d0e259dae92ad27718c1cd4946ae72ed21a4971"
+    },
+    "icons/hicolor/32/format-justify-center.png": {
+      "sizeBytes": 420,
+      "sha256": "866162611706b388228abca1ac61751e9793918b3daf8724dd0d67dd045df923"
+    },
+    "icons/hicolor/32/document-new.png": {
+      "sizeBytes": 1410,
+      "sha256": "e09a8ac5d4f295df83e1afcc0375dd6890973cc0b144da07302341e861b45af6"
+    },
+    "icons/hicolor/32/view-calendar.png": {
+      "sizeBytes": 1421,
+      "sha256": "ecbe2f59ac6af469b9f9d242330b4c72de9198164e3f77071e15fc3baeee0ca2"
+    },
+    "icons/hicolor/32/format-justify-fill.png": {
+      "sizeBytes": 297,
+      "sha256": "8da0fa8962d033258f1a3c883fd9a8e4b9ed1f9f045657d181136b94d062541d"
+    },
+    "icons/hicolor/32/go-down.png": {
+      "sizeBytes": 1437,
+      "sha256": "31c1bb9f36f80d0c5cd65922dfee34dac31ba884d6d27f5f503eabdf11803a0a"
+    },
+    "icons/hicolor/32/accessories-dictionary.png": {
+      "sizeBytes": 2059,
+      "sha256": "e9b5e0e56c559bef52376876187284135de93a85b99f120af22c143cdffbd8e0"
+    },
+    "icons/hicolor/32/preferences-desktop-color.png": {
+      "sizeBytes": 3162,
+      "sha256": "8f9835a522f9593ec800ba87442932f1f6ef58ccc13d76f68365cf5e7cc5f162"
+    },
+    "icons/hicolor/22/dialog-close.png": {
+      "sizeBytes": 1251,
+      "sha256": "5f853a531863e83016955262ef61f992aeb13ace3b8ec8dc09cd7012eed9ab0c"
+    },
+    "icons/hicolor/22/application-exit.png": {
+      "sizeBytes": 1134,
+      "sha256": "cfaf61758af84ed229ab33c7b9ccf92abe9610b5226328aaee6025e384d82478"
+    },
+    "icons/hicolor/22/format-text-subscript.png": {
+      "sizeBytes": 1095,
+      "sha256": "cd56db59d69b7f23f5548baf16b28dccb39be9c347c96aa1e0407208b781738a"
+    },
+    "icons/hicolor/22/folder-open.png": {
+      "sizeBytes": 960,
+      "sha256": "4c0cf823f4c10844681ec8686b6d96d4563e3bf5adc72690e1e869a46be3766f"
+    },
+    "icons/hicolor/22/edit-undo.png": {
+      "sizeBytes": 1220,
+      "sha256": "8bcf32d119c6bc12f989a94c240cbc805072b94053a909c55f1eb5cf5ababf86"
+    },
+    "icons/hicolor/22/view-fullscreen.png": {
+      "sizeBytes": 381,
+      "sha256": "2b28f836cc57c69e8a60ce1e3c9744be1ed64a39dead44eca58dac790c7cc581"
+    },
+    "icons/hicolor/22/format-text-superscript.png": {
+      "sizeBytes": 1173,
+      "sha256": "237348b3f5277ebeaf2fd751ef8e6535fb5b39d3bd4af68f14b32255cfba905a"
+    },
+    "icons/hicolor/22/format-indent-more.png": {
+      "sizeBytes": 701,
+      "sha256": "265d8ef48a6dc2f8d8ba05950511c10ec1bb9a7cdb327865f0f9a20435348578"
+    },
+    "icons/hicolor/22/go-up.png": {
+      "sizeBytes": 929,
+      "sha256": "d968ac7a22d9a96315113f7ebd3f5cf8136829835a6da5e8bc5e7883571b2f0c"
+    },
+    "icons/hicolor/22/document-save-all.png": {
+      "sizeBytes": 921,
+      "sha256": "f15593804bd01f3d4f0d0f55077cb0bd6832de8ce8071b5a767c2c51d8e9043f"
+    },
+    "icons/hicolor/22/format-text-italic.png": {
+      "sizeBytes": 630,
+      "sha256": "6954235619b086a8c4d6f8564522832b36501c8f7d6f0bf8eeace5c0b678399a"
+    },
+    "icons/hicolor/22/view-choose.png": {
+      "sizeBytes": 409,
+      "sha256": "fead2c7f47f49cc51c7476aa176bce5c7599f948e019d127561a76b0fd9355e3"
+    },
+    "icons/hicolor/22/document-close.png": {
+      "sizeBytes": 1018,
+      "sha256": "1f1031364bf93eac0fdf09a5b276114c6716cb65738a1fbed6fa7a4453f05f4b"
+    },
+    "icons/hicolor/22/arrow-down.png": {
+      "sizeBytes": 708,
+      "sha256": "c0aa930abd7f40fb95362e8eda2ff4bd786f2d541446b15d4530f22f5d05a066"
+    },
+    "icons/hicolor/22/configure.png": {
+      "sizeBytes": 1101,
+      "sha256": "2f93080bf9ba1100d23f3d6b8dc464418f85b91cb16d549d03881939ec86f053"
+    },
+    "icons/hicolor/22/edit-find-replace.png": {
+      "sizeBytes": 1206,
+      "sha256": "ed6654a1a9b012b9d33ae9e879f0c5d636def980e87d8c98a1d607e6bdeacf17"
+    },
+    "icons/hicolor/22/format-justify-left.png": {
+      "sizeBytes": 314,
+      "sha256": "5c89b349555103310afbee186e92406e4562c05fe4360f228b193ecf7efca313"
+    },
+    "icons/hicolor/22/edit-find.png": {
+      "sizeBytes": 942,
+      "sha256": "39fb17f1592b4dc77d7542f6d9b36473fd2f1f0b48b804ad706c1ba52ffbf7b6"
+    },
+    "icons/hicolor/22/format-justify-right.png": {
+      "sizeBytes": 313,
+      "sha256": "050922e70454b9e43a445103c61cca9d1322ec41a4952521e7e82cc4332c8639"
+    },
+    "icons/hicolor/22/format-text-direction-rtl.png": {
+      "sizeBytes": 554,
+      "sha256": "c794fc6863eae90a163aeae81c4ac89835f9156c4fefb83df02f314baa7a36cd"
+    },
+    "icons/hicolor/22/format-text-strikethrough.png": {
+      "sizeBytes": 579,
+      "sha256": "fb78090d35fc0842757594492b35c03fb4d7034f1a9fa503e1aca9a50bfba65e"
+    },
+    "icons/hicolor/22/format-indent-less.png": {
+      "sizeBytes": 718,
+      "sha256": "7d6746f8cc1591c5915059c383f9ae7740b6c71e0852ae6fcf0a0a2bad3f4ad4"
+    },
+    "icons/hicolor/22/preferences-desktop-locale.png": {
+      "sizeBytes": 1339,
+      "sha256": "f86e7151eb6d7d27801060642257a42f22920dc4696b006a603990f9a968f16c"
+    },
+    "icons/hicolor/22/edit-redo.png": {
+      "sizeBytes": 1245,
+      "sha256": "acf8fd6e119e751520768fc5502c36a26bff3aaccaca489c42981600bacb56f1"
+    },
+    "icons/hicolor/22/character-set.png": {
+      "sizeBytes": 714,
+      "sha256": "c457de9d3245ed8fa2351342b0b9ce954e20f118931844ffcf0b951144a52ebe"
+    },
+    "icons/hicolor/22/document-save-as.png": {
+      "sizeBytes": 1233,
+      "sha256": "f9bd58d25d5c95d15700a139f4e8113f0510ff4173dc38f3f881c6bdaab16e01"
+    },
+    "icons/hicolor/22/format-text-bold.png": {
+      "sizeBytes": 667,
+      "sha256": "8f9e4bbbb9162fd1d0b2f23a6971568d11063ded9de18ffa516e1da1bd387b69"
+    },
+    "icons/hicolor/22/edit-rename.png": {
+      "sizeBytes": 353,
+      "sha256": "c082ff27b1087e0a114ecb1b952d339a9c241f842f3171246cf180fb8abe45e5"
+    },
+    "icons/hicolor/22/edit-copy.png": {
+      "sizeBytes": 515,
+      "sha256": "f806c8952d6ad97a02470ed985c7fefcccb56ec0fd3fdfae0a9140731f7985cd"
+    },
+    "icons/hicolor/22/format-text-direction-ltr.png": {
+      "sizeBytes": 556,
+      "sha256": "9ddf61436b47c1044e1f055e2ddfc0c0872d9ea252aea5ccf0d9ec70a630ea5d"
+    },
+    "icons/hicolor/22/document-save.png": {
+      "sizeBytes": 798,
+      "sha256": "112296ddc9d37993f3a4cd94c576685e34a8352536e71529b257499b895aab79"
+    },
+    "icons/hicolor/22/window-new.png": {
+      "sizeBytes": 680,
+      "sha256": "1c89e9138cc4ca81bf220405dd50ce04fb0819feebcb11701177a6752cac3cd4"
+    },
+    "icons/hicolor/22/edit-paste.png": {
+      "sizeBytes": 968,
+      "sha256": "a673784f6da59dcf2adb704faa081969affbee4ae9f5fdf0567ed5e5de7bec60"
+    },
+    "icons/hicolor/22/edit-cut.png": {
+      "sizeBytes": 576,
+      "sha256": "18a4d7099add651eb1cefed897135099d9e78151b21486a44471f78a465c89ab"
+    },
+    "icons/hicolor/22/view-refresh.png": {
+      "sizeBytes": 1283,
+      "sha256": "3e735e9fd35855be78283706b3b011112ede873c63d8b5ddb7ccb1bb1444f500"
+    },
+    "icons/hicolor/22/folder.png": {
+      "sizeBytes": 878,
+      "sha256": "73ab501ab1c064ec32bcd10a54f0e7d6f533e67415ee4f57e9542e89edd0c78b"
+    },
+    "icons/hicolor/22/edit-select-all.png": {
+      "sizeBytes": 838,
+      "sha256": "324c18a0d6c824443fd45b05e6bb3fac658dcf60c61728b20a11ba801d3dbc4a"
+    },
+    "icons/hicolor/22/format-text-underline.png": {
+      "sizeBytes": 537,
+      "sha256": "145dce68d03ddc953643d2cacba392e79effe86f4b04cff929ddd02ac2fee5cf"
+    },
+    "icons/hicolor/22/help-about.png": {
+      "sizeBytes": 1145,
+      "sha256": "d603bff0c15a7631917e879d643d6d4eae941b5a74cad4297616af1799abc00d"
+    },
+    "icons/hicolor/22/tools-check-spelling.png": {
+      "sizeBytes": 1240,
+      "sha256": "312da2285abfd58d0da03fd1ea849195dbddededfb0f666f9da5c7d63fe1c74d"
+    },
+    "icons/hicolor/22/chronometer.png": {
+      "sizeBytes": 3608,
+      "sha256": "6acdf503564899ff80fa051b5cd1f25930a43311a87d4ccdf720c54fb5bf731e"
+    },
+    "icons/hicolor/22/document-print.png": {
+      "sizeBytes": 880,
+      "sha256": "ef6181045d5d7953b8a0d4d25a8cee17e3537410793871b6def3a558979d443e"
+    },
+    "icons/hicolor/22/document-open.png": {
+      "sizeBytes": 1125,
+      "sha256": "4bcad4dc22f4370e384949b33e7793b3de62ddd92565862725d8d251a218d11a"
+    },
+    "icons/hicolor/22/format-justify-center.png": {
+      "sizeBytes": 313,
+      "sha256": "746279f18ef9aa1a71669d6b1b986577d76835fd4c396c40f7bec5b60cf44670"
+    },
+    "icons/hicolor/22/document-new.png": {
+      "sizeBytes": 873,
+      "sha256": "dfcc516677877ca796df4a1b8013c34b6d04b8e525462493eba816f04dd0c968"
+    },
+    "icons/hicolor/22/view-calendar.png": {
+      "sizeBytes": 837,
+      "sha256": "047c8988991733b8d9a0073bd44a5d20d3b6a9d81ed374ea6cf076328542c472"
+    },
+    "icons/hicolor/22/format-justify-fill.png": {
+      "sizeBytes": 261,
+      "sha256": "9fea70a260c51a20a91367c7135bad5c5b6c11a72c2dfaafeb530a2801e2f371"
+    },
+    "icons/hicolor/22/go-down.png": {
+      "sizeBytes": 892,
+      "sha256": "f912de66cebc4350b8c631c8531f141df47f1d3983ba85879aeb13322aadea13"
+    },
+    "icons/hicolor/22/accessories-dictionary.png": {
+      "sizeBytes": 905,
+      "sha256": "09815c5b6a394be2c3f1e451df8afb9957f9db97fc84ce4c0b5fba1fb667ae3b"
+    },
+    "icons/hicolor/22/preferences-desktop-color.png": {
+      "sizeBytes": 1780,
+      "sha256": "839e41b91ec83d40e9cd7e08a112dd2307a8806a3cac8199df37b8c5bda921a5"
+    },
+    "icons/hicolor/16/dialog-close.png": {
+      "sizeBytes": 813,
+      "sha256": "1d117aba6893e8593bd2b0a1ab4463fd8f9c81fb4c592964c6cf6257cd4dae3c"
+    },
+    "icons/hicolor/16/application-exit.png": {
+      "sizeBytes": 842,
+      "sha256": "9aa011d12f2eca682906bbe8cf2f95274549fc1b8c20b45bd04ac2ee13feb8c9"
+    },
+    "icons/hicolor/16/format-text-subscript.png": {
+      "sizeBytes": 824,
+      "sha256": "78f1411a3c9509b2c502839a9facfd2630c4c10c4f11021a60d7f7584dc219f3"
+    },
+    "icons/hicolor/16/folder-open.png": {
+      "sizeBytes": 662,
+      "sha256": "96565c9a1326989269a0abbd9119e78c8d29321dfcc419ddadf198824614b87d"
+    },
+    "icons/hicolor/16/edit-undo.png": {
+      "sizeBytes": 866,
+      "sha256": "8b03f5a3b0a89d4aaac7f7db6d9e94ddcc5fc73f8041df67df4f85650b5592c1"
+    },
+    "icons/hicolor/16/view-fullscreen.png": {
+      "sizeBytes": 396,
+      "sha256": "42b58be19a9ed07d0909f835d6769787bb11b507c693fcd670d56815439ca4f1"
+    },
+    "icons/hicolor/16/format-text-superscript.png": {
+      "sizeBytes": 857,
+      "sha256": "089d1d5a4bc78032b20c0d3c3d1f91e1f99275a204424e1c4c3a8fa01cd2fca8"
+    },
+    "icons/hicolor/16/format-indent-more.png": {
+      "sizeBytes": 524,
+      "sha256": "6b37695aa41f205be254dc7c82143cd2718adad34b30cc270d746114b41dab36"
+    },
+    "icons/hicolor/16/go-up.png": {
+      "sizeBytes": 672,
+      "sha256": "d384db4f03d74494da52aa48c16da68ab1332a925475a2972ffb56014f87f1e2"
+    },
+    "icons/hicolor/16/document-save-all.png": {
+      "sizeBytes": 635,
+      "sha256": "12562381e69899e7e2451411092e9c55a5da26c2db69abff10def10e2c18c81b"
+    },
+    "icons/hicolor/16/format-text-italic.png": {
+      "sizeBytes": 331,
+      "sha256": "38bbd0fb2be3682700df2150a56a96d5d35352187af6e6b34d4750ae3e54dbc1"
+    },
+    "icons/hicolor/16/view-choose.png": {
+      "sizeBytes": 308,
+      "sha256": "adb107c7977f5383fddbd3fb73e6a295e18db15f220f6e8a8207d0ea1810d1d3"
+    },
+    "icons/hicolor/16/document-close.png": {
+      "sizeBytes": 678,
+      "sha256": "265bc88785b7438bf35fa75dced959cec6b5e8be5abdd43d79cde0918642c865"
+    },
+    "icons/hicolor/16/arrow-down.png": {
+      "sizeBytes": 525,
+      "sha256": "f2e458bffd3047533c522a65e76f0fbd72d487a4dec6e4824b2e568a4712c412"
+    },
+    "icons/hicolor/16/configure.png": {
+      "sizeBytes": 717,
+      "sha256": "24936425866ae01f43d7f4199209b4b20c7e41e7ad94e3974336db807478e15d"
+    },
+    "icons/hicolor/16/edit-find-replace.png": {
+      "sizeBytes": 721,
+      "sha256": "6523a3edc1d7fb1080215762790fe1f9adfabf97df4e559f56c7ee65483deb6b"
+    },
+    "icons/hicolor/16/format-justify-left.png": {
+      "sizeBytes": 264,
+      "sha256": "bdc21ddcb2a98a6e980259f3505f1db4c740d5c5871a5b8b938669c980a86b8c"
+    },
+    "icons/hicolor/16/edit-find.png": {
+      "sizeBytes": 626,
+      "sha256": "d9ce77bfaace69257f812acc7d638c2df0e6de65c270211d90a5bb2a451ede35"
+    },
+    "icons/hicolor/16/format-justify-right.png": {
+      "sizeBytes": 266,
+      "sha256": "dfd184041fba913ca243174d72418c935197d4353d067d3c2eb319eb9ca0444f"
+    },
+    "icons/hicolor/16/format-text-direction-rtl.png": {
+      "sizeBytes": 532,
+      "sha256": "80720f33da439a4e38c6c175225717323ad51b8dacc00d06ed9f5b66cde58d41"
+    },
+    "icons/hicolor/16/format-text-strikethrough.png": {
+      "sizeBytes": 441,
+      "sha256": "55f6fd2d3a729efef04e646b2e1f6b96da41676a75fd6aed2fc6a9fadf4ba817"
+    },
+    "icons/hicolor/16/format-indent-less.png": {
+      "sizeBytes": 519,
+      "sha256": "a8919360620bd2686e40f686be089bac158badf0282843461b3d0c11b4f7636e"
+    },
+    "icons/hicolor/16/preferences-desktop-locale.png": {
+      "sizeBytes": 816,
+      "sha256": "b973fe13cac6545cf465e4b80733b918c717cedc95de74de0c7c18747783fd38"
+    },
+    "icons/hicolor/16/edit-redo.png": {
+      "sizeBytes": 813,
+      "sha256": "0cf772eb0a45a8ced18428a37a114178a9cdf7f4c92f44a4dffc53db930a40ec"
+    },
+    "icons/hicolor/16/character-set.png": {
+      "sizeBytes": 494,
+      "sha256": "e5eaacbd50c90f6c45d31859cf84aacbe5ef66f1499355efac89eaaa0bc06d9e"
+    },
+    "icons/hicolor/16/document-save-as.png": {
+      "sizeBytes": 839,
+      "sha256": "43f586fa8ca620845d7659b60068be8f04ea9ee74af8111eb3fa1ccea679d924"
+    },
+    "icons/hicolor/16/format-text-bold.png": {
+      "sizeBytes": 463,
+      "sha256": "28abe9ffbec2a900d3cf46274b628b189307da5ceb4da28647af15710533bc61"
+    },
+    "icons/hicolor/16/edit-rename.png": {
+      "sizeBytes": 245,
+      "sha256": "eba5b578b78d8b9bf68b506490b9da6b099be1f3e52d42c6995b2006ce9f5942"
+    },
+    "icons/hicolor/16/edit-copy.png": {
+      "sizeBytes": 485,
+      "sha256": "e47c93b6cd1910800ea0d9fd642316099d302eff4348097d4129106f6ecc57fb"
+    },
+    "icons/hicolor/16/format-text-direction-ltr.png": {
+      "sizeBytes": 534,
+      "sha256": "770a5360a9d93c826aad6c0adbf8a81020fa42646c206b39ccf6aeb69faebfb6"
+    },
+    "icons/hicolor/16/document-save.png": {
+      "sizeBytes": 563,
+      "sha256": "7180f9edbbb924adff1026d48eeb536026e8fbb02e9220ee48ecad11139b3a2f"
+    },
+    "icons/hicolor/16/window-new.png": {
+      "sizeBytes": 377,
+      "sha256": "22ff499a22f77d395e4be65ea1e519e034286eb7ec0315f092aacd5aade2c0a5"
+    },
+    "icons/hicolor/16/edit-paste.png": {
+      "sizeBytes": 665,
+      "sha256": "f27cba9f1752ac69000f8f4529b8082754575c6825c6c1174ffeafcf6bdbd0ad"
+    },
+    "icons/hicolor/16/edit-cut.png": {
+      "sizeBytes": 368,
+      "sha256": "9c91bc55ecfb1abfd32dee5c5f72fed97c3615bd0f366159f35fb12677f0d15a"
+    },
+    "icons/hicolor/16/view-refresh.png": {
+      "sizeBytes": 931,
+      "sha256": "b6edfc71868ea392b829d88a143ecb6109cb534edcbf9f64cbd22d9189b76ed1"
+    },
+    "icons/hicolor/16/folder.png": {
+      "sizeBytes": 652,
+      "sha256": "674b8eda70aa4981becb94e046ab22dc9c685534079ddffdbed5b05a7d9e0e29"
+    },
+    "icons/hicolor/16/edit-select-all.png": {
+      "sizeBytes": 587,
+      "sha256": "266ce76f641acad46d31ac21b845ed833cf097f68c260fbbccb6f2f500385584"
+    },
+    "icons/hicolor/16/format-text-underline.png": {
+      "sizeBytes": 392,
+      "sha256": "7825e1cbb48b8e2aa303f49fc25485b764032d3209b9a5bd40f8d986a7052e52"
+    },
+    "icons/hicolor/16/help-about.png": {
+      "sizeBytes": 803,
+      "sha256": "46bcbb90b69637ec81901b694498cfa9540ca31c01307203ec9c1665845aec1e"
+    },
+    "icons/hicolor/16/tools-check-spelling.png": {
+      "sizeBytes": 880,
+      "sha256": "bcfe8ce3e424d53d33e586bd9ce3edfed45174e3cb447c91988d4f2f8c39a084"
+    },
+    "icons/hicolor/16/chronometer.png": {
+      "sizeBytes": 2098,
+      "sha256": "b8f6bcba8689472e9e2df9f0edd3d9bf5563d796b67160b882133f8ff5160978"
+    },
+    "icons/hicolor/16/document-print.png": {
+      "sizeBytes": 619,
+      "sha256": "4618cb2d1f6d5345fbeec2bf9b4d99d86453a1e9588e881159c82f5d15aa2f7c"
+    },
+    "icons/hicolor/16/document-open.png": {
+      "sizeBytes": 727,
+      "sha256": "3942e0d51894f02b5f0ed4bb63fbe8ae99aa8f78032d66b41760f7ad49f41c7e"
+    },
+    "icons/hicolor/16/format-justify-center.png": {
+      "sizeBytes": 272,
+      "sha256": "e430b0d8290416d767b5a52716878a2fde296495e87e6c9a7cfc700e2f505335"
+    },
+    "icons/hicolor/16/document-new.png": {
+      "sizeBytes": 579,
+      "sha256": "2dead739b2e6db234cdadcdd037fde9f1bcf9cdd5791367936a74d0fb1cc22d8"
+    },
+    "icons/hicolor/16/view-calendar.png": {
+      "sizeBytes": 652,
+      "sha256": "8292069b2a3c721fded3fece1532a158a7d2342d66acbcfff8c4a8827c7d4d7b"
+    },
+    "icons/hicolor/16/format-justify-fill.png": {
+      "sizeBytes": 229,
+      "sha256": "bc991d3d942b583a323212707a0c70381b69e15ef92d03fed2554373b0d0af94"
+    },
+    "icons/hicolor/16/go-down.png": {
+      "sizeBytes": 623,
+      "sha256": "296965bb6514e2bd07ebf277d8286f3d942bf8e500ae2ead90af95b2dca07464"
+    },
+    "icons/hicolor/16/accessories-dictionary.png": {
+      "sizeBytes": 588,
+      "sha256": "babec1e7f443d574dc5fca8a5dc3957a2906049ac41bbcdd9a5f58f8de654087"
+    },
+    "icons/hicolor/16/preferences-desktop-color.png": {
+      "sizeBytes": 1117,
+      "sha256": "6642680f46f5f982ed7c0a21b01cd26d0e6030bafb62d8de169546c2011e8172"
+    },
+    "icons/hicolor/64/dialog-close.png": {
+      "sizeBytes": 5546,
+      "sha256": "fff17a2a4e20b2bde4e63ca8bcba09f242aeec54231abef6f5d3a3367a4386ff"
+    },
+    "icons/hicolor/64/application-exit.png": {
+      "sizeBytes": 4277,
+      "sha256": "f45c4d03e1a953816a0222bb90d64444de2a950b7ec1c2819d70da0fe64eaf50"
+    },
+    "icons/hicolor/64/format-text-subscript.png": {
+      "sizeBytes": 3224,
+      "sha256": "f8c63d1514a5dd985370dbe6a704f2ca2f34ff3ffd0980231bf47552f42c5d76"
+    },
+    "icons/hicolor/64/folder-open.png": {
+      "sizeBytes": 2579,
+      "sha256": "c9f868fdf9f7656a23dc35f1574c4032c68d2db9ca5a18a145272a219968ca90"
+    },
+    "icons/hicolor/64/edit-undo.png": {
+      "sizeBytes": 5134,
+      "sha256": "27f143ba54fd12e49dac6023fe4701f68a5ea3dbd4df587d59311397d992749f"
+    },
+    "icons/hicolor/64/format-justify-more.png": {
+      "sizeBytes": 2063,
+      "sha256": "1bf4c8e9a3d375d0d758f1722bbaaba5497be8e3e3527bd3e38546dafbdc5568"
+    },
+    "icons/hicolor/64/view-fullscreen.png": {
+      "sizeBytes": 997,
+      "sha256": "c7920d5323cfdeaa155fbd8b567c22970878c810113b6ad24d56682e0190149a"
+    },
+    "icons/hicolor/64/format-text-superscript.png": {
+      "sizeBytes": 3247,
+      "sha256": "21596f166f4f7d6aeb4fd378c2940bc9b63f2a055be16a6610178bcad0eec923"
+    },
+    "icons/hicolor/64/go-up.png": {
+      "sizeBytes": 3398,
+      "sha256": "42c8d6b202a7891565d2225a27bf8c519849eaf66de5e687ce87b02b16297ef0"
+    },
+    "icons/hicolor/64/document-save-all.png": {
+      "sizeBytes": 2846,
+      "sha256": "0f235e8c31764326a911a6abbbfbd1e0c23212a5aa00f39e34de6364374c4682"
+    },
+    "icons/hicolor/64/format-text-italic.png": {
+      "sizeBytes": 1194,
+      "sha256": "f68f9d4a5448d7868fc996c3e452600dd8409928440cbeae243b3b1fc32ceb8c"
+    },
+    "icons/hicolor/64/view-choose.png": {
+      "sizeBytes": 1267,
+      "sha256": "6682e2293ab2d2580b74dd8dee3f8da719d7983bed4f17feb1c39308a9dfc913"
+    },
+    "icons/hicolor/64/document-close.png": {
+      "sizeBytes": 4157,
+      "sha256": "bb9d46785ae0091f1f1cade4f25b0edeb14bcaba28d43b5ee657af17169de031"
+    },
+    "icons/hicolor/64/arrow-down.png": {
+      "sizeBytes": 2320,
+      "sha256": "ac94f2ba43c7f1eaa9a69e3d00e124fb8108b92240b683797946790b22d37ead"
+    },
+    "icons/hicolor/64/configure.png": {
+      "sizeBytes": 4429,
+      "sha256": "fc83219d3419dc11a3ac21810924d68eda51deb2a5fb816d88da842799d913ae"
+    },
+    "icons/hicolor/64/edit-find-replace.png": {
+      "sizeBytes": 6050,
+      "sha256": "7d90d3c6ebe628e18ecda51f73cfd3e077a6d3e71218e357ae2c90961a69f2c0"
+    },
+    "icons/hicolor/64/format-justify-left.png": {
+      "sizeBytes": 732,
+      "sha256": "7dbc42dc9a34b6b482863d76fc879fa708220ba52c6b71f7fa9fdb3c9c91d2ff"
+    },
+    "icons/hicolor/64/edit-find.png": {
+      "sizeBytes": 4870,
+      "sha256": "9f54d6a069bb1b7eb0fa57c8c785afcd2d6f598591cc194a0485cd8396f18310"
+    },
+    "icons/hicolor/64/format-justify-right.png": {
+      "sizeBytes": 723,
+      "sha256": "9a8e1ca4ba76ff25ac48f1d76a5bb6800cfce7e089cbd888129eacbd45333a1f"
+    },
+    "icons/hicolor/64/format-text-direction-rtl.png": {
+      "sizeBytes": 1686,
+      "sha256": "dfda2db7e2dc97a163855cc0524a17b74ff80a1cd9b5f8f580d4ec541de106da"
+    },
+    "icons/hicolor/64/format-text-strikethrough.png": {
+      "sizeBytes": 1699,
+      "sha256": "81fdea841bdba3aa72fafd44cb0884d819b70e3ca021dcec82c1523a8d7b9a86"
+    },
+    "icons/hicolor/64/format-indent-less.png": {
+      "sizeBytes": 1864,
+      "sha256": "058dbaabc40b4e5e9402dfb073efcdc721f6cee156a3f39330120c0008b3d03a"
+    },
+    "icons/hicolor/64/preferences-desktop-locale.png": {
+      "sizeBytes": 7934,
+      "sha256": "8da33ba8d943971dce69253c219e3f4ed02bd3ec4f0ae49cba8a24f76aecb799"
+    },
+    "icons/hicolor/64/edit-redo.png": {
+      "sizeBytes": 5117,
+      "sha256": "4009dfe2eb678e5f32de08cd13ebeb9b1dc26b009647ded7d950cfa7a0ecd6b9"
+    },
+    "icons/hicolor/64/character-set.png": {
+      "sizeBytes": 2152,
+      "sha256": "cca76ca8955a6217d5edd8d6461a89b37185809bcd8270ab8beb116ac66f66d9"
+    },
+    "icons/hicolor/64/document-save-as.png": {
+      "sizeBytes": 5605,
+      "sha256": "8c4b153f2ffb8a0596afd970e346e1b978ccc070a7cadbd2bc66d4c7f5de5d07"
+    },
+    "icons/hicolor/64/format-text-bold.png": {
+      "sizeBytes": 1936,
+      "sha256": "e47d03341e41c73a8c33b9dbc1358ef7db7a6428100f452ee9cf5e7e305f221c"
+    },
+    "icons/hicolor/64/edit-rename.png": {
+      "sizeBytes": 1047,
+      "sha256": "d81cef435573558b379a475f924dde957645b8a18c6051db9284a788fd3f3b07"
+    },
+    "icons/hicolor/64/edit-copy.png": {
+      "sizeBytes": 1930,
+      "sha256": "ec043e83a3ddafc9bbce9f12429d79bc98f68d9cd509a1d8fc4d761e14f1964e"
+    },
+    "icons/hicolor/64/format-text-direction-ltr.png": {
+      "sizeBytes": 1641,
+      "sha256": "8fc80b5c9144f82d36f7aec96023b9666c47ef305d2590d712e4921876f68734"
+    },
+    "icons/hicolor/64/document-save.png": {
+      "sizeBytes": 2832,
+      "sha256": "b5494db770d58f6ae726261b464d85fa75ef67fe44b380284b8ae37dbb91f1e3"
+    },
+    "icons/hicolor/64/window-new.png": {
+      "sizeBytes": 2762,
+      "sha256": "a2cfdb584daf0036c03bd3b9ceb4cde04446654bd8d4c018de1e531cab4e9562"
+    },
+    "icons/hicolor/64/edit-paste.png": {
+      "sizeBytes": 2841,
+      "sha256": "da2c9a1c5cee7e73eb2f1235f217f49276d303b8b19b3cdd832719df754b6f72"
+    },
+    "icons/hicolor/64/edit-cut.png": {
+      "sizeBytes": 2516,
+      "sha256": "2cfc4ae4a5f532aba3f98cc88decfa87acaae39a2faf5027d3ee5c6dc7e215a0"
+    },
+    "icons/hicolor/64/view-refresh.png": {
+      "sizeBytes": 5592,
+      "sha256": "9c0c0bbd1ea1371e09ed0f68ae7e10b04ba6d4dbe9019f3d0ab250b2db8f964b"
+    },
+    "icons/hicolor/64/folder.png": {
+      "sizeBytes": 4936,
+      "sha256": "9d98b350bad4977868d2a1cd10bd46f3b288efab92cd5ecb9bdd36e6affca53f"
+    },
+    "icons/hicolor/64/edit-select-all.png": {
+      "sizeBytes": 3432,
+      "sha256": "37f6d48a312730c678f122ddf18e1d955b3c0be4165c29ae7f2e8328ea30f515"
+    },
+    "icons/hicolor/64/format-text-underline.png": {
+      "sizeBytes": 1897,
+      "sha256": "8ecf3e96cf9d02a6cf4d687f8edbd1a024fe8da56e43010ecf710162b93ebb08"
+    },
+    "icons/hicolor/64/help-about.png": {
+      "sizeBytes": 4037,
+      "sha256": "bf5017439177702e4597dee027b5833283ebedf308af57146bb4b771155ea7c3"
+    },
+    "icons/hicolor/64/tools-check-spelling.png": {
+      "sizeBytes": 3684,
+      "sha256": "1811df7a18f15bf435f67ace35b3e5399da154dfc7173d682b119dca15ba7661"
+    },
+    "icons/hicolor/64/chronometer.png": {
+      "sizeBytes": 6060,
+      "sha256": "8d78bb50e9a86078eea3e6a383df5e5481933e5c7c5b59c095d345ac502d41bc"
+    },
+    "icons/hicolor/64/document-print.png": {
+      "sizeBytes": 2702,
+      "sha256": "b5ae874029e48e7f8b8fb4984e23b6faf4b92d60853b554988bef7b6ebdb057c"
+    },
+    "icons/hicolor/64/document-open.png": {
+      "sizeBytes": 3260,
+      "sha256": "c52a0a3ccec224409cfd7c4c5abb130e95f077867983d129cc2abea83b22642f"
+    },
+    "icons/hicolor/64/format-justify-center.png": {
+      "sizeBytes": 875,
+      "sha256": "3ec98dc2d5e839e2db29547b85e175ba985efabda1aee3871e9c7009f1786d6f"
+    },
+    "icons/hicolor/64/document-new.png": {
+      "sizeBytes": 3664,
+      "sha256": "212a4807f652114ed6dbc1722529a37ec40e06c9bef4e0a1d9ad5f6d0a00e580"
+    },
+    "icons/hicolor/64/view-calendar.png": {
+      "sizeBytes": 2473,
+      "sha256": "8d43547d6f6724bde4924cb7ae055c20391b4309920f9c5f18531e39455188b6"
+    },
+    "icons/hicolor/64/format-justify-fill.png": {
+      "sizeBytes": 469,
+      "sha256": "93c80163267130e914adcc128082aedabe137048d795d4c6b24cd1bc9e13ff52"
+    },
+    "icons/hicolor/64/go-down.png": {
+      "sizeBytes": 3375,
+      "sha256": "0eadea1e53a7a39c8638b9f6fc80cdd403fbe23d43f25b87d3ec391237aee5f2"
+    },
+    "icons/hicolor/64/accessories-dictionary.png": {
+      "sizeBytes": 5396,
+      "sha256": "a64f4d2d8ea9252985229a776fdd0f56f08709e505359cb5d163ddb33134de9c"
+    },
+    "icons/hicolor/64/preferences-desktop-color.png": {
+      "sizeBytes": 6581,
+      "sha256": "4a82c969a1a5cb224f226d30d51ed09a4e07d9056a9ad3c4b09ac89dfcc1b146"
+    }
+  },
+  "savedTxt": {
+    "file": "output/original-edited.txt",
+    "sizeBytes": 103,
+    "sha256": "020417e5072e7b033869b8ba66ec5d9d8667b3cdf6e2b453ee21c5911b6adeb5",
+    "utf8": "FocusWriter original fixture.\r\n中文内容保留。\r\nSTATUS=AFTER\r\nVALUE=42\r\nForgeOS original edited\r\n"
+  },
+  "savedOdt": {
+    "file": "output/original-edited.odt",
+    "sizeBytes": 1341,
+    "sha256": "dbc1eda33af89767290640540c250f2db153d77e04a57b7284a60589aa4e2df1",
+    "paragraphs": [
+      "FocusWriter original fixture.",
+      "中文内容保留。",
+      "STATUS=AFTER",
+      "VALUE=42",
+      "ForgeOS original edited",
+      ""
+    ]
+  },
+  "finalDataAndConfigurationPins": {
+    "system.reg": {
+      "sizeBytes": 3423930,
+      "sha256": "ff5b2169e3572f325b0768e8ddf332585c8306d2bd435b4ba4e0deaeff8633e9"
+    },
+    "user.reg": {
+      "sizeBytes": 104785,
+      "sha256": "c288e92e983377f99ecb2788a0d7aa7266a75ba81495d382d2438bce1f56b04b"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "9790f060ad1ebeb7f44facb39bfd88abc658bb2209d10399b1d15c9e74afecb3"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/DailyProgress.ini": {
+      "sizeBytes": 70,
+      "sha256": "4d94dac4601200f140b2fcf6fb8b4bfeda40d7e614116c0d584078fd1a33dfdf"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Cache/20261011091434/fw_03bx4e": {
+      "sizeBytes": 103,
+      "sha256": "020417e5072e7b033869b8ba66ec5d9d8667b3cdf6e2b453ee21c5911b6adeb5"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Cache/20261011091434/fw_idi7k0": {
+      "sizeBytes": 1341,
+      "sha256": "dbc1eda33af89767290640540c250f2db153d77e04a57b7284a60589aa4e2df1"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Cache/20261011091434/mapping": {
+      "sizeBytes": 101,
+      "sha256": "03acf76571f7fe814031aaee01d44ace4fb003e3826adfbd28a89503cae2bfab"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Cache/20261011091248/mapping": {
+      "sizeBytes": 53,
+      "sha256": "ccb2b942bfbde4e8e3970c8837b1f652c970c39508a755522685ecc13123da83"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Cache/20261011091248/fw_1fq88jo": {
+      "sizeBytes": 1341,
+      "sha256": "dbc1eda33af89767290640540c250f2db153d77e04a57b7284a60589aa4e2df1"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/enchantment.png": {
+      "sizeBytes": 58053,
+      "sha256": "847bcc01332a4557fee7f7cc8f4958ba79a3d762b4d0daaffeea1e68855c53c1"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/bitterskies.png": {
+      "sizeBytes": 36158,
+      "sha256": "d53036843e38b816b17622f5c3c5a7a987cddd484d78ead3e8d6af32028bd854"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/tranquility.png": {
+      "sizeBytes": 38407,
+      "sha256": "90a9aa04ad30d6df814415c7a5f74ece2c036a8facc9e6655636ba6a773dd008"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/spacedreams.png": {
+      "sizeBytes": 52351,
+      "sha256": "78807ef89c5eacc4bc902589ab46a8719b66e54a1371ac1b97e94857c9ff4485"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/gentleblues.png": {
+      "sizeBytes": 6503,
+      "sha256": "849f28ce9de73e2221e321bfc606ebf9de263e49a04aedb4112b3ae0d359f5d2"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/writingdesk.png": {
+      "sizeBytes": 35000,
+      "sha256": "70d31dded9bcf1bddfc819687946ae11c6165ce81520c5cd415f14f729f1c12a"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/spygames.png": {
+      "sizeBytes": 34950,
+      "sha256": "62053977bf45d3370545143ebc2db57acff3892f20ed1ed38a3b438793c8328f"
+    },
+    "drive_c/users/forge/AppData/Roaming/GottCode/FocusWriter/Themes/Previews/Default/oldschool.png": {
+      "sizeBytes": 6412,
+      "sha256": "77a74424b5bff8a962b7a036185b1457b95993d0833a1e3d5ac6f1fd07ff83bf"
+    },
+    "drive_c/ForgeQA/output/original-edited.odt": {
+      "sizeBytes": 1341,
+      "sha256": "dbc1eda33af89767290640540c250f2db153d77e04a57b7284a60589aa4e2df1"
+    },
+    "drive_c/ForgeQA/output/original-edited.txt": {
+      "sizeBytes": 103,
+      "sha256": "020417e5072e7b033869b8ba66ec5d9d8667b3cdf6e2b453ee21c5911b6adeb5"
+    },
+    "drive_c/ForgeQA/input/原稿.txt": {
+      "sizeBytes": 75,
+      "sha256": "594ccc4d0540de95cd6632380caece4829875d6130e2213e8092793655a9c90a"
+    }
+  },
+  "jobs": {
+    "install": {
+      "id": "job-1791709749205-1",
+      "generationId": "gen-job-1791709749205-1",
+      "kind": "install",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 104418,
+          "requestId": "job-1791709749205-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 9471,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791709749205-1/prefix",
+          "requestId": "job-1791709749205-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 9514,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791709749205-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "launch": {
+      "id": "job-1791709829371-2",
+      "generationId": "gen-job-1791709749205-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 104833,
+          "requestId": "job-1791709829371-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 140393,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791709749205-1/prefix",
+          "requestId": "job-1791709829371-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 140435,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791709829371-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "reopen": {
+      "id": "job-1791710027680-3",
+      "generationId": "gen-job-1791709749205-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 105493,
+          "requestId": "job-1791710027680-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 49072,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791709749205-1/prefix",
+          "requestId": "job-1791710027680-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 49115,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791710027680-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  },
+  "guiAccepted": true,
+  "explicitNewProcessReopenPassed": true,
+  "inputUnchanged": true,
+  "published": false,
+  "countsAsCompleted": false,
+  "marketLifecyclePending": true,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "02c2967f09ce7b5280a395234b9c85a228985cec032ef9b2eefaeab3a4c1dcc7",
+    "coreJobs": 270,
+    "fullStoreRows": 86
+  },
+  "date": "2026-10-11",
+  "version": "1.8.13",
+  "screenshots": {
+    "01-original-input.jpg": {
+      "sizeBytes": 23452,
+      "sha256": "ed4e9c1bae532c01b3e946ea2f7ed06eb3032fe431cd99fa59055a32fe0f6200"
+    },
+    "02-original-txt-saved.jpg": {
+      "sizeBytes": 23754,
+      "sha256": "c340451fbdbd43e5ac0363c1d7fa095e26caa8ec7cbc6a92fcd7e965cf231513"
+    },
+    "03-original-odt-saved.jpg": {
+      "sizeBytes": 23856,
+      "sha256": "fd9a637fff092835f3a0056c77c7f6b5e79a00cf1ca7bb92ca02473b7b39fccf"
+    },
+    "04-original-new-process-txt.jpg": {
+      "sizeBytes": 23911,
+      "sha256": "352e6b02e46f4e56fe9e57f7ffb49ef6df8a2559f44afc3d5608cca4c668a0ca"
+    },
+    "05-original-new-process-odt.jpg": {
+      "sizeBytes": 23844,
+      "sha256": "0a25bd2dc55d50d1a82431805a798e9f80e64650b1e6343a3b3e864c8faf0c7b"
+    }
+  },
+  "outputsWrittenByApplicationGui": true,
+  "verificationHelperWroteOutputs": false,
+  "limitations": [
+    "Only two small UTF-8 text workflows are planned; original generation currently verified: Chinese-name file open, ordinary BEFORE to AFTER replacement, ASCII addition, GUI Save As to ASCII TXT and ODT paths, and explicit new-process reading of both formats. Input uses LF, GUI TXT output uses CRLF; raw bytes independently checked. ODT ZIP and exact paragraph text independently checked, not full ODF conformance.",
+    "Default native launcher environment and working directory retained; no Core, global context, font, program, DLL or runtime modification. Normal Quit used File menu; initially ineffective Ctrl+Q and early terminal guard failure retained, shortcut behavior not accepted.",
+    "Only fixed main source declares GPL-3.0-or-later and official artifact/source SHA-256 were matched. No installed licence text file observed. Complete Qt, Hunspell, FFmpeg, icons, dictionaries, themes, other bundled licensing closure, PGP, Authenticode and reproducible build unverified.",
+    "Formatting, RTF/DOCX, spell-checking, themes, symbols, timers/goals, multiple-document editing, printing, large files, other encodings, direct Chinese keyboard input and advanced word-processor functionality unverified.",
+    "Guest network download, fresh-machine registration, migration, cross-version upgrade and GUI update/rollback buttons unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart remain pending at original proof freeze."
+  ]
+}

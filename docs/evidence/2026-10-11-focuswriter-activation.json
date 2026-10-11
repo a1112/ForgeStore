@@ -1,0 +1,55 @@
+{
+  "activated": true,
+  "metadataVersion": 47,
+  "rootVersion": 1,
+  "entries": 37,
+  "coreJobs": 270,
+  "fullStoreRows": 86,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-focuswriter-20261011.acceptance.json#focuswriter",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c",
+        "size": 54323843,
+        "target": "FocusWriter_1.8.13.exe",
+        "url": "https://gottcode.org/focuswriter/FocusWriter_1.8.13.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "focuswriter"
+    },
+    "id": "focuswriter",
+    "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "FocusWriter",
+      "zhCN": "FocusWriter 写作工具"
+    },
+    "origin": "https://gottcode.org/focuswriter/archive/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Graeme Gott",
+    "summary": {
+      "en": "Limited small UTF-8 text edit, TXT/ODT save and fresh-process reopen tested; advanced writing features unverified.",
+      "zhCN": "有限小型 UTF-8 文本编辑、TXT/ODT 保存和新进程重开已测；高级写作功能未验收"
+    },
+    "version": "1.8.13"
+  },
+  "installed": {
+    "appId": "focuswriter",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "1.8.13"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "7558a91141afebd5c42e17d45f5609768f6f5211362779014326ce266f27e05a",
+    "coreJobs": 270,
+    "fullStoreRows": 86
+  }
+}

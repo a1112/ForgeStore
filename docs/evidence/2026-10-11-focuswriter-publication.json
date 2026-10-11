@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "focuswriter",
+  "version": "1.8.13",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedDistinctWindowsApps": 35,
+  "candidate": "candidate-v38",
+  "rootVersion": 1,
+  "metadataVersion": 47,
+  "catalogueEntries": 37,
+  "actualSignedTargets": 75,
+  "publicCatalogueFiles": 43,
+  "coreJobCount": 274,
+  "fullStoreRowCount": 88,
+  "inputsUnchanged": true,
+  "sourceEvidence": "2026-10-11-focuswriter-source.json",
+  "sourceEvidenceSha256": "ed3fdae03a43f9cf32fa64faa96b2377838c82e98cafc195643f4d95469abd8b",
+  "originalGuiEvidence": "2026-10-11-focuswriter-gui.json",
+  "originalGuiEvidenceSha256": "5a57a195766588a8bf011d37eb279ac43f9f08cc0dc6c501f1c977225c04d7e5",
+  "frozenOriginalSourceGuiAndReceiptBytesAndStageLabelsRetained": true,
+  "signedAcceptanceTarget": "windows-focuswriter-20261011.acceptance.json",
+  "signedAcceptanceSha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07",
+  "activationEvidence": "2026-10-11-focuswriter-activation.json",
+  "marketGuiEvidence": "2026-10-11-focuswriter-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-focuswriter-runtime-recovery.json",
+  "failureEvidence": "2026-10-11-focuswriter-failures.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-focuswriter-20261011.acceptance.json#focuswriter",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c",
+        "size": 54323843,
+        "target": "FocusWriter_1.8.13.exe",
+        "url": "https://gottcode.org/focuswriter/FocusWriter_1.8.13.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "focuswriter"
+    },
+    "id": "focuswriter",
+    "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "FocusWriter",
+      "zhCN": "FocusWriter 写作工具"
+    },
+    "origin": "https://gottcode.org/focuswriter/archive/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Graeme Gott",
+    "summary": {
+      "en": "Limited small UTF-8 text edit, TXT/ODT save and fresh-process reopen tested; advanced writing features unverified.",
+      "zhCN": "有限小型 UTF-8 文本编辑、TXT/ODT 保存和新进程重开已测；高级写作功能未验收"
+    },
+    "version": "1.8.13"
+  },
+  "selectedOriginalGeneration": "gen-job-1791709749205-1",
+  "independentMarketGeneration": "gen-job-1791710280160-4",
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "storeGuiButtonsVerified": false,
+  "normalQuitJobs": [
+    {
+      "id": "job-1791709829371-2",
+      "generationId": "gen-job-1791709749205-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 104833,
+          "requestId": "job-1791709829371-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 140393,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791709749205-1/prefix",
+          "requestId": "job-1791709829371-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 140435,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791709829371-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791710027680-3",
+      "generationId": "gen-job-1791709749205-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 105493,
+          "requestId": "job-1791710027680-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 49072,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791709749205-1/prefix",
+          "requestId": "job-1791710027680-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 49115,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791710027680-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791710303251-5",
+      "generationId": "gen-job-1791710280160-4",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 106671,
+          "requestId": "job-1791710303251-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 72446,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791710280160-4/prefix",
+          "requestId": "job-1791710303251-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 72488,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791710303251-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791710409666-6",
+      "generationId": "gen-job-1791710280160-4",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 107133,
+          "requestId": "job-1791710409666-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 140213,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791710280160-4/prefix",
+          "requestId": "job-1791710409666-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 140255,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791710409666-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791710616903-7",
+      "generationId": "gen-job-1791709749205-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 107950,
+          "requestId": "job-1791710616903-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 89841,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791709749205-1/prefix",
+          "requestId": "job-1791710616903-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 89883,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791710616903-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "rootBytesPreserved": true,
+  "allOldSignedTargetsPreservedExceptCatalogueReplacement": true,
+  "tuftoolExplicitTrustedRootDownloadVerified": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "focuswriter",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "28b6a303-f837-4f49-b0e7-343021bd9b7f",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "focuswriter",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "6bf58cb3-8a93-45f2-90dd-62b4dd2487c8",
+      "state": "succeeded"
+    }
+  },
+  "beforeRollbackCheckpointSavedAndReadBack": true,
+  "beforeRollbackCoreJobs": 273,
+  "beforeRollbackStoreRows": 87,
+  "afterRollbackCoreJobs": 273,
+  "afterRollbackStoreRows": 88,
+  "normalRestartBeforeAndAfterCoreJobs": 274,
+  "normalRestartBeforeAndAfterStoreRows": 88,
+  "normalRestartFullFieldEqualityPassed": true,
+  "privateCheckpointPins": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "52da02c4dced2916d39763cb3bcdbd043b444de1e6aae6f773a0cc09adc0528f",
+      "coreJobs": 274,
+      "fullStoreRows": 88
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "5469fc0e1479ef18ff0c6f0f07751ea9b513da6b93777ad6ec90657d2e70b2fd",
+      "coreJobs": 274,
+      "fullStoreRows": 88
+    }
+  },
+  "outputPins": {
+    "original": {
+      "txt": {
+        "file": "output/original-edited.txt",
+        "sizeBytes": 103,
+        "sha256": "020417e5072e7b033869b8ba66ec5d9d8667b3cdf6e2b453ee21c5911b6adeb5",
+        "utf8": "FocusWriter original fixture.\r\n中文内容保留。\r\nSTATUS=AFTER\r\nVALUE=42\r\nForgeOS original edited\r\n"
+      },
+      "odt": {
+        "file": "output/original-edited.odt",
+        "sizeBytes": 1341,
+        "sha256": "dbc1eda33af89767290640540c250f2db153d77e04a57b7284a60589aa4e2df1",
+        "paragraphs": [
+          "FocusWriter original fixture.",
+          "中文内容保留。",
+          "STATUS=AFTER",
+          "VALUE=42",
+          "ForgeOS original edited",
+          ""
+        ]
+      }
+    },
+    "market": {
+      "txt": {
+        "file": "output/market-edited.txt",
+        "sizeBytes": 111,
+        "sha256": "633e2c8e6bbac151d80a75f96f989cda1f642bcc181661c3cac423e51f0275e7",
+        "utf8": "FocusWriter independent market fixture.\r\n市场内容保留。\r\nSTATUS=AFTER\r\nVALUE=40\r\nForgeOS market edited\r\n"
+      },
+      "odt": {
+        "file": "output/market-edited.odt",
+        "sizeBytes": 1347,
+        "sha256": "6979d4576e9935b531538b3707b9eaf080ae8b5d2ae23b3fda03edf5becf4758",
+        "paragraphs": [
+          "FocusWriter independent market fixture.",
+          "市场内容保留。",
+          "STATUS=AFTER",
+          "VALUE=40",
+          "ForgeOS market edited",
+          ""
+        ]
+      }
+    }
+  },
+  "historicalRolesPreserved": {
+    "candidate-v35": 44,
+    "candidate-v36": 45,
+    "candidate-v37": 46
+  },
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two small UTF-8 Chinese-name plain-text inputs were tested: ordinary BEFORE to AFTER replacement, ASCII line addition, GUI Save As to ASCII TXT/ODT output paths, and explicit new-process reading with actual Chinese content display. Original input75/TXT103/ODT1341 bytes; independent market input85/TXT111/ODT1347 bytes. Inputs retain their original LF bytes; saved TXT uses CRLF. ODT ZIP CRC/mimetype and exact paragraph text checked; full ODF conformance unverified. Synthetic inputs do not count as applications.",
+    "Default native launcher environment/working directory, Core/global context/font/program/DLL/runtime retained. Five formal GUI processes used normal File/Quit and exited0 followed by wineserver stop. Initial Ctrl+Q and a market Quit click did not terminate; guards stopped dependencies, fresh menu observation and normal Quit resolved test operation. Shortcut/unattended startup not accepted. Screenshot12 shows blank first rollback path attempt, is not pass evidence; screenshot13 follows direct observed file-list ODT open and shows actual loaded content.",
+    "Fixed official installer and source archive match both SHA-256 values published in the official1.8.13 archive. Fixed main.cpp SPDX declares GPL-3.0-or-later. No copying/license-named file among470 installed program files; fixed windows_deploy.bat builds installer before adding COPYING.txt for portable ZIP. Full Qt/Hunspell/FFmpeg/icons/dictionaries/themes/bundled licensing closure, PGP, Authenticode and reproducible build unverified. Version1.8.13 is pinned, not claimed latest.",
+    "Formatting, RTF/DOCX, spelling, themes/symbols, timers/goals, multiple-document editing, printing, large documents, other encodings, direct Chinese keyboard input and advanced writing features unverified.",
+    "Update and rollback submitted through Store IPC using verified pre-cache; GUI buttons, guest network download, fresh-machine registration, migration, cross-version upgrade and enforced network isolation unverified.",
+    "Preservation covers every full Core task/Store SQLite row and field, all generation/config/trust/guard records, prior fixed acceptance data, both new generations470 program-file pins and new fixed input/output/config/registry pins. No claim of traversing all filesystem data of all previously tested applications."
+  ]
+}

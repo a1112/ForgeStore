@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "focuswriter",
+  "failures": [
+    {
+      "phase": "source-api",
+      "error": "GitHub HTTP403 rate limit exceeded",
+      "resolution": "Official fixed source archive independently matched official SHA-256; no tag commit fabricated."
+    },
+    {
+      "phase": "initial-normal-quit",
+      "error": "Ctrl+Q input left first GUI job running; terminal assertion failed before output verification or reopen.",
+      "dependentChangesStopped": true,
+      "retainedHostObservationSha256": "142a0b8668999f35c977261b995a30f36244e4da097a11c232943bd64c431582",
+      "resolution": "Fresh observed File menu normal Quit; actual exit0 and wineserver-stop confirmed."
+    },
+    {
+      "phase": "txt-line-ending-assumption",
+      "error": "Initial exact LF expectation failed; GUI TXT contains CRLF. No saved proof/checkpoint or dependent reopen created at failure.",
+      "dependentChangesStopped": true,
+      "retainedHostObservationSha256": "12472070bd0374951707ef659101a7928ea1140a9f3b6b963b4fbc5be4d26065",
+      "resolution": "Read-only raw byte and ODT XML inspection, exact expected CRLF comparison; input raw bytes unchanged. No GUI output written or normalized by helper."
+    },
+    {
+      "phase": "market-normal-quit",
+      "error": "Menu click did not terminate market reopen process; terminal guard timed out.",
+      "dependentChangesStopped": true,
+      "resolution": "Observed current menu after collapsing noVNC toolbar, clicked visible Quit label; actual exit0 and wineserver-stop confirmed before any rollback checkpoint or enqueue."
+    },
+    {
+      "phase": "rollback-odt-first-open",
+      "error": "First typed-path reopen left blank editor; screenshot12 not accepted.",
+      "dependentChangesStopped": true,
+      "resolution": "Fresh file dialog observation and direct listed ODT double-click loaded actual preserved text; screenshot13 records pass. No app/Core/global fix or output mutation."
+    }
+  ],
+  "historicalFailuresDeleted": false,
+  "originalFrozenReceiptsRewritten": false,
+  "allHistoricalGatesAlwaysRespectedClaimed": false
+}

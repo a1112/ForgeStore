@@ -1,0 +1,416 @@
+{
+  "passed": true,
+  "findings": [],
+  "assertions": 5587,
+  "baseCommit": "900faa7c7da0b1a78c164a31271033542ced336d",
+  "checks": [
+    {
+      "name": "raw byte preservation",
+      "oldImmutableFiles": 536,
+      "originalFocusWriterFiles": 15,
+      "prospectiveFiles": 78,
+      "passed": true
+    },
+    {
+      "name": "ledger baseline comparison",
+      "oldAcceptedRecords": 34,
+      "queue": 12,
+      "newAcceptedDistinctWindowsApps": 35,
+      "passed": true
+    },
+    {
+      "name": "independent RSA-PSS-SHA256 verification",
+      "rootVersion": 1,
+      "onlineRoles": 47,
+      "actualCacheTargets": 75,
+      "publicCatalogueFiles": 43,
+      "oldNonCatalogueTargetPinsPreserved": true,
+      "passed": true
+    },
+    {
+      "name": "fixed official source and installer",
+      "sourceArchiveOfficialSha256Matched": true,
+      "selectedSourceMembers": 12,
+      "mainProgramLicense": "GPL-3.0-or-later",
+      "installedFilePinRecordsPerGeneration": 470,
+      "installedLicenceTextEqualityClaimed": false,
+      "passed": true
+    },
+    {
+      "name": "independent public input/TXT/ODT parsing",
+      "originalInputBytes": 75,
+      "marketInputBytes": 85,
+      "originalTxtBytes": 103,
+      "marketTxtBytes": 111,
+      "originalOdtBytes": 1341,
+      "marketOdtBytes": 1347,
+      "screenshotsDecoded": 13,
+      "screenshotsVisuallyInspected": 13,
+      "blankScreenshot12Excluded": true,
+      "passed": true
+    },
+    {
+      "name": "cross-record lifecycle verification",
+      "normalQuitJobs": 5,
+      "beforeRollback": {
+        "core": 273,
+        "store": 87
+      },
+      "afterRollback": {
+        "core": 273,
+        "store": 88
+      },
+      "normalRestart": {
+        "core": 274,
+        "store": 88
+      },
+      "privateCheckpointBodiesRead": false,
+      "passed": true
+    },
+    {
+      "name": "failure boundaries and public privacy",
+      "failurePhases": [
+        "initial-normal-quit",
+        "market-normal-quit",
+        "rollback-odt-first-open",
+        "source-api",
+        "txt-line-ending-assumption"
+      ],
+      "secretPatternScanPassed": true,
+      "fullPrivateCheckpointBodiesPublic": false,
+      "passed": true
+    },
+    {
+      "name": "Git scope and raw-byte filter verification",
+      "prospectivePublicFiles": 78,
+      "protectedEvidenceAndCatalogueFiles": 75,
+      "whitespaceCheckPassed": true,
+      "passed": true
+    }
+  ],
+  "reviewedPublicFilePins": {
+    ".gitattributes": {
+      "sizeBytes": 4431,
+      "sha256": "ace2858018a4749e220c2a55aa2f303d18d74eba62280d16815fabff3cfc86d7"
+    },
+    "catalogue/candidate-v38/tuf/metadata/1.root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "catalogue/candidate-v38/tuf/metadata/47.snapshot.json": {
+      "sizeBytes": 997,
+      "sha256": "eff776638ac8d6a25ae7c8da0c5bc5ae512381146537dfc61b5be6ec37977608"
+    },
+    "catalogue/candidate-v38/tuf/metadata/47.targets.json": {
+      "sizeBytes": 15840,
+      "sha256": "8948a48308fc00c9f6cc8ca933a9b6445bd6738972555e4329135abbb31f86c0"
+    },
+    "catalogue/candidate-v38/tuf/metadata/timestamp.json": {
+      "sizeBytes": 997,
+      "sha256": "e01504867be545d275dbd4c25b1dcb7ffbf9226449aa0085066862cf6d3a554b"
+    },
+    "catalogue/candidate-v38/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sizeBytes": 4879,
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+    },
+    "catalogue/candidate-v38/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sizeBytes": 9031,
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+    },
+    "catalogue/candidate-v38/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+      "sizeBytes": 5624,
+      "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+    },
+    "catalogue/candidate-v38/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sizeBytes": 5280,
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+    },
+    "catalogue/candidate-v38/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sizeBytes": 21857,
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+    },
+    "catalogue/candidate-v38/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sizeBytes": 7918,
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+    },
+    "catalogue/candidate-v38/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sizeBytes": 1676,
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+    },
+    "catalogue/candidate-v38/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json": {
+      "sizeBytes": 4562,
+      "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+    },
+    "catalogue/candidate-v38/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sizeBytes": 2738,
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+    },
+    "catalogue/candidate-v38/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sizeBytes": 7617,
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+    },
+    "catalogue/candidate-v38/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sizeBytes": 1699,
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+    },
+    "catalogue/candidate-v38/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sizeBytes": 10640,
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+    },
+    "catalogue/candidate-v38/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sizeBytes": 1617,
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+    },
+    "catalogue/candidate-v38/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sizeBytes": 12679,
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+    },
+    "catalogue/candidate-v38/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sizeBytes": 1652,
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+    },
+    "catalogue/candidate-v38/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sizeBytes": 9285,
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+    },
+    "catalogue/candidate-v38/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sizeBytes": 1146,
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+    },
+    "catalogue/candidate-v38/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sizeBytes": 4783,
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+    },
+    "catalogue/candidate-v38/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sizeBytes": 6220,
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+    },
+    "catalogue/candidate-v38/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sizeBytes": 4223,
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+    },
+    "catalogue/candidate-v38/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json": {
+      "sizeBytes": 7879,
+      "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+    },
+    "catalogue/candidate-v38/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sizeBytes": 4642,
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+    },
+    "catalogue/candidate-v38/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json": {
+      "sizeBytes": 7564,
+      "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+    },
+    "catalogue/candidate-v38/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sizeBytes": 11228,
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+    },
+    "catalogue/candidate-v38/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sizeBytes": 1656,
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+    },
+    "catalogue/candidate-v38/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+      "sizeBytes": 6445,
+      "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+    },
+    "catalogue/candidate-v38/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sizeBytes": 6071,
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+    },
+    "catalogue/candidate-v38/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json": {
+      "sizeBytes": 4567,
+      "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+    },
+    "catalogue/candidate-v38/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sizeBytes": 10745,
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+    },
+    "catalogue/candidate-v38/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sizeBytes": 6075,
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+    },
+    "catalogue/candidate-v38/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json": {
+      "sizeBytes": 7460,
+      "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+    },
+    "catalogue/candidate-v38/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sizeBytes": 4586,
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+    },
+    "catalogue/candidate-v38/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json": {
+      "sizeBytes": 3703,
+      "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+    },
+    "catalogue/candidate-v38/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sizeBytes": 9388,
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+    },
+    "catalogue/candidate-v38/tuf/targets/e6b77413672c0d991ef45464d82804146633ba7708c3c8cefa4cd7bcd6b87478.catalogue.json": {
+      "sizeBytes": 40798,
+      "sha256": "e6b77413672c0d991ef45464d82804146633ba7708c3c8cefa4cd7bcd6b87478"
+    },
+    "catalogue/candidate-v38/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json": {
+      "sizeBytes": 8122,
+      "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+    },
+    "catalogue/candidate-v38/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json": {
+      "sizeBytes": 6906,
+      "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+    },
+    "catalogue/candidate-v38/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sizeBytes": 3517,
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+    },
+    "catalogue/candidate-v38/tuf/trusted-root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "docs/evidence/2026-10-11-focuswriter-activation.json": {
+      "sizeBytes": 1740,
+      "sha256": "51b3a54ae7cc1b6370a34246a70cb84ad7dec986d5fd72618b5944bcae7c4d16"
+    },
+    "docs/evidence/2026-10-11-focuswriter-current-state.json": {
+      "sizeBytes": 833,
+      "sha256": "c69ee79da0523a44f1c5920f13071c919ee1c6fd84f3b8daa9e0d363d793e6e9"
+    },
+    "docs/evidence/2026-10-11-focuswriter-failures.json": {
+      "sizeBytes": 2138,
+      "sha256": "f5413674be686c0a27b6c44587261a3755d04bf8872f1460456d91c76450c45a"
+    },
+    "docs/evidence/2026-10-11-focuswriter-gui.json": {
+      "sizeBytes": 87479,
+      "sha256": "5a57a195766588a8bf011d37eb279ac43f9f08cc0dc6c501f1c977225c04d7e5"
+    },
+    "docs/evidence/2026-10-11-focuswriter-market-gui.json": {
+      "sizeBytes": 84367,
+      "sha256": "92c672f28f2b003156b68ee47aab34ec5bb03c7511bf3f64b301830802d6977b"
+    },
+    "docs/evidence/2026-10-11-focuswriter-publication.json": {
+      "sizeBytes": 13151,
+      "sha256": "0c6baaabbb97107b7d799a4587a8a96d0aa925b3138ffe881398ab6ddeed47bd"
+    },
+    "docs/evidence/2026-10-11-focuswriter-runtime-recovery.json": {
+      "sizeBytes": 180147,
+      "sha256": "575d6ed93da56cb720de72846eeafa85b6e85b29a7fc1562620472f616c00d03"
+    },
+    "docs/evidence/2026-10-11-focuswriter-source.json": {
+      "sizeBytes": 4116,
+      "sha256": "ed3fdae03a43f9cf32fa64faa96b2377838c82e98cafc195643f4d95469abd8b"
+    },
+    "docs/evidence/2026-10-11-focuswriter/01-original-input.jpg": {
+      "sizeBytes": 23452,
+      "sha256": "ed4e9c1bae532c01b3e946ea2f7ed06eb3032fe431cd99fa59055a32fe0f6200"
+    },
+    "docs/evidence/2026-10-11-focuswriter/02-original-txt-saved.jpg": {
+      "sizeBytes": 23754,
+      "sha256": "c340451fbdbd43e5ac0363c1d7fa095e26caa8ec7cbc6a92fcd7e965cf231513"
+    },
+    "docs/evidence/2026-10-11-focuswriter/03-original-odt-saved.jpg": {
+      "sizeBytes": 23856,
+      "sha256": "fd9a637fff092835f3a0056c77c7f6b5e79a00cf1ca7bb92ca02473b7b39fccf"
+    },
+    "docs/evidence/2026-10-11-focuswriter/04-original-new-process-txt.jpg": {
+      "sizeBytes": 23911,
+      "sha256": "352e6b02e46f4e56fe9e57f7ffb49ef6df8a2559f44afc3d5608cca4c668a0ca"
+    },
+    "docs/evidence/2026-10-11-focuswriter/05-original-new-process-odt.jpg": {
+      "sizeBytes": 23844,
+      "sha256": "0a25bd2dc55d50d1a82431805a798e9f80e64650b1e6343a3b3e864c8faf0c7b"
+    },
+    "docs/evidence/2026-10-11-focuswriter/06-market-input.jpg": {
+      "sizeBytes": 23717,
+      "sha256": "e34270076c0618756ca88e2e10a113bfc42537e3a5b34b5ddbfd28e87f7add70"
+    },
+    "docs/evidence/2026-10-11-focuswriter/07-market-txt-saved.jpg": {
+      "sizeBytes": 24063,
+      "sha256": "1afed180ff40b4a1eea30d2b1b8f581f699ceac8d5c06ab4ccda764d47311118"
+    },
+    "docs/evidence/2026-10-11-focuswriter/08-market-odt-saved.jpg": {
+      "sizeBytes": 24063,
+      "sha256": "1afed180ff40b4a1eea30d2b1b8f581f699ceac8d5c06ab4ccda764d47311118"
+    },
+    "docs/evidence/2026-10-11-focuswriter/09-market-new-process-txt.jpg": {
+      "sizeBytes": 24132,
+      "sha256": "9c83e042ab94ff2267f075126d6e7cc76d19ec6c3931ac787644dd8b4ed07d30"
+    },
+    "docs/evidence/2026-10-11-focuswriter/10-market-new-process-odt.jpg": {
+      "sizeBytes": 24065,
+      "sha256": "d5c297f742d17401b6682f587ac165ae5bd769a571c89043df61c269504ea9e1"
+    },
+    "docs/evidence/2026-10-11-focuswriter/11-market-quit-menu.jpg": {
+      "sizeBytes": 23949,
+      "sha256": "3bb2b30e00bb50f32b7d911ebc60ed60d4b918dd5ef1c61ee7b4a322b496e337"
+    },
+    "docs/evidence/2026-10-11-focuswriter/12-rollback-original-odt.jpg": {
+      "sizeBytes": 19591,
+      "sha256": "fe6b5e42cb919320fd09fae76cfbe7d249431ab5f1acddf6bfaa2a364fb03aa7"
+    },
+    "docs/evidence/2026-10-11-focuswriter/13-rollback-original-odt-loaded.jpg": {
+      "sizeBytes": 21859,
+      "sha256": "ae6dc7a0c52795c2235079d07d7a23edc6c63b8642a4c24f0e2a49a6e409ad1d"
+    },
+    "docs/evidence/2026-10-11-focuswriter/fixed-source-COPYING.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "docs/evidence/2026-10-11-focuswriter/fixed-source-installer.nsi": {
+      "sizeBytes": 7391,
+      "sha256": "2da35c4c93f713f45e22e37f6d990fa99021466476f59bbc948f6648178ef4a9"
+    },
+    "docs/evidence/2026-10-11-focuswriter/fixed-source-main.cpp": {
+      "sizeBytes": 2996,
+      "sha256": "d18f4a4d454ae5a98f547100bd41cc9cbd38b4e9eecb830ab385c087b7b08681"
+    },
+    "docs/evidence/2026-10-11-focuswriter/fixed-source-windows_deploy.bat": {
+      "sizeBytes": 2364,
+      "sha256": "3058c30a9092f3ec82081da487dff72a3bd9f57cf2ebdee87bfbb56114b7eed3"
+    },
+    "docs/evidence/2026-10-11-focuswriter/market-edited.odt": {
+      "sizeBytes": 1347,
+      "sha256": "6979d4576e9935b531538b3707b9eaf080ae8b5d2ae23b3fda03edf5becf4758"
+    },
+    "docs/evidence/2026-10-11-focuswriter/market-edited.txt": {
+      "sizeBytes": 111,
+      "sha256": "633e2c8e6bbac151d80a75f96f989cda1f642bcc181661c3cac423e51f0275e7"
+    },
+    "docs/evidence/2026-10-11-focuswriter/market-input.txt": {
+      "sizeBytes": 85,
+      "sha256": "2f58027058b3f8dd12d57f7f80831cc9439f05c70224597f54c9dd2161f1425b"
+    },
+    "docs/evidence/2026-10-11-focuswriter/original-edited.odt": {
+      "sizeBytes": 1341,
+      "sha256": "dbc1eda33af89767290640540c250f2db153d77e04a57b7284a60589aa4e2df1"
+    },
+    "docs/evidence/2026-10-11-focuswriter/original-edited.txt": {
+      "sizeBytes": 103,
+      "sha256": "020417e5072e7b033869b8ba66ec5d9d8667b3cdf6e2b453ee21c5911b6adeb5"
+    },
+    "docs/evidence/2026-10-11-focuswriter/original-input.txt": {
+      "sizeBytes": 75,
+      "sha256": "594ccc4d0540de95cd6632380caece4829875d6130e2213e8092793655a9c90a"
+    },
+    "docs/evidence/windows-focuswriter-20261011.acceptance.json": {
+      "sizeBytes": 4562,
+      "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 45451,
+      "sha256": "a9659d524f7abc5dd1f03b0c53aa6f17d7cc15b0171ace7580563e15e6f71070"
+    },
+    "docs/windows-rolling-20261011-focuswriter.md": {
+      "sizeBytes": 6269,
+      "sha256": "a9d99f3216e4d49a5433a679ab497bed0c5f2b59b5b2247ba7796f2fe08c61b2"
+    }
+  },
+  "reviewerPreparationNotes": [
+    "Initial review harness used ordinary JSON string escaping instead of TUF canonical control-character preservation for the historical root, guessed 614x670 instead of actual 614x672 JPEG geometry, and searched prose instead of the explicit source SPDX header. These harness assumptions were corrected against actual bytes without changing project evidence. Initial result retained privately.",
+    "Host F:/Python/py39 lacks cryptography/Pillow; configured bundled workspace Python was used."
+  ],
+  "limitations": [
+    "Offline independent review of current public files and cached official/source/signing artifacts; no browser or guest operation and no new GUI execution.",
+    "Installed 470-file records were cross-compared across public original, market and recovery proofs; physical guest files were not reread.",
+    "Private full checkpoint bodies, keys and credentials were not accessed; lifecycle checkpoint proof linkage and assertion implementation were reviewed, not independently replayed.",
+    "No complete ODF specification, whole application filesystem, full bundled licence closure, upstream OpenPGP/Authenticode, reproducible build, network, fresh registration or cross-version claims.",
+    "Screenshots demonstrate displayed content and one rejected blank state; package format is independently parsed from public TXT/ODT outputs."
+  ]
+}

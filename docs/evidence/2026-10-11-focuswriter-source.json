@@ -1,0 +1,109 @@
+{
+  "version": "1.8.13",
+  "officialArchiveUrl": "https://gottcode.org/focuswriter/archive/",
+  "archiveHtml": {
+    "sizeBytes": 214679,
+    "sha256": "ee3f00bf82b17b12ba9bdb3863a5af0a272a395ea50d96522b106bea193260f2"
+  },
+  "downloads": [
+    {
+      "fileName": "FocusWriter_1.8.13.exe",
+      "url": "https://gottcode.org/focuswriter/FocusWriter_1.8.13.exe",
+      "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c",
+      "sizeBytes": 54323843,
+      "officialArchiveDigestMatched": true
+    },
+    {
+      "fileName": "focuswriter-1.8.13.tar.bz2",
+      "url": "https://gottcode.org/focuswriter/focuswriter-1.8.13.tar.bz2",
+      "sha256": "736662c0ec6ca9d6ae93b18f637963e9f5a914b25027d07b34723ca91b4aa98b",
+      "sizeBytes": 10478620,
+      "officialArchiveDigestMatched": true
+    }
+  ],
+  "selectedMembers": [
+    {
+      "member": "focuswriter-1.8.13/CMakeLists.txt",
+      "sizeBytes": 9365,
+      "sha256": "cac635c64260e1f174f92e91ac4974b3511a0f168f6da30ca121473a270579f1"
+    },
+    {
+      "member": "focuswriter-1.8.13/COPYING",
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "member": "focuswriter-1.8.13/README",
+      "sizeBytes": 1476,
+      "sha256": "9b16c18ca89d45ed7f46c2e6e75f7f2908b7921e0d7053427351efaa88885bf3"
+    },
+    {
+      "member": "focuswriter-1.8.13/resources/images/icons/oxygen/COPYING",
+      "sizeBytes": 9677,
+      "sha256": "137e29a21603ca95b76df80ab12d5db8ec0a4a0f0d714f6770aa771e9a440bdb"
+    },
+    {
+      "member": "focuswriter-1.8.13/resources/symbols/CMakeLists.txt",
+      "sizeBytes": 329,
+      "sha256": "cfaeadfed1fa6cc52c25eeaf352d589a42fa57890e2479d9f84dca67d77f0505"
+    },
+    {
+      "member": "focuswriter-1.8.13/resources/symbols/main.cpp",
+      "sizeBytes": 6482,
+      "sha256": "b2f87d03a15396701eeefb56eab79a495730665cce76ff7235b1724dba5ec629"
+    },
+    {
+      "member": "focuswriter-1.8.13/resources/windows/installer.nsi",
+      "sizeBytes": 7391,
+      "sha256": "2da35c4c93f713f45e22e37f6d990fa99021466476f59bbc948f6648178ef4a9"
+    },
+    {
+      "member": "focuswriter-1.8.13/src/3rdparty/hunspell/README.md",
+      "sizeBytes": 10815,
+      "sha256": "02fb8a352584e2c93fd0cab49d0f611a586c4c3e1d61b18b24d81b3c5703e8b7"
+    },
+    {
+      "member": "focuswriter-1.8.13/src/document.cpp",
+      "sizeBytes": 46087,
+      "sha256": "22eb3ba5abdd3dba6e967f3685ee6020b3bfcc8de3f3216d36867606b7898469"
+    },
+    {
+      "member": "focuswriter-1.8.13/src/main.cpp",
+      "sizeBytes": 2996,
+      "sha256": "d18f4a4d454ae5a98f547100bd41cc9cbd38b4e9eecb830ab385c087b7b08681"
+    },
+    {
+      "member": "focuswriter-1.8.13/src/window.cpp",
+      "sizeBytes": 59282,
+      "sha256": "6aed62d4968db55f4183d98a445eba59a6d8816026ffe4fbc3f9894a6a36530d"
+    },
+    {
+      "member": "focuswriter-1.8.13/windows_deploy.bat",
+      "sizeBytes": 2364,
+      "sha256": "3058c30a9092f3ec82081da487dff72a3bd9f57cf2ebdee87bfbb56114b7eed3"
+    }
+  ],
+  "githubApiFailure": "HTTP 403 rate limit exceeded; fixed official source archive used instead",
+  "pgpActuallyVerified": false,
+  "authenticodeActuallyVerified": false,
+  "installed": false,
+  "guiAccepted": false,
+  "published": false,
+  "applicationId": "focuswriter",
+  "mainProgramLicense": "GPL-3.0-or-later",
+  "mainLicenseDeclarationMember": "focuswriter-1.8.13/src/main.cpp",
+  "installerType": "NSIS",
+  "installerArguments": [
+    "/S",
+    "/D=C:\\FocusWriter"
+  ],
+  "installerArgumentUtf8Hex": [
+    "2f53",
+    "2f443d433a5c466f637573577269746572"
+  ],
+  "fullBundledLicenseClosureVerified": false,
+  "installedLicenceTextFilesPresent": false,
+  "installedLicenceObservation": "No copying/license-named file among all 470 installed program files. Fixed deploy script creates the NSIS installer before adding COPYING.txt for the portable ZIP. Licence page is embedded by the fixed NSIS script; no claim of installed COPYING equality.",
+  "formalDefinitionDigest": "sha256:46abf5cb66e0a05de30c665889d120dcb0f836189a8ee1bb3ee7326c7593fa0e",
+  "sourceRecordNotRuntimeAcceptance": true
+}
