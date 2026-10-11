@@ -1,0 +1,19 @@
+{
+  "applicationId": "nsis",
+  "phase": "post-first-commit-review-scope-clarification",
+  "finding": "The root agent consumed a passed result file before the reviewer sent its final completion message. The saved snapshot retained one inherited no-index limitation that contradicted its actual read-only first-index checks.",
+  "savedReview": "2026-10-12-nsis-independent-review-v2.json",
+  "savedReviewSha256": "a4f3664421f4b251a3dc6307cd44dd31442bbc75d1aa4fd2d331789af833c291",
+  "finalReview": "2026-10-12-nsis-independent-review-v2-final.json",
+  "finalReviewSha256": "c6d90d925656cfab9d63a7a2ebf4445654b79e4fd11bee41072d6894884cb361",
+  "onlyJsonDifference": "Removal of the inherited no-Git-index limitation; all passed/findings/prospective pins/checks/scope are exactly equal.",
+  "removedInheritedLimitation": "No Git stage/index/commit/push or current GitHub authentication check;unexecuted helper date-preflight failure explicitly separate.",
+  "actualReviewerScope": "Read-only first-stage 1421 index blob hashes and 144 staged path set; no subsequent staging, commit, push, guest/GUI or current GitHub authentication check was performed by the reviewer.",
+  "rootActualStageAndCommitScope": "Root independently ran the later real Git stage/diff gate and all 1425 index/commit byte checks; commit 90b081dca650d8785e77e33ecfc219188253aefd and clean worktree were confirmed.",
+  "priorPublicReviewAndFirstCommitPreserved": true,
+  "finalReviewRawBytesPreserved": true,
+  "guestGuiProgramsDefinitionsTrustSignaturesChanged": false,
+  "noRepeatedInstallationOrGui": true,
+  "prevention": "Consume reviewer result only after its explicit completion and then freeze the final raw bytes.",
+  "followUpStageCommitAndPushPendingAtRecord": true
+}
