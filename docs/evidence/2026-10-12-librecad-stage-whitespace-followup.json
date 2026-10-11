@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "phase": "actual-first-index-whitespace-failure-followup",
+  "firstStagePassed": false,
+  "firstIndexBytesAllMatch": true,
+  "firstFrozenFiles": 1630,
+  "firstChangedFiles": 107,
+  "firstStageReceiptSha256": "cc328e120f298860991d9b6bbfe578e21a22556f9b4d7e09f7c076cd4007e767",
+  "firstStageReceipt": "docs/evidence/2026-10-12-librecad-first-stage-failure.json",
+  "originalReview": "docs/evidence/2026-10-12-librecad-independent-review.json",
+  "originalReviewSha256": "7f1e0cdca8a960e0c1dda11f11731c241c2a84f0f5c51c692973c6d4cbc0e42f",
+  "firstFreezeManifestSha256": "2cc1beb8da9fabb4869d4d47f691bc923666f1b8570efa2b6361421e9989da05",
+  "exactPathRules": [
+    "docs/evidence/2026-10-12-librecad/release-LICENSE -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof",
+    "docs/evidence/2026-10-12-librecad/source/LICENSE -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof",
+    "docs/evidence/2026-10-12-librecad/source/README.md -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-librecad/source/licenses/KST32B_v2.txt -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-librecad/source/licenses/MIT.txt -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-librecad/source/licenses/lc_opengost-fonts.txt -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-librecad/source/licenses/readme.md -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof",
+    "docs/evidence/2026-10-12-librecad/source/scripts/postprocess-windows/nsis-4.8.nsi -text whitespace=cr-at-eol,-blank-at-eof"
+  ],
+  "attributesBeforeSha256": "0dcc738d6fc4346b8e0be55e7a91a7e1f7f3a73597ad4676b3f63a588a4d74db",
+  "attributesAfterSha256": "bc5cf95ca0c92d96a434f9de13e51b6c2b7f0b71597686043fdbc956d729e2a3",
+  "upstreamEvidenceBytesChanged": false,
+  "ledgerOrReportChanged": false,
+  "guestMutation": false,
+  "commitAfterFailedGate": false,
+  "scope": "First real git diff --cached --check rejected fixed upstream trailing whitespace and EOF blank lines. Stop before commit. Preserve raw first-stage receipt, review, report, original evidence and first freeze; change only eight exact-path Git whitespace attributes. New v2 review/index/commit results must be recorded separately."
+}

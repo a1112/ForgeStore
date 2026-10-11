@@ -457,6 +457,17 @@
       "signedCatalogue": "catalogue/candidate-v48/tuf",
       "publication": "docs/evidence/2026-10-12-qbittorrent-publication.json",
       "limitation": "Limited two small4096B Chinese-name single-file trackerless GUI torrent creations; explicit fresh-process stopped local recheck100%, canonical bencode and pieceSHA1 match,0B GUI transfers. DHT nodes visible, no claim background networking absent. Store IPC cached update/exact original rollback/restart passed. Download/upload/seeding/peer/tracker/DHT/PEX/magnet/private/multifile/remoteRPC/search/plugins/large/damaged/advanced/direct Chinese input/network/new machine/migration/cross-version/unattended/full bundle-license closure unverified. Third GUI registry/config/log/fastresume changes privately backed up; current new pins stable. Synthetic fixtures excluded."
+    },
+    {
+      "id": "librecad",
+      "version": "2.2.1.5",
+      "sha256": "738912fea40aca934689444af9c5cd281572417983cc081c204fe6c779f6941d",
+      "sizeBytes": 54350692,
+      "license": "GPL-2.0-only",
+      "evidence": "docs/evidence/windows-librecad-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v49/tuf",
+      "publication": "docs/evidence/2026-10-12-librecad-publication.json",
+      "limitation": "ASCII paths only: two small LINE/CIRCLE DXF drawings, GUI line edit/Save As/fresh reopen with independent geometry coordinates. Chinese path import failed and remains unfixed. Store IPC cached update/exact original rollback/restart passed. Advanced CAD, full DXF/DWG, direct Chinese input, network/new machine/migration/cross-version/unattended/full bundle-license closure unverified. Third original registry bytes changed, actual private backups/diffs retained and current new pins stable. Synthetic fixtures excluded."
     }
   ],
   "queue": [
@@ -650,12 +661,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "44/1000 Windows finite acceptance;13 unresolved including installed unaccepted BowPad. qBittorrent5.2.4 limited trackerless single-file GUI creation/fresh stopped local recheck100%/Store IPC cached same-version update/exact original rollback/restart only, network transfer unverified and DHT nodes observed. candidate-v48/root1/role57;345 complete Core tasks/106 full Store SQLite rows. Strict guest rolling-current-state-qbittorrent-20261012.py. Preserve frozen history/trust and actual third GUI changed registry/config/log/fastresume bytes. GitHub user validation restored, previous accumulated commits pushed039d38; current new evidence awaits ordinary commit/push and verification, no repeated device code.",
+  "next": "45/1000 finite Windows acceptance;13 unresolved including BowPad. LibreCAD2.2.1.5 ASCII small DXF line/circle GUI edit/Save As/fresh reopen only; Chinese path import failed and unfixed. candidate-v49/root1/role58;353 full Core tasks/108 full Store rows. Strict guest rolling-current-state-librecad-20261012.py. Preserve frozen history/trust and actual third GUI changed registry bytes. Current evidence awaits independent review/index/commit audit and ordinary push, no new device code.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 44,
+    "acceptedLocalMarket": 45,
     "explicitlyBlockedCandidates": 13,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -663,25 +674,25 @@
     "pendingCandidates": 13
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v48/tuf",
-    "metadataVersion": 57,
-    "catalogueEntries": 46,
-    "acceptedDistinctWindowsApps": 44,
+    "signedCatalogue": "catalogue/candidate-v49/tuf",
+    "metadataVersion": 58,
+    "catalogueEntries": 47,
+    "acceptedDistinctWindowsApps": 45,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-qbittorrent-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-librecad-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-nsis-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-qbittorrent-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-qbittorrent-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-librecad-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-qbittorrent-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-librecad-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-qbittorrent.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-qbittorrent-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-librecad.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-librecad-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

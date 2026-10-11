@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 58,
+  "rootVersion": 1,
+  "entries": 47,
+  "coreJobs": 349,
+  "fullStoreRows": 106,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-librecad-20261012.acceptance.json#librecad",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "738912fea40aca934689444af9c5cd281572417983cc081c204fe6c779f6941d",
+        "size": 54350692,
+        "target": "LibreCAD-v2.2.1.5-win64-msvc.exe",
+        "url": "https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.5/LibreCAD-v2.2.1.5-win64-msvc.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "librecad"
+    },
+    "id": "librecad",
+    "license": "GPL-2.0-only",
+    "name": {
+      "en": "LibreCAD",
+      "zhCN": "LibreCAD 二维绘图"
+    },
+    "origin": "https://librecad.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "LibreCAD Team",
+    "summary": {
+      "en": "Limited ASCII-path small DXF line/circle GUI edit, Save As and fresh-process reopen tested; Chinese-path import failed.",
+      "zhCN": "仅 ASCII 路径小型 DXF 线圆绘图、另存及新进程重开通过；中文路径导入失败未修复"
+    },
+    "version": "2.2.1.5"
+  },
+  "installed": {
+    "appId": "librecad",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "2.2.1.5"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "b7ede44acf4e5ed3893b91a8b5251b262f14cbfed048c6c365b420dc061b9a0c",
+    "coreJobs": 349,
+    "fullStoreRows": 106
+  },
+  "independentMarketGenerationPending": true
+}

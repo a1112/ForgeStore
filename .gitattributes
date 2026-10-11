@@ -182,3 +182,20 @@ docs/evidence/windows-qbittorrent-20261012*.acceptance.json -text whitespace=cr-
 docs/evidence/2026-10-12-qbittorrent*.json -text whitespace=cr-at-eol
 docs/evidence/2026-10-12-qbittorrent/** -text whitespace=cr-at-eol
 docs/windows-rolling-20261012-qbittorrent.md -text whitespace=cr-at-eol
+
+# LibreCAD pinned upstream and evidence bytes.
+catalogue/candidate-v49/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-librecad-20261012*.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-librecad*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-librecad/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261012-librecad.md -text whitespace=cr-at-eol
+
+# Preserve actual fixed LibreCAD upstream whitespace at exact paths.
+docs/evidence/2026-10-12-librecad/release-LICENSE -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/evidence/2026-10-12-librecad/source/LICENSE -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/evidence/2026-10-12-librecad/source/README.md -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-librecad/source/licenses/KST32B_v2.txt -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-librecad/source/licenses/MIT.txt -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-librecad/source/licenses/lc_opengost-fonts.txt -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-librecad/source/licenses/readme.md -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/evidence/2026-10-12-librecad/source/scripts/postprocess-windows/nsis-4.8.nsi -text whitespace=cr-at-eol,-blank-at-eof

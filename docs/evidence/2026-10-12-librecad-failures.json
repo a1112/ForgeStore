@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-12",
+  "applicationId": "librecad",
+  "helperPreparation": {
+    "phase": "helper-preparation",
+    "failedHelper": "librecad-build-initial-20261012.py",
+    "failure": "assertion rejected incomplete prior-application name replacement in observer",
+    "guestMutationOccurred": false,
+    "alreadyPreparedHelpersNotReexecuted": true,
+    "repair": "new observer preparation changes all application labels and verifies current library digest",
+    "librarySha256": "5e7374561600f76ca2cfd5f6b9c2cd4ce6c21494b77c079435667477a7834441"
+  },
+  "fixtureRoundTrip": "Rectangle coordinate tuples became JSON arrays; save_record wrote original receipt then read-back equality rejected. No launch submitted. Original fixture/receipt retained and controlled v2 validated actual arrays, pins and full state before launch.",
+  "pathImport": "Chinese-name385B DXF GUI import failed; same raw bytes in original-ascii.dxf rendered. First process is diagnostic only, no full function acceptance and no repair of Chinese import.",
+  "quit": "CtrlQ had no effect, formal-ascii-launch strict terminal assertion failed and stopped before creating formal launch; fresh File/Quit normal exit0 then controlled helper retry passed. CtrlQ not accepted.",
+  "allPriorFailuresAndEvidencePreserved": true
+}

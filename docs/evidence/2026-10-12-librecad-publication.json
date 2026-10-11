@@ -1,0 +1,680 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "dateConvention": "Asia/Shanghai report date; actual guest UTC timestamps retained",
+  "applicationId": "librecad",
+  "version": "2.2.1.5",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 45,
+  "signedCatalogue": "catalogue/candidate-v49/tuf",
+  "metadataVersion": 58,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 47,
+  "excludedFixtures": 2,
+  "signedActualTargets": 96,
+  "publicCatalogueFiles": 54,
+  "sourceEvidence": {
+    "reference": "2026-10-12-librecad-source.json",
+    "sha256": "58378af5031ee5f8adcc99018391460994b38e20512b774e7f21e0ac708305eb"
+  },
+  "originalAcceptance": {
+    "reference": "windows-librecad-20261012.acceptance.json",
+    "sha256": "cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86"
+  },
+  "originalGeneration": "gen-job-1791743660835-1",
+  "marketGeneration": "gen-job-1791744585038-5",
+  "definitionDigest": "sha256:9467c02e582ecc7f68c612bb840f23e207cb64f8b8cec65c44c065c53ceb7c46",
+  "originalSave": {
+    "generationId": "gen-job-1791743660835-1",
+    "inputRelativePath": "LibreCADTests/original-ascii.dxf",
+    "inputPin": {
+      "sizeBytes": 385,
+      "sha256": "d2354bffe7f8cea54577a50eb9f3dcc5e121ccfd5c158cb3e611d01851f066e6"
+    },
+    "outputRelativePath": "LibreCADTests/original-result.dxf",
+    "outputPin": {
+      "sizeBytes": 19270,
+      "sha256": "10277ec202094b761cc80f8a374afafc6f91f2ca1ab552f843d40f39fc489754"
+    },
+    "parsedOutputGeometry": {
+      "entityCount": 6,
+      "entities": [
+        {
+          "type": "LINE",
+          "coordinates": [
+            0.0,
+            0.0,
+            40.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            40.0,
+            0.0,
+            40.0,
+            20.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            40.0,
+            20.0,
+            0.0,
+            20.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            0.0,
+            20.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "CIRCLE",
+          "center": [
+            20.0,
+            10.0
+          ],
+          "radius": 4.0
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            0.0,
+            0.0,
+            40.0,
+            20.0
+          ]
+        }
+      ],
+      "wellFormedGroupPairsAndEof": true,
+      "fullDxfSpecificationVerified": false
+    },
+    "inputUnchanged": true,
+    "installedProgramPinsMatched": true,
+    "firstFormalJob": {
+      "applicationId": "librecad",
+      "createdAtMilliseconds": 1791743929794,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 166518,
+          "requestId": "job-1791743929794-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 116508,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791743660835-1/prefix",
+          "requestId": "job-1791743929794-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 116550,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791743929794-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791743660835-1",
+      "id": "job-1791743929794-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 3670736,
+        "fileDigest": "sha256:9b5ec58c40c9e88b2fc110678f03c5b071191cd8dd79b3c68d6620b269c03773",
+        "fileSizeBytes": 7681536,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "dbghelp.dll",
+          "kernel32.dll",
+          "msvcp140.dll",
+          "qt5core.dll",
+          "qt5gui.dll",
+          "qt5printsupport.dll",
+          "qt5svg.dll",
+          "qt5widgets.dll",
+          "shell32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 3837952,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 3837799,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3545600,
+            "readable": true,
+            "virtualAddress": 3842048,
+            "virtualSize": 3545118,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 117760,
+            "readable": true,
+            "virtualAddress": 7389184,
+            "virtualSize": 129432,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 121856,
+            "readable": true,
+            "virtualAddress": 7520256,
+            "virtualSize": 121356,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 8704,
+            "readable": true,
+            "virtualAddress": 7643136,
+            "virtualSize": 8392,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 48640,
+            "readable": true,
+            "virtualAddress": 7655424,
+            "virtualSize": 48600,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791743660835-1",
+          "digest": "sha256:9b5ec58c40c9e88b2fc110678f03c5b071191cd8dd79b3c68d6620b269c03773",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "LibreCAD.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791743660835-1/prefix/drive_c/LibreCAD/LibreCAD.exe",
+          "sizeBytes": 7681536,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:9b5ec58c40c9e88b2fc110678f03c5b071191cd8dd79b3c68d6620b269c03773 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791743660835-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791743660835-1/prefix/drive_c/LibreCAD/LibreCAD.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791743660835-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791743660835-1"
+        },
+        "requestId": "job-1791743929794-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791744048460
+    },
+    "guiAccepted": false,
+    "published": false,
+    "chinesePathNotSupportedInObservedImport": true
+  },
+  "marketSave": {
+    "generationId": "gen-job-1791744585038-5",
+    "inputRelativePath": "LibreCADTests/market-ascii.dxf",
+    "inputPin": {
+      "sizeBytes": 384,
+      "sha256": "540ac1cb28bcfc0e897d15201db98c3bb104d294c43ab942594397827990a81a"
+    },
+    "outputRelativePath": "LibreCADTests/market-result.dxf",
+    "outputPin": {
+      "sizeBytes": 19269,
+      "sha256": "598b904da30f19af33c94848acd4177aa2024c18d516dee99a0926d3746d4d19"
+    },
+    "parsedOutputGeometry": {
+      "entityCount": 6,
+      "entities": [
+        {
+          "type": "LINE",
+          "coordinates": [
+            0.0,
+            0.0,
+            30.0,
+            0.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            30.0,
+            0.0,
+            30.0,
+            18.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            30.0,
+            18.0,
+            0.0,
+            18.0
+          ]
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            0.0,
+            18.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "type": "CIRCLE",
+          "center": [
+            15.0,
+            9.0
+          ],
+          "radius": 3.0
+        },
+        {
+          "type": "LINE",
+          "coordinates": [
+            0.0,
+            0.0,
+            30.0,
+            18.0
+          ]
+        }
+      ],
+      "wellFormedGroupPairsAndEof": true,
+      "fullDxfSpecificationVerified": false
+    },
+    "inputUnchanged": true,
+    "installedProgramPinsMatched": true,
+    "firstFormalJob": {
+      "applicationId": "librecad",
+      "createdAtMilliseconds": 1791744629171,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 168315,
+          "requestId": "job-1791744629171-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 105454,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791744585038-5/prefix",
+          "requestId": "job-1791744629171-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 105497,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791744629171-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791744585038-5",
+      "id": "job-1791744629171-6",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 3670736,
+        "fileDigest": "sha256:9b5ec58c40c9e88b2fc110678f03c5b071191cd8dd79b3c68d6620b269c03773",
+        "fileSizeBytes": 7681536,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "dbghelp.dll",
+          "kernel32.dll",
+          "msvcp140.dll",
+          "qt5core.dll",
+          "qt5gui.dll",
+          "qt5printsupport.dll",
+          "qt5svg.dll",
+          "qt5widgets.dll",
+          "shell32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 3837952,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 3837799,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3545600,
+            "readable": true,
+            "virtualAddress": 3842048,
+            "virtualSize": 3545118,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 117760,
+            "readable": true,
+            "virtualAddress": 7389184,
+            "virtualSize": 129432,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 121856,
+            "readable": true,
+            "virtualAddress": 7520256,
+            "virtualSize": 121356,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 8704,
+            "readable": true,
+            "virtualAddress": 7643136,
+            "virtualSize": 8392,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 48640,
+            "readable": true,
+            "virtualAddress": 7655424,
+            "virtualSize": 48600,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791744585038-5",
+          "digest": "sha256:9b5ec58c40c9e88b2fc110678f03c5b071191cd8dd79b3c68d6620b269c03773",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "LibreCAD.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791744585038-5/prefix/drive_c/LibreCAD/LibreCAD.exe",
+          "sizeBytes": 7681536,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:9b5ec58c40c9e88b2fc110678f03c5b071191cd8dd79b3c68d6620b269c03773 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791744585038-5/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791744585038-5/prefix/drive_c/LibreCAD/LibreCAD.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791744585038-5/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791744585038-5"
+        },
+        "requestId": "job-1791744629171-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791744736840
+    },
+    "guiAccepted": false,
+    "published": false,
+    "scope": "ASCII paths only; Drawings menu used to activate imported document"
+  },
+  "fiveNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "jobId": "cfbb5fac-f3c9-44f1-bc7a-47608ed1b314"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "librecad",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "9f9ebbe3-156d-42c6-9804-7cb07aa43dc3",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791743660835-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 352,
+    "beforeRollbackStoreRows": 107,
+    "afterRollbackCoreJobs": 352,
+    "afterRollbackStoreRows": 108,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "c529fb475a8d407aa39b5f3291642e66cecd5259e5ec10bedc6c392f7943ddfd",
+      "coreJobs": 352,
+      "fullStoreRows": 108
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 353,
+  "fullStoreRows": 108,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationsAndFixedEvidenceDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalByteChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3424134,
+        "sha256": "d6218c9862c31b6275718f25d119a906bc72e9cdd930e0262325be9cbc3e4fab"
+      },
+      "after": {
+        "sizeBytes": 3424134,
+        "sha256": "7b58013ba0c0bbbf6fe631e6a82bc991952a1405593ba9f22eaf8df54ad5a358"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 287,
+      "textDiffPreservedPrivately": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 116163,
+        "sha256": "4e8f9d13679c52c9d750b452aefe1dd7b9924ae2371f2f96595343378b611c66"
+      },
+      "after": {
+        "sizeBytes": 116163,
+        "sha256": "3b8e00ea528b3c2f052375ee997089b8ed42a154f459e095b765d65cfce1d092"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 20,
+      "textDiffPreservedPrivately": true
+    }
+  },
+  "originalRegistryAndConfigBytesPreservedAcrossThirdGui": false,
+  "currentDataAndConfigurationMatchedAcrossRestart": true,
+  "originalHistoricalFrozenFiles": 34,
+  "oldImmutableFilesMatched": 1523,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "ASCII paths only: two small single-layer LINE/CIRCLE DXF drawings, GUI line command added exactly one diagonal, GUI Save As, explicit fresh-process reopen and AutoZoom display. Each output contains five expected LINEs and one expected CIRCLE; independent limited group-pair parser verifies coordinates, not full DXF specification. Synthetic drawings do not count as applications.",
+    "Chinese-name original385B DXF import failed; identical raw bytes at ASCII name rendered. Chinese import remains unfixed. Initial diagnostic process and screenshots01/02 do not count as formal function acceptance. No direct Chinese keyboard input acceptance.",
+    "Independent market generation, cached same-version Store IPC update, exact original rollback and normal two-service restart passed. Five formal File/Quit exits0 and wineserver stop. CtrlQ had no effect; GUI market update/rollback buttons, unattended startup, new-machine registration, migration and cross-version upgrades unverified.",
+    "Blocks/layers beyond layer0, dimensions/text/hatches, complex editing, DXF/DWG format breadth, export/printing, large/damaged drawings, plugins, network and all advanced CAD functions unverified.",
+    "Pinned main source and release LICENSE declare GPL-2.0-only. Installer and release LICENSE match official API digest; source archive has only local digest. Full Qt/MSVC/plugins/font-bundle license closure, installed-license comparison or extraction, OpenPGP/Authenticode, source/binary correspondence and reproducible build unverified.",
+    "Third original GUI changed system.reg and user.reg raw bytes while sizes stayed equal; before/after raw bytes and287/20-line private diffs retained, cause unestablished. Current new pins stable across restart; fixed data and1613 program files checked, not a complete old-application filesystem/configuration traversal."
+  ],
+  "remotePushPendingAtPublicationFreeze": true,
+  "priorRemoteVerifiedCommit": "6866acfc6cf0014dbec0e5df0d2a2a29359f9562",
+  "newDeviceCodeIssued": false,
+  "chinesePathImportFailedAndUnfixed": true,
+  "completeCadApplicationAccepted": false,
+  "unattendedStartupAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "guiAboutVersionMeasured": false
+}
