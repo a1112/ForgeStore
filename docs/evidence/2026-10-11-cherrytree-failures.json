@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "cherrytree",
+  "defaultRenderingFailures": [
+    {
+      "jobs": [
+        "job-1791699776366-2",
+        "job-1791700274808-3"
+      ],
+      "exitCode": 0,
+      "observed": "GTK menus/tree/body glyphs clipped in initial and explicit fresh-process reopen. Native Windows Save dialog readable. Exit zero did not establish GUI acceptance.",
+      "evidence": [
+        "01-start.jpg",
+        "02-original-root.jpg",
+        "07-fresh-process-child-rendering.jpg",
+        "08-fresh-process-root-rendering.jpg"
+      ],
+      "resolution": "Controlled per-request fc diagnostic job-1791700325789-4 readable; fresh formal generation and independent market generation use existing native per-launcher environment PANGOCAIRO_BACKEND=fc.",
+      "globalRuntimeChanged": false,
+      "exactUnderlyingFunctionEstablished": false
+    }
+  ],
+  "guiInputCorrections": [
+    {
+      "observed": "Original child Ctrl+End append joined VALUE=21APPENDED; subsequent Home/right/newline inserted the break at the wrong position.",
+      "evidence": [
+        "14-formal-child-append-before-linebreak.jpg",
+        "15-formal-child-misplaced-linebreak.jpg"
+      ],
+      "resolution": "GUI Select All, Backspace and re-entry of the complete ASCII child body; Save As, raw XML, fresh reopen and rollback reopen verified the correct three lines.",
+      "cleanAppendShortcutClaimed": false
+    },
+    {
+      "observed": "A JavaScript string lost Windows backslashes before input; the bad path in screenshot 21 was not submitted. A subsequent forward-slash Save As was rejected by the native dialog.",
+      "evidence": [
+        "21-market-path-input-missing-backslashes.jpg",
+        "22-market-native-forward-slash-rejected.jpg"
+      ],
+      "resolution": "Normal acknowledgement, then per-character Windows path assembled using character 92; actual Save As and subsequent raw output/reopen verified.",
+      "genericApplicationDefectClaimed": false
+    }
+  ],
+  "marketInputAutosaveAndGateGap": {
+    "initialInput": {
+      "sizeBytes": 694,
+      "sha256": "062abf2c29ad2a690f820921a00548cb94add2cbe7ceb3454921bf31f4f180e1"
+    },
+    "actualInput": {
+      "sizeBytes": 693,
+      "sha256": "c1dffa219231a46c8d6f6f92cc9a77da344ae9222b76f433265d28ac9642beac"
+    },
+    "inputUnchanged": false,
+    "actualInputRootChangedFromBeforeToAfter": true,
+    "actualInputChildAppendAbsent": true,
+    "exactInitialInputPreservedInAppBackup": {
+      "file": "input/市场笔记.ctd",
+      "sizeBytes": 694,
+      "sha256": "062abf2c29ad2a690f820921a00548cb94add2cbe7ceb3454921bf31f4f180e1"
+    },
+    "initialSaveProofRetained": true,
+    "helperMissingAssertionAllowedNewReopenJob": "job-1791701496984-10",
+    "allLaterMutationsStoppedUntilReadOnlyInspection": true,
+    "correctedSeparateActualInputProofBeforeRollback": true,
+    "initialInputResetOrHistoricalBytesRewritten": false,
+    "allDependencyGatesWorkedClaimed": false
+  },
+  "marketInstallReadOnlyFailure": {
+    "observed": "Initial market launch preparation failed on registry read I/O ENOENT around installation completion.",
+    "dependentFixtureAndGuiSubmissionStopped": true,
+    "resolution": "Read-only services/journal/full-history check found services active and installation task succeeded; gated retry captured full 243 Core/80 Store state before fixture/GUI submission.",
+    "rootCauseEstablished": false,
+    "registryResetOrExtraServiceRestartUsed": false
+  },
+  "readOnlyAndPreparationNotes": [
+    "Unauthenticated GitHub API returned 403; fixed source checks used existing authorized gh login. No credential output or modification.",
+    "Initial git status was run in a non-repository parent; repository was located read-only.",
+    "Direct installed/source licence raw equality failed; 15 CRLF normalization explains equality of text while original bytes remain different.",
+    "jobs.submit rejected unknown arguments field before creating a task; corrected to argumentOverrides.",
+    "A guessed generation launchers key failed before checkpoint/fixture/task changes; verified actual frozen application definition on retry.",
+    "Several guessed historical helper paths and PowerShell rg wildcard paths failed; corrected with rg --files. No dependent mutation was based on a missing read.",
+    "A read of the generated signing helper was premature while its preparation process still ran. Signing waited for successful completion. Draft public path candidate-v32 was caught and corrected to candidate-v33 before actual signing."
+  ],
+  "priorAppFailuresAndSignedHistoryRetained": true,
+  "noHistoricalCheckpointsFabricated": true,
+  "rollbackCheckpointSavedReadBackBeforeSubmission": true,
+  "limitations": [
+    "Only two small fixed two-node XML .ctd note inputs with Chinese filenames, root ordinary BEFORE to AFTER replacement, ASCII child body editing, GUI Save As to ASCII output paths and explicit new-process reopen were verified. Original input/output: 694/711 bytes. Market initial input 694, autosaved input 693, output 709 bytes; exact original input retained in the application backup.",
+    "Default Pango Win32 backend clipped menu/tree/body text in two fresh managed processes. Per-launcher PANGOCAIRO_BACKEND=fc restored tested readability; no Core code, global context, runtime, font, DLL or program byte changes. Exact defective function in Wine/GDI/Pango/Cairo is not established.",
+    "SQLite/encrypted notes, attachments, images, code boxes, tables, import/export, links, broad formatting/search, large notes, direct Chinese keyboard input and advanced features were not verified.",
+    "Main program GPL-3.0-or-later from fixed source. Installed licence matches fixed source after 15 CRLF normalizations, not raw bytes. Full GTK/Pango/Cairo/icons and bundled component licence closure, Authenticode/OpenPGP and reproducibility were not verified.",
+    "Guest online download, fresh-machine registration, configuration migration and cross-version upgrades were not verified.",
+    "Update and rollback submitted via Store IPC; GUI update/rollback button functionality not claimed.",
+    "Data preservation covers prior fixed acceptance data, diagnostic pins and new fixed inputs/outputs/executable/licence/config/registry/backup pins; not a traversal of every application filesystem file.",
+    "Market save helper printed inputUnchanged=false but lacked an assertion and submitted the reopen before inspection. Later mutations stopped until read-only actual-input/backup/history verification; corrected separate proof and checkpoint preceded rollback. Do not claim every earlier dependency gate worked."
+  ],
+  "backupPathCorrectionEvidence": "2026-10-11-cherrytree-backup-path-correction.json",
+  "actualBackupFile": "input/.市场笔记.ctd~",
+  "historicalBackupFileFieldWasFixtureMetadata": true,
+  "subsequentOperationsGatedOnCorrectedActualInputAndBackupVerification": true,
+  "historicalMissingAssertionHelperRetained": true
+}

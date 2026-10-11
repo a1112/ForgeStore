@@ -1,0 +1,57 @@
+{
+  "activated": true,
+  "metadataVersion": 42,
+  "rootVersion": 1,
+  "entries": 34,
+  "coreJobs": 242,
+  "fullStoreRows": 79,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-cherrytree-20261011.acceptance.json#cherrytree",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+        "size": 96911680,
+        "target": "cherrytree_1.7.2.1_win64_setup.exe",
+        "url": "https://github.com/giuspen/cherrytree/releases/download/v1.7.2/cherrytree_1.7.2.1_win64_setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "cherrytree"
+    },
+    "id": "cherrytree",
+    "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "CherryTree",
+      "zhCN": "CherryTree"
+    },
+    "origin": "https://github.com/giuspen/cherrytree/releases/tag/v1.7.2",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Giuseppe Penone",
+    "summary": {
+      "en": "Limited two-node XML note edit, save and fresh-process reopen tested with per-launcher Pango fontconfig backend; advanced note functions unverified.",
+      "zhCN": "逐启动器设置 Pango fontconfig 后端；有限两层 XML 笔记编辑、保存与新进程重开已测，高级功能未验收"
+    },
+    "version": "1.7.2.1"
+  },
+  "installed": {
+    "appId": "cherrytree",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "1.7.2.1"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "b19e4db8d234fea89e180a64aa11e7e22ec8fb94517fd488ca4a8173ef6c1586",
+    "coreJobs": 242,
+    "fullStoreRows": 79
+  },
+  "stage": "local-activation-before-independent-market-gui",
+  "subsequentCompletionEvidence": "2026-10-11-cherrytree-publication.json"
+}

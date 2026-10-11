@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "cherrytree",
+  "version": "1.7.2.1",
+  "observedGuiVersion": "1.7.2",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited two-node XML notes from Chinese-name small inputs, ordinary root replacement, ASCII child editing, GUI Save As and explicit fresh-process reopen; independent market generation, cached same-version update, exact original generation rollback and normal Core/Store restart.",
+  "launcherEnvironmentRepair": {
+    "PANGOCAIRO_BACKEND": "fc"
+  },
+  "coreCodeOrGlobalRuntimeChanged": false,
+  "marketInputUnchanged": false,
+  "marketInitialInputPreservedInAppBackup": true,
+  "missingInputAssertionAllowedReopenBeforeInspection": true,
+  "sqliteAndEncryptedNotesAccepted": false,
+  "directChineseKeyboardInputAccepted": false,
+  "bundleLicenseClosureVerified": false,
+  "signedCatalogue": "catalogue/candidate-v33/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 42,
+    "snapshot": 42,
+    "timestamp": 42
+  },
+  "catalogueEntries": 34,
+  "acceptedDistinctWindowsApplications": 32,
+  "excludedFixtures": 2,
+  "actualSignedTargets": 66,
+  "publicCatalogueFiles": 38,
+  "coreJobCount": 246,
+  "fullStoreRowCount": 81,
+  "acceptanceReceipt": "windows-cherrytree-20261011.acceptance.json",
+  "acceptanceReceiptSha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b",
+  "sourceEvidence": "2026-10-11-cherrytree-source.json",
+  "sourceEvidenceSha256": "a5517d7c8d6bc899ba893e7f73bb8eb106851f8f725299cebbafef981b486378",
+  "originalGuiEvidence": "2026-10-11-cherrytree-gui.json",
+  "originalGuiEvidenceSha256": "003746c95329ebd3c6dd4decc568a7764ccd28cc2a2161bfd62efa48d435af77",
+  "frozenOriginalSourceGuiAndReceiptBytesAndStageLabelsRetained": true,
+  "activationEvidence": "2026-10-11-cherrytree-activation.json",
+  "marketGuiEvidence": "2026-10-11-cherrytree-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-cherrytree-runtime-recovery.json",
+  "failureEvidence": "2026-10-11-cherrytree-failures.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-cherrytree-20261011.acceptance.json#cherrytree",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+        "size": 96911680,
+        "target": "cherrytree_1.7.2.1_win64_setup.exe",
+        "url": "https://github.com/giuspen/cherrytree/releases/download/v1.7.2/cherrytree_1.7.2.1_win64_setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "cherrytree"
+    },
+    "id": "cherrytree",
+    "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "CherryTree",
+      "zhCN": "CherryTree"
+    },
+    "origin": "https://github.com/giuspen/cherrytree/releases/tag/v1.7.2",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Giuseppe Penone",
+    "summary": {
+      "en": "Limited two-node XML note edit, save and fresh-process reopen tested with per-launcher Pango fontconfig backend; advanced note functions unverified.",
+      "zhCN": "逐启动器设置 Pango fontconfig 后端；有限两层 XML 笔记编辑、保存与新进程重开已测，高级功能未验收"
+    },
+    "version": "1.7.2.1"
+  },
+  "selectedOriginalGeneration": "gen-job-1791700398780-5",
+  "independentMarketGeneration": "gen-job-1791701246780-8",
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "storeGuiButtonsVerified": false,
+  "allOldSignedTargetsPreservedExceptCatalogueReplacement": true,
+  "rootBytesPreserved": true,
+  "tuftoolExplicitTrustedRootDownloadVerified": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "cherrytree",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "dd830034-b0c9-443a-bd6e-b8e035ff8305",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "cherrytree",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "6c185cff-320b-43d1-a6c9-537524ffb37f",
+      "state": "succeeded"
+    }
+  },
+  "beforeRollbackCheckpointSavedAndReadBack": true,
+  "beforeRollbackCoreJobs": 245,
+  "beforeRollbackStoreRows": 80,
+  "afterRollbackCoreJobs": 245,
+  "afterRollbackStoreRows": 81,
+  "normalRestartBeforeAndAfterCoreJobs": 246,
+  "normalRestartBeforeAndAfterStoreRows": 81,
+  "normalRestartFullFieldEqualityPassed": true,
+  "privateCheckpointPins": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "59db3943d6bdbb6b4a8c777afad30d66afb3c9fbd0eabca8ccac677c2da357e7",
+      "coreJobs": 246,
+      "fullStoreRows": 81
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "e94e61d09e8671fe80eb5fb5a05be17e9c34ad154b11cb680c8c2c214eceeea7",
+      "coreJobs": 246,
+      "fullStoreRows": 81
+    }
+  },
+  "outputPins": {
+    "original": {
+      "file": "output/formal-edited.ctd",
+      "sizeBytes": 711,
+      "sha256": "d24ef00be53cdeea5a7efc294045010f33849bba938f0255c11b1f441ef0330a",
+      "nodes": [
+        {
+          "name": "FormalRoot",
+          "text": "ForgeOS formal root\nSTATUS=AFTER\n"
+        },
+        {
+          "name": "FormalChild",
+          "text": "ForgeOS formal child\nVALUE=21\nAPPENDED=ORIGINAL\n"
+        }
+      ],
+      "base64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGNoZXJyeXRyZWU+CiAgPGJvb2ttYXJrcyBsaXN0PSIiLz4KICA8bm9kZSB1bmlxdWVfaWQ9IjEiIG1hc3Rlcl9pZD0iMCIgbmFtZT0iRm9ybWFsUm9vdCIgcHJvZ19sYW5nPSJjdXN0b20tY29sb3JzIiB0YWdzPSIiIHJlYWRvbmx5PSIwIiBub3NlYXJjaF9tZT0iMCIgbm9zZWFyY2hfY2g9IjAiIGN1c3RvbV9pY29uX2lkPSIwIiBpc19ib2xkPSIwIiBmb3JlZ3JvdW5kPSIiIHRzX2NyZWF0aW9uPSIxNzkxNjk5OTAzIiB0c19sYXN0c2F2ZT0iMTc5MTcwMDUyMCI+CiAgICA8cmljaF90ZXh0PkZvcmdlT1MgZm9ybWFsIHJvb3QKU1RBVFVTPUFGVEVSCjwvcmljaF90ZXh0PgogICAgPG5vZGUgdW5pcXVlX2lkPSIyIiBtYXN0ZXJfaWQ9IjAiIG5hbWU9IkZvcm1hbENoaWxkIiBwcm9nX2xhbmc9ImN1c3RvbS1jb2xvcnMiIHRhZ3M9IiIgcmVhZG9ubHk9IjAiIG5vc2VhcmNoX21lPSIwIiBub3NlYXJjaF9jaD0iMCIgY3VzdG9tX2ljb25faWQ9IjAiIGlzX2JvbGQ9IjAiIGZvcmVncm91bmQ9IiIgdHNfY3JlYXRpb249IjE3OTE3MDAxMjkiIHRzX2xhc3RzYXZlPSIxNzkxNzAwNjI4Ij4KICAgICAgPHJpY2hfdGV4dD5Gb3JnZU9TIGZvcm1hbCBjaGlsZApWQUxVRT0yMQpBUFBFTkRFRD1PUklHSU5BTAo8L3JpY2hfdGV4dD4KICAgIDwvbm9kZT4KICA8L25vZGU+CjwvY2hlcnJ5dHJlZT4K"
+    },
+    "market": {
+      "file": "output/market-edited.ctd",
+      "sizeBytes": 709,
+      "sha256": "1e94e00428f21e8dbefc7fcb1b92eaee08d2876a00f0d03c9c1bc5b259e4dce6",
+      "nodes": [
+        {
+          "name": "MarketRoot",
+          "text": "ForgeOS market root\nSTATUS=AFTER\n"
+        },
+        {
+          "name": "MarketChild",
+          "text": "ForgeOS market child\nVALUE=40\nAPPENDED=MARKET\n"
+        }
+      ],
+      "base64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGNoZXJyeXRyZWU+CiAgPGJvb2ttYXJrcyBsaXN0PSIiLz4KICA8bm9kZSB1bmlxdWVfaWQ9IjEiIG1hc3Rlcl9pZD0iMCIgbmFtZT0iTWFya2V0Um9vdCIgcHJvZ19sYW5nPSJjdXN0b20tY29sb3JzIiB0YWdzPSIiIHJlYWRvbmx5PSIwIiBub3NlYXJjaF9tZT0iMCIgbm9zZWFyY2hfY2g9IjAiIGN1c3RvbV9pY29uX2lkPSIwIiBpc19ib2xkPSIwIiBmb3JlZ3JvdW5kPSIiIHRzX2NyZWF0aW9uPSIxNzkxNjk5OTAzIiB0c19sYXN0c2F2ZT0iMTc5MTcwMTMzOSI+CiAgICA8cmljaF90ZXh0PkZvcmdlT1MgbWFya2V0IHJvb3QKU1RBVFVTPUFGVEVSCjwvcmljaF90ZXh0PgogICAgPG5vZGUgdW5pcXVlX2lkPSIyIiBtYXN0ZXJfaWQ9IjAiIG5hbWU9Ik1hcmtldENoaWxkIiBwcm9nX2xhbmc9ImN1c3RvbS1jb2xvcnMiIHRhZ3M9IiIgcmVhZG9ubHk9IjAiIG5vc2VhcmNoX21lPSIwIiBub3NlYXJjaF9jaD0iMCIgY3VzdG9tX2ljb25faWQ9IjAiIGlzX2JvbGQ9IjAiIGZvcmVncm91bmQ9IiIgdHNfY3JlYXRpb249IjE3OTE3MDAxMjkiIHRzX2xhc3RzYXZlPSIxNzkxNzAxMzY2Ij4KICAgICAgPHJpY2hfdGV4dD5Gb3JnZU9TIG1hcmtldCBjaGlsZApWQUxVRT00MApBUFBFTkRFRD1NQVJLRVQKPC9yaWNoX3RleHQ+CiAgICA8L25vZGU+CiAgPC9ub2RlPgo8L2NoZXJyeXRyZWU+Cg=="
+    }
+  },
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two small fixed two-node XML .ctd note inputs with Chinese filenames, root ordinary BEFORE to AFTER replacement, ASCII child body editing, GUI Save As to ASCII output paths and explicit new-process reopen were verified. Original input/output: 694/711 bytes. Market initial input 694, autosaved input 693, output 709 bytes; exact original input retained in the application backup.",
+    "Default Pango Win32 backend clipped menu/tree/body text in two fresh managed processes. Per-launcher PANGOCAIRO_BACKEND=fc restored tested readability; no Core code, global context, runtime, font, DLL or program byte changes. Exact defective function in Wine/GDI/Pango/Cairo is not established.",
+    "SQLite/encrypted notes, attachments, images, code boxes, tables, import/export, links, broad formatting/search, large notes, direct Chinese keyboard input and advanced features were not verified.",
+    "Main program GPL-3.0-or-later from fixed source. Installed licence matches fixed source after 15 CRLF normalizations, not raw bytes. Full GTK/Pango/Cairo/icons and bundled component licence closure, Authenticode/OpenPGP and reproducibility were not verified.",
+    "Guest online download, fresh-machine registration, configuration migration and cross-version upgrades were not verified.",
+    "Update and rollback submitted via Store IPC; GUI update/rollback button functionality not claimed.",
+    "Data preservation covers prior fixed acceptance data, diagnostic pins and new fixed inputs/outputs/executable/licence/config/registry/backup pins; not a traversal of every application filesystem file.",
+    "Market save helper printed inputUnchanged=false but lacked an assertion and submitted the reopen before inspection. Later mutations stopped until read-only actual-input/backup/history verification; corrected separate proof and checkpoint preceded rollback. Do not claim every earlier dependency gate worked."
+  ],
+  "backupPathCorrectionEvidence": "2026-10-11-cherrytree-backup-path-correction.json",
+  "actualBackupFile": "input/.市场笔记.ctd~",
+  "historicalBackupFileFieldWasFixtureMetadata": true
+}

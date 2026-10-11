@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "cherrytree",
+  "passed": true,
+  "acceptedDistinctWindowsApps": 32,
+  "unresolvedCandidates": 12,
+  "candidate": "candidate-v33",
+  "rootVersion": 1,
+  "onlineRoles": 42,
+  "coreJobCount": 246,
+  "fullStoreRowCount": 81,
+  "checks": {
+    "realFiniteGuiOriginalAndIndependentMarketPassed": true,
+    "allFiveFormalGuiNormalQuitExitZeroAndWineserverStop": true,
+    "sameVersionPrecachedIpcUpdateAndExactRollback": true,
+    "beforeRollbackFullCheckpointSavedReadBack": true,
+    "normalCoreStoreRestartFullFieldEquality": true,
+    "oldTrustAndFrozenSignedHistoryPreserved": true,
+    "oldLedgerRecordsQueueAndResolvedHistoryPreserved": true,
+    "marketInputUnchanged": false,
+    "marketAutosavedInputAndOriginalBackupSeparatelyPinned": true,
+    "helperMissingAssertionAllowedReopenBeforeInspection": true,
+    "allEarlierDependencyGatesWorkedClaimed": false,
+    "subsequentMutationsGatedOnCorrectedActualInputAndBackupVerification": true,
+    "actualBackupPathClarifiedBySeparateReceipt": true,
+    "guiUpdateRollbackButtonsVerified": false,
+    "advancedFunctionsOrFullLicenseClosureClaimed": false
+  },
+  "checkpointSha256": "e94e61d09e8671fe80eb5fb5a05be17e9c34ad154b11cb680c8c2c214eceeea7",
+  "filePreservationScope": "Prior fixed acceptance files, retained diagnostic pins and new input/output/program/licence/config/registry/initial-backup pins; not all application filesystem files.",
+  "currentStateVerification": {
+    "passed": true,
+    "coreJobs": 246,
+    "fullStoreRows": 81,
+    "allTerminal": true,
+    "completeHistoryFieldEquality": true,
+    "allGenerationsCoreConfigAndTrustPreserved": true,
+    "fixedAcceptanceDataAndNewAppRegistryPinsPreserved": true,
+    "allApplicationFilesystemFilesTraversed": false,
+    "acceptedDistinctWindowsApps": 32,
+    "rootVersion": 1,
+    "onlineRoles": 42,
+    "candidate": "candidate-v33",
+    "selectedGeneration": "gen-job-1791700398780-5",
+    "afterRestartCheckpointSha256": "e94e61d09e8671fe80eb5fb5a05be17e9c34ad154b11cb680c8c2c214eceeea7",
+    "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+    "guiAndFreshReopenPassed": true,
+    "independentMarketGenerationPassed": true,
+    "sameVersionCachedUpdatePassed": true,
+    "exactRollbackPassed": true,
+    "normalServiceRestartPassed": true,
+    "sqliteAndEncryptedNotesAccepted": false,
+    "marketInputUnchanged": false,
+    "directChineseKeyboardInputAccepted": false
+  },
+  "independentReview": {
+    "file": "2026-10-11-cherrytree-independent-review.json",
+    "sha256": "670d12c8094509eae4a1b368243eb8b90a10d50607a2910c165ddc16d1b62cd0",
+    "assertionCount": 1000,
+    "actualSignedTargets": 66,
+    "publicCatalogueFiles": 38,
+    "oldImmutableFrozenFiles": 196,
+    "originalNewFrozenFiles": 23,
+    "xmlFixtures": 5,
+    "screenshotsVisuallyChecked": 28,
+    "findings": [],
+    "resolvedBackupPathFinding": true,
+    "reviewerInitialWrongPredicatesRetainedInReviewHistory": true,
+    "fullPrivateCheckpointBodiesIndependentlyRead": false,
+    "guiOrRuntimeIndependentlyReexecuted": false
+  },
+  "evidencePins": {
+    "2026-10-11-cherrytree-activation.json": {
+      "sizeBytes": 1995,
+      "sha256": "efb624f601bcb7f95e9408783fe3bcebfcd04bddaf1529d25019d65f72616d5d"
+    },
+    "2026-10-11-cherrytree-backup-path-correction.json": {
+      "sizeBytes": 942,
+      "sha256": "6aa6d967477000cade53d51f367b252d720d5a6b7dbb58cbe359de6562bae301"
+    },
+    "2026-10-11-cherrytree-current-state.json": {
+      "sizeBytes": 959,
+      "sha256": "4e85d9fa48470372d2272a0beb72ee19d1995acc00af9db9055473eaf33cfc92"
+    },
+    "2026-10-11-cherrytree-failures.json": {
+      "sizeBytes": 7001,
+      "sha256": "859160944f284cf693507be2b51a35a7f0b850e96aadbb0c02c0ac2f2c43090f"
+    },
+    "2026-10-11-cherrytree-gui.json": {
+      "sizeBytes": 51502,
+      "sha256": "003746c95329ebd3c6dd4decc568a7764ccd28cc2a2161bfd62efa48d435af77"
+    },
+    "2026-10-11-cherrytree-independent-review.json": {
+      "sizeBytes": 173017,
+      "sha256": "670d12c8094509eae4a1b368243eb8b90a10d50607a2910c165ddc16d1b62cd0"
+    },
+    "2026-10-11-cherrytree-market-gui.json": {
+      "sizeBytes": 32232,
+      "sha256": "a3fcc1d147bb71412e30a8bef01aec3a119ffb057b06b6581322fe9d6b4745e3"
+    },
+    "2026-10-11-cherrytree-market-save-history.json": {
+      "sizeBytes": 12463,
+      "sha256": "6a1b422fbf5b82dd81d962e93139c064c5dcb7ae2d8c314fa6a4ff51ee6d3485"
+    },
+    "2026-10-11-cherrytree-publication.json": {
+      "sizeBytes": 10035,
+      "sha256": "d8f7743a0d8adfaed3d877197e3820599a3bcec27f082a57a914a0fa699f0e02"
+    },
+    "2026-10-11-cherrytree-runtime-recovery.json": {
+      "sizeBytes": 26430,
+      "sha256": "d5c6443e6bdf2e4d56649c9a6c1327f47be2e6fdbd3f6f33dd07ff307b9537e2"
+    },
+    "2026-10-11-cherrytree-source.json": {
+      "sizeBytes": 3010,
+      "sha256": "a5517d7c8d6bc899ba893e7f73bb8eb106851f8f725299cebbafef981b486378"
+    },
+    "windows-cherrytree-20261011.acceptance.json": {
+      "sizeBytes": 7460,
+      "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+    }
+  },
+  "signingKeysPasswordsCredentialsAndFullPrivateCheckpointsCommitted": false
+}

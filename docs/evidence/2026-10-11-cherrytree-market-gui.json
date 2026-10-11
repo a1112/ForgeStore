@@ -1,0 +1,787 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "cherrytree",
+  "version": "1.7.2.1",
+  "stage": "independent-market-gui-and-lifecycle-passed",
+  "originalGeneration": {
+    "generationId": "gen-job-1791700398780-5",
+    "fixture": {
+      "mode": "original",
+      "generationId": "gen-job-1791700398780-5",
+      "input": {
+        "file": "input/中文笔记.ctd",
+        "sizeBytes": 694,
+        "sha256": "ee4f40d3dfefe0c59bb59ad742aa606acc9a42a530593c538ba5a2b076e9a374"
+      },
+      "nodes": [
+        {
+          "name": "FormalRoot",
+          "text": "ForgeOS formal root\nSTATUS=BEFORE\n"
+        },
+        {
+          "name": "FormalChild",
+          "text": "ForgeOS formal child\nVALUE=21\n"
+        }
+      ],
+      "expectedNodes": [
+        {
+          "name": "FormalRoot",
+          "text": "ForgeOS formal root\nSTATUS=AFTER\n"
+        },
+        {
+          "name": "FormalChild",
+          "text": "ForgeOS formal child\nVALUE=21\nAPPENDED=ORIGINAL\n"
+        }
+      ],
+      "outputExpected": "output/formal-edited.ctd",
+      "outputDirectoryEmptyBeforeGui": true,
+      "helpersCreateInputsOnly": true,
+      "formalInstallJob": {
+        "applicationId": "cherrytree",
+        "createdAtMilliseconds": 1791700398780,
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 66563,
+            "requestId": "job-1791700398780-5",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 22183,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791700398780-5/prefix",
+            "requestId": "job-1791700398780-5",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 22225,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791700398780-5",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791700398780-5",
+        "id": "job-1791700398780-5",
+        "inspection": {
+          "architecture": "x86",
+          "entryPointRva": 728672,
+          "fileDigest": "sha256:81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+          "fileSizeBytes": 96911680,
+          "format": "pe32",
+          "imageKind": "executable",
+          "importLibraries": [
+            "advapi32.dll",
+            "comctl32.dll",
+            "kernel32.dll",
+            "oleaut32.dll",
+            "user32.dll"
+          ],
+          "machineCode": 332,
+          "schemaVersion": "1",
+          "sections": [
+            {
+              "executable": true,
+              "name": ".text",
+              "rawDataSize": 719360,
+              "readable": true,
+              "virtualAddress": 4096,
+              "virtualSize": 718860,
+              "writable": false
+            },
+            {
+              "executable": true,
+              "name": ".itext",
+              "rawDataSize": 6656,
+              "readable": true,
+              "virtualAddress": 724992,
+              "virtualSize": 6348,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".data",
+              "rawDataSize": 16384,
+              "readable": true,
+              "virtualAddress": 733184,
+              "virtualSize": 16188,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".bss",
+              "rawDataSize": 0,
+              "readable": true,
+              "virtualAddress": 749568,
+              "virtualSize": 29516,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".idata",
+              "rawDataSize": 4608,
+              "readable": true,
+              "virtualAddress": 782336,
+              "virtualSize": 4200,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".didata",
+              "rawDataSize": 512,
+              "readable": true,
+              "virtualAddress": 790528,
+              "virtualSize": 420,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".edata",
+              "rawDataSize": 512,
+              "readable": true,
+              "virtualAddress": 794624,
+              "virtualSize": 113,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".tls",
+              "rawDataSize": 0,
+              "readable": true,
+              "virtualAddress": 798720,
+              "virtualSize": 24,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".rdata",
+              "rawDataSize": 512,
+              "readable": true,
+              "virtualAddress": 802816,
+              "virtualSize": 93,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".reloc",
+              "rawDataSize": 73728,
+              "readable": true,
+              "virtualAddress": 806912,
+              "virtualSize": 73708,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".rsrc",
+              "rawDataSize": 92672,
+              "readable": true,
+              "virtualAddress": 880640,
+              "virtualSize": 92600,
+              "writable": false
+            }
+          ],
+          "subsystem": "windowsGui",
+          "subsystemCode": 2
+        },
+        "kind": "install",
+        "launchPlan": {
+          "decisionTrace": [
+            "runtime provider wine-linux-x86-64-preview selected as wine",
+            "translator native selected",
+            "graphics backend wined3d selected",
+            "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+            "Bottle CJK font pinned by digest",
+            "guest-artifact sha256:81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898 pinned",
+            "inspection i386 windowsGui accepted"
+          ],
+          "graphics": {
+            "backend": "wined3d",
+            "version": "11.14"
+          },
+          "guestArtifact": {
+            "architecture": "i386",
+            "digest": "sha256:81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+            "imageKind": "executable",
+            "inspectionSchemaVersion": "1",
+            "originalName": "cherrytree_1.7.2.1_win64_setup.exe",
+            "sizeBytes": 96911680,
+            "storedPath": "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+            "subsystem": "windowsGui"
+          },
+          "lifecycle": {
+            "terminationGraceMilliseconds": 3000,
+            "wineserver": {
+              "executable": "/usr/bin/wineserver",
+              "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791700398780-5/prefix"
+            }
+          },
+          "process": {
+            "arguments": [
+              "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+              "/VERYSILENT",
+              "/SUPPRESSMSGBOXES",
+              "/NORESTART",
+              "/SP-",
+              "/TASKS=",
+              "/DIR=C:\\CherryTree"
+            ],
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "DISPLAY": ":0",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791700398780-5/prefix",
+              "WINESERVER": "/usr/bin/wineserver",
+              "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+            },
+            "executable": "/usr/bin/wine",
+            "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791700398780-5"
+          },
+          "requestId": "job-1791700398780-5",
+          "runtime": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "sandbox": {
+            "network": "deny",
+            "profile": "desktop"
+          },
+          "schemaVersion": "1",
+          "translator": {
+            "provider": "native"
+          }
+        },
+        "schemaVersion": "1",
+        "status": "succeeded",
+        "updatedAtMilliseconds": 1791700430913
+      },
+      "definition": {
+        "schemaVersion": "1",
+        "id": "cherrytree",
+        "name": "CherryTree",
+        "version": "1.7.2.1",
+        "publisher": "Giuseppe Penone",
+        "category": "productivity",
+        "bottleId": "gui-cherrytree",
+        "installer": {
+          "fileName": "cherrytree_1.7.2.1_win64_setup.exe",
+          "sha256": "81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+          "arguments": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/TASKS=",
+            "/DIR=C:\\CherryTree"
+          ]
+        },
+        "launchers": [
+          {
+            "id": "main",
+            "name": "CherryTree",
+            "executable": "CherryTree/ucrt64/bin/cherrytree.exe",
+            "environment": {
+              "PANGOCAIRO_BACKEND": "fc"
+            }
+          }
+        ],
+        "compatibilityRating": "unknown",
+        "tags": [
+          "rolling-1000",
+          "managed-inno"
+        ]
+      },
+      "checkpoint": {
+        "file": "after-formal-install.json",
+        "sha256": "cd061c8dfc1bff1b99d4017289aa8d7b090e8649928d4a98e8197453fbb2ce1e",
+        "coreJobs": 240,
+        "fullStoreRows": 79
+      }
+    },
+    "savedOutput": {
+      "file": "output/formal-edited.ctd",
+      "sizeBytes": 711,
+      "sha256": "d24ef00be53cdeea5a7efc294045010f33849bba938f0255c11b1f441ef0330a",
+      "nodes": [
+        {
+          "name": "FormalRoot",
+          "text": "ForgeOS formal root\nSTATUS=AFTER\n"
+        },
+        {
+          "name": "FormalChild",
+          "text": "ForgeOS formal child\nVALUE=21\nAPPENDED=ORIGINAL\n"
+        }
+      ],
+      "base64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGNoZXJyeXRyZWU+CiAgPGJvb2ttYXJrcyBsaXN0PSIiLz4KICA8bm9kZSB1bmlxdWVfaWQ9IjEiIG1hc3Rlcl9pZD0iMCIgbmFtZT0iRm9ybWFsUm9vdCIgcHJvZ19sYW5nPSJjdXN0b20tY29sb3JzIiB0YWdzPSIiIHJlYWRvbmx5PSIwIiBub3NlYXJjaF9tZT0iMCIgbm9zZWFyY2hfY2g9IjAiIGN1c3RvbV9pY29uX2lkPSIwIiBpc19ib2xkPSIwIiBmb3JlZ3JvdW5kPSIiIHRzX2NyZWF0aW9uPSIxNzkxNjk5OTAzIiB0c19sYXN0c2F2ZT0iMTc5MTcwMDUyMCI+CiAgICA8cmljaF90ZXh0PkZvcmdlT1MgZm9ybWFsIHJvb3QKU1RBVFVTPUFGVEVSCjwvcmljaF90ZXh0PgogICAgPG5vZGUgdW5pcXVlX2lkPSIyIiBtYXN0ZXJfaWQ9IjAiIG5hbWU9IkZvcm1hbENoaWxkIiBwcm9nX2xhbmc9ImN1c3RvbS1jb2xvcnMiIHRhZ3M9IiIgcmVhZG9ubHk9IjAiIG5vc2VhcmNoX21lPSIwIiBub3NlYXJjaF9jaD0iMCIgY3VzdG9tX2ljb25faWQ9IjAiIGlzX2JvbGQ9IjAiIGZvcmVncm91bmQ9IiIgdHNfY3JlYXRpb249IjE3OTE3MDAxMjkiIHRzX2xhc3RzYXZlPSIxNzkxNzAwNjI4Ij4KICAgICAgPHJpY2hfdGV4dD5Gb3JnZU9TIGZvcm1hbCBjaGlsZApWQUxVRT0yMQpBUFBFTkRFRD1PUklHSU5BTAo8L3JpY2hfdGV4dD4KICAgIDwvbm9kZT4KICA8L25vZGU+CjwvY2hlcnJ5dHJlZT4K"
+    },
+    "finalDataAndConfigurationPins": {
+      "drive_c/ForgeQA/input/中文笔记.ctd": {
+        "sizeBytes": 694,
+        "sha256": "ee4f40d3dfefe0c59bb59ad742aa606acc9a42a530593c538ba5a2b076e9a374"
+      },
+      "drive_c/ForgeQA/output/formal-edited.ctd": {
+        "sizeBytes": 711,
+        "sha256": "d24ef00be53cdeea5a7efc294045010f33849bba938f0255c11b1f441ef0330a"
+      },
+      "drive_c/CherryTree/ucrt64/bin/cherrytree.exe": {
+        "sizeBytes": 8585000,
+        "sha256": "a4e3a57a7c2fbcd96542866b17cc08f0b634fbd463c760e27fb92b5c10d131e6"
+      },
+      "drive_c/CherryTree/license.txt": {
+        "sizeBytes": 731,
+        "sha256": "1ff4f4c9590422a5d2f195c1d42bca6643cd869e253c32ab76a2e52e73aa129a"
+      },
+      "drive_c/users/forge/AppData/Local/cherrytree/config.cfg": {
+        "sizeBytes": 5617,
+        "sha256": "ff01e43ffbd8d23b9f7b9dd196b207e2c8f58c3865c3d01a6091523db122b518"
+      },
+      "user.reg": {
+        "sizeBytes": 101392,
+        "sha256": "686c8ae6087e80215b5810405fdb38b2fc59631eb8b136929b395212a10970e3"
+      },
+      "system.reg": {
+        "sizeBytes": 3426694,
+        "sha256": "76b60413afb9cdb45078ec793341de5d5a1f489d9de744a541bc6c8c6bfac79c"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "ef9f841ae30bbf3e46e43d68734e862b6ada904db1e5d0761a4fed14509477c7"
+      }
+    }
+  },
+  "independentMarketGeneration": {
+    "generationId": "gen-job-1791701246780-8",
+    "fixture": {
+      "generationId": "gen-job-1791701246780-8",
+      "input": {
+        "file": "input/市场笔记.ctd",
+        "sizeBytes": 693,
+        "sha256": "c1dffa219231a46c8d6f6f92cc9a77da344ae9222b76f433265d28ac9642beac"
+      },
+      "expectedNodes": [
+        {
+          "name": "MarketRoot",
+          "text": "ForgeOS market root\nSTATUS=AFTER\n"
+        },
+        {
+          "name": "MarketChild",
+          "text": "ForgeOS market child\nVALUE=40\nAPPENDED=MARKET\n"
+        }
+      ],
+      "outputExpected": "output/market-edited.ctd",
+      "outputDirectoryEmptyBeforeGui": true,
+      "helpersCreateInputsOnly": true,
+      "initialInput": {
+        "file": "input/市场笔记.ctd",
+        "sha256": "062abf2c29ad2a690f820921a00548cb94add2cbe7ceb3454921bf31f4f180e1",
+        "sizeBytes": 694
+      }
+    },
+    "savedOutput": {
+      "file": "output/market-edited.ctd",
+      "sizeBytes": 709,
+      "sha256": "1e94e00428f21e8dbefc7fcb1b92eaee08d2876a00f0d03c9c1bc5b259e4dce6",
+      "nodes": [
+        {
+          "name": "MarketRoot",
+          "text": "ForgeOS market root\nSTATUS=AFTER\n"
+        },
+        {
+          "name": "MarketChild",
+          "text": "ForgeOS market child\nVALUE=40\nAPPENDED=MARKET\n"
+        }
+      ],
+      "base64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGNoZXJyeXRyZWU+CiAgPGJvb2ttYXJrcyBsaXN0PSIiLz4KICA8bm9kZSB1bmlxdWVfaWQ9IjEiIG1hc3Rlcl9pZD0iMCIgbmFtZT0iTWFya2V0Um9vdCIgcHJvZ19sYW5nPSJjdXN0b20tY29sb3JzIiB0YWdzPSIiIHJlYWRvbmx5PSIwIiBub3NlYXJjaF9tZT0iMCIgbm9zZWFyY2hfY2g9IjAiIGN1c3RvbV9pY29uX2lkPSIwIiBpc19ib2xkPSIwIiBmb3JlZ3JvdW5kPSIiIHRzX2NyZWF0aW9uPSIxNzkxNjk5OTAzIiB0c19sYXN0c2F2ZT0iMTc5MTcwMTMzOSI+CiAgICA8cmljaF90ZXh0PkZvcmdlT1MgbWFya2V0IHJvb3QKU1RBVFVTPUFGVEVSCjwvcmljaF90ZXh0PgogICAgPG5vZGUgdW5pcXVlX2lkPSIyIiBtYXN0ZXJfaWQ9IjAiIG5hbWU9Ik1hcmtldENoaWxkIiBwcm9nX2xhbmc9ImN1c3RvbS1jb2xvcnMiIHRhZ3M9IiIgcmVhZG9ubHk9IjAiIG5vc2VhcmNoX21lPSIwIiBub3NlYXJjaF9jaD0iMCIgY3VzdG9tX2ljb25faWQ9IjAiIGlzX2JvbGQ9IjAiIGZvcmVncm91bmQ9IiIgdHNfY3JlYXRpb249IjE3OTE3MDAxMjkiIHRzX2xhc3RzYXZlPSIxNzkxNzAxMzY2Ij4KICAgICAgPHJpY2hfdGV4dD5Gb3JnZU9TIG1hcmtldCBjaGlsZApWQUxVRT00MApBUFBFTkRFRD1NQVJLRVQKPC9yaWNoX3RleHQ+CiAgICA8L25vZGU+CiAgPC9ub2RlPgo8L2NoZXJyeXRyZWU+Cg=="
+    },
+    "finalDataAndConfigurationPins": {
+      "drive_c/ForgeQA/input/市场笔记.ctd": {
+        "sizeBytes": 693,
+        "sha256": "c1dffa219231a46c8d6f6f92cc9a77da344ae9222b76f433265d28ac9642beac"
+      },
+      "drive_c/ForgeQA/output/market-edited.ctd": {
+        "sizeBytes": 709,
+        "sha256": "1e94e00428f21e8dbefc7fcb1b92eaee08d2876a00f0d03c9c1bc5b259e4dce6"
+      },
+      "drive_c/CherryTree/ucrt64/bin/cherrytree.exe": {
+        "sizeBytes": 8585000,
+        "sha256": "a4e3a57a7c2fbcd96542866b17cc08f0b634fbd463c760e27fb92b5c10d131e6"
+      },
+      "drive_c/CherryTree/license.txt": {
+        "sizeBytes": 731,
+        "sha256": "1ff4f4c9590422a5d2f195c1d42bca6643cd869e253c32ab76a2e52e73aa129a"
+      },
+      "drive_c/users/forge/AppData/Local/cherrytree/config.cfg": {
+        "sizeBytes": 5620,
+        "sha256": "379e38d7c13e8e78b580a9525200b46199b1c2b38660797348a49e7f140acc92"
+      },
+      "drive_c/ForgeQA/input/.市场笔记.ctd~": {
+        "sizeBytes": 694,
+        "sha256": "062abf2c29ad2a690f820921a00548cb94add2cbe7ceb3454921bf31f4f180e1"
+      },
+      "user.reg": {
+        "sizeBytes": 101392,
+        "sha256": "802263b00779cfea73c4d4da39710bd1f03481d2ad8fe6d544460def1b0d8f56"
+      },
+      "system.reg": {
+        "sizeBytes": 3426694,
+        "sha256": "587ec7d4f0fc452f0116959af44e1e31da5aca2b68554de3b4b77cbddd4b0f53"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "ea282e1e3dffd2c0d4abf7a5c6f525d7f7434464d0238e5b95a32d271eeac619"
+      }
+    }
+  },
+  "marketGuiJobs": {
+    "launch": {
+      "id": "job-1791701301732-9",
+      "generationId": "gen-job-1791701246780-8",
+      "status": "succeeded",
+      "kind": "launch",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 68834,
+          "requestId": "job-1791701301732-9",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 176184,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791701246780-8/prefix",
+          "requestId": "job-1791701301732-9",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 176226,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791701301732-9",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "reopen": {
+      "id": "job-1791701496984-10",
+      "generationId": "gen-job-1791701246780-8",
+      "status": "succeeded",
+      "kind": "launch",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 69255,
+          "requestId": "job-1791701496984-10",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 44957,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791701246780-8/prefix",
+          "requestId": "job-1791701496984-10",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 44979,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791701496984-10",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  },
+  "marketInstallation": {
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "cherrytree",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "dd830034-b0c9-443a-bd6e-b8e035ff8305",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791701246780-8",
+    "originalGenerationId": "gen-job-1791700398780-5",
+    "generationId": "gen-job-1791701246780-8",
+    "newGenerationDistinct": true,
+    "oldFullFieldsPreserved": true,
+    "fixture": {
+      "generationId": "gen-job-1791701246780-8",
+      "input": {
+        "file": "input/市场笔记.ctd",
+        "sha256": "062abf2c29ad2a690f820921a00548cb94add2cbe7ceb3454921bf31f4f180e1",
+        "sizeBytes": 694
+      },
+      "expectedNodes": [
+        {
+          "name": "MarketRoot",
+          "text": "ForgeOS market root\nSTATUS=AFTER\n"
+        },
+        {
+          "name": "MarketChild",
+          "text": "ForgeOS market child\nVALUE=40\nAPPENDED=MARKET\n"
+        }
+      ],
+      "outputExpected": "output/market-edited.ctd",
+      "outputDirectoryEmptyBeforeGui": true,
+      "helpersCreateInputsOnly": true
+    },
+    "guiJobId": "job-1791701301732-9",
+    "guiStatus": "running",
+    "checkpoint": {
+      "file": "after-market-install.json",
+      "sha256": "092c4e0096fefd206b21a4d2afb57b887f9af111f7959802ee2a7deb0cc5a396",
+      "coreJobs": 243,
+      "fullStoreRows": 80
+    }
+  },
+  "marketInitialSaveProof": true,
+  "actualAutosavedInput": {
+    "file": "input/市场笔记.ctd",
+    "sizeBytes": 693,
+    "sha256": "c1dffa219231a46c8d6f6f92cc9a77da344ae9222b76f433265d28ac9642beac",
+    "base64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGNoZXJyeXRyZWU+CiAgPGJvb2ttYXJrcyBsaXN0PSIiLz4KICA8bm9kZSB1bmlxdWVfaWQ9IjEiIG1hc3Rlcl9pZD0iMCIgbmFtZT0iTWFya2V0Um9vdCIgcHJvZ19sYW5nPSJjdXN0b20tY29sb3JzIiB0YWdzPSIiIHJlYWRvbmx5PSIwIiBub3NlYXJjaF9tZT0iMCIgbm9zZWFyY2hfY2g9IjAiIGN1c3RvbV9pY29uX2lkPSIwIiBpc19ib2xkPSIwIiBmb3JlZ3JvdW5kPSIiIHRzX2NyZWF0aW9uPSIxNzkxNjk5OTAzIiB0c19sYXN0c2F2ZT0iMTc5MTcwMTMzOSI+CiAgICA8cmljaF90ZXh0PkZvcmdlT1MgbWFya2V0IHJvb3QKU1RBVFVTPUFGVEVSCjwvcmljaF90ZXh0PgogICAgPG5vZGUgdW5pcXVlX2lkPSIyIiBtYXN0ZXJfaWQ9IjAiIG5hbWU9Ik1hcmtldENoaWxkIiBwcm9nX2xhbmc9ImN1c3RvbS1jb2xvcnMiIHRhZ3M9IiIgcmVhZG9ubHk9IjAiIG5vc2VhcmNoX21lPSIwIiBub3NlYXJjaF9jaD0iMCIgY3VzdG9tX2ljb25faWQ9IjAiIGlzX2JvbGQ9IjAiIGZvcmVncm91bmQ9IiIgdHNfY3JlYXRpb249IjE3OTE3MDAxMjkiIHRzX2xhc3RzYXZlPSIxNzkxNzAwMTM0Ij4KICAgICAgPHJpY2hfdGV4dD5Gb3JnZU9TIG1hcmtldCBjaGlsZApWQUxVRT00MAo8L3JpY2hfdGV4dD4KICAgIDwvbm9kZT4KICA8L25vZGU+CjwvY2hlcnJ5dHJlZT4K"
+  },
+  "initialInputBackup": {
+    "file": "input/市场笔记.ctd",
+    "sha256": "062abf2c29ad2a690f820921a00548cb94add2cbe7ceb3454921bf31f4f180e1",
+    "sizeBytes": 694,
+    "base64": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPGNoZXJyeXRyZWU+CiAgPGJvb2ttYXJrcyBsaXN0PSIiIC8+CiAgPG5vZGUgdW5pcXVlX2lkPSIxIiBtYXN0ZXJfaWQ9IjAiIG5hbWU9Ik1hcmtldFJvb3QiIHByb2dfbGFuZz0iY3VzdG9tLWNvbG9ycyIgdGFncz0iIiByZWFkb25seT0iMCIgbm9zZWFyY2hfbWU9IjAiIG5vc2VhcmNoX2NoPSIwIiBjdXN0b21faWNvbl9pZD0iMCIgaXNfYm9sZD0iMCIgZm9yZWdyb3VuZD0iIiB0c19jcmVhdGlvbj0iMTc5MTY5OTkwMyIgdHNfbGFzdHNhdmU9IjE3OTE3MDAxMjkiPgogICAgPHJpY2hfdGV4dD5Gb3JnZU9TIG1hcmtldCByb290ClNUQVRVUz1CRUZPUkUKPC9yaWNoX3RleHQ+CiAgICA8bm9kZSB1bmlxdWVfaWQ9IjIiIG1hc3Rlcl9pZD0iMCIgbmFtZT0iTWFya2V0Q2hpbGQiIHByb2dfbGFuZz0iY3VzdG9tLWNvbG9ycyIgdGFncz0iIiByZWFkb25seT0iMCIgbm9zZWFyY2hfbWU9IjAiIG5vc2VhcmNoX2NoPSIwIiBjdXN0b21faWNvbl9pZD0iMCIgaXNfYm9sZD0iMCIgZm9yZWdyb3VuZD0iIiB0c19jcmVhdGlvbj0iMTc5MTcwMDEyOSIgdHNfbGFzdHNhdmU9IjE3OTE3MDAxMzQiPgogICAgICA8cmljaF90ZXh0PkZvcmdlT1MgbWFya2V0IGNoaWxkClZBTFVFPTQwCjwvcmljaF90ZXh0PgogICAgPC9ub2RlPgogIDwvbm9kZT4KPC9jaGVycnl0cmVlPg=="
+  },
+  "inputUnchanged": false,
+  "autosavedInputNodes": [
+    {
+      "name": "MarketRoot",
+      "text": "ForgeOS market root\nSTATUS=AFTER\n"
+    },
+    {
+      "name": "MarketChild",
+      "text": "ForgeOS market child\nVALUE=40\n"
+    }
+  ],
+  "helperMissingInputAssertionAllowedReopenBeforeInspection": true,
+  "rollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "cherrytree",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "6c185cff-320b-43d1-a6c9-537524ffb37f",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791700398780-5",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 245,
+    "beforeRollbackStoreRows": 80,
+    "afterRollbackCoreJobs": 245,
+    "afterRollbackStoreRows": 81,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "a331866ae61bee2b9877181f1c97b408f6ac443c1865f5cbccf665b0c73cc600",
+      "coreJobs": 245,
+      "fullStoreRows": 81
+    }
+  },
+  "rollbackGuiJob": {
+    "id": "job-1791701592397-11",
+    "generationId": "gen-job-1791700398780-5",
+    "kind": "launch",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 69946,
+        "requestId": "job-1791701592397-11",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 236129,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791700398780-5/prefix",
+        "requestId": "job-1791701592397-11",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 236171,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791701592397-11",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "screenshots": {
+    "01-start.jpg": {
+      "sizeBytes": 129166,
+      "sha256": "f8911e2c0277ffe61eb8228231efb2eb6ffffb946c8b4f9b9f295cdd48d91634"
+    },
+    "02-original-root.jpg": {
+      "sizeBytes": 129892,
+      "sha256": "5e86ea80958484625b8d716401c89226078547f63e509470272dfc7b598878e4"
+    },
+    "03-autosave-storage-rendering.jpg": {
+      "sizeBytes": 181304,
+      "sha256": "ddfdb8ea68392309095757c2a554ced75d0778a14c892f62c3f17044253757ec"
+    },
+    "04-native-save-dialog.jpg": {
+      "sizeBytes": 129434,
+      "sha256": "359a6aaff495e6b7594980e0ebb7836062a92417fcac78e9db1da38819640fbc"
+    },
+    "05-child-saved-rendering.jpg": {
+      "sizeBytes": 137150,
+      "sha256": "4d2827dc6abc6fc39748f7359b2807e9bf9f8173e1f14b75cd7af1f2e271abff"
+    },
+    "06-child-save-complete.jpg": {
+      "sizeBytes": 136903,
+      "sha256": "321983743a10dcabbcba16fbdeae6c46a9d1689cf563a9967267a8fbe85008db"
+    },
+    "07-fresh-process-child-rendering.jpg": {
+      "sizeBytes": 136829,
+      "sha256": "1a256a2f1eb0c41539c5b3fb86598b1e09f924c0c796ff5750c323e2ea96130c"
+    },
+    "08-fresh-process-root-rendering.jpg": {
+      "sizeBytes": 135405,
+      "sha256": "f21739cdd831a51bc20e05a3ad3751d8476aab4d884158bd00fe6729bd00411c"
+    },
+    "09-fc-diagnostic-root-readable.jpg": {
+      "sizeBytes": 136786,
+      "sha256": "72e32513b10fe198b735b43ddaba81bf8895ce74ffa01532e3c182322d544e8b"
+    },
+    "10-fc-diagnostic-child-readable.jpg": {
+      "sizeBytes": 139695,
+      "sha256": "3edc53fead882ab90b37cd367a5ecf09c088719b5934cd8208f1c0cb5ea267e7"
+    },
+    "11-formal-original-input.jpg": {
+      "sizeBytes": 134361,
+      "sha256": "46fed5746db50403e89afe17f93cd5d12acc3bba934e7a4c8ce87ab81fb3a0b4"
+    },
+    "12-formal-original-replace.jpg": {
+      "sizeBytes": 149689,
+      "sha256": "ee06e9f591aaa23d3cd02e1f9caff96afa36fe83c6ea19bba660e78718439eae"
+    },
+    "13-formal-original-save-root.jpg": {
+      "sizeBytes": 135891,
+      "sha256": "6c4ff598f4b0e9e72d37ff59917e2ab9b39b0256a80ad21ef397db9449d4f225"
+    },
+    "14-formal-child-append-before-linebreak.jpg": {
+      "sizeBytes": 141201,
+      "sha256": "1b4f34ebad72bc18538b01e893399141d68595b5ad6708359ee0b8119e6b1942"
+    },
+    "15-formal-child-misplaced-linebreak.jpg": {
+      "sizeBytes": 141130,
+      "sha256": "a9e8ff20597c90b56f5317bac441f5d82278fe75d68b6d7b68e6d2c935be96d8"
+    },
+    "16-formal-original-child-corrected.jpg": {
+      "sizeBytes": 141081,
+      "sha256": "8e228ff487e68d151493b10d6ba78b3135583412710823ef357dbde896c53f54"
+    },
+    "17-formal-reopen-child.jpg": {
+      "sizeBytes": 141399,
+      "sha256": "9d475c7a830771c299a28fc38138978a04077a9ed4bae195f11c76963d01cb5b"
+    },
+    "18-formal-reopen-root.jpg": {
+      "sizeBytes": 137421,
+      "sha256": "fd0a35f100a2337d9bc427f9b2c1759f126ef2bda75549389fb6a1b0e33c3600"
+    },
+    "19-market-input-root.jpg": {
+      "sizeBytes": 134518,
+      "sha256": "1bfd82af6eaa1da6f32e38bd22cdc53b2ed5ab9332118f2e7d3c193a87465523"
+    },
+    "20-market-replace.jpg": {
+      "sizeBytes": 149896,
+      "sha256": "21ee856b72e3ebfdd232b73f75805a4738922555ebf27dd9b871c8cb7ead7b2f"
+    },
+    "21-market-path-input-missing-backslashes.jpg": {
+      "sizeBytes": 133611,
+      "sha256": "fd26b62126502582d12fb485c3444cc42ed18cd07bff54a21a6be18b76d27918"
+    },
+    "22-market-native-forward-slash-rejected.jpg": {
+      "sizeBytes": 149128,
+      "sha256": "06840cb74daec6f64839cd83742e656a41db72d6be5c8e16a24b3dd837b9fb5c"
+    },
+    "23-market-saved-child.jpg": {
+      "sizeBytes": 141463,
+      "sha256": "68c9e4c513d818a7c546d582b82f8c9840d0fd93f8196a0fd00ddaf951f0b6ca"
+    },
+    "24-market-saved-root.jpg": {
+      "sizeBytes": 137485,
+      "sha256": "48afe107eb321848d104673f425c581c38e3b233020dfaa59e348f3f51eb97d7"
+    },
+    "25-market-reopen-root.jpg": {
+      "sizeBytes": 136354,
+      "sha256": "5d9db3a2c96a8a4ce0c3f67378b0c85e6c0cab6e55efbcb3c5d455c74b0031fa"
+    },
+    "26-market-reopen-child.jpg": {
+      "sizeBytes": 141736,
+      "sha256": "55cd882fe6dc306b8ceb9b13024574cfc3315e3395140ed64dcaf88bdc5a81ae"
+    },
+    "27-rollback-root.jpg": {
+      "sizeBytes": 136109,
+      "sha256": "530c0228f4cb7661bd0998669467e6cfbe0e9bc7b5750f549dd171ebc7afc9d9"
+    },
+    "28-rollback-child.jpg": {
+      "sizeBytes": 141546,
+      "sha256": "6fdfcfb9c2a97463ab1e68b06b3e06ac4048f0ed0f9c0a7f27e39d09e1edea6d"
+    }
+  },
+  "observedGuiVersion": "1.7.2",
+  "allFiveFormalGuiLaunchesNormalQuitExitZeroAndWineserverStopped": true,
+  "helpersDidNotWriteOutputFiles": true,
+  "launchEnvironment": {
+    "PANGOCAIRO_BACKEND": "fc"
+  },
+  "storeGuiButtonsVerified": false,
+  "limitations": [
+    "Only two small fixed two-node XML .ctd note inputs with Chinese filenames, root ordinary BEFORE to AFTER replacement, ASCII child body editing, GUI Save As to ASCII output paths and explicit new-process reopen were verified. Original input/output: 694/711 bytes. Market initial input 694, autosaved input 693, output 709 bytes; exact original input retained in the application backup.",
+    "Default Pango Win32 backend clipped menu/tree/body text in two fresh managed processes. Per-launcher PANGOCAIRO_BACKEND=fc restored tested readability; no Core code, global context, runtime, font, DLL or program byte changes. Exact defective function in Wine/GDI/Pango/Cairo is not established.",
+    "SQLite/encrypted notes, attachments, images, code boxes, tables, import/export, links, broad formatting/search, large notes, direct Chinese keyboard input and advanced features were not verified.",
+    "Main program GPL-3.0-or-later from fixed source. Installed licence matches fixed source after 15 CRLF normalizations, not raw bytes. Full GTK/Pango/Cairo/icons and bundled component licence closure, Authenticode/OpenPGP and reproducibility were not verified.",
+    "Guest online download, fresh-machine registration, configuration migration and cross-version upgrades were not verified.",
+    "Update and rollback submitted via Store IPC; GUI update/rollback button functionality not claimed.",
+    "Data preservation covers prior fixed acceptance data, diagnostic pins and new fixed inputs/outputs/executable/licence/config/registry/backup pins; not a traversal of every application filesystem file.",
+    "Market save helper printed inputUnchanged=false but lacked an assertion and submitted the reopen before inspection. Later mutations stopped until read-only actual-input/backup/history verification; corrected separate proof and checkpoint preceded rollback. Do not claim every earlier dependency gate worked."
+  ],
+  "backupPathCorrectionEvidence": "2026-10-11-cherrytree-backup-path-correction.json",
+  "actualBackupFile": "input/.市场笔记.ctd~",
+  "historicalBackupFileFieldWasFixtureMetadata": true
+}

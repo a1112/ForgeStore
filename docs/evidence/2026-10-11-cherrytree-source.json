@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "cherrytree",
+  "windowsPackageVersion": "1.7.2.1",
+  "upstreamReleaseVersion": "1.7.2",
+  "sourceCommit": "76bbccce9443aa68b45b369b70998df872cac7d0",
+  "officialRelease": "https://github.com/giuspen/cherrytree/releases/tag/v1.7.2",
+  "installer": {
+    "fileName": "cherrytree_1.7.2.1_win64_setup.exe",
+    "url": "https://github.com/giuspen/cherrytree/releases/download/v1.7.2/cherrytree_1.7.2.1_win64_setup.exe",
+    "sizeBytes": 96911680,
+    "sha256": "81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+    "officialGithubAssetDigestMatched": true
+  },
+  "sourceArchive": {
+    "fileName": "cherrytree_1.7.2.tar.xz",
+    "url": "https://github.com/giuspen/cherrytree/releases/download/v1.7.2/cherrytree_1.7.2.tar.xz",
+    "sizeBytes": 4904756,
+    "sha256": "848c0478f8aa4ec2e932ed00ee6c6618f21b197bbd7fea1bafdd8456468d7d45",
+    "officialGithubAssetDigestMatched": true
+  },
+  "fixedSourceMembers": {
+    "scripts/cherrytree.iss": {
+      "sizeBytes": 10023,
+      "sha256": "cb21d9c2dd7d0da339f799ee4c47644033a6d4ec126874f179a19dc2bd4b2c39"
+    },
+    "README.md": {
+      "sizeBytes": 5765,
+      "sha256": "16c4656aaabe85dbc8b3dc263812c8f5ab72eb5c486e160a0fdd8c911582fc20"
+    },
+    "src/ct/ct_const.h": {
+      "sizeBytes": 34558,
+      "sha256": "5181158bff98f29e13ec53266a10cf2ffd649c0b450b757a7978dec0f9af717c"
+    },
+    "src/ct/ct_app.cc": {
+      "sizeBytes": 24383,
+      "sha256": "f93eb9fdcd84881c257c695e8b5343da6bbda7822c8135a6ff2f9b086392cef4"
+    },
+    "src/ct/ct_main_win.cc": {
+      "sizeBytes": 44797,
+      "sha256": "d44996fdd86e95b2b3916f57b2342ce01b50f82e197caea4bee98fb28e3c7227"
+    },
+    "CMakeLists.txt": {
+      "sizeBytes": 11528,
+      "sha256": "f13c952e04122a9c4816ddedd8a040ab0e160b54283f1460ae87dcac4d3a04f7"
+    },
+    "license.txt": {
+      "sizeBytes": 716,
+      "sha256": "6e4eaa63b385e262aae81efee8dd95ad14d9113eb21a4a5272d2f5878aca489f"
+    },
+    ".old.pygtk2/windows/cherrytree.iss": {
+      "sizeBytes": 6045,
+      "sha256": "026d141ed0afbcfd6ba2021b1dc26d5041edb0bc86f35af683ee372fdb332e21"
+    }
+  },
+  "installed": false,
+  "guiAccepted": false,
+  "published": false,
+  "bundleLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "initialUnauthenticatedGithubApiRateLimit403Retained": true,
+  "publicMetadataReadWithExistingAuthenticatedGithubLogin": true,
+  "mainProgramLicense": "GPL-3.0-or-later",
+  "mainProgramLicenseBasis": "Fixed src/ct/ct_const.h and root license.txt declare GPL version 3 or any later version.",
+  "installerType": "Inno Setup",
+  "installerSourceMember": "scripts/cherrytree.iss",
+  "installerParameters": [
+    "/VERYSILENT",
+    "/SUPPRESSMSGBOXES",
+    "/NORESTART",
+    "/SP-",
+    "/TASKS=",
+    "/DIR=C:\\CherryTree"
+  ],
+  "initialLauncher": "CherryTree/ucrt64/bin/cherrytree.exe",
+  "launcherWorkingDirectoryFieldOmitted": true,
+  "sourceArchiveOpenPgpSignatureVerified": false
+}
