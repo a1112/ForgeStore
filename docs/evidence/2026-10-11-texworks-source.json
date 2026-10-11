@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "texworks",
+  "version": "0.6.11",
+  "officialRelease": "https://github.com/TeXworks/texworks/releases/tag/release-0.6.11",
+  "sourceCommit": "7951fd8b942b083d937f8d6019826eca94461dc5",
+  "installer": {
+    "fileName": "TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe",
+    "url": "https://github.com/TeXworks/texworks/releases/download/release-0.6.11/TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe",
+    "sizeBytes": 29600489,
+    "sha256": "24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8",
+    "officialReleaseChecksumMatched": true,
+    "githubAssetDigest": "sha256:24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8"
+  },
+  "sourceArchive": {
+    "fileName": "texworks-7951fd8b942b083d937f8d6019826eca94461dc5.tar.gz",
+    "url": "https://codeload.github.com/TeXworks/texworks/tar.gz/7951fd8b942b083d937f8d6019826eca94461dc5",
+    "sha256": "f18553724289a9db38c98bca7340825cc4da8dfb30e8443132053fcd45755067"
+  },
+  "fixedSourceMembers": {
+    "COPYING": {
+      "sizeBytes": 17987,
+      "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+    },
+    "README.md": {
+      "sizeBytes": 5210,
+      "sha256": "26dea710cd52e799b9f16a24020152b9a92f0299ec31e52b4544af1c67fbdc86"
+    },
+    "modules/QtPDF/README.md": {
+      "sizeBytes": 6911,
+      "sha256": "ab56fabefda75217507f347610109789def59a3d05689223db3d41d43cad56e4"
+    },
+    "src/TeXDocumentWindow.cpp": {
+      "sizeBytes": 117956,
+      "sha256": "51d22350a4fb0438a1cee17cd694b40af99fde94d4c5bf6b37a1b0e54f725e89"
+    },
+    "win32/texworks-setup-script.iss": {
+      "sizeBytes": 10532,
+      "sha256": "2d8bb5d80a15c8a7cc62ee0b77bdfb37123f138487ea9f1047a0a322e3b12128"
+    }
+  },
+  "installed": false,
+  "guiAccepted": false,
+  "published": false,
+  "bundleLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "mainProgramLicense": "GPL-2.0-or-later",
+  "mainProgramLicenseBasis": "Fixed src/TeXDocumentWindow.cpp declares GPL version 2 or any later version.",
+  "installerType": "Inno Setup",
+  "installerSourceMember": "win32/texworks-setup-script.iss",
+  "installerParameters": [
+    "/VERYSILENT",
+    "/SUPPRESSMSGBOXES",
+    "/NORESTART",
+    "/SP-",
+    "/TASKS=",
+    "/DIR=C:\\TeXworks"
+  ]
+}

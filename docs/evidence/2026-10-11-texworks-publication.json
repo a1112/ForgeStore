@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "texworks",
+  "version": "0.6.11",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited Chinese-name small UTF-8/LF text open, ordinary replacement, ASCII append, GUI Save As and explicit fresh-process reopen; independent market generation, cached same-version update, exact original generation rollback and normal Core/Store restart.",
+  "texCompilationAccepted": false,
+  "directChineseKeyboardInputAccepted": false,
+  "bundleLicenseClosureVerified": false,
+  "signedCatalogue": "catalogue/candidate-v32/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 41,
+    "snapshot": 41,
+    "timestamp": 41
+  },
+  "catalogueEntries": 33,
+  "acceptedDistinctWindowsApplications": 31,
+  "excludedFixtures": 2,
+  "coreJobCount": 235,
+  "fullStoreRowCount": 79,
+  "acceptanceReceipt": "windows-texworks-20261011.acceptance.json",
+  "acceptanceReceiptSha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd",
+  "sourceEvidence": "2026-10-11-texworks-source.json",
+  "sourceEvidenceSha256": "af6ca037219dd356210a9c97f4208fc022cf4918f0ddcae51fa8fecf09c9b166",
+  "originalGuiEvidence": "2026-10-11-texworks-gui.json",
+  "originalGuiEvidenceSha256": "917954342610d4cd6a2248c08aee2cc7fa4fa5931591446498fd1281b3497a8b",
+  "frozenOriginalSourceGuiAndReceiptBytesAndStageLabelsRetained": true,
+  "activationEvidence": "2026-10-11-texworks-activation.json",
+  "marketGuiEvidence": "2026-10-11-texworks-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-texworks-runtime-recovery.json",
+  "failureEvidence": "2026-10-11-texworks-failures.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-texworks-20261011.acceptance.json#texworks",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8",
+        "size": 29600489,
+        "target": "TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe",
+        "url": "https://github.com/TeXworks/texworks/releases/download/release-0.6.11/TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "texworks"
+    },
+    "id": "texworks",
+    "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "TeXworks",
+      "zhCN": "TeXworks"
+    },
+    "origin": "https://github.com/TeXworks/texworks/releases/tag/release-0.6.11",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "TeXworks project",
+    "summary": {
+      "en": "Limited small UTF-8 text open, replacement, ASCII edit, save and fresh-process reopen tested; TeX typesetting, PDF preview and advanced features unverified.",
+      "zhCN": "小型 UTF-8 文本打开、普通替换、ASCII 编辑、保存与新进程重开已测；TeX 排版、PDF 预览及高级功能未验收"
+    },
+    "version": "0.6.11"
+  },
+  "selectedOriginalGeneration": "gen-job-1791697342464-1",
+  "independentMarketGeneration": "gen-job-1791697756399-4",
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "storeGuiButtonsVerified": false,
+  "allOldSignedTargetsPreservedExceptCatalogueReplacement": true,
+  "rootBytesPreserved": true,
+  "tuftoolExplicitTrustedRootDownloadVerified": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "texworks",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "b7b88332-1b9f-4941-afbb-dd7b264ad52b",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "texworks",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "d5f94d0f-43bd-4833-be96-1d76d8d46fa6",
+      "state": "succeeded"
+    }
+  },
+  "beforeRollbackCheckpointSavedAndReadBack": true,
+  "beforeRollbackCoreJobs": 234,
+  "beforeRollbackStoreRows": 78,
+  "afterRollbackCoreJobs": 234,
+  "afterRollbackStoreRows": 79,
+  "normalRestartBeforeAndAfterCoreJobs": 235,
+  "normalRestartBeforeAndAfterStoreRows": 79,
+  "normalRestartFullFieldEqualityPassed": true,
+  "privateCheckpointPins": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "03f448dd9f0c555351847535aee4f01b6148f638746861276a08dd9c786e5c64",
+      "coreJobs": 235,
+      "fullStoreRows": 79
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "00eef406a2a64a8e2a44cc7fb22d8682bd2b0e813ff3c4293341665294ba4db2",
+      "coreJobs": 235,
+      "fullStoreRows": 79
+    }
+  },
+  "outputPins": {
+    "original": {
+      "file": "output/original-edited.tex",
+      "sizeBytes": 172,
+      "sha256": "cc15a8dbaaef36d65734b9bf5c4ce8e365e4b822cb1a4c16659f1b2b90d6039b",
+      "utf8": "% UTF-8 fixed fixture: 中文内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks original fixture.\nSTATUS=AFTER\n\\end{document}\n% ForgeOS original edited\n"
+    },
+    "market": {
+      "file": "output/market-edited.tex",
+      "sizeBytes": 181,
+      "sha256": "5f7985da41e8c3102cbdef3b24c9b0c2ef1bc6681fd18d3494d1ea6d3ea00d67",
+      "utf8": "% UTF-8 market fixture: 市场内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks independent market fixture.\nSTATUS=AFTER\n\\end{document}\n% ForgeOS market edited\n"
+    }
+  },
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two small fixed Chinese-name UTF-8/LF text inputs (147 and 158 bytes), ordinary BEFORE to AFTER replacement, ASCII comment append, GUI Save As to ASCII output paths and explicit new-process reopen were verified.",
+    "TeX compilation/typesetting, PDF preview, SyncTeX, spell checking, scripting, templates, advanced features, large files, other encodings and direct Chinese keyboard input were not verified.",
+    "Main program GPL-2.0-or-later from fixed source; installed COPYING matches after 339 CRLF normalizations, not raw bytes. Full Qt/Poppler/Hunspell/SyncTeX/Lua/icons and bundled licence closure, Authenticode and reproducibility not verified.",
+    "Guest online download, fresh-machine registration, configuration migration and cross-version upgrades were not verified.",
+    "Update and rollback submitted via Store IPC; GUI update/rollback button functionality not claimed.",
+    "Data preservation covers prior fixed acceptance data, new fixed inputs/outputs/executable/licence and new generation registry pins; not a traversal of every application filesystem file."
+  ]
+}

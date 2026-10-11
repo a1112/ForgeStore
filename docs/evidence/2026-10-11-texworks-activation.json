@@ -1,0 +1,57 @@
+{
+  "activated": true,
+  "metadataVersion": 41,
+  "rootVersion": 1,
+  "entries": 33,
+  "coreJobs": 231,
+  "fullStoreRows": 77,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-texworks-20261011.acceptance.json#texworks",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8",
+        "size": 29600489,
+        "target": "TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe",
+        "url": "https://github.com/TeXworks/texworks/releases/download/release-0.6.11/TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "texworks"
+    },
+    "id": "texworks",
+    "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "TeXworks",
+      "zhCN": "TeXworks"
+    },
+    "origin": "https://github.com/TeXworks/texworks/releases/tag/release-0.6.11",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "TeXworks project",
+    "summary": {
+      "en": "Limited small UTF-8 text open, replacement, ASCII edit, save and fresh-process reopen tested; TeX typesetting, PDF preview and advanced features unverified.",
+      "zhCN": "小型 UTF-8 文本打开、普通替换、ASCII 编辑、保存与新进程重开已测；TeX 排版、PDF 预览及高级功能未验收"
+    },
+    "version": "0.6.11"
+  },
+  "installed": {
+    "appId": "texworks",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "0.6.11"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "e035de66ce5705a2c1fbd34b9acb510e4f3ba4bd1558b53cc41dbbae305e027d",
+    "coreJobs": 231,
+    "fullStoreRows": 77
+  },
+  "stage": "local-activation-before-independent-market-gui",
+  "subsequentCompletionEvidence": "2026-10-11-texworks-publication.json"
+}

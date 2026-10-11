@@ -1,0 +1,276 @@
+{
+  "passed": true,
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "metadataVersion": 41,
+  "rootVersion": 1,
+  "rootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "selectedGeneration": "gen-job-1791697342464-1",
+  "coreJobs": 235,
+  "fullStoreRows": 79,
+  "outputs": {
+    "original": {
+      "generationId": "gen-job-1791697342464-1",
+      "fixture": {
+        "generationId": "gen-job-1791697342464-1",
+        "input": {
+          "file": "input/原稿.tex",
+          "sha256": "dc7469b91f9c70eb4576b187b50046a9cd59fe36f3fa4193ec44670a9aa7a753",
+          "sizeBytes": 147
+        },
+        "inputUtf8": "% UTF-8 fixed fixture: 中文内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks original fixture.\nSTATUS=BEFORE\n\\end{document}\n",
+        "expectedAddedLine": "% ForgeOS original edited",
+        "installedLicense": {
+          "sha256": "9f2e250993c6206fac643824e05e5a0d7d3e0895d9e09a5ce4b12bc2610afc11",
+          "sizeBytes": 18326,
+          "sourceEqualAfterCRLFNormalization": true,
+          "rawBytesEqualToSource": false
+        }
+      },
+      "savedOutput": {
+        "file": "output/original-edited.tex",
+        "sizeBytes": 172,
+        "sha256": "cc15a8dbaaef36d65734b9bf5c4ce8e365e4b822cb1a4c16659f1b2b90d6039b",
+        "utf8": "% UTF-8 fixed fixture: 中文内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks original fixture.\nSTATUS=AFTER\n\\end{document}\n% ForgeOS original edited\n"
+      },
+      "finalDataAndConfigurationPins": {
+        "drive_c/ForgeQA/input/原稿.tex": {
+          "sizeBytes": 147,
+          "sha256": "dc7469b91f9c70eb4576b187b50046a9cd59fe36f3fa4193ec44670a9aa7a753"
+        },
+        "drive_c/ForgeQA/output/original-edited.tex": {
+          "sizeBytes": 172,
+          "sha256": "cc15a8dbaaef36d65734b9bf5c4ce8e365e4b822cb1a4c16659f1b2b90d6039b"
+        },
+        "drive_c/TeXworks/TeXworks.exe": {
+          "sizeBytes": 92099024,
+          "sha256": "08ffd34b020ed2bee490c703544659393fcc54007c09703dd81a67b209c95a3c"
+        },
+        "drive_c/TeXworks/COPYING": {
+          "sizeBytes": 18326,
+          "sha256": "9f2e250993c6206fac643824e05e5a0d7d3e0895d9e09a5ce4b12bc2610afc11"
+        },
+        "user.reg": {
+          "sizeBytes": 109792,
+          "sha256": "ce15e72fb19a16b309bd60e9ee7cad497ae668791f52465d4094ca4e9d66e053"
+        },
+        "system.reg": {
+          "sizeBytes": 3424252,
+          "sha256": "7189f8358260864da537e4e01f8e568fc856bf9adaf3200688b1b486257d3c9f"
+        },
+        "userdef.reg": {
+          "sizeBytes": 4052,
+          "sha256": "3029c75fb85677a0492b669e417ae6a37d2783f8c41ba09053c3d434f5b1fed6"
+        }
+      }
+    },
+    "market": {
+      "generationId": "gen-job-1791697756399-4",
+      "fixture": {
+        "generationId": "gen-job-1791697756399-4",
+        "input": {
+          "file": "input/市场稿.tex",
+          "sha256": "684dc96571e3b3a904c5a4b855420ce9ade8e143452c2a4cd27189eb6f5cc042",
+          "sizeBytes": 158
+        },
+        "inputUtf8": "% UTF-8 market fixture: 市场内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks independent market fixture.\nSTATUS=BEFORE\n\\end{document}\n",
+        "expectedAddedLine": "% ForgeOS market edited",
+        "outputPath": "output/market-edited.tex",
+        "outputAbsentBeforeGui": true
+      },
+      "savedOutput": {
+        "file": "output/market-edited.tex",
+        "sizeBytes": 181,
+        "sha256": "5f7985da41e8c3102cbdef3b24c9b0c2ef1bc6681fd18d3494d1ea6d3ea00d67",
+        "utf8": "% UTF-8 market fixture: 市场内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks independent market fixture.\nSTATUS=AFTER\n\\end{document}\n% ForgeOS market edited\n"
+      },
+      "finalDataAndConfigurationPins": {
+        "drive_c/ForgeQA/input/市场稿.tex": {
+          "sizeBytes": 158,
+          "sha256": "684dc96571e3b3a904c5a4b855420ce9ade8e143452c2a4cd27189eb6f5cc042"
+        },
+        "drive_c/ForgeQA/output/market-edited.tex": {
+          "sizeBytes": 181,
+          "sha256": "5f7985da41e8c3102cbdef3b24c9b0c2ef1bc6681fd18d3494d1ea6d3ea00d67"
+        },
+        "drive_c/TeXworks/TeXworks.exe": {
+          "sizeBytes": 92099024,
+          "sha256": "08ffd34b020ed2bee490c703544659393fcc54007c09703dd81a67b209c95a3c"
+        },
+        "drive_c/TeXworks/COPYING": {
+          "sizeBytes": 18326,
+          "sha256": "9f2e250993c6206fac643824e05e5a0d7d3e0895d9e09a5ce4b12bc2610afc11"
+        },
+        "user.reg": {
+          "sizeBytes": 109779,
+          "sha256": "e4878e22a39bbaf130319d9136d3fabc020cc52e6f60232f2e9fa723f31a509d"
+        },
+        "system.reg": {
+          "sizeBytes": 3424252,
+          "sha256": "ac67cd5affe49f159a57fa292fc2334a5638def6a8280d0dc03d7ac2a6208635"
+        },
+        "userdef.reg": {
+          "sizeBytes": 4052,
+          "sha256": "a86845df4e952474c1e6f46f3526de76d150a6b8223332a25b9c5008c38f7627"
+        }
+      }
+    }
+  },
+  "marketInstall": {
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "texworks",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "b7b88332-1b9f-4941-afbb-dd7b264ad52b",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791697756399-4",
+    "originalGenerationId": "gen-job-1791697342464-1",
+    "generationId": "gen-job-1791697756399-4",
+    "newGenerationDistinct": true,
+    "oldFullFieldsPreserved": true,
+    "fixture": {
+      "generationId": "gen-job-1791697756399-4",
+      "input": {
+        "file": "input/市场稿.tex",
+        "sha256": "684dc96571e3b3a904c5a4b855420ce9ade8e143452c2a4cd27189eb6f5cc042",
+        "sizeBytes": 158
+      },
+      "inputUtf8": "% UTF-8 market fixture: 市场内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks independent market fixture.\nSTATUS=BEFORE\n\\end{document}\n",
+      "expectedAddedLine": "% ForgeOS market edited",
+      "outputPath": "output/market-edited.tex",
+      "outputAbsentBeforeGui": true
+    },
+    "guiJobId": "job-1791697773766-5",
+    "guiStatus": "running",
+    "checkpoint": {
+      "file": "after-market-install.json",
+      "sha256": "14140c5854c8047f83321911ce5e86d0287484dc7c28a14e1c4363722eb1702c",
+      "coreJobs": 232,
+      "fullStoreRows": 78
+    }
+  },
+  "rollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "texworks",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "d5f94d0f-43bd-4833-be96-1d76d8d46fa6",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791697342464-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 234,
+    "beforeRollbackStoreRows": 78,
+    "afterRollbackCoreJobs": 234,
+    "afterRollbackStoreRows": 79,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "91c350bf848c14c96a560a7db05d3bdb2f67c8430dc75b4b396b788147d58948",
+      "coreJobs": 234,
+      "fullStoreRows": 79
+    }
+  },
+  "rollbackGuiJob": {
+    "id": "job-1791697979365-7",
+    "generationId": "gen-job-1791697342464-1",
+    "kind": "launch",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 62672,
+        "requestId": "job-1791697979365-7",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 66439,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791697342464-1/prefix",
+        "requestId": "job-1791697979365-7",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 66481,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791697979365-7",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "normalRestartFullFieldEqualityPassed": true,
+  "oldProcessIds": {
+    "compatforge.service": "58335",
+    "forge-store.service": "61035"
+  },
+  "newProcessIds": {
+    "compatforge.service": "62899",
+    "forge-store.service": "62919"
+  },
+  "checkpoints": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "03f448dd9f0c555351847535aee4f01b6148f638746861276a08dd9c786e5c64",
+      "coreJobs": 235,
+      "fullStoreRows": 79
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "00eef406a2a64a8e2a44cc7fb22d8682bd2b0e813ff3c4293341665294ba4db2",
+      "coreJobs": 235,
+      "fullStoreRows": 79
+    }
+  },
+  "allOldGenerationFieldsAndFixedEvidenceDataPreserved": true,
+  "allAppFilesystemFilesTraversed": false,
+  "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+  "texCompilationAccepted": false,
+  "directChineseKeyboardInputAccepted": false,
+  "stage": "after-normal-core-store-restart",
+  "currentReadOnlyVerification": {
+    "passed": true,
+    "coreJobs": 235,
+    "fullStoreRows": 79,
+    "allTerminal": true,
+    "completeHistoryFieldEquality": true,
+    "allGenerationsCoreConfigAndTrustPreserved": true,
+    "fixedAcceptanceDataAndNewAppRegistryPinsPreserved": true,
+    "allApplicationFilesystemFilesTraversed": false,
+    "acceptedDistinctWindowsApps": 31,
+    "rootVersion": 1,
+    "onlineRoles": 41,
+    "candidate": "candidate-v32",
+    "selectedGeneration": "gen-job-1791697342464-1",
+    "afterRestartCheckpointSha256": "00eef406a2a64a8e2a44cc7fb22d8682bd2b0e813ff3c4293341665294ba4db2",
+    "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+    "guiAndFreshReopenPassed": true,
+    "independentMarketGenerationPassed": true,
+    "sameVersionCachedUpdatePassed": true,
+    "exactRollbackPassed": true,
+    "normalServiceRestartPassed": true,
+    "texCompilationAccepted": false,
+    "directChineseKeyboardInputAccepted": false
+  },
+  "currentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-texworks-20261011.py",
+  "privateCheckpoint": "texworks-20261011/after-restart.json",
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two small fixed Chinese-name UTF-8/LF text inputs (147 and 158 bytes), ordinary BEFORE to AFTER replacement, ASCII comment append, GUI Save As to ASCII output paths and explicit new-process reopen were verified.",
+    "TeX compilation/typesetting, PDF preview, SyncTeX, spell checking, scripting, templates, advanced features, large files, other encodings and direct Chinese keyboard input were not verified.",
+    "Main program GPL-2.0-or-later from fixed source; installed COPYING matches after 339 CRLF normalizations, not raw bytes. Full Qt/Poppler/Hunspell/SyncTeX/Lua/icons and bundled licence closure, Authenticode and reproducibility not verified.",
+    "Guest online download, fresh-machine registration, configuration migration and cross-version upgrades were not verified.",
+    "Update and rollback submitted via Store IPC; GUI update/rollback button functionality not claimed.",
+    "Data preservation covers prior fixed acceptance data, new fixed inputs/outputs/executable/licence and new generation registry pins; not a traversal of every application filesystem file."
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791697342464-1",
+    "createdAtMilliseconds": 1791697342472,
+    "definition": {
+      "bottleId": "gui-texworks",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "texworks",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/TASKS=",
+          "/DIR=C:\\TeXworks"
+        ],
+        "fileName": "TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe",
+        "sha256": "24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8"
+      },
+      "launchers": [
+        {
+          "executable": "TeXworks/TeXworks.exe",
+          "id": "main",
+          "name": "TeXworks"
+        }
+      ],
+      "name": "TeXworks",
+      "publisher": "TeXworks project",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "0.6.11"
+    },
+    "definitionDigest": "sha256:e8f58560b728fea611d781570560a47c3aea1f25af9de948b80b787475390d22",
+    "id": "gen-job-1791697342464-1",
+    "launcherDigests": {
+      "main": "sha256:08ffd34b020ed2bee490c703544659393fcc54007c09703dd81a67b209c95a3c"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791697358384
+  },
+  "fixture": {
+    "generationId": "gen-job-1791697342464-1",
+    "input": {
+      "file": "input/原稿.tex",
+      "sha256": "dc7469b91f9c70eb4576b187b50046a9cd59fe36f3fa4193ec44670a9aa7a753",
+      "sizeBytes": 147
+    },
+    "inputUtf8": "% UTF-8 fixed fixture: 中文内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks original fixture.\nSTATUS=BEFORE\n\\end{document}\n",
+    "expectedAddedLine": "% ForgeOS original edited",
+    "installedLicense": {
+      "sha256": "9f2e250993c6206fac643824e05e5a0d7d3e0895d9e09a5ce4b12bc2610afc11",
+      "sizeBytes": 18326,
+      "sourceEqualAfterCRLFNormalization": true,
+      "rawBytesEqualToSource": false
+    }
+  },
+  "savedOutput": {
+    "file": "output/original-edited.tex",
+    "sizeBytes": 172,
+    "sha256": "cc15a8dbaaef36d65734b9bf5c4ce8e365e4b822cb1a4c16659f1b2b90d6039b",
+    "utf8": "% UTF-8 fixed fixture: 中文内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks original fixture.\nSTATUS=AFTER\n\\end{document}\n% ForgeOS original edited\n"
+  },
+  "jobs": {
+    "install": {
+      "id": "job-1791697342464-1",
+      "generationId": "gen-job-1791697342464-1",
+      "status": "succeeded",
+      "kind": "install",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 59839,
+          "requestId": "job-1791697342464-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 6695,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791697342464-1/prefix",
+          "requestId": "job-1791697342464-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 6737,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791697342464-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "launch": {
+      "id": "job-1791697412241-2",
+      "generationId": "gen-job-1791697342464-1",
+      "status": "succeeded",
+      "kind": "launch",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 60244,
+          "requestId": "job-1791697412241-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 77259,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791697342464-1/prefix",
+          "requestId": "job-1791697412241-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 77302,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791697412241-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "reopen": {
+      "id": "job-1791697510776-3",
+      "generationId": "gen-job-1791697342464-1",
+      "status": "succeeded",
+      "kind": "launch",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 60619,
+          "requestId": "job-1791697510776-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 39188,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791697342464-1/prefix",
+          "requestId": "job-1791697510776-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 39231,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791697510776-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  },
+  "originalGuiWorkflowPassed": true,
+  "explicitFreshProcessReopenPassed": true,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "d4c3085dc341dc8e30a81fc86b5fcf469bb1f35efb42e35296b3311a69026b5e",
+    "coreJobs": 231,
+    "fullStoreRows": 77
+  },
+  "coreJobs": 231,
+  "fullStoreRows": 77,
+  "countsAsCompleted": false,
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "texworks",
+  "version": "0.6.11",
+  "screenshots": {
+    "01-original-open.jpg": {
+      "sha256": "cc98b1fd7e73c8a38afeabd265c0057d26f13637492f8a26f22636a2ad363f4b",
+      "sizeBytes": 121687
+    },
+    "02-original-saved.jpg": {
+      "sha256": "d486b0ceba3f51d5f81f7f49a9d58f1e2f980078e31afb75e501c4e302777426",
+      "sizeBytes": 126556
+    },
+    "03-original-corrected-saved.jpg": {
+      "sha256": "1295e6f9245547cbb0ab88700b9e0c7eaa031d089eb31cd3bedd52d46374ba14",
+      "sizeBytes": 125366
+    },
+    "04-original-fresh-reopen.jpg": {
+      "sha256": "701bc3c9235e7d7cfff3a1839f05d716da257b5fd629c8ba37559acfe599aa2d",
+      "sizeBytes": 111104
+    },
+    "05-original-reopen-loaded.jpg": {
+      "sha256": "064418cba05ea9c3646791dee6956fa3f2a9a0f36509157346f42e18177c8126",
+      "sizeBytes": 123168
+    }
+  },
+  "outputsWrittenByApplicationGui": true,
+  "verificationHelperWroteOutputs": false,
+  "texCompilationAccepted": false,
+  "limitations": [
+    "Only one small 147-byte Chinese-name UTF-8/LF input, ordinary BEFORE to AFTER replacement, ASCII comment append, GUI Save As to ASCII output path, and explicit fresh-process reopen were tested in this original generation.",
+    "TeX compilation/typesetting, PDF preview, SyncTeX, spell checking, scripting, templates, advanced features, large files, other encodings and direct Chinese keyboard input were not verified.",
+    "Main program GPL-2.0-or-later verified from fixed source. Installed COPYING differs in raw bytes and matches only after 339 CRLF-to-LF normalizations; complete bundled licence closure, Authenticode and reproducibility unverified.",
+    "Guest network download, fresh-machine registration, configuration migration and cross-version upgrades unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal services restart pending at this freeze; completion recorded separately."
+  ]
+}

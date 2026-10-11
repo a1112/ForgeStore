@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "texworks",
+  "appInstallOrLaunchFailures": [],
+  "testInputCorrection": [
+    {
+      "stage": "original-comment-append",
+      "observed": "Per-character helper entered 5 instead of %; initial GUI saved screenshot 02 shows the wrong input.",
+      "evidence": "2026-10-11-texworks/02-original-saved.jpg",
+      "resolution": "GUI Home/Delete and Shift+5 corrected the character, then Ctrl+S. Screenshot 03, output-byte verification, new-process reopen and rollback reopen show the correct % comment. Initial screenshot retained.",
+      "applicationBugClaimed": false
+    }
+  ],
+  "transientObservation": [
+    {
+      "stage": "original-fresh-reopen",
+      "observed": "Screenshot 04 captured the initial untitled/busy transition immediately after Open.",
+      "resolution": "No repeated Open was submitted. Screenshot 05 captured the completed load and actual output content before Quit. Screenshot 04 retained as transition evidence, not acceptance by itself."
+    }
+  ],
+  "readOnlyToolingNotes": [
+    "Several guessed historical helper paths were missing during read-only discovery. Located the existing files with rg --files; no dependent mutation was based on a missing read.",
+    "PowerShell rg with a wildcard path failed; the search was corrected to directory plus -g file filter.",
+    "Final guest-only state script was mistakenly invoked on the Windows host, where its guest library was absent; it failed before capturing state or any mutation. Re-invoked through the existing strict SSH guest helper and passed full 235 Core/79 Store equality and data/configuration/trust checks. No subsequent change occurred between the failed local invocation and the successful remote check."
+  ],
+  "priorAppFailuresAndSignedHistoryRetained": true,
+  "noHistoricalCheckpointsFabricated": true,
+  "checkpointFailureOccurredThisAppRound": false,
+  "dependencyOperationsGatedOnSuccessfulPredecessor": true
+}

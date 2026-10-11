@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "texworks",
+  "passed": true,
+  "acceptedDistinctWindowsApplications": 31,
+  "blockedCandidates": 12,
+  "coreJobCount": 235,
+  "fullStoreRowCount": 79,
+  "trustedRootVersion": 1,
+  "onlineMetadataVersions": 41,
+  "signedCatalogue": "catalogue/candidate-v32/tuf",
+  "independentReviewEvidence": "2026-10-11-texworks-independent-review.json",
+  "independentReviewPassed": true,
+  "parentActualFreshReadOnlyGuestCheck": {
+    "passed": true,
+    "coreJobs": 235,
+    "fullStoreRows": 79,
+    "allTerminal": true,
+    "completeHistoryFieldEquality": true,
+    "allGenerationsCoreConfigAndTrustPreserved": true,
+    "fixedAcceptanceDataAndNewAppRegistryPinsPreserved": true,
+    "allApplicationFilesystemFilesTraversed": false,
+    "acceptedDistinctWindowsApps": 31,
+    "rootVersion": 1,
+    "onlineRoles": 41,
+    "candidate": "candidate-v32",
+    "selectedGeneration": "gen-job-1791697342464-1",
+    "afterRestartCheckpointSha256": "00eef406a2a64a8e2a44cc7fb22d8682bd2b0e813ff3c4293341665294ba4db2",
+    "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+    "guiAndFreshReopenPassed": true,
+    "independentMarketGenerationPassed": true,
+    "sameVersionCachedUpdatePassed": true,
+    "exactRollbackPassed": true,
+    "normalServiceRestartPassed": true,
+    "texCompilationAccepted": false,
+    "directChineseKeyboardInputAccepted": false
+  },
+  "reviewDidNotRerunGuestOrGui": true,
+  "oldImmutableFilesVerifiedBeforeStaging": 135,
+  "originalTeXworksImmutableFilesVerifiedBeforeStaging": 9,
+  "oldThirtyAcceptedEntriesAndAllBlockedResolvedHistoryFieldsPreserved": true,
+  "preexistingPrivateCheckpointBytesNotRewritten": true,
+  "fullPrivateCheckpointsSigningKeysAndCredentialsExcluded": true,
+  "sourceGuiReceiptHistoricalPendingLabelsRetained": true,
+  "texTypesettingAndPdfPreviewAccepted": false,
+  "dataPreservationScope": "Prior fixed acceptance data and new fixed inputs/outputs/executable/licence/registry pins; not every application filesystem file.",
+  "artifactPins": {
+    "2026-10-11-texworks-activation.json": {
+      "sizeBytes": 2052,
+      "sha256": "2625a05199d79aa14c88193a7be56bfdb72a3580f51b172a5747343007fae181"
+    },
+    "2026-10-11-texworks-current-state.json": {
+      "sizeBytes": 917,
+      "sha256": "b53dbfd5ea7ebf492240ef4b6b6bce3a0a22975264b830cbbdafad5db77951e2"
+    },
+    "2026-10-11-texworks-failures.json": {
+      "sizeBytes": 2011,
+      "sha256": "01d2e26d71347cd1a998ec6d882e779cb38af98a05421f2774b34c6c5f2d3659"
+    },
+    "2026-10-11-texworks-gui.json": {
+      "sizeBytes": 9344,
+      "sha256": "917954342610d4cd6a2248c08aee2cc7fa4fa5931591446498fd1281b3497a8b"
+    },
+    "2026-10-11-texworks-independent-review.json": {
+      "sizeBytes": 90546,
+      "sha256": "4a31212280eca90c8c551c43ed69fd6ecc40d685ee9a7c647294551608d45fc2"
+    },
+    "2026-10-11-texworks-market-gui.json": {
+      "sizeBytes": 12620,
+      "sha256": "2a440473f29cc7bc0dd0bf063cb52d6874e1730240ed1569eb1346dab5cf24b9"
+    },
+    "2026-10-11-texworks-publication.json": {
+      "sizeBytes": 6633,
+      "sha256": "2e50950ed7a8e5d64f2537e0ffd7ee09877bc222a71a1705378d4f9eb8ae3617"
+    },
+    "2026-10-11-texworks-runtime-recovery.json": {
+      "sizeBytes": 11373,
+      "sha256": "076f9073cf71e91251995fbc952ca3a9dc806e75920ac0a265706bfc076db255"
+    },
+    "2026-10-11-texworks-source.json": {
+      "sizeBytes": 2363,
+      "sha256": "af6ca037219dd356210a9c97f4208fc022cf4918f0ddcae51fa8fecf09c9b166"
+    },
+    "windows-texworks-20261011.acceptance.json": {
+      "sizeBytes": 3703,
+      "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+    }
+  }
+}
