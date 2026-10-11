@@ -686,6 +686,29 @@
       "guiEvidence": "docs/evidence/2026-10-11-bowpad-gui-diagnostic.json",
       "evidence": "docs/windows-rolling-20261011-bowpad-pending.md",
       "blocker": "Ribbon missing; Ctrl+H and Save As commands unresponsive, no output or fresh reopen. Fixed Wine11.14 Ribbon E_NOTIMPL source supports a hypothesis, but no actual trace/HRESULT captured. Two normal managed GUI exits and one private-context diagnostic are not acceptance; no formal repair or market publication."
+    },
+    {
+      "id": "copyq",
+      "name": "CopyQ",
+      "version": "12.0.1",
+      "stage": "native-show-launcher-corrected-market-clipboard-client-and-notification-blocked",
+      "sourceUrl": "https://github.com/hluk/CopyQ/releases/download/v12.0.1/copyq-12.0.1-setup.exe",
+      "sha256": "db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78",
+      "sizeBytes": 19255957,
+      "license": "GPL-3.0-or-later",
+      "installed": true,
+      "originalLimitedGuiPassed": true,
+      "guiAccepted": false,
+      "marketGuiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "installationJobId": "job-1791756166043-4",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1791756166043-4",
+      "artifactEvidence": "docs/evidence/2026-10-12-copyq-source.json",
+      "guiEvidence": "docs/evidence/2026-10-12-copyq-market-failure.json",
+      "evidence": "docs/windows-rolling-20261012-copyq-pending.md",
+      "blocker": "Market provideClipboard command exit1/Connection lost/pipe error995 and SnoreToast exception on reported unimplemented GetApplicationUserModelId. Main payload15bytes observed, primary Quit0 not acceptance. No market export/reimport. Original limited import/edit/menu-copy/export/reimport valid only in original generation. Role63 removed preview entry; all old signed history and data retained."
     }
   ],
   "excludedInternalFixtures": [
@@ -694,38 +717,38 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "48/1000 finite Windows acceptance;13 unresolved including BowPad. LMMS1.2.2 two small single-track project edit/save/WAV render/new-process reopen only; heard playback unverified. candidate-v52/root1/role61;375 fullCore/114 fullStore. Strict guest rolling-current-state-lmms-20261012.py. Preserve frozen bytes/trust/history, library-stage and diagnosis helper failures, actual third-GUI registry/preference changes. Review/index/commit/push pending at publication freeze.",
+  "next": "48/1000;14 unresolved including CopyQ/BowPad. CopyQ native --start-server show window integration corrected, original limited text workflow passed, market provideClipboard IPC exit1/995 and SnoreToast GetApplicationUserModelId crash unresolved. No market export/reimport or accepted count. Recovery rollback only, role63/candidate-v54 removes CopyQ preview with trust/history retained;383fullCore/116fullStore. Strict guest rolling-current-state-copyq-pending-20261012.py. Do not repeat installed candidates or reuse old375/114 fixed-count helper as current.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 48,
-    "explicitlyBlockedCandidates": 13,
+    "explicitlyBlockedCandidates": 14,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 13
+    "pendingCandidates": 14
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v52/tuf",
-    "metadataVersion": 61,
+    "signedCatalogue": "catalogue/candidate-v54/tuf",
+    "metadataVersion": 63,
     "catalogueEntries": 50,
     "acceptedDistinctWindowsApps": 48,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-lmms-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-copyq-pending-summary.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-notepadnext-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-lmms-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-lmms-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-copyq-catalogue-withdrawal.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-lmms-final-verification.json",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-copyq-final-verification.json",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-12-copyq-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
-  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
+  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-lmms.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-lmms-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-copyq-pending.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-copyq-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

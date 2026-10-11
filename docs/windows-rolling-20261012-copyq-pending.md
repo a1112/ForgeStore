@@ -1,0 +1,23 @@
+# CopyQ 12.0.1 Windows pending（2026-10-12）
+
+Windows仍48/1000，新CopyQ加入第14个未解决候选；原48项全部字段、13候选历史保留。CopyQ安装和原代次有限GUI成功不等于市场验收。Ubuntu两款独立记账不变、Flatpak未安装且缓存保留，本轮未切换VM。
+
+固定官方Inno安装copyq-12.0.1-setup.exe19255957B SHA256 db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78，与固定官方API size/digest一致。固定v12.0.1源归档3501522B SHA452cd2acbe9d70e0b93bef413620dfece363f0595b19788d71035c8455d6097f仅本地SHA，14源码成员原字节固定，诊断另补6成员。src/main.cpp SPDX GPL-3.0-or-later，三个安装代次LICENSE35147B SHA8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903与固定source/LICENSE原字节同。完整Qt/KDE/Snoretoast/plugins/icons/translations等捆绑许可闭包、PGP/Authenticode、源码二进制对应/可复现构建未核，不称最新。实际下载最终重定向查询已私有留存，公开记录去除临时签名查询，不将凭据入库。
+
+原生Inno /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /CURRENTUSER /DIR=C:后一个反斜杠再CopyQ /TASKS=。目录参数13UTF8B hex2f4449523d433a5c436f707951。初helper静态错误14B在执行前更正，原helper/preflight保留；utilities分类更正前preflight helper摘要代表较早阶段，实际执行helper与Core请求另有记录。每代次132应用文件分别固定；主copyq.exe4523008B SHAbd1279313027401e023fb1fbe680eb005e4e23ad1abab5767ab24fb114fbdd55。初/正式/市场比对只有unins000.dat允许实际差异并分别固定，131其他文件同；卸载日志不同原因和卸载功能未验收。
+
+默认gen-job-1791755690486-1安装成功，job-1791755776895-2仅后台服务器，无可操作窗口，日志No Icon set；未验收。原固定主源码与安装脚本使用--start-server show，既有CLI先用受保护临时单元原生exit正常结束默认服务器，无显式强杀。请求诊断job-1791756083885-3用该参数显示后GUI CtrlQ/Yes正常0，仅诊断。使用原生launcher.arguments=[--start-server,show]另建冻结定义88cc9f696229c3c375f24635e296d0dc1375e8c73c4d495fa8f79a5c3ffb856c和正式gen-job-1791756166043-4；初定义/代次/任务保留。这只修正窗口启动入口，没有Core/程序/global context/launcher环境/workingDirectory/字体/DLL/runtime改动，托盘警告未修复。
+
+正式原代次两个GUI完成中文名100B legacy CopyQ v2单项输入导入、BEFORE→AFTER、ASCII ORIGINAL42追加、新第二项ORIGINAL SECOND42、Edit/Copy Selected Items后实际Clipboard Content text/plain17B、只选择OriginalFixture且不含配置/命令的GUI导出247B v4、新正式进程显式Import并点击OriginalFixture (1)加载两项，About实际12.0.1，两次CtrlQ/Yes正常0+wineserver停止。固定输入原字节保持，独立有限Qt4.7大端/UTF8解析完整消费导出字节并匹配两个text/plain正文。初CtrlC紧接读取仅i1/2B，失败截图03保留，后续明确菜单复制有效；原因未定，不称快捷键修复。导出选择初次点击已选行导致取消和OK禁用，没有写文件，重新新鲜状态选回后保存。截图01为请求诊断、03失败，不作通过证据；合成CPQ不另计应用，非完整Qt/CopyQ序列化规格验收。
+
+role62/candidate-v53按原GUI冻结证明预览激活，原32固定文件/source/gui/acceptance和market待执行历史标签保持。Store IPC预缓存同版本更新成功，独立市场gen-job-1791757074118-7与正式冻结定义/程序匹配。市场job-1791757099727-8导入94B中文名输入、有限编辑/新增两项和明确菜单复制后，实际Clipboard Content为MARKET SECOND42/15B；但provideClipboard客户端记录Connection lost、QWindowsPipeReader错误995和退出1。错误通知触发捆绑SnoreToast.exe严重错误，两次提示正常关闭；GUI详情真实保存6303B报告SHAc6e41d75af5c75637a5f399c638148ecacd48ed85ff4a755f25e451409bc7d75，明确报告未实现KERNEL32.dll.GetApplicationUserModelId。它只定位该通知子程序报告的异常，不确定provideClipboard底层断连原因。没有静默禁用通知、修改全局上下文、替换程序/DLL/runtime或把错误掩盖为修复。市场GUI正常CtrlQ/Yes主任务退出0，但并不验收；未继续市场导出/新进程导入，没有market-result.cpq。原生已编辑.dat按有限解析正文匹配仅诊断，输入原字节保持；Windows数不增加。
+
+失败后383Core/115完整Store终态CP保存读回、所有旧375/114完整字段/代次/信任/防护及固定验收数据保持，市场失败原文/输入/错误报告和配置原文私有备份。恢复用途Store IPC精确回滚正式原gen-job-1791756166043-4，不回到初隐藏代次；383/116旧全部任务字段和所有代次记录保留，原/市场失败/初诊断程序数据保持。这是环境恢复，不是CopyQ市场生命周期验收。首恢复helper误把market()快照函数当enqueue，TypeError在提交前停止；v2使用既有Store协议并重新严格CP读回后才提交。higher-role传输首helper误读role62的archive记录，摘要断言在外层/客体传输前停止，原helper保留，v2读role63正确记录才继续。
+
+更高role63/candidate-v54单独签名pending-correction并从活动目录撤出CopyQ；原role62全目录/签名/installer与原acceptance目标仍保留，不重写历史，不回退删除trustcache。50当前条目=48应用+2内部夹具，105实际签名目标、59公共文件；其中历史CopyQ资产/证明保留不等于活动应用。root1旧字节345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e保持，MPC32原/33更正和NSIS55原/56更正继续继承。完整CP先保存读回再正常Store更正激活，其余活动项完全保持。
+
+正常Core/Store两服务重启前后383Core/116完整Store行全部字段、全部代次/正式配置/信任/防护/固定数据精确一致，PID变化，Core launcher-cwd-v11-r1 SHA4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818、Store managed-msi-v2 SHA152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f保持；Provider v2未部署。私有完整CP copyq-20261012/after-restart.json SHA1f9c4a3af332266634b5ee628be8c1e44a356b58b20c7cf3d3c55f9f3d3a8508。只读rolling-current-state-copyq-pending-20261012.py必须通过已有严格SSH客体执行；旧375/114等助手仅历史。核对只覆盖固定验收数据/本轮三个代次132程序文件及有限配置/registry，非全应用文件系统；最近64IPC摘要不替代完整SQLite历史。正常已有授权账号解锁，不自动息屏、认证锁屏配置不改、登录画面/密码不入库。
+
+其他原helper失败完整保留：初show诊断读exitCode而真实结构为events[-1].exit，在CP/新任务前停止；只读重复状态助手尝试同名save_record，被排他创建断言阻止，旧收据不改。市场最终草稿错用首次before基线，预检生成v2，但实际失败后均未执行market-save/reopen/final。只读缺失搜索目录/不存在COPYING和范围无匹配不当运行时缺陷。所有依赖变更逐步实际assert，false/缺assert/非终态/CP失败即停，不只exit0，不补造历史。原source、原GUI和签名冻结32文件不变，后续失败/撤出/恢复另记。
+
+完整剪贴板采集/跨应用粘贴、图像HTML/富文本、大坏数据、加密/同步/插件/脚本/命令/标签/全局快捷键、直接中文键盘输入、联网、新机注册、迁移/跨版本/无人值守和GUI市场更新回滚按钮均未验收。下一轮不重复安装现有CopyQ；可受控诊断实际pipe995/通知异常或选择其他官方固定许可候选。独立证据审查与真实Git index/commit/普通推送另记，不能代替客体GUI或私有完整CP独立重演。私钥/密码/凭据/完整私有CP不入库。

@@ -237,3 +237,14 @@ docs/evidence/2026-10-12-lmms/expanded-assets.html -text whitespace=cr-at-eol,-b
 docs/evidence/2026-10-12-lmms/source/CMakeLists.txt -text whitespace=cr-at-eol,-space-before-tab
 docs/evidence/2026-10-12-lmms/source/cmake/nsis/CMakeLists.txt -text whitespace=cr-at-eol,-blank-at-eol
 docs/evidence/2026-10-12-lmms/source/src/core/main.cpp -text whitespace=cr-at-eol,-blank-at-eol
+
+# CopyQ fixed original, failed market and higher-role withdrawal evidence bytes.
+catalogue/candidate-v53/tuf/targets/*.json -text whitespace=cr-at-eol
+catalogue/candidate-v54/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-copyq-20261012*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-copyq*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-copyq/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261012-copyq-pending.md -text whitespace=cr-at-eol
+
+# Preserve actual Wine crash report whitespace after stopped CopyQ first stage.
+docs/evidence/2026-10-12-copyq/market-snoretoast-error.txt -text whitespace=cr-at-eol,-blank-at-eol

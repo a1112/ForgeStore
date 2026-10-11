@@ -1,0 +1,55 @@
+{
+  "activated": true,
+  "metadataVersion": 62,
+  "rootVersion": 1,
+  "entries": 51,
+  "coreJobs": 381,
+  "fullStoreRows": 114,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-copyq-20261012.acceptance.json#copyq",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78",
+        "size": 19255957,
+        "target": "copyq-12.0.1-setup.exe",
+        "url": "https://github.com/hluk/CopyQ/releases/download/v12.0.1/copyq-12.0.1-setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "copyq"
+    },
+    "id": "copyq",
+    "license": "GPL-3.0-or-later",
+    "name": {
+      "en": "CopyQ",
+      "zhCN": "CopyQ 剪贴板工具"
+    },
+    "origin": "https://hluk.github.io/CopyQ/",
+    "permissions": [
+      "user-files",
+      "clipboard"
+    ],
+    "publisher": "Lukas Holecek",
+    "summary": {
+      "en": "Limited text item import/edit, explicit-menu clipboard copy, CPQ export and new-process import tested; broader clipboard workflows unverified.",
+      "zhCN": "仅文本项导入编辑、菜单复制、CPQ 导出及新进程导入通过，广泛剪贴板功能未验收"
+    },
+    "version": "12.0.1"
+  },
+  "installed": {
+    "appId": "copyq",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "12.0.1"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "64d14d236e60bd55da2a85933c754dc2035c94240682ba257b7fac71b0dcd672",
+    "coreJobs": 381,
+    "fullStoreRows": 114
+  },
+  "independentMarketGenerationPending": true
+}

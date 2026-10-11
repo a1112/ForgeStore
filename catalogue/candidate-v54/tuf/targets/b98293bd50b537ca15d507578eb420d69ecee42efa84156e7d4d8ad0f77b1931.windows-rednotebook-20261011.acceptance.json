@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS KVM; Wine11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "rednotebook",
+      "version": "2.43",
+      "sha256": "9b153c8a88db1743689672a488daa96cce817d97db18524db63e0e2c8248c43a",
+      "size": 25489461,
+      "generationId": "gen-job-1791719938509-4",
+      "definitionDigest": "sha256:76576cf753cd4af6f4b366fd5647fdf1301411940a41cce375520c5458d22b9b",
+      "launcherSha256": "sha256:70a1222a620d031d4600e66fea9b1fd54d090777014ad1a3ce7394866b11c3d0",
+      "guiFileOperation": "passed-limited-one-day-journal-mouse-edit-saveas-plaintext-export-fresh-reopen",
+      "savedJournal": {
+        "sizeBytes": 79,
+        "sha256": "3aaf74cc1603d1972e2d2a0df4ff6d4858c748934d4ab196d32e8f8091413ff7"
+      },
+      "exportedText": {
+        "sizeBytes": 89,
+        "sha256": "75bb038aecef4f997e910149702fb3346b9ff9806ae7b16703c77bee8c850b29"
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "nativeLauncherEnvironment": {
+        "PANGOCAIRO_BACKEND": "fc"
+      },
+      "applicationDisplayPreference": "Sans 24",
+      "screenshots": {
+        "01-default-menu-clipped.jpg": {
+          "sizeBytes": 14422,
+          "sha256": "2c13273237ead4bf9604e9059e0ce832376d87e32bdd4b66601aca5f49b05816"
+        },
+        "02-fc-diagnostic-journal-readable.jpg": {
+          "sizeBytes": 15711,
+          "sha256": "963043b0118aac686a88ee44465b0dcf0117c22fce7e806f455ec33e2e04da35"
+        },
+        "03-formal-input.jpg": {
+          "sizeBytes": 15495,
+          "sha256": "dad647314bc847850e9c1ac115496652ae113c89a1ef5d1d15928ac6c68f8f90"
+        },
+        "04-formal-first-save-wrong-text.jpg": {
+          "sizeBytes": 15469,
+          "sha256": "7f27a837e90782ae68c0ad717103ac51820abccddf8abd520eeb5be0bfe03c82"
+        },
+        "05-formal-clean-v2-input.jpg": {
+          "sizeBytes": 17418,
+          "sha256": "db2a55e6a97faedf114f5c2046f95193d90af312635975eb7f249311c3aa671e"
+        },
+        "06-formal-corrected-saved.jpg": {
+          "sizeBytes": 18192,
+          "sha256": "41fe202d885a61139c8914358c2397bad1876e4a50b6b6f138052146c09ab79f"
+        },
+        "07-formal-export-summary.jpg": {
+          "sizeBytes": 20625,
+          "sha256": "71e7e76189e34a813deb85b4bb7fabb0b6af25aa8e4c8fa456bd3559eea4dc07"
+        },
+        "08-formal-export-completed.jpg": {
+          "sizeBytes": 18350,
+          "sha256": "1095e6951d3d66b069a8e9fd24e412e2330ca166dd5a4c2c3171f95db21332f2"
+        },
+        "09-formal-fresh-reopen.jpg": {
+          "sizeBytes": 18368,
+          "sha256": "0d625e7ae0cb9012dc02d747a53b608ae3e689ae0c757132920a3286fc572f5e"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-rednotebook-source.json",
+    "sha256": "cc8804cfb8f0599e6288cbed2485ea861451b3c567c63f636b77facabcda3b53"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-rednotebook-gui.json",
+    "sha256": "1b422f95dff6e040f8b946de43ec5cf5a3f74307a6f26f0f85eb9e2f5a4f1b5e"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-11-rednotebook-failures.json",
+    "sha256": "82351dd2b3ee35cb5395dea92ac45854673f58c630e1931a533ae8c4a72c8030"
+  },
+  "limits": [
+    "Only a small one-day journal: Chinese-name input directory opened, ordinary mouse word replacement and ASCII insertion, GUI Save As to ASCII journal directory, current-day plain-text GUI export and explicit selected-journal argument in a new process observed. Synthetic journals are not apps.",
+    "Default bundled Pango rendering clipped glyphs. Request-level PANGOCAIRO_BACKEND=fc diagnostic improved rendering; native frozen launcher.environment uses fc in a new formal installation. No exact Wine/Pango/GDI function or general fix established. Global context, installed program files, DLLs, runtime, and launcher working directory were not changed.",
+    "Only isolated application mainFont=Sans 24 preference was prepared after the first failed formal edit for readability. GUI font-picker attempt was cancelled and is not accepted. Shortcut/modifier/navigation behavior remains unverified; mouse correction was used.",
+    "Active input journal copies are editable application data and changed on Save/Save As; immutable original fixture remains exact. Initial wrong text and extra trailing newline failed validation, were preserved, then corrected through GUI before export or reopen. Historical input at Save As retains two trailing newlines; final saved journal has one.",
+    "Opening/saving a Chinese-name journal generated caught logging UnicodeEncodeError traces in the app log using cp1252; data saving and rendering worked in this limited flow. Logging error cause and remediation, complete Chinese-path behavior, direct Chinese keyboard input and unattended startup are not accepted.",
+    "Main source is GPL-2.0-or-later; README declares combined work GPL-3.0-or-later due to LGPLv3+ bundled code. Full GTK/Python/YAML/enchant/txt2tags/spellcheck, dictionaries and all bundled license closure unverified. No standalone main COPYING/LICENSE named file found among 5951 installed files.",
+    "Tags/categories/search, preview, spell checking, templates, HTML/LaTeX/PDF export, printing, large journals, other dates/encodings, direct Chinese input and advanced functions unverified. Guest network download, fresh-machine registration, migration and cross-version upgrade unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart pending at freeze. GUI update/rollback buttons are not accepted."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

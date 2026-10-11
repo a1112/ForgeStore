@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-12",
+  "applicationId": "copyq",
+  "fixedVersion": "12.0.1",
+  "officialSite": "https://hluk.github.io/CopyQ/",
+  "officialRelease": "https://github.com/hluk/CopyQ/releases/tag/v12.0.1",
+  "installer": {
+    "url": "https://github.com/hluk/CopyQ/releases/download/v12.0.1/copyq-12.0.1-setup.exe",
+    "finalUrl": "https://release-assets.githubusercontent.com/github-production-release-asset/344809/0ad7a301-0b9b-4fd7-93e4-a307b2f8340d",
+    "status": 200,
+    "file": "copyq-12.0.1-setup.exe",
+    "sizeBytes": 19255957,
+    "sha256": "db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78",
+    "observedUtc": "2026-10-11T21:52:28.833712+00:00",
+    "finalUrlQueryOmitted": true
+  },
+  "sourceArchive": {
+    "url": "https://codeload.github.com/hluk/CopyQ/tar.gz/refs/tags/v12.0.1",
+    "finalUrl": "https://codeload.github.com/hluk/CopyQ/tar.gz/refs/tags/v12.0.1",
+    "status": 200,
+    "file": "CopyQ-v12.0.1.tar.gz",
+    "sizeBytes": 3501522,
+    "sha256": "452cd2acbe9d70e0b93bef413620dfece363f0595b19788d71035c8455d6097f",
+    "observedUtc": "2026-10-11T21:52:29.779008+00:00",
+    "finalUrlQueryOmitted": false
+  },
+  "upstreamAsset": {
+    "size": 19255957,
+    "digest": "sha256:db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78"
+  },
+  "upstreamInstallerDigestVerified": true,
+  "sourceMembers": {
+    "CMakeLists.txt": {
+      "sizeBytes": 7665,
+      "sha256": "4f1eeae85e3cb81076ec3968e0ae0ea467264712fff79a6cfdd7b5d375968dac"
+    },
+    "LICENSE": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "README.md": {
+      "sizeBytes": 9670,
+      "sha256": "5e3f442f6133587027a119fdd96e1ed10711e0a4612d70ab364d948dfb437379"
+    },
+    "docs/basic-usage.rst": {
+      "sizeBytes": 2110,
+      "sha256": "60b010419f464c1cec80922ed2f3fa062a883737a45ebe94d0887e7266a6695d"
+    },
+    "shared/copyq.iss": {
+      "sizeBytes": 7938,
+      "sha256": "1529a2a4f86a2e5d170e1da8cec8d0e628cabab80b24511f8304abc2e478511b"
+    },
+    "src/common/mimetypes.h": {
+      "sizeBytes": 1097,
+      "sha256": "0d4f28d6583a74fc1e1b5c90a956b3d342ed3e3ac9b3e600963f7ceb64fd9d95"
+    },
+    "src/gui/mainwindow.cpp": {
+      "sizeBytes": 128959,
+      "sha256": "667d639bb25593b7cb81cae45bf098fed6eba2882a5b509232dce968ee0b5afa"
+    },
+    "src/item/clipboarditem.cpp": {
+      "sizeBytes": 3828,
+      "sha256": "3ac44168a9b8b116885ad9f9f41a870c2d419abb165999f1668b6ded8dfc699c"
+    },
+    "src/main.cpp": {
+      "sizeBytes": 10917,
+      "sha256": "1c744d9043e971f12893095d98c67dbeff2609808a90848270ea3114692bf787"
+    },
+    "src/app/clipboardserver.cpp": {
+      "sizeBytes": 26471,
+      "sha256": "4067bd145dade052bd86e249acfd247315f4be7d77cb5e3d153f68b093b1826d"
+    },
+    "src/common/appconfig.cpp": {
+      "sizeBytes": 995,
+      "sha256": "6b9a1a00e1de1de25b32983bfec0b394fe16f4bf92b821a9b5ceb9de2fafc26f"
+    },
+    "src/common/shortcuts.cpp": {
+      "sizeBytes": 1264,
+      "sha256": "681992d57a0cdf9db3694596373b124ae47195c34a50ae7a254c8969c6140597"
+    },
+    "src/gui/iconfactory.cpp": {
+      "sizeBytes": 18862,
+      "sha256": "54afe3c838a7bcadaa8372bde62665155fde7ade8ecb1b7f84ab7205e4dd4d9f"
+    },
+    "src/item/serialize.cpp": {
+      "sizeBytes": 13320,
+      "sha256": "d496bee261568cfbf558c2cecf0ddd6b85ceae73dc7446212016b14109227e9a"
+    }
+  },
+  "mainProgramLicense": "GPL-3.0-or-later",
+  "sourceLicenseSha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+  "installedLicenseRawByteMatch": true,
+  "fullBundledLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "openPgpVerified": false,
+  "binarySourceCorrespondenceVerified": false,
+  "reproducibleBuildVerified": false,
+  "nativeInstallerDefinition": {
+    "arguments": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/CURRENTUSER",
+      "/DIR=C:\\CopyQ",
+      "/TASKS="
+    ],
+    "fileName": "copyq-12.0.1-setup.exe",
+    "sha256": "db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78"
+  },
+  "nativeLauncherDefinition": {
+    "arguments": [
+      "--start-server",
+      "show"
+    ],
+    "executable": "CopyQ/copyq.exe",
+    "id": "main",
+    "name": "CopyQ"
+  },
+  "installerDirectoryArgumentUtf8Bytes": 13,
+  "installerDirectoryArgumentUtf8Hex": "2f4449523d433a5c436f707951",
+  "notClaimedLatest": true,
+  "publicRedirectQueriesOmitted": true
+}

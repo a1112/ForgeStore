@@ -1,0 +1,365 @@
+{
+  "applicationId": "copyq",
+  "version": "12.0.1",
+  "marketGenerationId": "gen-job-1791757074118-7",
+  "marketGuiJob": {
+    "applicationId": "copyq",
+    "createdAtMilliseconds": 1791757099728,
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 194785,
+        "requestId": "job-1791757099727-8",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 406759,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791757074118-7/prefix",
+        "requestId": "job-1791757099727-8",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 406802,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791757099727-8",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791757074118-7",
+    "id": "job-1791757099727-8",
+    "inspection": {
+      "architecture": "x86_64",
+      "entryPointRva": 2332688,
+      "fileDigest": "sha256:bd1279313027401e023fb1fbe680eb005e4e23ad1abab5767ab24fb114fbdd55",
+      "fileSizeBytes": 4523008,
+      "format": "pe32Plus",
+      "imageKind": "executable",
+      "importLibraries": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "kf6notifications.dll",
+        "kf6statusnotifieritem.dll",
+        "msvcp140.dll",
+        "qt6core.dll",
+        "qt6gui.dll",
+        "qt6network.dll",
+        "qt6qml.dll",
+        "qt6svg.dll",
+        "qt6test.dll",
+        "qt6widgets.dll",
+        "shell32.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ],
+      "machineCode": 34404,
+      "schemaVersion": "1",
+      "sections": [
+        {
+          "executable": true,
+          "name": ".text",
+          "rawDataSize": 2432000,
+          "readable": true,
+          "virtualAddress": 4096,
+          "virtualSize": 2431935,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".rdata",
+          "rawDataSize": 1799168,
+          "readable": true,
+          "virtualAddress": 2437120,
+          "virtualSize": 1798952,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".data",
+          "rawDataSize": 29696,
+          "readable": true,
+          "virtualAddress": 4239360,
+          "virtualSize": 37592,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".pdata",
+          "rawDataSize": 67584,
+          "readable": true,
+          "virtualAddress": 4280320,
+          "virtualSize": 67284,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".rsrc",
+          "rawDataSize": 170496,
+          "readable": true,
+          "virtualAddress": 4349952,
+          "virtualSize": 170096,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".reloc",
+          "rawDataSize": 23040,
+          "readable": true,
+          "virtualAddress": 4521984,
+          "virtualSize": 22592,
+          "writable": false
+        }
+      ],
+      "subsystem": "windowsGui",
+      "subsystemCode": 2
+    },
+    "kind": "launch",
+    "launchPlan": {
+      "bottleExecutable": {
+        "architecture": "x86_64",
+        "bottleId": "gen-job-1791757074118-7",
+        "digest": "sha256:bd1279313027401e023fb1fbe680eb005e4e23ad1abab5767ab24fb114fbdd55",
+        "imageKind": "executable",
+        "inspectionSchemaVersion": "1",
+        "originalName": "copyq.exe",
+        "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791757074118-7/prefix/drive_c/CopyQ/copyq.exe",
+        "sizeBytes": 4523008,
+        "subsystem": "windowsGui"
+      },
+      "decisionTrace": [
+        "runtime provider wine-linux-x86-64-preview selected as wine",
+        "translator native selected",
+        "graphics backend wined3d selected",
+        "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+        "Bottle CJK font pinned by digest",
+        "bottle-executable sha256:bd1279313027401e023fb1fbe680eb005e4e23ad1abab5767ab24fb114fbdd55 pinned in place",
+        "inspection x86_64 windowsGui accepted"
+      ],
+      "graphics": {
+        "backend": "wined3d",
+        "version": "11.14"
+      },
+      "lifecycle": {
+        "terminationGraceMilliseconds": 3000,
+        "wineserver": {
+          "executable": "/usr/bin/wineserver",
+          "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791757074118-7/prefix"
+        }
+      },
+      "process": {
+        "arguments": [
+          "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791757074118-7/prefix/drive_c/CopyQ/copyq.exe",
+          "--start-server",
+          "show"
+        ],
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "DISPLAY": ":0",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791757074118-7/prefix",
+          "WINESERVER": "/usr/bin/wineserver",
+          "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+        },
+        "executable": "/usr/bin/wine",
+        "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791757074118-7"
+      },
+      "requestId": "job-1791757099727-8",
+      "runtime": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "sandbox": {
+        "network": "deny",
+        "profile": "desktop"
+      },
+      "schemaVersion": "1",
+      "translator": {
+        "provider": "native"
+      }
+    },
+    "schemaVersion": "1",
+    "status": "succeeded",
+    "updatedAtMilliseconds": 1791757509106
+  },
+  "marketGuiNormalQuitObserved": true,
+  "primaryExit": {
+    "code": 0,
+    "success": true
+  },
+  "marketGuiAccepted": false,
+  "publishedAccepted": false,
+  "countedWindowsApplication": false,
+  "actualGuiCopyPayloadObserved": "MARKET SECOND42",
+  "actualGuiCopyPayloadBytesObserved": 15,
+  "actualEditedNativeItems": [
+    "MARKET SECOND42",
+    "中文 MARKET AFTER\nVALUE 41\nMARKET42"
+  ],
+  "nativeEditedItemsPin": {
+    "sizeBytes": 94,
+    "sha256": "53b984e65b2a6eadb095a748a0aa28bbfef51b9b49deab42067f1fda58380664"
+  },
+  "inputUnchanged": true,
+  "exportFileDoesNotExist": true,
+  "marketExportOrFreshReimportNotVerified": true,
+  "provideClipboardCommandFailedExit1": true,
+  "pipeReaderError995AndConnectionLostObserved": true,
+  "snoreToastUnimplementedFunctionReported": "KERNEL32.dll.GetApplicationUserModelId",
+  "notificationIssueFixed": false,
+  "underlyingProvideClipboardCauseEstablished": false,
+  "programFilesUnchanged": true,
+  "allOriginalDataAndConfigurationPinsUnchanged": true,
+  "allOldFullFieldsAndGenerationsPreserved": true,
+  "currentMarketFailurePins": {
+    "system.reg": {
+      "sizeBytes": 3423451,
+      "sha256": "39cd3b63ded6959a5cb61c0e8e76009f8eeecdb444e6f17dcc883c9978d28ad8"
+    },
+    "user.reg": {
+      "sizeBytes": 104495,
+      "sha256": "0b829cb943906f6ca0415c57222546abc4e2aab499ae552159f42ffd2fc21275"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "1531878b090d3dda18b49bb96db977480ae7f65cc074fe11b3347c73e4f2d229"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq_geometry.ini": {
+      "sizeBytes": 677,
+      "sha256": "06965aa15b72ec0117791bfc9fcf003e88ff1055b95f371f6e8648c2ba4a7d48"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq_tabs.ini": {
+      "sizeBytes": 235,
+      "sha256": "4f4ed36555ae5ea81046269c6f5b631c863bdec7b2aa80b523d9ba852df679a3"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq-filter.ini": {
+      "sizeBytes": 38,
+      "sha256": "b6ac2e8dc0f3b6373f447e11925807632761e2e0ecb704f4766a66874e657f58"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq_tab_JmNsaXBib2FyZA==.dat": {
+      "sizeBytes": 4,
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq_tab_TWFya2V0Rml4dHVyZQ==.dat": {
+      "sizeBytes": 94,
+      "sha256": "53b984e65b2a6eadb095a748a0aa28bbfef51b9b49deab42067f1fda58380664"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq-monitor.ini": {
+      "sizeBytes": 26,
+      "sha256": "68224def6497937bacc98726458afefed4edab5871b2744604c36529a84a58ae"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq.ini": {
+      "sizeBytes": 43,
+      "sha256": "8700f56180491808d115e6b34bd6565ca5075ed2282d024b42bed89c739d193c"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq-commands.ini": {
+      "sizeBytes": 1044,
+      "sha256": "c6713d272fcf3520c8e0ee65dacaaf8303138893fbfbc224e8d5767368142d5a"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq/copyq-20261011-1556.log": {
+      "sizeBytes": 200,
+      "sha256": "10253497e98ff51d71deb11b55889e1d484ce5756b7bfc13dfb6ba32901ecd00"
+    },
+    "drive_c/users/forge/AppData/Roaming/copyq/copyq/copyq-20261011-588.log": {
+      "sizeBytes": 927,
+      "sha256": "6e630d5996551a7b2b44c594262ca8e968d14e1f0ba90f693516520ca9c9b8de"
+    },
+    "drive_c/CopyQTests/市场剪贴板.cpq": {
+      "sizeBytes": 94,
+      "sha256": "c5fa81bdf404e62f13f974a80acfbd9670a24a12cc10194985ac790d1ae8811e"
+    },
+    "drive_c/CopyQTests/snoretoast-error.txt": {
+      "sizeBytes": 6303,
+      "sha256": "c6e41d75af5c75637a5f399c638148ecacd48ed85ff4a755f25e451409bc7d75"
+    }
+  },
+  "actualFailureRawFilesPreservedPrivately": true,
+  "checkpoint": {
+    "file": "after-market-failure.json",
+    "sha256": "42f5f3f297385b8d6daa3082e9823fe5282090e7ee69ecc4016813ac686081a9",
+    "coreJobs": 383,
+    "fullStoreRows": 115
+  },
+  "recoveryRollbackPending": true,
+  "noAcceptCountIncrement": true,
+  "screenshots": {
+    "09-market-import.jpg": {
+      "sizeBytes": 82787,
+      "sha256": "65bc3088ccb00be0650c53b4c77968900926e79bd210de01ada9a1672497898f"
+    },
+    "10-market-snoretoast-crash.jpg": {
+      "sizeBytes": 110076,
+      "sha256": "203869c569a751224e7770e336dfe9ada303a7063ed0256f89426af99c3aa604"
+    },
+    "11-market-snoretoast-error-details.jpg": {
+      "sizeBytes": 140689,
+      "sha256": "2e737af63b7ae5b2df51bcacdb6ce8b5f5d74917f2e0fba69db80418a2be145c"
+    },
+    "12-market-post-error-clipboard.jpg": {
+      "sizeBytes": 99253,
+      "sha256": "647d6fb849728f888ab24efc6b03dea04597c9f33fc02186350f4b5dd4f4675b"
+    }
+  },
+  "actualGuiSavedCrashReportReference": "2026-10-12-copyq/market-snoretoast-error.txt",
+  "actualGuiSavedCrashReportPin": {
+    "sizeBytes": 6303,
+    "sha256": "c6e41d75af5c75637a5f399c638148ecacd48ed85ff4a755f25e451409bc7d75"
+  },
+  "runtimeConnectionAndNotificationLog": {
+    "jobId": "job-1791757099727-8",
+    "jobStatus": "running",
+    "programPinsUnchanged": true,
+    "inputUnchanged": true,
+    "errorReportPin": {
+      "sizeBytes": 6303,
+      "sha256": "c6e41d75af5c75637a5f399c638148ecacd48ed85ff4a755f25e451409bc7d75"
+    },
+    "reportedUnimplementedFunction": "KERNEL32.dll.GetApplicationUserModelId",
+    "exceptionBelongsTo": "SnoreToast.exe bundled notification helper",
+    "actualMainGuiClipboardTextObserved": "MARKET SECOND42",
+    "actualMainGuiClipboardBytesObserved": 15,
+    "notificationFailureNotFixed": true,
+    "marketGuiAcceptanceCompleted": false,
+    "futureExportOrReopenOrRollbackOrRestartNotSubmitted": true,
+    "logs": {
+      "drive_c/users/forge/AppData/Roaming/copyq/copyq/copyq-20261011-1556.log": {
+        "pin": {
+          "sizeBytes": 200,
+          "sha256": "10253497e98ff51d71deb11b55889e1d484ce5756b7bfc13dfb6ba32901ecd00"
+        },
+        "text": "[2026-10-11 22:20:10.294] ERROR <cmd/provideClipboard-1556>: Connection lost!\n[2026-10-11 22:20:10.295] ERROR <cmd/provideClipboard-1556>: QWindowsPipeReader::consumePendingAndEmit: Unknown error 995\n"
+      },
+      "drive_c/users/forge/AppData/Roaming/copyq/copyq/copyq-20261011-588.log": {
+        "pin": {
+          "sizeBytes": 927,
+          "sha256": "6e630d5996551a7b2b44c594262ca8e968d14e1f0ba90f693516520ca9c9b8de"
+        },
+        "text": "[2026-10-11 22:18:23.362] Warning <Server-588>: [default] QtWarning: QSystemTrayIcon::setVisible: No Icon set\n[2026-10-11 22:20:10.302] Note <Server-588>: Command “copyq --clipboard-access provideClipboard”\n[2026-10-11 22:20:10.302] Note <Server-588>:    Exit code: 1\n[2026-10-11 22:20:10.302] Note <Server-588>:    1. copyq --clipboard-access provideClipboard\n[2026-10-11 22:21:01.072] Warning <Server-588>: [kf.notifications] QtWarning: SnoreToast process errored: QList(\"-id\", \"1\", \"-t\", \"Command “copyq --clipboard-access provideClipboard”\", \"-m\", \"Exit code: 1 1. copyq --clipboard-access provideClipboard\", \"-appID\", \"copyq\", \"-pid\", \"588\", \"-pipename\", \"\\\\\\\\.\\\\pipe\\\\9816896687468082413\", \"-p\", \"C:/users/forge/AppData/Local/Temp/copyq-qcXJbI/1\") QProcess::Crashed\n[2026-10-11 22:21:01.092] Warning <Server-588>: [kf.notifications] QtWarning: Couldn't find the notification in m_notifications. Nothing to close.\n"
+      }
+    }
+  }
+}
