@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "dbbrowser",
+  "productCodeChanged": false,
+  "productFailures": [
+    {
+      "stage": "each tested process startup",
+      "detail": "EnableNonClientDpiScaling failed (120, Call not implemented). Manually acknowledged; unresolved. Subsequent limited database workflow succeeded."
+    }
+  ],
+  "harnessFailures": [
+    {
+      "stage": "installer observer",
+      "detail": "Initial raw license equality assertion failed. Installed 607-byte text has nine CRLF sequences; fixed source is 598 LF bytes. Only CRLF normalization gives matching text. No reinstall and no claim of raw equality."
+    },
+    {
+      "stage": "GUI SQL entry",
+      "detail": "Shifted parentheses typed as 9 and 0. Malformed INSERT line was detected before execution and replaced via GUI with INSERT SELECT; actual correct query executed."
+    },
+    {
+      "stage": "original final checkpoint",
+      "detail": "First license check addressed install-root LICENSE instead of licenses/LICENSE. Corrected path from verified install manifest before checkpoint; no product change."
+    },
+    {
+      "stage": "market SQL editor focus",
+      "detail": "Initial typing targeted the tab border and left SQL editor empty. Observed empty editor before any execution, refocused the visible editor and entered verified SQL."
+    },
+    {
+      "stage": "before-rollback checkpoint and action sequencing",
+      "detail": "Reused global old_complete_outputs alias recursively called prior verifier; before-rollback checkpoint was not written. Parent sequential tool call did not gate the following rollback on checkpoint result, so rollback was submitted and succeeded. Alias fixed to before_dbbrowser_outputs. Captured actual after-rollback state and compared old 208 Core/71 Store fields against after-activation; update completed job unchanged from install observation, both generation input/output/launcher pins verified. No fabricated pre-rollback checkpoint and no claim of full 211 Core/72 Store pre-rollback comparison."
+    },
+    {
+      "stage": "host report source decoding",
+      "detail": "Direct Python 3.9 invocation reported non-UTF-8 source error. ASCII runner strictly decoded the same file as UTF-8 and compiled successfully; frozen source/receipt bytes unchanged."
+    },
+    {
+      "stage": "pre-commit whitespace check",
+      "detail": "Initial default staged diff check rejected CRLF line endings in two byte-preserved inherited signed receipts. Commit and push stopped. Added the existing scoped whitespace=cr-at-eol attribute pattern for candidate-v29 target JSON, preserving all frozen bytes; the normal default staged check is re-run before commit."
+    }
+  ],
+  "authenticationChanged": false
+}

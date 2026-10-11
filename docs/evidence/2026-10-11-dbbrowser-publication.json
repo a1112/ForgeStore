@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "dbbrowser",
+  "version": "3.13.1",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited Chinese-filename SQLite opening, Save Database As to ASCII path, SQL UPDATE/INSERT SELECT/SELECT, Write Changes and explicit fresh-process reopen in original and independent market generations, with manual startup DPI warning acknowledgment; cached same-version update, exact rollback and normal Core/Store restart.",
+  "fullDatabaseEditorAcceptance": false,
+  "bundledSqlCipherTested": false,
+  "startupDpiWarningUnresolved": true,
+  "unattendedLaunchVerified": false,
+  "signedCatalogue": "catalogue/candidate-v29/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 38,
+    "snapshot": 38,
+    "timestamp": 38
+  },
+  "catalogueEntries": 30,
+  "acceptedDistinctWindowsApplications": 28,
+  "excludedFixtures": 2,
+  "coreJobCount": 212,
+  "storeRowCount": 73,
+  "acceptanceReceipt": "windows-dbbrowser-20261011.acceptance.json",
+  "acceptanceReceiptSha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11",
+  "sourceEvidence": "2026-10-11-dbbrowser-source.json",
+  "sourceEvidenceSha256": "9ee0b7c3ad4fed64fcfa83f6bd29e3873fa608508fe24d77923a009a8d7f3fcd",
+  "activationEvidence": "2026-10-11-dbbrowser-activation.json",
+  "marketGuiEvidence": "2026-10-11-dbbrowser-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-dbbrowser-runtime-recovery.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-dbbrowser-20261011.acceptance.json#dbbrowser",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688",
+        "size": 19857408,
+        "target": "DB.Browser.for.SQLite-v3.13.1-win64.msi",
+        "url": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "dbbrowser"
+    },
+    "id": "dbbrowser",
+    "license": "MPL-2.0 OR GPL-3.0-or-later",
+    "name": {
+      "en": "DB Browser for SQLite",
+      "zhCN": "DB Browser for SQLite"
+    },
+    "origin": "https://sqlitebrowser.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "DB Browser for SQLite Team",
+    "summary": {
+      "en": "Small Chinese-name SQLite open, Save As, SQL update/insert, Write Changes and fresh-process reopen tested; manually dismiss startup DPI warning.",
+      "zhCN": "小型中文名 SQLite 打开、另存、SQL 更新与插入、保存及新进程重开已测；启动需手动确认 DPI 警告"
+    },
+    "version": "3.13.1"
+  },
+  "installed": {
+    "appId": "dbbrowser",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "3.13.1"
+  },
+  "selectedOriginalGeneration": "gen-job-1791686327258-1",
+  "marketVersionLicenseTestedEvidenceAndLimitsVisiblyObserved": true,
+  "marketInstalledRowAndRollbackControlVisiblyObserved": true,
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "dbbrowser",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "9a5aad8b-efef-4f34-8593-b9761360b81a",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "dbbrowser",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "7726c98f-5542-4bb1-bfdd-822424463a9f",
+      "state": "succeeded"
+    }
+  },
+  "coreJobs": [
+    {
+      "applicationId": "dbbrowser",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 43511,
+          "requestId": "job-1791687438171-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 67517,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791686327258-1/prefix",
+          "requestId": "job-1791687438171-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 67559,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791687438171-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791686327258-1",
+      "id": "job-1791687438171-7",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dbbrowser",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 42962,
+          "requestId": "job-1791687326144-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 34756,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791687174079-4/prefix",
+          "requestId": "job-1791687326144-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 34799,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791687326144-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791687174079-4",
+      "id": "job-1791687326144-6",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dbbrowser",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 42685,
+          "requestId": "job-1791687188150-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 130889,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791687174079-4/prefix",
+          "requestId": "job-1791687188150-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 130932,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791687188150-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791687174079-4",
+      "id": "job-1791687188150-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dbbrowser",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 42430,
+          "requestId": "b462a1eb-d80e-189e-4f9a-8b70b554b0a8",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4566,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791687174079-4/prefix",
+          "requestId": "b462a1eb-d80e-189e-4f9a-8b70b554b0a8",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4609,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "b462a1eb-d80e-189e-4f9a-8b70b554b0a8",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791687174079-4",
+      "id": "job-1791687174079-4",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "full212CoreAnd73StoreFieldsPreservedAcrossRestart": true,
+  "fullInitial205CoreAnd71StoreFieldsPreserved": true,
+  "fullCheckpointMatchAfterMarketGuiClosed": true,
+  "latestKnownTime": "2026-10-11T02:58:32.066780562Z",
+  "privateFullCheckpoint": "dbbrowser-20261011/after-restart.json",
+  "privateCheckpointReviewArchiveSha256": "ba0cdf3b64fbc3d978931e40f0c8a51162d34165449178e8518388fe04da7b5c",
+  "readOnlyCurrentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-dbbrowser-20261011.py",
+  "priorSignedHistoriesPreserved": true,
+  "trustResetOrDowngradePerformed": false,
+  "publicationEvidenceSeparate": true,
+  "screenshotsAndOutputs": {
+    "after-rollback-reopened.jpg": {
+      "sha256": "dde30d6498660bb3f6e3b6f1bca2b50bcb999493ababca324d1b59988ec15984",
+      "sizeBytes": 179803
+    },
+    "editor-created-market.bin": {
+      "sha256": "74f8bf8fb82cc0e34df5ac05c65616609b7779ffe78ba78ca6d4ade43027b04b",
+      "sizeBytes": 8192
+    },
+    "editor-created-original.bin": {
+      "sha256": "4244e2645b4696f5a6770acd740d56e1873c4a34b12f15973540b1d946c0aa46",
+      "sizeBytes": 8192
+    },
+    "input-market.bin": {
+      "sha256": "0b27fe664425ae08212d5e36d527162df08b33e3d9a9327fe3fdf5543b49808b",
+      "sizeBytes": 8192
+    },
+    "input-original.bin": {
+      "sha256": "e58860f30a98ec6a87b983450ccb8259e5b3bfa2062eefcee1725ac116ba9c0d",
+      "sizeBytes": 8192
+    },
+    "market-input.jpg": {
+      "sha256": "f576a0094583044049668fd71e189b47868faa200faaf93af46d112e31956eb3",
+      "sizeBytes": 176014
+    },
+    "market-reopened.jpg": {
+      "sha256": "bcffff1dcaacceab81901797023c87b3b612ac490451e4f7e14af14bfa4103d3",
+      "sizeBytes": 176240
+    },
+    "market-saved.jpg": {
+      "sha256": "bc9386520fed18fe3140975efff546188103243a7b9a7de27c9eb924fdd324c8",
+      "sizeBytes": 177367
+    },
+    "market-sql.jpg": {
+      "sha256": "e32e0356ee6cbd0847c330192bbcabd72b985cb736a005a309ece4dd7d458f85",
+      "sizeBytes": 204954
+    },
+    "market-startup-warning.jpg": {
+      "sha256": "8f36d70190e50cff6df664dac58a5086ea84d313021f9f2d8a6864caf611d0cf",
+      "sizeBytes": 169179
+    },
+    "original-about.jpg": {
+      "sha256": "f62c7ad4abbba6d4de3dc654fd3c6170d085d248a8416a11aa6af78b2b1e8769",
+      "sizeBytes": 235837
+    },
+    "original-input.jpg": {
+      "sha256": "e4f895f43544eaf75955537d5280ac445643601112e834f5fcafe6ea11e92fc6",
+      "sizeBytes": 175885
+    },
+    "original-reopened.jpg": {
+      "sha256": "26bdb2887eaa4df2e346cbbaa48962713f55f16512ac1175f66252e95bfa6ca1",
+      "sizeBytes": 33014
+    },
+    "original-saved.jpg": {
+      "sha256": "3dfd348c22d3edd0b48de77831c3767962838823e0f6de8ba841efb8249c6d0d",
+      "sizeBytes": 177238
+    },
+    "original-sql.jpg": {
+      "sha256": "24dcd5b5374df7e4bef127ea854b2c55f054786bb05162afc598116abbf5bfa7",
+      "sizeBytes": 204787
+    },
+    "original-startup-warning.jpg": {
+      "sha256": "6af4008c9a2076c8f8f37b35d9aff5121949ef1a18b4832eb5009bbba2abeccc",
+      "sizeBytes": 169055
+    },
+    "store-details.jpg": {
+      "sha256": "1e17139bf44341a42dc30baeef647d76636d593fdd2e4d8ab89ae2427d1e69ba",
+      "sizeBytes": 150164
+    },
+    "store-installed.jpg": {
+      "sha256": "a0c4bc8a4a1e2b4d2db75460f245b2d752ad73ecddea2de3845e71cb0a6240d7",
+      "sizeBytes": 164555
+    },
+    "store-search.jpg": {
+      "sha256": "4bd2910fea162d5a5a2f58917f70678c0c7c53531fc3b871a6ec2c6a461add25",
+      "sizeBytes": 141462
+    }
+  },
+  "signedCatalogueFiles": {
+    "metadata/1.root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    },
+    "metadata/38.snapshot.json": {
+      "sha256": "752e49b08830777678b187b2afb746b5452821ac7a8089e966c9c056eb3ba89e",
+      "sizeBytes": 997
+    },
+    "metadata/38.targets.json": {
+      "sha256": "86e1039c2472caa6e64cfe333bfca4409da7b53ccd0b2f9b3f3948670add68a9",
+      "sizeBytes": 12199
+    },
+    "metadata/timestamp.json": {
+      "sha256": "d0af3a96b5793fcd2de698131d9cadc9d1258a070792a21735a0759cf42679f3",
+      "sizeBytes": 997
+    },
+    "targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1",
+      "sizeBytes": 4879
+    },
+    "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "sizeBytes": 9031
+    },
+    "targets/1929632a15a292f5dbe90b0d16941649b35e4a0758059f42f54777147049eb7e.catalogue.json": {
+      "sha256": "1929632a15a292f5dbe90b0d16941649b35e4a0758059f42f54777147049eb7e",
+      "sizeBytes": 23411
+    },
+    "targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f",
+      "sizeBytes": 5280
+    },
+    "targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "sizeBytes": 21857
+    },
+    "targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "sizeBytes": 7918
+    },
+    "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "sizeBytes": 1676
+    },
+    "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "sizeBytes": 2738
+    },
+    "targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "sizeBytes": 7617
+    },
+    "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "sizeBytes": 1699
+    },
+    "targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "sizeBytes": 10640
+    },
+    "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "sizeBytes": 1617
+    },
+    "targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "sizeBytes": 12679
+    },
+    "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "sizeBytes": 1652
+    },
+    "targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "sizeBytes": 9285
+    },
+    "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "sizeBytes": 1146
+    },
+    "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "sizeBytes": 4783
+    },
+    "targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7",
+      "sizeBytes": 6220
+    },
+    "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "sizeBytes": 4223
+    },
+    "targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55",
+      "sizeBytes": 4642
+    },
+    "targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+      "sizeBytes": 11228
+    },
+    "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "sizeBytes": 1656
+    },
+    "targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "sizeBytes": 6071
+    },
+    "targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "sizeBytes": 10745
+    },
+    "targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11",
+      "sizeBytes": 6075
+    },
+    "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "sizeBytes": 4586
+    },
+    "targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "sizeBytes": 9388
+    },
+    "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "sizeBytes": 3517
+    },
+    "trusted-root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    }
+  },
+  "verifiedTufClientDownload": {
+    "client": "tuftool 0.17",
+    "trustedRootExplicitlyProvided": true,
+    "unsafeOrExpiryBypassFlagsUsed": false,
+    "targets": [
+      "catalogue.json",
+      "windows-dbbrowser-20261011.acceptance.json",
+      "DB.Browser.for.SQLite-v3.13.1-win64.msi"
+    ]
+  },
+  "authenticationChanged": false,
+  "ubuntuCountsChanged": false,
+  "sourceProviderV2NotDeployedOrGuiAccepted": true,
+  "productCodeChanged": false,
+  "limits": [
+    "Only fixed DB Browser for SQLite 3.13.1 x64 on Wine 11.14 win64 and two small 8192-byte SQLite fixtures are in scope; SQLCipher is not tested or separately counted.",
+    "Original GUI opened a Chinese filename, used Save Database As to an ASCII path, executed one UPDATE, one INSERT SELECT and one SELECT, clicked Write Changes, and explicitly reopened the saved database in a fresh process.",
+    "Startup displays EnableNonClientDpiScaling failed (120, Call not implemented); manually acknowledged in each tested process. DPI warning is not fixed and unattended launch is unverified.",
+    "Direct Chinese keyboard input, large databases, alternate schemas, import/export, encryption, remote connections, plugins and full database-editor acceptance are untested.",
+    "Fixed root license declares MPL-2.0 OR GPL-3.0-or-later; installed text matches only after CRLF normalization. Full bundled component and icon redistribution closure is unverified; fixed plugin notice qualifies project-specific CC BY-SA icon permission versus possible CC BY-NC-SA for others.",
+    "Authenticode, reproducible build, guest network download, new-machine registration, configuration migration and cross-version upgrades are unverified.",
+    "Independent market generation repeated Save Database As, SQL update/insert, Write Changes and explicit fresh-process reopen. Cached same-version update, exact original-generation rollback and normal Core/Store restart passed; Store IPC was used, not GUI action buttons.",
+    "Pre-rollback full checkpoint was not captured because of a recursive verification helper. Rollback was submitted despite that helper failure; recovery explicitly checked after-rollback against after-activation and retained all old 208 Core/71 Store fields. No full 211 Core/72 Store pre-rollback checkpoint comparison is claimed."
+  ],
+  "finalVerificationEvidence": "2026-10-11-dbbrowser-final-verification.json",
+  "independentReviewEvidence": "2026-10-11-dbbrowser-review.json"
+}

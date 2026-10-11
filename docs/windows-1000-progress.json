@@ -267,6 +267,19 @@
       "failureEvidence": "docs/evidence/2026-10-11-notepad2mod-failures.json",
       "fullEditorAcceptance": false,
       "limitation": "Only small Chinese-filename UTF-8 BOM/CRLF plain replacement, ASCII append, Save As to ASCII output paths and fresh-process reopen passed in original and independent market generations, followed by cached same-version update, exact rollback and normal service restart. Direct Chinese input, large files, advanced editing, component license closure, guest online downloads, new-machine registration, settings migration and cross-version upgrades are unverified."
+    },
+    {
+      "id": "dbbrowser",
+      "version": "3.13.1",
+      "sha256": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688",
+      "sizeBytes": 19857408,
+      "evidence": "docs/evidence/windows-dbbrowser-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v29/tuf",
+      "publication": "docs/evidence/2026-10-11-dbbrowser-publication.json",
+      "report": "docs/windows-rolling-20261011-dbbrowser.md",
+      "failureEvidence": "docs/evidence/2026-10-11-dbbrowser-failures.json",
+      "fullDatabaseEditorAcceptance": false,
+      "limitation": "Limited Chinese-filename SQLite opening, Save Database As to ASCII path, SQL UPDATE/INSERT SELECT/SELECT, Write Changes and explicit fresh-process reopen in original and independent market generations, with manual startup DPI warning acknowledgment; cached same-version update, exact rollback and normal Core/Store restart. DPI warning unresolved; full component/icon license closure, SQLCipher, advanced database features, direct Chinese input, network download, new-machine registration, migration and cross-version upgrades are unverified."
     }
   ],
   "queue": [
@@ -439,12 +452,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next unaccepted official fixed artifact. Preserve 27 completed applications and 12 existing blocked candidates; Notepad2-mod limited small UTF-8 BOM/CRLF text workflow passed. Preserve full 205 Core/71 Store records and role 37 trust; old fixed-count scripts are historical.",
+  "next": "Select next unaccepted official fixed artifact. Preserve 28 completed applications and 12 existing blocked candidates. DB Browser SQLite has limited two-small-database GUI acceptance with manual DPI warning acknowledgment. Preserve full 212 Core/73 Store records and role 38 trust; older fixed-count scripts are historical.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 27,
+    "acceptedLocalMarket": 28,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -452,23 +465,23 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v28/tuf",
-    "metadataVersion": 37,
-    "catalogueEntries": 29,
-    "acceptedDistinctWindowsApps": 27,
+    "signedCatalogue": "catalogue/candidate-v29/tuf",
+    "metadataVersion": 38,
+    "catalogueEntries": 30,
+    "acceptedDistinctWindowsApps": 28,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-notepad2mod-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-dbbrowser-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-frhed-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-notepad2mod-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-notepad2mod-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-dbbrowser-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-notepad2mod.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-dbbrowser.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-10-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-notepad2mod.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-notepad2mod-final-verification.json"
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-dbbrowser.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-dbbrowser-final-verification.json"
 }

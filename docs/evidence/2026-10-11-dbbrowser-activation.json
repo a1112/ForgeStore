@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 38,
+  "catalogueEntries": 30,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "originalCoreJobsPreserved": true,
+  "coreJobs": 208,
+  "fullStoreRowsPreserved": true,
+  "storeRows": 71,
+  "previousInstalledAndEntriesPreserved": true,
+  "dbbrowserEntry": {
+    "compatibility": {
+      "evidence": "windows-dbbrowser-20261011.acceptance.json#dbbrowser",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688",
+        "size": 19857408,
+        "target": "DB.Browser.for.SQLite-v3.13.1-win64.msi",
+        "url": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "dbbrowser"
+    },
+    "id": "dbbrowser",
+    "license": "MPL-2.0 OR GPL-3.0-or-later",
+    "name": {
+      "en": "DB Browser for SQLite",
+      "zhCN": "DB Browser for SQLite"
+    },
+    "origin": "https://sqlitebrowser.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "DB Browser for SQLite Team",
+    "summary": {
+      "en": "Small Chinese-name SQLite open, Save As, SQL update/insert, Write Changes and fresh-process reopen tested; manually dismiss startup DPI warning.",
+      "zhCN": "小型中文名 SQLite 打开、另存、SQL 更新与插入、保存及新进程重开已测；启动需手动确认 DPI 警告"
+    },
+    "version": "3.13.1"
+  },
+  "dbbrowserInstalled": {
+    "appId": "dbbrowser",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "3.13.1"
+  },
+  "serviceGuardsPreserved": true,
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "signedCatalogue": "catalogue/candidate-v29/tuf",
+  "historicalPhase": "activation before independent market lifecycle"
+}
