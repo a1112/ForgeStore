@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "meld",
+  "version": "3.22.2",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 42,
+  "signedCatalogue": "catalogue/candidate-v45/tuf",
+  "metadataVersion": 54,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 44,
+  "excludedFixtures": 2,
+  "signedActualTargets": 89,
+  "publicCatalogueFiles": 50,
+  "sourceEvidence": {
+    "reference": "2026-10-11-meld-source.json",
+    "sha256": "371b9f96d0c9a4eeb4ab5161094e1f9c7f0221ecb76569439de0ef37fe08b018"
+  },
+  "originalAcceptance": {
+    "reference": "windows-meld-20261011.acceptance.json",
+    "sha256": "f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d"
+  },
+  "originalGeneration": "gen-job-1791735260445-1",
+  "marketGeneration": "gen-job-1791736703487-5",
+  "definitionDigest": "sha256:baf77e4683a7d7a29d10b3f408b2bd894bc7e717e7f3fa0d35c8c3a0dd19d0fb",
+  "originalSave": {
+    "generationId": "gen-job-1791735260445-1",
+    "inputPins": {
+      "MeldTests/原始左.txt": {
+        "sizeBytes": 58,
+        "sha256": "641826b4769fd3865a9d3cee7d0af9e6c4d8db943ae830e03316738e93a49348"
+      },
+      "MeldTests/原始右.txt": {
+        "sizeBytes": 57,
+        "sha256": "503133c46bf4b268a338cbfbd23012603523fccd172cc5cda6b1043a44574233"
+      }
+    },
+    "inputsUnchanged": true,
+    "outputRelativePath": "MeldTests/original-merged.txt",
+    "outputPin": {
+      "sizeBytes": 57,
+      "sha256": "503133c46bf4b268a338cbfbd23012603523fccd172cc5cda6b1043a44574233"
+    },
+    "outputExactlyMatchesRightSource": true,
+    "textUtf8": "ForgeOS Meld original\n中文内容保留\nVALUE=AFTER\nEND\n",
+    "workflow": "mouse-only single difference block right-to-left merge and GUI menu Save Left Pane As",
+    "keyboardEditingAccepted": false,
+    "firstKeyboardDiagnosticAccepted": false
+  },
+  "marketSave": {
+    "generationId": "gen-job-1791736703487-5",
+    "inputPins": {
+      "MeldTests/市场左.txt": {
+        "sizeBytes": 56,
+        "sha256": "be4bdd7273618ada4764d8a43c9e7f91bc8c4eb40c458f4fc3e91e65f298aab4"
+      },
+      "MeldTests/市场右.txt": {
+        "sizeBytes": 55,
+        "sha256": "5f0dca2e620ea01e0626cd5cb7e651085e402c372dc11e81efd0a05394030559"
+      }
+    },
+    "inputsUnchanged": true,
+    "outputRelativePath": "MeldTests/market-merged.txt",
+    "outputPin": {
+      "sizeBytes": 55,
+      "sha256": "5f0dca2e620ea01e0626cd5cb7e651085e402c372dc11e81efd0a05394030559"
+    },
+    "outputExactlyMatchesRightSource": true,
+    "textUtf8": "ForgeOS Meld market\n中文市场内容\nVALUE=AFTER\nEND\n",
+    "workflow": "mouse-only single difference block right-to-left merge and GUI menu Save Left Pane As",
+    "keyboardEditingAccepted": false,
+    "firstKeyboardDiagnosticAccepted": false
+  },
+  "fiveNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "failedKeyboardDiagnosticAdditionalNormalExit": 0,
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "jobId": "1166d356-ebe3-447b-af69-deffe5e05097"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "meld",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "124ec295-f0f1-461a-9d4d-441469654b72",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791735260445-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 330,
+    "beforeRollbackStoreRows": 101,
+    "afterRollbackCoreJobs": 330,
+    "afterRollbackStoreRows": 102,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "45dfa08cbed7dd5957e091afad3b95cbe0ed488f5d5a83d1175d1ff6e85edae6",
+      "coreJobs": 330,
+      "fullStoreRows": 102
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 331,
+  "fullStoreRows": 102,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationsAndFixedEvidenceDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalByteChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3441814,
+        "sha256": "f711f328bb6d85876e14efd0274d8ee803af05f2bf824254c03c9ca5349a97c6"
+      },
+      "after": {
+        "sizeBytes": 3441814,
+        "sha256": "9d5b32d5f50a779ff02ca40cb1f0358939fb4266cb7def61bec26ed56afaa14d"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 298,
+      "textDiffPreservedPrivately": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 101797,
+        "sha256": "a5ec16ff97459838a1cf6c0040519d292f695cc5ba0956aa2d638ad7ded1af83"
+      },
+      "after": {
+        "sizeBytes": 101797,
+        "sha256": "be661e67670b3d7fb49f0425eed51d4284d239c9e0a39c91ad70bb895fc9be3d"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 20,
+      "textDiffPreservedPrivately": true
+    },
+    "drive_c/users/forge/AppData/Local/meld.log": {
+      "before": {
+        "sizeBytes": 51262,
+        "sha256": "26abd88f1083bb1b6395f18b8c992f00107fd45a1da20bbc0fd3d9c717e4daef"
+      },
+      "after": {
+        "sizeBytes": 51708,
+        "sha256": "f27f8b69ddce2ca6ab407e59fed049c775d7a6643042c7623ffeb7303b101efa"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 10,
+      "textDiffPreservedPrivately": true
+    }
+  },
+  "currentDataAndConfigurationMatchedAcrossRestart": true,
+  "originalHistoricalFrozenFiles": 26,
+  "oldImmutableFilesMatched": 1185,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "Limited mouse-only comparison of two small UTF-8/LF files with Chinese filenames/content; single right-to-left difference-block merge, GUI Save Left Pane As to ASCII path, explicit fresh-process output reopen showing Files identical and independent exact-byte comparison. Synthetic text files are not additional applications.",
+    "Keyboard editing, caret navigation and shortcuts did not work reliably and remain UNFIXED. Original attempted keyboard workflow did not produce a saved output and is not accepted. GTK logs report keyboard-layout translation failures; static GTK source and read-only guessed layout checks do not prove the exact deployed failing function or a runtime repair. No general GTK/Wine fix claimed.",
+    "Direct Chinese keyboard input, large/damaged files, other encodings/line endings, multi-block/three-way merge, folder or version-control comparison, regex/filter/undo/advanced editing, network download, fresh-machine registration, migration, cross-version upgrade and unattended use unverified. GUI Store update/rollback buttons unverified.",
+    "Source archive matches official GNOME SHA-256; installer SHA is locally fixed from official HTTPS only, no published installer digest verified. Main source GPL-2.0-or-later and installed COPYING exactly matches fixed source. Complete GTK/Python/cx_freeze/GtkSourceView/OpenSSL and bundle license closure, binary-source correspondence, Authenticode/OpenPGP and reproducible build unverified.",
+    "Native managed MSI defaults used. No Core/program/global-context/launcher-environment/working-directory/font-package/DLL/runtime changes. Isolated application font preference Monospace24 set through GUI for legibility; this is not a keyboard fix.",
+    "Original left/right58/57bytes and market56/55bytes; GUI saved57/55byte outputs exactly equal corresponding right input. Five accepted formal GUI tasks normal caption-close exit0 and wineserver stop. Initial keyboard process is a separate failed functional diagnostic despite exit0.",
+    "Cached same-version update, independent market generation, exact original rollback and normal two-service restart passed via Store IPC. GUI update/rollback buttons unverified. Keyboard editing/navigation remains broken; this is not a complete comparison/editor acceptance.",
+    "Third original GUI changed system.reg,user.reg and meld.log bytes. Before/after actual raw bytes and298/20/10 diff lines preserved privately; causes unestablished. Original proofs immutable, current new pins matched across restart."
+  ],
+  "remotePushed": false,
+  "githubAuthenticationStillPendingFromPriorRound": true,
+  "authenticationCheckedThisRound": false,
+  "newDeviceCodeIssued": false,
+  "networkTransfersAccepted": false,
+  "keyboardEditingAccepted": false,
+  "keyboardIssueFixed": false,
+  "fullComparisonEditorAccepted": false,
+  "guiAboutVersionObserved": false,
+  "unattendedStartupAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false
+}

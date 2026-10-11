@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "meld",
+  "fixedVersion": "3.22.2",
+  "officialSite": "https://meldmerge.org/",
+  "installer": {
+    "fileName": "Meld-3.22.2-mingw.msi",
+    "url": "https://download.gnome.org/binaries/win32/meld/3.22/Meld-3.22.2-mingw.msi",
+    "finalUrl": "https://download.gnome.org/binaries/win32/meld/3.22/Meld-3.22.2-mingw.msi",
+    "sizeBytes": 28401664,
+    "sha256": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8",
+    "upstreamPublishedDigestVerified": false
+  },
+  "sourceArchive": {
+    "fileName": "meld-3.22.2.tar.xz",
+    "url": "https://download.gnome.org/sources/meld/3.22/meld-3.22.2.tar.xz",
+    "finalUrl": "https://download.gnome.org/sources/meld/3.22/meld-3.22.2.tar.xz",
+    "sizeBytes": 676376,
+    "sha256": "46a0a713fbcd1b153b377a1e0757c8ce255c9822467658eacfbd89b1e92316ef",
+    "officialSha256Matched": true
+  },
+  "checksumFile": {
+    "fileName": "meld-3.22.2.sha256sum",
+    "url": "https://download.gnome.org/sources/meld/3.22/meld-3.22.2.sha256sum",
+    "finalUrl": "https://download.gnome.org/sources/meld/3.22/meld-3.22.2.sha256sum",
+    "sizeBytes": 168,
+    "sha256": "57abe6f6211fd2b8f178ecd7f9e0b74003d61eda6ee67aa87446f07747bf1222"
+  },
+  "officialBinarySourcesNotice": {
+    "fileName": "SOURCES",
+    "url": "https://download.gnome.org/binaries/win32/meld/3.22/SOURCES",
+    "finalUrl": "https://download.gnome.org/binaries/win32/meld/3.22/SOURCES",
+    "sizeBytes": 245,
+    "sha256": "8488b45e6d3af05e4a11007d1a96e3c6fc8fed610b50034cf3405ceacdce4349"
+  },
+  "sourceMembers": {
+    "COPYING": {
+      "reference": "2026-10-11-meld/source/COPYING",
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "README.md": {
+      "reference": "2026-10-11-meld/source/README.md",
+      "sizeBytes": 2821,
+      "sha256": "f257c24153855d903e3eb5b383a697ccf9bb1d24423611f57e7e2e949b06cc5e"
+    },
+    "bin/meld": {
+      "reference": "2026-10-11-meld/source/bin/meld",
+      "sizeBytes": 15851,
+      "sha256": "c913d83178d9f721ba6080a35b05feb033998e4c239fe8a1d051e24bba3253d3"
+    },
+    "meld/conf.py.in": {
+      "reference": "2026-10-11-meld/source/meld/conf.py.in",
+      "sizeBytes": 1563,
+      "sha256": "4836d8755f5aac249b0107c3538717223510c667e70ee64bb72452abf1662e03"
+    },
+    "meld/filediff.py": {
+      "reference": "2026-10-11-meld/source/meld/filediff.py",
+      "sizeBytes": 109490,
+      "sha256": "ff819466efac9240c8523f2616fffdd7d518edeeafeb93466a0c3b301455c8b1"
+    },
+    "meld/meldapp.py": {
+      "reference": "2026-10-11-meld/source/meld/meldapp.py",
+      "sizeBytes": 15544,
+      "sha256": "c7273bd5d528ffdd70ec15c97a7af82f41c9e306d00530b82b5ab69b4105d06f"
+    },
+    "meld/meson.build": {
+      "reference": "2026-10-11-meld/source/meld/meson.build",
+      "sizeBytes": 2190,
+      "sha256": "11707ef129806035b0f9174d085d69d33c1b14dd58966fcac2b2f12d3599c93a"
+    },
+    "meson.build": {
+      "reference": "2026-10-11-meld/source/meson.build",
+      "sizeBytes": 1564,
+      "sha256": "fb6385a1061e73b8949d67a75f8e426c115a1a847627ab1ed17b7416504615e3"
+    }
+  },
+  "mainProgramLicense": "GPL-2.0-or-later",
+  "installedCopyingByteEqualFixedSource": true,
+  "installedLicenseNamedFiles": {
+    "frozen_application_license.txt": {
+      "sizeBytes": 3252,
+      "sha256": "b742fbe397e36b470fa15280d34b27bbb31c96bedad480a5c69066b4455c6678"
+    },
+    "share/doc/meld-3.22.2/COPYING": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    }
+  },
+  "allBundledLicensesVerified": false,
+  "binarySourceCorrespondenceVerified": false,
+  "authenticodeVerified": false,
+  "openPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "nativeInstallerDefinition": {
+    "fileName": "Meld-3.22.2-mingw.msi",
+    "msi": {
+      "architecture": "x86_64",
+      "handler": {
+        "action": "install",
+        "kind": "msiexec",
+        "properties": {},
+        "reboot": "suppress",
+        "ui": "none"
+      },
+      "maximumRuntimeMilliseconds": 300000,
+      "sizeBytes": 28401664
+    },
+    "sha256": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8"
+  },
+  "managedMsiStructureInspection": {
+    "exitCode": 0,
+    "stderr": "",
+    "tableRecordCount": 6,
+    "artifactSha256": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8"
+  },
+  "publicTableRecordContainsPreviewsOnly": true,
+  "notClaimedLatest": true
+}

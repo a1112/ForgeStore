@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 54,
+  "rootVersion": 1,
+  "entries": 44,
+  "coreJobs": 327,
+  "fullStoreRows": 100,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-meld-20261011.acceptance.json#meld",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8",
+        "size": 28401664,
+        "target": "Meld-3.22.2-mingw.msi",
+        "url": "https://download.gnome.org/binaries/win32/meld/3.22/Meld-3.22.2-mingw.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "meld"
+    },
+    "id": "meld",
+    "license": "GPL-2.0-or-later (main program; full bundle closure unverified)",
+    "name": {
+      "en": "Meld",
+      "zhCN": "Meld 鼠标差异合并"
+    },
+    "origin": "https://meldmerge.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Kai Willadsen",
+    "summary": {
+      "en": "Limited mouse-only comparison, single-block merge and save/reopen tested; keyboard editing/navigation remains broken.",
+      "zhCN": "仅有限鼠标比较、单差异块合并和保存重开通过；键盘编辑与导航仍有问题"
+    },
+    "version": "3.22.2"
+  },
+  "installed": {
+    "appId": "meld",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "3.22.2"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "de0b1c88f166b8a721abc125647d545f94a820ae846f521c772c47c0a9a40d31",
+    "coreJobs": 327,
+    "fullStoreRows": 100
+  },
+  "independentMarketGenerationPending": true
+}
