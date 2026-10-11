@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 64,
+  "rootVersion": 1,
+  "entries": 51,
+  "coreJobs": 386,
+  "fullStoreRows": 116,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-mediainfo-20261012.acceptance.json#mediainfo",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "a209d32b95f9282662df5f1d4e76a6f00149af62e27d0f12c0428ba29ebe4393",
+        "size": 6357952,
+        "target": "MediaInfo_GUI_26.05_Windows_x64.exe",
+        "url": "https://mediaarea.net/download/binary/mediainfo-gui/26.05/MediaInfo_GUI_26.05_Windows_x64.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "mediainfo"
+    },
+    "id": "mediainfo",
+    "license": "BSD-2-Clause",
+    "name": {
+      "en": "MediaInfo",
+      "zhCN": "MediaInfo 媒体信息工具"
+    },
+    "origin": "https://mediaarea.net/en/MediaInfo",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "MediaArea.net",
+    "summary": {
+      "en": "Limited small PCM WAV metadata, XML export and fresh-process open tested; sponsor/update networking and advanced media functions unverified.",
+      "zhCN": "仅小型 PCM WAV 信息读取、XML 导出及新进程打开通过；赞助和更新联网、广泛媒体功能未验收"
+    },
+    "version": "26.05"
+  },
+  "installed": {
+    "appId": "mediainfo",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "26.05"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "03e4dbc403e676b27e69712269236e8a071adfa2aed42e2b9fffd40a18ca4b25",
+    "coreJobs": 386,
+    "fullStoreRows": 116
+  },
+  "independentMarketGenerationPending": true
+}

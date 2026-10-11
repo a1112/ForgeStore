@@ -1,0 +1,1716 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791760329140-1",
+    "createdAtMilliseconds": 1791760329146,
+    "definition": {
+      "bottleId": "gui-mediainfo",
+      "category": "multimedia",
+      "compatibilityRating": "unknown",
+      "id": "mediainfo",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\MediaInfo"
+        ],
+        "fileName": "MediaInfo_GUI_26.05_Windows_x64.exe",
+        "sha256": "a209d32b95f9282662df5f1d4e76a6f00149af62e27d0f12c0428ba29ebe4393"
+      },
+      "launchers": [
+        {
+          "executable": "MediaInfo/MediaInfo.exe",
+          "id": "main",
+          "name": "MediaInfo"
+        }
+      ],
+      "name": "MediaInfo",
+      "publisher": "MediaArea.net",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "26.05"
+    },
+    "definitionDigest": "sha256:4dcbd743ce9b22c87f3953c39bedffdf07f0a6be2cef8b47affd7c22c7e4c1d4",
+    "id": "gen-job-1791760329140-1",
+    "launcherDigests": {
+      "main": "sha256:1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791760343405
+  },
+  "definition": {
+    "bottleId": "gui-mediainfo",
+    "category": "multimedia",
+    "compatibilityRating": "unknown",
+    "id": "mediainfo",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/D=C:\\MediaInfo"
+      ],
+      "fileName": "MediaInfo_GUI_26.05_Windows_x64.exe",
+      "sha256": "a209d32b95f9282662df5f1d4e76a6f00149af62e27d0f12c0428ba29ebe4393"
+    },
+    "launchers": [
+      {
+        "executable": "MediaInfo/MediaInfo.exe",
+        "id": "main",
+        "name": "MediaInfo"
+      }
+    ],
+    "name": "MediaInfo",
+    "publisher": "MediaArea.net",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "26.05"
+  },
+  "installedFiles": {
+    "MediaInfo.dll": {
+      "sizeBytes": 8463768,
+      "sha256": "a9416e39aba7a67f442bccfc8e576ba6bf2892b09d066ac1fb1f32f317a6e902"
+    },
+    "uninst.exe": {
+      "sizeBytes": 142200,
+      "sha256": "7e36f4d64c0fd612a3956a549759acf7a9c206682a48bc245b43ac7125fd2ce3"
+    },
+    "MediaInfo.url": {
+      "sizeBytes": 56,
+      "sha256": "062b359701f7f017de01903eff4154a638c8e16e57e1f756fb544e806e87618f"
+    },
+    "WebView2Loader.dll": {
+      "sizeBytes": 165464,
+      "sha256": "f4d811cda483adb33220c5a856c5ec8dca3a095fde54b44f08e1279a6a5efd33"
+    },
+    "resources.pri": {
+      "sizeBytes": 5456,
+      "sha256": "807ff0dfedc0d6fcc4e6ccf2c3970bca55f90cff0eba24b4e9667583fe6735e1"
+    },
+    "License.html": {
+      "sizeBytes": 4729,
+      "sha256": "d68413f8d2002897e0b5d1be77490b14cfbfb6a47544093e20ebced0e8beed18"
+    },
+    "History.txt": {
+      "sizeBytes": 179962,
+      "sha256": "eefa33c3d917a79871ee81281855ddf5803bceee0c995667e7e9c126272fd189"
+    },
+    "MediaInfo.VisualElementsManifest.xml": {
+      "sizeBytes": 313,
+      "sha256": "cbd7bdfd49bb5357224a9b339483fdfdd957871c3bcae87371279df5597f1ed2"
+    },
+    "LIBCURL.DLL": {
+      "sizeBytes": 817664,
+      "sha256": "22b972f008ab8bb5bc225889a8be60683b2bf7546b8e0d699b5b4186bdbb7cc1"
+    },
+    "MediaInfo_InfoTip.dll": {
+      "sizeBytes": 166296,
+      "sha256": "0bff4ac5dc0e914c355b99589365e73e77e90495d7ff45c2b06bc9913614c34c"
+    },
+    "ReadMe.txt": {
+      "sizeBytes": 205,
+      "sha256": "607e3d4b5484b2309659bc66df59d23622601842e9fbd6fa8e1552542d665959"
+    },
+    "MediaInfo.exe": {
+      "sizeBytes": 9929624,
+      "sha256": "1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd"
+    },
+    "Assets/Wide310x150Logo.scale-200_altform-colorful_theme-light.png": {
+      "sizeBytes": 5594,
+      "sha256": "3d82cc9aea1bf5d7661fcde1926de5d79662196c0fa10ecddc79f8e95e97f3a1"
+    },
+    "Assets/Square150x150Logo.scale-400.png": {
+      "sizeBytes": 13122,
+      "sha256": "3be07ab2ba531f14ceda70cae9df276652f5e1447e44f8ed4e75f406355fcfec"
+    },
+    "Assets/LargeTile.scale-200.png": {
+      "sizeBytes": 13777,
+      "sha256": "beb8cbdcaac7ce742c1f24a061a1a22cb42757965cfe0caef2e1571dfb101ca2"
+    },
+    "Assets/Square44x44Logo.scale-200.png": {
+      "sizeBytes": 3019,
+      "sha256": "2de877aa677f1acac90644b9a833feeab4e529dd190f18a975009b528593f50f"
+    },
+    "Assets/Square44x44Logo.altform-lightunplated_targetsize-48.png": {
+      "sizeBytes": 1712,
+      "sha256": "762e0946ac632a2f7d9708e38d37179dfa0f301bc44ee4585788098d32565ae8"
+    },
+    "Assets/Wide310x150Logo.scale-100.png": {
+      "sizeBytes": 2902,
+      "sha256": "7198f28238bc530fe34ec61382172acef49795db7e43b998e0f264aff3c58e4c"
+    },
+    "Assets/SmallTile.png": {
+      "sizeBytes": 6769,
+      "sha256": "6efa92a822d785f3298e2720b6869bc31a5b8e2e09ddf826dc2a6f7467dadded"
+    },
+    "Assets/LargeTile.scale-200_altform-colorful_theme-light.png": {
+      "sizeBytes": 11592,
+      "sha256": "89b35f29f3f5087c2778e3b123068cac261eac93fc7b4a4d5be35b82770f12bc"
+    },
+    "Assets/Square44x44Logo.scale-100_altform-colorful_theme-light.png": {
+      "sizeBytes": 1177,
+      "sha256": "7dc8f1cb44be94ccf08bbe3371db52d9502f5af29a6de5337700ecb5b522b59e"
+    },
+    "Assets/SmallTile.scale-400.png": {
+      "sizeBytes": 7967,
+      "sha256": "2a21d3c8efadcaadf1c888d9737b4d3e198a7aa1c9a059c4312442d115e126a6"
+    },
+    "Assets/Square44x44Logo.scale-400_altform-colorful_theme-light.png": {
+      "sizeBytes": 5615,
+      "sha256": "244c3444c2272b358773711ee64b89080f91ec4b58ffe89d813885aa7657e1d3"
+    },
+    "Assets/Square150x150Logo.png": {
+      "sizeBytes": 11001,
+      "sha256": "833eed2bb069f0bba2dd4bd72450c516b4fd3081dcfbc33382469c93aa4b6901"
+    },
+    "Assets/Wide310x150Logo.scale-400_altform-colorful_theme-light.png": {
+      "sizeBytes": 12482,
+      "sha256": "8032acb75221d860aaae4c5d8cd124be0995a8b6b9e68c118c46922797f65af0"
+    },
+    "Assets/SmallTile.scale-200_altform-colorful_theme-light.png": {
+      "sizeBytes": 3112,
+      "sha256": "9c45f4a4a22417509a496862315f5f572048567273a915bf5ab4c93db15d4333"
+    },
+    "Assets/Square44x44Logo.altform-unplated_targetsize-16.png": {
+      "sizeBytes": 563,
+      "sha256": "32de2ee1e83b74582b34e7317353bed80235eec17cad21213c7b106f2de80e40"
+    },
+    "Assets/Square44x44Logo.targetsize-48.png": {
+      "sizeBytes": 1527,
+      "sha256": "9c9b08801f9f255ae520539ebc9280c8ab2fc4ed8edc24596041a7caa6c3b05b"
+    },
+    "Assets/Square44x44Logo.scale-400.png": {
+      "sizeBytes": 6489,
+      "sha256": "61b2e50a4dcce79c10ee4ca6a0755811a60b4acbfeadca2293a9ebd9585afe01"
+    },
+    "Assets/Square150x150Logo.scale-100_altform-colorful_theme-light.png": {
+      "sizeBytes": 2338,
+      "sha256": "e6760ae70183e696b6a8c35fa6fc97627360f3b37f8dd15c258922ea610aef3e"
+    },
+    "Assets/Square150x150Logo.scale-200.png": {
+      "sizeBytes": 5921,
+      "sha256": "731827680e7bfbb2925acce10c618471172a9e780fe735bb08095a96b22c918e"
+    },
+    "Assets/SmallTile.scale-400_altform-colorful_theme-light.png": {
+      "sizeBytes": 6769,
+      "sha256": "6efa92a822d785f3298e2720b6869bc31a5b8e2e09ddf826dc2a6f7467dadded"
+    },
+    "Assets/Wide310x150Logo.scale-400.png": {
+      "sizeBytes": 14772,
+      "sha256": "40e56c2f4b0c2f8bba976a01d032aa2fb206c3c6500b3071fe6cefe75fd9b89b"
+    },
+    "Assets/LargeTile.scale-400_altform-colorful_theme-light.png": {
+      "sizeBytes": 26388,
+      "sha256": "e4d7ac0378bf07fdd86e313eda350811db76f71eb18b7a4a77e67e72ceaee2af"
+    },
+    "Assets/LargeTile.scale-100.png": {
+      "sizeBytes": 6009,
+      "sha256": "73cdeb1aa445c88780b27e1e161fbe8d1bc06e3e603a066d833bb16ead402233"
+    },
+    "Assets/Wide310x150Logo.scale-100_altform-colorful_theme-light.png": {
+      "sizeBytes": 2565,
+      "sha256": "996fda5a6e4fe4a54e86f3dc315be0e38a2d1fc99c99417c3a7f5520c750a488"
+    },
+    "Assets/Square44x44Logo.scale-200_altform-colorful_theme-light.png": {
+      "sizeBytes": 2650,
+      "sha256": "59e1468a2d0c1abdfe915b02149aeda930d62b3500363d23bd40ff8c4d3b31b8"
+    },
+    "Assets/SmallTile.scale-200.png": {
+      "sizeBytes": 3525,
+      "sha256": "093c58e828f640290f511254ffd38665d38b4a5d481d0341b0d90710755bf41b"
+    },
+    "Assets/Square150x150Logo.scale-400_altform-colorful_theme-light.png": {
+      "sizeBytes": 11001,
+      "sha256": "833eed2bb069f0bba2dd4bd72450c516b4fd3081dcfbc33382469c93aa4b6901"
+    },
+    "Assets/LargeTile.scale-100_altform-colorful_theme-light.png": {
+      "sizeBytes": 5341,
+      "sha256": "605c9e6d3132969aab575cd78f6e3cc7837f69d67b4913a018e2b70dd17b7b28"
+    },
+    "Assets/Wide310x150Logo.scale-200.png": {
+      "sizeBytes": 6466,
+      "sha256": "d797fb48046efee653ecdebece8fc73ee1537c64786fa280048c670e4bbafd1f"
+    },
+    "Assets/SmallTile.scale-100.png": {
+      "sizeBytes": 1612,
+      "sha256": "3acc9624ce5ebba5011aaa53cac4263993187acc460a7f0b9fcbc9577024a3ed"
+    },
+    "Assets/Square44x44Logo.targetsize-16.png": {
+      "sizeBytes": 476,
+      "sha256": "80830ef331c4ba2bc2c370bb1b679c263ddeb3a2a9aa91d49863954e5db4abe6"
+    },
+    "Assets/Square150x150Logo.scale-200_altform-colorful_theme-light.png": {
+      "sizeBytes": 5163,
+      "sha256": "85e4fc9713a3982332d9453aa790e8e86a5189ca393ea21692677a112498088d"
+    },
+    "Assets/SmallTile.scale-100_altform-colorful_theme-light.png": {
+      "sizeBytes": 1416,
+      "sha256": "14258a738920dd953873fcc8479339082fdde7fcbdc65016fff78fd9cbb9af14"
+    },
+    "Assets/Square44x44Logo.altform-lightunplated_targetsize-256.png": {
+      "sizeBytes": 10533,
+      "sha256": "23cc91fb39e61a4584bb9592a39f73f7703f1b8b1c72091131975478d5ce5113"
+    },
+    "Assets/LargeTile.scale-400.png": {
+      "sizeBytes": 32051,
+      "sha256": "fdb451d4491ba5b612a8c20d1629d3e2975b0c83052a01fd6b09a5065004fba5"
+    },
+    "Assets/Square150x150Logo.scale-100.png": {
+      "sizeBytes": 2658,
+      "sha256": "83da725de763b10659e846d8764fbf151bba5b423d2fcd783e9e116f49c12470"
+    },
+    "Assets/Square44x44Logo.scale-100.png": {
+      "sizeBytes": 1304,
+      "sha256": "0afad29f28c98c9a49d45926ea6304bbd16d2c4f9c8695ef53344869cf024484"
+    },
+    "Assets/Square44x44Logo.altform-unplated_targetsize-48.png": {
+      "sizeBytes": 1952,
+      "sha256": "6e8f1456009fbf0764c98540fbf1edf15403bede4fd490cff42d595cf79a1dcd"
+    },
+    "Assets/Square44x44Logo.targetsize-256.png": {
+      "sizeBytes": 10040,
+      "sha256": "033ca8d8db023c7414c042ea235cdc0dfae8a6b49e241df5c61133b6f1c1ee12"
+    },
+    "Assets/Square44x44Logo.altform-lightunplated_targetsize-16.png": {
+      "sizeBytes": 510,
+      "sha256": "935773f35cedc225b4e86613a8febc94940ab09f06049fc5f721261dd891ffa4"
+    },
+    "Assets/Square44x44Logo.altform-unplated_targetsize-256.png": {
+      "sizeBytes": 12988,
+      "sha256": "481d90ccfee67b94350044ebc595597243e0d88a290db6b41884719fef79fb5b"
+    },
+    "Plugin/Custom/it.Esempio.csv": {
+      "sizeBytes": 1035,
+      "sha256": "6e1d4cc342e59c22d9c09b3c76d906faeb7ddf53d33963eb1f89f57b04a4c8c7"
+    },
+    "Plugin/Custom/Table by streams, compact (HTML).csv": {
+      "sizeBytes": 2341,
+      "sha256": "b932545bd4c69bb9ed37c3c969e32dd863b3787efe1da8077bf357cc84c07931"
+    },
+    "Plugin/Custom/Example.csv": {
+      "sizeBytes": 1021,
+      "sha256": "a785697b761aea39467134ec4e0fbd39218685b295553773ef5e5d707b025ab9"
+    },
+    "Plugin/Custom/Table by streams, verbose (HTML).csv": {
+      "sizeBytes": 4997,
+      "sha256": "86fb69c8d131163efa616f46ab84ebf54420a963d4139f230ca434df624375aa"
+    },
+    "Plugin/Custom/en.Example.csv": {
+      "sizeBytes": 1019,
+      "sha256": "4fb396c0aae5563c8e61cf301242c1ce4f785613262bc5bd673aac2159f25428"
+    },
+    "Plugin/Custom/it.Esempio_HTML.csv": {
+      "sizeBytes": 4520,
+      "sha256": "1be496d9b491cdaade5ff566f440f9c20fc2202c096f01dc98dcc57121823854"
+    },
+    "Plugin/Custom/Table by fields, short (HTML).csv": {
+      "sizeBytes": 4183,
+      "sha256": "d213026162c0610f833b4c72760e8aa0b3630fcf52d96a118068ecb8a3c51908"
+    },
+    "Plugin/Custom/Table by fields, verbose (HTML).csv": {
+      "sizeBytes": 8067,
+      "sha256": "877f0d70ae3270d782bb84cd60979423a879ffaf9560014c994603b1c2365186"
+    },
+    "Plugin/Custom/XML.csv": {
+      "sizeBytes": 1515,
+      "sha256": "a428bea9d12f929f3abe6fc9e9a5e6e26d5032f22ca6f6f7eea17af42dd73976"
+    },
+    "Plugin/Custom/Table by streams, short (HTML).csv": {
+      "sizeBytes": 2376,
+      "sha256": "95cf773eaa46ff40c88e7e89bb0902d69d2fa54e484682bc96c9709073ff4742"
+    },
+    "Plugin/Custom/Table by fields, standard (HTML).csv": {
+      "sizeBytes": 7432,
+      "sha256": "de1d428ce40a9f6d528c3a5dbac3620fca09c6012b555a101f6d6d7330141154"
+    },
+    "Plugin/Custom/zzz_Contrib - Dusil (HTML).csv": {
+      "sizeBytes": 1988,
+      "sha256": "00b4d1c69464113f0b3916e150bb1280b9b685f0f0866304ebe23c7ad139680e"
+    },
+    "Plugin/Custom/fr.Example.csv": {
+      "sizeBytes": 1005,
+      "sha256": "672fd84bb5ded26278e1b7fee55547b719d6014f56b8b3d310eb907f59cc6771"
+    },
+    "Plugin/Custom/Example_HTML.csv": {
+      "sizeBytes": 4560,
+      "sha256": "c62fe9b613930cc489e66ce00f5af749622f1c709e1a3220234ae344568114c4"
+    },
+    "Plugin/Custom/Table by fields, compact (HTML).csv": {
+      "sizeBytes": 3665,
+      "sha256": "a81625c766c498c8c232a7ab1b3abfa07ea3e2982ad435f33484e0ecd3a49145"
+    },
+    "Plugin/Custom/Table by streams, standard (HTML).csv": {
+      "sizeBytes": 3860,
+      "sha256": "005d31a51863982338face216e8051fa6bfc56dd9e2ed995b0fb35b34dfa12fc"
+    },
+    "Plugin/Custom/en.Example_HTML.csv": {
+      "sizeBytes": 4560,
+      "sha256": "c62fe9b613930cc489e66ce00f5af749622f1c709e1a3220234ae344568114c4"
+    },
+    "Plugin/Tree/Example.csv": {
+      "sizeBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "Plugin/Sheet/Example.csv": {
+      "sizeBytes": 197,
+      "sha256": "6534d4b386f013aee9967f9d86acda47273a8f2b9ed1f26cc16b394cd8037c78"
+    },
+    "Plugin/Sheet/Export example.csv": {
+      "sizeBytes": 736,
+      "sha256": "d1faca1f3f17bc04f3018b9f57bf5915c3ac273229129a00ace33d65a50f22ce"
+    },
+    "Plugin/Graph/Template.html": {
+      "sizeBytes": 1861,
+      "sha256": "1db49fbc5529c47c7b59bd1606f25548da8cd92c24663483668ceb57ffad1e8a"
+    },
+    "Plugin/Language/es.csv": {
+      "sizeBytes": 51114,
+      "sha256": "31675d594b080ef5e41e65cee6db049d69e6e244e4b25c676583085b86254573"
+    },
+    "Plugin/Language/zh-CN.csv": {
+      "sizeBytes": 49092,
+      "sha256": "33ca249ebc8df97cfeb6411f176b64cfcec57b475a08a40cebee0dfa3074baa9"
+    },
+    "Plugin/Language/pt-BR.csv": {
+      "sizeBytes": 46349,
+      "sha256": "a12f68ccbc82af7318da65207e92002c963d1457b381dd3cad9cda323d1a9b2e"
+    },
+    "Plugin/Language/hy.csv": {
+      "sizeBytes": 42131,
+      "sha256": "d31495fbb9daa831d316a4706e6366f855a9f4145b28856b0c258a58dac2fdd4"
+    },
+    "Plugin/Language/ca.csv": {
+      "sizeBytes": 38176,
+      "sha256": "b01ac20743f08148db163a4451eca8ec054a0d2a4bc0fc48064255a20436e06f"
+    },
+    "Plugin/Language/be.csv": {
+      "sizeBytes": 45923,
+      "sha256": "8293fb8f63aaea644fc23c9649bf35304c326a3b47c78d6fd5e5b46bfd1c1f94"
+    },
+    "Plugin/Language/lt.csv": {
+      "sizeBytes": 34311,
+      "sha256": "90aff22b7e16c5bebb3eb46e1b7f0537622d89bde8209fd910aeed3c03d1cc98"
+    },
+    "Plugin/Language/bg.csv": {
+      "sizeBytes": 41055,
+      "sha256": "f205f92ddcd14693380aafc7abc993875be111f7d6531da5c41ab086a380770d"
+    },
+    "Plugin/Language/id.csv": {
+      "sizeBytes": 45411,
+      "sha256": "290c5f00e39022b807fd84f9107319f70ac1a2d33c11f3a01ee80ef0b5081557"
+    },
+    "Plugin/Language/tr.csv": {
+      "sizeBytes": 38927,
+      "sha256": "ea790565dbbc6bc6c481fc8dbff3885b810ef450f93581cfc7cb0de827a154c8"
+    },
+    "Plugin/Language/ar.csv": {
+      "sizeBytes": 41835,
+      "sha256": "b3eb2ea02cbe5d9d09aa6a922913ae5a8e4e7ea52062307e4cdee7b18c7bd433"
+    },
+    "Plugin/Language/sv.csv": {
+      "sizeBytes": 37035,
+      "sha256": "d1c98d78f2f9988e5712c36ae3762573539cc04af0e7adcb3959e4e39332a903"
+    },
+    "Plugin/Language/gr.csv": {
+      "sizeBytes": 37313,
+      "sha256": "eaee125c43deddd44bc548f24a2b62d51b8b942f57f2cafafacea6225d0815ed"
+    },
+    "Plugin/Language/sk.csv": {
+      "sizeBytes": 33395,
+      "sha256": "87e069ac0039c00ff5fa5e788a879d99fdd4d41a88a7d57bbf30e9b5e0b0b5e4"
+    },
+    "Plugin/Language/fa.csv": {
+      "sizeBytes": 37816,
+      "sha256": "cb038a918a86f89d79efa8124fb63ba8d32b4cb92247fff3e136f08646c6b916"
+    },
+    "Plugin/Language/eu.csv": {
+      "sizeBytes": 37285,
+      "sha256": "5500df8340cc25b7ba09f16a25b0743b9f39dfa49c3985a7ed59dc63d8edfc3d"
+    },
+    "Plugin/Language/zh-TW.csv": {
+      "sizeBytes": 38484,
+      "sha256": "9257119752f3e5146053522a9ccfdad144e3c840289ef63b6b9cd91b82263fe4"
+    },
+    "Plugin/Language/sq.csv": {
+      "sizeBytes": 35838,
+      "sha256": "ae3d16f2e16b480348907d28fabf09b83e5c43a599dd6dba3928d9eef03fcf5f"
+    },
+    "Plugin/Language/nl.csv": {
+      "sizeBytes": 34714,
+      "sha256": "f1a4e6803d4f732bed5e176bbefa25154f15cb61f578e35051e6365ee17a108d"
+    },
+    "Plugin/Language/uk.csv": {
+      "sizeBytes": 64041,
+      "sha256": "a2cd14de75c92325c2e019aa1daca7548ab247833b912114cff6b8b2c3592140"
+    },
+    "Plugin/Language/cs.csv": {
+      "sizeBytes": 32058,
+      "sha256": "bb39ad908547ac781c484171d5400c880e063122af7d93bbd7baf2ff3bd3df10"
+    },
+    "Plugin/Language/ru.csv": {
+      "sizeBytes": 71203,
+      "sha256": "0c4e8a66422a3361aab9ccac82a9912a9ca2c66b0ec668f5cad6557ed422c50d"
+    },
+    "Plugin/Language/ja.csv": {
+      "sizeBytes": 46663,
+      "sha256": "421ac5192a6bfec9b12bd36a45f17807fcb1c97a9a186050df50dd12ceb42993"
+    },
+    "Plugin/Language/fr.csv": {
+      "sizeBytes": 47533,
+      "sha256": "6e82732064d3a7cc81c373343180e5b0e56aeede06c85eb78d3dc0f27115a50d"
+    },
+    "Plugin/Language/zh-HK.csv": {
+      "sizeBytes": 40620,
+      "sha256": "9649bbbe45185c7532a6c26d4d86a86ac379a055c7fec7559159e2d9f5cb5693"
+    },
+    "Plugin/Language/it.csv": {
+      "sizeBytes": 44850,
+      "sha256": "6ad384d804611c3cab7cee807bfa8843ff0e830900e1fa2162e1aa9e6335ba0b"
+    },
+    "Plugin/Language/ro.csv": {
+      "sizeBytes": 28665,
+      "sha256": "67999f75c73e8d687a878232f0cf7980df263f88a358158aed8a711726e35774"
+    },
+    "Plugin/Language/pt.csv": {
+      "sizeBytes": 49806,
+      "sha256": "9bd4401adedcd2d7b9147dd89c0874e5ea5b8318194594e44645a6411da7d60a"
+    },
+    "Plugin/Language/ko.csv": {
+      "sizeBytes": 35526,
+      "sha256": "a309fc816d1e1fb05d1644c31432ee7e11153ac0cdd06ce5c4a4caa42be509a3"
+    },
+    "Plugin/Language/en.csv": {
+      "sizeBytes": 45484,
+      "sha256": "dbb57f909c909fcf3bc7a53fab55b6cbafd4dfefcc9d3ec79ccb342781577af6"
+    },
+    "Plugin/Language/de.csv": {
+      "sizeBytes": 48599,
+      "sha256": "24b6d428ba1bb19800dab9ae97b25579e1ab4be1f0b6751c19998c974fe969de"
+    },
+    "Plugin/Language/da.csv": {
+      "sizeBytes": 34334,
+      "sha256": "fd13db4a5e946589b98ff62d036d8549ee4c240008d31c08cddc3740b0684325"
+    },
+    "Plugin/Language/hu.csv": {
+      "sizeBytes": 34714,
+      "sha256": "175cc0fd34ee76e9fbd4a206e10fec9ee7baaae1bc6077ae26e026dca18d938a"
+    },
+    "Plugin/Language/gl.csv": {
+      "sizeBytes": 32775,
+      "sha256": "f0b01a2d082cdc8fb7a1132a4d58e8867f4f96470347f9ce767f76cb9a47245e"
+    },
+    "Plugin/Language/hr.csv": {
+      "sizeBytes": 36351,
+      "sha256": "2b85767f272e188b95bfb22453e130dc6d0d31a9c334edc36a682c13adf7cdd3"
+    },
+    "Plugin/Language/th.csv": {
+      "sizeBytes": 43765,
+      "sha256": "fde2f0fa4f45f3f7152372e0083619263e2ed3aa7579485e7ad45a3df11d3569"
+    },
+    "Plugin/Language/ka.csv": {
+      "sizeBytes": 46035,
+      "sha256": "27577823a28d8dd1eec49c17f4b0df474fd03150286db1096daa9b415885b6ee"
+    },
+    "Plugin/Language/pl.csv": {
+      "sizeBytes": 35183,
+      "sha256": "8e51ef6efb538e662b730e562294dd526eaec6da9cd3aef03841a5d8ac5d2e5d"
+    }
+  },
+  "save": {
+    "generationId": "gen-job-1791760329140-1",
+    "input": {
+      "file": "drive_c/MediaInfoTests/原始音频.wav",
+      "sizeBytes": 1644,
+      "sha256": "cc27654f36080a73b27f876de071b287450ea520d5e309ac1af3863efd243471"
+    },
+    "report": {
+      "file": "drive_c/MediaInfoTests/original-report.xml",
+      "sizeBytes": 1531,
+      "sha256": "d35929b9f37e33faa40bc552a8bc9f79db9c9fcd3ec6313e2a22b5487930bfdc"
+    },
+    "xmlFields": {
+      "General": {
+        "AudioCount": "1",
+        "FileExtension": "wav",
+        "Format": "Wave",
+        "Format_Settings": "PcmWaveformat",
+        "FileSize": "1644",
+        "Duration": "0.100",
+        "OverallBitRate_Mode": "CBR",
+        "OverallBitRate": "131520",
+        "StreamSize": "44",
+        "File_Created_Date": "2026-10-11 23:13:29.762 UTC",
+        "File_Created_Date_Local": "2026-10-11 23:13:29.762",
+        "File_Modified_Date": "2026-10-11 23:13:29.762 UTC",
+        "File_Modified_Date_Local": "2026-10-11 23:13:29.762"
+      },
+      "Audio": {
+        "Format": "PCM",
+        "Format_Settings_Endianness": "Little",
+        "Format_Settings_Sign": "Signed",
+        "CodecID": "1",
+        "Duration": "0.100",
+        "BitRate_Mode": "CBR",
+        "BitRate": "128000",
+        "Channels": "1",
+        "SamplingRate": "8000",
+        "SamplingCount": "800",
+        "BitDepth": "16",
+        "StreamSize": "1600"
+      }
+    },
+    "independentRiffWaveFacts": {
+      "format": "Wave",
+      "codec": "PCM",
+      "sampleRate": 8000,
+      "channels": 1,
+      "bitDepth": 16,
+      "frames": 800,
+      "durationSeconds": 0.1,
+      "fileSize": 1644,
+      "pcmSha256": "94a606bc06df53f380719794d7eeafdd02d47241a4292c2b1610ba409cf02eec"
+    },
+    "inputBytesPreserved": true,
+    "allInstalledProgramBytesPreserved": true,
+    "installedLicenseMatchesFixedSourceBytes": true,
+    "installedFiles": {
+      "MediaInfo.dll": {
+        "sizeBytes": 8463768,
+        "sha256": "a9416e39aba7a67f442bccfc8e576ba6bf2892b09d066ac1fb1f32f317a6e902"
+      },
+      "uninst.exe": {
+        "sizeBytes": 142200,
+        "sha256": "7e36f4d64c0fd612a3956a549759acf7a9c206682a48bc245b43ac7125fd2ce3"
+      },
+      "MediaInfo.url": {
+        "sizeBytes": 56,
+        "sha256": "062b359701f7f017de01903eff4154a638c8e16e57e1f756fb544e806e87618f"
+      },
+      "WebView2Loader.dll": {
+        "sizeBytes": 165464,
+        "sha256": "f4d811cda483adb33220c5a856c5ec8dca3a095fde54b44f08e1279a6a5efd33"
+      },
+      "resources.pri": {
+        "sizeBytes": 5456,
+        "sha256": "807ff0dfedc0d6fcc4e6ccf2c3970bca55f90cff0eba24b4e9667583fe6735e1"
+      },
+      "License.html": {
+        "sizeBytes": 4729,
+        "sha256": "d68413f8d2002897e0b5d1be77490b14cfbfb6a47544093e20ebced0e8beed18"
+      },
+      "History.txt": {
+        "sizeBytes": 179962,
+        "sha256": "eefa33c3d917a79871ee81281855ddf5803bceee0c995667e7e9c126272fd189"
+      },
+      "MediaInfo.VisualElementsManifest.xml": {
+        "sizeBytes": 313,
+        "sha256": "cbd7bdfd49bb5357224a9b339483fdfdd957871c3bcae87371279df5597f1ed2"
+      },
+      "LIBCURL.DLL": {
+        "sizeBytes": 817664,
+        "sha256": "22b972f008ab8bb5bc225889a8be60683b2bf7546b8e0d699b5b4186bdbb7cc1"
+      },
+      "MediaInfo_InfoTip.dll": {
+        "sizeBytes": 166296,
+        "sha256": "0bff4ac5dc0e914c355b99589365e73e77e90495d7ff45c2b06bc9913614c34c"
+      },
+      "ReadMe.txt": {
+        "sizeBytes": 205,
+        "sha256": "607e3d4b5484b2309659bc66df59d23622601842e9fbd6fa8e1552542d665959"
+      },
+      "MediaInfo.exe": {
+        "sizeBytes": 9929624,
+        "sha256": "1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd"
+      },
+      "Assets/Wide310x150Logo.scale-200_altform-colorful_theme-light.png": {
+        "sizeBytes": 5594,
+        "sha256": "3d82cc9aea1bf5d7661fcde1926de5d79662196c0fa10ecddc79f8e95e97f3a1"
+      },
+      "Assets/Square150x150Logo.scale-400.png": {
+        "sizeBytes": 13122,
+        "sha256": "3be07ab2ba531f14ceda70cae9df276652f5e1447e44f8ed4e75f406355fcfec"
+      },
+      "Assets/LargeTile.scale-200.png": {
+        "sizeBytes": 13777,
+        "sha256": "beb8cbdcaac7ce742c1f24a061a1a22cb42757965cfe0caef2e1571dfb101ca2"
+      },
+      "Assets/Square44x44Logo.scale-200.png": {
+        "sizeBytes": 3019,
+        "sha256": "2de877aa677f1acac90644b9a833feeab4e529dd190f18a975009b528593f50f"
+      },
+      "Assets/Square44x44Logo.altform-lightunplated_targetsize-48.png": {
+        "sizeBytes": 1712,
+        "sha256": "762e0946ac632a2f7d9708e38d37179dfa0f301bc44ee4585788098d32565ae8"
+      },
+      "Assets/Wide310x150Logo.scale-100.png": {
+        "sizeBytes": 2902,
+        "sha256": "7198f28238bc530fe34ec61382172acef49795db7e43b998e0f264aff3c58e4c"
+      },
+      "Assets/SmallTile.png": {
+        "sizeBytes": 6769,
+        "sha256": "6efa92a822d785f3298e2720b6869bc31a5b8e2e09ddf826dc2a6f7467dadded"
+      },
+      "Assets/LargeTile.scale-200_altform-colorful_theme-light.png": {
+        "sizeBytes": 11592,
+        "sha256": "89b35f29f3f5087c2778e3b123068cac261eac93fc7b4a4d5be35b82770f12bc"
+      },
+      "Assets/Square44x44Logo.scale-100_altform-colorful_theme-light.png": {
+        "sizeBytes": 1177,
+        "sha256": "7dc8f1cb44be94ccf08bbe3371db52d9502f5af29a6de5337700ecb5b522b59e"
+      },
+      "Assets/SmallTile.scale-400.png": {
+        "sizeBytes": 7967,
+        "sha256": "2a21d3c8efadcaadf1c888d9737b4d3e198a7aa1c9a059c4312442d115e126a6"
+      },
+      "Assets/Square44x44Logo.scale-400_altform-colorful_theme-light.png": {
+        "sizeBytes": 5615,
+        "sha256": "244c3444c2272b358773711ee64b89080f91ec4b58ffe89d813885aa7657e1d3"
+      },
+      "Assets/Square150x150Logo.png": {
+        "sizeBytes": 11001,
+        "sha256": "833eed2bb069f0bba2dd4bd72450c516b4fd3081dcfbc33382469c93aa4b6901"
+      },
+      "Assets/Wide310x150Logo.scale-400_altform-colorful_theme-light.png": {
+        "sizeBytes": 12482,
+        "sha256": "8032acb75221d860aaae4c5d8cd124be0995a8b6b9e68c118c46922797f65af0"
+      },
+      "Assets/SmallTile.scale-200_altform-colorful_theme-light.png": {
+        "sizeBytes": 3112,
+        "sha256": "9c45f4a4a22417509a496862315f5f572048567273a915bf5ab4c93db15d4333"
+      },
+      "Assets/Square44x44Logo.altform-unplated_targetsize-16.png": {
+        "sizeBytes": 563,
+        "sha256": "32de2ee1e83b74582b34e7317353bed80235eec17cad21213c7b106f2de80e40"
+      },
+      "Assets/Square44x44Logo.targetsize-48.png": {
+        "sizeBytes": 1527,
+        "sha256": "9c9b08801f9f255ae520539ebc9280c8ab2fc4ed8edc24596041a7caa6c3b05b"
+      },
+      "Assets/Square44x44Logo.scale-400.png": {
+        "sizeBytes": 6489,
+        "sha256": "61b2e50a4dcce79c10ee4ca6a0755811a60b4acbfeadca2293a9ebd9585afe01"
+      },
+      "Assets/Square150x150Logo.scale-100_altform-colorful_theme-light.png": {
+        "sizeBytes": 2338,
+        "sha256": "e6760ae70183e696b6a8c35fa6fc97627360f3b37f8dd15c258922ea610aef3e"
+      },
+      "Assets/Square150x150Logo.scale-200.png": {
+        "sizeBytes": 5921,
+        "sha256": "731827680e7bfbb2925acce10c618471172a9e780fe735bb08095a96b22c918e"
+      },
+      "Assets/SmallTile.scale-400_altform-colorful_theme-light.png": {
+        "sizeBytes": 6769,
+        "sha256": "6efa92a822d785f3298e2720b6869bc31a5b8e2e09ddf826dc2a6f7467dadded"
+      },
+      "Assets/Wide310x150Logo.scale-400.png": {
+        "sizeBytes": 14772,
+        "sha256": "40e56c2f4b0c2f8bba976a01d032aa2fb206c3c6500b3071fe6cefe75fd9b89b"
+      },
+      "Assets/LargeTile.scale-400_altform-colorful_theme-light.png": {
+        "sizeBytes": 26388,
+        "sha256": "e4d7ac0378bf07fdd86e313eda350811db76f71eb18b7a4a77e67e72ceaee2af"
+      },
+      "Assets/LargeTile.scale-100.png": {
+        "sizeBytes": 6009,
+        "sha256": "73cdeb1aa445c88780b27e1e161fbe8d1bc06e3e603a066d833bb16ead402233"
+      },
+      "Assets/Wide310x150Logo.scale-100_altform-colorful_theme-light.png": {
+        "sizeBytes": 2565,
+        "sha256": "996fda5a6e4fe4a54e86f3dc315be0e38a2d1fc99c99417c3a7f5520c750a488"
+      },
+      "Assets/Square44x44Logo.scale-200_altform-colorful_theme-light.png": {
+        "sizeBytes": 2650,
+        "sha256": "59e1468a2d0c1abdfe915b02149aeda930d62b3500363d23bd40ff8c4d3b31b8"
+      },
+      "Assets/SmallTile.scale-200.png": {
+        "sizeBytes": 3525,
+        "sha256": "093c58e828f640290f511254ffd38665d38b4a5d481d0341b0d90710755bf41b"
+      },
+      "Assets/Square150x150Logo.scale-400_altform-colorful_theme-light.png": {
+        "sizeBytes": 11001,
+        "sha256": "833eed2bb069f0bba2dd4bd72450c516b4fd3081dcfbc33382469c93aa4b6901"
+      },
+      "Assets/LargeTile.scale-100_altform-colorful_theme-light.png": {
+        "sizeBytes": 5341,
+        "sha256": "605c9e6d3132969aab575cd78f6e3cc7837f69d67b4913a018e2b70dd17b7b28"
+      },
+      "Assets/Wide310x150Logo.scale-200.png": {
+        "sizeBytes": 6466,
+        "sha256": "d797fb48046efee653ecdebece8fc73ee1537c64786fa280048c670e4bbafd1f"
+      },
+      "Assets/SmallTile.scale-100.png": {
+        "sizeBytes": 1612,
+        "sha256": "3acc9624ce5ebba5011aaa53cac4263993187acc460a7f0b9fcbc9577024a3ed"
+      },
+      "Assets/Square44x44Logo.targetsize-16.png": {
+        "sizeBytes": 476,
+        "sha256": "80830ef331c4ba2bc2c370bb1b679c263ddeb3a2a9aa91d49863954e5db4abe6"
+      },
+      "Assets/Square150x150Logo.scale-200_altform-colorful_theme-light.png": {
+        "sizeBytes": 5163,
+        "sha256": "85e4fc9713a3982332d9453aa790e8e86a5189ca393ea21692677a112498088d"
+      },
+      "Assets/SmallTile.scale-100_altform-colorful_theme-light.png": {
+        "sizeBytes": 1416,
+        "sha256": "14258a738920dd953873fcc8479339082fdde7fcbdc65016fff78fd9cbb9af14"
+      },
+      "Assets/Square44x44Logo.altform-lightunplated_targetsize-256.png": {
+        "sizeBytes": 10533,
+        "sha256": "23cc91fb39e61a4584bb9592a39f73f7703f1b8b1c72091131975478d5ce5113"
+      },
+      "Assets/LargeTile.scale-400.png": {
+        "sizeBytes": 32051,
+        "sha256": "fdb451d4491ba5b612a8c20d1629d3e2975b0c83052a01fd6b09a5065004fba5"
+      },
+      "Assets/Square150x150Logo.scale-100.png": {
+        "sizeBytes": 2658,
+        "sha256": "83da725de763b10659e846d8764fbf151bba5b423d2fcd783e9e116f49c12470"
+      },
+      "Assets/Square44x44Logo.scale-100.png": {
+        "sizeBytes": 1304,
+        "sha256": "0afad29f28c98c9a49d45926ea6304bbd16d2c4f9c8695ef53344869cf024484"
+      },
+      "Assets/Square44x44Logo.altform-unplated_targetsize-48.png": {
+        "sizeBytes": 1952,
+        "sha256": "6e8f1456009fbf0764c98540fbf1edf15403bede4fd490cff42d595cf79a1dcd"
+      },
+      "Assets/Square44x44Logo.targetsize-256.png": {
+        "sizeBytes": 10040,
+        "sha256": "033ca8d8db023c7414c042ea235cdc0dfae8a6b49e241df5c61133b6f1c1ee12"
+      },
+      "Assets/Square44x44Logo.altform-lightunplated_targetsize-16.png": {
+        "sizeBytes": 510,
+        "sha256": "935773f35cedc225b4e86613a8febc94940ab09f06049fc5f721261dd891ffa4"
+      },
+      "Assets/Square44x44Logo.altform-unplated_targetsize-256.png": {
+        "sizeBytes": 12988,
+        "sha256": "481d90ccfee67b94350044ebc595597243e0d88a290db6b41884719fef79fb5b"
+      },
+      "Plugin/Custom/it.Esempio.csv": {
+        "sizeBytes": 1035,
+        "sha256": "6e1d4cc342e59c22d9c09b3c76d906faeb7ddf53d33963eb1f89f57b04a4c8c7"
+      },
+      "Plugin/Custom/Table by streams, compact (HTML).csv": {
+        "sizeBytes": 2341,
+        "sha256": "b932545bd4c69bb9ed37c3c969e32dd863b3787efe1da8077bf357cc84c07931"
+      },
+      "Plugin/Custom/Example.csv": {
+        "sizeBytes": 1021,
+        "sha256": "a785697b761aea39467134ec4e0fbd39218685b295553773ef5e5d707b025ab9"
+      },
+      "Plugin/Custom/Table by streams, verbose (HTML).csv": {
+        "sizeBytes": 4997,
+        "sha256": "86fb69c8d131163efa616f46ab84ebf54420a963d4139f230ca434df624375aa"
+      },
+      "Plugin/Custom/en.Example.csv": {
+        "sizeBytes": 1019,
+        "sha256": "4fb396c0aae5563c8e61cf301242c1ce4f785613262bc5bd673aac2159f25428"
+      },
+      "Plugin/Custom/it.Esempio_HTML.csv": {
+        "sizeBytes": 4520,
+        "sha256": "1be496d9b491cdaade5ff566f440f9c20fc2202c096f01dc98dcc57121823854"
+      },
+      "Plugin/Custom/Table by fields, short (HTML).csv": {
+        "sizeBytes": 4183,
+        "sha256": "d213026162c0610f833b4c72760e8aa0b3630fcf52d96a118068ecb8a3c51908"
+      },
+      "Plugin/Custom/Table by fields, verbose (HTML).csv": {
+        "sizeBytes": 8067,
+        "sha256": "877f0d70ae3270d782bb84cd60979423a879ffaf9560014c994603b1c2365186"
+      },
+      "Plugin/Custom/XML.csv": {
+        "sizeBytes": 1515,
+        "sha256": "a428bea9d12f929f3abe6fc9e9a5e6e26d5032f22ca6f6f7eea17af42dd73976"
+      },
+      "Plugin/Custom/Table by streams, short (HTML).csv": {
+        "sizeBytes": 2376,
+        "sha256": "95cf773eaa46ff40c88e7e89bb0902d69d2fa54e484682bc96c9709073ff4742"
+      },
+      "Plugin/Custom/Table by fields, standard (HTML).csv": {
+        "sizeBytes": 7432,
+        "sha256": "de1d428ce40a9f6d528c3a5dbac3620fca09c6012b555a101f6d6d7330141154"
+      },
+      "Plugin/Custom/zzz_Contrib - Dusil (HTML).csv": {
+        "sizeBytes": 1988,
+        "sha256": "00b4d1c69464113f0b3916e150bb1280b9b685f0f0866304ebe23c7ad139680e"
+      },
+      "Plugin/Custom/fr.Example.csv": {
+        "sizeBytes": 1005,
+        "sha256": "672fd84bb5ded26278e1b7fee55547b719d6014f56b8b3d310eb907f59cc6771"
+      },
+      "Plugin/Custom/Example_HTML.csv": {
+        "sizeBytes": 4560,
+        "sha256": "c62fe9b613930cc489e66ce00f5af749622f1c709e1a3220234ae344568114c4"
+      },
+      "Plugin/Custom/Table by fields, compact (HTML).csv": {
+        "sizeBytes": 3665,
+        "sha256": "a81625c766c498c8c232a7ab1b3abfa07ea3e2982ad435f33484e0ecd3a49145"
+      },
+      "Plugin/Custom/Table by streams, standard (HTML).csv": {
+        "sizeBytes": 3860,
+        "sha256": "005d31a51863982338face216e8051fa6bfc56dd9e2ed995b0fb35b34dfa12fc"
+      },
+      "Plugin/Custom/en.Example_HTML.csv": {
+        "sizeBytes": 4560,
+        "sha256": "c62fe9b613930cc489e66ce00f5af749622f1c709e1a3220234ae344568114c4"
+      },
+      "Plugin/Tree/Example.csv": {
+        "sizeBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "Plugin/Sheet/Example.csv": {
+        "sizeBytes": 197,
+        "sha256": "6534d4b386f013aee9967f9d86acda47273a8f2b9ed1f26cc16b394cd8037c78"
+      },
+      "Plugin/Sheet/Export example.csv": {
+        "sizeBytes": 736,
+        "sha256": "d1faca1f3f17bc04f3018b9f57bf5915c3ac273229129a00ace33d65a50f22ce"
+      },
+      "Plugin/Graph/Template.html": {
+        "sizeBytes": 1861,
+        "sha256": "1db49fbc5529c47c7b59bd1606f25548da8cd92c24663483668ceb57ffad1e8a"
+      },
+      "Plugin/Language/es.csv": {
+        "sizeBytes": 51114,
+        "sha256": "31675d594b080ef5e41e65cee6db049d69e6e244e4b25c676583085b86254573"
+      },
+      "Plugin/Language/zh-CN.csv": {
+        "sizeBytes": 49092,
+        "sha256": "33ca249ebc8df97cfeb6411f176b64cfcec57b475a08a40cebee0dfa3074baa9"
+      },
+      "Plugin/Language/pt-BR.csv": {
+        "sizeBytes": 46349,
+        "sha256": "a12f68ccbc82af7318da65207e92002c963d1457b381dd3cad9cda323d1a9b2e"
+      },
+      "Plugin/Language/hy.csv": {
+        "sizeBytes": 42131,
+        "sha256": "d31495fbb9daa831d316a4706e6366f855a9f4145b28856b0c258a58dac2fdd4"
+      },
+      "Plugin/Language/ca.csv": {
+        "sizeBytes": 38176,
+        "sha256": "b01ac20743f08148db163a4451eca8ec054a0d2a4bc0fc48064255a20436e06f"
+      },
+      "Plugin/Language/be.csv": {
+        "sizeBytes": 45923,
+        "sha256": "8293fb8f63aaea644fc23c9649bf35304c326a3b47c78d6fd5e5b46bfd1c1f94"
+      },
+      "Plugin/Language/lt.csv": {
+        "sizeBytes": 34311,
+        "sha256": "90aff22b7e16c5bebb3eb46e1b7f0537622d89bde8209fd910aeed3c03d1cc98"
+      },
+      "Plugin/Language/bg.csv": {
+        "sizeBytes": 41055,
+        "sha256": "f205f92ddcd14693380aafc7abc993875be111f7d6531da5c41ab086a380770d"
+      },
+      "Plugin/Language/id.csv": {
+        "sizeBytes": 45411,
+        "sha256": "290c5f00e39022b807fd84f9107319f70ac1a2d33c11f3a01ee80ef0b5081557"
+      },
+      "Plugin/Language/tr.csv": {
+        "sizeBytes": 38927,
+        "sha256": "ea790565dbbc6bc6c481fc8dbff3885b810ef450f93581cfc7cb0de827a154c8"
+      },
+      "Plugin/Language/ar.csv": {
+        "sizeBytes": 41835,
+        "sha256": "b3eb2ea02cbe5d9d09aa6a922913ae5a8e4e7ea52062307e4cdee7b18c7bd433"
+      },
+      "Plugin/Language/sv.csv": {
+        "sizeBytes": 37035,
+        "sha256": "d1c98d78f2f9988e5712c36ae3762573539cc04af0e7adcb3959e4e39332a903"
+      },
+      "Plugin/Language/gr.csv": {
+        "sizeBytes": 37313,
+        "sha256": "eaee125c43deddd44bc548f24a2b62d51b8b942f57f2cafafacea6225d0815ed"
+      },
+      "Plugin/Language/sk.csv": {
+        "sizeBytes": 33395,
+        "sha256": "87e069ac0039c00ff5fa5e788a879d99fdd4d41a88a7d57bbf30e9b5e0b0b5e4"
+      },
+      "Plugin/Language/fa.csv": {
+        "sizeBytes": 37816,
+        "sha256": "cb038a918a86f89d79efa8124fb63ba8d32b4cb92247fff3e136f08646c6b916"
+      },
+      "Plugin/Language/eu.csv": {
+        "sizeBytes": 37285,
+        "sha256": "5500df8340cc25b7ba09f16a25b0743b9f39dfa49c3985a7ed59dc63d8edfc3d"
+      },
+      "Plugin/Language/zh-TW.csv": {
+        "sizeBytes": 38484,
+        "sha256": "9257119752f3e5146053522a9ccfdad144e3c840289ef63b6b9cd91b82263fe4"
+      },
+      "Plugin/Language/sq.csv": {
+        "sizeBytes": 35838,
+        "sha256": "ae3d16f2e16b480348907d28fabf09b83e5c43a599dd6dba3928d9eef03fcf5f"
+      },
+      "Plugin/Language/nl.csv": {
+        "sizeBytes": 34714,
+        "sha256": "f1a4e6803d4f732bed5e176bbefa25154f15cb61f578e35051e6365ee17a108d"
+      },
+      "Plugin/Language/uk.csv": {
+        "sizeBytes": 64041,
+        "sha256": "a2cd14de75c92325c2e019aa1daca7548ab247833b912114cff6b8b2c3592140"
+      },
+      "Plugin/Language/cs.csv": {
+        "sizeBytes": 32058,
+        "sha256": "bb39ad908547ac781c484171d5400c880e063122af7d93bbd7baf2ff3bd3df10"
+      },
+      "Plugin/Language/ru.csv": {
+        "sizeBytes": 71203,
+        "sha256": "0c4e8a66422a3361aab9ccac82a9912a9ca2c66b0ec668f5cad6557ed422c50d"
+      },
+      "Plugin/Language/ja.csv": {
+        "sizeBytes": 46663,
+        "sha256": "421ac5192a6bfec9b12bd36a45f17807fcb1c97a9a186050df50dd12ceb42993"
+      },
+      "Plugin/Language/fr.csv": {
+        "sizeBytes": 47533,
+        "sha256": "6e82732064d3a7cc81c373343180e5b0e56aeede06c85eb78d3dc0f27115a50d"
+      },
+      "Plugin/Language/zh-HK.csv": {
+        "sizeBytes": 40620,
+        "sha256": "9649bbbe45185c7532a6c26d4d86a86ac379a055c7fec7559159e2d9f5cb5693"
+      },
+      "Plugin/Language/it.csv": {
+        "sizeBytes": 44850,
+        "sha256": "6ad384d804611c3cab7cee807bfa8843ff0e830900e1fa2162e1aa9e6335ba0b"
+      },
+      "Plugin/Language/ro.csv": {
+        "sizeBytes": 28665,
+        "sha256": "67999f75c73e8d687a878232f0cf7980df263f88a358158aed8a711726e35774"
+      },
+      "Plugin/Language/pt.csv": {
+        "sizeBytes": 49806,
+        "sha256": "9bd4401adedcd2d7b9147dd89c0874e5ea5b8318194594e44645a6411da7d60a"
+      },
+      "Plugin/Language/ko.csv": {
+        "sizeBytes": 35526,
+        "sha256": "a309fc816d1e1fb05d1644c31432ee7e11153ac0cdd06ce5c4a4caa42be509a3"
+      },
+      "Plugin/Language/en.csv": {
+        "sizeBytes": 45484,
+        "sha256": "dbb57f909c909fcf3bc7a53fab55b6cbafd4dfefcc9d3ec79ccb342781577af6"
+      },
+      "Plugin/Language/de.csv": {
+        "sizeBytes": 48599,
+        "sha256": "24b6d428ba1bb19800dab9ae97b25579e1ab4be1f0b6751c19998c974fe969de"
+      },
+      "Plugin/Language/da.csv": {
+        "sizeBytes": 34334,
+        "sha256": "fd13db4a5e946589b98ff62d036d8549ee4c240008d31c08cddc3740b0684325"
+      },
+      "Plugin/Language/hu.csv": {
+        "sizeBytes": 34714,
+        "sha256": "175cc0fd34ee76e9fbd4a206e10fec9ee7baaae1bc6077ae26e026dca18d938a"
+      },
+      "Plugin/Language/gl.csv": {
+        "sizeBytes": 32775,
+        "sha256": "f0b01a2d082cdc8fb7a1132a4d58e8867f4f96470347f9ce767f76cb9a47245e"
+      },
+      "Plugin/Language/hr.csv": {
+        "sizeBytes": 36351,
+        "sha256": "2b85767f272e188b95bfb22453e130dc6d0d31a9c334edc36a682c13adf7cdd3"
+      },
+      "Plugin/Language/th.csv": {
+        "sizeBytes": 43765,
+        "sha256": "fde2f0fa4f45f3f7152372e0083619263e2ed3aa7579485e7ad45a3df11d3569"
+      },
+      "Plugin/Language/ka.csv": {
+        "sizeBytes": 46035,
+        "sha256": "27577823a28d8dd1eec49c17f4b0df474fd03150286db1096daa9b415885b6ee"
+      },
+      "Plugin/Language/pl.csv": {
+        "sizeBytes": 35183,
+        "sha256": "8e51ef6efb538e662b730e562294dd526eaec6da9cd3aef03841a5d8ac5d2e5d"
+      }
+    },
+    "registryPins": {
+      "system.reg": {
+        "sizeBytes": 3904053,
+        "sha256": "e774249bdc8a48306819aa5fb13c0dbee05fc21a041a02a314375897169d3fb2"
+      },
+      "user.reg": {
+        "sizeBytes": 151796,
+        "sha256": "bf57273215386c4830fca6efb44856621168dff2d01959e80e281925c9135734"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "21a606bb40a6cca98a8ffb10da3b55e8d28381995fa87079fa30c6dcd6de3ff0"
+      }
+    },
+    "applicationConfigPins": {
+      "drive_c/MediaInfo/Plugin/MediaInfo.cfg": {
+        "sizeBytes": 2561,
+        "sha256": "ed6c076fe99a5ab720075cdc106e714de42b03f1502f8731b29dc5d377eee560"
+      },
+      "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/MediaInfo.lnk": {
+        "sizeBytes": 686,
+        "sha256": "4a322b0073fdbfa51f6bdc60426c5cfd53795a66f0af4b0c7c2a1c5430ad35a6"
+      }
+    },
+    "fixedDataPins": {
+      "MediaInfoTests/原始音频.wav": {
+        "sizeBytes": 1644,
+        "sha256": "cc27654f36080a73b27f876de071b287450ea520d5e309ac1af3863efd243471"
+      },
+      "MediaInfoTests/original-report.xml": {
+        "sizeBytes": 1531,
+        "sha256": "d35929b9f37e33faa40bc552a8bc9f79db9c9fcd3ec6313e2a22b5487930bfdc"
+      }
+    }
+  },
+  "guiJobs": [
+    {
+      "applicationId": "mediainfo",
+      "createdAtMilliseconds": 1791760409771,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 199702,
+          "requestId": "job-1791760409771-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 175653,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix",
+          "requestId": "job-1791760409771-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 175696,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791760409771-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791760329140-1",
+      "id": "job-1791760409771-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 31904,
+        "fileDigest": "sha256:1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd",
+        "fileSizeBytes": 9929624,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "bluetoothapis",
+          "bthprops.cpl",
+          "comctl32",
+          "comdlg32",
+          "crypt32",
+          "dwmapi",
+          "gdi32",
+          "imm32",
+          "kernel32",
+          "msacm32",
+          "msimg32",
+          "msvfw32",
+          "ole32",
+          "oleaut32",
+          "setupapi",
+          "shcore",
+          "shell32",
+          "shell32.dll",
+          "shfolder",
+          "shlwapi",
+          "user32",
+          "uxtheme",
+          "version",
+          "windowscodecs",
+          "winhttp",
+          "wininet",
+          "winspool.drv",
+          "ws2_32",
+          "wtsapi32"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 5068288,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 5068128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rodata",
+            "rawDataSize": 2629120,
+            "readable": true,
+            "virtualAddress": 5074944,
+            "virtualSize": 2628816,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 291328,
+            "readable": true,
+            "virtualAddress": 7704576,
+            "virtualSize": 590236,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 2560,
+            "readable": true,
+            "virtualAddress": 8298496,
+            "virtualSize": 2176,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 398848,
+            "readable": true,
+            "virtualAddress": 8302592,
+            "virtualSize": 398520,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 718336,
+            "readable": true,
+            "virtualAddress": 8704000,
+            "virtualSize": 718112,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 9424896,
+            "virtualSize": 40,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 9428992,
+            "virtualSize": 24531,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".didata",
+            "rawDataSize": 7680,
+            "readable": true,
+            "virtualAddress": 9453568,
+            "virtualSize": 7214,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".edata",
+            "rawDataSize": 1024,
+            "readable": true,
+            "virtualAddress": 9461760,
+            "virtualSize": 747,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 473088,
+            "readable": true,
+            "virtualAddress": 9465856,
+            "virtualSize": 473088,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 304640,
+            "readable": true,
+            "virtualAddress": 9940992,
+            "virtualSize": 304296,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791760329140-1",
+          "digest": "sha256:1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "MediaInfo.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix/drive_c/MediaInfo/MediaInfo.exe",
+          "sizeBytes": 9929624,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix/drive_c/MediaInfo/MediaInfo.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1"
+        },
+        "requestId": "job-1791760409771-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791760587551
+    },
+    {
+      "applicationId": "mediainfo",
+      "createdAtMilliseconds": 1791760652321,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 200150,
+          "requestId": "job-1791760652321-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 48334,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix",
+          "requestId": "job-1791760652321-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 48375,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791760652321-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791760329140-1",
+      "id": "job-1791760652321-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 31904,
+        "fileDigest": "sha256:1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd",
+        "fileSizeBytes": 9929624,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "bluetoothapis",
+          "bthprops.cpl",
+          "comctl32",
+          "comdlg32",
+          "crypt32",
+          "dwmapi",
+          "gdi32",
+          "imm32",
+          "kernel32",
+          "msacm32",
+          "msimg32",
+          "msvfw32",
+          "ole32",
+          "oleaut32",
+          "setupapi",
+          "shcore",
+          "shell32",
+          "shell32.dll",
+          "shfolder",
+          "shlwapi",
+          "user32",
+          "uxtheme",
+          "version",
+          "windowscodecs",
+          "winhttp",
+          "wininet",
+          "winspool.drv",
+          "ws2_32",
+          "wtsapi32"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 5068288,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 5068128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rodata",
+            "rawDataSize": 2629120,
+            "readable": true,
+            "virtualAddress": 5074944,
+            "virtualSize": 2628816,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 291328,
+            "readable": true,
+            "virtualAddress": 7704576,
+            "virtualSize": 590236,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 2560,
+            "readable": true,
+            "virtualAddress": 8298496,
+            "virtualSize": 2176,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 398848,
+            "readable": true,
+            "virtualAddress": 8302592,
+            "virtualSize": 398520,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 718336,
+            "readable": true,
+            "virtualAddress": 8704000,
+            "virtualSize": 718112,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 9424896,
+            "virtualSize": 40,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 9428992,
+            "virtualSize": 24531,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".didata",
+            "rawDataSize": 7680,
+            "readable": true,
+            "virtualAddress": 9453568,
+            "virtualSize": 7214,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".edata",
+            "rawDataSize": 1024,
+            "readable": true,
+            "virtualAddress": 9461760,
+            "virtualSize": 747,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 473088,
+            "readable": true,
+            "virtualAddress": 9465856,
+            "virtualSize": 473088,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 304640,
+            "readable": true,
+            "virtualAddress": 9940992,
+            "virtualSize": 304296,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791760329140-1",
+          "digest": "sha256:1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "MediaInfo.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix/drive_c/MediaInfo/MediaInfo.exe",
+          "sizeBytes": 9929624,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix/drive_c/MediaInfo/MediaInfo.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791760329140-1"
+        },
+        "requestId": "job-1791760652321-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791760702710
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3904053,
+      "sha256": "e774249bdc8a48306819aa5fb13c0dbee05fc21a041a02a314375897169d3fb2"
+    },
+    "user.reg": {
+      "sizeBytes": 151796,
+      "sha256": "bf57273215386c4830fca6efb44856621168dff2d01959e80e281925c9135734"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "21a606bb40a6cca98a8ffb10da3b55e8d28381995fa87079fa30c6dcd6de3ff0"
+    }
+  },
+  "fixedDataPins": {
+    "MediaInfoTests/原始音频.wav": {
+      "sizeBytes": 1644,
+      "sha256": "cc27654f36080a73b27f876de071b287450ea520d5e309ac1af3863efd243471"
+    },
+    "MediaInfoTests/original-report.xml": {
+      "sizeBytes": 1531,
+      "sha256": "d35929b9f37e33faa40bc552a8bc9f79db9c9fcd3ec6313e2a22b5487930bfdc"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/MediaInfo/Plugin/MediaInfo.cfg": {
+      "sizeBytes": 2561,
+      "sha256": "ed6c076fe99a5ab720075cdc106e714de42b03f1502f8731b29dc5d377eee560"
+    },
+    "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/MediaInfo.lnk": {
+      "sizeBytes": 686,
+      "sha256": "4a322b0073fdbfa51f6bdc60426c5cfd53795a66f0af4b0c7c2a1c5430ad35a6"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "guiVersionMeasured": "MediaInfo 26.05 About",
+  "scope": "Small Chinese-name PCM WAV: GUI Basic and Tree facts, GUI ASCII XML export, explicit fresh-process WAV reopen; independently parsed WAV and XML metadata",
+  "fullBundleLicenseClosureVerified": false,
+  "heardPlaybackVerified": false,
+  "backgroundNetworkAbsentVerified": false,
+  "updateNoticeAndSponsorBannerObserved": true,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "e5e4841ec12c9dd8e0442a575477cf8ee23c2951438a20601fcaa7eb5e9e6c0d",
+    "coreJobs": 386,
+    "fullStoreRows": 116
+  },
+  "screenshots": {
+    "01-first-preferences.jpg": {
+      "sizeBytes": 58336,
+      "sha256": "f2be1c3c45b150e918302d23512ff742094f1106b89cf9f45bd09e763a2c8644"
+    },
+    "02-version-update-notice.jpg": {
+      "sizeBytes": 59869,
+      "sha256": "7949315b9d077384f9a1e96a6d10da5d245ad1d5cad593494d45447a5d27b081"
+    },
+    "03-original-basic.jpg": {
+      "sizeBytes": 57474,
+      "sha256": "85f1ad376df71ae2d515e41ecfae638112d38d540f99c9727069f6592f016f99"
+    },
+    "04-original-tree.jpg": {
+      "sizeBytes": 59516,
+      "sha256": "0c7fb744a32dd9da069a8f0b6afc3be072e232690a78ce265ca660a115f77e7d"
+    },
+    "05-original-xml-export-dialog.jpg": {
+      "sizeBytes": 68381,
+      "sha256": "d970a1929b597544831689ddb2032671ddddf0213cf562d4847734bc000bb51d"
+    },
+    "06-original-about.jpg": {
+      "sizeBytes": 68247,
+      "sha256": "4dfc8dfe3df9f307cd5dc0635849ae72fc4de1562b22533f39f013193f46ca27"
+    },
+    "07-original-explicit-new-process-open.jpg": {
+      "sizeBytes": 61219,
+      "sha256": "5df0a2965710ca5a99d5e3553813b9075509b05dae36ab8f0515d29acaddbeda"
+    }
+  },
+  "fixtureReferences": {
+    "MediaInfoTests/原始音频.wav": "2026-10-12-mediainfo/原始音频.wav",
+    "MediaInfoTests/original-report.xml": "2026-10-12-mediainfo/original-report.xml"
+  },
+  "marketLifecyclePendingAtFreeze": true
+}

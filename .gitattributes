@@ -248,3 +248,14 @@ docs/windows-rolling-20261012-copyq-pending.md -text whitespace=cr-at-eol
 
 # Preserve actual Wine crash report whitespace after stopped CopyQ first stage.
 docs/evidence/2026-10-12-copyq/market-snoretoast-error.txt -text whitespace=cr-at-eol,-blank-at-eol
+
+# MediaInfo fixed upstream and evidence bytes.
+catalogue/candidate-v55/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-mediainfo-20261012*.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-mediainfo*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-mediainfo/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261012-mediainfo.md -text whitespace=cr-at-eol
+
+# Preserve precisely identified fixed MediaInfo upstream whitespace.
+docs/evidence/2026-10-12-mediainfo/source/MediaInfo/Source/GUI/VCL_New/GUI_Main.cpp -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/2026-10-12-mediainfo/source/MediaInfo/Source/Install/MediaInfo_SponsorPage.nsh -text whitespace=cr-at-eol,-blank-at-eol

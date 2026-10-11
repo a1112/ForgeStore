@@ -1,0 +1,33 @@
+{
+  "applications": [
+    {
+      "guiFileOperation": "passed",
+      "id": "winmerge",
+      "initialLeftSha256": "e1c9b784c6f6f85ee0574a687960658c7513c55ebbe93341fd370b16897d25ce",
+      "initialRightSha256": "0bfdf7b0e37887ad33f48ce0de4ed2ece88cc031f9035e9aed62763b3181751a",
+      "installJobId": "job-1790704920941-2",
+      "installNote": "Inno installer exited; a Wine Explorer process in this exact test prefix kept wineserver -w waiting until closed.",
+      "launchJobId": "job-1790705089309-3",
+      "launcherSha256": "a14132ee6a395da2b3e15c4166ff261dd30cb57bf8669b81aa8896e06f14503e",
+      "leftSha256": "e1c9b784c6f6f85ee0574a687960658c7513c55ebbe93341fd370b16897d25ce",
+      "mergedRightBytes": 47,
+      "mergedRightSha256": "e1c9b784c6f6f85ee0574a687960658c7513c55ebbe93341fd370b16897d25ce",
+      "screenshotSha256": "bb972adabd38b864dc9603670c17f352cedbaefb57a72a945731c92bb73c4479",
+      "sha256": "6ac1e3c0028c39e49962dacd662ab553989d7e817a5cdf96ebbbc1fb345bcff4",
+      "size": 17184616,
+      "version": "2.16.58.2"
+    }
+  ],
+  "date": "2026-09-30",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM; Wine 11.14; ordinary Linux UID 1000",
+  "licenseEvidence": [
+    "https://winmerge.org/source-code/?lang=en",
+    "https://github.com/WinMerge/winmerge/releases/tag/v2.16.58.2"
+  ],
+  "limits": [
+    "Store-side signed activation and lifecycle remain to be verified after signing.",
+    "Online download from within the guest and cross-version upgrade were not tested."
+  ],
+  "schemaVersion": 1,
+  "scope": "Official WinMerge 2.16.58.2 x64 per-user installer and GUI file compare/merge/save; local-market candidate only."
+}

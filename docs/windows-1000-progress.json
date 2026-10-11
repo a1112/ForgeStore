@@ -501,6 +501,17 @@
       "signedCatalogue": "catalogue/candidate-v52/tuf",
       "publication": "docs/evidence/2026-10-12-lmms-publication.json",
       "limitation": "Two small Chinese-name single-track TripleOscillator projects: BPM and ASCII name change, second note, GUI ASCII Save As, stereo16-bit44100Hz WAV render with two finite note intervals/silence/frequency checks, explicit new-process reopen. Independent market generation, cached Store IPC update/exact original rollback/normal restart only. Heard playback, audio devices, advanced DAW features, direct Chinese keyboard input, full bundle license closure, network/new-machine/migration/cross-version/unattended unverified. Actual third-GUI registry and preference byte changes/strict-pin stop preserved."
+    },
+    {
+      "id": "mediainfo",
+      "version": "26.05",
+      "sha256": "a209d32b95f9282662df5f1d4e76a6f00149af62e27d0f12c0428ba29ebe4393",
+      "sizeBytes": 6357952,
+      "license": "BSD-2-Clause",
+      "evidence": "docs/evidence/windows-mediainfo-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v55/tuf",
+      "publication": "docs/evidence/2026-10-12-mediainfo-publication.json",
+      "limitation": "Two small Chinese-name PCM WAV files only: Basic/Tree facts, ASCII XML export, explicit new-process open. Cached Store IPC update/exact original rollback/normal service restart. Sponsor banner/update notice observed; background networking absence, full media/XML scope, direct Chinese input, full bundle licensing, network/new-machine/migration/cross-version/unattended unverified. Third original registry raw changes retained."
     }
   ],
   "queue": [
@@ -717,12 +728,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "48/1000;14 unresolved including CopyQ/BowPad. CopyQ native --start-server show window integration corrected, original limited text workflow passed, market provideClipboard IPC exit1/995 and SnoreToast GetApplicationUserModelId crash unresolved. No market export/reimport or accepted count. Recovery rollback only, role63/candidate-v54 removes CopyQ preview with trust/history retained;383fullCore/116fullStore. Strict guest rolling-current-state-copyq-pending-20261012.py. Do not repeat installed candidates or reuse old375/114 fixed-count helper as current.",
+  "next": "49/1000 finite Windows acceptance;14 unresolved including BowPad and CopyQ. MediaInfo26.05 finite PCM WAV/XML/new-process lifecycle; sponsor/update networking not excluded. candidate-v55/root1/role64;390 fullCore/118 fullStore. Strict SSH stdin rolling-current-state-mediainfo-20261012.py. Preserve all frozen/trust/history/private checkpoint boundaries and actual third-GUI registry changes. Review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 48,
+    "acceptedLocalMarket": 49,
     "explicitlyBlockedCandidates": 14,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -730,25 +741,25 @@
     "pendingCandidates": 14
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v54/tuf",
-    "metadataVersion": 63,
-    "catalogueEntries": 50,
-    "acceptedDistinctWindowsApps": 48,
+    "signedCatalogue": "catalogue/candidate-v55/tuf",
+    "metadataVersion": 64,
+    "catalogueEntries": 51,
+    "acceptedDistinctWindowsApps": 49,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-copyq-pending-summary.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-mediainfo-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-lmms-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-copyq-catalogue-withdrawal.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-copyq-pending-summary.json",
+    "activationEvidence": "docs/evidence/2026-10-12-mediainfo-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-copyq-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-mediainfo-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-copyq-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-copyq-pending.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-copyq-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-mediainfo.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-mediainfo-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

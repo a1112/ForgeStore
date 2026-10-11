@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "phase": "before-independent-review-and-git-stage",
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "currentStateVerified": {
+    "verified": true,
+    "coreJobs": 390,
+    "fullStoreRows": 118,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "snapshot": 64,
+      "targets": 64,
+      "root": 1,
+      "timestamp": 64
+    },
+    "latestKnownTime": "2026-10-11T23:34:47.762091542Z",
+    "selectedMediaInfoGeneration": "gen-job-1791760329140-1",
+    "copyqActiveCatalogueEntryAbsent": true,
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "queryMayWriteExistingRequestScratch": true,
+    "checkpoint": {
+      "file": "mediainfo-20261012/after-restart.json",
+      "sha256": "c599a1413d97fda817e8812a6ff28c50ad8f744ac29d6175c1e410feb62679fc"
+    }
+  },
+  "oldImmutableFilesMatched": 2136,
+  "newOriginalFrozenFilesMatched": 24,
+  "signedMetadataPackAtSigningStage": {
+    "metadataVersion": 64,
+    "rootVersion": 1,
+    "entries": 51,
+    "actualTargets": 107,
+    "files": 60,
+    "archiveSha256": "551c49ebd4e9c1322edb8beb4f32ddad35ce1a4b21846c2dc4b88f36177ef4b8",
+    "receiptSha256": "f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa",
+    "allOldSignedTargetPinsPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true
+  },
+  "publicationSha256": "2fe7ebc7f77b0ef390d0199fe1bf99fb31fe9dc1f259db23502574ee71abaeec",
+  "independentReviewPendingAtFreeze": true,
+  "gitIndexAndCommitAuditPendingAtFreeze": true,
+  "remotePushPendingAtFreeze": true
+}

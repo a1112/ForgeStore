@@ -1,0 +1,21 @@
+# MediaInfo 26.05 Windows 有限 WAV 信息与 XML 导出验收（2026-10-12）
+
+新增1款，累计49/1000；14项未解决候选保持，CopyQ/BowPad不计完成。Ubuntu Kate/Snap计算器两款独立记账，Flatpak未安装；本轮不切换VM。合成WAV/XML不另计应用。日期按亚洲/上海，客体真实UTC保留。
+
+正式原gen-job-1791760329140-1与独立市场gen-job-1791760988979-4，冻结定义sha256:4dcbd743ce9b22c87f3953c39bedffdf07f0a6be2cef8b47affd7c22c7e4c1d4。GUI中文名PCM WAV打开、Basic/Tree读取、GUI XML导出到ASCII路径、两个新正式进程显式重开WAV，以及精确回滚后原WAV显式重开。原1644B/800样本/8000Hz/mono/16bit，市场6444B/1600样本/16000Hz/stereo/16bit，均100ms。实际XML1531/1533B UTF8/CRLF，SHA分别d35929b9f37e33faa40bc552a8bc9f79db9c9fcd3ec6313e2a22b5487930bfdc、0f4dd8386fbf4ae4b2a00f4e5a61307b22e6c392be7465cb80c6b2bd548ac5ab；独立RIFF与XML核对Wave/PCM/Little/Signed、采样率/通道/位深/采样数/数据长度/时长和中文引用。两个输入和导出原字节保持。五次正式AltX/FileExit正常退出0+wineserver停止，About实测26.05。
+
+官方固定安装6357952B SHAa209d32b95f9282662df5f1d4e76a6f00149af62e27d0f12c0428ba29ebe4393，固定source18677160B SHAdec17d1d02e2df2fa79b5348a81ee14a1e60b400b6681b3cdf0c0823e8c94b35，官方HTTPS实际200和最终URL保存，仅本地SHA，不称上游公开摘要已核或最新。10源码成员按原归档固定，MediaInfo/LICENSE主BSD-2-Clause；两代次安装License.html4729B与固定源License.html原字节同。完整Borland/MediaInfoLib/ZenLib/libcurl/WebView2/shell/plugin/icons/translations许可闭包、Authenticode/PGP、源码二进制对应/可复现构建未核。112程序文件跨代次全同，MediaInfo.exe9929624B SHA1a03cb67ddec5b01a367de4e0a182bc44f230d1f4589e2860ba0b9a664870ddd。
+
+原生NSIS /S和最后/D=C:后一个反斜杠再MediaInfo，15UTF8B hex2f443d433a5c4d65646961496e666f。首次默认English/Basic/checkversion/Explorer选项正常OK，新版本通知No；实际Winxvideo AI赞助横幅和26.10更新提示保留。固定SponsorPage/NSIS代码有下载逻辑；未绕过、禁用通知或伪造赞助注册项，不能称无后台联网/纯离线/无人值守。无Core/程序/globalcontext/launcher环境/工作目录/字体包/DLL/runtime修复。
+
+candidate-v55/root1/targets snapshot timestamp64；51目录项49应用2内部夹具，107实际签名目标60公共文件。旧105目标中除catalogue.json追加一项外，其余104目标原字节保持；完整旧角色目录不改，另签更高角色，CopyQ不在活动目录，62预览/63撤出和全部失败代次原字节保留。Store IPC预缓存同版本更新与精确原回滚成功，GUI市场按钮未验收。回滚前389Core/117Store完整CP先保存读回，回滚后389/118旧全部字段/代次保持；第三原GUI后390/118正常两服务重启全字段精确同。完整私有CP mediainfo-20261012/after-restart.json SHAc599a1413d97fda817e8812a6ff28c50ad8f744ac29d6175c1e410feb62679fc；只读rolling-current-state-mediainfo-20261012.py需严格SSH发送stdin到客体，本host助手未要求客体落盘。
+
+第三原GUI改变system.reg/user.reg原字节，大小3904053/151796B同；前后真实原文及287/20行差分私有保存，原因未定，不称旧registry原字节跨第三GUI保持。程序/原WAV/XML/MediaInfo.cfg、市场全部pins及既有固定验收数据保持；当前新registry pins跨restart同。覆盖仅固定验收数据、本轮112程序文件和有限config/registry，不称全应用文件系统遍历。完整SQLite历史不以最近64IPC摘要替代。查询core()可写已有请求传输scratch，不能称客体文件系统零写。
+
+失败历史完整保留：原freeze记录旧模板读取缺失、官方旧index读取超时、观察草稿exe大小写、新tab替换陈旧句柄及键助手、CtrlO无效改AltO、初Export OK坐标无效后新鲜按钮正常导出。后续stage实际roles64却遗留version61输出标签，暂停激活；首次只读更正假定无版本targets.json而FileNotFound，未激活。宿主引号构建PowerShellParserError后工具仍尝试依赖缺失helper，FileNotFound发生在SSH前，没有客体变更；这次顺序门槛失守明确保留，不声称全部历史门槛有效。另用apply_patch正确v2只读核实60实际文件与root1/role64后才激活。未执行市场启动草稿op/oprefix及math/struct导入错误被预检发现，新v2实际执行一次；market-final草稿观察收据文件名误写，执行前改新v2；copyq-build-current-state旧模板读取不存在，只读无依赖客体变更。所有原helper/收据保留，不补造历史。后续依赖操作必须逐步actual assert，false/缺assert/非终态/CP失败立即停。
+
+视频/其他编码容器/多音轨/广泛tag、其他导出格式/batch/shell/advanced、大坏媒体/完整XML规范、直接中文键盘输入、听音/音频设备、客体联网下载、新机注册/配置迁移/跨版本和无人值守未验收，非完整MediaInfo能力。既有48应用全部原有限边界/失败、TUF签名历史和root原字节保持，不删除回退trustcache。
+
+2136旧immutable与24本轮原source/gui/acceptance冻结文件及market待执行阶段标签保持，后续市场完成另记。独立审查、实际Git index/commit逐字节审计及普通推送另记，不代替客体GUI或私有完整CP独立重演；私钥/密码/凭据/登录画面/完整私有CP不入库。
+
+签名pack原收据allOldSignedTargetPinsPreserved=true未注明catalogue.json例外，原helper实际第13行明确排除目录目标。原pack/helper保持，另存signing-scope-correction独立核对旧105目标中104非目录目标精确保持、catalogue.json新增MediaInfo而变化；没有签名/验收/客体重写。

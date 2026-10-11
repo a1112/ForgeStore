@@ -1,0 +1,59 @@
+{
+  "applications": [
+    {
+      "guiFileOperation": "passed",
+      "id": "7zip",
+      "sha256": "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d",
+      "size": 1658851,
+      "version": "26.01"
+    },
+    {
+      "guiFileOperation": "passed",
+      "id": "notepad-plus-plus",
+      "sha256": "7c243203265ce8fdac76c839bf744ae35dcf620760eb97c2ea279af498560e45",
+      "size": 6898288,
+      "version": "8.9.6.2"
+    },
+    {
+      "guiFileOperation": "passed",
+      "id": "sumatrapdf",
+      "sha256": "1eee71cccd2ea6e94d5bcea54ee2f759844da3e1a0ee2f6045035b1d17b94381",
+      "size": 11075960,
+      "version": "3.6.1"
+    }
+  ],
+  "binaries": {
+    "/usr/bin/compatforge-cli": "b0fb6755ec12d552a3846197281e982ccdbc761fffef0b3dfd30030e0f23e332",
+    "/usr/bin/forge-store-service": "67fd7d618bb90939aa4d38bc98c446e1295b1430233e2e2d0fc9466a5cc9265f"
+  },
+  "date": "2026-09-29",
+  "environment": "ForgeOS v12 isolated x86_64 KVM VM; Wine 11.14; ordinary Linux UID 1000",
+  "guiResults": {
+    "7zip": {
+      "memberSha256": "e9de5fe7ed76059e3d3ac2c04126d13833691369c47fc587766a2217f68dae0c",
+      "path": "/home/forge/forge-rolling-20260929/inputs/资料/你好 100%.txt",
+      "sha256": "e9de5fe7ed76059e3d3ac2c04126d13833691369c47fc587766a2217f68dae0c"
+    },
+    "notepad-plus-plus": {
+      "sha256": "1df10f59b71d455e24dd0607bd4ba398071aa2c7eb492e44ac7b2cb58f90d190",
+      "text": "ForgeOS Windows application acceptance\n中文内容：安装、打开、保存。\nPaths preserve spaces and 100% characters.\nrolling-gui-save-20260929\n"
+    },
+    "sumatrapdf": {
+      "copy": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1790682891047-2/prefix/drive_c/users/forge/Documents/rolling-copy.pdf",
+      "copySha256": "7295797c972d8f64a1b2f562862d232ee877443f7c6526cd2547f6151db81499",
+      "jobId": "job-1790694994168-13",
+      "sourceSha256": "7295797c972d8f64a1b2f562862d232ee877443f7c6526cd2547f6151db81499"
+    }
+  },
+  "limits": [
+    "Notepad++ GitHub download failed; exact signed cache artifact used for successful retry.",
+    "Full VM reboot not part of this round."
+  ],
+  "schemaVersion": 1,
+  "scope": "Install, same-version generation replacement/rollback, service restart, actual GUI file operations. Not cross-version upgrade, full application certification, or public market release.",
+  "screenshots": {
+    "rolling-7zip-extracted.png": "db18b26de91cee7f379d96f17f4968c4cc82a0f707924eb1a93415753c04251d",
+    "rolling-notepad-saved.png": "3f305c5ad0ae8d078daf1b93001b2f51c3981fe33e28f348b3be7b5049d1689b",
+    "rolling-sumatra-saved.png": "a645d1e91181a4732a5c8218d2c0153dddcc89d4ae11d5b2b8fba56534bd1afe"
+  }
+}
