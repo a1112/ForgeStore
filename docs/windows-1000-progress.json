@@ -326,6 +326,17 @@
       "signedCatalogue": "catalogue/candidate-v33/tuf",
       "publication": "docs/evidence/2026-10-11-cherrytree-publication.json",
       "limitation": "Per-launcher PANGOCAIRO_BACKEND=fc repaired tested glyph readability. Limited two-node Chinese-name XML note workflows, root replacement, ASCII child editing, Save As to ASCII paths, fresh-process reopen and independent IPC cached same-version update/exact rollback/normal service restart passed. Market autosave changed input 694 to 693 bytes; exact initial backup retained. Missing assertion allowed reopen before inspection; later mutations stopped and separate actual-input verification preceded rollback. SQLite/encrypted notes, advanced features, direct Chinese keyboard input, bundled licence closure, guest network, fresh registration, migration and cross-version upgrade unverified."
+    },
+    {
+      "id": "sigil",
+      "version": "2.6.2",
+      "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e",
+      "sizeBytes": 133608315,
+      "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+      "evidence": "docs/evidence/windows-sigil-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v34/tuf",
+      "publication": "docs/evidence/2026-10-11-sigil-publication.json",
+      "limitation": "Per-launcher --disable-gpu repaired tested preview. Only two small Chinese-name one-chapter EPUB2 code edit, ordinary replacement, ASCII paragraph insertion, actual preview, Save As to ASCII paths, fresh reopen and independent IPC precached same-version update/exact rollback/normal Core-Store restart accepted. Inputs preserved. First-launch version notice requires normal decline; unattended startup, full EPUB spec/EPUB3/advanced features, direct Chinese keyboard input, bundled licence closure, guest network, fresh registration, migration and cross-version upgrade unverified. Exact underlying defect not located."
     }
   ],
   "queue": [
@@ -498,12 +509,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select the next independently sourced/licensed/pinned candidate. CherryTree limited XML notes and independent local market lifecycle passed using per-launcher PANGOCAIRO_BACKEND=fc. Market input autosave and missing assertion/reopen gate gap retained; never claim input unchanged there. Preserve 32 accepted distinct Windows applications and 12 blocked candidates. Full history 246 Core/81 Store; candidate-v33/root 1/role 42. Run rolling-current-state-cherrytree-20261011.py through strict rolling-guest-20261010.py in the guest; old fixed-count helpers historical. Preserve checkpoint gates, trust and fixed data.",
+  "next": "Select next independently sourced/licensed/pinned candidate. Sigil finite EPUB2 edit/preview/save/reopen and independent market lifecycle accepted with per-launcher --disable-gpu. Preserve default blank-preview and failed zoom-input/discard history; no full EPUB or unattended startup claim. 33 accepted Windows applications, 12 blocked. Full history 257 Core/83 Store; candidate-v34/root1/role43. Execute rolling-current-state-sigil-20261011.py through strict rolling-guest-20261010.py in guest; old helpers historical. Require actual asserted preconditions before each dependent mutation.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 32,
+    "acceptedLocalMarket": 33,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -511,25 +522,25 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v33/tuf",
-    "metadataVersion": 42,
-    "catalogueEntries": 34,
-    "acceptedDistinctWindowsApps": 32,
+    "signedCatalogue": "catalogue/candidate-v34/tuf",
+    "metadataVersion": 43,
+    "catalogueEntries": 35,
+    "acceptedDistinctWindowsApps": 33,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-cherrytree-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-sigil-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-texworks-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-cherrytree-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-cherrytree-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-sigil-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-cherrytree.md",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-cherrytree-runtime-recovery.json",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-sigil.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-sigil-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
-  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-texworks-runtime-recovery.json",
+  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-cherrytree-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-cherrytree.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-cherrytree-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-sigil.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-sigil-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

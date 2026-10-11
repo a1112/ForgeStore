@@ -1,0 +1,481 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "sigil",
+  "defaultSaveProof": {
+    "schemaVersion": 1,
+    "applicationId": "sigil",
+    "stage": "original-edit-save-diagnostic-preview-blank",
+    "job": {
+      "applicationId": "sigil",
+      "createdAtMilliseconds": 1791703529975,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 72144,
+          "requestId": "job-1791703529975-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 189346,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791703450509-1/prefix",
+          "requestId": "job-1791703529975-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 189389,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791703529975-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791703450509-1",
+      "id": "job-1791703529975-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 3576960,
+        "fileDigest": "sha256:d9deafca1b85e343662d0b16aed24f53b6567e64e06dba673fa7bf1a402c9b3e",
+        "fileSizeBytes": 6784000,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "hunspell.dll",
+          "kernel32.dll",
+          "msvcp140.dll",
+          "python313.dll",
+          "qt6concurrent.dll",
+          "qt6core.dll",
+          "qt6gui.dll",
+          "qt6printsupport.dll",
+          "qt6svg.dll",
+          "qt6webenginecore.dll",
+          "qt6webenginewidgets.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "sigilgumbo.dll",
+          "user32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 3772416,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 3771978,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 2395648,
+            "readable": true,
+            "virtualAddress": 3776512,
+            "virtualSize": 2395554,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 70144,
+            "readable": true,
+            "virtualAddress": 6172672,
+            "virtualSize": 91336,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 93696,
+            "readable": true,
+            "virtualAddress": 6266880,
+            "virtualSize": 93552,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 415232,
+            "readable": true,
+            "virtualAddress": 6361088,
+            "virtualSize": 414736,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 35840,
+            "readable": true,
+            "virtualAddress": 6778880,
+            "virtualSize": 35660,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791703450509-1",
+          "digest": "sha256:d9deafca1b85e343662d0b16aed24f53b6567e64e06dba673fa7bf1a402c9b3e",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "Sigil.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791703450509-1/prefix/drive_c/Sigil/Sigil.exe",
+          "sizeBytes": 6784000,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:d9deafca1b85e343662d0b16aed24f53b6567e64e06dba673fa7bf1a402c9b3e pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791703450509-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791703450509-1/prefix/drive_c/Sigil/Sigil.exe",
+            "C:\\ForgeQA\\input\\中文原稿.epub"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791703450509-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791703450509-1"
+        },
+        "requestId": "job-1791703529975-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791703721484
+    },
+    "fixture": {
+      "generationId": "gen-job-1791703450509-1",
+      "input": {
+        "file": "input/中文原稿.epub",
+        "sizeBytes": 1564,
+        "sha256": "ce1599f2d04f4e107be87af3b4057964148b234ece191e81e4e06c294d404343"
+      },
+      "members": {
+        "mimetype": {
+          "sha256": "e468e350d1143eb648f60c7b0bd6031101ec0544a361ca74ecef256ac901f48b",
+          "sizeBytes": 20
+        },
+        "META-INF/container.xml": {
+          "sha256": "8cb32381a21d57fe5202fe79f5252a9f1392f2de22d786dc2dd2b879a2a8f5ae",
+          "sizeBytes": 221
+        },
+        "OEBPS/content.opf": {
+          "sha256": "59e448fa3136f690900f4665ec868ff91c3d44ec87f90ea288993549359d99ff",
+          "sizeBytes": 569
+        },
+        "OEBPS/toc.ncx": {
+          "sha256": "a597ee3c6ecb54d80b0b0bddb771b77785f3cf3592c406708be6e9da18ef5d87",
+          "sizeBytes": 392
+        },
+        "OEBPS/chapter.xhtml": {
+          "sha256": "06db0fe63b600e2968f830c1166bebc751e2d71b8df8c8210228cd859dbbf71b",
+          "sizeBytes": 343
+        }
+      },
+      "chapterUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>Original Chapter</title></head><body>\n<h1>ForgeOS Original Chapter</h1>\n<p>STATUS=BEFORE</p>\n<p>VALUE=21</p>\n<p>中文内容保留</p>\n</body></html>\n",
+      "expectedOutput": "output/original-edited.epub",
+      "outputDirectoryEmpty": true,
+      "helpersCreateInputOnly": true,
+      "installedLicense": {
+        "sizeBytes": 35821,
+        "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+        "CRLFNormalizationCount": 674,
+        "normalizedMatchesFixedSource": true,
+        "rawBytesEqualToSource": false
+      }
+    },
+    "savedOutput": {
+      "file": "output/original-edited.epub",
+      "sizeBytes": 1685,
+      "sha256": "dd14939fe1d7ed64610baeafe495db46fed234812e5c7bd3867cda55eca6af62",
+      "members": {
+        "mimetype": {
+          "sizeBytes": 20,
+          "sha256": "e468e350d1143eb648f60c7b0bd6031101ec0544a361ca74ecef256ac901f48b"
+        },
+        "META-INF/container.xml": {
+          "sizeBytes": 265,
+          "sha256": "83e412f1ac7d052a9f73d82d026c9ce241591c60b80e9c384956e9e588e1d5fc"
+        },
+        "OEBPS/chapter.xhtml": {
+          "sizeBytes": 376,
+          "sha256": "61d15d644a0478c7aa521c02eac4cb581490dee794f3fd4a0c7882afc0e24c36"
+        },
+        "OEBPS/content.opf": {
+          "sizeBytes": 827,
+          "sha256": "d5ffc049e12d38988f838f80b8565c2bc2990bee2759356503e16502b8bfae7d"
+        },
+        "OEBPS/toc.ncx": {
+          "sizeBytes": 392,
+          "sha256": "a597ee3c6ecb54d80b0b0bddb771b77785f3cf3592c406708be6e9da18ef5d87"
+        }
+      },
+      "chapterFile": "OEBPS/chapter.xhtml",
+      "chapterUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>Original Chapter</title></head><body>\r\n<h1>ForgeOS Original Chapter</h1>\r\n<p>STATUS=AFTER</p>\r\n<p>VALUE=21</p>\r\n<p>中文内容保留</p>\r\n<p>APPENDED=ORIGINAL</p>\r\n</body></html>\r\n",
+      "bodyTexts": [
+        "ForgeOS Original Chapter",
+        "STATUS=AFTER",
+        "VALUE=21",
+        "中文内容保留",
+        "APPENDED=ORIGINAL"
+      ]
+    },
+    "inputUnchanged": true,
+    "previewObservedBlank": true,
+    "guiAccepted": false,
+    "published": false,
+    "pins": {
+      "system.reg": {
+        "sizeBytes": 3901058,
+        "sha256": "2768b322265ed892ff6249a7502892a771b309039d3cac5d3cffda02f9227ece"
+      },
+      "user.reg": {
+        "sizeBytes": 103788,
+        "sha256": "216ee1e0834d82ee9d0923124216a3973dd7facd488e12e1942f8d523875b9e9"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "2e52a8bd554f9ead9bcfdb173d5d9c5e67b75aca29a642a78768306432f6a665"
+      },
+      "drive_c/Sigil/COPYING.txt": {
+        "sizeBytes": 35821,
+        "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+      },
+      "drive_c/Sigil/Sigil.exe": {
+        "sizeBytes": 6784000,
+        "sha256": "d9deafca1b85e343662d0b16aed24f53b6567e64e06dba673fa7bf1a402c9b3e"
+      },
+      "drive_c/Sigil/plugin_launchers/python/sigil_bs4/COPYING.txt": {
+        "sizeBytes": 1289,
+        "sha256": "a7e8d7e934eca4f49bfe4049e0306b143602e7d43765737a5c2eff00343f7941"
+      },
+      "drive_c/ForgeQA/output/original-edited.epub": {
+        "sizeBytes": 1685,
+        "sha256": "dd14939fe1d7ed64610baeafe495db46fed234812e5c7bd3867cda55eca6af62"
+      },
+      "drive_c/ForgeQA/input/中文原稿.epub": {
+        "sizeBytes": 1564,
+        "sha256": "ce1599f2d04f4e107be87af3b4057964148b234ece191e81e4e06c294d404343"
+      }
+    },
+    "checkpoint": {
+      "file": "after-original-save.json",
+      "sha256": "d5472fce80fa9cf99305bfb70c6352223a4a86634b61da45947a8256829514a9",
+      "coreJobs": 248,
+      "fullStoreRows": 81
+    },
+    "previousFullHistoryDataTrustPreserved": true
+  },
+  "beforeSingleVariableDiagnostic": {
+    "stage": "default-reopen-preview-blank-confirmed",
+    "fixedInputOutputProgramLicenseUnchanged": true,
+    "pins": {
+      "drive_c/Sigil/COPYING.txt": {
+        "sizeBytes": 35821,
+        "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+      },
+      "drive_c/Sigil/Sigil.exe": {
+        "sizeBytes": 6784000,
+        "sha256": "d9deafca1b85e343662d0b16aed24f53b6567e64e06dba673fa7bf1a402c9b3e"
+      },
+      "drive_c/Sigil/plugin_launchers/python/sigil_bs4/COPYING.txt": {
+        "sizeBytes": 1289,
+        "sha256": "a7e8d7e934eca4f49bfe4049e0306b143602e7d43765737a5c2eff00343f7941"
+      },
+      "drive_c/ForgeQA/output/original-edited.epub": {
+        "sizeBytes": 1685,
+        "sha256": "dd14939fe1d7ed64610baeafe495db46fed234812e5c7bd3867cda55eca6af62"
+      },
+      "drive_c/ForgeQA/input/中文原稿.epub": {
+        "sizeBytes": 1564,
+        "sha256": "ce1599f2d04f4e107be87af3b4057964148b234ece191e81e4e06c294d404343"
+      },
+      "drive_c/Sigil/Qt6WebEngineCore.dll": {
+        "sizeBytes": 155472896,
+        "sha256": "e13ee3908b7666c60986cb83a6e4b02c20ed6398c2096b8dd43a6f7c059b84cc"
+      },
+      "drive_c/Sigil/QtWebEngineProcess.exe": {
+        "sizeBytes": 652288,
+        "sha256": "6c87fd722d99416f9223738dea664c16a33d88a585172b0650806f502598bb97"
+      }
+    },
+    "checkpoint": {
+      "file": "before-disable-gpu-diagnostic.json",
+      "sha256": "7823f41c034fef71254f7fb31cd5473697fb2ca0dc63966d83a1f1fca88d9235",
+      "coreJobs": 249,
+      "fullStoreRows": 81
+    },
+    "guiAccepted": false,
+    "published": false,
+    "zoomInputFailedAndWasDiscarded": true,
+    "underlyingRootCauseEstablished": false
+  },
+  "singleVariableDiagnosticConclusion": {
+    "schemaVersion": 1,
+    "stage": "single-variable-disable-gpu-diagnostic-only",
+    "defaultPreviewFailedTwice": true,
+    "disableGpuPreviewActuallyRendered": true,
+    "savedOutputAndInputUnchanged": true,
+    "fixedProgramWebEngineAndRuntimeUnchanged": true,
+    "checkpoint": {
+      "file": "before-formal-repair.json",
+      "sha256": "a7b5b92775e08116a01bbe8917e7f2251dfbb2f8e4396902645d18a772052905",
+      "coreJobs": 250,
+      "fullStoreRows": 81
+    },
+    "countsAsCompleted": false,
+    "securityGuardsUnchanged": true,
+    "underlyingRootCauseEstablished": false,
+    "reference": "https://doc.qt.io/qt-6.5/qtwebengine-debugging.html"
+  },
+  "diagnosticGenerationId": "gen-job-1791703450509-1",
+  "diagnosticFinalPins": {
+    "drive_c/Sigil/COPYING.txt": {
+      "sizeBytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "drive_c/Sigil/Sigil.exe": {
+      "sizeBytes": 6784000,
+      "sha256": "d9deafca1b85e343662d0b16aed24f53b6567e64e06dba673fa7bf1a402c9b3e"
+    },
+    "drive_c/Sigil/plugin_launchers/python/sigil_bs4/COPYING.txt": {
+      "sizeBytes": 1289,
+      "sha256": "a7e8d7e934eca4f49bfe4049e0306b143602e7d43765737a5c2eff00343f7941"
+    },
+    "drive_c/ForgeQA/output/original-edited.epub": {
+      "sizeBytes": 1685,
+      "sha256": "dd14939fe1d7ed64610baeafe495db46fed234812e5c7bd3867cda55eca6af62"
+    },
+    "drive_c/ForgeQA/input/中文原稿.epub": {
+      "sizeBytes": 1564,
+      "sha256": "ce1599f2d04f4e107be87af3b4057964148b234ece191e81e4e06c294d404343"
+    },
+    "drive_c/Sigil/Qt6WebEngineCore.dll": {
+      "sizeBytes": 155472896,
+      "sha256": "e13ee3908b7666c60986cb83a6e4b02c20ed6398c2096b8dd43a6f7c059b84cc"
+    },
+    "drive_c/Sigil/QtWebEngineProcess.exe": {
+      "sizeBytes": 652288,
+      "sha256": "6c87fd722d99416f9223738dea664c16a33d88a585172b0650806f502598bb97"
+    },
+    "system.reg": {
+      "sizeBytes": 3901058,
+      "sha256": "b6fd26869816fb29e605179f448490f5c521218646125bc838979b63dfad359c"
+    },
+    "user.reg": {
+      "sizeBytes": 103788,
+      "sha256": "981ca3e148e9dabb2b4507faa39954d10ed2755a83159cb7ca6a7b075388913f"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "2e52a8bd554f9ead9bcfdb173d5d9c5e67b75aca29a642a78768306432f6a665"
+    },
+    "drive_c/Sigil/examples/clip_entries.ini": {
+      "sizeBytes": 2644,
+      "sha256": "f7f75ee65d9016eede7a970400a54b9c25f1764587b9884be70d5af3527be935"
+    },
+    "drive_c/Sigil/examples/search_entries.ini": {
+      "sizeBytes": 3444,
+      "sha256": "00bb560fdd2855e3d247747636ba207a3fd0e1b580234024bf95d75165eb08e0"
+    },
+    "drive_c/Sigil/Lib/_pyrepl/mypy.ini": {
+      "sizeBytes": 760,
+      "sha256": "ff35be39f8338795660001a70e8e40819ff1efa4a1327d44a9a1a8841ba5b8a9"
+    },
+    "drive_c/users/forge/AppData/Local/sigil-ebook/sigil/sigil_searches_v6.ini": {
+      "sizeBytes": 3869,
+      "sha256": "02dc7b5255d2569c27804d8927a90c8c16a69ed100ffa342815a8cfdb55cd7d8"
+    },
+    "drive_c/users/forge/AppData/Local/sigil-ebook/sigil/sigil_clips_v6.ini": {
+      "sizeBytes": 2644,
+      "sha256": "f4adc9434542bfc4e245ae361ab54ff6cdf58295c3809e10ae079b1a2e438db0"
+    },
+    "drive_c/users/forge/AppData/Local/sigil-ebook/sigil/sigil_v6.ini": {
+      "sizeBytes": 17683,
+      "sha256": "feeb178cb4aa3515376f4ed124d96fcac532519ff86b17625c9fa4e6a690c560"
+    },
+    "drive_c/users/forge/AppData/Local/sigil-ebook/sigil/sigil_index_v6.ini": {
+      "sizeBytes": 25,
+      "sha256": "4c9be7a82815ebe77b8f75816719310e3d22034719b2630b6b538ac771f4826e"
+    }
+  },
+  "countsAsCompleted": false,
+  "diagnosticOnly": true,
+  "limitations": [
+    "Only two small one-chapter EPUB2 fixtures with Chinese filenames, ordinary BEFORE→AFTER replacement in code view, ASCII paragraph insertion, actual preview including existing Chinese content, GUI Save As to ASCII paths and explicit fresh-process reopen were verified. Original input/output 1564/1685 bytes; market input/output 1559/1681 bytes. Inputs remained exact original bytes.",
+    "EPUB3, multiple chapters, CSS/images/audio/video, plugins/Python execution, metadata/TOC editing, printing, large files, direct Chinese keyboard input and advanced features were not verified. ZIP CRC and XML body checks are not full EPUBCheck/specification validation; synthetic fixtures are not independent applications.",
+    "Default preview was blank in two managed GUI processes despite exit zero and saved code. Per-launcher QTWEBENGINE_CHROMIUM_FLAGS=--disable-gpu restored the tested preview through existing native launcher.environment. Exact underlying Wine/Qt/Chromium/GPU defective function is not established. No no-sandbox flag, Core code, global context, program/DLL/runtime/font or working-directory change.",
+    "A first-launch newer-version notice was declined normally in default, formal and market generations. That is a non-binding update notice, not an EULA. Unattended startup was not verified; observed newer-version text does not establish current latest upstream release.",
+    "Main program GPL-3.0-or-later from fixed src/main.cpp. Installed COPYING.txt matches fixed source COPYING only after 674 CRLF normalizations; raw bytes differ. Full Qt/Chromium/Python/icons and bundled licence closure, OpenPGP/Authenticode verification and reproducibility were not verified.",
+    "Guest network download, fresh-machine recipe registration, configuration migration and cross-version upgrades were not verified. Same-version update used verified pre-cache and Store IPC; GUI update/rollback buttons were not verified.",
+    "Data preservation covers prior fixed acceptance data, diagnostic pins and new fixed input/output/program/licence/Qt/config/registry pins, not every application filesystem file. Runtime network deny in the plan is not claimed to enforce actual network isolation."
+  ]
+}

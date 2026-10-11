@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "sigil",
+  "version": "2.6.2",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited two small one-chapter EPUB2 code-edit, preview including existing Chinese text, GUI Save As, explicit fresh-process reopen and independent market lifecycle.",
+  "launcherEnvironmentRepair": {
+    "QTWEBENGINE_CHROMIUM_FLAGS": "--disable-gpu"
+  },
+  "underlyingRootCauseEstablished": false,
+  "coreCodeOrGlobalRuntimeChanged": false,
+  "unattendedStartupVerified": false,
+  "inputsUnchanged": true,
+  "fullEpubSpecificationValidated": false,
+  "directChineseKeyboardInputAccepted": false,
+  "bundleLicenseClosureVerified": false,
+  "signedCatalogue": "catalogue/candidate-v34/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 43,
+    "snapshot": 43,
+    "timestamp": 43
+  },
+  "catalogueEntries": 35,
+  "acceptedDistinctWindowsApplications": 33,
+  "excludedFixtures": 2,
+  "actualSignedTargets": 68,
+  "publicCatalogueFiles": 39,
+  "coreJobCount": 257,
+  "fullStoreRowCount": 83,
+  "acceptanceReceipt": "windows-sigil-20261011.acceptance.json",
+  "acceptanceReceiptSha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12",
+  "sourceEvidence": "2026-10-11-sigil-source.json",
+  "sourceEvidenceSha256": "6a0dcff60f126c7d676d6c5b10411a518dd8ca5e45ca01783d5a4c136e5a8619",
+  "originalGuiEvidence": "2026-10-11-sigil-gui.json",
+  "originalGuiEvidenceSha256": "11a544b2dc4d1d274462c3faaf811765384ebb0c9822dc27cf1c1e070d0a4023",
+  "frozenOriginalSourceGuiAndReceiptBytesAndStageLabelsRetained": true,
+  "activationEvidence": "2026-10-11-sigil-activation.json",
+  "marketGuiEvidence": "2026-10-11-sigil-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-sigil-runtime-recovery.json",
+  "failureEvidence": "2026-10-11-sigil-failures.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-sigil-20261011.acceptance.json#sigil",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e",
+        "size": 133608315,
+        "target": "Sigil-2.6.2-Windows-x64-Setup.exe",
+        "url": "https://github.com/Sigil-Ebook/Sigil/releases/download/2.6.2/Sigil-2.6.2-Windows-x64-Setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "sigil"
+    },
+    "id": "sigil",
+    "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "Sigil",
+      "zhCN": "Sigil"
+    },
+    "origin": "https://github.com/Sigil-Ebook/Sigil/releases/tag/2.6.2",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Sigil-Ebook",
+    "summary": {
+      "en": "Limited one-chapter EPUB2 code edit, preview, save and fresh-process reopen tested with per-launcher software rendering; advanced EPUB features unverified.",
+      "zhCN": "逐启动器关闭 GPU 加速；有限单章节 EPUB2 代码编辑、预览、保存和新进程重开已测，高级功能未验收"
+    },
+    "version": "2.6.2"
+  },
+  "selectedOriginalGeneration": "gen-job-1791703952208-5",
+  "independentMarketGeneration": "gen-job-1791704634969-8",
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "storeGuiButtonsVerified": false,
+  "allOldSignedTargetsPreservedExceptCatalogueReplacement": true,
+  "rootBytesPreserved": true,
+  "tuftoolExplicitTrustedRootDownloadVerified": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "sigil",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "e9a3838f-2948-4fe4-a2c5-9e08cf163e5a",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "sigil",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "a1f8587f-13d7-42b2-8828-12ec83c317e6",
+      "state": "succeeded"
+    }
+  },
+  "beforeRollbackCheckpointSavedAndReadBack": true,
+  "beforeRollbackCoreJobs": 256,
+  "beforeRollbackStoreRows": 82,
+  "afterRollbackCoreJobs": 256,
+  "afterRollbackStoreRows": 83,
+  "normalRestartBeforeAndAfterCoreJobs": 257,
+  "normalRestartBeforeAndAfterStoreRows": 83,
+  "normalRestartFullFieldEqualityPassed": true,
+  "privateCheckpointPins": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "db8029a431e3795f573dd0f7ce6470a56a7fe6bfd3d111f0019f7e5304fdb3d4",
+      "coreJobs": 257,
+      "fullStoreRows": 83
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "5aeb6b163c874fb207722eaaceee5ad434156a5e5a999a0b8af5b104e35a11c9",
+      "coreJobs": 257,
+      "fullStoreRows": 83
+    }
+  },
+  "outputPins": {
+    "original": {
+      "file": "output/original-edited.epub",
+      "sizeBytes": 1685,
+      "sha256": "a0c05443b52485074234ac340bc7af146cbe082e8a15c150382b16a1d66b9898",
+      "members": {
+        "mimetype": {
+          "sizeBytes": 20,
+          "sha256": "e468e350d1143eb648f60c7b0bd6031101ec0544a361ca74ecef256ac901f48b"
+        },
+        "META-INF/container.xml": {
+          "sizeBytes": 265,
+          "sha256": "83e412f1ac7d052a9f73d82d026c9ce241591c60b80e9c384956e9e588e1d5fc"
+        },
+        "OEBPS/chapter.xhtml": {
+          "sizeBytes": 376,
+          "sha256": "61d15d644a0478c7aa521c02eac4cb581490dee794f3fd4a0c7882afc0e24c36"
+        },
+        "OEBPS/content.opf": {
+          "sizeBytes": 827,
+          "sha256": "d5ffc049e12d38988f838f80b8565c2bc2990bee2759356503e16502b8bfae7d"
+        },
+        "OEBPS/toc.ncx": {
+          "sizeBytes": 392,
+          "sha256": "a597ee3c6ecb54d80b0b0bddb771b77785f3cf3592c406708be6e9da18ef5d87"
+        }
+      },
+      "chapterFile": "OEBPS/chapter.xhtml",
+      "chapterUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>Original Chapter</title></head><body>\r\n<h1>ForgeOS Original Chapter</h1>\r\n<p>STATUS=AFTER</p>\r\n<p>VALUE=21</p>\r\n<p>中文内容保留</p>\r\n<p>APPENDED=ORIGINAL</p>\r\n</body></html>\r\n",
+      "bodyTexts": [
+        "ForgeOS Original Chapter",
+        "STATUS=AFTER",
+        "VALUE=21",
+        "中文内容保留",
+        "APPENDED=ORIGINAL"
+      ]
+    },
+    "market": {
+      "file": "output/market-edited.epub",
+      "sizeBytes": 1681,
+      "sha256": "a548771068c4f71a23b654b71d281e21e994fee31f196aa0971f5b23177e3185",
+      "members": {
+        "mimetype": {
+          "sizeBytes": 20,
+          "sha256": "e468e350d1143eb648f60c7b0bd6031101ec0544a361ca74ecef256ac901f48b"
+        },
+        "META-INF/container.xml": {
+          "sizeBytes": 265,
+          "sha256": "83e412f1ac7d052a9f73d82d026c9ce241591c60b80e9c384956e9e588e1d5fc"
+        },
+        "OEBPS/chapter.xhtml": {
+          "sizeBytes": 370,
+          "sha256": "de12ce2fb5eea272e949531e4644b5a122e51538142b63ed04562b24c2c5e269"
+        },
+        "OEBPS/content.opf": {
+          "sizeBytes": 823,
+          "sha256": "6095feb624b4a74f256d119c333dd9b88681700d44f24326d5968ad4a7fa6828"
+        },
+        "OEBPS/toc.ncx": {
+          "sizeBytes": 386,
+          "sha256": "501950e9fffcaeecbf0653681e98d9a151cdb54ca2c1803b73a88e6e146a7290"
+        }
+      },
+      "chapterFile": "OEBPS/chapter.xhtml",
+      "chapterUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>Market Chapter</title></head><body>\r\n<h1>ForgeOS Market Chapter</h1>\r\n<p>STATUS=AFTER</p>\r\n<p>VALUE=40</p>\r\n<p>中文内容保留</p>\r\n<p>APPENDED=MARKET</p>\r\n</body></html>\r\n",
+      "bodyTexts": [
+        "ForgeOS Market Chapter",
+        "STATUS=AFTER",
+        "VALUE=40",
+        "中文内容保留",
+        "APPENDED=MARKET"
+      ]
+    }
+  },
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two small one-chapter EPUB2 fixtures with Chinese filenames, ordinary BEFORE→AFTER replacement in code view, ASCII paragraph insertion, actual preview including existing Chinese content, GUI Save As to ASCII paths and explicit fresh-process reopen were verified. Original input/output 1564/1685 bytes; market input/output 1559/1681 bytes. Inputs remained exact original bytes.",
+    "EPUB3, multiple chapters, CSS/images/audio/video, plugins/Python execution, metadata/TOC editing, printing, large files, direct Chinese keyboard input and advanced features were not verified. ZIP CRC and XML body checks are not full EPUBCheck/specification validation; synthetic fixtures are not independent applications.",
+    "Default preview was blank in two managed GUI processes despite exit zero and saved code. Per-launcher QTWEBENGINE_CHROMIUM_FLAGS=--disable-gpu restored the tested preview through existing native launcher.environment. Exact underlying Wine/Qt/Chromium/GPU defective function is not established. No no-sandbox flag, Core code, global context, program/DLL/runtime/font or working-directory change.",
+    "A first-launch newer-version notice was declined normally in default, formal and market generations. That is a non-binding update notice, not an EULA. Unattended startup was not verified; observed newer-version text does not establish current latest upstream release.",
+    "Main program GPL-3.0-or-later from fixed src/main.cpp. Installed COPYING.txt matches fixed source COPYING only after 674 CRLF normalizations; raw bytes differ. Full Qt/Chromium/Python/icons and bundled licence closure, OpenPGP/Authenticode verification and reproducibility were not verified.",
+    "Guest network download, fresh-machine recipe registration, configuration migration and cross-version upgrades were not verified. Same-version update used verified pre-cache and Store IPC; GUI update/rollback buttons were not verified.",
+    "Data preservation covers prior fixed acceptance data, diagnostic pins and new fixed input/output/program/licence/Qt/config/registry pins, not every application filesystem file. Runtime network deny in the plan is not claimed to enforce actual network isolation."
+  ]
+}

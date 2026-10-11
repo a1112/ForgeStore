@@ -1,0 +1,57 @@
+{
+  "activated": true,
+  "metadataVersion": 43,
+  "rootVersion": 1,
+  "entries": 35,
+  "coreJobs": 253,
+  "fullStoreRows": 81,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-sigil-20261011.acceptance.json#sigil",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e",
+        "size": 133608315,
+        "target": "Sigil-2.6.2-Windows-x64-Setup.exe",
+        "url": "https://github.com/Sigil-Ebook/Sigil/releases/download/2.6.2/Sigil-2.6.2-Windows-x64-Setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "sigil"
+    },
+    "id": "sigil",
+    "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+    "name": {
+      "en": "Sigil",
+      "zhCN": "Sigil"
+    },
+    "origin": "https://github.com/Sigil-Ebook/Sigil/releases/tag/2.6.2",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Sigil-Ebook",
+    "summary": {
+      "en": "Limited one-chapter EPUB2 code edit, preview, save and fresh-process reopen tested with per-launcher software rendering; advanced EPUB features unverified.",
+      "zhCN": "逐启动器关闭 GPU 加速；有限单章节 EPUB2 代码编辑、预览、保存和新进程重开已测，高级功能未验收"
+    },
+    "version": "2.6.2"
+  },
+  "installed": {
+    "appId": "sigil",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "2.6.2"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "c55b4b075dd6d28025641634a2a79541cfe30c702c4726d56484fd8ddcc192fd",
+    "coreJobs": 253,
+    "fullStoreRows": 81
+  },
+  "stage": "local-activation-before-independent-market-gui",
+  "subsequentCompletionEvidence": "2026-10-11-sigil-publication.json"
+}

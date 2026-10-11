@@ -1,0 +1,109 @@
+{
+  "tag": "2.6.2",
+  "commit": "4a2e386a7c30026350232e97b7ec4c3ecd6519d4",
+  "downloads": [
+    {
+      "file": "Sigil-2.6.2-Windows-x64-Setup.exe",
+      "url": "https://github.com/Sigil-Ebook/Sigil/releases/download/2.6.2/Sigil-2.6.2-Windows-x64-Setup.exe",
+      "sizeBytes": 133608315,
+      "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e",
+      "officialReleaseDigestMatched": true
+    },
+    {
+      "file": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4.tar.gz",
+      "url": "https://codeload.github.com/Sigil-Ebook/Sigil/tar.gz/4a2e386a7c30026350232e97b7ec4c3ecd6519d4",
+      "sizeBytes": 19468205,
+      "sha256": "1aca354f8f50f9e6f19bb4331b5972c5ebe9cd9fabd3e3253515380237fd6325",
+      "officialReleaseDigestMatched": false
+    }
+  ],
+  "selectedMembers": [
+    {
+      "member": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4/COPYING.txt",
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "member": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4/README.md",
+      "sizeBytes": 6256,
+      "sha256": "37d561463794fb49f732c0cf4bfc5dc777906b045fdf47dbdf26c995b82aca8d"
+    },
+    {
+      "member": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4/installer/Sigil.iss",
+      "sizeBytes": 4828,
+      "sha256": "15389efeabab6cfe7dd03942df86402da2e5147d6c2058d11bb155c15f1bc69d"
+    },
+    {
+      "member": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4/internal/gumbo/README.md",
+      "sizeBytes": 8267,
+      "sha256": "28e49ac9ccadc61c21d0849c5c64c980ee01e9e4e2c0d4deadccd561ef826c40"
+    },
+    {
+      "member": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4/src/Resource_Files/plugin_launchers/python/sigil_bs4/COPYING.txt",
+      "sizeBytes": 1263,
+      "sha256": "424336c2b3446b3c179f07217271bb914dc881a65c2bf7021da98c77e776d2c9"
+    },
+    {
+      "member": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4/src/Resource_Files/polyfills/MathJax_README.md",
+      "sizeBytes": 1876,
+      "sha256": "0b45ff61006333f3f928ea42d5d12f76742de1da200445378902b080a0ae7b3b"
+    },
+    {
+      "member": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4/src/main.cpp",
+      "sizeBytes": 38369,
+      "sha256": "3afd15ad6dd0eeef9f53c7fff97761ec19918f0edeb5ab3192a90acb4710e265"
+    }
+  ],
+  "openPgpSignaturesActuallyVerified": false,
+  "installed": false,
+  "guiAccepted": false,
+  "published": false,
+  "mainProgramLicense": "GPL-3.0-or-later",
+  "licenseBasis": "Fixed src/main.cpp declares GPL version 3 or any later version; fixed root COPYING.txt read.",
+  "fullBundledLicenseClosureVerified": false,
+  "installerType": "Inno Setup",
+  "installerSourceMember": "installer/Sigil.iss",
+  "installerParameters": [
+    "/VERYSILENT",
+    "/SUPPRESSMSGBOXES",
+    "/NORESTART",
+    "/SP-",
+    "/COMPONENTS=main",
+    "/DIR=C:\\Sigil"
+  ],
+  "launcher": "Sigil/Sigil.exe",
+  "defaultLauncherWorkingDirectory": true,
+  "OpenWithRegistrationRetained": true,
+  "defaultEpubAssociationComponentDisabled": true,
+  "applicationId": "sigil",
+  "version": "2.6.2",
+  "officialRelease": "https://github.com/Sigil-Ebook/Sigil/releases/tag/2.6.2",
+  "officialDownloadPage": "https://sigil-ebook.com/sigil/download/",
+  "installer": {
+    "fileName": "Sigil-2.6.2-Windows-x64-Setup.exe",
+    "url": "https://github.com/Sigil-Ebook/Sigil/releases/download/2.6.2/Sigil-2.6.2-Windows-x64-Setup.exe",
+    "sizeBytes": 133608315,
+    "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e",
+    "officialReleaseDigestMatched": true
+  },
+  "sourceArchive": {
+    "file": "Sigil-4a2e386a7c30026350232e97b7ec4c3ecd6519d4.tar.gz",
+    "url": "https://codeload.github.com/Sigil-Ebook/Sigil/tar.gz/4a2e386a7c30026350232e97b7ec4c3ecd6519d4",
+    "sizeBytes": 19468205,
+    "sha256": "1aca354f8f50f9e6f19bb4331b5972c5ebe9cd9fabd3e3253515380237fd6325",
+    "officialReleaseDigestMatched": false
+  },
+  "formalLauncherEnvironment": {
+    "QTWEBENGINE_CHROMIUM_FLAGS": "--disable-gpu"
+  },
+  "formalDefinitionDigest": "sha256:3d9038b8b127ef1a5466bae1a8e60263fc46b00a98bdfcbaf89153dbea3019da",
+  "installedLicense": {
+    "sizeBytes": 35821,
+    "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b",
+    "CRLFNormalizationCount": 674,
+    "normalizedMatchesFixedSource": true,
+    "rawBytesEqualToSource": false
+  },
+  "OpenPgpSignatureActuallyVerified": false,
+  "AuthenticodeActuallyVerified": false
+}
