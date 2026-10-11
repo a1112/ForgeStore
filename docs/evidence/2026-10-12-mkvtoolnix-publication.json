@@ -1,0 +1,808 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "dateConvention": "Asia/Shanghai report date; actual guest UTC timestamps retained",
+  "applicationId": "mkvtoolnix",
+  "version": "94.0",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 46,
+  "signedCatalogue": "catalogue/candidate-v50/tuf",
+  "metadataVersion": 59,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 48,
+  "excludedFixtures": 2,
+  "signedActualTargets": 98,
+  "publicCatalogueFiles": 55,
+  "sourceEvidence": {
+    "reference": "2026-10-12-mkvtoolnix-source.json",
+    "sha256": "ff0850343fb9e45a0c63ef08812327c3ea708d62c9870d40c305a7fd9c8556d6"
+  },
+  "originalAcceptance": {
+    "reference": "windows-mkvtoolnix-20261012.acceptance.json",
+    "sha256": "c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281"
+  },
+  "originalGeneration": "gen-job-1791746776538-1",
+  "marketGeneration": "gen-job-1791747680633-4",
+  "definitionDigest": "sha256:847865d340049e05734564e03465ce0d9dd97b380f1514f0af26799ec01d9fa0",
+  "originalSave": {
+    "generationId": "gen-job-1791746776538-1",
+    "inputRelativePath": "MKVToolNixTests/原始音频.wav",
+    "inputPin": {
+      "sizeBytes": 1644,
+      "sha256": "7635faa3add08bea7db70c0e17b1d205dce06d523632ff9792d8ba17b2dde3be"
+    },
+    "outputRelativePath": "MKVToolNixTests/original-result.mka",
+    "outputPin": {
+      "sizeBytes": 7400,
+      "sha256": "41ad9a10ef72af7a2e6067a6129548322b24f01fb4ffe4a312d384798161951c"
+    },
+    "parsedOutput": {
+      "title": "ORIGINAL42",
+      "durationSeconds": 0.0999992,
+      "timestampScaleNs": 124999,
+      "durationTicks": 800.0,
+      "nominalPcmDurationSeconds": 0.1,
+      "durationToleranceSeconds": 0.000125,
+      "codecId": "A_PCM/INT/LIT",
+      "rateHz": 8000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "samples": 800,
+      "pcmSizeBytes": 1600,
+      "pcmSha256": "b50336902444e5cf5d555ca2f388c227c3d6a7750945c974af23af82f6f1f482",
+      "pcmExactMatch": true,
+      "samplingFrequencyUsesSpecificationDefault": true,
+      "channelsUsesSpecificationDefault": true,
+      "blocks": [
+        {
+          "relativeTimecode": 0,
+          "payloadBytes": 1280,
+          "lacing": "fixed",
+          "laceFrames": 2
+        },
+        {
+          "relativeTimecode": 640,
+          "payloadBytes": 320,
+          "lacing": "none",
+          "laceFrames": 1
+        }
+      ],
+      "fullMatroskaSpecificationVerified": false
+    },
+    "inputUnchanged": true,
+    "installedProgramPinsMatched": true,
+    "firstFormalJob": {
+      "applicationId": "mkvtoolnix",
+      "createdAtMilliseconds": 1791746892078,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 172030,
+          "requestId": "job-1791746892078-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 307285,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791746776538-1/prefix",
+          "requestId": "job-1791746892078-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 307328,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791746892078-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791746776538-1",
+      "id": "job-1791746892078-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5072,
+        "fileDigest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+        "fileSizeBytes": 52001320,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "authz.dll",
+          "avrt.dll",
+          "bcrypt.dll",
+          "comdlg32.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3d12.dll",
+          "d3d9.dll",
+          "dwmapi.dll",
+          "dwrite.dll",
+          "dxgi.dll",
+          "dxva2.dll",
+          "evr.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "mf.dll",
+          "mfplat.dll",
+          "mfreadwrite.dll",
+          "msvcrt.dll",
+          "ncrypt.dll",
+          "netapi32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "powrprof.dll",
+          "propsys.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "shcore.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "userenv.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "winhttp.dll",
+          "winmm.dll",
+          "ws2_32.dll",
+          "wtsapi32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 36380672,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 36380224,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 417792,
+            "readable": true,
+            "virtualAddress": 36384768,
+            "virtualSize": 417456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rodata",
+            "rawDataSize": 185344,
+            "readable": true,
+            "virtualAddress": 36802560,
+            "virtualSize": 185088,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 11894272,
+            "readable": true,
+            "virtualAddress": 36990976,
+            "virtualSize": 11894128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtmimed",
+            "rawDataSize": 40960,
+            "readable": true,
+            "virtualAddress": 48885760,
+            "virtualSize": 40960,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 1062400,
+            "readable": true,
+            "virtualAddress": 48926720,
+            "virtualSize": 1062036,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 1473536,
+            "readable": true,
+            "virtualAddress": 49991680,
+            "virtualSize": 1473328,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 51466240,
+            "virtualSize": 92456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 38912,
+            "readable": true,
+            "virtualAddress": 51560448,
+            "virtualSize": 38792,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51601408,
+            "virtualSize": 96,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51605504,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 186368,
+            "readable": true,
+            "virtualAddress": 51609600,
+            "virtualSize": 186144,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 309760,
+            "readable": true,
+            "virtualAddress": 51798016,
+            "virtualSize": 309288,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791746776538-1",
+          "digest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "mkvtoolnix-gui.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791746776538-1/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+          "sizeBytes": 52001320,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791746776538-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791746776538-1/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+            "C:\\MKVToolNixTests\\原始音频.wav"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791746776538-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791746776538-1"
+        },
+        "requestId": "job-1791746892078-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791747201790
+    },
+    "guiAccepted": false,
+    "published": false
+  },
+  "marketSave": {
+    "generationId": "gen-job-1791747680633-4",
+    "inputRelativePath": "MKVToolNixTests/市场音频.wav",
+    "inputPin": {
+      "sizeBytes": 1644,
+      "sha256": "103347c546366e075b687c8fda8c9d09fbb89c1e229de2e41fd48a4dbf589c1c"
+    },
+    "outputRelativePath": "MKVToolNixTests/market-result.mka",
+    "outputPin": {
+      "sizeBytes": 7398,
+      "sha256": "62f70ca79c806a6b82484dc7bed7783315c1141c9653697a92ba0dd5b20ca70c"
+    },
+    "parsedOutput": {
+      "title": "MARKET42",
+      "durationSeconds": 0.0999992,
+      "timestampScaleNs": 124999,
+      "durationTicks": 800.0,
+      "nominalPcmDurationSeconds": 0.1,
+      "durationToleranceSeconds": 0.000125,
+      "codecId": "A_PCM/INT/LIT",
+      "rateHz": 8000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "samples": 800,
+      "pcmSizeBytes": 1600,
+      "pcmSha256": "a37ffe26824d3df1a3f8484e2450ecc2d932413336cd321a071cffa71975ed39",
+      "pcmExactMatch": true,
+      "samplingFrequencyUsesSpecificationDefault": true,
+      "channelsUsesSpecificationDefault": true,
+      "blocks": [
+        {
+          "relativeTimecode": 0,
+          "payloadBytes": 1280,
+          "lacing": "fixed",
+          "laceFrames": 2
+        },
+        {
+          "relativeTimecode": 640,
+          "payloadBytes": 320,
+          "lacing": "none",
+          "laceFrames": 1
+        }
+      ],
+      "fullMatroskaSpecificationVerified": false
+    },
+    "inputUnchanged": true,
+    "installedProgramPinsMatched": true,
+    "firstFormalJob": {
+      "applicationId": "mkvtoolnix",
+      "createdAtMilliseconds": 1791747705723,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 174257,
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 44085,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 44128,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791747680633-4",
+      "id": "job-1791747705722-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5072,
+        "fileDigest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+        "fileSizeBytes": 52001320,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "authz.dll",
+          "avrt.dll",
+          "bcrypt.dll",
+          "comdlg32.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3d12.dll",
+          "d3d9.dll",
+          "dwmapi.dll",
+          "dwrite.dll",
+          "dxgi.dll",
+          "dxva2.dll",
+          "evr.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "mf.dll",
+          "mfplat.dll",
+          "mfreadwrite.dll",
+          "msvcrt.dll",
+          "ncrypt.dll",
+          "netapi32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "powrprof.dll",
+          "propsys.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "shcore.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "userenv.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "winhttp.dll",
+          "winmm.dll",
+          "ws2_32.dll",
+          "wtsapi32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 36380672,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 36380224,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 417792,
+            "readable": true,
+            "virtualAddress": 36384768,
+            "virtualSize": 417456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rodata",
+            "rawDataSize": 185344,
+            "readable": true,
+            "virtualAddress": 36802560,
+            "virtualSize": 185088,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 11894272,
+            "readable": true,
+            "virtualAddress": 36990976,
+            "virtualSize": 11894128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtmimed",
+            "rawDataSize": 40960,
+            "readable": true,
+            "virtualAddress": 48885760,
+            "virtualSize": 40960,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 1062400,
+            "readable": true,
+            "virtualAddress": 48926720,
+            "virtualSize": 1062036,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 1473536,
+            "readable": true,
+            "virtualAddress": 49991680,
+            "virtualSize": 1473328,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 51466240,
+            "virtualSize": 92456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 38912,
+            "readable": true,
+            "virtualAddress": 51560448,
+            "virtualSize": 38792,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51601408,
+            "virtualSize": 96,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51605504,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 186368,
+            "readable": true,
+            "virtualAddress": 51609600,
+            "virtualSize": 186144,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 309760,
+            "readable": true,
+            "virtualAddress": 51798016,
+            "virtualSize": 309288,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791747680633-4",
+          "digest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "mkvtoolnix-gui.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+          "sizeBytes": 52001320,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+            "C:\\MKVToolNixTests\\市场音频.wav"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4"
+        },
+        "requestId": "job-1791747705722-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791747752383
+    },
+    "guiAccepted": false,
+    "published": false
+  },
+  "fiveNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "action": "update",
+    "appId": "mkvtoolnix",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "120a327d-241a-4573-ac0c-efeae23ccb9d",
+    "state": "succeeded"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "mkvtoolnix",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "e9115b84-b6cf-48c4-b61d-f93fd4a3df6e",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791746776538-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 359,
+    "beforeRollbackStoreRows": 109,
+    "afterRollbackCoreJobs": 359,
+    "afterRollbackStoreRows": 110,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "7a82029a49c16d558b59a3b6c61e4750ff4bff0c6e38edeafc17c549f61280c7",
+      "coreJobs": 359,
+      "fullStoreRows": 110
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 360,
+  "fullStoreRows": 110,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationsAndFixedEvidenceDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalByteChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3900089,
+        "sha256": "265c2493a4a30d98018b6e6aba331804ed2ca98d62347d12668e29b48db552b0"
+      },
+      "after": {
+        "sizeBytes": 3900089,
+        "sha256": "2b6188c1effdbfa23dfaf35c8d76eb06852db3a178b48209b9972c16d7e7866a"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 321,
+      "textDiffPreservedPrivately": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 103042,
+        "sha256": "da9cf87ddb9c96fba84e0562896604a988379e603435ddf2ccb20e29d85d59c2"
+      },
+      "after": {
+        "sizeBytes": 103042,
+        "sha256": "15af79f68ecf2ba3dc255c136fd29429731bd211f8906fabc15ae9a08e7ee917"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 20,
+      "textDiffPreservedPrivately": true
+    }
+  },
+  "originalRegistryAndConfigBytesPreservedAcrossThirdGui": false,
+  "currentDataAndConfigurationMatchedAcrossRestart": true,
+  "originalHistoricalFrozenFiles": 35,
+  "oldImmutableFilesMatched": 1631,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "Only small100ms mono8000Hz PCM16 WAV GUI mux to Matroska audio, ASCII title/destination, explicit new managed-process reopen and Info tool accepted. Chinese input filename loaded. Synthetic WAV/Matroska fixtures do not count as applications.",
+    "Independent finite EBML parser confirms title, audio codec/rate/channels/bit depth and all1600PCM bytes; duration0.0999992s within one sample. SamplingFrequency8000 and Channels1 use specification defaults when omitted; actual fixed-size lacing handled. Full Matroska specification, broad codecs/video/multiple tracks/attachments/chapters/header edits/extraction/damaged or large files and playback unverified.",
+    "Fixed upstream README main GPLv2 declaration; exact or-later SPDX scope not verified. Installed doc/COPYING.txt raw bytes equal fixed source COPYING. Both installer and source match official fixed SHA256 files. Full Qt/EBML/Matroska/codec/icon/translation bundle-license closure, OpenPGP/Authenticode, binary-source correspondence and reproducible build unverified.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Native NSIS /S and /D=C: then one backslash MKVToolNix,16UTF8bytes. Online update notice observed and manually closed; no claim of offline/no-background-network or unattended startup. Closing unexecuted mux settings required normal confirmation; original final terminal gate stopped before confirmation and was retried only after normal exit.",
+    "Independent market generation, cached same-version Store IPC update, exact original rollback and normal two-service restart passed. Five formal GUI Exit/CtrlQ plus normal close-settings confirmations exited0 with wineserver stop. GUI market update/rollback buttons, new-machine registration, migration/cross-version upgrades and unattended startup unverified.",
+    "Third original GUI changed system.reg and user.reg bytes at same sizes; actual before/after private raw files and321/20-line diffs retained, cause unestablished. Current pins stable across restart. Only fixed acceptance data and209program files/limited configuration checked, not all old-application filesystem files."
+  ],
+  "remotePushPendingAtPublicationFreeze": true,
+  "priorRemoteVerifiedCommit": "6499f9a767cd0a5936604ef5146d50b9dd0a2990",
+  "newDeviceCodeIssued": false,
+  "completeMkvToolNixApplicationAccepted": false,
+  "unattendedStartupAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "guiVersionLabelMeasured": true,
+  "networkUpdateNoticeObserved": true,
+  "networkDownloadAccepted": false
+}

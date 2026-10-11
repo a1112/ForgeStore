@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-12",
+  "applicationId": "mkvtoolnix",
+  "sourceSelection": {
+    "phase": "source-selection",
+    "failedExpectation": "src/mkvtoolnix-gui/main.cpp present",
+    "observedActualEntry": "src/mkvtoolnix-gui/mkvtoolnix_gui.cpp",
+    "downloadBytesPreserved": true,
+    "installedAfterFailedGate": false,
+    "guestMutationAfterFailedGate": false,
+    "originalFetchHelperPreserved": true,
+    "controlledResumeUsesExistingVerifiedDownloads": true
+  },
+  "observationWrapper": "Observer printed2JSON lines after successful installation checkpoint; host one-object quiet parser failed. Controlled read-only check confirmed actual354/108 and209program pins before fixture/launch; no duplicate install.",
+  "parserCorrection": {
+    "passed": true,
+    "originalDurationFailure": {
+      "failure": "Independent parser exact 0.1-second duration tolerance assertion failed; no dependent reopen submitted.",
+      "actualDurationTicks": 800.0,
+      "timestampScale": 124999,
+      "actualDurationSeconds": 0.0999992,
+      "outputPin": {
+        "sizeBytes": 7400,
+        "sha256": "41ad9a10ef72af7a2e6067a6129548322b24f01fb4ffe4a312d384798161951c"
+      },
+      "coreJobs": 355,
+      "fullStoreRows": 108,
+      "reopenNotSubmitted": true,
+      "inputUnchanged": true
+    },
+    "v2HostPreparationFailure": "Parser required explicit SamplingFrequency and Channels although absent elements have specification defaults 8000 Hz and 1 channel. No guest operation or reopen occurred.",
+    "v3HostPreparationFailure": "Actual SimpleBlock used fixed-size lacing (flags 0x84); parser only supported unlaced blocks. No guest operation or reopen occurred.",
+    "specificationUrl": "https://www.matroska.org/technical/elements.html",
+    "actualAudioChildren": [
+      {
+        "id": "0x6264",
+        "hex": "10"
+      }
+    ],
+    "parserV4Sha256": "5428a11139fa9449aaad7c83d4b02cadd9db07ba01fe41bfc3c77cc2917de546",
+    "parsedOutput": {
+      "title": "ORIGINAL42",
+      "durationSeconds": 0.0999992,
+      "timestampScaleNs": 124999,
+      "durationTicks": 800.0,
+      "nominalPcmDurationSeconds": 0.1,
+      "durationToleranceSeconds": 0.000125,
+      "codecId": "A_PCM/INT/LIT",
+      "rateHz": 8000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "samples": 800,
+      "pcmSizeBytes": 1600,
+      "pcmSha256": "b50336902444e5cf5d555ca2f388c227c3d6a7750945c974af23af82f6f1f482",
+      "pcmExactMatch": true,
+      "samplingFrequencyUsesSpecificationDefault": true,
+      "channelsUsesSpecificationDefault": true,
+      "blocks": [
+        {
+          "relativeTimecode": 0,
+          "payloadBytes": 1280,
+          "lacing": "fixed",
+          "laceFrames": 2
+        },
+        {
+          "relativeTimecode": 640,
+          "payloadBytes": 320,
+          "lacing": "none",
+          "laceFrames": 1
+        }
+      ],
+      "fullMatroskaSpecificationVerified": false
+    },
+    "parserSupportsOnlyFiniteUnlacedOrFixedLacedPcmFixture": true
+  },
+  "terminalGate": "After CtrlQ, normal close-modified-settings prompt kept second process running. Strict terminal gate timed out; no before-market checkpoint or signed-publication mutation occurred. Fresh GUI normal Close settings completed exit, then exact helper succeeded.",
+  "allPriorFailuresAndEvidencePreserved": true
+}

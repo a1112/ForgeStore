@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM, Wine 11.14 win64, fixed native launcher-cwd-v11-r1 Core and managed-msi-v2 Store.",
+  "applications": [
+    {
+      "id": "texworks",
+      "version": "0.6.11",
+      "sha256": "24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8",
+      "size": 29600489,
+      "generationId": "gen-job-1791697342464-1",
+      "definitionDigest": "sha256:e8f58560b728fea611d781570560a47c3aea1f25af9de948b80b787475390d22",
+      "launcherSha256": "sha256:08ffd34b020ed2bee490c703544659393fcc54007c09703dd81a67b209c95a3c",
+      "installJobId": "job-1791697342464-1",
+      "launchJobId": "job-1791697412241-2",
+      "reopenJobId": "job-1791697510776-3",
+      "guiFileOperation": "passed-limited-text-edit-save-fresh-reopen",
+      "savedOutput": {
+        "file": "output/original-edited.tex",
+        "sizeBytes": 172,
+        "sha256": "cc15a8dbaaef36d65734b9bf5c4ce8e365e4b822cb1a4c16659f1b2b90d6039b",
+        "utf8": "% UTF-8 fixed fixture: 中文内容保留\n\\documentclass{article}\n\\begin{document}\nForgeOS TeXworks original fixture.\nSTATUS=AFTER\n\\end{document}\n% ForgeOS original edited\n"
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "texCompilationAccepted": false,
+      "screenshots": {
+        "01-original-open.jpg": {
+          "sha256": "cc98b1fd7e73c8a38afeabd265c0057d26f13637492f8a26f22636a2ad363f4b",
+          "sizeBytes": 121687
+        },
+        "02-original-saved.jpg": {
+          "sha256": "d486b0ceba3f51d5f81f7f49a9d58f1e2f980078e31afb75e501c4e302777426",
+          "sizeBytes": 126556
+        },
+        "03-original-corrected-saved.jpg": {
+          "sha256": "1295e6f9245547cbb0ab88700b9e0c7eaa031d089eb31cd3bedd52d46374ba14",
+          "sizeBytes": 125366
+        },
+        "04-original-fresh-reopen.jpg": {
+          "sha256": "701bc3c9235e7d7cfff3a1839f05d716da257b5fd629c8ba37559acfe599aa2d",
+          "sizeBytes": 111104
+        },
+        "05-original-reopen-loaded.jpg": {
+          "sha256": "064418cba05ea9c3646791dee6956fa3f2a9a0f36509157346f42e18177c8126",
+          "sizeBytes": 123168
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-texworks-source.json",
+    "sha256": "af6ca037219dd356210a9c97f4208fc022cf4918f0ddcae51fa8fecf09c9b166",
+    "mainProgramLicense": "GPL-2.0-or-later",
+    "bundleLicenseClosureVerified": false
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-texworks-gui.json",
+    "sha256": "917954342610d4cd6a2248c08aee2cc7fa4fa5931591446498fd1281b3497a8b"
+  },
+  "limits": [
+    "Only one small 147-byte Chinese-name UTF-8/LF input, ordinary BEFORE to AFTER replacement, ASCII comment append, GUI Save As to ASCII output path, and explicit fresh-process reopen were tested in this original generation.",
+    "TeX compilation/typesetting, PDF preview, SyncTeX, spell checking, scripting, templates, advanced features, large files, other encodings and direct Chinese keyboard input were not verified.",
+    "Main program GPL-2.0-or-later verified from fixed source. Installed COPYING differs in raw bytes and matches only after 339 CRLF-to-LF normalizations; complete bundled licence closure, Authenticode and reproducibility unverified.",
+    "Guest network download, fresh-machine registration, configuration migration and cross-version upgrades unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal services restart pending at this freeze; completion recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

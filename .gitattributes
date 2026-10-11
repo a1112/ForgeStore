@@ -199,3 +199,14 @@ docs/evidence/2026-10-12-librecad/source/licenses/MIT.txt -text whitespace=cr-at
 docs/evidence/2026-10-12-librecad/source/licenses/lc_opengost-fonts.txt -text whitespace=cr-at-eol,-blank-at-eol
 docs/evidence/2026-10-12-librecad/source/licenses/readme.md -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 docs/evidence/2026-10-12-librecad/source/scripts/postprocess-windows/nsis-4.8.nsi -text whitespace=cr-at-eol,-blank-at-eof
+
+# MKVToolNix fixed upstream/evidence bytes.
+catalogue/candidate-v50/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-mkvtoolnix-20261012*.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-mkvtoolnix*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-mkvtoolnix/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261012-mkvtoolnix.md -text whitespace=cr-at-eol
+
+# Exact paths preserve fixed upstream whitespace after actual stage failure.
+docs/evidence/2026-10-12-mkvtoolnix/source/README.md -text whitespace=cr-at-eol,-blank-at-eof
+docs/evidence/2026-10-12-mkvtoolnix/source/doc/licenses/nlohmann-json-MIT.txt -text whitespace=cr-at-eol,-blank-at-eol

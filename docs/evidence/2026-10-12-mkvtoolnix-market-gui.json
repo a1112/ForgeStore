@@ -1,0 +1,1949 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791747680633-4",
+    "createdAtMilliseconds": 1791747680638,
+    "definition": {
+      "bottleId": "gui-mkvtoolnix",
+      "category": "multimedia",
+      "compatibilityRating": "unknown",
+      "id": "mkvtoolnix",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\MKVToolNix"
+        ],
+        "fileName": "mkvtoolnix-64-bit-94.0-setup.exe",
+        "sha256": "5c8fb973f181a51ff37b9e6c392f8cbc0b00c1dea2accbfc33a339b09d29d5f2"
+      },
+      "launchers": [
+        {
+          "executable": "MKVToolNix/mkvtoolnix-gui.exe",
+          "id": "main",
+          "name": "MKVToolNix GUI"
+        }
+      ],
+      "name": "MKVToolNix",
+      "publisher": "Moritz Bunkus",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "94.0"
+    },
+    "definitionDigest": "sha256:847865d340049e05734564e03465ce0d9dd97b380f1514f0af26799ec01d9fa0",
+    "id": "gen-job-1791747680633-4",
+    "launcherDigests": {
+      "main": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791747696465
+  },
+  "definition": {
+    "bottleId": "gui-mkvtoolnix",
+    "category": "multimedia",
+    "compatibilityRating": "unknown",
+    "id": "mkvtoolnix",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/D=C:\\MKVToolNix"
+      ],
+      "fileName": "mkvtoolnix-64-bit-94.0-setup.exe",
+      "sha256": "5c8fb973f181a51ff37b9e6c392f8cbc0b00c1dea2accbfc33a339b09d29d5f2"
+    },
+    "launchers": [
+      {
+        "executable": "MKVToolNix/mkvtoolnix-gui.exe",
+        "id": "main",
+        "name": "MKVToolNix GUI"
+      }
+    ],
+    "name": "MKVToolNix",
+    "publisher": "Moritz Bunkus",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "94.0"
+  },
+  "installedFiles": {
+    "MKVToolNix.url": {
+      "sizeBytes": 69,
+      "sha256": "40868db7d194bb1fd3d440eea0b7e4d923edd7a0fa1d0ecabe8824f332f52f9c"
+    },
+    "uninst.exe": {
+      "sizeBytes": 288080,
+      "sha256": "675a6f74320ae895c4c95d8d9bb17532e4a8545c89fb7d1d1d93699a36e9e279"
+    },
+    "mkvmerge.exe": {
+      "sizeBytes": 21201448,
+      "sha256": "c2537acd365a6394657785e7ef9676582728c457d5b04733ce5629587290b816"
+    },
+    "mkvpropedit.exe": {
+      "sizeBytes": 16188968,
+      "sha256": "8c8f4a30873a4c2785fcb3bb3167e36516868735c58836013991e24ce60326da"
+    },
+    "mkvtoolnix-gui.exe": {
+      "sizeBytes": 52001320,
+      "sha256": "7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d"
+    },
+    "mkvextract.exe": {
+      "sizeBytes": 17203752,
+      "sha256": "978d310012975cef014b1b00d4f595ba20f3251813e0183b0115d55ed6da73d7"
+    },
+    "mkvinfo.exe": {
+      "sizeBytes": 15441960,
+      "sha256": "d24feb3489d88be3befc9c454bff0c08d8efe2318104e11b9746d632c53f45a4"
+    },
+    "data/qt_resources.rcc": {
+      "sizeBytes": 11559808,
+      "sha256": "d86066c0d13e49f48410ccd73f67e0f3e48484010ed996fabf3001b8435dfe0c"
+    },
+    "doc/COPYING.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "doc/NEWS.txt": {
+      "sizeBytes": 597515,
+      "sha256": "6de3252224b504b192556afcd6d6d0ea24e7eba3e86c99ded0418062224bf84d"
+    },
+    "doc/README.txt": {
+      "sizeBytes": 17913,
+      "sha256": "67651275e6b2a85b1a10fd9bf8d22b91e6687efbdfdb7664602e280b6870ad43"
+    },
+    "doc/command_line_references.html": {
+      "sizeBytes": 3531,
+      "sha256": "71c6e3e4215a6213a6122359e85779d444154977a05e4a0900da0a9e754ad34b"
+    },
+    "tools/ebml_validator.exe": {
+      "sizeBytes": 14465024,
+      "sha256": "f9a2f05ba1d4e031638b8aba8617f20e129e68a1a1d7dc05b33651818031853f"
+    },
+    "tools/bluray_dump.exe": {
+      "sizeBytes": 14781440,
+      "sha256": "f01e3981a654d9ec136f8cdeaaf4ed8997030201266459341decc7ce4f8cdeed"
+    },
+    "tools/hevcc_dump.exe": {
+      "sizeBytes": 14492160,
+      "sha256": "da11baf97950cf8750c69483e4b8610e15977928531e74ffc24cea2489cb9a67"
+    },
+    "tools/xyzvc_dump.exe": {
+      "sizeBytes": 15222272,
+      "sha256": "9528e50312bdf0d3a00d57afe78d30d02be8c48bdb9fb6e36b7f78910b4a3eb1"
+    },
+    "examples/example-segmentinfo-1.xml": {
+      "sizeBytes": 712,
+      "sha256": "31934849083b2aaa971bb7246a3bb695186c8f4ad2c2e945c0fc5af2dc062ec8"
+    },
+    "examples/example-tags-2.xml": {
+      "sizeBytes": 1051,
+      "sha256": "39f6853cd8790427433a2895c8ff5faac0926cff6b1523f8e0b6ed1cead85b9b"
+    },
+    "examples/example-chapters-1.xml": {
+      "sizeBytes": 2477,
+      "sha256": "e9ffbe554873090aa2d37aef1f29ae095af312d25c209e0b351cca17b6f1d40e"
+    },
+    "examples/example-timestamps-v1.json": {
+      "sizeBytes": 908,
+      "sha256": "d16930b813217c7fa23a7a054e00a63ff89fb094cbe6f282c15787fbe3045abe"
+    },
+    "examples/matroskasegmentinfo.dtd": {
+      "sizeBytes": 1020,
+      "sha256": "a0f5fe044a2513cc70e0489921e0205b86c4b5b80028f1abc08591d6d2731a55"
+    },
+    "examples/example-chapters-2.xml": {
+      "sizeBytes": 4301,
+      "sha256": "f38d0151b9f307d9d86bdf6c04354da1e93ef67289623d278f9022325d4b3019"
+    },
+    "examples/matroskachapters.dtd": {
+      "sizeBytes": 2258,
+      "sha256": "3f7fc3b1cac15bc4fe0981c1fec9b70974f7be0b301d9b7afdaef4030c418979"
+    },
+    "examples/matroskatags.dtd": {
+      "sizeBytes": 888,
+      "sha256": "f3ad60f0182d433dfc519d91d9ca15df7f22fdffdbbf1e590d7500f07d7cfeb4"
+    },
+    "examples/example-timestamps-v2.txt": {
+      "sizeBytes": 793,
+      "sha256": "7dbdf77cd849795e3b82327048b84686c9d5736a39e4ee8588c46c322fa8662d"
+    },
+    "examples/example-timestamps-v1.txt": {
+      "sizeBytes": 914,
+      "sha256": "0f18872ad153d1e4af991e4aceed25ea86e4370cdeb6b788bb030bc3ef6d1235"
+    },
+    "examples/example-cue-sheet-1.cue": {
+      "sizeBytes": 2221,
+      "sha256": "c0267a5a69ce79d4832dabc8c5f0fe41226883b7ba24b5d18339695476bd69f8"
+    },
+    "examples/example-timestamps-v2.json": {
+      "sizeBytes": 918,
+      "sha256": "35a97dac12c752511622cd52f3dd76e738e99064fec968bd0b6e367641951f08"
+    },
+    "locale/libqt/qt_sl.qm": {
+      "sizeBytes": 228428,
+      "sha256": "c44e0313a9414cc0e490b65b0c036fa11bca959353b228886547bc2c8492034f"
+    },
+    "locale/libqt/qt_uk.qm": {
+      "sizeBytes": 158274,
+      "sha256": "51b8ff55b37dc5907d637a8ddda12fbe816852b0244c74eb4f0fb84867a786e0"
+    },
+    "locale/libqt/qt_pt_BR.qm": {
+      "sizeBytes": 208516,
+      "sha256": "8344f5bc333c45d37cfd425a09124eb11f12439f33737ec0b8683d04a416746e"
+    },
+    "locale/libqt/qt_es.qm": {
+      "sizeBytes": 165170,
+      "sha256": "4ffda56ba3bb5414ab0482d1dde64a6f226e3488f6b7f3f11a150e01f53fa4c8"
+    },
+    "locale/libqt/qt_fr.qm": {
+      "sizeBytes": 159463,
+      "sha256": "314243a55c32679ad473fdfe48dc7d66e973ad0fc8bf2164480c58dddb50c1a7"
+    },
+    "locale/libqt/qt_sv.qm": {
+      "sizeBytes": 65865,
+      "sha256": "0032c8cbaf79e836027f64696d012d3a7b89e5f5b8259e0331b97638adf38cff"
+    },
+    "locale/libqt/qt_nl.qm": {
+      "sizeBytes": 202861,
+      "sha256": "f61513bcdbb6ad800585f9437a95d018aab17fa12ee414aa31462ff279d8240e"
+    },
+    "locale/libqt/qt_lt.qm": {
+      "sizeBytes": 165383,
+      "sha256": "47eb5f97467df769261421d54a5bea1131c9fb9b6388791d38bb6574335b64bf"
+    },
+    "locale/libqt/qt_fi.qm": {
+      "sizeBytes": 179941,
+      "sha256": "e47fe13713e184d07fa4495dde0c589b0e8f562e91574a3558a9363443a4fa72"
+    },
+    "locale/libqt/qt_ka.qm": {
+      "sizeBytes": 201105,
+      "sha256": "e55e4b72fa620bebee5297ca59dfe2f49894a1e544f2b7485b1cfd8829289d6f"
+    },
+    "locale/libqt/qt_da.qm": {
+      "sizeBytes": 181387,
+      "sha256": "7d1e5ca3310b54d104c19bf2abd402b38e584e87039a70e153c4a9af74b25c22"
+    },
+    "locale/libqt/qt_ar.qm": {
+      "sizeBytes": 160017,
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263"
+    },
+    "locale/libqt/qt_pl.qm": {
+      "sizeBytes": 162962,
+      "sha256": "3cf6b5c14d5eb0cf81e9af2066e66b3aa579a6b9b3c323ed670761f6254a8c54"
+    },
+    "locale/libqt/qt_de.qm": {
+      "sizeBytes": 223027,
+      "sha256": "911c53d4957a5d79d4f94411adffef0cd319607f48c9a0cb44f8a5d14bed0c16"
+    },
+    "locale/libqt/qt_hr.qm": {
+      "sizeBytes": 149711,
+      "sha256": "bb9eec9a9a652c1340dc75eb2e749be50df00f885b3d6900dfc76799c45b244d"
+    },
+    "locale/libqt/qt_tr.qm": {
+      "sizeBytes": 248720,
+      "sha256": "353fdfd7165659a49212e7a25bf91c0a71588e52c836f7496640f26782414634"
+    },
+    "locale/libqt/qt_gl.qm": {
+      "sizeBytes": 323590,
+      "sha256": "204a01ac7deb6b5bae193afecbd1e50d18c73bf7d94badeb2bbfdf6123c4ed93"
+    },
+    "locale/libqt/qt_ja.qm": {
+      "sizeBytes": 129913,
+      "sha256": "2b9581c69b975f59be505b127cd3c19d403ef3d12e0e8386fb97238223e9c1df"
+    },
+    "locale/libqt/qt_cs.qm": {
+      "sizeBytes": 174701,
+      "sha256": "03028b42df5479270371e4c3bdc7df2f56cbbe6dda956a2864ac6f6415861fe8"
+    },
+    "locale/libqt/qt_zh_TW.qm": {
+      "sizeBytes": 126185,
+      "sha256": "21012b2b427f8d09d31ce9cae582ca27955b478ca3dc2ec18a3068d808638c6a"
+    },
+    "locale/libqt/qt_he.qm": {
+      "sizeBytes": 138690,
+      "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+    },
+    "locale/libqt/qt_lv.qm": {
+      "sizeBytes": 153608,
+      "sha256": "846e047573ae40c83671c3ba7f73e27efc24b98c82701da0df9973e574178bb2"
+    },
+    "locale/libqt/qt_nn.qm": {
+      "sizeBytes": 196424,
+      "sha256": "983734b40aa4d250421ba0d1614416cb8b424d6f140f4a7dbf8b11e65eef63dc"
+    },
+    "locale/libqt/qt_ca.qm": {
+      "sizeBytes": 209899,
+      "sha256": "005b0aa0c9a5b930dfdd870661958a8069bbec862d75f98bce20bf7401bea13d"
+    },
+    "locale/libqt/qt_en.qm": {
+      "sizeBytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    "locale/libqt/qt_it.qm": {
+      "sizeBytes": 161166,
+      "sha256": "7808ed542a7833c4bd94ec8bdfbbca00bb4f2fe15979b9121ce3249323687300"
+    },
+    "locale/libqt/qt_bg.qm": {
+      "sizeBytes": 165337,
+      "sha256": "e448ac9e3f16c29eb27af3012efe21052daa78fabfb34cd6dff2f69ee3bd3cdb"
+    },
+    "locale/libqt/qt_sk.qm": {
+      "sizeBytes": 125763,
+      "sha256": "d586ae2c314074cf398417fdecb40709d5478dfeb0a67c2fe60d509ee9b59ed7"
+    },
+    "locale/libqt/qt_fa.qm": {
+      "sizeBytes": 148156,
+      "sha256": "f78e59b5bdd586181a999034ba418868ed17fe9c05707fb65e523f70e92253d2"
+    },
+    "locale/libqt/qt_gd.qm": {
+      "sizeBytes": 189580,
+      "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+    },
+    "locale/libqt/qt_ko.qm": {
+      "sizeBytes": 156799,
+      "sha256": "0179ed1b136e1cb3f583351eaa2c545ba3d83a6ee3f82c32505926a1a5f5f183"
+    },
+    "locale/libqt/qt_hu.qm": {
+      "sizeBytes": 205885,
+      "sha256": "98463295539d769c8645a0b7fb95ad38454cfd0b14f36af485513f036ddbbbc6"
+    },
+    "locale/libqt/qt_pt_PT.qm": {
+      "sizeBytes": 70334,
+      "sha256": "2c1e7bbf5168a64b43752dd4c547601c0bde6d610f8671fa3e3af38597e84783"
+    },
+    "locale/libqt/qt_zh_CN.qm": {
+      "sizeBytes": 136673,
+      "sha256": "98fd4b97dbec8af5cdd15f85a16c33efc77301b1aeb0469daafc04b9ab2f3570"
+    },
+    "locale/libqt/qt_ru.qm": {
+      "sizeBytes": 203767,
+      "sha256": "3da6605668f9178d11a838c4515478084dcfb4f9cf22f99d7a92b492db9c224b"
+    },
+    "locale/nb/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 402790,
+      "sha256": "28a85fb39a19f725bb5205543fc0ef8e9f453087ce5347217c98041b737b7667"
+    },
+    "locale/ru/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 536799,
+      "sha256": "458977cfe45275f351c8a3b2b613fd90a992b8052e620bb5c27b92ec5f04d9c2"
+    },
+    "locale/sr_RS@latin/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 314522,
+      "sha256": "4e90097feaba7ec4d45200fc31daee68dacc0308b8d40f9a4c4a4898b4be0fa7"
+    },
+    "locale/zh_CN/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 379608,
+      "sha256": "6b957aa689ce8a12ca36df2f4116ca1fecf67a8a05840266d731c8ced2a3c13c"
+    },
+    "locale/lt/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 25549,
+      "sha256": "3ea901150c0590c7c356d5d2d6ba602e2ff6bf5252eb6d66c30766512278da45"
+    },
+    "locale/nl/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 382555,
+      "sha256": "905a6ceef3b24447248818770cc3ff7593c1faf8d2f5080b61c9661d07e9b80d"
+    },
+    "locale/zh_TW/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 370117,
+      "sha256": "26cbac259877e06525ccc4b5d99e347db0f6b9263e221eafa42b905594716f59"
+    },
+    "locale/be/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 533427,
+      "sha256": "1263ff62ddf2de0cbf127bdfad060d87a6511e1f79b84027d7af5803665ae158"
+    },
+    "locale/ja/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 284913,
+      "sha256": "499c107801d14438bd977b4c3f8a0162dfa34628e026dbe5b58581422c5cf97b"
+    },
+    "locale/bg/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 342337,
+      "sha256": "d7ef9b08a4b0bc58eef96e0b492bbf5f951a70dcc6d50c8f98735288673064c6"
+    },
+    "locale/eu/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 320612,
+      "sha256": "4966e758afbe934456f4bea272954966246aeabdc5b613ac672691dce6f9dee4"
+    },
+    "locale/fr/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 436239,
+      "sha256": "01cda3dc29b68fab3c38614c96334ebe058b5655f9cfd9f0fc515fcfecf8449c"
+    },
+    "locale/zh_SG/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 374401,
+      "sha256": "2e99e0891e892b6015da4576e2e8c2151e56b78b29f7eb1c0ce587d959eae4c7"
+    },
+    "locale/es/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 433455,
+      "sha256": "4e61e83af2ee9eb1bce7f6d6b260c047d1342f63ed884eb2a9da528ee05c6021"
+    },
+    "locale/tr/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 413855,
+      "sha256": "25717311734be2e920c308d2e06df514ada09b03c4331da2fc49d0bedc558de4"
+    },
+    "locale/cs/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 284198,
+      "sha256": "0153615f58140a9e565bea2fec319bb6ef5159094c50184ecf582bf35e35ac3f"
+    },
+    "locale/it/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 416991,
+      "sha256": "9873f39c663fc8df97b5d0ef073635807870614bca6204b97f1cd8fe9d573f57"
+    },
+    "locale/pt/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 393062,
+      "sha256": "824fefedeb3072daf66c2b32e9d3df457ed28f1fe154d891f333cd7799b6887d"
+    },
+    "locale/sr_RS/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 373562,
+      "sha256": "7b20a226ef9c0c746cf850a1e4324c2661c09432cdb19f274211b69de8757a1f"
+    },
+    "locale/pt_BR/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 419905,
+      "sha256": "cddd1e03226b424be3db3b55aedc6cba7ea4bdb4b89fb3562253033297c70240"
+    },
+    "locale/ca/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 432923,
+      "sha256": "efb673a527cdee4d59dcae99774363f9281088915fa23f5f1021ba121f77ad87"
+    },
+    "locale/pl/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 344360,
+      "sha256": "60bf7efa5f152e64e213c2e940c00da428b1bfbcb15a78fc5ad75966d1cd9e7e"
+    },
+    "locale/ko/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 344537,
+      "sha256": "ae1aaf2a60b8f936c282ee98e343d5020767bc5e7047ad7e605e94e0b93bed26"
+    },
+    "locale/de/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 430580,
+      "sha256": "72df08d5437bd14afeec3395fd520d46e7857986bf7703443a803ac22face58b"
+    },
+    "locale/ro/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 87580,
+      "sha256": "f01a916c167cd7bcc0cc87dc6e888cc18e9a3cdf512d8df589a0737928134040"
+    },
+    "locale/uk/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 536125,
+      "sha256": "fc9201cad62c74cfb62b0afb2c6d84e4591944e30226e290fd4b4450160cfdd2"
+    },
+    "locale/hu/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 429031,
+      "sha256": "c7993ab750e9c5436e04f26ed75d9e27d0e6bb8c54c5ffe8cf14000ff595c4d9"
+    },
+    "locale/sv/LC_MESSAGES/mkvtoolnix.mo": {
+      "sizeBytes": 40617,
+      "sha256": "81eef589e0059565d85d8cad0cf494fb7bc76b5978e996460492a611d5d268a9"
+    },
+    "doc/hu/mkvinfo.html": {
+      "sizeBytes": 25170,
+      "sha256": "a40be0160d3531d5cab89a2a206c4d24be0d4f2139a07d96f4590aed47777cd0"
+    },
+    "doc/hu/mkvmerge.html": {
+      "sizeBytes": 273411,
+      "sha256": "9df38bf1c9c5a212b7eccdb55aed990eab5f7f6df80140accbdb60f48bbb77b3"
+    },
+    "doc/hu/mkvtoolnix-gui.html": {
+      "sizeBytes": 7102,
+      "sha256": "5d9fb7103de3dd39e9e4e18998de19bdafa67f595b8b83e19ea188e4fb3ceb26"
+    },
+    "doc/hu/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/hu/mkvextract.html": {
+      "sizeBytes": 61071,
+      "sha256": "3a1ec98a8d8c27f88264777d4b3067cbd6dfe45e860a03d023e9fc5bff621664"
+    },
+    "doc/hu/mkvpropedit.html": {
+      "sizeBytes": 66501,
+      "sha256": "e6a6182857fdf374779609f8311e7ca99d29082c178e66d778ea5a9030b8ffd4"
+    },
+    "doc/uk/mkvinfo.html": {
+      "sizeBytes": 29484,
+      "sha256": "a79b9f063b6cdcfc7a3ef6170bb3c86db98d55b7b0673a468e32a6c871314b1c"
+    },
+    "doc/uk/mkvmerge.html": {
+      "sizeBytes": 324599,
+      "sha256": "3d49be424551e151551e066ded86ffcdf53e9cf2888e30cc95597ffbba9c2874"
+    },
+    "doc/uk/mkvtoolnix-gui.html": {
+      "sizeBytes": 8697,
+      "sha256": "1e3dc0e05bc8498a5669f486cf1da728a300d558e8b42572f1d25c58e0d191a4"
+    },
+    "doc/uk/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/uk/mkvextract.html": {
+      "sizeBytes": 70579,
+      "sha256": "b8d563029a486b01035dfc67dea08f434ffaaff76b5b8b1fa77b874b402eac13"
+    },
+    "doc/uk/mkvpropedit.html": {
+      "sizeBytes": 76948,
+      "sha256": "b69c7d2844ec6f04e1c643b0ffc4317f0f785ffb62d25d692ae6cb4d88ca9d91"
+    },
+    "doc/de/mkvinfo.html": {
+      "sizeBytes": 25470,
+      "sha256": "a82e971d072c5689c69e8c9102808a01449b40e7e49279520c80b531daa681b1"
+    },
+    "doc/de/mkvmerge.html": {
+      "sizeBytes": 275613,
+      "sha256": "62193bc8c43962758cf460c112a2b8ddf9089cfe761a11247b5eb97d1c00feac"
+    },
+    "doc/de/mkvtoolnix-gui.html": {
+      "sizeBytes": 7169,
+      "sha256": "a6b1bbca9adfc8cbe1c909a11bb251a744f125528bb2eecadd8819879deb2a06"
+    },
+    "doc/de/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/de/mkvextract.html": {
+      "sizeBytes": 62247,
+      "sha256": "efed6ab83e3f910bafc6222a997d380da420e181b9d12b5f4e6de68b97ab302a"
+    },
+    "doc/de/mkvpropedit.html": {
+      "sizeBytes": 66730,
+      "sha256": "28d5a8d7d416a0ec5b66fa78cafb7e93fff3d4ef2a4fad66a7e0db10a73f7507"
+    },
+    "doc/ko/mkvinfo.html": {
+      "sizeBytes": 24223,
+      "sha256": "cc798edebd575aa82782cff7ee59ca70654bdb2f25a720699385e4c8512433ff"
+    },
+    "doc/ko/mkvmerge.html": {
+      "sizeBytes": 260418,
+      "sha256": "9ba7680e33c74b0d16ff843a84d2682ceb4c467c09e88fac16da5db982f6abb0"
+    },
+    "doc/ko/mkvtoolnix-gui.html": {
+      "sizeBytes": 6853,
+      "sha256": "82291175cb5db20700ebaf06664a69e1053f83e85c247f281223ef83b9eb3fb8"
+    },
+    "doc/ko/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/ko/mkvextract.html": {
+      "sizeBytes": 58968,
+      "sha256": "9b44faf2d1a3ba5300cb5afd6d60e0823180428f3842c7d331f9483d6b5e38db"
+    },
+    "doc/ko/mkvpropedit.html": {
+      "sizeBytes": 63123,
+      "sha256": "7eb2f0485800283aef5d0904c9f009848419142075c4055d954aa10e913928b4"
+    },
+    "doc/pl/mkvinfo.html": {
+      "sizeBytes": 24337,
+      "sha256": "5d26a6b5129dc30c1291203ac6a91d3a1711b080551aa0fe5b1fb07f5be691d1"
+    },
+    "doc/pl/mkvmerge.html": {
+      "sizeBytes": 259967,
+      "sha256": "238ca1e7502df1b18c069211baa8b1b971bef85e051fa3854041d9b4c1d9ee78"
+    },
+    "doc/pl/mkvtoolnix-gui.html": {
+      "sizeBytes": 7049,
+      "sha256": "7440eb0fc1ceb473d2a874f28da691d2af28c45ccf153b592788e52a48d291e0"
+    },
+    "doc/pl/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/pl/mkvextract.html": {
+      "sizeBytes": 59495,
+      "sha256": "ca6c47a75026b15d35889f7d65d61e9da274cec992e926f91c9161bbb8562dce"
+    },
+    "doc/pl/mkvpropedit.html": {
+      "sizeBytes": 63441,
+      "sha256": "32124d2187e25fd37e56a10fcb822c49bc5fe6c021b37a5bfb131a80b5fa9527"
+    },
+    "doc/ca/mkvinfo.html": {
+      "sizeBytes": 25353,
+      "sha256": "1472d8f1560e45e5557bc9fb77980f7a2a07e737dac740a8bbcee3f632f12204"
+    },
+    "doc/ca/mkvmerge.html": {
+      "sizeBytes": 276697,
+      "sha256": "c1fc75784e4ec5aecd44052187d07d2d7b02657d71228fbd06d626e64cccb6f7"
+    },
+    "doc/ca/mkvtoolnix-gui.html": {
+      "sizeBytes": 7091,
+      "sha256": "370547699c2ffebb3b6881f2e8037147df0020ef25b1ca374fee195f207fb625"
+    },
+    "doc/ca/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/ca/mkvextract.html": {
+      "sizeBytes": 61826,
+      "sha256": "725ccb12c5505518456eb68abea9f9fff7ec56de7e30b180cb1d4c41c7068542"
+    },
+    "doc/ca/mkvpropedit.html": {
+      "sizeBytes": 66430,
+      "sha256": "13b8cdbfc08468d8b40a1507b67667f54e925dbe6c72958e9fb8fa4f2b0fc796"
+    },
+    "doc/it/mkvinfo.html": {
+      "sizeBytes": 24683,
+      "sha256": "95f7ad7d88018edece1be7399670acd916a770f76e44eae305a6326082c773de"
+    },
+    "doc/it/mkvmerge.html": {
+      "sizeBytes": 259462,
+      "sha256": "05225c04f3d74f876f728779364cfc90f539d42d610e9b58bce8c841c3b63653"
+    },
+    "doc/it/mkvtoolnix-gui.html": {
+      "sizeBytes": 6845,
+      "sha256": "bbb72efe484d78c3b46d5f87a2bb08a21b3c98d08f055f5213f2cd2e6d921ca0"
+    },
+    "doc/it/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/it/mkvextract.html": {
+      "sizeBytes": 60145,
+      "sha256": "c74f9365fd8fb0f74d30b7b4454be214e5d56c8b2befe21dae5c3033923389b3"
+    },
+    "doc/it/mkvpropedit.html": {
+      "sizeBytes": 63061,
+      "sha256": "0d2910e91f6698c0ada6e80b64b74e06faf2620c5739d71472aa51d8361a2c2b"
+    },
+    "doc/en/mkvinfo.html": {
+      "sizeBytes": 23586,
+      "sha256": "b2eef6bcd4dcb7be1bd7c3c1cee0070706e822917210999612d899d52a5f9fa0"
+    },
+    "doc/en/mkvmerge.html": {
+      "sizeBytes": 251221,
+      "sha256": "fd97402123b974245337a4baa99155d8af626891b156fa933a58c7764d037e94"
+    },
+    "doc/en/mkvtoolnix-gui.html": {
+      "sizeBytes": 6792,
+      "sha256": "335364b3d1e81f2b1ffcc4ebd5fc4bf38864189b78d50637a69e12a9bc00a4f3"
+    },
+    "doc/en/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/en/mkvextract.html": {
+      "sizeBytes": 57102,
+      "sha256": "7781dfac3861f387a0ef25f13671bcce5319191ed87db7eb1db8a4067f14e020"
+    },
+    "doc/en/mkvpropedit.html": {
+      "sizeBytes": 60940,
+      "sha256": "b74f3a5465bd987d9be4f1830b7f469d290f3b27df2c5988b893b1eefd45fa06"
+    },
+    "doc/es/mkvinfo.html": {
+      "sizeBytes": 25703,
+      "sha256": "fc22a6002823afc355263ba50339365374e31f2c08b144fa66e28431d3bd5b4a"
+    },
+    "doc/es/mkvmerge.html": {
+      "sizeBytes": 276337,
+      "sha256": "b0b7dc2bad43164feed5d0ced94a637ecfc4ee408461d59b0e87ff2c9daeb07e"
+    },
+    "doc/es/mkvtoolnix-gui.html": {
+      "sizeBytes": 7324,
+      "sha256": "4b3bd98543f4625f0fa5ad186c78cb7fb10d8d34ac231e3b41e5ca44c3f1639c"
+    },
+    "doc/es/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/es/mkvextract.html": {
+      "sizeBytes": 62131,
+      "sha256": "2aba18941b54128871e782d7dc6a5e367c82251170f92d92915f67975d55023c"
+    },
+    "doc/es/mkvpropedit.html": {
+      "sizeBytes": 66921,
+      "sha256": "d6f5fe47d6a408a13e8bd3d9b98d5990622eca6967263b862601344927041172"
+    },
+    "doc/fr/mkvinfo.html": {
+      "sizeBytes": 25346,
+      "sha256": "ae38408bcb2583772a7f80eb1ad90629ff7c11a17383403c636a9d962bcb376d"
+    },
+    "doc/fr/mkvmerge.html": {
+      "sizeBytes": 274885,
+      "sha256": "24266d1beb0bc15370cd87aec04cd63bb2b07b204f3d8cb20044f8f958a1582e"
+    },
+    "doc/fr/mkvtoolnix-gui.html": {
+      "sizeBytes": 7255,
+      "sha256": "b98234e21bbaf7e741a150c022a46fe78a7152f446de6224e05cc449521c26f0"
+    },
+    "doc/fr/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/fr/mkvextract.html": {
+      "sizeBytes": 61925,
+      "sha256": "88bec5073f89d7cba1b083c6d800878eb5d5c2f81e46132930b9e05090817537"
+    },
+    "doc/fr/mkvpropedit.html": {
+      "sizeBytes": 67063,
+      "sha256": "5df4a912b817a27519cdf03dbca75a2f91d3518300f6e60d803b817c13be502c"
+    },
+    "doc/bg/mkvinfo.html": {
+      "sizeBytes": 26109,
+      "sha256": "fedaebe838ba5f94e4ff73b80a64600ea2b23b1da70c9e51e40263f193d5a816"
+    },
+    "doc/bg/mkvmerge.html": {
+      "sizeBytes": 270229,
+      "sha256": "ffd1fd68b3c586ccb30e6a556cac8df3b575d057d0691e2ac1213d9b78781553"
+    },
+    "doc/bg/mkvtoolnix-gui.html": {
+      "sizeBytes": 8766,
+      "sha256": "9e6817b1da108c5103288904214090e39a8f16268894197e8a91a3cf54a05948"
+    },
+    "doc/bg/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/bg/mkvextract.html": {
+      "sizeBytes": 63383,
+      "sha256": "e586139d0eba957adf4de478af5dd1525473ceb6b72e9758cfea5295e654bc6b"
+    },
+    "doc/bg/mkvpropedit.html": {
+      "sizeBytes": 65043,
+      "sha256": "fd6a09d84502740876fa02b18ef69dbc7d6f551d81053b60db4e24f9b4dfdeec"
+    },
+    "doc/ja/mkvinfo.html": {
+      "sizeBytes": 24255,
+      "sha256": "2afd248a35d97948ed702134e8f8e1bfcee9c07a37a601a037e4245de648d91e"
+    },
+    "doc/ja/mkvmerge.html": {
+      "sizeBytes": 261493,
+      "sha256": "903c1d26e7c2ab529623a1911dba385a59755860229a7ff7620df1643b0d27de"
+    },
+    "doc/ja/mkvtoolnix-gui.html": {
+      "sizeBytes": 6946,
+      "sha256": "b3cd434da26f10c3f7abd32584752989e617555b2d6c4ba9089514ec6445e08d"
+    },
+    "doc/ja/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/ja/mkvextract.html": {
+      "sizeBytes": 58807,
+      "sha256": "595998fb46d3b25b61306c8ff9b34ac92e7d3aeff58a8cf3309bd067e34776f9"
+    },
+    "doc/ja/mkvpropedit.html": {
+      "sizeBytes": 64207,
+      "sha256": "991299f278afbc9fc65cb288403568a3c47e72396641093f67aee9fe64ec69eb"
+    },
+    "doc/be/mkvinfo.html": {
+      "sizeBytes": 29023,
+      "sha256": "e03ef3f42b95cf5b75b2cc53d3692bc5d5e089df4b8c32c0a4251a4c6868674b"
+    },
+    "doc/be/mkvmerge.html": {
+      "sizeBytes": 324357,
+      "sha256": "fa07eb4b864f88b2dd4c0901a54c9e9439b629a2109b1e536eb62cd2a9025f36"
+    },
+    "doc/be/mkvtoolnix-gui.html": {
+      "sizeBytes": 8458,
+      "sha256": "57142c9fd863b39b3e515d48a37c5ee8c6a35cdf90bd684db8d18a1c45d50f4f"
+    },
+    "doc/be/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/be/mkvextract.html": {
+      "sizeBytes": 70678,
+      "sha256": "c268c2c13f3dd099f4e8cb94a816024526ba6b31deb606da061ff53f001f74ea"
+    },
+    "doc/be/mkvpropedit.html": {
+      "sizeBytes": 76819,
+      "sha256": "8866f0bc70f78dee2e6da567edde5583a75cec1557461801438d91b4a1a8c3d1"
+    },
+    "doc/licenses/CC-BY-3.0.txt": {
+      "sizeBytes": 19467,
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76"
+    },
+    "doc/licenses/LGPL-3.0.txt": {
+      "sizeBytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "doc/licenses/QtWaitingSpinner-MIT.txt": {
+      "sizeBytes": 1135,
+      "sha256": "8068e9fe38aed477c935df18d6b0d234b8e938e530ea182fb262e970e8824f6c"
+    },
+    "doc/licenses/pugixml-MIT.txt": {
+      "sizeBytes": 1079,
+      "sha256": "ee495f34aeff0c578a99f3350a2050d4e5860d27b2004c03c384a594fa2b0a7a"
+    },
+    "doc/licenses/nlohmann-json-MIT.txt": {
+      "sizeBytes": 1076,
+      "sha256": "50be9457e5c9faaba5e60d9c73f8eabe9e0737a2d9c3e58357d856661862c18e"
+    },
+    "doc/licenses/Boost-1.0.txt": {
+      "sizeBytes": 1338,
+      "sha256": "c9bff75738922193e67fa726fa225535870d2aa1059f91452c411736284ad566"
+    },
+    "doc/licenses/LGPL-2.1.txt": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "doc/zh_TW/mkvinfo.html": {
+      "sizeBytes": 22605,
+      "sha256": "a3848d2ea4ee41ee2c570f0a229e2de9c7a7f0838e98f08d028d5edb13df2e9c"
+    },
+    "doc/zh_TW/mkvmerge.html": {
+      "sizeBytes": 237910,
+      "sha256": "713bcc5ba5b2614f437027b935001a8d921eb30e87bef84ff0f8e4ca686bdf70"
+    },
+    "doc/zh_TW/mkvtoolnix-gui.html": {
+      "sizeBytes": 6496,
+      "sha256": "c238742e6bf1f0855ebf9c5a6e39b49c5101652cdd4120d31773c903d728f072"
+    },
+    "doc/zh_TW/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/zh_TW/mkvextract.html": {
+      "sizeBytes": 55031,
+      "sha256": "0ca45574914c86d4619b5fac996a90a7399317c2836a3b09c1fde4edc35c69ec"
+    },
+    "doc/zh_TW/mkvpropedit.html": {
+      "sizeBytes": 58630,
+      "sha256": "d80377a81b6184abc34d537c0b05d2d7a7161131ddc91117986b7e20c2cea218"
+    },
+    "doc/nl/mkvinfo.html": {
+      "sizeBytes": 24787,
+      "sha256": "ba5304728925399e332d5bd955da2bd13b3df3e9a3f39873d3f8490cc6e33b46"
+    },
+    "doc/nl/mkvmerge.html": {
+      "sizeBytes": 267280,
+      "sha256": "75bbcbce271ecc5690fa0b387a07a18dc1fc6ecde6465ab8378e801110955e73"
+    },
+    "doc/nl/mkvtoolnix-gui.html": {
+      "sizeBytes": 6964,
+      "sha256": "35c80d31cb8aaf9df29aeb88ef2afac20571a7b7864cb5c62db1541a9b7d12c1"
+    },
+    "doc/nl/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/nl/mkvextract.html": {
+      "sizeBytes": 60731,
+      "sha256": "bc876f49c1a590bba84ecb72b81b16d63014b173e19351fa2569c8c1f41168ff"
+    },
+    "doc/nl/mkvpropedit.html": {
+      "sizeBytes": 64783,
+      "sha256": "9645c231e451996e30263d40dfe28894c083b438081d1d3048bc42f45d84b59e"
+    },
+    "doc/zh_CN/mkvinfo.html": {
+      "sizeBytes": 22657,
+      "sha256": "08d74df73ab00382578f6ac5f52b977670d30f22a2153da3919bc433245b97ed"
+    },
+    "doc/zh_CN/mkvmerge.html": {
+      "sizeBytes": 237576,
+      "sha256": "516e17e03d842e4a153e3d1e31013860a191583200111ed205649f0ac21c1733"
+    },
+    "doc/zh_CN/mkvtoolnix-gui.html": {
+      "sizeBytes": 6618,
+      "sha256": "c0ac8732e205b285ac1ad22ebc1ed526663b77f06b3ac5bfe95928b8d4e35c4b"
+    },
+    "doc/zh_CN/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/zh_CN/mkvextract.html": {
+      "sizeBytes": 55064,
+      "sha256": "f423db7e1763de40e9ecb509b979ea54a14aa44dc23ab97a7421b755de0da635"
+    },
+    "doc/zh_CN/mkvpropedit.html": {
+      "sizeBytes": 58467,
+      "sha256": "19ffcfa78dbeded2b02e88266ec6550e2a1bbad665f622ca63323136b0ba08e6"
+    },
+    "doc/ru/mkvinfo.html": {
+      "sizeBytes": 29297,
+      "sha256": "9d10893760d4aa5de250b9230768f9a9c748a246cb8a987f416cf277ee8b2fc1"
+    },
+    "doc/ru/mkvmerge.html": {
+      "sizeBytes": 328922,
+      "sha256": "18ecba92057eeed58b8cefc87ee294508c58e5b610b457a675bce469f6df5dd0"
+    },
+    "doc/ru/mkvtoolnix-gui.html": {
+      "sizeBytes": 8423,
+      "sha256": "f0220764715a72b540917ffea92699da8dcbe231f7b09744c9f6555f3c66f857"
+    },
+    "doc/ru/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/ru/mkvextract.html": {
+      "sizeBytes": 71451,
+      "sha256": "7ce2a1023eacb30be8b931334b2e855d491fe5da12620c67315fa5f19b790ac9"
+    },
+    "doc/ru/mkvpropedit.html": {
+      "sizeBytes": 78039,
+      "sha256": "1395d91727e2a68bdd3eb179637688bd6c3cc3efa493be3177f9830df01a0c24"
+    },
+    "doc/nb/mkvinfo.html": {
+      "sizeBytes": 24306,
+      "sha256": "f0f694e62cd5540a5b39512dbb933017e0920c3be1eb5a9caa057c6416960eeb"
+    },
+    "doc/nb/mkvmerge.html": {
+      "sizeBytes": 259043,
+      "sha256": "237cd4f69dc0694cde2b6e31d94002c895d139a2d5d5f490552b223c98405bee"
+    },
+    "doc/nb/mkvtoolnix-gui.html": {
+      "sizeBytes": 6637,
+      "sha256": "5d80eade3c0209fcd58984e0aea27ee24363efb0935a844025ab5cd94f523322"
+    },
+    "doc/nb/mkvtoolnix-doc.css": {
+      "sizeBytes": 2845,
+      "sha256": "496951df3e42b2d8a967ef625419d6f647a6b87146539ad71485bc9163da230b"
+    },
+    "doc/nb/mkvextract.html": {
+      "sizeBytes": 59103,
+      "sha256": "ec3633dacf173713bb642388708c1333a4131d3685f3912e17eb506869d9a422"
+    },
+    "doc/nb/mkvpropedit.html": {
+      "sizeBytes": 63406,
+      "sha256": "40ea7eac769c55b1d8b6dc58ed8a9e4449391bfdf913b77d748559fcecdda508"
+    },
+    "data/sounds/finished-1.webm": {
+      "sizeBytes": 41022,
+      "sha256": "ec292c5c3f578adc2c732c8831be3b1fef0f548cee1ef3cab812be793607b5b1"
+    },
+    "data/sounds/finished-2.webm": {
+      "sizeBytes": 41102,
+      "sha256": "648aa848ac7bbbb8f51a4cdd49aa1de2f4c58a9976ecbcd3392b69ffb7a5f1d2"
+    },
+    "data/sounds/finished-3.webm": {
+      "sizeBytes": 38091,
+      "sha256": "34fac34cb35f8faedc00af9d93cce875254204adb8dcbdbe2854548b43613f74"
+    }
+  },
+  "save": {
+    "generationId": "gen-job-1791747680633-4",
+    "inputRelativePath": "MKVToolNixTests/市场音频.wav",
+    "inputPin": {
+      "sizeBytes": 1644,
+      "sha256": "103347c546366e075b687c8fda8c9d09fbb89c1e229de2e41fd48a4dbf589c1c"
+    },
+    "outputRelativePath": "MKVToolNixTests/market-result.mka",
+    "outputPin": {
+      "sizeBytes": 7398,
+      "sha256": "62f70ca79c806a6b82484dc7bed7783315c1141c9653697a92ba0dd5b20ca70c"
+    },
+    "parsedOutput": {
+      "title": "MARKET42",
+      "durationSeconds": 0.0999992,
+      "timestampScaleNs": 124999,
+      "durationTicks": 800.0,
+      "nominalPcmDurationSeconds": 0.1,
+      "durationToleranceSeconds": 0.000125,
+      "codecId": "A_PCM/INT/LIT",
+      "rateHz": 8000,
+      "channels": 1,
+      "bitsPerSample": 16,
+      "samples": 800,
+      "pcmSizeBytes": 1600,
+      "pcmSha256": "a37ffe26824d3df1a3f8484e2450ecc2d932413336cd321a071cffa71975ed39",
+      "pcmExactMatch": true,
+      "samplingFrequencyUsesSpecificationDefault": true,
+      "channelsUsesSpecificationDefault": true,
+      "blocks": [
+        {
+          "relativeTimecode": 0,
+          "payloadBytes": 1280,
+          "lacing": "fixed",
+          "laceFrames": 2
+        },
+        {
+          "relativeTimecode": 640,
+          "payloadBytes": 320,
+          "lacing": "none",
+          "laceFrames": 1
+        }
+      ],
+      "fullMatroskaSpecificationVerified": false
+    },
+    "inputUnchanged": true,
+    "installedProgramPinsMatched": true,
+    "firstFormalJob": {
+      "applicationId": "mkvtoolnix",
+      "createdAtMilliseconds": 1791747705723,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 174257,
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 44085,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 44128,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791747680633-4",
+      "id": "job-1791747705722-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5072,
+        "fileDigest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+        "fileSizeBytes": 52001320,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "authz.dll",
+          "avrt.dll",
+          "bcrypt.dll",
+          "comdlg32.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3d12.dll",
+          "d3d9.dll",
+          "dwmapi.dll",
+          "dwrite.dll",
+          "dxgi.dll",
+          "dxva2.dll",
+          "evr.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "mf.dll",
+          "mfplat.dll",
+          "mfreadwrite.dll",
+          "msvcrt.dll",
+          "ncrypt.dll",
+          "netapi32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "powrprof.dll",
+          "propsys.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "shcore.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "userenv.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "winhttp.dll",
+          "winmm.dll",
+          "ws2_32.dll",
+          "wtsapi32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 36380672,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 36380224,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 417792,
+            "readable": true,
+            "virtualAddress": 36384768,
+            "virtualSize": 417456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rodata",
+            "rawDataSize": 185344,
+            "readable": true,
+            "virtualAddress": 36802560,
+            "virtualSize": 185088,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 11894272,
+            "readable": true,
+            "virtualAddress": 36990976,
+            "virtualSize": 11894128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtmimed",
+            "rawDataSize": 40960,
+            "readable": true,
+            "virtualAddress": 48885760,
+            "virtualSize": 40960,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 1062400,
+            "readable": true,
+            "virtualAddress": 48926720,
+            "virtualSize": 1062036,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 1473536,
+            "readable": true,
+            "virtualAddress": 49991680,
+            "virtualSize": 1473328,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 51466240,
+            "virtualSize": 92456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 38912,
+            "readable": true,
+            "virtualAddress": 51560448,
+            "virtualSize": 38792,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51601408,
+            "virtualSize": 96,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51605504,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 186368,
+            "readable": true,
+            "virtualAddress": 51609600,
+            "virtualSize": 186144,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 309760,
+            "readable": true,
+            "virtualAddress": 51798016,
+            "virtualSize": 309288,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791747680633-4",
+          "digest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "mkvtoolnix-gui.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+          "sizeBytes": 52001320,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+            "C:\\MKVToolNixTests\\市场音频.wav"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4"
+        },
+        "requestId": "job-1791747705722-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791747752383
+    },
+    "guiAccepted": false,
+    "published": false
+  },
+  "guiJobs": [
+    {
+      "applicationId": "mkvtoolnix",
+      "createdAtMilliseconds": 1791747705723,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 174257,
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 44085,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 44128,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791747705722-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791747680633-4",
+      "id": "job-1791747705722-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5072,
+        "fileDigest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+        "fileSizeBytes": 52001320,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "authz.dll",
+          "avrt.dll",
+          "bcrypt.dll",
+          "comdlg32.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3d12.dll",
+          "d3d9.dll",
+          "dwmapi.dll",
+          "dwrite.dll",
+          "dxgi.dll",
+          "dxva2.dll",
+          "evr.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "mf.dll",
+          "mfplat.dll",
+          "mfreadwrite.dll",
+          "msvcrt.dll",
+          "ncrypt.dll",
+          "netapi32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "powrprof.dll",
+          "propsys.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "shcore.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "userenv.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "winhttp.dll",
+          "winmm.dll",
+          "ws2_32.dll",
+          "wtsapi32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 36380672,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 36380224,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 417792,
+            "readable": true,
+            "virtualAddress": 36384768,
+            "virtualSize": 417456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rodata",
+            "rawDataSize": 185344,
+            "readable": true,
+            "virtualAddress": 36802560,
+            "virtualSize": 185088,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 11894272,
+            "readable": true,
+            "virtualAddress": 36990976,
+            "virtualSize": 11894128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtmimed",
+            "rawDataSize": 40960,
+            "readable": true,
+            "virtualAddress": 48885760,
+            "virtualSize": 40960,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 1062400,
+            "readable": true,
+            "virtualAddress": 48926720,
+            "virtualSize": 1062036,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 1473536,
+            "readable": true,
+            "virtualAddress": 49991680,
+            "virtualSize": 1473328,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 51466240,
+            "virtualSize": 92456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 38912,
+            "readable": true,
+            "virtualAddress": 51560448,
+            "virtualSize": 38792,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51601408,
+            "virtualSize": 96,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51605504,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 186368,
+            "readable": true,
+            "virtualAddress": 51609600,
+            "virtualSize": 186144,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 309760,
+            "readable": true,
+            "virtualAddress": 51798016,
+            "virtualSize": 309288,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791747680633-4",
+          "digest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "mkvtoolnix-gui.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+          "sizeBytes": 52001320,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+            "C:\\MKVToolNixTests\\市场音频.wav"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4"
+        },
+        "requestId": "job-1791747705722-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791747752383
+    },
+    {
+      "applicationId": "mkvtoolnix",
+      "createdAtMilliseconds": 1791747761893,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 174627,
+          "requestId": "job-1791747761893-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 41908,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+          "requestId": "job-1791747761893-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 41950,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791747761893-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791747680633-4",
+      "id": "job-1791747761893-6",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5072,
+        "fileDigest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+        "fileSizeBytes": 52001320,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "authz.dll",
+          "avrt.dll",
+          "bcrypt.dll",
+          "comdlg32.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3d12.dll",
+          "d3d9.dll",
+          "dwmapi.dll",
+          "dwrite.dll",
+          "dxgi.dll",
+          "dxva2.dll",
+          "evr.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "mf.dll",
+          "mfplat.dll",
+          "mfreadwrite.dll",
+          "msvcrt.dll",
+          "ncrypt.dll",
+          "netapi32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "powrprof.dll",
+          "propsys.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "shcore.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "userenv.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "winhttp.dll",
+          "winmm.dll",
+          "ws2_32.dll",
+          "wtsapi32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 36380672,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 36380224,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 417792,
+            "readable": true,
+            "virtualAddress": 36384768,
+            "virtualSize": 417456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rodata",
+            "rawDataSize": 185344,
+            "readable": true,
+            "virtualAddress": 36802560,
+            "virtualSize": 185088,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 11894272,
+            "readable": true,
+            "virtualAddress": 36990976,
+            "virtualSize": 11894128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".qtmimed",
+            "rawDataSize": 40960,
+            "readable": true,
+            "virtualAddress": 48885760,
+            "virtualSize": 40960,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 1062400,
+            "readable": true,
+            "virtualAddress": 48926720,
+            "virtualSize": 1062036,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 1473536,
+            "readable": true,
+            "virtualAddress": 49991680,
+            "virtualSize": 1473328,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 51466240,
+            "virtualSize": 92456,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 38912,
+            "readable": true,
+            "virtualAddress": 51560448,
+            "virtualSize": 38792,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51601408,
+            "virtualSize": 96,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 51605504,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 186368,
+            "readable": true,
+            "virtualAddress": 51609600,
+            "virtualSize": 186144,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 309760,
+            "readable": true,
+            "virtualAddress": 51798016,
+            "virtualSize": 309288,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791747680633-4",
+          "digest": "sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "mkvtoolnix-gui.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+          "sizeBytes": 52001320,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:7a6907169c1259cffc1dcae80bfd93cfc14911a68c199ce7d9ef2b83ebc0965d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix/drive_c/MKVToolNix/mkvtoolnix-gui.exe",
+            "C:\\MKVToolNixTests\\market-result.mka"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791747680633-4"
+        },
+        "requestId": "job-1791747761893-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791747806019
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3900089,
+      "sha256": "41cc100b575532d7b6ca33a5f531dda71405522f99d3ae0c1e38891f383a9c9a"
+    },
+    "user.reg": {
+      "sizeBytes": 103042,
+      "sha256": "19420e3dd0b6a411b5e226551163640b238a61e9b03a119c23f2ad1e3a850c27"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "b027f6faf5023b77d0438d5ed8c9a963d930d7e36962b25bf5d7755403d470b8"
+    }
+  },
+  "fixedDataPins": {
+    "MKVToolNixTests/市场音频.wav": {
+      "sizeBytes": 1644,
+      "sha256": "103347c546366e075b687c8fda8c9d09fbb89c1e229de2e41fd48a4dbf589c1c"
+    },
+    "MKVToolNixTests/market-result.mka": {
+      "sizeBytes": 7398,
+      "sha256": "62f70ca79c806a6b82484dc7bed7783315c1141c9653697a92ba0dd5b20ca70c"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Local/bunkus.org/mkvtoolnix-gui/mkvtoolnix-gui.ini": {
+      "sizeBytes": 9618,
+      "sha256": "d343651347e7e2d9b4ca0e0735189308009b0b832f83a1b670d82283af5c83f5"
+    },
+    "drive_c/users/forge/AppData/Local/bunkus.org/mkvtoolnix-gui/jobQueue/{d4464c4b-a08d-4e7a-8a33-e343308480c7}.mtxcfg": {
+      "sizeBytes": 4181,
+      "sha256": "480d022929626fc62487e94a3db67fbaf7168c878f8b3b79f3de07b3f772082a"
+    },
+    "drive_c/users/forge/AppData/Local/bunkus.org/mkvtoolnix-gui/cache/fileIdentifier/871b8fa6cb79caa7c663ef5c3e244a7c": {
+      "sizeBytes": 3078,
+      "sha256": "17fbe524e1b3fdcef0288efe2a0ebe63982e9989b32049b0fc0a73e3ba62d300"
+    },
+    "drive_c/users/forge/AppData/Local/bunkus.org/mkvtoolnix-gui/cache/fileIdentifier/16a4a91f8ff4d8659f85758129d577d6": {
+      "sizeBytes": 5228,
+      "sha256": "f67456ebef5ecd03561898f86aa45e6e1f7fab4af247b62af0cb6b2e39f4415c"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "scope": "Small PCM WAV GUI mux, title, explicit new-process reopen and Info tool",
+  "fullMatroskaSpecificationVerified": false,
+  "unattendedStartupVerified": false,
+  "checkpoint": {
+    "file": "before-rollback.json",
+    "sha256": "546b1ece6560a6b017798a89351d417bd4092bafd7fa114bbd31ccc374a159ee",
+    "coreJobs": 359,
+    "fullStoreRows": 109
+  },
+  "screenshots": {
+    "07-market-update-notice.jpg": {
+      "sizeBytes": 198397,
+      "sha256": "72f88c6b81c90acfd7690625fdbcfcbe86d9bc080123a4245ebb31ee5f0ca449"
+    },
+    "08-market-input.jpg": {
+      "sizeBytes": 156806,
+      "sha256": "95b48d62646bcb46c230893469b3e87753063217d7af28c9415e8d0529cf5761"
+    },
+    "09-market-mux-settings.jpg": {
+      "sizeBytes": 167490,
+      "sha256": "2998599f4688ce9005aa388bf461db3977522fbacfcfdbe6865725323b52e184"
+    },
+    "10-market-mux-completed.jpg": {
+      "sizeBytes": 135644,
+      "sha256": "8e581a56745cdd08bd39dafafe22d94d702e7060233c4729bba03f145401fb9b"
+    },
+    "11-market-new-process-reopen.jpg": {
+      "sizeBytes": 157300,
+      "sha256": "3747475919725021c349b769c3abad1e8cafe2d51041335f0b80a6470fb10b05"
+    },
+    "12-market-info-tool.jpg": {
+      "sizeBytes": 158009,
+      "sha256": "e904009515f7195fa1a7ac831a2708f2ad2d47eabf074ff9d777c8b34b6a764d"
+    },
+    "13-rollback-original-reopen.jpg": {
+      "sizeBytes": 157553,
+      "sha256": "132c32e3507314119ea3f088b90f5c3b8c74981e65f148dca02d475eb700a2f8"
+    }
+  },
+  "programFilesAcrossGenerationsEqual": true,
+  "fixtureOnlyNotApplication": true,
+  "guiVersionMeasured": "94.0",
+  "infoToolActuallyOpened": true
+}

@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 59,
+  "rootVersion": 1,
+  "entries": 48,
+  "coreJobs": 356,
+  "fullStoreRows": 108,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-mkvtoolnix-20261012.acceptance.json#mkvtoolnix",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "5c8fb973f181a51ff37b9e6c392f8cbc0b00c1dea2accbfc33a339b09d29d5f2",
+        "size": 32100808,
+        "target": "mkvtoolnix-64-bit-94.0-setup.exe",
+        "url": "https://mkvtoolnix.download/windows/releases/94.0/mkvtoolnix-64-bit-94.0-setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "mkvtoolnix"
+    },
+    "id": "mkvtoolnix",
+    "license": "GPL-2.0 (upstream declaration; or-later scope unverified)",
+    "name": {
+      "en": "MKVToolNix",
+      "zhCN": "MKVToolNix 音视频封装"
+    },
+    "origin": "https://mkvtoolnix.download/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Moritz Bunkus",
+    "summary": {
+      "en": "Limited small mono PCM WAV to Matroska audio GUI mux, title, new-process reopen and Info tool tested.",
+      "zhCN": "仅小型单声道 PCM WAV 封装、标题、新进程重开与文件结构查看通过"
+    },
+    "version": "94.0"
+  },
+  "installed": {
+    "appId": "mkvtoolnix",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "94.0"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "3bcbbd667b8be04be8e144a9bc38c84ca2bd7312d6ed8203a234a9d77203e9ff",
+    "coreJobs": 356,
+    "fullStoreRows": 108
+  },
+  "independentMarketGenerationPending": true
+}

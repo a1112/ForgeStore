@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "phase": "before-independent-review-and-git-stage",
+  "applicationId": "mkvtoolnix",
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "currentStateVerified": {
+    "verified": true,
+    "coreJobs": 360,
+    "fullStoreRows": 110,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "root": 1,
+      "timestamp": 59,
+      "targets": 59,
+      "snapshot": 59
+    },
+    "latestKnownTime": "2026-10-11T19:44:40.516055332Z",
+    "selectedMkvToolNixGeneration": "gen-job-1791746776538-1",
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "checkpoint": {
+      "file": "mkvtoolnix-20261012/after-restart.json",
+      "sha256": "7a02adeb960770af02a57823ae521e43c2ddd79d18adb516cd69be8cf494900b"
+    }
+  },
+  "oldImmutableFilesMatched": 1631,
+  "newOriginalFrozenFilesMatched": 35,
+  "signedMetadataPackAtSigningStage": {
+    "metadataVersion": 59,
+    "rootVersion": 1,
+    "entries": 48,
+    "actualTargets": 98,
+    "files": 55,
+    "archiveSha256": "168a98682f71dc76e7a33490cb728c1775fdd030a717f9fa28bc62afc3b0935b",
+    "receiptSha256": "c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281",
+    "allOldSignedTargetPinsPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true
+  },
+  "publicationSha256": "c8a428821b76bccc5890cf679aee283bb18fb688da133e84c1368f24c55a20a4",
+  "independentReviewPendingAtFreeze": true,
+  "gitIndexAndCommitAuditPendingAtFreeze": true,
+  "remotePushPendingAtFreeze": true
+}

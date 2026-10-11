@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM, Wine 11.14 win64, managed Windows x86 NSIS installation; existing normal authentication retained.",
+  "applications": [
+    {
+      "id": "dosbox",
+      "version": "0.74-3",
+      "observedGuiVersion": "DOSBox 0.74-3; welcome and window title",
+      "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e",
+      "size": 1493703,
+      "installJobId": "job-1791688839198-1",
+      "launchJobId": "job-1791688974407-2",
+      "reopenJobId": "job-1791689098853-3",
+      "generationId": "gen-job-1791688839198-1",
+      "definitionDigest": "sha256:e4eaa0079ab076affeb0a957457e810e15a6aaf40a32ca14cfd1d4bf93e4ec7d",
+      "launcherSha256": "sha256:dcfd46fa521f5ce89dce3bf026056f3a1d15533f80321ee887403e30d7949f5e",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "guiFileOperation": "passed-limited-dos-mount-copy-program-file-workflow",
+      "fixture": {
+        "generationId": "gen-job-1791688839198-1",
+        "inputs": {
+          "INPUT.BIN": {
+            "sizeBytes": 2,
+            "sha256": "845865ec5b63c2631b312794ee205454cdbffb2d12c0be5ec3c4c0a2919fc500"
+          },
+          "VERIFY.COM": {
+            "sizeBytes": 181,
+            "sha256": "fc8e662cec8850b3001dbb1a51dd794db91331f7d2318ae844ee48b1a9ad9c75"
+          }
+        },
+        "expectedResult": "ForgeOS DOSBox original sum=42\r\n",
+        "fixtureProgramPurpose": "Read two bytes using DOS int21, add at emulated runtime, decimal-convert with AAM, print and write RESULT.TXT, close and exit. Synthetic program is input, not an accepted independent application.",
+        "installedCopyingCrLfNormalizedMatchesFixedSource": true,
+        "outputsAbsentBeforeGui": true
+      },
+      "savedOutputs": {
+        "COPIED.BIN": {
+          "sizeBytes": 2,
+          "sha256": "845865ec5b63c2631b312794ee205454cdbffb2d12c0be5ec3c4c0a2919fc500",
+          "hex": "1515"
+        },
+        "RESULT.TXT": {
+          "sizeBytes": 32,
+          "sha256": "c88bfb8f2a4d706b49081bf8faf9c5a9c1548fe246f13a95adf61f989e1cf01b",
+          "hex": "466f7267654f5320444f53426f78206f726967696e616c2073756d3d34320d0a"
+        }
+      },
+      "inputsUnchanged": true,
+      "explicitFreshProcessOutputReopenObserved": true,
+      "startupWarningObserved": false,
+      "fullEmulatorAcceptance": false,
+      "screenshots": {
+        "original-executed.jpg": {
+          "sizeBytes": 176915,
+          "sha256": "8c33fe72e17e50552715aa07b4f4b18c103fe463a4af61c1cf352b7fdbc1b506"
+        },
+        "original-mounted.jpg": {
+          "sizeBytes": 203759,
+          "sha256": "8835c649ccd902856c6ebe621209fe494413414e6e97f238974c26a5f18b5695"
+        },
+        "original-reopened.jpg": {
+          "sizeBytes": 209266,
+          "sha256": "8abbc6e0462b779163f36ff6e503084385bab3b8f7948ad4f477877efd9f6330"
+        },
+        "original-startup.jpg": {
+          "sizeBytes": 195820,
+          "sha256": "a77fe156a1afe11fc911d9b7fb6f1822875f5c535f8e3ba628401db691d693d1"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-dosbox-source.json",
+    "sha256": "2efbb083dbfc1c819d1803bf9dc3f6cbb6123dca9647ca9e0f299e184613588e",
+    "artifact": {
+      "fileName": "DOSBox0.74-3-win32-installer.exe",
+      "url": "https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/DOSBox0.74-3-win32-installer.exe",
+      "sizeBytes": 1493703,
+      "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e",
+      "officialSourceForgeSha256Matched": true,
+      "actualHttpsBytesMatched": true,
+      "nullsoftHeaderMatched": true
+    },
+    "sourceArchive": {
+      "url": "https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/dosbox-0.74-3.tar.gz",
+      "sizeBytes": 1326339,
+      "sha256": "c0d13dd7ed2ed363b68de615475781e891cd582e8162b5c3669137502222260a",
+      "officialSourceForgeSha256Matched": true
+    },
+    "license": "GPL-2.0-or-later",
+    "fullComponentLicenseClosureVerified": false
+  },
+  "limits": [
+    "Only DOSBox 0.74-3 Windows x86 on Wine 11.14 win64, one small ASCII-path directory and a synthetic 181-byte DOS COM program are covered by this frozen original proof.",
+    "The synthetic program is a test input, not an independently accepted application. It reads two bytes with DOS int21, adds them in emulated CPU, converts to decimal with AAM, prints and writes a 32-byte result. GUI COPY creates a separate two-byte copy. Verification helpers only read outputs.",
+    "Directory mount, file copy, DOS program execution, result read, normal exit and explicit fresh-process remount/read were actually performed through the DOSBox window.",
+    "Chinese paths/input, non-ASCII DOS encodings, full-screen DOSBox mode, audio, joystick, graphics games, CD images, network, hardware compatibility, larger DOS programs and complete emulator acceptance are unverified.",
+    "Fixed main source declares GPL-2.0-or-later. Installed COPYING matches fixed source only after CRLF-to-LF normalization. Full SDL/SDL_net/zmbv and other bundled component license closure is unverified.",
+    "Installer archive listing, Authenticode, reproducible build, guest online download, new-machine registration, configuration migration and cross-version upgrades are unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal Core/Store restart were pending when the original proof was frozen."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}
