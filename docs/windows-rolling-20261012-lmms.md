@@ -1,0 +1,19 @@
+# LMMS 1.2.2 Windows 有限工程和 WAV 渲染验收（2026-10-12）
+
+新增1款，累计48/1000，13未解决候选完整保持。Ubuntu Kate/Snap计算器两款独立记账不变，Flatpak未安装，本轮未切换VM。合成工程和WAV不另计应用。日期亚洲/上海，客体真实UTC保留。
+
+官方固定安装lmms-1.2.2-win64.exe36829951B SHA5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b，固定API公开大小匹配，digest=null，仅本地SHA而非上游摘要核验。source lmms_1.2.2.tar.xz22733960B SHAb185507fb64ecfd8e31145135b58ab244b637f9efc09c4176caf70aa3cbaae1e仅本地摘要；六源码成员按固定原归档保存。src/core/main.cpp为GPL-2.0-or-later，LICENSE.txt GPL2文本固定。3056安装文件中没有COPYING/LICENSE命名文件，安装许可比较、完整Qt/SDL/audio/plugins/instruments/samples/icons/translations捆绑许可闭包、Authenticode/OpenPGP/源码二进制对应/可复现构建未核，不称最新。
+
+原生NSIS /S，最后/D=C:后一个反斜杠再LMMS，10UTF8B hex2f443d433a5c4c4d4d53。源CPack关联/manifest行为保留，不称无文件关联/后台联网。首发工作目录创建Yes、默认Setup OK、Restart LMMS提示正常确认，完整无人值守未验收。程序3056文件跨代次全部原字节同；lmms.exe3911680B SHA99d8c322066c8ff25c1bfd6f3b9c5b7757d8a80cd62bdc1c7e06f6cfa01332af。无Core/程序/globalcontext/launcher环境/workingDirectory/字体包/DLL/runtime修复。
+
+正式原gen-job-1791752732529-1，独立市场gen-job-1791753620457-4，冻结定义sha256:bc1931b2c594e9f83f1eb2701e1f315a8fb8170fb32de2917f57f3904069d96d。两个中文名UTF8/LF小型单音轨TripleOscillator工程GUI打开，原BPM100→120、市场80→100，ASCII轨名ORIGINAL42/MARKET42，Piano Roll实际增加第二枚相同key音符，GUI CtrlShiftS Save As到ASCII .mmp路径、File Export真实44100Hz双声道16bit WAV；两个新正式进程显式Open输出/Piano Roll核对两音符，回滚后新正式进程原输出重开。五次CtrlQ正常退出0+wineserver停止，窗口实际LMMS1.2.2。原输入764B，工程5186B SHA0e41af78af3e706dd706d029aa38490d2e185096a07cbd04ab1e1e0eed3bbe86，WAV705630B SHA551eac57ccb12d67492022f968cd849cff8600f9191c5dbeb21dce621af3716e，帧176384，时长3.9996371882086166秒，测得频率440.0184204466958Hz; 市场输入759B，工程5181B SHAd1a7774cedd6d7e299c59efa927228b18be12ef0cec5591a86758ef90e59fbfd，WAV845918B SHA7182d946b1724e0168eb46ce1ce11c984cc470d919d9ea17547dd6717d33f0a3，帧211456，时长4.794920634920635秒，测得频率523.2430787952541Hz。输入原字节保持。
+
+独立XML检查单音轨/BPM/轨名/TripleOscillator/两枚音符key57或60、len48和pos0/96；独立RIFF/WAV检查44100Hz双声道16bit PCM，两个非零音符区间及中间静音，正向跨零频率分别约440Hz/523Hz且与期望等音律频率误差低于2Hz。这是有限信号核验，实际播放/听音/实时音频设备、广泛音色质量或完整DAW未验收。其他工程格式/多轨/大坏文件、MIDI/外部VST/自动化/效果/混音/录音/采样、OGG/MIDI导出、高级功能、直接中文键盘输入、客体联网下载、新机注册、迁移/跨版本和无人值守未验收，GUI市场更新回滚按钮未验收。
+
+candidate-v52/root1/targets snapshot timestamp61，50目录项48应用2内部夹具，102实际签名目标57公共文件。旧root、全部旧签名历史和旧非catalogue目标保持；当前继承MPC角色32原/33更正、NSIS55原/56更正。Store IPC预缓存同版本更新及精确原回滚通过，回滚前374Core/113Store完整CP先保存读回，回滚后374/114旧全部字段/代次保持；第五GUI后375/114正常两服务重启前后全字段精确同，PID变化，固定Core/Store摘要、防护、信任、不自动息屏/认证锁屏设置保持。私有完整CP lmms-20261012/after-restart.json SHA9d4da81df751f17968695247ec7c489edb40a50268c63324693eaf0015aa2601。只读rolling-current-state-lmms-20261012.py必须严格SSH客体执行。核对仅既有固定验收数据、本轮3056程序文件和有限config/registry，非全部应用文件系统；最新64IPC摘要不能代替完整SQLite历史。
+
+第三原GUI正常退出改变system.reg/user.reg/.lmmsrc.xml，大小3427895/104924/1245B不变，旧严格pins失败立即停止重启/CP。前后实际原文和321/20/21行真实私有差分保存，原因未定，不称旧字节跨第三GUI保持。初诊断助手继承文本inputPin字段而本应用save无此字段，KeyError在原侧私有差分写完后停止；旧helper和部分私有原文/diff保持，新v2去除该无效字段并逐字节核对既存部分，再验证原/市场全部程序、输入输出和新配置pins后才完整CP读回及重启。v2读取既存diff分支遗漏数量metadata；重启后另作只读补充核实321/20/21行，不重写诊断/重启收据或重复重启。当前实际新pins跨restart同。
+
+其他失败原历史保留：首publication助手把drive_c前缀和base64夹具相对键混用，KeyError在写公开证据/台账前停止，新v2明确去除前缀并按真实WAV data chunk读取，不改输出；TuxPaint已验收不重复计；Pencil2D0.7.2初步MSI判断未核、官方实际ZIP，改选LMMS，无安装或新增阻塞。lmms.io/download403后用固定官方GitHub下载。初源码选择COPYING/插件路径不存在未提取，补实际LICENSE.txt与cmake/nsis，旧记录不改。第一次verify库只是stdin执行未落盘，save-reopen助手FileNotFoundError即停，没有新CP/重开任务，随后独立明确base64写入/摘要核对后v2正常继续。少量不存在旧模板/错误激活收据文件名只读失败无依赖客体变更。真实音符/工程/WAV均应用GUI写出，没有外部重写输出或以窗口/退出0代替验收。
+
+1854旧immutable和25原source/gui/acceptance冻结文件及市场待执行历史标签保持，后续完成另记。全部签名历史/TUF信任保留，私钥/密码/凭据/登录画面/完整私有CP不入库。独立审查、真实index/commit字节核对与普通推送另记；审查不替代真实客体GUI或私有完整CP独立重演。所有依赖逐步实际assert，false/缺assert/非终态/CP失败即停，不只exit0、不补造历史。

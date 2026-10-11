@@ -224,3 +224,16 @@ docs/evidence/2026-10-12-notepadnext/source/.github/workflows/build.yml -text wh
 docs/evidence/2026-10-12-notepadnext/source/installer/NsisMultiUser/Include/NsisMultiUser.nsh -text whitespace=cr-at-eol,-space-before-tab
 docs/evidence/2026-10-12-notepadnext/source/installer/installer.nsi -text whitespace=cr-at-eol,-blank-at-eol
 docs/evidence/2026-10-12-notepadnext/source/installer/utils.nsh -text whitespace=cr-at-eol,-blank-at-eol
+
+# LMMS fixed upstream/evidence bytes.
+catalogue/candidate-v52/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-lmms-20261012*.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-lmms*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-lmms/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261012-lmms.md -text whitespace=cr-at-eol
+
+# Preserve exact fixed upstream whitespace paths after stopped LMMS first stage.
+docs/evidence/2026-10-12-lmms/expanded-assets.html -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-lmms/source/CMakeLists.txt -text whitespace=cr-at-eol,-space-before-tab
+docs/evidence/2026-10-12-lmms/source/cmake/nsis/CMakeLists.txt -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-lmms/source/src/core/main.cpp -text whitespace=cr-at-eol,-blank-at-eol

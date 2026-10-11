@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM, Wine 11.14 win64, fixed native launcher-cwd-v11-r1 Core and managed-msi-v2 Store.",
+  "applications": [
+    {
+      "id": "sigil",
+      "version": "2.6.2",
+      "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e",
+      "size": 133608315,
+      "generationId": "gen-job-1791703952208-5",
+      "definitionDigest": "sha256:3d9038b8b127ef1a5466bae1a8e60263fc46b00a98bdfcbaf89153dbea3019da",
+      "launcherSha256": "sha256:d9deafca1b85e343662d0b16aed24f53b6567e64e06dba673fa7bf1a402c9b3e",
+      "launcherEnvironment": {
+        "QTWEBENGINE_CHROMIUM_FLAGS": "--disable-gpu"
+      },
+      "installJobId": "job-1791703952208-5",
+      "launchJobId": "job-1791704000965-6",
+      "reopenJobId": "job-1791704116192-7",
+      "guiFileOperation": "passed-limited-epub2-code-edit-preview-save-fresh-reopen",
+      "savedOutput": {
+        "file": "output/original-edited.epub",
+        "sizeBytes": 1685,
+        "sha256": "a0c05443b52485074234ac340bc7af146cbe082e8a15c150382b16a1d66b9898",
+        "members": {
+          "mimetype": {
+            "sizeBytes": 20,
+            "sha256": "e468e350d1143eb648f60c7b0bd6031101ec0544a361ca74ecef256ac901f48b"
+          },
+          "META-INF/container.xml": {
+            "sizeBytes": 265,
+            "sha256": "83e412f1ac7d052a9f73d82d026c9ce241591c60b80e9c384956e9e588e1d5fc"
+          },
+          "OEBPS/chapter.xhtml": {
+            "sizeBytes": 376,
+            "sha256": "61d15d644a0478c7aa521c02eac4cb581490dee794f3fd4a0c7882afc0e24c36"
+          },
+          "OEBPS/content.opf": {
+            "sizeBytes": 827,
+            "sha256": "d5ffc049e12d38988f838f80b8565c2bc2990bee2759356503e16502b8bfae7d"
+          },
+          "OEBPS/toc.ncx": {
+            "sizeBytes": 392,
+            "sha256": "a597ee3c6ecb54d80b0b0bddb771b77785f3cf3592c406708be6e9da18ef5d87"
+          }
+        },
+        "chapterFile": "OEBPS/chapter.xhtml",
+        "chapterUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>Original Chapter</title></head><body>\r\n<h1>ForgeOS Original Chapter</h1>\r\n<p>STATUS=AFTER</p>\r\n<p>VALUE=21</p>\r\n<p>中文内容保留</p>\r\n<p>APPENDED=ORIGINAL</p>\r\n</body></html>\r\n",
+        "bodyTexts": [
+          "ForgeOS Original Chapter",
+          "STATUS=AFTER",
+          "VALUE=21",
+          "中文内容保留",
+          "APPENDED=ORIGINAL"
+        ]
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "previewRendered": true,
+      "screenshots": {
+        "01-initial-launch.jpg": {
+          "sizeBytes": 130924,
+          "sha256": "a6d92b956ac6aafaca1cdb2ba95598adf9bd0aada2eb79e9283d2cae7c115000"
+        },
+        "02-after-update-notice.jpg": {
+          "sizeBytes": 122123,
+          "sha256": "4351159931095e4e36156830c3fb01aa9e316320549c8d620a0847acbaa64790"
+        },
+        "03-loaded-state.jpg": {
+          "sizeBytes": 188002,
+          "sha256": "fe6f17b1ffe08ad5aa48d18246bf363742bb76a3d25a072b258c0f1945a7f5eb"
+        },
+        "04-replaced-code.jpg": {
+          "sizeBytes": 188319,
+          "sha256": "fc62815e1f48901a0a2849866dabbe065d40ebe327c66564b318bd4572f1bc7b"
+        },
+        "05-appended-code.jpg": {
+          "sizeBytes": 190466,
+          "sha256": "c4bf0ee71a75e3829870f86dd6afecb728ac5cb1a5710bf7cfbfc88abfe89cd5"
+        },
+        "06-saved-original.jpg": {
+          "sizeBytes": 191738,
+          "sha256": "bf8f0955e15b53a16a47663bb023e169225b18bd11dc5e2b4ff56ed5b4e8f6b6"
+        },
+        "07-preview-refresh.jpg": {
+          "sizeBytes": 191488,
+          "sha256": "1cab7ae03b289db4ca95fe1adef7935a627484794277cc0dc0082e93505615a0"
+        },
+        "08-default-reopen.jpg": {
+          "sizeBytes": 191199,
+          "sha256": "fc3bf15be62af1b08e62a1c47b55f10bf04f87beb041cbe7484a9686c998a9da"
+        },
+        "09-preview-zoom-test.jpg": {
+          "sizeBytes": 149728,
+          "sha256": "f3a1d0122ed14bbad392f49063a4ebff668c0aa48f0bacf14f6211d3f78c729a"
+        },
+        "10-undo-zoom-input.jpg": {
+          "sizeBytes": 190743,
+          "sha256": "bad680e7e20226241b9d7e4321f1db5edf85d1a5c31575e30cff7f99f2253405"
+        },
+        "11-disable-gpu-initial.jpg": {
+          "sizeBytes": 208880,
+          "sha256": "e7c9251a61fcb22eadce8c38f05add858959a68da323024420c3c7738adeab4a"
+        },
+        "12-formal-initial.jpg": {
+          "sizeBytes": 131023,
+          "sha256": "199894f862d51daefc3fc1c71a07486cf74302472683b637403337a863286247"
+        },
+        "13-formal-loaded-preview.jpg": {
+          "sizeBytes": 202912,
+          "sha256": "27eed6e6d5fcee6878a73714ba9602bc85ec8dad198129e7a85aee2355e2f4ee"
+        },
+        "14-formal-edited-preview.jpg": {
+          "sizeBytes": 208531,
+          "sha256": "6dffc60b353fa24a04e4c0e7e8340b7fa23fd052b1c17e7f38c2f2b391ad272c"
+        },
+        "15-formal-saved-preview.jpg": {
+          "sizeBytes": 209416,
+          "sha256": "64d8795239d1d7889b2e846d6a64bbb1f6b883eb739ea78d54b3c4c4a64b8023"
+        },
+        "16-formal-fresh-reopen-preview.jpg": {
+          "sizeBytes": 208010,
+          "sha256": "8fb7172ff445e80337e694e6dd195919bd25797890ba1aca0f835375df776034"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-sigil-source.json",
+    "sha256": "6a0dcff60f126c7d676d6c5b10411a518dd8ca5e45ca01783d5a4c136e5a8619",
+    "mainProgramLicense": "GPL-3.0-or-later",
+    "bundleLicenseClosureVerified": false
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-sigil-gui.json",
+    "sha256": "11a544b2dc4d1d274462c3faaf811765384ebb0c9822dc27cf1c1e070d0a4023"
+  },
+  "limits": [
+    "Only one small EPUB2 fixture, one XHTML chapter, Chinese-name input open, ordinary BEFORE to AFTER replacement, ASCII paragraph addition, GUI Save As to ASCII path, actual Preview rendering and fresh-process reopen were verified in the formal original generation.",
+    "Two default managed processes showed blank Preview. A request-only disable-gpu diagnostic restored tested Preview; formal native launcher environment QTWEBENGINE_CHROMIUM_FLAGS=--disable-gpu passed in a fresh installed generation. No global context, executable, DLL, runtime, font, cwd or sandbox change. Specific underlying Wine/Qt/GPU defective function is not established.",
+    "First launch in a fresh generation showed an online-version notice which was normally declined; unattended startup and current/newer upstream versions unverified.",
+    "EPUB3, multiple chapters, CSS/images/media, plugins/Python execution, metadata/TOC editing, full EPUBCheck/specification validation, printing, large files, direct Chinese keyboard input and advanced editing unverified.",
+    "Fixed main source declares GPL-3.0-or-later. Installed COPYING differs in raw bytes and matches after 674 CRLF normalizations; complete bundled licensing closure, Authenticode, OpenPGP signatures and build reproducibility unverified.",
+    "Guest installation downloads, fresh-machine registration, migration, cross-version upgrades and GUI update/rollback buttons unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart remain pending at this original proof freeze."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

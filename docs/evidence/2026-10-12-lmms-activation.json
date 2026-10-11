@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 61,
+  "rootVersion": 1,
+  "entries": 50,
+  "coreJobs": 371,
+  "fullStoreRows": 112,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-lmms-20261012.acceptance.json#lmms",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b",
+        "size": 36829951,
+        "target": "lmms-1.2.2-win64.exe",
+        "url": "https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "lmms"
+    },
+    "id": "lmms",
+    "license": "GPL-2.0-or-later",
+    "name": {
+      "en": "LMMS",
+      "zhCN": "LMMS 音乐制作工具"
+    },
+    "origin": "https://lmms.io",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "LMMS Developers",
+    "summary": {
+      "en": "Limited two-note single-oscillator project edit, Save As, WAV render and explicit new-process reopen tested; audio playback unverified.",
+      "zhCN": "仅单振荡器双音符工程编辑、另存、WAV 渲染和新进程重开通过，实际听音未验收"
+    },
+    "version": "1.2.2"
+  },
+  "installed": {
+    "appId": "lmms",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "1.2.2"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "d76963dc574fcdb5efa59002c8533f4923c478293c2a045f1279e7d284c9a705",
+    "coreJobs": 371,
+    "fullStoreRows": 112
+  },
+  "independentMarketGenerationPending": true
+}

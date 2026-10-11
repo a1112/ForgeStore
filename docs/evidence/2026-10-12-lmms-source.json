@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-12",
+  "applicationId": "lmms",
+  "fixedVersion": "1.2.2",
+  "officialSite": "https://lmms.io",
+  "officialRelease": "https://github.com/LMMS/lmms/releases/tag/v1.2.2",
+  "installer": {
+    "fileName": "lmms-1.2.2-win64.exe",
+    "url": "https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe",
+    "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/15778896/bceaac00-be3d-11ea-9a55-0b2b3f3add6d",
+    "transientQueryOmitted": true,
+    "sizeBytes": 36829951,
+    "sha256": "5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b",
+    "officialSizeMatched": true,
+    "upstreamDigest": null
+  },
+  "sourceArchive": {
+    "fileName": "lmms_1.2.2.tar.xz",
+    "url": "https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms_1.2.2.tar.xz",
+    "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/15778896/7cddf600-be4a-11ea-8612-3f082ab84cd7",
+    "transientQueryOmitted": true,
+    "sizeBytes": 22733960,
+    "sha256": "b185507fb64ecfd8e31145135b58ab244b637f9efc09c4176caf70aa3cbaae1e"
+  },
+  "releaseApi": {
+    "fileName": "release-api.json",
+    "url": "https://api.github.com/repos/LMMS/lmms/releases/tags/v1.2.2",
+    "finalUrlWithoutQuery": "https://api.github.com/repos/LMMS/lmms/releases/tags/v1.2.2",
+    "transientQueryOmitted": false,
+    "sizeBytes": 46789,
+    "sha256": "1990670e3f1011aab580ce4deb5bd8ed2fb90753de9360121931f004002b3bd2"
+  },
+  "releaseAssetsPage": {
+    "fileName": "expanded-assets.html",
+    "url": "https://github.com/LMMS/lmms/releases/expanded_assets/v1.2.2",
+    "finalUrlWithoutQuery": "https://github.com/LMMS/lmms/releases/expanded_assets/v1.2.2",
+    "transientQueryOmitted": false,
+    "sizeBytes": 16317,
+    "sha256": "e3556edbec189802a73d03e70b6b63abb9c7cd6d50783998aef58685841d2d21"
+  },
+  "sourceMembers": {
+    "CMakeLists.txt": {
+      "member": "lmms/CMakeLists.txt",
+      "relativePath": "CMakeLists.txt",
+      "sizeBytes": 21200,
+      "sha256": "2fc872ba1289a1e327e4ab4e46cbc87fbf5bc0b9af30888f233e85b1a8ed9ace",
+      "reference": "2026-10-12-lmms/source/CMakeLists.txt"
+    },
+    "README.md": {
+      "member": "lmms/README.md",
+      "relativePath": "README.md",
+      "sizeBytes": 2832,
+      "sha256": "fc44e37dd9178c9ebe354091c19be327b690405af139da3b7f385b1d9aa9e57f",
+      "reference": "2026-10-12-lmms/source/README.md"
+    },
+    "data/projects/demos/StrictProduction-DearJonDoe.mmp": {
+      "member": "lmms/data/projects/demos/StrictProduction-DearJonDoe.mmp",
+      "relativePath": "data/projects/demos/StrictProduction-DearJonDoe.mmp",
+      "sizeBytes": 62065,
+      "sha256": "dfcde0ce97444fa45728bb4bc6c1476f313ffff2b42bb191f6ea7fce21f0743d",
+      "reference": "2026-10-12-lmms/source/data/projects/demos/StrictProduction-DearJonDoe.mmp"
+    },
+    "src/core/main.cpp": {
+      "member": "lmms/src/core/main.cpp",
+      "relativePath": "src/core/main.cpp",
+      "sizeBytes": 24073,
+      "sha256": "6beea813590a81de9eba981b5efabaa858ccc7986feb2963f8098e4752d2fda7",
+      "reference": "2026-10-12-lmms/source/src/core/main.cpp"
+    },
+    "LICENSE.txt": {
+      "member": "lmms/LICENSE.txt",
+      "relativePath": "LICENSE.txt",
+      "sizeBytes": 17987,
+      "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6",
+      "reference": "2026-10-12-lmms/source/LICENSE.txt"
+    },
+    "cmake/nsis/CMakeLists.txt": {
+      "member": "lmms/cmake/nsis/CMakeLists.txt",
+      "relativePath": "cmake/nsis/CMakeLists.txt",
+      "sizeBytes": 3737,
+      "sha256": "8226456916fd410227b2ecd67535b353ad3f9e5573746db3ab42a1c18ce1a0c7",
+      "reference": "2026-10-12-lmms/source/cmake/nsis/CMakeLists.txt"
+    }
+  },
+  "mainProgramLicense": "GPL-2.0-or-later",
+  "allBundledLicensesVerified": false,
+  "installedLicenseComparisonVerified": false,
+  "upstreamInstallerDigestVerified": false,
+  "authenticodeVerified": false,
+  "openPgpVerified": false,
+  "binarySourceCorrespondenceVerified": false,
+  "reproducibleBuildVerified": false,
+  "nativeInstallerDefinition": {
+    "arguments": [
+      "/S",
+      "/D=C:\\LMMS"
+    ],
+    "fileName": "lmms-1.2.2-win64.exe",
+    "sha256": "5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b"
+  },
+  "installerDirectoryArgumentUtf8Hex": "2f443d433a5c4c4d4d53",
+  "installerDirectoryArgumentUtf8Bytes": 10,
+  "notClaimedLatest": true
+}

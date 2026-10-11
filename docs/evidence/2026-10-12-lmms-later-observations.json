@@ -1,0 +1,109 @@
+{
+  "originalFrozenBytesAndStageLabelsPreserved": true,
+  "strictOldPinFailureStoppedBeforeRestart": true,
+  "strictOldPinFailure": {
+    "strictOldPinsPassed": false,
+    "changes": {
+      "original/system.reg": {
+        "before": {
+          "sizeBytes": 3427895,
+          "sha256": "c35205eafb40291dca32faf6bd5796382039716a7e24c051638b7dbb61f1d603"
+        },
+        "after": {
+          "sizeBytes": 3427895,
+          "sha256": "0686b97c4347fdf51bce3c56e0db6431f5917247f9e2262a00c6494ff2d43d59"
+        }
+      },
+      "original/user.reg": {
+        "before": {
+          "sizeBytes": 104924,
+          "sha256": "c6494675abd085ccc6401b6cd9f300866ec609e4022206cfcc6ce4b68029d4b4"
+        },
+        "after": {
+          "sizeBytes": 104924,
+          "sha256": "6be0cc6d570b995fa420e83a5ba9c1476cf03ed69b22607123220d0905573d9d"
+        }
+      },
+      "original/drive_c/users/forge/.lmmsrc.xml": {
+        "before": {
+          "sizeBytes": 1245,
+          "sha256": "49e438cc7d2b3eace21a8119ef9cb1d1b4820eb0f75c1de9465712b65b96d425"
+        },
+        "after": {
+          "sizeBytes": 1245,
+          "sha256": "2fa51d6af75dbe8cd2c243d73d01dbab2e212b2b96cc6b0508c6bc06bff537fd"
+        }
+      }
+    },
+    "coreJobs": 375,
+    "fullStoreRows": 114,
+    "immutableProgramAndDataPinsPassed": true,
+    "normalRestartNotAttempted": true,
+    "newCheckpointNotCreated": true
+  },
+  "actualPrivateRawDiffSummary": {
+    "passed": true,
+    "differences": {
+      "system.reg": {
+        "changedLineCount": 321,
+        "beforeAndAfterActualRawBytesAndTextDiffPreservedPrivately": true,
+        "rawBeforePin": {
+          "sizeBytes": 3427895,
+          "sha256": "c35205eafb40291dca32faf6bd5796382039716a7e24c051638b7dbb61f1d603"
+        },
+        "rawAfterPin": {
+          "sizeBytes": 3427895,
+          "sha256": "0686b97c4347fdf51bce3c56e0db6431f5917247f9e2262a00c6494ff2d43d59"
+        },
+        "causeEstablished": false
+      },
+      "user.reg": {
+        "changedLineCount": 20,
+        "beforeAndAfterActualRawBytesAndTextDiffPreservedPrivately": true,
+        "rawBeforePin": {
+          "sizeBytes": 104924,
+          "sha256": "c6494675abd085ccc6401b6cd9f300866ec609e4022206cfcc6ce4b68029d4b4"
+        },
+        "rawAfterPin": {
+          "sizeBytes": 104924,
+          "sha256": "6be0cc6d570b995fa420e83a5ba9c1476cf03ed69b22607123220d0905573d9d"
+        },
+        "causeEstablished": false
+      },
+      "drive_c/users/forge/.lmmsrc.xml": {
+        "changedLineCount": 21,
+        "beforeAndAfterActualRawBytesAndTextDiffPreservedPrivately": true,
+        "rawBeforePin": {
+          "sizeBytes": 1245,
+          "sha256": "49e438cc7d2b3eace21a8119ef9cb1d1b4820eb0f75c1de9465712b65b96d425"
+        },
+        "rawAfterPin": {
+          "sizeBytes": 1245,
+          "sha256": "2fa51d6af75dbe8cd2c243d73d01dbab2e212b2b96cc6b0508c6bc06bff537fd"
+        },
+        "causeEstablished": false
+      }
+    },
+    "priorDiagnosisMetadataCountOmittedOnExistingDiffBranch": true,
+    "originalFailedDiagnosisInputPinFieldAbsent": true,
+    "initialDiagnosisPartialPrivateFilesPreserved": true,
+    "noGuestApplicationOrServiceMutation": true,
+    "oldReceiptsNotRewritten": true
+  },
+  "currentPinsStableAcrossNormalRestart": true,
+  "diagnosisFirstHelperFailedOnMissingLegacyInputPinField": true,
+  "partialPrivateRawBackupsAndDiffsPreserved": true,
+  "correctedDiagnosisVerifiedExistingPartialBytesBeforeContinuing": true,
+  "v2DiagnosisExistingDiffBranchOmittedCountMetadata": true,
+  "laterReadOnlySummaryVerified32120And21DiffLinesWithoutRewritingPriorReceipts": true,
+  "firstPublicationFailedBeforeWritesOnDriveCPathPrefix": true,
+  "missingHostActivationReceiptRead": {
+    "requested": "lmms-v52-activation-result-20261012.json",
+    "actual": "lmms-v52-activate-result-20261012.json",
+    "noDependentMutation": true
+  },
+  "installerDirectoryArgumentUtf8Length": 10,
+  "installerDirectoryArgumentUtf8Hex": "2f443d433a5c4c4d4d53",
+  "actualBackslashCount": 1,
+  "causeEstablished": false
+}

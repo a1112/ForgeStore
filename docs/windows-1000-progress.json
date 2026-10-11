@@ -490,6 +490,17 @@
       "signedCatalogue": "catalogue/candidate-v51/tuf",
       "publication": "docs/evidence/2026-10-12-notepadnext-publication.json",
       "limitation": "Two small Chinese-name UTF-8 BOM/CRLF texts, normal replacement, ASCII append, GUI Save As to ASCII paths, explicit new-process reopen, independent market generation and Store IPC cached update/exact rollback/normal restart only. Diagnostic Save All changed its active input and is excluded; two fresh formal inputs remain unchanged. Installed LICENSE raw differs, identical after674CRLF normalization. Advanced features, direct Chinese input, full bundle license closure, networking, new-machine/migration/cross-version and unattended unverified. Actual third-GUI registry byte changes and strict-pin stop preserved."
+    },
+    {
+      "id": "lmms",
+      "version": "1.2.2",
+      "sha256": "5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b",
+      "sizeBytes": 36829951,
+      "license": "GPL-2.0-or-later",
+      "evidence": "docs/evidence/windows-lmms-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v52/tuf",
+      "publication": "docs/evidence/2026-10-12-lmms-publication.json",
+      "limitation": "Two small Chinese-name single-track TripleOscillator projects: BPM and ASCII name change, second note, GUI ASCII Save As, stereo16-bit44100Hz WAV render with two finite note intervals/silence/frequency checks, explicit new-process reopen. Independent market generation, cached Store IPC update/exact original rollback/normal restart only. Heard playback, audio devices, advanced DAW features, direct Chinese keyboard input, full bundle license closure, network/new-machine/migration/cross-version/unattended unverified. Actual third-GUI registry and preference byte changes/strict-pin stop preserved."
     }
   ],
   "queue": [
@@ -683,12 +694,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "47/1000 finite Windows acceptance;13 unresolved including BowPad. Notepad Next0.15 small UTF8BOM/CRLF text workflow only. candidate-v51/root1/role60;368 fullCore/112 fullStore. Strict guest rolling-current-state-notepadnext-20261012.py. Preserve frozen bytes/trust/history, original SaveAll and focus/argument/license failures and actual third-GUI registry changes. Review/index/commit/push pending at publication freeze.",
+  "next": "48/1000 finite Windows acceptance;13 unresolved including BowPad. LMMS1.2.2 two small single-track project edit/save/WAV render/new-process reopen only; heard playback unverified. candidate-v52/root1/role61;375 fullCore/114 fullStore. Strict guest rolling-current-state-lmms-20261012.py. Preserve frozen bytes/trust/history, library-stage and diagnosis helper failures, actual third-GUI registry/preference changes. Review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 47,
+    "acceptedLocalMarket": 48,
     "explicitlyBlockedCandidates": 13,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -696,25 +707,25 @@
     "pendingCandidates": 13
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v51/tuf",
-    "metadataVersion": 60,
-    "catalogueEntries": 49,
-    "acceptedDistinctWindowsApps": 47,
+    "signedCatalogue": "catalogue/candidate-v52/tuf",
+    "metadataVersion": 61,
+    "catalogueEntries": 50,
+    "acceptedDistinctWindowsApps": 48,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-notepadnext-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-lmms-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-mkvtoolnix-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-notepadnext-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-notepadnext-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-lmms-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-notepadnext-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-lmms-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-notepadnext.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-notepadnext-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-lmms.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-lmms-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

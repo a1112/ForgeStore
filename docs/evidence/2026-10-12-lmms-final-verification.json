@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "phase": "before-independent-review-and-git-stage",
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "currentStateVerified": {
+    "verified": true,
+    "coreJobs": 375,
+    "fullStoreRows": 114,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "root": 1,
+      "timestamp": 61,
+      "targets": 61,
+      "snapshot": 61
+    },
+    "latestKnownTime": "2026-10-11T21:29:06.102603072Z",
+    "selectedLmmsGeneration": "gen-job-1791752732529-1",
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "checkpoint": {
+      "file": "lmms-20261012/after-restart.json",
+      "sha256": "9d4da81df751f17968695247ec7c489edb40a50268c63324693eaf0015aa2601"
+    }
+  },
+  "oldImmutableFilesMatched": 1854,
+  "newOriginalFrozenFilesMatched": 25,
+  "signedMetadataPackAtSigningStage": {
+    "metadataVersion": 61,
+    "rootVersion": 1,
+    "entries": 50,
+    "actualTargets": 102,
+    "files": 57,
+    "archiveSha256": "b0e38f859ebafb7f8e6aba5d004f616a62fca5d7692b2d0dc9340f35aacdc284",
+    "receiptSha256": "707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3",
+    "allOldSignedTargetPinsPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true
+  },
+  "publicationSha256": "389117cf92f36bfdad57bf821b9e461dde117f459e6aadaf49d56a33ca7701a8",
+  "independentReviewPendingAtFreeze": true,
+  "gitIndexAndCommitAuditPendingAtFreeze": true,
+  "remotePushPendingAtFreeze": true
+}
