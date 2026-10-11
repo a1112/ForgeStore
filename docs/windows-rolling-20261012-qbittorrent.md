@@ -1,0 +1,19 @@
+# qBittorrent 5.2.4 Windows 有限种子与本地校验（2026-10-12）
+
+新增1款，累计44/1000；13个未解决候选完整保留。日期采用亚洲/上海，实际客体UTC时间保持。Ubuntu两款独立验收不变，本轮没有切换虚拟机。合成二进制夹具和种子不另计应用。
+
+官方固定Windows x64安装包41407004字节，SHA-256 ef6efe581d80efeb0a77df281d93f93021fbdcc48e4d8f7b341dc864f53c30dd；源码5311620字节，SHA-256 3bfcee98d879e99865acaf747ce665c4c699916ff7f5577684c1baa87256279e。两者均匹配官方下载页面公开SHA，页面原文固定。9份初始源码成员和后加5份按原归档字节固定，共14份；原下载收据不改，不称最新版本。COPYING声明源码GPL-2.0-or-later，因GPL3资产二进制分发GPL-3.0-or-later，两者有OpenSSL链接例外，市场按二进制声明。全部Qt/libtorrent/OpenSSL/Boost/翻译许可闭包、安装许可比较、PGP/Authenticode、源码二进制对应和可复现构建未核验。39个安装文件中没有COPYING/LICENSE命名文件，未提取二进制嵌入许可。
+
+正式原代次gen-job-1791741134980-1、独立市场代次gen-job-1791741957313-4，冻结定义sha256:10905a905bc04f0e21d07369316298d074edaf0075e1dbee84b41eca4a39ccaf。两个代次全部39安装文件原字节同；qbittorrent.exe42607104字节，SHA-256 2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c。现有原生NSIS托管参数/S和/D=C:后一个反斜杠再qBittorrent，17 UTF8字节，hex 2f443d433a5c71426974746f7272656e74，冻结定义与decoded请求相同。无Core/程序、全局context、launcher环境/workingDirectory、字体包/DLL/runtime修复。
+
+两个4096字节中文名单文件分别通过GUI创建无tracker种子，注释ORIGINAL42/MARKET42。实际种子186/183字节，独立严格解析canonical bencode、name/length、piece length16384、1个piece的SHA1与真实夹具一致；infohash分别71c212507af9fa7896e77b0c1b699b82a483bcdb和735429f4f9532e264e49f64f40b3332a41e878e3。两个新正式进程显式重开种子，取消Start torrent并指定原生C路径实际数据文件夹，真实GUI Force Recheck/Yes后100%、General pieces1of1、Downloaded/Uploaded0B、Stopped1与Running0。回滚后显式Open原种子出现already present/merge trackers正常提示，选择No后重新校验恢复的原停止条目，不声称新增第二条。五次正式CtrlQ正常退出0与wineserver停止。实际窗口标签qBittorrent v5.2.4。
+
+这只验收有限本地夹具流程。窗口中出现DHT节点，停止条目和0B计数不代表没有背景联网；Download completed通知来自本地重校验，不计网络下载。下载/上传/做种、peer/tracker/DHT/PEX/magnet/private/multifile/remoteRPC/搜索/插件、大型或损坏数据、高级能力和直接中文键盘输入未验收。首次非绑定文件共享提示正常确认，只算人工启动，不称无人值守。原输入字节保持。
+
+candidate-v48/root1/在线targets、snapshot、timestamp57，46目录项=44应用+2内部夹具，94实际签名目标、53公共文件。全部旧target pins、root原字节和签名历史保留，MPC-HC原角色32及33更正仍继承。Store IPC预缓存同版本更新203db6e7-c840-4c93-a85b-03944f75d3bb成功；回滚前344 Core/105 Store完整检查点保存并读回，回滚c0b05f72-9a79-4af3-bb82-17f95c4b01fb成功后344/106旧全部字段、全部代次保持并精确恢复原代次。最后原GUI退出后345/106，正常两服务重启前后全字段精确一致，服务PID改变且固定程序摘要保持。GUI市场更新/回滚按钮、新机注册、迁移和跨版本未验收。
+
+第三次原GUI改变system.reg/user.reg、qBittorrent.ini/qBittorrent-data.ini、log和fastresume原字节。实际前后原文及287/20/82/6/36行文本差分和二进制fastresume变化私有保存，原因未确定，不声称旧字节跨第三GUI保持。其余固定程序/输入/种子/市场和旧固定验收数据保持；当前实际新pins跨重启同。完整私有检查点qbittorrent-20261012/after-restart.json SHA-256 c2c344342ec8566556a29e914fe0fb33a19dd8bb8ae754857eec0af0fa5700d3；当前rolling-current-state-qbittorrent-20261012.py必须通过严格SSH客体执行。旧NSIS338/104等固定总数助手只代表历史。覆盖既有固定验收数据、本轮39程序文件和有限配置/registry，不称遍历全部应用文件系统，最近64条IPC摘要不代替完整SQLite历史。
+
+首次安装观察助手误引用NSIS旧库，在摘要断言处停止，没有轮询或客体变更；只更正私有助手路径后受控读取实际安装成功，没有重复安装。登录先确认过渡和新鲜输入字段后一次正常提交，认证/锁屏设置不改，不自动息屏保持，密码与登录画面不记录。所有依赖操作逐步实际assert，false/缺assert/非终态/检查点失败即停，不能仅判断exit0。
+
+1425旧immutable和28份原source/gui/receipt冻结文件原字节保持，原市场待执行标签保留；市场后续完成另记。签名私钥、密码、凭据和完整私有检查点不入库。GitHub用户验证在上一轮恢复，累积提交已普通推送039d38；本轮新证据提交推送和独立审查/index/commit逐字节核对结果另记，不重写旧冻结记录。

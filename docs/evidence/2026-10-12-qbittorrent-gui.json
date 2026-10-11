@@ -1,0 +1,885 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791741134980-1",
+    "createdAtMilliseconds": 1791741134987,
+    "definition": {
+      "bottleId": "gui-qbittorrent",
+      "category": "internet",
+      "compatibilityRating": "unknown",
+      "id": "qbittorrent",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\qBittorrent"
+        ],
+        "fileName": "qbittorrent_5.2.4_x64_setup.exe",
+        "sha256": "ef6efe581d80efeb0a77df281d93f93021fbdcc48e4d8f7b341dc864f53c30dd"
+      },
+      "launchers": [
+        {
+          "executable": "qBittorrent/qbittorrent.exe",
+          "id": "main",
+          "name": "qBittorrent"
+        }
+      ],
+      "name": "qBittorrent",
+      "publisher": "The qBittorrent project",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "5.2.4"
+    },
+    "definitionDigest": "sha256:10905a905bc04f0e21d07369316298d074edaf0075e1dbee84b41eca4a39ccaf",
+    "id": "gen-job-1791741134980-1",
+    "launcherDigests": {
+      "main": "sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791741151877
+  },
+  "definition": {
+    "bottleId": "gui-qbittorrent",
+    "category": "internet",
+    "compatibilityRating": "unknown",
+    "id": "qbittorrent",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/D=C:\\qBittorrent"
+      ],
+      "fileName": "qbittorrent_5.2.4_x64_setup.exe",
+      "sha256": "ef6efe581d80efeb0a77df281d93f93021fbdcc48e4d8f7b341dc864f53c30dd"
+    },
+    "launchers": [
+      {
+        "executable": "qBittorrent/qbittorrent.exe",
+        "id": "main",
+        "name": "qBittorrent"
+      }
+    ],
+    "name": "qBittorrent",
+    "publisher": "The qBittorrent project",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "5.2.4"
+  },
+  "installedFiles": {
+    "uninst.exe": {
+      "sizeBytes": 152699,
+      "sha256": "d38cbd1ab4764b1908d02b4788001eb63d7cad12ec755b29f6b2a2e1a748f54e"
+    },
+    "qbittorrent.exe": {
+      "sizeBytes": 42607104,
+      "sha256": "2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c"
+    },
+    "qbittorrent.pdb": {
+      "sizeBytes": 169930752,
+      "sha256": "e5f6dd25c2361551d4b038a9379a69e37df2e7ad4ee45bc51c1eeb4280200284"
+    },
+    "qt.conf": {
+      "sizeBytes": 84,
+      "sha256": "fdb8fa58a6ffc14771ca2b1ef6438061a6cba638594d76d9021b91e755d030d3"
+    },
+    "translations/qt_sl.qm": {
+      "sizeBytes": 228428,
+      "sha256": "c44e0313a9414cc0e490b65b0c036fa11bca959353b228886547bc2c8492034f"
+    },
+    "translations/qtbase_da.qm": {
+      "sizeBytes": 181387,
+      "sha256": "7d1e5ca3310b54d104c19bf2abd402b38e584e87039a70e153c4a9af74b25c22"
+    },
+    "translations/qtbase_ru.qm": {
+      "sizeBytes": 203767,
+      "sha256": "3da6605668f9178d11a838c4515478084dcfb4f9cf22f99d7a92b492db9c224b"
+    },
+    "translations/qtbase_ja.qm": {
+      "sizeBytes": 129913,
+      "sha256": "2b9581c69b975f59be505b127cd3c19d403ef3d12e0e8386fb97238223e9c1df"
+    },
+    "translations/qtbase_lg.qm": {
+      "sizeBytes": 315764,
+      "sha256": "31c0cc4ce13b1d74fe0c19ed0b47638fb31e20c93ee08092533e884007aebfb5"
+    },
+    "translations/qtbase_es.qm": {
+      "sizeBytes": 165170,
+      "sha256": "4ffda56ba3bb5414ab0482d1dde64a6f226e3488f6b7f3f11a150e01f53fa4c8"
+    },
+    "translations/qtbase_fi.qm": {
+      "sizeBytes": 179941,
+      "sha256": "e47fe13713e184d07fa4495dde0c589b0e8f562e91574a3558a9363443a4fa72"
+    },
+    "translations/qtbase_ar.qm": {
+      "sizeBytes": 160017,
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263"
+    },
+    "translations/qtbase_zh_TW.qm": {
+      "sizeBytes": 126185,
+      "sha256": "21012b2b427f8d09d31ce9cae582ca27955b478ca3dc2ec18a3068d808638c6a"
+    },
+    "translations/qtbase_it.qm": {
+      "sizeBytes": 161166,
+      "sha256": "7808ed542a7833c4bd94ec8bdfbbca00bb4f2fe15979b9121ce3249323687300"
+    },
+    "translations/qtbase_pl.qm": {
+      "sizeBytes": 162962,
+      "sha256": "3cf6b5c14d5eb0cf81e9af2066e66b3aa579a6b9b3c323ed670761f6254a8c54"
+    },
+    "translations/qtbase_ka.qm": {
+      "sizeBytes": 201105,
+      "sha256": "e55e4b72fa620bebee5297ca59dfe2f49894a1e544f2b7485b1cfd8829289d6f"
+    },
+    "translations/qt_lt.qm": {
+      "sizeBytes": 165383,
+      "sha256": "47eb5f97467df769261421d54a5bea1131c9fb9b6388791d38bb6574335b64bf"
+    },
+    "translations/qtbase_uk.qm": {
+      "sizeBytes": 158274,
+      "sha256": "51b8ff55b37dc5907d637a8ddda12fbe816852b0244c74eb4f0fb84867a786e0"
+    },
+    "translations/qtbase_lv.qm": {
+      "sizeBytes": 153608,
+      "sha256": "846e047573ae40c83671c3ba7f73e27efc24b98c82701da0df9973e574178bb2"
+    },
+    "translations/qtbase_bg.qm": {
+      "sizeBytes": 165337,
+      "sha256": "e448ac9e3f16c29eb27af3012efe21052daa78fabfb34cd6dff2f69ee3bd3cdb"
+    },
+    "translations/qtbase_hr.qm": {
+      "sizeBytes": 149711,
+      "sha256": "bb9eec9a9a652c1340dc75eb2e749be50df00f885b3d6900dfc76799c45b244d"
+    },
+    "translations/qtbase_de.qm": {
+      "sizeBytes": 223404,
+      "sha256": "9cb5504dee6ef0d4d4be8ba2e34ba8294018a9e0ec810ceaf5e973d57a283434"
+    },
+    "translations/qtbase_gd.qm": {
+      "sizeBytes": 189580,
+      "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+    },
+    "translations/qtbase_cs.qm": {
+      "sizeBytes": 174701,
+      "sha256": "03028b42df5479270371e4c3bdc7df2f56cbbe6dda956a2864ac6f6415861fe8"
+    },
+    "translations/qtbase_fr.qm": {
+      "sizeBytes": 159463,
+      "sha256": "314243a55c32679ad473fdfe48dc7d66e973ad0fc8bf2164480c58dddb50c1a7"
+    },
+    "translations/qtbase_ko.qm": {
+      "sizeBytes": 156799,
+      "sha256": "0179ed1b136e1cb3f583351eaa2c545ba3d83a6ee3f82c32505926a1a5f5f183"
+    },
+    "translations/qt_gl.qm": {
+      "sizeBytes": 323590,
+      "sha256": "204a01ac7deb6b5bae193afecbd1e50d18c73bf7d94badeb2bbfdf6123c4ed93"
+    },
+    "translations/qtbase_fa.qm": {
+      "sizeBytes": 148156,
+      "sha256": "f78e59b5bdd586181a999034ba418868ed17fe9c05707fb65e523f70e92253d2"
+    },
+    "translations/qtbase_tr.qm": {
+      "sizeBytes": 250823,
+      "sha256": "2cedb7c431b20d3c59b4dc65ff5e53bd89023497162814b4a0e0b426c8a5b6c9"
+    },
+    "translations/qtbase_sv.qm": {
+      "sizeBytes": 198420,
+      "sha256": "ed7786bb4fec609e99e98c5c91fa468add90093e95079b9eb7ff2e01371c6abe"
+    },
+    "translations/qtbase_ca.qm": {
+      "sizeBytes": 209899,
+      "sha256": "005b0aa0c9a5b930dfdd870661958a8069bbec862d75f98bce20bf7401bea13d"
+    },
+    "translations/qtbase_nl.qm": {
+      "sizeBytes": 202861,
+      "sha256": "f61513bcdbb6ad800585f9437a95d018aab17fa12ee414aa31462ff279d8240e"
+    },
+    "translations/qtbase_nn.qm": {
+      "sizeBytes": 196411,
+      "sha256": "f9f2fb7c60e7fcb38bbd3c1314ef122145594265e20b0659ff00004baab13ac7"
+    },
+    "translations/qtbase_hu.qm": {
+      "sizeBytes": 205885,
+      "sha256": "98463295539d769c8645a0b7fb95ad38454cfd0b14f36af485513f036ddbbbc6"
+    },
+    "translations/qtbase_pt_BR.qm": {
+      "sizeBytes": 290955,
+      "sha256": "3475d61604b938d459949801a906dbd34a8ca824ade94120015d676e208da859"
+    },
+    "translations/qtbase_zh_CN.qm": {
+      "sizeBytes": 147222,
+      "sha256": "0481a9b92a6f0578400e960a7d5ee70217a6a450eaf7f98b7d32b8dbd0d58616"
+    },
+    "translations/qt_pt_PT.qm": {
+      "sizeBytes": 70334,
+      "sha256": "2c1e7bbf5168a64b43752dd4c547601c0bde6d610f8671fa3e3af38597e84783"
+    },
+    "translations/qtbase_sk.qm": {
+      "sizeBytes": 125763,
+      "sha256": "d586ae2c314074cf398417fdecb40709d5478dfeb0a67c2fe60d509ee9b59ed7"
+    },
+    "translations/qtbase_he.qm": {
+      "sizeBytes": 138690,
+      "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+    }
+  },
+  "save": {
+    "generationId": "gen-job-1791741134980-1",
+    "inputUnchanged": true,
+    "inputPin": {
+      "sizeBytes": 4096,
+      "sha256": "60cc4e643d1a6b7ccfc5acdc5075725f9d2eb5fa3c81af4bec48b0df63de6f65"
+    },
+    "outputRelativePath": "qBittorrentTests/original-output.torrent",
+    "outputPin": {
+      "sizeBytes": 186,
+      "sha256": "1986e6d743bdc609b331e77984f3f4bdf8931338ca39682b862ccfd5c2d52419"
+    },
+    "payloadBytes": 4096,
+    "pieceLength": 16384,
+    "pieceCount": 1,
+    "allPieceHashesMatchIndependentPayloadSha1": true,
+    "infoHashSha1": "71c212507af9fa7896e77b0c1b699b82a483bcdb",
+    "comment": "ORIGINAL42",
+    "nameUtf8": "原始数据.bin",
+    "createdBy": "qBittorrent v5.2.4",
+    "trackerless": true,
+    "bencodeCanonicalAndFullyParsed": true,
+    "guiAccepted": false,
+    "published": false
+  },
+  "guiJobs": [
+    {
+      "applicationId": "qbittorrent",
+      "createdAtMilliseconds": 1791741462690,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 161099,
+          "requestId": "job-1791741462690-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 149717,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix",
+          "requestId": "job-1791741462690-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 149760,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791741462690-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791741134980-1",
+      "id": "job-1791741462690-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 22609696,
+        "fileDigest": "sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c",
+        "fileSizeBytes": 42607104,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-error-l1-1-1.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "api-ms-win-shcore-scaling-l1-1-1.dll",
+          "authz.dll",
+          "bcrypt.dll",
+          "comdlg32.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3d12.dll",
+          "dbgeng.dll",
+          "dwmapi.dll",
+          "dwrite.dll",
+          "dxgi.dll",
+          "gdi32.dll",
+          "icuuc.dll",
+          "imm32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "mpr.dll",
+          "ncrypt.dll",
+          "netapi32.dll",
+          "ntdll.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "powrprof.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "uiautomationcore.dll",
+          "user32.dll",
+          "userenv.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "winhttp.dll",
+          "winmm.dll",
+          "ws2_32.dll",
+          "wsock32.dll",
+          "wtsapi32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 23321088,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 23320748,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 17658880,
+            "readable": true,
+            "virtualAddress": 23326720,
+            "virtualSize": 17658568,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 440832,
+            "readable": true,
+            "virtualAddress": 40988672,
+            "virtualSize": 585792,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 804864,
+            "readable": true,
+            "virtualAddress": 41578496,
+            "virtualSize": 804408,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 42385408,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".qtmimed",
+            "rawDataSize": 46080,
+            "readable": true,
+            "virtualAddress": 42389504,
+            "virtualSize": 45901,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 153088,
+            "readable": true,
+            "virtualAddress": 42438656,
+            "virtualSize": 152808,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 180736,
+            "readable": true,
+            "virtualAddress": 42594304,
+            "virtualSize": 180312,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791741134980-1",
+          "digest": "sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "qbittorrent.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix/drive_c/qBittorrent/qbittorrent.exe",
+          "sizeBytes": 42607104,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix/drive_c/qBittorrent/qbittorrent.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1"
+        },
+        "requestId": "job-1791741462690-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791741614853
+    },
+    {
+      "applicationId": "qbittorrent",
+      "createdAtMilliseconds": 1791741638037,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 161406,
+          "requestId": "job-1791741638037-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 79017,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix",
+          "requestId": "job-1791741638037-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 79059,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791741638037-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791741134980-1",
+      "id": "job-1791741638037-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 22609696,
+        "fileDigest": "sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c",
+        "fileSizeBytes": 42607104,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-core-synch-l1-2-0.dll",
+          "api-ms-win-core-winrt-error-l1-1-1.dll",
+          "api-ms-win-core-winrt-l1-1-0.dll",
+          "api-ms-win-core-winrt-string-l1-1-0.dll",
+          "api-ms-win-shcore-scaling-l1-1-1.dll",
+          "authz.dll",
+          "bcrypt.dll",
+          "comdlg32.dll",
+          "crypt32.dll",
+          "d3d11.dll",
+          "d3d12.dll",
+          "dbgeng.dll",
+          "dwmapi.dll",
+          "dwrite.dll",
+          "dxgi.dll",
+          "gdi32.dll",
+          "icuuc.dll",
+          "imm32.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "mpr.dll",
+          "ncrypt.dll",
+          "netapi32.dll",
+          "ntdll.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "powrprof.dll",
+          "secur32.dll",
+          "setupapi.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "uiautomationcore.dll",
+          "user32.dll",
+          "userenv.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "winhttp.dll",
+          "winmm.dll",
+          "ws2_32.dll",
+          "wsock32.dll",
+          "wtsapi32.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 23321088,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 23320748,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 17658880,
+            "readable": true,
+            "virtualAddress": 23326720,
+            "virtualSize": 17658568,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 440832,
+            "readable": true,
+            "virtualAddress": 40988672,
+            "virtualSize": 585792,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 804864,
+            "readable": true,
+            "virtualAddress": 41578496,
+            "virtualSize": 804408,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 42385408,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".qtmimed",
+            "rawDataSize": 46080,
+            "readable": true,
+            "virtualAddress": 42389504,
+            "virtualSize": 45901,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 153088,
+            "readable": true,
+            "virtualAddress": 42438656,
+            "virtualSize": 152808,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 180736,
+            "readable": true,
+            "virtualAddress": 42594304,
+            "virtualSize": 180312,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791741134980-1",
+          "digest": "sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "qbittorrent.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix/drive_c/qBittorrent/qbittorrent.exe",
+          "sizeBytes": 42607104,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix/drive_c/qBittorrent/qbittorrent.exe",
+            "C:\\qBittorrentTests\\original-output.torrent"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791741134980-1"
+        },
+        "requestId": "job-1791741638037-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791741719520
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3898307,
+      "sha256": "cef39565f9f1442fe175b8e060b2a9b71597c545c86c05f8303bde816798a8eb"
+    },
+    "user.reg": {
+      "sizeBytes": 102775,
+      "sha256": "2c6524a463101967000b07c87611fbb2a293f0f1cf99031139858f5f98539881"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "30d7f67ce69fb0bd01fc6dffabe670a896bb870d29f2166b4e9ccfab2d8b0a97"
+    }
+  },
+  "fixedDataPins": {
+    "qBittorrentTests/原始数据.bin": {
+      "sizeBytes": 4096,
+      "sha256": "60cc4e643d1a6b7ccfc5acdc5075725f9d2eb5fa3c81af4bec48b0df63de6f65"
+    },
+    "qBittorrentTests/original-output.torrent": {
+      "sizeBytes": 186,
+      "sha256": "1986e6d743bdc609b331e77984f3f4bdf8931338ca39682b862ccfd5c2d52419"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Roaming/qBittorrent/qBittorrent.ini": {
+      "sizeBytes": 5082,
+      "sha256": "132dd56e30405f45dece30d4a9b63f3fec3d3f40512524c4c342c57f06809e05"
+    },
+    "drive_c/users/forge/AppData/Roaming/qBittorrent/watched_folders.json": {
+      "sizeBytes": 4,
+      "sha256": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
+    },
+    "drive_c/users/forge/AppData/Roaming/qBittorrent/categories.json": {
+      "sizeBytes": 4,
+      "sha256": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
+    },
+    "drive_c/users/forge/AppData/Roaming/qBittorrent/qBittorrent-data.ini": {
+      "sizeBytes": 191,
+      "sha256": "30a7f276c8176efaa5efd43707e874ec9d322ba4588735a74a9a13c81e6fcc43"
+    },
+    "drive_c/users/forge/AppData/Roaming/qBittorrent/rss/feeds.json": {
+      "sizeBytes": 4,
+      "sha256": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
+    },
+    "drive_c/users/forge/AppData/Local/qBittorrent/logs/qbittorrent.log": {
+      "sizeBytes": 4983,
+      "sha256": "410c5215481e1a3eee5b9efd0c33a9bac2281219d2775353c49f94869c50aea1"
+    },
+    "drive_c/users/forge/AppData/Local/qBittorrent/BT_backup/71c212507af9fa7896e77b0c1b699b82a483bcdb.torrent": {
+      "sizeBytes": 186,
+      "sha256": "1986e6d743bdc609b331e77984f3f4bdf8931338ca39682b862ccfd5c2d52419"
+    },
+    "drive_c/users/forge/AppData/Local/qBittorrent/BT_backup/71c212507af9fa7896e77b0c1b699b82a483bcdb.fastresume": {
+      "sizeBytes": 1193,
+      "sha256": "210f346910c046f666b518b880fb1686bf3cb2e2ac96ba9d8deaa49b4bc4c763"
+    },
+    "drive_c/users/forge/AppData/Local/qBittorrent/BT_backup/queue": {
+      "sizeBytes": 41,
+      "sha256": "065910598d72c90fd29633586a95b3d06d2a310ec3ab7e3aaca3d7ccc0042662"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "guiObservedProgressPercent": 100,
+  "guiObservedPiecesHave": 1,
+  "guiObservedRunningCount": 0,
+  "guiObservedStoppedCount": 1,
+  "guiObservedDownloadedAndUploadedBytes": 0,
+  "guiObservedState": "Completed; Stopped(1), Running(0)",
+  "unattendedStartupVerified": false,
+  "networkTransfersVerified": false,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "dba67e797d7b42e4a4df4ea2a52576b5aef745129020ff441158c7eb9b685d41",
+    "coreJobs": 341,
+    "fullStoreRows": 104
+  },
+  "date": "2026-10-12",
+  "version": "5.2.4",
+  "screenshots": {
+    "01-original-start.jpg": {
+      "sizeBytes": 121584,
+      "sha256": "7becae601c558384925d82bb9f489410775d60edf324e7eb9ac8c207843af63b"
+    },
+    "02-original-creator.jpg": {
+      "sizeBytes": 144156,
+      "sha256": "5e771627de4a5c2da269c78914022c7fb232567f295e3bcf9644ba8ed24431a4"
+    },
+    "03-original-created.jpg": {
+      "sizeBytes": 150418,
+      "sha256": "4859cdc505f8e08b17c78f2c7eefd003c49e271e04fe92b3c665d92bf0f359c2"
+    },
+    "04-original-reopen-options.jpg": {
+      "sizeBytes": 125955,
+      "sha256": "09aed3aa5aca6516d35d939be9b9c2561e2a4f3ecd45f0f03165485047a88281"
+    },
+    "05-original-recheck-100.jpg": {
+      "sizeBytes": 176219,
+      "sha256": "0d994a9f0b87d1f07ffa094a1ab1a59058c4a88c410a54e1d864d4af4e27cd7a"
+    }
+  },
+  "guiVersionLabelObserved": "qBittorrent v5.2.4",
+  "outputsWrittenByApplicationGui": true,
+  "verificationHelperWroteOutputs": false,
+  "limitations": [
+    "Only small 4096-byte Chinese-named single-file trackerless torrent GUI creation with ASCII comment, explicit new managed process torrent reopen, stopped local item and actual Force recheck 100% tested; canonical bencode/name/length/piece SHA1 independently match. Synthetic payload/torrent do not count as applications.",
+    "Download/upload/seeding, peers/tracker/DHT/PEX/magnet/private/multifile/large/bad files/remote WebUI/RPC, direct Chinese keyboard input, advanced features, new-machine registration, migration, cross-version upgrades, unattended startup and GUI Store update/rollback buttons unverified. The GUI displayed DHT node counts; this finite local-data test is not evidence of absence of background networking or successful network transfer.",
+    "Source COPYING declares GPL-2.0-or-later for source and GPL-3.0-or-later for binary distributions due to GPL3 assets, with OpenSSL linking exception. Both official installer/source digests match the fixed official download page. Complete bundled Qt/libtorrent/OpenSSL/Boost/translation license closure, installed license comparison, OpenPGP/Authenticode, binary-source correspondence and reproducible build unverified.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Native NSIS /S and final /D=C: followed by one backslash then qBittorrent, 17 UTF8 bytes. Startup nonbinding file-sharing notice manually acknowledged; normal authorized account login, no auth/lock-setting changes.",
+    "Independent market generation/update/rollback/two-service normal restart pending at original freeze; completion recorded separately without changing original evidence bytes."
+  ]
+}

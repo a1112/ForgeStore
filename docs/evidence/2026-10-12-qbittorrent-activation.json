@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 57,
+  "rootVersion": 1,
+  "entries": 46,
+  "coreJobs": 341,
+  "fullStoreRows": 104,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-qbittorrent-20261012.acceptance.json#qbittorrent",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "ef6efe581d80efeb0a77df281d93f93021fbdcc48e4d8f7b341dc864f53c30dd",
+        "size": 41407004,
+        "target": "qbittorrent_5.2.4_x64_setup.exe",
+        "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-5.2.4/qbittorrent_5.2.4_x64_setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "qbittorrent"
+    },
+    "id": "qbittorrent",
+    "license": "GPL-3.0-or-later with OpenSSL linking exception (upstream COPYING declaration)",
+    "name": {
+      "en": "qBittorrent",
+      "zhCN": "qBittorrent 种子工具"
+    },
+    "origin": "https://www.qbittorrent.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "The qBittorrent project",
+    "summary": {
+      "en": "Limited trackerless single-file torrent GUI creation and fresh-process stopped local-data recheck tested; network transfers unverified.",
+      "zhCN": "有限单文件无tracker种子GUI创建、新进程重开和停止状态本地重校验通过；网络传输未验收"
+    },
+    "version": "5.2.4"
+  },
+  "installed": {
+    "appId": "qbittorrent",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "5.2.4"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "79d27e2ea3b30372f3e1dca7b84a7e46cdc77412e5e1cc131278949282c06f07",
+    "coreJobs": 341,
+    "fullStoreRows": 104
+  },
+  "independentMarketGenerationPending": true
+}

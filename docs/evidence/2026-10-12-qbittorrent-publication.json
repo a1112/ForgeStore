@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "dateConvention": "Asia/Shanghai local report date; actual guest UTC timestamps retained",
+  "applicationId": "qbittorrent",
+  "version": "5.2.4",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 44,
+  "signedCatalogue": "catalogue/candidate-v48/tuf",
+  "metadataVersion": 57,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 46,
+  "excludedFixtures": 2,
+  "signedActualTargets": 94,
+  "publicCatalogueFiles": 53,
+  "sourceEvidence": {
+    "reference": "2026-10-12-qbittorrent-source.json",
+    "sha256": "757324d090fef4d7a409ada3946e2ba0f2ace6240446c4a8b61c1b941b43baba"
+  },
+  "originalAcceptance": {
+    "reference": "windows-qbittorrent-20261012.acceptance.json",
+    "sha256": "da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3"
+  },
+  "originalGeneration": "gen-job-1791741134980-1",
+  "marketGeneration": "gen-job-1791741957313-4",
+  "definitionDigest": "sha256:10905a905bc04f0e21d07369316298d074edaf0075e1dbee84b41eca4a39ccaf",
+  "originalSave": {
+    "generationId": "gen-job-1791741134980-1",
+    "inputUnchanged": true,
+    "inputPin": {
+      "sizeBytes": 4096,
+      "sha256": "60cc4e643d1a6b7ccfc5acdc5075725f9d2eb5fa3c81af4bec48b0df63de6f65"
+    },
+    "outputRelativePath": "qBittorrentTests/original-output.torrent",
+    "outputPin": {
+      "sizeBytes": 186,
+      "sha256": "1986e6d743bdc609b331e77984f3f4bdf8931338ca39682b862ccfd5c2d52419"
+    },
+    "payloadBytes": 4096,
+    "pieceLength": 16384,
+    "pieceCount": 1,
+    "allPieceHashesMatchIndependentPayloadSha1": true,
+    "infoHashSha1": "71c212507af9fa7896e77b0c1b699b82a483bcdb",
+    "comment": "ORIGINAL42",
+    "nameUtf8": "原始数据.bin",
+    "createdBy": "qBittorrent v5.2.4",
+    "trackerless": true,
+    "bencodeCanonicalAndFullyParsed": true,
+    "guiAccepted": false,
+    "published": false
+  },
+  "marketSave": {
+    "generationId": "gen-job-1791741957313-4",
+    "inputUnchanged": true,
+    "inputPin": {
+      "sizeBytes": 4096,
+      "sha256": "6aeb339642beced63dc53428752ef6adc3e753a80ad739b904e083bff959af24"
+    },
+    "outputRelativePath": "qBittorrentTests/market-output.torrent",
+    "outputPin": {
+      "sizeBytes": 183,
+      "sha256": "83cb8250af59675bc75b2bfb7f63c1d941461c0282f01079bdad284449d7ac31"
+    },
+    "payloadBytes": 4096,
+    "pieceLength": 16384,
+    "pieceCount": 1,
+    "allPieceHashesMatchIndependentPayloadSha1": true,
+    "infoHashSha1": "735429f4f9532e264e49f64f40b3332a41e878e3",
+    "comment": "MARKET42",
+    "nameUtf8": "市场数据.bin",
+    "createdBy": "qBittorrent v5.2.4",
+    "trackerless": true,
+    "bencodeCanonicalAndFullyParsed": true,
+    "guiAccepted": false,
+    "published": false
+  },
+  "fiveNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "jobId": "203db6e7-c840-4c93-a85b-03944f75d3bb"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "qbittorrent",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "c0b05f72-9a79-4af3-bb82-17f95c4b01fb",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791741134980-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 344,
+    "beforeRollbackStoreRows": 105,
+    "afterRollbackCoreJobs": 344,
+    "afterRollbackStoreRows": 106,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "def32152c276f3a1a32862664611857f76ea20c6411576a9e44e3255c13876b5",
+      "coreJobs": 344,
+      "fullStoreRows": 106
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 345,
+  "fullStoreRows": 106,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationsAndFixedEvidenceDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalByteChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3898307,
+        "sha256": "cef39565f9f1442fe175b8e060b2a9b71597c545c86c05f8303bde816798a8eb"
+      },
+      "after": {
+        "sizeBytes": 3898307,
+        "sha256": "75d002f6b9682e8c3337cecc7abf73aa49195c4033eb24cbb32dda73d68c2896"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 287,
+      "textDiffPreservedPrivately": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 102775,
+        "sha256": "2c6524a463101967000b07c87611fbb2a293f0f1cf99031139858f5f98539881"
+      },
+      "after": {
+        "sizeBytes": 102775,
+        "sha256": "d0ea6520e387f990f5cbd93a43d7f3c9fb0af3b3f33539baa443ea3497ecea52"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 20,
+      "textDiffPreservedPrivately": true
+    },
+    "drive_c/users/forge/AppData/Roaming/qBittorrent/qBittorrent.ini": {
+      "before": {
+        "sizeBytes": 5082,
+        "sha256": "132dd56e30405f45dece30d4a9b63f3fec3d3f40512524c4c342c57f06809e05"
+      },
+      "after": {
+        "sizeBytes": 5082,
+        "sha256": "7b568909b341fd5cd60d5ff9f190ae4b436cb197ef761d870fee81b2cfa6de6d"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 82,
+      "textDiffPreservedPrivately": true
+    },
+    "drive_c/users/forge/AppData/Roaming/qBittorrent/qBittorrent-data.ini": {
+      "before": {
+        "sizeBytes": 191,
+        "sha256": "30a7f276c8176efaa5efd43707e874ec9d322ba4588735a74a9a13c81e6fcc43"
+      },
+      "after": {
+        "sizeBytes": 191,
+        "sha256": "92ffcb724c40a2f8c657cbedb791aa367f603bec180dbf6e5b6e8fcdc476a5a4"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 6,
+      "textDiffPreservedPrivately": true
+    },
+    "drive_c/users/forge/AppData/Local/qBittorrent/logs/qbittorrent.log": {
+      "before": {
+        "sizeBytes": 4983,
+        "sha256": "410c5215481e1a3eee5b9efd0c33a9bac2281219d2775353c49f94869c50aea1"
+      },
+      "after": {
+        "sizeBytes": 7460,
+        "sha256": "51fcb908cc19bdba03d0d8d7b01acdbf315f4eee3da1b084b6973642b324fc24"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 36,
+      "textDiffPreservedPrivately": true
+    },
+    "drive_c/users/forge/AppData/Local/qBittorrent/BT_backup/71c212507af9fa7896e77b0c1b699b82a483bcdb.fastresume": {
+      "before": {
+        "sizeBytes": 1193,
+        "sha256": "210f346910c046f666b518b880fb1686bf3cb2e2ac96ba9d8deaa49b4bc4c763"
+      },
+      "after": {
+        "sizeBytes": 1193,
+        "sha256": "b207f00cf6c5cc936668b914fb6a63d7b4d1cd5524ec36d39fd9952cfd105550"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "binaryByteStreamChanged": true
+    }
+  },
+  "originalRegistryAndConfigBytesPreservedAcrossThirdGui": false,
+  "currentDataAndConfigurationMatchedAcrossRestart": true,
+  "originalHistoricalFrozenFiles": 28,
+  "oldImmutableFilesMatched": 1425,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "Only two small4096-byte Chinese-name single-file trackerless torrent GUI creation, ORIGINAL42/MARKET42 comments, canonical bencode/name/length/pieceSHA1 verification, explicit fresh-process reopen with Start torrent unchecked, native local data folder, actual GUI Force Recheck100%/General1of1 and0B transferred/Stopped1 Running0. Synthetic fixtures and torrents are not applications.",
+    "DHT nodes were visible. Stopped torrents and zero transfer counters do not establish absence of background network activity; downloading/uploading/seeding/peer/tracker/DHT/PEX/magnet/private/multifile/remoteRPC/search/plugins/large/damaged data/advanced features/direct Chinese keyboard input were not accepted.",
+    "Independent market generation, cached same-version Store IPC update, exact original rollback and normal service restart passed. Five formal GUI normal CtrlQ exits0+wineserver stop. GUI Store update/rollback buttons, unattended startup, new-machine registration, migration and cross-version upgrades unverified.",
+    "Fixed upstream COPYING declares source GPL2-or-later and binary GPL3-or-later, both with OpenSSL linking exception. Complete Qt/libtorrent/OpenSSL/Boost/translations bundle-license closure, installed license comparison, OpenPGP/Authenticode, binary/source correspondence and reproducible build unverified.",
+    "Third original GUI changed two registry, two ini, one log and one fastresume file. Before/after actual raw bytes and text or binary differences preserved privately; causes unestablished. Original receipts are frozen and current new pins stable across restart; no full application filesystem traversal."
+  ],
+  "remotePushPendingAtPublicationFreeze": true,
+  "githubUserValidationRestoredInPriorRound": true,
+  "priorRemoteVerifiedCommit": "039d38a5b555e66da80bddefbc27472ded123c58",
+  "newDeviceCodeIssued": false,
+  "networkTransfersAccepted": false,
+  "completeBitTorrentClientAccepted": false,
+  "unattendedStartupAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "guiVersionLabelObserved": "qBittorrent v5.2.4"
+}
