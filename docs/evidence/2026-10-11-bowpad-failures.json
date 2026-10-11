@@ -1,0 +1,33 @@
+{
+  "failures": [
+    {
+      "stage": "candidate review",
+      "result": "Poedit binary contains Pro features according to official page; OSS MIT declaration insufficient to classify downloaded binary. No Poedit install or candidate count.",
+      "officialUrl": "https://poedit.com/download/"
+    },
+    {
+      "stage": "BowPad metadata",
+      "result": "Unauthenticated GitHub API 403 rate limit. Fixed official release/artifact and source URLs used; no upstream digest claim."
+    },
+    {
+      "stage": "default GUI",
+      "result": "Ribbon missing, replace/save shortcuts unresponsive. Normal process exit is not GUI acceptance."
+    },
+    {
+      "stage": "requested debug gate",
+      "result": "Assertion expected WINEDEBUG=-all,+uiribbon failed. Effective fixed binding remained -all; no trace claim. Stopped, read-only confirmed actual environment, normal close before isolated diagnostic."
+    },
+    {
+      "stage": "isolated trace gate",
+      "result": "Assertion requiring Initialize stub log failed with empty lines. Stopped; normal GUI close, terminal log later contained only 3 lifecycle events and no trace lines. No actual HRESULT/function diagnosis claim."
+    },
+    {
+      "stage": "auxiliary host reads",
+      "result": "Missing historical helper filenames and Windows rg wildcard read failures retained in tool history; no dependent guest change based on those failed reads."
+    }
+  ],
+  "allFailedStateChecksStoppedDependentMutation": true,
+  "priorEvidenceRewritten": false,
+  "published": false,
+  "countsAsCompleted": false
+}

@@ -576,6 +576,27 @@
       "published": false,
       "countsAsCompleted": false,
       "blocker": "Official fixed MSI digest matched, but two bounded read-only inspections reject its final DIFAT link 0xffffffff; MS-CFB section 2.5 requires 0xfffffffe. Existing WinDirStat control passes the same pinned inspector. No guest package staging, app registration or installation job; artifact and validation remain unchanged. Official portable ZIP is not yet reviewed or integrated."
+    },
+    {
+      "id": "bowpad",
+      "name": "BowPad",
+      "version": "2.9.6",
+      "stage": "installed-gui-ribbon-and-save-workflow-blocked",
+      "sourceUrl": "https://github.com/stefankueng/BowPad/releases/download/2.9.6/BowPad64-2.9.6.msi",
+      "sha256": "1cce569a0eda6552b7b8f49251be2ceecc2ed3ae44fd5a0397757976f6ec46c3",
+      "sizeBytes": 3637248,
+      "license": "GPL-3.0-or-later",
+      "installationJobId": "job-1791729824065-1",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1791729824065-1",
+      "installed": true,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "artifactEvidence": "docs/evidence/2026-10-11-bowpad-source.json",
+      "guiEvidence": "docs/evidence/2026-10-11-bowpad-gui-diagnostic.json",
+      "evidence": "docs/windows-rolling-20261011-bowpad-pending.md",
+      "blocker": "Ribbon missing; Ctrl+H and Save As commands unresponsive, no output or fresh reopen. Fixed Wine11.14 Ribbon E_NOTIMPL source supports a hypothesis, but no actual trace/HRESULT captured. Two normal managed GUI exits and one private-context diagnostic are not acceptance; no formal repair or market publication."
     }
   ],
   "excludedInternalFixtures": [
@@ -584,17 +605,17 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next official sourced/licensed/fixed candidate;40/1000 Windows accepted,12 unresolved. nomacs3.22.3 limited RGB PNG render/clockwise-rotate/GUI PNG-save/fresh-reopen and local lifecycle accepted,candidate-v43/root1/role52,313 full Core tasks/98 full Store SQLite rows. Strict guest helper rolling-current-state-nomacs-20261011.py. Preserve frozen bytes and trust history. Welcome/version prompts limit unattended claims; third GUI registry variation separately pinned. Push awaits restored GitHub authentication; do not reissue device codes each round.",
+  "next": "40/1000 accepted;13 unresolved including installed BowPad2.9.6 Ribbon/save workflow block. Current candidate-v43/root1/role52 with316 complete Core tasks/98 complete Store SQLite rows. Preserve all frozen evidence and trust. Use strict guest rolling-current-state-bowpad-20261011.py and private after-diagnostic checkpoint. Continue a bounded evidence-based Ribbon investigation or select another official fixed/licensed candidate; no acceptance based on normal exits. Push still awaits existing GitHub authentication recovery; no repeated device codes.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 40,
-    "explicitlyBlockedCandidates": 12,
+    "explicitlyBlockedCandidates": 13,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 12
+    "pendingCandidates": 13
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v43/tuf",
@@ -614,8 +635,8 @@
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-nomacs.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-nomacs-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-bowpad-pending.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-bowpad-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

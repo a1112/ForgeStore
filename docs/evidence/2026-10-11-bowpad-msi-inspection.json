@@ -1,0 +1,285 @@
+{
+  "exitCode": 0,
+  "stderr": "",
+  "tables": [
+    {
+      "columns": [
+        "Property",
+        "Value"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"UpgradeCode\"",
+          "\"{25629509-0CA5-493B-AA97-8A2B5C80EF10}\""
+        ],
+        [
+          "\"WixUIRMOption\"",
+          "\"UseRM\""
+        ],
+        [
+          "\"WIXUI_INSTALLDIR\"",
+          "\"INSTALLDIR\""
+        ],
+        [
+          "\"ARPNOMODIFY\"",
+          "\"1\""
+        ],
+        [
+          "\"ARPPRODUCTICON\"",
+          "\"BowPadIcon\""
+        ],
+        [
+          "\"SPARSEPACKAGEFILE\"",
+          "\"package.msix\""
+        ],
+        [
+          "\"SPARSEPACKAGENAME\"",
+          "\"2BD6356E-3263-4AA6-A5FC-C48280BE5EDD\""
+        ],
+        [
+          "\"WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT\"",
+          "\"Launch BowPad\""
+        ],
+        [
+          "\"WixShellExecTarget\"",
+          "\"[#BowPad.EXE]\""
+        ],
+        [
+          "\"Manufacturer\"",
+          "\"Stefans Tools\""
+        ],
+        [
+          "\"ProductCode\"",
+          "\"{3C4C73EE-D51E-45D3-9821-249E0699D0DB}\""
+        ],
+        [
+          "\"ProductLanguage\"",
+          "\"1033\""
+        ],
+        [
+          "\"ProductName\"",
+          "\"BowPad\""
+        ],
+        [
+          "\"ProductVersion\"",
+          "\"2.9.3128\""
+        ],
+        [
+          "\"DefaultUIFont\"",
+          "\"WixUI_Font_Normal\""
+        ],
+        [
+          "\"WixUI_Mode\"",
+          "\"InstallDir\""
+        ],
+        [
+          "\"ErrorDialog\"",
+          "\"ErrorDlg\""
+        ],
+        [
+          "\"SecureCustomProperties\"",
+          "\"INSTALLDIR;PREVIOUSVERSIONSINSTALLED;SPARSEPACKAGEFILE;SPARSEPACKAGENAME;WIN11FOUND\""
+        ]
+      ],
+      "table": "Property"
+    },
+    {
+      "columns": [
+        "Directory",
+        "Directory_Parent",
+        "DefaultDir"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"INSTALLDIR\"",
+          "\"ProgramFiles64Folder\"",
+          "\"BowPad\""
+        ],
+        [
+          "\"ProgramMenuDir\"",
+          "\"ProgramMenuFolder\"",
+          "\"BowPad\""
+        ],
+        [
+          "\"ProgramFiles64Folder\"",
+          "\"TARGETDIR\"",
+          "\"PFiles\""
+        ],
+        [
+          "\"ProgramMenuFolder\"",
+          "\"ProgramFiles64Folder\"",
+          "\"Programs\""
+        ],
+        [
+          "\"TARGETDIR\"",
+          "NULL",
+          "\"SourceDir\""
+        ]
+      ],
+      "table": "Directory"
+    },
+    {
+      "columns": [
+        "Component",
+        "ComponentId",
+        "Directory_",
+        "Attributes",
+        "Condition",
+        "KeyPath"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"BowPad.exe\"",
+          "\"{666BFAE6-68D2-4F4E-A579-32CDDDA0BA74}\"",
+          "\"INSTALLDIR\"",
+          "256",
+          "NULL",
+          "\"BowPad.EXE\""
+        ],
+        [
+          "\"BowPadShellMenu\"",
+          "\"{43123CE3-4D2C-4200-BB10-C128EFC6F486}\"",
+          "\"INSTALLDIR\"",
+          "260",
+          "NULL",
+          "\"reg4B18465A3D84650AF762942A95466BA2\""
+        ],
+        [
+          "\"StartMenuShortCut\"",
+          "\"{64827EDD-A357-488F-8687-AC7740FF698A}\"",
+          "\"ProgramMenuDir\"",
+          "260",
+          "NULL",
+          "\"regA09ACB8C7CAB691F6D1DA4E1194BFECE\""
+        ]
+      ],
+      "table": "Component"
+    },
+    {
+      "columns": [
+        "File",
+        "Component_",
+        "FileName",
+        "FileSize",
+        "Version",
+        "Language",
+        "Attributes",
+        "Sequence"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"BowPad.EXE\"",
+          "\"BowPad.exe\"",
+          "\"BowPad.exe\"",
+          "5683360",
+          "\"2.9.6.3128\"",
+          "\"1033\"",
+          "512",
+          "1"
+        ],
+        [
+          "\"package.msix\"",
+          "\"BowPad.exe\"",
+          "\"ccicczpv.msi|package.msix\"",
+          "10113",
+          "NULL",
+          "NULL",
+          "512",
+          "2"
+        ],
+        [
+          "\"shelldll\"",
+          "\"BowPad.exe\"",
+          "\"mard_o4k.dll|ExplorerCommandVerb.dll\"",
+          "219808",
+          "NULL",
+          "NULL",
+          "512",
+          "3"
+        ]
+      ],
+      "table": "File"
+    },
+    {
+      "columns": [
+        "DiskId",
+        "LastSequence",
+        "DiskPrompt",
+        "Cabinet",
+        "VolumeLabel",
+        "Source"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "1",
+          "3",
+          "NULL",
+          "\"#BowPad.cab\"",
+          "NULL",
+          "NULL"
+        ]
+      ],
+      "table": "Media"
+    },
+    {
+      "columns": [
+        "Action",
+        "Type",
+        "Source",
+        "Target",
+        "ExtendedType"
+      ],
+      "limit": 5000,
+      "rows": [
+        [
+          "\"LaunchApplication\"",
+          "1",
+          "\"WixCA\"",
+          "\"WixShellExec\"",
+          "NULL"
+        ],
+        [
+          "\"WixUIValidatePath\"",
+          "65",
+          "\"WixUIWixca\"",
+          "\"ValidatePath\"",
+          "NULL"
+        ],
+        [
+          "\"WixUIPrintEula\"",
+          "65",
+          "\"WixUIWixca\"",
+          "\"PrintEula\"",
+          "NULL"
+        ],
+        [
+          "\"DefaultTargetDir\"",
+          "51",
+          "\"INSTALLDIR\"",
+          "\"[ProgramFiles64Folder]BowPad\"",
+          "NULL"
+        ],
+        [
+          "\"RegisterSparsePackage\"",
+          "1",
+          "\"CustomActions.dll\"",
+          "\"RegisterSparsePackage\"",
+          "NULL"
+        ],
+        [
+          "\"UnregisterSparsePackage\"",
+          "1",
+          "\"CustomActions.dll\"",
+          "\"UnregisterSparsePackage\"",
+          "NULL"
+        ]
+      ],
+      "table": "CustomAction"
+    }
+  ]
+}

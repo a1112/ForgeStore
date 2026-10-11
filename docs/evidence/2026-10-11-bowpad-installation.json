@@ -1,0 +1,138 @@
+{
+  "installed": true,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "generation": {
+    "bottleId": "gen-job-1791729824065-1",
+    "createdAtMilliseconds": 1791729824072,
+    "definition": {
+      "bottleId": "gui-bowpad",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "bowpad",
+      "installer": {
+        "fileName": "BowPad64-2.9.6.msi",
+        "msi": {
+          "architecture": "x86_64",
+          "handler": {
+            "action": "install",
+            "kind": "msiexec",
+            "properties": {},
+            "reboot": "suppress",
+            "ui": "none"
+          },
+          "maximumRuntimeMilliseconds": 300000,
+          "sizeBytes": 3637248
+        },
+        "sha256": "1cce569a0eda6552b7b8f49251be2ceecc2ed3ae44fd5a0397757976f6ec46c3"
+      },
+      "launchers": [
+        {
+          "executable": "Program Files/BowPad/BowPad.exe",
+          "id": "main",
+          "name": "BowPad"
+        }
+      ],
+      "name": "BowPad",
+      "publisher": "Stefans Tools",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-msi"
+      ],
+      "version": "2.9.6"
+    },
+    "definitionDigest": "sha256:1ac912e3881fc8e8c622ec9002a9266703a4a6a36068288a4f5a19245e30f11b",
+    "id": "gen-job-1791729824065-1",
+    "launcherDigests": {
+      "main": "sha256:25b9f668887403c846f1013300993cef63fd5f1a8e14ef2040b02175dad7f8a2"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791729839623
+  },
+  "installedFiles": {
+    "package.msix": {
+      "sizeBytes": 10113,
+      "sha256": "b85f121c786cf638f8a07a45b6357d8b6fbaf831e948d93cf0006cebaea213d0"
+    },
+    "Website.url": {
+      "sizeBytes": 54,
+      "sha256": "86dee5352a4a5a25aae76d7fc77fb01064d588f6cae1f59ff7179b4202f8c2e8"
+    },
+    "BowPad.exe": {
+      "sizeBytes": 5683360,
+      "sha256": "25b9f668887403c846f1013300993cef63fd5f1a8e14ef2040b02175dad7f8a2"
+    },
+    "ExplorerCommandVerb.dll": {
+      "sizeBytes": 219808,
+      "sha256": "616ac0249ca4e485e0fdec6da40ca94b7d06b9eb55c5fc854fabd3a881efa5b0"
+    }
+  },
+  "installJob": {
+    "id": "job-1791729824065-1",
+    "kind": "install",
+    "generationId": "gen-job-1791729824065-1",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 140571,
+        "requestId": "c165c365-9bad-144f-9e1f-08fe71a42432",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 4305,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791729824065-1/prefix",
+        "requestId": "c165c365-9bad-144f-9e1f-08fe71a42432",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 4348,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "c165c365-9bad-144f-9e1f-08fe71a42432",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "runtime": null
+  }
+}

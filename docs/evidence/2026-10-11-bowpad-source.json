@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "bowpad",
+  "version": "2.9.6",
+  "officialRelease": "https://github.com/stefankueng/BowPad/releases/tag/2.9.6",
+  "officialHomepage": "https://tools.stefankueng.com/BowPad.html",
+  "artifact": {
+    "file": "BowPad64-2.9.6.msi",
+    "url": "https://github.com/stefankueng/BowPad/releases/download/2.9.6/BowPad64-2.9.6.msi",
+    "sizeBytes": 3637248,
+    "sha256": "1cce569a0eda6552b7b8f49251be2ceecc2ed3ae44fd5a0397757976f6ec46c3"
+  },
+  "upstreamArtifactDigestVerified": false,
+  "apiReviewFailure": "HTTP 403 rate limit exceeded; no API asset digest acquired",
+  "sourceArchive": {
+    "file": "source.tar.gz",
+    "url": "https://codeload.github.com/stefankueng/BowPad/tar.gz/refs/tags/2.9.6",
+    "sizeBytes": 22442533,
+    "sha256": "ef442b1c54da34c99266e3aec4353df29146974866b75d8695e34099430a5420"
+  },
+  "associatedCommit": "bfcb30c6fc44eaaa331bb8db37df5c00e2ae716e",
+  "fixedCommitMembers": [
+    {
+      "sourceMember": "LICENSE",
+      "commit": "bfcb30c6fc44eaaa331bb8db37df5c00e2ae716e",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "matchesPinnedTagArchiveBytes": true
+    },
+    {
+      "sourceMember": "README.md",
+      "commit": "bfcb30c6fc44eaaa331bb8db37df5c00e2ae716e",
+      "sha256": "dc4c6d58d9dcde80737572ba6a7b383e1fc4b2b876a632177ff41ed88a424db8",
+      "matchesPinnedTagArchiveBytes": true
+    },
+    {
+      "sourceMember": "src/BowPad.cpp",
+      "commit": "bfcb30c6fc44eaaa331bb8db37df5c00e2ae716e",
+      "sha256": "7e2be9663fbc93cd0910b35701892bb4ab2c160cf6192e10f4418ce2a38d4ad0",
+      "matchesPinnedTagArchiveBytes": true
+    },
+    {
+      "sourceMember": "src/MainWindow.cpp",
+      "commit": "bfcb30c6fc44eaaa331bb8db37df5c00e2ae716e",
+      "sha256": "73262b388d9f0db111e1ac61bb96c7491a081ca57a5e69f655c448775a6140b4",
+      "matchesPinnedTagArchiveBytes": true
+    }
+  ],
+  "sourceFiles": {
+    "LICENSE": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/LICENSE",
+      "sizeBytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "README.md": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/README.md",
+      "sizeBytes": 1439,
+      "sha256": "dc4c6d58d9dcde80737572ba6a7b383e1fc4b2b876a632177ff41ed88a424db8"
+    },
+    "src/BowPad.cpp": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/src/BowPad.cpp",
+      "sizeBytes": 29646,
+      "sha256": "7e2be9663fbc93cd0910b35701892bb4ab2c160cf6192e10f4418ce2a38d4ad0"
+    },
+    "src/MainWindow.cpp": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/src/MainWindow.cpp",
+      "sizeBytes": 203615,
+      "sha256": "73262b388d9f0db111e1ac61bb96c7491a081ca57a5e69f655c448775a6140b4"
+    },
+    "ext/scintilla/License.txt": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/ext/scintilla/License.txt",
+      "sizeBytes": 864,
+      "sha256": "ac32743bd464c837e481beae20df65a9207f84d3ff1912f6003000343e9c753d"
+    },
+    "ext/editorconfig-core/LICENSE": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/ext/editorconfig-core/LICENSE",
+      "sizeBytes": 1565,
+      "sha256": "3d27373103097b1a086bba6f3f2c9060d39c6e8ac4a7aa0882ca96e885a59957"
+    },
+    "wine-11.14-uiribbon.c": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/wine-11.14-uiribbon.c",
+      "sizeBytes": 5011,
+      "sha256": "a17ba70ba61f70cf092eeb115277af305ad9c9e69af0d6d9719aab96a8736b49"
+    },
+    "wine-uiribbon-Makefile.in": {
+      "path": "docs/evidence/2026-10-11-bowpad/source/wine-uiribbon-Makefile.in",
+      "sizeBytes": 107,
+      "sha256": "ed3a07aaeaba4969295be315d9e0f899019ccc087dc288a4649078aa7a60fc40"
+    }
+  },
+  "mainProgramLicense": "GPL-3.0-or-later",
+  "licenseBasis": "Fixed src/BowPad.cpp header explicitly says GPL version 3 or any later version; root LICENSE includes GPL3 text.",
+  "completeBundledLicenseClosureVerified": false,
+  "installedLicenseComparisonVerified": false,
+  "sourceBinaryCorrespondenceVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "msiProductVersion": "2.9.3128",
+  "msiFileVersion": "2.9.6.3128"
+}

@@ -1,0 +1,190 @@
+{
+  "installed": true,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "generationId": "gen-job-1791729824065-1",
+  "guiObservations": [
+    "Text area opens supplied small Chinese-name UTF-8 BOM/CRLF input; this alone is not functional acceptance.",
+    "Ribbon area missing in default and diagnostic windows.",
+    "Ctrl+H and Ctrl+Shift+S did not open expected dialogs; longer held Ctrl+Shift+S also had no observed response.",
+    "No edited/saved output was obtained.",
+    "Default and request-diagnostic managed processes closed with caption X, exit 0 and wineserver stop.",
+    "Isolated prepared diagnostic also closed normally; not a managed GUI acceptance."
+  ],
+  "inputPin": {
+    "sizeBytes": 63,
+    "sha256": "d29965846af57de0c0ff0450367566d615bd6b79d3a4f5df0c4ae1e5ac03a502"
+  },
+  "inputUnchanged": true,
+  "expectedOutputAbsent": true,
+  "managedGuiJobs": [
+    {
+      "id": "job-1791729893959-2",
+      "kind": "launch",
+      "generationId": "gen-job-1791729824065-1",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 141006,
+          "requestId": "job-1791729893959-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 128538,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791729824065-1/prefix",
+          "requestId": "job-1791729893959-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 128582,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791729893959-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "runtime": null
+    },
+    {
+      "id": "job-1791730049410-3",
+      "kind": "launch",
+      "generationId": "gen-job-1791729824065-1",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 141398,
+          "requestId": "job-1791730049410-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 144386,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791729824065-1/prefix",
+          "requestId": "job-1791730049410-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 144430,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791730049410-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "runtime": null
+    }
+  ],
+  "requestDiagnostic": {
+    "jobId": "job-1791730049410-3",
+    "status": "running",
+    "requestedWineDebug": "-all,+uiribbon",
+    "effectiveWineDebug": "-all",
+    "requestDidNotEnableTrace": true,
+    "lines": [],
+    "diagnosticOnly": true,
+    "guiAccepted": false,
+    "published": false
+  },
+  "preparedDiagnostic": {
+    "unit": "forge-bowpad-ribbon-diagnostic-20261011",
+    "exitCode": 0,
+    "normalWineServerStop": true,
+    "guiAccepted": false,
+    "published": false,
+    "traceNotObserved": true,
+    "contextAndRequestPrivate": true
+  },
+  "preparedDiagnosticEvents": [
+    {
+      "schemaVersion": "1",
+      "requestId": "ffcf82d3-69d6-4822-9f07-ff1ab43de11c",
+      "sequence": 0,
+      "elapsedMilliseconds": 0,
+      "kind": "started",
+      "processId": 141810
+    },
+    {
+      "schemaVersion": "1",
+      "requestId": "ffcf82d3-69d6-4822-9f07-ff1ab43de11c",
+      "sequence": 1,
+      "elapsedMilliseconds": 51195,
+      "kind": "wine-server-stop-requested",
+      "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791729824065-1/prefix"
+    },
+    {
+      "schemaVersion": "1",
+      "requestId": "ffcf82d3-69d6-4822-9f07-ff1ab43de11c",
+      "sequence": 2,
+      "elapsedMilliseconds": 51237,
+      "kind": "exited",
+      "exit": {
+        "code": 0,
+        "success": true
+      }
+    }
+  ],
+  "screenshots": {
+    "01-default-initial.jpg": {
+      "sizeBytes": 21963,
+      "sha256": "4768ca8c35aa16b7d0b92eb663cef9a775cbb32fa02d9273876a120a67e7728e",
+      "format": "JPEG"
+    },
+    "02-default-loaded-no-ribbon.jpg": {
+      "sizeBytes": 14997,
+      "sha256": "6033e5bd655680cb9a969b3e7c3ce2852d8e8368f4802c76bb51ba42a749f5d3",
+      "format": "JPEG"
+    },
+    "03-save-as-unresponsive.jpg": {
+      "sizeBytes": 15008,
+      "sha256": "fb08ff5f8115aa749397d91b07ad2576bc61d27b898bb4acada7382330296a26",
+      "format": "JPEG"
+    },
+    "04-request-diagnostic-no-ribbon.jpg": {
+      "sizeBytes": 14573,
+      "sha256": "da27263d88d08796d448a9a389f4d67719affc7ed4194f31333498d7bedaf2bc",
+      "format": "JPEG"
+    },
+    "05-isolated-context-no-ribbon.jpg": {
+      "sizeBytes": 14568,
+      "sha256": "782ff13d97d9ac639212370da6262c85bbd66d3e5a2f1dd04977e1e6e7170793",
+      "format": "JPEG"
+    }
+  },
+  "screenshotsAreAcceptanceProof": false,
+  "ribbonHypothesis": {
+    "status": "source-supported hypothesis, actual HRESULT/call trace not captured",
+    "wineSource": "source/wine-11.14-uiribbon.c",
+    "wineInitializeAndLoadUi": "E_NOTIMPL stubs in fixed Wine 11.14 source",
+    "bowpadSource": "source/src/MainWindow.cpp",
+    "bowpadInitialization": "CreateRibbon failure returns before CCommandHandler::Init; HandleCreate ignores Initialize return.",
+    "specificActualFunctionFailureProven": false
+  },
+  "formalDefinitionAndGlobalContextChanged": false,
+  "programRuntimeFontAndDllRepairApplied": false,
+  "unverified": [
+    "edit/save/reopen",
+    "independent market generation",
+    "signed acceptance or publication",
+    "unattended launch",
+    "advanced functions",
+    "complete bundled license closure"
+  ]
+}
