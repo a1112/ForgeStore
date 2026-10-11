@@ -1,0 +1,2326 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791715752381-1",
+    "createdAtMilliseconds": 1791715752386,
+    "definition": {
+      "bottleId": "gui-xmlcopyeditor",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "xmlcopyeditor",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\XMLCopyEditor",
+          "/TASKS=disable_registry"
+        ],
+        "fileName": "xmlcopyeditor-1.3.1.0-x64-install.exe",
+        "sha256": "7ba6900595d0ca68b79b2c14a43538d1190bf717228651701d40fc693660caf4"
+      },
+      "launchers": [
+        {
+          "executable": "XMLCopyEditor/xmlcopyeditor.exe",
+          "id": "main",
+          "name": "XML Copy Editor"
+        }
+      ],
+      "name": "XML Copy Editor",
+      "publisher": "Zane U. Ji",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "1.3.1.0"
+    },
+    "definitionDigest": "sha256:6beeaa801e5c6967c5d826113e803760192997a00b590ff8e6ba96f1dbab61ed",
+    "id": "gen-job-1791715752381-1",
+    "launcherDigests": {
+      "main": "sha256:49ff45218c33dc3131175fca00fb5140cf5635c4a44acddfa44633b9c8d514ad"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791715768055
+  },
+  "definition": {
+    "bottleId": "gui-xmlcopyeditor",
+    "category": "development",
+    "compatibilityRating": "unknown",
+    "id": "xmlcopyeditor",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\XMLCopyEditor",
+        "/TASKS=disable_registry"
+      ],
+      "fileName": "xmlcopyeditor-1.3.1.0-x64-install.exe",
+      "sha256": "7ba6900595d0ca68b79b2c14a43538d1190bf717228651701d40fc693660caf4"
+    },
+    "launchers": [
+      {
+        "executable": "XMLCopyEditor/xmlcopyeditor.exe",
+        "id": "main",
+        "name": "XML Copy Editor"
+      }
+    ],
+    "name": "XML Copy Editor",
+    "publisher": "Zane U. Ji",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "1.3.1.0"
+  },
+  "fixture": {
+    "generationId": "gen-job-1791715752381-1",
+    "input": {
+      "file": "input/中文文档.xml",
+      "sizeBytes": 156,
+      "sha256": "09276dc1aeabb82ff3abd6f9206ae486f8fb74e72caca6c33c5b444664bda84e"
+    },
+    "inputUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<document kind=\"original\">\n  <title>中文内容保留</title>\n  <note>BEFORE</note>\n  <value>42</value>\n</document>\n",
+    "expectedNoteText": "AFTER ORIGINAL42",
+    "expectedValueText": "42",
+    "installedLicenseFile": {
+      "file": "XMLCopyEditor/copying/xmlcopyeditor/copying.txt",
+      "sizeBytes": 744,
+      "sha256": "a9c68e5082e3184f9a8aa39da77f7af0d862593080941bc4d3179a27ff2c064f"
+    }
+  },
+  "installedFiles": {
+    "libbrotlicommon.dll": {
+      "sizeBytes": 143397,
+      "sha256": "156db8f3c997559f0d66648a0323da9e7a89d2f60b04bfefa3021ee40078a84a"
+    },
+    "libxslt-1.dll": {
+      "sizeBytes": 303770,
+      "sha256": "2584048e8203da2ada6e58b09b28a5e215006c705c371bbe1b6fc06f2f54907e"
+    },
+    "translate.txt": {
+      "sizeBytes": 2668,
+      "sha256": "0a7558834d980b4fc704ed5179642c497480b0bf767bf68f5763cde571fbd410"
+    },
+    "libicuuc71.dll": {
+      "sizeBytes": 1788832,
+      "sha256": "f1f4b41e01ece26b651f2c6335170e128d8af3fb769907988c30295c72698307"
+    },
+    "libaspell-15.dll": {
+      "sizeBytes": 706391,
+      "sha256": "fefdbf47bb5e1b670934f21c6bc2a58fd10d914ef34c780671b2ca2a42170998"
+    },
+    "libintl-8.dll": {
+      "sizeBytes": 136724,
+      "sha256": "35ed170c5d53d190ab3683d6dba80dcca9be420ccca65018a65839f70052f7ff"
+    },
+    "xmlcopyeditor.exe": {
+      "sizeBytes": 12984832,
+      "sha256": "49ff45218c33dc3131175fca00fb5140cf5635c4a44acddfa44633b9c8d514ad"
+    },
+    "libxml2-2.dll": {
+      "sizeBytes": 1288128,
+      "sha256": "c391a46c59a997c57e980ce566c3d38ee280285b1b0fb898d3e476745886cf33"
+    },
+    "unins000.exe": {
+      "sizeBytes": 2594657,
+      "sha256": "d6066ae0b285214a4fd4774ffab417bfc16793b5dc0ef64571e7c3d76563f467"
+    },
+    "libcurl-4.dll": {
+      "sizeBytes": 705826,
+      "sha256": "45fceca62af04d0718369ade246a5a9ebdf4845b3d586ff7d9834d443c0e024e"
+    },
+    "libzstd.dll": {
+      "sizeBytes": 830348,
+      "sha256": "5ca17a67fb646f041e6b7d3107267f0dff9272d30bbfce5b7b2d9fc3136f4ce1"
+    },
+    "libidn2-0.dll": {
+      "sizeBytes": 236166,
+      "sha256": "b2d53b7ec4ab23eadd3719d6f6f098e5af3721b731cb51e66067cd3530192743"
+    },
+    "libssh2-1.dll": {
+      "sizeBytes": 270123,
+      "sha256": "94237791a4d41f4ee95ecd8075c9cf15ba0452bd96a1728e8edef7f24a18a948"
+    },
+    "libgcc_s_seh-1.dll": {
+      "sizeBytes": 107699,
+      "sha256": "cef015e5a99d595786e79869ad33b33c2c0c6d696a3e8e8ea7e6c529f39b3e2e"
+    },
+    "libiconv-2.dll": {
+      "sizeBytes": 1114369,
+      "sha256": "1728ee90659f887ae52f977f2c57684c1ec81ac84caddb1186281fbb85e14390"
+    },
+    "Settings.png": {
+      "sizeBytes": 7053,
+      "sha256": "3e5bba38e9eaccbc52121d3c7e1a1d69751436dd2dba87a37963f0f5b7324f48"
+    },
+    "liblzma-5.dll": {
+      "sizeBytes": 151701,
+      "sha256": "6e9ad9435e5c1750f8898862b3b6e7e815c13db0992fc89496683597472fbf3a"
+    },
+    "Preferences01.png": {
+      "sizeBytes": 5835,
+      "sha256": "9ce892ddfd925dd41fc5c3820c2882371daf37e217a7d9201076d27cca483699"
+    },
+    "libpsl-5.dll": {
+      "sizeBytes": 97342,
+      "sha256": "87036580528420543b7c9def236de3cf70f809b3c42f62ee8fad672014349f2e"
+    },
+    "libunistring-2.dll": {
+      "sizeBytes": 1934495,
+      "sha256": "300b43b4a3a2438ed7f323bea63076daa433d787711f1b5661053c140c945025"
+    },
+    "libnghttp2-14.dll": {
+      "sizeBytes": 190040,
+      "sha256": "e27c48bbb2ac13ab9f549a54954487903a0638a64d084989684d5dbd3fe21907"
+    },
+    "libexpat-1.dll": {
+      "sizeBytes": 186186,
+      "sha256": "86ff55f62fd97df794714e5767844bea5fcb083102ee43221d2872426574a4ad"
+    },
+    "libssl-1_1-x64.dll": {
+      "sizeBytes": 572101,
+      "sha256": "5e58885f69e6967bdc66c486653b46f87042f45d7c6c4c4482fa1cb3d1eb6ea1"
+    },
+    "libpcre2-8-0.dll": {
+      "sizeBytes": 389729,
+      "sha256": "6d39c7e72efad2f037df94e6355536d557a1b56126405df7cf52b010e14c9bd6"
+    },
+    "libicudt71.dll": {
+      "sizeBytes": 30432774,
+      "sha256": "f01914ed9dee67d09e24ec39a05e7fb670e6995f582478c98c9b51d4c69a183e"
+    },
+    "libstdc++-6.dll": {
+      "sizeBytes": 2025245,
+      "sha256": "1edc19f88f8e4ff991cf5d92c7980482c448e2fc28ce7c50d375b9a6e1e9e2e0"
+    },
+    "libwinpthread-1.dll": {
+      "sizeBytes": 58109,
+      "sha256": "b51c2c87c633e422498de872a1174da2687fbd796448fb97a7f06a93064a8e46"
+    },
+    "libcrypto-1_1-x64.dll": {
+      "sizeBytes": 2803060,
+      "sha256": "c246b0eac5994f7726689202de782b9f7c88678cf9d19250d481bb437c88fe64"
+    },
+    "Preferences02.png": {
+      "sizeBytes": 10506,
+      "sha256": "9a061743eff004a5414238f0a301c1040502339505001ab8ac566b015ae3cc73"
+    },
+    "libpng16-16.dll": {
+      "sizeBytes": 239942,
+      "sha256": "d12b687cea8708b049ad50600e8cfa2c221891ed6b0a8f4c34cc38dff7bb12fa"
+    },
+    "curl-ca-bundle.crt": {
+      "sizeBytes": 237015,
+      "sha256": "fa6528b925874950a09f2b094d0d28d71258d06bffd46e8312c1d18c9b7e86d0"
+    },
+    "libxerces-c-3-2.dll": {
+      "sizeBytes": 3072409,
+      "sha256": "34067a608dd12d2ad7c3470f6c02425e2081ea873cd2972baceb3a1bc6547605"
+    },
+    "libbrotlidec.dll": {
+      "sizeBytes": 51852,
+      "sha256": "5a46a9e4babacc5c0b9d9389b4495335a294e3ec78200fc60c997e2aeaba53f5"
+    },
+    "zlib1.dll": {
+      "sizeBytes": 119026,
+      "sha256": "a26b41bb482967b170453c93edf8f108052ab00f0c7d1134761f625c085f175e"
+    },
+    "unins000.dat": {
+      "sizeBytes": 70133,
+      "sha256": "4f9bf09e73f52bf3883cf767d7a137844cc2c51e5f9c9ed6f9fe94320832bc2a"
+    },
+    "bin/binSrc.7z": {
+      "sizeBytes": 5096,
+      "sha256": "6c12843829d1222d57629e2159a50c65abc191ca304053a55c9df21bc093a3c1"
+    },
+    "bin/doc2xml.exe": {
+      "sizeBytes": 82432,
+      "sha256": "299fe44321fc4dd577e8e9ef6b20e345695c6ebb0be98d20917801bcb7815c12"
+    },
+    "bin/xml2doc.exe": {
+      "sizeBytes": 81920,
+      "sha256": "737113ab960f8f6f664a7bd91209e2c868899ee4f95e8553a0de7ccc61781c9a"
+    },
+    "rulesets/ruleset.rld": {
+      "sizeBytes": 6777,
+      "sha256": "5d22bae137df0eb7eb1300c397ee9c782b15427d72b5a34b05d09b8963d8c497"
+    },
+    "rulesets/Default_dictionary.xml": {
+      "sizeBytes": 4078340,
+      "sha256": "9a20f4b4a6b3ad3c241419057f5a8a5f9812b4d3b65e65bb37776c2120d871b6"
+    },
+    "rulesets/Diversity.xml": {
+      "sizeBytes": 369,
+      "sha256": "d7b36ddb28eced783f59aaedd907e76e2eadfcc476800e3bd611a9434f26671a"
+    },
+    "rulesets/Postcolonial.xml": {
+      "sizeBytes": 1649,
+      "sha256": "9ea75aed54aecd7f64e36fb3a9b0acb352cda0cec5a0a1060802135ec5a77738"
+    },
+    "rulesets/Repetition.xml": {
+      "sizeBytes": 513,
+      "sha256": "686669a00ac92943d711aa91e54ff023d30929a0e3c5887ef7dd59c1124d161f"
+    },
+    "rulesets/Default_dictionary_and_style.xml": {
+      "sizeBytes": 295,
+      "sha256": "3b1ce5913acec7105c94f6cc6dc507ba9f65291cfeff03db2e8c0d14cbe4702f"
+    },
+    "rulesets/Religion.xml": {
+      "sizeBytes": 1661,
+      "sha256": "141857fd7037d6acf6bc6a90171f384bea6a53d0d90198f77c9baace38192cf2"
+    },
+    "rulesets/American.xml": {
+      "sizeBytes": 7889,
+      "sha256": "1a8ef5c9663642eb589e9d5dbfeaed6f3228ff0d9d3c8a366cdf6cdfaa06bab9"
+    },
+    "rulesets/ruleset.ctm": {
+      "sizeBytes": 2719,
+      "sha256": "0b0d57a1eb004c444d408a627b4d953d03b1fb21e61d40fb9b0098573ca8a42b"
+    },
+    "rulesets/Contractions.xml": {
+      "sizeBytes": 1948,
+      "sha256": "0b2c394c150ff3d9a223c69583a365373758c9f6010d0a71a6776a79ccf0134c"
+    },
+    "rulesets/Default_style.xml": {
+      "sizeBytes": 373,
+      "sha256": "987b52ce35747f084b0bd7efe2486c7ef516420ffbd17442664799fb93e1ad89"
+    },
+    "rulesets/ruleset.xsd": {
+      "sizeBytes": 2501,
+      "sha256": "df7b6f24a115eb8c6e7e6e44163c2f8a055f8e0c129dd95b3c2d97a3764527f1"
+    },
+    "rulesets/Ethnicity.xml": {
+      "sizeBytes": 558,
+      "sha256": "3e0129be127697903ace9da7e79911cbe66106328eb1de56897cb4d2389d4b24"
+    },
+    "rulesets/Disability.xml": {
+      "sizeBytes": 446,
+      "sha256": "222624d4c0d38b6608b1f6d5dcd222bb4691b84639d094571e2cecfdbb2d4a3d"
+    },
+    "rulesets/Ize_and_yse.xml": {
+      "sizeBytes": 766,
+      "sha256": "51ddea5d2419c3ffa3ae62816335241186229cebb29ef889cb1d7335e0d1d2f4"
+    },
+    "rulesets/Query.xml": {
+      "sizeBytes": 522,
+      "sha256": "1e2eaae64c37cd055d54d7424ed5714676c951b7fc96ff9f069db82f17d8c744"
+    },
+    "rulesets/White_space.xml": {
+      "sizeBytes": 329,
+      "sha256": "a5705c09c369c9f3eee790c19aa0a656ac1f38aae55892c4f2f1f20d7dd3f2fd"
+    },
+    "rulesets/Gender.xml": {
+      "sizeBytes": 2504,
+      "sha256": "e4aaa5fb2630a610f98c864fd9c8238e44b5ba891c12b30954afc7c467f867b8"
+    },
+    "rulesets/ruleset.css": {
+      "sizeBytes": 709,
+      "sha256": "d05cd1bf88e4709abc120e8e5bbcc3a7287e8b0bdcd8b6dac605d36bb41d53f5"
+    },
+    "rulesets/Commonwealth.xml": {
+      "sizeBytes": 7730,
+      "sha256": "956861284f5d19f1cdd67ebc7ca0e87cc9aa35ef43d1ac09eb5fbc65a4fb0ed2"
+    },
+    "rulesets/Ise.xml": {
+      "sizeBytes": 455,
+      "sha256": "d193a26e8baee479dd08415f053a9f6f9ab583281f0abc18ed0867b03fe3b88e"
+    },
+    "rulesets/Punctuation.xml": {
+      "sizeBytes": 1221,
+      "sha256": "7fd765375351d1fecac87c408f1a97c3ab36d234395ffe897b4a38f9c10d02cd"
+    },
+    "rulesets/Hyphenation.xml": {
+      "sizeBytes": 10739,
+      "sha256": "335e6936d96d44e845d6b7dfd357a500d86d87c4fb3caac16dca9e8ee112e898"
+    },
+    "rulesets/Ize.xml": {
+      "sizeBytes": 504,
+      "sha256": "1e248da57b1283364f6a24314f2a4b784a020b924ccdbe44497a4e8158a7ceb6"
+    },
+    "copying/COPYING.LIB": {
+      "sizeBytes": 25788,
+      "sha256": "73c012b2c4a27736af6e1ac30d978a7279ccfcb419a2e26b0f2cb1839aaf701c"
+    },
+    "copying/wx.txt": {
+      "sizeBytes": 2550,
+      "sha256": "7e4565b8ba5bda328b6101a5deba3a0e1da8e901d52c5aaa17c95a7e931353e0"
+    },
+    "copying/gpl.txt": {
+      "sizeBytes": 18346,
+      "sha256": "4e63feff285d921587206ab13a4e294f6dfaa8f6c8790520d4bcfe1d7a0d5a39"
+    },
+    "copying/mit.txt": {
+      "sizeBytes": 1091,
+      "sha256": "61ed3c79c3bf3abb2e90b7321fdec1e45ec31c0917b1c3052cfceddbb7a9a983"
+    },
+    "copying/lgpl.txt": {
+      "sizeBytes": 26927,
+      "sha256": "434a30d79097fbfdaff1fcf005888dd72cec1f5000fe447d3ba88748aa3eaf92"
+    },
+    "copying/bsd.txt": {
+      "sizeBytes": 1582,
+      "sha256": "74d9bbc3c9e425090b0edc9224d68c00d97ecf5eeedf53aefe3798dba37cda48"
+    },
+    "copying/boost_license_1_0.txt": {
+      "sizeBytes": 1361,
+      "sha256": "beb8e42e9d6b4284e03304d05a81a0755200a965fc8d0a5e0aea1e84cf805d6e"
+    },
+    "png/stock_calc-accept.png": {
+      "sizeBytes": 812,
+      "sha256": "8e27e21687829ed1ef3284584ccf6ca5a69875af892732dff4152c833069fb4e"
+    },
+    "png/stock_previous.png": {
+      "sizeBytes": 537,
+      "sha256": "0edad505f2888b45db4eb43e7e15a671c6628f11b55772722b7bbc0493d8f4c0"
+    },
+    "png/stock_cut_16.png": {
+      "sizeBytes": 328,
+      "sha256": "369eec9e7b8bb1cf121eeaa1e70661c8fbdaefaba3b41bd57ac85ef5e4cac8e1"
+    },
+    "png/stock_spellcheck.png": {
+      "sizeBytes": 733,
+      "sha256": "9a6984addd864be039db94afa12df4333d1e0e2cc5d62bdd8fe93a559bd3f377"
+    },
+    "png/stock_previous_16.png": {
+      "sizeBytes": 319,
+      "sha256": "b3bb3d4900c166ce578bc43c5a7c04e1b5005b5d435c3919cf819de799b5f8ce"
+    },
+    "png/stock_internet.png": {
+      "sizeBytes": 1457,
+      "sha256": "dec98f11ac552f433c30262cf160e2e9988c67fe0c9cde465b2d1e6ed58477a1"
+    },
+    "png/stock_save_16.png": {
+      "sizeBytes": 539,
+      "sha256": "a2e53b8d48bc438ee109a676a5d0c0397f3ec81c4c521d2bfdfee385d11c8462"
+    },
+    "png/stock_redo_16.png": {
+      "sizeBytes": 497,
+      "sha256": "c7c5262559570039278aaf6cb793d5a2d77ec7d4c147bfe01c2a9776dda371c1"
+    },
+    "png/stock_undo.png": {
+      "sizeBytes": 754,
+      "sha256": "7dc2686cf166ac4531ded2612443ffb934546f2b8aee33b4b375c4a3a4011a02"
+    },
+    "png/stock_paste_16.png": {
+      "sizeBytes": 563,
+      "sha256": "906ce510cbb176bfc5ecbecbaad03b24e90e993e3e7cf05504e2972501e1b1f2"
+    },
+    "png/stock_save.png": {
+      "sizeBytes": 971,
+      "sha256": "0257d3cdcf8d3e729b967c9087a8f99267fe94ea3f42925ff1f1f0cad6677cbf"
+    },
+    "png/stock_new.png": {
+      "sizeBytes": 716,
+      "sha256": "9d91056892abab755a37b44db817ff4a46a142b5d89319737123e4351c5bce14"
+    },
+    "png/stock_filters.png": {
+      "sizeBytes": 959,
+      "sha256": "3ca4ef4e61ea2f1a378ec0f08e19c8859dfc9642f68d8cfaf40f8adfdc361d1b"
+    },
+    "png/stock_open.png": {
+      "sizeBytes": 1076,
+      "sha256": "805d5bb042c5b69e836665cb0f372b8b62d8ddf9d44738797bb234f4d8c9ecd0"
+    },
+    "png/stock_spellcheck_16.png": {
+      "sizeBytes": 244,
+      "sha256": "8132848bb906b9caa8065605121801aa59491d1a434f7c05172db97b4b6e3020"
+    },
+    "png/stock_print_16.png": {
+      "sizeBytes": 545,
+      "sha256": "d1c07ac29d3bd851209ca917632f47d14df8fc559f537ce21a487fcbb22b1b73"
+    },
+    "png/stock_dialog-question-32.png": {
+      "sizeBytes": 2295,
+      "sha256": "2450b90a68b6a431ef835b5276d590db4f5718356c04d42ef7a1e1ddfc3a1b45"
+    },
+    "png/stock_undo_16.png": {
+      "sizeBytes": 513,
+      "sha256": "9d54aef1a496e1bd97392dcad9fb22981f88763edfaaee657951c9210ac3f040"
+    },
+    "png/stock_next.png": {
+      "sizeBytes": 529,
+      "sha256": "22f6dddf52b17423e4976d057ab2be718d8df3552a5dc9fd9a709e0ada27ef68"
+    },
+    "png/stock_close.png": {
+      "sizeBytes": 264,
+      "sha256": "e7bdaf73909c0ea50f89c191d0b28361f89b87d9279339f841f34f0593af00a7"
+    },
+    "png/stock_hyperlink.png": {
+      "sizeBytes": 595,
+      "sha256": "a31d836776cebcf56437e92f4edade1fd4ae9d41d81c757682d5d72517668f9d"
+    },
+    "png/stock_redo.png": {
+      "sizeBytes": 756,
+      "sha256": "6435b233b3c02123826b436b7d815a89c39fed683537b179ae6c1136a5bb0a9f"
+    },
+    "png/stock_search_16.png": {
+      "sizeBytes": 526,
+      "sha256": "5467c495b23bf13a15144dc2bfb80ca44540bd78c05a6651ad04bcb099b2fcc0"
+    },
+    "png/stock_open_16.png": {
+      "sizeBytes": 448,
+      "sha256": "b5df85d55c48bae57adc982fee06c3fc8b599e022280b3d2a6aba4f91c6d8624"
+    },
+    "png/stock_dialog-warning-32.png": {
+      "sizeBytes": 1535,
+      "sha256": "a8b1a621daf0afc703de8827883d5be39828ff479dd4bc05117e9eb0c455d0de"
+    },
+    "png/stock_new_16.png": {
+      "sizeBytes": 349,
+      "sha256": "6ef6fd28422615447e6a0c5ab2e8554ce873b549e692d681c559ccd234dfc499"
+    },
+    "png/stock_dialog-info-32.png": {
+      "sizeBytes": 1985,
+      "sha256": "6d109ef1970a0248b678c786a7a9f63e8b8a461fb2b65575d8562688e6ce9e6b"
+    },
+    "png/stock_copy_16.png": {
+      "sizeBytes": 285,
+      "sha256": "9a1a5bab18f24bf76302afc1b75b8400ba307879fd07158c9dab76bde9ed7e77"
+    },
+    "png/stock_dialog-stop-32.png": {
+      "sizeBytes": 2754,
+      "sha256": "b06dcfbd8c1658a0b2ef4f36999dbb30b6d847e8a6147837af0351e5210369c4"
+    },
+    "png/stock_help_16.png": {
+      "sizeBytes": 937,
+      "sha256": "cca87ee3e41ab709025ce760e339ac5d6e09d5ce89cad0cdefbe3aef516bd908"
+    },
+    "png/stock_calc-accept-green.png": {
+      "sizeBytes": 2454,
+      "sha256": "d9e5219ea39bc652921616a2c801c92e1ee1b3555e6a300dee0a69b0269632ec"
+    },
+    "png/stock_internet_16.png": {
+      "sizeBytes": 844,
+      "sha256": "86abac50e0e99e0d276658a04e564098e2eb31a25556b5f35b43d6cdc8595deb"
+    },
+    "png/stock_next_16.png": {
+      "sizeBytes": 310,
+      "sha256": "6904d58521c98460acbac65e4e5a1178155f5260a670d88ed204919a3308b698"
+    },
+    "png/stock_print.png": {
+      "sizeBytes": 1015,
+      "sha256": "a04d48f20efbafe9683009e90be27ab4aac9450f7bbf5257b49fc8b998ad3e88"
+    },
+    "png/stock_print_preview_16.png": {
+      "sizeBytes": 683,
+      "sha256": "fa1e765aa17752fbaf44e5f4b6701e299b88096711a78f8902ccef9e39b87d2f"
+    },
+    "rng/xmlschema.rng": {
+      "sizeBytes": 55732,
+      "sha256": "0b51eed67662a0659b1002398988f8b221e765c900dee03796af25cca4782b89"
+    },
+    "rng/docbook.rnc": {
+      "sizeBytes": 299673,
+      "sha256": "fad34e18e1d9d690655a812cc214bb5ea4c893896d35477a3672b4b7cd462ea4"
+    },
+    "rng/tei_all.rng": {
+      "sizeBytes": 911843,
+      "sha256": "171fbe7bbdf9f4b25ccacc18ccb0ce13a56ccc09a9306826e12e73737b69e0c4"
+    },
+    "rng/tei_minimal.rnc": {
+      "sizeBytes": 128365,
+      "sha256": "a4f7761dcd039909c19deaa7b20c484a99ec1f464a20cb83f70641a1440ccc22"
+    },
+    "rng/relaxng.rng": {
+      "sizeBytes": 8463,
+      "sha256": "2f7d0aff0a6c9ba2ed1e642f89ca6a028904bf1362a59aab934cd0fd4c378c0b"
+    },
+    "rng/tei_minimal.rng": {
+      "sizeBytes": 251069,
+      "sha256": "74a7435f0363365d3a9f7c3a8173fe00c92c722b4f90f932200d6223d6ae9ba8"
+    },
+    "rng/docbook.rng": {
+      "sizeBytes": 519141,
+      "sha256": "6c699aedcf992931a9b0cdd7c942fb70b812c954118c0eef578952a8425cfe6b"
+    },
+    "rng/docbookxi.rng": {
+      "sizeBytes": 522955,
+      "sha256": "5d0ae178608e0a48a03cca0b385f142831cd6888ba47c4e97cc46d0c07d4a02d"
+    },
+    "rng/xhtml-strict.rng": {
+      "sizeBytes": 1260,
+      "sha256": "3957940784174d46705761fb0f5b50ab082bda0315bf223efc189cfd5e3f13b5"
+    },
+    "rng/xhtml.rng": {
+      "sizeBytes": 1408,
+      "sha256": "8f54a3563211e6585a42217ab935664a68d31dedfd4c8cf1957238dac110196f"
+    },
+    "rng/tei_all.rnc": {
+      "sizeBytes": 542144,
+      "sha256": "7d320d27a8f68b150fcd76241621e8c1348d609fa9ac2795955f10172dcdbe0f"
+    },
+    "rng/docbookxi.rnc": {
+      "sizeBytes": 299910,
+      "sha256": "7a56278c031e7c26ab0661cdd5e867b1873d6760e92afb03b70e9bd8e583c064"
+    },
+    "rng/xslt.rng": {
+      "sizeBytes": 27586,
+      "sha256": "da44949f4c50794302215b455d482844539a9ffa638501e08861e1b301ddc013"
+    },
+    "catalog/catalog": {
+      "sizeBytes": 2075,
+      "sha256": "6e3c6b8f85ba329f22c619c9f12498777c3ec6e501f9a16fa592b483287a6ea5"
+    },
+    "templates/XML_Schema.xsd": {
+      "sizeBytes": 366,
+      "sha256": "eb6fc7a8bca4ca18eb901a9c05743ebeeca7a64daa08a996bfd0e35366f7fba1"
+    },
+    "templates/NewsML_1.2.xml": {
+      "sizeBytes": 754,
+      "sha256": "efb8caf2710546968bca5d61e40f53f46f1f62c41ec5326264701a6a13ca5c4d"
+    },
+    "templates/OpenLaszlo.lzx": {
+      "sizeBytes": 164,
+      "sha256": "bdf807ca6e9d684c798a0f8ce3c419c96f64a48371c6225ab205c238ef6881f5"
+    },
+    "templates/XHTML_1.0_Strict_document.html": {
+      "sizeBytes": 341,
+      "sha256": "6e69cdeac79611836547507e0b054904e56639511c33d6acd8fe061c709ef613"
+    },
+    "templates/DITA_Concept.xml": {
+      "sizeBytes": 161,
+      "sha256": "4d2a407de6ced24bf8974bfb420307fb32616412077ebdf0d7046eb6b2794b9b"
+    },
+    "templates/Moodle_glossary.xml": {
+      "sizeBytes": 1642,
+      "sha256": "11040a273b2b089a5eddcea61bd75a54096c563cda8be0987d9aa6ded9f02de2"
+    },
+    "templates/RELAX_NG_grammar.rng": {
+      "sizeBytes": 287,
+      "sha256": "65a9e8d5e8820b3f531e97d05bc4c563cb085a36933ca465061d09d0350330a0"
+    },
+    "templates/Custom_rule_set.xml": {
+      "sizeBytes": 301,
+      "sha256": "e1d5329647e419adbdfa8b99d0af5adddd243e65935260887bc81815cf475798"
+    },
+    "templates/DocBook_4.4_article.xml": {
+      "sizeBytes": 273,
+      "sha256": "d8c6286d65a2b6788b7c07cc140c1a8f43176cef1a9759cd138fbd57a839e25b"
+    },
+    "templates/XML_Topic_Map_1.0.xtm": {
+      "sizeBytes": 554,
+      "sha256": "4c433fdd8958a3a1cf96f7cd7efdc4aa65cc6d78688280de62170eccf8d3d37f"
+    },
+    "templates/XLIFF_document.xlf": {
+      "sizeBytes": 448,
+      "sha256": "cb70b8df9bdbb3f640756109a901e742922d71cffdaec8308011e271b777bb8f"
+    },
+    "templates/DocBook_5.0_book.xml": {
+      "sizeBytes": 840,
+      "sha256": "1bbffc7424fbe73a6017f2030381b07eb6fb14dce967052a2d07025b263b3571"
+    },
+    "templates/TEI_document.xml": {
+      "sizeBytes": 589,
+      "sha256": "b27f10acf84d6e6558103d4286f004b1c2cf7979c5c4f9063d68cc788c7b13b5"
+    },
+    "templates/DITA_Map.xml": {
+      "sizeBytes": 115,
+      "sha256": "60e2dc876243381113db509bfed1fb5034d3ec92803e660224b76fe3d5d85cac"
+    },
+    "templates/DocBook_4.4_book.xml": {
+      "sizeBytes": 334,
+      "sha256": "102f7dd97267949b18a23a56ce555252eca7b8d174ed792eb314063580ea572e"
+    },
+    "templates/XSL_stylesheet.xsl": {
+      "sizeBytes": 187,
+      "sha256": "fdb3626ed6c07e71f17bc48106ea5f42911d78020f559a09404167eefcc86145"
+    },
+    "templates/DITA_Task.xml": {
+      "sizeBytes": 146,
+      "sha256": "7be96725c08a0a99a80349f7a9b6481165098dd3baeaf1fe5d635e2907272deb"
+    },
+    "templates/DITA_Topic.xml": {
+      "sizeBytes": 151,
+      "sha256": "ef2fd629ca04e3865e2d1c8c394f24b806d52f9abfbc009f96239a9e0b061f72"
+    },
+    "templates/WordprocessingML_document.xml": {
+      "sizeBytes": 847,
+      "sha256": "2fdb4de403168f8d17345067dbd79ac99adc031713fec9fd084846724018ed2f"
+    },
+    "templates/Moodle_quiz.xml": {
+      "sizeBytes": 1357,
+      "sha256": "f70d2aa17f8e74be9c2ce0860c709da12d4f85812d1abe83246a95d8deedc614"
+    },
+    "templates/OpenLearn_document.xml": {
+      "sizeBytes": 4549,
+      "sha256": "55eb7e7d186b690a01b4ff13d029fe5df0dcaaebbf97834721c839049b0646a5"
+    },
+    "templates/DocBook_5.0_article.xml": {
+      "sizeBytes": 327,
+      "sha256": "27539643123ea17a64092c739471576d65e5558b51be6fead5cb013d7e374b62"
+    },
+    "templates/RSS_2.0.rss": {
+      "sizeBytes": 121,
+      "sha256": "81b557bd63233d945c950fe20d71e9101bce9b71b3b7f428c065ea77cce3b34b"
+    },
+    "templates/XML_Topic_Map_2.0.xtm": {
+      "sizeBytes": 527,
+      "sha256": "9b14f5725f9f9be032916aa3b4e5893af3600070437cffc99bbe03882c59fcf6"
+    },
+    "templates/DTD.dtd": {
+      "sizeBytes": 56,
+      "sha256": "0039a41c9db33856a6c40b460e68d946c5189d1de92753424fb95040864d5575"
+    },
+    "dtd/OUGenericFull.dtd": {
+      "sizeBytes": 11519,
+      "sha256": "6b2f7afcff2a103a17e54622ddf9f32df6802c15bd3e81e51bbde20b4fc9bbd9"
+    },
+    "dtd/xhtml-symbol.ent": {
+      "sizeBytes": 14167,
+      "sha256": "61e9acf1a2dc0231c1b0515acf642ba34b59a38d05c35ec98e05956278c8d900"
+    },
+    "dtd/moodle_glossary.dtd": {
+      "sizeBytes": 1196,
+      "sha256": "c25cc676aa0b7b5e47dd4b4d47ae1df2abab1d3c0d17b812b71ba46fabcbd38f"
+    },
+    "dtd/xtm1.dtd": {
+      "sizeBytes": 6239,
+      "sha256": "b8e7938bc4063874e54598312fc76961d65b3a59fb1de618cc3d348e04a1d9c1"
+    },
+    "dtd/xhtml-special.ent": {
+      "sizeBytes": 4293,
+      "sha256": "59967e3cd64a3edcb0c108e3be2da8955c9de268cd4b89be7498855c0fb661ea"
+    },
+    "dtd/xtm2.dtd": {
+      "sizeBytes": 4035,
+      "sha256": "911ce313c13de15bee69e8223629bf265c5e07793cbc22ae3a91745359908d20"
+    },
+    "dtd/xhtml-lat1.ent": {
+      "sizeBytes": 12055,
+      "sha256": "301098a95d26586efcf3bb698ea212e132394fa704b131455871391aaa65918d"
+    },
+    "dtd/NewsML_1.2.dtd": {
+      "sizeBytes": 80667,
+      "sha256": "ca5d308e18662a6940e3a6d71c88895d6142c7f4386c1e529fb329c5b8f7fbd4"
+    },
+    "dtd/moodle_xml.dtd": {
+      "sizeBytes": 1160,
+      "sha256": "bded88bf7de3cb4d60e602960826b6269f260566018a56e09f17eee1db7e856d"
+    },
+    "dtd/lzx.dtd": {
+      "sizeBytes": 679513,
+      "sha256": "846086ca52702ac03b467b6835fe7b09bd743539498e19331dc28204c15c20dc"
+    },
+    "dtd/xhtml1-strict.dtd": {
+      "sizeBytes": 26450,
+      "sha256": "1eda1e5435db394e97ef584dbfedbd50419519a48ccebbb052ad1661050b287b"
+    },
+    "dtd/rss2.dtd": {
+      "sizeBytes": 2864,
+      "sha256": "c386c74ae2fda6f6c82814eb46ee455288fe97fe2ae64bea25667e617298af02"
+    },
+    "dtd/docbook.dtd": {
+      "sizeBytes": 197557,
+      "sha256": "3247fabca466f1fdeeb7b6b470386f543ed5779dddc6632101a34cd2d9ca5d9f"
+    },
+    "dtd/xhtml1-frameset.dtd": {
+      "sizeBytes": 34184,
+      "sha256": "09f3fb6e4d498d8a8ce3f7a48c4e077f40ce576485a8847ae522c984c83fe9bf"
+    },
+    "dtd/xslt10.dtd": {
+      "sizeBytes": 9071,
+      "sha256": "cd2d361c587c70e9ece98930f750c12ce7c0d7fdc129526a2b1f1bcb699451bb"
+    },
+    "dtd/xliff.dtd": {
+      "sizeBytes": 13076,
+      "sha256": "6345bb6a004dcd56c7972a430b5a0e88501158175e678e8e98e7669e2a75dff1"
+    },
+    "dtd/xhtml1-transitional.dtd": {
+      "sizeBytes": 33312,
+      "sha256": "c8b92b2fe5bdf77000d08b1d801a33aac5a33d0812469a68c9d89da087983211"
+    },
+    "help/xmlcopyeditor.chm": {
+      "sizeBytes": 27314,
+      "sha256": "cba2f4596185fe6badd4fcfe0249f633acb1312da006f19f61070f8abb866d73"
+    },
+    "po/sv/xmlcopyeditor.mo": {
+      "sizeBytes": 19750,
+      "sha256": "0a39ed99627a03e2f84b563c66a806abec993a84f9ac41e9513a367fa20dd9cf"
+    },
+    "po/de/xmlcopyeditor.mo": {
+      "sizeBytes": 21898,
+      "sha256": "f115ce4c8c413cac27c7c5ebf63ed7fe39a0417a02607dbbfa231a006d957035"
+    },
+    "po/km/xmlcopyeditor.mo": {
+      "sizeBytes": 48492,
+      "sha256": "57e9b09066565d6450441e009f9a58b7d14084b07cdee9596f98d6e9a567211d"
+    },
+    "po/ca/xmlcopyeditor.mo": {
+      "sizeBytes": 25804,
+      "sha256": "647f03f0b86a32de6d1fcc2106d6a6bf2531f98f6c0c8d3c6642131e8af397cc"
+    },
+    "po/uk_UA/xmlcopyeditor.mo": {
+      "sizeBytes": 18407,
+      "sha256": "cd762e78744206088c0ff1defc559a41c9b0493fc1824e3fc7493c7aaa4858bc"
+    },
+    "po/sk/xmlcopyeditor.mo": {
+      "sizeBytes": 21499,
+      "sha256": "067236142919735ec77d802f59200c385b8648ddfe1c1dd3460317f80e21fd74"
+    },
+    "po/it/xmlcopyeditor.mo": {
+      "sizeBytes": 22242,
+      "sha256": "5dbaa39f7dcab142bb051c21f3405d804a09d6cd812d64fadb76c9c42830c4de"
+    },
+    "po/es/xmlcopyeditor.mo": {
+      "sizeBytes": 25698,
+      "sha256": "59dce020a1855a1216f0fb7157bbee11d1c767e7fb13a8324e055e80796e1329"
+    },
+    "po/en_US/xmlcopyeditor.mo": {
+      "sizeBytes": 394,
+      "sha256": "de5e08fa3a65e62d59c19a66db1f8425fe8ce9fc85508d9522069cc761fbd11c"
+    },
+    "po/fr/xmlcopyeditor.mo": {
+      "sizeBytes": 23435,
+      "sha256": "718ba33cb1cf15f69f30bad1f0440031a7cd331305ac9f9ef28714ad61d615df"
+    },
+    "po/zh_TW/xmlcopyeditor.mo": {
+      "sizeBytes": 19202,
+      "sha256": "19fbf5ada0d5cc7ae749b4ee26e58b8470c886c87198f4a45f48ce9bdd555c53"
+    },
+    "po/nl/xmlcopyeditor.mo": {
+      "sizeBytes": 22447,
+      "sha256": "f4d14cbdf959eb0a0ae7ca1e4f499338309c7a44b44a664f62f19a4d0d58dcc1"
+    },
+    "po/zh_CN/xmlcopyeditor.mo": {
+      "sizeBytes": 22549,
+      "sha256": "bfbb22234ae884f4d7a6e3a01040e4f0ccb34d95fae1ae1caa6b92b33609d420"
+    },
+    "po/ru/xmlcopyeditor.mo": {
+      "sizeBytes": 29009,
+      "sha256": "60144cfe27e1260501882fe7eeb8c6997dfab6b4abf554719fcc80ea42d04e32"
+    },
+    "dtd/dita/mapgroup.ent": {
+      "sizeBytes": 2729,
+      "sha256": "84cd18501fb3acc97a23981958745bf59cdae9773a33dadb1c746b89ab2fecd5"
+    },
+    "dtd/dita/highlight-domain.ent": {
+      "sizeBytes": 2478,
+      "sha256": "aba2ff739f723b22653348afa0b60b1bc5e0670c14e40d9cff1f31bff5b582ef"
+    },
+    "dtd/dita/map.mod": {
+      "sizeBytes": 15371,
+      "sha256": "9626593ae95829b6d25146d9fbe1e8c8ca4b5fbe61182eef04003544d04d87fc"
+    },
+    "dtd/dita/map.dtd": {
+      "sizeBytes": 4201,
+      "sha256": "6bfbfd42d9eda6f577d512c3deab392deec028f58246639a461e9189d802363e"
+    },
+    "dtd/dita/utilities-domain.ent": {
+      "sizeBytes": 2732,
+      "sha256": "f5235acff0b61ebe912adfb5a6221cdfe037f36b8fb155a03c639cda29ad5597"
+    },
+    "dtd/dita/meta_xml.mod": {
+      "sizeBytes": 14460,
+      "sha256": "de18a2585ec465fb3c0c82efb4edacaee097ed59e5e8cfd085ed15da882b7654"
+    },
+    "dtd/dita/topic_defn.ent": {
+      "sizeBytes": 9197,
+      "sha256": "d84e962019c132431eeacbf8bc41f8c37601a00d9b16ebc8048e4c5923ddeaa0"
+    },
+    "dtd/dita/software-domain.ent": {
+      "sizeBytes": 2767,
+      "sha256": "4439e9cafa548bede5d897f7d2ebcefdbffb231302984eb344f9a6fd6ca0529a"
+    },
+    "dtd/dita/task.dtd": {
+      "sizeBytes": 6798,
+      "sha256": "3401f98fa2fa23ef67da88b00a2f9727b2e71e06b08afcd3de9d740c019b113e"
+    },
+    "dtd/dita/ui-domain.mod": {
+      "sizeBytes": 5703,
+      "sha256": "9891846a7f8b63e8b670efe844f77d66bbe1af86eea36d9dd43c73e6a3864e3a"
+    },
+    "dtd/dita/topic.dtd": {
+      "sizeBytes": 6550,
+      "sha256": "85fe0ac035da5993f46de4f2c3e578534da14cdfa090fa7e8aa0113c870c09be"
+    },
+    "dtd/dita/highlight-domain.mod": {
+      "sizeBytes": 5667,
+      "sha256": "8685052484a2f0b592f5410dd3c4138cd26ad48caedd27e3d91eebb60894fe85"
+    },
+    "dtd/dita/topic.mod": {
+      "sizeBytes": 39862,
+      "sha256": "71d02b04a4c11c9c895cb3f82a48468a79aab59250d85291392e8c75403d831a"
+    },
+    "dtd/dita/task.mod": {
+      "sizeBytes": 19921,
+      "sha256": "8fa36fd394eb17f7583bae0eb6178de77589c8b3f66d8efd0b6015ab816e9919"
+    },
+    "dtd/dita/reference.mod": {
+      "sizeBytes": 11938,
+      "sha256": "7371edd3e773955022045c38cff7e6d218719f430fb11b4453284e31c2abff7f"
+    },
+    "dtd/dita/tbl_xml.mod": {
+      "sizeBytes": 14923,
+      "sha256": "1325de4428698d632075e0ae166970197f8dcc1b726e5dcbdf0876eb5d9afa10"
+    },
+    "dtd/dita/topic_class.ent": {
+      "sizeBytes": 6843,
+      "sha256": "fd8a7f87a13cfeecef0768b14fb94c21ae3c34db97609ddee97c2cdb541da49d"
+    },
+    "dtd/dita/mapgroup.mod": {
+      "sizeBytes": 4072,
+      "sha256": "2775aeb2fe0066982254ae6ce32cf15db7ca48b6eca4086b449d438aee3d9a1f"
+    },
+    "dtd/dita/programming-domain.ent": {
+      "sizeBytes": 2877,
+      "sha256": "44001f16e4a68d7248d3fa62f29198f7f21d1f1064a7a409833a84847dc98c15"
+    },
+    "dtd/dita/meta_xml.mod.old": {
+      "sizeBytes": 14192,
+      "sha256": "64882ffa22984b16015d7f46b879c272b0f6015add8d22ed26bf24742ee19992"
+    },
+    "dtd/dita/concept.mod": {
+      "sizeBytes": 5848,
+      "sha256": "7ffa9169a472405eaad4c35a4606cb2fda6fded2415ab96d13b513a92b461ee5"
+    },
+    "dtd/dita/catalog-dita.xml": {
+      "sizeBytes": 3085,
+      "sha256": "bcb168841dd539c26b43d40f4c11508674e29a48c0bfa62d41b2c9ec6bf8bb70"
+    },
+    "dtd/dita/reference.dtd": {
+      "sizeBytes": 6883,
+      "sha256": "5ef2675dfa07276e3c7c7a777f592ae9c90586cd98a10462cb51ed78b3723295"
+    },
+    "dtd/dita/concept.dtd": {
+      "sizeBytes": 6925,
+      "sha256": "a4dabb89169e8094ab967935f38fcc73161624754cd3562fb7252b2adc76c288"
+    },
+    "dtd/dita/utilities-domain.mod": {
+      "sizeBytes": 6166,
+      "sha256": "54017ecf38f1fadbbc154fd878fde590a9ac4eb6a4be70d6bb2e476893f13b7c"
+    },
+    "dtd/dita/ui-domain.ent": {
+      "sizeBytes": 2738,
+      "sha256": "657029da3f39167b73f42c2342d4db3d2f38241c57e8aa3578400ccb5fe4135d"
+    },
+    "dtd/dita/ditabase.dtd": {
+      "sizeBytes": 8152,
+      "sha256": "25a983fca33f7f206dac30d6859f8365d86d97166fc5887d7b7dbe1de7eb2682"
+    },
+    "dtd/dita/catalog-dita.txt": {
+      "sizeBytes": 2267,
+      "sha256": "a8b416ecf72709054e2871dc9e2daaa82beec38cc8d9553edba7e3b6e897a4ef"
+    },
+    "dtd/dita/software-domain.mod": {
+      "sizeBytes": 7136,
+      "sha256": "1523071bfb44dfcd66c80f89d50ec3072d6f31808e7d67cded2d1fe5640d6a2c"
+    },
+    "dtd/dita/programming-domain.mod": {
+      "sizeBytes": 18942,
+      "sha256": "54704df925e8af62a47d6fac5bd958bf59e5ac6f3550c775f43782ae6d131cbe"
+    },
+    "dtd/docbook/5.0/docbook.dtd": {
+      "sizeBytes": 198540,
+      "sha256": "4f54c108abea1e4ae8e13e98d79bc0534d442012ed7ab40fcb4052dc843f65dd"
+    },
+    "dtd/docbook/4.4/dbgenent.mod": {
+      "sizeBytes": 1606,
+      "sha256": "1b5755b459fd088d49169c45cc7f131c0799bbad29bb20452342c0370a2bf63c"
+    },
+    "dtd/docbook/4.4/ChangeLog": {
+      "sizeBytes": 17462,
+      "sha256": "b927290c8b4883422f0f8a2e821ba5719b09b36e1ac56aea0034d6def489ae26"
+    },
+    "dtd/docbook/4.4/calstblx.dtd": {
+      "sizeBytes": 8847,
+      "sha256": "0adfc6a7c6dc9e8dde219b0d59eae1f63400d598e52fb6580c0bd26bac7d3e94"
+    },
+    "dtd/docbook/4.4/htmltblx.mod": {
+      "sizeBytes": 8166,
+      "sha256": "a626ef746f72e9c3eb23cf7906374d6edcae0c391e04d2843c9b4a1df4943c6f"
+    },
+    "dtd/docbook/4.4/README": {
+      "sizeBytes": 247,
+      "sha256": "5ca84ea9d220d05186cb8c1e4f2c98d85145f50d85abf37c1109db71a441c366"
+    },
+    "dtd/docbook/4.4/dbhierx.mod": {
+      "sizeBytes": 61629,
+      "sha256": "bc03b1c03752fa71a89e52cfe315ea388e0b0c562ed95c89e6cedcf6b33912e7"
+    },
+    "dtd/docbook/4.4/catalog.xml": {
+      "sizeBytes": 4929,
+      "sha256": "29afd22b0df59a6b6eed34c8d649898092a3094ca087d46911dfb1fc7fc009e1"
+    },
+    "dtd/docbook/4.4/dbcentx.mod": {
+      "sizeBytes": 10544,
+      "sha256": "9f506940d7e41674003996f19c98d541d4b374b1a3ff5ed884d0b0feab9784a7"
+    },
+    "dtd/docbook/4.4/docbook.cat": {
+      "sizeBytes": 4123,
+      "sha256": "4ca8cc86dfd054098b14e8acdf5db5bd0d53f680c327864c659784f9af14f67d"
+    },
+    "dtd/docbook/4.4/docbookx.dtd": {
+      "sizeBytes": 5966,
+      "sha256": "601584014fdf4d1dcd9c680b291faa361ac119e430ecf8a3965d7a7262ce3b3b"
+    },
+    "dtd/docbook/4.4/soextblx.dtd": {
+      "sizeBytes": 13143,
+      "sha256": "fb470517343403808f8a8365162340bf1b085feb44afde1672d1d3d0c37170c6"
+    },
+    "dtd/docbook/4.4/dbpoolx.mod": {
+      "sizeBytes": 236769,
+      "sha256": "63a1a242bfdad3d1253cff27ccd6e74c2bb8fdd7c8630c583a2c273fefb9e0b3"
+    },
+    "dtd/docbook/4.4/dbnotnx.mod": {
+      "sizeBytes": 4627,
+      "sha256": "0ac1118fdc8367693e006a9a6479f18a5a367a7452b1907f6d835f32e9accdc0"
+    },
+    "dtd/docbook/4.4/ent/isogrk1.ent": {
+      "sizeBytes": 4863,
+      "sha256": "ef3f9d6ea2d2a4a29b6b70f43aeec30c482183b290e2350db6d04176a0c0c05e"
+    },
+    "dtd/docbook/4.4/ent/isolat1.ent": {
+      "sizeBytes": 6347,
+      "sha256": "078898fd141435c9c75b0d564ad47b5cc1eb1b731ad49cee8c857baee9e2bcb0"
+    },
+    "dtd/docbook/4.4/ent/README": {
+      "sizeBytes": 568,
+      "sha256": "a6af1345bc13793a0d69b6e59e1a03e21a789f2132a8543127120136bd308e75"
+    },
+    "dtd/docbook/4.4/ent/isogrk3.ent": {
+      "sizeBytes": 4383,
+      "sha256": "194712eeb6ba6ed798c874f958cc9ad61e2522ea253c63de389559be7ee3054d"
+    },
+    "dtd/docbook/4.4/ent/isogrk2.ent": {
+      "sizeBytes": 3031,
+      "sha256": "155327847323a5424a3376245dabd61bd6bc977440e7cc762599b34abba0dc81"
+    },
+    "dtd/docbook/4.4/ent/isotech.ent": {
+      "sizeBytes": 5238,
+      "sha256": "4068d49670d97d4dfa33d59452d6e0d201841574ccc26b59d41228a29ef60628"
+    },
+    "dtd/docbook/4.4/ent/isoamsc.ent": {
+      "sizeBytes": 1970,
+      "sha256": "4d75a25f8a38d071a560324343b645ecd64e6f2d136f0569f8e02a5e27a66984"
+    },
+    "dtd/docbook/4.4/ent/isoamsn.ent": {
+      "sizeBytes": 6371,
+      "sha256": "7c888f61971fe534845d1b5a6e15cb6d83a75524926ac63961ccac8bace8fad4"
+    },
+    "dtd/docbook/4.4/ent/isogrk4.ent": {
+      "sizeBytes": 4638,
+      "sha256": "b18f4d2d92a0d7874625c6e92bbc619a8bb41a4eae9b8f6b14def081441e5224"
+    },
+    "dtd/docbook/4.4/ent/isopub.ent": {
+      "sizeBytes": 6881,
+      "sha256": "c928185b6fb17689990f6a244c66e05c56787f8decc083afb7a847e4cdb1cfd5"
+    },
+    "dtd/docbook/4.4/ent/isobox.ent": {
+      "sizeBytes": 4769,
+      "sha256": "6b03cca9359913b8a168153cd26e5130552adbcf2815f3dcce25034253ae3abf"
+    },
+    "dtd/docbook/4.4/ent/isoamsr.ent": {
+      "sizeBytes": 7149,
+      "sha256": "208e8ba964b3eb6fde6fbae51299c491484fe441f611f884bc655917ef83c430"
+    },
+    "dtd/docbook/4.4/ent/isoamsb.ent": {
+      "sizeBytes": 4064,
+      "sha256": "ac36f74aeb61abc9f202b84df748847333585a8088a709843626884e9175c85a"
+    },
+    "dtd/docbook/4.4/ent/isoamso.ent": {
+      "sizeBytes": 2475,
+      "sha256": "2a3c7a63d5f1bbd10c92241bb505b8223a4efe48a03ef9238d91df1a3f5d076e"
+    },
+    "dtd/docbook/4.4/ent/isodia.ent": {
+      "sizeBytes": 2115,
+      "sha256": "3836432a5db9c12612505d6ccc9dd8b89b41f453ca585a302899d5ff8dc700d8"
+    },
+    "dtd/docbook/4.4/ent/isonum.ent": {
+      "sizeBytes": 6248,
+      "sha256": "ff2c4c7dfa1edeb3bf73358f2c6ca890154ad2275844762b8016a31407763b61"
+    },
+    "dtd/docbook/4.4/ent/isocyr2.ent": {
+      "sizeBytes": 3306,
+      "sha256": "0e5668a9cf67fcd710eecd32f141244a25903e4ee0d31fa1d79d0115d6a8a91f"
+    },
+    "dtd/docbook/4.4/ent/isolat2.ent": {
+      "sizeBytes": 11234,
+      "sha256": "021a6e3320da37ecb7e05eac4734f3adff44790b25c61ddb0156d4d4c4bddab4"
+    },
+    "dtd/docbook/4.4/ent/isocyr1.ent": {
+      "sizeBytes": 6272,
+      "sha256": "4ab58da264fc36d99f0c18fa6c4559bb2c1da46d3b4a19a1912ee1b1e64dcaa9"
+    },
+    "dtd/docbook/4.4/ent/isoamsa.ent": {
+      "sizeBytes": 5583,
+      "sha256": "dc461790631241f08403d82223059b2815f90de6460e8cde2c955b85a3d41cf6"
+    },
+    "dtd/tei/p4/teidram2.ent": {
+      "sizeBytes": 450,
+      "sha256": "03205b3626d067e5e2db4627f2afb2908bbdac9b50f1a8f11ab1e87e5ca332b9"
+    },
+    "dtd/tei/p4/teifig2.dtd": {
+      "sizeBytes": 1992,
+      "sha256": "e6e4325edb299ac518d1d5c8fbe5deb005b2072f600bca55080ccd49a629e317"
+    },
+    "dtd/tei/p4/teifsd2.dtd": {
+      "sizeBytes": 4993,
+      "sha256": "e42928a1b12c1cbfecca14c7b456179367a167893febff6d57bd2fd689984be9"
+    },
+    "dtd/tei/p4/teilitex.dtd": {
+      "sizeBytes": 1572,
+      "sha256": "765eefbbd7cd4ad7b8bd000517399fb35fd85758f09cb4ac069f094a74eacebe"
+    },
+    "dtd/tei/p4/teidict2.ent": {
+      "sizeBytes": 2994,
+      "sha256": "9c181eb845cb8dce21e67714f2c02025e79d02a7549ffeee9295d5abddd3875e"
+    },
+    "dtd/tei/p4/teitc2.ent": {
+      "sizeBytes": 684,
+      "sha256": "00280144a068b282b29fc576ad3c2428bf7aa67d716b8c35668b5c1d014522b4"
+    },
+    "dtd/tei/p4/teicorp2.dtd": {
+      "sizeBytes": 6797,
+      "sha256": "4526645b07296153cc56806a155edbe187e46430b48ef3393143ccdaf3a1629a"
+    },
+    "dtd/tei/p4/teifig2.ent": {
+      "sizeBytes": 356,
+      "sha256": "f6e0972fa312362353657eddc31eb05dd4252869c3e0f406bfe2808886e5c320"
+    },
+    "dtd/tei/p4/teigis2.ent": {
+      "sizeBytes": 13629,
+      "sha256": "1858964e5a6ea5d27c4c38849201033c3b2369e7cbac6a189a55140bc566e055"
+    },
+    "dtd/tei/p4/teinet2.dtd": {
+      "sizeBytes": 4058,
+      "sha256": "1280c121a1349f67a3af445a34cea16e947cb7613f24696788f3904fb2e18457"
+    },
+    "dtd/tei/p4/teite2f.dtd": {
+      "sizeBytes": 2403,
+      "sha256": "99cc4dad09811f0b031b4e92371a65f0c82b7e036c0554529a9d115ea8b701f4"
+    },
+    "dtd/tei/p4/teite2n.dtd": {
+      "sizeBytes": 2938,
+      "sha256": "0bdd2ebde3fb47874df322af360bbd8503d4398542e18de95c72fe4f0e52aba6"
+    },
+    "dtd/tei/p4/teivers2.ent": {
+      "sizeBytes": 749,
+      "sha256": "46e986c2c9194192eab2f3ce4db33e07ce4224736f75ddb3d95e0968264227c9"
+    },
+    "dtd/tei/p4/teidram2.dtd": {
+      "sizeBytes": 5027,
+      "sha256": "46ec0c401572a8933275798bd042935dadd5848f7bae6abf0ae4e13cde3498d8"
+    },
+    "dtd/tei/p4/teiback2.dtd": {
+      "sizeBytes": 755,
+      "sha256": "042ca9b63b08d4c125633e3f93ddf41f2f5a8e3ea0545eb4b51022347ab466e2"
+    },
+    "dtd/tei/p4/tei2.dtd": {
+      "sizeBytes": 9158,
+      "sha256": "0a388521060cbde5f165e574d8de57a644fe8bbdeeeb7c7bc3b713d5fbd9299c"
+    },
+    "dtd/tei/p4/teifs2.dtd": {
+      "sizeBytes": 5421,
+      "sha256": "96ed54d11b7634f0aebd58f0065b4eb8ac44447e6d64535f5580a9a97f4ef7f7"
+    },
+    "dtd/tei/p4/teilink2.ent": {
+      "sizeBytes": 1141,
+      "sha256": "2799ce41b776130b3c17293788ac19cfb8fb0f1055f4bb3189949fdc39abe238"
+    },
+    "dtd/tei/p4/teiana2.ent": {
+      "sizeBytes": 426,
+      "sha256": "733c2e64c628aa8c8327990d992263638674e73dad5690f30dd635d03a2dd2ca"
+    },
+    "dtd/tei/p4/teiterm2.dtd": {
+      "sizeBytes": 636,
+      "sha256": "61fefa13a41fc3c5dd8170bebba7d0f1cfa79697c6a9678095812157dfbdfab4"
+    },
+    "dtd/tei/p4/teifron2.dtd": {
+      "sizeBytes": 2554,
+      "sha256": "940d24af8e365d374d31abd617e00e0cde005e8eecd8fd5234e8338c11a793fc"
+    },
+    "dtd/tei/p4/teilitex.ent": {
+      "sizeBytes": 14921,
+      "sha256": "711bc81de4e3d54d1ec0997bb3a92724fa614de3e0153199be8712fa6f2d57fd"
+    },
+    "dtd/tei/p4/teistr2.dtd": {
+      "sizeBytes": 8196,
+      "sha256": "7101063cb41518ad84946a77de80d9a75d1b2c3a94de6d0023ffed8cbf135d1d"
+    },
+    "dtd/tei/p4/teigen2.dtd": {
+      "sizeBytes": 402,
+      "sha256": "accb98d046ec0dff792c060ad746424546b24be0e6f71a7c018a695e675bcf10"
+    },
+    "dtd/tei/p4/teispok2.ent": {
+      "sizeBytes": 504,
+      "sha256": "d76b800f554da2c75466322418b06c9975d185b2d593fbb689b0f9bc528913a1"
+    },
+    "dtd/tei/p4/dummy.dtd": {
+      "sizeBytes": 1523,
+      "sha256": "98b1f48699a0fadb017e1d311e1dc250561680356a094acd8fc534c7d1c71fbe"
+    },
+    "dtd/tei/p4/teiwsd2.dtd": {
+      "sizeBytes": 4825,
+      "sha256": "23a7416ddce7b0dc7ceec2a4b7577a0f33723256a1875fa503310dc866cfe455"
+    },
+    "dtd/tei/p4/teishd2.dtd": {
+      "sizeBytes": 1396,
+      "sha256": "d307fc8dded5638324de78da70fb2c8574b51004e163fc23b0b5fda7215b61f6"
+    },
+    "dtd/tei/p4/teisgml.dec": {
+      "sizeBytes": 2211,
+      "sha256": "31db431506e80a049360acd74b8f097d211388dfc9a103309fdbe9d8c6611afa"
+    },
+    "dtd/tei/p4/teind2.ent": {
+      "sizeBytes": 1029,
+      "sha256": "75274ac5cf6486b551a9512c79c17e4ee1aa46d2595fa4a6353e19aa515c880b"
+    },
+    "dtd/tei/p4/teitsd2.dtd": {
+      "sizeBytes": 8029,
+      "sha256": "3166486b71a29c2aa3a6c1e330c73a623b7b44f910156b2a6fe7232fa2d55bda"
+    },
+    "dtd/tei/p4/teitran2.ent": {
+      "sizeBytes": 387,
+      "sha256": "6c9b85d3734037cb79fb8a6e55f245c036350331720ae654079df01913e54c99"
+    },
+    "dtd/tei/p4/teiterm2.ent": {
+      "sizeBytes": 1033,
+      "sha256": "987af99214113ba94b5f974d1599e8e56f9dc7d69d62bbdb0cf732ac2aceeff1"
+    },
+    "dtd/tei/p4/teipros2.dtd": {
+      "sizeBytes": 650,
+      "sha256": "d748b0e9bd6c31c68be03bf296bc664405e5ed75aafb7f11868a6a6507585af8"
+    },
+    "dtd/tei/p4/teidict2.dtd": {
+      "sizeBytes": 10094,
+      "sha256": "33e6db1d64375bfaa2f79dc189f0028b91aac6fb85df896623345842a04ae91f"
+    },
+    "dtd/tei/p4/teipl2.dtd": {
+      "sizeBytes": 1136,
+      "sha256": "1d1611f1942a343fc484d527250ab0f7548d71897ca4715572c37d64c7534b43"
+    },
+    "dtd/tei/p4/teispok2.dtd": {
+      "sizeBytes": 2629,
+      "sha256": "5ddb720eb40444a23fa7be109606a32b099aab971cae26185602f7c025b6e8f6"
+    },
+    "dtd/tei/p4/teicert2.dtd": {
+      "sizeBytes": 1002,
+      "sha256": "0e6fc50978dbae573fa78e5ecf0ab78500186883525a9e468ae0348b768adca0"
+    },
+    "dtd/tei/p4/teitc2.dtd": {
+      "sizeBytes": 3805,
+      "sha256": "ab4846f372f5a62bd73961ce0af6bbeddbef60ca67f1f68f9234e93a00171781"
+    },
+    "dtd/tei/p4/teixlite.dec": {
+      "sizeBytes": 397,
+      "sha256": "fd2a75011a2656811b2c0601045d8da5ed0d5dc76680a86b7d4826e004f2e6b1"
+    },
+    "dtd/tei/p4/index.xml": {
+      "sizeBytes": 22828,
+      "sha256": "1da0e925662e2897030d7676591088bb265c972c41c1dadb15f7ba63c7fac937"
+    },
+    "dtd/tei/p4/catalog.tei": {
+      "sizeBytes": 4550,
+      "sha256": "d4fe184bdf0a2f473bcba6ed0c6d6e2935ef4b7bd1430328ac37eed7c7bbf50e"
+    },
+    "dtd/tei/p4/teiana2.dtd": {
+      "sizeBytes": 2479,
+      "sha256": "e5e55fc4867bada1d4b9895c5e0fcdd32d31c8792196176456fa34b33a1f694c"
+    },
+    "dtd/tei/p4/teicore2.dtd": {
+      "sizeBytes": 19462,
+      "sha256": "5d15d1c4718209352d321bd7c36c39bb41d9c5f2d242814aea767c428af0b924"
+    },
+    "dtd/tei/p4/teicatalog.xml": {
+      "sizeBytes": 6434,
+      "sha256": "1ddc6084fe2beba2ce927ad3369bb66996e80f19372b76963dbeeca3387a5622"
+    },
+    "dtd/tei/p4/teimix2.dtd": {
+      "sizeBytes": 400,
+      "sha256": "0f8b76bad032b92539108e449703e797820f665b6527ae1b4482a68ced14533d"
+    },
+    "dtd/tei/p4/teiclas2.ent": {
+      "sizeBytes": 15906,
+      "sha256": "175dd72ee94dcc10992fd319f74ea20b4b695739fce593f64e4e0effbe55d19f"
+    },
+    "dtd/tei/p4/teihdr2.dtd": {
+      "sizeBytes": 16545,
+      "sha256": "dd7f9f1462d4f759bbeeef29675b8ff406b277a1ef310b27c71d5f023ee72ad1"
+    },
+    "dtd/tei/p4/teilink2.dtd": {
+      "sizeBytes": 3760,
+      "sha256": "6b9ce630dcdc2018ef441c0f2c753a6421d1b9faeac28c6a9092241f27c3ce28"
+    },
+    "dtd/tei/p4/teikey2.ent": {
+      "sizeBytes": 1806,
+      "sha256": "e748176b51798041d856e8cc33e49c4603bd10f363c27c87e37530a53a83c00a"
+    },
+    "dtd/tei/p4/teilite.dec": {
+      "sizeBytes": 366,
+      "sha256": "87d60da7c81d4ad83e829960b355b1abc9500f5cf11ee0934e81648998c039d8"
+    },
+    "dtd/tei/p4/teitran2.dtd": {
+      "sizeBytes": 3792,
+      "sha256": "4ae817b0d6ab5d09597d64c763f9fa3f571a9fba486172884b8d89580b1ee169"
+    },
+    "dtd/tei/p4/teind2.dtd": {
+      "sizeBytes": 7268,
+      "sha256": "e0bccd0cb0f93353bcf9d2a11888d0fc1cacc6e6835b748bec428e484d615bcf"
+    },
+    "dtd/tei/p4/teivers2.dtd": {
+      "sizeBytes": 2124,
+      "sha256": "aaa448c6c676ecfc6f0ac1f46529947f24f1f1e2d6b415a1f4f588058fca0b6b"
+    },
+    "dtd/tei/p5/tei_all.dtd": {
+      "sizeBytes": 431463,
+      "sha256": "0e5459465252accf39f008bbe54e3862421480f8be1a4a1f1cef2b28cea0cdbb"
+    },
+    "xsl/openlearn2daisyhtml/heading.xsl": {
+      "sizeBytes": 2876,
+      "sha256": "6a409342a6a345aea5408b472e013bed69dc25b1fde3f7d783495c48e9a06cbf"
+    },
+    "xsl/openlearn2daisyhtml/object.xsl": {
+      "sizeBytes": 13002,
+      "sha256": "76d289f97a41e603566350a7b760cd15f74237b4e2d08783094f11c6db2734a4"
+    },
+    "xsl/openlearn2daisyhtml/structure.xsl": {
+      "sizeBytes": 9605,
+      "sha256": "dd4173538a1a2850d91367cf1333339434b91bd4977a89adb50a79d475db017b"
+    },
+    "xsl/openlearn2daisyhtml/lang.xsl": {
+      "sizeBytes": 921,
+      "sha256": "27a19987d5927cd177ea97778b54c07c394eab521248bbab4b498381cfdfb503"
+    },
+    "xsl/openlearn2daisyhtml/item.xsl": {
+      "sizeBytes": 1492,
+      "sha256": "2acb73adc06302456137f3b3a9fc118fdec4a7dc536f646d36f43ef223814994"
+    },
+    "xsl/openlearn2daisyhtml/openlearn2daisyhtml.xsl": {
+      "sizeBytes": 506,
+      "sha256": "e8600644d03f39234c3af4e8638cf82898af46f7d4f0f549ed1cdb4bb012b5f2"
+    },
+    "xsl/openlearn2daisyhtml/inline.xsl": {
+      "sizeBytes": 4595,
+      "sha256": "318aa9e6038d45def707dc66bc650770d5ab007f052c9d4a0d7401eb081a28e7"
+    },
+    "rng/exclude/basic.rng": {
+      "sizeBytes": 3092,
+      "sha256": "a13fe93406e14ae254d1dcf7cd1b2f4c0b2903fcb32e714d36e840e8c68b9056"
+    },
+    "rng/exclude/form.rng": {
+      "sizeBytes": 3048,
+      "sha256": "1d9b39bda4d50614da2f48a5b29b37d11743db43e276d4ed788407ed056e5cea"
+    },
+    "rng/exclude/basic-table.rng": {
+      "sizeBytes": 1369,
+      "sha256": "4931a84b2a1f4ab6c2b266ac77f72136f1ccabdc81243e52e654c8cf57b93996"
+    },
+    "rng/modules/ruby.rng": {
+      "sizeBytes": 1983,
+      "sha256": "22edf38c4eddc473c537aa63aa7de22c407820132c4674eb01f245f9ffd9d846"
+    },
+    "rng/modules/base.rng": {
+      "sizeBytes": 475,
+      "sha256": "ca1f470d708b404bded196014ef4a27942db1d1f5ecc52fc0ff5d0cfa911648c"
+    },
+    "rng/modules/param.rng": {
+      "sizeBytes": 702,
+      "sha256": "5555e13755496d3a93e23e768b15cdc0877d2a84c9ce8e2209068fbba5035e77"
+    },
+    "rng/modules/meta.rng": {
+      "sizeBytes": 790,
+      "sha256": "b4a0a0308128f81974df8a6a050f0ae0a3576c1d4515d948e9ab217baaf19692"
+    },
+    "rng/modules/struct.rng": {
+      "sizeBytes": 1489,
+      "sha256": "222f873f8d2c850ff9c1adc4a7ee3f9d905e80060fea2d9f320435cbb18dc936"
+    },
+    "rng/modules/list.rng": {
+      "sizeBytes": 1703,
+      "sha256": "c1397e3dd9dfc7355fbf06fd80eeebc7839f58695f53da5bfa8ab5166bbfcb52"
+    },
+    "rng/modules/attribs.rng": {
+      "sizeBytes": 1290,
+      "sha256": "5ae7691f5ff35db8a499cbc1c62b8b7253b0757c76a3b5b5a0d028c4c15fd1c3"
+    },
+    "rng/modules/image.rng": {
+      "sizeBytes": 884,
+      "sha256": "8b1e8da27cfe67b10fb9e422c358fdf4766b2a189b72ada180f6fd95c632c2fa"
+    },
+    "rng/modules/nameident.rng": {
+      "sizeBytes": 908,
+      "sha256": "e6fb816e45f23313408e22487008c9969bf59b7e7c9119952479c2826536f061"
+    },
+    "rng/modules/csismap.rng": {
+      "sizeBytes": 2270,
+      "sha256": "36ead2f9bcc9d4316324169ebfca3666f3e99ad7e4441795cf25158913e471f5"
+    },
+    "rng/modules/hypertext.rng": {
+      "sizeBytes": 1388,
+      "sha256": "ab836744a8ebe78bdb56454928c515713358a02b096229d9e7ad880c998aedb0"
+    },
+    "rng/modules/frames.rng": {
+      "sizeBytes": 2338,
+      "sha256": "886fa46c269740fb1c2523076155e2193eb98e8132a0d1ee43923729c67fa51d"
+    },
+    "rng/modules/datatypes.rng": {
+      "sizeBytes": 2675,
+      "sha256": "585ada94d5316a4a0813408d8b16f46f55e9e8ca4b7d6fe933ea4c8a5b1fb1ad"
+    },
+    "rng/modules/applet.rng": {
+      "sizeBytes": 1086,
+      "sha256": "62bd95ee23ff4b6f2d06781d9d846c854eea291fd4b578c7b0203a7a1fa931cf"
+    },
+    "rng/modules/edit.rng": {
+      "sizeBytes": 1104,
+      "sha256": "a660497342f88284ef5fb1dc02693b1aa568db7d6b5eebdcb77d0ccd0934071f"
+    },
+    "rng/modules/form.rng": {
+      "sizeBytes": 4617,
+      "sha256": "fc38d89b8f88ee3bb729a42aef2111144bd4b367d42572c1e49195eb74ed9670"
+    },
+    "rng/modules/script.rng": {
+      "sizeBytes": 1483,
+      "sha256": "aa35f6f1327509edfd0b2d8cf9d7e5b22aac47ae84d25ea4157a8220a2a4e6c9"
+    },
+    "rng/modules/basic-table.rng": {
+      "sizeBytes": 2970,
+      "sha256": "e3b5eb69a0ea19916a320ec54a932d9a7e31167ad9bd62c8e7c3fb00144716a5"
+    },
+    "rng/modules/object.rng": {
+      "sizeBytes": 1877,
+      "sha256": "23f5479c46d5221acee9abc62cb16d736777aaf1037673fdb554d02dff90c743"
+    },
+    "rng/modules/iframe.rng": {
+      "sizeBytes": 1495,
+      "sha256": "fe7c10f71d2f30a51ae07fd13524352be8c223c6ea519fc20c16ada80d0af11c"
+    },
+    "rng/modules/ssismap.rng": {
+      "sizeBytes": 354,
+      "sha256": "6c644dc3ceec28388f983e1f0aff10f6cb297728f4819d47b558997350821891"
+    },
+    "rng/modules/style.rng": {
+      "sizeBytes": 794,
+      "sha256": "b2d7069da788ce5d9c23e1e46803aa9040ab43c9289bf054189b37374ae4ec55"
+    },
+    "rng/modules/text.rng": {
+      "sizeBytes": 6625,
+      "sha256": "5e2a5ef55000538c2e254331825f603e6147390a0aab0e18288c106c4e5fc472"
+    },
+    "rng/modules/legacy.rng": {
+      "sizeBytes": 10602,
+      "sha256": "c2796ec0ceb328e91cae6a773da6dafe7f38ef29be075806820442dd07b3e1b4"
+    },
+    "rng/modules/target.rng": {
+      "sizeBytes": 712,
+      "sha256": "8c31145e882b6fd2b61adb8d814a0fef0ac0e47c9a134c1618979ce774e4eb34"
+    },
+    "rng/modules/bdo.rng": {
+      "sizeBytes": 774,
+      "sha256": "68f375830d94c0caf5877ab39d18ffda9dabfbade1b32f36ea314fdbfd668062"
+    },
+    "rng/modules/events.rng": {
+      "sizeBytes": 4817,
+      "sha256": "01678cabb82d34b80efa52098935e5a6f009616655652e031c79b3211d1b8f67"
+    },
+    "rng/modules/pres.rng": {
+      "sizeBytes": 2050,
+      "sha256": "f03fe87d402c76a621c0be18ef05052d22cb187a3bf84e3bd547088299b5e992"
+    },
+    "rng/modules/table.rng": {
+      "sizeBytes": 5492,
+      "sha256": "7e19939c59c74572189b07e0136b5038f475784da6b2b01e6ef74793ab163323"
+    },
+    "rng/modules/inlstyle.rng": {
+      "sizeBytes": 265,
+      "sha256": "7983024dbe81cb1991d42fecef49f013ed30116ce8ccbd42bf2fdf62d398f3ba"
+    },
+    "rng/modules/link.rng": {
+      "sizeBytes": 1250,
+      "sha256": "989aff5f1a1e79edf4766b8e920c40ff4abd70c500c7cac782558a4b44c52302"
+    },
+    "rng/modules/basic-form.rng": {
+      "sizeBytes": 4284,
+      "sha256": "9b68b3690bda94243d1cd65cc866f2f9b27f4dbecbdfe697a0ccb30a4af95012"
+    },
+    "aspell/data/iso-8859-6.cset": {
+      "sizeBytes": 12552,
+      "sha256": "2abb132915768d304b414632813fbe6e54bfd03cd8f21cfe9159d5d59aa97bd3"
+    },
+    "aspell/data/iso-8859-6.cmap": {
+      "sizeBytes": 40990,
+      "sha256": "dc81cf592a2b8ffd4778bab4abc506dd0376f2a94a211e311e009e8a5604ab7c"
+    },
+    "aspell/data/cp1252.cmap": {
+      "sizeBytes": 30982,
+      "sha256": "9fee2f230fbe05d5d85d3921c57408f88eb338540a4185c5f0924c30540d0989"
+    },
+    "aspell/data/cp1250.cset": {
+      "sizeBytes": 14214,
+      "sha256": "9803a8b8619314ee08e70c506850d14191dca50b1cdab5fe3bdc7585226ba332"
+    },
+    "aspell/data/koi8-r.cset": {
+      "sizeBytes": 13399,
+      "sha256": "652f986bf7b1e09062e25be71d403329f192632d3dd0414bcf4d224492f82e1e"
+    },
+    "aspell/data/cp1256.cmap": {
+      "sizeBytes": 44134,
+      "sha256": "3ede13d63f79ce4673ae7b8ab2fa4df7481d22943672e27b7325745e77ac2aae"
+    },
+    "aspell/data/iso-8859-9.cmap": {
+      "sizeBytes": 31020,
+      "sha256": "5c65def48f58279050a40dc0cfb10a3d5517f23d4c89d12ef17fa6a10af5ba78"
+    },
+    "aspell/data/iso-8859-2.cmap": {
+      "sizeBytes": 31289,
+      "sha256": "4be296f58a67f8b3992ad40754487de640ef2244cebefc2db5f09289a2712e1f"
+    },
+    "aspell/data/cp1257.cmap": {
+      "sizeBytes": 31235,
+      "sha256": "9747e0f1650bf8d2f5a943aa6593f2dc616399f6541b8f98a8f19749e45c2777"
+    },
+    "aspell/data/iso-8859-13.cset": {
+      "sizeBytes": 13989,
+      "sha256": "149a9d3adc9fbeaf81072ea245e834dc058eb2987ca84276d7c672732fe95e5e"
+    },
+    "aspell/data/en_affix.dat": {
+      "sizeBytes": 4675,
+      "sha256": "1b30f656e5d4f83ce2e8c2ec62d4c1e365e40d4c4ff5e485d0bedf083558d7d5"
+    },
+    "aspell/data/en.dat": {
+      "sizeBytes": 88,
+      "sha256": "abd5a0fb4a5c5be260f603ced735ee7ade2b046fdccffe726a708eac4b7778b6"
+    },
+    "aspell/data/iso-8859-8.cset": {
+      "sizeBytes": 12557,
+      "sha256": "d9cbc5e50d3fbda708129ba15b30196e12a06b692b39c3ed2ed8356ef02b6255"
+    },
+    "aspell/data/cp1251.cmap": {
+      "sizeBytes": 31898,
+      "sha256": "057b2802c516dfff2e19568930dcb4eda1690eb8416031c22fb0b25aa23d0f88"
+    },
+    "aspell/data/iso-8859-14.cset": {
+      "sizeBytes": 14379,
+      "sha256": "aa2209725c9ca6a5fcf9928bf5710eee7ba2c510920ad15ddc647da9725b5d34"
+    },
+    "aspell/data/split.kbd": {
+      "sizeBytes": 99,
+      "sha256": "95d3c67fc450094b3829ef3f670cffd678d18b340eca4fa8420aff18e014eb67"
+    },
+    "aspell/data/iso-8859-10.cset": {
+      "sizeBytes": 14259,
+      "sha256": "7977b06829d73e50a04cf3a5d4eb46263a76f54525647191bcebf25717fec893"
+    },
+    "aspell/data/koi8-u.cmap": {
+      "sizeBytes": 31576,
+      "sha256": "0089a1cae53735f9fc618f53249c3343e726f918ccf72b37439400136aaa540e"
+    },
+    "aspell/data/koi8-u.cset": {
+      "sizeBytes": 13561,
+      "sha256": "34dbea02bfdc890a545f28f41e73540178dcdbd0600eb580aa6eabac1247303e"
+    },
+    "aspell/data/iso-8859-10.cmap": {
+      "sizeBytes": 31065,
+      "sha256": "22a2a78ce1d93cc5fb72cb7ea6d7bbef9a0c3909dcd6a79817323f4f83b8e23d"
+    },
+    "aspell/data/iso-8859-14.cmap": {
+      "sizeBytes": 31433,
+      "sha256": "76681a7e5ac1cfd765ba086f752d142ac959db03dafb81495f9c18300c4acb6d"
+    },
+    "aspell/data/iso-8859-9.cset": {
+      "sizeBytes": 13885,
+      "sha256": "94784aaf13598a0a214085b8d7c68d9b0748a92d241e112f2d533c7b71e325d3"
+    },
+    "aspell/data/cp1254.cmap": {
+      "sizeBytes": 31033,
+      "sha256": "4d9c7eb799d0ad57ebad7f5c6484b1693c33dc054353e409f13607a858463a78"
+    },
+    "aspell/data/iso-8859-3.cmap": {
+      "sizeBytes": 30949,
+      "sha256": "e86a67293da05213a750c12325b31f09eba1bbded80a9cdd2a3e8a344ef7f085"
+    },
+    "aspell/data/iso-8859-7.cmap": {
+      "sizeBytes": 38538,
+      "sha256": "a183efdb5aaa338e645e7af5037921ede71f7ba7dd2bc085a22f05f6839ac7b1"
+    },
+    "aspell/data/cp1258.cset": {
+      "sizeBytes": 13920,
+      "sha256": "eb0bd12ab4f986387036479009e4f471d909358efdbf04d83640625f13cc823f"
+    },
+    "aspell/data/cp1256.cset": {
+      "sizeBytes": 13307,
+      "sha256": "34e15bf30c4657ea98470894a5c83fde3ed90f4c4b742668a0520319e7dda9a8"
+    },
+    "aspell/data/cp1253.cset": {
+      "sizeBytes": 13682,
+      "sha256": "bb1e93a7a3c6c73da775a45383825cb34fbc7032563ae5aea505950177b75bb6"
+    },
+    "aspell/data/cp1255.cmap": {
+      "sizeBytes": 35133,
+      "sha256": "26310bf5fb68d225eacedba0f00635769468ba3b1a02b6496f059503ab7b067a"
+    },
+    "aspell/data/iso-8859-1.cset": {
+      "sizeBytes": 13848,
+      "sha256": "981608b54fff0b5acc52d8ca11e5a03ee363348f5f5180ea07460e28bbbe601f"
+    },
+    "aspell/data/iso-8859-15.cset": {
+      "sizeBytes": 13939,
+      "sha256": "a321073b28dfc258d60f7e5a7b00ab31c70f6fd4ab39ddef6464b3d4bf6a133d"
+    },
+    "aspell/data/iso-8859-11.cmap": {
+      "sizeBytes": 27123,
+      "sha256": "c8eab9a240c28da7b8c92889f546b7752117147a5a7b59ac8d1a65b560f623f0"
+    },
+    "aspell/data/iso-8859-7.cset": {
+      "sizeBytes": 13639,
+      "sha256": "b80e80d04209a8dd2da17d2aca3b7120bcaff9c028d33bfac43a68e9c635f5bb"
+    },
+    "aspell/data/iso-8859-13.cmap": {
+      "sizeBytes": 31128,
+      "sha256": "ec5a661442bdd3272e2460364e1569bae5f519e9ed4a9c5eed8950a627929825"
+    },
+    "aspell/data/iso-8859-4.cmap": {
+      "sizeBytes": 31142,
+      "sha256": "b73bfe9d367849d22107629e22e1d084941c1ea92cea2ec33529d9f9ae1ce7d5"
+    },
+    "aspell/data/cp1252.cset": {
+      "sizeBytes": 14039,
+      "sha256": "0292c90d8e8f3462959a6fc739df08b0f22df809bcc5c40bb2521cb640c3825b"
+    },
+    "aspell/data/iso-8859-5.cset": {
+      "sizeBytes": 13749,
+      "sha256": "ca373cad2d9ab5e30753e9875711566cb0eb26113e9f1235b501b7856d49bfd7"
+    },
+    "aspell/data/cp1258.cmap": {
+      "sizeBytes": 33511,
+      "sha256": "301e22307a3de66f45d42192be9be8068df5346ba4818bfbfb5af01a72c88f09"
+    },
+    "aspell/data/cp1250.cmap": {
+      "sizeBytes": 31404,
+      "sha256": "85d529c9d15c233148c30b2d9f5b1698dc04f42b1e50d009b8dd15c8cc01311f"
+    },
+    "aspell/data/iso-8859-11.cset": {
+      "sizeBytes": 13238,
+      "sha256": "1d3abba11ce6818f8d7389f93cb03e5772b4da164667735dc1f84301da614341"
+    },
+    "aspell/data/standard.kbd": {
+      "sizeBytes": 100,
+      "sha256": "8d0af7403a8cf8db7e4b7eac01b2ad09fc40903d5b3a131b9a52dbf9d9839758"
+    },
+    "aspell/data/cp1257.cset": {
+      "sizeBytes": 13935,
+      "sha256": "bfeace4a9af97b885e4bcc153911bcf74c70e5a140416d0a903fa07d369e94e6"
+    },
+    "aspell/data/en_phonet.dat": {
+      "sizeBytes": 7273,
+      "sha256": "c3256e7ade0fc9cc36b32316ecc8facb61b1257eee7dd6b02d1adbca602b26ab"
+    },
+    "aspell/data/iso-8859-16.cmap": {
+      "sizeBytes": 30819,
+      "sha256": "513eea9420fd7060d14cfa76e66dff5c8f6a6c3d5d811f17c6ad4735fe57e6dc"
+    },
+    "aspell/data/iso-8859-16.cset": {
+      "sizeBytes": 14284,
+      "sha256": "4f6f59af0195abfb85e4ea5710bab19c3bd20bc3481f8e3aae809fdf379c1000"
+    },
+    "aspell/data/iso-8859-2.cset": {
+      "sizeBytes": 14133,
+      "sha256": "15e76b60fa3a7eb6d2e5d0c5f38b3992d65fef17361bab6de475accd15b86d41"
+    },
+    "aspell/data/iso-8859-8.cmap": {
+      "sizeBytes": 27758,
+      "sha256": "b4342ada56771e6371305632fdfc302318e59bbd7b76e89af823699a204a8f60"
+    },
+    "aspell/data/iso-8859-4.cset": {
+      "sizeBytes": 14105,
+      "sha256": "dafe14d9f2fed969d97dd5fdb1c160b6c39bce7da76af8b80e68dcc7c1cf99c2"
+    },
+    "aspell/data/cp1255.cset": {
+      "sizeBytes": 13032,
+      "sha256": "de5f883befa541be56730e28303c0da872e41352bdc310872aec9e48c0010124"
+    },
+    "aspell/data/cp1253.cmap": {
+      "sizeBytes": 38589,
+      "sha256": "8644c52d29575a2c18b4f8638ade702395d9ff0ec904ae42744886b6107ecdc3"
+    },
+    "aspell/data/iso-8859-1.cmap": {
+      "sizeBytes": 30894,
+      "sha256": "9de3aed252bba752373efe8954ffe2b49d4b7b0bfff57f770dddda69e665ff4e"
+    },
+    "aspell/data/iso-8859-15.cmap": {
+      "sizeBytes": 30814,
+      "sha256": "95e5805a5e55a5b6ed4f82d2ec0ceccb3487662a8e08a5a598769ed6b7dac2da"
+    },
+    "aspell/data/dvorak.kbd": {
+      "sizeBytes": 98,
+      "sha256": "28283f171cf9e81d37da54a156c62fec6bc7957fc75d77f12ae1fc565f9d7c9b"
+    },
+    "aspell/data/koi8-r.cmap": {
+      "sizeBytes": 31434,
+      "sha256": "4bf5e0899f8fe6fb136beb7f8a7f98279e1bd7ed875c0015c8e975065709a4f2"
+    },
+    "aspell/data/iso-8859-3.cset": {
+      "sizeBytes": 13972,
+      "sha256": "447b5606e6ee12d4889f218e0e91527fde206d26d524c94d1a42a3eb0d2a4ed0"
+    },
+    "aspell/data/iso-8859-5.cmap": {
+      "sizeBytes": 31764,
+      "sha256": "1dc18ec594d5b1de7b63a16ad735123c4942ee910165d0c8ce43895a14faa3c1"
+    },
+    "aspell/data/cp1254.cset": {
+      "sizeBytes": 14044,
+      "sha256": "430da49c0dc401b1da23b836e5186937ed44323505263742aa7171857156b1ce"
+    },
+    "aspell/data/cp1251.cset": {
+      "sizeBytes": 13866,
+      "sha256": "fc2144f7282b3d7125a68d54ac6d4cc1b7f414247a1bdcbdad559a2f1b9b369f"
+    },
+    "aspell/dict/en-w_accents-only.rws": {
+      "sizeBytes": 176080,
+      "sha256": "1857c3afd2464eaaaa6f943be2011d42496733f6ed08909d8c724a462491eb3b"
+    },
+    "aspell/dict/en_GB-ise-w_accents.multi": {
+      "sizeBytes": 110,
+      "sha256": "fc08d9718e071b044e3b8ba49c5a88666311dcb2f9f427fa281e2d62fda946f0"
+    },
+    "aspell/dict/en_CA-variant_0.multi": {
+      "sizeBytes": 83,
+      "sha256": "95c01e196c1cf227016bd996751f6e24388a72b661293bd5daaa4b8bcdb69820"
+    },
+    "aspell/dict/canadian-variant_1.alias": {
+      "sizeBytes": 85,
+      "sha256": "0c20ded2dafc47f636199eea404e7298a21a85e5f1d7b275ac99330b7896a362"
+    },
+    "aspell/dict/en_GB-variant_1.rws": {
+      "sizeBytes": 64592,
+      "sha256": "b5ae39dd9966b05ee19f1500e3d438251c45864a8782a08e3e426875aa523c7a"
+    },
+    "aspell/dict/en_US-w_accents-only.rws": {
+      "sizeBytes": 102032,
+      "sha256": "da6b28afd27313ef0aab495ce659c0e3845a8415f5fb90c9789bd274b75ca55c"
+    },
+    "aspell/dict/en_US.multi": {
+      "sizeBytes": 86,
+      "sha256": "0b05bab9050764d1b6a533c5841ddd7f505efe38dc6dcc009f01b65757a5aefc"
+    },
+    "aspell/dict/en_CA-w_accents-only.rws": {
+      "sizeBytes": 94064,
+      "sha256": "479d8682ae45647222637d0e29f86758f2cf407367fbe097f6066647f3874d42"
+    },
+    "aspell/dict/english-variant_0.alias": {
+      "sizeBytes": 82,
+      "sha256": "af761cb63fcd9c418bccb4a51f5926cecee3e3f5f1379b96f8a59d07e84830ff"
+    },
+    "aspell/dict/en_AU-wo_accents.multi": {
+      "sizeBytes": 107,
+      "sha256": "b9edb9d65ff42ac3f1d54532dc9d751ad5e17026de3ea2ba0304a238650ebfc4"
+    },
+    "aspell/dict/british-ise.alias": {
+      "sizeBytes": 79,
+      "sha256": "a2e1d864c37f4d614896b3a185a252af1810929fbf77236d2f66fe259fc7e975"
+    },
+    "aspell/dict/en_GB-ize-wo_accents.multi": {
+      "sizeBytes": 111,
+      "sha256": "7d2cc7537e335f11f1531efa9917080741500e7b2cc1fcf0438740331fe48989"
+    },
+    "aspell/dict/british-ize-wo_accents.alias": {
+      "sizeBytes": 90,
+      "sha256": "52258539e34e55939fc4444738fd5a93f553b4fb8b6438eca5bf2a1127dc962a"
+    },
+    "aspell/dict/american.alias": {
+      "sizeBytes": 75,
+      "sha256": "1923f460243b41440009eab007c386ccafb2028805e3786f2a67d2846bf663f1"
+    },
+    "aspell/dict/en_US-wo_accents-only.rws": {
+      "sizeBytes": 102032,
+      "sha256": "b152441627b5ae4c9d793b6eafdc5b11d49b5f17d8187777edde224b5fa52e83"
+    },
+    "aspell/dict/en_GB-ise-wo_accents.multi": {
+      "sizeBytes": 111,
+      "sha256": "8e684607a572d57e283a8a5ee5e390938566854654a273667b3b0d6c7a0ae3f7"
+    },
+    "aspell/dict/en_GB-variant_0.multi": {
+      "sizeBytes": 83,
+      "sha256": "24a876131502317fb35eb5f275f72934f46d10f3dd56228eec093a29e8a20712"
+    },
+    "aspell/dict/en_GB-ize-wo_accents-only.rws": {
+      "sizeBytes": 93648,
+      "sha256": "56b40121b54ca4d04d80ce1085ae9938670b8e984dc35e44d079ebee8a7893aa"
+    },
+    "aspell/dict/en_US-variant_0.multi": {
+      "sizeBytes": 82,
+      "sha256": "af761cb63fcd9c418bccb4a51f5926cecee3e3f5f1379b96f8a59d07e84830ff"
+    },
+    "aspell/dict/american-w_accents.alias": {
+      "sizeBytes": 85,
+      "sha256": "dded1f5fe51f2b62453195b67810183e86c14e693beb6323e2b1ab90ecd8d055"
+    },
+    "aspell/dict/en_GB.multi": {
+      "sizeBytes": 90,
+      "sha256": "43c6fb569953d95d0c745c5cb97eb051a2206ec0d64fc96fa7b0d2d5fa271b98"
+    },
+    "aspell/dict/british-variant_0.alias": {
+      "sizeBytes": 85,
+      "sha256": "2d2753edb6cf2acb9424cab33884e96be7b3e38368fe55821f870ab25e34aacd"
+    },
+    "aspell/dict/australian-variant_0.alias": {
+      "sizeBytes": 85,
+      "sha256": "d4d9737a6d28f62be42c658f05a04bab7abfe7e53e406251ed15ab4c23f74751"
+    },
+    "aspell/dict/canadian-variant_0.alias": {
+      "sizeBytes": 85,
+      "sha256": "e5335a4594e907863ad61a57552b8c362208ce6dd1c391b8ebaad9448e84922d"
+    },
+    "aspell/dict/en_AU-w_accents.multi": {
+      "sizeBytes": 106,
+      "sha256": "53747be66601a6f7f4346ed0909f33787f7674ae9c1d7dfeb9b19ea4cfd6395c"
+    },
+    "aspell/dict/en_AU-variant_1.rws": {
+      "sizeBytes": 73552,
+      "sha256": "dd3767d9b584aa4acf9dec8ea48c17a3bf34c47c021a18b4af6b81179becf3b7"
+    },
+    "aspell/dict/en-variant_0.multi": {
+      "sizeBytes": 80,
+      "sha256": "6d5d0a47fc22d5b217b0edb2dc2ee46ca909f7406d48b85e5d5092289cfdd8ca"
+    },
+    "aspell/dict/en_GB-ise-w_accents-only.rws": {
+      "sizeBytes": 94688,
+      "sha256": "8fa23a20ef271ef95b225c27af4005e63ebea9705cdf4ad1f2c753eec9ee0244"
+    },
+    "aspell/dict/en_GB-ize.multi": {
+      "sizeBytes": 90,
+      "sha256": "52258539e34e55939fc4444738fd5a93f553b4fb8b6438eca5bf2a1127dc962a"
+    },
+    "aspell/dict/en_AU.multi": {
+      "sizeBytes": 86,
+      "sha256": "378f9ecb1ca44c118f7f24ebc0aa0e03930245de523c54a5850ba30a14a3c15b"
+    },
+    "aspell/dict/english-w_accents.alias": {
+      "sizeBytes": 82,
+      "sha256": "94ba7d0428c17c1c01caa4bbb9ea2f178ae521837673ebf3a6efcda1335bd216"
+    },
+    "aspell/dict/en_GB-variant_0.rws": {
+      "sizeBytes": 28128,
+      "sha256": "c356bba227739a9b4d711e92e58cf97f6a393e4d5df02dc43e70eaed3a41e069"
+    },
+    "aspell/dict/en_AU-variant_0.multi": {
+      "sizeBytes": 83,
+      "sha256": "2c80c547688ed7903661469be3bea3cd88c051a5e8b337d9a853024af3db8cbd"
+    },
+    "aspell/dict/en_US-variant_1.multi": {
+      "sizeBytes": 82,
+      "sha256": "d7d4ba91caf0cb0ba1cb73d3e92636edb1498c18cff6d6936cb72c3713b8bcee"
+    },
+    "aspell/dict/en_CA-wo_accents-only.rws": {
+      "sizeBytes": 94064,
+      "sha256": "3352efe1a235160a7ce9d26e663e0c857f42cfe5f92da5f466605d7e3a980b4a"
+    },
+    "aspell/dict/en-common.rws": {
+      "sizeBytes": 2423456,
+      "sha256": "6bdc7a6c0f9b3b8b2dfdb34205fc8fd7816827a0dca10e85e769850f037f6802"
+    },
+    "aspell/dict/british-wo_accents.alias": {
+      "sizeBytes": 86,
+      "sha256": "e544520aba9fab245e76fbc52e1b979a366e7604b7a109dfa1581412cecc50de"
+    },
+    "aspell/dict/british-variant_1.alias": {
+      "sizeBytes": 85,
+      "sha256": "deaf2275129750c6a61deba14e8d1e34dd343b85d36382ca9d3155398c46bb4d"
+    },
+    "aspell/dict/british-ise-wo_accents.alias": {
+      "sizeBytes": 90,
+      "sha256": "43c6fb569953d95d0c745c5cb97eb051a2206ec0d64fc96fa7b0d2d5fa271b98"
+    },
+    "aspell/dict/en-variant_2.multi": {
+      "sizeBytes": 80,
+      "sha256": "6345a48d1f11d96f8f704299a6b6e9ebfdcfd2499077096a7a9160fa4415cf08"
+    },
+    "aspell/dict/en-variant_1.rws": {
+      "sizeBytes": 93440,
+      "sha256": "56fb2d08596ca185a26f9613033a8d380faf1a9232ca1c54a4e2216c775fbf44"
+    },
+    "aspell/dict/english-wo_accents.alias": {
+      "sizeBytes": 83,
+      "sha256": "3158dcdac420cd3ca5c15b7d39fcb1c67ef00f306fa8f0845810141002e0bf74"
+    },
+    "aspell/dict/british-ise-w_accents.alias": {
+      "sizeBytes": 89,
+      "sha256": "ebc2a2c3ab1b4e8ebb3ca1bdef809bff72d488d5a664fd5a2c7ecb177fa9d3dc"
+    },
+    "aspell/dict/en-wo_accents.multi": {
+      "sizeBytes": 104,
+      "sha256": "3ba8e2c725fe8abbe7a021edfabbb0362e1b53c15dcc0296495efb3deff9d4c0"
+    },
+    "aspell/dict/en_CA-variant_1.multi": {
+      "sizeBytes": 83,
+      "sha256": "c7caffbc33d821d345717fe6c003016a5d6778e22f27747a4037c7d11e61aa15"
+    },
+    "aspell/dict/australian-wo_accents.alias": {
+      "sizeBytes": 86,
+      "sha256": "378f9ecb1ca44c118f7f24ebc0aa0e03930245de523c54a5850ba30a14a3c15b"
+    },
+    "aspell/dict/en_GB-wo_accents.multi": {
+      "sizeBytes": 90,
+      "sha256": "43c6fb569953d95d0c745c5cb97eb051a2206ec0d64fc96fa7b0d2d5fa271b98"
+    },
+    "aspell/dict/en_AU-variant_0.rws": {
+      "sizeBytes": 30928,
+      "sha256": "42fc2c562f9517757305598907191638cbe9e891c972494540815c49b826b03a"
+    },
+    "aspell/dict/en_CA-variant_1.rws": {
+      "sizeBytes": 76080,
+      "sha256": "686a160c949e2d0b41082838d38d87c5a6a236a71b9c2c723194c528a4ac6046"
+    },
+    "aspell/dict/american-wo_accents.alias": {
+      "sizeBytes": 86,
+      "sha256": "0b05bab9050764d1b6a533c5841ddd7f505efe38dc6dcc009f01b65757a5aefc"
+    },
+    "aspell/dict/en-variant_2.rws": {
+      "sizeBytes": 102160,
+      "sha256": "6f2e55ffcece0d7cc9d57ca228992bdf319b6bfc0d130d9633f12bb34ffe9d19"
+    },
+    "aspell/dict/en_GB-variant_1.multi": {
+      "sizeBytes": 83,
+      "sha256": "257faa2139e2dd1c17b0046db7d9320771411619c8c27296f8c30ea5a92cb6c9"
+    },
+    "aspell/dict/en-w_accents.multi": {
+      "sizeBytes": 103,
+      "sha256": "4724633644a9bdbf3563cffbc7dd284ea45d7a81b38bc2c53ba729977f87d539"
+    },
+    "aspell/dict/british-w_accents.alias": {
+      "sizeBytes": 85,
+      "sha256": "2d431e645d3c80b488b7cbc82b358a827da5a49477a1d72f9dbb5304871327c0"
+    },
+    "aspell/dict/en_AU-w_accents-only.rws": {
+      "sizeBytes": 106192,
+      "sha256": "163f30f596a5438b5ebb1faae99b54bd98aa46a676e672af0b4d1e5846e51cd4"
+    },
+    "aspell/dict/canadian-wo_accents.alias": {
+      "sizeBytes": 86,
+      "sha256": "16798f890ec51df9af755b4171f48d8c373c6fcf1b39721f544a402f1624d878"
+    },
+    "aspell/dict/en_GB-w_accents.multi": {
+      "sizeBytes": 89,
+      "sha256": "ebc2a2c3ab1b4e8ebb3ca1bdef809bff72d488d5a664fd5a2c7ecb177fa9d3dc"
+    },
+    "aspell/dict/australian-w_accents.alias": {
+      "sizeBytes": 85,
+      "sha256": "b39e288a2a93e48faf2d2aa65ee3f9810499b52d14905c11a36766df05c3e182"
+    },
+    "aspell/dict/australian-variant_1.alias": {
+      "sizeBytes": 85,
+      "sha256": "b40c796b4aff001d1685f584ab4897557eb400b64fba59dee7452eeb9935db06"
+    },
+    "aspell/dict/british-ize.alias": {
+      "sizeBytes": 79,
+      "sha256": "8d3e96574ae71f11364bc7f2e5ad84a2885987950dd040330a9a7d06217af687"
+    },
+    "aspell/dict/en_GB-ise-wo_accents-only.rws": {
+      "sizeBytes": 94688,
+      "sha256": "484daef3cb2f8f12da00e44f2588d428716775ed6571629d4fdc09f00a084ba2"
+    },
+    "aspell/dict/american-variant_0.alias": {
+      "sizeBytes": 85,
+      "sha256": "b3ec34b63eb073f36af5218d026ac944b989ec75a547ba55e6c4fa9cb45b60d9"
+    },
+    "aspell/dict/en-variant_0.rws": {
+      "sizeBytes": 39776,
+      "sha256": "b3cbd5ad336e64d68116e7432f846021ce943c239f632bcb4dcf12bc74c9c0bd"
+    },
+    "aspell/dict/english.alias": {
+      "sizeBytes": 72,
+      "sha256": "18bbdd99ff49e2ea32531cd221e58800261dd09aa0005a0dcf4c7727bd29b95d"
+    },
+    "aspell/dict/en_GB-ise.multi": {
+      "sizeBytes": 90,
+      "sha256": "43c6fb569953d95d0c745c5cb97eb051a2206ec0d64fc96fa7b0d2d5fa271b98"
+    },
+    "aspell/dict/en_CA-variant_0.rws": {
+      "sizeBytes": 39408,
+      "sha256": "578e15229e0506f448746560e42f3776bf5afc8379c8b7d3a6c6eff22b033495"
+    },
+    "aspell/dict/en_CA-w_accents.multi": {
+      "sizeBytes": 106,
+      "sha256": "72d77f719da3bba1b6f9684d4bd2e7c338d3cb8c9ab1661457c9a049159efa71"
+    },
+    "aspell/dict/en_US-wo_accents.multi": {
+      "sizeBytes": 107,
+      "sha256": "e1135801a9ff54e752e9721b7af366ec4b6f4ff5d89bcb964f21377525f531ec"
+    },
+    "aspell/dict/american-variant_1.alias": {
+      "sizeBytes": 85,
+      "sha256": "834e5986f451e652bcc7d8b10f14440b484429822e0bedccf2067153516a828e"
+    },
+    "aspell/dict/british.alias": {
+      "sizeBytes": 75,
+      "sha256": "baf8bcbc7de60f22e36a6fbc872fec24194966e061da91c4b9c15635ff2823e3"
+    },
+    "aspell/dict/english-variant_1.alias": {
+      "sizeBytes": 82,
+      "sha256": "d7d4ba91caf0cb0ba1cb73d3e92636edb1498c18cff6d6936cb72c3713b8bcee"
+    },
+    "aspell/dict/canadian-w_accents.alias": {
+      "sizeBytes": 85,
+      "sha256": "e39712ff9407506d7e98e3188c79256e821f4982afcbd332720d139bf804b533"
+    },
+    "aspell/dict/british-ize-w_accents.alias": {
+      "sizeBytes": 89,
+      "sha256": "1cb45c5ed5d4d05ca885e275e9cc96d471edc8fa14de76ec376867c650f31eec"
+    },
+    "aspell/dict/en_GB-ize-w_accents.multi": {
+      "sizeBytes": 110,
+      "sha256": "8b477848f9cf22e308f0835a2ba8f72f88576a6e30c2c355ce15cd3aceb79c0f"
+    },
+    "aspell/dict/en_GB-ize-w_accents-only.rws": {
+      "sizeBytes": 93648,
+      "sha256": "07852e67f128219f614bd71ac633ad3220180bfa7f6ea5831b4980a8e4b9bfd4"
+    },
+    "aspell/dict/canadian.alias": {
+      "sizeBytes": 75,
+      "sha256": "f3156de56e2d81f775a65449e15537d841388941974012cb566045edc4a6fa5e"
+    },
+    "aspell/dict/en-variant_1.multi": {
+      "sizeBytes": 80,
+      "sha256": "4f22051d21365b9e596efaa2d41f4791681855775f6ba1ba17b6e2d10dcbf5b3"
+    },
+    "aspell/dict/en_AU-variant_1.multi": {
+      "sizeBytes": 83,
+      "sha256": "2fa2acdcf611120b9c079a50cdc84f6a861488ad9c996197d23e3c8b7d4e2442"
+    },
+    "aspell/dict/en.multi": {
+      "sizeBytes": 83,
+      "sha256": "3158dcdac420cd3ca5c15b7d39fcb1c67ef00f306fa8f0845810141002e0bf74"
+    },
+    "aspell/dict/australian.alias": {
+      "sizeBytes": 75,
+      "sha256": "e227abf0f34f27815888cf51f902031b8f4fe619a9567a6b0f2d3b1da703602c"
+    },
+    "aspell/dict/en_US-w_accents.multi": {
+      "sizeBytes": 106,
+      "sha256": "6399e3c236bc708f4550268f6ca61ba4a0d04f8e97854a223fd6d0804471cdfa"
+    },
+    "aspell/dict/en-wo_accents-only.rws": {
+      "sizeBytes": 176080,
+      "sha256": "ba5fc3ec5a28856d7214cd0e116d3eeb90a34cc2214ff7fcf380c9d5fde4b8f8"
+    },
+    "aspell/dict/en_AU-wo_accents-only.rws": {
+      "sizeBytes": 106192,
+      "sha256": "1654177d5df36761cd578f05d9fb15f049f5abfaf278e60cb5e8d0977928cd55"
+    },
+    "aspell/dict/en_CA-wo_accents.multi": {
+      "sizeBytes": 107,
+      "sha256": "cd4a91496f47edc67f6dc76dbdf83157c5d341f803c33e8edf936fc26df34553"
+    },
+    "aspell/dict/en_CA.multi": {
+      "sizeBytes": 86,
+      "sha256": "16798f890ec51df9af755b4171f48d8c373c6fcf1b39721f544a402f1624d878"
+    },
+    "aspell/dict/english-variant_2.alias": {
+      "sizeBytes": 82,
+      "sha256": "892d8850982097a99c737316472d4dbe5b3fb9ab0ec89eb9f60a382ac08cc7d3"
+    },
+    "copying/wxStEditor/copying.txt": {
+      "sizeBytes": 2529,
+      "sha256": "ed299fa3cbc90bd8928d7530d93f4fa3e48375d73e6ea323b0bbb9083acd527f"
+    },
+    "copying/Aspell/SCOWL-README": {
+      "sizeBytes": 25903,
+      "sha256": "3387cb78fb5d674fcaae4976ce1d1fc08209f6f878e16369cfe8f51884a34177"
+    },
+    "copying/Aspell/license.txt": {
+      "sizeBytes": 954,
+      "sha256": "ee0700fdb961a31ae6ea8e01559e7a976a14772e1f83a1aded79a2a9528b8ccd"
+    },
+    "copying/Aspell/dict.txt": {
+      "sizeBytes": 11151,
+      "sha256": "a9ce8ea9314ab859a9ec5c6847783a6e9d4ad3e69a72b4bec9976eb2229e20ba"
+    },
+    "copying/boost_shared_ptr/copying.txt": {
+      "sizeBytes": 457,
+      "sha256": "49c5332692efd657cb4231aa57653af1c9945e6110d57b29a918542b227137d1"
+    },
+    "copying/ximian/OpenOffice_icons-lic.txt": {
+      "sizeBytes": 771,
+      "sha256": "919a48c3146b9d128bf228213f3e0a46ef8dd00f76a2e415c80f0859c32f3d3c"
+    },
+    "copying/wxAUI/copying.txt": {
+      "sizeBytes": 2719,
+      "sha256": "652f0698d3ab5be26bbfcd02bc2b75505bf406bccf4ef4d0631a71f4839be0b7"
+    },
+    "copying/xmlcopyeditor/copying.txt": {
+      "sizeBytes": 744,
+      "sha256": "a9c68e5082e3184f9a8aa39da77f7af0d862593080941bc4d3179a27ff2c064f"
+    },
+    "copying/Apache/LICENSE-2.0": {
+      "sizeBytes": 22522,
+      "sha256": "358d135b584f59a7aa5f25eadf73085b74341ab1db7dfb52bdf18d5683d9032b"
+    },
+    "copying/Scintilla/scintilla-lic.txt": {
+      "sizeBytes": 852,
+      "sha256": "13ed5034b26166e4166cce6534ff0c793217a45c9d266dceb78aa5d88cecefd7"
+    },
+    "copying/libxml2/libxml2-lic.txt": {
+      "sizeBytes": 1320,
+      "sha256": "201aac9f85b76ada4459121ef2ad96abab1f73c136f60826c984f5f5b6fd0fbf"
+    },
+    "copying/Expat/copying.txt": {
+      "sizeBytes": 1212,
+      "sha256": "9ab7cc64eb220234030243fa456e50bba02f56ef3ca37e274a884e123e75a3bc"
+    },
+    "copying/libxslt/libxslt-lic.txt": {
+      "sizeBytes": 1090,
+      "sha256": "de17575171732693def66b26515971334bbafc0dac699b1ef4262abcff18e453"
+    },
+    "copying/PCRE/LICENCE.txt": {
+      "sizeBytes": 2583,
+      "sha256": "2dbc1203f2910471c7ae97c7d5bb2e42428fd90d7b8f64ccc2552e187c69bf19"
+    },
+    "copying/PCRE/COPYING.txt": {
+      "sizeBytes": 2583,
+      "sha256": "2dbc1203f2910471c7ae97c7d5bb2e42428fd90d7b8f64ccc2552e187c69bf19"
+    },
+    "copying/wxStyledTextCtrl/copying.txt": {
+      "sizeBytes": 3206,
+      "sha256": "da8bcfd12d3cd746c09f373ef9fa218a6595c85341a72e001709b4a45668d8e7"
+    },
+    "copying/Apache/LICENSE-2_files/asf_logo_wide.gif": {
+      "sizeBytes": 5866,
+      "sha256": "cbdc976eb68db3d10cabafc93ad8faeaca432fdd8b83e47b1d57feb954a61615"
+    },
+    "copying/Apache/LICENSE-2_files/style.css": {
+      "sizeBytes": 1073,
+      "sha256": "6b570589d14278f871f799f778051643a500e3e8078c0be029ab85f13064e62e"
+    },
+    "copying/Apache/LICENSE-2_files/redarrow.gif": {
+      "sizeBytes": 137,
+      "sha256": "be7761c3031ee8b0030d6958a747fc640311d3dfb807d6dcf49ebdf80b4ce185"
+    }
+  },
+  "savedXml": {
+    "file": "output/original-edited.xml",
+    "sizeBytes": 169,
+    "sha256": "966143a9a1c3b9a1fd864ba5bfaaa397cb1dfbc44c81ec6ffde2d2c01177751d",
+    "utf8": "﻿<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<document kind=\"original\">\n  <title>中文内容保留</title>\n  <note>AFTER ORIGINAL42</note>\n  <value>42</value>\n</document>\n"
+  },
+  "finalDataAndConfigurationPins": {
+    "system.reg": {
+      "sizeBytes": 3423303,
+      "sha256": "8f5b6e82202480c2fcf04e66d8ced792bbed50e02a9df40664efa5ad216a3400"
+    },
+    "user.reg": {
+      "sizeBytes": 102745,
+      "sha256": "1e9e04255ee11ce651da48125562853457aab178aeb6b9594a936b43b9948d5b"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "6b77adc304341425f2a96c790171810e1736b55869879cc4dbce86c9c36d6628"
+    },
+    "drive_c/users/forge/AppData/Roaming/xmlcopyeditor.ini": {
+      "sizeBytes": 1382,
+      "sha256": "ae5370a121552c9ff9b0d7f0b7e96fcd509187978d2489f642f9442ec4c4ecbf"
+    },
+    "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/XML Copy Editor/XML Copy Editor Help.lnk": {
+      "sizeBytes": 485,
+      "sha256": "415be63ccaeeafe6911a276c205570d8d7c21e0b9dd394f3bfabb924525b8335"
+    },
+    "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/XML Copy Editor/XML Copy Editor.lnk": {
+      "sizeBytes": 418,
+      "sha256": "3716ad598250629f8c50245cd68f6d926e402ff9853eb57e9a7d153aadee3682"
+    },
+    "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/XML Copy Editor/Uninstall XML Copy Editor.lnk": {
+      "sizeBytes": 399,
+      "sha256": "dcc5744099e09c1c67e92d0c9fca49a600b207cc7f1870e42431a55466200e15"
+    },
+    "drive_c/ForgeQA/output/original-edited.xml": {
+      "sizeBytes": 169,
+      "sha256": "966143a9a1c3b9a1fd864ba5bfaaa397cb1dfbc44c81ec6ffde2d2c01177751d"
+    },
+    "drive_c/ForgeQA/input/中文文档.xml": {
+      "sizeBytes": 156,
+      "sha256": "09276dc1aeabb82ff3abd6f9206ae486f8fb74e72caca6c33c5b444664bda84e"
+    }
+  },
+  "jobs": {
+    "install": {
+      "id": "job-1791715752381-1",
+      "generationId": "gen-job-1791715752381-1",
+      "kind": "install",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 115851,
+          "requestId": "job-1791715752381-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5950,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791715752381-1/prefix",
+          "requestId": "job-1791715752381-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5992,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791715752381-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "launch": {
+      "id": "job-1791715794995-2",
+      "generationId": "gen-job-1791715752381-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 116266,
+          "requestId": "job-1791715794995-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 325809,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791715752381-1/prefix",
+          "requestId": "job-1791715794995-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 325851,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791715794995-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    "reopen": {
+      "id": "job-1791716185508-3",
+      "generationId": "gen-job-1791715752381-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 116860,
+          "requestId": "job-1791716185508-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 48786,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791715752381-1/prefix",
+          "requestId": "job-1791716185508-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 48828,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791716185508-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  },
+  "guiAccepted": true,
+  "explicitNewProcessReopenPassed": true,
+  "inputUnchanged": true,
+  "published": false,
+  "countsAsCompleted": false,
+  "marketLifecyclePending": true,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "2046403817c573a24156b2a50aa0264f3ff6355b7a94fd9809e56fe5562c2ef0",
+    "coreJobs": 284,
+    "fullStoreRows": 90
+  },
+  "date": "2026-10-11",
+  "version": "1.3.1.0",
+  "screenshots": {
+    "about-version.jpg": {
+      "sizeBytes": 30104,
+      "sha256": "4d7409f2414fa1915d58451f30a57fb4dbd7985a22b4e5e0177d7addc061b101"
+    },
+    "original-edited-wellformed.jpg": {
+      "sizeBytes": 24421,
+      "sha256": "1f9cedc65d40b6f3cae5e7dd6b5d6513889b78229eb795350ae6fa2e8f00c5cb"
+    },
+    "original-open-readable.jpg": {
+      "sizeBytes": 19573,
+      "sha256": "3ec79af82f95881453e7f4c767b8bdb95c4f7823b7b222aba6666bfdab9c9398"
+    },
+    "original-open.jpg": {
+      "sizeBytes": 17160,
+      "sha256": "1fa87295ea9a33a1d5af3702c60d099f91230f87650aec585ef86ecfc5dfeb41"
+    },
+    "original-reopen-wellformed.jpg": {
+      "sizeBytes": 21545,
+      "sha256": "3c646a0e0d625c4884be8c61bb2e9ef3f5771b719f9da42f19d4447368764505"
+    },
+    "original-saved.jpg": {
+      "sizeBytes": 23951,
+      "sha256": "45acf5e3ca06980e3f1d876eee61aff26640a68455b56fc22afee2bc895b227e"
+    }
+  },
+  "outputsWrittenByApplicationGui": true,
+  "verificationHelperWroteOutputs": false,
+  "wellFormednessGuiObserved": true,
+  "versionAboutObserved": true,
+  "limitations": [
+    "Only a small three-child UTF-8 XML workflow: Chinese-name input opened, ordinary BEFORE to AFTER replacement, ASCII ORIGINAL42 append, GUI well-formedness check, GUI Save As to ASCII path, and explicit close/open in a fresh formal process. Actual saved output is UTF-8 BOM/LF; input bytes unchanged. No complete XML specification verification.",
+    "Original formal and future independent market workflows only; malformed XML, XSD/DTD/RelaxNG validation, XSLT/XPath, global replacement, namespaces/attributes/base64, spell checking, printing, large files, other encodings, direct Chinese keyboard input and advanced XML functions unverified.",
+    "Main fixed source GPL-2.0-or-later; installed main-program copying.txt exactly equals specific fixed source member. Root COPYING only points to acknowledgements. Complete wxWidgets, Xerces/Xalan, PCRE, Aspell, Hunspell, DocBook/DTD and all bundled licensing closure unverified.",
+    "No Core/program repair, global context, launcher environment/working directory, font, program/DLL/runtime replacement. Application-native font increase used for readability. Unattended startup and GUI update/rollback buttons unverified.",
+    "Installer local SHA-256 fixed from official HTTPS download; no upstream installer checksum, OpenPGP or Authenticode verification. Source SHA-256/size matches distinct Debian alias in official DSC; DSC OpenPGP unverified.",
+    "Guest network download, fresh-machine registration, migration, cross-version upgrade unverified. Independent market generation, cached same-version update, exact rollback and normal service restart pending at freeze."
+  ]
+}

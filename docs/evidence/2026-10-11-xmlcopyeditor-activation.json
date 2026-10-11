@@ -1,0 +1,55 @@
+{
+  "activated": true,
+  "metadataVersion": 49,
+  "rootVersion": 1,
+  "entries": 39,
+  "coreJobs": 284,
+  "fullStoreRows": 90,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-xmlcopyeditor-20261011.acceptance.json#xmlcopyeditor",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "7ba6900595d0ca68b79b2c14a43538d1190bf717228651701d40fc693660caf4",
+        "size": 20046337,
+        "target": "xmlcopyeditor-1.3.1.0-x64-install.exe",
+        "url": "https://downloads.sourceforge.net/project/xml-copy-editor/xmlcopyeditor-windows/1.3.1.0/xmlcopyeditor-1.3.1.0-x64-install.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "xmlcopyeditor"
+    },
+    "id": "xmlcopyeditor",
+    "license": "GPL-2.0-or-later (main source; full bundle closure unverified)",
+    "name": {
+      "en": "XML Copy Editor",
+      "zhCN": "XML Copy Editor XML 编辑器"
+    },
+    "origin": "https://xml-copy-editor.sourceforge.io/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Zane U. Ji",
+    "summary": {
+      "en": "Limited small XML edit, well-formedness check, save and fresh-process reopen tested; advanced XML functions unverified.",
+      "zhCN": "有限小型 XML 编辑、良构检查、保存和新进程重开已测；高级 XML 功能未验收"
+    },
+    "version": "1.3.1.0"
+  },
+  "installed": {
+    "appId": "xmlcopyeditor",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "1.3.1.0"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "5a97b6e94685599e374860b2c96f4fb44169515bf83099d5980261f1617e6a96",
+    "coreJobs": 284,
+    "fullStoreRows": 90
+  }
+}

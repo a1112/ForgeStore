@@ -370,6 +370,15 @@
       "signedCatalogue": "catalogue/candidate-v39/tuf",
       "publication": "docs/evidence/2026-10-11-qxmledit-publication.json",
       "limitation": "Only two small Chinese-name UTF8 three-child XML tree note edits, ASCII additions, GUI XML Save As, explicit new-process reading and independent IPC cached same-version update/exact original rollback/normal Core-Store restart accepted. Manual LGPL notice and setup/welcome interaction. Schema/XSLT/advanced XML, direct Chinese typing, other formats/encodings/large files, complete bundled licences, guest network, fresh registration, migration, cross-version and unattended launch unverified. Main fixed LGPL-2.0-or-later source, upstream special linking exception declared, installed COPYING exact fixed raw bytes."
+    },
+    {
+      "id": "xmlcopyeditor",
+      "version": "1.3.1.0",
+      "sha256": "7ba6900595d0ca68b79b2c14a43538d1190bf717228651701d40fc693660caf4",
+      "evidence": "docs/evidence/windows-xmlcopyeditor-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v40/tuf",
+      "publication": "docs/evidence/2026-10-11-xmlcopyeditor-publication.json",
+      "limitation": "Only two small three-child Chinese-name UTF-8 XML fixtures, ordinary edit/ASCII append, GUI well-formedness check, GUI Save As to ASCII BOM/LF output paths, explicit new-process reopen and local cached IPC update/exact rollback/restart accepted. Inno uninstall log differs across generations; all 499 files individually pinned, 498 raw matches. Original system.reg/user.reg changed after third GUI and new actual pins separately fixed, cause unestablished. Main GPL-2.0-or-later only; full bundle licensing, advanced validation/XSLT, direct Chinese input, online download, fresh registration, migration/cross-version/unattended and GUI update/rollback buttons unverified."
     }
   ],
   "queue": [
@@ -542,12 +551,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next official sourced/licensed/pinned candidate. QXmlEdit limited small XML tree note edit/ASCII addition/save/fresh reopen and independent market lifecycle accepted, candidate-v39/root1/role48,36 Windows apps,12 unresolved,281 full Core tasks/90 full Store SQLite rows. Run rolling-current-state-qxmledit-20261011.py only through strict rolling-guest-20261010.py inside guest. Preserve immutable evidence and all trust history; assert actual preconditions, stop dependent changes after false or failed gate.",
+  "next": "Select next official sourced/licensed/pinned candidate. XML Copy Editor limited small XML edit/well-formedness/save/fresh reopen and independent local market lifecycle accepted, candidate-v40/root1/role49,37 Windows apps,12 unresolved,288 full Core tasks/92 full Store SQLite rows. Run rolling-current-state-xmlcopyeditor-20261011.py only through strict rolling-guest-20261010.py inside guest. Preserve immutable evidence and all trust history. Original registry byte changes and per-generation Inno uninstall logs separately pinned; stop dependent changes after failed gates. QXmlEdit prior commit and this round push await refreshed GitHub authentication.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 36,
+    "acceptedLocalMarket": 37,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -555,25 +564,25 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v39/tuf",
-    "metadataVersion": 48,
-    "catalogueEntries": 38,
-    "acceptedDistinctWindowsApps": 36,
+    "signedCatalogue": "catalogue/candidate-v40/tuf",
+    "metadataVersion": 49,
+    "catalogueEntries": 39,
+    "acceptedDistinctWindowsApps": 37,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-qxmledit-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-focuswriter-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-qxmledit-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-qxmledit-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-qxmledit.md",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-xmlcopyeditor.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
-  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-focuswriter-runtime-recovery.json",
+  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-qxmledit.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-qxmledit-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-xmlcopyeditor.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

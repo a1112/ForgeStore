@@ -90,3 +90,11 @@ docs/evidence/2026-10-11-qxmledit/* -text whitespace=cr-at-eol
 # Preserve exact fixed upstream source EOF and the reviewed report bytes.
 docs/evidence/2026-10-11-qxmledit/fixed-source-main.cpp -text whitespace=cr-at-eol,-blank-at-eof
 docs/windows-rolling-20261011-qxmledit.md -text whitespace=cr-at-eol
+
+catalogue/candidate-v40/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-xmlcopyeditor-20261011.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-xmlcopyeditor*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-xmlcopyeditor/* -text whitespace=cr-at-eol
+docs/windows-rolling-20261011-xmlcopyeditor.md -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-xmlcopyeditor/fixed-source-main.cpp -text whitespace=cr-at-eol,-blank-at-eol,-space-before-tab
+docs/evidence/2026-10-11-xmlcopyeditor/fixed-source-root-COPYING -text whitespace=cr-at-eol,-blank-at-eof

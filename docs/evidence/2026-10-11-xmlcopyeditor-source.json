@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "xmlcopyeditor",
+  "fixedVersion": "1.3.1.0",
+  "officialSite": "https://xml-copy-editor.sourceforge.io/",
+  "fixedOfficialReleaseFolders": [
+    "https://sourceforge.net/projects/xml-copy-editor/files/xmlcopyeditor-windows/1.3.1.0/",
+    "https://sourceforge.net/projects/xml-copy-editor/files/xmlcopyeditor-linux/1.3.1.0/"
+  ],
+  "downloads": [
+    {
+      "fileName": "xmlcopyeditor-1.3.1.0-x64-install.exe",
+      "url": "https://downloads.sourceforge.net/project/xml-copy-editor/xmlcopyeditor-windows/1.3.1.0/xmlcopyeditor-1.3.1.0-x64-install.exe",
+      "sizeBytes": 20046337,
+      "sha256": "7ba6900595d0ca68b79b2c14a43538d1190bf717228651701d40fc693660caf4",
+      "initialResolvedMirrorUrlNotRecorded": true
+    },
+    {
+      "fileName": "xmlcopyeditor-1.3.1.0.tar.gz",
+      "url": "https://downloads.sourceforge.net/project/xml-copy-editor/xmlcopyeditor-linux/1.3.1.0/xmlcopyeditor-1.3.1.0.tar.gz",
+      "sizeBytes": 5273837,
+      "sha256": "e871ca97b86acaf177809f6f9a32e34d3e3da6b27c2a1104574a8fb097d07c91",
+      "initialResolvedMirrorUrlNotRecorded": true,
+      "officialPublishedSha256Matched": true,
+      "checksumReferencedName": "xmlcopyeditor_1.3.1.0.orig.tar.gz",
+      "publishedChecksumNamesDifferentSourceAlias": true
+    },
+    {
+      "fileName": "xmlcopyeditor_1.3.1.0-1.dsc",
+      "url": "https://downloads.sourceforge.net/project/xml-copy-editor/xmlcopyeditor-linux/1.3.1.0/xmlcopyeditor_1.3.1.0-1.dsc",
+      "sizeBytes": 2908,
+      "sha256": "a06ed244e1b73222e10f589917d2d8e337a924d4b97396d2404e980992686377",
+      "initialResolvedMirrorUrlNotRecorded": true
+    }
+  ],
+  "sourceChecksum": {
+    "dscReference": "2026-10-11-xmlcopyeditor/xmlcopyeditor_1.3.1.0-1.dsc",
+    "dscSha256": "a06ed244e1b73222e10f589917d2d8e337a924d4b97396d2404e980992686377",
+    "publishedFileName": "xmlcopyeditor_1.3.1.0.orig.tar.gz",
+    "actualDownloadedName": "xmlcopyeditor-1.3.1.0.tar.gz",
+    "sha256AndSizeExactlyMatchDistinctAlias": true,
+    "openPgpSignatureVerified": false
+  },
+  "mainProgramLicense": "GPL-2.0-or-later",
+  "licenseDeclarationMember": "src/xmlcopyeditor.cpp",
+  "fixedSourceMembers": {
+    "src/xmlcopyeditor.cpp": {
+      "reference": "2026-10-11-xmlcopyeditor/fixed-source-main.cpp",
+      "sizeBytes": 178542,
+      "sha256": "c3e40bdc3933879a591291e04897280f8b3f10daedf32698473541680b213ba7"
+    },
+    "src/xmlcopyeditor.iss": {
+      "reference": "2026-10-11-xmlcopyeditor/fixed-source-installer.iss",
+      "sizeBytes": 14602,
+      "sha256": "ac6d2b38137a0cf7ace05c2f26577ffd082aec980d427a064a94a4c382dba22a"
+    },
+    "src/copying/xmlcopyeditor/copying.txt": {
+      "reference": "2026-10-11-xmlcopyeditor/fixed-source-main-copying.txt",
+      "sizeBytes": 744,
+      "sha256": "a9c68e5082e3184f9a8aa39da77f7af0d862593080941bc4d3179a27ff2c064f"
+    },
+    "COPYING": {
+      "reference": "2026-10-11-xmlcopyeditor/fixed-source-root-COPYING",
+      "sizeBytes": 142,
+      "sha256": "b86a1b6e59c29cfebe3e3eb3f1e860cda15c0fea64c91b0043ed7dcff8e5250f"
+    },
+    "gpl-2.0.txt": {
+      "reference": "2026-10-11-xmlcopyeditor/fixed-source-gpl-2.0.txt",
+      "sizeBytes": 18326,
+      "sha256": "9f2e250993c6206fac643824e05e5a0d7d3e0895d9e09a5ce4b12bc2610afc11"
+    },
+    "README.md": {
+      "reference": "2026-10-11-xmlcopyeditor/fixed-source-README.md",
+      "sizeBytes": 132,
+      "sha256": "0d0143b7e625d5adcf16b4bd2aefc053826dad44e194e605edf2a298b6e09876"
+    },
+    "AUTHORS": {
+      "reference": "2026-10-11-xmlcopyeditor/fixed-source-AUTHORS",
+      "sizeBytes": 94,
+      "sha256": "69e7da88cf1d8b886e52b078563fc7f783f08995be30fefaed7dcf2b0bec8729"
+    }
+  },
+  "installedMainLicenseRawEqual": true,
+  "rootCopyingIsAcknowledgementPointerNotFullGplText": true,
+  "allBundledLicensesVerified": false,
+  "installerUpstreamChecksumVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerFormat": "Inno Setup",
+  "installerArguments": [
+    "/VERYSILENT",
+    "/SUPPRESSMSGBOXES",
+    "/NORESTART",
+    "/SP-",
+    "/DIR=C:\\XMLCopyEditor",
+    "/TASKS=disable_registry"
+  ],
+  "installerArgumentUtf8Hex": [
+    "2f5645525953494c454e54",
+    "2f53555050524553534d5347424f584553",
+    "2f4e4f52455354415254",
+    "2f53502d",
+    "2f4449523d433a5c584d4c436f7079456469746f72",
+    "2f5441534b533d64697361626c655f7265676973747279"
+  ],
+  "installerSelectedTask": "disable_registry",
+  "noDefaultFileAssociationClaim": "Native /TASKS=disable_registry selected; actual registry task entries independently checked separately.",
+  "initialMirrorRedirectUrlsNotRecorded": true,
+  "downloadFailures": [
+    {
+      "phase": "first-concurrent-urllib-download",
+      "error": "DSC redirected TLS handshake raised FileNotFoundError / URLError. Installer and source completed and were preserved; no installation submitted. Same fixed DSC downloaded using native curl with normal TLS verification; underlying Python TLS cause not established."
+    },
+    {
+      "phase": "source-DSC-filename-assertion",
+      "error": "Initial helper expected download tar.gz name in DSC; actual DSC references Debian orig.tar.gz alias. Assertion stopped before rename/extraction. Actual source bytes and size must match the distinct alias checksum; raw DSC and failed helper preserved. Host 7-Zip guessed path also absent; no archive execution or installation occurred."
+    }
+  ],
+  "preparationFailures": [
+    {
+      "stage": "frozen-baseline-read",
+      "error": "KeyError mutablePaths; actual key mutablePathsForNextRound",
+      "noGuestMutation": true,
+      "noSourceExtraction": true
+    },
+    {
+      "stage": "read-stage-template",
+      "error": "Requested helper path absent",
+      "noGuestMutation": true
+    }
+  ],
+  "notClaimedLatest": true
+}

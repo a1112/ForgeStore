@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-11",
+  "failures": [
+    {
+      "phase": "first-concurrent-urllib-download",
+      "error": "DSC redirected TLS handshake raised FileNotFoundError / URLError. Installer and source completed and were preserved; no installation submitted. Same fixed DSC downloaded using native curl with normal TLS verification; underlying Python TLS cause not established."
+    },
+    {
+      "phase": "source-DSC-filename-assertion",
+      "error": "Initial helper expected download tar.gz name in DSC; actual DSC references Debian orig.tar.gz alias. Assertion stopped before rename/extraction. Actual source bytes and size must match the distinct alias checksum; raw DSC and failed helper preserved. Host 7-Zip guessed path also absent; no archive execution or installation occurred."
+    },
+    {
+      "stage": "frozen-baseline-read",
+      "error": "KeyError mutablePaths; actual key mutablePathsForNextRound",
+      "noGuestMutation": true,
+      "noSourceExtraction": true
+    },
+    {
+      "stage": "read-stage-template",
+      "error": "Requested helper path absent",
+      "noGuestMutation": true
+    },
+    {
+      "phase": "before-checkpoint-library-label",
+      "error": "exec of prior library reused p variable. First stage receipt reported prior FocusWriter library digest, while correct new library was staged. Readback rehashed exact XML Copy Editor path and matched 3fc6617c... before installation. First receipt preserved.",
+      "firstReceipt": {
+        "checkpoint": {
+          "file": "before.json",
+          "sha256": "9dba64c5c86fcdb811076fbab996b03264482bbbd15daabe6615df1c1f22410e",
+          "coreJobs": 281,
+          "fullStoreRows": 90
+        },
+        "priorFixedDataAndFieldsMatched": true,
+        "librarySha256": "5ee4ed5e605b3d481ce09d396089ed192ef95e0fc283d2eabaaedd2943c2ad76"
+      },
+      "correctedReadback": {
+        "checkpointSha256": "9dba64c5c86fcdb811076fbab996b03264482bbbd15daabe6615df1c1f22410e",
+        "coreJobs": 281,
+        "fullStoreRows": 90,
+        "librarySha256": "3fc6617cbc5bdb0da6a73f17659f25e83dda1e9791caebb5b6259db4104d0a94",
+        "priorFixedDataAndFieldsMatched": true,
+        "correctsStageReceiptLibraryLabelOnly": true,
+        "originalReceiptPreserved": true
+      }
+    },
+    {
+      "phase": "optional-ui-inspection",
+      "error": "Unsupported rollingTab.browser property lookup failed; existing browser ID was then used only to read viewport guidance. Viewport was not changed. Two text/label selectors for generic noVNC control handle found no match; read-only DOM title/id lookup and later coordinate interaction used. No native app or shell GUI input fallback."
+    },
+    {
+      "phase": "gui-shortcuts-and-noVNC-overlay",
+      "error": "Ctrl+plus, Ctrl+H and Ctrl+Shift+S did not perform the intended commands. Actual source/menu shortcuts Ctrl+U, Ctrl+R and F12 used. Expanded noVNC bar intercepted menu clicks; editor refocused and File/Exit invoked via Alt+F then X. Both actual saved XML contents independently verified; no claim of the ineffective shortcut tests."
+    },
+    {
+      "phase": "original-save-job-query",
+      "error": "Helper assumed jobs.get returned a job envelope; KeyError job occurred after file/pin checks, before receipt save or dependent mutation. Correct jobs.poll envelope used in v2, original failed helper preserved."
+    },
+    {
+      "phase": "market-install-raw-equality",
+      "error": "Unqualified comparison of all 499 files stopped at unins000.dat before fixture or GUI creation. Read-only inspection found 498 exact matches and only a generated Inno uninstall log differed, 18 byte offsets, both 70133 bytes. Cause not established; both generations individually pin all 499 files. Uninstaller functionality unverified.",
+      "evidence": "2026-10-11-xmlcopyeditor-market-install-diagnostic.json"
+    },
+    {
+      "phase": "market-diagnostic-print",
+      "error": "After successful private checkpoint and receipt write, compact print passed unsupported keyword arguments to json.dumps and failed. Original diagnostic and checkpoint read back exactly before any retry/GUI. No repeated installation or forged replacement checkpoint."
+    },
+    {
+      "phase": "locked-screen-open-shortcut",
+      "error": "Market initial screenshot was idle lock; premature Ctrl+O reached login transition, not app open. Fresh empty account input then confirmed, normal authorized existing account login completed once. No failed password attempt or authentication/lock-setting change; no lock screen counted as GUI acceptance."
+    },
+    {
+      "phase": "pre-restart-original-registry-pin",
+      "error": "Third normal original GUI exit changed system.reg and user.reg raw bytes. Strict v3 pin check stopped before before-restart checkpoint and before any service restart. Original receipts preserved; byte-change cause not established, earlier raw registry bytes unavailable for content diff. Read-only inspection fixed both new actual pins separately, then strict v4 validated them before restart. No claim of original registry raw equality across third GUI.",
+      "evidence": "2026-10-11-xmlcopyeditor-registry-change.json"
+    },
+    {
+      "phase": "first-registry-diagnostic-gate",
+      "error": "Initial read-only diagnostic expected only system.reg changed and failed before writing private raw snapshots/checkpoint. Full pin inspection identified system.reg and user.reg, same sizes but distinct digests. Correct bounded two-file gate used; market, program/input/output/other pins stayed equal."
+    },
+    {
+      "phase": "git-push-authentication",
+      "error": "Previous QXmlEdit normal push failed due invalid existing GitHub authentication. Existing pending device-login attempt expired without completed user verification. No token/private credential stored or printed; current round remains local until authentication is refreshed."
+    },
+    {
+      "phase": "host-report-generator-source-encoding",
+      "error": "Initial helper and subsequent py_compile reported Non-UTF-8 source at a long Chinese report line. Independent strict UTF-8 decoding succeeded; adding an explicit UTF-8 coding cookie in a new helper compiled and ran successfully. Underlying parser cause not established. Initial failures occurred before any report/ledger mutation; failed helper preserved."
+    }
+  ],
+  "allOriginalGuiSourceAndSignedReceiptsPreserved": true,
+  "dependentMutationsStoppedAfterFailedAssertions": true,
+  "noPrivateCheckpointContentsIncluded": true
+}
