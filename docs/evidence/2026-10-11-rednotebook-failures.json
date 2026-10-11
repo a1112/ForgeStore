@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "rednotebook",
+  "defaultClippedGuiAccepted": false,
+  "defaultRenderingScreenshot": "2026-10-11-rednotebook/01-default-menu-clipped.jpg",
+  "singleVariableDiagnosticOnly": true,
+  "firstSaveFailure": {
+    "actual": {
+      "path": "ForgeQA/中文日记/2026-10.txt",
+      "sizeBytes": 87,
+      "sha256": "736bfe158bcfc23528b2c4606e15bf2905f9dd31edda2e3a03be196aba57d271",
+      "text": "11:\n  text: '中文内容保留\n\n    BEFOREAFTER\n\n    ORIGINAL42\n\n\n    VALUE42\n\n    a'\n"
+    },
+    "parsedActual": {
+      "11": {
+        "text": "中文内容保留\nBEFOREAFTER\nORIGINAL42\n\nVALUE42\na"
+      }
+    },
+    "expected": {
+      "11": {
+        "text": "中文内容保留\nAFTER\nVALUE42\nORIGINAL42\n"
+      }
+    },
+    "matchesExpected": false,
+    "parser": "PyYAML 6.0.2 safe_load (isolated host QA dependency)",
+    "accepted": false,
+    "nextReopenOrPublicationNotExecuted": true
+  },
+  "secondSaveFailure": {
+    "file": "original-edited-input-before-tail-correction.txt",
+    "actualParsedText": "中文内容保留\nAFTER\nVALUE42\nORIGINAL42\n\n",
+    "expectedFinalText": "中文内容保留\nAFTER\nVALUE42\nORIGINAL42\n",
+    "outputBeforeCorrectionSizeBytes": 80,
+    "outputBeforeCorrectionSha256": "d6592389cb263b0e25b720b40166fec58de34cf3ebeb21661b176857e6b0fb06",
+    "fixedViaGuiSelectionAndReturnThenSave": true,
+    "finalSavedSizeBytes": 79,
+    "finalSavedSha256": "3aaf74cc1603d1972e2d2a0df4ff6d4858c748934d4ab196d32e8f8091413ff7"
+  },
+  "otherFailures": [
+    "Default shortcut attempts did not produce intended selection/navigation; exact cause not established. Read actual saved data before dependent reopen/publication.",
+    "Font-picker input appended 24 to 10; Ctrl+A/Backspace attempts did not give expected result; picker and preferences cancelled. Later only isolated application config mainFont=Sans 24 prepared, not GUI preferences acceptance.",
+    "Initial diagnostic checkpoint helper incorrectly expected event kind wineserverStopped; failed before mutation. Correct actual wine-server-stop-requested plus successful final exit used in v2.",
+    "Host quoted Python helper builder failed SyntaxError; subsequent attempted read of missing v2 helper failed before SSH/guest mutation. Original helper retained and explicit saved builder succeeded. Dependent host invocation was attempted after this preparation failure; no claim all historical gates always held.",
+    "Read-only attempts for missing previous helper filenames failed on host, no guest mutation.",
+    "Python39 had no pip; isolated QA parser installed with bundled Python312 instead. Pip reported unrelated existing dependency conflicts; target-only PyYAML6.0.2 installed successfully.",
+    "Export wizard initial Next coordinate was actually Back, revisited format/date then verified actual summary before final export.",
+    "Initial freeze builder used wrong manifest files/mutablePaths field names and failed before any repository mutation; v2 used correct fields but assumed record values were pin objects and failed before mutation; v3 verifies actual string SHA-256 values from frozenFiles and mutablePathsForNextRound.",
+    "About menu coordinate attempt did not display About; no GUI About claim.",
+    "Chinese-path app logs contain caught cp1252 UnicodeEncodeError traces; raw diagnostics retained privately, not repaired or claimed silent."
+  ],
+  "failuresPreserved": true,
+  "noPrivateCompleteCheckpointOrCredentialsPublished": true
+}

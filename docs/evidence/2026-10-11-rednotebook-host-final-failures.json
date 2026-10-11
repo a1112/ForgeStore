@@ -1,0 +1,14 @@
+{
+  "failures": [
+    {
+      "phase": "public-final-v1",
+      "failure": "Wrong host market-install-launch JSON filename absent. Before failure only new raw data, screenshots and activation/current-state/market-gui files were written; ledger not updated. v2 used actual installed-launched filename, verified all existing new public bytes equal, then completed final report/ledger. No original frozen file overwritten."
+    },
+    {
+      "phase": "optional-host-read",
+      "failure": "Workdir-scoped host reads mistakenly repeated ForgeStore or omitted parent for .transfer. File reads failed; no dependent runtime mutation. Correct root and explicit paths used for final audits."
+    }
+  ],
+  "originalFrozenEvidencePreserved": true,
+  "partialHostOutputReadBackBeforeContinuation": true
+}

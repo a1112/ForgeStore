@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-11",
+  "appId": "rednotebook",
+  "version": "2.43",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedDistinctWindowsApps": 38,
+  "acceptanceScope": "Only two small Chinese-named daily journals, ordinary replacement, ASCII append, GUI Save As to ASCII folders, current-day plain-text export and explicit new-process reopen, independent cached same-version Store IPC update, exact formal-original rollback/reopen and normal services restart.",
+  "signedCatalogue": "catalogue/candidate-v41/tuf",
+  "rootVersion": 1,
+  "metadataVersion": 50,
+  "catalogueEntries": 40,
+  "actualSignedTargets": 81,
+  "publicCatalogueFiles": 46,
+  "receiptSha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931",
+  "originalGeneration": "gen-job-1791719938509-4",
+  "marketGeneration": "gen-job-1791721534514-8",
+  "frozenDefinitionDigest": "sha256:76576cf753cd4af6f4b366fd5647fdf1301411940a41cce375520c5458d22b9b",
+  "coreJobs": 299,
+  "fullStoreRows": 94,
+  "checkpoints": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "da9bd31d34f5657db414529da1dcd0441fa573834c22016ddc5f7e5b9e8ddb4a",
+      "coreJobs": 299,
+      "fullStoreRows": 94
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "6089d456d6010970f5b20927743a281a6885807e5bc2f9542d9bb7938cf92bb8",
+      "coreJobs": 299,
+      "fullStoreRows": 94
+    }
+  },
+  "rollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "rednotebook",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "b87502e8-6600-4939-8511-3b9ad07c4bc9",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791719938509-4",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 298,
+    "beforeRollbackStoreRows": 93,
+    "afterRollbackCoreJobs": 298,
+    "afterRollbackStoreRows": 94,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "bf9e7690a7cd4d0514c0de1b5b324d820ab42e404a3c2bf1796085cd502be40c",
+      "coreJobs": 298,
+      "fullStoreRows": 94
+    }
+  },
+  "fiveAcceptedFormalGuiProcessesExitedNormally": true,
+  "originalGuiJobIds": [
+    "job-1791720518184-6",
+    "job-1791721107336-7",
+    "job-1791722258971-11"
+  ],
+  "marketGuiJobIds": [
+    "job-1791721586998-9",
+    "job-1791722105526-10"
+  ],
+  "frozenOriginalEvidenceAndPendingPhaseLabelsUnchanged": true,
+  "upstreamInstallerApiDigestMatched": true,
+  "mainSourceLicense": "GPL-2.0-or-later",
+  "upstreamCombinedWorkLicenseDeclaration": "GPL-3.0-or-later",
+  "completeBundleLicenseClosureVerified": false,
+  "installedMainCopyingEqualityClaimed": false,
+  "perLauncherRepair": {
+    "PANGOCAIRO_BACKEND": "fc"
+  },
+  "onlyPreparedApplicationFontPreference": "Sans 24",
+  "globalContextRuntimeFontsCoreCodeOrWorkingDirectoryChanged": false,
+  "exactUnderlyingGlyphDefectLocated": false,
+  "chinesePathLoggingUnicodeErrorRepaired": false,
+  "ineffectiveGtkKeyboardShortcutsResolved": false,
+  "sourceInputCopiesChangedByApplication": true,
+  "immutableFixturesUnchanged": true,
+  "oldOriginalRegistryAndLogRawBytesKeptAcrossThirdGui": false,
+  "newActualRegistryAndLogPinsSeparatelyPreserved": true,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "limitations": [
+    "Only a small one-day journal: Chinese-name input directory opened, ordinary mouse word replacement and ASCII insertion, GUI Save As to ASCII journal directory, current-day plain-text GUI export and explicit selected-journal argument in a new process observed. Synthetic journals are not apps.",
+    "Default bundled Pango rendering clipped glyphs. Request-level PANGOCAIRO_BACKEND=fc diagnostic improved rendering; native frozen launcher.environment uses fc in a new formal installation. No exact Wine/Pango/GDI function or general fix established. Global context, installed program files, DLLs, runtime, and launcher working directory were not changed.",
+    "Only isolated application mainFont=Sans 24 preference was prepared after the first failed formal edit for readability. GUI font-picker attempt was cancelled and is not accepted. Shortcut/modifier/navigation behavior remains unverified; mouse correction was used.",
+    "Active input journal copies are editable application data and changed on Save/Save As; immutable original fixture remains exact. Initial wrong text and extra trailing newline failed validation, were preserved, then corrected through GUI before export or reopen. Historical input at Save As retains two trailing newlines; final saved journal has one.",
+    "Opening/saving a Chinese-name journal generated caught logging UnicodeEncodeError traces in the app log using cp1252; data saving and rendering worked in this limited flow. Logging error cause and remediation, complete Chinese-path behavior, direct Chinese keyboard input and unattended startup are not accepted.",
+    "Main source is GPL-2.0-or-later; README declares combined work GPL-3.0-or-later due to LGPLv3+ bundled code. Full GTK/Python/YAML/enchant/txt2tags/spellcheck, dictionaries and all bundled license closure unverified. No standalone main COPYING/LICENSE named file found among 5951 installed files.",
+    "Tags/categories/search, preview, spell checking, templates, HTML/LaTeX/PDF export, printing, large journals, other dates/encodings, direct Chinese input and advanced functions unverified. Guest network download, fresh-machine registration, migration and cross-version upgrade unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart pending at freeze. GUI update/rollback buttons are not accepted."
+  ],
+  "report": "docs/windows-rolling-20261011-rednotebook.md",
+  "failureEvidence": [
+    "docs/evidence/2026-10-11-rednotebook-failures.json",
+    "docs/evidence/2026-10-11-rednotebook-lifecycle-failures.json"
+  ],
+  "fullJournalApplicationAccepted": false,
+  "allAppFilesystemFilesTraversed": false,
+  "githubPushState": "pending authentication; no new device code issued this round"
+}

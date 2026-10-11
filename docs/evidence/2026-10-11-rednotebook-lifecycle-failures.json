@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-11",
+  "earlierFrozenFailures": "2026-10-11-rednotebook-failures.json",
+  "additionalFailures": [
+    {
+      "phase": "before-rollback-library-label",
+      "failure": "Prior library execution reused p; first checkpoint receipt librarySha256 labels base library rather than v2. Correct v2 path hash was checked before all operations; checkpoint 298/93 was actually saved and read back. First receipt unchanged.",
+      "baseLibrarySha256": "a464dee4feb73538e45127a43a2d5b842dfedb3bfabb2468dba33c4594cb2c57",
+      "v2LibrarySha256": "85e5a1b02d01670d26eb4747741b2d21c41aa2a222c1479b9c4fd79de2113ee9"
+    },
+    {
+      "phase": "rollback-helper-v1",
+      "failure": "market() is read-only snapshot function taking zero arguments, not enqueue. TypeError occurred before any rollback submission. Dependencies stopped; socket IPC v2 rechecked full saved checkpoint and all fixed pins before one actual submission."
+    },
+    {
+      "phase": "before-restart",
+      "failure": "Original system.reg pin changed after third normal GUI exit; strict gate stopped before before-restart checkpoint or service restart. First diagnostic allowed only registry files but app log also changed, and stopped. v2 diagnosed precisely system.reg/user.reg/rednotebook.log, preserved new raw bytes privately, kept old evidence and built strict v3 pins before restart.",
+      "oldRawBytesAvailableForDiff": false,
+      "causeDetermined": false
+    },
+    {
+      "phase": "current-state-helper-v1",
+      "failure": "Global numeric string substitution changed root directory 20260929 to 20260949 and corrupted digest strings. Missing library stopped read-only helper immediately; no runtime mutation. v2 rebuilt from original with targeted substitutions; v3 only corrects stale selectedXmlCopyEditorGeneration output key. Earlier files and v2 receipt retained."
+    },
+    {
+      "phase": "optional-host-read",
+      "failure": "Guessed public-original helper and v41-activation filename absent; host reads failed without guest changes. Actual activation filename found with rg --files. No failed gate was used for a dependent runtime mutation."
+    }
+  ],
+  "historicalReceiptsKept": true,
+  "dependentChangesStoppedAfterFailedRuntimeGates": true
+}

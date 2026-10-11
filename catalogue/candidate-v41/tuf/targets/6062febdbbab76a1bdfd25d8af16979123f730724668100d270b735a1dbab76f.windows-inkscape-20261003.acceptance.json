@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "environment": "Original ForgeOS v12 isolated x86_64 VM, pinned Wine 11.14 runtime, UID 1000. Existing authorized login used; authentication settings unchanged.",
+  "applications": [
+    {
+      "id": "inkscape",
+      "version": "1.4.4",
+      "sha256": "fa21d25e56dbfe41e9b014a4f37689edda4bb41d5a3597fe2787dff6c10e651f",
+      "size": 118507928,
+      "installJobId": "job-1790971324958-23",
+      "generationId": "gen-job-1790971324958-23",
+      "definitionDigest": "sha256:7fcac7308d67b05d24caaee38fc1c7f003629dd35e8f3865bb599cd0d33f2ea2",
+      "launcherSha256": "afef2f49862a87da96348cc80f07a4ee55ca159f86ea64753aa163044e2a1d92",
+      "launchJobId": "job-1790971380082-24",
+      "reopenJobId": "job-1790972711705-25",
+      "guiFileOperation": "passed",
+      "workflow": "From a new blank GUI document draw red rect and blue ellipse, create exact single-line Forge 15, save verified.svg, export full-page PNG at 96 DPI; verify XML objects and PNG magic/794x1123/pixels. Normally close all windows, launch new process, explicitly open verified.svg via native file chooser, observe all three objects, normally exit. File bytes unchanged after reopen.",
+      "files": {
+        "verified.svg": {
+          "path": "drive_c/users/forge/Documents/verified.svg",
+          "sizeBytes": 2028,
+          "sha256": "356e7651bddd2a55e3b8a9cc22cee251045c5b77ff5235f36a0463360b3f3bc5",
+          "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n   id=\"svg1\"\n   inkscape:version=\"1.4.4 (dcaf3e7, 2026-05-05)\"\n   sodipodi:docname=\"verified.svg\"\n   inkscape:export-filename=\"verified.png\"\n   inkscape:export-xdpi=\"96\"\n   inkscape:export-ydpi=\"96\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\">\n  <sodipodi:namedview\n     id=\"namedview1\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#000000\"\n     borderopacity=\"0.25\"\n     inkscape:showpageshadow=\"2\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pagecheckerboard=\"0\"\n     inkscape:deskcolor=\"#d1d1d1\"\n     inkscape:document-units=\"mm\"\n     inkscape:zoom=\"0.43028199\"\n     inkscape:cx=\"396.25177\"\n     inkscape:cy=\"561.25984\"\n     inkscape:window-width=\"1280\"\n     inkscape:window-height=\"726\"\n     inkscape:window-x=\"-4\"\n     inkscape:window-y=\"-2\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"layer1\" />\n  <defs\n     id=\"defs1\" />\n  <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n    <rect\n       style=\"fill:#ff0000;stroke-width:0.264583\"\n       id=\"rect1\"\n       width=\"126.67081\"\n       height=\"56.57143\"\n       x=\"27.670807\"\n       y=\"48.577637\" />\n    <ellipse\n       style=\"fill:#0000ff;stroke-width:0.264583\"\n       id=\"path1\"\n       cx=\"107.60869\"\n       cy=\"171.25154\"\n       rx=\"60.260868\"\n       ry=\"43.965839\" />\n    <text\n       xml:space=\"preserve\"\n       style=\"font-size:14.1111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583\"\n       x=\"27.670807\"\n       y=\"253.34161\"\n       id=\"text1\"><tspan\n         sodipodi:role=\"line\"\n         id=\"tspan1\"\n         style=\"stroke-width:0.264583\"\n         x=\"27.670807\"\n         y=\"253.34161\">Forge 15</tspan></text>\n  </g>\n</svg>\n",
+          "objects": [
+            {
+              "tag": "rect",
+              "attributes": {
+                "style": "fill:#ff0000;stroke-width:0.264583",
+                "id": "rect1",
+                "width": "126.67081",
+                "height": "56.57143",
+                "x": "27.670807",
+                "y": "48.577637"
+              },
+              "text": ""
+            },
+            {
+              "tag": "ellipse",
+              "attributes": {
+                "style": "fill:#0000ff;stroke-width:0.264583",
+                "id": "path1",
+                "cx": "107.60869",
+                "cy": "171.25154",
+                "rx": "60.260868",
+                "ry": "43.965839"
+              },
+              "text": ""
+            },
+            {
+              "tag": "text",
+              "attributes": {
+                "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+                "style": "font-size:14.1111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583",
+                "x": "27.670807",
+                "y": "253.34161",
+                "id": "text1"
+              },
+              "text": "Forge 15"
+            }
+          ]
+        },
+        "verified.png": {
+          "path": "drive_c/users/forge/Documents/verified.png",
+          "sizeBytes": 16939,
+          "sha256": "54eb0299584dda306b50982172770b8a19f7235b6fb64cf7b8fcda484ced80d8"
+        },
+        "vector.svg": {
+          "path": "drive_c/users/forge/Documents/vector.svg",
+          "sizeBytes": 2722,
+          "sha256": "489702595aa25858f758e54f77f9f521e186e36d9866d01339ca925d904f5bc8",
+          "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!-- Created with Inkscape (http://www.inkscape.org/) -->\n\n<svg\n   width=\"210mm\"\n   height=\"297mm\"\n   viewBox=\"0 0 210 297\"\n   version=\"1.1\"\n   id=\"svg1\"\n   inkscape:version=\"1.4.4 (dcaf3e7, 2026-05-05)\"\n   sodipodi:docname=\"vector.svg\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\">\n  <sodipodi:namedview\n     id=\"namedview1\"\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#000000\"\n     borderopacity=\"0.25\"\n     inkscape:showpageshadow=\"2\"\n     inkscape:pageopacity=\"0.0\"\n     inkscape:pagecheckerboard=\"0\"\n     inkscape:deskcolor=\"#d1d1d1\"\n     inkscape:document-units=\"mm\"\n     inkscape:zoom=\"0.43028199\"\n     inkscape:cx=\"396.25177\"\n     inkscape:cy=\"561.25984\"\n     inkscape:window-width=\"1280\"\n     inkscape:window-height=\"726\"\n     inkscape:window-x=\"-4\"\n     inkscape:window-y=\"-2\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"layer1\" />\n  <defs\n     id=\"defs1\">\n    <rect\n       x=\"99.934465\"\n       y=\"922.65076\"\n       width=\"206.8411\"\n       height=\"102.25852\"\n       id=\"rect2\" />\n  </defs>\n  <g\n     inkscape:label=\"Layer 1\"\n     inkscape:groupmode=\"layer\"\n     id=\"layer1\">\n    <rect\n       style=\"fill:#ff0000;stroke-width:0.264583\"\n       id=\"rect1\"\n       width=\"126.67081\"\n       height=\"56.57143\"\n       x=\"27.670807\"\n       y=\"48.577637\" />\n    <ellipse\n       style=\"fill:#0000ff;stroke-width:0.264583\"\n       id=\"path1\"\n       cx=\"107.60869\"\n       cy=\"171.25154\"\n       rx=\"60.260868\"\n       ry=\"43.965839\" />\n    <text\n       xml:space=\"preserve\"\n       style=\"font-size:14.11111111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583\"\n       x=\"27.670807\"\n       y=\"253.34161\"\n       id=\"text1\"><tspan\n         sodipodi:role=\"line\"\n         id=\"tspan1\"\n         style=\"stroke-width:0.264583;font-size:14.11111111px\"\n         x=\"27.670807\"\n         y=\"253.34161\">Forg20</tspan><tspan\n         sodipodi:role=\"line\"\n         style=\"stroke-width:0.264583;font-size:14.11111111px\"\n         x=\"27.670807\"\n         y=\"257.31036\"\n         id=\"tspan2\">e 15</tspan></text>\n    <text\n       xml:space=\"preserve\"\n       transform=\"scale(0.26458333)\"\n       id=\"text2\"\n       style=\"font-size:53.3333px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#0000ff\"><tspan\n         x=\"99.933594\"\n         y=\"976.25036\"\n         id=\"tspan4\">Forge </tspan><tspan\n         x=\"99.933594\"\n         y=\"1078.5101\"\n         id=\"tspan6\"><tspan\n           dx=\"0 29.599998\"\n           id=\"tspan5\">15</tspan></tspan></text>\n  </g>\n</svg>\n",
+          "objects": [
+            {
+              "tag": "rect",
+              "attributes": {
+                "x": "99.934465",
+                "y": "922.65076",
+                "width": "206.8411",
+                "height": "102.25852",
+                "id": "rect2"
+              },
+              "text": ""
+            },
+            {
+              "tag": "rect",
+              "attributes": {
+                "style": "fill:#ff0000;stroke-width:0.264583",
+                "id": "rect1",
+                "width": "126.67081",
+                "height": "56.57143",
+                "x": "27.670807",
+                "y": "48.577637"
+              },
+              "text": ""
+            },
+            {
+              "tag": "ellipse",
+              "attributes": {
+                "style": "fill:#0000ff;stroke-width:0.264583",
+                "id": "path1",
+                "cx": "107.60869",
+                "cy": "171.25154",
+                "rx": "60.260868",
+                "ry": "43.965839"
+              },
+              "text": ""
+            },
+            {
+              "tag": "text",
+              "attributes": {
+                "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+                "style": "font-size:14.11111111px;writing-mode:lr-tb;direction:ltr;fill:#0000ff;stroke-width:0.264583",
+                "x": "27.670807",
+                "y": "253.34161",
+                "id": "text1"
+              },
+              "text": "Forg20e 15"
+            },
+            {
+              "tag": "text",
+              "attributes": {
+                "{http://www.w3.org/XML/1998/namespace}space": "preserve",
+                "transform": "scale(0.26458333)",
+                "id": "text2",
+                "style": "font-size:53.3333px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);fill:#0000ff"
+              },
+              "text": "Forge 15"
+            }
+          ]
+        },
+        "verified.jpg": {
+          "path": "drive_c/users/forge/Documents/verified.jpg",
+          "sizeBytes": 23989,
+          "sha256": "2e8c70d2376be6ee77be676c437799c04465edda50e90132e31ffeb104d6b1d5"
+        }
+      },
+      "pixelValidation": {
+        "redPixels": 101814,
+        "bluePixels": 119944,
+        "size": [
+          794,
+          1123
+        ],
+        "rectangleCenter": [
+          255,
+          0,
+          0,
+          255
+        ],
+        "ellipseCenter": [
+          0,
+          0,
+          255,
+          255
+        ],
+        "pageMargin": [
+          255,
+          255,
+          255,
+          0
+        ]
+      },
+      "screenshots": {
+        "2026-10-03-inkscape-exported.jpg": "89817efe0e6ccbf3a8a5e01be14c2d33ed50b2ecfb6463d34672bb496fc596af",
+        "2026-10-03-inkscape-reopened.jpg": "b9787285c4878470273eaa44a3cd068bac498d906771e77e3647c6b999f80490",
+        "2026-10-03-inkscape-saved.jpg": "a601a7f55a156f944c50d87fc1472f0afee0b6833d1d1fb29a814e84e54464c1"
+      },
+      "exportPngEvidence": {
+        "path": "2026-10-03-inkscape-export.png",
+        "sha256": "54eb0299584dda306b50982172770b8a19f7235b6fb64cf7b8fcda484ced80d8"
+      },
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+    }
+  ],
+  "licenseEvidence": [
+    "https://gitlab.com/api/v4/projects/inkscape%2Finkscape/repository/files/COPYING/raw?ref=dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871",
+    "https://gitlab.com/api/v4/projects/inkscape%2Finkscape/repository/files/share%2Fdoc%2FLICENSE/raw?ref=dcaf3e7d9e6724cd18d6bd2b4f3d4f12ab691871"
+  ],
+  "licenseBasis": "Pinned release COPYING explicitly licenses complete binaries as GPL v3 or later; bundled LICENSE says v3.",
+  "limits": [
+    "Only stated shape/text/SVG/save/reopen/PNG workflow verified; advanced paths, filters, extensions, print, tablets, Chinese text and other export formats not accepted.",
+    "Mistyped first SVG and accidental JPEG retained as diagnostic artifacts, not expected workflow passes. GUI control/menu mapping limitations retained; application/engine code not changed.",
+    "Authenticode and reproducible builds unverified; official HTTPS installer SHA-256 matches published official checksum.",
+    "Local activation and lifecycle follow this receipt; guest online download, fresh-machine registration, cross-version upgrades and remote public distribution unverified."
+  ]
+}

@@ -379,6 +379,17 @@
       "signedCatalogue": "catalogue/candidate-v40/tuf",
       "publication": "docs/evidence/2026-10-11-xmlcopyeditor-publication.json",
       "limitation": "Only two small three-child Chinese-name UTF-8 XML fixtures, ordinary edit/ASCII append, GUI well-formedness check, GUI Save As to ASCII BOM/LF output paths, explicit new-process reopen and local cached IPC update/exact rollback/restart accepted. Inno uninstall log differs across generations; all 499 files individually pinned, 498 raw matches. Original system.reg/user.reg changed after third GUI and new actual pins separately fixed, cause unestablished. Main GPL-2.0-or-later only; full bundle licensing, advanced validation/XSLT, direct Chinese input, online download, fresh registration, migration/cross-version/unattended and GUI update/rollback buttons unverified."
+    },
+    {
+      "id": "rednotebook",
+      "version": "2.43",
+      "sha256": "9b153c8a88db1743689672a488daa96cce817d97db18524db63e0e2c8248c43a",
+      "sizeBytes": 25489461,
+      "license": "GPL-3.0-or-later (upstream combined-work declaration; main-source GPL-2.0-or-later; full bundle closure unverified)",
+      "evidence": "docs/evidence/windows-rednotebook-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v41/tuf",
+      "publication": "docs/evidence/2026-10-11-rednotebook-publication.json",
+      "limitation": "Only two small Chinese-name daily journal edits, ASCII-folder GUI Save As, current-day text export, explicit fresh-process reopen and cached IPC update/exact formal-original rollback/restart passed. Native per-launcher fc plus application Sans24 preference. GTK shortcuts and cp1252 path logging unresolved; active inputs changed, immutable fixtures preserved. Third original GUI changed two registry files and app log; separately repinned. Full bundle licensing/advanced features/direct Chinese input/network/new registration/migration/cross-version/unattended/GUI update buttons unverified."
     }
   ],
   "queue": [
@@ -551,12 +562,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next official sourced/licensed/pinned candidate. XML Copy Editor limited small XML edit/well-formedness/save/fresh reopen and independent local market lifecycle accepted, candidate-v40/root1/role49,37 Windows apps,12 unresolved,288 full Core tasks/92 full Store SQLite rows. Run rolling-current-state-xmlcopyeditor-20261011.py only through strict rolling-guest-20261010.py inside guest. Preserve immutable evidence and all trust history. Original registry byte changes and per-generation Inno uninstall logs separately pinned; stop dependent changes after failed gates. QXmlEdit prior commit and this round push await refreshed GitHub authentication.",
+  "next": "Select next official sourced/licensed/pinned candidate;38/1000 Windows accepted,12 unresolved. RedNotebook2.43 limited daily journal workflow and local lifecycle accepted, candidate-v41/root1/role50,299 full Core tasks/94 full Store SQLite rows. Strict guest helper rolling-current-state-rednotebook-v3-20261011.py. Preserve all immutable bytes and trust history. Third GUI registry/log variation separately pinned; shortcut and path logging problems unresolved. Push awaits restored GitHub authentication; do not reissue expired device codes each round.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 37,
+    "acceptedLocalMarket": 38,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -564,25 +575,25 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v40/tuf",
-    "metadataVersion": 49,
-    "catalogueEntries": 39,
-    "acceptedDistinctWindowsApps": 37,
+    "signedCatalogue": "catalogue/candidate-v41/tuf",
+    "metadataVersion": 50,
+    "catalogueEntries": 40,
+    "acceptedDistinctWindowsApps": 38,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-rednotebook-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-qxmledit-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-rednotebook-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-xmlcopyeditor.md",
+  "lastReviewEvidence": "docs/evidence/2026-10-11-rednotebook-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-xmlcopyeditor.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-rednotebook.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-rednotebook-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

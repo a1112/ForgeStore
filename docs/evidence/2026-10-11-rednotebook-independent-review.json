@@ -1,0 +1,542 @@
+{
+  "passed": true,
+  "findings": [],
+  "assertions": 27101,
+  "baseCommit": "bb42afd7d61de217a3a0798cfa4a30e39cde762b",
+  "prospectiveManifestSha256": "a663e45b474dca850089528df1420c9565807cbd709f7efd5e7508eb393c1f1f",
+  "reviewedPublicFilePins": {
+    ".gitattributes": {
+      "sizeBytes": 5967,
+      "sha256": "cf2e71e479c31dcfeccd2b422946b8f4cd07b136395598fc994ac1a675ddf073"
+    },
+    "catalogue/candidate-v41/tuf/metadata/1.root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "catalogue/candidate-v41/tuf/metadata/50.snapshot.json": {
+      "sizeBytes": 997,
+      "sha256": "1d476a46d2b2cb4f69422d4e2d25e8830636b32611c24e4780478d13ceb07946"
+    },
+    "catalogue/candidate-v41/tuf/metadata/50.targets.json": {
+      "sizeBytes": 17040,
+      "sha256": "44611a4fbf028f2917cd7639feaf593fa4d487012cf07293d14afc3e4310e7bc"
+    },
+    "catalogue/candidate-v41/tuf/metadata/timestamp.json": {
+      "sizeBytes": 997,
+      "sha256": "828f40995cf99bc3c6cf10d8166fa8877199f4d978950177fcc47c5513a35fd3"
+    },
+    "catalogue/candidate-v41/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sizeBytes": 4879,
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+    },
+    "catalogue/candidate-v41/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sizeBytes": 9031,
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+    },
+    "catalogue/candidate-v41/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+      "sizeBytes": 5624,
+      "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+    },
+    "catalogue/candidate-v41/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sizeBytes": 5280,
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+    },
+    "catalogue/candidate-v41/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sizeBytes": 21857,
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+    },
+    "catalogue/candidate-v41/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sizeBytes": 7918,
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+    },
+    "catalogue/candidate-v41/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sizeBytes": 1676,
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+    },
+    "catalogue/candidate-v41/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json": {
+      "sizeBytes": 4562,
+      "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+    },
+    "catalogue/candidate-v41/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sizeBytes": 2738,
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+    },
+    "catalogue/candidate-v41/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sizeBytes": 7617,
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+    },
+    "catalogue/candidate-v41/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sizeBytes": 1699,
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+    },
+    "catalogue/candidate-v41/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sizeBytes": 10640,
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+    },
+    "catalogue/candidate-v41/tuf/targets/5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f.windows-xmlcopyeditor-20261011.acceptance.json": {
+      "sizeBytes": 4553,
+      "sha256": "5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f"
+    },
+    "catalogue/candidate-v41/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sizeBytes": 1617,
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+    },
+    "catalogue/candidate-v41/tuf/targets/5db64eb7f1f7ed69d8e0071221779a73bd0662b898fc2e2ede015fdd1b8e3cf1.catalogue.json": {
+      "sizeBytes": 44676,
+      "sha256": "5db64eb7f1f7ed69d8e0071221779a73bd0662b898fc2e2ede015fdd1b8e3cf1"
+    },
+    "catalogue/candidate-v41/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sizeBytes": 12679,
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+    },
+    "catalogue/candidate-v41/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sizeBytes": 1652,
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+    },
+    "catalogue/candidate-v41/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sizeBytes": 9285,
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+    },
+    "catalogue/candidate-v41/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sizeBytes": 1146,
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+    },
+    "catalogue/candidate-v41/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sizeBytes": 4783,
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+    },
+    "catalogue/candidate-v41/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sizeBytes": 6220,
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+    },
+    "catalogue/candidate-v41/tuf/targets/8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29.windows-qxmledit-20261011.acceptance.json": {
+      "sizeBytes": 4514,
+      "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+    },
+    "catalogue/candidate-v41/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sizeBytes": 4223,
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+    },
+    "catalogue/candidate-v41/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json": {
+      "sizeBytes": 7879,
+      "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+    },
+    "catalogue/candidate-v41/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sizeBytes": 4642,
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+    },
+    "catalogue/candidate-v41/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json": {
+      "sizeBytes": 7564,
+      "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+    },
+    "catalogue/candidate-v41/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sizeBytes": 11228,
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+    },
+    "catalogue/candidate-v41/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sizeBytes": 1656,
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+    },
+    "catalogue/candidate-v41/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+      "sizeBytes": 6445,
+      "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+    },
+    "catalogue/candidate-v41/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sizeBytes": 6071,
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+    },
+    "catalogue/candidate-v41/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json": {
+      "sizeBytes": 4567,
+      "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+    },
+    "catalogue/candidate-v41/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sizeBytes": 10745,
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+    },
+    "catalogue/candidate-v41/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sizeBytes": 6075,
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+    },
+    "catalogue/candidate-v41/tuf/targets/b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931.windows-rednotebook-20261011.acceptance.json": {
+      "sizeBytes": 5786,
+      "sha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931"
+    },
+    "catalogue/candidate-v41/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json": {
+      "sizeBytes": 7460,
+      "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+    },
+    "catalogue/candidate-v41/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sizeBytes": 4586,
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+    },
+    "catalogue/candidate-v41/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json": {
+      "sizeBytes": 3703,
+      "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+    },
+    "catalogue/candidate-v41/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sizeBytes": 9388,
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+    },
+    "catalogue/candidate-v41/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json": {
+      "sizeBytes": 8122,
+      "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+    },
+    "catalogue/candidate-v41/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json": {
+      "sizeBytes": 6906,
+      "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+    },
+    "catalogue/candidate-v41/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sizeBytes": 3517,
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+    },
+    "catalogue/candidate-v41/tuf/trusted-root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "docs/evidence/2026-10-11-rednotebook-activation.json": {
+      "sizeBytes": 1891,
+      "sha256": "f233ac722d86d22c001500d3b3a64c7dfc068783cc4626e32045ccb6c4146e76"
+    },
+    "docs/evidence/2026-10-11-rednotebook-current-state.json": {
+      "sizeBytes": 833,
+      "sha256": "357352c9748e344588aa5927f9aade906c973af87218956c8bca3a53f1a9f7fd"
+    },
+    "docs/evidence/2026-10-11-rednotebook-failures.json": {
+      "sizeBytes": 3523,
+      "sha256": "82351dd2b3ee35cb5395dea92ac45854673f58c630e1931a533ae8c4a72c8030"
+    },
+    "docs/evidence/2026-10-11-rednotebook-final-verification.json": {
+      "sizeBytes": 1585,
+      "sha256": "44c19b1737add37d07202e618794fa87de3c21738e3b362e5f19a52ae33652d4"
+    },
+    "docs/evidence/2026-10-11-rednotebook-github-auth-check.json": {
+      "sizeBytes": 280,
+      "sha256": "4574b2bddcf53d128c45d90a9beb050f5bb0ed837a73403d8da69502e0831ad3"
+    },
+    "docs/evidence/2026-10-11-rednotebook-gui.json": {
+      "sizeBytes": 1201331,
+      "sha256": "1b422f95dff6e040f8b946de43ec5cf5a3f74307a6f26f0f85eb9e2f5a4f1b5e"
+    },
+    "docs/evidence/2026-10-11-rednotebook-host-final-failures.json": {
+      "sizeBytes": 795,
+      "sha256": "7b25504db9c37acc3c9756af9aac9ca25248f639abd31063351386656c918704"
+    },
+    "docs/evidence/2026-10-11-rednotebook-lifecycle-failures.json": {
+      "sizeBytes": 2255,
+      "sha256": "9fe212a86ff7c26e1b0aa8527e1ebfc73aff9f1855bd12f25a5890e945611925"
+    },
+    "docs/evidence/2026-10-11-rednotebook-market-gui.json": {
+      "sizeBytes": 1198383,
+      "sha256": "75e0d99e374eab70f78975a90f4b72fa32d07b73772a6a3076b85c0b88ec8740"
+    },
+    "docs/evidence/2026-10-11-rednotebook-market-install.json": {
+      "sizeBytes": 869,
+      "sha256": "8b1f31added1d1f573a755104806170b5fa80efddd9142f3db5d91b7f80edf7f"
+    },
+    "docs/evidence/2026-10-11-rednotebook-publication.json": {
+      "sizeBytes": 6113,
+      "sha256": "f6ebd87fc922374b4a08585c8499c4a82ae80c756b0a5219b6da522fff14732c"
+    },
+    "docs/evidence/2026-10-11-rednotebook-registry-log-change.json": {
+      "sizeBytes": 9055,
+      "sha256": "743bc3fa926903d4fb776e8fd3260f9b4fb7cff6ac4e362fce3382e6559c05cb"
+    },
+    "docs/evidence/2026-10-11-rednotebook-runtime-recovery.json": {
+      "sizeBytes": 20885,
+      "sha256": "8fc01e570faa15641764c04eadd8c8c833d6d6cd6e6388a2652b22f16c3c9fe3"
+    },
+    "docs/evidence/2026-10-11-rednotebook-source.json": {
+      "sizeBytes": 6255,
+      "sha256": "cc8804cfb8f0599e6288cbed2485ea861451b3c567c63f636b77facabcda3b53"
+    },
+    "docs/evidence/2026-10-11-rednotebook/01-default-menu-clipped.jpg": {
+      "sizeBytes": 14422,
+      "sha256": "2c13273237ead4bf9604e9059e0ce832376d87e32bdd4b66601aca5f49b05816"
+    },
+    "docs/evidence/2026-10-11-rednotebook/02-fc-diagnostic-journal-readable.jpg": {
+      "sizeBytes": 15711,
+      "sha256": "963043b0118aac686a88ee44465b0dcf0117c22fce7e806f455ec33e2e04da35"
+    },
+    "docs/evidence/2026-10-11-rednotebook/03-formal-input.jpg": {
+      "sizeBytes": 15495,
+      "sha256": "dad647314bc847850e9c1ac115496652ae113c89a1ef5d1d15928ac6c68f8f90"
+    },
+    "docs/evidence/2026-10-11-rednotebook/04-formal-first-save-wrong-text.jpg": {
+      "sizeBytes": 15469,
+      "sha256": "7f27a837e90782ae68c0ad717103ac51820abccddf8abd520eeb5be0bfe03c82"
+    },
+    "docs/evidence/2026-10-11-rednotebook/05-formal-clean-v2-input.jpg": {
+      "sizeBytes": 17418,
+      "sha256": "db2a55e6a97faedf114f5c2046f95193d90af312635975eb7f249311c3aa671e"
+    },
+    "docs/evidence/2026-10-11-rednotebook/06-formal-corrected-saved.jpg": {
+      "sizeBytes": 18192,
+      "sha256": "41fe202d885a61139c8914358c2397bad1876e4a50b6b6f138052146c09ab79f"
+    },
+    "docs/evidence/2026-10-11-rednotebook/07-formal-export-summary.jpg": {
+      "sizeBytes": 20625,
+      "sha256": "71e7e76189e34a813deb85b4bb7fabb0b6af25aa8e4c8fa456bd3559eea4dc07"
+    },
+    "docs/evidence/2026-10-11-rednotebook/08-formal-export-completed.jpg": {
+      "sizeBytes": 18350,
+      "sha256": "1095e6951d3d66b069a8e9fd24e412e2330ca166dd5a4c2c3171f95db21332f2"
+    },
+    "docs/evidence/2026-10-11-rednotebook/09-formal-fresh-reopen.jpg": {
+      "sizeBytes": 18368,
+      "sha256": "0d625e7ae0cb9012dc02d747a53b608ae3e689ae0c757132920a3286fc572f5e"
+    },
+    "docs/evidence/2026-10-11-rednotebook/10-market-input.jpg": {
+      "sizeBytes": 17568,
+      "sha256": "76b901e86a929304db30ef960da665182c0b1e4b4b53e3858d9915ea33bdf5f7"
+    },
+    "docs/evidence/2026-10-11-rednotebook/11-market-saved.jpg": {
+      "sizeBytes": 18153,
+      "sha256": "773249c874d7f84daa49cbf869242a294adf453212f304ee9fe74cf2b4b0bc67"
+    },
+    "docs/evidence/2026-10-11-rednotebook/12-market-export-summary.jpg": {
+      "sizeBytes": 20547,
+      "sha256": "b95bbf9043352973e7bb1883a8b4a19f471a649b66a81260ec97a93524841036"
+    },
+    "docs/evidence/2026-10-11-rednotebook/13-market-exported.jpg": {
+      "sizeBytes": 18139,
+      "sha256": "7dc553b8e8bdac08cd0b05a769b00c111dac8d1fd379466a5cd612de3db80dd7"
+    },
+    "docs/evidence/2026-10-11-rednotebook/14-market-explicit-reopen.jpg": {
+      "sizeBytes": 18200,
+      "sha256": "729a11519735d0ecf4731da96b1cbad615a4c64ad3fceede24a9987dabe7e5a4"
+    },
+    "docs/evidence/2026-10-11-rednotebook/15-original-after-exact-rollback.jpg": {
+      "sizeBytes": 18377,
+      "sha256": "fa95a23b953334ba409cba626f8c331c5869ff4d2b96cf62360a02805c891347"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-.github__workflows__build-windows.yml": {
+      "sizeBytes": 5756,
+      "sha256": "8145d403db88d21a417e60e7f71276a593f0c1b98a2a962fd5cff4845fb4d352"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-LICENSE": {
+      "sizeBytes": 17984,
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-README.md": {
+      "sizeBytes": 2107,
+      "sha256": "1736b11063622f956c7a0aed1e56628db1b1b94bfd5ed56fd5ca12738aadf15a"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-debian__copyright": {
+      "sizeBytes": 4917,
+      "sha256": "e8e0db0a3beaedaf5463636994b8d5f779b27950aed49cb98205a227ac17c2be"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__data.py": {
+      "sizeBytes": 10737,
+      "sha256": "3fa32a79008410b4292ed660e1d2417d09060f3bc73adcc2864b0f9d04807a17"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__files__default.cfg": {
+      "sizeBytes": 1239,
+      "sha256": "699bb37551ba9613999def5e577ef57133ef428629f58757e5afa46db5910065"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__gui__exports.py": {
+      "sizeBytes": 19444,
+      "sha256": "7519b2d4c08375b8a8a3e0cf660d7458c8c855ab76cfa9a2c89748063e44670b"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__gui__main_window.py": {
+      "sizeBytes": 39397,
+      "sha256": "f20c9e13d69a9f7d8ce4e68d0639ee1ac09dab8d9fc93314c3f43c7d90b253a6"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__gui__menu.py": {
+      "sizeBytes": 15687,
+      "sha256": "3b833f6c1de25697b979cb78f2f5b864eb5506f40eb41a52a3b7e2679bad509f"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__info.py": {
+      "sizeBytes": 3172,
+      "sha256": "41c03a7939bb3724e557ca9660ae6f239e0e43ce425a2c74fa7486180e5b4a20"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__journal.py": {
+      "sizeBytes": 22770,
+      "sha256": "4956ef5a27ab835d2af12a38227ad2386679392b796b37db138d4602f626803b"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-rednotebook__storage.py": {
+      "sizeBytes": 6200,
+      "sha256": "8bfa238b2a063f11f6a4fc896afa29b8fd904fd19b566423dfdc86490408ee90"
+    },
+    "docs/evidence/2026-10-11-rednotebook/fixed-source-win__rednotebook.iss": {
+      "sizeBytes": 5530,
+      "sha256": "a2374f4fa94131deb71ae5d0b483c73ee45ff2d8d712003d4e38005b82de03d3"
+    },
+    "docs/evidence/2026-10-11-rednotebook/market-active-edited-journal.txt": {
+      "sizeBytes": 77,
+      "sha256": "91b607d69ce35e1c2eca7cbb47a6a12ff76594f26dd5806006e887329ca72071"
+    },
+    "docs/evidence/2026-10-11-rednotebook/market-export.txt": {
+      "sizeBytes": 87,
+      "sha256": "f5f152571d79aecd448d532d0ff773d4a4129cce6adc671f99a641db5543a5e2"
+    },
+    "docs/evidence/2026-10-11-rednotebook/market-immutable-input.txt": {
+      "sizeBytes": 58,
+      "sha256": "c5a73698fa3f1f1aa0d3ba261aca7d35d1030f76a9504b959034ba6ae1a0c11d"
+    },
+    "docs/evidence/2026-10-11-rednotebook/market-saved-journal.txt": {
+      "sizeBytes": 77,
+      "sha256": "91b607d69ce35e1c2eca7cbb47a6a12ff76594f26dd5806006e887329ca72071"
+    },
+    "docs/evidence/2026-10-11-rednotebook/original-edited-input-before-tail-correction.txt": {
+      "sizeBytes": 80,
+      "sha256": "d6592389cb263b0e25b720b40166fec58de34cf3ebeb21661b176857e6b0fb06"
+    },
+    "docs/evidence/2026-10-11-rednotebook/original-export.txt": {
+      "sizeBytes": 89,
+      "sha256": "75bb038aecef4f997e910149702fb3346b9ff9806ae7b16703c77bee8c850b29"
+    },
+    "docs/evidence/2026-10-11-rednotebook/original-immutable-input.txt": {
+      "sizeBytes": 58,
+      "sha256": "e9884ce5425885e66f90a0faf0ff41f9471ef2080f8193d8dfc82e8e9470c14a"
+    },
+    "docs/evidence/2026-10-11-rednotebook/original-saved-journal.txt": {
+      "sizeBytes": 79,
+      "sha256": "3aaf74cc1603d1972e2d2a0df4ff6d4858c748934d4ab196d32e8f8091413ff7"
+    },
+    "docs/evidence/2026-10-11-rednotebook/release-v2.43.json": {
+      "sizeBytes": 5497,
+      "sha256": "67f04809080afad8a4d2d939ddc41b96014da2d151c0593bcabb48bbf24370c6"
+    },
+    "docs/evidence/2026-10-11-rednotebook/source-commit-v2.43.json": {
+      "sizeBytes": 4611,
+      "sha256": "fa4516e6f18268eac105dd066d8de829a0ac088d818b8be7130d988004305489"
+    },
+    "docs/evidence/windows-rednotebook-20261011.acceptance.json": {
+      "sizeBytes": 5786,
+      "sha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 48914,
+      "sha256": "0569c4e0f3869ada7c7408bcf64c996c5ddd6c4775927f7cc02686eded627c74"
+    },
+    "docs/windows-rolling-20261011-rednotebook.md": {
+      "sizeBytes": 5576,
+      "sha256": "11ca52e13e1a52079e98242c9a4752f99806739d6a6cce48c270b0ae174b075c"
+    }
+  },
+  "checks": [
+    {
+      "name": "prospective and historical frozen bytes",
+      "passed": true,
+      "prospectivePublicFiles": 102,
+      "oldImmutableFiles": 786,
+      "originalFrozenFiles": 32,
+      "actualBaseCommitVerified": true
+    },
+    {
+      "name": "ledger and historical publication stages",
+      "passed": true,
+      "acceptedDistinctWindowsApps": 38,
+      "unresolvedCandidates": 12,
+      "catalogueEntries": 40,
+      "linuxAcceptanceNotAddedToWindowsCount": true,
+      "frozenPendingLabelsRetained": true
+    },
+    {
+      "name": "independent public-key RSA-PSS and actual target digest verification",
+      "passed": true,
+      "rootVersion": 1,
+      "onlineRoles": 50,
+      "actualTargets": 81,
+      "publicCatalogueFiles": 46,
+      "catalogueEntries": 40,
+      "allPriorNonCatalogueTargetPinsAndRootPreserved": true,
+      "privateSigningKeysRead": false
+    },
+    {
+      "name": "official source/package pins and bounded licence/program record review",
+      "passed": true,
+      "fixedSourceMembers": 13,
+      "installerApiDigestAndSizeMatched": true,
+      "mainSourceLicense": "GPL-2.0-or-later",
+      "combinedWorkDeclaration": "GPL-3.0-or-later",
+      "installedProgramPinRecordsEach": 5951,
+      "crossGenerationMatchedRecords": 5950,
+      "physicalGuestProgramFilesRead": false
+    },
+    {
+      "name": "independent SafeLoader and export semantics with actual screenshot inspection",
+      "passed": true,
+      "inputBytesEach": 58,
+      "originalSavedYamlBytes": 79,
+      "marketSavedYamlBytes": 77,
+      "originalExportBytes": 89,
+      "marketExportBytes": 87,
+      "screenshotsDecoded": 15,
+      "representativeImagesVisuallyInspected": [
+        "01-default-menu-clipped.jpg",
+        "02-fc-diagnostic-journal-readable.jpg",
+        "07-formal-export-summary.jpg",
+        "09-formal-fresh-reopen.jpg",
+        "12-market-export-summary.jpg",
+        "14-market-explicit-reopen.jpg",
+        "15-original-after-exact-rollback.jpg"
+      ],
+      "fullJournalSpecificationAccepted": false
+    },
+    {
+      "name": "formal GUI and lifecycle compact proofs with implementation gates",
+      "passed": true,
+      "acceptedFormalGuiJobs": 5,
+      "beforeRollback": {
+        "core": 298,
+        "store": 93
+      },
+      "afterRollback": {
+        "core": 298,
+        "store": 94
+      },
+      "normalRestart": {
+        "core": 299,
+        "store": 94
+      },
+      "privateCompleteCheckpointBodiesRead": false,
+      "guestOrGuiReexecuted": false
+    },
+    {
+      "name": "separate three-file variation and strict controlled restart recovery",
+      "passed": true,
+      "changedOriginalFiles": [
+        "system.reg",
+        "user.reg",
+        "rednotebook.log"
+      ],
+      "otherFixedPinsAndAllMarketPinsUnchanged": true,
+      "oldRawBytesAvailableForDiff": false,
+      "causeDetermined": false,
+      "originalFrozenReceiptsPreserved": true,
+      "newStrictPinsVerifiedBeforeRestart": true
+    },
+    {
+      "name": "retained failures and explicit remaining limitations",
+      "passed": true,
+      "originalOtherFailures": 10,
+      "lifecycleAdditionalFailures": 5,
+      "hostFinalFailures": 2,
+      "defaultClippingNotAccepted": true,
+      "loggingAndShortcutsStillUnresolved": true,
+      "pushPendingAuthentication": true,
+      "advancedJournalOrCompleteLicensingClaimed": false
+    },
+    {
+      "name": "public privacy and pre-stage Git byte-preservation scope",
+      "passed": true,
+      "publicFilesScanned": 102,
+      "privateCredentialsOrCheckpointBodiesRead": false,
+      "indexOrCommitAuditCompleted": false,
+      "repositoryOrIndexMutated": false
+    }
+  ],
+  "reviewScope": "Independent offline read-only pre-stage review of102 public prospective worktree files,786 old immutable files and32 original frozen files; public-key RSA-PSS-SHA256 signatures/digest chain plus81 actual signed target cache files and46 public catalogue files; fixed source archive members, SafeLoader one-day journal semantics, actual plain-text export bytes,15 JPEG decodes and7 representative image inspections; compact lifecycle proofs and assertion ordering reviewed without accessing full private checkpoints or guest data.",
+  "reviewPreparationNotes": [
+    "Bundled Python lacks PyYAML; the import-only probe failed without changing project or runtime. Review uses the already isolated local qa-yaml-6.0.2 dependency and SafeLoader. No package installation was performed."
+  ],
+  "limitations": [
+    "No independent guest/GUI/browser/service execution, complete private checkpoint body, signing private key, password or GitHub credential access; no repository/index/guest mutation or push. 299 Core/94 full Store counts and complete-field comparisons are linked reports and helper assertions, not independent private checkpoint reexecution.",
+    "Both5951 installed program pin dictionaries were compared independently:5950 equal and only unins000.dat differs. Actual physical installed guest files or old/new raw uninstall logs were not reread; uninstall functionality and variation cause remain unverified.",
+    "Third original GUI changed system.reg,user.reg and rednotebook.log. Old raw bodies are unavailable; the reviewed new-pin diagnosis and strict restart gate do not establish a content-level diff or root cause. Frozen original evidence and historical pending stage labels remain intact.",
+    "Acceptance is finite two small current-day journal edits, ASCII Save As folders, text export and new selected-journal process reopen/local IPC lifecycle. Advanced functions, other dates/formats, complete Chinese paths/direct Chinese input, unattended, migration/new registration/network/cross-version and GUI update/rollback buttons remain unaccepted.",
+    "Main-source GPL2+ and README combined-work GPL3+ declaration are separately verified from fixed source. Full bundle licensing closure, standalone installed main licence equality, Authenticode, upstream source-archive checksum or reproducible build remain unverified; official fixed installer API digest/size is verified.",
+    "This review checks worktree bytes and -text rules before staging. Complete later index/commit byte and whitespace checks remain required. Pre-review final-verification.independentReviewPending is retained as a historical phase. Authentication remains blocked and no remote synchronization is claimed."
+  ]
+}

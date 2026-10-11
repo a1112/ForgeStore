@@ -1,0 +1,55 @@
+{
+  "activated": true,
+  "metadataVersion": 50,
+  "rootVersion": 1,
+  "entries": 40,
+  "coreJobs": 295,
+  "fullStoreRows": 92,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-rednotebook-20261011.acceptance.json#rednotebook",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "9b153c8a88db1743689672a488daa96cce817d97db18524db63e0e2c8248c43a",
+        "size": 25489461,
+        "target": "rednotebook-2.43.exe",
+        "url": "https://github.com/jendrikseipp/rednotebook/releases/download/v2.43/rednotebook-2.43.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "rednotebook"
+    },
+    "id": "rednotebook",
+    "license": "GPL-3.0-or-later (upstream combined-work declaration; main-source GPL-2.0-or-later; full bundle closure unverified)",
+    "name": {
+      "en": "RedNotebook",
+      "zhCN": "RedNotebook 日记"
+    },
+    "origin": "https://rednotebook.app/downloads.html",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Jendrik Seipp",
+    "summary": {
+      "en": "Limited mouse journal edit, Save As, plain-text export and fresh reopen tested; launcher font backend required; shortcuts and advanced functions unverified.",
+      "zhCN": "有限鼠标日记编辑、另存、纯文本导出和新进程重开已测；需启动器字体后端配置，快捷键和高级功能未验收"
+    },
+    "version": "2.43"
+  },
+  "installed": {
+    "appId": "rednotebook",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "2.43"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "9ed600a60038d75a422c5b8f75d6a479ebdcc40b537a2538d7d67a0630f17a80",
+    "coreJobs": 295,
+    "fullStoreRows": 92
+  }
+}
