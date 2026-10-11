@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "reviewedDate": "2026-10-11",
+  "applicationId": "notepad2mod",
+  "version": "4.2.25.998",
+  "officialHome": "https://xhmikosr.github.io/notepad2-mod/",
+  "releaseUrl": "https://github.com/XhmikosR/notepad2-mod/releases/tag/4.2.25.998",
+  "fixedCommit": "62db550916cefcb5f21dbb27c8c8edd11695b23c",
+  "artifact": {
+    "fileName": "Notepad2-mod.4.2.25.998.exe",
+    "sourceUrl": "https://github.com/XhmikosR/notepad2-mod/releases/download/4.2.25.998/Notepad2-mod.4.2.25.998.exe",
+    "sizeBytes": 1449064,
+    "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9",
+    "sha256Basis": "Calculated official fixed HTTPS bytes, independently checked in guest; no upstream digest or Authenticode claim."
+  },
+  "sourceArchive": {
+    "fileName": "source-fixed.zip",
+    "sourceUrl": "https://codeload.github.com/XhmikosR/notepad2-mod/zip/62db550916cefcb5f21dbb27c8c8edd11695b23c",
+    "sizeBytes": 1575854,
+    "sha256": "204519afe34b6b8f3db8037b82ede3f40dc7e75601e0bcd6e4f60464445c320a"
+  },
+  "fixedSourceMembers": {
+    "License.txt": {
+      "sizeBytes": 1591,
+      "sha256": "c1cf2c653df1a9f11a35081694fc13feb9d8faa6791195ca5c633ce006270ed6"
+    },
+    "distrib/license.txt": {
+      "sizeBytes": 1572,
+      "sha256": "e9b3cf2eeb939ef9da220ddc38b73617c5f8a4d5c5e02887696f01c3e06ffe4e"
+    },
+    "scintilla/License.txt": {
+      "sizeBytes": 887,
+      "sha256": "e6e6b5250a9d5a2964496712dda87d84753d4ac1ed35080e4a7a149b9749c6e6"
+    },
+    "distrib/notepad2_setup.iss": {
+      "sizeBytes": 14676,
+      "sha256": "7dc4140c30316878e8caffe263146a6749056dc955eda921b883a7863829d3b3"
+    },
+    "src/Version.h": {
+      "sizeBytes": 2663,
+      "sha256": "d2bab377536703760975618e4b1ddd73146055920a83563186dff0d579158e8b"
+    }
+  },
+  "license": "BSD-3-Clause",
+  "licenseScope": "Fixed root License.txt has the three BSD conditions and disclaimer; installed license is byte-identical to this root member. distrib/license.txt has different years/wrapping; Scintilla license was read separately. Complete bundled component license closure is not verified.",
+  "exactMainProgramSpdxVerified": true,
+  "fullComponentLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerFamily": "Inno Setup",
+  "installerUsageReference": "https://jrsoftware.org/ishelp/topic_setupcmdline.htm",
+  "installerArchitecture": "x86 wrapper",
+  "installedLauncher": {
+    "relativeFile": "Notepad2mod/Notepad2.exe",
+    "architecture": "x86_64",
+    "sizeBytes": 1988912,
+    "sha256": "30f49ab4e470f0a4e05435642fcacafa1e9b0b4894be466c2cf7f836bcd3a94d"
+  },
+  "actualAboutVersion": "Notepad2-mod (64-bit) 4.2.25 r998 (62db550)",
+  "notepadReplacementDisabled": true,
+  "guiWorkflowPassed": true,
+  "published": false,
+  "countsAsCompleted": false
+}

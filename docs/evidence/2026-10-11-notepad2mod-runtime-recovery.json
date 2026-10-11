@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "notepad2mod",
+  "coreJobs": 205,
+  "storeRows": 71,
+  "allTasksTerminal": true,
+  "restart": "normal systemctl --user restart after all jobs terminal",
+  "servicePidsBefore": {
+    "compatforge.service": "MainPID=34051",
+    "forge-store.service": "MainPID=37443"
+  },
+  "servicePidsAfter": {
+    "compatforge.service": "MainPID=38794",
+    "forge-store.service": "MainPID=38808"
+  },
+  "full205CoreJobsAnd71StoreRowsPreserved": true,
+  "fullMarketSnapshotPreserved": true,
+  "fullSignedTrustDocumentsPreserved": true,
+  "allConfigDigestsAndApplicationGenerationsPreserved": true,
+  "serviceGuardsPreserved": true,
+  "knownTimeMonotonic": true,
+  "latestKnownTimeBefore": "2026-10-11T02:18:38.891552755Z",
+  "latestKnownTimeAfter": "2026-10-11T02:21:35.548327944Z",
+  "selectedGeneration": "gen-job-1791684570539-1",
+  "bothGenerationsReady": true,
+  "bothGenerationsOutputInputAndLauncherPinsPreserved": true,
+  "oldMpcOutputPinsPreserved": true,
+  "powerNeverPreserved": true,
+  "outputs": {
+    "original": {
+      "file": "output/中文验收.txt",
+      "sizeBytes": 98,
+      "sha256": "176b23ca4684370f912a712945cedd60292bf419c2dbea79f6851d4294235f1a",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeOS AkelPad 4.9.9\r\n中文文件与 UTF-8 保存验收\r\nstatus=after\r\nsum=21+21\r\nresult=42\r\n",
+      "generationId": "gen-job-1791594584878-1"
+    },
+    "market": {
+      "file": "output/市场验收.txt",
+      "sizeBytes": 97,
+      "sha256": "0d7d96ac98adc0d893e82bf34dee9d0001039819e590077836767f1b4d9f12ac",
+      "encoding": "UTF-8 with BOM",
+      "newline": "CRLF",
+      "exactExpectedBytesMatched": true,
+      "text": "ForgeStore AkelPad 4.9.9\r\n市场中文文件独立验收\r\nstatus=passed\r\nsum=40+2\r\nresult=42\r\n",
+      "generationId": "gen-job-1791595434904-4"
+    },
+    "frhed-original": {
+      "file": "output/hex-edited.bin",
+      "sizeBytes": 64,
+      "sha256": "6fe36a18018f4642e320cd7b62966d2c1561ceaf2ee9fef33ebce1d4b51c88ca",
+      "hex": "a5ff02030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+      "generationId": "gen-job-1791680907933-1"
+    },
+    "frhed-market": {
+      "file": "output/hex-market-edited.bin",
+      "sizeBytes": 64,
+      "sha256": "3ff70c430f55ac033df9d1e6cd0e5d1cd2392e881a131cf32fdc1f50c9361232",
+      "hex": "4224fdfcfbfaf9f8f7f6f5f4f3f2f1f0efeeedecebeae9e8e7e6e5e4e3e2e1e0dfdedddcdbdad9d8d7d6d5d4d3d2d1d0cfcecdcccbcac9c8c7c6c5c4c3c2c1c0",
+      "generationId": "gen-job-1791681323784-4"
+    },
+    "notepad2mod-original": {
+      "file": "output/original-edited.txt",
+      "sizeBytes": 108,
+      "sha256": "1dcfa2db8acf2056c58a023e040ffabf91e54fbf31447de773fda47eb62b6023",
+      "hex": "efbbbf466f7267654f53204e6f7465706164322d6d6f6420342e322e32352e3939380d0ae4b8ade69687e69687e69cace4bf9de79599e4b88e205554462d3820e9aa8ce694b60d0a7374617475733d61667465720d0a73756d3d32312b32310d0a726573756c743d34320d0a",
+      "generationId": "gen-job-1791684570539-1"
+    },
+    "notepad2mod-market": {
+      "file": "output/market-edited.txt",
+      "sizeBytes": 118,
+      "sha256": "c55caac4d58b224d7a683b942777916af940b1c0a4be1d16caaaf8ea03dff710",
+      "hex": "efbbbf466f72676553746f7265204e6f7465706164322d6d6f64206d61726b65742067656e65726174696f6e0d0ae5b882e59cbae69687e69cace4bf9de79599e4b88e205554462d3820e9aa8ce694b60d0a7374617475733d7061737365640d0a73756d3d34302b320d0a726573756c743d34320d0a",
+      "generationId": "gen-job-1791685142410-4"
+    }
+  },
+  "afterRollbackGuiJob": {
+    "applicationId": "notepad2mod",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 38622,
+        "requestId": "job-1791685267657-7",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 24348,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791684570539-1/prefix",
+        "requestId": "job-1791685267657-7",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 24391,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791685267657-7",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791684570539-1",
+    "id": "job-1791685267657-7",
+    "kind": "launch",
+    "status": "succeeded"
+  },
+  "afterRollbackExplicitOutputReopenObserved": true,
+  "privateFullCheckpoint": "notepad2mod-20261011/after-restart.json",
+  "bootId": "7bf8f675-008c-4201-88f8-a554e2302c1d"
+}

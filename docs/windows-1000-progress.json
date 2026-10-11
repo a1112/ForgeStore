@@ -254,6 +254,19 @@
       "failureEvidence": "docs/evidence/2026-10-11-frhed-failures.json",
       "fullEditorAcceptance": false,
       "limitation": "Only64-byte binary GUI overwrite, Save As and explicit fresh-process reopen on ASCII paths passed in original and independent market generations, followed by cached same-version update, exact rollback and normal service restart. Chinese paths/input, physical disk access, advanced or large-file editing, component license closure, guest online downloads, fresh-machine registration, settings migration and cross-version upgrades are unverified."
+    },
+    {
+      "id": "notepad2mod",
+      "version": "4.2.25.998",
+      "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9",
+      "sizeBytes": 1449064,
+      "evidence": "docs/evidence/windows-notepad2mod-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v28/tuf",
+      "publication": "docs/evidence/2026-10-11-notepad2mod-publication.json",
+      "report": "docs/windows-rolling-20261011-notepad2mod.md",
+      "failureEvidence": "docs/evidence/2026-10-11-notepad2mod-failures.json",
+      "fullEditorAcceptance": false,
+      "limitation": "Only small Chinese-filename UTF-8 BOM/CRLF plain replacement, ASCII append, Save As to ASCII output paths and fresh-process reopen passed in original and independent market generations, followed by cached same-version update, exact rollback and normal service restart. Direct Chinese input, large files, advanced editing, component license closure, guest online downloads, new-machine registration, settings migration and cross-version upgrades are unverified."
     }
   ],
   "queue": [
@@ -426,12 +439,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next unaccepted official fixed artifact. Preserve26 completed applications and12 existing blocked candidates; Frhed limited64-byte binary/ASCII-path workflow passed. Preserve full198 Core/69 Store records and role36 trust; old fixed-count scripts are historical.",
+  "next": "Select next unaccepted official fixed artifact. Preserve 27 completed applications and 12 existing blocked candidates; Notepad2-mod limited small UTF-8 BOM/CRLF text workflow passed. Preserve full 205 Core/71 Store records and role 37 trust; old fixed-count scripts are historical.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 26,
+    "acceptedLocalMarket": 27,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -439,23 +452,23 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v27/tuf",
-    "metadataVersion": 36,
-    "catalogueEntries": 28,
-    "acceptedDistinctWindowsApps": 26,
+    "signedCatalogue": "catalogue/candidate-v28/tuf",
+    "metadataVersion": 37,
+    "catalogueEntries": 29,
+    "acceptedDistinctWindowsApps": 27,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-frhed-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-notepad2mod-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-10-akelpad-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-frhed-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-frhed-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-notepad2mod-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-frhed.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-notepad2mod.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-10-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-frhed.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-frhed-final-verification.json"
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-notepad2mod.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-notepad2mod-final-verification.json"
 }

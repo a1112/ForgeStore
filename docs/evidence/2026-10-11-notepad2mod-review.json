@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "notepad2mod",
+  "version": "4.2.25.998",
+  "result": "passed-no-blocking-or-important-issues",
+  "reviewer": "Independent read-only review_notepad2mod_evidence agent",
+  "criticalFindings": [],
+  "importantFindings": [],
+  "resolvedMinorFindings": [
+    "The ledger latestAttemptEvidence index still pointed to Frhed; corrected to the current Notepad2-mod report before final staging."
+  ],
+  "acceptanceReceiptSha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1",
+  "sourceEvidenceSha256": "d7d9e78c4be753895ddf9bec3638263986433f0ac5614e5ad016364392eda662",
+  "privateCheckpointReviewArchiveSha256": "caf1e901a77e6c7bc6dd5d81ec9e8ae9a0d04cbf3d8a813c59ee995efc1ef911",
+  "reviewedStagedFileCountBeforeThisRecord": 62,
+  "frozenStagedFilesByteExact": 51,
+  "independentlyVerified": {
+    "role37TargetsSnapshotTimestampRsaPssSha256Signatures": true,
+    "metadataDigestChain": true,
+    "rootBytesEqualExistingTrustRoot": true,
+    "all55PrivateSignedTargetLengthsAndDigestsMatched": true,
+    "all32PublicSignedFilePinsMatched": true,
+    "all17ScreenshotAndActualOutputPinsMatched": true,
+    "eightFullPrivateCheckpointPhasesReviewed": true,
+    "allInitial198CoreJobsAnd69StoreRowsPreservedWithFullFields": true,
+    "allPrior32ApplicationGenerationsConfigsAndGuardsPreserved": true,
+    "full205CoreJobsAnd71StoreRowsEqualAcrossRestart": true,
+    "marketTrustConfigsGenerationsAndGuardsEqualAcrossRestart": true,
+    "latestKnownTimeMonotonic": true,
+    "allTasksTerminalAndExactOriginalGenerationRollback": true,
+    "fourActualTextFilesMatchArchivePublicPinsAndExpectedEdits": true,
+    "guiScreenshotsSupportLimitedOriginalMarketAndRollbackWorkflow": true,
+    "29UniqueCatalogueEntriesEqual27AcceptedAppsAnd2ExcludedFixtures": true,
+    "old26AcceptedLedgerRecordsAnd12BlockedCandidatesUnchanged": true,
+    "noOverstatedAcceptanceScopeFound": true,
+    "noPasswordsCredentialsPrivateKeysOrFullPrivateCheckpointsInPublicFiles": true
+  },
+  "limits": [
+    "The accepted workflow covers two small UTF-8 BOM/CRLF Chinese-name input fixtures, ordinary replacement, ASCII append, GUI Save As to ASCII output paths and explicit fresh-process reopen.",
+    "Update and rollback were submitted through Store IPC; GUI button action acceptance is not claimed.",
+    "Advanced editor features, full bundled license closure, guest online downloads, new-machine registration, settings migration and cross-version upgrade remain unverified.",
+    "The original GUI receipt and source evidence retain their byte-frozen historical phase labels; later market completion is recorded separately."
+  ],
+  "privateFullCheckpointContentsIncluded": false,
+  "finalFreshVerificationEvidence": "2026-10-11-notepad2mod-final-verification.json"
+}

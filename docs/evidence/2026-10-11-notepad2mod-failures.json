@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "notepad2mod",
+  "productCodeChanged": false,
+  "productFailureConfirmed": false,
+  "harnessFailures": [
+    {
+      "stage": "source retrieval",
+      "detail": "GitHub anonymous API returned 403 with rate-limit remaining zero. Official fixed release download and commit-pinned codeload source succeeded without credentials."
+    },
+    {
+      "stage": "installer observation",
+      "detail": "First observer incorrectly required a Selected tasks log line. Actual installer succeeded; corrected observer checked success log, installed root license bytes and absence of the Notepad IFEO replacement section. No install retry."
+    },
+    {
+      "stage": "GUI closing/checkpoint",
+      "detail": "First close shortcut focused the noVNC full-screen control; terminal-state checkpoint refused while launch remained running. Refocused guest, normally closed application, waited for normal exit and captured all-terminal checkpoint."
+    },
+    {
+      "stage": "market activation helper",
+      "detail": "Generated helper omitted a separating newline and failed SyntaxError before execution. Subsequent update preflight refused because catalogue had not advanced; no update task created. Corrected helper activated role 37 normally."
+    },
+    {
+      "stage": "asynchronous job observation",
+      "detail": "Immediate checkpoint refused while normal launch exit or market install was still completing. Read-only inspection and bounded terminal-state polling confirmed normal successful completion; no install cancellation or retry."
+    },
+    {
+      "stage": "host report script decoding",
+      "detail": "Direct Python 3.9 file invocation reported source decoding failure although full UTF-8 decode and compile validation passed. An ASCII runner explicitly decoded the same bytes as UTF-8 and compiled successfully; no output evidence or signed bytes changed."
+    }
+  ],
+  "authenticationChanged": false
+}

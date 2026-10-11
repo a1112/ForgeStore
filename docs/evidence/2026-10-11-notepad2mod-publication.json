@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "notepad2mod",
+  "version": "4.2.25.998",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited Chinese-filename UTF-8 BOM/CRLF text opening, plain replacement, ASCII append, GUI Save As to ASCII output and explicit fresh-process reopen in original and independent market generations; cached same-version update, exact rollback and normal Core/Store restart.",
+  "fullEditorAcceptance": false,
+  "signedCatalogue": "catalogue/candidate-v28/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 37,
+    "snapshot": 37,
+    "timestamp": 37
+  },
+  "catalogueEntries": 29,
+  "acceptedDistinctWindowsApplications": 27,
+  "excludedFixtures": 2,
+  "coreJobCount": 205,
+  "storeRowCount": 71,
+  "acceptanceReceipt": "windows-notepad2mod-20261011.acceptance.json",
+  "acceptanceReceiptSha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1",
+  "sourceEvidence": "2026-10-11-notepad2mod-source.json",
+  "sourceEvidenceSha256": "d7d9e78c4be753895ddf9bec3638263986433f0ac5614e5ad016364392eda662",
+  "activationEvidence": "2026-10-11-notepad2mod-activation.json",
+  "marketGuiEvidence": "2026-10-11-notepad2mod-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-notepad2mod-runtime-recovery.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-notepad2mod-20261011.acceptance.json#notepad2mod",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9",
+        "size": 1449064,
+        "target": "Notepad2-mod.4.2.25.998.exe",
+        "url": "https://github.com/XhmikosR/notepad2-mod/releases/download/4.2.25.998/Notepad2-mod.4.2.25.998.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "notepad2mod"
+    },
+    "id": "notepad2mod",
+    "license": "BSD-3-Clause",
+    "name": {
+      "en": "Notepad2-mod",
+      "zhCN": "Notepad2-mod"
+    },
+    "origin": "https://xhmikosr.github.io/notepad2-mod/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "XhmikosR and contributors",
+    "summary": {
+      "en": "Small Chinese-name UTF-8 BOM/CRLF text open, plain replacement, ASCII append, Save As and fresh-process reopen tested; advanced editor unverified.",
+      "zhCN": "小型中文名 UTF-8 BOM/CRLF 文本打开、普通替换、ASCII 追加、另存与新进程重开已测；高级编辑未验收"
+    },
+    "version": "4.2.25.998"
+  },
+  "installed": {
+    "appId": "notepad2mod",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "4.2.25.998"
+  },
+  "selectedOriginalGeneration": "gen-job-1791684570539-1",
+  "marketVersionLicenseTestedEvidenceAndLimitsVisiblyObserved": true,
+  "marketInstalledRowAndRollbackControlVisiblyObserved": true,
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "notepad2mod",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "ed6fd5bc-bfaf-4f8f-a3c4-b023fec7e292",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "notepad2mod",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "e453301f-5b40-40c0-9a2f-bdec0ba62093",
+      "state": "succeeded"
+    }
+  },
+  "coreJobs": [
+    {
+      "applicationId": "notepad2mod",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 38622,
+          "requestId": "job-1791685267657-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 24348,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791684570539-1/prefix",
+          "requestId": "job-1791685267657-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 24391,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791685267657-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791684570539-1",
+      "id": "job-1791685267657-7",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "notepad2mod",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 38206,
+          "requestId": "job-1791685232611-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 21163,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791685142410-4/prefix",
+          "requestId": "job-1791685232611-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 21206,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791685232611-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791685142410-4",
+      "id": "job-1791685232611-6",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "notepad2mod",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 38004,
+          "requestId": "job-1791685157947-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 49868,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791685142410-4/prefix",
+          "requestId": "job-1791685157947-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 49910,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791685157947-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791685142410-4",
+      "id": "job-1791685157947-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "notepad2mod",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 37755,
+          "requestId": "job-1791685142410-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4481,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791685142410-4/prefix",
+          "requestId": "job-1791685142410-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4504,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791685142410-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791685142410-4",
+      "id": "job-1791685142410-4",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "full205CoreAnd71StoreFieldsPreservedAcrossRestart": true,
+  "fullInitial198CoreAnd69StoreFieldsPreserved": true,
+  "fullCheckpointMatchAfterMarketGuiClosed": true,
+  "latestKnownTime": "2026-10-11T02:21:35.548327944Z",
+  "privateFullCheckpoint": "notepad2mod-20261011/after-restart.json",
+  "privateCheckpointReviewArchiveSha256": "caf1e901a77e6c7bc6dd5d81ec9e8ae9a0d04cbf3d8a813c59ee995efc1ef911",
+  "readOnlyCurrentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-notepad2mod-20261011.py",
+  "priorSignedHistoriesPreserved": true,
+  "trustResetOrDowngradePerformed": false,
+  "publicationEvidenceSeparate": true,
+  "screenshotsAndOutputs": {
+    "editor-created-market.bin": {
+      "sha256": "c55caac4d58b224d7a683b942777916af940b1c0a4be1d16caaaf8ea03dff710",
+      "sizeBytes": 118
+    },
+    "editor-created-original.bin": {
+      "sha256": "1dcfa2db8acf2056c58a023e040ffabf91e54fbf31447de773fda47eb62b6023",
+      "sizeBytes": 108
+    },
+    "input-market.bin": {
+      "sha256": "8ee8452ef2eb008d38b1967012fc07672badf10c1a3b36e2351ce3b24f64975a",
+      "sizeBytes": 108
+    },
+    "input-original.bin": {
+      "sha256": "f6938255a0d6b1cb9ef71b76be8277a31766921e4ff2322d68e9f14f21680cc6",
+      "sizeBytes": 98
+    },
+    "market-input.jpg": {
+      "sha256": "d2e3422009ef6fb19730897c8a2bffa829455d8503e673ce34289350d1c82665",
+      "sizeBytes": 133625
+    },
+    "market-reopened.jpg": {
+      "sha256": "6228af2065ae55339046b9e95298583b64c68eab79a1c2eda6fcba14f1efe156",
+      "sizeBytes": 135152
+    },
+    "market-replace.jpg": {
+      "sha256": "21caf5b1806a3156cdc9fb6d01782bcf818d64d49a6e36468fa613877c301fa0",
+      "sizeBytes": 164781
+    },
+    "market-saved.jpg": {
+      "sha256": "f96c740043d4cbbf636e28ef55bfb94185e298a84eff23885bc3fdc01b4483a8",
+      "sizeBytes": 135207
+    },
+    "original-about.jpg": {
+      "sha256": "e368c4cd22bb522d8c02ebc0862529e6bafeaca2f2352c29a45842dc35e82d49",
+      "sizeBytes": 111758
+    },
+    "original-input.jpg": {
+      "sha256": "626319fcce3ddf8cc7ca2d8faf32562940c74fd614ab1b57665ad7b4ac5d0c17",
+      "sizeBytes": 88889
+    },
+    "original-reopened.jpg": {
+      "sha256": "ea86f76d54ce731a1ec13bf57ee20514de27bb4749493dfbeaee3b0227aacb76",
+      "sizeBytes": 90968
+    },
+    "original-replace.jpg": {
+      "sha256": "768804069c80191e733e28b49a19e3dece879aac993659954451bc45a37102fc",
+      "sizeBytes": 123755
+    },
+    "original-saved.jpg": {
+      "sha256": "24c07f54cd068beb122ac3d61bf3fa1a4ba72715e35e9a36f6588826612d2053",
+      "sizeBytes": 90804
+    },
+    "rollback-reopened.jpg": {
+      "sha256": "b9cd2f27196138e95e2e9bc8ef37a3a02b3c8fec2d0fadb5d533192686626e99",
+      "sizeBytes": 90658
+    },
+    "store-details.jpg": {
+      "sha256": "1b1d79871a01c9cffc8639f804b37896456c31e966855beeb3eb23fb8526c001",
+      "sizeBytes": 136896
+    },
+    "store-discovery.jpg": {
+      "sha256": "b3f6369468903eae8cf09f98c8e82cf9ce548a7199e3aa789f45411b7dc36789",
+      "sizeBytes": 135262
+    },
+    "store-installed.jpg": {
+      "sha256": "d87ffdf8ac360321a344f76dbfa02655a2ae4620910c29a031e9ffb9df9473f7",
+      "sizeBytes": 157528
+    }
+  },
+  "signedCatalogueFiles": {
+    "metadata/1.root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    },
+    "metadata/37.snapshot.json": {
+      "sha256": "2bfd061200bcc148fa8535f51b61e81a3129a8cd0a647b14849ebfb4aab1049d",
+      "sizeBytes": 997
+    },
+    "metadata/37.targets.json": {
+      "sha256": "3698edf95a78dbaae23ee04ef06c31a158b2c6e39312f5988da6936e6c2018aa",
+      "sizeBytes": 11790
+    },
+    "metadata/timestamp.json": {
+      "sha256": "7b247a8f8d0e589a05a7f590841bb1aba83e2b973204922dbbc16ef91155be7a",
+      "sizeBytes": 997
+    },
+    "targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1",
+      "sizeBytes": 4879
+    },
+    "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "sizeBytes": 9031
+    },
+    "targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f",
+      "sizeBytes": 5280
+    },
+    "targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "sizeBytes": 21857
+    },
+    "targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "sizeBytes": 7918
+    },
+    "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "sizeBytes": 1676
+    },
+    "targets/298226b62a453560ff07dcf51d40e4c99f25a85535cdfd8fa9eba0378033f21c.catalogue.json": {
+      "sha256": "298226b62a453560ff07dcf51d40e4c99f25a85535cdfd8fa9eba0378033f21c",
+      "sizeBytes": 22402
+    },
+    "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "sizeBytes": 2738
+    },
+    "targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "sizeBytes": 7617
+    },
+    "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "sizeBytes": 1699
+    },
+    "targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "sizeBytes": 10640
+    },
+    "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "sizeBytes": 1617
+    },
+    "targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "sizeBytes": 12679
+    },
+    "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "sizeBytes": 1652
+    },
+    "targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "sizeBytes": 9285
+    },
+    "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "sizeBytes": 1146
+    },
+    "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "sizeBytes": 4783
+    },
+    "targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7",
+      "sizeBytes": 6220
+    },
+    "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "sizeBytes": 4223
+    },
+    "targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55",
+      "sizeBytes": 4642
+    },
+    "targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+      "sizeBytes": 11228
+    },
+    "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "sizeBytes": 1656
+    },
+    "targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "sizeBytes": 6071
+    },
+    "targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "sizeBytes": 10745
+    },
+    "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "sizeBytes": 4586
+    },
+    "targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "sizeBytes": 9388
+    },
+    "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "sizeBytes": 3517
+    },
+    "trusted-root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    }
+  },
+  "verifiedTufClientDownload": {
+    "client": "tuftool 0.17",
+    "trustedRootExplicitlyProvided": true,
+    "unsafeOrExpiryBypassFlagsUsed": false,
+    "targets": [
+      "catalogue.json",
+      "windows-notepad2mod-20261011.acceptance.json",
+      "Notepad2-mod.4.2.25.998.exe"
+    ]
+  },
+  "notepadReplacementDisabledInBothGenerations": true,
+  "authenticationChanged": false,
+  "ubuntuCountsChanged": false,
+  "sourceProviderV2NotDeployedOrGuiAccepted": true,
+  "productCodeChanged": false,
+  "limits": [
+    "Only fixed Notepad2-mod 4.2.25.998 x64 on Wine 11.14 win64, two small UTF-8 BOM/CRLF text fixtures, Chinese input filenames and ASCII output paths are accepted; full editor acceptance is not claimed.",
+    "GUI plain replacement, ASCII append, separate Save As and explicit fresh-process reopen passed in original and independent market generations; Chinese text, BOM, CRLF and both input files were preserved.",
+    "Direct Chinese keyboard input, large files, alternative encodings, syntax features, regex, plugins and advanced workflows are unverified.",
+    "Fixed root License.txt grants BSD-3-Clause; installed license equals this member. Scintilla notice read separately; full bundled component license closure, upstream digest, Authenticode and reproducible build are unverified.",
+    "Original GUI receipt/source remain byte-frozen with market pending at that historical phase; publication records later market completion separately.",
+    "Cached same-version update, exact original-generation rollback and normal Core/Store restart passed; update and rollback used Store IPC, not GUI action buttons. Guest online downloads, new-machine registration, settings migration and cross-version upgrade are unverified."
+  ],
+  "finalVerificationEvidence": "2026-10-11-notepad2mod-final-verification.json",
+  "independentReviewEvidence": "2026-10-11-notepad2mod-review.json"
+}

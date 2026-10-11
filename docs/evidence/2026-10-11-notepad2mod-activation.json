@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 37,
+  "catalogueEntries": 29,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "originalCoreJobsPreserved": true,
+  "coreJobs": 201,
+  "fullStoreRowsPreserved": true,
+  "storeRows": 69,
+  "previousInstalledAndEntriesPreserved": true,
+  "notepad2modEntry": {
+    "compatibility": {
+      "evidence": "windows-notepad2mod-20261011.acceptance.json#notepad2mod",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9",
+        "size": 1449064,
+        "target": "Notepad2-mod.4.2.25.998.exe",
+        "url": "https://github.com/XhmikosR/notepad2-mod/releases/download/4.2.25.998/Notepad2-mod.4.2.25.998.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "notepad2mod"
+    },
+    "id": "notepad2mod",
+    "license": "BSD-3-Clause",
+    "name": {
+      "en": "Notepad2-mod",
+      "zhCN": "Notepad2-mod"
+    },
+    "origin": "https://xhmikosr.github.io/notepad2-mod/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "XhmikosR and contributors",
+    "summary": {
+      "en": "Small Chinese-name UTF-8 BOM/CRLF text open, plain replacement, ASCII append, Save As and fresh-process reopen tested; advanced editor unverified.",
+      "zhCN": "小型中文名 UTF-8 BOM/CRLF 文本打开、普通替换、ASCII 追加、另存与新进程重开已测；高级编辑未验收"
+    },
+    "version": "4.2.25.998"
+  },
+  "notepad2modInstalled": {
+    "appId": "notepad2mod",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "4.2.25.998"
+  },
+  "serviceGuardsPreserved": true,
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "signedCatalogue": "catalogue/candidate-v28/tuf",
+  "historicalPhase": "activation before independent market lifecycle"
+}
