@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "result": "passed-no-blocking-or-important-issues",
+  "scope": "Pending installation and controlled diagnostic evidence; not native managed repair or application acceptance.",
+  "baseCommit": "fb299127a5af99f013c6aa8d4f9316a74d45bb63",
+  "independentChecksPassed": 2045,
+  "independentChecksFailed": 0,
+  "criticalIssues": [],
+  "importantIssuesRemaining": [],
+  "minorIssues": [],
+  "resolvedImportantIssue": {
+    "file": ".gitattributes",
+    "issue": "61 CRLF source receipt was subject to default text eol=lf normalization",
+    "fix": "Exact source receipt -text whitespace=cr-at-eol rule; source bytes unchanged and raw/filtered blob hashes equal",
+    "finalStatus": "Verified before staging; parent must perform index and commit readback."
+  },
+  "verificationBoundaries": [
+    "Formal Core/Store histories compared as complete JSON and SQLite rows, preserving legacy absent optional fields.",
+    "Artha export and internal history raw bytes exactly CRLF; receipt text is newline-normalised.",
+    "First conf 180-byte raw value reconstructed from frozen text and digest; final conf independently read from archive is 179 bytes. Sections/values equal; raw bytes intentionally unequal.",
+    "No remote or GUI operation performed by this reviewer. Nine supplied screenshots visually inspected. Prior guest app data/power-settings claims depend on parent executed fresh read-only output verifier; raw old guest data is outside this archive.",
+    "Installed WordNet complete data.noun raw bytes outside archive; 29-line actual header inspected and recorded full-file hash checked for internal consistency. No full bundled licence closure or native managed cwd repair accepted."
+  ],
+  "parentFreshFullStateAndOutputChecksPassed": 1482,
+  "coreJobs": 221,
+  "storeRows": 75,
+  "windowsAccepted": 29,
+  "blockedCandidates": 13,
+  "trustRoot": 1,
+  "onlineRole": 39,
+  "oldOnlineSignaturesAndDigestChainIndependentlyVerified": true,
+  "oldSignedTargetsActualBytesVerified": 60,
+  "newArthaSignedAcceptance": false,
+  "managedGuiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "requiredPostReviewChecks": "11 new and 58 prior frozen files must match working bytes, index and committed blob before normal push."
+}

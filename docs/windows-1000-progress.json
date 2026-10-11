@@ -457,6 +457,31 @@
       "published": false,
       "countsAsCompleted": false,
       "blocker": "Official fixed MSI digest matched, but two bounded read-only inspections reject its final DIFAT link 0xffffffff; MS-CFB section 2.5 requires 0xfffffffe. Existing WinDirStat control passes the same pinned inspector. No guest package staging, app registration or installation job; artifact and validation remain unchanged. Official portable ZIP is not yet reviewed or integrated."
+    },
+    {
+      "id": "artha",
+      "name": "Artha",
+      "version": "1.0.3.0",
+      "stage": "installed-managed-gui-working-directory-blocked",
+      "sourceUrl": "https://downloads.sourceforge.net/project/artha/artha/1.0.3/artha_1.0.3.0.exe",
+      "sourceArchiveUrl": "https://downloads.sourceforge.net/project/artha/artha/1.0.3/artha-1.0.3.tar.gz",
+      "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2",
+      "sizeBytes": 12711596,
+      "license": "GPL-2.0-or-later (main program); bundled licence closure unverified",
+      "artifactEvidence": "docs/evidence/2026-10-11-artha-source.json",
+      "installationEvidence": "docs/evidence/2026-10-11-artha-installed-pending.json",
+      "guiEvidence": "docs/evidence/2026-10-11-artha-gui-diagnostic.json",
+      "failureEvidence": "docs/evidence/2026-10-11-artha-failures.json",
+      "evidence": "docs/windows-rolling-20261011-artha-pending.md",
+      "installationJobId": "job-1791691244756-1",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1791691244756-1",
+      "installed": true,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "blocker": "Managed pinned launcher runs from generation root; Windows APP_DIR=. cannot load Artha/bin/gui.glade. Two separate copied-context prepared-launch diagnostics from Artha/bin completed two-word English lookups, GUI history export and history reopen, but no native managed working-directory repair, independent market generation or signed acceptance.",
+      "diagnosticOnlyGuiFunctionObserved": true
     }
   ],
   "excludedInternalFixtures": [
@@ -465,17 +490,17 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next unaccepted official fixed artifact. Preserve 29 completed applications and 12 existing blocked candidates. DOSBox has limited two-small-synthetic-DOS-program ASCII GUI acceptance; programs are test inputs, not separately counted. Preserve 219 Core/75 Store full records and role 39 trust. Older fixed-count helpers are historical.",
+  "next": "Resolve Artha native managed launcher working-directory support with bounded generation-contained paths and preserve the original failed job and generation. Controlled copied-context diagnostics are not managed GUI or market acceptance. Keep 29 completed applications and 13 blocked candidates; current complete history is 221 Core/75 Store with candidate-v30/root 1/role 39 unchanged. Do not use previous fixed-count helpers as current evidence.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 29,
-    "explicitlyBlockedCandidates": 12,
+    "explicitlyBlockedCandidates": 13,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 12
+    "pendingCandidates": 13
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v30/tuf",
@@ -489,12 +514,12 @@
     "previousPublicationEvidence": "docs/evidence/2026-10-11-dbbrowser-publication.json",
     "activationEvidence": "docs/evidence/2026-10-11-dosbox-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-dosbox.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-artha-pending.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-10-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-dosbox.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-dosbox-final-verification.json"
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-artha-pending.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-artha-environment-verification.json"
 }

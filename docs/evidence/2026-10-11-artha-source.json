@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "version": "1.0.3.0",
+  "sourceVersion": "1.0.3",
+  "officialDownloadPage": "https://artha.sourceforge.net/wiki/index.php/Download",
+  "artifacts": [
+    {
+      "file": "artha_1.0.3.0.exe",
+      "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2",
+      "sizeBytes": 12711596
+    },
+    {
+      "file": "artha-1.0.3.tar.gz",
+      "sha256": "e383d1e20147a7e278ab1c89e5b5fb5fd7f515f5ef57c0c0aae2449eebf50239",
+      "sizeBytes": 441630
+    }
+  ],
+  "fixedSourceMembers": {
+    "COPYING": {
+      "sizeBytes": 17987,
+      "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+    },
+    "README": {
+      "sizeBytes": 2723,
+      "sha256": "53b4e76c1a6cac8f6441bc321134714463ee12dc3c38255947c9e1bce23626ca"
+    },
+    "INSTALL": {
+      "sizeBytes": 5821,
+      "sha256": "c64174b16dc350fecbfc921f9de911da9ad2e52769a3e5caf1695519733aae48"
+    },
+    "configure.ac": {
+      "sizeBytes": 6566,
+      "sha256": "30cd9861007ff6cd576456fc16d1ceee581464c2809e4af08c014f925b5a22aa"
+    },
+    "src/gui.c": {
+      "sizeBytes": 128222,
+      "sha256": "c02049d54fb5bc374643f01f8c3fc9afa6f1106cb512903b3a3f9294ded65ebf"
+    },
+    "data/gui.glade": {
+      "sizeBytes": 40362,
+      "sha256": "eabf626574463ab5ab747825f91ab499815e44a54cc7c4eeb1db83e897192c07"
+    },
+    "src/Makefile.am": {
+      "sizeBytes": 1516,
+      "sha256": "b66d136580c0f474ec5e18eaa963ca1da2a949c91a010a78d5eef3c84c18fd8e"
+    }
+  },
+  "mainProgramLicense": "GPL-2.0-or-later",
+  "mainLicenseBasis": "Fixed src/gui.c declares version 2 or later; COPYING is GPL v2.",
+  "officialSourceForgeSha256Matched": true,
+  "actualHttpsBytesMatched": true,
+  "installerHeader": "Inno Setup",
+  "installerArchiveListingVerified": false,
+  "bundleLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "installed": false,
+  "guiAccepted": false,
+  "published": false
+}

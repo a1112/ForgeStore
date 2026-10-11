@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "stage": "installed-managed-gui-working-directory-blocked",
+  "freshReadOnlyStateCheckPassed": true,
+  "windowsAccepted": 29,
+  "coreJobs": 221,
+  "storeRows": 75,
+  "checkpointPhases": {
+    "before": {
+      "coreJobs": 219,
+      "storeRows": 75
+    },
+    "after-install": {
+      "coreJobs": 220,
+      "storeRows": 75
+    },
+    "after-gui-failure": {
+      "coreJobs": 221,
+      "storeRows": 75
+    },
+    "after-diagnostic-first": {
+      "coreJobs": 221,
+      "storeRows": 75
+    },
+    "after-diagnostic": {
+      "coreJobs": 221,
+      "storeRows": 75
+    }
+  },
+  "prior219CoreAnd75StoreFullFieldsPreserved": true,
+  "final221CoreAnd75StoreFormalFieldsExactSinceGuiFailure": true,
+  "allTasksTerminal": true,
+  "allDiagnosticUnitsTerminal": true,
+  "oldAppGenerationsDataAndOutputsVerified": true,
+  "powerSettingsDigestUnchanged": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+  "trustRoot": 1,
+  "onlineRole": 39,
+  "activeCatalogue": "candidate-v30",
+  "trustDocumentsAndServiceGuardsExact": true,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "privateCheckpoint": "artha-20261011/after-diagnostic.json",
+  "privateCheckpointSha256": "67689806fbc7cf5fe5f0bb4972e3efa508c1ef86686a086ab41f230a2532b2cf",
+  "currentReadOnlyHelper": "rolling-current-state-artha-20261011.py",
+  "privateArchiveSha256": "b85186170b5cf26555aec82fa0040556f40a4b104cedeae2d808d14906b8a254",
+  "privateArchiveMembers": 19,
+  "privateFullCheckpointCommitted": false,
+  "sourceReceiptEarlierStageBytesPreserved": true,
+  "authenticationChanged": false,
+  "providerV2Deployed": false,
+  "ubuntuLedgerReadOnly": true,
+  "ubuntuAccepted": 2,
+  "flatpakInstalled": false,
+  "managedGuiAccepted": false,
+  "signedAcceptanceCreated": false,
+  "published": false,
+  "countsAsCompleted": false
+}

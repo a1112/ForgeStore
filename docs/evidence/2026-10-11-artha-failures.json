@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "failures": [
+    {
+      "stage": "managed-launch",
+      "jobId": "job-1791691304343-2",
+      "status": "failed",
+      "exitCode": 3,
+      "visibleError": "Error loading GUI from .\\gui.glade! aborting...",
+      "actualWorkingDirectoryRelativeToGeneration": ".",
+      "requiredWorkingDirectoryRelativeToGeneration": "prefix/drive_c/Artha/bin",
+      "resourceAtActualWorkingDirectoryExists": false,
+      "resourceAtRequiredWorkingDirectoryExists": true,
+      "sourceBasis": {
+        "configure.ac": "Windows APP_DIR is \".\" (lines 160-162)",
+        "src/gui.c": "Builds GUI path from APP_DIR and UI_FILE (near line 3562)"
+      },
+      "normalErrorDialogDismissed": true,
+      "managedRepairImplemented": false,
+      "managedDefinitionChanged": false,
+      "daemonGlobalContextChanged": false,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 51415,
+          "requestId": "job-1791691304343-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 33373,
+          "kind": "wine-server-stop-requested",
+          "requestId": "job-1791691304343-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 33416,
+          "exit": {
+            "code": 3,
+            "success": false
+          },
+          "kind": "exited",
+          "requestId": "job-1791691304343-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "stage": "first-controlled-diagnostic-unit",
+      "exitCode": 1,
+      "message": "Wine startup cleanup failed: FontPreparation; ServerExit",
+      "readOnlyTmpProbeErrno": 30,
+      "readOnlyTmpProbeMessage": "Read-only file system",
+      "correction": "Only retry diagnostic unit granted ReadWritePaths=/tmp; same copied context, pinned executable and request. Formal services retained.",
+      "afterCorrectionActualGuiObserved": true,
+      "failedUnitRetained": true
+    },
+    {
+      "stage": "final-output-checkpoint-verifier",
+      "failedAssertion": "First-exit artha.conf raw digest expected equal after second normal exit.",
+      "subsequentChangesStopped": true,
+      "checkpointWrittenOnFailure": false,
+      "actualDifference": "One blank line removed after comment header; 180 to 179 bytes. Same config sections and all values.",
+      "oldSha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb",
+      "newSha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290",
+      "originalReceiptPreserved": true,
+      "correction": "Compare documented semantic equality at transition and pin separately observed final bytes for subsequent read-only checks.",
+      "freshCheckPassed": true
+    },
+    {
+      "stage": "private-archive-member-count-verifier",
+      "expected": 20,
+      "actual": 19,
+      "correction": "Corrected hand-counted expectation after enumerating actual members; same fetched archive bytes retained.",
+      "archiveMutationOrRuntimeChange": false
+    },
+    {
+      "stage": "installation-harness-python-source-warning",
+      "message": "SyntaxWarning: invalid escape sequence \\A",
+      "actualInstallerArgumentHex": "2f4449523d433a5c4172746861",
+      "actualArgumentBytes": 13,
+      "actualSingleBackslashVerified": true,
+      "recipeChanged": false
+    },
+    {
+      "stage": "host-read-only-file-discovery",
+      "message": "Two attempted diagnostic JSON filenames did not exist.",
+      "correction": "Used rg --files and read actual artha-initial-diagnosis-20261011.jsonl.",
+      "runtimeChanged": false
+    },
+    {
+      "stage": "source-receipt-git-filter-review",
+      "severity": "important-before-commit",
+      "sourceReceiptCrlfCount": 61,
+      "initialGitAttribute": "* text eol=lf",
+      "observedRisk": "git hash-object with path filters differed from the unfiltered raw blob; staging would normalize the frozen source receipt.",
+      "normalizationAppliedToSourceReceipt": false,
+      "correction": "Added exact docs/evidence/2026-10-11-artha-source.json -text whitespace=cr-at-eol rule. Original source receipt bytes retained.",
+      "rawAndFilteredBlobSha1AfterCorrection": "abf6fc11f959edc7ac4b780c8473351fa0b9f509",
+      "worktreeSourceFreezePassed": true,
+      "indexAndCommitReadbackRequired": true
+    }
+  ],
+  "managedLaunchStillBlocked": true,
+  "published": false,
+  "countsAsCompleted": false
+}

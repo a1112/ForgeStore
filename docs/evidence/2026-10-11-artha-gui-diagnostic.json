@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "artha",
+  "stage": "controlled-cwd-diagnostic-only",
+  "observedGuiVersion": "1.0.3",
+  "fixedInstallerVersion": "1.0.3.0",
+  "managedLaunchFailure": {
+    "stage": "managed-launch",
+    "jobId": "job-1791691304343-2",
+    "status": "failed",
+    "exitCode": 3,
+    "visibleError": "Error loading GUI from .\\gui.glade! aborting...",
+    "actualWorkingDirectoryRelativeToGeneration": ".",
+    "requiredWorkingDirectoryRelativeToGeneration": "prefix/drive_c/Artha/bin",
+    "resourceAtActualWorkingDirectoryExists": false,
+    "resourceAtRequiredWorkingDirectoryExists": true,
+    "sourceBasis": {
+      "configure.ac": "Windows APP_DIR is \".\" (lines 160-162)",
+      "src/gui.c": "Builds GUI path from APP_DIR and UI_FILE (near line 3562)"
+    },
+    "normalErrorDialogDismissed": true,
+    "managedRepairImplemented": false,
+    "managedDefinitionChanged": false,
+    "daemonGlobalContextChanged": false,
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 51415,
+        "requestId": "job-1791691304343-2",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 33373,
+        "kind": "wine-server-stop-requested",
+        "requestId": "job-1791691304343-2",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 33416,
+        "exit": {
+          "code": 3,
+          "success": false
+        },
+        "kind": "exited",
+        "requestId": "job-1791691304343-2",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "diagnosticMethod": {
+    "cli": "compatforge-cli-managed-msi-v10 prepared-launch",
+    "cliSha256": "feaad5a5010fbf1506f2e4771bb7677345ccbba757b5d4aa97b65be2b502ce0a",
+    "copiedPrivateContext": true,
+    "onlyContextFieldChanged": "runtimeBindings[0].workingDirectory",
+    "workingDirectoryRelativeToGeneration": "prefix/drive_c/Artha/bin",
+    "samePinnedExecutableInPlace": true,
+    "noResourceCopyOrProgramPatch": true,
+    "noDaemonConfigurationChange": true,
+    "temporaryUnitOnlyProperties": [
+      "NoNewPrivileges=true",
+      "ProtectSystem=strict",
+      "PrivateTmp=false",
+      "ReadWritePaths=/tmp"
+    ],
+    "formalServiceSettingsUnchanged": true
+  },
+  "actualGuiActions": [
+    "Confirmed non-binding first-run hotkey notice",
+    "Typed happy and submitted search; observed adjective definitions and synonyms",
+    "Typed computer and submitted search; observed two noun senses and synonyms",
+    "Query context menu Save History; GUI Save As to C:\\ForgeQA\\output\\original-history.txt",
+    "Observed save-success dialog",
+    "About displayed Artha 1.0.3",
+    "Toolbar Quit; diagnostic unit exited 0 and wineserver stopped",
+    "Separate new diagnostic process; expanded tray window",
+    "Query dropdown visibly retained computer and happy",
+    "Selected retained computer and submitted search; observed matching noun results",
+    "Toolbar Quit; second diagnostic unit exited 0 and wineserver stopped"
+  ],
+  "savedOutput": {
+    "file": "output/original-history.txt",
+    "sizeBytes": 17,
+    "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+    "hex": "68617070790d0a636f6d70757465720d0a",
+    "text": "happy\r\ncomputer\r\n"
+  },
+  "internalHistoryAndConfiguration": {
+    "generationId": "gen-job-1791691244756-1",
+    "output": {
+      "file": "output/original-history.txt",
+      "sizeBytes": 17,
+      "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+      "hex": "68617070790d0a636f6d70757465720d0a",
+      "text": "happy\r\ncomputer\r\n"
+    },
+    "historyFiles": [
+      {
+        "file": "drive_c/users/forge/AppData/Local/artha.log",
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+        "text": "happy\ncomputer\n"
+      },
+      {
+        "file": "drive_c/users/forge/AppData/Local/artha.conf",
+        "sizeBytes": 179,
+        "sha256": "4bb101fd60c1f59b123c5f3e544c87e845276a3416557a023136742081c30290",
+        "text": "# Artha Preferences File\n[Settings]\nVersion=1.0.3\nAccel_Key=119\nAccel_Mods=12\nAccel_Flags=0\nDetailedMode=false\nNotifications=true\nPolysemy=true\nTrayIcon=true\nLaunchMinimized=true\n"
+      }
+    ],
+    "firstExitHistoryFiles": [
+      {
+        "file": "drive_c/users/forge/AppData/Local/artha.log",
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+        "text": "happy\ncomputer\n"
+      },
+      {
+        "file": "drive_c/users/forge/AppData/Local/artha.conf",
+        "sizeBytes": 180,
+        "sha256": "d2d2a6e739f31d6b3b5d246a397c312f15f28b18771d49242eaf5517a2b190fb",
+        "text": "# Artha Preferences File\n\n[Settings]\nVersion=1.0.3\nAccel_Key=119\nAccel_Mods=12\nAccel_Flags=0\nDetailedMode=false\nNotifications=true\nPolysemy=true\nTrayIcon=true\nLaunchMinimized=true\n"
+      }
+    ],
+    "configurationSemanticEqualityAfterReopen": true,
+    "configurationRawByteEqualityAfterReopen": false,
+    "configurationDifference": "Artha removed one blank line after its comment header on normal second exit; 180 to 179 bytes. Initial receipt preserved.",
+    "managedLaunchPassed": false,
+    "published": false,
+    "countsAsCompleted": false
+  },
+  "diagnosticUnitResults": {
+    "forge-artha-cwd-diagnostic-20261011": {
+      "status": "ActiveState=failed\nSubState=failed\nMainPID=0\nResult=exit-code\nExecMainStatus=1\n",
+      "eventKinds": [
+        "diagnostic-text"
+      ],
+      "exit": null
+    },
+    "forge-artha-cwd-diagnostic-rwtmp-20261011": {
+      "status": "ActiveState=inactive\nSubState=dead\nMainPID=0\nResult=success\nExecMainStatus=0\n",
+      "eventKinds": [
+        "started",
+        "wine-server-stop-requested",
+        "exited"
+      ],
+      "exit": {
+        "code": 0,
+        "success": true
+      }
+    },
+    "forge-artha-cwd-diagnostic-reopen-20261011": {
+      "status": "ActiveState=inactive\nSubState=dead\nMainPID=0\nResult=success\nExecMainStatus=0\n",
+      "eventKinds": [
+        "started",
+        "wine-server-stop-requested",
+        "exited"
+      ],
+      "exit": {
+        "code": 0,
+        "success": true
+      }
+    }
+  },
+  "screenshots": {
+    "diagnostic-about.jpg": {
+      "sha256": "2662ea4428026301e9314a7d8f6f9baa61bb9f5d89780e581c4557d30b3f2ec6",
+      "sizeBytes": 186436
+    },
+    "diagnostic-computer.jpg": {
+      "sha256": "9e8e7242031307bfa7b76c92bb2aff4b53cb0a5d7fdcafb3db5abdaf65293b21",
+      "sizeBytes": 163142
+    },
+    "diagnostic-first-run.jpg": {
+      "sha256": "4a58ab82d2090f3784ce609939675afc6bb80ff2ac30fa9240ba965217c0bf32",
+      "sizeBytes": 157528
+    },
+    "diagnostic-happy.jpg": {
+      "sha256": "5ddb7080e08df384524377b0ac072cd0cfce305a61ebbfdeaa9b19c6c6fdb0c3",
+      "sizeBytes": 164610
+    },
+    "diagnostic-reopen-computer.jpg": {
+      "sha256": "362ccbc350ee780ad5463eb7b1d683d4fcd0697d5dd0f817cdf2e319429d8dd9",
+      "sizeBytes": 163208
+    },
+    "diagnostic-reopen-history.jpg": {
+      "sha256": "f73a7a67495024ea4ca7c1a481211ba8020f0af27edd03f66d6426a109b32a95",
+      "sizeBytes": 135839
+    },
+    "diagnostic-save-as.jpg": {
+      "sha256": "de578e21515a1ef37ec492c95aab5fe7a22d9d062820d60ef384bc40e84ec77f",
+      "sizeBytes": 168752
+    },
+    "diagnostic-save-success.jpg": {
+      "sha256": "d29e9a5799193d2e45a021f901080628c4bbae0a9c9d91630a98244de84c9531",
+      "sizeBytes": 172095
+    },
+    "startup-error.jpg": {
+      "sha256": "aa5a634c537d4e2576645b102118665d914208bb1eed2b31a8201c6cb900c82d",
+      "sizeBytes": 128071
+    }
+  },
+  "outputEvidence": "2026-10-11-artha/diagnostic-history.bin",
+  "managedGuiAccepted": false,
+  "marketGuiAccepted": false,
+  "signedAcceptanceCreated": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "limitations": [
+    "Managed launcher still uses generation-root cwd and fails; diagnostic is not managed acceptance.",
+    "Only two English words, ASCII export path and history persistence examined.",
+    "Chinese input/path, detailed relations, hotkey integration, notifications, spelling, large history and advanced features unverified.",
+    "No independent market generation, update, rollback, service restart acceptance or cross-version upgrade.",
+    "Guest online download, fresh-machine registration, migration and complete bundled licence closure unverified."
+  ]
+}
