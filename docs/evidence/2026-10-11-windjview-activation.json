@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 51,
+  "rootVersion": 1,
+  "entries": 41,
+  "coreJobs": 302,
+  "fullStoreRows": 94,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-windjview-20261011.acceptance.json#windjview",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "c46a0b6b2c1c289b99fc92212443c911b80a899ddc772442e1a47264c9039c5c",
+        "size": 2957069,
+        "target": "WinDjView-2.1-Setup.exe",
+        "url": "https://downloads.sourceforge.net/project/windjview/WinDjView/2.1/WinDjView-2.1-Setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "windjview"
+    },
+    "id": "windjview",
+    "license": "GPL-2.0-or-later (main program; full bundle closure unverified)",
+    "name": {
+      "en": "WinDjView",
+      "zhCN": "WinDjView DjVu 阅读器"
+    },
+    "origin": "https://windjview.sourceforge.io/en",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Andrew Zhezherun",
+    "summary": {
+      "en": "Limited bitonal DjVu render, 90-degree rotate, BMP export and fresh reopen tested. Manual installation/path and startup prompt required; bundled promotion resources present; advanced and unattended functions unverified.",
+      "zhCN": "有限黑白 DjVu 显示、90度旋转、BMP导出和重开已测；需手动安装路径并确认启动提示，安装包有推广资源；高级与无人值守未验收"
+    },
+    "version": "2.1"
+  },
+  "installed": {
+    "appId": "windjview",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "2.1"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "1477a76bc239cbacbb559b4cdb44caeeaace36cdfdca7e98c797b0474fa26691",
+    "coreJobs": 302,
+    "fullStoreRows": 94
+  },
+  "independentMarketGenerationPending": true
+}

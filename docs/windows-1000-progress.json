@@ -390,6 +390,17 @@
       "signedCatalogue": "catalogue/candidate-v41/tuf",
       "publication": "docs/evidence/2026-10-11-rednotebook-publication.json",
       "limitation": "Only two small Chinese-name daily journal edits, ASCII-folder GUI Save As, current-day text export, explicit fresh-process reopen and cached IPC update/exact formal-original rollback/restart passed. Native per-launcher fc plus application Sans24 preference. GTK shortcuts and cp1252 path logging unresolved; active inputs changed, immutable fixtures preserved. Third original GUI changed two registry files and app log; separately repinned. Full bundle licensing/advanced features/direct Chinese input/network/new registration/migration/cross-version/unattended/GUI update buttons unverified."
+    },
+    {
+      "id": "windjview",
+      "version": "2.1",
+      "sha256": "c46a0b6b2c1c289b99fc92212443c911b80a899ddc772442e1a47264c9039c5c",
+      "sizeBytes": 2957069,
+      "license": "GPL-2.0-or-later (main program; full bundle closure unverified)",
+      "evidence": "docs/evidence/windows-windjview-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v42/tuf",
+      "publication": "docs/evidence/2026-10-11-windjview-publication.json",
+      "limitation": "Two110-byte Chinese-name single-page bitonal DjVu fixtures: render,90-degree rotation,BMP GUI export6206B,49152 exact pixels each,explicit fresh reopen and cached Store IPC update/exact original rollback/restart. Manual English installer/path and default-viewer No prompt required; installer contains Yandex resources/downloader entry, full behavior not proven absent. Upstream installer digest/full bundle license closure/advanced/color/multipage/direct Chinese input/network/new registration/migration/cross-version/unattended/GUI update buttons unverified. Third original GUI changed two registry files; before/after raw private backups and new pins preserved."
     }
   ],
   "queue": [
@@ -562,12 +573,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next official sourced/licensed/pinned candidate;38/1000 Windows accepted,12 unresolved. RedNotebook2.43 limited daily journal workflow and local lifecycle accepted, candidate-v41/root1/role50,299 full Core tasks/94 full Store SQLite rows. Strict guest helper rolling-current-state-rednotebook-v3-20261011.py. Preserve all immutable bytes and trust history. Third GUI registry/log variation separately pinned; shortcut and path logging problems unresolved. Push awaits restored GitHub authentication; do not reissue expired device codes each round.",
+  "next": "Select next official sourced/licensed/fixed candidate;39/1000 Windows accepted,12 unresolved. WinDjView2.1 limited bitonal render/rotate/BMP-export/fresh-reopen and local lifecycle accepted, candidate-v42/root1/role51,306 full Core tasks/96 full Store SQLite rows. Strict guest helper rolling-current-state-windjview-20261011.py. Preserve frozen bytes and trust history. Interactive installer/default-viewer prompt and promotion resources limit unattended claims; third GUI registry variation separately pinned. Push awaits restored GitHub authentication; do not reissue device codes each round.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 38,
+    "acceptedLocalMarket": 39,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -575,25 +586,25 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v41/tuf",
-    "metadataVersion": 50,
-    "catalogueEntries": 40,
-    "acceptedDistinctWindowsApps": 38,
+    "signedCatalogue": "catalogue/candidate-v42/tuf",
+    "metadataVersion": 51,
+    "catalogueEntries": 41,
+    "acceptedDistinctWindowsApps": 39,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-rednotebook-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-windjview-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-rednotebook-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-rednotebook-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-windjview-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-11-rednotebook-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-11-windjview-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-rednotebook.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-rednotebook-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-windjview.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-windjview-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

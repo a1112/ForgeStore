@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "windjview",
+  "version": "2.1",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 39,
+  "signedCatalogue": "catalogue/candidate-v42/tuf",
+  "metadataVersion": 51,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 41,
+  "excludedFixtures": 2,
+  "signedActualTargets": 83,
+  "publicCatalogueFiles": 47,
+  "sourceEvidence": {
+    "reference": "2026-10-11-windjview-source.json",
+    "sha256": "0f056db8dc120c2a9782fd24950cd70397850940d9a44112fc131d892fc1461f"
+  },
+  "originalAcceptance": {
+    "reference": "windows-windjview-20261011.acceptance.json",
+    "sha256": "9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058"
+  },
+  "originalGeneration": "gen-job-1791723849468-1",
+  "marketGeneration": "gen-job-1791724600669-4",
+  "originalOutput": {
+    "passed": true,
+    "generationId": "gen-job-1791723849468-1",
+    "inputUnchanged": true,
+    "output": {
+      "sizeBytes": 6206,
+      "sha256": "318079389df6f071d9121eff7ab1b622da7f8aed1ae060b0cd725a43979911fe"
+    },
+    "dimensions": [
+      192,
+      256
+    ],
+    "bitsPerPixel": 1,
+    "clockwiseRotationDegrees": 90,
+    "allPixelsCompared": 49152,
+    "blackPixels": 3476,
+    "fixedPbmPixelPayloadExact": true
+  },
+  "marketOutput": {
+    "passed": true,
+    "generationId": "gen-job-1791724600669-4",
+    "inputUnchanged": true,
+    "output": {
+      "sizeBytes": 6206,
+      "sha256": "761d584cea5ad947cb52db7382eceab32ca3a9f3cbac00c25cbcfa41170fad3d"
+    },
+    "dimensions": [
+      192,
+      256
+    ],
+    "bitsPerPixel": 1,
+    "clockwiseRotationDegrees": 90,
+    "allPixelsCompared": 49152,
+    "blackPixels": 4569,
+    "fixedPbmPixelPayloadExact": true
+  },
+  "fiveNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "action": "update",
+    "appId": "windjview",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "14d9dad7-2e84-48be-bdb7-11971b5ddb42",
+    "state": "succeeded"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "windjview",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "a62dd97e-15be-4580-9902-7ff2314f711c",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791723849468-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 305,
+    "beforeRollbackStoreRows": 95,
+    "afterRollbackCoreJobs": 305,
+    "afterRollbackStoreRows": 96,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "37d54c34b729dff52bb4d3b407e94c71d57e58554fc5f2d3c4fe36b5d9b5b20d",
+      "coreJobs": 305,
+      "fullStoreRows": 96
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 306,
+  "fullStoreRows": 96,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationsAndFixedEvidenceDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalRegistryRawBytesChanged": true,
+  "registryChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3896746,
+        "sha256": "752b99363ebeeb7918063c1c9bfdbdd3e0aefa10ef9aec986668e8e9c098fcb5"
+      },
+      "after": {
+        "sizeBytes": 3896746,
+        "sha256": "ccb0c6f1cbd0ee7be80e97a784572a73c242709784841f1f0975658d3f13e939"
+      },
+      "changedLineCount": 287,
+      "privateDiffPreserved": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 106404,
+        "sha256": "e2b7b5bdea3a6b13203e6064b330ab000248dcc323fd6e964700a022a6fff8f4"
+      },
+      "after": {
+        "sizeBytes": 106404,
+        "sha256": "832bf6bed3a62cadd9ca0abb89c072ecc5737d7b368bb48d58002582e73987c6"
+      },
+      "changedLineCount": 31,
+      "privateDiffPreserved": true
+    }
+  },
+  "currentRegistryAndDataMatchedAcrossRestart": true,
+  "originalHistoricalFrozenFiles": 25,
+  "oldImmutableFilesMatched": 887,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "Only one small lossless bitonal 256x192 single-page DjVu original fixture so far: Chinese-name input opened, GUI clockwise 90-degree rotation and explicit BMP export, all 49152 pixels compared with independent original PBM, explicit new-process reopen with persisted rotation. Synthetic fixtures and isolated DjVuLibre encoder are not apps.",
+    "Interactive NSIS installation required. English flow showed no promotion page, file association and Start Menu link components unchecked, GUI application directory manually selected C:\\WinDjView, automatic Run unchecked. /D argument was submitted but GUI initially showed default Program Files path; effectiveness of /D and unattended installation are not accepted.",
+    "Static official installer has Yandex bitmap resources and downloader.exe NSIS entry. Only WinDjView.exe and uninstall.exe remain in the tested application directory; tested Wine registry contains no Yandex substring. This is not a complete dynamic trace, no guarantee of all bundled behavior, no claim downloader did not execute. Default viewer prompt requires a normal No on each tested process; unattended startup not accepted.",
+    "Installer and source locally fixed SHA-256 through official HTTPS mirror downloads. Upstream published installer/source SHA not verified; installer was listed as modified 2023 while source archive dates 2015. Binary/source correspondence, Authenticode/OpenPGP and reproducible build not verified. Main source and official homepage GPL-2.0-or-later; full bundled license closure and installed COPYING comparison unverified. Source first byte p in p// is preserved verbatim; build not claimed.",
+    "Color/multipage/text layers, OCR/search/copy, bookmarks/annotations, printing, other export formats, full screen, large/corrupt files, direct Chinese keyboard input, all advanced features, guest network download, fresh machine registration, migration/cross-version upgrade unverified. GUI update/rollback buttons unverified.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Initial PNG content in .bmp-named file retained; file-type mismatch failed before Quit/reopen. Actual new BMP chosen through GUI and validated, verifier never rewrote output.",
+    "Both small original and market bitonal fixtures passed; five formal launch tasks normally exited0 with wine-server-stop-requested. Pre-cached same-version update and rollback use Store IPC, GUI buttons not accepted. Original third GUI changed two Wine registry byte streams; separately fixed actual bytes before strict restart comparison.",
+    "The inherited frozen original GUI/acceptance keeps its historical market-pending phase label; this later publication records actual market completion, no historical signatures or bytes rewritten."
+  ],
+  "remotePushed": false,
+  "githubAuthenticationRejected": true,
+  "newDeviceCodeIssued": false,
+  "advancedViewerAccepted": false,
+  "unattendedInstallerAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false
+}

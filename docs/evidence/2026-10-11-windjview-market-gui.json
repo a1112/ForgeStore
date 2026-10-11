@@ -1,0 +1,588 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791724600669-4",
+    "createdAtMilliseconds": 1791724600675,
+    "definition": {
+      "bottleId": "gui-windjview",
+      "category": "productivity",
+      "compatibilityRating": "unknown",
+      "id": "windjview",
+      "installer": {
+        "arguments": [
+          "/D=C:\\WinDjView"
+        ],
+        "fileName": "WinDjView-2.1-Setup.exe",
+        "sha256": "c46a0b6b2c1c289b99fc92212443c911b80a899ddc772442e1a47264c9039c5c"
+      },
+      "launchers": [
+        {
+          "executable": "WinDjView/WinDjView.exe",
+          "id": "main",
+          "name": "WinDjView"
+        }
+      ],
+      "name": "WinDjView",
+      "publisher": "Andrew Zhezherun",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis",
+        "interactive-install-diagnostic"
+      ],
+      "version": "2.1"
+    },
+    "definitionDigest": "sha256:2c78fbaec9293ad451292664191f749c955c1f21bfd1a4c5f47be229789052a5",
+    "id": "gen-job-1791724600669-4",
+    "launcherDigests": {
+      "main": "sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791724683983
+  },
+  "installedFiles": {
+    "uninstall.exe": {
+      "sizeBytes": 82797,
+      "sha256": "a8baf99098e0d173a384a3798db83e437b52887dcb784e4c522aa465261737c0"
+    },
+    "WinDjView.exe": {
+      "sizeBytes": 4460544,
+      "sha256": "d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0"
+    }
+  },
+  "inputPin": {
+    "sizeBytes": 110,
+    "sha256": "08de142e5ac4add6979ddf469ce790c3309b11a78a1840c9b12d99a6c2baddd9"
+  },
+  "export": {
+    "passed": true,
+    "generationId": "gen-job-1791724600669-4",
+    "inputUnchanged": true,
+    "output": {
+      "sizeBytes": 6206,
+      "sha256": "761d584cea5ad947cb52db7382eceab32ca3a9f3cbac00c25cbcfa41170fad3d"
+    },
+    "dimensions": [
+      192,
+      256
+    ],
+    "bitsPerPixel": 1,
+    "clockwiseRotationDegrees": 90,
+    "allPixelsCompared": 49152,
+    "blackPixels": 4569,
+    "fixedPbmPixelPayloadExact": true
+  },
+  "guiJobs": [
+    {
+      "applicationId": "windjview",
+      "createdAtMilliseconds": 1791724721853,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 132959,
+          "requestId": "job-1791724721853-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 112891,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix",
+          "requestId": "job-1791724721853-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 112934,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791724721853-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791724600669-4",
+      "id": "job-1791724721853-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 2690428,
+        "fileDigest": "sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0",
+        "fileSizeBytes": 4460544,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "wininet.dll",
+          "winmm.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 2997760,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 2997552,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 1033216,
+            "readable": true,
+            "virtualAddress": 3002368,
+            "virtualSize": 1033178,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 39936,
+            "readable": true,
+            "virtualAddress": 4038656,
+            "virtualSize": 114216,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 134656,
+            "readable": true,
+            "virtualAddress": 4153344,
+            "virtualSize": 134496,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 179200,
+            "readable": true,
+            "virtualAddress": 4288512,
+            "virtualSize": 178936,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 74752,
+            "readable": true,
+            "virtualAddress": 4468736,
+            "virtualSize": 74444,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791724600669-4",
+          "digest": "sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "WinDjView.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix/drive_c/WinDjView/WinDjView.exe",
+          "sizeBytes": 4460544,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix/drive_c/WinDjView/WinDjView.exe",
+            "C:\\WinDjViewTests\\市场.djvu"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4"
+        },
+        "requestId": "job-1791724721853-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791724837148
+    },
+    {
+      "applicationId": "windjview",
+      "createdAtMilliseconds": 1791724850662,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 133222,
+          "requestId": "job-1791724850662-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 23810,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix",
+          "requestId": "job-1791724850662-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 23852,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791724850662-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791724600669-4",
+      "id": "job-1791724850662-6",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 2690428,
+        "fileDigest": "sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0",
+        "fileSizeBytes": 4460544,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "version.dll",
+          "wininet.dll",
+          "winmm.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 2997760,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 2997552,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 1033216,
+            "readable": true,
+            "virtualAddress": 3002368,
+            "virtualSize": 1033178,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 39936,
+            "readable": true,
+            "virtualAddress": 4038656,
+            "virtualSize": 114216,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 134656,
+            "readable": true,
+            "virtualAddress": 4153344,
+            "virtualSize": 134496,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 179200,
+            "readable": true,
+            "virtualAddress": 4288512,
+            "virtualSize": 178936,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 74752,
+            "readable": true,
+            "virtualAddress": 4468736,
+            "virtualSize": 74444,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791724600669-4",
+          "digest": "sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "WinDjView.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix/drive_c/WinDjView/WinDjView.exe",
+          "sizeBytes": 4460544,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix/drive_c/WinDjView/WinDjView.exe",
+            "C:\\WinDjViewTests\\市场.djvu"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791724600669-4"
+        },
+        "requestId": "job-1791724850662-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791724876632
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3896746,
+      "sha256": "ed7ddcaf306266009147f2a71e503d2a708325ee4ad2eedc1a851b9a5ff91b1a"
+    },
+    "user.reg": {
+      "sizeBytes": 106404,
+      "sha256": "11f2d4bef80e8088943e1682aa18e5347e8b6bc9eb9ddb139c81a827efa6d011"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "f18f75a65b4b4920c3d15a0ae7ac2cb5e34dee65501a0335b219cf0e8481082c"
+    }
+  },
+  "fixedDataPins": {
+    "drive_c/WinDjViewTests/market-verified.bmp": {
+      "sizeBytes": 6206,
+      "sha256": "761d584cea5ad947cb52db7382eceab32ca3a9f3cbac00c25cbcfa41170fad3d"
+    },
+    "drive_c/WinDjViewTests/市场.djvu": {
+      "sizeBytes": 110,
+      "sha256": "08de142e5ac4add6979ddf469ce790c3309b11a78a1840c9b12d99a6c2baddd9"
+    },
+    "drive_c/WinDjViewTests/market.pbm": {
+      "sizeBytes": 6155,
+      "sha256": "f4b283f959f08aa6d1b56d072496a70679d8b16da7e6eacbef70943f05b61202"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "checkpoint": {
+    "file": "after-market-gui.json",
+    "sha256": "954c4d0754559517570570f1e62073536c4af681c877599b9ed2be17c1d8bc99",
+    "coreJobs": 305,
+    "fullStoreRows": 95
+  },
+  "screenshots": {
+    "12-market-components.jpg": {
+      "sizeBytes": 27438,
+      "sha256": "eaecf0b9002a1d6b59ca50acdfe634ab949d281d8ab409f1f758adbb5fb4382b"
+    },
+    "13-market-path.jpg": {
+      "sizeBytes": 26816,
+      "sha256": "5c0ef8d8e4978c84bf50d9269c73233871096b42155dbaabbe70694868de1e7d"
+    },
+    "14-market-installed.jpg": {
+      "sizeBytes": 29041,
+      "sha256": "f313813e9c63aea604e7338681584b66d9a5c47613902298463aaa37fa6a3cfa"
+    },
+    "15-market-render.jpg": {
+      "sizeBytes": 20162,
+      "sha256": "c843e11f908a93a870ca73de4a2323d9213f33f81027056433329d286ac05217"
+    },
+    "16-market-bmp-format.jpg": {
+      "sizeBytes": 24561,
+      "sha256": "a17944aff412eed1e4e658bcccf509b5d66c32a6409b614fd415ff6ced4509a1"
+    },
+    "17-market-exported.jpg": {
+      "sizeBytes": 19627,
+      "sha256": "a84219fd3995c53af31d55cf29ee056a40b24ccb857a3d4f8604ee11104cd34a"
+    },
+    "18-market-reopened.jpg": {
+      "sizeBytes": 28219,
+      "sha256": "216f184b793d62dca425608c870ab3118942f36e527e70a6eacce7b166855b03"
+    },
+    "19-original-after-rollback.jpg": {
+      "sizeBytes": 28084,
+      "sha256": "078c7365e4c0b6b875dabbfa78de53ec0a7179ca076949fa89c40b139d2d6c37"
+    }
+  },
+  "programFilesAcrossGenerationsEqual": true,
+  "inputUnchanged": true,
+  "fixtureOnlyNotApplication": true,
+  "guiReopenObserved": true,
+  "notFullViewerAcceptance": true,
+  "publicationAfterLifecycleRecordedSeparately": true
+}

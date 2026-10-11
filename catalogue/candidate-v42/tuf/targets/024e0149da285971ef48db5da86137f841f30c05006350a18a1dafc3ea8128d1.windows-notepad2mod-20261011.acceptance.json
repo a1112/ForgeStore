@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 x86_64 KVM, KDE Wayland, Wine 11.14 win64, managed Inno fixed Notepad2-mod x64. Existing normal authentication retained.",
+  "applications": [
+    {
+      "id": "notepad2mod",
+      "version": "4.2.25.998",
+      "observedGuiVersion": "Notepad2-mod (64-bit) 4.2.25 r998 (62db550)",
+      "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9",
+      "size": 1449064,
+      "installJobId": "job-1791684570539-1",
+      "launchJobId": "job-1791684628589-2",
+      "reopenJobId": "job-1791684899261-3",
+      "generationId": "gen-job-1791684570539-1",
+      "definitionDigest": "sha256:84dc62ec4ce35f469b04fbcabe428782f394152c415fef21b31e872758a78a36",
+      "launcherSha256": "sha256:30f49ab4e470f0a4e05435642fcacafa1e9b0b4894be466c2cf7f836bcd3a94d",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "guiFileOperation": "passed-limited-utf8-text-workflow",
+      "fixture": {
+        "file": "input/中文验收.txt",
+        "sizeBytes": 98,
+        "sha256": "f6938255a0d6b1cb9ef71b76be8277a31766921e4ff2322d68e9f14f21680cc6",
+        "hex": "efbbbf466f7267654f53204e6f7465706164322d6d6f6420342e322e32352e3939380d0ae4b8ade69687e69687e69cace4bf9de79599e4b88e205554462d3820e9aa8ce694b60d0a7374617475733d6265666f72650d0a73756d3d32312b32310d0a"
+      },
+      "savedOutput": {
+        "file": "output/original-edited.txt",
+        "sizeBytes": 108,
+        "sha256": "1dcfa2db8acf2056c58a023e040ffabf91e54fbf31447de773fda47eb62b6023",
+        "hex": "efbbbf466f7267654f53204e6f7465706164322d6d6f6420342e322e32352e3939380d0ae4b8ade69687e69687e69cace4bf9de79599e4b88e205554462d3820e9aa8ce694b60d0a7374617475733d61667465720d0a73756d3d32312b32310d0a726573756c743d34320d0a"
+      },
+      "inputUnchanged": true,
+      "utf8BomPreserved": true,
+      "crlfPreserved": true,
+      "chineseContentPreserved": true,
+      "explicitFreshProcessOutputReopenObserved": true,
+      "fullEditorAcceptance": false,
+      "screenshots": {
+        "original-about.jpg": {
+          "sizeBytes": 111758,
+          "sha256": "e368c4cd22bb522d8c02ebc0862529e6bafeaca2f2352c29a45842dc35e82d49"
+        },
+        "original-input.jpg": {
+          "sizeBytes": 88889,
+          "sha256": "626319fcce3ddf8cc7ca2d8faf32562940c74fd614ab1b57665ad7b4ac5d0c17"
+        },
+        "original-reopened.jpg": {
+          "sizeBytes": 90968,
+          "sha256": "ea86f76d54ce731a1ec13bf57ee20514de27bb4749493dfbeaee3b0227aacb76"
+        },
+        "original-replace.jpg": {
+          "sizeBytes": 123755,
+          "sha256": "768804069c80191e733e28b49a19e3dece879aac993659954451bc45a37102fc"
+        },
+        "original-saved.jpg": {
+          "sizeBytes": 90804,
+          "sha256": "24c07f54cd068beb122ac3d61bf3fa1a4ba72715e35e9a36f6588826612d2053"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-notepad2mod-source.json",
+    "sha256": "d7d9e78c4be753895ddf9bec3638263986433f0ac5614e5ad016364392eda662",
+    "artifact": {
+      "fileName": "Notepad2-mod.4.2.25.998.exe",
+      "sourceUrl": "https://github.com/XhmikosR/notepad2-mod/releases/download/4.2.25.998/Notepad2-mod.4.2.25.998.exe",
+      "sizeBytes": 1449064,
+      "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9",
+      "sha256Basis": "Calculated official fixed HTTPS bytes, independently checked in guest; no upstream digest or Authenticode claim."
+    },
+    "sourceArchive": {
+      "fileName": "source-fixed.zip",
+      "sourceUrl": "https://codeload.github.com/XhmikosR/notepad2-mod/zip/62db550916cefcb5f21dbb27c8c8edd11695b23c",
+      "sizeBytes": 1575854,
+      "sha256": "204519afe34b6b8f3db8037b82ede3f40dc7e75601e0bcd6e4f60464445c320a"
+    },
+    "license": "BSD-3-Clause",
+    "exactMainProgramSpdxVerified": true,
+    "fullComponentLicenseClosureVerified": false
+  },
+  "limits": [
+    "Only fixed Notepad2-mod 4.2.25.998 x64 on Wine 11.14 win64 and two small UTF-8 BOM/CRLF text fixtures are in scope.",
+    "Original GUI opened a Chinese filename, replaced before with after, appended ASCII result=42, used GUI Save As to an ASCII output path, and explicitly reopened the output in a fresh process.",
+    "Direct Chinese keyboard input, large files, alternative encodings, syntax features, regex, plugin support and full editor acceptance are untested.",
+    "Bundled component license closure, upstream digest, Authenticode, reproducible build, guest network download, new-machine registration, configuration migration and cross-version upgrades are not verified.",
+    "Independent market generation, cached same-version update, exact rollback and service restart were pending when original proof was frozen."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

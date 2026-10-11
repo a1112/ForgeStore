@@ -105,3 +105,16 @@ docs/evidence/windows-rednotebook-20261011.acceptance.json -text whitespace=cr-a
 docs/evidence/2026-10-11-rednotebook*.json -text whitespace=cr-at-eol
 docs/evidence/2026-10-11-rednotebook/* -text whitespace=cr-at-eol
 docs/windows-rolling-20261011-rednotebook.md -text whitespace=cr-at-eol
+
+# WinDjView fixed upstream and evidence bytes.
+catalogue/candidate-v42/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-windjview-20261011.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-windjview*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-11-windjview/* -text whitespace=cr-at-eol
+docs/windows-rolling-20261011-windjview.md -text whitespace=cr-at-eol
+
+# Preserve actual upstream/tool trailing whitespace only on these fixed raw files.
+docs/evidence/2026-10-11-windjview/fixed-source-DjVuView.cpp -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-11-windjview/fixed-source-WinDjView.cpp -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-11-windjview/fixed-source-WinDjView.rc -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/evidence/2026-10-11-windjview/installer-static-list-v2.txt -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

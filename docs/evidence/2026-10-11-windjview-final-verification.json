@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "phase": "before-independent-review-and-git-stage",
+  "applicationId": "windjview",
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "currentStateVerified": {
+    "verified": true,
+    "coreJobs": 306,
+    "fullStoreRows": 96,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "snapshot": 51,
+      "root": 1,
+      "timestamp": 51,
+      "targets": 51
+    },
+    "latestKnownTime": "2026-10-11T13:24:40.68426626Z",
+    "selectedWinDjViewGeneration": "gen-job-1791723849468-1",
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "checkpoint": {
+      "file": "windjview-20261011/after-restart.json",
+      "sha256": "362babeb5d91d4e157f8619bac81048afa1fd9c3c7d656d76e20558e53bcb07f"
+    }
+  },
+  "oldImmutableFilesMatched": 887,
+  "newOriginalFrozenFilesMatched": 25,
+  "signedMetadataPack": {
+    "metadataVersion": 51,
+    "rootVersion": 1,
+    "entries": 41,
+    "actualTargets": 83,
+    "files": 47,
+    "archiveSha256": "fc559863912ca9fdf7ba84a93d0034d44162d33c9ea288113e3e4e1d8f5af739",
+    "receiptSha256": "9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058",
+    "allOldSignedTargetPinsPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true
+  },
+  "sourceSha256": "0f056db8dc120c2a9782fd24950cd70397850940d9a44112fc131d892fc1461f",
+  "publicationSha256": "86bc9b96449400978e1a2d8dcfcfbf85be8e86b3d7a193faf2e68cebf24407ab",
+  "independentReviewPendingAtFreeze": true,
+  "gitIndexAndCommitAuditPendingAtFreeze": true,
+  "remotePushPendingAuthentication": true
+}

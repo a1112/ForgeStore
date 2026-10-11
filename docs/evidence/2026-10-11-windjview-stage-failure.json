@@ -1,0 +1,21 @@
+{
+  "applicationId": "windjview",
+  "phase": "first-actual-index-whitespace-gate-failed",
+  "gitDiffCachedCheckExitCode": 2,
+  "actualMessages": [
+    "docs/evidence/2026-10-11-windjview/fixed-source-WinDjView.rc:1433: new blank line at EOF.",
+    "docs/evidence/2026-10-11-windjview/installer-static-list-v2.txt:136: new blank line at EOF."
+  ],
+  "firstFreezeManifest": "windjview-all-frozen-files-20261011.json",
+  "firstFreezeManifestSha256": "eec3bacecb0cae32486650a4ffeb80418d3861201694e354cad0fe6df0c6fdf7",
+  "firstIndexFiles": 982,
+  "allFirstIndexAndDiskBytesMatch": true,
+  "oldImmutableFilesPreserved": 887,
+  "originalFrozenFilesPreserved": 25,
+  "commitPerformed": false,
+  "guestOrMarketChanged": false,
+  "cause": "Exact raw files end in additional blank lines. Existing -blank-at-eol covers trailing spaces, not blank-at-eof.",
+  "dependentCommitStopped": true,
+  "proposedCorrection": "Add -blank-at-eof only to the two exact raw-file attribute rules; retain all source and tool bytes.",
+  "earlierReviewKeptAsPreStageHistory": true
+}

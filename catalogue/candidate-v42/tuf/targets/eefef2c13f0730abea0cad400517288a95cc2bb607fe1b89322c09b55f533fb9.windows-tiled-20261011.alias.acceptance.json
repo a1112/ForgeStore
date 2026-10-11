@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM, Wine 11.14 win64, launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "tiled",
+      "version": "1.11.2",
+      "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+      "size": 22192128,
+      "generationId": "gen-job-1791707208335-4",
+      "definitionDigest": "sha256:926343a11d29536e8ef01b5f9cc98eba025225b83689db84d9ae83ba67f13c27",
+      "launcherSha256": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379",
+      "installJobId": "job-1791707208335-4",
+      "launchJobId": "job-1791707269071-5",
+      "reopenJobId": "job-1791707362418-6",
+      "guiFileOperation": "passed-limited-orthogonal-map-erase-stamp-tmx-save-json-export-fresh-reopen",
+      "savedNative": {
+        "file": "output/original-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exportedJson": {
+        "file": "output/original-edited.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "08-alias-original-loaded.png": {
+          "sizeBytes": 34928,
+          "sha256": "b9b94ea2d7211a75787c78ebd84409f5b27e5afd7c557c0a0802c5dec7764f52"
+        },
+        "09-alias-original-edited.png": {
+          "sizeBytes": 31074,
+          "sha256": "de73e7bdacf87f7830b1dffa91a5a5f8996fd35bad8fe7168e051b4767861bab"
+        },
+        "10-alias-original-saved.png": {
+          "sizeBytes": 31039,
+          "sha256": "6c24293f2702da95ff0803cc41596476a80608a9c809145643c1bf6b845fa618"
+        },
+        "11-alias-original-exported.png": {
+          "sizeBytes": 31050,
+          "sha256": "c4770445eff69a9084c87da68565306c7e797b81c4f6def0e10cc64fb7b23ac1"
+        },
+        "12-alias-original-json-reopened.png": {
+          "sizeBytes": 35273,
+          "sha256": "2b5627144d5d9f89438de0b5b2b395cc84c054f9ac686cdbd59ee69952bd6cbc"
+        },
+        "13-alias-original-native-reopened.png": {
+          "sizeBytes": 35055,
+          "sha256": "e07f178c4019cf031a5021343fe6a3512374b8d559ad0d4796ef58ecc9041ba4"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-tiled-source-alias.json",
+    "sha256": "2c18c2d3806da243bcb21ece5e1cba9b1b9928f7e719d70068bd12e0f78e8550",
+    "mainProgramLicense": "GPL-2.0-or-later",
+    "bundleLicenseClosureVerified": false
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-tiled-gui-alias.json",
+    "sha256": "1b2a5ce98010430772dd8ddc58c8274e7014898f8f195617febf963018070811"
+  },
+  "limits": [
+    "Only one small finite 4x4 orthogonal, one-layer map with a two-tile generated PNG has been verified in the original generation: Chinese-name input opening, eraser, two stamp operations, GUI Save As to ASCII TMX, JSON export and explicit fresh-process rendering of both saved formats.",
+    "Initial original GUI exported original-edited.json.tmj and initial filename check failed. This new alias generation explicitly exported original-edited.tmj with the JSON map filter; both saved formats and image references were independently verified after new-process reopen. Original raw proof remains unchanged.",
+    "Native launcher default environment and working directory retained; no Core, global context, font, program, DLL or runtime changes required. Online news/update indicator appeared; unattended or offline startup and external network behavior unverified.",
+    "Infinite, isometric/hexagonal or large maps, multiple/object layers, terrain/automapping, animation, projects/worlds, scripts/Python or plugins beyond the finite JSON export, engine integration, direct Chinese keyboard input and advanced editor features unverified.",
+    "Fixed main source declares GPL-2.0-or-later; installed COPYING, LICENSE.GPL and LICENSE.BSD match fixed source in raw bytes. Complete Qt/plugins/examples/icons and bundled licensing closure, OpenPGP, Authenticode and build reproducibility unverified.",
+    "Guest network download, fresh-machine registration, migration, cross-version upgrade and GUI update/rollback buttons unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart remain pending at this original proof freeze.",
+    "Initial role44 catalogue target used upstream plus sign and failed existing target-name validation; role45 uses a safe local target alias with unchanged package bytes/URL and a separate corrected receipt. Original signed role44 directory remains frozen.",
+    "First Store update on role45 failed catalogue/recipe filename agreement before any Core job. A fresh native definition uses the exact same local alias as catalogue and a new formal installed generation repeats actual GUI testing. Main executable, all 206 installed files and runtime bytes are unchanged; no matcher or source code relaxation."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true,
+  "priorProofsPreserved": {
+    "windows-tiled-20261011.acceptance.json": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915",
+    "windows-tiled-20261011.corrected.acceptance.json": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+  },
+  "catalogueCorrection": {
+    "failedRole44AndRecipeMismatchRole45Kept": true,
+    "onlineRole": 46,
+    "officialFilename": "Tiled-1.11.2_Windows-10+_x86_64.msi",
+    "localMarketAndRecipeAlias": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+    "packageBytesAndOfficialUrlUnchanged": true
+  }
+}
