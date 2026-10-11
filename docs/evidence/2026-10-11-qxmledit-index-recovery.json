@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "qxmledit",
+  "phase": "second-index-byte-gate-and-exact-report-recovery",
+  "passed": true,
+  "failure": "v2 full index audit stopped at report SHA mismatch after whitespace and exact cached attribute checks passed. Ordinary git add retained the first staged LF blob although raw file had CRLF and text was unset. No commit or push followed the failed gate.",
+  "diagnostic": {
+    "rawSize": 5400,
+    "indexSize": 5376,
+    "rawCrLf": 24,
+    "indexCrLf": 0,
+    "indexMatchesOnlyCrLfToLfTransformation": true,
+    "rawSha256": "edd3e56a2285a436a9b359610e5bc15d4295995ab7c5de908a816380448f0f86",
+    "indexSha256": "dd5c86820873311e2cbf726707e94b4ca0c743183f1bfa6e12f9919290dd26b3"
+  },
+  "resolution": "Only git add --renormalize -- docs/windows-rolling-20261011-qxmledit.md reapplied its existing -text attribute. Disk report/source/output, all signed bytes and guest state unchanged.",
+  "officialGitReference": "https://git-scm.com/docs/git-add#Documentation/git-add.txt---renormalize",
+  "firstAndSecondFailedFreezeManifestPins": {
+    "qxmledit-all-frozen-files-20261011.json": "cf6f0c661b6e174790d517574e4d1bc9f50e8fcfaa113f29ba80e01637bb8f2a",
+    "qxmledit-all-frozen-files-v2-20261011.json": "8a291169b8bed98d873b658969c256bdc70d578295193e8ac11d0f556ec1dbfd"
+  },
+  "failedV2FrozenFileCount": 700,
+  "failedV2StagedPathCount": 86,
+  "all700PreReceiptIndexAndDiskBytesMatch": true,
+  "fullCachedWhitespaceCheckPassed": true,
+  "singleReportIndexNowEqualsReviewedRawBytes": true,
+  "originalPublicReviewFinalAndFailureBytesPreserved": true,
+  "genericGitConfigurationOrWhitespaceChecksChanged": false,
+  "guestOrSignedMetadataChanged": false,
+  "subsequentNewReceiptReviewAndFinalIndexAuditPending": true
+}

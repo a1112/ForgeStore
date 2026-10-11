@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM; Wine 11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store.",
+  "applications": [
+    {
+      "id": "qxmledit",
+      "version": "0.9.18",
+      "sha256": "9a0e8f6ad3fce01bb232ea0ac84e87029a81aee2fb9dfbe2152bbcc30a72ba48",
+      "size": 32537109,
+      "generationId": "gen-job-1791711953732-1",
+      "definitionDigest": "sha256:6a05d932d5f1c124f846c07668761019ae37f5f072026127d7557d9a169ae76b",
+      "launcherSha256": "sha256:8a57044f30fa3846a49955276cd3503f0f44e04d77612092cb66e02e2d43114e",
+      "installJobId": "job-1791711953732-1",
+      "launchJobId": "job-1791712045282-2",
+      "reopenJobId": "job-1791712568429-3",
+      "guiFileOperation": "passed-limited-small-xml-tree-text-edit-save-fresh-reopen",
+      "savedXml": {
+        "file": "output/original-edited.xml",
+        "sizeBytes": 167,
+        "sha256": "729ff49205419e45c7375a14a42b276ba7496289b3841dc4c21272dfec5e4fb4",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project kind=\"original\">\r\n <title>中文内容保留</title>\r\n <note>AFTER ORIGINAL42</note>\r\n <value>42</value>\r\n</project>\r\n",
+        "semantic": {
+          "root": "project",
+          "attributes": {
+            "kind": "original"
+          },
+          "children": [
+            {
+              "title": "中文内容保留"
+            },
+            {
+              "note": "AFTER ORIGINAL42"
+            },
+            {
+              "value": "42"
+            }
+          ]
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "01-original-license.jpg": {
+          "sizeBytes": 33468,
+          "sha256": "5e4624b85b0346c62a23bd1c35650e7e5e6cc618105ee014b1d70b9e4fc1fb7a"
+        },
+        "02-original-loaded.jpg": {
+          "sizeBytes": 22142,
+          "sha256": "fc9698fa98816eb9ef96344e7b090ade53d55959f67eb1efe2f38ff89b02bdf7"
+        },
+        "03-original-saved.jpg": {
+          "sizeBytes": 25191,
+          "sha256": "69cb675b6c0b2e710bc5531188deba58d60f972fd39f465cd52e64362fd028f8"
+        },
+        "04-original-reopened.jpg": {
+          "sizeBytes": 28338,
+          "sha256": "c293ef855e25ab0f9ccc2d52ee4e03a661a32e6cc4c03c368a30a30a078265b4"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-qxmledit-source.json",
+    "sha256": "136c0ccf7e1e0cabc24f03154349300f7dd3075b4a81f157aa2317c8398347e1",
+    "mainProgramLicense": "LGPL-2.0-or-later",
+    "bundleLicenseClosureVerified": false
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-qxmledit-gui.json",
+    "sha256": "45283fd1fad0524585ad89fec2026c0383300e58c91ed28af77cde96cd86cff6"
+  },
+  "licenseObservation": {
+    "reference": "2026-10-11-qxmledit-license-observation.json",
+    "sha256": "069bfccb0a23cd632f1edce3e1603b5da0fcb9f99c3ad3cf52a97094966fa6f8"
+  },
+  "limits": [
+    "Only a small three-child UTF-8 XML original-generation workflow is currently verified: Chinese-name input opened, note text changed BEFORE to AFTER with ASCII ORIGINAL42 appended, GUI Save As to ASCII output path, and explicit new-process reopen. Actual output CRLF and one-space indentation independently parsed and pinned; original input unchanged.",
+    "No Core, global context, launcher environment/working directory, font, program, DLL or runtime repair. Manual LGPL notice acknowledgement, Expert mode/predefined display and welcome close required; unattended startup unverified.",
+    "Main fixed source LGPL-2.0-or-later; README mentions special linking exception and other components. Installed COPYING exactly equals fixed source COPYING and license resource, zero newline normalization. Complete Qt, QwtPlot3D, Oxygen icons and bundled licensing closure, signatures and reproducible build unverified.",
+    "Schema validation, XSD/XSLT, split/compare, sessions, namespaces, attributes editing, base64, visualization, large or malformed documents, other encodings, direct Chinese keyboard input and advanced XML functionality unverified.",
+    "Guest network download, fresh registration, migration, cross-version upgrade and GUI update/rollback buttons unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart remain pending at original proof freeze."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

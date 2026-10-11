@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-11",
+  "applicationId": "qxmledit",
+  "phase": "first-index-byte-and-whitespace-gate",
+  "error": "git diff --cached --check rejected original fixed-source-main.cpp new blank line at EOF; Git warned report CRLF would be converted to LF. No commit or push performed after failed gate.",
+  "originalFailedFreezeManifestSha256": "cf6f0c661b6e174790d517574e4d1bc9f50e8fcfaa113f29ba80e01637bb8f2a",
+  "originalFailedFreezeFileCount": 697,
+  "originalStagedPathCount": 83,
+  "firstReviewAndFinalVerificationRetainedAsPreStageHistory": true,
+  "allOriginalFrozenSourceGuiReceiptBytesUnchanged": true,
+  "resolution": "Added exact-path -blank-at-eof allowance solely for preserved upstream main.cpp; exact report -text/cr-at-eol preserves reviewed raw bytes in index. No source/output/report byte edits. First failed private freeze map and original public review/final verification retained; fresh v2 review and separate v2 index/commit audit required.",
+  "beforeAttributesSha256": "c07ef40d44ab890d370f18d8b32f20fafeaa20cb0962e67e12f05d96f243bb04",
+  "afterAttributesSha256": "1b406666500a3df9734e03fb6bdebf6f4548fe8c5a555759533770a3a10f7499",
+  "rawSourceSha256": "9dc24f662b8948571c9efa0274c3ec1e91461d909087a83f45a9a2e05be44328",
+  "reportSha256": "edd3e56a2285a436a9b359610e5bc15d4295995ab7c5de908a816380448f0f86",
+  "pendingV2IndexAudit": true,
+  "guestStateOrSignedMetadataChanged": false,
+  "genericWhitespaceChecksDisabled": false
+}

@@ -359,6 +359,17 @@
       "signedCatalogue": "catalogue/candidate-v38/tuf",
       "publication": "docs/evidence/2026-10-11-focuswriter-publication.json",
       "limitation": "Only two small UTF-8 text edits, TXT CRLF/ODT Save As, explicit new-process reading and independent IPC cached same-version update/exact original rollback/normal Core-Store restart accepted. Full writing functions, formatting, other formats/encodings, direct Chinese input, complete bundled licences, guest network, fresh registration, migration, cross-version and unattended launch unverified. Fixed main GPL-3.0-or-later source; installed licence text absent, no installed COPYING equality claimed."
+    },
+    {
+      "id": "qxmledit",
+      "version": "0.9.18",
+      "sha256": "9a0e8f6ad3fce01bb232ea0ac84e87029a81aee2fb9dfbe2152bbcc30a72ba48",
+      "sizeBytes": 32537109,
+      "license": "LGPL-2.0-or-later (main source; upstream linking exception declared; bundle closure unverified)",
+      "evidence": "docs/evidence/windows-qxmledit-20261011.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v39/tuf",
+      "publication": "docs/evidence/2026-10-11-qxmledit-publication.json",
+      "limitation": "Only two small Chinese-name UTF8 three-child XML tree note edits, ASCII additions, GUI XML Save As, explicit new-process reading and independent IPC cached same-version update/exact original rollback/normal Core-Store restart accepted. Manual LGPL notice and setup/welcome interaction. Schema/XSLT/advanced XML, direct Chinese typing, other formats/encodings/large files, complete bundled licences, guest network, fresh registration, migration, cross-version and unattended launch unverified. Main fixed LGPL-2.0-or-later source, upstream special linking exception declared, installed COPYING exact fixed raw bytes."
     }
   ],
   "queue": [
@@ -531,12 +542,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next official sourced/licensed/pinned candidate. FocusWriter limited text/TXT-ODT save/fresh reopen and independent market lifecycle accepted, candidate-v38/root1/role47, 35 Windows apps,12 unresolved,274 full Core tasks/88 full Store SQLite rows. Run rolling-current-state-focuswriter-20261011.py only through strict rolling-guest-20261010.py inside guest. Keep immutable history; assert actual preconditions, stop dependent changes after false or failed gate.",
+  "next": "Select next official sourced/licensed/pinned candidate. QXmlEdit limited small XML tree note edit/ASCII addition/save/fresh reopen and independent market lifecycle accepted, candidate-v39/root1/role48,36 Windows apps,12 unresolved,281 full Core tasks/90 full Store SQLite rows. Run rolling-current-state-qxmledit-20261011.py only through strict rolling-guest-20261010.py inside guest. Preserve immutable evidence and all trust history; assert actual preconditions, stop dependent changes after false or failed gate.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 35,
+    "acceptedLocalMarket": 36,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -544,25 +555,25 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v38/tuf",
-    "metadataVersion": 47,
-    "catalogueEntries": 37,
-    "acceptedDistinctWindowsApps": 35,
+    "signedCatalogue": "catalogue/candidate-v39/tuf",
+    "metadataVersion": 48,
+    "catalogueEntries": 38,
+    "acceptedDistinctWindowsApps": 36,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-focuswriter-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-qxmledit-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-tiled-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-focuswriter-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-focuswriter-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-qxmledit-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-focuswriter.md",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-focuswriter-runtime-recovery.json",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-qxmledit.md",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
-  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-tiled-runtime-recovery.json",
+  "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-focuswriter-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-focuswriter.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-focuswriter-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-qxmledit.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-qxmledit-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

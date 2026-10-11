@@ -1,0 +1,412 @@
+{
+  "passed": true,
+  "findings": [],
+  "assertions": 3809,
+  "baseCommit": "d868498d0e07f2e4ef5f1a396c2bcf2497dfb225",
+  "checks": [
+    {
+      "name": "87 prospective worktree files and prior frozen bytes",
+      "passed": true,
+      "prospectivePublicFiles": 87,
+      "oldImmutableFiles": 614,
+      "originalRoundFrozenFiles": 21,
+      "actualHeadAtBase": true
+    },
+    {
+      "name": "both failed maps and prior review/final history preserved",
+      "passed": true,
+      "firstFailedFreezeFiles": 697,
+      "secondFailedFreezeFiles": 700,
+      "firstReviewAndV2ReviewRemainPreStageHistory": true,
+      "priorFinalVerificationBytesRetained": true
+    },
+    {
+      "name": "fresh full700 index byte and whitespace verification",
+      "passed": true,
+      "actualIndexFrozenFileCount": 700,
+      "actualIndexMatchedFiles": 700,
+      "actualStagedChangedPaths": 86,
+      "reportIndexRawSize": 5400,
+      "reportCrLfCount": 24,
+      "cachedWhitespaceCheckPassed": true,
+      "complete87ProspectiveIndexAuditClaimed": false,
+      "newRecoveryReceiptStaged": false
+    },
+    {
+      "name": "truthful recovery receipt, state and scope",
+      "passed": true,
+      "recoveryReceiptReviewed": true,
+      "priorPendingLabelsNotRewritten": true,
+      "laterV3ReviewAndFinalFilesNotYetGeneratedOrReviewed": true,
+      "finalAllProspectiveIndexAuditStillRequired": true,
+      "guestAndGuiReexecuted": false
+    }
+  ],
+  "reviewedPublicFilePins": {
+    ".gitattributes": {
+      "sizeBytes": 4956,
+      "sha256": "1b406666500a3df9734e03fb6bdebf6f4548fe8c5a555759533770a3a10f7499"
+    },
+    "catalogue/candidate-v39/tuf/metadata/1.root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "catalogue/candidate-v39/tuf/metadata/48.snapshot.json": {
+      "sizeBytes": 997,
+      "sha256": "49a2747d22614ac1e4c553c43bdf35b8adee722eb696c23fdd85659411902c88"
+    },
+    "catalogue/candidate-v39/tuf/metadata/48.targets.json": {
+      "sizeBytes": 16237,
+      "sha256": "ceb930200f06cb9bdc8f9281e01ca05e13dd339e2b47597f5d8dc74c35e1262c"
+    },
+    "catalogue/candidate-v39/tuf/metadata/timestamp.json": {
+      "sizeBytes": 997,
+      "sha256": "6a0022649ea92a490e7e26f86e25d4bf432b190f313d72d8288d745494771fc5"
+    },
+    "catalogue/candidate-v39/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sizeBytes": 4879,
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+    },
+    "catalogue/candidate-v39/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sizeBytes": 9031,
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+    },
+    "catalogue/candidate-v39/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+      "sizeBytes": 5624,
+      "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+    },
+    "catalogue/candidate-v39/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sizeBytes": 5280,
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+    },
+    "catalogue/candidate-v39/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sizeBytes": 21857,
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+    },
+    "catalogue/candidate-v39/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sizeBytes": 7918,
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+    },
+    "catalogue/candidate-v39/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sizeBytes": 1676,
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+    },
+    "catalogue/candidate-v39/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json": {
+      "sizeBytes": 4562,
+      "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+    },
+    "catalogue/candidate-v39/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sizeBytes": 2738,
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+    },
+    "catalogue/candidate-v39/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sizeBytes": 7617,
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+    },
+    "catalogue/candidate-v39/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sizeBytes": 1699,
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+    },
+    "catalogue/candidate-v39/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sizeBytes": 10640,
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+    },
+    "catalogue/candidate-v39/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sizeBytes": 1617,
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+    },
+    "catalogue/candidate-v39/tuf/targets/5bfc007ac3fb1dfa11c195e66cb2fbd5639650ba8d35173a8d0585aa847b7852.catalogue.json": {
+      "sizeBytes": 42022,
+      "sha256": "5bfc007ac3fb1dfa11c195e66cb2fbd5639650ba8d35173a8d0585aa847b7852"
+    },
+    "catalogue/candidate-v39/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sizeBytes": 12679,
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+    },
+    "catalogue/candidate-v39/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sizeBytes": 1652,
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+    },
+    "catalogue/candidate-v39/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sizeBytes": 9285,
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+    },
+    "catalogue/candidate-v39/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sizeBytes": 1146,
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+    },
+    "catalogue/candidate-v39/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sizeBytes": 4783,
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+    },
+    "catalogue/candidate-v39/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sizeBytes": 6220,
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+    },
+    "catalogue/candidate-v39/tuf/targets/8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29.windows-qxmledit-20261011.acceptance.json": {
+      "sizeBytes": 4514,
+      "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+    },
+    "catalogue/candidate-v39/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sizeBytes": 4223,
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+    },
+    "catalogue/candidate-v39/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json": {
+      "sizeBytes": 7879,
+      "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+    },
+    "catalogue/candidate-v39/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sizeBytes": 4642,
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+    },
+    "catalogue/candidate-v39/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json": {
+      "sizeBytes": 7564,
+      "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+    },
+    "catalogue/candidate-v39/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sizeBytes": 11228,
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+    },
+    "catalogue/candidate-v39/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sizeBytes": 1656,
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+    },
+    "catalogue/candidate-v39/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+      "sizeBytes": 6445,
+      "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+    },
+    "catalogue/candidate-v39/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sizeBytes": 6071,
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+    },
+    "catalogue/candidate-v39/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json": {
+      "sizeBytes": 4567,
+      "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+    },
+    "catalogue/candidate-v39/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sizeBytes": 10745,
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+    },
+    "catalogue/candidate-v39/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sizeBytes": 6075,
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+    },
+    "catalogue/candidate-v39/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json": {
+      "sizeBytes": 7460,
+      "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+    },
+    "catalogue/candidate-v39/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sizeBytes": 4586,
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+    },
+    "catalogue/candidate-v39/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json": {
+      "sizeBytes": 3703,
+      "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+    },
+    "catalogue/candidate-v39/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sizeBytes": 9388,
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+    },
+    "catalogue/candidate-v39/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json": {
+      "sizeBytes": 8122,
+      "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+    },
+    "catalogue/candidate-v39/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json": {
+      "sizeBytes": 6906,
+      "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+    },
+    "catalogue/candidate-v39/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sizeBytes": 3517,
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+    },
+    "catalogue/candidate-v39/tuf/trusted-root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "docs/evidence/2026-10-11-qxmledit-activation.json": {
+      "sizeBytes": 1760,
+      "sha256": "b2e3e70e29405afb9c20ee99416a2fea728a54dd369410f6fa460cce5964f26a"
+    },
+    "docs/evidence/2026-10-11-qxmledit-current-state.json": {
+      "sizeBytes": 827,
+      "sha256": "2954c5732dc0a8ccfe3b7d4f0a24ddc478ac63bd3ad969a7c471cd464e1e2891"
+    },
+    "docs/evidence/2026-10-11-qxmledit-failures.json": {
+      "sizeBytes": 3918,
+      "sha256": "26b06d0706b77068e091f4b699af03564c6b21822346e6fc8d02fa010a14df35"
+    },
+    "docs/evidence/2026-10-11-qxmledit-final-verification-v2.json": {
+      "sizeBytes": 6347,
+      "sha256": "4b463c9beb1937470da8ec7a7d1a5eba753a3f07d71abb7b4e4a1fae627f21bc"
+    },
+    "docs/evidence/2026-10-11-qxmledit-final-verification.json": {
+      "sizeBytes": 5118,
+      "sha256": "a979ada6ecdc2ea82f040927e00aa08cf507b9a987ac055cb016321448086741"
+    },
+    "docs/evidence/2026-10-11-qxmledit-gui.json": {
+      "sizeBytes": 19603,
+      "sha256": "45283fd1fad0524585ad89fec2026c0383300e58c91ed28af77cde96cd86cff6"
+    },
+    "docs/evidence/2026-10-11-qxmledit-independent-review-v2.json": {
+      "sizeBytes": 22042,
+      "sha256": "16a3d95d2804855565c6cd1315dfc73694c96c2a894fc7e8f324dfc2ff3792ba"
+    },
+    "docs/evidence/2026-10-11-qxmledit-independent-review.json": {
+      "sizeBytes": 23280,
+      "sha256": "4d535f1b77089d696345c1827766557579cf9951c52ed7aa62954b709d29878d"
+    },
+    "docs/evidence/2026-10-11-qxmledit-index-recovery.json": {
+      "sizeBytes": 1763,
+      "sha256": "901b9dcde738e13181b4bb82df992698a4f10fcd48f648e5e3b6c49579518435"
+    },
+    "docs/evidence/2026-10-11-qxmledit-license-observation.json": {
+      "sizeBytes": 1075,
+      "sha256": "069bfccb0a23cd632f1edce3e1603b5da0fcb9f99c3ad3cf52a97094966fa6f8"
+    },
+    "docs/evidence/2026-10-11-qxmledit-market-gui.json": {
+      "sizeBytes": 19468,
+      "sha256": "3792159b8233fd4d51e6d821220c2408055e92eb56b78faa46ffb30861df0d93"
+    },
+    "docs/evidence/2026-10-11-qxmledit-publication.json": {
+      "sizeBytes": 13285,
+      "sha256": "751ac5530135492e2aeecdf061129bc53e59b131bef8b316a4a885fbc8baed15"
+    },
+    "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json": {
+      "sizeBytes": 30420,
+      "sha256": "21a7cd76f4ebc8e4f1258eda4124d38b1669c9cbcdf0f80d1a1b085a914ac98b"
+    },
+    "docs/evidence/2026-10-11-qxmledit-source.json": {
+      "sizeBytes": 5898,
+      "sha256": "136c0ccf7e1e0cabc24f03154349300f7dd3075b4a81f157aa2317c8398347e1"
+    },
+    "docs/evidence/2026-10-11-qxmledit-stage-failure.json": {
+      "sizeBytes": 1456,
+      "sha256": "0e892417814ab1a9249e72b6e9e5c82a6d4b9985a2494d92e3e1dc387f45fca3"
+    },
+    "docs/evidence/2026-10-11-qxmledit/01-original-license.jpg": {
+      "sizeBytes": 33468,
+      "sha256": "5e4624b85b0346c62a23bd1c35650e7e5e6cc618105ee014b1d70b9e4fc1fb7a"
+    },
+    "docs/evidence/2026-10-11-qxmledit/02-original-loaded.jpg": {
+      "sizeBytes": 22142,
+      "sha256": "fc9698fa98816eb9ef96344e7b090ade53d55959f67eb1efe2f38ff89b02bdf7"
+    },
+    "docs/evidence/2026-10-11-qxmledit/03-original-saved.jpg": {
+      "sizeBytes": 25191,
+      "sha256": "69cb675b6c0b2e710bc5531188deba58d60f972fd39f465cd52e64362fd028f8"
+    },
+    "docs/evidence/2026-10-11-qxmledit/04-original-reopened.jpg": {
+      "sizeBytes": 28338,
+      "sha256": "c293ef855e25ab0f9ccc2d52ee4e03a661a32e6cc4c03c368a30a30a078265b4"
+    },
+    "docs/evidence/2026-10-11-qxmledit/05-market-license.jpg": {
+      "sizeBytes": 33558,
+      "sha256": "bd1d85cf99ba67f51faba4f2c4361c2193876c2c104983a6d1e4f7ea52fbfd6f"
+    },
+    "docs/evidence/2026-10-11-qxmledit/06-market-loaded.jpg": {
+      "sizeBytes": 26655,
+      "sha256": "d334e7f0fabbbccd10b12ca5cc8edc9902a8494978d670d1c4e56c31ccf55419"
+    },
+    "docs/evidence/2026-10-11-qxmledit/07-market-saved.jpg": {
+      "sizeBytes": 28941,
+      "sha256": "16e8674463c4d4dd908d20865679c01ae57f2a398f68ca71647ebf391f4f58f7"
+    },
+    "docs/evidence/2026-10-11-qxmledit/08-market-reopened.jpg": {
+      "sizeBytes": 28251,
+      "sha256": "965f18c1ca1f6113d7b4baaa58b27d607001a09b3859c62d663548f3c37dec95"
+    },
+    "docs/evidence/2026-10-11-qxmledit/09-rollback-original-reopened.jpg": {
+      "sizeBytes": 28333,
+      "sha256": "837f2669746b5ca1f8e04bc497423fd325f41d1a8e1d8898c8bb94a1df0ce042"
+    },
+    "docs/evidence/2026-10-11-qxmledit/QXmlEditInstaller-0.9.18.exe.sha256": {
+      "sizeBytes": 103,
+      "sha256": "ac0cca4093b1d454682ed47ad0c939f53a7c32468484ad68e3bd6b461fbfd487"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-COPYING.txt": {
+      "sizeBytes": 25372,
+      "sha256": "2713d3f6196c77a9e14d80f8d6434a2b7daa1275e7acc14ae3f42a74c4195099"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-LICENSE.txt": {
+      "sizeBytes": 26210,
+      "sha256": "4499d55b19c0fb1bb57649680ed7e13283f63ea85dab4536c03819eeac14abd0"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-README.txt": {
+      "sizeBytes": 3474,
+      "sha256": "edf691730c4b4206ea3380598ec5abc46c20c2dcd5425077f195f99d75b72459"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-installer-qt5.7.nsi": {
+      "sizeBytes": 6073,
+      "sha256": "1dd1d3d64359a4ea49215e2ea97a89d16bc6908b2830996ff55dfa30d7989faa"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-licensedialog.cpp": {
+      "sizeBytes": 3061,
+      "sha256": "340484261045de1ce3e4191e02d881ba6489f0e2b94203b8bc53b9da78cce019"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-licensedialog.ui": {
+      "sizeBytes": 1944,
+      "sha256": "27450436146529f52d89bcd1b440db6f9d23891963b6f93d439338d07d25a42b"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-main.cpp": {
+      "sizeBytes": 14169,
+      "sha256": "9dc24f662b8948571c9efa0274c3ec1e91461d909087a83f45a9a2e05be44328"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-resource-LGPLV2.txt": {
+      "sizeBytes": 25372,
+      "sha256": "2713d3f6196c77a9e14d80f8d6434a2b7daa1275e7acc14ae3f42a74c4195099"
+    },
+    "docs/evidence/2026-10-11-qxmledit/fixed-source-risorse.qrc": {
+      "sizeBytes": 15033,
+      "sha256": "b32bd957cf95b0e9fc999ee5450bb4a9a7cabccd019e03a326aedd2efffc4231"
+    },
+    "docs/evidence/2026-10-11-qxmledit/market-edited.xml": {
+      "sizeBytes": 163,
+      "sha256": "ff092a25d33ed0502c82bada48fbf696fe82e974e4b37c3b7ad8ce98f36f5806"
+    },
+    "docs/evidence/2026-10-11-qxmledit/market-input.xml": {
+      "sizeBytes": 152,
+      "sha256": "078a67a7c42899883379bbfc1e552c097d693db5aecdcf7b30974746e07e653b"
+    },
+    "docs/evidence/2026-10-11-qxmledit/original-edited.xml": {
+      "sizeBytes": 167,
+      "sha256": "729ff49205419e45c7375a14a42b276ba7496289b3841dc4c21272dfec5e4fb4"
+    },
+    "docs/evidence/2026-10-11-qxmledit/original-input.xml": {
+      "sizeBytes": 154,
+      "sha256": "3f9a5e1a28708f47a53bd2d4829051c52fc557705a975256331bf1a4c36473da"
+    },
+    "docs/evidence/2026-10-11-qxmledit/qxmledit-0.9.18-src.tgz.sha256": {
+      "sizeBytes": 121,
+      "sha256": "d14688f75282660eac34934f9fd2c01601484dc9cf3d083d2a325a4f7d885835"
+    },
+    "docs/evidence/windows-qxmledit-20261011.acceptance.json": {
+      "sizeBytes": 4514,
+      "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 46631,
+      "sha256": "bcaab3d0f48ca0857f86409f35b0108bc1825f04ba3b6ecaad8c72c74c559669"
+    },
+    "docs/windows-rolling-20261011-qxmledit.md": {
+      "sizeBytes": 5400,
+      "sha256": "edd3e56a2285a436a9b359610e5bc15d4295995ab7c5de908a816380448f0f86"
+    }
+  },
+  "actualIndexAudit": {
+    "frozenFilesVerified": 700,
+    "stagedChangedPaths": 86,
+    "diskAndIndexAndFailedV2FreezeAllBytesEqual": true,
+    "reportIndexBytes": 5400,
+    "reportCrLfCount": 24,
+    "cachedWhitespaceCheckPassed": true,
+    "scope": "700 files frozen before recovery receipt; current new recovery receipt not staged at reviewed moment"
+  },
+  "reviewScope": "Read-only incremental v3 worktree verification of87 current public paths plus independent byte-for-byte read of all700 failed-v2 freeze disk/index files and actual cached whitespace/attribute checks. The first and second failed manifests, original reviews/final-verifications, raw source/output/report, signed metadata and public files are preserved. Recovery receipt pending status is its historical creation state.",
+  "finalAllProspectiveIndexAuditPending": true,
+  "limitations": [
+    "The reviewer executed only read-only Git commands, public file reads and private review-result generation. No git add, commit, push, GUI, guest/service action, private key/credential access or full private checkpoint body access.",
+    "Actual index audit covers the700 existing pre-receipt frozen files and86 staged changed paths. The new recovery receipt and future v3 public review/final files must be staged and fully audited by the parent before any commit or push. This review does not claim those future files were reviewed.",
+    "Prior independent source/XML/GUI/signature reviews are reused only for byte-identical evidence. No repeated GUI, guest or full TUF reexecution; reported36 distinct apps/root1/roles48/281 Core/90 Store remain consistency checks.",
+    "Historical before-repair index was not replayed. Its exact LF-only blob and digest were independently reconstructed from unchanged raw report and matched the preserved diagnostic; current actual index was freshly read and verified."
+  ]
+}

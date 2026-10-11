@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "qxmledit",
+  "failures": [
+    {
+      "phase": "license-small-text-interpretation",
+      "error": "Small screenshot initially misread as GPLv3; no actual source/install/GUI mismatch established.",
+      "resolution": "Original JPEG retained; read-only magnification shows GNU Library GPLv2 June1991. Fixed qrc maps lgplv2 alias to exact fixed COPYING bytes; installed COPYING same bytes. Separate license-observation record retained."
+    },
+    {
+      "phase": "host-screenshot-inspection",
+      "error": "Python PIL unavailable; no magnified image created. Missing-file view_image nevertheless attempted and failed.",
+      "dependentChangesStopped": true,
+      "resolution": "Read-only System.Drawing magnification then succeeded; original raw JPEG retained. No guest/app data mutation by failed inspection."
+    },
+    {
+      "phase": "signed-pack-summary-literal",
+      "error": "Private pack summary kept entries=37 although actual catalogue assertion38 passed; signed catalogue had38 entries.",
+      "dependentChangesStopped": true,
+      "originalRecordSha256": "7891f8eac921d17baa6ed6f2c33a346a243d14320b476113a6bfa32aec5ccd0e",
+      "resolution": "Actual signed catalogue re-read as38 entries,77 targets,44 public files; distinct corrected summary before guest transfer/activation. No signed bytes changed; original summary retained."
+    },
+    {
+      "phase": "activation-old-directory-assertion",
+      "error": "Broad helper string replacement changed expected OLD drop-in v38 to NEW v39; assertion failed before any guest drop-in/daemon/service change.",
+      "dependentChangesStopped": true,
+      "failureObservation": {
+        "passed": true,
+        "originalActivationFailedBeforeMutation": true,
+        "allFullFieldsEqualBeforeMarket": true,
+        "oldDirectory": "catalogue-v38/tuf",
+        "coreJobs": 277,
+        "fullStoreRows": 88,
+        "oldDropinSha256": "85f3fea63a3466bb140e2fc78738fc46b20320f57f9f2e3cbfbe7512fa028caf",
+        "newMetadataStagedOnly": true
+      },
+      "resolution": "Strict read-only comparison277/88 full fields equals before-market CP; old v38 drop-in present, new backup/activation CP absent. Original failing helper retained; separate v2 corrected only old-directory assertion then actual v39 activation passed."
+    },
+    {
+      "phase": "host-helper-generation",
+      "error": "PowerShell inline Python quoting failed with SyntaxError before helper creation; no guest change.",
+      "dependentChangesStopped": true,
+      "resolution": "Explicit saved host Python builder created separate v2; no shell-built compound mutation."
+    },
+    {
+      "phase": "host-helper-path-read",
+      "error": "Attempted to read nonexistent focuswriter-before-rollback Python helper; only existing JSON record exists.",
+      "dependentChangesStopped": true,
+      "resolution": "rg located actual build-lifecycle helper, then new QXmlEdit before-rollback checkpoint was saved and read back before rollback."
+    },
+    {
+      "phase": "review-file-comparison-scope",
+      "error": "Draft report stated Uninstall.exe was skipped, based on intended helper condition. Actual key is lowercase uninstall.exe; case-sensitive skip did not trigger.",
+      "initialReportSha256": "4c7696d94906f7866cfc06c3100b8629e1442e45cdf2c6ddcd501dad53cf83f5",
+      "resolution": "Independent review and parent re-read of both original/market55 installed file mappings confirm all55 pins exactly equal and comparison ran for all55. Draft report corrected, actual receipts/source/program and signed bytes not rewritten.",
+      "all55CrossGenerationPinsEqual": true,
+      "originalFrozenReceiptsUnchanged": true
+    }
+  ],
+  "historicalFailuresDeleted": false,
+  "originalFrozenReceiptsRewritten": false,
+  "allHistoricalGatesAlwaysRespectedClaimed": false,
+  "allAppFunctionalityAccepted": false
+}

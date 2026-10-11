@@ -1,0 +1,730 @@
+{
+  "passed": true,
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "metadataVersion": 48,
+  "rootVersion": 1,
+  "rootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "selectedGeneration": "gen-job-1791711953732-1",
+  "coreJobs": 281,
+  "fullStoreRows": 90,
+  "outputs": {
+    "original": {
+      "generationId": "gen-job-1791711953732-1",
+      "fixture": {
+        "generationId": "gen-job-1791711953732-1",
+        "input": {
+          "file": "input/中文树.xml",
+          "sizeBytes": 154,
+          "sha256": "3f9a5e1a28708f47a53bd2d4829051c52fc557705a975256331bf1a4c36473da"
+        },
+        "inputUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project kind=\"original\">\n  <title>中文内容保留</title>\n  <note>BEFORE</note>\n  <value>42</value>\n</project>\n",
+        "expectedNoteText": "AFTER",
+        "expectedValueText": "42",
+        "installedLicenseFile": {
+          "file": "QXmlEdit/COPYING",
+          "sizeBytes": 25372,
+          "sha256": "2713d3f6196c77a9e14d80f8d6434a2b7daa1275e7acc14ae3f42a74c4195099"
+        }
+      },
+      "savedXml": {
+        "file": "output/original-edited.xml",
+        "sizeBytes": 167,
+        "sha256": "729ff49205419e45c7375a14a42b276ba7496289b3841dc4c21272dfec5e4fb4",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project kind=\"original\">\r\n <title>中文内容保留</title>\r\n <note>AFTER ORIGINAL42</note>\r\n <value>42</value>\r\n</project>\r\n",
+        "semantic": {
+          "root": "project",
+          "attributes": {
+            "kind": "original"
+          },
+          "children": [
+            {
+              "title": "中文内容保留"
+            },
+            {
+              "note": "AFTER ORIGINAL42"
+            },
+            {
+              "value": "42"
+            }
+          ]
+        }
+      },
+      "installedFiles": {
+        "uninstall.exe": {
+          "sizeBytes": 35137,
+          "sha256": "6f09bd4e29a4b8924867ef569226eee9fd02d74297a01f3601c3294b111a1de6"
+        },
+        "Qt5Qml.dll": {
+          "sizeBytes": 3919360,
+          "sha256": "b1994589372836a57bf43ec6dc584989bb713e0e2b8f4b11461ca3208d773def"
+        },
+        "Qt5Network.dll": {
+          "sizeBytes": 1412096,
+          "sha256": "47bac96af86163d6519e81059ceec0848f36334f31cb9b612f4e9647075da3a2"
+        },
+        "QXmlEditWidget.dll": {
+          "sizeBytes": 4931584,
+          "sha256": "7408cc3dc6be9ad2a9b5e91e83817e260b1940324e96b00dbf05d7546707fee5"
+        },
+        "Qt5Core.dll": {
+          "sizeBytes": 4785152,
+          "sha256": "9a6f56d6c98131ad106e3986ccf96fa32bbd363d3109b78cd0d75adb34361a10"
+        },
+        "Qt5WinExtras.dll": {
+          "sizeBytes": 212480,
+          "sha256": "ab033680f5e29e7f76ca65aab8aa84cd55fad17c21ba4a67c41ad7be7c0827dd"
+        },
+        "COPYING": {
+          "sizeBytes": 25372,
+          "sha256": "2713d3f6196c77a9e14d80f8d6434a2b7daa1275e7acc14ae3f42a74c4195099"
+        },
+        "Qt5XmlPatterns.dll": {
+          "sizeBytes": 3618304,
+          "sha256": "93ab333e811f54e6f9307aa2770d67f7ad49f6962de4ca198e9a5347090e9a5b"
+        },
+        "README": {
+          "sizeBytes": 3474,
+          "sha256": "edf691730c4b4206ea3380598ec5abc46c20c2dcd5425077f195f99d75b72459"
+        },
+        "Qt5OpenGL.dll": {
+          "sizeBytes": 323584,
+          "sha256": "1ea4c4c2d2b0481c256036300e46f262115ce28194f3e90543656559d17e36b9"
+        },
+        "QXmlEdit_manual.pdf": {
+          "sizeBytes": 7900045,
+          "sha256": "53262b1b87fdba3dc1bc967847fced1fb436a03a970888add0d0524098ed688b"
+        },
+        "Qt5Widgets.dll": {
+          "sizeBytes": 5884928,
+          "sha256": "dee57b158cc1c510b3e19e100f39aaf8f325d0f32469d8c661f398bd41f04b31"
+        },
+        "Qt5Gui.dll": {
+          "sizeBytes": 4589056,
+          "sha256": "41fbf3feed05d0a6bc3b01cf4c8402dfce5e7c476bed410fc303c49e03132503"
+        },
+        "Qt5Sql.dll": {
+          "sizeBytes": 237568,
+          "sha256": "503caa79371e537654041b033fcc123151105f82593fa60254865fd7f9b0314b"
+        },
+        "QXmlEdit.exe": {
+          "sizeBytes": 2594304,
+          "sha256": "8a57044f30fa3846a49955276cd3503f0f44e04d77612092cb66e02e2d43114e"
+        },
+        "Qt5Svg.dll": {
+          "sizeBytes": 299520,
+          "sha256": "62ccbd0b497fc150e4d8d3bb339297dd8d44615d894dd4c22e3e06d8915a8a25"
+        },
+        "qt_cs.qm": {
+          "sizeBytes": 176,
+          "sha256": "92aa927934a4d85176d648e2a7a8a514455d6602acd93b4961b152739260e648"
+        },
+        "libstdc++-6.dll": {
+          "sizeBytes": 970766,
+          "sha256": "483e72870c9453e9eb39bec9e5f8554a4ed9fc7c3384e0c81305f612948f562b"
+        },
+        "libwinpthread-1.dll": {
+          "sizeBytes": 48640,
+          "sha256": "2edfb516149e25d9d87de91847fe3a4e082b62c048cf99417e8ec400422a419c"
+        },
+        "Qt5PrintSupport.dll": {
+          "sizeBytes": 335872,
+          "sha256": "2d996258afb621323adb8cfb2504e3c498f2bba080842d7e2435a837b1988ad2"
+        },
+        "QXmlEditSessions.dll": {
+          "sizeBytes": 357376,
+          "sha256": "936c657274e1c2be895ccf893571d984c6ec84f07c2f08f47772b327c0f0da06"
+        },
+        "icudt52.dll": {
+          "sizeBytes": 23544786,
+          "sha256": "a861ed337240307a33da77ffc89bb2a39e64f73844a4fc5bd634616056a91b8a"
+        },
+        "LGPLV3.txt": {
+          "sizeBytes": 7643,
+          "sha256": "6c57f43c939054fd4b831f271a14c97a488c38f98cdda5e887c5d396e3b3bc58"
+        },
+        "icuuc52.dll": {
+          "sizeBytes": 1992280,
+          "sha256": "07bee94d052820e6b0cbbfba0363b83487d6f44d1a385520b60c1a0fedbe99ff"
+        },
+        "libgcc_s_dw2-1.dll": {
+          "sizeBytes": 117262,
+          "sha256": "7b6fbd236becb7aaa2625b79115041699da6fc47566c007bb9d0f1d5f175b5db"
+        },
+        "sample.style": {
+          "sizeBytes": 753,
+          "sha256": "c0e8725387c2674b82cb5c7c5eef4411956a0c817bc781c7331d8705f361414a"
+        },
+        "GPLV3.txt": {
+          "sizeBytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        "Qt5Xml.dll": {
+          "sizeBytes": 223744,
+          "sha256": "42aef06bbf3fbdefee879607917f9707fdbef6d6ec130098803488a05ca97eef"
+        },
+        "icuin52.dll": {
+          "sizeBytes": 3347428,
+          "sha256": "b6a91ec31a8c72003bcd9b67bfedb75a5bd790b697783fdfdf0d0a340e2185dd"
+        },
+        "translations/QXmlEditSessions_cs.qm": {
+          "sizeBytes": 7089,
+          "sha256": "ec35aa68da0b09f4e06a8bdf834659df33150616f3a87fd87fd0b2e08eab2c95"
+        },
+        "translations/QXmlEditWidget_cs.qm": {
+          "sizeBytes": 249944,
+          "sha256": "d556848cf20e7e12044c2270b3e6a0b0a3ca30be32c19cefae866761cb1ab8d3"
+        },
+        "translations/QXmlEdit_cs.qm": {
+          "sizeBytes": 230936,
+          "sha256": "399092504bc813cda0bb992e209759efaf254a5b022d021f31cd3de683b43a92"
+        },
+        "bearer/qnativewifibearer.dll": {
+          "sizeBytes": 58368,
+          "sha256": "40ff4cd8179795ca7dc0c77dfe2626429dcfacb26b0dfcd655c586785f13dd67"
+        },
+        "bearer/qgenericbearer.dll": {
+          "sizeBytes": 53760,
+          "sha256": "77adc2d7615fdecabf5f99c80d8eef63e2d9159417a5da15f3ffffd545fa45e9"
+        },
+        "iconengines/qsvgicon.dll": {
+          "sizeBytes": 39424,
+          "sha256": "e97bb2d03a8abbb626d5b7cd2a5e233b348c0a33a8b8d83edc8d734034cee51b"
+        },
+        "platforms/qwindows.dll": {
+          "sizeBytes": 1276416,
+          "sha256": "ead37f3f8d529046815cf5941bc30d0da78f730b9d46168c3a2744316f32e3a8"
+        },
+        "snippets/{d78f4e09-4003-4178-adec-134a7b996d6e}.xml": {
+          "sizeBytes": 533,
+          "sha256": "a0375e1f593e77435e09c9a71ece50a713f0566de281ff00420058815a4a457b"
+        },
+        "snippets/{bd4984f5-107e-48ca-9780-c263ff1aa58d}.xml": {
+          "sizeBytes": 640,
+          "sha256": "9f2a90d3e9866059b3538ddbf88b0c07f2c9f93fe2191432c8aac787b8b1a5ea"
+        },
+        "snippets/{b3303cb3-8537-46d0-943b-cf898cc93b3f}.xml": {
+          "sizeBytes": 541,
+          "sha256": "6334aefcaba2782d98c1509000ac67180714bc3fc1dd1bb030e4098ae731a8e8"
+        },
+        "snippets/{e40792fb-16de-4418-9320-4feaa92c28a3}.xml": {
+          "sizeBytes": 522,
+          "sha256": "1c909834a1194bf5393fd5483821ea4531b1ef60ab508fc7500250444957c4a2"
+        },
+        "snippets/{edc60671-0ae0-401b-989d-5d0b82976bce}.xml": {
+          "sizeBytes": 537,
+          "sha256": "d0bdb01a8b5724e1a2779e7dd11aa6da9db3b927e2d980dadeff97fcca5644f8"
+        },
+        "snippets/{f6d7ebdd-c505-4a6a-8a16-f7c99581a995}.xml": {
+          "sizeBytes": 637,
+          "sha256": "9c5a60b0b3f89668d7cde7a599655769941adb439cf504520748122392357c33"
+        },
+        "snippets/{6d11b8d1-e285-46b2-8375-79e17cab9862}.xml": {
+          "sizeBytes": 526,
+          "sha256": "d735f6da8f8ce43d8b255cab06b36fcba3257c1143f4f37c59836e69f812a14e"
+        },
+        "accessible/qtaccessiblequick.dll": {
+          "sizeBytes": 46080,
+          "sha256": "8307efd7e44d7a7428dd25e5fa000986cc51d8b8acb6858ce9ec8bf30f2e047b"
+        },
+        "accessible/qtaccessiblewidgets.dll": {
+          "sizeBytes": 177664,
+          "sha256": "820c15de45e7ca89d3b13b077eca09bc41f1991b7db703ed7d45cd41380bedf6"
+        },
+        "printsupport/windowsprintersupport.dll": {
+          "sizeBytes": 43008,
+          "sha256": "6d6de8fd1a40dc7e390934f8ff40b40319aa846c6880c5ae4237f0878ebcae9b"
+        },
+        "imageformats/qtiff.dll": {
+          "sizeBytes": 423936,
+          "sha256": "ab68450b14a7ef1928df567036429c40b41c599469e795bc1c05c7ab9a26d20a"
+        },
+        "imageformats/qwbmp.dll": {
+          "sizeBytes": 26112,
+          "sha256": "52a847f643999608f4633e581198fc04ecb0d612b2318689e2e6245cbf3372e2"
+        },
+        "imageformats/qtga.dll": {
+          "sizeBytes": 27136,
+          "sha256": "533fe5d6c317eaab3857c0f4a97600ed22e914a121564e03c233856823e4f9b3"
+        },
+        "imageformats/qjpeg.dll": {
+          "sizeBytes": 242176,
+          "sha256": "b8a1b649b6907cb4e995caf9e73e4cfd762d49b0119401e6846fbeed006bd04c"
+        },
+        "imageformats/qico.dll": {
+          "sizeBytes": 31744,
+          "sha256": "c675e347a82713ecf2ea0ef0732388631a185564b3af783e68f9c086de38e125"
+        },
+        "imageformats/qgif.dll": {
+          "sizeBytes": 31232,
+          "sha256": "12cbcfc04a47ad3b2ff30eba9e1756bfa8393d66fafb24eabfbecc92d3cadd6f"
+        },
+        "imageformats/qsvg.dll": {
+          "sizeBytes": 27136,
+          "sha256": "e36a48e7aabde5ac6d0924d705de8bacd397906ee7ccbfe35a3bd84300e0de07"
+        },
+        "imageformats/qmng.dll": {
+          "sizeBytes": 363008,
+          "sha256": "f43fe1adab6ebb1f00f184d813c77cf18fe72047ce7887a74c2821477b762bdc"
+        },
+        "sqldrivers/qsqlite.dll": {
+          "sizeBytes": 749568,
+          "sha256": "7d6f0409b6d4a31d0896e0f0df2f8a91a21e40698b29df8851716ed37f37a65d"
+        }
+      },
+      "finalDataAndConfigurationPins": {
+        "system.reg": {
+          "sizeBytes": 3423539,
+          "sha256": "50c701563c300ba2e9969ec421feada62aef7969a1446a129cdd8616781ebabe"
+        },
+        "user.reg": {
+          "sizeBytes": 103042,
+          "sha256": "5601ff502fc818fbf8f4ff54c5356dc2b020e7e55d35dd906f4b82167e2b329d"
+        },
+        "userdef.reg": {
+          "sizeBytes": 4052,
+          "sha256": "67ec5c42637a3cab9605d77efe142a258abc210e78ee54e91b091669eda65b80"
+        },
+        "drive_c/users/forge/AppData/Local/QXmlEdit/QXmlEdit/dbstorage/qxmledit_sessions.db": {
+          "sizeBytes": 18432,
+          "sha256": "c3fbebd16bdf6e19fc7942d1d36ed38187022b81aedac541d00e9c23fbeb8e9f"
+        },
+        "drive_c/ForgeQA/output/original-edited.xml": {
+          "sizeBytes": 167,
+          "sha256": "729ff49205419e45c7375a14a42b276ba7496289b3841dc4c21272dfec5e4fb4"
+        },
+        "drive_c/ForgeQA/input/中文树.xml": {
+          "sizeBytes": 154,
+          "sha256": "3f9a5e1a28708f47a53bd2d4829051c52fc557705a975256331bf1a4c36473da"
+        },
+        "drive_c/QXmlEdit/QXmlEdit.exe": {
+          "sizeBytes": 2594304,
+          "sha256": "8a57044f30fa3846a49955276cd3503f0f44e04d77612092cb66e02e2d43114e"
+        }
+      }
+    },
+    "market": {
+      "generationId": "gen-job-1791712872837-4",
+      "fixture": {
+        "generationId": "gen-job-1791712872837-4",
+        "input": {
+          "file": "input/市场树.xml",
+          "sizeBytes": 152,
+          "sha256": "078a67a7c42899883379bbfc1e552c097d693db5aecdcf7b30974746e07e653b"
+        },
+        "inputUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project kind=\"market\">\n  <title>市场内容保留</title>\n  <note>BEFORE</note>\n  <value>40</value>\n</project>\n",
+        "expectedNoteText": "AFTER MARKET42",
+        "expectedValueText": "40",
+        "outputAbsentBeforeGui": true
+      },
+      "savedXml": {
+        "file": "output/market-edited.xml",
+        "sizeBytes": 163,
+        "sha256": "ff092a25d33ed0502c82bada48fbf696fe82e974e4b37c3b7ad8ce98f36f5806",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project kind=\"market\">\r\n <title>市场内容保留</title>\r\n <note>AFTER MARKET42</note>\r\n <value>40</value>\r\n</project>\r\n",
+        "semantic": {
+          "root": "project",
+          "attributes": {
+            "kind": "market"
+          },
+          "children": [
+            {
+              "title": "市场内容保留"
+            },
+            {
+              "note": "AFTER MARKET42"
+            },
+            {
+              "value": "40"
+            }
+          ]
+        }
+      },
+      "installedFiles": {
+        "uninstall.exe": {
+          "sizeBytes": 35137,
+          "sha256": "6f09bd4e29a4b8924867ef569226eee9fd02d74297a01f3601c3294b111a1de6"
+        },
+        "Qt5Qml.dll": {
+          "sizeBytes": 3919360,
+          "sha256": "b1994589372836a57bf43ec6dc584989bb713e0e2b8f4b11461ca3208d773def"
+        },
+        "Qt5Network.dll": {
+          "sizeBytes": 1412096,
+          "sha256": "47bac96af86163d6519e81059ceec0848f36334f31cb9b612f4e9647075da3a2"
+        },
+        "QXmlEditWidget.dll": {
+          "sizeBytes": 4931584,
+          "sha256": "7408cc3dc6be9ad2a9b5e91e83817e260b1940324e96b00dbf05d7546707fee5"
+        },
+        "Qt5Core.dll": {
+          "sizeBytes": 4785152,
+          "sha256": "9a6f56d6c98131ad106e3986ccf96fa32bbd363d3109b78cd0d75adb34361a10"
+        },
+        "Qt5WinExtras.dll": {
+          "sizeBytes": 212480,
+          "sha256": "ab033680f5e29e7f76ca65aab8aa84cd55fad17c21ba4a67c41ad7be7c0827dd"
+        },
+        "COPYING": {
+          "sizeBytes": 25372,
+          "sha256": "2713d3f6196c77a9e14d80f8d6434a2b7daa1275e7acc14ae3f42a74c4195099"
+        },
+        "Qt5XmlPatterns.dll": {
+          "sizeBytes": 3618304,
+          "sha256": "93ab333e811f54e6f9307aa2770d67f7ad49f6962de4ca198e9a5347090e9a5b"
+        },
+        "README": {
+          "sizeBytes": 3474,
+          "sha256": "edf691730c4b4206ea3380598ec5abc46c20c2dcd5425077f195f99d75b72459"
+        },
+        "Qt5OpenGL.dll": {
+          "sizeBytes": 323584,
+          "sha256": "1ea4c4c2d2b0481c256036300e46f262115ce28194f3e90543656559d17e36b9"
+        },
+        "QXmlEdit_manual.pdf": {
+          "sizeBytes": 7900045,
+          "sha256": "53262b1b87fdba3dc1bc967847fced1fb436a03a970888add0d0524098ed688b"
+        },
+        "Qt5Widgets.dll": {
+          "sizeBytes": 5884928,
+          "sha256": "dee57b158cc1c510b3e19e100f39aaf8f325d0f32469d8c661f398bd41f04b31"
+        },
+        "Qt5Gui.dll": {
+          "sizeBytes": 4589056,
+          "sha256": "41fbf3feed05d0a6bc3b01cf4c8402dfce5e7c476bed410fc303c49e03132503"
+        },
+        "Qt5Sql.dll": {
+          "sizeBytes": 237568,
+          "sha256": "503caa79371e537654041b033fcc123151105f82593fa60254865fd7f9b0314b"
+        },
+        "QXmlEdit.exe": {
+          "sizeBytes": 2594304,
+          "sha256": "8a57044f30fa3846a49955276cd3503f0f44e04d77612092cb66e02e2d43114e"
+        },
+        "Qt5Svg.dll": {
+          "sizeBytes": 299520,
+          "sha256": "62ccbd0b497fc150e4d8d3bb339297dd8d44615d894dd4c22e3e06d8915a8a25"
+        },
+        "qt_cs.qm": {
+          "sizeBytes": 176,
+          "sha256": "92aa927934a4d85176d648e2a7a8a514455d6602acd93b4961b152739260e648"
+        },
+        "libstdc++-6.dll": {
+          "sizeBytes": 970766,
+          "sha256": "483e72870c9453e9eb39bec9e5f8554a4ed9fc7c3384e0c81305f612948f562b"
+        },
+        "libwinpthread-1.dll": {
+          "sizeBytes": 48640,
+          "sha256": "2edfb516149e25d9d87de91847fe3a4e082b62c048cf99417e8ec400422a419c"
+        },
+        "Qt5PrintSupport.dll": {
+          "sizeBytes": 335872,
+          "sha256": "2d996258afb621323adb8cfb2504e3c498f2bba080842d7e2435a837b1988ad2"
+        },
+        "QXmlEditSessions.dll": {
+          "sizeBytes": 357376,
+          "sha256": "936c657274e1c2be895ccf893571d984c6ec84f07c2f08f47772b327c0f0da06"
+        },
+        "icudt52.dll": {
+          "sizeBytes": 23544786,
+          "sha256": "a861ed337240307a33da77ffc89bb2a39e64f73844a4fc5bd634616056a91b8a"
+        },
+        "LGPLV3.txt": {
+          "sizeBytes": 7643,
+          "sha256": "6c57f43c939054fd4b831f271a14c97a488c38f98cdda5e887c5d396e3b3bc58"
+        },
+        "icuuc52.dll": {
+          "sizeBytes": 1992280,
+          "sha256": "07bee94d052820e6b0cbbfba0363b83487d6f44d1a385520b60c1a0fedbe99ff"
+        },
+        "libgcc_s_dw2-1.dll": {
+          "sizeBytes": 117262,
+          "sha256": "7b6fbd236becb7aaa2625b79115041699da6fc47566c007bb9d0f1d5f175b5db"
+        },
+        "sample.style": {
+          "sizeBytes": 753,
+          "sha256": "c0e8725387c2674b82cb5c7c5eef4411956a0c817bc781c7331d8705f361414a"
+        },
+        "GPLV3.txt": {
+          "sizeBytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        "Qt5Xml.dll": {
+          "sizeBytes": 223744,
+          "sha256": "42aef06bbf3fbdefee879607917f9707fdbef6d6ec130098803488a05ca97eef"
+        },
+        "icuin52.dll": {
+          "sizeBytes": 3347428,
+          "sha256": "b6a91ec31a8c72003bcd9b67bfedb75a5bd790b697783fdfdf0d0a340e2185dd"
+        },
+        "translations/QXmlEditSessions_cs.qm": {
+          "sizeBytes": 7089,
+          "sha256": "ec35aa68da0b09f4e06a8bdf834659df33150616f3a87fd87fd0b2e08eab2c95"
+        },
+        "translations/QXmlEditWidget_cs.qm": {
+          "sizeBytes": 249944,
+          "sha256": "d556848cf20e7e12044c2270b3e6a0b0a3ca30be32c19cefae866761cb1ab8d3"
+        },
+        "translations/QXmlEdit_cs.qm": {
+          "sizeBytes": 230936,
+          "sha256": "399092504bc813cda0bb992e209759efaf254a5b022d021f31cd3de683b43a92"
+        },
+        "bearer/qnativewifibearer.dll": {
+          "sizeBytes": 58368,
+          "sha256": "40ff4cd8179795ca7dc0c77dfe2626429dcfacb26b0dfcd655c586785f13dd67"
+        },
+        "bearer/qgenericbearer.dll": {
+          "sizeBytes": 53760,
+          "sha256": "77adc2d7615fdecabf5f99c80d8eef63e2d9159417a5da15f3ffffd545fa45e9"
+        },
+        "iconengines/qsvgicon.dll": {
+          "sizeBytes": 39424,
+          "sha256": "e97bb2d03a8abbb626d5b7cd2a5e233b348c0a33a8b8d83edc8d734034cee51b"
+        },
+        "platforms/qwindows.dll": {
+          "sizeBytes": 1276416,
+          "sha256": "ead37f3f8d529046815cf5941bc30d0da78f730b9d46168c3a2744316f32e3a8"
+        },
+        "snippets/{d78f4e09-4003-4178-adec-134a7b996d6e}.xml": {
+          "sizeBytes": 533,
+          "sha256": "a0375e1f593e77435e09c9a71ece50a713f0566de281ff00420058815a4a457b"
+        },
+        "snippets/{bd4984f5-107e-48ca-9780-c263ff1aa58d}.xml": {
+          "sizeBytes": 640,
+          "sha256": "9f2a90d3e9866059b3538ddbf88b0c07f2c9f93fe2191432c8aac787b8b1a5ea"
+        },
+        "snippets/{b3303cb3-8537-46d0-943b-cf898cc93b3f}.xml": {
+          "sizeBytes": 541,
+          "sha256": "6334aefcaba2782d98c1509000ac67180714bc3fc1dd1bb030e4098ae731a8e8"
+        },
+        "snippets/{e40792fb-16de-4418-9320-4feaa92c28a3}.xml": {
+          "sizeBytes": 522,
+          "sha256": "1c909834a1194bf5393fd5483821ea4531b1ef60ab508fc7500250444957c4a2"
+        },
+        "snippets/{edc60671-0ae0-401b-989d-5d0b82976bce}.xml": {
+          "sizeBytes": 537,
+          "sha256": "d0bdb01a8b5724e1a2779e7dd11aa6da9db3b927e2d980dadeff97fcca5644f8"
+        },
+        "snippets/{f6d7ebdd-c505-4a6a-8a16-f7c99581a995}.xml": {
+          "sizeBytes": 637,
+          "sha256": "9c5a60b0b3f89668d7cde7a599655769941adb439cf504520748122392357c33"
+        },
+        "snippets/{6d11b8d1-e285-46b2-8375-79e17cab9862}.xml": {
+          "sizeBytes": 526,
+          "sha256": "d735f6da8f8ce43d8b255cab06b36fcba3257c1143f4f37c59836e69f812a14e"
+        },
+        "accessible/qtaccessiblequick.dll": {
+          "sizeBytes": 46080,
+          "sha256": "8307efd7e44d7a7428dd25e5fa000986cc51d8b8acb6858ce9ec8bf30f2e047b"
+        },
+        "accessible/qtaccessiblewidgets.dll": {
+          "sizeBytes": 177664,
+          "sha256": "820c15de45e7ca89d3b13b077eca09bc41f1991b7db703ed7d45cd41380bedf6"
+        },
+        "printsupport/windowsprintersupport.dll": {
+          "sizeBytes": 43008,
+          "sha256": "6d6de8fd1a40dc7e390934f8ff40b40319aa846c6880c5ae4237f0878ebcae9b"
+        },
+        "imageformats/qtiff.dll": {
+          "sizeBytes": 423936,
+          "sha256": "ab68450b14a7ef1928df567036429c40b41c599469e795bc1c05c7ab9a26d20a"
+        },
+        "imageformats/qwbmp.dll": {
+          "sizeBytes": 26112,
+          "sha256": "52a847f643999608f4633e581198fc04ecb0d612b2318689e2e6245cbf3372e2"
+        },
+        "imageformats/qtga.dll": {
+          "sizeBytes": 27136,
+          "sha256": "533fe5d6c317eaab3857c0f4a97600ed22e914a121564e03c233856823e4f9b3"
+        },
+        "imageformats/qjpeg.dll": {
+          "sizeBytes": 242176,
+          "sha256": "b8a1b649b6907cb4e995caf9e73e4cfd762d49b0119401e6846fbeed006bd04c"
+        },
+        "imageformats/qico.dll": {
+          "sizeBytes": 31744,
+          "sha256": "c675e347a82713ecf2ea0ef0732388631a185564b3af783e68f9c086de38e125"
+        },
+        "imageformats/qgif.dll": {
+          "sizeBytes": 31232,
+          "sha256": "12cbcfc04a47ad3b2ff30eba9e1756bfa8393d66fafb24eabfbecc92d3cadd6f"
+        },
+        "imageformats/qsvg.dll": {
+          "sizeBytes": 27136,
+          "sha256": "e36a48e7aabde5ac6d0924d705de8bacd397906ee7ccbfe35a3bd84300e0de07"
+        },
+        "imageformats/qmng.dll": {
+          "sizeBytes": 363008,
+          "sha256": "f43fe1adab6ebb1f00f184d813c77cf18fe72047ce7887a74c2821477b762bdc"
+        },
+        "sqldrivers/qsqlite.dll": {
+          "sizeBytes": 749568,
+          "sha256": "7d6f0409b6d4a31d0896e0f0df2f8a91a21e40698b29df8851716ed37f37a65d"
+        }
+      },
+      "finalDataAndConfigurationPins": {
+        "system.reg": {
+          "sizeBytes": 3423539,
+          "sha256": "1aaa018eb88dd1724f3ddb550e28c7a6048b524c05f027e6a5c2b19f82c1a858"
+        },
+        "user.reg": {
+          "sizeBytes": 103040,
+          "sha256": "003a98e3b7b9be548517d6378dcd210194efe012512e6f7fe06cc29bf37fb63c"
+        },
+        "userdef.reg": {
+          "sizeBytes": 4052,
+          "sha256": "1b93adf59879a78cb2471ea211e98dcbd26d5af76eebbc8b3e614091f273ea86"
+        },
+        "drive_c/users/forge/AppData/Local/QXmlEdit/QXmlEdit/dbstorage/qxmledit_sessions.db": {
+          "sizeBytes": 18432,
+          "sha256": "c3fbebd16bdf6e19fc7942d1d36ed38187022b81aedac541d00e9c23fbeb8e9f"
+        },
+        "drive_c/ForgeQA/output/market-edited.xml": {
+          "sizeBytes": 163,
+          "sha256": "ff092a25d33ed0502c82bada48fbf696fe82e974e4b37c3b7ad8ce98f36f5806"
+        },
+        "drive_c/ForgeQA/input/市场树.xml": {
+          "sizeBytes": 152,
+          "sha256": "078a67a7c42899883379bbfc1e552c097d693db5aecdcf7b30974746e07e653b"
+        },
+        "drive_c/QXmlEdit/QXmlEdit.exe": {
+          "sizeBytes": 2594304,
+          "sha256": "8a57044f30fa3846a49955276cd3503f0f44e04d77612092cb66e02e2d43114e"
+        }
+      }
+    }
+  },
+  "marketInstall": {
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "qxmledit",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "7694759b-ae9e-4ec4-8b37-945d053091f7",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791712872837-4",
+    "originalGenerationId": "gen-job-1791711953732-1",
+    "generationId": "gen-job-1791712872837-4",
+    "newGenerationDistinct": true,
+    "oldFullFieldsPreserved": true,
+    "fixture": {
+      "generationId": "gen-job-1791712872837-4",
+      "input": {
+        "file": "input/市场树.xml",
+        "sizeBytes": 152,
+        "sha256": "078a67a7c42899883379bbfc1e552c097d693db5aecdcf7b30974746e07e653b"
+      },
+      "inputUtf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project kind=\"market\">\n  <title>市场内容保留</title>\n  <note>BEFORE</note>\n  <value>40</value>\n</project>\n",
+      "expectedNoteText": "AFTER MARKET42",
+      "expectedValueText": "40",
+      "outputAbsentBeforeGui": true
+    },
+    "guiJobId": "job-1791712890511-5",
+    "guiStatus": "running",
+    "checkpoint": {
+      "file": "after-market-install.json",
+      "sha256": "0a7ef2921767039c541fef03acafd947862ef55e6848c440af2313e94e4a1d9c",
+      "coreJobs": 278,
+      "fullStoreRows": 89
+    }
+  },
+  "rollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "qxmledit",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "6925a4d9-42af-42da-9ac0-f5c130d062d6",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791711953732-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 280,
+    "beforeRollbackStoreRows": 89,
+    "afterRollbackCoreJobs": 280,
+    "afterRollbackStoreRows": 90,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "7ad2a6acc47d450b74dc5932d8148028ccaac6301365ac1f5453b497239853fe",
+      "coreJobs": 280,
+      "fullStoreRows": 90
+    }
+  },
+  "rollbackGuiJob": {
+    "id": "job-1791713118038-7",
+    "generationId": "gen-job-1791711953732-1",
+    "kind": "launch",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 113516,
+        "requestId": "job-1791713118038-7",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 32935,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791711953732-1/prefix",
+        "requestId": "job-1791713118038-7",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 32978,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791713118038-7",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "normalRestartFullFieldEqualityPassed": true,
+  "oldProcessIds": {
+    "compatforge.service": "108210",
+    "forge-store.service": "111602"
+  },
+  "newProcessIds": {
+    "compatforge.service": "113728",
+    "forge-store.service": "113743"
+  },
+  "checkpoints": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "ccef22a96f8e6e2c951728e6b826d9afcf7f726970375114a9c39b1f42ad4906",
+      "coreJobs": 281,
+      "fullStoreRows": 90
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "9dba64c5c86fcdb811076fbab996b03264482bbbd15daabe6615df1c1f22410e",
+      "coreJobs": 281,
+      "fullStoreRows": 90
+    }
+  },
+  "allOldGenerationFieldsAndFixedEvidenceDataPreserved": true,
+  "allAppFilesystemFilesTraversed": false,
+  "powerConfigSha256": "791e14daf2d8eeaab76615635080a71f3141479ed530f0c0af3a2216fef88def",
+  "fullXmlEditorAccepted": false,
+  "directChineseKeyboardInputAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "date": "2026-10-11",
+  "failuresPreservedIn": "2026-10-11-qxmledit-failures.json",
+  "originalFrozenStageLabelsRetained": true,
+  "limitations": [
+    "Only two small UTF-8 Chinese-name, three-child XML inputs tested: tree view open, note text changed BEFORE to AFTER plus ASCII ORIGINAL42 or MARKET42, GUI Save As to ASCII XML paths, explicit new-process reading with Chinese title content preserved. Original input154/output167 bytes; independent market input152/output163 bytes. Inputs retain LF bytes; output CRLF and one-space indentation are actual application behavior. Raw bytes and exact XML root, kind attribute, child order/text independently checked. Synthetic XML does not count as an application.",
+    "No Core, global context, launcher environment/working directory, font, program, DLL or runtime repair. Both fresh installations showed the LGPLv2 notice and mode/display/welcome setup; normal manual acknowledgement, Expert user/predefined display and welcome close recorded. Five formal GUI processes used File/Quit exit0 and wineserver stop. Unattended startup and shortcuts beyond the observed file operations unverified.",
+    "Official fixed installer and source archive SHA-256 match separately downloaded official fixed checksum files. Fixed main.cpp declares LGPL-2.0-or-later; README mentions a special linking exception. Both installed COPYING files exactly match fixed source COPYING and LGPLV2 resource, zero newline normalization. Complete Qt, QwtPlot3D, Oxygen icons, all component licensing closure, PGP/Authenticode, exact built-in binary resource extraction and reproducible build unverified. Version0.9.18 pinned, not claimed latest.",
+    "XSD/schema validation, XSLT, split/compare, sessions, namespace/attribute editing, base64, graphical visualization, large/malformed XML, other encodings, direct Chinese keyboard input and advanced XML editor functions unverified.",
+    "Update and rollback submitted through Store IPC with verified pre-cache. GUI update/rollback buttons, guest network download, fresh-machine registration, migration, cross-version upgrade and enforced network isolation unverified.",
+    "Preservation covers every full Core task and Store SQLite row/field, all generation/config/trust/guard records, prior fixed acceptance data, both new generations55 installed program-file pins and new fixed input/output/config/registry pins. Not a traversal of all prior application filesystem data."
+  ]
+}

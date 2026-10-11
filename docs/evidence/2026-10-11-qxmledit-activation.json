@@ -1,0 +1,55 @@
+{
+  "activated": true,
+  "metadataVersion": 48,
+  "rootVersion": 1,
+  "entries": 38,
+  "coreJobs": 277,
+  "fullStoreRows": 88,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-qxmledit-20261011.acceptance.json#qxmledit",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "9a0e8f6ad3fce01bb232ea0ac84e87029a81aee2fb9dfbe2152bbcc30a72ba48",
+        "size": 32537109,
+        "target": "QXmlEditInstaller-0.9.18.exe",
+        "url": "https://downloads.sourceforge.net/project/qxmledit/QXmlEdit-0.9.18/QXmlEditInstaller-0.9.18.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "qxmledit"
+    },
+    "id": "qxmledit",
+    "license": "LGPL-2.0-or-later (main source; upstream linking exception declared; bundle closure unverified)",
+    "name": {
+      "en": "QXmlEdit",
+      "zhCN": "QXmlEdit XML 编辑器"
+    },
+    "origin": "https://qxmledit.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Luca Bellonda",
+    "summary": {
+      "en": "Limited small XML tree text edit, save and fresh-process reopen tested; advanced XML functions unverified.",
+      "zhCN": "有限小型 XML 树文本修改、保存和新进程重开已测；高级 XML 功能未验收"
+    },
+    "version": "0.9.18"
+  },
+  "installed": {
+    "appId": "qxmledit",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "0.9.18"
+  },
+  "allOldJobsRowsGenerationsConfigurationAndEntryFieldsPreserved": true,
+  "rootBytesPreserved": true,
+  "independentMarketGenerationPending": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "501a738e02189884f80072fbb860bb52f029a2ec8731bb75c9c500e55a20242f",
+    "coreJobs": 277,
+    "fullStoreRows": 88
+  }
+}

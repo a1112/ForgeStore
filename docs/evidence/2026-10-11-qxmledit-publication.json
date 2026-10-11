@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "qxmledit",
+  "version": "0.9.18",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedDistinctWindowsApps": 36,
+  "candidate": "candidate-v39",
+  "rootVersion": 1,
+  "metadataVersion": 48,
+  "catalogueEntries": 38,
+  "actualSignedTargets": 77,
+  "publicCatalogueFiles": 44,
+  "coreJobCount": 281,
+  "fullStoreRowCount": 90,
+  "inputsUnchanged": true,
+  "sourceEvidence": "2026-10-11-qxmledit-source.json",
+  "sourceEvidenceSha256": "136c0ccf7e1e0cabc24f03154349300f7dd3075b4a81f157aa2317c8398347e1",
+  "originalGuiEvidence": "2026-10-11-qxmledit-gui.json",
+  "originalGuiEvidenceSha256": "45283fd1fad0524585ad89fec2026c0383300e58c91ed28af77cde96cd86cff6",
+  "frozenOriginalSourceGuiAndReceiptBytesAndStageLabelsRetained": true,
+  "signedAcceptanceTarget": "windows-qxmledit-20261011.acceptance.json",
+  "signedAcceptanceSha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29",
+  "activationEvidence": "2026-10-11-qxmledit-activation.json",
+  "marketGuiEvidence": "2026-10-11-qxmledit-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-qxmledit-runtime-recovery.json",
+  "failureEvidence": "2026-10-11-qxmledit-failures.json",
+  "licenseObservationEvidence": "2026-10-11-qxmledit-license-observation.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-qxmledit-20261011.acceptance.json#qxmledit",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "9a0e8f6ad3fce01bb232ea0ac84e87029a81aee2fb9dfbe2152bbcc30a72ba48",
+        "size": 32537109,
+        "target": "QXmlEditInstaller-0.9.18.exe",
+        "url": "https://downloads.sourceforge.net/project/qxmledit/QXmlEdit-0.9.18/QXmlEditInstaller-0.9.18.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "qxmledit"
+    },
+    "id": "qxmledit",
+    "license": "LGPL-2.0-or-later (main source; upstream linking exception declared; bundle closure unverified)",
+    "name": {
+      "en": "QXmlEdit",
+      "zhCN": "QXmlEdit XML 编辑器"
+    },
+    "origin": "https://qxmledit.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Luca Bellonda",
+    "summary": {
+      "en": "Limited small XML tree text edit, save and fresh-process reopen tested; advanced XML functions unverified.",
+      "zhCN": "有限小型 XML 树文本修改、保存和新进程重开已测；高级 XML 功能未验收"
+    },
+    "version": "0.9.18"
+  },
+  "selectedOriginalGeneration": "gen-job-1791711953732-1",
+  "independentMarketGeneration": "gen-job-1791712872837-4",
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "storeGuiButtonsVerified": false,
+  "normalQuitJobs": [
+    {
+      "id": "job-1791712045282-2",
+      "generationId": "gen-job-1791711953732-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 110166,
+          "requestId": "job-1791712045282-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 487673,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791711953732-1/prefix",
+          "requestId": "job-1791712045282-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 487716,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791712045282-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791712568429-3",
+      "generationId": "gen-job-1791711953732-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 110897,
+          "requestId": "job-1791712568429-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 35048,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791711953732-1/prefix",
+          "requestId": "job-1791712568429-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 35091,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791712568429-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791712890511-5",
+      "generationId": "gen-job-1791712872837-4",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 112308,
+          "requestId": "job-1791712890511-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 94030,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791712872837-4/prefix",
+          "requestId": "job-1791712890511-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 94074,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791712890511-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791713002199-6",
+      "generationId": "gen-job-1791712872837-4",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 112804,
+          "requestId": "job-1791713002199-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 31208,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791712872837-4/prefix",
+          "requestId": "job-1791713002199-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 31252,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791713002199-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    },
+    {
+      "id": "job-1791713118038-7",
+      "generationId": "gen-job-1791711953732-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 113516,
+          "requestId": "job-1791713118038-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 32935,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791711953732-1/prefix",
+          "requestId": "job-1791713118038-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 32978,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791713118038-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "rootBytesPreserved": true,
+  "allOldSignedTargetsPreservedExceptCatalogueReplacement": true,
+  "tuftoolExplicitTrustedRootDownloadVerified": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "qxmledit",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "7694759b-ae9e-4ec4-8b37-945d053091f7",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "qxmledit",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "6925a4d9-42af-42da-9ac0-f5c130d062d6",
+      "state": "succeeded"
+    }
+  },
+  "beforeRollbackCheckpointSavedAndReadBack": true,
+  "beforeRollbackCoreJobs": 280,
+  "beforeRollbackStoreRows": 89,
+  "afterRollbackCoreJobs": 280,
+  "afterRollbackStoreRows": 90,
+  "normalRestartBeforeAndAfterCoreJobs": 281,
+  "normalRestartBeforeAndAfterStoreRows": 90,
+  "normalRestartFullFieldEqualityPassed": true,
+  "privateCheckpointPins": {
+    "beforeRestart": {
+      "file": "before-restart.json",
+      "sha256": "ccef22a96f8e6e2c951728e6b826d9afcf7f726970375114a9c39b1f42ad4906",
+      "coreJobs": 281,
+      "fullStoreRows": 90
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "9dba64c5c86fcdb811076fbab996b03264482bbbd15daabe6615df1c1f22410e",
+      "coreJobs": 281,
+      "fullStoreRows": 90
+    }
+  },
+  "outputPins": {
+    "original": {
+      "xml": {
+        "file": "output/original-edited.xml",
+        "sizeBytes": 167,
+        "sha256": "729ff49205419e45c7375a14a42b276ba7496289b3841dc4c21272dfec5e4fb4",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project kind=\"original\">\r\n <title>中文内容保留</title>\r\n <note>AFTER ORIGINAL42</note>\r\n <value>42</value>\r\n</project>\r\n",
+        "semantic": {
+          "root": "project",
+          "attributes": {
+            "kind": "original"
+          },
+          "children": [
+            {
+              "title": "中文内容保留"
+            },
+            {
+              "note": "AFTER ORIGINAL42"
+            },
+            {
+              "value": "42"
+            }
+          ]
+        }
+      }
+    },
+    "market": {
+      "xml": {
+        "file": "output/market-edited.xml",
+        "sizeBytes": 163,
+        "sha256": "ff092a25d33ed0502c82bada48fbf696fe82e974e4b37c3b7ad8ce98f36f5806",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project kind=\"market\">\r\n <title>市场内容保留</title>\r\n <note>AFTER MARKET42</note>\r\n <value>40</value>\r\n</project>\r\n",
+        "semantic": {
+          "root": "project",
+          "attributes": {
+            "kind": "market"
+          },
+          "children": [
+            {
+              "title": "市场内容保留"
+            },
+            {
+              "note": "AFTER MARKET42"
+            },
+            {
+              "value": "40"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "historicalRolesPreserved": {
+    "candidate-v35": 44,
+    "candidate-v36": 45,
+    "candidate-v37": 46,
+    "candidate-v38": 47
+  },
+  "signingKeysCredentialsAndFullPrivateCheckpointsCommitted": false,
+  "limitations": [
+    "Only two small UTF-8 Chinese-name, three-child XML inputs tested: tree view open, note text changed BEFORE to AFTER plus ASCII ORIGINAL42 or MARKET42, GUI Save As to ASCII XML paths, explicit new-process reading with Chinese title content preserved. Original input154/output167 bytes; independent market input152/output163 bytes. Inputs retain LF bytes; output CRLF and one-space indentation are actual application behavior. Raw bytes and exact XML root, kind attribute, child order/text independently checked. Synthetic XML does not count as an application.",
+    "No Core, global context, launcher environment/working directory, font, program, DLL or runtime repair. Both fresh installations showed the LGPLv2 notice and mode/display/welcome setup; normal manual acknowledgement, Expert user/predefined display and welcome close recorded. Five formal GUI processes used File/Quit exit0 and wineserver stop. Unattended startup and shortcuts beyond the observed file operations unverified.",
+    "Official fixed installer and source archive SHA-256 match separately downloaded official fixed checksum files. Fixed main.cpp declares LGPL-2.0-or-later; README mentions a special linking exception. Both installed COPYING files exactly match fixed source COPYING and LGPLV2 resource, zero newline normalization. Complete Qt, QwtPlot3D, Oxygen icons, all component licensing closure, PGP/Authenticode, exact built-in binary resource extraction and reproducible build unverified. Version0.9.18 pinned, not claimed latest.",
+    "XSD/schema validation, XSLT, split/compare, sessions, namespace/attribute editing, base64, graphical visualization, large/malformed XML, other encodings, direct Chinese keyboard input and advanced XML editor functions unverified.",
+    "Update and rollback submitted through Store IPC with verified pre-cache. GUI update/rollback buttons, guest network download, fresh-machine registration, migration, cross-version upgrade and enforced network isolation unverified.",
+    "Preservation covers every full Core task and Store SQLite row/field, all generation/config/trust/guard records, prior fixed acceptance data, both new generations55 installed program-file pins and new fixed input/output/config/registry pins. Not a traversal of all prior application filesystem data."
+  ]
+}

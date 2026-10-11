@@ -1,0 +1,82 @@
+
+QXmlEdit
+--------
+
+QXmlEdit is a simple XML editor based on qt libraries. Its main features are unusual data visualization modes,
+nice XML manipulation and presentation and it is multi platform. It can split very big XML files
+into fragments, and compare XML files. It is one of the few graphical Open Source XSD viewers.
+
+The XML editor widget is based on a library that can be imported and used in other applications.
+
+It is relased under GNU LGPL V2 license and requires Open Source edition of the Qt4 or Qt5 libraries.
+
+  * Hierarchical customizable view of XML elements.
+  * Fast XML hierarchy navigation.
+  * Split of big XML files.
+  * Search supporting XPath expressions.
+  * Base 64 data handling.
+  * Visualization styles.
+  * XML Schema (XSD) viewer.
+  * Columnar view.
+  * Sessions handling.
+  * Graphical XML file view.
+  * Map view of a XML document.
+  * Split and fragment extraction of big XML files.
+  * Visual compare of XML Schema files.
+  * Visual compare of XML files.
+  * XML Snippets.
+  * XSL specialized mode.
+  * Element display via user customizable rules.
+  * SCXML edit mode.
+
+Some icon files are licensed by oxygen project and covered by LGPL V3 (see http://www.oxygen-icons.org)
+A copy of the license is included. Source for icons can be obtained from site above, but a copy is included in images/svg
+source directory. All icons in this directory are by oxygen project. Images in 'images' directory are derived by oxygen,
+excluding mainIcons.icns, icon.png and icon.svg that are original work.
+QXmlEdit can be linked with QwtPlot3D library.
+
+Site and source code
+--------------------
+The project site is: qxmledit.org
+The source code link is currently:
+https://github.com/lbellonda/qxmledit
+
+Discussion group:
+-----------------
+http://groups.google.com/group/qxmledit-discuss
+
+Release tarballs and binary packages:
+-------------------------------------
+https://sourceforge.net/projects/qxmledit/files
+
+Requirements
+------------
+Qt libraries version 4.7.3 or higher are required.
+Qt 5 is supported.
+OpenGL can be required depending on a compile time switch.
+
+Limitations
+-----------
+Very limited support of DTD.
+
+License and notes on QwtPlot3D
+------------------------------
+QXmlEdit is released under LGPL V2, includes Oxygen icons and optionally can link
+with QwtPlot3D library. QwtPlot3D is not part of QXmlEdit and its source is
+included for convenience when compiling.
+QwtPlot3D comes with its own license (ZLib like) as specified in its files.
+You are free to link or not with QwtPlot3D by enabling a compile time switch
+as defined in the INSTALL file or to replace it.
+QwtPlot3D requires OpenGL.
+
+As a special exception, the copyright holders of QXmlEdit give you permission to combine
+QXmlEdit with free software programs or libraries that are released under the GNU LGPL
+and with code included in the standard release of QwtPlot3D (under the ZLib like license)
+or modified versions of such code, with unchanged license.
+You may copy and distribute such a system following the terms of the
+GNU LGPL for QXmlEdit and the licenses of the other code concerned.
+People who make modified versions of QXmlEdit are not obligated to grant this special
+exception for their modified versions; it is their choice whether to do so.
+The GNU Library General Public License gives permission to release a modified version
+without this exception; this exception also makes it possible to release a modified
+version which carries forward this exception.
