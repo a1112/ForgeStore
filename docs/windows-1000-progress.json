@@ -280,6 +280,19 @@
       "failureEvidence": "docs/evidence/2026-10-11-dbbrowser-failures.json",
       "fullDatabaseEditorAcceptance": false,
       "limitation": "Limited Chinese-filename SQLite opening, Save Database As to ASCII path, SQL UPDATE/INSERT SELECT/SELECT, Write Changes and explicit fresh-process reopen in original and independent market generations, with manual startup DPI warning acknowledgment; cached same-version update, exact rollback and normal Core/Store restart. DPI warning unresolved; full component/icon license closure, SQLCipher, advanced database features, direct Chinese input, network download, new-machine registration, migration and cross-version upgrades are unverified."
+    },
+    {
+      "id": "dosbox",
+      "version": "0.74-3",
+      "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e",
+      "sizeBytes": 1493703,
+      "evidence": "docs/evidence/windows-dosbox-20261011-corrected.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v30/tuf",
+      "publication": "docs/evidence/2026-10-11-dosbox-publication.json",
+      "report": "docs/windows-rolling-20261011-dosbox.md",
+      "failureEvidence": "docs/evidence/2026-10-11-dosbox-failures.json",
+      "fullEmulatorAcceptance": false,
+      "limitation": "Limited ASCII-directory mount, COPY, synthetic 16-bit DOS input-read/arithmetic/file-output program, result read and explicit fresh-process remount/read in original and independent market generations; cached same-version update, exact original rollback and normal Core/Store restart. Only small ASCII paths and synthetic programs; games, audio, non-ASCII input, full component license closure, network download, new-machine registration, migration and cross-version upgrades unverified."
     }
   ],
   "queue": [
@@ -452,12 +465,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "Select next unaccepted official fixed artifact. Preserve 28 completed applications and 12 existing blocked candidates. DB Browser SQLite has limited two-small-database GUI acceptance with manual DPI warning acknowledgment. Preserve full 212 Core/73 Store records and role 38 trust; older fixed-count scripts are historical.",
+  "next": "Select next unaccepted official fixed artifact. Preserve 29 completed applications and 12 existing blocked candidates. DOSBox has limited two-small-synthetic-DOS-program ASCII GUI acceptance; programs are test inputs, not separately counted. Preserve 219 Core/75 Store full records and role 39 trust. Older fixed-count helpers are historical.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-11",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 28,
+    "acceptedLocalMarket": 29,
     "explicitlyBlockedCandidates": 12,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -465,23 +478,23 @@
     "pendingCandidates": 12
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v29/tuf",
-    "metadataVersion": 38,
-    "catalogueEntries": 30,
-    "acceptedDistinctWindowsApps": 28,
+    "signedCatalogue": "catalogue/candidate-v30/tuf",
+    "metadataVersion": 39,
+    "catalogueEntries": 31,
+    "acceptedDistinctWindowsApps": 29,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-11-dbbrowser-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-11-dosbox-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-11-notepad2mod-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-11-dbbrowser-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-11-dbbrowser-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-11-dosbox-activation.json"
   },
-  "lastReviewEvidence": "docs/windows-rolling-20261011-dbbrowser.md",
+  "lastReviewEvidence": "docs/windows-rolling-20261011-dosbox.md",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-10-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-03-system-boot-capacity128.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261011-dbbrowser.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-dbbrowser-final-verification.json"
+  "latestAttemptEvidence": "docs/windows-rolling-20261011-dosbox.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-11-dosbox-final-verification.json"
 }

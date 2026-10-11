@@ -1,0 +1,30 @@
+{
+  "normalCoreStoreRestart": true,
+  "coreJobs": 219,
+  "storeRows": 75,
+  "allFullFieldsExactlyPreservedAcrossRestart": true,
+  "completePreRollbackCheckpointCompared": true,
+  "allPinnedAppInputsAndOutputsPreserved": true,
+  "rootVersion": 1,
+  "onlineVersion": 39,
+  "catalogueEntries": 31,
+  "selectedGenerationId": "gen-job-1791688839198-1",
+  "noScreenOffConfigurationPreserved": true,
+  "rollbackReopenJobId": "job-1791690053465-7",
+  "rollbackFreshProcessReopenObserved": true,
+  "trustResetOrDowngrade": false,
+  "postRollbackVerifierFailureAndResolution": {
+    "phase": "after rollback verification before subsequent GUI launch",
+    "reason": "Verifier incorrectly required all prior IPC summary IDs; actual service list_recent(64) evicts oldest summary on new job.",
+    "mutationAfterFailedCheck": false,
+    "fullPreRollbackCheckpointExists": true,
+    "allPriorFull218CoreAnd74StoreFieldsPreserved": true,
+    "actualPostRollbackCoreJobs": 218,
+    "actualPostRollbackStoreRows": 75,
+    "actualSnapshotLimit": 64,
+    "evictedSummaryId": "65010d6b-0778-4183-a15e-55a7dc440294",
+    "evictedRecordRetainedInFullRows": true,
+    "resolvedBy": "Compare every full SQLite row and intersecting summary fields, verify current summary ID set equals 64 greatest full-row sequences.",
+    "productCodeChanged": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "dosbox",
+  "productFailures": [],
+  "harnessFailures": [
+    {
+      "stage": "read-only installer archive inspection",
+      "detail": "7z was unavailable; 7zz and 7za were also unavailable. No listing or full bundle closure verification claimed. Fixed actual installer hash, PE and Nullsoft header, source license and installed COPYING were independently checked."
+    },
+    {
+      "stage": "host report source decode",
+      "detail": "Direct Python 3.9 reported non-UTF-8 before executing the report script. An ASCII runner strictly decoded the same original bytes as UTF-8 and compiled them successfully, then wrote records. Frozen source and receipt bytes were unchanged."
+    },
+    {
+      "stage": "host timestamp verification",
+      "detail": "Python 3.9 datetime.fromisoformat rejected nanosecond UTC Z timestamp strings. Verification stopped before staging or commit. Corrected only the host parser to compare UTC seconds and exact nanosecond integers; all nine checkpoint known-time comparisons then passed."
+    },
+    {
+      "stage": "default staged whitespace check",
+      "detail": "Before commit, git diff --cached --check treated exact CRLF in the two DOS-generated RESULT.TXT.bin evidence files as trailing whitespace and stopped. Added only scoped whitespace=cr-at-eol to this DOSBox binary-evidence attribute, retaining -text and all actual output bytes. Default staged check must pass before commit or push."
+    }
+  ],
+  "authenticationChanged": false,
+  "productCodeChanged": false,
+  "sourceDescriptionCorrection": {
+    "reason": "Original source description mistook JSON escaping for two literal backslashes; actual argument had one.",
+    "severity": "important evidence description",
+    "resolvedBeforeSigning": true,
+    "originalSource": "2026-10-11-dosbox-source.json",
+    "correctedSource": "2026-10-11-dosbox-source-corrected.json",
+    "marketUsesCorrectedAcceptanceReceipt": "windows-dosbox-20261011-corrected.acceptance.json",
+    "actualArgumentUtf8Hex": "2f443d433a5c444f53426f78",
+    "recipeChanged": false
+  },
+  "postRollbackVerifierFailureAndResolution": {
+    "phase": "after rollback verification before subsequent GUI launch",
+    "reason": "Verifier incorrectly required all prior IPC summary IDs; actual service list_recent(64) evicts oldest summary on new job.",
+    "mutationAfterFailedCheck": false,
+    "fullPreRollbackCheckpointExists": true,
+    "allPriorFull218CoreAnd74StoreFieldsPreserved": true,
+    "actualPostRollbackCoreJobs": 218,
+    "actualPostRollbackStoreRows": 75,
+    "actualSnapshotLimit": 64,
+    "evictedSummaryId": "65010d6b-0778-4183-a15e-55a7dc440294",
+    "evictedRecordRetainedInFullRows": true,
+    "resolvedBy": "Compare every full SQLite row and intersecting summary fields, verify current summary ID set equals 64 greatest full-row sequences.",
+    "productCodeChanged": false,
+    "actualError": "RuntimeError: generator raised StopIteration (missing old summary in the bounded IPC snapshot)"
+  }
+}

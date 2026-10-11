@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "dosbox",
+  "version": "0.74-3",
+  "officialDownloadPage": "https://www.dosbox.com/download.php?main=1",
+  "artifact": {
+    "fileName": "DOSBox0.74-3-win32-installer.exe",
+    "url": "https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/DOSBox0.74-3-win32-installer.exe",
+    "sizeBytes": 1493703,
+    "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e",
+    "officialSourceForgeSha256Matched": true,
+    "actualHttpsBytesMatched": true,
+    "nullsoftHeaderMatched": true
+  },
+  "sourceArchive": {
+    "url": "https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/dosbox-0.74-3.tar.gz",
+    "sizeBytes": 1326339,
+    "sha256": "c0d13dd7ed2ed363b68de615475781e891cd582e8162b5c3669137502222260a",
+    "officialSourceForgeSha256Matched": true
+  },
+  "fixedSourceMembers": {
+    "COPYING": {
+      "sizeBytes": 17992,
+      "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+    },
+    "README": {
+      "sizeBytes": 62740,
+      "sha256": "25f1fd57e3347f8fd48ddfd3e468aa4d2bf73138414edc698ba99b4cc0f1adae"
+    },
+    "configure.ac": {
+      "sizeBytes": 18331,
+      "sha256": "1f0d353dd7f2e574633755e9d786a6c541d17008fe3489dbeb13eb6393916776"
+    },
+    "src/dosbox.cpp": {
+      "sizeBytes": 30280,
+      "sha256": "e77e0cbc5c14158984fa77a33a19495640280d2a8f3ec6528bb5619f4e41941b"
+    }
+  },
+  "mainProgramLicense": "GPL-2.0-or-later",
+  "mainLicenseBasis": "Fixed source src/dosbox.cpp explicitly declares version 2 or any later version; COPYING is GPL version 2.",
+  "bundleLicenseClosureVerified": false,
+  "authenticodeVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerArchiveListingVerified": false,
+  "inspectorFailures": [
+    "7z unavailable",
+    "7zz/7za unavailable"
+  ],
+  "installed": true,
+  "guiAccepted": true,
+  "published": false,
+  "officialHome": "https://www.dosbox.com/",
+  "license": "GPL-2.0-or-later",
+  "countsAsCompleted": false,
+  "actualGuiVersion": "DOSBox 0.74-3; welcome and window title",
+  "installedLauncher": {
+    "relativeFile": "DOSBox/DOSBox.exe",
+    "sizeBytes": 3745792,
+    "sha256": "dcfd46fa521f5ce89dce3bf026056f3a1d15533f80321ee887403e30d7949f5e",
+    "architecture": "x86"
+  },
+  "installedLicense": {
+    "relativeFile": "DOSBox/Documentation/COPYING.txt",
+    "sizeBytes": 18332,
+    "sha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e",
+    "rawByteMatchesFixedSource": false,
+    "crLfNormalizedMatchesFixedSource": true
+  },
+  "installedArgumentObservation": "Literal NSIS /D argument contains two backslashes after C:; installer normalized it to drive_c/DOSBox. Frozen definition and digest preserved as observed."
+}

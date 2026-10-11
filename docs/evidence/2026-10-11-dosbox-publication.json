@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "dosbox",
+  "version": "0.74-3",
+  "published": true,
+  "countsAsCompleted": true,
+  "acceptedScope": "Limited ASCII-directory mount, COPY, synthetic 16-bit DOS input-read/arithmetic/file-output program, result read and explicit fresh-process remount/read in original and independent market generations; cached same-version update, exact original rollback and normal Core/Store restart.",
+  "fullEmulatorAcceptance": false,
+  "unattendedLaunchVerified": false,
+  "bundleLicenseClosureVerified": false,
+  "signedCatalogue": "catalogue/candidate-v30/tuf",
+  "trustedRootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "metadataVersions": {
+    "targets": 39,
+    "snapshot": 39,
+    "timestamp": 39
+  },
+  "catalogueEntries": 31,
+  "acceptedDistinctWindowsApplications": 29,
+  "excludedFixtures": 2,
+  "coreJobCount": 219,
+  "storeRowCount": 75,
+  "acceptanceReceipt": "windows-dosbox-20261011-corrected.acceptance.json",
+  "acceptanceReceiptSha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50",
+  "sourceEvidence": "2026-10-11-dosbox-source-corrected.json",
+  "sourceEvidenceSha256": "24f033762f6094ce56e445a9de37d3733386e4abe4156928b3630b49b81a6c67",
+  "originalFrozenAcceptanceReceipt": "windows-dosbox-20261011.acceptance.json",
+  "originalFrozenAcceptanceReceiptSha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d",
+  "originalFrozenSource": "2026-10-11-dosbox-source.json",
+  "originalFrozenSourceSha256": "2efbb083dbfc1c819d1803bf9dc3f6cbb6123dca9647ca9e0f299e184613588e",
+  "originalFreezeTagsRetained": true,
+  "originalArgumentDescriptionCorrectedSeparately": true,
+  "actualArgumentUtf8Hex": "2f443d433a5c444f53426f78",
+  "actualArgumentLengthBytes": 12,
+  "recipeChanged": false,
+  "activationEvidence": "2026-10-11-dosbox-activation.json",
+  "marketGuiEvidence": "2026-10-11-dosbox-market-gui.json",
+  "runtimeRecoveryEvidence": "2026-10-11-dosbox-runtime-recovery.json",
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-dosbox-20261011-corrected.acceptance.json#dosbox",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e",
+        "size": 1493703,
+        "target": "DOSBox0.74-3-win32-installer.exe",
+        "url": "https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/DOSBox0.74-3-win32-installer.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "dosbox"
+    },
+    "id": "dosbox",
+    "license": "GPL-2.0-or-later",
+    "name": {
+      "en": "DOSBox",
+      "zhCN": "DOSBox"
+    },
+    "origin": "https://www.dosbox.com/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "DOSBox Team",
+    "summary": {
+      "en": "Small ASCII-folder mount, COPY, synthetic 16-bit DOS arithmetic/file program, result read and fresh-process reopen tested; games, audio and non-ASCII workflows unverified.",
+      "zhCN": "小型 ASCII 目录挂载、复制、16 位 DOS 计算与文件读写、新进程重开已测；游戏、音频及非 ASCII 流程未验收"
+    },
+    "version": "0.74-3"
+  },
+  "installed": {
+    "appId": "dosbox",
+    "backend": "compatforge",
+    "canRollback": true,
+    "version": "0.74-3"
+  },
+  "selectedOriginalGeneration": "gen-job-1791688839198-1",
+  "marketVersionLicenseTestedEvidenceAndLimitsVisiblyObserved": true,
+  "marketInstalledRowAndRollbackControlVisiblyObserved": true,
+  "storeUpdateAndRollbackSubmittedViaIpc": true,
+  "marketLifecycleComplete": true,
+  "storeJobs": {
+    "update": {
+      "action": "update",
+      "appId": "dosbox",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "52feed5e-8e37-40e3-99d7-55fedc0e2b18",
+      "state": "succeeded"
+    },
+    "rollback": {
+      "action": "rollback",
+      "appId": "dosbox",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "b75b1a56-59de-4607-9084-076b69000fa4",
+      "state": "succeeded"
+    }
+  },
+  "coreJobs": [
+    {
+      "applicationId": "dosbox",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 48890,
+          "requestId": "job-1791690053465-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 27562,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791688839198-1/prefix",
+          "requestId": "job-1791690053465-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 27604,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791690053465-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791688839198-1",
+      "id": "job-1791690053465-7",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dosbox",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 48220,
+          "requestId": "job-1791689958146-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 25639,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791689893592-4/prefix",
+          "requestId": "job-1791689958146-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 25682,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791689958146-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791689893592-4",
+      "id": "job-1791689958146-6",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dosbox",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 48011,
+          "requestId": "job-1791689907662-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 46956,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791689893592-4/prefix",
+          "requestId": "job-1791689907662-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 46999,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791689907662-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791689893592-4",
+      "id": "job-1791689907662-5",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    {
+      "applicationId": "dosbox",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 47733,
+          "requestId": "job-1791689893592-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4523,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791689893592-4/prefix",
+          "requestId": "job-1791689893592-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4566,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791689893592-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791689893592-4",
+      "id": "job-1791689893592-4",
+      "kind": "install",
+      "status": "succeeded"
+    }
+  ],
+  "full219CoreAnd75StoreFieldsPreservedAcrossRestart": true,
+  "fullInitial212CoreAnd73StoreFieldsPreserved": true,
+  "complete218CoreAnd74StorePreRollbackCheckpointCompared": true,
+  "fullCheckpointMatchAfterMarketGuiClosed": true,
+  "latestKnownTime": "2026-10-11T03:41:31.636516985Z",
+  "privateFullCheckpoint": "dosbox-20261011/after-restart.json",
+  "privateCheckpointReviewArchiveSha256": "620213a7c863e8236b52eb17ef7df24d26eaec2f0ca7368347714eeb69c7ed91",
+  "actualPrivateCheckpointPhases": [
+    "before",
+    "after-install",
+    "after-original-gui",
+    "before-market",
+    "after-activation",
+    "before-rollback",
+    "after-rollback",
+    "before-restart",
+    "after-restart"
+  ],
+  "readOnlyCurrentStateHelper": "L:/project/FOS/.transfer/rolling-current-state-dosbox-20261011.py",
+  "priorSignedHistoriesPreserved": true,
+  "trustResetOrDowngradePerformed": false,
+  "publicationEvidenceSeparate": true,
+  "screenshotsAndOutputs": {
+    "after-rollback-reopened.jpg": {
+      "sha256": "8cb119aab761486bd779593cacd4f86bddeccdfb997dbae623bd0305fb596613",
+      "sizeBytes": 209129
+    },
+    "market-COPIED.BIN.bin": {
+      "sha256": "74909dc88d930f4b1bfe472f5b4d4b2b8d07b5fd983f8b08ae3341ff2529af35",
+      "sizeBytes": 2
+    },
+    "market-executed.jpg": {
+      "sha256": "317da325db437df42976a2744fd5ed5c9ae94ce286c04d78632dc281113915c0",
+      "sizeBytes": 176191
+    },
+    "market-INPUT.BIN.bin": {
+      "sha256": "74909dc88d930f4b1bfe472f5b4d4b2b8d07b5fd983f8b08ae3341ff2529af35",
+      "sizeBytes": 2
+    },
+    "market-mounted.jpg": {
+      "sha256": "a980bc3a2dc36a10dcb207afaf6a071590340f057af57d92fde267b5dd420b6e",
+      "sizeBytes": 203702
+    },
+    "market-reopened.jpg": {
+      "sha256": "266ebb4dd813b4d86cac117f9a57f6b2936cecd78575b1658f5fd76d61d13884",
+      "sizeBytes": 208810
+    },
+    "market-RESULT.TXT.bin": {
+      "sha256": "c296561f457eda82c42685bb9c5a40003158c64223f8000360da1d8d42a1f65f",
+      "sizeBytes": 30
+    },
+    "market-startup.jpg": {
+      "sha256": "07ae0a5b5b8ecc609ab4c7f527bdea0cff64b8c99dd9c0fe9d6576ea8318daad",
+      "sizeBytes": 195743
+    },
+    "market-VERIFY.COM.bin": {
+      "sha256": "3ffe25dc7e2ec80b5c1c082ba844e4985e60a9e85105926f414d3f5339f7fa72",
+      "sizeBytes": 179
+    },
+    "original-COPIED.BIN.bin": {
+      "sha256": "845865ec5b63c2631b312794ee205454cdbffb2d12c0be5ec3c4c0a2919fc500",
+      "sizeBytes": 2
+    },
+    "original-executed.jpg": {
+      "sha256": "8c33fe72e17e50552715aa07b4f4b18c103fe463a4af61c1cf352b7fdbc1b506",
+      "sizeBytes": 176915
+    },
+    "original-INPUT.BIN.bin": {
+      "sha256": "845865ec5b63c2631b312794ee205454cdbffb2d12c0be5ec3c4c0a2919fc500",
+      "sizeBytes": 2
+    },
+    "original-mounted.jpg": {
+      "sha256": "8835c649ccd902856c6ebe621209fe494413414e6e97f238974c26a5f18b5695",
+      "sizeBytes": 203759
+    },
+    "original-reopened.jpg": {
+      "sha256": "8abbc6e0462b779163f36ff6e503084385bab3b8f7948ad4f477877efd9f6330",
+      "sizeBytes": 209266
+    },
+    "original-RESULT.TXT.bin": {
+      "sha256": "c88bfb8f2a4d706b49081bf8faf9c5a9c1548fe246f13a95adf61f989e1cf01b",
+      "sizeBytes": 32
+    },
+    "original-startup.jpg": {
+      "sha256": "a77fe156a1afe11fc911d9b7fb6f1822875f5c535f8e3ba628401db691d693d1",
+      "sizeBytes": 195820
+    },
+    "original-VERIFY.COM.bin": {
+      "sha256": "fc8e662cec8850b3001dbb1a51dd794db91331f7d2318ae844ee48b1a9ad9c75",
+      "sizeBytes": 181
+    },
+    "store-details.jpg": {
+      "sha256": "bcabc65c5b8c387a65c865ce2e8ccecc6545da31988ffb54c385ef0c8ba108c7",
+      "sizeBytes": 141035
+    },
+    "store-installed.jpg": {
+      "sha256": "931c582050c11aff3823fee30dc0d42a1cb913db5f9c286d757433490e92eae3",
+      "sizeBytes": 162425
+    }
+  },
+  "signedCatalogueFiles": {
+    "metadata/1.root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    },
+    "metadata/39.snapshot.json": {
+      "sha256": "10064c9cbc998cdfdfe3fc950fb3d495b1c18b3de4f6fc68e80a67210c061322",
+      "sizeBytes": 997
+    },
+    "metadata/39.targets.json": {
+      "sha256": "7089fada74dfefcdafb67a1f73cf92d9b43ab389036862c139ed61b2375d8474",
+      "sizeBytes": 12808
+    },
+    "metadata/timestamp.json": {
+      "sha256": "980632301c2df562deed8500192c19a89de228aa69c1e7c6c32e044ed8ad6213",
+      "sizeBytes": 997
+    },
+    "targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1",
+      "sizeBytes": 4879
+    },
+    "targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb",
+      "sizeBytes": 9031
+    },
+    "targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+      "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d",
+      "sizeBytes": 5624
+    },
+    "targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f",
+      "sizeBytes": 5280
+    },
+    "targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66",
+      "sizeBytes": 21857
+    },
+    "targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd",
+      "sizeBytes": 7918
+    },
+    "targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710",
+      "sizeBytes": 1676
+    },
+    "targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238",
+      "sizeBytes": 2738
+    },
+    "targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b",
+      "sizeBytes": 7617
+    },
+    "targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67",
+      "sizeBytes": 1699
+    },
+    "targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573",
+      "sizeBytes": 10640
+    },
+    "targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf",
+      "sizeBytes": 1617
+    },
+    "targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f",
+      "sizeBytes": 12679
+    },
+    "targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27",
+      "sizeBytes": 1652
+    },
+    "targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20",
+      "sizeBytes": 9285
+    },
+    "targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038",
+      "sizeBytes": 1146
+    },
+    "targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d",
+      "sizeBytes": 4783
+    },
+    "targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7",
+      "sizeBytes": 6220
+    },
+    "targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac",
+      "sizeBytes": 4223
+    },
+    "targets/8c0b85964d02fa216cb6efbb3061524789143f796ab35b81c511110df911d106.catalogue.json": {
+      "sha256": "8c0b85964d02fa216cb6efbb3061524789143f796ab35b81c511110df911d106",
+      "sizeBytes": 24372
+    },
+    "targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55",
+      "sizeBytes": 4642
+    },
+    "targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4",
+      "sizeBytes": 11228
+    },
+    "targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4",
+      "sizeBytes": 1656
+    },
+    "targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+      "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50",
+      "sizeBytes": 6445
+    },
+    "targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6",
+      "sizeBytes": 6071
+    },
+    "targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a",
+      "sizeBytes": 10745
+    },
+    "targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11",
+      "sizeBytes": 6075
+    },
+    "targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264",
+      "sizeBytes": 4586
+    },
+    "targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185",
+      "sizeBytes": 9388
+    },
+    "targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a",
+      "sizeBytes": 3517
+    },
+    "trusted-root.json": {
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+      "sizeBytes": 2145
+    }
+  },
+  "verifiedTufClientDownload": {
+    "client": "tuftool 0.17",
+    "trustedRootExplicitlyProvided": true,
+    "unsafeOrExpiryBypassFlagsUsed": false,
+    "targets": [
+      "catalogue.json",
+      "windows-dosbox-20261011-corrected.acceptance.json",
+      "DOSBox0.74-3-win32-installer.exe"
+    ]
+  },
+  "authenticationChanged": false,
+  "ubuntuCountsChanged": false,
+  "sourceProviderV2NotDeployedOrGuiAccepted": true,
+  "productCodeChanged": false,
+  "syntheticComProgramsCountedAsApplications": false,
+  "limits": [
+    "Only DOSBox 0.74-3 Windows x86 on Wine 11.14 win64, one small ASCII-path directory and a synthetic 181-byte DOS COM program are covered by this frozen original proof.",
+    "The synthetic program is a test input, not an independently accepted application. It reads two bytes with DOS int21, adds them in emulated CPU, converts to decimal with AAM, prints and writes a 32-byte result. GUI COPY creates a separate two-byte copy. Verification helpers only read outputs.",
+    "Directory mount, file copy, DOS program execution, result read, normal exit and explicit fresh-process remount/read were actually performed through the DOSBox window.",
+    "Chinese paths/input, non-ASCII DOS encodings, full-screen DOSBox mode, audio, joystick, graphics games, CD images, network, hardware compatibility, larger DOS programs and complete emulator acceptance are unverified.",
+    "Fixed main source declares GPL-2.0-or-later. Installed COPYING matches fixed source only after CRLF-to-LF normalization. Full SDL/SDL_net/zmbv and other bundled component license closure is unverified.",
+    "Installer archive listing, Authenticode, reproducible build, guest online download, new-machine registration, configuration migration and cross-version upgrades are unverified.",
+    "Independent market generation repeated mount, COPY, a separately assembled DOS file/arithmetic program using operands 40 and 2, result read, normal exit and explicit fresh-process remount/read. Cached same-version update, exact original-generation rollback and normal Core/Store restart passed; Store IPC was used, not GUI update/rollback buttons.",
+    "The original source description mistook JSON escaping for two actual backslashes. A separate corrected source and acceptance receipt state the actual single backslash, 12-byte argument and full UTF-8 hex; original frozen bytes are retained. Actual recipe and installation were unchanged."
+  ],
+  "finalVerificationEvidence": "2026-10-11-dosbox-final-verification.json",
+  "independentReviewEvidence": "2026-10-11-dosbox-review.json"
+}

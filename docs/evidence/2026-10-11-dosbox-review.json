@@ -1,0 +1,133 @@
+{
+  "independentFinalReview": "passed",
+  "critical": [],
+  "important": [],
+  "minor": [],
+  "resolvedHistoricalImportant": "The original source description wrongly said two actual backslashes. Independent byte inspection found one. Separate corrected source and receipt were reviewed before role 39 signing; original source, original receipt, recipe and all GUI evidence bytes remained unchanged.",
+  "rsaPssSha256SignaturesVerified": [
+    "targets",
+    "snapshot",
+    "timestamp",
+    "root"
+  ],
+  "privateSignedTargetsVerified": 60,
+  "oldNonCatalogueTargetPinsPreserved": 56,
+  "publicSignedFilesVerified": 35,
+  "actualScreenshotsAndBinaryFilesVerified": 19,
+  "frozenFileCount": 58,
+  "actualPrivateCheckpoints": [
+    "before",
+    "after-install",
+    "after-original-gui",
+    "before-market",
+    "after-activation",
+    "before-rollback",
+    "after-rollback",
+    "before-restart",
+    "after-restart"
+  ],
+  "phaseCounts": [
+    [
+      212,
+      73
+    ],
+    [
+      213,
+      73
+    ],
+    [
+      214,
+      73
+    ],
+    [
+      215,
+      73
+    ],
+    [
+      215,
+      73
+    ],
+    [
+      218,
+      74
+    ],
+    [
+      218,
+      75
+    ],
+    [
+      219,
+      75
+    ],
+    [
+      219,
+      75
+    ]
+  ],
+  "preRollbackCompleteFullFields": "218 Core/74 Store preserved after exact original rollback at 218/75",
+  "normalRestartCompleteFullFields": "219 Core/75 Store exact",
+  "recentSummaryLimit": 64,
+  "fullHistoryEvictedRecordPreserved": true,
+  "actualComSemanticTraces": {
+    "original": [
+      "open input",
+      "read input 1515",
+      "close",
+      "print",
+      "create result",
+      "write result",
+      "close"
+    ],
+    "market": [
+      "open input",
+      "read input 2802",
+      "close",
+      "print",
+      "create result",
+      "write result",
+      "close"
+    ]
+  },
+  "latestKnownTimeMonotonicExactNanoseconds": true,
+  "freshGuestSnapshotAndPriorAppDataVerified": true,
+  "windowsDistinct": 29,
+  "prior28AndBlocked12Preserved": true,
+  "productCodeChanged": false,
+  "checkCount": 1125,
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "dosbox",
+  "result": "passed-no-blocking-or-important-issues",
+  "reviewer": "Independent read-only review_dosbox_evidence agent",
+  "metadataDigestChainVerified": true,
+  "trustedRootBytesPreserved": true,
+  "originalFrozenSourceAndReceiptBytesPreserved": true,
+  "correctedSourceAndReceiptFrozenSeparately": true,
+  "marketUsesCorrectedReceipt": true,
+  "mainProgramLicense": "GPL-2.0-or-later",
+  "installedLicenseRawByteIdentical": false,
+  "installedLicenseCrLfNormalizationMatched": true,
+  "fullBundleLicenseClosureVerified": false,
+  "fullEmulatorAcceptance": false,
+  "reviewDidNotPerformInstallGuiSigningOrPublicationMutations": true,
+  "limitsAccuratelyDisclosed": [
+    "Only two small ASCII directory and synthetic DOS arithmetic/file workflows were actually tested.",
+    "Synthetic COM fixtures are not independent accepted applications.",
+    "Games, audio, Chinese paths/input, large programs, CD/network/hardware and full emulator compatibility are unverified.",
+    "Only the main GPL declaration and installed COPYING normalization were verified; full bundled component closure is unverified.",
+    "Cached same-version Store IPC update/rollback were tested, not GUI buttons or guest online download, migration or cross-version upgrades."
+  ],
+  "harnessFailureDisclosure": "Post-rollback snapshot-summary check failure stopped subsequent GUI/restart. Complete pre-rollback checkpoint exists; full SQLite history was preserved. Corrected verifier compares full rows and actual 64-entry window before proceeding.",
+  "preCommitFollowup": {
+    "independentStagedAttributeReview": "passed",
+    "critical": [],
+    "important": [],
+    "minor": [],
+    "defaultCachedWhitespaceCheckPassed": true,
+    "all58WorktreeAndIndexBlobsMatchedExpectedPins": true,
+    "actualDosResultCrLfBytesRetained": true,
+    "onlyTwoScopedAttributeAdditionsAgainstBaseline": true,
+    "failureRecordStagedAndRetained": true,
+    "headRemainsBaseline": true
+  }
+}

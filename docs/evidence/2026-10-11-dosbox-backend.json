@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "applicationId": "dosbox",
+  "version": "0.74-3",
+  "fixture": {
+    "generationId": "gen-job-1791688839198-1",
+    "inputs": {
+      "INPUT.BIN": {
+        "sizeBytes": 2,
+        "sha256": "845865ec5b63c2631b312794ee205454cdbffb2d12c0be5ec3c4c0a2919fc500"
+      },
+      "VERIFY.COM": {
+        "sizeBytes": 181,
+        "sha256": "fc8e662cec8850b3001dbb1a51dd794db91331f7d2318ae844ee48b1a9ad9c75"
+      }
+    },
+    "expectedResult": "ForgeOS DOSBox original sum=42\r\n",
+    "fixtureProgramPurpose": "Read two bytes using DOS int21, add at emulated runtime, decimal-convert with AAM, print and write RESULT.TXT, close and exit. Synthetic program is input, not an accepted independent application.",
+    "installedCopyingCrLfNormalizedMatchesFixedSource": true,
+    "outputsAbsentBeforeGui": true
+  },
+  "savedOutputs": {
+    "COPIED.BIN": {
+      "sizeBytes": 2,
+      "sha256": "845865ec5b63c2631b312794ee205454cdbffb2d12c0be5ec3c4c0a2919fc500",
+      "hex": "1515"
+    },
+    "RESULT.TXT": {
+      "sizeBytes": 32,
+      "sha256": "c88bfb8f2a4d706b49081bf8faf9c5a9c1548fe246f13a95adf61f989e1cf01b",
+      "hex": "466f7267654f5320444f53426f78206f726967696e616c2073756d3d34320d0a"
+    }
+  },
+  "inputsUnchanged": true,
+  "explicitFreshProcessOutputReopenObserved": true,
+  "coreJobs": 215,
+  "storeRows": 73,
+  "oldFullFieldsPreserved": true,
+  "installedLicenseRawByteMatchesFixedSource": false,
+  "installedLicenseCrLfNormalizedMatchesFixedSource": true,
+  "startupWarningObserved": false,
+  "productCodeChanged": false,
+  "marketLifecyclePending": true,
+  "generation": {
+    "bottleId": "gen-job-1791688839198-1",
+    "createdAtMilliseconds": 1791688839204,
+    "definition": {
+      "bottleId": "gui-dosbox",
+      "category": "games",
+      "compatibilityRating": "unknown",
+      "id": "dosbox",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\DOSBox"
+        ],
+        "fileName": "DOSBox0.74-3-win32-installer.exe",
+        "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e"
+      },
+      "launchers": [
+        {
+          "executable": "DOSBox/DOSBox.exe",
+          "id": "main",
+          "name": "DOSBox"
+        }
+      ],
+      "name": "DOSBox",
+      "publisher": "DOSBox Team",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "0.74-3"
+    },
+    "definitionDigest": "sha256:e4eaa0079ab076affeb0a957457e810e15a6aaf40a32ca14cfd1d4bf93e4ec7d",
+    "id": "gen-job-1791688839198-1",
+    "launcherDigests": {
+      "main": "sha256:dcfd46fa521f5ce89dce3bf026056f3a1d15533f80321ee887403e30d7949f5e"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791688851463
+  },
+  "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+  "jobs": {
+    "install": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 45962,
+          "requestId": "job-1791688839198-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4564,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791688839198-1/prefix",
+          "requestId": "job-1791688839198-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4606,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791688839198-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791688839198-1",
+      "id": "job-1791688839198-1",
+      "kind": "install",
+      "status": "succeeded"
+    },
+    "launch": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 46376,
+          "requestId": "job-1791688974407-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 92301,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791688839198-1/prefix",
+          "requestId": "job-1791688974407-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 92343,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791688974407-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791688839198-1",
+      "id": "job-1791688974407-2",
+      "kind": "launch",
+      "status": "succeeded"
+    },
+    "reopen": {
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 46708,
+          "requestId": "job-1791689098853-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 30057,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791688839198-1/prefix",
+          "requestId": "job-1791689098853-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 30099,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791689098853-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791688839198-1",
+      "id": "job-1791689098853-3",
+      "kind": "launch",
+      "status": "succeeded"
+    }
+  },
+  "screenshots": {
+    "original-executed.jpg": {
+      "sizeBytes": 176915,
+      "sha256": "8c33fe72e17e50552715aa07b4f4b18c103fe463a4af61c1cf352b7fdbc1b506"
+    },
+    "original-mounted.jpg": {
+      "sizeBytes": 203759,
+      "sha256": "8835c649ccd902856c6ebe621209fe494413414e6e97f238974c26a5f18b5695"
+    },
+    "original-reopened.jpg": {
+      "sizeBytes": 209266,
+      "sha256": "8abbc6e0462b779163f36ff6e503084385bab3b8f7948ad4f477877efd9f6330"
+    },
+    "original-startup.jpg": {
+      "sizeBytes": 195820,
+      "sha256": "a77fe156a1afe11fc911d9b7fb6f1822875f5c535f8e3ba628401db691d693d1"
+    }
+  },
+  "limits": [
+    "Only DOSBox 0.74-3 Windows x86 on Wine 11.14 win64, one small ASCII-path directory and a synthetic 181-byte DOS COM program are covered by this frozen original proof.",
+    "The synthetic program is a test input, not an independently accepted application. It reads two bytes with DOS int21, adds them in emulated CPU, converts to decimal with AAM, prints and writes a 32-byte result. GUI COPY creates a separate two-byte copy. Verification helpers only read outputs.",
+    "Directory mount, file copy, DOS program execution, result read, normal exit and explicit fresh-process remount/read were actually performed through the DOSBox window.",
+    "Chinese paths/input, non-ASCII DOS encodings, full-screen DOSBox mode, audio, joystick, graphics games, CD images, network, hardware compatibility, larger DOS programs and complete emulator acceptance are unverified.",
+    "Fixed main source declares GPL-2.0-or-later. Installed COPYING matches fixed source only after CRLF-to-LF normalization. Full SDL/SDL_net/zmbv and other bundled component license closure is unverified.",
+    "Installer archive listing, Authenticode, reproducible build, guest online download, new-machine registration, configuration migration and cross-version upgrades are unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal Core/Store restart were pending when the original proof was frozen."
+  ],
+  "guiWorkflowPassed": true,
+  "published": false,
+  "countsAsCompleted": false
+}

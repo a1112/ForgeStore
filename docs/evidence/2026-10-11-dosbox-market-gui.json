@@ -1,0 +1,118 @@
+{
+  "generationId": "gen-job-1791689893592-4",
+  "fixture": {
+    "generationId": "gen-job-1791689893592-4",
+    "inputs": {
+      "INPUT.BIN": {
+        "sizeBytes": 2,
+        "sha256": "74909dc88d930f4b1bfe472f5b4d4b2b8d07b5fd983f8b08ae3341ff2529af35"
+      },
+      "VERIFY.COM": {
+        "sizeBytes": 179,
+        "sha256": "3ffe25dc7e2ec80b5c1c082ba844e4985e60a9e85105926f414d3f5339f7fa72"
+      }
+    },
+    "expectedResult": "ForgeOS DOSBox market sum=42\r\n",
+    "outputsAbsentBeforeGui": true,
+    "syntheticFixtureOnly": true,
+    "inputOperands": [
+      40,
+      2
+    ]
+  },
+  "savedOutputs": {
+    "COPIED.BIN": {
+      "sizeBytes": 2,
+      "sha256": "74909dc88d930f4b1bfe472f5b4d4b2b8d07b5fd983f8b08ae3341ff2529af35",
+      "hex": "2802"
+    },
+    "RESULT.TXT": {
+      "sizeBytes": 30,
+      "sha256": "c296561f457eda82c42685bb9c5a40003158c64223f8000360da1d8d42a1f65f",
+      "hex": "466f7267654f5320444f53426f78206d61726b65742073756d3d34320d0a"
+    }
+  },
+  "inputsUnchanged": true,
+  "explicitFreshProcessOutputReopenObserved": true,
+  "coreJobs": 218,
+  "storeRows": 74,
+  "checkpointSavedAndReadBack": true,
+  "oldFullFieldsPreserved": true,
+  "marketInstall": {
+    "schemaVersion": 1,
+    "date": "2026-10-11",
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "dosbox",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "52feed5e-8e37-40e3-99d7-55fedc0e2b18",
+      "state": "succeeded"
+    },
+    "coreInstallJobId": "job-1791689893592-4",
+    "originalGenerationId": "gen-job-1791688839198-1",
+    "generationId": "gen-job-1791689893592-4",
+    "newGenerationDistinct": true,
+    "oldFullFieldsPreserved": true,
+    "fixture": {
+      "generationId": "gen-job-1791689893592-4",
+      "inputs": {
+        "INPUT.BIN": {
+          "sizeBytes": 2,
+          "sha256": "74909dc88d930f4b1bfe472f5b4d4b2b8d07b5fd983f8b08ae3341ff2529af35"
+        },
+        "VERIFY.COM": {
+          "sizeBytes": 179,
+          "sha256": "3ffe25dc7e2ec80b5c1c082ba844e4985e60a9e85105926f414d3f5339f7fa72"
+        }
+      },
+      "expectedResult": "ForgeOS DOSBox market sum=42\r\n",
+      "outputsAbsentBeforeGui": true,
+      "syntheticFixtureOnly": true,
+      "inputOperands": [
+        40,
+        2
+      ]
+    },
+    "guiJobId": "job-1791689907662-5",
+    "guiStatus": "running"
+  },
+  "rollback": {
+    "exactOriginalGenerationRestored": true,
+    "completePreRollbackCheckpointCompared": true,
+    "oldFullFieldsPreserved": true,
+    "coreJobs": 218,
+    "storeRows": 75,
+    "rollbackStoreJob": {
+      "action": "rollback",
+      "appId": "dosbox",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "b75b1a56-59de-4607-9084-076b69000fa4",
+      "state": "succeeded"
+    },
+    "guiJobId": "job-1791690053465-7",
+    "guiStatus": "running",
+    "boundedMarketSnapshotLimit": 64,
+    "evictedSnapshotIdsRetainedInFullHistory": [
+      "65010d6b-0778-4183-a15e-55a7dc440294"
+    ],
+    "priorPostRollbackHelperFailureResolved": true
+  },
+  "storeUpdateEnqueueMethod": "ForgeStore IPC; GUI action buttons were not activated",
+  "complete218CoreAnd74StorePreRollbackComparison": true,
+  "postRollbackVerifierFailureAndResolution": {
+    "phase": "after rollback verification before subsequent GUI launch",
+    "reason": "Verifier incorrectly required all prior IPC summary IDs; actual service list_recent(64) evicts oldest summary on new job.",
+    "mutationAfterFailedCheck": false,
+    "fullPreRollbackCheckpointExists": true,
+    "allPriorFull218CoreAnd74StoreFieldsPreserved": true,
+    "actualPostRollbackCoreJobs": 218,
+    "actualPostRollbackStoreRows": 75,
+    "actualSnapshotLimit": 64,
+    "evictedSummaryId": "65010d6b-0778-4183-a15e-55a7dc440294",
+    "evictedRecordRetainedInFullRows": true,
+    "resolvedBy": "Compare every full SQLite row and intersecting summary fields, verify current summary ID set equals 64 greatest full-row sequences.",
+    "productCodeChanged": false
+  }
+}

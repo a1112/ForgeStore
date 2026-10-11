@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 39,
+  "catalogueEntries": 31,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "originalCoreJobsPreserved": true,
+  "coreJobs": 215,
+  "fullStoreRowsPreserved": true,
+  "storeRows": 73,
+  "previousInstalledAndEntriesPreserved": true,
+  "dosboxEntry": {
+    "compatibility": {
+      "evidence": "windows-dosbox-20261011-corrected.acceptance.json#dosbox",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e",
+        "size": 1493703,
+        "target": "DOSBox0.74-3-win32-installer.exe",
+        "url": "https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/DOSBox0.74-3-win32-installer.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "dosbox"
+    },
+    "id": "dosbox",
+    "license": "GPL-2.0-or-later",
+    "name": {
+      "en": "DOSBox",
+      "zhCN": "DOSBox"
+    },
+    "origin": "https://www.dosbox.com/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "DOSBox Team",
+    "summary": {
+      "en": "Small ASCII-folder mount, COPY, synthetic 16-bit DOS arithmetic/file program, result read and fresh-process reopen tested; games, audio and non-ASCII workflows unverified.",
+      "zhCN": "小型 ASCII 目录挂载、复制、16 位 DOS 计算与文件读写、新进程重开已测；游戏、音频及非 ASCII 流程未验收"
+    },
+    "version": "0.74-3"
+  },
+  "dosboxInstalled": {
+    "appId": "dosbox",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "0.74-3"
+  },
+  "serviceGuardsPreserved": true,
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "signedCatalogue": "catalogue/candidate-v30/tuf",
+  "historicalPhase": "Activation before independent market GUI lifecycle"
+}
