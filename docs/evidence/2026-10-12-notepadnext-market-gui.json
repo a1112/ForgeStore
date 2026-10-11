@@ -1,0 +1,696 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791750996124-5",
+    "createdAtMilliseconds": 1791750996129,
+    "definition": {
+      "bottleId": "gui-notepadnext",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "notepadnext",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/CURRENTUSER",
+          "/D=C:\\NotepadNext"
+        ],
+        "fileName": "NotepadNext-v0.15-Installer.exe",
+        "sha256": "e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e"
+      },
+      "launchers": [
+        {
+          "executable": "NotepadNext/NotepadNext.exe",
+          "id": "main",
+          "name": "Notepad Next"
+        }
+      ],
+      "name": "Notepad Next",
+      "publisher": "Justin Dailey",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "0.15"
+    },
+    "definitionDigest": "sha256:6d65a7e7352c7d59587444dd47ce33a5f02ef6294025a302bef54aba6e1b0ce6",
+    "id": "gen-job-1791750996124-5",
+    "launcherDigests": {
+      "main": "sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791751009904
+  },
+  "definition": {
+    "bottleId": "gui-notepadnext",
+    "category": "development",
+    "compatibilityRating": "unknown",
+    "id": "notepadnext",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/CURRENTUSER",
+        "/D=C:\\NotepadNext"
+      ],
+      "fileName": "NotepadNext-v0.15-Installer.exe",
+      "sha256": "e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e"
+    },
+    "launchers": [
+      {
+        "executable": "NotepadNext/NotepadNext.exe",
+        "id": "main",
+        "name": "Notepad Next"
+      }
+    ],
+    "name": "Notepad Next",
+    "publisher": "Justin Dailey",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "0.15"
+  },
+  "installedFiles": {
+    "uninstall.exe": {
+      "sizeBytes": 177468,
+      "sha256": "f8c2ce81c31dbf72396d9f60f299fa014046e1fd70f7fc114d852ae5e7d21058"
+    },
+    "Qt6Network.dll": {
+      "sizeBytes": 1373328,
+      "sha256": "0b033bb04dd40520faec7d9e4b45a0e7a58d92c302af1d50869b4baef88dea75"
+    },
+    "Qt6Widgets.dll": {
+      "sizeBytes": 6026384,
+      "sha256": "ddce26294eaadd430b9f25f2eaa37a2155e9947882382cc3ed148fa25322c52a"
+    },
+    "Qt6Core.dll": {
+      "sizeBytes": 5793424,
+      "sha256": "697026ff2b482df169794bd7b17a41fb47d87a518730588c668045e1f21a53da"
+    },
+    "libssl-1_1-x64.dll": {
+      "sizeBytes": 644096,
+      "sha256": "36ac1d72044cfacc4c1e85d380ee6ba0976d4d7aa23068f0b7f204214a942995"
+    },
+    "Qt6Gui.dll": {
+      "sizeBytes": 8071824,
+      "sha256": "8b56854670882cbf1423929ffe64f22357ce2414ecfe8a6bf041efa8a2408bd1"
+    },
+    "Qt6Svg.dll": {
+      "sizeBytes": 364688,
+      "sha256": "9834aa2cf53bef574b50dd597b283d8d83ab6825646811ce6fe9a3140d27dd6f"
+    },
+    "Qt6Core5Compat.dll": {
+      "sizeBytes": 833680,
+      "sha256": "04470d258268cf4effed25dbccd28152825cfad26aff206cd31348e552c8572b"
+    },
+    "Qt6PrintSupport.dll": {
+      "sizeBytes": 393872,
+      "sha256": "65da81a5ad32cc6e64e5d206c3000923a34de850ffb1a1634ea6fac138d621f1"
+    },
+    "libcrypto-1_1-x64.dll": {
+      "sizeBytes": 2704896,
+      "sha256": "b1f985116f7c8be9b022f35213ce1f48b2c640ab2dd0d080a80dbaa42437b25a"
+    },
+    "LICENSE": {
+      "sizeBytes": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    },
+    "NotepadNext.exe": {
+      "sizeBytes": 4784128,
+      "sha256": "7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f"
+    },
+    "styles/qwindowsvistastyle.dll": {
+      "sizeBytes": 142992,
+      "sha256": "075a645475142e4a055d32a7f166a3f6f23960a6e24d34eb97369cfffd79e73e"
+    },
+    "iconengines/qsvgicon.dll": {
+      "sizeBytes": 64144,
+      "sha256": "0bb95ad1752da9a3c224357d09c2272c80c1fe9498561671b86b3ddd86e8316f"
+    },
+    "tls/qschannelbackend.dll": {
+      "sizeBytes": 218256,
+      "sha256": "c50489fed60f86fc78e4df2dc55492bedf881a1cb2430b6615af6a28d17f67ed"
+    },
+    "tls/qopensslbackend.dll": {
+      "sizeBytes": 305808,
+      "sha256": "ac34cfece276d051aa879efb49d350cae71328029bd89518b38d32572557c53a"
+    },
+    "tls/qcertonlybackend.dll": {
+      "sizeBytes": 98960,
+      "sha256": "882fd8e18629221c0c6d2e105607cee116434ff025530da8ec9fc83ab0ca9afd"
+    },
+    "platforms/qwindows.dll": {
+      "sizeBytes": 850576,
+      "sha256": "7e273516ab2f0778b8f2f645a854f8ed5535bf712755e94e114c29cd8fa9b7c9"
+    },
+    "generic/qtuiotouchplugin.dll": {
+      "sizeBytes": 95888,
+      "sha256": "f5621f3dbf2ad8144a71b31b81f11da0e334e12532f8c2b6f847597ac15fdf1c"
+    },
+    "networkinformation/qnetworklistmanager.dll": {
+      "sizeBytes": 70800,
+      "sha256": "d60b3c0548a8a2aa5db3987a564465dfb793b6fc358cd0b26562aaef3610cee6"
+    },
+    "imageformats/qjpeg.dll": {
+      "sizeBytes": 620176,
+      "sha256": "3c8eb893442e20623980aed846bfbef5bed0b95a964ef7bdf427d9e36a827c97"
+    },
+    "imageformats/qico.dll": {
+      "sizeBytes": 47248,
+      "sha256": "8acd3c981f4059a0e40622776c98001b0a1b98d80534ccc4d4ab3eb5ea9259e5"
+    },
+    "imageformats/qgif.dll": {
+      "sizeBytes": 48784,
+      "sha256": "b5fb4c3f97f45c9c451f571c497a3451acf6783724e1f0569149be8679c3ba82"
+    },
+    "imageformats/qsvg.dll": {
+      "sizeBytes": 40080,
+      "sha256": "afc7959d919a8e829d8e995bc14a6b9a394ffe5856ba0de1906e88a19f06bec4"
+    }
+  },
+  "save": {
+    "generationId": "gen-job-1791750996124-5",
+    "inputRelativePath": "NotepadNextTests/市场原稿.txt",
+    "inputPin": {
+      "sizeBytes": 87,
+      "sha256": "c48e4d3d393ca3b46007f48cf0bf7f99ce62c8ea82491d5f67face5786aef1f6"
+    },
+    "outputRelativePath": "NotepadNextTests/market-result.txt",
+    "outputPin": {
+      "sizeBytes": 96,
+      "sha256": "eb9b6a6cb1e3260d7ec6c22f5edb0ad9bb275aa5621f07d0006f82cea480505a"
+    },
+    "inputUnchanged": true,
+    "outputUtf8": "ForgeOS Notepad Next market fixture\r\n中文内容保留\r\nSTATUS=AFTER\r\nVALUE=40+2\r\nMARKET42\r\n",
+    "byteContentVerified": true,
+    "encoding": "UTF-8 BOM/CRLF"
+  },
+  "guiJobs": [
+    {
+      "applicationId": "notepadnext",
+      "createdAtMilliseconds": 1791751018649,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 180530,
+          "requestId": "job-1791751018649-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 84444,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix",
+          "requestId": "job-1791751018649-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 84487,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791751018649-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791750996124-5",
+      "id": "job-1791751018649-6",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 2504448,
+        "fileDigest": "sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f",
+        "fileSizeBytes": 4784128,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "kernel32.dll",
+          "msvcp140.dll",
+          "qt6core.dll",
+          "qt6core5compat.dll",
+          "qt6gui.dll",
+          "qt6network.dll",
+          "qt6printsupport.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 2559488,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 2559223,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 1913344,
+            "readable": true,
+            "virtualAddress": 2564096,
+            "virtualSize": 1912874,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 63488,
+            "readable": true,
+            "virtualAddress": 4481024,
+            "virtualSize": 75784,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 102400,
+            "readable": true,
+            "virtualAddress": 4558848,
+            "virtualSize": 102048,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 112640,
+            "readable": true,
+            "virtualAddress": 4661248,
+            "virtualSize": 112432,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 31744,
+            "readable": true,
+            "virtualAddress": 4775936,
+            "virtualSize": 31468,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791750996124-5",
+          "digest": "sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "NotepadNext.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix/drive_c/NotepadNext/NotepadNext.exe",
+          "sizeBytes": 4784128,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix/drive_c/NotepadNext/NotepadNext.exe",
+            "C:\\NotepadNextTests\\市场原稿.txt"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5"
+        },
+        "requestId": "job-1791751018649-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791751105357
+    },
+    {
+      "applicationId": "notepadnext",
+      "createdAtMilliseconds": 1791751113964,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 180908,
+          "requestId": "job-1791751113964-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 42490,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix",
+          "requestId": "job-1791751113964-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 42533,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791751113964-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791750996124-5",
+      "id": "job-1791751113964-7",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 2504448,
+        "fileDigest": "sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f",
+        "fileSizeBytes": 4784128,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "kernel32.dll",
+          "msvcp140.dll",
+          "qt6core.dll",
+          "qt6core5compat.dll",
+          "qt6gui.dll",
+          "qt6network.dll",
+          "qt6printsupport.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 2559488,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 2559223,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 1913344,
+            "readable": true,
+            "virtualAddress": 2564096,
+            "virtualSize": 1912874,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 63488,
+            "readable": true,
+            "virtualAddress": 4481024,
+            "virtualSize": 75784,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 102400,
+            "readable": true,
+            "virtualAddress": 4558848,
+            "virtualSize": 102048,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 112640,
+            "readable": true,
+            "virtualAddress": 4661248,
+            "virtualSize": 112432,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 31744,
+            "readable": true,
+            "virtualAddress": 4775936,
+            "virtualSize": 31468,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791750996124-5",
+          "digest": "sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "NotepadNext.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix/drive_c/NotepadNext/NotepadNext.exe",
+          "sizeBytes": 4784128,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix/drive_c/NotepadNext/NotepadNext.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791750996124-5"
+        },
+        "requestId": "job-1791751113964-7",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791751158461
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3423303,
+      "sha256": "1f7ec5fbc50c8a8d83e4ce7039875ba227bf7e56e41e55bddc5e2f9e52176c76"
+    },
+    "user.reg": {
+      "sizeBytes": 103371,
+      "sha256": "056d21dba26d57eb369742b68001092503d0885cd820f61882fe9bd40e224ad0"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "f4cec9807546623d2e67fd92f9f2e2927300757f7cdc04efed1fbe3a0b609dbd"
+    }
+  },
+  "fixedDataPins": {
+    "NotepadNextTests/市场原稿.txt": {
+      "sizeBytes": 87,
+      "sha256": "c48e4d3d393ca3b46007f48cf0bf7f99ce62c8ea82491d5f67face5786aef1f6"
+    },
+    "NotepadNextTests/market-result.txt": {
+      "sizeBytes": 96,
+      "sha256": "eb9b6a6cb1e3260d7ec6c22f5edb0ad9bb275aa5621f07d0006f82cea480505a"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Roaming/NotepadNext/NotepadNext.ini": {
+      "sizeBytes": 2030,
+      "sha256": "c315b0e453f64ddc533d14187d8ecb0cf0d9d35ce2779476446e3cd0535bce9a"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "scope": "Small Chinese-name UTF-8 BOM/CRLF text replacement, ASCII append, GUI Save As and explicit new-process reopen",
+  "advancedEditingVerified": false,
+  "unattendedStartupVerified": false,
+  "checkpoint": {
+    "file": "before-rollback.json",
+    "sha256": "4a568c2cf3dacd833d0aab642e03f6cbf2962eb171f38669dc08f214d672c15c",
+    "coreJobs": 367,
+    "fullStoreRows": 111
+  },
+  "screenshots": {
+    "11-market-open.jpg": {
+      "sizeBytes": 95940,
+      "sha256": "440b982d9f7ec1b993a21116925f5b8f226f30a32b25bd2036e2e2591c034972"
+    },
+    "12-market-saved.jpg": {
+      "sizeBytes": 98010,
+      "sha256": "99edf16293c6f8ac6d87ec014c606c8ef038986fa28c1d7c433d5bc331e576d6"
+    },
+    "13-market-reopened.jpg": {
+      "sizeBytes": 97718,
+      "sha256": "7053d93bc55cc6753d5e67217f5e92225de4a2375c4b6c170103f25b38108883"
+    },
+    "14-rollback-original-reopened.jpg": {
+      "sizeBytes": 97442,
+      "sha256": "4d4ddb2f200a47acdb470669b1297f0e5935441bc47ecc4bb6cdd3876aaf6787"
+    }
+  },
+  "allInstalledFilesCrossGenerationByteEqual": true,
+  "fixtureOnlyNotApplication": true
+}

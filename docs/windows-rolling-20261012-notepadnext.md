@@ -1,0 +1,17 @@
+# Notepad Next 0.15 Windows 有限文本验收（2026-10-12）
+
+新增1款，累计47/1000；13项未解决候选保持。Ubuntu Kate/Snap计算器两款独立记账不变，Flatpak仍未安装，本轮未切换VM。日期亚洲/上海，实际客体UTC保留。合成文本不另计应用。
+
+官方固定安装包NotepadNext-v0.15-Installer.exe，10904664字节SHA-256 e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e，匹配官方固定expanded-assets公开digest；API403保留，不称API公开大小核验或最新。固定v0.15源码6221142字节SHA-2561ea6bf01862b545d58a6400369e0815d80bed07c11931d804985d1bd49f11249，仅本地摘要。已授权keyring只读公开tag ref核实commit fc4c807cf2b755b37d40de27cf29a5268c7c2fc5，响应单独固定。12源码成员原字节保存；最初误选lexilla测试x.iss不当安装脚本，后补真实installer/installer.nsi及MultiUser源码，不重写初记录。主程序main.cppGPL-3.0-or-later，完整Qt/Scintilla/Lexilla/uchardet/图标等捆绑许可闭包、Authenticode/PGP/源码二进制对应及可复现构建未核。
+
+原生NSIS /CURRENTUSER /S和最后/D=C:后一个反斜杠再NotepadNext，17UTF8字节hex2f443d433a5c4e6f74657061644e657874。安装脚本默认可选组件保留，不能据此称无文件关联/更新器/后台联网或完整无人值守。24程序文件跨代次全部同字节；exe4784128字节SHA-2567a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f。安装LICENSE35823字节SHA230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809，674处CRLF归一化后与源码LICENSE35149字节同文，原字节不同。GUI About实际v0.15。无Core/程序/全局context/launcher环境/工作目录/字体包/DLL/runtime修复。
+
+正式原代次gen-job-1791750101890-1、独立市场gen-job-1791750996124-5，定义摘要sha256:6d65a7e7352c7d59587444dd47ce33a5f02ef6294025a302bef54aba6e1b0ce6。两个中文名小型UTF8BOM/CRLF正式输入90/87字节，普通STATUS=BEFORE→AFTER替换、ASCII ORIGINAL42/MARKET42追加、GUI File/Save As到ASCII路径、新正式进程显式Open输出101/96字节，中文内容和完整字节匹配，两份正式输入原字节保持。回滚后原新正式进程显式加载原输出。五次正式File/Exit退出0+wineserver停止。仅两个小文本流程：大型文件/其他编码、正则/语法、宏/脚本/插件、workspace/多文档/复杂搜索、打印及全部高级编辑、直接中文键盘输入、联网下载、新机注册、迁移/跨版本/无人值守未验收。Store更新回滚按钮GUI未验收。
+
+candidate-v51/root1/在线targets snapshot timestamp60，49目录项=47应用+2内部夹具，100实际签名目标/56公共文件。旧root、97旧非catalogue目标pins及所有签名历史保持。Store IPC预缓存同版本更新和精确原代次回滚成功，回滚前367Core/111Store完整CP先保存读回，回滚后367/112旧全部字段和代次保持；最后原GUI后368/112正常Core/Store重启前后全部字段精确同，服务PID变化，固定程序摘要、防护、不自动息屏配置和认证锁屏保持。私有完整CP notepadnext-20261012/after-restart.json SHA-2562693bfc3c7820ac916cf69d900353fb35ba6af798ee60dfddf7ca0f85ebd7924。只读rolling-current-state-notepadnext-20261012.py必须经已有严格SSH在客体执行，不关闭主机密钥校验。核对只覆盖固定验收数据、本轮24程序文件/有限config/registry，不称全部应用文件系统遍历；最近64IPC摘要不替代全部SQLite历史。
+
+失败保留：安装首helper错误要求目录参数16字节，在upsert之前断言停止，没有新应用/任务；新v2正确17字节后安装一次。最早诊断误用CtrlShiftS，实际Save All使活动原稿90→101字节而没有另存输出；正常退出后原诊断修改文件和私有备份保留，不计GUI通过。另创建不同中文名正式输入后重做，不回写或伪造诊断输入不变。正式Find助手首次焦点未确认，仍搜ForgeOS导致错误内存替换；截图06保留、Undo后原文恢复，明确点Find/Replace字段核对后再正确替换和保存。原因未确立，不称程序快捷键缺陷或修复。首次安装LICENSE原字节等同断言失败，未建before-marketCP或执行签名；只读诊断CRLF后新v2实际核验通过。缺失历史模板只读读取失败无客体依赖变更。
+
+第三原GUI正常退出后system.reg/user.reg原字节变化，大小3423303/103371不变，旧严格pins失败即停重启和新CP；独立只读核实全部程序/文本/市场/既有固定数据不变，保存真实前后原文和{'system.reg': 287, 'user.reg': 20}行私有差分，新实际pins通过才保存读回完整CP并正常重启。原因未定，不称旧原字节跨第三GUI保持；当前pins跨restart同。原37source/gui/receipt和市场待执行阶段标签原字节保持，后续完成单记。重启助手继承两条MkvToolNix命名false标签，原结果保持，later-observations明确更正其范围并给出Notepad Next完整/高级验收false，未修改历史或重复重启。所有依赖逐步实际assert，false/缺assert/非终态/CP失败即停，不只exit0、不补造历史。
+
+1743旧immutable和37原冻结保持。私钥/密码/凭据/登录画面/完整私有CP不入库。独立审查、真实index/commit字节审计、普通推送另记，不以审查代替客体GUI或私有CP独立重演。

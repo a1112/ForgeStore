@@ -479,6 +479,17 @@
       "signedCatalogue": "catalogue/candidate-v50/tuf",
       "publication": "docs/evidence/2026-10-12-mkvtoolnix-publication.json",
       "limitation": "Only two100ms mono PCM16 WAV GUI mux/title/ASCII destination, new-process reopen and Info tool with all1600PCM bytes exact. Store IPC cached update/exact rollback/normal restart passed. Fixed GPLv2 declaration; exact or-later scope and full bundle license closure unverified. Actual online update notice means no offline/background-network absence claim. Broad media codecs/video/advanced features/playback/Chinese keyboard/network download/new-machine/migration/cross-version/unattended unverified. Third original registry changed, private actual backups/diffs and current pins held. Synthetic fixtures excluded."
+    },
+    {
+      "id": "notepadnext",
+      "version": "0.15",
+      "sha256": "e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e",
+      "sizeBytes": 10904664,
+      "license": "GPL-3.0-or-later",
+      "evidence": "docs/evidence/windows-notepadnext-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v51/tuf",
+      "publication": "docs/evidence/2026-10-12-notepadnext-publication.json",
+      "limitation": "Two small Chinese-name UTF-8 BOM/CRLF texts, normal replacement, ASCII append, GUI Save As to ASCII paths, explicit new-process reopen, independent market generation and Store IPC cached update/exact rollback/normal restart only. Diagnostic Save All changed its active input and is excluded; two fresh formal inputs remain unchanged. Installed LICENSE raw differs, identical after674CRLF normalization. Advanced features, direct Chinese input, full bundle license closure, networking, new-machine/migration/cross-version and unattended unverified. Actual third-GUI registry byte changes and strict-pin stop preserved."
     }
   ],
   "queue": [
@@ -672,12 +683,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "46/1000 finite Windows acceptance;13 unresolved including BowPad. MKVToolNix94.0 two small PCM WAV to Matroska audio mux/title/fresh-process reopen/Info tool only. candidate-v50/root1/role59;360 full Core tasks/110 full Store rows. Strict guest rolling-current-state-mkvtoolnix-20261012.py. Preserve old frozen bytes/trust/history and actual third-GUI registry changes. Independent review/index/commit audit and ordinary push pending at publication freeze.",
+  "next": "47/1000 finite Windows acceptance;13 unresolved including BowPad. Notepad Next0.15 small UTF8BOM/CRLF text workflow only. candidate-v51/root1/role60;368 fullCore/112 fullStore. Strict guest rolling-current-state-notepadnext-20261012.py. Preserve frozen bytes/trust/history, original SaveAll and focus/argument/license failures and actual third-GUI registry changes. Review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 46,
+    "acceptedLocalMarket": 47,
     "explicitlyBlockedCandidates": 13,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -685,25 +696,25 @@
     "pendingCandidates": 13
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v50/tuf",
-    "metadataVersion": 59,
-    "catalogueEntries": 48,
-    "acceptedDistinctWindowsApps": 46,
+    "signedCatalogue": "catalogue/candidate-v51/tuf",
+    "metadataVersion": 60,
+    "catalogueEntries": 49,
+    "acceptedDistinctWindowsApps": 47,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-mkvtoolnix-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-notepadnext-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-librecad-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-mkvtoolnix-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-mkvtoolnix-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-notepadnext-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-mkvtoolnix-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-notepadnext-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-qxmledit-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-mkvtoolnix.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-mkvtoolnix-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-notepadnext.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-notepadnext-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

@@ -1,0 +1,24 @@
+{
+  "firstStageFailedAndNoCommit": true,
+  "firstIndexAll1853BytesMatched": true,
+  "failureEvidence": "2026-10-12-notepadnext-first-stage-failure.json",
+  "exactPathRules": {
+    "docs/evidence/2026-10-12-notepadnext/expanded-assets.html": "cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-notepadnext/source/.github/workflows/build.yml": "cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-notepadnext/source/installer/NsisMultiUser/Include/NsisMultiUser.nsh": "cr-at-eol,-space-before-tab",
+    "docs/evidence/2026-10-12-notepadnext/source/installer/installer.nsi": "cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-notepadnext/source/installer/utils.nsh": "cr-at-eol,-blank-at-eol"
+  },
+  "fixedUpstreamRawBytesUnchanged": true,
+  "firstReviewReportAndFreezeRawBytesPreserved": true,
+  "originalReviewPreStageScopeUnchanged": true,
+  "firstFreezeRepresentsFailedStage": true,
+  "newIncrementalReviewAndStagePending": true,
+  "privateAutomationVerifierHostQuoteFailureRetained": {
+    "failedAttempt": "Host PowerShell -c embedded quote parsing failed before Python compilation",
+    "failureType": "SyntaxError unexpected EOF while parsing",
+    "dependentOperationsExecuted": false,
+    "automationChanged": false,
+    "controlledCorrection": "Use saved Python builder with exact replacements and successful compile"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "environment": "Original isolated ForgeOS v12 x86_64 VM, Wine 11.14, Core managed-MSI-v10. Audacity maintenance branch 3.7.9 used the supported managed Inno PE installer path. Existing authorized login used; authentication unchanged.",
+  "applications": [
+    {
+      "id": "audacity",
+      "version": "3.7.9",
+      "sha256": "e3096847ac4270d304e9b112d153642a72b66b42e13f83a32f06eecfb4ce7e48",
+      "size": 19943880,
+      "installJobId": "job-1790987450702-4",
+      "generationId": "gen-job-1790987450702-4",
+      "definitionDigest": "sha256:a6c37b76d718f2e378818dacbb678148e8e4e75bf93885bad4ccb366ec4406c5",
+      "launcherSha256": "300a173a11ebed0d5786e5d5ed984bd812e6e9b944c58c9ae97233e52dbed33f",
+      "launchJobId": "job-1790987612870-5",
+      "reopenJobId": "job-1790988541262-6",
+      "guiFileOperation": "passed",
+      "workflow": "GUI generate 440 Hz sine at amplitude 0.25 for 3 seconds; save audacity-original.aup3 locally; export 44100 Hz mono signed 16-bit PCM audacity-original.wav; observe playback cursor/output meter; normal exit, fresh managed process explicitly opens original AUP3, normal exit. SQLite integrity and sampleblocks verified; 132300 WAV frames, frequency 440 Hz and 0.25 amplitude verified. Reopened output bytes unchanged.",
+      "outputVerification": {
+        "applicationId": "audacity",
+        "version": "3.7.9",
+        "generationId": "gen-job-1790987450702-4",
+        "guiJobId": "job-1790987612870-5",
+        "jobStatus": "succeeded",
+        "files": {
+          "audacity-original.wav": {
+            "sizeBytes": 264644,
+            "sha256": "500091313aeeadcf3fbbe09fbebafc1fd3490ac0936dc730ff06e939ed65e1c2"
+          },
+          "audacity-original.aup3": {
+            "sizeBytes": 851968,
+            "sha256": "82ef153d720a1d880167eea0b80a39c06c9844df808b288308ce11a4921b911a"
+          }
+        },
+        "sqliteIntegrity": "ok",
+        "sqliteTables": [
+          "autosave",
+          "project",
+          "sampleblocks",
+          "sqlite_sequence"
+        ],
+        "sampleBlocks": 1,
+        "wav": {
+          "channels": 1,
+          "sampleWidthBytes": 2,
+          "sampleRate": 44100,
+          "frames": 132300,
+          "compression": "NONE"
+        },
+        "audioAnalysis": {
+          "durationSeconds": 3,
+          "expectedToneHz": 440,
+          "positiveCrossingFrequencyHz": 440.0,
+          "peakNormalized": 0.250213623046875,
+          "rmsNormalized": 0.17677670060662604,
+          "tone440Amplitude": 0.24999999218722294,
+          "physicalAudioOutputHeard": false,
+          "recordingTested": false
+        },
+        "installedNotices": {
+          "LICENSE.txt": {
+            "sizeBytes": 73540,
+            "sha256": "1580ffb4a0c6bbb716324c645682964120eae418b9a1c51842cda140343cb139"
+          }
+        }
+      },
+      "screenshots": {
+        "2026-10-03-audacity-379-playback.jpg": "d0447244b8b453ed2212ab8ad6dd1621bb873759892f43cbdd4f3901619f5410",
+        "2026-10-03-audacity-379-project-reopened.jpg": "62d5f6aaab050a5d342d0053834f8be8ebd0b3a3d06dd75d151c14fec5350866",
+        "2026-10-03-audacity-379-project-saved.jpg": "6e4d63b03aa47abbc49a9e854f045104b47989ef29e3640d5b1cc1dab6edd4f0",
+        "2026-10-03-audacity-379-tone-parameters.jpg": "298fdae6a4b432fbee6609899229ee5d03ff3b9a55b71f5f0593702c1e422744",
+        "2026-10-03-audacity-379-tone-waveform.jpg": "00206d751f09ca6d1681ea83edaa995b225541fc69eb1d8b0dae4148d8b100c0",
+        "2026-10-03-audacity-379-wav-export-parameters.jpg": "9b097ffa656fb5ca76799d06a7c71c9fa4c6574f1c8b8e6efbe71c5b09067409"
+      },
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+    }
+  ],
+  "licenseEvidence": {
+    "applicationId": "audacity",
+    "version": "3.7.9",
+    "tag": "Audacity-3.7.9",
+    "releaseUrl": "https://github.com/audacity/audacity/releases/tag/Audacity-3.7.9",
+    "publishedAt": "2026-09-01T15:05:46Z",
+    "prerelease": false,
+    "artifact": {
+      "fileName": "audacity-win-3.7.9-64bit.exe",
+      "sourceUrl": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-win-3.7.9-64bit.exe",
+      "sizeBytes": 19943880,
+      "sha256": "e3096847ac4270d304e9b112d153642a72b66b42e13f83a32f06eecfb4ce7e48",
+      "publishedGitHubAssetDigestMatched": true,
+      "observedInstallerKind": "inno"
+    },
+    "license": {
+      "fixedUrl": "https://raw.githubusercontent.com/audacity/audacity/Audacity-3.7.9/LICENSE.txt",
+      "sizeBytes": 73540,
+      "sha256": "1580ffb4a0c6bbb716324c645682964120eae418b9a1c51842cda140343cb139",
+      "declaredApplicationLicense": "GPLv3",
+      "componentLicensesApply": true,
+      "spdx": "GPL-3.0-only",
+      "basis": "Fixed tag LICENSE.txt explicitly releases the application under GPL version 3; source-file alternatives and documentation/component licenses remain applicable. Installed LICENSE.txt is byte-identical to this fixed reference.",
+      "completeComponentSourceAudit": false
+    },
+    "authenticodeVerified": false,
+    "reproducibleBuildVerified": false
+  },
+  "limits": [
+    "Physical audio output was not independently heard. Playback progress and output meter were observed; recording and audio device input remain unverified.",
+    "Acceptance covers sine tone generation, local AUP3 save, WAV export and explicit AUP3 load in a fresh managed process only. Cloud upload, plugins, effects, multitrack editing and advanced formats unverified.",
+    "Audacity 4.0.0 first-launch GUI failure remains unresolved and retained. Version 3.7.9 is the only accepted version; versions count as one application ID.",
+    "The fixed official installer SHA-256 matches the published GitHub asset digest. Authenticode, reproducible build and complete component-source audit unverified.",
+    "Local market activation/update/rollback/restart validation follows this original receipt. Guest online download, fresh-machine recipe registration, cross-version upgrade and remote installer redistribution unverified."
+  ]
+}

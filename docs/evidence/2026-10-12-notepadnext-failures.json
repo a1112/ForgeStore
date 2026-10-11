@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-12",
+  "applicationId": "notepadnext",
+  "api": [
+    {
+      "step": "release-api",
+      "error": "HTTP Error 403: rate limit exceeded"
+    }
+  ],
+  "sourceSelection": "Original selected .iss is a Lexilla test fixture, not application installer; actual installer is fixed NSIS script.",
+  "parameterHelper": {
+    "failure": "Pre-install parameter-length assert expected 16, actual decoded argument is 17 UTF-8 bytes. Stopped before applications.upsert/jobs.submit.",
+    "originalHelperSha256": "ce1521ccad7e2ab02aab778f9f23cd7d8a98157372d015999abc24709cc0c710",
+    "correctedHelperSha256": "0e86588b21ec6291a1160171124f31d5d44973eb00586b9a4192a718f63e0a39",
+    "actualArgumentUtf8Hex": "2f443d433a5c4e6f74657061644e657874",
+    "actualArgumentUtf8Bytes": 17,
+    "rawOldHelperPreserved": true
+  },
+  "saveAllDiagnostic": {
+    "passedDiagnostic": true,
+    "generationId": "gen-job-1791750101890-1",
+    "initialInputPin": {
+      "file": "drive_c/NotepadNextTests/原稿.txt",
+      "sizeBytes": 90,
+      "sha256": "a070507982d88aa0329446d6fb0e4d84fa3688466d6980a29d6c93d14a7a56ff"
+    },
+    "actualInputPin": {
+      "sizeBytes": 101,
+      "sha256": "61ab86cf74f35b6577d12f828eacc2b3e753a829e0a4a5c5157b10d85fa1095d"
+    },
+    "actualInputUtf8": "ForgeOS Notepad Next original fixture\r\n中文内容保留\r\nSTATUS=AFTER\r\nVALUE=21+21\r\nORIGINAL42\r\n",
+    "outputAbsent": true,
+    "initialProcessAccepted": false,
+    "cause": "Operator used Ctrl+Shift+S, actual menu maps Save All; Save As is Ctrl+Alt+S. Original active input changed, no input-unchanged claim."
+  },
+  "findDialogFocus": "Wrong field content replaced ForgeOS; screenshot06 preserved, normal Undo restored original before correct replacement and no disk write. Cause of focus transition not established.",
+  "licenseGate": {
+    "sourceRawExpectedSha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "actualPin": {
+      "sizeBytes": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809"
+    },
+    "installedCRLFPairs": 674,
+    "normalizedSha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "normalizedSizeBytes": 35149,
+    "failure": "Initial original-final license raw-size/SHA assertion stopped before before-market checkpoint; no signature or market mutation."
+  },
+  "missingReadOnlyTemplates": [
+    "mkvtoolnix-source-fetch-v2-20261012.py",
+    "texworks-build-lifecycle-tools-20261011.py"
+  ],
+  "allPriorFailuresAndEvidencePreserved": true
+}

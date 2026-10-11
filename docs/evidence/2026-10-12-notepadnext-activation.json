@@ -1,0 +1,54 @@
+{
+  "activated": true,
+  "metadataVersion": 60,
+  "rootVersion": 1,
+  "entries": 49,
+  "coreJobs": 364,
+  "fullStoreRows": 110,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-notepadnext-20261012.acceptance.json#notepadnext",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e",
+        "size": 10904664,
+        "target": "NotepadNext-v0.15-Installer.exe",
+        "url": "https://github.com/dail8859/NotepadNext/releases/download/v0.15/NotepadNext-v0.15-Installer.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "notepadnext"
+    },
+    "id": "notepadnext",
+    "license": "GPL-3.0-or-later",
+    "name": {
+      "en": "Notepad Next",
+      "zhCN": "Notepad Next 文本编辑器"
+    },
+    "origin": "https://github.com/dail8859/NotepadNext",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Justin Dailey",
+    "summary": {
+      "en": "Limited small UTF-8 BOM/CRLF text replacement, ASCII append, Save As and explicit new-process reopen tested.",
+      "zhCN": "仅小型 UTF-8 BOM/CRLF 文本替换、ASCII 追加、另存和新进程重开通过"
+    },
+    "version": "0.15"
+  },
+  "installed": {
+    "appId": "notepadnext",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "0.15"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "70b1c9bac215809b6518efaf5c07835817ef24bcb5ec5c2eaee10db0c1748e75",
+    "coreJobs": 364,
+    "fullStoreRows": 110
+  },
+  "independentMarketGenerationPending": true
+}

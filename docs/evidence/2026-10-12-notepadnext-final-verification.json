@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "phase": "before-independent-review-and-git-stage",
+  "finiteGuiAndIndependentMarketLifecyclePassed": true,
+  "currentStateVerified": {
+    "verified": true,
+    "coreJobs": 368,
+    "fullStoreRows": 112,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "root": 1,
+      "timestamp": 60,
+      "targets": 60,
+      "snapshot": 60
+    },
+    "latestKnownTime": "2026-10-11T20:41:32.952038648Z",
+    "selectedNotepadNextGeneration": "gen-job-1791750101890-1",
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "checkpoint": {
+      "file": "notepadnext-20261012/after-restart.json",
+      "sha256": "2693bfc3c7820ac916cf69d900353fb35ba6af798ee60dfddf7ca0f85ebd7924"
+    }
+  },
+  "oldImmutableFilesMatched": 1743,
+  "newOriginalFrozenFilesMatched": 37,
+  "signedMetadataPackAtSigningStage": {
+    "metadataVersion": 60,
+    "rootVersion": 1,
+    "entries": 49,
+    "actualTargets": 100,
+    "files": 56,
+    "archiveSha256": "575fd96b5a97e2bce90f8552d8acf65ad584bec921dd8f9cb3fab022c18d892c",
+    "receiptSha256": "0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d",
+    "allOldSignedTargetPinsPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true
+  },
+  "publicationSha256": "36254e7a3e19a35a7a4b29ddc0bea7dfa2fbd66c31d6f8bf6d65a7e0d22b011f",
+  "independentReviewPendingAtFreeze": true,
+  "gitIndexAndCommitAuditPendingAtFreeze": true,
+  "remotePushPendingAtFreeze": true
+}

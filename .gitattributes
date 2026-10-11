@@ -210,3 +210,17 @@ docs/windows-rolling-20261012-mkvtoolnix.md -text whitespace=cr-at-eol
 # Exact paths preserve fixed upstream whitespace after actual stage failure.
 docs/evidence/2026-10-12-mkvtoolnix/source/README.md -text whitespace=cr-at-eol,-blank-at-eof
 docs/evidence/2026-10-12-mkvtoolnix/source/doc/licenses/nlohmann-json-MIT.txt -text whitespace=cr-at-eol,-blank-at-eol
+
+# Notepad Next fixed upstream/evidence bytes.
+catalogue/candidate-v51/tuf/targets/*.json -text whitespace=cr-at-eol
+docs/evidence/windows-notepadnext-20261012*.acceptance.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-notepadnext*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-12-notepadnext/** -text whitespace=cr-at-eol
+docs/windows-rolling-20261012-notepadnext.md -text whitespace=cr-at-eol
+
+# Preserve five exact fixed upstream whitespace paths after stopped first stage.
+docs/evidence/2026-10-12-notepadnext/expanded-assets.html -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-notepadnext/source/.github/workflows/build.yml -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-notepadnext/source/installer/NsisMultiUser/Include/NsisMultiUser.nsh -text whitespace=cr-at-eol,-space-before-tab
+docs/evidence/2026-10-12-notepadnext/source/installer/installer.nsi -text whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/2026-10-12-notepadnext/source/installer/utils.nsh -text whitespace=cr-at-eol,-blank-at-eol

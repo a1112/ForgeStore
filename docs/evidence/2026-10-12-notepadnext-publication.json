@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "dateConvention": "Asia/Shanghai report date; actual guest UTC retained",
+  "applicationId": "notepadnext",
+  "version": "0.15",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 47,
+  "signedCatalogue": "catalogue/candidate-v51/tuf",
+  "metadataVersion": 60,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 49,
+  "excludedFixtures": 2,
+  "signedActualTargets": 100,
+  "publicCatalogueFiles": 56,
+  "sourceEvidence": {
+    "reference": "2026-10-12-notepadnext-source.json",
+    "sha256": "2ab6db9fd95231be2983e7de5f154e5b49180a7e83a4d8f3dd68acd53a527d6f"
+  },
+  "originalAcceptance": {
+    "reference": "windows-notepadnext-20261012.acceptance.json",
+    "sha256": "0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d"
+  },
+  "originalGeneration": "gen-job-1791750101890-1",
+  "marketGeneration": "gen-job-1791750996124-5",
+  "definitionDigest": "sha256:6d65a7e7352c7d59587444dd47ce33a5f02ef6294025a302bef54aba6e1b0ce6",
+  "originalSave": {
+    "generationId": "gen-job-1791750101890-1",
+    "inputRelativePath": "NotepadNextTests/正式原稿.txt",
+    "inputPin": {
+      "sizeBytes": 90,
+      "sha256": "a070507982d88aa0329446d6fb0e4d84fa3688466d6980a29d6c93d14a7a56ff"
+    },
+    "outputRelativePath": "NotepadNextTests/original-result.txt",
+    "outputPin": {
+      "sizeBytes": 101,
+      "sha256": "61ab86cf74f35b6577d12f828eacc2b3e753a829e0a4a5c5157b10d85fa1095d"
+    },
+    "inputUnchanged": true,
+    "outputUtf8": "ForgeOS Notepad Next original fixture\r\n中文内容保留\r\nSTATUS=AFTER\r\nVALUE=21+21\r\nORIGINAL42\r\n",
+    "byteContentVerified": true,
+    "encoding": "UTF-8 BOM/CRLF",
+    "diagnosticActiveInputUnchanged": false
+  },
+  "marketSave": {
+    "generationId": "gen-job-1791750996124-5",
+    "inputRelativePath": "NotepadNextTests/市场原稿.txt",
+    "inputPin": {
+      "sizeBytes": 87,
+      "sha256": "c48e4d3d393ca3b46007f48cf0bf7f99ce62c8ea82491d5f67face5786aef1f6"
+    },
+    "outputRelativePath": "NotepadNextTests/market-result.txt",
+    "outputPin": {
+      "sizeBytes": 96,
+      "sha256": "eb9b6a6cb1e3260d7ec6c22f5edb0ad9bb275aa5621f07d0006f82cea480505a"
+    },
+    "inputUnchanged": true,
+    "outputUtf8": "ForgeOS Notepad Next market fixture\r\n中文内容保留\r\nSTATUS=AFTER\r\nVALUE=40+2\r\nMARKET42\r\n",
+    "byteContentVerified": true,
+    "encoding": "UTF-8 BOM/CRLF"
+  },
+  "fiveFormalNormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "earliestSaveAllDiagnosticExcludedFromAcceptance": true,
+  "earliestDiagnosticActiveInputChanged": true,
+  "formalInputRecreatedUnderNewNameWithoutRewritingDiagnosticHistory": true,
+  "cacheSameVersionUpdatePassed": true,
+  "storeUpdateJob": {
+    "action": "update",
+    "appId": "notepadnext",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "4db434d1-c6ed-4896-93a3-6f4b6ac2f436",
+    "state": "succeeded"
+  },
+  "exactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "notepadnext",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "9aecba66-604d-4413-833b-a77d8fa0b12e",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791750101890-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 367,
+    "beforeRollbackStoreRows": 111,
+    "afterRollbackCoreJobs": 367,
+    "afterRollbackStoreRows": 112,
+    "allOldFullFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "d1a819026222ee1ab6ae4714c4a30085e2bb4afa8942e77cf7403a2160f0704e",
+      "coreJobs": 367,
+      "fullStoreRows": 112
+    }
+  },
+  "normalServiceRestartPassed": true,
+  "coreJobs": 368,
+  "fullStoreRows": 112,
+  "allOldFullTaskFieldsPreserved": true,
+  "allOldGenerationRecordsAndFixedDataPreserved": true,
+  "powerAndAuthenticationSettingsPreserved": true,
+  "thirdOriginalByteChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3423303,
+        "sha256": "7e33fd34bb7bf04b70aa3fdcc2d4baeec4ae878c4f2624ae125df5d6e43e69fd"
+      },
+      "after": {
+        "sizeBytes": 3423303,
+        "sha256": "0c111d6d0a5696871da133aa036217d4dd4bde778fa19ad04ad2f8d427b38d99"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 287,
+      "textDiffPreservedPrivately": true
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 103371,
+        "sha256": "2d01f8683609deed557c57eec67662efcb8e4d95dc6652579e2f64b2236d7af5"
+      },
+      "after": {
+        "sizeBytes": 103371,
+        "sha256": "491503065e5f42f51cbb95386419d112cf3dc63b83e76ebe1b4a0b267da0bb03"
+      },
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "causeEstablished": false,
+      "changedLineCount": 20,
+      "textDiffPreservedPrivately": true
+    }
+  },
+  "originalRegistryAndConfigBytesPreservedAcrossThirdGui": false,
+  "currentDataAndConfigurationMatchedAcrossRestart": true,
+  "oldImmutableFilesMatched": 1743,
+  "originalHistoricalFrozenFiles": 37,
+  "frozenHistoricalStageLabelsRetained": true,
+  "limitations": [
+    "Only two small Chinese-name UTF-8 BOM/CRLF text fixtures, normal BEFORE-to-AFTER replacement, ASCII append, GUI Save As to ASCII output and explicit new managed-process reopen tested. Synthetic text fixtures do not count as applications.",
+    "Earliest diagnostic Ctrl+Shift+S actually invoked Save All and changed the active original input; it is not accepted. Modified diagnostic input and normal exit preserved. A newly created formal fixture was opened in a new process, and its input remained byte-exact. Formal find-dialog focus error replaced ForgeOS, was undone before save, and actual fields were verified before correct replacement. Original failure screenshots remain.",
+    "Fixed main.cpp and measured GUI About declare GPL-3.0-or-later. Installed LICENSE35823B differs raw from fixed source35149B; exactly674CRLF pairs normalized to identical source. Scintilla/Lexilla and uchardet notices retained separately; full Qt/Lua/Scintilla/Lexilla/uchardet/icon bundle license closure, Authenticode/OpenPGP, binary-source correspondence and reproducible build unverified.",
+    "Official fixed installer digest matched release-assets HTML. Public API403 retained; authenticated read-only public tag-ref identifies fc4c807cf2b755b37d40de27cf29a5268c7c2fc5. Source archive only locally hashed. Actual fixed NSIS installer differs from initially selected Lexilla test .iss. Native /S /CURRENTUSER and final /D=C: one backslash NotepadNext17UTF8bytes. Default optional installer components retained; no claim of no background network or fully unattended behavior.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Direct Chinese keyboard input, large files/other encodings, broad syntax/regex, split editors/macros/Lua/workspaces/export/printing/advanced features, network download, new-machine registration, migration and cross-version upgrade unverified.",
+    "Independent market generation/update/rollback/two-service normal restart pending at original freeze; completion recorded separately. GUI market update/rollback buttons unverified.",
+    "Store IPC cached same-version update and exact original rollback passed; GUI market update/rollback buttons unverified. Normal service restart preserved all368 Core tasks and112 full Store rows, generations, settings, guards, trust and fixed acceptance data.",
+    "Third original GUI changed system.reg/user.reg raw bytes at the same sizes; strict old pins stopped before restart, then actual private backups/diffs and new pins were fixed. Cause unestablished; current pins stable across restart. Fixed data/configuration scope only, not all app filesystem files."
+  ],
+  "remotePushPendingAtPublicationFreeze": true,
+  "priorRemoteVerifiedCommit": "5f062b73817500055385c6634c791424edab1f7a",
+  "newDeviceCodeIssued": false,
+  "completeNotepadNextApplicationAccepted": false,
+  "advancedEditingAccepted": false,
+  "directChineseKeyboardInputAccepted": false,
+  "unattendedStartupAccepted": false,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "guestNetworkDownloadAccepted": false,
+  "guiVersionMeasured": "Notepad Next v0.15"
+}
