@@ -548,6 +548,15 @@
       "signedCatalogue": "catalogue/candidate-v59/tuf",
       "publication": "docs/evidence/2026-10-12-poedit-publication.json",
       "limitation": "Only two-entry Chinese-name PO edit/native Save As/automatic MO and explicit new-process PO reopen, private same-account cached lifecycle. Windows separate EULA, MIT OSS source only; public binary redistribution/Pro, broad gettext, networking/unattended and full bundled closure unverified."
+    },
+    {
+      "id": "gnuplot",
+      "version": "6.0.3",
+      "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84",
+      "evidence": "docs/evidence/windows-gnuplot-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v60/tuf",
+      "publication": "docs/evidence/2026-10-12-gnuplot-publication.json",
+      "limitation": "Only native ChangeDirectory/Open ASCII PLT referencing Chinese-name four-point DAT, title edit/Replot/Save PLT/SVG and explicit fresh Open. Broad graphs/terminals, Chinese-path PLT Open/direct keyboard input/networking/unattended/full bundle closure unverified; no launcher CWD repair."
     }
   ],
   "queue": [
@@ -764,12 +773,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "53/1000 finite Windows acceptance;14 unresolved unchanged. Poedit3.7 two-entry Chinese-name PO edit/native SaveAs/automatic MO/explicit fresh Open PO and private same-account cached local lifecycle; separate Windows EULA, MIT OSS source only, public redistribution/Pro unverified. candidate-v59/root1/role68;419 fullCore/126 fullStore. Strict SSH stdin rolling-current-state-poedit-20261012.py. Preserve old frozen/trust/history and actual third-GUI registry/Sentry run-file replacement. Independent review/index/commit/push pending at publication freeze. Original pre-stage report misstated CRCRLF; corrected report and newline-scope-correction record actual BOM/283 CRLF/0 CRCRLF. No source/acceptance/signature/guest/index bytes changed; new FINAL review required.",
+  "next": "54/1000 finite Windows acceptance;14 unresolved unchanged. gnuplot6.0.3 native-menu four-point plot/title/SavePLT/SVG/freshOpen and local cached Store update/exact rollback/normal restart; native ChangeDirectory required, no launcherCWD repair. candidate-v60/root1/role69;427 fullCore/128 fullStore. StrictSSH stdin rolling-current-state-gnuplot-20261012.py. Preserve frozen/trust/history and actual third-GUI registry differences. Independent review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 53,
+    "acceptedLocalMarket": 54,
     "explicitlyBlockedCandidates": 14,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -777,25 +786,25 @@
     "pendingCandidates": 14
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v59/tuf",
-    "metadataVersion": 68,
-    "catalogueEntries": 55,
-    "acceptedDistinctWindowsApps": 53,
+    "signedCatalogue": "catalogue/candidate-v60/tuf",
+    "metadataVersion": 69,
+    "catalogueEntries": 56,
+    "acceptedDistinctWindowsApps": 54,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-poedit-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-gnuplot-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-cppcheck-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-poedit-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-poedit-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-gnuplot-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-poedit-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-gnuplot-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-copyq-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-poedit-corrected.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-poedit-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-gnuplot.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-gnuplot-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

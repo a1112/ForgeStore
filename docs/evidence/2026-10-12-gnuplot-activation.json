@@ -1,0 +1,55 @@
+{
+  "activatedPreview": true,
+  "metadataVersion": 69,
+  "rootVersion": 1,
+  "entries": 56,
+  "coreJobs": 423,
+  "fullStoreRows": 126,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-gnuplot-20261012.acceptance.json#gnuplot",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84",
+        "size": 49945304,
+        "target": "gp603-win64-mingw.exe",
+        "url": "https://downloads.sourceforge.net/project/gnuplot/gnuplot/6.0.3/gp603-win64-mingw.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "gnuplot"
+    },
+    "id": "gnuplot",
+    "license": "gnuplot custom license (SPDX gnuplot)",
+    "name": {
+      "en": "gnuplot",
+      "zhCN": "gnuplot 绘图工具"
+    },
+    "origin": "https://www.gnuplot.info/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "gnuplot development team",
+    "summary": {
+      "en": "Limited native-menu four-point plot/title/save PLT/SVG and fresh Open tested; native Change Directory required, broad graphs and terminals unverified.",
+      "zhCN": "仅菜单四点绘图/标题/保存PLT与SVG及新进程打开通过；需原生ChangeDirectory，广泛图形和输出终端未验收"
+    },
+    "version": "6.0.3"
+  },
+  "installed": {
+    "appId": "gnuplot",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "6.0.3"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "70c37d3c28261186b27bb8d20770b6b039e34b614ae3952bfe1892f5e82776c6",
+    "coreJobs": 423,
+    "fullStoreRows": 126
+  },
+  "independentMarketGenerationPending": true,
+  "countsAsCompleted": false
+}

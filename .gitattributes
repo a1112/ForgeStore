@@ -319,3 +319,20 @@ docs/evidence/poedit-20261012/source/src/edframe.cpp whitespace=-blank-at-eol
 docs/evidence/poedit-20261012/source/win32/poedit.iss -text whitespace=-blank-at-eol
 catalogue/candidate-v59/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json whitespace=cr-at-eol
 catalogue/candidate-v59/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json whitespace=cr-at-eol
+
+# Preserve fixed gnuplot upstream, GUI output and inherited signed evidence bytes.
+catalogue/candidate-v60/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json whitespace=cr-at-eol,-blank-at-eol
+catalogue/candidate-v60/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/gnuplot-20261012/installed-Copyright.txt -text whitespace=cr-at-eol
+docs/evidence/gnuplot-20261012/market/market.plt whitespace=-blank-at-eol
+docs/evidence/gnuplot-20261012/market/market.svg -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/evidence/gnuplot-20261012/official-installer-digest-web-observation.txt whitespace=-blank-at-eol
+docs/evidence/gnuplot-20261012/original/original.plt whitespace=-blank-at-eol
+docs/evidence/gnuplot-20261012/original/original.svg -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/evidence/gnuplot-20261012/source/README whitespace=-blank-at-eol
+docs/evidence/gnuplot-20261012/source/src/plot.c whitespace=-blank-at-eol
+docs/evidence/gnuplot-20261012/source/src/win/wgnuplot.mnu whitespace=-blank-at-eol
+docs/evidence/gnuplot-20261012/source/src/win/wgraph.c whitespace=-blank-at-eof,-space-before-tab
+docs/evidence/gnuplot-20261012/source/src/win/wtext.c whitespace=-space-before-tab
+docs/evidence/gnuplot-20261012/source/win/gnuplot.iss -text whitespace=cr-at-eol
+docs/evidence/gnuplot-20261012/source/win/modpath.iss -text whitespace=cr-at-eol

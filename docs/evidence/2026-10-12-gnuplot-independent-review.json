@@ -1,0 +1,1034 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "independent FINAL finite evidence review before first real Git stage",
+  "applicationId": "gnuplot",
+  "version": "6.0.3",
+  "completedAtUtc": "2026-10-12T06:20:12.264517+00:00",
+  "baseCommit": "27dc805ee1318c3b4af7dbefed99f38388ba1505",
+  "prospectiveManifestSha256": "23869d561696677b18d5d112925c52cda091b8c258d872757a6dfdc0fe43bde4",
+  "passed": true,
+  "findings": [],
+  "checks": [
+    {
+      "name": "immutable-and-prospective-bytes",
+      "passed": true,
+      "description": "Independently hashed 113 prospective files, all 2809 prior immutable files and all 27 original GNUplot frozen files; actual HEAD/branch match and index is empty."
+    },
+    {
+      "name": "tuf-signatures-and-complete-target-chain",
+      "passed": true,
+      "description": "Root1 and role69 authorized RSA-PSS signatures, thresholds, expiry and timestamp/snapshot/targets raw digest chain independently verified. All 117 cached target streams and 65 public files hashed; 114 old noncatalogue descriptors and 55 old entries preserved."
+    },
+    {
+      "name": "official-fixed-artifact-source-license",
+      "passed": true,
+      "description": "Complete cached installer/source and both fixed upstream digest materials agree; 11 raw source members extracted independently. Fresh official download page repeats matching installer SHA and SPDX identifies custom gnuplot license. Installed Copyright has29 CRLF and normalized same text but raw bytes differ; bundled license closure and source/binary correspondence remain unverified."
+    },
+    {
+      "name": "program-maps-native-inno-definition",
+      "passed": true,
+      "description": "Two573-file maps have exactly572 equal files and only the71665B uninstall log differs. Main EXE, plain native launcher, single actual slash15-byte Inno DIR and Core serde declaration-order definition digest independently agree; no launcher/runtime repair or uninstall conclusion."
+    },
+    {
+      "name": "independent-complete-small-plt-svg",
+      "passed": true,
+      "description": "Each16B Chinese-name DAT independently parsed into four points;234/232B ASCII-path UTF8 LF scripts,5329/5327B saved single-plot states and9941/9939B SVG XML agree. Two identical borders, four centers and connected endpoints match linear coordinate mapping within0.03 SVG units; not complete SVG/gnuplot specification or browser rendering."
+    },
+    {
+      "name": "ten-real-jpeg-visual-review",
+      "passed": true,
+      "description": "All ten raw JPEG pins and actual bytes checked and individually viewed. Only01 is failed diagnostic; original/market title and curve, export echoes, explicit reopen and rollback appearance match limited claims. Screenshot alone does not prove new-process identity or native action sequence; separate receipts corroborate those."
+    },
+    {
+      "name": "formal-lifecycle-and-real-registry-changes",
+      "passed": true,
+      "description": "Five actual formal launches have distinct IDs, correct generations and normal exit0 plus wineserver events; failed initial exit0 excluded. Native update/CP-first426/127 rollback426/128 and normal two-service427/128 restart receipts agree. Same-size registry bytes changed, reported private287/20-line differences and current new pins retained; cause unknown and private CP/raw diff not independently replayed."
+    },
+    {
+      "name": "ledger-history-failures-and-scope",
+      "passed": true,
+      "description": "Ledger adds exactly54th GNUplot while all53 old accepted records,14 pending records and resolved history remain exact. Frozen original pending labels and publication-stage Git pending labels retained. Advanced/network/unattended/Chinese PLT or keyboard/full-FS claims stay false; no private key/credential/complete checkpoint paths or bodies appear in prospective files."
+    },
+    {
+      "name": "independent-exact-attribute-precheck",
+      "passed": true,
+      "description": "Old22922B LF attribute prefix exactly preserved;15 literal new-path rules and LF-only suffix agree. Reviewer independently reran all113 raw/filter OID and relative no-index checks with no byte changes or diagnostics. These are read-only prechecks: index remains empty and no real cached diff/index/commit/push was performed."
+    },
+    {
+      "name": "fresh-strict-ssh-current-state",
+      "passed": true,
+      "description": "Fresh reviewer stdin execution through existing strict stored SSH host keys verifies427/128 complete terminal state, root1/role69, exact original selection, actual fixed pins and seven full categories against saved post-restart checkpoint. Author checker is freshly re-executed; no reviewer independent private CP replay, and core query can write existing request scratch."
+    }
+  ],
+  "facts": {
+    "byteAudit": {
+      "prospectiveFiles": 113,
+      "previousImmutableFiles": 2809,
+      "originalFrozenFiles": 27,
+      "indexEmpty": true,
+      "baseCommit": "27dc805ee1318c3b4af7dbefed99f38388ba1505"
+    },
+    "tuf": {
+      "rootVersion": 1,
+      "onlineRoleVersion": 69,
+      "completeCachedTargetsHashed": 117,
+      "publicFiles": 65,
+      "publicTargetsJsonOnly": true,
+      "oldNonCatalogueDescriptorsPreserved": 114,
+      "changedOldTargets": [
+        "catalogue.json"
+      ],
+      "catalogueEntries": 56,
+      "copyqActiveAbsent": true
+    },
+    "sourceLicense": {
+      "installer": {
+        "sizeBytes": 49945304,
+        "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84"
+      },
+      "sourceArchive": {
+        "sizeBytes": 7616904,
+        "sha256": "ec52e3af8c4083d4538152b3f13db47f6d29929a3f6ecec5365c834e77f251ab"
+      },
+      "rawSourceMembers": 11,
+      "mainLicense": "gnuplot custom license; SPDX gnuplot; not GPL",
+      "installedCopyright": {
+        "sizeBytes": 1524,
+        "sha256": "359c1c1a51fbc72bd5ae222517c7d6349ba52070558629b48f093c4af25ad1d5"
+      },
+      "sourceCopyright": {
+        "sizeBytes": 1495,
+        "sha256": "895928ec0735cca1c8cec42656c7e314a065d0242813bb8693c0c1bf61fd4e4d"
+      },
+      "installedCrLfCount": 29,
+      "normalizedSameRawDifferent": true,
+      "freshPrimarySourcesObserved": [
+        "https://spdx.org/licenses/gnuplot.html",
+        "https://sourceforge.net/projects/gnuplot/files/gnuplot/6.0.3/gp603-win64-mingw.exe/download"
+      ],
+      "freshInstallerWebShaMatches": true,
+      "primaryObservationIsWebTextNotRawHttp": true,
+      "fullBundleSourceBinarySignaturesBuildUnverified": true
+    },
+    "programAndDefinition": {
+      "filesEach": 573,
+      "sameFiles": 572,
+      "differentFiles": [
+        "unins000.dat"
+      ],
+      "uninstallPins": {
+        "original": {
+          "sizeBytes": 71665,
+          "sha256": "dfd327f5f5dc08ac36e2f48e7ed68ba5533601ae14a77a0db1e79960aef2a86b"
+        },
+        "market": {
+          "sizeBytes": 71665,
+          "sha256": "eed35bfc9e6551d6e5eb321d881a7b3f663139161414559f5fd81d104c2d7f35"
+        }
+      },
+      "reasonAndUninstallUnverified": true,
+      "definitionDigest": "sha256:82ce764fef0275a66490135d03bf17940b098d856cdf31d5ced16117201c73a4",
+      "plainNativeLauncher": true,
+      "nativeDirBytes": 15,
+      "nativeDirUtf8Hex": "2f4449523d433a5c476e75706c6f74"
+    },
+    "finitePlots": {
+      "original": {
+        "inputPlot": {
+          "sizeBytes": 234,
+          "sha256": "bbbc7a67b0894c755867c2db04c8f1d36a7e2867a93b412b4562d337390ae30b"
+        },
+        "data": {
+          "sizeBytes": 16,
+          "sha256": "266d4190a68a5a246aefd1800503c415d80a61f6746f755f0fce53f15da20761"
+        },
+        "savedPlot": {
+          "sizeBytes": 5329,
+          "sha256": "ca73ae8e5da9ceb0f145a3ea76e0da99b99fc0024e1d49e7babdf782d39d9c26"
+        },
+        "svg": {
+          "sizeBytes": 9941,
+          "sha256": "f88f85d3edc339de93ee782db89cab46d533405f6e97f185b732fbdb21eb3490"
+        },
+        "dataPoints": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "svgCenters": [
+          [
+            86.76,
+            408.55
+          ],
+          [
+            249.24,
+            373.09
+          ],
+          [
+            411.72,
+            266.73
+          ],
+          [
+            574.2,
+            89.46
+          ]
+        ],
+        "identicalBorderPaths": 2,
+        "coordinateTolerance": 0.03,
+        "finiteOnly": true
+      },
+      "market": {
+        "inputPlot": {
+          "sizeBytes": 232,
+          "sha256": "d3848cacbcf5f667d54e3a2d64c391dba3b71edf0bdbb820be55b561f284ad3b"
+        },
+        "data": {
+          "sizeBytes": 16,
+          "sha256": "0b81479b00476f984eca3d8fe3ffd8b74ef2d479598232d0e291493c693cfd4b"
+        },
+        "savedPlot": {
+          "sizeBytes": 5327,
+          "sha256": "12d6987823f6fee7fa6f1ca27d67308e5dae26b2568738af58fb9cd5965bc2f0"
+        },
+        "svg": {
+          "sizeBytes": 9939,
+          "sha256": "cafd975bd0d5fd1e0d7dea4bd399c7b204df400b2152238f43faa61931244e95"
+        },
+        "dataPoints": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "svgCenters": [
+          [
+            86.76,
+            89.46
+          ],
+          [
+            249.24,
+            266.73
+          ],
+          [
+            411.72,
+            373.09
+          ],
+          [
+            574.2,
+            408.55
+          ]
+        ],
+        "identicalBorderPaths": 2,
+        "coordinateTolerance": 0.03,
+        "finiteOnly": true
+      }
+    },
+    "visualReview": {
+      "actualJpegs": 10,
+      "allIndividuallyViewed": true,
+      "failedOnly": [
+        "gnuplot-01-original-open-failed.jpg"
+      ],
+      "observations": [
+        "01 text window has cannot load basename and no plot, not acceptance.",
+        "02 red rising four-point ORIGINAL BEFORE;03 same red AFTER ORIGINAL42.",
+        "04 native menu echoes cd/load/title/save/svg/output/replot/window output; not OS shell.",
+        "05 explicit reopen red AFTER ORIGINAL42 with changed window width.",
+        "06 blue falling MARKET BEFORE;07 AFTER MARKET42.",
+        "08 native market saved plot and SVG output echoes.",
+        "09 new market process blue AFTER MARKET42 with changed width.",
+        "10 rollback original red AFTER ORIGINAL42."
+      ],
+      "versionFromTextWindow": "Version6.0 patchlevel3, last modified2025-06-07",
+      "aboutNotMeasured": true,
+      "freshIdentityFromSeparateJobs": true,
+      "pixelIdentityNotClaimed": true
+    },
+    "lifecycle": {
+      "formalGuiJobIds": [
+        "job-1791783068241-3",
+        "job-1791783669780-4",
+        "job-1791784144748-6",
+        "job-1791784359713-7",
+        "job-1791784572661-8"
+      ],
+      "normalZeroExitWineserverEvents": 5,
+      "failedInitialJobExcluded": true,
+      "storeUpdateJobId": "6ae0b6ed-8ee8-4582-bd91-68e4994403af",
+      "rollbackJobId": "2f910ddc-6e83-4750-875e-c90c5b1ec68d",
+      "beforeRollbackCounts": [
+        426,
+        127
+      ],
+      "afterRollbackCounts": [
+        426,
+        128
+      ],
+      "normalRestartCounts": [
+        427,
+        128
+      ],
+      "currentCpIdentifier": "gnuplot-20261012/after-restart.json",
+      "currentCpSha256": "9cb286f6901ffbb3bb6a88dc1444e9fe43f2f196105929c411a9fbfc238dae9f",
+      "thirdRegistrySameSizesRawChanged": true,
+      "reportedActualPrivateDiffLines": {
+        "system.reg": 287,
+        "user.reg": 20
+      },
+      "privateDiffBodiesReplayedByReviewer": false,
+      "unknownCause": true
+    },
+    "publicationScope": {
+      "windowsAcceptedDistinct": 54,
+      "unchangedPending": 14,
+      "old53AcceptedAndPendingExact": true,
+      "noCopyqBowpadAccepted": true,
+      "noAdvancedNetworkUnattendedChinesePltInputOrWholeFilesystemAcceptance": true,
+      "reviewStageCommitPushStillPendingAtOriginalPublicationFreeze": true,
+      "noPrivateCpBodyOrCredentialMaterialInProspective": true
+    },
+    "gitReadOnlyPrecheck": {
+      "oldPrefixBytes": 22922,
+      "oldPrefixPreserved": true,
+      "suffixLfOnly": true,
+      "exactRules": 15,
+      "independentlyRecheckedPaths": 113,
+      "rawFilteredOidsAllEqual": true,
+      "relativeNoIndexAllNoDiagnostics": true,
+      "indexEmpty": true,
+      "gitAddRenormalizeCachedDiffCommitPushNotPerformed": true,
+      "filterResults": [
+        {
+          "path": ".gitattributes",
+          "unfilteredOid": "57782eaf60ff6d5cc59f2bdca5b3a7ac4d4eb6b9",
+          "filteredOid": "57782eaf60ff6d5cc59f2bdca5b3a7ac4d4eb6b9",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/metadata/1.root.json",
+          "unfilteredOid": "545dadbbd5de8f3d1e3f8dbd9113f6f94c505173",
+          "filteredOid": "545dadbbd5de8f3d1e3f8dbd9113f6f94c505173",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/metadata/69.snapshot.json",
+          "unfilteredOid": "6586b6ff4252e4a5f09443064e03536475325e52",
+          "filteredOid": "6586b6ff4252e4a5f09443064e03536475325e52",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/metadata/69.targets.json",
+          "unfilteredOid": "72e731eddc4cf8575696f7f7b46e1cb8b70a2925",
+          "filteredOid": "72e731eddc4cf8575696f7f7b46e1cb8b70a2925",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/metadata/timestamp.json",
+          "unfilteredOid": "059be96120ec257b1d7468089e84fc0bd51153d7",
+          "filteredOid": "059be96120ec257b1d7468089e84fc0bd51153d7",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json",
+          "unfilteredOid": "0300d899065995cc52bb3d80cf570ffab0840f5c",
+          "filteredOid": "0300d899065995cc52bb3d80cf570ffab0840f5c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9.windows-nsis-20261012.acceptance.json",
+          "unfilteredOid": "6482cd09937a950d253ff0cf3be973d968277aff",
+          "filteredOid": "6482cd09937a950d253ff0cf3be973d968277aff",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json",
+          "unfilteredOid": "53524e3a50e5f38902fe0bae936dd82476c9e821",
+          "filteredOid": "53524e3a50e5f38902fe0bae936dd82476c9e821",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d.windows-notepadnext-20261012.acceptance.json",
+          "unfilteredOid": "238bd263c6265f1a3369f814aab893c06fbaabd5",
+          "filteredOid": "238bd263c6265f1a3369f814aab893c06fbaabd5",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a.windows-poedit-20261012.acceptance.json",
+          "unfilteredOid": "7a2152f1d76a488284813c9a36ba8726bb026bd2",
+          "filteredOid": "7a2152f1d76a488284813c9a36ba8726bb026bd2",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json",
+          "unfilteredOid": "6d29ef9ef99e1e9504a3303ddb3f34a5dc9a3df1",
+          "filteredOid": "6d29ef9ef99e1e9504a3303ddb3f34a5dc9a3df1",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f.windows-transmission-20261011.acceptance.json",
+          "unfilteredOid": "a0c5be56e51d5a101dd0702effd27ddf4f533309",
+          "filteredOid": "a0c5be56e51d5a101dd0702effd27ddf4f533309",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json",
+          "unfilteredOid": "593b385df2b0b905a3a17eceb35db60bd4b3a7a3",
+          "filteredOid": "593b385df2b0b905a3a17eceb35db60bd4b3a7a3",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af.windows-nomacs-20261011.acceptance.json",
+          "unfilteredOid": "f4989428ad23d4a850a8a544fc9a831e5a14dbb7",
+          "filteredOid": "f4989428ad23d4a850a8a544fc9a831e5a14dbb7",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json",
+          "unfilteredOid": "7382d4b6e966e31fdc2c8f7cb25380b4f9640648",
+          "filteredOid": "7382d4b6e966e31fdc2c8f7cb25380b4f9640648",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json",
+          "unfilteredOid": "50372776d41494b5e6f9788c7c4c9ae8141b535c",
+          "filteredOid": "50372776d41494b5e6f9788c7c4c9ae8141b535c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json",
+          "unfilteredOid": "68703b170d403ef269f1c69c114cade652d830b2",
+          "filteredOid": "68703b170d403ef269f1c69c114cade652d830b2",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json",
+          "unfilteredOid": "76665d25d1ab24fd808caf95ab45b89727c9b8e0",
+          "filteredOid": "76665d25d1ab24fd808caf95ab45b89727c9b8e0",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json",
+          "unfilteredOid": "fa7921eb837b25c0c686bffba6181238cf3623a9",
+          "filteredOid": "fa7921eb837b25c0c686bffba6181238cf3623a9",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json",
+          "unfilteredOid": "ef593bef5692dbf5cd121e009a6eeff7d5279b01",
+          "filteredOid": "ef593bef5692dbf5cd121e009a6eeff7d5279b01",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json",
+          "unfilteredOid": "596d1593d45d851c94306b0fae33b8a03c466d55",
+          "filteredOid": "596d1593d45d851c94306b0fae33b8a03c466d55",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999.windows-copyq-20261012.pending-correction.json",
+          "unfilteredOid": "f99ff994db568db64b97ffb05b443cbbd3289b34",
+          "filteredOid": "f99ff994db568db64b97ffb05b443cbbd3289b34",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb.windows-doxygen-20261012.acceptance.json",
+          "unfilteredOid": "8bc88a1c0ea629e6c27d19c5484cabe56f92911b",
+          "filteredOid": "8bc88a1c0ea629e6c27d19c5484cabe56f92911b",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json",
+          "unfilteredOid": "20882c52bab0e389086c04e724f456a2358e599c",
+          "filteredOid": "20882c52bab0e389086c04e724f456a2358e599c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f.windows-xmlcopyeditor-20261011.acceptance.json",
+          "unfilteredOid": "a0193bb925608c028d1b8d9b8ea2064f6279d474",
+          "filteredOid": "a0193bb925608c028d1b8d9b8ea2064f6279d474",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json",
+          "unfilteredOid": "472c63d42349a7e805da37ace582e5d757ee7fa9",
+          "filteredOid": "472c63d42349a7e805da37ace582e5d757ee7fa9",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json",
+          "unfilteredOid": "e202b475ea1ccdaafe55a2e942c95fd623721d35",
+          "filteredOid": "e202b475ea1ccdaafe55a2e942c95fd623721d35",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json",
+          "unfilteredOid": "e76c77124907356a9c33efea875aa54e9ca6354f",
+          "filteredOid": "e76c77124907356a9c33efea875aa54e9ca6354f",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3.windows-lmms-20261012.acceptance.json",
+          "unfilteredOid": "e4a2f9a85cd3e18d38f527369fb53dfedae96faf",
+          "filteredOid": "e4a2f9a85cd3e18d38f527369fb53dfedae96faf",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json",
+          "unfilteredOid": "d28a212f972133b4665ff0bf6464da77b17469ee",
+          "filteredOid": "d28a212f972133b4665ff0bf6464da77b17469ee",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json",
+          "unfilteredOid": "94e90d7620fe679e3755177577fac1a62f2306ae",
+          "filteredOid": "94e90d7620fe679e3755177577fac1a62f2306ae",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json",
+          "unfilteredOid": "e1b5ba641619f26757b26d8d7cb304ef33e0d7c5",
+          "filteredOid": "e1b5ba641619f26757b26d8d7cb304ef33e0d7c5",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json",
+          "unfilteredOid": "b7fdba664bb47efc5e013d86fcac0c51405e9070",
+          "filteredOid": "b7fdba664bb47efc5e013d86fcac0c51405e9070",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29.windows-qxmledit-20261011.acceptance.json",
+          "unfilteredOid": "9333bca8de20624a6f3a7f09a5eabb1406089eb6",
+          "filteredOid": "9333bca8de20624a6f3a7f09a5eabb1406089eb6",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb.windows-cppcheck-20261012.acceptance.json",
+          "unfilteredOid": "a4c9642824e33c18e9bb0345d55d8c9d7aabad6c",
+          "filteredOid": "a4c9642824e33c18e9bb0345d55d8c9d7aabad6c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json",
+          "unfilteredOid": "06e21c86b5ade1b74a054da11c5dafe5c13b4b48",
+          "filteredOid": "06e21c86b5ade1b74a054da11c5dafe5c13b4b48",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json",
+          "unfilteredOid": "721af366959f989b102a861df7f8d1885e2f5679",
+          "filteredOid": "721af366959f989b102a861df7f8d1885e2f5679",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json",
+          "unfilteredOid": "1286b01338c08991b8becc31db302b6e3c284acf",
+          "filteredOid": "1286b01338c08991b8becc31db302b6e3c284acf",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json",
+          "unfilteredOid": "9e493e6e079355d45d2df63f17545d0683790929",
+          "filteredOid": "9e493e6e079355d45d2df63f17545d0683790929",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058.windows-windjview-20261011.acceptance.json",
+          "unfilteredOid": "12ab1cbfe0d0de8ec5df295c5f21e20436d704ce",
+          "filteredOid": "12ab1cbfe0d0de8ec5df295c5f21e20436d704ce",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json",
+          "unfilteredOid": "5cc0071f3105b6c7bd9870aea8a94a5cbbd1a666",
+          "filteredOid": "5cc0071f3105b6c7bd9870aea8a94a5cbbd1a666",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json",
+          "unfilteredOid": "d059830b256d0f8998a5159c8b2b0c26bebd8e79",
+          "filteredOid": "d059830b256d0f8998a5159c8b2b0c26bebd8e79",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json",
+          "unfilteredOid": "aea56f0fe0377c2f0d5860a751e55f2946de7882",
+          "filteredOid": "aea56f0fe0377c2f0d5860a751e55f2946de7882",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd.windows-nsis-20261012.corrected.acceptance.json",
+          "unfilteredOid": "534661d74b7aff06984c909a065c3aa3239525a8",
+          "filteredOid": "534661d74b7aff06984c909a065c3aa3239525a8",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34.windows-gnuplot-20261012.acceptance.json",
+          "unfilteredOid": "785e5183b4d8da44142f9d90ead7d19415a40bb6",
+          "filteredOid": "785e5183b4d8da44142f9d90ead7d19415a40bb6",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json",
+          "unfilteredOid": "5d4b94e8b1c887f53d199cf120f1b3285148496a",
+          "filteredOid": "5d4b94e8b1c887f53d199cf120f1b3285148496a",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json",
+          "unfilteredOid": "f46b4c235b7045e1cf74ebdc9d2128389dd832f2",
+          "filteredOid": "f46b4c235b7045e1cf74ebdc9d2128389dd832f2",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json",
+          "unfilteredOid": "30739569321f1884a88746d577e9d72d8b82d7ca",
+          "filteredOid": "30739569321f1884a88746d577e9d72d8b82d7ca",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json",
+          "unfilteredOid": "c1e5d0d16d06e207dac9b41d5ad8f30ee3a92e56",
+          "filteredOid": "c1e5d0d16d06e207dac9b41d5ad8f30ee3a92e56",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931.windows-rednotebook-20261011.acceptance.json",
+          "unfilteredOid": "fbd3ebb8461ee5656b6e3fa4e0bf9816c6144ca1",
+          "filteredOid": "fbd3ebb8461ee5656b6e3fa4e0bf9816c6144ca1",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5.windows-rapidcrc-20261012.acceptance.json",
+          "unfilteredOid": "300704480937029993cecc2b5cff8955d1b3c848",
+          "filteredOid": "300704480937029993cecc2b5cff8955d1b3c848",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281.windows-mkvtoolnix-20261012.acceptance.json",
+          "unfilteredOid": "d49b34bfbfe2f06074f41e649afe1d6dbb1a8475",
+          "filteredOid": "d49b34bfbfe2f06074f41e649afe1d6dbb1a8475",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86.windows-librecad-20261012.acceptance.json",
+          "unfilteredOid": "4797ee71ebb171aee2b626b33b057cad6b29b071",
+          "filteredOid": "4797ee71ebb171aee2b626b33b057cad6b29b071",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json",
+          "unfilteredOid": "75220699f3298222a5ca44ecda861c658384b6ab",
+          "filteredOid": "75220699f3298222a5ca44ecda861c658384b6ab",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json",
+          "unfilteredOid": "a13d4ed916ec698fa1f07483bd187fb27c8dd88c",
+          "filteredOid": "a13d4ed916ec698fa1f07483bd187fb27c8dd88c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3.windows-copyq-20261012.acceptance.json",
+          "unfilteredOid": "50ec73dcd7479d0488fd40ae09dfaf61e49a01f1",
+          "filteredOid": "50ec73dcd7479d0488fd40ae09dfaf61e49a01f1",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3.windows-qbittorrent-20261012.acceptance.json",
+          "unfilteredOid": "6d1a78c7bd848d8498e81f9e225a874d1e1c6926",
+          "filteredOid": "6d1a78c7bd848d8498e81f9e225a874d1e1c6926",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json",
+          "unfilteredOid": "0c14a991294ed4757871d8c50ad9b3b4ee114ac7",
+          "filteredOid": "0c14a991294ed4757871d8c50ad9b3b4ee114ac7",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json",
+          "unfilteredOid": "b90251296480b0ef7a70b269930013f08749b033",
+          "filteredOid": "b90251296480b0ef7a70b269930013f08749b033",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json",
+          "unfilteredOid": "2830f0204d97dbaebc6ada889ca18f33f4cbbe60",
+          "filteredOid": "2830f0204d97dbaebc6ada889ca18f33f4cbbe60",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d.windows-meld-20261011.acceptance.json",
+          "unfilteredOid": "9a37cf921ea339d284bd9f9b92ee74790965db05",
+          "filteredOid": "9a37cf921ea339d284bd9f9b92ee74790965db05",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa.windows-mediainfo-20261012.acceptance.json",
+          "unfilteredOid": "9311c3ee55eec983ac56ac29b824dc16c625adf8",
+          "filteredOid": "9311c3ee55eec983ac56ac29b824dc16c625adf8",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json",
+          "unfilteredOid": "2758e7f47d17acef42e26f9f141d4a5de00dad69",
+          "filteredOid": "2758e7f47d17acef42e26f9f141d4a5de00dad69",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json",
+          "unfilteredOid": "53f175af65f20dd10ac92f87a6571e212534967a",
+          "filteredOid": "53f175af65f20dd10ac92f87a6571e212534967a",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/targets/ff10d787c9ccc8bc27ff09bbf5cc93143111e3ec3ad5b4cded6d3402e7ac30f7.catalogue.json",
+          "unfilteredOid": "7eacaaa0e09643f7a23124e40c03520409c69cb4",
+          "filteredOid": "7eacaaa0e09643f7a23124e40c03520409c69cb4",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "catalogue/candidate-v60/tuf/trusted-root.json",
+          "unfilteredOid": "545dadbbd5de8f3d1e3f8dbd9113f6f94c505173",
+          "filteredOid": "545dadbbd5de8f3d1e3f8dbd9113f6f94c505173",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-activation.json",
+          "unfilteredOid": "97e841b61709f0ba59d0c21feccb9c00fe3278d7",
+          "filteredOid": "97e841b61709f0ba59d0c21feccb9c00fe3278d7",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-current-state.json",
+          "unfilteredOid": "7103180f01d5f9059f982c07dffeb4645e5b9722",
+          "filteredOid": "7103180f01d5f9059f982c07dffeb4645e5b9722",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-failures.json",
+          "unfilteredOid": "bb35e9c34253be6d1a44e17705820b3dfc443ed5",
+          "filteredOid": "bb35e9c34253be6d1a44e17705820b3dfc443ed5",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-final-verification.json",
+          "unfilteredOid": "a179b93f8f6032f86435fa4da9e55b3f7d91d94d",
+          "filteredOid": "a179b93f8f6032f86435fa4da9e55b3f7d91d94d",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-git-byte-preservation-precheck.json",
+          "unfilteredOid": "c107146f7c6532c4e2e24d39a96ba34eca08203d",
+          "filteredOid": "c107146f7c6532c4e2e24d39a96ba34eca08203d",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-git-precheck-final.json",
+          "unfilteredOid": "d4de81afdef566a31816e98809a1bc40da53aaa0",
+          "filteredOid": "d4de81afdef566a31816e98809a1bc40da53aaa0",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-gui.json",
+          "unfilteredOid": "2da993862870d9f669cc944b5bc2016f835b819a",
+          "filteredOid": "2da993862870d9f669cc944b5bc2016f835b819a",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-later-observations.json",
+          "unfilteredOid": "b0f29aa428efbbaabff81a11ab7568d655bc4faf",
+          "filteredOid": "b0f29aa428efbbaabff81a11ab7568d655bc4faf",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-market-gui.json",
+          "unfilteredOid": "e0efcf44177cb434e6ab73f700295ca43aff344d",
+          "filteredOid": "e0efcf44177cb434e6ab73f700295ca43aff344d",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-publication.json",
+          "unfilteredOid": "ca7887607e2153207c199b8e492f0af8d0ebc2ca",
+          "filteredOid": "ca7887607e2153207c199b8e492f0af8d0ebc2ca",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-runtime-recovery.json",
+          "unfilteredOid": "4daa918382666ff9a5637ab1ea827f22b7943876",
+          "filteredOid": "4daa918382666ff9a5637ab1ea827f22b7943876",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/2026-10-12-gnuplot-source.json",
+          "unfilteredOid": "0501a2255f9776ea0b6c9a721569a307fe23c78c",
+          "filteredOid": "0501a2255f9776ea0b6c9a721569a307fe23c78c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-01-original-open-failed.jpg",
+          "unfilteredOid": "903a71adf288a306bc5fc19bf39ce75b58c1146c",
+          "filteredOid": "903a71adf288a306bc5fc19bf39ce75b58c1146c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-02-original-render.jpg",
+          "unfilteredOid": "e95fd14703b0a7755141c004cc30aeeff46b3493",
+          "filteredOid": "e95fd14703b0a7755141c004cc30aeeff46b3493",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-03-original-after-title.jpg",
+          "unfilteredOid": "1f2839164a61668a6fa098eb4480bc07b650cef9",
+          "filteredOid": "1f2839164a61668a6fa098eb4480bc07b650cef9",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-04-original-exported.jpg",
+          "unfilteredOid": "f3776192493b1b45c67922cadf567bc0a762ab0f",
+          "filteredOid": "f3776192493b1b45c67922cadf567bc0a762ab0f",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-05-original-reopen.jpg",
+          "unfilteredOid": "042a6d9175800819e803e2758a4151e198e923ab",
+          "filteredOid": "042a6d9175800819e803e2758a4151e198e923ab",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-06-market-render.jpg",
+          "unfilteredOid": "47f01cbe4ac6857a185a5f248f931d3eed6aef89",
+          "filteredOid": "47f01cbe4ac6857a185a5f248f931d3eed6aef89",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-07-market-after-title.jpg",
+          "unfilteredOid": "5910ccacccfb7d1ebbd9d693f4e0775380fc3257",
+          "filteredOid": "5910ccacccfb7d1ebbd9d693f4e0775380fc3257",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-08-market-exported.jpg",
+          "unfilteredOid": "daba40a0479416c4b29d715e18d38ea410262726",
+          "filteredOid": "daba40a0479416c4b29d715e18d38ea410262726",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-09-market-reopen.jpg",
+          "unfilteredOid": "d67305bb86cd1e2abcaf709b4720890f2f8ca7f0",
+          "filteredOid": "d67305bb86cd1e2abcaf709b4720890f2f8ca7f0",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-10-rollback-original-reopen.jpg",
+          "unfilteredOid": "2acfb135fe56f87936167d1d83070cb8f0b01b3e",
+          "filteredOid": "2acfb135fe56f87936167d1d83070cb8f0b01b3e",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/gnuplot-6.0.3.tar.gz.sha256",
+          "unfilteredOid": "7ee67f617b46e8e47d749536c49e350c13a4ef62",
+          "filteredOid": "7ee67f617b46e8e47d749536c49e350c13a4ef62",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/installed-Copyright.txt",
+          "unfilteredOid": "b2824f4f10d23de0817f854e3a32ceacc0c72cf4",
+          "filteredOid": "b2824f4f10d23de0817f854e3a32ceacc0c72cf4",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/market/market-input.plt",
+          "unfilteredOid": "5dcff0f0764b637e675a9fc3bd824ddb9369458a",
+          "filteredOid": "5dcff0f0764b637e675a9fc3bd824ddb9369458a",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/market/market.plt",
+          "unfilteredOid": "9703b97c388f884b0dc55290429fa8b67b32eb69",
+          "filteredOid": "9703b97c388f884b0dc55290429fa8b67b32eb69",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/market/market.svg",
+          "unfilteredOid": "6572dafe5c6aad15acf089d860cd21459c410b48",
+          "filteredOid": "6572dafe5c6aad15acf089d860cd21459c410b48",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/market/市场数据.dat",
+          "unfilteredOid": "c3e7e9e974901f657b101a1b338fedb33b6de372",
+          "filteredOid": "c3e7e9e974901f657b101a1b338fedb33b6de372",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/official-installer-digest-web-observation.txt",
+          "unfilteredOid": "cb6bf9d31a69b167bc58cbe4654ca0f6c7bd64f1",
+          "filteredOid": "cb6bf9d31a69b167bc58cbe4654ca0f6c7bd64f1",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/original/original-input.plt",
+          "unfilteredOid": "8c60fb090e9a9b0ee7ae61365191190e00f19f91",
+          "filteredOid": "8c60fb090e9a9b0ee7ae61365191190e00f19f91",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/original/original.plt",
+          "unfilteredOid": "3d9ac8bd56c1bcb371a353d44cab57488c34378c",
+          "filteredOid": "3d9ac8bd56c1bcb371a353d44cab57488c34378c",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/original/original.svg",
+          "unfilteredOid": "53f8f5c466495584f94886db4f64bfd19dc275fe",
+          "filteredOid": "53f8f5c466495584f94886db4f64bfd19dc275fe",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/original/原始数据.dat",
+          "unfilteredOid": "f16362a67bf1ad91f152f6b3277b78f9c3d47367",
+          "filteredOid": "f16362a67bf1ad91f152f6b3277b78f9c3d47367",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/Copyright",
+          "unfilteredOid": "ff6fe2338435e60c9b49562842b5eb8b4581ff09",
+          "filteredOid": "ff6fe2338435e60c9b49562842b5eb8b4581ff09",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/README",
+          "unfilteredOid": "aadac86a2dcf871cd6480bb453f27f000570ff3e",
+          "filteredOid": "aadac86a2dcf871cd6480bb453f27f000570ff3e",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/src/plot.c",
+          "unfilteredOid": "d64fc4350157039b0e363a1b47dd173e6d8def53",
+          "filteredOid": "d64fc4350157039b0e363a1b47dd173e6d8def53",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/src/version.c",
+          "unfilteredOid": "87467a7b10fe372361a28e2c0004291092f2dcc1",
+          "filteredOid": "87467a7b10fe372361a28e2c0004291092f2dcc1",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/src/win/wgnuplot.mnu",
+          "unfilteredOid": "de247e4717c6b63b10a18ee640a257d8dc820eda",
+          "filteredOid": "de247e4717c6b63b10a18ee640a257d8dc820eda",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/src/win/wgraph.c",
+          "unfilteredOid": "8d7e5a24889176af2de42ed5bcce4367a113f9ea",
+          "filteredOid": "8d7e5a24889176af2de42ed5bcce4367a113f9ea",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/src/win/winmain.c",
+          "unfilteredOid": "ecf6c93921cac51194e21110c2169f19997a1193",
+          "filteredOid": "ecf6c93921cac51194e21110c2169f19997a1193",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/src/win/wmenu.c",
+          "unfilteredOid": "07a0e5c852a035204938a7a07c9226c3e1ff992e",
+          "filteredOid": "07a0e5c852a035204938a7a07c9226c3e1ff992e",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/src/win/wtext.c",
+          "unfilteredOid": "8be302940010a577d7ada23466ce9c3a9792a73f",
+          "filteredOid": "8be302940010a577d7ada23466ce9c3a9792a73f",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/win/gnuplot.iss",
+          "unfilteredOid": "b9369b6ebf62573097de9177ac8c9ccf75f0a878",
+          "filteredOid": "b9369b6ebf62573097de9177ac8c9ccf75f0a878",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/gnuplot-20261012/source/win/modpath.iss",
+          "unfilteredOid": "06996eaff89749935e66d1430a3ae1dc7837082a",
+          "filteredOid": "06996eaff89749935e66d1430a3ae1dc7837082a",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/evidence/windows-gnuplot-20261012.acceptance.json",
+          "unfilteredOid": "785e5183b4d8da44142f9d90ead7d19415a40bb6",
+          "filteredOid": "785e5183b4d8da44142f9d90ead7d19415a40bb6",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/windows-1000-progress.json",
+          "unfilteredOid": "758b71fecb57d04ff2d0e49417a85b551e08be08",
+          "filteredOid": "758b71fecb57d04ff2d0e49417a85b551e08be08",
+          "noIndexCheckExit": 1
+        },
+        {
+          "path": "docs/windows-rolling-20261012-gnuplot.md",
+          "unfilteredOid": "6e7544b7d90ca6ba99ba2718ba420b46d4b9a756",
+          "filteredOid": "6e7544b7d90ca6ba99ba2718ba420b46d4b9a756",
+          "noIndexCheckExit": 1
+        }
+      ]
+    },
+    "freshCurrent": {
+      "responsePin": {
+        "sizeBytes": 845,
+        "sha256": "63d72b012c22d70ab4470b7dcc47deb81511f737b1d23ac30e30ecdcf8adeb57"
+      },
+      "coreJobs": 427,
+      "completeStoreSqliteRows": 128,
+      "terminal": true,
+      "rootVersion": 1,
+      "onlineVersion": 69,
+      "selectedGeneration": "gen-job-1791782752169-1",
+      "currentCpIdentifier": "gnuplot-20261012/after-restart.json",
+      "currentCpSha256": "9cb286f6901ffbb3bb6a88dc1444e9fe43f2f196105929c411a9fbfc238dae9f",
+      "sevenCategoriesComparedByAuthorHelperNotIndependentCpReplay": true,
+      "queryMayWriteExistingRequestScratch": true
+    }
+  },
+  "assertionsExecuted": 8583,
+  "scopeLimitations": [
+    "No GUI/install/update/rollback/service/config/trust/signature/application-data/checkpoint/index mutations by reviewer; only private review files and existing query scratch.",
+    "Ten actual screenshots individually viewed and finite files independently parsed; action chronology and fresh process identities rely on separate captured author receipts and are not reviewer GUI replays.",
+    "No private complete checkpoint bodies, private registry before/after/diff bodies, credentials or private keys read or copied; CP identifiers/digests and author fresh checker result only.",
+    "No independent complete private CP replay, whole application filesystem, bundled license closure, source/binary correspondence, PGP/Authenticode or reproducible build verification.",
+    "No complete gnuplot/SVG specification, browser rendering, advanced expressions/3D/macros/printing/broad terminals, Chinese PLT GUI filename/keyboard, background network absence/new-machine/migration/cross-version/unattended or GUI Store button acceptance.",
+    "Public current query may write pre-existing request scratch; filesystem-zero-write is not claimed.",
+    "Read-only raw/filter and relative no-index checks are not actual Git index blob/cached diff/stage/renormalize/commit/push validation; actual index remained empty throughout review.",
+    "Reviewer discovery helper initially printed oversized key lists/tool output truncated; all conclusions use complete file parsing in this helper. A separate schema-inspection command incorrectly indexed ledger list as dictionary, TypeError before any mutation; no failed discovery counted as passing."
+  ]
+}

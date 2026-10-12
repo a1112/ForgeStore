@@ -1,0 +1,3050 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791782752169-1",
+    "createdAtMilliseconds": 1791782752177,
+    "definition": {
+      "bottleId": "gui-gnuplot",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "gnuplot",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\Gnuplot",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "gp603-win64-mingw.exe",
+        "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84"
+      },
+      "launchers": [
+        {
+          "executable": "Gnuplot/bin/wgnuplot.exe",
+          "id": "main",
+          "name": "gnuplot Windows GUI"
+        }
+      ],
+      "name": "gnuplot",
+      "publisher": "gnuplot project",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "6.0.3"
+    },
+    "definitionDigest": "sha256:82ce764fef0275a66490135d03bf17940b098d856cdf31d5ced16117201c73a4",
+    "id": "gen-job-1791782752169-1",
+    "launcherDigests": {
+      "main": "sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791782768746
+  },
+  "definition": {
+    "bottleId": "gui-gnuplot",
+    "category": "development",
+    "compatibilityRating": "unknown",
+    "id": "gnuplot",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\Gnuplot",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "gp603-win64-mingw.exe",
+      "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84"
+    },
+    "launchers": [
+      {
+        "executable": "Gnuplot/bin/wgnuplot.exe",
+        "id": "main",
+        "name": "gnuplot Windows GUI"
+      }
+    ],
+    "name": "gnuplot",
+    "publisher": "gnuplot project",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "6.0.3"
+  },
+  "installedFiles": {
+    "unins000.exe": {
+      "sizeBytes": 3380797,
+      "sha256": "dfb322291181495d07b95bc57de0159816bd1741e7901c5a1c5c981b7d544e82"
+    },
+    "RELEASE_NOTES": {
+      "sizeBytes": 17838,
+      "sha256": "782c7e753f1103b09ed1645ed45fbe66c9d9b57186340a69136949faa904ae3b"
+    },
+    "NEWS": {
+      "sizeBytes": 54573,
+      "sha256": "cf33ffddc1ff06bf6467f23f33e4f5be37a5babe1b3a6981b85af4da7314f231"
+    },
+    "README-Windows.txt": {
+      "sizeBytes": 8724,
+      "sha256": "aaec06874568777ee9464166a5db520f58320a650b55deea28da8552b0d58e58"
+    },
+    "unins000.dat": {
+      "sizeBytes": 71665,
+      "sha256": "dfd327f5f5dc08ac36e2f48e7ed68ba5533601ae14a77a0db1e79960aef2a86b"
+    },
+    "demo/orbits.dem": {
+      "sizeBytes": 2196,
+      "sha256": "471eb6661ff92a5416e379d4232acf35662e92a252f71fddabfa1c6003537b06"
+    },
+    "demo/zsort.dem": {
+      "sizeBytes": 816,
+      "sha256": "30bb7fbecce4a1db0ce5b1fe479fa7c5aa0219a8ad5d9692913fa8ba6bb6d60a"
+    },
+    "demo/animation.dem": {
+      "sizeBytes": 869,
+      "sha256": "b8e159ce0c95c29343e574fd4d754cec7795990721c431577999700bedd72fa2"
+    },
+    "demo/clipobject.dem": {
+      "sizeBytes": 2326,
+      "sha256": "7c2a995a0bfc977afcfa6045f5ca1e6521c6595540465f5c24f2500ecd934291"
+    },
+    "demo/latex_demo.dem": {
+      "sizeBytes": 1234,
+      "sha256": "611f4d3d0ad2a8b7129a7756d34669dac03ceef9a8fea4fe438e933cd7e8d2b2"
+    },
+    "demo/map_projection.dem": {
+      "sizeBytes": 3699,
+      "sha256": "7f3c415dd0cf048d757c6af1427f9a4a54c9b2c227c736542191c21f4257a4f2"
+    },
+    "demo/surface1.dem": {
+      "sizeBytes": 6877,
+      "sha256": "baf9e30e652aaf2b0e274489f9199649258188b0d2a10f943e60833163b58889"
+    },
+    "demo/fitmulti.dem": {
+      "sizeBytes": 5682,
+      "sha256": "232267fdb06933ac8112dfb64c6961b2287780bb382c73f38f5778e6a45a2316"
+    },
+    "demo/lines_arrows.dem": {
+      "sizeBytes": 5171,
+      "sha256": "d13a8fdb67c54534926d740fff8778e04f9836860903b1da92ab997da369dda2"
+    },
+    "demo/prob3.dem": {
+      "sizeBytes": 638,
+      "sha256": "b998e517ecaa19a2c676d7ca04c19e63a95d0365255d95295256581d2c4289c1"
+    },
+    "demo/candlesticks.dat": {
+      "sizeBytes": 203,
+      "sha256": "c6d9d0848e43225fa1e1c07e210a03a6b106526a871de23365b0070c1a466a72"
+    },
+    "demo/windrose.dem": {
+      "sizeBytes": 1219,
+      "sha256": "d3f93f612bb597f7923a79e4f94c0409c8116a629a24b9be4bd2838d7b297d5b"
+    },
+    "demo/invibeta.dem": {
+      "sizeBytes": 1175,
+      "sha256": "ff29edd0351b7e98cbb5409eceee9218812a0f87a5016a1621600d8fd4680abe"
+    },
+    "demo/waterfallplot.dem": {
+      "sizeBytes": 988,
+      "sha256": "5763baec89cb6abeced719af8a8a57621d7595ffecaee4340a93897ffc801eab"
+    },
+    "demo/mouselab_2.dem": {
+      "sizeBytes": 1183,
+      "sha256": "9571b92f3e6ec1a999c703c832bc7d5e88b8c73d550916ada969fab752fb337c"
+    },
+    "demo/sound2.par": {
+      "sizeBytes": 188,
+      "sha256": "01afe665f6c9505775130bff00c3f2773bee22cae845ece431f7c05230fc08a8"
+    },
+    "demo/watchmouse.dem": {
+      "sizeBytes": 1890,
+      "sha256": "62c8f85bb9ed88e2790b5fb194f1c3e9b2118db999b95903ec67d5d2b5eb5c86"
+    },
+    "demo/utf8.dem": {
+      "sizeBytes": 3386,
+      "sha256": "f8ba5c0bcf56005074ece10654cad2878d7a7e2a06161f2cc2c5d69e7af88b19"
+    },
+    "demo/surface2.dem": {
+      "sizeBytes": 1943,
+      "sha256": "e4243f390892ffbc8a12288281f03d21b91c7c664e42da4edb6057a37ebeaeb8"
+    },
+    "demo/histopt.dat": {
+      "sizeBytes": 32,
+      "sha256": "400cfd493e02e2966ced84970229b508acbc4e2664261400d2b009e98681930e"
+    },
+    "demo/1.dat": {
+      "sizeBytes": 781,
+      "sha256": "57e2cee1825111e2093b63655435225ad2c103a68518429e1a51223e393ce9c7"
+    },
+    "demo/battery.dat": {
+      "sizeBytes": 680,
+      "sha256": "ab3f54253dc12e5f5bad6870794b02fd3e8983f2b155ce682061ee60973dcd7b"
+    },
+    "demo/convex_hull.dem": {
+      "sizeBytes": 896,
+      "sha256": "861d5cf0ec176675907a4149f5c11213bb6fa9615cb179ac989782aa7be82741"
+    },
+    "demo/mousevariables.dem": {
+      "sizeBytes": 1765,
+      "sha256": "fd57e6eefa806e9cdac0a390f2c1413ff779ef1ba20aa967a7629d245cb071f9"
+    },
+    "demo/fillbetween.dem": {
+      "sizeBytes": 1362,
+      "sha256": "584d354a5e9a459bb24a83f6f61d50b6cdd106dd40f133a4d608127b8ee6f5a2"
+    },
+    "demo/vector.dem": {
+      "sizeBytes": 2375,
+      "sha256": "9a07aff3b4c3c87fa8fae8287f32c34276e482f5d01a387e41c73bd695a4946c"
+    },
+    "demo/demo.edf": {
+      "sizeBytes": 17408,
+      "sha256": "c2fb268bf6155a6d0f19f0e54e71771a5f687b629fcc68e2080059ef7c0e4d71"
+    },
+    "demo/WorldEnergy.dat": {
+      "sizeBytes": 583,
+      "sha256": "f07ef2bfbb37dd1d3244da8895277d7d44a43f7adfe0c6485df32c94544601b8"
+    },
+    "demo/empty-circles.dat": {
+      "sizeBytes": 137,
+      "sha256": "78bf9e6a08b4a6406432f99e004db3d58e952218d7579888a7a65aa6cd02428e"
+    },
+    "demo/piecewise.dem": {
+      "sizeBytes": 1905,
+      "sha256": "c364e31b06639bacd38e4540b9980f1653fb9ea2cb104d9e029b5d2cbdc76b92"
+    },
+    "demo/arrowstyle.dem": {
+      "sizeBytes": 1589,
+      "sha256": "a62020356d09b9dd33f11729b81a2b538a00ff4156bdc8bcea5bc4058de140c1"
+    },
+    "demo/histogram_colors.dem": {
+      "sizeBytes": 1587,
+      "sha256": "c63e6740fe014500e1f8f858c4ac024470f46e2b3ee21ef6b2506d99400b17d2"
+    },
+    "demo/synchrotron.dem": {
+      "sizeBytes": 625,
+      "sha256": "ba7e61982345cc6693284445e544dcb6ce6ac6e5ac2126cbeeaa7cbc81709555"
+    },
+    "demo/smooth_splines.dem": {
+      "sizeBytes": 2881,
+      "sha256": "25d9eb6a9a431a860f2b2b26204b71c6957f0ea399fc0da48ab16a7563afcdf3"
+    },
+    "demo/simple.dem": {
+      "sizeBytes": 1133,
+      "sha256": "ab188b3ceab630c7a61613d0ca60d3f934280fec39e3e3cec110dd3d06de6b1a"
+    },
+    "demo/lcdemo.dat": {
+      "sizeBytes": 2069,
+      "sha256": "f630f28365257f493991a65b5f3872f75184f75f35f9741f60b52585a540a1da"
+    },
+    "demo/cities.dat": {
+      "sizeBytes": 3892,
+      "sha256": "ff9467f6b5b2b9390227e675b18a480412eb756494875b54bdaa44228e8ab6dc"
+    },
+    "demo/hemisphr.dat": {
+      "sizeBytes": 6975,
+      "sha256": "ef29992ef59537e4b93dd7336d3ffbbe0de21591163248d634c679b4808e8822"
+    },
+    "demo/whale.dat": {
+      "sizeBytes": 94590,
+      "sha256": "c5ac0c07593e347dd3183a6c94c7d80ade0457a31709631dfe8e008b2549a161"
+    },
+    "demo/mask_image.dem": {
+      "sizeBytes": 1399,
+      "sha256": "a6176c08184ab2f6d415698de9937bf2adec0c573059996ce8dd8ec0094582ff"
+    },
+    "demo/scatter.dem": {
+      "sizeBytes": 1374,
+      "sha256": "ebf0bfcd7c979469faaa45fd06861eafb6bd67cec22c3e5df71e948f0e495a13"
+    },
+    "demo/Makefile.am.in": {
+      "sizeBytes": 3078,
+      "sha256": "57ab0b4952b2ecf4a3f1e6e360065e1da58f0e0a22a29e2b7f0cf77f66b0fd2c"
+    },
+    "demo/truncated_cube.dat": {
+      "sizeBytes": 2420,
+      "sha256": "69af91429bd4305a32109d606ce1a081c04421ffdee7b8a7af1810aef6c1a84b"
+    },
+    "demo/volatile.dem": {
+      "sizeBytes": 345,
+      "sha256": "f7466a6d81351edc20f0a63188afe817b0ec48ce9231ef225e710009022914d6"
+    },
+    "demo/textrotate.dem": {
+      "sizeBytes": 930,
+      "sha256": "3e6a2fe2f127d6cebe7925bd9b3fcfa36036042c0e7f035cb5a69ef5982ea8a6"
+    },
+    "demo/surface_explicit.dem": {
+      "sizeBytes": 1163,
+      "sha256": "dddf21ad2c21a6e522bf089fd38d979a846b3d005d822c94e093a9603ac75676"
+    },
+    "demo/nonlinear1.dem": {
+      "sizeBytes": 1436,
+      "sha256": "06efadf9fc4422c2f8016ef301050fbce0afc1cf2c38813d6d5db688f7f2d692"
+    },
+    "demo/imageNaN.dem": {
+      "sizeBytes": 2101,
+      "sha256": "6471edb8443308b21bf876d7c25caec83bee75267a6f106d45b98d979b5237d4"
+    },
+    "demo/3.dat": {
+      "sizeBytes": 781,
+      "sha256": "b874e64c70d19870e9a095bcd606d6e8c2cd81cc08a24437af74d11c9e09010f"
+    },
+    "demo/timedat.dat": {
+      "sizeBytes": 651,
+      "sha256": "91bdf02c4fa10270b0d34c22c02547665d5ec7d1051d260c083d77e1fb54b867"
+    },
+    "demo/gnuplot.rot": {
+      "sizeBytes": 1555,
+      "sha256": "ad6103f195c78c8f686abc52d9b8d01014f83637d2c917c608e9f2b10b4225e5"
+    },
+    "demo/complex_airy.dem": {
+      "sizeBytes": 1676,
+      "sha256": "345f89f91fa400447e4b0ab1ef4c6eb4a05521a6118bac0c7e22d4619d1d9d8b"
+    },
+    "demo/iterbugs.dem": {
+      "sizeBytes": 890,
+      "sha256": "7bb61e26a06c715029186c161da14e2cbe8cef292daa4cbe2059d5c95455032e"
+    },
+    "demo/clip_radial.dem": {
+      "sizeBytes": 1128,
+      "sha256": "679626363325b53a3e452b246580ba0656878291a79948cf8e10573c121f9788"
+    },
+    "demo/iris.dat": {
+      "sizeBytes": 5029,
+      "sha256": "21d67253d331d8e35442939f28ba62ca6b37fc481e82e4288dc1e30c4e27df7e"
+    },
+    "demo/soundvel.dat": {
+      "sizeBytes": 3708,
+      "sha256": "fa9dc3e2dfacfa35591822ef2a1738d3bf0ba55c7e6cf1020784a812ddd1b3d8"
+    },
+    "demo/bins.dem": {
+      "sizeBytes": 748,
+      "sha256": "385bf367befc7c51fc5a1add948f4c0d92ea4618cfa67358b7fbc7ccc3257bb2"
+    },
+    "demo/pm3dcolors.dem": {
+      "sizeBytes": 5197,
+      "sha256": "385631ccb6493dbd1a0fbfd7e31691ccbae9469ceeab6db0dee3fe53626826f9"
+    },
+    "demo/if_filter.dem": {
+      "sizeBytes": 590,
+      "sha256": "a569989c7f995026585c2876bb3078344599247fdbb542509874f8c63a9a7751"
+    },
+    "demo/sampling.dem": {
+      "sizeBytes": 3827,
+      "sha256": "b4877c3df44512ab35d16853a16f197a5ac49cfc28497bd232a461d0a914206b"
+    },
+    "demo/steps.dem": {
+      "sizeBytes": 926,
+      "sha256": "f2aaea3b026e38a8b7ccc890386598a2100d5da335451d65496f391cdb455e0f"
+    },
+    "demo/lambert.dem": {
+      "sizeBytes": 1924,
+      "sha256": "ddbb921a8f318b1ce35fd12c852f9343d1737a6c60bd96ef89839d14abb50268"
+    },
+    "demo/animate.dem": {
+      "sizeBytes": 982,
+      "sha256": "74d2e5090dd7813f4ae53ba50c875419e8292b9e3b5b7355a630bedd43eff33c"
+    },
+    "demo/immigration.dat": {
+      "sizeBytes": 1466,
+      "sha256": "1195324d7c29b8a6eaa7248d6730f31545e1b532756d129744512b5b1bf19213"
+    },
+    "demo/param.dem": {
+      "sizeBytes": 1615,
+      "sha256": "97607586287918f2c60854e09f5345a659b8ecbf30111aaef6345e731eec90a9"
+    },
+    "demo/hidden2.dem": {
+      "sizeBytes": 2341,
+      "sha256": "5d19fd11cc5fec2142a1122e51197b72c5ef99204842b1bdff254a046526031e"
+    },
+    "demo/using.dem": {
+      "sizeBytes": 714,
+      "sha256": "fc4fe2fa6b125551a7607a6a777eea247598a29c3b7523b900c4766c86a44463"
+    },
+    "demo/fs_empty.dem": {
+      "sizeBytes": 1197,
+      "sha256": "8f9b9a5b2fb704b318d9ae27d8721f2d987b7e5728f1466bae1e25a39c2ef8df"
+    },
+    "demo/short_vector.dem": {
+      "sizeBytes": 524,
+      "sha256": "b8a4bdc8e18c70e6c0e813a96496ea7466b3d17a6eb63bfa8705a832e3dd8295"
+    },
+    "demo/pm3d_lighting.dem": {
+      "sizeBytes": 1540,
+      "sha256": "b12f8bca9af5f0e4908fb471164d69d6a024cc0c1cf770fbcea76a57b66b7564"
+    },
+    "demo/Fresnel.dem": {
+      "sizeBytes": 1378,
+      "sha256": "a79e0f9148198087213e35e7575ebb2250fa149b186c8e9ccfbe2cb62e14f56a"
+    },
+    "demo/custom_contours.dem": {
+      "sizeBytes": 805,
+      "sha256": "22e3fe6ba7913ab627d0d1a086aa1d3c0c97dafaef37571df1eea7a1c33d749d"
+    },
+    "demo/sound.par": {
+      "sizeBytes": 162,
+      "sha256": "539adea0f9b4babb6c0c2f383ed9de26d18c8ae68fe8ff974e9f62c86bd1e629"
+    },
+    "demo/line.fnc": {
+      "sizeBytes": 41,
+      "sha256": "df7af7bee5451e48d3ccbe0bfa53d9427676dc0cb0994cfde9e1449eaef5a3de"
+    },
+    "demo/fillstyle.dem": {
+      "sizeBytes": 1572,
+      "sha256": "8a6d914ef61bf7a5cd476cbc4e472a095e0a58e0d55ee9284d044b871ea9c42d"
+    },
+    "demo/blutux.rgb": {
+      "sizeBytes": 49152,
+      "sha256": "1c8ae143aa0e63f6f3314e21f414cf0cd7db279d193507d50aa72042c478350e"
+    },
+    "demo/world2.dem": {
+      "sizeBytes": 965,
+      "sha256": "70c32ad894fbb7b70a4af1f6ae50b765cb15127897cf9e62f9686f7b72a92290"
+    },
+    "demo/polar.dem": {
+      "sizeBytes": 1267,
+      "sha256": "9f76c54527d93b412807462e0df772a5d5cde85f1b3f14f36ee5d970a677d036"
+    },
+    "demo/nonlinear2.dem": {
+      "sizeBytes": 1829,
+      "sha256": "19614445dd8a2e3fccd3b88f2dc35525d490094eb6fb5f4da1c8c7593183f365"
+    },
+    "demo/using.bin": {
+      "sizeBytes": 2016,
+      "sha256": "3555c8e237b38cbfa2e9a21a90e40cdf8b99008a46aa471ed6893629ae1f6094"
+    },
+    "demo/gradient.png": {
+      "sizeBytes": 903,
+      "sha256": "31f3da193a22c0754817931475aec42e77c41b0076cbdff7805798c78a39816f"
+    },
+    "demo/viridis.dem": {
+      "sizeBytes": 75,
+      "sha256": "886fa4312c579fda8343caedca7765db2ad6a1135724cb5e814f61aa6a5ba065"
+    },
+    "demo/srl.dat": {
+      "sizeBytes": 1049,
+      "sha256": "4bf32e0969140afa2994fdc3e40629d21a87da176990393d236d916b05f832f9"
+    },
+    "demo/violinplot.dem": {
+      "sizeBytes": 2894,
+      "sha256": "c4178d120fb18ceca652ebd26c1e66dd93f95691eaae2abf64f883da28ede14b"
+    },
+    "demo/poldat.dem": {
+      "sizeBytes": 1972,
+      "sha256": "92c5aaea3d99f6ea41ffe3ccd3cd8f7bdf1689d880e80459a88b19ad5a9877fe"
+    },
+    "demo/isosurface.dem": {
+      "sizeBytes": 1242,
+      "sha256": "abb53f8cbc19e517f769e252769bef4ce8a9570afb600a2c57bd8136974fb516"
+    },
+    "demo/hexa.fnc": {
+      "sizeBytes": 1056,
+      "sha256": "45b386afa8e9211ecce8be2838d13d8514e633cca066f6bcc7b70771eaeb50b7"
+    },
+    "demo/icosahedron.dat": {
+      "sizeBytes": 1794,
+      "sha256": "0b70ba99bef5bc7ff512f2090b1b7e2454e468bdfd5ac3654669c3106ccee68f"
+    },
+    "demo/pt_variable.dem": {
+      "sizeBytes": 2177,
+      "sha256": "fa0a3f148d349fb7e37073228ac0d66e253c26c0c3930d919255d40d750ac942"
+    },
+    "demo/complex_trig.dem": {
+      "sizeBytes": 2981,
+      "sha256": "b9b0cb2872d84cee2af294fe61ad013ffcefdf307f52626075eb9c735bc365bb"
+    },
+    "demo/binary_polygon.dem": {
+      "sizeBytes": 835,
+      "sha256": "1ec54589a90296bc55872f836975b8bd36d4cf79ef5f051aa022b93778f5c4d0"
+    },
+    "demo/transparent.dem": {
+      "sizeBytes": 1317,
+      "sha256": "e978b1382a49c06d6dcb59b74049ce9f285e8601a4222fcdbe4ff5aa304ae82c"
+    },
+    "demo/mxtics_time.dem": {
+      "sizeBytes": 756,
+      "sha256": "083b73b7c62090fb79599d5c0fa1743cb28870735ce0ce0d416b09e9bf16fb9a"
+    },
+    "demo/epslatex.dem": {
+      "sizeBytes": 1948,
+      "sha256": "6a00a0b844021ceb6fd7f2415370c80ee84edbcfbe1e7195a29e507792b2215a"
+    },
+    "demo/parallel.dem": {
+      "sizeBytes": 1884,
+      "sha256": "08fe5441621de22ade6d04d30215db40bde8a9e8b32a5ba82900abfba1d7b016"
+    },
+    "demo/pixmap.dem": {
+      "sizeBytes": 616,
+      "sha256": "00cbb384bb1585a4e361da028cda2ff87f52bb9d85d288ff8f2ff5e784607220"
+    },
+    "demo/watchpoints.dem": {
+      "sizeBytes": 1331,
+      "sha256": "8cc0f57fa6d8e2abbd97696c38493ade99a7ef8ffb1d616e32868903ac3e63e9"
+    },
+    "demo/mask_pm3d.dem": {
+      "sizeBytes": 1284,
+      "sha256": "e1634b0060c2291dc3a4177e63331b6440b8c98fe79aae8076509c01d08a007d"
+    },
+    "demo/rectangle.dem": {
+      "sizeBytes": 1758,
+      "sha256": "32c9140ac9ad88eca6694739119a501f2033123d2dbeea710a76b4e144157b18"
+    },
+    "demo/sampling2.dem": {
+      "sizeBytes": 1034,
+      "sha256": "829b30d9295be224828d22f2cfcb02662e867763e04ccc520a81b594ba953b83"
+    },
+    "demo/reflect.fnc": {
+      "sizeBytes": 1109,
+      "sha256": "db5a506776393861f8e1d3a2b4697be813ccdce9b6c8c18411c77261e012a478"
+    },
+    "demo/mouselab_1.dem": {
+      "sizeBytes": 884,
+      "sha256": "c44c728893118bf8e53b7fb8b3b8fc652155628bbcf86538fcdb229e4ef38221"
+    },
+    "demo/hull.dat": {
+      "sizeBytes": 2589,
+      "sha256": "873be1b50b3ee709e2b5085a8d6bafe6189af0ba05a02ae949412dc9a9c64025"
+    },
+    "demo/polar_quadrants.dem": {
+      "sizeBytes": 741,
+      "sha256": "39b18e0da65f7e42c9fbda7ef1a9f77c0426bfd5ddb2d6155da51752869c014d"
+    },
+    "demo/ctg-y2.dat": {
+      "sizeBytes": 583,
+      "sha256": "c2bb4e3214c0ec4d258097099db9752cd7db9c66bc049f72efdb52ce83df68cd"
+    },
+    "demo/spotlight.dem": {
+      "sizeBytes": 937,
+      "sha256": "2b6747689112d2e6a38bb000b0bd989fda65c73dd87fc76e7d06e0ac61678646"
+    },
+    "demo/walls.dem": {
+      "sizeBytes": 622,
+      "sha256": "97332ad10e1b6e8380be772b0110885919b72b4c7155d361a6969248969d1d52"
+    },
+    "demo/callargs.dem": {
+      "sizeBytes": 1805,
+      "sha256": "3723f2d7970c33a5278cdf25755abb5ddc02a0c567cd440d6ce69d6410b49090"
+    },
+    "demo/heatmap_points.dem": {
+      "sizeBytes": 2454,
+      "sha256": "dde45e6f915a00145fedeb26272265b1763c11009a28d857dd29401536ba81aa"
+    },
+    "demo/3Dboxes.dem": {
+      "sizeBytes": 766,
+      "sha256": "8e8529f6744d20ad116df75ac97236e2a6a2680e395f02fa671be9b6fe2c69a5"
+    },
+    "demo/vplot.dem": {
+      "sizeBytes": 1654,
+      "sha256": "af357dafc93d6a1728f9f431ef793b1ac4b48573189ae90b0373905d430e2a34"
+    },
+    "demo/int64.dem": {
+      "sizeBytes": 1986,
+      "sha256": "dcf7a2b6d846b7653890ef8dedb33a8b361a9ac59d2d50dd99cc304acdbebc49"
+    },
+    "demo/dgrid3d.dem": {
+      "sizeBytes": 2984,
+      "sha256": "00ae61d3107bfd53e510d6da3c362759077f1a24a328423f840af2b659788614"
+    },
+    "demo/polygons.dem": {
+      "sizeBytes": 4172,
+      "sha256": "4d9e24cd52463c7c65d6fed7c1ca3873c1b96e6052aaf835d4c4c9312611128b"
+    },
+    "demo/ellipses.dat": {
+      "sizeBytes": 91,
+      "sha256": "3264f7431f6454fe01e523b2ee6bcf3de83aeacd4a354fb9c2a81b9c857cbe01"
+    },
+    "demo/kdensity2d.dem": {
+      "sizeBytes": 595,
+      "sha256": "865dfd71b99e710cc89102b92a4113540fc77922f638c7c79586dc7dd2aecf35"
+    },
+    "demo/layout.dem": {
+      "sizeBytes": 4494,
+      "sha256": "17bfde0a9aadf951a48e0d6cb12438a4c41430fd6dfcc4ef1a87329aad678615"
+    },
+    "demo/special_functions.dem": {
+      "sizeBytes": 263,
+      "sha256": "6b59c730315c7b2fe0cdd75e3ca4a8b0d935d1254c28b6dba8ef1adf1ce27826"
+    },
+    "demo/spiderplot.dem": {
+      "sizeBytes": 1659,
+      "sha256": "7e44e1ee9b3e82d61a0f52c366a481dcb38969e2fcafc4a9f19ee97e7ce64aba"
+    },
+    "demo/boxplot.dem": {
+      "sizeBytes": 2734,
+      "sha256": "07c3e3143162d1f163a901ebd63e37ce4a23f1095af278a29f74dd7cb06b6264"
+    },
+    "demo/antenna.dat": {
+      "sizeBytes": 15089,
+      "sha256": "0ad44960c3aa4af2dbe1e27bf3cd6b81196fe0b67d5fa04f5dfc0cf756c074c7"
+    },
+    "demo/ellipse.dem": {
+      "sizeBytes": 858,
+      "sha256": "6344a3fe540954777663988905c0459be38a3169d76a1bc3484e3e0cd7e948e9"
+    },
+    "demo/image2.dem": {
+      "sizeBytes": 22414,
+      "sha256": "ae2fe5c6d0f8c2f75c6750e32de776fd15f7243a987c4895bbc76ff9f4276690"
+    },
+    "demo/textcolor.dem": {
+      "sizeBytes": 2183,
+      "sha256": "f905c2b4e46baf6e1ca4849600453be9a7ebf470111e22f2beebcdfc2de02e0d"
+    },
+    "demo/epi_data.dem": {
+      "sizeBytes": 1569,
+      "sha256": "95fafbe36471f0a230952e1ecefc71107ff426d3e46b745b69a24bab703b3814"
+    },
+    "demo/BesselJ.dem": {
+      "sizeBytes": 363,
+      "sha256": "56ebaf18ae1428c98633faaa34f5ce1d6df72b38c41299fa83474b1d90dd1a68"
+    },
+    "demo/binary3": {
+      "sizeBytes": 4096,
+      "sha256": "00b0d9bf26477762c6f0a5448b81ddb884d1b7c4f75319f727a8e78226d79b8f"
+    },
+    "demo/logscale_clipping.dem": {
+      "sizeBytes": 1761,
+      "sha256": "f4632b32adafc9235cb06959567248d3bf6c4075613a2e965adffa7b8b5af29f"
+    },
+    "demo/autoscale.dem": {
+      "sizeBytes": 2058,
+      "sha256": "518307444c0a2c2b1c780d6304b5d339eee2adf14b52dd558d194596d165c055"
+    },
+    "demo/hidden_compare.dem": {
+      "sizeBytes": 1034,
+      "sha256": "78e1243d9abe115feb15c6cc70952df9fae32450de8152e47b84c0666b65e3ac"
+    },
+    "demo/matrix_every.dem": {
+      "sizeBytes": 1095,
+      "sha256": "be2f3b254a03a5e8c5ad5ea5c36b36ddc7c80de475cae9fa5a35adbb1d070bd6"
+    },
+    "demo/argb_hexdata.dem": {
+      "sizeBytes": 787,
+      "sha256": "f659f9e4529f2b4f394330d7f0c9754d64bef86d38f8b4e133a1b0442fd57859"
+    },
+    "demo/rgb_variable.dem": {
+      "sizeBytes": 3713,
+      "sha256": "085b6deff8578d8ab2ce2f1a45f28b0340f9296b84a384389f93d2ef1faace02"
+    },
+    "demo/energy_circles.dat": {
+      "sizeBytes": 3266,
+      "sha256": "7b9cf7340315f5f789c9404b5f74334ee1dca7d8e8543f92745372414a9b181f"
+    },
+    "demo/bf_test.exe": {
+      "sizeBytes": 84480,
+      "sha256": "c91033f14ebc22e70e4512cef7f5ce98bbc477d6776dfa7a4432853484261811"
+    },
+    "demo/clip14in.dat": {
+      "sizeBytes": 78,
+      "sha256": "ca317e27be5210a7f70bdbed9b6ae69abde1449a268514e4d898bc40141b3b6c"
+    },
+    "demo/hsteps.dem": {
+      "sizeBytes": 3076,
+      "sha256": "53cd6a49a7baa8b258dd9e0d9805c1db78de8671365df00cdecd4f9e69358721"
+    },
+    "demo/all.dem": {
+      "sizeBytes": 14298,
+      "sha256": "52bc34453f35c899bb0080cbdd060b3c6725ef20b4749800df3d91fb1f58bf8e"
+    },
+    "demo/GM1_sugar.pdb": {
+      "sizeBytes": 4556,
+      "sha256": "7360488af69a31d7633ebab9339152ba43697ca3a222b74775b40977a1f7b6b9"
+    },
+    "demo/watchpoints2.dem": {
+      "sizeBytes": 1787,
+      "sha256": "ef7e2f738f9b209faf5bf403b677681369b7e8d519021326be7cb22afffd7115"
+    },
+    "demo/hypertext_surface.dem": {
+      "sizeBytes": 1465,
+      "sha256": "63295568e43eb123413b493d638eb55eb4026d4ed246e91d9fa403c2df985ce1"
+    },
+    "demo/dodecahedron.dat": {
+      "sizeBytes": 2019,
+      "sha256": "c8cf72f5d45bc2baed8af2e4be76c84f15207ca2f0406eee9a96bb15d3f745bd"
+    },
+    "demo/igamma.dem": {
+      "sizeBytes": 1073,
+      "sha256": "45d2641466d4c7cef31a665ba19285b2db46b21154b242e17d699bee2a6f0ed4"
+    },
+    "demo/custom_key.dem": {
+      "sizeBytes": 2013,
+      "sha256": "4cd53f9c6b16da56c8de1c381c208b11526068ace974c9d34cfd6b2f5320b37c"
+    },
+    "demo/airfoil.dem": {
+      "sizeBytes": 4776,
+      "sha256": "b06ce10719ceb1406c56b12fd2ba70d013c923bc198f58f855beab8cd0c35d70"
+    },
+    "demo/animate2.dem": {
+      "sizeBytes": 1348,
+      "sha256": "92102583be69d51260fb63549581be13e93f2364561ba8802550af6f86920fe3"
+    },
+    "demo/timedat.dem": {
+      "sizeBytes": 3364,
+      "sha256": "dfd1e78b33e4d0314fad648b76a1171a2abf745045045c98a2d0a21be2fac5c0"
+    },
+    "demo/chi_shapes.dem": {
+      "sizeBytes": 1808,
+      "sha256": "dc279986e8cd1f84768e50e23f14878803ff709740c07c1d1cdc5cf4b652a9b9"
+    },
+    "demo/smooth.dem": {
+      "sizeBytes": 1649,
+      "sha256": "138ee90ff51a949ca318b9013e9a962a62717fff6e50faf03fe98cf34dbaf9d7"
+    },
+    "demo/dashtypes.dem": {
+      "sizeBytes": 1585,
+      "sha256": "41be9c5bad4cb894a7b439e969faefc19d2e9528288ba7b55053da3318464bad"
+    },
+    "demo/varcolor.dem": {
+      "sizeBytes": 4473,
+      "sha256": "91ad0fe88ad11e8f35c03b076c0ac9c32c700aaa1f1ae3944f22f45b24a7e369"
+    },
+    "demo/random-points": {
+      "sizeBytes": 21329,
+      "sha256": "830feed975291a409984ba927af40c0a5998194b87e5f69a32f9990f3a663e2c"
+    },
+    "demo/stats.dem": {
+      "sizeBytes": 1451,
+      "sha256": "a18052f4e648ba014c9786aa0891edd3ddfde54bd6f0ead502644a973b55c465"
+    },
+    "demo/jitter.dem": {
+      "sizeBytes": 3443,
+      "sha256": "6287c2c309769af1c818c8ebf30ec550b2cb6550e5d6d662c7fc93becebbb32b"
+    },
+    "demo/colorscheme.dem": {
+      "sizeBytes": 650,
+      "sha256": "9e6a91aa7a8e750d46597c7f407a537d01c23fe4c27e894ed14e353840d78cf7"
+    },
+    "demo/voxel.dem": {
+      "sizeBytes": 2287,
+      "sha256": "38363583f9f946faab809dadf43fdf5f77408085f61fde7d66e3f926f69c9f60"
+    },
+    "demo/nonlinear6.dem": {
+      "sizeBytes": 491,
+      "sha256": "9a311deee126f9247d11774b46d6ba48e8f33d80afc1aabac559a400142fdb88"
+    },
+    "demo/barchart_art.dem": {
+      "sizeBytes": 921,
+      "sha256": "ec1e4d20c84b66b443e7a0be8f9aeefc5cb316ccefbdf3d689e6549756bc4f3e"
+    },
+    "demo/image.dem": {
+      "sizeBytes": 11592,
+      "sha256": "3bc18e09e2c16cd9a44e1a6fedb90170c5b5dfa3b66867053572904e390480fe"
+    },
+    "demo/iterate.dem": {
+      "sizeBytes": 2122,
+      "sha256": "4227bf312f55dede1202422698a4268cc5f17b618dd0fd0d4e73f20ecc5f3e54"
+    },
+    "demo/silver.dat": {
+      "sizeBytes": 1782,
+      "sha256": "3b529306d7ea00e99e941e443512e3868f0cc4027e22a5431dec3d7d626d9be0"
+    },
+    "demo/stat.inc": {
+      "sizeBytes": 8032,
+      "sha256": "0dd8a4f7eadd417fe9fb1648ef580d26bc0b3b7525a44f8cf799adc0db6791c0"
+    },
+    "demo/keyentry.dem": {
+      "sizeBytes": 1600,
+      "sha256": "1fd4cc99d40c0f9e1134b59a297b9aa3393cc4ece003d52ab1784711c1cf49b2"
+    },
+    "demo/azimuth.dem": {
+      "sizeBytes": 760,
+      "sha256": "4eb13827849c9a58ac17887a675d32239b9dd67c29ceecc4c8a5220df20a1e16"
+    },
+    "demo/ellipses_style.dem": {
+      "sizeBytes": 1865,
+      "sha256": "b1a89ee55917037a967382cd053883ce043c472ba94997e6ffc6e8e8c59d5bf2"
+    },
+    "demo/borders.dem": {
+      "sizeBytes": 318,
+      "sha256": "f6af34998071dacf7ab8b80f462776e4ecfddcc80cb1169aaec6695bd4d76169"
+    },
+    "demo/histerror.dat": {
+      "sizeBytes": 144,
+      "sha256": "a9f21c9d3c53449baedb8d6af53aea32d9eb68ae18e5db64a8e0afd6ad33f38a"
+    },
+    "demo/GM1_bonds.r3d": {
+      "sizeBytes": 10488,
+      "sha256": "ac67c1c147ed0020ec82cd1c60aa18fa0d534d60e18f44d1514b2c0aa5d4ffff"
+    },
+    "demo/array.dem": {
+      "sizeBytes": 2364,
+      "sha256": "b2c484cd2506b57c37f901d807900efa310563b300f1ae777d996da44d0138bc"
+    },
+    "demo/gen-random.inc": {
+      "sizeBytes": 360,
+      "sha256": "db85c048c32a3848a128e7873ebdd3547a8c17724e2e6bcd84823fc0c9058eae"
+    },
+    "demo/asciimat.dat": {
+      "sizeBytes": 902,
+      "sha256": "365d5c1ede1678b1eeb32b708d50ba980f3ee51c5ffd4eb2f67ba1649188b938"
+    },
+    "demo/controls.dem": {
+      "sizeBytes": 639,
+      "sha256": "5f75de942047df6540a641cb0852dd9b730c7dd7dcb7fb9097879ce58e17f8e3"
+    },
+    "demo/errorbars.dem": {
+      "sizeBytes": 2125,
+      "sha256": "c95d1283734a1dc499d4bfc8f40d50cb23c68dc5a80db80a8b3d6aebd6df5ba7"
+    },
+    "demo/random.dem": {
+      "sizeBytes": 5238,
+      "sha256": "3434feda28c8a0f914ab85b7915290c0914781e05793ef4c84baa8bab20356a7"
+    },
+    "demo/singulr.dem": {
+      "sizeBytes": 4033,
+      "sha256": "3667a4c437dbe404e0d67b167715b9d8d20d57d939645be9038734652b5482f9"
+    },
+    "demo/electron.dem": {
+      "sizeBytes": 2020,
+      "sha256": "bea5afb0970b1984bbf8ed7c111e67f3746c666535e162814ba0f1ba6c2476ba"
+    },
+    "demo/running_avg.dem": {
+      "sizeBytes": 1394,
+      "sha256": "7d07d5e5bdbb8096ec29510f9e8d719ac346878c29475736eaf0cd7233d73a39"
+    },
+    "demo/stringvar.dem": {
+      "sizeBytes": 4678,
+      "sha256": "96891360a6524a3836aa41f576498a52f332dd6bf611ce551b6d487cb83d1bd9"
+    },
+    "demo/rgb_variable.dat": {
+      "sizeBytes": 2195,
+      "sha256": "2b386f237ef3ecf00f1403772a9e2ee2cf36c8d71f09670c9e7a44c10e44bda7"
+    },
+    "demo/orbital_elements.dat": {
+      "sizeBytes": 6195,
+      "sha256": "43919a1241fbca6837bc395cbab93814d7a9c1ec84ac002a4d44932760908f3e"
+    },
+    "demo/candlesticks.dem": {
+      "sizeBytes": 1307,
+      "sha256": "11abdfd02d88c3b91749e0126789272f0a2a0799a669596fc731f95487f5c200"
+    },
+    "demo/smooth_path.dem": {
+      "sizeBytes": 1067,
+      "sha256": "e994becb647b97702bbb180ea18644a8ba8a3b2193a797342f69b2f71129ecb4"
+    },
+    "demo/optimize.dat": {
+      "sizeBytes": 656,
+      "sha256": "acc1f38e71086a1ca18a0d999d33fd68c5411c75c2c43295c0e6664b138a261c"
+    },
+    "demo/heatmap_4D.dem": {
+      "sizeBytes": 1029,
+      "sha256": "88ec014e9fa56699712fd5955a75cb825f63f4aac66a63b9dac710d73197bcb5"
+    },
+    "demo/armillary.dem": {
+      "sizeBytes": 2106,
+      "sha256": "afa95a0509f56ac549f63c3488dc8b1eb54e5810623c52089c2b4cb9ea2be8b3"
+    },
+    "demo/aries.png": {
+      "sizeBytes": 774,
+      "sha256": "e0cfa4ebe1a4a0572b1d2ec345d79d1a0ac8b63d03c608bdbc13db1e4ea27231"
+    },
+    "demo/world.cor": {
+      "sizeBytes": 3419,
+      "sha256": "a57003b20e74a03f27839ffdb96585a24ebc0a22522ce5bbfc78f40d7233c3c7"
+    },
+    "demo/rotate_labels.dem": {
+      "sizeBytes": 594,
+      "sha256": "9da5a6220b8247ccadb6e4d68b4b020c78726796b84099030fdd29f53550d205"
+    },
+    "demo/overflow.dem": {
+      "sizeBytes": 1162,
+      "sha256": "9e095cbd0a336417b3c56114d3a113e96ed23cd48cfdb70b04650eb41d315526"
+    },
+    "demo/binary.dem": {
+      "sizeBytes": 500,
+      "sha256": "49958951acbdf237e296abdc4a86d8c7b34195f9e68a547fe11cf7cc1c0e9734"
+    },
+    "demo/2.dat": {
+      "sizeBytes": 781,
+      "sha256": "76e75f886688b16c9d3d4acefc487ee33f7e49d1c4fb57008eac741b7d251fd3"
+    },
+    "demo/fillcrvs.dem": {
+      "sizeBytes": 2211,
+      "sha256": "a21af5e8f07d0ec5e492b3a4936b70d07d03052de4316087f1ccf9dbb495e742"
+    },
+    "demo/named_var.dem": {
+      "sizeBytes": 416,
+      "sha256": "397d6c154973f29d2d84b14b1c9483aed46abd34d2e962b137a6964a759c488b"
+    },
+    "demo/mouselabels.dem": {
+      "sizeBytes": 819,
+      "sha256": "9cd4710eaa955df8fde142577e5da3289e5c73217ce97bf3b93965a8a7869f02"
+    },
+    "demo/multiplt.dem": {
+      "sizeBytes": 3594,
+      "sha256": "fe6759d2d9cda6fc76855e508fd89f00d0bcb0cb10cabaaa264e6e62f1eeb158"
+    },
+    "demo/hypertext.dem": {
+      "sizeBytes": 821,
+      "sha256": "15e21821de23f2ab6c6607b4f0cfdb5392ae4964fad0d0f60d5f7a6f9f7b8848"
+    },
+    "demo/Dawson.dem": {
+      "sizeBytes": 1655,
+      "sha256": "cc5e5eab61983e01e7c7da5ed34494ba52b4a31f771c6fe24466defe504e45ea"
+    },
+    "demo/pm3dgamma.dem": {
+      "sizeBytes": 585,
+      "sha256": "12caff88ec2fe0098668dba233ede713bedf0dc344f66e47d4465bc9319fb474"
+    },
+    "demo/gnu-valley": {
+      "sizeBytes": 84,
+      "sha256": "9a709552f384edc89ca6533a71eb7b03e51fb85fddf5ac463b14847cad4859dc"
+    },
+    "demo/function_block.dem": {
+      "sizeBytes": 2916,
+      "sha256": "d65534947863393ab20808541550f0c49422c1a63925da7c58d6ef50e6775655"
+    },
+    "demo/enhanced_utf8.dem": {
+      "sizeBytes": 1771,
+      "sha256": "3ca4e2476b35158805d2241e16a0cea60c0fccf20d64ba8ee7c3ecb63edb9da3"
+    },
+    "demo/nokey.dem": {
+      "sizeBytes": 434,
+      "sha256": "52bb2142ac39580b830068beb209f2ab11ef694e1c2a832751deb545a6268d6a"
+    },
+    "demo/fit.dem": {
+      "sizeBytes": 16474,
+      "sha256": "3a1214bf59e44038e6983e7fd2dd8eaac1292d4c04b957a38552d9b0888c6fcc"
+    },
+    "demo/histerror.dem": {
+      "sizeBytes": 477,
+      "sha256": "ef5ffd50529d28e7c1fca0484e3dd22a6291ec3bd190ba6b2e85df4cba97daac"
+    },
+    "demo/spline.dem": {
+      "sizeBytes": 2605,
+      "sha256": "1870cd9639ad336477f28986cbaabb49698c4ae2f4ebc10facaf31ca2ca8c8a5"
+    },
+    "demo/pm3d_clip.dem": {
+      "sizeBytes": 1349,
+      "sha256": "5dbe2a05fccf5db9a7c8f1ea9a0b57ac86933b27afcf3a750e24a82319e0e40c"
+    },
+    "demo/split.dem": {
+      "sizeBytes": 421,
+      "sha256": "fe8ba8b3f9ea0cce32745c90312544dce09a070fee9d3ff36697b2c0bdce0b8c"
+    },
+    "demo/logic_timing.dem": {
+      "sizeBytes": 759,
+      "sha256": "d240beaebe2abb452136e84f55bda03802f59b3998ae6227b4293e95bd0fde42"
+    },
+    "demo/fontfile.dem": {
+      "sizeBytes": 1158,
+      "sha256": "b5d0e82b422c9061efe4886d451f47bd0dccff062c756c8ae80c669bbde36bb6"
+    },
+    "demo/named_palettes.dem": {
+      "sizeBytes": 2869,
+      "sha256": "e6fa1ac69276e2b8278f4cbe98eca06661d69106ee3cac21aae16dfb3e1e0592"
+    },
+    "demo/textbox.dem": {
+      "sizeBytes": 679,
+      "sha256": "a0be9b230201c75cd3a74a8d8ea51b5944c2007df47d061bed878fde38830927"
+    },
+    "demo/expint.dem": {
+      "sizeBytes": 1525,
+      "sha256": "f2948af8be8088b0dd04dba47cc6fa10cb75c85617e7f7280765d84638ddbea3"
+    },
+    "demo/nonlinear3.dem": {
+      "sizeBytes": 1049,
+      "sha256": "f4b37f1a4138881c0a15929d1bafdb4fe078141c28145e20f2299118ee53af84"
+    },
+    "demo/gnuplot.cfg": {
+      "sizeBytes": 179,
+      "sha256": "2ff070005e1ebe08b3eab69e090ea1eeab6cdc8e96c2227c20637d64db30bce5"
+    },
+    "demo/projection.dem": {
+      "sizeBytes": 1434,
+      "sha256": "69f784b9a828fdfa128778cee3230613111929e034871be1327ca78a10bb4910"
+    },
+    "demo/rainbow.dem": {
+      "sizeBytes": 2705,
+      "sha256": "67f2c6ea388e049e3a901e64d86d8330d207d80517dcc50a61c01b4b34d1ad01"
+    },
+    "demo/table.dat": {
+      "sizeBytes": 654,
+      "sha256": "6d6b78e8553acda564e84e711061e6469b35470e62d2b292acf75952aea47a76"
+    },
+    "demo/tics.dem": {
+      "sizeBytes": 922,
+      "sha256": "695f03551cbbe4f5df889663d408a9ac0ea0075b5197f05afa6f9448fd23d423"
+    },
+    "demo/colorwheel.dem": {
+      "sizeBytes": 453,
+      "sha256": "dda4809868f29d70f40c3a2bab9306ea3e3142c257897667f60d70c9a4e597b4"
+    },
+    "demo/ibeta.dem": {
+      "sizeBytes": 1104,
+      "sha256": "49765c2d0612e884599fd88e7f33ba0c825bbdb42b9a4c4b35abfe6ed6440586"
+    },
+    "demo/world.dem": {
+      "sizeBytes": 2019,
+      "sha256": "51a8d6538125cc1caa88603fdf655bd126214b40e0104f3d2c15a303670c7e18"
+    },
+    "demo/multiaxis.dem": {
+      "sizeBytes": 693,
+      "sha256": "426602e1a54e620a30738a77d32719e9d6d6f74afebcfc1581f429282977de3a"
+    },
+    "demo/monotonic_spline.dem": {
+      "sizeBytes": 503,
+      "sha256": "4d4ab3ce6badd6009c54aab4395a08a621ec789072f00c1924f6f0119243e97c"
+    },
+    "demo/nonlinear4.dem": {
+      "sizeBytes": 942,
+      "sha256": "8f1ba6873368b6a9b3907b830cc8e5bc1e029fc801027ec12c6be9940a145761"
+    },
+    "demo/steps.dat": {
+      "sizeBytes": 51,
+      "sha256": "59f00e81749ed678d090f9c0aa540d63aa2a60eed952c09da575e084c679f219"
+    },
+    "demo/iris.dem": {
+      "sizeBytes": 1852,
+      "sha256": "241a9d042a69489ebc5ea7aedee83e9b682ad94c4abd184e28c2df99688981a9"
+    },
+    "demo/binary1": {
+      "sizeBytes": 2816,
+      "sha256": "a2dc2d3ebb54b15a4e72a2c37493e1aa845f5bd985bc70ae10d7fe4bc97c2110"
+    },
+    "demo/contours.dem": {
+      "sizeBytes": 4483,
+      "sha256": "0af1bc6924480cb8ee8a30ae3c91522294f1f515192c77f4427902df6bb3b6b3"
+    },
+    "demo/linkedaxes.dem": {
+      "sizeBytes": 1337,
+      "sha256": "dfe111743fc339e6d695516166751e26d5f37dd83cbb5a585667022531797c31"
+    },
+    "demo/special_chars.dem": {
+      "sizeBytes": 494,
+      "sha256": "2d4c70ec98eb1ef009f7170815c084e6044b5566f46c6596d55c0da211e40c0b"
+    },
+    "demo/scatter2.bin": {
+      "sizeBytes": 1380,
+      "sha256": "bb5f6915affd60eebaf29dd1e254dafd1a10f410004388e15adafc691ac34add"
+    },
+    "demo/glass.dat": {
+      "sizeBytes": 8536,
+      "sha256": "c00af641540b28d1592313519ac001affd29f067c08cb98943bcda35bbb14754"
+    },
+    "demo/watch_contours.dem": {
+      "sizeBytes": 1198,
+      "sha256": "3e810e54fe11a21ae34deb8dadaa6607eb856a828149152c62f25343a0c576b6"
+    },
+    "demo/ttics.dem": {
+      "sizeBytes": 828,
+      "sha256": "0add4a5e4b9841a29ec664949285d2abe0b7aa1a320808f1efa7d98c83fd2289"
+    },
+    "demo/macros.dem": {
+      "sizeBytes": 736,
+      "sha256": "4abff3baffc82a9821e0bf0bce6aca73762e570016ed24a79568a1a9dcaaf17e"
+    },
+    "demo/week_date.dem": {
+      "sizeBytes": 1510,
+      "sha256": "40790124f4408947431c2af30dce94b3a161a0398cd0b115aaa9ff9b5baabd00"
+    },
+    "demo/mask_pm3d.dat": {
+      "sizeBytes": 2539,
+      "sha256": "da044461edb45a4ee4b3c4943e6388f75ffa7b3f9a9308995b1121e4f5ca0f33"
+    },
+    "demo/klein.dat": {
+      "sizeBytes": 20117,
+      "sha256": "9482af2f667d4fa3d16e77163665af890fabbbcee30f4cd6519d98dfdfbe17ba"
+    },
+    "demo/fit3.dat": {
+      "sizeBytes": 18075,
+      "sha256": "06997ccf701464102fb9c9c00d86b4be49e638c49b2c68db5139c983c925f707"
+    },
+    "demo/elliptic.dem": {
+      "sizeBytes": 1305,
+      "sha256": "4c01dc1078dbfedc240982bc20f0e55ccba515b8f64698b0be0aec13e975fb91"
+    },
+    "demo/margins.dem": {
+      "sizeBytes": 1495,
+      "sha256": "2920a56f7a2c817cd010a4177ce96f6141c30452a218ecfb9ac2653f7891d858"
+    },
+    "demo/array_index.dem": {
+      "sizeBytes": 917,
+      "sha256": "e4223092b6368c68b3fafae2815ae02e775e5e41f1e73ab8e54f5bdff3dac088"
+    },
+    "demo/rank_sequence.dem": {
+      "sizeBytes": 608,
+      "sha256": "ec8bcef170172ff8f210fb4df9f4c5a13f69967155957377d3aa77f3d5a8be58"
+    },
+    "demo/scatter2.dat": {
+      "sizeBytes": 1845,
+      "sha256": "9ea9af39542ccf8989353be9638d765d77a0ce9946e1827e6eb6c6e068b5c07f"
+    },
+    "demo/multipalette.dem": {
+      "sizeBytes": 427,
+      "sha256": "9056495ae85e033ff2a6c40e56d36b3df064876f7196cb7b5c29041f77ffe729"
+    },
+    "demo/cities.dem": {
+      "sizeBytes": 654,
+      "sha256": "bea88eaf1e5e41e11407fc6c62b4201d655ac6f6c5408eb442c63926e6d4cbc8"
+    },
+    "demo/palette+alpha.dem": {
+      "sizeBytes": 720,
+      "sha256": "95d1cf872d4568d8fdc8487bae068cc3652af57892e7b8c90b7d71cc391159ce"
+    },
+    "demo/key.dem": {
+      "sizeBytes": 4845,
+      "sha256": "94ca46e444aea8a060a1b96e87b5cb418a528b8c71f348e8ec6bed1b2e959940"
+    },
+    "demo/charset.dem": {
+      "sizeBytes": 1944,
+      "sha256": "80313039b561b27d24e2cb456afac886ebdad319cd1cfa257ba47c40bf093318"
+    },
+    "demo/solar_params.dem": {
+      "sizeBytes": 2417,
+      "sha256": "9307464da79072544e294b6963b64c1eabd0d55e6de8cda3363d926d79c16021"
+    },
+    "demo/BesselK.dem": {
+      "sizeBytes": 1718,
+      "sha256": "962477c80e4ed8f0dd94b9deed5f618b57a92df82dffee310185e8cf425da503"
+    },
+    "demo/dodecahedron.bin": {
+      "sizeBytes": 2016,
+      "sha256": "8888ba023c806f7516336f6e197c0cd618dfa10fb5b44c4315009dfdc45f1961"
+    },
+    "demo/rugplot.dem": {
+      "sizeBytes": 472,
+      "sha256": "d4b19b2ebc08e098d4a9b3eab82f2c70fb4e71423e52e39320f39d346329ea47"
+    },
+    "demo/big_peak.dat": {
+      "sizeBytes": 261,
+      "sha256": "551ab271094780fc5ef77c73990f510921d4e112e36c22e59da1cb3a64294915"
+    },
+    "demo/boxclusters.dem": {
+      "sizeBytes": 1238,
+      "sha256": "3c80ba799132a5fbef37d4bb62e5daac21f8035ceaf1ece316862767a8c15262"
+    },
+    "demo/moli3.dat": {
+      "sizeBytes": 9500,
+      "sha256": "a5863e0c42af37f6bd73786348a2086ef920dbc1de6a51d31a441aadbc9229bb"
+    },
+    "demo/unicode.dem": {
+      "sizeBytes": 1120,
+      "sha256": "f2e08fa4de33348e341270b78dea0858963fe89770afd768692c21fdb4828c4b"
+    },
+    "demo/log_tics.dem": {
+      "sizeBytes": 301,
+      "sha256": "cdf7079b477c83af531b5cbe19e40409b26f33e896216b6d677c2c1382f14503"
+    },
+    "demo/cerf.dem": {
+      "sizeBytes": 2711,
+      "sha256": "5a5bd07126c14d5d6e08ca831272e964ce73ee57113db1729f17cfd59d19668a"
+    },
+    "demo/matrix_index.dem": {
+      "sizeBytes": 881,
+      "sha256": "00fc43c3259d69d9a0c69b40e42ef944ce9adb4e97d48b2842923da35363ee27"
+    },
+    "demo/finance.dem": {
+      "sizeBytes": 13341,
+      "sha256": "c45f049c5c9a520dd1beb85195a360ecb7f2876b970bbff0bbb7f602f5f47575"
+    },
+    "demo/bolditalic.dem": {
+      "sizeBytes": 350,
+      "sha256": "5cbee1200b5953c68f42bbd577025062f51b094be786e5df6af36cd877132c19"
+    },
+    "demo/arrows.dem": {
+      "sizeBytes": 944,
+      "sha256": "27ff95d612b49602de5ca7b50e2f1e0212c589dd6cebb4cb62c95f6c498d72d6"
+    },
+    "demo/molecule.dem": {
+      "sizeBytes": 520,
+      "sha256": "ff57a0c82572efdd933c78fd2ea82fa46bccb33e1bc25fdb5d694cff7c3b8329"
+    },
+    "demo/zerror.dem": {
+      "sizeBytes": 1045,
+      "sha256": "5886890b5f6dd565b0a2e213bd9d9a9f2bb940d81b0eef63f04565fda5bd5c8f"
+    },
+    "demo/heatmaps.dem": {
+      "sizeBytes": 2644,
+      "sha256": "9991739f065181aa46dabe41aa3d26d48d41c6c2a1cead1b65e4afdd0b2d91a0"
+    },
+    "demo/contourfill.dem": {
+      "sizeBytes": 3104,
+      "sha256": "9247ecc6fc5e411a1871362d4c32e198ac135e787ea1cea3337227dce5ceccca"
+    },
+    "demo/using.dat": {
+      "sizeBytes": 5568,
+      "sha256": "60a82d2d66201c67eaa92f2c858eeefcb561c0e1c2f036e9ca90e0e6d4d2fd72"
+    },
+    "demo/sharpen.dem": {
+      "sizeBytes": 497,
+      "sha256": "f248b77d07ddc15c948148deaa9b186a29820474b265fc060efa5554e57ab7b3"
+    },
+    "demo/binary2": {
+      "sizeBytes": 4096,
+      "sha256": "e20d7f5240e7b9b0cd320509f92de9bb0c14a45eb91448c148dc8fa8711739a3"
+    },
+    "demo/polargrid.dem": {
+      "sizeBytes": 1900,
+      "sha256": "d61fb186de995fbffcdcdbb780b0870796bc2ed784545cda72fcb8a8fddc2c3e"
+    },
+    "demo/columnhead.dem": {
+      "sizeBytes": 683,
+      "sha256": "65e86eb4cbc1c5090d37323bb599c1b1371d6c292becfb42b0f2644f62645343"
+    },
+    "demo/invigamma.dem": {
+      "sizeBytes": 1086,
+      "sha256": "f3dd7b52b3073852bd6375acff3e1a00cfa328276ad86736543515ccdf4adf9e"
+    },
+    "demo/break_continue.dem": {
+      "sizeBytes": 620,
+      "sha256": "5457e2a1148db54f078501f7cd7250da09fe71f92a9c8b3a41acc7320660c41d"
+    },
+    "demo/arrowstyle.dat": {
+      "sizeBytes": 565,
+      "sha256": "649b2745ff29beb45a0afae8a6ab468179fea96794614263b8ddf5e1755d4004"
+    },
+    "demo/colornames.dem": {
+      "sizeBytes": 6366,
+      "sha256": "5d7d48b4c91150cb47b134b4aa840ed4a98c5af575b81ec70224bd807cf2b0a7"
+    },
+    "demo/triangle.dat": {
+      "sizeBytes": 470,
+      "sha256": "24c45eb3639d5af9e29160d3df81163cae265d9895e020ae099e4135048afad3"
+    },
+    "demo/discrete.dem": {
+      "sizeBytes": 516,
+      "sha256": "aeffba4e68decfcc7a1f5aa8c0af94e258ac4e28a0669d628d67113510b6aea6"
+    },
+    "demo/dashcolor.dem": {
+      "sizeBytes": 2956,
+      "sha256": "fc5324618d54d0761539c810f8bd3514a05f3596c10eed8bf9bda91c98f70591"
+    },
+    "demo/density.fnc": {
+      "sizeBytes": 686,
+      "sha256": "979ec319537f2d2c1f9003814d500eb7c720dda55ac42b3ddc33b520785a153b"
+    },
+    "demo/gantt.dem": {
+      "sizeBytes": 1577,
+      "sha256": "8c0d760d80fdc46cae9de2fbe04e031263c02d75ced6669d5c2f1745dc0d5a4b"
+    },
+    "demo/boxes3d.dem": {
+      "sizeBytes": 1829,
+      "sha256": "db9f886afd40a2ba8f900164fb12d6413a9a61001f51aba172e4a7bf358cf931"
+    },
+    "demo/Makefile.in": {
+      "sizeBytes": 26618,
+      "sha256": "bad91a2c58105d888fd85e6321a86747209eb0b55f7edad68ab37ed9e2d835bd"
+    },
+    "demo/mgr.dem": {
+      "sizeBytes": 3198,
+      "sha256": "f7e24e80ed65b0146703b7dbd1ffd8241446536d4b0d0b4a7f85842570fcdbb6"
+    },
+    "demo/hidden.dem": {
+      "sizeBytes": 995,
+      "sha256": "4c2f8bb271454e3f2447fa0d4eef9604869f7540ccc484e0843550d8de94c8b0"
+    },
+    "demo/pointsize.dem": {
+      "sizeBytes": 1783,
+      "sha256": "734c34a06392c41d4abcd1920fdeeb6e577d89b862b9cebc41e956eaf777fb58"
+    },
+    "demo/sectors.dem": {
+      "sizeBytes": 12578,
+      "sha256": "9dab4d43e0ab211907defcabd1c04ea2ba3245be0188d87959091aa9d5fdc53a"
+    },
+    "demo/approximate.dem": {
+      "sizeBytes": 1221,
+      "sha256": "513161059f5b03da6e22d8ebfef6a44857d0f97c6e8b3cea98e83f2f2f0dbc01"
+    },
+    "demo/finance.dat": {
+      "sizeBytes": 18841,
+      "sha256": "cba9ae6b3744a8254af281ee9328ea272ddb10fe265e8bbf20a4b5a226a9ab21"
+    },
+    "demo/circles.dem": {
+      "sizeBytes": 2277,
+      "sha256": "d61bb63f68d352b0aeca9e17e24748211ec51fddeddec7e8113d43d1acb17dee"
+    },
+    "demo/polygon_border.dem": {
+      "sizeBytes": 976,
+      "sha256": "4d006ff214d82e68d959365cd8cabf3c91df962e37265fbc9c54abba04c18d5c"
+    },
+    "demo/prob.dem": {
+      "sizeBytes": 27211,
+      "sha256": "1851c70b381363aea0bc5f9b2a37f29c86221b3d8e16d0d1192306356bea3835"
+    },
+    "demo/uigamma.dem": {
+      "sizeBytes": 1502,
+      "sha256": "5a2af0c4ccad1e0cc9e7ab14f2bc4820cb357891539d9d171c925113ddd41886"
+    },
+    "demo/pm3d.dem": {
+      "sizeBytes": 10929,
+      "sha256": "dc2c90c0bad4861ce5cbf30dc6af4e16660e5d8a26a2568c15f70fe67a76ec98"
+    },
+    "demo/datastrings.dem": {
+      "sizeBytes": 2964,
+      "sha256": "ec07cf7a5ccb6e1bb48f1163ed28056a23c266827a3faed811a04e7fa9965a11"
+    },
+    "demo/solar_path.dem": {
+      "sizeBytes": 2510,
+      "sha256": "a0f31545cd101e9bc467d23e5a6393964a2275d141aa55456a6df0cacb3e5e14"
+    },
+    "demo/lnGamma.dem": {
+      "sizeBytes": 1371,
+      "sha256": "f95e9f6400b83485f07e0154fa0cbedfb4aed2388ae72482554dcd5400c422e7"
+    },
+    "demo/transparent_solids.dem": {
+      "sizeBytes": 1561,
+      "sha256": "de7eac6e88a1b21336add1637e2f30535d9e3119847987021a2f239c3afa4dc9"
+    },
+    "demo/gpdemos.tcl": {
+      "sizeBytes": 4502,
+      "sha256": "dd91dca6fa397cd03fb91ad3e3f1049ee7af9713beae8a23d2998fa88147913c"
+    },
+    "demo/linked_autoscale.dem": {
+      "sizeBytes": 2309,
+      "sha256": "036aad394cdf2b9df5c49c76a2f2504de1b3c1c1977cea882690c3ff6d02d678"
+    },
+    "demo/prob2.dem": {
+      "sizeBytes": 10415,
+      "sha256": "f6bb0adbe8946404b8cc5845f6f47881b1544468741b30fd4eddeafd5ca913b0"
+    },
+    "demo/zeta.dem": {
+      "sizeBytes": 2143,
+      "sha256": "db8d8391602b72c09fd58bd249dd8c475e8f5f52219ecb1457f057161f950282"
+    },
+    "demo/icon64x64.png": {
+      "sizeBytes": 3655,
+      "sha256": "5487bdef8039270c8454e2dea5ab444e267e33dc57b636eb1edaf4b02ae9215a"
+    },
+    "demo/Makefile.am": {
+      "sizeBytes": 7466,
+      "sha256": "0c4f6adefda4f762adacf1dabaf10cddc956811823e770dd96377d4ae5b3ca5f"
+    },
+    "demo/histograms.dem": {
+      "sizeBytes": 3687,
+      "sha256": "1956490fca49f5b62499c19165e22e97dbb6a3a980ead0adcf21500052c437fc"
+    },
+    "demo/world.dat": {
+      "sizeBytes": 16763,
+      "sha256": "d448c544e1316c095882e7c98cddb9f1841a37de0b7d62b7f9ff3f1e4559b00c"
+    },
+    "demo/concave_hull.dem": {
+      "sizeBytes": 2221,
+      "sha256": "d16f6f08460dda439d0b5b812e10e947c8c8e8d5cbec4645150eaa288b768f35"
+    },
+    "demo/bivariat.dem": {
+      "sizeBytes": 3914,
+      "sha256": "889efdf4673e039bbb5cd4727b490e917f388cb1b37c81e03c38d4590edb06c6"
+    },
+    "demo/rgba_lines.dem": {
+      "sizeBytes": 1127,
+      "sha256": "bd822bcc67c1eefb69f016d9c57de2e61642d6fca19a072a1f9de891c9d53583"
+    },
+    "demo/sine.bin": {
+      "sizeBytes": 804,
+      "sha256": "a1fbe4cd689596e410d1729c9d729dc0ecb3ab68276639e5ac47c2c609fdfb0a"
+    },
+    "demo/histograms2.dem": {
+      "sizeBytes": 2060,
+      "sha256": "ea4fe371b751656bed90d8309fbeef83116f8967e47c37cfce8f2668a4a6103e"
+    },
+    "demo/start.par": {
+      "sizeBytes": 261,
+      "sha256": "b0ffef6bf6c832a8f6f6a599563c2dfd9f0f5fca1f58b14f2a70f7172cff3e0f"
+    },
+    "demo/fenceplot.dem": {
+      "sizeBytes": 1748,
+      "sha256": "c05ba4d5260119b42c477571c67dd76286993c0a64dba36e6cd178dd5738620e"
+    },
+    "demo/probably_tux.dem": {
+      "sizeBytes": 1158,
+      "sha256": "5097bd440360bb8f51dd96f29db08da8092df92bf3cbce27a3afbaca2e9b4a21"
+    },
+    "demo/nonlinear5.dem": {
+      "sizeBytes": 807,
+      "sha256": "8d13def2bf53628307e4d6589a4e6baf50d0c227a9f6adaddc632fecd4325da4"
+    },
+    "demo/bldg.png": {
+      "sizeBytes": 3842,
+      "sha256": "331dded53302d08e5e7e5408e18f8c7dfa1c395178896ccf7c619feba4f43740"
+    },
+    "demo/label_stacked_histograms.dem": {
+      "sizeBytes": 1267,
+      "sha256": "e663426ac6e43d95077cfc59b70218a475a729eaf9cf51d4787bc966d8100739"
+    },
+    "demo/enhancedtext.dem": {
+      "sizeBytes": 1727,
+      "sha256": "05b759fbfd967226efba86ed21359fe64ee861c753a30a80d310ffc313929541"
+    },
+    "docs/gnuplot.pdf": {
+      "sizeBytes": 4022889,
+      "sha256": "113475099f5326d49856d43ab7a1dd7626e7c75a102668f3f1c48d73e702e578"
+    },
+    "docs/README": {
+      "sizeBytes": 4412,
+      "sha256": "5403c4d080a22d091bc6c229018753378dcbdf58adc05e658122789cca9663ad"
+    },
+    "docs/BUGS": {
+      "sizeBytes": 66,
+      "sha256": "433480ebb683f3f9c511663a7cfd441fc3d8d3c19de562721178ec9a7fad1dc0"
+    },
+    "docs/FAQ.pdf": {
+      "sizeBytes": 175208,
+      "sha256": "286138611a2d3cf20b985ca81795926c40ea5deb56b0d36ee7d99f0e1fa3e47b"
+    },
+    "bin/libimagequant.dll": {
+      "sizeBytes": 1148592,
+      "sha256": "964995be779484b0a0d66ba740046c282c8ae7eb3885850b10db206977d9a97d"
+    },
+    "bin/wxmsw30u_core_gcc_custom.dll": {
+      "sizeBytes": 6422565,
+      "sha256": "5b90954fe70d7eb1740b109a88dffa96c78f42264e5d3cb56b4fbb7008f6f03e"
+    },
+    "bin/libffi-8.dll": {
+      "sizeBytes": 33709,
+      "sha256": "8331aa25874f982d93c21332cdfdb9970352c14059268a8eaf8fca22be89b5a8"
+    },
+    "bin/libbrotlicommon.dll": {
+      "sizeBytes": 143397,
+      "sha256": "708961737ac171e39abb9a564a1f3495a256e87c0b5fcdf3ee3f554366d2e4c6"
+    },
+    "bin/libdav1d-7.dll": {
+      "sizeBytes": 1842208,
+      "sha256": "df1875476b4be061511352c4a61333b63c703adac7ff2c980d2240ea986157cd"
+    },
+    "bin/lua54.dll": {
+      "sizeBytes": 292521,
+      "sha256": "ee730bad0be10e91cf674e6eaed39485c1e6eaea55a85436dde3992abe019b44"
+    },
+    "bin/wgnuplot.exe": {
+      "sizeBytes": 2395136,
+      "sha256": "6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26"
+    },
+    "bin/libXpm-noX4.dll": {
+      "sizeBytes": 88541,
+      "sha256": "1754d1073a1f4aa29784361c7a12ba4a8b3f4e1544999dbdf400fac25afd519d"
+    },
+    "bin/wgnuplot.mnu": {
+      "sizeBytes": 15876,
+      "sha256": "1d599d590e62fbf7aba173a1a9aa1613a64988d36d47975f2bdc7646c61f3a98"
+    },
+    "bin/libx265-215.dll": {
+      "sizeBytes": 20834479,
+      "sha256": "32f19a637ac4751e2d96dbf3849532c82fd20f9d37cf63251a7712730a7cdcd8"
+    },
+    "bin/libicuin77.dll": {
+      "sizeBytes": 3420060,
+      "sha256": "38b83caeaa0339a1fb98e84b7e4ad9b15675c0524c3b8a05c2e804f3cd13dbc0"
+    },
+    "bin/Qt5Network.dll": {
+      "sizeBytes": 1717532,
+      "sha256": "ea30f40d63de9880860cb89720e165edd0144b2fd439b2d46d045e22066cfef6"
+    },
+    "bin/libglib-2.0-0.dll": {
+      "sizeBytes": 1544942,
+      "sha256": "c2e92c44cf84d8f0f49b15282199bb0112cb4be28d5e51b53f4184c63e6d4d3b"
+    },
+    "bin/libcairo-2.dll": {
+      "sizeBytes": 1231234,
+      "sha256": "31b32048884040c1edb0743f7406efab83ee8ed1d3ee23e33260e39664b74517"
+    },
+    "bin/libgraphite2.dll": {
+      "sizeBytes": 152538,
+      "sha256": "f927efecd958f0e54a24ae297f86cd6aed05e7fc20e5da0882050ab9ec464395"
+    },
+    "bin/Qt5Core.dll": {
+      "sizeBytes": 5729388,
+      "sha256": "c763ab98aad6425a40bdd1113725fecdbfe40c2d12a9784c1b6c775bca917dbb"
+    },
+    "bin/libwebp-7.dll": {
+      "sizeBytes": 744123,
+      "sha256": "5437b40c759a899b33255a9ff9c28606933299fb194c866357fe4ca4b0ec92ef"
+    },
+    "bin/wgnuplot.chm": {
+      "sizeBytes": 1940639,
+      "sha256": "c8b93d0f0fbd0ee6ba515b9fad053d5ea52224e7b663e8b30e2783a0c7a856b0"
+    },
+    "bin/libfribidi-0.dll": {
+      "sizeBytes": 156403,
+      "sha256": "84930fd86a3b46b62794a3bbaff21fbbaeaade5ff7cdc70be7f717ad29af87ed"
+    },
+    "bin/libintl-8.dll": {
+      "sizeBytes": 298613,
+      "sha256": "479c8bffc0da6d28747cde0f4dd4d7714050811ebdfdf1fcc807efd9818e5a7f"
+    },
+    "bin/libfreetype-6.dll": {
+      "sizeBytes": 787954,
+      "sha256": "67434ed595661d1029850d52578c3068d8d23bfdb4c73c300a446dbac7b1e151"
+    },
+    "bin/gnuplot_qt.exe": {
+      "sizeBytes": 193024,
+      "sha256": "cb4698dedcfd27748ff40be8b88e6618c4cd695c8e376498422a4e193aacae2a"
+    },
+    "bin/libzstd.dll": {
+      "sizeBytes": 1196744,
+      "sha256": "b13d4f30b93c96823473d742dda0075f7334cba03a40c33d8a7dc282e37b1500"
+    },
+    "bin/wgnuplot_pipes.exe": {
+      "sizeBytes": 2395136,
+      "sha256": "7533f313400a1ffc87102164c124f5eaf7c6536d9d3669ea1051e64ad50c726b"
+    },
+    "bin/wxbase30u_gcc_custom.dll": {
+      "sizeBytes": 2533887,
+      "sha256": "53dacfd129be0f93cd99020cd681649882ab5aa8f6472f9b0a2aeb0b4062dda2"
+    },
+    "bin/libkvazaar-7.dll": {
+      "sizeBytes": 527936,
+      "sha256": "ef629272356499f6d7f85d2282aadafd62f635a159b512f7a89dc5830309d343"
+    },
+    "bin/libpangocairo-1.0-0.dll": {
+      "sizeBytes": 74762,
+      "sha256": "9b0badf2a5ea20cedc232a46d3ab0e9e358531823b50f0b22599e07d194c9a90"
+    },
+    "bin/libicudt77.dll": {
+      "sizeBytes": 31908902,
+      "sha256": "f11ea16512a5c30af694abbea9f4633fa8bef9cff432e97056ee8c2ea5a1e973"
+    },
+    "bin/libpixman-1-0.dll": {
+      "sizeBytes": 735805,
+      "sha256": "5c453157ffa1d095eb03ddeda5db41d015adea8c785aafa81633a4bf25283b9a"
+    },
+    "bin/libfontconfig-1.dll": {
+      "sizeBytes": 338687,
+      "sha256": "d502e7b7fc109cabfc0aedd4bd42023994c62dfbb7cd17ad99fe66f29be5910d"
+    },
+    "bin/libthai-0.dll": {
+      "sizeBytes": 69739,
+      "sha256": "420e08cedaf9daaabcf8f6c92349d9dadb7b5ad9e4e79d1126bb2a55a7cdbe09"
+    },
+    "bin/libdeflate.dll": {
+      "sizeBytes": 99228,
+      "sha256": "d8029a5604bba71ff37f487e7a61f16e7b5c32113f941ccd43c9b4e955ee697e"
+    },
+    "bin/libgcc_s_seh-1.dll": {
+      "sizeBytes": 150196,
+      "sha256": "d80780d2888c656b9ffda672addcec001586b5c63128cf94115c60a4894aba59"
+    },
+    "bin/libiconv-2.dll": {
+      "sizeBytes": 1136529,
+      "sha256": "ff31fa811f9c07cc7fdaa68c9e8bca3a7b4fdf6e0a079a58175ea58ba139c7ae"
+    },
+    "bin/libharfbuzz-0.dll": {
+      "sizeBytes": 1473978,
+      "sha256": "fbc5891740ca1122ffa799d661e57e92f336cd42157b95e98ea747bd26a3ae9e"
+    },
+    "bin/librav1e.dll": {
+      "sizeBytes": 3517952,
+      "sha256": "174d408764c446f036f678440657bc5c9ab626a1e6b8bb633a8806a5322333cd"
+    },
+    "bin/libsharpyuv-0.dll": {
+      "sizeBytes": 54268,
+      "sha256": "9191d262ee9c3300d67f96f536e6930faa2564533b403373a2aae702947e6972"
+    },
+    "bin/libgmodule-2.0-0.dll": {
+      "sizeBytes": 26344,
+      "sha256": "d808f054895ac62db4e78d40224e9ce201143e3a4c95d971becc81ea38937a62"
+    },
+    "bin/libopenjp2-7.dll": {
+      "sizeBytes": 513424,
+      "sha256": "ffc8e6de52ac7256ce01ddf4244367647620adc95952b42da95a3122debd394d"
+    },
+    "bin/liblzma-5.dll": {
+      "sizeBytes": 188764,
+      "sha256": "9b5d2cdcdb2bf2f89b44166ba115276b2dcd7a3349692e46f922578eaa4d6a03"
+    },
+    "bin/libopenspecfun.dll": {
+      "sizeBytes": 335280,
+      "sha256": "091fe40c5c4ddb127cdb46e3455db23aa098592740bbbf3428da36f0988956bd"
+    },
+    "bin/gnuplot.exe": {
+      "sizeBytes": 2342912,
+      "sha256": "b468dfee15b88d14f6fa8dc478cf6cbedbad0b046ab0945c38cbd89f979c12ae"
+    },
+    "bin/Qt5Widgets.dll": {
+      "sizeBytes": 6376414,
+      "sha256": "640c42a7beb5bb01727c0de114629ff2ebdde293065df96cced4fc206b33de63"
+    },
+    "bin/libmd4c.dll": {
+      "sizeBytes": 87001,
+      "sha256": "815ed58b2112b5b42cef6ea00530c262eacc585d27d04307344bae627473194b"
+    },
+    "bin/libSvtAv1Enc-3.dll": {
+      "sizeBytes": 7862846,
+      "sha256": "62ea44cc15931323b857069ba9113b983a4d2b839aeb7e02a6c4579b3626b8eb"
+    },
+    "bin/libgio-2.0-0.dll": {
+      "sizeBytes": 1860390,
+      "sha256": "a6829906c09c3cbf66c8f54dfc1179cede490dab571493eeb5ff4e1cffc6c61d"
+    },
+    "bin/Qt5Gui.dll": {
+      "sizeBytes": 7280892,
+      "sha256": "4591dff1af55844b949e5546f78a94ecec8752a48290c4f755ba84fdcaf7d4ee"
+    },
+    "bin/libaom.dll": {
+      "sizeBytes": 8739779,
+      "sha256": "1420f89c753684f5b655eebaac5c5788aa421ab13e176f766428744ad8bd2849"
+    },
+    "bin/libheif.dll": {
+      "sizeBytes": 1467219,
+      "sha256": "dd024b19e86d2cb4ecc265999e39d28ad584e06c01b8245b47a652e08281d1d3"
+    },
+    "bin/libicuuc77.dll": {
+      "sizeBytes": 1979688,
+      "sha256": "2d6e42622b04e9ef0d9a192a06603270ca471d2c6f06121890fd97ffd03aa1e6"
+    },
+    "bin/libbz2-1.dll": {
+      "sizeBytes": 100964,
+      "sha256": "b79cd3a7102e359ef6324e98966a67939e58ec2b651ae2847cae84a4dfa453f7"
+    },
+    "bin/libjbig-0.dll": {
+      "sizeBytes": 62083,
+      "sha256": "275a827ba6839d47cfdbe059db1b1b403a92ff26e2b76a29362915487868bef2"
+    },
+    "bin/libexpat-1.dll": {
+      "sizeBytes": 193579,
+      "sha256": "fa6b1cc24bdc46d787579493ddb50c34f8cb6c50a874ed537e2fb705bc53b3b5"
+    },
+    "bin/libdouble-conversion.dll": {
+      "sizeBytes": 77298,
+      "sha256": "d4c9812feecc20200b408a5f1485ba3188861373dd388ab79124419e72950e2f"
+    },
+    "bin/libtiff-6.dll": {
+      "sizeBytes": 600981,
+      "sha256": "33b46b399327b3bcd7cefb63ca4eff7c0696cdf30de37a7ad20d946261e7cdac"
+    },
+    "bin/libpcre2-8-0.dll": {
+      "sizeBytes": 706178,
+      "sha256": "424c48000f22ee1821637d2f917d3fbc739bb946328f964e30beb410fa8808f3"
+    },
+    "bin/libgd.dll": {
+      "sizeBytes": 465286,
+      "sha256": "0a2cea0536f56dbd1042765c2534948dec6e269365cd642cc2d6703ad3f82892"
+    },
+    "bin/Qt5Svg.dll": {
+      "sizeBytes": 354675,
+      "sha256": "d5f47447c9ff24d0ffbc283eb81fce651ecbc938478eb423839d7e86f8db3f85"
+    },
+    "bin/libwebpmux-3.dll": {
+      "sizeBytes": 81290,
+      "sha256": "3ca1fab8d71b3d791e2eb707e123c643d234ee13141fefa810b2f0fd7634f350"
+    },
+    "bin/libbrotlienc.dll": {
+      "sizeBytes": 753547,
+      "sha256": "076673b8721405de671ba1f293de5a1973e8949fa0f7ca6c9db2cf254a3ccdbb"
+    },
+    "bin/libopenh264-7.dll": {
+      "sizeBytes": 875727,
+      "sha256": "4ac3e61bd10b696abf4b20391bf1cc682c393a0a27f0e96daf020dc1adf6e973"
+    },
+    "bin/libstdc++-6.dll": {
+      "sizeBytes": 2428323,
+      "sha256": "d9c93b10d7912229e81359beedb06c0e435a4d4ddc46406b999296eea411d930"
+    },
+    "bin/libwinpthread-1.dll": {
+      "sizeBytes": 64409,
+      "sha256": "d662e103f9ef08e4d1a959a81b483802cec098400d12ca3dcf0194c3e3014952"
+    },
+    "bin/libopenjph-0.21.dll": {
+      "sizeBytes": 561280,
+      "sha256": "5874a388e54edfbebbb5748b3b54162b056ce4972d32d973b637171e7c51b9fc"
+    },
+    "bin/Qt5PrintSupport.dll": {
+      "sizeBytes": 371657,
+      "sha256": "eb19167eaeee8e4ee8cb4f51c482bf113c555595c60c580eae430222e9a8bcbd"
+    },
+    "bin/libcryptopp.dll": {
+      "sizeBytes": 4178904,
+      "sha256": "db302a75a7e666e641cfb238daeeb82e74ba84fe5e6f10fe4231e20b32c57a93"
+    },
+    "bin/libde265-0.dll": {
+      "sizeBytes": 473334,
+      "sha256": "1b04bd7a03075cab095cc2a0f9f547c6b2c110cfdaff83015555cce43f7b6827"
+    },
+    "bin/libgobject-2.0-0.dll": {
+      "sizeBytes": 357330,
+      "sha256": "69af5bded6b80456befa85c3ac82535b10d6dce73a18229ac2c26db8f91b7e08"
+    },
+    "bin/libdatrie-1.dll": {
+      "sizeBytes": 34386,
+      "sha256": "f760aef8a31b7c3670484ca4eabab1ab8e95c14052167e191463f6371c3f0850"
+    },
+    "bin/libpangoft2-1.0-0.dll": {
+      "sizeBytes": 104956,
+      "sha256": "8013ab7300098ebb009bef670813d5547f25440ffaae6af0c1179f9591b6d285"
+    },
+    "bin/libpango-1.0-0.dll": {
+      "sizeBytes": 421552,
+      "sha256": "2f01ba0ef8a8d84579c9a5a066cd4d552ea9d03dfa58adae7976247d8241a548"
+    },
+    "bin/libpng16-16.dll": {
+      "sizeBytes": 258644,
+      "sha256": "a13087bda22039e06b4ce45aac908edd78fcc35e8cc14ccc4ddce668496f690e"
+    },
+    "bin/libpangowin32-1.0-0.dll": {
+      "sizeBytes": 110780,
+      "sha256": "9d3303d76b919116c6dec8699b88d1286cb981f42d11966fd92ea327c0dd936f"
+    },
+    "bin/libcerf-3.dll": {
+      "sizeBytes": 70141,
+      "sha256": "4ba9efddb0034c0a29bebe6b2df20cfa8ed25464e683727d3bb9cb6d8d566dd9"
+    },
+    "bin/libbrotlidec.dll": {
+      "sizeBytes": 61436,
+      "sha256": "380152d4403244da7ffff43cbdcf2f94a9f96e03c5829a544b8b0ea376749d45"
+    },
+    "bin/libjpeg-8.dll": {
+      "sizeBytes": 926058,
+      "sha256": "13038317a4c437289144d47556d40982712934ae138d744b5105fe87d7b72179"
+    },
+    "bin/libyuv.dll": {
+      "sizeBytes": 1004593,
+      "sha256": "f77a9f75be1e798a68982519223acd142c21c89068849f1dfc6c3aea139d7b72"
+    },
+    "bin/libquadmath-0.dll": {
+      "sizeBytes": 398767,
+      "sha256": "9adf44aaef119168fb0531b2c2a106f1de3c61d1569817e2b2720f49d4441433"
+    },
+    "bin/libpcre2-16-0.dll": {
+      "sizeBytes": 645219,
+      "sha256": "a622d61e6c9c1f6fcbb48ef81b135182d7b4d2e27d3d82cca56933775070db1a"
+    },
+    "bin/zlib1.dll": {
+      "sizeBytes": 120814,
+      "sha256": "cb7ab3788d10940df874acd97b1821bbb5ee4a91f3eec11982bb5bf7a3c96443"
+    },
+    "bin/libgfortran-5.dll": {
+      "sizeBytes": 3717841,
+      "sha256": "7023a63f0ebbdd248cc8a4c10f3bc261608c9b51e55715a22b85093978fb5dfa"
+    },
+    "bin/libLerc.dll": {
+      "sizeBytes": 761261,
+      "sha256": "4ab688c7c5c4afdfee0f519f942759137067a7876a1c1bb825ee575b0a5760b1"
+    },
+    "bin/libavif-16.dll": {
+      "sizeBytes": 297108,
+      "sha256": "540c383d76662f8d3ecf3324dc115a985d1229b1a87587863b4cf403677a64f0"
+    },
+    "share/colors_podo.gp": {
+      "sizeBytes": 443,
+      "sha256": "88d736dee63a96ba26ba3c1eb0572bac61a021748ffdec5305803e75904fd609"
+    },
+    "share/gnuplotrc": {
+      "sizeBytes": 1493,
+      "sha256": "9dbdad54968448d11991f70dfd3a421d4d18329407e37c9de6c0a5b18824e72c"
+    },
+    "share/colors_default.gp": {
+      "sizeBytes": 476,
+      "sha256": "14b5208a076e4b01bfadc6dfb0c8cbea7f0fc3556f21e51069fb9d1b504bb6a1"
+    },
+    "share/colors_mono.gp": {
+      "sizeBytes": 363,
+      "sha256": "62efaf342c996ee3a02e5ca5f73c3843b8fbd4a67599f38910b7ed9cd985d359"
+    },
+    "license/Copyright": {
+      "sizeBytes": 1524,
+      "sha256": "359c1c1a51fbc72bd5ae222517c7d6349ba52070558629b48f093c4af25ad1d5"
+    },
+    "license/libexpat/COPYING": {
+      "sizeBytes": 1143,
+      "sha256": "e800f4386b8b9c54b771d3ca779206d19ac313509e26562ecc27807cb0e9e853"
+    },
+    "license/openspecfun/LICENSE.md": {
+      "sizeBytes": 1824,
+      "sha256": "022dd21afcc1e12c616dda060dc48f0eaf47bdeb1177a7323926d909e85d3bf8"
+    },
+    "license/pango/COPYING": {
+      "sizeBytes": 25292,
+      "sha256": "d245807f90032872d1438d741ed21e2490e1175dc8aa3afa5ddb6c8e529b58e5"
+    },
+    "license/libxpm/COPYING": {
+      "sizeBytes": 3792,
+      "sha256": "ed3b06bb3b75a0954bd6837a96b41a4676f60dfeee647271613aadecc0fd596e"
+    },
+    "license/harfbuzz/COPYING": {
+      "sizeBytes": 1828,
+      "sha256": "a1f6a3476be9298f7be7d03555fe971edb5771439d47c91b62ec5d619cdfdf18"
+    },
+    "license/rav1e/LICENSE": {
+      "sizeBytes": 1331,
+      "sha256": "139d91945a0385d762173415d84250a99bcc4e2528fd0c3d9fe7fda763abfadb"
+    },
+    "license/mingw-w64/COPYING.MinGW-w64-runtime.txt": {
+      "sizeBytes": 10918,
+      "sha256": "36a4857b6557a97baa82762444ffd6a74c7575015595dc26ff02215c299f81f6"
+    },
+    "license/mingw-w64/COPYING": {
+      "sizeBytes": 2325,
+      "sha256": "76e1f805bb88f580ccb85c63fb41920602183227b91eb147c73af17c5748e2f5"
+    },
+    "license/mingw-w64/DISCLAIMER": {
+      "sizeBytes": 2245,
+      "sha256": "039ed6b4f31bb7fb97e733170b58cc435335352e4745734fcfd113877fdaf340"
+    },
+    "license/mingw-w64/ddk-readme.txt": {
+      "sizeBytes": 762,
+      "sha256": "fdb6018009cec99085041e4fd1f13db7b82852e9aa73012d0cc7da6449b94f13"
+    },
+    "license/mingw-w64/DISCLAIMER.PD": {
+      "sizeBytes": 456,
+      "sha256": "8eb04ed0a853e8a6c1f390b02ce52609f5aee9cdadba54869fdf8a9be98ac86c"
+    },
+    "license/mingw-w64/direct-x-COPYING.lib": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "license/mingw-w64/COPYING.MinGW-w64.txt": {
+      "sizeBytes": 5905,
+      "sha256": "f38e6194bd3bfa1b654f118e5acefe0aead437bbe669eee43957ccc65a7127f1"
+    },
+    "license/mingw-w64/direct-x-readme.txt": {
+      "sizeBytes": 980,
+      "sha256": "4063e1542e430e38272d63ce51e74c6a8ccc5a816c0a7a1b1719fae6dd099ccc"
+    },
+    "license/libde265/COPYING": {
+      "sizeBytes": 44338,
+      "sha256": "278e3a82819412d93ffc1a493fca566478e653a37db250986f66fb18c1188a18"
+    },
+    "license/libavif/LICENSE": {
+      "sizeBytes": 8516,
+      "sha256": "64fc36db894cacf5a16f9954da5a00fa43e4a0fe9d2e3069bc331c297ae954dd"
+    },
+    "license/Qt/LICENSE.GPL3-EXCEPT": {
+      "sizeBytes": 36363,
+      "sha256": "0dbe024961f6ab5c52689cbd036c977975d0d0f6a67ff97762d96cb819dd5652"
+    },
+    "license/Qt/LICENSE.QT-LICENSE-AGREEMENT": {
+      "sizeBytes": 78091,
+      "sha256": "e6d0b2a06985fb84bb66d2754c842d35aaac26cd1bb869247a4d1a208099f9ce"
+    },
+    "license/Qt/LICENSE.GPL3": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "license/Qt/LICENSE.GPL2": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "license/Qt/LICENSE.LGPL3": {
+      "sizeBytes": 7651,
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    "license/libgd/COPYING": {
+      "sizeBytes": 2990,
+      "sha256": "e2180fe34bec75a66426832a3c40f2801f80765a84bdd691c1735492df3a22be"
+    },
+    "license/cairo/COPYING-LGPL-2.1": {
+      "sizeBytes": 26533,
+      "sha256": "9e9e8608c4cdda51a78cc3a385f4ec9a2e4c96d5ecad74ac8bca5fca3e563b7d"
+    },
+    "license/cairo/COPYING-MPL-1.1": {
+      "sizeBytes": 25755,
+      "sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f"
+    },
+    "license/cairo/COPYING": {
+      "sizeBytes": 1576,
+      "sha256": "67228a9f7c5f9b67c58f556f1be178f62da4d9e2e6285318d8c74d567255abdf"
+    },
+    "license/libthai/COPYING": {
+      "sizeBytes": 26526,
+      "sha256": "f8e36d363060f1ab511fc62127c79edb01a39bf399b26cb10f23323ab0a17906"
+    },
+    "license/pcre2/COPYING": {
+      "sizeBytes": 96,
+      "sha256": "1eddb18b7b68b3d904e5930ddf63cdac8fb74dd8d5f2d1d363732f9dc1ecc81b"
+    },
+    "license/pcre2/LICENSE": {
+      "sizeBytes": 3476,
+      "sha256": "b0ab8785496fd916904934eac4d02d4a5439e910f54f3ccf5ede8c3a981f3ce2"
+    },
+    "license/lua/readme.html": {
+      "sizeBytes": 11101,
+      "sha256": "d205bfea131113bcdd64d4ebe4a50ce34063b42bad24b93e44b4b0d853ae4d49"
+    },
+    "license/liblzma/COPYING": {
+      "sizeBytes": 2773,
+      "sha256": "48398016e20f91676c11e50d5066d2668afda3c161a75dcfd47311f52f220f14"
+    },
+    "license/liblzma/COPYING.GPLv3": {
+      "sizeBytes": 35146,
+      "sha256": "c53a65c2fd561c87eaabf1072ef5dcab8653042bc15308465f52413585eb6271"
+    },
+    "license/liblzma/COPYING.GPLv2": {
+      "sizeBytes": 17986,
+      "sha256": "a78aa507531e05215fec3b74f0d130bb38fd3518bd3fb5292fa364976242ea89"
+    },
+    "license/liblzma/COPYING.LGPLv2.1": {
+      "sizeBytes": 327702,
+      "sha256": "9014b6bf2b982779105ab176d3f57731ae81a633d7cec48e7662db7d68567715"
+    },
+    "license/gnuplot/Copyright": {
+      "sizeBytes": 1495,
+      "sha256": "895928ec0735cca1c8cec42656c7e314a065d0242813bb8693c0c1bf61fd4e4d"
+    },
+    "license/md4c/LICENCE.md": {
+      "sizeBytes": 1095,
+      "sha256": "3f8f4d7bf72f43a02b62fd3ef667a6d3b1096e7d078ecbad8d1dacd765817123"
+    },
+    "license/libpng/LICENSE": {
+      "sizeBytes": 5345,
+      "sha256": "bf5e22b9dce8464064ae17a48ea1133c3369ac9e1d80ef9e320e5219aa14ea9b"
+    },
+    "license/bzip2/LICENSE": {
+      "sizeBytes": 1896,
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+    },
+    "license/jbig/COPYING": {
+      "sizeBytes": 17981,
+      "sha256": "0fde95194dbcc3cbfa110aadb9364ef3de5b70773f605a669cb414ad40823563"
+    },
+    "license/icu/LICENSE": {
+      "sizeBytes": 21090,
+      "sha256": "841eecaff948a05f40fa5b43963bba04f56002ce870d99967a2b0a8828f752f6"
+    },
+    "license/libjpeg/README": {
+      "sizeBytes": 18584,
+      "sha256": "3dc4e4a145c907a96bd6a0e40be3f722fecf061951909143cdff5365cba9c78c"
+    },
+    "license/LERC/LICENSE": {
+      "sizeBytes": 9198,
+      "sha256": "77a8b761727c75e2167b15bfdf61b2c0bcf8792271228bebe80779106ad00671"
+    },
+    "license/pixman/COPYING": {
+      "sizeBytes": 2087,
+      "sha256": "fac9270f0987b96ff4533fca3548c633e02083cbba4a0172a3b149b2e4019793"
+    },
+    "license/libdatrie/COPYING": {
+      "sizeBytes": 26526,
+      "sha256": "f8e36d363060f1ab511fc62127c79edb01a39bf399b26cb10f23323ab0a17906"
+    },
+    "license/libcerf/LICENSE": {
+      "sizeBytes": 1195,
+      "sha256": "a7c3d077aa39f57202981cf153f14bd71cbaa8a70f3b83f9d3cc5355e0539a90"
+    },
+    "license/graphite/COPYING": {
+      "sizeBytes": 1234,
+      "sha256": "b46d27cc5a5f27921b7327e48e3f86cea936b8c37f63f388953840b98a4363ce"
+    },
+    "license/dav1d/COPYING": {
+      "sizeBytes": 1317,
+      "sha256": "b327887de263238deaa80c34cdd2ff3e0ba1d35db585ce14a37ce3e74ee389e9"
+    },
+    "license/Brotli/LICENSE": {
+      "sizeBytes": 1083,
+      "sha256": "2a57418d6b10947fe0dfbec3a600269e2745136c125cbf15b256e5ae18af23cb"
+    },
+    "license/zstd/COPYING": {
+      "sizeBytes": 18091,
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505"
+    },
+    "license/zstd/LICENSE": {
+      "sizeBytes": 1529,
+      "sha256": "8b7bc50ec3ecee27224e17d4d316a939fa2ddda9c88e0ddc2f059ce432edbfb9"
+    },
+    "license/x265/COPYING": {
+      "sizeBytes": 18120,
+      "sha256": "d8afb1bcc7a2cfc603683b168d6987ef0a48e59e0da3693bf55c5d33b67e2b49"
+    },
+    "license/libheif/COPYING": {
+      "sizeBytes": 44337,
+      "sha256": "1e3465b96c8f36ffa2abab1534f492648c14eee7e9b81d3d1918b85988a34e18"
+    },
+    "license/fribidi/COPYING": {
+      "sizeBytes": 26439,
+      "sha256": "6e95aa128bcad5040722e2d8820fa12ecdbf888bfd3ba4b00831cca8ea369ea9"
+    },
+    "license/libiconv/COPYING.LIB": {
+      "sizeBytes": 25291,
+      "sha256": "56bdea73b6145ef6ac5259b3da390b981d840c24cb03b8e1cbc678de7ecfa18d"
+    },
+    "license/libiconv/COPYING": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "license/glib/COPYING": {
+      "sizeBytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    "license/zlib/README": {
+      "sizeBytes": 5187,
+      "sha256": "7960b6b1cc63e619abb77acaea5427159605afee8c8b362664f4effc7d7f7d15"
+    },
+    "license/gettext/COPYING": {
+      "sizeBytes": 35151,
+      "sha256": "e79e9c8a0c85d735ff98185918ec94ed7d175efc377012787aebcf3b80f0d90b"
+    },
+    "license/freetype/FTL.TXT": {
+      "sizeBytes": 6743,
+      "sha256": "08c135755dd589039470f1fdbb400daaabaaa50d0b366d19cebff4d22986baa1"
+    },
+    "license/freetype/GPLv2.TXT": {
+      "sizeBytes": 17994,
+      "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18"
+    },
+    "license/libtiff/README.md": {
+      "sizeBytes": 2632,
+      "sha256": "80770640de9b4063f40e5467040ff9d6e7bae69e28f9af6dbb1d76c7bcaf5d23"
+    },
+    "license/libtiff/COPYRIGHT": {
+      "sizeBytes": 1146,
+      "sha256": "fbd6fed7938541d2c809c0826225fc85e551fdbfa8732b10f0c87e0847acafd7"
+    },
+    "license/Imagequant/COPYRIGHT.txt": {
+      "sizeBytes": 33306,
+      "sha256": "6c131d200c9d383334c764474935faee2707164674be04e3ef7650731cbe7c9b"
+    },
+    "license/fontconfig/COPYING": {
+      "sizeBytes": 1312,
+      "sha256": "d3813437daf32bd9b5535480a91b5c8f1cca681588446de67d7ebe13d288f481"
+    },
+    "license/wxWidgets/xserver.txt": {
+      "sizeBytes": 2305,
+      "sha256": "52ebbbaf59940f0c1116be0afcf9ef1fe7ad633b2f056326b4d57a208f8f46d8"
+    },
+    "license/wxWidgets/gpl.txt": {
+      "sizeBytes": 17977,
+      "sha256": "b39c1bad4e51e2a3389cd25fc4addebe41a3ae7c11100795683f9330de1536e5"
+    },
+    "license/wxWidgets/licence.txt": {
+      "sizeBytes": 2502,
+      "sha256": "678e89837fb381e5461280bf608f843c8f3b3ec87dbb3367a63247fc7f403563"
+    },
+    "license/wxWidgets/lgpl.txt": {
+      "sizeBytes": 25271,
+      "sha256": "eca345b26b3a5fde4fdb45cff09faf2a9cb8073f1488a79cb2e55740ab519d57"
+    },
+    "license/wxWidgets/preamble.txt": {
+      "sizeBytes": 2033,
+      "sha256": "6941626b9c6b0be4346b8e284c85fde87b207238083e8e04ec09ad9a68c37d19"
+    },
+    "license/wxWidgets/licendoc.txt": {
+      "sizeBytes": 3335,
+      "sha256": "16e751d2da29c06b7688408d2db05e88ba8ba978f375d156a45bb9334bb3db4c"
+    },
+    "license/wxWidgets/readme.txt": {
+      "sizeBytes": 7359,
+      "sha256": "97c5fc35291ceb4c675f28786ef4fddf98f0bcbf6071a3af10883600fb862b1c"
+    },
+    "license/libffi/LICENSE": {
+      "sizeBytes": 1131,
+      "sha256": "dafdedb6edfe2e6c6a7084516bc12ac808bdc507b4eafc8dc0942f4590c746d0"
+    },
+    "license/libdeflate/COPYING": {
+      "sizeBytes": 1051,
+      "sha256": "ba7f6c0fc39285b03df9dec378f58a4794c9e65a230803bc6c8bffc892ee2519"
+    },
+    "license/libwebp/COPYING": {
+      "sizeBytes": 1495,
+      "sha256": "e293d1dddc9785200b1f58a4f5293543cf8566d9e0b8a3c02fad955035b19f42"
+    },
+    "license/libdeflate/libdouble-conversion/LICENSE": {
+      "sizeBytes": 1526,
+      "sha256": "d94b380e51facbf323d9311a0ddde3b1327610ee8ec21a050288123246f9b1ca"
+    },
+    "license/inkscape/LICENSES/LGPL-3.0.txt": {
+      "sizeBytes": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    "license/inkscape/LICENSES/GPL-2.0-or-later.txt": {
+      "sizeBytes": 600,
+      "sha256": "c183caf8d9ffb02f7b20b6a2660568f667eb68193b921de19be3aa09f5aa49d6"
+    },
+    "license/inkscape/LICENSES/OFL-1.1.txt": {
+      "sizeBytes": 4673,
+      "sha256": "7d883ba6132ee00ba5dc7cc133a9fb476eb63cd29d07f4ebabafdd182241f45d"
+    },
+    "license/inkscape/LICENSES/LGPL-3.0-or-later.txt": {
+      "sizeBytes": 543,
+      "sha256": "7c9c750e69ca01c1e19734d906401f54a02cc933dde40f32ccbca43d5b5fb650"
+    },
+    "license/inkscape/LICENSES/GPL-3.0-or-later.txt": {
+      "sizeBytes": 600,
+      "sha256": "a36c847a776bc151a85fc0599366b20ab65c90c005f1a069f35d69db431866ac"
+    },
+    "license/inkscape/LICENSES/MPL-1.1.txt": {
+      "sizeBytes": 23445,
+      "sha256": "3d95bfb4f7dd8fb067078d3814ffd4e75bc91a791eb3365d67598703e3f8f66e"
+    },
+    "license/inkscape/LICENSES/GPL-3.0.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "license/inkscape/LICENSES/LGPL-2.1-or-later.txt": {
+      "sizeBytes": 543,
+      "sha256": "144d1eff48557ae11b26ed566ffa6e5e1a6f15cd584cef7b4f4632acfdd6814f"
+    },
+    "license/inkscape/LICENSES/GPL-2.0.txt": {
+      "sizeBytes": 18032,
+      "sha256": "6ce8b650f6b2bbd3a61a7ca1c54939737536b45ee59dd8d346e08cd1c58d9998"
+    },
+    "license/inkscape/LICENSES/LGPL-2.1.txt": {
+      "sizeBytes": 26522,
+      "sha256": "fa0f1cf7ff8f2621dad0ec70848f789eca61f59c6ff49ffc9cc06d5cd3bcecf2"
+    },
+    "share/lua/gnuplot-tikz.lua": {
+      "sizeBytes": 83366,
+      "sha256": "4dc72ef6b67485d48dc7ba6eaf6a96f9edc7fcbd39408b4b92e5c0786ab8abdc"
+    },
+    "share/lua/README": {
+      "sizeBytes": 3609,
+      "sha256": "570905652fb2756a57809ca4d8bdb3060a738a360a1f4ce75fac20e83f5e589c"
+    },
+    "share/lua/NEWS": {
+      "sizeBytes": 5662,
+      "sha256": "9bfac7f44df1c9a0b68ffc24d23d9cfa85942ac70a733036e373ebbf15eeea2a"
+    },
+    "share/lua/TODO": {
+      "sizeBytes": 1142,
+      "sha256": "c1d02c40c324ca515313513bf7769a9ff1f14c7ac963b5b6b0c598013758ed6f"
+    },
+    "share/PostScript/cp1251.ps": {
+      "sizeBytes": 2792,
+      "sha256": "c451830f01dbe2096dbdb6854b8a7bc170409a9847733bdfdf643ce1bcfadf68"
+    },
+    "share/PostScript/koi8r.ps": {
+      "sizeBytes": 2461,
+      "sha256": "5bdd935649c9a815f9fb61d74715ed9abe8a561c5fcb193d857d6f61d730912a"
+    },
+    "share/PostScript/cp1252.ps": {
+      "sizeBytes": 2175,
+      "sha256": "4c75ec71b87e72dcb3d11aac6982c21ab0b0be90e8724b3514fb3b6097f62582"
+    },
+    "share/PostScript/koi8u.ps": {
+      "sizeBytes": 2281,
+      "sha256": "1a6dfe30f7c0004c47fbca04f5d80d122fa5188c782401e812ff8c923317c12d"
+    },
+    "share/PostScript/cp437.ps": {
+      "sizeBytes": 2396,
+      "sha256": "80b448c4b0a5d36a91a9a84cdd03b2aafee9ec58f3f05363e23c10133913d620"
+    },
+    "share/PostScript/cp850.ps": {
+      "sizeBytes": 2335,
+      "sha256": "2bf9968d953e4fdf96458f5be935fd360599a12e5206fbee8bae01a3d80864f9"
+    },
+    "share/PostScript/aglfn.txt": {
+      "sizeBytes": 37634,
+      "sha256": "c100ef8d5bb1f682024625fe08907bfeb4257db5d6670c5275164d229ef97d4e"
+    },
+    "share/PostScript/8859-9.ps": {
+      "sizeBytes": 2238,
+      "sha256": "17f726a5f8cdcef684ffd9740321a25ff0722f6a899be811d8b2d12c430806ee"
+    },
+    "share/PostScript/8859-15.ps": {
+      "sizeBytes": 2123,
+      "sha256": "4c663efcc4c68aa7d102498f33c891bfe008802fa76a91891b8f6e187088e652"
+    },
+    "share/PostScript/8859-2.ps": {
+      "sizeBytes": 2344,
+      "sha256": "0fb9faa574377496dfe678324aa6491998a8503d8591d5ff720107829a664c6f"
+    },
+    "share/PostScript/cp852.ps": {
+      "sizeBytes": 2110,
+      "sha256": "f36fe1802a8340b43e4946a52d55057297416bfd3f2f50980116ea5efe4bd0d6"
+    },
+    "share/PostScript/8859-1.ps": {
+      "sizeBytes": 2144,
+      "sha256": "77a189e5e84433cbebcbb1a7a6bd1953be7fc1062b05292b895e978287014266"
+    },
+    "share/PostScript/prologue.ps": {
+      "sizeBytes": 14249,
+      "sha256": "4ad01074e63342801fad51e5330cfca3650d40996e323b04fef746e8252fd1fd"
+    },
+    "share/PostScript/utf-8.ps": {
+      "sizeBytes": 2776,
+      "sha256": "d53442b198418c6215d792346b29ad23787ce35ab1ac3d2da6c5638ad5c488d6"
+    },
+    "share/PostScript/cp1250.ps": {
+      "sizeBytes": 2187,
+      "sha256": "6dc131aac49cf8273d105947853622c1ff4ee04d8d25b4748b4fcc5ee42a6d63"
+    },
+    "share/js/canvastext.js": {
+      "sizeBytes": 14949,
+      "sha256": "72c7f11c650ad2b16b717752feb6f31662efa8fcf156319f1eba01208bc73e46"
+    },
+    "share/js/gnuplot_mouse.js": {
+      "sizeBytes": 22006,
+      "sha256": "b31281a180cca257ae9511fa750b212c50131da9421adae4368642b9658cb15e"
+    },
+    "share/js/gnuplot_dashedlines.js": {
+      "sizeBytes": 1983,
+      "sha256": "7543527ee9113d3bb50469206b44915babba2de230b3838523e11607b9a20f02"
+    },
+    "share/js/return.png": {
+      "sizeBytes": 2142,
+      "sha256": "15910758c8840fa04d99ce2f691f893feeed08118565311ff9f58af0c1814717"
+    },
+    "share/js/gnuplot_svg.js": {
+      "sizeBytes": 29995,
+      "sha256": "41fa4f549dd53a9f2275c0ebc89f9be0522689a940ca7a78e55439904bc42579"
+    },
+    "share/js/README": {
+      "sizeBytes": 4927,
+      "sha256": "daf8435732c1176de988a184f4c000999b80a9a958bcba78c4acddabb260a1f7"
+    },
+    "share/js/textzoom.png": {
+      "sizeBytes": 556,
+      "sha256": "6f364d0793b48dfc05d94534d53543f595ecbbd4254a6209c75f39bb2537914d"
+    },
+    "share/js/gnuplot_mouse.css": {
+      "sizeBytes": 1148,
+      "sha256": "0fea251d916fcf6455256ab535ef45ecc62aabdfed925fbd20c56efcbe670bc0"
+    },
+    "share/js/grid.png": {
+      "sizeBytes": 180,
+      "sha256": "0cb1be05ccfb89eabbeb709e13ac13179a9f62f435704cf52becedde81bb0a99"
+    },
+    "share/js/gnuplot_common.js": {
+      "sizeBytes": 5677,
+      "sha256": "d98dd02b3a41ed1eb7304354e4687ff63df7fbddc75f42055c483a44a90ac748"
+    },
+    "share/js/canvasmath.js": {
+      "sizeBytes": 34315,
+      "sha256": "d33c59c527982b0ac595b8757652be553c13a7f5003d6003357e6121d7d7abfa"
+    },
+    "share/js/nextzoom.png": {
+      "sizeBytes": 766,
+      "sha256": "071a9dc370b6054418d612df002bff7a00436f97191edc9ee46b71424cad1c37"
+    },
+    "share/js/previouszoom.png": {
+      "sizeBytes": 792,
+      "sha256": "0ab6a6b43cacc48c6f8b3b700fad4d0455196197e7b30b0330582340a4231bb1"
+    },
+    "share/js/canvas_help.html": {
+      "sizeBytes": 1468,
+      "sha256": "03dbf48321b894468fe3b18cab20c55e6334d8e814ee66d6fb9af1512c1ea3e2"
+    },
+    "share/js/help.png": {
+      "sizeBytes": 588,
+      "sha256": "4deac8208fd8c9eb52821a130dba70f6cc5a6d10b9eda1ce50f62020b5a6b1bf"
+    },
+    "share/js/gnuplot_svg_2018.js": {
+      "sizeBytes": 19635,
+      "sha256": "6039ba9359b8fa7cdbd60bbdf0eab0dd931f35ecacf82cc49dce4e47a2305877"
+    },
+    "share/qt/qtgnuplot_ja.qm": {
+      "sizeBytes": 2142,
+      "sha256": "715e58bba3ae34059cbb456279b6945c3aa56747b2a5c26b7a063014a0ab949a"
+    },
+    "share/qt/qtgnuplot_fr.qm": {
+      "sizeBytes": 2669,
+      "sha256": "15bceac3efdf8cb6f1c2642f0425fb4652bf51a05508a09c35967c2110fbba63"
+    },
+    "share/texmf/tex/context/gnuplot/t-gnuplot-lua-tikz.tex": {
+      "sizeBytes": 432,
+      "sha256": "356e761b5b840c551d2f1b62d396dc90cb7de85b6026ae8462688c5067fa65a1"
+    },
+    "share/texmf/tex/generic/gnuplot/gnuplot-lua-tikz-common.tex": {
+      "sizeBytes": 15280,
+      "sha256": "4c6d6a06bae9b3acfa8a7dae7ac8ddab2f88a0eafe9c6fb951475f2dd5f25871"
+    },
+    "share/texmf/tex/plain/gnuplot/gnuplot-lua-tikz.tex": {
+      "sizeBytes": 267,
+      "sha256": "1ed0471db4e4140223d7223ae11b0b6ab7d7396187586b709bf275666b4be337"
+    },
+    "share/texmf/tex/latex/gnuplot/gnuplot-lua-tikz.sty": {
+      "sizeBytes": 325,
+      "sha256": "a2be772bba8d97db90938ee0c5f76fda284fc0ad10e1ed22fe6bcc7f752ccf2b"
+    },
+    "share/texmf/tex/latex/gnuplot/README": {
+      "sizeBytes": 814,
+      "sha256": "81221e6698eceee83dd6515e81ecbea2ee991d3637ba443b74e1476b40987749"
+    },
+    "share/texmf/tex/latex/gnuplot/gnuplot.cfg": {
+      "sizeBytes": 173,
+      "sha256": "9cf55134fdfb3aa0be60de5f9ac18388be97d8ff1d749072d9110f6e2408a2cb"
+    },
+    "etc/fonts/fonts.conf": {
+      "sizeBytes": 2703,
+      "sha256": "f141c1b89b172d22f213531646c21e288f0ebf3ec46484698896e1b33c626756"
+    },
+    "etc/fonts/conf.d/45-generic.conf": {
+      "sizeBytes": 3490,
+      "sha256": "24de9f68189d544bb4cc084d9bd8f3a59d8b988a9dc44b11e9877d5add5fc948"
+    },
+    "etc/fonts/conf.d/10-yes-antialias.conf": {
+      "sizeBytes": 258,
+      "sha256": "e6d82a642d1b37f7d24dc37f938b999f00ff7aa4303b2602d04164d53f221005"
+    },
+    "etc/fonts/conf.d/10-scale-bitmap-fonts.conf": {
+      "sizeBytes": 2068,
+      "sha256": "df8e99abb6f82384c61978906a45a95794940545da95790d87f01d9391e0894b"
+    },
+    "etc/fonts/conf.d/10-hinting-slight.conf": {
+      "sizeBytes": 620,
+      "sha256": "d138eca2bac3f78d45ff7cfb649ad792caa4a6e61f73cea7cf0ea54b091f1ef4"
+    },
+    "etc/fonts/conf.d/65-nonlatin.conf": {
+      "sizeBytes": 10040,
+      "sha256": "c0b0d517d351834705f7678c4b819e09cb619b116400a9cbe5a70b9d873bfcf1"
+    },
+    "etc/fonts/conf.d/60-latin.conf": {
+      "sizeBytes": 2136,
+      "sha256": "df313037dc3a13daa6eb82483aedfc236157cd3895c557250aa5e72b71ad5508"
+    },
+    "etc/fonts/conf.d/50-user.conf": {
+      "sizeBytes": 751,
+      "sha256": "449137ccce57d60bca178d57519ba54e1942d757ad171f3a88cd78df2161c970"
+    },
+    "etc/fonts/conf.d/README": {
+      "sizeBytes": 983,
+      "sha256": "51aaefca8c7b589bfd32a746c122082ca8eec80b18f1e71686d0bc591f74e643"
+    },
+    "etc/fonts/conf.d/20-unhint-small-vera.conf": {
+      "sizeBytes": 1377,
+      "sha256": "278732c68c16177f2aa3c7e4ea318b9f720aee13a433c32eb15ba626806c609d"
+    },
+    "etc/fonts/conf.d/51-local.conf": {
+      "sizeBytes": 263,
+      "sha256": "dca9d917e1f66f73bfa495943b4d1eaab2d93810a51bc8e600cf4d4e9df03e67"
+    },
+    "etc/fonts/conf.d/10-sub-pixel-none.conf": {
+      "sizeBytes": 647,
+      "sha256": "0f00b5cf0ce07062ec65b9b340aa888f6c5fbc215aafebd26781be2d5a13ff6a"
+    },
+    "etc/fonts/conf.d/65-fonts-persian.conf": {
+      "sizeBytes": 10132,
+      "sha256": "c675fab143a3638346874798be45f51f6878ebec591b4362d83cfffb828ec4ca"
+    },
+    "etc/fonts/conf.d/45-latin.conf": {
+      "sizeBytes": 7159,
+      "sha256": "807638284032d8d8f6ed8b014a0edae79a4d4f3c4e70317fdb0bfa8edd66779e"
+    },
+    "etc/fonts/conf.d/69-unifont.conf": {
+      "sizeBytes": 687,
+      "sha256": "fa97c0cf5f79d70e2dc3dc48155d4c9220cd7c6a8bc95b89c4ebcc517f97479e"
+    },
+    "etc/fonts/conf.d/40-nonlatin.conf": {
+      "sizeBytes": 7775,
+      "sha256": "5c3f7d62a44258d5d9e81a93b1685bee5ab78acb8688b25a43c4c1e749312a84"
+    },
+    "etc/fonts/conf.d/90-synthetic.conf": {
+      "sizeBytes": 1757,
+      "sha256": "cdd0aac7840c664a7127b64db66bdfe8dc22be3774d10bc22f4a41c98de5d85e"
+    },
+    "etc/fonts/conf.d/49-sansserif.conf": {
+      "sizeBytes": 639,
+      "sha256": "7849a11ce5243e8bb3d06bcad558737a8682e5122e73c8e427f4c011a2054818"
+    },
+    "etc/fonts/conf.d/80-delicious.conf": {
+      "sizeBytes": 437,
+      "sha256": "34f27b7fe9cd83b2b6d46f16ef9c477412f2d7ef63634f86b9b38b79bc4f81ad"
+    },
+    "etc/fonts/conf.d/11-lcdfilter-default.conf": {
+      "sizeBytes": 695,
+      "sha256": "76aec9d8dac48faabe1bbde9e887cfb09fa45f30be5f8826e945a394a0097e48"
+    },
+    "etc/fonts/conf.d/30-metric-aliases.conf": {
+      "sizeBytes": 13610,
+      "sha256": "3baf25c82e1a14c606d45c212296852be06ae9795d60e84aab573226151450a2"
+    },
+    "etc/fonts/conf.d/60-generic.conf": {
+      "sizeBytes": 1911,
+      "sha256": "195bc8605dd23289d42c10d79cc13a5ce4a4b3cf965df5b30ecc0b7149bb951f"
+    },
+    "etc/fonts/conf.d/48-spacing.conf": {
+      "sizeBytes": 441,
+      "sha256": "99d839cd8aa28854e8f54f26e7200b6e57951f39f56791a0ed473662488bcef6"
+    },
+    "bin/platforms/qwindows.dll": {
+      "sizeBytes": 1247696,
+      "sha256": "2fc2d3a83d93b60500e549d183540436ea478ecc7a5cb6d785cfb85e866a973a"
+    },
+    "bin/platforms/qminimal.dll": {
+      "sizeBytes": 256326,
+      "sha256": "8da6bdc0e067fc1e8c9a3e1f579ceafee688e8fb8d17b4a9ebcd6f1b35797434"
+    },
+    "docs/psdoc/ps_guide.pdf": {
+      "sizeBytes": 15664,
+      "sha256": "4710b2d527a530905ba88d5796ac25eb66ea818f9a2a15adb993258e55d80bdf"
+    },
+    "docs/psdoc/ps_guide.ps": {
+      "sizeBytes": 23073,
+      "sha256": "8e28158b0801fa1f149594694ab7b05a28b2c27099807a3271d335cf348866b2"
+    },
+    "docs/psdoc/ps_fontfile_doc.pdf": {
+      "sizeBytes": 703522,
+      "sha256": "0b8fbd70e41934de8116bf35eb0921580713a5a83c3d3b5054de28f0ccd82930"
+    },
+    "docs/psdoc/ps_symbols.pdf": {
+      "sizeBytes": 8536,
+      "sha256": "50a2c0b53c1e87405bcf0934b5162cc707b64d7572fbbd7e6e721446e056efd9"
+    },
+    "docs/psdoc/ps_file_doc.txt": {
+      "sizeBytes": 11879,
+      "sha256": "29ca8f032bb028ad9cfc97fcbbd3c44926c9b7fac83f3f047a64c9d23194fc7a"
+    },
+    "docs/psdoc/ps_symbols.ps": {
+      "sizeBytes": 33525,
+      "sha256": "6f1b94bc8a152e66f1005f9602033eef7be6ea60330fe134a3724749cc6c4ec1"
+    }
+  },
+  "save": {
+    "fixedDataPins": {
+      "drive_c/GnuplotTests/original-input.plt": {
+        "sizeBytes": 234,
+        "sha256": "bbbc7a67b0894c755867c2db04c8f1d36a7e2867a93b412b4562d337390ae30b"
+      },
+      "drive_c/GnuplotTests/原始数据.dat": {
+        "sizeBytes": 16,
+        "sha256": "266d4190a68a5a246aefd1800503c415d80a61f6746f755f0fce53f15da20761"
+      },
+      "drive_c/GnuplotTests/original.plt": {
+        "sizeBytes": 5329,
+        "sha256": "ca73ae8e5da9ceb0f145a3ea76e0da99b99fc0024e1d49e7babdf782d39d9c26"
+      },
+      "drive_c/GnuplotTests/original.svg": {
+        "sizeBytes": 9941,
+        "sha256": "f88f85d3edc339de93ee782db89cab46d533405f6e97f185b732fbdb21eb3490"
+      }
+    },
+    "inputOriginalBytesPreserved": true,
+    "savedTitle": "AFTER ORIGINAL42",
+    "svgPointCenters": [
+      [
+        86.76,
+        408.55
+      ],
+      [
+        249.24,
+        373.09
+      ],
+      [
+        411.72,
+        266.73
+      ],
+      [
+        574.2,
+        89.46
+      ]
+    ],
+    "svgAxisFrame": {
+      "x": [
+        46.14,
+        614.82
+      ],
+      "y": [
+        54.01,
+        444.0
+      ]
+    },
+    "independentExpectedPoints": [
+      [
+        86.76,
+        408.54636363636365
+      ],
+      [
+        249.24,
+        373.0927272727273
+      ],
+      [
+        411.72,
+        266.7318181818182
+      ],
+      [
+        574.2,
+        89.46363636363634
+      ]
+    ],
+    "coordinateToleranceSvgUnits": 0.03,
+    "fourOriginalDataPointsMatched": true,
+    "savedPlotStateFiniteParse": true,
+    "svgFiniteXmlAndGeometryParse": true,
+    "completeSvgOrGnuplotSpecificationAccepted": false
+  },
+  "guiJobs": [
+    {
+      "applicationId": "gnuplot",
+      "createdAtMilliseconds": 1791783068241,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 233756,
+          "requestId": "job-1791783068241-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 546961,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix",
+          "requestId": "job-1791783068241-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 547004,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791783068241-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791782752169-1",
+      "id": "job-1791783068241-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5104,
+        "fileDigest": "sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26",
+        "fileSizeBytes": 2395136,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "comctl32.dll",
+          "comdlg32.dll",
+          "d2d1.dll",
+          "d3d11.dll",
+          "dwrite.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "hhctrl.ocx",
+          "kernel32.dll",
+          "libcairo-2.dll",
+          "libcerf-3.dll",
+          "libgcc_s_seh-1.dll",
+          "libgd.dll",
+          "libglib-2.0-0.dll",
+          "libgobject-2.0-0.dll",
+          "libiconv-2.dll",
+          "libopenspecfun.dll",
+          "libpango-1.0-0.dll",
+          "libpangocairo-1.0-0.dll",
+          "libstdc++-6.dll",
+          "libwebp-7.dll",
+          "libwebpmux-3.dll",
+          "lua54.dll",
+          "msvcrt.dll",
+          "ole32.dll",
+          "prntvpt.dll",
+          "qt5core.dll",
+          "qt5gui.dll",
+          "qt5network.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "winspool.drv",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1556480,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1556128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 68608,
+            "readable": true,
+            "virtualAddress": 1560576,
+            "virtualSize": 68384,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 353280,
+            "readable": true,
+            "virtualAddress": 1630208,
+            "virtualSize": 353024,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 34816,
+            "readable": true,
+            "virtualAddress": 1986560,
+            "virtualSize": 34620,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 42496,
+            "readable": true,
+            "virtualAddress": 2023424,
+            "virtualSize": 42428,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2068480,
+            "virtualSize": 92768,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 69632,
+            "readable": true,
+            "virtualAddress": 2162688,
+            "virtualSize": 69516,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 252352,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 252352,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 15872,
+            "readable": true,
+            "virtualAddress": 2490368,
+            "virtualSize": 15664,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791782752169-1",
+          "digest": "sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "wgnuplot.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix/drive_c/Gnuplot/bin/wgnuplot.exe",
+          "sizeBytes": 2395136,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix/drive_c/Gnuplot/bin/wgnuplot.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1"
+        },
+        "requestId": "job-1791783068241-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791783617204
+    },
+    {
+      "applicationId": "gnuplot",
+      "createdAtMilliseconds": 1791783669780,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 234358,
+          "requestId": "job-1791783669780-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 67543,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix",
+          "requestId": "job-1791783669780-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 67586,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791783669780-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791782752169-1",
+      "id": "job-1791783669780-4",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 5104,
+        "fileDigest": "sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26",
+        "fileSizeBytes": 2395136,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "comctl32.dll",
+          "comdlg32.dll",
+          "d2d1.dll",
+          "d3d11.dll",
+          "dwrite.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "hhctrl.ocx",
+          "kernel32.dll",
+          "libcairo-2.dll",
+          "libcerf-3.dll",
+          "libgcc_s_seh-1.dll",
+          "libgd.dll",
+          "libglib-2.0-0.dll",
+          "libgobject-2.0-0.dll",
+          "libiconv-2.dll",
+          "libopenspecfun.dll",
+          "libpango-1.0-0.dll",
+          "libpangocairo-1.0-0.dll",
+          "libstdc++-6.dll",
+          "libwebp-7.dll",
+          "libwebpmux-3.dll",
+          "lua54.dll",
+          "msvcrt.dll",
+          "ole32.dll",
+          "prntvpt.dll",
+          "qt5core.dll",
+          "qt5gui.dll",
+          "qt5network.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "winspool.drv",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1556480,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1556128,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 68608,
+            "readable": true,
+            "virtualAddress": 1560576,
+            "virtualSize": 68384,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 353280,
+            "readable": true,
+            "virtualAddress": 1630208,
+            "virtualSize": 353024,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 34816,
+            "readable": true,
+            "virtualAddress": 1986560,
+            "virtualSize": 34620,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".xdata",
+            "rawDataSize": 42496,
+            "readable": true,
+            "virtualAddress": 2023424,
+            "virtualSize": 42428,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2068480,
+            "virtualSize": 92768,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 69632,
+            "readable": true,
+            "virtualAddress": 2162688,
+            "virtualSize": 69516,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 252352,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 252352,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 15872,
+            "readable": true,
+            "virtualAddress": 2490368,
+            "virtualSize": 15664,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791782752169-1",
+          "digest": "sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "wgnuplot.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix/drive_c/Gnuplot/bin/wgnuplot.exe",
+          "sizeBytes": 2395136,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix/drive_c/Gnuplot/bin/wgnuplot.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791782752169-1"
+        },
+        "requestId": "job-1791783669780-4",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791783739428
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3424832,
+      "sha256": "0da149a2d8c502686bef768e4484419902d9081028f9b6209c914dbbaec50927"
+    },
+    "user.reg": {
+      "sizeBytes": 101620,
+      "sha256": "78ef96f54d09d78b11028bc3528f850f16337f583acc6285c25719c35294f2d8"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "6cd1f05a0797a76a112c93bc94a9876f5f7b2cc30f881f44d24404505651460c"
+    }
+  },
+  "applicationConfigPins": {},
+  "outsidePrefixKnownApplicationConfigPins": {},
+  "guiAccepted": true,
+  "published": false,
+  "guiVersionMeasured": "Text window Version 6.0 patchlevel 3, last modified 2025-06-07; About not measured",
+  "scope": "Native Change Directory, explicit Open ASCII small PLT referencing Chinese-name four-point DAT, native Chart title edit/Replot, Save PLT, SVG output and explicit new formal process Open saved PLT",
+  "launcherWorkingDirectoryModified": false,
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false,
+  "fullBundleLicenseClosureVerified": false,
+  "normalQuitMethod": "File/Exit",
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "b6b2375c9a24f64978716a8ab5f0361c52529ef656b454803aa7b7137d699681",
+    "coreJobs": 423,
+    "fullStoreRows": 126
+  },
+  "fixtureReferences": {
+    "drive_c/GnuplotTests/original-input.plt": "gnuplot-20261012/original/original-input.plt",
+    "drive_c/GnuplotTests/原始数据.dat": "gnuplot-20261012/original/原始数据.dat",
+    "drive_c/GnuplotTests/original.plt": "gnuplot-20261012/original/original.plt",
+    "drive_c/GnuplotTests/original.svg": "gnuplot-20261012/original/original.svg"
+  },
+  "screenshots": {
+    "gnuplot-01-original-open-failed.jpg": {
+      "sizeBytes": 58558,
+      "sha256": "b6eaa466961c938a8ebc4f795bbd0ffe0d91c9ecf2a76dcdcf4541506a6306c0"
+    },
+    "gnuplot-02-original-render.jpg": {
+      "sizeBytes": 49640,
+      "sha256": "12afe568498620f46869aa8e532947fcfea48a57ff1e05833c78e5097fe67447"
+    },
+    "gnuplot-03-original-after-title.jpg": {
+      "sizeBytes": 49601,
+      "sha256": "269dbb30e9397ad162d30da8e3cfd5e13b37ce783ada17ba8da3a1051182faaa"
+    },
+    "gnuplot-04-original-exported.jpg": {
+      "sizeBytes": 73865,
+      "sha256": "8f29a032c002a700f747bd41e15a1a4d46ae5fd6096f1e0cf6381248a203f6a8"
+    },
+    "gnuplot-05-original-reopen.jpg": {
+      "sizeBytes": 50229,
+      "sha256": "bf97c617f28899035cd1211b04809b3f1f1d91a3f36a0e0368613a6bf753d000"
+    }
+  },
+  "diagnosticScreenshots": [
+    "gnuplot-01-original-open-failed.jpg"
+  ],
+  "marketLifecyclePendingAtFreeze": true
+}

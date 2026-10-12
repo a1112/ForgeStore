@@ -1,0 +1,21 @@
+# gnuplot 6.0.3 Windows 有限绘图验收（2026-10-12）
+
+新增1款，累计54/1000；14未解决候选完整保持，CopyQ/BowPad不计完成。Ubuntu Kate/Snap两款独立记账，Flatpak两次runtime下载超时未安装，缓存保持；本轮未切换VM，外层8GiB无swap，两4GiB VM没有同时运行。合成DAT/PLT/SVG不另计应用。
+
+正式原 gen-job-1791782752169-1 与独立市场 gen-job-1791784082358-5，冻结定义 sha256:82ce764fef0275a66490135d03bf17940b098d856cdf31d5ced16117201c73a4。仅两份ASCII路径小型UTF8/LF PLT（234/232B）引用各16B中文名DAT四点，原[[0,0],[1,1],[2,4],[3,9]]，市场[[0,9],[1,4],[2,1],[3,0]]，输入原字节保持。真实原生File/Change Directory树选择C盘GnuplotTests后File/Open；Chart/Set Title设AFTER ORIGINAL42/MARKET42，Plot/Replot实际显示，File/Save保存ASCII original.plt/market.plt，File/Output Device设应用SVG后端640x480、File/Output设ASCII SVG、Replot实际导出，再WindowOutput正常关闭输出流。未向OS命令行或DOS菜单输入命令；菜单自身回显的gnuplot语句是应用操作。PLT 5329/5327B，SVG 9941/9939B；实际换行逐文件见later-observations，不改输出。
+
+两个新正式进程都重新原生ChangeDirectory，再从文件列表双击显式Open保存PLT，标题/红色原曲线/蓝色市场曲线真实恢复；回滚后原PLT同样显式重开。重开窗口宽度不同，不称640x480 GUI始终保持或图像像素全等。有限独立保存PLT标题/单plot/中文DAT引用及轴范围核对，SVG XML四point use中心与独立线性坐标转换结果误差各≤0.03 SVG单位；边框实际两条相同路径，原唯一边框断言失败停Quit/reopen，只读确认后严格V2要求所有重复边框几何相同，原解析器/失败和输出原文保持。不是完整SVG/gnuplot规格或浏览器SVG渲染验收。五正式File/Exit正常退出0+wineserver停止；窗口Version6.0patchlevel3/lastmodified2025-06-07，About未实测。
+
+首诊断job-1791782859877-2完整路径Open返回basename original-input.plt，默认目录下Cannot load input，没有输出；正常Quit0不计验收。首running只读助手误用capture全任务终态断言失败，没有CP；V2只文件pins/jobs.list诊断后正常退出保存421/126完整CP。随后新正式job-1791783068241-3使用应用原生目录树完成。第一次仅在Folder文本框输入路径仍选择Home并cd Z:/home/forge，实际C盘树选择后cd C:/GnuplotTests才继续；重开均采用真实目录选择。没有修改Core、definition、launcher参数/environment/workingDirectory、全局context、字体包、DLL/runtime或程序。原生Open全路径默认目录流程、广泛中文路径/直接中文输入及无人值守未验收，不称实际Wine具体函数定位或通用修复。
+
+官方固定gp603-win64-mingw.exe49945304B SHA93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84，匹配官方固定SourceForge下载页面公开SHA。观察材料是web工具返回文本，不称原始HTTPS HTML。source gnuplot-6.0.3.tar.gz7616904B SHAec52e3af8c4083d4538152b3f13db47f6d29929a3f6ecec5365c834e77f251ab，匹配官方87B .sha256文件。11源码成员原归档固定，源Inno模板未展开5.5默认字段不证明二进制版本对应。PE安装引导程序Machine0x14c，包名win64和应用正式Wine64路径按实际记录，未做全部PE架构或源码二进制对应验收。Inno数据标记6.1.0；外层既有隔离innoextract1.9成功提取575文件，正式安装573文件，不称完整Inno规格验收。原生Inno /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:后单反斜杠Gnuplot /NOICONS /TASKS=，DIR15UTF8B hex2f4449523d433a5c476e75706c6f74。主自定义gnuplot许可（SPDX gnuplot），不是GPL；固定Copyright允许附通知复制使用和分发，修改源码仅patch分发及修改二进制特殊版本/联系等条款保持，本轮未修改程序/源码。安装license/Copyright1524B有29CRLF，与源1495B归一化后同文，原字节不同。完整MinGW/GDI+/wx/cairo/字体/docs/demo/tools/icons捆绑许可闭包、Authenticode/PGP/可复现构建/源二进制对应未核，不称最新。
+
+下载失败全部保持：初包只有5807678B但首helper缺Content-Length门槛，源成员误名wmain.c导致提取断言失败，尚未转发安装。新官方HEAD49945304B挡住短包；无界限Range续传再提前EOF到10793269B，旧两部分与失败摘要保持。官方另一镜像又转同master，速度probe45秒门槛失败；最后38个有界Range均严格206/ContentRange/长度/ETag，实际旧tail一致，合并完整包并核官方摘要后才安装。第三方npackd不同SHA没有当官方依据，也未据此称损坏。完整-v4源收据下载阶段installerJobCreated=false/upstream阶段标签不改，实际正式安装完成另记。
+
+每代次573程序文件独立pins，572跨代次同字节，唯一unins000.dat各71665B不同，实际两原文私有保存，原因/卸载未验收；wgnuplot.exe2395136B SHA6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26。Store IPC预缓存同版本更新与精确原回滚通过，GUI市场更新/回滚按钮未验收。回滚前426Core/127完整Store CP先保存读回，回滚后426/128旧全字段和全部代次保持；第三原GUI后427/128正常Core/Store重启前后七类全字段精确同。candidate-v60/root1/role69，56目录项54应用2内部夹具、117实际签名目标65公共文件；旧115中114非catalogue目标精确保持，仅catalogue新增gnuplot，CopyQ不在活动目录，旧root及签名不变。完整私有CP gnuplot-20261012/after-restart.json SHA9cb286f6901ffbb3bb6a88dc1444e9fe43f2f196105929c411a9fbfc238dae9f，当前只读rolling-current-state-gnuplot-20261012.py经严格SSH stdin客体执行，host助手不要求客体落盘。
+
+第三原GUI后system.reg3424832B/user.reg101620B大小同而字节变，实际前后原文与287/20行私有diff固定，原因/键值等价未定；只读观察固定实际新pins后严格CP读回和正常重启一致。不称旧registry跨第三GUI原字节保持；其余程序/输入PLT/DAT/输出PLT/SVG、市场全部pins和旧固定验收数据保持，已知prefix users与home wgnuplot.ini位置本轮未发现该文件。仅固定数据、本轮程序与有限registry/配置位置，不是全部应用FS遍历；最近64IPC摘要不替代完整SQLite。core()查询可写既有scratch，不称FS零写。
+
+后续host助手/门槛失败保持：猜测缺失历史助手读取、输出截断，全文独立JSON另读；原prepare执行超过工具等待后宿主未保存pending handle，没有重跑，真实结束后独立逐字节/完整候选内容核对才签名。未执行sign-builder V1草稿连续数字替换会碰撞，V2单次精确映射预检后执行。market-final V1错误要求market快照完全不变，被新增更新历史assert阻止，没有CP/回滚；V2核旧全字段保持和新真实状态后CP读回才rollback。原build+transfer同exec缺中间exit断言但实际均成功，首次安装工具pending误报停止后轮询同session无重装；不声称历史所有门槛始终有效。27原source/gui/acceptance与market待执行标签冻结不改，2809旧immutable保持，全部失败另记，不補造未运行检查或改旧收据。
+
+高级函数/表达式/样式/格式/3D动画/复杂或大坏图形、打印、广泛终端输出/脚本宏、中文PLT路径GUIOpen/直接中文键盘输入、客体联网下载、新机注册/迁移/跨版本/无人值守未验收。不称后台联网不存在。10张实际JPEG中01只失败诊断；02/03原曲线及标题、04导出回显、05新原重开、06/07市场曲线标题、08导出、09新市场重开、10回滚原重开。独立FINAL审查/index/commit/普通推送另记，不替代真实客体GUI或私有CP重演。密码/登录画面/私钥/凭据/私有完整CP不入库，认证锁屏和不息屏配置保持。
