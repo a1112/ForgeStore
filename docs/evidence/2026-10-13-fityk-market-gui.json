@@ -1,0 +1,1233 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791833931175-4",
+    "createdAtMilliseconds": 1791833931180,
+    "definition": {
+      "bottleId": "gui-fityk",
+      "category": "science",
+      "compatibilityRating": "unknown",
+      "id": "fityk",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\Fityk",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "fityk-1.3.1-setup.exe",
+        "sha256": "a1da22f9b5fdf99829e05554b0990d8c7bfd498dd7ac12f14e0fc9ea50033a60"
+      },
+      "launchers": [
+        {
+          "executable": "Fityk/fityk.exe",
+          "id": "main",
+          "name": "Fityk"
+        }
+      ],
+      "name": "Fityk",
+      "publisher": "Marcin Wojdyr",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "1.3.1"
+    },
+    "definitionDigest": "sha256:484e170220353b4cdfd940db7353719bfd3f2634ecdcc033cd700b68f79efdda",
+    "id": "gen-job-1791833931175-4",
+    "launcherDigests": {
+      "main": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791833944469
+  },
+  "installedFiles": {
+    "wxmsw30u_core_gcc_custom.dll": {
+      "sizeBytes": 7072256,
+      "sha256": "be9aa6e3402c3120a29af01ddcc88bff3a178d5e776bfd32649b2cadb80884ee"
+    },
+    "fityk.exe": {
+      "sizeBytes": 2178048,
+      "sha256": "0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da"
+    },
+    "libfityk-4.dll": {
+      "sizeBytes": 1645056,
+      "sha256": "b931e3d1ee8f4f0691d36f9efeccaa2c0a28b3ab15018bb316ea61b35c5dc14e"
+    },
+    "xyconv.exe": {
+      "sizeBytes": 56320,
+      "sha256": "44c918dc8b78fc4e835ed1b8009962a340acd35d3da24d1de93e3db0a7215788"
+    },
+    "libnlopt-0.dll": {
+      "sizeBytes": 344576,
+      "sha256": "08e6a6d103db8975900b088d88136ea03d8587f611cc1871cfef72c2b16f4859"
+    },
+    "libxy-4.dll": {
+      "sizeBytes": 445440,
+      "sha256": "e3369a08bb7f8ed2944158f7b275e622f799c83b443ce8148c0b219d822d4f7a"
+    },
+    "COPYING": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "unins000.exe": {
+      "sizeBytes": 718497,
+      "sha256": "661d9b0912421ec100b9704e5456f5b463318834a85111f4d3f27ba8e3eaca2e"
+    },
+    "wxbase30u_gcc_custom.dll": {
+      "sizeBytes": 2336256,
+      "sha256": "9583418c36963c59a25bcfaf7ebf31bfc8d1b4b7e57ac0a54b9f199a15f44ea4"
+    },
+    "NEWS": {
+      "sizeBytes": 24805,
+      "sha256": "e93157c4b54a38d36c27523a63da92c1331b5dc35f9c1be358d57a708558292b"
+    },
+    "libgcc_s_sjlj-1.dll": {
+      "sizeBytes": 96256,
+      "sha256": "0b163950fb5952bcf3fc34deb9eef87d8656ba6d6723e42c7112e8a416066d0f"
+    },
+    "wxmsw30u_adv_gcc_custom.dll": {
+      "sizeBytes": 1080832,
+      "sha256": "d859bf505acea66d38cb0b696f36076ee82f35319714369c71bb53f88323acbb"
+    },
+    "libstdc++-6.dll": {
+      "sizeBytes": 1349120,
+      "sha256": "a6c02ad9848aa4ab8aff1e00b04698dd22a13cafa48f3811062da7e380c17439"
+    },
+    "fityk.url": {
+      "sizeBytes": 46,
+      "sha256": "9b9536d6fde06603763adc60505c384f8cf9dcf0b9968ccf500ad0216765b898"
+    },
+    "libwinpthread-1.dll": {
+      "sizeBytes": 47104,
+      "sha256": "407489e274f0f0a5289db70a9b29b386754ee2788fce209a30a75adadb4c1763"
+    },
+    "libxy-3.dll": {
+      "sizeBytes": 452096,
+      "sha256": "05cfd092c1faf1d16ab22e1d4210901f94f94e9a089ef9fbf6a96a55ca013870"
+    },
+    "TODO": {
+      "sizeBytes": 3947,
+      "sha256": "9789010cfbf304e6a0120a0b71ae55d51051a87e3d97bd8980c65aa90e21a778"
+    },
+    "xyconvert.exe": {
+      "sizeBytes": 199168,
+      "sha256": "92b84812af5265569ad0a6a94baec4dc00fd32c121dd07f5dc4d4340bf6aa42f"
+    },
+    "zlib1.dll": {
+      "sizeBytes": 101376,
+      "sha256": "e2ed26919e4eed2a58d57f798eedd229d628941cb815cd9d7e7f717addc54f43"
+    },
+    "wxmsw30u_stc_gcc_custom.dll": {
+      "sizeBytes": 2446848,
+      "sha256": "ca5a0a9a11bb623042c66ef4428673ff153f1c79fbc6a03cc4ea48db71bca12c"
+    },
+    "unins000.dat": {
+      "sizeBytes": 9714,
+      "sha256": "329f194f6746485c905c747b7a4d71e2af4ddc1bd4688bb6b8ad5b8b213dcc1f"
+    },
+    "cfityk.exe": {
+      "sizeBytes": 20992,
+      "sha256": "a19c4fc0a4241310f2c43a8de70d05ff20cc2392589645d2c6473e8c57741f46"
+    },
+    "html/intro.html": {
+      "sizeBytes": 8630,
+      "sha256": "822c943b890a66a5a5080f699a1d1ef41a6d87ff3f12189a151b6fd8ec067fe5"
+    },
+    "html/search.html": {
+      "sizeBytes": 3820,
+      "sha256": "d209fb54ef974796445db8b63162dc8a5a1c8113a3e78b5a68d53caee1c5c54f"
+    },
+    "html/data.html": {
+      "sizeBytes": 46068,
+      "sha256": "19d46cd129f3362a1673c4fb859a318e9f719c5cef1d5873f2da5d7c6c356f2d"
+    },
+    "html/ref.html": {
+      "sizeBytes": 28205,
+      "sha256": "09504615b4f96435f5074e91b1fb26e1a37e4bc525dc1ebf4cf4641e0e9b7962"
+    },
+    "html/script.html": {
+      "sizeBytes": 70469,
+      "sha256": "e8ac0c25e0181d1746a0a765d9b38726db33800007fa7b732e9bcb8b4cd29347"
+    },
+    "html/getstarted.html": {
+      "sizeBytes": 17750,
+      "sha256": "1fc3f52386323021106ef1c2f467aeb0e4e3d7af5295d2ee233687cca8d8ba00"
+    },
+    "html/model.html": {
+      "sizeBytes": 49791,
+      "sha256": "32ab578b40ebbef3451d0d62fc023874d0425347ffded2b714a03038247beb3d"
+    },
+    "html/fityk-manual.html": {
+      "sizeBytes": 10335,
+      "sha256": "5b60c7ca7e716cddfc06728322ba375735a7ae5688f778a12fdd9337072e6485"
+    },
+    "html/fit.html": {
+      "sizeBytes": 29409,
+      "sha256": "1e202e9319cb6467c4df7028b0c1dd6ce016c56bd453d3b77b7f2584998468b4"
+    },
+    "html/searchindex.js": {
+      "sizeBytes": 21119,
+      "sha256": "07d5b5c00b59c4ebce713267f24db2be53241a08b5f0cbb8d9c2adcf41b79b31"
+    },
+    "samples/nacl01.fit": {
+      "sizeBytes": 492,
+      "sha256": "0fe12727cdc039d2b8d9e952be9bc313cadb300b7cbd9c2b28488dc6108cf2c6"
+    },
+    "samples/README": {
+      "sizeBytes": 477,
+      "sha256": "d5197985c7f1d573834f0218b125c8864e4541b9ee1a576aab0beb05b16e1bb4"
+    },
+    "samples/enso.dat": {
+      "sizeBytes": 778,
+      "sha256": "50cc09eade181697272ae008a790503e7de58f1e2777878a1f9285c9e9c26245"
+    },
+    "samples/pesa.fit": {
+      "sizeBytes": 454,
+      "sha256": "2712f4b08cab8e9b8ca36a88027307df3376182795037597bc6e43c10b7de194"
+    },
+    "samples/read-shockley.fit": {
+      "sizeBytes": 474,
+      "sha256": "5bd5d12bafe74aa24d427f61d879ce9f5909ce437fc47951dc6ff07dec3bb2f4"
+    },
+    "samples/SiC_Zn.fit": {
+      "sizeBytes": 3584,
+      "sha256": "86311754a8a1a6d5390aa7d7199b88cd28f2c101500c8cd94dede3904dce5cf9"
+    },
+    "samples/tmp_save.fit": {
+      "sizeBytes": 52911,
+      "sha256": "fce7f12f12cac2a47887661ba2e518b8728a769c69aa4c8b460f9f5f6172b174"
+    },
+    "samples/nacl01.dat": {
+      "sizeBytes": 11664,
+      "sha256": "ef8fbe78e540aac54d517744a406c8780b6f3fd56d9a78065868d193b6009dbf"
+    },
+    "samples/SiC_Zn.dat": {
+      "sizeBytes": 35441,
+      "sha256": "7973f0fae43a328cbfe2fbbbd3fea91c89d19356c13160c0f9f3c56dc755c31b"
+    },
+    "samples/enso.fit": {
+      "sizeBytes": 724,
+      "sha256": "af9b5b1819f052b805d0ea28bad32901943d4a91928ced89971a5c9a3bc7585c"
+    },
+    "html/_images/strip_bg_icon.png": {
+      "sizeBytes": 394,
+      "sha256": "77eeeb8a1388ba8b7dace0c0ccaa6fbcf28b06ba686e1e6ba2305703792a63aa"
+    },
+    "html/_images/fityk-with-tooltip.png": {
+      "sizeBytes": 129950,
+      "sha256": "af4f14afcd1bf0dde1f514acf0d7516262a3f4b8387e520fa7721b5661caa8f0"
+    },
+    "html/_images/fit_icon.png": {
+      "sizeBytes": 617,
+      "sha256": "2b5d20807c00e536ec829b748d4301cbc7d025b9a01c944c13ada80b7b601a44"
+    },
+    "html/_images/eq_shape_icon.png": {
+      "sizeBytes": 583,
+      "sha256": "38ee3240b076167d47e73d9b70faa9f90e0615374bbdc0a8633585957ec854e8"
+    },
+    "html/_images/mode_add_icon.png": {
+      "sizeBytes": 498,
+      "sha256": "cec6442dd1c65dc17df6f5545a213aaad9c5d24e1377f4e5b5262593894ed2fe"
+    },
+    "html/_images/open_lock_icon.png": {
+      "sizeBytes": 426,
+      "sha256": "5343540c59cc862ad1b1ea228004164c0226081913cec5365f37530296879bd5"
+    },
+    "html/_images/eq_fwhm_icon.png": {
+      "sizeBytes": 298,
+      "sha256": "374de634a1b75c57d6f9e2a881bf8ae44ef113dfb0c11276b6483f2a318addf5"
+    },
+    "html/_images/mode_bg_icon.png": {
+      "sizeBytes": 259,
+      "sha256": "542d96e5ca9b3a43f87001fb5fc180673a30da866e10345f82d49b9ed6822303"
+    },
+    "html/_images/add_peak_icon.png": {
+      "sizeBytes": 369,
+      "sha256": "3c898833421654355e569c34249bb4a9c235e6b6530f0035d5b453898b477c1f"
+    },
+    "html/_images/lock_icon.png": {
+      "sizeBytes": 524,
+      "sha256": "1e6a492398bef0970b04a9b0e2461b79b55167621cc5f33e9d89889352e802a1"
+    },
+    "html/_images/mode_range_icon.png": {
+      "sizeBytes": 264,
+      "sha256": "7ad9ad9a8fc440fcaae99454d81a416381f7f910bf057af34b6e5a6e25949436"
+    },
+    "html/_images/load_data_icon.png": {
+      "sizeBytes": 961,
+      "sha256": "6cdbe413dcc0149045e190a0eb1f43ececd746786ec47b0ec4407ce404b3bb8c"
+    },
+    "html/_images/zoom_all.png": {
+      "sizeBytes": 551,
+      "sha256": "bb5666f9f178dc5bbb0e04fd91b08e54b2c67b67abb24b020f721bec11a6013e"
+    },
+    "html/_images/mode_zoom.png": {
+      "sizeBytes": 671,
+      "sha256": "84d61d217a43ee3087fa5522d60b009ddce319ad03e0f4291022738d8efd464e"
+    },
+    "html/_images/copyfunc_icon.png": {
+      "sizeBytes": 619,
+      "sha256": "0e4d8fcaef82bf084b958d6bcb1b4acbca16ade7b971a0e0ab81da33d75d6074"
+    },
+    "html/_static/mouse16.png": {
+      "sizeBytes": 712,
+      "sha256": "54a472fae33cbd8fb1c474e6b1ddbe19cce5909a2ed191772e970458715183d7"
+    },
+    "html/_static/comment.png": {
+      "sizeBytes": 641,
+      "sha256": "5fb8b0b215a51fc05bc152a12ab32d44cda758721c5df53f2aeab1b1e3490aa5"
+    },
+    "html/_static/ajax-loader.gif": {
+      "sizeBytes": 673,
+      "sha256": "5d045fd991ddf2b208dd9bf39a591f50e6ec793416e2867f54e8c6c7e89b68c2"
+    },
+    "html/_static/jquery-3.1.0.js": {
+      "sizeBytes": 263767,
+      "sha256": "b25a2092f0752b754e933008f10213c55dd5ce93a791e355b0abed9182cc8df9"
+    },
+    "html/_static/up.png": {
+      "sizeBytes": 203,
+      "sha256": "108f280badfe5ec5168738c4f70a59bc6ea9d1e9243ff2b951386fb668e93502"
+    },
+    "html/_static/up-pressed.png": {
+      "sizeBytes": 214,
+      "sha256": "cfe678a4446900f4081ab8d74ef3d1f8b1002edbf8cae3db292fcca0637310ed"
+    },
+    "html/_static/plus.png": {
+      "sizeBytes": 90,
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+    },
+    "html/_static/fityk-logo.png": {
+      "sizeBytes": 3925,
+      "sha256": "9f2dd5176f0ac7dc57b76551429835fc68e4891302a4c79c1abf81f834699c82"
+    },
+    "html/_static/minus.png": {
+      "sizeBytes": 90,
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+    },
+    "html/_static/comment-close.png": {
+      "sizeBytes": 829,
+      "sha256": "866319c7cf09c3d5b2926ea9d9f068801c8ee0724dac66604b03ac50b1829577"
+    },
+    "html/_static/underscore.js": {
+      "sizeBytes": 12140,
+      "sha256": "42d8fad13bc28fc726775196ec9ab953febf9bde175c5845128361c953fa17f4"
+    },
+    "html/_static/down.png": {
+      "sizeBytes": 202,
+      "sha256": "75fc30ab04aa494f8ab239fba636663b950ccff763bd3b95a3c214ee2344ec89"
+    },
+    "html/_static/underscore-1.3.1.js": {
+      "sizeBytes": 35168,
+      "sha256": "f808f0aa32fbe90fb9c9c846917faff3fdd4e236c284b76c02dd33753dc90177"
+    },
+    "html/_static/basic.css": {
+      "sizeBytes": 10199,
+      "sha256": "4e0e5b69a3ce0cf0e801e34af5669267ddb5a18abe6679559d357ac747f80add"
+    },
+    "html/_static/searchtools.js": {
+      "sizeBytes": 25370,
+      "sha256": "78f19bab86eec1750baafc72b7f64860c9a6314b0ec76330ea4cf84fb2f1dd19"
+    },
+    "html/_static/comment-bright.png": {
+      "sizeBytes": 756,
+      "sha256": "0737b92f8825f5ed0740482819f3fba7826297908bbd44ff00b64ee95d262d60"
+    },
+    "html/_static/fityk.ico": {
+      "sizeBytes": 326,
+      "sha256": "f8b7b7d69beb2b3163ea3f1bb0cd9f4f179ffd8683d21980653a714acf6e7424"
+    },
+    "html/_static/pygments.css": {
+      "sizeBytes": 3900,
+      "sha256": "5534c86067262bdfb4b426d4d59db46239496c01d5cde22cac1d93adde9a9f57"
+    },
+    "html/_static/fitheme.css": {
+      "sizeBytes": 16528,
+      "sha256": "9564719e1e5777053aaa8d31ad43d9463027c6d9dc46cec29932269356a0b2c4"
+    },
+    "html/_static/doctools.js": {
+      "sizeBytes": 8166,
+      "sha256": "9a83cc77bc7e1837a0ec91a4a2a82b3ffefa6efb218ae5eccdcaa8f122b7756a"
+    },
+    "html/_static/file.png": {
+      "sizeBytes": 286,
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+    },
+    "html/_static/websupport.js": {
+      "sizeBytes": 25351,
+      "sha256": "af6d4f0f3298f8f954f9afa7b38a7950e22c07845c300a4e6b6357c226640e16"
+    },
+    "html/_static/down-pressed.png": {
+      "sizeBytes": 222,
+      "sha256": "c89ca40639d0bb71502306afdbc8646f6ef362b79c54a8f9211aa290ad8b3635"
+    },
+    "html/_static/jquery.js": {
+      "sizeBytes": 86351,
+      "sha256": "702b9e051e82b32038ffdb33a4f7eb5f7b38f4cf6f514e4182d8898f4eb0b7fb"
+    },
+    "html/_images/math/0061900eedf2a698265debe2455b3dd66e4a98a6.png": {
+      "sizeBytes": 903,
+      "sha256": "87bbc702b2207834133963f4a9dade40df428cb91528e16e02287a880aea888d"
+    },
+    "html/_images/math/85827da1cb22771cd4522cafd76cf964779a46d9.png": {
+      "sizeBytes": 467,
+      "sha256": "6621517a26293e5fa5c4498655eddaa16fe751b9d81696a4a0f34b6f014a1d52"
+    },
+    "html/_images/math/18c71f4fd10bc96c41977ae3f6aab95b52845f8e.png": {
+      "sizeBytes": 1671,
+      "sha256": "346aaf94b2834fdcdaa39504d9d96bba7416fa0545bdc8e32529fe3f47f46a60"
+    },
+    "html/_images/math/131f13cda116814673ad3dcfa6cf7d9d038095f2.png": {
+      "sizeBytes": 1691,
+      "sha256": "22553ab7fd4d349c56d6fa701d81b4c5a55f21b7fd327c2e337ae33f8f7b61a4"
+    },
+    "html/_images/math/4ef4d522344605d2034f4083bad6f86e7a4e1468.png": {
+      "sizeBytes": 1894,
+      "sha256": "b75b4c5fdf0c167e811f62365b1ebfc08943d68e0760590264e09f0199b85c7c"
+    },
+    "html/_images/math/22462de98084da3d16db65c30b66b9239f9a8658.png": {
+      "sizeBytes": 1548,
+      "sha256": "6788996be38b5ef8f5aa6ac53d724c4ce60ed6ebe1985752de60e72c3135567b"
+    },
+    "html/_images/math/d820601aabf25065f753c03e3b52125e8f840a66.png": {
+      "sizeBytes": 538,
+      "sha256": "df713b302877a818ff057f98cc2ef7bf351e354d33cd47c7ce46fca8cefd46e5"
+    },
+    "html/_images/math/2a5449c37d8b909cf1bafee0025397efa1612d5e.png": {
+      "sizeBytes": 276,
+      "sha256": "0beaa1ba8986f547f5bc632a5d6e72a9eef887623ed920bbe5fd218dd50bf511"
+    },
+    "html/_images/math/9d33fe97b94f8f2955811197bfdbd51ae012d5f2.png": {
+      "sizeBytes": 251,
+      "sha256": "3b06c6f30213ed89a6cd41b53073be0cb8c9f19d4f53e3daabdb6b013cc97702"
+    },
+    "html/_images/math/2e5678c68430827a99a39791cf03ddef7ab1962a.png": {
+      "sizeBytes": 281,
+      "sha256": "8053d5bdb14a8bdf1e9af88afeb87d88f530db8c925d359facefa637b4907529"
+    },
+    "html/_images/math/7abc1f2f38653a0c98c707f88719f9d2d48c8fd1.png": {
+      "sizeBytes": 978,
+      "sha256": "2c1de4774506e0e7c2012dc9fcbd42313cf6700b1c365af92edff961d758fe25"
+    },
+    "html/_images/math/9694c083b88eead25e485c27ec0971095861d831.png": {
+      "sizeBytes": 1221,
+      "sha256": "a7c26bb512ec51cba4560faf41a85ca9271bb646c233e928cd9f3fc81b0d7048"
+    },
+    "html/_images/math/928dc22e9fb95c441aeb99054940e5f868e517d1.png": {
+      "sizeBytes": 490,
+      "sha256": "b83f7bf8a89948dff0dbbccd567bd582587857d9c14e933a06d5cbab66c77e6c"
+    },
+    "html/_images/math/5f4c8b2f96825eaa8e2bba571715ca6fcffb49ca.png": {
+      "sizeBytes": 791,
+      "sha256": "d489330e7ba6d5c6d499695524c1eda194eab9c4b4e822a775686bf0eed430b9"
+    },
+    "html/_images/math/a459e4be901c41204a7f52eed29f7cb8467f4e98.png": {
+      "sizeBytes": 293,
+      "sha256": "8627d7567bdb4b2bf9d1e17b97d543604dca3267023ad93e6270f5e30eb78431"
+    },
+    "html/_images/math/2cca042255a53886c917ad9e79fb3b757d0f3023.png": {
+      "sizeBytes": 1796,
+      "sha256": "f38680b5ad37ef454ffae38462589006567516e1947819d20e4fa2ff239c08c4"
+    },
+    "html/_images/math/34fae3b921f171cb13db0bc06c545b38576b119c.png": {
+      "sizeBytes": 1224,
+      "sha256": "eb09b74b52cb93fc1e57edcc06e20ed557b686e59f717d53bac7bfb71bc1e80c"
+    },
+    "html/_images/math/f21f868daf370c2e49bd9c31548a416b4ed0f521.png": {
+      "sizeBytes": 989,
+      "sha256": "9714d8920f1b7a07ac42b4992a3803a08272fbcd4946679dc927d197378e8d41"
+    },
+    "html/_images/math/b218da7db9ab81c63bf32991595ea54b07e1ce58.png": {
+      "sizeBytes": 967,
+      "sha256": "98ea6c3d425699d9960790e2b8d8ec12b4feb8a863a6a4c6f94cc729b3ddc6f4"
+    },
+    "html/_images/math/44555257c1202bc9b5d4a27aec7cf0cb01aad73b.png": {
+      "sizeBytes": 688,
+      "sha256": "f7b8974252e630103321725c99a1d196526b1b7a2494b813ef3fe31a4af4b568"
+    },
+    "html/_images/math/1542ddf21b6bec2d88db585b2b076385359acd25.png": {
+      "sizeBytes": 719,
+      "sha256": "f27942befb29fb4fade5873f8498a9cf98133cfe7d0435aaa83106f6b574db7d"
+    },
+    "html/_images/math/04f1eb15dcae195a93de08668772bedd7ce66147.png": {
+      "sizeBytes": 529,
+      "sha256": "6efa8d904ed7cb06fbe6ff1fb3dfc6aa43fe4f95173202292adecd568a29c94e"
+    },
+    "html/_images/math/8bbf652a5cdd05041ad34447067b9b904d3fb206.png": {
+      "sizeBytes": 252,
+      "sha256": "52e576732f2a41b39748626e84438b4239bcd4022330bd9d5d73e0fed56a3a02"
+    },
+    "html/_images/math/c95854c1466eef53fd2baed899c9ccefe47784c5.png": {
+      "sizeBytes": 1586,
+      "sha256": "5f930bb227936ca20ca09562f016fb8bed75af9746df7fa66e7a5bcf72f1c36f"
+    },
+    "html/_images/math/7848814fe80b7b9d7192270de2733668dec05e75.png": {
+      "sizeBytes": 263,
+      "sha256": "c8780b71873fccc31b171b3519771747318cd2061719b3a796c88a17a6071120"
+    },
+    "html/_images/math/5c3cf831f25b3db3261bfc14656c8f00fa52d670.png": {
+      "sizeBytes": 298,
+      "sha256": "192173c345d3a2d2f760f3dbc646b22be6ee359fc241412218e825c87bd10a6c"
+    },
+    "html/_images/math/aa7365275ca60c6b07f4781ccdf3880ea610cccd.png": {
+      "sizeBytes": 1020,
+      "sha256": "591cf332ec151e2e92390fb2228bd7042121b50006f3e397c7c52680fc3e7f40"
+    },
+    "html/_images/math/fe991c524349953a4e8996d6652fd1ad11f920bd.png": {
+      "sizeBytes": 2876,
+      "sha256": "440562f357af5179f233da7a9b846a9e207ab70046e1c278f2b4a86cf8399d31"
+    },
+    "html/_images/math/a0c3eb0958d9b9606643ff4c640a70c0b6bacaed.png": {
+      "sizeBytes": 1117,
+      "sha256": "3955fa7e714e0ad8286f73e39f9c139b656e202f296f5eaf59ac8893ba17c88b"
+    },
+    "html/_images/math/87a1d98503353faeca87b651ae6d3782a6518682.png": {
+      "sizeBytes": 276,
+      "sha256": "6e1e3100d9dd792c872b6fc645f6d66724e136af7eed3fc5debb3af1e6c5c232"
+    },
+    "html/_images/math/2009fef51e7671765f76e8c7b9dc00603e8ce5c3.png": {
+      "sizeBytes": 275,
+      "sha256": "efc88623a800ef18a89867a2cb37cdaca61c2f30cf0740c998bc16a8238e63c5"
+    },
+    "html/_images/math/212f21807677b160aafa886ec83e5e8ce9c2ba50.png": {
+      "sizeBytes": 1863,
+      "sha256": "e3280ed9149df768054ec37f33d025d9b41db9da2aef285be08abcd605794fb8"
+    },
+    "html/_images/math/82b6c33a7f25815eb39004272639a0eeb3107ee4.png": {
+      "sizeBytes": 273,
+      "sha256": "dd4c83f302a27967003c5cd72560be0d562cd50459ac7b8ec3a3fb914959eeb7"
+    },
+    "html/_images/math/7fb9030145cae5a860f1fd289a8dc6aecc2b76fa.png": {
+      "sizeBytes": 1514,
+      "sha256": "31527a62016abaa283216263df66363eeab1c0dcf3c8ea242154b1c70643f1fc"
+    },
+    "html/_images/math/46e88bfbaa4ddb7c5020c72087f89755701a084e.png": {
+      "sizeBytes": 1953,
+      "sha256": "634b350119dd0a01b30b49326ebda0535168302383175901810de2ebe299a19b"
+    },
+    "html/_images/math/fb46e498855f75c46a7d116199b21f6f23c87f69.png": {
+      "sizeBytes": 1657,
+      "sha256": "a6c194b71ba1017b805139d26120e96ae363f728b27ef6ba028bd65aba874242"
+    },
+    "html/_images/math/5fa665b96c32a6582773174f1d99cb441d254628.png": {
+      "sizeBytes": 2212,
+      "sha256": "d945f96da69e699dc94965d46b1dc77416c043c7902a1787baffff98248b279d"
+    },
+    "html/_images/math/0dd803736af6a091acbded8c97404622acc0c6f9.png": {
+      "sizeBytes": 476,
+      "sha256": "cc61017f03fc39f334d24282f6b236b4a9cb46bad624dd82f1a9c1995d07a202"
+    },
+    "html/_images/math/3c7c74b573165c8bc22f1fd9062095ea21051ee1.png": {
+      "sizeBytes": 2088,
+      "sha256": "f732d89c14028eb74f6bceb2cc0f8497bb73aac7d544c8529009fab6691200e0"
+    },
+    "html/_images/math/50177a0a8a3c51f049392edfe4f30cf7cf0d37b4.png": {
+      "sizeBytes": 259,
+      "sha256": "42f2ec13408e818de5dd15052edb89aabecc9e4becdef6224b761b40b49e75b8"
+    },
+    "html/_images/math/03b14ec17e8b0627411861fb0b3d88d197e7aed0.png": {
+      "sizeBytes": 1017,
+      "sha256": "223ec1bd2e537eee44aae8ead925b8329f7a393033eee5733e79865abb5fe086"
+    },
+    "html/_images/math/198cb72d7f33a94ffdf903e3efab9f5ae1872d54.png": {
+      "sizeBytes": 1397,
+      "sha256": "2631c82719e55e27337dd05d640bfc9b3c34eca5bd0de1927ab9f65b164e9a73"
+    },
+    "html/_images/math/9982c7d3f088162768cf621b5f5fa8a000107ffd.png": {
+      "sizeBytes": 965,
+      "sha256": "3b0a9555c74db0b7ee94e926367544299746f47122f9db46342b7312ea044d57"
+    },
+    "html/_images/math/df4596bd16202e23d96f8a1c08b5c4f91e94ba12.png": {
+      "sizeBytes": 867,
+      "sha256": "8a178f2be1a77d4cb8602c8b5189a476bedefe411b8206e457cd9a18a47aaa5b"
+    },
+    "html/_images/math/fb89856ac17a1bef2bdf0aa95664e66388ccd336.png": {
+      "sizeBytes": 1426,
+      "sha256": "55ffdc5e8cec46f0a0694086bc3d692e771044e0d6a974542abe46d39ccb68fc"
+    }
+  },
+  "fixedDataPins": {
+    "drive_c/FitykTests/市场数据.dat": {
+      "sizeBytes": 16,
+      "sha256": "0b81479b00476f984eca3d8fe3ffd8b74ef2d479598232d0e291493c693cfd4b"
+    },
+    "drive_c/FitykTests/market.dat": {
+      "sizeBytes": 21,
+      "sha256": "4a93a72a20fc3a6c47c751ce7be3691fb8c611b0093232697493bd27ca2ec8d2"
+    }
+  },
+  "save": {
+    "fixedDataPins": {
+      "drive_c/FitykTests/市场数据.dat": {
+        "sizeBytes": 16,
+        "sha256": "0b81479b00476f984eca3d8fe3ffd8b74ef2d479598232d0e291493c693cfd4b"
+      },
+      "drive_c/FitykTests/market.dat": {
+        "sizeBytes": 21,
+        "sha256": "4a93a72a20fc3a6c47c751ce7be3691fb8c611b0093232697493bd27ca2ec8d2"
+      }
+    },
+    "finiteIndependentChecks": {
+      "points": [
+        [
+          0,
+          24
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "entireAsciiFileConsumed": true,
+      "outputExactExpectedCrLfBytes": true,
+      "onlyXYColumnsPreserved": true,
+      "sigmaOrFullSessionEquivalentClaimed": false,
+      "completeFitykScientificAnalysisOrFileFormatVerified": false
+    },
+    "programFileCount": 126,
+    "allProgramPinsPreserved": true
+  },
+  "guiJobs": [
+    {
+      "applicationId": "fityk",
+      "createdAtMilliseconds": 1791834136235,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 35984,
+          "requestId": "job-1791834136235-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 382412,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+          "requestId": "job-1791834136235-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 382453,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791834136235-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791833931175-4",
+      "id": "job-1791834136235-5",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 5312,
+        "fileDigest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+        "fileSizeBytes": 2178048,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "libfityk-4.dll",
+          "libgcc_s_sjlj-1.dll",
+          "libstdc++-6.dll",
+          "libxy-4.dll",
+          "msvcrt.dll",
+          "user32.dll",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_adv_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll",
+          "wxmsw30u_stc_gcc_custom.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1608192,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1607968,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 21504,
+            "readable": true,
+            "virtualAddress": 1613824,
+            "virtualSize": 21344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 411648,
+            "readable": true,
+            "virtualAddress": 1638400,
+            "virtualSize": 411476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2052096,
+            "virtualSize": 75424,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 96256,
+            "readable": true,
+            "virtualAddress": 2129920,
+            "virtualSize": 95996,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2228224,
+            "virtualSize": 52,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 32,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 38400,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 38344,
+            "writable": true
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791833931175-4",
+          "digest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "fityk.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe",
+          "sizeBytes": 2178048,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4"
+        },
+        "requestId": "job-1791834136235-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791834520672
+    },
+    {
+      "applicationId": "fityk",
+      "createdAtMilliseconds": 1791834540550,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 36533,
+          "requestId": "job-1791834540550-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 233024,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+          "requestId": "job-1791834540550-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 233066,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791834540550-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791833931175-4",
+      "id": "job-1791834540550-6",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 5312,
+        "fileDigest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+        "fileSizeBytes": 2178048,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "libfityk-4.dll",
+          "libgcc_s_sjlj-1.dll",
+          "libstdc++-6.dll",
+          "libxy-4.dll",
+          "msvcrt.dll",
+          "user32.dll",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_adv_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll",
+          "wxmsw30u_stc_gcc_custom.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1608192,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1607968,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 21504,
+            "readable": true,
+            "virtualAddress": 1613824,
+            "virtualSize": 21344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 411648,
+            "readable": true,
+            "virtualAddress": 1638400,
+            "virtualSize": 411476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2052096,
+            "virtualSize": 75424,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 96256,
+            "readable": true,
+            "virtualAddress": 2129920,
+            "virtualSize": 95996,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2228224,
+            "virtualSize": 52,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 32,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 38400,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 38344,
+            "writable": true
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791833931175-4",
+          "digest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "fityk.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe",
+          "sizeBytes": 2178048,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4"
+        },
+        "requestId": "job-1791834540550-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791834775525
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3424012,
+      "sha256": "b56dd732371978a144f59bdd372b96a064bfd4911c2a05468cabbe450a0264bd"
+    },
+    "user.reg": {
+      "sizeBytes": 101639,
+      "sha256": "10551da7dd7df6e8b76bab052cef86de7bc5cc0c2b524a6106ceebbf74d0aebd"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "8c27f346bb060d24b8c3ec3194feef65b7fc115ed55d964e113cb647574055f0"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Roaming/fityk/history": {
+      "sizeBytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    "drive_c/users/forge/AppData/Roaming/fityk/wxoptions": {
+      "sizeBytes": 239,
+      "sha256": "0fdfcaaddc825359e93c8d326ebf3a41283641555b3dc65fd98c765dff076866"
+    },
+    "drive_c/users/forge/AppData/Roaming/fityk/configs/white": {
+      "sizeBytes": 599,
+      "sha256": "2ffc4f20447eb89e2a6dbc350b7be19ea5fd578b9e3097d7ede9ec64e2275ac2"
+    }
+  },
+  "homeFitykNamedConfigPins": {},
+  "sameCrossGenerationProgramFiles": 125,
+  "exactCrossGenerationUninsDifference": {
+    "unins000.dat": {
+      "original": {
+        "sizeBytes": 9714,
+        "sha256": "588103275d4c433fc21321525e00228766d367d6d037ab0d39b71ac74a8c11e4"
+      },
+      "market": {
+        "sizeBytes": 9714,
+        "sha256": "329f194f6746485c905c747b7a4d71e2af4ddc1bd4688bb6b8ad5b8b213dcc1f"
+      }
+    }
+  },
+  "freshExplicitGuiLoadObserved": true,
+  "onlyXYReopenPreservedNotSigmaOrFullSession": true,
+  "sigmaFirstPointEditedSession": 3,
+  "sigmaFirstPointReopenedDisplay": "4.89898",
+  "chineseTitleAndFileListReadableButSidebarOutputPathBoxesObserved": true,
+  "sessionFitScriptAndScientificFittingAccepted": false,
+  "normalQuitMethod": "native Session/Quit both market processes",
+  "guiAccepted": true,
+  "marketLifecycleAccepted": false,
+  "exactRollbackPendingAtFreeze": true,
+  "published": false,
+  "checkpoint": {
+    "file": "before-rollback.json",
+    "sha256": "a2654a2c5a7bd13ada231cf442abb92ce7f47bedcffa68e17421c942d4aac25a",
+    "coreJobs": 481,
+    "fullStoreRows": 141
+  },
+  "fixtureReferences": {
+    "drive_c/FitykTests/原始数据.dat": "fityk-20261013/original/原始数据.dat",
+    "drive_c/FitykTests/original.dat": "fityk-20261013/original/original.dat",
+    "drive_c/FitykTests/市场数据.dat": "fityk-20261013/market/市场数据.dat",
+    "drive_c/FitykTests/market.dat": "fityk-20261013/market/market.dat"
+  },
+  "screenshots": {
+    "fityk-01-path-diagnostic-20261013.jpg": {
+      "sizeBytes": 51922,
+      "sha256": "50d36ba99953f55d137d32fa8c2bc5175542662eba4bcdfb148b3248f86d9ce7",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-02-original-input-20261013.jpg": {
+      "sizeBytes": 48411,
+      "sha256": "661f96a4bcfbc20dd182d39d02765133a258ccc82cd748f0040a1339c25eb4a0",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-03-original-edited-table-20261013.jpg": {
+      "sizeBytes": 52733,
+      "sha256": "a2b8ce1b96789d044bccb7e6c99892a0fab871ac550466d2c61efe0bd9bd0633",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-04-about-20261013.jpg": {
+      "sizeBytes": 58368,
+      "sha256": "48402a50a8da018ea77ad2bbc15e0051c8f0fe534529476a56a6343591527ce8",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-05-original-explicit-reopen-20261013.jpg": {
+      "sizeBytes": 53235,
+      "sha256": "5431f065521e2a1b854045a144b5e7f712ac6d56856395c7624ab74f9a9a4e51",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-06-market-input-table-20261013.jpg": {
+      "sizeBytes": 53156,
+      "sha256": "fa5f3099f1bcc4cfa09202a21b48b968717e93e6e1e5e1709d07ee2dcd5d9911",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-07-market-edited-table-20261013.jpg": {
+      "sizeBytes": 53480,
+      "sha256": "5b51416013e482426fde1e4560c384ea7da89ceb16a03f9899248141ddc215fb",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-08-market-explicit-reopen-20261013.jpg": {
+      "sizeBytes": 53329,
+      "sha256": "e9e970218cc4b18e850ea9ff899dad51457b033e8b47e0bf6fe5989253e70498",
+      "actualEncoding": "JPEG"
+    },
+    "fityk-09-rollback-original-reopen-20261013.jpg": {
+      "sizeBytes": 53253,
+      "sha256": "bca15c9b0a526fa6917d5a93933761627b0c839843904d80c87308d4c4a1a3eb",
+      "actualEncoding": "JPEG"
+    }
+  },
+  "independentHostWholeByteChecks": {
+    "original": {
+      "passed": true,
+      "wholeOutputBytesReconstructedFromActualImmutableInputAndSingleYEdit": true,
+      "points": [
+        [
+          0,
+          42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "output": {
+        "sizeBytes": 21,
+        "sha256": "e544cb938f232b1730f5fdfb4ff8195b8a204e5a2ec430c7946cb544f5f2949b"
+      },
+      "encoding": "ASCII without BOM, four CRLF",
+      "allBytesConsumed": true,
+      "sigmaOrSessionPreserved": false,
+      "completeDataFormatVerified": false
+    },
+    "market": {
+      "passed": true,
+      "wholeOutputBytesReconstructedFromActualImmutableInputAndSingleYEdit": true,
+      "points": [
+        [
+          0,
+          24
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "output": {
+        "sizeBytes": 21,
+        "sha256": "4a93a72a20fc3a6c47c751ce7be3691fb8c611b0093232697493bd27ca2ec8d2"
+      },
+      "encoding": "ASCII without BOM, four CRLF",
+      "allBytesConsumed": true,
+      "sigmaOrSessionPreserved": false,
+      "completeDataFormatVerified": false
+    }
+  },
+  "completionSeparateFromFrozenPendingLabels": true
+}

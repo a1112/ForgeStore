@@ -399,3 +399,22 @@ docs/evidence/clementine-20261013/source/dist/windows/clementine.nsi whitespace=
 
 # Preserve exact final independent review bytes.
 docs/evidence/2026-10-13-clementine-independent-review-v2.json -text whitespace=cr-at-eol
+
+# Preserve fixed fityk upstream, GUI output and inherited signed evidence bytes.
+catalogue/candidate-v67/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json whitespace=cr-at-eol,-blank-at-eol
+catalogue/candidate-v67/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json whitespace=cr-at-eol,-blank-at-eol
+docs/evidence/fityk-20261013/market/market.dat -text whitespace=cr-at-eol
+docs/evidence/fityk-20261013/original/original.dat -text whitespace=cr-at-eol
+docs/evidence/fityk-20261013/source/README.md whitespace=-blank-at-eol
+docs/evidence/fityk-20261013/source/doc/data.rst whitespace=-blank-at-eol,-blank-at-eof
+docs/evidence/fityk-20261013/source/doc/fit.rst whitespace=-blank-at-eol,-blank-at-eof
+docs/evidence/fityk-20261013/source/doc/fityk-manual.rst whitespace=-blank-at-eof
+docs/evidence/fityk-20261013/source/doc/getstarted.rst whitespace=-blank-at-eol
+docs/evidence/fityk-20261013/source/doc/script.rst whitespace=-blank-at-eof
+docs/evidence/fityk-20261013/source/fityk.iss whitespace=-blank-at-eof
+docs/evidence/fityk-20261013/source/fityk.iss.in whitespace=-blank-at-eof
+docs/evidence/fityk-20261013/source/fityk/data.h whitespace=-blank-at-eof
+docs/evidence/fityk-20261013/source/wxgui/app.cpp whitespace=-blank-at-eof
+docs/evidence/fityk-20261013/source/wxgui/dataedit.cpp whitespace=-blank-at-eol,-blank-at-eof
+docs/evidence/fityk-20261013/source/wxgui/datatable.cpp whitespace=-blank-at-eof
+docs/evidence/fityk-20261013/source/wxgui/frame.cpp whitespace=-blank-at-eof

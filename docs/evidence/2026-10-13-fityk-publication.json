@@ -1,0 +1,1339 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applicationId": "fityk",
+  "version": "1.3.1",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 61,
+  "unresolvedCandidates": 16,
+  "signedCatalogue": "catalogue/candidate-v67/tuf",
+  "metadataVersion": 76,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 63,
+  "excludedFixtures": 2,
+  "signedActualTargets": 131,
+  "publicCatalogueFiles": 72,
+  "originalGeneration": "gen-job-1791832349227-1",
+  "marketGeneration": "gen-job-1791833931175-4",
+  "definitionDigest": "sha256:484e170220353b4cdfd940db7353719bfd3f2634ecdcc033cd700b68f79efdda",
+  "originalAcceptance": {
+    "reference": "windows-fityk-20261013.acceptance.json",
+    "sha256": "7bc6616b1a691985a9681b80bad48e4a3d737889a4a67fbf9a91a33886fbabc2"
+  },
+  "sourceEvidence": {
+    "reference": "2026-10-13-fityk-source.json",
+    "sha256": "efaa62b266085766fc55c658537ad3673eefef2d556cc995d16264ca00670466"
+  },
+  "originalSave": {
+    "generationId": "gen-job-1791832349227-1",
+    "job": {
+      "applicationId": "fityk",
+      "createdAtMilliseconds": 1791832434484,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33389,
+          "requestId": "job-1791832434484-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 641966,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix",
+          "requestId": "job-1791832434484-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 642008,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791832434484-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791832349227-1",
+      "id": "job-1791832434484-2",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 5312,
+        "fileDigest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+        "fileSizeBytes": 2178048,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "libfityk-4.dll",
+          "libgcc_s_sjlj-1.dll",
+          "libstdc++-6.dll",
+          "libxy-4.dll",
+          "msvcrt.dll",
+          "user32.dll",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_adv_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll",
+          "wxmsw30u_stc_gcc_custom.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1608192,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1607968,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 21504,
+            "readable": true,
+            "virtualAddress": 1613824,
+            "virtualSize": 21344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 411648,
+            "readable": true,
+            "virtualAddress": 1638400,
+            "virtualSize": 411476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2052096,
+            "virtualSize": 75424,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 96256,
+            "readable": true,
+            "virtualAddress": 2129920,
+            "virtualSize": 95996,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2228224,
+            "virtualSize": 52,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 32,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 38400,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 38344,
+            "writable": true
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791832349227-1",
+          "digest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "fityk.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix/drive_c/Fityk/fityk.exe",
+          "sizeBytes": 2178048,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix/drive_c/Fityk/fityk.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1"
+        },
+        "requestId": "job-1791832434484-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791833078644
+    },
+    "inputPins": {
+      "drive_c/FitykTests/原始数据.dat": {
+        "sizeBytes": 16,
+        "sha256": "266d4190a68a5a246aefd1800503c415d80a61f6746f755f0fce53f15da20761"
+      }
+    },
+    "outputFile": "drive_c/FitykTests/original.dat",
+    "outputPin": {
+      "sizeBytes": 21,
+      "sha256": "e544cb938f232b1730f5fdfb4ff8195b8a204e5a2ec430c7946cb544f5f2949b"
+    },
+    "allFourPoints": [
+      [
+        0,
+        42
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        9
+      ]
+    ],
+    "normalQuitMethod": "native Session/Quit",
+    "freshExplicitGuiReopenAccepted": false,
+    "published": false,
+    "checkpoint": {
+      "file": "after-original-save.json",
+      "sha256": "6f399bcdb09d56c944aafe50e03438b811c3f5c621abef0cf4327a3a8bdf638b",
+      "coreJobs": 477,
+      "fullStoreRows": 140
+    }
+  },
+  "marketSave": {
+    "fixedDataPins": {
+      "drive_c/FitykTests/市场数据.dat": {
+        "sizeBytes": 16,
+        "sha256": "0b81479b00476f984eca3d8fe3ffd8b74ef2d479598232d0e291493c693cfd4b"
+      },
+      "drive_c/FitykTests/market.dat": {
+        "sizeBytes": 21,
+        "sha256": "4a93a72a20fc3a6c47c751ce7be3691fb8c611b0093232697493bd27ca2ec8d2"
+      }
+    },
+    "finiteIndependentChecks": {
+      "points": [
+        [
+          0,
+          24
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "entireAsciiFileConsumed": true,
+      "outputExactExpectedCrLfBytes": true,
+      "onlyXYColumnsPreserved": true,
+      "sigmaOrFullSessionEquivalentClaimed": false,
+      "completeFitykScientificAnalysisOrFileFormatVerified": false
+    },
+    "programFileCount": 126,
+    "allProgramPinsPreserved": true
+  },
+  "independentHostChecks": {
+    "original": {
+      "passed": true,
+      "wholeOutputBytesReconstructedFromActualImmutableInputAndSingleYEdit": true,
+      "points": [
+        [
+          0,
+          42
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "output": {
+        "sizeBytes": 21,
+        "sha256": "e544cb938f232b1730f5fdfb4ff8195b8a204e5a2ec430c7946cb544f5f2949b"
+      },
+      "encoding": "ASCII without BOM, four CRLF",
+      "allBytesConsumed": true,
+      "sigmaOrSessionPreserved": false,
+      "completeDataFormatVerified": false
+    },
+    "market": {
+      "passed": true,
+      "wholeOutputBytesReconstructedFromActualImmutableInputAndSingleYEdit": true,
+      "points": [
+        [
+          0,
+          24
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "output": {
+        "sizeBytes": 21,
+        "sha256": "4a93a72a20fc3a6c47c751ce7be3691fb8c611b0093232697493bd27ca2ec8d2"
+      },
+      "encoding": "ASCII without BOM, four CRLF",
+      "allBytesConsumed": true,
+      "sigmaOrSessionPreserved": false,
+      "completeDataFormatVerified": false
+    }
+  },
+  "formalGuiJobs": [
+    {
+      "applicationId": "fityk",
+      "createdAtMilliseconds": 1791832434484,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 33389,
+          "requestId": "job-1791832434484-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 641966,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix",
+          "requestId": "job-1791832434484-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 642008,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791832434484-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791832349227-1",
+      "id": "job-1791832434484-2",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 5312,
+        "fileDigest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+        "fileSizeBytes": 2178048,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "libfityk-4.dll",
+          "libgcc_s_sjlj-1.dll",
+          "libstdc++-6.dll",
+          "libxy-4.dll",
+          "msvcrt.dll",
+          "user32.dll",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_adv_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll",
+          "wxmsw30u_stc_gcc_custom.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1608192,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1607968,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 21504,
+            "readable": true,
+            "virtualAddress": 1613824,
+            "virtualSize": 21344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 411648,
+            "readable": true,
+            "virtualAddress": 1638400,
+            "virtualSize": 411476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2052096,
+            "virtualSize": 75424,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 96256,
+            "readable": true,
+            "virtualAddress": 2129920,
+            "virtualSize": 95996,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2228224,
+            "virtualSize": 52,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 32,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 38400,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 38344,
+            "writable": true
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791832349227-1",
+          "digest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "fityk.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix/drive_c/Fityk/fityk.exe",
+          "sizeBytes": 2178048,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix/drive_c/Fityk/fityk.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1"
+        },
+        "requestId": "job-1791832434484-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791833078644
+    },
+    {
+      "applicationId": "fityk",
+      "createdAtMilliseconds": 1791833142877,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 34059,
+          "requestId": "job-1791833142877-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 186212,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix",
+          "requestId": "job-1791833142877-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 186253,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791833142877-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791832349227-1",
+      "id": "job-1791833142877-3",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 5312,
+        "fileDigest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+        "fileSizeBytes": 2178048,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "libfityk-4.dll",
+          "libgcc_s_sjlj-1.dll",
+          "libstdc++-6.dll",
+          "libxy-4.dll",
+          "msvcrt.dll",
+          "user32.dll",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_adv_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll",
+          "wxmsw30u_stc_gcc_custom.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1608192,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1607968,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 21504,
+            "readable": true,
+            "virtualAddress": 1613824,
+            "virtualSize": 21344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 411648,
+            "readable": true,
+            "virtualAddress": 1638400,
+            "virtualSize": 411476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2052096,
+            "virtualSize": 75424,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 96256,
+            "readable": true,
+            "virtualAddress": 2129920,
+            "virtualSize": 95996,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2228224,
+            "virtualSize": 52,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 32,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 38400,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 38344,
+            "writable": true
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791832349227-1",
+          "digest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "fityk.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix/drive_c/Fityk/fityk.exe",
+          "sizeBytes": 2178048,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix/drive_c/Fityk/fityk.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1"
+        },
+        "requestId": "job-1791833142877-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791833331043
+    },
+    {
+      "applicationId": "fityk",
+      "createdAtMilliseconds": 1791834136235,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 35984,
+          "requestId": "job-1791834136235-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 382412,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+          "requestId": "job-1791834136235-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 382453,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791834136235-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791833931175-4",
+      "id": "job-1791834136235-5",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 5312,
+        "fileDigest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+        "fileSizeBytes": 2178048,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "libfityk-4.dll",
+          "libgcc_s_sjlj-1.dll",
+          "libstdc++-6.dll",
+          "libxy-4.dll",
+          "msvcrt.dll",
+          "user32.dll",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_adv_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll",
+          "wxmsw30u_stc_gcc_custom.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1608192,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1607968,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 21504,
+            "readable": true,
+            "virtualAddress": 1613824,
+            "virtualSize": 21344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 411648,
+            "readable": true,
+            "virtualAddress": 1638400,
+            "virtualSize": 411476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2052096,
+            "virtualSize": 75424,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 96256,
+            "readable": true,
+            "virtualAddress": 2129920,
+            "virtualSize": 95996,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2228224,
+            "virtualSize": 52,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 32,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 38400,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 38344,
+            "writable": true
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791833931175-4",
+          "digest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "fityk.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe",
+          "sizeBytes": 2178048,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4"
+        },
+        "requestId": "job-1791834136235-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791834520672
+    },
+    {
+      "applicationId": "fityk",
+      "createdAtMilliseconds": 1791834540550,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 36533,
+          "requestId": "job-1791834540550-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 233024,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+          "requestId": "job-1791834540550-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 233066,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791834540550-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791833931175-4",
+      "id": "job-1791834540550-6",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 5312,
+        "fileDigest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+        "fileSizeBytes": 2178048,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "libfityk-4.dll",
+          "libgcc_s_sjlj-1.dll",
+          "libstdc++-6.dll",
+          "libxy-4.dll",
+          "msvcrt.dll",
+          "user32.dll",
+          "wxbase30u_gcc_custom.dll",
+          "wxmsw30u_adv_gcc_custom.dll",
+          "wxmsw30u_core_gcc_custom.dll",
+          "wxmsw30u_stc_gcc_custom.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1608192,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1607968,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 21504,
+            "readable": true,
+            "virtualAddress": 1613824,
+            "virtualSize": 21344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 411648,
+            "readable": true,
+            "virtualAddress": 1638400,
+            "virtualSize": 411476,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 2052096,
+            "virtualSize": 75424,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 96256,
+            "readable": true,
+            "virtualAddress": 2129920,
+            "virtualSize": 95996,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".CRT",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2228224,
+            "virtualSize": 52,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 2232320,
+            "virtualSize": 32,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 38400,
+            "readable": true,
+            "virtualAddress": 2236416,
+            "virtualSize": 38344,
+            "writable": true
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791833931175-4",
+          "digest": "sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "fityk.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe",
+          "sizeBytes": 2178048,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix/drive_c/Fityk/fityk.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791833931175-4"
+        },
+        "requestId": "job-1791834540550-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791834775525
+    },
+    {
+      "id": "job-1791834973100-7",
+      "generationId": "gen-job-1791832349227-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 37452,
+          "requestId": "job-1791834973100-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 222297,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791832349227-1/prefix",
+          "requestId": "job-1791834973100-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 222339,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791834973100-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "normalFormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "quitMethods": [
+    "all five native Session/Quit"
+  ],
+  "eachGenerationProgramFiles": 126,
+  "crossGenerationSameFiles": 125,
+  "exactProgramDifferences": {
+    "unins000.dat": {
+      "original": {
+        "sizeBytes": 9714,
+        "sha256": "588103275d4c433fc21321525e00228766d367d6d037ab0d39b71ac74a8c11e4"
+      },
+      "market": {
+        "sizeBytes": 9714,
+        "sha256": "329f194f6746485c905c747b7a4d71e2af4ddc1bd4688bb6b8ad5b8b213dcc1f"
+      }
+    }
+  },
+  "guiAboutVersionOriginal": "1.3.1",
+  "marketAboutSeparatelyMeasured": false,
+  "rollbackVerification": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "fityk",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "f0db8b8e-41bc-47ee-baec-982d79f0d9c8",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791832349227-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 481,
+    "beforeRollbackStoreRows": 141,
+    "afterRollbackCoreJobs": 481,
+    "afterRollbackStoreRows": 142,
+    "allOldFullFieldsPreserved": true,
+    "allGenerationRecordsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "0307de635043a5adaa7078fb9f29ae5dd9a4482678a7b7d70cda3cb5c4a839d6",
+      "coreJobs": 481,
+      "fullStoreRows": 142
+    }
+  },
+  "normalRestartFullFieldEqualityPassed": true,
+  "coreJobs": 482,
+  "fullStoreRows": 142,
+  "currentPrivateCheckpoint": {
+    "file": "fityk-20261013/after-final-restart.json",
+    "sha256": "59b9c7c18d93f7ab85980338c41f8651c43be339045c5d373528f4572cb4b957"
+  },
+  "oldRootAllSignedHistoryAnd128OldNonCatalogueTargetBytesPreserved": true,
+  "changedOldTargets": [
+    "catalogue.json"
+  ],
+  "old60Accepted16PendingAllFieldsPreserved": true,
+  "original27FrozenPhaseLabelsPreserved": true,
+  "runtimeCoreProgramGlobalContextDefinitionLauncherEnvironmentWorkingDirectoryFontDllRepairApplied": false,
+  "scientificFittingOrCompleteFitykAccepted": false,
+  "sigmaFullSessionPreserved": false,
+  "guiStoreButtonsAccepted": false,
+  "backgroundNetworkAbsenceVerified": false,
+  "limits": [
+    "Only four-point X/Y data per generation, native Chinese-name Quick Load, Table single Y edit, X/Y-only Export Points and fresh explicit Quick Load; no fitting/model/optimization/scientific-analysis/session FIT/Lua/uncertainty acceptance.",
+    "Sigma is omitted from export and recomputed on reimport: original 1 to 6.48074, market 3 to 4.89898; not full-session persistence.",
+    "Chinese title/file list readable; sidebar/output-path boxes and About vertical website layout remain. Native four-point notice remains.",
+    "No broad formats, large/bad files, printing, direct Chinese keyboard, complete full-path dialog, guest network download/new registration/migration/cross-version/unattended or GUI market-button acceptance; no absence-of-background-network claim.",
+    "Official HTTPS/local asset digests only; upstream digest/API digest/PGP/Authenticode/source-binary correspondence/reproducible/latest unverified. Fixed main source GPL2-or-later and installed COPYING whole-byte match; complete bundled-license closure unverified.",
+    "Only fixed data,126 programs per generation,3 registries and selected Fityk-named configuration checked, not all application filesystem."
+  ],
+  "reviewIndexCommitPushPendingAtPublicationFreeze": true
+}

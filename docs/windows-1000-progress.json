@@ -611,6 +611,15 @@
       "signedCatalogue": "catalogue/candidate-v66/tuf",
       "publication": "docs/evidence/2026-10-13-clementine-publication.json",
       "limitation": "Only two tiny Chinese-name PCM WAV native adds, A/B drag reorder, relative XSPF save and fresh explicit load per generation, cached Store IPC update/exact original rollback. No hearing/playback device/full player acceptance or runtime repair; complete bundle license closure unverified."
+    },
+    {
+      "id": "fityk",
+      "version": "1.3.1",
+      "sha256": "a1da22f9b5fdf99829e05554b0990d8c7bfd498dd7ac12f14e0fc9ea50033a60",
+      "evidence": "docs/evidence/windows-fityk-20261013.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v67/tuf",
+      "publication": "docs/evidence/2026-10-13-fityk-publication.json",
+      "limitation": "Only four-point X/Y data per generation, native Chinese-name Quick Load, Table single Y edit, X/Y-only Export Points and fresh explicit Quick Load; no fitting/model/optimization/scientific-analysis/session FIT/Lua/uncertainty acceptance.; Sigma is omitted from export and recomputed on reimport: original 1 to 6.48074, market 3 to 4.89898; not full-session persistence."
     }
   ],
   "queue": [
@@ -869,12 +878,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "60/1000 finite Windows acceptance;16 unresolved unchanged. Clementine1.3.1 only two Chinese-name PCM WAV inputs per generation, native A/B drag reorder/XSPF Save and explicit fresh Load, cached IPC update/exact original rollback/one normal service restart. No hearing/device/full-player acceptance or runtime repair. candidate-v66/root1/role75,475 fullCore/140 fullStore. Strict SSH stdin rolling-current-state-clementine-20261013.py; current privateCP clementine-20261013/after-final-restart.json. Preserve all frozen/trust/history and actual third-GUI registry/DB byte changes. Independent review/index/commit/push pending at publication freeze.",
+  "next": "61/1000 finite Windows acceptance;16 pending unchanged. Fityk1.3.1 only four-point X/Y Table edit/export/fresh explicit load; sigma/session/fitting not accepted. candidate-v67/root1/role76,482 fullCore/142 fullStore; strict SSH stdin rolling-current-state-fityk-20261013.py. Current private CP fityk-20261013/after-final-restart.json; actual third-GUI registry differences retained. Preserve all frozen/trust/history. Independent review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-13",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 60,
+    "acceptedLocalMarket": 61,
     "explicitlyBlockedCandidates": 16,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -882,25 +891,25 @@
     "pendingCandidates": 16
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v66/tuf",
-    "metadataVersion": 75,
-    "catalogueEntries": 62,
-    "acceptedDistinctWindowsApps": 60,
+    "signedCatalogue": "catalogue/candidate-v67/tuf",
+    "metadataVersion": 76,
+    "catalogueEntries": 63,
+    "acceptedDistinctWindowsApps": 61,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-13-clementine-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-13-fityk-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-codeblocks-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-13-clementine-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-13-clementine-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-13-fityk-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-13-clementine-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-13-fityk-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-greenfish-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261013-clementine.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-13-clementine-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261013-fityk.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-13-fityk-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

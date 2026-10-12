@@ -1,0 +1,21 @@
+# Fityk 1.3.1 Windows 有限 X/Y 表格编辑验收（2026-10-13）
+
+新增1款，累计61/1000，16未解决候选全部旧字段保持。Greenfish/Zim/CopyQ/BowPad未验收。合成DAT不另计应用。Ubuntu KateAPT/Snap计算器两款独立记账；Flatpak两次runtime超时未安装，缓存保持。本轮未运行UbuntuVM，两4GiB VM没有同时运行。
+
+正式原gen-job-1791832349227-1与独立市场gen-job-1791833931175-4，定义sha256:484e170220353b4cdfd940db7353719bfd3f2634ecdcc033cd700b68f79efdda。每代次原生Data/QuickLoad真实MyComputer/C盘/FitykTests目录树打开中文名16B ASCII无BOM/LF四点DAT，Data/Table双击第一Y值，仅原0→42、市场9→24；原生ExportPoints选择X/Y并取消默认model(sum)，Save到original.dat/market.dat。两个新正式进程初始NoDataPoints后显式QuickLoad保存输出、Table核对；精确回滚后第五原进程同样显式Load/Table。五次正常Session/Quit退出0且wineserver停止，退出0不是单独验收依据。
+
+原输入SHA266d4190a68a5a246aefd1800503c415d80a61f6746f755f0fce53f15da20761；市场SHA0b81479b00476f984eca3d8fe3ffd8b74ef2d479598232d0e291493c693cfd4b。输入保持。两输出各21B/四CRLF/ASCII无BOM，原SHAe544cb938f232b1730f5fdfb4ff8195b8a204e5a2ec430c7946cb544f5f2949b；市场SHA4a93a72a20fc3a6c47c751ce7be3691fb8c611b0093232697493bd27ca2ec8d2。宿主从实际不可变输入独立重构单Y编辑，全部输出字节和四XY点精确匹配。仅XY保持：σ没有导出，重新导入默认计算原1→6.48074、市场3→4.89898，不称完整session/不确定度保存、完整DAT规范或科学拟合验收。
+
+默认中文标题/文件列表可读，侧栏和输出路径仍有方框。Only4data points通知保持；About1.3.1、wxWidgets3.0.3/Boost1.50.0/Lua5.2.1/xylib1.5.0及网站垂直布局实际观察，市场About未单测。拟合/优化/模型/函数/科学分析/误差处理/基线/变换/脚本Lua/FIT会话、广泛格式/大坏文件/打印/直接中文键盘/完整全路径/联网下载/新机注册/迁移跨版本/无人值守/GUI市场按钮未验收，不称无背景联网。没有Core/程序/globalcontext/definition/launcher参数environment/workingDirectory/字体/DLL/runtime修复。
+
+官方固定release v1.3.1/commit5b11f7e5277c122a266895314be98e564712a60e；installer5253318B SHAa1da22f9b5fdf99829e05554b0990d8c7bfd498dd7ac12f14e0fc9ea50033a60，source1518937B SHA3d88feb96dbdca70fbfb5f8fa994cea01e77723751e5957094ca46a0c6d511fe，两完整HTTPS200/ContentLength核对、两GET均终态后才一次原安装和一次市场隔离安装。仅本地摘要，上游/API digest/PGP/Authenticode/源二进制对应/可复现/latest未核。469源码归档文件中15固定成员原字节保存，GPL2-or-later，安装COPYING与源18092B SHA8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643全部原字节匹配；完整wxWidgets/Boost/Lua/xylib/Readline/zlib/icons/docs许可闭包未核。精确redirect query/响应私有保存，公共去query、无安装包二进制。
+
+7z无法打开exit2只是诊断，不当包损坏；实际两处InnoSetupData5.5.0/PE引导Machine0x14c和固定源码Inno脚本核类型，非完整Inno格式或真实WindowsUAC/完整安装关联行为。官方Inno原生/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:后单反斜杠Fityk /NOICONS /TASKS=；DIR13UTF8B hex2f4449523d433a5c466974796b。两代次各126程序，125同字节，唯一unins000.dat9714B原588103275d4c433fc21321525e00228766d367d6d037ab0d39b71ac74a8c11e4、市场329f194f6746485c905c747b7a4d71e2af4ddc1bd4688bb6b8ad5b8b213dcc1f，实际两raw私有保存，原因/卸载未验收。fityk.exe2178048B SHA0558b2c374b45f2e30aa86d41b78d4bb40970fcb3067be0508301db9210c69da不当整个应用大小。
+
+StoreIPC预缓存同版本更新与精确原代次回滚通过。481Core/141完整StoreCP回滚前先保存读回，回滚后481/142旧全字段/全部代次保持，第三原GUI后482/142一次正常Core/Store重启七类全字段精确同。当前candidate-v67/root1/role76，63条=61应用+2夹具，131实际签名目标72公共JSON；旧129中128非catalogue字节精确保持，只catalogue新增Fityk，root/role75与所有签名/信任历史保持，Greenfish/Zim/CopyQ不在活动目录。
+
+第三原system.reg3424012B/user.reg101639B同大小字节变；实际前后raw和287/20行私有diff保存，原因/键值等价未定。先只读观察无CP/restart，再固定实际新pins、完整CP读回及一次正常重启。新pins/市场allpins/两代次程序/输入输出/旧60+16固定数据保持。仅126程序、固定数据、三registry和selectedFityk命名配置范围，非全应用FS；core可写既有scratch、最近64IPC不替代全SQLite。当前完整私有CP fityk-20261013/after-final-restart.json SHA59b9c7c18d93f7ab85980338c41f8651c43be339045c5d373528f4572cb4b957，不入库。只读rolling-current-state-fityk-20261013.py必须经rolling-guest-20261010.py严格SSH发送stdin，不要求hosthelper客体落盘；旧475/140等助手仅历史。
+
+原jobs.get结构KeyError先停CP/Quit/新启动，实际jobs.poll独立V2通过。低写全路径PathDoesNotExist未修，真实C盘树成功；过渡RecentFiles不是Table验收。初packV1签名/验证/完整归档之后把公共JSON误期望73（实际72）断言失败，停止任何客体传输/激活。只读V2 builder编译SyntaxError停write后同shell缺helper调用，均host工具历史无另存exactraw，不伪造；唯一V3只读核既有全部签名/归档，不重复签名。之后仅一次严格传输/stage/activation。原失败/helper/27原阶段标签冻结保持，完成另记，3650旧immutable保持。旧Scribus一份私有canonicalV1失败raw丢失限制不补造。缺路径/截断输出不当完成检查。正常授权登录每次fresh字段一次提交，认证/锁屏/不自动息屏保持；9JPEG中01路径和04About只诊断，02/03原输入编辑、05原新正式Load、06/07市场、08市场新正式Load、09回滚原Load；无登录图/凭据/私钥/私有完整CP。独立FINAL审查与真实Git byte/index/commit/push另记，独立审查不代替客体GUI/私有CP重演。
+
+本轮第一次真实stage之前raw/filter和relative-no-index预检仅17实际精确路径属性：两CRLF输出DAT、13固定上游源尾空白/末尾空行和两继承签名目标。旧.gitattributes30178B LF前缀精确保留、后缀LF；复检无diagnostics，无renormalize或假造stage失败。原3652证据中3650immutable与27原Fityk冻结保持，原repo4893 tracked、1241范围外index等于父HEAD，不声称全部工作区字节相同。最终独立审查明确FINAL通知及最终回答后才复制固定审查，真实index/commit/普通push审计另存私有收据。

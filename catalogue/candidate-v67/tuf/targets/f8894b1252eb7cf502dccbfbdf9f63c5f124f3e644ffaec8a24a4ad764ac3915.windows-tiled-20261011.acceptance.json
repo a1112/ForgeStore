@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM, Wine 11.14 win64, fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store.",
+  "applications": [
+    {
+      "id": "tiled",
+      "version": "1.11.2",
+      "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+      "size": 22192128,
+      "generationId": "gen-job-1791706281896-1",
+      "definitionDigest": "sha256:d05f8118371461a8eb054ca2b22cdbad2cf4b5e14ad39ee62e72d1b272fe80f8",
+      "launcherSha256": "sha256:4b58e71f04eb896fca5f1d6c73d1dc3bb5fc4bb929c0d79e01d2576f2b701379",
+      "installJobId": "job-1791706281896-1",
+      "launchJobId": "job-1791706385937-2",
+      "reopenJobId": "job-1791706542947-3",
+      "guiFileOperation": "passed-limited-orthogonal-map-erase-stamp-tmx-save-json-export-fresh-reopen",
+      "savedNative": {
+        "file": "output/original-edited.tmx",
+        "sizeBytes": 548,
+        "sha256": "a52b114d30ea35d1ff69eff0b8eafa31b7557e6e170e868e32a9ed3409f988f8",
+        "utf8": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<map version=\"1.10\" tiledversion=\"1.11.2\" orientation=\"orthogonal\" renderorder=\"right-down\" width=\"4\" height=\"4\" tilewidth=\"32\" tileheight=\"32\" infinite=\"0\" nextlayerid=\"2\" nextobjectid=\"1\">\n <tileset firstgid=\"1\" name=\"ForgeQA\" tilewidth=\"32\" tileheight=\"32\" tilecount=\"2\" columns=\"2\">\n  <image source=\"../input/tiles.png\" width=\"64\" height=\"32\"/>\n </tileset>\n <layer id=\"1\" name=\"Tiles\" width=\"4\" height=\"4\">\n  <data encoding=\"csv\">\n0,0,0,0,\n0,2,0,0,\n0,0,2,0,\n0,0,0,0\n</data>\n </layer>\n</map>\n",
+        "gids": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "exportedJson": {
+        "file": "output/original-edited.json.tmj",
+        "sizeBytes": 947,
+        "sha256": "83e98a754d2c4ab49aa4131c1414ad9a492ef688dac55287755521533454d1db",
+        "content": {
+          "compressionlevel": -1,
+          "height": 4,
+          "infinite": false,
+          "layers": [
+            {
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "height": 4,
+              "id": 1,
+              "name": "Tiles",
+              "opacity": 1,
+              "type": "tilelayer",
+              "visible": true,
+              "width": 4,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "nextlayerid": 2,
+          "nextobjectid": 1,
+          "orientation": "orthogonal",
+          "renderorder": "right-down",
+          "tiledversion": "1.11.2",
+          "tileheight": 32,
+          "tilesets": [
+            {
+              "columns": 2,
+              "firstgid": 1,
+              "image": "../input/tiles.png",
+              "imageheight": 32,
+              "imagewidth": 64,
+              "margin": 0,
+              "name": "ForgeQA",
+              "spacing": 0,
+              "tilecount": 2,
+              "tileheight": 32,
+              "tilewidth": 32
+            }
+          ],
+          "tilewidth": 32,
+          "type": "map",
+          "version": "1.10",
+          "width": 4
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "01-original-open.png": {
+          "sizeBytes": 189116,
+          "sha256": "8054a67c2b206cde8277237f0b192cbdd15a4d59c4c402090767d7dbcdf08fb0"
+        },
+        "02-original-edited.png": {
+          "sizeBytes": 162737,
+          "sha256": "7cc7c8c206e76199752daf1a23c220e684328d7600bd9ff3a1dc44b92ce8fd5a"
+        },
+        "03-original-saved.png": {
+          "sizeBytes": 162551,
+          "sha256": "dee9f8eb4c5093b9dbe71ad1211fc362ad3c389c5485a7f137c8e3105ac8ab78"
+        },
+        "04-original-exported.png": {
+          "sizeBytes": 162536,
+          "sha256": "c8ce27ee979f62377410191aab9a81bcbcea8c45d45f6237aea1cfc86fa57723"
+        },
+        "05-original-json-reopened.png": {
+          "sizeBytes": 193477,
+          "sha256": "45f366c69c58b122ed3f229a1103599c4479a54cb272a1c414dffb134a7578dd"
+        },
+        "06-original-native-reopened.png": {
+          "sizeBytes": 192950,
+          "sha256": "538e08e50635deb35cbc54b4769cbce332f95bd0b9407c10deaaebe24ebe92c6"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-tiled-source.json",
+    "sha256": "5305f766e09c95aa034e2ce762762de0894764d793d4027c3ed20e8e4f049620",
+    "mainProgramLicense": "GPL-2.0-or-later",
+    "bundleLicenseClosureVerified": false
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-tiled-gui.json",
+    "sha256": "20e641e3ba9dbd792f1ad8743959c69d37ecd4f8e7e2a8e60d43ec3392a65ff1"
+  },
+  "limits": [
+    "Only one small finite 4x4 orthogonal, one-layer map with a two-tile generated PNG has been verified in the original generation: Chinese-name input opening, eraser, two stamp operations, GUI Save As to ASCII TMX, JSON export and explicit fresh-process rendering of both saved formats.",
+    "The JSON export filter appended .tmj to the requested original-edited.json filename, producing original-edited.json.tmj. Initial filename assertion failed and stopped dependent reopen. Actual JSON content, filename and relative image reference were then verified; no helper rename or fabricated output.",
+    "Native launcher default environment and working directory retained; no Core, global context, font, program, DLL or runtime changes required. Online news/update indicator appeared; unattended or offline startup and external network behavior unverified.",
+    "Infinite, isometric/hexagonal or large maps, multiple/object layers, terrain/automapping, animation, projects/worlds, scripts/Python or plugins beyond the finite JSON export, engine integration, direct Chinese keyboard input and advanced editor features unverified.",
+    "Fixed main source declares GPL-2.0-or-later; installed COPYING, LICENSE.GPL and LICENSE.BSD match fixed source in raw bytes. Complete Qt/plugins/examples/icons and bundled licensing closure, OpenPGP, Authenticode and build reproducibility unverified.",
+    "Guest network download, fresh-machine registration, migration, cross-version upgrade and GUI update/rollback buttons unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart remain pending at this original proof freeze."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}
