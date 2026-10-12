@@ -1,0 +1,55 @@
+{
+  "activatedPreview": true,
+  "metadataVersion": 71,
+  "rootVersion": 1,
+  "entries": 58,
+  "coreJobs": 437,
+  "fullStoreRows": 130,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-picard-20261012.acceptance.json#picard",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "cfe7fb0957f9bd561dfd97b4685cbd26adeb6d9485d25bbbdf39d86c552e1fec",
+        "size": 32331256,
+        "target": "picard-setup-2.13.3.exe",
+        "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-setup-2.13.3.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "picard"
+    },
+    "id": "picard",
+    "license": "GPL-2.0-or-later (fixed source declaration; full bundle closure unverified)",
+    "name": {
+      "en": "MusicBrainz Picard",
+      "zhCN": "Picard 音频标签"
+    },
+    "origin": "https://picard.musicbrainz.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "MusicBrainz",
+    "summary": {
+      "en": "Limited WAV Title/Artist working-copy edits, native Save and fresh Open tested; broad music identification, plugins and audio playback unverified.",
+      "zhCN": "仅小型WAV工作副本标题/艺术家编辑、保存与新进程打开通过；广泛识别、插件和听音未验收"
+    },
+    "version": "2.13.3"
+  },
+  "installed": {
+    "appId": "picard",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "2.13.3"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "ada45fa3e17c00e5fac0a25a57514ca52692caacbac1d4e7d44ff4878c338b37",
+    "coreJobs": 437,
+    "fullStoreRows": 130
+  },
+  "independentMarketGenerationPending": true,
+  "countsAsCompleted": false
+}

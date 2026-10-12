@@ -1,0 +1,115 @@
+{
+  "applicationId": "picard",
+  "version": "2.13.3",
+  "officialHomepage": "https://picard.musicbrainz.org/",
+  "installer": {
+    "requestedUrl": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-setup-2.13.3.exe",
+    "finalUrl": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-setup-2.13.3.exe",
+    "status": 200,
+    "contentLength": 32331256,
+    "sizeBytes": 32331256,
+    "sha256": "cfe7fb0957f9bd561dfd97b4685cbd26adeb6d9485d25bbbdf39d86c552e1fec",
+    "elapsedSeconds": 930.619,
+    "upstreamPublishedSha256Matched": true
+  },
+  "sourceArchive": {
+    "requestedUrl": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-2.13.3.tar.gz",
+    "finalUrl": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-2.13.3.tar.gz",
+    "status": 200,
+    "contentLength": 6089477,
+    "sizeBytes": 6089477,
+    "sha256": "63fdb3aeb2e7ab41c73aa44083030c22a6a0e955b932960c05669998e2e21fcc",
+    "elapsedSeconds": 178.157,
+    "upstreamPublishedSha256Matched": true
+  },
+  "upstreamManifest": {
+    "requestedUrl": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-2.13.3-SHA256SUMS",
+    "finalUrl": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-2.13.3-SHA256SUMS",
+    "status": 200,
+    "contentLength": 1536,
+    "sizeBytes": 1536,
+    "sha256": "88721944dd2af30926c8698821a3c1065f52c08ef7379db2a5526eb32ca0453f",
+    "elapsedSeconds": 0.829
+  },
+  "upstreamManifestReference": "picard-20261012/source/picard-2.13.3-SHA256SUMS",
+  "sourceMembers": {
+    "COPYING.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "README.md": {
+      "sizeBytes": 3229,
+      "sha256": "1d57588e2c77760362cf95c6faaa1b2959fffb52de846866af52e600aa9ad907"
+    },
+    "picard/__init__.py": {
+      "sizeBytes": 4760,
+      "sha256": "cda987996b87c25217edffadd07594ac6b7ae4ba93dec01f059ce2f05b60a7c0"
+    },
+    "picard/formats/wav.py": {
+      "sizeBytes": 8488,
+      "sha256": "fd48d3e446a6a38484ff4a711de7d628977d2fb7b56829b6f1f051ab980e5f31"
+    },
+    "picard/tagger.py": {
+      "sizeBytes": 61052,
+      "sha256": "ecc69732f334a376605ce56b785ecf4ca2b066f07550c1ef15a8e47ce5d02602"
+    },
+    "picard/ui/metadatabox.py": {
+      "sizeBytes": 30918,
+      "sha256": "f5f25ca801346fc71cd32e6e1573e077698180aee8cf66678e3e78919cc13020"
+    },
+    "po/README.md": {
+      "sizeBytes": 3198,
+      "sha256": "d14bf4ae8993dac7e91741d0a8557d54375e173b3c42473cac9a629cb3054282"
+    },
+    "INSTALL.md": {
+      "sizeBytes": 5944,
+      "sha256": "e1d8536e27e4d2145abb9f2818f47b9498cc10a1260397ca2afa642e28fec339",
+      "source": "official fixed release archive"
+    },
+    "picard/file.py": {
+      "sizeBytes": 39396,
+      "sha256": "6f87c91ccfc5ca1b6d5338eb8480669786d4e01bff2d0911625b63724ba1e268",
+      "source": "official fixed release archive"
+    },
+    "picard/formats/id3.py": {
+      "sizeBytes": 31289,
+      "sha256": "e9a9dea04098b7ca981ef0ff4d23e378d8e540d1120fa380ce38d07a40f36e82",
+      "source": "official fixed release archive"
+    },
+    "installer/picard-setup.nsi.in": {
+      "sizeBytes": 11111,
+      "sha256": "5a72b66014c32ff8d1a637167e529f963a1f7fabe4b90b05cca03823439aed9d",
+      "gitBlobSha1": "9f4ee4609860e6d8a10fab6e141494a7eaf9b8a3",
+      "commit": "8a062c9a7c103e1abed485e62f75bdc332753311",
+      "source": "official GitHub tag-associated commit blob API; release tar does not contain installer template"
+    }
+  },
+  "tagAssociatedCommit": "8a062c9a7c103e1abed485e62f75bdc332753311",
+  "installerTemplateOrigin": "Official associated commit blob API; absent from release tar; actual .nsi.in suffix",
+  "installerTemplatePinsGitBlobAndCommitIndependentlyMatched": true,
+  "tagGpgSignatureIndependentlyVerified": false,
+  "mainLicense": "GPL-2.0-or-later fixed source headers/COPYING",
+  "sourceMainCopyingSizeBytes": 18092,
+  "installedMainCopyingNamedFileFound": false,
+  "mainInstalledLicenseSourceComparisonVerified": false,
+  "componentLicenseNamedFiles": [
+    "Markdown-3.7.dist-info/LICENSE.md",
+    "importlib_metadata-8.5.0.dist-info/LICENSE"
+  ],
+  "completeBundledQtPythonMutagenChromaprintDiscidOpenSslIconsTranslationsLicenseClosureVerified": false,
+  "upstreamPublishedInstallerDigestVerified": true,
+  "upstreamPublishedSourceDigestVerified": true,
+  "sourceBinaryCorrespondenceVerified": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "latestVersionClaimed": false,
+  "nativeNsisArguments": [
+    "/S",
+    "/D=C:\\Picard"
+  ],
+  "dirArgumentUtf8Bytes": 12,
+  "dirArgumentUtf8Hex": "2f443d433a5c506963617264",
+  "sourceTemplateRequestExecutionLevel": "admin; native Wine managed prefix install only, real Windows UAC/admin not accepted",
+  "templateDefaultOptionalShortcutAndLanguageSectionsKept": true,
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false
+}
