@@ -1,0 +1,2855 @@
+{
+  "applicationId": "clementine",
+  "version": "1.3.1",
+  "installedObservation": {
+    "installed": true,
+    "generationId": "gen-job-1791826606830-1",
+    "fileCount": 688,
+    "mainProgram": {
+      "sizeBytes": 16620032,
+      "sha256": "7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb"
+    },
+    "installedLicenseNamedFiles": {},
+    "mainInstalledLicenseSourceComparisonVerified": false,
+    "checkpoint": {
+      "file": "after-install.json",
+      "sha256": "2c82cc45c8557120f21ec55303c0791406292662f5af3cffca9b3a598e02e010",
+      "coreJobs": 469,
+      "fullStoreRows": 138
+    },
+    "guiAccepted": false,
+    "published": false
+  },
+  "generation": {
+    "bottleId": "gen-job-1791826606830-1",
+    "createdAtMilliseconds": 1791826606838,
+    "definition": {
+      "bottleId": "gui-clementine",
+      "category": "multimedia",
+      "compatibilityRating": "unknown",
+      "id": "clementine",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\Clementine"
+        ],
+        "fileName": "ClementineSetup-1.3.1.exe",
+        "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0"
+      },
+      "launchers": [
+        {
+          "executable": "Clementine/clementine.exe",
+          "id": "main",
+          "name": "Clementine"
+        }
+      ],
+      "name": "Clementine",
+      "publisher": "Clementine",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "1.3.1"
+    },
+    "definitionDigest": "sha256:a87fefc6eaab0a9d8df881d368ebec37470e6e05a7240ed3b4df0c7ab0b0159a",
+    "id": "gen-job-1791826606830-1",
+    "launcherDigests": {
+      "main": "sha256:7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791826623531
+  },
+  "programFileCount": 688,
+  "installedFiles": {
+    "libgthread-2.0-0.dll": {
+      "sizeBytes": 36352,
+      "sha256": "02b817b6db18db2dfccefdd08eed64a696e2bf326f4120ee7e93ae6aa73bccb3"
+    },
+    "clementine-spotifyblob.exe": {
+      "sizeBytes": 1039872,
+      "sha256": "3326e7d4dc107ba1d8ba265fd881b7ca7116c45e7d2601fb8e8113d1c4238171"
+    },
+    "libFLAC.dll": {
+      "sizeBytes": 363520,
+      "sha256": "ef1c259e453ff0edba004e2d0202401aa27e09f1f16c073028071a1863fb5d29"
+    },
+    "libfaad.dll": {
+      "sizeBytes": 276480,
+      "sha256": "abb4b391e9933778f032104e693441f6aeb6d91c27a60aa653fd680cf0d5457d"
+    },
+    "libnettle-4-6.dll": {
+      "sizeBytes": 207360,
+      "sha256": "5cf8093048bbbc8ce6196f5ff3eb9b6c7a6ce30ca8a6da7ba6320763454f485b"
+    },
+    "libid3tag.dll": {
+      "sizeBytes": 87040,
+      "sha256": "8e96a33fc8635e1f12e14e3c9aac6ad5ea21f7b70f0e9e423b487bb57ebbce1e"
+    },
+    "libgstfft-1.0-0.dll": {
+      "sizeBytes": 67584,
+      "sha256": "2204684f02ae5185deaa3704ed8355a737018cae320e68e3209311d1f2506237"
+    },
+    "libhogweed-2-4.dll": {
+      "sizeBytes": 190976,
+      "sha256": "d3432dd4f212961f26b9d2b79c1fa9e8f925ad6f3ae4f20a7fc2b5c1c2788807"
+    },
+    "libgstreamer-1.0-0.dll": {
+      "sizeBytes": 973312,
+      "sha256": "4210e8bc890bf9beecc644d924e6400b0450d49e49e7d0f884ca25c9a9dfc989"
+    },
+    "libmp3lame-0.dll": {
+      "sizeBytes": 265216,
+      "sha256": "28d6fd9add5e58551a53e3707b9915ffe5c27c0b99707568b1316b8a9dc7643e"
+    },
+    "libplist.dll": {
+      "sizeBytes": 63488,
+      "sha256": "d1111915f3e27ef605141a56cc5bedea25684ed44784de1213e99f5fe9e5a41e"
+    },
+    "libspeex-1.dll": {
+      "sizeBytes": 116736,
+      "sha256": "9727f1b8e76819c6918e9c7e4173ddf698f4827aaf3dedb8a2492b93b01c9b16"
+    },
+    "libglib-2.0-0.dll": {
+      "sizeBytes": 1204736,
+      "sha256": "cb52d91c204f0171159d237bd4684ed4727942603054b4a4d6980c2b4dfec116"
+    },
+    "libcdio-16.dll": {
+      "sizeBytes": 166400,
+      "sha256": "51e1082a01d3705fe7957a73331fa576447139f72780b35eeeda747b6f258596"
+    },
+    "libchromaprint.dll": {
+      "sizeBytes": 80384,
+      "sha256": "4c99c72663c1944d031d6b4d0aa18c3356e964ef874103cbfac61589590d742b"
+    },
+    "libintl-8.dll": {
+      "sizeBytes": 117760,
+      "sha256": "a7c997dbc56e72abf9668b73757f4e013b1cbab57ab3aa4a160ad01bb53cc59a"
+    },
+    "libechonest.dll": {
+      "sizeBytes": 701440,
+      "sha256": "66506e2094c5770d6201ef8d897d1ad9537de957b217d11f5a83fd3b3a88bee1"
+    },
+    "libxml2-2.dll": {
+      "sizeBytes": 1157120,
+      "sha256": "ddb8c0bd6db639250029e0a0bded541ebec51443e0ce212dc2ba4dba070e2fd6"
+    },
+    "libgpod.dll": {
+      "sizeBytes": 250880,
+      "sha256": "b5b3dc9436c108c52bd10fc15cb60f201c16627b25b1e338f2bea02e296bc8ce"
+    },
+    "liborc-0.4-0.dll": {
+      "sizeBytes": 481280,
+      "sha256": "8c8d92e6dad51c352f7bc617822363e3201ef120911c824c91fab5c50afe4eed"
+    },
+    "libgstpbutils-1.0-0.dll": {
+      "sizeBytes": 167936,
+      "sha256": "bd0741313b2fd296dfa42e97c38842d159707fecfacf7ef0d685d5997f8f32a2"
+    },
+    "libgstrtsp-1.0-0.dll": {
+      "sizeBytes": 124416,
+      "sha256": "1d9e0f4864a805476a19589dd22145f0a03de73919a685ba300361ea23d78654"
+    },
+    "QtNetwork4.dll": {
+      "sizeBytes": 910848,
+      "sha256": "26a14613ad2173a3173562d15970e599b6e35de5a9617e2b34a2646936f8527d"
+    },
+    "libqjson.dll": {
+      "sizeBytes": 155136,
+      "sha256": "7022619a524ecfc1342c08e4948df75e20e8a5780201e2704a4038e482ff7c9d"
+    },
+    "libtasn1-6.dll": {
+      "sizeBytes": 95232,
+      "sha256": "028a86eb50a022672762e5ab9149bebfebd35e5d0ed69464278d2883d878f481"
+    },
+    "libgstapp-1.0-0.dll": {
+      "sizeBytes": 71680,
+      "sha256": "d953e18d73af16d5b0e2ebc79cbb6f85871dd5cd4ebd45a5b1d54f50aabaad3e"
+    },
+    "libgstnet-1.0-0.dll": {
+      "sizeBytes": 120832,
+      "sha256": "65dea7b2a54d931c896d7ed1e87362e5a313023716d07738186960ba43de5b08"
+    },
+    "libvorbis-0.dll": {
+      "sizeBytes": 188416,
+      "sha256": "76efe3059ffb8189e394ce296ed64fe0445a12ad2b25f0a6e709b263103ef978"
+    },
+    "libgcrypt-20.dll": {
+      "sizeBytes": 604160,
+      "sha256": "73a185ff4f7a4e8d3d461e8f4225aa424bc00a9d2e8f9293357b6fb347928e1a"
+    },
+    "libgstriff-1.0-0.dll": {
+      "sizeBytes": 86528,
+      "sha256": "83f074dbacf3d3dc4c7d5646d056359bb7cb29dcd1a2d109cd07ee21dbdb42af"
+    },
+    "QtSvg4.dll": {
+      "sizeBytes": 257536,
+      "sha256": "85262a4efa1fbd5b4bbe8f82bec2e9adde12a0c131252f4c6e4a5ac601df53dd"
+    },
+    "clementine.exe": {
+      "sizeBytes": 16620032,
+      "sha256": "7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb"
+    },
+    "clementine.ico": {
+      "sizeBytes": 47553,
+      "sha256": "4c13037cf48ffce13a0f307e3e03fdb2f61d869f344753bf123f384fae95971e"
+    },
+    "libiconv-2.dll": {
+      "sizeBytes": 954368,
+      "sha256": "73506017aef38dc1be1caaefd274aa231bcc0ea0345bb84e453e5aae1e15e8fc"
+    },
+    "libgmodule-2.0-0.dll": {
+      "sizeBytes": 41984,
+      "sha256": "08336089e280805c8ac89f7476526f944b5868c014748b6dc29f65167e9e3ab0"
+    },
+    "QtXml4.dll": {
+      "sizeBytes": 287232,
+      "sha256": "037523e4bf5f40ac89d3850d18a3ca58387025fc2e1d303f74d6606a4202467b"
+    },
+    "libgsttag-1.0-0.dll": {
+      "sizeBytes": 240640,
+      "sha256": "ae7b2e3743f5434ec89ea0f2310d539f5a70ebf808f57267b7584231f5ff8b22"
+    },
+    "libffi-6.dll": {
+      "sizeBytes": 50702,
+      "sha256": "a9d3f2056f8e888edc5abfa18178fc0b3ef99880c9c410e2c7d6a64386fb57da"
+    },
+    "libfftw3-3.dll": {
+      "sizeBytes": 843264,
+      "sha256": "9bd307c1ed9391fc0e28d4c1fa4b651fc35e98c92532a568c4ee8b4953fd8f32"
+    },
+    "libgstvideo-1.0-0.dll": {
+      "sizeBytes": 412160,
+      "sha256": "b392b82b6a3bbaa7c199aabe3e9ff9e2cf9b0c41d13e8ffdc94ad81382c98339"
+    },
+    "QtOpenGL4.dll": {
+      "sizeBytes": 806400,
+      "sha256": "a4209874fcaad405da14732446e60f5e11015055301c6d7119f5b9e792de0e17"
+    },
+    "libmad.dll": {
+      "sizeBytes": 143872,
+      "sha256": "686873d7d76286230f542e014e1e81e951cf87a9aa9d318f62622d84ccb56b5b"
+    },
+    "liblastfm.dll": {
+      "sizeBytes": 323072,
+      "sha256": "eb86455bcc61bfa7681d34996878c829027b54ddc608b97e28c3b16ddbc6d9b5"
+    },
+    "libgstbase-1.0-0.dll": {
+      "sizeBytes": 407552,
+      "sha256": "a1cd24d56531e6a25aadc9f929bd8f6989f4cb982bfd9a67ab4b9d667bf946eb"
+    },
+    "libgmp-10.dll": {
+      "sizeBytes": 394752,
+      "sha256": "bb3449223e5fe2d0a14acb8d8556c428eddb8738fa7460420142840e186453b9"
+    },
+    "libspotify.dll": {
+      "sizeBytes": 1469952,
+      "sha256": "566c6507de4c211424ed3106f27269a9b8490faffbe5ff0c7a1bd03d17f63b1f"
+    },
+    "libgio-2.0-0.dll": {
+      "sizeBytes": 1161216,
+      "sha256": "836657c590e151e9adc982189fa99f872cab498cd3ca6e6af32e6d55cb9c4b4c"
+    },
+    "libgcc_s_sjlj-1.dll": {
+      "sizeBytes": 119296,
+      "sha256": "019eecf623eb7473f21e245f99b58e267827aeffe0ac49fc3e8faa50502ed53c"
+    },
+    "libgstrtp-1.0-0.dll": {
+      "sizeBytes": 123904,
+      "sha256": "c2807dbb80df6764c395da389a36c0665f1668ea9cd93f8e9cc9bfc18b5bc311"
+    },
+    "QtGui4.dll": {
+      "sizeBytes": 7849472,
+      "sha256": "40793ce4a5a1dbbbe26d0ee50cdcdd7b721e64e1ca68e2431dffc42d6f31ee55"
+    },
+    "libmms-0.dll": {
+      "sizeBytes": 71168,
+      "sha256": "4eea44b0b4ea4c248595bb1e573334005ec538792e3bb9d2a07ee01265443327"
+    },
+    "libprotobuf-8.dll": {
+      "sizeBytes": 1042944,
+      "sha256": "d2837b00c07be8d3e00071ba2fbdc562dbee06e8541559f414aa4a9501e45003"
+    },
+    "liboil-0.3-0.dll": {
+      "sizeBytes": 413184,
+      "sha256": "2ea6d98bcd4d55f0dc4b9832f0c1a7a5f4cf4a70f71798549a531f6973537acc"
+    },
+    "libgnutls-28.dll": {
+      "sizeBytes": 939008,
+      "sha256": "9b094a109c5ce3abe4017a814d8198a8c70c0ea1260d084afb5220fb03e0cb0b"
+    },
+    "libsqlite3-0.dll": {
+      "sizeBytes": 537088,
+      "sha256": "350d4b26509bc81525f35af9b0b67abd8af08b5306b80c55208abf13f0e0eb46"
+    },
+    "libogg-0.dll": {
+      "sizeBytes": 46592,
+      "sha256": "ca717b5cf2a7b0e047aabad985c631278941c58f16e2e9650ca12c3a331fcd4f"
+    },
+    "pthreadGC2.dll": {
+      "sizeBytes": 36352,
+      "sha256": "6dc4bee625a2c5e3499e36fe7c6ff8ead92adf6aae40c4099fdc8ef82e85b387"
+    },
+    "libstdc++-6.dll": {
+      "sizeBytes": 849408,
+      "sha256": "f78c4b885ac6dac495086a4aa7a7f6b5f78b2e38ce4c742a8209ac03680782c7"
+    },
+    "Uninstall.exe": {
+      "sizeBytes": 202557,
+      "sha256": "f9e5bd518c97c168d96b393d8dbc397c9583872c315c18954e030ddfeaf56012"
+    },
+    "QtCore4.dll": {
+      "sizeBytes": 2181632,
+      "sha256": "884a833cfa0504ad0c0198bf92154a2d1dad3c9fce51637cd994d7c0837ac12e"
+    },
+    "libeay32.dll": {
+      "sizeBytes": 1732096,
+      "sha256": "d4b36abf0df41258bf91c830ca321c408dc8546cdbb6d23c1479638a34b0ed32"
+    },
+    "libgobject-2.0-0.dll": {
+      "sizeBytes": 289792,
+      "sha256": "18996a22c403d91f0a27ce8c4c99b99f512a4db9bce94c3fa9b43d395e9089ef"
+    },
+    "libfaac.dll": {
+      "sizeBytes": 94720,
+      "sha256": "7f79589f36cfb1613abb2f2338c6177afd4984f3d6a8e18c08f13561796b3a7d"
+    },
+    "libvorbisenc-2.dll": {
+      "sizeBytes": 1544192,
+      "sha256": "0323781b2f9ed61966ae4e04f4a26d20830b0a4ace7de994e145d342e99fe1f4"
+    },
+    "libgstsdp-1.0-0.dll": {
+      "sizeBytes": 78848,
+      "sha256": "c5616071d5d2e858bf26cea64bcda17b6c494b1507ea96a17816811c6071e4a8"
+    },
+    "QtSql4.dll": {
+      "sizeBytes": 200704,
+      "sha256": "3bd038ad63aaadc8bcb6f9c4fd1962826cbff700e14bace6c6b46ce689f57b7b"
+    },
+    "libgpg-error-0.dll": {
+      "sizeBytes": 57856,
+      "sha256": "460960b7a0a0f5f0a40b33203a46e840ad01e260afb4540ecd4e6c779d5b041b"
+    },
+    "libgstaudio-1.0-0.dll": {
+      "sizeBytes": 328192,
+      "sha256": "99df6f32a34b950b8d97b31680cc34349f05580b40fab4c9a74738114fd7b75c"
+    },
+    "clementine-tagreader.exe": {
+      "sizeBytes": 312320,
+      "sha256": "979f7eb30809fa9a68f7ee3f25444d0df2cf106b38e7fcc21f8cf5362c1480ec"
+    },
+    "ssleay32.dll": {
+      "sizeBytes": 421888,
+      "sha256": "585153067b2954585940ad8a95f55a431900badd377710ac78c8678d18e2ace4"
+    },
+    "zlib1.dll": {
+      "sizeBytes": 123392,
+      "sha256": "974a96136e0a93d402e4a2086372ca5cde6fd77b95dd63ddd37126b3c1e5da8c"
+    },
+    "libtag.dll": {
+      "sizeBytes": 960512,
+      "sha256": "0aa8a901b4c2db2584e3c94d8009d978518d561c296891724387dea4c1a1e59b"
+    },
+    "liborc-test-0.4-0.dll": {
+      "sizeBytes": 52224,
+      "sha256": "3c12f0a9f43cf88d82f5cc482627237f51a63a293ef95f2342222ebde1fb909f"
+    },
+    "glew32.dll": {
+      "sizeBytes": 303104,
+      "sha256": "cf5e1effe661a47f5ec94aa174119fa467b9b0eaf20eaed6eca15d3a6f50ca1b"
+    },
+    "mingwm10.dll": {
+      "sizeBytes": 7182,
+      "sha256": "fb33c708c2f83c188dc024b65cb620d7e2c3939c155bc1c15dc73dccebe256b7"
+    },
+    "libgstcontroller-1.0-0.dll": {
+      "sizeBytes": 84992,
+      "sha256": "469082f964fedd6014cf97de7c30f85d471e6c41248a48a8870657e330d7e36c"
+    },
+    "gio-modules/libgiognutls.dll": {
+      "sizeBytes": 86528,
+      "sha256": "3b8faeaac389abd97198569f5e0ffa567e495be01e9a24311d128bd76f1dcc6e"
+    },
+    "projectm-presets/Krash and Rovastar - Rainbow Orb.milk": {
+      "sizeBytes": 1846,
+      "sha256": "97a1272bd96e5fb7ea76382e1156fc682d2295ed63ed21c3966886fbff767c06"
+    },
+    "projectm-presets/Telek - Target Practice (tracking retreat slide).milk": {
+      "sizeBytes": 2053,
+      "sha256": "55536fc1c2e13f4a856de0b6ff948ff8e4865cd2ebbbcba2dbcf77df42f28132"
+    },
+    "projectm-presets/Redi Jedi - acid in your brain.milk": {
+      "sizeBytes": 8757,
+      "sha256": "9800a9865b93fb428abe9c006e6ef70c831352e97cadeda42e2d435a0fc11ea7"
+    },
+    "projectm-presets/Studio Music and Unchained - Rapid Alteration.milk": {
+      "sizeBytes": 3810,
+      "sha256": "f9e3211c81580d38677524abc18d45501c913085ba4b51594a43d2657db2e91c"
+    },
+    "projectm-presets/Rovastar - Biohazard Warning.milk": {
+      "sizeBytes": 8000,
+      "sha256": "09aa93b56894477b945899ff9c83e79eae158f31fef9c2bd6cdcb8c8a76ff81f"
+    },
+    "projectm-presets/Geiss and Rovastar - The Chaos Of Colours (sprouting diment.milk": {
+      "sizeBytes": 7937,
+      "sha256": "ef965078dd5316e52b724eeb0efc8c1ae7e03832aa37a3716e18d76a6b7269f5"
+    },
+    "projectm-presets/nil - Cid and Lucy.milk": {
+      "sizeBytes": 1412,
+      "sha256": "a3705a072d17deb4d047910315797d505e1369a008a55f4687aed016db0bcf23"
+    },
+    "projectm-presets/Geiss - Bipolar 4.milk": {
+      "sizeBytes": 1402,
+      "sha256": "e57561be6bd8433859b9933ce1d4c06a923d04ae99a76b682c8b2b7151f7ba76"
+    },
+    "projectm-presets/Geiss - Eggs.milk": {
+      "sizeBytes": 1453,
+      "sha256": "89dd96692382e924c9a7e48fa9d439bd7090f506c08a04b06298a66a78b9f6f6"
+    },
+    "projectm-presets/Geiss - Anomaly 1.milk": {
+      "sizeBytes": 1495,
+      "sha256": "b6f2334bd0ff2f6451f818326c3b0796400221936c31601e9a662c4d947127e5"
+    },
+    "projectm-presets/Aderrasi - Causeway Of Dreams (Nightmare Mix).milk": {
+      "sizeBytes": 2706,
+      "sha256": "a1a99d35140c4c7e67f97fa40f31adab7b9f4ead9b0c7cb63270d9d9475bb97d"
+    },
+    "projectm-presets/nil - Can't Stop the Cramming.milk": {
+      "sizeBytes": 1344,
+      "sha256": "e22fa20a578c6fe399477f968d2524a8081c71a8fd0683c815b88533bdb798d4"
+    },
+    "projectm-presets/Zylot - Inside The Planar Portal.milk": {
+      "sizeBytes": 1794,
+      "sha256": "ac7669483c979c5f10c2e8a4cfe2b3b040be85fed7d6a99ad30c5ee81e57d81e"
+    },
+    "projectm-presets/Fvese - simple.milk": {
+      "sizeBytes": 2022,
+      "sha256": "b048e8269ec23fd3e0a1202c37597e36fe95d5ed68970f9655e28c79076e3629"
+    },
+    "projectm-presets/Mstress - Acoustic Nerve Impulses (Under Drug Effetcs (Hypn.milk": {
+      "sizeBytes": 8483,
+      "sha256": "570f8981ab6956119f6eaaaa907387077ae1615237b75455394010514e56f308"
+    },
+    "projectm-presets/Unchained - Unclaimed Wreckage.milk": {
+      "sizeBytes": 3852,
+      "sha256": "b8edbb271084b134c1abaa7c97f88c06b05fa0c5aeacda92fc05ba612a1229d2"
+    },
+    "projectm-presets/PieturP - triptrap_(getting_concrete_visions_through_a_diafragma_version).milk": {
+      "sizeBytes": 7738,
+      "sha256": "b4372ea03dad690f1327d4e36821ffa3d9ec9336e7d67bb8dbbc2ce27fb2a967"
+    },
+    "projectm-presets/Rovastar - A Million Miles From Earth (Wormhole Mix).milk": {
+      "sizeBytes": 1795,
+      "sha256": "c4e9adac59e0a164c631e8a8e96aad66b437feb71158568118c0fa4310b57367"
+    },
+    "projectm-presets/Geiss - Heavenly 2.milk": {
+      "sizeBytes": 1381,
+      "sha256": "40243043adb95a64a6913ee6918df03bd92bd8b100ee982fe100257fe9d0786c"
+    },
+    "projectm-presets/Krash - Pulse.milk": {
+      "sizeBytes": 1732,
+      "sha256": "de11ad41f2178f32f91b26221785c793da4953ec55404643dc69e9e65dad61f6"
+    },
+    "projectm-presets/Aderrasi - What Cannot Be Undone.milk": {
+      "sizeBytes": 2002,
+      "sha256": "c8900119e93f58e3cfd4e524d865269f5037d58a18bd3850be45f9582f828385"
+    },
+    "projectm-presets/Rovastar & Sperl - Tuxflower.prjm": {
+      "sizeBytes": 7706,
+      "sha256": "c0f3fbab5ff7f81e2aa0112a2a9a43fe35b89044c5a9e86ec31d388b174dde83"
+    },
+    "projectm-presets/Illusion & Rovastar - Snowflake Delight.milk": {
+      "sizeBytes": 1786,
+      "sha256": "e86fe5f6dd04e7a4de5a6ec27099500154e0844094d302ca95beaa30337db94f"
+    },
+    "projectm-presets/Zylot - Tangent Universe (Collapsed With Artifact Mix).milk": {
+      "sizeBytes": 1568,
+      "sha256": "1450f2d1caa9a8e5228dce8d690eb8f99acb41bf5b7638e99440f45e93b99f80"
+    },
+    "projectm-presets/Geiss - Smoke.milk": {
+      "sizeBytes": 1362,
+      "sha256": "7a8f455a67eed6324dee0b8dabe1accf736f9d8ac5af8e3c546735546bc45019"
+    },
+    "projectm-presets/Unchained - Unified Drag 2.milk": {
+      "sizeBytes": 3487,
+      "sha256": "ec536c374babd109b069d679a8ab03fe5c3424ccbe110a2354e794013a6b2e5c"
+    },
+    "projectm-presets/Geiss - Julia Fractal 2.milk": {
+      "sizeBytes": 2445,
+      "sha256": "e81a776a9995b7360eb00572f472e8221ce23294f9082990b51b0d12084d341e"
+    },
+    "projectm-presets/Aderrasi - Candy Avian.milk": {
+      "sizeBytes": 1982,
+      "sha256": "f4a9278503343e1e77d65ae49f390a54ab22df17a10cc86a278a7fe577b98c26"
+    },
+    "projectm-presets/Krash - Season's Greetings 2.milk": {
+      "sizeBytes": 4761,
+      "sha256": "a79320c1482456dbf7aa56d490b25d00b6efda7d5981cffb3cb338c24caa1b29"
+    },
+    "projectm-presets/Rovastar - Dreamcatcher.milk": {
+      "sizeBytes": 2582,
+      "sha256": "26dfd6889fdfa9535f2ad97a941bd9e1f29be105fb9c479a0352a85f3d4b4b5b"
+    },
+    "projectm-presets/Rovastar - Kalideostars (Altars Of Madness MIx).milk": {
+      "sizeBytes": 6314,
+      "sha256": "a718c3b3e01330828009e6009cab103fde6b42fef9582b4d663b35f7b0348863"
+    },
+    "projectm-presets/Geiss - Blasto.milk": {
+      "sizeBytes": 1328,
+      "sha256": "ca8f8f5cc3e997f0cb495962a9d4e3eb12f322bba664fe230c8ff4ef4048fea0"
+    },
+    "projectm-presets/EMPR - Random - Changing Polyevolution.milk": {
+      "sizeBytes": 3226,
+      "sha256": "25418d2983396c88ae0a0b6d42ad650fc9f3f4d3442fbe3643dbdcf562d47cae"
+    },
+    "projectm-presets/Rovastar & Fvese - Stranger Minds (Astral Mix).milk": {
+      "sizeBytes": 2176,
+      "sha256": "8f5564693f748120a438bf33a71b729b4f9085a9bc48888120667589854a5534"
+    },
+    "projectm-presets/Rovastar - Chemical Spirituality.milk": {
+      "sizeBytes": 2321,
+      "sha256": "cf64cd741a8e44e1b5257d53ac14d67273531a837d1531cf2e9174e78f2e24b1"
+    },
+    "projectm-presets/Rovastar & Geiss - Dynamic Swirls 3 (Smoking Delusion Mix).milk": {
+      "sizeBytes": 3598,
+      "sha256": "4fe8cabbb8b2c6aa0521773ecb9a08c705dc52a2434f40c4aab1ea94a2cbe4e8"
+    },
+    "projectm-presets/Geiss - Journey.milk": {
+      "sizeBytes": 2033,
+      "sha256": "c787635182230c4f516fa0bd4acdfc2d0522c85459804840fbade16531186512"
+    },
+    "projectm-presets/idiot - Nothing Yet - 03 - The worst of the pack.milk": {
+      "sizeBytes": 2207,
+      "sha256": "c78e89f21f3e07132ba35ac3101cef87869651d6fc98222151a3f8cb52eb8ba2"
+    },
+    "projectm-presets/Geiss - Luz.milk": {
+      "sizeBytes": 1353,
+      "sha256": "924e515dfc9926523a7ede021635e15947ec6df214f2c86bff06c7c888d4f7a8"
+    },
+    "projectm-presets/Geiss - Cosmic Dust 1.milk": {
+      "sizeBytes": 1511,
+      "sha256": "279126da05b9f22ca942bf26648ae598f9be6aab26ea2d4d9af16ba66baa63fc"
+    },
+    "projectm-presets/Geiss - Ultrafast.milk": {
+      "sizeBytes": 1683,
+      "sha256": "7c7bf206db9a5c46aa9ad2cb4bd1abe36ba34caafcfecbf4ffbf46fbaf49095f"
+    },
+    "projectm-presets/Aderrasi - Contortion.milk": {
+      "sizeBytes": 2254,
+      "sha256": "73f857209b5dbf8695110b3b0f008e1e58845a692e790be3873ee209859e9ce2"
+    },
+    "projectm-presets/Zylot - Azirphaeli's Mirror.milk": {
+      "sizeBytes": 1375,
+      "sha256": "78cd18ff10781b78cb7be4efc84bd8f72f4944ee5f3049b2ec75eed21ca4fd71"
+    },
+    "projectm-presets/Unchained - Beat Demo 2.3.milk": {
+      "sizeBytes": 3943,
+      "sha256": "d29e1c5f6b9f512acd534ddfc9d943b9d014674c79fb68bf9a590ed1f78b3a94"
+    },
+    "projectm-presets/DaNOnE - Highway to Heaven (rotating).milk": {
+      "sizeBytes": 1101,
+      "sha256": "669fafd914cb9d626e7ba2895afc8af9cf8149bec00a62a8ad602562a4ab95b9"
+    },
+    "projectm-presets/Rovastar - Clouded Judgement 3.milk": {
+      "sizeBytes": 1896,
+      "sha256": "5c0a92056a8d4960dfe0662f91d5cca11e724d91fd061de0c2d7cf45b25001e8"
+    },
+    "projectm-presets/Geiss - Cepiasound.milk": {
+      "sizeBytes": 1722,
+      "sha256": "a4891c034e358fcda067cac2288524914eab646806aab6f6841e565bbb4b292d"
+    },
+    "projectm-presets/Geiss - Pelota De Fuego.milk": {
+      "sizeBytes": 1686,
+      "sha256": "577a10fbb7d1a3d01bdaa9d9a677fc1aae9ff6f4208c0573ee64f176775bdaba"
+    },
+    "projectm-presets/Geiss - Bipolar 3.milk": {
+      "sizeBytes": 1357,
+      "sha256": "7fc5797e3477f4122f063b7c64e38b8f830fb9878d49f4205a975ec23d2c4688"
+    },
+    "projectm-presets/Unchained & Illusion - Logic Morph.milk": {
+      "sizeBytes": 2401,
+      "sha256": "dc23f87ec5e0c0724b786f2b67abb47e638c8b01e7ad90b00162096101a11eab"
+    },
+    "projectm-presets/Unchained - Jaundice.milk": {
+      "sizeBytes": 3405,
+      "sha256": "bdbb986854a5437a01341f4ad553d9eab93c87619dd8016231aacc77744acc75"
+    },
+    "projectm-presets/Rovastar - Snapshot Of Space.milk": {
+      "sizeBytes": 2211,
+      "sha256": "47f18b083841a8484f288e812af33dd537a131876914e13bce52961c068e7ea4"
+    },
+    "projectm-presets/Geiss - Rocket.milk": {
+      "sizeBytes": 1339,
+      "sha256": "192a1a24ea2a7d9a51f1fb1de964efe8471bf41ee4c557773980547fb39d6d79"
+    },
+    "projectm-presets/Geiss - Cosmic Dust 2.milk": {
+      "sizeBytes": 2095,
+      "sha256": "dd12d8d1451be14e73b8e74b33d5d5503e77fb228a8d775c8ca27f6fdd3a5310"
+    },
+    "projectm-presets/Geiss - High Dynamic Range.milk": {
+      "sizeBytes": 5552,
+      "sha256": "4edf0fcf9838a08931a31757612d64ad0f7e67a4bef199b1eb88b8b880735323"
+    },
+    "projectm-presets/Rovastar - Dark Ritual (Star Of Destiny Mix).milk": {
+      "sizeBytes": 7751,
+      "sha256": "5de035c8bc53b4d3f65529a46bc1ad52c10a6acfeafb10cb635bdc28f2406633"
+    },
+    "projectm-presets/Geiss - Festive.milk": {
+      "sizeBytes": 1622,
+      "sha256": "10220dbce8fb1368cf032a1b345f7c6d00a0e352f50a57614c2f013028c9b5e8"
+    },
+    "projectm-presets/Rovastar - Harlequin's Fractal Encounter 2.milk": {
+      "sizeBytes": 5063,
+      "sha256": "3be97a43cf4c5296f7983ef2dbc4acf5d986a26f83c18adcad1ceb79bb982128"
+    },
+    "projectm-presets/Unchained & Rovastar - Triptionary.milk": {
+      "sizeBytes": 3672,
+      "sha256": "ba3993e46347942dc7e2873032dcc900841cc62b4d7751ca0ade2077f3360206"
+    },
+    "projectm-presets/Geiss - Flower Blossom.milk": {
+      "sizeBytes": 1568,
+      "sha256": "376bb047f1a6ee058a7bb60d639aac105778a667a23d132de6edd56563566b9d"
+    },
+    "projectm-presets/Rovastar - Fractopia (Upspoken Mix)_Phat_Speak_When_Spoken_2.milk": {
+      "sizeBytes": 13550,
+      "sha256": "9fce3bb3cd5d48fd00a5101535018fd3edeb50b2cc7225a2e2d0e7bb54db7ae7"
+    },
+    "projectm-presets/Aderrasi - Aimless (Gravity Directive Mix).milk": {
+      "sizeBytes": 1973,
+      "sha256": "46e77195be865502e7d646a8fc001486b59e6a5cdeeb0d6e1b726414013795b1"
+    },
+    "projectm-presets/Aderrasi - Floater Society.milk": {
+      "sizeBytes": 2115,
+      "sha256": "0387c917f01848136326ff4f8036ecea0bfe08b082701f875a7c51c2cae12f01"
+    },
+    "projectm-presets/Rovastar - Cosmic Mosaic (Active Mix).milk": {
+      "sizeBytes": 5776,
+      "sha256": "25a7a38df05bbbaa4b222e1819e5916be7cb3e0152e1595a5595fa1ccc9c00c8"
+    },
+    "projectm-presets/Rovastar - Inner Thoughts (Clouded Judgement Mix).milk": {
+      "sizeBytes": 7553,
+      "sha256": "48db019566ca61b243ed0fcec10fb8756caaffa4195d60d6bc95521f0fbcc77c"
+    },
+    "projectm-presets/Geiss - Iris.milk": {
+      "sizeBytes": 2301,
+      "sha256": "2853f721684aa2ad59cf3613006bc425331107e8d0e3532b97523976dd28936c"
+    },
+    "projectm-presets/Geiss - Octopus Ever Changing.milk": {
+      "sizeBytes": 1952,
+      "sha256": "60adbc74d22bc5105ddfb86e755c1aa399204adc5e6d1a526b07b74ed8040e5a"
+    },
+    "projectm-presets/Telek - Slow Shift Matrix.milk": {
+      "sizeBytes": 1620,
+      "sha256": "efff348ae331067beed044e4e99e67fe5a29d30ef5eb9fbeb9718efdefe9ff9e"
+    },
+    "projectm-presets/Aderrasi - Bow To Gravity.milk": {
+      "sizeBytes": 2268,
+      "sha256": "42081ea31f9d854ad6df3455d3934515e244730a0802dae623d253bea6d83ff7"
+    },
+    "projectm-presets/Rovastar - Parallel Universe.milk": {
+      "sizeBytes": 1857,
+      "sha256": "d6b587c3e73c4a65de724b932092d85916b2d13cd7b37c2eb0037388eae23b0f"
+    },
+    "projectm-presets/Fvese - Zoom Effects (Remix 2).milk": {
+      "sizeBytes": 2475,
+      "sha256": "6db5013946a319cf7601a452b5c587d3a976c002d68b18ee2d2e6086b87f86f1"
+    },
+    "projectm-presets/Geiss - Downward Spiral.milk": {
+      "sizeBytes": 1416,
+      "sha256": "170e5d973ab274c92f68c3ecf2a5d95572ff29d9806d7efb869efdbb09d820cd"
+    },
+    "projectm-presets/Zylot - Rush.milk": {
+      "sizeBytes": 4902,
+      "sha256": "c7ea3c0159863cde949deae62cc50abd1bfd24b5c6591cbab00d973028cafb13"
+    },
+    "projectm-presets/Unchained & Rovastar - Luckless.milk": {
+      "sizeBytes": 4039,
+      "sha256": "5438afed2ab2e0850da3ef9881d6ef1285a93878e086add9710e13289b370ed3"
+    },
+    "projectm-presets/Rovastar - twisted bytes.milk": {
+      "sizeBytes": 1481,
+      "sha256": "0b8aae0e9c95fe7f29ed9719e283ecfb95d66b26b95b2c6499cdac7584f2fe8d"
+    },
+    "projectm-presets/Telek - Flicker (xis).milk": {
+      "sizeBytes": 4436,
+      "sha256": "30ca326f2f2ac1c498a37e89633a7185a37008031d28f296ca584660495eca20"
+    },
+    "projectm-presets/Geiss - Octopus Gold with Dots.milk": {
+      "sizeBytes": 2011,
+      "sha256": "1f26af13f76eeaeb7d56a614a59fed957f26741d9fb3022f4fc584f0d46a94ae"
+    },
+    "projectm-presets/Geiss - Octopus Gold.milk": {
+      "sizeBytes": 2185,
+      "sha256": "ceda913726fef5a79dbdb4de073b0d00bc5970643f2eeb7e8d8d992c016b1153"
+    },
+    "projectm-presets/Rovastar - Altars Of Madness 4 (Spirit Of Twisted Madness M.milk": {
+      "sizeBytes": 3542,
+      "sha256": "da827ad4a9b45e48ec8b469be6a955101554d9838ef7ebd737766d67dfa55dc4"
+    },
+    "projectm-presets/Rovastar - LabFunk.milk": {
+      "sizeBytes": 1493,
+      "sha256": "e2c03a92fac52bc49897b33f18b10ccb4fba0121b18ea5c201dfd5fa7f1b9803"
+    },
+    "projectm-presets/Geiss - Pistons.milk": {
+      "sizeBytes": 1131,
+      "sha256": "3618e3b278fb592c9e9e2249774e4cc160cf7edb6a71a20cd4c2085584b40dc3"
+    },
+    "projectm-presets/Aderrasi - Contortion (Xenomorph Mix).milk": {
+      "sizeBytes": 2357,
+      "sha256": "05afe92cf468778f5b3a04391c23d8bd3f77a51c6feda8cb2ee74f96e9a2bdcb"
+    },
+    "projectm-presets/Geiss - Script.milk": {
+      "sizeBytes": 1670,
+      "sha256": "b0f2f8cc0781e86e95cbb7ac9c940981d16928457b66233f1ec708d6e381261c"
+    },
+    "projectm-presets/M.tga": {
+      "sizeBytes": 27965,
+      "sha256": "0944f4df42f5cae28a7348dc18eb37d0d21559febaf13d21b4907f366a5bd949"
+    },
+    "projectm-presets/Zylot & Krash - Extremophile.milk": {
+      "sizeBytes": 4440,
+      "sha256": "2c3608ba918b849f7f3afcddef97fed7d94d0e25e56af8bb90c95d25865f66ac"
+    },
+    "projectm-presets/Geiss - Four Kinds of Amphetamines.milk": {
+      "sizeBytes": 1319,
+      "sha256": "9f085db5e6515139d7c7b8a85c1f31d42a35bc1e4160cac338d5c80262e83efe"
+    },
+    "projectm-presets/EvilJim - Ice Drops.milk": {
+      "sizeBytes": 1108,
+      "sha256": "e3910b5c92ee0cfad57f5ba4b95124eaed5e159ce76184df7e1c9d77798da4e7"
+    },
+    "projectm-presets/Rovastar - Forgotten Moon.milk": {
+      "sizeBytes": 1703,
+      "sha256": "279c80bc8380512d227f4cd4827774877a06c3c04d6af144a98b32100c394779"
+    },
+    "projectm-presets/Rovastar & Che - Asylum Animations.milk": {
+      "sizeBytes": 4408,
+      "sha256": "2706d43c636770699bd218b93b6e4b1edce062faefc0c17fd347c397e0173aac"
+    },
+    "projectm-presets/Unchained - Cranked On Failure.milk": {
+      "sizeBytes": 3267,
+      "sha256": "6d15351c9f0a78b0617c8ec403ae6d0b23efffb41432e4cf11291880122fcab9"
+    },
+    "projectm-presets/Unchained & Rovastar - Xen Traffic.milk": {
+      "sizeBytes": 3974,
+      "sha256": "1c6e08cc6d497cf5e6f27408611a1af8e5ea2f7f5311696505562f4c0717e974"
+    },
+    "projectm-presets/che - adela the flower.milk": {
+      "sizeBytes": 3335,
+      "sha256": "f6ba301b43ea0f1e8c5af7a59387c0fdf958a08d7c397a85136acc768c2b6b3a"
+    },
+    "projectm-presets/Fvese - Round and Round (geiss gamma mix).milk": {
+      "sizeBytes": 5753,
+      "sha256": "732cfb48d653245d416b10319450296960e448b0401d75fb162a9160bdea6357"
+    },
+    "projectm-presets/Geiss - Asymptote.milk": {
+      "sizeBytes": 2024,
+      "sha256": "1ea4ff8f3231df5b11e6474f94ee0b8cf3a0c345f9dc290187ba42eb14a382fa"
+    },
+    "projectm-presets/Rozzor and Idiot - Any Other Deep Rising.milk": {
+      "sizeBytes": 3203,
+      "sha256": "a332b8a380bc8b56cda078a50fb8d6d0b311e5aeaa1c7c73d20cb2671ad23747"
+    },
+    "projectm-presets/Geiss - Vortex 1.milk": {
+      "sizeBytes": 1606,
+      "sha256": "2f21feefe7b7b1765f3e7675c3da8ed081f2366fa8ce6f61cfeaeff675ab2121"
+    },
+    "projectm-presets/Geiss - Churn.milk": {
+      "sizeBytes": 1674,
+      "sha256": "27867f7b264cccf7363b27fdb14505c7d497667c2feb57d48f7b61e0b9b872e0"
+    },
+    "projectm-presets/Geiss - Aieeeeee!!!.milk": {
+      "sizeBytes": 1580,
+      "sha256": "36e4ac969194173663cbc46398885b12d2f91ed4fc72c9ceefdd6a502445612a"
+    },
+    "projectm-presets/Rovastar - Touchdown on Mars (Detailed Pictures Mix).milk": {
+      "sizeBytes": 1271,
+      "sha256": "f0b64234dc55675175cb8326a1dc1c474028cdb428f8c370da42a987dd4693c3"
+    },
+    "projectm-presets/Rovastar & Geiss - Dynamic Swirls 3 (Mysticial Awakening Mi.milk": {
+      "sizeBytes": 2423,
+      "sha256": "c8a04ca02b0fefec7cd6f894fd87c17beb1b40c51e73ae43b2d725509c42c11b"
+    },
+    "projectm-presets/Idiot - Texture Boxes (Remix 2).milk": {
+      "sizeBytes": 6581,
+      "sha256": "fce9427b09d0510a9edb76b52c49e23bde733671af43540edf122f3ca18c67fd"
+    },
+    "projectm-presets/Geiss - Heavenly 1.milk": {
+      "sizeBytes": 1385,
+      "sha256": "e38b1012d3a55e89661939291e392b0787917d70756398206f37863da2f0cd37"
+    },
+    "projectm-presets/Geiss - Dynamic Swirls 2.milk": {
+      "sizeBytes": 1980,
+      "sha256": "511c7bb23ef3fe49bcfbfc9f6c59fe45293dede93efb3c09f756d30d5debbd00"
+    },
+    "projectm-presets/EvilJim - Follow the ball.milk": {
+      "sizeBytes": 1242,
+      "sha256": "e0f467aacd488ad2aa11096acfe12922fa248e041d770a0200b66b410552caae"
+    },
+    "projectm-presets/Geiss - Julia Fractal 1.milk": {
+      "sizeBytes": 2185,
+      "sha256": "08de77c3c97a7b5e5f73d000a1d32cfa0f7fddad3705e1c205216f155dd798c2"
+    },
+    "projectm-presets/Zylot - Color Of Music.milk": {
+      "sizeBytes": 1380,
+      "sha256": "31138b63293b69da1070ea54c3f7c9a3eceab314da7e0f33ba3b6d1ac94fbd79"
+    },
+    "projectm-presets/Unchained - All You Can Eat.milk": {
+      "sizeBytes": 3402,
+      "sha256": "17e0cad25bf50cb3c2d05d68eebec331f5a87282e29b8cbeff4ea5a88d400432"
+    },
+    "projectm-presets/Geiss - Flotsam.milk": {
+      "sizeBytes": 1888,
+      "sha256": "0492890d618d6d284032f262780d14868aae0741b12425c0fd9310b147f173fd"
+    },
+    "projectm-presets/Unchained - Shaping The Grid.milk": {
+      "sizeBytes": 8151,
+      "sha256": "83a742b8e16abfd411c87c016524a61cae9a16f4d0bf0865e7388035a91ec3e3"
+    },
+    "projectm-presets/Rovastar & Geiss - Dynamic Swirls 3 (Voyage Of Twisted Soul.milk": {
+      "sizeBytes": 2788,
+      "sha256": "15de4cc1c96f2eb8d72e2e69f19ca4831d3e1fcbef2e4a772984caa2b45243fc"
+    },
+    "projectm-presets/Telek - City Helix Lattice.milk": {
+      "sizeBytes": 1808,
+      "sha256": "bab0d8862a4bb90bb83a5c057649386ac49f67077aaf5b5f44df52f6bc665076"
+    },
+    "projectm-presets/Aderrasi - Spillswirl.milk": {
+      "sizeBytes": 1669,
+      "sha256": "c49b54ac556cb1ad7c8d6222a9c61c1870400ff64e67fc83df6b76ea18de89fd"
+    },
+    "projectm-presets/Krash - 3D Shapes Demo.milk": {
+      "sizeBytes": 9646,
+      "sha256": "e427e1d51fefc7145936575103daa25c9c27552a612991e1ec1609afc9228d1f"
+    },
+    "projectm-presets/idiot - Nucleus.milk": {
+      "sizeBytes": 2621,
+      "sha256": "b7dae36203446735cd5c450cba883fd56365b6b51b2e95cef50520a72b0c8ead"
+    },
+    "projectm-presets/Rovastar & Unchained - Demonology (Vampire Soul Mix).milk": {
+      "sizeBytes": 4165,
+      "sha256": "33840c6fe9344087cc2973674de8db54901e5f2fc6e91c096e959dc0b234ca5d"
+    },
+    "projectm-presets/Zylot - Block Of Sound (Abstract Architecture Mix).milk": {
+      "sizeBytes": 6180,
+      "sha256": "affd13f0cdc64dfaca67ad7c8e67b1bcbafa98ec95b1359bc0a872eddbfe4f45"
+    },
+    "projectm-presets/Eo.S. - glowsticks v2 03 music.milk": {
+      "sizeBytes": 16339,
+      "sha256": "482ac566a3010f07fffbebb79e5d7b20e8268cb1e93c99b8a5ee66a6a5f5643f"
+    },
+    "projectm-presets/Aderrasi - Causeway Of Dreams.milk": {
+      "sizeBytes": 1921,
+      "sha256": "87d8db7a31feb7f722103570bff557cc2da7455d7f1d058319a3e6af4c46347a"
+    },
+    "projectm-presets/Geiss - Bipolar 5.milk": {
+      "sizeBytes": 1487,
+      "sha256": "73da44cf57d981af6a0a20ececcb373907d8ac16185d7968ef7a12f719d462ed"
+    },
+    "projectm-presets/Zylot - S Pulse Virus.milk": {
+      "sizeBytes": 1170,
+      "sha256": "b29d403ad2da1befc91d5b56e921f33beba663b512b6794ea0106062766b3249"
+    },
+    "projectm-presets/Geiss - Greenland.milk": {
+      "sizeBytes": 1593,
+      "sha256": "316b5f5422d98661e60283a95335278fdf84b64a698c5deb63589586ce87a6f4"
+    },
+    "projectm-presets/Unchained - Deeper Logic.milk": {
+      "sizeBytes": 3517,
+      "sha256": "ee804baf8c34ba6241a6a3e84986e3b723eb8be37bad2d7eeb9c8509c4ed277e"
+    },
+    "projectm-presets/Rovastar & Idiot24-7 - Balk Acid.milk": {
+      "sizeBytes": 1711,
+      "sha256": "4be70adeb71e7f630ffe2ae177876fc00fb10721747fc92f444d87134f7303dd"
+    },
+    "projectm-presets/Geiss - Shake.milk": {
+      "sizeBytes": 1469,
+      "sha256": "ee84eabf035ad3ac2bce1a2564c4fd016bab0ad14210533af60d6605e830453c"
+    },
+    "projectm-presets/Rovastar - Sea Shells.milk": {
+      "sizeBytes": 6397,
+      "sha256": "8ce5338f08897d9592c8fad394ce8eb58a15c0f289d779a12834bc435c9f74dc"
+    },
+    "projectm-presets/Geiss - Bipolar 2.milk": {
+      "sizeBytes": 1358,
+      "sha256": "06242fbd6ece5ed9ee958cf44a1b53f0b83d75c9a352be10304f1209cc287623"
+    },
+    "projectm-presets/Tschoey - Music Flower.milk": {
+      "sizeBytes": 1306,
+      "sha256": "61ff3cf822d894226a788a97ac639b793dc2a647b66a9bec61615fed7448c627"
+    },
+    "projectm-presets/Geiss - Destruction.milk": {
+      "sizeBytes": 2157,
+      "sha256": "5655fc8c845c962eba13cbe9de7e3e0a5a077a858f4a48767ab559cd058a4b0a"
+    },
+    "projectm-presets/Rovastar - Inner Thoughts (Dark Secret Mix).milk": {
+      "sizeBytes": 7908,
+      "sha256": "42802aebcc8ef6d049ad95ce0331c95d95f9406187a0e49c38d78cb8b5c69b53"
+    },
+    "projectm-presets/Geiss - Waterfall.milk": {
+      "sizeBytes": 1405,
+      "sha256": "4d959763b9b4d1450cf808cd37bb256895e882a7df5cebb75a1551d26b4b0cb5"
+    },
+    "projectm-presets/Unchained - Unclaimed Wreckage 2 (Shamanic).milk": {
+      "sizeBytes": 3634,
+      "sha256": "9308c2f17a87d20168df88c539042db701507fb74ba8748aef1a85b2692afa9c"
+    },
+    "projectm-presets/Geiss - Nautilus.milk": {
+      "sizeBytes": 1281,
+      "sha256": "87339c476f2e50fc9cfef5b751498df49538f8673bb9f43de155a176bb4a409b"
+    },
+    "projectm-presets/Fvese - The Tunnel (Final Stage Mix).milk": {
+      "sizeBytes": 1854,
+      "sha256": "350a88a27827c8016b9f255d4efd4402d83c9c1998885a7796de784bc41c0d79"
+    },
+    "projectm-presets/Unchained & Rovastar - Wormhole Pillars.milk": {
+      "sizeBytes": 1952,
+      "sha256": "7a631b35281979cd90aaf681cc3ef6a463f6f110f943f0733c8e30aa6b06da04"
+    },
+    "projectm-presets/Rovastar - Cosmic Havoc.milk": {
+      "sizeBytes": 2438,
+      "sha256": "1dfb4697a1db6f330848e10120acd068975856f4d7ce795198a0befed5651130"
+    },
+    "projectm-presets/Eo.S.+Phat - Arm_upgrades - transformer.milk": {
+      "sizeBytes": 7111,
+      "sha256": "fbb7bd46b53c623f9cef7365f102955101cdba16a266dc5add7731662f361d6e"
+    },
+    "projectm-presets/idiot - Spectrum.milk": {
+      "sizeBytes": 2210,
+      "sha256": "4b12ba2bbcb1cc689e204dacb77f3061dbeae3f01f452d1697d8a8dec6d226dc"
+    },
+    "projectm-presets/Eo.S. - glowsticks v2 05 and proton lights (+Krash's beat code) _Phat_remix07 recursive demons.milk": {
+      "sizeBytes": 23221,
+      "sha256": "8d6684111bbb3aec77fb4466017535c3770e5752788ae0f7b7d27740099d8f14"
+    },
+    "projectm-presets/Geiss - Planet 2.milk": {
+      "sizeBytes": 1607,
+      "sha256": "fc949a93643e49110ec437756c23caf66aa2c81d51090ae0569d5e06d8478c15"
+    },
+    "projectm-presets/Zylot - Ether Storm.milk": {
+      "sizeBytes": 1439,
+      "sha256": "c196ce0292da4c4366b54b02b0942cb69c2457a0a659a792b98e872aa7d03ee9"
+    },
+    "projectm-presets/Rovastar - Altars Of Harlequin's Maddess.milk": {
+      "sizeBytes": 3726,
+      "sha256": "054960c985774afad70d753ccb9a9cd43a6bcfbfadea391321981c3bb2a6e508"
+    },
+    "projectm-presets/Geiss - Shift.milk": {
+      "sizeBytes": 2012,
+      "sha256": "30d25a91426a27fdbe7094cfaa36a586669da9eb2be21733a89fc27cca324038"
+    },
+    "projectm-presets/Idiot - 9-7-02 (Remix) (sustain fixed).milk": {
+      "sizeBytes": 7452,
+      "sha256": "fae83d3aae9b33811f5c270facd849abf3f62b9c6de6b40e26bca5fc1656fa09"
+    },
+    "projectm-presets/Geiss - Heavenly 3.milk": {
+      "sizeBytes": 1447,
+      "sha256": "9ebf7cda7c84e45e146534c1015d911b81482801ed2605fe605f7006d3a11ad3"
+    },
+    "projectm-presets/Zylot & Mstress - Toxic Storm On Acid Sea (The End Of The W.milk": {
+      "sizeBytes": 2972,
+      "sha256": "956fa9d0f0b692937c134c8d6b21293ce9d1851bb7069e063920053192d9fcf8"
+    },
+    "projectm-presets/Rovastar & Fvese - Mosaic Waves.milk": {
+      "sizeBytes": 2013,
+      "sha256": "979e86dcfebe189536df6378d2dffc1268e9e90e4f688f00f549f9b8836a52e6"
+    },
+    "projectm-presets/Rovastar - Fractopia (Fantic Dancing Lights Mix).milk": {
+      "sizeBytes": 5997,
+      "sha256": "3d8faec3538c234ebaabbc35c474b440ff3406aa6f49139f649cb8335160a1a1"
+    },
+    "projectm-presets/Rovastar & Idiot24-7 - Mixed Emotions (Harlequin's Shame Mix).milk": {
+      "sizeBytes": 1774,
+      "sha256": "0b928fb10b9e84e50f81a299c39ce1c150f775f701aaa6601034f3d9efc6da6d"
+    },
+    "projectm-presets/Geiss - Mega Swirl 1.milk": {
+      "sizeBytes": 1291,
+      "sha256": "a14dbca80f12816e676ca151034295e0eaf7f6fcf91b45bb9df45ba057f22195"
+    },
+    "projectm-presets/Aderrasi - Causeway Of Dreams (REMix).milk": {
+      "sizeBytes": 2201,
+      "sha256": "ad2626eba510dc9ce82a5febff4edaf7323bb7281d89d7c8e84504b49aafa136"
+    },
+    "projectm-presets/Zylot - Rainbow Planet Under Attack.milk": {
+      "sizeBytes": 1722,
+      "sha256": "b2831f9ef106611346140f875488f2eb2d107100c99db2623c53427cfbe864e4"
+    },
+    "projectm-presets/headphones.tga": {
+      "sizeBytes": 21740,
+      "sha256": "dcc901b02df04392c43cb55ff2174aad60abe500b83c376c2fa6d6394d8c05c4"
+    },
+    "projectm-presets/Geiss - Swirl 2.milk": {
+      "sizeBytes": 1339,
+      "sha256": "9bcc86013ee2ed41b57ef0b3e1c51a64cbc48a59e84a3da7c8d9b6008f738249"
+    },
+    "projectm-presets/Rovastar - The Awakening.milk": {
+      "sizeBytes": 1382,
+      "sha256": "1d4a24ac46b4088eb90770a081d394b682bfd157a7c24c102e1b75eeed5ba39c"
+    },
+    "projectm-presets/Zylot - De(-a)range(d)(ment) complex.milk": {
+      "sizeBytes": 1482,
+      "sha256": "ef7994fdcfa8939ac99fcf541aab00a251e7cd4b1f8a2c5c8e0eba05193baa72"
+    },
+    "projectm-presets/Unchained - Picture Of Poison.milk": {
+      "sizeBytes": 4144,
+      "sha256": "10c275550fe017ce9bac59897c3c79550768bb6d093882ddfd3add0c3d1a1bd6"
+    },
+    "projectm-presets/Zylot - Crystal Ball (Magical Reaction Mix).milk": {
+      "sizeBytes": 11629,
+      "sha256": "79bc5575acfc786d6e74660be998662b35627a18b337dddea0035a75c86fcf37"
+    },
+    "projectm-presets/Aderrasi - Antidote.milk": {
+      "sizeBytes": 2091,
+      "sha256": "e7fe63b26efa4135064219b1c5d0446d4ab40b3586fca59e88134596ac51efd5"
+    },
+    "projectm-presets/Zylot - Global Earthquake.milk": {
+      "sizeBytes": 1334,
+      "sha256": "2463311c5ac52f8408a81d640e068a03ffb0699e2fa609b8a37636539b6ebf74"
+    },
+    "projectm-presets/Aderrasi - Antidote (Side Effects Mix).milk": {
+      "sizeBytes": 2411,
+      "sha256": "d033732b7271c9adc0702d3e781541be4372f9258bb3e07ec9a984a8421c7d48"
+    },
+    "projectm-presets/Rovastar - Harlequin's Spirit (Twisted Mix).milk": {
+      "sizeBytes": 3077,
+      "sha256": "c9d8ff8a5c067b7167e5bf7d632d592bc5cceb9fb1e958f63b50df8c692b273f"
+    },
+    "projectm-presets/Geiss - Casino.milk": {
+      "sizeBytes": 1512,
+      "sha256": "6f38a02bb4413af255e870335aa3b4927f2cc2e5f38776591f0bddb3774e3ef5"
+    },
+    "projectm-presets/Geiss - Runoff.milk": {
+      "sizeBytes": 1323,
+      "sha256": "1f2d58189635970f4be7d5d17692fd3d8eeb6b660b06721b2a16420ec3b82bad"
+    },
+    "projectm-presets/Unchained - Games With Light & Sound.milk": {
+      "sizeBytes": 3653,
+      "sha256": "3e6f4789b4dbabf46d59e25c991f35e052b788c7248d6d8e6376b6c2d5531585"
+    },
+    "projectm-presets/StudioMusic - It's Only Make Believe.milk": {
+      "sizeBytes": 1626,
+      "sha256": "7794d9d768734264d7102b5d5dfe8d0c92f5c2bc7e585a0e5c4c31add1679439"
+    },
+    "projectm-presets/Geiss - Approach.milk": {
+      "sizeBytes": 1630,
+      "sha256": "ca92a8245fa19271af92f228774ec6559f383a0deea67e6cbfa655cac377fb94"
+    },
+    "projectm-presets/Zylot - Block Of Sound (Fractal Construction Mix).milk": {
+      "sizeBytes": 2873,
+      "sha256": "daf7060d89c0238cdc7e151671c1035beceb64851482852a2dc4894a6e66c4fa"
+    },
+    "projectm-presets/Geiss - Planet 1.milk": {
+      "sizeBytes": 1686,
+      "sha256": "25acc8edf07e1360d9b1dfc105b04db7f2d07a96c9276536fae8e1219e67dca8"
+    },
+    "projectm-presets/Rozzor and Rovastar - Altars Of Madness 3 (ooze tweak).milk": {
+      "sizeBytes": 3732,
+      "sha256": "d7d397c5c1b029aefc7a32f19d5b80275b2bd8dbdd988d5e3a3d5d21448c1f41"
+    },
+    "projectm-presets/Rovastar - Future Speakers.milk": {
+      "sizeBytes": 7896,
+      "sha256": "e997d818020248ecfc77d96fb441ae6bf55026f509a38eddce8df7f6ba122481"
+    },
+    "projectm-presets/Telek - Flicker.milk": {
+      "sizeBytes": 2914,
+      "sha256": "6c369e9a3a32ce5313b616945ba10febf91feacd7355aad0bec1a2c58c65fd60"
+    },
+    "projectm-presets/Aderrasi - Arise! (Padded Mix).milk": {
+      "sizeBytes": 2050,
+      "sha256": "fa7a75549127b753328db8cab8531d1055a40d608e601798c284d53ccafa8923"
+    },
+    "projectm-presets/Geiss - Constant Velocity.milk": {
+      "sizeBytes": 1429,
+      "sha256": "2b587bef821541eb4779bb45571425407bfdb135e569d6868fcf44ce6c871190"
+    },
+    "projectm-presets/Unchained - God Of The Game (Remix).milk": {
+      "sizeBytes": 3214,
+      "sha256": "00c55f80af60c7748c79096938ce960de89ed30754cb1622e0531386266b466b"
+    },
+    "projectm-presets/Unchained - Custom Gramatix (Remix).milk": {
+      "sizeBytes": 3454,
+      "sha256": "d1da77bf471106f4a0c0e76f3657aaa79c07a8b6e1b3a515bc84e365998441aa"
+    },
+    "projectm-presets/Geiss & Rovastar - The Chaos Of Colours (sprouting dimentia mix).milk": {
+      "sizeBytes": 7052,
+      "sha256": "8881faf71b0502b9cf6fb6178e8027d9fe2936bc01e0d0bb9531dfc7fd19facf"
+    },
+    "projectm-presets/Rovastar & Krash - Interwoven (Contra Mix).milk": {
+      "sizeBytes": 4539,
+      "sha256": "0a9a8e86fface64aa15ed43f5c0c3cb82e901d3150c98e5775e1d59de9ba82e2"
+    },
+    "projectm-presets/Geiss - Monotone Ripples.milk": {
+      "sizeBytes": 1608,
+      "sha256": "21a3d231acb3b80a33a8ed1d70f33329f95d3263e78d8c11ffae389e4e69c973"
+    },
+    "projectm-presets/PieturP - triptrap_(ultimate-trip-mix).milk": {
+      "sizeBytes": 7845,
+      "sha256": "7b69ba5613dc8ecebf2859b5eb1a79396b650046cd9141b791723e7805f64432"
+    },
+    "projectm-presets/Unchained - Cartoon Factory.milk": {
+      "sizeBytes": 3910,
+      "sha256": "e609ee2bfacdd0be07426aea3b41bc9e320de136d21fa9cf560218a6ead28024"
+    },
+    "projectm-presets/Rovastar & Geiss - Octoplasm.milk": {
+      "sizeBytes": 2097,
+      "sha256": "59a0814e8ee99452966af3fcdbec6ad27f660f0a76154f4756ad393327e0766b"
+    },
+    "projectm-presets/Mstress & Juppy - Dancers In The Dark.milk": {
+      "sizeBytes": 25259,
+      "sha256": "9146ff595ec39396cc0e11163e614706d1ed94c65fe01c2045be31b786da1f6a"
+    },
+    "projectm-presets/Mstress - Snowing Fiber City.milk": {
+      "sizeBytes": 6220,
+      "sha256": "d4a9467af45ab4d439ae95536b1f605dd59dab9c614713a5eb0125a22a77f45c"
+    },
+    "projectm-presets/Rovastar & Che - Adela The Flower (Altars Of Madness Mix 2).milk": {
+      "sizeBytes": 3671,
+      "sha256": "609644136f9c1e1541f2c2a3aef7ebf078c377a598ebe44fd7fc7f093a904c2c"
+    },
+    "projectm-presets/Illusion & Unchained - Frozen Eye 1.milk": {
+      "sizeBytes": 1956,
+      "sha256": "2438150268326b15f64f06916b5e26241a460bba3cfba40c4c0e142439e42f29"
+    },
+    "projectm-presets/Rovastar & Illusion - Shifting Sphere.milk": {
+      "sizeBytes": 1963,
+      "sha256": "ae1e2e2d6d321a004511206e0b2ca3b123ec2ec571def5108b88f0d71f4b82fe"
+    },
+    "projectm-presets/Geiss - Three Kinds Of Amphetamines.milk": {
+      "sizeBytes": 2037,
+      "sha256": "8ea3153b2cb6c1ce7a7d16fd66594e57bacaee7c5cb5a97866744c3bec0e7877"
+    },
+    "projectm-presets/Unchained & Illusion - Dual Wave 3.milk": {
+      "sizeBytes": 1371,
+      "sha256": "efc469cc33a59280c55701d639cef78c081f5a436c5ed53b222e39be6c0b5ad8"
+    },
+    "projectm-presets/Rovastar - Cosmic Echoes 2.milk": {
+      "sizeBytes": 1971,
+      "sha256": "cb30feef4aa98f810bbe0299f869cb89be5fcf4a50564c531371a31053aa5419"
+    },
+    "projectm-presets/Geiss - Scary.milk": {
+      "sizeBytes": 1749,
+      "sha256": "2c29cb9005c970745b5e2c0efaadfb885c41d130a03810de3243fe0f8edc8e2b"
+    },
+    "projectm-presets/nil - Disco Comet.milk": {
+      "sizeBytes": 1365,
+      "sha256": "f48844ce45db21a8bf90add2fd0582ec6d574d9f40f82aac33a97e396f8fcfb0"
+    },
+    "projectm-presets/Unchained - Ribald Ballad.milk": {
+      "sizeBytes": 3647,
+      "sha256": "ac2b9553226eae1b6b344ecdbc9995b02c41ebcb29ec4d1cd99cfe89deb1be58"
+    },
+    "projectm-presets/Illusion & Che - Return Of The King.milk": {
+      "sizeBytes": 1465,
+      "sha256": "263dddbcb4a6c80b3abbd0b5f1d89cb8faabefbef3ddb06203db90097f872aa3"
+    },
+    "projectm-presets/Krash & Idiot - Memories Of The Castle.milk": {
+      "sizeBytes": 2754,
+      "sha256": "48299cf805ecc075daefee0861708cd7d8ef850d15cb8fed4b158cf90e705aa8"
+    },
+    "projectm-presets/Geiss - Warp Of Dali 1.milk": {
+      "sizeBytes": 1439,
+      "sha256": "4cab6515aad3532bac103e4f293e6a579cefab94830c0fd92b3ca17e27715a63"
+    },
+    "projectm-presets/Geiss - Sound And The Fury.milk": {
+      "sizeBytes": 2095,
+      "sha256": "b0f22bc955c905d9c20666ed2a0d3ce5b1920f162345e5b525db03fcf149f6c3"
+    },
+    "projectm-presets/Geiss - Swirlie 5.milk": {
+      "sizeBytes": 1811,
+      "sha256": "aabfb2be19e54fdd5431fafaad3732896adcc76d453e1a7a7da7bc0313ada1b0"
+    },
+    "projectm-presets/Unchained - Beat Demo 2.1.milk": {
+      "sizeBytes": 3692,
+      "sha256": "e00ad7068a151058a4cebf152da751bb515f8ca2da3d0cb47073bb7c037caa9b"
+    },
+    "projectm-presets/Eo.S. - glowsticks v2 04 music minimal.milk": {
+      "sizeBytes": 16365,
+      "sha256": "a37ff46a7774c1dd4d8832ec801080fe26b5d106ad6cddac312634137780e152"
+    },
+    "projectm-presets/Geiss - Feedback 2.milk": {
+      "sizeBytes": 6505,
+      "sha256": "24e9098da1141af87b61e21711fe7784065d7f4293f52da6274cd517bbb03aa0"
+    },
+    "projectm-presets/Krash & Rovastar - A Million Miles from Earth (Ripple Mix).milk": {
+      "sizeBytes": 2492,
+      "sha256": "8762d803b29bf8ee989c094576b0368f4417be45ac5d97d6bb007794b76cd3d1"
+    },
+    "projectm-presets/Krash & Rovastar - Switching Polygons.milk": {
+      "sizeBytes": 2625,
+      "sha256": "87388d4a0ebee65440d0547759c67ca65b008d570c14503a0e5a00205645538e"
+    },
+    "projectm-presets/Geiss - Eddies 2.milk": {
+      "sizeBytes": 2148,
+      "sha256": "7c3635726c3fe4095220ec3234d2055023a98546b7bfed504c53e3a4cb8bc1a5"
+    },
+    "projectm-presets/Unchained - Beat Demo 2.2.milk": {
+      "sizeBytes": 3770,
+      "sha256": "f93e4d1d4676b15761b484fe123795b67ffb9aafcabc0a4357835c407c3d9b88"
+    },
+    "projectm-presets/Rovastar & Telek - Cosmic Fireworks.milk": {
+      "sizeBytes": 5868,
+      "sha256": "dd35b266881a335ce7d26a129b431453dbdee32ec0f8b2ec152d198de9d6363f"
+    },
+    "projectm-presets/Rovastar & Geiss - Octotrip.milk": {
+      "sizeBytes": 2212,
+      "sha256": "a38ed0b044b7a858d1d197f261cbbf2a67ef220027072d09296a59804b35fdee"
+    },
+    "projectm-presets/Rovastar & Telek - Altars of Madness (Rolling Oceans Mix).milk": {
+      "sizeBytes": 3870,
+      "sha256": "7a096d9d222d1f026b459c4044883c141a3482df51c57a1b4bf4c17c95ba0353"
+    },
+    "projectm-presets/fiShbRaiN - blueprint.milk": {
+      "sizeBytes": 6787,
+      "sha256": "5b1dcb5b841181f44d45676802506f917870cde948c5ce4fa87d46fe58a90f0c"
+    },
+    "projectm-presets/Rovastar & Zylot - Narell's Fever.milk": {
+      "sizeBytes": 2763,
+      "sha256": "5a362c130e03924f34bb028b87a3e3072cf8b637cf77ac736f8f0dd07c731ebf"
+    },
+    "projectm-presets/Zylot - De(-a)range(d)(ment) strain.milk": {
+      "sizeBytes": 1585,
+      "sha256": "5f54d6dc4416d0a343edbdb1ff169bfbfced28e09bb3bf9dfd4c319851634e0e"
+    },
+    "projectm-presets/Geiss - Galaxy 2.milk": {
+      "sizeBytes": 1242,
+      "sha256": "aa63a9ba7d466593ab153c06e5c61ec1a87609235609c6838f4ea5eaffbe0c5a"
+    },
+    "projectm-presets/Rovastar & Zylot - Sea Of Zigrot.milk": {
+      "sizeBytes": 1264,
+      "sha256": "fb57a08ddd4e0e5b804fb48e52ef7b5374790cc2a9864652b382168f8afd2578"
+    },
+    "projectm-presets/Rovastar - VooV's Movement (After Dark Mix).milk": {
+      "sizeBytes": 4973,
+      "sha256": "9e4b2647c046d7839269f0b4d634ae31d32b9d1135d142d002018eea5d2d3f8e"
+    },
+    "projectm-presets/Rovastar & Aderrasi - Oceanic Bassograph (Underwater Mix).milk": {
+      "sizeBytes": 2161,
+      "sha256": "d8b4fd894206a426a47fdfcd82070e2465b534b5903c633b171cfda1f466729a"
+    },
+    "projectm-presets/Idiot - What Shall Come.milk": {
+      "sizeBytes": 3641,
+      "sha256": "c4f696584f65b1a53d5451df9f81c06d816b0912972d7a720dd74732ae231f79"
+    },
+    "projectm-presets/Geiss - Microcosm.milk": {
+      "sizeBytes": 1496,
+      "sha256": "23c79909b4cea60775ce2ac1e21724b71eae8c05f1bfd6ff5e5e5816262a58e3"
+    },
+    "projectm-presets/Geiss - Music Box.milk": {
+      "sizeBytes": 1326,
+      "sha256": "f374689c1b3cbf3b9eb538a9853bdedeb164edd43b53caa5f245fe38b4f4666b"
+    },
+    "projectm-presets/Unchained & Rovastar - Rainbow Obscura.milk": {
+      "sizeBytes": 1663,
+      "sha256": "be7c3689b5adac8b3d9d25a6c984bdff1135cecc2274fae26be075f84bd4abec"
+    },
+    "projectm-presets/Rovastar - Hyperspace.milk": {
+      "sizeBytes": 1680,
+      "sha256": "35cef8e8037109d27663cf54585b7498a905a3044b02a81891dfcceffc5e4983"
+    },
+    "projectm-presets/Zylot - Digiscape Advanced Processor.milk": {
+      "sizeBytes": 1117,
+      "sha256": "6ab775ead2115db1121828ae5bfa17b90f8331a63badf3124aaf7bf6fbbf801f"
+    },
+    "projectm-presets/Rovastar - Tripmaker.milk": {
+      "sizeBytes": 7704,
+      "sha256": "3984d074b3e6e02bc8f7a7095618197021a9b0e8bc38ac2b0927df668475c4c4"
+    },
+    "projectm-presets/Unchained & Illusion - Spirit Morph.milk": {
+      "sizeBytes": 2112,
+      "sha256": "f8d008f14b94b66abb281eaf160e180b0cdc565776e46f23ba6f0064ee38f5d9"
+    },
+    "projectm-presets/Geiss - Reducto Ad Nauseum.milk": {
+      "sizeBytes": 1659,
+      "sha256": "77a91315413bd4c487bafdac832d4dbbbbb67ab77d8bf5ec4192fb528804f8c7"
+    },
+    "projectm-presets/Geiss - Swirlie 4.milk": {
+      "sizeBytes": 2210,
+      "sha256": "f5244c78c7175b8d7c6daf055780649d7692670669a2fe6bf2b1096c8ea4ca50"
+    },
+    "projectm-presets/Aderrasi - Anomalous Material Science (Pure Splinter Mix).milk": {
+      "sizeBytes": 2201,
+      "sha256": "5b2e549e52d8f2c964fc17a0e9870b8cb3c2e007abe1a2aedacb704da91f3f0d"
+    },
+    "projectm-presets/Bmelgren - Godhead.milk": {
+      "sizeBytes": 1217,
+      "sha256": "8aaea6ea8fc787c3985b32c18c623b52e7fcbdf744cb0e24f879161fd3aca6ec"
+    },
+    "projectm-presets/StudioMusic & Unchained - Wrenched Fate.milk": {
+      "sizeBytes": 3690,
+      "sha256": "1b1fa3095cc3f801e24b178f068ada4992495362d6b0f780b519289838910df0"
+    },
+    "projectm-presets/Rovastar - Altars Of Madness (Surealist Mix).milk": {
+      "sizeBytes": 5465,
+      "sha256": "36b497e76e88448f3aaf2cae26b9e2ca4e15add3456a6ab9f6aff608a43f2633"
+    },
+    "projectm-presets/Rovastar - Altars Of Madness (Duel Mix).milk": {
+      "sizeBytes": 5510,
+      "sha256": "db0bcbeda85723f13974dac62e720c23fb302937e6ccb53451c7e3f8e3d1c3b9"
+    },
+    "projectm-presets/Zylot - The Deeper.milk": {
+      "sizeBytes": 1344,
+      "sha256": "3bb97be731d26fded1ebd6b328f305dd7d40843d75ec7800bbb4bb0ef963aaef"
+    },
+    "projectm-presets/Telek - Directive Swagger (Spectral Inferno) (fix...) maybe.milk": {
+      "sizeBytes": 5007,
+      "sha256": "5727b38cf20121868780e1463e0795b2018394cf9dda0f009471dfc2e46ae077"
+    },
+    "projectm-presets/Geiss - Flower.milk": {
+      "sizeBytes": 1340,
+      "sha256": "e0cec2fca925bb171f6655d98a43014c8b9f0cb8c384e413802476924e2a6d8f"
+    },
+    "projectm-presets/Geiss - Feedback.milk": {
+      "sizeBytes": 6165,
+      "sha256": "ce9abada9355d35317d5d999b89cb1ac48b52334ac7dfa5f8dd879e524107a72"
+    },
+    "projectm-presets/Jess - Trying To Trap A Twister.milk": {
+      "sizeBytes": 2864,
+      "sha256": "373ca652b0818cd85efcebd15ba4c50cdb266a9b8b60be63bca58d963746df24"
+    },
+    "projectm-presets/Geiss - Solar Flare.milk": {
+      "sizeBytes": 1801,
+      "sha256": "17ba8fb49e426db6b500a56259c7110fe364331496ddb4d0d6df0b52247e817b"
+    },
+    "projectm-presets/Telek - Spokes (More Dynamic).milk": {
+      "sizeBytes": 2233,
+      "sha256": "fc9a80559df2060550959c010964a47ac3ac9e11c75b5dfb6dc1370b7502f42a"
+    },
+    "projectm-presets/Geiss - Cruzin'.milk": {
+      "sizeBytes": 1539,
+      "sha256": "b3ec9c82254d43bde922f23d1b6113dfc2b85062f046c4aca171b1c750c3dfaa"
+    },
+    "projectm-presets/Rovastar - Omnipresence Resurrection (Raw Mix).milk": {
+      "sizeBytes": 2458,
+      "sha256": "2a9c63926de74bde201c6f08940e5c8b4e7dfd5e29353ecee306ef868066f5f2"
+    },
+    "projectm-presets/Aderrasi - Agitator.milk": {
+      "sizeBytes": 1589,
+      "sha256": "14c038c96b64080ebee7bd763084f4819467121557f33a6efe2e54bb36631ee3"
+    },
+    "projectm-presets/EMPR - Random - They're so cute Dad can I keep one!.milk": {
+      "sizeBytes": 3653,
+      "sha256": "69047a9e00a88e3dfc2cac61054f384c592570375625065b55d6f400e7bdae47"
+    },
+    "projectm-presets/Rovastar - Inner Thoughts (Distant Memories Mix).milk": {
+      "sizeBytes": 7827,
+      "sha256": "da7f3f7ffc27173ed8b02c29987c3cb539542bcf3e70dc3d1c17b5a47c43258e"
+    },
+    "projectm-presets/Idiot - Texture Boxes (Remix).milk": {
+      "sizeBytes": 6637,
+      "sha256": "3471671860bf8fd36ab72f443c9ce40e0d7f22448852ce6fcc3a612f96a7bea3"
+    },
+    "projectm-presets/Rovastar - Solarized Space (Space DNA Mix).milk": {
+      "sizeBytes": 7948,
+      "sha256": "e0ddbce394f874b7ad1123e6651c638651e7cf6b2b676406b0c64c992a6e4faa"
+    },
+    "projectm-presets/Telek - Lost Star (Flash).milk": {
+      "sizeBytes": 2364,
+      "sha256": "260dc3c8d2b0b9a663fbd28b296454b5ddb9db376161cd796649ff6e885a2d1f"
+    },
+    "projectm-presets/Unchained - Perverted Dialect.milk": {
+      "sizeBytes": 2217,
+      "sha256": "8f7899f91e5398c1ec45061d8e0c01c0fe7c6e0c94aecb360125d1fd19b38428"
+    },
+    "projectm-presets/Geiss - Starfish 2.milk": {
+      "sizeBytes": 1264,
+      "sha256": "a587be2c27c11c373dedfcffffbe76a500d49863e9df9bd898a1ac1f37f5bd46"
+    },
+    "projectm-presets/Rovastar - Altars Of Madness.milk": {
+      "sizeBytes": 5250,
+      "sha256": "875fddb5775d8b6cd02029e95bbf43a266faf30d7f7d723c9a3884813f5f1ca0"
+    },
+    "projectm-presets/Telek - Slow Shift Matrix (bb4.5).milk": {
+      "sizeBytes": 1467,
+      "sha256": "683223af9afa937d7db413d726339c672d909c6cc51572a3296d68a9a86cc487"
+    },
+    "projectm-presets/Krash and Fvese - Molten Indecision (Fvese Remix).milk": {
+      "sizeBytes": 4328,
+      "sha256": "b14bb58b50f5a9589855523529cd3f2c6215fc48977748ddbbb89a2c3aa4e292"
+    },
+    "projectm-presets/Geiss - Warp Of Dali 2.milk": {
+      "sizeBytes": 1472,
+      "sha256": "252289288e95935c8e58b44ed9d4734b096146233e4e21040d6a0c115211ed8f"
+    },
+    "projectm-presets/Rovastar - Altars Of Madness (A Million Miles From Earth Mi.milk": {
+      "sizeBytes": 6634,
+      "sha256": "885b2a137e69c560cf384968f82bad074da6fe2e95d83d293c3244edf6ee8faa"
+    },
+    "projectm-presets/Geiss - Serpent.milk": {
+      "sizeBytes": 1696,
+      "sha256": "177ece8efe99bd60119c98a21a5a33b352e4b3ee4404cc7e296e6423b7ed9d28"
+    },
+    "projectm-presets/Fvese - A Blur.milk": {
+      "sizeBytes": 2095,
+      "sha256": "f32256eddd5bc6875d89d392e8503338b1bf43b3cd67d9652bf8df467861f0d6"
+    },
+    "projectm-presets/Rovastar - Harlequin's Dynamic Fractal 2.milk": {
+      "sizeBytes": 4163,
+      "sha256": "c1e02e317e4b2108788060d817b7ed38ff00d69f23c6487b2f5923ef4105a435"
+    },
+    "projectm-presets/Geiss - Bright Fiber Matrix 2.milk": {
+      "sizeBytes": 1978,
+      "sha256": "4d82b5211d3bd2db20a27cfb21b6c7ac4ed17df5520bae6ba5c4a1ce1088a7d7"
+    },
+    "projectm-presets/Geiss - El Cubismo.milk": {
+      "sizeBytes": 1504,
+      "sha256": "b4a315534414e205ec0a5638c5ef6b1f32c1d02ea34257f46795556d6e2b9440"
+    },
+    "projectm-presets/Rovastar - Harlequin's Spirit.milk": {
+      "sizeBytes": 2953,
+      "sha256": "b7b393578900d0850669e2a43988ad597b35314495a60b0dfab154a621f11313"
+    },
+    "projectm-presets/Geiss - Pinch.milk": {
+      "sizeBytes": 1299,
+      "sha256": "1ca72836f3349a551ce7799384ebd72e4aa27078b62a2c59f1805eab6e0afe63"
+    },
+    "projectm-presets/StudioMusic & Unchained - Minor Alteration.milk": {
+      "sizeBytes": 3611,
+      "sha256": "dda1aced4c4f965631290035237c39cf59faf7fd62191dcf9086079f48d88d0f"
+    },
+    "projectm-presets/Rozzor and Rovastar - Altars Of Madness 3 (ooze tweak with .milk": {
+      "sizeBytes": 6441,
+      "sha256": "8b379f704278bbf6d03c266b2f26b7bc41915a4f174735e532652683f72022dd"
+    },
+    "projectm-presets/Krash & Illusion - Spiral Movement.milk": {
+      "sizeBytes": 2908,
+      "sha256": "1268586e3a6176d1ff3ef92d723ffecaae79c6fd62636a0ec922fb8fe6433347"
+    },
+    "projectm-presets/Tux.tga": {
+      "sizeBytes": 271162,
+      "sha256": "26cec53317cff8d122ff94333228d0f492cf5be43f911b547b5968e6474185d1"
+    },
+    "projectm-presets/Rovastar - A Million Miles from Earth (Pathfinder Mix).milk": {
+      "sizeBytes": 1678,
+      "sha256": "796a52df9b7a52d977d781005722e2d10bc52ec5d5d9fd5bd734b481a190e77f"
+    },
+    "projectm-presets/Geiss - Bonfire.milk": {
+      "sizeBytes": 1588,
+      "sha256": "7f37fd4fd7999e66a204712cf1d04450eaaacbb112f63f96536d532ad4d679bc"
+    },
+    "projectm-presets/che - terracarbon stream.milk": {
+      "sizeBytes": 3553,
+      "sha256": "7eb1172126fd3e824572a5b22fdc09d98e56b522a7e96eb1f1fce750d73c2924"
+    },
+    "projectm-presets/Fvese - Stand Still!.milk": {
+      "sizeBytes": 2248,
+      "sha256": "3299cb2a3cfb4f0c95ca2f8ef85edaeef0609c54cd7153d41822ae9e96d5f84a"
+    },
+    "projectm-presets/Idiot & Zylot - Unhealthy Love (Idiot's STDs Mix).milk": {
+      "sizeBytes": 3609,
+      "sha256": "b1ca1452d72fbdf900bd4ce4eb9822fa01e7c71eba0ed96840c84e600e04df54"
+    },
+    "projectm-presets/Rovastar & Geiss - Ice Planet.milk": {
+      "sizeBytes": 1545,
+      "sha256": "9e995666fa7a7f4eb7d7d5d78307474deba4fd64f51bf423ccedeaf5f305daa5"
+    },
+    "projectm-presets/Idiot - What Is.milk": {
+      "sizeBytes": 3154,
+      "sha256": "2883147559be135811aa1a623b708dda6d289e6c930ba0de9fe06e80a6362ee3"
+    },
+    "projectm-presets/Geiss - Solar Flare (Reptile).milk": {
+      "sizeBytes": 1967,
+      "sha256": "11000060976b7ec970712254ba1255141063444a937bc1d7078d8eef2f178396"
+    },
+    "projectm-presets/Rovastar - Altars Of Harlequin's Madness (Dark Disorder Mix.milk": {
+      "sizeBytes": 7843,
+      "sha256": "b18e158e3cc0ca4e5c8c8ece6261714737f161242c1ca3b46e387fb75e24c620"
+    },
+    "projectm-presets/Geiss - Volume Zoom.milk": {
+      "sizeBytes": 1528,
+      "sha256": "812cd1b0d4b03b044349f3dca6cc160743cc8cc927cc4a69d108965f94523526"
+    },
+    "projectm-presets/Illusion & Rovastar - Snowflake Return.milk": {
+      "sizeBytes": 1992,
+      "sha256": "f0a0ce7c4399e76c0cd272d15acee9b82fa5c5436cb39cc64aed7183effda981"
+    },
+    "projectm-presets/Rovastar - The Chaos Of Colours.milk": {
+      "sizeBytes": 6697,
+      "sha256": "ef959d4c98393867396a13f99bf1df010698281c3a7361bf468843cc11b517a7"
+    },
+    "projectm-presets/Geiss - Inkblot.milk": {
+      "sizeBytes": 1300,
+      "sha256": "4fb3e569bab8c684a6ce3babfa098c2bc4c8655cad663b73f29299a0c8b81cd8"
+    },
+    "projectm-presets/Eo.S. - repeater 15 - kaleidoscope b.milk": {
+      "sizeBytes": 20222,
+      "sha256": "a737b238e2fcb03904b90ca71e8862fabfd7543e36b4af1356cc41de9b04af81"
+    },
+    "projectm-presets/Idiot - Madness Within The Void (Remix).milk": {
+      "sizeBytes": 3119,
+      "sha256": "28aedeef557cff8846dba26410c86d0a4e2ea57313c6b6b2a09315f57ff42790"
+    },
+    "projectm-presets/Rovastar & Geiss - Octotrip (MultiTrip Mix).milk": {
+      "sizeBytes": 6441,
+      "sha256": "eb11d0d43cad1f8f1316ac817c1ed911b1630c576c23e9432814e6557b077976"
+    },
+    "projectm-presets/Rovastar & Fvese - Stranger Minds.milk": {
+      "sizeBytes": 1880,
+      "sha256": "c7874e3543bb067f792fbf608d747f9ba261c05737d243128b1c9250ee4ba517"
+    },
+    "projectm-presets/TobiasWolfBoi - The Pit.milk": {
+      "sizeBytes": 1298,
+      "sha256": "a811631d116ade401c269ab232634127207f6158041f38be57795aecb7192304"
+    },
+    "projectm-presets/Rovastar & Geiss - Bipolar 2 (Vectrip Mix).milk": {
+      "sizeBytes": 2932,
+      "sha256": "07ce071bf8601a49d04d77abc03031167ff3e9159ccd5b5e230de58abd2210cc"
+    },
+    "projectm-presets/Telek - Sine Wave.milk": {
+      "sizeBytes": 1810,
+      "sha256": "0f0c3949f228670c5c4121083fe5e90ff3b33a3fe2a763a4200bb06c63eda928"
+    },
+    "projectm-presets/Illusion & Unchained - Re-Enter Homeworld.milk": {
+      "sizeBytes": 3361,
+      "sha256": "2a3d66a33fab2b4f7a71dae3099c798a42e8fa2bedae52f992e20014a1586c40"
+    },
+    "projectm-presets/Zylot and Rovastar - Iouo Stone Morphic Fusion.milk": {
+      "sizeBytes": 1853,
+      "sha256": "61c0a37349f3285f594af25bc0781dd032bf211dfa1b50136ea90b0a3846c327"
+    },
+    "projectm-presets/Eo.S. + Phat - chasers 18 hallway.milk": {
+      "sizeBytes": 18904,
+      "sha256": "1b1b65624e7bc32560a31a7797e9842dcc3def0325c9c9bff1f57132c5b96c64"
+    },
+    "projectm-presets/Idiot & Rovastar - Altars Of Madness 2 (X.42 Mix).milk": {
+      "sizeBytes": 3208,
+      "sha256": "2630a8a6e4951c12d750086c09a209a59608f6f20db93704c339dcc583b2484b"
+    },
+    "projectm-presets/Rovastar - Kalideostars.milk": {
+      "sizeBytes": 6340,
+      "sha256": "0d95c1d0b871d38427961c2dcc269b92bbf57a441804904d7b918e28ba6d0554"
+    },
+    "projectm-presets/Rozzor & Rovastar - Oozing Resistance (Waveform Mod).milk": {
+      "sizeBytes": 2354,
+      "sha256": "a2225a60bce9c4cc3a5c14e6e969149ccdd038bbeaad14180db579afe7ee70d5"
+    },
+    "projectm-presets/Unchained - Goo Kung Fu.milk": {
+      "sizeBytes": 1718,
+      "sha256": "09a960220fe38e3c9eaaf96cdb790d9cc72956e2368499c14113eec351e947f5"
+    },
+    "projectm-presets/Rovastar - Space.milk": {
+      "sizeBytes": 2927,
+      "sha256": "ebd7afbb29b119ccec3ff14d8864e348af90eefc5c866bab49818e61b0896a4c"
+    },
+    "projectm-presets/Geiss - Tube.milk": {
+      "sizeBytes": 1211,
+      "sha256": "46ccc047662cdd9fc836fa680d3b1aa7ca8a4d2cb2d32e6215d4d30c4c64a177"
+    },
+    "projectm-presets/Bmelgren & Krash - Rainbow Orb Peacock (Centred Journey Mix.milk": {
+      "sizeBytes": 1941,
+      "sha256": "f5a5cc853e066fb2600d063fc6bcfb3dc8de98a6ad945c66bd3d8f0c9c1ba7f0"
+    },
+    "projectm-presets/Aderrasi - Bitterfeld (Crystal Border Mix).milk": {
+      "sizeBytes": 2107,
+      "sha256": "375b1ce1a9f51c57766868b5e897cbeff7ec7062ccf1bcac60128931b18677bd"
+    },
+    "projectm-presets/idiot - Some big word I learned.milk": {
+      "sizeBytes": 2424,
+      "sha256": "63af5814603099e3377951d96c7adb5be7eb3ebd48990075301f1957f8bb7124"
+    },
+    "projectm-presets/Rovastar - Chapel Of Ghouls.milk": {
+      "sizeBytes": 8947,
+      "sha256": "2b7f3671e353db1e6518ce3af9120cbef37aa95e00272bb3dbd31c2001c16faf"
+    },
+    "projectm-presets/Krash - War Machine (Shifting Complexity Mix).milk": {
+      "sizeBytes": 2904,
+      "sha256": "6355279e4707c000aee03a84e5261c5c3d3a64cb03687a02b4f2ab448646b9fe"
+    },
+    "projectm-presets/Geiss - Octopus Blue.milk": {
+      "sizeBytes": 1809,
+      "sha256": "38339a947d547843095576a0a0423fa9a7483e90d6405965bb55768f311e97eb"
+    },
+    "projectm-presets/Zylot - Mixing Pot.milk": {
+      "sizeBytes": 1487,
+      "sha256": "0c2bc9bd77da71c22e8e71f69f61d3d5ebbb8cdd48928c93d9698f6e145bf41c"
+    },
+    "projectm-presets/Rovastar - Multiverse Starfield 3.milk": {
+      "sizeBytes": 1613,
+      "sha256": "5eaba71636f88a6bcdbf106e3ca2364602e718874fcb26b18ea080087bbb1cba"
+    },
+    "projectm-presets/Unchained - French Clothing.milk": {
+      "sizeBytes": 2023,
+      "sha256": "778509c35e4286665fd0026a01a0c642a76a47e4b33adbcff9a0672770b4eee4"
+    },
+    "projectm-presets/Geiss - Starfish 1.milk": {
+      "sizeBytes": 1330,
+      "sha256": "ca07c6c7a06244e32cf860267e9b00285252171c74d8c71176de4b62a3dab79a"
+    },
+    "projectm-presets/[Ishan] - Life in the drains.milk": {
+      "sizeBytes": 5622,
+      "sha256": "8eafe8f6c930b7ffa0729595e215772c94e40eb626c49161c9eb9c23766d0049"
+    },
+    "projectm-presets/Krash & Rovastar - Cerebral Demons (Distant Memory Mix).milk": {
+      "sizeBytes": 3528,
+      "sha256": "a08684c5a1c426c79e33f6eb10360710e2033c87e68d038f0ad2f5322b5271a3"
+    },
+    "projectm-presets/Geiss - Symmetry.milk": {
+      "sizeBytes": 1403,
+      "sha256": "05252f88040899b97bcce057c33ecb4d74e041d3a5f6c8d11d86830c739892a1"
+    },
+    "projectm-presets/Krash - Framed Geometry.milk": {
+      "sizeBytes": 12101,
+      "sha256": "1534cda3c59f1e182be7899938baca5e0a7b7e4cc408af1bb8b87980a6b7382e"
+    },
+    "projectm-presets/Unchained - Free to Feel (Valium Remix).milk": {
+      "sizeBytes": 3455,
+      "sha256": "2d405a3f94db121550a4314932f1617cec71d11aee6f8a5255e2098a9ad7c5cf"
+    },
+    "projectm-presets/nil - Singularity in My Oscilloscope.milk": {
+      "sizeBytes": 1257,
+      "sha256": "53fec91823f4227e345ec3022e95ba85b8c656938a1fa55b37dc3c8460197678"
+    },
+    "projectm-presets/Unchained - Jaded Emotion.milk": {
+      "sizeBytes": 2004,
+      "sha256": "b91dbd6fa090d0a83a80f478aea8827ce45bd92b37bac49bd5f8dc82bd56aa8f"
+    },
+    "projectm-presets/Eo.S.+Phat Cool Bug v2 + (Krash's beat detection).milk": {
+      "sizeBytes": 6859,
+      "sha256": "bb69ae2ebfbe8049f7ac628dcc74f56bd92bdfd00ffdec75ab3d33628c7dde4d"
+    },
+    "projectm-presets/Geiss - Descent.milk": {
+      "sizeBytes": 1368,
+      "sha256": "e46cb71e5a709e99d4094f5e8b164a6988abff0a88c6802f28063082adc03c86"
+    },
+    "projectm-presets/Aderrasi - Blender.milk": {
+      "sizeBytes": 1547,
+      "sha256": "e3cd4475b5890dcdac13eb378622ec236c2c2fa948c3b516cbfa95605b3b47b2"
+    },
+    "projectm-presets/Rovastar - Explosive Minds.milk": {
+      "sizeBytes": 1463,
+      "sha256": "7ab39beea30b3627885e68d85d6eb058e277e2c8a6beb9a08a279036cc157a91"
+    },
+    "projectm-presets/Geiss - Diffraction.milk": {
+      "sizeBytes": 1529,
+      "sha256": "c71acfcd10cf3e87f9681771309e11e7b262d6b65b7a2200f8ca07fcbc797fce"
+    },
+    "projectm-presets/Aderrasi - Making Time (Swamp Mix).milk": {
+      "sizeBytes": 2553,
+      "sha256": "a315f6ff23072c3e6ba2d0cd8b2a5bc65eedd01d225fd9bac67ff1a33f2656f2"
+    },
+    "projectm-presets/Geiss & Sperl - Feedback (projectM idle HDR mix).prjm": {
+      "sizeBytes": 7634,
+      "sha256": "4d01dd98f8522a159a1fe5e47c3c70dfaec502ab53f2597426e35f95b92c60e6"
+    },
+    "projectm-presets/Rovastar & Geiss - Dynamic Swirls 3 (Smoke Mix).milk": {
+      "sizeBytes": 3603,
+      "sha256": "e99967284815cf6363f046ae68dc3ab3e400c725a1758a71a44ffa80700e807b"
+    },
+    "projectm-presets/Rovastar & Unchained - Xen Traffic.milk": {
+      "sizeBytes": 4004,
+      "sha256": "939f7541eac78507fd8998a8884854c632a14199f83bfbcdd420e2a7df38bb03"
+    },
+    "projectm-presets/Geiss - Sinews 2.milk": {
+      "sizeBytes": 1837,
+      "sha256": "256d831892e3426c6dc853c6feeae823d9b0161bb176905c8acbe5809fa3be3b"
+    },
+    "projectm-presets/Unchained - Ghostlight Whisper.milk": {
+      "sizeBytes": 3792,
+      "sha256": "2770eb0ca4440f8c16643af3608b0476cfb1efbd03512464705b300d16d0b6dd"
+    },
+    "projectm-presets/Geiss - Three And A Half Kinds Of Amphetamines.milk": {
+      "sizeBytes": 1507,
+      "sha256": "4cce64d83510202da9bc20a6c3ffb145019338dca4b92fcfff50f49a0e089fa9"
+    },
+    "projectm-presets/Fvese - 0 To 60.milk": {
+      "sizeBytes": 2181,
+      "sha256": "ada5293fb770f8e8719112f8c930ac385c678de9cc3e3374caf2c69efcddbcbc"
+    },
+    "projectm-presets/Rovastar - The Shroomery.milk": {
+      "sizeBytes": 14626,
+      "sha256": "94574b2adb89061242b63003cde6111bb21429aa13386fe8643d62fe8c9eddbc"
+    },
+    "projectm-presets/Rovastar & Geiss - Dynamic Swirls 3 (Broken Destiny Mix).milk": {
+      "sizeBytes": 2223,
+      "sha256": "3961613928cbba35df262bbd6cf5ff1b42a88d98e5b2f576022a946e410f5ecd"
+    },
+    "projectm-presets/shifter - escape the worm - Eo.S. + Phat 5362.milk": {
+      "sizeBytes": 13501,
+      "sha256": "1f5c879bac78ddd4724a2cd7de01c1a35cbe86a4c833b470c72cbfc7d2a2b60f"
+    },
+    "projectm-presets/Rovastar & Fvese - Paranormal Static.milk": {
+      "sizeBytes": 2097,
+      "sha256": "19dbbd09cb952ddf47fe2d427cc0debbd29b4ff56e307e7e27fe2a0a3379ddbf"
+    },
+    "projectm-presets/Geiss - Mega Swirl 2.milk": {
+      "sizeBytes": 1357,
+      "sha256": "38a3cc4ce3707f2e98d7e0ccf3a7e71a5dda6fe78746b37cf39661445f915303"
+    },
+    "projectm-presets/Zylot & Mstress - Celebrate.milk": {
+      "sizeBytes": 2272,
+      "sha256": "4616101a256c6cd8726e12c5a5b3c5421ec1ba65c8f2f4515e92cf2442af2635"
+    },
+    "projectm-presets/Geiss - Fiberglass.milk": {
+      "sizeBytes": 1609,
+      "sha256": "6192eb721086881fda40cdd7440edd29ae7ecb9dac2f5d12f3e0383806af6a27"
+    },
+    "projectm-presets/Geiss - Davod The Pod.milk": {
+      "sizeBytes": 1399,
+      "sha256": "9f944a32301714d466c770134fe0cfdbd39bc8edaf1eb96c09e02e336656947a"
+    },
+    "projectm-presets/Geiss - Mega Swirl 3.milk": {
+      "sizeBytes": 1683,
+      "sha256": "6b6a47cdb9ba703a4937d5296ec3a97dc8aec5ca751d4b400017f5b0e140c9e7"
+    },
+    "projectm-presets/Rovastar - Hyperspace (Frozen Rapture Mix).milk": {
+      "sizeBytes": 1712,
+      "sha256": "1294cdec7668c9e0a8c2c2c207de9e068cc1f77339a7c03393fe1afd40b4eb44"
+    },
+    "projectm-presets/Phat+fiShbRaiN+Eo.S_Mandala_Chasers_remix - www.eos4life.com.milk": {
+      "sizeBytes": 13272,
+      "sha256": "94a64d118ad77324d54f2f826d3408e9aaef9ab4b51a41dc9045b28be935b5dd"
+    },
+    "projectm-presets/Rovastar - Dark Ritual (Star Of Destiny Denied Mix).milk": {
+      "sizeBytes": 8079,
+      "sha256": "8a24254c58584b0a3bb4e4f2ef7e60f24b6b1155f254d902ed5d142888ad91a5"
+    },
+    "projectm-presets/Rozzor and Zylot - Associative Order.milk": {
+      "sizeBytes": 5825,
+      "sha256": "2f554e18e434a4879f1956eae6ef8d4e1a0a4fb1d88612c35a802dc00b88b076"
+    },
+    "projectm-presets/Rovastar & Fvese - Dark Subconscious.milk": {
+      "sizeBytes": 1708,
+      "sha256": "ef97e5d2e516fb3fa0824a89e90552b251910aae0e1502c2c9f5236ee92dc137"
+    },
+    "projectm-presets/Rovastar - Lost Souls of the Bermuda Triangle (Darkest Soul.milk": {
+      "sizeBytes": 3478,
+      "sha256": "c167f8b262b9d4f00d66218c1af0dfa849c7b4af770a7a9eb19d70489661968a"
+    },
+    "projectm-presets/Rovastar - Altars Of Madness (Boxfresh Mix).milk": {
+      "sizeBytes": 2339,
+      "sha256": "f3ebe23d2bed2a5b0a490e6d4880720f2207fe9900e9826f7cb92ab4d443fff1"
+    },
+    "projectm-presets/Aderrasi - Ashes Of Air (Remix).milk": {
+      "sizeBytes": 1492,
+      "sha256": "1bebbc4f76ac5a5c5bf92c83e4c4edd344ec769a7aad6f5f6d1e7b5c5c88b7e6"
+    },
+    "projectm-presets/Krash & Rovastar - The Devil Is In The Details.milk": {
+      "sizeBytes": 3034,
+      "sha256": "27f84d50a14532c25da3fb9e675b6de2708e0612381432155aadfc1b3ccbaf9f"
+    },
+    "projectm-presets/Unchained - In Memory Of Peg.milk": {
+      "sizeBytes": 4101,
+      "sha256": "5d59b5581a50ad6543316e0c22a21018bcfa2424a4fd4a318533cf51577e02bd"
+    },
+    "projectm-presets/Rovastar & Krash - Cerebral Demons.milk": {
+      "sizeBytes": 3351,
+      "sha256": "1d0c51fa804ebadce5a6aa1eefc5df049436f1156ac37842be6d20b1791dd92a"
+    },
+    "projectm-presets/Geiss - Octopus Fat and Ever Changing.milk": {
+      "sizeBytes": 1974,
+      "sha256": "a8278ad7ff8e3eba7ab52a22fefae00c0f5970fb45a3aa3e5214a307fccac6a9"
+    },
+    "projectm-presets/Rovastar - Oozing Resistance.milk": {
+      "sizeBytes": 1789,
+      "sha256": "6b9a7b87fd8a6d0f6055cc1d73826d59dcca734caf2d8e5930aeb6099c13ba5b"
+    },
+    "projectm-presets/Geiss - Dynamic Swirls 1.milk": {
+      "sizeBytes": 1980,
+      "sha256": "9793cf41b5ed046de7444edd37a91b9422a108726feb17fc16de50825b7affa5"
+    },
+    "projectm-presets/Unchained - Making a Science of It 4.milk": {
+      "sizeBytes": 3551,
+      "sha256": "936021e4c21520966ab0e334eee53fb545ff46861ff0dc8ede43fe2fc7493eab"
+    },
+    "projectm-presets/Rovastar - Decreasing Dreams (Extended Movement Mix).milk": {
+      "sizeBytes": 6292,
+      "sha256": "e0c6e30fa314bd64af1977683f7efdd91cae9d6dd873038bed3cafd0152412a4"
+    },
+    "projectm-presets/Unchained - ReAwoke.milk": {
+      "sizeBytes": 8019,
+      "sha256": "57e3484211f9d394afd6fb086c83d7152b7520c97170544c58f9d7f7531ceeb1"
+    },
+    "projectm-presets/Zylot - The Inner Workings of my New Computer.milk": {
+      "sizeBytes": 1447,
+      "sha256": "24b960c49d958e2869dfdac70f9c41f25d0132014eda4d5ebb47143a3abe195f"
+    },
+    "projectm-presets/Che - Burning Hus.milk": {
+      "sizeBytes": 2800,
+      "sha256": "c2c7df1c38bd23731c837c6aa1ad01bb970c81ce9bbc43e704db832f95418bdc"
+    },
+    "projectm-presets/Rovastar & Fvese - Deadly Flower.milk": {
+      "sizeBytes": 1981,
+      "sha256": "5473d51ad328727213c38b0d838236d192239fb203b476e5c4ccdf53ed547883"
+    },
+    "projectm-presets/Rovastar & Rocke - Answer.42 (Trippy S. Mix).milk": {
+      "sizeBytes": 1590,
+      "sha256": "8d217822743e44603d2860ef811cd4e14afb006be549ed0a5e10ace2fd28deed"
+    },
+    "projectm-presets/Geiss - Surface.milk": {
+      "sizeBytes": 1589,
+      "sha256": "be528fc1c38c584b7ae831da6508dad48222ce4e0c409a78edb3d0a31d274dfd"
+    },
+    "projectm-presets/nil - Can't Stop the Blithering.milk": {
+      "sizeBytes": 1383,
+      "sha256": "fbaeb1b312a5adbce99903ae8cd8da36dab50fe3dcd172a119c01f2a5815ea60"
+    },
+    "projectm-presets/Geiss - Bass Zoom.milk": {
+      "sizeBytes": 1566,
+      "sha256": "4770e9513b703bef82bc38375c18403f2a69292a36a0a13c7f72a4c053a4bf80"
+    },
+    "projectm-presets/Geiss - Swirlie 3.milk": {
+      "sizeBytes": 2053,
+      "sha256": "a2c17d0e5100059795f95e801d04e62d1f9af85d5aff0523de0f83701715a93d"
+    },
+    "projectm-presets/Aderrasi - Dark Matter (Converse Mix).milk": {
+      "sizeBytes": 2139,
+      "sha256": "ffd9156d3e802fe72cdbad32400b99d68874ae1beffebe5a496fc1e34169eecc"
+    },
+    "projectm-presets/Rovastar - Frozen Rapture .milk": {
+      "sizeBytes": 7659,
+      "sha256": "31cd889a2d5ab5d6c8e8074667dda4797cc615cb3d85c4a2931c0c7b45c8a7b6"
+    },
+    "projectm-presets/project.tga": {
+      "sizeBytes": 66605,
+      "sha256": "b16ba4b9874dba88885fb23795cf4cf260b0a8f0b36c52951708d358c8d51cd5"
+    },
+    "projectm-presets/Unchained - Beat Demo 2.0.milk": {
+      "sizeBytes": 3669,
+      "sha256": "09eb84e9b97806d82b8c77dda26b3c9a621b8b6778e062a6df330d1441a8025d"
+    },
+    "projectm-presets/Rovastar - VooV's Movement.milk": {
+      "sizeBytes": 5022,
+      "sha256": "51f1cb0b9ad1f4350d54edac8c7647e3efd310220c0778778bbf099b4f65c47d"
+    },
+    "projectm-presets/Rovastar - Harlequin's Dynamic Fractal (Dual Spiral Mix ).milk": {
+      "sizeBytes": 2858,
+      "sha256": "1ad830ba93c64c3cd9971bf0afde41b12cea0ef9132ae4f42cece5b6d1e9aa7d"
+    },
+    "projectm-presets/Geiss - Spacedust.milk": {
+      "sizeBytes": 1555,
+      "sha256": "a88799ab2bea085ec32e6ea1a94977bd74cca358ad3acc7c8023f503d0b4da0e"
+    },
+    "projectm-presets/Krash - Dynamic Borders 1.milk": {
+      "sizeBytes": 2494,
+      "sha256": "9d42abaf247dde70c0fa6586abc6b9a091bab30aa1523c870d7f3a06e03d5fb0"
+    },
+    "projectm-presets/Geiss - Toy.milk": {
+      "sizeBytes": 1765,
+      "sha256": "3e0b21aa97ccb0735c44e13ebb3e7d1da358f277df86330bebd9a5ae99d48fe4"
+    },
+    "projectm-presets/Rovastar - Mosaics Of Ages.milk": {
+      "sizeBytes": 3102,
+      "sha256": "03d3aa5f9affa9b72cc9b25ee5c88ee55115d2d8b8f153c24abc43f4bffcaa29"
+    },
+    "projectm-presets/CrystalHigh - mad ravetriping.milk": {
+      "sizeBytes": 2698,
+      "sha256": "3923bd0eae83fb26869fc875dfc2d56d7a10ecc5931d6a030f856d1dcc1766d8"
+    },
+    "projectm-presets/Rovastar - Magic Carpet.milk": {
+      "sizeBytes": 1573,
+      "sha256": "6121880960ee076e5b7ee8928eda5602f4e3246dcbad912f10777e50c8300d53"
+    },
+    "projectm-presets/Zylot - Puddle Of Music.milk": {
+      "sizeBytes": 2324,
+      "sha256": "588589fa6123ec39ca37c5c146771aeb9185decc6cd4058ce8ba663df03e4e03"
+    },
+    "projectm-presets/Geiss - Sunsets.milk": {
+      "sizeBytes": 1613,
+      "sha256": "a913856118845e220933279a86d28184a5945f6d63b074ee1dfba881915de0eb"
+    },
+    "projectm-presets/Krash - Digital Flame.milk": {
+      "sizeBytes": 1934,
+      "sha256": "dc5055c7960f82ab7d48390caf89b735519fffe51acf1b48527da03e90e8067a"
+    },
+    "projectm-presets/Aderrasi - Potion of Spirits.milk": {
+      "sizeBytes": 6179,
+      "sha256": "e4f67540ac63e5129f46d63df5bd94d2a4ecce5bbae1b78f320782cc6257b4d2"
+    },
+    "projectm-presets/illusion & studio music - charged bliss.milk": {
+      "sizeBytes": 2160,
+      "sha256": "a041b74a1a4cedf531abb1f53c3e24683bb1c4ddf8038cf55242e8915c931f07"
+    },
+    "projectm-presets/Aderrasi - Antidote (Aqualung Mix).milk": {
+      "sizeBytes": 2445,
+      "sha256": "08c64309c964be4399fb53c18f9ecb4c8a49bc8090980660a9d1982bcd0139fc"
+    },
+    "projectm-presets/idiot - Sinful Code (unchained style).milk": {
+      "sizeBytes": 3028,
+      "sha256": "1d9bdf084164ef1b2c1fa4e5bd013f2e5ef01ec1874e3f4ffa6ad5b849afd5d8"
+    },
+    "projectm-presets/TEcHNO and SandStorm - Psychodelic Highway.milk": {
+      "sizeBytes": 1780,
+      "sha256": "429d0c641272a101baed494b0537f78117929d7aa3e5c3fd5585d3e7db584ec2"
+    },
+    "projectm-presets/Geiss - Corpus Callosum.milk": {
+      "sizeBytes": 1094,
+      "sha256": "ebc0917834d75ddd536271a6427be0502696f5b2669e890d7acb4c124facbd7d"
+    },
+    "projectm-presets/Rovastar & StudioMusic - Twisted Spider Web.milk": {
+      "sizeBytes": 1795,
+      "sha256": "9886a2eb37b09e48a188cac96848ab42114fba2a8960bee0cd05c8685887aea0"
+    },
+    "projectm-presets/Geiss - Space Voyage.milk": {
+      "sizeBytes": 1459,
+      "sha256": "bc01d3f3491191443b46c6ad062defeaec20eb9ca7ee2bac5363602e11a7d758"
+    },
+    "projectm-presets/Zylot & Aderrasi - Oceanic Bassograph (New Jersey Shore Mix.milk": {
+      "sizeBytes": 1702,
+      "sha256": "548b67746c4e23ca8edf0c02bd6d2be2a97344b43a5007748251d52fcc5447ee"
+    },
+    "projectm-presets/Geiss - Octopus.milk": {
+      "sizeBytes": 1793,
+      "sha256": "32f30572739a78af3bfda8c7d392520455b1439938544e3b05e6f7a913c92957"
+    },
+    "projectm-presets/Geiss - Eddies 1.milk": {
+      "sizeBytes": 1980,
+      "sha256": "1e19ddb5879dfcc172c6b5a97a0c1621e9f58e4693fdeb92115e33a99d083371"
+    },
+    "projectm-presets/Geiss - Supernova 2.milk": {
+      "sizeBytes": 1975,
+      "sha256": "5a15af2b8842bfce3520e52936f66a08aa5efb226720efeecf069dd3f09830cc"
+    },
+    "projectm-presets/Unchained - Painful Plasma (Multi-Wave Mirrored Rage) -- Ro.milk": {
+      "sizeBytes": 6862,
+      "sha256": "516c2ed4a0c27baaca0802d906c1289a099270c6121f5cee7e376100d9e05def"
+    },
+    "projectm-presets/Krash & Rovastar - Altars Of Madness (Mad Ocean Mix).milk": {
+      "sizeBytes": 2843,
+      "sha256": "f9301867a48d32574a14e71d64dac84779edd686322148484f0bc1c8ccb49886"
+    },
+    "projectm-presets/Geiss - Supernova 1.milk": {
+      "sizeBytes": 2111,
+      "sha256": "c5d210041d7f8d8e2b841aca2569a4b230c13bb3efeb1811775d7c1ef05c8609"
+    },
+    "projectm-presets/StudioMusic - Harmonic Bliss (elated mix).milk": {
+      "sizeBytes": 3181,
+      "sha256": "54dbbc7381d1aa29ccd09f926b5d40e2be1c1c6e5bec3e0b326d1f79504b05fe"
+    },
+    "projectm-presets/Aderrasi - Brakefreak.milk": {
+      "sizeBytes": 2095,
+      "sha256": "a20c90daf3607e2036fb351f8d515187a5a8e63dc26f3bf93a5ed0cd8d2cdc70"
+    },
+    "projectm-presets/Rovastar - Space (Twisted Dimension Mix).milk": {
+      "sizeBytes": 3168,
+      "sha256": "dbc55cf532cecc2ff6fce7378256119506db54431643df9035e3dbe1eecb8d3f"
+    },
+    "projectm-presets/Rovastar - Hyperspace (Hyper Speed Mix).milk": {
+      "sizeBytes": 1679,
+      "sha256": "eb1b0b47c13782aa86c4a1150232ac80df09a90544a9a8ed2f54e046ac599bef"
+    },
+    "projectm-presets/Rovastar & Rocke - Headspin.milk": {
+      "sizeBytes": 2021,
+      "sha256": "cfe51b8f18d0a45130567699938654dcdba53d1d71ea03a6dad1c112cf09a6c9"
+    },
+    "projectm-presets/StudioMusic & Unchained - So Much Love.milk": {
+      "sizeBytes": 10222,
+      "sha256": "22ac4b343a6eb546b964afdc238dd4926f4a884903d833fb08aad27afcc96c04"
+    },
+    "projectm-presets/Che - Watch & Fly.milk": {
+      "sizeBytes": 3562,
+      "sha256": "80d9c17604374a176ee71bc7b00480e878bd073d9884000e5b1c2e0465fd245a"
+    },
+    "projectm-presets/Unchained & Rovastar - Wormhole Pillars (Hall of Shadows mi.milk": {
+      "sizeBytes": 2024,
+      "sha256": "e1258fd48d49bf76fdffbd91743322858e04f7fd306f474c8024e77697b388ae"
+    },
+    "projectm-presets/Rovastar - Harlequin's Dynamic Fractal 1.milk": {
+      "sizeBytes": 4309,
+      "sha256": "ae4f07f75f09d6ca50db8ffbcd17369593e3a0833697c55657e9f50ffccd80a5"
+    },
+    "projectm-presets/Geiss - Demonic Distortion.milk": {
+      "sizeBytes": 1705,
+      "sha256": "f8be2bdc1b74b32787628eff59e0d4cb634d75c6eedb46347d99d2223de8cf40"
+    },
+    "projectm-presets/Rovastar and Krash - Hallucinogenic Pyramids (Extra Beat Ti.milk": {
+      "sizeBytes": 2673,
+      "sha256": "db5466da2c9fb6c591f55170926bebe71cf93aedfc3700d0273c278f4eb9e9a6"
+    },
+    "projectm-presets/Unchained & Rovastar - Slow Solstice.milk": {
+      "sizeBytes": 3543,
+      "sha256": "42716b8b584a3a2325e2f6b093ab81602003245d835c15d106750e3dbc38d8e1"
+    },
+    "projectm-presets/Fvese & Idiot24-7 - Rearview Mirror.milk": {
+      "sizeBytes": 1590,
+      "sha256": "b2c4dc4b866e0bb0c6a7fb54fedcb095038c2da2f5940f20b141665e801bb83b"
+    },
+    "projectm-presets/Rovastar - Multiverse Starfield 1.milk": {
+      "sizeBytes": 1411,
+      "sha256": "8cc7e52d2c058df5d8153165831ce81072f05d0c3f49cb6369c57a0e0688858c"
+    },
+    "projectm-presets/Zylot - Waves Of Blood.milk": {
+      "sizeBytes": 1462,
+      "sha256": "74da8252143f0c788d193a44e395e1f3002cef68d9fcf13036b81e00af11d78a"
+    },
+    "projectm-presets/TobiasWolfBoi - Cataract.milk": {
+      "sizeBytes": 1340,
+      "sha256": "54776a35b1cdb22bf1841613057f6a8a23e51845767855840a444340fd1ddede"
+    },
+    "projectm-presets/Geiss - Oldskool Mellowstyle.milk": {
+      "sizeBytes": 1608,
+      "sha256": "28bb25e9659d5b661a8787b11e79321446bc5d240db06b2fd714138fc670edba"
+    },
+    "projectm-presets/Geiss & Rovastar - Julia Fractal (Vectrip Mix).milk": {
+      "sizeBytes": 3708,
+      "sha256": "70c0e8e8fa0dd611432b1b52e95bdd705a3d00698068bfd8c4a1637ac557df5a"
+    },
+    "projectm-presets/Rovastar - Harlequin's Delight (Endless Tunnel Mix).milk": {
+      "sizeBytes": 2776,
+      "sha256": "8e796dd35ea9533142de2fbd36180eb843b91fccd5e603b6a9970d4914f517c8"
+    },
+    "projectm-presets/Geiss - Calligraphy.milk": {
+      "sizeBytes": 1430,
+      "sha256": "d4bd9fe4bc6e6181f14661268a67129ef2cec82b29dd35e4ba735c11ee894c42"
+    },
+    "projectm-presets/baked - mushroom rainbows[2].milk": {
+      "sizeBytes": 9242,
+      "sha256": "8c9fe46a83f39c8eb39a54a1436409f95e7b2168d202db1d8ed71336a3bf053c"
+    },
+    "projectm-presets/Aderrasi - Circlefacade.milk": {
+      "sizeBytes": 1629,
+      "sha256": "0491063db0cc473364d236963e3b6388138354806bcdeb090278110ed1bc6a9a"
+    },
+    "projectm-presets/Unchained - Invariant Under Rigorous Motions.milk": {
+      "sizeBytes": 3182,
+      "sha256": "163711f9f71cb5961655e8fa5f9fc1cca6fd2c807ce3b97a628b51505eff58f1"
+    },
+    "projectm-presets/Unchained - Beat Demo 1.0.milk": {
+      "sizeBytes": 3286,
+      "sha256": "b3545d3181b20dfa369a11c5ce520f7de109fba2bebb5db9af3c9296c8a488b7"
+    },
+    "projectm-presets/Geiss - Solar Flare (Blue).milk": {
+      "sizeBytes": 1801,
+      "sha256": "222974a7043d43bb4f40bda2f2face52a1c90a0c9de2113abbd29cf3cc2fae0b"
+    },
+    "projectm-presets/Aderrasi - Flowing Form.milk": {
+      "sizeBytes": 1819,
+      "sha256": "b230f65594dd1f1579c4bbdab4a9998d68ef2a961e65bb6db1212df5a6732a34"
+    },
+    "projectm-presets/Aderrasi - Airhandler (Menagerie Mix).milk": {
+      "sizeBytes": 1862,
+      "sha256": "2589b02182b19e6d4e289cbee825a7eb25c51c004158248ca992f80306f4d24a"
+    },
+    "projectm-presets/Zylot - Visionarie (geiss aspect ratio fix).milk": {
+      "sizeBytes": 5268,
+      "sha256": "c094a00979674e5e53dff5ce0f5525f701aef278792f5418dbb075712777b37d"
+    },
+    "projectm-presets/Fvese - Lifesavor Anyone.milk": {
+      "sizeBytes": 1256,
+      "sha256": "57b848f2e16a4858eb728bc56cb3bc1026ad9cdf3bbe9eb3a00da83c060c3d64"
+    },
+    "projectm-presets/Geiss - Swirl 1.milk": {
+      "sizeBytes": 1931,
+      "sha256": "1344df282f76dd452c6a49b69a48df1ae345783d15c3f16023b056162d27ba26"
+    },
+    "projectm-presets/Telek - Slow Thing (Spiderman Mix).milk": {
+      "sizeBytes": 1919,
+      "sha256": "5979d01f95e56abac58fd6e0fc0bdf0447c3e2767a4bb56a5b8c1a82da2dc10f"
+    },
+    "projectm-presets/Eo.S. - glowsticks v2 05 and proton lights (+Krash's beat code) _Phat_remix02b.milk": {
+      "sizeBytes": 22046,
+      "sha256": "27c653f6f41baa16482feef37db91d43a2f4415b2861118815f3d63210dec246"
+    },
+    "projectm-presets/Geiss - Space Voyage (High-Warp).milk": {
+      "sizeBytes": 1445,
+      "sha256": "7d84e7f56a797f6b52e856c7a5238f1c387a99533d506d8c64a14dccd9fdbe2d"
+    },
+    "projectm-presets/Rovastar - Cosmic Echoes 1.milk": {
+      "sizeBytes": 2075,
+      "sha256": "1fea1c40a70b6fd3fcedef85a96144afa79673b8ff9e3e8dd3325dcefdcc975e"
+    },
+    "projectm-presets/Illusion - Heavenly Eye.milk": {
+      "sizeBytes": 1380,
+      "sha256": "50f17df2c54fbca4d0ce946a2c40bd23a32f23259167f4cf2321108a7bd2e158"
+    },
+    "projectm-presets/Unchained - Non-Professional Music Analyzer.milk": {
+      "sizeBytes": 3577,
+      "sha256": "b7cf983e9381c230a797a7984fbca112b0db357b749cc30905bae8a580e3c5cc"
+    },
+    "projectm-presets/Rovastar - Fractopia (Galaxy Swirl Mix).milk": {
+      "sizeBytes": 6300,
+      "sha256": "6e4ad9a9f70742481e1201e2d17667ad56022ecf1d4f20e733cac44e8b049f9a"
+    },
+    "projectm-presets/StudioMusic - Twisted Galaxy.milk": {
+      "sizeBytes": 1381,
+      "sha256": "31ab833f87773cf815caaafa47daf7b33a86557e1d56ab71c9604c6177b20311"
+    },
+    "projectm-presets/Bmelgren - Pentultimate Nerual Slipstream (Tweak 2).milk": {
+      "sizeBytes": 1330,
+      "sha256": "8c70290ea80beae3949414d8b1f9c3d4d1e8fad3fc75ad4f5932ece0dea41c1f"
+    },
+    "projectm-presets/Krash & Illusion - Indecisive Mosaic.milk": {
+      "sizeBytes": 2762,
+      "sha256": "1677c15d54292c59874a10b94f3de5bad5df40a93d3416e77477ec753de9475c"
+    },
+    "projectm-presets/Illusion & Unchained - Invade My Mind.milk": {
+      "sizeBytes": 3994,
+      "sha256": "33e859a47acb3ce18d58f6bf6a1ea0aa6f9cf2e1f0e29342c28d1bf3211ca4ec"
+    },
+    "projectm-presets/Zylot - Wisps.milk": {
+      "sizeBytes": 13704,
+      "sha256": "6005d9889cf8fe792ba277e68f717e6720ba4a6baac85d0d28d249e16e795335"
+    },
+    "projectm-presets/Rovastar & Geiss - Dynamic Swirls 3 (Poltergiest Mix).milk": {
+      "sizeBytes": 3571,
+      "sha256": "41d4d37baae34a4e9b25bf6dec37c41a56faff55d0dbbe59b46689f5fd4127fa"
+    },
+    "projectm-presets/Unchained - Picture Of Exile.milk": {
+      "sizeBytes": 4186,
+      "sha256": "bb689a6ae1a9ce9025a7d0745b303cdd87f27d0a16a867c57d1638e88b8a83f7"
+    },
+    "projectm-presets/Geiss - Bass Kaleidosphere.milk": {
+      "sizeBytes": 1399,
+      "sha256": "d9b247ee9ba767117364bead863704419883fd5e6d7b7b32c92d644eb05415b8"
+    },
+    "projectm-presets/Idiot - Tentacle Dreams (Remix).milk": {
+      "sizeBytes": 3289,
+      "sha256": "4d73b41f3fa3662a3f9ade5a95c824b146460bda688b4a0103c225b91dc6f1ce"
+    },
+    "projectm-presets/Rovastar & Unchained - Voodoo Chess Magnet (Everglow Mix).milk": {
+      "sizeBytes": 3332,
+      "sha256": "d8cfc1d58f860dc0bab7a8d381a617282444b0fa428108d56a43ecf91954ee05"
+    },
+    "projectm-presets/Aderrasi - Songflower (Moss Posy).milk": {
+      "sizeBytes": 6483,
+      "sha256": "de587935101f0989f410f08c2c3cca31f8c82a1c9ced4a8cec22e84a1180942c"
+    },
+    "projectm-presets/Fvese - New meetings.milk": {
+      "sizeBytes": 2568,
+      "sha256": "98dfbd625b1384712e44769e1f33a15e004ad424b55621598124dfc0a4d5eb07"
+    },
+    "projectm-presets/Rovastar - Fractopia (Upspoken Mix).milk": {
+      "sizeBytes": 7843,
+      "sha256": "95fc5798c3e72bbb9ce3469b85e13782bd09926580c889a1f11507fac9de696e"
+    },
+    "projectm-presets/Rovastar & Unchained - Ambrosia Mystic (Dark Heart Mix).milk": {
+      "sizeBytes": 1565,
+      "sha256": "a9a459bbd89b932fa8d040e0fbcd1cef29db589903df4ebb9e9f600e81852c06"
+    },
+    "projectm-presets/Rovastar and Unchained - Life After Pie (Remix).milk": {
+      "sizeBytes": 2278,
+      "sha256": "d89c6b667c669108861fdbf373d7c37e822981cd4ed871ebf088659434d20955"
+    },
+    "projectm-presets/Illusion & Rovastar - Clouded Bottle.milk": {
+      "sizeBytes": 2102,
+      "sha256": "9c62fae2e7b5389444c74c30baeadfa2d84ceb98eeae44fc37960461e16c4fb2"
+    },
+    "projectm-presets/Bmelgren & Krash - Rainbow Orb Peacock (Lonely Signal Gone .milk": {
+      "sizeBytes": 1818,
+      "sha256": "60525bbd4d01e1958387891711cf79a118e108b993b371072188c64fc8831834"
+    },
+    "projectm-presets/Unchained - Resistance.milk": {
+      "sizeBytes": 3712,
+      "sha256": "b6d9dfc8e1603067ce2242cb275c96edeb553d16a213a67b8bbbab14a7d6628f"
+    },
+    "projectm-presets/Rovastar - The Chaos Of Colours (Drifting Mix).milk": {
+      "sizeBytes": 6744,
+      "sha256": "987570f7040ef5ce70fcd43bb016d9af731e9ce056e0a1bb40d03164262e4eca"
+    },
+    "projectm-presets/Rovastar - Starquake (Sunquake Mix).milk": {
+      "sizeBytes": 1518,
+      "sha256": "6fb26b5aae9fa66ad8e2dcc644992721eb1a7c70eebf805beb20bfe3d5a679a3"
+    },
+    "projectm-presets/Geiss - Hyperion.milk": {
+      "sizeBytes": 1561,
+      "sha256": "332c2bd3e5406488b723395d07db6e9fcd6e715b4444b96fb42344dc3ce485ef"
+    },
+    "projectm-presets/Geiss - Digital Smoke.milk": {
+      "sizeBytes": 1473,
+      "sha256": "4178ed8264fb9af8b8a8d8dba3393088c47517457fc0cdd271601ca92013e8e1"
+    },
+    "projectm-presets/Rovastar - Omnipresence Resurrection.milk": {
+      "sizeBytes": 2674,
+      "sha256": "0725b9a04618291533a0697b4355e633abed9122db06c8e650d2ae065c8e5ccf"
+    },
+    "projectm-presets/Krash - Windowframe To Mega Swirl 2.milk": {
+      "sizeBytes": 2464,
+      "sha256": "96c636f3264148b0d2f393b7e37c0e886e484c7778904a7679e6a21d8b487011"
+    },
+    "projectm-presets/Eo.S. - heater core C_Phat's_on route_mix+beam.milk": {
+      "sizeBytes": 14274,
+      "sha256": "912e5badc291539950ea7b1316f58297b268e0577dc15f64abbd8a9bcff0bb18"
+    },
+    "projectm-presets/Geiss - Tokamak.milk": {
+      "sizeBytes": 1669,
+      "sha256": "0e5ae634f299985a393883397e9b5c514435397e19c4fff8e28af619b5cbedfe"
+    },
+    "projectm-presets/Rozzor and che - Inside the House of nil.milk": {
+      "sizeBytes": 2391,
+      "sha256": "5d47a7a9a1118701b252468a1033334ddf227eaf4b0c015f615781cfa037ec16"
+    },
+    "projectm-presets/Fvese - Window Reflection 6.milk": {
+      "sizeBytes": 2432,
+      "sha256": "3ed821e6429636ab9e7d3b3d89e4af6a7fddd41faaa38429d2f3cb405165ccc4"
+    },
+    "projectm-presets/StudioMusic Aderrasi & nil - LA movement (Intellectual Sens.milk": {
+      "sizeBytes": 2802,
+      "sha256": "425aba55fbbcdfc4ebfe89375629db5b9476a4b408a2d620c34bb992e0a19aab"
+    },
+    "projectm-presets/Unchained & Rovastar - For The Seagull.milk": {
+      "sizeBytes": 2876,
+      "sha256": "373b2ce258d3ef51ee8b7fcb83a89ea44a285b2e2468c69509364c39fd55a5cd"
+    },
+    "projectm-presets/Rovastar - Pandora's Volcano.milk": {
+      "sizeBytes": 1358,
+      "sha256": "af751081ab05c89949eeb6d900d9b75f27ee7ee44852ec5b58050016648d7d0c"
+    },
+    "projectm-presets/Aderrasi - Antique Abyss.milk": {
+      "sizeBytes": 2144,
+      "sha256": "873b9f70deb36346ffe562ce3a07cd671df65a5cb40ca98c54eb419468f4b86b"
+    },
+    "projectm-presets/Rovastar & StudioMusic - More Cherished Desires.milk": {
+      "sizeBytes": 1463,
+      "sha256": "77bb05e13ff8e8555591025dbb156401653fcb30ef0c90e91d19743aa741f933"
+    },
+    "projectm-presets/Rovastar & Unchained - Oddball World.milk": {
+      "sizeBytes": 2500,
+      "sha256": "e8e2b2a553f682a03c1f4d6d141cd4ec6db0b12bad21115f85df99cbba2b3e6b"
+    },
+    "projectm-presets/Geiss - Warp Of Dali Bright.milk": {
+      "sizeBytes": 1567,
+      "sha256": "13b270027f4101e66c39102bb9901f4284cf94a5aaa0e26d6b05c9f52f3cb533"
+    },
+    "projectm-presets/Zylot - String.milk": {
+      "sizeBytes": 7935,
+      "sha256": "c308c906718b0b448ab6e870773b35f65eff682f019050b7803b6d78b00053d7"
+    },
+    "projectm-presets/Krash & Rovastar - Cerebral Demons - Phat + Eo.S. hall of ghouls Remix.milk": {
+      "sizeBytes": 11016,
+      "sha256": "99a9c28397643e27bd1b21788d33fd18ba2c96d34a403ec8e8a272a391f3bda8"
+    },
+    "projectm-presets/Geiss - Hovering.milk": {
+      "sizeBytes": 1541,
+      "sha256": "3235560f444a852ed7900c719f9769a9789c17c026fb400de61fb15aa3e3c5b4"
+    },
+    "projectm-presets/Geiss - Tornado.milk": {
+      "sizeBytes": 1324,
+      "sha256": "53545a9f91c76d5c5aeac76153462fbed78a69650fd56e936b41280ed546ca58"
+    },
+    "projectm-presets/Unchained - Housed In A Childish Mind.milk": {
+      "sizeBytes": 4530,
+      "sha256": "634ee96858547a4b24b587e2662f61c85fe254bea19d3a79165a43058e08a1d2"
+    },
+    "projectm-presets/Unchained - Bad Karma Oddnezz Style.milk": {
+      "sizeBytes": 3262,
+      "sha256": "51e7073f3f68f00b836a655f2b9f3a37816176cac0686781a25f9e66a0cf0dc3"
+    },
+    "projectm-presets/Rovastar - Inner Thoughts (Strange Cargo Mix).milk": {
+      "sizeBytes": 7913,
+      "sha256": "1955ea2e0c7fd73b07e8a128f0a869eb566ab87a4aa3022acc2d1ef0a060d08f"
+    },
+    "projectm-presets/Studio Music - Cherished Desires.milk": {
+      "sizeBytes": 1457,
+      "sha256": "ba9538d89eadc190e210a2b97d881f82021933623125efe8e2b032585eaa23f6"
+    },
+    "projectm-presets/Unchained - Working the Grid.milk": {
+      "sizeBytes": 4331,
+      "sha256": "c73641577d2f98e0ee825333de883587a60ac2a884376762c927a53166c5e374"
+    },
+    "projectm-presets/Idiot - Cortex (Spiritual Visions Mix).milk": {
+      "sizeBytes": 2795,
+      "sha256": "bbb939127589a7f8ae9e11c127460c38b0274458518fe8941480af59aa5ec575"
+    },
+    "projectm-presets/Geiss - Cycloid 1.milk": {
+      "sizeBytes": 1528,
+      "sha256": "d79a7d65f0d9e1a92ae78d67cb64d784f4dda8b5bd8bb729c4850aa58902c7de"
+    },
+    "projectm-presets/Rovastar - A Million Miles from Earth.milk": {
+      "sizeBytes": 1727,
+      "sha256": "f98915b051a3d9b97172e55a9112376660349c62c81bccc0fe7b9d8246819eb2"
+    },
+    "projectm-presets/Rovastar & Zylot - Passion Flower.milk": {
+      "sizeBytes": 1515,
+      "sha256": "417c92392f32bb850b1c2ca6432c9ad026fa1885a283003c6613704efc035790"
+    },
+    "projectm-presets/Illusion - Figure Eight.milk": {
+      "sizeBytes": 1944,
+      "sha256": "dc8d877b17884125a530e36cb040aeb891e196a507190cebf65c2f5cdc3ce4bc"
+    },
+    "projectm-presets/Unchained - Subjective Experience Of The Manifold.milk": {
+      "sizeBytes": 4116,
+      "sha256": "67290d8009e4facbad97d75f2443e0db20371b8e25c2f3c1156c76f1a212189c"
+    },
+    "projectm-presets/Telek EMPR - Scanner - Trust me I've got a Melways.milk": {
+      "sizeBytes": 6132,
+      "sha256": "b035b033c194b192c670bf4f9fc66073f5171e157f22e416b60827dfb876b7a7"
+    },
+    "projectm-presets/Geiss - Bipolar 1.milk": {
+      "sizeBytes": 1955,
+      "sha256": "c75a0722f7edfecbe26a049c570423e16bc95b859e81818a0b5a764abbb2ffda"
+    },
+    "projectm-presets/Geiss - Sinews 1.milk": {
+      "sizeBytes": 1396,
+      "sha256": "0dacd902dcbda3c3726eb00900757ee7b9db4ae3e776d84664b628eea16fbe12"
+    },
+    "projectm-presets/Geiss - Quasilinear Submanifolds.milk": {
+      "sizeBytes": 1319,
+      "sha256": "b5f327e5e2acfedb720aeb97726fdefb8aff9eeec75e6df36655833520222809"
+    },
+    "projectm-presets/Rovastar - Halcyon Dreams 3.milk": {
+      "sizeBytes": 1353,
+      "sha256": "b201cb9aab4df987048f767457c4fd2aaf82aa1c4902eafbbadf8bc27ad7ea9d"
+    },
+    "projectm-presets/Rovastar - Solarized Space.milk": {
+      "sizeBytes": 3763,
+      "sha256": "5084f3b4f0e0282f6461f65337530f65e812d1e1cd4d76d2e7f919ccb7592f08"
+    },
+    "projectm-presets/Aderrasi - Chromatic Abyss (The Other Side).milk": {
+      "sizeBytes": 1518,
+      "sha256": "706bfb0887a8c32bffb9128481b93b784dfef3b2ff035cbd17dd01dd3ae5b441"
+    },
+    "projectm-presets/Telek - Slow Shift Matrix (Ethereal Drift).milk": {
+      "sizeBytes": 1694,
+      "sha256": "7e7bb03763ebef2824fea0f9a3e1d14c028d88ea8a4ee5ed25896626fc647c3b"
+    },
+    "projectm-presets/Geiss - Two-Pointed Pulsagon.milk": {
+      "sizeBytes": 1267,
+      "sha256": "df01b544ec43219e9ff6af3093d0abb5a77f909ba3231dd7e93915092c3a5b01"
+    },
+    "projectm-presets/Geiss - Vortex 2.milk": {
+      "sizeBytes": 1595,
+      "sha256": "d2e9a460807ced4f07ffecea6cc9e54856e03d6db69686ed0b2db0e28bd1e8d0"
+    },
+    "projectm-presets/EMPR - Random - Turbulence Sandwich.milk": {
+      "sizeBytes": 5747,
+      "sha256": "fa6e09f4dfa7a921ecf258f94a758e6ea6ddb9168efc550b0d5ea07c8dd5ea41"
+    },
+    "projectm-presets/Rocke - Cold Love (Tei Zwaa).milk": {
+      "sizeBytes": 1136,
+      "sha256": "143f33e015055d24378c2ef18bef6e5003586bc42fa4546ade8c4f2bb875646a"
+    },
+    "projectm-presets/Che - Escape.milk": {
+      "sizeBytes": 3831,
+      "sha256": "1cecba2de6ef0131e23cb2df95956f8fce10bbcaa76addd3b8954db745135daf"
+    },
+    "projectm-presets/Rovastar - Bellanova (New Wave Mix).milk": {
+      "sizeBytes": 5926,
+      "sha256": "13220024857ff43fb0f203f71372f410b86b218f90a41272eb8ffccc1b4fd338"
+    },
+    "projectm-presets/Unchained - Beat Demo (Demonology Mix).milk": {
+      "sizeBytes": 3874,
+      "sha256": "6bd8cee200efbcbfd5cdd1fd6904e90f7aee3bf501d882b57cd88d2c90eb1758"
+    },
+    "projectm-presets/Rovastar - Attacking Freedom.milk": {
+      "sizeBytes": 2391,
+      "sha256": "1d1aef2c4d91088307a93dcc7dfe4ea9a71a0099b71dbdc5c54b4bcf93963cdd"
+    },
+    "projectm-presets/Unchained - Beat Demo 10.milk": {
+      "sizeBytes": 3098,
+      "sha256": "50e5fa7c79aad974d56c40c2295a04641972e05253bae1adabc01a5618ad39bc"
+    },
+    "projectm-presets/Rovastar - Harlequin's Dynamic Fractal 3.milk": {
+      "sizeBytes": 4391,
+      "sha256": "28679434c26e7a6988aeb5673d143fb875db3d53e3091040a97288fb5ed3c831"
+    },
+    "projectm-presets/Zylot - light of the path.milk": {
+      "sizeBytes": 1407,
+      "sha256": "2a55ddb0fec3c608cfc8cc7d9eb6694947753641da82ca380d2227d53195e050"
+    },
+    "projectm-presets/Geiss - Bright Fiber Matrix 1.milk": {
+      "sizeBytes": 1338,
+      "sha256": "1d4afafdb8c5b1ce96432053113c2e30b7bd0dfb1944b2d7217881210e468095"
+    },
+    "projectm-presets/Krash - Twisting Indecision.milk": {
+      "sizeBytes": 2354,
+      "sha256": "e7faabee5592aa35a460c39f5210442076828716c88f1a9767881afb2e37ec81"
+    },
+    "projectm-presets/Rovastar - Hallucinogenic Pyramids (Beat Time Mix).milk": {
+      "sizeBytes": 2111,
+      "sha256": "a4beaa3ac30492c5ac5772720815c41bf61b6867f9cd91fa41e4aa1b63bc3210"
+    },
+    "projectm-presets/Rozzor - Learning Curve (Invert tweak).milk": {
+      "sizeBytes": 2382,
+      "sha256": "b8ebb41c29fd4a7319b1fad2890399e8f80c01249e239ca32568c888e2af5145"
+    },
+    "projectm-presets/Unchained & Che - Oddnezz 3.milk": {
+      "sizeBytes": 3087,
+      "sha256": "a9f8d5b6dfc7cbb3ed584c733930a51849f39a541d1e7337102850e81242dccc"
+    },
+    "projectm-presets/StudioMusic - Numerosity.milk": {
+      "sizeBytes": 1815,
+      "sha256": "a43eeeba444e341507b6673ae36fad03c6b4e79bc1ed4e1c06ce2031fa755b62"
+    },
+    "projectm-presets/Eo.S. - heater core C_Phat's_class + sparks_mix.milk": {
+      "sizeBytes": 13489,
+      "sha256": "4548763ba065898157b4884d1296d91f68665c52949a7ec01b958917c761829e"
+    },
+    "projectm-presets/EMPR - Random - Look mama I'm on TV! 2.milk": {
+      "sizeBytes": 2808,
+      "sha256": "a0ec146f2262c796d7e0caabe2c4a65372f43a40a2a008565d5dc471692764b0"
+    },
+    "projectm-presets/Idiot - Typomatic (Remix 2).milk": {
+      "sizeBytes": 3360,
+      "sha256": "0f282c036bbcc7d2784cf0968a9f4586f4ecb1b2df23ff9a0da38bc4a49794bf"
+    },
+    "projectm-presets/Phat+fiShbRaiN+Eo.S_Mandala_Chasers_remix.milk": {
+      "sizeBytes": 12291,
+      "sha256": "bbd4b95e3069a0c3912b51d86337b7d7728bf848b08c49b9c38724adce785b20"
+    },
+    "projectm-presets/shifter - escape the worm - Eo.S. + Phat - Before_It_Eats_Your_Brain_Mix_v2.milk": {
+      "sizeBytes": 13855,
+      "sha256": "01b91c7554d9e25925bc4cb60a2e66ce14b0483c97ea1fd88b466d36af627d12"
+    },
+    "projectm-presets/Geiss - Coral.milk": {
+      "sizeBytes": 1729,
+      "sha256": "ee831a6b86bc3e9b76ff914566ce9ff0351e8af9e259554d25350072671c8bed"
+    },
+    "projectm-presets/Geiss - Galaxy 1.milk": {
+      "sizeBytes": 1301,
+      "sha256": "8a0d79d95c73d85ffe63acd8d31fbc931956313a5b8083f29ac32e84edac9788"
+    },
+    "projectm-presets/Geiss - Swirlie 2.milk": {
+      "sizeBytes": 1811,
+      "sha256": "d6c441d0b7b2e9df6fc5012e302863c75c398f277a8d44d8a8ed446d0e740fe8"
+    },
+    "projectm-presets/Rovastar - Harlequin's Fractal Encounter.milk": {
+      "sizeBytes": 4408,
+      "sha256": "fc8dcdd0a029a7f6306bc0a8ac6bebe29610355b7dcc3dcaa4380b4023f109c5"
+    },
+    "projectm-presets/Geiss - Reducto Absurdum.milk": {
+      "sizeBytes": 1659,
+      "sha256": "b5e19eb23252dec3b1fdefe448f15e619294733534cb4f80fc6914f9cceef2e4"
+    },
+    "projectm-presets/Telek - Spiral Tabletop (New and Improved!).milk": {
+      "sizeBytes": 3184,
+      "sha256": "8150b6670abe2edbb902fcc28273f0a70fe040dce4a1490aa3d57a69638b5acc"
+    },
+    "projectm-presets/Aderrasi - Anchorpulse (Verified Mix).milk": {
+      "sizeBytes": 2090,
+      "sha256": "66e54567afecf54dc2761d1ff5704cb801c546eb9a3fb37ba2095b27db38411d"
+    },
+    "projectm-presets/Mstress & Juppy - Dancer.milk": {
+      "sizeBytes": 12824,
+      "sha256": "dafc87fed2c39fdcb12c76374f484cee9d5e4c4a7f7ded904a33c4ffbd1b6b04"
+    },
+    "projectm-presets/Unchained - Goofy Beat Detection.milk": {
+      "sizeBytes": 3995,
+      "sha256": "a155168f8ea8eea8e80a5a6044226f40cc2af3189c39179dee0e250cfc9a2036"
+    },
+    "projectm-presets/Unchained & CTho - Bad Vibes.milk": {
+      "sizeBytes": 3388,
+      "sha256": "6166966136417eb96bb3e6f32b76a003574a73193cfd743ae7dd54bb2579e17f"
+    },
+    "projectm-presets/Geiss - Trampoline.milk": {
+      "sizeBytes": 1629,
+      "sha256": "1c470166b1e32a9f33355d4f3f35294880e336583bbe89f193b8a32ec72419bc"
+    },
+    "projectm-presets/Unchained - A Matter Of Taste (Remix).milk": {
+      "sizeBytes": 2647,
+      "sha256": "7e61a23ff21ed83b0ebf0a9c0cacaea6b16331122bfeeafe2afb69e03be3bfa9"
+    },
+    "projectm-presets/Idiot - MOTIVATION!.milk": {
+      "sizeBytes": 2164,
+      "sha256": "52f38c61abb3d3c906be11cf50c1434da164a5117bbe561fc1e10316b8156929"
+    },
+    "projectm-presets/Geiss & Rovastar - Notions Of Tonality 2.milk": {
+      "sizeBytes": 2476,
+      "sha256": "f939aca803146323727be129b8ca287cc11147f269c54b69e7593a4783ee3e25"
+    },
+    "projectm-presets/Unchained - Morat's Final Voyage.milk": {
+      "sizeBytes": 2401,
+      "sha256": "ea15638fe9125e9df9bf065c0240ffa1c88fc93a9e79935c63c6bae6b667cdb2"
+    },
+    "projectm-presets/Fvese - Quicksand.milk": {
+      "sizeBytes": 2040,
+      "sha256": "5fb01ca64fca134a372fa6019bb4ade64693fb05784afb96f279d415210b5e8a"
+    },
+    "projectm-presets/Geiss - De La Moutard 2.milk": {
+      "sizeBytes": 1342,
+      "sha256": "b86c22845fc6a34b03b731fff841f38a7636c017d6a80155b5fa9e2618584bd7"
+    },
+    "projectm-presets/Krash & TEcHNO - Rhythmic Mantas.milk": {
+      "sizeBytes": 2483,
+      "sha256": "2de9c0e526573e2ca0403717108bcc1f655e27af8c9e2469c6468f0f9cc6a820"
+    },
+    "projectm-presets/Aderrasi - What cannot be.milk": {
+      "sizeBytes": 2128,
+      "sha256": "7d8ff772249a3d58c5500dcd2290f8f7fdd76a03f48028ae819e0a5bb40d3f0c"
+    },
+    "projectm-presets/Aderrasi - Crystal Storm.milk": {
+      "sizeBytes": 1710,
+      "sha256": "104600830e4ea5f625ac03519ccc8653412c02135e89fcfd7859d3d71d6ac7b6"
+    },
+    "projectm-presets/Unchained - Picture Of Nectar.milk": {
+      "sizeBytes": 4143,
+      "sha256": "52ba69454926fb44dfaf5a12cbe9543ea6a740785942438c464b9d928d45883a"
+    },
+    "projectm-presets/Aderrasi - Anchorpulse (Pulse Of A Ghast II Mix).milk": {
+      "sizeBytes": 2221,
+      "sha256": "bc76fc989c68b81a0019c978de20ca4c9390ceb02c44618b21731c909764e65b"
+    },
+    "projectm-presets/Geiss - Cycloid 2.milk": {
+      "sizeBytes": 1526,
+      "sha256": "9646e4921aa70596fe27279581e7f9780fcbb6d3bcec9087773ba5d1c746cf3d"
+    },
+    "projectm-presets/Krash - 3D Shapes Demo 2.milk": {
+      "sizeBytes": 9499,
+      "sha256": "b662b49fb46217dbc360e475b350890cf99ec03e0870ec0a4d8d002a510672fb"
+    },
+    "projectm-presets/Geiss - De La Moutard 1.milk": {
+      "sizeBytes": 1342,
+      "sha256": "c1c96d98b9abd258e6eac6856cb22aad607a4ef3f1ee90e6c7762d08571b09f3"
+    },
+    "projectm-presets/che - burning hus (oil mix).milk": {
+      "sizeBytes": 3001,
+      "sha256": "7403fd664e67ef12f43c3fdcd2054cf142336a1cbbf8d25c3fbf44f15f7cdb44"
+    },
+    "projectm-presets/Rovastar & Zylot - Azirphaeli's Plan (Multiplan Mix).milk": {
+      "sizeBytes": 4036,
+      "sha256": "a33fab0ed7667b92e12be6dcbf0b35ae524d6040e46df5b977647f0201c1f39f"
+    },
+    "projectm-presets/Geiss - Drift.milk": {
+      "sizeBytes": 1739,
+      "sha256": "825990bd4dcf362403c23feebe68e8cd27600f05c36cc0c207e34bb2e05d21f9"
+    },
+    "projectm-presets/Idiot24-7 - Ascending to heaven 2.milk": {
+      "sizeBytes": 1325,
+      "sha256": "6e0dc3f0e8872ecf37099b06940773b01d58c6aa20634b6fe9efabe367149c24"
+    },
+    "projectm-presets/Rovastar & Idiot24-7 - Mixed Emotions (Harlequin's Shame Mi.milk": {
+      "sizeBytes": 2015,
+      "sha256": "6b10470f43ed04dccafe24d2cf5cb682d2d0a54a11aebb289892a3363f83834d"
+    },
+    "projectm-presets/Rovastar - Timeless Voyage.milk": {
+      "sizeBytes": 1283,
+      "sha256": "4163ab868f9ed34edb519cb2612e09fbb2f5554204ebc355297f911d84e28b94"
+    },
+    "projectm-presets/Eo.S. - repeater 05 - rave on acid.milk": {
+      "sizeBytes": 20130,
+      "sha256": "e100b47d9654896a62cf1bbc150cfeef79e5bdbf8aec4f7bd0cf24904c526b7a"
+    },
+    "projectm-presets/Krash & Zylot - Inside The Planar Portal (Indecision Mix).milk": {
+      "sizeBytes": 2158,
+      "sha256": "7c3b4483eb250fa64973fd84a084814a9293e966e3a8e156b81cf18bb038257d"
+    },
+    "projectm-presets/Telek - Recirculate (Cool).milk": {
+      "sizeBytes": 1724,
+      "sha256": "2b989f0b72a4acd4dd9d958658a3a7be361fc2bcb762f1a15d5de18e84cbb44e"
+    },
+    "projectm-presets/nil - Vortex of Vortices.milk": {
+      "sizeBytes": 1345,
+      "sha256": "fc1e6f5aa32a0c140a4e35eab4960997c6b9a499ecd831ddac40df2c30407611"
+    },
+    "projectm-presets/Unchained & Che - Oddnezz 4 (Done it again).milk": {
+      "sizeBytes": 2924,
+      "sha256": "25a175e221778cf88ea081b1eb80f4b64c243e9d15bea86259cb9fd5b77e6631"
+    },
+    "projectm-presets/Geiss & Rovastar - Tokamak (Naked Intrusion Mix).milk": {
+      "sizeBytes": 2146,
+      "sha256": "651abe61ad3e442c632e7999ab18fad118e21e706c2601e1edbf6b606f5c21d9"
+    },
+    "projectm-presets/Rozzor & Che - Inside The House Of Nil.milk": {
+      "sizeBytes": 2391,
+      "sha256": "7212368fb853b7e68b986f4c265d4db9ffb36cad506bc223a088e81cbbe213df"
+    },
+    "projectm-presets/Aderrasi - Airs (Windy Mix).milk": {
+      "sizeBytes": 2214,
+      "sha256": "86b16b7c55765c9fd9e559fd6c0dc2d4897b09c44ebc1ba7e5548d1985508025"
+    },
+    "projectm-presets/Reenen - phoenix.milk": {
+      "sizeBytes": 1466,
+      "sha256": "1a9307967078e889875e38023feb77f496ea13184078655d5f7a37010bc361db"
+    },
+    "projectm-presets/Rozzer & Zylot - Force Field Generator (Slowtime Tweak).milk": {
+      "sizeBytes": 1919,
+      "sha256": "88e7e9bc625e40bf52e2345bf73b9ac528019d4d537723f99421e5f0f4c53413"
+    },
+    "projectm-presets/Illusion & Che - The Piper.milk": {
+      "sizeBytes": 1506,
+      "sha256": "c007cdd133213cc0ce44f9d1fb557cec657a5e7742fa77387d0656bff116bd5d"
+    },
+    "projectm-presets/Redi Jedi - multiple points of origin, one destination.milk": {
+      "sizeBytes": 9159,
+      "sha256": "dc0e97d36cdcfd45d5eee6033d4da50120e43b6a4519a8fc95a5a07bead838fd"
+    },
+    "projectm-presets/Geiss - Space Voyage Bright.milk": {
+      "sizeBytes": 1445,
+      "sha256": "49e674b168e074c3e081b80e6eb5438bb8fe10e0c67c938b9d03947e333dd538"
+    },
+    "projectm-presets/Geiss - The Fatty Lumpkin Sunkle Tweaker.milk": {
+      "sizeBytes": 2167,
+      "sha256": "bc975541d7ea96cbc9d3087b535f58b787957de5d1b4f4a0f6bf3b2bbd0b576f"
+    },
+    "projectm-presets/StudioMusic & Unchained - Entity.milk": {
+      "sizeBytes": 3809,
+      "sha256": "ada8c4ebeaac758fd4e6b7cb45b3bcc3f7b9d181bd3cd6480557afa325b329d1"
+    },
+    "projectm-presets/Rovastar and Unchained - Braindance Visions.milk": {
+      "sizeBytes": 1967,
+      "sha256": "e70b4b6a2f44098f7198a6eba2f133c15b784c9901eb63402bdbd4157ddeeefc"
+    },
+    "projectm-presets/Unchained - ventilation.milk": {
+      "sizeBytes": 2337,
+      "sha256": "890550e6378dbc7f0ca19078c58dcb7d18d3991313c005429fd8fe74f43b271a"
+    },
+    "projectm-presets/Rocke - Personal Comet.milk": {
+      "sizeBytes": 1117,
+      "sha256": "5f277bdc93a14c7e1f950491f8cd4a83d52c0cc0c529d4b9e8fb3ee05b1cef1b"
+    },
+    "projectm-presets/Aderrasi - Aimless (Spirogravity Mix).milk": {
+      "sizeBytes": 1973,
+      "sha256": "46e77195be865502e7d646a8fc001486b59e6a5cdeeb0d6e1b726414013795b1"
+    },
+    "projectm-presets/Rovastar & Unchained - Centre Of Gravity.milk": {
+      "sizeBytes": 4111,
+      "sha256": "644f80f4214e39fa4cd7be4c7242254957f0509aaebb016bbcaef1226f47eab6"
+    },
+    "projectm-presets/Zylot & Idiot - ATan2 Demo (Spiraling Mad Mix).milk": {
+      "sizeBytes": 1094,
+      "sha256": "d63476cc463cf37294782d0dc9e980549dafa0a9296045ce9ff1501a6bce3f03"
+    },
+    "projectm-presets/Rovastar & Rocke - Sugar Spun Sister.milk": {
+      "sizeBytes": 1731,
+      "sha256": "5a4fe7e7ee5cbb199633c5cfbb7654cd69813f14b6a91b787d9120d10124bf94"
+    },
+    "projectm-presets/StudioMusic & Unchained - State Of Discretion.milk": {
+      "sizeBytes": 3809,
+      "sha256": "610678b9c666080fc8da49752fabf44ae3950f552717132afa5f1dde7c1d945a"
+    },
+    "projectm-presets/Zylot & Rovastar - Crystal Ball (Cerimonial Decor Mix).milk": {
+      "sizeBytes": 12100,
+      "sha256": "59bfd7161155d4c107e7e5b64c889754c9bce275105bb042d87fc3b7d4bd0e14"
+    },
+    "projectm-presets/Rozzor and StudioMusic - Vertigyny (Geiss shape mod).milk": {
+      "sizeBytes": 5918,
+      "sha256": "3206bbe22844498c1ec0e4ccbd041ab07351804262112450409cbfe3616129f1"
+    },
+    "projectm-presets/Idiot24-7 - Meeting place.milk": {
+      "sizeBytes": 1223,
+      "sha256": "6867dafacbe1e6373c40a7d2e9bb0adc412edd5d387d09a4f01dcf9002b7138e"
+    },
+    "projectm-presets/Rovastar & Geiss - Approach (Vectrip Mix).milk": {
+      "sizeBytes": 3343,
+      "sha256": "6e60ecf0517e0af6ec5c7ce14d1a06ef2593423a43627ba7e631a677272a2c63"
+    },
+    "projectm-presets/Rozzor & Aderrasi - Canon.milk": {
+      "sizeBytes": 2285,
+      "sha256": "1d93bacaeebfa5b51903f46fb481f8586dcec0f33f9b0da7c663bbb24fb65363"
+    },
+    "projectm-presets/Aderrasi - Elastoid.milk": {
+      "sizeBytes": 2207,
+      "sha256": "9928efc7483beb46d5d1b0b63c237ce63a4ebfc6c34df7520552aef1b8540654"
+    },
+    "projectm-presets/Bmelgren - Take This Highway.milk": {
+      "sizeBytes": 1298,
+      "sha256": "ada92cd9450bc889375f1457e1009d5144c7a9615ab2a66efd4553a80d305d70"
+    },
+    "projectm-presets/Geiss - Swirlie 1.milk": {
+      "sizeBytes": 1926,
+      "sha256": "0a5542a067709adf11afb10172aa365324a541ff47b4c1b35ee2597818060fdb"
+    },
+    "projectm-presets/Geiss - Anomaly 2.milk": {
+      "sizeBytes": 1794,
+      "sha256": "30d132b130c234b53bc3a22388f13227d5d80430dd929ec700b7cba77f2ece64"
+    },
+    "projectm-presets/Rovastar - Altars Of Madness 2 (Frozen Time Mix).milk": {
+      "sizeBytes": 2841,
+      "sha256": "6be27d23502c686c069080aefb8edd9cf8f457821fdc7d021da406f7ab461033"
+    },
+    "projectm-presets/Idiot & Che - Various Abstract Effects.milk": {
+      "sizeBytes": 4307,
+      "sha256": "083b4591954721f0bded44bc562a6d73c5cb307cc0d049d00b6d0ebe31d0e7dd"
+    },
+    "projectm-presets/Rovastar - Kalideostars (Round  Round Mix).milk": {
+      "sizeBytes": 6340,
+      "sha256": "2f8407aeb74071dd0e6ead2166a9b33b177f630c83c28dab6a327711b2b4f0bb"
+    },
+    "projectm-presets/Rovastar - Harlequin's Dynamic Fractal (Crazed Spiral Mix).milk": {
+      "sizeBytes": 1846,
+      "sha256": "625875b0237259146f293e4fc00c57cd8a187283ed3bca2a9dbbc519d5d0edb6"
+    },
+    "projectm-presets/Rovastar - Inner Thoughts (Frantic Thoughts Mix).milk": {
+      "sizeBytes": 7715,
+      "sha256": "57da695f6a158571fe3c09058d9c23bec0e7208bf088c1c9321c5d45a90c07e4"
+    },
+    "projectm-presets/Rovastar & Krash - Flowing Synergy.milk": {
+      "sizeBytes": 1907,
+      "sha256": "7faeed29d8b0ceb37c923333c43272e97595e1c569f90d00bb96207de2bc9216"
+    },
+    "imageformats/qjpeg4.dll": {
+      "sizeBytes": 229376,
+      "sha256": "6c8b148b4a223d9372d7b56a2bfd5af5db0ab9bef74c3423de8b2d4e335c3e85"
+    },
+    "imageformats/qgif4.dll": {
+      "sizeBytes": 50688,
+      "sha256": "3d5a5623cdea823a14102a43cac78902a73840434ba0fe9447aa8f37f887af4a"
+    },
+    "gstreamer-plugins/libgstequalizer.dll": {
+      "sizeBytes": 58368,
+      "sha256": "26502feb0e23c9396f69264e1cbeba35b7173f8aeb8ff7915bb87ecaac6445b7"
+    },
+    "gstreamer-plugins/libgstlibav.dll": {
+      "sizeBytes": 8622592,
+      "sha256": "21b12ad82a6249b1ba7172651a75653ffb90e42d4e5767c81782d40c09292375"
+    },
+    "gstreamer-plugins/libgstaudioconvert.dll": {
+      "sizeBytes": 81920,
+      "sha256": "cd2a051e3b8ad24899c8ba2097a0455c964126f65abd46772e21d0a800fa845a"
+    },
+    "gstreamer-plugins/libgstfaad.dll": {
+      "sizeBytes": 49152,
+      "sha256": "97d30a19e577397f5839ae8ee73eaee8fac1fa7966bf7abf1c246d66f82a447a"
+    },
+    "gstreamer-plugins/libgstwavparse.dll": {
+      "sizeBytes": 87552,
+      "sha256": "3330b74a60d61972c44fde6034668ebe715dd8f35fbda4911eace4c1d067f001"
+    },
+    "gstreamer-plugins/libgstid3demux.dll": {
+      "sizeBytes": 39424,
+      "sha256": "7034a6975eb0b5d782c30e09fff70f0c87e3fa191d6c0abea11effd76fe49f99"
+    },
+    "gstreamer-plugins/libgstfaac.dll": {
+      "sizeBytes": 49664,
+      "sha256": "5d02a002b5ec011bb2307e879ee1bfd173074a2b17df307d9354ff348e1ec7e9"
+    },
+    "gstreamer-plugins/libgstaudiofx.dll": {
+      "sizeBytes": 152064,
+      "sha256": "08de7fc89573f6d58d3f9cb656d43c7698c59077948cf56ebdb9d7da7ca32460"
+    },
+    "gstreamer-plugins/libgstmms.dll": {
+      "sizeBytes": 47104,
+      "sha256": "c52498b475f2436854797dc7a7a10ae7c5e578f5564a19c6bf366747a646f44e"
+    },
+    "gstreamer-plugins/libgstvorbis.dll": {
+      "sizeBytes": 74240,
+      "sha256": "09fc112b3d773f8715711ea3c278e00c8ac7dc401aaaa517841d3386ecfd48f9"
+    },
+    "gstreamer-plugins/libgstflac.dll": {
+      "sizeBytes": 86528,
+      "sha256": "3a8df83f40245531714d4546127506e686c61deec4cc1005b78f99bf3e441f47"
+    },
+    "gstreamer-plugins/libgsticydemux.dll": {
+      "sizeBytes": 45056,
+      "sha256": "3eff5d92eb41e95e3330cf2084f1ddfead1c80ce1472bf2426d9f736a94e491b"
+    },
+    "gstreamer-plugins/libgstudp.dll": {
+      "sizeBytes": 94720,
+      "sha256": "f47e3cb3d950a754d220fcb87b6e4e0caf4f5420840f0c8540c74c64cb075ae5"
+    },
+    "gstreamer-plugins/libgstisomp4.dll": {
+      "sizeBytes": 448512,
+      "sha256": "78afd60c1370df1d7d070d6142bd1545b1d8d344cba16454cae7bc8b1f47b730"
+    },
+    "gstreamer-plugins/libgstasf.dll": {
+      "sizeBytes": 152064,
+      "sha256": "cf9e994e32c27e94b4bd8ecee9af187ab53fc7481070e8b9537776eaef29d574"
+    },
+    "gstreamer-plugins/libgstcdio.dll": {
+      "sizeBytes": 45056,
+      "sha256": "daf916fc55f41e28ff2eeeede95e32a33e4775e20f1bb6c96125cabeb885ed53"
+    },
+    "gstreamer-plugins/libgstautodetect.dll": {
+      "sizeBytes": 51200,
+      "sha256": "10292605eeb62ab52ac74929b797dfff7cfbba9d3e1a4d4c6aa6ae2b3856f4cd"
+    },
+    "gstreamer-plugins/libgstaudiotestsrc.dll": {
+      "sizeBytes": 64000,
+      "sha256": "5bca0bf8bf778f6665f43f93265d0ef6bb939772e4bdc397136f2a6d526589cc"
+    },
+    "gstreamer-plugins/libgstdirectsoundsink.dll": {
+      "sizeBytes": 110080,
+      "sha256": "94c4f46091fdf3631c57276254791b67089c017ba64b16eeeca77229a7a33842"
+    },
+    "gstreamer-plugins/libgstreplaygain.dll": {
+      "sizeBytes": 68608,
+      "sha256": "a4315edfc572da977b603f775ebfb85450a86dfdb545d11df40d8dd550a99945"
+    },
+    "gstreamer-plugins/libgsttaglib.dll": {
+      "sizeBytes": 70144,
+      "sha256": "b6985666c289455daf1876e02ac794acfdc87197200e42251bbe676666df626b"
+    },
+    "gstreamer-plugins/libgstogg.dll": {
+      "sizeBytes": 256000,
+      "sha256": "9e1ee3cc350ba58f1ea3651d935327a3ea3f862f433fb5a6745402a97f93545b"
+    },
+    "gstreamer-plugins/libgstgio.dll": {
+      "sizeBytes": 73216,
+      "sha256": "d157f2ceac08dd0a2c0cfe9395c350d0c380bbb6691b04bd5ac1a1f5ccc5eefa"
+    },
+    "gstreamer-plugins/libgstapetag.dll": {
+      "sizeBytes": 43520,
+      "sha256": "bf66cf55d938655caae8906562ebc92d9f9a1bb37388990e1e9e9e6f686e468e"
+    },
+    "gstreamer-plugins/libgsttypefindfunctions.dll": {
+      "sizeBytes": 119808,
+      "sha256": "c8655d2f41d852a7a20866830f6769cf3aa53890163f3aefba373e9e798fa273"
+    },
+    "gstreamer-plugins/libgstgdp.dll": {
+      "sizeBytes": 65536,
+      "sha256": "cc15c60a3192814272cfcb30e2558091d4e1b82bc83a05076bd3345d9b80fdb9"
+    },
+    "gstreamer-plugins/libgstvolume.dll": {
+      "sizeBytes": 49152,
+      "sha256": "5d9d80ae17dcde452f226097d4810ae92b0ac13842a2db34b1aaa1932186fb63"
+    },
+    "gstreamer-plugins/libgstcoreelements.dll": {
+      "sizeBytes": 377344,
+      "sha256": "ba9612534296b69ea20a34af9e602ff1d2c68b8cdcd290fe4769cfec3740fe0c"
+    },
+    "gstreamer-plugins/libgstplayback.dll": {
+      "sizeBytes": 379392,
+      "sha256": "1d07304a961b3266ba95ceb3b868ecd86dd863ecdb9a4a24ebf54d01c038f42a"
+    },
+    "gstreamer-plugins/libgstaudioparsers.dll": {
+      "sizeBytes": 152576,
+      "sha256": "b7956a212cd6aa9bb3b09619e3daa99f9b44f41dd84fcc4fe9e16f0cbe020e2f"
+    },
+    "gstreamer-plugins/libgsttcp.dll": {
+      "sizeBytes": 120832,
+      "sha256": "30b66363abdd9cc0f5f7e4982951628dc27040a286cae698fc728c50c183eae2"
+    },
+    "gstreamer-plugins/libgstmad.dll": {
+      "sizeBytes": 44032,
+      "sha256": "fb692bda3b547ae5dfe99b813464f25d531becf135c838a9dc5b1cb2c8ad9c49"
+    },
+    "gstreamer-plugins/libgstsouphttpsrc.dll": {
+      "sizeBytes": 355840,
+      "sha256": "1e6ddc6806f3a7c256e994371ff1640022ae419e28bf17af7a4af62704a458d8"
+    },
+    "gstreamer-plugins/libgstlame.dll": {
+      "sizeBytes": 53248,
+      "sha256": "16ecdd1faf3d0fefef9cfdcb8cf26928f7f2243ea3c664e78b49c393702b1df5"
+    },
+    "gstreamer-plugins/libgstspectrum.dll": {
+      "sizeBytes": 50688,
+      "sha256": "9663989633829c32004c135118f1046ae4f9f9782373419588287f9b9a087899"
+    },
+    "gstreamer-plugins/libgstaudioresample.dll": {
+      "sizeBytes": 89088,
+      "sha256": "cdde46b77f3c898b2a8cd34d9f24c76595d04ed1576341e9541c8e1e2d2e6710"
+    },
+    "gstreamer-plugins/libgstapp.dll": {
+      "sizeBytes": 35328,
+      "sha256": "0663ff494f224966df5865f31ff3b9db1395370b357f461c569c856e83bb7262"
+    },
+    "gstreamer-plugins/libgstspeex.dll": {
+      "sizeBytes": 62464,
+      "sha256": "97fcfc9bbd311831ddff1ee46eac87d42576a000bd8977b456895b2ea92c89f0"
+    }
+  },
+  "mainProgramPin": {
+    "sizeBytes": 16620032,
+    "sha256": "7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb"
+  },
+  "oneFormalOriginalInstallation": true,
+  "guiAcceptanceSeparate": true,
+  "publicBinaryBytesIncluded": false
+}

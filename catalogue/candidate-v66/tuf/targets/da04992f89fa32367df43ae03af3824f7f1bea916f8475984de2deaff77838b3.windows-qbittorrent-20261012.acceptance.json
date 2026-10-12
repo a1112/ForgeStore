@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "qbittorrent",
+      "version": "5.2.4",
+      "sha256": "ef6efe581d80efeb0a77df281d93f93021fbdcc48e4d8f7b341dc864f53c30dd",
+      "size": 41407004,
+      "generationId": "gen-job-1791741134980-1",
+      "definitionDigest": "sha256:10905a905bc04f0e21d07369316298d074edaf0075e1dbee84b41eca4a39ccaf",
+      "launcherSha256": "sha256:2a060b8909adfe7f0dddec14e58195af65184a049de5e2cf6463a4bf123a674c",
+      "guiFileOperation": "passed-limited-trackerless-single-file-create-fresh-reopen-local-force-recheck",
+      "save": {
+        "generationId": "gen-job-1791741134980-1",
+        "inputUnchanged": true,
+        "inputPin": {
+          "sizeBytes": 4096,
+          "sha256": "60cc4e643d1a6b7ccfc5acdc5075725f9d2eb5fa3c81af4bec48b0df63de6f65"
+        },
+        "outputRelativePath": "qBittorrentTests/original-output.torrent",
+        "outputPin": {
+          "sizeBytes": 186,
+          "sha256": "1986e6d743bdc609b331e77984f3f4bdf8931338ca39682b862ccfd5c2d52419"
+        },
+        "payloadBytes": 4096,
+        "pieceLength": 16384,
+        "pieceCount": 1,
+        "allPieceHashesMatchIndependentPayloadSha1": true,
+        "infoHashSha1": "71c212507af9fa7896e77b0c1b699b82a483bcdb",
+        "comment": "ORIGINAL42",
+        "nameUtf8": "原始数据.bin",
+        "createdBy": "qBittorrent v5.2.4",
+        "trackerless": true,
+        "bencodeCanonicalAndFullyParsed": true,
+        "guiAccepted": false,
+        "published": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "guiObservedProgressPercent": 100,
+      "guiObservedTransferBytes": 0,
+      "screenshots": {
+        "01-original-start.jpg": {
+          "sizeBytes": 121584,
+          "sha256": "7becae601c558384925d82bb9f489410775d60edf324e7eb9ac8c207843af63b"
+        },
+        "02-original-creator.jpg": {
+          "sizeBytes": 144156,
+          "sha256": "5e771627de4a5c2da269c78914022c7fb232567f295e3bcf9644ba8ed24431a4"
+        },
+        "03-original-created.jpg": {
+          "sizeBytes": 150418,
+          "sha256": "4859cdc505f8e08b17c78f2c7eefd003c49e271e04fe92b3c665d92bf0f359c2"
+        },
+        "04-original-reopen-options.jpg": {
+          "sizeBytes": 125955,
+          "sha256": "09aed3aa5aca6516d35d939be9b9c2561e2a4f3ecd45f0f03165485047a88281"
+        },
+        "05-original-recheck-100.jpg": {
+          "sizeBytes": 176219,
+          "sha256": "0d994a9f0b87d1f07ffa094a1ab1a59058c4a88c410a54e1d864d4af4e27cd7a"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-qbittorrent-source.json",
+    "sha256": "757324d090fef4d7a409ada3946e2ba0f2ace6240446c4a8b61c1b941b43baba"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-qbittorrent-gui.json",
+    "sha256": "7caa2668ade89b844c2be83b652d90451ce3f612b6d01ce2a97f059075b19f7e"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-qbittorrent-failures.json",
+    "sha256": "33aa1f7069577e631c267c4c2a470ef33eba80dafc8927b16482db8a723e676b"
+  },
+  "limits": [
+    "Only small 4096-byte Chinese-named single-file trackerless torrent GUI creation with ASCII comment, explicit new managed process torrent reopen, stopped local item and actual Force recheck 100% tested; canonical bencode/name/length/piece SHA1 independently match. Synthetic payload/torrent do not count as applications.",
+    "Download/upload/seeding, peers/tracker/DHT/PEX/magnet/private/multifile/large/bad files/remote WebUI/RPC, direct Chinese keyboard input, advanced features, new-machine registration, migration, cross-version upgrades, unattended startup and GUI Store update/rollback buttons unverified. The GUI displayed DHT node counts; this finite local-data test is not evidence of absence of background networking or successful network transfer.",
+    "Source COPYING declares GPL-2.0-or-later for source and GPL-3.0-or-later for binary distributions due to GPL3 assets, with OpenSSL linking exception. Both official installer/source digests match the fixed official download page. Complete bundled Qt/libtorrent/OpenSSL/Boost/translation license closure, installed license comparison, OpenPGP/Authenticode, binary-source correspondence and reproducible build unverified.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Native NSIS /S and final /D=C: followed by one backslash then qBittorrent, 17 UTF8 bytes. Startup nonbinding file-sharing notice manually acknowledged; normal authorized account login, no auth/lock-setting changes.",
+    "Independent market generation/update/rollback/two-service normal restart pending at original freeze; completion recorded separately without changing original evidence bytes."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

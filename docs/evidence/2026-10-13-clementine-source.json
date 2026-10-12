@@ -1,0 +1,226 @@
+{
+  "applicationId": "clementine",
+  "version": "1.3.1",
+  "officialReleaseUrl": "https://github.com/clementine-player/Clementine/releases/tag/1.3.1",
+  "officialExpandedAssetPage": "https://github.com/clementine-player/Clementine/releases/expanded_assets/1.3.1",
+  "releaseLinkedCommit": "2418b559a8325f1a27947c679bbd6b6bca395df5",
+  "installer": {
+    "requestedUrl": "https://github.com/clementine-player/Clementine/releases/download/1.3.1/ClementineSetup-1.3.1.exe",
+    "installerJobCreated": false,
+    "guiAttempted": false,
+    "status": 200,
+    "contentLength": 22011528,
+    "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/14979312/27edbe48-0655-11e6-85f4-9b1fc4d3fa6b",
+    "finalQueryPresent": true,
+    "exactRedirectResponsePrivatelySaved": true,
+    "passed": true,
+    "sizeBytes": 22011528,
+    "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0",
+    "elapsedSeconds": 21.782
+  },
+  "sourceArchive": {
+    "requestedUrl": "https://github.com/clementine-player/Clementine/releases/download/1.3.1/clementine-1.3.1.tar.xz",
+    "installerJobCreated": false,
+    "guiAttempted": false,
+    "status": 200,
+    "contentLength": 5564036,
+    "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/14979312/faf46518-0654-11e6-8b8b-401b52b66292",
+    "finalQueryPresent": true,
+    "exactRedirectResponsePrivatelySaved": true,
+    "passed": true,
+    "sizeBytes": 5564036,
+    "sha256": "6bbb44f85fb2e4bc7da3ef534d10ce2e0ffa7ae11e3e6eecb02c6a620552e687",
+    "elapsedSeconds": 4.391
+  },
+  "mainFixedSourceLicense": "GPL-3.0-or-later explicitly in selected main parser headers; COPYING GPLv3 original notice retained",
+  "fixedSourceMembers": {
+    "3rdparty/qsqlite/README": {
+      "sizeBytes": 332,
+      "sha256": "6a6960105d581a2a53c6cd08f70d5a0e7b26046cc149a3056b63bd58fae21177"
+    },
+    "3rdparty/gmock/README": {
+      "sizeBytes": 13494,
+      "sha256": "94c3ebcc60f469a82f2429c4b1a2aedc102d41e53173a16b4a87416a1feb90b3"
+    },
+    "3rdparty/gmock/COPYING": {
+      "sizeBytes": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    "3rdparty/gmock/gtest/README": {
+      "sizeBytes": 15031,
+      "sha256": "5d3c14f2d919b0d868b4bc3d0603ddbb549f008e48221aed3857876ded83898e"
+    },
+    "3rdparty/gmock/gtest/COPYING": {
+      "sizeBytes": 1475,
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+    },
+    "3rdparty/vreen/vreen/cmake/README": {
+      "sizeBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "3rdparty/libprojectm/COPYING": {
+      "sizeBytes": 870,
+      "sha256": "ffc0dee05d3fd4ecd0defe7fc6684c5d5d64f2125c7329208706128997bbbcf9"
+    },
+    "dist/windows/Capabilities.nsh": {
+      "sizeBytes": 17449,
+      "sha256": "06aaae21c57f497569fceffae612406bc08e4dd6bc86cc401be0cef5b6dc1b91"
+    },
+    "dist/windows/clementine.nsi": {
+      "sizeBytes": 140730,
+      "sha256": "8b3aa51e09b2884f26937efb7c11b8bc3c53cadb7265a0840b7f99b657abdf71"
+    },
+    "dist/windows/clementine-portable.nsi": {
+      "sizeBytes": 140819,
+      "sha256": "864b761e9dc178c523e5d0c10bf9bac45b855abfe5625ae728a9c9c5eb4cedca"
+    },
+    "dist/windows/FileAssociation.nsh": {
+      "sizeBytes": 4599,
+      "sha256": "c2138870f5b533bde2bb93bae878b5e140197dd87a1334d270614c034614fcdb"
+    },
+    "COPYING": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "CMakeLists.txt": {
+      "sizeBytes": 15859,
+      "sha256": "6a6bf9ff6adf52816c61bd25ecf06aa4b551cd327dbeecddd5a7dfbaeb1ea64e"
+    },
+    "src/playlistparsers/plsparser.cpp": {
+      "sizeBytes": 2716,
+      "sha256": "01a26a9436b7d8aab80ef5bee5f12216cf4e9eebcba74f2864f3052a97ffb25b"
+    },
+    "src/playlistparsers/playlistparser.cpp": {
+      "sizeBytes": 4477,
+      "sha256": "803312d7b9cf0b97aa6c60e41272a4fbf92ff0e00047aa823b053420ae3677a9"
+    },
+    "src/playlistparsers/xspfparser.cpp": {
+      "sizeBytes": 6014,
+      "sha256": "2a3ce509323385e270e1bc4b940a4dc70a4ca692cb39025435a1104fc7414c4c"
+    },
+    "src/playlistparsers/m3uparser.cpp": {
+      "sizeBytes": 4053,
+      "sha256": "7cdf3cc06d86dcaf146e6e560fb900f05f2b5593d86de043d136784a5433116a"
+    },
+    "src/main.cpp": {
+      "sizeBytes": 15419,
+      "sha256": "0a0a6b238701bb03c6eb768ecd62265a6e0004be37595ac00878e63bdb1bbed0"
+    },
+    "src/playlist/playlistmanager.cpp": {
+      "sizeBytes": 16462,
+      "sha256": "a8d5693f9ba7d1d9d05feade36277d1b5fab01d8f130e6f41739ff1ec75d43cf"
+    },
+    "src/ui/mainwindow.cpp": {
+      "sizeBytes": 101534,
+      "sha256": "7dccbcbf032c6e5fd96107e4e68ed536f539c15a6a07f2bbc347b7bd3ccd03cb"
+    }
+  },
+  "sourceArchiveFileCount": 3190,
+  "staticInstallerInspection": {
+    "passedStaticInspection": true,
+    "archiveType": "Nsis",
+    "peBootstrapMachine": 332,
+    "sevenZipExit": 0,
+    "listingPin": {
+      "sizeBytes": 133067,
+      "sha256": "8bd394401381ebe2beb87fa422034f342ef36f7d4ff2dc50adbe8b77c29e4b0c"
+    },
+    "mainProgramCandidates": [
+      "clementine.exe"
+    ],
+    "licenseNamedFiles": [],
+    "sourceArchiveRoot": "clementine-1.3.1",
+    "sourceFileCount": 3190,
+    "fixedSourceMembers": {
+      "3rdparty/qsqlite/README": {
+        "sizeBytes": 332,
+        "sha256": "6a6960105d581a2a53c6cd08f70d5a0e7b26046cc149a3056b63bd58fae21177"
+      },
+      "3rdparty/gmock/README": {
+        "sizeBytes": 13494,
+        "sha256": "94c3ebcc60f469a82f2429c4b1a2aedc102d41e53173a16b4a87416a1feb90b3"
+      },
+      "3rdparty/gmock/COPYING": {
+        "sizeBytes": 1475,
+        "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+      },
+      "3rdparty/gmock/gtest/README": {
+        "sizeBytes": 15031,
+        "sha256": "5d3c14f2d919b0d868b4bc3d0603ddbb549f008e48221aed3857876ded83898e"
+      },
+      "3rdparty/gmock/gtest/COPYING": {
+        "sizeBytes": 1475,
+        "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+      },
+      "3rdparty/vreen/vreen/cmake/README": {
+        "sizeBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "3rdparty/libprojectm/COPYING": {
+        "sizeBytes": 870,
+        "sha256": "ffc0dee05d3fd4ecd0defe7fc6684c5d5d64f2125c7329208706128997bbbcf9"
+      },
+      "dist/windows/Capabilities.nsh": {
+        "sizeBytes": 17449,
+        "sha256": "06aaae21c57f497569fceffae612406bc08e4dd6bc86cc401be0cef5b6dc1b91"
+      },
+      "dist/windows/clementine.nsi": {
+        "sizeBytes": 140730,
+        "sha256": "8b3aa51e09b2884f26937efb7c11b8bc3c53cadb7265a0840b7f99b657abdf71"
+      },
+      "dist/windows/clementine-portable.nsi": {
+        "sizeBytes": 140819,
+        "sha256": "864b761e9dc178c523e5d0c10bf9bac45b855abfe5625ae728a9c9c5eb4cedca"
+      },
+      "dist/windows/FileAssociation.nsh": {
+        "sizeBytes": 4599,
+        "sha256": "c2138870f5b533bde2bb93bae878b5e140197dd87a1334d270614c034614fcdb"
+      },
+      "COPYING": {
+        "sizeBytes": 35147,
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      },
+      "CMakeLists.txt": {
+        "sizeBytes": 15859,
+        "sha256": "6a6bf9ff6adf52816c61bd25ecf06aa4b551cd327dbeecddd5a7dfbaeb1ea64e"
+      },
+      "src/playlistparsers/plsparser.cpp": {
+        "sizeBytes": 2716,
+        "sha256": "01a26a9436b7d8aab80ef5bee5f12216cf4e9eebcba74f2864f3052a97ffb25b"
+      },
+      "src/playlistparsers/playlistparser.cpp": {
+        "sizeBytes": 4477,
+        "sha256": "803312d7b9cf0b97aa6c60e41272a4fbf92ff0e00047aa823b053420ae3677a9"
+      },
+      "src/playlistparsers/xspfparser.cpp": {
+        "sizeBytes": 6014,
+        "sha256": "2a3ce509323385e270e1bc4b940a4dc70a4ca692cb39025435a1104fc7414c4c"
+      },
+      "src/playlistparsers/m3uparser.cpp": {
+        "sizeBytes": 4053,
+        "sha256": "7cdf3cc06d86dcaf146e6e560fb900f05f2b5593d86de043d136784a5433116a"
+      }
+    },
+    "installerJobCreated": false,
+    "fullInstallerFormatValidated": false
+  },
+  "nativeNsisDocumentation": "https://nsis.sourceforge.io/Docs/Chapter3.html#installerusagecommon",
+  "nativeArguments": [
+    "/S",
+    "/D=C:\\Clementine"
+  ],
+  "lastDirectoryArgumentUtf8Bytes": 16,
+  "lastDirectoryArgumentUtf8Hex": "2f443d433a5c436c656d656e74696e65",
+  "onlyOfficialHttpsLocalDigestsVerified": true,
+  "upstreamDigestOrApiAssetDigestVerified": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "sourceBinaryCorrespondenceOrReproducibleBuildVerified": false,
+  "latestVersionClaimed": false,
+  "namedInstalledMainLicenseNotFoundInLimitedScan": true,
+  "installedMainSourceLicenseComparisonVerified": false,
+  "fullQtGstreamerTaglibBoostCodecsSpotifyHelperProjectMIconsTranslationsLicenseClosureVerified": false,
+  "optionalNonGplSpotifyHelperBuildContextDoesNotEstablishInstalledBundleLicense": true,
+  "originalSourceAndNoticesUnmodified": true,
+  "installerStaticAdminRequestNotRealUacProof": true,
+  "binaryBytesNotPublic": true
+}

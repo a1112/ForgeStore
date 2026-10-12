@@ -1,0 +1,1790 @@
+{
+  "passed": true,
+  "readOnly": true,
+  "reviewerGuestGuiReplayPerformed": false,
+  "reviewerPrivateCompleteCheckpointReplayPerformed": false,
+  "checks": {
+    "programManifests": {
+      "passed": true,
+      "observed": {
+        "original": 688,
+        "market": 688,
+        "allManifestFieldsEqual": true,
+        "guestBytesNotReplayed": true
+      }
+    },
+    "generationIdentity": {
+      "passed": true,
+      "observed": {
+        "original": "gen-job-1791826606830-1",
+        "market": "gen-job-1791828958485-4",
+        "definitionDigest": "sha256:a87fefc6eaab0a9d8df881d368ebec37470e6e05a7240ed3b4df0c7ab0b0159a"
+      }
+    },
+    "fiveFormalLifecycleReceipts": {
+      "passed": true,
+      "observed": {
+        "jobs": [
+          {
+            "id": "job-1791826754117-2",
+            "generationId": "gen-job-1791826606830-1",
+            "kind": "launch",
+            "status": "succeeded"
+          },
+          {
+            "id": "job-1791827908626-3",
+            "generationId": "gen-job-1791826606830-1",
+            "kind": "launch",
+            "status": "succeeded"
+          },
+          {
+            "id": "job-1791829237982-5",
+            "generationId": "gen-job-1791828958485-4",
+            "kind": "launch",
+            "status": "succeeded"
+          },
+          {
+            "id": "job-1791829605726-6",
+            "generationId": "gen-job-1791828958485-4",
+            "kind": "launch",
+            "status": "succeeded"
+          },
+          {
+            "id": "job-1791829813055-7",
+            "generationId": "gen-job-1791826606830-1",
+            "kind": "launch",
+            "status": "succeeded"
+          }
+        ],
+        "quitMethodClaim": [
+          "all five native Music/Quit"
+        ],
+        "normalNativeQuitObservedByParentNotReviewer": true
+      }
+    },
+    "originalExactXspf": {
+      "passed": true,
+      "observed": {
+        "inputPinsAndWaveParameters": {
+          "原始音频A.wav": {
+            "sizeBytes": 32044,
+            "sha256": "cb5c6604e9a1f1990437133e550427afaa30b08c65408c2a1e51a914ebcbd39a",
+            "channels": 1,
+            "sampleWidthBytes": 2,
+            "sampleRate": 8000,
+            "frames": 16000,
+            "durationMilliseconds": 2000
+          },
+          "原始音频B.wav": {
+            "sizeBytes": 32044,
+            "sha256": "2dc569bae88701c3b9794a939681e716c6679279adf50ba967f7d2deed273098",
+            "channels": 1,
+            "sampleWidthBytes": 2,
+            "sampleRate": 8000,
+            "frames": 16000,
+            "durationMilliseconds": 2000
+          }
+        },
+        "output": {
+          "sizeBytes": 381,
+          "sha256": "045b192fdcf0f1cfbe9844756839de670abdaf39e0240a7fdeb86da3e8b6a1cb"
+        },
+        "entireExpectedBytesEqual": true,
+        "encoding": "UTF-8 without BOM; LF",
+        "finiteOnly": true
+      }
+    },
+    "marketExactXspf": {
+      "passed": true,
+      "observed": {
+        "inputPinsAndWaveParameters": {
+          "市场音频A.wav": {
+            "sizeBytes": 32044,
+            "sha256": "6ac6086657faf653e6770681e26b84deff00518c742522f03ace3d16562687cf",
+            "channels": 1,
+            "sampleWidthBytes": 2,
+            "sampleRate": 8000,
+            "frames": 16000,
+            "durationMilliseconds": 2000
+          },
+          "市场音频B.wav": {
+            "sizeBytes": 32044,
+            "sha256": "310a8683f6025122d866f00452d418ebddb35095405d45a91396bbc391f6d172",
+            "channels": 1,
+            "sampleWidthBytes": 2,
+            "sampleRate": 8000,
+            "frames": 16000,
+            "durationMilliseconds": 2000
+          }
+        },
+        "output": {
+          "sizeBytes": 381,
+          "sha256": "c1755cd3980e9490959e0cbe6a17138797ed830a85eae7041411c68ace51922a"
+        },
+        "entireExpectedBytesEqual": true,
+        "encoding": "UTF-8 without BOM; LF",
+        "finiteOnly": true
+      }
+    },
+    "sevenActualJpegMagic": {
+      "passed": true,
+      "observed": {
+        "clementine-01-two-inputs-20261013.jpg": {
+          "sizeBytes": 22100,
+          "sha256": "8a420d4dcde7de9e108d3d393a8a119feac0c389dc08d6ad1229952eb5a57673"
+        },
+        "clementine-02-about-20261013.jpg": {
+          "sizeBytes": 34322,
+          "sha256": "ea9359c2199f3c744dd96692c0587fb9113dc1ecd8239a0c8bf28e45f3f28a16"
+        },
+        "clementine-03-original-explicit-load-20261013.jpg": {
+          "sizeBytes": 23290,
+          "sha256": "a5d4d6a5049013e2b8360646486400fb5eb6c5c243fc7ad5d98512482b287093"
+        },
+        "clementine-04-market-input-reordered-20261013.jpg": {
+          "sizeBytes": 48097,
+          "sha256": "bd64a2a2ff0ccce3b58466e7b779405a815642a8b9f6e77695c313636050f9f9"
+        },
+        "clementine-05-market-saved-20261013.jpg": {
+          "sizeBytes": 47662,
+          "sha256": "cc90bcc785c7e957dcf79c5d552a8d455d32de6b95b98da82b67f434f83b6428"
+        },
+        "clementine-06-market-explicit-load-20261013.jpg": {
+          "sizeBytes": 49647,
+          "sha256": "bfb2eaade809174969bb192e6299a2448919cc5f6686c1be15b3f5e64b2f836f"
+        },
+        "clementine-07-rollback-original-load-20261013.jpg": {
+          "sizeBytes": 43641,
+          "sha256": "211acef54e0d3f85519ddb5ddb2000db64fa1e1af0b537a47147f43ba7a8ad4e"
+        }
+      }
+    },
+    "sourceBoundaryFlags": {
+      "passed": true,
+      "observed": {
+        "mainSourceLicense": "GPL-3.0-or-later explicitly in selected main parser headers; COPYING GPLv3 original notice retained",
+        "upstreamValidationAndBundleClosureNotPerformed": true
+      }
+    },
+    "ClementineSetup-1.3.1.exeLocalBytes": {
+      "passed": true,
+      "observed": null
+    },
+    "clementine-1.3.1.tar.xzLocalBytes": {
+      "passed": true,
+      "observed": null
+    },
+    "twentyFixedSourceArchiveMembers": {
+      "passed": true,
+      "observed": {
+        "3rdparty/qsqlite/README": {
+          "sizeBytes": 332,
+          "sha256": "6a6960105d581a2a53c6cd08f70d5a0e7b26046cc149a3056b63bd58fae21177"
+        },
+        "3rdparty/gmock/README": {
+          "sizeBytes": 13494,
+          "sha256": "94c3ebcc60f469a82f2429c4b1a2aedc102d41e53173a16b4a87416a1feb90b3"
+        },
+        "3rdparty/gmock/COPYING": {
+          "sizeBytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        "3rdparty/gmock/gtest/README": {
+          "sizeBytes": 15031,
+          "sha256": "5d3c14f2d919b0d868b4bc3d0603ddbb549f008e48221aed3857876ded83898e"
+        },
+        "3rdparty/gmock/gtest/COPYING": {
+          "sizeBytes": 1475,
+          "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+        },
+        "3rdparty/vreen/vreen/cmake/README": {
+          "sizeBytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "3rdparty/libprojectm/COPYING": {
+          "sizeBytes": 870,
+          "sha256": "ffc0dee05d3fd4ecd0defe7fc6684c5d5d64f2125c7329208706128997bbbcf9"
+        },
+        "dist/windows/Capabilities.nsh": {
+          "sizeBytes": 17449,
+          "sha256": "06aaae21c57f497569fceffae612406bc08e4dd6bc86cc401be0cef5b6dc1b91"
+        },
+        "dist/windows/clementine.nsi": {
+          "sizeBytes": 140730,
+          "sha256": "8b3aa51e09b2884f26937efb7c11b8bc3c53cadb7265a0840b7f99b657abdf71"
+        },
+        "dist/windows/clementine-portable.nsi": {
+          "sizeBytes": 140819,
+          "sha256": "864b761e9dc178c523e5d0c10bf9bac45b855abfe5625ae728a9c9c5eb4cedca"
+        },
+        "dist/windows/FileAssociation.nsh": {
+          "sizeBytes": 4599,
+          "sha256": "c2138870f5b533bde2bb93bae878b5e140197dd87a1334d270614c034614fcdb"
+        },
+        "COPYING": {
+          "sizeBytes": 35147,
+          "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+        },
+        "CMakeLists.txt": {
+          "sizeBytes": 15859,
+          "sha256": "6a6bf9ff6adf52816c61bd25ecf06aa4b551cd327dbeecddd5a7dfbaeb1ea64e"
+        },
+        "src/playlistparsers/plsparser.cpp": {
+          "sizeBytes": 2716,
+          "sha256": "01a26a9436b7d8aab80ef5bee5f12216cf4e9eebcba74f2864f3052a97ffb25b"
+        },
+        "src/playlistparsers/playlistparser.cpp": {
+          "sizeBytes": 4477,
+          "sha256": "803312d7b9cf0b97aa6c60e41272a4fbf92ff0e00047aa823b053420ae3677a9"
+        },
+        "src/playlistparsers/xspfparser.cpp": {
+          "sizeBytes": 6014,
+          "sha256": "2a3ce509323385e270e1bc4b940a4dc70a4ca692cb39025435a1104fc7414c4c"
+        },
+        "src/playlistparsers/m3uparser.cpp": {
+          "sizeBytes": 4053,
+          "sha256": "7cdf3cc06d86dcaf146e6e560fb900f05f2b5593d86de043d136784a5433116a"
+        },
+        "src/main.cpp": {
+          "sizeBytes": 15419,
+          "sha256": "0a0a6b238701bb03c6eb768ecd62265a6e0004be37595ac00878e63bdb1bbed0"
+        },
+        "src/playlist/playlistmanager.cpp": {
+          "sizeBytes": 16462,
+          "sha256": "a8d5693f9ba7d1d9d05feade36277d1b5fab01d8f130e6f41739ff1ec75d43cf"
+        },
+        "src/ui/mainwindow.cpp": {
+          "sizeBytes": 101534,
+          "sha256": "7dccbcbf032c6e5fd96107e4e68ed536f539c15a6a07f2bbc347b7bd3ccd03cb"
+        }
+      }
+    },
+    "mainParserGpl3OrLater": {
+      "passed": true,
+      "observed": null
+    },
+    "retainedOfficialFixedReleaseSelection": {
+      "passed": true,
+      "observed": {
+        "retainedRawLocalPagesOnlyNoNewNetworkRequest": true,
+        "assets": {
+          "ClementineSetup-1.3.1.exe": {
+            "sizeBytes": 22011528,
+            "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0"
+          },
+          "clementine-1.3.1.tar.xz": {
+            "sizeBytes": 5564036,
+            "sha256": "6bbb44f85fb2e4bc7da3ef534d10ce2e0ffa7ae11e3e6eecb02c6a620552e687"
+          }
+        },
+        "releaseCommit": "2418b559a8325f1a27947c679bbd6b6bca395df5"
+      }
+    },
+    "all129LocalSignedTargetBytes": {
+      "passed": true,
+      "observed": {
+        "targets": {
+          "windows-notepad2mod-20261011.acceptance.json": {
+            "sizeBytes": 4879,
+            "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+          },
+          "org.forgeos.storefixture-2.0.0.forgepkg": {
+            "sizeBytes": 1605,
+            "sha256": "5d2b47555be52f41c45b2bd556da1385ed5f20b984099b305ef86209d8494fcd"
+          },
+          "ClementineSetup-1.3.1.exe": {
+            "sizeBytes": 22011528,
+            "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0"
+          },
+          "cherrytree_1.7.2.1_win64_setup.exe": {
+            "sizeBytes": 96911680,
+            "sha256": "81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898"
+          },
+          "windows-kdiff3-20260930.acceptance.json": {
+            "sizeBytes": 1699,
+            "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+          },
+          "windows-inkscape-20261003.acceptance.json": {
+            "sizeBytes": 12679,
+            "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+          },
+          "Sigil-2.6.2-Windows-x64-Setup.exe": {
+            "sizeBytes": 133608315,
+            "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e"
+          },
+          "windows-focuswriter-20261011.acceptance.json": {
+            "sizeBytes": 4562,
+            "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+          },
+          "windows-mediainfo-20261012.acceptance.json": {
+            "sizeBytes": 28230,
+            "sha256": "f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa"
+          },
+          "windows-notepadnext-20261012.acceptance.json": {
+            "sizeBytes": 6011,
+            "sha256": "0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d"
+          },
+          "artha_1.0.3.0.exe": {
+            "sizeBytes": 12711596,
+            "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2"
+          },
+          "windows-mpchc-20261006.acceptance.json": {
+            "sizeBytes": 10745,
+            "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+          },
+          "lazpaint7.3_setup_win32_win64.exe": {
+            "sizeBytes": 14153628,
+            "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459"
+          },
+          "windows-mkvtoolnix-20261012.acceptance.json": {
+            "sizeBytes": 16769,
+            "sha256": "c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281"
+          },
+          "QXmlEditInstaller-0.9.18.exe": {
+            "sizeBytes": 32537109,
+            "sha256": "9a0e8f6ad3fce01bb232ea0ac84e87029a81aee2fb9dfbe2152bbcc30a72ba48"
+          },
+          "mkvtoolnix-64-bit-94.0-setup.exe": {
+            "sizeBytes": 32100808,
+            "sha256": "5c8fb973f181a51ff37b9e6c392f8cbc0b00c1dea2accbfc33a339b09d29d5f2"
+          },
+          "npp.8.9.6.2.Installer.x64.exe": {
+            "sizeBytes": 6898288,
+            "sha256": "7c243203265ce8fdac76c839bf744ae35dcf620760eb97c2ea279af498560e45"
+          },
+          "SpeedCrunch-0.12-win32.exe": {
+            "sizeBytes": 9451219,
+            "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89"
+          },
+          "SumatraPDF-3.6.1-64-install.exe": {
+            "sizeBytes": 11075960,
+            "sha256": "1eee71cccd2ea6e94d5bcea54ee2f759844da3e1a0ee2f6045035b1d17b94381"
+          },
+          "gvim_9.2.0000_x64.exe": {
+            "sizeBytes": 11654015,
+            "sha256": "243ed9ed2951c26d27801afbb4cc5fa92ed6395f8f388c6d432b62012c9f3684"
+          },
+          "windows-qbittorrent-20261012.acceptance.json": {
+            "sizeBytes": 4945,
+            "sha256": "da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3"
+          },
+          "windows-dia-20261005.acceptance.json": {
+            "sizeBytes": 9388,
+            "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+          },
+          "WinDirStat-2.9.0-x64.msi": {
+            "sizeBytes": 2433024,
+            "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d"
+          },
+          "peazip-11.3.0.WIN64.exe": {
+            "sizeBytes": 11391512,
+            "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76"
+          },
+          "Notepad3_7.26.602.1_x64_Setup.exe": {
+            "sizeBytes": 4882616,
+            "sha256": "9cf68b38bcc1aa679050b9069174ab222383ba004c37bdd47056cafc71626be9"
+          },
+          "windows-dosbox-20261011-corrected.acceptance.json": {
+            "sizeBytes": 6445,
+            "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+          },
+          "Texstudio-4.9.5-win-qt6-signed.exe": {
+            "sizeBytes": 154728568,
+            "sha256": "618c633e1ad6d9aba90ff8c4498d265b2cbfb6d02173d4577ca8ba3c989cc1e4"
+          },
+          "windows-geany-20260930.acceptance.json": {
+            "sizeBytes": 1652,
+            "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+          },
+          "JPEGView64_en-us_1.3.46.msi": {
+            "sizeBytes": 5165056,
+            "sha256": "3108a85b5d408fa17027b25454f0ee7e7b450e680dbc1dab68d26d9099e18bf2"
+          },
+          "windows-dbbrowser-20261011.acceptance.json": {
+            "sizeBytes": 6075,
+            "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+          },
+          "transmission-4.0.6-qt5-x64.msi": {
+            "sizeBytes": 18149376,
+            "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d"
+          },
+          "kdiff3-1.12.4-windows-x86_64.exe": {
+            "sizeBytes": 81410248,
+            "sha256": "2d58b4d675934290146faf08a239788ffc36fd6ac2c480456100fb1d8ab2bb16"
+          },
+          "windows-krita-20260930.acceptance.json": {
+            "sizeBytes": 4223,
+            "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+          },
+          "windows-tiled-20261011.acceptance.json": {
+            "sizeBytes": 6906,
+            "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+          },
+          "audacity-win-3.7.9-64bit.exe": {
+            "sizeBytes": 19943880,
+            "sha256": "e3096847ac4270d304e9b112d153642a72b66b42e13f83a32f06eecfb4ce7e48"
+          },
+          "windows-winmerge-20260930.acceptance.json": {
+            "sizeBytes": 1656,
+            "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+          },
+          "picard-setup-2.13.3.exe": {
+            "sizeBytes": 32331256,
+            "sha256": "cfe7fb0957f9bd561dfd97b4685cbd26adeb6d9485d25bbbdf39d86c552e1fec"
+          },
+          "windows-rapidcrc-20261012.acceptance.json": {
+            "sizeBytes": 6788,
+            "sha256": "b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5"
+          },
+          "vlc-3.0.23-win64.exe": {
+            "sizeBytes": 45948080,
+            "sha256": "20ad191348684b470ddc4e05204316f3d8e39655f412b3e392a0eef97639daaf"
+          },
+          "MPC-HC.2.8.2.x64.exe": {
+            "sizeBytes": 22986429,
+            "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12"
+          },
+          "DB.Browser.for.SQLite-v3.13.1-win64.msi": {
+            "sizeBytes": 19857408,
+            "sha256": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688"
+          },
+          "rednotebook-2.43.exe": {
+            "sizeBytes": 25489461,
+            "sha256": "9b153c8a88db1743689672a488daa96cce817d97db18524db63e0e2c8248c43a"
+          },
+          "codeblocks-25.03-setup-nonadmin.exe": {
+            "sizeBytes": 52312086,
+            "sha256": "1b730f9c279f1babfdef92507078913df18cff9bbabc14dc69c2abe6628a94ed"
+          },
+          "windows-texstudio-20260930.acceptance.json": {
+            "sizeBytes": 1617,
+            "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+          },
+          "windows-poedit-20261012.acceptance.json": {
+            "sizeBytes": 99469,
+            "sha256": "116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a"
+          },
+          "windows-lazpaint-20261009.acceptance.json": {
+            "sizeBytes": 6220,
+            "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+          },
+          "windows-picard-20261012.acceptance.json": {
+            "sizeBytes": 6277,
+            "sha256": "6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f"
+          },
+          "krita-x64-5.3.4-setup.exe": {
+            "sizeBytes": 165547784,
+            "sha256": "0dd4d6f86878d42b058aa33bb2fded01c888768e6f1daa0319e5f5b5cc49e465"
+          },
+          "windows-notepad3-20261003.acceptance.json": {
+            "sizeBytes": 7918,
+            "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+          },
+          "inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe": {
+            "sizeBytes": 118507928,
+            "sha256": "fa21d25e56dbfe41e9b014a4f37689edda4bb41d5a3597fe2787dff6c10e651f"
+          },
+          "windows-jpegview-20261003.acceptance.json": {
+            "sizeBytes": 7617,
+            "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+          },
+          "windows-rednotebook-20261011.acceptance.json": {
+            "sizeBytes": 5786,
+            "sha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931"
+          },
+          "windows-transmission-20261011.acceptance.json": {
+            "sizeBytes": 5165,
+            "sha256": "1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f"
+          },
+          "windows-codeblocks-20261012.acceptance.json": {
+            "sizeBytes": 16916,
+            "sha256": "f7382675ef473b007e8d9ec735d9ede781bbbf3cd6f579438aa9836327f4c0ab"
+          },
+          "Frhed-1.6.0-Setup.exe": {
+            "sizeBytes": 725124,
+            "sha256": "941b6b7c436653a7e4c0c55ee5180c343e4b9da86b080530c3b4af8092f5c4e0"
+          },
+          "windows-vlc-20260930.acceptance.json": {
+            "sizeBytes": 1676,
+            "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+          },
+          "windows-speedcrunch-20261003.acceptance.json": {
+            "sizeBytes": 9031,
+            "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+          },
+          "windows-windirstat-20261003.acceptance.json": {
+            "sizeBytes": 10640,
+            "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+          },
+          "Tiled-1.11.2_Windows-10plus_x86_64.msi": {
+            "sizeBytes": 22192128,
+            "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7"
+          },
+          "MediaInfo_GUI_26.05_Windows_x64.exe": {
+            "sizeBytes": 6357952,
+            "sha256": "a209d32b95f9282662df5f1d4e76a6f00149af62e27d0f12c0428ba29ebe4393"
+          },
+          "windows-tiled-20261011.alias.acceptance.json": {
+            "sizeBytes": 8122,
+            "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+          },
+          "windows-nsis-20261012.acceptance.json": {
+            "sizeBytes": 4976,
+            "sha256": "056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9"
+          },
+          "windows-cherrytree-20261011.acceptance.json": {
+            "sizeBytes": 7460,
+            "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+          },
+          "AkelPad-4.9.9-setup.exe": {
+            "sizeBytes": 1241412,
+            "sha256": "ad63ea4048d68721701a3c0d2d9041a158e90789c7fc24526380607aad136aca"
+          },
+          "windows-copyq-20261012.pending-correction.json": {
+            "sizeBytes": 1575,
+            "sha256": "3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999"
+          },
+          "qbittorrent_5.2.4_x64_setup.exe": {
+            "sizeBytes": 41407004,
+            "sha256": "ef6efe581d80efeb0a77df281d93f93021fbdcc48e4d8f7b341dc864f53c30dd"
+          },
+          "TreeSheets-3328-winx64.exe": {
+            "sizeBytes": 7492630,
+            "sha256": "af984faea6b8d9f3eadc9ad679b2e6aaa0942279a79676b92d4a135f82ee0280"
+          },
+          "windows-cppcheck-20261012.acceptance.json": {
+            "sizeBytes": 23230,
+            "sha256": "8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb"
+          },
+          "7z2601-x64.exe": {
+            "sizeBytes": 1658851,
+            "sha256": "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d"
+          },
+          "windows-nomacs-20261011.acceptance.json": {
+            "sizeBytes": 4995,
+            "sha256": "1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af"
+          },
+          "windows-librecad-20261012.acceptance.json": {
+            "sizeBytes": 14404,
+            "sha256": "cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86"
+          },
+          "Meld-3.22.2-mingw.msi": {
+            "sizeBytes": 28401664,
+            "sha256": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8"
+          },
+          "cppcheck-2.18.0-x64-Setup.msi": {
+            "sizeBytes": 23576576,
+            "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638"
+          },
+          "Poedit-3.7-setup.exe": {
+            "sizeBytes": 17869552,
+            "sha256": "83d6ca0a5a0706309bdc1ed214e735fd4b44a8ac5b82817c4bc914fbd94f5904"
+          },
+          "windows-clementine-20261013.acceptance.json": {
+            "sizeBytes": 15140,
+            "sha256": "3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282"
+          },
+          "windows-artha-20261011-cwd.acceptance.json": {
+            "sizeBytes": 4567,
+            "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+          },
+          "FocusWriter_1.8.13.exe": {
+            "sizeBytes": 54323843,
+            "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c"
+          },
+          "windows-dosbox-20261011.acceptance.json": {
+            "sizeBytes": 5624,
+            "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+          },
+          "copyq-12.0.1-setup.exe": {
+            "sizeBytes": 19255957,
+            "sha256": "db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78"
+          },
+          "windows-frhed-20261011.acceptance.json": {
+            "sizeBytes": 4642,
+            "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+          },
+          "windows-xmlcopyeditor-20261011.acceptance.json": {
+            "sizeBytes": 4553,
+            "sha256": "5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f"
+          },
+          "windows-peazip-20261001.acceptance.json": {
+            "sizeBytes": 4783,
+            "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+          },
+          "xmlcopyeditor-1.3.1.0-x64-install.exe": {
+            "sizeBytes": 20046337,
+            "sha256": "7ba6900595d0ca68b79b2c14a43538d1190bf717228651701d40fc693660caf4"
+          },
+          "windows-mpchc-20261006-corrected.acceptance.json": {
+            "sizeBytes": 11228,
+            "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+          },
+          "windows-qxmledit-20261011.acceptance.json": {
+            "sizeBytes": 4514,
+            "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+          },
+          "WinDjView-2.1-Setup.exe": {
+            "sizeBytes": 2957069,
+            "sha256": "c46a0b6b2c1c289b99fc92212443c911b80a899ddc772442e1a47264c9039c5c"
+          },
+          "NotepadNext-v0.15-Installer.exe": {
+            "sizeBytes": 10904664,
+            "sha256": "e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e"
+          },
+          "windows-doxygen-20261012.acceptance.json": {
+            "sizeBytes": 406124,
+            "sha256": "48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb"
+          },
+          "windows-tuxpaint-20261005.acceptance.json": {
+            "sizeBytes": 9285,
+            "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+          },
+          "doxygen-1.13.2-setup.exe": {
+            "sizeBytes": 58172541,
+            "sha256": "08261faf23a9bd4a337cb9d25e9b339d06c788ddadb03283519fa217db58f1bb"
+          },
+          "windows-texworks-20261011.acceptance.json": {
+            "sizeBytes": 3703,
+            "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+          },
+          "doublecmd-1.2.9.x86_64-win64.exe": {
+            "sizeBytes": 10639174,
+            "sha256": "3824250b280d1eaefe6422690bb6a0fc652aa8006545c05a63f9d2e1cababfd4"
+          },
+          "qalculate-5.12.0-x64.msi": {
+            "sizeBytes": 70448128,
+            "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25"
+          },
+          "windows-qalculate-20261003.acceptance.json": {
+            "sizeBytes": 21857,
+            "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+          },
+          "TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe": {
+            "sizeBytes": 29600489,
+            "sha256": "24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8"
+          },
+          "windows-akelpad-20261010.acceptance.json": {
+            "sizeBytes": 5280,
+            "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+          },
+          "LibreCAD-v2.2.1.5-win64-msvc.exe": {
+            "sizeBytes": 54350692,
+            "sha256": "738912fea40aca934689444af9c5cd281572417983cc081c204fe6c779f6941d"
+          },
+          "windows-nsis-20261012.corrected.acceptance.json": {
+            "sizeBytes": 5463,
+            "sha256": "afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd"
+          },
+          "nomacs-setup-x64.msi": {
+            "sizeBytes": 47280128,
+            "sha256": "26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b"
+          },
+          "windows-sigil-20261011.acceptance.json": {
+            "sizeBytes": 7564,
+            "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+          },
+          "windows-doublecmd-20261002.acceptance.json": {
+            "sizeBytes": 3517,
+            "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+          },
+          "Notepad2-mod.4.2.25.998.exe": {
+            "sizeBytes": 1449064,
+            "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9"
+          },
+          "xournalpp-1.3.8-windows-setup-AMD64.exe": {
+            "sizeBytes": 96924916,
+            "sha256": "0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637"
+          },
+          "DOSBox0.74-3-win32-installer.exe": {
+            "sizeBytes": 1493703,
+            "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e"
+          },
+          "windows-xournalpp-20261003.acceptance.json": {
+            "sizeBytes": 4586,
+            "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+          },
+          "windows-gnuplot-20261012.acceptance.json": {
+            "sizeBytes": 5745,
+            "sha256": "b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34"
+          },
+          "windows-rolling-20260929.acceptance.json": {
+            "sizeBytes": 2738,
+            "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+          },
+          "windows-windjview-20261011.acceptance.json": {
+            "sizeBytes": 6405,
+            "sha256": "9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058"
+          },
+          "windows-copyq-20261012.acceptance.json": {
+            "sizeBytes": 34032,
+            "sha256": "d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3"
+          },
+          "windows-meld-20261011.acceptance.json": {
+            "sizeBytes": 5518,
+            "sha256": "f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d"
+          },
+          "windows-sqlitestudio-20260929.acceptance.json": {
+            "sizeBytes": 1146,
+            "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+          },
+          "windows-scribus-20261012.acceptance.json": {
+            "sizeBytes": 12090,
+            "sha256": "ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba"
+          },
+          "geany-2.1_setup.exe": {
+            "sizeBytes": 28220816,
+            "sha256": "50c7835b31bc736d0b5e5f894aa8ec08a95185873fb64d29a95727d2859107d8"
+          },
+          "windows-treesheets-20261012.acceptance.json": {
+            "sizeBytes": 6769,
+            "sha256": "59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934"
+          },
+          "SQLiteStudio-3.4.17-windows-x64-installer.exe": {
+            "sizeBytes": 35103114,
+            "sha256": "5018ea571c2a3416944267d387cb75eea99d46ebd010f6aa5c35df1f7690c894"
+          },
+          "RapidCRC-Setup-0.3.42-x64.msi": {
+            "sizeBytes": 671744,
+            "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1"
+          },
+          "nsis-3.11-setup.exe": {
+            "sizeBytes": 1564991,
+            "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a"
+          },
+          "WinMerge-2.16.58.2-x64-PerUser-Setup.exe": {
+            "sizeBytes": 17184616,
+            "sha256": "6ac1e3c0028c39e49962dacd662ab553989d7e817a5cdf96ebbbc1fb345bcff4"
+          },
+          "tuxpaint-0.9.35-3-windows-x86_64-installer.exe": {
+            "sizeBytes": 50412612,
+            "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c"
+          },
+          "windows-audacity-20261003.acceptance.json": {
+            "sizeBytes": 6071,
+            "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+          },
+          "windows-tiled-20261011.corrected.acceptance.json": {
+            "sizeBytes": 7879,
+            "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+          },
+          "scribus-1.6.4-windows-x64.exe": {
+            "sizeBytes": 124533360,
+            "sha256": "615dace82119883cc6252da0dd69a1e1637610ff4c5550e5254b7747845f28d1"
+          },
+          "Tiled-1.11.2_Windows-10+_x86_64.msi": {
+            "sizeBytes": 22192128,
+            "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7"
+          },
+          "dia-setup-0.97.2-2-unsigned.exe": {
+            "sizeBytes": 19620143,
+            "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c"
+          },
+          "windows-gvim-20261012.acceptance.json": {
+            "sizeBytes": 4767,
+            "sha256": "9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0"
+          },
+          "gp603-win64-mingw.exe": {
+            "sizeBytes": 49945304,
+            "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84"
+          },
+          "lmms-1.2.2-win64.exe": {
+            "sizeBytes": 36829951,
+            "sha256": "5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b"
+          },
+          "windows-lmms-20261012.acceptance.json": {
+            "sizeBytes": 621370,
+            "sha256": "707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3"
+          },
+          "catalogue.json": {
+            "sizeBytes": 72026,
+            "sha256": "489b05e92a665cd53be4eff924101cdb4dc1fbbd7546cc6bc85963f48aef53e5"
+          }
+        },
+        "fullPrivateSigningTargetBytesCheckedNoBytesCopied": true
+      }
+    },
+    "publicTuf71FilesJsonOnly": {
+      "passed": true,
+      "observed": {
+        "totalFiles": 71,
+        "publicTargetJsons": 66,
+        "metadataFiles": 4
+      }
+    },
+    "tufMetadataDigestLengthLinks": {
+      "passed": true,
+      "observed": null
+    },
+    "old126NonCatalogueTargetPins": {
+      "passed": true,
+      "observed": {
+        "previous": 127,
+        "preservedNonCatalogue": 126,
+        "new": 2,
+        "changedOld": [
+          "catalogue.json"
+        ]
+      }
+    },
+    "oldPublicNonCatalogueTargetRawBytes": {
+      "passed": true,
+      "observed": {
+        "checkedPublicNonCatalogueFiles": 64,
+        "otherNonCatalogueFullSigningTargetsCheckedBySignedHash": true
+      }
+    },
+    "catalogueIncremental": {
+      "passed": true,
+      "observed": {
+        "entries": 62,
+        "previousEntries": 61,
+        "windowsApplications": 60,
+        "fixtures": 2,
+        "newEntry": {
+          "compatibility": {
+            "evidence": "windows-clementine-20261013.acceptance.json#clementine",
+            "status": "tested"
+          },
+          "delivery": {
+            "artifact": {
+              "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0",
+              "size": 22011528,
+              "target": "ClementineSetup-1.3.1.exe",
+              "url": "https://github.com/clementine-player/Clementine/releases/download/1.3.1/ClementineSetup-1.3.1.exe"
+            },
+            "backend": "compatforge",
+            "reviewedApplicationId": "clementine"
+          },
+          "id": "clementine",
+          "license": "GPL-3.0-or-later main fixed source; complete installed bundle closure unverified",
+          "name": {
+            "en": "Clementine",
+            "zhCN": "Clementine 播放列表"
+          },
+          "origin": "https://www.clementine-player.org/",
+          "permissions": [
+            "user-files"
+          ],
+          "publisher": "Clementine",
+          "summary": {
+            "en": "Limited Chinese-name two-WAV playlist reorder, native XSPF save and fresh Load; hearing/playback/devices unverified.",
+            "zhCN": "仅中文名两WAV列表排序、原生XSPF保存与新进程加载；听音/播放/设备未验收"
+          },
+          "version": "1.3.1"
+        }
+      }
+    },
+    "rootHistoryExact": {
+      "passed": true,
+      "observed": {
+        "rootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+        "previousRole74MetadataUntouchedCheckedViaOldFreezeAndGitScope": true
+      }
+    },
+    "localRsaPssRoleSignatures": {
+      "passed": true,
+      "observed": {
+        "1.root.json": {
+          "exitCode": 0,
+          "verified": true
+        },
+        "75.targets.json": {
+          "exitCode": 0,
+          "verified": true
+        },
+        "75.snapshot.json": {
+          "exitCode": 0,
+          "verified": true
+        },
+        "timestamp.json": {
+          "exitCode": 0,
+          "verified": true
+        }
+      }
+    },
+    "runtimeReceiptScope": {
+      "passed": true,
+      "observed": {
+        "coreJobs": 475,
+        "storeRows": 140,
+        "root": 1,
+        "roles": 75,
+        "privateCheckpointDigestOnly": {
+          "file": "clementine-20261013/after-final-restart.json",
+          "sha256": "00ee1b721ef72e35641a95453cda7caf82c8228ec04cb3cc20dae03e3ceb4752"
+        },
+        "independentGuestFullStateReplay": false
+      }
+    },
+    "thirdGuiByteChangesAccuratelyBounded": {
+      "passed": true,
+      "observed": {
+        "differences": {
+          "drive_c/users/forge/.config/Clementine/clementine.db": {
+            "old": {
+              "sizeBytes": 116736,
+              "sha256": "9a0bdeacd415c5e5e454f0a9b29ec6fec484580c25c9563045e15c9781be90bd"
+            },
+            "new": {
+              "sizeBytes": 116736,
+              "sha256": "c2a96c82dd2e78342b9755623abad2265aa15a50bf79e8475b6b9ab2cf07b27e"
+            },
+            "privateActualBeforeAndAfterRawAvailable": true,
+            "causeOrKeyValueEquivalenceEstablished": false,
+            "binaryDifferenceOnly": true
+          },
+          "drive_c/users/forge/.config/Clementine/clementine.db.bak": {
+            "old": {
+              "sizeBytes": 116736,
+              "sha256": "2a6389dd8b68459b7568dc8a16919473bb5ea31dafe222c453bd17289b3a750d"
+            },
+            "new": {
+              "sizeBytes": 116736,
+              "sha256": "9875bed8a3b3d6631b4382bb62246af1cbe54b208f30529c75f3d2bca6553897"
+            },
+            "privateActualBeforeAndAfterRawAvailable": true,
+            "causeOrKeyValueEquivalenceEstablished": false,
+            "binaryDifferenceOnly": true
+          },
+          "system.reg": {
+            "old": {
+              "sizeBytes": 3912826,
+              "sha256": "7e673a4402ffe63afa7feaf53aa534982e00b8fc1f6881bb60a6c6cacbf0f62c"
+            },
+            "new": {
+              "sizeBytes": 3912826,
+              "sha256": "60034908fe82cf1f2eaaef2159b76a29d3aae838ab1cf6af7c2ccd056fc893f7"
+            },
+            "privateActualBeforeAndAfterRawAvailable": true,
+            "causeOrKeyValueEquivalenceEstablished": false,
+            "privateDiffPin": {
+              "sizeBytes": 16089,
+              "sha256": "8898208a39781ea27cd8afb088a114cf526651c023b589b295777d53052017a5"
+            },
+            "privateDiffLines": 287
+          },
+          "user.reg": {
+            "old": {
+              "sizeBytes": 131586,
+              "sha256": "be908a528e3dc2071aba152e5d4dd8ff59103a801861bc401d6487e136d2f664"
+            },
+            "new": {
+              "sizeBytes": 131586,
+              "sha256": "923fb2a4e6aad850ebe119e901148e7cfd708ff69b945dbee3770606c8471921"
+            },
+            "privateActualBeforeAndAfterRawAvailable": true,
+            "causeOrKeyValueEquivalenceEstablished": false,
+            "privateDiffPin": {
+              "sizeBytes": 1654,
+              "sha256": "4f6825e8409995678b2adaa8f199dbee0cfae3d6db6f4a3c7663abf13a803606"
+            },
+            "privateDiffLines": 42
+          }
+        },
+        "privateRawOrDiffContentReplayed": false,
+        "privateRawAvailableClaimAndHelperInspected": true,
+        "noSemanticRootCauseClaim": true
+      }
+    },
+    "limitedRuntimeClaims": {
+      "passed": true,
+      "observed": null
+    },
+    "staticHelpersParseWithoutExecutingGuestOrMutation": {
+      "passed": true,
+      "observed": {
+        "clementine-lifecycle-lib-20261013.py": {
+          "sizeBytes": 2286,
+          "sha256": "f9627eebe73e41a3e266491e26047f5bb3fe5f822968276d19311fdca4e3b800"
+        },
+        "rolling-current-state-clementine-20261013.py": {
+          "sizeBytes": 3081,
+          "sha256": "460400b36ec9dbc5ba4f11d7fa06628e707b801f994ec11777c03c4083035601"
+        },
+        "clementine-third-gui-observation-20261013.py": {
+          "sizeBytes": 4339,
+          "sha256": "8b9298b2ba0c55b810103a09dd73c63f96f8725872ef1cf8800927ef9504a425"
+        },
+        "clementine-third-gui-observation-v2-20261013.py": {
+          "sizeBytes": 4339,
+          "sha256": "8b9298b2ba0c55b810103a09dd73c63f96f8725872ef1cf8800927ef9504a425"
+        },
+        "clementine-restart-final-20261013.py": {
+          "sizeBytes": 6769,
+          "sha256": "c9fa1a86a23a23cd03806818daddeb74f9ad1b798dcc65f242021b419e99623c"
+        },
+        "clementine-sign-pack-20261013.py": {
+          "sizeBytes": 4211,
+          "sha256": "dd39752f5c8f8c2440d38c5bc439bdf83e2fe115887d74a6cc0bced844cfda2f"
+        },
+        "clementine-source-download-v3-20261013.py": {
+          "sizeBytes": 3502,
+          "sha256": "2c7dc9b72d49d9bda2323a2c1f36612de38eacc85b34f380a40593d55ba05247"
+        }
+      }
+    },
+    "staticSevenFullStateGroupChecks": {
+      "passed": true,
+      "observed": {
+        "onlyStaticAssertionsReviewed": true,
+        "notIndependentRuntimeOrPrivateCheckpointReplay": true
+      }
+    },
+    "failureBoundaryFlags": {
+      "passed": true,
+      "observed": {
+        "tunnel": "Restored unique strict-key/strict-hostkey loopback tunnel; no guest VM/service/authentication change. IAB still connection-refused; existing Edge worked after reload. No browser policy bypass.",
+        "thirdGuiV1": "Native Quit click was occluded by noVNC controls; fresh visible app menu Quit succeeded; independent V2 terminal read passed before final CP/restart.",
+        "allHistoricalGatesClaimedEffective": false,
+        "oldScribusRawLossStillUnrecovered": true
+      }
+    },
+    "thirdV1ActualNonterminalError": {
+      "passed": true,
+      "observed": null
+    },
+    "completePublicBytePrivacyPatternScan": {
+      "passed": true,
+      "observed": {
+        "files": 122,
+        "bytes": 3588819,
+        "findings": [],
+        "imagesVisuallyInspectedSeparately": 7,
+        "sourceNoticesAndFourFixtureWavsPermitted": true,
+        "absoluteProofOfAllPossibleSecrets": false,
+        "phase": "original122 retained audit"
+      }
+    },
+    "authoritativeTuftool017TwoPublicTargets": {
+      "passed": true,
+      "observed": {
+        "catalogue.json": {
+          "sizeBytes": 72026,
+          "sha256": "489b05e92a665cd53be4eff924101cdb4dc1fbbd7546cc6bc85963f48aef53e5"
+        },
+        "windows-clementine-20261013.acceptance.json": {
+          "sizeBytes": 15140,
+          "sha256": "3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282"
+        }
+      }
+    },
+    "prospective126ExactBytes": {
+      "passed": true,
+      "observed": {
+        "count": 126,
+        "mismatches": [],
+        "manifestSha256": "39cc1011d83cfbfe39dc0f1df829c938a144aa1fcbdc7bf2925bd8736a999c1f"
+      }
+    },
+    "prior122ManifestFilesUnchanged": {
+      "passed": true,
+      "observed": {
+        "files": 122,
+        "manifestSha256": "3ee3c7c99bb4fe126c84cb4400fb53b1ea078aff49240fd72639218817dfa753"
+      }
+    },
+    "old3522ImmutableRawBytes": {
+      "passed": true,
+      "observed": {
+        "oldEvidenceCount": 3524,
+        "immutableRawCount": 3522,
+        "mutablePaths": [
+          ".gitattributes",
+          "docs/windows-1000-progress.json"
+        ]
+      }
+    },
+    "original31FrozenRawBytesAndLabels": {
+      "passed": true,
+      "observed": {
+        "rawCount": 31,
+        "allOriginalSourceGuiAcceptanceAndPendingPhaseBytesPreserved": true
+      }
+    },
+    "ledgerEntireOldRecords": {
+      "passed": true,
+      "observed": {
+        "previousAcceptedAllFields": 59,
+        "pendingAllFields": 16,
+        "newExactlyOne": {
+          "id": "clementine",
+          "version": "1.3.1",
+          "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0",
+          "evidence": "docs/evidence/windows-clementine-20261013.acceptance.json",
+          "signedCatalogue": "catalogue/candidate-v66/tuf",
+          "publication": "docs/evidence/2026-10-13-clementine-publication.json",
+          "limitation": "Only two tiny Chinese-name PCM WAV native adds, A/B drag reorder, relative XSPF save and fresh explicit load per generation, cached Store IPC update/exact original rollback. No hearing/playback device/full player acceptance or runtime repair; complete bundle license closure unverified."
+        }
+      }
+    },
+    "gitFullTrackedVsOldEvidenceScope": {
+      "passed": true,
+      "observed": {
+        "head": "edc07318d5170a1119fa03120786e25bc303794f",
+        "branch": "feature/store-core",
+        "fullTrackedCount": 4765,
+        "oldEvidenceCount": 3524,
+        "outsideOldEvidenceCount": 1241,
+        "outsideIndexModeAndBlobOidEqualHead": true,
+        "outsideWorkingTreeFullRawEqualityClaimed": false,
+        "indexEmpty": true
+      }
+    },
+    "sixPreciseAttributesAndOldPrefix": {
+      "passed": true,
+      "observed": {
+        "oldPrefix": {
+          "sizeBytes": 29210,
+          "sha256": "ba8e9c4a7af9c43f7c0f7fa34236d1e5af535df2ebfbeff410c9bf5061f7c24c"
+        },
+        "suffixLfOnly": true,
+        "sixPreciseWhitespaceRules": {
+          "catalogue/candidate-v66/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": [
+            "whitespace=cr-at-eol,-blank-at-eol"
+          ],
+          "catalogue/candidate-v66/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": [
+            "whitespace=cr-at-eol,-blank-at-eol"
+          ],
+          "docs/evidence/clementine-20261013/source/3rdparty/libprojectm/COPYING": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/clementine-20261013/source/dist/windows/Capabilities.nsh": [
+            "whitespace=-blank-at-eol"
+          ],
+          "docs/evidence/clementine-20261013/source/dist/windows/clementine-portable.nsi": [
+            "whitespace=-blank-at-eol"
+          ],
+          "docs/evidence/clementine-20261013/source/dist/windows/clementine.nsi": [
+            "whitespace=-blank-at-eol"
+          ]
+        },
+        "noRenormalize": true
+      }
+    },
+    "dateNamingCorrectionPreservesOriginalBytes": {
+      "passed": true,
+      "observed": {
+        "earlierActualPrechecksPassedButFilenameDateInheritedFromDonor": true,
+        "originalMisdatedFilesPreserved": {
+          "docs/evidence/2026-10-12-clementine-git-byte-preservation-precheck.json": {
+            "correctDateCopy": "docs/evidence/2026-10-13-clementine-git-byte-preservation-precheck.json",
+            "sizeBytes": 1522,
+            "sha256": "534045977cd87b977429e371f80a3879eed30a25a30d07129930e77be83a995e"
+          },
+          "docs/evidence/2026-10-12-clementine-git-precheck-final.json": {
+            "correctDateCopy": "docs/evidence/2026-10-13-clementine-git-precheck-final.json",
+            "sizeBytes": 683,
+            "sha256": "7b43a2f285a0f579e3cd63f521d8dad5d0cbda7338a2d2be7a8dfc0c011d7394"
+          }
+        },
+        "sameContentCorrectDateCopies": true,
+        "earlierPrecheckPaths": 121,
+        "originalProspectiveFiles": 122,
+        "laterFreshPrecheckAndProspectiveRecordedSeparately": true,
+        "noStageOrRenormalizeBeforeCorrection": true,
+        "missingGuessedParentStageScopeHelperReadNotExecutedAudit": true,
+        "freshActualParentScopeAuditPassed": {
+          "parentTracked": 4765,
+          "oldEvidenceFiles": 3524,
+          "outsideEvidenceIndexEqualsParentHead": 1241,
+          "outsideWorkingBytesNotClaimedEqual": true
+        },
+        "largeRawToolOutputTruncatedNotWholeManualRead": "Restart JSON and initial whitespace diagnostics oversized text outputs were truncated; saved complete JSON is authoritative and parsed by helpers/reviewer."
+      }
+    },
+    "retained121AndFresh125PrecheckScope": {
+      "passed": true,
+      "observed": {
+        "retainedPaths": 121,
+        "laterPathsBeforeOwnReceipt": 125,
+        "prospectiveWithOwnReceipt": 126,
+        "actualStagePending": true
+      }
+    },
+    "freshReviewer126RawFilterAndWhitespaceChecks": {
+      "passed": true,
+      "observed": {
+        "paths": 126,
+        "diagnostics": [],
+        "readOnlyNoRealStage": true
+      }
+    },
+    "completePublic126BytePrivacyScan": {
+      "passed": true,
+      "observed": {
+        "files": 126,
+        "bytes": 3592825,
+        "findings": [],
+        "sevenJpegsVisuallyInspected": true,
+        "noLoginOrCredentialImageObserved": true,
+        "fourWavsAndRawSourceNoticesAllowed": true,
+        "knownCredentialPrivateKeySignedQueryPrivateCpPatternsOnlyNotAbsoluteSecretProof": true
+      }
+    }
+  },
+  "findings": [
+    {
+      "blocking": false,
+      "resolved": true,
+      "subject": "Two precheck filenames inherited 2026-10-12 date; originals preserved and byte-identical correct-date copies with separate correction/v3 precheck included in v2 manifest."
+    },
+    {
+      "blocking": false,
+      "resolved": true,
+      "subject": "Reviewer manual root signature serializer escaped PEM newlines; failed unique audit retained, corrected OpenSSL check and authoritative tuftool017 public JSON verification passed."
+    }
+  ],
+  "limitations": [
+    "Independent local evidence review only; no guest GUI interaction or full private checkpoint replay.",
+    "Program byte equality is independently compared between complete 688-entry receipt manifests; installed guest bytes were not traversed by reviewer.",
+    "Official asset bytes and retained fixed release source members/pages were checked locally; no independent new network download, upstream digest, signature, Authenticode, source-binary correspondence, reproducible build, latest release or full license closure validation.",
+    "Finite two-track WAV/XSPF acceptance only; no hearing, playback, audio-device, full music-player/format specification, broad library/DSP/network/GUI Store buttons acceptance.",
+    "Private raw registry/database changes and 287/42-line diffs are accurately represented by pins and static helper logic; reviewer did not inspect private raw/diff/checkpoint contents or establish semantic equality/root cause.",
+    "No all-workspace raw equality claim; old frozen evidence and full tracked repository sets are distinct.",
+    "Read-only raw/filter checks are pre-stage; real index/cached diff/commit/push remain pending.",
+    "Initial API403, partial frames, unaccepted full paths, 04 JPEG ENOENT, aborted tunnel/IAB refusal/Edge recovery, third GUI V1 nonterminal stop/V2 pass and old Scribus private raw loss remain historical limits."
+  ],
+  "reviewerMethodCorrection": {
+    "initialFailedResult": {
+      "path": "clementine-review-details-20261013-unique-a.json",
+      "sizeBytes": 45661,
+      "sha256": "53ef9478cdf48e53e1a410b56efac3a15518aabdcd6ddf8e7e5b92cd15af2721"
+    },
+    "originalSerializerEscapedPemNewline": true,
+    "correctedLiteralLfRootCanonicalVerificationPassed": true,
+    "authoritativeTuftool017VerificationPerformed": true,
+    "authoritativeCommandExitCode": 0,
+    "publicJsonOnlyNoInstallerDownloaded": true,
+    "noInvalidMetadataFinding": true
+  },
+  "date": "2026-10-13",
+  "baseCommit": "edc07318d5170a1119fa03120786e25bc303794f",
+  "manifest": {
+    "path": ".transfer/clementine-prospective-files-v2-20261013.json",
+    "sizeBytes": 29103,
+    "sha256": "39cc1011d83cfbfe39dc0f1df829c938a144aa1fcbdc7bf2925bd8736a999c1f",
+    "files": {
+      ".gitattributes": {
+        "sizeBytes": 30038,
+        "sha256": "1c08dc7f699acaf4697ef719b2fa77edeb511437cecad9cf2b041b16bdf0cabf"
+      },
+      "catalogue/candidate-v66/tuf/metadata/1.root.json": {
+        "sizeBytes": 2145,
+        "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+      },
+      "catalogue/candidate-v66/tuf/metadata/75.snapshot.json": {
+        "sizeBytes": 997,
+        "sha256": "03115da65d5cd4e118b817faf1a660c9b6b47de5b4104a38ff93fdaea912b40a"
+      },
+      "catalogue/candidate-v66/tuf/metadata/75.targets.json": {
+        "sizeBytes": 26542,
+        "sha256": "71ce02a1b9c2a189efb6d7ddb55d5827ef2f8d738665df297a46f81c88bce743"
+      },
+      "catalogue/candidate-v66/tuf/metadata/timestamp.json": {
+        "sizeBytes": 997,
+        "sha256": "265bfdd150761a0404b231e2b1b8d330fb56d135de98d8cebb95660b28a34401"
+      },
+      "catalogue/candidate-v66/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+        "sizeBytes": 4879,
+        "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+      },
+      "catalogue/candidate-v66/tuf/targets/056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9.windows-nsis-20261012.acceptance.json": {
+        "sizeBytes": 4976,
+        "sha256": "056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9"
+      },
+      "catalogue/candidate-v66/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+        "sizeBytes": 9031,
+        "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+      },
+      "catalogue/candidate-v66/tuf/targets/0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d.windows-notepadnext-20261012.acceptance.json": {
+        "sizeBytes": 6011,
+        "sha256": "0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d"
+      },
+      "catalogue/candidate-v66/tuf/targets/116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a.windows-poedit-20261012.acceptance.json": {
+        "sizeBytes": 99469,
+        "sha256": "116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a"
+      },
+      "catalogue/candidate-v66/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+        "sizeBytes": 5624,
+        "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+      },
+      "catalogue/candidate-v66/tuf/targets/1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f.windows-transmission-20261011.acceptance.json": {
+        "sizeBytes": 5165,
+        "sha256": "1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f"
+      },
+      "catalogue/candidate-v66/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+        "sizeBytes": 5280,
+        "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+      },
+      "catalogue/candidate-v66/tuf/targets/1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af.windows-nomacs-20261011.acceptance.json": {
+        "sizeBytes": 4995,
+        "sha256": "1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af"
+      },
+      "catalogue/candidate-v66/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+        "sizeBytes": 21857,
+        "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+      },
+      "catalogue/candidate-v66/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+        "sizeBytes": 7918,
+        "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+      },
+      "catalogue/candidate-v66/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+        "sizeBytes": 1676,
+        "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+      },
+      "catalogue/candidate-v66/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json": {
+        "sizeBytes": 4562,
+        "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+      },
+      "catalogue/candidate-v66/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+        "sizeBytes": 2738,
+        "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+      },
+      "catalogue/candidate-v66/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+        "sizeBytes": 7617,
+        "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+      },
+      "catalogue/candidate-v66/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+        "sizeBytes": 1699,
+        "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+      },
+      "catalogue/candidate-v66/tuf/targets/3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282.windows-clementine-20261013.acceptance.json": {
+        "sizeBytes": 15140,
+        "sha256": "3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282"
+      },
+      "catalogue/candidate-v66/tuf/targets/3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999.windows-copyq-20261012.pending-correction.json": {
+        "sizeBytes": 1575,
+        "sha256": "3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999"
+      },
+      "catalogue/candidate-v66/tuf/targets/489b05e92a665cd53be4eff924101cdb4dc1fbbd7546cc6bc85963f48aef53e5.catalogue.json": {
+        "sizeBytes": 72026,
+        "sha256": "489b05e92a665cd53be4eff924101cdb4dc1fbbd7546cc6bc85963f48aef53e5"
+      },
+      "catalogue/candidate-v66/tuf/targets/48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb.windows-doxygen-20261012.acceptance.json": {
+        "sizeBytes": 406124,
+        "sha256": "48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb"
+      },
+      "catalogue/candidate-v66/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+        "sizeBytes": 10640,
+        "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+      },
+      "catalogue/candidate-v66/tuf/targets/59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934.windows-treesheets-20261012.acceptance.json": {
+        "sizeBytes": 6769,
+        "sha256": "59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934"
+      },
+      "catalogue/candidate-v66/tuf/targets/5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f.windows-xmlcopyeditor-20261011.acceptance.json": {
+        "sizeBytes": 4553,
+        "sha256": "5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f"
+      },
+      "catalogue/candidate-v66/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+        "sizeBytes": 1617,
+        "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+      },
+      "catalogue/candidate-v66/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+        "sizeBytes": 12679,
+        "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+      },
+      "catalogue/candidate-v66/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+        "sizeBytes": 1652,
+        "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+      },
+      "catalogue/candidate-v66/tuf/targets/6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f.windows-picard-20261012.acceptance.json": {
+        "sizeBytes": 6277,
+        "sha256": "6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f"
+      },
+      "catalogue/candidate-v66/tuf/targets/707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3.windows-lmms-20261012.acceptance.json": {
+        "sizeBytes": 621370,
+        "sha256": "707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3"
+      },
+      "catalogue/candidate-v66/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+        "sizeBytes": 9285,
+        "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+      },
+      "catalogue/candidate-v66/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+        "sizeBytes": 1146,
+        "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+      },
+      "catalogue/candidate-v66/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+        "sizeBytes": 4783,
+        "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+      },
+      "catalogue/candidate-v66/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+        "sizeBytes": 6220,
+        "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+      },
+      "catalogue/candidate-v66/tuf/targets/8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29.windows-qxmledit-20261011.acceptance.json": {
+        "sizeBytes": 4514,
+        "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+      },
+      "catalogue/candidate-v66/tuf/targets/8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb.windows-cppcheck-20261012.acceptance.json": {
+        "sizeBytes": 23230,
+        "sha256": "8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb"
+      },
+      "catalogue/candidate-v66/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+        "sizeBytes": 4223,
+        "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+      },
+      "catalogue/candidate-v66/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json": {
+        "sizeBytes": 7879,
+        "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+      },
+      "catalogue/candidate-v66/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+        "sizeBytes": 4642,
+        "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+      },
+      "catalogue/candidate-v66/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json": {
+        "sizeBytes": 7564,
+        "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+      },
+      "catalogue/candidate-v66/tuf/targets/9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058.windows-windjview-20261011.acceptance.json": {
+        "sizeBytes": 6405,
+        "sha256": "9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058"
+      },
+      "catalogue/candidate-v66/tuf/targets/9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0.windows-gvim-20261012.acceptance.json": {
+        "sizeBytes": 4767,
+        "sha256": "9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0"
+      },
+      "catalogue/candidate-v66/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+        "sizeBytes": 11228,
+        "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+      },
+      "catalogue/candidate-v66/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+        "sizeBytes": 1656,
+        "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+      },
+      "catalogue/candidate-v66/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+        "sizeBytes": 6445,
+        "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+      },
+      "catalogue/candidate-v66/tuf/targets/afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd.windows-nsis-20261012.corrected.acceptance.json": {
+        "sizeBytes": 5463,
+        "sha256": "afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd"
+      },
+      "catalogue/candidate-v66/tuf/targets/b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34.windows-gnuplot-20261012.acceptance.json": {
+        "sizeBytes": 5745,
+        "sha256": "b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34"
+      },
+      "catalogue/candidate-v66/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+        "sizeBytes": 6071,
+        "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+      },
+      "catalogue/candidate-v66/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json": {
+        "sizeBytes": 4567,
+        "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+      },
+      "catalogue/candidate-v66/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+        "sizeBytes": 10745,
+        "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+      },
+      "catalogue/candidate-v66/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+        "sizeBytes": 6075,
+        "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+      },
+      "catalogue/candidate-v66/tuf/targets/b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931.windows-rednotebook-20261011.acceptance.json": {
+        "sizeBytes": 5786,
+        "sha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931"
+      },
+      "catalogue/candidate-v66/tuf/targets/b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5.windows-rapidcrc-20261012.acceptance.json": {
+        "sizeBytes": 6788,
+        "sha256": "b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5"
+      },
+      "catalogue/candidate-v66/tuf/targets/ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba.windows-scribus-20261012.acceptance.json": {
+        "sizeBytes": 12090,
+        "sha256": "ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba"
+      },
+      "catalogue/candidate-v66/tuf/targets/c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281.windows-mkvtoolnix-20261012.acceptance.json": {
+        "sizeBytes": 16769,
+        "sha256": "c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281"
+      },
+      "catalogue/candidate-v66/tuf/targets/cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86.windows-librecad-20261012.acceptance.json": {
+        "sizeBytes": 14404,
+        "sha256": "cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86"
+      },
+      "catalogue/candidate-v66/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json": {
+        "sizeBytes": 7460,
+        "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+      },
+      "catalogue/candidate-v66/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+        "sizeBytes": 4586,
+        "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+      },
+      "catalogue/candidate-v66/tuf/targets/d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3.windows-copyq-20261012.acceptance.json": {
+        "sizeBytes": 34032,
+        "sha256": "d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3"
+      },
+      "catalogue/candidate-v66/tuf/targets/da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3.windows-qbittorrent-20261012.acceptance.json": {
+        "sizeBytes": 4945,
+        "sha256": "da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3"
+      },
+      "catalogue/candidate-v66/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json": {
+        "sizeBytes": 3703,
+        "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+      },
+      "catalogue/candidate-v66/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+        "sizeBytes": 9388,
+        "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+      },
+      "catalogue/candidate-v66/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json": {
+        "sizeBytes": 8122,
+        "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+      },
+      "catalogue/candidate-v66/tuf/targets/f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d.windows-meld-20261011.acceptance.json": {
+        "sizeBytes": 5518,
+        "sha256": "f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d"
+      },
+      "catalogue/candidate-v66/tuf/targets/f7382675ef473b007e8d9ec735d9ede781bbbf3cd6f579438aa9836327f4c0ab.windows-codeblocks-20261012.acceptance.json": {
+        "sizeBytes": 16916,
+        "sha256": "f7382675ef473b007e8d9ec735d9ede781bbbf3cd6f579438aa9836327f4c0ab"
+      },
+      "catalogue/candidate-v66/tuf/targets/f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa.windows-mediainfo-20261012.acceptance.json": {
+        "sizeBytes": 28230,
+        "sha256": "f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa"
+      },
+      "catalogue/candidate-v66/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json": {
+        "sizeBytes": 6906,
+        "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+      },
+      "catalogue/candidate-v66/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+        "sizeBytes": 3517,
+        "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+      },
+      "catalogue/candidate-v66/tuf/trusted-root.json": {
+        "sizeBytes": 2145,
+        "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+      },
+      "docs/evidence/2026-10-12-clementine-git-byte-preservation-precheck.json": {
+        "sizeBytes": 1522,
+        "sha256": "534045977cd87b977429e371f80a3879eed30a25a30d07129930e77be83a995e"
+      },
+      "docs/evidence/2026-10-12-clementine-git-precheck-final.json": {
+        "sizeBytes": 683,
+        "sha256": "7b43a2f285a0f579e3cd63f521d8dad5d0cbda7338a2d2be7a8dfc0c011d7394"
+      },
+      "docs/evidence/2026-10-13-clementine-activation.json": {
+        "sizeBytes": 1760,
+        "sha256": "e422def4d245c2ba2172f70b235e1b35311428384d5ee459f910d73259870a46"
+      },
+      "docs/evidence/2026-10-13-clementine-current-state.json": {
+        "sizeBytes": 928,
+        "sha256": "de9ea4a7c0910cd8dba0771a3dc3de8bff050f3997a7ccde3cd95a7e15dc59b1"
+      },
+      "docs/evidence/2026-10-13-clementine-failures.json": {
+        "sizeBytes": 2156,
+        "sha256": "3168b728b80f12242f55a67b1601acb2b566d89925a57dbb5dc2c2804d428625"
+      },
+      "docs/evidence/2026-10-13-clementine-final-verification.json": {
+        "sizeBytes": 1392,
+        "sha256": "27449452d3b4e2eb1e437bab5c8cd971f0e2cc548ab140ecaa9c59e1064340df"
+      },
+      "docs/evidence/2026-10-13-clementine-git-byte-preservation-precheck.json": {
+        "sizeBytes": 1522,
+        "sha256": "534045977cd87b977429e371f80a3879eed30a25a30d07129930e77be83a995e"
+      },
+      "docs/evidence/2026-10-13-clementine-git-precheck-final-v3.json": {
+        "sizeBytes": 422,
+        "sha256": "17bb64ca9241aa3dedb365e88ad0e15ad645499fa5021273480016b1785bc430"
+      },
+      "docs/evidence/2026-10-13-clementine-git-precheck-final.json": {
+        "sizeBytes": 683,
+        "sha256": "7b43a2f285a0f579e3cd63f521d8dad5d0cbda7338a2d2be7a8dfc0c011d7394"
+      },
+      "docs/evidence/2026-10-13-clementine-git-precheck-naming-correction.json": {
+        "sizeBytes": 1379,
+        "sha256": "e5b83f274f48b3fc820b9a359e6564c2f720a0b144e39e54bd830e04da15be35"
+      },
+      "docs/evidence/2026-10-13-clementine-gui.json": {
+        "sizeBytes": 155772,
+        "sha256": "c86f75e2f7d75e5dc5ffa90b70bbe54b5fa5777c8bd0c0f85dcc0f42c233d6ab"
+      },
+      "docs/evidence/2026-10-13-clementine-installation.json": {
+        "sizeBytes": 123093,
+        "sha256": "87659778d771597cb0529a834d50f6f90c7b74f98925426f93a9ee83d094595c"
+      },
+      "docs/evidence/2026-10-13-clementine-later-observations.json": {
+        "sizeBytes": 6705,
+        "sha256": "07ac7b00f31543ae58cb8fe0af93d7b843a184657cff188b412b8c1f7e8fe08a"
+      },
+      "docs/evidence/2026-10-13-clementine-market-gui.json": {
+        "sizeBytes": 147884,
+        "sha256": "c87bc23e8c94b3def04ca7e7c3c014de1bea169e58590bccb300c43d160c7b86"
+      },
+      "docs/evidence/2026-10-13-clementine-publication.json": {
+        "sizeBytes": 53391,
+        "sha256": "f07fac8c7aa7505db76717e362df5db156e3a0fe8e230342ffbe5556ddad8dd6"
+      },
+      "docs/evidence/2026-10-13-clementine-runtime-recovery.json": {
+        "sizeBytes": 300616,
+        "sha256": "ccf8e044e608a92df11b58c8b11746d9381214da45fc8ea9a7ced9867e952fcf"
+      },
+      "docs/evidence/2026-10-13-clementine-scope-and-failure-corrections.json": {
+        "sizeBytes": 3119,
+        "sha256": "95a015e5be6321c638ead5f5bac0d55b307e98114b256d123ee6d83947635167"
+      },
+      "docs/evidence/2026-10-13-clementine-source.json": {
+        "sizeBytes": 9108,
+        "sha256": "7a303c834774b15bc71246dd24d1fecc78897adfd5f2e77f65f1d359e357c6f7"
+      },
+      "docs/evidence/clementine-20261013/clementine-01-two-inputs-20261013.jpg": {
+        "sizeBytes": 22100,
+        "sha256": "8a420d4dcde7de9e108d3d393a8a119feac0c389dc08d6ad1229952eb5a57673"
+      },
+      "docs/evidence/clementine-20261013/clementine-02-about-20261013.jpg": {
+        "sizeBytes": 34322,
+        "sha256": "ea9359c2199f3c744dd96692c0587fb9113dc1ecd8239a0c8bf28e45f3f28a16"
+      },
+      "docs/evidence/clementine-20261013/clementine-03-original-explicit-load-20261013.jpg": {
+        "sizeBytes": 23290,
+        "sha256": "a5d4d6a5049013e2b8360646486400fb5eb6c5c243fc7ad5d98512482b287093"
+      },
+      "docs/evidence/clementine-20261013/clementine-04-market-input-reordered-20261013.jpg": {
+        "sizeBytes": 48097,
+        "sha256": "bd64a2a2ff0ccce3b58466e7b779405a815642a8b9f6e77695c313636050f9f9"
+      },
+      "docs/evidence/clementine-20261013/clementine-05-market-saved-20261013.jpg": {
+        "sizeBytes": 47662,
+        "sha256": "cc90bcc785c7e957dcf79c5d552a8d455d32de6b95b98da82b67f434f83b6428"
+      },
+      "docs/evidence/clementine-20261013/clementine-06-market-explicit-load-20261013.jpg": {
+        "sizeBytes": 49647,
+        "sha256": "bfb2eaade809174969bb192e6299a2448919cc5f6686c1be15b3f5e64b2f836f"
+      },
+      "docs/evidence/clementine-20261013/clementine-07-rollback-original-load-20261013.jpg": {
+        "sizeBytes": 43641,
+        "sha256": "211acef54e0d3f85519ddb5ddb2000db64fa1e1af0b537a47147f43ba7a8ad4e"
+      },
+      "docs/evidence/clementine-20261013/market/market.xspf": {
+        "sizeBytes": 381,
+        "sha256": "c1755cd3980e9490959e0cbe6a17138797ed830a85eae7041411c68ace51922a"
+      },
+      "docs/evidence/clementine-20261013/market/市场音频A.wav": {
+        "sizeBytes": 32044,
+        "sha256": "6ac6086657faf653e6770681e26b84deff00518c742522f03ace3d16562687cf"
+      },
+      "docs/evidence/clementine-20261013/market/市场音频B.wav": {
+        "sizeBytes": 32044,
+        "sha256": "310a8683f6025122d866f00452d418ebddb35095405d45a91396bbc391f6d172"
+      },
+      "docs/evidence/clementine-20261013/original/original.xspf": {
+        "sizeBytes": 381,
+        "sha256": "045b192fdcf0f1cfbe9844756839de670abdaf39e0240a7fdeb86da3e8b6a1cb"
+      },
+      "docs/evidence/clementine-20261013/original/原始音频A.wav": {
+        "sizeBytes": 32044,
+        "sha256": "cb5c6604e9a1f1990437133e550427afaa30b08c65408c2a1e51a914ebcbd39a"
+      },
+      "docs/evidence/clementine-20261013/original/原始音频B.wav": {
+        "sizeBytes": 32044,
+        "sha256": "2dc569bae88701c3b9794a939681e716c6679279adf50ba967f7d2deed273098"
+      },
+      "docs/evidence/clementine-20261013/source/3rdparty/gmock/COPYING": {
+        "sizeBytes": 1475,
+        "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+      },
+      "docs/evidence/clementine-20261013/source/3rdparty/gmock/README": {
+        "sizeBytes": 13494,
+        "sha256": "94c3ebcc60f469a82f2429c4b1a2aedc102d41e53173a16b4a87416a1feb90b3"
+      },
+      "docs/evidence/clementine-20261013/source/3rdparty/gmock/gtest/COPYING": {
+        "sizeBytes": 1475,
+        "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138"
+      },
+      "docs/evidence/clementine-20261013/source/3rdparty/gmock/gtest/README": {
+        "sizeBytes": 15031,
+        "sha256": "5d3c14f2d919b0d868b4bc3d0603ddbb549f008e48221aed3857876ded83898e"
+      },
+      "docs/evidence/clementine-20261013/source/3rdparty/libprojectm/COPYING": {
+        "sizeBytes": 870,
+        "sha256": "ffc0dee05d3fd4ecd0defe7fc6684c5d5d64f2125c7329208706128997bbbcf9"
+      },
+      "docs/evidence/clementine-20261013/source/3rdparty/qsqlite/README": {
+        "sizeBytes": 332,
+        "sha256": "6a6960105d581a2a53c6cd08f70d5a0e7b26046cc149a3056b63bd58fae21177"
+      },
+      "docs/evidence/clementine-20261013/source/3rdparty/vreen/vreen/cmake/README": {
+        "sizeBytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "docs/evidence/clementine-20261013/source/CMakeLists.txt": {
+        "sizeBytes": 15859,
+        "sha256": "6a6bf9ff6adf52816c61bd25ecf06aa4b551cd327dbeecddd5a7dfbaeb1ea64e"
+      },
+      "docs/evidence/clementine-20261013/source/COPYING": {
+        "sizeBytes": 35147,
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      },
+      "docs/evidence/clementine-20261013/source/dist/windows/Capabilities.nsh": {
+        "sizeBytes": 17449,
+        "sha256": "06aaae21c57f497569fceffae612406bc08e4dd6bc86cc401be0cef5b6dc1b91"
+      },
+      "docs/evidence/clementine-20261013/source/dist/windows/FileAssociation.nsh": {
+        "sizeBytes": 4599,
+        "sha256": "c2138870f5b533bde2bb93bae878b5e140197dd87a1334d270614c034614fcdb"
+      },
+      "docs/evidence/clementine-20261013/source/dist/windows/clementine-portable.nsi": {
+        "sizeBytes": 140819,
+        "sha256": "864b761e9dc178c523e5d0c10bf9bac45b855abfe5625ae728a9c9c5eb4cedca"
+      },
+      "docs/evidence/clementine-20261013/source/dist/windows/clementine.nsi": {
+        "sizeBytes": 140730,
+        "sha256": "8b3aa51e09b2884f26937efb7c11b8bc3c53cadb7265a0840b7f99b657abdf71"
+      },
+      "docs/evidence/clementine-20261013/source/src/main.cpp": {
+        "sizeBytes": 15419,
+        "sha256": "0a0a6b238701bb03c6eb768ecd62265a6e0004be37595ac00878e63bdb1bbed0"
+      },
+      "docs/evidence/clementine-20261013/source/src/playlist/playlistmanager.cpp": {
+        "sizeBytes": 16462,
+        "sha256": "a8d5693f9ba7d1d9d05feade36277d1b5fab01d8f130e6f41739ff1ec75d43cf"
+      },
+      "docs/evidence/clementine-20261013/source/src/playlistparsers/m3uparser.cpp": {
+        "sizeBytes": 4053,
+        "sha256": "7cdf3cc06d86dcaf146e6e560fb900f05f2b5593d86de043d136784a5433116a"
+      },
+      "docs/evidence/clementine-20261013/source/src/playlistparsers/playlistparser.cpp": {
+        "sizeBytes": 4477,
+        "sha256": "803312d7b9cf0b97aa6c60e41272a4fbf92ff0e00047aa823b053420ae3677a9"
+      },
+      "docs/evidence/clementine-20261013/source/src/playlistparsers/plsparser.cpp": {
+        "sizeBytes": 2716,
+        "sha256": "01a26a9436b7d8aab80ef5bee5f12216cf4e9eebcba74f2864f3052a97ffb25b"
+      },
+      "docs/evidence/clementine-20261013/source/src/playlistparsers/xspfparser.cpp": {
+        "sizeBytes": 6014,
+        "sha256": "2a3ce509323385e270e1bc4b940a4dc70a4ca692cb39025435a1104fc7414c4c"
+      },
+      "docs/evidence/clementine-20261013/source/src/ui/mainwindow.cpp": {
+        "sizeBytes": 101534,
+        "sha256": "7dccbcbf032c6e5fd96107e4e68ed536f539c15a6a07f2bbc347b7bd3ccd03cb"
+      },
+      "docs/evidence/windows-clementine-20261013.acceptance.json": {
+        "sizeBytes": 15140,
+        "sha256": "3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282"
+      },
+      "docs/windows-1000-progress.json": {
+        "sizeBytes": 73660,
+        "sha256": "7e1235d0553b26c9ba912edf115d95f3097cbd993dd64726ab97b605138f26ac"
+      },
+      "docs/windows-rolling-20261013-clementine.md": {
+        "sizeBytes": 7642,
+        "sha256": "f34222746eb09d67e84b55e835ee68bfdcc3bdb163d4752de345fa44d4be4c54"
+      }
+    }
+  },
+  "reviewedVisualEvidence": {
+    "count": 7,
+    "allActualJpegBytesMagicAndDigestChecked": true,
+    "allSevenVisuallyViewed": true,
+    "observations": [
+      "01 original two Chinese WAV tracks in A,B order",
+      "02 About version1.3.1",
+      "03 original explicit-load tab and A,B",
+      "04 market A,B order",
+      "05 market saved-list view",
+      "06 market explicit-load tab and A,B",
+      "07 rollback original tabs and A,B"
+    ],
+    "screenshotsNotIndependentNativeActionReplay": true
+  },
+  "observedRuntimeBoundary": "475 Core jobs and 140 complete Store rows; root1/role75/candidate-v66/catalogue62=60+2; receipts and static helper comparisons checked, no reviewer guest/privateCP replay"
+}
