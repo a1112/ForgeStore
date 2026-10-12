@@ -1,0 +1,21 @@
+{
+  "secondStageAll2594IndexBytesMatched": true,
+  "secondActualDiffCheckFailedBeforeCommit": true,
+  "failureSha256": "cf1b55f503c621299992c2cbbeae0f8bc0cd109572b03280f627f63a484a7e8b",
+  "actualSecondIndexPaths": 3835,
+  "actualSecondIndexPinsSha256": "1ee5c7b806ae978a79279b4b5669ecb9992bfdce6205387a5d9cc1108a65f69e",
+  "sourcePath": "docs/evidence/2026-10-12-rapidcrc/source/threadprocs.cpp",
+  "sourceLine": 231,
+  "sourceLineOriginalHex": "2020202009090909090a",
+  "sourceOriginalSha256": "efd3bbe62b344bf9cdecfa9ec5fed972fa3ddfe16b8de954bd1b3b5f99314302",
+  "diagnosis": "The first diagnostic reported trailing whitespace for this same original line. After allowing trailing whitespace for this exact upstream path, the actual second diff check exposed space-before-tab in the same line. No source bytes changed.",
+  "singlePreciseAttributeFlagAdded": "-space-before-tab",
+  "oldAttributeLine": "docs/evidence/2026-10-12-rapidcrc/source/threadprocs.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+  "newAttributeLine": "docs/evidence/2026-10-12-rapidcrc/source/threadprocs.cpp -text whitespace=cr-at-eol,-blank-at-eol,-space-before-tab",
+  "allOtherAttributesRawBytesPreserved": true,
+  "firstAndSecondFailedReceiptsReviewsReportsAndFreezeManifestsPreserved": true,
+  "old2482ImmutableAndOriginal27FrozenBytesPreserved": true,
+  "thirdStageNotGeneratedAtCorrectionFreeze": true,
+  "noCommitOrPushOrGuestMutation": true,
+  "readOnlyDiagnosticConfigGetExit1WasUnsetNotFailure": true
+}

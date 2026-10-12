@@ -1,0 +1,55 @@
+{
+  "activatedPreview": true,
+  "metadataVersion": 66,
+  "rootVersion": 1,
+  "entries": 53,
+  "coreJobs": 401,
+  "fullStoreRows": 120,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-rapidcrc-20261012.acceptance.json#rapidcrc",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1",
+        "size": 671744,
+        "target": "RapidCRC-Setup-0.3.42-x64.msi",
+        "url": "https://dl.ov2.eu/programs/rapidcrc-unicode/RapidCRC-Setup-0.3.42-x64.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "rapidcrc"
+    },
+    "id": "rapidcrc",
+    "license": "GPL-2.0-or-later",
+    "name": {
+      "en": "RapidCRC Unicode",
+      "zhCN": "RapidCRC Unicode 校验工具"
+    },
+    "origin": "https://www.ov2.eu/programs/rapidcrc-unicode",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "OV2 / Sebastian Ewert",
+    "summary": {
+      "en": "Limited two small binary inputs including Chinese filename: GUI SHA256 computation/checksum save and fresh-process FileOK tested; advanced/shell/other algorithms unverified.",
+      "zhCN": "仅小型含中文文件名输入的 SHA-256 计算、GUI 校验文件保存与新进程 File OK 验证通过；其他算法和高级功能未验收"
+    },
+    "version": "0.3.42"
+  },
+  "installed": {
+    "appId": "rapidcrc",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "0.3.42"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "7a31261891890ee1789e13091efc4c1233e9a3728026881948340451bb4c53c9",
+    "coreJobs": 401,
+    "fullStoreRows": 120
+  },
+  "independentMarketGenerationPending": true,
+  "countsAsCompleted": false
+}

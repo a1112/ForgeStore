@@ -1,0 +1,248 @@
+{
+  "applicationId": "rapidcrc",
+  "version": "0.3.42",
+  "officialHomepage": "https://www.ov2.eu/programs/rapidcrc-unicode",
+  "downloads": {
+    "version": "0.3.42",
+    "downloadedInstaller": true,
+    "oldImmutableBytesPreserved": true,
+    "officialPage": {
+      "file": "official-page.html",
+      "requestedUrl": "https://www.ov2.eu/programs/rapidcrc-unicode",
+      "finalUrlWithoutQuery": "https://www.ov2.eu/programs/rapidcrc-unicode",
+      "status": 200,
+      "sizeBytes": 34916,
+      "sha256": "723b98c6c1f1c9abf2d7c0655bb7eb9359b020fffc184a13bbc2ae2705654de1"
+    },
+    "installer": {
+      "file": "RapidCRC-Setup-0.3.42-x64.msi",
+      "requestedUrl": "https://dl.ov2.eu/programs/rapidcrc-unicode/RapidCRC-Setup-0.3.42-x64.msi",
+      "finalUrlWithoutQuery": "https://dl.ov2.eu/programs/rapidcrc-unicode/RapidCRC-Setup-0.3.42-x64.msi",
+      "status": 200,
+      "sizeBytes": 671744,
+      "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1"
+    },
+    "tags": null,
+    "tagPin": null,
+    "failures": [
+      {
+        "stage": "official-tags-api",
+        "status": 403
+      }
+    ],
+    "upstreamInstallerSizeOrDigestMatched": false,
+    "readAt": "2026-10-12T01:23:12.902850+00:00"
+  },
+  "source": {
+    "version": "0.3.42",
+    "fixedTagCommit": "adb927b1c144dee194f196ad51d23819f5167f28",
+    "tagLsRemoteSha256": "fc151cc5a429f35253736ef24831df552ffa0a8313c982bf8b050eaa3b69d22a",
+    "source": {
+      "requestedUrl": "https://codeload.github.com/OV2/RapidCRC-Unicode/tar.gz/adb927b1c144dee194f196ad51d23819f5167f28",
+      "finalUrlWithoutQuery": "https://codeload.github.com/OV2/RapidCRC-Unicode/tar.gz/adb927b1c144dee194f196ad51d23819f5167f28",
+      "status": 200,
+      "sizeBytes": 472052,
+      "sha256": "5f5969230785dcd48879ff281ebcbb9ed1f4063b6a6e6faf4d3a45ae383d04f0"
+    },
+    "sourceMembers": {
+      "LICENSE": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/LICENSE",
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      },
+      "README.md": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/README.md",
+        "sizeBytes": 816,
+        "sha256": "b9fc1a3582c4b02ee6b4df3c2405ad6175cdfe3c963af1bef0c78b97016295eb"
+      },
+      "RapidCRC.rc": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/RapidCRC.rc",
+        "sizeBytes": 16877,
+        "sha256": "816fbfb51b5c35b20b2574726029d8ebc9d06fd59ada8447d68ad002c7b6bb52"
+      },
+      "actfcts.cpp": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/actfcts.cpp",
+        "sizeBytes": 38131,
+        "sha256": "97ab3e46fcbb425a104160190b66359ada5ccfefa7b2e6bdb41003d3e434a12b"
+      },
+      "dlgproc.cpp": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/dlgproc.cpp",
+        "sizeBytes": 60513,
+        "sha256": "4ef29d54dfc1502a0b920622afde7a9026ef3fe35936b791e90093ce468bf51c"
+      },
+      "gpl-2.0.txt": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/gpl-2.0.txt",
+        "sizeBytes": 17987,
+        "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+      },
+      "rapidcrc.vcxproj": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/rapidcrc.vcxproj",
+        "sizeBytes": 22901,
+        "sha256": "a346198d565eba3813a71b51be69779721f15a7b9faf8707060e03610d13716c"
+      },
+      "resource.h": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/resource.h",
+        "sizeBytes": 5234,
+        "sha256": "44c9a0223c56aa96daed6bfaf13b827fdffb64d5ad662c561799060ac6f337b1"
+      },
+      "sfvfcts.cpp": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/sfvfcts.cpp",
+        "sizeBytes": 18178,
+        "sha256": "c7ecb2d405fb28282493e3372fa3445e514b0451a5cbe45ad4e15d58c9cbd2a9"
+      },
+      "threadprocs.cpp": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/threadprocs.cpp",
+        "sizeBytes": 33462,
+        "sha256": "efd3bbe62b344bf9cdecfa9ec5fed972fa3ddfe16b8de954bd1b3b5f99314302"
+      },
+      "winmain.cpp": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/winmain.cpp",
+        "sizeBytes": 7079,
+        "sha256": "7cf92ca159fed41b13236420bf7542d2cb3a4e88dd0002eaad9344fc1f29466a"
+      },
+      "wsx/WixUI_FeatureTreeNoLic.wxs": {
+        "archiveMember": "RapidCRC-Unicode-adb927b1c144dee194f196ad51d23819f5167f28/wsx/WixUI_FeatureTreeNoLic.wxs",
+        "sizeBytes": 3364,
+        "sha256": "70c33c95f4fa8328b5db3c2a3c8cd5459a34f17fa6216c0707fe6d5c498fb47c"
+      }
+    },
+    "msiInspection": {
+      "properties": [
+        [
+          "DiskPrompt",
+          "RapidCRC (x64) cab 1"
+        ],
+        [
+          "UpgradeCode",
+          "{82B033AA-A311-40DC-BBF6-1544C2AE5480}"
+        ],
+        [
+          "WixUIRMOption",
+          "UseRM"
+        ],
+        [
+          "ALLUSERS",
+          "1"
+        ],
+        [
+          "Manufacturer",
+          "RapidCRC"
+        ],
+        [
+          "ProductCode",
+          "{E09B6393-A87A-41FD-B598-8A7D880F88EF}"
+        ],
+        [
+          "ProductLanguage",
+          "1033"
+        ],
+        [
+          "ProductName",
+          "RapidCRC (x64) 0.3.42"
+        ],
+        [
+          "ProductVersion",
+          "0.3.42"
+        ],
+        [
+          "DefaultUIFont",
+          "WixUI_Font_Normal"
+        ],
+        [
+          "WixUI_Mode",
+          "FeatureTree"
+        ],
+        [
+          "ErrorDialog",
+          "ErrorDlg"
+        ],
+        [
+          "SecureCustomProperties",
+          "NEWERVERSIONDETECTED;OLDERVERSIONBEINGUPGRADED"
+        ],
+        [
+          "WixPdbPath",
+          "E:\\Proggys\\Programming\\vcprojects\\rapidcrcGit\\wsx\\RapidCRC-Setup-0.3.42-x64.wixpdb"
+        ]
+      ],
+      "directories": [
+        [
+          "INSTALLDIR",
+          "ProgramFiles64Folder",
+          "RapidCRC"
+        ],
+        [
+          "ProgramMenuDir",
+          "ProgramMenuFolder",
+          "5lf0pxa-|RapidCRC (x64)"
+        ],
+        [
+          "TARGETDIR",
+          "",
+          "SourceDir"
+        ],
+        [
+          "ProgramFiles64Folder",
+          "TARGETDIR",
+          "PFiles"
+        ],
+        [
+          "ProgramMenuFolder",
+          "TARGETDIR",
+          "Programs"
+        ]
+      ],
+      "files": [
+        [
+          "RapidCRC.exe",
+          "1143296",
+          "0.3.42.0"
+        ],
+        [
+          "ncgyzrjc.dll|rcrcshex64.dll",
+          "806400",
+          "0.3.36.0"
+        ],
+        [
+          "hashfile.ico",
+          "99678",
+          ""
+        ]
+      ],
+      "features": [
+        [
+          "ShellExt",
+          "Shell Extension",
+          "1"
+        ],
+        [
+          "MainProgram",
+          "RapidCRC (x64) 0.3.42",
+          "1"
+        ],
+        [
+          "FileExtAssoc",
+          "File Associations",
+          "1"
+        ]
+      ]
+    },
+    "sourceBinaryCorrespondenceVerified": false,
+    "upstreamSourceDigestVerified": false
+  },
+  "mainLicense": "GPL-2.0-or-later",
+  "mainLicenseBasis": "Fixed winmain.cpp explicitly GPL version2 or any later version. LICENSE and gpl-2.0.txt contain GPL2 text.",
+  "installedLicenseNamedFileFound": false,
+  "installedLicenseComparisonVerified": false,
+  "completeBundledLicenseClosureVerified": false,
+  "upstreamPublishedInstallerDigestVerified": false,
+  "upstreamPublishedSourceDigestVerified": false,
+  "sourceBinaryCorrespondenceVerified": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerNativeManagedMsi": true,
+  "installerProperties": {},
+  "defaultShellExtensionAndAssociationsFeaturesPresent": true,
+  "shellExtensionOrAssociationFunctionAccepted": false,
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false
+}

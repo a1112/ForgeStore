@@ -521,6 +521,15 @@
       "signedCatalogue": "catalogue/candidate-v56/tuf",
       "publication": "docs/evidence/2026-10-12-doxygen-publication.json",
       "limitation": "Only small ASCII Doxyfile/C++ path project-name edit, SaveAs, GUI HTML/XML generation and new-process regeneration; Chinese config path unresolved. No full documentation/language/spec/browser-rendering or unattended acceptance; main GPLv2 declaration or-later scope, installed-license comparison and full bundle closure unverified."
+    },
+    {
+      "id": "rapidcrc",
+      "version": "0.3.42",
+      "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1",
+      "evidence": "docs/evidence/windows-rapidcrc-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v57/tuf",
+      "publication": "docs/evidence/2026-10-12-rapidcrc-publication.json",
+      "limitation": "Only two small binary inputs per generation including Chinese basename, GUI SHA256 computation and ASCII checksum save, new-process FileOK. Other algorithms, mismatch/missing files, advanced/shell/unattended/network flows and full bundled license closure unverified."
     }
   ],
   "queue": [
@@ -737,12 +746,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "50/1000 finite Windows acceptance;14 unresolved unchanged. Doxygen1.13.2 only small ASCII config/C++ source GUI HTML/XML generation and new-process regeneration; Chinese config path unresolved. candidate-v56/root1/role65;398 fullCore/120 fullStore. Strict SSH stdin rolling-current-state-doxygen-20261012.py. Preserve all frozen/trust/history/private checkpoints and actual third-GUI registry changes. Independent review/index/commit/push pending at publication freeze.",
+  "next": "51/1000 finite Windows acceptance;14 unresolved unchanged. RapidCRC Unicode0.3.42 only small binary GUI SHA256/save/new-process FileOK and finite local market lifecycle. candidate-v57/root1/role66;405 fullCore/122 fullStore. Strict SSH stdin rolling-current-state-rapidcrc-20261012.py. Preserve all frozen/trust/history/private checkpoints and actual third-GUI registry/options changes. Independent review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 50,
+    "acceptedLocalMarket": 51,
     "explicitlyBlockedCandidates": 14,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -750,25 +759,25 @@
     "pendingCandidates": 14
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v56/tuf",
-    "metadataVersion": 65,
-    "catalogueEntries": 52,
-    "acceptedDistinctWindowsApps": 50,
+    "signedCatalogue": "catalogue/candidate-v57/tuf",
+    "metadataVersion": 66,
+    "catalogueEntries": 53,
+    "acceptedDistinctWindowsApps": 51,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-doxygen-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-rapidcrc-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-mediainfo-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-doxygen-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-doxygen-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-rapidcrc-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-doxygen-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-rapidcrc-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-copyq-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-doxygen.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-doxygen-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-rapidcrc.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-rapidcrc-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "completedAt": "2026-10-12T02:15:26.064113+00:00",
+  "phase": "FINAL-incremental-review-after-first-index-byte-failure-before-renormalization",
+  "applicationId": "rapidcrc",
+  "version": "0.3.42",
+  "baseCommit": "3b4152a5c1e5fb2bb010d9f6747a6da4f49ea025",
+  "prospectiveManifestSha256": "1657ce02260bd6dac17785f0cc2e58fff6a0a9d725a08d7b307578ebecd43043",
+  "passed": true,
+  "findings": [],
+  "checks": [
+    {
+      "name": "incremental-fixed-byte-audit",
+      "passed": true,
+      "description": "All111 V2 prospective pins,2482 old immutable and27 original frozen bytes verified. Every first-freeze file except the authorized changed attributes retained; previous107 prospective descriptors and first FINAL review raw copy exact."
+    },
+    {
+      "name": "entire-first-failed-index-and-five-conversions",
+      "passed": true,
+      "description": "Read actual3832 index paths via Git cat-file batch, independently hashed every unique blob and matched saved first-index map exactly. Five mismatches reproduce only CRLF-to-LF conversion; HEAD unchanged and saved failure gate/diagnostic-only phase accurate."
+    },
+    {
+      "name": "literal-path-attributes-and-diagnostic-category-scope",
+      "passed": true,
+      "description": "Twelve literal rules exactly cover the saved failed byte conversions and ten diagnostic paths. Negative trailing-space flags only apply to raw upstream-space paths, negative EOF only RapidCRC.rc, old signed JSON targets only allow CR-at-EOL. All saved diagnostic line bytes verified in the actual first index; no broad global exception."
+    }
+  ],
+  "facts": {
+    "byteAudit": {
+      "prospectiveFiles": 111,
+      "oldImmutable": 2482,
+      "originalFrozen": 27,
+      "firstFreeze": 2591,
+      "firstFreeze2590ExceptAuthorizedAttributesRetained": true,
+      "onlyFourAddedOrChangedPaths": true
+    },
+    "firstActualIndex": {
+      "pathsHashed": 3832,
+      "uniqueBlobStreamsHashed": 2055,
+      "savedAndFreshActualIndexMappingsExact": true,
+      "fiveCrlfToLfMismatches": {
+        "docs/evidence/2026-10-12-rapidcrc/market/market.sha256": {
+          "expectedDiskSha256": "80acfc49fc7fb728e5095e5f72c0d3f0633c85b143f5275a4eb17f21442d114b",
+          "actualIndexSha256": "a0ba18332486e35304b321ca5b1e20542f679e9eb85e066f4780a9859885128c"
+        },
+        "docs/evidence/2026-10-12-rapidcrc/original/original.sha256": {
+          "expectedDiskSha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7",
+          "actualIndexSha256": "15f326dad0cbee1ca1812202c6ebdb646a6ad585f61295474a139df6667109fc"
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/RapidCRC.rc": {
+          "expectedDiskSha256": "816fbfb51b5c35b20b2574726029d8ebc9d06fd59ada8447d68ad002c7b6bb52",
+          "actualIndexSha256": "6aaf7299aef9d8bbe352d16786d7dc6f2a90d0fc24befe2a86a85e8039d86b04"
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/resource.h": {
+          "expectedDiskSha256": "44c9a0223c56aa96daed6bfaf13b827fdffb64d5ad662c561799060ac6f337b1",
+          "actualIndexSha256": "33ecb7ac199547a72e98ec409371fb599d6230b067d9fd908e980eab71d0213b"
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/wsx/WixUI_FeatureTreeNoLic.wxs": {
+          "expectedDiskSha256": "70c33c95f4fa8328b5db3c2a3c8cd5459a34f17fa6216c0707fe6d5c498fb47c",
+          "actualIndexSha256": "62afcd1870090c107ba2f1c5cbbf6a51b0ccdf6e2b42232418d11969ce544973"
+        }
+      },
+      "indexStillFirstFailedStage": true,
+      "renormalizationExecuted": false,
+      "commitAttempted": false,
+      "diffCheckOnlyDiagnosticAfterByteGateFailure": true
+    },
+    "preciseRules": {
+      "literalPaths": 12,
+      "rules": [
+        "catalogue/candidate-v57/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json -text whitespace=cr-at-eol",
+        "catalogue/candidate-v57/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json -text whitespace=cr-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/market/market.sha256 -text whitespace=cr-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/official-page.html -text whitespace=cr-at-eol,-blank-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/original/original.sha256 -text whitespace=cr-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/source/RapidCRC.rc -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/source/actfcts.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/source/dlgproc.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/source/resource.h -text whitespace=cr-at-eol,-blank-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/source/threadprocs.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/source/winmain.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+        "docs/evidence/2026-10-12-rapidcrc/source/wsx/WixUI_FeatureTreeNoLic.wxs -text whitespace=cr-at-eol,-blank-at-eol"
+      ],
+      "savedDiagnosticCategories": {
+        "catalogue/candidate-v57/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+          "trailing whitespace.": 59
+        },
+        "catalogue/candidate-v57/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+          "trailing whitespace.": 84
+        },
+        "docs/evidence/2026-10-12-rapidcrc/official-page.html": {
+          "trailing whitespace.": 79
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/RapidCRC.rc": {
+          "trailing whitespace.": 3,
+          "new blank line at EOF.": 1
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/actfcts.cpp": {
+          "trailing whitespace.": 24
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/dlgproc.cpp": {
+          "trailing whitespace.": 10
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/resource.h": {
+          "trailing whitespace.": 1
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/threadprocs.cpp": {
+          "trailing whitespace.": 9
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/winmain.cpp": {
+          "trailing whitespace.": 2
+        },
+        "docs/evidence/2026-10-12-rapidcrc/source/wsx/WixUI_FeatureTreeNoLic.wxs": {
+          "trailing whitespace.": 2
+        }
+      },
+      "onlyRapidcrcRcAllowsEofBlank": true,
+      "twoOldSignedTargetsOnlyCrAtEol": true,
+      "noGlobOrGlobalWhitespaceDisable": true,
+      "oldAttributesRawPrefixPreserved": true,
+      "actualNewIndexPassStillPending": true
+    }
+  },
+  "assertions": 14138,
+  "originalFinalReview": {
+    "file": "rapidcrc-independent-review-20261012.json",
+    "sha256": "bce103fb3050c77af6fe0b7e54986dd3d47a4efed7944cbefc6e6b6da734bdaa"
+  },
+  "firstFailureReceiptSha256": "babcefa9b9d2687e1b43f401b60cd9fb1d68b186c4f438924fa51a9f725c88c9",
+  "firstIndexPinsSha256": "c2488dff64d1b9bf08570861b7b449e455915009bf47a3293324b9e55310b1fb",
+  "scope": {
+    "all111ProspectiveAndPreviousImmutableBytesVerified": true,
+    "all3832ActualFirstIndexPathsIndependentlyHashed": true,
+    "firstActualIndexByteGatePassed": false,
+    "renormalizationNotExecutedYet": true,
+    "correctedIndexOrCommitAuditPassed": false,
+    "commitPushStillPending": true,
+    "noProjectIndexGuestOrCheckpointMutations": true,
+    "noUnrelatedRuntimeGuiPrivateCheckpointTestsRepeated": true,
+    "runtime405122EvidenceFromCompletedV1Review": true,
+    "firstFailureReviewReportAndV1FreezeOriginalBytesPreserved": true,
+    "negativeWhitespaceRulesOnlyLiteralObservedPaths": true
+  },
+  "reviewPreparationNote": "Two initial inspection outputs were oversized/truncated because a saved diagnostic string and direct3832-path index mapping were printed. They were not treated as verification; this helper consumed complete JSON and actual Git blobs with bounded output before making findings.",
+  "assessment": "Ready for the separately controlled literal-path renormalization and complete fresh index/commit byte audit. This incremental pass verifies the proposed attributes and honest preserved failure evidence; it does not mark the failed first index or any future repaired index as passing."
+}

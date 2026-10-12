@@ -1,0 +1,663 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791768425155-1",
+    "createdAtMilliseconds": 1791768425194,
+    "definition": {
+      "bottleId": "gui-rapidcrc",
+      "category": "utilities",
+      "compatibilityRating": "unknown",
+      "id": "rapidcrc",
+      "installer": {
+        "fileName": "RapidCRC-Setup-0.3.42-x64.msi",
+        "msi": {
+          "architecture": "x86_64",
+          "handler": {
+            "action": "install",
+            "kind": "msiexec",
+            "properties": {},
+            "reboot": "suppress",
+            "ui": "none"
+          },
+          "maximumRuntimeMilliseconds": 300000,
+          "sizeBytes": 671744
+        },
+        "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1"
+      },
+      "launchers": [
+        {
+          "executable": "Program Files/RapidCRC/RapidCRC.exe",
+          "id": "main",
+          "name": "RapidCRC Unicode"
+        }
+      ],
+      "name": "RapidCRC Unicode",
+      "publisher": "OV2 / Sebastian Ewert",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-msi"
+      ],
+      "version": "0.3.42"
+    },
+    "definitionDigest": "sha256:fcb41571d426c5aace9ad59d6224652386d5e1fe96b4f688b64ecc6cabfe352e",
+    "id": "gen-job-1791768425155-1",
+    "launcherDigests": {
+      "main": "sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791768440462
+  },
+  "definition": {
+    "bottleId": "gui-rapidcrc",
+    "category": "utilities",
+    "compatibilityRating": "unknown",
+    "id": "rapidcrc",
+    "installer": {
+      "fileName": "RapidCRC-Setup-0.3.42-x64.msi",
+      "msi": {
+        "architecture": "x86_64",
+        "handler": {
+          "action": "install",
+          "kind": "msiexec",
+          "properties": {},
+          "reboot": "suppress",
+          "ui": "none"
+        },
+        "maximumRuntimeMilliseconds": 300000,
+        "sizeBytes": 671744
+      },
+      "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1"
+    },
+    "launchers": [
+      {
+        "executable": "Program Files/RapidCRC/RapidCRC.exe",
+        "id": "main",
+        "name": "RapidCRC Unicode"
+      }
+    ],
+    "name": "RapidCRC Unicode",
+    "publisher": "OV2 / Sebastian Ewert",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-msi"
+    ],
+    "version": "0.3.42"
+  },
+  "installedFiles": {
+    "rcrcshex64.dll": {
+      "sizeBytes": 806400,
+      "sha256": "9c2cf0d8498bc8d36cc8f42ab2e614ff62f918b43b872d25381f9a16c52aab14"
+    },
+    "hashfile.ico": {
+      "sizeBytes": 99678,
+      "sha256": "7b1ce8618d91d1321404af4c65e5cce5c4f1161ada29c88469534cfcb499d5d6"
+    },
+    "RapidCRC.exe": {
+      "sizeBytes": 1143296,
+      "sha256": "4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244"
+    }
+  },
+  "save": {
+    "generationId": "gen-job-1791768425155-1",
+    "fixedDataPins": {
+      "drive_c/RapidCRCTests/original-ascii.bin": {
+        "sizeBytes": 1024,
+        "sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9"
+      },
+      "drive_c/RapidCRCTests/原始校验.bin": {
+        "sizeBytes": 1536,
+        "sha256": "d7d9adf3541ee86e20f6dfee9730e8a1610849b829030fc6a9138beec5006523"
+      },
+      "drive_c/RapidCRCTests/original.sha256": {
+        "sizeBytes": 170,
+        "sha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7"
+      }
+    },
+    "output": {
+      "sizeBytes": 170,
+      "sha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7"
+    },
+    "entries": {
+      "original-ascii.bin": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9",
+      "原始校验.bin": "d7d9adf3541ee86e20f6dfee9730e8a1610849b829030fc6a9138beec5006523"
+    },
+    "encoding": "UTF-8 without BOM",
+    "lineEndings": "CRLF",
+    "inputOriginalBytesPreserved": true,
+    "applicationConfigPins": {
+      "drive_c/users/forge/AppData/Roaming/RapidCRC/options_unicode.bin": {
+        "sizeBytes": 10784,
+        "sha256": "cb77670290bbabeff1d130d9c24db3b0ddab08d8cb94afdd548fb7e55647c3a8"
+      },
+      "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/RapidCRC (x64)/RapidCRC.lnk": {
+        "sizeBytes": 488,
+        "sha256": "bda6b5a7cf35e5065ec680536bf1817e699f3880b27cfc37a22907c7a8cbbd7f"
+      }
+    },
+    "registryPins": {
+      "system.reg": {
+        "sizeBytes": 3435417,
+        "sha256": "c275c891564ce7326abfc558230e8f38ffb4e0a25e0e5b27858621ae216d734f"
+      },
+      "user.reg": {
+        "sizeBytes": 101626,
+        "sha256": "2512c000028c92e78b271bf667a2a1994a5d17c36710a592bb113d4ea30ddc42"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "6d483ac021b514502a9a597a0f650360c9fe432a4079a3d562550198b877423b"
+      }
+    },
+    "installedFiles": {
+      "rcrcshex64.dll": {
+        "sizeBytes": 806400,
+        "sha256": "9c2cf0d8498bc8d36cc8f42ab2e614ff62f918b43b872d25381f9a16c52aab14"
+      },
+      "hashfile.ico": {
+        "sizeBytes": 99678,
+        "sha256": "7b1ce8618d91d1321404af4c65e5cce5c4f1161ada29c88469534cfcb499d5d6"
+      },
+      "RapidCRC.exe": {
+        "sizeBytes": 1143296,
+        "sha256": "4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244"
+      }
+    },
+    "syntheticFixtureNotAnApplication": true,
+    "fullFilesystemTraversed": false
+  },
+  "guiJobs": [
+    {
+      "applicationId": "rapidcrc",
+      "createdAtMilliseconds": 1791768476686,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 212668,
+          "requestId": "job-1791768476686-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 395940,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix",
+          "requestId": "job-1791768476686-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 395982,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791768476686-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791768425155-1",
+      "id": "job-1791768476686-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 317672,
+        "fileDigest": "sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244",
+        "fileSizeBytes": 1143296,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "kernel32.dll",
+          "ole32.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "version.dll",
+          "wininet.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 387584,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 387424,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 87552,
+            "readable": true,
+            "virtualAddress": 393216,
+            "virtualSize": 87512,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 4096,
+            "readable": true,
+            "virtualAddress": 483328,
+            "virtualSize": 118788,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 11264,
+            "readable": true,
+            "virtualAddress": 606208,
+            "virtualSize": 10812,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 651776,
+            "readable": true,
+            "virtualAddress": 618496,
+            "virtualSize": 651408,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791768425155-1",
+          "digest": "sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "RapidCRC.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix/drive_c/Program Files/RapidCRC/RapidCRC.exe",
+          "sizeBytes": 1143296,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix/drive_c/Program Files/RapidCRC/RapidCRC.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1"
+        },
+        "requestId": "job-1791768476686-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791768874794
+    },
+    {
+      "applicationId": "rapidcrc",
+      "createdAtMilliseconds": 1791768889526,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 213229,
+          "requestId": "job-1791768889526-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 153454,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix",
+          "requestId": "job-1791768889526-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 153496,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791768889526-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791768425155-1",
+      "id": "job-1791768889526-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 317672,
+        "fileDigest": "sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244",
+        "fileSizeBytes": 1143296,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "kernel32.dll",
+          "ole32.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "version.dll",
+          "wininet.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 387584,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 387424,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 87552,
+            "readable": true,
+            "virtualAddress": 393216,
+            "virtualSize": 87512,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 4096,
+            "readable": true,
+            "virtualAddress": 483328,
+            "virtualSize": 118788,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 11264,
+            "readable": true,
+            "virtualAddress": 606208,
+            "virtualSize": 10812,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 651776,
+            "readable": true,
+            "virtualAddress": 618496,
+            "virtualSize": 651408,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791768425155-1",
+          "digest": "sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "RapidCRC.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix/drive_c/Program Files/RapidCRC/RapidCRC.exe",
+          "sizeBytes": 1143296,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix/drive_c/Program Files/RapidCRC/RapidCRC.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791768425155-1"
+        },
+        "requestId": "job-1791768889526-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791769044966
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3435417,
+      "sha256": "c275c891564ce7326abfc558230e8f38ffb4e0a25e0e5b27858621ae216d734f"
+    },
+    "user.reg": {
+      "sizeBytes": 101626,
+      "sha256": "2512c000028c92e78b271bf667a2a1994a5d17c36710a592bb113d4ea30ddc42"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "6d483ac021b514502a9a597a0f650360c9fe432a4079a3d562550198b877423b"
+    }
+  },
+  "fixedDataPins": {
+    "drive_c/RapidCRCTests/original-ascii.bin": {
+      "sizeBytes": 1024,
+      "sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9"
+    },
+    "drive_c/RapidCRCTests/原始校验.bin": {
+      "sizeBytes": 1536,
+      "sha256": "d7d9adf3541ee86e20f6dfee9730e8a1610849b829030fc6a9138beec5006523"
+    },
+    "drive_c/RapidCRCTests/original.sha256": {
+      "sizeBytes": 170,
+      "sha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Roaming/RapidCRC/options_unicode.bin": {
+      "sizeBytes": 10784,
+      "sha256": "cb77670290bbabeff1d130d9c24db3b0ddab08d8cb94afdd548fb7e55647c3a8"
+    },
+    "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/RapidCRC (x64)/RapidCRC.lnk": {
+      "sizeBytes": 488,
+      "sha256": "bda6b5a7cf35e5065ec680536bf1817e699f3880b27cfc37a22907c7a8cbbd7f"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "guiVersionMeasured": "RapidCRC Unicode 0.3.42.0 window",
+  "scope": "Two small binary inputs including one Chinese basename; SHA-256 calculation, GUI ASCII-path checksum save, explicit fresh-process checksum open and GUI2/2OK",
+  "fullBundleLicenseClosureVerified": false,
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "d4ed1d4c37dbc524be67bfae07f09fc7fed5bb355bd01f4d9ac7488442ee0921",
+    "coreJobs": 401,
+    "fullStoreRows": 120
+  },
+  "fixtureReferences": {
+    "drive_c/RapidCRCTests/original-ascii.bin": "2026-10-12-rapidcrc/original/original-ascii.bin",
+    "drive_c/RapidCRCTests/原始校验.bin": "2026-10-12-rapidcrc/original/原始校验.bin",
+    "drive_c/RapidCRCTests/original.sha256": "2026-10-12-rapidcrc/original/original.sha256"
+  },
+  "screenshots": {
+    "01-original-initial-computation.jpg": {
+      "sizeBytes": 52867,
+      "sha256": "b346e99d95e89eecf0b8db1692c03a3e17fbd3870d16503129aeafa0b7a481f8"
+    },
+    "02-original-two-sha256-values.jpg": {
+      "sizeBytes": 63707,
+      "sha256": "f20b7508467ec7bfbf319f2e8d9d16c73c0c8f3e1d7039cba57e445ba71d47cf"
+    },
+    "03-original-sha256-save-dialog.jpg": {
+      "sizeBytes": 61971,
+      "sha256": "ff816f1ae9f6c66047e678a117c546731b87a1d67e9f292907d96d4b244eee08"
+    },
+    "04-original-new-process-two-ok.jpg": {
+      "sizeBytes": 49685,
+      "sha256": "bd4061083434be10cfee2d9a5611f9a0b2a54166053fc7ba22e75758de305035"
+    },
+    "05-original-new-process-two-ok-loaded.jpg": {
+      "sizeBytes": 49685,
+      "sha256": "bd4061083434be10cfee2d9a5611f9a0b2a54166053fc7ba22e75758de305035"
+    },
+    "06-original-list-doubleclick-result.jpg": {
+      "sizeBytes": 62492,
+      "sha256": "1402709fae0dba2edc9a5ec01797ffac255600defe17f51244064f93e15cf453"
+    }
+  },
+  "acceptedScreenshots": [
+    "02-original-two-sha256-values.jpg",
+    "03-original-sha256-save-dialog.jpg",
+    "06-original-list-doubleclick-result.jpg"
+  ],
+  "nonAcceptanceScreenshots": [
+    "01-original-initial-computation.jpg",
+    "04-original-new-process-two-ok.jpg",
+    "05-original-new-process-two-ok-loaded.jpg"
+  ],
+  "marketLifecyclePendingAtFreeze": true
+}

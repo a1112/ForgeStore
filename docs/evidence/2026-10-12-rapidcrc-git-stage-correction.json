@@ -1,0 +1,47 @@
+{
+  "firstStageByteAuditFailedBeforeCommit": true,
+  "firstFiveIndexCrlfToLfMismatches": {
+    "docs/evidence/2026-10-12-rapidcrc/market/market.sha256": {
+      "expectedDiskSha256": "80acfc49fc7fb728e5095e5f72c0d3f0633c85b143f5275a4eb17f21442d114b",
+      "actualIndexSha256": "a0ba18332486e35304b321ca5b1e20542f679e9eb85e066f4780a9859885128c"
+    },
+    "docs/evidence/2026-10-12-rapidcrc/original/original.sha256": {
+      "expectedDiskSha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7",
+      "actualIndexSha256": "15f326dad0cbee1ca1812202c6ebdb646a6ad585f61295474a139df6667109fc"
+    },
+    "docs/evidence/2026-10-12-rapidcrc/source/RapidCRC.rc": {
+      "expectedDiskSha256": "816fbfb51b5c35b20b2574726029d8ebc9d06fd59ada8447d68ad002c7b6bb52",
+      "actualIndexSha256": "6aaf7299aef9d8bbe352d16786d7dc6f2a90d0fc24befe2a86a85e8039d86b04"
+    },
+    "docs/evidence/2026-10-12-rapidcrc/source/resource.h": {
+      "expectedDiskSha256": "44c9a0223c56aa96daed6bfaf13b827fdffb64d5ad662c561799060ac6f337b1",
+      "actualIndexSha256": "33ecb7ac199547a72e98ec409371fb599d6230b067d9fd908e980eab71d0213b"
+    },
+    "docs/evidence/2026-10-12-rapidcrc/source/wsx/WixUI_FeatureTreeNoLic.wxs": {
+      "expectedDiskSha256": "70c33c95f4fa8328b5db3c2a3c8cd5459a34f17fa6216c0707fe6d5c498fb47c",
+      "actualIndexSha256": "62afcd1870090c107ba2f1c5cbbf6a51b0ccdf6e2b42232418d11969ce544973"
+    }
+  },
+  "all2591DiskFrozenFilesHeld": true,
+  "diagnosticOnlyDiffCheckAfterByteGateFailed": true,
+  "originalFailureReviewReportAndV1FreezePreserved": true,
+  "precisePathAttributeRules": [
+    "catalogue/candidate-v57/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json -text whitespace=cr-at-eol",
+    "catalogue/candidate-v57/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json -text whitespace=cr-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/market/market.sha256 -text whitespace=cr-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/official-page.html -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/original/original.sha256 -text whitespace=cr-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/source/RapidCRC.rc -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/source/actfcts.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/source/dlgproc.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/source/resource.h -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/source/threadprocs.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/source/winmain.cpp -text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-rapidcrc/source/wsx/WixUI_FeatureTreeNoLic.wxs -text whitespace=cr-at-eol,-blank-at-eol"
+  ],
+  "oldAttributesBytesPreservedAsPrefix": true,
+  "indexRenormalizationPendingAtCorrectionFreeze": true,
+  "noEvidenceBytesChanged": true,
+  "noGuestGuiServiceDataTrustOrSignatureChanges": true,
+  "oldOriginal27FrozenBytesPreserved": true
+}

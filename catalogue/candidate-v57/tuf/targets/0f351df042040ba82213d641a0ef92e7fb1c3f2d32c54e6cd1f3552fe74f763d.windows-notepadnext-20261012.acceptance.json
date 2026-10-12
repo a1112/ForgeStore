@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "notepadnext",
+      "version": "0.15",
+      "sha256": "e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e",
+      "size": 10904664,
+      "generationId": "gen-job-1791750101890-1",
+      "definitionDigest": "sha256:6d65a7e7352c7d59587444dd47ce33a5f02ef6294025a302bef54aba6e1b0ce6",
+      "launcherSha256": "sha256:7a835158d78780751805bca22239eef6dbb3022febf9126325f3cc229cf4ec1f",
+      "guiFileOperation": "passed-limited-small-utf8-bom-crlf-text-replace-append-save-as-explicit-new-process-reopen",
+      "save": {
+        "generationId": "gen-job-1791750101890-1",
+        "inputRelativePath": "NotepadNextTests/正式原稿.txt",
+        "inputPin": {
+          "sizeBytes": 90,
+          "sha256": "a070507982d88aa0329446d6fb0e4d84fa3688466d6980a29d6c93d14a7a56ff"
+        },
+        "outputRelativePath": "NotepadNextTests/original-result.txt",
+        "outputPin": {
+          "sizeBytes": 101,
+          "sha256": "61ab86cf74f35b6577d12f828eacc2b3e753a829e0a4a5c5157b10d85fa1095d"
+        },
+        "inputUnchanged": true,
+        "outputUtf8": "ForgeOS Notepad Next original fixture\r\n中文内容保留\r\nSTATUS=AFTER\r\nVALUE=21+21\r\nORIGINAL42\r\n",
+        "byteContentVerified": true,
+        "encoding": "UTF-8 BOM/CRLF",
+        "diagnosticActiveInputUnchanged": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-open.jpg": {
+          "sizeBytes": 95905,
+          "sha256": "2bd0e9c12debeb7bec58a984aac28a2d975726fcb677bba7d08750857f8bc1ae"
+        },
+        "02-original-replace.jpg": {
+          "sizeBytes": 133111,
+          "sha256": "7549a57c8dc4541840e069e6d9c183c13a941b1db72416bf980b0bfe67ff3e04"
+        },
+        "03-original-save-shortcut-observation.jpg": {
+          "sizeBytes": 98059,
+          "sha256": "f587928bb20597f0281473221847a86214b3aa7b6f4b19f2d10ce17adb349028"
+        },
+        "04-save-all-vs-save-as-menu.jpg": {
+          "sizeBytes": 102512,
+          "sha256": "19f4f3b62d25cc5ef2ec99277b979d6ac266bbdd8af6f4e94b27c87d4661155f"
+        },
+        "05-formal-original-open.jpg": {
+          "sizeBytes": 96557,
+          "sha256": "822ba762d870e7f7f76a748afcbfc0b3bfacff0fc78abc4674f91c5132ebe957"
+        },
+        "06-formal-find-focus-error.jpg": {
+          "sizeBytes": 133647,
+          "sha256": "b77e12e420a36b9de2cd3c9c3f4674cbe9594eae6b4410cb8e983edefd1a07d9"
+        },
+        "07-formal-original-replaced.jpg": {
+          "sizeBytes": 132904,
+          "sha256": "5c7a91b77879d0eee9c67bc765f2c614cae94812ffb37121c723bca010c92a7b"
+        },
+        "08-formal-original-saved.jpg": {
+          "sizeBytes": 99391,
+          "sha256": "236373d66790848f175198a705d7c8a5ccac86023b2858cb0c5fbfaa0207ea38"
+        },
+        "09-formal-original-reopened.jpg": {
+          "sizeBytes": 98143,
+          "sha256": "371aab4865c0600e012622f9a10df6c2ee8476bb5da7695ecd8840ac2107c480"
+        },
+        "10-about-version.jpg": {
+          "sizeBytes": 143096,
+          "sha256": "cbffe1f9d756bb32297648bfa353a45ee72923ebfbec38f0cd188a3a1bea8e71"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-notepadnext-source.json",
+    "sha256": "2ab6db9fd95231be2983e7de5f154e5b49180a7e83a4d8f3dd68acd53a527d6f"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-notepadnext-gui.json",
+    "sha256": "c7d354251fdea123f7160fdb9cf24325766d348f408b28ac76abd9eda5860425"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-notepadnext-failures.json",
+    "sha256": "b776e99ae2610098ce25fe0d9e948e8c59984e2b6bf5c685abc7a2125816a5c0"
+  },
+  "limits": [
+    "Only two small Chinese-name UTF-8 BOM/CRLF text fixtures, normal BEFORE-to-AFTER replacement, ASCII append, GUI Save As to ASCII output and explicit new managed-process reopen tested. Synthetic text fixtures do not count as applications.",
+    "Earliest diagnostic Ctrl+Shift+S actually invoked Save All and changed the active original input; it is not accepted. Modified diagnostic input and normal exit preserved. A newly created formal fixture was opened in a new process, and its input remained byte-exact. Formal find-dialog focus error replaced ForgeOS, was undone before save, and actual fields were verified before correct replacement. Original failure screenshots remain.",
+    "Fixed main.cpp and measured GUI About declare GPL-3.0-or-later. Installed LICENSE35823B differs raw from fixed source35149B; exactly674CRLF pairs normalized to identical source. Scintilla/Lexilla and uchardet notices retained separately; full Qt/Lua/Scintilla/Lexilla/uchardet/icon bundle license closure, Authenticode/OpenPGP, binary-source correspondence and reproducible build unverified.",
+    "Official fixed installer digest matched release-assets HTML. Public API403 retained; authenticated read-only public tag-ref identifies fc4c807cf2b755b37d40de27cf29a5268c7c2fc5. Source archive only locally hashed. Actual fixed NSIS installer differs from initially selected Lexilla test .iss. Native /S /CURRENTUSER and final /D=C: one backslash NotepadNext17UTF8bytes. Default optional installer components retained; no claim of no background network or fully unattended behavior.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Direct Chinese keyboard input, large files/other encodings, broad syntax/regex, split editors/macros/Lua/workspaces/export/printing/advanced features, network download, new-machine registration, migration and cross-version upgrade unverified.",
+    "Independent market generation/update/rollback/two-service normal restart pending at original freeze; completion recorded separately. GUI market update/rollback buttons unverified."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

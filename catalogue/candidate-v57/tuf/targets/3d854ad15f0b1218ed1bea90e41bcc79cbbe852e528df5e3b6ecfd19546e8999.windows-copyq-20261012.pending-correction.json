@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "type": "candidate-publication-withdrawal",
+  "applicationId": "copyq",
+  "fixedVersion": "12.0.1",
+  "acceptedWindowsAppsUnchanged": 48,
+  "candidateInstalled": true,
+  "originalLimitedGuiPassed": true,
+  "marketGuiAccepted": false,
+  "publishedAccepted": false,
+  "applicationCounted": false,
+  "reason": "Market generation provideClipboard command exit1/Connection lost/pipe error995; its error notification SnoreToast.exe crashed on reported unimplemented KERNEL32.dll.GetApplicationUserModelId. Main copy payload15bytes observed and primary normal Quit0, but export/reimport incomplete and not accepted.",
+  "priorRole": 62,
+  "correctedRole": 63,
+  "priorOriginalAcceptance": {
+    "target": "windows-copyq-20261012.acceptance.json",
+    "sha256": "d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3",
+    "originalBytesPreserved": true,
+    "marketPendingAtOriginalFreeze": true
+  },
+  "failureEvidence": {
+    "reference": "2026-10-12-copyq-market-failure.json",
+    "sha256": "94a34e5572cbd1167961935964bb70a5ff78d0957914f1ef59eec706e23d2e27"
+  },
+  "recoveryEvidence": {
+    "reference": "2026-10-12-copyq-recovery-rollback.json",
+    "sha256": "82b0d19e9399cc49bf3409ed3f71d83f1c16ee25c4b144420622962712f8d821"
+  },
+  "exactFormalOriginalRestored": true,
+  "selectedGeneration": "gen-job-1791756166043-4",
+  "allHistoryAndFailedGenerationDataPreserved": true,
+  "higherTufVersionWithoutTrustRollback": true,
+  "allOldAcceptanceEntriesPreserved": true,
+  "copyqExcludedFromNewActiveCatalogue": true
+}

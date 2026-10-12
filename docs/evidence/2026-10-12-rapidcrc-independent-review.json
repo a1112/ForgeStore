@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "completedAt": "2026-10-12T02:10:09.969508+00:00",
+  "phase": "FINAL-independent-pre-stage-evidence-review",
+  "applicationId": "rapidcrc",
+  "version": "0.3.42",
+  "baseCommit": "3b4152a5c1e5fb2bb010d9f6747a6da4f49ea025",
+  "prospectiveManifestSha256": "0db3406bb91caa8b535980094ee47f5bb185ade848af2c21a35cb303b9f71fa5",
+  "passed": true,
+  "findings": [],
+  "resolvedFindings": [
+    {
+      "severity": "minor",
+      "reference": "docs/evidence/2026-10-12-rapidcrc-screenshot-scope-correction.json",
+      "problem": "08/08b are identical save-dialog bytes and the stored08/08b/09/10 filenames carry .jpg.jpg; old references lacked the second extension.",
+      "resolution": "Additive correction explicitly limits correction-timing evidence to action history and maps references to existing exact files. Original images,27 frozen receipts and report were not rewritten; actual168B output and market/rollback FileOK frames remain valid.",
+      "independentlyVerified": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "fixed-public-and-history-bytes",
+      "passed": true,
+      "description": "All107 prospective files,2482 prior immutable files and27 original source/GUI/acceptance files independently hashed; unchanged branch/HEAD/attributes and empty index observed."
+    },
+    {
+      "name": "rsa-pss-signatures-and-target-chain",
+      "passed": true,
+      "description": "Root1/role66 RSA-PSS-SHA256 authorized thresholds, expiry and linked raw hash chain verified independently; all111 complete cached target streams and62 public files checked.108 prior noncatalogue descriptors and52 old catalogue entries unchanged."
+    },
+    {
+      "name": "source-archive-and-license",
+      "passed": true,
+      "description": "Cached official HTTPS artifact/source SHA and size, fixed official page/tag bytes and12 source archive members independently checked. Explicit main GPL2-or-later header verified; no upstream published SHA, installed license or full bundled closure claim."
+    },
+    {
+      "name": "checksum-data-and-formal-lifecycle",
+      "passed": true,
+      "description": "Independent strict complete UTF8/CRLF checksum parsing matches four real fixed inputs. Five formal successful GUI jobs each exit0 and wineserver-stop, Store update/exact rollback and normal two-service restart receipts inspected; private complete checkpoints not independently replayed."
+    },
+    {
+      "name": "failure-history-and-actual-new-byte-pins",
+      "passed": true,
+      "description": "Public observations honestly preserve the failed strict config gate and actual three original byte changes; registry287/20 private-diff metadata inspected, old options raw unavailable and no fabricated diff/cause/equivalence claim."
+    },
+    {
+      "name": "ledger-and-finite-acceptance-scope",
+      "passed": true,
+      "description": "Ledger adds only RapidCRC as51st distinct accepted application, leaves50 prior accepted entries and14 unresolved entries exact; public source, acceptance, publication links and all limited/unverified claims checked."
+    },
+    {
+      "name": "actual-jpeg-and-visual-proof",
+      "passed": true,
+      "description": "All11 actual JPEG frames decoded and manually viewed; two SHA256 computation, original/market/rollback2FileOK frames confirmed.01 onlyoneCRC,04/05 blank and08 excluded;08/08b identical therefore not a distinguishable before/after correction proof."
+    },
+    {
+      "name": "additive-screenshot-scope-correction",
+      "passed": true,
+      "description": "Actual08/08b identical SHA verified and four aliases mapped to actual .jpg.jpg paths. Additive correction avoids a screenshot timing/application bug claim; no original bytes rewritten."
+    },
+    {
+      "name": "fresh-strict-ssh-current-state",
+      "passed": true,
+      "description": "Re-executed the supplied current-state helper as stdin through the strict existing outer/inner SSH wrapper; actual exit0 response405 completeCore/122 completeStore/root1/online66/current selected original generation/allterminal and final pins passed. This is fresh execution of the authored read-only checker, not an independent private-checkpoint replay."
+    },
+    {
+      "name": "final-review-snapshot",
+      "passed": true,
+      "description": "All107 prospective pins rehashed at completion; unchanged HEAD and empty Git index observed. Public full runtime and original/market receipt fields compared to the actual host receipt copies. No commit/index audit or mutations performed."
+    }
+  ],
+  "facts": {
+    "rawByteAudit": {
+      "prospectiveFiles": 107,
+      "previousImmutableFiles": 2482,
+      "originalFrozenFiles": 27,
+      "oldPendingLabelsPreserved": true,
+      "actualIndexEmpty": true
+    },
+    "tuf": {
+      "rootVersion": 1,
+      "onlineRoles": 66,
+      "actualTargetStreamsHashed": 111,
+      "publicFiles": 62,
+      "entries": 53,
+      "oldNonCatalogueTargetsPreserved": 108,
+      "changedOldTargets": [
+        "catalogue.json"
+      ],
+      "copyqActiveAbsent": true
+    },
+    "source": {
+      "officialInstaller": {
+        "sizeBytes": 671744,
+        "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1"
+      },
+      "fixedSourceArchive": {
+        "sizeBytes": 472052,
+        "sha256": "5f5969230785dcd48879ff281ebcbb9ed1f4063b6a6e6faf4d3a45ae383d04f0"
+      },
+      "tagCommit": "adb927b1c144dee194f196ad51d23819f5167f28",
+      "fixedSourceMembers": 12,
+      "mainLicense": "GPL-2.0-or-later",
+      "upstreamPublishedDigestVerified": false,
+      "installedLicenseComparisonVerified": false,
+      "fullBundleClosureVerified": false,
+      "sourceBinaryCorrespondenceVerified": false,
+      "originalDownloadReperformed": false
+    },
+    "originalData": {
+      "inputSizes": [
+        1024,
+        1536
+      ],
+      "checksumSize": 170,
+      "checksumSha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7",
+      "entries": {
+        "original-ascii.bin": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9",
+        "原始校验.bin": "d7d9adf3541ee86e20f6dfee9730e8a1610849b829030fc6a9138beec5006523"
+      },
+      "encoding": "UTF8 without BOM / CRLF"
+    },
+    "marketData": {
+      "inputSizes": [
+        2048,
+        3072
+      ],
+      "checksumSize": 168,
+      "checksumSha256": "80acfc49fc7fb728e5095e5f72c0d3f0633c85b143f5275a4eb17f21442d114b",
+      "entries": {
+        "market-ascii.bin": "be7784fc4d8a81211d67a07c7a07e7ebdc1f2f3d72481465eb7d1da709589542",
+        "市场校验.bin": "45385229b47e4e125c7b07334143b5e015133fc346fe98532f482d242b38686e"
+      },
+      "encoding": "UTF8 without BOM / CRLF"
+    },
+    "formalLifecycle": {
+      "jobs": [
+        "job-1791768476686-2",
+        "job-1791768889526-3",
+        "job-1791769498310-5",
+        "job-1791769963329-6",
+        "job-1791770075049-7"
+      ],
+      "normalExitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wineserverStopEventsVerified": true,
+      "storeUpdateJob": {
+        "action": "update",
+        "appId": "rapidcrc",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "4e00e38a-3c37-43de-9fd4-4cf039b2e8e4",
+        "state": "succeeded"
+      },
+      "storeRollbackJob": {
+        "action": "rollback",
+        "appId": "rapidcrc",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "4905bcc0-f452-47ec-a662-e28e59511e63",
+        "state": "succeeded"
+      },
+      "beforeRollbackCounts": [
+        404,
+        121
+      ],
+      "afterRollbackCounts": [
+        404,
+        122
+      ],
+      "afterRestartCounts": [
+        405,
+        122
+      ],
+      "exactOriginalGeneration": "gen-job-1791768425155-1",
+      "currentPrivateCheckpointSha256": "6986d7ca4b143e034efb59f1aa12bfac1af34feed7bdbb19bf304b82aebaa1c5",
+      "privateCompleteCheckpointReplayedIndependently": false
+    },
+    "thirdOriginalChanges": {
+      "registryTextDiffLines": {
+        "system.reg": 287,
+        "user.reg": 20
+      },
+      "optionsBeforeOnlyDigestAvailable": true,
+      "optionsBinaryDiffUnavailable": true,
+      "causeAndKeyValueEquivalenceUnestablished": true,
+      "newPinsStableAcrossRestartReportedAndCurrentCheckPending": false,
+      "newPinsStableAcrossRestartAndFreshCurrentCheckPassed": true
+    },
+    "ledger": {
+      "acceptedDistinctWindowsApps": 51,
+      "unresolvedCandidates": 14,
+      "old50AcceptedFieldsAnd14PendingFieldsUnchanged": true,
+      "syntheticInputsNotCounted": true
+    },
+    "screenshots": {
+      "images": {
+        "01-original-initial-computation.jpg": {
+          "sizeBytes": 52867,
+          "sha256": "b346e99d95e89eecf0b8db1692c03a3e17fbd3870d16503129aeafa0b7a481f8"
+        },
+        "02-original-two-sha256-values.jpg": {
+          "sizeBytes": 63707,
+          "sha256": "f20b7508467ec7bfbf319f2e8d9d16c73c0c8f3e1d7039cba57e445ba71d47cf"
+        },
+        "03-original-sha256-save-dialog.jpg": {
+          "sizeBytes": 61971,
+          "sha256": "ff816f1ae9f6c66047e678a117c546731b87a1d67e9f292907d96d4b244eee08"
+        },
+        "04-original-new-process-two-ok.jpg": {
+          "sizeBytes": 49685,
+          "sha256": "bd4061083434be10cfee2d9a5611f9a0b2a54166053fc7ba22e75758de305035"
+        },
+        "05-original-new-process-two-ok-loaded.jpg": {
+          "sizeBytes": 49685,
+          "sha256": "bd4061083434be10cfee2d9a5611f9a0b2a54166053fc7ba22e75758de305035"
+        },
+        "06-original-list-doubleclick-result.jpg": {
+          "sizeBytes": 62492,
+          "sha256": "1402709fae0dba2edc9a5ec01797ffac255600defe17f51244064f93e15cf453"
+        },
+        "07-market-two-sha256-values.jpg": {
+          "sizeBytes": 63699,
+          "sha256": "7634bb2d8c154ba5a5b2d04b0284e91f0ecb74663edf227deae8cd7d871a9381"
+        },
+        "08-market-sha256-save-dialog.jpg.jpg": {
+          "sizeBytes": 61918,
+          "sha256": "86971e45b3ed4e544ab6496bd5721d86d4fe81ebb70ba23877c97c4e98dbccb4"
+        },
+        "08b-market-sha256-corrected-save-dialog.jpg.jpg": {
+          "sizeBytes": 61918,
+          "sha256": "86971e45b3ed4e544ab6496bd5721d86d4fe81ebb70ba23877c97c4e98dbccb4"
+        },
+        "09-market-new-process-two-ok.jpg.jpg": {
+          "sizeBytes": 62581,
+          "sha256": "114e5c05aba68e3194e79d205fe43a687b4eac28a2b6b37a987eb8471f2ecbb2"
+        },
+        "10-original-after-rollback-two-ok.jpg.jpg": {
+          "sizeBytes": 62477,
+          "sha256": "8934d694a3ed6060eb8cf40510d63278e605507e568033b0113c7b0fd2d47d80"
+        }
+      },
+      "visuallyInspectedAll11": true,
+      "acceptedComputationFrames": [
+        "02-original-two-sha256-values.jpg",
+        "07-market-two-sha256-values.jpg"
+      ],
+      "acceptedReopenFrames": [
+        "06-original-list-doubleclick-result.jpg",
+        "09-market-new-process-two-ok.jpg.jpg",
+        "10-original-after-rollback-two-ok.jpg.jpg"
+      ],
+      "excludedFrames": [
+        "01-original-initial-computation.jpg",
+        "04-original-new-process-two-ok.jpg",
+        "05-original-new-process-two-ok-loaded.jpg",
+        "08-market-sha256-save-dialog.jpg.jpg"
+      ],
+      "08And08bByteIdenticalDoNotIndependentlyDemonstrateCorrectionTiming": true,
+      "actualGuiReplayedByReviewer": false
+    }
+  },
+  "freshCurrentState": {
+    "verified": true,
+    "coreJobs": 405,
+    "fullStoreRows": 122,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "targets": 66,
+      "root": 1,
+      "timestamp": 66,
+      "snapshot": 66
+    },
+    "latestKnownTime": "2026-10-12T01:58:03.051894036Z",
+    "selectedRapidcrcGeneration": "gen-job-1791768425155-1",
+    "copyqActiveCatalogueEntryAbsent": true,
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "queryMayWriteExistingRequestScratch": true,
+    "checkpoint": {
+      "file": "rapidcrc-20261012/after-restart.json",
+      "sha256": "6986d7ca4b143e034efb59f1aa12bfac1af34feed7bdbb19bf304b82aebaa1c5"
+    }
+  },
+  "currentResponsePin": {
+    "sizeBytes": 848,
+    "sha256": "4ff4462349c78d88cb359594e86f7a59754840bbe463cb10a64440cc70550efc"
+  },
+  "scope": {
+    "publicEvidenceAndCompleteCachedTargetsIndependentlyVerified": true,
+    "all11ScreenshotBytesDecodedAndVisuallyInspected": true,
+    "actualGuiReplayedByReviewer": false,
+    "originalHttpsDownloadsReperformed": false,
+    "upstreamPublishedDigestVerified": false,
+    "privateCompleteCheckpointCopiedOrReplayedIndependently": false,
+    "privateRegistryRawDiffIndependentlyRecomputed": false,
+    "actualCurrentStateCheckerReexecuted": true,
+    "currentCheckerCanWriteExistingRequestScratch": true,
+    "noServiceGuiApplicationDataConfigurationTrustCheckpointIndexMutations": true,
+    "gitIndexAtReviewWasEmpty": true,
+    "gitIndexOrCommitRawByteAuditCompletedByReviewer": false,
+    "laterActualStageCommitPushStillRequired": true,
+    "noWholeApplicationFilesystemOrFullBundledLicenseAcceptanceClaim": true
+  },
+  "reviewPreparationFailuresPreserved": [
+    {
+      "file": "rapidcrc-independent-review-helper-first-failed-20261012.py",
+      "problem": "Initial helper assumed the old manifest phase label after the additive correction; stopped before substantive audit."
+    },
+    {
+      "file": "rapidcrc-independent-review-helper-second-failed-20261012.py",
+      "problem": "Old frozen manifest digest strings were initially treated as size/hash maps; stopped and corrected generic pin handling."
+    },
+    {
+      "file": "rapidcrc-independent-review-helper-third-failed-20261012.py",
+      "problem": "License assertion expected one contiguous line despite source header newline; normalized whitespace after reading the actual unchanged header."
+    },
+    {
+      "file": "rapidcrc-independent-review-helper-fourth-failed-20261012.py",
+      "problem": "Installer handler fields assumed unnested; inspected native msi.handler and corrected the reviewer assertion."
+    }
+  ],
+  "assessment": "Ready for the separate actual Git stage/commit byte audit within the documented finite SHA256 and local market lifecycle scope; no remaining critical or important evidence finding. This is not full RapidCRC, advanced checksum, shell extension, installed-license closure, network, new-machine, migration or cross-version acceptance."
+}

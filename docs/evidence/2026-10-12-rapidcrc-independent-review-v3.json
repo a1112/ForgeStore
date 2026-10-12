@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "completedAt": "2026-10-12T02:24:12.156914+00:00",
+  "phase": "FINAL-V3-incremental-review-before-third-actual-stage",
+  "applicationId": "rapidcrc",
+  "version": "0.3.42",
+  "baseCommit": "3b4152a5c1e5fb2bb010d9f6747a6da4f49ea025",
+  "prospectiveManifestSha256": "8df7504db6131c31d50e71975054c028e4a95d322b46dcfc30023e9a54c99fa1",
+  "passed": true,
+  "findings": [],
+  "checks": [
+    {
+      "name": "V3-incremental-raw-bytes",
+      "passed": true,
+      "description": "All114 V3 prospective pins,2482 old immutable and27 original frozen bytes checked.2593 second-freeze files outside authorized attributes retained, previous110 V2 nonattribute descriptors unchanged; V1/V2 FINAL and raw failed-stage receipts preserved."
+    },
+    {
+      "name": "second-index-and-actual-failure",
+      "passed": true,
+      "description": "Independently hashed all3835 actual index paths, matching saved second-index map; every2594 second-freeze index blob matches its raw byte digest. Saved sole diff failure is unchanged threadprocs.cpp line231; no overall stage/commit success claimed."
+    },
+    {
+      "name": "single-indent-rule-and-readonly-diagnostic",
+      "passed": true,
+      "description": "Actual unchanged line231 hex and first/second diagnostic history verified. Working-tree attributes differ from second index by only -space-before-tab on that literal path. Fresh read-only cached diff check exits0 using the new unstaged attribute; actual index/HEAD unchanged and V3 full stage remains pending."
+    }
+  ],
+  "facts": {
+    "bytes": {
+      "prospectiveFiles": 114,
+      "oldImmutable": 2482,
+      "originalFrozen": 27,
+      "secondFreeze": 2594,
+      "secondFreeze2593ExceptAuthorizedAttributesUnchanged": true,
+      "allV2ProspectiveExceptAuthorizedAttributesUnchanged": true,
+      "threeNewReceiptPathsOnly": true
+    },
+    "secondIndex": {
+      "actualPathsHashed": 3835,
+      "uniqueBlobStreamsHashed": 2058,
+      "savedAndActualMappingExact": true,
+      "all2594FrozenIndexBytesMatched": true,
+      "wholeStagePassed": false,
+      "soleDiffFailure": "threadprocs.cpp:231 space before tab in indent",
+      "HEADUnchanged": true
+    },
+    "singleRule": {
+      "sourcePath": "docs/evidence/2026-10-12-rapidcrc/source/threadprocs.cpp",
+      "line": 231,
+      "originalHex": "2020202009090909090a",
+      "onlyWorkingTreeAttributeDifference": "-space-before-tab appended on the existing exact threadprocs.cpp path",
+      "allOtherAttributesRawExact": true,
+      "actualIndexAttributesStillV2": true,
+      "readOnlyDiffCheckWithNewUnstagedWorkingTreeRuleExit": 0,
+      "noSourceRewrite": true,
+      "V3FullStageOrCommitExecuted": false
+    }
+  },
+  "assertions": 16014,
+  "priorFinalReviews": [
+    {
+      "file": "rapidcrc-independent-review-20261012.json",
+      "sha256": "bce103fb3050c77af6fe0b7e54986dd3d47a4efed7944cbefc6e6b6da734bdaa"
+    },
+    {
+      "file": "rapidcrc-independent-review-v2-20261012.json",
+      "sha256": "085b7e7b1b6bacdf918c7f20012100c8963cb78594766ab1b611efa29b34f916"
+    }
+  ],
+  "scope": {
+    "hostReadOnlyExceptOwnReviewFile": true,
+    "all114V3ProspectiveAndOldImmutableBytesVerified": true,
+    "secondActualIndex3835PathsIndependentlyHashed": true,
+    "second2594IndexRawBytesMatched": true,
+    "secondActualStageOverallPassed": false,
+    "readOnlyCachedDiffWithNewUnstagedWorkingTreeAttributePassed": true,
+    "V3ActualFullStageOrCommitPassClaimed": false,
+    "noGitAddRenormalizationCommitOrPushByReviewer": true,
+    "noGuestGuiServicesDataConfigurationTrustOrCheckpointOperations": true,
+    "runtimePrivateCheckpointTestsNotRepeated": true,
+    "priorFailedStagesAndV1V2ReviewsNotRewritten": true,
+    "actualThirdStageCompleteByteAuditStillRequired": true
+  },
+  "assessment": "The single literal-path whitespace flag is justified by the actual unchanged upstream line and second saved failure. Ready for the separate third actual stage and complete index/commit byte audit; the cached diff diagnostic under an unstaged attribute does not establish V3 full-stage or commit success."
+}
