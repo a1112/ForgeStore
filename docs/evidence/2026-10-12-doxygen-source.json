@@ -1,0 +1,162 @@
+{
+  "applicationId": "doxygen",
+  "version": "1.13.2",
+  "downloads": {
+    "downloaded": true,
+    "version": "1.13.2",
+    "readAt": "2026-10-11T23:59:21.980145+00:00",
+    "oldFrozenBytesPreserved": true,
+    "oldImmutableFiles": 2241,
+    "pins": {
+      "doxygen-1.13.2-setup.exe": {
+        "file": "doxygen-1.13.2-setup.exe",
+        "requestedUrl": "https://github.com/doxygen/doxygen/releases/download/Release_1_13_2/doxygen-1.13.2-setup.exe",
+        "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/10160141/5bdb2a0d-06af-46ff-8180-8054d5d42a94",
+        "status": 200,
+        "sizeBytes": 58172541,
+        "sha256": "08261faf23a9bd4a337cb9d25e9b339d06c788ddadb03283519fa217db58f1bb",
+        "upstreamApiSizeMatched": true,
+        "upstreamDigest": null,
+        "upstreamDigestMatched": false
+      },
+      "doxygen-1.13.2.src.tar.gz": {
+        "file": "doxygen-1.13.2.src.tar.gz",
+        "requestedUrl": "https://github.com/doxygen/doxygen/releases/download/Release_1_13_2/doxygen-1.13.2.src.tar.gz",
+        "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/10160141/aef1823f-14aa-476e-90cd-9c6574e3c199",
+        "status": 200,
+        "sizeBytes": 8512178,
+        "sha256": "3a25e3386c26ea5494c784e946327225debfbc5dbfa8b13549010a315aace66d",
+        "upstreamApiSizeMatched": true,
+        "upstreamDigest": null,
+        "upstreamDigestMatched": false
+      }
+    },
+    "officialExpandedAssets": {
+      "file": "official-expanded-assets.html",
+      "requestedUrl": "https://github.com/doxygen/doxygen/releases/expanded_assets/Release_1_13_2",
+      "finalUrlWithoutQuery": "https://github.com/doxygen/doxygen/releases/expanded_assets/Release_1_13_2",
+      "status": 200,
+      "sizeBytes": 18471,
+      "sha256": "1630f4b4ccd1683a1581572f62942d0621870de40cce32ac8d2290ee53a7b3fe"
+    },
+    "apiPin": {
+      "file": "official-release-api.json",
+      "requestedUrl": "https://api.github.com/repos/doxygen/doxygen/releases/tags/Release_1_13_2",
+      "finalUrlWithoutQuery": "https://api.github.com/repos/doxygen/doxygen/releases/tags/Release_1_13_2",
+      "status": 200,
+      "sizeBytes": 11910,
+      "sha256": "efaaf35f8c7f85557629acbfee559a0bd3066c792fab87d2c25b34f1a9211797"
+    },
+    "failures": [],
+    "sourceMembers": 1272,
+    "interestingMembers": [
+      "doxygen-1.13.2/LICENSE",
+      "doxygen-1.13.2/README.md",
+      "doxygen-1.13.2/testing/README.txt",
+      "doxygen-1.13.2/addon/doxycommentview/README.md",
+      "doxygen-1.13.2/addon/doxyapp/README",
+      "doxygen-1.13.2/addon/doxywizard/README",
+      "doxygen-1.13.2/addon/doxywizard/doxywizard.cpp",
+      "doxygen-1.13.2/addon/doxyparse/README.md",
+      "doxygen-1.13.2/addon/doxmlparser/LICENSE",
+      "doxygen-1.13.2/addon/doxmlparser/README.md",
+      "doxygen-1.13.2/deps/svg/README",
+      "doxygen-1.13.2/deps/jquery/README",
+      "doxygen-1.13.2/deps/spdlog/LICENSE",
+      "doxygen-1.13.2/deps/spdlog/README.md",
+      "doxygen-1.13.2/deps/TinyDeflate/README.md",
+      "doxygen-1.13.2/deps/sqlite3/README.md",
+      "doxygen-1.13.2/deps/libmscgen/COPYING",
+      "doxygen-1.13.2/deps/libmscgen/README.txt",
+      "doxygen-1.13.2/src/main.cpp"
+    ]
+  },
+  "fixedSourceMembers": {
+    "addon/doxywizard/CMakeLists.txt": {
+      "archiveMember": "doxygen-1.13.2/addon/doxywizard/CMakeLists.txt",
+      "sizeBytes": 7937,
+      "sha256": "ebcc9e0aad37e799024e2ca3991615e350b37948f0c23d9e9b85070f3eb8268f"
+    },
+    "addon/doxywizard/doxywizard.cpp": {
+      "archiveMember": "doxygen-1.13.2/addon/doxywizard/doxywizard.cpp",
+      "sizeBytes": 25774,
+      "sha256": "926f37aca8c01bead14577b69d1d25ec76fab50104110394403554ef0551d91f"
+    },
+    "addon/doxywizard/expert.cpp": {
+      "archiveMember": "doxygen-1.13.2/addon/doxywizard/expert.cpp",
+      "sizeBytes": 29471,
+      "sha256": "8c5573bd9a56c52f5ded5c57b7037744ab2499ec6d48153ad623919eca4453b6"
+    },
+    "addon/doxywizard/wizard.cpp": {
+      "archiveMember": "doxygen-1.13.2/addon/doxywizard/wizard.cpp",
+      "sizeBytes": 45521,
+      "sha256": "691aa7b722aaebf213a04ec8401699c0b06f5ebb8362e4691f12f0b76b3967f2"
+    },
+    "CMakeLists.txt": {
+      "archiveMember": "doxygen-1.13.2/CMakeLists.txt",
+      "sizeBytes": 11360,
+      "sha256": "0369850b7f1fe6cd304520a5b27821f836baef9f6dd6945f51f8faee6eed46c3"
+    },
+    "doc/install.dox": {
+      "archiveMember": "doxygen-1.13.2/doc/install.dox",
+      "sizeBytes": 10039,
+      "sha256": "652dfdf82f428a431f4ed3c8ac1c77eb592f668e52d85457e2fad1dd84bfbf26"
+    },
+    "INSTALL": {
+      "archiveMember": "doxygen-1.13.2/INSTALL",
+      "sizeBytes": 152,
+      "sha256": "da5e2589af7b7306cac089c6e7667127039fb64e0dbf5948fd689aa8382209b8"
+    },
+    "LICENSE": {
+      "archiveMember": "doxygen-1.13.2/LICENSE",
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "README.md": {
+      "archiveMember": "doxygen-1.13.2/README.md",
+      "sizeBytes": 3059,
+      "sha256": "b989d1c9ab012f2ac7457b223a08b47b231936b32d059ce1d89b396109da5eea"
+    },
+    "src/main.cpp": {
+      "archiveMember": "doxygen-1.13.2/src/main.cpp",
+      "sizeBytes": 1146,
+      "sha256": "e7f16bbb2cf28299e5396a0d986b568de10598456dcd461d5f2aade9bc06ee06"
+    },
+    "addon/doxywizard/config_doxyw.l": {
+      "archiveMember": "doxygen-1.13.2/addon/doxywizard/config_doxyw.l",
+      "sizeBytes": 26279,
+      "sha256": "74124629650c1aa2406fc9cbac43d086e3b5ff5052717f728c3d4edc519ea470",
+      "addedForPathDiagnosticAndConfigurationOptionValidation": true
+    },
+    "src/config.xml": {
+      "archiveMember": "doxygen-1.13.2/src/config.xml",
+      "sizeBytes": 182184,
+      "sha256": "b9a14cedb41a6068e9d82631151e401824fc3f490e494d7078a331e080c9a4ec",
+      "addedForPathDiagnosticAndConfigurationOptionValidation": true
+    }
+  },
+  "mainLicense": "GPL-2.0 (upstream declaration; exact or-later scope unverified)",
+  "fixedLicenseReference": "2026-10-12-doxygen/source/LICENSE",
+  "installedLicenseNamedFileFound": false,
+  "installedLicenseComparisonVerified": false,
+  "completeBundledLicenseClosureVerified": false,
+  "upstreamApiPackageAndSourceSizeMatched": true,
+  "upstreamPublishedPackageOrSourceDigestVerified": false,
+  "sourceBinaryCorrespondenceVerified": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "installerNativeArguments": [
+    "/VERYSILENT",
+    "/SUPPRESSMSGBOXES",
+    "/NORESTART",
+    "/SP-",
+    "/DIR=C:\\Doxygen",
+    "/NOICONS",
+    "/TASKS="
+  ],
+  "directoryArgumentUtf8Bytes": 15,
+  "directoryArgumentUtf8Hex": "2f4449523d433a5c446f787967656e",
+  "specificRuntimeFunctionTraceCaptured": false,
+  "staticFopenToLocal8BitIsHypothesisOnly": true,
+  "globalRuntimeCoreOrProgramFixApplied": false
+}

@@ -1,0 +1,91 @@
+{
+  "original94FrozenBytesAndPendingStageLabelsPreserved": true,
+  "marketInstallHelperRootUninstallLogPathExpectationFailedBeforeFixtureOrGui": true,
+  "failedHelperSha256": "162c0a72cd35ee2e1c15c5d04af48cb51cb0012aece7ccf6bb8268cd369acf74",
+  "readOnlyMarketInstallDiagnostic": {
+    "passed": true,
+    "priorWrongRootUninstallLogPathAssertionStoppedBeforeFixtureOrGui": true,
+    "actualOnlyDifference": "system/unins000.dat",
+    "crossGenerationDifferences": {
+      "system/unins000.dat": {
+        "original": {
+          "sizeBytes": 284941,
+          "sha256": "a7d480faef341b1ac5a7828e2ddd484d14c624f689781f1ad4b5ee0c10f24e63"
+        },
+        "market": {
+          "sizeBytes": 284941,
+          "sha256": "0f4bcc95354af05a33acd308f9912645de7b94f099074ea74389a14fb8829a60"
+        }
+      }
+    },
+    "all2077OtherInstalledFileBytesEqual": true,
+    "oldOriginalAllProgramDataConfigurationPinsPreserved": true,
+    "allOldFullTaskFieldsAndOtherGenerationRecordsPreserved": true,
+    "marketInstallJob": "job-1791764559927-5",
+    "marketGeneration": "gen-job-1791764559927-5",
+    "uninstallLogDifferenceCauseEstablished": false,
+    "uninstallFunctionAccepted": false,
+    "checkpoint": {
+      "file": "after-market-install-diagnostic.json",
+      "sha256": "29f2e9e3feaa3009448b1df70303e89125b515add43648825a6f956d38b17e15",
+      "coreJobs": 395,
+      "fullStoreRows": 119
+    },
+    "noRepeatInstallation": true,
+    "noGuiLaunchSubmitted": true
+  },
+  "onlyExpectedUninstallLogPathCorrectedToObservedSystemSubdirectory": true,
+  "newV2RequiredSavedReadBackDiagnosticCheckpointBeforeFixtureAndGui": true,
+  "noRepeatedInstallation": true,
+  "all2077OtherInstalledFileBytesCrossGenerationEqual": true,
+  "eachGenerationAll2078FilesIndependentlyPinned": true,
+  "uninstallLogDifferenceCauseEstablished": false,
+  "uninstallFunctionAccepted": false,
+  "thirdOriginalRegistryByteChanges": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3424286,
+        "sha256": "88851c5fe815fca301be9eb6c385be2944a64df910ff23a07172b0c2baeae005"
+      },
+      "after": {
+        "sizeBytes": 3424286,
+        "sha256": "3c63ac951f1c1a95d9b87b72041176e8f118970159e8697b46ea22ae944492f1"
+      },
+      "changedLineCount": 287,
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "textDiffPreservedPrivately": true,
+      "causeEstablished": false
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 103202,
+        "sha256": "473ce8343f37d919592b0e4e1f5db0ea1f82d99df92f3a300ab1dcb12fb4f831"
+      },
+      "after": {
+        "sizeBytes": 103139,
+        "sha256": "6d43183f3dbf79e753e970f82652fca35b396d31a75f97bc986d11305b5f318d"
+      },
+      "changedLineCount": 34,
+      "beforeAndAfterActualRawBytesPreservedPrivately": true,
+      "textDiffPreservedPrivately": true,
+      "causeEstablished": false
+    }
+  },
+  "originalRegistryOldBytesPreservedAcrossThirdGui": false,
+  "actualNewRegistryPinsStableAcrossRestart": true,
+  "chineseConfigurationPathUnfixed": true,
+  "staticFopenToLocal8BitSupportsHypothesisOnly": true,
+  "specificRuntimeFunctionOrHresultLocated": false,
+  "savedFullLogsCoverOriginalInitialMarketInitialAndOriginalRollbackRuns": true,
+  "fullLogsForTwoReopenRunsSeparatelySaved": false,
+  "twoReopenRunsGuiFinishedAndAll62GeneratedBytesUnchanged": true,
+  "queryMayWriteExistingRequestScratch": true,
+  "allAppFilesystemFilesTraversed": false,
+  "priorMediaInfoAutomationFinalNewlineTrimFailurePrivateHistoryRetained": {
+    "initialFailedVerifier": "mediainfo-automation-verify-20261012.py",
+    "actualDifference": "native update removed one terminal LF; all9101 content characters matched",
+    "diagnostic": "mediainfo-automation-first-verification-failure-20261012.json",
+    "correctedVerifiedReceipt": "mediainfo-automation-verified-v2-20261012.json",
+    "noRepeatedAutomationOrGuestMutationFromVerification": true
+  }
+}

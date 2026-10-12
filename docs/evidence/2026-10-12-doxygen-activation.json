@@ -1,0 +1,55 @@
+{
+  "activatedPreview": true,
+  "metadataVersion": 65,
+  "rootVersion": 1,
+  "entries": 52,
+  "coreJobs": 394,
+  "fullStoreRows": 118,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-doxygen-20261012.acceptance.json#doxygen",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "08261faf23a9bd4a337cb9d25e9b339d06c788ddadb03283519fa217db58f1bb",
+        "size": 58172541,
+        "target": "doxygen-1.13.2-setup.exe",
+        "url": "https://github.com/doxygen/doxygen/releases/download/Release_1_13_2/doxygen-1.13.2-setup.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "doxygen"
+    },
+    "id": "doxygen",
+    "license": "GPL-2.0 (upstream declaration; or-later scope unverified)",
+    "name": {
+      "en": "Doxygen",
+      "zhCN": "Doxygen 文档生成工具"
+    },
+    "origin": "https://www.doxygen.nl/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Dimitri van Heesch",
+    "summary": {
+      "en": "Limited small ASCII configuration/project-name edit, GUI HTML/XML generation and new-process regeneration tested; Chinese config path and advanced documentation unverified.",
+      "zhCN": "仅小型 ASCII 配置编辑、GUI HTML/XML 文档生成及新进程再生成通过；中文配置路径问题未修，高级功能未验收"
+    },
+    "version": "1.13.2"
+  },
+  "installed": {
+    "appId": "doxygen",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "1.13.2"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "bdba4910775b516a48feb0421f2b8e1daca0a48cb6fb8be97cee1052bec522d0",
+    "coreJobs": 394,
+    "fullStoreRows": 118
+  },
+  "independentMarketGenerationPending": true,
+  "countsAsCompleted": false
+}

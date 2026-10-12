@@ -1,0 +1,986 @@
+{
+  "schemaVersion": 1,
+  "phase": "after-first-stage-failure-before-v2-review-and-stage",
+  "firstStageReceipt": {
+    "path": "docs/evidence/2026-10-12-doxygen-first-stage-failure.json",
+    "sha256": "8dade23b2039e1d41addc1d0d0f04343515e1f60c7fd71b06af0aa8f558bf957",
+    "changedFiles": 239,
+    "frozenFiles": 2481,
+    "allIndexBytesMatch": true,
+    "diffCheckExitCode": 2
+  },
+  "commitStoppedOnFailure": true,
+  "headStillBase": "77216fe6b8c66e4b3f3a11698e4f97c30659801a",
+  "firstProspectiveManifestSha256": "58b729192a3439ec1b5ca83b1b0f572cc993a004d212b2c285e2075ddd77f2d8",
+  "first238ProspectiveFilesUnchanged": true,
+  "firstIndependentReviewUnchanged": "01cf411b557125fe263dfa8ca8d37308560bd62aef0aecdc34fbd7564cb31ddc",
+  "actualWarningCount": 213,
+  "exactPaths": {
+    "catalogue/candidate-v56/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "-text whitespace=cr-at-eol",
+    "catalogue/candidate-v56/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "-text whitespace=cr-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/dir_c13be0b21d7f7afa18704e8ae701c6af.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/doxygen.css": "-text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol,-space-before-tab",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/files.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/globals.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/globals_func.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/index.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/market_8cpp.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/navtree.css": "-text whitespace=cr-at-eol,-blank-at-eof",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/xml/combine.xslt": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/xml/compound.xsd": "-text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/xml/index.xsd": "-text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/official-expanded-assets.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/dir_40bea99ad8a0abe892dbbac4707fb99a.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/doxygen.css": "-text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol,-space-before-tab",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/files.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/globals.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/globals_func.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/index.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/navtree.css": "-text whitespace=cr-at-eol,-blank-at-eof",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/original_8cpp.html": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/xml/combine.xslt": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/xml/compound.xsd": "-text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/xml/index.xsd": "-text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/source/addon/doxywizard/config_doxyw.l": "-text whitespace=cr-at-eol,-space-before-tab",
+    "docs/evidence/2026-10-12-doxygen/source/addon/doxywizard/expert.cpp": "-text whitespace=cr-at-eol,-blank-at-eof",
+    "docs/evidence/2026-10-12-doxygen/source/doc/install.dox": "-text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/source/src/config.xml": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/2026-10-12-doxygen/source/src/main.cpp": "-text whitespace=cr-at-eol,-blank-at-eof"
+  },
+  "warnings": {
+    "catalogue/candidate-v56/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": [
+      {
+        "line": 1,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 2,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 3,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 4,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 5,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 6,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 7,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 8,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 9,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 10,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 11,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 12,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 13,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 14,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 15,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 16,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 17,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 18,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 19,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 20,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 21,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 22,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 23,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 24,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 25,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 26,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 27,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 28,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 29,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 30,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 31,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 32,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 33,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 34,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 35,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 36,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 37,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 38,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 39,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 40,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 41,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 42,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 43,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 44,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 45,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 46,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 47,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 49,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 50,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 51,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 52,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 53,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 54,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 55,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 56,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 57,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 58,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 59,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "catalogue/candidate-v56/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": [
+      {
+        "line": 1,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 2,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 3,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 4,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 5,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 6,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 7,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 8,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 9,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 10,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 11,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 12,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 13,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 14,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 15,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 16,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 17,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 18,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 19,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 20,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 21,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 22,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 23,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 24,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 25,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 26,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 27,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 28,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 29,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 30,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 31,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 32,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 33,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 34,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 35,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 36,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 37,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 38,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 39,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 40,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 41,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 42,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 43,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 44,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 45,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 46,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 47,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 49,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 50,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 51,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 52,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 53,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 54,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 55,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 56,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 57,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 58,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 59,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 60,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 61,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 62,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 63,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 64,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 65,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 66,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 67,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 68,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 69,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 70,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 71,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 72,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 73,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 74,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 75,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 76,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 77,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 78,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 79,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 80,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 81,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 82,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 83,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 84,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/dir_c13be0b21d7f7afa18704e8ae701c6af.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/doxygen.css": [
+      {
+        "line": 946,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 950,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 954,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 958,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 2020,
+        "kind": "space before tab in indent"
+      },
+      {
+        "line": 2255,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/files.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/globals.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/globals_func.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/index.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/market_8cpp.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 65,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/html/navtree.css": [
+      {
+        "line": 149,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/xml/combine.xslt": [
+      {
+        "line": 1,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/xml/compound.xsd": [
+      {
+        "line": 271,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1225,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1281,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1294,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1301,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1336,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1345,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1699,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/market/market-docs/xml/index.xsd": [
+      {
+        "line": 31,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 72,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/official-expanded-assets.html": [
+      {
+        "line": 2,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 3,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 120,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/dir_40bea99ad8a0abe892dbbac4707fb99a.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/doxygen.css": [
+      {
+        "line": 946,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 950,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 954,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 958,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 2020,
+        "kind": "space before tab in indent"
+      },
+      {
+        "line": 2255,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/files.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/globals.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/globals_func.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/index.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/navtree.css": [
+      {
+        "line": 149,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/html/original_8cpp.html": [
+      {
+        "line": 48,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 65,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/xml/combine.xslt": [
+      {
+        "line": 1,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/xml/compound.xsd": [
+      {
+        "line": 271,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1225,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1281,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1294,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1301,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1336,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1345,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1699,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/original/original-docs/xml/index.xsd": [
+      {
+        "line": 31,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 72,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/source/addon/doxywizard/config_doxyw.l": [
+      {
+        "line": 493,
+        "kind": "space before tab in indent"
+      },
+      {
+        "line": 518,
+        "kind": "space before tab in indent"
+      },
+      {
+        "line": 519,
+        "kind": "space before tab in indent"
+      },
+      {
+        "line": 540,
+        "kind": "space before tab in indent"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/source/addon/doxywizard/expert.cpp": [
+      {
+        "line": 1016,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/source/doc/install.dox": [
+      {
+        "line": 233,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 264,
+        "kind": "new blank line at EOF"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/source/src/config.xml": [
+      {
+        "line": 739,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 740,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 889,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 1372,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 2003,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 2535,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 3656,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 3748,
+        "kind": "trailing whitespace"
+      },
+      {
+        "line": 3749,
+        "kind": "trailing whitespace"
+      }
+    ],
+    "docs/evidence/2026-10-12-doxygen/source/src/main.cpp": [
+      {
+        "line": 41,
+        "kind": "new blank line at EOF"
+      }
+    ]
+  },
+  "attributesBefore": {
+    "sizeBytes": 16425,
+    "sha256": "74416a8d6ea48ff1a4c9ea835c95b1a032d74e2d2deb319c4d9eaa691e409987"
+  },
+  "attributesAfter": {
+    "sizeBytes": 20147,
+    "sha256": "c9d8a618d7c057de11093dc721a758d0ad8e81234482e0134a188775256a7a5e"
+  },
+  "oldAttributeBytesRetainedAsPrefix": true,
+  "allSourceGeneratedSignedBytesUnchanged": true,
+  "noGuestGuiServiceTrustOrApplicationDataMutation": true,
+  "v2ReviewStageCommitPushPending": true,
+  "localFinalImageDisplayFilenameFailure": {
+    "phase": "final-proof-local-view",
+    "failedRequestedPath": "ForgeStore/docs/evidence/2026-10-12-doxygen/15-original-after-rollback-run.jpg",
+    "observedFailure": "local image viewer could not locate the guessed filename",
+    "actualPathFoundByRg": "ForgeStore/docs/evidence/2026-10-12-doxygen/15-original-after-rollback-regenerated.jpg",
+    "actualImageViewed": true,
+    "guestOrGuiAction": false,
+    "projectBytesOrIndexChanged": false,
+    "existingScreenshotBytesChanged": false
+  }
+}

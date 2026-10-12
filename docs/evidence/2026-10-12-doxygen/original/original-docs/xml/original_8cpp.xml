@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="original_8cpp" kind="file" language="C++">
+    <compoundname>original.cpp</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="original_8cpp_1a8835a015711ee4bf76ba0fe443adbc1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int original_add</definition>
+        <argsstring>(int left, int right)</argsstring>
+        <name>original_add</name>
+        <param>
+          <type>int</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+<para>ORIGINAL42 中文文档。 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First integer, 21. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second integer, 21. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Sum of the two input integers. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="original-source/original.cpp" line="9" column="5" bodyfile="original-source/original.cpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Original small fixture with Chinese documentation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="original_8cpp_1a8835a015711ee4bf76ba0fe443adbc1d" kindref="member">original_add</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>right)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>left<sp/>+<sp/>right;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="original-source/original.cpp"/>
+  </compounddef>
+</doxygen>
