@@ -1,0 +1,1533 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791813767946-3",
+    "createdAtMilliseconds": 1791813767952,
+    "definition": {
+      "bottleId": "gui-treesheets",
+      "category": "productivity",
+      "compatibilityRating": "unknown",
+      "id": "treesheets",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\TreeSheets",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "TreeSheets-3328-winx64.exe",
+        "sha256": "af984faea6b8d9f3eadc9ad679b2e6aaa0942279a79676b92d4a135f82ee0280"
+      },
+      "launchers": [
+        {
+          "executable": "TreeSheets/TreeSheets.exe",
+          "id": "main",
+          "name": "TreeSheets"
+        }
+      ],
+      "name": "TreeSheets",
+      "publisher": "Wouter van Oortmerssen",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "3328"
+    },
+    "definitionDigest": "sha256:8b9cca46676c6d57b42e63331fcae948176e89050521ad4529c1c100ea5bec7f",
+    "id": "gen-job-1791813767946-3",
+    "launcherDigests": {
+      "main": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791813781671
+  },
+  "definition": {
+    "bottleId": "gui-treesheets",
+    "category": "productivity",
+    "compatibilityRating": "unknown",
+    "id": "treesheets",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\TreeSheets",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "TreeSheets-3328-winx64.exe",
+      "sha256": "af984faea6b8d9f3eadc9ad679b2e6aaa0942279a79676b92d4a135f82ee0280"
+    },
+    "launchers": [
+      {
+        "executable": "TreeSheets/TreeSheets.exe",
+        "id": "main",
+        "name": "TreeSheets"
+      }
+    ],
+    "name": "TreeSheets",
+    "publisher": "Wouter van Oortmerssen",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "3328"
+  },
+  "installedFiles": {
+    "readme-ja_JP.html": {
+      "sizeBytes": 8019,
+      "sha256": "4e8b7c7f82acbe80cd4920ffb63f8becc96e234c653c54ed54db9a1da055ce94"
+    },
+    "TreeSheets.exe": {
+      "sizeBytes": 12291072,
+      "sha256": "880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25"
+    },
+    "unins000.exe": {
+      "sizeBytes": 4451074,
+      "sha256": "841b4287f3a28efa295d363101f4c9adb0ec40fa7dd9d5b0249fbbff376b0a5c"
+    },
+    "readme.html": {
+      "sizeBytes": 7495,
+      "sha256": "d8dd59bb652001e75c4fdc9cb443ca9911c9f2b72bb2f3ffd6a465eb12719842"
+    },
+    "readme-ko.html": {
+      "sizeBytes": 7882,
+      "sha256": "6ee7f7e213e13e5f70d9401bed69ae7c4386763d2cd33e15d44d5b3fac16fa2a"
+    },
+    "readme-vi.html": {
+      "sizeBytes": 8044,
+      "sha256": "d4cdc2410c66c7ad88caa10d672c7e77fd9afc0e7a80f1fb6feb70e2778f199d"
+    },
+    "readme-zh_CN.html": {
+      "sizeBytes": 7300,
+      "sha256": "2ca8c15e94c180838dc8870598eee5fb38115e43cb2539cc5d679e4591abf25f"
+    },
+    "unins000.dat": {
+      "sizeBytes": 29707,
+      "sha256": "8ab21a1a4b960133e2065302d4c5b93da6a74c8fa976886d38af8982577b212b"
+    },
+    "scripts/Export JSON.lobster": {
+      "sizeBytes": 1515,
+      "sha256": "2e06213ad5e095fe1b9beab4ff7e4d4831c7f6f547c1ca47a7a6bc13de6a33b6"
+    },
+    "scripts/Statistics.lobster": {
+      "sizeBytes": 777,
+      "sha256": "5d173dbd5b7cfdd34177eb50eab0e7be56b01801bb45f12e1a31461fcff5075e"
+    },
+    "docs/history.txt": {
+      "sizeBytes": 22568,
+      "sha256": "9e4810c0b77098dfff219013873844603e1c03b000265d6214de8f5ce5b57156"
+    },
+    "docs/HIERARCHY_SWAP.md": {
+      "sizeBytes": 23295,
+      "sha256": "a4f7c1aca4ff8813839ad7edb8ac98e5fef9829225c4b5a6e497e2a11c3551f2"
+    },
+    "docs/script_reference.html": {
+      "sizeBytes": 90830,
+      "sha256": "ffda9d7caa4e32e7fbcc7889765eea696adb470f977fd97754fc185aecec51d6"
+    },
+    "docs/donations.html": {
+      "sizeBytes": 2606,
+      "sha256": "147b0da32dcdf41b87920793c3e0c182b1c7f1ffd75357b1dd853658f96e665b"
+    },
+    "docs/tutorial-ja_JP.html": {
+      "sizeBytes": 14849,
+      "sha256": "92321b735a269dbf03b5a1e95abbe8e9e4f2437e8e22c42afa3d287e3ea6fb74"
+    },
+    "docs/tutorial.html": {
+      "sizeBytes": 12460,
+      "sha256": "fcd37008d45abffb1d96237b091a986db4caa61d4cf66df93111565f6d3d6d8e"
+    },
+    "docs/script_reference_update.bat": {
+      "sizeBytes": 178,
+      "sha256": "8b5cc153c026f16e37a319bfa81e386fe4f87fc687fa2f8d605b18515c47a286"
+    },
+    "docs/file_format_spec.txt": {
+      "sizeBytes": 2366,
+      "sha256": "5dd859612e6544c9a54fadcdc6804aefe85eacddb84c146262fa601aa04593fd"
+    },
+    "docs/tutorial-pt_BR.html": {
+      "sizeBytes": 13316,
+      "sha256": "a65ae81fd09f20bf6c45ed760d97f94b501459046a1492ec15d6bdfb63ec3b1f"
+    },
+    "docs/screenshots.html": {
+      "sizeBytes": 2412,
+      "sha256": "f6f9029422150ec30decd43f2ac0949dcc866dcc7d561720eb4ff6890e3c5ab1"
+    },
+    "images/icon16.png": {
+      "sizeBytes": 997,
+      "sha256": "ed09f0157a5e33cb70f919a5ccd8303ef2412d0420a65ab328c1ad74c29ba1f7"
+    },
+    "images/icon32.png": {
+      "sizeBytes": 291,
+      "sha256": "d15528c7840d53808469fc62180df4caa0ec1c5b81340ad85db66a36db37df4d"
+    },
+    "examples/unicode_test-ko.cts": {
+      "sizeBytes": 16660,
+      "sha256": "edaaa484f003ee102761d5978c199e1a283c5846411d0bd28a088edfd8e27d33"
+    },
+    "examples/tutorial-ko.cts": {
+      "sizeBytes": 24673,
+      "sha256": "e18bd20939b5fb296e34f50d625ad018ff221579df5eba190df1adb6fc25976f"
+    },
+    "examples/work_breakdown_structure.cts": {
+      "sizeBytes": 515,
+      "sha256": "825116e70c688c0252a81d394f563a9f23237774f8aac823a2a9fcda0a6a588a"
+    },
+    "examples/operation-reference.cts": {
+      "sizeBytes": 3068,
+      "sha256": "a6e76c54a00c763966706366a2e82def596075c195f7ac2047b34926e3a97a06"
+    },
+    "examples/tutorial-pt_BR.cts": {
+      "sizeBytes": 25050,
+      "sha256": "8c51fde906b371e45a8a302c695b159f854fb116df2b2290d5cb387f26f3bf64"
+    },
+    "examples/personel_file.cts": {
+      "sizeBytes": 111934,
+      "sha256": "adbe326872ddf864345928b82b2676d7ccd8bc421362477d1411c35be700e183"
+    },
+    "examples/unicode_test.cts": {
+      "sizeBytes": 16649,
+      "sha256": "966bb89eb76b31bc213aca30b623365e4b282d303434788a017cf710daab04f4"
+    },
+    "examples/tutorial-de.cts": {
+      "sizeBytes": 23307,
+      "sha256": "2cd592cb6b6978443e4bd4ad0f90cbdd0b36f5493a181911b48a25a429ceaf2c"
+    },
+    "examples/sales.cts": {
+      "sizeBytes": 218,
+      "sha256": "879de3b9f4bd80089ddb9c5d680133947425fa8a298516622845dd32f8553e57"
+    },
+    "examples/tutorial-vi.cts": {
+      "sizeBytes": 24939,
+      "sha256": "429f6056244d74dbc3bc8c744b878be75f4ee2c5cc59b11dfc3762497839a347"
+    },
+    "examples/tutorial-zh_TW.cts": {
+      "sizeBytes": 23781,
+      "sha256": "7e352d9580110e17fdcfa53b5292b66ad00cee0c4e80130e9281179cf8f1d945"
+    },
+    "examples/simple_graph.cts": {
+      "sizeBytes": 173,
+      "sha256": "dd53679024062b9175fe72a1130f94a375d335d508be59da988b74d77d7f5ace"
+    },
+    "examples/tutorial-zh.cts": {
+      "sizeBytes": 23599,
+      "sha256": "9f55deccde613ff5fdce1b20cb5b419b0e3698a36a263d0da9e142260a5f513f"
+    },
+    "examples/complex_eval.cts": {
+      "sizeBytes": 1032,
+      "sha256": "e117678e574baa67bb03167f0ffec80a355c1c6e5d78e9f264f0e067e01512c3"
+    },
+    "examples/tutorial-fr.cts": {
+      "sizeBytes": 23814,
+      "sha256": "c62920df77261b7fe5257c8ba13d58e90bd47a2ac7546cc48511cfe7354a9351"
+    },
+    "examples/tutorial.cts": {
+      "sizeBytes": 23760,
+      "sha256": "dc58f5862d65c2879d44f2fed4c197cb29a49de7c98022740020e87c25403cbb"
+    },
+    "examples/tutorial-sp.cts": {
+      "sizeBytes": 24880,
+      "sha256": "e146049c67b3c12c73b98de01144414aa19ed926b59b755785a4ebef05c21b77"
+    },
+    "examples/todo_calendar.cts": {
+      "sizeBytes": 28564,
+      "sha256": "e82ac82ba5374e47488115c969185b998c84cff53ec3dcd6848fdff20400a5b6"
+    },
+    "examples/tutorial-ru.cts": {
+      "sizeBytes": 28603,
+      "sha256": "ff16350f662c5ec4d60f8dc6fd5b823610a3e4ac7cb79cffc3b86992f4236459"
+    },
+    "examples/operation-reference-ko.cts": {
+      "sizeBytes": 3205,
+      "sha256": "1eed5c966bbe2ac66f661f2159201371137fcc7fbfcff094dee63d00a270225c"
+    },
+    "examples/contrib/intro-ru.cts": {
+      "sizeBytes": 33939,
+      "sha256": "342a81a1579f507fd45764be02c44de3eb6e66e0bb70eb123f56f6102a4eba36"
+    },
+    "examples/contrib/intro-ko.cts": {
+      "sizeBytes": 32848,
+      "sha256": "d36bd6655fefe81e6af2a7eac23712ef137b535b7fca66b4cbc004b1ba8b778a"
+    },
+    "examples/contrib/structogram-quicksort.cts": {
+      "sizeBytes": 237,
+      "sha256": "45bfb07d1ce539de5d0b3b2d12a2c826e8677694c4748a61ced9902d8bece7f0"
+    },
+    "examples/contrib/todo_calendar-zh.cts": {
+      "sizeBytes": 31114,
+      "sha256": "2a1f948bb92d52bee9b75049528db8d7a7f18e68d6c93038342cb3cdd702bdd1"
+    },
+    "examples/contrib/weekly+calendar.cts": {
+      "sizeBytes": 731,
+      "sha256": "7a59aef907a7a9e1d84fb79fdb3a5caf6354ff6217492de64e61596de680c314"
+    },
+    "examples/contrib/what-i-like-about-treesheets.cts": {
+      "sizeBytes": 671,
+      "sha256": "372991e9c7e614b5b17748212f323b83380f8ef131d9debeaee88541989dc892"
+    },
+    "examples/contrib/yearly-calendar.cts": {
+      "sizeBytes": 665,
+      "sha256": "7a775760d49bba036d1840dac5d9a1c503f9d712d65c65ef711a0bb3b13759a0"
+    },
+    "examples/contrib/Procrastination.cts": {
+      "sizeBytes": 1119,
+      "sha256": "431ebdeec51870964e218bc752503e1342d65eb47f835458c735627c3bc90185"
+    },
+    "examples/imported_from_xml_examples/plant_catalog.cts": {
+      "sizeBytes": 1222,
+      "sha256": "5b1aee2d9f97f8af3c5b3b3e1819133d846fb36d0102a69426e9c0faea653726"
+    },
+    "examples/imported_from_xml_examples/books.cts": {
+      "sizeBytes": 1318,
+      "sha256": "0d0437a936a73ecb0b9772f6e3fcbd75b8da926afd22ee49e8c3ceaf79ad3065"
+    },
+    "examples/imported_from_xml_examples/menu.cts": {
+      "sizeBytes": 379,
+      "sha256": "29a249c39a94f2acf7793e5803dbf6a24a4362c9d4bcf2ac474b3f4709b7fb70"
+    },
+    "examples/imported_from_xml_examples/cd_catalog.cts": {
+      "sizeBytes": 1053,
+      "sha256": "b66f9d833e857997f697132ef4fad676928e2c59608ba7d99107ab50dbe8c510"
+    },
+    "examples/contrib/help/treesheet key quick reference (by WiM) 3 posted.cts": {
+      "sizeBytes": 3919,
+      "sha256": "55c099d1c475317857d3b534177d5d800dbe2a8242824ba77746c845f2c6a0cf"
+    },
+    "examples/contrib/help/treesheet menu including images landscape final.cts": {
+      "sizeBytes": 13685,
+      "sha256": "71f90ddbb8ba9cfb8b3eaf86dadcd5e7298f95c57325a392af4181d08ef93285"
+    },
+    "examples/contrib/help/treesheet key quick reference (by WiM) 3 posted-ko.cts": {
+      "sizeBytes": 4193,
+      "sha256": "d72057bc7e7f95cec0fd869087345c768c5aa0468893d4317a811ca73701010f"
+    },
+    "examples/contrib/help/treesheet menu including images landscape final-ko.cts": {
+      "sizeBytes": 15747,
+      "sha256": "9f4ee7577c13c4f0586a65e10b3fa8aa26f692bd719dc6b28f5d9ab2d7c88eb6"
+    },
+    "images/render/line_sw.png": {
+      "sizeBytes": 223,
+      "sha256": "1e13c22351ef161e2a90375ccc58715478d369222570e7d81495eb39bb841a8f"
+    },
+    "images/render/line_se.png": {
+      "sizeBytes": 219,
+      "sha256": "420886d1a0cf83127c76872d02841adfd61c6ba1db835d3a5e91e35585ce45c8"
+    },
+    "images/render/line_nw.png": {
+      "sizeBytes": 224,
+      "sha256": "2eedd62237c1c1a48b6e14afccd5c8dd75a56a636ec2c41079734509ae8fb7a3"
+    },
+    "images/render/line_ne.png": {
+      "sizeBytes": 221,
+      "sha256": "c8c5ea3b4184aa06d7204d2ab379204445f739760f4f6136502b367df1acab10"
+    },
+    "images/nuvola/thanks.to": {
+      "sizeBytes": 488,
+      "sha256": "a239d9ee3f6a516025e97a89660d6d12d13f19c040c238f18a348b77f4f44749"
+    },
+    "images/nuvola/license.txt": {
+      "sizeBytes": 26944,
+      "sha256": "09fe370b202e75e43aa71089e33761de3e35a103d865b32c8d09e46a59d8b57c"
+    },
+    "images/nuvola/fold.png": {
+      "sizeBytes": 1758,
+      "sha256": "98ec7ecf21cce44fa2c4a624a21a9698248b70595a61ea158f8b58cb73e04aec"
+    },
+    "images/nuvola/author": {
+      "sizeBytes": 71,
+      "sha256": "3a069e7f1891114607a5a171e48e4fc32b10128132a941e05bf0f0f47219e4d6"
+    },
+    "images/nuvola/readme.txt": {
+      "sizeBytes": 2572,
+      "sha256": "d36d82f08c47e3ed4b658e58f194d5d5e460651946e2ef8c8b959aeb6abb09d0"
+    },
+    "images/material/LICENSE.material": {
+      "sizeBytes": 11558,
+      "sha256": "49bbe9114e49214df2ccc324cb3ac8d1d1aa1c3a0947f94c286765e86647b32e"
+    },
+    "images/material/LICENSE.vscode-icons": {
+      "sizeBytes": 21484,
+      "sha256": "9df82416ae8db5bf001d5b68781831f9c9b65608117ac1ea3080dcf770d2e5b4"
+    },
+    "images/material/toolbar/zoomout_dark.svg": {
+      "sizeBytes": 2252,
+      "sha256": "bdca1e71bd84d93a1f5ccd926410936adad843f64639c3f29722e60e4430906f"
+    },
+    "images/material/toolbar/run_dark.svg": {
+      "sizeBytes": 1300,
+      "sha256": "0405a43658c1b73b63928e44b71f7bce86980bb91d00eebf9cbb8adefcc605aa"
+    },
+    "images/material/toolbar/fileopen_dark.svg": {
+      "sizeBytes": 1520,
+      "sha256": "10e1b08edddbd45d6b022f5a2fa318ff2eec023965b30ced276d91730bcf8d98"
+    },
+    "images/material/toolbar/zoomin_dark.svg": {
+      "sizeBytes": 2311,
+      "sha256": "b2affe3d220f1f6d85ba3823322d6a1c2e548c0426ee340eb95fdf3f3f69d4eb"
+    },
+    "images/material/toolbar/search_dark.svg": {
+      "sizeBytes": 2273,
+      "sha256": "96dbfa52b6a7a323e02511a10415657d76e0658c61c02d19363c8233f1efdffc"
+    },
+    "images/material/toolbar/filesaveas_dark.svg": {
+      "sizeBytes": 1799,
+      "sha256": "ebe5d02035bb9d5447dc9d02409e7b4d9a67fbeb270337ff6ecc75ef25909680"
+    },
+    "images/material/toolbar/fileopen.svg": {
+      "sizeBytes": 503,
+      "sha256": "c654b68219c3301b8c20bb0a6c4b43b61507fdbe5c1295d0aae0d667901f84dc"
+    },
+    "images/material/toolbar/newgrid.svg": {
+      "sizeBytes": 2254,
+      "sha256": "e1fb9fd450e35a11992c1b234b75f78db69753ac938f0bfc578ddf8de430fc2d"
+    },
+    "images/material/toolbar/zoomout.svg": {
+      "sizeBytes": 1224,
+      "sha256": "cc78024a664386cfedd43abc15f318f3e4bb79dd05022896196f79f728dfb2d9"
+    },
+    "images/material/toolbar/filesaveas.svg": {
+      "sizeBytes": 768,
+      "sha256": "52b913a1110e1464a916382cab7f70e53f630617d791fbd8711abd9be57adc77"
+    },
+    "images/material/toolbar/filenew.svg": {
+      "sizeBytes": 595,
+      "sha256": "eb8ba51092d45561c090336a3b7282f7a7d5d0a3372b089de4fee33a00cf4d3e"
+    },
+    "images/material/toolbar/replaceall_dark.svg": {
+      "sizeBytes": 4598,
+      "sha256": "b5fb90bd5c055e2b9a40f275e4d62a1109acce6a0fd52b6d0e6bbfec81489e5a"
+    },
+    "images/material/toolbar/newgrid_dark.svg": {
+      "sizeBytes": 2272,
+      "sha256": "919acc71972e177aa2a10e33283f84d4d48f7eaef3aa19eed361ce2937dafa06"
+    },
+    "images/material/toolbar/run.svg": {
+      "sizeBytes": 276,
+      "sha256": "c935b3d091b5be0a95652aeaa93f602292b8ddd779b8b5bedbf407922142f466"
+    },
+    "images/material/toolbar/editcopy.svg": {
+      "sizeBytes": 425,
+      "sha256": "e5baa4982742636091ad3e7b94b634475d6a7d64927b59f82ac95b2bd986d0c2"
+    },
+    "images/material/toolbar/editpaste_dark.svg": {
+      "sizeBytes": 2660,
+      "sha256": "aa04d756d0dd486a94d258119f913d3e88b5cb622289c7704e4adf6841873127"
+    },
+    "images/material/toolbar/search.svg": {
+      "sizeBytes": 1254,
+      "sha256": "f461bf380e95cbc11a2e978addc1e7c767b283143242a64fb487d1eca67f959c"
+    },
+    "images/material/toolbar/replace.svg": {
+      "sizeBytes": 2060,
+      "sha256": "0cf50a2e8109c3d7345049ca2c63f79b3a6d41b8b5e2f7cadba44eb3ab9080fe"
+    },
+    "images/material/toolbar/filesave_dark.svg": {
+      "sizeBytes": 1412,
+      "sha256": "4931ca04aac4a33fc2d7597aecc4681154934288276eac2427ae77e14d998715"
+    },
+    "images/material/toolbar/image_dark.svg": {
+      "sizeBytes": 1536,
+      "sha256": "9467b41d3b0586d2866f1e591870213f3b0b86b0997bfcf5807c7aab76e7fe6e"
+    },
+    "images/material/toolbar/editcopy_dark.svg": {
+      "sizeBytes": 1446,
+      "sha256": "f816646b1d7647943e18550b100115bf323eb49c6cf190f91b5a52842edf40e2"
+    },
+    "images/material/toolbar/filenew_dark.svg": {
+      "sizeBytes": 1735,
+      "sha256": "5874776c962fb860fe879778408aa06c97008454df2c7e8484bdfd408e999142"
+    },
+    "images/material/toolbar/image.svg": {
+      "sizeBytes": 1532,
+      "sha256": "66a36c76bd687bd83501f0c9dfb30d606c3e741ce691b87fd3951180e073790c"
+    },
+    "images/material/toolbar/filesave.svg": {
+      "sizeBytes": 383,
+      "sha256": "2d949eea8aab87d24cb3924bc2973902c3135b6f4ff426a71f6776422a2c3fef"
+    },
+    "images/material/toolbar/replaceall.svg": {
+      "sizeBytes": 3567,
+      "sha256": "d3ae37ddd12a43e3940b4f961488f98711923383e6e27df4a78b43201e2fa5d5"
+    },
+    "images/material/toolbar/replace_dark.svg": {
+      "sizeBytes": 3088,
+      "sha256": "73d771601b0cb2dbc659eed023108e972b032942388645c34961f224c6219fdc"
+    },
+    "images/material/toolbar/zoomin.svg": {
+      "sizeBytes": 1284,
+      "sha256": "b0cd863cd4e66cba0d1a4d1a48785c3efbb50580bd6a0bd40779a21b4696dd11"
+    },
+    "images/material/toolbar/editpaste.svg": {
+      "sizeBytes": 2636,
+      "sha256": "c527b623577608d185a267ebb2912d0756d18048322cc72062b24c551efae925"
+    },
+    "images/material/toolbar/undo_dark.svg": {
+      "sizeBytes": 1521,
+      "sha256": "6862e2be5b9fdb024dddcd73e9fe35f3df9e1e976f09899d8b9223e2e25d62d8"
+    },
+    "images/material/toolbar/cancel_dark.svg": {
+      "sizeBytes": 3012,
+      "sha256": "9f6fd75c4ea931e90c33d5c69f8a69f44f7487b966a650c7de5f6e77bba40ac9"
+    },
+    "images/material/toolbar/cancel.svg": {
+      "sizeBytes": 1973,
+      "sha256": "fe6c44fd281f7b5912a2ec9ff9df95f33032442987244e5e09a993ce09881184"
+    },
+    "images/material/toolbar/undo.svg": {
+      "sizeBytes": 496,
+      "sha256": "74a223a0e4474e6d4b38f5ea3d63a9737279f1a37d5b50f94f7ad221a3bf1754"
+    },
+    "images/nuvola/dropdown/ledred.png": {
+      "sizeBytes": 3246,
+      "sha256": "aa161e00d79405103d04cdd44daf0330bd04246887f037915d57076769049bf5"
+    },
+    "images/nuvola/dropdown/messagebox_warning.png": {
+      "sizeBytes": 3259,
+      "sha256": "4920047c68394880679f45ddca2c346200ec31e76a4503a555467fca34fab4c8"
+    },
+    "images/nuvola/dropdown/kcoloredit.png": {
+      "sizeBytes": 4945,
+      "sha256": "4c5b7491dc21cc3df0f9af279a7288003ff5d365833c9f5663a21dc13d5358fe"
+    },
+    "images/nuvola/dropdown/player_stop.png": {
+      "sizeBytes": 796,
+      "sha256": "61bbf156a8ba99828670f39736513e821b0a0d31886e66b7a6d25c00a1b6b275"
+    },
+    "images/nuvola/dropdown/ledgreen.png": {
+      "sizeBytes": 4152,
+      "sha256": "6c5e944080e550d3be30008c49c7e75f97021fa6176ce278fd538181d19cbfe5"
+    },
+    "images/nuvola/dropdown/up.png": {
+      "sizeBytes": 2802,
+      "sha256": "04142a17ed0820e9142d978d730ec2d02b08115c46031010c968a255d4082168"
+    },
+    "images/nuvola/dropdown/color_line.png": {
+      "sizeBytes": 3020,
+      "sha256": "20b3be91df4a043cfed46d144410b890fdf991916fe94237f41195480c7737f8"
+    },
+    "images/nuvola/dropdown/forward.png": {
+      "sizeBytes": 2892,
+      "sha256": "d6c611f25fcaa53327db7ff8061368b41ee06586a67a442a9e93c5578c258ac1"
+    },
+    "images/nuvola/dropdown/back.png": {
+      "sizeBytes": 2687,
+      "sha256": "7d5cd39f8e7d48a4a4aaf2bfc616458b11a86652cb494fb1c9ab69212486f198"
+    },
+    "images/nuvola/dropdown/player_pause.png": {
+      "sizeBytes": 1537,
+      "sha256": "805b86b5f09e86a00bdb7e68427861e5342d0875df2081d9bd690292f2d48186"
+    },
+    "images/nuvola/dropdown/kweather.png": {
+      "sizeBytes": 5061,
+      "sha256": "27d7f3b86880b53f859505815fdfad009640068268137497dc7978d356125b25"
+    },
+    "images/nuvola/dropdown/configure.png": {
+      "sizeBytes": 2897,
+      "sha256": "5fae71df38501ec401f59aa62943da82f521fbc1d67f42e23c20197bd2ba76be"
+    },
+    "images/nuvola/dropdown/clanbomber.png": {
+      "sizeBytes": 2803,
+      "sha256": "62498164b24a494240764ad3659784e49f7da3c2495cb27e7515b2d236680d8a"
+    },
+    "images/nuvola/dropdown/down.png": {
+      "sizeBytes": 2627,
+      "sha256": "ba40d022cad8e46a38d7274385e1e9e0ac0ad02f11d4841ce80d9af4c0d669c3"
+    },
+    "images/nuvola/dropdown/mozilla.png": {
+      "sizeBytes": 4079,
+      "sha256": "36008dd2a42bb9c3ae74c3964ac035f2b46e860d0c972f218669d236568b1722"
+    },
+    "images/nuvola/dropdown/messagebox_info.png": {
+      "sizeBytes": 3829,
+      "sha256": "a955cf0fad98c872df821c5659bd1b41b1e7a239289e803ae901f083c49e8587"
+    },
+    "images/nuvola/dropdown/ledlightgreen.png": {
+      "sizeBytes": 3840,
+      "sha256": "deab195e7a7178069b006d479ad7a85f3778b936885d11cc77313fac50e423e1"
+    },
+    "images/nuvola/dropdown/kfm_home.png": {
+      "sizeBytes": 5001,
+      "sha256": "818787949ecde68e178027e4175fc41f7cf7585108ff8bd0e9493c45aa8930b8"
+    },
+    "images/nuvola/dropdown/kgpg_key3.png": {
+      "sizeBytes": 5167,
+      "sha256": "312b8c396048cfa5a191344e37cea920ec8939dd166e091814f46a64d9299c76"
+    },
+    "images/nuvola/dropdown/ksysv.png": {
+      "sizeBytes": 2781,
+      "sha256": "95804a21ef52857023bb2e852d61f1c960fb8ac8789af4e2d96e60784eb8e8ad"
+    },
+    "images/nuvola/dropdown/bug.png": {
+      "sizeBytes": 3900,
+      "sha256": "5e3c0126df5e3ad4fb69cb220784f3216142892fc9f276ccb1bb38a24259d343"
+    },
+    "images/nuvola/dropdown/noatunloopsong.png": {
+      "sizeBytes": 3986,
+      "sha256": "709c4f223a5450a48242b19f48cc6471120567c8d45fb02589c42ab2327b88c9"
+    },
+    "images/nuvola/dropdown/package_network.png": {
+      "sizeBytes": 5597,
+      "sha256": "16705e80804c3cdf05b59b2fb9424972d3d08c055bd7e5b89c218f8c74032089"
+    },
+    "images/nuvola/dropdown/ledpurple.png": {
+      "sizeBytes": 4103,
+      "sha256": "a37acd758a47c2c60e22e4d4e512ef7c2baf937ab22c05bbe4bfdea2eda728fb"
+    },
+    "images/nuvola/dropdown/history.png": {
+      "sizeBytes": 5804,
+      "sha256": "28249d343a637ef61ae255c827d23dfd138cc3450c1de63150b7f3faa85ee0cf"
+    },
+    "images/nuvola/dropdown/edit_remove.png": {
+      "sizeBytes": 1164,
+      "sha256": "767b3853c7bb4e7ae35abe8052592cf96c1786c935585f374d7768578a197a08"
+    },
+    "images/nuvola/dropdown/gohome.png": {
+      "sizeBytes": 3831,
+      "sha256": "b2d7d11c97f91621d48586a26a0c6e48a6de260fd5703db41f1abae5f9fa86ea"
+    },
+    "images/nuvola/dropdown/maybe.png": {
+      "sizeBytes": 1068,
+      "sha256": "50a5c811531df02d7348be3eaea6ff37df4cd95b56d1fcefe298d1567143a33b"
+    },
+    "images/nuvola/dropdown/package_toys.png": {
+      "sizeBytes": 5784,
+      "sha256": "d690d345c154833a5cd1b9e928f7dafe66af59716cf3b97052ce5f0de3fe56cd"
+    },
+    "images/nuvola/dropdown/kuser.png": {
+      "sizeBytes": 5470,
+      "sha256": "65a1a87dc07446c113db8e1adf2e35bfd876357017e7ab29e2aec39f8e1548ba"
+    },
+    "images/nuvola/dropdown/bookcase.png": {
+      "sizeBytes": 3781,
+      "sha256": "2a232616c8a686c6397aa7d9e83a0dd2ef92de2a45d053697b44acfc4054b9f2"
+    },
+    "images/nuvola/dropdown/ledblue.png": {
+      "sizeBytes": 4094,
+      "sha256": "a48340138b2abac4288dab2fc477b62985e7a8ed61c31cf2895b923459bc03ea"
+    },
+    "images/nuvola/dropdown/player_play.png": {
+      "sizeBytes": 2558,
+      "sha256": "99f23c24a556c7e7cf0794bd100400941eb75e342942f2487fc9ef36ab30ad3f"
+    },
+    "images/nuvola/dropdown/edit_add.png": {
+      "sizeBytes": 2352,
+      "sha256": "4e9f318364ce1919e46fa14760718008c1b54e65a57c0d93f9de72bcc088d59a"
+    },
+    "images/nuvola/dropdown/bookmark.png": {
+      "sizeBytes": 3507,
+      "sha256": "a20b026cf1c83c871624089e100f4c83969aa07aa4b1ffd396e45207b93c0ba7"
+    },
+    "images/nuvola/dropdown/ledlightblue.png": {
+      "sizeBytes": 3507,
+      "sha256": "78b79a95f85a0a6e0b7b5aecedc2894087cdf3af5f5dd88203f82cc10c8bdc07"
+    },
+    "images/nuvola/dropdown/ledorange.png": {
+      "sizeBytes": 3550,
+      "sha256": "fb48dfb6c1d3f92bbcbdf4bcb48c29b80fc68036ef01c0939e2154f37f91dab8"
+    },
+    "images/nuvola/dropdown/apply.png": {
+      "sizeBytes": 2855,
+      "sha256": "aa0ced0d6f9d69c46ab674b8c839835d07a0ba54c90c0fd54dd04b6f641b36c3"
+    },
+    "images/nuvola/dropdown/kalarm.png": {
+      "sizeBytes": 4565,
+      "sha256": "f8410b0e5f4c57de9ce30935d2d305b82d931d8785cfd79926650505053f2076"
+    },
+    "images/nuvola/dropdown/ledyellow.png": {
+      "sizeBytes": 3192,
+      "sha256": "f84b51099033f7c69560a31c1529f88d7642988f2c078ce187c5fa8367799b27"
+    },
+    "images/nuvola/dropdown/no.png": {
+      "sizeBytes": 3062,
+      "sha256": "5c7b5327db5ab7a271d8e14d9709b88861cfc411e415f195af4b70d0d38076af"
+    },
+    "images/nuvola/dropdown/cache.png": {
+      "sizeBytes": 2484,
+      "sha256": "501022860c8393bfc3a3fb6f54b8834f56386a428190e8a50673e24485a74b20"
+    },
+    "images/nuvola/dropdown/email.png": {
+      "sizeBytes": 3393,
+      "sha256": "a9bd3ed21d9fd17f9edf579d9c658f1c46a171125951fd069309739ad2d4775d"
+    },
+    "images/nuvola/dropdown/cancel.png": {
+      "sizeBytes": 3640,
+      "sha256": "f4fcff30aa40d99d2c4b7afa713564249291441e980fe129d474572ea563caeb"
+    },
+    "images/nuvola/dropdown/kcmprocessor.png": {
+      "sizeBytes": 4356,
+      "sha256": "f761c1662113dc8459c1efc8f8d0a7b1e34e962a24104cfe3f4ee42330e69006"
+    },
+    "images/nuvola/dropdown/package_games_arcade.png": {
+      "sizeBytes": 2981,
+      "sha256": "77bb7c4404a755282690a27ad306ef42e8e8b5aa6d8988f95deaf1939ba38ae6"
+    },
+    "images/nuvola/dropdown/kgpg.png": {
+      "sizeBytes": 5715,
+      "sha256": "caa7436cd34238fb2ee477957a388c28d94ccc48b313345a3989f2f753d392ef"
+    },
+    "images/nuvola/dropdown/misc.png": {
+      "sizeBytes": 5083,
+      "sha256": "539b7bdffe3a0da96fd65fcf590b30a7ba14634372ab5d59721846a6f85936c5"
+    },
+    "docs/images/excl.png": {
+      "sizeBytes": 1306,
+      "sha256": "f52d46e3c1232b1ba8db099dc76f69a2fd30779058661436e01fa6b473f9cc07"
+    },
+    "docs/images/treesheets_logo.png": {
+      "sizeBytes": 10389,
+      "sha256": "2738edadd18e8067cf3692018ed21e402050fb493e79bc7e0eac8e1c19958d7a"
+    },
+    "docs/images/check.png": {
+      "sizeBytes": 1613,
+      "sha256": "a826032b19f34e562e2cd45313ee45fb33abe4b316b6d22987f41e681af22dae"
+    },
+    "docs/images/stop.png": {
+      "sizeBytes": 896,
+      "sha256": "92ee236b1de52dca83e009ea55ffc4784cb2cc436c4f7dbb2a0d61f9f4920a78"
+    },
+    "docs/images/screenshots/screenshot_todo_mac.png": {
+      "sizeBytes": 231446,
+      "sha256": "0ec69688e48cf11656e0cf14fb2c6fec86316063daeee1e29da4eba25974df0d"
+    },
+    "docs/images/screenshots/screenshot_tutorial.png": {
+      "sizeBytes": 139026,
+      "sha256": "7593a85ae25e0fea63dcd3d3f16100ea4a057ca20a282b5b1564298afaa3066c"
+    },
+    "docs/images/screenshots/screenshot_sales.png": {
+      "sizeBytes": 47701,
+      "sha256": "2ab642ca4f1da4f309796f82fc29ccd50bd6977d89c61023b28af302613ec191"
+    },
+    "docs/images/screenshots/screenshot_todo_half.png": {
+      "sizeBytes": 194850,
+      "sha256": "693da530c452068eb5ec16312ab2777e492fbabaa02985a789387e64945c674f"
+    },
+    "docs/images/screenshots/screenshot_todo_linux.png": {
+      "sizeBytes": 204813,
+      "sha256": "b808ca773d2427bd3b174d018882a005e058a95c22e04fab933c078cb66c2cdb"
+    },
+    "docs/images/screenshots/screenshot_tutorial2.png": {
+      "sizeBytes": 70447,
+      "sha256": "f919c5990b6ac0969fedbbea382c3c466fc573880317af45a09be501217c81ba"
+    },
+    "docs/images/screenshots/screenshot_unicode.png": {
+      "sizeBytes": 100810,
+      "sha256": "ade6d188006f48938c65433bc80acf897e8a0be77eaebc81879e4e2c079103c3"
+    },
+    "docs/images/screenshots/screenshot_personel.png": {
+      "sizeBytes": 192008,
+      "sha256": "f17ffb82fc90036d9a21ab5e1c96fd18e840dba472426cfd31ddef37fedb5352"
+    },
+    "docs/images/screenshots/screenshot_todo.png": {
+      "sizeBytes": 207810,
+      "sha256": "8a9f2c7ed2a44dadde76632d22a66a7cc89665fd666b483ec328c63d4de37445"
+    },
+    "docs/images/documentation/long2.png": {
+      "sizeBytes": 1980,
+      "sha256": "ba4d40a0b70db3a8b1dc0d8c7c630bc41138e74c669c4ce2f9e1219edb6e7408"
+    },
+    "docs/images/documentation/gridsel2.png": {
+      "sizeBytes": 1186,
+      "sha256": "b724ac324a41e95c70d5392752c6cc56102dc495283f7c8d0cdc51f0e0164a88"
+    },
+    "docs/images/documentation/insert.png": {
+      "sizeBytes": 726,
+      "sha256": "30b885791454a27ffae0f72f3cb528c7cb58e219fe5b52af0674b6e82aaed59c"
+    },
+    "docs/images/documentation/long3.png": {
+      "sizeBytes": 2105,
+      "sha256": "8ca3e872a8f7ad3010d418f79af6a0ad594e38d05e258daece515e0688ef7cfa"
+    },
+    "docs/images/documentation/zoomed.png": {
+      "sizeBytes": 1039,
+      "sha256": "b35676c60ec7adfb2ce3349b7d5cb2569127b09f2daad1fa57818c4fa3728a83"
+    },
+    "docs/images/documentation/long1.png": {
+      "sizeBytes": 2050,
+      "sha256": "bc144ae7b626574b2f9a74df9d19a2dd01ef8b0c4aa1959624787cccaddeb49f"
+    },
+    "docs/images/documentation/edit.png": {
+      "sizeBytes": 496,
+      "sha256": "72e89ebaefde56c544cab2525491c63692877a3c43cfec7a42731a18e778428b"
+    },
+    "docs/images/documentation/textsize.png": {
+      "sizeBytes": 1051,
+      "sha256": "9127925708ffd7fac9cb9b7b1c0b0b842a016316ab916d1f18512ad66bd5a42d"
+    },
+    "docs/images/documentation/deleted.png": {
+      "sizeBytes": 698,
+      "sha256": "1dc722250359dbad870e1f2db79d82b953a25c463ac21a48e0e6deecedb7099b"
+    },
+    "docs/images/documentation/new.png": {
+      "sizeBytes": 298,
+      "sha256": "ca39144299996a7c1f7eb1c78c5a87db0cad66b01d84ff814d616a4a9f7b20d5"
+    },
+    "docs/images/documentation/grid.png": {
+      "sizeBytes": 1095,
+      "sha256": "ab743bb935cd4d1bfba58a27f8a18800e66903731f02b1043cb5a963d93c6874"
+    },
+    "docs/images/documentation/postgrid.png": {
+      "sizeBytes": 690,
+      "sha256": "6600cb8c518f1437b3a42a095db10e10eca6dfabc005e2540f1d071856849760"
+    },
+    "docs/images/documentation/pregrid.png": {
+      "sizeBytes": 675,
+      "sha256": "a8fe35041e7381f3db77000e3fd507389c3bb439a3a9fadb2f3c98b54eb4cdef"
+    },
+    "docs/images/documentation/gridline2.png": {
+      "sizeBytes": 715,
+      "sha256": "4c778ad23190e83675cd2e2d9e3420f88431299b2aa0e8edfed86c2e5984fa44"
+    },
+    "docs/images/documentation/gridline.png": {
+      "sizeBytes": 575,
+      "sha256": "8307202c61d7c2bcaf2e9cfa358ecce1dafcba387654a68c9b11ec4f6c05fa18"
+    },
+    "docs/images/documentation/gridsel3.png": {
+      "sizeBytes": 1133,
+      "sha256": "bfda75e670198f02cad48deeaa9f57b5055b8aeca21c8ae515fa00f462797ac9"
+    },
+    "docs/images/documentation/gridsel1.png": {
+      "sizeBytes": 1132,
+      "sha256": "8f32b8a5cdf77e2201e376014e4e4cb7b66ec9d703b83f9e943b5863fe3b9684"
+    },
+    "scripts/modules/color.lobster": {
+      "sizeBytes": 1995,
+      "sha256": "85f83db0ed633adf2dec5957b3c3cc5962738448cb6503c854fbed4bd7f25fb5"
+    },
+    "scripts/modules/stdtype.lobster": {
+      "sizeBytes": 636,
+      "sha256": "0fbfcfb2dc9cca79717e9afb5e48d15f42d892a9d96623b22065ae71237259d4"
+    },
+    "scripts/modules/vec.lobster": {
+      "sizeBytes": 4585,
+      "sha256": "03f287b0d488c285fa298a19337b136f842a18eac476ff9ac0166e2fc6b5ced7"
+    },
+    "scripts/modules/std.lobster": {
+      "sizeBytes": 6457,
+      "sha256": "36b33ea418f0049488891d6def1ea3d50430bd08a5940b6adf7ba2c96934d3bf"
+    },
+    "translations/vi/ts.mo": {
+      "sizeBytes": 50459,
+      "sha256": "d3226139560dc0c8994cbd1346cb234096a23b4afff51ae4782c63dd6771c50c"
+    },
+    "translations/ru_RU/ts.mo": {
+      "sizeBytes": 59186,
+      "sha256": "8d8da379b1c6a9b988fbfbb1250f96c31e4bbe12cbb3182c3a41b6ea5d5c1049"
+    },
+    "translations/de/ts.mo": {
+      "sizeBytes": 49758,
+      "sha256": "6e8c8de7d05def112ecd910b6df328aee488f7f15958771a1108062ce1d0501f"
+    },
+    "translations/ko/ts.mo": {
+      "sizeBytes": 48543,
+      "sha256": "d7d7260c45113d3eec7eaa363ccd5644e0f9f1c3a08368b539e27ae2583bd893"
+    },
+    "translations/pt_BR/ts.mo": {
+      "sizeBytes": 49011,
+      "sha256": "c753f6c8c2fd540ee6bdfdd119f56178960962088b3029e749943d71ad504c4b"
+    },
+    "translations/fr_FR/ts.mo": {
+      "sizeBytes": 41054,
+      "sha256": "dbae037eab064425284dcc323fa4b2430d8c28b9730b205123ae7d70738cf403"
+    },
+    "translations/it/ts.mo": {
+      "sizeBytes": 38263,
+      "sha256": "d78ef564fee2ba863c641ef040b7e5f9416b3eb5d4b521fb4b3c546fa42e3f2d"
+    },
+    "translations/ja_JP/ts.mo": {
+      "sizeBytes": 52887,
+      "sha256": "60966c11b8a67bc72856b6d7f309e50882b44123fddffff5cbd6a0e37a65e96d"
+    },
+    "translations/zh_TW/ts.mo": {
+      "sizeBytes": 43164,
+      "sha256": "4dfe51a60e07b764d016f723f462aca8d449e7d940779d0122f9a5e69ee7f2ce"
+    },
+    "translations/zh_CN/ts.mo": {
+      "sizeBytes": 39020,
+      "sha256": "2bf877b7d021538786e038c5267c81bfbd26f7c0c0763b15aff69f079362c3f4"
+    }
+  },
+  "observedGeneratedProgramPins": {},
+  "save": {
+    "fixedDataPins": {
+      "drive_c/TreeSheetsTests/市场表格.csv": {
+        "sizeBytes": 48,
+        "sha256": "da05508bd50e7802fd1402f6edac13983e7bb41b2f805784d334a9a61f4fabcc"
+      },
+      "drive_c/TreeSheetsTests/market.cts": {
+        "sizeBytes": 140,
+        "sha256": "2992e457c5db36d03cb64be64b43a898c51ef0ec3e5ddef5ebecba30733dda6a"
+      },
+      "drive_c/TreeSheetsTests/market.csv": {
+        "sizeBytes": 68,
+        "sha256": "794c98f80c7bc1ba96efe4211484b913efd7dd5d9f08534e8d20a8f5ff212b83"
+      }
+    },
+    "finiteIndependentChecks": {
+      "cts": {
+        "passedFiniteCtsCheck": true,
+        "fileVersion": 25,
+        "noImageBlocks": true,
+        "rootGridDimensions": [
+          2,
+          2
+        ],
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER MARKET42"
+          ],
+          [
+            "市场笔记",
+            "MARKET SECOND42"
+          ]
+        ],
+        "cellCountIncludingRoot": 5,
+        "allDecompressedPayloadBytesConsumed": true,
+        "compressedEofAndNoTrailingBytes": true,
+        "selectedSizeAndZoomBytes": [
+          1,
+          0,
+          0
+        ],
+        "completeCtsSpecificationVerified": false
+      },
+      "csv": {
+        "passedFiniteCsvCheck": true,
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER MARKET42"
+          ],
+          [
+            "市场笔记",
+            "MARKET SECOND42"
+          ]
+        ],
+        "utf8Bom": false,
+        "crlfCount": 2,
+        "sizeBytes": 68,
+        "sha256": "794c98f80c7bc1ba96efe4211484b913efd7dd5d9f08534e8d20a8f5ff212b83",
+        "fullCsvSpecificationVerified": false
+      }
+    },
+    "programFileCount": 193,
+    "programPinsPreserved": true
+  },
+  "guiJobs": [
+    {
+      "applicationId": "treesheets",
+      "createdAtMilliseconds": 1791813868177,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12239,
+          "requestId": "job-1791813868177-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 711914,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+          "requestId": "job-1791813868177-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 711956,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791813868177-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791813767946-3",
+      "id": "job-1791813868177-4",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 6963424,
+        "fileDigest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+        "fileSizeBytes": 12291072,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 7851520,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 7851132,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3817984,
+            "readable": true,
+            "virtualAddress": 7856128,
+            "virtualSize": 3817870,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 143872,
+            "readable": true,
+            "virtualAddress": 11677696,
+            "virtualSize": 518856,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 308224,
+            "readable": true,
+            "virtualAddress": 12197888,
+            "virtualSize": 307896,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 12509184,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 12513280,
+            "virtualSize": 24080,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 143360,
+            "readable": true,
+            "virtualAddress": 12537856,
+            "virtualSize": 143212,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791813767946-3",
+          "digest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TreeSheets.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe",
+          "sizeBytes": 12291072,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3"
+        },
+        "requestId": "job-1791813868177-4",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791814582444
+    },
+    {
+      "applicationId": "treesheets",
+      "createdAtMilliseconds": 1791814634069,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12896,
+          "requestId": "job-1791814634069-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 484153,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+          "requestId": "job-1791814634069-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 484195,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791814634069-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791813767946-3",
+      "id": "job-1791814634069-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 6963424,
+        "fileDigest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+        "fileSizeBytes": 12291072,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 7851520,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 7851132,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3817984,
+            "readable": true,
+            "virtualAddress": 7856128,
+            "virtualSize": 3817870,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 143872,
+            "readable": true,
+            "virtualAddress": 11677696,
+            "virtualSize": 518856,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 308224,
+            "readable": true,
+            "virtualAddress": 12197888,
+            "virtualSize": 307896,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 12509184,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 12513280,
+            "virtualSize": 24080,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 143360,
+            "readable": true,
+            "virtualAddress": 12537856,
+            "virtualSize": 143212,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791813767946-3",
+          "digest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TreeSheets.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe",
+          "sizeBytes": 12291072,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3"
+        },
+        "requestId": "job-1791814634069-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791815120298
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "user.reg": {
+      "sizeBytes": 102697,
+      "sha256": "4ce37ad3ad49ed3670ef7241e3a445b6cea1a5d25391cd7cd4e423eb19de984a"
+    },
+    "system.reg": {
+      "sizeBytes": 3423303,
+      "sha256": "115a3010ed6c44f002c3100babd2dba0e24b5b718e422e730ade011cfd16c071"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "dba4359e2fe1184c0303daafd8197183ab7708251949644b649ab0a69e40f8c5"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Roaming/TreeSheets.ini": {
+      "sizeBytes": 2824,
+      "sha256": "3839c0f423bace2512a0573ed3ee7919444e7ee7a5aae60234aa4a9669a8ed74"
+    }
+  },
+  "homeTreeSheetsConfigPins": {},
+  "guiAccepted": true,
+  "published": false,
+  "guiVersionMeasured": "Original native Help/About TreeSheets3328/wxWidgets3.3.2 measured. Market About not independently tested; full installed pins recorded per generation.",
+  "scope": "Chinese-name tiny UTF8/LF 2x2 CSV native Import from C-drive tree; two-cell doubleclick/CtrlA/ASCII uppercase key edit; native File/SaveAs ASCII CTS and CSV Export; new formal process explicit native Open CTS",
+  "startupUserProfileMissingKeyDialogAcknowledgedNormally": true,
+  "runtimeFunctionOrRootCauseEstablished": false,
+  "launcherOrGlobalCoreProgramRuntimeFixApplied": false,
+  "mainInstalledLicenseSourceComparisonVerified": false,
+  "fullBundleLicenseClosureVerified": false,
+  "normalQuitMethods": [
+    "first native File/Exit",
+    "second native File/Exit"
+  ],
+  "checkpoint": {
+    "file": "before-rollback.json",
+    "sha256": "2d247152de022e33dfb09fa68e6a8aedb65f2926616fcdbff27d4403d075b2a8",
+    "coreJobs": 460,
+    "fullStoreRows": 135
+  },
+  "fixtureReferences": {
+    "drive_c/TreeSheetsTests/市场表格.csv": "treesheets-20261012/market/市场表格.csv",
+    "drive_c/TreeSheetsTests/market.cts": "treesheets-20261012/market/market.cts",
+    "drive_c/TreeSheetsTests/market.csv": "treesheets-20261012/market/market.csv"
+  },
+  "screenshots": {
+    "treesheets-01-registry-error-diagnostic-20261012.jpg": {
+      "sizeBytes": 46591,
+      "sha256": "3cd78245e70f5d2a0b0a35a71ee2c9c4234f00be1a8ae867c8e82c780bc72bd9",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-02-original-import-20261012.jpg": {
+      "sizeBytes": 34449,
+      "sha256": "5b244cf6f67617ead16f27f52c534c2f252d0313908e40a0d59b712ad5a53845",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-03-original-saved-20261012.jpg": {
+      "sizeBytes": 34157,
+      "sha256": "c117f093f5e800bd372156eb925baab4565a712c9be2d3cffc3d3191faa48f7f",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-04-about-20261012.jpg": {
+      "sizeBytes": 37228,
+      "sha256": "a82e24a724d620a8d3d153083fe04d1a560506e9cb830d76e12fe77dbc534520",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-05-original-fresh-open-20261012.jpg": {
+      "sizeBytes": 35705,
+      "sha256": "4b4193eb19746c617e188559ea548a1787ec6bd11153aab31862cd4e3f41b043",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-06-market-import-20261012.jpg": {
+      "sizeBytes": 34342,
+      "sha256": "b5f015dd90a923592856bc35c5a6031f99b5d52f3a912a43065dc14e92356adb",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-07-market-saved-20261012.jpg": {
+      "sizeBytes": 33936,
+      "sha256": "d29e2fdb2788337e06219edc782903a0c80b153b6186b0f06b6e262299c19133",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-08-market-fresh-open-20261012.jpg": {
+      "sizeBytes": 35412,
+      "sha256": "89c367bee472c6543f5654b2f8af6127002f2bcdd2ecca62ffbeccd5e32aae43",
+      "actualEncoding": "JPEG"
+    },
+    "treesheets-09-rollback-original-open-20261012.jpg": {
+      "sizeBytes": 35635,
+      "sha256": "16f8790b605c5cf24ee4b2041ccc6792d2cea243ecc5f771dd3305cb78f81ab0",
+      "actualEncoding": "JPEG"
+    }
+  },
+  "independentHostChecks": {
+    "original": {
+      "passed": true,
+      "method": "Complete original and output raw readback. Independently reconstruct two edited fields from original 2x2 rows, exact UTF8 quoted CSV/CRLF bytes, then stdlib csv four fields. Guest finite v25 CTS parser consumes complete single zlib payload and five cells including root.",
+      "inputPin": {
+        "sizeBytes": 50,
+        "sha256": "90e0a00e0d63be50a6ccb23e625369b6b72a56ba7959c784d69f0c21073f080c"
+      },
+      "ctsPin": {
+        "sizeBytes": 143,
+        "sha256": "305cd394a7eec461b8002575e454638bdb5778f7f9d8f59b52c24bafd73eaeab"
+      },
+      "csvPin": {
+        "sizeBytes": 72,
+        "sha256": "e2ebea12ea0081f0e84233c15ec055f61371260665ea9295bc71c5867a1d7dd4"
+      },
+      "textRows": [
+        [
+          "项目",
+          "STATUS AFTER ORIGINAL42"
+        ],
+        [
+          "原始笔记",
+          "ORIGINAL SECOND42"
+        ]
+      ],
+      "completeCtsOrCsvSpecificationVerified": false
+    },
+    "market": {
+      "passed": true,
+      "method": "Independent complete raw input/output readback and reconstruct two edited fields from immutable 2x2 input. Exact UTF8 no-BOM quoted CSV/CRLF bytes and stdlib csv four fields. Finite guest v25 CTS parser consumes root plus four cells/single zlib payload; not full CTS/CSV specifications.",
+      "inputPin": {
+        "sizeBytes": 48,
+        "sha256": "da05508bd50e7802fd1402f6edac13983e7bb41b2f805784d334a9a61f4fabcc"
+      },
+      "ctsPin": {
+        "sizeBytes": 140,
+        "sha256": "2992e457c5db36d03cb64be64b43a898c51ef0ec3e5ddef5ebecba30733dda6a"
+      },
+      "csvPin": {
+        "sizeBytes": 68,
+        "sha256": "794c98f80c7bc1ba96efe4211484b913efd7dd5d9f08534e8d20a8f5ff212b83"
+      },
+      "textRows": [
+        [
+          "项目",
+          "STATUS AFTER MARKET42"
+        ],
+        [
+          "市场笔记",
+          "MARKET SECOND42"
+        ]
+      ],
+      "completeCtsOrCsvSpecificationVerified": false
+    }
+  },
+  "crossGenerationProgramDifferences": {
+    "unins000.dat": {
+      "original": {
+        "sizeBytes": 29707,
+        "sha256": "aa36a251298f773ee0d841cf396eb210a5a7fa583af1559256ced8838f8eb9b3"
+      },
+      "market": {
+        "sizeBytes": 29707,
+        "sha256": "8ab21a1a4b960133e2065302d4c5b93da6a74c8fa976886d38af8982577b212b"
+      }
+    }
+  },
+  "marketGuiPassedSeparateFromOriginalFrozenPendingReceipt": true
+}

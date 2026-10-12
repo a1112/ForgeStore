@@ -1,0 +1,1179 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "applicationId": "treesheets",
+  "version": "3328",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 58,
+  "unresolvedCandidates": 16,
+  "signedCatalogue": "catalogue/candidate-v64/tuf",
+  "metadataVersion": 73,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 60,
+  "excludedFixtures": 2,
+  "signedActualTargets": 125,
+  "publicCatalogueFiles": 69,
+  "originalAcceptance": {
+    "reference": "windows-treesheets-20261012.acceptance.json",
+    "sha256": "59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934"
+  },
+  "sourceEvidence": {
+    "reference": "2026-10-12-treesheets-source.json",
+    "sha256": "834e522b9b61c51029466642f583f84a20c66c12fd7a2d03543c333b3aa90b9e"
+  },
+  "originalGeneration": "gen-job-1791810934295-1",
+  "marketGeneration": "gen-job-1791813767946-3",
+  "definitionDigest": "sha256:8b9cca46676c6d57b42e63331fcae948176e89050521ad4529c1c100ea5bec7f",
+  "originalSave": {
+    "fixedDataPins": {
+      "drive_c/TreeSheetsTests/原始表格.csv": {
+        "sizeBytes": 50,
+        "sha256": "90e0a00e0d63be50a6ccb23e625369b6b72a56ba7959c784d69f0c21073f080c"
+      },
+      "drive_c/TreeSheetsTests/original.cts": {
+        "sizeBytes": 143,
+        "sha256": "305cd394a7eec461b8002575e454638bdb5778f7f9d8f59b52c24bafd73eaeab"
+      },
+      "drive_c/TreeSheetsTests/original.csv": {
+        "sizeBytes": 72,
+        "sha256": "e2ebea12ea0081f0e84233c15ec055f61371260665ea9295bc71c5867a1d7dd4"
+      }
+    },
+    "finiteIndependentChecks": {
+      "cts": {
+        "passedFiniteCtsCheck": true,
+        "fileVersion": 25,
+        "noImageBlocks": true,
+        "rootGridDimensions": [
+          2,
+          2
+        ],
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER ORIGINAL42"
+          ],
+          [
+            "原始笔记",
+            "ORIGINAL SECOND42"
+          ]
+        ],
+        "cellCountIncludingRoot": 5,
+        "allDecompressedPayloadBytesConsumed": true,
+        "compressedEofAndNoTrailingBytes": true,
+        "selectedSizeAndZoomBytes": [
+          1,
+          0,
+          0
+        ],
+        "completeCtsSpecificationVerified": false
+      },
+      "csv": {
+        "passedFiniteCsvCheck": true,
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER ORIGINAL42"
+          ],
+          [
+            "原始笔记",
+            "ORIGINAL SECOND42"
+          ]
+        ],
+        "utf8Bom": false,
+        "crlfCount": 2,
+        "sizeBytes": 72,
+        "sha256": "e2ebea12ea0081f0e84233c15ec055f61371260665ea9295bc71c5867a1d7dd4",
+        "fullCsvSpecificationVerified": false
+      }
+    },
+    "programFileCount": 193,
+    "programPinsPreserved": true
+  },
+  "marketSave": {
+    "fixedDataPins": {
+      "drive_c/TreeSheetsTests/市场表格.csv": {
+        "sizeBytes": 48,
+        "sha256": "da05508bd50e7802fd1402f6edac13983e7bb41b2f805784d334a9a61f4fabcc"
+      },
+      "drive_c/TreeSheetsTests/market.cts": {
+        "sizeBytes": 140,
+        "sha256": "2992e457c5db36d03cb64be64b43a898c51ef0ec3e5ddef5ebecba30733dda6a"
+      },
+      "drive_c/TreeSheetsTests/market.csv": {
+        "sizeBytes": 68,
+        "sha256": "794c98f80c7bc1ba96efe4211484b913efd7dd5d9f08534e8d20a8f5ff212b83"
+      }
+    },
+    "finiteIndependentChecks": {
+      "cts": {
+        "passedFiniteCtsCheck": true,
+        "fileVersion": 25,
+        "noImageBlocks": true,
+        "rootGridDimensions": [
+          2,
+          2
+        ],
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER MARKET42"
+          ],
+          [
+            "市场笔记",
+            "MARKET SECOND42"
+          ]
+        ],
+        "cellCountIncludingRoot": 5,
+        "allDecompressedPayloadBytesConsumed": true,
+        "compressedEofAndNoTrailingBytes": true,
+        "selectedSizeAndZoomBytes": [
+          1,
+          0,
+          0
+        ],
+        "completeCtsSpecificationVerified": false
+      },
+      "csv": {
+        "passedFiniteCsvCheck": true,
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER MARKET42"
+          ],
+          [
+            "市场笔记",
+            "MARKET SECOND42"
+          ]
+        ],
+        "utf8Bom": false,
+        "crlfCount": 2,
+        "sizeBytes": 68,
+        "sha256": "794c98f80c7bc1ba96efe4211484b913efd7dd5d9f08534e8d20a8f5ff212b83",
+        "fullCsvSpecificationVerified": false
+      }
+    },
+    "programFileCount": 193,
+    "programPinsPreserved": true
+  },
+  "independentHostChecks": {
+    "original": {
+      "passed": true,
+      "method": "Complete original and output raw readback. Independently reconstruct two edited fields from original 2x2 rows, exact UTF8 quoted CSV/CRLF bytes, then stdlib csv four fields. Guest finite v25 CTS parser consumes complete single zlib payload and five cells including root.",
+      "inputPin": {
+        "sizeBytes": 50,
+        "sha256": "90e0a00e0d63be50a6ccb23e625369b6b72a56ba7959c784d69f0c21073f080c"
+      },
+      "ctsPin": {
+        "sizeBytes": 143,
+        "sha256": "305cd394a7eec461b8002575e454638bdb5778f7f9d8f59b52c24bafd73eaeab"
+      },
+      "csvPin": {
+        "sizeBytes": 72,
+        "sha256": "e2ebea12ea0081f0e84233c15ec055f61371260665ea9295bc71c5867a1d7dd4"
+      },
+      "textRows": [
+        [
+          "项目",
+          "STATUS AFTER ORIGINAL42"
+        ],
+        [
+          "原始笔记",
+          "ORIGINAL SECOND42"
+        ]
+      ],
+      "completeCtsOrCsvSpecificationVerified": false
+    },
+    "market": {
+      "passed": true,
+      "method": "Independent complete raw input/output readback and reconstruct two edited fields from immutable 2x2 input. Exact UTF8 no-BOM quoted CSV/CRLF bytes and stdlib csv four fields. Finite guest v25 CTS parser consumes root plus four cells/single zlib payload; not full CTS/CSV specifications.",
+      "inputPin": {
+        "sizeBytes": 48,
+        "sha256": "da05508bd50e7802fd1402f6edac13983e7bb41b2f805784d334a9a61f4fabcc"
+      },
+      "ctsPin": {
+        "sizeBytes": 140,
+        "sha256": "2992e457c5db36d03cb64be64b43a898c51ef0ec3e5ddef5ebecba30733dda6a"
+      },
+      "csvPin": {
+        "sizeBytes": 68,
+        "sha256": "794c98f80c7bc1ba96efe4211484b913efd7dd5d9f08534e8d20a8f5ff212b83"
+      },
+      "textRows": [
+        [
+          "项目",
+          "STATUS AFTER MARKET42"
+        ],
+        [
+          "市场笔记",
+          "MARKET SECOND42"
+        ]
+      ],
+      "completeCtsOrCsvSpecificationVerified": false
+    }
+  },
+  "eachGenerationProgramFiles": 193,
+  "crossGenerationIdenticalFiles": 192,
+  "exactUninstallerDifference": {
+    "unins000.dat": {
+      "original": {
+        "sizeBytes": 29707,
+        "sha256": "aa36a251298f773ee0d841cf396eb210a5a7fa583af1559256ced8838f8eb9b3"
+      },
+      "market": {
+        "sizeBytes": 29707,
+        "sha256": "8ab21a1a4b960133e2065302d4c5b93da6a74c8fa976886d38af8982577b212b"
+      }
+    }
+  },
+  "formalGuiJobs": [
+    {
+      "applicationId": "treesheets",
+      "createdAtMilliseconds": 1791811846191,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 9723,
+          "requestId": "job-1791811846191-1",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 910642,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix",
+          "requestId": "job-1791811846191-1",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 910684,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791811846191-1",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791810934295-1",
+      "id": "job-1791811846191-1",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 6963424,
+        "fileDigest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+        "fileSizeBytes": 12291072,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 7851520,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 7851132,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3817984,
+            "readable": true,
+            "virtualAddress": 7856128,
+            "virtualSize": 3817870,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 143872,
+            "readable": true,
+            "virtualAddress": 11677696,
+            "virtualSize": 518856,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 308224,
+            "readable": true,
+            "virtualAddress": 12197888,
+            "virtualSize": 307896,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 12509184,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 12513280,
+            "virtualSize": 24080,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 143360,
+            "readable": true,
+            "virtualAddress": 12537856,
+            "virtualSize": 143212,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791810934295-1",
+          "digest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TreeSheets.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix/drive_c/TreeSheets/TreeSheets.exe",
+          "sizeBytes": 12291072,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix/drive_c/TreeSheets/TreeSheets.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1"
+        },
+        "requestId": "job-1791811846191-1",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791812759249
+    },
+    {
+      "applicationId": "treesheets",
+      "createdAtMilliseconds": 1791812847357,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 10536,
+          "requestId": "job-1791812847357-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 518706,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix",
+          "requestId": "job-1791812847357-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 518749,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791812847357-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791810934295-1",
+      "id": "job-1791812847357-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 6963424,
+        "fileDigest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+        "fileSizeBytes": 12291072,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 7851520,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 7851132,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3817984,
+            "readable": true,
+            "virtualAddress": 7856128,
+            "virtualSize": 3817870,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 143872,
+            "readable": true,
+            "virtualAddress": 11677696,
+            "virtualSize": 518856,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 308224,
+            "readable": true,
+            "virtualAddress": 12197888,
+            "virtualSize": 307896,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 12509184,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 12513280,
+            "virtualSize": 24080,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 143360,
+            "readable": true,
+            "virtualAddress": 12537856,
+            "virtualSize": 143212,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791810934295-1",
+          "digest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TreeSheets.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix/drive_c/TreeSheets/TreeSheets.exe",
+          "sizeBytes": 12291072,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix/drive_c/TreeSheets/TreeSheets.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1"
+        },
+        "requestId": "job-1791812847357-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791813368140
+    },
+    {
+      "applicationId": "treesheets",
+      "createdAtMilliseconds": 1791813868177,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12239,
+          "requestId": "job-1791813868177-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 711914,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+          "requestId": "job-1791813868177-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 711956,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791813868177-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791813767946-3",
+      "id": "job-1791813868177-4",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 6963424,
+        "fileDigest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+        "fileSizeBytes": 12291072,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 7851520,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 7851132,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3817984,
+            "readable": true,
+            "virtualAddress": 7856128,
+            "virtualSize": 3817870,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 143872,
+            "readable": true,
+            "virtualAddress": 11677696,
+            "virtualSize": 518856,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 308224,
+            "readable": true,
+            "virtualAddress": 12197888,
+            "virtualSize": 307896,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 12509184,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 12513280,
+            "virtualSize": 24080,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 143360,
+            "readable": true,
+            "virtualAddress": 12537856,
+            "virtualSize": 143212,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791813767946-3",
+          "digest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TreeSheets.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe",
+          "sizeBytes": 12291072,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3"
+        },
+        "requestId": "job-1791813868177-4",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791814582444
+    },
+    {
+      "applicationId": "treesheets",
+      "createdAtMilliseconds": 1791814634069,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 12896,
+          "requestId": "job-1791814634069-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 484153,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+          "requestId": "job-1791814634069-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 484195,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791814634069-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791813767946-3",
+      "id": "job-1791814634069-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 6963424,
+        "fileDigest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+        "fileSizeBytes": 12291072,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "gdiplus.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "winspool.drv"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 7851520,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 7851132,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 3817984,
+            "readable": true,
+            "virtualAddress": 7856128,
+            "virtualSize": 3817870,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 143872,
+            "readable": true,
+            "virtualAddress": 11677696,
+            "virtualSize": 518856,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 308224,
+            "readable": true,
+            "virtualAddress": 12197888,
+            "virtualSize": 307896,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 12509184,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 24576,
+            "readable": true,
+            "virtualAddress": 12513280,
+            "virtualSize": 24080,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 143360,
+            "readable": true,
+            "virtualAddress": 12537856,
+            "virtualSize": 143212,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791813767946-3",
+          "digest": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TreeSheets.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe",
+          "sizeBytes": 12291072,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix/drive_c/TreeSheets/TreeSheets.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791813767946-3"
+        },
+        "requestId": "job-1791814634069-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791815120298
+    },
+    {
+      "id": "job-1791815416187-6",
+      "generationId": "gen-job-1791810934295-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 13934,
+          "requestId": "job-1791815416187-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 793447,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791810934295-1/prefix",
+          "requestId": "job-1791815416187-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 793489,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791815416187-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "normalFormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "quitMethods": [
+    "first original CtrlQ",
+    "remaining four native File/Exit"
+  ],
+  "startupWarningNormallyAcknowledgedInEveryFormalProcess": true,
+  "unattendedStartupAccepted": false,
+  "storeUpdateJobId": "9180d3da-e099-4d79-8f41-ccd41410d221",
+  "rollbackVerification": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "treesheets",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "e3747580-1a3a-4b8e-b5df-24dce6820977",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791810934295-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 460,
+    "beforeRollbackStoreRows": 135,
+    "afterRollbackCoreJobs": 460,
+    "afterRollbackStoreRows": 136,
+    "allOldFullFieldsPreserved": true,
+    "allGenerationRecordsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "1714795389efc00f743e8f6609e19967f6057bb9f721e03db95afe95c19a55e7",
+      "coreJobs": 460,
+      "fullStoreRows": 136
+    }
+  },
+  "normalRestartFullFieldEqualityPassed": true,
+  "coreJobs": 461,
+  "fullStoreRows": 136,
+  "currentPrivateCheckpoint": {
+    "file": "treesheets-20261012/after-final-restart-v3.json",
+    "sha256": "703c3f1ba655552374784b7584d92b02ae47d1aabbfd591823d0f0a0673fd07a"
+  },
+  "oldRootAllSignedHistoryAnd122OldNonCatalogueTargetBytesPreserved": true,
+  "changedOldTargets": [
+    "catalogue.json"
+  ],
+  "copyqZimGreenfishActiveEntriesAbsent": true,
+  "old57Accepted16PendingAllFieldsPreserved": true,
+  "originalFrozenPendingPhaseLabelsPreserved": true,
+  "thirdOriginalRegistryBytesChangedActualNewPinsUsed": true,
+  "runtimeCoreProgramGlobalContextDefinitionLauncherEnvironmentWorkingDirectoryFontDllRepairApplied": false,
+  "mainSourceLicense": "Zlib",
+  "installedMainLicenseSourceRawComparisonVerified": false,
+  "fullBundleLicenseClosureVerified": false,
+  "officialFixedInstallerDigestAndSizeMatched": true,
+  "upstreamSourceDigestVerified": false,
+  "fullTreeSheetsOrCtsCsvSpecificationAccepted": false,
+  "guiStoreUpdateRollbackButtonsAccepted": false,
+  "directChineseKeyboardInputAccepted": false,
+  "guestNetworkDownloadNewMachineRegistrationMigrationCrossVersionAccepted": false,
+  "backgroundNetworkAbsenceVerified": false,
+  "allApplicationFilesystemTraversed": false,
+  "originalHistoricalReceiptLimits": [
+    "Only a tiny Chinese-name UTF8/LF flat 2x2 CSV imported using native C-drive directory tree, two cells doubleclick/CtrlA/ASCII keys edited, native SaveAs ASCII CTS and CSV Export, new formal process closed automatically restored output then explicitly Opened CTS.",
+    "Original50B input unchanged, CTS143B and CSV72B preserved. Finite v25 CTS magic/no image/single zlib/five cells/all payload bytes and exact two-row UTF8 quoted CSV/CRLF independently checked; not full CTS/CSV/TreeSheets specifications. Synthetic data not applications.",
+    "Original Help/About TreeSheets3328/wxWidgets3.3.2 measured; market About not independently tested. Default font Chinese readable, no font setting or new package.",
+    "Native startup missing HKCU Control Panel International User Profile registry key error2 appears and is acknowledged normally before usable main window. Source wxUILocale::UseDefault is static context, no actual runtime function trace/root cause/fix claimed.",
+    "No hierarchy/nested grids, broad cell styling/selection/search/replace/fold/filter/clipboard/images/attachments/XML/HTML/PDF/SVG/scripts/Lobster/plugins/printing/multi-document/large bad file or broad format acceptance. Tutorial visible is not functional tutorial acceptance.",
+    "No direct Chinese keyboard entry or complete full-path native chooser workflow, guest network/new-machine registration/migration/cross-version/unattended or GUI Store update/rollback buttons. No absence-of-background-network claim.",
+    "Main fixed-source Zlib notice retained; only Nuvola installed named license notice found, no installed main-license same-text comparison. Full bundle closure/Authenticode/GPG/source-binary correspondence/reproducible/latest unverified. Source hash is local, installer size/digest matches official fixed release API.",
+    "No Core/program/global context/definition/launcher/environment/workingDirectory/font package/DLL/runtime or registry repair; source lowest privileges and native Inno args not full install behavior or real WindowsUAC/admin proof.",
+    "Independent market, cached same-version update/exact original rollback/normal final restart pending at original freeze; completed evidence separate."
+  ],
+  "completionEvidenceSeparateFromOriginalMarketPendingStage": true,
+  "scopeAndFailureCorrectionsReference": "2026-10-12-treesheets-scope-and-failure-corrections.json",
+  "reviewIndexCommitPushPendingAtPublicationFreeze": true
+}

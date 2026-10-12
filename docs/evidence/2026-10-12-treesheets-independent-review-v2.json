@@ -1,0 +1,191 @@
+{
+  "reviewOnlyV1CanonicalEncodingFailureRetained": true,
+  "v1RootFailureNotMetadataSignatureFailure": true,
+  "canonicalEncodingPrimarySource": "https://raw.githubusercontent.com/secure-systems-lab/securesystemslib/main/securesystemslib/formats.py",
+  "reviewMissingPathGuessAndTruncatedOutputNotCompletedChecks": true,
+  "passed": true,
+  "prospectiveFiles": 114,
+  "prospectiveManifestSha256": "0f85f697e5a02e55a999d6265d0efce5daff170a7eb59b7395ec9a948a69ad6c",
+  "oldImmutableFilesPreserved": 3287,
+  "originalFrozenFilesPreserved": 24,
+  "old57AcceptedAnd16PendingFieldsExact": true,
+  "accepted": 58,
+  "pending": 16,
+  "independentRawFilterAndRelativeNoIndexDiagnostics": {},
+  "sevenExactAttributesAndOldLfPrefixPreserved": true,
+  "indexStillEmpty": true,
+  "firstStagePending": true,
+  "finiteDataIndependentParserAndReconstruction": {
+    "original": {
+      "cts": {
+        "fileVersion": 25,
+        "grid": [
+          2,
+          2
+        ],
+        "cellsIncludingRoot": 5,
+        "allPayloadConsumed": true,
+        "zlibEofNoExtra": true,
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER ORIGINAL42"
+          ],
+          [
+            "原始笔记",
+            "ORIGINAL SECOND42"
+          ]
+        ]
+      },
+      "csvExactReconstructed": true,
+      "ctsSha256": "305cd394a7eec461b8002575e454638bdb5778f7f9d8f59b52c24bafd73eaeab",
+      "csvSha256": "e2ebea12ea0081f0e84233c15ec055f61371260665ea9295bc71c5867a1d7dd4"
+    },
+    "market": {
+      "cts": {
+        "fileVersion": 25,
+        "grid": [
+          2,
+          2
+        ],
+        "cellsIncludingRoot": 5,
+        "allPayloadConsumed": true,
+        "zlibEofNoExtra": true,
+        "textRows": [
+          [
+            "项目",
+            "STATUS AFTER MARKET42"
+          ],
+          [
+            "市场笔记",
+            "MARKET SECOND42"
+          ]
+        ]
+      },
+      "csvExactReconstructed": true,
+      "ctsSha256": "2992e457c5db36d03cb64be64b43a898c51ef0ec3e5ddef5ebecba30733dda6a",
+      "csvSha256": "794c98f80c7bc1ba96efe4211484b913efd7dd5d9f08534e8d20a8f5ff212b83"
+    }
+  },
+  "fixedInstallerOfficialRawApiSizeDigestMatch": true,
+  "fixedSourceArchiveMemberRawMatchCount": 12,
+  "sourceArchiveUpstreamDigestVerified": false,
+  "installerDirArgumentSingleBackslash18Bytes": true,
+  "catalogueEntries": 60,
+  "signedTargets": 125,
+  "publicJsonFiles": 69,
+  "oldNonCatalogueTargetPinsExact": 122,
+  "oldRootBytesExact": true,
+  "localRsaPssSignatureChecks": [
+    {
+      "file": "1.root.json",
+      "rsaPssSha256Passed": true,
+      "saltBytes": 32
+    },
+    {
+      "file": "73.targets.json",
+      "rsaPssSha256Passed": true,
+      "saltBytes": 32
+    },
+    {
+      "file": "73.snapshot.json",
+      "rsaPssSha256Passed": true,
+      "saltBytes": 32
+    },
+    {
+      "file": "timestamp.json",
+      "rsaPssSha256Passed": true,
+      "saltBytes": 32
+    }
+  ],
+  "recordedCurrentCoreJobs": 461,
+  "recordedFullStoreRows": 136,
+  "recordedRole": 73,
+  "fiveRecordedTerminalNormalGuiExits": true,
+  "onlyExactUnins000DatDifference": {
+    "unins000.dat": {
+      "original": {
+        "sizeBytes": 29707,
+        "sha256": "aa36a251298f773ee0d841cf396eb210a5a7fa583af1559256ced8838f8eb9b3"
+      },
+      "market": {
+        "sizeBytes": 29707,
+        "sha256": "8ab21a1a4b960133e2065302d4c5b93da6a74c8fa976886d38af8982577b212b"
+      }
+    }
+  },
+  "privacyPatternScanPassed": true,
+  "allNineJpegMagicChecked": true,
+  "screenshotsVisuallyReviewedAllNine": true,
+  "guiOrGuestPrivateCheckpointIndependentlyReplayed": false,
+  "allApplicationFilesystemTraversed": false,
+  "completeLicenseClosureVerified": false,
+  "completeTreeSheetsCtsCsvAccepted": false,
+  "limitations": [
+    "Review verifies local artifacts, frozen bytes, recorded jobs/state and helper gates; no UI/service/guest/private CP replay.",
+    "All five startup registry warnings require normal acknowledgement; no fix/unattended acceptance.",
+    "Finite flat2x2 CTS/CSV parser and exact CSV reconstruction only.",
+    "Source digest local only; no full bundled licensing/source binary/latest/Authenticode/GPG/reproducibility verification.",
+    "Historical redirect query not independently persisted; original source receipt unchanged and separate correction read.",
+    "Final restart write failed after assertions; V2 whole-checkpoint comparison failed; exact fresh object was not separately saved, refreshed time is plausible only; V3 seven-class equality and monotonic time saved unique checkpoint without second restart.",
+    "Historical source/gui/acceptance pending labels preserved; completion publication separate.",
+    "Old Scribus private V1 canonical failure raw loss preserved, not recovered."
+  ],
+  "schemaVersion": 1,
+  "reviewStage": "FINAL before first actual Git stage",
+  "applicationId": "treesheets",
+  "version": "3328",
+  "findings": [],
+  "baseCommit": "b5366cf2b84bd2e0e621dfc9cc76af34a6e8fead",
+  "reviewer": "independent review agent",
+  "reviewedProspectiveManifest": "treesheets-prospective-files-v3-20261012.json",
+  "original113FileProspectiveV2Preserved": true,
+  "actualFinalProspectiveFiles": 114,
+  "resolvedFindings": [
+    {
+      "topic": "V2 whole-checkpoint failure cause precision",
+      "resolution": "Only the unfrozen completion report and scope correction changed. Exact old copies and V2 prospective retained; failure of whole-CP assertion is supported, fresh observation time is plausible only, exact fresh V2 CP and sole cause not established. Historical runtime boolean explicitly qualified as inference. V3 seven classes/time monotonic actual result retained."
+    }
+  ],
+  "runtimeRecordInternalProgramDataConfigPinsConsistent": true,
+  "runtimeEachGenerationFinalPinsCount": 200,
+  "recordedRollbackCheckpointAndExactGenerationGatesReviewed": true,
+  "fullSQLiteSelectAllColumnsAndFullStateComparisonCodeReviewed": true,
+  "replayOfParentGuiOrServicesOrGuestCheckpointPerformed": false,
+  "tufVerificationScope": "Local trusted-root bytes equal prior root; self-root/targets/snapshot/timestamp RSA-PSS SHA256 signatures verified using canonical TUF JSON, threshold one and root-known key. Targets and metadata length/hash/version chain checked. No independent replay of guest TUF trust cache, updater clock/network, or a full TUF conformance suite.",
+  "canonicalEncoderReference": {
+    "title": "Securesystemslib canonical encoder primary source",
+    "url": "https://raw.githubusercontent.com/secure-systems-lab/securesystemslib/main/securesystemslib/formats.py",
+    "use": "Reviewed string escaping and recursively sorted canonical form. This verifier encodes strings by escaping only quote/backslash and retains PEM newlines."
+  },
+  "reviewOnlyFailuresRetained": [
+    {
+      "helper": "treesheets-independent-review-check-v1-20261012.py",
+      "observation": "Root RSA-PSS assertion failed with standard json.dumps; it incorrectly escaped PEM newlines. V1 and diagnostic retained; no metadata or signature edits. Proper recursive canonical encoding passes all four signatures in V3 check."
+    },
+    {
+      "helper": "treesheets-independent-review-build-check-v2-20261012.py",
+      "observation": "Exact replacement count assertion failed before writing checker due an unmatched quoted substring. V3 builder corrected only the actual substring; no repo, index or guest mutation."
+    },
+    {
+      "observation": "Missing guessed helper paths and one truncated local listing/read are tool history only, not completed checks. Actual restart-readback-v3, rollback helpers and capture implementation subsequently read."
+    }
+  ],
+  "verificationPerformed": [
+    "114 exact prospective size/SHA bytes and raw/filter/relative-no-index checks independently rerun without real stage.",
+    "3287 previous immutable and24 original frozen raw bytes verified; only two allowed prior mutable paths.",
+    "All57 previous acceptance records and16 pending queue records exactly preserved;58th TreeSheets only.",
+    "Official local raw release API installer size/digest and full installer bytes; fixedcommit source12 members exact archive and public raw comparison.",
+    "Independent finite v25 CTS decoder consumes singlezlib/root2x2/fivecells/allpayload, and exact CSV reconstructed from immutable inputs in both generations.",
+    "All nine JPEGs actual magic and visual review; warning01/About04 separated from accepted data screenshots; no login screenshots.",
+    "193 per-generation program maps compared; only29707B unins000.dat differs;200 final program/data/config pins per generation internally consistent.",
+    "Publication/runtime/current-state/rollback records and implementation gates reviewed; no private checkpoint or GUI replay.",
+    "Known root RSA-PSS4 metadata signatures and metadata/target hashes checked locally.",
+    "Privacy pattern scan passed all114 files; no private-key/token/password fields or full private checkpoint directory payloads."
+  ],
+  "mutationScope": "Only exclusive review helpers and results under .transfer. No repository/index/UI/services/guest/TUF/application/checkpoint changes performed.",
+  "futureChecksStillRequired": [
+    "Parent must wait this explicit FINAL plus reviewer final answer before copying review and first actual Git add.",
+    "Actual index/commit raw byte audit, cached diff check, ordinary commit/push, fresh remote and post-push guest current-state checks are parent follow-up; not yet performed by reviewer."
+  ]
+}
