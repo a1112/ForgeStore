@@ -1,0 +1,269 @@
+{
+  "passed": true,
+  "findings": [],
+  "reviewer": "independent /root/review_scribus_evidence",
+  "reviewCompletedUtc": "2026-10-12T08:05:35.741867+00:00",
+  "phase": "FINAL independent read-only evidence review before first real Git stage",
+  "baseCommit": "51f25911fc7ed13a7f3b1fd42e1ed21e2ff4e0ba",
+  "prospectiveManifestSha256": "02ad6689a3124bad9e145bba0b9cf5877a999594b33a9f5de9444995afb00cef",
+  "prospectivePaths": 104,
+  "oldImmutableFilesVerified": 2921,
+  "originalFrozenFilesVerified": 17,
+  "assessment": "Finite single-page ASCII frame edit/native SLA Save As/PDF1.4 export/fresh formal Open and independent local Store lifecycle evidence is consistent. Ready for byte-preserving first stage and subsequent real index/commit checks.",
+  "actualChecks": {
+    "frozenByteAudit": {
+      "prospective": 104,
+      "oldImmutable": 2921,
+      "originalImmutable": 17,
+      "headUnchanged": true,
+      "indexUnchangedAndNoStagedPaths": true
+    },
+    "guiEventAndProgramRecords": {
+      "installedSame": 7107,
+      "generatedSame": 37,
+      "formalSucceededZeroExitWineStop": [
+        "job-1791787790226-2",
+        "job-1791788798776-3",
+        "job-1791789832254-5",
+        "job-1791790299895-6",
+        "job-1791790468157-7"
+      ],
+      "frozenOriginalPendingLabelsPreserved": true,
+      "originalAcceptanceTopKeys": [
+        "schemaVersion",
+        "date",
+        "environment",
+        "applications",
+        "sourceEvidence",
+        "guiEvidence",
+        "failuresEvidence",
+        "limits",
+        "marketLifecyclePendingAtFreeze",
+        "publicationEvidenceSeparate"
+      ]
+    },
+    "independentSlaAndPdf": {
+      "singlePageAnd400x100Frame": true,
+      "bothExactTextsAndMediaBoxes": true,
+      "pypdfAndPdfiumFreshRead": true,
+      "twoPngRenders596x842Pins": true,
+      "reviewerDidNotRunGuestPdfViewerOrGui": true
+    },
+    "imageFormats": {
+      "eightActualJpegs": true,
+      "threeOriginalPngSuffixesUnchanged": true,
+      "locked02AbsentFromProspectiveAndRepo": true
+    },
+    "sourceAndLicense": {
+      "fixedInstallerAndSourceRawHashes": true,
+      "archiveSixMembersExact": true,
+      "sourceInstallerScriptAbsent": true,
+      "gpl2OrLaterWithQt3Qt4CommercialDllException": true,
+      "copying19398Vs19063CrLfNormalizedSameRawDifferent": true,
+      "noFullClosureOrBinarySourceAuthenticityClaim": true
+    },
+    "tuf": {
+      "freshRsaPssThresholdVerification": 4,
+      "rootVersion": 1,
+      "onlineVersion": 70,
+      "actualSignedTargetsHashed": 119,
+      "allOldNonCatalogueTargetPinsExact": 116,
+      "publicJsonOnlyFiles": 66,
+      "catalogueOldEntriesExactScribusOnlyAddition": true,
+      "catalogueEntries": 57,
+      "copyqAbsent": true
+    },
+    "gitReadOnlyPrecheck": {
+      "actualRawFilterHashesCompared": 104,
+      "relativeNoIndexPaths": 103,
+      "diagnostics": 0,
+      "oldAttributesPrefixBytes": 24478,
+      "sixExactRules": true,
+      "suffixLfOnly": true,
+      "actualIndexAuditOrStageOrRenormalizeNotPerformed": true
+    },
+    "scopeAndFailures": {
+      "privateV1CanonicalRawLossExplicitNotReconstructed": true,
+      "publicationV1AndV2HostOnlyPartialFailureRecorded": true,
+      "configRegistryFourSameSizeChangedBytePathsExplicit": true,
+      "allHistoricalRawPreservationNotClaimed": true
+    },
+    "privacy": {
+      "prospectiveFilesScanned": 104,
+      "privateKeyTokenPasswordPatternsAbsent": true,
+      "fullPrivateCheckpointNotPublished": true,
+      "lockedLoginShotNotPublished": true,
+      "publicCatalogueInstallerBytesAbsent": true
+    }
+  },
+  "freshCurrentReadOnlyGuestCheck": {
+    "verified": true,
+    "coreJobs": 434,
+    "fullStoreRows": 130,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "root": 1,
+      "timestamp": 70,
+      "snapshot": 70,
+      "targets": 70
+    },
+    "latestKnownTime": "2026-10-12T07:38:05.757707235Z",
+    "selectedScribusGeneration": "gen-job-1791787619060-1",
+    "copyqActiveCatalogueEntryAbsent": true,
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "queryMayWriteExistingRequestScratch": true,
+    "checkpoint": {
+      "file": "scribus-20261012/after-restart.json",
+      "sha256": "4afcddfd9798f85e7a6ec06025f1ef5b3f3e337f77f060ec2050481e62767b14"
+    }
+  },
+  "privateSavedCheckpointAndActualDiffCheck": {
+    "passed": true,
+    "privateFullCheckpointsReadWithoutExport": true,
+    "beforeAndAfterRestartSha256Verified": true,
+    "sevenCompleteFieldClassesExactlyEqual": [
+      "jobs",
+      "rows",
+      "market",
+      "trustDocuments",
+      "configs",
+      "generations",
+      "serviceGuards"
+    ],
+    "coreJobs": 434,
+    "fullStoreRows": 130,
+    "freshCompleteSqliteRowsExactlyMatchSavedCheckpoint": true,
+    "sqliteIntegrityCheck": "ok",
+    "actualPrivateBeforeAfterRawAndReconstructedDiffVerified": {
+      "drive_c/users/forge/AppData/Roaming/Scribus/checkfonts150.xml": 1571,
+      "drive_c/users/forge/AppData/Roaming/Scribus/scribus150.rc": 1806,
+      "system.reg": 287,
+      "user.reg": 31
+    },
+    "beforeRollback433129AndAfter433130OldFieldsExact": true,
+    "checkpointOrServiceOrGuiChangesMade": false,
+    "noPrivateCheckpointContentsPrinted": true
+  },
+  "privateDownloadFailureHistoryCheck": {
+    "passed": true,
+    "beforeResumePinnedFiles": 54,
+    "unchangedExactRawFiles": 53,
+    "onlySpecifiedCanonicalFailureChanged": [
+      "scribus-1.6.4.tar.xz.failure.json"
+    ],
+    "oldRawNotRecovered": true,
+    "currentV2CanonicalPin": {
+      "sizeBytes": 4297,
+      "sha256": "0c33d7b85ff4da72a1982ecde465eec2a6df77c5f4fe75ad311aad3fb5f73faf"
+    },
+    "firstRange024FailureRawStillAvailable": true
+  },
+  "nativeTuftool017Verification": {
+    "passed": true,
+    "trustedRoot": "existing candidate-v60 root1 exact bytes",
+    "downloadedTargets": [
+      "catalogue.json",
+      "windows-scribus-20261012.acceptance.json"
+    ],
+    "expiredOrUnsafeOptionsUsed": false,
+    "outputDirectory": ".transfer/scribus-review-tuftool-download-20261012",
+    "applicationOrIndexChange": false
+  },
+  "freshOfficialInstallerDigestObservation": {
+    "url": "https://sourceforge.net/projects/scribus/files/scribus/1.6.4/scribus-1.6.4-windows-x64.exe/download",
+    "observedFormat": "web tool text, not original raw HTTP HTML",
+    "observedSha256": "615dace82119883cc6252da0dd69a1e1637610ff4c5550e5254b7747845f28d1",
+    "observedFilename": "scribus-1.6.4-windows-x64.exe",
+    "sourceArchiveUpstreamDigestVerified": false
+  },
+  "canonicalSignatureVerificationScope": {
+    "format": "OLPC canonical JSON: NFC, sorted object keys, literal controls, only quote/backslash escaping; RSA-PSS SHA256 digest-length salt",
+    "metadataRolesVerified": [
+      "root1",
+      "targets70",
+      "snapshot70",
+      "timestamp70"
+    ],
+    "primaryImplementationReference": "https://raw.githubusercontent.com/awslabs/tough/develop/olpc-cjson/src/lib.rs",
+    "nativeTuftoolVerificationAlsoPassed": true
+  },
+  "visualInspection": {
+    "actualJpegScreenshotsInspected": 8,
+    "separateHostPdfPngRendersInspected": 2,
+    "actualOriginalAndMarketTextVisibleUnclipped": true,
+    "marketFontPermanentSubstitutionCheckboxUnselectedVisible": true,
+    "original01IsPostSubstitutionWarningNotCheckboxScreenshot": true,
+    "marketPdfAllPagesPdf14AsciiPathVisible": true,
+    "locked02PrivateImageExcluded": true,
+    "threeOriginalPngSuffixNamesPreservedWithJpegBytes": true,
+    "noGuiReplayedDuringReview": true
+  },
+  "reviewerHelperFailuresPreserved": [
+    {
+      "helper": "scribus-review-host-check-20261012.py",
+      "failure": "FileNotFoundError: reviewer guessed market/market-render.png; actual public render is in scribus evidence root",
+      "failedBeforeReportWrite": true,
+      "projectIndexGuestLifecycleMutation": false
+    },
+    {
+      "helper": "scribus-review-host-check-v2-20261012.py",
+      "failure": "AssertionError: reviewer compared size/SHA pin to screenshot object containing extra encoding metadata; actual size/SHA matched",
+      "failedBeforeReportWrite": true,
+      "projectIndexGuestLifecycleMutation": false
+    },
+    {
+      "helper": "scribus-review-host-check-v3-20261012.py",
+      "failure": "InvalidSignature from standard compact JSON control-character escaping; OLPC uses literal controls in root public-key string. Native tuftool and corrected OLPC V4 checks passed. No signature was changed.",
+      "failedBeforeReportWrite": true,
+      "projectIndexGuestLifecycleMutation": false
+    }
+  ],
+  "scope": {
+    "readOnlyProjectAndIndexReview": true,
+    "guestCurrentQueryMayWriteExistingRequestScratch": true,
+    "freshFullStoreSqliteSelectAllRowsAndIntegrityCheck": true,
+    "privateCompleteBeforeAfterRestartCheckpointsSevenFieldClassesReadAndCompared": true,
+    "privateFourChangedFilesOldNewAndDiffRawPinsReconstructedAndVerified": true,
+    "guestGuiInstallationExportReopenRollbackOrServiceRestartReperformed": false,
+    "privateFullCheckpointLifecycleReplayedIndependently": false,
+    "guestPdfGuiViewerPrintingOrFullSlaPdfSpecAccepted": false,
+    "allApplicationFilesystemTraversed": false,
+    "firstActualGitAddRenormalizeIndexBlobAuditCachedDiffCommitPushPerformed": false,
+    "currentHeadAndUnstagedIndexConfirmed": true,
+    "completeBundledLicenseClosureAuthenticodePgpBinarySourceCorrespondenceOrLatestVerified": false,
+    "backgroundNetworkingAbsentUnattendedNewMachineMigrationCrossVersionChineseKeyboardValidated": false,
+    "oldPrivateCanonicalV1FailureRawRecovered": false,
+    "allHistoricalRawFailuresOrAllDependencyGatesPreservedEffectiveClaimed": false,
+    "privateKeysCredentialsPasswordsLoginScreenshotsFullCheckpointsPublished": false
+  },
+  "evidenceReceipts": {
+    "scribus-review-host-check-v4-20261012.json": {
+      "sizeBytes": 2840,
+      "sha256": "72a9b592091c19d1a8394737abfec6b55e11d39b1d07763913c515e70acfd690"
+    },
+    "scribus-review-fresh-current-20261012.json": {
+      "sizeBytes": 846,
+      "sha256": "5a03aa80bc79475ebfb4b4634bf6d4ddd654b68081b817d6ce42c56cb32d1123"
+    },
+    "scribus-review-private-cp-check-20261012.json": {
+      "sizeBytes": 752,
+      "sha256": "e2725d9929e677a5c281eb5ec33e1b3ee9bb1e31e0b893ca7e29c4e7651a1147"
+    },
+    "scribus-review-history-check-20261012.json": {
+      "sizeBytes": 355,
+      "sha256": "e26bab5bc72c65fc3368d4bf761639cdb3d6fa3c24a082791aa25cf4a4a9577b"
+    }
+  },
+  "remainingRequiredActions": [
+    "Copy this fixed review only after explicit FINAL completion notification",
+    "Perform first actual Git stage and exact index blob audit plus cached whitespace gate",
+    "Perform exact commit blob audit and ordinary permitted push; do not treat this review as those unrun actions"
+  ]
+}

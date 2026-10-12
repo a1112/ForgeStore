@@ -1,0 +1,55 @@
+{
+  "activatedPreview": true,
+  "metadataVersion": 70,
+  "rootVersion": 1,
+  "entries": 57,
+  "coreJobs": 430,
+  "fullStoreRows": 128,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-scribus-20261012.acceptance.json#scribus",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "615dace82119883cc6252da0dd69a1e1637610ff4c5550e5254b7747845f28d1",
+        "size": 124533360,
+        "target": "scribus-1.6.4-windows-x64.exe",
+        "url": "https://downloads.sourceforge.net/project/scribus/scribus/1.6.4/scribus-1.6.4-windows-x64.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "scribus"
+    },
+    "id": "scribus",
+    "license": "GPL-2.0-or-later with fixed Qt linking exception",
+    "name": {
+      "en": "Scribus",
+      "zhCN": "Scribus 页面排版"
+    },
+    "origin": "https://www.scribus.net/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Scribus Team",
+    "summary": {
+      "en": "Limited single-page Latin text edit, Save SLA/PDF export and fresh Open tested; native font substitution used, advanced layout unverified.",
+      "zhCN": "仅单页ASCII文字编辑、SLA保存/PDF导出与新进程打开通过；使用原生字体替换，高级排版未验收"
+    },
+    "version": "1.6.4"
+  },
+  "installed": {
+    "appId": "scribus",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "1.6.4"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "5166baa8983b44bce8e0aef129cc215d6b81a1f85170af7b4ce297c6f46aac66",
+    "coreJobs": 430,
+    "fullStoreRows": 128
+  },
+  "independentMarketGenerationPending": true,
+  "countsAsCompleted": false
+}
