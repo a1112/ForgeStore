@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "reviewStage": "FINAL V2 incremental after actual first stage and scope-gate failure; before two-path incremental stage",
+  "applicationId": "codeblocks",
+  "version": "25.03",
+  "passed": true,
+  "baseCommit": "f6d88cd550425725e46c097a5a27ca8a2a374b81",
+  "headCommit": "f6d88cd550425725e46c097a5a27ca8a2a374b81",
+  "priorReview": {
+    "file": "docs/evidence/2026-10-12-codeblocks-independent-review.json",
+    "sizeBytes": 22058,
+    "sha256": "ebe3de9aa0f3ed91dd59b218ba62cb474ebfbd753c83cef9548f5244b5566e74",
+    "wholeBytesPreserved": true,
+    "historicalBoundary": "V1 reviewed121 prospective files and empty index before first real stage; its unstaged/future assertions describe that time, not the current index."
+  },
+  "prospectiveV2": {
+    "file": "codeblocks-prospective-files-v2-20261012.json",
+    "sha256": "9b612a328f02a281e86e31aca3fa2bd2bb99dc3ca98f7adac26ed863c90b8997",
+    "files": 123,
+    "initial121PinsAndBytesUnchanged": true,
+    "alreadyStaged": 122,
+    "newCorrectionNotYetStaged": 1
+  },
+  "scopeCorrection": {
+    "file": "docs/evidence/2026-10-12-codeblocks-git-stage-scope-correction.json",
+    "sha256": "7d401c9cd8a6740b6f2e3f5815a9fe51378c773c295de3d7509279dadfe3160e",
+    "passedIndependentIncrementalReview": true
+  },
+  "strengths": [
+    "Correctly distinguishes prior evidence freeze3402 from complete parent HEAD4643 and current index4763.",
+    "3522 current evidence blobs directly compared with working raw and applicable frozen/prospective pins;1241 outside-evidence index blobs directly compared with parent HEAD bytes.",
+    "Actual122 staged set and120 additions/two authorized mutable paths verified; original121,28freeze andV1 review unchanged.",
+    "Actual first-stage failure, missing separately persisted raw stderr and truncated listing limits remain visible; planned second-stage counts are explicitly unexecuted."
+  ],
+  "issues": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "assessment": {
+    "readyForTwoPathIncrementalStage": true,
+    "readyToMerge": "Yes within V1 finite scope after separate parent real incremental index/commit/push verification",
+    "reason": "Scope correction is accurate and independently byte-verified; the failed completeness assumption caused no observed index-byte damage or loss. This review does not certify future124-stage/3524-evidence/4765-fullrepo checks as executed."
+  },
+  "actualIndexScope": {
+    "priorEvidenceFreeze": 3402,
+    "currentEvidenceUnion": 3522,
+    "fullParentHEADTracked": 4643,
+    "fullIndexTracked": 4763,
+    "outsideEvidenceParentHEADTracked": 1241,
+    "missingExpectedEvidencePaths": 0,
+    "actualStagedPaths": 122,
+    "stagedAdditions": 120,
+    "stagedModifications": 2,
+    "all3522EvidenceIndexBlobsEqualWorkingRawAndPins": true,
+    "all1241OutsideIndexBlobsEqualParentHEADRaw": true,
+    "all123ProspectiveRawFilterRelativeNoIndexChecksPassed": true,
+    "actualCachedDiffCheckExit": 0
+  },
+  "plannedNextScope": {
+    "plannedCountsOnly": true,
+    "incrementalAddPaths": [
+      "docs/evidence/2026-10-12-codeblocks-git-stage-scope-correction.json",
+      "docs/evidence/2026-10-12-codeblocks-independent-review-v2.json"
+    ],
+    "expectedTotalStaged": 124,
+    "expectedEvidenceFreeze": 3524,
+    "expectedFullRepositoryTracked": 4765,
+    "outsideEvidenceStill1241": true,
+    "secondStageNotPerformed": true,
+    "requiredFollowUp": "Parent must audit all3524 evidence index/commit raw bytes, separately preserve1241 outside-evidence parentHEAD index/commit bytes, cached diff check, ordinary commit/push and fresh remote/guest evidence. Evidence3524 is not fullrepo4765."
+  },
+  "firstStageFailure": {
+    "actualFirstGitAdd122Succeeded": true,
+    "thenFailedGate": "assert complete git ls-files equals old evidence frozen set union prospective122",
+    "oldEvidenceCoverageWasNotWholeRepository": true,
+    "noMissingExpectedPaths": true,
+    "originalFailedHelperPreserved": "codeblocks-stage-index-audit-20261012.py",
+    "failedGateNotCountedAsPassed": true,
+    "exactFailureStderrOnlyInToolHistory": true,
+    "noFreezeWrittenByFailedHelper": true,
+    "noCommitOrPushPerformed": true,
+    "readOnlyRecoveryOnly": true,
+    "truncatedOriginalLongStdoutNotCountedAsCompleteReview": true
+  },
+  "verificationReceipts": {
+    "parent": {
+      "file": "codeblocks-parent-stage-scope-audit-20261012.json",
+      "sha256": "53e111578db09c284051fb9c0ca924867ae1b40a3dd386abc418d991d1f5ff4b"
+    },
+    "independentFirstStage": {
+      "file": "codeblocks-independent-stage-scope-audit-20261012.json",
+      "sha256": "3a545c62c62dbc3fddf061d062b5dd44843a80288d5724be0823907e35e5f34a"
+    },
+    "originalScopeObservation": {
+      "file": "codeblocks-first-stage-scope-readonly-20261012.json",
+      "sha256": "2762ee79c819d6a4f29a0fa544ee4f4f53667ebc43862b5bce655843b8fef5f1"
+    }
+  },
+  "reviewerIncrementalV2HelperFailure": {
+    "helper": "codeblocks-independent-incremental-final-v2-20261012.py",
+    "exitCode": 1,
+    "stderrExactExceptionLine": "AssertionError: .gitattributes",
+    "reason": "Reviewer incorrectly required no-index check exit0; git reports ordinary /dev/null difference with exit1 even when stdout/stderr diagnostics are empty. New exclusive V3 accepts documented ordinary diff statuses0/1 and still requires both diagnostics streams empty. Original helper/tool failure preserved; no review result or repo/index mutation occurred before failure.",
+    "failedGateNotClaimedPassed": true
+  },
+  "reviewerProbeFailure": {
+    "exitCode": 1,
+    "command": "git status --porcelain=v1 --untracked-files=no invoked in L:/project/FOS",
+    "stderrExact": "fatal: not a git repository (or any of the parent directories): .git",
+    "scope": "Failed status probe only; not a completed index check. Actual incremental audit git commands use L:/project/FOS/ForgeStore; original tool history retained."
+  },
+  "privacyScope": "All123 prospective byte streams scanned for key/token/credential/signed-query patterns; zero matches. New correction and review contain counts, paths and hashes only. No private credential files/fullCP contents read. V1 image visual scope remains unchanged, not repeated or expanded.",
+  "runtimeAndGuiLimits": "V1 finite editing/installation/license/TUF/runtime limitations and original failures apply unchanged. Initial121 bytes, TUF metadata/targets, GUI/program/registry pins and privateCP summary SHAa9572ec4cf34a8cd380c39ee7495c9d41464a13bbe270987d5a204b2d2f2176e unchanged. This V2 only validates first-stage scope correction/index evidence; no GUI, two-service restart, guest current-state capture or private complete CP replay performed.",
+  "mutationScope": "Only new exclusive reviewer helpers/result under .transfer. No repository/index/guest/service/application/TUF/CP mutation, git add/renormalize/commit/push, download or credential access.",
+  "reviewTimestampUTC": "2026-10-12T17:17:03.049811+00:00"
+}

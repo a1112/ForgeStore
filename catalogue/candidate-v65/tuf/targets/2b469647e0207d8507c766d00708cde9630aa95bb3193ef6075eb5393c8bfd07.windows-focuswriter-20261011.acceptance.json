@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM; Wine 11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store.",
+  "applications": [
+    {
+      "id": "focuswriter",
+      "version": "1.8.13",
+      "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c",
+      "size": 54323843,
+      "generationId": "gen-job-1791709749205-1",
+      "definitionDigest": "sha256:46abf5cb66e0a05de30c665889d120dcb0f836189a8ee1bb3ee7326c7593fa0e",
+      "launcherSha256": "sha256:741d87680b9cdded6a16d027033716ccae0171d03d61160c935f28bad5306bcc",
+      "installJobId": "job-1791709749205-1",
+      "launchJobId": "job-1791709829371-2",
+      "reopenJobId": "job-1791710027680-3",
+      "guiFileOperation": "passed-limited-small-utf8-text-edit-txt-odt-save-fresh-reopen",
+      "savedTxt": {
+        "file": "output/original-edited.txt",
+        "sizeBytes": 103,
+        "sha256": "020417e5072e7b033869b8ba66ec5d9d8667b3cdf6e2b453ee21c5911b6adeb5",
+        "utf8": "FocusWriter original fixture.\r\n中文内容保留。\r\nSTATUS=AFTER\r\nVALUE=42\r\nForgeOS original edited\r\n"
+      },
+      "savedOdt": {
+        "file": "output/original-edited.odt",
+        "sizeBytes": 1341,
+        "sha256": "dbc1eda33af89767290640540c250f2db153d77e04a57b7284a60589aa4e2df1",
+        "paragraphs": [
+          "FocusWriter original fixture.",
+          "中文内容保留。",
+          "STATUS=AFTER",
+          "VALUE=42",
+          "ForgeOS original edited",
+          ""
+        ]
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "01-original-input.jpg": {
+          "sizeBytes": 23452,
+          "sha256": "ed4e9c1bae532c01b3e946ea2f7ed06eb3032fe431cd99fa59055a32fe0f6200"
+        },
+        "02-original-txt-saved.jpg": {
+          "sizeBytes": 23754,
+          "sha256": "c340451fbdbd43e5ac0363c1d7fa095e26caa8ec7cbc6a92fcd7e965cf231513"
+        },
+        "03-original-odt-saved.jpg": {
+          "sizeBytes": 23856,
+          "sha256": "fd9a637fff092835f3a0056c77c7f6b5e79a00cf1ca7bb92ca02473b7b39fccf"
+        },
+        "04-original-new-process-txt.jpg": {
+          "sizeBytes": 23911,
+          "sha256": "352e6b02e46f4e56fe9e57f7ffb49ef6df8a2559f44afc3d5608cca4c668a0ca"
+        },
+        "05-original-new-process-odt.jpg": {
+          "sizeBytes": 23844,
+          "sha256": "0a25bd2dc55d50d1a82431805a798e9f80e64650b1e6343a3b3e864c8faf0c7b"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-focuswriter-source.json",
+    "sha256": "ed3fdae03a43f9cf32fa64faa96b2377838c82e98cafc195643f4d95469abd8b",
+    "mainProgramLicense": "GPL-3.0-or-later",
+    "bundleLicenseClosureVerified": false
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-focuswriter-gui.json",
+    "sha256": "5a57a195766588a8bf011d37eb279ac43f9f08cc0dc6c501f1c977225c04d7e5"
+  },
+  "limits": [
+    "Only two small UTF-8 text workflows are planned; original generation currently verified: Chinese-name file open, ordinary BEFORE to AFTER replacement, ASCII addition, GUI Save As to ASCII TXT and ODT paths, and explicit new-process reading of both formats. Input uses LF, GUI TXT output uses CRLF; raw bytes independently checked. ODT ZIP and exact paragraph text independently checked, not full ODF conformance.",
+    "Default native launcher environment and working directory retained; no Core, global context, font, program, DLL or runtime modification. Normal Quit used File menu; initially ineffective Ctrl+Q and early terminal guard failure retained, shortcut behavior not accepted.",
+    "Only fixed main source declares GPL-3.0-or-later and official artifact/source SHA-256 were matched. No installed licence text file observed. Complete Qt, Hunspell, FFmpeg, icons, dictionaries, themes, other bundled licensing closure, PGP, Authenticode and reproducible build unverified.",
+    "Formatting, RTF/DOCX, spell-checking, themes, symbols, timers/goals, multiple-document editing, printing, large files, other encodings, direct Chinese keyboard input and advanced word-processor functionality unverified.",
+    "Guest network download, fresh-machine registration, migration, cross-version upgrade and GUI update/rollback buttons unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart remain pending at original proof freeze."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

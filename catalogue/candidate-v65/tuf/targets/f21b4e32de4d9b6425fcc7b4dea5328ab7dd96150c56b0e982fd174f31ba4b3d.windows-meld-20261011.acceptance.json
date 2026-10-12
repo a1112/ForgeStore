@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS KVM; Wine11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "meld",
+      "version": "3.22.2",
+      "sha256": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8",
+      "size": 28401664,
+      "generationId": "gen-job-1791735260445-1",
+      "definitionDigest": "sha256:baf77e4683a7d7a29d10b3f408b2bd894bc7e717e7f3fa0d35c8c3a0dd19d0fb",
+      "launcherSha256": "sha256:fb9f6246ae5dba651cd961b91f278e8bf8c97a9060e61b62729916af60ac9d2f",
+      "guiFileOperation": "passed-limited-mouse-only-compare-single-block-merge-save-fresh-reopen",
+      "keyboardEditingAccepted": false,
+      "keyboardIssueFixed": false,
+      "save": {
+        "generationId": "gen-job-1791735260445-1",
+        "inputPins": {
+          "MeldTests/原始左.txt": {
+            "sizeBytes": 58,
+            "sha256": "641826b4769fd3865a9d3cee7d0af9e6c4d8db943ae830e03316738e93a49348"
+          },
+          "MeldTests/原始右.txt": {
+            "sizeBytes": 57,
+            "sha256": "503133c46bf4b268a338cbfbd23012603523fccd172cc5cda6b1043a44574233"
+          }
+        },
+        "inputsUnchanged": true,
+        "outputRelativePath": "MeldTests/original-merged.txt",
+        "outputPin": {
+          "sizeBytes": 57,
+          "sha256": "503133c46bf4b268a338cbfbd23012603523fccd172cc5cda6b1043a44574233"
+        },
+        "outputExactlyMatchesRightSource": true,
+        "textUtf8": "ForgeOS Meld original\n中文内容保留\nVALUE=AFTER\nEND\n",
+        "workflow": "mouse-only single difference block right-to-left merge and GUI menu Save Left Pane As",
+        "keyboardEditingAccepted": false,
+        "firstKeyboardDiagnosticAccepted": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "01-original-comparison.jpg": {
+          "sizeBytes": 17939,
+          "sha256": "fbc5447b7e70c7ff4beb75c3dcc2d58c9f519ac0f12d94aae0a281aff7fee7b3"
+        },
+        "02-original-caret-error.jpg": {
+          "sizeBytes": 18364,
+          "sha256": "e9afa0444475ed64e37fef843aff70e5fc0e167ee8f155e28a758eb0800e07c4"
+        },
+        "03-original-key-navigation-diagnostic.jpg": {
+          "sizeBytes": 23078,
+          "sha256": "dbd9e7b6216f31f9d51cb4dfa12886e1992e71afb75ee255d902c8abc1f3ad35"
+        },
+        "04-original-mouse-comparison.jpg": {
+          "sizeBytes": 23710,
+          "sha256": "d5baddd950fbe5db2e304e31f8bb87705518545c5c2d5997ec26189f525fea1a"
+        },
+        "05-original-merged-saved.jpg": {
+          "sizeBytes": 25105,
+          "sha256": "da1c011c5b4430fe7c6017242f1de9b6dcb3f59753f42094781f241c92998406"
+        },
+        "06-original-explicit-reopened.jpg": {
+          "sizeBytes": 25123,
+          "sha256": "994a04ef76953b91f0674830d6e6b79c6d6ed718a0a3d76858179500a72ef0db"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-meld-source.json",
+    "sha256": "371b9f96d0c9a4eeb4ab5161094e1f9c7f0221ecb76569439de0ef37fe08b018"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-meld-gui.json",
+    "sha256": "32604f6bcec1df1cb37e134b328b0a52573093c80ca9c9813277252d7fc5f600"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-11-meld-failures.json",
+    "sha256": "fe6b0c071f0528f77a4d038619061f43aa3fd34e59361f8038bffbcae2d21813"
+  },
+  "limits": [
+    "Limited mouse-only comparison of two small UTF-8/LF files with Chinese filenames/content; single right-to-left difference-block merge, GUI Save Left Pane As to ASCII path, explicit fresh-process output reopen showing Files identical and independent exact-byte comparison. Synthetic text files are not additional applications.",
+    "Keyboard editing, caret navigation and shortcuts did not work reliably and remain UNFIXED. Original attempted keyboard workflow did not produce a saved output and is not accepted. GTK logs report keyboard-layout translation failures; static GTK source and read-only guessed layout checks do not prove the exact deployed failing function or a runtime repair. No general GTK/Wine fix claimed.",
+    "Direct Chinese keyboard input, large/damaged files, other encodings/line endings, multi-block/three-way merge, folder or version-control comparison, regex/filter/undo/advanced editing, network download, fresh-machine registration, migration, cross-version upgrade and unattended use unverified. GUI Store update/rollback buttons unverified.",
+    "Source archive matches official GNOME SHA-256; installer SHA is locally fixed from official HTTPS only, no published installer digest verified. Main source GPL-2.0-or-later and installed COPYING exactly matches fixed source. Complete GTK/Python/cx_freeze/GtkSourceView/OpenSSL and bundle license closure, binary-source correspondence, Authenticode/OpenPGP and reproducible build unverified.",
+    "Native managed MSI defaults used. No Core/program/global-context/launcher-environment/working-directory/font-package/DLL/runtime changes. Isolated application font preference Monospace24 set through GUI for legibility; this is not a keyboard fix.",
+    "Independent market generation, cached same-version update, exact original rollback and normal two-service restart pending at original freeze. Later completion recorded separately without modifying these original bytes."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

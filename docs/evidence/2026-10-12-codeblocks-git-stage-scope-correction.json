@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "phase": "after-first-actual-stage-before-incremental-FINAL-review-and-second-stage",
+  "baseCommit": "f6d88cd550425725e46c097a5a27ca8a2a374b81",
+  "firstGitAddActuallyExecuted": true,
+  "actualFirstStagedPaths": 122,
+  "firstStageFailure": {
+    "gate": "full git ls-files equals prior evidence freeze union prospective paths",
+    "oldEvidenceFreezeCount": 3402,
+    "expectedEvidenceUnionCount": 3522,
+    "actualFullIndexTrackedCount": 4763,
+    "parentHeadTrackedCount": 4643,
+    "existingParentHeadPathsOutsideEvidenceFreeze": 1241,
+    "missingExpectedEvidencePaths": 0,
+    "exactFailureStderr": "tool history only; no separate raw stderr persisted",
+    "commitAndPushStopped": true
+  },
+  "readOnlyRecovery": {
+    "all3522EvidenceIndexBytesEqualWorkingRaw": true,
+    "all1241OutsideEvidenceIndexBytesEqualParentHead": true,
+    "actualCachedDiffCheckExit": 0,
+    "parentReceiptSha256": "53e111578db09c284051fb9c0ca924867ae1b40a3dd386abc418d991d1f5ff4b",
+    "independentReceiptSha256": "3a545c62c62dbc3fddf061d062b5dd44843a80288d5724be0823907e35e5f34a"
+  },
+  "scopeCorrection": {
+    "evidenceFreezeIsNotEntireRepositoryTrackedSet": true,
+    "onlyTwoMutableEvidencePaths": [
+      ".gitattributes",
+      "docs/windows-1000-progress.json"
+    ],
+    "plannedFinalEvidenceCountAfterThisCorrectionAndReviewV2": 3524,
+    "plannedFinalFullRepositoryTrackedCount": 4765,
+    "plannedFinalStagedPaths": 124,
+    "outsideEvidenceParentHeadPathsRemain": 1241,
+    "plannedCountsAreNotClaimedExecuted": true
+  },
+  "preservation": {
+    "initial121ProspectiveBytesAndOriginal28FrozenBytesAndReviewV1Unchanged": true,
+    "noRenormalizeOrRepeatFirst122Stage": true,
+    "noGuestGUIServiceApplicationCatalogueTrustCheckpointChanges": true
+  },
+  "limits": [
+    "Outside evidence preservation compares index to parent HEAD bytes; does not claim all outside working-tree bytes equal index.",
+    "Independent review is not a replay of guest GUI or private complete checkpoints.",
+    "Original historical failures and scope labels remain unchanged."
+  ]
+}

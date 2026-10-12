@@ -1,0 +1,102 @@
+{
+  "applicationId": "codeblocks",
+  "version": "25.03",
+  "officialBinariesPage": "https://www.codeblocks.org/downloads/binaries/",
+  "officialSourcePage": "https://www.codeblocks.org/downloads/source/",
+  "officialLicensePage": "https://www.codeblocks.org/license/",
+  "installer": {
+    "requestedUrl": "https://master.dl.sourceforge.net/project/codeblocks/Binaries/25.03/Windows/codeblocks-25.03-setup-nonadmin.exe",
+    "fileName": "codeblocks-25.03-setup-nonadmin.exe",
+    "sizeBytes": 52312086,
+    "sha256": "1b730f9c279f1babfdef92507078913df18cff9bbabc14dc69c2abe6628a94ed",
+    "officialFixedRawChecksumManifestMatched": true
+  },
+  "sourceArchive": {
+    "file": "codeblocks_25.03-complete-builder.tar.xz",
+    "sizeBytes": 17866880,
+    "sha256": "b0f6aa5908d336d7f41f9576b2418ac7d27efbc59282aa8c9171d88cea74049e",
+    "strictSshFullReadbackMatchesVerifiedBuilderArtifact": true
+  },
+  "officialSourceUrl": "https://master.dl.sourceforge.net/project/codeblocks/Sources/25.03/codeblocks_25.03.tar.xz",
+  "sourceDigestMatchedOfficialFixedSourceForgeWebTextNotRawHtml": true,
+  "rawChecksumManifest": {
+    "sizeBytes": 11016,
+    "sha256": "456081277752344d733ea9f67a562304ff8cb3bf654dd59ca8aedb80265c4e58",
+    "reference": "codeblocks-20261012/source/checkums.txt",
+    "encoding": "UTF-16LE BOM and CRLF original bytes retained"
+  },
+  "sourceMembers": {
+    "README": {
+      "sizeBytes": 182,
+      "sha256": "229a997af9eb9503535804680e58f6179cf5c428f0d7e342936ecc29dd4342a0"
+    },
+    "COPYING": {
+      "sizeBytes": 35148,
+      "sha256": "0ae0485a5bd37a63e63603596417e4eb0e653334fa6c7f932ca3a0e85d4af227"
+    },
+    "src/src/main.cpp": {
+      "sizeBytes": 211649,
+      "sha256": "ea6f433a5db057878ec50cef6ed83409143549f76cf63d6d1f7f003a89e1c967"
+    },
+    "src/src/app.cpp": {
+      "sizeBytes": 55514,
+      "sha256": "89e546d10a1ecb05ae0b90a8ff75db679e346462a586f564840cdd9208f9211d"
+    },
+    "src/sdk/cbeditor.cpp": {
+      "sizeBytes": 132177,
+      "sha256": "0494e94299753fc1b2015d49d62d44073a1b0396629d9a2ef1465c2ed920a13a"
+    },
+    "src/sdk/editorbase.cpp": {
+      "sizeBytes": 14750,
+      "sha256": "6dd4a8938169df6cc03ceba04a543d0200fa5fa5b178366f08e1f80ed430c6fc"
+    },
+    "src/sdk/editormanager.cpp": {
+      "sizeBytes": 71959,
+      "sha256": "68063ddeb7073c5bf8380125a310e292eaed2bb6df00d4d8d7246e641ec03ca4"
+    },
+    "src/include/sdk.h": {
+      "sizeBytes": 457,
+      "sha256": "936d43d3665476c35457c1e23fded7a377d0e57094f2f06173aa9f79a7062cab"
+    },
+    "src/sdk/wxscintilla/src/scintilla/License.txt": {
+      "sizeBytes": 868,
+      "sha256": "94a798c912d49fae7986f8cac34e4f461cb154672621fb3d6cc32ae6b1ee3762"
+    }
+  },
+  "mainFixedSourceLicense": "GPL-3.0-only",
+  "sdkFixedSourceLicense": "LGPL-3.0-only",
+  "scintillaNoticeIsComponentNotMain": true,
+  "notOrLaterClaimed": true,
+  "sourceNotModifiedAndNoticesRetained": true,
+  "installedMainNamedLicenseNotFoundInLimitedScan": true,
+  "installedMainLicenseSourceComparisonVerified": false,
+  "fullWxWidgetsScintillaSquirrelPluginsCodecsIconsTranslationsBundleClosureVerified": false,
+  "sourceBinaryCorrespondenceOrReproducibleBuildVerified": false,
+  "latestVersionClaimed": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "installerStaticInspection": {
+    "passedStaticInspection": true,
+    "packageTypeFrom7z": "Nsis",
+    "peBootstrapMachine": 332,
+    "sevenZipExit": 0,
+    "listPin": {
+      "sizeBytes": 337745,
+      "sha256": "08ca5ce0f8c73ab06357405dc55a3f919c78d5bf638328b97e19b66ccc0fcad7"
+    },
+    "fullNsisOrInstallBehaviorVerified": false,
+    "installerJobCreated": false
+  },
+  "nativeNsisDocumentation": "https://nsis.sourceforge.io/Docs/Chapter3.html#installerusagecommon",
+  "nativeArguments": [
+    "/S",
+    "/D=C:\\CodeBlocks"
+  ],
+  "lastDirectoryArgumentUtf8Bytes": 16,
+  "lastDirectoryArgumentUtf8Hex": "2f443d433a5c436f6465426c6f636b73",
+  "all68BoundedRangesVerified": true,
+  "installerRangeCount": 50,
+  "sourceRangeCount": 18,
+  "builderCompleteHashesIndependentlyReadBackToHost": true,
+  "noCompilerBundledInSelectedNonMinGWPackage": true,
+  "binaryAndInstallerBytesNotPublic": true
+}

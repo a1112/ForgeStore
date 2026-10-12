@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 1,
+  "reviewStage": "FINAL before first actual Git stage",
+  "applicationId": "codeblocks",
+  "version": "25.03",
+  "reviewer": "independent code-reviewer agent",
+  "passed": true,
+  "baseCommit": "f6d88cd550425725e46c097a5a27ca8a2a374b81",
+  "headCommit": "f6d88cd550425725e46c097a5a27ca8a2a374b81",
+  "prospectiveManifest": "codeblocks-prospective-files-20261012.json",
+  "prospectiveManifestSha256": "734cfa0680fc2f6f835a921d9989d44851d7f00c1ea6a309998b06bd75f6d7be",
+  "actualProspectiveFiles": 121,
+  "strengths": [
+    "Complete prospective working-tree manifest reviewed including untracked files; all121 byte pins plus raw/filter/relative no-index checks pass.",
+    "3400 previous immutable files and28 original source/gui/acceptance frozen files retain exact bytes and original pending phase labels.",
+    "Four root-authorized canonical TUF RSA-PSS-SHA256 signatures and version/length/hash metadata chain verified; all127 actual signed target bytes checked locally, including124 unchanged prior non-catalogue targets.",
+    "Independent reconstruction from immutable original112B/market110B inputs exactly matches BOM/Chinese/eightCRLF original126B/market122B outputs and original.cpp.c diagnostic.",
+    "Limited acceptance and unresolved compiler/startup/cpp-save limitations are reflected in public catalogue summaries; installation, GUI, acceptance and market publication remain distinct."
+  ],
+  "issues": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "assessment": {
+    "readyForFirstStage": true,
+    "readyToMerge": "Yes within documented finite evidence scope after parent completes actual index/commit/push checks",
+    "reason": "No blocking evidence, byte-preservation, signed-target, privacy or counting inconsistency found. This is a local-byte and static evidence review; GUI and private full checkpoint/service assertions remain original recorded observations."
+  },
+  "recommendations": [
+    "Retain the narrow catalogue description and all startup/compiler/cppSaveAs limits.",
+    "After copying this fixed review, audit actual index and commit blobs, cached diff checks, ordinary push and fresh remote/guest current-state evidence as separate parent steps."
+  ],
+  "checks": {
+    "wholeByteAudit": {
+      "prospective": 121,
+      "oldImmutable": 3400,
+      "originalFrozen": 28,
+      "allWholeBytePinsMatched": true
+    },
+    "tufSignaturesAndMetadataLinks": {
+      "root": {
+        "verifiedRSA_PSS_SHA256": true,
+        "threshold": 1,
+        "validSignatures": 1
+      },
+      "targets": {
+        "verifiedRSA_PSS_SHA256": true,
+        "threshold": 1,
+        "validSignatures": 1
+      },
+      "snapshot": {
+        "verifiedRSA_PSS_SHA256": true,
+        "threshold": 1,
+        "validSignatures": 1
+      },
+      "timestamp": {
+        "verifiedRSA_PSS_SHA256": true,
+        "threshold": 1,
+        "validSignatures": 1
+      }
+    },
+    "tufTargetsCatalogueLedger": {
+      "allActualTargetsWholeBytes": 127,
+      "publicJSONFiles": 70,
+      "oldTargets": 125,
+      "oldNonCatalogueBytesIdentical": 124,
+      "entries": 61,
+      "apps": 59,
+      "fixtures": [
+        "org.forgeos.storefixture",
+        "org.forgeos.storefixture-flatpak"
+      ],
+      "queue": 16,
+      "oldLedgerFullFieldsUnchanged": true
+    },
+    "sourceArchiveLicensesAndManifest": {
+      "archiveAndInstallerWholeHashVerifiedLocally": true,
+      "nineArchiveMembersRawIdentical": true,
+      "utf16LE_BOM_CRLF_manifestWholeRoundtrip": true,
+      "installerExactManifestBlockMatches": true,
+      "mainFixedHeaders": "GPL-3.0-only",
+      "sdkFixedHeaders": "LGPL-3.0-only",
+      "scintillaSeparateComponentNotice": true,
+      "noFullBundleClosureOrAuthenticodeOrReproducibilityClaim": true
+    },
+    "independentOutputReconstruction": {
+      "original": {
+        "input": {
+          "sizeBytes": 112,
+          "sha256": "f6078940fe846b6748dfbc9467e918073bbbadfc47e6274e5832588d669672c4"
+        },
+        "output": {
+          "sizeBytes": 126,
+          "sha256": "fb7dc66cb00422a48a7d8171f9c1410c6d1556ff16d25138f41c7b4477e47654"
+        },
+        "wholeIndependentReconstructionMatched": true,
+        "bom": true,
+        "crlfCount": 8
+      },
+      "market": {
+        "input": {
+          "sizeBytes": 110,
+          "sha256": "c61eabe60fbd2b86fc1b146fb18b3d384e04591fa9fb59579c1408c84b674f73"
+        },
+        "output": {
+          "sizeBytes": 122,
+          "sha256": "56309a028a02b5a3c109f1867ccc47d50fdd7f8b0f969cc798ff308418590a0c"
+        },
+        "wholeIndependentReconstructionMatched": true,
+        "bom": true,
+        "crlfCount": 8
+      }
+    },
+    "guiProgramPinsAndJPEGReceipts": {
+      "programPinMaps1723FullFieldsEqual": true,
+      "fiveTerminalGUIJobReceipts": true,
+      "evidenceCurrentStateCounts": [
+        468,
+        138
+      ],
+      "privateCompleteCheckpointOnlySummaryRead": true,
+      "GUIAndPrivateCPNotIndependentlyReplayed": true,
+      "JPEGs": [
+        {
+          "name": "codeblocks-01-compiler-detection-diagnostic-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-02-toolbar-assert-diagnostic-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-03-file-association-diagnostic-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-04-original-input-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-05-original-saveas-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-05b-original-saveas-allfiles-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-05c-original-saveas-c-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-06-original-about-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-07-reopen-toolbar-assert-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-08-original-newprocess-open-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-09-market-compiler-diagnostic-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-10-market-toolbar-assert-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-11-market-input-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-12-market-saveas-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-13-market-reopen-toolbar-assert-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-14-market-newprocess-open-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-15-rollback-toolbar-assert-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        },
+        {
+          "name": "codeblocks-16-rollback-original-open-20261012.jpg",
+          "encoding": "JPEG",
+          "dimensions": [
+            993,
+            997
+          ]
+        }
+      ],
+      "frozenPendingPhaseSeparateFromCompletion": true
+    },
+    "attributesAndIndex": {
+      "rawFilteredRelativeNoIndexPathsChecked": 121,
+      "oldAttributesPrefixBytes": 28077,
+      "suffixLFOnly": true,
+      "exactRules": 10,
+      "indexEmpty": true,
+      "head": "f6d88cd550425725e46c097a5a27ca8a2a374b81",
+      "noStageOrRenormalizePerformed": true
+    },
+    "publicPrivacyScan": {
+      "all121ByteStreamsScanned": true,
+      "privateKeyCredentialFieldsOrSignedQueryPatternsFound": 0,
+      "benignPublicQueriesReviewed": [
+        "fixed GitLab ref links in old Inkscape evidence",
+        "WinMerge lang=en official link",
+        "immutable upstream editor search URL literals",
+        "Greenfish public filename query in existing ledger"
+      ],
+      "privateFullCPNotReadOrCopied": true,
+      "imagesVisualReviewSeparate": true,
+      "notExhaustiveSecretDetector": true
+    }
+  },
+  "runtimeInternalEvidenceChecks": {
+    "staticCaptureInheritanceHashChain": [
+      {
+        "file": "codeblocks-lifecycle-lib-20261012.py",
+        "sha256": "8e8e79f9a307bc1c6b27a9bcba5bbab1e5e921a7c69c74ca2a20acfbae5f11b9"
+      },
+      {
+        "file": "treesheets-lifecycle-lib-20261012.py",
+        "sha256": "87483b4a6dda41c170119f8102f53c96c316e912b940e4cdc665c129f57267ef"
+      },
+      {
+        "file": "greenfish-lifecycle-lib-20261012.py",
+        "sha256": "cde58ab37c3666500103558fd3a865850696decf5e3a8731194ad80bdeec8da3"
+      },
+      {
+        "file": "zim-lifecycle-lib-20261012.py",
+        "sha256": "95c5abe73a3e02438f06df689fbcf4f0a179dddfeef4edaa212c9eaec2f6370b"
+      },
+      {
+        "file": "gvim-lifecycle-lib-20261012.py",
+        "sha256": "bdf765be5cc51919404f562961079be02db79de6fafdbf624384988c6b44abb5"
+      },
+      {
+        "file": "picard-lifecycle-lib-20261012.py",
+        "sha256": "576aa2f08828fb034fe1de603a618a80fa210cdafbab8363c74025dc57449de5"
+      },
+      {
+        "file": "scribus-lifecycle-lib-20261012.py",
+        "sha256": "dd6030795bd18a40f3b746eaa6c10a400cf9a0e097092907077f308abe3bfaa8"
+      },
+      {
+        "file": "gnuplot-lifecycle-lib-20261012.py",
+        "sha256": "607f9e6bc566154ea850e2c0c30ff4190d060566688c7211c4e1e31152e15c40"
+      },
+      {
+        "file": "poedit-lifecycle-lib-20261012.py",
+        "sha256": "40a9acc18240a8121a3efbaf80460de719045094484a1794ff7daf1c0eed3394"
+      },
+      {
+        "file": "cppcheck-lifecycle-lib-20261012.py",
+        "sha256": "d30377286278ab292b919c0f4e46ec7be7fd2ff2dc69d92999ebc1d62008bbef"
+      },
+      {
+        "file": "rapidcrc-lifecycle-lib-20261012.py",
+        "sha256": "628fa6773e04b5d1b352d2799f13abb3d36644d2c95198013704af92885990ea"
+      },
+      {
+        "file": "doxygen-lifecycle-lib-20261012.py",
+        "sha256": "058900056f32614669cdb6fc457dc1fe70397666d3185d3d6981aa6712d80a77"
+      },
+      {
+        "file": "mediainfo-lifecycle-lib-20261012.py",
+        "sha256": "7c9d51dfc4e6bcd93bc2ee5450c45ae81aa0ec024f375b5737e7684f1548be6f"
+      },
+      {
+        "file": "copyq-lifecycle-lib-20261012.py",
+        "sha256": "1b53ab7eeaba458ddeeb88c36c801998834cb8007c9c1c8f4ccb387ae187b701"
+      },
+      {
+        "file": "transmission-lifecycle-lib-20261011.py",
+        "sha256": "9b28bd1053d899ddc6cf8ff005ee1b96d21afc8a248fe4b8a6cb11d701417cb0"
+      },
+      {
+        "file": "bowpad-lifecycle-lib-20261011.py",
+        "sha256": "c1aa37c46633259f4ee52d69a08884e5c5b449c469989b215960b14756e3b79b"
+      },
+      {
+        "file": "nomacs-lifecycle-lib-20261011.py",
+        "sha256": "680ecd96b4a43c12d0e0d3e9643ab84c9f6016c400da512857a2c471247972c6"
+      },
+      {
+        "file": "windjview-lifecycle-lib-20261011.py",
+        "sha256": "20b92891ce9b9bfdc54d4d5871a58fff3dac502aa01d9135d8251211f7a13da8"
+      },
+      {
+        "file": "rednotebook-lifecycle-lib-v3-20261011.py",
+        "sha256": "1023bf2c99944b881bcf9840c06270797f3462033f271fddaead67a4d51ae808"
+      },
+      {
+        "file": "rednotebook-lifecycle-lib-v2-20261011.py",
+        "sha256": "85e5a1b02d01670d26eb4747741b2d21c41aa2a222c1479b9c4fd79de2113ee9"
+      },
+      {
+        "file": "rednotebook-lifecycle-lib-20261011.py",
+        "sha256": "a464dee4feb73538e45127a43a2d5b842dfedb3bfabb2468dba33c4594cb2c57"
+      },
+      {
+        "file": "xmlcopyeditor-lifecycle-lib-v4-20261011.py",
+        "sha256": "01ac208525822f8bf2e553777b10ed0a6f302f41aedea393e12676cb5026b31b"
+      },
+      {
+        "file": "qxmledit-lifecycle-lib-v2-20261011.py",
+        "sha256": "0067e4e830b6265746b226b2bdf335bc974800bc4751fa5903633564fe12d286"
+      },
+      {
+        "file": "focuswriter-lifecycle-lib-v2-20261011.py",
+        "sha256": "5ee4ed5e605b3d481ce09d396089ed192ef95e0fc283d2eabaaedd2943c2ad76"
+      }
+    ],
+    "finalPinsInternalFullFieldsMatched": {
+      "original": 1740,
+      "market": 1739
+    },
+    "threeActualSameSizeByteChangesRecorded": [
+      {
+        "path": "drive_c/users/forge/AppData/Roaming/CodeBlocks/default.conf",
+        "old": {
+          "sizeBytes": 50203,
+          "sha256": "5ffd82e2f9659095f77089878fe1dbd8bfe8fd30d981ca52b3e528becd2d24ef"
+        },
+        "new": {
+          "sizeBytes": 50203,
+          "sha256": "691d4d950db60d5127086b1362ea0f91e911228cc533669e1b5497aa6a6feae3"
+        },
+        "diffLines": 39
+      },
+      {
+        "path": "system.reg",
+        "old": {
+          "sizeBytes": 3423303,
+          "sha256": "148d1d1e377272d9b5831fd50e6f1a1bd7e77c57e096cfeec37a0e95e4f99e0a"
+        },
+        "new": {
+          "sizeBytes": 3423303,
+          "sha256": "928d08ebd3f9c726c36b81785eb36c80ffd023821da6c1c238df560b3ff14e16"
+        },
+        "diffLines": 287
+      },
+      {
+        "path": "user.reg",
+        "old": {
+          "sizeBytes": 104264,
+          "sha256": "8ffd8952ff3ecd036971a25d770e686743aaa25ee32d3a57b4f9de88c7be819e"
+        },
+        "new": {
+          "sizeBytes": 104264,
+          "sha256": "5be021da16e6f446e8d3b0b61bf62d9a1f8f387c7d560fa74f40e4410fe21798"
+        },
+        "diffLines": 20
+      }
+    ],
+    "privateRawOrCPRead": false,
+    "sevenFieldRestartEqualityImplementationReviewed": true,
+    "independentRestartOrGuestCaptureRun": false
+  },
+  "visualReview": {
+    "all18JPEGsIndividuallyViewed": true,
+    "noLoginOrCredentialsImageObserved": true,
+    "scope": "Compiler/toolbar/association/About/earlySaveAs diagnostics separated from Chinese input, exact cSaveAs, freshProcessOpen and rollbackOriginalOpen; screenshots support recorded state and do not establish all intervening user actions or exact repeated-assertion counts."
+  },
+  "guiObservedEvidenceScope": "Two tiny Chinese-name UTF8BOM/CRLF native Open inputs; current-file ordinary STATUS BEFORE to AFTER Yes one occurrence; ASCII EOF // ORIGINAL42 or // MARKET42 plus CRLF; native All files original.c/market.c SaveAs; two explicit fresh-process CtrlO/doubleclick output Opens and fifth original Open after exact rollback. Five normal CtrlQ/LayoutChanged No exits0+wineserver stop are terminal receipts, not standalone functional passes.",
+  "programAndFilesystemScope": "1723 installed program pins equal between original and independent market generations. Final1740 original/1739 market pins cover programs/fixed data/three registries/selected CodeBlocks-named prefix-user config and shortcuts only; not whole application/filesystem traversal. Third original system.reg3423303B/user.reg104264B/default.conf50203B are same-size changed bytes, with public287/20/39 diff-line pins; cause and key equivalence remain unestablished.",
+  "runtimeVerificationScope": "Reviewed actual capture, terminal, rollback, third-GUI observation, restart and current-state code and public complete maps. Capture implementation uses full Core jobs and mode=ro SQLite SELECT * all columns, generations/config/trust/guards; restart compares jobs,rows,market,trustDocuments,configs,generations,serviceGuards exactly and separately checks nondecreasing time. Public state468/138/root1/role74 and two old/new service PIDs are internally consistent. No independent current guest capture, GUI execution, service restart, full private CP read or replay performed.",
+  "privateCheckpoint": {
+    "file": "codeblocks-20261012/after-final-restart.json",
+    "sha256": "a9572ec4cf34a8cd380c39ee7495c9d41464a13bbe270987d5a204b2d2f2176e",
+    "summaryOnlyReviewed": true,
+    "fullContentsNotReadCopiedOrPublished": true
+  },
+  "tufVerificationScope": "Existing trusted root bytes equal candidate-v64/root1 and1.root. Canonical recursive encoder escapes quote/backslash and retains string LF; cryptography50.0.2 verifies each RSA-PSS SHA256 signature using MGF1 SHA256/salt32, authorized keyid and threshold1. Metadata expiry checked at review time. All127 actual cached signed target streams and65 public target JSON plus5 metadata/root JSON match length/SHA. No independent guest updater/network/time/TUF-conformance replay.",
+  "licenseVerificationScope": "Nine raw members independently extracted in-memory from locally pinned17866880B archive and compared to public source; main GPLv3-only and SDK LGPLv3-only header declarations independently read; COPYING GPLv3 text and README25.03 checked; Scintilla/SciTE permissive component notice retained separately. Official raw11016B UTF16LEBOM/CRLF manifest whole strict roundtrip, exact installer filename/SHA256/grouped52312086B size and complete local installer hash match. SourceForge source digest public tool-text basis recorded, not rawHTML; no new external verification.",
+  "explicitUnverifiedLimits": [
+    "Compiler installation/configuration/compile/link/build/debug/run/projects/templates/full parser/plugins/scripts/complete IDE or C++ specification.",
+    "Generic cpp SaveAs fix: default original.cpp generated original.cpp.c; two expected-cpp FileNotFound gates failed before dependents, Allfiles cpp Fileexists nativeNo retained diagnostic. Accepted exact c-save only; failure cause unresolved.",
+    "All five toolbar.cpp1061 Realize bitmap DebugAlert warnings remain and require normal Continue; do-not-show unchecked. Reopen splash move/drag and Continue plus focusedReturn do not prove exact separate assertion counts or unattended startup.",
+    "Each first-generation NoCompiler Detected and invalid GNU GCC default remain; gcc14.2.0 About build string does not establish an installed compiler. Market About not independently tested. AssociationsNo/keybinding/SpellChecker/Layout prompts retained.",
+    "Installed-main named license comparison/full bundle license closure/Authenticode/PGP/source-binary correspondence/reproducible build/latest.",
+    "Direct Chinese typing, full path selection, other encodings/large or bad files, printing, guest network download/background-network absence/new-machine registration/cross-version migration/GUI market update buttons/real Windows UAC."
+  ],
+  "originalFailuresAndLimitsPreserved": [
+    "Initial UTF8 manifest read failed before package GET; real UTF16 raw preserved.",
+    "68 bounded206 download ranges(50installer+18source) are recorded passed; JSONLINES ExtraData wrapper failed after raw retained; read-only recovery and complete host hash do not convert failed wrapper to pass or mean redownload.",
+    "Host slowGET intentionally replaced after verified builder/readback; only downloaderPID58076 stopped, partial25624576B preserved. Not network failure/install kill; unpersisted HTTP buffer length unknown.",
+    "First catalogue1843200B/SHA7bf509629a2d7da25dc9203e7695c9d9c2e18ba82e1fc1510361ea3a21f86253 stdout receipt and distinct stage readback recorded; transfer not replayed by reviewer.",
+    "Missing helper guesses/invalid glob/py39 write_text newlineTypeError/inline quoteSyntaxError/publicationV1 missingdictvalue/publicationV2 nativeNonUTF8 remain failures or incomplete probes; V2 wholeUTF8 roundtrip/compile-string do not establish native diagnostic cause, explicit-cookieV3 separately passed.",
+    "Unexecuted donor publisher/thirdproof elseTrue and parentV1 guessedfixture conditionalFalse/elseTrue drafts corrected before execution; only actual corrected helpers/checks count. ParentV2 receipt reviewed, not treated as reviewer GUI/privateCP replay.",
+    "Original28 pending freeze labels and oldScribus privateV1canonical raw loss remain; no historical all-gates-valid claim."
+  ],
+  "reviewOnlyFailures": {
+    "receipt": "codeblocks-independent-review-failures-20261012.json",
+    "sha256": "1d99ba4390ac6884d4ca2f629f43dc42aebc6d37342c7edf03714e91d7a80fdd",
+    "originalV1ChecksRetained": true,
+    "actualCorrectedChecks": "codeblocks-independent-review-checks-v2-20261012.json",
+    "actualRuntimeStaticChecks": "codeblocks-independent-review-runtime-static-v3-20261012.json"
+  },
+  "mutationScope": "Only new exclusive review helpers/receipts/final JSON under .transfer. Repo,index,guest,services,application,TUF,CP not modified. No git add/renormalize, GUI replay, download or credential-file access.",
+  "futureChecksNotYetPerformed": [
+    "Real index blob audit after first actual git add",
+    "Commit bytes/cached check/ordinary push and remote/guest fresh current-state checks"
+  ],
+  "reviewTimestampUTC": "2026-10-12T17:02:32.869386+00:00",
+  "evidenceReceipts": {
+    "checksV2": {
+      "file": "codeblocks-independent-review-checks-v2-20261012.json",
+      "sha256": "215bc6d10e60798405ec3a1c1dc4ecb08c117f3d507f48c13eecf4a4ce62fdde"
+    },
+    "runtimeStaticV3": {
+      "file": "codeblocks-independent-review-runtime-static-v3-20261012.json",
+      "sha256": "08a2a0eaba751cc6905db72dddee89ca63e308c7d66ed8de4f5bc53666f4beab"
+    }
+  }
+}

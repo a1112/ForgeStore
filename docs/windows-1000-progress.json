@@ -593,6 +593,15 @@
       "signedCatalogue": "catalogue/candidate-v64/tuf",
       "publication": "docs/evidence/2026-10-12-treesheets-publication.json",
       "limitation": "Only two tiny Chinese-name UTF8/LF flat2x2 CSV imports, two-cell ASCII edit, native ASCII CTS SaveAs/CSV export and explicit fresh Open. Startup registry error2 acknowledged normally in all five formal processes; no registry/runtime fix or unattended acceptance. Full hierarchy/styles/scripts/clipboard/images/broad formats/large files/network/migration/Chinese keyboard/full licence closure unverified."
+    },
+    {
+      "id": "codeblocks",
+      "version": "25.03",
+      "sha256": "1b730f9c279f1babfdef92507078913df18cff9bbabc14dc69c2abe6628a94ed",
+      "evidence": "docs/evidence/windows-codeblocks-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v65/tuf",
+      "publication": "docs/evidence/2026-10-12-codeblocks-publication.json",
+      "limitation": "Only two tiny Chinese-name UTF8BOM/CRLF source opens, one literal replacement plus ASCII EOF comment, native c-file SaveAs and explicit fresh Open. Five processes toolbar debug assert normally Continue; exact cpp SaveAs unaccepted diagnostic retained. Selected nonMinGW package no compiler; project/build/debug/run/complete IDE unverified. No runtime repair or unattended acceptance; complete bundle license closure unverified."
     }
   ],
   "queue": [
@@ -851,12 +860,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "58/1000 finite Windows acceptance;16 unresolved unchanged. TreeSheets3328 tiny flat2x2 Chinese-name CSV import/two ASCII cell edits/CTS SaveAs/CSV export/explicit fresh Open and cached IPC update/exact original rollback/normal restart. Startup registry warning remains and requires normal OK, no runtime fix. candidate-v64/root1/role73,461 fullCore/136 fullStore. StrictSSH stdin rolling-current-state-treesheets-20261012.py; current private CP after-final-restart-v3.json. Preserve all frozen/trust/history, actual third-GUI registry changes and unique checkpoint collision/readback failures. Independent review/index/commit/push pending at publication freeze.",
+  "next": "59/1000 finite Windows acceptance;16 unresolved unchanged. CodeBlocks25.03 nonMinGW Chinese-name source open/literal replace/ASCII comment/native c SaveAs/explicit fresh Open and cached IPC update/exact original rollback/normal restart. Toolbar bitmap debug assertion remains, normal Continue required each process, no runtime fix or unattended acceptance; compiler/build/debug/project unverified. Exact cpp SaveAs unaccepted, original.cpp.c diagnostic retained. candidate-v65/root1/role74,468 fullCore/138 fullStore. StrictSSH stdin rolling-current-state-codeblocks-20261012.py; current privateCP codeblocks-20261012/after-final-restart.json. Preserve all frozen/trust/history and actual third-GUI registry/defaultconf byte changes. Independent review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 58,
+    "acceptedLocalMarket": 59,
     "explicitlyBlockedCandidates": 16,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -864,25 +873,25 @@
     "pendingCandidates": 16
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v64/tuf",
-    "metadataVersion": 73,
-    "catalogueEntries": 60,
-    "acceptedDistinctWindowsApps": 58,
+    "signedCatalogue": "catalogue/candidate-v65/tuf",
+    "metadataVersion": 74,
+    "catalogueEntries": 61,
+    "acceptedDistinctWindowsApps": 59,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-treesheets-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-codeblocks-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-gvim-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-treesheets-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-treesheets-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-codeblocks-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-treesheets-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-codeblocks-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-greenfish-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-treesheets.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-treesheets-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-codeblocks.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-codeblocks-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",
