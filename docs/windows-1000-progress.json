@@ -530,6 +530,15 @@
       "signedCatalogue": "catalogue/candidate-v57/tuf",
       "publication": "docs/evidence/2026-10-12-rapidcrc-publication.json",
       "limitation": "Only two small binary inputs per generation including Chinese basename, GUI SHA256 computation and ASCII checksum save, new-process FileOK. Other algorithms, mismatch/missing files, advanced/shell/unattended/network flows and full bundled license closure unverified."
+    },
+    {
+      "id": "cppcheck",
+      "version": "2.18.0",
+      "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638",
+      "evidence": "docs/evidence/windows-cppcheck-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v58/tuf",
+      "publication": "docs/evidence/2026-10-12-cppcheck-publication.json",
+      "limitation": "Only tiny ASCII C++ nullptr GUI analysis, XML save and fresh-process Open XML. Other checks/projects/includes/standards/addons, Chinese paths/input, compile/runtime, network/unattended and complete bundled license closure unverified."
     }
   ],
   "queue": [
@@ -746,12 +755,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "51/1000 finite Windows acceptance;14 unresolved unchanged. RapidCRC Unicode0.3.42 only small binary GUI SHA256/save/new-process FileOK and finite local market lifecycle. candidate-v57/root1/role66;405 fullCore/122 fullStore. Strict SSH stdin rolling-current-state-rapidcrc-20261012.py. Preserve all frozen/trust/history/private checkpoints and actual third-GUI registry/options changes. Independent review/index/commit/push pending at publication freeze.",
+  "next": "52/1000 finite Windows acceptance;14 unresolved unchanged. Cppcheck2.18.0 only tiny ASCII C++ nullptr GUI Analyze Files/XML save/explicit new-process Open XML and finite local market lifecycle. candidate-v58/root1/role67;412 fullCore/124 fullStore. Strict SSH stdin rolling-current-state-cppcheck-20261012.py. Preserve frozen/trust/history/private checkpoints and actual third-GUI registry changes. Independent review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 51,
+    "acceptedLocalMarket": 52,
     "explicitlyBlockedCandidates": 14,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -759,25 +768,25 @@
     "pendingCandidates": 14
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v57/tuf",
-    "metadataVersion": 66,
-    "catalogueEntries": 53,
-    "acceptedDistinctWindowsApps": 51,
+    "signedCatalogue": "catalogue/candidate-v58/tuf",
+    "metadataVersion": 67,
+    "catalogueEntries": 54,
+    "acceptedDistinctWindowsApps": 52,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-rapidcrc-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-cppcheck-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-doxygen-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-rapidcrc-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-rapidcrc-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-cppcheck-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-rapidcrc-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-cppcheck-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-copyq-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-rapidcrc.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-rapidcrc-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-cppcheck.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-cppcheck-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

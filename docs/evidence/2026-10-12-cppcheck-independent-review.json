@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "independent FINAL finite evidence review before first stage",
+  "applicationId": "cppcheck",
+  "version": "2.18.0",
+  "completedAtUtc": "2026-10-12T03:16:46.387030+00:00",
+  "baseCommit": "46e7e94510be88c663982ae82ec570a4a108553d",
+  "prospectiveManifestSha256": "572035c53f006f487561a92dfd8eb4a1b2f75aa9594230ebfb8ffcbbb7be820d",
+  "passed": true,
+  "findings": [],
+  "checks": [
+    {
+      "name": "fixed-public-and-history-bytes",
+      "passed": true,
+      "description": "Independently hashed all 100 prospective files, 2595 prior immutable files and 23 original frozen files; branch/HEAD/attributes unchanged and actual index empty."
+    },
+    {
+      "name": "rsa-pss-signatures-and-digest-chain",
+      "passed": true,
+      "description": "Authorized RSA-PSS-SHA256 root 1 and role 67 signatures, thresholds, expiry and timestamp/snapshot/targets raw size/hash/version chain independently verified. All 113 complete cached targets and 63 public files checked; 110 old noncatalogue descriptors and all 53 old catalogue entries preserved exactly."
+    },
+    {
+      "name": "fixed-official-source-and-license",
+      "passed": true,
+      "description": "MSI complete bytes independently hash to the official pinned API size/digest, and fixed tag/commit source archive plus all 13 public original members match raw cached bytes. GPL3-or-later explicit gui/main.cpp verified. Source HTTPS SHA is local; binary correspondence and installed/full bundled licensing remain unverified."
+    },
+    {
+      "name": "independent-cpp-fixtures-and-xml2",
+      "passed": true,
+      "description": "Independently parsed the complete 832/822-byte XML2 reports against exact 109/105-byte ASCII LF fixtures: error nullPointer at line 5/CWE476 for p/q, assignment at line 4 and style constVariablePointer line 4/CWE398. Output/input pins, raw captured fixture bodies, both 103-file maps, native MSI definition and its fixed-Core serde declaration-order digest agree."
+    },
+    {
+      "name": "actual-screenshot-review",
+      "passed": true,
+      "description": "All five actual 1280x720 JPEG bytes/receipts checked and individually visually inspected by reviewer. Analysis and explicit XML reopen screens match the source/report contents; fresh process and rollback identities rely on separate job/lifecycle receipts, not screenshots alone."
+    },
+    {
+      "name": "actual-receipts-and-finite-lifecycle",
+      "passed": true,
+      "description": "Five actual distinct launch events show success, normal exit 0 and wineserver stop. Captured Store update/rollback/restart receipt chain agrees with public copies: CP first 411/123 then exact original rollback 411/124, normal two-service restart 412/124. Fixed data/program/config pins preserved; two same-size registry raw changes and unknown cause retained. Private full CP and private registry raw/diffs were not independently read/replayed."
+    },
+    {
+      "name": "ledger-and-claim-boundaries",
+      "passed": true,
+      "description": "Ledger adds only Cppcheck to the 51 accepted apps, preserves all 14 pending candidates/history and fixtures. Pending original receipt labels, helper byte failure and limited corrected continuation remain additive; broader application, C++, XML, language/input, license, network/unattended and GUI market button claims remain explicitly unaccepted."
+    },
+    {
+      "name": "fresh-strict-ssh-current-check",
+      "passed": true,
+      "description": "Reviewer re-executed current author checker through existing strict SSH stdin helper and saved complete response: verified 412/124, all terminal, root 1/online67, exact original selected and fixed current pins stable. The checker internally compares saved complete CP; this is not independent CP replay and core queries can write existing request scratch."
+    }
+  ],
+  "facts": {
+    "rawByteAudit": {
+      "prospectiveFiles": 100,
+      "previousImmutableFiles": 2595,
+      "originalFrozenFiles": 23,
+      "actualIndexEmpty": true,
+      "attributesUnchanged": true
+    },
+    "tuf": {
+      "rootVersion": 1,
+      "onlineRoleVersions": 67,
+      "actualCompleteTargetStreamsHashed": 113,
+      "publicFiles": 63,
+      "catalogueEntries": 54,
+      "oldNonCatalogueTargetsPreserved": 110,
+      "changedOldTargets": [
+        "catalogue.json"
+      ],
+      "copyqActiveAbsent": true
+    },
+    "source": {
+      "officialInstaller": {
+        "sizeBytes": 23576576,
+        "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638"
+      },
+      "installerOfficialApiSizeAndDigestMatched": true,
+      "fixedSourceArchive": {
+        "sizeBytes": 3931837,
+        "sha256": "8e754b450e37705a2dd6ba277749985c8e0faa3d7086acad10e016f70c331f2b"
+      },
+      "fixedCommit": "bd62c8ca7be207583c60002a5af50e5f1d12660b",
+      "sourceArchiveMembers": 13,
+      "mainLicense": "GPL-3.0-or-later",
+      "publishedSourceDigestVerified": false,
+      "installedMainLicenseComparisonVerified": false,
+      "fullBundleClosureVerified": false,
+      "sourceBinaryCorrespondenceVerified": false,
+      "originalDownloadsReperformed": false
+    },
+    "definitionDigest": {
+      "algorithm": "SHA256 serde_json::to_vec(ApplicationDefinition), Rust struct field order",
+      "fixedCoreCommit": "93650d1404df1c546eb689344e921c95bd041fad",
+      "fixedSourcePins": {
+        "crates/compatforge-service/src/lifecycle.rs": {
+          "sizeBytes": 47804,
+          "sha256": "98483f3b5d2d607425919438d05b363c22b48bae8169efd1b445ce2ba464e236"
+        },
+        "crates/compatforge-service/src/model.rs": {
+          "sizeBytes": 32241,
+          "sha256": "d865a511450d3f5ff57c8bed2d167046a407db80e4685f4eab10b3c40f6d35b8"
+        },
+        "crates/compatforge-domain/src/install.rs": {
+          "sizeBytes": 9516,
+          "sha256": "3db9995988d7eb50a76ef7b1c71efa5336189a36b82f88e95eb3ee69dc5f2e86"
+        }
+      },
+      "preimageBytes": 649,
+      "digest": "sha256:a599d89eaffcba2de12c0f21207b2aabc3a35204025e51a996adeb6a120a3a41"
+    },
+    "finiteAnalysis": {
+      "original": {
+        "input": {
+          "sizeBytes": 109,
+          "sha256": "f20cad492fb445dc4dcc4f312341c5426157630f715a437bee530b3e54937b61"
+        },
+        "xml": {
+          "sizeBytes": 832,
+          "sha256": "714a2cd5516c534d84edc443e9bb739a4df025426f92d87d68d98fbc2f42a3e9"
+        },
+        "independentlyParsedErrors": [
+          {
+            "attributes": {
+              "id": "nullPointer",
+              "severity": "error",
+              "msg": "Null pointer dereference: p",
+              "verbose": "Null pointer dereference: p",
+              "cwe": "476",
+              "file0": "original.cpp"
+            },
+            "locations": [
+              {
+                "file": "original.cpp",
+                "line": "5",
+                "info": "Null pointer dereference"
+              },
+              {
+                "file": "original.cpp",
+                "line": "4",
+                "info": "Assignment &#039;p=nullptr&#039;, assigned value is 0"
+              }
+            ]
+          },
+          {
+            "attributes": {
+              "id": "constVariablePointer",
+              "severity": "style",
+              "msg": "Variable &#039;p&#039; can be declared as pointer to const",
+              "verbose": "Variable &#039;p&#039; can be declared as pointer to const",
+              "cwe": "398",
+              "file0": "original.cpp"
+            },
+            "locations": [
+              {
+                "file": "original.cpp",
+                "line": "4"
+              }
+            ]
+          }
+        ]
+      },
+      "market": {
+        "input": {
+          "sizeBytes": 105,
+          "sha256": "bb047bb402ada42f2c6fa26fca0dd99d0149bf83f9448a51a39dec54a504e90d"
+        },
+        "xml": {
+          "sizeBytes": 822,
+          "sha256": "ccc4afaadf45abb0d6d131427aee5f1c0f9b9a5dd025bafa900a00e93778f412"
+        },
+        "independentlyParsedErrors": [
+          {
+            "attributes": {
+              "id": "nullPointer",
+              "severity": "error",
+              "msg": "Null pointer dereference: q",
+              "verbose": "Null pointer dereference: q",
+              "cwe": "476",
+              "file0": "market.cpp"
+            },
+            "locations": [
+              {
+                "file": "market.cpp",
+                "line": "5",
+                "info": "Null pointer dereference"
+              },
+              {
+                "file": "market.cpp",
+                "line": "4",
+                "info": "Assignment &#039;q=nullptr&#039;, assigned value is 0"
+              }
+            ]
+          },
+          {
+            "attributes": {
+              "id": "constVariablePointer",
+              "severity": "style",
+              "msg": "Variable &#039;q&#039; can be declared as pointer to const",
+              "verbose": "Variable &#039;q&#039; can be declared as pointer to const",
+              "cwe": "398",
+              "file0": "market.cpp"
+            },
+            "locations": [
+              {
+                "file": "market.cpp",
+                "line": "4"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "programPins": {
+      "crossGenerationFilesExactlySame": 103,
+      "mainExe": {
+        "sizeBytes": 5671424,
+        "sha256": "20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e"
+      },
+      "namedLicenseFilesInclude": [
+        "simplecpp-license.txt",
+        "picojson-license.txt",
+        "tinyxml2-license.txt",
+        "GPLv3.txt"
+      ],
+      "fullInstalledLicenseClosureVerified": false
+    },
+    "visualReview": {
+      "actualJpegFiles": 5,
+      "allVisuallyInspectedByReviewer": true,
+      "observations": {
+        "01-original-analysis.jpg": "Cppcheck 2.18.0 window, original.cpp p nullptr line5/CWE476 and pointer-to-const style line4; code preview visible.",
+        "02-original-new-process-open-xml.jpg": "Window names C:/CppcheckTests/original.xml; loaded original.cpp error/style and p code visible.",
+        "03-market-analysis.jpg": "Cppcheck 2.18.0 window, market.cpp q nullptr line5/CWE476 and pointer-to-const style line4; MARKET42 preview visible.",
+        "04-market-new-process-open-xml.jpg": "Window names C:/CppcheckTests/market.xml; loaded market.cpp q error/style and code visible.",
+        "05-rollback-original-open-xml.jpg": "Window names C:/CppcheckTests/original.xml; loaded p error/style and ORIGINAL42 preview visible."
+      },
+      "newProcessIdentityEstablishedBySeparateJobReceipts": true,
+      "guiVersionMeasuredFromWindow": "2.18.0",
+      "guiAboutVersionMeasured": false,
+      "guiRepeatedByReviewer": false
+    },
+    "formalLifecycle": {
+      "jobs": [
+        "job-1791772773371-2",
+        "job-1791773050590-3",
+        "job-1791773393485-5",
+        "job-1791773552023-6",
+        "job-1791773680619-7"
+      ],
+      "exitCodes": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wineserverStopEventsVerified": true,
+      "storeUpdate": {
+        "action": "update",
+        "appId": "cppcheck",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "3f2f19b7-9466-4134-8d03-055b372b9cdb",
+        "state": "succeeded"
+      },
+      "storeRollback": {
+        "action": "rollback",
+        "appId": "cppcheck",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "5105c3dd-d137-45c4-9288-065b2b40fc1d",
+        "state": "succeeded"
+      },
+      "beforeRollbackCounts": [
+        411,
+        123
+      ],
+      "afterRollbackCounts": [
+        411,
+        124
+      ],
+      "normalRestartCounts": [
+        412,
+        124
+      ],
+      "exactOriginalGeneration": "gen-job-1791772486864-1",
+      "privateCheckpointSha256": "befc33a3420cba5fabd9d5800202b15168745f01d49f33a1a30899ee21ea6584",
+      "privateCompleteCheckpointReplayedIndependently": false
+    },
+    "thirdOriginalRegistryChanges": {
+      "reportedPrivateChangedLineCounts": {
+        "system.reg": 287,
+        "user.reg": 20
+      },
+      "sameSizesDifferentRawHashes": true,
+      "causeAndKeyValueEquivalenceUnestablished": true,
+      "actualRawOrDiffBodiesReadByReviewer": false,
+      "oldInputXmlProgramAndFixedConfigPinsPreserved": true,
+      "actualNewPinsStableAcrossRestart": true
+    },
+    "ledger": {
+      "acceptedDistinctWindowsApplications": 52,
+      "unresolvedCandidatesUnchanged": 14,
+      "old51AcceptanceRecordsAndAllPendingHistoryExactlyPreserved": true,
+      "syntheticFixturesCountedAsApplications": false
+    },
+    "freshCurrentState": {
+      "strictSshStdinAuthorCheckerReexecuted": true,
+      "hostHelperExpectedGuestFile": false,
+      "responseFile": "L:\\project\\FOS\\.transfer\\cppcheck-review-current-response-20261012.json",
+      "responsePin": {
+        "sizeBytes": 848,
+        "sha256": "30b7b2225fabb156bb15fb91cbda665c3a8e8e439715c3ceb45b4b429eb2cb11"
+      },
+      "coreJobs": 412,
+      "fullStoreRows": 124,
+      "rootVersion": 1,
+      "onlineRoles": 67,
+      "selectedGeneration": "gen-job-1791772486864-1",
+      "coreQueryMayWriteExistingRequestScratch": true,
+      "privateCheckpointIndependentlyReplayed": false
+    },
+    "assertionsExecuted": 4082
+  },
+  "scope": {
+    "independentActionsActuallyRun": [
+      "Streamed and hashed prospective/frozen/original/public complete target cache files; verified RSA-PSS authorized signatures and raw digest chain.",
+      "Read pinned official API and local source archive, independently parsed two complete XML2 reports against ASCII C++ fixtures.",
+      "Individually visually inspected all five actual JPEG screenshots without repeating GUI.",
+      "Read actual captured launch/Store/rollback/restart receipt copies; compared maps, identifiers, events and finite claim boundaries.",
+      "Re-executed current author read-only checker through existing strict SSH stdin helper and saved full output.",
+      "Inspected actual Git HEAD/branch/change paths and empty index without mutation."
+    ],
+    "notPerformed": [
+      "No GUI, install/update/rollback/service restart or application/config/trust/checkpoint changes by reviewer.",
+      "No private complete checkpoint body or credentials read/copied into reviewer artifacts; no independent complete private checkpoint replay.",
+      "No independent re-reading/recomputing of private registry raw/diff bodies; line counts 287/20 are checked receipt claims and cause remains unknown.",
+      "No first-stage byte audit, git add/renormalize/commit/push performed; actual index was empty at this FINAL review.",
+      "No whole old application filesystem, complete bundled licensing, additional C++ or XML specifications, Chinese path/input, source compile/runtime, networking/background absence, new-machine/migration/cross-version/unattended or GUI Store button acceptance.",
+      "No fresh upstream download, signature trust, MSI table re-extraction or source/binary correspondence replay."
+    ],
+    "queryMayWriteExistingRequestScratch": true,
+    "checkpointAuthorHelperScope": "Fresh author checker checks seven captured categories jobs/complete rows/market/trustDocuments/configs/generations/serviceGuards against the saved post-restart complete checkpoint and fixed pins; the reviewer did not independently replay private checkpoint bodies.",
+    "configurationCoverage": "Limited explicit fixed configuration pin is the installed Start Menu shortcut plus separately fixed registry/data/program pins; does not mean all preferences or files were traversed.",
+    "processAndActionEvidence": "Screenshots establish rendered finite results. Fresh process identities, normal CtrlQ action and service lifecycle are corroborated by author action receipts/events, not independently repeated by reviewer.",
+    "reviewerHelperFailurePreserved": {
+      "file": "cppcheck-independent-review-helper-20261012.py",
+      "reason": "License phrase normalization retained comment asterisks; assertion stopped after host byte/signature checks. Source GPL3-or-later unchanged; v2 strips comment prefixes for the exact phrase, with no project/index/guest changes."
+    },
+    "reviewerSecondHelperFailurePreserved": {
+      "file": "cppcheck-independent-review-helper-v2-20261012.py",
+      "reason": "Extra reviewer check incorrectly used TUF canonical JSON for a Core definition digest. Stopped before final file; fixed Core commit 93650d defines SHA256 serde_json::to_vec struct order. New v3 reconstructs that actual 649-byte order and matches a599d89e, with old failed helper preserved."
+    },
+    "reviewerThirdHelperFailurePreserved": {
+      "file": "cppcheck-independent-review-helper-v3-20261012.py",
+      "reason": "Reviewer incorrectly expected storeJob.id in submission receipt; actual submission returns storeJob.jobId. KeyError stopped before final result. New v4 uses observed jobId and preserves old helper, with no project/index/guest changes."
+    },
+    "truncatedToolOutputNotCountedAsVerification": "An early bounded shell read of fixedSource and full GUI receipt summaries produced truncated output; all checks used complete file parsing in this independent helper instead."
+  }
+}

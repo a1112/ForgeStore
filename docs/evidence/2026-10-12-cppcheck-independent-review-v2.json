@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "cppcheck",
+  "version": "2.18.0",
+  "phase": "FINAL-incremental-review-after-first-index-byte-failure-before-renormalization-and-second-stage",
+  "completedAtUtc": "2026-10-12T03:23:17.989819+00:00",
+  "baseCommit": "46e7e94510be88c663982ae82ec570a4a108553d",
+  "prospectiveManifestSha256": "c82e8aa62e6b54aba223b4a6001ef414c0b701635efc06847a6eda8a32bfe8bb",
+  "passed": true,
+  "findings": [],
+  "checks": [
+    {
+      "name": "incremental-disk-and-history-byte-audit",
+      "passed": true,
+      "description": "All 104 V2 prospective pins, 2595 old immutable and 23 original frozen bytes independently checked. All 2696 first-freeze files except authorized attributes remain exact, and all first 100 prospective descriptors plus original FINAL review/report/failure-phase bytes are preserved."
+    },
+    {
+      "name": "complete-actual-first-index-and-two-byte-failures",
+      "passed": true,
+      "description": "Independently read every actual index path and complete unique Git blob with cat-file batch, matching all 3938 saved hashes. Only the two XML index blobs differ from 2697 first-freeze bytes, exactly 13 CRLF-to-LF substitutions each. All other 2695 first-freeze index files match. First stage stopped before formal diff check or commit; later diagnostic diff failed and is not acceptance."
+    },
+    {
+      "name": "five-literal-rules-and-accurate-stage-scope",
+      "passed": true,
+      "description": "Exactly five literal path rules append to unchanged old attributes and resolve as intended in Git: four raw CRLF XML/signed JSON paths use -text/cr-at-eol, only the fixed manual has -blank-at-eol. All 173 saved diagnostic lines checked against actual first index bytes. Correction truthfully preserves first failure and says renormalization/second stage/index/commit/push still pending."
+    }
+  ],
+  "facts": {
+    "byteAudit": {
+      "prospectiveFiles": 104,
+      "oldImmutableFiles": 2595,
+      "originalFrozenFiles": 23,
+      "firstProspectiveFilesPreserved": 100,
+      "firstFreezeFiles": 2697,
+      "firstFreezeFilesExceptAuthorizedAttributesUnchanged": 2696,
+      "firstFinalReviewRawPreserved": true,
+      "onlyFourAddedPaths": [
+        ".gitattributes",
+        "docs/evidence/2026-10-12-cppcheck-first-stage-failure.json",
+        "docs/evidence/2026-10-12-cppcheck-git-stage-correction-v2.json",
+        "docs/evidence/2026-10-12-cppcheck-independent-review.json"
+      ]
+    },
+    "firstActualIndex": {
+      "pathsIndependentlyHashed": 3938,
+      "uniqueBlobStreamsHashed": 2101,
+      "savedAndFreshActualIndexMappingExactlySame": true,
+      "onlyTwoCrlfToLfMismatches": {
+        "docs/evidence/cppcheck-20261012/market/market.xml": {
+          "expectedDiskSha256": "ccc4afaadf45abb0d6d131427aee5f1c0f9b9a5dd025bafa900a00e93778f412",
+          "actualIndexSha256": "40acccf2d75e55d70d865a681b25149517174ab646b3162e2b9bbaf7a6f75297",
+          "diskSizeBytes": 822,
+          "indexSizeBytes": 809,
+          "exactDifferenceIsCrlfToLf": true
+        },
+        "docs/evidence/cppcheck-20261012/original/original.xml": {
+          "expectedDiskSha256": "714a2cd5516c534d84edc443e9bb739a4df025426f92d87d68d98fbc2f42a3e9",
+          "actualIndexSha256": "310fc77a7a06c9fef79b217915e09a5eaa0d4df647ad5249aca31b39dbe2405c",
+          "diskSizeBytes": 832,
+          "indexSizeBytes": 819,
+          "exactDifferenceIsCrlfToLf": true
+        }
+      },
+      "allOtherFirstFreezeIndexBytesMatch": 2695,
+      "indexStillFirstFailedStage": true,
+      "formalDiffCheckNotReached": true,
+      "subsequentDiffWasOnlyReadOnlyDiagnosticAndFailed": true,
+      "commitExecuted": false,
+      "renormalizationExecuted": false
+    },
+    "preciseAttributeRules": {
+      "rules": {
+        "catalogue/candidate-v58/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "-text whitespace=cr-at-eol",
+        "catalogue/candidate-v58/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "-text whitespace=cr-at-eol",
+        "docs/evidence/cppcheck-20261012/market/market.xml": "-text whitespace=cr-at-eol",
+        "docs/evidence/cppcheck-20261012/original/original.xml": "-text whitespace=cr-at-eol",
+        "docs/evidence/cppcheck-20261012/source/man/manual.md": "-text whitespace=cr-at-eol,-blank-at-eol"
+      },
+      "literalPaths": 5,
+      "allOldAttributeBytesExactPrefix": true,
+      "actualGitWorkingTreeAttributeResolution": {
+        "catalogue/candidate-v58/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+          "text": "unset",
+          "whitespace": "cr-at-eol"
+        },
+        "catalogue/candidate-v58/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+          "text": "unset",
+          "whitespace": "cr-at-eol"
+        },
+        "docs/evidence/cppcheck-20261012/market/market.xml": {
+          "text": "unset",
+          "whitespace": "cr-at-eol"
+        },
+        "docs/evidence/cppcheck-20261012/original/original.xml": {
+          "text": "unset",
+          "whitespace": "cr-at-eol"
+        },
+        "docs/evidence/cppcheck-20261012/source/man/manual.md": {
+          "text": "unset",
+          "whitespace": "cr-at-eol,-blank-at-eol"
+        }
+      },
+      "savedReadOnlyDiagnosticCounts": {
+        "catalogue/candidate-v58/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": 59,
+        "catalogue/candidate-v58/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": 84,
+        "docs/evidence/cppcheck-20261012/source/man/manual.md": 30
+      },
+      "all173SavedDiagnosticLinesCheckedAgainstActualIndexBytes": true,
+      "signedTargetRulesOnlyCrAtEol": true,
+      "manualRuleAllowsOnlyObservedTrailingWhitespace": true,
+      "xmlRulesPreventFutureIndexNormalization": true,
+      "noBroadGlobalOrGlobExceptions": true,
+      "correctedIndexByteAuditAndFormalDiffCheckStillPending": true
+    }
+  },
+  "assertionsExecuted": 18502,
+  "originalFinalReview": {
+    "file": "cppcheck-independent-review-20261012.json",
+    "sha256": "51c38e3003c35bee81c99237af39ddd3f8c004f3f421c3a9a268efc5b54f9c29"
+  },
+  "firstFailureReceiptSha256": "91d92bd2d3111cb153832461adcb55d38f9b6ae8f20f3ab889013140b7446974",
+  "firstIndexPinsSha256": "3ff0ce72268eb2daed7949cc193e21a83a45a5e658c41ee4ad7215d33682dca0",
+  "scope": {
+    "reviewerActions": "Host read-only JSON/file/Git inspection; own exclusive review/helper files only in .transfer. No project/index/guest changes.",
+    "firstActualStagePassed": false,
+    "firstFormalDiffCheckReached": false,
+    "firstReadOnlyDiagnosticDiffPassed": false,
+    "renormalizationExecuted": false,
+    "secondActualStageOrCorrectedIndexAuditPerformed": false,
+    "commitPushPerformed": false,
+    "actualFirstIndex3938PathsIndependentlyReadAndHashed": true,
+    "runtimeAndSignaturesFromCompletedFirstFinalReview": "Original V1 independently verified root1/role67/113 targets/63 public files, original/market XML and 5 real JPEGs, fresh strict SSH current 412/124. All those fixed public evidence bytes remain held; not re-executed as V2.",
+    "noGuiServicesPrivateCheckpointOrUnrelatedOldFilesystemTestsRepeated": true,
+    "privateCheckpointIndependentReplayPerformed": false,
+    "firstReviewReportFailureAndOriginalEvidenceRawBytesPreserved": true,
+    "limits": "Passing this incremental review verifies the proposed precise attributes and honest failed-stage evidence. It does not make the first index byte mismatches pass or claim a future repaired index, formal diff check, commit or push succeeded."
+  },
+  "reviewPreparationNote": "Initial inspection printed a direct saved 3938-path map and long diagnostic string, causing tool truncation; these outputs were not evidence verification. Complete JSON and actual Git blobs were independently consumed with bounded output in this helper.",
+  "assessment": "Ready for the separately controlled renormalization of the two exact XML paths and full fresh second-stage index/commit byte audit."
+}

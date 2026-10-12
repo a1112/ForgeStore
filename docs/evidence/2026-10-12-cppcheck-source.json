@@ -1,0 +1,998 @@
+{
+  "applicationId": "cppcheck",
+  "version": "2.18.0",
+  "officialHomepage": "https://cppcheck.sourceforge.io/",
+  "fixedSource": {
+    "version": "2.18.0",
+    "officialReleaseApiUrl": "https://api.github.com/repos/cppcheck-opensource/cppcheck/releases/tags/2.18.0",
+    "releaseApiSha256": "c74c4e8cb5677d9dae726787bec9bb7bce20b8fa6a4757a41312eeaf98a559c2",
+    "installer": {
+      "file": "cppcheck-2.18.0-x64-Setup.msi",
+      "requestedUrl": "https://github.com/cppcheck-opensource/cppcheck/releases/download/2.18.0/cppcheck-2.18.0-x64-Setup.msi",
+      "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/143131/3b08bff8-f88e-4240-9253-d15c8decfc4a",
+      "status": 200,
+      "sizeBytes": 23576576,
+      "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638"
+    },
+    "upstreamInstallerSizeMatched": true,
+    "upstreamInstallerDigest": "sha256:651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638",
+    "upstreamInstallerDigestMatched": true,
+    "fixedTagCommit": "bd62c8ca7be207583c60002a5af50e5f1d12660b",
+    "tagLsRemoteSha256": "caaade99a8bf4e54105645411785b73192645f23aa158ed88c74e07c43af1fc4",
+    "source": {
+      "file": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b.tar.gz",
+      "requestedUrl": "https://codeload.github.com/cppcheck-opensource/cppcheck/tar.gz/bd62c8ca7be207583c60002a5af50e5f1d12660b",
+      "finalUrlWithoutQuery": "https://codeload.github.com/cppcheck-opensource/cppcheck/tar.gz/bd62c8ca7be207583c60002a5af50e5f1d12660b",
+      "status": 200,
+      "sizeBytes": 3931837,
+      "sha256": "8e754b450e37705a2dd6ba277749985c8e0faa3d7086acad10e016f70c331f2b"
+    },
+    "sourceMembers": {
+      "AUTHORS": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/AUTHORS",
+        "sizeBytes": 6546,
+        "sha256": "10681551f6ff745b3d0a027bf86c754a970dff94967f13a928084667ced48ccf"
+      },
+      "CMakeLists.txt": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/CMakeLists.txt",
+        "sizeBytes": 4498,
+        "sha256": "0787adcb133434d6b716b4c440b66f322ac03916a715c629ee0098e93e988a45"
+      },
+      "COPYING": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/COPYING",
+        "sizeBytes": 35147,
+        "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+      },
+      "gui/checkthread.cpp": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/checkthread.cpp",
+        "sizeBytes": 17573,
+        "sha256": "0ed4dfa9bda35886edca828d116e01ab716eb37604413637aaf94761d8637123"
+      },
+      "gui/erroritem.cpp": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/erroritem.cpp",
+        "sizeBytes": 3147,
+        "sha256": "0ad25a4efad1584fbd3578b4e0b42e4e06d3f893fb4405bc3f2c5af3120ea511"
+      },
+      "gui/main.cpp": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/main.cpp",
+        "sizeBytes": 4671,
+        "sha256": "2ee267e329f4278008551d2be83f20532d0574101cf3fba87768be3dd64b52b5"
+      },
+      "gui/mainwindow.cpp": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/mainwindow.cpp",
+        "sizeBytes": 92220,
+        "sha256": "e67b4dd694313a4895d92c7c2e37a1cd78193473dc3189537a4cdbe93a87a3fc"
+      },
+      "gui/mainwindow.ui": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/mainwindow.ui",
+        "sizeBytes": 29086,
+        "sha256": "4508845e371ffb7dd6dcc9f5f0bf8e4d1bd0b1c5dbf753fdec84ca9b6d1bd2af"
+      },
+      "gui/resultsview.cpp": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/resultsview.cpp",
+        "sizeBytes": 17871,
+        "sha256": "7b0ee59ea7ffaeff62e1e7e3949b9ff14120ef93bfe55662b18feb501df1f9c1"
+      },
+      "gui/xmlreportv2.cpp": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/xmlreportv2.cpp",
+        "sizeBytes": 11599,
+        "sha256": "29fcddcbaa8a1a82f45e2e0ac7ea9792777664f80a71ce2281c487e3051b6861"
+      },
+      "gui/xmlreportv2.h": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/gui/xmlreportv2.h",
+        "sizeBytes": 2481,
+        "sha256": "16997daa68f7f93de36bf972073b48cd55856517be17cfe74bf9d5c4edcf9b51"
+      },
+      "lib/checknullpointer.cpp": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/lib/checknullpointer.cpp",
+        "sizeBytes": 30224,
+        "sha256": "4a274908d7780da174120f5e587c0e524378ccac635ce17f033f8122bef937ea"
+      },
+      "man/manual.md": {
+        "archiveMember": "cppcheck-bd62c8ca7be207583c60002a5af50e5f1d12660b/man/manual.md",
+        "sizeBytes": 38629,
+        "sha256": "7452fb2ed9824be2efea6a54ca1a3a95f8be721f9c91b6073d70b12ba8d7819d"
+      }
+    },
+    "msiInspection": {
+      "properties": [
+        [
+          "DiskPrompt",
+          "Cppcheck installation [1]"
+        ],
+        [
+          "UpgradeCode",
+          "{7E94124C-1CD1-433F-9423-4614E52300DD}"
+        ],
+        [
+          "WixUIRMOption",
+          "UseRM"
+        ],
+        [
+          "ALLUSERS",
+          "1"
+        ],
+        [
+          "INSTALLLEVEL",
+          "1"
+        ],
+        [
+          "WIXUI_INSTALLDIR",
+          "INSTALLDIR"
+        ],
+        [
+          "DefaultUIFont",
+          "WixUI_Font_Normal"
+        ],
+        [
+          "WixUI_Mode",
+          "FeatureTree"
+        ],
+        [
+          "ARPPRODUCTICON",
+          "cppcheckgui.exe"
+        ],
+        [
+          "Manufacturer",
+          "The Cppcheck team"
+        ],
+        [
+          "ProductCode",
+          "{8FFFFDF8-01C2-489B-A7E7-B9ABAF394C70}"
+        ],
+        [
+          "ProductLanguage",
+          "1033"
+        ],
+        [
+          "ProductName",
+          "Cppcheck x64 2.18.0.0"
+        ],
+        [
+          "ProductVersion",
+          "2.18.0.0"
+        ],
+        [
+          "ErrorDialog",
+          "ErrorDlg"
+        ],
+        [
+          "SecureCustomProperties",
+          "WIX_DOWNGRADE_DETECTED;WIX_UPGRADE_DETECTED"
+        ],
+        [
+          "DirectoryTable100_amd64.DFEFC2FE_EEE6_424C_841B_D4E66F0C84A3",
+          "DirectoryTable"
+        ]
+      ],
+      "directories": [
+        [
+          "INSTALLDIR",
+          "ProgramFiles64Folder",
+          "Cppcheck"
+        ],
+        [
+          "QtPlatformsFolder",
+          "INSTALLDIR",
+          "erllo7by|platforms"
+        ],
+        [
+          "QtStylesFolder",
+          "INSTALLDIR",
+          "styles"
+        ],
+        [
+          "TranslationsFolder",
+          "INSTALLDIR",
+          "lang"
+        ],
+        [
+          "CfgsFolder",
+          "INSTALLDIR",
+          "cfg"
+        ],
+        [
+          "PtfsFolder",
+          "INSTALLDIR",
+          "erllo7by|platforms"
+        ],
+        [
+          "AddonsFolder",
+          "INSTALLDIR",
+          "addons"
+        ],
+        [
+          "ProgramMenuDir",
+          "ProgramMenuFolder",
+          "vemujbej|Cppcheck x64 2.18.0.0"
+        ],
+        [
+          "System32",
+          "TARGETDIR",
+          "."
+        ],
+        [
+          "TARGETDIR",
+          "",
+          "SourceDir"
+        ],
+        [
+          "ProgramFiles64Folder",
+          "TARGETDIR",
+          "PFiles"
+        ],
+        [
+          "ProgramMenuFolder",
+          "TARGETDIR",
+          "Programs"
+        ],
+        [
+          "System64Folder.DFEFC2FE_EEE6_424C_841B_D4E66F0C84A3",
+          "ProgramFiles64Folder",
+          "System64"
+        ]
+      ],
+      "files": [
+        [
+          "-85e4qik.dll|cppcheck-core.dll",
+          "4910592",
+          "2.18.0.0"
+        ],
+        [
+          "cppcheck.exe",
+          "267264",
+          "2.18.0.0"
+        ],
+        [
+          "ypd5h3wn.exe|cppcheckgui.exe",
+          "5671424",
+          "2.18.0.0"
+        ],
+        [
+          "qwindows.dll",
+          "922760",
+          "6.9.1.0"
+        ],
+        [
+          "5nlbz9ht.dll|qmodernwindowsstyle.dll",
+          "218248",
+          "6.9.1.0"
+        ],
+        [
+          "m2qajepb.qm|cppcheck_de.qm",
+          "52629",
+          ""
+        ],
+        [
+          "std.cfg",
+          "299323",
+          ""
+        ],
+        [
+          "avr.cfg",
+          "11459",
+          ""
+        ],
+        [
+          "rw_ge7ik.xml|aix_ppc64.xml",
+          "406",
+          ""
+        ],
+        [
+          "__init__.py",
+          "0",
+          ""
+        ],
+        [
+          "authors.txt",
+          "6982",
+          ""
+        ],
+        [
+          "x27dcqoz.qhc|online-help.qhc",
+          "94208",
+          ""
+        ],
+        [
+          "zlankzqk.qch|online-help.qch",
+          "438272",
+          ""
+        ],
+        [
+          "Qt6Core.dll",
+          "10007688",
+          "6.9.1.0"
+        ],
+        [
+          "Qt6Gui.dll",
+          "9469576",
+          "6.9.1.0"
+        ],
+        [
+          "Qt6Help.dll",
+          "593032",
+          "6.9.1.0"
+        ],
+        [
+          "Qt6Sql.dll",
+          "309384",
+          "6.9.1.0"
+        ],
+        [
+          "isz-uibh.dll|Qt6Widgets.dll",
+          "6527624",
+          "6.9.1.0"
+        ],
+        [
+          "kiozrme6.dll|Qt6PrintSupport.dll",
+          "404104",
+          "6.9.1.0"
+        ],
+        [
+          "qkksgxlr.dll|Qt6Charts.dll",
+          "1773536",
+          "6.9.1.0"
+        ],
+        [
+          "l3dowrh4.dll|Qt6Network.dll",
+          "1733768",
+          "6.9.1.0"
+        ],
+        [
+          "tr85bg_c.dll|Qt6OpenGL.dll",
+          "1972360",
+          "6.9.1.0"
+        ],
+        [
+          "kiliaann.dll|Qt6OpenGLWidgets.dll",
+          "64136",
+          "6.9.1.0"
+        ],
+        [
+          "6zzfq_m-.dll|libcrypto-3-x64.dll",
+          "4549632",
+          "3.0.16.0"
+        ],
+        [
+          "stqftfbu.dll|libssl-3-x64.dll",
+          "776704",
+          "3.0.16.0"
+        ],
+        [
+          "opjbahhq.qm|cppcheck_es.qm",
+          "26396",
+          ""
+        ],
+        [
+          "52vnvunc.qm|cppcheck_fi.qm",
+          "7873",
+          ""
+        ],
+        [
+          "pjlpsmh1.qm|cppcheck_fr.qm",
+          "18226",
+          ""
+        ],
+        [
+          "0v1dzyhb.qm|cppcheck_it.qm",
+          "24961",
+          ""
+        ],
+        [
+          "2raabf-5.qm|cppcheck_ja.qm",
+          "57624",
+          ""
+        ],
+        [
+          "lvbyg2m8.qm|cppcheck_ka.qm",
+          "61566",
+          ""
+        ],
+        [
+          "zay1ilgy.qm|cppcheck_ko.qm",
+          "17725",
+          ""
+        ],
+        [
+          "gfvu4ysz.qm|cppcheck_nl.qm",
+          "23775",
+          ""
+        ],
+        [
+          "sma29nxa.qm|cppcheck_ru.qm",
+          "47082",
+          ""
+        ],
+        [
+          "oyigwlqa.qm|cppcheck_sr.qm",
+          "8225",
+          ""
+        ],
+        [
+          "k5rwgy0t.qm|cppcheck_sv.qm",
+          "41548",
+          ""
+        ],
+        [
+          "xvze2bk3.qm|cppcheck_zh_CN.qm",
+          "43044",
+          ""
+        ],
+        [
+          "ihw5twfr.qm|cppcheck_zh_TW.qm",
+          "26982",
+          ""
+        ],
+        [
+          "posix.cfg",
+          "189720",
+          ""
+        ],
+        [
+          "windows.cfg",
+          "811068",
+          ""
+        ],
+        [
+          "bento4.cfg",
+          "8671",
+          ""
+        ],
+        [
+          "boost.cfg",
+          "49388",
+          ""
+        ],
+        [
+          "bsd.cfg",
+          "15854",
+          ""
+        ],
+        [
+          "cairo.cfg",
+          "3479",
+          ""
+        ],
+        [
+          "p3g-mdvz.cfg|cppcheck-lib.cfg",
+          "2138",
+          ""
+        ],
+        [
+          "cppunit.cfg",
+          "2738",
+          ""
+        ],
+        [
+          "dpdk.cfg",
+          "230",
+          ""
+        ],
+        [
+          "dq2ygnc_.cfg|embedded_sql.cfg",
+          "113",
+          ""
+        ],
+        [
+          "sd7vfbqt.cfg|emscripten.cfg",
+          "3951",
+          ""
+        ],
+        [
+          "ginac.cfg",
+          "415242",
+          ""
+        ],
+        [
+          "gnu.cfg",
+          "51344",
+          ""
+        ],
+        [
+          "h_fs0e56.cfg|googletest.cfg",
+          "7541",
+          ""
+        ],
+        [
+          "gtk.cfg",
+          "724566",
+          ""
+        ],
+        [
+          "icu.cfg",
+          "12909",
+          ""
+        ],
+        [
+          "kde.cfg",
+          "4816",
+          ""
+        ],
+        [
+          "ajl5eudk.cfg|libcerror.cfg",
+          "8714",
+          ""
+        ],
+        [
+          "libcurl.cfg",
+          "15051",
+          ""
+        ],
+        [
+          "7nsbdx8r.cfg|libsigc++.cfg",
+          "2589",
+          ""
+        ],
+        [
+          "lua.cfg",
+          "9777",
+          ""
+        ],
+        [
+          "mfc.cfg",
+          "13464",
+          ""
+        ],
+        [
+          "cqqlhj3z.cfg|microsoft_atl.cfg",
+          "2454",
+          ""
+        ],
+        [
+          "k-wqfuqa.cfg|microsoft_sal.cfg",
+          "27373",
+          ""
+        ],
+        [
+          "wegsjz0e.cfg|microsoft_unittest.cfg",
+          "1360",
+          ""
+        ],
+        [
+          "motif.cfg",
+          "7871",
+          ""
+        ],
+        [
+          "nspr.cfg",
+          "1930",
+          ""
+        ],
+        [
+          "ntl.cfg",
+          "202997",
+          ""
+        ],
+        [
+          "opencv2.cfg",
+          "5400",
+          ""
+        ],
+        [
+          "opengl.cfg",
+          "22660",
+          ""
+        ],
+        [
+          "openmp.cfg",
+          "5010",
+          ""
+        ],
+        [
+          "openssl.cfg",
+          "5055",
+          ""
+        ],
+        [
+          "pcre.cfg",
+          "8655",
+          ""
+        ],
+        [
+          "protobuf.cfg",
+          "454",
+          ""
+        ],
+        [
+          "python.cfg",
+          "20758",
+          ""
+        ],
+        [
+          "qt.cfg",
+          "194061",
+          ""
+        ],
+        [
+          "ruby.cfg",
+          "4375",
+          ""
+        ],
+        [
+          "sdl.cfg",
+          "10939",
+          ""
+        ],
+        [
+          "selinux.cfg",
+          "106185",
+          ""
+        ],
+        [
+          "sfml.cfg",
+          "9529",
+          ""
+        ],
+        [
+          "sqlite3.cfg",
+          "61849",
+          ""
+        ],
+        [
+          "tinyxml2.cfg",
+          "1312",
+          ""
+        ],
+        [
+          "vcl.cfg",
+          "98",
+          ""
+        ],
+        [
+          "vpca6qwe.cfg|wxsqlite3.cfg",
+          "67674",
+          ""
+        ],
+        [
+          "wxsvg.cfg",
+          "611687",
+          ""
+        ],
+        [
+          "nbjr_mpi.cfg|wxwidgets.cfg",
+          "760690",
+          ""
+        ],
+        [
+          "zephyr.cfg",
+          "2856",
+          ""
+        ],
+        [
+          "zlib.cfg",
+          "39953",
+          ""
+        ],
+        [
+          "vlqwkjkz.xml|arm32-wchar_t2.xml",
+          "406",
+          ""
+        ],
+        [
+          "r685hxm3.xml|arm32-wchar_t4.xml",
+          "406",
+          ""
+        ],
+        [
+          "iuezz-wu.xml|arm64-wchar_t2.xml",
+          "406",
+          ""
+        ],
+        [
+          "h_f_lzpr.xml|arm64-wchar_t4.xml",
+          "406",
+          ""
+        ],
+        [
+          "avr8.xml",
+          "406",
+          ""
+        ],
+        [
+          "ubucutjb.xml|elbrus-e1cp.xml",
+          "407",
+          ""
+        ],
+        [
+          "pic8.xml",
+          "406",
+          ""
+        ],
+        [
+          "swrg8_5e.xml|pic8-enhanced.xml",
+          "406",
+          ""
+        ],
+        [
+          "pic16.xml",
+          "406",
+          ""
+        ],
+        [
+          "mips32.xml",
+          "404",
+          ""
+        ],
+        [
+          "cray_sv1.xml",
+          "407",
+          ""
+        ],
+        [
+          "mazsyxii.xml|msp430_eabi_large_datamodel.xml",
+          "404",
+          ""
+        ],
+        [
+          "ltx4mdpd.xml|unix32-unsigned.xml",
+          "407",
+          ""
+        ],
+        [
+          "m_4maaev.xml|unix64-unsigned.xml",
+          "407",
+          ""
+        ],
+        [
+          "cppcheck.py",
+          "1101",
+          ""
+        ],
+        [
+          "fd3mejof.py|cppcheckdata.py",
+          "61927",
+          ""
+        ],
+        [
+          "ubi8wu-g.py|findcasts.py",
+          "871",
+          ""
+        ],
+        [
+          "misc.py",
+          "6228",
+          ""
+        ],
+        [
+          "misra.py",
+          "218925",
+          ""
+        ],
+        [
+          "misra_9.py",
+          "22439",
+          ""
+        ],
+        [
+          "naming.py",
+          "3666",
+          ""
+        ],
+        [
+          "osh6l9qi.jso|namingng.json",
+          "101",
+          ""
+        ],
+        [
+          "4fytwtnp.jso|namingng.config.json",
+          "578",
+          ""
+        ],
+        [
+          "namingng.py",
+          "17105",
+          ""
+        ],
+        [
+          "tahunx3p.jso|ROS_naming.json",
+          "1139",
+          ""
+        ],
+        [
+          "runaddon.py",
+          "365",
+          ""
+        ],
+        [
+          "aqc-ekyz.py|threadsafety.py",
+          "7989",
+          ""
+        ],
+        [
+          "y2038.py",
+          "6906",
+          ""
+        ],
+        [
+          "GPLv3.txt",
+          "33039",
+          ""
+        ],
+        [
+          "aa8ozvea.txt|picojson-license.txt",
+          "1361",
+          ""
+        ],
+        [
+          "x2xwudfr.txt|simplecpp-license.txt",
+          "681",
+          ""
+        ],
+        [
+          "3gh1p_vn.txt|tinyxml2-license.txt",
+          "826",
+          ""
+        ],
+        [
+          "be9mi6by.dll|vcruntime140.dll",
+          "124544",
+          "14.44.35211.0"
+        ],
+        [
+          "nsyvuegq.dll|vcruntime140_threads.dll",
+          "38528",
+          "14.44.35211.0"
+        ],
+        [
+          "ts3_tpvm.dll|vcruntime140_1.dll",
+          "49792",
+          "14.44.35211.0"
+        ],
+        [
+          "msvcp140.dll",
+          "557728",
+          "14.44.35211.0"
+        ],
+        [
+          "dnbfyxv3.dll|msvcp140_1.dll",
+          "35952",
+          "14.44.35211.0"
+        ],
+        [
+          "3eydptme.dll|msvcp140_2.dll",
+          "280200",
+          "14.44.35211.0"
+        ],
+        [
+          "snqeueha.dll|msvcp140_atomic_wait.dll",
+          "50304",
+          "14.44.35211.0"
+        ],
+        [
+          "bsr0khna.dll|msvcp140_codecvt_ids.dll",
+          "31872",
+          "14.44.35211.0"
+        ],
+        [
+          "z2yaprdo.dll|concrt140.dll",
+          "324208",
+          "14.44.35211.0"
+        ],
+        [
+          "f9kundv5.dll|vccorlib140.dll",
+          "352384",
+          "14.44.35211.0"
+        ],
+        [
+          "-bjy8rjk.dll|vcruntime140.dll",
+          "199200",
+          "14.44.35211.0"
+        ],
+        [
+          "s-sjmuxp.dll|vcruntime140_1.dll",
+          "53320",
+          "14.44.35211.0"
+        ],
+        [
+          "w4oozm4n.dll|vcruntime140_threads.dll",
+          "63016",
+          "14.44.35211.0"
+        ],
+        [
+          "msvcp140.dll",
+          "1372216",
+          "14.44.35211.0"
+        ],
+        [
+          "tv3kq7nv.dll|msvcp140_1.dll",
+          "50744",
+          "14.44.35211.0"
+        ],
+        [
+          "6rkgwcs-.dll|msvcp140_2.dll",
+          "520248",
+          "14.44.35211.0"
+        ],
+        [
+          "bx0-wkqg.dll|msvcp140_atomic_wait.dll",
+          "86048",
+          "14.44.35211.0"
+        ],
+        [
+          "qmjx6pur.dll|msvcp140_codecvt_ids.dll",
+          "41520",
+          "14.44.35211.0"
+        ],
+        [
+          "fcephmvt.dll|concrt140.dll",
+          "722488",
+          "14.44.35211.0"
+        ],
+        [
+          "yids-n-s.dll|vccorlib140.dll",
+          "888352",
+          "14.44.35211.0"
+        ]
+      ],
+      "features": [
+        [
+          "CppcheckCore",
+          "Cppcheck-Core",
+          "1"
+        ],
+        [
+          "Complete",
+          "Cppcheck x64 2.18.0.0",
+          "1"
+        ],
+        [
+          "CLI",
+          "Command line interface",
+          "1"
+        ],
+        [
+          "Translations",
+          "GUI Translations",
+          "1"
+        ],
+        [
+          "GUI",
+          "Graphical interface",
+          "1"
+        ],
+        [
+          "ConfigFiles",
+          "Additional configurations",
+          "1"
+        ],
+        [
+          "PlatformFiles",
+          "Additional platforms",
+          "1"
+        ],
+        [
+          "PythonAddons",
+          "Python addons",
+          "2"
+        ],
+        [
+          "CRT",
+          "Microsoft Visual C++ 2015 Runtime Components",
+          "1"
+        ]
+      ]
+    },
+    "upstreamSourceDigestVerified": false,
+    "sourceBinaryCorrespondenceVerified": false,
+    "readAt": "2026-10-12T02:30:20.082114+00:00"
+  },
+  "mainLicense": "GPL-3.0-or-later",
+  "mainLicenseBasis": "Fixed gui/main.cpp explicitly GPL version3 or any later version. COPYING contains GPL3 text.",
+  "installedLicenseNamedFiles": [
+    "simplecpp-license.txt",
+    "picojson-license.txt",
+    "tinyxml2-license.txt"
+  ],
+  "installedMainLicenseComparisonVerified": false,
+  "completeBundledLicenseClosureVerified": false,
+  "upstreamPublishedInstallerDigestVerified": true,
+  "upstreamPublishedSourceDigestVerified": false,
+  "sourceBinaryCorrespondenceVerified": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "latestVersionClaimed": false,
+  "installerNativeManagedMsi": true,
+  "installerProperties": {},
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false,
+  "signedDownloadRedirectQueryIncluded": false
+}

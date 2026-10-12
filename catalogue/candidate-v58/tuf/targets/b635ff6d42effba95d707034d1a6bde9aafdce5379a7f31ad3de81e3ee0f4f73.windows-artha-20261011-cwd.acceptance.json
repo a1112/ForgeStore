@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM, Wine 11.14 win64, native managed launcher cwd v11-r1, existing normal authentication retained.",
+  "applications": [
+    {
+      "id": "artha",
+      "version": "1.0.3.0",
+      "observedGuiVersion": "1.0.3",
+      "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2",
+      "size": 12711596,
+      "generationId": "gen-job-1791694338197-1",
+      "definitionDigest": "sha256:3af1481bccc88f3fb32e2c4aa371bfc7f40394ed2f47629931b3c3383704f8d7",
+      "launcherSha256": "sha256:a033000e7b069d823706a0acd5ae185dadd58866151d1d9d8e9406e2dc8c7f2f",
+      "workingDirectory": "Artha/bin",
+      "installJobId": "job-1791694338197-1",
+      "launchJobId": "job-1791694510665-2",
+      "reopenJobId": "job-1791695018150-3",
+      "guiFileOperation": "passed-limited-English-query-history-export-reopen",
+      "savedOutput": {
+        "file": "output/managed-history.txt",
+        "sizeBytes": 17,
+        "sha256": "2d6ab91c7baecb5e3e34065f13e2ae764c013752d1fd02f1da37a4328bc0d68a",
+        "hex": "68617070790d0a636f6d70757465720d0a"
+      },
+      "explicitFreshProcessHistoryReopenObserved": true,
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "fullThesaurusAcceptance": false,
+      "screenshots": {
+        "01-managed-happy.jpg": {
+          "sizeBytes": 167714,
+          "sha256": "9ab15bac93b1fef4bed7e70d2b286e9165505396d14b4c4175af2952a4cf3f2f"
+        },
+        "02-managed-computer.jpg": {
+          "sizeBytes": 168856,
+          "sha256": "1018dde86c2a2647371715149fc5eda4de74b27f3d5ae96fcea104388d32b0e9"
+        },
+        "03-managed-save-as.jpg": {
+          "sizeBytes": 169081,
+          "sha256": "0fc78abe31f2f4a0d343f88104267487aaedc00b4b4b951608bf1b8120fde883"
+        },
+        "04-managed-save-success.jpg": {
+          "sizeBytes": 172126,
+          "sha256": "55dfe97e25f9573b55d3b8a52b5ad0175db982bf3d56bc6dd43fba1dcbc05bbe"
+        },
+        "05-managed-about.jpg": {
+          "sizeBytes": 186453,
+          "sha256": "9c1556fdffcb4089a2865915d9e43319a27df0dc2e0e4d2a11b83cc6865928d5"
+        },
+        "06-managed-reopen-history.jpg": {
+          "sizeBytes": 135879,
+          "sha256": "2b8fe181ea144dbc100b92c85dea824fe203c88b5427a608a3f4102aa01c7df9"
+        },
+        "07-managed-reopen-computer.jpg": {
+          "sizeBytes": 163217,
+          "sha256": "2edb9aca3f188b8135985616c26c9a65231181ce01546adadcec857873383507"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-artha-source.json",
+    "sha256": "a760c90052cabdf58e0ccbdf246a05979ee669e7ba7757f022f1d4eee83d4819",
+    "historicalStageFlagsPreserved": true,
+    "mainProgramLicense": "GPL-2.0-or-later",
+    "fullComponentLicenseClosureVerified": false
+  },
+  "repairEvidence": {
+    "reference": "2026-10-11-artha-core-working-directory.json",
+    "sha256": "b60147492dea4bdc153d870891eda1b33a3b6223d87d7b3fe3882c26e4ee07ea",
+    "coreCommit": "93650d1404df1c546eb689344e921c95bd041fad",
+    "nativeCoreBinarySha256": "4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818"
+  },
+  "limits": [
+    "Only Artha Windows 1.0.3.0 (GUI 1.0.3) on Wine 11.14 win64, happy/computer English queries, GUI ASCII-path history export and fresh-process history recovery are covered by this frozen original proof.",
+    "Core native workingDirectory=Artha/bin is resolved from the selected frozen generation under prefix/drive_c. No shell wrapper, resource copy or executable patch; global context and old definitions remain unchanged.",
+    "Chinese input/path, detailed relations, spelling, notifications, hotkey integration, large histories and advanced functions are unverified.",
+    "Fixed source main program GPL-2.0-or-later and exact installed COPYING were checked. WordNet data.noun licence header was read; complete GTK/GLib/Cairo/fonts and other bundled licence closure, Authenticode and reproducible build remain unverified.",
+    "Guest online download, new-machine registration, migration and cross-version upgrades are unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal Core/Store restart were pending at this freeze; subsequent evidence recorded separately.",
+    "Same-user concurrent hostile rename is not atomically prevented by the existing path check. Linux real symlink refusal was tested; Windows junction runtime testing is unverified."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

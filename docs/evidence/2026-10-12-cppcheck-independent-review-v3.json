@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "cppcheck",
+  "version": "2.18.0",
+  "phase": "FINAL-minimal-V3-review-before-first-corrected-renormalize-and-stage",
+  "completedAtUtc": "2026-10-12T03:28:47.269516+00:00",
+  "baseCommit": "46e7e94510be88c663982ae82ec570a4a108553d",
+  "prospectiveManifestSha256": "9a5de2285df275d86f54531255f198fe3f28db9b08fe78cbed765e2e091c67c9",
+  "passed": true,
+  "findings": [],
+  "checks": [
+    {
+      "name": "V3-prospective-and-frozen-history",
+      "passed": true,
+      "description": "Independently hashed all 106 prospective pins, old 2595 immutable and 23 original files. All 103 non-attribute V2 pins and 2696 non-attribute first-freeze bytes remain exact; V2 FINAL copied byte-for-byte only after completion. Only suffix correction and copied V2 review are new public files."
+    },
+    {
+      "name": "minimal-attributes-suffix-correction",
+      "passed": true,
+      "description": "Compared the exact private V2 raw attribute backup with current bytes: unchanged 21459-byte original LF prefix; only six CR bytes removed from the added suffix. All five literal rule strings and Git attribute semantics unchanged. Read-only hash-object independently confirms raw/filtered OIDs differed before and match now; no XML/source/signature normalization performed."
+    },
+    {
+      "name": "first-index-unchanged-and-future-stage-pending",
+      "passed": true,
+      "description": "Read and independently hash all 3938 actual index paths again: exact saved first-stage map, original attribute prefix still indexed and the same two XML CRLF-to-LF mismatches still present. No corrected renormalization or stage has occurred; HEAD remains base commit."
+    }
+  ],
+  "facts": {
+    "rawByteAudit": {
+      "prospectiveFiles": 106,
+      "previousImmutableFiles": 2595,
+      "originalFrozenFiles": 23,
+      "V2ProspectiveTotal": 104,
+      "V2NonAttributePinsPreserved": 103,
+      "firstFreezeNonAttributeFilesPreserved": 2696,
+      "V2FinalReviewRawCopiedExact": true,
+      "onlyTwoAdditivePublicFiles": true
+    },
+    "mutableAttributeOnlyCorrection": {
+      "oldPrefixBytes": 21459,
+      "oldPrefixOriginalLFBytesPreserved": true,
+      "V2RawBackupPin": {
+        "sizeBytes": 22055,
+        "sha256": "f66b1ef03ba95b1630ef2fe00ec42cd234cc08704b0445f8fc75ddda10c6ad1d"
+      },
+      "beforeSuffixCrlf": 6,
+      "afterSuffixCrlf": 0,
+      "onlySixSuffixCRBytesRemoved": true,
+      "fiveRuleSemanticsUnchanged": {
+        "catalogue/candidate-v58/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "-text whitespace=cr-at-eol",
+        "catalogue/candidate-v58/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "-text whitespace=cr-at-eol",
+        "docs/evidence/cppcheck-20261012/market/market.xml": "-text whitespace=cr-at-eol",
+        "docs/evidence/cppcheck-20261012/original/original.xml": "-text whitespace=cr-at-eol",
+        "docs/evidence/cppcheck-20261012/source/man/manual.md": "-text whitespace=cr-at-eol,-blank-at-eol"
+      },
+      "currentSha256": "52773276cbe1c72dab7d472de942ad9b5197c27a2235186ce45604cc9c9d6199",
+      "beforeRawGitOid": "c5a247d3e9f4161b0c276a26ad4734d4f1fd1afd",
+      "beforeFilteredGitOid": "5f1d7c3d67e295e786fdd593becea7995dcc7f46",
+      "currentRawAndFilteredGitOid": "5f1d7c3d67e295e786fdd593becea7995dcc7f46",
+      "workingTreeRuleResolutionUnchanged": true,
+      "allOtherV2ProspectiveBytesCount": 103
+    },
+    "actualFirstFailedIndex": {
+      "pathCount": 3938,
+      "uniqueCompleteGitBlobsHashed": 2101,
+      "allHashesEqualOriginalFirstSavedIndex": true,
+      "attributesInIndexStillOriginalPrefix": true,
+      "twoOriginalXmlConversionsStillPresent": true,
+      "V2OrV3RenormalizationOrRestageHasNotRun": true,
+      "correctedIndexByteAuditPassed": false
+    }
+  },
+  "assertionsExecuted": 17980,
+  "originalV2FinalReviewSha256": "ccfad57ef3503767201af51a21fd85d8d08bee2293e3d67f6ab199421b4e9229",
+  "scope": {
+    "hostReadOnlyIncrementalInspectionOnly": true,
+    "projectIndexGuestGuiServicesDataTrustCheckpointsMutatedByReviewer": false,
+    "currentFirstIndex3938PathsIndependentlyHashed": true,
+    "firstFailedStageByteGatePassed": false,
+    "V2StageExecuted": false,
+    "V3RenormalizeOrCorrectedStageExecuted": false,
+    "commitPushPerformed": false,
+    "noUnrelatedGuiServicesPrivateCpOrRuntimeTestsRepeated": true,
+    "runtimeTufXmlScreenshotEvidenceFromCompletedV1AndV2Reviews": "V1 verified root1/role67/113 targets/63 public files, original/market XML and five actual JPEGs plus fresh 412/124; V2 independently verified first3938-index mappings and precise diagnostic rules. Immutable evidence remains raw unchanged; no new guest replay claimed.",
+    "privateFullCheckpointIndependentReplay": false,
+    "firstFailureOriginalReviewsReportsSourcesXmlAndSignedTargetsRetained": true,
+    "configurationCorrectionScope": "Only authorized mutable .gitattributes newly added suffix CRLF converted to LF. All five literal rules are unchanged and no original prefix or immutable evidence is normalized.",
+    "correctionCountInterpretation": "Public allOther104V2ProspectiveBytesPreserved denotes the prior 104-file scope with .gitattributes excluded; the exact independently checked count is 103 unchanged non-attribute files.",
+    "pendingHelperExecution": "cppcheck-renormalize-two-xml-v3-20261012.py was read as a pending helper, not executed; actual first index mapping proves its two-XML changes have not occurred.",
+    "futureAcceptanceBoundary": "This incremental pass confirms suffix correction and preserved failed-stage evidence. It is not a passed corrected stage, index, formal diff check, commit or push."
+  },
+  "assessment": "Ready for separately controlled exact two-XML renormalization followed by actual full stage/index/commit checks."
+}

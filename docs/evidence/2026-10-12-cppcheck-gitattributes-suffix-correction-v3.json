@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "cppcheck",
+  "phase": "mutable-attributes-suffix-normalization-before-first-corrected-stage",
+  "v2ReviewReference": "2026-10-12-cppcheck-independent-review-v2.json",
+  "v2ReviewSha256": "ccfad57ef3503767201af51a21fd85d8d08bee2293e3d67f6ab199421b4e9229",
+  "v2ProspectiveManifestSha256": "c82e8aa62e6b54aba223b4a6001ef414c0b701635efc06847a6eda8a32bfe8bb",
+  "v2AttributesOriginalBytesPreservedPrivately": true,
+  "v2AttributesSha256": "f66b1ef03ba95b1630ef2fe00ec42cd234cc08704b0445f8fc75ddda10c6ad1d",
+  "v3AttributesSha256": "52773276cbe1c72dab7d472de942ad9b5197c27a2235186ce45604cc9c9d6199",
+  "originalAttributesPrefixBytes": 21459,
+  "originalPrefixExactBytesPreserved": true,
+  "addedSuffixCrlfCountBefore": 6,
+  "addedSuffixCrlfCountAfter": 0,
+  "onlyAddedSuffixCrlfToLfConverted": true,
+  "beforeFilteredAndRawGitBlobOidDiffer": true,
+  "afterFilteredAndRawGitBlobOidEqual": true,
+  "rawGitBlobOidBefore": "c5a247d3e9f4161b0c276a26ad4734d4f1fd1afd",
+  "filteredGitBlobOidBefore": "5f1d7c3d67e295e786fdd593becea7995dcc7f46",
+  "rawAndFilteredGitBlobOidAfter": "5f1d7c3d67e295e786fdd593becea7995dcc7f46",
+  "allFivePreciseRulesSemanticallyUnchanged": true,
+  "allOther104V2ProspectiveBytesPreserved": true,
+  "firstStageFailureReportReviewV2CorrectionAndSignedXmlSourceBytesPreserved": true,
+  "v2StageExecuted": false,
+  "xmlRenormalizeExecutedAtThisFreeze": false,
+  "commitExecuted": false,
+  "guestCoreGuiServiceTufAppDataMutation": false,
+  "limits": [
+    "Mutable .gitattributes correction only; no immutable source, XML or signed target normalization.",
+    "V2 review passed only its proposed-rule and first-index scope; future full stage/index/commit was pending and no second stage failed or ran.",
+    "New V3 prospective and independent review are required before precise two-XML renormalize and real full stage."
+  ]
+}

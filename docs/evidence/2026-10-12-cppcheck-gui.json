@@ -1,0 +1,1496 @@
+{
+  "generation": {
+    "bottleId": "gen-job-1791772486864-1",
+    "createdAtMilliseconds": 1791772486873,
+    "definition": {
+      "bottleId": "gui-cppcheck",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "cppcheck",
+      "installer": {
+        "fileName": "cppcheck-2.18.0-x64-Setup.msi",
+        "msi": {
+          "architecture": "x86_64",
+          "handler": {
+            "action": "install",
+            "kind": "msiexec",
+            "properties": {},
+            "reboot": "suppress",
+            "ui": "none"
+          },
+          "maximumRuntimeMilliseconds": 300000,
+          "sizeBytes": 23576576
+        },
+        "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638"
+      },
+      "launchers": [
+        {
+          "executable": "Program Files/Cppcheck/cppcheckgui.exe",
+          "id": "main",
+          "name": "Cppcheck GUI"
+        }
+      ],
+      "name": "Cppcheck",
+      "publisher": "The Cppcheck team",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-msi"
+      ],
+      "version": "2.18.0"
+    },
+    "definitionDigest": "sha256:a599d89eaffcba2de12c0f21207b2aabc3a35204025e51a996adeb6a120a3a41",
+    "id": "gen-job-1791772486864-1",
+    "launcherDigests": {
+      "main": "sha256:20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791772500305
+  },
+  "definition": {
+    "bottleId": "gui-cppcheck",
+    "category": "development",
+    "compatibilityRating": "unknown",
+    "id": "cppcheck",
+    "installer": {
+      "fileName": "cppcheck-2.18.0-x64-Setup.msi",
+      "msi": {
+        "architecture": "x86_64",
+        "handler": {
+          "action": "install",
+          "kind": "msiexec",
+          "properties": {},
+          "reboot": "suppress",
+          "ui": "none"
+        },
+        "maximumRuntimeMilliseconds": 300000,
+        "sizeBytes": 23576576
+      },
+      "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638"
+    },
+    "launchers": [
+      {
+        "executable": "Program Files/Cppcheck/cppcheckgui.exe",
+        "id": "main",
+        "name": "Cppcheck GUI"
+      }
+    ],
+    "name": "Cppcheck",
+    "publisher": "The Cppcheck team",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-msi"
+    ],
+    "version": "2.18.0"
+  },
+  "installedFiles": {
+    "simplecpp-license.txt": {
+      "sizeBytes": 681,
+      "sha256": "53229821123540acb81493bf57ecd46a11065dbf5e7de838b42086334c7bb255"
+    },
+    "Qt6Sql.dll": {
+      "sizeBytes": 309384,
+      "sha256": "010375e82d3adcdda7499f09382b0d9bebf3248d2f76eb68d3cef031a6534c03"
+    },
+    "picojson-license.txt": {
+      "sizeBytes": 1361,
+      "sha256": "d3146bb6ea30173afff979decf7d84b0b0e54af3bcdc9ff055423b0ba87c79b1"
+    },
+    "cppcheckgui.exe": {
+      "sizeBytes": 5671424,
+      "sha256": "20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e"
+    },
+    "Qt6Network.dll": {
+      "sizeBytes": 1733768,
+      "sha256": "5e066f987a19732cfe46df77731885c634ea5c4e25e115f8de31f7ce18c7b78c"
+    },
+    "Qt6Widgets.dll": {
+      "sizeBytes": 6527624,
+      "sha256": "b323340a5f24ebbe33e521e19eab91ec59cde5bf31a67dc3fc028e6e26aff74b"
+    },
+    "Qt6Help.dll": {
+      "sizeBytes": 593032,
+      "sha256": "20399635cc79eb8516749622810ac1b4c4d5e514968a2638e394e66770602915"
+    },
+    "Qt6Core.dll": {
+      "sizeBytes": 10007688,
+      "sha256": "3997d763e68026cd86f301ebea725fb9cfc48f3cbfdb825dad93dc198462ab74"
+    },
+    "online-help.qhc": {
+      "sizeBytes": 94208,
+      "sha256": "adc9d1b58a459d65181b32988debb4f6f5920695663544a4fbb86ce0bf504c13"
+    },
+    "Qt6Charts.dll": {
+      "sizeBytes": 1773536,
+      "sha256": "0d78558d4e61594f8200f255e0f86a49b416e24ec527edc9f2ba808a21bef4f8"
+    },
+    "online-help.qch": {
+      "sizeBytes": 438272,
+      "sha256": "bc2fc6432ac8ead15247ca71d0b78c40418ada2c48307c94463b96f7362bd3dd"
+    },
+    "libcrypto-3-x64.dll": {
+      "sizeBytes": 4549632,
+      "sha256": "8887b08563a54fef8ededba0c945feb5f057d9c26594f0cb51afc1ebf4cab7cb"
+    },
+    "cppcheck.exe": {
+      "sizeBytes": 267264,
+      "sha256": "a7df6301bf155fbd0f3b1cacc4fb98f37c07ba480557196442bf2cc2ee6e43dc"
+    },
+    "Qt6OpenGLWidgets.dll": {
+      "sizeBytes": 64136,
+      "sha256": "1b3c0cb9623eee69f6aed7d366045985df70bb9caa6abf70e06f444483e5ca90"
+    },
+    "tinyxml2-license.txt": {
+      "sizeBytes": 826,
+      "sha256": "035a1f2fd2f6dba120f3c25cd2d04f9987f32405c847c0cb4859fe33e6148f45"
+    },
+    "Qt6Gui.dll": {
+      "sizeBytes": 9469576,
+      "sha256": "9dae9067dfdab107748649e533bef6f2e8452119936aa68a91e63f1613fbd81f"
+    },
+    "Qt6PrintSupport.dll": {
+      "sizeBytes": 404104,
+      "sha256": "c22d218d56978e7c65bbb2e9df23bbca356b9d60597df9d6e7c848b788a93e70"
+    },
+    "GPLv3.txt": {
+      "sizeBytes": 33039,
+      "sha256": "f371d87603bc6bf210a7d1a5f339ff1ce72154da1cc2858625168455c45618a2"
+    },
+    "Qt6OpenGL.dll": {
+      "sizeBytes": 1972360,
+      "sha256": "9f26dd1abd33360d87fe6b9a5fff63af5424a6f71fa6d5a37025f37393148f43"
+    },
+    "authors.txt": {
+      "sizeBytes": 6982,
+      "sha256": "0726288fd000ef93b53fc2d1afc570d69e179ed3e9b506b4486c4011a3a7ffcb"
+    },
+    "cppcheck-core.dll": {
+      "sizeBytes": 4910592,
+      "sha256": "fa1e275933c756a6ffa6282434bee6d647f31cb547b5e2a788bc40c9cce3c71a"
+    },
+    "libssl-3-x64.dll": {
+      "sizeBytes": 776704,
+      "sha256": "1e30e3711431f11cf890010cfa01d3aeea3e4d3f168a6640facafeeca18c584c"
+    },
+    "styles/qmodernwindowsstyle.dll": {
+      "sizeBytes": 218248,
+      "sha256": "655f4f9afa55897a6df581642852be1931aceb0f587988691dbf340f76cf9485"
+    },
+    "lang/cppcheck_es.qm": {
+      "sizeBytes": 26396,
+      "sha256": "eb9b78b99db6ad3436c6d51ac6664bae103ebc9daa905c9ab395f89dc5c110d8"
+    },
+    "lang/cppcheck_nl.qm": {
+      "sizeBytes": 23775,
+      "sha256": "aa8c7af33ad6fc3611101ae482f36500b1bd73208e3d5f134eee9dcb4c6a63e4"
+    },
+    "lang/cppcheck_de.qm": {
+      "sizeBytes": 52629,
+      "sha256": "068479c4b907147ba8f8734df056ec8b7c3d35a498400d84350b09e5ebe8a835"
+    },
+    "lang/cppcheck_zh_CN.qm": {
+      "sizeBytes": 43044,
+      "sha256": "cdc98c39b4b95a857acd52ad5094891fc995e315065afc6c15aac3fe534b84b9"
+    },
+    "lang/cppcheck_zh_TW.qm": {
+      "sizeBytes": 26982,
+      "sha256": "61e7c7ddd90453f8f7bcbaf25d3eafde06a651aa43e69cafa2e6794be6a5a997"
+    },
+    "lang/cppcheck_fr.qm": {
+      "sizeBytes": 18226,
+      "sha256": "4cc943449895c98ececbbcd145164df52636ef5466f8daefbcc7308328189aa0"
+    },
+    "lang/cppcheck_ja.qm": {
+      "sizeBytes": 57624,
+      "sha256": "4c9ded2102cca3ffeb6bf4ce36aac227f41bd6c20157b2d9dcb0f6a7acdea7b1"
+    },
+    "lang/cppcheck_ru.qm": {
+      "sizeBytes": 47082,
+      "sha256": "a1bf72398a042f87154e30bd6f4104e4777f52edc3ba3c51cb452e416d7df51d"
+    },
+    "lang/cppcheck_ko.qm": {
+      "sizeBytes": 17725,
+      "sha256": "c74bb23235e45387579253df59688079053abd7e6287b630adb1839f000a05e4"
+    },
+    "lang/cppcheck_fi.qm": {
+      "sizeBytes": 7873,
+      "sha256": "05017995dca5f027122be942a1d9babc359a9eecd61da13775b87ff9ee9de61b"
+    },
+    "lang/cppcheck_sv.qm": {
+      "sizeBytes": 41548,
+      "sha256": "c5bfd3e1a2e982c6e6ff4c60d7c11560008a493f9e16cb4625a6f467cb459517"
+    },
+    "lang/cppcheck_sr.qm": {
+      "sizeBytes": 8225,
+      "sha256": "d6a62a96d0916e188fa654ff1715e8bfd92e7f4c246eff0a2292d2308b5a53f4"
+    },
+    "lang/cppcheck_ka.qm": {
+      "sizeBytes": 61566,
+      "sha256": "c5862d16fe358fe56f76822ae29c4558252b09a9f2f5ac30257b3673d3221728"
+    },
+    "lang/cppcheck_it.qm": {
+      "sizeBytes": 24961,
+      "sha256": "8c59db393bae5e7476a6b90cb5ce666779496210f8c90c3c654a50da4931375a"
+    },
+    "platforms/avr8.xml": {
+      "sizeBytes": 406,
+      "sha256": "f88dcafa04b6bbdbadf7fc32b27987b19d014b13191a553b0fc0bf2760a33e61"
+    },
+    "platforms/msp430_eabi_large_datamodel.xml": {
+      "sizeBytes": 404,
+      "sha256": "8e7dc7ccaff3931ac04b00b8816782bb5e3303837e48bdd92ad94a27a695b084"
+    },
+    "platforms/unix32-unsigned.xml": {
+      "sizeBytes": 407,
+      "sha256": "eb3b90fb4f172100cb23fd82227221d9837042faf8772733792848f439a35b8b"
+    },
+    "platforms/arm64-wchar_t4.xml": {
+      "sizeBytes": 406,
+      "sha256": "21b250650cc296afb776ef3a7c2aeb10f852ddffc25016e5ef57f307a85f1e15"
+    },
+    "platforms/qwindows.dll": {
+      "sizeBytes": 922760,
+      "sha256": "60d06a91eeb883cd8df4b7991938d27f19d54437fb762cc8bac1878a1d1884d3"
+    },
+    "platforms/arm32-wchar_t2.xml": {
+      "sizeBytes": 406,
+      "sha256": "e1104bc59c378e19a23da27c6d4a6397656a64d7e0195d2c9020c450e051beb6"
+    },
+    "platforms/arm32-wchar_t4.xml": {
+      "sizeBytes": 406,
+      "sha256": "8a8c530f09f6e33966d149544cfee90bbdbad07ceaef9a744f600db4673493bf"
+    },
+    "platforms/arm64-wchar_t2.xml": {
+      "sizeBytes": 406,
+      "sha256": "ca18e4b384042f606320059772d40d5eb17db2cc9193383653fdc578f3547e04"
+    },
+    "platforms/cray_sv1.xml": {
+      "sizeBytes": 407,
+      "sha256": "20a9fd9388e80b0d509f80faf9b625d661bfda2b8bd4e6ca9a29a94f56c101b9"
+    },
+    "platforms/aix_ppc64.xml": {
+      "sizeBytes": 406,
+      "sha256": "58d95c14c65e8db29c2c27875d05d0140e482486f9c9e16463a1ec1ca262db1b"
+    },
+    "platforms/elbrus-e1cp.xml": {
+      "sizeBytes": 407,
+      "sha256": "0064f878142e2ba01f518ad47d791b280ea96e4af7ccfb6ca59917b4028267ff"
+    },
+    "platforms/pic8.xml": {
+      "sizeBytes": 406,
+      "sha256": "d476da803dd4ea912610a5a4c1fc619a189a1a57991db19a8e996e2fcbef19a2"
+    },
+    "platforms/mips32.xml": {
+      "sizeBytes": 404,
+      "sha256": "65544d2737518ee85a5dae9447871353cc1707374fd49833edc24f145310c0ff"
+    },
+    "platforms/pic8-enhanced.xml": {
+      "sizeBytes": 406,
+      "sha256": "f88dcafa04b6bbdbadf7fc32b27987b19d014b13191a553b0fc0bf2760a33e61"
+    },
+    "platforms/unix64-unsigned.xml": {
+      "sizeBytes": 407,
+      "sha256": "0064f878142e2ba01f518ad47d791b280ea96e4af7ccfb6ca59917b4028267ff"
+    },
+    "platforms/pic16.xml": {
+      "sizeBytes": 406,
+      "sha256": "276ad953c68eef2d23d09e7fc98f6046d0edaf6b94a932c597e26c391801748c"
+    },
+    "cfg/mfc.cfg": {
+      "sizeBytes": 13464,
+      "sha256": "1a4f64da974405401670e7ae36f65c2be0f6d27fa024c0db87ec75359e651238"
+    },
+    "cfg/wxsvg.cfg": {
+      "sizeBytes": 611687,
+      "sha256": "e88df2d8c6167045428a4c943bb8872e1860de3072740d09ef83fb864943ead4"
+    },
+    "cfg/libcerror.cfg": {
+      "sizeBytes": 8714,
+      "sha256": "1441fcf28e2a4f7e5714059303724faa1988f5821ea310280a383a4afadb37e9"
+    },
+    "cfg/openssl.cfg": {
+      "sizeBytes": 5055,
+      "sha256": "751c443c613a2955e2a3b5972ed23c403ab466df07289b95875458f058f5fa70"
+    },
+    "cfg/opengl.cfg": {
+      "sizeBytes": 22660,
+      "sha256": "b00f7fba0f97b71085732b628e56f05dfee331d56c2c804b86a1b900c0210b68"
+    },
+    "cfg/sqlite3.cfg": {
+      "sizeBytes": 61849,
+      "sha256": "16887def0194303c36a44810bbe16fc3703f0043a9bd27d20f00a13568b19d2e"
+    },
+    "cfg/python.cfg": {
+      "sizeBytes": 20758,
+      "sha256": "c20b46fa240f1a08cfb5592ae57e039455fb042cfe0e4793b638d0359f3b619d"
+    },
+    "cfg/kde.cfg": {
+      "sizeBytes": 4816,
+      "sha256": "620bec9e06b7b6d721da3bb37dbaa025d9b19998f257f0a149cdbc6a81df3695"
+    },
+    "cfg/emscripten.cfg": {
+      "sizeBytes": 3951,
+      "sha256": "de26616fb89831a2f91029468f52ea589766bb769710067ca7643e59808c8f37"
+    },
+    "cfg/googletest.cfg": {
+      "sizeBytes": 7541,
+      "sha256": "a9543e82eaf2239bec749e1b6075e7d1749e3102d2ff285307cfec954e64d04f"
+    },
+    "cfg/motif.cfg": {
+      "sizeBytes": 7871,
+      "sha256": "2f2a10eb40be5b37081ae51f0bec3950679222e0f55e7cb5fb59bace60ad3a31"
+    },
+    "cfg/microsoft_sal.cfg": {
+      "sizeBytes": 27373,
+      "sha256": "f421cee3ad370e92f7dcee25ebe410aa72759be5258e712fc01fccfcd0aa1cce"
+    },
+    "cfg/ruby.cfg": {
+      "sizeBytes": 4375,
+      "sha256": "91e5196807f83058e59cb22dc144fe498c299fa12062891ddd42fa2da838685e"
+    },
+    "cfg/posix.cfg": {
+      "sizeBytes": 189720,
+      "sha256": "c9fadd3ce39cecec5336b06d30e2176da39ac34f35e89a36cdbfac87ac61f1ca"
+    },
+    "cfg/gnu.cfg": {
+      "sizeBytes": 51344,
+      "sha256": "8a24ca7e2efe55f89d5e4417109381aa5db75fd4075c5f130844bab6b7d0dbe3"
+    },
+    "cfg/nspr.cfg": {
+      "sizeBytes": 1930,
+      "sha256": "3b16db41d52f13519cf22a4bf7153cd5092a834aa0fa2aa081bd4742235b102b"
+    },
+    "cfg/embedded_sql.cfg": {
+      "sizeBytes": 113,
+      "sha256": "838834007b4190af83b8641929241b8b594f2dbc2ca616dce222922bd034d85c"
+    },
+    "cfg/vcl.cfg": {
+      "sizeBytes": 98,
+      "sha256": "febe60dc28a2ccd16e5cbde544536c3efaa637f529daec77193e26e65ad2d368"
+    },
+    "cfg/selinux.cfg": {
+      "sizeBytes": 106185,
+      "sha256": "7bedebcd286e784476d861295156a05b045c87fb640e0901cb763eb728f3146e"
+    },
+    "cfg/bsd.cfg": {
+      "sizeBytes": 15854,
+      "sha256": "d5557e71cf7bdf8539b00d82984647af01df834d7e89c8374e20054e43582f46"
+    },
+    "cfg/windows.cfg": {
+      "sizeBytes": 811068,
+      "sha256": "6493ea6330e1710fdb227736fa994115938145cb697ad891bc2b87e346885ac4"
+    },
+    "cfg/opencv2.cfg": {
+      "sizeBytes": 5400,
+      "sha256": "9631eef8a564e6a80a005fe1df5f300dc46e796afb1a72636c77c0d73334d9c6"
+    },
+    "cfg/std.cfg": {
+      "sizeBytes": 299323,
+      "sha256": "a93d1ebc1c55f9fa68e96f4d501c5f82912bbdcc1dcc2cba61f3cdbde3d9e720"
+    },
+    "cfg/microsoft_unittest.cfg": {
+      "sizeBytes": 1360,
+      "sha256": "6238ef4005f1c15bf36b17383f8f3c311fdcb86fc795da794c5026a18343d185"
+    },
+    "cfg/tinyxml2.cfg": {
+      "sizeBytes": 1312,
+      "sha256": "d62968eb503b4ee1a9194d1ef27f725b3367ecd5c3b534a40f48e70916c8ef38"
+    },
+    "cfg/zlib.cfg": {
+      "sizeBytes": 39953,
+      "sha256": "4242b98663ce4912e564f5285be5b9d22fe3318dc5c48f6d18a82648e74155e8"
+    },
+    "cfg/wxsqlite3.cfg": {
+      "sizeBytes": 67674,
+      "sha256": "9daa6d90ffd80a6186cb833917dc05b9cb1444d0adc815261ac8e40c4cb485d8"
+    },
+    "cfg/libsigc++.cfg": {
+      "sizeBytes": 2589,
+      "sha256": "82f272db42346a73eaff035f969ab80b2ceda3d118549bf6cfa4453c4808e6eb"
+    },
+    "cfg/bento4.cfg": {
+      "sizeBytes": 8671,
+      "sha256": "944f5b7d2e07e8f245c58f8cc9c48f764c797434b3d0c028720efaffc2ff73cc"
+    },
+    "cfg/sdl.cfg": {
+      "sizeBytes": 10939,
+      "sha256": "9532ac6dc9923b04fdfd7131f1c481bb5f3a44158d1a127f09a3e2c717ef1a34"
+    },
+    "cfg/gtk.cfg": {
+      "sizeBytes": 724566,
+      "sha256": "c93e0b7d89380831a63d36bfebf65badefa75681584e2bf67275955f52df1940"
+    },
+    "cfg/dpdk.cfg": {
+      "sizeBytes": 230,
+      "sha256": "546ae33664968c66606c3b568fb2d535cf47f1076752e6079b5658d6d7f21935"
+    },
+    "cfg/pcre.cfg": {
+      "sizeBytes": 8655,
+      "sha256": "3b0be28f74615f44e6ded52e18f3532cb6fce2da58802899ab08101d457cb4aa"
+    },
+    "cfg/lua.cfg": {
+      "sizeBytes": 9777,
+      "sha256": "171d6a26bccfda2c58fdd2ac130284d8a0b29cb2b5a53e61facfb1a889d8a0f7"
+    },
+    "cfg/ntl.cfg": {
+      "sizeBytes": 202997,
+      "sha256": "164316dd01b8e33b546bbfba04909c93009d9b773825e669e1d2f652795d8c16"
+    },
+    "cfg/ginac.cfg": {
+      "sizeBytes": 415242,
+      "sha256": "28e5519ba7e3465c3bbb133b85268740ae5312cc0a5d937e1e7bce728bdadc20"
+    },
+    "cfg/boost.cfg": {
+      "sizeBytes": 49388,
+      "sha256": "bdb96489a44ed560c6b32388a974b4dc50114393a9652ecc4220df26ea57a9da"
+    },
+    "cfg/cppunit.cfg": {
+      "sizeBytes": 2738,
+      "sha256": "becd7d95730d7b68ebd076d9ed4cb8b6314dd20333afce77cc2c1893849022cc"
+    },
+    "cfg/wxwidgets.cfg": {
+      "sizeBytes": 760690,
+      "sha256": "862995b572546047ebaea2c03ad77e954ee82868d32607d252dbda51e9797d52"
+    },
+    "cfg/microsoft_atl.cfg": {
+      "sizeBytes": 2454,
+      "sha256": "9b3fd863a7e08d8110a5cc8a3ce607fb2983c3927854a278ba5bea40328761bc"
+    },
+    "cfg/avr.cfg": {
+      "sizeBytes": 11459,
+      "sha256": "f1d05805a26e1db0270b583b99b3e79c6cedcf8ae9b9229764a0d112526e3caf"
+    },
+    "cfg/zephyr.cfg": {
+      "sizeBytes": 2856,
+      "sha256": "c25c54ddbf79e0f512d9b2645080bdc33f9a76c3663d29ca0bed84ea36f33fa1"
+    },
+    "cfg/libcurl.cfg": {
+      "sizeBytes": 15051,
+      "sha256": "957d67741a07ad5438e69615a2d206fc6e7e744535ba2c8decffc1c68c781197"
+    },
+    "cfg/protobuf.cfg": {
+      "sizeBytes": 454,
+      "sha256": "ab57f14757af72ec4ca5c65daacbecb86ddf9e02d37db6f95d32620f2af5d4b2"
+    },
+    "cfg/icu.cfg": {
+      "sizeBytes": 12909,
+      "sha256": "88322bbb4d1a27c9ba8d9982c3401fbd769ddc2e7e61c035e3b2a5604840fc07"
+    },
+    "cfg/sfml.cfg": {
+      "sizeBytes": 9529,
+      "sha256": "18e0ee51c18f18201c2f44d09cf5a5963b2d4a5a61b3c8c97b62e277159362e1"
+    },
+    "cfg/cppcheck-lib.cfg": {
+      "sizeBytes": 2138,
+      "sha256": "b1461958bfdb6e02e9ed85eac293b012b9fb64db357846731f8eefa6f64c9db0"
+    },
+    "cfg/qt.cfg": {
+      "sizeBytes": 194061,
+      "sha256": "abcaeee2d2222f38690ee0141f6ba2dca9d9e35a51636aadfdd725f4fec2f209"
+    },
+    "cfg/openmp.cfg": {
+      "sizeBytes": 5010,
+      "sha256": "68f5318d442fe2c7e1b7eff11c2c4b12d85fd9e5a2b269326bf7e2a1518dd4b8"
+    },
+    "cfg/cairo.cfg": {
+      "sizeBytes": 3479,
+      "sha256": "176617943b2ee95d95dd1a76634dfd67725f95c39d45b0883392c6ec925a80ec"
+    }
+  },
+  "save": {
+    "generationId": "gen-job-1791772486864-1",
+    "fixedDataPins": {
+      "drive_c/CppcheckTests/original.cpp": {
+        "sizeBytes": 109,
+        "sha256": "f20cad492fb445dc4dcc4f312341c5426157630f715a437bee530b3e54937b61"
+      },
+      "drive_c/CppcheckTests/original.xml": {
+        "sizeBytes": 832,
+        "sha256": "714a2cd5516c534d84edc443e9bb739a4df025426f92d87d68d98fbc2f42a3e9"
+      }
+    },
+    "output": {
+      "sizeBytes": 832,
+      "sha256": "714a2cd5516c534d84edc443e9bb739a4df025426f92d87d68d98fbc2f42a3e9"
+    },
+    "parsedErrors": [
+      {
+        "attributes": {
+          "id": "nullPointer",
+          "severity": "error",
+          "msg": "Null pointer dereference: p",
+          "verbose": "Null pointer dereference: p",
+          "cwe": "476",
+          "file0": "original.cpp"
+        },
+        "locations": [
+          {
+            "file": "original.cpp",
+            "line": "5",
+            "info": "Null pointer dereference"
+          },
+          {
+            "file": "original.cpp",
+            "line": "4",
+            "info": "Assignment &#039;p=nullptr&#039;, assigned value is 0"
+          }
+        ]
+      },
+      {
+        "attributes": {
+          "id": "constVariablePointer",
+          "severity": "style",
+          "msg": "Variable &#039;p&#039; can be declared as pointer to const",
+          "verbose": "Variable &#039;p&#039; can be declared as pointer to const",
+          "cwe": "398",
+          "file0": "original.cpp"
+        },
+        "locations": [
+          {
+            "file": "original.cpp",
+            "line": "4"
+          }
+        ]
+      }
+    ],
+    "inputOriginalBytesPreserved": true,
+    "applicationConfigPins": {
+      "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Cppcheck x64 2.18.0.0/Cppcheck.lnk": {
+        "sizeBytes": 653,
+        "sha256": "5dee2f183dc568cb5d8ce3753e9bac9eddf760d44c8e73fbaaa976f10e14cb66"
+      }
+    },
+    "registryPins": {
+      "system.reg": {
+        "sizeBytes": 3435238,
+        "sha256": "28c0926fc86cb4878324f07fd475113ce33a7ccd54de08775c09f6cf05801387"
+      },
+      "user.reg": {
+        "sizeBytes": 103772,
+        "sha256": "f8b2ed0420e908bde6e47dcd8eb6e9d98631fb1a2ae9175c99d63fa55898104c"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "881c12aff714d6ab72f8cc0bd88ebb6ea34f25762123b4a56895fe010d4abc0a"
+      }
+    },
+    "installedFiles": {
+      "simplecpp-license.txt": {
+        "sizeBytes": 681,
+        "sha256": "53229821123540acb81493bf57ecd46a11065dbf5e7de838b42086334c7bb255"
+      },
+      "Qt6Sql.dll": {
+        "sizeBytes": 309384,
+        "sha256": "010375e82d3adcdda7499f09382b0d9bebf3248d2f76eb68d3cef031a6534c03"
+      },
+      "picojson-license.txt": {
+        "sizeBytes": 1361,
+        "sha256": "d3146bb6ea30173afff979decf7d84b0b0e54af3bcdc9ff055423b0ba87c79b1"
+      },
+      "cppcheckgui.exe": {
+        "sizeBytes": 5671424,
+        "sha256": "20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e"
+      },
+      "Qt6Network.dll": {
+        "sizeBytes": 1733768,
+        "sha256": "5e066f987a19732cfe46df77731885c634ea5c4e25e115f8de31f7ce18c7b78c"
+      },
+      "Qt6Widgets.dll": {
+        "sizeBytes": 6527624,
+        "sha256": "b323340a5f24ebbe33e521e19eab91ec59cde5bf31a67dc3fc028e6e26aff74b"
+      },
+      "Qt6Help.dll": {
+        "sizeBytes": 593032,
+        "sha256": "20399635cc79eb8516749622810ac1b4c4d5e514968a2638e394e66770602915"
+      },
+      "Qt6Core.dll": {
+        "sizeBytes": 10007688,
+        "sha256": "3997d763e68026cd86f301ebea725fb9cfc48f3cbfdb825dad93dc198462ab74"
+      },
+      "online-help.qhc": {
+        "sizeBytes": 94208,
+        "sha256": "adc9d1b58a459d65181b32988debb4f6f5920695663544a4fbb86ce0bf504c13"
+      },
+      "Qt6Charts.dll": {
+        "sizeBytes": 1773536,
+        "sha256": "0d78558d4e61594f8200f255e0f86a49b416e24ec527edc9f2ba808a21bef4f8"
+      },
+      "online-help.qch": {
+        "sizeBytes": 438272,
+        "sha256": "bc2fc6432ac8ead15247ca71d0b78c40418ada2c48307c94463b96f7362bd3dd"
+      },
+      "libcrypto-3-x64.dll": {
+        "sizeBytes": 4549632,
+        "sha256": "8887b08563a54fef8ededba0c945feb5f057d9c26594f0cb51afc1ebf4cab7cb"
+      },
+      "cppcheck.exe": {
+        "sizeBytes": 267264,
+        "sha256": "a7df6301bf155fbd0f3b1cacc4fb98f37c07ba480557196442bf2cc2ee6e43dc"
+      },
+      "Qt6OpenGLWidgets.dll": {
+        "sizeBytes": 64136,
+        "sha256": "1b3c0cb9623eee69f6aed7d366045985df70bb9caa6abf70e06f444483e5ca90"
+      },
+      "tinyxml2-license.txt": {
+        "sizeBytes": 826,
+        "sha256": "035a1f2fd2f6dba120f3c25cd2d04f9987f32405c847c0cb4859fe33e6148f45"
+      },
+      "Qt6Gui.dll": {
+        "sizeBytes": 9469576,
+        "sha256": "9dae9067dfdab107748649e533bef6f2e8452119936aa68a91e63f1613fbd81f"
+      },
+      "Qt6PrintSupport.dll": {
+        "sizeBytes": 404104,
+        "sha256": "c22d218d56978e7c65bbb2e9df23bbca356b9d60597df9d6e7c848b788a93e70"
+      },
+      "GPLv3.txt": {
+        "sizeBytes": 33039,
+        "sha256": "f371d87603bc6bf210a7d1a5f339ff1ce72154da1cc2858625168455c45618a2"
+      },
+      "Qt6OpenGL.dll": {
+        "sizeBytes": 1972360,
+        "sha256": "9f26dd1abd33360d87fe6b9a5fff63af5424a6f71fa6d5a37025f37393148f43"
+      },
+      "authors.txt": {
+        "sizeBytes": 6982,
+        "sha256": "0726288fd000ef93b53fc2d1afc570d69e179ed3e9b506b4486c4011a3a7ffcb"
+      },
+      "cppcheck-core.dll": {
+        "sizeBytes": 4910592,
+        "sha256": "fa1e275933c756a6ffa6282434bee6d647f31cb547b5e2a788bc40c9cce3c71a"
+      },
+      "libssl-3-x64.dll": {
+        "sizeBytes": 776704,
+        "sha256": "1e30e3711431f11cf890010cfa01d3aeea3e4d3f168a6640facafeeca18c584c"
+      },
+      "styles/qmodernwindowsstyle.dll": {
+        "sizeBytes": 218248,
+        "sha256": "655f4f9afa55897a6df581642852be1931aceb0f587988691dbf340f76cf9485"
+      },
+      "lang/cppcheck_es.qm": {
+        "sizeBytes": 26396,
+        "sha256": "eb9b78b99db6ad3436c6d51ac6664bae103ebc9daa905c9ab395f89dc5c110d8"
+      },
+      "lang/cppcheck_nl.qm": {
+        "sizeBytes": 23775,
+        "sha256": "aa8c7af33ad6fc3611101ae482f36500b1bd73208e3d5f134eee9dcb4c6a63e4"
+      },
+      "lang/cppcheck_de.qm": {
+        "sizeBytes": 52629,
+        "sha256": "068479c4b907147ba8f8734df056ec8b7c3d35a498400d84350b09e5ebe8a835"
+      },
+      "lang/cppcheck_zh_CN.qm": {
+        "sizeBytes": 43044,
+        "sha256": "cdc98c39b4b95a857acd52ad5094891fc995e315065afc6c15aac3fe534b84b9"
+      },
+      "lang/cppcheck_zh_TW.qm": {
+        "sizeBytes": 26982,
+        "sha256": "61e7c7ddd90453f8f7bcbaf25d3eafde06a651aa43e69cafa2e6794be6a5a997"
+      },
+      "lang/cppcheck_fr.qm": {
+        "sizeBytes": 18226,
+        "sha256": "4cc943449895c98ececbbcd145164df52636ef5466f8daefbcc7308328189aa0"
+      },
+      "lang/cppcheck_ja.qm": {
+        "sizeBytes": 57624,
+        "sha256": "4c9ded2102cca3ffeb6bf4ce36aac227f41bd6c20157b2d9dcb0f6a7acdea7b1"
+      },
+      "lang/cppcheck_ru.qm": {
+        "sizeBytes": 47082,
+        "sha256": "a1bf72398a042f87154e30bd6f4104e4777f52edc3ba3c51cb452e416d7df51d"
+      },
+      "lang/cppcheck_ko.qm": {
+        "sizeBytes": 17725,
+        "sha256": "c74bb23235e45387579253df59688079053abd7e6287b630adb1839f000a05e4"
+      },
+      "lang/cppcheck_fi.qm": {
+        "sizeBytes": 7873,
+        "sha256": "05017995dca5f027122be942a1d9babc359a9eecd61da13775b87ff9ee9de61b"
+      },
+      "lang/cppcheck_sv.qm": {
+        "sizeBytes": 41548,
+        "sha256": "c5bfd3e1a2e982c6e6ff4c60d7c11560008a493f9e16cb4625a6f467cb459517"
+      },
+      "lang/cppcheck_sr.qm": {
+        "sizeBytes": 8225,
+        "sha256": "d6a62a96d0916e188fa654ff1715e8bfd92e7f4c246eff0a2292d2308b5a53f4"
+      },
+      "lang/cppcheck_ka.qm": {
+        "sizeBytes": 61566,
+        "sha256": "c5862d16fe358fe56f76822ae29c4558252b09a9f2f5ac30257b3673d3221728"
+      },
+      "lang/cppcheck_it.qm": {
+        "sizeBytes": 24961,
+        "sha256": "8c59db393bae5e7476a6b90cb5ce666779496210f8c90c3c654a50da4931375a"
+      },
+      "platforms/avr8.xml": {
+        "sizeBytes": 406,
+        "sha256": "f88dcafa04b6bbdbadf7fc32b27987b19d014b13191a553b0fc0bf2760a33e61"
+      },
+      "platforms/msp430_eabi_large_datamodel.xml": {
+        "sizeBytes": 404,
+        "sha256": "8e7dc7ccaff3931ac04b00b8816782bb5e3303837e48bdd92ad94a27a695b084"
+      },
+      "platforms/unix32-unsigned.xml": {
+        "sizeBytes": 407,
+        "sha256": "eb3b90fb4f172100cb23fd82227221d9837042faf8772733792848f439a35b8b"
+      },
+      "platforms/arm64-wchar_t4.xml": {
+        "sizeBytes": 406,
+        "sha256": "21b250650cc296afb776ef3a7c2aeb10f852ddffc25016e5ef57f307a85f1e15"
+      },
+      "platforms/qwindows.dll": {
+        "sizeBytes": 922760,
+        "sha256": "60d06a91eeb883cd8df4b7991938d27f19d54437fb762cc8bac1878a1d1884d3"
+      },
+      "platforms/arm32-wchar_t2.xml": {
+        "sizeBytes": 406,
+        "sha256": "e1104bc59c378e19a23da27c6d4a6397656a64d7e0195d2c9020c450e051beb6"
+      },
+      "platforms/arm32-wchar_t4.xml": {
+        "sizeBytes": 406,
+        "sha256": "8a8c530f09f6e33966d149544cfee90bbdbad07ceaef9a744f600db4673493bf"
+      },
+      "platforms/arm64-wchar_t2.xml": {
+        "sizeBytes": 406,
+        "sha256": "ca18e4b384042f606320059772d40d5eb17db2cc9193383653fdc578f3547e04"
+      },
+      "platforms/cray_sv1.xml": {
+        "sizeBytes": 407,
+        "sha256": "20a9fd9388e80b0d509f80faf9b625d661bfda2b8bd4e6ca9a29a94f56c101b9"
+      },
+      "platforms/aix_ppc64.xml": {
+        "sizeBytes": 406,
+        "sha256": "58d95c14c65e8db29c2c27875d05d0140e482486f9c9e16463a1ec1ca262db1b"
+      },
+      "platforms/elbrus-e1cp.xml": {
+        "sizeBytes": 407,
+        "sha256": "0064f878142e2ba01f518ad47d791b280ea96e4af7ccfb6ca59917b4028267ff"
+      },
+      "platforms/pic8.xml": {
+        "sizeBytes": 406,
+        "sha256": "d476da803dd4ea912610a5a4c1fc619a189a1a57991db19a8e996e2fcbef19a2"
+      },
+      "platforms/mips32.xml": {
+        "sizeBytes": 404,
+        "sha256": "65544d2737518ee85a5dae9447871353cc1707374fd49833edc24f145310c0ff"
+      },
+      "platforms/pic8-enhanced.xml": {
+        "sizeBytes": 406,
+        "sha256": "f88dcafa04b6bbdbadf7fc32b27987b19d014b13191a553b0fc0bf2760a33e61"
+      },
+      "platforms/unix64-unsigned.xml": {
+        "sizeBytes": 407,
+        "sha256": "0064f878142e2ba01f518ad47d791b280ea96e4af7ccfb6ca59917b4028267ff"
+      },
+      "platforms/pic16.xml": {
+        "sizeBytes": 406,
+        "sha256": "276ad953c68eef2d23d09e7fc98f6046d0edaf6b94a932c597e26c391801748c"
+      },
+      "cfg/mfc.cfg": {
+        "sizeBytes": 13464,
+        "sha256": "1a4f64da974405401670e7ae36f65c2be0f6d27fa024c0db87ec75359e651238"
+      },
+      "cfg/wxsvg.cfg": {
+        "sizeBytes": 611687,
+        "sha256": "e88df2d8c6167045428a4c943bb8872e1860de3072740d09ef83fb864943ead4"
+      },
+      "cfg/libcerror.cfg": {
+        "sizeBytes": 8714,
+        "sha256": "1441fcf28e2a4f7e5714059303724faa1988f5821ea310280a383a4afadb37e9"
+      },
+      "cfg/openssl.cfg": {
+        "sizeBytes": 5055,
+        "sha256": "751c443c613a2955e2a3b5972ed23c403ab466df07289b95875458f058f5fa70"
+      },
+      "cfg/opengl.cfg": {
+        "sizeBytes": 22660,
+        "sha256": "b00f7fba0f97b71085732b628e56f05dfee331d56c2c804b86a1b900c0210b68"
+      },
+      "cfg/sqlite3.cfg": {
+        "sizeBytes": 61849,
+        "sha256": "16887def0194303c36a44810bbe16fc3703f0043a9bd27d20f00a13568b19d2e"
+      },
+      "cfg/python.cfg": {
+        "sizeBytes": 20758,
+        "sha256": "c20b46fa240f1a08cfb5592ae57e039455fb042cfe0e4793b638d0359f3b619d"
+      },
+      "cfg/kde.cfg": {
+        "sizeBytes": 4816,
+        "sha256": "620bec9e06b7b6d721da3bb37dbaa025d9b19998f257f0a149cdbc6a81df3695"
+      },
+      "cfg/emscripten.cfg": {
+        "sizeBytes": 3951,
+        "sha256": "de26616fb89831a2f91029468f52ea589766bb769710067ca7643e59808c8f37"
+      },
+      "cfg/googletest.cfg": {
+        "sizeBytes": 7541,
+        "sha256": "a9543e82eaf2239bec749e1b6075e7d1749e3102d2ff285307cfec954e64d04f"
+      },
+      "cfg/motif.cfg": {
+        "sizeBytes": 7871,
+        "sha256": "2f2a10eb40be5b37081ae51f0bec3950679222e0f55e7cb5fb59bace60ad3a31"
+      },
+      "cfg/microsoft_sal.cfg": {
+        "sizeBytes": 27373,
+        "sha256": "f421cee3ad370e92f7dcee25ebe410aa72759be5258e712fc01fccfcd0aa1cce"
+      },
+      "cfg/ruby.cfg": {
+        "sizeBytes": 4375,
+        "sha256": "91e5196807f83058e59cb22dc144fe498c299fa12062891ddd42fa2da838685e"
+      },
+      "cfg/posix.cfg": {
+        "sizeBytes": 189720,
+        "sha256": "c9fadd3ce39cecec5336b06d30e2176da39ac34f35e89a36cdbfac87ac61f1ca"
+      },
+      "cfg/gnu.cfg": {
+        "sizeBytes": 51344,
+        "sha256": "8a24ca7e2efe55f89d5e4417109381aa5db75fd4075c5f130844bab6b7d0dbe3"
+      },
+      "cfg/nspr.cfg": {
+        "sizeBytes": 1930,
+        "sha256": "3b16db41d52f13519cf22a4bf7153cd5092a834aa0fa2aa081bd4742235b102b"
+      },
+      "cfg/embedded_sql.cfg": {
+        "sizeBytes": 113,
+        "sha256": "838834007b4190af83b8641929241b8b594f2dbc2ca616dce222922bd034d85c"
+      },
+      "cfg/vcl.cfg": {
+        "sizeBytes": 98,
+        "sha256": "febe60dc28a2ccd16e5cbde544536c3efaa637f529daec77193e26e65ad2d368"
+      },
+      "cfg/selinux.cfg": {
+        "sizeBytes": 106185,
+        "sha256": "7bedebcd286e784476d861295156a05b045c87fb640e0901cb763eb728f3146e"
+      },
+      "cfg/bsd.cfg": {
+        "sizeBytes": 15854,
+        "sha256": "d5557e71cf7bdf8539b00d82984647af01df834d7e89c8374e20054e43582f46"
+      },
+      "cfg/windows.cfg": {
+        "sizeBytes": 811068,
+        "sha256": "6493ea6330e1710fdb227736fa994115938145cb697ad891bc2b87e346885ac4"
+      },
+      "cfg/opencv2.cfg": {
+        "sizeBytes": 5400,
+        "sha256": "9631eef8a564e6a80a005fe1df5f300dc46e796afb1a72636c77c0d73334d9c6"
+      },
+      "cfg/std.cfg": {
+        "sizeBytes": 299323,
+        "sha256": "a93d1ebc1c55f9fa68e96f4d501c5f82912bbdcc1dcc2cba61f3cdbde3d9e720"
+      },
+      "cfg/microsoft_unittest.cfg": {
+        "sizeBytes": 1360,
+        "sha256": "6238ef4005f1c15bf36b17383f8f3c311fdcb86fc795da794c5026a18343d185"
+      },
+      "cfg/tinyxml2.cfg": {
+        "sizeBytes": 1312,
+        "sha256": "d62968eb503b4ee1a9194d1ef27f725b3367ecd5c3b534a40f48e70916c8ef38"
+      },
+      "cfg/zlib.cfg": {
+        "sizeBytes": 39953,
+        "sha256": "4242b98663ce4912e564f5285be5b9d22fe3318dc5c48f6d18a82648e74155e8"
+      },
+      "cfg/wxsqlite3.cfg": {
+        "sizeBytes": 67674,
+        "sha256": "9daa6d90ffd80a6186cb833917dc05b9cb1444d0adc815261ac8e40c4cb485d8"
+      },
+      "cfg/libsigc++.cfg": {
+        "sizeBytes": 2589,
+        "sha256": "82f272db42346a73eaff035f969ab80b2ceda3d118549bf6cfa4453c4808e6eb"
+      },
+      "cfg/bento4.cfg": {
+        "sizeBytes": 8671,
+        "sha256": "944f5b7d2e07e8f245c58f8cc9c48f764c797434b3d0c028720efaffc2ff73cc"
+      },
+      "cfg/sdl.cfg": {
+        "sizeBytes": 10939,
+        "sha256": "9532ac6dc9923b04fdfd7131f1c481bb5f3a44158d1a127f09a3e2c717ef1a34"
+      },
+      "cfg/gtk.cfg": {
+        "sizeBytes": 724566,
+        "sha256": "c93e0b7d89380831a63d36bfebf65badefa75681584e2bf67275955f52df1940"
+      },
+      "cfg/dpdk.cfg": {
+        "sizeBytes": 230,
+        "sha256": "546ae33664968c66606c3b568fb2d535cf47f1076752e6079b5658d6d7f21935"
+      },
+      "cfg/pcre.cfg": {
+        "sizeBytes": 8655,
+        "sha256": "3b0be28f74615f44e6ded52e18f3532cb6fce2da58802899ab08101d457cb4aa"
+      },
+      "cfg/lua.cfg": {
+        "sizeBytes": 9777,
+        "sha256": "171d6a26bccfda2c58fdd2ac130284d8a0b29cb2b5a53e61facfb1a889d8a0f7"
+      },
+      "cfg/ntl.cfg": {
+        "sizeBytes": 202997,
+        "sha256": "164316dd01b8e33b546bbfba04909c93009d9b773825e669e1d2f652795d8c16"
+      },
+      "cfg/ginac.cfg": {
+        "sizeBytes": 415242,
+        "sha256": "28e5519ba7e3465c3bbb133b85268740ae5312cc0a5d937e1e7bce728bdadc20"
+      },
+      "cfg/boost.cfg": {
+        "sizeBytes": 49388,
+        "sha256": "bdb96489a44ed560c6b32388a974b4dc50114393a9652ecc4220df26ea57a9da"
+      },
+      "cfg/cppunit.cfg": {
+        "sizeBytes": 2738,
+        "sha256": "becd7d95730d7b68ebd076d9ed4cb8b6314dd20333afce77cc2c1893849022cc"
+      },
+      "cfg/wxwidgets.cfg": {
+        "sizeBytes": 760690,
+        "sha256": "862995b572546047ebaea2c03ad77e954ee82868d32607d252dbda51e9797d52"
+      },
+      "cfg/microsoft_atl.cfg": {
+        "sizeBytes": 2454,
+        "sha256": "9b3fd863a7e08d8110a5cc8a3ce607fb2983c3927854a278ba5bea40328761bc"
+      },
+      "cfg/avr.cfg": {
+        "sizeBytes": 11459,
+        "sha256": "f1d05805a26e1db0270b583b99b3e79c6cedcf8ae9b9229764a0d112526e3caf"
+      },
+      "cfg/zephyr.cfg": {
+        "sizeBytes": 2856,
+        "sha256": "c25c54ddbf79e0f512d9b2645080bdc33f9a76c3663d29ca0bed84ea36f33fa1"
+      },
+      "cfg/libcurl.cfg": {
+        "sizeBytes": 15051,
+        "sha256": "957d67741a07ad5438e69615a2d206fc6e7e744535ba2c8decffc1c68c781197"
+      },
+      "cfg/protobuf.cfg": {
+        "sizeBytes": 454,
+        "sha256": "ab57f14757af72ec4ca5c65daacbecb86ddf9e02d37db6f95d32620f2af5d4b2"
+      },
+      "cfg/icu.cfg": {
+        "sizeBytes": 12909,
+        "sha256": "88322bbb4d1a27c9ba8d9982c3401fbd769ddc2e7e61c035e3b2a5604840fc07"
+      },
+      "cfg/sfml.cfg": {
+        "sizeBytes": 9529,
+        "sha256": "18e0ee51c18f18201c2f44d09cf5a5963b2d4a5a61b3c8c97b62e277159362e1"
+      },
+      "cfg/cppcheck-lib.cfg": {
+        "sizeBytes": 2138,
+        "sha256": "b1461958bfdb6e02e9ed85eac293b012b9fb64db357846731f8eefa6f64c9db0"
+      },
+      "cfg/qt.cfg": {
+        "sizeBytes": 194061,
+        "sha256": "abcaeee2d2222f38690ee0141f6ba2dca9d9e35a51636aadfdd725f4fec2f209"
+      },
+      "cfg/openmp.cfg": {
+        "sizeBytes": 5010,
+        "sha256": "68f5318d442fe2c7e1b7eff11c2c4b12d85fd9e5a2b269326bf7e2a1518dd4b8"
+      },
+      "cfg/cairo.cfg": {
+        "sizeBytes": 3479,
+        "sha256": "176617943b2ee95d95dd1a76634dfd67725f95c39d45b0883392c6ec925a80ec"
+      }
+    },
+    "syntheticFixtureNotAnApplication": true,
+    "cppSourceExecuted": false,
+    "completeCppOrXmlSpecificationAccepted": false,
+    "fullFilesystemTraversed": false
+  },
+  "guiJobs": [
+    {
+      "applicationId": "cppcheck",
+      "createdAtMilliseconds": 1791772773371,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 219269,
+          "requestId": "job-1791772773371-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 262584,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix",
+          "requestId": "job-1791772773371-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 262627,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791772773371-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791772486864-1",
+      "id": "job-1791772773371-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 4417212,
+        "fileDigest": "sha256:20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e",
+        "fileSizeBytes": 5671424,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "kernel32.dll",
+          "msvcp140.dll",
+          "qt6charts.dll",
+          "qt6core.dll",
+          "qt6gui.dll",
+          "qt6help.dll",
+          "qt6network.dll",
+          "qt6printsupport.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 4589568,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 4589551,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 877568,
+            "readable": true,
+            "virtualAddress": 4595712,
+            "virtualSize": 877242,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 52736,
+            "readable": true,
+            "virtualAddress": 5476352,
+            "virtualSize": 64800,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 109568,
+            "readable": true,
+            "virtualAddress": 5541888,
+            "virtualSize": 109248,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 27136,
+            "readable": true,
+            "virtualAddress": 5652480,
+            "virtualSize": 27024,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 13824,
+            "readable": true,
+            "virtualAddress": 5681152,
+            "virtualSize": 13788,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791772486864-1",
+          "digest": "sha256:20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "cppcheckgui.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix/drive_c/Program Files/Cppcheck/cppcheckgui.exe",
+          "sizeBytes": 5671424,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix/drive_c/Program Files/Cppcheck/cppcheckgui.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1"
+        },
+        "requestId": "job-1791772773371-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791773038061
+    },
+    {
+      "applicationId": "cppcheck",
+      "createdAtMilliseconds": 1791773050590,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 219753,
+          "requestId": "job-1791773050590-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 64974,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix",
+          "requestId": "job-1791773050590-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 65017,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791773050590-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791772486864-1",
+      "id": "job-1791773050590-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 4417212,
+        "fileDigest": "sha256:20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e",
+        "fileSizeBytes": 5671424,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "kernel32.dll",
+          "msvcp140.dll",
+          "qt6charts.dll",
+          "qt6core.dll",
+          "qt6gui.dll",
+          "qt6help.dll",
+          "qt6network.dll",
+          "qt6printsupport.dll",
+          "qt6widgets.dll",
+          "shell32.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 4589568,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 4589551,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 877568,
+            "readable": true,
+            "virtualAddress": 4595712,
+            "virtualSize": 877242,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 52736,
+            "readable": true,
+            "virtualAddress": 5476352,
+            "virtualSize": 64800,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 109568,
+            "readable": true,
+            "virtualAddress": 5541888,
+            "virtualSize": 109248,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 27136,
+            "readable": true,
+            "virtualAddress": 5652480,
+            "virtualSize": 27024,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 13824,
+            "readable": true,
+            "virtualAddress": 5681152,
+            "virtualSize": 13788,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791772486864-1",
+          "digest": "sha256:20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "cppcheckgui.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix/drive_c/Program Files/Cppcheck/cppcheckgui.exe",
+          "sizeBytes": 5671424,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:20fd398666b46ddfa043f238c829c2b9bebf94a8f015748b7561e58fcd0df10e pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix/drive_c/Program Files/Cppcheck/cppcheckgui.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791772486864-1"
+        },
+        "requestId": "job-1791773050590-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791773117639
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3435238,
+      "sha256": "28c0926fc86cb4878324f07fd475113ce33a7ccd54de08775c09f6cf05801387"
+    },
+    "user.reg": {
+      "sizeBytes": 103772,
+      "sha256": "f8b2ed0420e908bde6e47dcd8eb6e9d98631fb1a2ae9175c99d63fa55898104c"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "881c12aff714d6ab72f8cc0bd88ebb6ea34f25762123b4a56895fe010d4abc0a"
+    }
+  },
+  "fixedDataPins": {
+    "drive_c/CppcheckTests/original.cpp": {
+      "sizeBytes": 109,
+      "sha256": "f20cad492fb445dc4dcc4f312341c5426157630f715a437bee530b3e54937b61"
+    },
+    "drive_c/CppcheckTests/original.xml": {
+      "sizeBytes": 832,
+      "sha256": "714a2cd5516c534d84edc443e9bb739a4df025426f92d87d68d98fbc2f42a3e9"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Cppcheck x64 2.18.0.0/Cppcheck.lnk": {
+      "sizeBytes": 653,
+      "sha256": "5dee2f183dc568cb5d8ce3753e9bac9eddf760d44c8e73fbaaa976f10e14cb66"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "guiVersionMeasured": "Cppcheck 2.18.0 window",
+  "scope": "Tiny ASCII C++ nullptr input GUI Analyze Files, nullPointer line5 and constVariablePointer style; GUI XML save and explicit new-process Open XML",
+  "fullBundleLicenseClosureVerified": false,
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "a8dfbb1b0c048997195dd3bdcd3d5698be7b8311d9679ecdabfc105bd98c3c02",
+    "coreJobs": 408,
+    "fullStoreRows": 122
+  },
+  "fixtureReferences": {
+    "drive_c/CppcheckTests/original.cpp": "cppcheck-20261012/original/original.cpp",
+    "drive_c/CppcheckTests/original.xml": "cppcheck-20261012/original/original.xml"
+  },
+  "screenshots": {
+    "01-original-analysis.jpg": {
+      "sizeBytes": 48970,
+      "sha256": "8ff04e5ecb1b0611c6c91524c71ec0f472f6aa4939c2cabc49e2f2d90492cce3"
+    },
+    "02-original-new-process-open-xml.jpg": {
+      "sizeBytes": 49869,
+      "sha256": "fe033682c92b4e8c21d994064a971ff7a3f23604e94abada07137c74fd274874"
+    }
+  },
+  "marketLifecyclePendingAtFreeze": true
+}

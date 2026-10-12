@@ -1,0 +1,55 @@
+{
+  "activatedPreview": true,
+  "metadataVersion": 67,
+  "rootVersion": 1,
+  "entries": 54,
+  "coreJobs": 408,
+  "fullStoreRows": 122,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-cppcheck-20261012.acceptance.json#cppcheck",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638",
+        "size": 23576576,
+        "target": "cppcheck-2.18.0-x64-Setup.msi",
+        "url": "https://github.com/cppcheck-opensource/cppcheck/releases/download/2.18.0/cppcheck-2.18.0-x64-Setup.msi"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "cppcheck"
+    },
+    "id": "cppcheck",
+    "license": "GPL-3.0-or-later",
+    "name": {
+      "en": "Cppcheck",
+      "zhCN": "Cppcheck 静态分析工具"
+    },
+    "origin": "https://cppcheck.sourceforge.io/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "The Cppcheck team",
+    "summary": {
+      "en": "Limited tiny ASCII C++ nullptr analysis, XML report save and fresh-process Open XML tested; broad checks and projects unverified.",
+      "zhCN": "仅小型 ASCII C++ 空指针分析、XML 保存和新进程打开报告通过；其他检查和项目未验收"
+    },
+    "version": "2.18.0"
+  },
+  "installed": {
+    "appId": "cppcheck",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "2.18.0"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "536f5eb3673e83bce99cec2d55dd3d75bc8b9496ef7adc2f660561764a43046f",
+    "coreJobs": 408,
+    "fullStoreRows": 122
+  },
+  "independentMarketGenerationPending": true,
+  "countsAsCompleted": false
+}

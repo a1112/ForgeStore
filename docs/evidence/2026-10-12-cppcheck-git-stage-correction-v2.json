@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "cppcheck",
+  "phase": "precise-path-attributes-prepared-before-v2-review-and-stage",
+  "firstFailureReference": "2026-10-12-cppcheck-first-stage-failure.json",
+  "firstFailureSha256": "91d92bd2d3111cb153832461adcb55d38f9b6ae8f20f3ab889013140b7446974",
+  "firstActualIndexManifestSha256": "3ff0ce72268eb2daed7949cc193e21a83a45a5e658c41ee4ad7215d33682dca0",
+  "firstActualIndexFiles": 3938,
+  "firstFreezeFiles": 2697,
+  "allFirstFreezeDiskBytesPreservedExceptApprovedMutableAttributes": true,
+  "firstIndexByteGateFailed": true,
+  "formalFirstDiffCheckNotReached": true,
+  "readOnlyDiagnosticDiffCheckFailed": true,
+  "exactObservedWhitespacePaths": [
+    "catalogue/candidate-v58/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json",
+    "catalogue/candidate-v58/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json",
+    "docs/evidence/cppcheck-20261012/source/man/manual.md"
+  ],
+  "preciseAttributeRulesAdded": {
+    "catalogue/candidate-v58/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": "-text whitespace=cr-at-eol",
+    "catalogue/candidate-v58/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": "-text whitespace=cr-at-eol",
+    "docs/evidence/cppcheck-20261012/source/man/manual.md": "-text whitespace=cr-at-eol,-blank-at-eol",
+    "docs/evidence/cppcheck-20261012/market/market.xml": "-text whitespace=cr-at-eol",
+    "docs/evidence/cppcheck-20261012/original/original.xml": "-text whitespace=cr-at-eol"
+  },
+  "gitattributesBeforeSha256": "e4723680f3ab1fdac3568d30bd0b609d6a37d9ff99ba982abb7ca156c99436cf",
+  "gitattributesAfterSha256": "f66b1ef03ba95b1630ef2fe00ec42cd234cc08704b0445f8fc75ddda10c6ad1d",
+  "oldAttributeBytesPreservedAsExactPrefix": true,
+  "firstReviewAndReportOriginalBytesPreserved": true,
+  "signedTargetsAndSourcesAndXmlDiskBytesUnchanged": true,
+  "noCoreGuestGuiServiceTufOrAppDataMutation": true,
+  "renormalizeRequiredOnlyForXmlIndexPaths": [
+    "docs/evidence/cppcheck-20261012/market/market.xml",
+    "docs/evidence/cppcheck-20261012/original/original.xml"
+  ],
+  "renormalizeExecutedAtThisFreeze": false,
+  "v2ActualStageIndexCommitPushPendingAtThisFreeze": true,
+  "limits": [
+    "Read-only diagnostic diff was after the failed index byte gate; it is not a passed formal first-stage diff check.",
+    "Two GUI XML CRLF files became LF only in index; actual saved XML disk bytes were never changed.",
+    "Only five exact path attribute additions; no upstream whitespace normalization, broad exemption, rewritten signing history or repeated guest acceptance."
+  ]
+}

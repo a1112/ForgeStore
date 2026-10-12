@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.18.0"/>
+    <errors>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476" file0="original.cpp">
+            <location file="original.cpp" line="5" info="Null pointer dereference"/>
+            <location file="original.cpp" line="4" info="Assignment &amp;#039;p=nullptr&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &amp;#039;p&amp;#039; can be declared as pointer to const" verbose="Variable &amp;#039;p&amp;#039; can be declared as pointer to const" cwe="398" file0="original.cpp">
+            <location file="original.cpp" line="4"/>
+        </error>
+    </errors>
+</results>
