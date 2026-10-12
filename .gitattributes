@@ -357,3 +357,9 @@ docs/evidence/gvim-20261012/market/市场编辑.txt -text whitespace=cr-at-eol
 docs/evidence/gvim-20261012/original/original.txt -text whitespace=cr-at-eol
 docs/evidence/gvim-20261012/original/原始编辑.txt -text whitespace=cr-at-eol
 docs/evidence/gvim-20261012/source/nsis/gvim.nsi whitespace=-blank-at-eol
+
+# Preserve fixed zim upstream, GUI output and inherited signed evidence bytes.
+docs/evidence/zim-20261012/source/setup.py whitespace=-blank-at-eol
+docs/evidence/zim-20261012/source/zim/__init__.py whitespace=-blank-at-eof
+docs/evidence/zim-20261012/source/zim/gui/pageview/__init__.py whitespace=-blank-at-eol,-blank-at-eof
+docs/evidence/zim-20261012/source/zim/main/__init__.py whitespace=-blank-at-eol

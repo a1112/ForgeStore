@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "coreJobs": 452,
+  "fullStoreRows": 134,
+  "generationId": "gen-job-1791803040606-1",
+  "metadataVersion": 72,
+  "rootVersion": 1,
+  "checkpointBeforeReboot": {
+    "file": "before-controlled-reboot.json",
+    "sha256": "0758621a06b2cd7a964f078ef6985bbafb65ab84ed04dbcddfdbbf8883c3ffa7",
+    "coreJobs": 451,
+    "fullStoreRows": 134
+  },
+  "checkpointAfterVerifiedRebootBeforeRecovery": {
+    "file": "after-controlled-reboot-before-recovery.json",
+    "sha256": "5b134c371c74c26720a12ff099c3a4ddf4133d03bc2279b18ccf121bd514eba8",
+    "coreJobs": 451,
+    "fullStoreRows": 134
+  },
+  "automaticFailedJobRecordChangeOnBoot": {
+    "jobId": "job-1791804015279-3",
+    "changedFields": [
+      "error",
+      "updatedAtMilliseconds"
+    ],
+    "before": {
+      "error": "process supervision failed: invalid pinned Runtime evidence: incomplete font configuration evidence",
+      "updatedAtMilliseconds": 1791804015323
+    },
+    "after": {
+      "error": "service process ended before the job reached a terminal event",
+      "updatedAtMilliseconds": 1791804741458
+    },
+    "agentDidNotRewriteJobRecord": true,
+    "originalFailureFullRawPreservedInPrivatePreRebootCheckpoint": true
+  },
+  "otherSixFullFieldClassesExactAcrossGuestBoot": true,
+  "old57CoreJobFieldsPreserved": true,
+  "recoveryApi": "applications.recover",
+  "recoveryAfterVerifiedKernelBootIdChange": true,
+  "onlyZimQuarantineOperationRemoved": true,
+  "checkpointsFinalServiceRestart": {
+    "beforeRestart": {
+      "file": "before-final-service-restart.json",
+      "sha256": "2e480fc8eb7d445fa1d8f1f68fadc729fec25452d0c0ffaac86dffa889e7a5d1",
+      "coreJobs": 452,
+      "fullStoreRows": 134
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "3c22b2f6791fd553e45a4432d924947ec1a2e3fd0274ef83a2009f10b37a81a7",
+      "coreJobs": 452,
+      "fullStoreRows": 134
+    }
+  },
+  "normalRestartSevenFullFieldClassesExact": true,
+  "old57FixedDataPreserved": true,
+  "newSelectedZimPinsStableAcrossFinalRestart": true,
+  "coreExecutableSha256": "4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818",
+  "storeExecutableSha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f",
+  "authenticationOrPowerSettingsChanged": false,
+  "guestNormalDesktopRebootPerformed": true,
+  "rawCompletePrivateCheckpointsNotPublished": true,
+  "guiAccepted": false,
+  "published": false
+}

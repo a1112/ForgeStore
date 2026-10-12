@@ -1,0 +1,132 @@
+{
+  "installed": true,
+  "guiAccepted": false,
+  "published": false,
+  "countsAsCompleted": false,
+  "defaultGuiJob": {
+    "id": "job-1791803178920-2",
+    "generationId": "gen-job-1791803040606-1",
+    "kind": "launch",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 261826,
+        "requestId": "job-1791803178920-2",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 640113,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791803040606-1/prefix",
+        "requestId": "job-1791803178920-2",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 640157,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791803178920-2",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "pinnedFontconfigDiagnosticJob": {
+    "id": "job-1791804930002-1",
+    "generationId": "gen-job-1791803040606-1",
+    "kind": "launch",
+    "status": "succeeded",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 2401,
+        "requestId": "job-1791804930002-1",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 63025,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791803040606-1/prefix",
+        "requestId": "job-1791804930002-1",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 63067,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791804930002-1",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "normalExitMethod": "native File/Quit; wineserver stop recorded",
+  "actualChineseNameInputPin": {
+    "sizeBytes": 131,
+    "sha256": "34118c106e8d72b978c57056e1750b68f44fbb0fd9ff6519be172f82633604b5"
+  },
+  "inputBytesPreserved": true,
+  "defaultChineseGlyphBoxesAndEnglishClippingObserved": true,
+  "fontChooserMicrosoftYaHeiSearchNoFontsFound": true,
+  "fontPreferenceDialogsCancelled": true,
+  "nativeWrongNotebookName": "ginalFixture",
+  "nativeWrongNotebookPath": "prefix-user Notebooks/C:/ZimTests/OriginalNotebookginalFixture",
+  "wrongNameAndPathAreInputFocusDiagnosticNotCoreNormalisationDefect": true,
+  "nativeImportedPageChineseName": "原始笔记",
+  "originalPageImportObserved": true,
+  "editSaveCopyFreshReopenAccepted": false,
+  "noOriginalTxtOutput": true,
+  "marketFixtureOnlyPreparedOnHost": true,
+  "marketInstallationOrGuiPerformed": false,
+  "pinnedTrialFontConfig": {
+    "sizeBytes": 192,
+    "sha256": "738ac417c7f05a1144676d501e3c8caf52f17099ddcfe5a8e7234c57025d2e4d"
+  },
+  "fontConfigText": "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \"urn:fontconfig:fonts.dtd\">\n<fontconfig>\n  <dir>C:/windows/Fonts</dir>\n  <cachedir>C:/ZimTests/font-cache-diagnostic</cachedir>\n</fontconfig>\n",
+  "pinnedTrialEnvironmentScope": "only diagnostic request FONTCONFIG_FILE absolute guest Linux path plus COMPATFORGE_FONT_CONFIG_SHA256; generation definition unchanged",
+  "pinnedTrialStillUnreadable": true,
+  "fontCacheCreated": false,
+  "newFontPackageInstalled": false,
+  "existingBottleFont": {
+    "sizeBytes": 19484784,
+    "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a"
+  },
+  "specificFontconfigFunctionOrHresultLocated": false,
+  "screenshots": {
+    "zim-01-default-font-import-diagnostic-20261012.jpg": {
+      "sizeBytes": 57969,
+      "sha256": "44ffb7f73c86c09e3ffb547f088679f7833f6dc1237bd2523d64b44390694270",
+      "actualEncoding": "JPEG",
+      "scope": "diagnostic only; not GUI acceptance"
+    },
+    "zim-02-font-selector-no-fonts-diagnostic-20261012.jpg": {
+      "sizeBytes": 59346,
+      "sha256": "e7c9e3d8fe697b0ac887285393db73cabd71bbc135aff3282b5d2d0384c06b8c",
+      "actualEncoding": "JPEG",
+      "scope": "diagnostic only; not GUI acceptance"
+    },
+    "zim-03-pinned-fontconfig-still-unreadable-diagnostic-20261012.jpg": {
+      "sizeBytes": 58519,
+      "sha256": "e03323fc30fc41fcea618ca2a773d9600318b55b2b8cd078a23fd9359792b34e",
+      "actualEncoding": "JPEG",
+      "scope": "diagnostic only; not GUI acceptance"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "findings": [],
+  "prospectiveManifestSha256": "1c7fb206283d020cb0dbfcd6acee5a94584a36f5dbb636a50911fe21154f5a03",
+  "baseCommit": "6bc85bb20dcf44a40336a80b42eefb4d22ec44ab",
+  "reviewPhase": "FINAL independent read-only before first real stage",
+  "verifiedCounts": {
+    "prospectiveFiles": 31,
+    "oldImmutableFiles": 3240,
+    "newOriginalFrozenFiles": 27,
+    "sourceMembersArchiveCompared": 13,
+    "guiJpegPinsAndVisuallyReviewedImages": 3,
+    "preparedFixtures": 2,
+    "programPinEntriesCrossCompared": 1256,
+    "selectedConfigurationPinsCrossCompared": 11,
+    "changedConfigurationRecords": 3,
+    "acceptedWindowsApps": 57,
+    "pendingCandidates": 15,
+    "coreJobsHostReceiptCount": 452,
+    "completeStoreRowsHostReceiptCount": 134,
+    "metadataVersion": 72,
+    "catalogueEntries": 59,
+    "signedTargetsPreviousFreezeOnly": 123,
+    "publicJsonPreviousFreezeOnly": 68,
+    "exactNewAttributePaths": 4,
+    "independentlyRepeatedRawFilterAndRelativeNoIndexPaths": 31
+  },
+  "verificationScope": [
+    "HEAD/branch/index-empty and exact prospective status set",
+    "3240 old immutable and 27 original new files read and hashed",
+    "old accepted 57, old pending 14, active catalogue ledger deep-equal; Zim pending appended",
+    "official local cached artifacts and 13 archive source members byte comparison",
+    "host actual receipt consistency, diagnostic exits and absent output/cache, 11 selected pins and 3 explicitly changed records",
+    "host reboot error/timestamp exception and quarantine recovery receipt with matching CP references",
+    "all 31 raw/filter equality and relative no-index checks repeated; exact old attributes prefix and 4 path rules",
+    "3 JPEG images inspected: missing glyphs and font selector; no login/password image",
+    "targeted privacy scan on new authored non-source text; source archive bytes preserved"
+  ],
+  "limitations": [
+    "No guest GUI, installation, helper, service or recovery operation rerun",
+    "No private full checkpoint raw independent replay; 452/134 full-field and restart claims checked through actual host receipts and helper assert scope",
+    "No application GUI acceptance, edit/save/output new-process reopen, market lifecycle or publication; normal exit 0 only diagnostic",
+    "No whole application filesystem, full licence closure, runtime function/HRESULT diagnosis, Fontconfig library-loading proof or SQLite semantic equivalence",
+    "No real git add/index byte audit/cached diff check/commit/push executed by reviewer",
+    "Reviewer V2 incorrectly applied no named license assertion to component licenses; stopped before result write. V2 retained, V3 corrects only scope to actual NumPy/importlib_metadata component paths",
+    "Parent post-freeze candidateQueue KeyError stopped before stage/commit/push; V2 actual queue/id check passed. Guessed heartbeat helper read failed and broad text output truncated; retained private host limitations, no repo/index/guest mutation",
+    "The previous Scribus private canonical failure raw loss remains explicitly limited; no restoration claimed"
+  ],
+  "artifactPins": {
+    "pending-restart-final": {
+      "sizeBytes": 17535,
+      "sha256": "9720b8d89ccb4ac7c4ddeece774b06c89142ee4178da34600902de2a8819aa00"
+    },
+    "current-state": {
+      "sizeBytes": 662,
+      "sha256": "48f04d4dbf76a45301c8d52b7fb103436f55a715d86745463204c7009aef381d"
+    },
+    "final-gui-readonly": {
+      "sizeBytes": 9440,
+      "sha256": "82fd5e86899979de87da79a58ecd7829121d95c8567a8bd23396e2beb61f88d3"
+    },
+    "after-controlled-reboot-readonly-v2": {
+      "sizeBytes": 652,
+      "sha256": "e8413aebb182e88cec8eabaeca28059c746ea38a82efe175eb18b9d8f8d6d209"
+    },
+    "recover-after-verified-reboot": {
+      "sizeBytes": 2738,
+      "sha256": "bc8791432453fbc56043c712f74fb830963abc95164a85d9abea5baaa23a1788"
+    },
+    "fontconfig-rejection-readonly-v2": {
+      "sizeBytes": 5420,
+      "sha256": "d3ea35a48c0c527553c1020c4aa59fdac78a9980c48a400d0e93baaf837ea263"
+    },
+    "public-export-readonly": {
+      "sizeBytes": 203458,
+      "sha256": "d355dd8917071185da8d193cfa4c36065bf8e6da1da204629bc1f2f86d9c2e1d"
+    },
+    "ledger-baseline": {
+      "sizeBytes": 68833,
+      "sha256": "99c7dad8be21925ad1b8ea406ec4154f9e88b993d35f4854104efdeb0caaa5a6"
+    }
+  },
+  "reviewerHelperSha256": "f6d26ae940cf875d9b3a15ddd4458e88048e4c04a828aa80182d09ea33f39c46",
+  "repoIndexGuestMutated": false
+}

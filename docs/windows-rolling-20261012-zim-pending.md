@@ -1,0 +1,25 @@
+# Zim Desktop Wiki 0.77.2 Windows 未解决候选（2026-10-12）
+
+Windows保持57/1000，Zim新增为第15个未解决候选，原14项及57款全部字段保留。仅一次正式安装；没有编辑保存、新正式进程显式重开、独立市场安装/GUI、上架或完成计数。两次正常File/Quit退出0和wineserver停止仅诊断，不算验收。Ubuntu Kate/APT与Snap计算器两款独立记账，Flatpak两次runtime超时未安装，缓存保持；未启动Ubuntu VM。
+
+官方固定安装zim-desktop-wiki-0.77.2-setup-w64_x86.exe42050333B SHA4bd117d4b913eb2adfa8661e3c1593a21186f5633629c2326f5275f487e51e4b；source zim-0.77.2.tar.gz2806950B SHA5561bed05a5fe4208da2ef8d5f8747ebc49e8cb32b46df2559cc73fb11fa65eb。官方HTTPS200/ContentLength匹配，仅本地摘要，不称上游公开digest、最新、PGP/Authenticode、源码二进制对应或可复现。13固定源码成员保留原字节。zim/__init__.py明确GPL2-or-later；无安装主LICENSE/COPYING命名文本，NumPy/importlib_metadata等是组件通知，不作主许可比较；完整Python/GTK/GLib/Pango/Fontconfig/Cairo/NumPy/图标/翻译许可闭包未核。
+
+静态7z Type Nsis；原生/S最后/D=C:后单反斜杠Zim，9UTF8B hex2f443d433a5c5a696d。正式gen-job-1791803040606-1，定义sha256:0ee63c12751340fea66d82a3fbe6ba9598a94a18ad759ab1d806c055e951941e。1256程序文件严格pins；zim.exe8014423B SHAc0b31ad6860a544243a2543a4fea2ca06e270aeaf4dc1319ea8fa4d63b9e8506。整个诊断及最终正常服务重启后程序原字节保持；静态列表不当完整安装行为。
+
+原中文名小UTF8/LF笔记131B SHA34118c106e8d72b978c57056e1750b68f44fbb0fd9ff6519be172f82633604b5保持。市场129B夹具仅宿主准备，不作市场安装/导入或应用。首次job-1791803178920-2约两分钟后出现AddNotebook。快速焦点/文本过渡实际建立ginalFixture及prefix-user Notebooks/C:/ZimTests/OriginalNotebookginalFixture，不能称Core路径归一化缺陷。原生ImportPage小对话框未完成选择，最大化后按实际C盘树/ZimTests/中文文件打开，出现原始笔记页。中文方框、英文裁切；Preferences字体选择器查MicrosoftYaHei显示NoFontsFound，取消字体及Preferences，未应用设置。实际第一页日志另有versioncontrol、osx_menubar依赖AssertionError和XDG目录warning；没有人为关闭插件掩盖错误。默认File/Quit正常0；无original.txt输出。
+
+已有瓶内compatforge-cjk.ttc19484784B SHAb76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a保持，没有安装字体包。安装仅conf.avail没有选定fonts.conf的发现支持静态假设，不定位具体运行时函数。隔离192B Fontconfig配置原字节保持，仅指定已有C:/windows/Fonts和诊断缓存目录。首次只给Windows FONTCONFIG_FILE而缺固定摘要，被Core拒绝为incomplete font configuration evidence；job-1791804015279-3失败、无started/events，代次隔离。补齐绝对Linux路径和sha256:摘要的V2请求先被隔离冲突挡住，没有新任务/GUI。
+
+450/134默认完整CP、451/134失败CP及重启前CP保存读回后，通过桌面正常重启客体。启动标识实际变化；初严格jobs相等门槛失败停recover，实际只该失败任务error/updatedAt变化，其他字段和六类全状态保持。服务自动将错误改为service process ended before the job reached a terminal event；重启前失败完整原文保留，不伪造旧记录保持。新V2固定实际两字段变化后保存读回CP，再调用正式applications.recover，只移除Zim隔离operation，原ready代次/全部旧历史不变，未改保护或绕过guard。
+
+恢复后job-1791804930002-1用实际Linux绝对配置路径与COMPATFORGE_FONT_CONFIG_SHA256诊断请求启动，正式定义/launcher未改；Core固定摘要检查通过但GUI仍中文方框和英文裁切，无诊断font-cache，日志只有两个XDGwarning112B。未证明Windows Fontconfig加载了该配置，也未定位具体函数/HRESULT，不称修复。File/Quit正常0，仅第二诊断；没有编辑保存、SaveCopy或显式新进程Open输出。
+
+第二GUI后system.reg3424774→3424636B、user.reg101679→101610B和index.db65536B同大小字节变，真实前后原文私有保存。文本diff309/28行；二进制index.db的89行文本差分只是有损诊断，不证明SQLite语义或键值等价。只读观察不CP/restart，新实际pins固定后才完整CP保存读回/正常Core与Store重启；452Core全任务/134完整SQLite行、全部字段/代次/信任/正式配置/防护七类精确同，新Zim pins和旧57固定数据保持。完整私有CP zim-20261012/after-restart.json SHA3c22b2f6791fd553e45a4432d924947ec1a2e3fd0274ef83a2009f10b37a81a7，不入库。
+
+运行目录仍candidate-v63/root1/role72，59条=57应用+2夹具、123实际签名目标/68公共JSON。Zim和CopyQ都不在活动目录；本轮没有TUF签名/目录/市场变化。旧root和全部签名历史按上一轮3240immutable核对保持。Core launcher-cwd-v11-r1和Store managed-msi-v2摘要保持，Provider v2未部署。核对仅旧固定验收数据、本轮1256程序、3registry及选定Zim配置/笔记；非全应用FS，最近64IPC不替代完整SQLite，core查询可写已有scratch。
+
+失败按独立failures记录保持：exitCode/events结构假设各KeyError先停CP，真实结构读取后新V2；PowerShell引用ParserError在写前停；sudo缺失策略查询未重启，pkaction只读后正常桌面重启；boot后jobs严格断言停恢复，真实两字段范围更正后才继续。缺失路径猜读、无效glob和截断输出不当已完成检查或运行时缺陷。旧helper、失败/部分原文保持，不称历史全部门槛有效；旧Scribus私有V1 canonical下载失败raw丢失限制不补造恢复。
+
+三个JPEG均诊断：01默认导入缺字、02字体搜索无结果、03固定配置诊断仍缺字；不包括密码/登录画面。自然锁屏及重启后已有授权账号正常一次提交登录，认证/锁屏/不自动息屏配置保持。没有Core/程序/globalcontext/DLL/runtime修复，只有未成功的请求级字体配置诊断。直接中文键盘输入、编辑保存/导出/重开、完整wiki/链接/插件/搜索/附件/图片/大坏输入、联网/新机注册/迁移/跨版本/无人值守和GUI市场按钮均未验收。
+
+下一轮读取当前Zim pending台账、运行证据及最终冻结，不重复安装；可继续受控定位字体配置或选择另一官方固定许可候选。当前只读rolling-current-state-zim-pending-20261012.py须经rolling-guest-20261010.py严格SSH发送stdin客体执行；旧448/134 gVim助手只历史，不重新强求旧数。独立审查和Git真实index/commit审计另记，不代替GUI或私有CP独立重演。
