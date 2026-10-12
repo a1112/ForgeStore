@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "coreJobs": 484,
+  "fullStoreRows": 142,
+  "metadataVersion": 76,
+  "rootVersion": 1,
+  "candidateCatalogue": "candidate-v67",
+  "catalogueEntries": 63,
+  "signedActualTargets": 131,
+  "publicCatalogueJsonFiles": 72,
+  "normalRestartFullFieldEqualityPassed": true,
+  "allTerminal": true,
+  "oldProcessIds": {
+    "compatforge.service": "38188",
+    "forge-store.service": "38204"
+  },
+  "newProcessIds": {
+    "compatforge.service": "41968",
+    "forge-store.service": "41984"
+  },
+  "checkpoints": {
+    "beforeRestart": {
+      "file": "before-normal-restart.json",
+      "sha256": "bc3ba48c900cc8500115b904bc7440c389499ae3d28d976dae9fadaeb70575b6",
+      "coreJobs": 484,
+      "fullStoreRows": 142
+    },
+    "afterRestart": {
+      "file": "after-final-restart.json",
+      "sha256": "76142d7031bf05ad9b1fe79c7e98f088eb886ca80addea6dfe94bdb1411669af",
+      "coreJobs": 484,
+      "fullStoreRows": 142
+    }
+  },
+  "generationId": "gen-job-1791838596481-1",
+  "failedGuiJob": {
+    "id": "job-1791838699015-2",
+    "generationId": "gen-job-1791838596481-1",
+    "kind": "launch",
+    "status": "failed",
+    "error": "process exited unsuccessfully",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 41383,
+        "requestId": "job-1791838699015-2",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 279166,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791838596481-1/prefix",
+        "requestId": "job-1791838699015-2",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 279210,
+        "exit": {
+          "code": 1,
+          "success": false
+        },
+        "kind": "exited",
+        "requestId": "job-1791838699015-2",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ]
+  },
+  "finalDataAndConfigurationPins": {
+    "system.reg": {
+      "sizeBytes": 3925198,
+      "sha256": "91389e685aa520f30441eb49955d3fff636244e7622288f8d70bb431ec291bb2"
+    },
+    "user.reg": {
+      "sizeBytes": 104213,
+      "sha256": "3b7be55b58fdee2c806c3d7ed45f478a0fee00b0c20df163097a276dd3a05f97"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "b79eab8f0f2488ef4c8118c6c7be43d6e7704ccdeea0a72f9882c2dbe88f7b0c"
+    },
+    "drive_c/AegisubTests/原始字幕.ass": {
+      "sizeBytes": 693,
+      "sha256": "91660e44920cb68340ee3e4367b9c694f15762927318c9730f61511c77c98058"
+    },
+    "drive_c/AegisubTests/aegisub-crash.txt": {
+      "sizeBytes": 10770,
+      "sha256": "dddb9513492b571dbd57826f38c371abbe5ef81f67956f8a5fcb9bc8d8945181"
+    },
+    "drive_c/users/forge/AppData/Roaming/Aegisub/crashdumps/3.2.2-2026-10-12-20-58-21-516.dmp": {
+      "sizeBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "drive_c/users/forge/AppData/Roaming/Aegisub/hotkey.json": {
+      "sizeBytes": 5568,
+      "sha256": "e4a2a23d79770742a58df82cd19e5b57245149f7e900238192bded2bc5a8c65c"
+    },
+    "drive_c/users/forge/AppData/Roaming/Aegisub/log/2026-10-12-20-58-21-3262.json": {
+      "sizeBytes": 3519,
+      "sha256": "23a6421ea7a8aad9f6f59a2e31df332a14d13e8ffa53004cede8786eae3206cd"
+    }
+  },
+  "currentlyAbsentOutputPaths": [
+    "drive_c/AegisubTests/original.ass",
+    "drive_c/AegisubTests/original.srt"
+  ],
+  "registryDifferencesFromInstallation": {
+    "system.reg": {
+      "old": {
+        "sizeBytes": 3931739,
+        "sha256": "7573ec73b6f68e3b3d0b41291a1fbf21ddffb04d966cf0f4d6339f808c6a3d1f"
+      },
+      "new": {
+        "sizeBytes": 3925198,
+        "sha256": "91389e685aa520f30441eb49955d3fff636244e7622288f8d70bb431ec291bb2"
+      },
+      "privateBeforeRawAvailable": false,
+      "causeOrKeyValueEquivalenceEstablished": false
+    },
+    "user.reg": {
+      "old": {
+        "sizeBytes": 102820,
+        "sha256": "140c9e2f1d2d1292f7a9f72b8ab0149bda9a28ae5c619bdcd30754443a771e97"
+      },
+      "new": {
+        "sizeBytes": 104213,
+        "sha256": "3b7be55b58fdee2c806c3d7ed45f478a0fee00b0c20df163097a276dd3a05f97"
+      },
+      "privateBeforeRawAvailable": false,
+      "causeOrKeyValueEquivalenceEstablished": false
+    }
+  },
+  "selectedConfigurationLocations": {
+    "drive_c/users/forge/AppData/Roaming/Aegisub": {
+      "exists": true,
+      "files": [
+        "drive_c/users/forge/AppData/Roaming/Aegisub/crashdumps/3.2.2-2026-10-12-20-58-21-516.dmp",
+        "drive_c/users/forge/AppData/Roaming/Aegisub/hotkey.json",
+        "drive_c/users/forge/AppData/Roaming/Aegisub/log/2026-10-12-20-58-21-3262.json"
+      ]
+    },
+    "drive_c/users/forge/AppData/Local/Aegisub": {
+      "exists": false,
+      "files": []
+    }
+  },
+  "allPreviousFullStateFieldsAndFixedDataPreserved": true,
+  "allAppFilesystemFilesTraversed": false,
+  "guiAccepted": false,
+  "published": false,
+  "recovered": false,
+  "vmRebooted": false,
+  "formalRepairApplied": false
+}

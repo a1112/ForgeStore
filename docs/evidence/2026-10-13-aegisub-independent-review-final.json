@@ -1,0 +1,1014 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "date": "2026-10-13",
+  "applicationId": "aegisub",
+  "version": "3.2.2",
+  "phase": "independent FINAL pending evidence review before first real Git stage",
+  "baseCommit": "2df924ef50e67b4b516a3e5b17ddebb008418193",
+  "prospectiveManifest": {
+    "path": ".transfer/aegisub-prospective-files-v2-20261013.json",
+    "sizeBytes": 7731,
+    "sha256": "f6ae3e13e1e210d2ccd84d8dd129fc59e9ac71537a94e183d0ea20dbbc289d01",
+    "files": {
+      ".gitattributes": {
+        "sizeBytes": 34154,
+        "sha256": "bbc755917c6b52db8243da256afe400854aa27d60fb549b8ca83bcb4c5adc1cc"
+      },
+      "docs/evidence/2026-10-13-aegisub-current-state.json": {
+        "sizeBytes": 912,
+        "sha256": "9893af12b297181161f5252b28ffd253b96736799f0f02aed28715b3e9da13c7"
+      },
+      "docs/evidence/2026-10-13-aegisub-failures.json": {
+        "sizeBytes": 2445,
+        "sha256": "6e9ffad986fe7d1b5700d028983c466c926bad9de4256b036abfad41d263cabe"
+      },
+      "docs/evidence/2026-10-13-aegisub-git-byte-preservation-precheck.json": {
+        "sizeBytes": 2104,
+        "sha256": "080a494d3cde155f931c2069b2b6c7c53eebd3c6a0e6f837cd6f142e719a7ce1"
+      },
+      "docs/evidence/2026-10-13-aegisub-git-precheck-final.json": {
+        "sizeBytes": 679,
+        "sha256": "747fbb0199588972bb0df6f13d359bb394023086c3bfbed18f8759c5919255be"
+      },
+      "docs/evidence/2026-10-13-aegisub-gui-diagnostic.json": {
+        "sizeBytes": 5282,
+        "sha256": "2a51c0e036c2c8aab88d70da924ca2b3a5355449dd3de3bd369b69e3e0caa34e"
+      },
+      "docs/evidence/2026-10-13-aegisub-installation.json": {
+        "sizeBytes": 14678,
+        "sha256": "968356c8119248c3fa6a9b05907406871a0a5bca0c2c2552d2d672d6387dbb2d"
+      },
+      "docs/evidence/2026-10-13-aegisub-pending-summary.json": {
+        "sizeBytes": 1033,
+        "sha256": "3b7f72d37dd88dcf442f3962bac7a2d9db8720521e5a6f3a79e85877f4a313f4"
+      },
+      "docs/evidence/2026-10-13-aegisub-runtime-recovery.json": {
+        "sizeBytes": 5054,
+        "sha256": "b05bc508192df7a676bd89ccf3a81f56e6b1054bce0f5461c31e6ec133e8b1a8"
+      },
+      "docs/evidence/2026-10-13-aegisub-scope-and-failure-corrections.json": {
+        "sizeBytes": 1561,
+        "sha256": "cf1a7a0144a747eed58f45a2b37902775d355bb58d8b81a7849c4ce78e3acfed"
+      },
+      "docs/evidence/2026-10-13-aegisub-source.json": {
+        "sizeBytes": 5890,
+        "sha256": "57e804ec8a46afe23dd22e7308165d40df65d48ffff8dd6373434876941bef78"
+      },
+      "docs/evidence/aegisub-pending-20261013/01-first-start-crash.jpg": {
+        "sizeBytes": 55056,
+        "sha256": "edef06731b0ad5a1c83118b0cf8c01a3dbd40c642c572a8de0e9e8eda4a8c812"
+      },
+      "docs/evidence/aegisub-pending-20261013/02-error-details.jpg": {
+        "sizeBytes": 96165,
+        "sha256": "08814321950ba1323fb366f5ac785e1f9350bcdd2039e6f1b50a86707fda0f2b"
+      },
+      "docs/evidence/aegisub-pending-20261013/aegisub-crash.txt": {
+        "sizeBytes": 10770,
+        "sha256": "dddb9513492b571dbd57826f38c371abbe5ef81f67956f8a5fcb9bc8d8945181"
+      },
+      "docs/evidence/aegisub-pending-20261013/market-input.ass": {
+        "sizeBytes": 693,
+        "sha256": "58a7dc4236d0a4a7e3e946357cd9b536490c47da96b8a2415817617f4168650f"
+      },
+      "docs/evidence/aegisub-pending-20261013/original-input.ass": {
+        "sizeBytes": 693,
+        "sha256": "91660e44920cb68340ee3e4367b9c694f15762927318c9730f61511c77c98058"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/LICENCE": {
+        "sizeBytes": 1980,
+        "sha256": "dac4a32575f6272a1285e03e957d5f67cd8682db717cab92d83c55a9dadbe748"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/README.md": {
+        "sizeBytes": 1677,
+        "sha256": "2f30221fac49d534b5f5c8e3023ae879fe65c22cfccae7ae56e5d67aee815ffe"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/aegisub3.iss": {
+        "sizeBytes": 3148,
+        "sha256": "03f32aa370cdb5b1c03113c1f27036b4e736f5c95ec914533c89f8835c7ba9c9"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/aegisub3_64.iss": {
+        "sizeBytes": 60,
+        "sha256": "e00e5c2fd337064abaee94bd706ab4499176035763970a9b5310516e8711c4d1"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_assdraw.iss": {
+        "sizeBytes": 2052,
+        "sha256": "4ebd3f80648f9d4b555f7e182383daeb86300341df6910ba8adf8c701cda044f"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_associations.iss": {
+        "sizeBytes": 22422,
+        "sha256": "200999174a4049398b1a748d4534bb7ee5e0400681f6510478db460886bea616"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_automation.iss": {
+        "sizeBytes": 5441,
+        "sha256": "6e336328bead7b75b61191650e2a2382c2b03b57d51078e9b5cba35fe3a1baa6"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_codecs_64.iss": {
+        "sizeBytes": 1909,
+        "sha256": "0724f7a44ab17ea32ebc4ef625dafddf04ed6852786b5d3a58e99c15d8419a08"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_mainprogram.iss": {
+        "sizeBytes": 3184,
+        "sha256": "d1cc6c85b8e422ac685a5d4739fbc22814427454e3b8919bdd4db4dbc1a77b86"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_runtimes.iss": {
+        "sizeBytes": 2060,
+        "sha256": "19d11cc73aa251f9c91e47d1efad407436aa39ed80aa1571c1e19e97a53e3f43"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_setupbase.iss": {
+        "sizeBytes": 5053,
+        "sha256": "051c153b3932fe8bb4c21ae97a7d0b7878efd00e90c66e44c805e4e4e5088b86"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_spelling.iss": {
+        "sizeBytes": 2032,
+        "sha256": "18056a0140454a7a92292aebc3a3cc2256bec810850cf9773fef357363a50fee"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_translations.iss": {
+        "sizeBytes": 7744,
+        "sha256": "746fcfa4a7133696d6db69e0a3c7481a43c39a37ae1056ce90cee3661313cf72"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/license.txt": {
+        "sizeBytes": 1510,
+        "sha256": "4739752067a1c832c14b7d520016c1ad65b978b867172409f27609a7c184aa21"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/template.ass": {
+        "sizeBytes": 631,
+        "sha256": "592512ee034d5530e1f5d613a2cd5a503888e0e53ab92038d298cb3218625422"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/src/ass_dialogue.cpp": {
+        "sizeBytes": 8499,
+        "sha256": "64701b062aa0760a4b6c7a3042111de3784e6c1bacd853cf15463e0b950eae5b"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/src/ass_file.cpp": {
+        "sizeBytes": 9405,
+        "sha256": "cf020d48a467875362223c2eae68f1b386a7b9014325fc32809961ee21383b4e"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/src/ass_style.cpp": {
+        "sizeBytes": 6770,
+        "sha256": "3a4cf14aacc86c5498f6fd2e08a92882a83a07ea12d1fe420a4fbe11a58405f4"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/src/command/subtitle.cpp": {
+        "sizeBytes": 14360,
+        "sha256": "3d476f7fe865443d7576b1a45970c4cc8794803baf3d0b99bfb43c5d21afdf8f"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/src/dialog_search_replace.cpp": {
+        "sizeBytes": 7823,
+        "sha256": "f266ad23c0691993c4d6b69b1eeb92ca17bb79d308e107e4efbf7dc73bd136ee"
+      },
+      "docs/evidence/aegisub-pending-20261013/source/src/frame_main.cpp": {
+        "sizeBytes": 10530,
+        "sha256": "b1a85c8c33bfa4f9a769f8200f6458d180cf9af6821631056f96414769a74654"
+      },
+      "docs/windows-1000-progress.json": {
+        "sizeBytes": 75933,
+        "sha256": "341dbf54a5eee0339a92fa2573fee5d448386b2a080031662cc0e06f37271413"
+      },
+      "docs/windows-rolling-20261013-aegisub-pending.md": {
+        "sizeBytes": 6082,
+        "sha256": "495638c33f92879a9eb80ee5fd4c463e25eeb842aaf5614dca3fa21a71175526"
+      }
+    }
+  },
+  "initialReview": {
+    "path": ".transfer/aegisub-review-initial-observations-20261013-unique-a.json",
+    "sizeBytes": 29188,
+    "sha256": "552d54018474b7c9233f36256dbfa3d0139011c52d77aa901ab136ce95cf7f84",
+    "initialManifest": {
+      "path": "aegisub-prospective-files-20261013.json",
+      "sizeBytes": 7407,
+      "sha256": "ad8e74be7680af34cab816eb8efc20676732d57e0423bb597f845d2838576dac",
+      "files": {
+        ".gitattributes": {
+          "sizeBytes": 34154,
+          "sha256": "bbc755917c6b52db8243da256afe400854aa27d60fb549b8ca83bcb4c5adc1cc"
+        },
+        "docs/evidence/2026-10-13-aegisub-current-state.json": {
+          "sizeBytes": 912,
+          "sha256": "9893af12b297181161f5252b28ffd253b96736799f0f02aed28715b3e9da13c7"
+        },
+        "docs/evidence/2026-10-13-aegisub-failures.json": {
+          "sizeBytes": 2445,
+          "sha256": "6e9ffad986fe7d1b5700d028983c466c926bad9de4256b036abfad41d263cabe"
+        },
+        "docs/evidence/2026-10-13-aegisub-git-byte-preservation-precheck.json": {
+          "sizeBytes": 2104,
+          "sha256": "080a494d3cde155f931c2069b2b6c7c53eebd3c6a0e6f837cd6f142e719a7ce1"
+        },
+        "docs/evidence/2026-10-13-aegisub-git-precheck-final.json": {
+          "sizeBytes": 679,
+          "sha256": "747fbb0199588972bb0df6f13d359bb394023086c3bfbed18f8759c5919255be"
+        },
+        "docs/evidence/2026-10-13-aegisub-gui-diagnostic.json": {
+          "sizeBytes": 5282,
+          "sha256": "2a51c0e036c2c8aab88d70da924ca2b3a5355449dd3de3bd369b69e3e0caa34e"
+        },
+        "docs/evidence/2026-10-13-aegisub-installation.json": {
+          "sizeBytes": 14678,
+          "sha256": "968356c8119248c3fa6a9b05907406871a0a5bca0c2c2552d2d672d6387dbb2d"
+        },
+        "docs/evidence/2026-10-13-aegisub-pending-summary.json": {
+          "sizeBytes": 1033,
+          "sha256": "3b7f72d37dd88dcf442f3962bac7a2d9db8720521e5a6f3a79e85877f4a313f4"
+        },
+        "docs/evidence/2026-10-13-aegisub-runtime-recovery.json": {
+          "sizeBytes": 5054,
+          "sha256": "b05bc508192df7a676bd89ccf3a81f56e6b1054bce0f5461c31e6ec133e8b1a8"
+        },
+        "docs/evidence/2026-10-13-aegisub-source.json": {
+          "sizeBytes": 5890,
+          "sha256": "57e804ec8a46afe23dd22e7308165d40df65d48ffff8dd6373434876941bef78"
+        },
+        "docs/evidence/aegisub-pending-20261013/01-first-start-crash.jpg": {
+          "sizeBytes": 55056,
+          "sha256": "edef06731b0ad5a1c83118b0cf8c01a3dbd40c642c572a8de0e9e8eda4a8c812"
+        },
+        "docs/evidence/aegisub-pending-20261013/02-error-details.jpg": {
+          "sizeBytes": 96165,
+          "sha256": "08814321950ba1323fb366f5ac785e1f9350bcdd2039e6f1b50a86707fda0f2b"
+        },
+        "docs/evidence/aegisub-pending-20261013/aegisub-crash.txt": {
+          "sizeBytes": 10770,
+          "sha256": "dddb9513492b571dbd57826f38c371abbe5ef81f67956f8a5fcb9bc8d8945181"
+        },
+        "docs/evidence/aegisub-pending-20261013/market-input.ass": {
+          "sizeBytes": 693,
+          "sha256": "58a7dc4236d0a4a7e3e946357cd9b536490c47da96b8a2415817617f4168650f"
+        },
+        "docs/evidence/aegisub-pending-20261013/original-input.ass": {
+          "sizeBytes": 693,
+          "sha256": "91660e44920cb68340ee3e4367b9c694f15762927318c9730f61511c77c98058"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/LICENCE": {
+          "sizeBytes": 1980,
+          "sha256": "dac4a32575f6272a1285e03e957d5f67cd8682db717cab92d83c55a9dadbe748"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/README.md": {
+          "sizeBytes": 1677,
+          "sha256": "2f30221fac49d534b5f5c8e3023ae879fe65c22cfccae7ae56e5d67aee815ffe"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/aegisub3.iss": {
+          "sizeBytes": 3148,
+          "sha256": "03f32aa370cdb5b1c03113c1f27036b4e736f5c95ec914533c89f8835c7ba9c9"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/aegisub3_64.iss": {
+          "sizeBytes": 60,
+          "sha256": "e00e5c2fd337064abaee94bd706ab4499176035763970a9b5310516e8711c4d1"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_assdraw.iss": {
+          "sizeBytes": 2052,
+          "sha256": "4ebd3f80648f9d4b555f7e182383daeb86300341df6910ba8adf8c701cda044f"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_associations.iss": {
+          "sizeBytes": 22422,
+          "sha256": "200999174a4049398b1a748d4534bb7ee5e0400681f6510478db460886bea616"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_automation.iss": {
+          "sizeBytes": 5441,
+          "sha256": "6e336328bead7b75b61191650e2a2382c2b03b57d51078e9b5cba35fe3a1baa6"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_codecs_64.iss": {
+          "sizeBytes": 1909,
+          "sha256": "0724f7a44ab17ea32ebc4ef625dafddf04ed6852786b5d3a58e99c15d8419a08"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_mainprogram.iss": {
+          "sizeBytes": 3184,
+          "sha256": "d1cc6c85b8e422ac685a5d4739fbc22814427454e3b8919bdd4db4dbc1a77b86"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_runtimes.iss": {
+          "sizeBytes": 2060,
+          "sha256": "19d11cc73aa251f9c91e47d1efad407436aa39ed80aa1571c1e19e97a53e3f43"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_setupbase.iss": {
+          "sizeBytes": 5053,
+          "sha256": "051c153b3932fe8bb4c21ae97a7d0b7878efd00e90c66e44c805e4e4e5088b86"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_spelling.iss": {
+          "sizeBytes": 2032,
+          "sha256": "18056a0140454a7a92292aebc3a3cc2256bec810850cf9773fef357363a50fee"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_translations.iss": {
+          "sizeBytes": 7744,
+          "sha256": "746fcfa4a7133696d6db69e0a3c7481a43c39a37ae1056ce90cee3661313cf72"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/license.txt": {
+          "sizeBytes": 1510,
+          "sha256": "4739752067a1c832c14b7d520016c1ad65b978b867172409f27609a7c184aa21"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/template.ass": {
+          "sizeBytes": 631,
+          "sha256": "592512ee034d5530e1f5d613a2cd5a503888e0e53ab92038d298cb3218625422"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/src/ass_dialogue.cpp": {
+          "sizeBytes": 8499,
+          "sha256": "64701b062aa0760a4b6c7a3042111de3784e6c1bacd853cf15463e0b950eae5b"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/src/ass_file.cpp": {
+          "sizeBytes": 9405,
+          "sha256": "cf020d48a467875362223c2eae68f1b386a7b9014325fc32809961ee21383b4e"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/src/ass_style.cpp": {
+          "sizeBytes": 6770,
+          "sha256": "3a4cf14aacc86c5498f6fd2e08a92882a83a07ea12d1fe420a4fbe11a58405f4"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/src/command/subtitle.cpp": {
+          "sizeBytes": 14360,
+          "sha256": "3d476f7fe865443d7576b1a45970c4cc8794803baf3d0b99bfb43c5d21afdf8f"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/src/dialog_search_replace.cpp": {
+          "sizeBytes": 7823,
+          "sha256": "f266ad23c0691993c4d6b69b1eeb92ca17bb79d308e107e4efbf7dc73bd136ee"
+        },
+        "docs/evidence/aegisub-pending-20261013/source/src/frame_main.cpp": {
+          "sizeBytes": 10530,
+          "sha256": "b1a85c8c33bfa4f9a769f8200f6458d180cf9af6821631056f96414769a74654"
+        },
+        "docs/windows-1000-progress.json": {
+          "sizeBytes": 75933,
+          "sha256": "341dbf54a5eee0339a92fa2573fee5d448386b2a080031662cc0e06f37271413"
+        },
+        "docs/windows-rolling-20261013-aegisub-pending.md": {
+          "sizeBytes": 6082,
+          "sha256": "495638c33f92879a9eb80ee5fd4c463e25eeb842aaf5614dca3fa21a71175526"
+        }
+      }
+    }
+  },
+  "checks": {
+    "initial38ProspectiveFullBytes": {
+      "passed": true,
+      "observed": {
+        "manifest": {
+          "sizeBytes": 7407,
+          "sha256": "ad8e74be7680af34cab816eb8efc20676732d57e0423bb597f845d2838576dac"
+        },
+        "files": 38
+      }
+    },
+    "old3790ImmutableWholeRawBytes": {
+      "passed": true,
+      "observed": {
+        "oldEvidence": 3792,
+        "immutableRawFiles": 3790,
+        "mutablePaths": [
+          ".gitattributes",
+          "docs/windows-1000-progress.json"
+        ]
+      }
+    },
+    "old61AcceptedAnd16PendingAllFieldsExact": {
+      "passed": true,
+      "observed": {
+        "accepted": 61,
+        "oldPendingPreserved": 16,
+        "newPending": {
+          "id": "aegisub",
+          "name": "Aegisub",
+          "version": "3.2.2",
+          "stage": "installed-startup-msvcr120-concurrency-unimplemented",
+          "sourceUrl": "https://github.com/Aegisub/Aegisub/releases/download/v3.2.2/Aegisub-3.2.2-64.exe",
+          "sha256": "19ae304c586f5d59171c44e89037006dda2c511c866fa9e453038eaadc58afcd",
+          "sizeBytes": 20891980,
+          "license": "source-BSD3-with-file-exceptions-binary-GPL-dependency-closure-unverified",
+          "installationJobId": "job-1791838596481-1",
+          "installationJobStatus": "succeeded",
+          "selectedGeneration": "gen-job-1791838596481-1",
+          "installed": true,
+          "guiAccepted": false,
+          "published": false,
+          "countsAsCompleted": false,
+          "artifactEvidence": "docs/evidence/2026-10-13-aegisub-source.json",
+          "guiEvidence": "docs/evidence/2026-10-13-aegisub-gui-diagnostic.json",
+          "evidence": "docs/windows-rolling-20261013-aegisub-pending.md",
+          "blocker": "First native startup crashes with actual Wine report msvcr120.dll Concurrency _NewCollection unimplemented; normal native Close then exit1. No subtitle editor/input Open/edit/save/reopen/market. One original install, no DLL/runtime repair."
+        },
+        "otherOldKeysPreservedExceptUpdatedStatusSummary": true,
+        "updatedStatusSummary": {
+          "acceptedLocalMarket": 61,
+          "explicitlyBlockedCandidates": 17,
+          "remainingSourceReviewCandidates": 0,
+          "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
+          "executionPendingCandidates": 0,
+          "pendingCandidates": 17
+        }
+      }
+    },
+    "5033Tracked3792Evidence1241OutsideIndexHead": {
+      "passed": true,
+      "observed": {
+        "tracked": 5033,
+        "oldEvidence": 3792,
+        "outsideIndexModeAndBlobMatchesHead": 1241,
+        "outsideAllWorkingRawEqualityClaimed": false,
+        "indexEmpty": true,
+        "parentScopeReceipt": {
+          "sizeBytes": 254810,
+          "sha256": "d56d1666ca5108c4592717f79ba48e8fa6b635e186f1e5c231985b88d823fc62"
+        }
+      }
+    },
+    "twoFullLocalAssetsAnd200ContentLengthReceipts": {
+      "passed": true,
+      "observed": {
+        "fullLocalAssets": {
+          "Aegisub-3.2.2-64.exe": {
+            "sizeBytes": 20891980,
+            "sha256": "19ae304c586f5d59171c44e89037006dda2c511c866fa9e453038eaadc58afcd",
+            "md5": "3cb95e30c73b7a227a4590b0cd986ddb"
+          },
+          "aegisub-3.2.2.tar.xz": {
+            "sizeBytes": 5252052,
+            "sha256": "c55e33945b82d8513c02ea6e782f0d72c726adcd3707e95b8c0022f6151e6885",
+            "md5": "d80e852c34811add358c06d77f5cd40d"
+          }
+        },
+        "completeReceipts": {
+          "Aegisub-3.2.2-64.exe": {
+            "sizeBytes": 2289,
+            "sha256": "46dcf35a6ac37472818d9e8b734f34502b77a31e5996760c4676a8e3181a377f"
+          },
+          "aegisub-3.2.2.tar.xz": {
+            "sizeBytes": 2349,
+            "sha256": "0a9a0c4f1c026515bac5fd88fa1a3edcede8b84af4b9ef5bfd50fa22a79a56c7"
+          }
+        },
+        "terminalReceipt": {
+          "sizeBytes": 6181,
+          "sha256": "6f4939258344ceab5754671c5511256c5f37b19590c1cc81f53668c3d73e0ae6"
+        },
+        "noFreshNetworkGetOrSignedRedirectOutput": true
+      }
+    },
+    "officialSavedPageLinksAndMd5ActualBytes": {
+      "passed": true,
+      "observed": {
+        "rawOfficialPage": {
+          "sizeBytes": 60212,
+          "sha256": "0413c202e2fd6ac9a8f1869e169a49b51e402f09ee525692fa3323286ca42606"
+        },
+        "twoFixedReleaseLinksWithExactMd5Rows": true,
+        "strongCryptographicAuthenticityClaimed": false,
+        "localSha256Only": true
+      }
+    },
+    "21RawSourceMembersMatchActual2264MemberArchive": {
+      "passed": true,
+      "observed": {
+        "ordinaryArchiveMembers": 2264,
+        "selectedMembers": {
+          "LICENCE": {
+            "sizeBytes": 1980,
+            "sha256": "dac4a32575f6272a1285e03e957d5f67cd8682db717cab92d83c55a9dadbe748"
+          },
+          "README.md": {
+            "sizeBytes": 1677,
+            "sha256": "2f30221fac49d534b5f5c8e3023ae879fe65c22cfccae7ae56e5d67aee815ffe"
+          },
+          "packages/win_installer/aegisub3.iss": {
+            "sizeBytes": 3148,
+            "sha256": "03f32aa370cdb5b1c03113c1f27036b4e736f5c95ec914533c89f8835c7ba9c9"
+          },
+          "packages/win_installer/aegisub3_64.iss": {
+            "sizeBytes": 60,
+            "sha256": "e00e5c2fd337064abaee94bd706ab4499176035763970a9b5310516e8711c4d1"
+          },
+          "packages/win_installer/fragment_setupbase.iss": {
+            "sizeBytes": 5053,
+            "sha256": "051c153b3932fe8bb4c21ae97a7d0b7878efd00e90c66e44c805e4e4e5088b86"
+          },
+          "packages/win_installer/fragment_mainprogram.iss": {
+            "sizeBytes": 3184,
+            "sha256": "d1cc6c85b8e422ac685a5d4739fbc22814427454e3b8919bdd4db4dbc1a77b86"
+          },
+          "packages/win_installer/fragment_associations.iss": {
+            "sizeBytes": 22422,
+            "sha256": "200999174a4049398b1a748d4534bb7ee5e0400681f6510478db460886bea616"
+          },
+          "packages/win_installer/fragment_runtimes.iss": {
+            "sizeBytes": 2060,
+            "sha256": "19d11cc73aa251f9c91e47d1efad407436aa39ed80aa1571c1e19e97a53e3f43"
+          },
+          "packages/win_installer/fragment_codecs_64.iss": {
+            "sizeBytes": 1909,
+            "sha256": "0724f7a44ab17ea32ebc4ef625dafddf04ed6852786b5d3a58e99c15d8419a08"
+          },
+          "packages/win_installer/fragment_automation.iss": {
+            "sizeBytes": 5441,
+            "sha256": "6e336328bead7b75b61191650e2a2382c2b03b57d51078e9b5cba35fe3a1baa6"
+          },
+          "packages/win_installer/fragment_translations.iss": {
+            "sizeBytes": 7744,
+            "sha256": "746fcfa4a7133696d6db69e0a3c7481a43c39a37ae1056ce90cee3661313cf72"
+          },
+          "packages/win_installer/fragment_spelling.iss": {
+            "sizeBytes": 2032,
+            "sha256": "18056a0140454a7a92292aebc3a3cc2256bec810850cf9773fef357363a50fee"
+          },
+          "packages/win_installer/fragment_assdraw.iss": {
+            "sizeBytes": 2052,
+            "sha256": "4ebd3f80648f9d4b555f7e182383daeb86300341df6910ba8adf8c701cda044f"
+          },
+          "packages/win_installer/license.txt": {
+            "sizeBytes": 1510,
+            "sha256": "4739752067a1c832c14b7d520016c1ad65b978b867172409f27609a7c184aa21"
+          },
+          "packages/win_installer/template.ass": {
+            "sizeBytes": 631,
+            "sha256": "592512ee034d5530e1f5d613a2cd5a503888e0e53ab92038d298cb3218625422"
+          },
+          "src/ass_file.cpp": {
+            "sizeBytes": 9405,
+            "sha256": "cf020d48a467875362223c2eae68f1b386a7b9014325fc32809961ee21383b4e"
+          },
+          "src/ass_dialogue.cpp": {
+            "sizeBytes": 8499,
+            "sha256": "64701b062aa0760a4b6c7a3042111de3784e6c1bacd853cf15463e0b950eae5b"
+          },
+          "src/ass_style.cpp": {
+            "sizeBytes": 6770,
+            "sha256": "3a4cf14aacc86c5498f6fd2e08a92882a83a07ea12d1fe420a4fbe11a58405f4"
+          },
+          "src/dialog_search_replace.cpp": {
+            "sizeBytes": 7823,
+            "sha256": "f266ad23c0691993c4d6b69b1eeb92ca17bb79d308e107e4efbf7dc73bd136ee"
+          },
+          "src/frame_main.cpp": {
+            "sizeBytes": 10530,
+            "sha256": "b1a85c8c33bfa4f9a769f8200f6458d180cf9af6821631056f96414769a74654"
+          },
+          "src/command/subtitle.cpp": {
+            "sizeBytes": 14360,
+            "sha256": "3d476f7fe865443d7576b1a45970c4cc8794803baf3d0b99bfb43c5d21afdf8f"
+          }
+        },
+        "noArchiveExtractionOrRewriteByReviewer": true
+      }
+    },
+    "sourceLicenseAndNonUtf8OriginalBoundary": {
+      "passed": true,
+      "observed": {
+        "mainSource": "BSD3",
+        "fileExceptions": "ISC/MIT/MPL retained",
+        "binaryUsuallyGplDependencyWarning": true,
+        "fullBinaryLicenseClosure": false,
+        "fragmentStrictUtf8FailureByte": "0xa9",
+        "rawBytesPreserved": true
+      }
+    },
+    "installed1510LicenseCompleteRawSourceEquality": {
+      "passed": true,
+      "observed": {
+        "privateReadonlyLicenseReceipt": {
+          "sizeBytes": 2235,
+          "sha256": "3bf380dcc38265587d7eca0c622c6bef4e82222dcb92f6af159191350718d072"
+        },
+        "licensePin": {
+          "sizeBytes": 1510,
+          "sha256": "4739752067a1c832c14b7d520016c1ad65b978b867172409f27609a7c184aa21"
+        },
+        "entireDecodedRawEqualsSource": true,
+        "noFullBundledClosureConclusion": true
+      }
+    },
+    "installerBootstrapAndNativeArgsScope": {
+      "passed": true,
+      "observed": {
+        "bootstrapPeMachine": "0x14c",
+        "innoDataMarkerCount": 2,
+        "nativeArgs": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\Aegisub",
+          "/NOICONS",
+          "/LANG=en",
+          "/TASKS=checkforupdates"
+        ],
+        "dirUtf8Hex": "2f4449523d433a5c41656769737562",
+        "updateTaskKept": true,
+        "actualWindowsUacOrFullFormatConclusion": false
+      }
+    },
+    "oneInstall87ProgramsStrictReceiptPins": {
+      "passed": true,
+      "observed": {
+        "formalInstallJob": "job-1791838596481-1",
+        "generation": "gen-job-1791838596481-1",
+        "definitionDigest": "sha256:66d8459d74cc3adccd2e17d1dd040a46cdc65ceb26dc4b06ff98a5e3726166e1",
+        "installedProgramFileCount": 87,
+        "programPinsEqualAcrossFailureAndRestartReceipts": true,
+        "mainExePin": {
+          "sizeBytes": 20004352,
+          "sha256": "c3aa3cba4c7f5d21a17af4e8a00c38cbcb14c8f41620b3e254d2fb4a4d006565"
+        },
+        "mainExePeMachineFromActualInspectionReceipt": "0x8664",
+        "mainExeNotEntireAppSize": true,
+        "programBytesNotIndependentlyFetched": true
+      }
+    },
+    "actual10770WineReportAndFailedTerminalJob": {
+      "passed": true,
+      "observed": {
+        "rawReportPin": {
+          "sizeBytes": 10770,
+          "sha256": "dddb9513492b571dbd57826f38c371abbe5ef81f67956f8a5fcb9bc8d8945181"
+        },
+        "firstLine": "Unhandled exception: unimplemented function msvcr120.dll.?_NewCollection@_AsyncTaskCollection@details@Concurrency@@SAPEAV123@PEAV_CancellationTokenState@23@@Z called in 64-bit code (0x006fffff32d977).",
+        "terminalJob": {
+          "id": "job-1791838699015-2",
+          "generationId": "gen-job-1791838596481-1",
+          "kind": "launch",
+          "status": "failed",
+          "error": "process exited unsuccessfully",
+          "events": [
+            {
+              "elapsedMilliseconds": 0,
+              "kind": "started",
+              "processId": 41383,
+              "requestId": "job-1791838699015-2",
+              "schemaVersion": "1",
+              "sequence": 0
+            },
+            {
+              "elapsedMilliseconds": 279166,
+              "kind": "wine-server-stop-requested",
+              "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791838596481-1/prefix",
+              "requestId": "job-1791838699015-2",
+              "schemaVersion": "1",
+              "sequence": 1
+            },
+            {
+              "elapsedMilliseconds": 279210,
+              "exit": {
+                "code": 1,
+                "success": false
+              },
+              "kind": "exited",
+              "requestId": "job-1791838699015-2",
+              "schemaVersion": "1",
+              "sequence": 2
+            }
+          ]
+        },
+        "nativeSaveAsCloseReceipt": true,
+        "wineReportNotWrapperStderr": true,
+        "completeRootCauseOrRepairEstablished": false
+      }
+    },
+    "twoJpegsByteMagicAndVisualInspection": {
+      "passed": true,
+      "observed": {
+        "pins": {
+          "01-first-start-crash": {
+            "sizeBytes": 55056,
+            "sha256": "edef06731b0ad5a1c83118b0cf8c01a3dbd40c642c572a8de0e9e8eda4a8c812"
+          },
+          "02-error-details": {
+            "sizeBytes": 96165,
+            "sha256": "08814321950ba1323fb366f5ac785e1f9350bcdd2039e6f1b50a86707fda0f2b"
+          }
+        },
+        "visuallyInspectedByReviewer": true,
+        "observed": "Wine serious-problem dialog and error details only; no subtitle editor or login screen",
+        "noGuiReplay": true
+      }
+    },
+    "pendingFiniteScopeNotCountedAccepted": {
+      "passed": true,
+      "observed": {
+        "newPending": 17,
+        "accepted": 61,
+        "noSubtitleEditorInputOpenEditSaveReopen": true,
+        "noMarketInstallPublication": true,
+        "runtimeRepairOrBackgroundNetworkAbsenceProved": false
+      }
+    },
+    "synthetic693AssInputsNotGuiAcceptance": {
+      "passed": true,
+      "observed": {
+        "originalPin": {
+          "sizeBytes": 693,
+          "sha256": "91660e44920cb68340ee3e4367b9c694f15762927318c9730f61511c77c98058"
+        },
+        "marketPin": {
+          "sizeBytes": 693,
+          "sha256": "58a7dc4236d0a4a7e3e946357cd9b536490c47da96b8a2415817617f4168650f"
+        },
+        "originalPreplacedButNeverGuiOpened": true,
+        "marketHostOnly": true,
+        "notApplicationsOrCompletedWorkflows": true
+      }
+    },
+    "saved484142RestartCurrentSevenGroupEvidence": {
+      "passed": true,
+      "observed": {
+        "counts": [
+          484,
+          142
+        ],
+        "sevenFullGroupsStaticAssertions": true,
+        "oneNormalTwoServiceRestartReceipt": true,
+        "privateCpDigestOnly": {
+          "file": "aegisub-20261013/after-final-restart.json",
+          "sha256": "76142d7031bf05ad9b1fe79c7e98f088eb886ca80addea6dfe94bdb1411669af"
+        },
+        "guestGuiPrivateCpReplayPerformedByReviewer": false,
+        "queryMayWriteExistingScratch": true,
+        "receiptPins": {
+          "restart": {
+            "sizeBytes": 15353,
+            "sha256": "108037b61e75f530e42274f60d04b51a31209a0e1059d7c94f2b9a15aa603aaf"
+          },
+          "current": {
+            "sizeBytes": 840,
+            "sha256": "dea276006fbe50ce5dadc98c1469aea5f0dabc13776c6cfeabc4024434702451"
+          }
+        }
+      }
+    },
+    "registryChangedPinsOnlySelectedFsBoundary": {
+      "passed": true,
+      "observed": {
+        "registryBeforeRawMissing": true,
+        "sizeAndShaChanges": {
+          "system.reg": {
+            "old": {
+              "sizeBytes": 3931739,
+              "sha256": "7573ec73b6f68e3b3d0b41291a1fbf21ddffb04d966cf0f4d6339f808c6a3d1f"
+            },
+            "new": {
+              "sizeBytes": 3925198,
+              "sha256": "91389e685aa520f30441eb49955d3fff636244e7622288f8d70bb431ec291bb2"
+            },
+            "privateBeforeRawAvailable": false,
+            "causeOrKeyValueEquivalenceEstablished": false
+          },
+          "user.reg": {
+            "old": {
+              "sizeBytes": 102820,
+              "sha256": "140c9e2f1d2d1292f7a9f72b8ab0149bda9a28ae5c619bdcd30754443a771e97"
+            },
+            "new": {
+              "sizeBytes": 104213,
+              "sha256": "3b7be55b58fdee2c806c3d7ed45f478a0fee00b0c20df163097a276dd3a05f97"
+            },
+            "privateBeforeRawAvailable": false,
+            "causeOrKeyValueEquivalenceEstablished": false
+          }
+        },
+        "newPrivateRawNotReadByReviewer": true,
+        "selectedLocationsOnly": {
+          "drive_c/users/forge/AppData/Roaming/Aegisub": {
+            "exists": true,
+            "files": [
+              "drive_c/users/forge/AppData/Roaming/Aegisub/crashdumps/3.2.2-2026-10-12-20-58-21-516.dmp",
+              "drive_c/users/forge/AppData/Roaming/Aegisub/hotkey.json",
+              "drive_c/users/forge/AppData/Roaming/Aegisub/log/2026-10-12-20-58-21-3262.json"
+            ]
+          },
+          "drive_c/users/forge/AppData/Local/Aegisub": {
+            "exists": false,
+            "files": []
+          }
+        },
+        "noBeforeAfterSemanticDiffOrRootCause": true,
+        "absentOutputs": [
+          "drive_c/AegisubTests/original.ass",
+          "drive_c/AegisubTests/original.srt"
+        ]
+      }
+    },
+    "unchangedTufCatalogueScopeReceipt": {
+      "passed": true,
+      "observed": {
+        "candidate": "v67",
+        "root": 1,
+        "roles": 76,
+        "catalogueEntries": 63,
+        "applicationEntries": 61,
+        "fixtures": 2,
+        "signedTargets": 131,
+        "publicJson": 72,
+        "aegisubAbsent": true,
+        "reviewerNewCryptoDownloadOrGuestTufReplay": false,
+        "oldPublicTrustAndCatalogueRawBytesCoveredByFreeze": true
+      }
+    },
+    "actualFailureHistoryLimitationsRetained": {
+      "passed": true,
+      "observed": {
+        "initialQuotedHrefFailureBeforePackageGet": true,
+        "originalNonUtf8SourceRetained": true,
+        "currentSavedPrepareStrictUtf8CompilePass": {
+          "sizeBytes": 17804,
+          "sha256": "75475ccf542e1b5839c8f8431608a0e93b8723659f065302ddb169d145de8adb"
+        },
+        "nativeEncodingFailureCauseNotEstablished": true,
+        "missingGuessedHelpersNotCompletedChecks": true,
+        "originalExactFailureRawToolHistoryOnly": true,
+        "oldScribusOnePrivateRawLossNotRecovered": true
+      }
+    },
+    "32776OldAttributesLfPrefix12PreciseRules": {
+      "passed": true,
+      "observed": {
+        "prefixBytes": 32776,
+        "prefixSha256": "8e5beaefee39e68584c6414e33b0ff7a26c6b785bb92cfea8eb0945274fc2c6b",
+        "suffixLfOnly": true,
+        "exactRules": {
+          "docs/evidence/aegisub-pending-20261013/aegisub-crash.txt": [
+            "whitespace=-blank-at-eol"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/LICENCE": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/aegisub3.iss": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/aegisub3_64.iss": [
+            "-text",
+            "whitespace=cr-at-eol"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_assdraw.iss": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_associations.iss": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_codecs_64.iss": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_mainprogram.iss": [
+            "whitespace=-blank-at-eol"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_runtimes.iss": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_setupbase.iss": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_spelling.iss": [
+            "whitespace=-blank-at-eof"
+          ],
+          "docs/evidence/aegisub-pending-20261013/source/packages/win_installer/fragment_translations.iss": [
+            "whitespace=-blank-at-eof"
+          ]
+        },
+        "noBroadWhitespaceRuleOrRenormalize": true
+      }
+    },
+    "fresh38RawFilterRelativeWhitespaceNoStage": {
+      "passed": true,
+      "observed": {
+        "paths": 38,
+        "diagnostics": [],
+        "indexEmpty": true,
+        "gitAddRenormalizeNotExecuted": true
+      }
+    },
+    "38PublicWholeBytePrivacyKnownPatternScan": {
+      "passed": true,
+      "observed": {
+        "files": 38,
+        "totalBytes": 435913,
+        "findings": [],
+        "sourceLicensesFixturesCrashReportJpegsAllowed": true,
+        "twoImagesVisuallyNoLoginCredentials": true,
+        "noInstallerProgramBinaryPrivateFullCpSignedRedirectQueryInProspective": true,
+        "notAbsoluteProofOfAllConceivableSecrets": true
+      }
+    },
+    "final39ProspectiveWholeBytesManifestV2": {
+      "passed": true,
+      "observed": {
+        "manifest": {
+          "sizeBytes": 7731,
+          "sha256": "f6ae3e13e1e210d2ccd84d8dd129fc59e9ac71537a94e183d0ea20dbbc289d01"
+        },
+        "paths": 39
+      }
+    },
+    "original38PinsUnchangedOneScopeCorrectionAdded": {
+      "passed": true,
+      "observed": {
+        "originalPaths": 38,
+        "allOriginalWholeBytePinsUnchanged": true,
+        "addedPaths": [
+          "docs/evidence/2026-10-13-aegisub-scope-and-failure-corrections.json"
+        ],
+        "oldManifestPreserved": true
+      }
+    },
+    "honestToolHistoryPrivacyAndLicenseCorrection": {
+      "passed": true,
+      "observed": {
+        "scopeCorrectionPin": {
+          "sizeBytes": 1561,
+          "sha256": "cf1a7a0144a747eed58f45a2b37902775d355bb58d8b81a7849c4ce78e3acfed"
+        },
+        "privateSignedQueryDisplayedInParentAndReviewerHostToolHistory": true,
+        "privateQueryTextNotIncludedInPublicFilesOrThisReview": true,
+        "fullLicenseRawEqualityCompleted": true,
+        "fullBundleClosure": false
+      }
+    },
+    "v2SavedPrecheckReceipt": {
+      "passed": true,
+      "observed": {
+        "receiptPin": {
+          "sizeBytes": 136,
+          "sha256": "308136861cd00cdb40ecfd483b4cb888e2e1a4cb67f277d965a0d49ee9a5fec7"
+        },
+        "readOnlyReceipt": true
+      }
+    },
+    "freshAll39RawFilterAndRelativeWhitespaceCheck": {
+      "passed": true,
+      "observed": {
+        "paths": 39,
+        "diagnostics": [],
+        "noGitAddOrRenormalize": true
+      }
+    },
+    "final39WholeBytePrivacyKnownPatterns": {
+      "passed": true,
+      "observed": {
+        "paths": 39,
+        "bytes": 437474,
+        "findings": [],
+        "privateQueryTextNotPresentInPublicProspectiveBytes": true,
+        "permittedRawSourcesLicenseFixturesCrashReportAndTwoViewedJpegs": true,
+        "notAbsoluteProofOfEveryConceivableSecret": true
+      }
+    },
+    "finalImmutableAndIndexStillPreserved": {
+      "passed": true,
+      "observed": {
+        "finalOldImmutableRawChecked": 3790,
+        "headUnchanged": true,
+        "indexEmpty": true,
+        "currentReceiptSha256": "dea276006fbe50ce5dadc98c1469aea5f0dabc13776c6cfeabc4024434702451"
+      }
+    }
+  },
+  "findings": [],
+  "operationalLimitations": [
+    {
+      "kind": "host tool output private signed redirect scope",
+      "parentAndReviewerActualDisplayAcknowledged": true,
+      "queryTextNotInReportOrPublicProspective": true
+    },
+    {
+      "kind": "two initial reviewer helper assertions and one final receipt schema KeyError corrected with originals preserved",
+      "correctedSuccessfulHelper": ".transfer/aegisub-review-readonly-helper-20261013-unique-c.py",
+      "firstFailuresWereNotCompletedChecks": true
+    }
+  ],
+  "observedScopes": {
+    "finalProspectivePaths": 39,
+    "oldEvidence": 3792,
+    "oldImmutableRawBytes": 3790,
+    "fullTrackedRepo": 5033,
+    "outsideEvidenceIndexHeadPaths": 1241,
+    "acceptedAllOldFields": 61,
+    "oldPendingAllFields": 16,
+    "currentPending": 17,
+    "sourceSelectedRawMembers": 21,
+    "sourceArchiveRegularFiles": 2264,
+    "installedProgramPinsReceiptCount": 87,
+    "nativeCrashReportBytes": 10770,
+    "actualJpegsViewed": 2,
+    "installedLicenseFullRawBytesCompared": 1510,
+    "coreJobReceiptCount": 484,
+    "fullStoreRowReceiptCount": 142,
+    "root": 1,
+    "roleVersion": 76,
+    "catalogueCandidate": "v67",
+    "catalogueEntries": 63,
+    "signedTargetReceiptCount": 131,
+    "publicJsonReceiptCount": 72,
+    "guiAccepted": false,
+    "published": false,
+    "countsAsCompleted": false
+  },
+  "limitations": [
+    "This is an independent host read-only evidence audit. The reviewer did not replay guest GUI, formal launch/install jobs, service restarts, remote current-state queries or the complete private checkpoints, and did not mutate repo/index/guest/services/apps/TUF/checkpoints. Only unique reviewer helper and result files were created under .transfer.",
+    "Aegisub is pending, not accepted: one original install succeeded, and the first formal native startup failed with exit 1 after native error-details Save As and Close plus wineserver stop. Two viewed JPEGs show serious-problem and details dialogs only. No subtitle editor, native input Open/edit/save/new-process reopen, About/Chinese display acceptance, independent market install or publication was performed. The two 693-byte ASS fixtures are synthetic inputs, not accepted applications.",
+    "The complete 10770-byte native Wine error report was independently compared to saved actual raw Base64 and hash/size, with the reported msvcr120.dll Concurrency _NewCollection unimplemented function and backtrace modules. This is not wrapper application stderr, and neither a complete source call chain nor a complete root cause or repair is established.",
+    "Both fixed official packages were independently hashed in full, matched terminal HTTPS 200 and Content-Length receipts and the retained official download-page MD5 rows. No new network request was made by this reviewer. MD5 equality is not strong cryptographic authenticity; SHA256 is local only. Upstream SHA/API digest, Authenticode/PGP, source-binary correspondence, reproducibility and latest-release claims remain unverified.",
+    "All 21 selected source files match exact members of the actual 2264-ordinary-file tar archive. Source BSD3 and ISC/MIT/MPL exceptions are retained; README says binaries are usually GPL due to dependencies. Full installed license 1510 raw bytes were independently decoded from the new actual guest readback receipt and compared with source/cache/public raw bytes. Complete bundled dependency license closure is still unverified, and the entire Windows binary is not claimed BSD3.",
+    "Actual installer bootstrap PE Machine 0x14c and two Inno Setup Setup Data (5.5.0) (u) markers were read locally. Main aegisub64.exe 0x8664 and 20004352-byte pin are verified from the actual saved inspection receipt; its program binary was not independently fetched/read by this reviewer. The executable size is not whole-application size. Inno static privileges and associations do not establish real Windows UAC or complete installer behavior; update task remains enabled, no absence of background network is claimed.",
+    "The 87 program pins agree exactly across installation, failure observation and normal restart receipts. Saved 484 Core jobs / 142 full Store rows, seven full classes and current root1/role76/candidate67 evidence were compared across public and saved receipts and static helper assertions; this is not an independent guest or private full-CP replay. The private final CP digest 76142d7031bf05ad9b1fe79c7e98f088eb886ca80addea6dfe94bdb1411669af is only referenced, its content is not in this review.",
+    "Registry system/user sizes and hashes changed. Before-install raw registry is unavailable, so no fabricated before/after raw diff, key-value equivalence or root cause is asserted. New actual private raw/dump/log is preserved by parent receipts, not read here. Roaming/Local Aegisub discovery covers selected configuration paths, not all application FS or creation time; absent original.ass/original.srt paths are finite checks only. Recent IPC is not full SQLite.",
+    "One normal Core/Store restart is supported by full-field equality receipts and changed service PIDs. No VM reboot, recover, TUF signing/activation, catalogue inclusion, repair, DLL/font/runtime/global-context/launcher/environment/cwd change was claimed. Old frozen public trust/catalogue evidence is byte-exact; no new independent crypto/guest TUF replay was performed.",
+    "Old 3792 evidence and complete 5033 tracked repo are distinct. Exactly 3790 immutable evidence files were rechecked in whole raw bytes; 1241 outside-evidence paths have index mode/blob equality to HEAD, not a claim of every outside working file raw equality. All old 61 accepted and 16 pending records retain all fields; only the new 17th pending and statusSummary change. No fixture/window/exit0 increments completion.",
+    "The old 32776-byte LF .gitattributes prefix is preserved; exactly 12 precise new path rules were checked. Initial 38 files and manifest are unchanged in v2, which adds one scope/failure correction. All final 39 prospective size/hash pins, raw-vs-filter object hashes and relative no-index whitespace checks passed. Index is empty; actual git add/index blob/cached staged diff/commit/push and renormalize were not performed.",
+    "Historical quoted-href assertion occurred before package GETs; V2 reused actual unquoted links. Source fragment byte 0xA9 strict UTF8 failure remains raw, and escaped diagnostics do not determine full encoding. Native prepare syntax/encoding failure, missing guessed helper reads, nonexecuted 7z path test and transitional screenshot boundaries remain; exact earlier failed bytes were not independently saved and cause is not established. Current saved UTF8 helper compile passed without execution. Old Scribus one private canonicalV1 raw loss remains unrecovered.",
+    "A real reviewer operational mistake displayed nested private package finalUrl signed redirect queries in one host tool output; parent also displayed such a URL once. Parent was notified before FINAL and the added public correction records this truth without query text. Those queries are not copied into prospective public files, automation or this report, and were not executed by these reads. Therefore public-file privacy passed within the detector scope, but tool-history non-disclosure is explicitly not claimed.",
+    "Reviewer helper A first stopped on an overbroad archive suffix lookup because README.md also exists in vendor/luabins; helper B used the full root path but stopped on an incorrectly guessed Inno marker spelling. Helper C used exact archive root and the measured literal marker and completed 22 checks. Original A/B/C helpers and tool failures remain; these were audit-helper errors, not application evidence failures, and no failed output was used as a successful audit. Only helper C completed the initial checks. Final helper A stopped before writing the final result because it guessed a nonexistent passed key in the v2 precheck receipt; final helper B checks its actual indexEmpty/paths/diagnostics fields and completes fresh checks.",
+    "Privacy scans cover every final prospective byte for known private-key/token/signed-query markers, installer/program binary magic/extensions and complete private-CP structures; two actual JPEGs were visually inspected for login or credential content. Raw source/licenses/fixtures/Wine report are permitted. This is not absolute proof against every conceivable secret."
+  ],
+  "reviewerGuestGuiOrPrivateCompleteCheckpointReplayPerformed": false,
+  "reviewerRepoIndexGuestAppsServicesTufCheckpointMutationPerformed": false,
+  "resultEncoding": "UTF-8 without BOM, LF, write_bytes and complete readback checked"
+}

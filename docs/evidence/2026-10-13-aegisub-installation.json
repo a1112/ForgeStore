@@ -1,0 +1,410 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "aegisub",
+  "version": "3.2.2",
+  "installed": true,
+  "installationJobId": "job-1791838596481-1",
+  "installationJobStatus": "succeeded",
+  "generationId": "gen-job-1791838596481-1",
+  "definitionDigest": "sha256:66d8459d74cc3adccd2e17d1dd040a46cdc65ceb26dc4b06ff98a5e3726166e1",
+  "definition": {
+    "bottleId": "gui-aegisub",
+    "category": "multimedia",
+    "compatibilityRating": "unknown",
+    "id": "aegisub",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\Aegisub",
+        "/NOICONS",
+        "/LANG=en",
+        "/TASKS=checkforupdates"
+      ],
+      "fileName": "Aegisub-3.2.2-64.exe",
+      "sha256": "19ae304c586f5d59171c44e89037006dda2c511c866fa9e453038eaadc58afcd"
+    },
+    "launchers": [
+      {
+        "executable": "Aegisub/aegisub64.exe",
+        "id": "main",
+        "name": "Aegisub"
+      }
+    ],
+    "name": "Aegisub",
+    "publisher": "Aegisub Team",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "3.2.2"
+  },
+  "installedFiles": {
+    "license.txt": {
+      "sizeBytes": 1510,
+      "sha256": "4739752067a1c832c14b7d520016c1ad65b978b867172409f27609a7c184aa21"
+    },
+    "unins000.exe": {
+      "sizeBytes": 1194563,
+      "sha256": "a99d343a3b49442d2694fae756638f4c185f290b59ce3de6cf0ac00660aebb0c"
+    },
+    "ffms2_64.dll": {
+      "sizeBytes": 8644608,
+      "sha256": "449a1400d8aa0f7aca0177dc20a8f1acfa99ed1d8bf0d71d0f73987823112228"
+    },
+    "ASSDraw3.exe": {
+      "sizeBytes": 1279488,
+      "sha256": "4ecc3e9a639bbd9bb479ad3c494acc9e84c392351f062d588f3449a0a023fd69"
+    },
+    "installer_config.json": {
+      "sizeBytes": 86,
+      "sha256": "6f8242eeca988973d1ba099f6396784332690c34886cedc9ee6d1fbae212468c"
+    },
+    "aegisub64.exe": {
+      "sizeBytes": 20004352,
+      "sha256": "c3aa3cba4c7f5d21a17af4e8a00c38cbcb14c8f41620b3e254d2fb4a4d006565"
+    },
+    "ASSDraw3.chm": {
+      "sizeBytes": 431872,
+      "sha256": "56659daced0e8e3d7fa170cff6f505e5dbeab14ad3f00f17d2d9d12f429496f1"
+    },
+    "unins000.dat": {
+      "sizeBytes": 45611,
+      "sha256": "697bc29e42757873b29cabf0ceed87d1d7a1b9253f1de271bea92247656ead1c"
+    },
+    "csri/xy-vsfilter-aegisub64.dll": {
+      "sizeBytes": 369664,
+      "sha256": "6f59b785b50ef6cdd3d2b70670cd917ce59bb5e11160c5f11eb0f4adf1aa3a41"
+    },
+    "dictionaries/en_US.aff": {
+      "sizeBytes": 3045,
+      "sha256": "1d1a827ce91d9eb061d5954ba325f8a538b386bd70704af431fbaac1c8e9623a"
+    },
+    "dictionaries/en_US.dic": {
+      "sizeBytes": 532426,
+      "sha256": "9d4d550b618671c27b2981c37b54d8766059a3fe7b8c4887812b8100fae12908"
+    },
+    "locale/hu/aegisub.mo": {
+      "sizeBytes": 115495,
+      "sha256": "43c0f27304ba24196721d8749a0b8748d4f998912f87accdbc37cacbf263d564"
+    },
+    "locale/hu/wxstd.mo": {
+      "sizeBytes": 81705,
+      "sha256": "fd5a6266534c07b3592ea8006369164d03fc02f1cc13c0d48c429187dfc15c76"
+    },
+    "locale/fa/aegisub.mo": {
+      "sizeBytes": 111748,
+      "sha256": "78300174977b4a348feeea5e83c35992b2320e49c079bea535f0ff678e77c97d"
+    },
+    "locale/vi/aegisub.mo": {
+      "sizeBytes": 104656,
+      "sha256": "0ed1ddb9ce546e9183c36ab16c40b814bdba1f438ecb4e871bde85d1637ccad9"
+    },
+    "locale/vi/wxstd.mo": {
+      "sizeBytes": 151584,
+      "sha256": "5738c437bc6de46516dc5b806104b17f53da2d961fb36396796100d7b9d194fc"
+    },
+    "locale/el/aegisub.mo": {
+      "sizeBytes": 151618,
+      "sha256": "87f50e002c55282e6d0c68f05cb3f363755ae2e87cf189991d70cbdacf45c250"
+    },
+    "locale/el/wxstd.mo": {
+      "sizeBytes": 94252,
+      "sha256": "56eb78873914003510817afdda73f3b6848cac57eaa6d09403c34246cbb10cbf"
+    },
+    "locale/de/aegisub.mo": {
+      "sizeBytes": 103559,
+      "sha256": "af4f853c28df4f93b4fac60392d3f590554b9c573fab4db1218fb091e8e21c0f"
+    },
+    "locale/de/wxstd.mo": {
+      "sizeBytes": 144809,
+      "sha256": "d3cf56b68edd34d12bc6b1d6a94b6beab73aad95850d63aeadf0c12c8616286b"
+    },
+    "locale/id/aegisub.mo": {
+      "sizeBytes": 108008,
+      "sha256": "869a51db6f3235f1883e94a310c939c046069e2d4d83f1005cc9bf1559aa3a5b"
+    },
+    "locale/id/wxstd.mo": {
+      "sizeBytes": 136970,
+      "sha256": "c4839537bb7f52b13e84585ba241c2f2bfe1053aa72c0a189ae60bfc23e66a07"
+    },
+    "locale/ko/aegisub.mo": {
+      "sizeBytes": 97577,
+      "sha256": "4492ed74446dd2976455d0dcf9aaee2984fc6168be31edc5bd338039d9153a5d"
+    },
+    "locale/ko/wxstd.mo": {
+      "sizeBytes": 107503,
+      "sha256": "029b0246ccceadc2b8d344fadd6ecc91e9ea57932d563631501d80282da226b8"
+    },
+    "locale/pl/aegisub.mo": {
+      "sizeBytes": 95592,
+      "sha256": "5203fb8922396d7576b5a932444c22481b83112e936cb0ff5b3c20b105677141"
+    },
+    "locale/pl/wxstd.mo": {
+      "sizeBytes": 129688,
+      "sha256": "3db0c018de6a303f0dd61d8b6d3d15310b4bb8e8ff69af7a310ee08c3829239e"
+    },
+    "locale/ca/aegisub.mo": {
+      "sizeBytes": 99487,
+      "sha256": "d502b5692a986705ebf27b50b0524f8eeee893cbf65731f00f115624caf5610b"
+    },
+    "locale/ca/wxstd.mo": {
+      "sizeBytes": 53487,
+      "sha256": "e37b7e0b40be72430c301348225366aad1be88f7111694855a69d2c2078b33f1"
+    },
+    "locale/pt_BR/aegisub.mo": {
+      "sizeBytes": 96743,
+      "sha256": "95f44b0b81a20fcf10e7f956406005c13d2122ec52bb1cb7587a3cc81589f22c"
+    },
+    "locale/pt_BR/wxstd.mo": {
+      "sizeBytes": 143296,
+      "sha256": "9f87e39d0f91e7513922ff06fefb5cdba22dd024d6df99d2497d9a2dbf3dac1b"
+    },
+    "locale/fr_FR/aegisub.mo": {
+      "sizeBytes": 105071,
+      "sha256": "c08a3f9d975e33204e0d581d6ca8aafc51cbeaa297cefed29f8d51311618a914"
+    },
+    "locale/fr_FR/wxstd.mo": {
+      "sizeBytes": 141125,
+      "sha256": "3bf4a485b403fd9f7cd77f5b91324a95da1d6b8d2768866f95fc03128ba856f7"
+    },
+    "locale/sr_RS/aegisub.mo": {
+      "sizeBytes": 125822,
+      "sha256": "93ddf7c08f304c169754b42d75a562b71f1bd90863b878577ab63cb3304243df"
+    },
+    "locale/uk_UA/aegisub.mo": {
+      "sizeBytes": 144032,
+      "sha256": "0c88d60a799ab7f1557edd821a13d17d192adf55c413477e265969b5fb00c837"
+    },
+    "locale/uk_UA/wxstd.mo": {
+      "sizeBytes": 182288,
+      "sha256": "e206c2528f61f886793bad2c866bf4d3225a8b16affe8b19985fb7cb6cbf4f48"
+    },
+    "locale/ar/aegisub.mo": {
+      "sizeBytes": 96334,
+      "sha256": "231c4b1883f5cb94f4ac812d876bed50d41b356aae05696b12d44d694731ed24"
+    },
+    "locale/ar/wxstd.mo": {
+      "sizeBytes": 39340,
+      "sha256": "7b96aa918e54e3ac762be42fa3d5e46622cb9e8fa49eccea2ef19d2362642f81"
+    },
+    "locale/it/aegisub.mo": {
+      "sizeBytes": 100814,
+      "sha256": "5ce7e32137f45e7de9058103181a6b7d2dadf49df060d5a4c9d5b35e8b658a08"
+    },
+    "locale/it/wxstd.mo": {
+      "sizeBytes": 144280,
+      "sha256": "4f33d6048d295dc00811b91b31e531e54c02bb16a7c6e7b30855f5d32cab143d"
+    },
+    "locale/da/aegisub.mo": {
+      "sizeBytes": 96055,
+      "sha256": "6a87de142fc640ddece61e7e6cc441c7cf41cd76140366e151ef9d307b338f91"
+    },
+    "locale/da/wxstd.mo": {
+      "sizeBytes": 61454,
+      "sha256": "64ad9e0988f36761c2da4831b08e75ffce1fe52270a3326b171ccdfcfb808946"
+    },
+    "locale/cs/aegisub.mo": {
+      "sizeBytes": 102857,
+      "sha256": "eecd3e6ce13e39927c68035352b21fb3aa89c629a6036ef15c514dc196a835dd"
+    },
+    "locale/cs/wxstd.mo": {
+      "sizeBytes": 139772,
+      "sha256": "da333f36b7ae99da57892d24c766b096daca9a727cd37f11888e03a611fd34a8"
+    },
+    "locale/es/aegisub.mo": {
+      "sizeBytes": 117020,
+      "sha256": "450c044312b9b3c60f4d99cf52f321e935d58095c0bfdd6b6451e856eae3bdc1"
+    },
+    "locale/es/wxstd.mo": {
+      "sizeBytes": 99822,
+      "sha256": "7bdb1d2e438a6e7b2c055d8030826fe5ca049989041f9306fca9f3ec1529822a"
+    },
+    "locale/eu/aegisub.mo": {
+      "sizeBytes": 111571,
+      "sha256": "f6d9301921e149f1320ab4f1a705f825f3884fb16bb6af495016bca227f8a963"
+    },
+    "locale/eu/wxstd.mo": {
+      "sizeBytes": 139983,
+      "sha256": "7a04f31fd3b4493d0773a1d02dfade49775601bf02fd4d897228f10badd71535"
+    },
+    "locale/bg/aegisub.mo": {
+      "sizeBytes": 137398,
+      "sha256": "85847b9c216844c4fca7aa0d9e7ea33f069f0b583e5105682f2964d6c6438081"
+    },
+    "locale/ja/aegisub.mo": {
+      "sizeBytes": 108550,
+      "sha256": "421e46dea079c44702b8e7c3fd05a3a5e666e69246d6e28c2e31f81511fefc6f"
+    },
+    "locale/ja/wxstd.mo": {
+      "sizeBytes": 138340,
+      "sha256": "507a63280132f09e9322c00e33455ce9177d124edfed4a43a39229e78884b6fb"
+    },
+    "locale/pt_PT/aegisub.mo": {
+      "sizeBytes": 114169,
+      "sha256": "99979c89fa1c0b8c606c08a75488cceec265428e6f27a85702db2e59e269c288"
+    },
+    "locale/pt_PT/wxstd.mo": {
+      "sizeBytes": 108391,
+      "sha256": "56665ae434703143536469e2be235817b43c9d5fa5c4d7bf8a0b74b19c759b52"
+    },
+    "locale/zh_TW/aegisub.mo": {
+      "sizeBytes": 104972,
+      "sha256": "7ef5ca74b2b8d8bc86678b41ff01c4dcdd8fe70c10d9c2d9c1c74e227f49ac2d"
+    },
+    "locale/zh_TW/wxstd.mo": {
+      "sizeBytes": 129928,
+      "sha256": "de6e9aafa7f395e2990d3d80e59e729d9caf82e162404de41b1004f9bfbf825b"
+    },
+    "locale/nl/aegisub.mo": {
+      "sizeBytes": 102929,
+      "sha256": "031e3cdd37a0a5c7ab3da8ba2b41474f38008144cd8046503a7a41ac8c91073a"
+    },
+    "locale/nl/wxstd.mo": {
+      "sizeBytes": 141026,
+      "sha256": "9d4df2e141791f2dd18117f390f35632e3e7b40002dfea5e1e5de39b1c898e69"
+    },
+    "locale/zh_CN/aegisub.mo": {
+      "sizeBytes": 104849,
+      "sha256": "1b231be331d267d1bf36836acc990048f3e9b45203efc7f8601a676933449312"
+    },
+    "locale/zh_CN/wxstd.mo": {
+      "sizeBytes": 129561,
+      "sha256": "4803673991789f11274357d9375dd6e8746538f5fce50e53d6004bfcabc7db5c"
+    },
+    "locale/gl/aegisub.mo": {
+      "sizeBytes": 104378,
+      "sha256": "59755cfc77542ae7ba87b4bf3e9797938962ad514c4b4ac51489d0f13e51d170"
+    },
+    "locale/gl/wxstd.mo": {
+      "sizeBytes": 143180,
+      "sha256": "e9bcf2e9e00b905102a5a86528a925188044b9d5ea925c702e5d0a13a20dd23c"
+    },
+    "locale/fi/aegisub.mo": {
+      "sizeBytes": 111984,
+      "sha256": "741f472cb65b4c5071bb23d3ad1dc83952fb9a980eedcb24c26970935372ab58"
+    },
+    "locale/fi/wxstd.mo": {
+      "sizeBytes": 98588,
+      "sha256": "312b06bb864c772dd6cef1d2456732b2ba29bf0d82b7316a7cc4754aedcec41f"
+    },
+    "locale/sr_RS@latin/aegisub.mo": {
+      "sizeBytes": 99439,
+      "sha256": "1a9a42ac342da7a5fdf847565a42645826ef5c27b4beca476215622e90565abd"
+    },
+    "locale/ru/aegisub.mo": {
+      "sizeBytes": 130942,
+      "sha256": "c719af832d07c69155367d24f5e71f9850bb95a2b90d4a82e466f444006ac017"
+    },
+    "locale/ru/wxstd.mo": {
+      "sizeBytes": 154076,
+      "sha256": "907f5382e04ff11b965283524f2726bc7e38f1f94099b127c9eadeaacf24364b"
+    },
+    "automation/demos/future-windy-blur.lua": {
+      "sizeBytes": 2134,
+      "sha256": "b629c905f8705e00fddc02ac41fbb4da06a9a45a72f8bec4791b5237fb14515b"
+    },
+    "automation/demos/raytracer.lua": {
+      "sizeBytes": 10230,
+      "sha256": "aaa7798937aaef5df8fe75d6faa8d4d660d4b66dd289c572ced186a32d798e68"
+    },
+    "automation/autoload/macro-1-edgeblur.lua": {
+      "sizeBytes": 626,
+      "sha256": "43599f0c24c008172fb810ac9bf67138beee661665cac0b36d96ba7a90b3773f"
+    },
+    "automation/autoload/kara-templater.lua": {
+      "sizeBytes": 27184,
+      "sha256": "b521224072bff84d14a384ad1e6c2730543e20cd9988b0bdf651fbb914559c5f"
+    },
+    "automation/autoload/karaoke-auto-leadin.lua": {
+      "sizeBytes": 2836,
+      "sha256": "2c586053068bf91d7eed2354e0c705c7fc5ea3a3c4e508c47bd4f81319cf0377"
+    },
+    "automation/autoload/macro-2-mkfullwitdh.lua": {
+      "sizeBytes": 2878,
+      "sha256": "5ec32eb7e449b5d184df1e633001de847091dd56159ba188e654b66560c5da63"
+    },
+    "automation/autoload/select-overlaps.moon": {
+      "sizeBytes": 1992,
+      "sha256": "86c2501a3a24ac5938544594049facc786e8f48c19bbf06137e1554337ce8122"
+    },
+    "automation/autoload/cleantags-autoload.lua": {
+      "sizeBytes": 2873,
+      "sha256": "885a227f5be162011dab6be533dd89a49e2b62d4a006414e6a4402933d1ac643"
+    },
+    "automation/autoload/strip-tags.lua": {
+      "sizeBytes": 1263,
+      "sha256": "aa7d8a8e4d8f26e7dcf3db18509f402c13e6e0cfd71d86ed3d3447344a98738c"
+    },
+    "automation/include/utils-auto4.lua": {
+      "sizeBytes": 2165,
+      "sha256": "52b8c6bf998a1457a4dd3da3c2de94ed0f5e7f6d10a2f91df916b6f222cd4ea7"
+    },
+    "automation/include/re.lua": {
+      "sizeBytes": 836,
+      "sha256": "3247ab741f394525c78b67dd69c30510ad1cf38d44ace5f03fd9a434872ea481"
+    },
+    "automation/include/cleantags.lua": {
+      "sizeBytes": 4802,
+      "sha256": "946efb4e9567aaa992f810b0a7301543a1d4d6aa628deebbd8d5732b0adf5b57"
+    },
+    "automation/include/utils.lua": {
+      "sizeBytes": 1596,
+      "sha256": "14070a80b7d5070a4b2cee82895f28187c706da2fb556fff60e5066e28e14582"
+    },
+    "automation/include/clipboard.lua": {
+      "sizeBytes": 856,
+      "sha256": "59bd24863fe4285b013154d71b8544dcfb9f447e7ccb38ab378838601dda3f7e"
+    },
+    "automation/include/unicode.lua": {
+      "sizeBytes": 851,
+      "sha256": "78129cbb809a78f8ba2f4628e9fa7cbbe2dfb60471a78e5154519076baf1d4be"
+    },
+    "automation/include/karaskel.lua": {
+      "sizeBytes": 1594,
+      "sha256": "3f33716ac18c253a1d075ce7bfa97d345e7823d15d92f57a2225b3a4fed976d1"
+    },
+    "automation/include/moonscript.lua": {
+      "sizeBytes": 135458,
+      "sha256": "fa4977c7f56de4cb201e8c8c5a5264acc4ed36aac04f3e0e38fa2976b747e811"
+    },
+    "automation/include/karaskel-auto4.lua": {
+      "sizeBytes": 25258,
+      "sha256": "09a3f0c8b66887623b93a132d8c28307170b2232d271d2cb675e09e242f682a0"
+    },
+    "automation/include/aegisub/unicode.moon": {
+      "sizeBytes": 3177,
+      "sha256": "657bade5063a6b9db7ef4f195a22fcdaf945591cfcf71dd6339b61533e7dcadf"
+    },
+    "automation/include/aegisub/clipboard.lua": {
+      "sizeBytes": 828,
+      "sha256": "30c8e4099cf69ab107d686957944781f4df4e1c76cd21b9fffb4e2150277cb2e"
+    },
+    "automation/include/aegisub/util.moon": {
+      "sizeBytes": 6411,
+      "sha256": "1a795c4be27a5f655ceb4b994f52ce8318b3da5ef577c05de17b85fa6d683255"
+    },
+    "automation/include/aegisub/re.moon": {
+      "sizeBytes": 7384,
+      "sha256": "e0eefd9bf23961b0b5b14f1d35616173b8e8246fb8849922918befb3a10ca769"
+    }
+  },
+  "installedFileCount": 87,
+  "mainProgram": {
+    "sizeBytes": 20004352,
+    "sha256": "c3aa3cba4c7f5d21a17af4e8a00c38cbcb14c8f41620b3e254d2fb4a4d006565"
+  },
+  "mainExeIsNotEntireApplicationSize": true,
+  "installationCount": 1,
+  "marketInstallationPerformed": false,
+  "guiAccepted": false,
+  "published": false,
+  "originalInputPin": {
+    "sizeBytes": 693,
+    "sha256": "91660e44920cb68340ee3e4367b9c694f15762927318c9730f61511c77c98058"
+  },
+  "marketFixtureHostOnly": true
+}

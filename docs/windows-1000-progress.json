@@ -870,6 +870,27 @@
       "guiEvidence": "docs/evidence/2026-10-12-greenfish-gui-diagnostic.json",
       "evidence": "docs/windows-rolling-20261012-greenfish-pending.md",
       "blocker": "Native startup MDB Input/output error, normal OK closes process exit1; no image open/edit/save/reopen. Existing shaders LMDB files observed but runtime function/GPU/cause not determined. One original Inno install only; 4.5 custom EULA not old 3.6 GPL; main source not provided."
+    },
+    {
+      "id": "aegisub",
+      "name": "Aegisub",
+      "version": "3.2.2",
+      "stage": "installed-startup-msvcr120-concurrency-unimplemented",
+      "sourceUrl": "https://github.com/Aegisub/Aegisub/releases/download/v3.2.2/Aegisub-3.2.2-64.exe",
+      "sha256": "19ae304c586f5d59171c44e89037006dda2c511c866fa9e453038eaadc58afcd",
+      "sizeBytes": 20891980,
+      "license": "source-BSD3-with-file-exceptions-binary-GPL-dependency-closure-unverified",
+      "installationJobId": "job-1791838596481-1",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1791838596481-1",
+      "installed": true,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "artifactEvidence": "docs/evidence/2026-10-13-aegisub-source.json",
+      "guiEvidence": "docs/evidence/2026-10-13-aegisub-gui-diagnostic.json",
+      "evidence": "docs/windows-rolling-20261013-aegisub-pending.md",
+      "blocker": "First native startup crashes with actual Wine report msvcr120.dll Concurrency _NewCollection unimplemented; normal native Close then exit1. No subtitle editor/input Open/edit/save/reopen/market. One original install, no DLL/runtime repair."
     }
   ],
   "excludedInternalFixtures": [
@@ -884,11 +905,11 @@
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 61,
-    "explicitlyBlockedCandidates": 16,
+    "explicitlyBlockedCandidates": 17,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 16
+    "pendingCandidates": 17
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v67/tuf",
