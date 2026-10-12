@@ -1,0 +1,732 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "copyq",
+      "version": "12.0.1",
+      "sha256": "db864157b861874cda1cceb4be523e97c035530f34cf29f108d2d3ab4190ac78",
+      "size": 19255957,
+      "generationId": "gen-job-1791756166043-4",
+      "definitionDigest": "sha256:88cc9f696229c3c375f24635e296d0dc1375e8c73c4d495fa8f79a5c3ffb856c",
+      "launcherSha256": "sha256:bd1279313027401e023fb1fbe680eb005e4e23ad1abab5767ab24fb114fbdd55",
+      "guiFileOperation": "passed-limited-plain-text-item-import-edit-clipboard-copy-cpq-export-explicit-new-process-import",
+      "save": {
+        "fixture": {
+          "generationId": "gen-job-1791756166043-4",
+          "input": {
+            "file": "drive_c/CopyQTests/原始剪贴板.cpq",
+            "sizeBytes": 100,
+            "sha256": "b28a4fb196fbcdb275dd389b566ba84defbcfa962f4b1fd6d7742eea7eea0f9b"
+          },
+          "inputText": "中文 ORIGINAL BEFORE\nVALUE 40",
+          "tab": "OriginalFixture",
+          "expectedItems": [
+            "ORIGINAL SECOND42",
+            "中文 ORIGINAL AFTER\nVALUE 40\nORIGINAL42"
+          ],
+          "outputFile": "drive_c/CopyQTests/original-result.cpq",
+          "installedFiles": {
+            "Qt6Pdf.dll": {
+              "sizeBytes": 5337736,
+              "sha256": "b1e59033fbfe86080d914050c7674ff312e57b0f39aaa1adeed46a5b3e9b564d"
+            },
+            "vcruntime140_1.dll": {
+              "sizeBytes": 49792,
+              "sha256": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+            },
+            "Qt6Quick3DUtils.dll": {
+              "sizeBytes": 454280,
+              "sha256": "7ffceb928f66927b43b66c39caa8f6d1b7dce17d84c7bc291d661b8b84bd2895"
+            },
+            "KF6ConfigQml.dll": {
+              "sizeBytes": 46592,
+              "sha256": "1ae94285676fdf2e6faf7782919b9ca150fcbfa3ec4bc632d7086764c9ba94a4"
+            },
+            "msvcp140_2.dll": {
+              "sizeBytes": 280200,
+              "sha256": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9"
+            },
+            "msvcp140.dll": {
+              "sizeBytes": 557728,
+              "sha256": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9"
+            },
+            "vcruntime140.dll": {
+              "sizeBytes": 124544,
+              "sha256": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+            },
+            "unins000.exe": {
+              "sizeBytes": 3885797,
+              "sha256": "5498a7502d4846db453b54625d78a729af1b413c5a960c8a4b209389b58d20a4"
+            },
+            "Qt6Network.dll": {
+              "sizeBytes": 1755784,
+              "sha256": "2c2f65c70989646f06d668883c031f06fac3f8de1f459278c94cc50dfe89988d"
+            },
+            "KF6ConfigCore.dll": {
+              "sizeBytes": 513536,
+              "sha256": "79c4fcb47ad7bb891f371920f7312b57fb73b5cc89f6964ab6efb0f1d5aede3b"
+            },
+            "KF6WindowSystem.dll": {
+              "sizeBytes": 66560,
+              "sha256": "cc25e2f175e825467fbe7b9b77400a771ceee0c122a10e900f713a55875723cb"
+            },
+            "Qt6Qml.dll": {
+              "sizeBytes": 5250184,
+              "sha256": "5a322b9ea0d262dc7f9c88960a2ceb5ad353911c21f52feba2935a4e67f5f6b9"
+            },
+            "Qt6Widgets.dll": {
+              "sizeBytes": 6500488,
+              "sha256": "d34ef78b3d3b5506ee8279ce6efbfc263d773b74860af76e66b0715346897a3a"
+            },
+            "Qt6Core.dll": {
+              "sizeBytes": 6159496,
+              "sha256": "0cc62e841959fb8f6d366ea116c6f6bbc273e30f0ef90d8aa2e4adeb81fd63f8"
+            },
+            "Qt6Test.dll": {
+              "sizeBytes": 382088,
+              "sha256": "be5ea9ff96d2b48f4246c1a402f678a397924ab9acbbfa7edfba590b6962f594"
+            },
+            "KF6ConfigGui.dll": {
+              "sizeBytes": 192512,
+              "sha256": "7561f8e455b324f74887d9dc9c5131a34d9cb6d779f97156f53954043bb1a614"
+            },
+            "snoretoast.exe": {
+              "sizeBytes": 580608,
+              "sha256": "06d18fe91c3f6b52f4acf3e04d07307128d2fc19b69febc3b89f41acffd2f36c"
+            },
+            "README.md": {
+              "sizeBytes": 9670,
+              "sha256": "5e3f442f6133587027a119fdd96e1ed10711e0a4612d70ab364d948dfb437379"
+            },
+            "libcrypto-3-x64.dll": {
+              "sizeBytes": 5173248,
+              "sha256": "cfd00b479d33ee546d65cb314a524485a6a3218d9e19813d9884ac8d1dc66623"
+            },
+            "copyq.exe": {
+              "sizeBytes": 4523008,
+              "sha256": "bd1279313027401e023fb1fbe680eb005e4e23ad1abab5767ab24fb114fbdd55"
+            },
+            "Qt6Gui.dll": {
+              "sizeBytes": 9285768,
+              "sha256": "ca9f20d9b59d5bc321a87005b926b853ebcd6a2394823e14d3c8b5fc5702fa8c"
+            },
+            "Qt6Svg.dll": {
+              "sizeBytes": 528520,
+              "sha256": "efaf94c5c757a430ec5b89fc209089b14171b5cce945db961c32264f1cc99f80"
+            },
+            "KF6StatusNotifierItem.dll": {
+              "sizeBytes": 83456,
+              "sha256": "46f5e4b83e80185de185302da71eac0b5284b5242add3a3c8e70b62cdd069e67"
+            },
+            "msvcp140_atomic_wait.dll": {
+              "sizeBytes": 50304,
+              "sha256": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479"
+            },
+            "AUTHORS": {
+              "sizeBytes": 795,
+              "sha256": "18d0298883afe2cce128dba254ec9212fa646c66d51d832d8e1712a3777560c9"
+            },
+            "concrt140.dll": {
+              "sizeBytes": 324208,
+              "sha256": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376"
+            },
+            "msvcp140_1.dll": {
+              "sizeBytes": 35952,
+              "sha256": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d"
+            },
+            "KF6Notifications.dll": {
+              "sizeBytes": 171008,
+              "sha256": "9aab8c0018402bd3ad7817fbfa75e463e2468c252d8c84874ee830023f82ced7"
+            },
+            "msvcp140_codecvt_ids.dll": {
+              "sizeBytes": 31872,
+              "sha256": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18"
+            },
+            "libssl-3-x64.dll": {
+              "sizeBytes": 777216,
+              "sha256": "e5746ecc86d96a60c79cf83c1f2113207189eb965008d343cc151c9cb09c6467"
+            },
+            "LICENSE": {
+              "sizeBytes": 35147,
+              "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+            },
+            "unins000.dat": {
+              "sizeBytes": 16793,
+              "sha256": "789f3a562c8545522a03bfe6748a89a03bd982ea732b90e89d8b071d2c3ca066"
+            },
+            "translations/copyq_ja.qm": {
+              "sizeBytes": 66847,
+              "sha256": "9987e39a64dc727b90e52ad2b7c09a925080cfd3e9a91efaec7cad34e53badb1"
+            },
+            "translations/copyq_nb.qm": {
+              "sizeBytes": 80735,
+              "sha256": "f8242d81b46c0e66e71dd1e5237a4f5b14f49623c1e158345d7fb77359361ab2"
+            },
+            "translations/copyq_zh_TW.qm": {
+              "sizeBytes": 60155,
+              "sha256": "99fe8fdf180ff9f354b37d593fdfa493c620b5dff2262fdfdc74f6c44d2f5c0d"
+            },
+            "translations/copyq_cs.qm": {
+              "sizeBytes": 81504,
+              "sha256": "bfefdfdd236b736ef9047d3a4d1a6ff175988c33399b64424ec4294f48e27e5e"
+            },
+            "translations/qt_uk.qm": {
+              "sizeBytes": 240748,
+              "sha256": "1345885ecf5372c31d3514f4d8562708273d37e02aea967f3ac5556b242e8f4c"
+            },
+            "translations/copyq_sv.qm": {
+              "sizeBytes": 80831,
+              "sha256": "756c7a6c9f89d2b8912992662696399262fdc7ddb845206b3fb95145cf0385f4"
+            },
+            "translations/copyq_he.qm": {
+              "sizeBytes": 73329,
+              "sha256": "f0dc97dbb0a61d59532c667fafbaddd82d1311c0e7f15a81ebf52b74c0d59eae"
+            },
+            "translations/qt_pt_BR.qm": {
+              "sizeBytes": 291514,
+              "sha256": "ef54085f0610a6e789debf6813e42cc11c29a0d81a387528944def2957f4f37c"
+            },
+            "translations/copyq_de.qm": {
+              "sizeBytes": 89902,
+              "sha256": "26d7d96bc8f1ed5c1eb7d402b0928d23c710dce8ea444460c5d85dc1cf974946"
+            },
+            "translations/copyq_el.qm": {
+              "sizeBytes": 93352,
+              "sha256": "e531c159ab084e7d13e7f012595b1f64521c8f20302fb300e5da97540f5a6589"
+            },
+            "translations/copyq_it.qm": {
+              "sizeBytes": 88236,
+              "sha256": "6b019747c971d8dd8d238da3ae3ece911d947dc2f011a28a5a21161745782d55"
+            },
+            "translations/copyq_ga.qm": {
+              "sizeBytes": 88486,
+              "sha256": "f967ac83a18d38a62c5a5e58a641ed28bb5740617229ce8bb3236b8de49d781a"
+            },
+            "translations/qt_es.qm": {
+              "sizeBytes": 233394,
+              "sha256": "40e32e9d88b81d7593ff19be67f1d87b411e835aec2bc8674d78b46328201a06"
+            },
+            "translations/qt_fr.qm": {
+              "sizeBytes": 213901,
+              "sha256": "6a2af2232299317a0559612b8326355272ae787c325eb1552742a3cfd43ee372"
+            },
+            "translations/copyq_ar.qm": {
+              "sizeBytes": 6823,
+              "sha256": "872fb51a48b2ec52342f28709cf219673283897130db7cedd41b839449d27da3"
+            },
+            "translations/qt_nl.qm": {
+              "sizeBytes": 277794,
+              "sha256": "2d46e62f973f786a4312dbebef7708df81bf710977ae7341b69880ca15a46a4c"
+            },
+            "translations/copyq_tr.qm": {
+              "sizeBytes": 81877,
+              "sha256": "9cefcefe3159a98c8f7335389ef34aca47a1aeebd0dfd6982709856ecd802d3a"
+            },
+            "translations/copyq_ko.qm": {
+              "sizeBytes": 65807,
+              "sha256": "2d7c8d4585ad299509aede152393f45bebb827b940e7f11409b0231f1cb39d45"
+            },
+            "translations/qt_fi.qm": {
+              "sizeBytes": 245716,
+              "sha256": "1592fe9d114d96bb15d43c42c8acb3ba7786bb698c3b51335964df153aff21a9"
+            },
+            "translations/copyq_fi.qm": {
+              "sizeBytes": 85838,
+              "sha256": "3be19819c89b91eeb8d5064bf5215f76d7cbc5d900a590c74ee42775b775b719"
+            },
+            "translations/qt_ka.qm": {
+              "sizeBytes": 309299,
+              "sha256": "bdd7ed760860495bc756a664400e5e7ecebb66de95544a2632dbcd95a95fdff0"
+            },
+            "translations/qt_da.qm": {
+              "sizeBytes": 251481,
+              "sha256": "7ae318be007b0525f3d34f019f81840b98c34fdbdd3660aaa59d3828bf733368"
+            },
+            "translations/copyq_sk.qm": {
+              "sizeBytes": 37025,
+              "sha256": "3baa27af443367206bf1f37fd9c127df73bfa0f53133a61b15c8c80444fa4ed0"
+            },
+            "translations/copyq_kab.qm": {
+              "sizeBytes": 4893,
+              "sha256": "c1551187a6b7a9d9289be4594f4f1e150ee40e7041f0cfab4cc831f257604e35"
+            },
+            "translations/qt_ar.qm": {
+              "sizeBytes": 160604,
+              "sha256": "eb09d3211567f7a0419738a8b29c8f8dffd33a72cc7826f8a06b04dd63e7b80d"
+            },
+            "translations/qt_pl.qm": {
+              "sizeBytes": 235820,
+              "sha256": "79dbf17d38d73c234025eb884d28e02f1126884767355ecf132965b58a29e730"
+            },
+            "translations/qt_de.qm": {
+              "sizeBytes": 343818,
+              "sha256": "4b192f4b1c40ad11e374ddc17254e9bb25e09762f88722d74de36fe6265d0a22"
+            },
+            "translations/copyq_hu.qm": {
+              "sizeBytes": 2335,
+              "sha256": "8ac26359da77d90dfc60bc2b6ca2e4be79aa9a9f4d8834ff74e08fd4b1a3bf5a"
+            },
+            "translations/qt_lg.qm": {
+              "sizeBytes": 240171,
+              "sha256": "807c301b37639ed682136e516fdf1d83a9ef0ac1c3027a7517083044c4bc5046"
+            },
+            "translations/qt_hr.qm": {
+              "sizeBytes": 210554,
+              "sha256": "789064113567808f2a968e2ba973349cb537250adc3cfc3b14a75e4c5c0b6952"
+            },
+            "translations/copyq_ru.qm": {
+              "sizeBytes": 86565,
+              "sha256": "037388869ad916f4a8a0e77235b20203fc527af573ef5121165617cf2c31c3c7"
+            },
+            "translations/copyq_fr.qm": {
+              "sizeBytes": 92191,
+              "sha256": "6584c92a590aa4f2d578de8dae9bc7399b74699024cfaa005d27964b3285b5c1"
+            },
+            "translations/qt_tr.qm": {
+              "sizeBytes": 261342,
+              "sha256": "44e6f91a281aaecd7935f0d1f912eb97b596be5d9c37d0a9782f61d920afec78"
+            },
+            "translations/copyq_zh_CN.qm": {
+              "sizeBytes": 59619,
+              "sha256": "bd29f1922d8d4b3a0a5488e0d6e034c5f74e184fc52f661db593561405c9425f"
+            },
+            "translations/copyq_id.qm": {
+              "sizeBytes": 23115,
+              "sha256": "fba3c8cd29af30d16b8ebfedc347bf283df0fc1f0e85a9ac62841e5c0c2082dc"
+            },
+            "translations/qt_ja.qm": {
+              "sizeBytes": 175181,
+              "sha256": "5ad12b2b8c520129fd81050636e597cf8a6c48b8b6c35b9a49aef0067762c805"
+            },
+            "translations/copyq_pt_PT.qm": {
+              "sizeBytes": 85096,
+              "sha256": "22388ab2e92fe19f62e09dadbf486d96e4b23b8a33dad72f265ec1bbf3e0a5ae"
+            },
+            "translations/copyq_fa.qm": {
+              "sizeBytes": 6872,
+              "sha256": "8f8f075fd0cac96c2a9f153b88e9845e537128312c9f5be5346737a721632a2f"
+            },
+            "translations/qt_cs.qm": {
+              "sizeBytes": 174701,
+              "sha256": "03028b42df5479270371e4c3bdc7df2f56cbbe6dda956a2864ac6f6415861fe8"
+            },
+            "translations/copyq_lt.qm": {
+              "sizeBytes": 19345,
+              "sha256": "a943496f98766bb60fad2a5b3d03e0b60f4304850c085b8e0a481f963ec6eca4"
+            },
+            "translations/qt_zh_TW.qm": {
+              "sizeBytes": 126796,
+              "sha256": "4e73b9103c0da6b81d31c7f3c3c564addd53b68c0690233c77d99725cfa7fddc"
+            },
+            "translations/qt_he.qm": {
+              "sizeBytes": 138690,
+              "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+            },
+            "translations/qt_lv.qm": {
+              "sizeBytes": 207499,
+              "sha256": "d87cb760d1864772e28190ba1539821eaa7963e18c6d021f43f2bb1f01ed9b9a"
+            },
+            "translations/copyq_es.qm": {
+              "sizeBytes": 89410,
+              "sha256": "47eef31db07a5e2165366eabde2faa0f5f8953ec52f04b26769557621525588b"
+            },
+            "translations/qt_nn.qm": {
+              "sizeBytes": 197245,
+              "sha256": "b27178fb1b59d8e695ce4bde560bfef0a6a50dfa67d76f1a56e5becbed10d564"
+            },
+            "translations/qt_ca.qm": {
+              "sizeBytes": 322936,
+              "sha256": "09a0a9c99dada7a125d53065b2b1c82c077e8a71dbf2f999ceedff48a134cc4b"
+            },
+            "translations/qt_en.qm": {
+              "sizeBytes": 33,
+              "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+            },
+            "translations/qt_it.qm": {
+              "sizeBytes": 161133,
+              "sha256": "eddce0a4677b28c100d880bacd333846ce872b12ea9ff97384e4e21b658b3e93"
+            },
+            "translations/copyq_da.qm": {
+              "sizeBytes": 68338,
+              "sha256": "5ef5aff6664252c24949c5d485a9e4173eac469b69997c40ef79b046dafb0c43"
+            },
+            "translations/qt_bg.qm": {
+              "sizeBytes": 236116,
+              "sha256": "3c466e21df3b04188c77b4712cc068fc1ed3fa4ae87c133c0848e91abdf7cf1f"
+            },
+            "translations/qt_sk.qm": {
+              "sizeBytes": 174373,
+              "sha256": "b09b46ddccd6a321f5f4caa87be9477f6cecd9c5d4680f22e3815ccbb42715c6"
+            },
+            "translations/qt_fa.qm": {
+              "sizeBytes": 178019,
+              "sha256": "e3fb7456660442dd9907bd1776f7d21c33bc64a9645d64f5ce96d97e437150a6"
+            },
+            "translations/qt_gd.qm": {
+              "sizeBytes": 189580,
+              "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+            },
+            "translations/qt_ko.qm": {
+              "sizeBytes": 212891,
+              "sha256": "52ce0a6f6d7a1d1255b7af8380b45cdbc3a9a4cdfc9ee4d236b49cefa42e1773"
+            },
+            "translations/qt_hu.qm": {
+              "sizeBytes": 306227,
+              "sha256": "d5fee6e7e708956edd50e4eb7f252abf0d939724bb12e34346effc42416a4838"
+            },
+            "translations/copyq_pl.qm": {
+              "sizeBytes": 40873,
+              "sha256": "5a633b8d5f142be5e954b7c70c087fcffb708416a176be26f55d272a86b2d65b"
+            },
+            "translations/copyq_hr.qm": {
+              "sizeBytes": 84481,
+              "sha256": "c15e1c72aad7701568b3f710c5edbcb7ce0c4568925ab9691fcae9b71fef551e"
+            },
+            "translations/copyq_ca.qm": {
+              "sizeBytes": 578,
+              "sha256": "db0fbf57e6e3ec1bd209f04208ee101d031dad656e1a6aa96228f57d9ac74010"
+            },
+            "translations/copyq_pt_BR.qm": {
+              "sizeBytes": 86956,
+              "sha256": "55bcd17cc3f32ffc311192bd0b52a1b0611982a727235ea35ce41959c3e69ae4"
+            },
+            "translations/copyq_uk.qm": {
+              "sizeBytes": 86637,
+              "sha256": "71f84a141f41189c7dacc3523ac0b3be57cfd2ca2e41b3ea24b17516a08b4ece"
+            },
+            "translations/copyq_nl.qm": {
+              "sizeBytes": 84959,
+              "sha256": "eeda53b86600de97d8ea3b16c5497ac2fc5acb94f58fa1be76359c5a2f2afea4"
+            },
+            "translations/qt_zh_CN.qm": {
+              "sizeBytes": 209426,
+              "sha256": "8ba969d461b935dcfc396f77dc250cf60e69cf7c6785c3fdda0d7b1d855cb6e2"
+            },
+            "translations/qt_ru.qm": {
+              "sizeBytes": 285176,
+              "sha256": "d819ef52cf828e3c84ec75f60b2d461af9633d584e27b289125051112074d247"
+            },
+            "styles/qmodernwindowsstyle.dll": {
+              "sizeBytes": 215688,
+              "sha256": "33f30e3ed3159b607cac9fb13c478f3e1059b63b39201194ee5f67d239180f01"
+            },
+            "plugins/itemnotes.dll": {
+              "sizeBytes": 72192,
+              "sha256": "e9f6c8809cb9c0d3d027e91a05b0dced5f592fff2816ac42098002eedd5b2cfa"
+            },
+            "plugins/itemsync.dll": {
+              "sizeBytes": 606720,
+              "sha256": "58c5caaff868365eb0d7c975b239ed97eb7e21a618097d82abc51f543f4eab9a"
+            },
+            "plugins/itemfakevim.dll": {
+              "sizeBytes": 476672,
+              "sha256": "41f3fcb0239f7a0c4d574483aec1126946f3b63e09686c48122b4ec8a6b104b3"
+            },
+            "plugins/itempinned.dll": {
+              "sizeBytes": 123904,
+              "sha256": "271631ca215c06b7d9953171458dcabe0953df30c19e97331620a475442719a0"
+            },
+            "plugins/itemtext.dll": {
+              "sizeBytes": 69632,
+              "sha256": "7dc8d441518a013e56a899c18b69347200ca9361f40c76711f04ef4e36056645"
+            },
+            "plugins/itemimage.dll": {
+              "sizeBytes": 132608,
+              "sha256": "89bd1d6dec4f4557d853e9abad10807df78d564dc437bf3678bba571ad792a95"
+            },
+            "plugins/itemencrypted.dll": {
+              "sizeBytes": 195072,
+              "sha256": "472282ad8eefc285fce848eb08960fc1f23bcc51b5de81195ee4b13df570a1c6"
+            },
+            "plugins/itemtags.dll": {
+              "sizeBytes": 413696,
+              "sha256": "a9e9d8b83141cbb368d6b1f91b87e591c59d4c38ceaa2091c607aa91900bfe0e"
+            },
+            "themes/dark.ini": {
+              "sizeBytes": 466,
+              "sha256": "a3e765fce5eec3c21a1241c8ed41119be0ccac477bcc2bc1733e8adc89571b5e"
+            },
+            "themes/paper.ini": {
+              "sizeBytes": 785,
+              "sha256": "e8d3506d7bc14dc2726ccbe5e7cfeee3c23fab98587cf933dfe51b69e6ead7d6"
+            },
+            "themes/menu.css": {
+              "sizeBytes": 974,
+              "sha256": "b97e4fdc45716331cf657e687a1b7c09939703937098969e58fbe03b4f7c225b"
+            },
+            "themes/light.ini": {
+              "sizeBytes": 2215,
+              "sha256": "8f47b5ede99acfe1d2c302dfa8c7cfe6b60e35304634475957348ecdba4ded8e"
+            },
+            "themes/notification.css": {
+              "sizeBytes": 411,
+              "sha256": "3e11ec9e08b53c1fde21b7ec2cf50a998abed9bed520ee6876405ba6e8c48da8"
+            },
+            "themes/main_window_simple.css": {
+              "sizeBytes": 84,
+              "sha256": "111fd281b3aa78c1435abf3d526740b71f621aecbaa5333f7d2cb54f854e8163"
+            },
+            "themes/items.css": {
+              "sizeBytes": 1350,
+              "sha256": "3208ea4b20a6aaccbe3a65e0896339a67cfce970930aeb27d288676944b2c9ae"
+            },
+            "themes/forest.ini": {
+              "sizeBytes": 951,
+              "sha256": "015f00c61cad5fbe8bfc02dfa2508c8a0d5d0a2cbb24b9228162c4cfbafb1edd"
+            },
+            "themes/simple.ini": {
+              "sizeBytes": 908,
+              "sha256": "438e2b2c6dfdcfe97216a38780b5b89cc51df4b348aada41c5c8ecd5de868608"
+            },
+            "themes/solarized-light.ini": {
+              "sizeBytes": 473,
+              "sha256": "ea199dc9119da7bf1285f3ad231177ac8de7938774bd21811926be8908983afc"
+            },
+            "themes/tooltip.css": {
+              "sizeBytes": 240,
+              "sha256": "b4b78807569c201ecfe0b7d92c7728184ac0a128ca7829463836650c4c632619"
+            },
+            "themes/main_window.css": {
+              "sizeBytes": 1143,
+              "sha256": "d0dcaeca5ba082171d25c4f09e8334811d753242677b7e5aa7fbf92a24524f32"
+            },
+            "themes/solarized-dark.ini": {
+              "sizeBytes": 477,
+              "sha256": "b8abb1cf6d3ee1388639c8c040192d2d42e92b03d8d888c61934f8a21e9ddda6"
+            },
+            "themes/wine.ini": {
+              "sizeBytes": 780,
+              "sha256": "99ff990745b28b5781c8a9ad8741b5451d15fceb5bba84fe278300d76ea29b48"
+            },
+            "themes/black.ini": {
+              "sizeBytes": 466,
+              "sha256": "3a0e09d1c270709be73517cceb4a0e7e9008ceb3b0ff154926ee2d8ba7dea169"
+            },
+            "tls/qschannelbackend.dll": {
+              "sizeBytes": 254600,
+              "sha256": "c58ab3c5873d3d5187ff1e6703662810f555ebe60c532e025250c47bbac2e50c"
+            },
+            "tls/qcertonlybackend.dll": {
+              "sizeBytes": 102024,
+              "sha256": "063f369b7975c97fb989eda88f7a78896e7c6d5de2b73cccf30aefa92b608aff"
+            },
+            "platforms/qwindows.dll": {
+              "sizeBytes": 907912,
+              "sha256": "12577a7c4f2230bbea53f279573d7e3d1a08d631197855481e1e1580f61bb877"
+            },
+            "imageformats/qtiff.dll": {
+              "sizeBytes": 439432,
+              "sha256": "5b17f46f208ff7e46b6ecd28e24584881f7df7930c479d73c3edf2b708ebbd71"
+            },
+            "imageformats/qwbmp.dll": {
+              "sizeBytes": 37000,
+              "sha256": "cc8146f06c0e264e3135dee8f38d82480e5bc2ebe0911613a956a9bae3a539d5"
+            },
+            "imageformats/qtga.dll": {
+              "sizeBytes": 38536,
+              "sha256": "177c25b505c4a6d85d8d0e3a6f84ade1e7e294e21e1c7893fad0e38b773e4419"
+            },
+            "imageformats/qicns.dll": {
+              "sizeBytes": 54920,
+              "sha256": "b48bdc395644e09d200b4e721e284697163f499ceb30a8851e84faec26df9da9"
+            },
+            "imageformats/qwebp.dll": {
+              "sizeBytes": 550024,
+              "sha256": "2abf6e873359fc5c04ef06834123ae7f292234a4cfd94520022a82255f7d9004"
+            },
+            "imageformats/qjpeg.dll": {
+              "sizeBytes": 575624,
+              "sha256": "1c3f3996b18b9a6d3f2690ef333843c9195bec2a4eb08f6e68a3b3bc7f097c32"
+            },
+            "imageformats/qico.dll": {
+              "sizeBytes": 46216,
+              "sha256": "30b344703bccbf4bf70809cb9b6ce0075b74bdc765d18e539339190b095bb552"
+            },
+            "imageformats/qgif.dll": {
+              "sizeBytes": 47752,
+              "sha256": "0ee32e5b48bf1404532842862045c523e0c915f223e34ea900c709e7c72b0b1e"
+            },
+            "imageformats/qpdf.dll": {
+              "sizeBytes": 41608,
+              "sha256": "cd0829b5ed8082f015bf43e52c3bfd4e2250203d63f276a3879b8fb09e14ca5e"
+            },
+            "imageformats/qsvg.dll": {
+              "sizeBytes": 39048,
+              "sha256": "d901931d7f5da8b408f9fcfcfe9e53a4d2247b5fa391fd67ac22a9e9f13c1636"
+            }
+          },
+          "sourceLicenseRawByteMatch": true,
+          "initialVersusFormalProgramDifferences": {
+            "unins000.dat": {
+              "old": {
+                "sizeBytes": 16793,
+                "sha256": "0731ff0069e3a4c84d35cca34514a5bd4d27a88d85325fed17b876cd7df42eb7"
+              },
+              "new": {
+                "sizeBytes": 16793,
+                "sha256": "789f3a562c8545522a03bfe6748a89a03bd982ea732b90e89d8b071d2c3ca066"
+              }
+            }
+          }
+        },
+        "inputUnchanged": true,
+        "installedFilesUnchanged": true,
+        "export": {
+          "file": "drive_c/CopyQTests/original-result.cpq",
+          "sizeBytes": 247,
+          "sha256": "d0ea0bf9fed0989e0d10986f292b36a496b56a094e985a3d3cd1ca061a532df0",
+          "header": "CopyQ v4",
+          "tab": "OriginalFixture",
+          "items": [
+            "ORIGINAL SECOND42",
+            "中文 ORIGINAL AFTER\nVALUE 40\nORIGINAL42"
+          ],
+          "mimeTypes": [
+            [
+              "text/plain"
+            ],
+            [
+              "text/plain"
+            ]
+          ],
+          "allBytesConsumed": true,
+          "onlyTestTabExported": true,
+          "configurationOrCommandsExported": false
+        },
+        "fixedDataPins": {
+          "CopyQTests/原始剪贴板.cpq": {
+            "sizeBytes": 100,
+            "sha256": "b28a4fb196fbcdb275dd389b566ba84defbcfa962f4b1fd6d7742eea7eea0f9b"
+          },
+          "CopyQTests/original-result.cpq": {
+            "sizeBytes": 247,
+            "sha256": "d0ea0bf9fed0989e0d10986f292b36a496b56a094e985a3d3cd1ca061a532df0"
+          }
+        },
+        "applicationConfigPins": {
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq_geometry.ini": {
+            "sizeBytes": 677,
+            "sha256": "06965aa15b72ec0117791bfc9fcf003e88ff1055b95f371f6e8648c2ba4a7d48"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq_tab_T3JpZ2luYWxGaXh0dXJlICgxKQ==.dat": {
+            "sizeBytes": 100,
+            "sha256": "83fc36f50b45a6abf4372cb97aad09395727bbb9dfa9a986bd85703a28facb15"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq_tabs.ini": {
+            "sizeBytes": 332,
+            "sha256": "8b43b0f898c268c01af839e626710dbf2e55191f0a59406dece71b231746acb3"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq-filter.ini": {
+            "sizeBytes": 38,
+            "sha256": "b6ac2e8dc0f3b6373f447e11925807632761e2e0ecb704f4766a66874e657f58"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq_tab_JmNsaXBib2FyZA==.dat": {
+            "sizeBytes": 4,
+            "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq-monitor.ini": {
+            "sizeBytes": 26,
+            "sha256": "68224def6497937bacc98726458afefed4edab5871b2744604c36529a84a58ae"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq.ini": {
+            "sizeBytes": 66,
+            "sha256": "efce46e3ae516220d5ad7310e0e7a98c499ba1acd6bf766d9ce11b42b3eb3935"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq_tab_T3JpZ2luYWxGaXh0dXJl.dat": {
+            "sizeBytes": 100,
+            "sha256": "83fc36f50b45a6abf4372cb97aad09395727bbb9dfa9a986bd85703a28facb15"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq-commands.ini": {
+            "sizeBytes": 1044,
+            "sha256": "c6713d272fcf3520c8e0ee65dacaaf8303138893fbfbc224e8d5767368142d5a"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq/copyq-20261011-588.log": {
+            "sizeBytes": 110,
+            "sha256": "cff69a6a7a634e7d94d41f2aaedd6dd1e79f2dca39f0a7a6d335deada1b01e8c"
+          },
+          "drive_c/users/forge/AppData/Roaming/copyq/copyq/copyq-20261011-592.log": {
+            "sizeBytes": 110,
+            "sha256": "268571a066b8f7d63da05fcb9c1ba0cc8304be3a977ff605aa0d29439ce1fe46"
+          }
+        },
+        "registryPins": {
+          "system.reg": {
+            "sizeBytes": 3423303,
+            "sha256": "b8802c59797ae0b9dea049a5b84db3f5b3c5610b945c81882d7b97cdb886b61e"
+          },
+          "user.reg": {
+            "sizeBytes": 103031,
+            "sha256": "a8ba0cab8ce36e61afdfb9d9959348be796b408c0d71b7af57921f196d8fda84"
+          },
+          "userdef.reg": {
+            "sizeBytes": 4052,
+            "sha256": "ee1a850559541dfc32648422f19bccf7915889eb4228962a4914c084bcd595a4"
+          }
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-show-request-diagnostic.jpg": {
+          "sizeBytes": 78038,
+          "sha256": "9376217f0e45f70ce4ce2a241bd08f9093c5fc102bed4fb65af9ffa199227f49"
+        },
+        "02-formal-original-import.jpg": {
+          "sizeBytes": 83042,
+          "sha256": "5119447643f353cdc0ae839af477861a003e8c566eb131fe4b0adbb0e579ee79"
+        },
+        "03-original-clipboard-copy-failed.jpg": {
+          "sizeBytes": 98769,
+          "sha256": "0ce6ad86f405edec5efbf18a76fdc6618f0c1abc208a1556ed1d98214a2b427f"
+        },
+        "04-original-copy-menu-clipboard.jpg": {
+          "sizeBytes": 99871,
+          "sha256": "81c9acaf27b305ca0082593eed05e11c054083365993c0c2aa0d13363960be3a"
+        },
+        "05-original-export-options.jpg": {
+          "sizeBytes": 99965,
+          "sha256": "69ac96a2dba18b4ba1b418f8b1a0cc86902eb0987038aa1b204a74d354e3edc0"
+        },
+        "06-original-exported-items.jpg": {
+          "sizeBytes": 85590,
+          "sha256": "47aded0dea693f87d20a82dfedfede0d1f49aa4a7ff0c214902474eb86c8bc5f"
+        },
+        "07-original-about.jpg": {
+          "sizeBytes": 136039,
+          "sha256": "919956c73bbef789ebb9e2f969cb91ab3779d6abcee7d0fd49dbe3f23024d3d9"
+        },
+        "08-original-new-process-reimport.jpg": {
+          "sizeBytes": 87029,
+          "sha256": "b22285c8c89fbd850137f4a02a3fe36ca95b8d232495f3aeeec3e099ccb35f52"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-copyq-source.json",
+    "sha256": "cb40e47dd4a7458fd7e64b37656ebaa286906240cd45b3130c613f3cf94ebec1"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-copyq-gui.json",
+    "sha256": "276ee6cb5b0aa380a5d622edf2b19104d6679699db2f8f48d5125712bcf8c1d2"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-copyq-failures.json",
+    "sha256": "1cc0a0a41e214a1aaaa55c9ff79e892cafc6467cd2db2b274e9f2a08bde188a6"
+  },
+  "limits": [
+    "Only a small one-item legacy CopyQ v2 text fixture imported, BEFORE/AFTER replaced, ASCII line appended and a second ASCII item added. Explicit-menu copy checked with actual Clipboard Content text/plain17bytes, only-fixture CopyQ v4 export and explicit new-process GUI import verified. Synthetic CPQ files do not count as apps.",
+    "Initial Ctrl+C followed immediately by Clipboard Content still showed old2-byte i1; explicit Edit/Copy Selected Items later showed ORIGINAL SECOND42/17bytes. Cause not established; shortcut success or a universal clipboard/Wine fix not claimed.",
+    "Default no-argument startup kept a server but no usable window/tray entry. It exited through documented native CopyQ exit client in a protected transient unit, not forced termination. Request --start-server show diagnosis displayed a window and normal GUI Quit0. Native launcher.arguments then pinned --start-server show in a new formal generation; initial definition/generation/tasks retained, diagnostics not counted as formal acceptance.",
+    "Installer fixed official API size and SHA256 digest matched. Source fixed official tag archive has locally computed SHA256 only. Main src/main.cpp SPDX GPL-3.0-or-later and installed LICENSE raw bytes match fixed source. Full Qt/KDE/Snoretoast/plugins/FontAwesome/translations/other bundled-license closure, binary-source correspondence, Authenticode/OpenPGP and reproducible build unverified; not claimed latest.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime changes. Installer Inno current-user with no desktop/startup tasks requested, decoded /DIR=C: one backslash CopyQ13UTF8bytes. No full installer/custom-action/association/background-network audit or unattended claim.",
+    "Only finite text/plain content and CPQ subset independently parsed, including UTF8 text and Qt4.7 big-endian records with full-byte consumption; no full CopyQ/Qt serialization or compressed/encrypted/large formats acceptance. Clipboard capture from other apps, direct paste to other apps, images/HTML/rich formats, scripting/commands/plugins/tags/global shortcuts/encryption/sync, large/bad data, direct Chinese typing, network/new-machine/migration/cross-version/unattended unverified.",
+    "Independent market generation, cached same-version Store IPC update, exact formal original rollback and normal Core/Store restart pending at original freeze; completion recorded separately. GUI market update/rollback buttons unverified."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

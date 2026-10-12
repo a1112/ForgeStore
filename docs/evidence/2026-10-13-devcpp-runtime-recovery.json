@@ -1,0 +1,2263 @@
+{
+  "rejectedPreview": {
+    "candidate": 68,
+    "role": 77,
+    "error": "Catalog(Invalid(\"invalid artifact size or SHA-256\"))",
+    "storeNormalStopAfterActualSixClassPartialSavedReadBack": true,
+    "partialIsNotFullLiveCheckpoint": true,
+    "noMarketInstallationSubmittedBeforeFailure": true
+  },
+  "withdrawalRecovery": {
+    "passed": true,
+    "normalStoreStartPassed": true,
+    "coreJobs": 488,
+    "fullStoreRows": 142,
+    "metadataVersion": 78,
+    "candidateVersion": 69,
+    "rootVersion": 1,
+    "catalogueEntries": 63,
+    "catalogueFullObjectAndAllMarketFieldsEqualPrePreview": true,
+    "oldFullCoreJobsRowsConfigsGenerationsGuardsPreserved": true,
+    "originalProgramAndFixedDataPinsPreserved": true,
+    "rootTrustFieldsPreserved": true,
+    "checkpoint": {
+      "file": "after-withdrawal-recovery.json",
+      "sha256": "522f4972b8d036828c0367c98d8c9fa3c1b1cc0ef99813a086df6535f1f00fac",
+      "coreJobs": 488,
+      "fullStoreRows": 142
+    },
+    "completeSevenClassCheckpointSavedReadBack": true,
+    "oldSignedRolesAndRejectedPreviewPreserved": true,
+    "trustDeletedOrRolledBack": false,
+    "coreDefinitionChanged": false,
+    "marketInstallationSubmitted": false,
+    "acceptedCount": 61,
+    "pendingBeforeLedgerUpdate": 17
+  },
+  "activeFilenameAlias": {
+    "passed": true,
+    "onlyChangedDefinitionField": "installer.fileName",
+    "beforeDefinition": {
+      "bottleId": "gui-devcpp",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "devcpp",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\DevCpp"
+        ],
+        "fileName": "Dev-Cpp 5.11 No Compiler Setup.exe",
+        "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+      },
+      "launchers": [
+        {
+          "executable": "DevCpp/devcpp.exe",
+          "id": "main",
+          "name": "Orwell Dev-C++"
+        }
+      ],
+      "name": "Orwell Dev-C++",
+      "publisher": "Orwell Dev-C++",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "5.11"
+    },
+    "afterDefinition": {
+      "bottleId": "gui-devcpp",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "devcpp",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\DevCpp"
+        ],
+        "fileName": "Dev-Cpp-5.11-No-Compiler-Setup.exe",
+        "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+      },
+      "launchers": [
+        {
+          "executable": "DevCpp/devcpp.exe",
+          "id": "main",
+          "name": "Orwell Dev-C++"
+        }
+      ],
+      "name": "Orwell Dev-C++",
+      "publisher": "Orwell Dev-C++",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "5.11"
+    },
+    "originalGenerationDefinitionAndAllRecordsUnchanged": true,
+    "originalInstalledProgramsAndFixedDataUnchanged": true,
+    "installerAliasBytesEqualOfficialSource": true,
+    "installerPin": {
+      "sizeBytes": 2148605,
+      "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+    },
+    "coreJobs": 488,
+    "fullStoreRows": 142,
+    "sevenCapturedStateClassesUnchanged": true,
+    "marketInstallerOrGuiNotSubmitted": true,
+    "checkpoint": {
+      "file": "after-active-filename-alias.json",
+      "sha256": "522f4972b8d036828c0367c98d8c9fa3c1b1cc0ef99813a086df6535f1f00fac",
+      "coreJobs": 488,
+      "fullStoreRows": 142
+    },
+    "sourceUrlChanged": false,
+    "launcherRuntimeOrProgramModified": false,
+    "guardRelaxed": false
+  },
+  "higherRoleAliasActivation": {
+    "activatedPreview": true,
+    "metadataVersion": 79,
+    "candidateVersion": 70,
+    "rootVersion": 1,
+    "entries": 64,
+    "coreJobs": 488,
+    "fullStoreRows": 142,
+    "entry": {
+      "compatibility": {
+        "evidence": "windows-devcpp-filename-alias-20261013.acceptance.json#devcpp",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711",
+          "size": 2148605,
+          "target": "Dev-Cpp-5.11-No-Compiler-Setup.exe",
+          "url": "https://downloads.sourceforge.net/project/orwelldevcpp/Setup%20Releases/Dev-Cpp%205.11%20No%20Compiler%20Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "devcpp"
+      },
+      "id": "devcpp",
+      "license": "GPL-2.0-or-later main fixed source and installed COPYING; full bundle closure unverified",
+      "name": {
+        "en": "Orwell Dev-C++",
+        "zhCN": "Orwell Dev-C++ 有限ASCII编辑"
+      },
+      "origin": "https://sourceforge.net/projects/orwelldevcpp/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Orwell Dev-C++",
+      "summary": {
+        "en": "No Compiler edition; limited ASCII source-file editing/saveas/fresh Open. Chinese path failed; no compilation or complete IDE acceptance.",
+        "zhCN": "No Compiler版；仅ASCII源文件编辑、另存与新进程Open；中文路径失败，未验收编译或完整IDE"
+      },
+      "version": "5.11"
+    },
+    "installed": {
+      "appId": "devcpp",
+      "backend": "compatforge",
+      "canRollback": false,
+      "version": "5.11"
+    },
+    "oldFullFieldsAndEntriesPreserved": true,
+    "checkpoint": {
+      "file": "after-alias-activation.json",
+      "sha256": "8f89579a8867bc6007d36ca12add42bfe526a4512c21b757968e882e7b8b1c1f",
+      "coreJobs": 488,
+      "fullStoreRows": 142
+    },
+    "independentMarketGenerationPending": true,
+    "countsAsCompleted": false,
+    "guardRelaxed": false
+  },
+  "finalNormalRestart": {
+    "passed": true,
+    "coreJobs": 492,
+    "fullStoreRows": 144,
+    "metadataVersion": 79,
+    "rootVersion": 1,
+    "candidateCatalogue": "candidate-v70",
+    "catalogueEntries": 64,
+    "signedActualTargets": 136,
+    "publicCatalogueJsonFiles": 75,
+    "normalRestartFullSevenClassFieldEqualityPassed": true,
+    "allTerminal": true,
+    "oldProcessIds": {
+      "compatforge.service": "41968",
+      "forge-store.service": "49951"
+    },
+    "newProcessIds": {
+      "compatforge.service": "52961",
+      "forge-store.service": "52976"
+    },
+    "checkpoints": {
+      "beforeRestart": {
+        "file": "before-final-normal-restart.json",
+        "sha256": "f8c3ccd51121d8c97aff2297bf2f48d94cffb6c2c07c953a464836101640dd44",
+        "coreJobs": 492,
+        "fullStoreRows": 144
+      },
+      "afterRestart": {
+        "file": "after-final-restart.json",
+        "sha256": "d6daa236117ba3a7fe1ccbb44e1b6289a025254a1d8e2a0522021fa2efd384d3",
+        "coreJobs": 492,
+        "fullStoreRows": 144
+      }
+    },
+    "outputs": {
+      "original": {
+        "generationId": "gen-job-1791840525058-1",
+        "generation": {
+          "bottleId": "gen-job-1791840525058-1",
+          "createdAtMilliseconds": 1791840525063,
+          "definition": {
+            "bottleId": "gui-devcpp",
+            "category": "development",
+            "compatibilityRating": "unknown",
+            "id": "devcpp",
+            "installer": {
+              "arguments": [
+                "/S",
+                "/D=C:\\DevCpp"
+              ],
+              "fileName": "Dev-Cpp 5.11 No Compiler Setup.exe",
+              "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+            },
+            "launchers": [
+              {
+                "executable": "DevCpp/devcpp.exe",
+                "id": "main",
+                "name": "Orwell Dev-C++"
+              }
+            ],
+            "name": "Orwell Dev-C++",
+            "publisher": "Orwell Dev-C++",
+            "schemaVersion": "1",
+            "tags": [
+              "rolling-1000",
+              "managed-nsis"
+            ],
+            "version": "5.11"
+          },
+          "definitionDigest": "sha256:576e0660960410b5df7afb36d142f7a032af0927f857630c26734ff9d1842d15",
+          "id": "gen-job-1791840525058-1",
+          "launcherDigests": {
+            "main": "sha256:5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1"
+          },
+          "runtime": {
+            "binding": {
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINESERVER": "/usr/bin/wineserver"
+              },
+              "executable": "/usr/bin/wine",
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "providerId": "wine-linux-x86-64-preview",
+              "wineserverExecutable": "/usr/bin/wineserver"
+            },
+            "selection": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "version": "11.14"
+          },
+          "status": "ready",
+          "updatedAtMilliseconds": 1791840538168
+        },
+        "installedFiles": {
+          "uninstall.exe": {
+            "sizeBytes": 70778,
+            "sha256": "066bb8937252bd11e9f87a6d45f4c736175830151dc21e7f050bb4d6ae268596"
+          },
+          "COPYING.txt": {
+            "sizeBytes": 18581,
+            "sha256": "cea462ee95efc9ce3bfca23a9596f443713e65f41a14c4b59aec88efe272e14f"
+          },
+          "NEWS.txt": {
+            "sizeBytes": 60818,
+            "sha256": "97677ebdea249dbc5f33bd496fd8d87b275eb739e379762c974d692aa9ceee84"
+          },
+          "devcpp.exe": {
+            "sizeBytes": 2795008,
+            "sha256": "5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1"
+          },
+          "Packman.exe": {
+            "sizeBytes": 380928,
+            "sha256": "d624881357ad773ebeb617be6697e7bf3144d9484f6d8ee870a5d2aa9348e904"
+          },
+          "devcppPortable.exe": {
+            "sizeBytes": 174592,
+            "sha256": "64f056f1319edaf1522719a8ae65267fe1609263c14e1955b91c468a42299e70"
+          },
+          "ConsolePauser.exe": {
+            "sizeBytes": 171008,
+            "sha256": "f04e5f949ae3b2b2882380f9b6d1f111891e5ea15fef560be9d13f39dc3a0b11"
+          },
+          "devcpp.map": {
+            "sizeBytes": 1579852,
+            "sha256": "1c1cb41d40696fa0a3b279f9a7fa15b2e1f467f07be475541e818fa65632e53b"
+          },
+          "devcpp.exe.manifest": {
+            "sizeBytes": 695,
+            "sha256": "793e2d56fe1282c6cd64fcda1febb2ee629e4d54afb972f93765c1a4d93bf02f"
+          },
+          "Packman.map": {
+            "sizeBytes": 697941,
+            "sha256": "e8c7af951bfffd01b6d61df7ee0b6baf7bb8367e106ad19fdc2da4db04e46928"
+          },
+          "Templates/Dll_hpp.txt": {
+            "sizeBytes": 267,
+            "sha256": "b25ccadd8d0f1b813b0a1b2eb9aed633ad842d3bcb97b0063486bb49fddfb990"
+          },
+          "Templates/FileEditor_c.txt": {
+            "sizeBytes": 5048,
+            "sha256": "da4ab8402b96611dbf8538caab42f317a6cedc75f9f73f2430ffd240dc745d5f"
+          },
+          "Templates/ConsoleApp_cpp.txt": {
+            "sizeBytes": 175,
+            "sha256": "b392aaaebdc9c9de62705241028de435955c02dd92f4006f72e6ef7ec2dbb1b8"
+          },
+          "Templates/StdThread_cpp.txt": {
+            "sizeBytes": 1106,
+            "sha256": "93709a0d3cf53a01d94b896151e5a76de26ff14e2248caa2517e821ae0eb968c"
+          },
+          "Templates/FileEditor_rc.txt": {
+            "sizeBytes": 261,
+            "sha256": "8f8a3d45d4afa05f79b16203db7ffc0087c8792dd203bfdfc2206680e9dd7730"
+          },
+          "Templates/MDIEditor.template": {
+            "sizeBytes": 398,
+            "sha256": "1cfbd32a246c473b19c3527e84efbf6ee7d7799b1422685dd737981c98ed8052"
+          },
+          "Templates/MDIEditor_h.txt": {
+            "sizeBytes": 631,
+            "sha256": "5daff9beb0a0f942323dad4b478e6ead1b475f0dac5d9261d149ec278b48d853"
+          },
+          "Templates/WinAnim_c.txt": {
+            "sizeBytes": 4523,
+            "sha256": "f2be45b6f915c4f53586a477a1a37e4f723467330c35b1ad33860ddf5796cde6"
+          },
+          "Templates/Hello_c.txt": {
+            "sizeBytes": 98,
+            "sha256": "1b4e13ce2c7a3a6705c0d69512dd9a6789eb4b3319797f41b64e78ed4706d022"
+          },
+          "Templates/HelloInput_cpp.txt": {
+            "sizeBytes": 530,
+            "sha256": "83a426c6656fd68806ce429ed939b0c77716ae84be72825f6ebb4c777ce8d1f0"
+          },
+          "Templates/Direct3D.txt": {
+            "sizeBytes": 6726,
+            "sha256": "cdea6b0f1f619a576050ff8305596140b3770cc2294db69bb6694fa4030d39f2"
+          },
+          "Templates/WinApp_c.txt": {
+            "sizeBytes": 2408,
+            "sha256": "103f20bdaf148ae5082d5b42700e3a135b38a5beedb17898d7252f493db14a4d"
+          },
+          "Templates/StdThread_c.txt": {
+            "sizeBytes": 150,
+            "sha256": "4d408d405a8596e65f1bbd81e798a6b3dc2226a1ebf207335e99945267c99656"
+          },
+          "Templates/OpenGL.txt": {
+            "sizeBytes": 4450,
+            "sha256": "22f2274a69157e7ab2d549bd9af5e2bcb2bc233bfe4e9583ed5face315c64138"
+          },
+          "Templates/4-DLL.template": {
+            "sizeBytes": 340,
+            "sha256": "1067c5aa4d51b2062d65ed05c9fe7f8f7012c0183151f0fa9ce8182a62003a78"
+          },
+          "Templates/Dll_cpp.txt": {
+            "sizeBytes": 635,
+            "sha256": "33daabc8d17f5779702e7354d7b4bb1d1e2d905637aee0b53f94a87348fdf886"
+          },
+          "Templates/Jackpot_cpp.txt": {
+            "sizeBytes": 1932,
+            "sha256": "7eb8150c85566df9844a8552710b0c99292fca8c2c108f024236a339dd26a94f"
+          },
+          "Templates/FileEditor_h.txt": {
+            "sizeBytes": 143,
+            "sha256": "23f5c9e3fe088bf9fffc946ad1e791c1382200a015df4df22f557f4722368230"
+          },
+          "Templates/OpenMP_c.txt": {
+            "sizeBytes": 345,
+            "sha256": "6a2cb2ce90b2628e62d266458cd96ac570f3428109b359d4f970aba4edc3a7de"
+          },
+          "Templates/ball.bmp": {
+            "sizeBytes": 630,
+            "sha256": "56ec67b9baead0d397169772f7028e49bcd81824420e3af487cef1e221717cf8"
+          },
+          "Templates/ballmask.bmp": {
+            "sizeBytes": 190,
+            "sha256": "46b7c221be298aac2159ab06d7d19c054a2087f9e78a332d4e1cc25f62925870"
+          },
+          "Templates/1-WinApp.template": {
+            "sizeBytes": 234,
+            "sha256": "b357beab279b5e83290fc3a8e9d79634a863b8f4617eaa4d50817bfd994d4d16"
+          },
+          "Templates/Direct3D.template": {
+            "sizeBytes": 220,
+            "sha256": "bd7b71f4483a94c9645329b238de30b4ab2e76f872c70318d887c5ad0a40cebd"
+          },
+          "Templates/OpenMP.template": {
+            "sizeBytes": 290,
+            "sha256": "478c694eb1a18a64ceef16f265e5df3655646e90016d2d01302b8e6f925c040e"
+          },
+          "Templates/WinAnim_rc.txt": {
+            "sizeBytes": 143,
+            "sha256": "f440ea51b7d506339296a48eb8b020632cc10c685edc4fc7b4b5a58d2dc67383"
+          },
+          "Templates/WinAnim.template": {
+            "sizeBytes": 317,
+            "sha256": "cac47ad7ee81e3c6145cfe31b86bb80101e7f228313602563df708615ff8eee9"
+          },
+          "Templates/3-StaticLib.template": {
+            "sizeBytes": 174,
+            "sha256": "a30770ee64eef6014f6372c0310d0a7f7299902437c596c67c9db7bc51d5b212"
+          },
+          "Templates/FileEditor.template": {
+            "sizeBytes": 424,
+            "sha256": "523194e4bc679e3702bb8c4897444ef7a5838464f4b360e8631f9d0c5ad27106"
+          },
+          "Templates/Dll_c.txt": {
+            "sizeBytes": 569,
+            "sha256": "6dddcd4fcaf183e64e89205c762d08fc310ca11db48710779fc30999839776be"
+          },
+          "Templates/HelloInput.template": {
+            "sizeBytes": 236,
+            "sha256": "83da0b61e4d19cc3fcf6f3b7cd5079fb3ebd6ee3bfb052c29b63548fe7277767"
+          },
+          "Templates/Hello.template": {
+            "sizeBytes": 257,
+            "sha256": "87ab90180caa74e053ccf2cc88e84385b9d56bdd4e2e50667ec44a357ece373f"
+          },
+          "Templates/HelloInput_c.txt": {
+            "sizeBytes": 533,
+            "sha256": "95a68c9cf6cfc623608c3d954f0c6e078d726583770f25688f7673d302be1aa7"
+          },
+          "Templates/5-Empty.template": {
+            "sizeBytes": 164,
+            "sha256": "d6c8a7d19456238a757bb4c87266a18167bdfacc897c24f3db54b95dfc68c78c"
+          },
+          "Templates/OpenGL.template": {
+            "sizeBytes": 231,
+            "sha256": "8bc7f4863f1847dcc92342ebff84837071d6eb76d6e547b40656e8677e219fdc"
+          },
+          "Templates/OpenMP_cpp.txt": {
+            "sizeBytes": 893,
+            "sha256": "bb3183b954f11aad0c4bb9afd24a6c7d3d177fdb371a1a8c3655b94cfd51b258"
+          },
+          "Templates/StdThread.template": {
+            "sizeBytes": 281,
+            "sha256": "41e83e10cf17fe62d68cc306237995dd64dc39d3a77b777c54dbf6fc699e1a28"
+          },
+          "Templates/2-ConsoleApp.template": {
+            "sizeBytes": 254,
+            "sha256": "dce4a80583cbd9372c84531f045d67d99656452c11df3983bac9e7557aedc4fb"
+          },
+          "Templates/Hello_cpp.txt": {
+            "sizeBytes": 92,
+            "sha256": "645a77079dbad9b9613210387f6dd812e11616352c3f194fe0727934c44d0498"
+          },
+          "Templates/ConsoleApp_c.txt": {
+            "sizeBytes": 196,
+            "sha256": "b395f391a8746ec9a01627ea586b35c70cf24aa66df5f01de81e281f2b73e2b8"
+          },
+          "Templates/Dll_h.txt": {
+            "sizeBytes": 193,
+            "sha256": "3f5800af018e591f3f09c8e4de02f470e2fa3faf84b2cba26cab27541e0bfdfd"
+          },
+          "Templates/MDIEditor_c.txt": {
+            "sizeBytes": 13574,
+            "sha256": "d06c86b0219c6b7caa21bf0b596f760def5afa413a9e67f4f44c9ec9ec86af19"
+          },
+          "Templates/MDIEditor_rc.txt": {
+            "sizeBytes": 732,
+            "sha256": "c923676040ba6c6b874b5f69afa3546667ef1325e14fa983fe958c9503380bcb"
+          },
+          "Templates/Jackpot.template": {
+            "sizeBytes": 234,
+            "sha256": "a547d6c67c022eca6f9ab46df091c6b9d9fcd7ecfbddfe31bb2acee17bd55e00"
+          },
+          "Help/jquery191.min.js": {
+            "sizeBytes": 92633,
+            "sha256": "20638e363fcc5152155f24b281303e17da62da62d24ef5dcf863b184d9a25734"
+          },
+          "Help/main.js": {
+            "sizeBytes": 5712,
+            "sha256": "b04d2790d4f3bdc1afbc0c3d754e982fe7498e622adfaf0eccb5a6be61961a0e"
+          },
+          "Help/index.htm": {
+            "sizeBytes": 951,
+            "sha256": "ee9f8b43ccb9a44a5ebddc54c46f19de6c4905b56d1231df7aa4e6bfbce60f23"
+          },
+          "Help/content.css": {
+            "sizeBytes": 464,
+            "sha256": "e62c95fc0237246b61d0d341ed160936c9eaed4ac16b3765e6cc31ceb54bcd40"
+          },
+          "Help/logo.png": {
+            "sizeBytes": 3673,
+            "sha256": "43c594c787d1f734a556b0be76333a7ff26fa016b3e195f3fb2d2910f1f43579"
+          },
+          "Help/main.css": {
+            "sizeBytes": 1047,
+            "sha256": "de774ec86cbcca9a08473cb7753b23346070350055e21e2af572c63ad5703e3e"
+          },
+          "Help/intro.htm": {
+            "sizeBytes": 971,
+            "sha256": "df4f2c1c86154ec8862e0b6d4dbf1cfc62ca128a64fed8f0afa23c188d7ffb30"
+          },
+          "Lang/English.lng": {
+            "sizeBytes": 33889,
+            "sha256": "e4613e1982268098c4f17862fef7d5e86a9d37af19d5b0cc02cef47f44305646"
+          },
+          "Lang/Chinese.tips": {
+            "sizeBytes": 3093,
+            "sha256": "a0b9a08778abb052eed37ed0e5c18b196fb3c4108ca752c3670e8f7f7ff5d038"
+          },
+          "Lang/Bulgarian.lng": {
+            "sizeBytes": 26797,
+            "sha256": "8207925ef9e2eb4d0ca6827a4fb04ddb144ff7e1765ddfcbf9870bfe73094768"
+          },
+          "Lang/Galego.tips": {
+            "sizeBytes": 6861,
+            "sha256": "05ff7a509158131ded463503abd89f38c44af6c0ec684db5dae3bc4c957c1b2b"
+          },
+          "Lang/Dutch.lng": {
+            "sizeBytes": 27108,
+            "sha256": "01d46f5fa358b7a7d2267af98da7f1b11cc61e981f7dd4c84db39d301197955d"
+          },
+          "Lang/Turkish.lng": {
+            "sizeBytes": 26299,
+            "sha256": "068b0620d2b2fb100b6e9f31d41d003bc82453f7a85443b2bc2389133e8dc0dc"
+          },
+          "Lang/Slovenian.lng": {
+            "sizeBytes": 26326,
+            "sha256": "74dbc58d2a21d5b0f1efc7cc3bd640384f8778756de3bcf83de579e344d6b457"
+          },
+          "Lang/Spanish.lng": {
+            "sizeBytes": 28352,
+            "sha256": "361400e26f2d8d048cf67a42d46d6dd95370a0d243c849106f2a75a9310457c1"
+          },
+          "Lang/Japanese.tips": {
+            "sizeBytes": 5332,
+            "sha256": "a36c5a567f77beb26bd7783b03ea378f6aaa21b45bbb984c145a41c62682f9fd"
+          },
+          "Lang/Czech.lng": {
+            "sizeBytes": 34536,
+            "sha256": "f1eec4ae716fabc6963098dd797b6ace23d13184cd7187faf9c4f8f97eac7eb7"
+          },
+          "Lang/English.tips": {
+            "sizeBytes": 5561,
+            "sha256": "0785ec98d2929601f2531443915554709c032356a3cd7cfb9d4c32e7dfc75e0d"
+          },
+          "Lang/Croatian.lng": {
+            "sizeBytes": 24972,
+            "sha256": "0f020cbfdd0bb2f51a1abbd4a31ea62bd6ddc918b5e419e936555fbcdc7f75fb"
+          },
+          "Lang/Russian.lng": {
+            "sizeBytes": 26635,
+            "sha256": "ff98741e5682b2886fd62aa73ab11c7bb151f442c65bf544e466a5669d1825a6"
+          },
+          "Lang/Italian.lng": {
+            "sizeBytes": 27388,
+            "sha256": "21fedf43e4b4f21799f0ddc50766b188d561d03f895b531ef32024398e7e226d"
+          },
+          "Lang/Danish.lng": {
+            "sizeBytes": 25526,
+            "sha256": "d34f2a47cd819d983874d12855aa5706001733ac13be9e7a167b7664e99b9820"
+          },
+          "Lang/Polish.lng": {
+            "sizeBytes": 26577,
+            "sha256": "41a48ad9ea5b738d72c983e56cb897f23808a144b2c2579b62bb24400a1b5425"
+          },
+          "Lang/Russian.tips": {
+            "sizeBytes": 6129,
+            "sha256": "0c394aef2d1ef79ae1ef56fee604dd426676b3ce59b21712d996bbd2ceba8e36"
+          },
+          "Lang/Dutch.tips": {
+            "sizeBytes": 6016,
+            "sha256": "6f35936ac7de880add18b12f9fadeb0c71a49fe1d5dbaf392fc9bcd9143406a8"
+          },
+          "Lang/Norwegian.tips": {
+            "sizeBytes": 5827,
+            "sha256": "eece3a80367cafc4ff35012dcf5759cdf430163afa10698202689203c4cb2335"
+          },
+          "Lang/Korean.lng": {
+            "sizeBytes": 23564,
+            "sha256": "fa4cdf831cf41d53cc1e51943a9545831de5d6acdb7da8ea2f509f85d66fc1b6"
+          },
+          "Lang/German.lng": {
+            "sizeBytes": 29330,
+            "sha256": "e76241d4ba4f19e8f8407893d56271fc05cc225bbc8ec16aa5dbe87b55b41c0e"
+          },
+          "Lang/Hebrew.lng": {
+            "sizeBytes": 20505,
+            "sha256": "e693172d3c3a8b9528db7438a8e857bd1e8dd0ee21b7b00b3207a045630b5c42"
+          },
+          "Lang/Portuguese.tips": {
+            "sizeBytes": 6223,
+            "sha256": "34c05e4374708523d41bd7753d4ba6123b811f552a438cffdc04c8d4963c36bb"
+          },
+          "Lang/Latvian.tips": {
+            "sizeBytes": 5576,
+            "sha256": "935150b3a42ea69343d479b41544565aaa14d4dd2d56a1b44d9c36d52c3b4e3b"
+          },
+          "Lang/French.lng": {
+            "sizeBytes": 28074,
+            "sha256": "00165e416d6c9f19cd2db0513ef1a6e14c8369aa448146aaf46bc6c1c8ccc235"
+          },
+          "Lang/Estonian.tips": {
+            "sizeBytes": 5741,
+            "sha256": "c4c04607308b2ca909548654cb75abc76c69ef76b408c363048cf4e48f237659"
+          },
+          "Lang/German.tips": {
+            "sizeBytes": 6324,
+            "sha256": "0a215f5ba3ddbc1bc16f57fc3b5ab5b5201c36daefb5884b8b837a348b30d5d9"
+          },
+          "Lang/Catalan.lng": {
+            "sizeBytes": 37873,
+            "sha256": "3f40d7c469d7234ed3c70e5be910fe0f0139ddc991914705b5f43c4e029f6f4f"
+          },
+          "Lang/Latvian.lng": {
+            "sizeBytes": 26018,
+            "sha256": "a6b48029afc9ba0e2375fceac0d9699d6c786f683f9559a08d8869e506e50ad5"
+          },
+          "Lang/SpanishCastellano.tips": {
+            "sizeBytes": 11098,
+            "sha256": "3fad4b8db1c5cb922b7611137dc87c2013333fc7b07bfa154c39a630bf287157"
+          },
+          "Lang/Catalan.tips": {
+            "sizeBytes": 6007,
+            "sha256": "bb422c5fb8d2ed140fa3075b4a00c78acad817ff13138e890ae3f785ea8aa458"
+          },
+          "Lang/Greek.lng": {
+            "sizeBytes": 27492,
+            "sha256": "e88234abdd682a7fb1b717ea9e836defe687e815d63af3a00d70b1c6a72feee1"
+          },
+          "Lang/Norwegian.lng": {
+            "sizeBytes": 26049,
+            "sha256": "49726c9d94d04238ef1d42cb443b9bf9c7d406dd740873bba1c034faf83b7c5f"
+          },
+          "Lang/Danish.tips": {
+            "sizeBytes": 5524,
+            "sha256": "01d9a30daad15d3be5b28eefeceef49c174063f8c7276cbbe4b8712c5f9fd91e"
+          },
+          "Lang/Japanese.lng": {
+            "sizeBytes": 32041,
+            "sha256": "4a2f0fe9c890e13a6752ef038913033e978b99b92d3e2f3d5c4f1f69c374b765"
+          },
+          "Lang/Italian.tips": {
+            "sizeBytes": 5476,
+            "sha256": "886c4d2a199a05669fa160b5d99af6a63b46b44c86ba23d334ac648dc26d6aa7"
+          },
+          "Lang/Slovak.lng": {
+            "sizeBytes": 26774,
+            "sha256": "b194f144bb2e6eb414083cde5176aaf742b99f966e98373eae3c9bdfeba94b9c"
+          },
+          "Lang/Polish.tips": {
+            "sizeBytes": 4881,
+            "sha256": "6ddeed5798d811fd501b1e1555f84f099f988168ba963055db50ed70ae55913f"
+          },
+          "Lang/Galego.lng": {
+            "sizeBytes": 28476,
+            "sha256": "835eb075da7d957f3af39892514f313ee25b7ba0bd119312467c3a7816a2f0dc"
+          },
+          "Lang/Spanish.tips": {
+            "sizeBytes": 12534,
+            "sha256": "f4731f50fa2a19d4892500a9bddd26831e3a587e811524b0c639b29248602000"
+          },
+          "Lang/Czech.tips": {
+            "sizeBytes": 5686,
+            "sha256": "cdafdf0321a352b48117a4509cddfd48b2d29a255e704c25961f0b257eb7bf0a"
+          },
+          "Lang/Estonian.lng": {
+            "sizeBytes": 25610,
+            "sha256": "3e87568dbd33d7c091a731dad564612e2bd4a77c9a38142e639ea99df174eb29"
+          },
+          "Lang/Swedish.lng": {
+            "sizeBytes": 25294,
+            "sha256": "cae76df77021c929301a0e948a84bbec699d58f896cff332781bafc4840d47f9"
+          },
+          "Lang/Chinese_TC.lng": {
+            "sizeBytes": 25313,
+            "sha256": "b34e5e1289d18611246bce7b066a20813d3629f72c14e07b9d6a08d6308e382d"
+          },
+          "Lang/SpanishCastellano.lng": {
+            "sizeBytes": 29096,
+            "sha256": "55e995710ba157e363d8e1f5d1e2907c79b15a9e79967ef50d8006a0b3d474a9"
+          },
+          "Lang/Hungarian.tips": {
+            "sizeBytes": 5728,
+            "sha256": "4e8a5cad5a235f84e42ffc2a8eb6bb46dffcfd89f722b8e1ea6a4ebc5decdd89"
+          },
+          "Lang/Swedish.tips": {
+            "sizeBytes": 5510,
+            "sha256": "fd9196ed9e75de8aaa6201d5a767834f22286b78264888e208890555ce48a656"
+          },
+          "Lang/Hebrew.tips": {
+            "sizeBytes": 5505,
+            "sha256": "0e3f33e6828f295d61fd9d5af264ce24c664e2231438944d1f69d7f50adb1094"
+          },
+          "Lang/Ukrainian.tips": {
+            "sizeBytes": 6345,
+            "sha256": "ba1bdd267286f83779ccbde8911396ea84a541ce3a4107ac4a24116e7a6a86e7"
+          },
+          "Lang/Portuguese.lng": {
+            "sizeBytes": 27986,
+            "sha256": "6294ccdbdcaf8efc1dae6b142cef3e1223dab0a11b4b6e1dd9c2934f50704028"
+          },
+          "Lang/Slovenian.tips": {
+            "sizeBytes": 5392,
+            "sha256": "1fcfbb939422def92725dc8d8cb91bcb38a3f13ce66f2b68f1fa03e8f6c5f07e"
+          },
+          "Lang/SpanishColombia.lng": {
+            "sizeBytes": 33868,
+            "sha256": "9969940b956d1917d7aaafb63caae95c6303d7a19fb26f83c329c05b9e69d346"
+          },
+          "Lang/Ukrainian.lng": {
+            "sizeBytes": 26581,
+            "sha256": "121d40c491968f109af3bbfbc53eee6d1c3a205df3c840ae45c95ef242c53a59"
+          },
+          "Lang/French.tips": {
+            "sizeBytes": 5002,
+            "sha256": "f54cb6964c705b5905ea4dc8bffcc3b23283b364ddfffbefab2fb674e0e193a3"
+          },
+          "Lang/Korean.tips": {
+            "sizeBytes": 5159,
+            "sha256": "e39d48a2655f432d2c53065ebfec476333e4a2afa2cc08e192fc45336a5da138"
+          },
+          "Lang/Chinese.lng": {
+            "sizeBytes": 24836,
+            "sha256": "7240f0d8baea08e9213e0d36d881878fd48f8060cacb77df1bb263a7277d1159"
+          },
+          "Lang/Romanian.tips": {
+            "sizeBytes": 6150,
+            "sha256": "ebaece1caa9f16eea9217df263ccdade14e8f311d2248dd523a941cef769229e"
+          },
+          "Lang/Hungarian.lng": {
+            "sizeBytes": 26142,
+            "sha256": "9b703b5ce2988565b89712722151a152c3d462b1fe1c51fb92ba73335a0a3e76"
+          },
+          "Lang/Romanian.lng": {
+            "sizeBytes": 27882,
+            "sha256": "6094488e24876b84d2c11bce7288bfef3b68ac213c33d82f2eeaa1777426cef5"
+          },
+          "Lang/Turkish.tips": {
+            "sizeBytes": 5802,
+            "sha256": "9ab41c6a63b9e15f8705d9bcdbb71afe72965b1d7ed298da2b876a7707d96717"
+          },
+          "Lang/SpanishColombia.tips": {
+            "sizeBytes": 11765,
+            "sha256": "1b8a9d14b9939f571b003b9d0524ecfe9a7750192375459fd2e3f860a496ce9a"
+          },
+          "AStyle/AStyle.exe": {
+            "sizeBytes": 432128,
+            "sha256": "b2acb94596a1a9abf48726a7065a5f2b0353236ed41505cf3e753438d8ab644f"
+          },
+          "Icons/Movie.ico": {
+            "sizeBytes": 2262,
+            "sha256": "7acc0d2fe231f3555c8fd6ad014fb8d12f3e7ce273443ae4a153d14366ad2692"
+          },
+          "Icons/Book.ico": {
+            "sizeBytes": 766,
+            "sha256": "57acbbfefdd272264a2501be360ce4b8e563c11c53c5a2c8bd82aae18ce028b7"
+          },
+          "Icons/Ufo.ico": {
+            "sizeBytes": 766,
+            "sha256": "87ee8c438807dff97ab16d4ac3592d4d74ccd1c9307949c56200e45e445a39a0"
+          },
+          "Icons/Documentation.ico": {
+            "sizeBytes": 6838,
+            "sha256": "6f11c23489cd040f08ca3b810a8af1a4ebe851dc9e7f33372e1127925ecef891"
+          },
+          "Icons/Edit.ico": {
+            "sizeBytes": 766,
+            "sha256": "68a5863a52ab1cdb04d70468f4b9260556b045618b4d2daa0c5ef04d7dd867fc"
+          },
+          "Icons/Games.ico": {
+            "sizeBytes": 6054,
+            "sha256": "b0d0a834557b4c281ddc49c8a143a5c2eac8be4b2578a7d034bf073184bd78f2"
+          },
+          "Icons/Smile.ico": {
+            "sizeBytes": 766,
+            "sha256": "38491df87b910b369775f5ff1404790310b62ea115c58c342afd92c8324e48dd"
+          },
+          "Icons/mainicon.ico": {
+            "sizeBytes": 766,
+            "sha256": "8f48c04d7c0b04841d8092d381049ccb188c6ddefdb4c6acf2ae9619fdf976ee"
+          },
+          "Icons/Paint.ico": {
+            "sizeBytes": 6054,
+            "sha256": "8977026740e054ae119ad97aa0de297892f6c1fe14aa3b6226496a3d44eea113"
+          },
+          "Icons/Window.ico": {
+            "sizeBytes": 6054,
+            "sha256": "dabae8ef9987139755e0e6c71dfd7eccce3ef43d20d0bc5b4f7de7cb1c87fee6"
+          },
+          "Icons/Console.ico": {
+            "sizeBytes": 790,
+            "sha256": "d25098c671a3aac04ad73ea426c29d44ec6448cbd2b935ae4474a14364726066"
+          },
+          "Icons/StaticLib.ico": {
+            "sizeBytes": 4286,
+            "sha256": "14f9b97d1ed24286400851c4edb0a9e687e43662284ac040ec65ce17b2385717"
+          },
+          "Icons/File Management.ico": {
+            "sizeBytes": 766,
+            "sha256": "803b195fe2ae11f72948a266d813d1ef3585833230a1a1d7cdd4ab227d580749"
+          },
+          "Icons/Empty.ico": {
+            "sizeBytes": 4286,
+            "sha256": "5afe9512ef20922bedf40358e7bad96e7f85700bbdf68e648aa05df768ba5efe"
+          },
+          "Icons/Crazy.ico": {
+            "sizeBytes": 2238,
+            "sha256": "38f672b76268cba9831d39542d75c1011d1d1cae444c182033151473bc28b9c9"
+          },
+          "Icons/Communication.ico": {
+            "sizeBytes": 2998,
+            "sha256": "9679237a11478c8190793b9e85c99f457ffc21aacfcfe377b51333bc56de448d"
+          },
+          "Icons/Rescue.ico": {
+            "sizeBytes": 766,
+            "sha256": "bbd60df47f3018f8fb554cf26c0849928a4cc05f34042dfbca6e0c80957fcbea"
+          },
+          "Icons/Goofy.ico": {
+            "sizeBytes": 766,
+            "sha256": "30daadd3eb2e6e954f3384cd5c4c23abf1791bbc9cd31c9d98980b425a39ce5a"
+          },
+          "Icons/Folder.ico": {
+            "sizeBytes": 3686,
+            "sha256": "e3fd94bc0b977f6a20daa277f03da2b575b02e4aef534acadbeffa74353776ff"
+          },
+          "Icons/DLL.ico": {
+            "sizeBytes": 4286,
+            "sha256": "227d505ddfcf8332b9b87e7fa7f59d1802e57366ae6843dafddbd0c029199924"
+          },
+          "Icons/ConsoleToo.ico": {
+            "sizeBytes": 4286,
+            "sha256": "e8a56d4fd6568215812dc40bd3cf5c5f93d7a59f68f184e58194f06ca6af133c"
+          },
+          "Icons/Danger.ico": {
+            "sizeBytes": 2246,
+            "sha256": "328c77dc01eb13caf95d0698c5412141606967449415a44b609d7181773dea44"
+          },
+          "Icons/Software.ico": {
+            "sizeBytes": 10278,
+            "sha256": "4328decc735ac0a6c29a29b0e5ca59b843e4af6bfcc260ac08424115b761b0cd"
+          },
+          "Icons/Pizza.ico": {
+            "sizeBytes": 4286,
+            "sha256": "2ae03160923119cfcd33aff3b8bff5c77f5db43817e667ed6b7ebbd3df23c729"
+          },
+          "Icons/Food.ico": {
+            "sizeBytes": 2246,
+            "sha256": "7fb5227bd3a5d6083a5850f7d409843c6452e60d05802e5e864130f1a35a16ee"
+          },
+          "Icons/Windows.ico": {
+            "sizeBytes": 4286,
+            "sha256": "4b31cd301e449ed06b73bb1abd7499186c4381dde9e93564af2bd6cda08d7550"
+          },
+          "Icons/Multimedia.ico": {
+            "sizeBytes": 2238,
+            "sha256": "ff02a63ecf82c19cb6c36d4e5ea9d09e7136c9ff87aa240b73ea4ce35ab113a2"
+          },
+          "Icons/Editor.ico": {
+            "sizeBytes": 1126,
+            "sha256": "09f48aa378c5f3765174484bed0a8e47a017693113d59f09da6f07e423d48645"
+          },
+          "AStyle/doc/install.html": {
+            "sizeBytes": 18758,
+            "sha256": "db992b6857e968780d05b0d64ca32597259e61fc6f6ba293fc7c732949eed947"
+          },
+          "AStyle/doc/styles.css": {
+            "sizeBytes": 1854,
+            "sha256": "137a9b44483a500b7f3a72124074b8ad7edb80eb095caa0a1de262abd4854254"
+          },
+          "AStyle/doc/links.html": {
+            "sizeBytes": 8381,
+            "sha256": "7acbedaa1e50296671b6fd77bea56a05162066185aed3a733c97e05573947716"
+          },
+          "AStyle/doc/astyle.html": {
+            "sizeBytes": 72531,
+            "sha256": "1af3789162b1d12dca6abb05f520df476ad1ab1406e1f64ecd177f0b6a7aba01"
+          },
+          "AStyle/doc/news.html": {
+            "sizeBytes": 27422,
+            "sha256": "cd18c2b4d2aad5c9a73ed56f656a07ac2e4d16ff58dab3a1a1588f582a936c5d"
+          },
+          "AStyle/doc/license.html": {
+            "sizeBytes": 11801,
+            "sha256": "5090cd35b2d542c4b9dfe3a8104c49a550bd655ccb0b349b97f129103838fcc8"
+          },
+          "AStyle/doc/scripts.html": {
+            "sizeBytes": 6579,
+            "sha256": "f54bd9f51d6a8badedc3c78cec96f5d0b973798f398430b7dba1a0c1eb6c33b4"
+          },
+          "AStyle/doc/notes.html": {
+            "sizeBytes": 19191,
+            "sha256": "d3d723ae228db8d82d13d748f50d24f06c0e5e8765c5bcaa8e54bc5391a205a5"
+          },
+          "AStyle/doc/vsinstall.html": {
+            "sizeBytes": 5541,
+            "sha256": "50d504e9e5c9af5aac311c92416ee26972fa4e3d63d3557c03eae180b051bb5f"
+          },
+          "AStyle/doc/subversion.html": {
+            "sizeBytes": 5928,
+            "sha256": "47e3b95c5697d7a1fdc0617c6ff6a1bd3b460a3cf8b82be227a4c43696e19671"
+          },
+          "AStyle/doc/index.html": {
+            "sizeBytes": 11365,
+            "sha256": "826ca6b5195ee2b9c2bea57734d6b208fac5e175748e417b2d7718ba924168e8"
+          },
+          "Help/FAQ/Editor.htm": {
+            "sizeBytes": 399,
+            "sha256": "eef7adf407a9db79e5a3e73f27098f0191862887b90231b40b2956acc94f5fc0"
+          },
+          "Help/FAQ/Environment.htm": {
+            "sizeBytes": 1436,
+            "sha256": "f67fc3516e0f3bd24c644404c78b13f0c90422631e03d05f1c055a669a375c6d"
+          },
+          "Help/FAQ/Compiler.htm": {
+            "sizeBytes": 2828,
+            "sha256": "22f6cf45da7595dd4ad0aef3a13e2da9123401949de067acb2feaea2ae0d7573"
+          },
+          "Help/FAQ/Versions.htm": {
+            "sizeBytes": 1521,
+            "sha256": "8fc3213f1a0491b973052a938a7ba17d3b872e4664e40e803cb9b2e547fa64c0"
+          },
+          "Help/Subjects/Compiling.htm": {
+            "sizeBytes": 2751,
+            "sha256": "342755bd670b5be07bacfe9983bc715256ecc09a41615b7842a35f349d88d363"
+          },
+          "Help/Subjects/Debugging.htm": {
+            "sizeBytes": 2295,
+            "sha256": "37dc0d8c3fd2df662ef6fade82be11312e06e6996d2554a92fbd422375718074"
+          },
+          "Help/Subjects/Editing.htm": {
+            "sizeBytes": 1085,
+            "sha256": "0fc718a8b9574ec8bcffceb46e106da6572f726564ffa98ad6bc9966a23026cb"
+          },
+          "Help/Subjects/Profiling.htm": {
+            "sizeBytes": 2222,
+            "sha256": "e2fea3f21c7c3f6b641d1f4ef8e612e94bf2c492ce4302bf967d4fdcb04fa88a"
+          },
+          "Help/Interface/Menus/View.htm": {
+            "sizeBytes": 2145,
+            "sha256": "665eba5d2acc9d40afdd703a0801eb2b6ff9878705a90b84faea0bd65c9b15bc"
+          },
+          "Help/Interface/Menus/File.htm": {
+            "sizeBytes": 5019,
+            "sha256": "15bc8e3baad7e6ef17637c4fceaeb66a33d08f05e8f29a5ae997e5588be28938"
+          },
+          "Help/Interface/Menus/Edit.htm": {
+            "sizeBytes": 2585,
+            "sha256": "05ecf71650ad2bfb696a8ed2cdd83763d6bb19d0b6514e0aae060e3ae45fd1c9"
+          },
+          "Help/Interface/Menus/Search.htm": {
+            "sizeBytes": 1983,
+            "sha256": "ee1adb37f89ebe7958aad62f2b141458895ffdba698d25c1865c92ffa4cc684a"
+          },
+          "Help/Interface/Menus/Project.htm": {
+            "sizeBytes": 807,
+            "sha256": "d3bbdad6922fbce39b5e0ca0146488fc5765266552f050b7de252450d0fc4719"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/Call Graph.htm": {
+            "sizeBytes": 703,
+            "sha256": "e474c31871463ec6edaf1601a26f7a69dd3043ea934a80dfd6628c6e42d8722a"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/Profiling Options.htm": {
+            "sizeBytes": 1543,
+            "sha256": "4413cd4aa7a05d5f02a78ebddd01b670dbd1e5ad0f755ba28094de21923fea42"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/index.htm": {
+            "sizeBytes": 532,
+            "sha256": "10e3de90cd1cb9070769bd5cb03df2ad357d1f2f392f60cba1d9b26ef4c67a99"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/Flat Output.htm": {
+            "sizeBytes": 703,
+            "sha256": "25e577f63de2a97e60cea29eb0fc4cf75ca59bf1445676ff154e89b893c066aa"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Parameters.htm": {
+            "sizeBytes": 1217,
+            "sha256": "419afc0104439273f7e7cecfb26858d2139a2c9e9a77b3b1457516bce34db417"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Makefile.htm": {
+            "sizeBytes": 911,
+            "sha256": "8f0110fc44e687b489f6363cd54e253ae90343868128927f7fbfc522c1364fff"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Version Info.htm": {
+            "sizeBytes": 1500,
+            "sha256": "01a8f384a896a1cb0e8dfdec8ab2868aae007829bb30ec10d261f836d093ae36"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Directories.htm": {
+            "sizeBytes": 860,
+            "sha256": "1a44c866912ba1d596f3b39f05fd8149c373e10ac2f341fdba1ad49feb056b1e"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Build Options.htm": {
+            "sizeBytes": 820,
+            "sha256": "d5d7542f5d573482b5191d5e2a04b27e32e32a4267eb06d558374394fa627a10"
+          },
+          "Help/Interface/Dialog Windows/Project Options/General.htm": {
+            "sizeBytes": 2731,
+            "sha256": "10864cea9e85c8d14254c5f9f553e7a521b0985c3ae38bc317541f2ef526ad39"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Compiler.htm": {
+            "sizeBytes": 836,
+            "sha256": "aa157f35abc636473ab6004de9632bc66dd31b1759706d70bc877990f0f5aa70"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Files.htm": {
+            "sizeBytes": 1226,
+            "sha256": "705cab49d49d0668f3a173fd0a56e5549f1563428a98f5093a6c96d58956420c"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Makefile.htm": {
+            "sizeBytes": 1041,
+            "sha256": "3f410849935d54424daaea355b7dee21b8735d43d069638d25c153806e883d14"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Directories.htm": {
+            "sizeBytes": 1624,
+            "sha256": "b452612f322f98178967450a331c5b5f95b3b66f4336f5a027b004498d20b178"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Settings.htm": {
+            "sizeBytes": 2810,
+            "sha256": "d5a81b347f500fcb84e46102a42fc02fe08fbe23e29828359c35d154707c938f"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/General.htm": {
+            "sizeBytes": 845,
+            "sha256": "fcb95cce1f704d77e14ad381e2163ba19604a5004ce40e38fddde56f92c6310b"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/index.htm": {
+            "sizeBytes": 1860,
+            "sha256": "42315bf919e605372c8d2edcd736590e8fd7b904c201bb0153d520de21b0dd2d"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Programs.htm": {
+            "sizeBytes": 1422,
+            "sha256": "ac3b307bb845d5f076a27baf4e7d2c63bb4cc9fe5bbb29f4137f235d1dc2a4ca"
+          }
+        },
+        "finalDataAndConfigurationPins": {
+          "system.reg": {
+            "sizeBytes": 3427072,
+            "sha256": "e9fbb0b586186de4d5a573960d651494059a441d70faf3b19bef6d110d3d105a"
+          },
+          "user.reg": {
+            "sizeBytes": 101602,
+            "sha256": "adcb850cfc42600941d3c978e599d6241018fed39b858e696b6682f8d67da492"
+          },
+          "userdef.reg": {
+            "sizeBytes": 4052,
+            "sha256": "a9e2d7452363360a31d5da08c3b524fd4375edd54492f91adee5609014d458d6"
+          },
+          "drive_c/DevCppTests/original.cpp": {
+            "sizeBytes": 66,
+            "sha256": "05b19ae04c697bba208f340673bbc368dd0f80a0dda4dea8f43c315686666e18"
+          },
+          "drive_c/DevCppTests/original-input.cpp": {
+            "sizeBytes": 52,
+            "sha256": "def416e7983314bcb2f214ff07ead0c01fcf0883a38570bea890bea0385e69d8"
+          },
+          "drive_c/DevCppTests/原始代码.cpp": {
+            "sizeBytes": 52,
+            "sha256": "def416e7983314bcb2f214ff07ead0c01fcf0883a38570bea890bea0385e69d8"
+          },
+          "drive_c/users/forge/AppData/Roaming/Dev-Cpp/codeinsertion.ini": {
+            "sizeBytes": 2873,
+            "sha256": "6279114367382f78028ee506ad784ecbcd00f97e3985acaeea8bf6a775911770"
+          },
+          "drive_c/users/forge/AppData/Roaming/Dev-Cpp/devcpp.ini": {
+            "sizeBytes": 4228,
+            "sha256": "91152cf80602db37d5b54abfc1cf26af3463a139ac0d4ca287f3154ffa2c3d4e"
+          }
+        },
+        "currentlyAbsentPreviouslyPinnedPaths": [],
+        "createdConfigurationPaths": [],
+        "coverage": "192 program files, fixed test input/output, three registry and selected Dev-Cpp named Roaming/Local locations; not full app filesystem"
+      },
+      "market": {
+        "generationId": "gen-job-1791843045130-5",
+        "generation": {
+          "bottleId": "gen-job-1791843045130-5",
+          "createdAtMilliseconds": 1791843045136,
+          "definition": {
+            "bottleId": "gui-devcpp",
+            "category": "development",
+            "compatibilityRating": "unknown",
+            "id": "devcpp",
+            "installer": {
+              "arguments": [
+                "/S",
+                "/D=C:\\DevCpp"
+              ],
+              "fileName": "Dev-Cpp-5.11-No-Compiler-Setup.exe",
+              "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+            },
+            "launchers": [
+              {
+                "executable": "DevCpp/devcpp.exe",
+                "id": "main",
+                "name": "Orwell Dev-C++"
+              }
+            ],
+            "name": "Orwell Dev-C++",
+            "publisher": "Orwell Dev-C++",
+            "schemaVersion": "1",
+            "tags": [
+              "rolling-1000",
+              "managed-nsis"
+            ],
+            "version": "5.11"
+          },
+          "definitionDigest": "sha256:9cce6383a52d9da3fd69ac6fdcfeaeaae899f6511ffcb335de5d7d87c0d86335",
+          "id": "gen-job-1791843045130-5",
+          "launcherDigests": {
+            "main": "sha256:5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1"
+          },
+          "runtime": {
+            "binding": {
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINESERVER": "/usr/bin/wineserver"
+              },
+              "executable": "/usr/bin/wine",
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "providerId": "wine-linux-x86-64-preview",
+              "wineserverExecutable": "/usr/bin/wineserver"
+            },
+            "selection": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "version": "11.14"
+          },
+          "status": "ready",
+          "updatedAtMilliseconds": 1791843058537
+        },
+        "installedFiles": {
+          "uninstall.exe": {
+            "sizeBytes": 70778,
+            "sha256": "066bb8937252bd11e9f87a6d45f4c736175830151dc21e7f050bb4d6ae268596"
+          },
+          "COPYING.txt": {
+            "sizeBytes": 18581,
+            "sha256": "cea462ee95efc9ce3bfca23a9596f443713e65f41a14c4b59aec88efe272e14f"
+          },
+          "NEWS.txt": {
+            "sizeBytes": 60818,
+            "sha256": "97677ebdea249dbc5f33bd496fd8d87b275eb739e379762c974d692aa9ceee84"
+          },
+          "devcpp.exe": {
+            "sizeBytes": 2795008,
+            "sha256": "5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1"
+          },
+          "Packman.exe": {
+            "sizeBytes": 380928,
+            "sha256": "d624881357ad773ebeb617be6697e7bf3144d9484f6d8ee870a5d2aa9348e904"
+          },
+          "devcppPortable.exe": {
+            "sizeBytes": 174592,
+            "sha256": "64f056f1319edaf1522719a8ae65267fe1609263c14e1955b91c468a42299e70"
+          },
+          "ConsolePauser.exe": {
+            "sizeBytes": 171008,
+            "sha256": "f04e5f949ae3b2b2882380f9b6d1f111891e5ea15fef560be9d13f39dc3a0b11"
+          },
+          "devcpp.map": {
+            "sizeBytes": 1579852,
+            "sha256": "1c1cb41d40696fa0a3b279f9a7fa15b2e1f467f07be475541e818fa65632e53b"
+          },
+          "devcpp.exe.manifest": {
+            "sizeBytes": 695,
+            "sha256": "793e2d56fe1282c6cd64fcda1febb2ee629e4d54afb972f93765c1a4d93bf02f"
+          },
+          "Packman.map": {
+            "sizeBytes": 697941,
+            "sha256": "e8c7af951bfffd01b6d61df7ee0b6baf7bb8367e106ad19fdc2da4db04e46928"
+          },
+          "Templates/Dll_hpp.txt": {
+            "sizeBytes": 267,
+            "sha256": "b25ccadd8d0f1b813b0a1b2eb9aed633ad842d3bcb97b0063486bb49fddfb990"
+          },
+          "Templates/FileEditor_c.txt": {
+            "sizeBytes": 5048,
+            "sha256": "da4ab8402b96611dbf8538caab42f317a6cedc75f9f73f2430ffd240dc745d5f"
+          },
+          "Templates/ConsoleApp_cpp.txt": {
+            "sizeBytes": 175,
+            "sha256": "b392aaaebdc9c9de62705241028de435955c02dd92f4006f72e6ef7ec2dbb1b8"
+          },
+          "Templates/StdThread_cpp.txt": {
+            "sizeBytes": 1106,
+            "sha256": "93709a0d3cf53a01d94b896151e5a76de26ff14e2248caa2517e821ae0eb968c"
+          },
+          "Templates/FileEditor_rc.txt": {
+            "sizeBytes": 261,
+            "sha256": "8f8a3d45d4afa05f79b16203db7ffc0087c8792dd203bfdfc2206680e9dd7730"
+          },
+          "Templates/MDIEditor.template": {
+            "sizeBytes": 398,
+            "sha256": "1cfbd32a246c473b19c3527e84efbf6ee7d7799b1422685dd737981c98ed8052"
+          },
+          "Templates/MDIEditor_h.txt": {
+            "sizeBytes": 631,
+            "sha256": "5daff9beb0a0f942323dad4b478e6ead1b475f0dac5d9261d149ec278b48d853"
+          },
+          "Templates/WinAnim_c.txt": {
+            "sizeBytes": 4523,
+            "sha256": "f2be45b6f915c4f53586a477a1a37e4f723467330c35b1ad33860ddf5796cde6"
+          },
+          "Templates/Hello_c.txt": {
+            "sizeBytes": 98,
+            "sha256": "1b4e13ce2c7a3a6705c0d69512dd9a6789eb4b3319797f41b64e78ed4706d022"
+          },
+          "Templates/HelloInput_cpp.txt": {
+            "sizeBytes": 530,
+            "sha256": "83a426c6656fd68806ce429ed939b0c77716ae84be72825f6ebb4c777ce8d1f0"
+          },
+          "Templates/Direct3D.txt": {
+            "sizeBytes": 6726,
+            "sha256": "cdea6b0f1f619a576050ff8305596140b3770cc2294db69bb6694fa4030d39f2"
+          },
+          "Templates/WinApp_c.txt": {
+            "sizeBytes": 2408,
+            "sha256": "103f20bdaf148ae5082d5b42700e3a135b38a5beedb17898d7252f493db14a4d"
+          },
+          "Templates/StdThread_c.txt": {
+            "sizeBytes": 150,
+            "sha256": "4d408d405a8596e65f1bbd81e798a6b3dc2226a1ebf207335e99945267c99656"
+          },
+          "Templates/OpenGL.txt": {
+            "sizeBytes": 4450,
+            "sha256": "22f2274a69157e7ab2d549bd9af5e2bcb2bc233bfe4e9583ed5face315c64138"
+          },
+          "Templates/4-DLL.template": {
+            "sizeBytes": 340,
+            "sha256": "1067c5aa4d51b2062d65ed05c9fe7f8f7012c0183151f0fa9ce8182a62003a78"
+          },
+          "Templates/Dll_cpp.txt": {
+            "sizeBytes": 635,
+            "sha256": "33daabc8d17f5779702e7354d7b4bb1d1e2d905637aee0b53f94a87348fdf886"
+          },
+          "Templates/Jackpot_cpp.txt": {
+            "sizeBytes": 1932,
+            "sha256": "7eb8150c85566df9844a8552710b0c99292fca8c2c108f024236a339dd26a94f"
+          },
+          "Templates/FileEditor_h.txt": {
+            "sizeBytes": 143,
+            "sha256": "23f5c9e3fe088bf9fffc946ad1e791c1382200a015df4df22f557f4722368230"
+          },
+          "Templates/OpenMP_c.txt": {
+            "sizeBytes": 345,
+            "sha256": "6a2cb2ce90b2628e62d266458cd96ac570f3428109b359d4f970aba4edc3a7de"
+          },
+          "Templates/ball.bmp": {
+            "sizeBytes": 630,
+            "sha256": "56ec67b9baead0d397169772f7028e49bcd81824420e3af487cef1e221717cf8"
+          },
+          "Templates/ballmask.bmp": {
+            "sizeBytes": 190,
+            "sha256": "46b7c221be298aac2159ab06d7d19c054a2087f9e78a332d4e1cc25f62925870"
+          },
+          "Templates/1-WinApp.template": {
+            "sizeBytes": 234,
+            "sha256": "b357beab279b5e83290fc3a8e9d79634a863b8f4617eaa4d50817bfd994d4d16"
+          },
+          "Templates/Direct3D.template": {
+            "sizeBytes": 220,
+            "sha256": "bd7b71f4483a94c9645329b238de30b4ab2e76f872c70318d887c5ad0a40cebd"
+          },
+          "Templates/OpenMP.template": {
+            "sizeBytes": 290,
+            "sha256": "478c694eb1a18a64ceef16f265e5df3655646e90016d2d01302b8e6f925c040e"
+          },
+          "Templates/WinAnim_rc.txt": {
+            "sizeBytes": 143,
+            "sha256": "f440ea51b7d506339296a48eb8b020632cc10c685edc4fc7b4b5a58d2dc67383"
+          },
+          "Templates/WinAnim.template": {
+            "sizeBytes": 317,
+            "sha256": "cac47ad7ee81e3c6145cfe31b86bb80101e7f228313602563df708615ff8eee9"
+          },
+          "Templates/3-StaticLib.template": {
+            "sizeBytes": 174,
+            "sha256": "a30770ee64eef6014f6372c0310d0a7f7299902437c596c67c9db7bc51d5b212"
+          },
+          "Templates/FileEditor.template": {
+            "sizeBytes": 424,
+            "sha256": "523194e4bc679e3702bb8c4897444ef7a5838464f4b360e8631f9d0c5ad27106"
+          },
+          "Templates/Dll_c.txt": {
+            "sizeBytes": 569,
+            "sha256": "6dddcd4fcaf183e64e89205c762d08fc310ca11db48710779fc30999839776be"
+          },
+          "Templates/HelloInput.template": {
+            "sizeBytes": 236,
+            "sha256": "83da0b61e4d19cc3fcf6f3b7cd5079fb3ebd6ee3bfb052c29b63548fe7277767"
+          },
+          "Templates/Hello.template": {
+            "sizeBytes": 257,
+            "sha256": "87ab90180caa74e053ccf2cc88e84385b9d56bdd4e2e50667ec44a357ece373f"
+          },
+          "Templates/HelloInput_c.txt": {
+            "sizeBytes": 533,
+            "sha256": "95a68c9cf6cfc623608c3d954f0c6e078d726583770f25688f7673d302be1aa7"
+          },
+          "Templates/5-Empty.template": {
+            "sizeBytes": 164,
+            "sha256": "d6c8a7d19456238a757bb4c87266a18167bdfacc897c24f3db54b95dfc68c78c"
+          },
+          "Templates/OpenGL.template": {
+            "sizeBytes": 231,
+            "sha256": "8bc7f4863f1847dcc92342ebff84837071d6eb76d6e547b40656e8677e219fdc"
+          },
+          "Templates/OpenMP_cpp.txt": {
+            "sizeBytes": 893,
+            "sha256": "bb3183b954f11aad0c4bb9afd24a6c7d3d177fdb371a1a8c3655b94cfd51b258"
+          },
+          "Templates/StdThread.template": {
+            "sizeBytes": 281,
+            "sha256": "41e83e10cf17fe62d68cc306237995dd64dc39d3a77b777c54dbf6fc699e1a28"
+          },
+          "Templates/2-ConsoleApp.template": {
+            "sizeBytes": 254,
+            "sha256": "dce4a80583cbd9372c84531f045d67d99656452c11df3983bac9e7557aedc4fb"
+          },
+          "Templates/Hello_cpp.txt": {
+            "sizeBytes": 92,
+            "sha256": "645a77079dbad9b9613210387f6dd812e11616352c3f194fe0727934c44d0498"
+          },
+          "Templates/ConsoleApp_c.txt": {
+            "sizeBytes": 196,
+            "sha256": "b395f391a8746ec9a01627ea586b35c70cf24aa66df5f01de81e281f2b73e2b8"
+          },
+          "Templates/Dll_h.txt": {
+            "sizeBytes": 193,
+            "sha256": "3f5800af018e591f3f09c8e4de02f470e2fa3faf84b2cba26cab27541e0bfdfd"
+          },
+          "Templates/MDIEditor_c.txt": {
+            "sizeBytes": 13574,
+            "sha256": "d06c86b0219c6b7caa21bf0b596f760def5afa413a9e67f4f44c9ec9ec86af19"
+          },
+          "Templates/MDIEditor_rc.txt": {
+            "sizeBytes": 732,
+            "sha256": "c923676040ba6c6b874b5f69afa3546667ef1325e14fa983fe958c9503380bcb"
+          },
+          "Templates/Jackpot.template": {
+            "sizeBytes": 234,
+            "sha256": "a547d6c67c022eca6f9ab46df091c6b9d9fcd7ecfbddfe31bb2acee17bd55e00"
+          },
+          "Help/jquery191.min.js": {
+            "sizeBytes": 92633,
+            "sha256": "20638e363fcc5152155f24b281303e17da62da62d24ef5dcf863b184d9a25734"
+          },
+          "Help/main.js": {
+            "sizeBytes": 5712,
+            "sha256": "b04d2790d4f3bdc1afbc0c3d754e982fe7498e622adfaf0eccb5a6be61961a0e"
+          },
+          "Help/index.htm": {
+            "sizeBytes": 951,
+            "sha256": "ee9f8b43ccb9a44a5ebddc54c46f19de6c4905b56d1231df7aa4e6bfbce60f23"
+          },
+          "Help/content.css": {
+            "sizeBytes": 464,
+            "sha256": "e62c95fc0237246b61d0d341ed160936c9eaed4ac16b3765e6cc31ceb54bcd40"
+          },
+          "Help/logo.png": {
+            "sizeBytes": 3673,
+            "sha256": "43c594c787d1f734a556b0be76333a7ff26fa016b3e195f3fb2d2910f1f43579"
+          },
+          "Help/main.css": {
+            "sizeBytes": 1047,
+            "sha256": "de774ec86cbcca9a08473cb7753b23346070350055e21e2af572c63ad5703e3e"
+          },
+          "Help/intro.htm": {
+            "sizeBytes": 971,
+            "sha256": "df4f2c1c86154ec8862e0b6d4dbf1cfc62ca128a64fed8f0afa23c188d7ffb30"
+          },
+          "Lang/English.lng": {
+            "sizeBytes": 33889,
+            "sha256": "e4613e1982268098c4f17862fef7d5e86a9d37af19d5b0cc02cef47f44305646"
+          },
+          "Lang/Chinese.tips": {
+            "sizeBytes": 3093,
+            "sha256": "a0b9a08778abb052eed37ed0e5c18b196fb3c4108ca752c3670e8f7f7ff5d038"
+          },
+          "Lang/Bulgarian.lng": {
+            "sizeBytes": 26797,
+            "sha256": "8207925ef9e2eb4d0ca6827a4fb04ddb144ff7e1765ddfcbf9870bfe73094768"
+          },
+          "Lang/Galego.tips": {
+            "sizeBytes": 6861,
+            "sha256": "05ff7a509158131ded463503abd89f38c44af6c0ec684db5dae3bc4c957c1b2b"
+          },
+          "Lang/Dutch.lng": {
+            "sizeBytes": 27108,
+            "sha256": "01d46f5fa358b7a7d2267af98da7f1b11cc61e981f7dd4c84db39d301197955d"
+          },
+          "Lang/Turkish.lng": {
+            "sizeBytes": 26299,
+            "sha256": "068b0620d2b2fb100b6e9f31d41d003bc82453f7a85443b2bc2389133e8dc0dc"
+          },
+          "Lang/Slovenian.lng": {
+            "sizeBytes": 26326,
+            "sha256": "74dbc58d2a21d5b0f1efc7cc3bd640384f8778756de3bcf83de579e344d6b457"
+          },
+          "Lang/Spanish.lng": {
+            "sizeBytes": 28352,
+            "sha256": "361400e26f2d8d048cf67a42d46d6dd95370a0d243c849106f2a75a9310457c1"
+          },
+          "Lang/Japanese.tips": {
+            "sizeBytes": 5332,
+            "sha256": "a36c5a567f77beb26bd7783b03ea378f6aaa21b45bbb984c145a41c62682f9fd"
+          },
+          "Lang/Czech.lng": {
+            "sizeBytes": 34536,
+            "sha256": "f1eec4ae716fabc6963098dd797b6ace23d13184cd7187faf9c4f8f97eac7eb7"
+          },
+          "Lang/English.tips": {
+            "sizeBytes": 5561,
+            "sha256": "0785ec98d2929601f2531443915554709c032356a3cd7cfb9d4c32e7dfc75e0d"
+          },
+          "Lang/Croatian.lng": {
+            "sizeBytes": 24972,
+            "sha256": "0f020cbfdd0bb2f51a1abbd4a31ea62bd6ddc918b5e419e936555fbcdc7f75fb"
+          },
+          "Lang/Russian.lng": {
+            "sizeBytes": 26635,
+            "sha256": "ff98741e5682b2886fd62aa73ab11c7bb151f442c65bf544e466a5669d1825a6"
+          },
+          "Lang/Italian.lng": {
+            "sizeBytes": 27388,
+            "sha256": "21fedf43e4b4f21799f0ddc50766b188d561d03f895b531ef32024398e7e226d"
+          },
+          "Lang/Danish.lng": {
+            "sizeBytes": 25526,
+            "sha256": "d34f2a47cd819d983874d12855aa5706001733ac13be9e7a167b7664e99b9820"
+          },
+          "Lang/Polish.lng": {
+            "sizeBytes": 26577,
+            "sha256": "41a48ad9ea5b738d72c983e56cb897f23808a144b2c2579b62bb24400a1b5425"
+          },
+          "Lang/Russian.tips": {
+            "sizeBytes": 6129,
+            "sha256": "0c394aef2d1ef79ae1ef56fee604dd426676b3ce59b21712d996bbd2ceba8e36"
+          },
+          "Lang/Dutch.tips": {
+            "sizeBytes": 6016,
+            "sha256": "6f35936ac7de880add18b12f9fadeb0c71a49fe1d5dbaf392fc9bcd9143406a8"
+          },
+          "Lang/Norwegian.tips": {
+            "sizeBytes": 5827,
+            "sha256": "eece3a80367cafc4ff35012dcf5759cdf430163afa10698202689203c4cb2335"
+          },
+          "Lang/Korean.lng": {
+            "sizeBytes": 23564,
+            "sha256": "fa4cdf831cf41d53cc1e51943a9545831de5d6acdb7da8ea2f509f85d66fc1b6"
+          },
+          "Lang/German.lng": {
+            "sizeBytes": 29330,
+            "sha256": "e76241d4ba4f19e8f8407893d56271fc05cc225bbc8ec16aa5dbe87b55b41c0e"
+          },
+          "Lang/Hebrew.lng": {
+            "sizeBytes": 20505,
+            "sha256": "e693172d3c3a8b9528db7438a8e857bd1e8dd0ee21b7b00b3207a045630b5c42"
+          },
+          "Lang/Portuguese.tips": {
+            "sizeBytes": 6223,
+            "sha256": "34c05e4374708523d41bd7753d4ba6123b811f552a438cffdc04c8d4963c36bb"
+          },
+          "Lang/Latvian.tips": {
+            "sizeBytes": 5576,
+            "sha256": "935150b3a42ea69343d479b41544565aaa14d4dd2d56a1b44d9c36d52c3b4e3b"
+          },
+          "Lang/French.lng": {
+            "sizeBytes": 28074,
+            "sha256": "00165e416d6c9f19cd2db0513ef1a6e14c8369aa448146aaf46bc6c1c8ccc235"
+          },
+          "Lang/Estonian.tips": {
+            "sizeBytes": 5741,
+            "sha256": "c4c04607308b2ca909548654cb75abc76c69ef76b408c363048cf4e48f237659"
+          },
+          "Lang/German.tips": {
+            "sizeBytes": 6324,
+            "sha256": "0a215f5ba3ddbc1bc16f57fc3b5ab5b5201c36daefb5884b8b837a348b30d5d9"
+          },
+          "Lang/Catalan.lng": {
+            "sizeBytes": 37873,
+            "sha256": "3f40d7c469d7234ed3c70e5be910fe0f0139ddc991914705b5f43c4e029f6f4f"
+          },
+          "Lang/Latvian.lng": {
+            "sizeBytes": 26018,
+            "sha256": "a6b48029afc9ba0e2375fceac0d9699d6c786f683f9559a08d8869e506e50ad5"
+          },
+          "Lang/SpanishCastellano.tips": {
+            "sizeBytes": 11098,
+            "sha256": "3fad4b8db1c5cb922b7611137dc87c2013333fc7b07bfa154c39a630bf287157"
+          },
+          "Lang/Catalan.tips": {
+            "sizeBytes": 6007,
+            "sha256": "bb422c5fb8d2ed140fa3075b4a00c78acad817ff13138e890ae3f785ea8aa458"
+          },
+          "Lang/Greek.lng": {
+            "sizeBytes": 27492,
+            "sha256": "e88234abdd682a7fb1b717ea9e836defe687e815d63af3a00d70b1c6a72feee1"
+          },
+          "Lang/Norwegian.lng": {
+            "sizeBytes": 26049,
+            "sha256": "49726c9d94d04238ef1d42cb443b9bf9c7d406dd740873bba1c034faf83b7c5f"
+          },
+          "Lang/Danish.tips": {
+            "sizeBytes": 5524,
+            "sha256": "01d9a30daad15d3be5b28eefeceef49c174063f8c7276cbbe4b8712c5f9fd91e"
+          },
+          "Lang/Japanese.lng": {
+            "sizeBytes": 32041,
+            "sha256": "4a2f0fe9c890e13a6752ef038913033e978b99b92d3e2f3d5c4f1f69c374b765"
+          },
+          "Lang/Italian.tips": {
+            "sizeBytes": 5476,
+            "sha256": "886c4d2a199a05669fa160b5d99af6a63b46b44c86ba23d334ac648dc26d6aa7"
+          },
+          "Lang/Slovak.lng": {
+            "sizeBytes": 26774,
+            "sha256": "b194f144bb2e6eb414083cde5176aaf742b99f966e98373eae3c9bdfeba94b9c"
+          },
+          "Lang/Polish.tips": {
+            "sizeBytes": 4881,
+            "sha256": "6ddeed5798d811fd501b1e1555f84f099f988168ba963055db50ed70ae55913f"
+          },
+          "Lang/Galego.lng": {
+            "sizeBytes": 28476,
+            "sha256": "835eb075da7d957f3af39892514f313ee25b7ba0bd119312467c3a7816a2f0dc"
+          },
+          "Lang/Spanish.tips": {
+            "sizeBytes": 12534,
+            "sha256": "f4731f50fa2a19d4892500a9bddd26831e3a587e811524b0c639b29248602000"
+          },
+          "Lang/Czech.tips": {
+            "sizeBytes": 5686,
+            "sha256": "cdafdf0321a352b48117a4509cddfd48b2d29a255e704c25961f0b257eb7bf0a"
+          },
+          "Lang/Estonian.lng": {
+            "sizeBytes": 25610,
+            "sha256": "3e87568dbd33d7c091a731dad564612e2bd4a77c9a38142e639ea99df174eb29"
+          },
+          "Lang/Swedish.lng": {
+            "sizeBytes": 25294,
+            "sha256": "cae76df77021c929301a0e948a84bbec699d58f896cff332781bafc4840d47f9"
+          },
+          "Lang/Chinese_TC.lng": {
+            "sizeBytes": 25313,
+            "sha256": "b34e5e1289d18611246bce7b066a20813d3629f72c14e07b9d6a08d6308e382d"
+          },
+          "Lang/SpanishCastellano.lng": {
+            "sizeBytes": 29096,
+            "sha256": "55e995710ba157e363d8e1f5d1e2907c79b15a9e79967ef50d8006a0b3d474a9"
+          },
+          "Lang/Hungarian.tips": {
+            "sizeBytes": 5728,
+            "sha256": "4e8a5cad5a235f84e42ffc2a8eb6bb46dffcfd89f722b8e1ea6a4ebc5decdd89"
+          },
+          "Lang/Swedish.tips": {
+            "sizeBytes": 5510,
+            "sha256": "fd9196ed9e75de8aaa6201d5a767834f22286b78264888e208890555ce48a656"
+          },
+          "Lang/Hebrew.tips": {
+            "sizeBytes": 5505,
+            "sha256": "0e3f33e6828f295d61fd9d5af264ce24c664e2231438944d1f69d7f50adb1094"
+          },
+          "Lang/Ukrainian.tips": {
+            "sizeBytes": 6345,
+            "sha256": "ba1bdd267286f83779ccbde8911396ea84a541ce3a4107ac4a24116e7a6a86e7"
+          },
+          "Lang/Portuguese.lng": {
+            "sizeBytes": 27986,
+            "sha256": "6294ccdbdcaf8efc1dae6b142cef3e1223dab0a11b4b6e1dd9c2934f50704028"
+          },
+          "Lang/Slovenian.tips": {
+            "sizeBytes": 5392,
+            "sha256": "1fcfbb939422def92725dc8d8cb91bcb38a3f13ce66f2b68f1fa03e8f6c5f07e"
+          },
+          "Lang/SpanishColombia.lng": {
+            "sizeBytes": 33868,
+            "sha256": "9969940b956d1917d7aaafb63caae95c6303d7a19fb26f83c329c05b9e69d346"
+          },
+          "Lang/Ukrainian.lng": {
+            "sizeBytes": 26581,
+            "sha256": "121d40c491968f109af3bbfbc53eee6d1c3a205df3c840ae45c95ef242c53a59"
+          },
+          "Lang/French.tips": {
+            "sizeBytes": 5002,
+            "sha256": "f54cb6964c705b5905ea4dc8bffcc3b23283b364ddfffbefab2fb674e0e193a3"
+          },
+          "Lang/Korean.tips": {
+            "sizeBytes": 5159,
+            "sha256": "e39d48a2655f432d2c53065ebfec476333e4a2afa2cc08e192fc45336a5da138"
+          },
+          "Lang/Chinese.lng": {
+            "sizeBytes": 24836,
+            "sha256": "7240f0d8baea08e9213e0d36d881878fd48f8060cacb77df1bb263a7277d1159"
+          },
+          "Lang/Romanian.tips": {
+            "sizeBytes": 6150,
+            "sha256": "ebaece1caa9f16eea9217df263ccdade14e8f311d2248dd523a941cef769229e"
+          },
+          "Lang/Hungarian.lng": {
+            "sizeBytes": 26142,
+            "sha256": "9b703b5ce2988565b89712722151a152c3d462b1fe1c51fb92ba73335a0a3e76"
+          },
+          "Lang/Romanian.lng": {
+            "sizeBytes": 27882,
+            "sha256": "6094488e24876b84d2c11bce7288bfef3b68ac213c33d82f2eeaa1777426cef5"
+          },
+          "Lang/Turkish.tips": {
+            "sizeBytes": 5802,
+            "sha256": "9ab41c6a63b9e15f8705d9bcdbb71afe72965b1d7ed298da2b876a7707d96717"
+          },
+          "Lang/SpanishColombia.tips": {
+            "sizeBytes": 11765,
+            "sha256": "1b8a9d14b9939f571b003b9d0524ecfe9a7750192375459fd2e3f860a496ce9a"
+          },
+          "AStyle/AStyle.exe": {
+            "sizeBytes": 432128,
+            "sha256": "b2acb94596a1a9abf48726a7065a5f2b0353236ed41505cf3e753438d8ab644f"
+          },
+          "Icons/Movie.ico": {
+            "sizeBytes": 2262,
+            "sha256": "7acc0d2fe231f3555c8fd6ad014fb8d12f3e7ce273443ae4a153d14366ad2692"
+          },
+          "Icons/Book.ico": {
+            "sizeBytes": 766,
+            "sha256": "57acbbfefdd272264a2501be360ce4b8e563c11c53c5a2c8bd82aae18ce028b7"
+          },
+          "Icons/Ufo.ico": {
+            "sizeBytes": 766,
+            "sha256": "87ee8c438807dff97ab16d4ac3592d4d74ccd1c9307949c56200e45e445a39a0"
+          },
+          "Icons/Documentation.ico": {
+            "sizeBytes": 6838,
+            "sha256": "6f11c23489cd040f08ca3b810a8af1a4ebe851dc9e7f33372e1127925ecef891"
+          },
+          "Icons/Edit.ico": {
+            "sizeBytes": 766,
+            "sha256": "68a5863a52ab1cdb04d70468f4b9260556b045618b4d2daa0c5ef04d7dd867fc"
+          },
+          "Icons/Games.ico": {
+            "sizeBytes": 6054,
+            "sha256": "b0d0a834557b4c281ddc49c8a143a5c2eac8be4b2578a7d034bf073184bd78f2"
+          },
+          "Icons/Smile.ico": {
+            "sizeBytes": 766,
+            "sha256": "38491df87b910b369775f5ff1404790310b62ea115c58c342afd92c8324e48dd"
+          },
+          "Icons/mainicon.ico": {
+            "sizeBytes": 766,
+            "sha256": "8f48c04d7c0b04841d8092d381049ccb188c6ddefdb4c6acf2ae9619fdf976ee"
+          },
+          "Icons/Paint.ico": {
+            "sizeBytes": 6054,
+            "sha256": "8977026740e054ae119ad97aa0de297892f6c1fe14aa3b6226496a3d44eea113"
+          },
+          "Icons/Window.ico": {
+            "sizeBytes": 6054,
+            "sha256": "dabae8ef9987139755e0e6c71dfd7eccce3ef43d20d0bc5b4f7de7cb1c87fee6"
+          },
+          "Icons/Console.ico": {
+            "sizeBytes": 790,
+            "sha256": "d25098c671a3aac04ad73ea426c29d44ec6448cbd2b935ae4474a14364726066"
+          },
+          "Icons/StaticLib.ico": {
+            "sizeBytes": 4286,
+            "sha256": "14f9b97d1ed24286400851c4edb0a9e687e43662284ac040ec65ce17b2385717"
+          },
+          "Icons/File Management.ico": {
+            "sizeBytes": 766,
+            "sha256": "803b195fe2ae11f72948a266d813d1ef3585833230a1a1d7cdd4ab227d580749"
+          },
+          "Icons/Empty.ico": {
+            "sizeBytes": 4286,
+            "sha256": "5afe9512ef20922bedf40358e7bad96e7f85700bbdf68e648aa05df768ba5efe"
+          },
+          "Icons/Crazy.ico": {
+            "sizeBytes": 2238,
+            "sha256": "38f672b76268cba9831d39542d75c1011d1d1cae444c182033151473bc28b9c9"
+          },
+          "Icons/Communication.ico": {
+            "sizeBytes": 2998,
+            "sha256": "9679237a11478c8190793b9e85c99f457ffc21aacfcfe377b51333bc56de448d"
+          },
+          "Icons/Rescue.ico": {
+            "sizeBytes": 766,
+            "sha256": "bbd60df47f3018f8fb554cf26c0849928a4cc05f34042dfbca6e0c80957fcbea"
+          },
+          "Icons/Goofy.ico": {
+            "sizeBytes": 766,
+            "sha256": "30daadd3eb2e6e954f3384cd5c4c23abf1791bbc9cd31c9d98980b425a39ce5a"
+          },
+          "Icons/Folder.ico": {
+            "sizeBytes": 3686,
+            "sha256": "e3fd94bc0b977f6a20daa277f03da2b575b02e4aef534acadbeffa74353776ff"
+          },
+          "Icons/DLL.ico": {
+            "sizeBytes": 4286,
+            "sha256": "227d505ddfcf8332b9b87e7fa7f59d1802e57366ae6843dafddbd0c029199924"
+          },
+          "Icons/ConsoleToo.ico": {
+            "sizeBytes": 4286,
+            "sha256": "e8a56d4fd6568215812dc40bd3cf5c5f93d7a59f68f184e58194f06ca6af133c"
+          },
+          "Icons/Danger.ico": {
+            "sizeBytes": 2246,
+            "sha256": "328c77dc01eb13caf95d0698c5412141606967449415a44b609d7181773dea44"
+          },
+          "Icons/Software.ico": {
+            "sizeBytes": 10278,
+            "sha256": "4328decc735ac0a6c29a29b0e5ca59b843e4af6bfcc260ac08424115b761b0cd"
+          },
+          "Icons/Pizza.ico": {
+            "sizeBytes": 4286,
+            "sha256": "2ae03160923119cfcd33aff3b8bff5c77f5db43817e667ed6b7ebbd3df23c729"
+          },
+          "Icons/Food.ico": {
+            "sizeBytes": 2246,
+            "sha256": "7fb5227bd3a5d6083a5850f7d409843c6452e60d05802e5e864130f1a35a16ee"
+          },
+          "Icons/Windows.ico": {
+            "sizeBytes": 4286,
+            "sha256": "4b31cd301e449ed06b73bb1abd7499186c4381dde9e93564af2bd6cda08d7550"
+          },
+          "Icons/Multimedia.ico": {
+            "sizeBytes": 2238,
+            "sha256": "ff02a63ecf82c19cb6c36d4e5ea9d09e7136c9ff87aa240b73ea4ce35ab113a2"
+          },
+          "Icons/Editor.ico": {
+            "sizeBytes": 1126,
+            "sha256": "09f48aa378c5f3765174484bed0a8e47a017693113d59f09da6f07e423d48645"
+          },
+          "AStyle/doc/install.html": {
+            "sizeBytes": 18758,
+            "sha256": "db992b6857e968780d05b0d64ca32597259e61fc6f6ba293fc7c732949eed947"
+          },
+          "AStyle/doc/styles.css": {
+            "sizeBytes": 1854,
+            "sha256": "137a9b44483a500b7f3a72124074b8ad7edb80eb095caa0a1de262abd4854254"
+          },
+          "AStyle/doc/links.html": {
+            "sizeBytes": 8381,
+            "sha256": "7acbedaa1e50296671b6fd77bea56a05162066185aed3a733c97e05573947716"
+          },
+          "AStyle/doc/astyle.html": {
+            "sizeBytes": 72531,
+            "sha256": "1af3789162b1d12dca6abb05f520df476ad1ab1406e1f64ecd177f0b6a7aba01"
+          },
+          "AStyle/doc/news.html": {
+            "sizeBytes": 27422,
+            "sha256": "cd18c2b4d2aad5c9a73ed56f656a07ac2e4d16ff58dab3a1a1588f582a936c5d"
+          },
+          "AStyle/doc/license.html": {
+            "sizeBytes": 11801,
+            "sha256": "5090cd35b2d542c4b9dfe3a8104c49a550bd655ccb0b349b97f129103838fcc8"
+          },
+          "AStyle/doc/scripts.html": {
+            "sizeBytes": 6579,
+            "sha256": "f54bd9f51d6a8badedc3c78cec96f5d0b973798f398430b7dba1a0c1eb6c33b4"
+          },
+          "AStyle/doc/notes.html": {
+            "sizeBytes": 19191,
+            "sha256": "d3d723ae228db8d82d13d748f50d24f06c0e5e8765c5bcaa8e54bc5391a205a5"
+          },
+          "AStyle/doc/vsinstall.html": {
+            "sizeBytes": 5541,
+            "sha256": "50d504e9e5c9af5aac311c92416ee26972fa4e3d63d3557c03eae180b051bb5f"
+          },
+          "AStyle/doc/subversion.html": {
+            "sizeBytes": 5928,
+            "sha256": "47e3b95c5697d7a1fdc0617c6ff6a1bd3b460a3cf8b82be227a4c43696e19671"
+          },
+          "AStyle/doc/index.html": {
+            "sizeBytes": 11365,
+            "sha256": "826ca6b5195ee2b9c2bea57734d6b208fac5e175748e417b2d7718ba924168e8"
+          },
+          "Help/FAQ/Editor.htm": {
+            "sizeBytes": 399,
+            "sha256": "eef7adf407a9db79e5a3e73f27098f0191862887b90231b40b2956acc94f5fc0"
+          },
+          "Help/FAQ/Environment.htm": {
+            "sizeBytes": 1436,
+            "sha256": "f67fc3516e0f3bd24c644404c78b13f0c90422631e03d05f1c055a669a375c6d"
+          },
+          "Help/FAQ/Compiler.htm": {
+            "sizeBytes": 2828,
+            "sha256": "22f6cf45da7595dd4ad0aef3a13e2da9123401949de067acb2feaea2ae0d7573"
+          },
+          "Help/FAQ/Versions.htm": {
+            "sizeBytes": 1521,
+            "sha256": "8fc3213f1a0491b973052a938a7ba17d3b872e4664e40e803cb9b2e547fa64c0"
+          },
+          "Help/Subjects/Compiling.htm": {
+            "sizeBytes": 2751,
+            "sha256": "342755bd670b5be07bacfe9983bc715256ecc09a41615b7842a35f349d88d363"
+          },
+          "Help/Subjects/Debugging.htm": {
+            "sizeBytes": 2295,
+            "sha256": "37dc0d8c3fd2df662ef6fade82be11312e06e6996d2554a92fbd422375718074"
+          },
+          "Help/Subjects/Editing.htm": {
+            "sizeBytes": 1085,
+            "sha256": "0fc718a8b9574ec8bcffceb46e106da6572f726564ffa98ad6bc9966a23026cb"
+          },
+          "Help/Subjects/Profiling.htm": {
+            "sizeBytes": 2222,
+            "sha256": "e2fea3f21c7c3f6b641d1f4ef8e612e94bf2c492ce4302bf967d4fdcb04fa88a"
+          },
+          "Help/Interface/Menus/View.htm": {
+            "sizeBytes": 2145,
+            "sha256": "665eba5d2acc9d40afdd703a0801eb2b6ff9878705a90b84faea0bd65c9b15bc"
+          },
+          "Help/Interface/Menus/File.htm": {
+            "sizeBytes": 5019,
+            "sha256": "15bc8e3baad7e6ef17637c4fceaeb66a33d08f05e8f29a5ae997e5588be28938"
+          },
+          "Help/Interface/Menus/Edit.htm": {
+            "sizeBytes": 2585,
+            "sha256": "05ecf71650ad2bfb696a8ed2cdd83763d6bb19d0b6514e0aae060e3ae45fd1c9"
+          },
+          "Help/Interface/Menus/Search.htm": {
+            "sizeBytes": 1983,
+            "sha256": "ee1adb37f89ebe7958aad62f2b141458895ffdba698d25c1865c92ffa4cc684a"
+          },
+          "Help/Interface/Menus/Project.htm": {
+            "sizeBytes": 807,
+            "sha256": "d3bbdad6922fbce39b5e0ca0146488fc5765266552f050b7de252450d0fc4719"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/Call Graph.htm": {
+            "sizeBytes": 703,
+            "sha256": "e474c31871463ec6edaf1601a26f7a69dd3043ea934a80dfd6628c6e42d8722a"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/Profiling Options.htm": {
+            "sizeBytes": 1543,
+            "sha256": "4413cd4aa7a05d5f02a78ebddd01b670dbd1e5ad0f755ba28094de21923fea42"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/index.htm": {
+            "sizeBytes": 532,
+            "sha256": "10e3de90cd1cb9070769bd5cb03df2ad357d1f2f392f60cba1d9b26ef4c67a99"
+          },
+          "Help/Interface/Dialog Windows/Profile Analysis/Flat Output.htm": {
+            "sizeBytes": 703,
+            "sha256": "25e577f63de2a97e60cea29eb0fc4cf75ca59bf1445676ff154e89b893c066aa"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Parameters.htm": {
+            "sizeBytes": 1217,
+            "sha256": "419afc0104439273f7e7cecfb26858d2139a2c9e9a77b3b1457516bce34db417"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Makefile.htm": {
+            "sizeBytes": 911,
+            "sha256": "8f0110fc44e687b489f6363cd54e253ae90343868128927f7fbfc522c1364fff"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Version Info.htm": {
+            "sizeBytes": 1500,
+            "sha256": "01a8f384a896a1cb0e8dfdec8ab2868aae007829bb30ec10d261f836d093ae36"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Directories.htm": {
+            "sizeBytes": 860,
+            "sha256": "1a44c866912ba1d596f3b39f05fd8149c373e10ac2f341fdba1ad49feb056b1e"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Build Options.htm": {
+            "sizeBytes": 820,
+            "sha256": "d5d7542f5d573482b5191d5e2a04b27e32e32a4267eb06d558374394fa627a10"
+          },
+          "Help/Interface/Dialog Windows/Project Options/General.htm": {
+            "sizeBytes": 2731,
+            "sha256": "10864cea9e85c8d14254c5f9f553e7a521b0985c3ae38bc317541f2ef526ad39"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Compiler.htm": {
+            "sizeBytes": 836,
+            "sha256": "aa157f35abc636473ab6004de9632bc66dd31b1759706d70bc877990f0f5aa70"
+          },
+          "Help/Interface/Dialog Windows/Project Options/Files.htm": {
+            "sizeBytes": 1226,
+            "sha256": "705cab49d49d0668f3a173fd0a56e5549f1563428a98f5093a6c96d58956420c"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Makefile.htm": {
+            "sizeBytes": 1041,
+            "sha256": "3f410849935d54424daaea355b7dee21b8735d43d069638d25c153806e883d14"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Directories.htm": {
+            "sizeBytes": 1624,
+            "sha256": "b452612f322f98178967450a331c5b5f95b3b66f4336f5a027b004498d20b178"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Settings.htm": {
+            "sizeBytes": 2810,
+            "sha256": "d5a81b347f500fcb84e46102a42fc02fe08fbe23e29828359c35d154707c938f"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/General.htm": {
+            "sizeBytes": 845,
+            "sha256": "fcb95cce1f704d77e14ad381e2163ba19604a5004ce40e38fddde56f92c6310b"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/index.htm": {
+            "sizeBytes": 1860,
+            "sha256": "42315bf919e605372c8d2edcd736590e8fd7b904c201bb0153d520de21b0dd2d"
+          },
+          "Help/Interface/Dialog Windows/Compiler Options/Programs.htm": {
+            "sizeBytes": 1422,
+            "sha256": "ac3b307bb845d5f076a27baf4e7d2c63bb4cc9fe5bbb29f4137f235d1dc2a4ca"
+          }
+        },
+        "finalDataAndConfigurationPins": {
+          "system.reg": {
+            "sizeBytes": 3427072,
+            "sha256": "c9a1da17390c2bb10e6e8b8276cc264a7f115bcd3379540f493767fe025c1185"
+          },
+          "user.reg": {
+            "sizeBytes": 101602,
+            "sha256": "f26816f16be7339d821bcc0166e18aa8e4ca537ba552ff1ca05eeb68bbca5071"
+          },
+          "userdef.reg": {
+            "sizeBytes": 4052,
+            "sha256": "c05f2cbe3d7d62a1e1b18711bf23050e84c73289207acf1069398297f1245327"
+          },
+          "drive_c/DevCppTests/市场代码.cpp": {
+            "sizeBytes": 48,
+            "sha256": "47a008d31f1b46dc0e8266198392b201d3f7c6a187b60f3f6e3082e976d15dcd"
+          },
+          "drive_c/DevCppTests/market-input.cpp": {
+            "sizeBytes": 48,
+            "sha256": "47a008d31f1b46dc0e8266198392b201d3f7c6a187b60f3f6e3082e976d15dcd"
+          },
+          "drive_c/DevCppTests/market.cpp": {
+            "sizeBytes": 60,
+            "sha256": "9b0e03e5e932d63ffe978b5d06baf874b57f364f1735a6f7c4040c71f420b8cc"
+          },
+          "drive_c/users/forge/AppData/Roaming/Dev-Cpp/codeinsertion.ini": {
+            "sizeBytes": 2873,
+            "sha256": "6279114367382f78028ee506ad784ecbcd00f97e3985acaeea8bf6a775911770"
+          },
+          "drive_c/users/forge/AppData/Roaming/Dev-Cpp/devcpp.ini": {
+            "sizeBytes": 4226,
+            "sha256": "ff995f08ec52ca43fedc76c9885c9359e81d557f7a434ed6a090e87ac9a3e8f4"
+          }
+        },
+        "currentlyAbsentPreviouslyPinnedPaths": [],
+        "createdConfigurationPaths": [],
+        "coverage": "192 program files, fixed test input/output, three registry and selected Dev-Cpp named Roaming/Local locations; not full app filesystem"
+      }
+    },
+    "actualThirdOriginalByteDifferences": {
+      "system.reg": {
+        "old": {
+          "sizeBytes": 3427072,
+          "sha256": "493c76b395fd216f7af7a0d3ad204ae8a7b065c3684107329da220bea77648b8"
+        },
+        "new": {
+          "sizeBytes": 3427072,
+          "sha256": "e9fbb0b586186de4d5a573960d651494059a441d70faf3b19bef6d110d3d105a"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 16081,
+          "sha256": "d3b363e456611316b9a5ac16a5c21376cb6e9335fa504e9e13617b4c758f44e3"
+        },
+        "privateDiffLines": 287
+      },
+      "user.reg": {
+        "old": {
+          "sizeBytes": 101602,
+          "sha256": "bba5e1647a9c7bddf6141ece4bf90083f5574db39d28464e0c8b0e867cb276a3"
+        },
+        "new": {
+          "sizeBytes": 101602,
+          "sha256": "adcb850cfc42600941d3c978e599d6241018fed39b858e696b6682f8d67da492"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 786,
+          "sha256": "6a1d545772d6eac619b0512128be19d5cfaf8f740883a2eae19655c7b4a0f825"
+        },
+        "privateDiffLines": 20
+      }
+    },
+    "rollbackGuiJob": {
+      "applicationId": "devcpp",
+      "createdAtMilliseconds": 1791843577576,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 52437,
+          "requestId": "job-1791843577576-8",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 65048,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791840525058-1/prefix",
+          "requestId": "job-1791843577576-8",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 65089,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791843577576-8",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791840525058-1",
+      "id": "job-1791843577576-8",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 1495840,
+        "fileDigest": "sha256:5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1",
+        "fileSizeBytes": 2795008,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "shell32.dll",
+          "shfolder.dll",
+          "user32.dll",
+          "version.dll",
+          "winspool.drv",
+          "wsock32.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": "CODE",
+            "rawDataSize": 1492992,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1492640,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "DATA",
+            "rawDataSize": 10240,
+            "readable": true,
+            "virtualAddress": 1499136,
+            "virtualSize": 10152,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": "BSS",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 1511424,
+            "virtualSize": 16073,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 13312,
+            "readable": true,
+            "virtualAddress": 1527808,
+            "virtualSize": 13110,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 1544192,
+            "virtualSize": 20,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 1548288,
+            "virtualSize": 24,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 92160,
+            "readable": true,
+            "virtualAddress": 1552384,
+            "virtualSize": 91748,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 1184768,
+            "readable": true,
+            "virtualAddress": 1646592,
+            "virtualSize": 1184768,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791840525058-1",
+          "digest": "sha256:5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "devcpp.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791840525058-1/prefix/drive_c/DevCpp/devcpp.exe",
+          "sizeBytes": 2795008,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1 pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791840525058-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791840525058-1/prefix/drive_c/DevCpp/devcpp.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791840525058-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791840525058-1"
+        },
+        "requestId": "job-1791843577576-8",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791843644755
+    },
+    "currentActiveDefinition": {
+      "bottleId": "gui-devcpp",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "devcpp",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\DevCpp"
+        ],
+        "fileName": "Dev-Cpp-5.11-No-Compiler-Setup.exe",
+        "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+      },
+      "launchers": [
+        {
+          "executable": "DevCpp/devcpp.exe",
+          "id": "main",
+          "name": "Orwell Dev-C++"
+        }
+      ],
+      "name": "Orwell Dev-C++",
+      "publisher": "Orwell Dev-C++",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "5.11"
+    },
+    "activeFilenameAliasPreservedAfterExactRollbackAndRestart": true,
+    "allPreviousStateFieldsAndFixedDataPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "guiAcceptedLimitedAsciiBothGenerations": true,
+    "ipcMarketUpdateAndExactOriginalRollbackAccepted": true,
+    "compilerOrFullIdeAccepted": false,
+    "chinesePathStillUnrepaired": true,
+    "recoveredApplicationOperation": false,
+    "vmRebooted": false,
+    "programOrRuntimeRepairApplied": false
+  },
+  "oldSignedMetadataAndFailuresPreserved": true,
+  "noTrustDeletionRootRollbackGuardRelaxationOrGlobalDllChange": true
+}
