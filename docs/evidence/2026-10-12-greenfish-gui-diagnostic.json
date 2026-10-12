@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "greenfish",
+  "generationId": "gen-job-1791808654012-1",
+  "jobId": "job-1791808906768-2",
+  "status": "failed",
+  "error": "process exited unsuccessfully",
+  "events": [
+    {
+      "elapsedMilliseconds": 0,
+      "kind": "started",
+      "processId": 5942,
+      "requestId": "job-1791808906768-2",
+      "schemaVersion": "1",
+      "sequence": 0
+    },
+    {
+      "elapsedMilliseconds": 92471,
+      "kind": "wine-server-stop-requested",
+      "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791808654012-1/prefix",
+      "requestId": "job-1791808906768-2",
+      "schemaVersion": "1",
+      "sequence": 1
+    },
+    {
+      "elapsedMilliseconds": 92513,
+      "exit": {
+        "code": 1,
+        "success": false
+      },
+      "kind": "exited",
+      "requestId": "job-1791808906768-2",
+      "schemaVersion": "1",
+      "sequence": 2
+    }
+  ],
+  "actualSplashVersion": "4.5",
+  "aboutNotTested": true,
+  "nativeErrorDialog": "MDB error: Input/output error",
+  "dialogAcknowledgedNormallyThenAppClosed": true,
+  "exitCode": 1,
+  "wineserverStopped": true,
+  "mainEditingWindowNotReached": true,
+  "inputNativeGuiOpenNotPerformed": true,
+  "imageEditSaveAsOrNewProcessReopenNotPerformed": true,
+  "inputPins": {
+    "drive_c/GfieTests/原始图像.bmp": {
+      "sizeBytes": 630,
+      "sha256": "09771befa1014aafee0713349db7a897c929555908311b3ceb93cbb1f83f3e47"
+    }
+  },
+  "marketInputHostPreparedOnly": true,
+  "outputAbsent": true,
+  "screenshot": {
+    "path": "docs/evidence/greenfish-20261012/greenfish-01-mdb-error-diagnostic-20261012.jpg",
+    "pin": {
+      "sizeBytes": 66678,
+      "sha256": "785ccfaa756bba423e352626df1b0342da863c39a87b8c4f1500ec2ae5213a7d"
+    },
+    "diagnosticOnly": true
+  },
+  "guiAccepted": false,
+  "countsAsCompleted": false,
+  "noLoginOrPasswordImageStored": true
+}

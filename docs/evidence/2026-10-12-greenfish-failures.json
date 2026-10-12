@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "sourceResearchFirstNativeGetFailure": {
+    "passed": false,
+    "traceback": "Traceback (most recent call last):\n  File \"L:\\project\\FOS\\.transfer\\greenfish-download-official-20261012.py\", line 10, in <module>\n    assert response.status==200;raw=response.read(120*1024*1024+1);assert 0<len(raw)<=120*1024*1024\n  File \"F:\\Python\\py39\\lib\\http\\client.py\", line 463, in read\n    n = self.readinto(b)\n  File \"F:\\Python\\py39\\lib\\http\\client.py\", line 507, in readinto\n    n = self.fp.readinto(b)\n  File \"F:\\Python\\py39\\lib\\socket.py\", line 704, in readinto\n    return self._sock.recv_into(b)\n  File \"F:\\Python\\py39\\lib\\ssl.py\", line 1241, in recv_into\n    return self.read(nbytes, buffer)\n  File \"F:\\Python\\py39\\lib\\ssl.py\", line 1099, in read\n    return self._sslobj.read(len, buffer)\nsocket.timeout: The read operation timed out\n",
+    "completedArtifacts": {
+      "official-download-page.html": {
+        "requestedUrl": "https://greenfishsoftware.org/gfie.php/",
+        "finalUrl": "https://greenfishsoftware.org/gfie.php/",
+        "status": 200,
+        "contentLength": 9685,
+        "sizeBytes": 9685,
+        "sha256": "29f99812a96b45286e69cce644331e79f7b248ccc9f6a2d1b18601ee77cbb2cc",
+        "elapsedSeconds": 0.828,
+        "upstreamPublishedDigestVerified": false
+      }
+    },
+    "installerJobCreated": false
+  },
+  "nativeGetPartialBodyNotSeparatelySavedLengthUnknown": true,
+  "hostPortableGetNotStartedAfterNativeInstallerTimeout": true,
+  "builderParallelFailures": {
+    "failureAndHeadFiles": {
+      "gfie4.5.zip.bounded-ranges/021.first-failure.json": {
+        "record": {
+          "passed": false,
+          "index": 21,
+          "receivedBytes": 196608,
+          "partialFileRetained": true,
+          "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 19, in piece\n  File \"/usr/lib/python3.14/http/client.py\", line 484, in read\n    s = self.fp.read(amt)\n  File \"/usr/lib/python3.14/socket.py\", line 725, in readinto\n    return self._sock.recv_into(b)\n           ~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/usr/lib/python3.14/ssl.py\", line 1304, in recv_into\n    return self.read(nbytes, buffer)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/ssl.py\", line 1138, in read\n    return self._sslobj.read(len, buffer)\n           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nTimeoutError: The read operation timed out\n",
+          "installerJobCreated": false
+        },
+        "sizeBytes": 780,
+        "sha256": "75327e7e5e89df4d64a3fd11754e911ceb6cc8bba4d6de35ec6230c80150dcfd"
+      },
+      "gfie4.5.zip.bounded-ranges/022.first-failure.json": {
+        "record": {
+          "passed": false,
+          "index": 22,
+          "receivedBytes": 65536,
+          "partialFileRetained": true,
+          "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 19, in piece\n  File \"/usr/lib/python3.14/http/client.py\", line 484, in read\n    s = self.fp.read(amt)\n  File \"/usr/lib/python3.14/socket.py\", line 725, in readinto\n    return self._sock.recv_into(b)\n           ~~~~~~~~~~~~~~~~~~~~^^^\n  File \"/usr/lib/python3.14/ssl.py\", line 1304, in recv_into\n    return self.read(nbytes, buffer)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/ssl.py\", line 1138, in read\n    return self._sslobj.read(len, buffer)\n           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nTimeoutError: The read operation timed out\n",
+          "installerJobCreated": false
+        },
+        "sizeBytes": 779,
+        "sha256": "4b0bdf1d44b5391658bf712f57f2a683cf3545497fc51a3855d83588a0ce25cf"
+      },
+      "gfie4.5.zip.bounded-ranges/028.first-failure.json": {
+        "record": {
+          "passed": false,
+          "index": 28,
+          "receivedBytes": 0,
+          "partialFileRetained": false,
+          "traceback": "Traceback (most recent call last):\n  File \"/usr/lib/python3.14/urllib/request.py\", line 1321, in do_open\n    h.request(req.get_method(), req.selector, req.data, headers,\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n              encode_chunked=req.has_header('Transfer-encoding'))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/http/client.py\", line 1367, in request\n    self._send_request(method, url, body, headers, encode_chunked)\n    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/http/client.py\", line 1413, in _send_request\n    self.endheaders(body, encode_chunked=encode_chunked)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/http/client.py\", line 1362, in endheaders\n    self._send_output(message_body, encode_chunked=encode_chunked)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/http/client.py\", line 1122, in _send_output\n    self.send(msg)\n    ~~~~~~~~~^^^^^\n  File \"/usr/lib/python3.14/http/client.py\", line 1066, in send\n    self.connect()\n    ~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.14/http/client.py\", line 1508, in connect\n    self.sock = self._context.wrap_socket(self.sock,\n                ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^\n                                          server_hostname=server_hostname)\n                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/ssl.py\", line 455, in wrap_socket\n    return self.sslsocket_class._create(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        sock=sock,\n        ^^^^^^^^^^\n    ...<5 lines>...\n        session=session\n        ^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/lib/python3.14/ssl.py\", line 1076, in _create\n    self.do_handshake()\n    ~~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.14/ssl.py\", line 1372, in do_handshake\n    self._sslobj.do_handshake()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\nssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 15, in piece\n  File \"/usr/lib/python3.14/urllib/request.py\", line 187, in urlopen\n    return opener.open(url, data, timeout)\n           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/urllib/request.py\", line 487, in open\n    response = self._open(req, data)\n  File \"/usr/lib/python3.14/urllib/request.py\", line 504, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n                              '_open', req)\n  File \"/usr/lib/python3.14/urllib/request.py\", line 464, in _call_chain\n    result = func(*args)\n  File \"/usr/lib/python3.14/urllib/request.py\", line 1369, in https_open\n    return self.do_open(http.client.HTTPSConnection, req,\n           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                        context=self._context)\n                        ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.14/urllib/request.py\", line 1324, in do_open\n    raise URLError(err)\nurllib.error.URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>\n",
+          "installerJobCreated": false
+        },
+        "sizeBytes": 3519,
+        "sha256": "7037936e88b820fe7be3467dc7b53e97fc66ce8fce090731081e2173c1f25355"
+      },
+      "gfie4.5.zip.bounded-ranges/head.json": {
+        "record": {
+          "status": 200,
+          "total": 75501094,
+          "etag": "\"1119423113\"",
+          "url": "https://greenfishsoftware.org/dl.php?filename=gfie4.5.zip"
+        },
+        "sizeBytes": 139,
+        "sha256": "ad138a404caf773b76370a94c8613017194fed99b098069fa140d14da06a0b84"
+      },
+      "gfie_setup_4.5.exe.bounded-ranges/head.json": {
+        "record": {
+          "status": 200,
+          "total": 46008466,
+          "etag": "\"3742957290\"",
+          "url": "https://greenfishsoftware.org/dl.php?filename=gfie_setup_4.5.exe"
+        },
+        "sizeBytes": 146,
+        "sha256": "839d7618988a24c3fc08149dc772298102e337d98525a99b82398a541c5a9b43"
+      }
+    },
+    "readOnly": true,
+    "installerJobCreated": false
+  },
+  "allBuilderSuccessfulFailedAndPartialBytesPreserved": true,
+  "resume": {
+    "passed": true,
+    "artifacts": {
+      "gfie_setup_4.5.exe": {
+        "passed": true,
+        "requestedUrl": "https://greenfishsoftware.org/dl.php?filename=gfie_setup_4.5.exe",
+        "finalUrl": "https://greenfishsoftware.org/dl.php?filename=gfie_setup_4.5.exe",
+        "sizeBytes": 46008466,
+        "sha256": "1cddb81ba7e9e50e3a6ae28e64bdc496fcd8df2fd4abd5ad4eccecf3b5b9987d",
+        "boundedRanges": 22,
+        "etag": "\"3742957290\"",
+        "elapsedSeconds": 310.392,
+        "upstreamPublishedDigestVerified": false,
+        "installerJobCreated": false
+      },
+      "gfie4.5.zip": {
+        "passed": true,
+        "requestedUrl": "https://greenfishsoftware.org/dl.php?filename=gfie4.5.zip",
+        "finalUrl": "https://greenfishsoftware.org/dl.php?filename=gfie4.5.zip",
+        "sizeBytes": 75501094,
+        "sha256": "7cc9b150b3e09e1d59b162fc5aa1073387c91003f1dd6e75749067ae4af3f533",
+        "boundedRanges": 37,
+        "oldSuccessfulSegments": 34,
+        "serialResumedSegments": 3,
+        "etag": "\"1119423113\"",
+        "elapsedSeconds": 275.001,
+        "upstreamPublishedDigestVerified": false,
+        "zipCrcAllMembersPassed": true,
+        "oldSuccessfulAndFailureBytesPreserved": true,
+        "installerJobCreated": false
+      }
+    },
+    "originalParallelFailurePreserved": true,
+    "installerJobCreated": false,
+    "portableForSourceResearchOnly": true,
+    "potentialSourceAndLicenseMembers": [
+      "Greenfish Icon Editor Pro 4.5/license.txt",
+      "Greenfish Icon Editor Pro 4.5/readme.html",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/aom.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/catch.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/date.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libavif.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libexif.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libiconv.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libjpeg.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libpng.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libtiff.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libwebp.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/lineicons.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/littlecms.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/lmdb.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/magic_enum.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/onyx_icons.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/openjpeg.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/qt.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/rapidjson.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/resource_dasm.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/singleapplication.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/spdlog.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/xz.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/zlib.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/zstd.txt",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libexif_src.zip",
+      "Greenfish Icon Editor Pro 4.5/data/help/license/libiconv_src.zip"
+    ]
+  },
+  "serialResumeNotProofOfConcurrencyRootCause": true,
+  "successful22InstallerRangesAnd34OldZipRangesKept": true,
+  "threeFailedZipRangesAndTwoOldPartialPrefixesKept": true,
+  "nativeInstallerRepeated": false,
+  "initial7zCannotOpenArchiveNotCorruptPackageProof": true,
+  "initialInspectionAssertionStoppedBeforePortableExtractionOrInstallation": true,
+  "inspectionV2ActualInnoMarkersAndCustomEulaRead": true,
+  "initialOlderGplResearchNotAppliedTo45": true,
+  "missingHostReads": [
+    "zim-build-install-tools-20261012.py",
+    "poedit-transfer-installer-20261012.py"
+  ],
+  "missingReadsNotExecutedChecks": true,
+  "guessedHelpPathInaccessibleThenActualIndexLinksRead": true,
+  "webBinaryUnsupportedContentTypeNotCorruption": true,
+  "firstGuiMdbErrorAndNativeExit1": true,
+  "jobPrefixMetadataNotActualRuntimeLog": true,
+  "fullHostJobJsonOutputTruncatedNotIndependentCheck": true,
+  "oldScribusCanonicalPrivateFailureRawLossLimitStillApplies": true,
+  "failureHelpersNotOverwritten": true
+}

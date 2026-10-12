@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "coreJobs": 454,
+  "fullStoreRows": 134,
+  "normalRestartSevenFullFieldClassesExact": true,
+  "beforeAndAfterRestart": {
+    "beforeRestart": {
+      "file": "before-final-service-restart.json",
+      "sha256": "66d7019c9733e140e71a0a2880d7f125c03add10b5387b65a7d24c23192c8866",
+      "coreJobs": 454,
+      "fullStoreRows": 134
+    },
+    "afterRestart": {
+      "file": "after-restart.json",
+      "sha256": "2dd6f2c7e8ed010ac9ecdd73de3395babe8b38c0fbd2bb5850fab8822dd047c0",
+      "coreJobs": 454,
+      "fullStoreRows": 134
+    }
+  },
+  "oldAndNewServiceProcessIds": {
+    "old": {
+      "compatforge.service": "2919",
+      "forge-store.service": "2934"
+    },
+    "new": {
+      "compatforge.service": "6545",
+      "forge-store.service": "6561"
+    }
+  },
+  "coreLauncherSha256": "4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818",
+  "storeServiceSha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f",
+  "old57AcceptedAndZimPendingFixedDataPreserved": true,
+  "allCurrentGreenfishPinsPreserved": true,
+  "failureJobAllFieldsRetained": true,
+  "generationReadyAndNoQuarantineOperation": true,
+  "recoverOrVmRebootNotNeeded": true,
+  "authenticationSettingsUnchanged": true,
+  "noMarketInstallUpdateOrRollback": true,
+  "guiAccepted": false,
+  "published": false,
+  "privateCompleteCheckpoint": {
+    "file": "greenfish-20261012/after-restart.json",
+    "sha256": "2dd6f2c7e8ed010ac9ecdd73de3395babe8b38c0fbd2bb5850fab8822dd047c0"
+  },
+  "privateRawNotPublished": true
+}

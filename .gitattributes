@@ -363,3 +363,7 @@ docs/evidence/zim-20261012/source/setup.py whitespace=-blank-at-eol
 docs/evidence/zim-20261012/source/zim/__init__.py whitespace=-blank-at-eof
 docs/evidence/zim-20261012/source/zim/gui/pageview/__init__.py whitespace=-blank-at-eol,-blank-at-eof
 docs/evidence/zim-20261012/source/zim/main/__init__.py whitespace=-blank-at-eol
+
+# Preserve fixed greenfish upstream, GUI output and inherited signed evidence bytes.
+docs/evidence/greenfish-20261012/official-package/license.txt -text whitespace=cr-at-eol
+docs/evidence/greenfish-20261012/official-package/readme.html -text whitespace=cr-at-eol,-blank-at-eol

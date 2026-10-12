@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "greenfish",
+  "version": "4.5",
+  "installed": true,
+  "installationJobId": "job-1791808654012-1",
+  "generationId": "gen-job-1791808654012-1",
+  "definition": {
+    "bottleId": "gui-greenfish",
+    "category": "graphics",
+    "compatibilityRating": "unknown",
+    "id": "greenfish",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\GFIE",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "gfie_setup_4.5.exe",
+      "sha256": "1cddb81ba7e9e50e3a6ae28e64bdc496fcd8df2fd4abd5ad4eccecf3b5b9987d"
+    },
+    "launchers": [
+      {
+        "executable": "GFIE/gfie.exe",
+        "id": "main",
+        "name": "Greenfish Icon Editor Pro"
+      }
+    ],
+    "name": "Greenfish Icon Editor Pro",
+    "publisher": "Balazs Szalkai",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "4.5"
+  },
+  "definitionDigest": "sha256:be53361f08d6fffd069feff2f9e1592e76fb445d972fb675f3bd1d1203f838d4",
+  "innoMarkers": "two actual Inno Setup Setup Data (6.4.0.1) byte markers; bootstrap PE Machine 0x14c",
+  "installerFamilyNotFromFailed7zListing": true,
+  "nativeCommandParametersCheckedAgainstOfficialInnoDocs": "https://jrsoftware.org/ishelp/topic_setupcmdline.htm",
+  "directoryUtf8Hex": "2f4449523d433a5c47464945",
+  "programFileCount": 171,
+  "installedFilePins": {
+    "libexif.dll": {
+      "sizeBytes": 230400,
+      "sha256": "8306b194785e1ede1746b9a564a85f097eddc50f9cd2222ec5c85599d0a71c1e"
+    },
+    "Qt5Network.dll": {
+      "sizeBytes": 1340400,
+      "sha256": "4ef341ae9302e793878020f0740b09b0f31cb380408a697f75c69fdbd20fc7a1"
+    },
+    "Qt5Core.dll": {
+      "sizeBytes": 6023664,
+      "sha256": "8d2ff4ce9096ddccc4f4cd62c2e41fc854cfd1b0d6e8d296645a7f5fd4ae565a"
+    },
+    "license.txt": {
+      "sizeBytes": 1315,
+      "sha256": "fccbf60a25ba2e7f4ec39ac0a019fe388c74a92393a86650f4c05125712cbb57"
+    },
+    "unins000.exe": {
+      "sizeBytes": 3542871,
+      "sha256": "1c9f9a2e713e660e3dfbf2eda9e1077f50780307676812260e5d00c2abb60387"
+    },
+    "Greenfish_Homepage.url": {
+      "sizeBytes": 56,
+      "sha256": "5f9915c05ae501355fe097a5fdb6e50fde9a41c5b2d7a2fde7fa1e21360aa785"
+    },
+    "libGLESv2.dll": {
+      "sizeBytes": 3385328,
+      "sha256": "50fad5605b3d57627848b3b84a744dfb6a045609b8236b04124f2234676758d8"
+    },
+    "Qt5Widgets.dll": {
+      "sizeBytes": 5498352,
+      "sha256": "3788c669d4b645e5a576de9fc77fca776bf516d43c89143dc2ca28291ba14358"
+    },
+    "Qt5Gui.dll": {
+      "sizeBytes": 7008240,
+      "sha256": "5e7d2d41b8b92a880e83b8cc0ca173f5da61218604186196787ee1600956be1e"
+    },
+    "D3Dcompiler_47.dll": {
+      "sizeBytes": 4173928,
+      "sha256": "e994847e01a6f1e4cbdc5a864616ac262f67ee4f14db194984661a8d927ab7f4"
+    },
+    "libEGL.dll": {
+      "sizeBytes": 25072,
+      "sha256": "32092de077fd57b6ef355705ec46c6d21f6d72fbe3d3a5dd628f2a29185a96fa"
+    },
+    "readme.html": {
+      "sizeBytes": 19709,
+      "sha256": "c524be27b927109fe78a9e6d0ccaab0aeddcba211e387dd966937ea37e95f5c1"
+    },
+    "libgfiedll.dll": {
+      "sizeBytes": 16148992,
+      "sha256": "2dff47f26fe4e9745697cf4553215a148090feaec1b352955930af596d1e1c75"
+    },
+    "Qt5Svg.dll": {
+      "sizeBytes": 330736,
+      "sha256": "7348cfc6444438b8845fb3f59381227325d40ca2187d463e82fc7b8e93e38db5"
+    },
+    "libiconv.dll": {
+      "sizeBytes": 940544,
+      "sha256": "fc186e2f2ad3855bd9182d3e520e02be5396b7070477e61d493342231c9a5f89"
+    },
+    "gfie.exe": {
+      "sizeBytes": 78336,
+      "sha256": "6c0692c2b93134f2166112e1a9f1b78450405aa9750b0d5f8a3db53030651706"
+    },
+    "opengl32sw.dll": {
+      "sizeBytes": 20923392,
+      "sha256": "963641a718f9cae2705d5299eae9b7444e84e72ab3bef96a691510dd05fa1da4"
+    },
+    "Qt5PrintSupport.dll": {
+      "sizeBytes": 317424,
+      "sha256": "783d4f1feb8dc0bc00acb8c094d6c1ab39ac6b5858874e60dd3d45677af4307a"
+    },
+    "unins000.dat": {
+      "sizeBytes": 86394,
+      "sha256": "377de1df7108c3e100fe98293449360e587391864870654e417bd57a5b9f15b9"
+    },
+    "bearer/qgenericbearer.dll": {
+      "sizeBytes": 53232,
+      "sha256": "0534cef5f54eb6d10b2e90bd6089dc413c555771e12220be9a5cc48adddc803d"
+    },
+    "styles/qwindowsvistastyle.dll": {
+      "sizeBytes": 144368,
+      "sha256": "d9b21182952682fe7ba63af1df24e23ace592c35b3f31eceef9f0eabeb5881b9"
+    },
+    "iconengines/qsvgicon.dll": {
+      "sizeBytes": 41968,
+      "sha256": "42dde60befcf1d9f96b8366a9988626b97d7d0d829ebea32f756d6ecd9ea99a8"
+    },
+    "platforms/qwindows.dll": {
+      "sizeBytes": 1477104,
+      "sha256": "3333ba244c97264e3bd19db5953efa80a6e47aaced9d337ac3287ec718162b85"
+    },
+    "printsupport/windowsprintersupport.dll": {
+      "sizeBytes": 55280,
+      "sha256": "c7a1bbf4ea6a74888e71f7199373c9920017199b41f624267ead151eb8cf99b6"
+    },
+    "imageformats/qtiff.dll": {
+      "sizeBytes": 390128,
+      "sha256": "825174429ced6b3dab18115dbc6c9da07bf5248c86ec1bd5c0dcaeca93b4c22d"
+    },
+    "imageformats/qwbmp.dll": {
+      "sizeBytes": 30192,
+      "sha256": "0f05969fb926a62a338782b32446ea3e28e4bfbffc0dbd25ed303fab3404abac"
+    },
+    "imageformats/qtga.dll": {
+      "sizeBytes": 31728,
+      "sha256": "5b641dec81aec1cf7ac0cce9fc067bb642fbd32da138a36e3bdac3bb5b36c37a"
+    },
+    "imageformats/qicns.dll": {
+      "sizeBytes": 45040,
+      "sha256": "f4a229a082d16f80016f366156a2b951550f1e9df6d4177323bbedd92a429909"
+    },
+    "imageformats/qwebp.dll": {
+      "sizeBytes": 510448,
+      "sha256": "6e37acd0d357871f92b7fde7206c904c734caa02f94544df646957df8c4987af"
+    },
+    "imageformats/qjpeg.dll": {
+      "sizeBytes": 421360,
+      "sha256": "fb4e980cb5fafa8a4cd4239329aed93f7c32ed939c94b61fb2df657f3c6ad158"
+    },
+    "imageformats/qico.dll": {
+      "sizeBytes": 38384,
+      "sha256": "1982a635db9652304131c9c6ff9a693e70241600d2ef22b354962aa37997de0b"
+    },
+    "imageformats/qgif.dll": {
+      "sizeBytes": 39408,
+      "sha256": "36174dd4c5f37c5f065c7a26e0ac65c4c3a41fdc0416882af856a23a5d03bb9d"
+    },
+    "imageformats/qsvg.dll": {
+      "sizeBytes": 32240,
+      "sha256": "b3498f0a10ac4cb42cf7213db4944a34594ff36c78c50a0f249c9085d1b1ff39"
+    },
+    "data/swatches/Mac-256-colors.swa": {
+      "sizeBytes": 1150,
+      "sha256": "7a56e333c968bc6402f6d67132275d1c71c93760535f0ddd54a74df3ccdab353"
+    },
+    "data/swatches/Mac-16-colors.swa": {
+      "sizeBytes": 142,
+      "sha256": "47e0ae332acb9b7829d28aac4a8a4b72cc80588536716ee217ceb6c0cf4f74c9"
+    },
+    "data/swatches/WebSafe.swa": {
+      "sizeBytes": 1150,
+      "sha256": "9a73be76d07a502a359fac7f1d6d2f6f272687edc41ecb5b07a77918eaa3a968"
+    },
+    "data/swatches/Grayscale.swa": {
+      "sizeBytes": 1150,
+      "sha256": "513fde92fd6ed6b6322078c5dc473e5d25a8e6937b6a19575f01fd01968e82a7"
+    },
+    "data/swatches/Old-GFIE-default.swa": {
+      "sizeBytes": 350,
+      "sha256": "1b291ee86f4ef5f6b0c07a14ceb474c458d0e7f453f1b4da1f05e580bd508351"
+    },
+    "data/swatches/Windows-16-colors.swa": {
+      "sizeBytes": 142,
+      "sha256": "f59d72af4052262cb0d78568a8c96a3c5708a8a3bb50e3ad29a5c0575110d224"
+    },
+    "data/language/Chinese (traditional).properties": {
+      "sizeBytes": 67880,
+      "sha256": "1bb9ca11b26710a6a49afebf0c71b0fe613afc804675d17d179557a23769ba8c"
+    },
+    "data/language/Indonesian.properties": {
+      "sizeBytes": 72248,
+      "sha256": "db5ed947a2d7bb437464d416c473db421ddcc92ea458a7b0cd4893b8f0a583b5"
+    },
+    "data/language/Croatian.properties": {
+      "sizeBytes": 73314,
+      "sha256": "646c7b509ad6b20bf386f0dbbb05f677c1002d8701ff11e5647ee34ac4f6777e"
+    },
+    "data/language/Arabic.properties": {
+      "sizeBytes": 88561,
+      "sha256": "b1452b79c89cbe486270f34f7739d2c06a644893c90e84c2567228fe1fb869c9"
+    },
+    "data/language/Romanian.properties": {
+      "sizeBytes": 76130,
+      "sha256": "66ade619abfc08bf931c524fec84884211a7ecc74e59d62332971b849b7a2d91"
+    },
+    "data/language/Spanish (Argentinian).properties": {
+      "sizeBytes": 76952,
+      "sha256": "30dfafd82905f6ef055d4bbe96272e582036f1b321b7e470adfc96f94cc52772"
+    },
+    "data/language/Ukrainian.properties": {
+      "sizeBytes": 103052,
+      "sha256": "bdee277e6837704a1f76a23ae72ef4eed36731550034d6995c3c26bd7ca24019"
+    },
+    "data/language/Greek.properties": {
+      "sizeBytes": 107524,
+      "sha256": "3fcdbf5179a47012163d55f2c8b8e00e55278b84f64ccf6a2ea8d8d802994326"
+    },
+    "data/language/Danish.properties": {
+      "sizeBytes": 71557,
+      "sha256": "6d9987d797e739a21bdb7bf39fa3eeeebce7da9d462733b2a902d1ce8f5ed89c"
+    },
+    "data/language/Czech.properties": {
+      "sizeBytes": 74713,
+      "sha256": "51f72af314e885276238547dfbe8884c01c186a3aa2c2e1db11473e3dbbd7a9b"
+    },
+    "data/language/Finnish.properties": {
+      "sizeBytes": 73065,
+      "sha256": "28b0ce44f47c7dd0ac314da8775f6669b69ecb061074510381519d217a303311"
+    },
+    "data/language/Polish.properties": {
+      "sizeBytes": 74476,
+      "sha256": "8c658a09951aa24b93f61468ff302195cc094933a35b38c548eb505acd65253f"
+    },
+    "data/language/Spanish (European).properties": {
+      "sizeBytes": 77271,
+      "sha256": "dda9589e249c72ee1941cb5a2d1991e0fc0d1e4667805afa05f485ee33650785"
+    },
+    "data/language/Portuguese (Brazilian).properties": {
+      "sizeBytes": 75893,
+      "sha256": "3d357f2ecbda0ca216a80c73e371798dba7c5a6b965a1c1b6dcd63dfe8bfeed5"
+    },
+    "data/language/Bulgarian.properties": {
+      "sizeBytes": 105368,
+      "sha256": "189cc808d451915544ec5664a24234d85813444a6c75f8bf6618df5ad799091f"
+    },
+    "data/language/Serbian (Latin).properties": {
+      "sizeBytes": 72999,
+      "sha256": "539dbb575a2178fb0aeaf10d495f63e56a65c7f4c00b723c153aa3ae85c280c6"
+    },
+    "data/language/Dutch.properties": {
+      "sizeBytes": 73898,
+      "sha256": "e1019a775c074b788e071980e500053e2687fa1989bc69e5eda113beef5141b1"
+    },
+    "data/language/Hungarian.properties": {
+      "sizeBytes": 77226,
+      "sha256": "84e7f58e1ff7f070af0241c45940083e79061949e357ca9b3208bba255120309"
+    },
+    "data/language/Turkish.properties": {
+      "sizeBytes": 74785,
+      "sha256": "bb22576a011c44396b349f95be1b8291c85b6fc62faa79a957e700b3c138d454"
+    },
+    "data/language/English (United States).properties": {
+      "sizeBytes": 67554,
+      "sha256": "d4a475185288f2c501011e0f6ab28581076916aeac4e695e9c3165cb26e5bd46"
+    },
+    "data/language/German.properties": {
+      "sizeBytes": 75871,
+      "sha256": "f02e6d8401e17c3d042ddc198d296ad72eb2ba2012849323d7f34a4dd8727091"
+    },
+    "data/language/Spanish (Mexican).properties": {
+      "sizeBytes": 76852,
+      "sha256": "cb9630d79947283e59692162e25d2e0ed5ea607163c4a52e53eae54087f5a61e"
+    },
+    "data/language/Russian.properties": {
+      "sizeBytes": 106599,
+      "sha256": "0deb1ed888f2bc83a8ce90274e1526ef61eb5b778218b0948df3eb6077f50827"
+    },
+    "data/language/Italian.properties": {
+      "sizeBytes": 77992,
+      "sha256": "7699d679e992679e7578d307bf649ba9840bef8985c532f2225b827a64950f9a"
+    },
+    "data/language/Norwegian.properties": {
+      "sizeBytes": 71130,
+      "sha256": "d155e53e413488eba7730c13ca4590120ee21dd237b24590c6a26f9ca4ee154f"
+    },
+    "data/language/Japanese.properties": {
+      "sizeBytes": 82673,
+      "sha256": "c4da5ba783249f5013b6e135ce0156c2fd538d150b0d053e9d82483fb3de2d03"
+    },
+    "data/language/Portuguese (European).properties": {
+      "sizeBytes": 75979,
+      "sha256": "aa3b17700b6060efa0be552c89355b127ba444b33eb4e4e2b63216c216c8c9c4"
+    },
+    "data/language/French (France).properties": {
+      "sizeBytes": 79585,
+      "sha256": "43d4022079689c9a8fcb6af7f66538abfa0ab86a856c6b7c0f36d765c3916117"
+    },
+    "data/language/Korean.properties": {
+      "sizeBytes": 76880,
+      "sha256": "f9c79b765eb80321dee08dfced46816917391af875f75d64389c13695b57fd12"
+    },
+    "data/language/Swedish.properties": {
+      "sizeBytes": 71390,
+      "sha256": "01ab8290403441a35f6766f766a7f36af8d7afe568af7ff6a3ebca741bb237f4"
+    },
+    "data/language/Chinese (simplified).properties": {
+      "sizeBytes": 66800,
+      "sha256": "56dedfb28facbae31380b9657065fa223fc360f670a1b570815b63524d8b045a"
+    },
+    "data/samples/chess.gif": {
+      "sizeBytes": 4859,
+      "sha256": "34980c0a233016fc607bc0f4d60ada5fd351f67abdada74571bf31e50c8e286c"
+    },
+    "data/samples/bluecat.icns": {
+      "sizeBytes": 55596,
+      "sha256": "46f5c0de175ef33067967b03367d8fa765e03e00d1773356590d92c594505133"
+    },
+    "data/samples/button.gfie": {
+      "sizeBytes": 8884,
+      "sha256": "a9ac059a7840e4d9b3f5ef90bc9c5b00af046ba2b934af424a443df69019d8dd"
+    },
+    "data/samples/progress.ani": {
+      "sizeBytes": 27174,
+      "sha256": "f3c651d131c2ea6234c1178edcc49e0b772a43855677918f700e74bd60b63ef7"
+    },
+    "data/samples/ninepatch.gfie": {
+      "sizeBytes": 1492,
+      "sha256": "7a7ec6e28ea7e659d24c1e892cffca532991b1ff5064f04fd29c8a9766129160"
+    },
+    "data/samples/gfie_old.ico": {
+      "sizeBytes": 38487,
+      "sha256": "4a5fe0f1f26459d270df07f9cd6bd331f9c40e101d2566815e0384994581524c"
+    },
+    "data/samples/select.cur": {
+      "sizeBytes": 326,
+      "sha256": "8b4a1bac7d71a0bfb784822e1a902ae7d1ef9c797f92271b5c20304dda93c832"
+    },
+    "data/images/splash.jpg": {
+      "sizeBytes": 61541,
+      "sha256": "91da9a5ff0b0ab490a2f3ea8c1f4683ed73f2940ab3c778a1015d5c69585e5ca"
+    },
+    "data/help/common/retouch.svg": {
+      "sizeBytes": 3511,
+      "sha256": "4f9dda3bfb4f3b4e564a0753d08d75768a80ce8704c99746e763cb02769e43ef"
+    },
+    "data/help/common/hot_spot.svg": {
+      "sizeBytes": 657,
+      "sha256": "f783f04b0e93b5b07c91a946b40005d060a3db9722b2ccb59f197006cd285a78"
+    },
+    "data/help/common/bucket.svg": {
+      "sizeBytes": 1308,
+      "sha256": "9a64c18ba0dece81dd2eed14c017101e49581639206fb8df9542ad0298a029ad"
+    },
+    "data/help/common/eraser.svg": {
+      "sizeBytes": 1113,
+      "sha256": "99e92a4b2bc85acc3c2ea6623b4c512e5e08fc7629ca0972a60c4e5f5cb739f2"
+    },
+    "data/help/common/gflogo.png": {
+      "sizeBytes": 19163,
+      "sha256": "e533d48250c2e1c6ab5d2b70c54447d9a90fbb256cdd106d2b173da97ae0d03d"
+    },
+    "data/help/common/brush.svg": {
+      "sizeBytes": 526,
+      "sha256": "e5e5d5b9e24a6024ccceb05074290722c10480f2bb92fd1e68fefc14402b8a6c"
+    },
+    "data/help/common/gradient.svg": {
+      "sizeBytes": 804,
+      "sha256": "2a680b8075e441ac64e190ac2edfa95e16cb47cec7953b11ec35d8c1d1fec9f2"
+    },
+    "data/help/common/line.svg": {
+      "sizeBytes": 623,
+      "sha256": "a3ef28796adbf1091cc0f210dbf31f237f7f3f8d61626d543477469044db48ca"
+    },
+    "data/help/common/antialias.svg": {
+      "sizeBytes": 3102,
+      "sha256": "4400194e7e58729182d00c2412b541572e8e4e42b6914e2160b51825e143a21f"
+    },
+    "data/help/common/style.css": {
+      "sizeBytes": 902,
+      "sha256": "694a3ad3dc397993c9fd7aeb1d44e18d91e924af3e0dae2af7730328045a5d2d"
+    },
+    "data/help/common/inverted.svg": {
+      "sizeBytes": 1111,
+      "sha256": "050eb8aaad1404dcbaf0aadfe20e7c0ab94d783ec1d6ad0534988ca607451b11"
+    },
+    "data/help/common/lasso.svg": {
+      "sizeBytes": 1971,
+      "sha256": "ec78fc5fb7b9c4fa1ac924b9fd3435546e8ec08d115c1ee7e494d3086a51876a"
+    },
+    "data/help/common/text.svg": {
+      "sizeBytes": 137,
+      "sha256": "d39756a20b06ed7139762bcfb673c3419d284c18ad955d05f3ada2fc47d4cdc8"
+    },
+    "data/help/common/transform.svg": {
+      "sizeBytes": 1614,
+      "sha256": "165e5262745a5b1381d7ba1bec1dfda9040a6ee12f177805f3706906b19f9cc8"
+    },
+    "data/help/common/replace.svg": {
+      "sizeBytes": 470,
+      "sha256": "ab952161dfa9ed203afe5c7f71beb9fe644f653bd9134a98645ef08d114a2c35"
+    },
+    "data/help/common/recolor.svg": {
+      "sizeBytes": 671,
+      "sha256": "8f04fa9dbe316a3b2836e2559ad4e408c2e197c00e6acea76f25aacf5457d275"
+    },
+    "data/help/common/extract_and_save.svg": {
+      "sizeBytes": 1646,
+      "sha256": "3790913d538eb06b3f0c18443b4ad1585a30ca68300b12de766a24f69e9d8508"
+    },
+    "data/help/common/open.svg": {
+      "sizeBytes": 669,
+      "sha256": "5724631ac4c3256b92ec681b45b4ac25570845730f3eb4508413328d9a2f3cf7"
+    },
+    "data/help/common/crop.svg": {
+      "sizeBytes": 317,
+      "sha256": "2f584c918f66b807226bd8b0c3d2e4a0a996e5fe94eb8584a6bb5d18b3db5bbc"
+    },
+    "data/help/common/eyedropper.svg": {
+      "sizeBytes": 1825,
+      "sha256": "d4a98e23814579ce1a36a5cacf3b329c5dade31a47624bd22f7ee34e674cb68c"
+    },
+    "data/help/common/toggle_color_panel.svg": {
+      "sizeBytes": 761,
+      "sha256": "6ee81cd3bd2c89c32c33d14cb1869922d4e16a8c9f743833e324765f9bcadb3e"
+    },
+    "data/help/common/ellipse.svg": {
+      "sizeBytes": 237,
+      "sha256": "8254f17c2030e0c6c7d4e1ed259a0745e102484caac5feb7c7971e3a624c86b0"
+    },
+    "data/help/common/test.svg": {
+      "sizeBytes": 652,
+      "sha256": "6b50bb97f3fa80562812cc3a6d8039b062469e1a30ae2bba8c3ebbbb87c013fb"
+    },
+    "data/help/common/wand.svg": {
+      "sizeBytes": 1032,
+      "sha256": "56a131ac6b0420114d0d82daf9492aa9fa33d723724787a0de81002dd90adbc9"
+    },
+    "data/help/common/pencil_select.svg": {
+      "sizeBytes": 2015,
+      "sha256": "28f293f06c07be8408be69d5c26e66a27fd287dab5ce1444e06f7076d8987395"
+    },
+    "data/help/common/select_rect.svg": {
+      "sizeBytes": 2720,
+      "sha256": "c78e1e1aed9ce5ce09b04c6e30d358c57d4b5260a5284b27179e1c900d09f7f0"
+    },
+    "data/help/common/rect.svg": {
+      "sizeBytes": 310,
+      "sha256": "517774f1cbf1f16c5fdf4ae27b2fd1ea7146f5e5c1c490785463aa91a6f52a80"
+    },
+    "data/help/common/pencil.svg": {
+      "sizeBytes": 341,
+      "sha256": "c37f7dc99c81c9900d97ed66ded713951751992031dbc850ce2019a786bf24f0"
+    },
+    "data/help/common/select_ellipse.svg": {
+      "sizeBytes": 14917,
+      "sha256": "36eb14f4f5e552bcddd9ab6ebfb3d143e8873834366cd73f100ac2ce199a2a72"
+    },
+    "data/help/license/magic_enum.txt": {
+      "sizeBytes": 1850,
+      "sha256": "d05a295019c36e80c82d3b656983e49b99ddde285c922f612dc50255a55a299e"
+    },
+    "data/help/license/qt.txt": {
+      "sizeBytes": 44738,
+      "sha256": "2004ee3ef8282a85f7dbd035dfacf63cf03d569537bc08655ffeb140ea3671c5"
+    },
+    "data/help/license/zstd.txt": {
+      "sizeBytes": 1530,
+      "sha256": "2c1a7fa704df8f3a606f6fc010b8b5aaebf403f3aeec339a12048f1ba7331a0b"
+    },
+    "data/help/license/catch.txt": {
+      "sizeBytes": 1337,
+      "sha256": "8d8291caf1cee26d23acf3eb67c9f9a2d58f1c681b16a4fbe8cbfb9e3c0b5a9b"
+    },
+    "data/help/license/openjpeg.txt": {
+      "sizeBytes": 2112,
+      "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+    },
+    "data/help/license/date.txt": {
+      "sizeBytes": 1637,
+      "sha256": "c90f6c00fb961170560299cbda28ca2d45804913aa8b2a9f36dbb8e0028d6930"
+    },
+    "data/help/license/spdlog.txt": {
+      "sizeBytes": 1322,
+      "sha256": "71cc245f2f8cf17920d815277cb52628b49866f3ba1ae1dcb865771c408caa51"
+    },
+    "data/help/license/libtiff.txt": {
+      "sizeBytes": 1564,
+      "sha256": "32f14fb0ca1b18c252af06e396c90ec767edc9b1a8f5acf5002e696668ce4746"
+    },
+    "data/help/license/libavif.txt": {
+      "sizeBytes": 20415,
+      "sha256": "165abf92cc04b39e80d29cadea7a6a7e8fddf59407d4ad2616507a7ebe8216f9"
+    },
+    "data/help/license/lmdb.txt": {
+      "sizeBytes": 2214,
+      "sha256": "310fe25c858a9515fc8c8d7d1f24a67c9496f84a91e0a0e41ea9975b1371e569"
+    },
+    "data/help/license/xz.txt": {
+      "sizeBytes": 2775,
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c"
+    },
+    "data/help/license/littlecms.txt": {
+      "sizeBytes": 1078,
+      "sha256": "53ad5ca11b8f4079e9c9bfa61575927a33f53526d6d414287149ec3ab61e8e4d"
+    },
+    "data/help/license/zlib.txt": {
+      "sizeBytes": 983,
+      "sha256": "6adfea67ac0bea415ce4f15c15cbdbc958303d0539bdeab466d2fa8fa78cada2"
+    },
+    "data/help/license/libiconv.txt": {
+      "sizeBytes": 25291,
+      "sha256": "56bdea73b6145ef6ac5259b3da390b981d840c24cb03b8e1cbc678de7ecfa18d"
+    },
+    "data/help/license/onyx_icons.txt": {
+      "sizeBytes": 10757,
+      "sha256": "164122b970a2c8ef95728a5eedbd05932625433dd865dac1011a87ba13c65571"
+    },
+    "data/help/license/resource_dasm.txt": {
+      "sizeBytes": 1084,
+      "sha256": "cef861733bd96f77cc3f7ad18c102ee2bb504d17c5e1d05a36b5979aaca21345"
+    },
+    "data/help/license/aom.txt": {
+      "sizeBytes": 1316,
+      "sha256": "4764a286d8b2faeaf42f4418e7d7a28d58fc8fd4d00a3d0a7f44b0a4099de7f2"
+    },
+    "data/help/license/libiconv_src.zip": {
+      "sizeBytes": 30147,
+      "sha256": "807d243a4bfccc29afd3a8a41cf3b3f14005034a24e3afb2e6464b4fd7651d1c"
+    },
+    "data/help/license/singleapplication.txt": {
+      "sizeBytes": 1178,
+      "sha256": "ae099ef3925cf6facb5807febbb30848f50b1cf6805d788cd901061bafeee518"
+    },
+    "data/help/license/libwebp.txt": {
+      "sizeBytes": 1496,
+      "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+    },
+    "data/help/license/libexif.txt": {
+      "sizeBytes": 26434,
+      "sha256": "36b6d3fa47916943fd5fec313c584784946047ec1337a78b440e5992cb595f89"
+    },
+    "data/help/license/libjpeg.txt": {
+      "sizeBytes": 2646,
+      "sha256": "d7c978e2be8c20ab66504f0f7dfd03d41c987fbfa970e44891104e04d5255eef"
+    },
+    "data/help/license/rapidjson.txt": {
+      "sizeBytes": 5152,
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32"
+    },
+    "data/help/license/lineicons.txt": {
+      "sizeBytes": 1066,
+      "sha256": "02a2ab1059aaa01a1ac23c43e5c06c1943b92fd523ffb4bddf021dadddcafda8"
+    },
+    "data/help/license/libexif_src.zip": {
+      "sizeBytes": 147143,
+      "sha256": "e10037c65d1336f2de6b6cf7662346a7c2734e8f94166032fc1cc4687c9ce095"
+    },
+    "data/help/license/libpng.txt": {
+      "sizeBytes": 5345,
+      "sha256": "bf5e22b9dce8464064ae17a48ea1133c3369ac9e1d80ef9e320e5219aa14ea9b"
+    },
+    "data/help/English (United States)/library.html": {
+      "sizeBytes": 3862,
+      "sha256": "9ea3a985cc09249d47aaee02ed2d174c71b389af54d5f108f51a821472cfe97a"
+    },
+    "data/help/English (United States)/select.html": {
+      "sizeBytes": 4767,
+      "sha256": "85977500ce9e893a8c85df9be99c9641f999c0046228a2cdde7e680d518fe371"
+    },
+    "data/help/English (United States)/basic.html": {
+      "sizeBytes": 3955,
+      "sha256": "551080ce1158e88f56ee5685bac772e8324ba7fbacd41596e0e1b90e10b73a1f"
+    },
+    "data/help/English (United States)/tip.html": {
+      "sizeBytes": 2926,
+      "sha256": "a1f34ae9f84882a1021c2a87f7a0407cbb8af6d191c3fe72c35a2fc18ed72146"
+    },
+    "data/help/English (United States)/win_cursor.html": {
+      "sizeBytes": 3732,
+      "sha256": "88224df577ebd6f6a94045856c0dc20500737e8f99c1079004abf585f3067ce2"
+    },
+    "data/help/English (United States)/win_icon.html": {
+      "sizeBytes": 4676,
+      "sha256": "eac49be873c1a36ec140aeb5d2251a9220475e59bb37fd5b151aa9d1852d4626"
+    },
+    "data/help/English (United States)/tool.html": {
+      "sizeBytes": 7771,
+      "sha256": "d555000df3b6bdf98df24b9be59f00a1126d05fe837c99630b0617e696c9e059"
+    },
+    "data/help/English (United States)/android.html": {
+      "sizeBytes": 2528,
+      "sha256": "87f9c563de1cda99bb5e4dbcdad40d5b63eea4214e59d27d543ddeb4e617ca2e"
+    },
+    "data/help/English (United States)/mac_icon.html": {
+      "sizeBytes": 5024,
+      "sha256": "254767d5264bc570a733a142286e573678bb48c0cd315d2c30f5710c49d2cde6"
+    },
+    "data/help/English (United States)/mac_library.html": {
+      "sizeBytes": 2967,
+      "sha256": "440719c01af6b7f53592723854c364fbbe5b8d278f7abd22a0ccab554332123c"
+    },
+    "data/help/English (United States)/animated_gif.html": {
+      "sizeBytes": 2430,
+      "sha256": "c365d2f5098512cfdbe9af7e3453238c0c571b44c24c5902385911cc566db52b"
+    },
+    "data/help/English (United States)/index.html": {
+      "sizeBytes": 2136,
+      "sha256": "17384a1f1d0201be0506365bfb5c30458f11a373183a4dcfef4b3674e163fc89"
+    },
+    "data/help/English (United States)/animated_webp.html": {
+      "sizeBytes": 3064,
+      "sha256": "90c181a52dca151d52d7174048a1cff284f815d140d0835203cc9190f59ca471"
+    },
+    "data/help/English (United States)/layer.html": {
+      "sizeBytes": 2848,
+      "sha256": "77dd19d2fd093b2a626899bc601799255c18168ad25b623f26cf329f9cce2975"
+    },
+    "data/help/English (United States)/images/create_mac_icon.png": {
+      "sizeBytes": 20059,
+      "sha256": "dbdc79f150436461be65acf65249fe0ac9b1370de71f4e98e0b4d6ccf520997f"
+    },
+    "data/help/English (United States)/images/res_list.png": {
+      "sizeBytes": 33053,
+      "sha256": "3070fce2405de0fdef058bdd15ca44fce60970ab296dd49b2090b6ad98f4fcbb"
+    },
+    "data/help/English (United States)/images/ani_duration.png": {
+      "sizeBytes": 5285,
+      "sha256": "b6dfd025ee4268cd2050b539d3a246ba479ac477ca049ed210a7cd74bbb82ab2"
+    },
+    "data/help/English (United States)/images/test_gfie_icon.png": {
+      "sizeBytes": 55988,
+      "sha256": "89d5ae5ccf55f3f885ed7afb8e1287e81ef975b768faf1acb47b37b428650d74"
+    },
+    "data/help/English (United States)/images/icns_palette_256.png": {
+      "sizeBytes": 11084,
+      "sha256": "8eacce0e0ab52244643db02221c45c267c91b2de40f8d77c701c7fcc0605fa08"
+    },
+    "data/help/English (United States)/images/floating_sel_layer.png": {
+      "sizeBytes": 14947,
+      "sha256": "5f601bbdfef200f03ff651017464e2f4299dd0057862284b5cd3ce2dad68759c"
+    },
+    "data/help/English (United States)/images/layers.png": {
+      "sizeBytes": 16427,
+      "sha256": "b8b843422943a13d27bb78d80d4c94901a11fb14654238b7496a7e21191bede5"
+    },
+    "data/help/English (United States)/images/pages.png": {
+      "sizeBytes": 32937,
+      "sha256": "d77b247f40af1e27c44cc2059a03a97c0328e1c1ac0d50d86884f0c8e7059012"
+    },
+    "data/help/English (United States)/images/disposal_method.png": {
+      "sizeBytes": 5232,
+      "sha256": "a9cde207de04dbd7a7528d8da9c709bb9785a03de6de781f0a63277b871b7000"
+    },
+    "data/help/English (United States)/images/more_layers.png": {
+      "sizeBytes": 21855,
+      "sha256": "19ddcf05d4949c028dbc4009894892004b71fc95fe679b31e8217b350722f4cb"
+    },
+    "data/help/English (United States)/images/inverted_in_color_picker_panel.png": {
+      "sizeBytes": 9143,
+      "sha256": "f3a1258a58ebbfdfacadb39d1917a12170affca0388ef0cc8edc0fb2cbbd26cf"
+    },
+    "data/help/English (United States)/images/select_no_handles.png": {
+      "sizeBytes": 42851,
+      "sha256": "9efc432bab9cf805ac39e2f658d700027439fef086fd827c921e322d6e750eaa"
+    },
+    "data/help/English (United States)/images/create_win_icon.png": {
+      "sizeBytes": 16724,
+      "sha256": "96233946639627e6f76c3a75b6d48b51c23b003d92366a26905789f920a29e0f"
+    },
+    "data/help/English (United States)/images/color_depth_in_page_prop.png": {
+      "sizeBytes": 14904,
+      "sha256": "abbff55a9a03d288c5d400d829cf5c5dfdcd8de76012ac361e1d2e8de8a456d0"
+    },
+    "data/help/English (United States)/images/transform_moved.png": {
+      "sizeBytes": 41444,
+      "sha256": "680ac5c82c45bd5b35335f752b78a7d960edcc5e198c3d87b08ee2e9b791115d"
+    },
+    "data/help/English (United States)/images/frames.png": {
+      "sizeBytes": 9288,
+      "sha256": "edaae413767c32bd7cb04109f4a4debcd97910b7dc4846b19052064d5d20a629"
+    },
+    "data/help/English (United States)/images/duration.png": {
+      "sizeBytes": 5190,
+      "sha256": "7b29979726ca1a9e70a65b371fa0b4c4b345e839ee8509f3a97be25019655f1d"
+    },
+    "data/help/English (United States)/images/transform.png": {
+      "sizeBytes": 42391,
+      "sha256": "e0c48c140d6de49b172f486f63abe9469b6ee68cce113112ecfc362e241e6c03"
+    },
+    "data/help/English (United States)/images/select_handles.png": {
+      "sizeBytes": 44518,
+      "sha256": "fb34f130508fc39e374001428cd38729de9d0a51809904bbeefd085cfea50b15"
+    },
+    "data/help/English (United States)/images/test_cursor.png": {
+      "sizeBytes": 15322,
+      "sha256": "6d5b4850c145d177215f9e08ad527f4e2b4aee42413cdb459a6cbf088c8d84d0"
+    },
+    "data/help/English (United States)/images/icns_palette_16.png": {
+      "sizeBytes": 10914,
+      "sha256": "f11d4d31b7a3f6f34986e513a1565d8f49d27db1d7f3c8caf280c1d20ceecf11"
+    },
+    "data/help/English (United States)/images/color_picker.png": {
+      "sizeBytes": 17976,
+      "sha256": "d840d5b594228006d07c60598d20f39a0e38045e9589020d93ca5a7e15ef1bcc"
+    },
+    "data/help/English (United States)/images/color_depth_in_page_list.png": {
+      "sizeBytes": 9494,
+      "sha256": "78b27dee5ea75c538d274828050c1b3d075e777d0ddebd9d4cb713c2ccdf6ad2"
+    },
+    "data/help/English (United States)/images/layer_prop.png": {
+      "sizeBytes": 6147,
+      "sha256": "1f661fd43edbac008bb24b86292025caa2ad2309b08887f7bd6d07d29a4e5edf"
+    }
+  },
+  "mainProgramPin": {
+    "sizeBytes": 78336,
+    "sha256": "6c0692c2b93134f2166112e1a9f1b78450405aa9750b0d5f8a3db53030651706"
+  },
+  "mainLibraryPin": {
+    "sizeBytes": 16148992,
+    "sha256": "2dff47f26fe4e9745697cf4553215a148090feaec1b352955930af596d1e1c75"
+  },
+  "mainExeIsDllEntryNotWholeEditorSize": true,
+  "portableFileCount186NotInstalledFileCount": true,
+  "onlyOneInstallation": true,
+  "guiAccepted": false,
+  "published": false
+}

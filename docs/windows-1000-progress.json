@@ -813,6 +813,27 @@
       "guiEvidence": "docs/evidence/2026-10-12-zim-gui-diagnostic.json",
       "evidence": "docs/windows-rolling-20261012-zim-pending.md",
       "blocker": "Default Chinese boxes/English clipping; font selector no MicrosoftYaHei. Pinned Fontconfig request still unreadable, no edit/save-copy/fresh output reopen. Native Quit0 is diagnosis only. First missing digest quarantined generation; verified normal guest reboot and formal recover completed, no Core/global/runtime bypass."
+    },
+    {
+      "id": "greenfish",
+      "name": "Greenfish Icon Editor Pro",
+      "version": "4.5",
+      "stage": "installed-startup-mdb-input-output-error",
+      "sourceUrl": "https://greenfishsoftware.org/dl.php?filename=gfie_setup_4.5.exe",
+      "sha256": "1cddb81ba7e9e50e3a6ae28e64bdc496fcd8df2fd4abd5ad4eccecf3b5b9987d",
+      "sizeBytes": 46008466,
+      "license": "custom-Greenfish-EULA-not-GPL",
+      "installationJobId": "job-1791808654012-1",
+      "installationJobStatus": "succeeded",
+      "selectedGeneration": "gen-job-1791808654012-1",
+      "installed": true,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "artifactEvidence": "docs/evidence/2026-10-12-greenfish-source-and-license.json",
+      "guiEvidence": "docs/evidence/2026-10-12-greenfish-gui-diagnostic.json",
+      "evidence": "docs/windows-rolling-20261012-greenfish-pending.md",
+      "blocker": "Native startup MDB Input/output error, normal OK closes process exit1; no image open/edit/save/reopen. Existing shaders LMDB files observed but runtime function/GPU/cause not determined. One original Inno install only; 4.5 custom EULA not old 3.6 GPL; main source not provided."
     }
   ],
   "excludedInternalFixtures": [
@@ -821,17 +842,17 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "57/1000 accepted;15 unresolved including Zim0.77.2. One installation, Chinese import diagnostic only, default and pinned Fontconfig request GUI still unreadable; no edit/save/reopen/market acceptance. First pin guard failure quarantined; normal guest reboot and applications.recover cleared only Zim operation, failure preboot raw retained. candidate-v63/root1/role72 unchanged;452 Core/134 full Store. Read strict SSH stdin rolling-current-state-zim-pending-20261012.py and final Zim freeze. No repeat installation or count for Quit0. Continue controlled diagnosis or another official pinned/licensed candidate; Ubuntu remains separate.",
+  "next": "57/1000 accepted;16 unresolved including Greenfish4.5 and Zim0.77.2. Greenfish one installation; startup MDB I/O error and native exit1, no edit/save/newprocess/market acceptance. Native GET timeout and 3 failed ranges preserved; serial missing tails completed package checks. Custom EULA not GPL or main source claim. candidate-v63/root1/role72 unchanged;454 Core/134 full Store. Read strict SSH stdin rolling-current-state-greenfish-pending-20261012.py and final Greenfish freeze; old Zim counts helper is history. No repeated install, cache deletion or global DLL masking. Continue controlled diagnosis or another official pinned/licensed candidate; Ubuntu separate.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 57,
-    "explicitlyBlockedCandidates": 15,
+    "explicitlyBlockedCandidates": 16,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 15
+    "pendingCandidates": 16
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v63/tuf",
@@ -846,13 +867,13 @@
     "activationEvidence": "docs/evidence/2026-10-12-gvim-activation.json"
   },
   "lastReviewEvidence": "docs/evidence/2026-10-12-gvim-final-verification.json",
-  "environmentRecoveryEvidence": "docs/evidence/2026-10-12-zim-runtime-recovery.json",
+  "environmentRecoveryEvidence": "docs/evidence/2026-10-12-greenfish-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-zim-pending.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-zim-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-greenfish-pending.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-greenfish-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

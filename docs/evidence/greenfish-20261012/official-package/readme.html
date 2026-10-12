@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<title>Greenfish Icon Editor Pro Readme</title>
+
+<style type="text/css">
+a:not(.donate-button):link, a:not(.donate-button):visited {
+	color: gray;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a:not(.donate-button):hover {
+	color: #24860f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+body {
+	font-family: Tahoma;
+	font-size: 10pt;
+}
+h1 {
+	color: #24860f;
+	font-size: 22pt;
+  font-weight: normal;
+}
+h2 {
+	color: #404040;
+	font-size: 18pt;
+  font-weight: normal;
+}
+
+.infoBox {
+	width: 800;
+	border-style: solid;
+	border-width: normal;
+	border-color: silver;
+	margin-left: 1.5em;
+	padding-left: 1em;
+	padding-top: 0px;
+	padding-right: 1em;
+	padding-bottom: 0px;
+}
+
+.donate-button {
+  background-color: #4CAF50;
+  color: white !important;
+  border: none;
+  padding: 6pt 12pt;
+  text-align: center;
+  text-decoration: none !important;
+  display: inline-block;
+  font-size: 16pt;
+  text-transform: lowercase;
+  box-shadow: 2pt 2pt 4pt rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border-radius: 2pt;
+}
+
+.donate-button:hover {
+  background-color: #45a049;
+}
+</style>
+
+</head><body bgcolor="#f8f8f8">
+
+<p>By using Greenfish Icon Editor Pro, you agree to the terms outlined in the <a href="license.txt">End-User License Agreement</a>.<br/>
+
+Some components of Greenfish Icon Editor Pro are subject to their own licenses. These include:
+
+<a href="data/help/license/aom.txt">aom</a>,
+<a href="data/help/license/catch.txt">catch</a>,
+<a href="data/help/license/date.txt">date</a>,
+<a href="data/help/license/libavif.txt">libavif</a>,
+<a href="data/help/license/libexif.txt">libexif</a> (<a href="data/help/license/libexif_src.zip">src</a>),
+<a href="data/help/license/libiconv.txt">libiconv</a> (<a href="data/help/license/libiconv_src.zip">src</a>),
+<a href="data/help/license/libjpeg.txt">libjpeg</a>,
+<a href="data/help/license/libpng.txt">libpng</a>,
+<a href="data/help/license/libtiff.txt">libtiff</a>,
+<a href="data/help/license/libwebp.txt">libwebp</a>,
+<a href="data/help/license/lineicons.txt">lineicons</a>,
+<a href="data/help/license/littlecms.txt">littlecms</a>,
+<a href="data/help/license/lmdb.txt">lmdb</a>,
+<a href="data/help/license/magic_enum.txt">magic_enum</a>,
+<a href="data/help/license/onyx_icons.txt">onyx icons</a>,
+<a href="data/help/license/openjpeg.txt">openjpeg</a>,
+<a href="data/help/license/qt.txt">Qt</a>,
+<a href="data/help/license/rapidjson.txt">rapidjson</a>,
+<a href="data/help/license/resource_dasm.txt">resource_dasm</a>,
+<a href="data/help/license/singleapplication.txt">singleapplication</a>,
+<a href="data/help/license/spdlog.txt">spdlog</a>,
+<a href="data/help/license/xz.txt">xz</a>,
+<a href="data/help/license/zlib.txt">zlib</a>,
+<a href="data/help/license/zstd.txt">zstd</a>.
+This software also incorporates work from the Independent JPEG Group (<a href="data/help/license/libjpeg.txt">libjpeg</a>).</p>
+
+<p><a href="https://greenfishsoftware.org/">Greenfish Homepage</a></p>
+
+<h1>Greenfish Icon Editor Pro</h1>
+
+<div class="infoBox">
+
+<div style="float:right;padding-left:1em;padding-top:1em;">
+<a href="https://greenfishsoftware.org/donate.php" class="donate-button">donate</a>
+</div>
+
+<p>Version: <b>4.5</b><br/>
+ A free tool for editing icons, cursors, and other pixel-based graphics.</p>
+
+<p><b>Copyright © 2007-2025 Balázs Szalkai. All Rights Reserved.</b></p>
+
+<p><a href="https://greenfishsoftware.org/bugreport.php">Send bug report</a> |
+<a href="https://greenfishsoftware.org/gfie.php">Check for updates</a> |
+<a href="https://greenfishsoftware.org/translate.php">Help translate</a></p>
+
+<p><b>Privacy notice</b>: This app does <b>not</b> collect any personally identifiable information.</p>
+</div>
+
+<h2>Version history (What's new?)</h2>
+
+<ul>
+
+<li>4.5<ul>
+  <li>New: Support for AVIF (AV1 Image File Format), including multi-frame and metadata handling</li>
+  <li>New: Detect external file changes and prompt to reload</li>
+  <li>Improved: Warn when multiple tabs are editing the same file, with conflict resolution options</li>
+  <li>Fixed: Installer now ensures proper vcredist installation, fixing launch issues on some systems</li>
+  <li>Fixed: Resolved sporadic app freezes and improved Windows 7 compatibility</li>
+</ul></li>
+
+<li>4.4<ul>
+  <li>New: Generate Xcode App Icon Set</li>
+  <li>New: Align selection to image corners, edges, or center in the Transform dialog</li>
+  <li>Improved: UI: Scalable icons</li>
+  <li>Improved: More noticeable notifications</li>
+  <li>Improved: DPI adjusts correctly when moving the app windows between screens</li>
+  <li>Improved: Non-default tool settings are marked with a red asterisk or bold text</li>
+  <li>Improved: Higher-quality icons when converting SVG to ICO/CUR/ICNS in batch mode</li>
+  <li>Improved: UI language is now initialized based on the setup language</li>
+  <li>Improved: UI layout is adapted accordingly when a right-to-left language is selected</li>
+  <li>Improved: Last used cell grid is remembered for recent files</li>
+</ul></li>
+
+<li>4.3<ul>
+  <li>New: Support for Windows ARM64</li>
+  <li>New: Access keys for labels and buttons</li>
+  <li>Improved: Compatibility with less common PCX variants</li>
+  <li>Fixed: Installer sometimes froze during "Compiling shaders..."</li>
+  <li>Fixed: PCX images were saved as 24-bit even if actual color depth was lower</li>
+</ul></li>
+
+<li>4.2<ul>
+  <li>New: Windows Explorer integration: metadata and thumbnail providers for all known image file formats</li>
+  <li>New: Customize keyboard shortcuts</li>
+  <li>New: Allow pasting a dropped image file for Explorer and Firefox clipboard interoperability</li>
+  <li>Improved: Show UI in appropriate colors if Windows is set to high-contrast mode</li>
+  <li>Improved: Different versions of GFIE can be installed and coexist on the same computer</li>
+  <li>Improved: Nicer thumbnails for small images</li>
+  <li>Improved: Faster random number generator</li>
+  <li>Fixed: Exif datetime was sometimes displayed incorrectly if time zone information was missing</li>
+  <li>Fixed: Program sometimes crashed when bucket tool was used on very large (>8000x8000) images</li>
+  <li>Fixed: Load/save failed for some NE/PE resources</li>
+</ul></li>
+
+<li>4.1<ul>
+  <li>New: X11 Mouse Cursor (XCursor) support</li>
+  <li>New: Macintosh resource fork (.rsrc) support</li>
+  <li>New: View | Always on top</li>
+  <li>Improved: Blurring an image with a selected region will not blend unselected pixels into the result. This can be configured in the Blur dialog.</li>
+  <li>Improved: WebP: Exif metadata and animation support</li>
+  <li>Improved: UI: Larger mouse cursors on HDPI displays</li>
+  <li>Improved: Support for more ICNS formats</li>
+  <li>Fixed: Fall back to OpenGL if failed to create Direct3D context</li>
+  <li>Fixed: Paint Contour filter was missing</li>
+</ul></li>
+
+<li>4.0<ul>
+	<li>New: GPU-based rendering, much faster for large images</li>
+	<li>New: Support for multiple sizes in ANI cursors by separating the concept of pages and frames. Now <em>documents</em> have <em>pages</em> and pages have <em>frames</em>. See the <a href="data/help/English (United States)/index.html">Help</a> for more.</li>
+	<li>New: Perspective transform of selection</li>
+	<li>New: Rich text formatting in text tool dialog</li>
+	<li>New: Exif metadata support</li>
+  <li>New: Anti-aliasing support for selection tools (ellipse, lasso)</li>
+  <li>New: Option for linear interpolation when upscaling the selection (on by default)</li>
+  <li>New: Adjustments can be made after using certain tools (e.g. crop, rect, ellipse, line, gradient)</li>
+	<li>New: Blend mode option for brush and gradient</li>
+	<li>New: Morphological filters (median, minimum, maximum, opening, closing)</li>
+	<li>New: Context help ("What's this?") in main window</li>
+	<li>New: GIF disposal method support</li>
+	<li>Improved: Much better file format compatibility, especially SVG and TIFF</li>
+	<li>Improved: Pop-up notifications instead of "OK" dialogs in most cases</li>
+	<li>Improved: High DPI-aware UI</li>
+	<li>Improved: Lots of bugfixes, thank you all for reporting them!</li>
+	<li>Improved: Language pack updates, many thanks to all contributors!</li>
+</ul></li>
+
+<li>3.6<ul>
+	<li>New: Linux support</li>
+	<li>New: Load/Save WebP</li>
+	<li>New: Load/Save Portable AnyMap</li>
+	<li>New: Load/Save TGA (Targa) files</li>
+	<li>New: Contrast adjustment in Exposure dialog</li>
+	<li>Improved: RGB Formulae (alpha adjustment, new operations)</li>
+</ul></li>
+
+<li>3.5<ul>
+	<li>Greatly improved the icon library editor</li>
+	<li>Fixed: GFIE did not start on XP because of GetTickCount64</li>
+	<li>Fixed some memory leaks</li>
+</ul></li>
+
+<li>3.4<ul>
+	<li>New: Create Android drawable, test 9-patch button</li>
+	<li>New: Import SVG</li>
+	<li>New: Load/Save TIFF (no layers yet)</li>
+	<li>New: Set DPI of document and pages</li>
+	<li>New: Test image as 3D texture</li>
+	<li>New: Pascal-based scripting</li>
+	<li>Faster, more responsive drawing</li>
+	<li>Faster GIF load/save</li>
+	<li>Fixed numerous bugs</li>
+</ul></li>
+
+<li>3.31<ul>
+	<li>Reintroduced Win32 support.</li>
+</ul></li>
+
+<li>3.3<ul>
+	<li>Open source: You can compile your own version for 32-bit, 64-bit, Linux, Mac, etc.</li>
+	<li>Official executables run only on Win64 from now on.</li>
+	<li>Added feature: Save a Copy</li>
+	<li>Updated translations</li>
+</ul></li>
+
+<li>3.25<ul>
+	<li>Updated links to the Greenfish Homepage</li>
+</ul></li>
+
+<li>3.2<ul>
+	<li>Fixed bug: some GIF files could not be opened</li>
+	<li>Fixed bug: removed loop count limitation (now maximum number of loops is 65535 instead of 100)</li>
+</ul></li>
+
+<li>3.1<ul>
+	<li>Fixed bug: batch conversion dialog misinterpreted file type</li>
+	<li>Fixed some minor bugs</li>
+</ul></li>
+
+<li>3.0<ul>
+	<li>Improved: GFIE will be cross-platform in the near future (will run on Windows, Linux and Mac OS X)</li>
+	<li>Rearranged user interface: tabs instead of MDI windows</li>
+	<li>Greatly improved: image processing speed</li>
+	<li>Added feature: loading/saving Apple ICNS files</li>
+	<li>Added feature: loading/saving JPEG 2000 files</li>
+	<li>Added feature: loading/saving 16-bit executables and icon libraries</li>
+	<li>Added feature: pressing Escape deselects all</li> 
+	<li>Added feature: rotating selection by an arbitrary angle</li>
+	<li>Added feature: textboxes which expect numbers can now accept and calculate expressions, like <em>12*(128+10)</em></li>
+	<li>Added feature: Wand/Bucket can be switched to non-contiguous mode</li>
+	<li>Added feature: patterns for drawing</li>
+	<li>Added feature: new blend modes: Hue, Hue Shift and Saturation</li>
+	<li>Added feature: new menu items "Import pages" and "Export all pages"</li>
+	<li>Fixed bug: XPM export sometimes wrote unescaped backslash (\) characters into output</li>
+</ul></li>
+
+<li>2.3<ul>
+	<li>Added feature: Paste as New Document (Shift+Ctrl+D)</li>
+	<li>Added feature: pressing Ctrl+V pastes as new document when no documents are open</li>
+	<li>Added feature: selection antialiasing is now optional</li>
+	<li>Improved: speed of loading huge image files (which need to be cropped)</li>
+	<li>Improved: text antialiasing</li>
+</ul></li>
+
+<li>2.2<ul>
+	<li>Added feature: holding down Space activates a hand tool and allows the user to pan the editing screen</li>
+	<li>Added feature: some filters (Blur, Shadow, Glow, etc.) can now be used in torus mode (useful when editing textures or tiles)</li>
+	<li>Added feature: 24x24 size under <em>Create icon from image...</em></li>
+	<li>Fixed bug: error messages were thrown when no desktop was active (e.g. when pressing Ctrl+Alt+Del under Vista)</li>
+	<li>Fixed bug: removing the check from the Preview checkbox did not revert viewed image to original state</li>
+</ul></li>
+
+<li>2.1<ul>
+	<li>Added feature: antialiasing images when resizing</li>
+	<li>Fixed bug: the file association setters were sometimes disabled though GFIE was run in admin mode</li>
+	<li>Improved: the Tool Behavior dialog now shows only the relevant controls</li>
+</ul></li>
+
+<li>2.0<ul>
+	<li>Added feature: Layer support with lots of blend modes</li>
+	<li>Added feature: native GFIE file format</li>
+	<li>Added feature: when resizing a page, user can choose between cropping and stretching</li>
+	<li>Added feature: cell grid (for editing toolbars)</li>
+	<li>Fixed bug: an error occurred when trying to modify file associations without running GFIE as administrator</li>
+	<li>Improved: painting with a transparent color now erases</li>
+</ul></li>
+
+<li>1.73<ul>
+	<li>Fixed bug: the OK and Cancel buttons of the Text input dialog sometimes got hidden</li>
+	<li>Fixed bug: window state (maximized/normal) was not stored in configuration file</li>
+	<li>Added feature: loading/saving 32-bit BMP files</li>
+	<li>Added feature: loading/saving PCX files</li>
+	<li>Added feature: specifying page resizing action (stretch/crop)</li>
+	<li>Added feature: filter "RGB formulae" (channel combination following the entered mathematical formulae)</li>
+</ul></li>
+
+<li>1.72<ul>
+	<li>Added feature: allowing zoom ratios smaller than 1</li>
+	<li>Added feature: hiding/showing list of pages</li>
+</ul></li>
+
+<li>1.71<ul>
+	<li>Fixed some minor bugs</li>
+	<li>Added feature: setting max. image width and height separately</li>
+</ul></li>
+
+<li>1.7<ul>
+	<li>Added feature: opening, editing, saving executable/resource files, using an integrated Resource Editor</li>
+	<li>Added Russian help (can be downloaded from the Greenfish Homepage)</li>
+	<li>Changed: "Transform" dialog box: you don't have to set Units separately for Width and Height</li>
+	<li>Added language packs: Greek, Ukrainian</li>
+</ul></li>
+
+<li>1.6<ul>
+	<li>Fixed bug: when copying to clipboard, inverted parts were replaced with the transparent color</li>
+	<li>Added feature: GIF support</li>
+	<li>Added feature: assembling ICL (icon library) and RES (Win32 resource) files</li>
+	<li>Added feature: editing Metadata (ANI summary info, JPEG quality, GIF loop count)</li>
+	<li>Added feature: the canvas can also be enlarged using the Crop tool</li>
+	<li>Added feature: exporting individual pages</li>
+	<li>Added language packs: Chinese (traditional), Dutch, Russian</li>
+</ul></li>
+
+<li>1.51<ul>
+	<li>Fixed bug: a few virus scanners reported .ANI files created by GFIE as "Suspicious", now GFIE creates .ANI files considered "Clean" by them</li>
+	<li>Fixed bug: opening odd (uneven)-sized icons with GFIE, the transparency became a mess</li>
+	<li>Added feature: menu item for cropping transparent parts</li>
+	<li>Added feature: using custom background images in the Test dialog box</li>
+	<li>Added feature: using the + - * / shortcuts for zooming</li>
+	<li>Added feature: the mouse wheel can be set for scrolling or zooming under Help|Preferences</li>
+	<li>Added feature: specifying a target folder for batch converted files</li>
+	<li>Added language packs: Norwegian, Portuguese (Brazilian), Serbian (Latin)</li>
+</ul></li>
+
+<li>1.5<ul>
+	<li>Moved Preferences... menu item to Help menu and added a separate Language... menu item</li>
+	<li>Fixed bug: viewport position was always reset to image center when setting the zoom in a document window</li>
+	<li>Fixed bug: some PNG files were not able to be opened</li>
+	<li>Fixed bug: opening a lot of (~30) files and using the hot spot tool greatly decreased performance</li>
+	<li>Fixed bug: selecting a format at the bottom of the list sometimes caused it to be moved</li>
+	<li>Fixed bug: pressing the right mouse button while drawing with the left caused strange results</li>
+	<li>Optimized: now creating better compressed PNG files</li>
+	<li>Added feature: working with images up to 1024x1024 (upper limit can be increased at your own risk)</li>
+	<li>Added feature: editing and testing animations, saving them in ANI (animated cursor) files</li>
+	<li>Added feature: customizing grid and center line colors</li>
+	<li>Added language packs: Korean, Polish, Spanish</li>
+</ul></li>
+
+<li>1.4<ul>
+	<li>Fixed bug: compatibility issues: created icons were recognized by Windows, but not always by other graphics programs</li>
+	<li>Fixed bug: when changing language pack at Preferences, dialog view mode changed to erroneous value -1</li>
+	<li>Fixed bug: associated files were sometimes opened twice</li>
+	<li>Fixed bug: Bevel filter generated too crisp results at big radiuses</li>
+	<li>Fixed bug: custom colors set in windows color dialogs were lost between sessions</li>
+	<li>Added feature: batch converting image files</li>
+	<li>Added feature: Tool Behavior/Color Picker windows can be switched to Compact mode</li>
+	<li>Added feature: showing center lines of images</li>
+	<li>Added feature: pasting 32-bit images from graphics apps which know the image/png clipboard format, e.g. from GIMP</li>
+	<li>Added language packs: French, Chinese (simplified)</li>
+	<li>Minor corrections to other language packs</li>
+</ul></li>
+
+<li>1.31<ul>
+	<li>Fixed bug: default file extension was not appended when using File|Save as</li>
+	<li>Added language pack: Italian</li>
+	<li>Minor corrections to other language packs</li>
+</ul></li>
+
+<li>1.3<ul>
+	<li>Added feature: multilanguage support</li>
+	<li>Added feature: using Arrow keys to move view/selection</li>
+	<li>Added feature: greater values than 100 are also accepted at Filters|Opacity</li>
+	<li>Added feature: workspace layout (i.e. window positions) is autosaved</li>
+	<li>"Preferences" dialog was rearranged, new option for setting view mode in Open/Save dialog boxes</li>
+</ul></li>
+
+
+<li>1.2<ul>
+	<li>Added feature: drawing gradients in color/transparency mode (for creating fadeouts)</li>
+	<li>Added feature: startup screen</li>
+	<li>Minor GUI modifications</li>
+</ul></li>
+
+<li>1.1<ul>
+	<li>Rearranged the "Tool Behavior" dialog box</li>
+	<li>Fixed bug: fake tool button at the bottom of the toolbar window</li>
+	<li>Added feature: file drag and drop support</li>
+	<li>Added feature: new brush shapes (horizontal, vertical, spray)</li>
+	<li>Added feature: now the strength of the Eraser tool can be adjusted from 1% to 100%</li>
+	<li>Added feature: using "Thumbnails" mode also when opening selections/exe files</li>
+</ul></li>
+
+<li>1.0<ul>
+	<li>Fixed bug: Glow filter sometimes generated the inverted color when choosing white glow color</li>
+	<li>Fixed listbox flicker, now double-buffered</li>
+	<li>Fixed bug: a &lt;/script&gt; tag was missing from contents.html, this made the Help unusable under IE.</li>
+	<li>Added feature: Bevel filter</li>
+	<li>Added feature: "Save all" menu item</li>
+	<li>Added feature: Open and Save dialog boxes now start in "Thumbnails" view mode</li>
+	<li>Added feature: tutorials</li>
+</ul></li>
+
+<li>0.3<ul>
+	<li>Fixed bug: saving extracted cursors in invalid format</li>
+	<li>Fixed bug: saving .cur files with idType = ID_ICO</li>
+	<li>Added feature: Glow, Sharpen, Unsharp mask filters</li>
+	<li>Added feature: new retouch modes: Sharpen, Sponge</li>
+	<li>Added feature: Preferences dialog box (UsePNG, hatch colors, Import folder, file associations)</li>
+	<li>Added feature: "Close all" menu item and list of open files in View menu</li>
+	<li>Added feature: opening files in parameters & using DDE</li>
+	<li>Optimized: speeded up loading XPM files</li>
+	<li>Optimized: saving in BMP format now produces files as small as possible</li>
+</ul></li>
+
+<li>0.2: first release</li>
+
+</ul>
+
+</body></html>

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "findings": [],
+  "applicationId": "greenfish",
+  "version": "4.5",
+  "reviewPhase": "FINAL before first real stage",
+  "baseCommit": "e0279c52adf061e13247495da6dcc7af197fd642",
+  "prospectiveManifestSha256": "84a7d4b9e178116ce6d8ad3ad3af8b3ffcbc3ed83005833201bb9113dfe7d4f8",
+  "prospectiveFileCount": 18,
+  "oldImmutableFilesVerified": 3270,
+  "originalNewFrozenFilesVerified": 14,
+  "oldAcceptedRecordsExact": 57,
+  "oldPendingRecordsExact": 15,
+  "newPendingCount": 16,
+  "acceptedCountRemains": 57,
+  "runtimeReceiptCounts": {
+    "coreJobs": 454,
+    "fullStoreRows": 134,
+    "metadataVersion": 72,
+    "rootVersion": 1
+  },
+  "reviewerHelperFailurePreserved": {
+    "v1Path": "greenfish-independent-audit-20261012.py",
+    "v1TypeAssumptionFailure": "precheck paths is integer, len() TypeError; no final report written or repository/index/guest changes",
+    "correctedV2": "actual integer count checked; full audit rerun"
+  },
+  "reviewedScope": [
+    "Host prospective files and actual pinned bytes; all old immutable and original new frozen bytes",
+    "Full existing accepted and pending ledger records retained; only Greenfish pending appended",
+    "Official downloaded installer/portable local hashes, ZIP CRC and same-version EULA/readme bytes",
+    "Host actual GUI failure/restart/current-state receipts and sequential assert source inspection",
+    "171 program pin map, selected five final configuration pins and input/output absence claims match host receipts",
+    "Independent raw/filter and relative no-index checks for all 18 prospective paths; exact attributes prefix and two rule scopes",
+    "Diagnostic JPEG visually inspected: splash 4.5 and MDB Input/output error; no login or credentials visible",
+    "Text/JSON secret patterns and public path scope inspected"
+  ],
+  "limits": [
+    "No independent guest SSH, GUI or installation replay performed",
+    "No private full checkpoint or raw registry independently read; host receipts and helper source only",
+    "No actual git add, index blob audit, cached diff or commit audit performed by reviewer",
+    "No upstream published digest, Authenticode/PGP, main source correspondence or full license closure established",
+    "Before-GUI cache absence and exact registry raw/diff unavailable; no runtime stdout/stderr trace or cause established",
+    "Historical Scribus lost private V1 download failure raw limitation remains",
+    "No image editing, save/reopen, market lifecycle, publication or acceptance approval"
+  ],
+  "readyForPendingEvidenceStage": true,
+  "guiAccepted": false,
+  "published": false,
+  "reviewedAtUtc": "2026-10-12T13:00:03.357531+00:00"
+}
