@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "reviewType": "independent FINAL-v2 finite evidence review after additive newline correction, before first actual stage",
+  "applicationId": "poedit",
+  "version": "3.7",
+  "completedAtUtc": "2026-10-12T04:44:41.118349+00:00",
+  "baseCommit": "3ece179c9ad18e60c5ba618b6ba3b4595825b36f",
+  "prospectiveManifestSha256": "32b06c6bb4a4293f8e170c4b38ed0eea2b3da948efc198457be58ea69cb86f7b",
+  "passed": true,
+  "findings": [],
+  "checks": [
+    {
+      "name": "preliminary-immutable-history",
+      "passed": true,
+      "description": "All 2700 old immutable and 24 original files independently hashed. HEAD/branch match fixed base and index is empty at this preliminary check."
+    },
+    {
+      "name": "preliminary-tuf-preview",
+      "passed": true,
+      "description": "Root1 and role68 RSA-PSS signatures/threshold/expiry and raw chain verified; 115 full local cached target streams and 64 public files hashed. Public targets are JSON only. 112 old noncatalogue targets and 54 old entries preserved; preview Poedit entry is not final acceptance."
+    },
+    {
+      "name": "preliminary-source-license",
+      "passed": true,
+      "description": "Complete fixed installer/source HTTPS local SHA, nine raw archive members, tag and fixed-commit installer Git blob verified. Read private installed EULA text without copying it: Windows binary has separate terms and Pro features, MIT applies to OSS. Fixed-version private local cache test does not establish public redistribution or paid-feature rights."
+    },
+    {
+      "name": "preliminary-original-po-mo-gui",
+      "passed": true,
+      "description": "Finite independent PO and littleendian MO plus stdlib gettext agree on two translations; only POT-Creation-Date omitted in MO. Four JPEG pins and visually inspected results, two actual fresh-job normal exit0+wineserver events checked. Default font failure and pending-market labels retained; no final market conclusion."
+    },
+    {
+      "name": "final-prospective-raw-byte-audit",
+      "passed": true,
+      "description": "All 110 final prospective pins independently hashed; only those paths changed/untracked, all 2700 old immutable and 24 original files rechecked. Actual Git index remains empty; no actual stage/index byte/commit/push conclusion."
+    },
+    {
+      "name": "independent-market-po-mo-native-definition",
+      "passed": true,
+      "description": "474B market input, 518B PO and 476B MO independently parsed with exact two Chinese/ASCII translations; only POT header omission. Two 503-file pin maps have exactly 502 equal files and fixed unequal 86855B unins000.dat, reason/uninstall untested. Native Inno single-slash arguments and fixed Core serde-order definition digest independently recomputed."
+    },
+    {
+      "name": "ten-actual-visual-screenshots",
+      "passed": true,
+      "description": "All ten actual JPEGs raw pinned and individually visually inspected. 01/05 remain diagnostic only; native isolated text-font preference provides readable editor text without font package/runtime repair. About identifies Free3.7(7667); clipped credit links do not establish full About/license display. Fresh process/rollback identity comes from separate receipts."
+    },
+    {
+      "name": "actual-lifecycle-and-third-gui-changes",
+      "passed": true,
+      "description": "Five distinct formal launch exit0+wineserver events, exact native Store update/rollback, CP-first418/125 to418/126 and normal two-service419/126 restart captured receipts agree. Third original two same-size registry raw changes (reported private287/53 lines) and three removed/three created Sentry paths retained, unknown cause. Current new/absent paths and other fixed data/program/config maps checked; no private CP or raw/diff replay."
+    },
+    {
+      "name": "ledger-private-license-and-failure-scope",
+      "passed": true,
+      "description": "Only53rd Poedit accepted, all52 prior entries/14 pending/history held. Catalogue/source/report distinguish MIT OSS from separate Windows EULA and private cached test; no Pro/public installer redistribution, latest/network/full-font/full-app/full-license/whole-FS claims. Failed all503 map/header/config and missing-trace/unused-draft histories retained additively; no private installer/EULA/CP bodies or private PEM in prospective files."
+    },
+    {
+      "name": "precise-eight-attribute-readonly-precheck-scope",
+      "passed": true,
+      "description": "Old22049 attribute prefix exactly preserved and suffix LF, eight literal rules map only to actual five upstream tails, BOM/ordinary CRLF installer script and two inherited signed CRLF targets. Private precheck receipt hashes agree; current attributes raw/filtered OID independently equal. Author107-file relative no-index/filter precheck is explicitly not actual index/diff/commit/push; reviewer did not repeat all107 filter checks."
+    },
+    {
+      "name": "additive-newline-scope-correction",
+      "passed": true,
+      "description": "Actual fixed installer script is UTF8 BOM +283 ordinary CRLF, zero CRCRLF. Original wrong report and first108 manifest/raw other107 pins preserved; only mutable ledger and two additive report/correction paths changed. Corrected report changes exactly two newline phrases plus explicit correction scope; source/GUI/output/signature/guest/attributes untouched, no repeat GUI/current/restart/stage."
+    },
+    {
+      "name": "fresh-strict-ssh-author-current-check",
+      "passed": true,
+      "description": "Fresh reviewer stdin execution through existing strict stored host keys saved complete419/126 verified terminal response, root1/role68, exact original selection and actual current/absent fixed pins. Author checker internally compares seven saved full CP categories and services; reviewer did not read/replay private complete CP. Query may write existing request scratch."
+    }
+  ],
+  "facts": {
+    "preliminaryRawAudit": {
+      "oldImmutableFiles": 2700,
+      "originalFiles": 24,
+      "baseCommit": "3ece179c9ad18e60c5ba618b6ba3b4595825b36f",
+      "actualIndexEmpty": true
+    },
+    "tuf": {
+      "rootVersion": 1,
+      "onlineRoleVersions": 68,
+      "completeTargetsHashed": 115,
+      "publicFiles": 64,
+      "publicInstallerBytesPresent": false,
+      "oldNonCatalogueDescriptorsPreserved": 112,
+      "catalogueEntries": 55,
+      "onlyNewEntry": "poedit",
+      "previewNotMarketAcceptance": true,
+      "copyqActiveAbsent": true
+    },
+    "sourceAndLicense": {
+      "installer": {
+        "sizeBytes": 17869552,
+        "sha256": "83d6ca0a5a0706309bdc1ed214e735fd4b44a8ac5b82817c4bc914fbd94f5904"
+      },
+      "sourceArchive": {
+        "sizeBytes": 3660177,
+        "sha256": "1bb2388f03618991effde4e8d0e8c35db363af6ca58f6d8ebab21daa76731d71"
+      },
+      "fixedOssCommit": "09c0f4cbf5dcb078755bf4fa30ee53fe9c5a6814",
+      "rawArchiveMembers": 9,
+      "additionalFixedRawInstallerScript": true,
+      "ossLicense": "MIT",
+      "windowsBinaryLicense": "Poedit Software License Agreement; Windows distribution includes Pro features",
+      "installedEulaPin": {
+        "sizeBytes": 5197,
+        "sha256": "d3f4c2a5483535ed52c8317cc1ee7f172e201644da9eec6f8cee712cd252044c"
+      },
+      "privateEulaReadForScopeOnly": true,
+      "eulaBodyIncludedInReview": false,
+      "localExistingAccountPrivateCachedTestOnly": true,
+      "publicRedistributionAndProAccepted": false,
+      "upstreamPublishedDigestsVerified": false,
+      "sourceBinaryCorrespondenceVerified": false,
+      "freshDownloadsPerformed": false
+    },
+    "originalFixture": {
+      "input": {
+        "sizeBytes": 476,
+        "sha256": "e9e57cd35c878cd0a45986a1b647a68df66ebb9be1f2ae9ee0a8d00f62624e49"
+      },
+      "po": {
+        "sizeBytes": 524,
+        "sha256": "42cf534fe11d97adcae9b6b2c20469f700d91a30fb8e133472d0f9d1169fcee7"
+      },
+      "mo": {
+        "sizeBytes": 482,
+        "sha256": "b330457f8235a35a8fb228c09140f45ed5c4b68efd0a8127702a17afc5bdb347"
+      },
+      "translations": {
+        "STATUS": "中文 AFTER ORIGINAL42",
+        "SECOND": "ORIGINAL SECOND42"
+      },
+      "poHeaders": {
+        "Project-Id-Version": "ForgeOS Original",
+        "POT-Creation-Date": "2026-10-12 00:00+0000",
+        "PO-Revision-Date": "2026-10-12 03:52+0000",
+        "Last-Translator": "ForgeOS <forgeos@example.invalid>",
+        "Language-Team": "Simplified Chinese",
+        "Language": "zh_CN",
+        "MIME-Version": "1.0",
+        "Content-Type": "text/plain; charset=UTF-8",
+        "Content-Transfer-Encoding": "8bit",
+        "Plural-Forms": "nplurals=1; plural=0;",
+        "X-Generator": "Poedit 3.7"
+      },
+      "moHeaders": {
+        "Project-Id-Version": "ForgeOS Original",
+        "PO-Revision-Date": "2026-10-12 03:52+0000",
+        "Last-Translator": "ForgeOS <forgeos@example.invalid>",
+        "Language-Team": "Simplified Chinese",
+        "Language": "zh_CN",
+        "MIME-Version": "1.0",
+        "Content-Type": "text/plain; charset=UTF-8",
+        "Content-Transfer-Encoding": "8bit",
+        "Plural-Forms": "nplurals=1; plural=0;",
+        "X-Generator": "Poedit 3.7"
+      },
+      "finitePoMoOnly": true
+    },
+    "originalGui": {
+      "generation": "gen-job-1791776663624-1",
+      "jobIds": [
+        "job-1791776764162-2",
+        "job-1791777581470-3"
+      ],
+      "normalExitCodes": [
+        0,
+        0
+      ],
+      "wineserverStopEvents": true,
+      "screenshots": {
+        "poedit-01-default-font.jpg": {
+          "sizeBytes": 58991,
+          "sha256": "83dbaeaabc0cd34fc4383c654eac6bdc593876cdee5285c3790144f46dbbc5ed",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "visualObservation": "Default Arial11 boxes/native Settings; initial failure/preference evidence, not pass."
+        },
+        "poedit-02-original-saved.jpg": {
+          "sizeBytes": 43735,
+          "sha256": "df4660795754167d2aa2211c3a6a5c8810f6959b2a675f49e66876cda9170278",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "visualObservation": "Saved two translations/Free3.7(7667) About/explicit-reopen rendered text as applicable; independently viewed."
+        },
+        "poedit-03-about.jpg": {
+          "sizeBytes": 49667,
+          "sha256": "679ea3b8408215ee06a0e60ec32848e311df4227b929969374ff2e760f0a0389",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "visualObservation": "Saved two translations/Free3.7(7667) About/explicit-reopen rendered text as applicable; independently viewed."
+        },
+        "poedit-04-original-reopen.jpg": {
+          "sizeBytes": 43906,
+          "sha256": "31bf38e6be59478428b1b969dff08d0e8047fcb0eec23961aa8c323bef432338",
+          "dimensions": [
+            1280,
+            720
+          ],
+          "visualObservation": "Saved two translations/Free3.7(7667) About/explicit-reopen rendered text as applicable; independently viewed."
+        }
+      },
+      "guiNotRepeated": true,
+      "noCompleteMarketConclusion": true,
+      "isolatedPreference": "Microsoft YaHei16; default Arial11 boxes; no font package/Core/runtime fix",
+      "normalExitMethod": "File/Exit; CtrlQ ineffective"
+    },
+    "finalRawAudit": {
+      "prospectiveFiles": 110,
+      "previousImmutableFiles": 2700,
+      "originalFrozenFiles": 24,
+      "actualIndexEmpty": true,
+      "originalPendingReceiptBytesPreserved": true
+    },
+    "marketFixture": {
+      "input": {
+        "sizeBytes": 474,
+        "sha256": "6d3039b5a756d0134bbba777a07a42ed85461180c452d014d714b8048c9d72b3"
+      },
+      "po": {
+        "sizeBytes": 518,
+        "sha256": "c830ebeac5cd9544656aee9e38ac3e9ba0826371ba56b7392bfaa18abd4267e6"
+      },
+      "mo": {
+        "sizeBytes": 476,
+        "sha256": "8a09107f7cddb18dcba0703af1826e99945191ca136ae3a1cc785895450ed26f"
+      },
+      "translations": {
+        "STATUS": "中文 AFTER MARKET42",
+        "SECOND": "MARKET SECOND42"
+      },
+      "poHeaders": {
+        "Project-Id-Version": "ForgeOS Market",
+        "POT-Creation-Date": "2026-10-12 00:00+0000",
+        "PO-Revision-Date": "2026-10-12 04:10+0000",
+        "Last-Translator": "ForgeOS <forgeos@example.invalid>",
+        "Language-Team": "Simplified Chinese",
+        "Language": "zh_CN",
+        "MIME-Version": "1.0",
+        "Content-Type": "text/plain; charset=UTF-8",
+        "Content-Transfer-Encoding": "8bit",
+        "Plural-Forms": "nplurals=1; plural=0;",
+        "X-Generator": "Poedit 3.7"
+      },
+      "moHeaders": {
+        "Project-Id-Version": "ForgeOS Market",
+        "PO-Revision-Date": "2026-10-12 04:10+0000",
+        "Last-Translator": "ForgeOS <forgeos@example.invalid>",
+        "Language-Team": "Simplified Chinese",
+        "Language": "zh_CN",
+        "MIME-Version": "1.0",
+        "Content-Type": "text/plain; charset=UTF-8",
+        "Content-Transfer-Encoding": "8bit",
+        "Plural-Forms": "nplurals=1; plural=0;",
+        "X-Generator": "Poedit 3.7"
+      },
+      "finitePoMoOnly": true
+    },
+    "programAndDefinition": {
+      "eachGenerationInstalledFileCount": 503,
+      "crossGenerationIdenticalPins": 502,
+      "onlyUnequalFile": "unins000.dat",
+      "unequalFilePins": {
+        "original": {
+          "sizeBytes": 86855,
+          "sha256": "4c9c80fea07b07a4b14839b35af5da194e85189b14c2a79852445ef29733336a"
+        },
+        "market": {
+          "sizeBytes": 86855,
+          "sha256": "8bdbf223ea3b7cb87bb5a74bdb55c4970618c98cb6fbee45e8b0d364505f9872"
+        }
+      },
+      "reasonAndUninstallFunctionVerified": false,
+      "mainProgramPin": {
+        "sizeBytes": 16929024,
+        "sha256": "686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d"
+      },
+      "nativeInnoDirUtf8Bytes": 14,
+      "nativeInnoDirUtf8Hex": "2f4449523d433a5c506f65646974",
+      "definitionDigest": "sha256:7a6e5cf8f975718f3c6b1650056ad613548a225ae58801f8b5f41a0abc95820a",
+      "definitionDigestAlgorithm": "SHA256 serde_json::to_vec ApplicationDefinition with Rust struct field order",
+      "fixedCoreCommit": "93650d1404df1c546eb689344e921c95bd041fad",
+      "fixedCoreSourcePins": {
+        "crates/compatforge-service/src/lifecycle.rs": {
+          "sizeBytes": 47804,
+          "sha256": "98483f3b5d2d607425919438d05b363c22b48bae8169efd1b445ce2ba464e236"
+        },
+        "crates/compatforge-service/src/model.rs": {
+          "sizeBytes": 32241,
+          "sha256": "d865a511450d3f5ff57c8bed2d167046a407db80e4685f4eab10b3c40f6d35b8"
+        }
+      },
+      "independentProgramBodiesCopiedToHost": false
+    },
+    "visualReview": {
+      "actualJpegs": 10,
+      "allIndividuallyVisuallyInspected": true,
+      "diagnosticOnly": [
+        "poedit-01-default-font.jpg",
+        "poedit-05-market-default-update.jpg"
+      ],
+      "observations": {
+        "01": "Native Settings default Arial11; Chinese editor boxes; not functional pass.",
+        "02": "original.po saved two exact translations, 2 of2.",
+        "03": "About Free3.7(7667), based on open source version, Upgrade to Pro; narrow credit links, complete About/license text not accepted.",
+        "04": "original.po explicit reopened with Chinese AFTER ORIGINAL42 and second entry.",
+        "05": "Software Update3.9.1 prompt with installed3.7; default Chinese editor boxes; diagnostic only, not latest/offline/unattended proof.",
+        "06": "Market Chinese BEFORE readable after isolated native font preference.",
+        "07": "market.po saved exact Chinese AFTER MARKET42 and MARKET SECOND42.",
+        "08": "About Free3.7(7667), open source basis and Pro banner; credits clipped, not full licensing display acceptance.",
+        "09": "market.po explicit reopened with both exact translations.",
+        "10": "original.po explicit rollback reopened with both original exact translations."
+      },
+      "newProcessAndRollbackIdentityCorroboratedBySeparateJobReceipts": true,
+      "guiRepeatedByReviewer": false,
+      "directChineseKeyboardInputAccepted": false,
+      "completeFontOrGenericRuntimeFixAccepted": false
+    },
+    "lifecycle": {
+      "formalJobIds": [
+        "job-1791776764162-2",
+        "job-1791777581470-3",
+        "job-1791778089934-5",
+        "job-1791778285473-6",
+        "job-1791778453255-7"
+      ],
+      "normalExit0AndWineserverStopEvents": 5,
+      "actualAuthorQuitMethod": "File/Exit; CtrlQ ineffective",
+      "storeUpdate": {
+        "action": "update",
+        "appId": "poedit",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "82ee8207-dc55-4699-a72c-17ab5e229342",
+        "state": "succeeded"
+      },
+      "storeRollback": {
+        "action": "rollback",
+        "appId": "poedit",
+        "backend": "compatforge",
+        "detail": null,
+        "id": "d2274d00-064d-465e-bc37-0834031736a7",
+        "state": "succeeded"
+      },
+      "checkpointBeforeRollbackCounts": [
+        418,
+        125
+      ],
+      "afterExactRollbackCounts": [
+        418,
+        126
+      ],
+      "normalRestartCounts": [
+        419,
+        126
+      ],
+      "exactOriginalGeneration": "gen-job-1791776663624-1",
+      "privateCompleteCheckpointSha256": "38eb5d39b4deca81c71d4f0f6be09b88cce2c567d3fd51bfb0b436e9dbe8030a",
+      "privateCPIndependentlyReplayed": false
+    },
+    "thirdGuiChanges": {
+      "sameSizeRegistryRawHashChanges": {
+        "system.reg": {
+          "before": {
+            "sizeBytes": 3902050,
+            "sha256": "3afb0373639cd12b7df41851dd7ae5b3efb50848e2e45850ea1f25a06faaf919"
+          },
+          "after": {
+            "sizeBytes": 3902050,
+            "sha256": "8ffed7e23b699dc88300f74c42f1aaadf081ba2010f35c8108f06e5701333069"
+          },
+          "reportedPrivateDiffLineCount": 287
+        },
+        "user.reg": {
+          "before": {
+            "sizeBytes": 105282,
+            "sha256": "d3da605baf57535d48b917e1aba16fa4718f5fcb67f5c81cb6a6c0953815d13d"
+          },
+          "after": {
+            "sizeBytes": 105282,
+            "sha256": "1c866ba0ca8ac203d16b654a707a64f4e8523f262d314a7d1ede4560f07fbe26"
+          },
+          "reportedPrivateDiffLineCount": 53
+        }
+      },
+      "createdSentryPathPins": {
+        "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/0ad08871-1427-4552-58c7-69a205dffb7c.run/__sentry-breadcrumb1": {
+          "sizeBytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/0ad08871-1427-4552-58c7-69a205dffb7c.run/__sentry-breadcrumb2": {
+          "sizeBytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/0ad08871-1427-4552-58c7-69a205dffb7c.run/__sentry-event": {
+          "sizeBytes": 501,
+          "sha256": "8dc48d6f22226d7845c9ae1c9e9059d78f26cf44b70944a8569868acd373b563"
+        }
+      },
+      "removedSentryPathOldPins": {
+        "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/dce30ac6-fbf1-4d68-7b0b-b00c1fa2fda8.run/__sentry-breadcrumb1": {
+          "sizeBytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/dce30ac6-fbf1-4d68-7b0b-b00c1fa2fda8.run/__sentry-event": {
+          "sizeBytes": 501,
+          "sha256": "dc84ae1ccc4ef6f3f15b89b32bfbf8f53ff6f8e879f1fd63a5f56aeaadd176f8"
+        },
+        "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/dce30ac6-fbf1-4d68-7b0b-b00c1fa2fda8.run/__sentry-breadcrumb2": {
+          "sizeBytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "createdAndRemovedPathsAssertedByAuthorChecker": true,
+      "privateRawOrDiffBodiesIndependentlyRead": false,
+      "causeKeyValueEquivalenceTelemetryAbsenceOrCrashExplanationEstablished": false,
+      "otherFixedProgramInputsPoMoTranslationMemoryAndMarketPinsPreserved": true,
+      "actualNewAndAbsentPathPinsStableAcrossRestart": true
+    },
+    "ledgerAndClaims": {
+      "acceptedDistinctWindowsApps": 53,
+      "old52AcceptanceEntriesHeld": true,
+      "pending14ExactlyHeld": true,
+      "syntheticPoMoCountedAsApps": false,
+      "publicTargetsJsonOnly": true,
+      "binaryProOrPublicRedistributionAccepted": false,
+      "backgroundNetworkAbsenceAccepted": false,
+      "oldPendingFreezeLabelsPreserved": true,
+      "allHistoricalDependencyGatesClaimedValid": false
+    },
+    "readOnlyPreStageScope": {
+      "actualIndexEmpty": true,
+      "realStageIndexByteDiffCommitPushPerformed": false,
+      "oldAttributesPrefixBytes": 22049,
+      "oldAttributesPrefixPin": {
+        "sizeBytes": 22049,
+        "sha256": "52773276cbe1c72dab7d472de942ad9b5197c27a2235186ce45604cc9c9d6199"
+      },
+      "newLiteralRules": [
+        "docs/evidence/poedit-20261012/download-page.html whitespace=-blank-at-eol",
+        "docs/evidence/poedit-20261012/source/src/catalog.h whitespace=-blank-at-eol",
+        "docs/evidence/poedit-20261012/source/src/catalog_po.cpp whitespace=-blank-at-eol",
+        "docs/evidence/poedit-20261012/source/src/catalog_po.h whitespace=-blank-at-eol",
+        "docs/evidence/poedit-20261012/source/src/edframe.cpp whitespace=-blank-at-eol",
+        "docs/evidence/poedit-20261012/source/win32/poedit.iss -text whitespace=-blank-at-eol",
+        "catalogue/candidate-v59/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json whitespace=cr-at-eol",
+        "catalogue/candidate-v59/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json whitespace=cr-at-eol"
+      ],
+      "suffixLfOnly": true,
+      "attributesRawAndFilteredGitObjectId": "169ba218b7d0287773dd8b78467c87c7919de4dc",
+      "authorReadOnlyPrecheck107PathsRawFilteredAndRelativeNoIndexPassed": true,
+      "reviewerIndependentlyExecutedAll107RawFilterChecks": false,
+      "absoluteNoIndexWarningsNotIndexTranscodingEvidence": true,
+      "upstreamIssUtf8BomAnd283OrdinaryCrLfKept": true,
+      "sourcePoMoSignedGuiBytesNotRewritten": true
+    },
+    "resolvedNewlineFinding": {
+      "status": "resolved additively before FINAL/stage",
+      "actualSourcePin": {
+        "sizeBytes": 16029,
+        "sha256": "f7fe9822e2eefc666ee8b74ba210c35f298e8b6d5d96fee84d28ac17ee8b229a"
+      },
+      "utf8Bom": true,
+      "ordinaryCrLfCount": 283,
+      "crCrLfCount": 0,
+      "actualFirst12Hex": "efbbbf3b0d0a3b2020205468",
+      "originalErroneousReportPin": {
+        "sizeBytes": 7982,
+        "sha256": "723e1f686b74c5d367e65588cfc32a5cb5ed57fb1a4488f38421a9e4fdc562af"
+      },
+      "correctedReportPin": {
+        "sizeBytes": 8628,
+        "sha256": "b18a93bdd6b59d627165c9e63817d3f9e21a5bf2a749459cffa1465f38fbb32b"
+      },
+      "correctionReceiptPin": {
+        "sizeBytes": 1634,
+        "sha256": "59159187968a69a69150a15a1e684814ae7c7d1d9b6b76988c6f516dd738acd2"
+      },
+      "firstProspectiveManifestSha256": "518491db9174b3a651b9979ac63756530325ed1328e7ea98d9d1587448d47789",
+      "firstOther107ProspectivePinsPreserved": true,
+      "onlyMutableLedgerPlusTwoNewCorrectionPathsChanged": true,
+      "sourceGuiOutputSignedGuestAttributesUntouched": true,
+      "reviewerFinalV2IncorrectCrCrLfExpectationStoppedBeforeFinal": true,
+      "noAdditionalGuestCheckOrRestartRequired": true
+    },
+    "freshCurrentCheck": {
+      "strictSshStdinAuthorCheckerReexecuted": true,
+      "hostHelperNotAssumedGuestFile": true,
+      "responseFile": "L:\\project\\FOS\\.transfer\\poedit-review-current-response-20261012.json",
+      "responsePin": {
+        "sizeBytes": 844,
+        "sha256": "ad53d5bf3cd6fd40a56dcab694501c46c68efdf2ce062dd19180fea06198b2cd"
+      },
+      "coreJobs": 419,
+      "completeStoreRows": 126,
+      "selectedGeneration": "gen-job-1791776663624-1",
+      "root": 1,
+      "onlineRoles": 68,
+      "coreQueryMayWriteExistingRequestScratch": true,
+      "privateCompleteCPReplayedIndependently": false,
+      "authorCheckerExplicitlyVerifiesCreatedAndAbsentSentryPins": true
+    },
+    "assertionsExecuted": 8522
+  },
+  "scope": {
+    "independentActionsActuallyRun": [
+      "Raw hashed all110 prospective/2700old immutable/24original, complete115local cached targets and64publicfiles; independently verified authorized RSA-PSS root1/role68 signature thresholds/expiry/raw digest chain.",
+      "Read fixed official HTTPS cached downloads/page/tag/tree and nine raw source members plus fixed raw installer Git blob; read explicitly allowed private installed EULA for scope only, no EULA body copied.",
+      "Independently parsed two finite UTF8/LF PO and littleendian revision0 three-item MO, checked bounds/termination/sorted unique keys/header-only POT omission and stdlib gettext exact translations.",
+      "Individually visually inspected all10actualJPEG screenshots; compared five launch events and captured Store/CP gate/rollback/restart receipt maps and exact identifiers.",
+      "Recomputed frozen definition SHA using actual fixed Core serde struct declaration order.",
+      "Read only Git branch/HEAD/empty index/path lists, exact eight attribute rules and independently computed currentattrs raw/filtered OID.",
+      "Reexecuted current author checker through strict SSH stdin and saved entire compact response including419/126 and current fixed/absent paths."
+    ],
+    "notPerformed": [
+      "No reviewer GUI/install/update/rollback/service restart/data/config/trust/checkpoint/index mutations, no git add/renormalize/commit/push.",
+      "No private complete CP or credential body read/copied; no independent completeCP replay. Private registry/Sentry raw/diff bodies and uninstall logs were not re-read/recomputed by reviewer; their reported counts/maps checked.",
+      "No fresh official download/signature/installer reextraction or source-binary/build correspondence replay.",
+      "No all107-path raw/filter/no-index replay by reviewer, and actual stage/index-byte/diff/commit/push steps remain pending.",
+      "No complete gettext/PO/MO/fonts/fullAbout/bundled license/application/filesystem/networkabsence/Pro/publicbinaryredistribution/newmachine/migration/crossversion/unattended or directChineseinput/GUIStorebutton acceptance."
+    ],
+    "queryMayWriteExistingRequestScratch": true,
+    "privateCheckpointAuthorHelperScope": "Author checker freshly compares seven jobs/completeSQLite rows/market/trustDocuments/configs/generations/serviceGuards categories and explicit current/absent pins against saved postrestart CP. This is not privateCP independent replay.",
+    "binaryLicenseScope": "MIT covers fixed OSS source; official Windows distribution contains Pro and separate Software License Agreement. Review only confirms observed private same-account cached local tests and public JSON-only target tree; does not establish Pro activation or public fixed binary redistribution rights.",
+    "failureHistory": "Original application failures and unused drafts/missing old observation trace preserved; never assert all historical dependency gates valid. Reviewer preliminary helperv1 failed only wrong EULA exact substring, v2 failed assumed1280x800 dimensions, v3 used actual text/1280x720. Early bounded discovery output truncated and one optional oldattrs metadata lookup expected dict rather than actual hash string; no dependent project/index/guest action. Reviewer final helper v1 incorrectly required publication compact save summaries equal full GUI maps; summaries omit exactly program/registry/config maps, and original runtime save uses observed post-third-GUI registry/config pins. New v2 checks exact compact projection, all unchanged save fields and exact changed config/registry paths. Failed helper retained, no project/index/guest changes. Final helperv2 stopped on original inaccurate report CRCRLF expectation; actual source BOM+283CRLF/zeroCRCRLF measured independently. Root preserved wrong report and added separate correction/new report and prospectivev2; final helperv3 checks actual raw counts and full additive pin chain. Reviewer final helperv3 stripped CR before requiring literal space/tab tails on the .iss path; stopped before result. Actual saved relative no-index diagnostics report CRLF itself as Git trailing whitespace, so v4 checks that exact diagnostic/raw-filter Git blob and final v4 empty diagnostics instead. Optional bounded UTF8 tail bytes discovery split a multibyte character; complete source/report strict UTF8 decode succeeds, no dependent mutations. Complete programmatic file parsing used for verification.",
+    "screenshotsAndActions": "Screenshots show rendered finite text/FreeAbout and font/update diagnostics. Process identities, FileExit normal action and service lifecycle rely on captured action/job receipts, not repeated reviewer GUI.",
+    "configurationCoverage": "Limited explicit program503maps/fixedPO-MO/TranslationMemory/Sentry/registry pins and absentoldSentry paths; no whole old application filesystem or allpreferences traversal."
+  }
+}

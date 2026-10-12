@@ -539,6 +539,15 @@
       "signedCatalogue": "catalogue/candidate-v58/tuf",
       "publication": "docs/evidence/2026-10-12-cppcheck-publication.json",
       "limitation": "Only tiny ASCII C++ nullptr GUI analysis, XML save and fresh-process Open XML. Other checks/projects/includes/standards/addons, Chinese paths/input, compile/runtime, network/unattended and complete bundled license closure unverified."
+    },
+    {
+      "id": "poedit",
+      "version": "3.7",
+      "sha256": "83d6ca0a5a0706309bdc1ed214e735fd4b44a8ac5b82817c4bc914fbd94f5904",
+      "evidence": "docs/evidence/windows-poedit-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v59/tuf",
+      "publication": "docs/evidence/2026-10-12-poedit-publication.json",
+      "limitation": "Only two-entry Chinese-name PO edit/native Save As/automatic MO and explicit new-process PO reopen, private same-account cached lifecycle. Windows separate EULA, MIT OSS source only; public binary redistribution/Pro, broad gettext, networking/unattended and full bundled closure unverified."
     }
   ],
   "queue": [
@@ -755,12 +764,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "52/1000 finite Windows acceptance;14 unresolved unchanged. Cppcheck2.18.0 only tiny ASCII C++ nullptr GUI Analyze Files/XML save/explicit new-process Open XML and finite local market lifecycle. candidate-v58/root1/role67;412 fullCore/124 fullStore. Strict SSH stdin rolling-current-state-cppcheck-20261012.py. Preserve frozen/trust/history/private checkpoints and actual third-GUI registry changes. Independent review/index/commit/push pending at publication freeze.",
+  "next": "53/1000 finite Windows acceptance;14 unresolved unchanged. Poedit3.7 two-entry Chinese-name PO edit/native SaveAs/automatic MO/explicit fresh Open PO and private same-account cached local lifecycle; separate Windows EULA, MIT OSS source only, public redistribution/Pro unverified. candidate-v59/root1/role68;419 fullCore/126 fullStore. Strict SSH stdin rolling-current-state-poedit-20261012.py. Preserve old frozen/trust/history and actual third-GUI registry/Sentry run-file replacement. Independent review/index/commit/push pending at publication freeze. Original pre-stage report misstated CRCRLF; corrected report and newline-scope-correction record actual BOM/283 CRLF/0 CRCRLF. No source/acceptance/signature/guest/index bytes changed; new FINAL review required.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 52,
+    "acceptedLocalMarket": 53,
     "explicitlyBlockedCandidates": 14,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -768,25 +777,25 @@
     "pendingCandidates": 14
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v58/tuf",
-    "metadataVersion": 67,
-    "catalogueEntries": 54,
-    "acceptedDistinctWindowsApps": 52,
+    "signedCatalogue": "catalogue/candidate-v59/tuf",
+    "metadataVersion": 68,
+    "catalogueEntries": 55,
+    "acceptedDistinctWindowsApps": 53,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-cppcheck-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-poedit-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-rapidcrc-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-cppcheck-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-cppcheck-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-poedit-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-cppcheck-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-poedit-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-copyq-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-cppcheck.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-cppcheck-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-poedit-corrected.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-poedit-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

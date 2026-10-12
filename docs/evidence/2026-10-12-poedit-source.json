@@ -1,0 +1,129 @@
+{
+  "applicationId": "poedit",
+  "version": "3.7",
+  "officialHomepage": "https://poedit.com/",
+  "fixedSource": {
+    "version": "3.7",
+    "officialDownloadPage": {
+      "file": "download-page.html",
+      "requestedUrl": "https://poedit.com/download/",
+      "finalUrlWithoutQuery": "https://poedit.com/download/",
+      "status": 200,
+      "sizeBytes": 38061,
+      "sha256": "78a55e7d127e3e8afa76694a28bf2259966cb3e994e80659c8286dcd125a5b05"
+    },
+    "installer": {
+      "file": "Poedit-3.7-setup.exe",
+      "requestedUrl": "https://download.poedit.com/Poedit-3.7-setup.exe",
+      "finalUrlWithoutQuery": "https://download.poedit.com/Poedit-3.7-setup.exe",
+      "status": 200,
+      "sizeBytes": 17869552,
+      "sha256": "83d6ca0a5a0706309bdc1ed214e735fd4b44a8ac5b82817c4bc914fbd94f5904"
+    },
+    "source": {
+      "file": "poedit-3.7.tar.gz",
+      "requestedUrl": "https://github.com/vslavik/poedit/releases/download/v3.7-oss/poedit-3.7.tar.gz",
+      "finalUrlWithoutQuery": "https://release-assets.githubusercontent.com/github-production-release-asset/477156/babebe67-c0aa-4aec-b253-d2a2ab9fcc45",
+      "status": 200,
+      "sizeBytes": 3660177,
+      "sha256": "1bb2388f03618991effde4e8d0e8c35db363af6ca58f6d8ebab21daa76731d71"
+    },
+    "fixedOssTagCommit": "09c0f4cbf5dcb078755bf4fa30ee53fe9c5a6814",
+    "tagLsRemoteSha256": "9b1729b0c0eadd962ca9d9d89a243268507f975b662819891c2edecec4ec86d5",
+    "sourceMembers": {
+      "COPYING": {
+        "archiveMember": "poedit-3.7/COPYING",
+        "sizeBytes": 1062,
+        "sha256": "2ff507d5c0e1f70f73f5a802a951b7c185e88c1ae1abe4ae4fef3d008f8a003a"
+      },
+      "README.md": {
+        "archiveMember": "poedit-3.7/README.md",
+        "sizeBytes": 3919,
+        "sha256": "6b93267b0ba1ba51dcbb8089846adc1380fe03ebf167b6cf381ce6b0add685d1"
+      },
+      "src/catalog.cpp": {
+        "archiveMember": "poedit-3.7/src/catalog.cpp",
+        "sizeBytes": 32603,
+        "sha256": "a65a341075fa896be7e466277ebadaed5905aee001c44fd261a8368b25d864fc"
+      },
+      "src/catalog.h": {
+        "archiveMember": "poedit-3.7/src/catalog.h",
+        "sizeBytes": 23061,
+        "sha256": "a6aa5dda6fe345ddc87c18249146705c53e8e612d2f0171769b5e2fa1f2f15eb"
+      },
+      "src/catalog_po.cpp": {
+        "archiveMember": "poedit-3.7/src/catalog_po.cpp",
+        "sizeBytes": 57158,
+        "sha256": "eaeb44a6a4f1a8dc966ed2e4fd6121fd909c51aeb235242906af5c90e4444366"
+      },
+      "src/catalog_po.h": {
+        "archiveMember": "poedit-3.7/src/catalog_po.h",
+        "sizeBytes": 11963,
+        "sha256": "a6ac8b403ea1317811b5bde263dc18f0571910b0871c901f51c40cb4f52dff37"
+      },
+      "src/edapp.cpp": {
+        "archiveMember": "poedit-3.7/src/edapp.cpp",
+        "sizeBytes": 38622,
+        "sha256": "05d0e03e3759ff74256d8df87ffc33223c0612b430e7f1748c0c09dd0035ba55"
+      },
+      "src/edframe.cpp": {
+        "archiveMember": "poedit-3.7/src/edframe.cpp",
+        "sizeBytes": 106039,
+        "sha256": "79327f336850e2f1b664e650e955801d61e06124c861d9f179432fdd5787769a"
+      },
+      "src/edframe.h": {
+        "archiveMember": "poedit-3.7/src/edframe.h",
+        "sizeBytes": 14429,
+        "sha256": "b6a6a63328bcbbb3ed927f74fe4f5853616f36b29f25bc2b0ad71d64e184d554"
+      }
+    },
+    "upstreamInstallerDigestVerified": false,
+    "upstreamSourceDigestVerified": false,
+    "sourceMainLicense": "MIT",
+    "officialWindowsBinaryIncludesProFeatures": true,
+    "binaryLicenseNotAssumedMIT": true,
+    "sourceBinaryCorrespondenceVerified": false,
+    "completeBundleLicenseClosureVerified": false,
+    "readAt": "2026-10-12T03:38:31.247594+00:00"
+  },
+  "fixedInstallerScript": {
+    "fixedCommit": "09c0f4cbf5dcb078755bf4fa30ee53fe9c5a6814",
+    "requestedUrl": "https://raw.githubusercontent.com/vslavik/poedit/09c0f4cbf5dcb078755bf4fa30ee53fe9c5a6814/win32/poedit.iss",
+    "finalUrl": "https://raw.githubusercontent.com/vslavik/poedit/09c0f4cbf5dcb078755bf4fa30ee53fe9c5a6814/win32/poedit.iss",
+    "status": 200,
+    "file": "win32/poedit.iss",
+    "sizeBytes": 16029,
+    "sha256": "f7fe9822e2eefc666ee8b74ba210c35f298e8b6d5d96fee84d28ac17ee8b229a",
+    "source": "fixed-commit raw member absent from release tar",
+    "sourceBinaryCorrespondenceVerified": false
+  },
+  "mainOssSourceLicense": "MIT",
+  "windowsBinaryLicense": "Poedit Software License Agreement; MIT applies to the separate OSS source, not the Windows distribution including Pro features",
+  "installedLicenseNamedFiles": [
+    "Resources/LicenseAgreement.rtf"
+  ],
+  "installedMainOssCopyingComparisonVerified": false,
+  "completeBundledLicenseClosureVerified": false,
+  "upstreamPublishedInstallerDigestVerified": false,
+  "upstreamPublishedSourceDigestVerified": false,
+  "sourceBinaryCorrespondenceVerified": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "latestVersionClaimed": false,
+  "installerNativeInnoArguments": [
+    "/VERYSILENT",
+    "/SUPPRESSMSGBOXES",
+    "/NORESTART",
+    "/SP-",
+    "/DIR=C:\\Poedit",
+    "/NOICONS",
+    "/TASKS="
+  ],
+  "dirArgumentUtf8Bytes": 14,
+  "dirArgumentUtf8Hex": "2f4449523d433a5c506f65646974",
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false,
+  "signedDownloadRedirectQueryIncluded": false,
+  "localTestUsesExistingAccountPrivateCachedInstaller": true,
+  "publicBinaryRedistributionOrProActivationAccepted": false,
+  "binaryLicenseRestrictionObserved": "Installer redistribution/public-server availability restricted to unmodified then-current latest version; private installed license retained and its text read. This fixed 3.7 test does not grant public binary redistribution rights."
+}

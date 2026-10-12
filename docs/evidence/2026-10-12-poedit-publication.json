@@ -1,0 +1,1126 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "dateConvention": "Asia/Shanghai report date; actual guest UTC retained",
+  "applicationId": "poedit",
+  "version": "3.7",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "privateExistingAccountLocalCacheUseOnly": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 53,
+  "unresolvedCandidates": 14,
+  "signedCatalogue": "catalogue/candidate-v59/tuf",
+  "metadataVersion": 68,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 55,
+  "excludedFixtures": 2,
+  "signedActualTargets": 115,
+  "publicCatalogueFiles": 64,
+  "sourceEvidence": {
+    "reference": "2026-10-12-poedit-source.json",
+    "sha256": "c53f42f946933fab40976acf096a0d6a07fe392189b808e918377c78ce9c32b6"
+  },
+  "originalAcceptance": {
+    "reference": "windows-poedit-20261012.acceptance.json",
+    "sha256": "116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a"
+  },
+  "originalGeneration": "gen-job-1791776663624-1",
+  "marketGeneration": "gen-job-1791777946602-4",
+  "definitionDigest": "sha256:7a6e5cf8f975718f3c6b1650056ad613548a225ae58801f8b5f41a0abc95820a",
+  "originalSave": {
+    "generationId": "gen-job-1791776663624-1",
+    "fixedDataPins": {
+      "drive_c/PoeditTests/原始翻译.po": {
+        "sizeBytes": 476,
+        "sha256": "e9e57cd35c878cd0a45986a1b647a68df66ebb9be1f2ae9ee0a8d00f62624e49"
+      },
+      "drive_c/PoeditTests/original.po": {
+        "sizeBytes": 524,
+        "sha256": "42cf534fe11d97adcae9b6b2c20469f700d91a30fb8e133472d0f9d1169fcee7"
+      },
+      "drive_c/PoeditTests/original.mo": {
+        "sizeBytes": 482,
+        "sha256": "b330457f8235a35a8fb228c09140f45ed5c4b68efd0a8127702a17afc5bdb347"
+      }
+    },
+    "output": {
+      "sizeBytes": 524,
+      "sha256": "42cf534fe11d97adcae9b6b2c20469f700d91a30fb8e133472d0f9d1169fcee7"
+    },
+    "compiledMo": {
+      "sizeBytes": 482,
+      "sha256": "b330457f8235a35a8fb228c09140f45ed5c4b68efd0a8127702a17afc5bdb347"
+    },
+    "parsedTranslations": {
+      "STATUS": "中文 AFTER ORIGINAL42",
+      "SECOND": "ORIGINAL SECOND42"
+    },
+    "poAndMoTranslationEntriesExactlyMatch": true,
+    "poMoHeadersDifferOnlyByOmittedPotCreationDate": true,
+    "inputOriginalBytesPreserved": true,
+    "syntheticFixtureNotAnApplication": true,
+    "completePoMoSpecificationAccepted": false,
+    "fullFilesystemTraversed": false
+  },
+  "marketSave": {
+    "generationId": "gen-job-1791777946602-4",
+    "fixedDataPins": {
+      "drive_c/PoeditTests/市场翻译.po": {
+        "sizeBytes": 474,
+        "sha256": "6d3039b5a756d0134bbba777a07a42ed85461180c452d014d714b8048c9d72b3"
+      },
+      "drive_c/PoeditTests/market.po": {
+        "sizeBytes": 518,
+        "sha256": "c830ebeac5cd9544656aee9e38ac3e9ba0826371ba56b7392bfaa18abd4267e6"
+      },
+      "drive_c/PoeditTests/market.mo": {
+        "sizeBytes": 476,
+        "sha256": "8a09107f7cddb18dcba0703af1826e99945191ca136ae3a1cc785895450ed26f"
+      }
+    },
+    "output": {
+      "sizeBytes": 518,
+      "sha256": "c830ebeac5cd9544656aee9e38ac3e9ba0826371ba56b7392bfaa18abd4267e6"
+    },
+    "compiledMo": {
+      "sizeBytes": 476,
+      "sha256": "8a09107f7cddb18dcba0703af1826e99945191ca136ae3a1cc785895450ed26f"
+    },
+    "parsedTranslations": {
+      "STATUS": "中文 AFTER MARKET42",
+      "SECOND": "MARKET SECOND42"
+    },
+    "poAndMoTranslationEntriesExactlyMatch": true,
+    "poMoHeadersDifferOnlyByOmittedPotCreationDate": true,
+    "inputOriginalBytesPreserved": true,
+    "syntheticFixtureNotAnApplication": true,
+    "completePoMoSpecificationAccepted": false,
+    "fullFilesystemTraversed": false
+  },
+  "eachGenerationInstalledFileCount": 503,
+  "identicalInstalledFileCount": 502,
+  "differentInstalledFiles": [
+    "unins000.dat"
+  ],
+  "normalFormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "formalGuiJobs": [
+    {
+      "applicationId": "poedit",
+      "createdAtMilliseconds": 1791776764162,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 225400,
+          "requestId": "job-1791776764162-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 799494,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix",
+          "requestId": "job-1791776764162-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 799538,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791776764162-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791776663624-1",
+      "id": "job-1791776764162-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 9088468,
+        "fileDigest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+        "fileSizeBytes": 16929024,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "bcrypt.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "concrt140.dll",
+          "crypt32.dll",
+          "dwmapi.dll",
+          "gdi32.dll",
+          "icu.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "msvcp140.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "secur32.dll",
+          "sentry.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "sqlite3.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll",
+          "version.dll",
+          "winhttp.dll",
+          "wininet.dll",
+          "winsparkle.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 10131968,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 10131564,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 5230080,
+            "readable": true,
+            "virtualAddress": 10137600,
+            "virtualSize": 5229826,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 753664,
+            "readable": true,
+            "virtualAddress": 15368192,
+            "virtualSize": 978344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 438784,
+            "readable": true,
+            "virtualAddress": 16347136,
+            "virtualSize": 438672,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 99840,
+            "readable": true,
+            "virtualAddress": 16789504,
+            "virtualSize": 99608,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 261632,
+            "readable": true,
+            "virtualAddress": 16891904,
+            "virtualSize": 261344,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791776663624-1",
+          "digest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "Poedit.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix/drive_c/Poedit/Poedit.exe",
+          "sizeBytes": 16929024,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix/drive_c/Poedit/Poedit.exe",
+            "C:\\PoeditTests\\原始翻译.po"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1"
+        },
+        "requestId": "job-1791776764162-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791777566150
+    },
+    {
+      "applicationId": "poedit",
+      "createdAtMilliseconds": 1791777581470,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 226153,
+          "requestId": "job-1791777581470-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 52152,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix",
+          "requestId": "job-1791777581470-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 52196,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791777581470-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791776663624-1",
+      "id": "job-1791777581470-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 9088468,
+        "fileDigest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+        "fileSizeBytes": 16929024,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "bcrypt.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "concrt140.dll",
+          "crypt32.dll",
+          "dwmapi.dll",
+          "gdi32.dll",
+          "icu.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "msvcp140.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "secur32.dll",
+          "sentry.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "sqlite3.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll",
+          "version.dll",
+          "winhttp.dll",
+          "wininet.dll",
+          "winsparkle.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 10131968,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 10131564,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 5230080,
+            "readable": true,
+            "virtualAddress": 10137600,
+            "virtualSize": 5229826,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 753664,
+            "readable": true,
+            "virtualAddress": 15368192,
+            "virtualSize": 978344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 438784,
+            "readable": true,
+            "virtualAddress": 16347136,
+            "virtualSize": 438672,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 99840,
+            "readable": true,
+            "virtualAddress": 16789504,
+            "virtualSize": 99608,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 261632,
+            "readable": true,
+            "virtualAddress": 16891904,
+            "virtualSize": 261344,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791776663624-1",
+          "digest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "Poedit.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix/drive_c/Poedit/Poedit.exe",
+          "sizeBytes": 16929024,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix/drive_c/Poedit/Poedit.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1"
+        },
+        "requestId": "job-1791777581470-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791777635728
+    },
+    {
+      "applicationId": "poedit",
+      "createdAtMilliseconds": 1791778089934,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 227976,
+          "requestId": "job-1791778089934-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 180568,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix",
+          "requestId": "job-1791778089934-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 180611,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791778089934-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791777946602-4",
+      "id": "job-1791778089934-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 9088468,
+        "fileDigest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+        "fileSizeBytes": 16929024,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "bcrypt.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "concrt140.dll",
+          "crypt32.dll",
+          "dwmapi.dll",
+          "gdi32.dll",
+          "icu.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "msvcp140.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "secur32.dll",
+          "sentry.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "sqlite3.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll",
+          "version.dll",
+          "winhttp.dll",
+          "wininet.dll",
+          "winsparkle.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 10131968,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 10131564,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 5230080,
+            "readable": true,
+            "virtualAddress": 10137600,
+            "virtualSize": 5229826,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 753664,
+            "readable": true,
+            "virtualAddress": 15368192,
+            "virtualSize": 978344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 438784,
+            "readable": true,
+            "virtualAddress": 16347136,
+            "virtualSize": 438672,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 99840,
+            "readable": true,
+            "virtualAddress": 16789504,
+            "virtualSize": 99608,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 261632,
+            "readable": true,
+            "virtualAddress": 16891904,
+            "virtualSize": 261344,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791777946602-4",
+          "digest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "Poedit.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix/drive_c/Poedit/Poedit.exe",
+          "sizeBytes": 16929024,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix/drive_c/Poedit/Poedit.exe",
+            "C:\\PoeditTests\\市场翻译.po"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4"
+        },
+        "requestId": "job-1791778089934-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791778272737
+    },
+    {
+      "applicationId": "poedit",
+      "createdAtMilliseconds": 1791778285473,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 228477,
+          "requestId": "job-1791778285473-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 83416,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix",
+          "requestId": "job-1791778285473-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 83459,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791778285473-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791777946602-4",
+      "id": "job-1791778285473-6",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 9088468,
+        "fileDigest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+        "fileSizeBytes": 16929024,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-filesystem-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "api-ms-win-crt-utility-l1-1-0.dll",
+          "bcrypt.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "concrt140.dll",
+          "crypt32.dll",
+          "dwmapi.dll",
+          "gdi32.dll",
+          "icu.dll",
+          "iphlpapi.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "msvcp140.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "rpcrt4.dll",
+          "secur32.dll",
+          "sentry.dll",
+          "shell32.dll",
+          "shlwapi.dll",
+          "sqlite3.dll",
+          "user32.dll",
+          "uxtheme.dll",
+          "vcruntime140.dll",
+          "vcruntime140_1.dll",
+          "version.dll",
+          "winhttp.dll",
+          "wininet.dll",
+          "winsparkle.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 10131968,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 10131564,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 5230080,
+            "readable": true,
+            "virtualAddress": 10137600,
+            "virtualSize": 5229826,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 753664,
+            "readable": true,
+            "virtualAddress": 15368192,
+            "virtualSize": 978344,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 438784,
+            "readable": true,
+            "virtualAddress": 16347136,
+            "virtualSize": 438672,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 99840,
+            "readable": true,
+            "virtualAddress": 16789504,
+            "virtualSize": 99608,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 261632,
+            "readable": true,
+            "virtualAddress": 16891904,
+            "virtualSize": 261344,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791777946602-4",
+          "digest": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "Poedit.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix/drive_c/Poedit/Poedit.exe",
+          "sizeBytes": 16929024,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix/drive_c/Poedit/Poedit.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791777946602-4"
+        },
+        "requestId": "job-1791778285473-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791778370983
+    },
+    {
+      "id": "job-1791778453255-7",
+      "generationId": "gen-job-1791776663624-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 229251,
+          "requestId": "job-1791778453255-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 55142,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791776663624-1/prefix",
+          "requestId": "job-1791778453255-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 55185,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791778453255-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "storeUpdateJob": {
+    "action": "update",
+    "appId": "poedit",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "82ee8207-dc55-4699-a72c-17ab5e229342",
+    "state": "succeeded"
+  },
+  "storeRollbackJob": {
+    "action": "rollback",
+    "appId": "poedit",
+    "backend": "compatforge",
+    "detail": null,
+    "id": "d2274d00-064d-465e-bc37-0834031736a7",
+    "state": "succeeded"
+  },
+  "rollbackVerification": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "poedit",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "d2274d00-064d-465e-bc37-0834031736a7",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791776663624-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 418,
+    "beforeRollbackStoreRows": 125,
+    "afterRollbackCoreJobs": 418,
+    "afterRollbackStoreRows": 126,
+    "allOldFullFieldsPreserved": true,
+    "allGenerationRecordsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "d75eb9d45be355fb2cbccbb75a36d5cc904cb625ae99a76e6698817a5817bb6a",
+      "coreJobs": 418,
+      "fullStoreRows": 126
+    }
+  },
+  "normalRestartFullFieldEqualityPassed": true,
+  "currentPrivateCheckpoint": {
+    "file": "poedit-20261012/after-restart.json",
+    "sha256": "38eb5d39b4deca81c71d4f0f6be09b88cce2c567d3fd51bfb0b436e9dbe8030a"
+  },
+  "allOldGenerationFieldsAndFixedEvidenceDataPreserved": true,
+  "oldRootAndAllSignedHistoryBytesPreserved": true,
+  "old112NonCatalogueTargetPinsPreserved": true,
+  "changedOldTargets": [
+    "catalogue.json"
+  ],
+  "copyqActiveCatalogueEntryAbsent": true,
+  "oldFrozenOriginalAndSourcePendingPhaseLabelsPreserved": true,
+  "originalRegistryAndSentryRunBytesChangedAfterThirdGui": true,
+  "runtimeCoreProgramGlobalContextLauncherEnvironmentWorkingDirectoryFontDllRepairApplied": false,
+  "mainOssSourceLicense": "MIT",
+  "windowsBinaryLicense": "Poedit Software License Agreement; MIT OSS source only",
+  "publicBinaryRedistributionOrProActivationAccepted": false,
+  "completeBundledLicenseClosureVerified": false,
+  "installedMainOssCopyingComparisonVerified": false,
+  "upstreamPublishedInstallerDigestVerified": false,
+  "upstreamPublishedSourceDigestVerified": false,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "guestNetworkDownloadAccepted": false,
+  "backgroundNetworkAbsentVerified": false,
+  "directChineseKeyboardInputAccepted": false,
+  "newMachineRegistrationAccepted": false,
+  "migrationAccepted": false,
+  "crossVersionUpgradeAccepted": false,
+  "unattendedStartupAccepted": false,
+  "completePoeditApplicationAccepted": false,
+  "allAppFilesystemFilesTraversed": false,
+  "reviewIndexCommitPushPendingAtPublicationFreeze": true,
+  "limits": [
+    "Only two tiny UTF8 PO entries: preserve Chinese text, ordinary BEFORE to AFTER and ASCII suffix, second translation, native Save As with automatic MO compile, finite independent PO/MO translations and fresh-process explicit Open PO. Synthetic PO/MO are not separate apps.",
+    "MO omits only POT-Creation-Date header relative to PO; original full-header equality failure retained. No full gettext/PO/MO specification, plural/context/catalogue merge/templates/extraction/validation/other encodings/large or malformed files accepted.",
+    "Windows binary has a separate software license and Pro features; MIT source only. Private same-account local cache lifecycle is tested; public binary redistribution, Pro activation and paid features are not accepted.",
+    "Default editor Arial11 showed boxes. Native isolated application custom text font Microsoft YaHei16 applied; no new font package or Core/program/global context/environment/workingDirectory/DLL/runtime repair. CtrlQ ineffective, actual File/Exit used.",
+    "Translation suggestions, cloud/WordPress, machine translation, advanced features/direct Chinese keyboard input/network downloads/new-machine registration/migration/cross-version/unattended and GUI Store update/rollback buttons unverified. Update prompt observed, no claim of no background networking.",
+    "Full wxWidgets/gettext/ICU/CRT/WinSparkle/SVG/icons/translations license closure, installed MIT COPYING comparison, source-binary correspondence/Authenticode/PGP/reproducible build/latest version unverified.",
+    "Independent market/update/rollback/normal restart pending at original freeze; completion recorded separately."
+  ]
+}

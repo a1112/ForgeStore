@@ -1,0 +1,23 @@
+# Poedit 3.7 Windows 有限翻译编辑验收（2026-10-12）
+
+新增1款，累计53/1000；14未解决候选完整保持，CopyQ/BowPad不计完成。Ubuntu Kate/Snap两款独立记账，Flatpak两次运行时下载超时未安装，缓存保持；本轮未切换VM。合成PO/MO不另计应用。
+
+正式原 gen-job-1791776663624-1 与独立市场 gen-job-1791777946602-4，冻结定义 sha256:7a6e5cf8f975718f3c6b1650056ad613548a225ae58801f8b5f41a0abc95820a。仅两份中文名UTF8/LF小型PO，各含header和两条翻译；原476B、市场474B输入原字节保持。GUI普通BEFORE→AFTER/ASCII ORIGINAL42或MARKET42追加，第二条改ORIGINAL SECOND42/MARKET SECOND42，真实File/Save As至ASCII original.po/market.po，原生默认自动编译MO。PO524/518B、MO482/476B，两新正式进程从Welcome显式Open保存PO，回滚后原PO也显式重开；不是MO GUI打开验收。独立有限PO引号解析和MO边界/大小端/revision0/3项/终止符/排序及stdlib gettext匹配中文和两条翻译。MO只省略PO的POT-Creation-Date；旧全header相等断言失败即停，另作严格V2实测，无输出改写。PO原SHA42cf534fe11d97adcae9b6b2c20469f700d91a30fb8e133472d0f9d1169fcee7，市场SHAc830ebeac5cd9544656aee9e38ac3e9ba0826371ba56b7392bfaa18abd4267e6；MO原SHAb330457f8235a35a8fb228c09140f45ed5c4b68efd0a8127702a17afc5bdb347、市场SHA8a09107f7cddb18dcba0703af1826e99945191ca136ae3a1cc785895450ed26f。五次正式均File/Exit正常退出0+wineserver停止，CtrlQ无效未验收。两代次About实际3.7(7667) Free version。
+
+默认Arial11编辑器中文方框，列表中文可见；仅隔离应用原生Settings选择已有Microsoft YaHei16文本字段字体。原两次Settings取消、MS sans列表误读后真实字段纠正、窗口过高按钮遮挡与Language Selection正常Cancel历史保持。市场也真实设置后中文可读；重开字号显示并非始终大字。不新增字体包，也不称Wine具体函数定位/通用修复。无Core/程序/globalcontext/launcher参数或环境/workingDirectory/DLL/runtime修复。
+
+官方Poedit-3.7-setup.exe17869552B SHA83d6ca0a5a0706309bdc1ed214e735fd4b44a8ac5b82817c4bc914fbd94f5904；poedit-3.7.tar.gz3660177B SHA1bb2388f03618991effde4e8d0e8c35db363af6ca58f6d8ebab21daa76731d71，均HTTPS200本地固定摘要，未核上游公开digest，不称最新。官方tag v3.7-oss关联commit09c0f4cbf5dcb078755bf4fa30ee53fe9c5a6814；9归档源码成员及固定commit raw win32/poedit.iss原字节保留。iss实际UTF8BOM/CRCRLF，不归一化原文。原生Inno /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:后一个反斜杠Poedit /NOICONS /TASKS=，DIR实际14UTF8B hex2f4449523d433a5c506f65646974。
+
+重要许可范围：MIT仅固定OSS源码；官方Windows安装包含Pro功能，实际Resources/LicenseAgreement.rtf是独立Poedit Software License Agreement，不能称Windows二进制MIT。原生安装许可私有原文已读并固定；其再分发/公开服务器安装包条款限未修改且当时最新版本，包装需许可。这一固定旧3.7仅现有同账号本地私有缓存两隔离代次验收；未发布安装包字节到公共仓库，公共targets全部JSON，官方直接下载URL保留。不声称已获公开二进制再分发/Pro激活或付费功能许可，不将源码COPYING与安装EULA作同文比较。完整wxWidgets/gettext/ICU/CRT/Python/WinSparkle/WebView/Sentry/SVG/icons/translations许可闭包、Authenticode/PGP、源码二进制对应、可复现构建未核。
+
+每代次503安装文件独立pins，502跨代次同字节，唯一unins000.dat各86855B摘要不同，实际两份原文私有保存，原因与卸载功能未验收。Poedit.exe16929024B SHA686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d。首次市场observer要求全部503相等失败，停在夹具/GUI前；只读416Core/125Store完整诊断CP保存读回，V3只准实际固定这一卸载日志差异后继续，无重复安装。默认关联/更新器/背景联网不存在未核；两代次真实3.9.1更新提示Remind me later，未升级或启用Pro。
+
+Store IPC预缓存同版本更新和精确正式原代次回滚通过，GUI市场按钮未验收。回滚前418Core/125完整Store CP先保存读回，回滚后418/126旧全部字段/代次保持；第三原GUI后419/126正常Core/Store重启前后七类全字段精确同。candidate-v59/root1/role68、55目录项53应用2内部夹具、115实际签名目标64公共文件；旧113目标中112非catalogue目标精确保持，仅catalogue新增Poedit，CopyQ仍不在活动目录，root和全部历史签名不改。完整私有CP poedit-20261012/after-restart.json SHA38eb5d39b4deca81c71d4f0f6be09b88cce2c567d3fd51bfb0b436e9dbe8030a。当前rolling-current-state-poedit-20261012.py经严格SSH发送stdin客体执行，419/126完整字段精确核对；core()查询可写既有请求scratch，不称客体FS零写。
+
+第三原GUI后system.reg3902050B/user.reg105282B大小同而字节变，实际前后原文和287/53行私有diff保存；原Sentry dce30ac6-fbf1-4d68-7b0b-b00c1fa2fda8.run三文件移除，新0ad08871-1427-4552-58c7-69a205dffb7c.run三文件生成（event各501B，两breadcrumb各0B）。可用实际旧新原文私有保留；原因/键值等价/遥测或崩溃具体解释未确定。旧config集合断言失败停CP/重启，第一只读诊断又读取已移除路径FileNotFound停；V2真实created/removed与新registry固定后严格assert当前pins和旧路径缺失才保存读回CP并重启。不称旧registry/全部配置跨第三GUI原字节保持。其余程序/输入PO/MO/TranslationMemory/固定配置、市场全部pins和既有固定验收数据保持，当前新pins与旧路径缺失跨restart同。仅固定验收数据、本轮503文件和有限配置/registry，不是全应用文件系统遍历；最新64IPC摘要不替代完整SQLite历史。
+
+全部失败保持：innoextract初缺失、隔离工具缺Boost1.90后补齐仍不支持Inno6.4.2，不能据此称包损坏；仅外层隔离诊断工具依赖变化，无Core/客体runtime修改。猜测缺失历史助手、巨型host读取输出截断不作完整核验。市场V1未执行草稿undefined inputs print预检后新V2；V2全503断言失败再V3实际日志差异限定。第三观察失败工具输出被宿主错误只摘metadata而未保留完整trace、后读空收据JSONDecodeError，没有CP/重启或客体后续变更，不补造精确旧trace。新诊断/观察独立真实核对；restart V2只准备未执行，实际V3检查absent路径并正常重启。最初Open键入重复反斜杠后实际加载，不声称Core路径归一化修复或验收。24原source/gui/acceptance及market待执行标签原字节冻结，后续完成另记，2700旧immutable保持。密码/登录画面/私钥/凭据/私有完整CP不入库；认证锁屏和不息屏配置不改。
+
+10张实际JPEG：01默认字体和05市场默认/更新提示只诊断，02/07保存、03/08About、04/09新进程Open、06市场中文可读、10回滚原PO重开。广泛gettext规范、plural/context/catalogue merge/templates/extraction/验证、其他编码/大坏文件、建议/云服务/WordPress/机器翻译、Pro/付费、高级功能、直接中文键盘输入、联网下载、新机注册、迁移跨版本/无人值守和GUI市场更新回滚按钮未验收。独立FINAL审查/index/commit/普通推送另记，不替代真实GUI或私有CP独立重演。
+
+Git暂存前只读预检：107路径filter/raw OID全部一致，relative no-index空白预检没有diagnostics；此前absolute no-index仍警告CRLF并未表示实际index转码。仅8实际精确路径属性保留上游原文：5个尾空白路径、iss禁止转码且容许原CRCRLF尾空白、2份旧CRLF目标允许CR行尾；旧.gitattributes22049B LF前缀精确保留，新增后缀LF。此时尚未git add/真实index/diff/commit，后续必须实际逐字节核验，不将预检当已运行的stage。
