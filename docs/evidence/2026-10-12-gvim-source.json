@@ -1,0 +1,94 @@
+{
+  "applicationId": "gvim",
+  "version": "9.2.0000",
+  "officialHomepage": "https://www.vim.org/",
+  "officialDownloadPage": "https://www.vim.org/download.php",
+  "installer": {
+    "requestedUrl": "https://www.vim.org/downloads/gvim_9.2.0000_x64.exe",
+    "finalUrl": "https://www.vim.org/downloads/gvim_9.2.0000_x64.exe",
+    "status": 200,
+    "contentLength": 11654015,
+    "sizeBytes": 11654015,
+    "sha256": "243ed9ed2951c26d27801afbb4cc5fa92ed6395f8f388c6d432b62012c9f3684",
+    "elapsedSeconds": 2.453,
+    "upstreamPublishedSha256Matched": false
+  },
+  "sourceArchive": {
+    "requestedUrl": "https://codeload.github.com/vim/vim/tar.gz/e7e21018fc0b60c153c8e668f696d95e574cc5a4",
+    "finalUrl": "https://codeload.github.com/vim/vim/tar.gz/e7e21018fc0b60c153c8e668f696d95e574cc5a4",
+    "status": 200,
+    "contentLength": null,
+    "sizeBytes": 19594383,
+    "sha256": "c68e850f25816fce7995493ae004d8f8256e5c993edb3984efc17db723fd3c51",
+    "elapsedSeconds": 3.734,
+    "upstreamPublishedSha256Matched": false
+  },
+  "sourceMembers": {
+    "LICENSE": {
+      "sizeBytes": 5021,
+      "sha256": "0b3f1f330cb1b179bb17c7c687d4cec601e0aa3462bc7f890ad4c3888d37d720"
+    },
+    "README.md": {
+      "sizeBytes": 7125,
+      "sha256": "ef679e16eed468814031857fc1d1dc266fc6e1267bf4dfccd730b1a7c91ab74e"
+    },
+    "src/main.c": {
+      "sizeBytes": 102679,
+      "sha256": "53214fccbe952511a55d812e41644fe5f345c92804646ad611d31be5c468b948"
+    },
+    "src/gui_w32.c": {
+      "sizeBytes": 229651,
+      "sha256": "8016c469ae3258c55f159ced05cdae2061f27a88c234669c6d6593c7fd9f9238"
+    },
+    "src/fileio.c": {
+      "sizeBytes": 147758,
+      "sha256": "dded3f25fb25a5519348d740187634272ed770bf207095c32a52271972dc15e5"
+    },
+    "src/version.c": {
+      "sizeBytes": 26957,
+      "sha256": "a8b2ce609c1dbd86b938388bfcb6bad39312e72782a4124d6469fa23edc16fa1"
+    },
+    "runtime/doc/uganda.txt": {
+      "sizeBytes": 12177,
+      "sha256": "4e9d5c8cd4c872bde908b6b70e6c00ec4ae297b673087908dc1f97a73d64c6e8"
+    },
+    "nsis/gvim.nsi": {
+      "sizeBytes": 34020,
+      "sha256": "2dab85dc7e3c08652eab06c960795ce92321ef7d4e2ebfa3e83d9ecb3e3dc611"
+    },
+    "nsis/README.txt": {
+      "sizeBytes": 5067,
+      "sha256": "ed663e653dca05c656ea280a74b09091a62ccd3ac948ce73803c9c73cf074212"
+    }
+  },
+  "tagAssociatedSourceCommit": "e7e21018fc0b60c153c8e668f696d95e574cc5a4",
+  "mainLicense": "Vim custom license, SPDX Vim; not an unconditional GPL-only declaration",
+  "mainLicenseModificationAndNoticeConditionsPreserved": true,
+  "sourceMainLicenseBytes": 5021,
+  "installedMainLicensePin": {
+    "sizeBytes": 5021,
+    "sha256": "0b3f1f330cb1b179bb17c7c687d4cec601e0aa3462bc7f890ad4c3888d37d720"
+  },
+  "installedMainLicenseSourceRawBytesEqual": true,
+  "componentLicenseNamedFiles": [
+    "vim92/LICENSE.txt",
+    "vim92/pack/dist/opt/editorconfig/LICENSE",
+    "vim92/pack/dist/opt/netrw/LICENSE.txt"
+  ],
+  "completeLuaPerlPythonRubyGettextLibsodiumRuntimeIconsDocumentationLicenseClosureVerified": false,
+  "upstreamPublishedInstallerDigestVerified": false,
+  "upstreamPublishedSourceDigestVerified": false,
+  "sourceBinaryCorrespondenceVerified": false,
+  "authenticodeOrOpenPgpVerified": false,
+  "reproducibleBuildVerified": false,
+  "latestVersionClaimed": false,
+  "nativeNsisArguments": [
+    "/S",
+    "/D=C:\\Vim"
+  ],
+  "dirArgumentUtf8Bytes": 9,
+  "dirArgumentUtf8Hex": "2f443d433a5c56696d",
+  "sourceTemplateRequestExecutionLevel": "highest; not real Windows UAC/admin acceptance",
+  "defaultOptionalSectionsKept": true,
+  "globalCoreProgramRuntimeOrLauncherFixApplied": false
+}

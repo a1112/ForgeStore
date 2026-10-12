@@ -575,6 +575,15 @@
       "signedCatalogue": "catalogue/candidate-v62/tuf",
       "publication": "docs/evidence/2026-10-12-picard-publication.json",
       "limitation": "Only tiny Chinese-name PCM WAV read, independent ASCII working-copy Title/Artist edit and native Save in place, finite INFO/ID3v2.4/PCM checks and explicit fresh Open. Album matching, MusicBrainz/AcoustID/network identification, broad formats/tags, listening/audio device, Chinese keyboard, unattended and full licence closure unverified; no runtime or launcher fix."
+    },
+    {
+      "id": "gvim",
+      "version": "9.2.0000",
+      "sha256": "243ed9ed2951c26d27801afbb4cc5fa92ed6395f8f388c6d432b62012c9f3684",
+      "evidence": "docs/evidence/windows-gvim-20261012.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v63/tuf",
+      "publication": "docs/evidence/2026-10-12-gvim-publication.json",
+      "limitation": "Only two tiny Chinese-name UTF8 BOM/CRLF texts, native literal FindAndReplace, G/o/Escape ASCII append, ASCII SaveAs and explicit fresh Open. Full Vim editing/Vimscript/plugins/macros/shell/terminal/languages/encodings/large files, Chinese keyboard, network, unattended and full bundle licence closure unverified; no runtime or launcher fix."
     }
   ],
   "queue": [
@@ -791,12 +800,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "56/1000 finite Windows acceptance;14 unresolved unchanged. Picard2.13.3 tiny PCM WAV GUI Title/Artist native working-copy Save/fresh Open and cached IPC update/exact original rollback/normal restart. candidate-v62/root1/role71;441 fullCore/132 fullStore. StrictSSH stdin rolling-current-state-picard-20261012.py. Preserve frozen/trust/history and actual third-GUI registry/Picard.ini changes. No album matching, network identification/listening/full licence closure acceptance. Independent review/index/commit/push pending at publication freeze.",
+  "next": "57/1000 finite Windows acceptance;14 unresolved unchanged. gVim9.2.0000 tiny Chinese-name UTF8 BOM/CRLF text GUI literal replacement/ASCII append/SaveAs/fresh Open and cached IPC update/exact original rollback/normal restart. candidate-v63/root1/role72;448 fullCore/134 fullStore. StrictSSH stdin rolling-current-state-gvim-20261012.py. Preserve all frozen/trust/history and actual third-GUI registry/_viminfo changes. No full Vim/advanced/network/unattended/full licence closure acceptance. Independent review/index/commit/push pending at publication freeze.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-12",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 56,
+    "acceptedLocalMarket": 57,
     "explicitlyBlockedCandidates": 14,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -804,25 +813,25 @@
     "pendingCandidates": 14
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v62/tuf",
-    "metadataVersion": 71,
-    "catalogueEntries": 58,
-    "acceptedDistinctWindowsApps": 56,
+    "signedCatalogue": "catalogue/candidate-v63/tuf",
+    "metadataVersion": 72,
+    "catalogueEntries": 59,
+    "acceptedDistinctWindowsApps": 57,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-12-picard-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-12-gvim-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-12-scribus-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-12-picard-activation.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-12-picard-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-12-gvim-activation.json"
   },
-  "lastReviewEvidence": "docs/evidence/2026-10-12-picard-final-verification.json",
+  "lastReviewEvidence": "docs/evidence/2026-10-12-gvim-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-copyq-runtime-recovery.json",
   "previousCapacityEvidence": "docs/evidence/2026-09-30-rolling-capacity.json",
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261012-picard.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-picard-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261012-gvim.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-12-gvim-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

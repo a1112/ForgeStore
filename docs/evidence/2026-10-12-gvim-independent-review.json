@@ -1,0 +1,808 @@
+{
+  "passed": true,
+  "findings": [],
+  "reviewer": "independent /root/review_gvim_evidence",
+  "reviewCompletedUtc": "2026-10-12T10:50:19.837791+00:00",
+  "phase": "FINAL independent read-only evidence review before first real Git stage",
+  "baseCommit": "3f4cd00f1a6ff07a2961e8955a1e5f32391b2878",
+  "prospectiveManifestSha256": "0b2ae10840bae689d2eb770ab492cfdd7d9d818268dde0761a23bfd249c83311",
+  "prospectivePaths": 105,
+  "oldImmutableFilesVerified": 3136,
+  "originalFrozenFilesVerified": 19,
+  "assessment": "Finite Chinese-name UTF8 BOM CRLF tiny text read, literal replacement and ASCII append, native File SaveAs, fresh formal File Open, exact independent local Store same-version update/rollback and normal restart evidence is consistent. Ready for byte-preserving first stage and subsequent actual index/commit checks.",
+  "actualChecks": {
+    "frozenByteAudit": {
+      "prospective": 105,
+      "oldImmutable": 3136,
+      "originalImmutable": 19,
+      "headUnchanged": true,
+      "indexEmpty": true
+    },
+    "formalGuiRecords": {
+      "jobs": [
+        "job-1791799275301-2",
+        "job-1791799746589-3",
+        "job-1791800534247-5",
+        "job-1791800770948-6",
+        "job-1791801007224-7"
+      ],
+      "allSucceededExitZeroWineStop": true,
+      "installedSame": 2311,
+      "generatedPrograms": 0,
+      "originalPendingReceiptPreserved": true,
+      "actualNsisArgumentUtf8Hex": "2f443d433a5c56696d"
+    },
+    "independentFiniteText": {
+      "original": {
+        "inputPin": {
+          "sizeBytes": 76,
+          "sha256": "e65e2539b4503d7145677d68a10cc08e301b6dd99f79ab6faf5d99c4b8aea331"
+        },
+        "outputPin": {
+          "sizeBytes": 87,
+          "sha256": "3be5bc054468ef7aa7db026168a3c7dcb804b7f5fe0e7bbc0d6e39345ef32f6d"
+        },
+        "completeIndependentReconstructionMatches": true,
+        "utf8BomAndFourCrlf": true
+      },
+      "market": {
+        "inputPin": {
+          "sizeBytes": 74,
+          "sha256": "38bc0c07601f94216743075db5304c0ed834193e7b23caf29b4d1d97b0b84957"
+        },
+        "outputPin": {
+          "sizeBytes": 83,
+          "sha256": "92dbe12e22a1bc36380e7e396adb0abe7d91c082d10802326d6f7973c060e9cb"
+        },
+        "completeIndependentReconstructionMatches": true,
+        "utf8BomAndFourCrlf": true
+      }
+    },
+    "imageByteChecks": {
+      "eightActualJpegs": true,
+      "contactSheetCreatedForReviewerVisualInspection": true,
+      "reviewerVisuallyInspectedAllEightScreenshotsAtFullResolution": true,
+      "sourceAndSavedChineseReadable": true,
+      "originalVersionDiagnosticOnly": true,
+      "loginScreensOrCredentialsObserved": false
+    },
+    "sourceAndLicense": {
+      "rawInstallerSourceLocalHttpsDigestsVerified": true,
+      "nineExactFixedCommitTarMembers": true,
+      "installedMainLicense5021BytesExactSourcePin": true,
+      "customVimLicenseNotUnconditionalGpl": true,
+      "fullClosureAuthenticityOrSourceBinaryNotClaimed": true
+    },
+    "tuf": {
+      "freshRsaPssThresholdVerification": 4,
+      "rootVersion": 1,
+      "onlineVersion": 72,
+      "actualSignedTargetsHashed": 123,
+      "oldNonCatalogueTargetPinsExact": 120,
+      "publicJsonOnlyFiles": 68,
+      "catalogueOldEntriesExactGvimOnlyAddition": true,
+      "catalogueEntries": 59,
+      "copyqAbsent": true
+    },
+    "gitReadOnlyPrecheck": {
+      "actualRawFilterHashesCompared": 105,
+      "relativeNoIndexPaths": 104,
+      "diagnostics": 0,
+      "oldAttributesPrefixBytes": 25736,
+      "sevenExactRulesVerified": true,
+      "suffixLfOnly": true,
+      "actualIndexBlobAuditStageOrRenormalizeNotPerformed": true
+    },
+    "scopeAndFailures": {
+      "thirdActualByteChangesExplicit": true,
+      "versionNotAboutOrFeatureAcceptance": true,
+      "undoPinnedNotGuiUndoAccepted": true,
+      "noFontRuntimeOrLauncherFix": true,
+      "transferExactStdoutOnlyToolHistoryExplicit": true,
+      "freacResearchNotInstalledOrCounted": true,
+      "allHistoricalDependencyGatesNotClaimed": true
+    },
+    "privacy": {
+      "prospectiveFilesScanned": 105,
+      "privateKeyTokenPasswordPatternsAbsent": true,
+      "fullPrivateCheckpointNotPublished": true,
+      "publicCatalogueInstallerBytesAbsent": true
+    }
+  },
+  "freshCurrentReadOnlyGuestCheck": {
+    "verified": true,
+    "coreJobs": 448,
+    "fullStoreRows": 134,
+    "allTerminal": true,
+    "fullFieldsExactlyMatchSavedPostRestartCheckpoint": true,
+    "allGenerationRecordsConfigurationAndGuardsPreserved": true,
+    "oldTrustDocumentsMatchExactly": true,
+    "rootVersion": 1,
+    "onlineRoleVersions": {
+      "root": 1,
+      "timestamp": 72,
+      "snapshot": 72,
+      "targets": 72
+    },
+    "latestKnownTime": "2026-10-12T10:37:06.069373248Z",
+    "selectedGvimGeneration": "gen-job-1791799154641-1",
+    "copyqActiveCatalogueEntryAbsent": true,
+    "fixedApplicationDataAndProgramBytesPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "powerConfigUnchanged": true,
+    "authenticationAndLockSettingsChanged": false,
+    "queryMayWriteExistingRequestScratch": true,
+    "checkpoint": {
+      "file": "gvim-20261012/after-restart.json",
+      "sha256": "da2286d23b50fdca7c25d1e48d56956f1f4b0d4944d7d83c4282017d447cdbc8"
+    }
+  },
+  "privateCheckpointAndSqliteReadOnlyCheck": {
+    "passed": true,
+    "privateFullCheckpointsReadWithoutExport": true,
+    "beforeAndAfterRestartSha256Verified": true,
+    "sevenCompleteFieldClassesExactlyEqual": [
+      "jobs",
+      "rows",
+      "market",
+      "trustDocuments",
+      "configs",
+      "generations",
+      "serviceGuards"
+    ],
+    "coreJobs": 448,
+    "fullStoreRows": 134,
+    "freshCompleteSqliteRowsExactlyMatchSavedCheckpoint": true,
+    "sqliteIntegrityCheck": "ok",
+    "actualPrivateBeforeAfterRawAndReconstructedDiffVerified": {
+      "drive_c/users/forge/_viminfo": 41,
+      "system.reg": 287,
+      "user.reg": 20
+    },
+    "beforeRollback447133AndAfter447134OldFieldsAndAllGenerationsExact": true,
+    "fiveFormalGuiJobEventsMatchFullCoreCheckpoint": true,
+    "programInventoriesBoth2311Exact": true,
+    "freshFinalDataAndConfigurationPinsVerified": true,
+    "checkpointOrServiceOrGuiChangesMade": false,
+    "noPrivateCheckpointContentsPrinted": true
+  },
+  "rollbackExtraCompleteFieldCheck": {
+    "passed": true,
+    "rollbackUnchangedCompleteConfigurationGuardAndTrustClasses": [
+      "configs",
+      "serviceGuards",
+      "trustDocuments"
+    ],
+    "checkpointOrApplicationWrites": false
+  },
+  "supplementalSourceFailureTransferPrivacyChecks": {
+    "passed": true,
+    "fixedOfficialCachedTagRefAndPeelAssociationIndependentlyChecked": true,
+    "tagSignaturePresenceNotCryptographicallyVerifiedByReviewer": true,
+    "firstBuilderRawCompileFailureIndependentlyReproducedWithoutWrites": {
+      "type": "SyntaxError",
+      "line": 7,
+      "message": "bytes can only contain ASCII literal characters."
+    },
+    "failedBuilderPin": {
+      "sizeBytes": 2993,
+      "sha256": "f69b3ace8d8b888e0aeb43d1111c905b18ce4758507e09ee2b0a6f068622eb83"
+    },
+    "correctVerifyLibraryPin": {
+      "sizeBytes": 1174,
+      "sha256": "2ba37fc3047f2da8f220c1ee49a9fd882318c0abf557d1ffdd045f111fee9e06"
+    },
+    "transferReadbackLimitationVerified": {
+      "staged": true,
+      "sha256": "c68a519f1610dddfae1cb78f51b147b6341dfe8b04909c095c0466fb8c1e7cf7",
+      "sizeBytes": 1812480,
+      "readOnlyReadBackSeparateFromOriginalTransferToolHistory": true,
+      "originalTransferStdoutExactBytesSavedToHostReceiptFile": false,
+      "retransferExecuted": false,
+      "stageOrActivationExecuted": false
+    },
+    "parentInlineFailureHonestScopeVerified": {
+      "phase": "Additional read-only parent prospective/privacy precheck before first stage",
+      "failedInvocation": "Inline PowerShell python -c with quoted regex strings",
+      "actualExitCode": 1,
+      "actualToolOutputBytes": 0,
+      "exactCommandAndResultRetainedInToolHistory": true,
+      "specificFailureCauseEstablished": false,
+      "noRepoOrIndexOrGuestMutationInFailedCommand": true,
+      "assertionsClaimedRunOrPassed": false,
+      "replacement": "gvim-parent-prospective-check-20261012.py with explicit saved Python source"
+    },
+    "parentSavedCorrectHelperPin": {
+      "sizeBytes": 768,
+      "sha256": "e5135f67a7f1ca152d9d16c0f6918da7ae6f6d3e3a0ac12478fc88a258058e94"
+    },
+    "full105ProspectivePinsAndExpandedPrivacyPatternCheckRepeated": true,
+    "nativeTuftool017ExplicitExistingRootDownloadsActualHashesMatch": true,
+    "noGuiServiceCpTufOrIndexMutation": true
+  },
+  "nativeTuftool017Verification": {
+    "passed": true,
+    "trustedRoot": "existing candidate-v62 root1 exact bytes",
+    "downloadedTargets": [
+      "catalogue.json",
+      "windows-gvim-20261012.acceptance.json"
+    ],
+    "expiredOrUnsafeOptionsUsed": false,
+    "outputDirectory": ".transfer/gvim-review-tuftool-download-20261012",
+    "applicationOrIndexChange": false
+  },
+  "evidencePins": {
+    ".gitattributes": {
+      "sizeBytes": 26554,
+      "sha256": "ee9a6fd41a6c55baaef8ede1a4b13d0019a0b032701a9c8767145cb37a4c352f"
+    },
+    "catalogue/candidate-v63/tuf/metadata/1.root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "catalogue/candidate-v63/tuf/metadata/72.snapshot.json": {
+      "sizeBytes": 997,
+      "sha256": "cd10d775ed8ab44f0ee1b84df18b96f84606165fdadbfb8d2dfb2d997164e302"
+    },
+    "catalogue/candidate-v63/tuf/metadata/72.targets.json": {
+      "sizeBytes": 25342,
+      "sha256": "dc6ec15652ed00679c55731f4ba38db383ceba1df4a9b4c2f8367c18f358fb42"
+    },
+    "catalogue/candidate-v63/tuf/metadata/timestamp.json": {
+      "sizeBytes": 997,
+      "sha256": "9603bab3fbdca4388aafcd5b750531de738d43f97aaf8ab8b729fe6d9e1e5355"
+    },
+    "catalogue/candidate-v63/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sizeBytes": 4879,
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+    },
+    "catalogue/candidate-v63/tuf/targets/056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9.windows-nsis-20261012.acceptance.json": {
+      "sizeBytes": 4976,
+      "sha256": "056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9"
+    },
+    "catalogue/candidate-v63/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sizeBytes": 9031,
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+    },
+    "catalogue/candidate-v63/tuf/targets/0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d.windows-notepadnext-20261012.acceptance.json": {
+      "sizeBytes": 6011,
+      "sha256": "0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d"
+    },
+    "catalogue/candidate-v63/tuf/targets/116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a.windows-poedit-20261012.acceptance.json": {
+      "sizeBytes": 99469,
+      "sha256": "116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a"
+    },
+    "catalogue/candidate-v63/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+      "sizeBytes": 5624,
+      "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+    },
+    "catalogue/candidate-v63/tuf/targets/1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f.windows-transmission-20261011.acceptance.json": {
+      "sizeBytes": 5165,
+      "sha256": "1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f"
+    },
+    "catalogue/candidate-v63/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sizeBytes": 5280,
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+    },
+    "catalogue/candidate-v63/tuf/targets/1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af.windows-nomacs-20261011.acceptance.json": {
+      "sizeBytes": 4995,
+      "sha256": "1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af"
+    },
+    "catalogue/candidate-v63/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sizeBytes": 21857,
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+    },
+    "catalogue/candidate-v63/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sizeBytes": 7918,
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+    },
+    "catalogue/candidate-v63/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sizeBytes": 1676,
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+    },
+    "catalogue/candidate-v63/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json": {
+      "sizeBytes": 4562,
+      "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+    },
+    "catalogue/candidate-v63/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sizeBytes": 2738,
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+    },
+    "catalogue/candidate-v63/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sizeBytes": 7617,
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+    },
+    "catalogue/candidate-v63/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sizeBytes": 1699,
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+    },
+    "catalogue/candidate-v63/tuf/targets/3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999.windows-copyq-20261012.pending-correction.json": {
+      "sizeBytes": 1575,
+      "sha256": "3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999"
+    },
+    "catalogue/candidate-v63/tuf/targets/48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb.windows-doxygen-20261012.acceptance.json": {
+      "sizeBytes": 406124,
+      "sha256": "48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb"
+    },
+    "catalogue/candidate-v63/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sizeBytes": 10640,
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+    },
+    "catalogue/candidate-v63/tuf/targets/5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f.windows-xmlcopyeditor-20261011.acceptance.json": {
+      "sizeBytes": 4553,
+      "sha256": "5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f"
+    },
+    "catalogue/candidate-v63/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sizeBytes": 1617,
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+    },
+    "catalogue/candidate-v63/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sizeBytes": 12679,
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+    },
+    "catalogue/candidate-v63/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sizeBytes": 1652,
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+    },
+    "catalogue/candidate-v63/tuf/targets/6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f.windows-picard-20261012.acceptance.json": {
+      "sizeBytes": 6277,
+      "sha256": "6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f"
+    },
+    "catalogue/candidate-v63/tuf/targets/707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3.windows-lmms-20261012.acceptance.json": {
+      "sizeBytes": 621370,
+      "sha256": "707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3"
+    },
+    "catalogue/candidate-v63/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sizeBytes": 9285,
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+    },
+    "catalogue/candidate-v63/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sizeBytes": 1146,
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+    },
+    "catalogue/candidate-v63/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sizeBytes": 4783,
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+    },
+    "catalogue/candidate-v63/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sizeBytes": 6220,
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+    },
+    "catalogue/candidate-v63/tuf/targets/8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29.windows-qxmledit-20261011.acceptance.json": {
+      "sizeBytes": 4514,
+      "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+    },
+    "catalogue/candidate-v63/tuf/targets/8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb.windows-cppcheck-20261012.acceptance.json": {
+      "sizeBytes": 23230,
+      "sha256": "8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb"
+    },
+    "catalogue/candidate-v63/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sizeBytes": 4223,
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+    },
+    "catalogue/candidate-v63/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json": {
+      "sizeBytes": 7879,
+      "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+    },
+    "catalogue/candidate-v63/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sizeBytes": 4642,
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+    },
+    "catalogue/candidate-v63/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json": {
+      "sizeBytes": 7564,
+      "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+    },
+    "catalogue/candidate-v63/tuf/targets/9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058.windows-windjview-20261011.acceptance.json": {
+      "sizeBytes": 6405,
+      "sha256": "9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058"
+    },
+    "catalogue/candidate-v63/tuf/targets/9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0.windows-gvim-20261012.acceptance.json": {
+      "sizeBytes": 4767,
+      "sha256": "9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0"
+    },
+    "catalogue/candidate-v63/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sizeBytes": 11228,
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+    },
+    "catalogue/candidate-v63/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sizeBytes": 1656,
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+    },
+    "catalogue/candidate-v63/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+      "sizeBytes": 6445,
+      "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+    },
+    "catalogue/candidate-v63/tuf/targets/afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd.windows-nsis-20261012.corrected.acceptance.json": {
+      "sizeBytes": 5463,
+      "sha256": "afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd"
+    },
+    "catalogue/candidate-v63/tuf/targets/b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34.windows-gnuplot-20261012.acceptance.json": {
+      "sizeBytes": 5745,
+      "sha256": "b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34"
+    },
+    "catalogue/candidate-v63/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sizeBytes": 6071,
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+    },
+    "catalogue/candidate-v63/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json": {
+      "sizeBytes": 4567,
+      "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+    },
+    "catalogue/candidate-v63/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sizeBytes": 10745,
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+    },
+    "catalogue/candidate-v63/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sizeBytes": 6075,
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+    },
+    "catalogue/candidate-v63/tuf/targets/b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931.windows-rednotebook-20261011.acceptance.json": {
+      "sizeBytes": 5786,
+      "sha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931"
+    },
+    "catalogue/candidate-v63/tuf/targets/b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5.windows-rapidcrc-20261012.acceptance.json": {
+      "sizeBytes": 6788,
+      "sha256": "b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5"
+    },
+    "catalogue/candidate-v63/tuf/targets/ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba.windows-scribus-20261012.acceptance.json": {
+      "sizeBytes": 12090,
+      "sha256": "ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba"
+    },
+    "catalogue/candidate-v63/tuf/targets/c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281.windows-mkvtoolnix-20261012.acceptance.json": {
+      "sizeBytes": 16769,
+      "sha256": "c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281"
+    },
+    "catalogue/candidate-v63/tuf/targets/c466d34d5fbb44ed8100e12cd93dc9a4a3e95b25c5c1311a3ce78d07b5d2086e.catalogue.json": {
+      "sizeBytes": 68056,
+      "sha256": "c466d34d5fbb44ed8100e12cd93dc9a4a3e95b25c5c1311a3ce78d07b5d2086e"
+    },
+    "catalogue/candidate-v63/tuf/targets/cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86.windows-librecad-20261012.acceptance.json": {
+      "sizeBytes": 14404,
+      "sha256": "cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86"
+    },
+    "catalogue/candidate-v63/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json": {
+      "sizeBytes": 7460,
+      "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+    },
+    "catalogue/candidate-v63/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sizeBytes": 4586,
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+    },
+    "catalogue/candidate-v63/tuf/targets/d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3.windows-copyq-20261012.acceptance.json": {
+      "sizeBytes": 34032,
+      "sha256": "d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3"
+    },
+    "catalogue/candidate-v63/tuf/targets/da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3.windows-qbittorrent-20261012.acceptance.json": {
+      "sizeBytes": 4945,
+      "sha256": "da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3"
+    },
+    "catalogue/candidate-v63/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json": {
+      "sizeBytes": 3703,
+      "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+    },
+    "catalogue/candidate-v63/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sizeBytes": 9388,
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+    },
+    "catalogue/candidate-v63/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json": {
+      "sizeBytes": 8122,
+      "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+    },
+    "catalogue/candidate-v63/tuf/targets/f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d.windows-meld-20261011.acceptance.json": {
+      "sizeBytes": 5518,
+      "sha256": "f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d"
+    },
+    "catalogue/candidate-v63/tuf/targets/f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa.windows-mediainfo-20261012.acceptance.json": {
+      "sizeBytes": 28230,
+      "sha256": "f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa"
+    },
+    "catalogue/candidate-v63/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json": {
+      "sizeBytes": 6906,
+      "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+    },
+    "catalogue/candidate-v63/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sizeBytes": 3517,
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+    },
+    "catalogue/candidate-v63/tuf/trusted-root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "docs/evidence/2026-10-12-gvim-activation.json": {
+      "sizeBytes": 1676,
+      "sha256": "ece3f1d6a7b18ab6ec2296b17467995007a38cbed15728c5513012007203bb46"
+    },
+    "docs/evidence/2026-10-12-gvim-current-state.json": {
+      "sizeBytes": 910,
+      "sha256": "a06f65f25ec5cd1b23af44b9d1ffb906b3bad7fad7c0ef94c95a4a7162132e79"
+    },
+    "docs/evidence/2026-10-12-gvim-failures.json": {
+      "sizeBytes": 1182,
+      "sha256": "4f6cb0f194324103de8a09ea0798c7db3ff8d2e6c5c6ca042e8aeabf25845bcc"
+    },
+    "docs/evidence/2026-10-12-gvim-final-verification.json": {
+      "sizeBytes": 1518,
+      "sha256": "d5d2329d97fc78736226b37933dc8bcc81843eba930a7dca9427eb99133d6313"
+    },
+    "docs/evidence/2026-10-12-gvim-git-byte-preservation-precheck.json": {
+      "sizeBytes": 1602,
+      "sha256": "106ad18dfbf13a29eeb90f5a6bbe881ec44929fd2183037f124a9055dd26a82a"
+    },
+    "docs/evidence/2026-10-12-gvim-git-precheck-final.json": {
+      "sizeBytes": 683,
+      "sha256": "5d4b4ddf67d236c20688cc3085bcd6cc6da5975bb9302d88ce79fd1211cfb8f1"
+    },
+    "docs/evidence/2026-10-12-gvim-gui.json": {
+      "sizeBytes": 368545,
+      "sha256": "a41fdc92dec368314900fe838ca9867e65564c94583cf8dd43668326c4ecfbd3"
+    },
+    "docs/evidence/2026-10-12-gvim-later-observations.json": {
+      "sizeBytes": 6958,
+      "sha256": "34ac9d4a9ad907cc25dffb34ae38d35fb03e31fefaf2470071eaa765114c7053"
+    },
+    "docs/evidence/2026-10-12-gvim-market-gui.json": {
+      "sizeBytes": 369919,
+      "sha256": "5440cc38966de987d88a7af91e786b3c161fe904622f2eae40b99612a83b2f5f"
+    },
+    "docs/evidence/2026-10-12-gvim-publication.json": {
+      "sizeBytes": 37114,
+      "sha256": "b2d114a93048bbce17e2226072811a677d555945602dba11a670f5cd9891d67f"
+    },
+    "docs/evidence/2026-10-12-gvim-runtime-recovery.json": {
+      "sizeBytes": 833366,
+      "sha256": "98fb84f22cb1a9369f621eb5fa3277cea96a63e62e45a8e43b80d1bb120c4076"
+    },
+    "docs/evidence/2026-10-12-gvim-source.json": {
+      "sizeBytes": 3596,
+      "sha256": "6fd62c3d04011eabc37d70a1d40a1407300ce3f1b9060af6868355af887e0ed2"
+    },
+    "docs/evidence/gvim-20261012/gvim-01-original-chinese-input-20261012.jpg": {
+      "sizeBytes": 32636,
+      "sha256": "6358c30fa0c750e2053414f1a763fe9db958db7584ecf84bc995a1e2e348e261"
+    },
+    "docs/evidence/gvim-20261012/gvim-02-original-save-as-20261012.jpg": {
+      "sizeBytes": 34325,
+      "sha256": "ca0a28c0baadc9041d09983a2b64af6aa2ee3814adf5ac13c0f966c36a5f3dd6"
+    },
+    "docs/evidence/gvim-20261012/gvim-03-version-20261012.jpg": {
+      "sizeBytes": 126548,
+      "sha256": "b5bdd4310f898c4b5346fcf142a8f028b7ffb39feac11e9936e78c7c26936f98"
+    },
+    "docs/evidence/gvim-20261012/gvim-04-original-new-process-open-20261012.jpg": {
+      "sizeBytes": 33066,
+      "sha256": "a61ac808d30bd00c5cfd3eec172147b615d5109dfdbd07b464df7f9dfb577ccb"
+    },
+    "docs/evidence/gvim-20261012/gvim-05-market-chinese-input-20261012.jpg": {
+      "sizeBytes": 32391,
+      "sha256": "bc23067a8ac01495c3f18a555e1abf1655c4c972524bbc48843a486c1d93b503"
+    },
+    "docs/evidence/gvim-20261012/gvim-06-market-save-as-20261012.jpg": {
+      "sizeBytes": 33700,
+      "sha256": "a6a228675c2e6ed67a798910ab10dd94dbe4d92ad3800a727e32e48925e7d10f"
+    },
+    "docs/evidence/gvim-20261012/gvim-07-market-new-process-open-20261012.jpg": {
+      "sizeBytes": 32497,
+      "sha256": "80d1aa3159caa52c8bda1a6f52da010a216c1082be27941fbf862fcd9c25741d"
+    },
+    "docs/evidence/gvim-20261012/gvim-08-rollback-original-open-20261012.jpg": {
+      "sizeBytes": 33130,
+      "sha256": "720a26a9380b1c17ac5f9f58c6b44bb83c6e66f43a7d8086565f547ea5e98742"
+    },
+    "docs/evidence/gvim-20261012/market/market.txt": {
+      "sizeBytes": 83,
+      "sha256": "92dbe12e22a1bc36380e7e396adb0abe7d91c082d10802326d6f7973c060e9cb"
+    },
+    "docs/evidence/gvim-20261012/market/市场编辑.txt": {
+      "sizeBytes": 74,
+      "sha256": "38bc0c07601f94216743075db5304c0ed834193e7b23caf29b4d1d97b0b84957"
+    },
+    "docs/evidence/gvim-20261012/original/original.txt": {
+      "sizeBytes": 87,
+      "sha256": "3be5bc054468ef7aa7db026168a3c7dcb804b7f5fe0e7bbc0d6e39345ef32f6d"
+    },
+    "docs/evidence/gvim-20261012/original/原始编辑.txt": {
+      "sizeBytes": 76,
+      "sha256": "e65e2539b4503d7145677d68a10cc08e301b6dd99f79ab6faf5d99c4b8aea331"
+    },
+    "docs/evidence/gvim-20261012/source/LICENSE": {
+      "sizeBytes": 5021,
+      "sha256": "0b3f1f330cb1b179bb17c7c687d4cec601e0aa3462bc7f890ad4c3888d37d720"
+    },
+    "docs/evidence/gvim-20261012/source/README.md": {
+      "sizeBytes": 7125,
+      "sha256": "ef679e16eed468814031857fc1d1dc266fc6e1267bf4dfccd730b1a7c91ab74e"
+    },
+    "docs/evidence/gvim-20261012/source/nsis/README.txt": {
+      "sizeBytes": 5067,
+      "sha256": "ed663e653dca05c656ea280a74b09091a62ccd3ac948ce73803c9c73cf074212"
+    },
+    "docs/evidence/gvim-20261012/source/nsis/gvim.nsi": {
+      "sizeBytes": 34020,
+      "sha256": "2dab85dc7e3c08652eab06c960795ce92321ef7d4e2ebfa3e83d9ecb3e3dc611"
+    },
+    "docs/evidence/gvim-20261012/source/runtime/doc/uganda.txt": {
+      "sizeBytes": 12177,
+      "sha256": "4e9d5c8cd4c872bde908b6b70e6c00ec4ae297b673087908dc1f97a73d64c6e8"
+    },
+    "docs/evidence/gvim-20261012/source/src/fileio.c": {
+      "sizeBytes": 147758,
+      "sha256": "dded3f25fb25a5519348d740187634272ed770bf207095c32a52271972dc15e5"
+    },
+    "docs/evidence/gvim-20261012/source/src/gui_w32.c": {
+      "sizeBytes": 229651,
+      "sha256": "8016c469ae3258c55f159ced05cdae2061f27a88c234669c6d6593c7fd9f9238"
+    },
+    "docs/evidence/gvim-20261012/source/src/main.c": {
+      "sizeBytes": 102679,
+      "sha256": "53214fccbe952511a55d812e41644fe5f345c92804646ad611d31be5c468b948"
+    },
+    "docs/evidence/gvim-20261012/source/src/version.c": {
+      "sizeBytes": 26957,
+      "sha256": "a8b2ce609c1dbd86b938388bfcb6bad39312e72782a4124d6469fa23edc16fa1"
+    },
+    "docs/evidence/windows-gvim-20261012.acceptance.json": {
+      "sizeBytes": 4767,
+      "sha256": "9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 68833,
+      "sha256": "99c7dad8be21925ad1b8ea406ec4154f9e88b993d35f4854104efdeb0caaa5a6"
+    },
+    "docs/windows-rolling-20261012-gvim.md": {
+      "sizeBytes": 7116,
+      "sha256": "f6c884eb6b80cb96cde55987dc4754a7625d6ddbc6b73c1f337a5736b9fc47d8"
+    }
+  },
+  "reviewArtifactPins": {
+    "gvim-review-host-check-v2-20261012.py": {
+      "sizeBytes": 13637,
+      "sha256": "fc0033dbe74c72b03fcf92270daa78a1926bdeff1e5aab44967ef5ca95680d12"
+    },
+    "gvim-review-host-check-v2-20261012.json": {
+      "sizeBytes": 3179,
+      "sha256": "f22d3e5468d64afa6c9c7808cf95689e9923252527df85b94d90e3f1eccdf4b8"
+    },
+    "gvim-review-current-20261012.json": {
+      "sizeBytes": 840,
+      "sha256": "0bb58e6a565db25a4c902972d5a5faaaff3ae36db65d02dec0354c7cb188fec3"
+    },
+    "gvim-review-private-cp-check-20261012.py": {
+      "sizeBytes": 4731,
+      "sha256": "358bfd0e17b5e81ab6dc2a436a76ec8d72dc9c0e5ae1c2bf36dea797e9c8d727"
+    },
+    "gvim-review-private-cp-check-20261012.json": {
+      "sizeBytes": 815,
+      "sha256": "a44938779091f69e34f091e8360b18318287999041fa0df58e3f3c1c076fc5c0"
+    },
+    "gvim-review-rollback-extra-20261012.py": {
+      "sizeBytes": 537,
+      "sha256": "a7310fb52f7a1a85b1ececd3cf4dd4c7b1a3d1f4a8a16b6071873e352aa09546"
+    },
+    "gvim-review-rollback-extra-20261012.json": {
+      "sizeBytes": 167,
+      "sha256": "12a889b0794419669f64621dd90ee526f72b270d00e01786c87ff2bc7389f761"
+    },
+    "gvim-review-supplement-20261012.py": {
+      "sizeBytes": 3723,
+      "sha256": "b8efa4bace21ef38d6726b8308c3b90ba7948c71776ebaf1dc844f59c17cb0cd"
+    },
+    "gvim-review-supplement-20261012.json": {
+      "sizeBytes": 1923,
+      "sha256": "3c531648dbddd0fbddfa9c6d6621ebc85b5557b4d94236c007f7716055ac2167"
+    },
+    "gvim-review-contact-sheet-20261012.jpg": {
+      "sizeBytes": 60560,
+      "sha256": "fe91f8634a8dc08f79e170ecae8c85548c20bbd89a4b326dc14dd2086163882d"
+    },
+    "gvim-review-helper-failures-20261012.json": {
+      "sizeBytes": 2723,
+      "sha256": "8f931c89ed74a8da392afc739ffcde3d74ce70d392b5437cc9f4239d15176ba3"
+    }
+  },
+  "helperFailuresAndCorrections": [
+    {
+      "action": "reviewer initially attempted two incorrectly named previous Picard template paths",
+      "result": "Get-Content missing paths; no script execution or writes",
+      "correction": "rg actual paths found picard-review-host-check-v2 and picard-review-finalize",
+      "repoIndexGuiServiceTufOrCpMutation": false
+    },
+    {
+      "action": "reviewer read first line of large public restart receipt",
+      "result": "tool output truncated; no dependency assertion based on truncated output",
+      "correction": "saved Python scripts parse complete actual JSON and only print small summaries",
+      "privateCpContentsPrinted": false,
+      "repoIndexGuiServiceTufOrCpMutation": false
+    },
+    {
+      "helper": "gvim-review-host-check-20261012.py",
+      "helperPin": {
+        "sizeBytes": 13627,
+        "sha256": "1efc5b68e5f026e7e05a79757cdf2c967765f6bc7a12491ba966cd825594ac0e"
+      },
+      "result": "AssertionError at license substring 2e), which was not literal source text",
+      "failedBeforeHostResultWrite": true,
+      "sourceBytesMismatchEstablished": false,
+      "correction": "gvim-review-host-check-v2-20261012.py uses actual under 2)e); all required checks completed",
+      "repoIndexGuiServiceTufOrCpMutation": false
+    },
+    {
+      "action": "reviewer attempted inline PowerShell python -c string replacement",
+      "result": "SyntaxError unexpected EOF before builder script execution/writes",
+      "correction": "saved gvim-review-build-v2-20261012.py via apply_patch, then executed once",
+      "repoIndexGuiServiceTufOrCpMutation": false
+    },
+    {
+      "action": "reviewer rg search used wildcard path strings",
+      "result": "Windows rg path syntax error; no scripts or dependent mutations",
+      "correction": "existing tuftool exact path already independently located; normal download completed",
+      "repoIndexGuiServiceTufOrCpMutation": false
+    },
+    {
+      "action": "parent additional inline prospective/privacy precheck",
+      "result": "exit1 and tool output0B, specific cause not established; assertions not claimed run",
+      "originalFailureRecordPin": {
+        "sizeBytes": 515,
+        "sha256": "1edaed6e4528b86e2cebcd9b86cdac034bb864e2dd7e45908ac318a721f58b82"
+      },
+      "correction": "saved parent helper reported pass; reviewer independently repeated all105pins and expanded privacy patterns",
+      "correctHelperPin": {
+        "sizeBytes": 768,
+        "sha256": "e5135f67a7f1ca152d9d16c0f6918da7ae6f6d3e3a0ac12478fc88a258058e94"
+      },
+      "repoIndexGuiServiceTufOrCpMutation": false
+    }
+  ],
+  "scope": {
+    "independentEvidenceReadAndFullFiniteTextReconstruction": true,
+    "fullStoreSqliteAllColumnsAndIntegrityReadOnlyVerified": true,
+    "freshGuestFixedDataAnd2311ProgramFilesPerGenerationVerified": true,
+    "eightScreenshotBytesAndFullResolutionVisualPrivacyInspected": true,
+    "reviewerPerformedGuestGuiReplay": false,
+    "reviewerChangedGuiServicesInstallsApplicationDataConfigTufPrivateCheckpointsOrGitIndex": false,
+    "guestCurrentQueryMayWriteExistingRequestScratch": true,
+    "reviewFilesAndTuftoolDownloadsWrittenOnlyUnderTransfer": true,
+    "gitRawFilterAndRelativeNoIndexCheckPerformed": true,
+    "actualGitStageIndexBlobAuditCachedDiffGateCommitAndPushPerformedByReviewer": false,
+    "requiredFutureActualStageIndexCommitChecksAreSeparate": true,
+    "fixedVimCustomLicenseDeclarationAndNineArchiveMembersVerified": true,
+    "installedMainLicense5021BytePinMatchesFixedSource": true,
+    "licenseIsUnconditionalGplOnly": false,
+    "upstreamPublishedInstallerOrSourceDigestVerified": false,
+    "completeBundledLicenseClosureOrSourceBinaryCorrespondenceVerified": false,
+    "authenticodeOrOpenPgpVerified": false,
+    "oldFrozenOriginalMarketPendingLabelsPreserved": true,
+    "originalHelpVersionMeasuredMarketVersionNotSeparatelyMeasured": true,
+    "aboutMeasured": false,
+    "defaultFontChineseReadableBothGenerations": true,
+    "fontSettingsPackagesOrRuntimeFixChanged": false,
+    "actualPersistentUndoFilesExactlyPinned": true,
+    "guiUndoFunctionOrCompleteUndoFormatAccepted": false,
+    "noOsCommandLineOrShellInputClaimedByEvidence": true,
+    "actualThirdOriginalGuiRegistryAndViminfoChangedNewPinsThenRestartStable": true,
+    "oldRegistryAndConfigRawBytesAcrossThirdGuiPreserved": false,
+    "causesAndKeyValueEquivalenceEstablished": false,
+    "allApplicationFilesystemFilesTraversed": false,
+    "completeGvimEditorAccepted": false,
+    "guestNetworkDownloadAccepted": false,
+    "backgroundNetworkAbsenceVerified": false,
+    "directChineseKeyboardInputAccepted": false,
+    "unattendedOrMigrationCrossVersionNewMachineAccepted": false,
+    "guiStoreUpdateRollbackButtonsAccepted": false,
+    "freacResearchOnlyNotInstalledOrAddedToPending": true,
+    "hostTransferOriginalExactStdoutSavedToSeparateHostReceiptFile": false,
+    "transferReadbackBeforeStageSeparatelyVerified": true,
+    "transferRepeatedByReviewer": false,
+    "priorScribusPrivateCanonicalV1FailureRawLossRemainsUnrecoveredAndUnrewritten": true,
+    "allHistoricalDependencyGatesEffectiveOrAllHistoricalRawFailuresPreservedClaimed": false
+  },
+  "limitations": [
+    "Reviewer read five formal job event records and all eight full-size screenshots, without replaying guest GUI. File SaveAs/Open action sequence is based on preserved action/evidence history plus observed saved/reopened outputs.",
+    "Only two UTF8 BOM CRLF small texts, one literal replacement, ASCII append, File SaveAs and explicit fresh Open were verified; this does not establish broad modal editing, scripts/plugins/macros, OLE, terminals, other encodings, printing or complete editor/encoding specifications.",
+    "Official HTTPS installer/source records and local full digests, fixed cached tag ref/peel association and nine exact tar members were checked; no upstream published digest, PGP/Authenticode, source-binary correspondence or reproducible build was verified.",
+    "Fixed Vim custom license and installed5021-byte matching license pins do not establish complete bundled license closure or unconditional GPL-only licensing.",
+    "Selected fixed data, two2311-file program inventories, three registries, selected Vim-named prefix-user configuration and exact persistent undo files were checked; this is not full application filesystem traversal.",
+    "Third original GUI changed system.reg, user.reg and _viminfo bytes with actual287/20/41-line private diffs. Cause and key-value equivalence remain undetermined; current observed new pins are stable across normal restart.",
+    "Original successful host transfer exact stdout remains only in tool history; separate readback is not a recreated original transfer receipt. No retransfer was performed.",
+    "All Git checks so far are read-only raw/filter and relative no-index checks with an empty index. Real stage/index blob comparison/cached diff check/commit/push remain separate required gates."
+  ]
+}

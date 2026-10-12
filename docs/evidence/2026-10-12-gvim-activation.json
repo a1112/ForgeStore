@@ -1,0 +1,55 @@
+{
+  "activatedPreview": true,
+  "metadataVersion": 72,
+  "rootVersion": 1,
+  "entries": 59,
+  "coreJobs": 444,
+  "fullStoreRows": 132,
+  "entry": {
+    "compatibility": {
+      "evidence": "windows-gvim-20261012.acceptance.json#gvim",
+      "status": "tested"
+    },
+    "delivery": {
+      "artifact": {
+        "sha256": "243ed9ed2951c26d27801afbb4cc5fa92ed6395f8f388c6d432b62012c9f3684",
+        "size": 11654015,
+        "target": "gvim_9.2.0000_x64.exe",
+        "url": "https://www.vim.org/downloads/gvim_9.2.0000_x64.exe"
+      },
+      "backend": "compatforge",
+      "reviewedApplicationId": "gvim"
+    },
+    "id": "gvim",
+    "license": "Vim (custom upstream license; full bundle closure unverified)",
+    "name": {
+      "en": "gVim",
+      "zhCN": "gVim 文本编辑器"
+    },
+    "origin": "https://www.vim.org/",
+    "permissions": [
+      "user-files"
+    ],
+    "publisher": "Vim Project",
+    "summary": {
+      "en": "Limited Chinese-name UTF8 text literal edit, native Save As and fresh Open tested; broad editor/scripting/plugins unverified.",
+      "zhCN": "仅中文名小型UTF8文本普通编辑、原生另存和新进程打开通过；广泛编辑、脚本和插件未验收"
+    },
+    "version": "9.2.0000"
+  },
+  "installed": {
+    "appId": "gvim",
+    "backend": "compatforge",
+    "canRollback": false,
+    "version": "9.2.0000"
+  },
+  "oldFullFieldsAndEntriesPreserved": true,
+  "checkpoint": {
+    "file": "after-activation.json",
+    "sha256": "d3628c5fa43f02b6ca70c7cd73f876490265bc9b8c6905baffb56e02295f5692",
+    "coreJobs": 444,
+    "fullStoreRows": 132
+  },
+  "independentMarketGenerationPending": true,
+  "countsAsCompleted": false
+}

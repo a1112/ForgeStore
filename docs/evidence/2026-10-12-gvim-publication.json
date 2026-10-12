@@ -1,0 +1,987 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "applicationId": "gvim",
+  "version": "9.2.0000",
+  "installed": true,
+  "originalGuiAccepted": true,
+  "independentMarketGuiAccepted": true,
+  "localMarketPublished": true,
+  "countsAsOneDistinctWindowsApp": true,
+  "acceptedDistinctWindowsApps": 57,
+  "unresolvedCandidates": 14,
+  "signedCatalogue": "catalogue/candidate-v63/tuf",
+  "metadataVersion": 72,
+  "rootVersion": 1,
+  "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
+  "catalogueEntries": 59,
+  "excludedFixtures": 2,
+  "signedActualTargets": 123,
+  "publicCatalogueFiles": 68,
+  "originalAcceptance": {
+    "reference": "windows-gvim-20261012.acceptance.json",
+    "sha256": "9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0"
+  },
+  "sourceEvidence": {
+    "reference": "2026-10-12-gvim-source.json",
+    "sha256": "6fd62c3d04011eabc37d70a1d40a1407300ce3f1b9060af6868355af887e0ed2"
+  },
+  "originalGeneration": "gen-job-1791799154641-1",
+  "marketGeneration": "gen-job-1791800485389-4",
+  "definitionDigest": "sha256:7da009ffd7341dc7f262a1a1cb99af376c015ca6e87437573273eec3e9372cd5",
+  "originalSave": {
+    "fixedDataPins": {
+      "drive_c/VimTests/原始编辑.txt": {
+        "sizeBytes": 76,
+        "sha256": "e65e2539b4503d7145677d68a10cc08e301b6dd99f79ab6faf5d99c4b8aea331"
+      },
+      "drive_c/VimTests/original.txt": {
+        "sizeBytes": 87,
+        "sha256": "3be5bc054468ef7aa7db026168a3c7dcb804b7f5fe0e7bbc0d6e39345ef32f6d"
+      }
+    },
+    "inputBytesPreserved": true,
+    "completeOutputBytesExactlyEqualExpected": true,
+    "utf8BomPreserved": true,
+    "crlfCount": 4,
+    "decodedText": "ForgeOS gVim ORIGINAL\r\n中文内容：保存与重开。\r\nSTATUS AFTER\r\nORIGINAL42\r\n",
+    "installedProgramPinsPreserved": true,
+    "installedFileCount": 2311,
+    "fullEditorOrEncodingSpecificationAccepted": false
+  },
+  "marketSave": {
+    "fixedDataPins": {
+      "drive_c/VimTests/市场编辑.txt": {
+        "sizeBytes": 74,
+        "sha256": "38bc0c07601f94216743075db5304c0ed834193e7b23caf29b4d1d97b0b84957"
+      },
+      "drive_c/VimTests/market.txt": {
+        "sizeBytes": 83,
+        "sha256": "92dbe12e22a1bc36380e7e396adb0abe7d91c082d10802326d6f7973c060e9cb"
+      }
+    },
+    "inputBytesPreserved": true,
+    "completeOutputBytesExactlyEqualExpected": true,
+    "utf8BomPreserved": true,
+    "crlfCount": 4,
+    "decodedText": "ForgeOS gVim MARKET\r\n中文内容：保存与重开。\r\nSTATUS AFTER\r\nMARKET42\r\n",
+    "installedProgramPinsPreserved": true,
+    "installedFileCount": 2311,
+    "fullEditorOrEncodingSpecificationAccepted": false
+  },
+  "independentHostChecks": {
+    "original": {
+      "passed": true,
+      "method": "Complete input/output raw readback; independently reconstruct literal replacement+ASCII append from original input, then utf-8-sig decode and CRLF count",
+      "inputPin": {
+        "sizeBytes": 76,
+        "sha256": "e65e2539b4503d7145677d68a10cc08e301b6dd99f79ab6faf5d99c4b8aea331"
+      },
+      "outputPin": {
+        "sizeBytes": 87,
+        "sha256": "3be5bc054468ef7aa7db026168a3c7dcb804b7f5fe0e7bbc0d6e39345ef32f6d"
+      },
+      "decodedText": "ForgeOS gVim ORIGINAL\r\n中文内容：保存与重开。\r\nSTATUS AFTER\r\nORIGINAL42\r\n",
+      "fullVimOrEncodingSpecificationAccepted": false
+    },
+    "market": {
+      "passed": true,
+      "method": "Complete input/output raw readback; independent literal replacement+ASCII append reconstructed from immutable input then utf-8-sig decode/four CRLF count",
+      "inputPin": {
+        "sizeBytes": 74,
+        "sha256": "38bc0c07601f94216743075db5304c0ed834193e7b23caf29b4d1d97b0b84957"
+      },
+      "outputPin": {
+        "sizeBytes": 83,
+        "sha256": "92dbe12e22a1bc36380e7e396adb0abe7d91c082d10802326d6f7973c060e9cb"
+      },
+      "decodedText": "ForgeOS gVim MARKET\r\n中文内容：保存与重开。\r\nSTATUS AFTER\r\nMARKET42\r\n",
+      "fullVimOrEncodingSpecificationAccepted": false
+    }
+  },
+  "eachGenerationInstalledFileCount": 2311,
+  "identicalInstalledFileCount": 2311,
+  "normalFormalGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "normalQuitMethod": "File/Exit",
+  "formalGuiJobs": [
+    {
+      "applicationId": "gvim",
+      "createdAtMilliseconds": 1791799275301,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 255065,
+          "requestId": "job-1791799275301-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 315419,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix",
+          "requestId": "job-1791799275301-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 315462,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791799275301-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791799154641-1",
+      "id": "job-1791799275301-2",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 4744,
+        "fileDigest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+        "fileSizeBytes": 206848,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "vim64.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 50176,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 50160,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 39424,
+            "readable": true,
+            "virtualAddress": 57344,
+            "virtualSize": 39090,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 3072,
+            "readable": true,
+            "virtualAddress": 98304,
+            "virtualSize": 7264,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 4096,
+            "readable": true,
+            "virtualAddress": 106496,
+            "virtualSize": 3732,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 110592,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 106496,
+            "readable": true,
+            "virtualAddress": 114688,
+            "virtualSize": 106144,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 2048,
+            "readable": true,
+            "virtualAddress": 221184,
+            "virtualSize": 1640,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791799154641-1",
+          "digest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "gvim.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix/drive_c/Vim/vim92/gvim.exe",
+          "sizeBytes": 206848,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix/drive_c/Vim/vim92/gvim.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1"
+        },
+        "requestId": "job-1791799275301-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791799592779
+    },
+    {
+      "applicationId": "gvim",
+      "createdAtMilliseconds": 1791799746589,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 255769,
+          "requestId": "job-1791799746589-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 143457,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix",
+          "requestId": "job-1791799746589-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 143499,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791799746589-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791799154641-1",
+      "id": "job-1791799746589-3",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 4744,
+        "fileDigest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+        "fileSizeBytes": 206848,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "vim64.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 50176,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 50160,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 39424,
+            "readable": true,
+            "virtualAddress": 57344,
+            "virtualSize": 39090,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 3072,
+            "readable": true,
+            "virtualAddress": 98304,
+            "virtualSize": 7264,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 4096,
+            "readable": true,
+            "virtualAddress": 106496,
+            "virtualSize": 3732,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 110592,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 106496,
+            "readable": true,
+            "virtualAddress": 114688,
+            "virtualSize": 106144,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 2048,
+            "readable": true,
+            "virtualAddress": 221184,
+            "virtualSize": 1640,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791799154641-1",
+          "digest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "gvim.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix/drive_c/Vim/vim92/gvim.exe",
+          "sizeBytes": 206848,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix/drive_c/Vim/vim92/gvim.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1"
+        },
+        "requestId": "job-1791799746589-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791799892038
+    },
+    {
+      "applicationId": "gvim",
+      "createdAtMilliseconds": 1791800534247,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 257431,
+          "requestId": "job-1791800534247-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 203054,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix",
+          "requestId": "job-1791800534247-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 203097,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791800534247-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791800485389-4",
+      "id": "job-1791800534247-5",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 4744,
+        "fileDigest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+        "fileSizeBytes": 206848,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "vim64.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 50176,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 50160,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 39424,
+            "readable": true,
+            "virtualAddress": 57344,
+            "virtualSize": 39090,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 3072,
+            "readable": true,
+            "virtualAddress": 98304,
+            "virtualSize": 7264,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 4096,
+            "readable": true,
+            "virtualAddress": 106496,
+            "virtualSize": 3732,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 110592,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 106496,
+            "readable": true,
+            "virtualAddress": 114688,
+            "virtualSize": 106144,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 2048,
+            "readable": true,
+            "virtualAddress": 221184,
+            "virtualSize": 1640,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791800485389-4",
+          "digest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "gvim.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix/drive_c/Vim/vim92/gvim.exe",
+          "sizeBytes": 206848,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix/drive_c/Vim/vim92/gvim.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4"
+        },
+        "requestId": "job-1791800534247-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791800739531
+    },
+    {
+      "applicationId": "gvim",
+      "createdAtMilliseconds": 1791800770948,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 257885,
+          "requestId": "job-1791800770948-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 55311,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix",
+          "requestId": "job-1791800770948-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 55354,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791800770948-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791800485389-4",
+      "id": "job-1791800770948-6",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 4744,
+        "fileDigest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+        "fileSizeBytes": 206848,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "kernel32.dll",
+          "vim64.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 50176,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 50160,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 39424,
+            "readable": true,
+            "virtualAddress": 57344,
+            "virtualSize": 39090,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 3072,
+            "readable": true,
+            "virtualAddress": 98304,
+            "virtualSize": 7264,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 4096,
+            "readable": true,
+            "virtualAddress": 106496,
+            "virtualSize": 3732,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".fptable",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 110592,
+            "virtualSize": 256,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 106496,
+            "readable": true,
+            "virtualAddress": 114688,
+            "virtualSize": 106144,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 2048,
+            "readable": true,
+            "virtualAddress": 221184,
+            "virtualSize": 1640,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791800485389-4",
+          "digest": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "gvim.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix/drive_c/Vim/vim92/gvim.exe",
+          "sizeBytes": 206848,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix/drive_c/Vim/vim92/gvim.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_jWNpJg"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791800485389-4"
+        },
+        "requestId": "job-1791800770948-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791800828190
+    },
+    {
+      "id": "job-1791801007224-7",
+      "generationId": "gen-job-1791799154641-1",
+      "kind": "launch",
+      "status": "succeeded",
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 258697,
+          "requestId": "job-1791801007224-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 337245,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791799154641-1/prefix",
+          "requestId": "job-1791801007224-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 337287,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791801007224-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ]
+    }
+  ],
+  "storeUpdateJobId": "ea1713ac-1a3d-467d-b004-a8ba7e1960ee",
+  "rollbackVerification": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "gvim",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "8d3be3b6-cc4e-4554-ba78-a02d933c864b",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791799154641-1",
+    "beforeRollbackCheckpointSavedAndReadBack": true,
+    "beforeRollbackCoreJobs": 447,
+    "beforeRollbackStoreRows": 133,
+    "afterRollbackCoreJobs": 447,
+    "afterRollbackStoreRows": 134,
+    "allOldFullFieldsPreserved": true,
+    "allGenerationRecordsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "ab4206aca3434588ce0b2798d31d5f09c472bf60c22e7cd5018dec9760624e25",
+      "coreJobs": 447,
+      "fullStoreRows": 134
+    }
+  },
+  "normalRestartFullFieldEqualityPassed": true,
+  "coreJobs": 448,
+  "fullStoreRows": 134,
+  "currentPrivateCheckpoint": {
+    "file": "gvim-20261012/after-restart.json",
+    "sha256": "da2286d23b50fdca7c25d1e48d56956f1f4b0d4944d7d83c4282017d447cdbc8"
+  },
+  "allOldGenerationFieldsAndFixedEvidenceDataPreserved": true,
+  "oldRootAndAllSignedHistoryBytesPreserved": true,
+  "old120NonCatalogueTargetPinsPreserved": true,
+  "changedOldTargets": [
+    "catalogue.json"
+  ],
+  "copyqActiveCatalogueEntryAbsent": true,
+  "oldFrozenOriginalAndSourcePendingPhaseLabelsPreserved": true,
+  "oldOriginalRegistryAndConfigBytesChangedAfterThirdGui": true,
+  "runtimeCoreProgramGlobalContextLauncherEnvironmentWorkingDirectoryFontDllRepairApplied": false,
+  "mainSourceLicense": "Vim",
+  "installedMainLicenseSourceRawBytesEqual": true,
+  "completeBundledLicenseClosureVerified": false,
+  "upstreamPublishedInstallerDigestVerified": false,
+  "upstreamPublishedSourceDigestVerified": false,
+  "guiUpdateRollbackButtonsAccepted": false,
+  "guestNetworkDownloadAccepted": false,
+  "backgroundNetworkAbsentVerified": false,
+  "directChineseKeyboardInputAccepted": false,
+  "newMachineRegistrationAccepted": false,
+  "migrationAccepted": false,
+  "crossVersionUpgradeAccepted": false,
+  "unattendedStartupAccepted": false,
+  "completeGvimApplicationAccepted": false,
+  "allAppFilesystemFilesTraversed": false,
+  "marketFiniteAdditionalScope": "74B Chinese-name UTF8 BOM/CRLF text, literal native replace plus ASCII append, native ASCII SaveAs83B and explicit fresh formal Open",
+  "originalReceiptLimitsHistoricalAtFreeze": [
+    "Only one tiny Chinese-name UTF8 BOM/CRLF text opened, literal STATUS BEFORE->AFTER via native Find/Replace, ASCII marker appended with G/o/Escape editor keys, native SaveAs ASCII path and explicit new formal File/Open tested. Synthetic texts not applications.",
+    "Original76B input unchanged,87B output complete bytes/UTF8 BOM/four CRLF and Chinese content independently matched. Native undo file and _viminfo pins observed, not full undo/history specification acceptance.",
+    "Help/Version measured VIM9.2(2026 Feb14), compiled Feb14 2026, MSWindows64bit GUI/console OLE. Displayed features do not imply their acceptance; About not separately measured.",
+    "No broad Vim modal key coverage, Vimscript/Vim9/plugins/macros/terminal/shell/Python/Lua/Perl/Ruby/OLE/network/diff/tabs/projects/other encodings/large bad files/printing or full editor specification acceptance.",
+    "No direct Chinese keyboard entry, guest networking/new-machine registration/migration/cross-version/unattended or GUI Store update/rollback-button acceptance. No background-network absence claim.",
+    "Source custom Vim license and actual installed LICENSE.txt5021B exact source bytes. Full bundled license closure, Authenticode/GPG/source-binary correspondence/reproducible build/latest unverified; local HTTPS hashes not upstream published digests.",
+    "No Core/program/global context/definition/launcher/environment/workingDirectory/font package/DLL/runtime fix; default NSIS sections/highest template not proof of full install behaviour, no associations or real UAC/admin.",
+    "Independent market, cached same-version update/exact original rollback/normal restart pending at original freeze; completed later evidence separate."
+  ],
+  "reviewIndexCommitPushPendingAtPublicationFreeze": true
+}
