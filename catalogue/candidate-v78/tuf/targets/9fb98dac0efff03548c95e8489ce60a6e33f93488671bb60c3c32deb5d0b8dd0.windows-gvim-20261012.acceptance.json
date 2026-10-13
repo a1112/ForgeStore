@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "gvim",
+      "version": "9.2.0000",
+      "sha256": "243ed9ed2951c26d27801afbb4cc5fa92ed6395f8f388c6d432b62012c9f3684",
+      "size": 11654015,
+      "generationId": "gen-job-1791799154641-1",
+      "definitionDigest": "sha256:7da009ffd7341dc7f262a1a1cb99af376c015ca6e87437573273eec3e9372cd5",
+      "launcherSha256": "sha256:2ee6df23158e5fc836df737917e54db0d9b128a587478000cb7489ea40e6067b",
+      "guiFileOperation": "passed-limited-text-literal-edit-save-as-and-fresh-open",
+      "save": {
+        "fixedDataPins": {
+          "drive_c/VimTests/原始编辑.txt": {
+            "sizeBytes": 76,
+            "sha256": "e65e2539b4503d7145677d68a10cc08e301b6dd99f79ab6faf5d99c4b8aea331"
+          },
+          "drive_c/VimTests/original.txt": {
+            "sizeBytes": 87,
+            "sha256": "3be5bc054468ef7aa7db026168a3c7dcb804b7f5fe0e7bbc0d6e39345ef32f6d"
+          }
+        },
+        "inputBytesPreserved": true,
+        "completeOutputBytesExactlyEqualExpected": true,
+        "utf8BomPreserved": true,
+        "crlfCount": 4,
+        "decodedText": "ForgeOS gVim ORIGINAL\r\n中文内容：保存与重开。\r\nSTATUS AFTER\r\nORIGINAL42\r\n",
+        "installedProgramPinsPreserved": true,
+        "installedFileCount": 2311,
+        "fullEditorOrEncodingSpecificationAccepted": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "gvim-01-original-chinese-input-20261012.jpg": {
+          "sizeBytes": 32636,
+          "sha256": "6358c30fa0c750e2053414f1a763fe9db958db7584ecf84bc995a1e2e348e261",
+          "actualEncoding": "JPEG"
+        },
+        "gvim-02-original-save-as-20261012.jpg": {
+          "sizeBytes": 34325,
+          "sha256": "ca0a28c0baadc9041d09983a2b64af6aa2ee3814adf5ac13c0f966c36a5f3dd6",
+          "actualEncoding": "JPEG"
+        },
+        "gvim-03-version-20261012.jpg": {
+          "sizeBytes": 126548,
+          "sha256": "b5bdd4310f898c4b5346fcf142a8f028b7ffb39feac11e9936e78c7c26936f98",
+          "actualEncoding": "JPEG"
+        },
+        "gvim-04-original-new-process-open-20261012.jpg": {
+          "sizeBytes": 33066,
+          "sha256": "a61ac808d30bd00c5cfd3eec172147b615d5109dfdbd07b464df7f9dfb577ccb",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-gvim-source.json",
+    "sha256": "6fd62c3d04011eabc37d70a1d40a1407300ce3f1b9060af6868355af887e0ed2"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-gvim-gui.json",
+    "sha256": "a41fdc92dec368314900fe838ca9867e65564c94583cf8dd43668326c4ecfbd3"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-gvim-failures.json",
+    "sha256": "4f6cb0f194324103de8a09ea0798c7db3ff8d2e6c5c6ca042e8aeabf25845bcc"
+  },
+  "limits": [
+    "Only one tiny Chinese-name UTF8 BOM/CRLF text opened, literal STATUS BEFORE->AFTER via native Find/Replace, ASCII marker appended with G/o/Escape editor keys, native SaveAs ASCII path and explicit new formal File/Open tested. Synthetic texts not applications.",
+    "Original76B input unchanged,87B output complete bytes/UTF8 BOM/four CRLF and Chinese content independently matched. Native undo file and _viminfo pins observed, not full undo/history specification acceptance.",
+    "Help/Version measured VIM9.2(2026 Feb14), compiled Feb14 2026, MSWindows64bit GUI/console OLE. Displayed features do not imply their acceptance; About not separately measured.",
+    "No broad Vim modal key coverage, Vimscript/Vim9/plugins/macros/terminal/shell/Python/Lua/Perl/Ruby/OLE/network/diff/tabs/projects/other encodings/large bad files/printing or full editor specification acceptance.",
+    "No direct Chinese keyboard entry, guest networking/new-machine registration/migration/cross-version/unattended or GUI Store update/rollback-button acceptance. No background-network absence claim.",
+    "Source custom Vim license and actual installed LICENSE.txt5021B exact source bytes. Full bundled license closure, Authenticode/GPG/source-binary correspondence/reproducible build/latest unverified; local HTTPS hashes not upstream published digests.",
+    "No Core/program/global context/definition/launcher/environment/workingDirectory/font package/DLL/runtime fix; default NSIS sections/highest template not proof of full install behaviour, no associations or real UAC/admin.",
+    "Independent market, cached same-version update/exact original rollback/normal restart pending at original freeze; completed later evidence separate."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS KVM; Wine11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "nomacs",
+      "version": "3.22.3",
+      "sha256": "26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b",
+      "size": 47280128,
+      "generationId": "gen-job-1791727644409-1",
+      "definitionDigest": "sha256:bbf00d08bc02eadd3c8afb74e8beb651bee658750a55f424ada301f5eb0e478a",
+      "launcherSha256": "sha256:78e599a7502a2341b16d6cce130e5e5a290238b10829d56fe8ed216579f358d1",
+      "guiFileOperation": "passed-limited-RGB-PNG-render-clockwise-rotate-save-fresh-reopen",
+      "save": {
+        "generationId": "gen-job-1791727644409-1",
+        "inputRelativePath": "NomacsTests/原始彩色.png",
+        "inputPin": {
+          "sizeBytes": 160,
+          "sha256": "777aee21cebbf58af183adf2e4ad7053b9cb06ca2bcc758d3fcb1be4e29dca5e"
+        },
+        "outputRelativePath": "NomacsTests/original-rotated.png",
+        "outputPin": {
+          "sizeBytes": 591,
+          "sha256": "75d66635ac920f71b6a248ea3715a0fd83a053a6255234b82b46e6ecddf1def2"
+        },
+        "width": 48,
+        "height": 64,
+        "decodedRgbSha256": "a750ea5758c3702d52bb60f62b5b32085bb0c1df22d8b9c685d47ea8c96abf4f",
+        "pixelCount": 3072,
+        "allRgbPixelsMatchIndependentClockwiseRotation": true,
+        "inputUnchanged": true
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "gui-01-welcome.jpg": {
+          "sizeBytes": 25218,
+          "sha256": "4a863f9cf4886b4b4b5698fe8215ef067cb59a3c6d12c2cf32431cb2b12e9af3"
+        },
+        "gui-02-version-notice.jpg": {
+          "sizeBytes": 22793,
+          "sha256": "a5f0c112b707a3dc20537dedb7e0fe570cdfa05e90e35f9da0d27f7d439ab470"
+        },
+        "gui-03-original-rotated.jpg": {
+          "sizeBytes": 15050,
+          "sha256": "82e6465f50b34a0efecf2ffde6b9e0d34c847a8ff34cc67fc34c292f31f52154"
+        },
+        "gui-04-original-saved.jpg": {
+          "sizeBytes": 15253,
+          "sha256": "f8047c52658ebd100a53317be9f6e18a20d08c4edf42fd01ae5f02df9ce63e56"
+        },
+        "gui-05-about.jpg": {
+          "sizeBytes": 27605,
+          "sha256": "9e32c4587d5495572e4b835a0c1a3aba1aed30ca0f98414282e264b3617661eb"
+        },
+        "gui-06-original-reopened.jpg": {
+          "sizeBytes": 13664,
+          "sha256": "d813656fe9fcaabcc5c848c6ee5c8896886c01ef8115a161ff3f0256c76f8421"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-nomacs-source.json",
+    "sha256": "153ff84ea09e5afa71bce4c89cfc408a9fbfe2e19694882f00534f01694befce"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-nomacs-gui.json",
+    "sha256": "46001b0b2c877e2085e25f1b5caf17075d640411c95fb6a7f1e00bda3d6365ec"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-11-nomacs-failures.json",
+    "sha256": "e17c4cdb22e74f9411330d47bdeea9d6e4d0cf4089d97fc3e60bb502b57f784a"
+  },
+  "limits": [
+    "Only one small 64x48 RGB PNG fixture so far: Chinese-name input opened, clockwise 90-degree rotation, GUI Save As to ASCII PNG path and explicit fresh formal-process reopen. All3072 RGB pixels of48x64 output match independent rotation. Synthetic fixture is not another application.",
+    "First process Welcome required selecting language and declining Set As Default Viewer; image metadata checkbox retained. Version notification was cancelled. Untested unattended startup and network download; presence of notification is not network-delivery acceptance. CtrlQ opens Quick Launch rather than Exit; actual tested normal exit is File/Exit.",
+    "Main program fixed main.cpp GPL-3.0-or-later and root GPL3 text. Official installer matches official GitHub asset size/digest. Fixed source commit archive has only locally computed SHA; source upstream digest, installed COPYING comparison, complete Qt/OpenCV/plugins/translations license closure, Authenticode/OpenPGP, binary/source correspondence and reproducible build unverified. All91 installed files pinned, no LICENSE/COPYING-named installed file observed.",
+    "Only RGB PNG tested. Other formats/alpha/animation, raw image and multipage support, crop/resize/color operations, metadata changes, plugin/batch/synchronization, print/fullscreen, large/corrupt files, direct Chinese keyboard input, all advanced features, fresh registration, configuration migration and cross-version upgrade unverified.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Existing managed MSI backend used. Independent market generation, cached same-version update, exact original rollback and normal services restart pending at this original freeze; later completion recorded separately. GUI update/rollback buttons unverified."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

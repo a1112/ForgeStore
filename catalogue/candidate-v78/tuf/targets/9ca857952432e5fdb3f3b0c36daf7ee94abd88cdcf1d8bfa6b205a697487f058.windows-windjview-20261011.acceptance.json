@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS KVM; Wine11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "windjview",
+      "version": "2.1",
+      "sha256": "c46a0b6b2c1c289b99fc92212443c911b80a899ddc772442e1a47264c9039c5c",
+      "size": 2957069,
+      "generationId": "gen-job-1791723849468-1",
+      "definitionDigest": "sha256:2c78fbaec9293ad451292664191f749c955c1f21bfd1a4c5f47be229789052a5",
+      "launcherSha256": "sha256:d1049efef77554446171ba94c69cee78bb6b0b9fdade3e1b5dc93468da6ce0c0",
+      "guiFileOperation": "passed-limited-single-bitonal-DjVu-render-rotate-BMP-export-fresh-reopen",
+      "inputPin": {
+        "sizeBytes": 110,
+        "sha256": "1df8356e8381bffa73ce824c10e9a6817ea9bcd1a342b943a2976acbd8108715"
+      },
+      "export": {
+        "passed": true,
+        "generationId": "gen-job-1791723849468-1",
+        "inputUnchanged": true,
+        "output": {
+          "sizeBytes": 6206,
+          "sha256": "318079389df6f071d9121eff7ab1b622da7f8aed1ae060b0cd725a43979911fe"
+        },
+        "dimensions": [
+          192,
+          256
+        ],
+        "bitsPerPixel": 1,
+        "clockwiseRotationDegrees": 90,
+        "allPixelsCompared": 49152,
+        "blackPixels": 3476,
+        "fixedPbmPixelPayloadExact": true
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "interactiveInstallerRequired": true,
+      "screenshots": {
+        "01-installer-welcome.jpg": {
+          "sizeBytes": 30605,
+          "sha256": "2a2de9f886524ed881c8b7b4036622e8053f4daf1ca3b923818d322930d84fe5"
+        },
+        "02-installer-components.jpg": {
+          "sizeBytes": 27435,
+          "sha256": "ec1481053ca59c1f079c34bde511b77f207b5a099633752008ffca05321376ab"
+        },
+        "03-installer-path.jpg": {
+          "sizeBytes": 26806,
+          "sha256": "6f746cf02c42b5c33a471459ed45763b5504d879764fec6ef5a17077dc54556f"
+        },
+        "04-installer-complete.jpg": {
+          "sizeBytes": 29046,
+          "sha256": "030a82d86462f5d8957d47b4d0ddbc510098bf8cd7580983a9649f63e943d053"
+        },
+        "05-default-viewer-notice.jpg": {
+          "sizeBytes": 31724,
+          "sha256": "ffd3ead9ffb3e04e9f1c9b2c880bdcebf266842cd5a23e3d7e1f25579933f8cd"
+        },
+        "06-about.jpg": {
+          "sizeBytes": 25352,
+          "sha256": "91a7210212a3ad81ead8334a35b10fad177c555b2916d8e3cdac4cce8caec46c"
+        },
+        "07-original-render.jpg": {
+          "sizeBytes": 20035,
+          "sha256": "95d704e4835fa87ccc386dad2a864ca70d0556a521e1c7f900411749bc47732b"
+        },
+        "08-original-rotated.jpg": {
+          "sizeBytes": 19573,
+          "sha256": "a505b05eec8a902db5cd4e4139eac312b893a8bcf7752eda60a38c060789c61d"
+        },
+        "09-original-bmp-format.jpg": {
+          "sizeBytes": 24636,
+          "sha256": "d707aecf706305635837b4bad76ac141a76cf4ebdddb1d9f85226708c4827dff"
+        },
+        "10-original-exported.jpg": {
+          "sizeBytes": 19466,
+          "sha256": "411a6458aacba4c8b46c528dc2971c8dda6d4b299804ecfccaf5b20dc45ab401"
+        },
+        "11-original-reopened.jpg": {
+          "sizeBytes": 28073,
+          "sha256": "028680f1e36e6be39325a05c55dd84dfe037be206edca52b0561de4269e43f1f"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-windjview-source.json",
+    "sha256": "0f056db8dc120c2a9782fd24950cd70397850940d9a44112fc131d892fc1461f"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-windjview-gui.json",
+    "sha256": "1e2ac9b02a12756e23041aff793844c83aef2f62d3eeef2542916752bee4f131"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-11-windjview-failures.json",
+    "sha256": "4cf375b91114c6bb85390aa1633a135028602182f1bd55a730e16d1ee770f51f"
+  },
+  "limits": [
+    "Only one small lossless bitonal 256x192 single-page DjVu original fixture so far: Chinese-name input opened, GUI clockwise 90-degree rotation and explicit BMP export, all 49152 pixels compared with independent original PBM, explicit new-process reopen with persisted rotation. Synthetic fixtures and isolated DjVuLibre encoder are not apps.",
+    "Interactive NSIS installation required. English flow showed no promotion page, file association and Start Menu link components unchecked, GUI application directory manually selected C:\\WinDjView, automatic Run unchecked. /D argument was submitted but GUI initially showed default Program Files path; effectiveness of /D and unattended installation are not accepted.",
+    "Static official installer has Yandex bitmap resources and downloader.exe NSIS entry. Only WinDjView.exe and uninstall.exe remain in the tested application directory; tested Wine registry contains no Yandex substring. This is not a complete dynamic trace, no guarantee of all bundled behavior, no claim downloader did not execute. Default viewer prompt requires a normal No on each tested process; unattended startup not accepted.",
+    "Installer and source locally fixed SHA-256 through official HTTPS mirror downloads. Upstream published installer/source SHA not verified; installer was listed as modified 2023 while source archive dates 2015. Binary/source correspondence, Authenticode/OpenPGP and reproducible build not verified. Main source and official homepage GPL-2.0-or-later; full bundled license closure and installed COPYING comparison unverified. Source first byte p in p// is preserved verbatim; build not claimed.",
+    "Color/multipage/text layers, OCR/search/copy, bookmarks/annotations, printing, other export formats, full screen, large/corrupt files, direct Chinese keyboard input, all advanced features, guest network download, fresh machine registration, migration/cross-version upgrade unverified. GUI update/rollback buttons unverified.",
+    "No Core/program/global context/launcher environment/working directory/font/DLL/runtime repair. Initial PNG content in .bmp-named file retained; file-type mismatch failed before Quit/reopen. Actual new BMP chosen through GUI and validated, verifier never rewrote output.",
+    "Independent market generation, cached same-version update, exact rollback and normal services restart are pending at original freeze; later completion recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

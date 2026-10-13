@@ -1,0 +1,2155 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "poedit",
+      "version": "3.7",
+      "sha256": "83d6ca0a5a0706309bdc1ed214e735fd4b44a8ac5b82817c4bc914fbd94f5904",
+      "size": 17869552,
+      "generationId": "gen-job-1791776663624-1",
+      "definitionDigest": "sha256:7a6e5cf8f975718f3c6b1650056ad613548a225ae58801f8b5f41a0abc95820a",
+      "launcherSha256": "sha256:686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d",
+      "guiFileOperation": "passed-limited-two-po-translations-save-as-auto-mo-fresh-open",
+      "save": {
+        "generationId": "gen-job-1791776663624-1",
+        "fixedDataPins": {
+          "drive_c/PoeditTests/原始翻译.po": {
+            "sizeBytes": 476,
+            "sha256": "e9e57cd35c878cd0a45986a1b647a68df66ebb9be1f2ae9ee0a8d00f62624e49"
+          },
+          "drive_c/PoeditTests/original.po": {
+            "sizeBytes": 524,
+            "sha256": "42cf534fe11d97adcae9b6b2c20469f700d91a30fb8e133472d0f9d1169fcee7"
+          },
+          "drive_c/PoeditTests/original.mo": {
+            "sizeBytes": 482,
+            "sha256": "b330457f8235a35a8fb228c09140f45ed5c4b68efd0a8127702a17afc5bdb347"
+          }
+        },
+        "output": {
+          "sizeBytes": 524,
+          "sha256": "42cf534fe11d97adcae9b6b2c20469f700d91a30fb8e133472d0f9d1169fcee7"
+        },
+        "compiledMo": {
+          "sizeBytes": 482,
+          "sha256": "b330457f8235a35a8fb228c09140f45ed5c4b68efd0a8127702a17afc5bdb347"
+        },
+        "parsedTranslations": {
+          "STATUS": "中文 AFTER ORIGINAL42",
+          "SECOND": "ORIGINAL SECOND42"
+        },
+        "poAndMoTranslationEntriesExactlyMatch": true,
+        "poMoHeadersDifferOnlyByOmittedPotCreationDate": true,
+        "inputOriginalBytesPreserved": true,
+        "applicationConfigPins": {
+          "drive_c/users/forge/AppData/Roaming/Poedit/TranslationMemory/segments.gen": {
+            "sizeBytes": 20,
+            "sha256": "649721ff455e9b100e691a3857696350e14364029c34c9438ab3ea9665c91292"
+          },
+          "drive_c/users/forge/AppData/Roaming/Poedit/TranslationMemory/segments_1": {
+            "sizeBytes": 32,
+            "sha256": "a8165ca6ed4275adfa7cd10b18d8846036b2c460f5eb8eebcddce042603ab1b0"
+          },
+          "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/settings.dat": {
+            "sizeBytes": 40,
+            "sha256": "27489be0536619ac6ad9600f6d73ba3aaddb0b00b128ee82a06180c083c98b37"
+          },
+          "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/metadata": {
+            "sizeBytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/dce30ac6-fbf1-4d68-7b0b-b00c1fa2fda8.run/__sentry-event": {
+            "sizeBytes": 501,
+            "sha256": "dc84ae1ccc4ef6f3f15b89b32bfbf8f53ff6f8e879f1fd63a5f56aeaadd176f8"
+          },
+          "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/dce30ac6-fbf1-4d68-7b0b-b00c1fa2fda8.run/__sentry-breadcrumb2": {
+            "sizeBytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "drive_c/users/forge/AppData/Local/Poedit/Cache/Sentry/dce30ac6-fbf1-4d68-7b0b-b00c1fa2fda8.run/__sentry-breadcrumb1": {
+            "sizeBytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "registryPins": {
+          "system.reg": {
+            "sizeBytes": 3902050,
+            "sha256": "3afb0373639cd12b7df41851dd7ae5b3efb50848e2e45850ea1f25a06faaf919"
+          },
+          "user.reg": {
+            "sizeBytes": 105282,
+            "sha256": "d3da605baf57535d48b917e1aba16fa4718f5fcb67f5c81cb6a6c0953815d13d"
+          },
+          "userdef.reg": {
+            "sizeBytes": 4052,
+            "sha256": "beb9274daa884ce3b4619f091ff3e7cd099ad23e561bf9c4a15a8140b24de80a"
+          }
+        },
+        "installedFiles": {
+          "WinSparkle.dll": {
+            "sizeBytes": 2863872,
+            "sha256": "bdd966204743a2c49a9abb10cf8e6ff86c8e7cc179fdc07675d8e959ebd8a701"
+          },
+          "vcruntime140_1.dll": {
+            "sizeBytes": 49792,
+            "sha256": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+          },
+          "WebView2Loader.dll": {
+            "sizeBytes": 165488,
+            "sha256": "1970ae5e398666304483203dae64f8bc3327811114ae38bb3484ecbce1386b41"
+          },
+          "msvcp140_2.dll": {
+            "sizeBytes": 280200,
+            "sha256": "3ea06f0ee098b4823cb79599df3780e7f23cce52c19aac31d2a0d47efe33a5e9"
+          },
+          "msvcp140.dll": {
+            "sizeBytes": 557728,
+            "sha256": "0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9"
+          },
+          "crashpad_handler.exe": {
+            "sizeBytes": 1236224,
+            "sha256": "bebbb3f22a11e75f3e3b0295b17df2b830ddc28c9153a1308814d3948b7ee148"
+          },
+          "crashpad_wer.dll": {
+            "sizeBytes": 50944,
+            "sha256": "0c2c7cc1ab6611445af7db131d6d908026f26e6f6ea1a51ac3f1de985d1fb181"
+          },
+          "vcruntime140.dll": {
+            "sizeBytes": 124544,
+            "sha256": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+          },
+          "unins000.exe": {
+            "sizeBytes": 3576576,
+            "sha256": "558ef6d1bf5047ca2ba094b006ed365e3cbfd03cb4e8619b0507957b4881efb5"
+          },
+          "sentry.dll": {
+            "sizeBytes": 801024,
+            "sha256": "5344c8d119d01789ad8010d8b6039332669e0cf2a236cab0fe89f72749ea58f9"
+          },
+          "select.pyd": {
+            "sizeBytes": 33136,
+            "sha256": "d4d7181b11db0bd22a6cd5cda6f8583d1f5c77615fd0a6ca33350619d6e0438a"
+          },
+          "python312.zip": {
+            "sizeBytes": 6638853,
+            "sha256": "d631a10e0d6969ddf69662b6becbe88573fe8fb31728766bbb656c59e619adb6"
+          },
+          "_decimal.pyd": {
+            "sizeBytes": 262000,
+            "sha256": "aeacfead2befcc0768063a037bb64bd32109ae09cb144e5f571b04dd7965db9d"
+          },
+          "mCtrl.dll": {
+            "sizeBytes": 313600,
+            "sha256": "c6a142fb9fac0793ebea8ac9d7ac58d562e0ae0daa45b580c34bfc4b59bf306b"
+          },
+          "pyexpat.pyd": {
+            "sizeBytes": 205304,
+            "sha256": "d615e193d1affcdbfe504e90d3621cbdcff94bf72b79d899126534507fd6d27a"
+          },
+          "python.exe": {
+            "sizeBytes": 104952,
+            "sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a"
+          },
+          "Poedit.exe": {
+            "sizeBytes": 16929024,
+            "sha256": "686a765995ed75dd15dcf6a3dbedf9a283d311631bc8b29125c2b69b435d915d"
+          },
+          "vcruntime140_threads.dll": {
+            "sizeBytes": 38528,
+            "sha256": "219915cf20822f34d5e7c1fdd4e21ae7f3396881096c51036225fb8f84b47afa"
+          },
+          "_elementtree.pyd": {
+            "sizeBytes": 135160,
+            "sha256": "5009a9a53c03ef8387443b5cf6ce08e5c3a79727466a0b931c5bbca915bf89ca"
+          },
+          "sqlite3.dll": {
+            "sizeBytes": 1082112,
+            "sha256": "24f6faca919b4bca1465872ac54323d6a1255ae0d69dd9087b0c35bed4988b89"
+          },
+          "unicodedata.pyd": {
+            "sizeBytes": 1140592,
+            "sha256": "208ee1cd3cbad0828433ca7246b05be2b1ff5569983d27d296c0b38888585488"
+          },
+          "_sqlite3.pyd": {
+            "sizeBytes": 126184,
+            "sha256": "64b51df2805c58b023a875e8ae3be7ac7f61ef664f32ca6c90f6315da47ef0bc"
+          },
+          "msvcp140_atomic_wait.dll": {
+            "sizeBytes": 50304,
+            "sha256": "640b2aefced484d0368eea5bdd06addd0658a3a70a49256e560d6923b404a479"
+          },
+          "unins000.msg": {
+            "sizeBytes": 24367,
+            "sha256": "cad363d1bb69503cf2c17fd8a6196fe36bc249e8464f96221d61928bf575c1a5"
+          },
+          "vccorlib140.dll": {
+            "sizeBytes": 352384,
+            "sha256": "19839407c3fdbc824e5bce189bf68ddf8097f12ec28b757797ffa0415c144ddd"
+          },
+          "concrt140.dll": {
+            "sizeBytes": 324208,
+            "sha256": "2405355f0a58067b258f8df33c327e3a3d716eaac5a3a5aebb757842d85bd376"
+          },
+          "msvcp140_1.dll": {
+            "sizeBytes": 35952,
+            "sha256": "bfad5aef4c63a669e3c140655cdfdf395b6c979b400a447bd5dcb65ed8826c3d"
+          },
+          "msvcp140_codecvt_ids.dll": {
+            "sizeBytes": 31872,
+            "sha256": "f2069a52880ec885ee7f0511186100eb7fada0411a2b4948fafea7735b878a18"
+          },
+          "unins000.dat": {
+            "sizeBytes": 86855,
+            "sha256": "4c9c80fea07b07a4b14839b35af5da194e85189b14c2a79852445ef29733336a"
+          },
+          "python312.dll": {
+            "sizeBytes": 6945272,
+            "sha256": "9a0e3435aaa680d868150f87ab3e388ad2eebc22f87e036155c7b4eda8cd2120"
+          },
+          "Resources/StatusWarningBlack@2x.png": {
+            "sizeBytes": 371,
+            "sha256": "802cf80dcd7aa54a4d07155477bf03eeec04ba229b90f83cf2d6486aad65a772"
+          },
+          "Resources/ProBadgeOutline@2x.png": {
+            "sizeBytes": 430,
+            "sha256": "d8e9fbc71b5c8ddad4452c826e1388e00d25011e55bdd58ad0020436df4b131f"
+          },
+          "Resources/StatusWarningBlack@1.5x.png": {
+            "sizeBytes": 302,
+            "sha256": "7690a117b75c185f607a59152eedb7c180672f96460fdd821898a09d30bd2bd6"
+          },
+          "Resources/upload.png": {
+            "sizeBytes": 323,
+            "sha256": "f9b880265602dd181386e4f9748e5149f7dca5d389985275117c4631861f6cc8"
+          },
+          "Resources/window-close-toggled@2x.png": {
+            "sizeBytes": 230,
+            "sha256": "e0ba9a4f6a9e0d1f2d28d959be7c333f50fc6810d3b5e36b36b552ec2fdc0caa"
+          },
+          "Resources/BulletPoint@2x.png": {
+            "sizeBytes": 528,
+            "sha256": "5e2af8e23b920011ec0a91673d915313c85912157437e146825092d61fb843cc"
+          },
+          "Resources/update@2x.png": {
+            "sizeBytes": 666,
+            "sha256": "5e21475383ae0b0cb0c685f9289b590295fbf67ea4f6fbfd4ef1fa4343b9fda1"
+          },
+          "Resources/AccountCrowdin.png": {
+            "sizeBytes": 932,
+            "sha256": "291f6e59c30bf6a5f798341adb1beaf98c75ee9fb5dff99be6398054c6ec02ca"
+          },
+          "Resources/SuggestionQuotaTemplate.png": {
+            "sizeBytes": 147,
+            "sha256": "29bf8a330e39ef9cc65f7a04dabcadf9cc751566695031b2befffec75db95c2a"
+          },
+          "Resources/CrowdinLogoDark@2x.png": {
+            "sizeBytes": 3050,
+            "sha256": "7bd07f61e1d3bb9ae3891f27050e5864c4093ebcd266ae1cfcc6567aa0dfe84f"
+          },
+          "Resources/list-add.png": {
+            "sizeBytes": 80,
+            "sha256": "d3fc2f84c7108b13e3cfa5c175a2a8dbee4dc498ec409e68cc306fd064ea1c3d"
+          },
+          "Resources/AccountLocalazy@2x.png": {
+            "sizeBytes": 1721,
+            "sha256": "e788a2ec5fe621aad6772bd71b2c466667967f41679f8dfe2f8d436c654f0a6e"
+          },
+          "Resources/statsDark.png": {
+            "sizeBytes": 324,
+            "sha256": "cb5716420bed7da272e22d8bd4ffc5419030a9b77e25b22d4c1efa96a83a6fb6"
+          },
+          "Resources/window-close@2x.png": {
+            "sizeBytes": 163,
+            "sha256": "8f5a18e5513fea153e2f63be10023a7847cfa024993781cd9bf50e75968994be"
+          },
+          "Resources/validate.png": {
+            "sizeBytes": 232,
+            "sha256": "0d18d387fe9a5acc67e5069c17f6cd52e6431d6b7ba297a7dd1214e3b7f7e375"
+          },
+          "Resources/updateDark@1.5x.png": {
+            "sizeBytes": 488,
+            "sha256": "ecf81a79f1173959c66ad8c217db48a227ad91f03beeace898f03ef3a32b6e43"
+          },
+          "Resources/ItemCommentTemplate.png": {
+            "sizeBytes": 121,
+            "sha256": "1226a648e35fdd651fec57842182eaaf690abcc7ee70af24c6b6e230aa3221cb"
+          },
+          "Resources/wxART_EDIT@1.5x.png": {
+            "sizeBytes": 1473,
+            "sha256": "464313497c8fca712a2c36f6257ef2bc6048eb5b47118ff7501183c7af01b63c"
+          },
+          "Resources/Acknowledgments.html": {
+            "sizeBytes": 29446,
+            "sha256": "c5c3e21764b97cb8804b15458c85f69d9881e1eec768541dabcd2c9cb4b5c990"
+          },
+          "Resources/MTSettingsTemplate@1.5x.png": {
+            "sizeBytes": 306,
+            "sha256": "7e0ba5bdb486f8b85e784a40f5788d3535542aa9ce0b0dd98e472d12a90a33d5"
+          },
+          "Resources/SuggestionTMTemplate@2x.png": {
+            "sizeBytes": 242,
+            "sha256": "e7baece45afc80dd558e5d7ebd510bfe93bb63039fadacede67c9ccb0095620b"
+          },
+          "Resources/window-close@1.5x.png": {
+            "sizeBytes": 137,
+            "sha256": "0b1350ae0b03a639e5ea9f418c9ccfa9cdac1bbd5a02ab3dc02d5b9e99a5f8cb"
+          },
+          "Resources/AB_WordPressTemplate.png": {
+            "sizeBytes": 648,
+            "sha256": "ff078aecdcb23115b52564122beaf93fe54adbc347fd8394fbd176a8be9dc398"
+          },
+          "Resources/list-add@1.5x.png": {
+            "sizeBytes": 89,
+            "sha256": "34befb098a8eee74fc3ac22530dcca2afa74f38ea08130b507ea4932a632fec7"
+          },
+          "Resources/SuggestionHumanTemplate@1.5x.png": {
+            "sizeBytes": 241,
+            "sha256": "11fe28d9579ee082a46b88272603c050130b392ffd750baaae0c063781536e71"
+          },
+          "Resources/FileProject.ico": {
+            "sizeBytes": 15015,
+            "sha256": "6c8484822f2547eb65bb765ea3c12f98d2918b00217cad328e0ce0cfa0f83406"
+          },
+          "Resources/poedit-status-cat-ok.png": {
+            "sizeBytes": 138,
+            "sha256": "7aa30d1e5521320114e036600a71b336e85deea4e151008101ab90dc6da61508"
+          },
+          "Resources/GlossaryTemplate@2x.png": {
+            "sizeBytes": 261,
+            "sha256": "e7a38efbf0714acf4c64e6006b56a98c842f3c50559fefab32bb444f6777dd8f"
+          },
+          "Resources/AccountLocalazy@1.5x.png": {
+            "sizeBytes": 1216,
+            "sha256": "d15837f4f00fba156288fc37afc0454ecb52bf72130bf4e9553f03216ebd4162"
+          },
+          "Resources/AttentionWarning@1.5x.png": {
+            "sizeBytes": 396,
+            "sha256": "44aa057f6f2c4a94e0af85ececdd21226d290307713dbfb1cdb936b03a5a4d58"
+          },
+          "Resources/syncDark@2x.png": {
+            "sizeBytes": 617,
+            "sha256": "112cac97a051ecce9b658db5809f2d21546bf54a7db67d1f5f8cccb18a05375a"
+          },
+          "Resources/StatusErrorBlack@1.5x.png": {
+            "sizeBytes": 191,
+            "sha256": "48aca45db7303ab4823a073c38bfa79f4960385d2e9e32dd275a7b4f9f2532d9"
+          },
+          "Resources/MT_deepl.png": {
+            "sizeBytes": 463,
+            "sha256": "fab6b8457c46745b028bbf8f5edf6b8f8e4f184084cc64143ae6c27a97cd1ae0"
+          },
+          "Resources/menus.xrc": {
+            "sizeBytes": 21705,
+            "sha256": "77c008558c6bdbe8b65f4ff2f081bfb66193b328c90fd15c66a039fd1bc13be8"
+          },
+          "Resources/document-save@2x.png": {
+            "sizeBytes": 352,
+            "sha256": "edfe8e233b3ae522756e21ec4cb0687cca6e083df9e8ff254406585c3df5b97d"
+          },
+          "Resources/SuggestionQuotaTemplate@1.5x.png": {
+            "sizeBytes": 225,
+            "sha256": "9b1812aea9633f5c8d16e1d81f8574f242c788bfb1fc8e925dd27cae6d667fca"
+          },
+          "Resources/MT_google@2x.png": {
+            "sizeBytes": 2761,
+            "sha256": "53f2e324520955d67cc4ac6771c860953ee22050f5e33b21372ec979ef4d66a2"
+          },
+          "Resources/wxART_NEW@1.5x.png": {
+            "sizeBytes": 137,
+            "sha256": "e1fd6b361d1157e15a8857ac660ab867d01965b92136e43b74149ebac6327056"
+          },
+          "Resources/EmptyMultiSelectionTemplate@1.5x.png": {
+            "sizeBytes": 579,
+            "sha256": "0307301b209bd54cb81b97920772c381591f0924d32fcac41219c22e5fd9b368"
+          },
+          "Resources/wxART_GO_DOWN.png": {
+            "sizeBytes": 187,
+            "sha256": "5b96ba0fec22bf2980c7f6b5e5aedd811622c62825f70eb1c335494c138d2157"
+          },
+          "Resources/SuggestionTMTemplate@1.5x.png": {
+            "sizeBytes": 311,
+            "sha256": "f47fc9759d1448c11ac73c64378d3821e74aaded5f4201c394a9e4136392111a"
+          },
+          "Resources/sidebarDark.png": {
+            "sizeBytes": 195,
+            "sha256": "b17c70cf8c4bcb1af8e487a21c213a6866591b38a4e1f2aa4cfc92bd7d77810a"
+          },
+          "Resources/syncDark.png": {
+            "sizeBytes": 364,
+            "sha256": "0698ce5ce3dcbb6a00fb58bcf35a9c223d7bfc267ee3199e7b6c306dd0520cfa"
+          },
+          "Resources/document-open@1.5x.png": {
+            "sizeBytes": 427,
+            "sha256": "7da943bb5a4eaa32b854350f30b108d29bbd3fbeca29de394907d10ba73464be"
+          },
+          "Resources/ActionBoxPreTranslate@2x.png": {
+            "sizeBytes": 387,
+            "sha256": "1a02c7f6313a8754aa8f232d633fda6a24276af71e65dbae1c996a4860a6674b"
+          },
+          "Resources/StatusError.png": {
+            "sizeBytes": 170,
+            "sha256": "7253cdbb796d8cbe69b8bcd80190fd1cbd5d2e8d9f9b93eb9849c8cd8efeb9d9"
+          },
+          "Resources/sidebar@1.5x.png": {
+            "sizeBytes": 298,
+            "sha256": "3fc9a0cf616be927595da2210133b0da3b4776c2a9ae99145768d46d9e0c14dc"
+          },
+          "Resources/GlossaryTemplate@1.5x.png": {
+            "sizeBytes": 296,
+            "sha256": "19d21b3834ae6ce30c0eac682d3aab9b3393936cf5644061f1c0fd9065f9b988"
+          },
+          "Resources/MTSettingsTemplate@2x.png": {
+            "sizeBytes": 348,
+            "sha256": "7fb2977f2a2366009780ae18bda2fa892c7f710021becd8e60c4ace3f3402de4"
+          },
+          "Resources/wxART_EDIT@2x.png": {
+            "sizeBytes": 1563,
+            "sha256": "31a93101a798a8cb60d39ae0f67dec63a1319a8a06f5a6cda0a4d1338d8a30e3"
+          },
+          "Resources/pretranslate@2x.png": {
+            "sizeBytes": 511,
+            "sha256": "32cd042cdf6250844f96b00009306352886274a8c5f9e7b8fc93e89cf9a42be6"
+          },
+          "Resources/ActionBoxPreTranslateDark@2x.png": {
+            "sizeBytes": 380,
+            "sha256": "5d30d1a2cd1dbef258ffd115132dbba4cdbd3634b2257c8bf99a35f129402a09"
+          },
+          "Resources/AttentionError@2x.png": {
+            "sizeBytes": 320,
+            "sha256": "a9bc53f421542a3ee23251c5606e3ecf493cdbae96a97cfda6d2f309d2b0fa63"
+          },
+          "Resources/LocalazyLogo.png": {
+            "sizeBytes": 1691,
+            "sha256": "fddd1256dc81d7794b910bc884ebf191c7384fd4c47ccfde620835fc27b835fd"
+          },
+          "Resources/actionbox-closeDark@1.5x.png": {
+            "sizeBytes": 166,
+            "sha256": "8687db50401fbba412c474a15a47050135e8770f483507f220667390f5ef420c"
+          },
+          "Resources/prefs.xrc": {
+            "sizeBytes": 6664,
+            "sha256": "b17f1bfcf81fd4c2616cf4d7b48d7f043406731c79c2bb7ba8db1422db656d15"
+          },
+          "Resources/AB_EditTranslationTemplate@1.5x.png": {
+            "sizeBytes": 347,
+            "sha256": "2f28939eaa16e46afdcdb06fb8b1d5e1b7c2560b4ea7b6aa9f720bc4270dd0ea"
+          },
+          "Resources/validateDark.png": {
+            "sizeBytes": 211,
+            "sha256": "3648f72e5f5cfa96f45198fc9ff2022e06894603da5fb15219a9d4b5291e107a"
+          },
+          "Resources/document-save@1.5x.png": {
+            "sizeBytes": 303,
+            "sha256": "fd43ca29987c4801c91ac0f317e1a51edae12b553ac927b1eb2066c40ed66b1b"
+          },
+          "Resources/uploadDark.png": {
+            "sizeBytes": 307,
+            "sha256": "13bef88264bc5a89ee5cf82f09b096c30478ff8e455d73c3f9f50bee8b168e4d"
+          },
+          "Resources/document-open@2x.png": {
+            "sizeBytes": 472,
+            "sha256": "4867a763ba4af9fd12070ab2c7aa269f381945ad6f5d11ef0c63eb6f5437a45a"
+          },
+          "Resources/AB_EditTranslationTemplate@2x.png": {
+            "sizeBytes": 429,
+            "sha256": "58f3048cc713cb8319f4d6c576b7bc79bb4948f09c3045bf4b7d9c611bb40545"
+          },
+          "Resources/StatusErrorBlack@2x.png": {
+            "sizeBytes": 222,
+            "sha256": "fbc5e581a5ddbcff6b95f377024bc93256f8cd1b28bfbcfd64c5427d0461ae50"
+          },
+          "Resources/wxART_NEW@2x.png": {
+            "sizeBytes": 138,
+            "sha256": "62b68a6a6457e7bee8db07c4de9f4b1aadc87e66724ae1ffde795a96ab0852de"
+          },
+          "Resources/ProBadgeTemplate@2x.png": {
+            "sizeBytes": 356,
+            "sha256": "728fea8db6f1fc344ae43ad12c5f087229733f957f3971eed3ddfd3a78c6b7ac"
+          },
+          "Resources/wxART_GO_UP.png": {
+            "sizeBytes": 190,
+            "sha256": "ab71b5fe60d85b9be8db2ef7d5ccaeb8fcb0cc4260138404455969ceb58df2a6"
+          },
+          "Resources/pretranslate.png": {
+            "sizeBytes": 336,
+            "sha256": "f174592a5db26bf7af6b6325438fa3633d08a967b0badc4678093f57b863ddba"
+          },
+          "Resources/ProBadgeOutline.png": {
+            "sizeBytes": 246,
+            "sha256": "642d9805a75f90b05e476c291c940f3113949fbb9dcac8ce2c1f45b4e9cbc379"
+          },
+          "Resources/AB_CollaborateTemplate@1.5x.png": {
+            "sizeBytes": 1116,
+            "sha256": "2ed71502a1ff381ac683914efa3a690f740b4cc62395ef8566f958f553648758"
+          },
+          "Resources/ContributeOff@1.5x.png": {
+            "sizeBytes": 267,
+            "sha256": "514b66bda3365ddfc65c4222e884ff24bd2672b3d3a546a46f47fc6d09f1edc9"
+          },
+          "Resources/poedit-status-cat-ok@2x.png": {
+            "sizeBytes": 234,
+            "sha256": "fff8c6b8960a7db484d0faf451e4cb00e8957fe182188533d6d33d8ea8e5f8ee"
+          },
+          "Resources/validateDark@2x.png": {
+            "sizeBytes": 350,
+            "sha256": "205ed60c9b5b7287d733cc8cc6d79ecf3d3d34dbd0f5a7957ad8c4096d75cef7"
+          },
+          "Resources/document-saveDark.png": {
+            "sizeBytes": 229,
+            "sha256": "da8ae8b89e022dd18fa90c220f6cc6ebaa552933ca815160433e9535198cf355"
+          },
+          "Resources/document-saveDark@2x.png": {
+            "sizeBytes": 358,
+            "sha256": "3b605a2a425f0c059842a1b2a8626e611cf65f87c373fcc85986b29c03f81aec"
+          },
+          "Resources/SuggestionErrorTemplate@2x.png": {
+            "sizeBytes": 197,
+            "sha256": "2e642a59f8b0d2b2d5db6f4191aa0c6399b809e20eeead3457fa1c7027f435dd"
+          },
+          "Resources/list-remove@1.5x.png": {
+            "sizeBytes": 82,
+            "sha256": "7fdc329af51746279bc0375869b0299997857dba4a015e82384d8398413b4872"
+          },
+          "Resources/SuggestionHumanTemplate.png": {
+            "sizeBytes": 163,
+            "sha256": "a978df02adafa389ec17d128a3ddd1e76d7e7a8b5d44a1115a61c40d4b107bfe"
+          },
+          "Resources/window-close-hover@2x.png": {
+            "sizeBytes": 220,
+            "sha256": "953eccf215ad6e173bfbd32ecfba60b154f980d5a9ac90f8de70c3e672782848"
+          },
+          "Resources/window-close-hover@1.5x.png": {
+            "sizeBytes": 179,
+            "sha256": "fa4ea536689fdbdf0095c97a3312d821c10c99073d7dd3897127c32a890bd9f3"
+          },
+          "Resources/DownvoteTemplate.png": {
+            "sizeBytes": 172,
+            "sha256": "0750127ee8d1e12afc181c0d03d939b1455f2d77f0acd5240de218984d275837"
+          },
+          "Resources/MT_google@1.5x.png": {
+            "sizeBytes": 1889,
+            "sha256": "1643d48f0ebfcd13887c6327bd38726eef175be69974a6329939a30ad2a5419b"
+          },
+          "Resources/updateDark@2x.png": {
+            "sizeBytes": 609,
+            "sha256": "681118919aa3e526349c3baed2ded2100ab5d1e880990aa966b790b8fd1ec9e7"
+          },
+          "Resources/AttentionWarning.png": {
+            "sizeBytes": 288,
+            "sha256": "21accc9c97d555ae424ae7e2bcad9f9667e12c3672c92d72fe79ee126f8d2a59"
+          },
+          "Resources/DictionariesAd@2x.png": {
+            "sizeBytes": 3643,
+            "sha256": "fef1200d10dd512163c6d502cf42a91bc437be9d4fd42ec2daef036a50786e7f"
+          },
+          "Resources/MT_google.png": {
+            "sizeBytes": 1292,
+            "sha256": "9506a8f11b2b919f60d783f47557938635e96d61d16d81fa2167a4429b3d9b05"
+          },
+          "Resources/ClockButtonTemplate@1.5x.png": {
+            "sizeBytes": 359,
+            "sha256": "aedc63a3b189185d4c4c6d961931ccc0ca3faf2035dbb2e9b8b61d6cdcc074c9"
+          },
+          "Resources/SuggestionMachineTemplate@2x.png": {
+            "sizeBytes": 146,
+            "sha256": "8d59e5d05f8496aa9847b80ee8cbd28c91e78fa898526cf2942aaac7a0ffbdac"
+          },
+          "Resources/ProBadgeOutline@1.5x.png": {
+            "sizeBytes": 372,
+            "sha256": "6bd094227bed3a5fa8696ff6b805567c91ae01aee67b8e992c40fe1cee9f05d1"
+          },
+          "Resources/SuggestionBusyTemplate.png": {
+            "sizeBytes": 206,
+            "sha256": "6dd8d2227a953ff4871c1da525dbec4d6cdcdc59d987b59e095a4eab54827d11"
+          },
+          "Resources/wxART_GO_DOWN@2x.png": {
+            "sizeBytes": 277,
+            "sha256": "1666f60a1a4c2468cc5056bcd17e6a44ea4de6584b0b8bdbd9297bf83428886c"
+          },
+          "Resources/update.png": {
+            "sizeBytes": 322,
+            "sha256": "64c19180dc845714c0dbed9cf5f81ee734dbbab845d6ac5b6974d9754f6d5651"
+          },
+          "Resources/ExtractorsGNUgettext.png": {
+            "sizeBytes": 724,
+            "sha256": "3d0c79da7d352865ee2ada2748a6585d4b5f175c4609b58bf0eba3312211d291"
+          },
+          "Resources/wxART_GO_UP@1.5x.png": {
+            "sizeBytes": 229,
+            "sha256": "83d49c5426dadb83c6711172fd9203934516a060e39a793ea9f0f4206b08e2c7"
+          },
+          "Resources/poedit-status-cat-no@2x.png": {
+            "sizeBytes": 234,
+            "sha256": "964ccdd5136d9968235f135172e64db586172c5406e6d74b23d0156b8092fd2f"
+          },
+          "Resources/AccountCrowdin@1.5x.png": {
+            "sizeBytes": 1486,
+            "sha256": "27dbecf53f8af0fad23cd0bcb4fc5c045ebb63c4f4027cfc27578a76289eef71"
+          },
+          "Resources/actionbox-close@2x.png": {
+            "sizeBytes": 192,
+            "sha256": "ffdbdf46926c460fa58adb6865f0d744680a05db7545ea747cab070d26e6f750"
+          },
+          "Resources/list-remove@2x.png": {
+            "sizeBytes": 89,
+            "sha256": "d9d57ceba5c7ee6177bcac3a5861cc21c6508f69e304b2b2a2bc774483f2d61e"
+          },
+          "Resources/sidebarDark@2x.png": {
+            "sizeBytes": 375,
+            "sha256": "c4ec29f07415b8ce9ce89bec4f2cf039feabe29a0e3f913620969069c0a7af09"
+          },
+          "Resources/poedit-status-cat-mid@2x.png": {
+            "sizeBytes": 234,
+            "sha256": "bacd4fc8b7c360d422742cb84fad6035c184de0e1ee2c8f52d9eed679b44551c"
+          },
+          "Resources/window-close-toggled@1.5x.png": {
+            "sizeBytes": 187,
+            "sha256": "10abd066a6203bc6b34c9f90bbdb4a014ccfb0ff1957a8834a415772f8ea468b"
+          },
+          "Resources/StatusWarning@2x.png": {
+            "sizeBytes": 459,
+            "sha256": "d793d5208fc7580e83f4d1d69ebe9bdd5673af0f9b2766db29daca0910ba6639"
+          },
+          "Resources/updateDark.png": {
+            "sizeBytes": 300,
+            "sha256": "5aec0688d99fee6e865df253d30641145a1f5aa05feaccb6923ff31b7eaf8c93"
+          },
+          "Resources/SuggestionErrorTemplate.png": {
+            "sizeBytes": 144,
+            "sha256": "7f2ab5ce57dfdde52246f9db626112b2609479b680542f84be702b450144fae1"
+          },
+          "Resources/ProBadgeHighlight@1.5x.png": {
+            "sizeBytes": 360,
+            "sha256": "df4bcaac9fd5dc97ee034fad5f97d3957b126fc39151496ab2c8972fd7695dfe"
+          },
+          "Resources/DictionariesAd.png": {
+            "sizeBytes": 876,
+            "sha256": "7d8da501aae9af6d6017b187291d94c514ab02ed3438caec774d37cc300e2f35"
+          },
+          "Resources/actionbox-close.png": {
+            "sizeBytes": 121,
+            "sha256": "965b43283ac696563c6c75d362e4b862f81c24f55c9a9b03a98dd7ffac8f6916"
+          },
+          "Resources/wxART_GO_UP@2x.png": {
+            "sizeBytes": 277,
+            "sha256": "8ea5e1bcecaa13167e7d0e6b2d6294866cc28cf25422366debec839fe8af0504"
+          },
+          "Resources/statsDark@2x.png": {
+            "sizeBytes": 529,
+            "sha256": "11bedd2a32daa884171fcad47cf6a05f9cc429677cd4dec88696747e7fd7937f"
+          },
+          "Resources/FilePOT.ico": {
+            "sizeBytes": 9552,
+            "sha256": "9b133c75a3a903059a8df9c3132d501e67a88a2026972827fc75fa9890332133"
+          },
+          "Resources/ActionBoxPreTranslate.png": {
+            "sizeBytes": 236,
+            "sha256": "da605df269d8c6fce59dc671a55842351e5eaa09951f044af629297af689ff73"
+          },
+          "Resources/pretranslateDark@2x.png": {
+            "sizeBytes": 480,
+            "sha256": "1984c6ac8ee35a36212c959009e2c3b23165085684662469e9f491df19dad91c"
+          },
+          "Resources/validate@1.5x.png": {
+            "sizeBytes": 328,
+            "sha256": "4793adaf2439c3cdea36e51f00ae989a8fe8c0b09cf91ecac1386ff5d1f360b2"
+          },
+          "Resources/wxART_EDIT.png": {
+            "sizeBytes": 200,
+            "sha256": "69c8ba4349a8ce72cc28a95e80084ac3e5e675c037d4c34b1b2cd6619068dc13"
+          },
+          "Resources/StatusWarning.png": {
+            "sizeBytes": 242,
+            "sha256": "46e7e872477d3d69a7062a7ba17a61622434b58f4a255a82fd6514d6362435ae"
+          },
+          "Resources/ExtractorsGNUgettext@1.5x.png": {
+            "sizeBytes": 1247,
+            "sha256": "8b225d2d2b8e9d3000d19a72bcd29c5202ceac3ef49fe72aced70d5890986d0f"
+          },
+          "Resources/ProBadgeHighlight@2x.png": {
+            "sizeBytes": 423,
+            "sha256": "89e768e8fec96a89d5ccb0162a99a4b9edb60e0d2dcc4bead73c72d145b9dd28"
+          },
+          "Resources/ItemCommentTemplate@1.5x.png": {
+            "sizeBytes": 159,
+            "sha256": "ed1b9ded2f9044d62568c514de262ac3d4e0ff069ea557f1bae95e1df5aefcf1"
+          },
+          "Resources/sidebarDark@1.5x.png": {
+            "sizeBytes": 292,
+            "sha256": "9781cf5f4de683de4c91591678d04fa62505e2caa4a1bca4ef23c1a249aff7f6"
+          },
+          "Resources/AB_WordPressTemplate@2x.png": {
+            "sizeBytes": 1319,
+            "sha256": "2d941532edb97dbab8df62ce714299f3641cfccd3e3a5a978ee3a148e494f1a6"
+          },
+          "Resources/stats@1.5x.png": {
+            "sizeBytes": 447,
+            "sha256": "0a0d2c3e2c6ccc29463f9dbdb999f7eb5f20de50804b7689fed1114cb12804d0"
+          },
+          "Resources/uploadDark@1.5x.png": {
+            "sizeBytes": 437,
+            "sha256": "c9e3bb3868864ae8401d965b6f919712f2be270ed888ce44c54428ae71530271"
+          },
+          "Resources/syncDark@1.5x.png": {
+            "sizeBytes": 515,
+            "sha256": "0ef098769dd85dded39370bd7ddd11684f1fc5515b8125251c30a715354528d1"
+          },
+          "Resources/document-saveDark@1.5x.png": {
+            "sizeBytes": 303,
+            "sha256": "2a35996b33fa7eef3055c6956b632fea75b46876dd78bddb03baa0f55aa31100"
+          },
+          "Resources/Poedit.ico": {
+            "sizeBytes": 56481,
+            "sha256": "1c1199bbc2e39b3e2c332ae8591ae3009f4387d0e888274d2ac83494812a64ed"
+          },
+          "Resources/list-add@2x.png": {
+            "sizeBytes": 97,
+            "sha256": "9cee8788be85786dcb1d38ce5f7e70dbe939787567e843a95c7e124a1928ecb3"
+          },
+          "Resources/CrowdinLogo@2x.png": {
+            "sizeBytes": 3657,
+            "sha256": "eada50daf443198fea52ffd9a00df99281db55504ee25ebb4e092fb0f0d66202"
+          },
+          "Resources/actionbox-closeDark@2x.png": {
+            "sizeBytes": 179,
+            "sha256": "c4a93d0db539014a8c39ce7e5669fa4f5077b1e27986287897df5737163faea3"
+          },
+          "Resources/AttentionError@1.5x.png": {
+            "sizeBytes": 268,
+            "sha256": "277621db9550905ff533a4d93389a22daf7a5a3ddc5d05d9f2e98373a6b57631"
+          },
+          "Resources/ActionBoxPreTranslate@1.5x.png": {
+            "sizeBytes": 351,
+            "sha256": "971c8634845dcba1a21db12490974057e4b967e68ab7e123be8927f74fc17f42"
+          },
+          "Resources/upload@2x.png": {
+            "sizeBytes": 500,
+            "sha256": "46befd919e9cea7e069532df67ac571a8d24f2a4bd674aa0e75c2f14be852fd9"
+          },
+          "Resources/poedit-status-cat-no.png": {
+            "sizeBytes": 139,
+            "sha256": "b525b6ffe61a6ca74bbc581dac3bee2b33c2c1e4f26dac3d2f2ce4e7f7489590"
+          },
+          "Resources/CrowdinLogoDark.png": {
+            "sizeBytes": 1519,
+            "sha256": "3e068486605bb8d4864170758cff210e67b9710e97c22b23f06f5f1e3b29bf72"
+          },
+          "Resources/uploadDark@2x.png": {
+            "sizeBytes": 498,
+            "sha256": "16ae0f13fbcfa566234ad9f10280225d5a321a682099ffd36866cfa452717de4"
+          },
+          "Resources/document-openDark@2x.png": {
+            "sizeBytes": 432,
+            "sha256": "f672c0e57e0d4d9da160646af3aca9ad3d2a2ae60a0cd40f5801122063ccfb83"
+          },
+          "Resources/validate@2x.png": {
+            "sizeBytes": 356,
+            "sha256": "1f608f533fac168c8974ad9aea926cd2610432a67b2655d794095d252719520d"
+          },
+          "Resources/StatusError@2x.png": {
+            "sizeBytes": 274,
+            "sha256": "2743c46a667b82074cbcb420bf467559c5c8c66a75b0a91544f8c4b2404d5d46"
+          },
+          "Resources/AB_CollaborateTemplate.png": {
+            "sizeBytes": 664,
+            "sha256": "2aa1c3feb1b6cef530b4d8f98c7ddfa4a5a8378fbb1db95cc093d45fa6c567fa"
+          },
+          "Resources/ContributeOn.png": {
+            "sizeBytes": 238,
+            "sha256": "7ed3eb22f71385abde86f6e1380a7aafec88ce0ae4f02d0769bde2f4f8cf5b0e"
+          },
+          "Resources/ExtractorsTemplates@2x.png": {
+            "sizeBytes": 1371,
+            "sha256": "e213e711bab3ae3b84d3574030bd3447221a23b07438359514c3967ab2800f34"
+          },
+          "Resources/AttentionError.png": {
+            "sizeBytes": 202,
+            "sha256": "dbaf879e3f5ba97c76ac5cf5b4ff495520263ae099336967b5ae84a9859ca459"
+          },
+          "Resources/update@1.5x.png": {
+            "sizeBytes": 569,
+            "sha256": "d2888c08d02dbec97619ccfd68d2bcdcd48895b8e9cc7612982621f80cc19eb7"
+          },
+          "Resources/follow-link@2x.png": {
+            "sizeBytes": 295,
+            "sha256": "20d6cb8e5cdb358bc959af9ebe6a61af2c944c181a05c1008b11f258766ac850"
+          },
+          "Resources/AB_CreateTranslationTemplate@2x.png": {
+            "sizeBytes": 386,
+            "sha256": "96366f69583a982ca34747fd187f4a86e398a9603b10ce07edf4dfe8dcedcffb"
+          },
+          "Resources/statsDark@1.5x.png": {
+            "sizeBytes": 426,
+            "sha256": "f39f815837611ba32b282d64810fce4bb517fbeb8e1f6c6ef31a9554a1451679"
+          },
+          "Resources/AB_CollaborateTemplate@2x.png": {
+            "sizeBytes": 1529,
+            "sha256": "6bec5d0f6b274d85d51a32dd5583e39d580fe217403439c9ffb181e99805d163"
+          },
+          "Resources/SuggestionHumanTemplate@2x.png": {
+            "sizeBytes": 281,
+            "sha256": "32c0c546edf326d3c8140df18a9b3e7b003117f72369e2dbda2cd4de3fda311b"
+          },
+          "Resources/document-save.png": {
+            "sizeBytes": 227,
+            "sha256": "f1d1cd04d03c524d85025ccdb6b76195a8ecf9b0db7e109e81fbd31d12c4603a"
+          },
+          "Resources/DownvoteTemplate@2x.png": {
+            "sizeBytes": 300,
+            "sha256": "2162364b1a5c9d5fe2791917f5b7c66df8bdf9fec559af0cdad8e9a5c7d3ee73"
+          },
+          "Resources/actionbox-close-hoverDark@1.5x.png": {
+            "sizeBytes": 207,
+            "sha256": "c7ab0908622cd6562170beab4c96815582baf9413ee254c526b2f9f9d4c1f207"
+          },
+          "Resources/SuggestionPerfectMatch@1.5x.png": {
+            "sizeBytes": 248,
+            "sha256": "5c44500b44314f3acb76a368f25c5404628b2e2dfc089249dd3bcfd3d5d62832"
+          },
+          "Resources/wxART_DELETE@2x.png": {
+            "sizeBytes": 1646,
+            "sha256": "5b4b0fae7b10d10f17997c675e434583e431246581473f22f38bad5f092c614f"
+          },
+          "Resources/AccountLocalazy.png": {
+            "sizeBytes": 716,
+            "sha256": "018b9195a35db1c676e92b992292f9f7a44fb5bddb99076d7c397d67df815de9"
+          },
+          "Resources/SuggestionErrorTemplate@1.5x.png": {
+            "sizeBytes": 183,
+            "sha256": "85bf0c008d82a555c82e559ebfb6dd9a5acf50288a1b4cefd1d15a3480085eb8"
+          },
+          "Resources/SuggestionOfflineTemplate@2x.png": {
+            "sizeBytes": 312,
+            "sha256": "b84812c30e264583bf79dac5171febad9de1f4e4c57c9e5f243228d7318dce9a"
+          },
+          "Resources/AttentionQuestion@1.5x.png": {
+            "sizeBytes": 417,
+            "sha256": "f7f1b1887adcf70444902cf54164a8f1fcb94a8f21a8039ad271a365b4546185"
+          },
+          "Resources/actionbox-close@1.5x.png": {
+            "sizeBytes": 178,
+            "sha256": "bacf7d304df07aee3bf47bfb33ca7f669f7a6771d8eed2bf65ed8b5e6b1670af"
+          },
+          "Resources/AttentionWarning@2x.png": {
+            "sizeBytes": 466,
+            "sha256": "a3a7eac8fba47005310787a603ab7c922a795a7268e694c43cc08838f0951549"
+          },
+          "Resources/validateDark@1.5x.png": {
+            "sizeBytes": 301,
+            "sha256": "844a934f6a09299f8002dd470956d92c4f94b55eace1835d5e64e58ebeec802e"
+          },
+          "Resources/FileMO.ico": {
+            "sizeBytes": 9900,
+            "sha256": "16d737eb197a502d99469804a9ab190127814e22638d0782c5d03dfd49d0730d"
+          },
+          "Resources/SuggestionQuotaTemplate@2x.png": {
+            "sizeBytes": 268,
+            "sha256": "8de1664e4355490ba6a770907efd73b54428f6f1ec90fb22a6949f1f854497bb"
+          },
+          "Resources/window-close-hover.png": {
+            "sizeBytes": 142,
+            "sha256": "ac38121106cfb94ce9ab1e89e7b569db2b35f0720358f78df726f545e54fd778"
+          },
+          "Resources/CrowdinLogo.png": {
+            "sizeBytes": 1912,
+            "sha256": "b3f451b76c7678bf9697e6b9d648dfb95f57a333a4afc06e054e866159b8bcb7"
+          },
+          "Resources/AB_WordPressTemplate@1.5x.png": {
+            "sizeBytes": 1007,
+            "sha256": "9f90587de3e1923532b98e191c34d0a9354de9212dd500d3deb4dff96e561810"
+          },
+          "Resources/LocalazyLogo@1.5x.png": {
+            "sizeBytes": 2434,
+            "sha256": "7f7e1cb14f280446aa9a287adbfdc8a326676eae0ffd122e675d44aa70174eb3"
+          },
+          "Resources/SuggestionMachineTemplate@1.5x.png": {
+            "sizeBytes": 143,
+            "sha256": "851c89587fbcfdc5f11395d5e5911f2391dbca1de0d9a0f72586b66f763fb3e5"
+          },
+          "Resources/follow-link.png": {
+            "sizeBytes": 181,
+            "sha256": "51c1097ad55a08c02d0e7589c4a5149e1912f95f443fb8673a1700166f0e26a9"
+          },
+          "Resources/ProBadgeTemplate.png": {
+            "sizeBytes": 204,
+            "sha256": "8c7414c19017a4165a5d54064a758f972ac095be37f7534271ff293c631ad7cd"
+          },
+          "Resources/properties.xrc": {
+            "sizeBytes": 14179,
+            "sha256": "850ef50d3351de67ba00053d9550eec826f44d43ec7bb3ad180d3b470774d30e"
+          },
+          "Resources/MT_deepl@1.5x.png": {
+            "sizeBytes": 722,
+            "sha256": "b08ad6b71149accf3351960b67c89b660860ff15388971781dc5e27a48385a1a"
+          },
+          "Resources/actionbox-close-hover@2x.png": {
+            "sizeBytes": 238,
+            "sha256": "a517f20b2a5cc7cabf1de416a7fff441a46f781fb1db03b4bb8a70d0fa7ccc2b"
+          },
+          "Resources/AB_CreateTranslationTemplate@1.5x.png": {
+            "sizeBytes": 326,
+            "sha256": "3d40d882caa64e9bcd1ba71b278d32e4a0ccc9a6b8c7d0f065cacb3c1127e489"
+          },
+          "Resources/ActionBoxPreTranslateDark@1.5x.png": {
+            "sizeBytes": 349,
+            "sha256": "c093e87a1267b6f14e2bf6ed17e9a9a599e5c1d4eb8fcde15ed210c7d563b1a6"
+          },
+          "Resources/AB_CreateTranslationTemplate.png": {
+            "sizeBytes": 235,
+            "sha256": "175e09a8d9dabff342cec86384b8c0922f38045bb76140b911d660b082b6a6dd"
+          },
+          "Resources/sync.png": {
+            "sizeBytes": 369,
+            "sha256": "bab314ae2b85be8416cec828e5ab7e3c91c1edc3c0cd3614f9b2636f3370a8b5"
+          },
+          "Resources/follow-link@1.5x.png": {
+            "sizeBytes": 256,
+            "sha256": "d7ce1e26e1ddf1c015c9d47384fc33a35b48890cb1a9bedd4fdea0e8e8cdf223"
+          },
+          "Resources/wxART_GO_DOWN@1.5x.png": {
+            "sizeBytes": 244,
+            "sha256": "cc94ea653ffd84f2edd5abc13c795a00af3e075f0d54860e862c8cce828663ef"
+          },
+          "Resources/stats@2x.png": {
+            "sizeBytes": 552,
+            "sha256": "e0b01dbb5090497e9e00536bf046abb34c17236cd7346e1e0ab5eca15f3fe7e7"
+          },
+          "Resources/wxART_NEW.png": {
+            "sizeBytes": 97,
+            "sha256": "fab10f4362475264a4c016e296a44c37d8c054b363b9617d8a44ba284b0ad850"
+          },
+          "Resources/DictionariesAd@1.5x.png": {
+            "sizeBytes": 1501,
+            "sha256": "c4e28e5eb3e0138bfd6ca5625aa6eb2189d3e9f4bc02217dbfdee2619c5ef628"
+          },
+          "Resources/SuggestionMachineTemplate.png": {
+            "sizeBytes": 102,
+            "sha256": "d6fe861eafe720d14b661e7bfbcaf165f2fdbad35b8333fbbd1a17ae85562714"
+          },
+          "Resources/list-remove.png": {
+            "sizeBytes": 76,
+            "sha256": "3cdf448c4ac9182ff211d547020d6bbf8ca032af40c40140636b1260cacc6ddd"
+          },
+          "Resources/manager.xrc": {
+            "sizeBytes": 2424,
+            "sha256": "cdde32ceff790f685153475564fb664f1dd12961452c3498916e70cbe77aec26"
+          },
+          "Resources/SuggestionBusyTemplate@2x.png": {
+            "sizeBytes": 350,
+            "sha256": "03a0d9e609d436f2593a275e644086fc6f7a49fec64af632bb90edd02c08b803"
+          },
+          "Resources/CrowdinLogo@1.5x.png": {
+            "sizeBytes": 2786,
+            "sha256": "d3842f31cf65757ddbd5b83518e0a839e9f2903961d9eecd32584d4bfc2178e8"
+          },
+          "Resources/SuggestionPerfectMatch@2x.png": {
+            "sizeBytes": 280,
+            "sha256": "914db19b44007f3a8fb8cc9813f6405ad44a2c8f5d0bb769b39f2fd2b1bede56"
+          },
+          "Resources/BulletPoint.png": {
+            "sizeBytes": 265,
+            "sha256": "f5d76fc3da4372766ce81d6a21f813fa2301d18d69d5f83fcc6406554fd407a1"
+          },
+          "Resources/ContributeOn@2x.png": {
+            "sizeBytes": 404,
+            "sha256": "4cd53f2e7de72ced81f062c80c34ba7e81792d26eb6243b68c9e4736338d978c"
+          },
+          "Resources/sync@2x.png": {
+            "sizeBytes": 597,
+            "sha256": "f686bbd1676a1922b2436afd95538d9c73e9d83c570a33912d0c24ff854ef468"
+          },
+          "Resources/pretranslateDark@1.5x.png": {
+            "sizeBytes": 453,
+            "sha256": "2d44ea33b081c07ee87cdf03c1468440410df50d651e3b57b83b6ff39bde47eb"
+          },
+          "Resources/SuggestionBusyTemplate@1.5x.png": {
+            "sizeBytes": 290,
+            "sha256": "56b76693e5c123bcc33dd90aa473cb1823006223b039e929963d35c025b2c57a"
+          },
+          "Resources/ExtractorsGNUgettext@2x.png": {
+            "sizeBytes": 1841,
+            "sha256": "2a921077b063e79a69586705b7ac2792b3e23d0d55c406ca7b4e035cdd010d2d"
+          },
+          "Resources/EmptyMultiSelectionTemplate.png": {
+            "sizeBytes": 363,
+            "sha256": "6ef9ed5822cc78a8db6910719235c25e7af91f0f2ca1187b081b47ed92905c07"
+          },
+          "Resources/ContributeOff.png": {
+            "sizeBytes": 190,
+            "sha256": "fd32afd7a833a6c4d311a1262ab9fd56305621dbffd34e3c445d2b0106adea15"
+          },
+          "Resources/MT_microsoft.png": {
+            "sizeBytes": 823,
+            "sha256": "e8e2eb8754d6484a31492b13e41156e7d4dc7cefb9ce2687509284713d13ada6"
+          },
+          "Resources/AttentionQuestion@2x.png": {
+            "sizeBytes": 554,
+            "sha256": "338d142a0a49e80106b65f025c659004ab1c020159bba9479ddd95d113a40348"
+          },
+          "Resources/window-close.png": {
+            "sizeBytes": 112,
+            "sha256": "ca864d615ea5eff3f4856a4ba5f2a874e176a17ca8ecfb272936e5ced7b0b443"
+          },
+          "Resources/wxART_DELETE.png": {
+            "sizeBytes": 200,
+            "sha256": "9c8fd9472b339ffa17c93ffdd9be8b47361e66f3c5069fa614545e5d549a3c82"
+          },
+          "Resources/SuggestionOfflineTemplate@1.5x.png": {
+            "sizeBytes": 267,
+            "sha256": "cca4da1de504ebd87e4af9ec9e3bdc18a4210c644a343c0003619964a8a1947e"
+          },
+          "Resources/pretranslateDark.png": {
+            "sizeBytes": 322,
+            "sha256": "edb1a889594e5cc58def081474a9ee2a6165badd781128dd028e40f21096dcb8"
+          },
+          "Resources/SuggestionTMTemplate.png": {
+            "sizeBytes": 151,
+            "sha256": "70082f8780d98375ea2f75f7422821a2c65cc6567e9f9fbeaa86030d926a9bcd"
+          },
+          "Resources/StatusWarning@1.5x.png": {
+            "sizeBytes": 353,
+            "sha256": "3e60da46b87624c014333f848b2c024e750b9a849c034ea1dec0e435c43769a0"
+          },
+          "Resources/CrowdinLogoDark@1.5x.png": {
+            "sizeBytes": 2269,
+            "sha256": "fba707071b6e4157d89f47d727e49f8eda4c42ea5041aca144ba0c87de398320"
+          },
+          "Resources/actionbox-closeDark.png": {
+            "sizeBytes": 118,
+            "sha256": "9ad873693e6e42cebdddca13d352f140982d3f063bef42f0fedc4518055d6565"
+          },
+          "Resources/ContributeOff@2x.png": {
+            "sizeBytes": 316,
+            "sha256": "b6f582489e8a9a29f8d9b4ace06e1ff609542b77beeaef180180d60899556c47"
+          },
+          "Resources/LocalazyLogo@2x.png": {
+            "sizeBytes": 3178,
+            "sha256": "8fc59c6e1ae11f75e08b5a7b9349fcdb79b0270bfccc1e24f903c31caa53e8b6"
+          },
+          "Resources/document-open.png": {
+            "sizeBytes": 290,
+            "sha256": "86f2dd91dc66a329647dce9d385f083dbafe2e30b4ed4165b8550a2e9e609cb2"
+          },
+          "Resources/ProBadgeTemplate@1.5x.png": {
+            "sizeBytes": 312,
+            "sha256": "64c2efed953ee21a79f8250a608e227521efd9699fd0c80be5e250bb90686d69"
+          },
+          "Resources/ContributeOn@1.5x.png": {
+            "sizeBytes": 353,
+            "sha256": "ba50af2e1c50fe10d1733e0b4afccdbb72de42fa23aa0874fa02c2e41aac37dc"
+          },
+          "Resources/ActionBoxPreTranslateDark.png": {
+            "sizeBytes": 235,
+            "sha256": "bd354f93e1d7a06f7b4200ffb42e71e8456a572ebd40018e51843e2bf3bc9bf8"
+          },
+          "Resources/wxART_DELETE@1.5x.png": {
+            "sizeBytes": 1436,
+            "sha256": "a1d7291272b876d9a91103f70fcfb98530674dd4c0af878801277bb8bcf3c09f"
+          },
+          "Resources/pretranslate@1.5x.png": {
+            "sizeBytes": 473,
+            "sha256": "831a89dd2efbfc5c058ae76742bec6ee9b1b69e123d0af210c1f04b4a7ee148b"
+          },
+          "Resources/actionbox-close-hoverDark.png": {
+            "sizeBytes": 151,
+            "sha256": "6763e295f24d1c215ac2b611a946f52c4faff41ed14b19e0a61710d7972d8b3e"
+          },
+          "Resources/ClockButtonTemplate@2x.png": {
+            "sizeBytes": 489,
+            "sha256": "9abaf341a3220734c4abb8eb044616de3559fc8ba7fd8bb4bb5dd99f9403485b"
+          },
+          "Resources/sidebar.png": {
+            "sizeBytes": 207,
+            "sha256": "665d6b109ea67721914bfe731fb4cd792db61d331b3fcb2e765fc48e5605bb45"
+          },
+          "Resources/stats.png": {
+            "sizeBytes": 352,
+            "sha256": "a381dd56130c79fd57b2a804babbc0bc1918f9fb309229b1575cd787eeb1095a"
+          },
+          "Resources/MT_microsoft@1.5x.png": {
+            "sizeBytes": 1276,
+            "sha256": "3a3abe2a50419fa50d930598c994b384d448fbc208349e1689c1259872c89d93"
+          },
+          "Resources/DownvoteTemplate@1.5x.png": {
+            "sizeBytes": 232,
+            "sha256": "48104505e52bf54e8b827a5b64de9df380fa71f806754ef1d4e80566141c369c"
+          },
+          "Resources/window-close-toggled.png": {
+            "sizeBytes": 146,
+            "sha256": "916f1210cd008da48157cdbde5de2dc2bc6753ed72bc548293e1e0c4e168eead"
+          },
+          "Resources/EmptyMultiSelectionTemplate@2x.png": {
+            "sizeBytes": 649,
+            "sha256": "1b5122d10699f8d608c6439ebd9e93d6d380f6662a32f2e115e347beb644b6a4"
+          },
+          "Resources/ItemCommentTemplate@2x.png": {
+            "sizeBytes": 199,
+            "sha256": "60425be7046dc355d52dee579204abf19e1666f8b5b0b113fd297eef69937d39"
+          },
+          "Resources/AttentionQuestion.png": {
+            "sizeBytes": 293,
+            "sha256": "f054c3405353c68cfd0c53411a96ad2a0e0d3ff393826a10843a8032e87c3200"
+          },
+          "Resources/MTSettingsTemplate.png": {
+            "sizeBytes": 199,
+            "sha256": "0f4bfc776debf326a72ffc952a3983fb82abf71208720f33a7ba7d058e88f36c"
+          },
+          "Resources/comment.xrc": {
+            "sizeBytes": 2047,
+            "sha256": "522189a8536d1f469a3c1ee66470be7f2788b570ee163cb182acc820757c754f"
+          },
+          "Resources/ProBadgeHighlight.png": {
+            "sizeBytes": 233,
+            "sha256": "da548e0336a453086606f211c955cbe9144b8f5a7ae5bc9a40f672e69c70119d"
+          },
+          "Resources/upload@1.5x.png": {
+            "sizeBytes": 454,
+            "sha256": "43c9bc09d0998db1c63d932650cc961e4912cc8826f551ac7404f6fc3474c531"
+          },
+          "Resources/StatusErrorBlack.png": {
+            "sizeBytes": 142,
+            "sha256": "fa2dcad700747256ce9f65fc357ee9c0958edc7b0fb154843053bf44164c5f5c"
+          },
+          "Resources/SuggestionOfflineTemplate.png": {
+            "sizeBytes": 193,
+            "sha256": "4d365422779fea26d82e3b26a7c4be452f0a17b37b607ac199f235ade3a4fbd7"
+          },
+          "Resources/LicenseAgreement.rtf": {
+            "sizeBytes": 5197,
+            "sha256": "d3f4c2a5483535ed52c8317cc1ee7f172e201644da9eec6f8cee712cd252044c"
+          },
+          "Resources/StatusError@1.5x.png": {
+            "sizeBytes": 245,
+            "sha256": "846958a24f741c41b6e67f169a3a731a39294ecc9dbc31431bbe1944da4c739b"
+          },
+          "Resources/ExtractorsTemplates@1.5x.png": {
+            "sizeBytes": 933,
+            "sha256": "811a908d0486a509f8c88ec22f8e6ed4dd90b13ced80defc41a069eff6d3ebb6"
+          },
+          "Resources/actionbox-close-hover@1.5x.png": {
+            "sizeBytes": 231,
+            "sha256": "8fca1785d0793554649afb43363a356c9e76b414338f158cfaa50779035ea87d"
+          },
+          "Resources/document-openDark@1.5x.png": {
+            "sizeBytes": 397,
+            "sha256": "988c801a353cb06a7a3d5bf20152b27b8e8d3b9d4996b79b4c4d83d06bf15948"
+          },
+          "Resources/FilePO.ico": {
+            "sizeBytes": 9566,
+            "sha256": "b69f13062c7213fc57ffa6909e8b26280c26f88a3a41262d1d60d8ee666aaa4c"
+          },
+          "Resources/document-openDark.png": {
+            "sizeBytes": 262,
+            "sha256": "1b54b8a7c835a64dd3a9fb496dc507851d352c7e128297be1d9a4862df713d62"
+          },
+          "Resources/poedit-status-cat-mid.png": {
+            "sizeBytes": 140,
+            "sha256": "490c34ff04655e40ffce60b05eff80d19ed924edc3c1755f036f244cbe575650"
+          },
+          "Resources/ClockButtonTemplate.png": {
+            "sizeBytes": 240,
+            "sha256": "3e6f00df1cc53c58f904a7064a5c0c3f8715601032685f14c71f6e1858ae17fc"
+          },
+          "Resources/ExtractorsTemplates.png": {
+            "sizeBytes": 555,
+            "sha256": "84ecf6f4ded72267e69003669e7b10812dd52fbb48946defbff6c232a064ee73"
+          },
+          "Resources/actionbox-close-hoverDark@2x.png": {
+            "sizeBytes": 223,
+            "sha256": "103e4e6500faf6492335c7c1fe786539569b738d7bcede3ea27f6010b5c9ae4f"
+          },
+          "Resources/GlossaryTemplate.png": {
+            "sizeBytes": 167,
+            "sha256": "9d1ad39c83bea097170b464e2298379c38654cc03edcde477d0325005468c0e0"
+          },
+          "Resources/sync@1.5x.png": {
+            "sizeBytes": 507,
+            "sha256": "973a0c2aaeaa6ff31db6c19911cd045849fe6fd2e9874f81ca9f97ac68509d3a"
+          },
+          "Resources/SuggestionPerfectMatch.png": {
+            "sizeBytes": 187,
+            "sha256": "28f282932ae593dba7f515c89e801339aba10efa72aa540f581f4c921bb53910"
+          },
+          "Resources/BulletPoint@1.5x.png": {
+            "sizeBytes": 420,
+            "sha256": "6cf4ff61c1f32f47229172df13226b1a208d3b8e076923c80ae3223853e72ecd"
+          },
+          "Resources/MT_deepl@2x.png": {
+            "sizeBytes": 966,
+            "sha256": "2b2fa90f0f49286d31065146c002b48ec5c116be71f4319065312d7ee0ab2822"
+          },
+          "Resources/sidebar@2x.png": {
+            "sizeBytes": 375,
+            "sha256": "784fd66f9af8a626a337bd8543177d6705c656f67a33be903ccdfe6f940d5f77"
+          },
+          "Resources/StatusWarningBlack.png": {
+            "sizeBytes": 203,
+            "sha256": "0bad44d36507f42e07983e616773bef2fa3bfef6daa308a1057ef7cfea668823"
+          },
+          "Resources/AB_EditTranslationTemplate.png": {
+            "sizeBytes": 249,
+            "sha256": "31180fcb1726f1f188649695413ed532ed5999bd1669f548e124a9ba826ea3db"
+          },
+          "Resources/actionbox-close-hover.png": {
+            "sizeBytes": 154,
+            "sha256": "3bd278b590032446e96cf21a91f465ab0f997c2c1f0e04f8437063d99f77b03d"
+          },
+          "Resources/MT_microsoft@2x.png": {
+            "sizeBytes": 1613,
+            "sha256": "eecdd28080d821b278c76dfca0d247688b23d331e5bf4daa4bb5859de85020a1"
+          },
+          "Resources/AccountCrowdin@2x.png": {
+            "sizeBytes": 2070,
+            "sha256": "ed870b51d9d96a351191164e334474d75a6c395132b4d8b32525b9c1280fc018"
+          },
+          "Translations/sv/poedit.mo": {
+            "sizeBytes": 94827,
+            "sha256": "02b6e98f95a2765e9eff0d5009c9753c517c09b5af079aea7ea835c77bc64924"
+          },
+          "Translations/sv/wxstd.mo": {
+            "sizeBytes": 124093,
+            "sha256": "f3f490b0ac48373fb4ef3a54babd8957263024f9ddcd3df5756affa50851e09e"
+          },
+          "Translations/hu/poedit.mo": {
+            "sizeBytes": 99426,
+            "sha256": "2a5b9f8f5ea2a312653ac33a58df976d52ed17864fbfbab80732e543b6a96e02"
+          },
+          "Translations/hu/wxstd.mo": {
+            "sizeBytes": 77753,
+            "sha256": "9e38c6221d37a01c1228d58efa7626ee5790f68ff00dc6a8dbb8c35772d42d9d"
+          },
+          "Translations/af/poedit.mo": {
+            "sizeBytes": 92921,
+            "sha256": "af70c8c7f02d90a9d2d70f4ca0f50f51900e10e06605f4916b5c1ba1fb8709fb"
+          },
+          "Translations/af/wxstd.mo": {
+            "sizeBytes": 94569,
+            "sha256": "0c580164d9b55a9564a4320c8f6fb6b270fd5b460a7c2c79455420e624a29e0c"
+          },
+          "Translations/sr@latin/poedit.mo": {
+            "sizeBytes": 94243,
+            "sha256": "c5e0f5a5cd3162a19de1971d92bcdacbad85a69b56afde98faff931fd0967c96"
+          },
+          "Translations/fa/poedit.mo": {
+            "sizeBytes": 100242,
+            "sha256": "3cb7283cb2da3fd3f9542240e2c74bc5bb2e64f57b5632e3c4ac6b34b2f03395"
+          },
+          "Translations/pa/poedit.mo": {
+            "sizeBytes": 70056,
+            "sha256": "6cd8d4fee8966b2b1998f458d15c9d71ca780502f8340c5972b2bf2e854c6904"
+          },
+          "Translations/ca@valencia/wxstd.mo": {
+            "sizeBytes": 50820,
+            "sha256": "f33671e95aaa81cd8066426e236df499296b2302d9dbe77b66a87c34ef3856f0"
+          },
+          "Translations/oc/poedit.mo": {
+            "sizeBytes": 59112,
+            "sha256": "959891fd6e8febcfe5f9ff2c8c469643cf6fae714bb5928d786081c140c3b395"
+          },
+          "Translations/th/poedit.mo": {
+            "sizeBytes": 131590,
+            "sha256": "ba95bdef0b65510487b4c92144c9097c3271f8a19a9665bdb8c77cd5f39ffb2a"
+          },
+          "Translations/sr/poedit.mo": {
+            "sizeBytes": 120273,
+            "sha256": "8578e6a9831c8c8a9df3db2ce063ad6bebd741c41621a251816eb592898e4f1b"
+          },
+          "Translations/sr/wxstd.mo": {
+            "sizeBytes": 148460,
+            "sha256": "63aa45495484cc70dda97aa8e5f3b4fe3085ca56204703586be37ec7dd8a9a2b"
+          },
+          "Translations/uk/poedit.mo": {
+            "sizeBytes": 123786,
+            "sha256": "73c427b1b6114d621ccda20e4f2cd73a1139a27d6c3ed5ce5d7ba979c971ce42"
+          },
+          "Translations/uk/wxstd.mo": {
+            "sizeBytes": 189522,
+            "sha256": "df63b606a4c5dbd1ef60be6b50037dfed56b86820b39649b6b11f43ac7398446"
+          },
+          "Translations/ro/poedit.mo": {
+            "sizeBytes": 97947,
+            "sha256": "de83222a21376c0c43551c115e3592dedab417afd54d5c841134b41ec5042d01"
+          },
+          "Translations/ro/wxstd.mo": {
+            "sizeBytes": 152106,
+            "sha256": "7fe3771a26f229f24036aadd66a73de2cfe3090878c67e5b90a4f7c9f93b9303"
+          },
+          "Translations/sq/poedit.mo": {
+            "sizeBytes": 96138,
+            "sha256": "7af9952dc85d7b48b0cf57523400014da24ff6725b0ecdff13745f26e335d343"
+          },
+          "Translations/sq/wxstd.mo": {
+            "sizeBytes": 148186,
+            "sha256": "c7da933b78b50ca3c8d0258d6d769e51058c559a3d2f3fd1a4ea019182575965"
+          },
+          "Translations/hi/wxstd.mo": {
+            "sizeBytes": 126361,
+            "sha256": "34cae18bb9f642ed114cc4a0f8b14cebc0d7dc4a28ecf254aecbced79f775d3e"
+          },
+          "Translations/hr/poedit.mo": {
+            "sizeBytes": 95215,
+            "sha256": "d25197e6195988e39f2adfdaaf886cdda18f0f2e499a414ab5d1d3ddb58e579c"
+          },
+          "Translations/hr/wxstd.mo": {
+            "sizeBytes": 144430,
+            "sha256": "170e7410124f1478030ff2bae0721ee31d50027302b0d9da9b9f0f9aea80e62a"
+          },
+          "Translations/sl/poedit.mo": {
+            "sizeBytes": 86797,
+            "sha256": "ec516ee74c2c8ed9d0563b9ca94a977092a2f34aafee802b845a9345177f0822"
+          },
+          "Translations/sl/wxstd.mo": {
+            "sizeBytes": 148059,
+            "sha256": "38c551982c91be3974f6e6de87b1894f56d6ba18864260a9f9a9c51693cc7882"
+          },
+          "Translations/vi/poedit.mo": {
+            "sizeBytes": 86641,
+            "sha256": "d5086d79f7bd533f722b7916c30474fcf8a4fe9a541b4e8d60067cab938152d5"
+          },
+          "Translations/vi/wxstd.mo": {
+            "sizeBytes": 137935,
+            "sha256": "005d23bf0de9e058a76a29d139d0c1d4d5b658404f3803fbfe4ba83a4f8d618d"
+          },
+          "Translations/el/poedit.mo": {
+            "sizeBytes": 129678,
+            "sha256": "f2e74005d328645b8b492e4b217ed3047575f530188a7643327ce2a73da899d5"
+          },
+          "Translations/el/wxstd.mo": {
+            "sizeBytes": 89212,
+            "sha256": "30b39f9be57c1da80ec24d28d68a0d6a36c8eccea6aad24e14afa395eee457e4"
+          },
+          "Translations/de/poedit.mo": {
+            "sizeBytes": 99896,
+            "sha256": "2299c196828e5457d8b5477fd862c88a0d263941160ba94a6167b474b6f0ab7f"
+          },
+          "Translations/de/wxstd.mo": {
+            "sizeBytes": 151514,
+            "sha256": "7fe12490a7710b6148728d0d1e9cc47b21e5f2499a7440b3aae179d539915d6f"
+          },
+          "Translations/ckb/poedit.mo": {
+            "sizeBytes": 30685,
+            "sha256": "ad04b8939a503f0be50219a196ecefdb841643503c90b3d364d2b124afa8349d"
+          },
+          "Translations/id/poedit.mo": {
+            "sizeBytes": 92470,
+            "sha256": "256903ef7ed953897f6aa44549d9e4257a7efcdae093cdc79b8c3aae87d7ac0d"
+          },
+          "Translations/id/wxstd.mo": {
+            "sizeBytes": 133658,
+            "sha256": "21d767d9652df9bb347498697789d0561f55fa00ea3818bcb2c571397282957f"
+          },
+          "Translations/ko/poedit.mo": {
+            "sizeBytes": 98382,
+            "sha256": "11dfbcc47925283b08887bb7e4ccd0a8d2ab9bb51380e6770c4968d36432d05e"
+          },
+          "Translations/an/poedit.mo": {
+            "sizeBytes": 50566,
+            "sha256": "7edc1bd2e0b515d1a7a8c254d8e31256a2dca442ad2534bb1f3e114aa928a713"
+          },
+          "Translations/an/wxstd.mo": {
+            "sizeBytes": 132687,
+            "sha256": "2afa26fab5083a37968bf447de905799eff8951dcf9b8149f0fcc6675feaf1df"
+          },
+          "Translations/pl/poedit.mo": {
+            "sizeBytes": 99318,
+            "sha256": "293c3fbe1fd6d81b530bec3bad4cac6bf175795cdc246f509add389a947adc15"
+          },
+          "Translations/pl/wxstd.mo": {
+            "sizeBytes": 128113,
+            "sha256": "b95540708e5e7d18aac50b31c209aff8c07040e04086a81d80ab64aca3d554e4"
+          },
+          "Translations/he/poedit.mo": {
+            "sizeBytes": 105658,
+            "sha256": "a98dd06aa1fc846732430d0cdddf39ab1cf2856f67b6451e4e8ced08608c1d96"
+          },
+          "Translations/ca/poedit.mo": {
+            "sizeBytes": 84621,
+            "sha256": "04f835fdc9028f454cae61a65fb12a78d3e6a496e664f18ca39b840bbf938144"
+          },
+          "Translations/ca/wxstd.mo": {
+            "sizeBytes": 154912,
+            "sha256": "3ea62b3573e46f92e118171f521d3d5c12705c929b2c645c2fbb49eeb766ef24"
+          },
+          "Translations/en_GB/poedit.mo": {
+            "sizeBytes": 90166,
+            "sha256": "404b33c6cba477dd02cd1b7fde145609bbaa6579742ca6b9f1dbc68a7e302d45"
+          },
+          "Translations/az/poedit.mo": {
+            "sizeBytes": 46541,
+            "sha256": "23973a02ae8780977c981e048cb6d0e0e5ed3a5b2c61c2c216fc529e05c3acab"
+          },
+          "Translations/pt_BR/poedit.mo": {
+            "sizeBytes": 97191,
+            "sha256": "59fb09bb6f1ba7a5c8118e37a9dae45e5e7d2cbcf64e8f3bd4f91b8be4786397"
+          },
+          "Translations/pt_BR/wxstd.mo": {
+            "sizeBytes": 153091,
+            "sha256": "85576828c2160abc8c3160c70e2770260b44e03a67ed60c3fd012e88d7319ef1"
+          },
+          "Translations/sk/poedit.mo": {
+            "sizeBytes": 96865,
+            "sha256": "5fe5749c18ec9689a1064e07e45ca2a8a59bcd7a88a1a1d7469af59debd1ea9e"
+          },
+          "Translations/sk/wxstd.mo": {
+            "sizeBytes": 139096,
+            "sha256": "0a330ffddb5b8df766c06017c12b96efce29e1f2919efd1ee6e058d218b64b64"
+          },
+          "Translations/fa_IR/wxstd.mo": {
+            "sizeBytes": 6631,
+            "sha256": "5d23b53e230d7cca6faf2fce23a3002ff69e6475d4542b73f6c2d73293b65787"
+          },
+          "Translations/ug/poedit.mo": {
+            "sizeBytes": 122001,
+            "sha256": "2ec7cdb9f92c7671665661fcee4e9f4df95b6e628c8b0634605cf9b8c66c6a8d"
+          },
+          "Translations/pt/wxstd.mo": {
+            "sizeBytes": 101974,
+            "sha256": "6755aca8597f7be835f1e61083609c12a793213dce0d8a0aaaac13b479ae165f"
+          },
+          "Translations/ar/poedit.mo": {
+            "sizeBytes": 93100,
+            "sha256": "129bc35e4f9279f9ca775ebb0addec10070d898ace57ecdc50fa7f59a5d5d03d"
+          },
+          "Translations/ar/wxstd.mo": {
+            "sizeBytes": 37392,
+            "sha256": "803ea3d1047b3382929df2a015f5ce45826edb5f24d8761e32c0462a52c8c29a"
+          },
+          "Translations/bs/poedit.mo": {
+            "sizeBytes": 95451,
+            "sha256": "84afac0c8b0d65391845b6249966860299de62bcbc59ac132ec7bc4220730bdc"
+          },
+          "Translations/it/poedit.mo": {
+            "sizeBytes": 96420,
+            "sha256": "b88f089c4a2da9c57aa682ee928303d169adefc518ff966bc05a91584b5bb440"
+          },
+          "Translations/it/wxstd.mo": {
+            "sizeBytes": 151404,
+            "sha256": "5abef6af4c4452adc1d93105683aa13350ecc893f73151d02ca757d47ecef0a1"
+          },
+          "Translations/da/poedit.mo": {
+            "sizeBytes": 92809,
+            "sha256": "a5617e8c40d5ae659704fcf50ee71bed030f4b8822b30b6165d7d70ded2c8656"
+          },
+          "Translations/da/wxstd.mo": {
+            "sizeBytes": 134844,
+            "sha256": "342188a787858a71f830c69bdaa82db3ced6d91f7c72cec374bde0482aae2ad0"
+          },
+          "Translations/cs/poedit.mo": {
+            "sizeBytes": 98079,
+            "sha256": "7e3e472e31dfd25ff6a1c50aeb889aca104f0c6ea801ad605207d7e478b6bdc8"
+          },
+          "Translations/cs/wxstd.mo": {
+            "sizeBytes": 146153,
+            "sha256": "de79f0e5bbe973936220ed5e368caccfc5dc07c6de57b348e4d20ca5e354f853"
+          },
+          "Translations/tr/poedit.mo": {
+            "sizeBytes": 96546,
+            "sha256": "68db2a22ba5a9ffdd35b945133e4965df66815f022aae0b7f324b57afdd19f82"
+          },
+          "Translations/tr/wxstd.mo": {
+            "sizeBytes": 147248,
+            "sha256": "3b012723ff448b1aab517ec9dc3cb0203953e3499727ed7661899aee155451c9"
+          },
+          "Translations/ko_KR/wxstd.mo": {
+            "sizeBytes": 99068,
+            "sha256": "7155a59fd797d3c6a260f8708e98cad4aa0409b0a2a68b85faf864f97b954ef4"
+          },
+          "Translations/co/poedit.mo": {
+            "sizeBytes": 100950,
+            "sha256": "6f131ba2d3a7040eee180428768fbe63513f3a95b57a974012b0fe547bcac95b"
+          },
+          "Translations/co/wxstd.mo": {
+            "sizeBytes": 160128,
+            "sha256": "7d8777cb60e70ee622e1971882b5f8c2511292b8f3e9d589b809f9f7cd515d0e"
+          },
+          "Translations/es/poedit.mo": {
+            "sizeBytes": 97130,
+            "sha256": "f2af8df70f1abd73a910c51da247650311517b4d2c093871262f54490a06e7f7"
+          },
+          "Translations/es/wxstd.mo": {
+            "sizeBytes": 152413,
+            "sha256": "84cb8013b7208552009cbf766f67cc3379cd504ae36d3208d5842dc632fe669d"
+          },
+          "Translations/fr/poedit.mo": {
+            "sizeBytes": 101543,
+            "sha256": "f18f205ad3b2626ef4008d76b1722a03219b0d4ddbf91a5b1d77d45d5f5a5e11"
+          },
+          "Translations/fr/wxstd.mo": {
+            "sizeBytes": 154062,
+            "sha256": "883be59699a3b6ef15c485e31c2ec6556c25f2d21c6a08e2114bafe6e12a8b73"
+          },
+          "Translations/eu/poedit.mo": {
+            "sizeBytes": 61760,
+            "sha256": "936dff2a00deded16a09a82e2832dc4c981c7f63d1a46a3c5e0b48adc7f7c5d6"
+          },
+          "Translations/eu/wxstd.mo": {
+            "sizeBytes": 134921,
+            "sha256": "e95aa882a5d895fddef60755db134821b0828e01ff2b00212a43c09f98e69009"
+          },
+          "Translations/hy/poedit.mo": {
+            "sizeBytes": 109119,
+            "sha256": "c0b1756cb6f762045b87b60686a5916aefaa47a3a8031efd6cb6f9dd94c8039f"
+          },
+          "Translations/ne/wxstd.mo": {
+            "sizeBytes": 186254,
+            "sha256": "3f2e18c667c39441325f3f0672c836ba6cda79e20b2c5391f880f4c9483c3cd7"
+          },
+          "Translations/ms/poedit.mo": {
+            "sizeBytes": 85789,
+            "sha256": "7de3af58529705396857f44cd966a9ab85d80ae060708d166c0ad5342fba019a"
+          },
+          "Translations/ms/wxstd.mo": {
+            "sizeBytes": 86716,
+            "sha256": "f19ba061dd42f6e75f8386668e06bde5eab03d21ff2c9577b2d05a7b28e28071"
+          },
+          "Translations/bg/poedit.mo": {
+            "sizeBytes": 124383,
+            "sha256": "a45e9f7212b834a3ecdd4b5203f8d6b55eb83c4e13ca4d4bd45c1d253ab4bf39"
+          },
+          "Translations/ja/poedit.mo": {
+            "sizeBytes": 105128,
+            "sha256": "674a566a286dd430f6f24c2213def6666da572e70299c318f1d3326a3c6ce6a0"
+          },
+          "Translations/ja/wxstd.mo": {
+            "sizeBytes": 123385,
+            "sha256": "cdcdeaff1a66f373dcf8c77ef167c3eb7f312164112f024b3fa735cdb8cf7bcd"
+          },
+          "Translations/ga/poedit.mo": {
+            "sizeBytes": 101869,
+            "sha256": "1732734ae16c08407f7366a0e33841e69464f28f43cf278670180f4085818b73"
+          },
+          "Translations/be/poedit.mo": {
+            "sizeBytes": 113417,
+            "sha256": "9bef6e8a638dd19e84dbb35d2e841c6ebebdcc0a20413e5e59feb99230ba86b9"
+          },
+          "Translations/ka/poedit.mo": {
+            "sizeBytes": 117964,
+            "sha256": "331c65f3eebb625a37e73f8746be6a8c9da31498ed199c3237dfaf1ac3125078"
+          },
+          "Translations/ka/wxstd.mo": {
+            "sizeBytes": 194963,
+            "sha256": "089dc1c186c32146b3ef42bd3768aaef3153c6b312985f4ec0ee330541f3bd7c"
+          },
+          "Translations/kab/poedit.mo": {
+            "sizeBytes": 77721,
+            "sha256": "391c6782cc13fa31c314f6eb9ce4f6347f59cf80a577a61a289cecb5ea11456b"
+          },
+          "Translations/tg/poedit.mo": {
+            "sizeBytes": 82749,
+            "sha256": "db6c091a010f9e16318a78b987f70a6564752adce3a785ecf5398ab3d6f0a18e"
+          },
+          "Translations/kk/poedit.mo": {
+            "sizeBytes": 108367,
+            "sha256": "fb334b3c56a347a3d63aa3d766b540dd640f5ac780c663678f262a89c4dc3cb9"
+          },
+          "Translations/pt_PT/poedit.mo": {
+            "sizeBytes": 96973,
+            "sha256": "2642321bfadf402080d192f98f546e985242f69b1b8fcb731f89092d34d59e5a"
+          },
+          "Translations/zh_TW/poedit.mo": {
+            "sizeBytes": 89108,
+            "sha256": "1456cc5b2cbf0cb69b6d5c7510c5ba432065783bef8801d2025bf0a0f18158fe"
+          },
+          "Translations/zh_TW/wxstd.mo": {
+            "sizeBytes": 141795,
+            "sha256": "4fda0ed47dfc558265b8887f36a1ff096f3032328abec0f8986eb7c050167f1a"
+          },
+          "Translations/nl/poedit.mo": {
+            "sizeBytes": 92322,
+            "sha256": "a183b37ae482d2a147c78b2efc678184ce2c50ce78a5051eee1a57ec2a68d465"
+          },
+          "Translations/nl/wxstd.mo": {
+            "sizeBytes": 146658,
+            "sha256": "863fe7b51ce283bd137c6a73b94cd8a89db13bae190848bed9faa2e7d65cb9bc"
+          },
+          "Translations/lt/poedit.mo": {
+            "sizeBytes": 89284,
+            "sha256": "86c403e7e59fa0a1133cdba8e662030cec5e7dea7dbe9a960688d596725dcd80"
+          },
+          "Translations/lt/wxstd.mo": {
+            "sizeBytes": 29369,
+            "sha256": "d7d4c27e3e97d02da5de8e84fcf352e8e075d87f7942d526425e3c4142ae84b6"
+          },
+          "Translations/zh_CN/poedit.mo": {
+            "sizeBytes": 87033,
+            "sha256": "baef7e9b4811dc54a719b3a5706f9ad333e3b407bfaecb63843b8cb5cb8040c7"
+          },
+          "Translations/zh_CN/wxstd.mo": {
+            "sizeBytes": 139993,
+            "sha256": "78afdffbcfdd26f7c3810d8a3a1f3c80692b794f2381b36f862c77c79f83ab70"
+          },
+          "Translations/gl_ES/wxstd.mo": {
+            "sizeBytes": 128676,
+            "sha256": "b5ce2af5006d25d01c247365eb1f5f56215803b49d3eda80bb84a1b4ac869193"
+          },
+          "Translations/gl/poedit.mo": {
+            "sizeBytes": 84653,
+            "sha256": "aec40763810be675f76b8fbaa37d29e46b02fdee5c35699a5da9afe3333b5af8"
+          },
+          "Translations/fi/poedit.mo": {
+            "sizeBytes": 94825,
+            "sha256": "d954f2af90a91f7a8ba400fd6ce5c5e7dee0362939c83cd1b30783bfa1a3bbfd"
+          },
+          "Translations/fi/wxstd.mo": {
+            "sizeBytes": 88949,
+            "sha256": "661d2cf364a59a7b1d5916ecc0fbb354f2cae3e5ce3804d2dcdc42b5882dd133"
+          },
+          "Translations/is/poedit.mo": {
+            "sizeBytes": 96515,
+            "sha256": "67faa2ee751e20636b32b07558574b8864aa42dba786ce6546038c46b009531a"
+          },
+          "Translations/lv/poedit.mo": {
+            "sizeBytes": 35785,
+            "sha256": "91ef510294936f5579cfaf382cff28d3420ed086de672c6013979924194a356a"
+          },
+          "Translations/lv/wxstd.mo": {
+            "sizeBytes": 106913,
+            "sha256": "38126ad9659614c393958bf734d5514454c35d67f06cdbb50ba66205a29d0822"
+          },
+          "Translations/ru/poedit.mo": {
+            "sizeBytes": 126308,
+            "sha256": "58dfbe1a0f81b15452d0769f2c1693447c592a838a9f67f8ddbb530459db545e"
+          },
+          "Translations/ru/wxstd.mo": {
+            "sizeBytes": 173628,
+            "sha256": "819a1aeeaf406e58137ee5de6c992911612cf8ca45f1d83b78a60afd7c8a80fb"
+          },
+          "Translations/et/poedit.mo": {
+            "sizeBytes": 90951,
+            "sha256": "09892f6491de6ab7db76a5c9a1845dbbb1f1190141a8f1ba722ef202404582a6"
+          },
+          "Translations/uz/poedit.mo": {
+            "sizeBytes": 95606,
+            "sha256": "8d2c247448c3cf11dd78a9db2bb8e9bf94f1ec2e6c63810f3b5aecad39820372"
+          },
+          "Translations/nb/poedit.mo": {
+            "sizeBytes": 84929,
+            "sha256": "7f1f8b815404b0ffffc1dff871d8b09a613d469ce0dc6fc13e65aa9e40c1e8b7"
+          },
+          "Translations/nb/wxstd.mo": {
+            "sizeBytes": 90460,
+            "sha256": "076fca074774aa3b97f210f2e7d654a08fb067e4008ddc65cf194f276a9231b6"
+          },
+          "Translations/ta/wxstd.mo": {
+            "sizeBytes": 240166,
+            "sha256": "94507d1e340d4cf6a5b41025fcc4ae6bbede502ff714bf46de3892579217b145"
+          },
+          "GettextTools/bin/msgfmt.exe": {
+            "sizeBytes": 102144,
+            "sha256": "9c357055ee55519e2959dc88156309479b718455311c05184db19e17849d65f1"
+          },
+          "GettextTools/bin/msgunfmt.exe": {
+            "sizeBytes": 55040,
+            "sha256": "1dbab7e3fedbae5f4537454e13826e52435ab1b43711de2cd7bcd1b5cc05417d"
+          },
+          "GettextTools/bin/libcharset-1.dll": {
+            "sizeBytes": 51456,
+            "sha256": "7cb4ba5f481c94e11cd5d80f9da2c05b6e5546dd3d4123a14cb71e3225371dc0"
+          },
+          "GettextTools/bin/libgettextpo-0.dll": {
+            "sizeBytes": 621824,
+            "sha256": "7594b89aa60742c71f35362e3ccd2e5bb5d61e4ef2b501dc67aca0beeaa71bad"
+          },
+          "GettextTools/bin/msgmerge.exe": {
+            "sizeBytes": 76544,
+            "sha256": "7d9bc064419748ff82c03d761d0506d600e091dcd3d2b82552cdf9792807d2ff"
+          },
+          "GettextTools/bin/libintl-8.dll": {
+            "sizeBytes": 301824,
+            "sha256": "9f34880294aff9816036d2c15b2dc2bf454c5cdeded07c6b26e1c5d1ee76b46d"
+          },
+          "GettextTools/bin/libgettextsrc-0-26.dll": {
+            "sizeBytes": 406272,
+            "sha256": "95a19dc73804e4803411f0d8c30f7b277c98f6de1d70101c48f6cb6c04458778"
+          },
+          "GettextTools/bin/libgcc_s_seh-1.dll": {
+            "sizeBytes": 160512,
+            "sha256": "44e483e9e934ccbf0a617032e2733e1805c52f4c8feca43a9a2be71783dd4b00"
+          },
+          "GettextTools/bin/libiconv-2.dll": {
+            "sizeBytes": 976128,
+            "sha256": "fe281d52a1a8fe9dccfe348fe5a2cd823fcd4e795034081a7c27f1e7d8976efc"
+          },
+          "GettextTools/bin/libgettextlib-0-26.dll": {
+            "sizeBytes": 2231040,
+            "sha256": "b366aeb5fa0828758dcdf587fa4d49b159bea2384f56ea22e71a0cd615d855e6"
+          },
+          "GettextTools/bin/libasprintf-0.dll": {
+            "sizeBytes": 145152,
+            "sha256": "79e8683fbe9a831c7c2e79f4f55c70efa804fbfae9a54df99166cccd1a34c9b7"
+          },
+          "GettextTools/bin/libstdc++-6.dll": {
+            "sizeBytes": 2433280,
+            "sha256": "c030899883fccf0fcf1b3a07256a206ab99eadbed119bb4fbc627e99d546131c"
+          },
+          "GettextTools/bin/libwinpthread-1.dll": {
+            "sizeBytes": 71424,
+            "sha256": "b864140131d310a4c652803b5c0e9b683659e1b6f78d394cef42ad40059f8333"
+          },
+          "GettextTools/bin/msguniq.exe": {
+            "sizeBytes": 45824,
+            "sha256": "4ba5894b0ea45f6e2fff238cf033e371a1015d151e694e85604f8f59af3e63b4"
+          },
+          "GettextTools/bin/msgcat.exe": {
+            "sizeBytes": 47360,
+            "sha256": "7dca4be4b8ee05dd450382ccd2473969425b14844e7b032f69c11a2f31726213"
+          },
+          "GettextTools/bin/libgomp-1.dll": {
+            "sizeBytes": 316672,
+            "sha256": "0a9673ef06f4e7fd7bedd517e99a69f04bc11dd3471d90da7f1c01b903c9bb4e"
+          },
+          "GettextTools/bin/libtextstyle-0.dll": {
+            "sizeBytes": 723200,
+            "sha256": "cf8a5cd9f52e596415aa9cde1e427c61a644f61d8b51de16b677a8c06b9b1c77"
+          },
+          "GettextTools/bin/xgettext.exe": {
+            "sizeBytes": 8563456,
+            "sha256": "ce2a5cbaf6e727c8e683c0ff2a2ba6e297e1bd44ae766454ef196d3eaced1d7b"
+          },
+          "GettextTools/share/gettext/styles/po-emacs-x.css": {
+            "sizeBytes": 1161,
+            "sha256": "bbfd4c7d510ca5480ef9611e11d5e5cbdfba8f7bfca0cac072167ddf7e74c0d3"
+          },
+          "GettextTools/share/gettext/styles/po-emacs-xterm256.css": {
+            "sizeBytes": 1163,
+            "sha256": "ec2728d0892eaae474a01e1ae7dfc71d6d665ee66037d3ab4f906a39843a3f92"
+          },
+          "GettextTools/share/gettext/styles/po-vim.css": {
+            "sizeBytes": 1166,
+            "sha256": "a9d38bc9f7d2bb61bc5b2df71214bd0a62774a33ab841eeab4e98f9550b08c42"
+          },
+          "GettextTools/share/gettext/styles/po-emacs-xterm.css": {
+            "sizeBytes": 1125,
+            "sha256": "6d4aa3c7119fad86a0ae24266352edb2a876be4fd7c87fce6be526339bb91d67"
+          },
+          "GettextTools/share/gettext/styles/po-emacs-xterm16.css": {
+            "sizeBytes": 1161,
+            "sha256": "96c1a853817ac29eeee1426bd01277f65130138901acd668592f82d5451d62e3"
+          },
+          "GettextTools/share/gettext/styles/po-default.css": {
+            "sizeBytes": 1311,
+            "sha256": "4c3f0d8c49288353f95fec5cd9675fbb23e7eec13dda50a4228cd21b1ef4dd08"
+          },
+          "GettextTools/share/gettext/its/gsettings.loc": {
+            "sizeBytes": 952,
+            "sha256": "6351981442f67956f82b74fa4fc0447b8bd859110a149110464fbebb740fd16c"
+          },
+          "GettextTools/share/gettext/its/docbook5.its": {
+            "sizeBytes": 10466,
+            "sha256": "153a63821d0de57e024ff7057685e7e34c886442ce837515d3be195b296fb896"
+          },
+          "GettextTools/share/gettext/its/glade1.its": {
+            "sizeBytes": 1690,
+            "sha256": "9a28208194abc393b17293a5853bed1bae0e2da4baf93278e72d7632ffa20dae"
+          },
+          "GettextTools/share/gettext/its/metainfo.loc": {
+            "sizeBytes": 1094,
+            "sha256": "68fb6d68338c8626bc88b73f38e6bb8e80b4e39840ec3b5749b69af0a2f605f1"
+          },
+          "GettextTools/share/gettext/its/gsettings.its": {
+            "sizeBytes": 1578,
+            "sha256": "dd3027d732b108798fa12a72b0c41d6a665362b5c8419bce6684a7f70c72a234"
+          },
+          "GettextTools/share/gettext/its/glade.loc": {
+            "sizeBytes": 1345,
+            "sha256": "daade8504367cd561b1e18933fef886705ead8dd833a8fefe4dd5e9937e6ed92"
+          },
+          "GettextTools/share/gettext/its/docbook4.its": {
+            "sizeBytes": 13086,
+            "sha256": "8a1894caa324c9279529b18f5063b024ee42da080eb1b74745f39fce6b5fbeda"
+          },
+          "GettextTools/share/gettext/its/gtkbuilder.its": {
+            "sizeBytes": 2244,
+            "sha256": "b5bea3e6fe727951b1802f36bdf76936e4d3a208a0d3f3a07e5588c15a7bb7bb"
+          },
+          "GettextTools/share/gettext/its/glade2.its": {
+            "sizeBytes": 2281,
+            "sha256": "232891342015e19b3aa40e122d34703ee91bd0de1b8e6bd31eb0db2f11fc2168"
+          },
+          "GettextTools/share/gettext/its/docbook.loc": {
+            "sizeBytes": 2140,
+            "sha256": "6e2dc809d5b4eec94f5102226bf1a11110d9946f1b8a116daaf602bac1b026d2"
+          },
+          "GettextTools/share/gettext/its/metainfo.its": {
+            "sizeBytes": 2681,
+            "sha256": "92a200fc62abc4157ab6728f706370b956c8d39718952b291e04985717361a25"
+          },
+          "GettextTools/share/locale/ast/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 5337,
+            "sha256": "2e3363d60909f66c486c597feaeccbee965e82501772d91fa3ed87083a81f7f7"
+          },
+          "GettextTools/share/locale/nb/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 7781,
+            "sha256": "8c40444ff4dfd5a814c73d38390a0e96992c68861ccd73c140fff1da4c245c93"
+          },
+          "GettextTools/share/locale/nb/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 16283,
+            "sha256": "3aac68b2ba74a6ecb166efc53e3d00ad6ac2f259e1bf605ed428cf5b0761592c"
+          },
+          "GettextTools/share/locale/et/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 788,
+            "sha256": "0d2d333f5669ba2d5a0fb34f4395a5c58218349fa7289453bf7ab79123485e00"
+          },
+          "GettextTools/share/locale/et/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 5765,
+            "sha256": "85b1690e1ad2173da9b285fc32036c685086567c93cfef0ef1b9f566567030ce"
+          },
+          "GettextTools/share/locale/ru/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 10399,
+            "sha256": "e92d88011fd55bbb943c9b5a812c331fe8fcb71fe9a348571412757d91be7c4c"
+          },
+          "GettextTools/share/locale/ru/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 143250,
+            "sha256": "110f2a7184aad5df147a351807a5df71978fa3215aefebe6884133b89ab01417"
+          },
+          "GettextTools/share/locale/fi/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8024,
+            "sha256": "2a2f5b19ea42329416ad4c5ed30e1af4e58b5108fccf14730570483ecdaa2c27"
+          },
+          "GettextTools/share/locale/fi/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 97345,
+            "sha256": "fb134d0b029c17d308aef288c9ede4ab1781a6759b414904c3400fcdef9932f6"
+          },
+          "GettextTools/share/locale/gl/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 5281,
+            "sha256": "6db6872ffe30b4fb4a7767754562f5d33849a5446e721dcb07f174137434ebe6"
+          },
+          "GettextTools/share/locale/gl/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 17856,
+            "sha256": "05fc8652f64f69e405a156771ffca2cf67e085a309a0f91df413099618a3f68d"
+          },
+          "GettextTools/share/locale/zh_CN/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8979,
+            "sha256": "e977e3388fe55a617bc4049fd68ef0847f35a6359a6d6dfd86ebd58e2706121b"
+          },
+          "GettextTools/share/locale/zh_CN/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 120342,
+            "sha256": "5b7afaf55a085fb1b8757279bf88bd6f660ab432da650b9b628098b45e437756"
+          },
+          "GettextTools/share/locale/en@boldquot/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 15741,
+            "sha256": "7f51e1c33b94c00c82aa028cee3dc59a8f3e4bf05b14497f921c44db0f8d16ce"
+          },
+          "GettextTools/share/locale/en@boldquot/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 134747,
+            "sha256": "9b28a8db915d7469be327e86f312063823a45a56dbbad299d9aeee5dda97cb51"
+          },
+          "GettextTools/share/locale/nl/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8034,
+            "sha256": "bc05e22869ab045792d236a8399a3c7f0d0f86df1409bda18e82dfede02a9af3"
+          },
+          "GettextTools/share/locale/nl/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 37750,
+            "sha256": "cf87161d218f0c26821ba60c5bb2d03c116d0ea1978e4090d9ee2b40a48d15f5"
+          },
+          "GettextTools/share/locale/zh_TW/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 7511,
+            "sha256": "a0985b1facced71e0fbf4b4a8a556ecfe1e45317cdcac12c90efcd81556b95da"
+          },
+          "GettextTools/share/locale/zh_TW/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 101482,
+            "sha256": "afe2b3435a9bdad47a21d5dda2178b6f387b6638aa9d480375d2916a18f5dd24"
+          },
+          "GettextTools/share/locale/eo/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 7857,
+            "sha256": "edfdcb0f0556f27c9efcde7304805bfc4823fd43f4908a8cdd9cac367d547596"
+          },
+          "GettextTools/share/locale/ka/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 5830,
+            "sha256": "7a7ba0160f32ea816b3a2cf99cf570173c6892852940ed54999786f67fd43462"
+          },
+          "GettextTools/share/locale/ka/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 8159,
+            "sha256": "01778459c94f85b7dfb3540d41c19e00904f870c4da687ea3642d784fcd4b57d"
+          },
+          "GettextTools/share/locale/be/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 2659,
+            "sha256": "eea67ec7408975cd44811a779b372ca50c85251db18d9373bf05f35d62891af7"
+          },
+          "GettextTools/share/locale/be/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 22211,
+            "sha256": "d68e1e46ba38720d8774d14e997fb1b3d53b3d0b8b6c4b5c7d99e48d3bc68e13"
+          },
+          "GettextTools/share/locale/ga/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 5339,
+            "sha256": "9113fb0643837c97d84596a56ca7930a9b5cb314659d208e01b5cd3ae718ea8b"
+          },
+          "GettextTools/share/locale/ja/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16832,
+            "sha256": "510e4933ce5429e91606caddd5189496d07dee353c133b2221b4d8ff52e8d1af"
+          },
+          "GettextTools/share/locale/ja/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 146561,
+            "sha256": "694ddf582f279e8603ee0f434d61db0ae11173505bd6a1ab21db4cf50cc5671f"
+          },
+          "GettextTools/share/locale/bg/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 20827,
+            "sha256": "e7b9165d1e15635c20b9a000f82ca350e0333b675b274f0347b84e98f3327fda"
+          },
+          "GettextTools/share/locale/bg/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 170964,
+            "sha256": "6360aa40457b1c70a2d74e35e0dbb3008d01dce70537ce022d112c03d52bc0b3"
+          },
+          "GettextTools/share/locale/en@quot/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 15657,
+            "sha256": "3c7beb7050a5e783910b972c171b24bf33bb68a34c20ec588f44f705ac37fd7b"
+          },
+          "GettextTools/share/locale/en@quot/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 132663,
+            "sha256": "7911b3f3f1d7945771bac34cb046fbf05e57351897fafa845abd68ad7705a4ae"
+          },
+          "GettextTools/share/locale/eu/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 42345,
+            "sha256": "af0b66b7f37fed44a50737ec83a4555c652c55b290b42f85574d44ca69fc7377"
+          },
+          "GettextTools/share/locale/fr/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8045,
+            "sha256": "067a9bcaf632fc285870058753f1fda0ba1607ad9bf11318be96bf6e30f33809"
+          },
+          "GettextTools/share/locale/fr/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 106093,
+            "sha256": "4fa88202a1ff894ff293ed4bec0785e09f337c097e49bef67ad30b51c5d90ce1"
+          },
+          "GettextTools/share/locale/es/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16720,
+            "sha256": "512fdd3694bd8fe073c95a0331e9ef2a4151b3b17572e527fee16c4d7639878c"
+          },
+          "GettextTools/share/locale/es/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 142911,
+            "sha256": "e37703ff8dda4b3f0f1573d3cc4e23d88b17ac3c395ef9d33911effee0e77811"
+          },
+          "GettextTools/share/locale/tr/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 7911,
+            "sha256": "8ea59573f5aeb806cb6495658a741ef5a5ad38267e55ed819deb8448649bf647"
+          },
+          "GettextTools/share/locale/tr/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 66316,
+            "sha256": "cc865b3fb503b4bd621f38976a08bb2a431d0a5e2d72e607f0a911c744084385"
+          },
+          "GettextTools/share/locale/cs/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16879,
+            "sha256": "948992bc199eda0ae3c713d2b88b5953f198aef55ce1bcfef35483db6d5e2dd2"
+          },
+          "GettextTools/share/locale/cs/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 6123,
+            "sha256": "ea97a6df76b4ac90b60e2363052b9c8190a4ce6d3f050d90256002d9716258cf"
+          },
+          "GettextTools/share/locale/nn/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 7783,
+            "sha256": "d94d0981628532ff38025e46e1a3e2133393689c157664fe5f4f2af59327e23a"
+          },
+          "GettextTools/share/locale/nn/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 4018,
+            "sha256": "8eb1dffc0a1121f72564920c1d82297b4baff041c6230cb086d6eefe3dc4ff64"
+          },
+          "GettextTools/share/locale/da/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 5217,
+            "sha256": "767404c29f40c4635317f180aed11a35853735681801293420a3a49c631dea35"
+          },
+          "GettextTools/share/locale/da/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 69995,
+            "sha256": "a4334638a3de267065b75e678de9e0ff495b93971e8daa6fce08afbde4a7c932"
+          },
+          "GettextTools/share/locale/it/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16342,
+            "sha256": "73843c0f90ca79934c955c1648b90d8577261fa8af6e13d4a4b21f4ae8e942c1"
+          },
+          "GettextTools/share/locale/it/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 138199,
+            "sha256": "6bf006f8f1589aaa6bdc38ae931bc96d05196b64db77a8f6fe3d08d2211c213e"
+          },
+          "GettextTools/share/locale/pt/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16180,
+            "sha256": "eecae35e2a513011becf18472cb16ea9cf6f24e93cebad496a4d9a2730c25e79"
+          },
+          "GettextTools/share/locale/pt/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 136475,
+            "sha256": "5cfce69b7545f278837dc3184bab080e0db67e6ce9c357fd07424096103593a1"
+          },
+          "GettextTools/share/locale/sk/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8317,
+            "sha256": "85c1b8beeeec6e969b88f86769daeb18b4440221b51d4d9aeb2fff118f6e4a6b"
+          },
+          "GettextTools/share/locale/sk/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 112713,
+            "sha256": "96bdda8c5072cc2469007b394179bc277161bf1c4fd90fba05ad63e6b378c9c9"
+          },
+          "GettextTools/share/locale/pt_BR/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16344,
+            "sha256": "a5b5a68461a81adfe7bd609a94c7113d3dcc02d493070982d8051ff044b34574"
+          },
+          "GettextTools/share/locale/pt_BR/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 140558,
+            "sha256": "6b2736030e2f8c3b42f2fdd06326b35d3f53cace9b5f25325adfd891572806be"
+          },
+          "GettextTools/share/locale/ca/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8210,
+            "sha256": "5271c20345a8d49ca8c373591e5485a1a946f4a3f6380da33d8ee8bec66d24b6"
+          },
+          "GettextTools/share/locale/ca/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 105478,
+            "sha256": "5f19ca1b5dbbfbae3b50d7dc7f232bc8751bf6d49c0301ad933635a1d9711bd9"
+          },
+          "GettextTools/share/locale/pl/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8068,
+            "sha256": "8b0ed66997a8a27d868a582a137707b9c82485ca121a9f119a49d4710008047b"
+          },
+          "GettextTools/share/locale/pl/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 113852,
+            "sha256": "5d7ab09ab42bd66bba93a25e05589da93063f7be43b24d4729c9c85f3a79d14c"
+          },
+          "GettextTools/share/locale/ko/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16598,
+            "sha256": "bcc228e4650ba61976792261c2022f91124cccc8b1cbe8a097837d9e66f70c15"
+          },
+          "GettextTools/share/locale/ko/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 118577,
+            "sha256": "c8392d43ebd0dca397a4edadddc9d6e33e3305e018c9802d1aebba966ea99144"
+          },
+          "GettextTools/share/locale/id/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 4129,
+            "sha256": "f49fd43ec3ea81b16880f92636b9b4f5390afbcc8af29d394f28500e5189fb3c"
+          },
+          "GettextTools/share/locale/id/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 71533,
+            "sha256": "0b72db6af0cac5d86e77fb57b5e469b00798c50f3e727a1054d085a5ef2e1aba"
+          },
+          "GettextTools/share/locale/de/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16820,
+            "sha256": "26a51317076de1d2d059b9c6c44566cac098cb6c2a529c12925c7a1e8a19dc8f"
+          },
+          "GettextTools/share/locale/de/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 144112,
+            "sha256": "f406682a0a7ec151f6353a90633be80df7c15b41e9494e18499792ddf0eb41c2"
+          },
+          "GettextTools/share/locale/el/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 892,
+            "sha256": "762b2ce3f89fd35b24d472874bc7e90810be51d03954b86da8dbf255ec318c8c"
+          },
+          "GettextTools/share/locale/el/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 4322,
+            "sha256": "f79bb62c7b19e1e5fc038676f86fc54913e564e7a85766ea7bac42978d94e7d3"
+          },
+          "GettextTools/share/locale/zh_HK/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 3994,
+            "sha256": "ad1674d5b83463eb570eea072fb83510a67e2fc46d9554e269b5e48375520e83"
+          },
+          "GettextTools/share/locale/vi/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8806,
+            "sha256": "cb5146088898226f7fa6d4ef54d41abe664f816a3bae83ca9d3af58d7297cc7d"
+          },
+          "GettextTools/share/locale/vi/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 111842,
+            "sha256": "142bc59b6a907e328e80cf2d4a289c1598cae9abb171a5d5d83565204ee41ca4"
+          },
+          "GettextTools/share/locale/sl/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 5187,
+            "sha256": "53a11a34b15ffeec216aa0f9d1a0a4c6af059617ef323617ec8975b1c18d7602"
+          },
+          "GettextTools/share/locale/sl/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 89569,
+            "sha256": "4fa6e8d21f5c19391406fe827a35dad4dbc915599c2dc161b6c6879e7ac87b8c"
+          },
+          "GettextTools/share/locale/hr/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16147,
+            "sha256": "6b418aa653959e8a2a2b2fb29f5869c176333a633a5d53a06edba5dfb2205d33"
+          },
+          "GettextTools/share/locale/hr/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 134560,
+            "sha256": "03e2badc089196526e0cfb1c88a8c39b6625f491f43fe587aa38346bd21af632"
+          },
+          "GettextTools/share/locale/ro/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 16943,
+            "sha256": "8492e5483cdb7f6b7271965e1dda6fa0a9e0d02b5dcc161cd4eca1294981ddc3"
+          },
+          "GettextTools/share/locale/ro/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 144535,
+            "sha256": "03372c150049ca6e7939e24ed90172c287504e81e35cc17a89681f2bbabc9230"
+          },
+          "GettextTools/share/locale/uk/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 21229,
+            "sha256": "c5dda14ce6439e69aafc89bc3e518fae29948cf4ab7d3da241821e666471813e"
+          },
+          "GettextTools/share/locale/uk/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 174607,
+            "sha256": "33b7c9654692d588af47fe926c817f8b7cca2b64c1876773ce722c882c553fe3"
+          },
+          "GettextTools/share/locale/sr/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 10112,
+            "sha256": "95f8497b1e89923aa4f67e851e732339816972441d37250ec7105392f7b25015"
+          },
+          "GettextTools/share/locale/sr/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 137478,
+            "sha256": "3208e38d7be2229d60b0e9c6d48d56e8591914045da9fad8e0e2df482b165e83"
+          },
+          "GettextTools/share/locale/pa/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 24978,
+            "sha256": "39e335faed9bbdb1ab79d25de4fe2e310ac8f657ab343ce56031f2cde9a229ec"
+          },
+          "GettextTools/share/locale/hu/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 8495,
+            "sha256": "ea9fcb443b5c60cd172ba9ab57a67781d3afe2eccc7f5dd7c1f1d07a2e2df65c"
+          },
+          "GettextTools/share/locale/sv/LC_MESSAGES/gettext-runtime.mo": {
+            "sizeBytes": 15873,
+            "sha256": "5d36b6f856f5e39698c579f6b5b6acca6a55cf92795b31e00eccc1641c37bba4"
+          },
+          "GettextTools/share/locale/sv/LC_MESSAGES/gettext-tools.mo": {
+            "sizeBytes": 133101,
+            "sha256": "680683919e163856d0577efdde8437f8f5194b9e7f53d7bbfaa9479081e4f937"
+          }
+        },
+        "syntheticFixtureNotAnApplication": true,
+        "completePoMoSpecificationAccepted": false,
+        "fullFilesystemTraversed": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "poedit-01-default-font.jpg": {
+          "sizeBytes": 58991,
+          "sha256": "83dbaeaabc0cd34fc4383c654eac6bdc593876cdee5285c3790144f46dbbc5ed"
+        },
+        "poedit-02-original-saved.jpg": {
+          "sizeBytes": 43735,
+          "sha256": "df4660795754167d2aa2211c3a6a5c8810f6959b2a675f49e66876cda9170278"
+        },
+        "poedit-03-about.jpg": {
+          "sizeBytes": 49667,
+          "sha256": "679ea3b8408215ee06a0e60ec32848e311df4227b929969374ff2e760f0a0389"
+        },
+        "poedit-04-original-reopen.jpg": {
+          "sizeBytes": 43906,
+          "sha256": "31bf38e6be59478428b1b969dff08d0e8047fcb0eec23961aa8c323bef432338"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-poedit-source.json",
+    "sha256": "c53f42f946933fab40976acf096a0d6a07fe392189b808e918377c78ce9c32b6"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-poedit-gui.json",
+    "sha256": "c71dcf1755bd884904182e769c969f2bd0575744443a2013cfed70fb28f764f3"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-poedit-failures.json",
+    "sha256": "0b1320c87c634ab40a5246874085c25a96a6bcded954a5d0e4f5b35c90de02fc"
+  },
+  "limits": [
+    "Only two tiny UTF8 PO entries: preserve Chinese text, ordinary BEFORE to AFTER and ASCII suffix, second translation, native Save As with automatic MO compile, finite independent PO/MO translations and fresh-process explicit Open PO. Synthetic PO/MO are not separate apps.",
+    "MO omits only POT-Creation-Date header relative to PO; original full-header equality failure retained. No full gettext/PO/MO specification, plural/context/catalogue merge/templates/extraction/validation/other encodings/large or malformed files accepted.",
+    "Windows binary has a separate software license and Pro features; MIT source only. Private same-account local cache lifecycle is tested; public binary redistribution, Pro activation and paid features are not accepted.",
+    "Default editor Arial11 showed boxes. Native isolated application custom text font Microsoft YaHei16 applied; no new font package or Core/program/global context/environment/workingDirectory/DLL/runtime repair. CtrlQ ineffective, actual File/Exit used.",
+    "Translation suggestions, cloud/WordPress, machine translation, advanced features/direct Chinese keyboard input/network downloads/new-machine registration/migration/cross-version/unattended and GUI Store update/rollback buttons unverified. Update prompt observed, no claim of no background networking.",
+    "Full wxWidgets/gettext/ICU/CRT/WinSparkle/SVG/icons/translations license closure, installed MIT COPYING comparison, source-binary correspondence/Authenticode/PGP/reproducible build/latest version unverified.",
+    "Independent market/update/rollback/normal restart pending at original freeze; completion recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}
