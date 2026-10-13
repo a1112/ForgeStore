@@ -1,0 +1,765 @@
+{
+  "FINAL": true,
+  "passed": true,
+  "verdict": "pass-independent-finite-one-task-evidence-and-byte-privacy-review",
+  "applicationId": "taskcoach",
+  "version": "1.4.6",
+  "dateUtc": "2026-10-13T23:40:00.548890+00:00",
+  "baseCommit": "d96b6846d87b40f9b66672ffa54ce2d91bf4a683",
+  "reviewStage": "fresh host-only final before first real Git stage",
+  "prospectiveManifest": "taskcoach-prospective-files-20261014.json",
+  "prospectiveManifestSha256": "655537dde8eee35ff594095094262c73e26f6c3ea6efb3d4a7e9970bdd15bdd8",
+  "prospectiveCount": 127,
+  "prospectiveFiles": {
+    ".gitattributes": {
+      "sizeBytes": 54077,
+      "sha256": "941711fb813cc25009caddc70b22c4983f3afe4eb3d791b35d0ff59d0d33e167"
+    },
+    "catalogue/candidate-v80/tuf/metadata/1.root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "catalogue/candidate-v80/tuf/metadata/89.snapshot.json": {
+      "sizeBytes": 997,
+      "sha256": "81799973ea07ef1a7ff02a648301641d3f9277a8322b4bd26d6b2c2ff0ddf9ca"
+    },
+    "catalogue/candidate-v80/tuf/metadata/89.targets.json": {
+      "sizeBytes": 31503,
+      "sha256": "d7331664e26921364784cc8ea335f495c1fc0a233c176578abfdc3bd42c60d6f"
+    },
+    "catalogue/candidate-v80/tuf/metadata/timestamp.json": {
+      "sizeBytes": 997,
+      "sha256": "914402fda8f7acf45477f8f0e0df0867bb881e2dd457ad6c54a6136c4c1a7a11"
+    },
+    "catalogue/candidate-v80/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sizeBytes": 4879,
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+    },
+    "catalogue/candidate-v80/tuf/targets/056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9.windows-nsis-20261012.acceptance.json": {
+      "sizeBytes": 4976,
+      "sha256": "056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9"
+    },
+    "catalogue/candidate-v80/tuf/targets/0aec75b1a9aa64dc23ac31977e29a2b634416ee2e3c6c8ecead76caa73dda9b9.windows-graph-20261013.acceptance.json": {
+      "sizeBytes": 7584,
+      "sha256": "0aec75b1a9aa64dc23ac31977e29a2b634416ee2e3c6c8ecead76caa73dda9b9"
+    },
+    "catalogue/candidate-v80/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sizeBytes": 9031,
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+    },
+    "catalogue/candidate-v80/tuf/targets/0ebeab5448d9a8b848495baab98c5fd90ae10fb6a5e5a88690d454b0ede0c77f.windows-devcpp-20261013.acceptance.json": {
+      "sizeBytes": 5222,
+      "sha256": "0ebeab5448d9a8b848495baab98c5fd90ae10fb6a5e5a88690d454b0ede0c77f"
+    },
+    "catalogue/candidate-v80/tuf/targets/0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d.windows-notepadnext-20261012.acceptance.json": {
+      "sizeBytes": 6011,
+      "sha256": "0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d"
+    },
+    "catalogue/candidate-v80/tuf/targets/116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a.windows-poedit-20261012.acceptance.json": {
+      "sizeBytes": 99469,
+      "sha256": "116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a"
+    },
+    "catalogue/candidate-v80/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+      "sizeBytes": 5624,
+      "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+    },
+    "catalogue/candidate-v80/tuf/targets/1b6491131ca2b97189879d55a4ecdde73f1494f7f6f83fa5602b3ec46fe336b8.devcpp-catalogue-space-guard-withdrawal-20261013.json": {
+      "sizeBytes": 1584,
+      "sha256": "1b6491131ca2b97189879d55a4ecdde73f1494f7f6f83fa5602b3ec46fe336b8"
+    },
+    "catalogue/candidate-v80/tuf/targets/1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f.windows-transmission-20261011.acceptance.json": {
+      "sizeBytes": 5165,
+      "sha256": "1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f"
+    },
+    "catalogue/candidate-v80/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sizeBytes": 5280,
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+    },
+    "catalogue/candidate-v80/tuf/targets/1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af.windows-nomacs-20261011.acceptance.json": {
+      "sizeBytes": 4995,
+      "sha256": "1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af"
+    },
+    "catalogue/candidate-v80/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sizeBytes": 21857,
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+    },
+    "catalogue/candidate-v80/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sizeBytes": 7918,
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+    },
+    "catalogue/candidate-v80/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sizeBytes": 1676,
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+    },
+    "catalogue/candidate-v80/tuf/targets/27a4afb925340e30037bc2ff99f0b1d5190ddd35b3fae1ebb7a766bb1e3d86c1.windows-qmmp-20261013.acceptance.json": {
+      "sizeBytes": 13840,
+      "sha256": "27a4afb925340e30037bc2ff99f0b1d5190ddd35b3fae1ebb7a766bb1e3d86c1"
+    },
+    "catalogue/candidate-v80/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json": {
+      "sizeBytes": 4562,
+      "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+    },
+    "catalogue/candidate-v80/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sizeBytes": 2738,
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+    },
+    "catalogue/candidate-v80/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sizeBytes": 7617,
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+    },
+    "catalogue/candidate-v80/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sizeBytes": 1699,
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+    },
+    "catalogue/candidate-v80/tuf/targets/3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282.windows-clementine-20261013.acceptance.json": {
+      "sizeBytes": 15140,
+      "sha256": "3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282"
+    },
+    "catalogue/candidate-v80/tuf/targets/3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999.windows-copyq-20261012.pending-correction.json": {
+      "sizeBytes": 1575,
+      "sha256": "3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999"
+    },
+    "catalogue/candidate-v80/tuf/targets/48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb.windows-doxygen-20261012.acceptance.json": {
+      "sizeBytes": 406124,
+      "sha256": "48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb"
+    },
+    "catalogue/candidate-v80/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sizeBytes": 10640,
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+    },
+    "catalogue/candidate-v80/tuf/targets/59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934.windows-treesheets-20261012.acceptance.json": {
+      "sizeBytes": 6769,
+      "sha256": "59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934"
+    },
+    "catalogue/candidate-v80/tuf/targets/5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f.windows-xmlcopyeditor-20261011.acceptance.json": {
+      "sizeBytes": 4553,
+      "sha256": "5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f"
+    },
+    "catalogue/candidate-v80/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sizeBytes": 1617,
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+    },
+    "catalogue/candidate-v80/tuf/targets/5d0128c8b6e2db41f1d7f0bdd4ac91e490abad40cd1f203ecedf6b7e232a3288.windows-smplayer-20261013.acceptance.json": {
+      "sizeBytes": 15270,
+      "sha256": "5d0128c8b6e2db41f1d7f0bdd4ac91e490abad40cd1f203ecedf6b7e232a3288"
+    },
+    "catalogue/candidate-v80/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sizeBytes": 12679,
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+    },
+    "catalogue/candidate-v80/tuf/targets/60dc988ca2910c72185b9df1005990e8c80613df5c8184cd2e429fff1e74c437.windows-infrarecorder-20261013.acceptance.json": {
+      "sizeBytes": 9508,
+      "sha256": "60dc988ca2910c72185b9df1005990e8c80613df5c8184cd2e429fff1e74c437"
+    },
+    "catalogue/candidate-v80/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sizeBytes": 1652,
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+    },
+    "catalogue/candidate-v80/tuf/targets/6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f.windows-picard-20261012.acceptance.json": {
+      "sizeBytes": 6277,
+      "sha256": "6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f"
+    },
+    "catalogue/candidate-v80/tuf/targets/707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3.windows-lmms-20261012.acceptance.json": {
+      "sizeBytes": 621370,
+      "sha256": "707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3"
+    },
+    "catalogue/candidate-v80/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sizeBytes": 9285,
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+    },
+    "catalogue/candidate-v80/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sizeBytes": 1146,
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+    },
+    "catalogue/candidate-v80/tuf/targets/7bc6616b1a691985a9681b80bad48e4a3d737889a4a67fbf9a91a33886fbabc2.windows-fityk-20261013.acceptance.json": {
+      "sizeBytes": 13775,
+      "sha256": "7bc6616b1a691985a9681b80bad48e4a3d737889a4a67fbf9a91a33886fbabc2"
+    },
+    "catalogue/candidate-v80/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sizeBytes": 4783,
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+    },
+    "catalogue/candidate-v80/tuf/targets/8278fd9d1eab3fb631136921a73e7acaf8ca3e9bc8e3e7da75c4e1e70dc6618b.windows-codelite-20261013.acceptance.json": {
+      "sizeBytes": 8646,
+      "sha256": "8278fd9d1eab3fb631136921a73e7acaf8ca3e9bc8e3e7da75c4e1e70dc6618b"
+    },
+    "catalogue/candidate-v80/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sizeBytes": 6220,
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+    },
+    "catalogue/candidate-v80/tuf/targets/8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29.windows-qxmledit-20261011.acceptance.json": {
+      "sizeBytes": 4514,
+      "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+    },
+    "catalogue/candidate-v80/tuf/targets/8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb.windows-cppcheck-20261012.acceptance.json": {
+      "sizeBytes": 23230,
+      "sha256": "8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb"
+    },
+    "catalogue/candidate-v80/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sizeBytes": 4223,
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+    },
+    "catalogue/candidate-v80/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json": {
+      "sizeBytes": 7879,
+      "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+    },
+    "catalogue/candidate-v80/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sizeBytes": 4642,
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+    },
+    "catalogue/candidate-v80/tuf/targets/939e9ebdfc2485cda1d48af1b97e194250ccf1c56b460547d1926602ef6ee98e.windows-texniccenter-20261013.acceptance.json": {
+      "sizeBytes": 7479,
+      "sha256": "939e9ebdfc2485cda1d48af1b97e194250ccf1c56b460547d1926602ef6ee98e"
+    },
+    "catalogue/candidate-v80/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json": {
+      "sizeBytes": 7564,
+      "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+    },
+    "catalogue/candidate-v80/tuf/targets/94d139aa0f7603f3c7f4fc38b25252ebf9e8a4b0220d6f72b368081a0f4756a6.windows-taskcoach-20261014.acceptance.json": {
+      "sizeBytes": 9834,
+      "sha256": "94d139aa0f7603f3c7f4fc38b25252ebf9e8a4b0220d6f72b368081a0f4756a6"
+    },
+    "catalogue/candidate-v80/tuf/targets/9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058.windows-windjview-20261011.acceptance.json": {
+      "sizeBytes": 6405,
+      "sha256": "9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058"
+    },
+    "catalogue/candidate-v80/tuf/targets/9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0.windows-gvim-20261012.acceptance.json": {
+      "sizeBytes": 4767,
+      "sha256": "9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0"
+    },
+    "catalogue/candidate-v80/tuf/targets/a327650598ac39e91dfe5d1c87154c725aa125e3a8e34ce3eddd368cfe393a3d.windows-devcpp-filename-alias-20261013.acceptance.json": {
+      "sizeBytes": 4138,
+      "sha256": "a327650598ac39e91dfe5d1c87154c725aa125e3a8e34ce3eddd368cfe393a3d"
+    },
+    "catalogue/candidate-v80/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sizeBytes": 11228,
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+    },
+    "catalogue/candidate-v80/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sizeBytes": 1656,
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+    },
+    "catalogue/candidate-v80/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+      "sizeBytes": 6445,
+      "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+    },
+    "catalogue/candidate-v80/tuf/targets/ae61d39c878875766d268862ab7f7647f17cf52163e5daec67dd76d915b9e7dd.catalogue.json": {
+      "sizeBytes": 85203,
+      "sha256": "ae61d39c878875766d268862ab7f7647f17cf52163e5daec67dd76d915b9e7dd"
+    },
+    "catalogue/candidate-v80/tuf/targets/afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd.windows-nsis-20261012.corrected.acceptance.json": {
+      "sizeBytes": 5463,
+      "sha256": "afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd"
+    },
+    "catalogue/candidate-v80/tuf/targets/b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34.windows-gnuplot-20261012.acceptance.json": {
+      "sizeBytes": 5745,
+      "sha256": "b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34"
+    },
+    "catalogue/candidate-v80/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sizeBytes": 6071,
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+    },
+    "catalogue/candidate-v80/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json": {
+      "sizeBytes": 4567,
+      "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+    },
+    "catalogue/candidate-v80/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sizeBytes": 10745,
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+    },
+    "catalogue/candidate-v80/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sizeBytes": 6075,
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+    },
+    "catalogue/candidate-v80/tuf/targets/b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931.windows-rednotebook-20261011.acceptance.json": {
+      "sizeBytes": 5786,
+      "sha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931"
+    },
+    "catalogue/candidate-v80/tuf/targets/b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5.windows-rapidcrc-20261012.acceptance.json": {
+      "sizeBytes": 6788,
+      "sha256": "b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5"
+    },
+    "catalogue/candidate-v80/tuf/targets/ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba.windows-scribus-20261012.acceptance.json": {
+      "sizeBytes": 12090,
+      "sha256": "ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba"
+    },
+    "catalogue/candidate-v80/tuf/targets/c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281.windows-mkvtoolnix-20261012.acceptance.json": {
+      "sizeBytes": 16769,
+      "sha256": "c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281"
+    },
+    "catalogue/candidate-v80/tuf/targets/cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86.windows-librecad-20261012.acceptance.json": {
+      "sizeBytes": 14404,
+      "sha256": "cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86"
+    },
+    "catalogue/candidate-v80/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json": {
+      "sizeBytes": 7460,
+      "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+    },
+    "catalogue/candidate-v80/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sizeBytes": 4586,
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+    },
+    "catalogue/candidate-v80/tuf/targets/d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3.windows-copyq-20261012.acceptance.json": {
+      "sizeBytes": 34032,
+      "sha256": "d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3"
+    },
+    "catalogue/candidate-v80/tuf/targets/da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3.windows-qbittorrent-20261012.acceptance.json": {
+      "sizeBytes": 4945,
+      "sha256": "da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3"
+    },
+    "catalogue/candidate-v80/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json": {
+      "sizeBytes": 3703,
+      "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+    },
+    "catalogue/candidate-v80/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sizeBytes": 9388,
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+    },
+    "catalogue/candidate-v80/tuf/targets/e730f26673f64b54c4133a27feb8a509d26ed0b7142d6cacc2165d334730c4bf.windows-pnotepad-20261013.acceptance.json": {
+      "sizeBytes": 4811,
+      "sha256": "e730f26673f64b54c4133a27feb8a509d26ed0b7142d6cacc2165d334730c4bf"
+    },
+    "catalogue/candidate-v80/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json": {
+      "sizeBytes": 8122,
+      "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+    },
+    "catalogue/candidate-v80/tuf/targets/f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d.windows-meld-20261011.acceptance.json": {
+      "sizeBytes": 5518,
+      "sha256": "f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d"
+    },
+    "catalogue/candidate-v80/tuf/targets/f233a5dd1511e25ff19a48e24019fa66aaec6e6c65b2bbda445cbf548038111b.windows-antrenamer-20261013.acceptance.json": {
+      "sizeBytes": 7274,
+      "sha256": "f233a5dd1511e25ff19a48e24019fa66aaec6e6c65b2bbda445cbf548038111b"
+    },
+    "catalogue/candidate-v80/tuf/targets/f7382675ef473b007e8d9ec735d9ede781bbbf3cd6f579438aa9836327f4c0ab.windows-codeblocks-20261012.acceptance.json": {
+      "sizeBytes": 16916,
+      "sha256": "f7382675ef473b007e8d9ec735d9ede781bbbf3cd6f579438aa9836327f4c0ab"
+    },
+    "catalogue/candidate-v80/tuf/targets/f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa.windows-mediainfo-20261012.acceptance.json": {
+      "sizeBytes": 28230,
+      "sha256": "f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa"
+    },
+    "catalogue/candidate-v80/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json": {
+      "sizeBytes": 6906,
+      "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+    },
+    "catalogue/candidate-v80/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sizeBytes": 3517,
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+    },
+    "catalogue/candidate-v80/tuf/trusted-root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "docs/evidence/2026-10-14-taskcoach-current-label-correction.json": {
+      "sizeBytes": 674,
+      "sha256": "5714c6b46f8968f302ef63f66f20cfced7cab0eb85e194dadea182cbaae1fd68"
+    },
+    "docs/evidence/2026-10-14-taskcoach-current-state-v2.json": {
+      "sizeBytes": 5163,
+      "sha256": "517555ff952b393b2cc8bb8cf74c9a4417d883b080e5d709132977e92122de20"
+    },
+    "docs/evidence/2026-10-14-taskcoach-failures.json": {
+      "sizeBytes": 7462,
+      "sha256": "3f927860924a11e5bd6b75da5a3deca8ef9f8c8252f9ae90bf9fb67bb6aa8d0b"
+    },
+    "docs/evidence/2026-10-14-taskcoach-git-byte-preservation-precheck.json": {
+      "sizeBytes": 2169,
+      "sha256": "6e7500d356bb82c4c85f57f064019642bb0cd586dd6c916da87d366a8da60ddf"
+    },
+    "docs/evidence/2026-10-14-taskcoach-git-precheck-final.json": {
+      "sizeBytes": 680,
+      "sha256": "97d6d244a03ca874ca0e0eedaaf66d3136acf8e663e7c180e29738ffba5c4940"
+    },
+    "docs/evidence/2026-10-14-taskcoach-gui.json": {
+      "sizeBytes": 30197,
+      "sha256": "8356e92f664cc54fc58852e2ae2ad38eef34ef54508bdb2cc86e2c7ba2ca75a0"
+    },
+    "docs/evidence/2026-10-14-taskcoach-installation-later-observations.json": {
+      "sizeBytes": 31660,
+      "sha256": "63ea47e368b5d1607f8e2f5aaffd54f8ba2f80d309ab958270a0a0ef3f68a4af"
+    },
+    "docs/evidence/2026-10-14-taskcoach-installation.json": {
+      "sizeBytes": 24703,
+      "sha256": "a05dbb5d6b9dfd0eaa245edf684ac27742d58fdb14dc7a619cb46512d8b5f7fb"
+    },
+    "docs/evidence/2026-10-14-taskcoach-later-observations.json": {
+      "sizeBytes": 59802,
+      "sha256": "0d0790598a77747c888b6c6fa12f4ec5a84b153ca2668c868635b72ba6426872"
+    },
+    "docs/evidence/2026-10-14-taskcoach-market-gui.json": {
+      "sizeBytes": 38368,
+      "sha256": "be55a6102bc73a189e4740250fa430dc51a28e108a6f67997285136bdd3089cb"
+    },
+    "docs/evidence/2026-10-14-taskcoach-publication.json": {
+      "sizeBytes": 5887,
+      "sha256": "bed05ce662b0cd25542229fd2787d32395924e0f0432a869b8053835a3eb1ebd"
+    },
+    "docs/evidence/2026-10-14-taskcoach-runtime-recovery.json": {
+      "sizeBytes": 61282,
+      "sha256": "194c7fa1d939124ddab4c8e43447cd2bf6d39829655cfffb42ac159f1d06aaa4"
+    },
+    "docs/evidence/2026-10-14-taskcoach-scope-and-failure-corrections.json": {
+      "sizeBytes": 4845,
+      "sha256": "1468aabe0f2e21777a3aa043d4f02dc5ecabddd9219aa558c1770116b7c99798"
+    },
+    "docs/evidence/2026-10-14-taskcoach-source.json": {
+      "sizeBytes": 13219,
+      "sha256": "740bd79722b73e22c277258195821874e932601147f567deee069da55107c55e"
+    },
+    "docs/evidence/taskcoach-20261014/market/04-market-input-editor.jpg": {
+      "sizeBytes": 39008,
+      "sha256": "5c0b63bd82fbe0467705769714b32f7c81f03f81ce2fb70c73233626f960af87"
+    },
+    "docs/evidence/taskcoach-20261014/market/05-market-saved-subject.jpg": {
+      "sizeBytes": 29677,
+      "sha256": "dc5cbedb3c10f1933997708bbcc31d43d3776970cf708babd7d2fdfdac74241e"
+    },
+    "docs/evidence/taskcoach-20261014/market/06-market-explicit-reopen-editor.jpg": {
+      "sizeBytes": 39579,
+      "sha256": "f9471cb5d9ef59a2e32e59653b149390d8ee09817ff31b5acf56a42886839e11"
+    },
+    "docs/evidence/taskcoach-20261014/market/06a-market-new-process-empty.jpg": {
+      "sizeBytes": 24933,
+      "sha256": "a5e8543226cae4b103e03f1a2dcb0be3161fc6cbfb965aaeb45c518e9a921775"
+    },
+    "docs/evidence/taskcoach-20261014/market/market.tsk": {
+      "sizeBytes": 730,
+      "sha256": "d3b07a11c3d242d2fe840eac300200fe64f8c2d4ec217365074c64af8d16ec35"
+    },
+    "docs/evidence/taskcoach-20261014/market/市场任务.tsk": {
+      "sizeBytes": 364,
+      "sha256": "acaa4b8f0ebd5aa55772ffaf892eeb740360c56e1d0ab8fc1e0aba212f3e02fa"
+    },
+    "docs/evidence/taskcoach-20261014/original/01-original-input-editor.jpg": {
+      "sizeBytes": 38978,
+      "sha256": "eecb282e4ab0fd4b4a20641ae02c3a19a1c972495db912c4b2e13f253bd9097f"
+    },
+    "docs/evidence/taskcoach-20261014/original/02-original-saved-subject.jpg": {
+      "sizeBytes": 29738,
+      "sha256": "211520e2958d74fc0e84753dbd567f97eb2d0834d0e5d4d4e123ed3e90e32ff9"
+    },
+    "docs/evidence/taskcoach-20261014/original/03-original-explicit-reopen-editor.jpg": {
+      "sizeBytes": 39756,
+      "sha256": "9b0e466fd4d006a523c06e70ddfab2481de2eb2a8ba1ac66fabba1f4a8646aad"
+    },
+    "docs/evidence/taskcoach-20261014/original/03a-original-new-process-empty.jpg": {
+      "sizeBytes": 24939,
+      "sha256": "8c741b7454a208816b94bbdca2678110e08d6d1200fa5ca93c97c29588b176a4"
+    },
+    "docs/evidence/taskcoach-20261014/original/07-original-rollback-explicit-reopen-editor.jpg": {
+      "sizeBytes": 39258,
+      "sha256": "e4afa26ac7c642f1968593439146aa2e0f00e273ceff6b7bbacf52f6926a9c09"
+    },
+    "docs/evidence/taskcoach-20261014/original/07a-original-rollback-empty.jpg": {
+      "sizeBytes": 24073,
+      "sha256": "5f58fc432a9db38c0ba02db752f3a024f3daddc0406171829f1fc661b777d9d4"
+    },
+    "docs/evidence/taskcoach-20261014/original/original.tsk": {
+      "sizeBytes": 732,
+      "sha256": "c697f98d34aaf5649cdd993531f5120b59c2b69941404281820caedd9f7631e1"
+    },
+    "docs/evidence/taskcoach-20261014/original/原始任务.tsk": {
+      "sizeBytes": 364,
+      "sha256": "c439b53068beddd77883cf803862f8bb9215ecd3d93b8090cc50851b35623cbf"
+    },
+    "docs/evidence/taskcoach-20261014/source/COPYRIGHT.txt": {
+      "sizeBytes": 2644,
+      "sha256": "50a262972d8a17e8a663b84c802629c787142b5b172c68b7f569e20312851637"
+    },
+    "docs/evidence/taskcoach-20261014/source/LICENSE.txt": {
+      "sizeBytes": 35823,
+      "sha256": "809a27fb451059995a4e54cb2fed50560f6d695e108ad7776711023282a10baf"
+    },
+    "docs/evidence/taskcoach-20261014/source/setup.py": {
+      "sizeBytes": 4834,
+      "sha256": "877fd89ff21857ce112e1a88a4fe5d7ef82d1f8f9f7955ea2a0235884efcf47e"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoach.py": {
+      "sizeBytes": 2463,
+      "sha256": "1f9566ccf9b974d56d6806a46caece0f1d60cbd389a9c310e99ef610a7388079"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoach.pyw": {
+      "sizeBytes": 798,
+      "sha256": "b748bc0056eddae158a3f139013fd0d86c5310354e7ea9387cbe2ee708ffaef4"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoachlib/application/application.py": {
+      "sizeBytes": 15758,
+      "sha256": "234ed13b6c6bc3ae94336c22c3dbd40655124dc0b30f48a61cfba4c069e4aa21"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoachlib/config/defaults.py": {
+      "sizeBytes": 24637,
+      "sha256": "7e3de165a50294c06e784028f71c1ff7e3529232dc228769e521262935f5a5d0"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoachlib/gui/iocontroller.py": {
+      "sizeBytes": 23538,
+      "sha256": "b9ebdbe649434b0d4583ae85bc929bf9a190d75952eaac8a3d50bef748803074"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoachlib/meta/data.py": {
+      "sizeBytes": 8258,
+      "sha256": "2c39b4dcabf1cb452940b32a7c9e747736d1fd6e6d84b479c0bc27bbf75b0e38"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoachlib/persistence/xml/reader.py": {
+      "sizeBytes": 30704,
+      "sha256": "22f15e7ac1e83fb9fd3552468c986e7463bda85c545f9e6c252476bb7fc17094"
+    },
+    "docs/evidence/taskcoach-20261014/source/taskcoachlib/persistence/xml/writer.py": {
+      "sizeBytes": 15381,
+      "sha256": "3846135577cd7a6d9ecf123d5223bac495433d9b57e36a4710809ca0cbdb8cf2"
+    },
+    "docs/evidence/windows-taskcoach-20261014.acceptance.json": {
+      "sizeBytes": 9834,
+      "sha256": "94d139aa0f7603f3c7f4fc38b25252ebf9e8a4b0220d6f72b368081a0f4756a6"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 89680,
+      "sha256": "1506ef9d88ca0e738c07fa31072d9abb6af691954b166b4db9a1031b3fc27bfb"
+    },
+    "docs/windows-rolling-20261014-taskcoach.md": {
+      "sizeBytes": 8768,
+      "sha256": "2ef0674e7d8fa6651704f6f3e3cc5283db20bb8c70107a7df9e0c9827670ce68"
+    }
+  },
+  "actualAuditExecution": {
+    "effectiveHelper": "review-taskcoach-final-audit-v3-20261014.py",
+    "helperSha256": "a170a22aed3bad0bf3e920505156623444c48a314f67ccf9cfb6c4a5fd6336c8",
+    "actualExitCode": 0,
+    "completePassingResultObservedInToolHistory": true,
+    "exactStandaloneStdoutRawSaved": false,
+    "noHistoricalExactRawFabricated": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": [],
+    "unresolved": [],
+    "overall": "No unresolved scope, byte preservation, licence, signature or public privacy finding. Finite one-task subject editing only."
+  },
+  "scope": {
+    "all127ActualRawPinsIndependentlyRecomputed": true,
+    "all127RawFilteredGitBlobIdentityEqual": true,
+    "all127RelativeNoIndexZeroDiagnostics": true,
+    "indexEmptyBeforeAndAfter": true,
+    "old5265Evidence5263ImmutableWholeRawHeld": true,
+    "original22SourceInstallGuiAcceptanceMarketPendingWholeRawHeld": true,
+    "all6506TrackedIndexParentHeadFullBlobBytesEqual": true,
+    "outside1241ParentPinsAndFullIndexParentRawSame": true,
+    "allWorkingTreeBytesClaimedEqual": false,
+    "oldLfAttributesPrefixBytes": 52666,
+    "oldLfAttributesPrefixSha256": "2782222d2bb820dd333977fec91655194817b38e9675f19ed5faeeb340e94412",
+    "13ExactRulesAndAppendedLfSuffixVerified": true,
+    "noRenormalizeStageCommitPushByReviewer": true,
+    "ledger71ExactlyOld70AllFieldsPlusUniqueTaskCoach": true,
+    "18PendingAllFieldsUnchanged": true,
+    "onlyAllowedTopLevelLedgerFieldsChanged": true,
+    "officialSavedWindowsSourceHtmlFixedAssetNamesAndCachedPackageWholePinsVerified": true,
+    "bothCompleteHttps200ContentLengthSafeReceiptsCrossChecked": true,
+    "bothCompleteFirstGetPartialRawEqualsCache": true,
+    "upstreamSfDisplayedDigestProvenanceOnlyWebTextNotOriginalSfHtml": true,
+    "freshWebsiteGetByReviewer": false,
+    "sourceZip679UniqueAll679NonDirectoryMembersEveryCrcVerified": true,
+    "11SelectedExactRootArchiveMembersWholeRawMatchPublic": true,
+    "allSourceHumanReviewed": false,
+    "taskcoachPyAndCopyrightGpl3OrLaterTextRead": true,
+    "sourceThirdpartyAndMissingExplicitNoticesExceptionsRead": true,
+    "installedMainLicenceComparisonOrFullBundleClosureVerified": false,
+    "sourceDefaultAutosaveTrueReadAndPresaveOutputBeforeSubjectChangeRecorded": true,
+    "autosaveDisableOrHostOutputRewrite": false,
+    "twoInno523MarkersBootstrap014cRawVerified": true,
+    "safeMain014c120320EntryInspectionCrossChecked": true,
+    "92IsolatedExtractedNot95InstalledScopeHeld": true,
+    "nativeDir17ExactHexVerified": true,
+    "completeInstallerUacAssociationShortcutUninstallAcceptance": false,
+    "twoGenerationImmutableDefinitionLauncherRuntimeEveryFieldSame": true,
+    "95ProgramMapsEach94CrossPinsSameOnly8831UninsDifference": true,
+    "uninstallerDiffCauseOrUninstallVerified": false,
+    "readonlyDiagnosticActualSoleDiffThenLiteralMapAnd553161SavedCpBeforeGui": true,
+    "allEqualAssertionFailureInvented": false,
+    "two364ChineseNameUtf8NoBomLfInputsWholeCachePublicSafeFixtureRawMatch": true,
+    "inputContentUnchangedAcrossLaterRecordPins": true,
+    "original732Market730NativeUtf8NoBom27CrLfWholeRawIndependentlyReconstructed": true,
+    "finiteTaskIdGuidDescriptionStatusCreationAndEmptySyncmlTemplateMatched": true,
+    "actualOutputModificationTimestampUsedAsExplicitObservedVariable": true,
+    "independentClockCorrectnessClaim": false,
+    "firstNativePresaveToFinalOnlySubjectAndModificationTimestampChanged": true,
+    "threeNewFormalAutoRestoreClosedToEmptyListBeforeExplicitNativeOpenScreensAndSafeRecordsConsistent": true,
+    "automaticRestoreUsedAsReopenProof": false,
+    "fiveDistinctGuiJobIdsNormalExit0SafeEvidence": true,
+    "threeCompleteTerminalJobsExit0WineServerStopEventsReviewed": true,
+    "twoFirstProcessHostExitSummariesAndHelperEventStopAssertionsReviewed": true,
+    "fiveCompleteJobRawRecordsIndependentlyRead": false,
+    "psWineserverAbsenceOriginalExportAssertionAndSafeBooleanReviewed": true,
+    "exit0AloneAccepted": false,
+    "market555161CpDigestSavedReadbackBeforeExactOriginalRollback555162": true,
+    "thirdOriginal556162NewPinsAfterReadonlyObservationBeforeFinalNormalRestart": true,
+    "normalFinalCoreStoreEachOncePidChangeSafeResultsAndPersistPidCodeReviewed": true,
+    "previewStoreRestartSeparate": true,
+    "sevenFullClassEqualityActualHelperCodeAndSafeReceiptsCrossChecked": true,
+    "privateFinalCpDigestOnly": "bfba5624a913e155e67da7969d84d8fb1066b9f55bab927ea89b8bed3b3ad5f2",
+    "fullPrivateCpReadOrIndependentReplay": false,
+    "thirdActualSystemUser28720AndTaskCoachIni20DiffPinMetadataOldNewPinsSame": true,
+    "marketAllFinalPinsHeld": true,
+    "registryConfigCauseOrKeyValueEquivalenceEstablished": false,
+    "currentOriginalAndV2HelperWholeRawDifferOnlyOutputKey332To95": true,
+    "firstHelperActual95AssertionWasAlreadyCorrect": true,
+    "oldCurrentAndV2ResultAllOtherFieldsExactlySameCheckpoint": true,
+    "effectiveCurrentHelperShaVerified": "5dc5b8504a33802dd825a875a98a01f2aaec44a2e48c7d5a55b3e9aa09a885e1",
+    "originalCurrentRawHelperResultsHeld": true,
+    "root1AndThreeRole89RsaPssSignaturesAndHashLinksIndependentlyVerified": true,
+    "all154ActualTargetPinsRecomputed151OldNonCatalogueMetadataRawSame": true,
+    "old72EntriesEveryFieldSamePlusUniqueTaskCoach73": true,
+    "84PublicAllJsonAndHashedTargetsMatchSignedInputWholeRaw": true,
+    "2017280Archive85UniqueManifestPlus84PublicPayloadWholeRawSame": true,
+    "exactHostTransferReceiptSizeShaMatchesArchive": true,
+    "all10ActualJpegMagicPinsAndIndividuallyVisuallyInspectedNoLogin": true,
+    "inputSavedAndEmptyBeforeExplicitReopenRolesSeparated": true,
+    "firstMainWindowFilenameQuestionMarksHeldEnglishAndShortChineseDescriptionReadableOnly": true,
+    "directChineseKeyboardOrGeneralUnicodeRepairClaimed": false,
+    "aboutMeasured": false,
+    "sourceNoDefinitionAndGuiMarketPendingPhaseFlagsFrozenHistoryCompletionSeparatelyRecorded": true,
+    "all127JsonReportsStructuredSecretUrlPatternScanPassed": true,
+    "syntheticInputBytesBase64IsFiniteTestContentNotCredentials": true,
+    "guestGuiSshApiCpServiceInstallSignAuthenticationAutomationOrRepositoryMutationByReviewer": false,
+    "privateResponseExactRedirectQueryPrivateKeyCredentialPasswordLoginImageOrFullCpRead": false
+  },
+  "cachedPackagePins": {
+    "TaskCoach-1.4.6-win32.exe": {
+      "sizeBytes": 14097420,
+      "sha256": "5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd",
+      "status": 200,
+      "contentLength": 14097420
+    },
+    "TaskCoach-1.4.6.zip": {
+      "sizeBytes": 3692090,
+      "sha256": "16f0801595c71803d790d9cf8437a87a3f7bb9b73707d76e486ed937f0c1c17c",
+      "status": 200,
+      "contentLength": 3692090
+    }
+  },
+  "selectedVendorSourceRawPins": {
+    "COPYRIGHT.txt": {
+      "sizeBytes": 2644,
+      "sha256": "50a262972d8a17e8a663b84c802629c787142b5b172c68b7f569e20312851637"
+    },
+    "LICENSE.txt": {
+      "sizeBytes": 35823,
+      "sha256": "809a27fb451059995a4e54cb2fed50560f6d695e108ad7776711023282a10baf"
+    },
+    "setup.py": {
+      "sizeBytes": 4834,
+      "sha256": "877fd89ff21857ce112e1a88a4fe5d7ef82d1f8f9f7955ea2a0235884efcf47e"
+    },
+    "taskcoach.py": {
+      "sizeBytes": 2463,
+      "sha256": "1f9566ccf9b974d56d6806a46caece0f1d60cbd389a9c310e99ef610a7388079"
+    },
+    "taskcoach.pyw": {
+      "sizeBytes": 798,
+      "sha256": "b748bc0056eddae158a3f139013fd0d86c5310354e7ea9387cbe2ee708ffaef4"
+    },
+    "taskcoachlib/meta/data.py": {
+      "sizeBytes": 8258,
+      "sha256": "2c39b4dcabf1cb452940b32a7c9e747736d1fd6e6d84b479c0bc27bbf75b0e38"
+    },
+    "taskcoachlib/application/application.py": {
+      "sizeBytes": 15758,
+      "sha256": "234ed13b6c6bc3ae94336c22c3dbd40655124dc0b30f48a61cfba4c069e4aa21"
+    },
+    "taskcoachlib/persistence/xml/reader.py": {
+      "sizeBytes": 30704,
+      "sha256": "22f15e7ac1e83fb9fd3552468c986e7463bda85c545f9e6c252476bb7fc17094"
+    },
+    "taskcoachlib/persistence/xml/writer.py": {
+      "sizeBytes": 15381,
+      "sha256": "3846135577cd7a6d9ecf123d5223bac495433d9b57e36a4710809ca0cbdb8cf2"
+    },
+    "taskcoachlib/config/defaults.py": {
+      "sizeBytes": 24637,
+      "sha256": "7e3de165a50294c06e784028f71c1ff7e3529232dc228769e521262935f5a5d0"
+    },
+    "taskcoachlib/gui/iocontroller.py": {
+      "sizeBytes": 23538,
+      "sha256": "b9ebdbe649434b0d4583ae85bc929bf9a190d75952eaac8a3d50bef748803074"
+    }
+  },
+  "finiteOutputProof": {
+    "original": {
+      "sizeBytes": 732,
+      "sha256": "c697f98d34aaf5649cdd993531f5120b59c2b69941404281820caedd9f7631e1",
+      "observedModificationTimestampNotClockProof": "2026-10-13 22:45:26.124000"
+    },
+    "market": {
+      "sizeBytes": 730,
+      "sha256": "d3b07a11c3d242d2fe840eac300200fe64f8c2d4ec217365074c64af8d16ec35",
+      "observedModificationTimestampNotClockProof": "2026-10-13 23:08:44.210000"
+    }
+  },
+  "currentLabelCorrection": {
+    "applicationId": "taskcoach",
+    "firstRawResultSha256": "117907f6fad623405f105326db8d94a5f654b9ce5b110ded00fbd0281911340a",
+    "v2RawResultSha256": "3dcfb11972df80b1a8138b7c911ecbf8324e11ed373116236f8bcca23529b736",
+    "firstHelperSha256": "c95d5b813f89250ddb9268db5bdd0079d89622f379e50d1e13dece95d1f65d4f",
+    "v2HelperSha256": "5dc5b8504a33802dd825a875a98a01f2aaec44a2e48c7d5a55b3e9aa09a885e1",
+    "oldOutputKey": "twoProgram332AndActualRegistryConfigAndPreviousFixedPinsPreserved",
+    "actualTwoProgramCounts": 95,
+    "allAssertionsAndSameFinalCheckpointUnchanged": true,
+    "outputLabelOnlyV2NoCheckpointRestartInstallGui": true,
+    "originalResultAndHelperRawHeld": true
+  },
+  "currentSafeSummary": {
+    "accepted": 71,
+    "pending": 18,
+    "coreJobs": 556,
+    "fullStoreRows": 162,
+    "candidate": "candidate-v80",
+    "root": 1,
+    "role": 89,
+    "entries": 73,
+    "targets": 154,
+    "publicJson": 84,
+    "finalPrivateCpSummary": {
+      "file": "after-final-restart.json",
+      "sha256": "bfba5624a913e155e67da7969d84d8fb1066b9f55bab927ea89b8bed3b3ad5f2",
+      "coreJobs": 556,
+      "fullStoreRows": 162
+    }
+  },
+  "individualScreenshotNames": [
+    "01-original-input-editor.jpg",
+    "02-original-saved-subject.jpg",
+    "03-original-explicit-reopen-editor.jpg",
+    "03a-original-new-process-empty.jpg",
+    "04-market-input-editor.jpg",
+    "05-market-saved-subject.jpg",
+    "06-market-explicit-reopen-editor.jpg",
+    "06a-market-new-process-empty.jpg",
+    "07-original-rollback-explicit-reopen-editor.jpg",
+    "07a-original-rollback-empty.jpg"
+  ],
+  "reviewHistory": [
+    "Fresh TaskCoach independent review on127manifest/base d96b6846. Prior dupeGuru/readonly review bytes preserved, not used as application acceptance proof.",
+    "Before parentmanifest existed, reviewer directory inventory observed missing prospective once; independent semantic review continued, then full127manifest supplied. No prematureFINAL or dependency mutation.",
+    "Reviewer guessed taskcoach-data-verify-lib-20261014.py path missing; actualhostproof helper subsequently read from directory inventory. Exact missing-path trace toolhistory only, no fabricated archivedstderr.",
+    "First audit suffix selection of setup.py found both root and nested test setup.py and asserted false. Originalaudit preserved; V2 uses exact TaskCoach-1.4.6/root member for every selected source and verifies whole raw.",
+    "V2 audit incorrectly excluded safe synthetic fixture metadata from public market comparison and asserted false. Actual schema reader showed only fixtureRawBase64 absent publicly; finite fixture/inputBytesBase64 retained legitimately. OriginalV2 held; V3 excludes only actual removed raw field and full127audit then passed exit0.",
+    "Parent firstfixture terminal-only capture assertion stopped before fixture/CP; one-running readonly whitelist thenV3 continued. Original final top-level exitCode KeyError stopped before capture/raw/CP; actual event schema V2 used. These recorded failures not described as successful originalchecks.",
+    "Parent activation alias/obsolete restartkey/wineserverpath drafts corrected before execution, and accidental exclusive FileExists marketbuilder repeat stopped before writes/guest. No fabricated guestfailed audits, repeatedinstall or exacttrace from unsavedtoolhistory.",
+    "Current original output key twoProgram332 was naming error only; actual95assertions alwayscorrect. V2 only key name changed, sameCP/allotherresult fields and originalraw preserved. No newrestart/CP/GUI for labelcorrection.",
+    "Original22 source/gui/marketPending phase frozen. Source limits firstGUIonly and noRestart at that phase are historical, final lifecycle separatelyrecorded. No oldphase labels overwritten or mistaken for new finalfailedstate.",
+    "Five normalQuit supportingrecords reviewed as three complete terminaljobs plus twofirst hostsummary/codeeventassertions, not a privatefulljobsCP replay. About unmeasured; Chinese maintitle questionmarks remain. Empty syncml serialization not functionality/network proof.",
+    "Old Scribus oneprivatecanonical rawloss and prior querytoolhistory disclosure scopes held; no lostraw rebuilt or querycontent repeated."
+  ],
+  "limitations": [
+    "Independent host raw/archive/source/finiteTSK reconstruction/TUF/Gitprecheck/privacy/safe receipt and helper-code review plus actualJPEG visualinspection only. No guestGUI/SSH/API/service/install/recover/sign/fullprivateCP replay. Safe finalexport explicitly excludes completeCP.",
+    "Finite single-task subjectedit with sourceinput preserved by nativeSaveAs beforeedit/defaultautosave retained, twoTSK saves, three freshClose autoRestore-to-empty thenexplicitOpen, and StoreIPC update/exactoriginalrollback. Not fulltaskmanager/TSK/XML/sync/clock correctness.",
+    "Actual outputmodificationDateTime is observedliteralvariable in fullbyte reconstruction, not independently validatedclock. Creation/id/guid/description/status1/defaultemptysync nodes matched, status/date/priority/budget/effort/categories/subtasks/recurrence/reminder functionality not accepted.",
+    "679CRC/root11raw proof is not allsource humanreview. GPL3later main andsourceCOPYRIGHT exceptions do not establish complete Python2.7/wxPython/Twisted/py2exe/thirdparty/Nuvola/icons/translations licenceclosure. Installedmain licencecomparison unverified; namedscan empty not exclusion oflibrary.zip notices.",
+    "Officialcached GET200CL and supplied SourceForge webdisplaydigests crosschecked, not newlybrowsed originalSFHTML. PGP/Authenticode/sourcebinary/repro/latest unverified; no repeatedGET. Extracted92files andformal95 programcounts distinct;120320 entrynotwholeappsize.",
+    "Exact8831uninsdiffmaps and registry/config rawdiffmetadata privatelyheld reviewed as pins/summaries, no privateunins/registryraw read. Causes/uninstall/semanticvalueequivalence unestablished. Firstconfig discovery notcreationtime; program/data/three registry/selectedprefix scope notallFS.",
+    "Sevenfullclasses/full556Core162SQLite crosschecked assertions/summaries, not recent64IPC or independent rawCP. Corequeries maywrite scratch. Finalonceeachnormalrestart separate frompreviewStore restart; currentV2 onlyoutputlabel.",
+    "Exit0/serverstop supporting evidence not soleacceptance. No About/directChinese keyboard/fullUnicodepathname/newfont/Core/program/globalcontext/definition/envcwd/globalDLL/runtime repair. No export/printing/bad-largeinput/networkbackgroundexclusion/migration/unattended/GUImarketbutton acceptance.",
+    "Three parentnormal authorizedfullymasked logins are recorded scope, not replayed byreviewer; no loginimages/credentials/password/auth/power changes. No UbuntuVM or two4GiBconcurrency work; independentUbuntu2/Flatpak2timeout andoldpending restrictionsheld.",
+    "CurrentWindows71/18 addsone apponly; syntheticTSKnotextraapp. dupeGuru stillfailed/no ready/GUI/promote/reinstall, olderCP/helper totals historical. Original22/signedpending/trust/failure/root histories unchanged.",
+    "ActualGitstage/index/cachedcheck/commit/ordinarypush remain parentwork after explicitFINAL notification and thisfinalanswer. No wholeworkspacebyte equality claim."
+  ]
+}
