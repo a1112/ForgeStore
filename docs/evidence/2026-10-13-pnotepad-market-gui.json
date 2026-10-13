@@ -1,0 +1,1217 @@
+{
+  "market": {
+    "passed": true,
+    "generation": {
+      "bottleId": "gen-job-1791847474891-4",
+      "createdAtMilliseconds": 1791847474897,
+      "definition": {
+        "bottleId": "gui-pnotepad",
+        "category": "development",
+        "compatibilityRating": "unknown",
+        "id": "pnotepad",
+        "installer": {
+          "arguments": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/DIR=C:\\PNotepad",
+            "/NOICONS",
+            "/TASKS="
+          ],
+          "fileName": "pn2421440_multilang.exe",
+          "sha256": "f71deb2c89c6aa622c8e47c024dd0d3805c677d4b98dc270eb5085fae5925f06"
+        },
+        "launchers": [
+          {
+            "executable": "PNotepad/pn.exe",
+            "id": "main",
+            "name": "Programmer's Notepad"
+          }
+        ],
+        "name": "Programmer's Notepad",
+        "publisher": "Simon Steele",
+        "schemaVersion": "1",
+        "tags": [
+          "rolling-1000",
+          "managed-inno"
+        ],
+        "version": "2.4.2"
+      },
+      "definitionDigest": "sha256:1dc00aa27f97dd7386f5aabf165442fd946d9834c947128fe534f8ebc2222f38",
+      "id": "gen-job-1791847474891-4",
+      "launcherDigests": {
+        "main": "sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7"
+      },
+      "runtime": {
+        "binding": {
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINESERVER": "/usr/bin/wineserver"
+          },
+          "executable": "/usr/bin/wine",
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "providerId": "wine-linux-x86-64-preview",
+          "wineserverExecutable": "/usr/bin/wineserver"
+        },
+        "selection": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "version": "11.14"
+      },
+      "status": "ready",
+      "updatedAtMilliseconds": 1791847488543
+    },
+    "definition": {
+      "bottleId": "gui-pnotepad",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "pnotepad",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\PNotepad",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "pn2421440_multilang.exe",
+        "sha256": "f71deb2c89c6aa622c8e47c024dd0d3805c677d4b98dc270eb5085fae5925f06"
+      },
+      "launchers": [
+        {
+          "executable": "PNotepad/pn.exe",
+          "id": "main",
+          "name": "Programmer's Notepad"
+        }
+      ],
+      "name": "Programmer's Notepad",
+      "publisher": "Simon Steele",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "2.4.2"
+    },
+    "installedFiles": {
+      "pnlang_1031_de-DE_2.4.2.1440.dll": {
+        "sizeBytes": 245248,
+        "sha256": "cbb725594e21c1dac5de0a3149c270ad571413dc8a98d86100b9b9904f61e0a4"
+      },
+      "credits.txt": {
+        "sizeBytes": 1211,
+        "sha256": "9038d3bae1143ff4870aa512d7eddc800f889a2f0525f34886383dc60fe010da"
+      },
+      "customscheme.dll": {
+        "sizeBytes": 45568,
+        "sha256": "1f8f75c72c0a654f3fd69aec62db821cb8368a7b112ececaac99ed0682d6ffe8"
+      },
+      "pnlang_3082_es-ES_2.4.2.1440.dll": {
+        "sizeBytes": 247296,
+        "sha256": "c15be42601f289022b1e400754adde522f8920142a6cad73e348ae6d5c61aeb6"
+      },
+      "pnlang_1038_hu-HU_2.4.2.1440.dll": {
+        "sizeBytes": 245248,
+        "sha256": "7797dcc11cd31d3afd33928760d64e735999538a1e820bdc685430540235edf2"
+      },
+      "libexpatw.dll": {
+        "sizeBytes": 140288,
+        "sha256": "69e3aa9908ea18b1d8adfcaa88924bced8fa5168ecbce0073884d022226aaa3a"
+      },
+      "ctags_README": {
+        "sizeBytes": 3044,
+        "sha256": "4295b4c69eb8a6e03adc105188dcf10f22d125404522ed1bdd8d220b6282292a"
+      },
+      "pnse.dll": {
+        "sizeBytes": 51200,
+        "sha256": "1b0a308673f9c7e5edd4a3a423d50bf643153170fb7ea2c9b2f7b31ae317306d"
+      },
+      "license.txt": {
+        "sizeBytes": 1521,
+        "sha256": "e247d7febb024cb365d40f8adfe700de9d58c852c843194dbbb43d3e1b1b44a0"
+      },
+      "pnlang_1049_ru-RU_2.4.2.1440.dll": {
+        "sizeBytes": 242176,
+        "sha256": "e5385e44a7e507da6924943b95baca3eb162513d415c016a00c3a4e445256b3e"
+      },
+      "pn2.chm": {
+        "sizeBytes": 32542,
+        "sha256": "66426c9f4234d7c1d1b07959ec88077eab4280b4d16853e5a69c00b946dab87e"
+      },
+      "pnlang_1041_ja-JP_2.4.2.1440.dll": {
+        "sizeBytes": 228352,
+        "sha256": "619cb7378092f2a3a46cceeda8229875479bc6e53a6d6c0180d065a73198f9c3"
+      },
+      "unins000.exe": {
+        "sizeBytes": 719521,
+        "sha256": "65ef1d221277bdbb23c1184aebffadaec69fdebc7e68752d184d3329dfd3cf5c"
+      },
+      "msvcr120.dll": {
+        "sizeBytes": 970912,
+        "sha256": "86e39b5995af0e042fcdaa85fe2aefd7c9ddc7ad65e6327bd5e7058bc3ab615f"
+      },
+      "pnlang_1048_ro-RO_2.4.2.1440.dll": {
+        "sizeBytes": 246272,
+        "sha256": "e4cfb994e7265ad021b57798c9c829e4865b9a56e5b91e06cd6b7238716d4bb0"
+      },
+      "pnlang_1281_qps-ploc_2.4.2.1440.dll": {
+        "sizeBytes": 240640,
+        "sha256": "565eb7f241cb3f2577ffb85b5b782e4a5a83ff46205c0c737e5a5efe6db93c18"
+      },
+      "ctags.exe": {
+        "sizeBytes": 283136,
+        "sha256": "b54d8d9ccf9434feb2aad55f3d391d4667ba518585c5867367d88eaa20516789"
+      },
+      "dbghelp.dll": {
+        "sizeBytes": 719360,
+        "sha256": "1c119507cf2d339bac03962cc14e0302d292fbb6b5f9266c48ccd6696dc85a73"
+      },
+      "ctagsnavigator.dll": {
+        "sizeBytes": 36864,
+        "sha256": "22089210a2d0bb30fd06f2f0a4b6040146efad5967b35f700d24162036256d73"
+      },
+      "config.xml": {
+        "sizeBytes": 126,
+        "sha256": "c812fe43fc658aacf2a04eca182567671143fd30d79ca2e5c99f9776e2e2230e"
+      },
+      "ctags_COPYING": {
+        "sizeBytes": 18347,
+        "sha256": "b15f41248f0957edfd2d91202ee810a6ef2d92c0256d330585d806677306a706"
+      },
+      "SciLexer.dll": {
+        "sizeBytes": 1119744,
+        "sha256": "292d1089d6e33cb9efa5d009376d1da1af4866966bbadcf2fab6cd565fdacc05"
+      },
+      "pn.exe": {
+        "sizeBytes": 3101696,
+        "sha256": "b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7"
+      },
+      "msvcp120.dll": {
+        "sizeBytes": 455328,
+        "sha256": "87c42ca155473e4e71857d03497c8cbc28fa8ff7f2c8d72e8a1f39b71078f608"
+      },
+      "pnlang_1040_it-IT_2.4.2.1440.dll": {
+        "sizeBytes": 247296,
+        "sha256": "8028547a994fa857725e2123a4984b393773a11bbe4621c7d74ddd3504fb749c"
+      },
+      "pnlang_1045_pl-PL_2.4.2.1440.dll": {
+        "sizeBytes": 244736,
+        "sha256": "6305bd54bf95175906d3bd508ab4c9a79ab2d1327354d0e50fd941293acfbb7b"
+      },
+      "readme.txt": {
+        "sizeBytes": 1203,
+        "sha256": "788ec06fa1b187f4bdae8b5ef0bf80c686633bd4c4aa288b52dd5aae8123f3ad"
+      },
+      "pnlang_2052_zh-CN_2.4.2.1440.dll": {
+        "sizeBytes": 223744,
+        "sha256": "7c18a6c2c25c41005643b20b7a573b74f086df8b0d66f0839a649a5ea5a77e09"
+      },
+      "roadmap.txt": {
+        "sizeBytes": 1039,
+        "sha256": "62375e027125ce94b55975cf21098c97914a3109fbbc554968525314dc54f5af"
+      },
+      "unins000.dat": {
+        "sizeBytes": 6384,
+        "sha256": "b4f6514637d9e3c7266cff4d161bd1767bd63b5f93e0142de9c0597a16701b11"
+      },
+      "schemes/python.scheme": {
+        "sizeBytes": 1653,
+        "sha256": "77c68b9c30fe2d193fad410df30a7bfafd21046890d9e1b6360794c127c439c5"
+      },
+      "schemes/php.api": {
+        "sizeBytes": 522497,
+        "sha256": "7be6df6650e8d01bb9c68fcda4294f286705bf09d724093595be82fb0c4f83e8"
+      },
+      "schemes/cpp.scheme": {
+        "sizeBytes": 9333,
+        "sha256": "efe9d17ed954388bcaee61f7f5c820c0062aa517a5011660a7cefd787835f768"
+      },
+      "schemes/vb.scheme": {
+        "sizeBytes": 2952,
+        "sha256": "7a69c8bfe953551baa15a15c0ce266f588f4c7e467d4ec78979caef305e98ea5"
+      },
+      "schemes/tcl.scheme": {
+        "sizeBytes": 5117,
+        "sha256": "31466eab687b3e2608bee5976ed8dd6e8de72f4bb3aeee4f70334de8f4c35d22"
+      },
+      "schemes/sql.scheme": {
+        "sizeBytes": 4914,
+        "sha256": "34f006b3130f17d5bfc4150d5384432c031fb80fc337e68fba51575c9a5efefa"
+      },
+      "schemes/pascal.scheme": {
+        "sizeBytes": 2243,
+        "sha256": "32b233dedb4161200b5678a329e2f7efe7026f8f7139f04fd89bb4f87775d2c9"
+      },
+      "schemes/extmap.dat": {
+        "sizeBytes": 1133,
+        "sha256": "51293b0c8d285ffdc12d49ae319079405cdcea11bba0e385372037dccb27ab33"
+      },
+      "schemes/specman.scheme": {
+        "sizeBytes": 4301,
+        "sha256": "bb0406828c676ec4a32f95bf16a81454db9d269c0584c45b450e2b568878ed46"
+      },
+      "schemes/misc.scheme": {
+        "sizeBytes": 4173,
+        "sha256": "33608af0978e32380a39c591b84ed392405df58b506829cfbb2083da540b8071"
+      },
+      "schemes/ruby.api": {
+        "sizeBytes": 98680,
+        "sha256": "f8752b11d239f5c3954d893826dbe3a191bc4325a52a5ee53946cfd054f8907c"
+      },
+      "schemes/d.scheme": {
+        "sizeBytes": 3731,
+        "sha256": "0ec8baf178a837aa08dc49d7f53e55479c4537fd485000a4322d28468e9631d3"
+      },
+      "schemes/modula2.scheme": {
+        "sizeBytes": 2001,
+        "sha256": "fc33ade4da6032521869797c47ebd5180f5072804e0616527f1778860aca9eb5"
+      },
+      "schemes/xml.scheme": {
+        "sizeBytes": 2394,
+        "sha256": "4442055143fb30c117eff423d88e00ffdfcecc7e4398196fad325ff7773e876a"
+      },
+      "schemes/verilog.scheme": {
+        "sizeBytes": 2808,
+        "sha256": "43266466778496f8c55130da489740728752d9d8397ebfce7cee0443b2e5fb09"
+      },
+      "schemes/matlab.scheme": {
+        "sizeBytes": 1854,
+        "sha256": "fb55b71b26130f4f5ab220dec39790953857ffc759921cbaa414632bbab9f668"
+      },
+      "schemes/WebFiles.scheme": {
+        "sizeBytes": 20793,
+        "sha256": "e891e0e7a6d0c455ce4af7eadaac86a0eef9ab6e73ffc55ea6b71661f2b8db3b"
+      },
+      "schemes/lisp.scheme": {
+        "sizeBytes": 4648,
+        "sha256": "ca963d5122842387a808c2800f6208216ae81446b06c4e0aead3432a8ae7cb3a"
+      },
+      "schemes/latex.scheme": {
+        "sizeBytes": 700,
+        "sha256": "9f649bc703270f33463737fac88af9d52478a423d23cfd7b10b2c66713ce70f0"
+      },
+      "schemes/asm.scheme": {
+        "sizeBytes": 10306,
+        "sha256": "2fdce319858eac7e63ce3512b877268c5982bc61d00ae0319cbd1efeaafab8b8"
+      },
+      "schemes/bash.scheme": {
+        "sizeBytes": 2527,
+        "sha256": "e5a2c1bfc046ccaa9148ceb703897055fac592ce86c5bed636e316580ac4e7ed"
+      },
+      "schemes/phpscript.scheme": {
+        "sizeBytes": 1820,
+        "sha256": "0566e2d88005857ad2e09eca37fbfd8184c0f189c94d2786f743f8c7fe7d1865"
+      },
+      "schemes/lua.scheme": {
+        "sizeBytes": 1431,
+        "sha256": "2839f70302754eb594dae8de51fd54b5593b1b57693dc021bf218d4c138ecd4f"
+      },
+      "schemes/vhdl.scheme": {
+        "sizeBytes": 4351,
+        "sha256": "0a3aa41b99301692d7c64d74387f68c218efb4cf13699604765d87bfd877c494"
+      },
+      "schemes/ruby.scheme": {
+        "sizeBytes": 2823,
+        "sha256": "e205ccef1da15fa021c996be8cf3ea5fc0a145ca6bf31c30e5a6cc697a5fbaec"
+      },
+      "schemes/nsis2.scheme": {
+        "sizeBytes": 7457,
+        "sha256": "41bfd5ebc422b3ffbc7b0c58532f85d828cb33741e4fa48b45ee1d0c0628bd93"
+      },
+      "schemes/powershell.scheme": {
+        "sizeBytes": 3926,
+        "sha256": "ba13006bf6e8c57be88be03d290bccf74d6bdef3059a187029a812f0631d19bd"
+      },
+      "schemes/fortran.scheme": {
+        "sizeBytes": 6111,
+        "sha256": "0b1a7465f2fa502a1924ff8916d720ba77c59ccc9c329e5e325cd9cebed25ebb"
+      },
+      "schemes/ada.scheme": {
+        "sizeBytes": 1834,
+        "sha256": "15e3eb71fdf0e06ddb5384dd420b88ff0b7f1d043f574d95752af1c37ec504a5"
+      },
+      "schemes/perl.scheme": {
+        "sizeBytes": 4363,
+        "sha256": "db338b3e5746578fc33245be2b45227701761034c76fd16a8e3bcac9a00c9601"
+      },
+      "schemes/docbook.scheme": {
+        "sizeBytes": 6775,
+        "sha256": "094c71cf0fb2cf7bd95788cfb1ef89936332a054fe04aa04ddedb06a1c8548f9"
+      },
+      "schemes/master.scheme": {
+        "sizeBytes": 3225,
+        "sha256": "161a4a3864270000bb5ac7c620cbed0b31d26f5a4cb762cb6bce339586f15361"
+      },
+      "ctags/additionalSupportedSchemes.ini": {
+        "sizeBytes": 728,
+        "sha256": "5024d381537be91e37bf6d7c1fe3a1e6f56553a134f087c7d77004c85f5a0fe8"
+      },
+      "ctags/additionalLanguages.conf": {
+        "sizeBytes": 107,
+        "sha256": "8afdd500f8380b70a1547ceb8ef5481f22aa30004f4371dd85586f1142e35d9e"
+      },
+      "samples/sass.schemedef": {
+        "sizeBytes": 3363,
+        "sha256": "2780b56e08de2d3143d8ed44b56b7136da5be232ac442c695470ccb29e20b8f9"
+      },
+      "samples/powershell.schemedef": {
+        "sizeBytes": 2142,
+        "sha256": "89a018cb70938aeec72ff4af582e4630138b34fb3b75ccdfd0b9ceec58b48961"
+      },
+      "presets/Murky.xml": {
+        "sizeBytes": 1221,
+        "sha256": "c6400338c9d7df59de471bf8071d997e21e32b730f9fd5e8585ee94458efc14c"
+      },
+      "presets/Wombat.xml": {
+        "sizeBytes": 1392,
+        "sha256": "583f6a18098547029531766ff4b23f8fbcc3db9b0215afc7a012337cc2e0d668"
+      },
+      "presets/CalmSea.xml": {
+        "sizeBytes": 2897,
+        "sha256": "cfc1f6842a269624bf859ffe43bc8a35b73e0721f95d8922c0ed862929676ad9"
+      },
+      "presets/Default.xml": {
+        "sizeBytes": 31,
+        "sha256": "35c4ac34e5067d0ce49091d420c7a80819a94976c26cf5419a141f688bf7d919"
+      },
+      "presets/Solarized (Light).xml": {
+        "sizeBytes": 4452,
+        "sha256": "d9b86fa86861377dc2c00afdc5083c7dd685d4ea0ed2cbe304d2878c84b5ccd1"
+      },
+      "presets/ZenBurn.xml": {
+        "sizeBytes": 1590,
+        "sha256": "a54398a5ce244b29ac271fbb7b62990d9a26063ea4ce0828792f01c7381a9721"
+      },
+      "presets/Dark.xml": {
+        "sizeBytes": 673,
+        "sha256": "de7f015b0a0b4fe7ccf6828a61dbac0b148377f41d850fd8ade0ea8af1579f4b"
+      },
+      "presets/Obsidian.xml": {
+        "sizeBytes": 3517,
+        "sha256": "eb295370be82aa9e181efd38f45def581307d2a8e8ba5ed31cc6616ec629a38f"
+      },
+      "presets/Turbo.xml": {
+        "sizeBytes": 1339,
+        "sha256": "4c6158baf095b628e33ebd3709a7a6dd38194c318b00caf3592ba37d08d72aeb"
+      },
+      "clips/pascal/pascal.clips": {
+        "sizeBytes": 1675,
+        "sha256": "508e88cf846b62bc53aa4b72af323e1b1ff8b8b1785bc66d015ee5db6419a16b"
+      },
+      "clips/vb/vb.clips": {
+        "sizeBytes": 1254,
+        "sha256": "6b898cea7429068f240e39390f4c363f9a942e10e0050f4a204b14867f979ecc"
+      },
+      "clips/java/java.clips": {
+        "sizeBytes": 1823,
+        "sha256": "4fb4b2977ccee9b236e51fa34c8e0f1757a6fc2a3861b9f93ed05a930578c3d5"
+      },
+      "clips/perl/pl.clips": {
+        "sizeBytes": 2685,
+        "sha256": "cef55161b83bbbe0802b45e94c730207cfdc5e204b1b1d09952e8c4d3a4817b1"
+      },
+      "clips/web/htmlchars.clips": {
+        "sizeBytes": 3818,
+        "sha256": "6bab735d33deab421041ab867ab23535d5fa1c20adc864b2fcb7e93f494f19ad"
+      },
+      "clips/web/aspnet.clips": {
+        "sizeBytes": 6901,
+        "sha256": "4d40180167929ca58ea6c4c7720e644bfdd6c91573b50664a008344117ba355a"
+      },
+      "clips/web/xhtml.clips": {
+        "sizeBytes": 7547,
+        "sha256": "866a5a0507e631a029a4035afb26bb03c43f1d72b8d9d7c21ecd966986a04cf6"
+      },
+      "clips/web/doctypes.clips": {
+        "sizeBytes": 945,
+        "sha256": "70b70f875f4f032e930a26bb0a0104660f1930177d0875db9d08c05e72c0972c"
+      },
+      "clips/default/ascii.clips": {
+        "sizeBytes": 7205,
+        "sha256": "fa505206d7a2800c44089cb312fc15f1f665ba25f6cc1ae79a5d9dde82218ad5"
+      },
+      "clips/csharp/csharpscheme.clips": {
+        "sizeBytes": 667,
+        "sha256": "f47b6d6ae4bb44702cf5fe996df369df90ccf9fe04322576d7feb0cb0325d181"
+      },
+      "clips/php/phpcontrol.clips": {
+        "sizeBytes": 1010,
+        "sha256": "d602d002134b7560e19e23b21e33192f99675c0abed54e753066e15685bd5ec8"
+      },
+      "clips/php/phptemplates.clips": {
+        "sizeBytes": 1497,
+        "sha256": "1ee06ff19731fff520ddd13d759492beb3685b798c8db5b89b3cf9cd1820291f"
+      },
+      "clips/cpp/cstandard.clips": {
+        "sizeBytes": 1515,
+        "sha256": "1259ba068ba7da272f338f1336f228f9c1161823544317159d8a734c37e700eb"
+      },
+      "clips/cpp/cpp.clips": {
+        "sizeBytes": 505,
+        "sha256": "46446895a6748acb0423e0bc49ade9623748b6ee28e7ff7ca531c5c60845f37c"
+      },
+      "clips/xml/nant.clips": {
+        "sizeBytes": 1831,
+        "sha256": "54d5807cc7f1c95bb2de41fc695366e32d5e17f39d6c9a9ac1813e6bebb53eda"
+      },
+      "clips/xml/xmlscheme.clips": {
+        "sizeBytes": 188,
+        "sha256": "7d19379a9d16c7b8d02a3d4e95dd418ae0f877b64993b4b15d7d9ec16055ed59"
+      },
+      "clips/python/python.clips": {
+        "sizeBytes": 239,
+        "sha256": "3fca448fc9e98ffbd4ea466eb265aa05a5c52d8187f0314c2c53007f423528ea"
+      },
+      "clips/python/pypn.clips": {
+        "sizeBytes": 965,
+        "sha256": "aa6859a94adf212e3ea3d69ab792acd07d7eb94f18ece69bcf67438ea8c901be"
+      },
+      "clips/docbook/docbook.clips": {
+        "sizeBytes": 1972,
+        "sha256": "c865c941391011032618855e69bbbf4cf9c2e94d22f13007cc6a25d332b088fa"
+      }
+    },
+    "guiJobs": [
+      {
+        "applicationId": "pnotepad",
+        "createdAtMilliseconds": 1791847558480,
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 58205,
+            "requestId": "job-1791847558480-5",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 467331,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix",
+            "requestId": "job-1791847558480-5",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 467374,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791847558480-5",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791847474891-4",
+        "id": "job-1791847558480-5",
+        "inspection": {
+          "architecture": "x86",
+          "entryPointRva": 2167608,
+          "fileDigest": "sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7",
+          "fileSizeBytes": 3101696,
+          "format": "pe32",
+          "imageKind": "executable",
+          "importLibraries": [
+            "advapi32.dll",
+            "comctl32.dll",
+            "comdlg32.dll",
+            "gdi32.dll",
+            "kernel32.dll",
+            "libexpatw.dll",
+            "msimg32.dll",
+            "msvcp120.dll",
+            "msvcr120.dll",
+            "ole32.dll",
+            "oleaut32.dll",
+            "shell32.dll",
+            "shlwapi.dll",
+            "user32.dll",
+            "version.dll",
+            "wininet.dll"
+          ],
+          "machineCode": 332,
+          "schemaVersion": "1",
+          "sections": [
+            {
+              "executable": true,
+              "name": ".text",
+              "rawDataSize": 2316288,
+              "readable": true,
+              "virtualAddress": 4096,
+              "virtualSize": 2316031,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".rdata",
+              "rawDataSize": 412672,
+              "readable": true,
+              "virtualAddress": 2322432,
+              "virtualSize": 412178,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".data",
+              "rawDataSize": 131072,
+              "readable": true,
+              "virtualAddress": 2736128,
+              "virtualSize": 134120,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".rsrc",
+              "rawDataSize": 240640,
+              "readable": true,
+              "virtualAddress": 2871296,
+              "virtualSize": 240424,
+              "writable": false
+            }
+          ],
+          "subsystem": "windowsGui",
+          "subsystemCode": 2
+        },
+        "kind": "launch",
+        "launchPlan": {
+          "bottleExecutable": {
+            "architecture": "i386",
+            "bottleId": "gen-job-1791847474891-4",
+            "digest": "sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7",
+            "imageKind": "executable",
+            "inspectionSchemaVersion": "1",
+            "originalName": "pn.exe",
+            "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix/drive_c/PNotepad/pn.exe",
+            "sizeBytes": 3101696,
+            "subsystem": "windowsGui"
+          },
+          "decisionTrace": [
+            "runtime provider wine-linux-x86-64-preview selected as wine",
+            "translator native selected",
+            "graphics backend wined3d selected",
+            "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+            "Bottle CJK font pinned by digest",
+            "bottle-executable sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7 pinned in place",
+            "inspection i386 windowsGui accepted"
+          ],
+          "graphics": {
+            "backend": "wined3d",
+            "version": "11.14"
+          },
+          "lifecycle": {
+            "terminationGraceMilliseconds": 3000,
+            "wineserver": {
+              "executable": "/usr/bin/wineserver",
+              "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix"
+            }
+          },
+          "process": {
+            "arguments": [
+              "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix/drive_c/PNotepad/pn.exe"
+            ],
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "DISPLAY": ":0",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix",
+              "WINESERVER": "/usr/bin/wineserver",
+              "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+            },
+            "executable": "/usr/bin/wine",
+            "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4"
+          },
+          "requestId": "job-1791847558480-5",
+          "runtime": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "sandbox": {
+            "network": "deny",
+            "profile": "desktop"
+          },
+          "schemaVersion": "1",
+          "translator": {
+            "provider": "native"
+          }
+        },
+        "schemaVersion": "1",
+        "status": "succeeded",
+        "updatedAtMilliseconds": 1791848028187
+      },
+      {
+        "applicationId": "pnotepad",
+        "createdAtMilliseconds": 1791848056716,
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 58769,
+            "requestId": "job-1791848056716-6",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 115351,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix",
+            "requestId": "job-1791848056716-6",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 115393,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791848056716-6",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791847474891-4",
+        "id": "job-1791848056716-6",
+        "inspection": {
+          "architecture": "x86",
+          "entryPointRva": 2167608,
+          "fileDigest": "sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7",
+          "fileSizeBytes": 3101696,
+          "format": "pe32",
+          "imageKind": "executable",
+          "importLibraries": [
+            "advapi32.dll",
+            "comctl32.dll",
+            "comdlg32.dll",
+            "gdi32.dll",
+            "kernel32.dll",
+            "libexpatw.dll",
+            "msimg32.dll",
+            "msvcp120.dll",
+            "msvcr120.dll",
+            "ole32.dll",
+            "oleaut32.dll",
+            "shell32.dll",
+            "shlwapi.dll",
+            "user32.dll",
+            "version.dll",
+            "wininet.dll"
+          ],
+          "machineCode": 332,
+          "schemaVersion": "1",
+          "sections": [
+            {
+              "executable": true,
+              "name": ".text",
+              "rawDataSize": 2316288,
+              "readable": true,
+              "virtualAddress": 4096,
+              "virtualSize": 2316031,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".rdata",
+              "rawDataSize": 412672,
+              "readable": true,
+              "virtualAddress": 2322432,
+              "virtualSize": 412178,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".data",
+              "rawDataSize": 131072,
+              "readable": true,
+              "virtualAddress": 2736128,
+              "virtualSize": 134120,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".rsrc",
+              "rawDataSize": 240640,
+              "readable": true,
+              "virtualAddress": 2871296,
+              "virtualSize": 240424,
+              "writable": false
+            }
+          ],
+          "subsystem": "windowsGui",
+          "subsystemCode": 2
+        },
+        "kind": "launch",
+        "launchPlan": {
+          "bottleExecutable": {
+            "architecture": "i386",
+            "bottleId": "gen-job-1791847474891-4",
+            "digest": "sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7",
+            "imageKind": "executable",
+            "inspectionSchemaVersion": "1",
+            "originalName": "pn.exe",
+            "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix/drive_c/PNotepad/pn.exe",
+            "sizeBytes": 3101696,
+            "subsystem": "windowsGui"
+          },
+          "decisionTrace": [
+            "runtime provider wine-linux-x86-64-preview selected as wine",
+            "translator native selected",
+            "graphics backend wined3d selected",
+            "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+            "Bottle CJK font pinned by digest",
+            "bottle-executable sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7 pinned in place",
+            "inspection i386 windowsGui accepted"
+          ],
+          "graphics": {
+            "backend": "wined3d",
+            "version": "11.14"
+          },
+          "lifecycle": {
+            "terminationGraceMilliseconds": 3000,
+            "wineserver": {
+              "executable": "/usr/bin/wineserver",
+              "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix"
+            }
+          },
+          "process": {
+            "arguments": [
+              "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix/drive_c/PNotepad/pn.exe"
+            ],
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "DISPLAY": ":0",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4/prefix",
+              "WINESERVER": "/usr/bin/wineserver",
+              "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+            },
+            "executable": "/usr/bin/wine",
+            "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791847474891-4"
+          },
+          "requestId": "job-1791848056716-6",
+          "runtime": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "sandbox": {
+            "network": "deny",
+            "profile": "desktop"
+          },
+          "schemaVersion": "1",
+          "translator": {
+            "provider": "native"
+          }
+        },
+        "schemaVersion": "1",
+        "status": "succeeded",
+        "updatedAtMilliseconds": 1791848174382
+      }
+    ],
+    "normalExitCodes": [
+      0,
+      0
+    ],
+    "finalDataAndConfigurationPins": {
+      "system.reg": {
+        "sizeBytes": 3424294,
+        "sha256": "78c68969b94563a77ef48e77ad415d32d4f27142ee3e7a54b6c249a05b042389"
+      },
+      "user.reg": {
+        "sizeBytes": 106003,
+        "sha256": "e1fd93bc43545842ec8639d67a76cbda7f9afa093f9772de60671c8a1053016c"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "96df76054deb91169d2bb1928351a0dbf67d775f48457f2d471d41825e6d31e0"
+      },
+      "drive_c/PNotepadTests/market.txt": {
+        "sizeBytes": 47,
+        "sha256": "76a26efeeb47dc6cc0396ae519f8eabbb2a6b382f91d3bb7a2b223fdfdcb8d2e"
+      },
+      "drive_c/PNotepadTests/市场文本.txt": {
+        "sizeBytes": 38,
+        "sha256": "99a489adab0dd8cfc1a33b307eabebe13403f154000877022a0e5aa255e7e73d"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/idl.cscheme": {
+        "sizeBytes": 2201,
+        "sha256": "ccd994b1b52d6534cb4340ed720ec946b001a1fa5fe1ef2a5f97f6ebf1dadb4b"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/phpscript.cscheme": {
+        "sizeBytes": 1485,
+        "sha256": "44609d7f8d264c735c4baee4ced9c106c6975d329bd4457f651f6a02d8abe633"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/d.cscheme": {
+        "sizeBytes": 2428,
+        "sha256": "f654c5356b1aa6532e0039a419a4e7dd024a609696a17bf235d3c00f3b311ef6"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/ada.cscheme": {
+        "sizeBytes": 1099,
+        "sha256": "d696112ce8f535252fc72589ef0620988edad3a5ca1d178e8bd5b7eb22d9e829"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/perl.cscheme": {
+        "sizeBytes": 3177,
+        "sha256": "14a6ed14cc8f1ef552d83a89f4571f726889c1d9396e1a05c34ef57a4cbb4665"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/diff.cscheme": {
+        "sizeBytes": 537,
+        "sha256": "c2a4f5627296952a445b952ef2dd57304dc9ba4c96c617087f4ff0ac28da16f6"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/properties.cscheme": {
+        "sizeBytes": 525,
+        "sha256": "16ca5583a02e6b5bfe8951ebce915b00be867074436db2fd5bad3ba87247a36f"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/python.cscheme": {
+        "sizeBytes": 1272,
+        "sha256": "36a0d7577a5c296ffb9820708961a94eeb6a3128845b9cc5f0ed4e69bf8fb97c"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/sql.cscheme": {
+        "sizeBytes": 2906,
+        "sha256": "9eaad8101a77670f4dc5724d7bcd2a9b2f0f640d558fb52a88f8cf9c8cf7640a"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/vhdl.cscheme": {
+        "sizeBytes": 2688,
+        "sha256": "6ec0ebbdb16e230a793adf50dc3c55785fd4819a0c0c7d1638726efcee10dfa5"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/javascript.cscheme": {
+        "sizeBytes": 1455,
+        "sha256": "1066047427c360ef029b49930977e39a826f7d7403f853ff918a9448712220df"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/fortran77.cscheme": {
+        "sizeBytes": 4827,
+        "sha256": "aaffb5a8fbfa6189b96fb080d7fea9391218fc232d7186f7272e9a4ba3fc4b37"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/xml.cscheme": {
+        "sizeBytes": 1680,
+        "sha256": "bc8c844c78d2da956a4669e8bd13472ee99093b642f63922a6eb0990e7fc8b8b"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/plsql.cscheme": {
+        "sizeBytes": 1948,
+        "sha256": "ec395fca65d628580669cbbe948115200fee1106c77e224c4d180f9464c6a164"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/cpp.cscheme": {
+        "sizeBytes": 2367,
+        "sha256": "866d4ab8fd374110cf2591003a3d1dfbd2cb131b44b8a06cd01940b46e3596a0"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/NSIS.cscheme": {
+        "sizeBytes": 5074,
+        "sha256": "483809f18e2bb44503596d93d7f6397f3ee4d3d8a8bccfd509be32794070b4d9"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/css.cscheme": {
+        "sizeBytes": 2823,
+        "sha256": "4691c65d6616c07554ca1fb9bd0051fc8ee724de8bb03d606e5104a9c2e72b74"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/default.cscheme": {
+        "sizeBytes": 369,
+        "sha256": "ec77dcf383b66e6aa3c82bd315037d89d642914fce5c5047063ed60ab5aaf302"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/verilog.cscheme": {
+        "sizeBytes": 2306,
+        "sha256": "fae8e1ecc5bc1ae4a20efd63d14b1902f480a7fc6b6b3b8ca1f726150fc765ef"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/scheme.cscheme": {
+        "sizeBytes": 2953,
+        "sha256": "ed2fb3d481f1eed67659ff4b8fe568101c391189d5c353927ccc393d42473454"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/ruby.cscheme": {
+        "sizeBytes": 1647,
+        "sha256": "f94415a8119d1d391f48a518930206443072cf5f57acba545747bd77bbfa28df"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/output.cscheme": {
+        "sizeBytes": 906,
+        "sha256": "5eb7c43e7f6549c815192358e418e288eade0b361f1d1c22bb732edeeed4d53b"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/config.xml": {
+        "sizeBytes": 113,
+        "sha256": "774548b23e2df2de3d51fecbe4f39f62d75fe4419ea8dfcffd9ae47ede8d2bc5"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/csharp.cscheme": {
+        "sizeBytes": 1646,
+        "sha256": "760d8f0d30035b1e523514b94bdc6330818a9796ee4e69694c7095a6acd50cf5"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/web.cscheme": {
+        "sizeBytes": 8721,
+        "sha256": "b1558de1ff2d9012286e47c071b1dd555aec51e6dd9827995fe659110cc3b55a"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/tcl.cscheme": {
+        "sizeBytes": 3862,
+        "sha256": "fd1f832a68be69a9eef65a518b15271d26a34059cd71ff8a6736b8005ca5d4c4"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/lisp.cscheme": {
+        "sizeBytes": 1888,
+        "sha256": "3481c62309ccba324cd5ac0959292b0351f96344438330771f4bc49d398c8c96"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/vbscript.cscheme": {
+        "sizeBytes": 1341,
+        "sha256": "6cf22b0e373986fd7c6618aa977cf48d68d473ea9a25ad02eb3d11a0ae6ea93f"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/octave.cscheme": {
+        "sizeBytes": 809,
+        "sha256": "7fd72f688a25e3df26d9d86f18d6ae573286b09e55a6152d8566496d738be469"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/FindToolbar.acd": {
+        "sizeBytes": 2,
+        "sha256": "b3d510ef04275ca8e698e5b3cbb0ece3949ef9252f0cdc839e9ee347409a2209"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/php.cscheme": {
+        "sizeBytes": 4852,
+        "sha256": "87cc629bfd341c49897f53d833e655df6fc4fdbb58bebabb8248a6c83d9f7e2a"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/docbook.cscheme": {
+        "sizeBytes": 5501,
+        "sha256": "f23ca1a1fef1686d10c6bdb38886e9167cc212fb9d33e7d8d026dc6643ab6420"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/vb.cscheme": {
+        "sizeBytes": 1704,
+        "sha256": "8587558371285f7e9bf1c9126c6a8e5ad91e80fc91b0f32114949f721ba09372"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/java.cscheme": {
+        "sizeBytes": 1436,
+        "sha256": "f1bee56c97c74aec97734317f120da80144a2aad492b6d5a5f2eb229e31c481d"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/bash.cscheme": {
+        "sizeBytes": 1721,
+        "sha256": "72a2fb5562dd0c7dad2afab40e501dd40182c44a114f6c6a69d09d11b5a493e8"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/pascal.cscheme": {
+        "sizeBytes": 1779,
+        "sha256": "ff9f42de8cc500a9c7acd139f1757550a27e455330f0061630d5b227318f3af9"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/makefile.cscheme": {
+        "sizeBytes": 554,
+        "sha256": "b42efaea054d61dcbde125528d5b3a9643a5e855463ae63014294f3c856d10a1"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/asm.cscheme": {
+        "sizeBytes": 8039,
+        "sha256": "4709ed2e0d1dab76566f61652dc3802231cf6d4c2bbfd1bddc7459c84eb111f8"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/matlab.cscheme": {
+        "sizeBytes": 708,
+        "sha256": "6dd207c9d56af976627b5a185df892b1a273d972c465fd70b828624ea850fffb"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/powershell.cscheme": {
+        "sizeBytes": 3216,
+        "sha256": "67b30dec16da15564786be297b7e81067eca7f73d3428c622d20d81910c59b9b"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/lua.cscheme": {
+        "sizeBytes": 1020,
+        "sha256": "06c72d877889da519595d6ffff808f14045bb29b6c77b51946b148ef16118a9c"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/fortran.cscheme": {
+        "sizeBytes": 4831,
+        "sha256": "b9fb62cedbb46c0a10fcfe858270c06c6f568b9e27427cec8bb007376cda17d6"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/latex.cscheme": {
+        "sizeBytes": 753,
+        "sha256": "1a47afa29ad5b73357b94c93ad1c8cc0f40e0102e5b7a6304f50169a9757854c"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/specman.cscheme": {
+        "sizeBytes": 2822,
+        "sha256": "c705f7fe325e450ac5b4fafdbda736a1a06c09de8a66de312858a37af4d69765"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/modula2.cscheme": {
+        "sizeBytes": 1294,
+        "sha256": "8d0530fd0443f7e95a6cf5c0fa52dec538b9551cbbe2fdd954ea77d7f14b87af"
+      },
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/batch.cscheme": {
+        "sizeBytes": 1054,
+        "sha256": "488591e9d207c9e3711cf1ad44456859574c41009fe220aa31f53581825599c0"
+      }
+    },
+    "selectedNamedConfigurationPaths": [
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/idl.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/phpscript.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/d.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/ada.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/perl.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/diff.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/properties.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/python.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/sql.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/vhdl.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/javascript.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/fortran77.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/xml.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/plsql.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/cpp.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/NSIS.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/css.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/default.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/verilog.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/scheme.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/ruby.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/output.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/config.xml",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/csharp.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/web.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/tcl.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/lisp.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/vbscript.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/octave.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/FindToolbar.acd",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/php.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/docbook.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/vb.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/java.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/bash.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/pascal.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/makefile.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/asm.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/matlab.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/powershell.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/lua.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/fortran.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/latex.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/specman.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/modula2.cscheme",
+      "drive_c/users/forge/AppData/Roaming/Echo Software/PN2/batch.cscheme"
+    ],
+    "save": {
+      "passed": true,
+      "jobId": "job-1791847558480-5",
+      "generationId": "gen-job-1791847474891-4",
+      "inputPin": {
+        "sizeBytes": 38,
+        "sha256": "99a489adab0dd8cfc1a33b307eabebe13403f154000877022a0e5aa255e7e73d"
+      },
+      "outputPin": {
+        "sizeBytes": 47,
+        "sha256": "76a26efeeb47dc6cc0396ae519f8eabbb2a6b382f91d3bb7a2b223fdfdcb8d2e"
+      },
+      "outputRawBase64": "77u/5biC5Zy65Lit5paH5paH5pysDQpTVEFUVVMgQUZURVINCk1BUktFVDQyDQo=",
+      "completeOutputBytesReconstructedFromActualImmutableInput": true,
+      "programFilesExactlyMatchInstalled": true,
+      "programFileCount": 94,
+      "guiAccepted": false,
+      "published": false
+    },
+    "guiAccepted": true,
+    "published": false,
+    "guiVersionMeasured": null,
+    "aboutGuiAccepted": false,
+    "scope": "Chinese-name 38-byte UTF-8 BOM CRLF small text native directory-tree Open, one STATUS BEFORE to AFTER edit, ASCII MARKET42 append, native File SaveAs market.txt, new empty formal process explicit Open market.txt, normal File Exit twice. The complete 47-byte output passed independent reconstruction; the two appended digits were entered separately.",
+    "newFontPackageOrRuntimeChange": false,
+    "fullBundleLicenseClosureVerified": false,
+    "afterExplicitReopenActualByteDifferences": {
+      "system.reg": {
+        "old": {
+          "sizeBytes": 3424294,
+          "sha256": "c693943b680f91c90d662d296022d12eb54e5655315fca86c67c3dc6aa3b1d61"
+        },
+        "new": {
+          "sizeBytes": 3424294,
+          "sha256": "78c68969b94563a77ef48e77ad415d32d4f27142ee3e7a54b6c249a05b042389"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 16051,
+          "sha256": "88cc7242f555db8391432463200ad372ff1fe6384029eec1ae8ca298b1c3ab8e"
+        },
+        "privateDiffLines": 287
+      },
+      "user.reg": {
+        "old": {
+          "sizeBytes": 106003,
+          "sha256": "3a5c32e6749737917a55b090dac4da1737d745a73a9a86848fe644e24d6a844b"
+        },
+        "new": {
+          "sizeBytes": 106003,
+          "sha256": "e1fd93bc43545842ec8639d67a76cbda7f9afa093f9772de60671c8a1053016c"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 756,
+          "sha256": "a897b8b5bed460196dacf647db6456c4fb6092453934b454ccd04a1f75d0da37"
+        },
+        "privateDiffLines": 20
+      }
+    },
+    "allAppFilesystemFilesTraversed": false,
+    "checkpoint": {
+      "file": "before-rollback.json",
+      "sha256": "f3e5cf4a2c3607156f4b6159eeb3286b7204dcaf82f82041c4c03a9aa54cbed2",
+      "coreJobs": 498,
+      "fullStoreRows": 145
+    }
+  },
+  "screenshots": {
+    "05-market-input.jpg": {
+      "sizeBytes": 27246,
+      "sha256": "c30235aa494359b3b415ab8c9462c764f32533811bc4696428b1399cd6d1ba94",
+      "actualEncoding": "JPEG"
+    },
+    "06-market-saved.jpg": {
+      "sizeBytes": 27492,
+      "sha256": "bc8785cc4c0070247d6abdd29f798d51db2b2295e95c3a5b0e7f83f11217c0c8",
+      "actualEncoding": "JPEG"
+    },
+    "07-market-explicit-reopen.jpg": {
+      "sizeBytes": 27216,
+      "sha256": "2a16ed33d72781aca7bcd8623e8f2f62dc224a31352502f012662a1fbf228d49",
+      "actualEncoding": "JPEG"
+    },
+    "08-rollback-original-explicit-open.jpg": {
+      "sizeBytes": 27409,
+      "sha256": "70983633e95c3bbd4ca1b251ce77ddcf28f8d0d2b77876d6fe97ff857c1b820b",
+      "actualEncoding": "JPEG"
+    }
+  },
+  "fixturePins": {
+    "市场文本.txt": {
+      "sizeBytes": 38,
+      "sha256": "99a489adab0dd8cfc1a33b307eabebe13403f154000877022a0e5aa255e7e73d"
+    },
+    "market.txt": {
+      "sizeBytes": 47,
+      "sha256": "76a26efeeb47dc6cc0396ae519f8eabbb2a6b382f91d3bb7a2b223fdfdcb8d2e"
+    }
+  },
+  "limitedOriginalAndMarketGuiAccepted": true,
+  "defaultFontChineseNameAndTextReadableBothGenerations": true,
+  "marketAboutNotMeasured": true,
+  "realFileSaveAsNotCtrlShiftS": true,
+  "independentCompleteOutputReconstructionFromActualImmutableInputPassed": true,
+  "appProgramOrRuntimeRepairApplied": false
+}

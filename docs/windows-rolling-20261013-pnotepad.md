@@ -1,0 +1,27 @@
+# Programmer's Notepad 2.4.2 Windows 有限文本编辑验收（2026-10-13）
+
+新增1款，Windows63/1000，17个未解决候选全部旧字段保持。旧62款所有字段保持；Aegisub/Zim/Greenfish/CopyQ/BowPad仍未验收。合成文本不是另一个应用。Ubuntu KateAPT与Snap计算器两款独立计账，Flatpak两次runtime超时未安装、缓存保持；本轮没有运行UbuntuVM，两4GiB VM没有同时运行。
+
+正式原安装gen-job-1791846321153-1和唯一独立市场安装gen-job-1791847474891-4，两代次定义摘要sha256:1dc00aa27f97dd7386f5aabf165442fd946d9834c947128fe534f8ebc2222f38、launcher与runtime全字段相同。原生File/Open实际MyComputer/C盘/PNotepadTests树打开两个中文名38B UTF8 BOM、两CRLF小输入，默认字体中文文件名、标题与正文可读。仅单处STATUS BEFORE→AFTER，另追加ASCII ORIGINAL42或MARKET42，真实File/SaveAs到original.txt49B或market.txt47B，各三CRLF、UTF8 BOM。两个新正式进程先实际为空再显式CtrlO/目录树打开保存输出；Store IPC精确回滚后第五个原正式进程同样显式Open original.txt。五个正常File/Exit退出0且wineserver停止，退出0不是单独验收依据。
+
+原输入SHAe3a1ba0d25f65570d787590f20b0b8a38be7da76705ef14b2e628f027f680a11，市场输入SHA99a489adab0dd8cfc1a33b307eabebe13403f154000877022a0e5aa255e7e73d，输入保持。原输出SHAd6d9ef7043260060dcffc55d0209bf0a0addcc75dc12534fda9fca93504f0664，市场输出SHA76a26efeeb47dc6cc0396ae519f8eabbb2a6b382f91d3bb7a2b223fdfdcb8d2e；从实际不可变输入独立重构单处替换、追加和全部输出字节通过。最早原bulk typeText42只写入4，真实48B ORIGINAL4输出和02a诊断截图保留，完整输出门槛失败立即停Quit/重开。仅原生GUI追加一个2并保存后，新V2实际49B全字节通过，未由宿主编辑输出，不称通用键盘修复。市场数字逐字符输入。CtrlShiftS菜单是SaveAll，实际使用File/SaveAs；旧窗口caption不作保存证据。
+
+原Help/About实测v2.4.2.1440-duke，市场About未单测。未验收直接中文键盘、广泛Unicode/编码/格式、大坏输入、完整编辑器/多文档/工程/高级搜索替换/ctags/tools/plugins/Python脚本、打印、联网下载、新机注册、迁移跨版本、无人值守或GUI市场按钮，不称后台联网不存在。没有Core、程序、globalcontext、定义、launcher参数/environment/workingDirectory、新字体包、全局DLL/runtime修复。原包捆绑msvcp120/msvcr120仅静态上下文，不当全局修复。
+
+官方固定pn2421440_multilang.exe2492493B SHA f71deb2c89c6aa622c8e47c024dd0d3805c677d4b98dc270eb5085fae5925f06，完整HTTPS200/ContentLength与官网显示SHA256匹配；显示观察为web工具文本，不是原HTML。固定tag v2.4.2/commit9a4139576b25b11e95c2e5fa7b291187a0d7aaeb source6511612B SHA49385631a26eed5c42ff616a2926249ef6a7dacff81214861fd444f35c4057f0，完整HTTPS200但ContentLength缺失，只本地源摘要。两条GET全终态后才一次原安装；缓存保持，不重复GET。1406唯一归档成员实1292常规文件，不称其余均目录；11实际选定源码成员原字节保留。上游API资产digest/PGP/Authenticode/源码二进制对应/可复现/最新未核，signedredirectquery和完整HTTP响应仅私有，不公开。
+
+主固定源与安装主许可BSD-3-Clause，不是GPL；ctags/Scintilla/PCRE等有独立许可。源主license1511B、10LF，实际安装license1521B、10CRLF，两个原字节不同；完整原文仅十处行分隔LF→CRLF重构全部安装字节，许可原始raw不转码。最早raw等同断言失败后停止GUI，V2独立比较通过才启动。完整Scintilla/WTL/GenX/Expat/ctags/Boost/PCRE/CRT/Python/icons/translations闭包未核。
+
+实际两处Inno Setup Setup Data5.5.0标识，bootstrap与installed pn.exe Machine0x14c。原生/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:后一个反斜杠PNotepad /NOICONS /TASKS=，DIR16UTF8B hex2f4449523d433a5c504e6f7465706164。源静态安装helper/可选Python条件/关联/shortcut不当完整真实WindowsUAC安装行为。每代次94程序，93跨代次全部原字节同，唯一unins000.dat各6384B不同，原SHA310009857bc4c299f851d964cb14535022a8d05979600024b32c2fd8504d770e、市场SHAb4f6514637d9e3c7266cff4d161bd1767bd63b5f93e0142de9c0597a16701b11，两真实raw私有保持，原因/卸载未验收。pn.exe3101696B SHA b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7，不当整个应用大小；各代次程序跨GUI/回滚/重启保持。
+
+candidate-v71/root1/role80，65条=63应用+2内部夹具，138实际签名targets、76公共JSON；旧136中135非catalogue目标精确保留，仅catalogue新增PN，再加其binary与receipt。公共库没有安装包二进制。原root和role79及更早失败/signature/trust历史保持，Aegisub/Zim/Greenfish/CopyQ不在活动目录。原25个source/gui/acceptance及marketPending签名阶段标签冻结保持，完成另记。packV1一次签名、显式原root核三个目标之后误期望77publicfiles断言失败，任何客体传入前停止。实际71JSONtargets+5metadata/root=76publicfiles、tar77成员含manifest。新只读V2核既存签名/所有目标/archive，不再签名或下载包，才一次严格SSH传入/stage/预览激活。
+
+市场GUI后498Core/145完整StoreSQLite全部字段CP保存读回，才IPC精确原代次回滚；498/146旧字段/两代次保持，第三原之后499/146。先只读观察实际新registry和选定PN2配置，不CP/restart；system.reg3424294B与user.reg106005B同大小字节变，真实前后private raw及287/20行diff保留，原因/键值等价未定。固定实际新pins后保存读回完整CP并正常Core/Store各重启一次；七类全字段、失败和正常jobs全部历史、所有代次、配置/信任/保护、两代次94程序/输入输出/市场全pins/旧62+17固定数据保持。
+
+当前完整私有CP pnotepad-20261013/after-final-restart.json SHA9c8ac3489c5c420437528ae51a94350f367c27086cc93bd812a578f34c47e6e4，不入库。只读rolling-current-state-pnotepad-20261013.py须通过rolling-guest-20261010.py严格SSH发送stdin客体执行，不要求hosthelper客体落盘。旧DevCpp492/144及所有更早数量/helper/CP只历史，不强求旧数或覆盖旧CP。核对只固定数据、两个94程序、三registry、选定PN2命名Roaming/Local配置，非全部应用FS；46命名配置首次发现不是创建时间证明，最近64IPC不替代完整SQLite，Core可写已有scratch。
+
+sourceV1猜pnwtl/main.cpp KeyError在6成员已复制后停，V2核既存六个raw后用实际pnwtl/pn.cpp补五个。hostPython3.9 write_text(newline=) TypeError和hostmarket-final映射期待不存在子串assert均在文件写前停止；工具历史原trace保持，未另存exactraw不伪造。缺猜路径、literalrg glob失败、巨型截断输出均不当已完成检查。旧Scribus一份私有canonicalV1失败raw丢失限制保持；旧Aegisubtool输出曾显示redirectquery范围不改、不重复query，不称所有工具历史query-free。自然锁屏后已有授权账户fresh字段逐字符一次提交正常登录，认证/锁屏/不自动息屏不改，密码登录画面凭据私钥不公开。9张JPEG中02a缺数字和03About仅诊断，01/02原输入/保存、04原新进程Open、05/06市场输入/保存、07市场新进程Open、08回滚原Open。
+
+独立FINAL审查和首次真实stage前raw/filter/relative-no-index预检、精确属性、index/commit原字节、普通推送收据另记。独立review不代替真实GUI或私有完整CP重演；旧4093immutable与25原PN保持，不称全部工作区字节相等。下一轮选其他官方固定来源/许可/包可核候选或受控定位未解决问题；每步actualassert，false/缺assert/非终态/CP失败停依赖操作，不重复旧安装/提交/计数，不以窗口/exit0/夹具加完成。Greenfish4.5自定义EULA禁止程序修改、不删shader缓存掩盖MDB；CopyQ不禁通知/改全局DLL，Zim字体未修。Texmaker5.1.4架构guard仅source研究，无安装或pending，不改声明放松guard、不重复GET。
+
+报告助手V1执行时Non-UTF8 encoding SyntaxError在报告写前停止；实际原raw UTF8读回和编译独立通过，唯一原因未确定。原V1原字节保持，新V2仅明确UTF8 header与相同正文实际执行成功，完整限制见2026-10-13-pnotepad-report-encoding-failure-correction.json；不重构原精确trace。

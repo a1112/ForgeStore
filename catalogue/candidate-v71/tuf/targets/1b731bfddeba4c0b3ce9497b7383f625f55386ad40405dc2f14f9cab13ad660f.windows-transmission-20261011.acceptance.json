@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS KVM; Wine11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "transmission",
+      "version": "4.0.6",
+      "variant": "Qt5 Windows x64",
+      "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d",
+      "size": 18149376,
+      "generationId": "gen-job-1791731934014-4",
+      "definitionDigest": "sha256:18f592b3bd360e69bc36e271f51f7e251bce624550cc8eb4ea22f12dfc404087",
+      "launcherSha256": "sha256:f674da676b678b7a743626093559f72929293d0837c6099d6fdf3cbf8da62259",
+      "guiFileOperation": "passed-limited-trackerless-torrent-create-verify-fresh-reopen-local-data",
+      "save": {
+        "payloadBytes": 4096,
+        "pieceLength": 32768,
+        "pieceCount": 1,
+        "allPieceHashesMatchIndependentPayloadSha1": true,
+        "infoHashSha1": "859625458c0b7f287a661e69c988274227de4a4a",
+        "comment": "ORIGINAL42",
+        "infoNameUtf8": "原始数据.bin",
+        "createdBy": "Transmission/4.0.6 (38c164933e)",
+        "trackerless": true,
+        "bencodeCanonicalAndFullyParsed": true,
+        "generationId": "gen-job-1791731934014-4",
+        "inputPin": {
+          "sizeBytes": 4096,
+          "sha256": "60cc4e643d1a6b7ccfc5acdc5075725f9d2eb5fa3c81af4bec48b0df63de6f65"
+        },
+        "inputRelativePath": "TransmissionTests/原始数据.bin",
+        "inputUnchanged": true,
+        "outputPin": {
+          "sizeBytes": 216,
+          "sha256": "0f96dede8c779feeece7f699dc9feedc9bd171fdbff7c2aaa74bbbfd6de8b8e0"
+        },
+        "outputRelativePath": "TransmissionTests/原始数据.torrent"
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "01-initial-notice.jpg": {
+          "sizeBytes": 30768,
+          "sha256": "491d6a52b9235ff3680b09d0927a13e1c7770a5bad5bf2334674275085a4bea2"
+        },
+        "02-original-create-settings.jpg": {
+          "sizeBytes": 21402,
+          "sha256": "fbd47326c345d09e24253acd4d8334553234e5bc88b640948e930318e6f1f19b"
+        },
+        "03-original-created.jpg": {
+          "sizeBytes": 22518,
+          "sha256": "56193b5e73cae123ffbea038ce4f60ba9f4dd0b88a5325b8a71d6d278d967ffb"
+        },
+        "04-original-explicit-reopen.jpg": {
+          "sizeBytes": 19022,
+          "sha256": "d5be8530ad35b9d0162fda34878e27134cc33165859ad4b271e3d0e66fa2b73c"
+        },
+        "05-original-reopened-verified.jpg": {
+          "sizeBytes": 25407,
+          "sha256": "798946655211f406fb3fc68b8d058580ca6396140c634fcea799cc86cf3f5213"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-transmission-source.json",
+    "sha256": "a01e594d23ea054e9379d14fc33e4fd0b2a27db7f52e53179c726b4bcb326861"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-transmission-gui.json",
+    "sha256": "ff1f479dd16f92f53111ed60d6cffab4de80bda2f800aea494fe86288a9e6fea"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-11-transmission-failures.json",
+    "sha256": "27b34f768be778f1a7b8060f16d0fc74f13b8b178a993f8b1a707d00ee743fe1"
+  },
+  "limits": [
+    "Only one small4096-byte Chinese-name single-file trackerless torrent: GUI creation with ASCII comment, independent bencode/length/name/piece-SHA1 validation, explicit fresh-process reopen, paused add with original data folder, GUI Verify Local Data and properties Have100%, availability100%, statePaused. Synthetic file/torrent is not another application.",
+    "No peer connectivity, tracker/DHT/PEX, download/upload/seeding, magnet URI, private/multi-file/large torrents, damaged data, remote daemon/RPC, direct Chinese keyboard input, advanced features, fresh-machine registration, migration or cross-version upgrade accepted. Initial file-sharing notice and local-session chooser manually handled; unattended startup unverified. GUI Store update/rollback buttons unverified.",
+    "Fixed source COPYING and Qt source state GPL-2.0-only OR GPL-3.0-only, future license conditional on Mnemosyne endorsement, with OpenSSL linking permission. Installer/source local fixed HTTPS SHA only; API403 prevented upstream size/digest check. Complete Qt/OpenSSL/curl/DBus/translations license closure, installed-license comparison, binary-source correspondence, Authenticode/OpenPGP and reproducible build unverified.",
+    "Default MSI install selected Qt client/common libraries; actual113 files pinned and daemon/command-line tools absent. First ADDLOCAL definition rejected by closed Core property allowlist before application/job creation; corrected by omitting property and keeping native MSI defaults, without conditions bypass, Core/program/global context/launcher environment/working directory/font/DLL/runtime modification.",
+    "Independent market generation, cached same-version update, exact original rollback and normal two-service restart remain pending at this original freeze; later completion recorded separately without altering this receipt."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

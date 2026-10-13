@@ -1,0 +1,517 @@
+{
+  "applicationId": "pnotepad",
+  "version": "2.4.2",
+  "definition": {
+    "bottleId": "gui-pnotepad",
+    "category": "development",
+    "compatibilityRating": "unknown",
+    "id": "pnotepad",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\PNotepad",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "pn2421440_multilang.exe",
+      "sha256": "f71deb2c89c6aa622c8e47c024dd0d3805c677d4b98dc270eb5085fae5925f06"
+    },
+    "launchers": [
+      {
+        "executable": "PNotepad/pn.exe",
+        "id": "main",
+        "name": "Programmer's Notepad"
+      }
+    ],
+    "name": "Programmer's Notepad",
+    "publisher": "Simon Steele",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "2.4.2"
+  },
+  "generation": {
+    "bottleId": "gen-job-1791846321153-1",
+    "createdAtMilliseconds": 1791846321161,
+    "definition": {
+      "bottleId": "gui-pnotepad",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "pnotepad",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\PNotepad",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "pn2421440_multilang.exe",
+        "sha256": "f71deb2c89c6aa622c8e47c024dd0d3805c677d4b98dc270eb5085fae5925f06"
+      },
+      "launchers": [
+        {
+          "executable": "PNotepad/pn.exe",
+          "id": "main",
+          "name": "Programmer's Notepad"
+        }
+      ],
+      "name": "Programmer's Notepad",
+      "publisher": "Simon Steele",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "2.4.2"
+    },
+    "definitionDigest": "sha256:1dc00aa27f97dd7386f5aabf165442fd946d9834c947128fe534f8ebc2222f38",
+    "id": "gen-job-1791846321153-1",
+    "launcherDigests": {
+      "main": "sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791846335022
+  },
+  "installedFileCount": 94,
+  "installedFiles": {
+    "pnlang_1031_de-DE_2.4.2.1440.dll": {
+      "sizeBytes": 245248,
+      "sha256": "cbb725594e21c1dac5de0a3149c270ad571413dc8a98d86100b9b9904f61e0a4"
+    },
+    "credits.txt": {
+      "sizeBytes": 1211,
+      "sha256": "9038d3bae1143ff4870aa512d7eddc800f889a2f0525f34886383dc60fe010da"
+    },
+    "customscheme.dll": {
+      "sizeBytes": 45568,
+      "sha256": "1f8f75c72c0a654f3fd69aec62db821cb8368a7b112ececaac99ed0682d6ffe8"
+    },
+    "pnlang_3082_es-ES_2.4.2.1440.dll": {
+      "sizeBytes": 247296,
+      "sha256": "c15be42601f289022b1e400754adde522f8920142a6cad73e348ae6d5c61aeb6"
+    },
+    "pnlang_1038_hu-HU_2.4.2.1440.dll": {
+      "sizeBytes": 245248,
+      "sha256": "7797dcc11cd31d3afd33928760d64e735999538a1e820bdc685430540235edf2"
+    },
+    "libexpatw.dll": {
+      "sizeBytes": 140288,
+      "sha256": "69e3aa9908ea18b1d8adfcaa88924bced8fa5168ecbce0073884d022226aaa3a"
+    },
+    "ctags_README": {
+      "sizeBytes": 3044,
+      "sha256": "4295b4c69eb8a6e03adc105188dcf10f22d125404522ed1bdd8d220b6282292a"
+    },
+    "pnse.dll": {
+      "sizeBytes": 51200,
+      "sha256": "1b0a308673f9c7e5edd4a3a423d50bf643153170fb7ea2c9b2f7b31ae317306d"
+    },
+    "license.txt": {
+      "sizeBytes": 1521,
+      "sha256": "e247d7febb024cb365d40f8adfe700de9d58c852c843194dbbb43d3e1b1b44a0"
+    },
+    "pnlang_1049_ru-RU_2.4.2.1440.dll": {
+      "sizeBytes": 242176,
+      "sha256": "e5385e44a7e507da6924943b95baca3eb162513d415c016a00c3a4e445256b3e"
+    },
+    "pn2.chm": {
+      "sizeBytes": 32542,
+      "sha256": "66426c9f4234d7c1d1b07959ec88077eab4280b4d16853e5a69c00b946dab87e"
+    },
+    "pnlang_1041_ja-JP_2.4.2.1440.dll": {
+      "sizeBytes": 228352,
+      "sha256": "619cb7378092f2a3a46cceeda8229875479bc6e53a6d6c0180d065a73198f9c3"
+    },
+    "unins000.exe": {
+      "sizeBytes": 719521,
+      "sha256": "65ef1d221277bdbb23c1184aebffadaec69fdebc7e68752d184d3329dfd3cf5c"
+    },
+    "msvcr120.dll": {
+      "sizeBytes": 970912,
+      "sha256": "86e39b5995af0e042fcdaa85fe2aefd7c9ddc7ad65e6327bd5e7058bc3ab615f"
+    },
+    "pnlang_1048_ro-RO_2.4.2.1440.dll": {
+      "sizeBytes": 246272,
+      "sha256": "e4cfb994e7265ad021b57798c9c829e4865b9a56e5b91e06cd6b7238716d4bb0"
+    },
+    "pnlang_1281_qps-ploc_2.4.2.1440.dll": {
+      "sizeBytes": 240640,
+      "sha256": "565eb7f241cb3f2577ffb85b5b782e4a5a83ff46205c0c737e5a5efe6db93c18"
+    },
+    "ctags.exe": {
+      "sizeBytes": 283136,
+      "sha256": "b54d8d9ccf9434feb2aad55f3d391d4667ba518585c5867367d88eaa20516789"
+    },
+    "dbghelp.dll": {
+      "sizeBytes": 719360,
+      "sha256": "1c119507cf2d339bac03962cc14e0302d292fbb6b5f9266c48ccd6696dc85a73"
+    },
+    "ctagsnavigator.dll": {
+      "sizeBytes": 36864,
+      "sha256": "22089210a2d0bb30fd06f2f0a4b6040146efad5967b35f700d24162036256d73"
+    },
+    "config.xml": {
+      "sizeBytes": 126,
+      "sha256": "c812fe43fc658aacf2a04eca182567671143fd30d79ca2e5c99f9776e2e2230e"
+    },
+    "ctags_COPYING": {
+      "sizeBytes": 18347,
+      "sha256": "b15f41248f0957edfd2d91202ee810a6ef2d92c0256d330585d806677306a706"
+    },
+    "SciLexer.dll": {
+      "sizeBytes": 1119744,
+      "sha256": "292d1089d6e33cb9efa5d009376d1da1af4866966bbadcf2fab6cd565fdacc05"
+    },
+    "pn.exe": {
+      "sizeBytes": 3101696,
+      "sha256": "b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7"
+    },
+    "msvcp120.dll": {
+      "sizeBytes": 455328,
+      "sha256": "87c42ca155473e4e71857d03497c8cbc28fa8ff7f2c8d72e8a1f39b71078f608"
+    },
+    "pnlang_1040_it-IT_2.4.2.1440.dll": {
+      "sizeBytes": 247296,
+      "sha256": "8028547a994fa857725e2123a4984b393773a11bbe4621c7d74ddd3504fb749c"
+    },
+    "pnlang_1045_pl-PL_2.4.2.1440.dll": {
+      "sizeBytes": 244736,
+      "sha256": "6305bd54bf95175906d3bd508ab4c9a79ab2d1327354d0e50fd941293acfbb7b"
+    },
+    "readme.txt": {
+      "sizeBytes": 1203,
+      "sha256": "788ec06fa1b187f4bdae8b5ef0bf80c686633bd4c4aa288b52dd5aae8123f3ad"
+    },
+    "pnlang_2052_zh-CN_2.4.2.1440.dll": {
+      "sizeBytes": 223744,
+      "sha256": "7c18a6c2c25c41005643b20b7a573b74f086df8b0d66f0839a649a5ea5a77e09"
+    },
+    "roadmap.txt": {
+      "sizeBytes": 1039,
+      "sha256": "62375e027125ce94b55975cf21098c97914a3109fbbc554968525314dc54f5af"
+    },
+    "unins000.dat": {
+      "sizeBytes": 6384,
+      "sha256": "310009857bc4c299f851d964cb14535022a8d05979600024b32c2fd8504d770e"
+    },
+    "schemes/python.scheme": {
+      "sizeBytes": 1653,
+      "sha256": "77c68b9c30fe2d193fad410df30a7bfafd21046890d9e1b6360794c127c439c5"
+    },
+    "schemes/php.api": {
+      "sizeBytes": 522497,
+      "sha256": "7be6df6650e8d01bb9c68fcda4294f286705bf09d724093595be82fb0c4f83e8"
+    },
+    "schemes/cpp.scheme": {
+      "sizeBytes": 9333,
+      "sha256": "efe9d17ed954388bcaee61f7f5c820c0062aa517a5011660a7cefd787835f768"
+    },
+    "schemes/vb.scheme": {
+      "sizeBytes": 2952,
+      "sha256": "7a69c8bfe953551baa15a15c0ce266f588f4c7e467d4ec78979caef305e98ea5"
+    },
+    "schemes/tcl.scheme": {
+      "sizeBytes": 5117,
+      "sha256": "31466eab687b3e2608bee5976ed8dd6e8de72f4bb3aeee4f70334de8f4c35d22"
+    },
+    "schemes/sql.scheme": {
+      "sizeBytes": 4914,
+      "sha256": "34f006b3130f17d5bfc4150d5384432c031fb80fc337e68fba51575c9a5efefa"
+    },
+    "schemes/pascal.scheme": {
+      "sizeBytes": 2243,
+      "sha256": "32b233dedb4161200b5678a329e2f7efe7026f8f7139f04fd89bb4f87775d2c9"
+    },
+    "schemes/extmap.dat": {
+      "sizeBytes": 1133,
+      "sha256": "51293b0c8d285ffdc12d49ae319079405cdcea11bba0e385372037dccb27ab33"
+    },
+    "schemes/specman.scheme": {
+      "sizeBytes": 4301,
+      "sha256": "bb0406828c676ec4a32f95bf16a81454db9d269c0584c45b450e2b568878ed46"
+    },
+    "schemes/misc.scheme": {
+      "sizeBytes": 4173,
+      "sha256": "33608af0978e32380a39c591b84ed392405df58b506829cfbb2083da540b8071"
+    },
+    "schemes/ruby.api": {
+      "sizeBytes": 98680,
+      "sha256": "f8752b11d239f5c3954d893826dbe3a191bc4325a52a5ee53946cfd054f8907c"
+    },
+    "schemes/d.scheme": {
+      "sizeBytes": 3731,
+      "sha256": "0ec8baf178a837aa08dc49d7f53e55479c4537fd485000a4322d28468e9631d3"
+    },
+    "schemes/modula2.scheme": {
+      "sizeBytes": 2001,
+      "sha256": "fc33ade4da6032521869797c47ebd5180f5072804e0616527f1778860aca9eb5"
+    },
+    "schemes/xml.scheme": {
+      "sizeBytes": 2394,
+      "sha256": "4442055143fb30c117eff423d88e00ffdfcecc7e4398196fad325ff7773e876a"
+    },
+    "schemes/verilog.scheme": {
+      "sizeBytes": 2808,
+      "sha256": "43266466778496f8c55130da489740728752d9d8397ebfce7cee0443b2e5fb09"
+    },
+    "schemes/matlab.scheme": {
+      "sizeBytes": 1854,
+      "sha256": "fb55b71b26130f4f5ab220dec39790953857ffc759921cbaa414632bbab9f668"
+    },
+    "schemes/WebFiles.scheme": {
+      "sizeBytes": 20793,
+      "sha256": "e891e0e7a6d0c455ce4af7eadaac86a0eef9ab6e73ffc55ea6b71661f2b8db3b"
+    },
+    "schemes/lisp.scheme": {
+      "sizeBytes": 4648,
+      "sha256": "ca963d5122842387a808c2800f6208216ae81446b06c4e0aead3432a8ae7cb3a"
+    },
+    "schemes/latex.scheme": {
+      "sizeBytes": 700,
+      "sha256": "9f649bc703270f33463737fac88af9d52478a423d23cfd7b10b2c66713ce70f0"
+    },
+    "schemes/asm.scheme": {
+      "sizeBytes": 10306,
+      "sha256": "2fdce319858eac7e63ce3512b877268c5982bc61d00ae0319cbd1efeaafab8b8"
+    },
+    "schemes/bash.scheme": {
+      "sizeBytes": 2527,
+      "sha256": "e5a2c1bfc046ccaa9148ceb703897055fac592ce86c5bed636e316580ac4e7ed"
+    },
+    "schemes/phpscript.scheme": {
+      "sizeBytes": 1820,
+      "sha256": "0566e2d88005857ad2e09eca37fbfd8184c0f189c94d2786f743f8c7fe7d1865"
+    },
+    "schemes/lua.scheme": {
+      "sizeBytes": 1431,
+      "sha256": "2839f70302754eb594dae8de51fd54b5593b1b57693dc021bf218d4c138ecd4f"
+    },
+    "schemes/vhdl.scheme": {
+      "sizeBytes": 4351,
+      "sha256": "0a3aa41b99301692d7c64d74387f68c218efb4cf13699604765d87bfd877c494"
+    },
+    "schemes/ruby.scheme": {
+      "sizeBytes": 2823,
+      "sha256": "e205ccef1da15fa021c996be8cf3ea5fc0a145ca6bf31c30e5a6cc697a5fbaec"
+    },
+    "schemes/nsis2.scheme": {
+      "sizeBytes": 7457,
+      "sha256": "41bfd5ebc422b3ffbc7b0c58532f85d828cb33741e4fa48b45ee1d0c0628bd93"
+    },
+    "schemes/powershell.scheme": {
+      "sizeBytes": 3926,
+      "sha256": "ba13006bf6e8c57be88be03d290bccf74d6bdef3059a187029a812f0631d19bd"
+    },
+    "schemes/fortran.scheme": {
+      "sizeBytes": 6111,
+      "sha256": "0b1a7465f2fa502a1924ff8916d720ba77c59ccc9c329e5e325cd9cebed25ebb"
+    },
+    "schemes/ada.scheme": {
+      "sizeBytes": 1834,
+      "sha256": "15e3eb71fdf0e06ddb5384dd420b88ff0b7f1d043f574d95752af1c37ec504a5"
+    },
+    "schemes/perl.scheme": {
+      "sizeBytes": 4363,
+      "sha256": "db338b3e5746578fc33245be2b45227701761034c76fd16a8e3bcac9a00c9601"
+    },
+    "schemes/docbook.scheme": {
+      "sizeBytes": 6775,
+      "sha256": "094c71cf0fb2cf7bd95788cfb1ef89936332a054fe04aa04ddedb06a1c8548f9"
+    },
+    "schemes/master.scheme": {
+      "sizeBytes": 3225,
+      "sha256": "161a4a3864270000bb5ac7c620cbed0b31d26f5a4cb762cb6bce339586f15361"
+    },
+    "ctags/additionalSupportedSchemes.ini": {
+      "sizeBytes": 728,
+      "sha256": "5024d381537be91e37bf6d7c1fe3a1e6f56553a134f087c7d77004c85f5a0fe8"
+    },
+    "ctags/additionalLanguages.conf": {
+      "sizeBytes": 107,
+      "sha256": "8afdd500f8380b70a1547ceb8ef5481f22aa30004f4371dd85586f1142e35d9e"
+    },
+    "samples/sass.schemedef": {
+      "sizeBytes": 3363,
+      "sha256": "2780b56e08de2d3143d8ed44b56b7136da5be232ac442c695470ccb29e20b8f9"
+    },
+    "samples/powershell.schemedef": {
+      "sizeBytes": 2142,
+      "sha256": "89a018cb70938aeec72ff4af582e4630138b34fb3b75ccdfd0b9ceec58b48961"
+    },
+    "presets/Murky.xml": {
+      "sizeBytes": 1221,
+      "sha256": "c6400338c9d7df59de471bf8071d997e21e32b730f9fd5e8585ee94458efc14c"
+    },
+    "presets/Wombat.xml": {
+      "sizeBytes": 1392,
+      "sha256": "583f6a18098547029531766ff4b23f8fbcc3db9b0215afc7a012337cc2e0d668"
+    },
+    "presets/CalmSea.xml": {
+      "sizeBytes": 2897,
+      "sha256": "cfc1f6842a269624bf859ffe43bc8a35b73e0721f95d8922c0ed862929676ad9"
+    },
+    "presets/Default.xml": {
+      "sizeBytes": 31,
+      "sha256": "35c4ac34e5067d0ce49091d420c7a80819a94976c26cf5419a141f688bf7d919"
+    },
+    "presets/Solarized (Light).xml": {
+      "sizeBytes": 4452,
+      "sha256": "d9b86fa86861377dc2c00afdc5083c7dd685d4ea0ed2cbe304d2878c84b5ccd1"
+    },
+    "presets/ZenBurn.xml": {
+      "sizeBytes": 1590,
+      "sha256": "a54398a5ce244b29ac271fbb7b62990d9a26063ea4ce0828792f01c7381a9721"
+    },
+    "presets/Dark.xml": {
+      "sizeBytes": 673,
+      "sha256": "de7f015b0a0b4fe7ccf6828a61dbac0b148377f41d850fd8ade0ea8af1579f4b"
+    },
+    "presets/Obsidian.xml": {
+      "sizeBytes": 3517,
+      "sha256": "eb295370be82aa9e181efd38f45def581307d2a8e8ba5ed31cc6616ec629a38f"
+    },
+    "presets/Turbo.xml": {
+      "sizeBytes": 1339,
+      "sha256": "4c6158baf095b628e33ebd3709a7a6dd38194c318b00caf3592ba37d08d72aeb"
+    },
+    "clips/pascal/pascal.clips": {
+      "sizeBytes": 1675,
+      "sha256": "508e88cf846b62bc53aa4b72af323e1b1ff8b8b1785bc66d015ee5db6419a16b"
+    },
+    "clips/vb/vb.clips": {
+      "sizeBytes": 1254,
+      "sha256": "6b898cea7429068f240e39390f4c363f9a942e10e0050f4a204b14867f979ecc"
+    },
+    "clips/java/java.clips": {
+      "sizeBytes": 1823,
+      "sha256": "4fb4b2977ccee9b236e51fa34c8e0f1757a6fc2a3861b9f93ed05a930578c3d5"
+    },
+    "clips/perl/pl.clips": {
+      "sizeBytes": 2685,
+      "sha256": "cef55161b83bbbe0802b45e94c730207cfdc5e204b1b1d09952e8c4d3a4817b1"
+    },
+    "clips/web/htmlchars.clips": {
+      "sizeBytes": 3818,
+      "sha256": "6bab735d33deab421041ab867ab23535d5fa1c20adc864b2fcb7e93f494f19ad"
+    },
+    "clips/web/aspnet.clips": {
+      "sizeBytes": 6901,
+      "sha256": "4d40180167929ca58ea6c4c7720e644bfdd6c91573b50664a008344117ba355a"
+    },
+    "clips/web/xhtml.clips": {
+      "sizeBytes": 7547,
+      "sha256": "866a5a0507e631a029a4035afb26bb03c43f1d72b8d9d7c21ecd966986a04cf6"
+    },
+    "clips/web/doctypes.clips": {
+      "sizeBytes": 945,
+      "sha256": "70b70f875f4f032e930a26bb0a0104660f1930177d0875db9d08c05e72c0972c"
+    },
+    "clips/default/ascii.clips": {
+      "sizeBytes": 7205,
+      "sha256": "fa505206d7a2800c44089cb312fc15f1f665ba25f6cc1ae79a5d9dde82218ad5"
+    },
+    "clips/csharp/csharpscheme.clips": {
+      "sizeBytes": 667,
+      "sha256": "f47b6d6ae4bb44702cf5fe996df369df90ccf9fe04322576d7feb0cb0325d181"
+    },
+    "clips/php/phpcontrol.clips": {
+      "sizeBytes": 1010,
+      "sha256": "d602d002134b7560e19e23b21e33192f99675c0abed54e753066e15685bd5ec8"
+    },
+    "clips/php/phptemplates.clips": {
+      "sizeBytes": 1497,
+      "sha256": "1ee06ff19731fff520ddd13d759492beb3685b798c8db5b89b3cf9cd1820291f"
+    },
+    "clips/cpp/cstandard.clips": {
+      "sizeBytes": 1515,
+      "sha256": "1259ba068ba7da272f338f1336f228f9c1161823544317159d8a734c37e700eb"
+    },
+    "clips/cpp/cpp.clips": {
+      "sizeBytes": 505,
+      "sha256": "46446895a6748acb0423e0bc49ade9623748b6ee28e7ff7ca531c5c60845f37c"
+    },
+    "clips/xml/nant.clips": {
+      "sizeBytes": 1831,
+      "sha256": "54d5807cc7f1c95bb2de41fc695366e32d5e17f39d6c9a9ac1813e6bebb53eda"
+    },
+    "clips/xml/xmlscheme.clips": {
+      "sizeBytes": 188,
+      "sha256": "7d19379a9d16c7b8d02a3d4e95dd418ae0f877b64993b4b15d7d9ec16055ed59"
+    },
+    "clips/python/python.clips": {
+      "sizeBytes": 239,
+      "sha256": "3fca448fc9e98ffbd4ea466eb265aa05a5c52d8187f0314c2c53007f423528ea"
+    },
+    "clips/python/pypn.clips": {
+      "sizeBytes": 965,
+      "sha256": "aa6859a94adf212e3ea3d69ab792acd07d7eb94f18ece69bcf67438ea8c901be"
+    },
+    "clips/docbook/docbook.clips": {
+      "sizeBytes": 1972,
+      "sha256": "c865c941391011032618855e69bbbf4cf9c2e94d22f13007cc6a25d332b088fa"
+    }
+  },
+  "mainProgramPin": {
+    "sizeBytes": 3101696,
+    "sha256": "b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7"
+  },
+  "mainExecutableNotEntireApplicationSize": true,
+  "oneFormalOriginalInstallation": true,
+  "originalInstallJobId": "job-1791846321153-1",
+  "installedLicenseActualOriginalBytesRetained": true,
+  "selectedSourceLicenseNormalizationOnlyComparison": {
+    "passed": true,
+    "rawBytesEqual": false,
+    "comparison": "The complete selected source text has LF; the actual installed license has CRLF. Replacing only the ten source LF separators with CRLF reconstructs every installed byte. Originals are preserved.",
+    "sourceSizeBytes": 1511,
+    "installedSizeBytes": 1521,
+    "sourceSha256": "5a4e10f6335485584a421abcbe5c3518b4145f861d70721c204aa587cd6f9b73",
+    "installedSha256": "e247d7febb024cb365d40f8adfe700de9d58c852c843194dbbb43d3e1b1b44a0",
+    "sourceLfCount": 10,
+    "installedCrLfCount": 10,
+    "fullBundledLicenseClosureVerified": false,
+    "priorRawEqualityAssertionFailed": true,
+    "priorExactStderrIndependentlySaved": false,
+    "priorFailureOnlyInToolHistory": true
+  },
+  "marketInstallationPerformed": false,
+  "guiAcceptanceSeparate": true
+}

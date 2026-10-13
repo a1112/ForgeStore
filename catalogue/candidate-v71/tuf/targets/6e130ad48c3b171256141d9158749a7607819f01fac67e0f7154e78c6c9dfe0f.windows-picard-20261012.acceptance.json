@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "picard",
+      "version": "2.13.3",
+      "sha256": "cfe7fb0957f9bd561dfd97b4685cbd26adeb6d9485d25bbbdf39d86c552e1fec",
+      "size": 32331256,
+      "generationId": "gen-job-1791794047570-1",
+      "definitionDigest": "sha256:66cff6713fc3350bcea28a7b777afc59e8496b0e70e6be318ad06b0ed3956da9",
+      "launcherSha256": "sha256:9b28e22d1625949aba549b82464eaf261b75d828d9a94f432ab5bd1597159e5d",
+      "guiFileOperation": "passed-limited-wav-title-artist-working-copy-save-and-fresh-open",
+      "save": {
+        "format": "PCM WAVE",
+        "sampleRate": 8000,
+        "channels": 1,
+        "bitDepth": 16,
+        "frames": 8000,
+        "durationSeconds": 1.0,
+        "pcmPin": {
+          "sizeBytes": 16000,
+          "sha256": "eff34fc8dc34d236634be2a225cc5519fefb1c4877236959cee757c13762536c"
+        },
+        "pcmOriginalBytesPreserved": true,
+        "riffInfoTags": {
+          "INAM": "ORIGINAL AFTER",
+          "IART": "ORIGINAL42"
+        },
+        "id3Version": "2.4.0",
+        "id3TextFrames": {
+          "TIT2": "ORIGINAL AFTER",
+          "TPE1": "ORIGINAL42"
+        },
+        "id3PaddingBytes": 1024,
+        "wholeFileConsumed": true,
+        "fullRiffId3SpecificationAccepted": false,
+        "actualListeningOrAudioDeviceAccepted": false,
+        "fixedDataPins": {
+          "drive_c/PicardTests/原始音频.wav": {
+            "sizeBytes": 16102,
+            "sha256": "d3c8ecec97b362560a539ddf0e56f0c408b5628cc1c9d2e3dd6719564bb79f58"
+          },
+          "drive_c/PicardTests/original-work.wav": {
+            "sizeBytes": 17190,
+            "sha256": "a901eefadf71247b54f070cc05a0bfe054380e3ba05517fcf7f2f64f1f135851"
+          }
+        },
+        "inputBytesPreserved": true,
+        "all444InstalledProgramFilePinsPreserved": true,
+        "nativeSaveIsInPlaceOnIndependentWorkingCopy": true
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "picard-01-new-user-warning-20261012.jpg": {
+          "sizeBytes": 68433,
+          "sha256": "31828f05d928064222b02671493c9fa8284a7672eeacb6d9884ce722bfa58cd7",
+          "actualEncoding": "JPEG"
+        },
+        "picard-02-update-notice-20261012.jpg": {
+          "sizeBytes": 42968,
+          "sha256": "7c9ba72d210418a0220aa916e62fb2282e1637f344725910570513bce90a8880",
+          "actualEncoding": "JPEG"
+        },
+        "picard-03-about-20261012.jpg": {
+          "sizeBytes": 70989,
+          "sha256": "415ad0f3974b2f531da69d9d050fb95e3614419ceccaf451376a8de1066fc6cc",
+          "actualEncoding": "JPEG"
+        },
+        "picard-04-original-chinese-input-20261012.jpg": {
+          "sizeBytes": 50080,
+          "sha256": "ca46ad530c90a1920d34fa7a98a932ef312aeed55c6491f7ff0f978c56bc08db",
+          "actualEncoding": "JPEG"
+        },
+        "picard-05-original-save-warning-20261012.jpg": {
+          "sizeBytes": 57716,
+          "sha256": "c6ea61a8afff0c5124dd5a13291ed8374f7e19109c253ac598de25c5d16205af",
+          "actualEncoding": "JPEG"
+        },
+        "picard-06-original-saved-tags-20261012.jpg": {
+          "sizeBytes": 49841,
+          "sha256": "20f7a0bccceeb86a681417ec6c864335ca5a1d3878239aefb453160377dcf2f4",
+          "actualEncoding": "JPEG"
+        },
+        "picard-07-original-new-process-open-20261012.jpg": {
+          "sizeBytes": 50037,
+          "sha256": "096a0944ee603e7766352a8a11e8aba0ae7d64110542b5ff44f5ca51f6d314c0",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-picard-source.json",
+    "sha256": "b62057e4a1bd32474af4c4e8b92f5c42d998ffebe13c87ba457c999c0707f712"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-picard-gui.json",
+    "sha256": "7481d2ca685b55d1adca3a47db9924bf0e4ec904496b8e24c6317cb509b80ad4"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-picard-failures.json",
+    "sha256": "cd7e7d15f4d39a6b61bf8cf232e2cae74805fffa62b5e2da89b0906418240dd6"
+  },
+  "limits": [
+    "Only one small Chinese-name PCM WAV read then removed from GUI list only. Independent ASCII working copy Title/Artist edited and saved in place, INFO and ID3v2.4 two-text-frame tags plus PCM bytes checked; explicit new formal process Add Files/Open output. Synthetic fixtures not applications.",
+    "Original immutable input must stay unchanged; output is a separate GUI working copy. No Save As claim and no metadata editing of the immutable input.",
+    "About2.13.3 measured. New User warning left Show Again enabled; Save warning Dont Show Again unchecked; real3.0.2 update notice cancelled, not latest or unattended claim.",
+    "Only8kHz mono16bit one-second original WAVE. Other containers/codecs/tags/encodings/plural values, album matching/MusicBrainz/CD/AcoustID/fingerprinting/coverart/plugins/scripts/rename/move/batch, missing or large/bad files and full RIFF/ID3 or music tagging specification not accepted.",
+    "No actual listening, playback or audio device acceptance; Chinese keyboard tag text entry, guest network downloads/new-machine registration/migration/cross-version/unattended and GUI Store update/rollback buttons unverified.",
+    "Loopback port8000 listener observed; update prompt visible. No background networking absence or complete network/RPC/browser integration acceptance.",
+    "Fixed source GPL2-or-later only. Main installed COPYING named file absent; component licence notifications present but main licence comparison/full Qt/Python/Mutagen/chromaprint/discid/OpenSSL/icons/translations closure, Authenticode/GPG/source-binary correspondence/reproducible build/latest unverified.",
+    "No Core/program/global context/definition/launcher/environment/workingDirectory/font package/DLL/runtime fix. NSIS default sections and admin template do not prove full dynamic installation behaviour or real Windows UAC/admin.",
+    "Independent market/cached same-version update/exact original rollback/normal service restart pending at original freeze; completed later evidence recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}
