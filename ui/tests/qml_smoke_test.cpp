@@ -34,6 +34,7 @@ void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
     QVERIFY2(component.isReady(), qPrintable(component.errorString()));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVERIFY(window->setProperty("visible", true));
     QCOMPARE(window->objectName(), QStringLiteral("forgeStoreWindow"));
     QCOMPARE(window->property("language").toString(), QStringLiteral("zh_CN"));
     QCOMPARE(window->property("title").toString(), QStringLiteral("Forge 应用市场"));
@@ -50,6 +51,7 @@ void StoreWindowTest::loadsBundledQmlResources() {
     QVERIFY2(component.isReady(), qPrintable(component.errorString()));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVERIFY(window->setProperty("visible", true));
     QCOMPARE(window->property("title").toString(), QStringLiteral("Forge 应用市场"));
 }
 
@@ -76,6 +78,7 @@ void StoreWindowTest::treatsCatalogueNamesAsPlainText() {
     QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVERIFY(window->setProperty("visible", true));
     const QVariantMap entry{{"id", "probe"}, {"name", QVariantMap{{"zhCN", "<b>测试</b>"}, {"en", "Probe"}}},
                             {"summary", QVariantMap{{"zhCN", "摘要"}, {"en", "Summary"}}},
                             {"version", "1"}, {"license", "MIT"},
@@ -105,6 +108,7 @@ void StoreWindowTest::searchesCatalogueIds() {
     QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVERIFY(window->setProperty("visible", true));
     const QVariantMap entry{{"id", "7zip"}, {"name", QVariantMap{{"zhCN", "压缩工具"}, {"en", "Archive tool"}}},
                             {"summary", QVariantMap{{"zhCN", "文件管理"}, {"en", "File manager"}}}};
     QVERIFY(window->setProperty("state", QVariantMap{{"catalogue", QVariantMap{{"entries", QVariantList{entry}}}}}));
@@ -119,8 +123,9 @@ void StoreWindowTest::cardsFillTheirPagesAtReferenceSize() {
     QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
-    QCOMPARE(window->property("width").toInt(), 1160);
-    QCOMPARE(window->property("height").toInt(), 760);
+    QVERIFY(window->setProperty("visible", true));
+    QCOMPARE(window->property("width").toInt(), 1040);
+    QCOMPARE(window->property("height").toInt(), 700);
     const QVariantMap entry{{"id", "7zip"}, {"name", QVariantMap{{"zhCN", "压缩工具"}}},
                             {"delivery", QVariantMap{{"backend", "compatforge"}}}};
     const QVariantMap job{{"id", "job-1"}, {"appId", "7zip"}, {"backend", "compatforge"},
@@ -152,6 +157,7 @@ void StoreWindowTest::actionsRespectBackendAndJobState() {
     QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVERIFY(window->setProperty("visible", true));
 
     const QVariantMap packageEntry{{"id", "forge-app"}, {"name", QVariantMap{{"zhCN", "Forge 应用"}}},
                                    {"delivery", QVariantMap{{"backend", "forge-package"}}}};
@@ -228,6 +234,7 @@ void StoreWindowTest::unavailableBackendsDisableMutationsAndShowReasons() {
     QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVERIFY(window->setProperty("visible", true));
 
     const QVariantMap compatEntry{{"id", "compat-app"}, {"name", QVariantMap{{"zhCN", "兼容应用"}}},
                                   {"delivery", QVariantMap{{"backend", "compatforge"}}}};
@@ -305,6 +312,7 @@ void StoreWindowTest::longMetadataKeepsActionsInsideCard() {
     QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
     std::unique_ptr<QObject> window(component.create());
     QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    QVERIFY(window->setProperty("visible", true));
     const QVariantMap entry{{"id", "7zip"}, {"name", QVariantMap{{"zhCN", "7-Zip"}}},
                             {"summary", QVariantMap{{"zhCN", "压缩与解压文件"}}},
                             {"version", "26.01"},
