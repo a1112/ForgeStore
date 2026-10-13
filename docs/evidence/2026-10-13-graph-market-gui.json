@@ -1,0 +1,1109 @@
+{
+  "market": {
+    "passed": true,
+    "generation": {
+      "bottleId": "gen-job-1791901412164-4",
+      "createdAtMilliseconds": 1791901412170,
+      "definition": {
+        "bottleId": "gui-graph",
+        "category": "education",
+        "compatibilityRating": "unknown",
+        "id": "graph",
+        "installer": {
+          "arguments": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/DIR=C:\\Graph",
+            "/NOICONS",
+            "/LANG=English",
+            "/TASKS="
+          ],
+          "fileName": "SetupGraph-4.4.2.exe",
+          "sha256": "1967affa93df9bc9103d47f35f51ecd4422483154f07ffbdf813a66eb35d66a5"
+        },
+        "launchers": [
+          {
+            "executable": "Graph/Graph.exe",
+            "id": "main",
+            "name": "Graph"
+          }
+        ],
+        "name": "Graph",
+        "publisher": "Ivan Johansen",
+        "schemaVersion": "1",
+        "tags": [
+          "rolling-1000",
+          "managed-inno"
+        ],
+        "version": "4.4.2"
+      },
+      "definitionDigest": "sha256:4e6f014cf99606fa5d6b1b81ff2241cda894c4e4e9960b457cb61a4490e396a5",
+      "id": "gen-job-1791901412164-4",
+      "launcherDigests": {
+        "main": "sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af"
+      },
+      "runtime": {
+        "binding": {
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINESERVER": "/usr/bin/wineserver"
+          },
+          "executable": "/usr/bin/wine",
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "providerId": "wine-linux-x86-64-preview",
+          "wineserverExecutable": "/usr/bin/wineserver"
+        },
+        "selection": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "version": "11.14"
+      },
+      "status": "ready",
+      "updatedAtMilliseconds": 1791901426819
+    },
+    "definition": {
+      "bottleId": "gui-graph",
+      "category": "education",
+      "compatibilityRating": "unknown",
+      "id": "graph",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\Graph",
+          "/NOICONS",
+          "/LANG=English",
+          "/TASKS="
+        ],
+        "fileName": "SetupGraph-4.4.2.exe",
+        "sha256": "1967affa93df9bc9103d47f35f51ecd4422483154f07ffbdf813a66eb35d66a5"
+      },
+      "launchers": [
+        {
+          "executable": "Graph/Graph.exe",
+          "id": "main",
+          "name": "Graph"
+        }
+      ],
+      "name": "Graph",
+      "publisher": "Ivan Johansen",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "4.4.2"
+    },
+    "installedFiles": {
+      "PDFlib.dll": {
+        "sizeBytes": 1257984,
+        "sha256": "4626c2fbb6765c9aa113d2feff53e35d96bfdefa16d2718c812efd60de491c9e"
+      },
+      "Graph.exe": {
+        "sizeBytes": 14631496,
+        "sha256": "1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af"
+      },
+      "License.txt": {
+        "sizeBytes": 14971,
+        "sha256": "9ccb32bcf0183b09d884dacdd6106fb553075e2dc4483da96597283a6712582e"
+      },
+      "unins000.exe": {
+        "sizeBytes": 1274745,
+        "sha256": "31505d4405dd1b44c2374d9a0939e961c34a952274b27a2a5710b46404835a9c"
+      },
+      "Thumbnails.dll": {
+        "sizeBytes": 555520,
+        "sha256": "fe5293d17ba343ee388d100981acbe7145199ffcb85d5b8f384c8e38f3c1f60f"
+      },
+      "unins000.dat": {
+        "sizeBytes": 13100,
+        "sha256": "9cf56e3e77a3c63593146162a53ab65a51ced58dd63fa90ed2d80729ab9b49d9"
+      },
+      "Help/Graph-French.chm": {
+        "sizeBytes": 444857,
+        "sha256": "475629aade46b7b83b832d69e8431025602608225be8ff43bf850baa05cf69d3"
+      },
+      "Help/Graph-Spanish.chm": {
+        "sizeBytes": 459218,
+        "sha256": "9e4dee41ea38c63b77122297afad621feb92a95d24e8ab75aee455e8d08c356f"
+      },
+      "Help/Graph-Danish.chm": {
+        "sizeBytes": 443039,
+        "sha256": "20c50f471b6008e6ddc5d7c72edbde34fe87e1bf0f4e2757d55658cfafaaf03e"
+      },
+      "Help/Graph-English.chm": {
+        "sizeBytes": 428367,
+        "sha256": "d0fe4949c5d463571b4206b1146fd90e06b12c8cdf37e38a69f84fc042370f18"
+      },
+      "Help/Graph-Italian.chm": {
+        "sizeBytes": 440435,
+        "sha256": "0b2b8d53d0948efce6bdf475c041009f25546d2d379bc5130a1f0ea6941e0dfc"
+      },
+      "Help/Graph-Dutch.chm": {
+        "sizeBytes": 439654,
+        "sha256": "b0f54b79e7e318775b76fd9662c2db715ac330f238d94bde6139459e9b79010a"
+      },
+      "Help/PluginDoc.chm": {
+        "sizeBytes": 86178,
+        "sha256": "62a294d076228847754276ad48b8e492689de94bdab32eaaa3fdfeade26b0fc0"
+      },
+      "Help/Graph-German.chm": {
+        "sizeBytes": 456545,
+        "sha256": "d4ca73a71a674d3a4f30056cdd206e6c8a29d17d4a1b5a6b67e935f724aad41a"
+      },
+      "Help/Graph-Croatian.chm": {
+        "sizeBytes": 445007,
+        "sha256": "af87b629a00e1888258817befd59b7cf481e39637495cfa7e8096be8b44b636e"
+      },
+      "Help/Graph-Slovenian.chm": {
+        "sizeBytes": 443128,
+        "sha256": "71734c3264331e55446d6f74b97a26df9894d20498ced62375bc29fd82d4b4e0"
+      },
+      "Help/Graph-Portuguese.chm": {
+        "sizeBytes": 439681,
+        "sha256": "be3f7460cce04d6073ff126976e8ba4a1a6ae42f29e172691b98102940b44460"
+      },
+      "Help/Graph-Swedish.chm": {
+        "sizeBytes": 438109,
+        "sha256": "c4cc326d412a095e46b7ecbcee83cdee0f7f3a027fb9715207d45911959e5871"
+      },
+      "Help/Graph-Czech.chm": {
+        "sizeBytes": 462929,
+        "sha256": "2198d1539567764159f17b86910946dda330ad0748c60d0dda80f201bafb653a"
+      },
+      "Lib/Data.py": {
+        "sizeBytes": 47758,
+        "sha256": "e110d02d28e1e85a894f067dafa16572606f8493de8c6d561970b1f459f53671"
+      },
+      "Lib/Gui.py": {
+        "sizeBytes": 2164,
+        "sha256": "b2ba2897ade21de0e529627aa178550d81f57cc9361d4a88d0a24b748eb853c0"
+      },
+      "Lib/Utility.py": {
+        "sizeBytes": 2774,
+        "sha256": "f4c747eb3654ad8dcd51d7cbea663aca5b9c51425832e0ffd3c606b9316119ff"
+      },
+      "Lib/Settings.py": {
+        "sizeBytes": 25397,
+        "sha256": "2d52f3d5140fe954c696d037b126533d6fa901d488faf5becd8c27cc8e4f15ec"
+      },
+      "Lib/Graph.py": {
+        "sizeBytes": 9605,
+        "sha256": "a65c20542571c141be792559ca7d3a6f58c25b33cbf23dc3a39bbaab60b75818"
+      },
+      "Plugins/ShowConsole.py": {
+        "sizeBytes": 508,
+        "sha256": "080f3893b212667ca6d607db9330c6ced0fc865805b567173f2a8e1f698516f2"
+      },
+      "Plugins/Circle.bmp": {
+        "sizeBytes": 246,
+        "sha256": "bbc9b499661400d97ac6822a5252e6ae447cb865f7e1272284af5d298d73e511"
+      },
+      "Plugins/Revolution.py": {
+        "sizeBytes": 3595,
+        "sha256": "f191686dbe7d4b448393e1f5c371b1186bd79c8336e577d59442f1496f143e0b"
+      },
+      "Plugins/Statistics.py": {
+        "sizeBytes": 2144,
+        "sha256": "e8f1823189c5f63ae7abc0a589963aacc1cd015bd58f0376229dccfff4a81857"
+      },
+      "Plugins/Circle.py": {
+        "sizeBytes": 3272,
+        "sha256": "ad5b9c5a68effafac96cfd1dfe71c0ad3612017c7dc5c845308d5d724cf1658c"
+      },
+      "Locale/Vietnamese.mo": {
+        "sizeBytes": 70145,
+        "sha256": "0969a9d59845c1e3d38bf42d0d6d0ae9b60b346355f674f3caf0d2435f6e91f9"
+      },
+      "Locale/Serbian.mo": {
+        "sizeBytes": 64998,
+        "sha256": "28eac4d6c4eb9ec8ae7110d8059ae2ddf315b46d2bfef2f5f1a869fb194d575f"
+      },
+      "Locale/Czech.mo": {
+        "sizeBytes": 85400,
+        "sha256": "6169e602805f06fc8903c1a05d227dcdaf1779859ee44124ffdad6a4ff80d33f"
+      },
+      "Locale/Finnish.mo": {
+        "sizeBytes": 64188,
+        "sha256": "7ce86c71cc18957bd7a9c72fc96471307cc05075803fa22be58bfe5da042469a"
+      },
+      "Locale/French.mo": {
+        "sizeBytes": 89021,
+        "sha256": "af6700617e60635776ebfb0cb520e8b9fbd52587fd127b102a4f3ccc761f168e"
+      },
+      "Locale/Danish.mo": {
+        "sizeBytes": 84631,
+        "sha256": "8898c99c0694047702d4eb5d2182fa47963808d1c443cc48d7879562b8064323"
+      },
+      "Locale/Turkish.mo": {
+        "sizeBytes": 81844,
+        "sha256": "c846b162124302af077e77ab9b19caf7bae81c228a5476f9ef0e7c0b3c686934"
+      },
+      "Locale/Persian.mo": {
+        "sizeBytes": 95531,
+        "sha256": "3a68e881c45b3e38273db4d8eade00e2dcccab3b77b74605fdd5af476f8fef20"
+      },
+      "Locale/Spanish.mo": {
+        "sizeBytes": 90630,
+        "sha256": "6925127370866ecffdb96696c3e6964b2a64c5a292d220334c96f4d885bbd10b"
+      },
+      "Locale/Croatian.mo": {
+        "sizeBytes": 73190,
+        "sha256": "ae41295ec9bf91baed6c5d6118f4bae21b964c7c6ac0b0e3f5fabdc80eaf209b"
+      },
+      "Locale/Greek.mo": {
+        "sizeBytes": 72036,
+        "sha256": "5db3259da6bf1a6d27aeeb0035082fffd139146def5f91588cdca5ba62e4a142"
+      },
+      "Locale/Chinese (Traditional).mo": {
+        "sizeBytes": 65569,
+        "sha256": "e298598b6054796d9b660948a0a3c686e1af9e1a82cf08fc279bc2dbf11483e3"
+      },
+      "Locale/Swedish.mo": {
+        "sizeBytes": 85397,
+        "sha256": "38837bfd0eff3d972a90978a0dc37fd9087eef30aeea96f1ebd66296de33835b"
+      },
+      "Locale/Mongolian.mo": {
+        "sizeBytes": 60098,
+        "sha256": "62db6ecd1ccb278806ee889368399ca1513bdd8b8f36380a69da4d16cee0c0eb"
+      },
+      "Locale/Arabic.mo": {
+        "sizeBytes": 98600,
+        "sha256": "69db615e94dd49f6a16ab1476fb1f027a8bc19034026a7ab7a6344e6924d7da6"
+      },
+      "Locale/Hungarian.mo": {
+        "sizeBytes": 85280,
+        "sha256": "8d9832812d815316830e0541aa3d3bba74f7f9c98635890b08fc909316043787"
+      },
+      "Locale/Italian.mo": {
+        "sizeBytes": 86358,
+        "sha256": "9c772adbc06d8d06b172f20d149bc775d820cdfa0bb23d805818736b67fbc450"
+      },
+      "Locale/Norwegian.mo": {
+        "sizeBytes": 84043,
+        "sha256": "0c82125b70bb34b7d6fa3c7d1f34b7cea9e1fc92b1f42dfa869264e74e0977e3"
+      },
+      "Locale/Portuguese (Portugal).mo": {
+        "sizeBytes": 85713,
+        "sha256": "5dbc66f53e5bb3baccf8dd5f5e27780247fc659b77014a9bf467dce97b791ac0"
+      },
+      "Locale/Chinese (Simplified).mo": {
+        "sizeBytes": 59896,
+        "sha256": "4e6bcc5d97f3700baafa7be8ba30c1f305e0e192d4d0fbc71b6ee17526edcded"
+      },
+      "Locale/Portuguese (Brazil).mo": {
+        "sizeBytes": 88951,
+        "sha256": "060e0b01896e25580f1a5674773a461db6f58faf8983c13fd9c15fb0876318d9"
+      },
+      "Locale/Dutch.mo": {
+        "sizeBytes": 84350,
+        "sha256": "f9bf36c42b05ffff0c3338e30b6bcd0c8816d810c7c428037651b06fc08e2bfc"
+      },
+      "Locale/Russian.mo": {
+        "sizeBytes": 108661,
+        "sha256": "31d702a1b7a6de8f61df407a886aa187626e4d6bda4e66366bfb787ebe533964"
+      },
+      "Locale/Polish.mo": {
+        "sizeBytes": 34563,
+        "sha256": "3e0d3421ffed72f841fc86b44b5b436ae480eb752a204548671925153883c5de"
+      },
+      "Locale/Slovenian.mo": {
+        "sizeBytes": 82213,
+        "sha256": "c28d7c94ef3dd3e0ab773137417fedb8df6b0758fd3875d0ed832fb8fa4c012b"
+      },
+      "Locale/Korean.mo": {
+        "sizeBytes": 71584,
+        "sha256": "c72de5807519c599e3adeeb5bb6d288c54b83c5041ba3a9d8bd4a0dc5b8e19f7"
+      },
+      "Locale/German.mo": {
+        "sizeBytes": 87902,
+        "sha256": "2281be2bbcbbca6c630184ca904a9d468335adef318b8e6ac575b31c6a42954c"
+      },
+      "Locale/Basque.mo": {
+        "sizeBytes": 85073,
+        "sha256": "335f4285cf721ea0ec15cff10d1aec2be2b3630617a31a5dfa911e2d193b3fd7"
+      },
+      "Examples/Trendline.grf": {
+        "sizeBytes": 1367,
+        "sha256": "286213110603d9e52bf51325d0efe9efc1948fa6c5239e542507c93a37627ed3"
+      },
+      "Examples/Shadings.grf": {
+        "sizeBytes": 1089,
+        "sha256": "1f6156b573e9b4f61028d1f6f26b029a6c5939eaa66bb2220023d2d28d91ccec"
+      },
+      "Examples/Butterfly.grf": {
+        "sizeBytes": 650,
+        "sha256": "196dc70bc9263bd5f012b0537ab4dce0a7979b1ebf3f5d2acbf527d00417eb5f"
+      },
+      "Examples/Cubique Bis.grf": {
+        "sizeBytes": 1562,
+        "sha256": "779a559e0d9a4d8b18be8572419437a59efb0ac94b15a3dbd59a98bb4b4b9035"
+      },
+      "Examples/Leaf.grf": {
+        "sizeBytes": 733,
+        "sha256": "1e1dc9e9ad74ca8d1f69ba36255aeaf6454d84d877adeeae91666c8d2cfa0866"
+      },
+      "Examples/Spring.grf": {
+        "sizeBytes": 639,
+        "sha256": "037f0d0d3fce99ac7db850bd90b1b4ea7189a6f28ea75d6c4d7a23be4f7160b7"
+      },
+      "Examples/Ellipsis.grf": {
+        "sizeBytes": 3060,
+        "sha256": "88a23a00d8688a52a0bb37ac86df7e4dda9e640210e876d5ad8b12fa9ad29cf7"
+      },
+      "Examples/Circle and ellipsis.grf": {
+        "sizeBytes": 958,
+        "sha256": "2271b2f9c5fa15ad97fe76e707e2a68e44d6e96db520318a84b5864fad75eecf"
+      },
+      "Examples/Tangent.grf": {
+        "sizeBytes": 730,
+        "sha256": "cce48b554d46483ff187bc533944b6b52ec0e94416ae623463782093779a2460"
+      },
+      "Examples/Solar system.grf": {
+        "sizeBytes": 5016,
+        "sha256": "1ccd8e4ab01c8998161abef5efbe00678ee7ec81737a3f19fab8e1ac80fa3fa2"
+      },
+      "Examples/Sine with noise.grf": {
+        "sizeBytes": 687,
+        "sha256": "6b0f26c7a784be043405dfa7720dc0c2f3fc3a5f8c29ac31f09d05d33923f6a2"
+      },
+      "Examples/Function Explorer.grf": {
+        "sizeBytes": 145151,
+        "sha256": "e7747919f47cf2dc48702dcda7bb09a78ddbe81b8d399752de89826e9e7065ac"
+      },
+      "Examples/Inequality.grf": {
+        "sizeBytes": 812,
+        "sha256": "a9c5711b4ef826b8d799e266ef93a5640d40afc426eacd75aa4fafdd073591ef"
+      },
+      "Examples/Animation.grf": {
+        "sizeBytes": 1561,
+        "sha256": "dca32cd0d6855617c92905c466b333b575aef01f07488a5df683ca44c1699f15"
+      },
+      "Examples/Frequency response.grf": {
+        "sizeBytes": 1734,
+        "sha256": "ab2c9d75afe9843a784f6f4ee448845a5b6623ab0b93e4718cf20206bdc20158"
+      },
+      "Examples/Custom functions.grf": {
+        "sizeBytes": 1794,
+        "sha256": "349591c21e04b0771b3f385dd83694cf793bc389b504422f65a0fe855152ac9c"
+      },
+      "Examples/Trigonometry.grf": {
+        "sizeBytes": 939,
+        "sha256": "97d7c90cb56bdf09eee18111f91c965cc52989dbe411bcf61f18e2643d385ed3"
+      },
+      "Examples/Asymptotes.grf": {
+        "sizeBytes": 1347,
+        "sha256": "677df4c2fb5a423c5efa8e8ac254441b6ccadc32020ab9601d2866dac736da60"
+      },
+      "Examples/Reflection.grf": {
+        "sizeBytes": 1950,
+        "sha256": "5e0141128853b3511e62aa84590d05c5a300eaf721ae07bc6b35e787b45f1d61"
+      },
+      "Examples/Contours.grf": {
+        "sizeBytes": 1137,
+        "sha256": "b17156fb21d5d11e67f5b048f6ca4719acf220ead5520370535c721a0eb7dede"
+      },
+      "Examples/Shadings 2.grf": {
+        "sizeBytes": 1160,
+        "sha256": "6f844409cd06e49146cc6d971d0373bf14339c8089bc17d549b18e080f747d02"
+      }
+    },
+    "fixedDataPins": {
+      "drive_c/GraphTests/市场函数.grf": {
+        "sizeBytes": 442,
+        "sha256": "4d41d26136f59d557d9834e9007fe63e6e36570eaf38269ac0a37af80054d868"
+      },
+      "drive_c/GraphTests/market.grf": {
+        "sizeBytes": 549,
+        "sha256": "cd785dfc193d972046791bd8dbdd43208d96bf72b42f4ccb041d728112fae3fa"
+      }
+    },
+    "saveProof": {
+      "inputPins": {
+        "drive_c/GraphTests/市场函数.grf": {
+          "sizeBytes": 442,
+          "sha256": "4d41d26136f59d557d9834e9007fe63e6e36570eaf38269ac0a37af80054d868"
+        }
+      },
+      "outputFile": "drive_c/GraphTests/market.grf",
+      "outputPin": {
+        "sizeBytes": 549,
+        "sha256": "cd785dfc193d972046791bd8dbdd43208d96bf72b42f4ccb041d728112fae3fa"
+      },
+      "allFields": {
+        "Graph": {
+          "Version": "4.4.2.543",
+          "MinVersion": "2.5",
+          "OS": "Windows NT 6.2"
+        },
+        "Axes": {
+          "xMin": "-3",
+          "xMax": "3",
+          "xTickUnit": "0.5",
+          "xGridUnit": "0.5",
+          "yMin": "-2",
+          "yMax": "12",
+          "yTickUnit": "1",
+          "yGridUnit": "1",
+          "AxesColor": "clBlue",
+          "GridColor": "0x00FF9999",
+          "ShowLegend": "0",
+          "Radian": "1"
+        },
+        "Func1": {
+          "FuncType": "0",
+          "y": "8-x^2",
+          "Color": "clBlue",
+          "Size": "2"
+        },
+        "Data": {
+          "TextLabelCount": "0",
+          "FuncCount": "1",
+          "PointSeriesCount": "0",
+          "ShadeCount": "0",
+          "RelationCount": "0",
+          "OleObjectCount": "0"
+        }
+      },
+      "fullRawReconstructionMatched": true,
+      "modelScope": "Finite four-section one standard function GRF only; observed native version/OS serialization and automatic tick/grid defaults are explicit constants, not full GRF or scientific specification."
+    },
+    "guiJobs": [
+      {
+        "applicationId": "graph",
+        "createdAtMilliseconds": 1791901668167,
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 103733,
+            "requestId": "job-1791901668167-5",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 645048,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix",
+            "requestId": "job-1791901668167-5",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 645091,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791901668167-5",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791901412164-4",
+        "id": "job-1791901668167-5",
+        "inspection": {
+          "architecture": "x86",
+          "entryPointRva": 8124,
+          "fileDigest": "sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af",
+          "fileSizeBytes": 14631496,
+          "format": "pe32",
+          "imageKind": "executable",
+          "importLibraries": [
+            "advapi32.dll",
+            "avifil32.dll",
+            "comctl32.dll",
+            "comdlg32.dll",
+            "dwmapi.dll",
+            "gdi32.dll",
+            "kernel32.dll",
+            "msimg32.dll",
+            "ole32.dll",
+            "oleacc.dll",
+            "oleaut32.dll",
+            "oledlg.dll",
+            "shell32.dll",
+            "shlwapi.dll",
+            "user32.dll",
+            "uxtheme.dll",
+            "version.dll",
+            "windowscodecs.dll",
+            "wininet.dll",
+            "winmm.dll",
+            "winspool.drv"
+          ],
+          "machineCode": 332,
+          "schemaVersion": "1",
+          "sections": [
+            {
+              "executable": true,
+              "name": ".text",
+              "rawDataSize": 12397056,
+              "readable": true,
+              "virtualAddress": 4096,
+              "virtualSize": 12398592,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".data",
+              "rawDataSize": 887296,
+              "readable": true,
+              "virtualAddress": 12402688,
+              "virtualSize": 933888,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".tls",
+              "rawDataSize": 512,
+              "readable": true,
+              "virtualAddress": 13336576,
+              "virtualSize": 4096,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".rdata",
+              "rawDataSize": 512,
+              "readable": true,
+              "virtualAddress": 13340672,
+              "virtualSize": 4096,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".idata",
+              "rawDataSize": 18944,
+              "readable": true,
+              "virtualAddress": 13344768,
+              "virtualSize": 20480,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".didata",
+              "rawDataSize": 5632,
+              "readable": true,
+              "virtualAddress": 13365248,
+              "virtualSize": 8192,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".edata",
+              "rawDataSize": 20480,
+              "readable": true,
+              "virtualAddress": 13373440,
+              "virtualSize": 20480,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".rsrc",
+              "rawDataSize": 831488,
+              "readable": true,
+              "virtualAddress": 13393920,
+              "virtualSize": 831488,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".reloc",
+              "rawDataSize": 462848,
+              "readable": true,
+              "virtualAddress": 14225408,
+              "virtualSize": 462848,
+              "writable": false
+            }
+          ],
+          "subsystem": "windowsGui",
+          "subsystemCode": 2
+        },
+        "kind": "launch",
+        "launchPlan": {
+          "bottleExecutable": {
+            "architecture": "i386",
+            "bottleId": "gen-job-1791901412164-4",
+            "digest": "sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af",
+            "imageKind": "executable",
+            "inspectionSchemaVersion": "1",
+            "originalName": "Graph.exe",
+            "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix/drive_c/Graph/Graph.exe",
+            "sizeBytes": 14631496,
+            "subsystem": "windowsGui"
+          },
+          "decisionTrace": [
+            "runtime provider wine-linux-x86-64-preview selected as wine",
+            "translator native selected",
+            "graphics backend wined3d selected",
+            "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+            "Bottle CJK font pinned by digest",
+            "bottle-executable sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af pinned in place",
+            "inspection i386 windowsGui accepted"
+          ],
+          "graphics": {
+            "backend": "wined3d",
+            "version": "11.14"
+          },
+          "lifecycle": {
+            "terminationGraceMilliseconds": 3000,
+            "wineserver": {
+              "executable": "/usr/bin/wineserver",
+              "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix"
+            }
+          },
+          "process": {
+            "arguments": [
+              "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix/drive_c/Graph/Graph.exe"
+            ],
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "DISPLAY": ":0",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix",
+              "WINESERVER": "/usr/bin/wineserver",
+              "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+            },
+            "executable": "/usr/bin/wine",
+            "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4"
+          },
+          "requestId": "job-1791901668167-5",
+          "runtime": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "sandbox": {
+            "network": "deny",
+            "profile": "desktop"
+          },
+          "schemaVersion": "1",
+          "translator": {
+            "provider": "native"
+          }
+        },
+        "schemaVersion": "1",
+        "status": "succeeded",
+        "updatedAtMilliseconds": 1791902315408
+      },
+      {
+        "applicationId": "graph",
+        "createdAtMilliseconds": 1791902360682,
+        "events": [
+          {
+            "elapsedMilliseconds": 0,
+            "kind": "started",
+            "processId": 104370,
+            "requestId": "job-1791902360681-6",
+            "schemaVersion": "1",
+            "sequence": 0
+          },
+          {
+            "elapsedMilliseconds": 442606,
+            "kind": "wine-server-stop-requested",
+            "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix",
+            "requestId": "job-1791902360681-6",
+            "schemaVersion": "1",
+            "sequence": 1
+          },
+          {
+            "elapsedMilliseconds": 442648,
+            "exit": {
+              "code": 0,
+              "success": true
+            },
+            "kind": "exited",
+            "requestId": "job-1791902360681-6",
+            "schemaVersion": "1",
+            "sequence": 2
+          }
+        ],
+        "generationId": "gen-job-1791901412164-4",
+        "id": "job-1791902360681-6",
+        "inspection": {
+          "architecture": "x86",
+          "entryPointRva": 8124,
+          "fileDigest": "sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af",
+          "fileSizeBytes": 14631496,
+          "format": "pe32",
+          "imageKind": "executable",
+          "importLibraries": [
+            "advapi32.dll",
+            "avifil32.dll",
+            "comctl32.dll",
+            "comdlg32.dll",
+            "dwmapi.dll",
+            "gdi32.dll",
+            "kernel32.dll",
+            "msimg32.dll",
+            "ole32.dll",
+            "oleacc.dll",
+            "oleaut32.dll",
+            "oledlg.dll",
+            "shell32.dll",
+            "shlwapi.dll",
+            "user32.dll",
+            "uxtheme.dll",
+            "version.dll",
+            "windowscodecs.dll",
+            "wininet.dll",
+            "winmm.dll",
+            "winspool.drv"
+          ],
+          "machineCode": 332,
+          "schemaVersion": "1",
+          "sections": [
+            {
+              "executable": true,
+              "name": ".text",
+              "rawDataSize": 12397056,
+              "readable": true,
+              "virtualAddress": 4096,
+              "virtualSize": 12398592,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".data",
+              "rawDataSize": 887296,
+              "readable": true,
+              "virtualAddress": 12402688,
+              "virtualSize": 933888,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".tls",
+              "rawDataSize": 512,
+              "readable": true,
+              "virtualAddress": 13336576,
+              "virtualSize": 4096,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".rdata",
+              "rawDataSize": 512,
+              "readable": true,
+              "virtualAddress": 13340672,
+              "virtualSize": 4096,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".idata",
+              "rawDataSize": 18944,
+              "readable": true,
+              "virtualAddress": 13344768,
+              "virtualSize": 20480,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".didata",
+              "rawDataSize": 5632,
+              "readable": true,
+              "virtualAddress": 13365248,
+              "virtualSize": 8192,
+              "writable": true
+            },
+            {
+              "executable": false,
+              "name": ".edata",
+              "rawDataSize": 20480,
+              "readable": true,
+              "virtualAddress": 13373440,
+              "virtualSize": 20480,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".rsrc",
+              "rawDataSize": 831488,
+              "readable": true,
+              "virtualAddress": 13393920,
+              "virtualSize": 831488,
+              "writable": false
+            },
+            {
+              "executable": false,
+              "name": ".reloc",
+              "rawDataSize": 462848,
+              "readable": true,
+              "virtualAddress": 14225408,
+              "virtualSize": 462848,
+              "writable": false
+            }
+          ],
+          "subsystem": "windowsGui",
+          "subsystemCode": 2
+        },
+        "kind": "launch",
+        "launchPlan": {
+          "bottleExecutable": {
+            "architecture": "i386",
+            "bottleId": "gen-job-1791901412164-4",
+            "digest": "sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af",
+            "imageKind": "executable",
+            "inspectionSchemaVersion": "1",
+            "originalName": "Graph.exe",
+            "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix/drive_c/Graph/Graph.exe",
+            "sizeBytes": 14631496,
+            "subsystem": "windowsGui"
+          },
+          "decisionTrace": [
+            "runtime provider wine-linux-x86-64-preview selected as wine",
+            "translator native selected",
+            "graphics backend wined3d selected",
+            "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+            "Bottle CJK font pinned by digest",
+            "bottle-executable sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af pinned in place",
+            "inspection i386 windowsGui accepted"
+          ],
+          "graphics": {
+            "backend": "wined3d",
+            "version": "11.14"
+          },
+          "lifecycle": {
+            "terminationGraceMilliseconds": 3000,
+            "wineserver": {
+              "executable": "/usr/bin/wineserver",
+              "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix"
+            }
+          },
+          "process": {
+            "arguments": [
+              "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix/drive_c/Graph/Graph.exe"
+            ],
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "DISPLAY": ":0",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4/prefix",
+              "WINESERVER": "/usr/bin/wineserver",
+              "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+            },
+            "executable": "/usr/bin/wine",
+            "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791901412164-4"
+          },
+          "requestId": "job-1791902360681-6",
+          "runtime": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "sandbox": {
+            "network": "deny",
+            "profile": "desktop"
+          },
+          "schemaVersion": "1",
+          "translator": {
+            "provider": "native"
+          }
+        },
+        "schemaVersion": "1",
+        "status": "succeeded",
+        "updatedAtMilliseconds": 1791902805665
+      }
+    ],
+    "normalExitCodes": [
+      0,
+      0
+    ],
+    "registryPins": {
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "f7948cbefe1ccb7df6fb6a2d59525fce9f34f7fb03c6173d05ef6156bb484160"
+      },
+      "system.reg": {
+        "sizeBytes": 3424156,
+        "sha256": "62fd227bc3804f23b35ed930c46df5924a3070222e61108a13234889cd047597"
+      },
+      "user.reg": {
+        "sizeBytes": 106828,
+        "sha256": "15ed9b3bd9d366c46785da7ac60710189372b15a1800e766c01f613bce979475"
+      }
+    },
+    "applicationConfigPins": {},
+    "configurationChangesAfterFirstProcess": {
+      "system.reg": {
+        "old": {
+          "sizeBytes": 3424156,
+          "sha256": "f78129aaf1a3b5adcc62b4388d1ff2c547c04ab0eae1d151f00ae3042cd07b7f"
+        },
+        "new": {
+          "sizeBytes": 3424156,
+          "sha256": "62fd227bc3804f23b35ed930c46df5924a3070222e61108a13234889cd047597"
+        },
+        "diffLines": 287,
+        "binaryOnly": false
+      },
+      "user.reg": {
+        "old": {
+          "sizeBytes": 106828,
+          "sha256": "d9f6ceb0263ff848e2348be75186920939d84b75953100bb000a21d20eda987a"
+        },
+        "new": {
+          "sizeBytes": 106828,
+          "sha256": "15ed9b3bd9d366c46785da7ac60710189372b15a1800e766c01f613bce979475"
+        },
+        "diffLines": 40,
+        "binaryOnly": false
+      }
+    },
+    "finalDataAndConfigurationPins": {
+      "drive_c/GraphTests/市场函数.grf": {
+        "sizeBytes": 442,
+        "sha256": "4d41d26136f59d557d9834e9007fe63e6e36570eaf38269ac0a37af80054d868"
+      },
+      "drive_c/GraphTests/market.grf": {
+        "sizeBytes": 549,
+        "sha256": "cd785dfc193d972046791bd8dbdd43208d96bf72b42f4ccb041d728112fae3fa"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "f7948cbefe1ccb7df6fb6a2d59525fce9f34f7fb03c6173d05ef6156bb484160"
+      },
+      "system.reg": {
+        "sizeBytes": 3424156,
+        "sha256": "62fd227bc3804f23b35ed930c46df5924a3070222e61108a13234889cd047597"
+      },
+      "user.reg": {
+        "sizeBytes": 106828,
+        "sha256": "15ed9b3bd9d366c46785da7ac60710189372b15a1800e766c01f613bce979475"
+      }
+    },
+    "guiAccepted": true,
+    "published": false,
+    "freshExplicitGuiGrfOpenObserved": true,
+    "scope": "One 442-byte Chinese-name synthetic ASCII GRF with one standard blue 9-x^2 function, native directory-tree Open, explicit Shift keys edit to 8-x^2, native Save as market.grf550B; new formal empty graph then explicit CtrlO and native saved-file doubleclick Open. Four axis ranges held, automatic native tick/grid x0.5/y1 observed; native AltF4 normal exits. No broad scientific or complete GRF specification.",
+    "configurationScope": "Three registry files and selected ProgramData/Graph plus prefix-user Graph-named files only, not full filesystem.",
+    "runtimeFunctionOrRootCauseEstablished": false,
+    "launcherOrGlobalCoreProgramRuntimeFixApplied": false,
+    "mainInstalledLicenseSourceComparisonVerified": true,
+    "fullBundleLicenseClosureVerified": false,
+    "checkpoint": {
+      "file": "before-rollback.json",
+      "sha256": "d68b768b877b07c66b30b3f7a5e603981bc2b35f915139a34c95d8aedd33a79b",
+      "coreJobs": 526,
+      "fullStoreRows": 153
+    }
+  },
+  "screenshots": {
+    "07-market-input.jpg": {
+      "sizeBytes": 41141,
+      "sha256": "81b51fb471ab259d3f56fb79626e39a01d894cae71eaba8b99ce9af40ded9896",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/07-market-input.jpg"
+    },
+    "08-market-equation.jpg": {
+      "sizeBytes": 52887,
+      "sha256": "a4ec2c8c8ace4be7b3415f36a1c47cc15cef3fb22c728afb4165eb92c803b2e4",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/08-market-equation.jpg"
+    },
+    "09-market-save-as.jpg": {
+      "sizeBytes": 47351,
+      "sha256": "f1e6aace134c7347b1937641dfaf09e35a5abc57f12a8ae00daf0c29dcca9945",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/09-market-save-as.jpg"
+    },
+    "10-market-saved-function.jpg": {
+      "sizeBytes": 40988,
+      "sha256": "decfeb581cd2907783f98cace74e0173c35c46dc1a13bb839622427742fefe26",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/10-market-saved-function.jpg"
+    },
+    "11-market-new-empty.jpg": {
+      "sizeBytes": 39673,
+      "sha256": "fe6424d667dbec0ac69377fea73521a962987fced0828e9209e86515f6ffa1fb",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/11-market-new-empty.jpg"
+    },
+    "12-market-new-open.jpg": {
+      "sizeBytes": 40823,
+      "sha256": "264b749ae89b270d6b63671849e84ac676bdafb3bd83e4e4592a53897a139eb9",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/12-market-new-open.jpg"
+    },
+    "13-rollback-original-empty.jpg": {
+      "sizeBytes": 38678,
+      "sha256": "90fc143cb8dbb473badc8531992b7267dd3c84c2dc9731adf5f79a5be191a9b2",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/13-rollback-original-empty.jpg"
+    },
+    "14-rollback-original-open.jpg": {
+      "sizeBytes": 40713,
+      "sha256": "f58ad91f3f39b681b0c94a1f36ed99de16c999b337b81e6cd68495290d6ecd04",
+      "actualEncoding": "JPEG",
+      "reference": "graph-20261013/market-and-rollback/14-rollback-original-open.jpg"
+    }
+  },
+  "fixtureReferences": {
+    "drive_c/GraphTests/市场函数.grf": {
+      "sizeBytes": 442,
+      "sha256": "4d41d26136f59d557d9834e9007fe63e6e36570eaf38269ac0a37af80054d868",
+      "reference": "graph-20261013/market/市场函数.grf"
+    },
+    "drive_c/GraphTests/market.grf": {
+      "sizeBytes": 549,
+      "sha256": "cd785dfc193d972046791bd8dbdd43208d96bf72b42f4ccb041d728112fae3fa",
+      "reference": "graph-20261013/market/market.grf"
+    }
+  },
+  "hostIndependentWholeGrfBytesVerified": true,
+  "freshEmptyGraphThenNativeExplicitOpenBothRolesAndRollback": true,
+  "marketEquationEditedOnlyFirstConstant9To8NativeHomeDelete8": true,
+  "marketBlueCurveObserved": true,
+  "aboutNotMeasured": true,
+  "fullScientificGraphFeaturesAccepted": false,
+  "limits": [
+    "Finite one standard function per role only: Chinese-name synthetic GRF native MyComputer/C/GraphTests Open, function row Edit, original x^2 to x^2+1, native Save as original.grf and fresh empty formal process explicit Open. Red curve observed. No scientific accuracy, calculus, fitting, export, plugins/Python, printing, full GRF, broad formats/large bad files/direct Chinese keyboard/network/background-network exclusion/registration/migration/unattended/GUI Store buttons acceptance. Synthetic GRF does not count as an application.",
+    "Original 439-byte ASCII input retained; actual 548-byte ASCII-compatible UTF8/no BOM/35CRLF output independently reconstructed in full. Four axis ranges retained; native automatic x tick/grid changed 1 to 0.5 and y 2 to 1. Explicit observed native Version4.4.2.543/OS Windows NT6.2 serialization constants are not a real Windows OS, About, full GRF or scientific specification proof. Original OS trailing blank and final empty lines retained.",
+    "Default English and Chinese filenames readable. Tip of the day Show tips at startup checked and normally closed in both processes. Unsubmitted initial symbol input did not match; CtrlA then native explicit Shift6/ShiftEqual produced exact x^2+1 before OK/save. No generic keyboard repair. Two normal native AltF4 exits0 and wineserver stopped, not acceptance alone. No Core/program/definition/launcher env/cwd/font/globalDLL/runtime repair.",
+    "Official fixed4.4.2 installer complete HTTPS200/ContentLength/local SHA only; source first GET early EOF3560727 bytes retained, one matching206prefix probe plus nine bounded tail206 ranges ContentRange/length/IfRange ETag and whole official displayed SHA verified, all1257 unique ZIP members/1162 files CRC passed. Fourteen selected original source members only, not full source manual review. GPL2-or-later main, installed14971-byte License exact Install/License only; root COPYING distinct. Full BCBVCL/Boost/dxgettext/GSL/Python/PDFlib-Lite/EasyNSE/icons/translations closure, PGP/Authenticode/source-binary correspondence/repro/latest unverified.",
+    "Actual Inno5.5.0 two markers and PE0x14c, native arguments /LANG=English and DIR13 bytes verified; source Beta output naming and regserver actions only static context, not binary correspondence or full Inno/UAC/associations/shortcut/uninstall behavior.78 program files strictly pinned. Selected registry/Graph named user files only, not all FS. Real registry raw/diffs private, cause/semantic equivalence unestablished; recently64 IPC not full SQLite, Core query may write scratch. Full seven-class523/152 before-market CP saved/read back.",
+    "First helper build assertion stopped before formal definition/task; parent erroneously continued installer-only transfer despite that assertion. Strict read-only diagnostic then verified unchanged520/152 all seven classes and actual transferred bytes before one original install; original helper/partial output/tool history retained, no repeated transfer or install. Do not claim all historical dependency gates effective. Exact initial host assertion/GetContent error only tool history, not fabricated raw.",
+    "Natural lock normal fresh complete masked field once submitted per authorization, no security/power changes or bypass; no password/login image saved. noVNC stale drawing ordinary browser reload/reconnect. One screenshot CDP timeout diagnostic, no fabricated crop. SourceForge web direct click exposed signed redirect query in tool error only; not copied/repeated/public/prompt. Earlier query history and Scribus one private canonicalV1 raw loss limitations preserved."
+  ]
+}

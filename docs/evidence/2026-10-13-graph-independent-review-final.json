@@ -1,0 +1,657 @@
+{
+  "FINAL": true,
+  "passed": true,
+  "reviewStage": "independent final read-only Graph4.4.2 finite GRF GUI and IPC lifecycle evidence review before first actual stage",
+  "dateUtc": "2026-10-13T15:13:41.120290+00:00",
+  "applicationId": "graph",
+  "fixedVersion": "4.4.2",
+  "baseCommit": "7c5f10803a368f437b94d45158d52aa84c576e3b",
+  "prospectiveManifest": "graph-prospective-files-v3-20261013.json",
+  "prospectiveManifestSha256": "fddecea3e9c55b884696c7bd28840103466fc5960cf1126732bbb253751a8ad9",
+  "prospectiveCount": 133,
+  "prospectiveFiles": {
+    ".gitattributes": {
+      "sizeBytes": 46072,
+      "sha256": "8f29ca54dc54e8b12255c0f2c3841cff7d4ce4c868d9772d1a6d6a3573443e7d"
+    },
+    "catalogue/candidate-v75/tuf/metadata/1.root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "catalogue/candidate-v75/tuf/metadata/84.snapshot.json": {
+      "sizeBytes": 997,
+      "sha256": "63161c1756ace8e29101ba687ec5dff29bb7e1d35d9168d719946d3fa7e463bf"
+    },
+    "catalogue/candidate-v75/tuf/metadata/84.targets.json": {
+      "sizeBytes": 29930,
+      "sha256": "73d2cb3c98a0457240a9ce063762da9d2ca8d93685dd11259728ec5f2cff8cb5"
+    },
+    "catalogue/candidate-v75/tuf/metadata/timestamp.json": {
+      "sizeBytes": 997,
+      "sha256": "8238377b9aebe4c373a8f0b300d68d8c3f1dd3d9dc7055658082a46a7902a1cd"
+    },
+    "catalogue/candidate-v75/tuf/targets/024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1.windows-notepad2mod-20261011.acceptance.json": {
+      "sizeBytes": 4879,
+      "sha256": "024e0149da285971ef48db5da86137f841f30c05006350a18a1dafc3ea8128d1"
+    },
+    "catalogue/candidate-v75/tuf/targets/056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9.windows-nsis-20261012.acceptance.json": {
+      "sizeBytes": 4976,
+      "sha256": "056aac2e7b6cc7705ce14d74b732c6ac1ef352434d1983106cdd150e0af02cc9"
+    },
+    "catalogue/candidate-v75/tuf/targets/0aec75b1a9aa64dc23ac31977e29a2b634416ee2e3c6c8ecead76caa73dda9b9.windows-graph-20261013.acceptance.json": {
+      "sizeBytes": 7584,
+      "sha256": "0aec75b1a9aa64dc23ac31977e29a2b634416ee2e3c6c8ecead76caa73dda9b9"
+    },
+    "catalogue/candidate-v75/tuf/targets/0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb.windows-speedcrunch-20261003.acceptance.json": {
+      "sizeBytes": 9031,
+      "sha256": "0e56b83db677cb005b20bc2cea173df2a0498d8d17be97ff557f31df40862efb"
+    },
+    "catalogue/candidate-v75/tuf/targets/0ebeab5448d9a8b848495baab98c5fd90ae10fb6a5e5a88690d454b0ede0c77f.windows-devcpp-20261013.acceptance.json": {
+      "sizeBytes": 5222,
+      "sha256": "0ebeab5448d9a8b848495baab98c5fd90ae10fb6a5e5a88690d454b0ede0c77f"
+    },
+    "catalogue/candidate-v75/tuf/targets/0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d.windows-notepadnext-20261012.acceptance.json": {
+      "sizeBytes": 6011,
+      "sha256": "0f351df042040ba82213d641a0ef92e7fb1c3f2d32c54e6cd1f3552fe74f763d"
+    },
+    "catalogue/candidate-v75/tuf/targets/116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a.windows-poedit-20261012.acceptance.json": {
+      "sizeBytes": 99469,
+      "sha256": "116bd6abe8e73935c3ad8799b548e0ef03f294b1a49b9fcf1c989e0cf18f442a"
+    },
+    "catalogue/candidate-v75/tuf/targets/1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d.windows-dosbox-20261011.acceptance.json": {
+      "sizeBytes": 5624,
+      "sha256": "1767f92ba484fc1011b7b5bf8c97304316869e36ec12b24fe07e193a6b5b8c7d"
+    },
+    "catalogue/candidate-v75/tuf/targets/1b6491131ca2b97189879d55a4ecdde73f1494f7f6f83fa5602b3ec46fe336b8.devcpp-catalogue-space-guard-withdrawal-20261013.json": {
+      "sizeBytes": 1584,
+      "sha256": "1b6491131ca2b97189879d55a4ecdde73f1494f7f6f83fa5602b3ec46fe336b8"
+    },
+    "catalogue/candidate-v75/tuf/targets/1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f.windows-transmission-20261011.acceptance.json": {
+      "sizeBytes": 5165,
+      "sha256": "1b731bfddeba4c0b3ce9497b7383f625f55386ad40405dc2f14f9cab13ad660f"
+    },
+    "catalogue/candidate-v75/tuf/targets/1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f.windows-akelpad-20261010.acceptance.json": {
+      "sizeBytes": 5280,
+      "sha256": "1d1cb2ab469daa3c0a962af2388c1cea23fd6b04aed83da7253142312f7d766f"
+    },
+    "catalogue/candidate-v75/tuf/targets/1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af.windows-nomacs-20261011.acceptance.json": {
+      "sizeBytes": 4995,
+      "sha256": "1d8006a9f66f6ae9afd0a08e77f91b4a0b55213db15614638ba01fd063ac64af"
+    },
+    "catalogue/candidate-v75/tuf/targets/24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66.windows-qalculate-20261003.acceptance.json": {
+      "sizeBytes": 21857,
+      "sha256": "24433e70d6f6cba2d606f66caafb71108caa3c531a9ee0dd22c2701f0c8d0f66"
+    },
+    "catalogue/candidate-v75/tuf/targets/24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd.windows-notepad3-20261003.acceptance.json": {
+      "sizeBytes": 7918,
+      "sha256": "24bfeeb755bcbf3940c73d54a7e1e017dd1830dd1502b123c97734cddaa68efd"
+    },
+    "catalogue/candidate-v75/tuf/targets/27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710.windows-vlc-20260930.acceptance.json": {
+      "sizeBytes": 1676,
+      "sha256": "27755317c7192d300389d19adb9087f3f5c642a67633f3d3baafea49d0d6f710"
+    },
+    "catalogue/candidate-v75/tuf/targets/27a4afb925340e30037bc2ff99f0b1d5190ddd35b3fae1ebb7a766bb1e3d86c1.windows-qmmp-20261013.acceptance.json": {
+      "sizeBytes": 13840,
+      "sha256": "27a4afb925340e30037bc2ff99f0b1d5190ddd35b3fae1ebb7a766bb1e3d86c1"
+    },
+    "catalogue/candidate-v75/tuf/targets/2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07.windows-focuswriter-20261011.acceptance.json": {
+      "sizeBytes": 4562,
+      "sha256": "2b469647e0207d8507c766d00708cde9630aa95bb3193ef6075eb5393c8bfd07"
+    },
+    "catalogue/candidate-v75/tuf/targets/31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238.windows-rolling-20260929.acceptance.json": {
+      "sizeBytes": 2738,
+      "sha256": "31ea9f25cbf61539bebc75d49208f10d7cda73f77fad58f595e76138c98f1238"
+    },
+    "catalogue/candidate-v75/tuf/targets/33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b.windows-jpegview-20261003.acceptance.json": {
+      "sizeBytes": 7617,
+      "sha256": "33204cd925622a25af3bd1aa61c41e3f50abcd59acf6da3d42ae1eace5d3006b"
+    },
+    "catalogue/candidate-v75/tuf/targets/3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67.windows-kdiff3-20260930.acceptance.json": {
+      "sizeBytes": 1699,
+      "sha256": "3a9e64b4a32bddcd05b5f49c1833612b6c58dd1b641ead8490612682182bdf67"
+    },
+    "catalogue/candidate-v75/tuf/targets/3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282.windows-clementine-20261013.acceptance.json": {
+      "sizeBytes": 15140,
+      "sha256": "3c3c3087e432ba7a335cc92702af604a38dcb3e3eece07d067f5d5a43e653282"
+    },
+    "catalogue/candidate-v75/tuf/targets/3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999.windows-copyq-20261012.pending-correction.json": {
+      "sizeBytes": 1575,
+      "sha256": "3d854ad15f0b1218ed1bea90e41bcc79cbbe852e528df5e3b6ecfd19546e8999"
+    },
+    "catalogue/candidate-v75/tuf/targets/48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb.windows-doxygen-20261012.acceptance.json": {
+      "sizeBytes": 406124,
+      "sha256": "48dad242c0271b2d2d0064bce777e6e68a2aa73150cab8d9606ec4a0bffa5ebb"
+    },
+    "catalogue/candidate-v75/tuf/targets/492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573.windows-windirstat-20261003.acceptance.json": {
+      "sizeBytes": 10640,
+      "sha256": "492bbeb7755b324c46de1391973067f55601db4f513894b03d626d790ad8e573"
+    },
+    "catalogue/candidate-v75/tuf/targets/59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934.windows-treesheets-20261012.acceptance.json": {
+      "sizeBytes": 6769,
+      "sha256": "59e1136bcf10ee5bf7521eaa611cb23a11f0e96436453224fc38c191bc38d934"
+    },
+    "catalogue/candidate-v75/tuf/targets/5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f.windows-xmlcopyeditor-20261011.acceptance.json": {
+      "sizeBytes": 4553,
+      "sha256": "5b3b98ab002ef19b2bdf7e7d804453c8d4d4c08f8140031c894e72894656dc0f"
+    },
+    "catalogue/candidate-v75/tuf/targets/5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf.windows-texstudio-20260930.acceptance.json": {
+      "sizeBytes": 1617,
+      "sha256": "5bd0dd7dbc567102d0b72af5ddee154738612a56cef7be886fe3e623bf89a6bf"
+    },
+    "catalogue/candidate-v75/tuf/targets/5d0128c8b6e2db41f1d7f0bdd4ac91e490abad40cd1f203ecedf6b7e232a3288.windows-smplayer-20261013.acceptance.json": {
+      "sizeBytes": 15270,
+      "sha256": "5d0128c8b6e2db41f1d7f0bdd4ac91e490abad40cd1f203ecedf6b7e232a3288"
+    },
+    "catalogue/candidate-v75/tuf/targets/6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f.windows-inkscape-20261003.acceptance.json": {
+      "sizeBytes": 12679,
+      "sha256": "6062febdbbab76a1bdfd25d8af16979123f730724668100d270b735a1dbab76f"
+    },
+    "catalogue/candidate-v75/tuf/targets/6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27.windows-geany-20260930.acceptance.json": {
+      "sizeBytes": 1652,
+      "sha256": "6837f3dcaa94f3394189e4ed595dc6542f04ef58d9d81b2d2400dcf6e9655d27"
+    },
+    "catalogue/candidate-v75/tuf/targets/6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f.windows-picard-20261012.acceptance.json": {
+      "sizeBytes": 6277,
+      "sha256": "6e130ad48c3b171256141d9158749a7607819f01fac67e0f7154e78c6c9dfe0f"
+    },
+    "catalogue/candidate-v75/tuf/targets/707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3.windows-lmms-20261012.acceptance.json": {
+      "sizeBytes": 621370,
+      "sha256": "707769bc79fa94673ad258a118c311a24ae7b340654dcfdbd9a248175ebc90c3"
+    },
+    "catalogue/candidate-v75/tuf/targets/766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20.windows-tuxpaint-20261005.acceptance.json": {
+      "sizeBytes": 9285,
+      "sha256": "766e1cdb05597df6762d3b9bbf6f80f1affcdfef796a873b48b03c3c6be31c20"
+    },
+    "catalogue/candidate-v75/tuf/targets/79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038.windows-sqlitestudio-20260929.acceptance.json": {
+      "sizeBytes": 1146,
+      "sha256": "79ccc06e1d68f0c987b0f2571baf7895d2739cea47010ecb955eeca6c8dee038"
+    },
+    "catalogue/candidate-v75/tuf/targets/7bc6616b1a691985a9681b80bad48e4a3d737889a4a67fbf9a91a33886fbabc2.windows-fityk-20261013.acceptance.json": {
+      "sizeBytes": 13775,
+      "sha256": "7bc6616b1a691985a9681b80bad48e4a3d737889a4a67fbf9a91a33886fbabc2"
+    },
+    "catalogue/candidate-v75/tuf/targets/8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d.windows-peazip-20261001.acceptance.json": {
+      "sizeBytes": 4783,
+      "sha256": "8003f26cdcce9ccbf63f519e7a6217d133af0021eb0b93fb3e7e0c9be136c14d"
+    },
+    "catalogue/candidate-v75/tuf/targets/85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7.windows-lazpaint-20261009.acceptance.json": {
+      "sizeBytes": 6220,
+      "sha256": "85d617b7e1f612f0a31dcf33ad53833eae7098c339e8e549c028af7bb04e41d7"
+    },
+    "catalogue/candidate-v75/tuf/targets/8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29.windows-qxmledit-20261011.acceptance.json": {
+      "sizeBytes": 4514,
+      "sha256": "8606017f88f7be5c8feb9696e5f17681a38dc739eefa4c6c867a88d986e9fc29"
+    },
+    "catalogue/candidate-v75/tuf/targets/8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb.windows-cppcheck-20261012.acceptance.json": {
+      "sizeBytes": 23230,
+      "sha256": "8957db5a0b091f5a094447b9da2546197ead2145ff72e6909749d3b7a94b91fb"
+    },
+    "catalogue/candidate-v75/tuf/targets/8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac.windows-krita-20260930.acceptance.json": {
+      "sizeBytes": 4223,
+      "sha256": "8af3fa2744aff759c3d9b52619ee8648dd27125efc152bd4cced8546007e78ac"
+    },
+    "catalogue/candidate-v75/tuf/targets/8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af.windows-tiled-20261011.corrected.acceptance.json": {
+      "sizeBytes": 7879,
+      "sha256": "8c060c35f18693c85ea82b163fc10fcb3f0ad2b561b769e09e047e4089c121af"
+    },
+    "catalogue/candidate-v75/tuf/targets/91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55.windows-frhed-20261011.acceptance.json": {
+      "sizeBytes": 4642,
+      "sha256": "91d9be5046ed652fdd3586c72118da512bb849d15005d0137562bd39fa883a55"
+    },
+    "catalogue/candidate-v75/tuf/targets/948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12.windows-sigil-20261011.acceptance.json": {
+      "sizeBytes": 7564,
+      "sha256": "948b69c80c3ed0f1bb801a2604eb4af0b47a5ba166cb9d21fa6028c9b0b98a12"
+    },
+    "catalogue/candidate-v75/tuf/targets/9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058.windows-windjview-20261011.acceptance.json": {
+      "sizeBytes": 6405,
+      "sha256": "9ca857952432e5fdb3f3b0c36daf7ee94abd88cdcf1d8bfa6b205a697487f058"
+    },
+    "catalogue/candidate-v75/tuf/targets/9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0.windows-gvim-20261012.acceptance.json": {
+      "sizeBytes": 4767,
+      "sha256": "9fb98dac0efff03548c95e8489ce60a6e33f93488671bb60c3c32deb5d0b8dd0"
+    },
+    "catalogue/candidate-v75/tuf/targets/a327650598ac39e91dfe5d1c87154c725aa125e3a8e34ce3eddd368cfe393a3d.windows-devcpp-filename-alias-20261013.acceptance.json": {
+      "sizeBytes": 4138,
+      "sha256": "a327650598ac39e91dfe5d1c87154c725aa125e3a8e34ce3eddd368cfe393a3d"
+    },
+    "catalogue/candidate-v75/tuf/targets/a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4.windows-mpchc-20261006-corrected.acceptance.json": {
+      "sizeBytes": 11228,
+      "sha256": "a445ea27fe7c33c0f5b258f15d7de35f3584c4091bf9e36303f703d45c3c20a4"
+    },
+    "catalogue/candidate-v75/tuf/targets/a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4.windows-winmerge-20260930.acceptance.json": {
+      "sizeBytes": 1656,
+      "sha256": "a511a8261a331c547ae3a17d1cb229c3c24df39c4252f2d0d98059d9e18928a4"
+    },
+    "catalogue/candidate-v75/tuf/targets/ad0fe881851e9c01c692fa332025012a51f1d88619d2686878090d14b3e3ed6a.catalogue.json": {
+      "sizeBytes": 80429,
+      "sha256": "ad0fe881851e9c01c692fa332025012a51f1d88619d2686878090d14b3e3ed6a"
+    },
+    "catalogue/candidate-v75/tuf/targets/ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50.windows-dosbox-20261011-corrected.acceptance.json": {
+      "sizeBytes": 6445,
+      "sha256": "ad4ea9479d72a3b06ccd8c9805ed64cf1ab7863663f9f18c45b1f09c3972ad50"
+    },
+    "catalogue/candidate-v75/tuf/targets/afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd.windows-nsis-20261012.corrected.acceptance.json": {
+      "sizeBytes": 5463,
+      "sha256": "afa01d71079ed84cef3aa6f2ddfd43296c0af8fc7aede28a72b23b45bc84f4cd"
+    },
+    "catalogue/candidate-v75/tuf/targets/b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34.windows-gnuplot-20261012.acceptance.json": {
+      "sizeBytes": 5745,
+      "sha256": "b144fbb3b2a20fde993599b781d95125fb1e75747d61b8139240a1078cf15b34"
+    },
+    "catalogue/candidate-v75/tuf/targets/b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6.windows-audacity-20261003.acceptance.json": {
+      "sizeBytes": 6071,
+      "sha256": "b5bdd0e6f7a37746cfa0075723d9764a32e1b18ed3c926ae04df1c318c802cd6"
+    },
+    "catalogue/candidate-v75/tuf/targets/b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73.windows-artha-20261011-cwd.acceptance.json": {
+      "sizeBytes": 4567,
+      "sha256": "b635ff6d42effba95d707034d1a6bde9aafdce5379a7f31ad3de81e3ee0f4f73"
+    },
+    "catalogue/candidate-v75/tuf/targets/b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a.windows-mpchc-20261006.acceptance.json": {
+      "sizeBytes": 10745,
+      "sha256": "b829f852f0fb08f3684dee087c7e07d3f91a8fae605b5fb90ba866774a1db36a"
+    },
+    "catalogue/candidate-v75/tuf/targets/b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11.windows-dbbrowser-20261011.acceptance.json": {
+      "sizeBytes": 6075,
+      "sha256": "b87b4d5912c423a10e83961828dd690202e034f037883ea1ef8828a28722ff11"
+    },
+    "catalogue/candidate-v75/tuf/targets/b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931.windows-rednotebook-20261011.acceptance.json": {
+      "sizeBytes": 5786,
+      "sha256": "b98293bd50b537ca15d507578eb420d69ecee42efa84156e7d4d8ad0f77b1931"
+    },
+    "catalogue/candidate-v75/tuf/targets/b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5.windows-rapidcrc-20261012.acceptance.json": {
+      "sizeBytes": 6788,
+      "sha256": "b9a01d4b23884fbaa80b823b438ed5d4091210e8c39d3d3253a4728a1806d5d5"
+    },
+    "catalogue/candidate-v75/tuf/targets/ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba.windows-scribus-20261012.acceptance.json": {
+      "sizeBytes": 12090,
+      "sha256": "ba5a0d53a4244b5f8fc2bcde9c91345a528763bf5b00f5d1b793e0f1f9b8a7ba"
+    },
+    "catalogue/candidate-v75/tuf/targets/c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281.windows-mkvtoolnix-20261012.acceptance.json": {
+      "sizeBytes": 16769,
+      "sha256": "c0c21edd6f1659bbe73334e9c85be0687cce23157a22a8426a43fb4be3ba7281"
+    },
+    "catalogue/candidate-v75/tuf/targets/cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86.windows-librecad-20261012.acceptance.json": {
+      "sizeBytes": 14404,
+      "sha256": "cbcee427d2727ec19b89143dd92047b24a28841f630f084109d0a865f2bb5d86"
+    },
+    "catalogue/candidate-v75/tuf/targets/d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b.windows-cherrytree-20261011.acceptance.json": {
+      "sizeBytes": 7460,
+      "sha256": "d0a5fbf138e07dcac6017abc60830aea8635bbd0bd7de3859f7a5697cda3543b"
+    },
+    "catalogue/candidate-v75/tuf/targets/d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264.windows-xournalpp-20261003.acceptance.json": {
+      "sizeBytes": 4586,
+      "sha256": "d15c2daaecd23257c006678cfee7846d235fc0857525b9e0f47c0f3c6c244264"
+    },
+    "catalogue/candidate-v75/tuf/targets/d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3.windows-copyq-20261012.acceptance.json": {
+      "sizeBytes": 34032,
+      "sha256": "d921df079eb85c27bbf63275fbbbeea54b5f1c7afd99474078e3b138e9bc03a3"
+    },
+    "catalogue/candidate-v75/tuf/targets/da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3.windows-qbittorrent-20261012.acceptance.json": {
+      "sizeBytes": 4945,
+      "sha256": "da04992f89fa32367df43ae03af3824f7f1bea916f8475984de2deaff77838b3"
+    },
+    "catalogue/candidate-v75/tuf/targets/da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd.windows-texworks-20261011.acceptance.json": {
+      "sizeBytes": 3703,
+      "sha256": "da5b817afe8d5548616dba90b26eebca7c75deed9e4c23122fe0dec24dfd32fd"
+    },
+    "catalogue/candidate-v75/tuf/targets/e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185.windows-dia-20261005.acceptance.json": {
+      "sizeBytes": 9388,
+      "sha256": "e464bb946aca446bbf590b3db7cdb884baaaf93c7f5d12b9e30c2235e6a0d185"
+    },
+    "catalogue/candidate-v75/tuf/targets/e730f26673f64b54c4133a27feb8a509d26ed0b7142d6cacc2165d334730c4bf.windows-pnotepad-20261013.acceptance.json": {
+      "sizeBytes": 4811,
+      "sha256": "e730f26673f64b54c4133a27feb8a509d26ed0b7142d6cacc2165d334730c4bf"
+    },
+    "catalogue/candidate-v75/tuf/targets/eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9.windows-tiled-20261011.alias.acceptance.json": {
+      "sizeBytes": 8122,
+      "sha256": "eefef2c13f0730abea0cad400517288a95cc2bb607fe1b89322c09b55f533fb9"
+    },
+    "catalogue/candidate-v75/tuf/targets/f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d.windows-meld-20261011.acceptance.json": {
+      "sizeBytes": 5518,
+      "sha256": "f21b4e32de4d9b6425fcc7b4dea5328ab7dd96150c56b0e982fd174f31ba4b3d"
+    },
+    "catalogue/candidate-v75/tuf/targets/f233a5dd1511e25ff19a48e24019fa66aaec6e6c65b2bbda445cbf548038111b.windows-antrenamer-20261013.acceptance.json": {
+      "sizeBytes": 7274,
+      "sha256": "f233a5dd1511e25ff19a48e24019fa66aaec6e6c65b2bbda445cbf548038111b"
+    },
+    "catalogue/candidate-v75/tuf/targets/f7382675ef473b007e8d9ec735d9ede781bbbf3cd6f579438aa9836327f4c0ab.windows-codeblocks-20261012.acceptance.json": {
+      "sizeBytes": 16916,
+      "sha256": "f7382675ef473b007e8d9ec735d9ede781bbbf3cd6f579438aa9836327f4c0ab"
+    },
+    "catalogue/candidate-v75/tuf/targets/f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa.windows-mediainfo-20261012.acceptance.json": {
+      "sizeBytes": 28230,
+      "sha256": "f849b1f541b114fe5a67b37d8cc2307e10ba6df8441de59217d0490ad8e51baa"
+    },
+    "catalogue/candidate-v75/tuf/targets/f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915.windows-tiled-20261011.acceptance.json": {
+      "sizeBytes": 6906,
+      "sha256": "f8894b1252eb7cf502dccbfbdf9f63c5f124f3e644ffaec8a24a4ad764ac3915"
+    },
+    "catalogue/candidate-v75/tuf/targets/fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a.windows-doublecmd-20261002.acceptance.json": {
+      "sizeBytes": 3517,
+      "sha256": "fa65c1a7365033bb92c5dee0815457da247a2f58091911ab29fdb62e737fd23a"
+    },
+    "catalogue/candidate-v75/tuf/trusted-root.json": {
+      "sizeBytes": 2145,
+      "sha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e"
+    },
+    "docs/evidence/2026-10-13-graph-current-state.json": {
+      "sizeBytes": 923,
+      "sha256": "8998c443f56fcba3a17959af5df8a2c0d42f405019380870e334ef8b5ce5d18a"
+    },
+    "docs/evidence/2026-10-13-graph-failures.json": {
+      "sizeBytes": 5012,
+      "sha256": "2a08ab1ba9c7d6624d6a349ad2b95d82e586ee2744662bdb925deeb70eb4d24b"
+    },
+    "docs/evidence/2026-10-13-graph-git-byte-preservation-precheck.json": {
+      "sizeBytes": 3301,
+      "sha256": "6fb2dff7d4ed48a25ecc300a0da2db4f01826536572d80bb8276bad74ca77bf5"
+    },
+    "docs/evidence/2026-10-13-graph-git-precheck-final.json": {
+      "sizeBytes": 680,
+      "sha256": "c40faada2d6a882c63d01a29e30cc7dc02b2dc591899a9ee388bc6c221483aa7"
+    },
+    "docs/evidence/2026-10-13-graph-gui.json": {
+      "sizeBytes": 40717,
+      "sha256": "9b95e378528fb22190afb3fc22a53d13a2fd0e0600c4b47593b3b19470f3f275"
+    },
+    "docs/evidence/2026-10-13-graph-installation-later-observations.json": {
+      "sizeBytes": 26107,
+      "sha256": "2f3dce46141bba4bd427c3dab5fece2d2ba7caabae3ddef3c2800f6f4b5d3a55"
+    },
+    "docs/evidence/2026-10-13-graph-installation.json": {
+      "sizeBytes": 19699,
+      "sha256": "55a259e6b13182f5e268c6926aba95851e709e0bb98e93489d530c0558023e55"
+    },
+    "docs/evidence/2026-10-13-graph-later-observations.json": {
+      "sizeBytes": 2300,
+      "sha256": "c8b34bb457bcd412d87e405a80bdd92069da3e21c7ceaab230d5eb24e12a11f2"
+    },
+    "docs/evidence/2026-10-13-graph-market-gui.json": {
+      "sizeBytes": 44328,
+      "sha256": "cbd21044bcad55565f70b6dd6b6ddb1cda06eb9c23d1d75434426191fd6b0b83"
+    },
+    "docs/evidence/2026-10-13-graph-market-native-edit-scope-correction.json": {
+      "sizeBytes": 1283,
+      "sha256": "e44a83d9ec5f614f62ded6809c62fef09c01ce7d149ce60b5e8e07abbbb74af7"
+    },
+    "docs/evidence/2026-10-13-graph-market-size-label-correction.json": {
+      "sizeBytes": 1407,
+      "sha256": "3a045c165bcdc8dc6cf47a6ca8ceb7fc46b87e82bedc21adef203720ec75b69e"
+    },
+    "docs/evidence/2026-10-13-graph-publication.json": {
+      "sizeBytes": 3818,
+      "sha256": "e722b70db57be557b1533a26aa7e5791c9b82178fa6d1ef03b1ad2b0e4d85fab"
+    },
+    "docs/evidence/2026-10-13-graph-runtime-recovery.json": {
+      "sizeBytes": 49964,
+      "sha256": "7409ea1fbe48a923d1fc38a014576435564f0d69163fa350530a78a36ef2316f"
+    },
+    "docs/evidence/2026-10-13-graph-scope-and-failure-corrections.json": {
+      "sizeBytes": 1891,
+      "sha256": "8e416147ad0403201d4f134a38e498317ebe8cb2ea58bcdad5ea6b45c1e09bf6"
+    },
+    "docs/evidence/2026-10-13-graph-source.json": {
+      "sizeBytes": 12149,
+      "sha256": "26cee16bfac885c39c52e95518b1726c750ab2994be0c1027a7e6def4ecc76b6"
+    },
+    "docs/evidence/graph-20261013/installed-License.txt": {
+      "sizeBytes": 14971,
+      "sha256": "9ccb32bcf0183b09d884dacdd6106fb553075e2dc4483da96597283a6712582e"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/07-market-input.jpg": {
+      "sizeBytes": 41141,
+      "sha256": "81b51fb471ab259d3f56fb79626e39a01d894cae71eaba8b99ce9af40ded9896"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/08-market-equation.jpg": {
+      "sizeBytes": 52887,
+      "sha256": "a4ec2c8c8ace4be7b3415f36a1c47cc15cef3fb22c728afb4165eb92c803b2e4"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/09-market-save-as.jpg": {
+      "sizeBytes": 47351,
+      "sha256": "f1e6aace134c7347b1937641dfaf09e35a5abc57f12a8ae00daf0c29dcca9945"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/10-market-saved-function.jpg": {
+      "sizeBytes": 40988,
+      "sha256": "decfeb581cd2907783f98cace74e0173c35c46dc1a13bb839622427742fefe26"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/11-market-new-empty.jpg": {
+      "sizeBytes": 39673,
+      "sha256": "fe6424d667dbec0ac69377fea73521a962987fced0828e9209e86515f6ffa1fb"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/12-market-new-open.jpg": {
+      "sizeBytes": 40823,
+      "sha256": "264b749ae89b270d6b63671849e84ac676bdafb3bd83e4e4592a53897a139eb9"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/13-rollback-original-empty.jpg": {
+      "sizeBytes": 38678,
+      "sha256": "90fc143cb8dbb473badc8531992b7267dd3c84c2dc9731adf5f79a5be191a9b2"
+    },
+    "docs/evidence/graph-20261013/market-and-rollback/14-rollback-original-open.jpg": {
+      "sizeBytes": 40713,
+      "sha256": "f58ad91f3f39b681b0c94a1f36ed99de16c999b337b81e6cd68495290d6ecd04"
+    },
+    "docs/evidence/graph-20261013/market/market.grf": {
+      "sizeBytes": 549,
+      "sha256": "cd785dfc193d972046791bd8dbdd43208d96bf72b42f4ccb041d728112fae3fa"
+    },
+    "docs/evidence/graph-20261013/market/市场函数.grf": {
+      "sizeBytes": 442,
+      "sha256": "4d41d26136f59d557d9834e9007fe63e6e36570eaf38269ac0a37af80054d868"
+    },
+    "docs/evidence/graph-20261013/original/01-original-input.jpg": {
+      "sizeBytes": 40558,
+      "sha256": "4a5bd49d506326209900bba7474390aa4f711fb627c0938492a3aee2dd5bc097"
+    },
+    "docs/evidence/graph-20261013/original/02-original-equation.jpg": {
+      "sizeBytes": 53295,
+      "sha256": "f9b4cc5333eda46112d966ef98a5b29c1f3d5d1f1b420dbbd98f1bafe05b06fe"
+    },
+    "docs/evidence/graph-20261013/original/03-original-save-as.jpg": {
+      "sizeBytes": 47792,
+      "sha256": "9190d6417b451d1547e93affe5d6ee9e14cd36f88f642ba85da52416cd858eb7"
+    },
+    "docs/evidence/graph-20261013/original/04-original-saved-function.jpg": {
+      "sizeBytes": 40982,
+      "sha256": "fca4b1817eddcd1b289f0ad8778913addc87124d96166fe5515193dbcb079bb5"
+    },
+    "docs/evidence/graph-20261013/original/05-original-new-empty.jpg": {
+      "sizeBytes": 39707,
+      "sha256": "91833445b7a14a73a7c30290a36054254b3d71f27f93a01aef84bdb6af758b8a"
+    },
+    "docs/evidence/graph-20261013/original/06-original-new-open.jpg": {
+      "sizeBytes": 40720,
+      "sha256": "7e87f0700cd9a439ec010c17cff6248aeacef0605c74bc5bde8ab7355428e698"
+    },
+    "docs/evidence/graph-20261013/original/original.grf": {
+      "sizeBytes": 548,
+      "sha256": "7cc14222bc9589009be24f94ac7b5ffb6a7141f37505ddce33a9bd942516d4e2"
+    },
+    "docs/evidence/graph-20261013/original/原始函数.grf": {
+      "sizeBytes": 439,
+      "sha256": "50f9df28c35c5ad9d27fc427e7d5d05eefae1608044925ddf3b31efa4a02ab37"
+    },
+    "docs/evidence/graph-20261013/report-first-size-label550.md": {
+      "sizeBytes": 6840,
+      "sha256": "50e050770791fc53292cb98264703313d0326b84f40d02099e38c06d9c3d892d"
+    },
+    "docs/evidence/graph-20261013/source/COPYING": {
+      "sizeBytes": 18349,
+      "sha256": "19404e184cf45ec991b54e1e6f05f847ad8f13fee2a51f3a2d9a960c8f7cb26b"
+    },
+    "docs/evidence/graph-20261013/source/Components/Common/ConfigFile.cpp": {
+      "sizeBytes": 9230,
+      "sha256": "5d0700ce6ad503f3a8eb7da18cf28630989e40da01f9a0464c78166b7332f2a8"
+    },
+    "docs/evidence/graph-20261013/source/Components/Common/ConfigFile.h": {
+      "sizeBytes": 4655,
+      "sha256": "84a67e8100ec39d55da21f482d6904860a56a055e157b5afa84b5f9e1a4b36f9"
+    },
+    "docs/evidence/graph-20261013/source/Examples/Trigonometry.grf": {
+      "sizeBytes": 939,
+      "sha256": "97d7c90cb56bdf09eee18111f91c965cc52989dbe411bcf61f18e2643d385ed3"
+    },
+    "docs/evidence/graph-20261013/source/Install/Graph.iss": {
+      "sizeBytes": 11635,
+      "sha256": "41df6bb084b4d35dd095b6ce01f9a3d3bc413a40d3897819824a307d4f87ba67"
+    },
+    "docs/evidence/graph-20261013/source/Install/License.txt": {
+      "sizeBytes": 14971,
+      "sha256": "9ccb32bcf0183b09d884dacdd6106fb553075e2dc4483da96597283a6712582e"
+    },
+    "docs/evidence/graph-20261013/source/ReadMe.txt": {
+      "sizeBytes": 2335,
+      "sha256": "b6c4b94d9911f94a722e3fd3317dc58edd0a198825ead3763b16d7c3865723cc"
+    },
+    "docs/evidence/graph-20261013/source/Source/Graph.cpp": {
+      "sizeBytes": 4663,
+      "sha256": "b22f69a2eb2b4ba96af6e1fa686e9e6837e002065fd2e84253fb0f6d9ae0a450"
+    },
+    "docs/evidence/graph-20261013/source/Source/Source/Data.cpp": {
+      "sizeBytes": 23470,
+      "sha256": "55f7708da5c2f568f0f2223383d0692c2edd68602c49ef6f0898e37893a84055"
+    },
+    "docs/evidence/graph-20261013/source/Source/Source/Data.h": {
+      "sizeBytes": 4671,
+      "sha256": "c5f3ce7898c3dc17689cb8c10b85e9fddb928ee9c183cb8ea74a742c1b4f19ff"
+    },
+    "docs/evidence/graph-20261013/source/Source/Source/Files.cpp": {
+      "sizeBytes": 13353,
+      "sha256": "32e3b62ddcb87703e82993da3d0158dca2eceb929596f7f096bcfd8f7b87d653"
+    },
+    "docs/evidence/graph-20261013/source/Source/Source/Graph.h": {
+      "sizeBytes": 2975,
+      "sha256": "031972763ce13bd062aab71968fa5cc896ed4daf42186050978a48ffcfb7f467"
+    },
+    "docs/evidence/graph-20261013/source/Source/Source/GraphElem.cpp": {
+      "sizeBytes": 48554,
+      "sha256": "c0b69a8c03d15db23d83342fd7423b778ffd6e5aed88c399f7b2e9ae9308462a"
+    },
+    "docs/evidence/graph-20261013/source/Source/Source/GraphElem.h": {
+      "sizeBytes": 21297,
+      "sha256": "7c137e93c4e51a87da06996a3cf03d42e2d8b928bb06d0b2c5884be3c0b8a700"
+    },
+    "docs/evidence/windows-graph-20261013.acceptance.json": {
+      "sizeBytes": 7584,
+      "sha256": "0aec75b1a9aa64dc23ac31977e29a2b634416ee2e3c6c8ecead76caa73dda9b9"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 83327,
+      "sha256": "bb1d143a1c63d729a2c06d6027bfbafe3d7d5997135382f15cf127ed51b94f99"
+    },
+    "docs/windows-rolling-20261013-graph.md": {
+      "sizeBytes": 6840,
+      "sha256": "11f11dd18c8afd200fcb8c52e650b0939766d617c7221fdeb18658af147d02ee"
+    }
+  },
+  "actualAudit": {
+    "helper": "review-graph-final-audit-20261013.py",
+    "helperSha256": "7a2bfecd4bf7f3b7d76b0e2072897d1c89afe5e1a1f0691dd3e864f0b291c29d",
+    "actualExitCode": 0,
+    "observedCompleteResultInToolHistory": true,
+    "exactStdoutStandaloneRawSaved": false,
+    "noExactHistoricalRawFabricated": true
+  },
+  "independentChecks": {
+    "all133ActualRawPinsRecomputed": true,
+    "all133RawAndFilteredGitBlobIdentitiesEqual": true,
+    "all133RelativeNoIndexChecksZeroDiagnostics": true,
+    "indexEmptyBeforeAndAfterChecks": true,
+    "21ExactAttributePathRulesVerified": true,
+    "old43863ByteLfPrefixMatchesParentHead": true,
+    "oldPrefixSha256": "873009936bda8fbd195064ee8d6ce668c9fc2313c9964dd9af455f68660928f3",
+    "newSuffixLfOnly": true,
+    "renormalizeOrStagePerformed": false,
+    "4605OldImmutableEvidenceRawEqualsFreeze": true,
+    "28OriginalGraphFrozenRawEqualsFreeze": true,
+    "originalSignedMarketPendingSourceInstallGuiLabelsRemain": true,
+    "4607EvidenceScopeSeparateFrom5848Tracked": true,
+    "1241OutsideIndexAndParentHeadFullRawBlobsEqual": true,
+    "allWorkspaceBytesEqualClaimed": false,
+    "old66AcceptedAllFieldsEqualPlusUniqueGraph67": true,
+    "17PendingAllFieldsEqual": true,
+    "onlyAllowedLedgerFieldsChanged": true,
+    "cachedInstaller10074640LocalShaAndSource12587468OfficialDisplayedShaMatch": true,
+    "first3560727SourcePrefixExactRawHeld": true,
+    "matching65536PrefixProbeAndNineContiguous206TailSafePinsWholeArchiveReconstruction": true,
+    "zip1257Unique1162NonDirectoryCrcPassed": true,
+    "all14SelectedSourceRawMatchesExactArchiveMembers": true,
+    "actualCrLfLfAndNoCrCrLfCountsChecked": true,
+    "mainSelectedGpl2OrLaterDeclarationRead": true,
+    "installed14971LicenseExactInstallLicenseOnlyNotCopying": true,
+    "fullBundledLicenceClosureVerified": false,
+    "bootstrapPe014cTwoInno550MarkersAndNativeDir13ArgumentsChecked": true,
+    "installerDigestUpstreamVerified": false,
+    "original439Input548OutputAndMarket442Input549OutputWholeFiniteIndependentReconstruction": true,
+    "bothOutputs35CrLfNoBomWithOriginalOsTrailingBlankAndFinalEmptyLinesHeld": true,
+    "oneStandardFunctionOriginalX2ToX2Plus1Market9MinusX2To8MinusX2": true,
+    "originalRedAndMarketBlueScope": true,
+    "fourAxisRangesHeldNativeAutoTicksGridX1To05Y2To1Explicit": true,
+    "nativeVersionOsSerializationNotWindowsAboutOrScientificAccuracyProof": true,
+    "twoGenerationDefinitionLauncherRuntimeFullFieldsEqual": true,
+    "twoActualInventories78PinsEach77CrossGenerationPinsEqualSoleExact13100UninsDiff": true,
+    "uninsCauseOrUninstallAccepted": false,
+    "fiveDistinctFormalSuccessfulExit0JobsAndWineServerStopEvents": true,
+    "freshEmptyGraphExplicitOpenAndRollbackOriginalOpenScopeSupported": true,
+    "nativeAltF4NormalExitOnlyNotSoleAcceptance": true,
+    "market526153SavedReadBackCheckpointBeforeExactRollbackResultsCrossChecked": true,
+    "rollback526154OldFullFieldsAndGenerationPreservationResultsCrossChecked": true,
+    "third527154AndActualNewRegistryPinsBeforeNormalRestartResultsCrossChecked": true,
+    "bothServicesNormalRestartPidsChanged": true,
+    "sevenFullClassesEqualityAssertionsCurrentHelperAndReceiptConsistencyChecked": true,
+    "finalPrivateCpOnlyFilenameShaCrossChecked": "9ab2c664d92c1e9fda3c10b78e1a7578e2049c3b9363701ef04a987d03af4b93",
+    "fullPrivateCpReadOrReplayed": false,
+    "systemUserRegistrySameSizeByteChangesAnd28740PrivateDiffPinReceiptsConsistent": true,
+    "causeOrKeyValueEquivalenceEstablished": false,
+    "marketAllFinalPinsHeld": true,
+    "root1AndAllThreeRole84RsaPssPublicSignaturesIndependentVerified": true,
+    "146ActualTargetSizeShaPinsRecomputed": true,
+    "143PreviousNonCatalogueTargetsMetadataAndRawBytesEqual": true,
+    "rootBytesHeld": true,
+    "catalogue69Old68EntriesEqualPlusGraph": true,
+    "80PublicFilesJsonOnlyHashedTargetRawMatchesSignedInputs": true,
+    "archive1966080Sha81UniqueMembersAll80PublicPayloadRawMatches": true,
+    "all14JpegsActualBytePinsMagicAndEachVisuallyReviewedNoLogin": true,
+    "133JsonStructuredPrivacyAndUrlPatternScanPassed": true,
+    "onlyInheritedRefLangAndOfficialGreenfishFilenameQueriesAllowed": true,
+    "first130ProspectiveHistoricalRawCopiesAllPinsRecomputed": true,
+    "oldFirst550ReportHistoricalCopyHashAndBytesHeld": true,
+    "correctedMainReportAndNewGraphLedger549Checked": true,
+    "originalHostAndPublicMarketScope550AndShiftErrorsHeldAndSeparatelyCorrected": true,
+    "guestGuiOrCommandsIndependentlyExecuted": false,
+    "privateHttpResponseQueryCredentialsPrivateKeysLoginImagesRead": false,
+    "repoIndexGuestServiceCpSignatureMutationsByReviewer": false
+  },
+  "resolvedImportantFindings": [
+    {
+      "finding": "Initial report/newGraph size prose and inherited market-final/public-market scope said550B; actual immutable market.grf is549B with SHAcd785dfc193d972046791bd8dbdd43208d96bf72b42f4ccb041d728112fae3fa/35CRLF.",
+      "resolution": "Main report and only newGraph limitation corrected to549. Original first report/raw130 snapshot and original market scope remain; separate2026-10-13-graph-market-size-label-correction.json explicitly distinguishes wrong label from originally correct saveProof/publication/fixture549 byte fields.",
+      "noOutputSignatureCpOrGuiChange": true
+    },
+    {
+      "finding": "Inherited market scope claimed explicit Shift keys; actual market edit was Home/Delete first9/type8, with-x^2 unchanged. Shift6/ShiftEqual belonged only to original role.",
+      "resolution": "Separate2026-10-13-graph-market-native-edit-scope-correction.json states actual method and preserves erroneous original scope raw. Public marketEquation field/report and images agree.",
+      "noRepeatedGuiOrFabricatedShiftProcess": true
+    }
+  ],
+  "criticalOrImportantUnresolvedFindings": [],
+  "reviewerHistory": [
+    "Original preaudit V1 assumed failuresEvidence in signed receipt and raised KeyError before later signature/privacy checks/result write. Actual receipt has sourceEvidence/guiEvidence plus full limits; unique V2 checked both actual references and separately frozen failure JSON/limits. V1/helper and exact traceback only tool history retained, no standalone exact raw fabricated.",
+    "Final review detected and stopped FINAL/stage for550-vs549 important prose mismatch. Raw byte measurement confirmed549; parent separately identified inherited Shift prose mismatch and preserved raw history. Review resumed only for new133 V3 manifest after both corrections.",
+    "Initial combined final installation-observation tool display was truncated; documents were nevertheless fully parsed and structured values checked by independent audit. Truncated display is not a full manual read claim.",
+    "Final audit against133 V3 completed with actual exit0 on first execution; earlier130 and132 manifests remain historical. Preaudit is FINALfalse and is not substituted for this final review."
+  ],
+  "limitations": [
+    "Independent host evidence review, not guest GUI/authentication/network/privateCP replay. Reviewer read only public evidence, public-safe results/helpers/fixture data/source caches and public historical prospective copies. No complete private CP/private HTTP responses or signed query/private keys/password/credentials/login screenshots read or copied; no guest command/API/service/install/sign/GUI/stage/commit/push run.",
+    "Only one standard function each: small Chinese-name synthetic GRF, native Edit/SaveAs and new empty formal process explicit Open, cached StoreIPC same-version update and exact original rollback/normal service restart. No full GRF/scientific precision/calculus/fitting/export/printing/Python/plugins/large-bad input/direct Chinese keyboard/network/migration/unattended/GUI Store button acceptance. Synthetic data do not count as applications.",
+    "Whole serialization model has observed nativeVersion4.4.2.543/OSWindowsNT6.2, native auto tick/grid changes and defaults as explicit constants. It proves only these finite saved bytes and ranges/equations, not a genuine Windows OS/About observation, full format/sourcebinary correspondence or scientific correctness. About unmeasured; nativeTipShowAtStartup checkbox retained; curve shape/images not scientific accuracy certification.",
+    "Actual original548 and market549 bytes, no BOM35CRLF/OS trailingblank/ending blanklines held. Original wrong550/Shift prose remains visible in preserved raw history and is explicitly superseded by separate corrections, not used as current acceptance proof. No generic keyboard fix; original unsubmitted symbol input corrected before native OK/Save.",
+    "Original78/market78 program inventories and77 matching pins/sole13100 unins difference were cross-checked through actual safe records/helper assertions; guest program and two private unins raw were not independently reread. Actual parent raw preservation and cause/uninstall-unverified limits retained; exact sole-mapV2 after failedV1 is not a wildcard ignore or reinstallation.",
+    "Seven-state-class complete saved/readback CP and restart equality, all history/config/trust/guards, generations and selected fixed data are actual parent runtime assertions cross-checked against consistent public-safe receipts/current helper. Reviewer did not read private CP. Final527/154 metadata/SHA and actual new registry pins are consistent; registry287/40 diff receipt does not establish cause/key-value equivalence.",
+    "Only two78 program inventories/fixed GRFs/three registry/selected ProgramDataGraph and prefix-user Graph-named coverage. No wholeFS equality or creation-time proof. Recent64 IPC is not full SQLite; Core queries may write existing scratch.",
+    "SOURCE earlyEOF3560727 rawprefix/probe/nine contiguous tail raw/safe206 bounds/digests and ZIP CRC/source official displayedSHA independently checked. Exact private HTTP ContentRange/IfRangeETag headers were not read; those parent HTTP assertions were not independently replayed. Installer only localSHA/200ContentLength, source officialSHA observation is web-tool text rather than rawHTML.",
+    "Selected14 source raw/mainGPL2orLater/installedLicense only InstallLicense exact compare does not establish complete BCBVCL/Boost/dxgettext/GSL/Python/PDFlibLite/EasyNSE/icons/translations closure. Upstream installer digest/PGP/Authenticode/sourcebinary/repro/latest unverified; twoInno5.5 markers/PE/native DIR13/English/staticBeta/regserver are not complete UAC/association/install/uninstall behavior validation.",
+    "Host builderassert followed by erroneous installer-only transfer is an actual historical dependency-gate lapse, explicitly retained. Later strict readonly recovery precedes unique original install; no all-historical-gates-effective claim. Old missing helper/inlineSyntaxError/CDPtimeout/unexecutedRedDraft and tool-history source signed-query disclosure boundaries remain; olderScribus one private failure raw loss not reconstructed or denied.",
+    "Natural lock/login/noVNC corrections are parent observations, not independent authentication audit or approval to bypass/change security/power. No saved login image or credential read. Ubuntu2 independently recorded passes/Flatpak2timeouts are separate counts; reviewer did not run Ubuntu. Actual final Gitstage/index/commit/ordinary push byte audits remain parent work after FINAL notice and final answer."
+  ],
+  "conclusion": "FINAL:133 V3 prospective Graph4.4.2 limited function/GRF and cached IPC lifecycle evidence passes independent host bytes/signatures/privacy/scope review after size/edit-prose corrections. Ledger67/1000 with old66 and17pending preserved is consistent. Ready to copy exact UTF8 LF review and execute actual final stage/index/commit/push audits."
+}

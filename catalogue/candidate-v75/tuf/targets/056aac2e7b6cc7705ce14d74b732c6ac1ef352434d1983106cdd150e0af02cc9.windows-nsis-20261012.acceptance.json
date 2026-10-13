@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original isolated ForgeOS KVM; Wine11.14 win64; fixed launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "nsis",
+      "version": "3.11",
+      "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a",
+      "size": 1564991,
+      "generationId": "gen-job-1791738228544-1",
+      "definitionDigest": "sha256:d00fd285a6066da353a7ba533e5230db22f78f7f8bd2ade4bf2ad06019879169",
+      "launcherSha256": "sha256:e1c77f0b4615ec5293be7f19f811e7fc907d36ef907658f4cc84f63ca77572f7",
+      "guiFileOperation": "passed-limited-script-compile-test-installer-exact-output-fresh-recompile",
+      "save": {
+        "generationId": "gen-job-1791738228544-1",
+        "inputPins": {
+          "NSISTests/原始脚本.nsi": {
+            "sizeBytes": 380,
+            "sha256": "a4704ed1468dfcbcaf4923e065bf4ad6ba7e5a854b2fdb08aadbd8a1a85d01c9"
+          },
+          "NSISTests/payload.txt": {
+            "sizeBytes": 52,
+            "sha256": "d96f71ee21b6847befe5c3e691957b5985ebb2219c1e3c1354373d02ea3391f4"
+          }
+        },
+        "outputRelativePath": "NSISTests/original-setup.exe",
+        "outputPin": {
+          "sizeBytes": 39143,
+          "sha256": "12185a310ff6ec66f3d6fe48160b81fe09fff1baaf847a751cfb591b00ae7c82"
+        },
+        "generatedResultPins": {
+          "NSISTests/original-result/payload.txt": {
+            "sizeBytes": 52,
+            "sha256": "d96f71ee21b6847befe5c3e691957b5985ebb2219c1e3c1354373d02ea3391f4"
+          },
+          "NSISTests/original-result/result.txt": {
+            "sizeBytes": 15,
+            "sha256": "2fb556e87cf57264706d240b47641a342a9ce092b6ffafa30a4eb64aed10ade4"
+          }
+        },
+        "resultContent": "ORIGINAL42=42\r\n",
+        "guiCompiledAndTestInstallerClicked": true,
+        "compiledPeHeaderValid": true,
+        "resultExactly42": true,
+        "payloadExactlyMatchesSource": true,
+        "inputsUnchanged": true,
+        "outputWrittenByApplicationNotVerificationHelper": true,
+        "testInstallerIsFixtureNotAcceptedApplication": true
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessRecompileObserved": true,
+      "screenshots": {
+        "01-original-compiled.jpg": {
+          "sizeBytes": 29576,
+          "sha256": "a5ab38cfa7b573c1b97e218ab94ec1e69fe84fbea0debd2a090c119d31d304c5"
+        },
+        "02-original-fresh-compiled.jpg": {
+          "sizeBytes": 29573,
+          "sha256": "01bcc86f65806265d9bdd07b64f7ca6ac09543e85b328e3c082b332db4f93ec1"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-nsis-source.json",
+    "sha256": "7248332fa8489b9ea0178f52b0f9c542cf25d9e107894e45ab497e032e9775d1"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-nsis-gui.json",
+    "sha256": "c5836c9a7ed71b2fdecbbd2c2e9c39c9649d595f7dc3935106bbeae18f7e2381"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-nsis-failures.json",
+    "sha256": "9225287c22b6f33f847a6144c71d5018d313236f8edfc55deb4bd1c668be3e96"
+  },
+  "limits": [
+    "Limited GUI compilation of one small UTF-8 BOM/CRLF NSIS script with Chinese filename in each of two independent managed generations; embedded UTF-8 Chinese payload, GUI Test Installer execution, exact payload and integer21+21/40+2 result42 readback; new formal process explicitly reloads script and recompiles byte-identical PE. Synthetic scripts/generated installers/payloads do not count as applications.",
+    "Only silent user-level fixture installer with zlib compression, File and IntOp/FileWrite tested. Broad NSIS syntax/includes/macros/plugins, other compression, dialogs/UAC/admin, uninstall/registry operations, complex or large installers, direct Chinese keyboard input, network, fresh-machine registration, migration, cross-version upgrades and unattended GUI operation unverified. GUI Store update/rollback buttons unverified.",
+    "Fixed official installer/source SHA256 match published SourceForge download-page digests. Main NSIS source zlib/libpng declaration; installed COPYING matches fixed source bytes. COPYING also states bzip2 and CPL1.0/LZMA linking exception and other notices. Complete bundled component license closure, Authenticode/OpenPGP, binary-source correspondence and reproducible build unverified.",
+    "No Core/program/global-context/launcher environment/working-directory/font/DLL/runtime changes. Native silent NSIS /S parameter and /D=C: followed by TWO actual backslashes then NSIS were submitted; actual NSIS directory installation verified. Do not describe parameter as a single backslash or claim parameter normalization cause.",
+    "Independent market generation/update/rollback/normal two-service restart pending at original freeze; later completion recorded separately without modifying these original bytes."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

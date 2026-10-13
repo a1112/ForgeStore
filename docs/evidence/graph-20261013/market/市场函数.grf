@@ -1,0 +1,30 @@
+;Synthetic finite GRF fixture for ForgeStore; not a second application.
+[Graph]
+Version = 4.4.2
+MinVersion = 2.5
+
+[Axes]
+xMin = -3
+xMax = 3
+yMin = -2
+yMax = 12
+xTickUnit = 1
+yTickUnit = 2
+xGridUnit = 1
+yGridUnit = 2
+ShowLegend = 0
+Radian = 1
+
+[Data]
+FuncCount = 1
+PointSeriesCount = 0
+ShadeCount = 0
+TextLabelCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
+[Func1]
+FuncType = 0
+y = 9-x^2
+Color = clBlue
+Size = 2

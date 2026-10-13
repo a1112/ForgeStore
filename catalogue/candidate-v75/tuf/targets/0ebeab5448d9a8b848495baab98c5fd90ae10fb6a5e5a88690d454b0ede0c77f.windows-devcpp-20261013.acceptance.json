@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; Core launcher-cwd-v11-r1/Store managed-msi-v2",
+  "applications": [
+    {
+      "id": "devcpp",
+      "version": "5.11",
+      "edition": "No Compiler",
+      "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711",
+      "size": 2148605,
+      "generationId": "gen-job-1791840525058-1",
+      "definitionDigest": "sha256:576e0660960410b5df7afb36d142f7a032af0927f857630c26734ff9d1842d15",
+      "launcherSha256": "sha256:5e490f306cace14810c9fdabf7e30a2c2e1941bedd5e00c54b24e208926527e1",
+      "guiFileOperation": "passed-limited-native-ascii-input-word-edit-comment-append-saveas-fresh-explicit-open",
+      "saveProof": {
+        "passed": true,
+        "generationId": "gen-job-1791840525058-1",
+        "runningLaunchJobId": "job-1791841053939-3",
+        "inputPins": {
+          "原始代码.cpp": {
+            "sizeBytes": 52,
+            "sha256": "def416e7983314bcb2f214ff07ead0c01fcf0883a38570bea890bea0385e69d8"
+          },
+          "original-input.cpp": {
+            "sizeBytes": 52,
+            "sha256": "def416e7983314bcb2f214ff07ead0c01fcf0883a38570bea890bea0385e69d8"
+          }
+        },
+        "outputPin": {
+          "sizeBytes": 66,
+          "sha256": "05b19ae04c697bba208f340673bbc368dd0f80a0dda4dea8f43c315686666e18"
+        },
+        "outputRawBase64": "Ly8gT1JJR0lOQUwgU1RBVFVTIEFGVEVSDQppbnQgb3JpZ2luYWxfdmFsdWUgPSA3Ow0KLy8gT1JJR0lOQUw0Mg0K",
+        "outputWindowsName": "original.cpp",
+        "exactIndependentSingleReplacementAndAppendBytes": true,
+        "asciiNoBomCrLfLines": 3,
+        "installedProgramFilesUnchanged": 192,
+        "chinesePathStillUnrepaired": true,
+        "guiReopenedInNewProcess": false,
+        "guiAccepted": false,
+        "published": false,
+        "noCheckpointOrRestartAttempted": true
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "devcpp-01-chinese-path-invalid-20261013.jpg": {
+          "sizeBytes": 54883,
+          "sha256": "05faea0b1e8d4888732a21e4a371c46d91394c759f4b11319e198a7ce61bb245",
+          "actualEncoding": "JPEG"
+        },
+        "devcpp-02-path-error-details-20261013.jpg": {
+          "sizeBytes": 57911,
+          "sha256": "03777666158743dac25b9c2eab0033344ad1aad84d90f1c8570a495a673a219a",
+          "actualEncoding": "JPEG"
+        },
+        "devcpp-03-original-ascii-input-20261013.jpg": {
+          "sizeBytes": 40295,
+          "sha256": "d7c44c57ea83071c4c43c0d5c73c0c0f774ca20896ac58000fff904452d59fef",
+          "actualEncoding": "JPEG"
+        },
+        "devcpp-04-original-save-20261013.jpg": {
+          "sizeBytes": 41267,
+          "sha256": "f0a6da19f2f66f4aa60d0b1559d210bcefed6a4d3d36ee12f813126dd84d9b30",
+          "actualEncoding": "JPEG"
+        },
+        "devcpp-05-original-explicit-reopen-20261013.jpg": {
+          "sizeBytes": 40492,
+          "sha256": "1554f2a3d93609565f81c9aba3c5b447e62af7edc2d8bc02d66de5a8ef524030",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-devcpp-source.json",
+    "sha256": "e5e45ffc02caa8c9bed99eda292738894eed30835da8ab8f9fb93dd356b123f2"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-devcpp-gui.json",
+    "sha256": "0581b18ae86047e8bfa5876f2efbcd6085304510555dc1d29efef48a48faf3ad"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-13-devcpp-failures.json",
+    "sha256": "7f74e57c3446f20970554819b6f1237a36e85fb28284ac8d2074da809dab50dd"
+  },
+  "limits": [
+    "Only ASCII-content two-line input read through an exact ASCII-name copy, one BEFORE-AFTER word replacement and ORIGINAL42 comment append, SaveAs66-byte three-line CRLF output, explicit new formal process Open; no compile/link/run/debug/project or complete IDE acceptance. No Compiler edition does not bundle compiler.",
+    "Original Chinese-name Open failed Invalid name and remains unfixed. Error diagnostic normal FileExit0 excluded. Default first configuration kept English/Courier/ClassicPlus/NewLook. Explicit Shift keys used after CUA uppercase typeText produced lowercase; not a global keyboard/runtime repair.",
+    "No Chinese text or direct Chinese keyboard, general Unicode/fullpath behavior, printing, AStyle formatting, packages/tools, broad formats/large-bad input, networking/new registration/migration/crossversion/unattended or GUI Store buttons accepted. No background-network absence claim.",
+    "192 installed program files unchanged. Only fixed data, three registry and selected Dev-Cpp-named configuration coverage, not whole application filesystem. No Core/program/globalcontext/definition/launcher env/cwd/font/DLL/runtime repair.",
+    "Official fixed5.11 two complete HTTPS200/Content-Length/official SF displayed SHA256 matched, observed web text not raw HTML. Source GPL2-or-later and installedCOPYING18581B exact selectedsource raw comparison; complete bundle licence closure/Authenticode/PGP/sourcebinary/repro/latest unverified.",
+    "Original marketPending stage frozen; market completion separately recorded."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}
