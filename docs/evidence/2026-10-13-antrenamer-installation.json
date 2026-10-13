@@ -1,0 +1,284 @@
+{
+  "installed": true,
+  "originalGenerationId": "gen-job-1791862006192-1",
+  "definitionDigest": "sha256:17e76eea4a1ba4821d2d67e3f92ec82812a1eb75a61110f28b97730a753169e8",
+  "definition": {
+    "bottleId": "gui-antrenamer",
+    "category": "utilities",
+    "compatibilityRating": "unknown",
+    "id": "antrenamer",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\AntRenamer",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "antrenamer_2.12_install.exe",
+      "sha256": "3c9bdc59842c786ef4cfba6ddbe39912326299104cc36a074b881d8ed68cc6c4"
+    },
+    "launchers": [
+      {
+        "executable": "AntRenamer/Renamer.exe",
+        "id": "main",
+        "name": "Ant Renamer"
+      }
+    ],
+    "name": "Ant Renamer",
+    "publisher": "Antoine Potten",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "2.12.0"
+  },
+  "generation": {
+    "bottleId": "gen-job-1791862006192-1",
+    "createdAtMilliseconds": 1791862006203,
+    "definition": {
+      "bottleId": "gui-antrenamer",
+      "category": "utilities",
+      "compatibilityRating": "unknown",
+      "id": "antrenamer",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\AntRenamer",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "antrenamer_2.12_install.exe",
+        "sha256": "3c9bdc59842c786ef4cfba6ddbe39912326299104cc36a074b881d8ed68cc6c4"
+      },
+      "launchers": [
+        {
+          "executable": "AntRenamer/Renamer.exe",
+          "id": "main",
+          "name": "Ant Renamer"
+        }
+      ],
+      "name": "Ant Renamer",
+      "publisher": "Antoine Potten",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "2.12.0"
+    },
+    "definitionDigest": "sha256:17e76eea4a1ba4821d2d67e3f92ec82812a1eb75a61110f28b97730a753169e8",
+    "id": "gen-job-1791862006192-1",
+    "launcherDigests": {
+      "main": "sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791862019376
+  },
+  "installedFiles": {
+    "license.txt": {
+      "sizeBytes": 15619,
+      "sha256": "eceba4a4eefa3bc72baee0700fcfc1388865894f7631dbb139121fa299ba8216"
+    },
+    "Renamer.exe": {
+      "sizeBytes": 1978880,
+      "sha256": "d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947"
+    },
+    "unins000.exe": {
+      "sizeBytes": 715038,
+      "sha256": "70626096fe66cdb2b568b2ab0560964c4b4907c480e45fbb5ac5922efbc28e45"
+    },
+    "unins000.dat": {
+      "sizeBytes": 2944,
+      "sha256": "1c14a8068d783f69d989b72abb354b4254409a6f92b830696e520017274ec1be"
+    },
+    "Toolbars/Windows XP.bmp": {
+      "sizeBytes": 23094,
+      "sha256": "9daab1f460a2cb0330a604607e8f603aeb5b5154ed7f63d17702edb6d071745f"
+    },
+    "Toolbars/Windows XP Large.bmp": {
+      "sizeBytes": 51894,
+      "sha256": "18f7fa71dcf02d574ecd812064027b59a4f8221df297ceccc9b745659870cec7"
+    },
+    "Toolbars/Windows 10 Large.bmp": {
+      "sizeBytes": 51896,
+      "sha256": "e85a2a40a0ee97bcf3bf355f945297dbb873b63d97f4cd4f9895a14cda8c5abf"
+    },
+    "Languages/English.lng": {
+      "sizeBytes": 26222,
+      "sha256": "addef263ce9319d61c9e4eb56e5bf5ff613c5f5206236088d98e6d17f0ebd6ab"
+    },
+    "Languages/Bulgarian.lng": {
+      "sizeBytes": 27971,
+      "sha256": "c171e9341d4ec43b1d108443aaf2a4e141f725d7d00a5e4ee25b4e5d42f4dfe9"
+    },
+    "Languages/Dutch.lng": {
+      "sizeBytes": 27196,
+      "sha256": "585734e12b94338e082d5cdf201f283dc9c421404f505a2720c912ec481331a2"
+    },
+    "Languages/English.chm": {
+      "sizeBytes": 40253,
+      "sha256": "fe4fdf90485f1774c9cecf6a368ff1795819b36ee1cd04e512ab7604393c2259"
+    },
+    "Languages/Czech.lng": {
+      "sizeBytes": 26166,
+      "sha256": "49ff859ffed5ec56f4a81c9ff0bb1da9ea6a8d746c80ab183c29ec27269e1a1c"
+    },
+    "Languages/Croatian.lng": {
+      "sizeBytes": 27226,
+      "sha256": "ecfca3b750049f2187b245dd397683d1c9036caaef79ed34f0155b5f2788d199"
+    },
+    "Languages/Russian.lng": {
+      "sizeBytes": 27679,
+      "sha256": "4d39a315731c64ef16563b4ad0286f69b4080b42610250544a47a0b4ac93b8f5"
+    },
+    "Languages/Italian.lng": {
+      "sizeBytes": 26913,
+      "sha256": "b27cdf7f371dbc8242181c22ecf798a540134a6fe1609a0c248d01512e2fd260"
+    },
+    "Languages/Chinese (Traditional).lng": {
+      "sizeBytes": 22013,
+      "sha256": "569f23dddd3340e76740d5da7cb5b1cab58eac6ea3ea629e5f855765496ffb84"
+    },
+    "Languages/Polish.lng": {
+      "sizeBytes": 27272,
+      "sha256": "f827d8bed353469a890a1d38103c4eb9e97885c3dd5157e634dcb8cfc59d4b93"
+    },
+    "Languages/Korean.lng": {
+      "sizeBytes": 24687,
+      "sha256": "05dc76f997029a8034e7129aa6739ede639472ce56eb1ea4f6e92f4405bf8767"
+    },
+    "Languages/German.lng": {
+      "sizeBytes": 26535,
+      "sha256": "4c59e9fa1331aae59b811680be8049cf2f1fbc9bc6992982d0a5351f1f2d33f1"
+    },
+    "Languages/Croatian.chm": {
+      "sizeBytes": 61531,
+      "sha256": "80365939f4e2c873454d2d4b993f9c6d0f0de0e6c98d159e22483f1331ca7edf"
+    },
+    "Languages/Spanish (Argentina).lng": {
+      "sizeBytes": 27686,
+      "sha256": "34700e6367c395b85abc1c78a4d1dc5112033e2186bf09b1bf5c63f1ea61b299"
+    },
+    "Languages/French.lng": {
+      "sizeBytes": 28573,
+      "sha256": "47fb7f230ef9d1c43a5076d141a08176bdcafda433dec97c0141ab626bde2333"
+    },
+    "Languages/Catalan.lng": {
+      "sizeBytes": 27923,
+      "sha256": "82578b3dd796ffe6a730d1764199516aab30f1c6f21d242a8d4e3600aee17ac1"
+    },
+    "Languages/Greek.lng": {
+      "sizeBytes": 26474,
+      "sha256": "447a43c46512f78f667bd9df20832a5614acfdd6e7a911c505d85934111ae4dd"
+    },
+    "Languages/Chinese (Simplified).lng": {
+      "sizeBytes": 22518,
+      "sha256": "198fd08cb052a2a93c5c02119c96a3d4355f33787baa3965d3bda1c1e4ccb064"
+    },
+    "Languages/Portuguese (Brazil).lng": {
+      "sizeBytes": 27534,
+      "sha256": "49a07bb571a85daa0e3b645f90be855ac8b5fd2d561b89db7625f1f7fd6fcdaf"
+    },
+    "Languages/Japanese.lng": {
+      "sizeBytes": 25158,
+      "sha256": "2bc6f69f842e17222125a61fff125d1ca216ae2182737499047f6a5ad2bcbe6e"
+    },
+    "Languages/Slovak.lng": {
+      "sizeBytes": 26275,
+      "sha256": "a56ec3433e838f52dc99cf7eb7d7d5a6b460efe079f12b56013723a3d0c6f8f0"
+    },
+    "Languages/Belarussian.lng": {
+      "sizeBytes": 27355,
+      "sha256": "252be7056a07f57037e2e9842e93d24aa08b68b03b772187ff144030b1104669"
+    },
+    "Languages/Swedish.lng": {
+      "sizeBytes": 26805,
+      "sha256": "6b320b10416657b749e5150d6400e874403ff2db597e116b4a41af467fb56e25"
+    },
+    "Languages/Spanish (Spain).lng": {
+      "sizeBytes": 28277,
+      "sha256": "18da3c7da43df90d3c1809099f98534ebb010df426b37d3c615b5c3305cabe8e"
+    },
+    "Languages/French.chm": {
+      "sizeBytes": 43242,
+      "sha256": "052977b907f82058a2056bab27a30aa7f1f738056fbc9228735345925c1f5612"
+    },
+    "Languages/Tamil.lng": {
+      "sizeBytes": 48593,
+      "sha256": "f8302f606ec1e467cad6b85b6051e7da29d8a1d85700f6ac08b6129ff8bef4bf"
+    },
+    "Languages/Ukrainian.lng": {
+      "sizeBytes": 28195,
+      "sha256": "aa2021e21cbacea0fd0a34a0bcdbff2ccfaa79bae2f5edf03381161689157a3b"
+    },
+    "Languages/Spanish (Colombia).lng": {
+      "sizeBytes": 27475,
+      "sha256": "56a0c48a9e36691c5236cf363f19edc659a304fd41db872d82de80d284d5bbfe"
+    },
+    "Languages/Hungarian.lng": {
+      "sizeBytes": 26558,
+      "sha256": "2f67c359ba4d10ad1f3e9df655a8cbf1f3ac60882bcd8b29015e640cd0ca136f"
+    }
+  },
+  "mainProgramPin": {
+    "sizeBytes": 1978880,
+    "sha256": "d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947"
+  },
+  "mainExecutableNotEntireApplicationSize": true,
+  "programFileCount": 36,
+  "mainPeMachine": "0x14c",
+  "oneOriginalFormalInstallOnly": true,
+  "fullCpSavedReadBack": {
+    "file": "installed-awaiting-gui.json",
+    "sha256": "3603eda5f246088f556ed6290c58a7a8ede1e2e1d1b7c69660681fd8af9fb3f8",
+    "coreJobs": 514,
+    "fullStoreRows": 150
+  },
+  "guiAccepted": false,
+  "marketGenerationCreated": false,
+  "published": false,
+  "limits": [
+    "Only one original formal installation completed. No Ant Renamer launch job, guest fixture, GUI function, rename, batch-save/new-process open, independent market installation/GUI, update/rollback or publication/acceptance performed. Two proposed synthetic binary inputs per role exist only in private host fixture preparation, not accepted applications.",
+    "External guest login screen observed temporary account lock after3 failed logins with10-minute wait message. This round used Return to reveal login controls but did not type or submit the password variable; failed-auth cause or exact authentication trace not established. No bypass, credential/authentication/lock/power change, forced termination or app failure attribution. Login images and password not saved in public evidence. Normal unlock/fresh fields single authorized login must precede any GUI task.",
+    "Official fixed old HTTPS installer and source complete200/ContentLength/localSHA only. No upstream digest/PGP/Authenticode/source-binary correspondence/repro/latest verified. Main fixed ConstValues GPL2-or-later. Common readme notes one MPL exception; complete DelphiVCL/Tnt/VirtualTree/TB2K/TBX/TRegExpr/dEXIF/icons/translations licence closure not verified.",
+    "Actual two Inno5.4.2 data markers/bootstrap main0x14c plus fixed source script and native parameters, not complete Inno format or real Windows UAC/associations/shortcut/entire install behavior. Exact installed licence15619B matches only Renamer/dev/license.txt; rootlicense.txt and Renamer/license.txt raw differ. No normalization or full-package licence equivalence claim.",
+    "514 fullCore/150 completeStore rows all fields plus all65old accepted and17pending fixed data retained, currentcandidate73/root1/role82 remains67entries=65apps2fixtures/142signedtargets/78publicJSON; AntRenamer absent. Only36programs/three registry/prior fixeddata scope, not whole app FS, recent64IPC not fullSQLite, queries may write existing scratch. No service restart/recover/VMreboot/catalogue/signature/runtime/definition/launcher repair."
+  ]
+}

@@ -1,0 +1,17 @@
+# Ant Renamer 2.12.0 Windows 已安装、待 GUI 验收（2026-10-13）
+
+Windows保持65/1000、17pending全部旧字段，未新增完成或应用失败。唯一原正式安装gen-job-1791862006192-1成功，定义sha256:17e76eea4a1ba4821d2d67e3f92ec82812a1eb75a61110f28b97730a753169e8。本轮没有AntRenamer launch任务、客体测试输入、真实改名/保存batch/新正式进程重开、独立市场/更新回滚或验收发布。宿主两角色各两拟定合成bin只准备，不计应用。
+
+客体登录屏实际显示因3次登录失败临时锁定、10分钟后解锁。Return唤出字段尝试不是正常认证证明；本轮未输入密码变量或提交AntRenamer GUI任务。失败认证唯一原因/运行trace未证，不能将锁定归因应用；停止依赖GUI动作，不绕过认证/解锁、不改账号/密码/认证/锁屏/不自动息屏，不强杀。登录图/密码不入库。下轮必须等待正常解锁、新鲜字段一次授权登录后，复用既有安装再验收，不重复安装。
+
+官方主页/download明确链接旧目录https://update.antp.be/renamer/old/，实际固定antrenamer_2.12_install.exe1212478B SHA3c9bdc59842c786ef4cfba6ddbe39912326299104cc36a074b881d8ed68cc6c4、antrenamer_2.12_sources.zip333038B SHA37d35e0812f00be48a43830605aa6c6c90b33f338a941d84c8782f5bf3086d1f，两完整HTTPS200/ContentLength，两GET终态后才安装，缓存不重取。固定版本不称最新，上游公开digest/API/PGP/Authenticode/源二进制对应/可复现未核，只有本地SHA。167唯一成员159常规文件，不称剩余全目录，16选定源raw与原ZIP保存；实际CRLF无CRCRLF，不据工具双CR显示转码。主ConstValues GPL2-or-later；readme注明Common一份MPL例外，完整DelphiVCL/Tnt/VirtualTree/TB2K/TBX/TRegExpr/dEXIF/icons/translations闭包未核。实际安装license15619B SHAeceba4a4eefa3bc72baee0700fcfc1388865894f7631dbb139121fa299ba8216与Renamer/dev/license.txt全部raw同；source根license15619B SHA27d55d77da5b52457245035ba8483b47358af52a52abf425382bdc1c7c414b8e和Renamer/license15146B SHA1e594f4c7fd6d099eca4bd1340b39d871ce0298331d8ebd4b68935548ee45cf4不同分别保持，不作全部许可同文比较。
+
+7z无法打开exit1只诊断，原完整输出只工具历史未另存。静态首helper误期望Inno5.5.0，实际两处InnoSetupData5.4.2，16source写后任何guest操作前assert停；V2复用全部raw独立核5.4.2与固定inno.iss。bootstrap和mainPE0x14c，非完整Inno格式或真实WindowsUAC/安装关联快捷方式行为。原生/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:后单反斜杠AntRenamer /NOICONS /TASKS=，DIR18UTF8B hex2f4449523d433a5c416e7452656e616d6572。未执行入口draft遗留pn.exe/观察draftantrenamer.exe在任何正式定义任务前按源Renamer.exe更正；旧draft保持，非客体失败或正式修复。
+
+36安装程序固定，Renamer.exe1978880B SHAd0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947不是整个应用大小。没有Core/程序/globalcontext/定义/launcher env/cwd/字体/全局DLL/runtime修复；未验收中文显示/直接中文键盘/文件改名/碰撞/撤销/批量动作/regex/EXIF/大坏输入/网络/迁移/无人值守等，不称无背景联网。
+
+当前完整私有CP antrenamer-20261013/installed-awaiting-gui.json SHA3603eda5f246088f556ed6290c58a7a8ede1e2e1d1b7c69660681fd8af9fb3f8，514全Core/150完整SQLite所有字段，全部历史/代次/信任/保护/正式配置及旧65+17固定数据保持；新36程序及三registry跨安装后观察同字节。本轮无GUI导致的新registry差异，不称整个FS字节相同。仅36程序/三registry/prior固定数据，最近64IPC不替代全SQLite，Core查询可能写既有scratch。只读rolling-current-state-antrenamer-installed-20261013.py经rolling-guest-20261010.py严格SSH stdin执行，不要求hosthelper落盘。旧SMPlayer513/150助手与CP仅历史，不再强求旧513。
+
+活动目录仍candidate73/root1/role82，67entries=65apps2fixtures、142signedtargets/78公共JSON，AntRenamer不在目录，未新增TUF签名/目录绑定/服务restart/recover/VMreboot，root及所有失败签名trust历史保持。Ubuntu台账与窗口计划已读，KateAPT/Snap计算器2款独立通过，Flatpak两次runtime超时未安装缓存保持，本轮未运行UbuntuVM，两个4GiB VM未同时运行。
+
+原全部失败helpers/raw与工具历史保持，旧Scribus一份private canonicalV1失败raw丢失不补造，旧Aegisub/Edge querycallback工具历史范围不重写/不重复。公共无安装包/程序binary/私有完整CP/私钥/凭据/密码/登录图/精确HTTPredirectquery。独立FINAL与Git字节审计另记，不替代客体GUI或私有完整CP重演。下轮先核当前完整514/150 CP和固定pins，再正常登录后复用本安装与缓存继续有限rename；环境等待不计应用pending。
