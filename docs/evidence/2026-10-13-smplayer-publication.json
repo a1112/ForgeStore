@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "acceptedDistinctWindowsApps": 65,
+  "old64AcceptedAnd17PendingAllFieldsPreserved": true,
+  "addedApplication": "smplayer",
+  "originalGenerationId": "gen-job-1791853044103-1",
+  "marketGenerationId": "gen-job-1791855048347-4",
+  "definitionDigest": "sha256:648d8fd39af93980365bf0851275f088dc186e6c4f25068d4a427769fdcd1585",
+  "definitionLauncherRuntimeAllFieldsSame": true,
+  "programFilesEach": 261,
+  "all261CrossGenerationProgramsExactByteEqual": true,
+  "originalOutputPin": {
+    "sizeBytes": 166,
+    "sha256": "9c10045fdb2c35667bbee08cbe46e696e8f7fa6868df18d12c103262a1e66c2d"
+  },
+  "marketOutputPin": {
+    "sizeBytes": 166,
+    "sha256": "405c0b5e0e135434d39ee1d0506354bcdab4baa00ee92eaf7f6b012b81f5dc77"
+  },
+  "normalAcceptedGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "normalQuitMethods": [
+    "CtrlQ",
+    "CtrlQ",
+    "CtrlQ",
+    "CtrlQ",
+    "Open/Quit menu"
+  ],
+  "exit0NotSoleAcceptance": true,
+  "cachedSameVersionIpcUpdateAndExactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "smplayer",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "95e25bec-a66e-452b-b810-62a9b399213b",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791853044103-1",
+    "beforeRollbackCheckpointSavedReadBack": true,
+    "beforeRollbackCoreJobs": 512,
+    "beforeRollbackStoreRows": 149,
+    "afterRollbackCoreJobs": 512,
+    "afterRollbackStoreRows": 150,
+    "allOldFullFieldsPreserved": true,
+    "allGenerationRecordsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "5d58acbb5c5123cb7ec5a2972de6f3a9b6714b06ce29d76a355d6b939ec39f84",
+      "coreJobs": 512,
+      "fullStoreRows": 150
+    },
+    "rollbackGuiJobId": "job-1791855704579-7"
+  },
+  "thirdOriginalFreshEmptyExplicitLoadAccepted": true,
+  "finalPrivateCheckpoint": {
+    "file": "after-final-restart.json",
+    "sha256": "121089820357789f975d9c114c21a7a6ea1cfba66008473730b83bc16576b105",
+    "coreJobs": 513,
+    "fullStoreRows": 150
+  },
+  "normalRestartAllSevenClassesAndPinsExact": true,
+  "candidateCatalogue": "catalogue/candidate-v73/tuf",
+  "rootVersion": 1,
+  "metadataVersion": 82,
+  "catalogueEntries": 67,
+  "entriesBreakdown": {
+    "apps": 65,
+    "fixtures": 2
+  },
+  "actualSignedTargets": 142,
+  "publicCatalogueJsonFiles": 78,
+  "packOriginalPreviewStagePreserved": {
+    "metadataVersion": 82,
+    "rootVersion": 1,
+    "entriesPreview": 67,
+    "actualTargets": 142,
+    "files": 78,
+    "archiveSha256": "38ece1cb212e71ef8248d3d3f78ac883f44c1bfd4b12990dac4bb937c13619e5",
+    "archiveSizeBytes": 1945600,
+    "receiptSha256": "5d0128c8b6e2db41f1d7f0bdd4ac91e490abad40cd1f203ecedf6b7e232a3288",
+    "oldSignedTargets": 140,
+    "all139OldNonCatalogueSignedTargetPinsPreserved": true,
+    "changedOldTargets": [
+      "catalogue.json"
+    ],
+    "oldRole81DirectoryPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "postSignV1WrongExpectedInstallerNameStoppedBeforeAnyGuestTransfer": true,
+    "originalSignatureReusedWithoutResigning": true,
+    "guestActivated": false,
+    "marketLifecyclePending": true,
+    "completedCountUnchanged": 64,
+    "pendingCountUnchanged": 17
+  },
+  "old139NonCatalogueTargetsAndRootBytesPreserved": true,
+  "original32FrozenMarketPendingLabelsRetained": true,
+  "hearingDeviceFullPlayerOrGuiStoreButtonAccepted": false,
+  "independentReviewNotGuestGuiOrPrivateFullCpReplay": true,
+  "gitIndexCommitPushSeparate": true
+}

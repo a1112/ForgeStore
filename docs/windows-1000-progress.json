@@ -647,6 +647,15 @@
       "signedCatalogue": "catalogue/candidate-v72/tuf",
       "publication": "docs/evidence/2026-10-13-qmmp-publication.json",
       "limitation": "Only two tiny Chinese-name PCM WAV inputs per generation, native Add File B then A through C-drive tree, mouse reorder A,B, native Save List to 91-byte UTF8 no BOM four-LF M3U without trailing LF, new formal empty-list explicit Load List and exact original rollback third explicit Load. Each track0:02; no hearing/playback/audio-device or full-player acceptance. No metadata edit/DSP/stream/library/CD/transcode/plugins/other playlist formats/large-bad input/printing/direct Chinese keyboard/network/migration/unattended/GUI Store buttons. Default skinned UI kept, no program/Core/global DLL/runtime/font/launcher repair. All2166 program files cross-generation same. Main GPL2-or-later installed COPYING exact18092B equals fixed source; full bundle closure/PGP/Authenticode/source-binary/repro/latest unverified. Original28 signed marketPending stage labels retained; completion separately recorded."
+    },
+    {
+      "id": "smplayer",
+      "version": "23.12.0",
+      "sha256": "b2e4cee60e57385b4e20485ff29ec4794d55b1ce77e385542ba61c5e91277ba5",
+      "evidence": "docs/evidence/windows-smplayer-20261013.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v73/tuf",
+      "publication": "docs/evidence/2026-10-13-smplayer-publication.json",
+      "limitation": "Only two tiny Chinese-name PCM WAV files, native Add B then A/MoveUp, native SaveAs All files UTF8 M3U8 166B sixLF trailingLF EXTINF0 and fresh formal empty RemoveAll/explicit Load, exact rollback third explicit Load. Initial GUI0 seconds, after Load2 seconds not hearing/device/full-player acceptance. Failed original134B M3U ???? and auto-appended M3U8.M3U kept, no general M3U/encoding/dialog fix. Default UI, no Core/program/font/globalDLL/runtime/launcher repair. All261 program files each exact cross-generation same. Main GPL2-or-later installed18328B Copying matches fixed source; full bundle closure/PGP/Authenticode/source-binary/repro/latest unverified. Original32 signed marketPending labels frozen; completion separately recorded."
     }
   ],
   "queue": [
@@ -926,12 +935,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "64/1000 finite Windows acceptance;17 pending unchanged. Qmmp1.6.8 limited Chinese-name two-WAV playlist reorder/SaveList M3U/fresh empty-list explicit Load; no hearing/playback/audio-device/full-player acceptance. candidate-v72/root1/role81,506 fullCore/148 fullStore; strict SSH stdin rolling-current-state-qmmp-20261013.py. Current private CP qmmp-20261013/after-final-restart.json; actual third-GUI registry and playlist config differences retained. All frozen/TUF/trust/failure history preserved.",
+  "next": "65/1000 finite Windows acceptance;17 pending unchanged. SMPlayer23.12.0 limited Chinese-name WAV MoveUp/SaveAs All files M3U8/fresh empty explicit Load; no hearing/device/full-player acceptance. candidate-v73/root1/role82,513 fullCore/150 fullStore; strict SSH stdin rolling-current-state-smplayer-20261013.py. Current private CP smplayer-20261013/after-final-restart.json; actual third-GUI byte differences preserved. Frozen/TUF/trust/failure history retained.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-13",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 64,
+    "acceptedLocalMarket": 65,
     "explicitlyBlockedCandidates": 17,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -939,16 +948,16 @@
     "pendingCandidates": 17
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v72/tuf",
-    "metadataVersion": 81,
-    "catalogueEntries": 66,
-    "acceptedDistinctWindowsApps": 64,
+    "signedCatalogue": "catalogue/candidate-v73/tuf",
+    "metadataVersion": 82,
+    "catalogueEntries": 67,
+    "acceptedDistinctWindowsApps": 65,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-13-qmmp-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-13-smplayer-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-13-pnotepad-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-13-qmmp-runtime-recovery.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-13-qmmp-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-13-smplayer-runtime-recovery.json"
   },
   "lastReviewEvidence": "docs/evidence/2026-10-13-fityk-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-greenfish-runtime-recovery.json",
@@ -956,8 +965,8 @@
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261013-qmmp.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-13-qmmp-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261013-smplayer.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-13-smplayer-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

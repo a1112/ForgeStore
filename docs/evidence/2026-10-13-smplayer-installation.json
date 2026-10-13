@@ -1,0 +1,1158 @@
+{
+  "applicationId": "smplayer",
+  "definition": {
+    "bottleId": "gui-smplayer",
+    "category": "multimedia",
+    "compatibilityRating": "unknown",
+    "id": "smplayer",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/D=C:\\SMPlayer"
+      ],
+      "fileName": "smplayer-23.12.0-win32-qt5.6-unsigned.exe",
+      "sha256": "b2e4cee60e57385b4e20485ff29ec4794d55b1ce77e385542ba61c5e91277ba5"
+    },
+    "launchers": [
+      {
+        "executable": "SMPlayer/smplayer.exe",
+        "id": "main",
+        "name": "SMPlayer"
+      }
+    ],
+    "name": "SMPlayer",
+    "publisher": "SMPlayer Development Team",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "23.12.0"
+  },
+  "generation": {
+    "bottleId": "gen-job-1791853044103-1",
+    "createdAtMilliseconds": 1791853044110,
+    "definition": {
+      "bottleId": "gui-smplayer",
+      "category": "multimedia",
+      "compatibilityRating": "unknown",
+      "id": "smplayer",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\SMPlayer"
+        ],
+        "fileName": "smplayer-23.12.0-win32-qt5.6-unsigned.exe",
+        "sha256": "b2e4cee60e57385b4e20485ff29ec4794d55b1ce77e385542ba61c5e91277ba5"
+      },
+      "launchers": [
+        {
+          "executable": "SMPlayer/smplayer.exe",
+          "id": "main",
+          "name": "SMPlayer"
+        }
+      ],
+      "name": "SMPlayer",
+      "publisher": "SMPlayer Development Team",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "23.12.0"
+    },
+    "definitionDigest": "sha256:648d8fd39af93980365bf0851275f088dc186e6c4f25068d4a427769fdcd1585",
+    "id": "gen-job-1791853044103-1",
+    "launcherDigests": {
+      "main": "sha256:3da04b0f13627858afbf7b32f14e27883fed9903d025fb5568c55b86a1df7cc9"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791853063154
+  },
+  "installedFiles": {
+    "Readme.txt": {
+      "sizeBytes": 3986,
+      "sha256": "a5aa0b2f2b6a45f57461fce38fae409387a5bf0bb1ec27cd66993e76ec8fea41"
+    },
+    "Qt5Qml.dll": {
+      "sizeBytes": 4015616,
+      "sha256": "b2d2ab1170b4aa11e25b39c17f6a580478e6a9d378d417daf7c124a2cca2d65c"
+    },
+    "uninst.exe": {
+      "sizeBytes": 281858,
+      "sha256": "24932840f7143efc3d6913a9bc5a39b90490b2fd2c1feeee1f62c3bceed5ee55"
+    },
+    "Qt5DBus.dll": {
+      "sizeBytes": 574976,
+      "sha256": "fe2d5c291d628dee50ca0c14b558dd9414e8a5e50cd017c2ce85b7e6cdb2964b"
+    },
+    "Copying_openssl.txt": {
+      "sizeBytes": 6516,
+      "sha256": "7ed01cb27a1aec795d4b0fa445a3856548394106dd52c4be41582b264080959c"
+    },
+    "Portable_Edition.txt": {
+      "sizeBytes": 1138,
+      "sha256": "547a3249d5326619fa6f9c5afa65adc04b48e401dfa2e8c4830eb14fb26be8cd"
+    },
+    "Qt5Network.dll": {
+      "sizeBytes": 1558528,
+      "sha256": "dd647388ab002a4f8a33efd8b4cfc660e110c7c325880fbeb57d0fbb16d065da"
+    },
+    "Qt5Core.dll": {
+      "sizeBytes": 5423616,
+      "sha256": "3230c183dcec92f7b0bb9bb0b7af044646d04eb314881a60dbc1d20802431bfc"
+    },
+    "Copying.txt": {
+      "sizeBytes": 18328,
+      "sha256": "35846e3cb911e4d2afa71c9bcbeb0e259bf77cad9791b6fd231fcca81dafa59a"
+    },
+    "Qt5Widgets.dll": {
+      "sizeBytes": 6561792,
+      "sha256": "beb106fa93ce7912c7d6aca37592ba3b272ccbbb0515281ab7490346a76fa3a6"
+    },
+    "Qt5Gui.dll": {
+      "sizeBytes": 5640192,
+      "sha256": "aa7dda1dc8c3409f90e2167a05452e0f37a93082fbc5f20681d4b28be6727595"
+    },
+    "Qt5Svg.dll": {
+      "sizeBytes": 326144,
+      "sha256": "0766670433c1ef4c051343b780b6a6b80a5179ad321f6b53266cf222a9652b45"
+    },
+    "libstdc++-6.dll": {
+      "sizeBytes": 1031694,
+      "sha256": "aefca6c2f030b1fd0f2362b1c783ff187be1f42469e4dab2ba1bede66a8798f2"
+    },
+    "libwinpthread-1.dll": {
+      "sizeBytes": 81408,
+      "sha256": "1663bbb99f00c94497d32fba6d3de79440e05dcd91ac28bf57c2d49546eb508a"
+    },
+    "Install.txt": {
+      "sizeBytes": 3667,
+      "sha256": "b5e2350f69d2dc4f075610386da313ca1a1f582161fcf47721923d15a3087149"
+    },
+    "Copying_BSD.txt": {
+      "sizeBytes": 2064,
+      "sha256": "1f8cfe63def80c5ff053bb9be0464c1256082bbb509a6bba4efbe2e5b68fe375"
+    },
+    "libeay32.dll": {
+      "sizeBytes": 1177088,
+      "sha256": "db66e019a9f4b2ae9543a7d77616ee00632cc53e20371efd116ff2488ae42e68"
+    },
+    "Copying_libmaia.txt": {
+      "sizeBytes": 1582,
+      "sha256": "06c527ed6ef140fb9372c58cb3faef6bf1160dde006c23b99b5a4d8f189f2410"
+    },
+    "simple_web_server.exe": {
+      "sizeBytes": 185872,
+      "sha256": "9d64622fbdc052871536036e1916a75292467698c269b109973a1b41349205aa"
+    },
+    "smplayer.exe": {
+      "sizeBytes": 4462592,
+      "sha256": "3da04b0f13627858afbf7b32f14e27883fed9903d025fb5568c55b86a1df7cc9"
+    },
+    "libgcc_s_dw2-1.dll": {
+      "sizeBytes": 119822,
+      "sha256": "2b78d656dc5bfd12294019a18471c59b0e422d3006e05ae6c0f709e455b5c990"
+    },
+    "ssleay32.dll": {
+      "sizeBytes": 271360,
+      "sha256": "ebe4647e3998c081167ad0235ac132292918305b73015afc3d0a594b5ae55376"
+    },
+    "Qt5Xml.dll": {
+      "sizeBytes": 226816,
+      "sha256": "b0eb900159f0254fbbb50bc3576d732160e6394e14f5b764ebe87c32124fdae6"
+    },
+    "translations/smplayer_nl.qm": {
+      "sizeBytes": 289652,
+      "sha256": "ca5c191540d238ceb567f00c8b132a5faf1b04bf6bb36c57365bc176f9f95db6"
+    },
+    "translations/smplayer_vi_VN.qm": {
+      "sizeBytes": 182020,
+      "sha256": "e965964d7e8158a09b8f94ca9e6a38f8f97012bf9d42c113a3aa3110e6df5b4f"
+    },
+    "translations/smplayer_es.qm": {
+      "sizeBytes": 302616,
+      "sha256": "b65b0909d14a70025be8200efe8cbb81969489a5141150df1d9ba14af1591e0f"
+    },
+    "translations/smplayer_zh_CN.qm": {
+      "sizeBytes": 201599,
+      "sha256": "e8b3feb8d0fe1dbc580665b78d3568f12459769e92be4874ba44fdc94ac04467"
+    },
+    "translations/smplayer_en_US.qm": {
+      "sizeBytes": 23,
+      "sha256": "307cef95dd5b36ff215055d427e1885b7fc3650c9224cf76d63056545996ff60"
+    },
+    "translations/qt_uk.qm": {
+      "sizeBytes": 215964,
+      "sha256": "7446849a7c1fd753fbc5cf10d3617a147f479c02e7c48473806a767c4b22db3a"
+    },
+    "translations/smplayer_fr.qm": {
+      "sizeBytes": 302603,
+      "sha256": "b52d610960a1bdd64b2d0f031455aee688f746723854222de0d0be990c836073"
+    },
+    "translations/smplayer_ms_MY.qm": {
+      "sizeBytes": 282823,
+      "sha256": "1d283bc0c2d949ff3305ff22560e52fb2a1fb0ee831218c4bc0679c54a2a194e"
+    },
+    "translations/smplayer_ro_RO.qm": {
+      "sizeBytes": 123606,
+      "sha256": "8d5312220a226ec48678930c3f726e82b87be08518552413ddf76b5c06a44b42"
+    },
+    "translations/smplayer_pl.qm": {
+      "sizeBytes": 292898,
+      "sha256": "d458d6fb3590f6a5e891432b5a02b3627f84adeffb05f102cfbadc29f11fddc7"
+    },
+    "translations/smplayer_en_GB.qm": {
+      "sizeBytes": 209534,
+      "sha256": "9388bb2b17e1b38d9c1f805fab6cab1a5559ac8cab5da3a5af3eabaa48a0d39e"
+    },
+    "translations/smplayer_fi.qm": {
+      "sizeBytes": 289202,
+      "sha256": "c6042caca411d94cc2dffddd5ed472d8248b32bb07d5b36020a96875fe3a7821"
+    },
+    "translations/smplayer_th.qm": {
+      "sizeBytes": 175726,
+      "sha256": "d0a924aec6378e050bc83a1b9e7970c022ed7d1d1d74dc60ac7ad6f732e69535"
+    },
+    "translations/smplayer_hu.qm": {
+      "sizeBytes": 287136,
+      "sha256": "37e7285601aa363ad077032b1a5fdaee2c2df000f92e038f5a6554aec3d81f80"
+    },
+    "translations/smplayer_pt.qm": {
+      "sizeBytes": 289344,
+      "sha256": "ebdd3a4d3f157f9cb4acf9c83bb08b2a876e72306a21565a87eef922c3e98cdd"
+    },
+    "translations/smplayer_pt_BR.qm": {
+      "sizeBytes": 291058,
+      "sha256": "be3e71b73e51ab91cfab769bc2ce8a4321aa82d4382ef68c7a1e93907db8acee"
+    },
+    "translations/qt_es.qm": {
+      "sizeBytes": 224992,
+      "sha256": "bb440e6b5ad58cb1daa349854e61ffa8f7306760cf00a920a7a3302791db4176"
+    },
+    "translations/smplayer_he_IL.qm": {
+      "sizeBytes": 177099,
+      "sha256": "f9279a908c1329614a30ba6eb5b89f4e187333515c430a544c7d63b55d8efe04"
+    },
+    "translations/qt_fr.qm": {
+      "sizeBytes": 227534,
+      "sha256": "9b9f136ca116ee8e7606bbd42c49e9d931bece4b00ea5e7eea2519a95ba2bb4b"
+    },
+    "translations/smplayer_sl_SI.qm": {
+      "sizeBytes": 37157,
+      "sha256": "3a9020f706cd24af27fce02cb8f7ff6719fcf64752f7ff338228b480fb516cf5"
+    },
+    "translations/smplayer_sv.qm": {
+      "sizeBytes": 35587,
+      "sha256": "d894c839488d97c00e2e14a1c451d5d943fb092599dfd4dbed3717b1b51e5baf"
+    },
+    "translations/smplayer_nb_NO.qm": {
+      "sizeBytes": 263265,
+      "sha256": "02c4cdd483bedaccbdae48f9d3d714121e5971b7a19469cf5de6f7049ffb2a5f"
+    },
+    "translations/smplayer_uz.qm": {
+      "sizeBytes": 6469,
+      "sha256": "411ca262fcfc12f36e39baaf39669e61d7fc0d3e8c900ca185243e83b33024cc"
+    },
+    "translations/qt_fi.qm": {
+      "sizeBytes": 214086,
+      "sha256": "49fdfe1ab15d0cf6a884c2ec80c2847019dbece8ea04e00df5b6b0c232eb964a"
+    },
+    "translations/smplayer_gl.qm": {
+      "sizeBytes": 292549,
+      "sha256": "4c0a4fa84f9aafe35ff0969026baa26c8ad3490415bf5caf942b7033b1ba538d"
+    },
+    "translations/smplayer_da.qm": {
+      "sizeBytes": 284399,
+      "sha256": "d2eff8176fb652c5840345059460ed10d656b679a97b28b8216e1f688fb2e46f"
+    },
+    "translations/smplayer_ar_SY.qm": {
+      "sizeBytes": 261509,
+      "sha256": "887f6d66dd395b25858aa83397c1484ca02e0cdc0a5c70401a49a77a84ff2dbd"
+    },
+    "translations/smplayer_eu.qm": {
+      "sizeBytes": 285110,
+      "sha256": "6548946fdb1a63bd69544cdfd158e85d7deb44fba9659ea37d5446ff2bd2d691"
+    },
+    "translations/smplayer_hr.qm": {
+      "sizeBytes": 290436,
+      "sha256": "93c82534472876c0347be698793d3882ff73f349c41d576e2c99fc9f0906cba6"
+    },
+    "translations/qt_pl.qm": {
+      "sizeBytes": 196476,
+      "sha256": "8a6abeae312733785df553aa087f0c9220676896ae4c0b5766df12b70d4473be"
+    },
+    "translations/qt_de.qm": {
+      "sizeBytes": 237442,
+      "sha256": "b8d7ecf0d34c57fa0c6a7eccaff8fd111cd88530cdb92c231c9dcdc6c71e14ba"
+    },
+    "translations/smplayer_mk.qm": {
+      "sizeBytes": 77914,
+      "sha256": "bb99dfcf70417ba030b80b56f52ae0aa318500340197288f485b2bc841a4f6f7"
+    },
+    "translations/smplayer_am.qm": {
+      "sizeBytes": 234376,
+      "sha256": "94eab16c62bf4e416d3f44279970dd7eb420ae60dfa769a3ecbf59ab292dd56a"
+    },
+    "translations/smplayer_sq_AL.qm": {
+      "sizeBytes": 82204,
+      "sha256": "f4c366685172f10bbc7472351ee7d135114a30d10df8aded663c1b76020212c2"
+    },
+    "translations/smplayer_uk_UA.qm": {
+      "sizeBytes": 283360,
+      "sha256": "ee17771e166328ee5f84e71fad1db1a895b64d520abdd785205aa5f83d4fe68c"
+    },
+    "translations/smplayer_nn_NO.qm": {
+      "sizeBytes": 169738,
+      "sha256": "d450ec67ea395286c998cbde656dfa72dc83e3a31287ae0c17242b096205792b"
+    },
+    "translations/smplayer_el.qm": {
+      "sizeBytes": 301756,
+      "sha256": "1067247d105dd18a0a1789cdf1452dd35b90b43e45e7d713a7e12259763203ea"
+    },
+    "translations/qt_ja.qm": {
+      "sizeBytes": 175172,
+      "sha256": "72d97b18c799663b6870951d31ff005bdaa2110c556cebbc6f8999c955cf40ab"
+    },
+    "translations/smplayer_fa.qm": {
+      "sizeBytes": 62385,
+      "sha256": "f68e9f5c260f1d65e9f9cd586ef2ffe0eb08f573a9ec8b56e6ffa237df35c155"
+    },
+    "translations/smplayer_de.qm": {
+      "sizeBytes": 303104,
+      "sha256": "dfb61b73759ebd845bf3dd70796a391ccace8c862e236a673fe96a94ff91210e"
+    },
+    "translations/smplayer_es_ES.qm": {
+      "sizeBytes": 299760,
+      "sha256": "fe19d8e96c493c2a0a0c688c2eb893ee86a5de9d301d7ae59fc92b39d816a7ec"
+    },
+    "translations/smplayer_zh_TW.qm": {
+      "sizeBytes": 203199,
+      "sha256": "c8e61e01e214586e9fffce69a7b1d0dd3879318685586bf14a193438b38d8613"
+    },
+    "translations/smplayer_ka.qm": {
+      "sizeBytes": 30095,
+      "sha256": "0a3336284e996ccf60c69fdc00527c78d30af0d993c9b5a791bb819f755cd888"
+    },
+    "translations/smplayer_cs.qm": {
+      "sizeBytes": 267295,
+      "sha256": "26a0edb2c032a3ba2a68c8a41547e1ab7f791f32eebbcf8eb6bf6f5415814461"
+    },
+    "translations/qt_cs.qm": {
+      "sizeBytes": 158455,
+      "sha256": "6862ce2bbffe5171dcc67b046e5ae6e2e9984c3e981d64b7fbd4a1fc4763a61e"
+    },
+    "translations/qt_he.qm": {
+      "sizeBytes": 139222,
+      "sha256": "d7836f59ef79314db1f4ab6b76abc283ab2b5d4942d2bc129d620e913e294153"
+    },
+    "translations/qt_lv.qm": {
+      "sizeBytes": 207489,
+      "sha256": "f2189255501c0e3493473d7ca8d23e53c0cba142948383f6cfc767fa21703849"
+    },
+    "translations/qt_ca.qm": {
+      "sizeBytes": 174265,
+      "sha256": "6af2c1bc7596f7204a8f34e5b7199a9696faadcd1bc6f7ffd9bc988db3c87205"
+    },
+    "translations/smplayer_et.qm": {
+      "sizeBytes": 223945,
+      "sha256": "04c47528c52c68bea531fb163c525e14c7272452a8f7af97a0a93aed6fa9e44b"
+    },
+    "translations/qt_en.qm": {
+      "sizeBytes": 23,
+      "sha256": "307cef95dd5b36ff215055d427e1885b7fc3650c9224cf76d63056545996ff60"
+    },
+    "translations/qt_it.qm": {
+      "sizeBytes": 161129,
+      "sha256": "54bdd9856e6007b443f553f03b5b83bca9f08595bf18d3293663517f04e89333"
+    },
+    "translations/smplayer_ko.qm": {
+      "sizeBytes": 206301,
+      "sha256": "c264af5efa1375c167b4780d1c6db629bb8e13998cb14617da6485748028a362"
+    },
+    "translations/smplayer_ja.qm": {
+      "sizeBytes": 227783,
+      "sha256": "5148f77a0d639bf57604fab4f015c04ec54a870f8a06a7157a37cdf273712f4e"
+    },
+    "translations/qt_sk.qm": {
+      "sizeBytes": 174363,
+      "sha256": "2ead228f8c96d5bee891984035ec3cd52d04117eafc9a5e8c55f1f97de9b2406"
+    },
+    "translations/smplayer_ru_RU.qm": {
+      "sizeBytes": 289175,
+      "sha256": "46da1e830a078db90b4fdbcbe8e3c70a1b8f96f349446df8414ef465adedb05f"
+    },
+    "translations/smplayer_ar.qm": {
+      "sizeBytes": 265118,
+      "sha256": "f4c34bc89fd7c649ae31a3757502ce1de5ed9984f97836427e02b8dcd6ee1aa3"
+    },
+    "translations/qt_gd.qm": {
+      "sizeBytes": 173572,
+      "sha256": "0983615cf022b2543993aa6d5f65c16eabf344bd49dad89758a1ac322e036e62"
+    },
+    "translations/smplayer_lt.qm": {
+      "sizeBytes": 221102,
+      "sha256": "b52db0466949ac0887d86630a0b7b025e94b23929461ef7cebc5c3e710df1be9"
+    },
+    "translations/qt_ko.qm": {
+      "sizeBytes": 165906,
+      "sha256": "64eef0a6ab2cd49ff436c249eee28a0656110024ddf4b41dcf28c5a4839910ef"
+    },
+    "translations/smplayer_tr.qm": {
+      "sizeBytes": 282944,
+      "sha256": "b6b83badbae1b8152bd74839a4b9ad98b0b21d4d4e22402efc0753d545b43abf"
+    },
+    "translations/smplayer_id.qm": {
+      "sizeBytes": 281715,
+      "sha256": "974719dfb8b6d00ffdf581cc15f3c6011755190bdc72775a038549359336bc8f"
+    },
+    "translations/qt_hu.qm": {
+      "sizeBytes": 220956,
+      "sha256": "99de50876e52d4d7befb96b45a1d3bac06a51a095d62ce8209a6879d43acbe73"
+    },
+    "translations/smplayer_it.qm": {
+      "sizeBytes": 287105,
+      "sha256": "3dbb50b14e8b11a77333273162515d16fb8acbf923bfb7b5c53272b680065277"
+    },
+    "translations/smplayer_sr.qm": {
+      "sizeBytes": 256149,
+      "sha256": "5191fe2424ef30934d2f459ad77a02ce0186382ca3165133cadb49b6fe983672"
+    },
+    "translations/smplayer_bg.qm": {
+      "sizeBytes": 265474,
+      "sha256": "51eb681ecb0a761e63e613f7622f790b27c447634580673623cf5dcbe5427833"
+    },
+    "translations/smplayer_sk.qm": {
+      "sizeBytes": 282583,
+      "sha256": "142191ed7847effa626755a5bc790d10c972ad85c6ee0ac40ab1fbcb89f77724"
+    },
+    "translations/smplayer_ca.qm": {
+      "sizeBytes": 217013,
+      "sha256": "16e20e2cf5157fb65aa67e7b668f6931103afbc947dc39e049a31cc7ad31c0e0"
+    },
+    "translations/smplayer_ku.qm": {
+      "sizeBytes": 92878,
+      "sha256": "2c9e501299cc73065820602115bf9e714c05cbb1f801bb441c4ca17c284a9329"
+    },
+    "translations/smplayer_en.qm": {
+      "sizeBytes": 96,
+      "sha256": "1e3999d875e232e3cf5d54510026e60eddb213dfc80b105f41cf8ea4cc7d6a24"
+    },
+    "translations/qt_ru.qm": {
+      "sizeBytes": 216077,
+      "sha256": "b4f74b5fbd20899585de4351b76af03fbfe9a3c1edbd44282e18a0d52d3b651c"
+    },
+    "mpv/mpv.exe": {
+      "sizeBytes": 66516499,
+      "sha256": "afc55976dbd8d86690b149192c5155cc4413b07cc39f9808cf36f06df9d3b1a3"
+    },
+    "mpv/mpv.com": {
+      "sizeBytes": 43520,
+      "sha256": "e874c4b8e7c46f987633da99a9b0c0389b0a0402747f899ac73cfabbfae273bf"
+    },
+    "mpv/d3dcompiler_43.dll": {
+      "sizeBytes": 3696072,
+      "sha256": "7d0d1290382ea0e44a3178446a0c202696237e27dbb5f8f0827691092b8f2228"
+    },
+    "shortcuts/euskara.keys": {
+      "sizeBytes": 3985,
+      "sha256": "e447e30b60ac780bc30ad2e052f366818e0ed53f7ff089e2af7aac23a56c2846"
+    },
+    "shortcuts/default.keys": {
+      "sizeBytes": 4751,
+      "sha256": "db5eb83bfcac5222a35ee2b29267f00c617421d77989cfec5472f2a83d1e68a9"
+    },
+    "shortcuts/vlc.keys": {
+      "sizeBytes": 4487,
+      "sha256": "d3204359da1335876298260e13a7f03a7600517da050de633709c420d178933e"
+    },
+    "mplayer/License.txt": {
+      "sizeBytes": 18437,
+      "sha256": "35f3b9b4c1fff1bb4c711936a6a231dafb6a375e61e535f54c7fca63955da89f"
+    },
+    "mplayer/mplayer.exe": {
+      "sizeBytes": 27681294,
+      "sha256": "fdeb0b93a882fa085c1b6842756c07ce9b32c8916fb2aa83d26131898668b819"
+    },
+    "mplayer/MPlayer.man.html": {
+      "sizeBytes": 545258,
+      "sha256": "bbe1882527a3d341d2fb9acefbb502fe6938fdb21af13f5935b48d73f713b62c"
+    },
+    "mplayer/MPlayer.html": {
+      "sizeBytes": 634429,
+      "sha256": "216ebdadd9fec28b0d1477c588ea623fab664cfe632ec2b023f51c4062087d06"
+    },
+    "mplayer/readme.txt": {
+      "sizeBytes": 4200,
+      "sha256": "3790886b3326dcbb6457216bd776e0f28c7c69c80aa0c4aecc976ff538b134ac"
+    },
+    "platforms/qwindows.dll": {
+      "sizeBytes": 1461760,
+      "sha256": "2395e63d1427ab190423b9b58827ff8942983ef349b24f7479868d226e2cd4ec"
+    },
+    "imageformats/qtiff.dll": {
+      "sizeBytes": 436736,
+      "sha256": "5e762df229ae5f6d5ff42d0249bc9d7de6ca22cc71cb3cf6271f9bbb77257122"
+    },
+    "imageformats/qwbmp.dll": {
+      "sizeBytes": 27648,
+      "sha256": "f70a011f4c7d75e265a224a2a10a6e5c0eb26e69646fdc9b5a1e0b1a4a8daeee"
+    },
+    "imageformats/qtga.dll": {
+      "sizeBytes": 28672,
+      "sha256": "d91164c9c8f680b6791ecc304d382c6f5d4dd7e972ef9bd7a84222b0c8bf8c3f"
+    },
+    "imageformats/qicns.dll": {
+      "sizeBytes": 46592,
+      "sha256": "4e834300e4b82183bc712c04390d15f1fe28ab773f19ddada06fbb83f0f5032c"
+    },
+    "imageformats/qwebp.dll": {
+      "sizeBytes": 366080,
+      "sha256": "952438fa3e98cc346fe2eb3d3af25194ac944080aba5a08a1f3e5c4a9b6d4de2"
+    },
+    "imageformats/qjpeg.dll": {
+      "sizeBytes": 251392,
+      "sha256": "79e8a590194845e2693f0b11f546af5037d613ce7483f717cdc78d7a96f0a77b"
+    },
+    "imageformats/qico.dll": {
+      "sizeBytes": 36352,
+      "sha256": "0b7688c4590477cfe66870fe3c000b7876221940e426751d192148aff47b507a"
+    },
+    "imageformats/qgif.dll": {
+      "sizeBytes": 33792,
+      "sha256": "fbd68f18a1a4afc4c69ff331eaf905af60625fa4deebeeb0f69f6e289adefac5"
+    },
+    "imageformats/qsvg.dll": {
+      "sizeBytes": 28672,
+      "sha256": "b4b53cbfbdb08fcb3cf1901b5ba8e2d04507cbfb294da346969fbeeccd1f0b4c"
+    },
+    "mplayer/codecs/codecs.txt": {
+      "sizeBytes": 9,
+      "sha256": "478378ef149f9bf3668654507e125c4d37f47a8e975f1e98676b15edc84d6233"
+    },
+    "mplayer/mplayer/codecs.conf.in": {
+      "sizeBytes": 128206,
+      "sha256": "ccb6086bb0f966bdc8f020251c939f602c00730fc8794aadd06f3307d5f62c40"
+    },
+    "mplayer/mplayer/input.conf": {
+      "sizeBytes": 4908,
+      "sha256": "a951c831a503052a5e9db2d17e67f7beced73a62e241f83a551f1ba726d9d5d0"
+    },
+    "mplayer/mplayer/subfont.ttf": {
+      "sizeBytes": 330052,
+      "sha256": "2e1f1b748174d75d026ac651a1b0b20a490c2bd04d66c031495566d887ad6df7"
+    },
+    "mplayer/mplayer/config": {
+      "sizeBytes": 47,
+      "sha256": "060de8874a20a562f2713f463894697e71456e7d309dd52d1fb0b61a83c22c87"
+    },
+    "mplayer/mplayer/config.sample": {
+      "sizeBytes": 2785,
+      "sha256": "c4227b0d450a3b552e17dea776b3c908adcfece3ecccdaa6ea0b4314a47b2ca9"
+    },
+    "mplayer/licenses/lame.txt": {
+      "sizeBytes": 25284,
+      "sha256": "bfe4a52dc4645385f356a8e83cc54216a293e3b6f1cb4f79f5fc0277abf937fd"
+    },
+    "mplayer/licenses/gsm.txt": {
+      "sizeBytes": 1450,
+      "sha256": "81c68a3374937ed9b5e4929c709e81a2c4b35b5d1f450ecf8c473e2daea46ff6"
+    },
+    "mplayer/licenses/enca.txt": {
+      "sizeBytes": 18085,
+      "sha256": "87f1bd4a52b4029476b684fcdd51fed3c6b2540e462d3c2d3bfc9be4558b2825"
+    },
+    "mplayer/licenses/libcaca.txt": {
+      "sizeBytes": 508,
+      "sha256": "d10f0447c835a590ef137d99dd0e3ed29b5e032e7434a87315b30402bf14e7fd"
+    },
+    "mplayer/licenses/expat.txt": {
+      "sizeBytes": 1208,
+      "sha256": "f6eeb2310d0b00e5cecac39c73a0696a5bdbfb754b26325ed5a502fc1a6c338c"
+    },
+    "mplayer/licenses/twolame.txt": {
+      "sizeBytes": 26430,
+      "sha256": "a190dc9c8043755d90f8b0a75fa66b9e42d4af4c980bf5ddc633f0124db3cee7"
+    },
+    "mplayer/licenses/gmp.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "mplayer/licenses/freetype.txt": {
+      "sizeBytes": 6910,
+      "sha256": "93db264e083fa85b7494b3dd47a214a4043b37170d7079cd4b16eb05842f5eac"
+    },
+    "mplayer/licenses/a52.txt": {
+      "sizeBytes": 18007,
+      "sha256": "dcc100d4161cc0b7177545ab6e47216f84857cda3843847c792a25289852dcaa"
+    },
+    "mplayer/licenses/libass.txt": {
+      "sizeBytes": 697,
+      "sha256": "e53348ce276358e9997014071c5294b36a18c4b34f32f00ee57b9acce0aafd63"
+    },
+    "mplayer/licenses/opus.txt": {
+      "sizeBytes": 1929,
+      "sha256": "9e038e02a487b3db23ed88cd1c7c2e2c8b8ec44294294e31f9bccab5094b0004"
+    },
+    "mplayer/licenses/mplayer.txt": {
+      "sizeBytes": 18437,
+      "sha256": "35f3b9b4c1fff1bb4c711936a6a231dafb6a375e61e535f54c7fca63955da89f"
+    },
+    "mplayer/licenses/libvorbis.txt": {
+      "sizeBytes": 1470,
+      "sha256": "414bfd5d8ee64395a9231d6386188461500052c10915bee08b18bfa9489dd0b3"
+    },
+    "mplayer/licenses/mpg123.txt": {
+      "sizeBytes": 41537,
+      "sha256": "ce91819728ca4a7cbbf187217395a3fa97beb6e5d5190e4c56d9c8d7b6b9f7c6"
+    },
+    "mplayer/licenses/faad.txt": {
+      "sizeBytes": 18622,
+      "sha256": "c5ec6fe8072d2371385231b9844e61e0dc7466300e17e00eb9a64fff3fdf4aa4"
+    },
+    "mplayer/licenses/opencore-amr.txt": {
+      "sizeBytes": 10271,
+      "sha256": "8b3f1762349248d444ab9acbafe73941254e36e1064954da56bb9ddbd5873ddb"
+    },
+    "mplayer/licenses/fontconfig.txt": {
+      "sizeBytes": 1313,
+      "sha256": "fa4cd9ab005185e10cd8f7504518856c7dd36c01e766c2bac87f4fc638e9f886"
+    },
+    "mplayer/licenses/gnutls.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "mplayer/licenses/libxml2.txt": {
+      "sizeBytes": 1289,
+      "sha256": "c5c63674f8a83c4d2e385d96d1c670a03cb871ba2927755467017317878574bd"
+    },
+    "mplayer/licenses/libbluray.txt": {
+      "sizeBytes": 24478,
+      "sha256": "b3aa400aca6d2ba1f0bd03bd98d03d1fe7489a3bbb26969d72016360af8a5c9d"
+    },
+    "mplayer/licenses/lzo.txt": {
+      "sizeBytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "mplayer/licenses/bzip2.txt": {
+      "sizeBytes": 1901,
+      "sha256": "4919cfb14a73cd64fcef67b107613970cf1659a09aa675dba31314f373bc7204"
+    },
+    "mplayer/licenses/fribidi.txt": {
+      "sizeBytes": 26440,
+      "sha256": "32434afcc8666ba060e111d715bfdb6c2d5dd8a35fa4d3ab8ad67d8f850d2f2b"
+    },
+    "mplayer/licenses/sdl.txt": {
+      "sizeBytes": 24390,
+      "sha256": "bb117c0fbd7f57f64170b690285d7df07c2371b578e3b3cd3aa2e1155ef461a0"
+    },
+    "mplayer/licenses/zlib.txt": {
+      "sizeBytes": 1327,
+      "sha256": "2c119994e41bbca7b27d925c20058c4388f353ce028b6966cc0d43cc427fb0e2"
+    },
+    "mplayer/licenses/giflib.txt": {
+      "sizeBytes": 1088,
+      "sha256": "0c9b7990ecdca88b676db232c226548ac408b279f550d424d996f0d83591dd8e"
+    },
+    "mplayer/licenses/libiconv.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "mplayer/licenses/libbs2b.txt": {
+      "sizeBytes": 1059,
+      "sha256": "dfd5a8d7dc501447bf0d58b0fc9ef85ab9e713963d7dcf459897adefa4c710ca"
+    },
+    "mplayer/licenses/libogg.txt": {
+      "sizeBytes": 1466,
+      "sha256": "d2ab5758336489da61c12cc5bb757da5339c4ae9001f9bb0562b4370249af814"
+    },
+    "mplayer/licenses/x264.txt": {
+      "sizeBytes": 17992,
+      "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+    },
+    "mplayer/licenses/libcdio.txt": {
+      "sizeBytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "mplayer/licenses/libmad.txt": {
+      "sizeBytes": 17992,
+      "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670"
+    },
+    "mplayer/licenses/jpeg.txt": {
+      "sizeBytes": 17522,
+      "sha256": "b5dc4f2eb01c2bad3d3f05b2bbb3ab8e1febf5ed5798285813d4657277eabcbf"
+    },
+    "mplayer/licenses/libilbc.txt": {
+      "sizeBytes": 1511,
+      "sha256": "ab00a482b6a3902e40211b43c5d0441962ea99b6cc7c25c0f243fa270b78d482"
+    },
+    "mplayer/licenses/xvid.txt": {
+      "sizeBytes": 17987,
+      "sha256": "2ab06d2335f9781f1a485c78a557e6c61b6c24e118caad4d4210c46426bbce95"
+    },
+    "mplayer/licenses/nettle.txt": {
+      "sizeBytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    "mplayer/licenses/speex.txt": {
+      "sizeBytes": 1774,
+      "sha256": "671bb5d8fd3c6b05a2e831d90f978ac27965c92bd8ea6d16b3df76e3440c0e9f"
+    },
+    "mplayer/licenses/libtheora.txt": {
+      "sizeBytes": 1470,
+      "sha256": "8417fad7da775735564e209484a2e011e0fa201e94f01fdbee6e4977e478e6fc"
+    },
+    "mplayer/licenses/libdca.txt": {
+      "sizeBytes": 17987,
+      "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+    },
+    "mplayer/licenses/libvpx.txt": {
+      "sizeBytes": 1537,
+      "sha256": "8267348d5af1262c11d1a08de2f5afc77457755f1ac658627dd9acf71011d615"
+    },
+    "mplayer/licenses/libmng.txt": {
+      "sizeBytes": 4622,
+      "sha256": "ba280734838eb3f22a85b92a7e62de357d4d4c325029dce723b0cb125c417c35"
+    },
+    "mplayer/licenses/libpng.txt": {
+      "sizeBytes": 4195,
+      "sha256": "1735fed97a04a45200c892e355ad2a9268cecd018d3cd54ecde42724ad6d67bb"
+    },
+    "mplayer/fonts/fonts.conf": {
+      "sizeBytes": 2373,
+      "sha256": "84de94ad687652b208f8f129269deb52a4de71ccefd85229b039e4a6cbfdb3d4"
+    },
+    "mplayer/fonts/conf.d/10-scale-bitmap-fonts.conf": {
+      "sizeBytes": 2010,
+      "sha256": "4cf7aa43a43a90445816f275e34992f3563db4468ef588874440d61546485702"
+    },
+    "mplayer/fonts/conf.d/65-nonlatin.conf": {
+      "sizeBytes": 7959,
+      "sha256": "cfc9c510f9192c76532bf9016e105ede9dc183b9d88b1e8d78ca5842968cddb0"
+    },
+    "mplayer/fonts/conf.d/60-latin.conf": {
+      "sizeBytes": 1798,
+      "sha256": "09d3723d436cca7dd3cd3418d7c0a6abe987f31fb118fef3ecc9bb40cbeb9d2c"
+    },
+    "mplayer/fonts/conf.d/50-user.conf": {
+      "sizeBytes": 673,
+      "sha256": "572980e97c21390386bda4d49da677fd99afbede5b2f63e4ea50d47696a8f8b4"
+    },
+    "mplayer/fonts/conf.d/README": {
+      "sizeBytes": 978,
+      "sha256": "f15acc29263815e7e04144a4b125e826a50557cdfb44dfc20cea5dcd869c6ea1"
+    },
+    "mplayer/fonts/conf.d/20-unhint-small-vera.conf": {
+      "sizeBytes": 1259,
+      "sha256": "855e1f86a70170982cda0e796e407173c81e4033537ccb6fa899f638a324ef60"
+    },
+    "mplayer/fonts/conf.d/51-local.conf": {
+      "sizeBytes": 189,
+      "sha256": "cff7fa2a5fec9dc6e4b96df901a5763b02f7da3bd1636f62b261f71ec06dcc71"
+    },
+    "mplayer/fonts/conf.d/65-fonts-persian.conf": {
+      "sizeBytes": 10118,
+      "sha256": "e02d797787df6b54e81d77aa8e8a75bcd59b866802fb43b06105d66376efd30d"
+    },
+    "mplayer/fonts/conf.d/45-latin.conf": {
+      "sizeBytes": 4621,
+      "sha256": "0a2519eaa11f43dba92c2408534674aab9915bb91708a16d59d5db470d49740f"
+    },
+    "mplayer/fonts/conf.d/69-unifont.conf": {
+      "sizeBytes": 672,
+      "sha256": "7d001e8289d1af7a0f095b3c5646347a68c6586b989312ffa3059f92213678e5"
+    },
+    "mplayer/fonts/conf.d/40-nonlatin.conf": {
+      "sizeBytes": 5182,
+      "sha256": "96883a4ec25fe27cc7e608e34a2b0928c6572263c60fdd1a4d10c7cac4a04683"
+    },
+    "mplayer/fonts/conf.d/90-synthetic.conf": {
+      "sizeBytes": 1691,
+      "sha256": "bbea65e32cef73fcb80efa1b32fc54e31c31477d808a8b206682f1ab06baa523"
+    },
+    "mplayer/fonts/conf.d/49-sansserif.conf": {
+      "sizeBytes": 545,
+      "sha256": "ac32c6de350ff1c7945c31bf55eb89aa00c2198f65c92f89479f552dbce82090"
+    },
+    "mplayer/fonts/conf.d/80-delicious.conf": {
+      "sizeBytes": 422,
+      "sha256": "046da4371f65c236aafc73ed33a924c61e55ff49dad9d9a51e79f519882d7fbd"
+    },
+    "mplayer/fonts/conf.d/30-metric-aliases.conf": {
+      "sizeBytes": 12804,
+      "sha256": "0dfa1a4bf39d860dc5f43a728adbf756dfebd315e4b7a86a4e6f9a5655346eb1"
+    },
+    "mplayer/fonts/conf.d/25-unhint-nonlatin.conf": {
+      "sizeBytes": 3256,
+      "sha256": "d074be03d0613eb6aa4037c97fc48234e8340a36262f528e09583e65031cc1fc"
+    },
+    "mplayer/fonts/conf.d/30-urw-aliases.conf": {
+      "sizeBytes": 701,
+      "sha256": "7de3bc0dc38130b74005a125efa673cc096948620e92807724b718c78b2eb267"
+    },
+    "themes/PapirusDark/README.txt": {
+      "sizeBytes": 148,
+      "sha256": "2322e548eed96d6361452340a927c9987afcee22d3822902eebd1b6284d10d27"
+    },
+    "themes/PapirusDark/PapirusDark.rcc": {
+      "sizeBytes": 74703,
+      "sha256": "2429cd2b9a7fb91097cf769a52c2400c505c0021a9a4af821e7489637c3ee860"
+    },
+    "themes/Faenza-Silver/Faenza-Silver.rcc": {
+      "sizeBytes": 216053,
+      "sha256": "3a9f7925bcab632bc50d295dd93140495944b4103d308c240ea6b27e311e0801"
+    },
+    "themes/Faenza-Silver/README.txt": {
+      "sizeBytes": 188,
+      "sha256": "40bffdd55d612804163d0ccac317a2e13a8789076895302afe1552ffee25520b"
+    },
+    "themes/Masalla/README.txt": {
+      "sizeBytes": 173,
+      "sha256": "c410aadaa541fb863a6ced2c59c45ef8f6535ce3b4af863e6de04c0d93ac2655"
+    },
+    "themes/Masalla/Masalla.rcc": {
+      "sizeBytes": 268201,
+      "sha256": "71c33639fea7a3dfdbc4c71b19e9ddb22a59de1371667e6b16e4bd289241fb7b"
+    },
+    "themes/Masalla/style.qss": {
+      "sizeBytes": 1944,
+      "sha256": "3102158b96dc6ff7c256cc4b153ceb2f397db5af67bb784381d4928c527dc259"
+    },
+    "themes/Tango/README.txt": {
+      "sizeBytes": 166,
+      "sha256": "d93a0bdc2eea3933fe45f8d0c4c79735af5eea6eed2bdbb68f246068ad615a9f"
+    },
+    "themes/Tango/Tango.rcc": {
+      "sizeBytes": 135629,
+      "sha256": "c3c9cdd7faed736cf42ce71b1c61db5a83cad9280e3ee4929cd1bd9686a5e58c"
+    },
+    "themes/Gartoon/Gartoon.rcc": {
+      "sizeBytes": 145307,
+      "sha256": "9c4240a94b415156588f0f947e95b1fe3daab4b086e620532fb1b18be850abfd"
+    },
+    "themes/Gartoon/README.txt": {
+      "sizeBytes": 303,
+      "sha256": "5c7093a2feac4bd53bbf76300ace033f7c6e678ab72ca14ef3c2f00e49c34952"
+    },
+    "themes/Mac/Mac.rcc": {
+      "sizeBytes": 130528,
+      "sha256": "47370265947c1891cf1aeee45c0657341bcd63704d124ee0432ff4390edbba81"
+    },
+    "themes/Mac/main.css": {
+      "sizeBytes": 3807,
+      "sha256": "264d81613f3dbc2139f023c0a202e0943de2b39bc23cadd27a982bf6f41c9ea8"
+    },
+    "themes/Oxygen-Refit/README.txt": {
+      "sizeBytes": 194,
+      "sha256": "5728b89b48973bd4688c0ac11313a629e1e6b9cd93276362e11fa0128da4c2cd"
+    },
+    "themes/Oxygen-Refit/Oxygen-Refit.rcc": {
+      "sizeBytes": 182196,
+      "sha256": "badd958db5abee34d9f553a36e576904da4f1daacf2a3d4017b0978eaba78562"
+    },
+    "themes/Oxygen-Air/Oxygen-Air.rcc": {
+      "sizeBytes": 207010,
+      "sha256": "b0597840981219efe585499521fb35e04fc5d2c23e9dbab7e7d143472adb09bf"
+    },
+    "themes/Oxygen-Air/README.txt": {
+      "sizeBytes": 275,
+      "sha256": "551c7edbba15ef317578301ba428ff1fd814340ac65b0aa06da9e8a01c2b5596"
+    },
+    "themes/Vista/Vista.rcc": {
+      "sizeBytes": 173124,
+      "sha256": "f654f223eb14b30c6afe55b9f99cb834401fb2426b95f928ccebae4153ea8e41"
+    },
+    "themes/Vista/main.css": {
+      "sizeBytes": 3080,
+      "sha256": "b9ea7018bb2d743ca321a030240dea2f4bbce4c4989e8d8563168429bdce2282"
+    },
+    "themes/Papirus/README.txt": {
+      "sizeBytes": 142,
+      "sha256": "6ec7142011278a4cb452896e236745cd16bd60df8caec45b0a609974d8856634"
+    },
+    "themes/Papirus/Papirus.rcc": {
+      "sizeBytes": 75724,
+      "sha256": "71057e4b0d4e928cd2512a4d3c7474a6d8d162ef7dd371e81e123d98f63e12f3"
+    },
+    "themes/Numix-uTouch/README.txt": {
+      "sizeBytes": 180,
+      "sha256": "90d4d3173e0a6827664d2df269cf51c293738e1c7e440ac217e80ff2cdd344c6"
+    },
+    "themes/Numix-uTouch/Numix-uTouch.rcc": {
+      "sizeBytes": 35486,
+      "sha256": "d2344bc5bd9b98763b74a8a764b636cd337c8b484e6693c975f862a1355db088"
+    },
+    "themes/Numix-remix/README.txt": {
+      "sizeBytes": 180,
+      "sha256": "83fced0ed0fac11bd73e2fd64d0aa70bf1bb04ec009ff7badf99301cb15d37ef"
+    },
+    "themes/Numix-remix/Numix-remix.rcc": {
+      "sizeBytes": 48814,
+      "sha256": "c18ee4688d64ae670960748e656e520257ea49d5de2db454a3b90bfb90e285e9"
+    },
+    "themes/ePapirus/README.txt": {
+      "sizeBytes": 143,
+      "sha256": "e734ce50eabff5e2b8009c25c6cfd63f399ffc0e18715197fcdd0270f4cbd909"
+    },
+    "themes/ePapirus/ePapirus.rcc": {
+      "sizeBytes": 76032,
+      "sha256": "6d7b57d3ee84ddaf62506b448f56ad8ee10311b33f39d26f282c0d3864db48bc"
+    },
+    "themes/Oxygen/README.txt": {
+      "sizeBytes": 405,
+      "sha256": "dab38e3c3e910def75381809f3cd744e218e57b79345c2c0e5df4d62235a1486"
+    },
+    "themes/Oxygen/Oxygen.rcc": {
+      "sizeBytes": 169441,
+      "sha256": "c46bd23fc44a4edb9018cc65fb9466e91abdf4a679a6301f3c74aea1610e9cda"
+    },
+    "themes/Black/Black.rcc": {
+      "sizeBytes": 95185,
+      "sha256": "fcdf7c031c0462e61b50aca81b8debe68309b4f3ff5ab5f0069187deb0429f5a"
+    },
+    "themes/Black/main.css": {
+      "sizeBytes": 2886,
+      "sha256": "e327d1234ae2a08a0dc8a1e7f3e318e8b65a7e025afa0fc9312a17b1d9cc74b4"
+    },
+    "themes/Gonzo/Gonzo.rcc": {
+      "sizeBytes": 125437,
+      "sha256": "c00b45ab0367e358b92bc04b474953ca2b05f70fd69e3bf6b921853d86dc0d68"
+    },
+    "themes/Gonzo/main.css": {
+      "sizeBytes": 3187,
+      "sha256": "1b88bda0b2c6c47b8e1cb48603908301624f5426fc005fcb95316aedd0ff5bae"
+    },
+    "themes/Nuvola/Nuvola.rcc": {
+      "sizeBytes": 193290,
+      "sha256": "745b777f4f1f2d9f1c8f9676e55999f5911f63b1615a3e06c8292767d3eb9664"
+    },
+    "themes/Nuvola/README.txt": {
+      "sizeBytes": 149,
+      "sha256": "6fef923acfa78db4dd2855ce07385fd277a5ced1a70000dee4631f63e0b43c15"
+    },
+    "themes/Breeze-dark/README.txt": {
+      "sizeBytes": 273,
+      "sha256": "1cf16a7cdf22d58db2955dd755a74d77866ec193bd974483089d2678ef6552e6"
+    },
+    "themes/Breeze-dark/Breeze-dark.rcc": {
+      "sizeBytes": 143824,
+      "sha256": "c243aef48bb1b68003d0ee448b8a3cba854220a65474520f673772be78c0790b"
+    },
+    "themes/blackPanther-VistaLike/README.txt": {
+      "sizeBytes": 139,
+      "sha256": "1b41b95a33d79658057641f5214a95e0babb39ad89ad19900b058a360013ec85"
+    },
+    "themes/blackPanther-VistaLike/blackPanther-VistaLike.rcc": {
+      "sizeBytes": 168920,
+      "sha256": "084649370d1fccaf1a69b92c9d507bb3a5eb77e46a76f1e07999531ea413e6de"
+    },
+    "themes/Faenza/Faenza.rcc": {
+      "sizeBytes": 208562,
+      "sha256": "1b7482544e44a6597e28fcc0c6a58f4d1672f651b15bd20442ce7fd44a022dcf"
+    },
+    "themes/Faenza/README.txt": {
+      "sizeBytes": 181,
+      "sha256": "ed116aa01009648777971b16fd3205b71de72a58d4c860c8be538041b160637d"
+    },
+    "themes/blackPanther-Light/README.txt": {
+      "sizeBytes": 136,
+      "sha256": "fcb5aaf4ebb3b5ca909fcb0ef624d1ef3e142cadf0312d50a9531f984af994d5"
+    },
+    "themes/blackPanther-Light/blackPanther-Light.rcc": {
+      "sizeBytes": 223274,
+      "sha256": "ee11efa58ae43c6c2be59ac2fe19d2eed753c5e553a5b5f433996c22cf8eb3a6"
+    },
+    "themes/Noia/Noia.rcc": {
+      "sizeBytes": 242526,
+      "sha256": "896ee8c1f82c53cee9474caa8bd663056befd1f3cf1c94893d5a2f2380de69db"
+    },
+    "themes/Noia/README.txt": {
+      "sizeBytes": 290,
+      "sha256": "299fa0ad2e73950a3acbb50726e1aec0c5ad763a3a57fbc874e848d13a73f734"
+    },
+    "themes/Gnome/Gnome.rcc": {
+      "sizeBytes": 157630,
+      "sha256": "158d1e11200a85b3cb1fe4ac10046d0c8d01b9e05ba4cdf228b0d908ea7e424e"
+    },
+    "themes/Gnome/README.txt": {
+      "sizeBytes": 235,
+      "sha256": "d0cfffb3798704ef050f77d607d290d2d9351565a61efda81511da329cf1774f"
+    },
+    "themes/Mint-Y/README.txt": {
+      "sizeBytes": 353,
+      "sha256": "058a8138c258b898ec270085deca7684328885fe02cb9e82b5f4740f5fdf5f0f"
+    },
+    "themes/Mint-Y/main.css": {
+      "sizeBytes": 2047,
+      "sha256": "69ea96f17c84b800e5e83de3a81345ecc86120c74226a3540900d3210b458b2a"
+    },
+    "themes/Mint-Y/Mint-Y.rcc": {
+      "sizeBytes": 374376,
+      "sha256": "fc8cba6daaae849b6cbc85cce04ad2c70f41f8ccdd11a5cedf594c57779d7039"
+    },
+    "themes/Oxygen-KDE/README.txt": {
+      "sizeBytes": 302,
+      "sha256": "f8aba96522e545ceb6105199941683804e9f5ee47c039959019dc1d2419a9b44"
+    },
+    "themes/Oxygen-KDE/Oxygen-KDE.rcc": {
+      "sizeBytes": 177534,
+      "sha256": "72f0495fef08e0de362fd36af2043cb26293059faf7e65d9df5fe9693862dad2"
+    },
+    "themes/Silk/README.txt": {
+      "sizeBytes": 662,
+      "sha256": "7da98637b4cfcc5ee44aaef9eb317a822e4cc87052bbd0e6f92fd8f3a7a51070"
+    },
+    "themes/Silk/Silk.rcc": {
+      "sizeBytes": 47131,
+      "sha256": "e6077bec09749e046ca2222a9e9c922dc2b7ac3ae764fbc6fe93a6f9b63d6732"
+    },
+    "themes/Monochrome/README.txt": {
+      "sizeBytes": 335,
+      "sha256": "d886be1d6f8da558c733d8943ca15f822905d8e843a3504a437316b51f26d145"
+    },
+    "themes/Monochrome/Monochrome.rcc": {
+      "sizeBytes": 151216,
+      "sha256": "3d59ae1cd30ca558956bad73bd7d0e620bdcc35c35a57cbc65adc9665968701b"
+    },
+    "themes/Modern/Modern.rcc": {
+      "sizeBytes": 108300,
+      "sha256": "61daec59f9166efbb0a730de5a707258710587411fc38bfd37999508c8e250a8"
+    },
+    "themes/Modern/main.css": {
+      "sizeBytes": 3175,
+      "sha256": "b37b63dcc7da58ea7fb8693efc0452eb553a4a2faf278a24e30640a504ecaa85"
+    },
+    "themes/Faenza-Darkest/README.txt": {
+      "sizeBytes": 189,
+      "sha256": "90d464e646f05967ccc94d10c3fd0c90a2ab7ca1b6e4f93c6cc147b343ae67e7"
+    },
+    "themes/Faenza-Darkest/Faenza-Darkest.rcc": {
+      "sizeBytes": 207076,
+      "sha256": "7f51109079ff3fa9bcb4d711372d0cf279b7b124b7dc0ec41722c04b9ad50fd0"
+    },
+    "themes/Breeze/README.txt": {
+      "sizeBytes": 273,
+      "sha256": "1cf16a7cdf22d58db2955dd755a74d77866ec193bd974483089d2678ef6552e6"
+    },
+    "themes/Breeze/Breeze.rcc": {
+      "sizeBytes": 146559,
+      "sha256": "801a07ae58c1fbae670e27273cbe40bcf91e83b63531e074576612901fd140c3"
+    },
+    "themes/blackPanther-Real/blackPanther-Real.rcc": {
+      "sizeBytes": 253409,
+      "sha256": "b5bf8a411c4c0cf7924490960f28df7939d37de17e5b6d015d98f182a0dc8b81"
+    },
+    "themes/blackPanther-Real/README.txt": {
+      "sizeBytes": 135,
+      "sha256": "0cd0460d6365e79dd1923f3474cbca4a2e96a9cd1052be04d90dc3796ff2dd04"
+    },
+    "themes/Dark/README.txt": {
+      "sizeBytes": 385,
+      "sha256": "added89012e3ad0834722b7ee1884c0ac772bf21ba50d0cef7a242b3dea3c627"
+    },
+    "themes/Dark/Dark.rcc": {
+      "sizeBytes": 181755,
+      "sha256": "6b03232b281f8eb212702b4a54d847e9a75489b1d14474cc661152c027798e24"
+    },
+    "themes/Dark/style.qss": {
+      "sizeBytes": 28249,
+      "sha256": "63cf89ae36a8e24cebca59e52e8b66ffd72ce9fb818a4e033cbffcc92d314ff3"
+    },
+    "mpv/mpv/fonts.conf": {
+      "sizeBytes": 2671,
+      "sha256": "dd1d7f8b946f65d9a988c57f0264ebb75c0f2b956961ebf6aa5fda8ffd5143fb"
+    },
+    "mpv/doc/manual.pdf": {
+      "sizeBytes": 832146,
+      "sha256": "79ca5fe5399f1dc78ab8ade9da815d1602a111b13a14822755b4cd8de13f174d"
+    },
+    "docs/hu/gpl.html": {
+      "sizeBytes": 22012,
+      "sha256": "d17aa8f325c9093ce1adc228ad71244cb484d1ef70de8edf7bf9acffe8a5ec58"
+    },
+    "docs/ro/gpl.html": {
+      "sizeBytes": 22619,
+      "sha256": "078b1db516ad6ddda2de8de6ef79af5cb0081f65cd8377b9dbf52c85baa57b3a"
+    },
+    "docs/de/gpl.html": {
+      "sizeBytes": 28591,
+      "sha256": "8b0b14a0ae2d34ad3b5392a261f24ed3256da96c5a96e459b06abc0f19027019"
+    },
+    "docs/it/gpl.html": {
+      "sizeBytes": 23678,
+      "sha256": "78228b8ed48ce0a178cbc96f516e0edf0eb8efa95e4066f2b06337019cca6e2e"
+    },
+    "docs/en/gpl.html": {
+      "sizeBytes": 20317,
+      "sha256": "4707ba8709fef8bc8fab2ae440645e3fc5cb5313b4490c48fcb5bb030a234a6c"
+    },
+    "docs/cs/gpl.html": {
+      "sizeBytes": 21804,
+      "sha256": "596c2fc040c390cfe9c2a676dd884d20aa7552df92e65368cb23a04e58d87d10"
+    },
+    "docs/es/gpl.html": {
+      "sizeBytes": 24730,
+      "sha256": "b9d05cd9344ef6b41707bf1e8b36b768fb241e2012e830e535a68e057c4fba81"
+    },
+    "docs/fr/gpl.html": {
+      "sizeBytes": 21601,
+      "sha256": "2e762c353eee875c707412801c91d2985426ca99933f3fb6bea6b36fce145d1d"
+    },
+    "docs/ja/gpl.html": {
+      "sizeBytes": 32403,
+      "sha256": "4e690ef63b981865a07d3d351015c382d8999be77daf993e84c0d5f39bc7b66d"
+    },
+    "docs/nl/gpl.html": {
+      "sizeBytes": 23088,
+      "sha256": "205e04867ebf5f8536b6f901a288452a0c6086b7d49662e8bae973f31d93ebac"
+    },
+    "docs/zh_CN/gpl.html": {
+      "sizeBytes": 19230,
+      "sha256": "cd9d093a440261404cd8be04249b43c10abb7be32e1d1eccbd2300a0bbcde09b"
+    },
+    "docs/ru/gpl.html": {
+      "sizeBytes": 47478,
+      "sha256": "cd7ab61b38fe756c558bdacdbf311afb6a15bbb22a363c430dd3a3d340664e27"
+    }
+  },
+  "installedProgramFileCount": 261,
+  "mainProgramPin": {
+    "sizeBytes": 4462592,
+    "sha256": "3da04b0f13627858afbf7b32f14e27883fed9903d025fb5568c55b86a1df7cc9"
+  },
+  "mainExecutableNotWholeApplicationSize": true,
+  "oneFormalOriginalInstallation": true,
+  "installedLicenseExactSelectedSourceComparison": true,
+  "guiAcceptedSeparate": true,
+  "marketInstallationPerformedAtFreeze": false
+}
