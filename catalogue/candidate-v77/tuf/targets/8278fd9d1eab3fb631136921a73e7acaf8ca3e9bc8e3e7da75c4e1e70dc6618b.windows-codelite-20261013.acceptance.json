@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applications": [
+    {
+      "id": "codelite",
+      "version": "17.0.0",
+      "sha256": "8dc40a5d1b855610377229a00d70426c5af7742532ba932e769ceba39af9851b",
+      "size": 56796290,
+      "generationId": "gen-job-1791913844123-1",
+      "definitionDigest": "sha256:a2fb14b367292126ec782b0dd4da3fd17d55236e1f1b85b92b3a40d40e825af1",
+      "launcherSha256": "sha256:5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066",
+      "guiFileOperation": "passed-limited-single-text-edit-save-fresh-explicit-open",
+      "saveProof": {
+        "inputPins": {
+          "drive_c/CodeLiteTests/原始代码.cpp": {
+            "sizeBytes": 38,
+            "sha256": "99f9dd815a09f0e53857fa48c4241531a65d7b4aae570fc4fa1af646af3730ce"
+          }
+        },
+        "outputFile": "drive_c/CodeLiteTests/original.cpp",
+        "outputPin": {
+          "sizeBytes": 52,
+          "sha256": "3dd8b694918d34185b5c39057f9cf29450c4e0fa7c371c65afb2f9d20e6a13e2"
+        },
+        "fullRawReconstructionMatched": true,
+        "bom": "UTF8",
+        "crlfCount": 3,
+        "modelScope": "Only whole-byte reconstruction of one STATUS edit and one ASCII comment append; no compilation, running, debugging or full IDE/specification claim."
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-startup-update-wizard.jpg": {
+          "sizeBytes": 43040,
+          "sha256": "c6290b4a687197fb52df21a69e89a8650a8142bf4db88ad6211d607c7cb5d252",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": true
+        },
+        "02-original-input.jpg": {
+          "sizeBytes": 35508,
+          "sha256": "331a63b7a9caaeca106772d04be7a83c9dbae25575a6fd280600682d7b98715b",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        },
+        "02a-original-incomplete-comment-prefix-diagnostic.jpg": {
+          "sizeBytes": 36394,
+          "sha256": "047826197869e5e20fbd1c22fc744841680be51dacf1103a20fd8ef57bc4ba62",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": true
+        },
+        "03-original-saved.jpg": {
+          "sizeBytes": 36274,
+          "sha256": "248683d1530c20a31561bf60d085143dc732a318a0f1ff45d0877bc48c97f600",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        },
+        "04-original-about.jpg": {
+          "sizeBytes": 41738,
+          "sha256": "d9bfe92811b209d37bb9b54027eb84a88cd28a49741ca464f2b8681a154e5bf1",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": true
+        },
+        "05a-original-reopen-auto-restore-update-diagnostic.jpg": {
+          "sizeBytes": 36079,
+          "sha256": "7e4ca6bed656278d1366eca82fd1a07dc5391ebe2dfd4c69180c515ab1856b45",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": true
+        },
+        "05b-original-fresh-empty-after-close.jpg": {
+          "sizeBytes": 36242,
+          "sha256": "31f5608094f3379cbb90a46fc6365b54cac1667c1aa20f4ebf4b60ab3a81a852",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        },
+        "05c-original-explicit-reopen.jpg": {
+          "sizeBytes": 33250,
+          "sha256": "d655325097bde925cc408051303e5b10769727ae13c73e06462447fea48ef509",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-codelite-source.json",
+    "sha256": "0967bb559ebfdc3b558ed7be3ada4127532510d27619c435671b9228c17ec015"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-codelite-gui.json",
+    "sha256": "26d691b371b8a79cd214dc5a977a7ad5d51eaf03a6750d997d6326b0e1d92d56"
+  },
+  "limits": [
+    "Only one small Chinese-name UTF8 BOM/two-CRLF CPP comment input per role; native File/Open/Open File via My Computer/C/CodeLiteTests, single STATUS BEFORE to AFTER and ASCII // ORIGINAL42 or // MARKET42 appended, native Save As and new formal process explicit Open after native Close of automatic restoration. No compilation, build/link/run/debug, compiler installation, project, advanced editing, complete C++/editor/IDE, large/bad input, broad encoding/formats, printing, direct Chinese keyboard, network/background exclusion, registration/migration/unattended or GUI Store button acceptance. Synthetic text is not a separate app.",
+    "Original input38B unchanged; output52B UTF8 BOM/threeCRLF exactly reconstructed from immutable input. Original About17.0.0; market About not yet tested. Default English/Chinese file name and small Chinese comment readable, no font changes. First startup update download No and native setup wizard Cancel; second update No. Theme suggestion checkbox stayed unchecked in first process. Native auto-restored file closed before explicit Open; automatic restoration is not accepted as explicit loading.",
+    "Initial bulk // prefix actually delivered only slash in unsaved original buffer, actual diagnostic JPEG retained; same unsaved line corrected by individual slash/space/Shift letters before save. No generic keyboard fix. CtrlO at empty welcome screen did not show dialog in observed frames; native File/Open/Open File was used. CtrlShiftS actual Save As and AltX actual File/Exit. Normal0+wineserver-stop twice is not acceptance alone.",
+    "Official fixed CodeLite17.0.0 archive raw86712B saved. Installer56796290B and source33857665B both complete HTTPS200/ContentLength/localSHA; both routes terminal before original install, caches/partials retained without repeat GET. Source16825 unique TAR members/14412 regular files, full gzip stream EOF/trailer validated;12 selected raw members only, not full source manual review. Upstream digest/API/PGP/Authenticode/source-binary correspondence/repro/latest not verified.",
+    "Main LiteEditor/app.cpp GPL2-or-later. Installed LICENSE18341B exact selected root LICENSE raw, root COPYING separately retained. wxCrafter resources/LICENSE is separate SmartKoders EULA with use/backup, registered distribution and reverse engineering limits; not blanket entire binary GPL or public binary redistribution permission. Full wxWidgets/Scintilla/LLVM/clangd/ctags/cppcheck/SQLite/wxCrafter/wxdap/tools/icons/translations closure unverified. Public contains JSON evidence and no installer/program binary.",
+    "Two actual Inno6.1.0 markers; bootstrap0x14c, main0x8664. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:single-backslashCodeLite /NOICONS /TASKS=, DIR16UTF8B hex2f4449523d433a5c436f64654c697465; static iss PrivilegesRequired none, entry codelite.exe, skipifsilent only source context, no full Inno/UAC/associations/shortcuts/uninstall behavior. Main7258112B not whole application size.",
+    "Original332 programs preserved; three registry and selected ProgramData/CodeLite/prefix-user CodeLite-named configuration only, not whole FS. Actual first/new-process config and registry raw/diff saved privately, cause/semantic equivalence unestablished; first discovery not creation time. Complete537Core/156Store seven-class CP saved/readback before market. Recent64IPC not completeSQLite; Core query may write existing scratch. No Core/program/globalcontext/formaldefinition/launcher env/cwd/newfont/globalDLL/runtime fix.",
+    "Guessed host helper paths missing only tool history, exact stderr not separately saved or fabricated; no dependent action tied to those reads. Old noVNC tab was closed; new same-loopback Edge tab connected. Actual default viewport0x0 persisted after reset, documented browser viewport993x998 made canvas operable; no guest/auth/power change. Browser reference name undefined once only host error. Browser tab inventory emitted existing authorization callback URLs in tool history; that limited tool history scope retained, not copied/public/automation or repeated. Password/login images/private keys/credentials/full private CP/exact redirect query excluded. Normal login fresh masked six-character field once submitted, auth/lockscreen/power unchanged.",
+    "wxMEdit and wxHexEditor official archive-only research no package GET/install/task/pending/count. Old failures/helpers/TUF/root/signatures/trust/freezes/history held, no fabricated restoration of old Scribus one private canonicalV1 failure raw. UbuntuKateAPT/Snapcalculator2 separate; Flatpak2 runtime timeouts/cache held; UbuntuVM not run, two4GiB VMs not concurrent. Greenfish EULA no program modification/shader-cache deletion, CopyQ no notification disabling/globalDLL masking, Zim font/AegisubConcurrency unresolved, Texmaker source-only architecture guard held."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

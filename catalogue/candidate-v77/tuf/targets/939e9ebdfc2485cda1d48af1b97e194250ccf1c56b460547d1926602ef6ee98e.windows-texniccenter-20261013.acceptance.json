@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applications": [
+    {
+      "id": "texniccenter",
+      "version": "2.02",
+      "sha256": "bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78",
+      "size": 12198304,
+      "generationId": "gen-job-1791906243898-1",
+      "definitionDigest": "sha256:96d1268362854eb00c309a4e526fe827c9e6ca0a73ec2b5f2c651a5b5ff9e086",
+      "launcherSha256": "sha256:0c4c4191bb1ab1d2199c5930be04729b7cdd3c087838cceecae5fb2915e882bb",
+      "guiFileOperation": "passed-limited-single-text-edit-save-fresh-explicit-open",
+      "saveProof": {
+        "inputPins": {
+          "drive_c/TeXnicCenterTests/原始代码.tex": {
+            "sizeBytes": 86,
+            "sha256": "3949e99e08a571721daf7bd4ac4e879a931474e6e795c926517d14c2ae8d8347"
+          }
+        },
+        "outputFile": "drive_c/TeXnicCenterTests/original.tex",
+        "outputPin": {
+          "sizeBytes": 97,
+          "sha256": "1950b07d562454b6eb80148d4df6e0c4773fc0b6c2b2ae4ef2e13c6f40129737"
+        },
+        "fullRawReconstructionMatched": true,
+        "bom": "UTF8",
+        "crlfCount": 5,
+        "modelScope": "Only whole-byte reconstruction of one STATUS edit and one ASCII marker append; no TeX compilation, rendering or full IDE/specification claim."
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-input.jpg": {
+          "sizeBytes": 56901,
+          "sha256": "1c73afebe7762ac6ecba2fc388b3b6d5dfa38fdb831603cc6192f14a0b82ee94",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        },
+        "02-original-save-caption-observation.jpg": {
+          "sizeBytes": 56240,
+          "sha256": "7d0d4eede75099f80c9f586c4c87db91c8ed5e645de32cb9f4723286de097063",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": true
+        },
+        "02b-original-saved.jpg": {
+          "sizeBytes": 56699,
+          "sha256": "4a4f56e4ba8f041bef6c31b2c1562938d672bf8ec288a21ac03f3ebdb9238c74",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        },
+        "03a-original-fresh-empty.jpg": {
+          "sizeBytes": 47760,
+          "sha256": "e9d6312f9b143d4912ae2293b4529510b17a8e837f26d68773ab50964ae5346e",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        },
+        "03b-original-explicit-reopen.jpg": {
+          "sizeBytes": 57553,
+          "sha256": "d3235bb8f81d4f7266fda2010e025ad80ad099d609fe26fc8e7e93b9f0fa407b",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": false
+        },
+        "04-original-about.jpg": {
+          "sizeBytes": 67019,
+          "sha256": "48758dcbe60a42c24b3fafc1475cd66d53978a0b31a99c3bd6d5a4b8670f109e",
+          "actualEncoding": "JPEG",
+          "diagnosticOnly": true
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-texniccenter-source.json",
+    "sha256": "9a1835f8a2fee2bb4c501bf4d75d7a58e2050f5831ded4da6ad4f9b4c7f86e0e"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-texniccenter-gui.json",
+    "sha256": "9a398643fb03f15278afa887a2ccf32e760d062acb2b1a18867edc4ddcffcf2f"
+  },
+  "limits": [
+    "Only one small Chinese-name UTF8 BOM/CRLF TEX per role: native C-drive tree Open, single STATUS BEFORE to AFTER edit and ASCII marker append, native Save as, fresh formal empty editor explicit Open. No LaTeX compiler, toolchain installation, build, link, PDF rendering, full IDE/editor/TeX specification, project, advanced editing, direct Chinese keyboard, broad Unicode/format/large-bad-input, printing, network/background exclusion, registration/migration/unattended or GUI Store buttons acceptance. Synthetic TEX not a separate app.",
+    "Original86B input preserved; native original.tex97B UTF8 BOM/fiveCRLF whole bytes independently reconstructed from immutable input. Native File/Exit normal0+wineserver stopped twice is not acceptance alone. Original About actual2.02 Stable(32 bit); market About not yet tested. Default English/Chinese filename readable. First English notice OK, every configuration wizard cancelled with no output profiles/TeX distribution configured, tips startup checkbox retained. Not unattended.",
+    "Uppercase typeText first produced lowercase after in unsubmitted buffer; explicit Shift keys corrected before save. No generic keyboard repair. noVNC stale/black painting refreshed only ordinary browser reload/reconnect and normal window move;02 old caption screenshot retained only diagnostic,02b actual original.tex. No application/runtime/driver repair claimed.",
+    "Official fixed Win32 installer12198304B complete HTTPS200/ContentLength/localSHA; fixed Git Release2.02 reference a1aa073a4a5b308bd124b55e6090263bbc9c248e codeload26070815B complete HTTPS200 without ContentLength/localSHA. Final HTTPS scheme checked privately without copying exact redirect query. All2901 unique ZIP members/2766 regular files CRC verified,14 selected source raw only. Version.h actual2.01 under Release2.02 and setup TARGET_x64 default retained; not proof of Win32 binary/source correspondence. No upstream SHA/API assetdigest/PGP/Authenticode/repro/latest verification.",
+    "Main TeXnicCenter.cpp GPL2-or-later. Installed GPL_english.htm19313B only exact selected source same raw; source License.txt/GPL.rtf separately retained. Full MFC/MSVC/Hunspell/Scintilla/MSXML/libiconv/dictionaries/icons/translations closure not verified. Two actual Inno5.5.0 markers/bootstrap/mainPE0x14c; native DIR20 UTF8B single backslash plus /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NOICONS /TASKS=. No complete Inno/UAC/association/shortcut/uninstall behavior verification. Main4120064B not whole app size.",
+    "85 programs per original strictly pinned, three registry plus selected TeXnicCenter-named ProgramData/prefix-user files only, not all FS. Actual before/after registry/config raw and diffs privately saved; cause/semantic equivalence not established, first discovery not creation time. Complete530Core/154Store seven-class CP saved/readback before market; recent64 IPC not fullSQLite, Core queries may write existing scratch. No Core/program/globalcontext/definition/launcher env/cwd/newfont/globalDLL/runtime repair.",
+    "Candidate public-builder V1 wrong installer schema KeyError stopped before all public writes/sign/transfer/activation; actual results/file schema V2 corrected. Source-selector wrong Configuration.cpp assertion stopped before selected-source write or guest operation, corrected from actual ZIP members. GetContent guessed PN helper missing only tool history, no fabricated exactraw. GitHub tags web tool/direct SF info access errors only research, official public git ls-remote then fixed codeload used once. wxMEdit archives-only research no download/install/task/count/pending. No duplicate TeXnicCenter GET/install. All earlier failures/helpers/trust/signature/freeze/history and Scribus one private canonicalV1 raw loss retained, no fabrication.",
+    "Natural lock normal fresh complete masked field once submitted per prior authorization; authentication/lockscreen/power settings unchanged, no bypass, no password/login image saved. Private CP/credentials/password/privatekeys/exact signed redirect query not public. UbuntuKateAPT/Snapcalculator2 independently counted, Flatpak two runtime timeouts/cache held; UbuntuVM not run, two4GiB VMs not concurrent."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

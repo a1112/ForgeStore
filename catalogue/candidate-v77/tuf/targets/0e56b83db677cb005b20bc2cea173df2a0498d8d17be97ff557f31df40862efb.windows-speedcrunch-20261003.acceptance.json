@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-03",
+  "environment": "Original isolated ForgeOS v12 x86_64 guest, Wine 11.14 pinned runtime, UID 1000; existing authorized login used; no password or security setting changed.",
+  "applications": [
+    {
+      "id": "speedcrunch",
+      "version": "0.12",
+      "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89",
+      "size": 9451219,
+      "installJobId": "job-1790967885841-16",
+      "generationId": "gen-job-1790967885841-16",
+      "definitionDigest": "sha256:b81648be841b33d4a1ec6788f0a53541ebd1c659a779b7d043169b05f8716b9f",
+      "launcherSha256": "da69df37412c3d7bb67addd6984147060acff1cb15db4f16d44f251ab936f5af",
+      "launchJobId": "job-1790967909613-17",
+      "reopenJobId": "job-1790968744692-18",
+      "guiFileOperation": "passed",
+      "workflow": "GUI variable assignment, exact decimal addition, square root/power and factorial; save calc.json; normal exit, reopen, explicitly load calc.json replacing current session, compute a+1=82, save calc2.json, normal exit. All expected numeric values checked with Decimal against persisted GUI session JSON. Original session unchanged. About 0.12 observed; display zoom used for readable evidence.",
+      "files": {
+        "calc.json": {
+          "path": "drive_c/users/forge/Documents/calc.json",
+          "sizeBytes": 2312,
+          "sha256": "64c1a1668f31679e34d253dc2a5941ee8baae101b073ab7d2fba2b3a00da22b6",
+          "session": {
+            "functions": [],
+            "history": [
+              {
+                "expression": "a=81",
+                "result": {
+                  "numeric_value": {
+                    "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "sqrt9a0=2610",
+                "result": {
+                  "numeric_value": {
+                    "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "0.1+0.2",
+                "result": {
+                  "numeric_value": {
+                    "value": "0.300000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "sqrt(a)+2^10",
+                "result": {
+                  "numeric_value": {
+                    "value": "1033.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "20!",
+                "result": {
+                  "numeric_value": {
+                    "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              }
+            ],
+            "variables": [
+              {
+                "identifier": "a",
+                "type": "User",
+                "value": {
+                  "numeric_value": {
+                    "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "identifier": "ans",
+                "type": "BuiltIn",
+                "value": {
+                  "numeric_value": {
+                    "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "identifier": "sqrt9a0",
+                "type": "User",
+                "value": {
+                  "numeric_value": {
+                    "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              }
+            ],
+            "version": "0.12"
+          }
+        },
+        "calc2.json": {
+          "path": "drive_c/users/forge/Documents/calc2.json",
+          "sizeBytes": 2553,
+          "sha256": "d1bbb644dbb13f1dc16edc10e79e40659e6c204b7296044ffcb9f71b231ae92b",
+          "session": {
+            "functions": [],
+            "history": [
+              {
+                "expression": "a=81",
+                "result": {
+                  "numeric_value": {
+                    "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "sqrt9a0=2610",
+                "result": {
+                  "numeric_value": {
+                    "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "0.1+0.2",
+                "result": {
+                  "numeric_value": {
+                    "value": "0.300000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "sqrt(a)+2^10",
+                "result": {
+                  "numeric_value": {
+                    "value": "1033.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "20!",
+                "result": {
+                  "numeric_value": {
+                    "value": "2432902008176640000.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "expression": "a+1",
+                "result": {
+                  "numeric_value": {
+                    "value": "82.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              }
+            ],
+            "variables": [
+              {
+                "identifier": "sqrt9a0",
+                "type": "User",
+                "value": {
+                  "numeric_value": {
+                    "value": "2610.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "identifier": "ans",
+                "type": "BuiltIn",
+                "value": {
+                  "numeric_value": {
+                    "value": "82.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              },
+              {
+                "identifier": "a",
+                "type": "User",
+                "value": {
+                  "numeric_value": {
+                    "value": "81.000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                  }
+                }
+              }
+            ],
+            "version": "0.12"
+          }
+        }
+      },
+      "screenshots": {
+        "2026-10-03-speedcrunch-about.jpg": "907dedbe50abc4cc96c16661bff9afeba9fdd4a08f4718fcb881964d68d115ee",
+        "2026-10-03-speedcrunch-reopened.jpg": "5b2503f4897ee4e91fa0e7273459058182094a9187abb63b9a7ef5b6e427224b",
+        "2026-10-03-speedcrunch-saved.jpg": "b1e493708bb584ac19ce2b2f86657227615bce1f73ec1ec58f6deac2d5a8cd43"
+      },
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba"
+    }
+  ],
+  "licenseEvidence": [
+    "https://api.bitbucket.org/2.0/repositories/heldercorreia/speedcrunch/src/ea93b21f9498de620d6669c6048a2c501f3a13fe/src/main.cpp",
+    "https://api.bitbucket.org/2.0/repositories/heldercorreia/speedcrunch/src/ea93b21f9498de620d6669c6048a2c501f3a13fe/pkg/COPYING.rtf",
+    "https://api.bitbucket.org/2.0/repositories/heldercorreia/speedcrunch/src/ea93b21f9498de620d6669c6048a2c501f3a13fe/pkg/speedcrunch.appdata.xml"
+  ],
+  "licenseBasis": "Fixed-tag project_license GPL-2.0+ in appdata, corroborated by src/main.cpp version 2 or any later declaration; GPL template alone is not used to infer or-later.",
+  "limits": [
+    "Official fixed installer locally SHA-256 pinned and checked across host/builder/guest; upstream digest and source build reproducibility unverified.",
+    "One mistyped harness assignment sqrt9a0=2610 retained; intended formulas verified using explicit shifted key combinations. Not an application calculation failure.",
+    "Only stated numeric workflows and JSON session save/load/reopen accepted; advanced functions/units/complex numbers/localization unverified.",
+    "Signed local activation/lifecycle follow this receipt; GUI pass alone does not increase completed count. Guest online download, fresh-machine registration, cross-version upgrade and remote public distribution unverified."
+  ]
+}
