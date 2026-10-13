@@ -972,6 +972,28 @@
       "guiEvidence": "docs/evidence/2026-10-13-aegisub-gui-diagnostic.json",
       "evidence": "docs/windows-rolling-20261013-aegisub-pending.md",
       "blocker": "First native startup crashes with actual Wine report msvcr120.dll Concurrency _NewCollection unimplemented; normal native Close then exit1. No subtitle editor/input Open/edit/save/reopen/market. One original install, no DLL/runtime repair."
+    },
+    {
+      "id": "dupeguru",
+      "name": "dupeGuru",
+      "version": "4.3.1",
+      "stage": "formal-install-failed-core-registry-io-default-directory-mismatch",
+      "sourceUrl": "https://github.com/arsenetar/dupeguru/releases/download/4.3.1/dupeGuru_win32_4.3.1.exe",
+      "sha256": "f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263",
+      "sizeBytes": 27547549,
+      "license": "main-GPLv3-or-later-not-established-component-notices-and-bundle-closure-unverified",
+      "installationJobId": "job-1791927518934-1",
+      "installationJobStatus": "failed",
+      "failedGeneration": "gen-job-1791927518934-1",
+      "installed": false,
+      "programFilesPhysicallyPresent": 620,
+      "guiAccepted": false,
+      "published": false,
+      "countsAsCompleted": false,
+      "artifactEvidence": "docs/evidence/2026-10-14-dupeguru-source.json",
+      "installationEvidence": "docs/evidence/2026-10-14-dupeguru-installation-failure.json",
+      "evidence": "docs/windows-rolling-20261014-dupeguru-pending-v2.md",
+      "blocker": "Installer process exit0 but Core/generation failed registry I/O ENOENT. Requested C:DupeGuru absent,620program files under default Program Files (x86)/Hardcoded Software/dupeGuru; three Wine registries present. No ready generation or GUI; source MultiUser static context only, full cause unestablished. No reinstall or repair."
     }
   ],
   "excludedInternalFixtures": [
@@ -980,17 +1002,17 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "70/1000 finite Windows acceptance;17 pending old allfields unchanged. InfraRecorder0.53 finite DataDisc reference/virtualrename/label/nativeIRPsave/freshEmptyWelcome explicitOpen and StoreIPC exactrollback; candidate-v79/root1/role88,548fullCore/160fullStore. Current strict SSH stdin rolling-current-state-infrarecorder-20261013.py, private after-final-restart CP. V78 URL query guard failure and offlinepartial/higher origin-only correction preserved, no guard/code/resettrust/duplicateinstall. Next other fixed official source/licence/package candidate or controlled pending diagnosis, all historical evidence retained.",
+  "next": "70/1000 accepted old allfields held;18pending old17allfields held, newdupeGuru4.3.1 formal installer exit0 but Corefailed registryIO and actual default directory mismatch; no ready/GUI/market/reinstall. candidate-v79/root1/role88 unchanged,549fullCore/160fullStore allterminal. Unique rolling-current-state-dupeguru-pending-20261014.py strictSSHstdin/finalprivateCP; oldInfra548160CP/helper historical. Next other officialfixed candidate or controlled readonly diagnosis; all failures/trust/signatures/freezes preserved.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-13",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
     "acceptedLocalMarket": 70,
-    "explicitlyBlockedCandidates": 17,
+    "explicitlyBlockedCandidates": 18,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
     "executionPendingCandidates": 0,
-    "pendingCandidates": 17
+    "pendingCandidates": 18
   },
   "activeLocalMarket": {
     "signedCatalogue": "catalogue/candidate-v79/tuf",
@@ -1010,8 +1032,8 @@
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261013-infrarecorder.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-13-infrarecorder-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261014-dupeguru-pending-v2.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-14-dupeguru-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",

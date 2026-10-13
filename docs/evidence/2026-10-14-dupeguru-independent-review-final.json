@@ -1,0 +1,392 @@
+{
+  "FINAL": true,
+  "passed": true,
+  "verdict": "pass-independent-evidence-review-failed-installation-remains-pending-not-application-acceptance",
+  "applicationId": "dupeguru",
+  "version": "4.3.1",
+  "dateUtc": "2026-10-13T21:55:19.249665+00:00",
+  "reviewStage": "fresh independent host-only final review before first real stage; one failed install round",
+  "baseCommit": "faf7d46c4952a9eac42e50c1af34b4f774b73947",
+  "prospectiveManifest": "dupeguru-prospective-files-20261014.json",
+  "prospectiveManifestSha256": "d46ca10c287417732e5af12e800cd511d9822852d0bae2b5fe81a1183049faa9",
+  "prospectiveCount": 30,
+  "prospectiveFiles": {
+    ".gitattributes": {
+      "sizeBytes": 52666,
+      "sha256": "2782222d2bb820dd333977fec91655194817b38e9675f19ed5faeeb340e94412"
+    },
+    "docs/evidence/2026-10-14-dupeguru-current-state.json": {
+      "sizeBytes": 7311,
+      "sha256": "ae996bdffc2c0bfdcffa17a8c96bc3bc1b564f7df9b64cb0de37d2677fe3cf06"
+    },
+    "docs/evidence/2026-10-14-dupeguru-date-scope-correction.json": {
+      "sizeBytes": 442,
+      "sha256": "cd606a49b714c01076fc4761392061f530d685fb30902c22fddf1b5bec45a1dd"
+    },
+    "docs/evidence/2026-10-14-dupeguru-failures-and-scope.json": {
+      "sizeBytes": 7414,
+      "sha256": "7e2d5af9f771ac84101b68c833730742efb76580f4e801bc675160c64f7d1e0c"
+    },
+    "docs/evidence/2026-10-14-dupeguru-git-byte-preservation-precheck.json": {
+      "sizeBytes": 878,
+      "sha256": "580283eaf1add29c096f8a37affcdded3e139a901e855b590341702ab98bf18b"
+    },
+    "docs/evidence/2026-10-14-dupeguru-git-precheck-final.json": {
+      "sizeBytes": 679,
+      "sha256": "96cd1155bfa9aaca22be374e248630b4bfe75d75a5eba9245fc5a8fb1ca51379"
+    },
+    "docs/evidence/2026-10-14-dupeguru-installation-failure.json": {
+      "sizeBytes": 113875,
+      "sha256": "841a063340e8fd20e98859ab6a84c62f2f2605fa73a5e25f17aa05ea759828c0"
+    },
+    "docs/evidence/2026-10-14-dupeguru-pending-summary-v2.json": {
+      "sizeBytes": 7896,
+      "sha256": "52cd27b5d502b46436dd07b1549204f9148631e7b2cd872811637f68d5a1c349"
+    },
+    "docs/evidence/2026-10-14-dupeguru-pending-summary.json": {
+      "sizeBytes": 7839,
+      "sha256": "92fb4ee56dea8e213c67abcc403f6ee075908cc6fad0a6952e32a27126adbcf6"
+    },
+    "docs/evidence/2026-10-14-dupeguru-runtime-recovery.json": {
+      "sizeBytes": 105991,
+      "sha256": "46364408e9f935f9bef2245d568da9715084a8000569b04261488467c783a5a6"
+    },
+    "docs/evidence/2026-10-14-dupeguru-source.json": {
+      "sizeBytes": 12920,
+      "sha256": "ee795b24bc2e77c5f8e0664cc5f77b6c434d71ffbc4907e8f66e2a10e52e865f"
+    },
+    "docs/evidence/dupeguru-20261014/source/LICENSE": {
+      "sizeBytes": 32473,
+      "sha256": "8c75a9231db8906865e29706ed63aad18fd918c92c15dbefbb13c25fe42850b4"
+    },
+    "docs/evidence/dupeguru-20261014/source/README.md": {
+      "sizeBytes": 4050,
+      "sha256": "7c74d65577fec6a1bea6b07c9e6eb1b19f77ff7ffbc43c6bb17713d10f666225"
+    },
+    "docs/evidence/dupeguru-20261014/source/Windows.md": {
+      "sizeBytes": 3297,
+      "sha256": "4bff2dba79d2c4ce22ef7202c26bd0f9ee1510357488e886db11da0bf5c31802"
+    },
+    "docs/evidence/dupeguru-20261014/source/build.py": {
+      "sizeBytes": 4827,
+      "sha256": "b884b7c915fdaac332d1d5074f36135ed65e58ac9de642a1832b6ad98c454341"
+    },
+    "docs/evidence/dupeguru-20261014/source/core/app.py": {
+      "sizeBytes": 35783,
+      "sha256": "8d280b6dcd1eb313216f3e071104a82c9405c0b4ca71cd22b2d07f980d8dd620"
+    },
+    "docs/evidence/dupeguru-20261014/source/core/engine.py": {
+      "sizeBytes": 19921,
+      "sha256": "ac0e433fd3b86de4a8254a3e08bd5aa083ee4b74fec04806852d36f52b80d3f3"
+    },
+    "docs/evidence/dupeguru-20261014/source/core/results.py": {
+      "sizeBytes": 15978,
+      "sha256": "c2ad10d8f4911462a462c67e0467d60397545355840e1c59f3122b476bd4066c"
+    },
+    "docs/evidence/dupeguru-20261014/source/core/scanner.py": {
+      "sizeBytes": 8948,
+      "sha256": "f9d0512262fa27a0932799358fc80e2c92f1c33de622a93d7786b7e6aaae02f6"
+    },
+    "docs/evidence/dupeguru-20261014/source/core/se/scanner.py": {
+      "sizeBytes": 658,
+      "sha256": "a8fd7f22cb959b7df6ff3644a80904200e30057bb230d50f111254b623ddd082"
+    },
+    "docs/evidence/dupeguru-20261014/source/hscommon/LICENSE": {
+      "sizeBytes": 1525,
+      "sha256": "a862b77eea779ff816f13fa386bd407d89fd2d810b21a8fde4959634b0dc18fa"
+    },
+    "docs/evidence/dupeguru-20261014/source/qt/app.py": {
+      "sizeBytes": 19444,
+      "sha256": "130371df0cf3329cad89615922aeb5d9783e1dc4ac07250e4fe2d31b60a498ef"
+    },
+    "docs/evidence/dupeguru-20261014/source/qt/directories_dialog.py": {
+      "sizeBytes": 15794,
+      "sha256": "daeb5b52323e195a8e26e2e8ea7b0b460aaa16f53e33df1df6ba417af46f4f14"
+    },
+    "docs/evidence/dupeguru-20261014/source/qt/result_window.py": {
+      "sizeBytes": 19339,
+      "sha256": "49fae8e1ab95530b751fc953c3d335ff10d10e432d0ec55653f0583aeb292dc5"
+    },
+    "docs/evidence/dupeguru-20261014/source/requirements-extra.txt": {
+      "sizeBytes": 72,
+      "sha256": "b96a96eeec402471949ac73d97986060e2e807441efb83fc6ee380c87f46f97f"
+    },
+    "docs/evidence/dupeguru-20261014/source/requirements.txt": {
+      "sizeBytes": 210,
+      "sha256": "4dc3c022879eadaa37deb0be2140c2296721ea5fdd458d7ab218683969f69296"
+    },
+    "docs/evidence/dupeguru-20261014/source/setup.nsi": {
+      "sizeBytes": 11426,
+      "sha256": "ee4eda3934efac9e579e41cd25f95d3ff8b4580fd0207f7d2afce4dca6659e0c"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 88412,
+      "sha256": "83653cbdab7864c181d517607d80834cc64b12b46b00871587c75cad3269a204"
+    },
+    "docs/windows-rolling-20261014-dupeguru-pending-v2.md": {
+      "sizeBytes": 4667,
+      "sha256": "c6699b45d5fb90b2cef9cecbb3c6d9e81ea8f37ec188ef6cc7b5fc4663328d96"
+    },
+    "docs/windows-rolling-20261014-dupeguru-pending.md": {
+      "sizeBytes": 4462,
+      "sha256": "20f476b56816a6900accce0d952209cf9d3ae7a4902a0ccc443c25228ea96b80"
+    }
+  },
+  "actualAuditExecution": {
+    "effectiveHelper": "review-dupeguru-final-audit-v2-20261014.py",
+    "effectiveHelperSha256": "6f7e4c5cb4f55458e3764ac8dc6e498c55f7bc48ceaf77078525e9e60154b2e2",
+    "actualExitCode": 0,
+    "fullPassingResultObservedInToolHistory": true,
+    "exactStandaloneStdoutRawSaved": false,
+    "previousFailedHelperRawPreserved": "review-dupeguru-final-audit-20261014.py",
+    "previousFailedHelperSha256": "509c09fdd5b635ac5f0a9ff5aa5f5338ec79db5448c8608a4d224e310ef7cc8b",
+    "noHistoricalExactRawFabricated": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": [],
+    "unresolved": [],
+    "overall": "Evidence is internally consistent after explicit date correction. Install remains failed; no completed-app claim."
+  },
+  "scope": {
+    "all30RawSizeShaPinsIndependentlyRecomputed": true,
+    "all30RawFilteredGitBlobIdentityEqual": true,
+    "all30RelativeNoIndexChecksZeroDiagnostics": true,
+    "indexEmptyBeforeAndAfter": true,
+    "old5223EvidenceFreeze5221ImmutableAllRawHeld": true,
+    "old6464TrackedIndexAllFullParentHeadBlobBytesEqual": true,
+    "outside1241ParentPinsRecomputedAndIndexParentFullBytesSame": true,
+    "allWorkingTreeBytesClaimedEqual": false,
+    "oldLfAttributesPrefixBytes": 52301,
+    "oldLfAttributesPrefixSha256": "c2472d92ac643879e49970c7de7084830bf91d7efdc02aaac6691828cd73e015",
+    "fourExactSourceWhitespaceRulesVerified": true,
+    "oldPrefixAndNewSuffixLfOnly": true,
+    "renormalizeStageCommitPushByReviewer": false,
+    "old70AcceptedEveryFieldUnchanged": true,
+    "old17QueueEveryFieldUnchangedPlusUnique18thDupeGuruFailedEntry": true,
+    "newEntryInstalledGuiPublishedCountsAsCompletedAllFalse": true,
+    "onlyAllowedTopLevelLedgerFieldsChanged": true,
+    "activeMarketObjectUnchanged": true,
+    "bothOfficialCachedPackagesSizeShaPublic200ReceiptsIndependentlyCrossChecked": true,
+    "installerContentLengthMatches27547549": true,
+    "sourceContentLengthMissing941409LocalShaOnly": true,
+    "bothFirstGetPartialFilesAllRawEqualCompleteCache": true,
+    "zip449Unique366RegularAllCrcPassedAnd16ExactSelectedRawArchiveMembers": true,
+    "allSourceHumanReviewed": false,
+    "remainingMembersAllDirectoriesClaimed": false,
+    "actualMainCoreAppPyQuotedGplV3HeaderRead": true,
+    "orLaterGrantEstablished": false,
+    "hscommonSeparateBsdStyleNoticeReadAndHeld": true,
+    "installedMainLicenceSameTextOrBundleClosureVerified": false,
+    "existing7ZipNsisTextAndBootstrap014cRecomputed": true,
+    "actualMain014cSafeInspectionSummary3374518DigestHeld": true,
+    "nativeSLastDir14HexMatches": true,
+    "completeNsisUacAssociationUninstallBehaviourAccepted": false,
+    "onlyOneFormalInstallJobAndOneFailedGenerationSafeRecordsConsistent": true,
+    "installerProcessExit0AndWineServerStopAreNotReadyInstallation": true,
+    "jobGenerationRegistryIoEnoentErrorExactSafeRecordsSame": true,
+    "failedGenerationLauncherDigestsEmptyNoReadyPromotion": true,
+    "actualRequestedDriveCDupeGuruAbsent620PinsDefaultHardcodedSoftwareLowercaseDupeguruExe": true,
+    "threeWineRegistriesExistSafePinMapConsistent": true,
+    "registryIoErrorProvesRegistryFilesMissing": false,
+    "readonlyCoreJournalActualEmpty0BytesShaNotRuntimeTrace": true,
+    "uniqueRootCausePluginCommandlineContractOrFunctionTraceEstablished": false,
+    "full549160FailedCheckpointBeforeOriginalTwoNormalServiceRestartsSafeReceiptAndCodeCrossChecked": true,
+    "originalMarketZeroArgumentFunctionCalledTwoArgumentsTypeErrorAfterRestartsBeforeFinalCaptureCp": true,
+    "exactOriginal140ByteStderrShaCrossChecked": "5c639f52953900a02c6778c1a9c7d186eaeb1b56d64325bd75f7a1af33af52c4",
+    "originalRestartAndInstallWrapperStdoutEmptyNotParsedAsSuccessfulReceipt": true,
+    "uniqueReadonlyRecoveryV2NoSecondRestartMatchesSevenFullFieldClasses620AndThreeRegistryOldPinsSameSavedCpCodeAndSafeReceipt": true,
+    "beforeRestartPidsNotSavedNoReconstructionOrExactPidChangeClaim": true,
+    "currentActiveStatusesAndPositivePidsMeasuredOnly": true,
+    "effectiveCurrentHelperShaVerified": "88cfcd27563c34334974e0d571273eeb646ae77c3c0788ce315dfcbd9e8026a5",
+    "currentResultShaVerified": "c0c251ce28bba36765eefd02a6d761faefa1b60f61e9ced8c6a5c72ebf104496",
+    "currentFinalPrivateCheckpointDigestOnly": "dded25331a5ad60c389ea16c9ddd429cd6a1f03deaa553d43386d3fbba26b73d",
+    "fullPrivateCpReadOrIndependentlyReplayed": false,
+    "jobCreatedTimestampUtc13AndAsiaShanghai14IndependentlyConverted": true,
+    "originalMislabelledUtc14ReportRawHeldWithSeparateCorrection": true,
+    "newReportWholeRawEqualsOriginalOnlyExplicitTitleCorrectionAndAddedDateExplanation": true,
+    "originalPendingSummaryOldReportRefKeptCurrentV2SummaryExactlyCurrentLedgerEntry": true,
+    "allPreviousV79PublicRawHeldByOldFreezeRoot1Role88AndRsaPssRootThreeRoleSignaturesIndependentlyVerified": true,
+    "all152ActualSignedTargetSizeShaRecomputed83PublicJsonAndHashedTargetsMatchSignedInput": true,
+    "catalogue72EntriesNoDupeGuru": true,
+    "newTufSignatureActivationOrMarketThisRound": false,
+    "all30PublicJsonReportsStructuredPrivacyUrlAndCredentialPatternScanPassed": true,
+    "noMZInstallerProgramOrJpegInProspective": true,
+    "noNewScreenshotsToReviewAndNoLoginImageRead": true,
+    "noGuestGuiTaskFixtureScanMarkReferenceDeleteMoveResultExportAboutChineseInputAccepted": true,
+    "hostDownloadV1AndV2OriginalRawShaCheckedPreGetSchemaFailureNotPackageFailure": true,
+    "repositoryGuestServicesCpSignInstallAuthenticationAutomationMutationsByReviewer": false,
+    "packageGetByReviewer": false,
+    "privateHttpResponseExactRedirectQueryPrivateKeyPasswordCredentialFullCpPrivateProgramOrRegistryRawRead": false
+  },
+  "cachedPackagePins": {
+    "dupeGuru_win32_4.3.1.exe": {
+      "sizeBytes": 27547549,
+      "sha256": "f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263",
+      "httpsStatus": 200,
+      "contentLength": 27547549,
+      "upstreamDigestVerified": false
+    },
+    "dupeguru-4.3.1-source.zip": {
+      "sizeBytes": 941409,
+      "sha256": "f4e55faa8519688a6d29b9f19aa900ec294646cf4f9c225d665c9c7d60315d7a",
+      "httpsStatus": 200,
+      "contentLength": null,
+      "upstreamDigestVerified": false
+    }
+  },
+  "selectedSourceRawPins": {
+    "LICENSE": {
+      "sizeBytes": 32473,
+      "sha256": "8c75a9231db8906865e29706ed63aad18fd918c92c15dbefbb13c25fe42850b4"
+    },
+    "README.md": {
+      "sizeBytes": 4050,
+      "sha256": "7c74d65577fec6a1bea6b07c9e6eb1b19f77ff7ffbc43c6bb17713d10f666225"
+    },
+    "setup.nsi": {
+      "sizeBytes": 11426,
+      "sha256": "ee4eda3934efac9e579e41cd25f95d3ff8b4580fd0207f7d2afce4dca6659e0c"
+    },
+    "Windows.md": {
+      "sizeBytes": 3297,
+      "sha256": "4bff2dba79d2c4ce22ef7202c26bd0f9ee1510357488e886db11da0bf5c31802"
+    },
+    "requirements.txt": {
+      "sizeBytes": 210,
+      "sha256": "4dc3c022879eadaa37deb0be2140c2296721ea5fdd458d7ab218683969f69296"
+    },
+    "requirements-extra.txt": {
+      "sizeBytes": 72,
+      "sha256": "b96a96eeec402471949ac73d97986060e2e807441efb83fc6ee380c87f46f97f"
+    },
+    "build.py": {
+      "sizeBytes": 4827,
+      "sha256": "b884b7c915fdaac332d1d5074f36135ed65e58ac9de642a1832b6ad98c454341"
+    },
+    "core/app.py": {
+      "sizeBytes": 35783,
+      "sha256": "8d280b6dcd1eb313216f3e071104a82c9405c0b4ca71cd22b2d07f980d8dd620"
+    },
+    "core/results.py": {
+      "sizeBytes": 15978,
+      "sha256": "c2ad10d8f4911462a462c67e0467d60397545355840e1c59f3122b476bd4066c"
+    },
+    "core/scanner.py": {
+      "sizeBytes": 8948,
+      "sha256": "f9d0512262fa27a0932799358fc80e2c92f1c33de622a93d7786b7e6aaae02f6"
+    },
+    "core/se/scanner.py": {
+      "sizeBytes": 658,
+      "sha256": "a8fd7f22cb959b7df6ff3644a80904200e30057bb230d50f111254b623ddd082"
+    },
+    "core/engine.py": {
+      "sizeBytes": 19921,
+      "sha256": "ac0e433fd3b86de4a8254a3e08bd5aa083ee4b74fec04806852d36f52b80d3f3"
+    },
+    "qt/app.py": {
+      "sizeBytes": 19444,
+      "sha256": "130371df0cf3329cad89615922aeb5d9783e1dc4ac07250e4fe2d31b60a498ef"
+    },
+    "qt/result_window.py": {
+      "sizeBytes": 19339,
+      "sha256": "49fae8e1ab95530b751fc953c3d335ff10d10e432d0ec55653f0583aeb292dc5"
+    },
+    "qt/directories_dialog.py": {
+      "sizeBytes": 15794,
+      "sha256": "daeb5b52323e195a8e26e2e8ea7b0b460aaa16f53e33df1df6ba417af46f4f14"
+    },
+    "hscommon/LICENSE": {
+      "sizeBytes": 1525,
+      "sha256": "a862b77eea779ff816f13fa386bd407d89fd2d810b21a8fde4959634b0dc18fa"
+    }
+  },
+  "failedInstallationSummary": {
+    "jobId": "job-1791927518934-1",
+    "generationId": "gen-job-1791927518934-1",
+    "status": "failed",
+    "installerExitCode": 0,
+    "error": "registry I/O failed: No such file or directory (os error 2)",
+    "definitionDigest": "sha256:38d95e2c2b93929d2ccfdda45be61c250b7f7061c1ba18765c3f4f735cbb832a",
+    "actualProgramDirectory": "Program Files (x86)/Hardcoded Software/dupeGuru",
+    "physicalProgramCount": 620,
+    "mainProgramPin": {
+      "sizeBytes": 3374518,
+      "sha256": "f650922fb2723ece734fb0a554e53da842cb6c693a6374f4201b35337f1e4d0c"
+    },
+    "registryPins": {
+      "system.reg": {
+        "sizeBytes": 3431707,
+        "sha256": "591f1909cfeb04ee827677a7509830eff7e76449789920379e4a2eb2e0322e2e"
+      },
+      "user.reg": {
+        "sizeBytes": 101299,
+        "sha256": "ea0f527d8a2e943e6fccf844703872c09b407190cdce437bb585593869f15c8c"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "dd73d85fd579c438f9564b61241fc718b063071cd130fa9f258682ca2df75a19"
+      }
+    },
+    "journalPin": {
+      "sizeBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ready": false,
+    "guiAccepted": false,
+    "published": false
+  },
+  "finalStateSummary": {
+    "coreJobs": 549,
+    "fullStoreRows": 160,
+    "accepted": 70,
+    "pending": 18,
+    "candidate": "candidate-v79",
+    "root": 1,
+    "role": 88,
+    "entries": 72,
+    "targets": 152,
+    "publicJson": 83,
+    "privateCheckpoint": {
+      "file": "after-failed-install-final-restart-readonly-v2.json",
+      "sha256": "dded25331a5ad60c389ea16c9ddd429cd6a1f03deaa553d43386d3fbba26b73d",
+      "coreJobs": 549,
+      "fullStoreRows": 160
+    }
+  },
+  "dateCorrection": {
+    "passed": true,
+    "firstReportRawPreserved": true,
+    "firstReportSha256": "20f476b56816a6900accce0d952209cf9d3ae7a4902a0ccc443c25228ea96b80",
+    "currentReportSha256": "c6699b45d5fb90b2cef9cecbb3c6d9e81ea8f37ec188ef6cc7b5fc4663328d96",
+    "evidenceFilenameRoundDateBasis": "2026-10-14 Asia/Shanghai",
+    "actualInstallUtcDate": "2026-10-13",
+    "firstReportUtcTitleIncorrectCorrectedSeparately": true,
+    "noGuestStateOrCounterChange": true
+  },
+  "reviewHistory": [
+    "This is a fresh dupeGuru failed-install review, not a reuse of the prior InfraRecorder success review. Previous review bytes remain unchanged.",
+    "Reviewer schema reader attempted to JSON-decode actual empty original-install wrapperstdout and failed; no dependent repository/guest write occurred. That reader/raw and exact tool-history traceback remain, not fabricated as independently saved stderr.",
+    "First independent audit assumed the literal header License: GPLv3 and asserted false after other checks. Actual source header is licensed under the quoted GPLv3 License. The first audit raw remains; uniquely named V2 changes only that literal and then passes the complete review with actual exit0.",
+    "An inline cmd Python header read had a quoting SyntaxError before read/write, then actual rg displayed the source header. Tool-history failure is retained, not claimed as a successful inspection or exact separately archived trace.",
+    "Parent preGET passed-vs-verified receipt schema KeyError and inline quoting failure occurred before GET/cache write, originalhelpers retained, saved-reader/V2 official downloads then actual success. No repeat GET or package damage claim.",
+    "Installer exit0 is retained alongside Core/job/generation registry I/O ENOENT failed status. Requested directory absence, default-path620 files and existing registries are observations, not unique cause proof or ready install.",
+    "Original restart readiness call TypeError occurred after both normal service restart commands, before final capture/CP. Exclusive readonlyV2 recovered matching seven classes against saved before checkpoint and wrote distinct finalCP. It did not restart again; before PIDs were not persisted, no recreation claimed.",
+    "Original pending report UTC14 title and first pending-summary report reference retained as history. Separate date correction/V2 preserve all other report text while actual job UTC13/localAsiaShanghai14 is independently established.",
+    "Old failure/TUF/root/trust histories and Scribus oneprivatecanonical missing raw limit remain. Prior query tool-history scope not repeated or copied into this review."
+  ],
+  "limitations": [
+    "Passing FINAL approves evidence consistency and byte/privacy preservation for a failed candidate. It does not approve application installation, GUI functionality or market publication;70 accepted stays70, only18th pending added.",
+    "Independent host file, archive, source, Git filter/index bytes, public TUF signature, safe summary receipt and helper-code review only. No guest GUI/SSH/API/service/install/recover/sign replay and no full private checkpoint read or independent checkpoint replay.",
+    "620 application pins and three registries are safe recorded pin maps cross-checked against diagnostic/recovery summaries and helper assertions, not independently read from guest filesystem. Initial2522 full generation inventory includes Wine/runtime; not app count or allFS.",
+    "Only local cached package SHA. Public source website provenance is supplied web-tool text rather than original HTML. Installer200ContentLength matches; source200ContentLength absent. PGP/Authenticode/tagcommit/sourcebinary/repro/latest/complete licensing closure and installed-main licence comparison not verified.",
+    "Main GPLv3 header does not establish or-later grant. Separate hscommon BSD style notice does not make entire bundled package BSD. Full Python/PyQt/Qt/send2trash/xxhash/Pillow/Mutagen/OpenSSL/CRT/icons/translations closure unverified.",
+    "Source MultiUser highest/commandline/INSTPATH/default-directory/static association/StartMenu logic gives static context only; not an actual plugin trace or complete native install/UAC/uninstall/commandline contract proof. No changed flags/definition/launcher/promotion/reinstall/repair.",
+    "Registry I/O ENOENT cannot be relabelled missing Wine registries, all3 actually present. Journal0B is not runtime stderr/stacktrace. Registry raw only saved after failure, no invented pre-install raw or diff. Unique cause/semantic equivalence not established.",
+    "549fullCore/160fullStore seven-class code assertions and safe metadata cross-checked, not recent64 IPC or independent rawCP replay. Core queries may write existing scratch; no wholeFS or zeroFS-write claim.",
+    "No testfixture/GUIlaunch/native duplicate scan/mark/reference/remove/move/copy/XMLCSVsave/newprocessOpen/About/Chineseinput/device/network-backgroundexclusion/large-badinput/migration/unattended/GUImarketbuttons. No success counted from exit0 or file presence.",
+    "Existing noVNC clock/Space observed login fields without typed password or authentication submission; no login images/credential reads by reviewer, no auth/lock/power bypass or change. No UbuntuVM or two4GiBVM concurrency work by reviewer; independent Ubuntu2/Flatpak2timeout boundaries held.",
+    "No repository/guest/automation mutations by reviewer. Final source/attributes/raw-index staging/commit/push remains parent work only after explicit FINAL notification and this final answer; no blanket whole workspace byte equality."
+  ]
+}
