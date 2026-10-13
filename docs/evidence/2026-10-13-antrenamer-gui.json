@@ -1,0 +1,894 @@
+{
+  "passed": true,
+  "generation": {
+    "bottleId": "gen-job-1791862006192-1",
+    "createdAtMilliseconds": 1791862006203,
+    "definition": {
+      "bottleId": "gui-antrenamer",
+      "category": "utilities",
+      "compatibilityRating": "unknown",
+      "id": "antrenamer",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\AntRenamer",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "antrenamer_2.12_install.exe",
+        "sha256": "3c9bdc59842c786ef4cfba6ddbe39912326299104cc36a074b881d8ed68cc6c4"
+      },
+      "launchers": [
+        {
+          "executable": "AntRenamer/Renamer.exe",
+          "id": "main",
+          "name": "Ant Renamer"
+        }
+      ],
+      "name": "Ant Renamer",
+      "publisher": "Antoine Potten",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "2.12.0"
+    },
+    "definitionDigest": "sha256:17e76eea4a1ba4821d2d67e3f92ec82812a1eb75a61110f28b97730a753169e8",
+    "id": "gen-job-1791862006192-1",
+    "launcherDigests": {
+      "main": "sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791862019376
+  },
+  "definition": {
+    "bottleId": "gui-antrenamer",
+    "category": "utilities",
+    "compatibilityRating": "unknown",
+    "id": "antrenamer",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\AntRenamer",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "antrenamer_2.12_install.exe",
+      "sha256": "3c9bdc59842c786ef4cfba6ddbe39912326299104cc36a074b881d8ed68cc6c4"
+    },
+    "launchers": [
+      {
+        "executable": "AntRenamer/Renamer.exe",
+        "id": "main",
+        "name": "Ant Renamer"
+      }
+    ],
+    "name": "Ant Renamer",
+    "publisher": "Antoine Potten",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "2.12.0"
+  },
+  "installedFiles": {
+    "license.txt": {
+      "sizeBytes": 15619,
+      "sha256": "eceba4a4eefa3bc72baee0700fcfc1388865894f7631dbb139121fa299ba8216"
+    },
+    "Renamer.exe": {
+      "sizeBytes": 1978880,
+      "sha256": "d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947"
+    },
+    "unins000.exe": {
+      "sizeBytes": 715038,
+      "sha256": "70626096fe66cdb2b568b2ab0560964c4b4907c480e45fbb5ac5922efbc28e45"
+    },
+    "unins000.dat": {
+      "sizeBytes": 2944,
+      "sha256": "1c14a8068d783f69d989b72abb354b4254409a6f92b830696e520017274ec1be"
+    },
+    "Toolbars/Windows XP.bmp": {
+      "sizeBytes": 23094,
+      "sha256": "9daab1f460a2cb0330a604607e8f603aeb5b5154ed7f63d17702edb6d071745f"
+    },
+    "Toolbars/Windows XP Large.bmp": {
+      "sizeBytes": 51894,
+      "sha256": "18f7fa71dcf02d574ecd812064027b59a4f8221df297ceccc9b745659870cec7"
+    },
+    "Toolbars/Windows 10 Large.bmp": {
+      "sizeBytes": 51896,
+      "sha256": "e85a2a40a0ee97bcf3bf355f945297dbb873b63d97f4cd4f9895a14cda8c5abf"
+    },
+    "Languages/English.lng": {
+      "sizeBytes": 26222,
+      "sha256": "addef263ce9319d61c9e4eb56e5bf5ff613c5f5206236088d98e6d17f0ebd6ab"
+    },
+    "Languages/Bulgarian.lng": {
+      "sizeBytes": 27971,
+      "sha256": "c171e9341d4ec43b1d108443aaf2a4e141f725d7d00a5e4ee25b4e5d42f4dfe9"
+    },
+    "Languages/Dutch.lng": {
+      "sizeBytes": 27196,
+      "sha256": "585734e12b94338e082d5cdf201f283dc9c421404f505a2720c912ec481331a2"
+    },
+    "Languages/English.chm": {
+      "sizeBytes": 40253,
+      "sha256": "fe4fdf90485f1774c9cecf6a368ff1795819b36ee1cd04e512ab7604393c2259"
+    },
+    "Languages/Czech.lng": {
+      "sizeBytes": 26166,
+      "sha256": "49ff859ffed5ec56f4a81c9ff0bb1da9ea6a8d746c80ab183c29ec27269e1a1c"
+    },
+    "Languages/Croatian.lng": {
+      "sizeBytes": 27226,
+      "sha256": "ecfca3b750049f2187b245dd397683d1c9036caaef79ed34f0155b5f2788d199"
+    },
+    "Languages/Russian.lng": {
+      "sizeBytes": 27679,
+      "sha256": "4d39a315731c64ef16563b4ad0286f69b4080b42610250544a47a0b4ac93b8f5"
+    },
+    "Languages/Italian.lng": {
+      "sizeBytes": 26913,
+      "sha256": "b27cdf7f371dbc8242181c22ecf798a540134a6fe1609a0c248d01512e2fd260"
+    },
+    "Languages/Chinese (Traditional).lng": {
+      "sizeBytes": 22013,
+      "sha256": "569f23dddd3340e76740d5da7cb5b1cab58eac6ea3ea629e5f855765496ffb84"
+    },
+    "Languages/Polish.lng": {
+      "sizeBytes": 27272,
+      "sha256": "f827d8bed353469a890a1d38103c4eb9e97885c3dd5157e634dcb8cfc59d4b93"
+    },
+    "Languages/Korean.lng": {
+      "sizeBytes": 24687,
+      "sha256": "05dc76f997029a8034e7129aa6739ede639472ce56eb1ea4f6e92f4405bf8767"
+    },
+    "Languages/German.lng": {
+      "sizeBytes": 26535,
+      "sha256": "4c59e9fa1331aae59b811680be8049cf2f1fbc9bc6992982d0a5351f1f2d33f1"
+    },
+    "Languages/Croatian.chm": {
+      "sizeBytes": 61531,
+      "sha256": "80365939f4e2c873454d2d4b993f9c6d0f0de0e6c98d159e22483f1331ca7edf"
+    },
+    "Languages/Spanish (Argentina).lng": {
+      "sizeBytes": 27686,
+      "sha256": "34700e6367c395b85abc1c78a4d1dc5112033e2186bf09b1bf5c63f1ea61b299"
+    },
+    "Languages/French.lng": {
+      "sizeBytes": 28573,
+      "sha256": "47fb7f230ef9d1c43a5076d141a08176bdcafda433dec97c0141ab626bde2333"
+    },
+    "Languages/Catalan.lng": {
+      "sizeBytes": 27923,
+      "sha256": "82578b3dd796ffe6a730d1764199516aab30f1c6f21d242a8d4e3600aee17ac1"
+    },
+    "Languages/Greek.lng": {
+      "sizeBytes": 26474,
+      "sha256": "447a43c46512f78f667bd9df20832a5614acfdd6e7a911c505d85934111ae4dd"
+    },
+    "Languages/Chinese (Simplified).lng": {
+      "sizeBytes": 22518,
+      "sha256": "198fd08cb052a2a93c5c02119c96a3d4355f33787baa3965d3bda1c1e4ccb064"
+    },
+    "Languages/Portuguese (Brazil).lng": {
+      "sizeBytes": 27534,
+      "sha256": "49a07bb571a85daa0e3b645f90be855ac8b5fd2d561b89db7625f1f7fd6fcdaf"
+    },
+    "Languages/Japanese.lng": {
+      "sizeBytes": 25158,
+      "sha256": "2bc6f69f842e17222125a61fff125d1ca216ae2182737499047f6a5ad2bcbe6e"
+    },
+    "Languages/Slovak.lng": {
+      "sizeBytes": 26275,
+      "sha256": "a56ec3433e838f52dc99cf7eb7d7d5a6b460efe079f12b56013723a3d0c6f8f0"
+    },
+    "Languages/Belarussian.lng": {
+      "sizeBytes": 27355,
+      "sha256": "252be7056a07f57037e2e9842e93d24aa08b68b03b772187ff144030b1104669"
+    },
+    "Languages/Swedish.lng": {
+      "sizeBytes": 26805,
+      "sha256": "6b320b10416657b749e5150d6400e874403ff2db597e116b4a41af467fb56e25"
+    },
+    "Languages/Spanish (Spain).lng": {
+      "sizeBytes": 28277,
+      "sha256": "18da3c7da43df90d3c1809099f98534ebb010df426b37d3c615b5c3305cabe8e"
+    },
+    "Languages/French.chm": {
+      "sizeBytes": 43242,
+      "sha256": "052977b907f82058a2056bab27a30aa7f1f738056fbc9228735345925c1f5612"
+    },
+    "Languages/Tamil.lng": {
+      "sizeBytes": 48593,
+      "sha256": "f8302f606ec1e467cad6b85b6051e7da29d8a1d85700f6ac08b6129ff8bef4bf"
+    },
+    "Languages/Ukrainian.lng": {
+      "sizeBytes": 28195,
+      "sha256": "aa2021e21cbacea0fd0a34a0bcdbff2ccfaa79bae2f5edf03381161689157a3b"
+    },
+    "Languages/Spanish (Colombia).lng": {
+      "sizeBytes": 27475,
+      "sha256": "56a0c48a9e36691c5236cf363f19edc659a304fd41db872d82de80d284d5bbfe"
+    },
+    "Languages/Hungarian.lng": {
+      "sizeBytes": 26558,
+      "sha256": "2f67c359ba4d10ad1f3e9df655a8cbf1f3ac60882bcd8b29015e640cd0ca136f"
+    }
+  },
+  "fixedDataPins": {
+    "drive_c/AntRenamerTests/Inputs/原始_before_A.bin": {
+      "sizeBytes": 47,
+      "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+    },
+    "drive_c/AntRenamerTests/Inputs/原始_before_B.bin": {
+      "sizeBytes": 47,
+      "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+    },
+    "drive_c/AntRenamerTests/Work/原始_after_B.bin": {
+      "sizeBytes": 47,
+      "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+    },
+    "drive_c/AntRenamerTests/Work/原始_after_A.bin": {
+      "sizeBytes": 47,
+      "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+    },
+    "drive_c/AntRenamerTests/original.arb": {
+      "sizeBytes": 233,
+      "sha256": "aedf1c69b232648666fa6e4b0f306c6f87b5262785a359b3191b32fe9123e8d2"
+    }
+  },
+  "saveProof": {
+    "passed": true,
+    "generationId": "gen-job-1791862006192-1",
+    "guiJobId": "job-1791884600058-2",
+    "inputPins": {
+      "drive_c/AntRenamerTests/Inputs/原始_before_A.bin": {
+        "sizeBytes": 47,
+        "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+      },
+      "drive_c/AntRenamerTests/Inputs/原始_before_B.bin": {
+        "sizeBytes": 47,
+        "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+      }
+    },
+    "renamedOutputPins": {
+      "drive_c/AntRenamerTests/Work/原始_after_B.bin": {
+        "sizeBytes": 47,
+        "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+      },
+      "drive_c/AntRenamerTests/Work/原始_after_A.bin": {
+        "sizeBytes": 47,
+        "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+      }
+    },
+    "oldWorkNamesAbsent": true,
+    "allRenamedContentsEqualImmutableInputs": true,
+    "program36Preserved": true,
+    "guiAccepted": false,
+    "published": false,
+    "batchFile": "drive_c/AntRenamerTests/original.arb",
+    "batchPin": {
+      "sizeBytes": 233,
+      "sha256": "aedf1c69b232648666fa6e4b0f306c6f87b5262785a359b3191b32fe9123e8d2"
+    },
+    "finiteSingleActionBatchVerified": true,
+    "batchRawBase64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxBbnRSZW5hbWVyIFZlcnNpb249IjIuMTIuMCIgRGF0ZT0iMTAvMTMvMjAyNiI+DQogPEJhdGNoPg0KICA8U3RyUmVwbCBTZWFyY2g9ImJlZm9yZSIgUmVwbD0iYWZ0ZXIiIEFsbE9jY3VyZW5jZXM9Ii0xIiBDYXNlU2Vuc2l0aXZlPSItMSIgSW5jbHVkZUV4dD0iMCIgT25seUV4dD0iMCIvPg0KIDwvQmF0Y2g+DQo8L0FudFJlbmFtZXI+DQo="
+  },
+  "guiJobs": [
+    {
+      "applicationId": "antrenamer",
+      "createdAtMilliseconds": 1791884600058,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 89409,
+          "requestId": "job-1791884600058-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 2865939,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix",
+          "requestId": "job-1791884600058-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 2865981,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791884600058-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791862006192-1",
+      "id": "job-1791884600058-2",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 1614520,
+        "fileDigest": "sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947",
+        "fileSizeBytes": 1978880,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "shell32.dll",
+          "user32.dll",
+          "version.dll",
+          "winmm.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": "CODE",
+            "rawDataSize": 1611264,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1610864,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "DATA",
+            "rawDataSize": 43008,
+            "readable": true,
+            "virtualAddress": 1617920,
+            "virtualSize": 42704,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": "BSS",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 1662976,
+            "virtualSize": 268033,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 13824,
+            "readable": true,
+            "virtualAddress": 1933312,
+            "virtualSize": 13746,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 1949696,
+            "virtualSize": 144,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 1953792,
+            "virtualSize": 24,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 101888,
+            "readable": true,
+            "virtualAddress": 1957888,
+            "virtualSize": 101764,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 207360,
+            "readable": true,
+            "virtualAddress": 2060288,
+            "virtualSize": 207360,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791862006192-1",
+          "digest": "sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "Renamer.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix/drive_c/AntRenamer/Renamer.exe",
+          "sizeBytes": 1978880,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947 pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix/drive_c/AntRenamer/Renamer.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1"
+        },
+        "requestId": "job-1791884600058-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791887468148
+    },
+    {
+      "applicationId": "antrenamer",
+      "createdAtMilliseconds": 1791887551879,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 90884,
+          "requestId": "job-1791887551879-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 339898,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix",
+          "requestId": "job-1791887551879-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 339940,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791887551879-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791862006192-1",
+      "id": "job-1791887551879-3",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 1614520,
+        "fileDigest": "sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947",
+        "fileSizeBytes": 1978880,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "imm32.dll",
+          "kernel32.dll",
+          "ole32.dll",
+          "oleacc.dll",
+          "oleaut32.dll",
+          "shell32.dll",
+          "user32.dll",
+          "version.dll",
+          "winmm.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": "CODE",
+            "rawDataSize": 1611264,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1610864,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "DATA",
+            "rawDataSize": 43008,
+            "readable": true,
+            "virtualAddress": 1617920,
+            "virtualSize": 42704,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": "BSS",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 1662976,
+            "virtualSize": 268033,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 13824,
+            "readable": true,
+            "virtualAddress": 1933312,
+            "virtualSize": 13746,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 1949696,
+            "virtualSize": 144,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 1953792,
+            "virtualSize": 24,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 101888,
+            "readable": true,
+            "virtualAddress": 1957888,
+            "virtualSize": 101764,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 207360,
+            "readable": true,
+            "virtualAddress": 2060288,
+            "virtualSize": 207360,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791862006192-1",
+          "digest": "sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "Renamer.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix/drive_c/AntRenamer/Renamer.exe",
+          "sizeBytes": 1978880,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947 pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix/drive_c/AntRenamer/Renamer.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791862006192-1"
+        },
+        "requestId": "job-1791887551879-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791887893841
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3424172,
+      "sha256": "78ef161c4b64e95e459418c74694470395c6f05739865b7af8e8d118f1b5cfaa"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "d4bc784d48b877328549c54f3a0656bcaf1218384a8902c1036f92f7a3223877"
+    },
+    "user.reg": {
+      "sizeBytes": 101632,
+      "sha256": "80a12ad7bf59713060345b7ce995940325f0b5022e506fe272761708de2b44cd"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/ProgramData/Ant Renamer/Renamer.xml": {
+      "sizeBytes": 3881,
+      "sha256": "45efc2842fdbd967660e6716509f0238785abbe9991362d6fa1c6d971c3cde30"
+    }
+  },
+  "configurationChangesAfterFirstProcess": {
+    "system.reg": {
+      "old": {
+        "sizeBytes": 3424172,
+        "sha256": "21052fc9a42e62f742ad0c7d569f025bad8b0bfffe08f3fa6272916b49786ab9"
+      },
+      "new": {
+        "sizeBytes": 3424172,
+        "sha256": "78ef161c4b64e95e459418c74694470395c6f05739865b7af8e8d118f1b5cfaa"
+      },
+      "diffLines": 287,
+      "binaryOnly": false
+    },
+    "user.reg": {
+      "old": {
+        "sizeBytes": 101632,
+        "sha256": "b6154151218826b266873c31c48ae65169b1812d33304166c40ba44c955dd219"
+      },
+      "new": {
+        "sizeBytes": 101632,
+        "sha256": "80a12ad7bf59713060345b7ce995940325f0b5022e506fe272761708de2b44cd"
+      },
+      "diffLines": 20,
+      "binaryOnly": false
+    }
+  },
+  "finalDataAndConfigurationPins": {
+    "drive_c/AntRenamerTests/Inputs/原始_before_A.bin": {
+      "sizeBytes": 47,
+      "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+    },
+    "drive_c/AntRenamerTests/Inputs/原始_before_B.bin": {
+      "sizeBytes": 47,
+      "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+    },
+    "drive_c/AntRenamerTests/Work/原始_after_B.bin": {
+      "sizeBytes": 47,
+      "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+    },
+    "drive_c/AntRenamerTests/Work/原始_after_A.bin": {
+      "sizeBytes": 47,
+      "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+    },
+    "drive_c/AntRenamerTests/original.arb": {
+      "sizeBytes": 233,
+      "sha256": "aedf1c69b232648666fa6e4b0f306c6f87b5262785a359b3191b32fe9123e8d2"
+    },
+    "system.reg": {
+      "sizeBytes": 3424172,
+      "sha256": "78ef161c4b64e95e459418c74694470395c6f05739865b7af8e8d118f1b5cfaa"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "d4bc784d48b877328549c54f3a0656bcaf1218384a8902c1036f92f7a3223877"
+    },
+    "user.reg": {
+      "sizeBytes": 101632,
+      "sha256": "80a12ad7bf59713060345b7ce995940325f0b5022e506fe272761708de2b44cd"
+    },
+    "drive_c/ProgramData/Ant Renamer/Renamer.xml": {
+      "sizeBytes": 3881,
+      "sha256": "45efc2842fdbd967660e6716509f0238785abbe9991362d6fa1c6d971c3cde30"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "freshExplicitGuiBatchOpenAndFileAddObserved": true,
+  "scope": "Two Chinese-name 47-byte synthetic binary files added via native C-drive directory tree, ordinary case-sensitive replace-all before to after (extension excluded), native Go; whole contents preserved. One-action ASCII original.arb saved via native batch Save and explicitly Opened in a fresh formal process, alongside explicit Add of both renamed files; no second rename performed. Native window close both processes. No collision, undo, regular expression, EXIF, broad format, network, direct Chinese keyboard, or complete renamer acceptance. Synthetic fixtures are not separate applications.",
+  "configurationScope": "Three registry files and selected prefix ProgramData/Ant Renamer plus prefix-user Ant Renamer-named files only; not full filesystem enumeration.",
+  "runtimeFunctionOrRootCauseEstablished": false,
+  "launcherOrGlobalCoreProgramRuntimeFixApplied": false,
+  "mainInstalledLicenseSourceComparisonVerified": true,
+  "fullBundleLicenseClosureVerified": false,
+  "checkpoint": {
+    "file": "before-market.json",
+    "sha256": "5ec07d60b2255d623e24620265d4e3fc879c6ceaada8fe16037de150b3620d16",
+    "coreJobs": 516,
+    "fullStoreRows": 150
+  },
+  "fixtureReferences": {
+    "drive_c/AntRenamerTests/Inputs/原始_before_A.bin": "antrenamer-20261013/gui-original/Inputs/原始_before_A.bin",
+    "drive_c/AntRenamerTests/Work/原始_after_A.bin": "antrenamer-20261013/gui-original/Work/原始_after_A.bin",
+    "drive_c/AntRenamerTests/Inputs/原始_before_B.bin": "antrenamer-20261013/gui-original/Inputs/原始_before_B.bin",
+    "drive_c/AntRenamerTests/Work/原始_after_B.bin": "antrenamer-20261013/gui-original/Work/原始_after_B.bin",
+    "drive_c/AntRenamerTests/original.arb": "antrenamer-20261013/gui-original/original.arb"
+  },
+  "screenshots": {
+    "01-original-inputs.jpg": {
+      "sizeBytes": 44910,
+      "sha256": "612cb965be3247bfc8388e8b366514f70d75571d5ee9acfb60b154156e87d513",
+      "actualEncoding": "JPEG"
+    },
+    "02-original-preview.jpg": {
+      "sizeBytes": 57633,
+      "sha256": "4198b1675d6a699ebf6ddcf05ce5e73b16a99d011717150b5aa3dc6db4672e47",
+      "actualEncoding": "JPEG"
+    },
+    "03-original-batch-save.jpg": {
+      "sizeBytes": 53134,
+      "sha256": "014fce58bcf0f1d6bf44ecd25dc42b90f074be1774d6417a4abfb68bce7deb0a",
+      "actualEncoding": "JPEG"
+    },
+    "04-original-saved-batch.jpg": {
+      "sizeBytes": 58535,
+      "sha256": "ff9384e57a51818bd521c76235d7d0b864869225f0a13d28157d27aae7c14591",
+      "actualEncoding": "JPEG"
+    },
+    "05-original-new-process-files.jpg": {
+      "sizeBytes": 45593,
+      "sha256": "0aa12c53a5409cea22ecef643d1d2377b11a204809efe67351bc5def9a7fd507",
+      "actualEncoding": "JPEG"
+    },
+    "06-original-new-process-batch-open.jpg": {
+      "sizeBytes": 54893,
+      "sha256": "4af0865f2ac2310922f6070fd37b41b22052a65a7f28cad89d743422ac66c08d",
+      "actualEncoding": "JPEG"
+    }
+  },
+  "originalInstalledStageEvidenceFrozen": true,
+  "marketLifecyclePendingAtFreeze": true,
+  "limits": [
+    "Finite two Chinese-name 47-byte synthetic BIN files: native Add via My Computer/C/AntRenamerTests/Work, A then B in separate additions. CtrlA in the first selector added only A; B explicitly added separately, actual two-file list verified. Native ordinary case-sensitive replace-all before to after, extension excluded, native Go. Renamed file contents exactly equal immutable Inputs; old Work names absent. No collision/undo/regex/EXIF/large-bad input/full renamer/direct Chinese keyboard/network/migration/unattended/GUI Store button acceptance; background networking not excluded. Synthetic files and batch are not applications.",
+    "Native Add-to-batch toolbar, one StrRepl action, native Save original.arb; 233-byte ASCII-compatible UTF8 no BOM/CRLF XML with fixed Version2.12.0 and actual Date10/13/2026, six exact attributes, finite XML/whole-byte verification only. Fresh formal process began with empty Files and empty batch, explicit Add both after files via ShiftDown two selection and native Open original.arb; no second rename performed. CtrlQ Add-to-batch attempt had no observed effect; toolbar succeeded, no generic keyboard repair.",
+    "Two native window-close normal exit0 and wineserver stopped, supporting evidence only. Initial default English language prompt normally confirmed; no language/font/definition/launcher env/cwd/Core/program/global DLL/runtime repair. GUI title Ant Renamer2.12; About not measured.",
+    "Original installation/source/provenance/licence evidence remains frozen from installed-awaiting-GUI stage. Fixed2.12 official old directory, complete cached HTTPS200/ContentLength/local SHA only, no repeated GET or original install. Main GPL2-or-later with Common MPL exception; installed licence exact dev/licence comparison, other two source copies distinct, full DelphiVCL/Tnt/VirtualTree/TB2K/TBX/TRegExpr/dEXIF/icons/translations closure, upstream digest/API/PGP/Authenticode/source-binary/repro/latest unverified.",
+    "Natural lock screen normal authorization unchanged, six digits checked before one submit per actual login. noVNC partial/stale drawing refreshed by browser reload/reconnect and native window reposition without VM/service/authentication changes. A filename typed during natural lock landed in hidden password field; it was cleared and never submitted, then authorized password entered and normal login completed. No password/login screenshot stored/public. Earlier initial lock unique cause/trace remains unestablished. Only selected files/36programs/three registry and prefix ProgramData/Ant Renamer plus named prefix-user configuration; not full filesystem. Configuration byte changes recorded privately, semantics/cause unestablished. Core queries may write existing scratch. Complete seven-class checkpoint516/150 saved before market, no restart/recover/reboot yet. Windows65/17 unchanged; original GUI success is not market lifecycle publication."
+  ]
+}

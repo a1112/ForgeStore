@@ -1,0 +1,62 @@
+{
+  "actualThirdOriginalByteDifferences": {
+    "system.reg": {
+      "old": {
+        "sizeBytes": 3424172,
+        "sha256": "78ef161c4b64e95e459418c74694470395c6f05739865b7af8e8d118f1b5cfaa"
+      },
+      "new": {
+        "sizeBytes": 3424172,
+        "sha256": "6fe7ebff541a8bd91f7f1e0b1cb53ad933cf8b17984f162aeff590680ddff825"
+      },
+      "actualPrivateBeforeAndAfterRawAvailable": true,
+      "causeOrKeyValueEquivalenceEstablished": false,
+      "privateDiffPin": {
+        "sizeBytes": 16081,
+        "sha256": "f87a3fcbe669f530c248ca06c526f9608e25dafe0f3f72d7403cad1087b28e13"
+      },
+      "privateDiffLines": 287
+    },
+    "user.reg": {
+      "old": {
+        "sizeBytes": 101632,
+        "sha256": "80a12ad7bf59713060345b7ce995940325f0b5022e506fe272761708de2b44cd"
+      },
+      "new": {
+        "sizeBytes": 101632,
+        "sha256": "a776b022a40255b65edaee40db6ddda8c1d968affdd3c02a75ce8a9c32c86c79"
+      },
+      "actualPrivateBeforeAndAfterRawAvailable": true,
+      "causeOrKeyValueEquivalenceEstablished": false,
+      "privateDiffPin": {
+        "sizeBytes": 786,
+        "sha256": "c911e1cd3fb6cdb2bdfda01680fa7623b30c4aa5a98a7ac5651c71cc5eaa1c59"
+      },
+      "privateDiffLines": 20
+    }
+  },
+  "actualNewPinsFixedBeforeCpAndNormalRestart": true,
+  "privateBeforeAfterRawAndLosslessUtf8DiffOrBinaryComparisonPreserved": true,
+  "causeOrKeyValueEquivalenceEstablished": false,
+  "programFilesEach": 36,
+  "all35OtherCrossGenerationProgramsByteEqual": true,
+  "soleActualProgramByteDifference": {
+    "unins000.dat": {
+      "original": {
+        "sizeBytes": 2944,
+        "sha256": "1c14a8068d783f69d989b72abb354b4254409a6f92b830696e520017274ec1be"
+      },
+      "market": {
+        "sizeBytes": 2944,
+        "sha256": "63d0c4667a94d05f2d62d3a4968ed9de57bcc809ef5caa2988d2e57e66b73a01"
+      }
+    }
+  },
+  "uninstallerDifferenceBothActualRawPrivatelyPreserved": true,
+  "uninstallerDifferenceCauseOrUninstallAccepted": false,
+  "selectedCoverage": "fixed test inputs/renamed files/two233B batches, two36 programs, three registry and selected prefix ProgramData/Ant Renamer and named prefix-user; not full app filesystem",
+  "firstDiscoveryNotCreationTimeProof": true,
+  "marketAllPinsPreservedAcrossRollbackThirdGuiAndRestart": true,
+  "recent64IpcNotCompleteSqlite": true,
+  "coreQueryMayWriteExistingRequestScratch": true
+}
