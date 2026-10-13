@@ -1,0 +1,752 @@
+{
+  "originalInstallSubmission": {
+    "jobId": "job-1791906243898-1",
+    "status": "running",
+    "application": {
+      "schemaVersion": "1",
+      "id": "texniccenter",
+      "name": "TeXnicCenter",
+      "version": "2.02",
+      "publisher": "ToolsCenter",
+      "category": "education",
+      "bottleId": "gui-texniccenter",
+      "installer": {
+        "fileName": "TXCSetup_2.02Stable_Win32.exe",
+        "sha256": "bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78",
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\TeXnicCenter",
+          "/NOICONS",
+          "/TASKS="
+        ]
+      },
+      "launchers": [
+        {
+          "id": "main",
+          "name": "TeXnicCenter",
+          "executable": "TeXnicCenter/TeXnicCenter.exe"
+        }
+      ],
+      "compatibilityRating": "unknown",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ]
+    },
+    "installerDirectoryUtf8Hex": "2f4449523d433a5c5465586e696343656e746572",
+    "guiAccepted": false,
+    "published": false
+  },
+  "originalInstalledObservation": {
+    "installed": true,
+    "generationId": "gen-job-1791906243898-1",
+    "fileCount": 85,
+    "mainProgram": {
+      "sizeBytes": 4120064,
+      "sha256": "0c4c4191bb1ab1d2199c5930be04729b7cdd3c087838cceecae5fb2915e882bb"
+    },
+    "mainPeMachine": "0x14c",
+    "installedLicenseNamedFiles": {
+      "GPL_english.htm": {
+        "sizeBytes": 19313,
+        "sha256": "0c962dab0f3deec9e30dddcf357a2b3ee6fbc41a8fdaac61eab135677561b374"
+      },
+      "GPL_german.htm": {
+        "sizeBytes": 28568,
+        "sha256": "e344fd543c3bb8005b7c19994ce2e1474840566479b26d67b1cd78c1d4a4723b"
+      }
+    },
+    "checkpoint": {
+      "file": "after-install.json",
+      "sha256": "9c075060328b88e27eb2d48804181f6e3495d75fbf5fd3f61dc9894fb6dac686",
+      "coreJobs": 528,
+      "fullStoreRows": 154
+    },
+    "guiAccepted": false,
+    "published": false
+  },
+  "marketInstallObservation": {
+    "passed": true,
+    "installJob": {
+      "applicationId": "texniccenter",
+      "createdAtMilliseconds": 1791908297175,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 111288,
+          "requestId": "job-1791908297175-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 4803,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791908297175-4/prefix",
+          "requestId": "job-1791908297175-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 4845,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791908297175-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791908297175-4",
+      "id": "job-1791908297175-4",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 70588,
+        "fileDigest": "sha256:bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78",
+        "fileSizeBytes": 12198304,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "kernel32.dll",
+          "oleaut32.dll",
+          "user32.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 61952,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 61740,
+            "writable": false
+          },
+          {
+            "executable": true,
+            "name": ".itext",
+            "rawDataSize": 3072,
+            "readable": true,
+            "virtualAddress": 69632,
+            "virtualSize": 2884,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 3584,
+            "readable": true,
+            "virtualAddress": 73728,
+            "virtualSize": 3208,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".bss",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 77824,
+            "virtualSize": 22196,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 3584,
+            "readable": true,
+            "virtualAddress": 102400,
+            "virtualSize": 3536,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 106496,
+            "virtualSize": 8,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 110592,
+            "virtualSize": 24,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 131072,
+            "readable": true,
+            "virtualAddress": 114688,
+            "virtualSize": 131004,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "install",
+      "launchPlan": {
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "guest-artifact sha256:bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78 pinned",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "guestArtifact": {
+          "architecture": "i386",
+          "digest": "sha256:bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TXCSetup_2.02Stable_Win32.exe",
+          "sizeBytes": 12198304,
+          "storedPath": "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78",
+          "subsystem": "windowsGui"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791908297175-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78",
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/DIR=C:\\TeXnicCenter",
+            "/NOICONS",
+            "/TASKS="
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791908297175-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791908297175-4"
+        },
+        "requestId": "job-1791908297175-4",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791908311426
+    },
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "texniccenter",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "5e9318f3-58db-426a-b955-4b4122f0705b",
+      "state": "succeeded"
+    },
+    "generation": {
+      "bottleId": "gen-job-1791908297175-4",
+      "createdAtMilliseconds": 1791908297181,
+      "definition": {
+        "bottleId": "gui-texniccenter",
+        "category": "education",
+        "compatibilityRating": "unknown",
+        "id": "texniccenter",
+        "installer": {
+          "arguments": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/DIR=C:\\TeXnicCenter",
+            "/NOICONS",
+            "/TASKS="
+          ],
+          "fileName": "TXCSetup_2.02Stable_Win32.exe",
+          "sha256": "bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78"
+        },
+        "launchers": [
+          {
+            "executable": "TeXnicCenter/TeXnicCenter.exe",
+            "id": "main",
+            "name": "TeXnicCenter"
+          }
+        ],
+        "name": "TeXnicCenter",
+        "publisher": "ToolsCenter",
+        "schemaVersion": "1",
+        "tags": [
+          "rolling-1000",
+          "managed-inno"
+        ],
+        "version": "2.02"
+      },
+      "definitionDigest": "sha256:96d1268362854eb00c309a4e526fe827c9e6ca0a73ec2b5f2c651a5b5ff9e086",
+      "id": "gen-job-1791908297175-4",
+      "launcherDigests": {
+        "main": "sha256:0c4c4191bb1ab1d2199c5930be04729b7cdd3c087838cceecae5fb2915e882bb"
+      },
+      "runtime": {
+        "binding": {
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINESERVER": "/usr/bin/wineserver"
+          },
+          "executable": "/usr/bin/wine",
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "providerId": "wine-linux-x86-64-preview",
+          "wineserverExecutable": "/usr/bin/wineserver"
+        },
+        "selection": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "version": "11.14"
+      },
+      "status": "ready",
+      "updatedAtMilliseconds": 1791908311443
+    },
+    "installedFiles": {
+      "TeXnicCenter.exe": {
+        "sizeBytes": 4120064,
+        "sha256": "0c4c4191bb1ab1d2199c5930be04729b7cdd3c087838cceecae5fb2915e882bb"
+      },
+      "GPL_english.htm": {
+        "sizeBytes": 19313,
+        "sha256": "0c962dab0f3deec9e30dddcf357a2b3ee6fbc41a8fdaac61eab135677561b374"
+      },
+      "unins000.exe": {
+        "sizeBytes": 1279177,
+        "sha256": "f0ec3f6dab6de4746b3f138b80fbee6413127ca4cade1a306fdbb5b602b1f4fb"
+      },
+      "OutputProfiles.xsd": {
+        "sizeBytes": 4700,
+        "sha256": "b80b36c95023285ace8534212965a4a3f8e4cce3c75521066857321c097e6946"
+      },
+      "Tips_english.txt": {
+        "sizeBytes": 7653,
+        "sha256": "d460d329746fdbc6c6e8b0b0bc0d639bad20b50f4bcff03660518400c2678c9a"
+      },
+      "Shared.dll": {
+        "sizeBytes": 14336,
+        "sha256": "cd7a3c0ca78484e9f507d7838e2e510bd537d4d50a68c3fa507b509ef964f4f3"
+      },
+      "LaTeXCommands.xsd": {
+        "sizeBytes": 1932,
+        "sha256": "ee51bc2f28dce1055870d9cc1bd0b99a33118357786a01b09d4e564d7df2cd99"
+      },
+      "Tips_german.txt": {
+        "sizeBytes": 9286,
+        "sha256": "59162a4902bb4bdf6d3e2a5a29df9630af67fa57372ce23aca7de369ba4d3236"
+      },
+      "GPL_german.htm": {
+        "sizeBytes": 28568,
+        "sha256": "e344fd543c3bb8005b7c19994ce2e1474840566479b26d67b1cd78c1d4a4723b"
+      },
+      "mfc100u.dll": {
+        "sizeBytes": 4422992,
+        "sha256": "bc50848aeef466dff4a3d8c386bf0d0ec35b8e5b438031ae885aa5371f2e1a42"
+      },
+      "CommonTypes.xsd": {
+        "sizeBytes": 560,
+        "sha256": "03f751838fef19244ffd774013e14c413a44a72f6d943ab3a84063d65f817a62"
+      },
+      "UserImages.bmp": {
+        "sizeBytes": 5038,
+        "sha256": "fc9c5bc4fe55db05a721751c0f14e5dde9c2fcdf8c314d5239462e802ac52a62"
+      },
+      "msvcr100.dll": {
+        "sizeBytes": 773968,
+        "sha256": "8793353461826fbd48f25ea8b835be204b758ce7510db2af631b28850355bd18"
+      },
+      "TeXnicCenterObjects.tlb": {
+        "sizeBytes": 3628,
+        "sha256": "3a7d9bbc1760da2ca8734775721563dbec1b1d6f00688c4685e4889249669de7"
+      },
+      "msvcp100.dll": {
+        "sizeBytes": 421200,
+        "sha256": "b2ad109c15eaa92079582787b7772ba0a2f034f7d075907ff87028df0eaea671"
+      },
+      "unins000.dat": {
+        "sizeBytes": 18583,
+        "sha256": "e8d2033d417e25393bd38fa901f92830895d07efdbf8706873ef0fb75d8bdcc0"
+      },
+      "Help/Latex2e.chm": {
+        "sizeBytes": 138750,
+        "sha256": "dac03aff7d34465834350995d45110bb78b141f5cd9ed98b25f32ae42cbab39b"
+      },
+      "Help/ClsGuide.chm": {
+        "sizeBytes": 61544,
+        "sha256": "44838f9f80cd85663168e237352d5d24c6189bff18ee47a9aafc47519c33ae57"
+      },
+      "Help/FntGuide.chm": {
+        "sizeBytes": 100475,
+        "sha256": "f58431a112caf221d26e5830011acd7d7e0bd5b398ebca69945e422045ca4cd2"
+      },
+      "Help/ModGuide.chm": {
+        "sizeBytes": 40338,
+        "sha256": "cfa933a7bdae7d0e089b72ee264f7e8c5793510d9e102f3988b4ce2348505b2b"
+      },
+      "Help/LatexHelpBook.chw": {
+        "sizeBytes": 178608,
+        "sha256": "5f9a6efadf684ca024bc31026e1eeecaae4906e58d635dc360ea55fbe2ecfec1"
+      },
+      "Help/Bibtex.chm": {
+        "sizeBytes": 76454,
+        "sha256": "b1bf02b6479f49e7b6cd925b00b8b6a21cf71815b1254a0c85a9dceba96f4780"
+      },
+      "Help/Amslatex.chm": {
+        "sizeBytes": 93062,
+        "sha256": "0ce34e77e1e578542624fdbcd9119307fc7f95282291502f2add8c3081134ad9"
+      },
+      "Help/CfgGuide.chm": {
+        "sizeBytes": 45422,
+        "sha256": "1f84c34ffcb46c6162be2580e845dc9645e1c92a5937e25ecc2dc14dbaad6e7f"
+      },
+      "Help/Latex.chm": {
+        "sizeBytes": 97032,
+        "sha256": "ee6607ef46ff90120bbb27772f75f8cf5baa52dfe174ae0ba1474c18a0a7ab92"
+      },
+      "Help/LatexAdv.chm": {
+        "sizeBytes": 177050,
+        "sha256": "0d57dfbb11dbac0ca75e4a7fbed38e383187a4eb51e4971a3ad91dfdb604c16b"
+      },
+      "Help/LatexMathsPix.chm": {
+        "sizeBytes": 106808,
+        "sha256": "f52f32b4d867403fa517aba17c21a1489e3529ab2a9421165aba19e4e723e9df"
+      },
+      "Help/Latex2eForAuthors.chm": {
+        "sizeBytes": 89108,
+        "sha256": "6d83d98b2636f26336b4180519aef13ad97e54c5a0249e94e3fcfff5e1c5217e"
+      },
+      "Help/LatexHelpBook.chm": {
+        "sizeBytes": 49461,
+        "sha256": "ca88259565ada1b62c85dd9d35509ec5424aa40a9693a9aa7c87f88a236dbc61"
+      },
+      "Help/MakeIndex.chm": {
+        "sizeBytes": 43605,
+        "sha256": "d4ee5c9260167f71436396f12f1f3566d4123c579277f14fac35e3709d63d30c"
+      },
+      "Help/TexCatalogue.chm": {
+        "sizeBytes": 489033,
+        "sha256": "35795ed2c641703689ebd7b717d1c1c5744a18320001c0dc9e1f4bb6c611f958"
+      },
+      "Help/TeXnicCenter.chm": {
+        "sizeBytes": 1255083,
+        "sha256": "30285be7909587475f865c36b77c600c969e2b69284f3001ea9003e44950b257"
+      },
+      "Help/FAQ.chm": {
+        "sizeBytes": 223400,
+        "sha256": "b955bb7b4a21c84883d8f810016397f8ea2f630b35cdc114848a9cf3877704b8"
+      },
+      "Packages/accents.bmp": {
+        "sizeBytes": 1318,
+        "sha256": "d40f8b0d67779e16dca0892eb7834be3a92ba3a4db216eca58a5af9293455625"
+      },
+      "Packages/symbols.bmp": {
+        "sizeBytes": 3478,
+        "sha256": "0039832ff39ecb58c7c16c46165448a20a80ec211877fc22bfc60bd18688def8"
+      },
+      "Packages/PSTricks.xml": {
+        "sizeBytes": 895,
+        "sha256": "3be254bc2e4f647ae68f9fb031f7f7ea978588ca3f9059eb439267e8b13f5942"
+      },
+      "Packages/TeX.xml": {
+        "sizeBytes": 12041,
+        "sha256": "d06bbf3fc566297f9f1ec2c831dffd6e1895792ffa8d4969d33d348a9bd9e322"
+      },
+      "Packages/symbols2.bmp": {
+        "sizeBytes": 2998,
+        "sha256": "6dad052635c22ed5a9f504e41086d42752f9bb9d1270483e28790826b9e42c1b"
+      },
+      "Packages/base.xml": {
+        "sizeBytes": 9553,
+        "sha256": "5e5b94bfe352fb2f2f1915884040e155856b3590bd42c39df04ee374bb409b27"
+      },
+      "Packages/sets.bmp": {
+        "sizeBytes": 2038,
+        "sha256": "10c723126b353fc8aec2de50c071fe373ad1a1c5a6784ab92ff6fd615fdbbce6"
+      },
+      "Packages/beamer.xml": {
+        "sizeBytes": 1641,
+        "sha256": "ca5f7767ec57d8ba5212857b715624db9e94a3ea39c95496a82f33dde3380a15"
+      },
+      "Packages/format.bmp": {
+        "sizeBytes": 3598,
+        "sha256": "a2973292609f4523f6a86d7ae2c70839bd121af8a2c02eeae3293b5fe7009c3f"
+      },
+      "Packages/binops.bmp": {
+        "sizeBytes": 1438,
+        "sha256": "b57f61d341886e78f3070a5b502b917e21b92d9e1c72e449341f545eb121ad8c"
+      },
+      "Packages/math.xml": {
+        "sizeBytes": 20170,
+        "sha256": "60f545e4267733023fabc774fb7166fdbe461c5adf3e8e5babf062df5b435298"
+      },
+      "Packages/mathmisc.bmp": {
+        "sizeBytes": 2398,
+        "sha256": "77e25a5202900c1aa8c00cd0de3b21de227912e7e8f632525a627d2059aa806f"
+      },
+      "Packages/arrows.bmp": {
+        "sizeBytes": 3838,
+        "sha256": "70d9e6f31f01cf363da8c6159547b7cda65cba76e21210ba5a7c27dcd5f5fcce"
+      },
+      "Packages/TikZ.xml": {
+        "sizeBytes": 796,
+        "sha256": "47cd53ca8bc4879c0667101e547a9254d3cf4147ecc9f67c7e08ba5c6426f4e8"
+      },
+      "Language/TxcResEnglish.dll": {
+        "sizeBytes": 994816,
+        "sha256": "2bca091b2187f371d25458aacd8d530cd87f97af013573f784f226d92216980b"
+      },
+      "Language/TxcResDeutsch.dll": {
+        "sizeBytes": 1010688,
+        "sha256": "03edbe6fbcab9f72f1f9bc845d7cbd7f6cfb8de37d5fbdf7b55c6433c1087552"
+      },
+      "Dictionaries/en_GB.aff": {
+        "sizeBytes": 74492,
+        "sha256": "a564059427ba8565d0ec99c7d0b3f17879fcc433f18528ba88dd0b1b56cad5df"
+      },
+      "Dictionaries/de_DE.dic": {
+        "sizeBytes": 3595546,
+        "sha256": "bd90c08d10254d77ca12a1b32fda72098da00be6cd8b803e991d60a99fc66aaa"
+      },
+      "Dictionaries/en_US.aff": {
+        "sizeBytes": 64145,
+        "sha256": "41f5deb682c25c3d1a9c5fbe2a538b5e112de0084a1a9fe8ceb4c4dfe400af0f"
+      },
+      "Dictionaries/de_DE.aff": {
+        "sizeBytes": 18725,
+        "sha256": "17217b96532c734d50bd9802f635d2e012deb448d06105cc0331043652f83439"
+      },
+      "Dictionaries/en_US.dic": {
+        "sizeBytes": 641025,
+        "sha256": "dc47b8cbd67e32cb3e1d45747f130c02331ca3924d63676f7f48e40d0764dbb3"
+      },
+      "Dictionaries/en_GB.dic": {
+        "sizeBytes": 701646,
+        "sha256": "3c82a0e0354c850f2a3bbe6ed570e4fb16bac7bd8a3e8190a3d3eb9dbc3aa801"
+      },
+      "Templates/Documents/Deutsch/OptionenAbkurzungen.tex": {
+        "sizeBytes": 1163,
+        "sha256": "dae476cd034a947b1459ab255445c02ee7209a718ca5b29e2d4554ac78269ea0"
+      },
+      "Templates/Documents/Deutsch/OptionenLayout.tex": {
+        "sizeBytes": 1626,
+        "sha256": "5ba1d6d20ee6afea8656e033a5969a1d5cb4ddea3fa1c57bc3542ce406b89c58"
+      },
+      "Templates/Documents/Deutsch/Deckblatt.tex": {
+        "sizeBytes": 1037,
+        "sha256": "be7bfcdb917b31ac4a167e4d29d6deedb515db64637543cbb4aeaa866019556e"
+      },
+      "Templates/Documents/Deutsch erweitert/OptionenMath.tex": {
+        "sizeBytes": 2528,
+        "sha256": "926954be4da38e9dee84c1aecaa17c870fbf417608c2668824e4f7540b303065"
+      },
+      "Templates/Documents/Deutsch erweitert/PDFInfos.tex": {
+        "sizeBytes": 1644,
+        "sha256": "1c7f0712e854c7a134fe8d97b1924a9b6f77d73737a4fc5f613317d1df017c1e"
+      },
+      "Templates/Documents/Deutsch erweitert/OptionenErweitert.tex": {
+        "sizeBytes": 2950,
+        "sha256": "faf7fb6457123d82ccf06a6f1fdca1c1edb0a579c56af1666d48b6172f7caeb1"
+      },
+      "Templates/Documents/English/Titlepage.tex": {
+        "sizeBytes": 980,
+        "sha256": "f2d35de687ae657f6553ae7450000a64e7244f559c6d7247bd9a996645733b52"
+      },
+      "Templates/Documents/English/OptionsLayout.tex": {
+        "sizeBytes": 1520,
+        "sha256": "a16dd52aaaf5cd5b40b5d8e8811866c6b5f56cef08617448b80f9af36e0d83ef"
+      },
+      "Templates/Documents/English/OptionsAbbreviations.tex": {
+        "sizeBytes": 1079,
+        "sha256": "d4b048eae43e4a84f36f828d520b393b76bdfe2013ac6e2d71636502ff0109f4"
+      },
+      "Templates/Documents/English advanced/PDFInfos.tex": {
+        "sizeBytes": 1482,
+        "sha256": "5c1499bd22b377d49713bd17ce96aa2cf57a446aeab618171f9f587263d66835"
+      },
+      "Templates/Documents/English advanced/OptionsAdvanced.tex": {
+        "sizeBytes": 2778,
+        "sha256": "a7527bb4dd86e52005a7a685d2102a36f5fc0025514534b09e959b6525f24d6b"
+      },
+      "Templates/Documents/English advanced/OptionsMath.tex": {
+        "sizeBytes": 2455,
+        "sha256": "340befc59b203e4c93f63a7adea18ab99052ca9e3ea8493833419ad33cb74dc3"
+      },
+      "Templates/Projects/Deutsch/KOMA-Brief.tex": {
+        "sizeBytes": 3683,
+        "sha256": "ecbf20aa3e4454f8accbfa184c80850862f63eb457b9607ae31da80d5b862f0b"
+      },
+      "Templates/Projects/Deutsch/KOMAArtikel.tex": {
+        "sizeBytes": 6997,
+        "sha256": "f816e9e2ff55fa42f97609d1043880fd6a5e5f1aea2a10ea1cc82b2958d92c7a"
+      },
+      "Templates/Projects/Deutsch/lebenslauf.tex": {
+        "sizeBytes": 4796,
+        "sha256": "490a663440dee3a35eac03560ba8bde455a47fe16702bc33be439b490eefd002"
+      },
+      "Templates/Projects/Deutsch/Report.tex": {
+        "sizeBytes": 6995,
+        "sha256": "0a5ac51455f77082a690fe46a4aaa90ae7d69cbf46d5ddf4d6da379aa4f13c76"
+      },
+      "Templates/Projects/Deutsch/Brief.tex": {
+        "sizeBytes": 4653,
+        "sha256": "2fa1ebdc27184ee0281d310c9a4699f4f3ef622b6730f4c2a914bf990f5335b1"
+      },
+      "Templates/Projects/Deutsch erweitert/KOMABuch.tex": {
+        "sizeBytes": 7802,
+        "sha256": "5295f5eae4fc1abc4a54a512f6aa6e38d6806aa0c14d1e20150588b1925bc0f3"
+      },
+      "Templates/Projects/Deutsch erweitert/prospereinfach.tex": {
+        "sizeBytes": 3796,
+        "sha256": "218034a53128a7366bc9c3f88c12b685e3859fa73b6ba2dae0ccc999449c587a"
+      },
+      "Templates/Projects/English/Letter.tex": {
+        "sizeBytes": 4460,
+        "sha256": "efa2f70f44a67f2029e4bdc88c4266d046be24912941647e9acad4d9c892a3fc"
+      },
+      "Templates/Projects/English/Slides.tex": {
+        "sizeBytes": 2940,
+        "sha256": "b7c2457ba6ef4aceedd36ca760642aeefcac588b12272e4d7d2f93a6acd06d28"
+      },
+      "Templates/Projects/English/Report.tex": {
+        "sizeBytes": 6490,
+        "sha256": "a2affe6fa5173da4b70e2e8b0264f0974a9a067fb11b31d4bfada8dcb02b5e93"
+      },
+      "Templates/Projects/English advanced/Mathematical Book.tex": {
+        "sizeBytes": 13096,
+        "sha256": "f504755b955a8bc05995393a651c0fdf6ba01df8feee2f1dceb8c03ec872a08e"
+      },
+      "Templates/Projects/English advanced/Basic Article.tex": {
+        "sizeBytes": 11861,
+        "sha256": "7ca12014538354fa3ead54d49f4f587de46b81999361187cf79ea169ceb089ac"
+      },
+      "Templates/Projects/English advanced/Simple Report.tex": {
+        "sizeBytes": 12074,
+        "sha256": "ad944bdf7e42125382eaa7763cd0753b46c673c5a2a2021d267ea19e8cc91830"
+      },
+      "Templates/Projects/English advanced/Book.tex": {
+        "sizeBytes": 13512,
+        "sha256": "fd189fdd6d7ebefaa4c7a0647e2d496218718f436843795194400531a33ea5ac"
+      },
+      "Templates/Projects/English advanced/Technical Report.tex": {
+        "sizeBytes": 13797,
+        "sha256": "f77d55719b2df66ffd2ab7f7b4de9aafe151441c3f40d29f8d5f78396bc90636"
+      },
+      "Templates/Projects/English advanced/Mathematical Article.tex": {
+        "sizeBytes": 12871,
+        "sha256": "c750de3d8dec8060d75b01d14658497f5f8b90913d4bbf41b3cabfd3c3bb17e4"
+      },
+      "Templates/Projects/English advanced/Foils.tex": {
+        "sizeBytes": 13102,
+        "sha256": "e982f7a0c8e3108e6fe9f1945f22ccea3f893bb3cc04968885be94786161859a"
+      },
+      "Templates/Projects/English advanced/Simple Letter.tex": {
+        "sizeBytes": 3902,
+        "sha256": "8b1fef576c6766b3c0ef7f34c3bfa66c5bd9f1eb911210bbb143196dbb1d6f08"
+      }
+    },
+    "programFileCountEach": 85,
+    "actualProgramFileByteDifferences": {
+      "unins000.dat": {
+        "original": {
+          "sizeBytes": 18583,
+          "sha256": "db32e96f15e7225f09442dc25fcaadeac7d97014ebba8f20321850952fae817c"
+        },
+        "market": {
+          "sizeBytes": 18583,
+          "sha256": "e8d2033d417e25393bd38fa901f92830895d07efdbf8706873ef0fb75d8bdcc0"
+        }
+      }
+    },
+    "allOtherProgramFilesByteEqual": true,
+    "definitionDigestsLaunchersAndRuntimeEqual": true,
+    "originalGenerationDefinitionAndAllFieldsUnchanged": true,
+    "uninstallerDataDifferenceCauseOrUninstallAccepted": false,
+    "registryPins": {
+      "system.reg": {
+        "sizeBytes": 3436266,
+        "sha256": "9ad7f7fd3b1e162ea02a7ba431a40cf9d0e8eec7ba9801a432b1b25e3a60c530"
+      },
+      "user.reg": {
+        "sizeBytes": 101800,
+        "sha256": "f5dce6bccb759c4e6a5f23cc1010023ff611dfe9bca2b3cdfb1aa5e0436ead6a"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "1ce11744b94c697c86548c36d4b6200cced337822d69090a01ca264a28a452ba"
+      }
+    },
+    "coreJobs": 531,
+    "fullStoreRows": 155,
+    "checkpoint": {
+      "file": "after-market-install.json",
+      "sha256": "6a07c636c9e6188ab3a1f2a6b6ca89867b095a5afa3a9460b6a932b7f88bdcb0",
+      "coreJobs": 531,
+      "fullStoreRows": 155
+    },
+    "fixtureWrittenOrGuiLaunched": false
+  },
+  "bothGenerationDefinitionsAndLaunchersRuntimeAllFieldsSame": true,
+  "installedStageGuiAcceptedFalseIsFrozenHistoricalLabel": true,
+  "onlyOneOriginalAndOneIndependentMarketInstall": true
+}

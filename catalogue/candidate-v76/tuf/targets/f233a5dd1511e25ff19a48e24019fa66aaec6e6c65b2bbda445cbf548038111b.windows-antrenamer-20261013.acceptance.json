@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applications": [
+    {
+      "id": "antrenamer",
+      "version": "2.12.0",
+      "sha256": "3c9bdc59842c786ef4cfba6ddbe39912326299104cc36a074b881d8ed68cc6c4",
+      "size": 1212478,
+      "generationId": "gen-job-1791862006192-1",
+      "definitionDigest": "sha256:17e76eea4a1ba4821d2d67e3f92ec82812a1eb75a61110f28b97730a753169e8",
+      "launcherSha256": "sha256:d0b25af2fa49d32c7902bd9a4b2c7285facf6c5ff9933159e5ae5942cb08f947",
+      "guiFileOperation": "passed-limited-two-Chinese-name-BIN-native-string-replace-rename-batch-save-new-process-explicit-file-add-batch-open",
+      "saveProof": {
+        "passed": true,
+        "generationId": "gen-job-1791862006192-1",
+        "guiJobId": "job-1791884600058-2",
+        "inputPins": {
+          "drive_c/AntRenamerTests/Inputs/原始_before_A.bin": {
+            "sizeBytes": 47,
+            "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+          },
+          "drive_c/AntRenamerTests/Inputs/原始_before_B.bin": {
+            "sizeBytes": 47,
+            "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+          }
+        },
+        "renamedOutputPins": {
+          "drive_c/AntRenamerTests/Work/原始_after_B.bin": {
+            "sizeBytes": 47,
+            "sha256": "4c73f841e81c68a13a0c73023bdbd1b1ea22d8ca2d3ea9f04891dbb638a90ad7"
+          },
+          "drive_c/AntRenamerTests/Work/原始_after_A.bin": {
+            "sizeBytes": 47,
+            "sha256": "adcb6d723f07408fee32aea7c725c892eeb9582608819a5aea15f80f05a22799"
+          }
+        },
+        "oldWorkNamesAbsent": true,
+        "allRenamedContentsEqualImmutableInputs": true,
+        "program36Preserved": true,
+        "guiAccepted": false,
+        "published": false,
+        "batchFile": "drive_c/AntRenamerTests/original.arb",
+        "batchPin": {
+          "sizeBytes": 233,
+          "sha256": "aedf1c69b232648666fa6e4b0f306c6f87b5262785a359b3191b32fe9123e8d2"
+        },
+        "finiteSingleActionBatchVerified": true,
+        "batchRawBase64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxBbnRSZW5hbWVyIFZlcnNpb249IjIuMTIuMCIgRGF0ZT0iMTAvMTMvMjAyNiI+DQogPEJhdGNoPg0KICA8U3RyUmVwbCBTZWFyY2g9ImJlZm9yZSIgUmVwbD0iYWZ0ZXIiIEFsbE9jY3VyZW5jZXM9Ii0xIiBDYXNlU2Vuc2l0aXZlPSItMSIgSW5jbHVkZUV4dD0iMCIgT25seUV4dD0iMCIvPg0KIDwvQmF0Y2g+DQo8L0FudFJlbmFtZXI+DQo="
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-inputs.jpg": {
+          "sizeBytes": 44910,
+          "sha256": "612cb965be3247bfc8388e8b366514f70d75571d5ee9acfb60b154156e87d513",
+          "actualEncoding": "JPEG"
+        },
+        "02-original-preview.jpg": {
+          "sizeBytes": 57633,
+          "sha256": "4198b1675d6a699ebf6ddcf05ce5e73b16a99d011717150b5aa3dc6db4672e47",
+          "actualEncoding": "JPEG"
+        },
+        "03-original-batch-save.jpg": {
+          "sizeBytes": 53134,
+          "sha256": "014fce58bcf0f1d6bf44ecd25dc42b90f074be1774d6417a4abfb68bce7deb0a",
+          "actualEncoding": "JPEG"
+        },
+        "04-original-saved-batch.jpg": {
+          "sizeBytes": 58535,
+          "sha256": "ff9384e57a51818bd521c76235d7d0b864869225f0a13d28157d27aae7c14591",
+          "actualEncoding": "JPEG"
+        },
+        "05-original-new-process-files.jpg": {
+          "sizeBytes": 45593,
+          "sha256": "0aa12c53a5409cea22ecef643d1d2377b11a204809efe67351bc5def9a7fd507",
+          "actualEncoding": "JPEG"
+        },
+        "06-original-new-process-batch-open.jpg": {
+          "sizeBytes": 54893,
+          "sha256": "4af0865f2ac2310922f6070fd37b41b22052a65a7f28cad89d743422ac66c08d",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-antrenamer-source.json",
+    "sha256": "e7bfd8df258d599082715298366539b6d6beb27412debb282f7232b19a93a2fb"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-antrenamer-gui.json",
+    "sha256": "bde0786a79e3af2e902454c9d437c2de5d28c7ab04d0d56a0cfcf83655a45242"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-13-antrenamer-gui-failures.json",
+    "sha256": "958107b65f66b71ebf49b6c659e6adab076ede9fd57d5dddff19555835bc2887"
+  },
+  "limits": [
+    "Finite two Chinese-name 47-byte synthetic BIN files: native Add via My Computer/C/AntRenamerTests/Work, A then B in separate additions. CtrlA in the first selector added only A; B explicitly added separately, actual two-file list verified. Native ordinary case-sensitive replace-all before to after, extension excluded, native Go. Renamed file contents exactly equal immutable Inputs; old Work names absent. No collision/undo/regex/EXIF/large-bad input/full renamer/direct Chinese keyboard/network/migration/unattended/GUI Store button acceptance; background networking not excluded. Synthetic files and batch are not applications.",
+    "Native Add-to-batch toolbar, one StrRepl action, native Save original.arb; 233-byte ASCII-compatible UTF8 no BOM/CRLF XML with fixed Version2.12.0 and actual Date10/13/2026, six exact attributes, finite XML/whole-byte verification only. Fresh formal process began with empty Files and empty batch, explicit Add both after files via ShiftDown two selection and native Open original.arb; no second rename performed. CtrlQ Add-to-batch attempt had no observed effect; toolbar succeeded, no generic keyboard repair.",
+    "Two native window-close normal exit0 and wineserver stopped, supporting evidence only. Initial default English language prompt normally confirmed; no language/font/definition/launcher env/cwd/Core/program/global DLL/runtime repair. GUI title Ant Renamer2.12; About not measured.",
+    "Original installation/source/provenance/licence evidence remains frozen from installed-awaiting-GUI stage. Fixed2.12 official old directory, complete cached HTTPS200/ContentLength/local SHA only, no repeated GET or original install. Main GPL2-or-later with Common MPL exception; installed licence exact dev/licence comparison, other two source copies distinct, full DelphiVCL/Tnt/VirtualTree/TB2K/TBX/TRegExpr/dEXIF/icons/translations closure, upstream digest/API/PGP/Authenticode/source-binary/repro/latest unverified.",
+    "Natural lock screen normal authorization unchanged, six digits checked before one submit per actual login. noVNC partial/stale drawing refreshed by browser reload/reconnect and native window reposition without VM/service/authentication changes. A filename typed during natural lock landed in hidden password field; it was cleared and never submitted, then authorized password entered and normal login completed. No password/login screenshot stored/public. Earlier initial lock unique cause/trace remains unestablished. Only selected files/36programs/three registry and prefix ProgramData/Ant Renamer plus named prefix-user configuration; not full filesystem. Configuration byte changes recorded privately, semantics/cause unestablished. Core queries may write existing scratch. Complete seven-class checkpoint516/150 saved before market, no restart/recover/reboot yet. Windows65/17 unchanged; original GUI success is not market lifecycle publication."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

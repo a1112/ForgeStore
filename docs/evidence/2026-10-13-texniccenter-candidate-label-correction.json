@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "correctionScope": "Only inherited output labels, not actual catalogue activation or saved CP state",
+  "actualCandidateCatalogue": "candidate-v76",
+  "actualVersions": {
+    "snapshot": 85,
+    "root": 1,
+    "timestamp": 85,
+    "targets": 85
+  },
+  "coreJobs": 534,
+  "fullStoreRows": 156,
+  "entries": 70,
+  "signedActualTargets": 148,
+  "publicCatalogueJsonFiles": 81,
+  "actualAssertedRootPath": "catalogue-v76/tuf",
+  "originalLabels": {
+    "restartResultCandidateCatalogue": "candidate-v75",
+    "firstCurrentResultActualCatalogue": "candidate-v75"
+  },
+  "oldRawRecordsPreserved": {
+    "2026-10-13-texniccenter-current-state.json": {
+      "sizeBytes": 916,
+      "sha256": "0d5dcbbb7bb74303bbcfbbaf50dbb0f11247849a37d3554094882ed79d85f396"
+    },
+    "2026-10-13-texniccenter-runtime-recovery.json": {
+      "sizeBytes": 52864,
+      "sha256": "8c571bd6da6d8ad104e00b874637cddfdd8782d7f162a383241c288468c3ff9c"
+    }
+  },
+  "oldHostHelpersAndReceiptsPreserved": {
+    "rolling-current-state-texniccenter-20261013.py": {
+      "sizeBytes": 3039,
+      "sha256": "bd8a6519df809b2a88ddfe0b590cf0c5ef05ea52ad0c68f90b8681413f17439d"
+    },
+    "texniccenter-current-state-result-20261013.json": {
+      "sizeBytes": 840,
+      "sha256": "786af5264fda9e715312529bf5a7d4f358919a430c223b4b78b8f0c3ce4d98b9"
+    },
+    "texniccenter-restart-final-result-20261013.json": {
+      "sizeBytes": 36785,
+      "sha256": "24c67cc8eae1dad36c14e9f77e90b79ea5438200ce939965cfda27f2cbc82b30"
+    }
+  },
+  "newReadonlyHelper": {
+    "file": "rolling-current-state-texniccenter-v2-20261013.py",
+    "sizeBytes": 3039,
+    "sha256": "443ca2c8a94127167ee3691722589b63390042095ebb93b5f73eb109ca44cb4a"
+  },
+  "newReadonlyResultPin": {
+    "sizeBytes": 840,
+    "sha256": "242e1839960866f6a667d94f55058da00ae2554b59039f9624a64d4f54fc4408"
+  },
+  "fullSevenClassesAndAllPinsMatchSameSavedCP": true,
+  "samePrivateFinalCheckpoint": {
+    "file": "after-final-restart.json",
+    "sha256": "4d816c5b64b81dc3779b64bef8251d9721cea7a1fcca92b72e44b6c160448042",
+    "coreJobs": 534,
+    "fullStoreRows": 156
+  },
+  "onlyOutputLabelChanged": true,
+  "newCurrentReference": "2026-10-13-texniccenter-current-state-v2.json",
+  "first129ProspectiveAllRawPrivatelyPreserved": true,
+  "firstProspectiveManifestSha256": "08b2a6dab59d61b68c2fc6cfce38bae58a1145f4fed0d797c22649efe8541aa9",
+  "noNewCheckpointRestartSignTransferInstallationGuiRollbackOrStage": true,
+  "additionalGuessedGitHelperReadsMissing": {
+    "paths": [
+      "graph-stage-index-20261013.py",
+      "graph-commit-byte-20261013.py"
+    ],
+    "onlyToolHistoryExactRawNotSeparatelySavedOrFabricated": true,
+    "actualFilesLocatedWithRg": [
+      "graph-stage-index-audit-20261013.py",
+      "graph-commit-byte-audit-20261013.py"
+    ],
+    "noDependentStageCommitPushExecuted": true
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "acceptedDistinctWindowsApps": 68,
+  "old67AcceptedAnd17PendingAllFieldsPreserved": true,
+  "addedApplication": "texniccenter",
+  "originalGenerationId": "gen-job-1791906243898-1",
+  "marketGenerationId": "gen-job-1791908297175-4",
+  "definitionDigest": "sha256:96d1268362854eb00c309a4e526fe827c9e6ca0a73ec2b5f2c651a5b5ff9e086",
+  "definitionLauncherRuntimeAllFieldsSame": true,
+  "programFilesEach": 85,
+  "all84OtherCrossGenerationProgramsByteEqual": true,
+  "soleActualProgramByteDifference": {
+    "unins000.dat": {
+      "original": {
+        "sizeBytes": 18583,
+        "sha256": "db32e96f15e7225f09442dc25fcaadeac7d97014ebba8f20321850952fae817c"
+      },
+      "market": {
+        "sizeBytes": 18583,
+        "sha256": "e8d2033d417e25393bd38fa901f92830895d07efdbf8706873ef0fb75d8bdcc0"
+      }
+    }
+  },
+  "originalOutputPin": {
+    "sizeBytes": 97,
+    "sha256": "1950b07d562454b6eb80148d4df6e0c4773fc0b6c2b2ae4ef2e13c6f40129737"
+  },
+  "marketOutputPin": {
+    "sizeBytes": 93,
+    "sha256": "eef8c26d7f3502722fe4f3c55844da7fa07bdf95816cc0f26f0336ff8b703cbf"
+  },
+  "normalAcceptedGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "normalQuitMethod": "native File Exit menu",
+  "exit0NotSoleAcceptance": true,
+  "cachedSameVersionIpcUpdateAndExactRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "texniccenter",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "1668eb62-834b-4577-924f-9fed4ec2b21b",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791906243898-1",
+    "beforeRollbackCheckpointSavedReadBack": true,
+    "beforeRollbackCoreJobs": 533,
+    "beforeRollbackStoreRows": 155,
+    "afterRollbackCoreJobs": 533,
+    "afterRollbackStoreRows": 156,
+    "allOldFullFieldsPreserved": true,
+    "allGenerationRecordsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "801a25032911612df3e2aaaf327b4550a6e7c3d6b91b4ee078ff874fd689ba78",
+      "coreJobs": 533,
+      "fullStoreRows": 156
+    },
+    "rollbackGuiJobId": "job-1791909580518-7"
+  },
+  "thirdOriginalFreshEmptyExplicitSavedFileOpenAccepted": true,
+  "finalPrivateCheckpoint": {
+    "file": "after-final-restart.json",
+    "sha256": "4d816c5b64b81dc3779b64bef8251d9721cea7a1fcca92b72e44b6c160448042",
+    "coreJobs": 534,
+    "fullStoreRows": 156
+  },
+  "normalRestartAllSevenClassesAndPinsExact": true,
+  "candidateCatalogue": "catalogue/candidate-v76/tuf",
+  "rootVersion": 1,
+  "metadataVersion": 85,
+  "catalogueEntries": 70,
+  "entriesBreakdown": {
+    "apps": 68,
+    "fixtures": 2
+  },
+  "actualSignedTargets": 148,
+  "publicCatalogueJsonFiles": 81,
+  "originalPreviewPackPreserved": {
+    "metadataVersion": 85,
+    "candidateVersion": 76,
+    "rootVersion": 1,
+    "entriesPreview": 70,
+    "actualTargets": 148,
+    "files": 81,
+    "archiveSha256": "7bbbc68bc0813389559b3801da3a66ad8e423a7594b3398166e4d66eca2e0c0f",
+    "archiveSizeBytes": 1976320,
+    "receiptSha256": "939e9ebdfc2485cda1d48af1b97e194250ccf1c56b460547d1926602ef6ee98e",
+    "oldSignedTargets": 146,
+    "all145OldNonCatalogueSignedTargetPinsPreserved": true,
+    "changedOldTargets": [
+      "catalogue.json"
+    ],
+    "oldRole84DirectoryPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true,
+    "completedCountUnchanged": 67,
+    "pendingCountUnchanged": 17
+  },
+  "old145NonCatalogueTargetsAndRootBytesPreserved": true,
+  "original28SourceInstallationGuiStageLabelsFrozen": true,
+  "fullIdeCompilationOrGuiStoreButtonsAccepted": false,
+  "independentReviewNotGuestGuiOrPrivateFullCpReplay": true,
+  "gitIndexCommitPushSeparate": true
+}

@@ -1,0 +1,471 @@
+{
+  "applicationId": "texniccenter",
+  "generation": {
+    "bottleId": "gen-job-1791906243898-1",
+    "createdAtMilliseconds": 1791906243907,
+    "definition": {
+      "bottleId": "gui-texniccenter",
+      "category": "education",
+      "compatibilityRating": "unknown",
+      "id": "texniccenter",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\TeXnicCenter",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "TXCSetup_2.02Stable_Win32.exe",
+        "sha256": "bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78"
+      },
+      "launchers": [
+        {
+          "executable": "TeXnicCenter/TeXnicCenter.exe",
+          "id": "main",
+          "name": "TeXnicCenter"
+        }
+      ],
+      "name": "TeXnicCenter",
+      "publisher": "ToolsCenter",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "2.02"
+    },
+    "definitionDigest": "sha256:96d1268362854eb00c309a4e526fe827c9e6ca0a73ec2b5f2c651a5b5ff9e086",
+    "id": "gen-job-1791906243898-1",
+    "launcherDigests": {
+      "main": "sha256:0c4c4191bb1ab1d2199c5930be04729b7cdd3c087838cceecae5fb2915e882bb"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791906258099
+  },
+  "definition": {
+    "bottleId": "gui-texniccenter",
+    "category": "education",
+    "compatibilityRating": "unknown",
+    "id": "texniccenter",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\TeXnicCenter",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "TXCSetup_2.02Stable_Win32.exe",
+      "sha256": "bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78"
+    },
+    "launchers": [
+      {
+        "executable": "TeXnicCenter/TeXnicCenter.exe",
+        "id": "main",
+        "name": "TeXnicCenter"
+      }
+    ],
+    "name": "TeXnicCenter",
+    "publisher": "ToolsCenter",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "2.02"
+  },
+  "installedFiles": {
+    "TeXnicCenter.exe": {
+      "sizeBytes": 4120064,
+      "sha256": "0c4c4191bb1ab1d2199c5930be04729b7cdd3c087838cceecae5fb2915e882bb"
+    },
+    "GPL_english.htm": {
+      "sizeBytes": 19313,
+      "sha256": "0c962dab0f3deec9e30dddcf357a2b3ee6fbc41a8fdaac61eab135677561b374"
+    },
+    "unins000.exe": {
+      "sizeBytes": 1279177,
+      "sha256": "f0ec3f6dab6de4746b3f138b80fbee6413127ca4cade1a306fdbb5b602b1f4fb"
+    },
+    "OutputProfiles.xsd": {
+      "sizeBytes": 4700,
+      "sha256": "b80b36c95023285ace8534212965a4a3f8e4cce3c75521066857321c097e6946"
+    },
+    "Tips_english.txt": {
+      "sizeBytes": 7653,
+      "sha256": "d460d329746fdbc6c6e8b0b0bc0d639bad20b50f4bcff03660518400c2678c9a"
+    },
+    "Shared.dll": {
+      "sizeBytes": 14336,
+      "sha256": "cd7a3c0ca78484e9f507d7838e2e510bd537d4d50a68c3fa507b509ef964f4f3"
+    },
+    "LaTeXCommands.xsd": {
+      "sizeBytes": 1932,
+      "sha256": "ee51bc2f28dce1055870d9cc1bd0b99a33118357786a01b09d4e564d7df2cd99"
+    },
+    "Tips_german.txt": {
+      "sizeBytes": 9286,
+      "sha256": "59162a4902bb4bdf6d3e2a5a29df9630af67fa57372ce23aca7de369ba4d3236"
+    },
+    "GPL_german.htm": {
+      "sizeBytes": 28568,
+      "sha256": "e344fd543c3bb8005b7c19994ce2e1474840566479b26d67b1cd78c1d4a4723b"
+    },
+    "mfc100u.dll": {
+      "sizeBytes": 4422992,
+      "sha256": "bc50848aeef466dff4a3d8c386bf0d0ec35b8e5b438031ae885aa5371f2e1a42"
+    },
+    "CommonTypes.xsd": {
+      "sizeBytes": 560,
+      "sha256": "03f751838fef19244ffd774013e14c413a44a72f6d943ab3a84063d65f817a62"
+    },
+    "UserImages.bmp": {
+      "sizeBytes": 5038,
+      "sha256": "fc9c5bc4fe55db05a721751c0f14e5dde9c2fcdf8c314d5239462e802ac52a62"
+    },
+    "msvcr100.dll": {
+      "sizeBytes": 773968,
+      "sha256": "8793353461826fbd48f25ea8b835be204b758ce7510db2af631b28850355bd18"
+    },
+    "TeXnicCenterObjects.tlb": {
+      "sizeBytes": 3628,
+      "sha256": "3a7d9bbc1760da2ca8734775721563dbec1b1d6f00688c4685e4889249669de7"
+    },
+    "msvcp100.dll": {
+      "sizeBytes": 421200,
+      "sha256": "b2ad109c15eaa92079582787b7772ba0a2f034f7d075907ff87028df0eaea671"
+    },
+    "unins000.dat": {
+      "sizeBytes": 18583,
+      "sha256": "db32e96f15e7225f09442dc25fcaadeac7d97014ebba8f20321850952fae817c"
+    },
+    "Help/Latex2e.chm": {
+      "sizeBytes": 138750,
+      "sha256": "dac03aff7d34465834350995d45110bb78b141f5cd9ed98b25f32ae42cbab39b"
+    },
+    "Help/ClsGuide.chm": {
+      "sizeBytes": 61544,
+      "sha256": "44838f9f80cd85663168e237352d5d24c6189bff18ee47a9aafc47519c33ae57"
+    },
+    "Help/FntGuide.chm": {
+      "sizeBytes": 100475,
+      "sha256": "f58431a112caf221d26e5830011acd7d7e0bd5b398ebca69945e422045ca4cd2"
+    },
+    "Help/ModGuide.chm": {
+      "sizeBytes": 40338,
+      "sha256": "cfa933a7bdae7d0e089b72ee264f7e8c5793510d9e102f3988b4ce2348505b2b"
+    },
+    "Help/LatexHelpBook.chw": {
+      "sizeBytes": 178608,
+      "sha256": "5f9a6efadf684ca024bc31026e1eeecaae4906e58d635dc360ea55fbe2ecfec1"
+    },
+    "Help/Bibtex.chm": {
+      "sizeBytes": 76454,
+      "sha256": "b1bf02b6479f49e7b6cd925b00b8b6a21cf71815b1254a0c85a9dceba96f4780"
+    },
+    "Help/Amslatex.chm": {
+      "sizeBytes": 93062,
+      "sha256": "0ce34e77e1e578542624fdbcd9119307fc7f95282291502f2add8c3081134ad9"
+    },
+    "Help/CfgGuide.chm": {
+      "sizeBytes": 45422,
+      "sha256": "1f84c34ffcb46c6162be2580e845dc9645e1c92a5937e25ecc2dc14dbaad6e7f"
+    },
+    "Help/Latex.chm": {
+      "sizeBytes": 97032,
+      "sha256": "ee6607ef46ff90120bbb27772f75f8cf5baa52dfe174ae0ba1474c18a0a7ab92"
+    },
+    "Help/LatexAdv.chm": {
+      "sizeBytes": 177050,
+      "sha256": "0d57dfbb11dbac0ca75e4a7fbed38e383187a4eb51e4971a3ad91dfdb604c16b"
+    },
+    "Help/LatexMathsPix.chm": {
+      "sizeBytes": 106808,
+      "sha256": "f52f32b4d867403fa517aba17c21a1489e3529ab2a9421165aba19e4e723e9df"
+    },
+    "Help/Latex2eForAuthors.chm": {
+      "sizeBytes": 89108,
+      "sha256": "6d83d98b2636f26336b4180519aef13ad97e54c5a0249e94e3fcfff5e1c5217e"
+    },
+    "Help/LatexHelpBook.chm": {
+      "sizeBytes": 49461,
+      "sha256": "ca88259565ada1b62c85dd9d35509ec5424aa40a9693a9aa7c87f88a236dbc61"
+    },
+    "Help/MakeIndex.chm": {
+      "sizeBytes": 43605,
+      "sha256": "d4ee5c9260167f71436396f12f1f3566d4123c579277f14fac35e3709d63d30c"
+    },
+    "Help/TexCatalogue.chm": {
+      "sizeBytes": 489033,
+      "sha256": "35795ed2c641703689ebd7b717d1c1c5744a18320001c0dc9e1f4bb6c611f958"
+    },
+    "Help/TeXnicCenter.chm": {
+      "sizeBytes": 1255083,
+      "sha256": "30285be7909587475f865c36b77c600c969e2b69284f3001ea9003e44950b257"
+    },
+    "Help/FAQ.chm": {
+      "sizeBytes": 223400,
+      "sha256": "b955bb7b4a21c84883d8f810016397f8ea2f630b35cdc114848a9cf3877704b8"
+    },
+    "Packages/accents.bmp": {
+      "sizeBytes": 1318,
+      "sha256": "d40f8b0d67779e16dca0892eb7834be3a92ba3a4db216eca58a5af9293455625"
+    },
+    "Packages/symbols.bmp": {
+      "sizeBytes": 3478,
+      "sha256": "0039832ff39ecb58c7c16c46165448a20a80ec211877fc22bfc60bd18688def8"
+    },
+    "Packages/PSTricks.xml": {
+      "sizeBytes": 895,
+      "sha256": "3be254bc2e4f647ae68f9fb031f7f7ea978588ca3f9059eb439267e8b13f5942"
+    },
+    "Packages/TeX.xml": {
+      "sizeBytes": 12041,
+      "sha256": "d06bbf3fc566297f9f1ec2c831dffd6e1895792ffa8d4969d33d348a9bd9e322"
+    },
+    "Packages/symbols2.bmp": {
+      "sizeBytes": 2998,
+      "sha256": "6dad052635c22ed5a9f504e41086d42752f9bb9d1270483e28790826b9e42c1b"
+    },
+    "Packages/base.xml": {
+      "sizeBytes": 9553,
+      "sha256": "5e5b94bfe352fb2f2f1915884040e155856b3590bd42c39df04ee374bb409b27"
+    },
+    "Packages/sets.bmp": {
+      "sizeBytes": 2038,
+      "sha256": "10c723126b353fc8aec2de50c071fe373ad1a1c5a6784ab92ff6fd615fdbbce6"
+    },
+    "Packages/beamer.xml": {
+      "sizeBytes": 1641,
+      "sha256": "ca5f7767ec57d8ba5212857b715624db9e94a3ea39c95496a82f33dde3380a15"
+    },
+    "Packages/format.bmp": {
+      "sizeBytes": 3598,
+      "sha256": "a2973292609f4523f6a86d7ae2c70839bd121af8a2c02eeae3293b5fe7009c3f"
+    },
+    "Packages/binops.bmp": {
+      "sizeBytes": 1438,
+      "sha256": "b57f61d341886e78f3070a5b502b917e21b92d9e1c72e449341f545eb121ad8c"
+    },
+    "Packages/math.xml": {
+      "sizeBytes": 20170,
+      "sha256": "60f545e4267733023fabc774fb7166fdbe461c5adf3e8e5babf062df5b435298"
+    },
+    "Packages/mathmisc.bmp": {
+      "sizeBytes": 2398,
+      "sha256": "77e25a5202900c1aa8c00cd0de3b21de227912e7e8f632525a627d2059aa806f"
+    },
+    "Packages/arrows.bmp": {
+      "sizeBytes": 3838,
+      "sha256": "70d9e6f31f01cf363da8c6159547b7cda65cba76e21210ba5a7c27dcd5f5fcce"
+    },
+    "Packages/TikZ.xml": {
+      "sizeBytes": 796,
+      "sha256": "47cd53ca8bc4879c0667101e547a9254d3cf4147ecc9f67c7e08ba5c6426f4e8"
+    },
+    "Language/TxcResEnglish.dll": {
+      "sizeBytes": 994816,
+      "sha256": "2bca091b2187f371d25458aacd8d530cd87f97af013573f784f226d92216980b"
+    },
+    "Language/TxcResDeutsch.dll": {
+      "sizeBytes": 1010688,
+      "sha256": "03edbe6fbcab9f72f1f9bc845d7cbd7f6cfb8de37d5fbdf7b55c6433c1087552"
+    },
+    "Dictionaries/en_GB.aff": {
+      "sizeBytes": 74492,
+      "sha256": "a564059427ba8565d0ec99c7d0b3f17879fcc433f18528ba88dd0b1b56cad5df"
+    },
+    "Dictionaries/de_DE.dic": {
+      "sizeBytes": 3595546,
+      "sha256": "bd90c08d10254d77ca12a1b32fda72098da00be6cd8b803e991d60a99fc66aaa"
+    },
+    "Dictionaries/en_US.aff": {
+      "sizeBytes": 64145,
+      "sha256": "41f5deb682c25c3d1a9c5fbe2a538b5e112de0084a1a9fe8ceb4c4dfe400af0f"
+    },
+    "Dictionaries/de_DE.aff": {
+      "sizeBytes": 18725,
+      "sha256": "17217b96532c734d50bd9802f635d2e012deb448d06105cc0331043652f83439"
+    },
+    "Dictionaries/en_US.dic": {
+      "sizeBytes": 641025,
+      "sha256": "dc47b8cbd67e32cb3e1d45747f130c02331ca3924d63676f7f48e40d0764dbb3"
+    },
+    "Dictionaries/en_GB.dic": {
+      "sizeBytes": 701646,
+      "sha256": "3c82a0e0354c850f2a3bbe6ed570e4fb16bac7bd8a3e8190a3d3eb9dbc3aa801"
+    },
+    "Templates/Documents/Deutsch/OptionenAbkurzungen.tex": {
+      "sizeBytes": 1163,
+      "sha256": "dae476cd034a947b1459ab255445c02ee7209a718ca5b29e2d4554ac78269ea0"
+    },
+    "Templates/Documents/Deutsch/OptionenLayout.tex": {
+      "sizeBytes": 1626,
+      "sha256": "5ba1d6d20ee6afea8656e033a5969a1d5cb4ddea3fa1c57bc3542ce406b89c58"
+    },
+    "Templates/Documents/Deutsch/Deckblatt.tex": {
+      "sizeBytes": 1037,
+      "sha256": "be7bfcdb917b31ac4a167e4d29d6deedb515db64637543cbb4aeaa866019556e"
+    },
+    "Templates/Documents/Deutsch erweitert/OptionenMath.tex": {
+      "sizeBytes": 2528,
+      "sha256": "926954be4da38e9dee84c1aecaa17c870fbf417608c2668824e4f7540b303065"
+    },
+    "Templates/Documents/Deutsch erweitert/PDFInfos.tex": {
+      "sizeBytes": 1644,
+      "sha256": "1c7f0712e854c7a134fe8d97b1924a9b6f77d73737a4fc5f613317d1df017c1e"
+    },
+    "Templates/Documents/Deutsch erweitert/OptionenErweitert.tex": {
+      "sizeBytes": 2950,
+      "sha256": "faf7fb6457123d82ccf06a6f1fdca1c1edb0a579c56af1666d48b6172f7caeb1"
+    },
+    "Templates/Documents/English/Titlepage.tex": {
+      "sizeBytes": 980,
+      "sha256": "f2d35de687ae657f6553ae7450000a64e7244f559c6d7247bd9a996645733b52"
+    },
+    "Templates/Documents/English/OptionsLayout.tex": {
+      "sizeBytes": 1520,
+      "sha256": "a16dd52aaaf5cd5b40b5d8e8811866c6b5f56cef08617448b80f9af36e0d83ef"
+    },
+    "Templates/Documents/English/OptionsAbbreviations.tex": {
+      "sizeBytes": 1079,
+      "sha256": "d4b048eae43e4a84f36f828d520b393b76bdfe2013ac6e2d71636502ff0109f4"
+    },
+    "Templates/Documents/English advanced/PDFInfos.tex": {
+      "sizeBytes": 1482,
+      "sha256": "5c1499bd22b377d49713bd17ce96aa2cf57a446aeab618171f9f587263d66835"
+    },
+    "Templates/Documents/English advanced/OptionsAdvanced.tex": {
+      "sizeBytes": 2778,
+      "sha256": "a7527bb4dd86e52005a7a685d2102a36f5fc0025514534b09e959b6525f24d6b"
+    },
+    "Templates/Documents/English advanced/OptionsMath.tex": {
+      "sizeBytes": 2455,
+      "sha256": "340befc59b203e4c93f63a7adea18ab99052ca9e3ea8493833419ad33cb74dc3"
+    },
+    "Templates/Projects/Deutsch/KOMA-Brief.tex": {
+      "sizeBytes": 3683,
+      "sha256": "ecbf20aa3e4454f8accbfa184c80850862f63eb457b9607ae31da80d5b862f0b"
+    },
+    "Templates/Projects/Deutsch/KOMAArtikel.tex": {
+      "sizeBytes": 6997,
+      "sha256": "f816e9e2ff55fa42f97609d1043880fd6a5e5f1aea2a10ea1cc82b2958d92c7a"
+    },
+    "Templates/Projects/Deutsch/lebenslauf.tex": {
+      "sizeBytes": 4796,
+      "sha256": "490a663440dee3a35eac03560ba8bde455a47fe16702bc33be439b490eefd002"
+    },
+    "Templates/Projects/Deutsch/Report.tex": {
+      "sizeBytes": 6995,
+      "sha256": "0a5ac51455f77082a690fe46a4aaa90ae7d69cbf46d5ddf4d6da379aa4f13c76"
+    },
+    "Templates/Projects/Deutsch/Brief.tex": {
+      "sizeBytes": 4653,
+      "sha256": "2fa1ebdc27184ee0281d310c9a4699f4f3ef622b6730f4c2a914bf990f5335b1"
+    },
+    "Templates/Projects/Deutsch erweitert/KOMABuch.tex": {
+      "sizeBytes": 7802,
+      "sha256": "5295f5eae4fc1abc4a54a512f6aa6e38d6806aa0c14d1e20150588b1925bc0f3"
+    },
+    "Templates/Projects/Deutsch erweitert/prospereinfach.tex": {
+      "sizeBytes": 3796,
+      "sha256": "218034a53128a7366bc9c3f88c12b685e3859fa73b6ba2dae0ccc999449c587a"
+    },
+    "Templates/Projects/English/Letter.tex": {
+      "sizeBytes": 4460,
+      "sha256": "efa2f70f44a67f2029e4bdc88c4266d046be24912941647e9acad4d9c892a3fc"
+    },
+    "Templates/Projects/English/Slides.tex": {
+      "sizeBytes": 2940,
+      "sha256": "b7c2457ba6ef4aceedd36ca760642aeefcac588b12272e4d7d2f93a6acd06d28"
+    },
+    "Templates/Projects/English/Report.tex": {
+      "sizeBytes": 6490,
+      "sha256": "a2affe6fa5173da4b70e2e8b0264f0974a9a067fb11b31d4bfada8dcb02b5e93"
+    },
+    "Templates/Projects/English advanced/Mathematical Book.tex": {
+      "sizeBytes": 13096,
+      "sha256": "f504755b955a8bc05995393a651c0fdf6ba01df8feee2f1dceb8c03ec872a08e"
+    },
+    "Templates/Projects/English advanced/Basic Article.tex": {
+      "sizeBytes": 11861,
+      "sha256": "7ca12014538354fa3ead54d49f4f587de46b81999361187cf79ea169ceb089ac"
+    },
+    "Templates/Projects/English advanced/Simple Report.tex": {
+      "sizeBytes": 12074,
+      "sha256": "ad944bdf7e42125382eaa7763cd0753b46c673c5a2a2021d267ea19e8cc91830"
+    },
+    "Templates/Projects/English advanced/Book.tex": {
+      "sizeBytes": 13512,
+      "sha256": "fd189fdd6d7ebefaa4c7a0647e2d496218718f436843795194400531a33ea5ac"
+    },
+    "Templates/Projects/English advanced/Technical Report.tex": {
+      "sizeBytes": 13797,
+      "sha256": "f77d55719b2df66ffd2ab7f7b4de9aafe151441c3f40d29f8d5f78396bc90636"
+    },
+    "Templates/Projects/English advanced/Mathematical Article.tex": {
+      "sizeBytes": 12871,
+      "sha256": "c750de3d8dec8060d75b01d14658497f5f8b90913d4bbf41b3cabfd3c3bb17e4"
+    },
+    "Templates/Projects/English advanced/Foils.tex": {
+      "sizeBytes": 13102,
+      "sha256": "e982f7a0c8e3108e6fe9f1945f22ccea3f893bb3cc04968885be94786161859a"
+    },
+    "Templates/Projects/English advanced/Simple Letter.tex": {
+      "sizeBytes": 3902,
+      "sha256": "8b1fef576c6766b3c0ef7f34c3bfa66c5bd9f1eb911210bbb143196dbb1d6f08"
+    }
+  },
+  "onlyOneOriginalInstall": true,
+  "mainExeSizeNotWholeApplicationSize": true,
+  "installedLicenseComparison": {
+    "sameAllRawBytes": true,
+    "sizeBytes": 19313,
+    "sha256": "0c962dab0f3deec9e30dddcf357a2b3ee6fbc41a8fdaac61eab135677561b374"
+  },
+  "limits": [
+    "Only one small Chinese-name UTF8 BOM/CRLF TEX per role: native C-drive tree Open, single STATUS BEFORE to AFTER edit and ASCII marker append, native Save as, fresh formal empty editor explicit Open. No LaTeX compiler, toolchain installation, build, link, PDF rendering, full IDE/editor/TeX specification, project, advanced editing, direct Chinese keyboard, broad Unicode/format/large-bad-input, printing, network/background exclusion, registration/migration/unattended or GUI Store buttons acceptance. Synthetic TEX not a separate app.",
+    "Original86B input preserved; native original.tex97B UTF8 BOM/fiveCRLF whole bytes independently reconstructed from immutable input. Native File/Exit normal0+wineserver stopped twice is not acceptance alone. Original About actual2.02 Stable(32 bit); market About not yet tested. Default English/Chinese filename readable. First English notice OK, every configuration wizard cancelled with no output profiles/TeX distribution configured, tips startup checkbox retained. Not unattended.",
+    "Uppercase typeText first produced lowercase after in unsubmitted buffer; explicit Shift keys corrected before save. No generic keyboard repair. noVNC stale/black painting refreshed only ordinary browser reload/reconnect and normal window move;02 old caption screenshot retained only diagnostic,02b actual original.tex. No application/runtime/driver repair claimed.",
+    "Official fixed Win32 installer12198304B complete HTTPS200/ContentLength/localSHA; fixed Git Release2.02 reference a1aa073a4a5b308bd124b55e6090263bbc9c248e codeload26070815B complete HTTPS200 without ContentLength/localSHA. Final HTTPS scheme checked privately without copying exact redirect query. All2901 unique ZIP members/2766 regular files CRC verified,14 selected source raw only. Version.h actual2.01 under Release2.02 and setup TARGET_x64 default retained; not proof of Win32 binary/source correspondence. No upstream SHA/API assetdigest/PGP/Authenticode/repro/latest verification.",
+    "Main TeXnicCenter.cpp GPL2-or-later. Installed GPL_english.htm19313B only exact selected source same raw; source License.txt/GPL.rtf separately retained. Full MFC/MSVC/Hunspell/Scintilla/MSXML/libiconv/dictionaries/icons/translations closure not verified. Two actual Inno5.5.0 markers/bootstrap/mainPE0x14c; native DIR20 UTF8B single backslash plus /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /NOICONS /TASKS=. No complete Inno/UAC/association/shortcut/uninstall behavior verification. Main4120064B not whole app size.",
+    "85 programs per original strictly pinned, three registry plus selected TeXnicCenter-named ProgramData/prefix-user files only, not all FS. Actual before/after registry/config raw and diffs privately saved; cause/semantic equivalence not established, first discovery not creation time. Complete530Core/154Store seven-class CP saved/readback before market; recent64 IPC not fullSQLite, Core queries may write existing scratch. No Core/program/globalcontext/definition/launcher env/cwd/newfont/globalDLL/runtime repair.",
+    "Candidate public-builder V1 wrong installer schema KeyError stopped before all public writes/sign/transfer/activation; actual results/file schema V2 corrected. Source-selector wrong Configuration.cpp assertion stopped before selected-source write or guest operation, corrected from actual ZIP members. GetContent guessed PN helper missing only tool history, no fabricated exactraw. GitHub tags web tool/direct SF info access errors only research, official public git ls-remote then fixed codeload used once. wxMEdit archives-only research no download/install/task/count/pending. No duplicate TeXnicCenter GET/install. All earlier failures/helpers/trust/signature/freeze/history and Scribus one private canonicalV1 raw loss retained, no fabrication.",
+    "Natural lock normal fresh complete masked field once submitted per prior authorization; authentication/lockscreen/power settings unchanged, no bypass, no password/login image saved. Private CP/credentials/password/privatekeys/exact signed redirect query not public. UbuntuKateAPT/Snapcalculator2 independently counted, Flatpak two runtime timeouts/cache held; UbuntuVM not run, two4GiB VMs not concurrent."
+  ]
+}
