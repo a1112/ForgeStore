@@ -1,0 +1,148 @@
+{
+  "applicationId": "qmmp",
+  "version": "1.6.8",
+  "officialProject": "https://qmmp.ylsoftware.com/",
+  "installer": {
+    "file": "qmmp-1.6.8-win32.exe",
+    "requestedUrl": "https://qmmp.ylsoftware.com/files/windows/1.6/qmmp-1.6.8-win32.exe",
+    "complete": true,
+    "formalTaskCreated": false,
+    "status": 200,
+    "contentLength": 19615672,
+    "sizeBytes": 19615672,
+    "sha256": "641a2ba33795d52eb891dcdf0f71c53e024a487612a3ffde142137d79bef365e",
+    "upstreamDisplayedSha256Matched": true,
+    "elapsedSeconds": 3.047
+  },
+  "sourceArchive": {
+    "file": "qmmp-1.6.8.tar.bz2",
+    "requestedUrl": "https://qmmp.ylsoftware.com/files/qmmp/1.6/qmmp-1.6.8.tar.bz2",
+    "complete": true,
+    "formalTaskCreated": false,
+    "status": 200,
+    "contentLength": 1375048,
+    "sizeBytes": 1375048,
+    "sha256": "50da39f9d73ca385171ca4eda6a475613eb5409d5df0785e03108ead59fe1ecd",
+    "upstreamDisplayedSha256Matched": true,
+    "elapsedSeconds": 1.938
+  },
+  "officialWebObservations": {
+    "applicationId": "qmmp",
+    "version": "1.6.8",
+    "officialDownloadPage": "https://qmmp.ylsoftware.com/downloads.php",
+    "officialWindowsFixedListing": "https://qmmp.ylsoftware.com/files/windows/1.6/",
+    "officialSourceFixedListing": "https://qmmp.ylsoftware.com/files/qmmp/1.6/",
+    "installerSourceForgeSha256Page": "https://sourceforge.net/projects/qmmp-dev/files/windows/1.6/qmmp-1.6.8-win32.exe/download",
+    "sourceSourceForgeSha256Page": "https://sourceforge.net/projects/qmmp-dev/files/qmmp/1.6/qmmp-1.6.8.tar.bz2/download",
+    "displayedInstallerSha256": "641a2ba33795d52eb891dcdf0f71c53e024a487612a3ffde142137d79bef365e",
+    "displayedSourceSha256": "50da39f9d73ca385171ca4eda6a475613eb5409d5df0785e03108ead59fe1ecd",
+    "observationsAreWebToolTextNotRawHtml": true,
+    "latestClaimed": false,
+    "sourceBinaryCorrespondenceVerified": false,
+    "hostReadAttemptMissingPnotepadDownloadHelper": "pnotepad-download-fixed-20261013.py",
+    "missingHelperWasNotExecutedOrPackageFailure": true
+  },
+  "staticInspection": {
+    "passed": true,
+    "version": "1.6.8",
+    "archiveMembers": 3820,
+    "regularFiles": 3627,
+    "selectedSourceMembers": {
+      "COPYING": {
+        "sizeBytes": 18092,
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      },
+      "COPYING.CC-by-sa_V4": {
+        "sizeBytes": 20076,
+        "sha256": "2163bb1841a081b0be435370116e75d8b4baa9576e879268e112dfd51dd342c8"
+      },
+      "README": {
+        "sizeBytes": 6223,
+        "sha256": "eb5b2ed14e54573171eda33b26c74f4fc4ab771f82858e673181a327ae333627"
+      },
+      "CMakeLists.txt": {
+        "sizeBytes": 11400,
+        "sha256": "22e932c40f47da6a05a98320f477ba71ded3481da8e7fcce71b337b7de4cff6d"
+      },
+      "src/app/main.cpp": {
+        "sizeBytes": 3428,
+        "sha256": "e576581ec6ae7fe865bb301373f3fa757a43cc03ee14e95c49e1765a51ba7e40"
+      },
+      "src/qmmp/qmmp.h": {
+        "sizeBytes": 7832,
+        "sha256": "9f902476ddfda1a4df349d2034b6b99121b3065a8cd70d3d8b218d4386ba642c"
+      },
+      "src/qmmpui/qmmpuisettings.cpp": {
+        "sizeBytes": 9948,
+        "sha256": "2e86a40fc3db794d0c9b3c58b427ee08f063e543095ac9f9b5d673ef1e726328"
+      },
+      "src/qmmpui/playlistformat.h": {
+        "sizeBytes": 2941,
+        "sha256": "7ba35e826c8953cf43d258b6f6d2a4421ac2ac8c2a587afe2e811841ff51f7e9"
+      },
+      "src/plugins/PlayListFormats/m3u/m3uplaylistformat.cpp": {
+        "sizeBytes": 4133,
+        "sha256": "284495e2784d995cb85d0a80e2d163ca57b2c88fdaca937a04b005848d5be875"
+      },
+      "src/plugins/PlayListFormats/xspf/xspfplaylistformat.cpp": {
+        "sizeBytes": 6332,
+        "sha256": "4ab8e93d1f419bad6a02a51d218c73fc1782bcb16873edda738aca4a786aba3a"
+      },
+      "src/plugins/PlayListFormats/pls/plsplaylistformat.cpp": {
+        "sizeBytes": 5229,
+        "sha256": "ecb8016aefc3f5785e5c45775c703dd11f9703862aa3771451ff6bbeb04f1205"
+      },
+      "src/plugins/Ui/skinned/skinnedsettings.cpp": {
+        "sizeBytes": 15805,
+        "sha256": "b14e10aef8a92bbffeace6a257eb4569344eed4fff92352bdfedac6cb5b72c55"
+      },
+      "src/plugins/Ui/qsui/qsuisettings.cpp": {
+        "sizeBytes": 14376,
+        "sha256": "52f6e09d34ed3eb34faad3aea2dbdf4dbf272acc8e1cd411a95631408e4939d4"
+      }
+    },
+    "mainSourceLicense": "GPL-2.0-or-later",
+    "mainLicenseEvidence": "src/app/main.cpp",
+    "otherCcBySaNoticePreserved": true,
+    "completeBundledLicenseClosureVerified": false,
+    "officialSourceMd5Matched": true,
+    "md5IsStrongCryptographicAuthenticityEvidence": false,
+    "installerSizeBytes": 19615672,
+    "installerSha256": "641a2ba33795d52eb891dcdf0f71c53e024a487612a3ffde142137d79bef365e",
+    "installerBootstrapPeMachine": "0x14c",
+    "installerSevenZipType": "Nsis",
+    "actualSevenZipListSha256": "58a3f56888db212febacc0924df1d0211d55ee87c574ecac5a3eca2f8cdbade0",
+    "actualSevenZipExitCode": 0,
+    "completeNsisFormatOrInstallBehaviorVerified": false,
+    "noDefinitionTaskOrInstallation": true,
+    "priorV1Md5FilenameAssertionFailed": true,
+    "actualOfficialMd5BinaryMarkerPreserved": true,
+    "priorV1HelperSha256": "70eb9a5b9806847b13f5bf230bcb25414391b4b413537bf0800164620878fc45",
+    "priorExactFailureTraceIndependentlySaved": false,
+    "priorFailureTraceScope": "tool history only; no fabricated standalone raw"
+  },
+  "nativeNsisDocumentation": "https://nsis.sourceforge.io/Docs/Chapter3.html#installerusage",
+  "nativeArguments": [
+    "/S",
+    "/D=C:\\Qmmp"
+  ],
+  "directoryUtf8Bytes": 10,
+  "directoryUtf8Hex": "2f443d433a5c516d6d70",
+  "noNcrcFlag": true,
+  "mainInstalledLicenseExactSourceBytesEqual": true,
+  "mainLicensePin": {
+    "sizeBytes": 18092,
+    "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+  },
+  "installedMainMachine": "0x14c",
+  "fullBundleLicenseClosureVerified": false,
+  "staticTypeNotCompleteWindowsUacAssociationShortcutOrInstallBehavior": true,
+  "noPublicInstallerOrProgramBinary": true,
+  "privateFullCpHttpResponsesQueriesKeysCredentialsAndLoginImagesNotPublic": true,
+  "limits": [
+    "Only two tiny Chinese-name PCM WAV inputs, native Add File B then A through C-drive tree, mouse reorder A,B, native Save List to 91-byte UTF-8 no-BOM LF original.m3u and new formal process New List then explicit Load List. Each track shows0:02. No hearing, playback device, complete player, audio DSP, streaming, metadata editing, library, codecs, CD, recording/transcoding, plugins, other playlist formats, malformed/large files, printing, direct Chinese keyboard, networking, registration, migration, cross-version, unattended or GUI Store buttons accepted. Background networking not excluded.",
+    "Default skinned UI kept; Chinese names readable in native file list and this small playlist. Original About Qmmp1.6.8 Qt5.15.13 compiled Qt5.15.13; market About not independently measured. No Core/program/globalcontext/definition/launcher env/cwd/font/global DLL/runtime repair.",
+    "Both official fixed installer and source complete HTTPS200 Content-Length and official SourceForge displayed SHA256 matched; observations web-tool text not raw HTML. MD5 is only an additional weak check. Main GPL2-or-later and installed COPYING.txt exact18092 bytes equal selected source. CC-by-sa notice retained. Full bundled Qt/codecs/FFmpeg/TagLib/SDL/DirectSound/art/icons/translations licence closure, PGP/Authenticode/API digest/source-binary/repro/latest unverified.",
+    "Two normal CtrlQ exit0 plus wineserver stop are supporting evidence, not standalone acceptance. Scope only fixed files, all2166 installed programs, three registry files and selected Qmmp-named configuration, not whole application filesystem. Original signed marketPending stage frozen; later market completion recorded separately."
+  ]
+}

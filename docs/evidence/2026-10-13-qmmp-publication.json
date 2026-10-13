@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "acceptedDistinctWindowsApps": 64,
+  "old17PendingCandidatesUnchanged": true,
+  "addedApplication": "qmmp",
+  "originalGenerationId": "gen-job-1791850231647-1",
+  "marketGenerationId": "gen-job-1791850944329-4",
+  "definitionDigest": "sha256:4f246f7d692a98c7b716f91b4047f478acace13ec79cd493f2c77d9f36851dc3",
+  "bothGenerationsDefinitionLauncherRuntimeEqual": true,
+  "programFileCountEach": 2166,
+  "all2166CrossGenerationProgramFilesByteEqual": true,
+  "originalOutputPin": {
+    "sizeBytes": 91,
+    "sha256": "70a03edd1ed7aa0a8caffba708eadf353a2f64cf6f8ca2838668475a08b94c95"
+  },
+  "marketOutputPin": {
+    "sizeBytes": 91,
+    "sha256": "cb9c7ba337e527df2415b00f04a878ef936a3134876e3122600564dc629a4ca8"
+  },
+  "normalAcceptedGuiExitCodes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "normalExit0NotSoleAcceptanceBasis": true,
+  "ipcCachedSameVersionUpdateAndExactOriginalRollback": {
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "qmmp",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "66a8d227-bb7e-4052-aae5-05741f783bc3",
+      "state": "succeeded"
+    },
+    "exactOriginalGenerationRestored": true,
+    "selectedGeneration": "gen-job-1791850231647-1",
+    "beforeRollbackCheckpointSavedReadBack": true,
+    "beforeRollbackCoreJobs": 505,
+    "beforeRollbackStoreRows": 147,
+    "afterRollbackCoreJobs": 505,
+    "afterRollbackStoreRows": 148,
+    "allOldFullFieldsPreserved": true,
+    "allGenerationRecordsPreserved": true,
+    "checkpoint": {
+      "file": "after-rollback.json",
+      "sha256": "4aa6805fd5d7f39a783c272a46409ad98fbc47acf122a91e7470af0beac40658",
+      "coreJobs": 505,
+      "fullStoreRows": 148
+    },
+    "rollbackGuiJobId": "job-1791851601925-7"
+  },
+  "thirdOriginalExplicitOutputLoadPassed": true,
+  "finalPrivateCheckpoint": {
+    "file": "after-final-restart.json",
+    "sha256": "9842d3de634d673c7cb3df7b64079b24be1472df5822de49e32280ce78afdf00",
+    "coreJobs": 506,
+    "fullStoreRows": 148
+  },
+  "finalNormalRestartFullSevenClassEqualityPassed": true,
+  "candidateCatalogue": "catalogue/candidate-v72/tuf",
+  "rootVersion": 1,
+  "metadataVersion": 81,
+  "catalogueEntries": 66,
+  "entriesBreakdown": {
+    "apps": 64,
+    "fixtures": 2
+  },
+  "actualSignedTargets": 140,
+  "publicCatalogueJsonFiles": 77,
+  "packOriginalPreviewStagePreserved": {
+    "metadataVersion": 81,
+    "rootVersion": 1,
+    "entriesPreview": 66,
+    "actualTargets": 140,
+    "files": 77,
+    "archiveSha256": "2e177a3cf02bc1488d89fdd08f4b6a940bc8aa35e1512a4317abf47b085bc231",
+    "archiveSizeBytes": 1925120,
+    "receiptSha256": "27a4afb925340e30037bc2ff99f0b1d5190ddd35b3fae1ebb7a766bb1e3d86c1",
+    "oldSignedTargets": 138,
+    "all137OldNonCatalogueSignedTargetPinsPreserved": true,
+    "changedOldTargets": [
+      "catalogue.json"
+    ],
+    "oldRole80DirectoryPreserved": true,
+    "rootBytesPreserved": true,
+    "tuftool017ExplicitRootDownloadVerified": true,
+    "unsafeOrExpiredFlagsUsed": false,
+    "guestActivated": false,
+    "marketLifecyclePending": true,
+    "completedCountUnchanged": 63,
+    "pendingCountUnchanged": 17
+  },
+  "rootBytesAnd137OldNonCatalogueTargetsPreserved": true,
+  "original28FrozenMarketPendingStageFilesAndLabelsUnchanged": true,
+  "hearingPlaybackAudioDeviceFullPlayerAdvancedFormatsNetworkMigrationUnattendedOrGuiStoreButtonsAccepted": false,
+  "independentReviewNotGuestGuiOrPrivateFullCheckpointReplay": true,
+  "gitByteIndexCommitPushSeparate": true
+}

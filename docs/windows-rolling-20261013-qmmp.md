@@ -1,0 +1,21 @@
+# Qmmp 1.6.8 Windows 有限播放列表验收（2026-10-13）
+
+新增一款，累计64/1000；旧63款与17项pending全部字段保持。仅有限播放列表及Store IPC生命周期通过，不称听音、播放设备或完整播放器验收。合成WAV/M3U不另计应用。Ubuntu Kate/APT和Snap计算器两款独立记账，Flatpak两次runtime超时未安装，缓存保持；本轮未运行UbuntuVM，两4GiB VM未同时运行。
+
+原正式代次gen-job-1791850231647-1、独立市场gen-job-1791850944329-4，定义sha256:4f246f7d692a98c7b716f91b4047f478acace13ec79cd493f2c77d9f36851dc3，两代次definition/launcher/runtime全字段同。每代次两个中文名32044B小PCM WAV，8000Hz单声道16bit16000帧两秒。原生Add File经MyComputer/C盘/QmmpTests树先B后A，真实拖A到首行。默认skinned界面保持，中文文件名和小列表可读，每条0:02；未实测总时长。原生Save List保存ASCII original.m3u/market.m3u；两个新正式进程先New List空列表，再显式Load List双击保存文件；精确回滚后第三原同样显式Load。自动恢复列表不作显式加载证明。五次正常原生菜单所示CtrlQ退出0且wineserver停止，exit0不是单独验收。
+
+两输出各91B，UTF8无BOM、四LF、无末尾LF。原SHA 70a03edd1ed7aa0a8caffba708eadf353a2f64cf6f8ca2838668475a08b94c95，市场SHA cb9c7ba337e527df2415b00f04a878ef936a3134876e3122600564dc629a4ca8。宿主从实际不可变输入文件名及stdlib wave参数独立重构全部M3U字节，A/B相对路径、两EXTINF:2与名称精确匹配；只是有限M3U/PCM核对，不是完整规范。输入与输出跨新进程、回滚和正常重启保持。原About实际Qmmp1.6.8/Qt5.15.13 compiledQt5.15.13，市场About未另测。听音/播放设备/DSP/完整播放器/广泛格式/metadata/library/stream/CD/transcode/plugins/大坏文件/打印/直接中文键盘/联网/注册/迁移跨版本/无人值守/GUI市场按钮未验收，不称后台联网不存在。无Core/程序/globalcontext/definition/launcher环境cwd/新字体/全局DLL/runtime修复。
+
+官方固定installer19615672B SHA641a2ba33795d52eb891dcdf0f71c53e024a487612a3ffde142137d79bef365e，source1375048B SHA50da39f9d73ca385171ca4eda6a475613eb5409d5df0785e03108ead59fe1ecd，均完整HTTPS200/ContentLength，并匹配官方SourceForge显示SHA；观察为web工具文本非原HTML。53B官方MD5 binary-marker原文只额外弱校验，不当强真实性。两GET全终态后才一次原安装和唯一市场安装，缓存与13固定源成员保持，不重复GET。3820唯一归档成员实3627常规文件，不称剩余全目录。主GPL2-or-later；安装COPYING18092B与选定源全原字节同，SHA8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643。CC-by-SA安装20502B与源20076B分别保留，不作同文比较；完整Qt/codecs/FFmpeg/TagLib/SDL/DirectSound/icons/translations闭包、PGP/Authenticode/API digest/源码二进制对应/可复现/latest未核。
+
+实际7z Type Nsis、bootstrap及main PE0x14c，非完整NSIS/UAC/关联/快捷方式安装行为验证。原生/S最后/D=C:后一个反斜杠Qmmp，DIR10UTF8B hex2f443d433a5c516d6d70，无/NCRC。两代次2166程序全部同字节，qmmp.exe300544B SHA2fce3520e05d69997b49030ed8a265c4cf4bdd66bcb95513f142c48a0143291c，不当整个应用大小。程序跨GUI/回滚/restart保持。
+
+候选candidate72/root1/role81，66entries=64apps+2fixtures、140实际signedtargets、77公共JSON；公共无binary。旧138中137非catalogue targets原字节同，仅catalogue新增Qmmp及installer/receipt；root/role80及全部失败签名信任历史保持，不回退trustcache。原28source/gui/acceptance与marketPending标签冻结，完成另记。原stageV1错期望76而实际77，解包前断言失败；随后一次依赖激活被误继续发起，在不存在根元数据FileNotFound处、任何dropin写或服务restart前停止。两exact stderr及旧helpers保留，不称全部历史依赖门槛有效。只读V2核77manifest/78tar成员后stage和activation通过，无重签/重传/GET/guard放松。
+
+市场GUI后505Core/147完整Store全字段CP先保存读回才IPC精确回滚，505/148旧字段与全部代次保持。第三原之后506/148完整CP保存读回、正常Core/Store各restart一次，七类全部字段与实际新pins保持。当前完整私有CP qmmp-20261013/after-final-restart.json SHA9842d3de634d673c7cb3df7b64079b24be1472df5822de49e32280ce78afdf00，不入库。当前只读rolling-current-state-qmmp-20261013.py须经rolling-guest-20261010.py严格SSH发送stdin执行，不要求hosthelper客体落盘。
+
+第三原system.reg3426549B/user.reg101488B同大小字节变，playlist.txt555→727B；实际前后raw与287/20/45行私有diff保存，原因/键值等价未定。先只读观察无CP/restart，再固定actualnewpins；不称旧registry/config跨第三GUI同字节。只固定输入输出、两2166程序、三registry和selected Qmmp命名prefix-user配置，非全FS；首次发现不证明创建时间，最近64IPC不替代完整SQLite，Core查询可写既有scratch。市场allpins保持。
+
+原MD5 filename plain假设断言、缺猜helper/截断/host选择字段失败和全部工具历史保持，不当检查通过。未执行draft的市场私有目录/原输出prose映射及current-builder broad80→81改变power摘要已在首次执行前由新V2修正，旧draft保留，不补造客体失败。旧Scribus一份私有canonicalV1失败raw丢失不伪造恢复；旧Aegisub及本轮Edge inventory工具历史曾显示query/认证callback范围保持，不重复或复制。密码/凭据/私钥/登录画面/完整私有CP/精确redirectquery不入库。8JPEG中03About仅诊断，其余实际输入顺序、SaveList、新进程Load、回滚原Load，无login图。
+
+独立FINAL审查与真实Git raw/filter/relative-no-index/index/commit/普通push另记；独立审查不代替客体GUI或私有完整CP重演。保持Greenfish/Zim/CopyQ/BowPad/Aegisub未验收，Texmaker source-only架构guard不放松。所有旧冻结证据、失败、签名和信任历史保持。

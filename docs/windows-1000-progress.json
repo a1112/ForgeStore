@@ -638,6 +638,15 @@
       "signedCatalogue": "catalogue/candidate-v71/tuf",
       "publication": "docs/evidence/2026-10-13-pnotepad-publication.json",
       "limitation": "Only Chinese-name38B UTF8 BOM CRLF small text, one BEFORE-AFTER replacement and ORIGINAL42/MARKET42 ASCII append, native File SaveAs49/47B outputs, fresh empty formal explicit Open, IPC cached update/exact original rollback and normal restart. Default Chinese title/text readable. No direct Chinese keyboard/broad Unicode/formats/large-bad input/advanced editor/projects/ctags/tools/plugins/Python/printing/network/migration/unattended/GUI Store buttons. Original missing digit diagnostic retained and native corrected; no general keyboard repair. 94 program files each,93 cross-generation same, exact unins000.dat difference with both raw private retained. Main BSD3; installed1521CRLF versus source1511LF separator-only same text, raw bytes differ; full bundle licence closure/source-binary/repro/latest unverified. Original25 signed marketPending stage retained; completion separately recorded."
+    },
+    {
+      "id": "qmmp",
+      "version": "1.6.8",
+      "sha256": "641a2ba33795d52eb891dcdf0f71c53e024a487612a3ffde142137d79bef365e",
+      "evidence": "docs/evidence/windows-qmmp-20261013.acceptance.json",
+      "signedCatalogue": "catalogue/candidate-v72/tuf",
+      "publication": "docs/evidence/2026-10-13-qmmp-publication.json",
+      "limitation": "Only two tiny Chinese-name PCM WAV inputs per generation, native Add File B then A through C-drive tree, mouse reorder A,B, native Save List to 91-byte UTF8 no BOM four-LF M3U without trailing LF, new formal empty-list explicit Load List and exact original rollback third explicit Load. Each track0:02; no hearing/playback/audio-device or full-player acceptance. No metadata edit/DSP/stream/library/CD/transcode/plugins/other playlist formats/large-bad input/printing/direct Chinese keyboard/network/migration/unattended/GUI Store buttons. Default skinned UI kept, no program/Core/global DLL/runtime/font/launcher repair. All2166 program files cross-generation same. Main GPL2-or-later installed COPYING exact18092B equals fixed source; full bundle closure/PGP/Authenticode/source-binary/repro/latest unverified. Original28 signed marketPending stage labels retained; completion separately recorded."
     }
   ],
   "queue": [
@@ -917,12 +926,12 @@
     "macwin-probes"
   ],
   "sourceDigestBasis": "Queue sourceSha256 values hash the Mac-Win Git recipe bytes at review time; working-tree line endings can differ.",
-  "next": "63/1000 finite Windows acceptance;17 pending unchanged. Programmer Notepad2.4.2 limited Chinese-name UTF8 BOM small text edit/SaveAs/fresh explicit Open; no full editor or scripting acceptance. candidate-v71/root1/role80,499 fullCore/146 fullStore; strict SSH stdin rolling-current-state-pnotepad-20261013.py. Current private CP pnotepad-20261013/after-final-restart.json; actual registry third-GUI differences retained. All frozen/TUF/trust/failure history preserved.",
+  "next": "64/1000 finite Windows acceptance;17 pending unchanged. Qmmp1.6.8 limited Chinese-name two-WAV playlist reorder/SaveList M3U/fresh empty-list explicit Load; no hearing/playback/audio-device/full-player acceptance. candidate-v72/root1/role81,506 fullCore/148 fullStore; strict SSH stdin rolling-current-state-qmmp-20261013.py. Current private CP qmmp-20261013/after-final-restart.json; actual third-GUI registry and playlist config differences retained. All frozen/TUF/trust/failure history preserved.",
   "currentEnvironment": "isolated ForgeOS v12 KVM VM; Wine 11.14",
   "lastReviewed": "2026-10-13",
   "capacityEvidence": "docs/evidence/2026-10-03-rolling-capacity.json",
   "statusSummary": {
-    "acceptedLocalMarket": 63,
+    "acceptedLocalMarket": 64,
     "explicitlyBlockedCandidates": 17,
     "remainingSourceReviewCandidates": 0,
     "basis": "Counts derive from acceptedLocalMarket and queue; unresolved candidates are not completed applications.",
@@ -930,16 +939,16 @@
     "pendingCandidates": 17
   },
   "activeLocalMarket": {
-    "signedCatalogue": "catalogue/candidate-v71/tuf",
-    "metadataVersion": 80,
-    "catalogueEntries": 65,
-    "acceptedDistinctWindowsApps": 63,
+    "signedCatalogue": "catalogue/candidate-v72/tuf",
+    "metadataVersion": 81,
+    "catalogueEntries": 66,
+    "acceptedDistinctWindowsApps": 64,
     "excludedFixtures": 2,
     "trustedRootSha256": "345053af51944c6ad56e4d5ac79c65be0b31b515befcc160fe5d226c6a027d0e",
-    "publicationEvidence": "docs/evidence/2026-10-13-pnotepad-publication.json",
+    "publicationEvidence": "docs/evidence/2026-10-13-qmmp-publication.json",
     "pendingMarketLifecycleDistinctApps": 0,
-    "previousPublicationEvidence": "docs/evidence/2026-10-13-devcpp-publication.json",
-    "activationEvidence": "docs/evidence/2026-10-13-pnotepad-runtime-recovery.json"
+    "previousPublicationEvidence": "docs/evidence/2026-10-13-pnotepad-publication.json",
+    "activationEvidence": "docs/evidence/2026-10-13-qmmp-runtime-recovery.json"
   },
   "lastReviewEvidence": "docs/evidence/2026-10-13-fityk-final-verification.json",
   "environmentRecoveryEvidence": "docs/evidence/2026-10-12-greenfish-runtime-recovery.json",
@@ -947,8 +956,8 @@
   "managedMsiEvidence": "docs/evidence/2026-10-03-managed-msi-regression.json",
   "previousEnvironmentRecoveryEvidence": "docs/evidence/2026-10-11-xmlcopyeditor-runtime-recovery.json",
   "hostConnectionRecoveryEvidence": "docs/evidence/2026-10-06-system-connection-recovery.json",
-  "latestAttemptEvidence": "docs/windows-rolling-20261013-pnotepad.md",
-  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-13-pnotepad-current-state.json",
+  "latestAttemptEvidence": "docs/windows-rolling-20261013-qmmp.md",
+  "latestEnvironmentCheckEvidence": "docs/evidence/2026-10-13-qmmp-current-state.json",
   "resolvedCandidateHistory": [
     {
       "id": "artha",
