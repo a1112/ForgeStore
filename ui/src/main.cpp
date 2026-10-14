@@ -1,4 +1,5 @@
 #include "StoreBridge.h"
+#include "WindowGeometry.h"
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
@@ -40,19 +41,9 @@ int main(int argc, char **argv) {
     auto fit = [window](QScreen *target, QRect requested, bool firstLaunch) {
         if (!target) return;
         // Qt screen and window geometries are already device independent.
-        const QMargins frame = window->frameMargins();
-        const int edge = firstLaunch ? 16 : 0;
-        const QRect area = target->availableGeometry().adjusted(edge + frame.left(), edge + frame.top(), -edge - frame.right(), -edge - frame.bottom());
-        if (area.isEmpty()) return;
-        window->setMinimumSize(QSize(std::min(820, area.width()), std::min(580, area.height())));
-        const int capWidth = firstLaunch ? int(area.width() * 0.84) : area.width();
-        const int capHeight = firstLaunch ? int(area.height() * 0.84) : area.height();
-        requested.setSize(QSize(std::clamp(requested.width(), window->minimumWidth(), std::max(window->minimumWidth(), capWidth)),
-                                std::clamp(requested.height(), window->minimumHeight(), std::max(window->minimumHeight(), capHeight))));
-        if (firstLaunch) requested.moveCenter(area.center());
-        requested.moveLeft(std::clamp(requested.x(), area.left(), area.right() - requested.width() + 1));
-        requested.moveTop(std::clamp(requested.y(), area.top(), area.bottom() - requested.height() + 1));
-        window->setGeometry(requested);
+        const auto fitted = fitWindowGeometry(target->availableGeometry(), requested, window->frameMargins(), firstLaunch);
+        window->setMinimumSize(fitted.minimum);
+        window->setGeometry(fitted.geometry);
     };
     fit(screen, saved.isValid() ? saved : QRect(0, 0, 1040, 700), !saved.isValid());
     window->show();

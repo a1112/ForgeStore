@@ -1,4 +1,5 @@
 #include "StoreBridge.h"
+#include "WindowGeometry.h"
 
 #include <QGuiApplication>
 #include <QQmlComponent>
@@ -15,6 +16,7 @@ class StoreWindowTest final : public QObject {
     Q_OBJECT
 
 private slots:
+    void restoresSmallWindowWithoutEnlargingOnLargeScreen();
     void loadsChineseDesktopAndCanSwitchToEnglish();
     void loadsBundledQmlResources();
     void launchedApplicationKeepsWindowAlive();
@@ -25,6 +27,14 @@ private slots:
     void unavailableBackendsDisableMutationsAndShowReasons();
     void longMetadataKeepsActionsInsideCard();
 };
+
+void StoreWindowTest::restoresSmallWindowWithoutEnlargingOnLargeScreen() {
+    const auto restored = fitWindowGeometry(QRect(0, 0, 1920, 1040), QRect(100, 100, 640, 400), QMargins(0, 32, 0, 0), false);
+    QCOMPARE(restored.geometry, QRect(100, 100, 640, 400));
+    QCOMPARE(restored.minimum, QSize(640, 400));
+    const auto corrected = fitWindowGeometry(QRect(0, 0, 640, 480), QRect(-2000, 3000, 1400, 1000), QMargins(0, 32, 0, 0), false);
+    QCOMPARE(corrected.geometry, QRect(0, 32, 640, 448));
+}
 
 void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
     StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
