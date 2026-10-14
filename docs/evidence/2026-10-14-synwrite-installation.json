@@ -1,0 +1,1619 @@
+{
+  "applicationId": "synwrite",
+  "generation": {
+    "bottleId": "gen-job-1791935437260-1",
+    "createdAtMilliseconds": 1791935437277,
+    "definition": {
+      "bottleId": "gui-synwrite",
+      "category": "productivity",
+      "compatibilityRating": "unknown",
+      "id": "synwrite",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\SynWrite",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "SynWrite.6.41.2780.exe",
+        "sha256": "6f60ed7161cbd63725fa6bf3a2c4b65b598b3819ff5a6fd550b76324232563f1"
+      },
+      "launchers": [
+        {
+          "executable": "SynWrite/Syn.exe",
+          "id": "main",
+          "name": "SynWrite"
+        }
+      ],
+      "name": "SynWrite",
+      "publisher": "UVViewSoft",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "6.41.2780"
+    },
+    "definitionDigest": "sha256:b674d71fa33f5081c56227d03fa3def437f88b3e03932ab0ff71e827cb969ad0",
+    "id": "gen-job-1791935437260-1",
+    "launcherDigests": {
+      "main": "sha256:0a7bba032dbd9c3b92f72f1fc4490ffa258adae495a25d71ab7c8b880cac8a96"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791935452353
+  },
+  "definition": {
+    "bottleId": "gui-synwrite",
+    "category": "productivity",
+    "compatibilityRating": "unknown",
+    "id": "synwrite",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\SynWrite",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "SynWrite.6.41.2780.exe",
+      "sha256": "6f60ed7161cbd63725fa6bf3a2c4b65b598b3819ff5a6fd550b76324232563f1"
+    },
+    "launchers": [
+      {
+        "executable": "SynWrite/Syn.exe",
+        "id": "main",
+        "name": "SynWrite"
+      }
+    ],
+    "name": "SynWrite",
+    "publisher": "UVViewSoft",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "6.41.2780"
+  },
+  "installedFiles": {
+    "Syn.exe.manifest": {
+      "sizeBytes": 1515,
+      "sha256": "71af0c9d97419d05f17f6177dba6c62c0a499c369a4e6622ac2cde9fbc5463e8"
+    },
+    "SynHelper.exe": {
+      "sizeBytes": 42496,
+      "sha256": "94e55c179980cb39084b43387fe8b57dfa48861ebf655b3564e8376aa06ca637"
+    },
+    "unins000.exe": {
+      "sizeBytes": 765605,
+      "sha256": "fcccc43d0a981b8faea7370e940c4e29ba978e0ab49fdf8bda4244d23ea85bbb"
+    },
+    "Syn.exe": {
+      "sizeBytes": 4270592,
+      "sha256": "0a7bba032dbd9c3b92f72f1fc4490ffa258adae495a25d71ab7c8b880cac8a96"
+    },
+    "python34.zip": {
+      "sizeBytes": 2734205,
+      "sha256": "45b80401cbf7970169d71830f5b26877cc3b6ae1d80f83191349f8df61b4eed3"
+    },
+    "msvcr100.dll": {
+      "sizeBytes": 773968,
+      "sha256": "60c06e0fa4449314da3a0a87c1a9d9577df99226f943637e06f61188e5862efa"
+    },
+    "python34.dll": {
+      "sizeBytes": 2744320,
+      "sha256": "fdcb5f85b9fa3bedcc9b2a999e8bd733412b60d9e5f9faa9d1a5858ae753f3c4"
+    },
+    "unins000.dat": {
+      "sizeBytes": 27036,
+      "sha256": "dcd2d813fc9dba582b830082e82f18f4f31505222e37d0c545bf990b3e2f8002"
+    },
+    "DLLs/_hashlib.pyd": {
+      "sizeBytes": 922112,
+      "sha256": "2c905f0809749f5494b2a638a8551af3d914a148d282fc3da9d68ce12d067eb9"
+    },
+    "DLLs/_ctypes.pyd": {
+      "sizeBytes": 85504,
+      "sha256": "97c3cdef6d28ad19c0dacff15dd66f874fe73c8767d88f3bc7c0bde794d857da"
+    },
+    "DLLs/_overlapped.pyd": {
+      "sizeBytes": 19968,
+      "sha256": "9f6b4ce72b98e286c7d5e30cc0c9494e5e9b1f54fece0b7e5335c5c0c7b21090"
+    },
+    "DLLs/_ssl.pyd": {
+      "sizeBytes": 1331200,
+      "sha256": "7a622e57f85120cefe38f473e57b7363c8afc551a35a6e4a4677b05f5d43881b"
+    },
+    "DLLs/_socket.pyd": {
+      "sizeBytes": 47104,
+      "sha256": "e29cc2340a9577f82c45abe6707e2817575ee02ac374f4864885410d411e6bea"
+    },
+    "DLLs/select.pyd": {
+      "sizeBytes": 9728,
+      "sha256": "064f0873914f0cf6d91248b61b64a462f98bd470ba83570b9b82fe39b6f243a4"
+    },
+    "DLLs/winsound.pyd": {
+      "sizeBytes": 9216,
+      "sha256": "3c4d27c77ed841d4cb48b257a736b62e6b3610d3fb00d48e353af048e932aaad"
+    },
+    "DLLs/_decimal.pyd": {
+      "sizeBytes": 182272,
+      "sha256": "e826ceb7002f8fd814746cd5f428c9d209fa3bebeca6e9218d5d222cba2fe23e"
+    },
+    "DLLs/pyexpat.pyd": {
+      "sizeBytes": 133120,
+      "sha256": "5906394063df3355f8808adeae7786149e29c61abff031e7685fe3d62733cfda"
+    },
+    "DLLs/_msi.pyd": {
+      "sizeBytes": 49152,
+      "sha256": "4f49bcf34e9484820c107ef6b3d64d53ecb9106d98271883506bf807325599b2"
+    },
+    "DLLs/_elementtree.pyd": {
+      "sizeBytes": 132096,
+      "sha256": "5516d07cee38421c9440cdedce34cbc38533d11b7ef2683642ade35eb6d8c9fd"
+    },
+    "DLLs/_bz2.pyd": {
+      "sizeBytes": 53760,
+      "sha256": "2e0cdab46bf899f8a433d57643d909c3883f95e32ca37817bf4f9e72d84a5a5f"
+    },
+    "DLLs/unicodedata.pyd": {
+      "sizeBytes": 758784,
+      "sha256": "5df0e5e83be746d46db28da04b5936e0f178be1d2f0b3c3a9cfda8cc1553480d"
+    },
+    "DLLs/_multiprocessing.pyd": {
+      "sizeBytes": 12288,
+      "sha256": "aca4530c561a6c1274e46188b49d16941cd6435cf2f5f5959e578c7654ecbb75"
+    },
+    "DLLs/_lzma.pyd": {
+      "sizeBytes": 137216,
+      "sha256": "b0f6cf621c166c6585e4d6346c244da51adde42a5bbbbdd9eb89bef84b1117ee"
+    },
+    "Lang/ReadmeLang.txt": {
+      "sizeBytes": 164,
+      "sha256": "b9f5903e018b822f8d26e371fbfa65c4e28f6c78e0abb5d9e32eb07af2d4d892"
+    },
+    "Lang/Rus.lng": {
+      "sizeBytes": 151070,
+      "sha256": "67a0adbf4bff961e9a20e4f3d45ef5e5863e1b700ab242fd15c9c2564e77a2c6"
+    },
+    "Tools/HtmlHelpView.source.txt": {
+      "sizeBytes": 48,
+      "sha256": "a660165c059cb82a83ecdd1f7a6f3a00f2bc6ae7a34ed09d343b2bf30c407d6d"
+    },
+    "Tools/ImageToBmp.source.txt": {
+      "sizeBytes": 48,
+      "sha256": "a660165c059cb82a83ecdd1f7a6f3a00f2bc6ae7a34ed09d343b2bf30c407d6d"
+    },
+    "Tools/HtmlHelpView.exe": {
+      "sizeBytes": 43008,
+      "sha256": "ef59f0a8e010c04d138db5a75ed61d1e1ac7abc5d0c1ccc355de016f3ab4d878"
+    },
+    "Tools/Unzip.Copying.txt": {
+      "sizeBytes": 10457,
+      "sha256": "1b0784b030224778a9e3af869440031b7cddf5df499fdcbfcb2eb58567a068f7"
+    },
+    "Tools/UnZip.exe": {
+      "sizeBytes": 204800,
+      "sha256": "2122557d350fd1c59fb0ef32125330bde673e9331eb9371b454c2ad2d82091ac"
+    },
+    "Tools/ImageToBmp.exe": {
+      "sizeBytes": 44032,
+      "sha256": "593b12b5d90bf90e97294c23f1e5cdd6a36e05e471385e99a6f0bfe826a56c2f"
+    },
+    "Settings/Enc.cfg": {
+      "sizeBytes": 3101,
+      "sha256": "c1e76b838dfcdee8bcb56f0a59b3b1b50adbc5610c1dd92ce561cbebbc903945"
+    },
+    "Readme/Syn.dklang": {
+      "sizeBytes": 217122,
+      "sha256": "23866c95966725064fd28edc64f2cebb55a9a614b1a359d36f32acf61bfd0287"
+    },
+    "Readme/SynWrite.chm": {
+      "sizeBytes": 775042,
+      "sha256": "b38c5d500b70c921194ab7813965809d71901d0a4ccf8ec38aa1564e737a9569"
+    },
+    "Readme/MoreLexers.zip": {
+      "sizeBytes": 5595,
+      "sha256": "12d96043c31a3a7bb3ff0455e7d0232b7e7b3f65927c6858fff7e54fd1eb4473"
+    },
+    "Readme/LexerConfig.chm": {
+      "sizeBytes": 173611,
+      "sha256": "aa8704203b45a44518e9f1c19f6467f8a6f18d9bd31bfcb320f31572e7119931"
+    },
+    "Readme/TutorialLexer2.odt": {
+      "sizeBytes": 63813,
+      "sha256": "d6ef8db19789942d66339c25f6412a0c0542578b2ca7657593793ce9010d6442"
+    },
+    "Readme/Src.zip": {
+      "sizeBytes": 696918,
+      "sha256": "f058912d8829d120fb9f50a41d7db5bcd6dc5bdcf2b820bdbd64dbfa9db11f53"
+    },
+    "Readme/SrcTests.zip": {
+      "sizeBytes": 186235,
+      "sha256": "87c430eddc011a964347489e3471f1c64008c9bcde95ed831808754ede7a8aba"
+    },
+    "Readme/LexerConfig.odt": {
+      "sizeBytes": 201654,
+      "sha256": "93b4f1dc02bcc7035434565a6a6c9555879f768c2a63d922a636d42899b56652"
+    },
+    "Readme/ComponentFixes.zip": {
+      "sizeBytes": 36711,
+      "sha256": "7659ca6aa4f77c91be600da6daa3cd8424ef1843badf36b1540cc7d3b09300fe"
+    },
+    "Readme/TutorialLexer3.odt": {
+      "sizeBytes": 41952,
+      "sha256": "2103c2c3a9a14f666e2f820763e67c0766a43e20570079de0746cdacd7cb7644"
+    },
+    "Readme/TutorialPlugins1.odt": {
+      "sizeBytes": 52364,
+      "sha256": "58b074f2c533dbd256b575fe28552ab96bf1aa36ba8a4270b418f68d5b17400e"
+    },
+    "Readme/TutorialLexer1.odt": {
+      "sizeBytes": 51375,
+      "sha256": "e7c07bedb9899fc8e938e9628684506bf3447456b851575da1ac68387afc223a"
+    },
+    "Readme/History.txt": {
+      "sizeBytes": 79291,
+      "sha256": "a3dec971373f6531a83591a5633310744277f12d6b41cbe73f62797e7782a8e4"
+    },
+    "Readme/LexerIndentFolding.odt": {
+      "sizeBytes": 16761,
+      "sha256": "881b8a8f7376405e97b22d39eb30692210c372d113d5f47dd7d2c53b39c3b9cb"
+    },
+    "Readme/HiddenOptions.txt": {
+      "sizeBytes": 2703,
+      "sha256": "7083f6d6f188c7d5991aeb08d891b4f890d1d314c31eb2758f93ba5a34478092"
+    },
+    "Readme/Wiki.zip": {
+      "sizeBytes": 62500,
+      "sha256": "6415aeeebfa1571ef8a3fa3064dcf103039ac26d77b08712000f0dc36aeb8068"
+    },
+    "Readme/HiddenOptionsForLister.txt": {
+      "sizeBytes": 1394,
+      "sha256": "96dff2c39ae5cdaa36dbc6e39012e608f8c68ee6fcb69b2222a99417824e7356"
+    },
+    "Readme/TutorialLexerLig.odt": {
+      "sizeBytes": 33014,
+      "sha256": "02d2063e0ea56e0fb8317e2aaceb4ba2620e50a484fbfd200c3d65132fdf112f"
+    },
+    "Readme/TutorialLexer4.odt": {
+      "sizeBytes": 21153,
+      "sha256": "09ac2d58c715b37f0b6c2ecf6d681949dbb5c87eb2875a193065ef60db2229b6"
+    },
+    "Readme/SynWrite.ru.chm": {
+      "sizeBytes": 776254,
+      "sha256": "af2d42f782babdf0ec39a4c84cdde56c67ca926c4ce8fb388e201c17421318ae"
+    },
+    "Py/sw_session_conv.py": {
+      "sizeBytes": 7381,
+      "sha256": "0e91d311014a6069b1b1acd48c0fd4d2c123340a2a2ccc8508ab47ac12623db6"
+    },
+    "Py/sw_reset_plugins.py": {
+      "sizeBytes": 472,
+      "sha256": "544dfb688838b4ec339d445836cc75ab760c7005d75a459441967c8f8022d6f8"
+    },
+    "Py/sw_cmd.py": {
+      "sizeBytes": 19508,
+      "sha256": "e7cc35ea3ca7e50b27991d8a8acf600353b56a0a89547ad585a3c5766a44d27e"
+    },
+    "Py/sw_keys.py": {
+      "sizeBytes": 1185,
+      "sha256": "d0d4ceb7a5aadbdd7a2ecba705eb0a3bf40e27a45d2a629eb75aeddc815dbfe5"
+    },
+    "Py/sw.py": {
+      "sizeBytes": 16975,
+      "sha256": "d25768b6d44e1b1e93b41a41e3e5f0419746cac9d2580ca6a6dc7577e54db264"
+    },
+    "Py/syn_comments/__init__.py": {
+      "sizeBytes": 8646,
+      "sha256": "f64a555c409aa1128e58a456083cce599e6e8923a97b3501ad24fed4b4b4bc06"
+    },
+    "Py/syn_comments/dlg.py": {
+      "sizeBytes": 1544,
+      "sha256": "7e566c385f3a2cb52f8851913f258647495b9a2c45626086ed7caaf64dc2fec1"
+    },
+    "Py/syn_comments/v.inf": {
+      "sizeBytes": 10,
+      "sha256": "7384ed3d61530480afcd70fbf77ea771c9414cec141d06b4cb9c4ca48052b59b"
+    },
+    "Py/syn_comments/install.inf": {
+      "sizeBytes": 867,
+      "sha256": "a84074b1dbaa63362f1a3b1a0c5bedf79a6c7f8355d81214730c261b4158055a"
+    },
+    "Py/syn_make_plugin/sample.inf": {
+      "sizeBytes": 262,
+      "sha256": "f4d1a58ab08bca24c9e4ac16e57fd3dda67194689823dd3cbce3f03cebe7db03"
+    },
+    "Py/syn_make_plugin/sample.py": {
+      "sizeBytes": 142,
+      "sha256": "bef5e2491ab1ed498427db4aceeb84052449d7e7f02a9accf3ce4e021d2c5712"
+    },
+    "Py/syn_make_plugin/__init__.py": {
+      "sizeBytes": 2113,
+      "sha256": "de4fcac9aae8fe78c2e3205d750610cef0d50f66d4f1b4892b2beedcf466e0c3"
+    },
+    "Py/syn_make_plugin/v.inf": {
+      "sizeBytes": 10,
+      "sha256": "25d649ea27991b351d3a7a1ce4ed684779ce3a5243a0d3ef8ca885dcd78fedb8"
+    },
+    "Py/syn_make_plugin/install.inf": {
+      "sizeBytes": 160,
+      "sha256": "548960b9a380d3c96333df14f4bfc2f196aae8fa95b86768f4c4ed547bd90d46"
+    },
+    "Py/syn_new_file/__init__.py": {
+      "sizeBytes": 1179,
+      "sha256": "821dee84b3976356d9734f2d6c428b4bf9314ca20cc15047e6220e2a831eee76"
+    },
+    "Py/syn_new_file/v.inf": {
+      "sizeBytes": 10,
+      "sha256": "3721fc855d3a3e8f9545af8330bff789cde616df4895fbc00e2db64717c07c56"
+    },
+    "Py/syn_new_file/install.inf": {
+      "sizeBytes": 161,
+      "sha256": "46a3ebd6652271240a009c87d31193e1de13585a499e91efb065999b78202841"
+    },
+    "Py/syn_plugin_manager/opt.py": {
+      "sizeBytes": 70,
+      "sha256": "7c40ffa40e9871dfa13c2196881057c7cfe22a31fb9db848b5bd80ea44b578ff"
+    },
+    "Py/syn_plugin_manager/workupd.py": {
+      "sizeBytes": 1393,
+      "sha256": "3f359601ff811ff4a68f4e8c1c84641ac7413e4ad1e88f5f2a09c6a8f0522d92"
+    },
+    "Py/syn_plugin_manager/worklocal.py": {
+      "sizeBytes": 1393,
+      "sha256": "77095bb5817b0239896809991ba43f99ee672dc872d89089e3266077aa25cc70"
+    },
+    "Py/syn_plugin_manager/Jp.lng": {
+      "sizeBytes": 1474,
+      "sha256": "8d0c2c7873eff95c4ba2004d028c0c18f22e6517654bdd4ef492faa98b99bd52"
+    },
+    "Py/syn_plugin_manager/It.lng": {
+      "sizeBytes": 1143,
+      "sha256": "be361030a154d5760a486ea16480c09ae6099fef3600cbe51d6af77526c96141"
+    },
+    "Py/syn_plugin_manager/__init__.py": {
+      "sizeBytes": 8142,
+      "sha256": "9d59428251f4dd15d9858765bc35c0871bcb80a564ea58718e652b1df6870fd8"
+    },
+    "Py/syn_plugin_manager/workremote.py": {
+      "sizeBytes": 3570,
+      "sha256": "9d95d77004731c3603c1f692afad1b7a9a74e4dd5980cdac688521f67bff90ac"
+    },
+    "Py/syn_plugin_manager/Ru.lng": {
+      "sizeBytes": 1651,
+      "sha256": "b791fe42ed120bff83ab2adbefc6ff52f8cd74b97f5b6df3224f7ee2330aac15"
+    },
+    "Py/syn_plugin_manager/v.inf": {
+      "sizeBytes": 10,
+      "sha256": "db58c3ecfe320c67e5bbce2c3883f4214fbbff8f1280c3369b534c962d3f2cd3"
+    },
+    "Py/syn_plugin_manager/ver_str.py": {
+      "sizeBytes": 313,
+      "sha256": "66794be161aededda9521eadc462eb5d441a4d527134a72f0b6a590d45247a48"
+    },
+    "Py/syn_plugin_manager/En.lng": {
+      "sizeBytes": 1000,
+      "sha256": "8d1d5047c1b0f4142b3c5d1701e8c4751e49b3bcdd265b60a7d047e40c33b525"
+    },
+    "Py/syn_plugin_manager/install.inf": {
+      "sizeBytes": 270,
+      "sha256": "934f9bc96b522b60ed77867b23a3ccaeeb755be6d31d66cd5b94a8bc51a66189"
+    },
+    "Py/syn_plugin_manager/De.lng": {
+      "sizeBytes": 1343,
+      "sha256": "1574fc825a35344911c8b94d6244fbd763ab5f24d6b6ff8bd97f3a75affb57d3"
+    },
+    "Py/syn_insert_time/__init__.py": {
+      "sizeBytes": 266,
+      "sha256": "f453aa667e8a23ded2241977802288a4298d491f141f42034f9d166bb1e16f7d"
+    },
+    "Py/syn_insert_time/v.inf": {
+      "sizeBytes": 12,
+      "sha256": "bc8645c06f256c023f0970582a524360a918a691836c4977f816808fc094a4dd"
+    },
+    "Py/syn_insert_time/install.inf": {
+      "sizeBytes": 154,
+      "sha256": "884f772db3753ea76e229b312bd6e4edcb0da7be26cf8f8d671d52481e4d4007"
+    },
+    "Py/syn_html_tidy/__init__.py": {
+      "sizeBytes": 3065,
+      "sha256": "503376ad7a67ca244ee7543bf0e924e360ec48e53554cf6309bcfee23505abc7"
+    },
+    "Py/syn_html_tidy/v.inf": {
+      "sizeBytes": 7,
+      "sha256": "4ca8bbd3c595ee306226c6996b32b8d47a900217c55a7ed0cfc868ee444f34f1"
+    },
+    "Py/syn_html_tidy/install.inf": {
+      "sizeBytes": 402,
+      "sha256": "80e25b495ab0efade153877b3137c8a461e59898d9f81f626ef7e90196d73016"
+    },
+    "Py/syn_color_picker/getcaretword.py": {
+      "sizeBytes": 628,
+      "sha256": "49a7b35ddf430308e6e13b734cc5c29b46ac62f0236b33239e42f7d302ceaed5"
+    },
+    "Py/syn_color_picker/ColorPicker.exe": {
+      "sizeBytes": 557056,
+      "sha256": "505a353693e45e34ac6742a5cd205f080b7121d719236e6739e78282eb17c7ca"
+    },
+    "Py/syn_color_picker/__init__.py": {
+      "sizeBytes": 1072,
+      "sha256": "8538c0cf62871c9e4831d014960a56ce0dc73391535fd6e08d755e4d55822c93"
+    },
+    "Py/syn_color_picker/colorcodes.py": {
+      "sizeBytes": 1575,
+      "sha256": "977b626ff903dc7001746c27c7573024501132680bea97847cb0d72eb74cacfc"
+    },
+    "Py/syn_color_picker/v.inf": {
+      "sizeBytes": 7,
+      "sha256": "fc1c281f1d0879bb81d24496eb278296d469a4c7d78565b035a14b51eab620b3"
+    },
+    "Py/syn_color_picker/install.inf": {
+      "sizeBytes": 171,
+      "sha256": "8817c43536c3dcfe697fe178648859d513bddaa2408ca7c5b6abc3dd575cbe2f"
+    },
+    "Py/syn_color_picker/readme/history.txt": {
+      "sizeBytes": 182,
+      "sha256": "efa5e319ff5228fd57b3f8a3043e5fe3e78348a516b0448d0c3e2cc50760ec62"
+    },
+    "Py/syn_color_picker/readme/readme.txt": {
+      "sizeBytes": 192,
+      "sha256": "d61fa8339bc3aa6576324c7c4cc4e27082d17ce0b43fed1a319057fda3dcc1d2"
+    },
+    "Py/syn_color_picker/src/mbColorLib.rar": {
+      "sizeBytes": 163275,
+      "sha256": "5afd52070063fdbc42b9913be3b714d3cf353f47d46865619346173725fcc26b"
+    },
+    "Py/syn_html_tidy/readme/quickref.html": {
+      "sizeBytes": 91953,
+      "sha256": "d168e8a03a906923e0493695e376a9b618952db2c29f2a500d869e39d80f4eca"
+    },
+    "Py/syn_html_tidy/readme/tidy.css": {
+      "sizeBytes": 6947,
+      "sha256": "a6b9fa4099da640eff589613be37403ca5fb865e8423275fdea1ebb30ffe82a8"
+    },
+    "Py/syn_html_tidy/readme/readme.html": {
+      "sizeBytes": 1200,
+      "sha256": "942f5cf503288ed8370a82d7e38bc10ed3f03964c95ae564ffccb6db1bf072d0"
+    },
+    "Py/syn_html_tidy/tidy/license.html": {
+      "sizeBytes": 1831,
+      "sha256": "e07a835b94fb0c89a830bdb6ccf6079e479e02cb5f067095511fc88c17bff163"
+    },
+    "Py/syn_html_tidy/tidy/tidy.exe": {
+      "sizeBytes": 337408,
+      "sha256": "30c3629073882bab28fbd553b0cbc9b248cc82f3abfe7cd257e567bffdf13ced"
+    },
+    "Py/syn_html_tidy/configs/convert to XML.txt": {
+      "sizeBytes": 437,
+      "sha256": "9bb6065e3f121b8edf172eaeb3a578d21d75e86a36f3af81ca8dd6670023024a"
+    },
+    "Py/syn_html_tidy/configs/convert to XHTML.txt": {
+      "sizeBytes": 552,
+      "sha256": "987aafd00507221f7dd1e570b4b9f6bb3e6f28b0f13bbd5181da4d87afd4041d"
+    },
+    "Py/syn_html_tidy/configs/reformat only.txt": {
+      "sizeBytes": 172,
+      "sha256": "fbfb45638191fcaefdef6c39d6f453b28872acb67ed07b2bc2e89a997b6d23c2"
+    },
+    "Py/syn_html_tidy/configs/clean document - nowrap.txt": {
+      "sizeBytes": 212,
+      "sha256": "051af2ff91ee16a148eb532ea7c7e6f89a0c8d05f041bed4148c6c1263a0a028"
+    },
+    "Py/syn_html_tidy/configs/attributes to uppercase.txt": {
+      "sizeBytes": 37,
+      "sha256": "47c6f5f285fec3959db8d044be0a2646f4745ed3ee42ead7e05220426f0d181f"
+    },
+    "Py/syn_html_tidy/configs/tags to lowercase.txt": {
+      "sizeBytes": 30,
+      "sha256": "4975032131e05b51576a25b3e3b8fd719d880dcaa51437aa6be4497df336486e"
+    },
+    "Py/syn_html_tidy/configs/default configuration.txt": {
+      "sizeBytes": 1365,
+      "sha256": "1bb6adc860386ee34c7fa9e2aa37270c4ccaf22bf540c17a6ea66f7d165d2a9e"
+    },
+    "Py/syn_html_tidy/configs/clean document - nowrap, no indent.txt": {
+      "sizeBytes": 211,
+      "sha256": "8d4c17f7ed04e1c12ea66761022bfeaf8edf1133cc143b1f09dc758326aa98df"
+    },
+    "Py/syn_html_tidy/configs/clean document - quote.txt": {
+      "sizeBytes": 69,
+      "sha256": "bb8068f140ae73bfd849874585c92bc9a58f61fec449b75f6b5aabbc852de24e"
+    },
+    "Py/syn_html_tidy/configs/tags to uppercase.txt": {
+      "sizeBytes": 31,
+      "sha256": "0b19c9724c953b0272ccbafce6f1478d0ee4776bcbc257e67ed917fb75aec9d0"
+    },
+    "Py/syn_html_tidy/configs/attributes to lowercase.txt": {
+      "sizeBytes": 36,
+      "sha256": "2a3244a2ae96991ca1671cf8c8ab0712867547c5d8ccab11294733525e5536b2"
+    },
+    "Py/syn_html_tidy/configs/upgrade to CSS.txt": {
+      "sizeBytes": 439,
+      "sha256": "a97c0202aa0da200cbd98574bc783cc430f0c9b7a0f56a1e07b3acbe82dad396"
+    },
+    "Py/syn_html_tidy/configs/clean MS Word 2000 document.txt": {
+      "sizeBytes": 243,
+      "sha256": "4e002a36cbba89ecdc2183a3e40842d9c018b0a3350dcd2f73604ec8e1ed148c"
+    },
+    "Py/syn_html_tidy/configs/clean document - wrap.txt": {
+      "sizeBytes": 216,
+      "sha256": "31c275b0074797560921af443f3f8b19732625e4c68e9ea10513db1570cf5288"
+    },
+    "Plugins/SynFTP/license_SynFTP.txt": {
+      "sizeBytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "Plugins/SynFTP/install.inf": {
+      "sizeBytes": 113,
+      "sha256": "8098ff0f341a7440e406eb0bb0cf7ac75dac0c9a74e5c91de3073fa32bbd7b5a"
+    },
+    "Plugins/SynFTP/SynFTP.dll": {
+      "sizeBytes": 3998645,
+      "sha256": "55d768d8ba17758c8de165644a3c68989dfb7e0424bd176b5c438fc59dd34aab"
+    },
+    "Plugins/SynFTP/source.txt": {
+      "sizeBytes": 57,
+      "sha256": "d0db0adb96a8c51535bc91b963c147738f91d8b9f94f8abd9ea9c63cfd7b7e70"
+    },
+    "Data/autocomplete/Resource script.acp": {
+      "sizeBytes": 880,
+      "sha256": "9c4d9cbd20455f35e2729488cc4e59a12bb576b4a9a12c2b935c128a71782983"
+    },
+    "Data/autocomplete/Lua.acp": {
+      "sizeBytes": 11503,
+      "sha256": "ba0869d452bd210f3da67180fa6c98e795e4b9d3bdff19106facce96f74ab95d"
+    },
+    "Data/autocomplete/Bash script.acp": {
+      "sizeBytes": 10960,
+      "sha256": "49119593ca7aea4e926b8b9368390df11bcae8ddc14f0c7a8a9ba56d25ee875b"
+    },
+    "Data/autocomplete/Perl.acp": {
+      "sizeBytes": 11666,
+      "sha256": "4d53f4d2cff858d0d41eb0f2121a3da85faaa47fb65e9002cb954ee2bf03faa8"
+    },
+    "Data/autocomplete/C++.acp": {
+      "sizeBytes": 250416,
+      "sha256": "e3dca361b2c52fd1e00941282a435387f02d94b0ca3d378364881b9f85f800b3"
+    },
+    "Data/autocomplete/Pascal.acp": {
+      "sizeBytes": 127223,
+      "sha256": "8d69d705b1724bad06b72676fc50cc72d1a48284b623f2d85cee407108e04e21"
+    },
+    "Data/autocomplete/Tcl.acp": {
+      "sizeBytes": 3312,
+      "sha256": "d711445845d5cb35f667fcd6583b2be11a7dcf6c66d16be566ef33d1013a5727"
+    },
+    "Data/autocomplete/Batch files.acp": {
+      "sizeBytes": 15365,
+      "sha256": "0716e89fdc9769b5730106430b87c7f799d158a58356b58469cfe6615417b024"
+    },
+    "Data/autocomplete/LESS.acp": {
+      "sizeBytes": 1406,
+      "sha256": "a050427ac11cfa8b5e29149c19ab23afe9e17cab9deb9cbb8e2b59c4dafdf762"
+    },
+    "Data/autocomplete/SCSS.acp": {
+      "sizeBytes": 3452,
+      "sha256": "69dba9ae43acd830a83adeb83c6770a3d291edb6c4fd54cc8f6ac9906955a2d4"
+    },
+    "Data/autocomplete/JavaScript.acp": {
+      "sizeBytes": 11683,
+      "sha256": "d74dbe69bc89b8d709e35e57581774ffc46aec682ba4f9eeb57f31ac2be2c0fe"
+    },
+    "Data/autocomplete/C#.acp": {
+      "sizeBytes": 5892,
+      "sha256": "5610c8d1df4275bf0a0a62414a9744f4a10a2b00fb3ede493f56e7bda4d9a0f5"
+    },
+    "Data/autocomplete/PHP.acp": {
+      "sizeBytes": 589622,
+      "sha256": "4d900b5709b939aaf1d13e7d37fc75c232d23efe2586d4d20c363cb9c54c6425"
+    },
+    "Data/autocomplete/Python.acp": {
+      "sizeBytes": 12213,
+      "sha256": "e57bdddfd64da8898960ed190e74fffd75d4b00619101bb5d7c066f510ccb58b"
+    },
+    "Data/autocomplete/Css_List.ini": {
+      "sizeBytes": 17162,
+      "sha256": "c3e1cfe4a5611d27a4510b1bd848104e03665e5b31f65eafa77e913b67d87e3a"
+    },
+    "Data/autocomplete/PowerShell.acp": {
+      "sizeBytes": 31670,
+      "sha256": "bd88da0863009e7403a7173efc103d897f18b0bb785da91d458d4cd602d9df21"
+    },
+    "Data/autocomplete/VBScript.acp": {
+      "sizeBytes": 27077,
+      "sha256": "48ec5d099611eb0bb4dbff9922145ca0619527edac873c43d2f1dcd3954fc193"
+    },
+    "Data/autocomplete/SQL.acp": {
+      "sizeBytes": 730,
+      "sha256": "d1632351c5d4bf3f9f21ee8187cc1d1d1b138cbb3496d321023617c56eee3de1"
+    },
+    "Data/autocomplete/C.acp": {
+      "sizeBytes": 24493,
+      "sha256": "240ca5294b1ce8b114a79d9885e26d11c35149997722ef708f3124895f733efa"
+    },
+    "Data/autocomplete/Html_List.ini": {
+      "sizeBytes": 15206,
+      "sha256": "1d085d041ec2d9555d3fa8038a28974c147686feac8daf55844b70b773473584"
+    },
+    "Data/autocomplete/Html_Tabbing.ini": {
+      "sizeBytes": 4838,
+      "sha256": "148bf4346b659133d243872692e4e21ca907ced8dd4cae02986a115d3a5484ac"
+    },
+    "Data/autocomplete/Ruby.acp": {
+      "sizeBytes": 28641,
+      "sha256": "18bc011631e30845c255fbf9671f9aff995718e59fdea25c5aeac280796568d7"
+    },
+    "Data/skins/Dark_Night.skn": {
+      "sizeBytes": 12417,
+      "sha256": "f76c94b7d2717fae6a959432330371fe7a441c7cfb1b65cdcd805fa682ea51d0"
+    },
+    "Data/skins/gBW.skn": {
+      "sizeBytes": 7659,
+      "sha256": "48ed7ad1a07bfdd8f945f8ecafaf6e3baeee3197dd0a19a17b9d2abaaabe6637"
+    },
+    "Data/skins/Sand.skn": {
+      "sizeBytes": 12660,
+      "sha256": "01e13ac1b5d202178d364fa8cfeb7f4098813e3ff419e0da2f512a348558b3ac"
+    },
+    "Data/skins/Deviant Dark.skn": {
+      "sizeBytes": 6373,
+      "sha256": "9f9a2b3e7d9a3a11aced9b713cabf464a29dcbcc80db76570d2502a47ffba048"
+    },
+    "Data/skins/Greener.skn": {
+      "sizeBytes": 8783,
+      "sha256": "f72201ae87bb284a42822f553872d0133660708bd8dda541456c4de6a29784f4"
+    },
+    "Data/skins/ReadmeSkins.txt": {
+      "sizeBytes": 119,
+      "sha256": "ceefc22ac7388a36c3b73b3bd3b332bfa3858ab941783a60054abefff44f3ed9"
+    },
+    "Data/skins/Midnight_Blue.skn": {
+      "sizeBytes": 12406,
+      "sha256": "a4b0d18bedc5d1f8e0d317d00c7e883d850408cd4b26347e8356930e71ef00de"
+    },
+    "Data/skins/Vista_Blue.skn": {
+      "sizeBytes": 9011,
+      "sha256": "158ebfb97a11c2bf9126e99024c73b386dc31f87f686eada75d85a78d04dc47e"
+    },
+    "Data/newdoc/xhtml_UTF8.html": {
+      "sizeBytes": 449,
+      "sha256": "e0811f1e126d2bffcffbe32fc6fc274666cd908ad7dc03574901c6e73f7a1c26"
+    },
+    "Data/newdoc/default.c": {
+      "sizeBytes": 681,
+      "sha256": "7f7bed050f8d350e423a3c417030af490e0febebc8fc612113c6e41fbd6e7836"
+    },
+    "Data/newdoc/default.rb": {
+      "sizeBytes": 23,
+      "sha256": "56ff6da02a4fa2436aaeddbb6fe4288698333896c8c6249fbd2597748a68a87e"
+    },
+    "Data/newdoc/php with HTML.php": {
+      "sizeBytes": 164,
+      "sha256": "600f6147b787f60b4dd4b271f14da8ce39414c39dcb30d08a8aa82a822121f41"
+    },
+    "Data/newdoc/jsp.jsp": {
+      "sizeBytes": 185,
+      "sha256": "b54edbece275f7ca8a8261855d371c6ba3052f3133c0e714b70430755c75d0d8"
+    },
+    "Data/newdoc/html_UTF8.htm": {
+      "sizeBytes": 272,
+      "sha256": "ddbfabffc8c1add43c3fdfca61ebf8d66166539af5e8dec874c86700709f24a1"
+    },
+    "Data/newdoc/default.py": {
+      "sizeBytes": 88,
+      "sha256": "96af7945ebb6dbe4d875dcc6c1b39a4e2800ab93dd527c36eb498ec088dfd1e8"
+    },
+    "Data/newdoc/default.cpp": {
+      "sizeBytes": 98,
+      "sha256": "649b583b25885972be2f73094410a56f5ea073a625f6615e4587947acb241cea"
+    },
+    "Data/newdoc/xslt style.xsl": {
+      "sizeBytes": 175,
+      "sha256": "957556ee36e5293b9175da2ff42b8c3416729e23695ef4c6526e8d5cd11e1b74"
+    },
+    "Data/newdoc/default.js": {
+      "sizeBytes": 140,
+      "sha256": "f20f1d93f610dc323b07246aa5956175a6ad118df8e4b1cc785dbaa612552f39"
+    },
+    "Data/newdoc/Redirection.html": {
+      "sizeBytes": 564,
+      "sha256": "66fa8a51a86aa72fd18bcda762ad8294bbeeb6f5dd6fdc4a3ea0b95960268384"
+    },
+    "Data/newdoc/Glossary.html": {
+      "sizeBytes": 4364,
+      "sha256": "fa854361a5552b18dd1009a36c21e0be990a63e4091507ffec364f6e2180daad"
+    },
+    "Data/newdoc/hta.hta": {
+      "sizeBytes": 950,
+      "sha256": "17a84861bbae402796e3f17c8fb10b9e3ef3eb0f5b2a1f1bdf7474049ad09184"
+    },
+    "Data/newdoc/default.php": {
+      "sizeBytes": 13,
+      "sha256": "c6e93cdd3e375b4bfe75e25a2e7de17c9e169a26e6ca248b5e1ebd5a8bb007ec"
+    },
+    "Data/newdoc/Frameset.html": {
+      "sizeBytes": 556,
+      "sha256": "92de2aba611b7d136a04d5a117521c416cfdc62edcc857a9145e43cd9cd3bf2a"
+    },
+    "Data/newdoc/Delphi unit.pas": {
+      "sizeBytes": 769,
+      "sha256": "c3582b186531673bde0ec0338e786aac044bafb9f8094a6d01dc4da6d0f0bf56"
+    },
+    "Data/newdoc/asp with HTML.asp": {
+      "sizeBytes": 161,
+      "sha256": "77ce5778ca236221ee8c9e728ed6c9a689b056ba6c4ad2abdafae87b7c6cba80"
+    },
+    "Data/newdoc/default.css": {
+      "sizeBytes": 209,
+      "sha256": "41193f4b271e4e463f5b2db18ff40b8c5c5e3e543b33aa94b07ea54d6bcb0126"
+    },
+    "Data/newdoc/default_UTF8.xml": {
+      "sizeBytes": 42,
+      "sha256": "e11f1ee28e82f535820011f62747716bd0f3a9104a78152e277998ff96307fd9"
+    },
+    "Data/newdoc/default.pl": {
+      "sizeBytes": 17,
+      "sha256": "d7348d0b56bc28ba1bed3199e78159e98689aef1ecbc69d69a655b3b6e88e2f1"
+    },
+    "Data/newdoc/Delphi object.pas": {
+      "sizeBytes": 591,
+      "sha256": "ece53cbe197f79715b149237474f218a50a24e34aa211e106c3b2673781f67d9"
+    },
+    "Data/newdoc/default.vbs": {
+      "sizeBytes": 133,
+      "sha256": "694dc6205a68e2940775b761f4b26b2be28e5c575dd983e6c87967958ba158a1"
+    },
+    "Data/newdoc/asp.asp": {
+      "sizeBytes": 10,
+      "sha256": "a923b79cf4c2497f1ba291ac766d52bb10d8c1f45338c6b38b6edd45684c9905"
+    },
+    "Data/newdoc/Delphi console app.pas": {
+      "sizeBytes": 862,
+      "sha256": "2a5bac75b96cc10342c2f5ae6d09740accac6a65d039465cd515d3d8a8146b08"
+    },
+    "Data/icons/LibreOffice 24x24.tar": {
+      "sizeBytes": 38912,
+      "sha256": "b26c7eba1b26ce253d6b67643d4deb20222140e42b77f0870e47afe0e9c62616"
+    },
+    "Data/icons/Silk 16x16.tar": {
+      "sizeBytes": 43008,
+      "sha256": "20cd621f29ecfead9f6b7ff361ef0a9cbf271a29baf6833916aff1299700be63"
+    },
+    "Data/icons/Tango 22x22.tar": {
+      "sizeBytes": 53760,
+      "sha256": "fb1060f91439453670ac5bbb29795978f353a425824e4d1be7a9a3691423b354"
+    },
+    "Data/icons/License.Silk.txt": {
+      "sizeBytes": 121,
+      "sha256": "1c63ef1660ef5c1f41847088ef98b8cf999768a3867fa2b0116d34ebc18ac956"
+    },
+    "Data/icons/Fugue 16x16.tar": {
+      "sizeBytes": 42496,
+      "sha256": "700ec454c5d821712766b1c33963aaba97f64b3c757130c1822ef40d289f361e"
+    },
+    "Data/icons/Fugue 24x24.tar": {
+      "sizeBytes": 51200,
+      "sha256": "0960a6528d375aedab908205108ab57546107671717cc8d91942b5a50e36fb5d"
+    },
+    "Data/icons/Readme.Silk.txt": {
+      "sizeBytes": 149,
+      "sha256": "5d7276e6ba4df84ae568c08472ec374dc6b5eeb960bb85d46e0a2a9ab2e1c9d1"
+    },
+    "Data/lexlib/SQL.lcf": {
+      "sizeBytes": 22174,
+      "sha256": "414afe77713f0f0606f7f5f39e5fc92fd0a13275b9c5d82eaf99bd43c8992663"
+    },
+    "Data/lexlib/Bash script.cuda-lexmap": {
+      "sizeBytes": 420,
+      "sha256": "027ad8989c79cab2b4abba22f5a5b23c941808ac49b9b14a1757940954c4792f"
+    },
+    "Data/lexlib/Search results.lcf": {
+      "sizeBytes": 3517,
+      "sha256": "59b790d3e1f3849ee848b93255c014a089406b591e1c2251832c4a47d4db134b"
+    },
+    "Data/lexlib/Python.cuda-lexmap": {
+      "sizeBytes": 252,
+      "sha256": "4234ad05a4e666e820d53bc66ee8f01f5173a2efa2f9a246fd303ff1b85f7aff"
+    },
+    "Data/lexlib/Python.lcf": {
+      "sizeBytes": 16218,
+      "sha256": "572b7160ad209af6439661bd863f62c7685649093b44f1fa58a718c0742099c2"
+    },
+    "Data/lexlib/Ini files.lcf": {
+      "sizeBytes": 2923,
+      "sha256": "55dd192aa47419310c37173423690719fa4ee05559f344e3192d8a5ca1a38c5d"
+    },
+    "Data/lexlib/SynWrite acp files.cuda-lexmap": {
+      "sizeBytes": 53,
+      "sha256": "8c4ef40d34ee14dcf8dc234fe0d487d1a5b6602b7df5b91e1ce0811429160b84"
+    },
+    "Data/lexlib/Lua.cuda-lexmap": {
+      "sizeBytes": 241,
+      "sha256": "25621fac6fd5182ce1d4c323d428af915edcfda5c5d9a257767cbdeaa4cd22f7"
+    },
+    "Data/lexlib/CSS.lcf": {
+      "sizeBytes": 63192,
+      "sha256": "29bd3d60a84a4cb1240232c78da2fc80b56f172ea3be42164fb889f7f3afd33a"
+    },
+    "Data/lexlib/SynWrite snippets.lcf": {
+      "sizeBytes": 1906,
+      "sha256": "09637674da29373b2517f0a8ab02e84e5c5fc95d5ffae37979bcc38b1839d3d0"
+    },
+    "Data/lexlib/Bash script.lcf": {
+      "sizeBytes": 25177,
+      "sha256": "00c9ea448705a4b7322ca76068387fdde3fd7e8135f8e755bdf3ead339b96900"
+    },
+    "Data/lexlib/PHP_.cuda-lexmap": {
+      "sizeBytes": 381,
+      "sha256": "708fbe9fd9392b99497a49c1f752ff76f128181770357bbae5a68d3f6d54c2b9"
+    },
+    "Data/lexlib/Search results.cuda-lexmap": {
+      "sizeBytes": 44,
+      "sha256": "31d3a9543406faeb04733d2b4e05ab6a38d6c657941d8049988b910c1230592a"
+    },
+    "Data/lexlib/PHP_.lcf": {
+      "sizeBytes": 19545,
+      "sha256": "7d7d5ffce60d623fe99c338cb1bdaa4dbab651f190b3e2b4f6dd06e95be8541e"
+    },
+    "Data/lexlib/Diff.cuda-lexmap": {
+      "sizeBytes": 118,
+      "sha256": "5fd0b556ed4a14af085261824a7bf73483991169938072bb2dd8fc5c645158a7"
+    },
+    "Data/lexlib/PHP.lcf": {
+      "sizeBytes": 19015,
+      "sha256": "e4da5bf722f9d886d9ca91d510a872bd8ff6a41b20c90324fddef7e7ad272c20"
+    },
+    "Data/lexlib/Markdown.lcf": {
+      "sizeBytes": 17773,
+      "sha256": "337d8de8570d12ee4a58334458721134a51fb9b5346c8d5f0d4719daac6e55eb"
+    },
+    "Data/lexlib/C.lcf": {
+      "sizeBytes": 12072,
+      "sha256": "755ffbcc1769bfdae767c5259b25d30f068d67c494a140ace912467d3733c16d"
+    },
+    "Data/lexlib/JSDoc.cuda-lexmap": {
+      "sizeBytes": 107,
+      "sha256": "02c92faec432f3851fe14e71a0c851e34c7df7653ac7dc9d37d368ae3de3e070"
+    },
+    "Data/lexlib/XML.lcf": {
+      "sizeBytes": 11869,
+      "sha256": "f820088d313a1010fba806ebaf7d97b98bc9cf467b16e12d4e5de7523fed882b"
+    },
+    "Data/lexlib/CSS.cuda-lexmap": {
+      "sizeBytes": 353,
+      "sha256": "f6f8b67cb463aa7899b1ebd8f0441b641f0d5f82a555f852b016d86129d82294"
+    },
+    "Data/lexlib/JSON.lcf": {
+      "sizeBytes": 6231,
+      "sha256": "4f9dbe5fad6bc0e4bca97652ea7bbf5f62956ff6a61ac2eaae1add584c739b72"
+    },
+    "Data/lexlib/SQL.cuda-lexmap": {
+      "sizeBytes": 521,
+      "sha256": "b1c1b9f12e67d3da2961f604222f62af7820f5fe9ef960d4ae1a0d3fc935e809"
+    },
+    "Data/lexlib/YAML.lcf": {
+      "sizeBytes": 7183,
+      "sha256": "68154641267432d31e7e2cdd731d6fb393215cbf3f452878181229694ca4d3bb"
+    },
+    "Data/lexlib/Batch files.cuda-lexmap": {
+      "sizeBytes": 200,
+      "sha256": "c724f77e26ba4c83b7f6946596eace8e213967b918347d61ecea8c834278dfd5"
+    },
+    "Data/lexlib/HTML.cuda-lexmap": {
+      "sizeBytes": 490,
+      "sha256": "012e442f5e1eea83f8079fb9afdc869d6b35751ffde0c1ace35cfe4bdd162854"
+    },
+    "Data/lexlib/reStructuredText.lcf": {
+      "sizeBytes": 10474,
+      "sha256": "94da5b97070ceb190f1be49b9f5c54572e1a577eab2036d45d41431aa30efab7"
+    },
+    "Data/lexlib/JSDoc.lcf": {
+      "sizeBytes": 2854,
+      "sha256": "bf5c9b133c667236f44b3034f05c7c8ff531c17af368e4cba9b7fb0749845176"
+    },
+    "Data/lexlib/C++.lcf": {
+      "sizeBytes": 18397,
+      "sha256": "0d537bb8e0959633992369786d7d9b732ef1586da1714ff011fae1411dfba7b2"
+    },
+    "Data/lexlib/JavaScript.lcf": {
+      "sizeBytes": 20914,
+      "sha256": "6cf4baaf72c76561bff02f0e9c7a529d50d2e2d35dedbf819dbbd1453797597b"
+    },
+    "Data/lexlib/reStructuredText.cuda-lexmap": {
+      "sizeBytes": 331,
+      "sha256": "2db5f587ab317d6650a1af377b98f5932dc8cadd53714afd16c8174ff6ca8514"
+    },
+    "Data/lexlib/Assembly.lcf": {
+      "sizeBytes": 16730,
+      "sha256": "f61b9dda2c09c6f070d62063c4b843563d13b79de0f3b534c1f484a59ef9b678"
+    },
+    "Data/lexlib/Lua.lcf": {
+      "sizeBytes": 15204,
+      "sha256": "250061486530dccf8602a0f888e8ea4ae855d95f6ffad64573eb02230ee06aa0"
+    },
+    "Data/lexlib/HTML.lcf": {
+      "sizeBytes": 20077,
+      "sha256": "87f9e390cfd2e177ff17032d09908e582ce21f29c91b1a14422f881f4e1fc051"
+    },
+    "Data/lexlib/PHP.cuda-lexmap": {
+      "sizeBytes": 451,
+      "sha256": "fd0defd768bd38410281a662edbc2bd5f46d5a733a9cb5915e52973842040048"
+    },
+    "Data/lexlib/Markdown.cuda-lexmap": {
+      "sizeBytes": 597,
+      "sha256": "9baa50f1d5c8a0f56dc4705abd2abec46560d8fb2fd85c9d9fa4409ab0fb7126"
+    },
+    "Data/lexlib/JSON.cuda-lexmap": {
+      "sizeBytes": 186,
+      "sha256": "e687de901b7bf70bae8662a4431c5f6c86b871ebb798147493f77d3e2fe08f3d"
+    },
+    "Data/lexlib/C++.cuda-lexmap": {
+      "sizeBytes": 253,
+      "sha256": "0b268a7efd5257d1804fa750c33d6d63fad461119ac7c338ec866996558b7a78"
+    },
+    "Data/lexlib/XML.cuda-lexmap": {
+      "sizeBytes": 366,
+      "sha256": "95b190701bd6c0fa24ef2bcbf7371bc7ba360e4ad3390b6669ac9b4c281251dc"
+    },
+    "Data/lexlib/YAML.cuda-lexmap": {
+      "sizeBytes": 236,
+      "sha256": "c5b9c631e6dc098cee0a5ccfd23d625dcf99055352ce897c6902c4ecc28a10d0"
+    },
+    "Data/lexlib/Assembly.cuda-lexmap": {
+      "sizeBytes": 197,
+      "sha256": "f96d6c32c52f315f9a3dfcf21ee12cd1bf8f50da00b2d6c2b2935e3f8fc6d95e"
+    },
+    "Data/lexlib/Diff.lcf": {
+      "sizeBytes": 4265,
+      "sha256": "abc50e3c9bf43b1e0c1750aedf539655c931a24dae4ecad7ac82378baf03712c"
+    },
+    "Data/lexlib/Batch files.lcf": {
+      "sizeBytes": 10931,
+      "sha256": "0b815668dc7be5175c967685d383c25117556a32dd0db92ec26da0c5471abc05"
+    },
+    "Data/lexlib/JavaScript.cuda-lexmap": {
+      "sizeBytes": 371,
+      "sha256": "e9f3e65ce279e7b86e5a53cf9553551ee9a112c7f2343ff9e14224691b3e8d16"
+    },
+    "Data/lexlib/C.cuda-lexmap": {
+      "sizeBytes": 263,
+      "sha256": "6696de67859126ffa6a9d76e656321f8e7c203c731e17d8a85da22fd39b6dee8"
+    },
+    "Data/lexlib/SynWrite acp files.lcf": {
+      "sizeBytes": 2186,
+      "sha256": "a59c06129173cf71cae94a1c47c38264499de9084aa395e8f2a88e64819cbb1b"
+    },
+    "Data/lexlib/Ini files.cuda-lexmap": {
+      "sizeBytes": 110,
+      "sha256": "856c3e044a26ec0f9a0fcad84043d851f9622cd830de801949e72d994713aeb2"
+    },
+    "Data/lexlib/SynWrite snippets.cuda-lexmap": {
+      "sizeBytes": 47,
+      "sha256": "fdeab1f8d4094286002939fbff6746d4e112fbbed7ce7571e9575be5231691c6"
+    },
+    "Data/outpresets/MSAsm.synw-outpreset": {
+      "sizeBytes": 96,
+      "sha256": "3ead477ed580249dd637d02f742206be22f4eb34819e92cc27e94d760984d29d"
+    },
+    "Data/outpresets/Php.synw-outpreset": {
+      "sizeBytes": 92,
+      "sha256": "87134311d9d29454281e68a3336d23b03483830dc32178b1df239bd0b54b94b4"
+    },
+    "Data/outpresets/OORexx.synw-outpreset": {
+      "sizeBytes": 101,
+      "sha256": "f0d8c0d7c7c54d400bb5aa6d156ab1d5441f9180a4aa6139693837bc5caf31dc"
+    },
+    "Data/outpresets/JSLintExe.synw-outpreset": {
+      "sizeBytes": 96,
+      "sha256": "72feea625df75e22f30f5d13b6f615c2990d79fabb09b2c6e63ad4c9f423dfe4"
+    },
+    "Data/outpresets/MSBuild.synw-outpreset": {
+      "sizeBytes": 99,
+      "sha256": "31aefc3bf3b975a895e9d396b31ddbbdc66768ec3757f44e2de5be3871c374c4"
+    },
+    "Data/outpresets/CSSLint.synw-outpreset": {
+      "sizeBytes": 101,
+      "sha256": "d5d292c8d7c9982489e34002d895489d8895265c4f7ec50799cc6e1d4224f2ff"
+    },
+    "Data/outpresets/TAsm.synw-outpreset": {
+      "sizeBytes": 107,
+      "sha256": "233edf66a141d2d0eb217306a63957e4c3d6c9205dbd65fb9c0511571f963486"
+    },
+    "Data/outpresets/MSC.synw-outpreset": {
+      "sizeBytes": 84,
+      "sha256": "afe979c3896e292ca6f9be8228e9dcb95fae3fad88e08d09ba45017186ed665b"
+    },
+    "Data/outpresets/InnoSetup.synw-outpreset": {
+      "sizeBytes": 107,
+      "sha256": "dcfdba072ba763427089c3fd7543a566f452ef2d209ac9047a827100151f958f"
+    },
+    "Data/outpresets/TypeScript.synw-outpreset": {
+      "sizeBytes": 100,
+      "sha256": "4fd3d232c8344b4cb6fd352b327752c315adf1b96103c10076390c633986cc83"
+    },
+    "Data/outpresets/MSC#.synw-outpreset": {
+      "sizeBytes": 93,
+      "sha256": "9696b26f383b5f529607e141e3635e43e93514f6d00d0bee0d4ba074b3d79873"
+    },
+    "Data/outpresets/Ruby.synw-outpreset": {
+      "sizeBytes": 84,
+      "sha256": "7ada1d1deaec333bbe8547271dfce40479bb2aef6bc2e32573ab644ba3d12bb6"
+    },
+    "Data/outpresets/JSHint.synw-outpreset": {
+      "sizeBytes": 101,
+      "sha256": "bf0da846f6957cbd6f66da84004037fc4251abb5e61d5c9cff5bf40e572c3c78"
+    },
+    "Data/outpresets/Perl.synw-outpreset": {
+      "sizeBytes": 93,
+      "sha256": "13e3424a9605b227fcd72d4caca5bd4ca13dd8aa49289f45dd3b978225bb5773"
+    },
+    "Data/outpresets/Dart.synw-outpreset": {
+      "sizeBytes": 97,
+      "sha256": "0fbd14c22ebc74c78bd2154eaf32af3093cd62966d6a2281d043d2ec5c14130e"
+    },
+    "Data/outpresets/Java.synw-outpreset": {
+      "sizeBytes": 84,
+      "sha256": "ad37e962442903265863270d73f577a1c0bc11c8be783bef3b80665abe8005a0"
+    },
+    "Data/outpresets/Python.synw-outpreset": {
+      "sizeBytes": 101,
+      "sha256": "2e2a5aac8f83fea8ac73c7be1472640bb7cd6d4016da597c33dd14638208e1be"
+    },
+    "Data/outpresets/BorlandRC.synw-outpreset": {
+      "sizeBytes": 116,
+      "sha256": "fa6c4f62a4bf3e05691078ab3faf7adf4d04edf0aee0d52690c5e27892781baa"
+    },
+    "Data/outpresets/GCC.synw-outpreset": {
+      "sizeBytes": 97,
+      "sha256": "1709fdb57ab7ed0c196ab2a620302021b395470d4d3a2b11105d47b7a3cbed85"
+    },
+    "Data/outpresets/NSIS.synw-outpreset": {
+      "sizeBytes": 99,
+      "sha256": "bf6ce5c92495d00338a358b1c0540a1ddf792fb4f8a7a5065e7b2a1156d5ed73"
+    },
+    "Data/outpresets/BorlandC.synw-outpreset": {
+      "sizeBytes": 98,
+      "sha256": "5436c13241f437458936a9b467a51e7b5b1d8fb5c7aa63b921089715a49733f4"
+    },
+    "Data/outpresets/Delphi.synw-outpreset": {
+      "sizeBytes": 89,
+      "sha256": "c0609f378ae2ed1246e184c438066578fb137a672eff80cb4e1fa85cf0d3080f"
+    },
+    "Data/colors/Default.synw-colors": {
+      "sizeBytes": 1644,
+      "sha256": "cce4d33f3d1550c4cf4d7cc7fa33ded38fc7cd150c8eb7dacf12ce8cf6d9f6d4"
+    },
+    "Data/colors/Violet Light 2.synw-colors": {
+      "sizeBytes": 1647,
+      "sha256": "2b7659dbdaa8b75e294b8b7cf66aa8f5a24f1285a0c217963e789bb79bea2e04"
+    },
+    "Data/colors/Violet.synw-colors": {
+      "sizeBytes": 1649,
+      "sha256": "f7794b36adc4b8c7e7164b34dd717231029a3dd2eeab7e59acc3f85c521cd029"
+    },
+    "Data/colors/Sublime Black.synw-colors": {
+      "sizeBytes": 1635,
+      "sha256": "f25420d8bbbc07ac67d1723b684a588df9f7c7c519f89da39eed5528ffdfb0df"
+    },
+    "Data/colors/Violet Light.synw-colors": {
+      "sizeBytes": 1648,
+      "sha256": "d8e1593bb0962c41249e4d448812237065f6fc0621fe0b7e320ceeeca3df4da7"
+    },
+    "Data/colors/Gray Aluminium.synw-colors": {
+      "sizeBytes": 1648,
+      "sha256": "2f6501d00384e607d2db9aa3c15fae6464f947e92a2683fecca70893f85efec8"
+    },
+    "Data/colors/Gray Light.synw-colors": {
+      "sizeBytes": 1642,
+      "sha256": "e81ea8fb5471c85a0e45cb80031693da43d6e95c1595166554e053878552cbeb"
+    },
+    "Data/colors/Blue Sky.synw-colors": {
+      "sizeBytes": 1642,
+      "sha256": "6359ec55ff4c21c287e1708365b6de43ac3fe9e0bbea32a1a21873400296cd84"
+    },
+    "Data/colors/Sublime Light.synw-colors": {
+      "sizeBytes": 1627,
+      "sha256": "09cb0feee2ac2d90ab17812eccd4a91cbcf840463a8038c33b9ab55b6b41b083"
+    },
+    "Data/colors/Teal.synw-colors": {
+      "sizeBytes": 1635,
+      "sha256": "6affe0e4324ca0213519c13993567f681952daebb6c7b1bea31b1740d8fd4586"
+    },
+    "Data/conv/HTML - entities except brackets.txt": {
+      "sizeBytes": 4956,
+      "sha256": "6b2e3bb73f5b3ad1d0d3be2bae3e1e2f23fa467751bffd14e947031f7f90de7a"
+    },
+    "Data/conv/HTML - all entities.txt": {
+      "sizeBytes": 5028,
+      "sha256": "e3aa20d594b2d96ddc316623e8b97e2aaa48267bf9cc75b386b69d861bf10ecc"
+    },
+    "Data/clips/Greek alphabet (upper)/List.txt": {
+      "sizeBytes": 634,
+      "sha256": "455e372bf5d5d0fd67831775c5c1b7cc291ab08e8c624ed7b16a6b85418a6f93"
+    },
+    "Data/clips/HTML - Color names+values/List.txt": {
+      "sizeBytes": 2781,
+      "sha256": "20ecb70cf7b5c92f31b1bb8712562bfbeafcdd8b61f52c96c95c1be30c43b2e9"
+    },
+    "Data/clips/Math symbols/List.txt": {
+      "sizeBytes": 922,
+      "sha256": "d7c9e6d198aa3881734e0458d3d87e8a043cc19b527caa1780a14262e4e7fab5"
+    },
+    "Data/clips/HTML - Letters/List.txt": {
+      "sizeBytes": 6882,
+      "sha256": "a6bc1d09c8486a6d6036e84c5074651b71f6c75ecee41deecfe5b1bbca56a272"
+    },
+    "Data/clips/Quote selection/a-normtypo.synw-snippet": {
+      "sizeBytes": 42,
+      "sha256": "91a1c4b28abd0b7dab576d856e1b004f5d43f67156bad01c546e33c137f3db2b"
+    },
+    "Data/clips/Quote selection/a-norm1.synw-snippet": {
+      "sizeBytes": 38,
+      "sha256": "242fe33a1b2bfbdd0a912ecf71b0c9d7b84202458ad747d22274b3887de9a9a4"
+    },
+    "Data/clips/Quote selection/a-tick1-both.synw-snippet": {
+      "sizeBytes": 46,
+      "sha256": "66ee495a1e1d0c12c1d1868c8cf80635921b31fb8a289102e355bfe140cb8d07"
+    },
+    "Data/clips/Quote selection/tag2.synw-snippet": {
+      "sizeBytes": 42,
+      "sha256": "8ddd90ada4f0c81ee4787d41e4184da955b553a2a4a5c9dc7350ef5a19084244"
+    },
+    "Data/clips/Quote selection/tag1.synw-snippet": {
+      "sizeBytes": 38,
+      "sha256": "34ad6f7940719295daadbdfd9cfabaf793160b7b47c0f7fad0f2ffc302fae1b1"
+    },
+    "Data/clips/Quote selection/a-tick2-both.synw-snippet": {
+      "sizeBytes": 46,
+      "sha256": "9d9ed4026e0710d03a9b2d0b68e00b6ad329aa3820343a6565accf708077ce60"
+    },
+    "Data/clips/Quote selection/a-norm2.synw-snippet": {
+      "sizeBytes": 38,
+      "sha256": "d3648627f5dbe10c4c88e5f0391a4b2e6aa7964a62f05dd6c00237b7c7e6de34"
+    },
+    "Data/clips/HTML - Color names/List.txt": {
+      "sizeBytes": 1603,
+      "sha256": "97fef6d731e823d8d30518c63d8323f4384833bf6b5980bd7d0d7e865890c2bc"
+    },
+    "Data/clips/Arrows/List.txt": {
+      "sizeBytes": 6372,
+      "sha256": "c6de40f08f8e0dedea407714e67e81b6b9c14cfbd21f0addf34271d521fe9de9"
+    },
+    "Data/clips/Greek alphabet (lower)/List.txt": {
+      "sizeBytes": 634,
+      "sha256": "bb28be28201d1589cde67f2baf23810353e53f85e6ff9a09a06f40f2abbdf1e7"
+    },
+    "Data/clips/HTML - Math symbols/List.txt": {
+      "sizeBytes": 3326,
+      "sha256": "5b110913711254431a8b74962e76453bbc1882079af0268c8c7c96811e0b6f54"
+    },
+    "Data/clips/Currency symbols/List.txt": {
+      "sizeBytes": 480,
+      "sha256": "6d9fdbe440aef6933847e96a4b06e6cb8d2292108d0d613677616ea3fb6cfa98"
+    },
+    "Data/clips/Special characters/List.txt": {
+      "sizeBytes": 1410,
+      "sha256": "f671a3fcda2800ed6507396efe0219d686cf177cdafbc29ecfdc7f720807a271"
+    },
+    "Data/clips/HTML - Arrows/List.txt": {
+      "sizeBytes": 800,
+      "sha256": "1efeb8a409a8260ebca1fde7a27581f2bace80ec7e780bba9b97d603a78f4956"
+    },
+    "Data/clips/HTML - Special characters/List.txt": {
+      "sizeBytes": 3826,
+      "sha256": "b866c6b43083840e9d8117949d616d79ffaa6205b363fb44ac7ee1d8370d5ba6"
+    },
+    "Data/snippets/Std.Php/require-once.synw-snippet": {
+      "sizeBytes": 82,
+      "sha256": "890ad20f5afbfd88584b1bc780029ef068a98d7a721f15e7c78dee511356432c"
+    },
+    "Data/snippets/Std.Php/throw.synw-snippet": {
+      "sizeBytes": 121,
+      "sha256": "93f61f26b33d33f66668581c0b292a6be21efe13fdd931b71a4e50c0e535edb7"
+    },
+    "Data/snippets/Std.Php/defined.synw-snippet": {
+      "sizeBytes": 72,
+      "sha256": "91a7894f4ec0cf16dd685a8f97c6e0a60fdf5f7e45aa8930d9e1fda2ab62b43c"
+    },
+    "Data/snippets/Std.Php/function.synw-snippet": {
+      "sizeBytes": 136,
+      "sha256": "5e833d55840291cf9ba8e50bb13d8685dc24bd04a92fb1648c3a04f3c0b01fa7"
+    },
+    "Data/snippets/Std.Php/include.synw-snippet": {
+      "sizeBytes": 71,
+      "sha256": "cf16669bc1351be7d5497f09eabeacdf3d8ba9d2ef59f22fef444c9920406ad6"
+    },
+    "Data/snippets/Std.Php/for.synw-snippet": {
+      "sizeBytes": 111,
+      "sha256": "54d90ac71a4b1571066fb67b85988d190721816c6185f7b843b4b537efa2bf12"
+    },
+    "Data/snippets/Std.Php/elseif.synw-snippet": {
+      "sizeBytes": 98,
+      "sha256": "44d6e5e8c1f2b0c58050c418acd72a648dd100d26543a5a9ec0f67ab5ec14983"
+    },
+    "Data/snippets/Std.Php/docblock.synw-snippet": {
+      "sizeBytes": 78,
+      "sha256": "e34516a74ae9ef303e559a4d28aae1fb499aa49e62fb369bcdc9151b2f0f99d5"
+    },
+    "Data/snippets/Std.Php/if.synw-snippet": {
+      "sizeBytes": 86,
+      "sha256": "1f8063d392ee7b2683b8a88c15cebd48af64df5447f9d70ebebb9fdd4bb89eb7"
+    },
+    "Data/snippets/Std.Php/php-else.synw-snippet": {
+      "sizeBytes": 67,
+      "sha256": "5c58e0ca8893e8715c63d34ba19b4bab39a41f5914d6e8a4e41540fb3103a80e"
+    },
+    "Data/snippets/Std.Php/do-while.synw-snippet": {
+      "sizeBytes": 107,
+      "sha256": "6d22f4e583c89eb121b698cc770f06f2d2bf179af1bec2ab087722c812532ee4"
+    },
+    "Data/snippets/Std.Php/$_server.synw-snippet": {
+      "sizeBytes": 73,
+      "sha256": "7869b1d477045326d0cc61ebb6ae057eaa9d6932e029274d954256e36aa56d8b"
+    },
+    "Data/snippets/Std.Php/echo.synw-snippet": {
+      "sizeBytes": 72,
+      "sha256": "25b16707e5ce43a8fea10ad3f7d674260628dee54fe07f7924c398b2a7a32462"
+    },
+    "Data/snippets/Std.Php/$_post.synw-snippet": {
+      "sizeBytes": 69,
+      "sha256": "e9378320f3ad0b1d34573089745d85892a23ad4e0607c0056bfa076e2fef55e9"
+    },
+    "Data/snippets/Std.Php/switch-case.synw-snippet": {
+      "sizeBytes": 97,
+      "sha256": "ba1568f10aaa9660be9761d369dddb65b1097d432fc6347ad9aa15cc2b23060d"
+    },
+    "Data/snippets/Std.Php/php-foreach.synw-snippet": {
+      "sizeBytes": 169,
+      "sha256": "f32118d23450552347d548d0f7048d4252daa0b4cfd8d28170e7bccbb12f263c"
+    },
+    "Data/snippets/Std.Php/new-array.synw-snippet": {
+      "sizeBytes": 96,
+      "sha256": "9b47e9f315250395c0613c03b85845447682d7646140b7709c5e6a4974030635"
+    },
+    "Data/snippets/Std.Php/$_files.synw-snippet": {
+      "sizeBytes": 71,
+      "sha256": "e8c21ce9fca8c4007bcfbeeef6ff96a4a5d73743cba2138db1848b246190552d"
+    },
+    "Data/snippets/Std.Php/if-a-b.synw-snippet": {
+      "sizeBytes": 117,
+      "sha256": "f19644079f0f7e2989e5f0a22ae6fce6993747bc493533876267fa5a84dd9c2b"
+    },
+    "Data/snippets/Std.Php/php-echo-_.synw-snippet": {
+      "sizeBytes": 79,
+      "sha256": "9ace2447f1e0822b48bc1fe0df99d59c2300b13b7b3e6369c2b556dca2343bac"
+    },
+    "Data/snippets/Std.Php/$_env.synw-snippet": {
+      "sizeBytes": 67,
+      "sha256": "77e1539d1079c3944d3cda8f9c6c2a384b1cb55bf7b4112b1b7d408b8d91ec6d"
+    },
+    "Data/snippets/Std.Php/define.synw-snippet": {
+      "sizeBytes": 81,
+      "sha256": "04efb59c314517dd28ee9f9a811dff37dc93e6c1596ef58280aa1dfe6c547b62"
+    },
+    "Data/snippets/Std.Php/return-false.synw-snippet": {
+      "sizeBytes": 66,
+      "sha256": "301183489e688f61316ed59bd846403375c84297a74ff66ef7c9ce9b45ea638f"
+    },
+    "Data/snippets/Std.Php/constructor.synw-snippet": {
+      "sizeBytes": 135,
+      "sha256": "73c345eb530158af9ed95924cf8c2b635dc03a02065f1946a6b76b0f824db824"
+    },
+    "Data/snippets/Std.Php/include-once.synw-snippet": {
+      "sizeBytes": 84,
+      "sha256": "41d2f0523e11e3bc956e49b3f4f65234b394d9d4fc0cc39f467f5a1e81a4e200"
+    },
+    "Data/snippets/Std.Php/if-else.synw-snippet": {
+      "sizeBytes": 127,
+      "sha256": "256eb650086e502e1c8f9ba579c239a6ca9d9b6332ef266d9704bc5a17e30ee8"
+    },
+    "Data/snippets/Std.Php/switch.synw-snippet": {
+      "sizeBytes": 175,
+      "sha256": "86b3ae7d2b7eb86cb94c78cbca286b4690fff79a492169844809584ed2e66197"
+    },
+    "Data/snippets/Std.Php/$globals.synw-snippet": {
+      "sizeBytes": 102,
+      "sha256": "49b3f32b3640da2d3161a4e78a955670244a5e71ede27549aaf6eef8463672eb"
+    },
+    "Data/snippets/Std.Php/$_get.synw-snippet": {
+      "sizeBytes": 67,
+      "sha256": "a1182f31f1af5074b89d78fb2c8d4879decc2b87b3dbc28e6bc00e32c9afebe0"
+    },
+    "Data/snippets/Std.Php/foreach.synw-snippet": {
+      "sizeBytes": 129,
+      "sha256": "056494ebe681c29c79d61890b8105e245288be748a3e226b10b83a10faea87d6"
+    },
+    "Data/snippets/Std.Php/php.synw-snippet": {
+      "sizeBytes": 63,
+      "sha256": "2190f1751ee08e05aa949c152999d4958fc5a601dc40ec790c31957f40fe7609"
+    },
+    "Data/snippets/Std.Php/$_session.synw-snippet": {
+      "sizeBytes": 75,
+      "sha256": "3a3b75a99901b97412ae71478d1283c81702559825e07cd1d7c4814db6a643c9"
+    },
+    "Data/snippets/Std.Php/php-this.synw-snippet": {
+      "sizeBytes": 76,
+      "sha256": "7ab214c5639dafeeb4032cafbc02a7274d03f82acd79a13e699f509eb01ad817"
+    },
+    "Data/snippets/Std.Php/require.synw-snippet": {
+      "sizeBytes": 71,
+      "sha256": "9c3e8647682bae95b7673557348259dc0961062736b3d2740c614c49a792c470"
+    },
+    "Data/snippets/Std.Php/$_request.synw-snippet": {
+      "sizeBytes": 75,
+      "sha256": "01f3bbd6924ac099e20e3694fe4a352ee3023f51d844e6768f6e61021fb34f7f"
+    },
+    "Data/snippets/Std.Php/return.synw-snippet": {
+      "sizeBytes": 57,
+      "sha256": "405535a7a1d3835b0a94570f73940b826b1c466cc420c0c1046559e084363949"
+    },
+    "Data/snippets/Std.Php/php-echo-this.synw-snippet": {
+      "sizeBytes": 87,
+      "sha256": "750ee68a9b3146414d4efd8566a6481bfa85fac90ad75fdea9071e1dfb360550"
+    },
+    "Data/snippets/Std.Php/while.synw-snippet": {
+      "sizeBytes": 98,
+      "sha256": "83def851410f596a77d58b0d8cacfd8e753beb2ac18f7560c2c08fbbaf41ec21"
+    },
+    "Data/snippets/Std.Php/php-echo-htmlentities.synw-snippet": {
+      "sizeBytes": 129,
+      "sha256": "a032edd16a678fea2513048799eb05fa1453a5f887a6f85a220c0d8babae9c88"
+    },
+    "Data/snippets/Std.Php/$_cookie.synw-snippet": {
+      "sizeBytes": 73,
+      "sha256": "b6938d506c8a09cab801c6c8b279faf09a5cb1b1abf6ca6ca310371359adec35"
+    },
+    "Data/snippets/Std.Php/php-if-endif.synw-snippet": {
+      "sizeBytes": 120,
+      "sha256": "077e69d62e37d8d5009e2f5a3c5121dedabb6f0d5984ce2c9892a82de152a585"
+    },
+    "Data/snippets/Std.Php/class.synw-snippet": {
+      "sizeBytes": 201,
+      "sha256": "81a93031ccb80119990124e7ee3b21f99e2e0d753361bf4a30c6feb19106079c"
+    },
+    "Data/snippets/Std.Php/return-true.synw-snippet": {
+      "sizeBytes": 64,
+      "sha256": "d5add4cdc2aa8bfa801f1c26c3ad3f3f0e30db3d8f47117b3641c12a1f4fc7b0"
+    },
+    "Data/snippets/Std.Php/php-if-else-endif.synw-snippet": {
+      "sizeBytes": 156,
+      "sha256": "7fe369c685eaf052c0a73dd08d0c7505fce1971ea02e43e1fa53673b60c4e93f"
+    },
+    "Data/snippets/Std.C/fprintf.synw-snippet": {
+      "sizeBytes": 96,
+      "sha256": "3be11de73572dd2a3a299cb737deffbe1d5f525e108400deebbdaabc53215f42"
+    },
+    "Data/snippets/Std.C/main.synw-snippet": {
+      "sizeBytes": 126,
+      "sha256": "fc3b25de224c6e8d21911bfcb1584e8c6c839f69b66b3a804c066fa90ffe5887"
+    },
+    "Data/snippets/Std.C/typedef.synw-snippet": {
+      "sizeBytes": 80,
+      "sha256": "db9740796ece4337c8a9906d362a949fcefbfef149541dc32d53aab02521486e"
+    },
+    "Data/snippets/Std.C/template-name.synw-snippet": {
+      "sizeBytes": 90,
+      "sha256": "be9ce5528e3783c903d306ce8fa3e75caf6f2e7f6deb7758656b7dd13ef2546d"
+    },
+    "Data/snippets/Std.C/vector-for.synw-snippet": {
+      "sizeBytes": 144,
+      "sha256": "5f0afb63345d797bf04c809347cf7022ebd639966305cd6997f698b91aebd510"
+    },
+    "Data/snippets/Std.C/for.synw-snippet": {
+      "sizeBytes": 123,
+      "sha256": "5c6a784a81d9b0ab6dab7e47c2b67f4a057317a0ca08eaa96b3cf8245922551f"
+    },
+    "Data/snippets/Std.C/struct.synw-snippet": {
+      "sizeBytes": 86,
+      "sha256": "7a1d05ed9dcaacd7a459569e30e56bd5ef1cee25beb1613e9de842aa1fad0546"
+    },
+    "Data/snippets/Std.C/std-map.synw-snippet": {
+      "sizeBytes": 90,
+      "sha256": "843e2d58e42968cfff5af9736fafde29cb82315d76d3f1ea9118ecb3488c2c67"
+    },
+    "Data/snippets/Std.C/#include-angle.synw-snippet": {
+      "sizeBytes": 79,
+      "sha256": "2805c7edc6d7804b615232cb4ccc2b442b2ae4c67f9b8c99bfbfea7487630609"
+    },
+    "Data/snippets/Std.C/if.synw-snippet": {
+      "sizeBytes": 107,
+      "sha256": "d5b4329757d8c85f9f119633e9d06213723b3796d1981ab665930c35bb8e880b"
+    },
+    "Data/snippets/Std.C/do-while.synw-snippet": {
+      "sizeBytes": 108,
+      "sha256": "d444091297c0b302bc50c04e4619e671686c4f5fc50970b2b62fdc7bca332e87"
+    },
+    "Data/snippets/Std.C/#ifndef-#define-#endif.synw-snippet": {
+      "sizeBytes": 122,
+      "sha256": "ff43a704be45221ec431091ea61d55a018cdc66fe9626100baac6fcbb74ffaea"
+    },
+    "Data/snippets/Std.C/std-vector.synw-snippet": {
+      "sizeBytes": 86,
+      "sha256": "33b08848b059d3b7b27348106f38e8e6b7a2aca0928effabf8196ce488255b3a"
+    },
+    "Data/snippets/Std.C/enum.synw-snippet": {
+      "sizeBytes": 83,
+      "sha256": "b86fe05753afa4b1f3fff9df13baedead45209f018b2486039f83accd92ac596"
+    },
+    "Data/snippets/Std.C/printf.synw-snippet": {
+      "sizeBytes": 80,
+      "sha256": "0a7fb0432df0e8bed8ddf89076b77cf11756ebc42a851885174712c59ce521d7"
+    },
+    "Data/snippets/Std.C/vector-read-file.synw-snippet": {
+      "sizeBytes": 264,
+      "sha256": "f768bb548ed2652f8c47109ae9d183a8ed2b494178dcc455b7d64c3d99870eb4"
+    },
+    "Data/snippets/Std.C/namespace.synw-snippet": {
+      "sizeBytes": 83,
+      "sha256": "741cb22005c279ca4ad8b8711bed5e9c8b53e3e525b521388286ae682be645a8"
+    },
+    "Data/snippets/Std.C/#include-quote.synw-snippet": {
+      "sizeBytes": 77,
+      "sha256": "22ed1be451123fdbcb6f337c2d4d92f5ada19bcd95727666fa177524fa30f3d4"
+    },
+    "Data/snippets/Std.C/class.synw-snippet": {
+      "sizeBytes": 122,
+      "sha256": "53d98496aff7039d3d2bb014de9cbe4f2680208b1bd226c35062d55655472caa"
+    },
+    "Data/snippets/Std.Pascal/if then else.synw-snippet": {
+      "sizeBytes": 108,
+      "sha256": "b2f26c212cdd81a4bc3b751c4b1e9698e7563c637b79c1cf22cb79a9ac83288e"
+    },
+    "Data/snippets/Std.Pascal/try except.synw-snippet": {
+      "sizeBytes": 80,
+      "sha256": "bb5032ae3f19ab076503b8f2ade79715fc81805da4d401084289165ca91d97d2"
+    },
+    "Data/snippets/Std.Pascal/with.synw-snippet": {
+      "sizeBytes": 83,
+      "sha256": "3eb7007507a7f43cc76cc2da74f99c1456824544619451b569fd02eb52a41f52"
+    },
+    "Data/snippets/Std.Pascal/case.synw-snippet": {
+      "sizeBytes": 83,
+      "sha256": "2554e1ce8d5897b1fec70859908456c69d6465763e5381d97cd9cbbc8f30522e"
+    },
+    "Data/snippets/Std.Pascal/for.synw-snippet": {
+      "sizeBytes": 96,
+      "sha256": "4474e56c37b0788af2304085d6bd370ea3691426378e39eda2e234e2337a17f5"
+    },
+    "Data/snippets/Std.Pascal/if.synw-snippet": {
+      "sizeBytes": 79,
+      "sha256": "d9b8a8a5be7c9a2dfc181d3ca7d1f066e7bfd012723c7b137912727a93988764"
+    },
+    "Data/snippets/Std.Pascal/case with else.synw-snippet": {
+      "sizeBytes": 109,
+      "sha256": "0cf343a1df84e1a0defa299d163bbc722ea1acfdfd0ce130747ff2f7eb63a70f"
+    },
+    "Data/snippets/Std.Pascal/class empty.synw-snippet": {
+      "sizeBytes": 101,
+      "sha256": "0655979c3361bfaa304b20924c9a7e9b91dd463c13e0d3c63afd77781cd2d6da"
+    },
+    "Data/snippets/Std.Pascal/try finally (empty).synw-snippet": {
+      "sizeBytes": 151,
+      "sha256": "970655c552f40c94057d096896f60ca94a0716cd279ff4de79da377145c2527f"
+    },
+    "Data/snippets/Std.Pascal/if no begin-end.synw-snippet": {
+      "sizeBytes": 110,
+      "sha256": "fe4cec50a5a326c9acfdd2642b916505b652e2a7d7de6cc191dcfdeb46a29f80"
+    },
+    "Data/snippets/Std.Pascal/class create-destroy.synw-snippet": {
+      "sizeBytes": 263,
+      "sha256": "a6a57d21a31ab0a71a98ccb12537b66d35f0b7af47ae3b39a547d1b50872c641"
+    },
+    "Data/snippets/Std.Pascal/class all parts.synw-snippet": {
+      "sizeBytes": 169,
+      "sha256": "516babbcf634e70fe65526fbdf784c0bae1aba7965b215082c07328b5af5bfa7"
+    },
+    "Data/snippets/Std.Pascal/func.synw-snippet": {
+      "sizeBytes": 115,
+      "sha256": "7d111d4f547b3d2c6ec0e81a46247b4d4d487575ff569356e54948b09f2a6c08"
+    },
+    "Data/snippets/Std.Pascal/prop.synw-snippet": {
+      "sizeBytes": 99,
+      "sha256": "f9560576111515b177199219639faca608d3dc09ce1908675afc59f3fc443a26"
+    },
+    "Data/snippets/Std.Pascal/try finally.synw-snippet": {
+      "sizeBytes": 82,
+      "sha256": "5d7660efdd318c476bb99d94db0adfaac1d284d30a713c9e03d2a78c17d86bb4"
+    },
+    "Data/snippets/Std.Pascal/array var.synw-snippet": {
+      "sizeBytes": 93,
+      "sha256": "98603199b6ae26a539c9ddd8f005a10f8fb39718d67f3f23d19ddad9b5832a39"
+    },
+    "Data/snippets/Std.Pascal/for empty.synw-snippet": {
+      "sizeBytes": 80,
+      "sha256": "8506b86bceba2c296a2cefbf1f6f474def46a33170f3b89982c1f1533c09dcf9"
+    },
+    "Data/snippets/Std.Pascal/while empty.synw-snippet": {
+      "sizeBytes": 70,
+      "sha256": "c81cfa12ce321f6c90383eb78732add2fe5e1d6b2bea1578cc756fdca05b2c72"
+    },
+    "Data/snippets/Std.Pascal/with empty.synw-snippet": {
+      "sizeBytes": 67,
+      "sha256": "6b8fb205eb02423a295378e59b5e9aedf34e76de129f880cddcb6d9db1174358"
+    },
+    "Data/snippets/Std.Pascal/array const.synw-snippet": {
+      "sizeBytes": 104,
+      "sha256": "fc11d606650f5f8494943d5cedfd646b6b576003379f658bc94dac9aa882ef63"
+    },
+    "Data/snippets/Std.Pascal/proc.synw-snippet": {
+      "sizeBytes": 103,
+      "sha256": "102131467ac58a2c95841fef3e058b71389d418ba0761847a8ac4b36eb1b4407"
+    },
+    "Data/snippets/Std.Pascal/while.synw-snippet": {
+      "sizeBytes": 86,
+      "sha256": "cdcb6215c74c2ba37790e83434700351e6d17958d7ebc0fdace5c6105d451252"
+    },
+    "Data/snippets/Std.Pascal/begin end.synw-snippet": {
+      "sizeBytes": 63,
+      "sha256": "62dc716c51773139235d8e68c7c70fa40b81864af1a531aab43d120be3a28e30"
+    }
+  },
+  "installedComponentLicenseNamedPins": {
+    "Tools/Unzip.Copying.txt": {
+      "sizeBytes": 10457,
+      "sha256": "1b0784b030224778a9e3af869440031b7cddf5df499fdcbfcb2eb58567a068f7"
+    },
+    "Py/syn_html_tidy/tidy/license.html": {
+      "sizeBytes": 1831,
+      "sha256": "e07a835b94fb0c89a830bdb6ccf6079e479e02cb5f067095511fc88c17bff163"
+    },
+    "Plugins/SynFTP/license_SynFTP.txt": {
+      "sizeBytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "Data/icons/License.Silk.txt": {
+      "sizeBytes": 121,
+      "sha256": "1c63ef1660ef5c1f41847088ef98b8cf999768a3867fa2b0116d34ebc18ac956"
+    }
+  },
+  "onlyOneOriginalInstall": true,
+  "readyNotGuiAcceptance": true,
+  "limits": [
+    "Limited original text editing only: Chinese-name32B UTF8 BOM/twoCRLF input opened through actual MyComputer/C/SynWriteTests tree; default English, Chinese name/title and short Chinese first line readable. Only second STATUS BEFORE line changed to STATUS AFTER ORIGINAL42; native File/Save As to ASCII original.txt42B. Host independently reconstructs all output bytes from unchanged input. No host output edit or direct Chinese keyboard acceptance.",
+    "First official job-1791935640878-2 and new original job-1791959314979-1 use sole ready gen-job-1791935437260-1. New process showed empty Untitled editor, then native File/Open in remembered SynWriteTests directory explicitly doubleclicked original.txt; loaded Chinese first line and STATUS AFTER ORIGINAL42. Two normal File/Exit operations independently checked succeeded/exited.exit code0 successTrue, wine-server-stop-requested and actual ps noWine; exit0 alone not acceptance. One transient Untitled frame before each exit is not a new document edit.",
+    "Only three saved original JPEGs: initial preinstalled-plugins informational notice, original input, original saved output. Native notice OK; no plugin invoked. New original reopen has CUA tool-history screenshots only and no saved JPEG; no fabricated extra screenshot. About/full editor/plugins/FTP/Python/tools/printing/broad encodings/large-bad input/direct Chinese keyboard/network exclusion/new-machine registration/migration/unattended behavior and GUI market buttons not tested. Synthetic text not another application.",
+    "Original limited GUI passed; independent Store IPC market installation/update and same limited market edit/save/new-process explicit Open, exact original rollback/third-original explicit Open and final normal service restart remain pending at this frozen phase. No completed-count or pending-count addition. Windows71 accepted/18 queue fields retained.",
+    "Fixed official SourceForge Release installer11499333B SHA6f60ed7161cbd63725fa6bf3a2c4b65b598b3819ff5a6fd550b76324232563f1 and portable ZIP13856627B SHAfd695ec90a28f7c44b5f53091958e394f999247c62095e2e96b6f57aa347399f, complete HTTPS200/ContentLength; both GET routes terminal before sole original install. Local SHA only, upstream digest/PGP/Authenticode/repro/latest unverified. Cache/first partials retained without repeated GET.",
+    "Portable ZIP is binary-plus-partial-source bundle:413unique366regular/all CRC; nested Readme/Src.zip696918B SHAf058912d8829d120fb9f50a41d7db5bcd6dc5bdcf2b820bdbd64dbfa9db11f53,249unique/all CRC,24 selected raw source/component notice files. Not pure source or all-source manual review. Native Setup source version6.40.2770 is older than release6.41.2780; no source-binary version correspondence established.",
+    "Official homepage states approximately30percent EControl closed source. SourceForge MPL1.1 metadata is observed web text only, not whole Windows bundle license or proof main source headers establish MPL. Selected ATLinkLabel/ATPanelColor/attabs MPL2 or LGPL, ATGroups MPL2, ImageToBmp MPL1.1 and EControl copyright exceptions retained. Four installed named licenses are component notices, not main license same-text comparison. Complete DelphiVCL/EControl/Tnt/Python/plugins/tools/icons/translations license closure unverified. No installer/program binary published.",
+    "Actual two Inno Setup Setup Data5.5.7 markers/bootstrap and mainPE0x14c, mainSyn.exe4270592B SHA0a7bba032dbd9c3b92f72f1fc4490ffa258adae495a25d71ab7c8b880cac8a96 equals fixed portable main raw; main size not whole application. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:one-backslashSynWrite /NOICONS /TASKS=, DIR16UTF8 hex2f4449523d433a5c53796e5772697465. Not full Inno/UAC/associations/shortcuts/uninstall verification. No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime repair.",
+    "All368 initial installed files retain exact bytes; four native Settings INI files and three first-discovered StartMenu links selected separately. Initial Syn.ini40B became828B after normal first exit, actual raw/diff retained privately; SynHistory156B/SynHistoryStates136B first found after exit. First discovery not creation time. Reopen changes only selected system.reg/user.reg bytes at same sizes3423303/102502; actual before/after raw and UTF8diff18131/796B kept, cause/key-value equivalence unknown. Not old registry bytes unchanged across GUI, not full FS; recent64IPC not full SQLite; Core queries may write existing scratch.",
+    "User-authorized extra normal guest VM reboot completed through native SDDM power menu with independent bootId change. Before558162 terminal CP, full postboot558162 CP and original-reopen559162 CP saved/readback; all seven full state classes and old fixed acceptance data verified. Normal reboot is additional user step, not final application acceptance service restart. Initial CLI reboot denied interactive authentication; no retry/bypass/reset/kill. First postboot Core socket absent, normal single Core start return0 then proc/exe PermissionError and later inactive/dead; complete journal showed normal Started/Stopped, cause unestablished. Later native desktop and both services active; no second start or settings repair. All failures and raw helpers retained.",
+    "Natural lock and prior output-inactive/browser failures are external observations, not application failure or reason to relaunch. Latest original reopen followed user normal unlock; agent did not enter authentication data this phase. No password/login image/private key/credentials/full private CP/exact signed redirect query in public artifacts or recurring prompt. Existing IAB2/tab2 same loopback noVNC retained, no viewport/auth/lock/power changes. Ubuntu ledger/plan scope unchanged, no Ubuntu VM or concurrent4GiB VMs. Old failure/root/signatures/trust/freeze/history retained, no recovery/failed promotion or repeated install."
+  ]
+}

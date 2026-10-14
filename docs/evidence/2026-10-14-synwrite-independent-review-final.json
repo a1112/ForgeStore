@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "review": "FINAL",
+  "reviewer": "review_synwrite_final",
+  "reviewMode": "independent read-only source and available saved public/host evidence review",
+  "baseCommit": "be958b764febbc57e5136b619299e96efa633a52",
+  "manifest": {
+    "file": "synwrite-prospective-files-v2-20261014.json",
+    "sha256": "315656658823594427b8d6caf13c2830b5c4232cb8342d51d03d7f2dc09fb6cd",
+    "prospectivePaths": 135,
+    "proposedLedgerMappedFromPrivateSource": true
+  },
+  "verdict": "ready-for-authorized-ledger-application-and-byte-preserving-Git-publication",
+  "issues": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "checks": {
+    "all135ProspectiveRawBytesAndSizesMatch": true,
+    "all135IndependentGitRawVersusFilterHashesMatch": true,
+    "old5389ImmutableShaStringsExact": true,
+    "original34FrozenRawExact": true,
+    "attributesOldWholeLfPrefixExact": true,
+    "attributesSuffixLfOnly": true,
+    "attributesPrecisePaths": 30,
+    "indexEmptyBeforeFinal": true,
+    "currentRealAccepted": 71,
+    "proposedAccepted": 72,
+    "old71AcceptedWholeFieldsExact": true,
+    "queue18WholeFieldsExact": true,
+    "onlyNewAcceptedId": "synwrite",
+    "candidateEntries": 74,
+    "candidateDistinctIds": 74,
+    "old73CatalogueEntriesWholeFieldsExact": true,
+    "signedTargets": 156,
+    "old153NonCatalogueSignedPinsExact": true,
+    "publicJsonFiles": 85,
+    "all80AvailableJsonTargetsMatchSignedHashAndSize": true,
+    "rootVersion": 1,
+    "rolesVersion": 90,
+    "rootTrustedAndMetadataRawExact": true,
+    "rootSelfAndThreeRoleRsaPssSignaturesIndependentlyVerified": true,
+    "metadataExpiryFutureAtReview": true,
+    "finiteWholeOutputsIndependentlyRebuilt": {
+      "original": {
+        "inputBytes": 32,
+        "outputBytes": 42,
+        "utf8Bom": true,
+        "crlf": 2
+      },
+      "market": {
+        "inputBytes": 32,
+        "outputBytes": 40,
+        "utf8Bom": true,
+        "crlf": 2
+      }
+    },
+    "allThreeSavedOriginalJpegsVisuallyInspected": true,
+    "noNewMarketOrReopenJpegClaim": true,
+    "allProspectiveJsonParsedAndStructuredSecretPrivateStateQueryScanClear": true,
+    "meaningfulGateSourceReview": [
+      "terminal jobs plus native exited success, wine-server-stop-requested and independent process checks",
+      "all prior Core and full SQLite row field preservation separated from exact recent64 window shift",
+      "exact original generation rollback and immutable generation/program/selected-pin preservation",
+      "literal sole unins000.dat difference and native four-file maps without wildcards",
+      "complete seven-class equality before/after one normal restart each, actual PID changes and binary pins",
+      "explicit user-requested native idle/resume automatic-lock change and unchanged prior auth pins"
+    ],
+    "finalHostCurrentReceipt": {
+      "coreJobs": 563,
+      "fullStoreRows": 164,
+      "selectedGeneration": "gen-job-1791935437260-1",
+      "checkpointSha256": "a0d272f6cc224e4da48c5117c05a53bad4e42a2578819ed653e40284909b3e62"
+    }
+  },
+  "limits": [
+    "No guest connection, GUI action, live full private checkpoint replay, credential read, or new job/restart was performed by this reviewer.",
+    "Source/code checks and available host receipts substantiate gate design; actual new GUI observations remain parent CUA tool history and are not independently replayed.",
+    "Parent relative-no-index zero-diagnostic receipts reviewed; reviewer independently reran all135 raw/filter hashes without writing Git objects.",
+    "Three original plus two market finite lifecycle jobs support the bounded one-line edit/native explicit Open workflow; exit0 alone and full editor acceptance are not claimed.",
+    "Partial-source bundle, approximately30percent EControl closed component, main/full-license closure and source-binary correspondence remain unverified; installed/program binaries are absent from public files.",
+    "Original signed marketPending history and all existing failures/trust remain immutable; completed lifecycle is separately documented.",
+    "User explicit automatic-lock request supersedes historical no-lock-setting-change constraints only for that setting; account/password/authentication changes are not authorized or claimed.",
+    "No stage, commit or push has occurred; later ledger application, index/commit/push byte audits and fresh remote verification remain parent responsibilities."
+  ],
+  "reviewInternalCorrections": [
+    "Initial old-freeze comparison used object schema rather than actual SHA string; rerun actual SHA strings passed all5389 immutable fields, no preservation finding.",
+    "Naive JSON escaping of public-key newlines failed historical root self-signature; actual TUF OLPC literal-newline canonicalization validates it, no root finding."
+  ],
+  "passed": true,
+  "finalApproved": true,
+  "reviewedManifestSha256": "315656658823594427b8d6caf13c2830b5c4232cb8342d51d03d7f2dc09fb6cd",
+  "previousReviewArtifact": {
+    "file": "review-synwrite-final-20261014.json",
+    "sha256": "7b31b85fcc7de372569b8792968c6f2c4a201225c932b36e021debc4979d62b9",
+    "whySeparateVersion": "Parent requested explicit top-level approval fields after first immutable review artifact had already been saved; first artifact is preserved."
+  }
+}

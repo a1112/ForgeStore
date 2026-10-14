@@ -1,0 +1,121 @@
+{
+  "applicationId": "synwrite",
+  "marketInstallation": {
+    "passed": true,
+    "generationId": "gen-job-1791961545499-2",
+    "installJobId": "job-1791961545499-2",
+    "coreJobs": 560,
+    "fullStoreRows": 163,
+    "programFileCountEach": 368,
+    "actualProgramFileByteDifferences": {
+      "unins000.dat": {
+        "original": {
+          "sizeBytes": 27036,
+          "sha256": "dcd2d813fc9dba582b830082e82f18f4f31505222e37d0c545bf990b3e2f8002"
+        },
+        "market": {
+          "sizeBytes": 27036,
+          "sha256": "83afd79a663f528529d326cbd79b9114a7a0275a81ded07a7b68b4862e5ae5ef"
+        }
+      }
+    },
+    "allOther367ProgramFilesByteEqual": true,
+    "recent64SnapshotExactWindowHeld": true,
+    "old559And162AllFieldsHeld": true,
+    "checkpoint": {
+      "file": "after-market-install-v2.json",
+      "sha256": "49108f95f7ada1ba0e578bf6af639600c27707a4a3dff55cac92b7554d25b8bd",
+      "coreJobs": 560,
+      "fullStoreRows": 163
+    },
+    "marketInstallRecordSha256": "e33a1ff87c1e9e631c90b8f7068c5033f542a414569b37c53a2ebd480ce7dc1b",
+    "fixtureWrittenOrGuiLaunched": false,
+    "guiAccepted": false,
+    "published": false
+  },
+  "firstRecent64GateFailureFullPrivateDiagnosticSha256": "58a78bf53ca4981589a15ab5edbf36991ebbe9bc484a42bb0830193eca31bf41",
+  "independentFullSqliteAndCoreOldFieldGateDiagnosis": {
+    "actualDiagnosticSha256": "58a78bf53ca4981589a15ab5edbf36991ebbe9bc484a42bb0830193eca31bf41",
+    "fullActualSnapshotSavedBeforeFailedAssertion": true,
+    "checkpointNotSaved": true,
+    "sevenClassEqualityPassed": false,
+    "rowDifferences": {
+      "jobs": {
+        "beforeCount": 559,
+        "afterCount": 560,
+        "missingIds": [],
+        "newIds": [
+          "job-1791961545499-2"
+        ],
+        "changedFieldNames": {}
+      },
+      "rows": {
+        "beforeCount": 162,
+        "afterCount": 163,
+        "missingIds": [],
+        "newIds": [
+          "0fa2cbde-dfd9-4671-bd85-2f03e32612b1"
+        ],
+        "changedFieldNames": {}
+      }
+    },
+    "marketPriorJobMissingIds": [
+      "96188b4e-98d5-45e0-bc32-58aec9e2beac"
+    ],
+    "marketPriorChangedFieldNames": {},
+    "actualStoreUpdateJobState": "succeeded",
+    "actualInstallJobId": "job-1791961545499-2",
+    "actualInstallJobStatus": "succeeded",
+    "actualGenerationId": "gen-job-1791961545499-2",
+    "actualGenerationStatus": "ready",
+    "actualProgramFileCount": 368,
+    "actualProgramFileDifferences": {
+      "unins000.dat": {
+        "original": {
+          "sizeBytes": 27036,
+          "sha256": "dcd2d813fc9dba582b830082e82f18f4f31505222e37d0c545bf990b3e2f8002"
+        },
+        "market": {
+          "sizeBytes": 27036,
+          "sha256": "83afd79a663f528529d326cbd79b9114a7a0275a81ded07a7b68b4862e5ae5ef"
+        }
+      }
+    },
+    "removedProgramNames": [],
+    "marketGuiOrFixtureNotPerformed": true,
+    "noRollbackRestartRecoverOrRepeatedInstallPerformed": true,
+    "uniqueCauseNotEstablished": true
+  },
+  "recentSnapshotSourceCheck": {
+    "passed": true,
+    "sourceArchiveSha256": "b8f43b8fb61568ac84158c9229d4ba556bc97cc2d880f82c23d881bf66f57004",
+    "historicVerifiedDeployedBinarySha256": "152e111f252393b2721d14f100df9bd1a9918fcf34f411e4ab3de5b1376c369f",
+    "selectedRawPins": {
+      "crates/forge-store-core/src/bin/forge-store-service.rs": {
+        "sizeBytes": 37248,
+        "sha256": "0387d030617fce9fa3144130d00aec39b733070ba60a058bc436c71c9358ee45"
+      },
+      "crates/forge-store-core/src/queue.rs": {
+        "sizeBytes": 9148,
+        "sha256": "a1686616431b8544161626f472f184f03e0cd604411f53e2f83588302374ff1b"
+      }
+    },
+    "serviceSnapshotStaticRecentLimit": 64,
+    "queueRecentOrderDescendingLimitThenReverseObserved": true,
+    "staticSourceContextNotRuntimeFunctionTrace": true,
+    "noBuildOrDeploymentOrGuestMutation": true
+  },
+  "recent64ExactShiftWindowVerified": true,
+  "oldFirstIdStillFullSqliteUnchanged": true,
+  "initialCommentaryFullRowLossInterpretationCorrected": true,
+  "noRepeatInstallRestartOrRestore": true,
+  "limits": [
+    "Finite one-line text edit only: original32B→42B, market32B→40B; UTF8 BOM and two CRLF, Chinese first line unchanged, ASCII STATUS AFTER ORIGINAL42/MARKET42. Whole native output bytes independently rebuilt from immutable input on guest and host; no host output rewrite. Synthetic text not additional application.",
+    "Two original new processes and one market new process visibly started empty Untitled, native File/Open in actual remembered SynWriteTests directory explicitly double-clicked original.txt/market.txt. Five formal native File/Exit plus actual exited.code0/success and wine-server-stop-requested, independent ps noWine. Exit0 alone not acceptance. Original initial preinstalled plugins notice normal OK, no plugin invoked. No About, direct Chinese keyboard, complete editor, plugin/FTP/Python, broad encodings, large-bad files, printing, migration, unattended, GUI market button or background network exclusion acceptance.",
+    "Official fixed EXE11499333B and ZIP13856627B cached from completed HTTPS200/ContentLength before original installation. Partial binary/source bundle:413unique366regular/allCRC; nested Src.zip249unique/allCRC,24 selected raw members, not full source manual review. Homepage states approximately30percent EControl closed source. SourceForge MPL1.1 metadata only web-text scope; selected MPL2/LGPL and ImageToBmp MPL1.1/EControl exceptions retained. Main/complete bundle license and closure unverified; Setup6.40.2770 differs from binary6.41.2780. PGP/Authenticode/upstream digest/sourcebinary/repro/latest unverified. Inno5.5.7/bootstrap/mainPE14c/one-backslash DIR16 only finite installer evidence, not complete UAC/association/shortcut/uninstall contract.",
+    "Each initial368programs,367 cross-generation same, sole unins000.dat27036B with exact actual original/market pins/raw privately held; cause/uninstall unverified. Four native INI created per generation and12 selected pins per generation. Actual GUI registry bytes changed, before/after raw and UTF8 diffs privately retained, cause/key-value equivalence unknown; no old registry across GUI byte equality/fullFS claim. First discovery not creation time. Core query may write existing scratch; recent64IPC not fullSQLite.",
+    "All new original-reopen, market and rollback-third GUI frames only CUA tool history; no new JPEG saved or fabricated. Original3 saved JPEG and original34 public evidence/signed marketPending receipt remain immutable history. Completion recorded separately. User extra VM reboot earlier does not replace final one normal Core/Store restart each; preview Store restart separate. No installer/program/Core/immutabledefinition/launcher/envcwd/font/globalDLL/runtime repair or recover in this stage.",
+    "User explicitly requested disabling automatic screen lock after market reopen and exact rollback. Native KDE System Settings applied idle no automatic lock and unchecked lock on resume; newly created53B kscreenlockerrc persists Autolock=false,LockOnResume=false,Timeout=0. Existing auth/account/password settings remain byte held; manual lock shortcut remained shown. Prior no-lock-change text is frozen history superseded for this explicitly requested setting. No password/login image stored; normal user logins acknowledged this phase, no agent password input or auth submit this phase.",
+    "Public contains no installer/program binaries, full private checkpoint or authentication configs, passwords/keys/credentials/login images/exact signed redirectquery. Independent review checks available saved evidence and helper gates, does not replay guest GUI/full private state. Files dated AsiaShanghai20261014; original first installation/save UTC13, later reboot/reopens/market/rollback UTC14. Ubuntu independent old ledger/cache and no concurrent4GiBVM/noVMswitch held; old failed applications,trust/root/signatures/cache/history preserved."
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applications": [
+    {
+      "id": "devcpp",
+      "version": "5.11",
+      "edition": "No Compiler",
+      "originalGenerationId": "gen-job-1791840525058-1",
+      "originalGenerationDefinitionDigest": "sha256:576e0660960410b5df7afb36d142f7a032af0927f857630c26734ff9d1842d15",
+      "installerSha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711",
+      "installerSize": 2148605,
+      "guiFileOperation": "original limited ASCII input word edit/comment append/SaveAs/fresh explicit native Open passed; market pending",
+      "originalGuiReceipt": "windows-devcpp-20261013.acceptance.json",
+      "originalGuiReceiptSha256": "0ebeab5448d9a8b848495baab98c5fd90ae10fb6a5e5a88690d454b0ede0c77f"
+    }
+  ],
+  "activeFilenameAlias": {
+    "passed": true,
+    "onlyChangedDefinitionField": "installer.fileName",
+    "beforeDefinition": {
+      "bottleId": "gui-devcpp",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "devcpp",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\DevCpp"
+        ],
+        "fileName": "Dev-Cpp 5.11 No Compiler Setup.exe",
+        "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+      },
+      "launchers": [
+        {
+          "executable": "DevCpp/devcpp.exe",
+          "id": "main",
+          "name": "Orwell Dev-C++"
+        }
+      ],
+      "name": "Orwell Dev-C++",
+      "publisher": "Orwell Dev-C++",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "5.11"
+    },
+    "afterDefinition": {
+      "bottleId": "gui-devcpp",
+      "category": "development",
+      "compatibilityRating": "unknown",
+      "id": "devcpp",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\DevCpp"
+        ],
+        "fileName": "Dev-Cpp-5.11-No-Compiler-Setup.exe",
+        "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+      },
+      "launchers": [
+        {
+          "executable": "DevCpp/devcpp.exe",
+          "id": "main",
+          "name": "Orwell Dev-C++"
+        }
+      ],
+      "name": "Orwell Dev-C++",
+      "publisher": "Orwell Dev-C++",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "5.11"
+    },
+    "originalGenerationDefinitionAndAllRecordsUnchanged": true,
+    "originalInstalledProgramsAndFixedDataUnchanged": true,
+    "installerAliasBytesEqualOfficialSource": true,
+    "installerPin": {
+      "sizeBytes": 2148605,
+      "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711"
+    },
+    "coreJobs": 488,
+    "fullStoreRows": 142,
+    "sevenCapturedStateClassesUnchanged": true,
+    "marketInstallerOrGuiNotSubmitted": true,
+    "checkpoint": {
+      "file": "after-active-filename-alias.json",
+      "sha256": "522f4972b8d036828c0367c98d8c9fa3c1b1cc0ef99813a086df6535f1f00fac",
+      "coreJobs": 488,
+      "fullStoreRows": 142
+    },
+    "sourceUrlChanged": false,
+    "launcherRuntimeOrProgramModified": false,
+    "guardRelaxed": false
+  },
+  "limits": [
+    "Only installer.fileName changes in active application definition. Original installed generation definition and all program/launcher/runtime bytes retained. Alias installer all bytes equal official cached source. Official URL unchanged.",
+    "Original Chinese-name Open failed; still unrepaired. ASCII fixture copy and compiler-free text workflow do not establish compile/link/run/debug/project/full IDE acceptance.",
+    "Role77 preview rejected due literal-space artifact target; role78 withdrew preview and restored healthy Store with full seven-class checkpoint. All old signed metadata, target and failure history retained; guard and trust not weakened.",
+    "Independent market installation/GUI, IPC update/exact rollback, third original reopen and final normal-service restart still pending at this signed freeze."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "completedCountUnchangedAtFreeze": 61,
+  "pendingCountUnchangedAtFreeze": 17
+}
