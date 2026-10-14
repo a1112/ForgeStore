@@ -1,0 +1,313 @@
+{
+  "applicationId": "cdrtfe",
+  "exactRollback": {
+    "selectedGeneration": "gen-job-1791975365459-1",
+    "rollbackJob": {
+      "action": "rollback",
+      "appId": "cdrtfe",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "219b28b5-a65e-4792-911a-a6ec4fe42047",
+      "state": "succeeded"
+    },
+    "checkpoint": {
+      "file": "after-exact-original-rollback.json",
+      "sha256": "183fa2bc66e5cff9daf048bd279accf8d09bf8bcd6df0813e80b98035257809f",
+      "coreJobs": 576,
+      "fullStoreRows": 168
+    },
+    "actualCdrtfeInstalledBefore": {
+      "appId": "cdrtfe",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "1.5.9"
+    },
+    "actualCdrtfeInstalledAfter": {
+      "appId": "cdrtfe",
+      "backend": "compatforge",
+      "canRollback": true,
+      "version": "1.5.9"
+    },
+    "allOldCoreAndFullSqliteFieldsHeld": true,
+    "bothImmutableGenerationRecordsHeld": true,
+    "bothProgramAndSelectedPinsHeld": true,
+    "recent64ExactWindowHeld": true
+  },
+  "thirdOriginalFinal": {
+    "passed": true,
+    "guiJobId": "job-1791978908504-7",
+    "actualStatus": "succeeded",
+    "actualExitedExit": {
+      "code": 0,
+      "success": true
+    },
+    "completeJobEventsAndIndependentPsNoWine": true,
+    "program140Held": true,
+    "selectedPins": 7,
+    "registryChangeNames": [
+      "system.reg",
+      "user.reg"
+    ],
+    "generationDifferencePaths": {},
+    "checkpoint": {
+      "file": "after-third-original-native-exit.json",
+      "sha256": "2179d90b52d86a6f67026e326aad3cee01c8ec1919609da280f738a5eb0aefe1",
+      "coreJobs": 577,
+      "fullStoreRows": 168
+    },
+    "actualDiagnosticSha256": "dfffc49156df8e934d7e7bb7fbf7fb7db9b5359c3bebb159f55ac5024884b452",
+    "finiteFirstGuiReadEditSavePassed": true,
+    "newFormalEmptyListExplicitLoadProjectPassed": true,
+    "recordSha256": "f3236b6667eb1c800ccbbe4b32cb91c82b38cc7d299dc1308437d8304aed5cee",
+    "guiAccepted": false,
+    "published": false
+  },
+  "selectedRegistryDifferences": {
+    "cdrtfe-original-first-native-exit-20261014": {
+      "system.reg": {
+        "before": {
+          "sizeBytes": 3431194,
+          "sha256": "51a32414a63d004d59d15fe5f0fc88495ff4d65f332ee6d8c5fb5daf6e2343ca"
+        },
+        "after": {
+          "sizeBytes": 3424840,
+          "sha256": "a22761a0d78562cec31fde1d3d7755c9fc428937e27ee0ef8ce0cb0ef11078ef"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 24339,
+          "sha256": "0870ccec974e101845a5b467bc9cc83e560ca61ef226c938daed5dd7c9d9183a"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      },
+      "user.reg": {
+        "before": {
+          "sizeBytes": 101299,
+          "sha256": "bfebadeb85a7c32252ca7e150d7bd4b458c32b1ef7b661dacd9b7d6200db0e36"
+        },
+        "after": {
+          "sizeBytes": 102620,
+          "sha256": "10747dfde2fea4b6465f0c1982a38783297cbbd3631f7345c31a7ad2d1f22e86"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 2552,
+          "sha256": "57181ddbedb0e737540c4f32f49b2557156a0ef1381d20b9f120ad861ae79418"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      }
+    },
+    "cdrtfe-original-reopen-native-exit-20261014": {
+      "system.reg": {
+        "before": {
+          "sizeBytes": 3424840,
+          "sha256": "a22761a0d78562cec31fde1d3d7755c9fc428937e27ee0ef8ce0cb0ef11078ef"
+        },
+        "after": {
+          "sizeBytes": 3424840,
+          "sha256": "1de50a1dccccdb658d97b1c6d7e68ca64dfcb045811fd77314c4802bdf10a955"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 16051,
+          "sha256": "c29754fc57bc93176b956bfdffe30320183a210e43769f944084a9b811152cca"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      },
+      "user.reg": {
+        "before": {
+          "sizeBytes": 102620,
+          "sha256": "10747dfde2fea4b6465f0c1982a38783297cbbd3631f7345c31a7ad2d1f22e86"
+        },
+        "after": {
+          "sizeBytes": 102620,
+          "sha256": "e4cb2505a73bfdb6fcdb2adb229dc81a805f1c7e3bc91750cf2d3a6bc4ef2cc0"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 756,
+          "sha256": "bc62af574b5770f0b6108dba3adea3b4d90cd98f1da08e70eee5c0a43429dbb6"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      }
+    },
+    "cdrtfe-market-first-native-exit-20261014": {
+      "system.reg": {
+        "before": {
+          "sizeBytes": 3431194,
+          "sha256": "8afea653e481406d05b3382e22c2c681243ec1dcb8c375f36f6b60b9bd4bdf0a"
+        },
+        "after": {
+          "sizeBytes": 3424840,
+          "sha256": "000cc439050c4150ae0da85df6489d1c4dcf515dbdfff62644a762b2c24169e4"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 24339,
+          "sha256": "6a31e9dcbc3ee8f5553a5b205804e28a783ae32f07107d064fec7e230ef0bd1f"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      },
+      "user.reg": {
+        "before": {
+          "sizeBytes": 101299,
+          "sha256": "7fc1770b9c4cc0c5fc4f03c36800ad2f2958a34f54ec207b24892f798372e4e1"
+        },
+        "after": {
+          "sizeBytes": 102620,
+          "sha256": "e066b8b17adc5078824f8fc25b20783ba06067736c2ea2c5cf311a1ce8783910"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 2552,
+          "sha256": "66967bddee75fc9111fd9a5d209b414964a89cb5bf60f53098ca3a3188cb274d"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      }
+    },
+    "cdrtfe-market-reopen-native-exit-20261014": {
+      "system.reg": {
+        "before": {
+          "sizeBytes": 3424840,
+          "sha256": "000cc439050c4150ae0da85df6489d1c4dcf515dbdfff62644a762b2c24169e4"
+        },
+        "after": {
+          "sizeBytes": 3424840,
+          "sha256": "3a0310b1564226032ed1e7aa0c76b3b4c0b0a3f700be87edf72766963f02386c"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 16051,
+          "sha256": "b577f44ffbb355ef2122c050fb19efd40e185182239d0b9376fb4331844aace5"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      },
+      "user.reg": {
+        "before": {
+          "sizeBytes": 102620,
+          "sha256": "e066b8b17adc5078824f8fc25b20783ba06067736c2ea2c5cf311a1ce8783910"
+        },
+        "after": {
+          "sizeBytes": 102620,
+          "sha256": "9012d8b3055f9177b4ab1eef87f5d2381b934e18639e1933ba0ba4063707880a"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 756,
+          "sha256": "336070ac8ae89a06618fce8da6a71bd5e035f060e5ad3abd049796b7a355e086"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      }
+    },
+    "cdrtfe-third-original-native-exit-20261014": {
+      "system.reg": {
+        "before": {
+          "sizeBytes": 3424840,
+          "sha256": "1de50a1dccccdb658d97b1c6d7e68ca64dfcb045811fd77314c4802bdf10a955"
+        },
+        "after": {
+          "sizeBytes": 3424840,
+          "sha256": "8e1effd2b95dbe381a1d03f59080dd0b92fd8526c6d48cfd717f0522942314ed"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 16051,
+          "sha256": "8bd97658080e80847502f35075c55bb9de484959303bfdaf61bbb3e55ba80659"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      },
+      "user.reg": {
+        "before": {
+          "sizeBytes": 102620,
+          "sha256": "e4cb2505a73bfdb6fcdb2adb229dc81a805f1c7e3bc91750cf2d3a6bc4ef2cc0"
+        },
+        "after": {
+          "sizeBytes": 102620,
+          "sha256": "730626d751e4776a76d5895a6058d7f63dbfe60876c031a3e6b2625e281d43c5"
+        },
+        "privateDiffPin": {
+          "sizeBytes": 756,
+          "sha256": "e9660b75b2297c5799adfa78e9fb367473bc3be52ea21b93ef481d8ba0c52e53"
+        },
+        "causeOrKeyValueEquivalenceEstablished": false
+      }
+    }
+  },
+  "selectedPinsDigestOnly": {
+    "original": {
+      "system.reg": {
+        "sizeBytes": 3424840,
+        "sha256": "8e1effd2b95dbe381a1d03f59080dd0b92fd8526c6d48cfd717f0522942314ed"
+      },
+      "user.reg": {
+        "sizeBytes": 102620,
+        "sha256": "730626d751e4776a76d5895a6058d7f63dbfe60876c031a3e6b2625e281d43c5"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "a90a880017b24aa804825cef2a3fb34de238bf85156750ee67572d39bdd40879"
+      },
+      "drive_c/CdrtfeTests/original-a.bin": {
+        "sizeBytes": 35,
+        "sha256": "304a627db883bdad8753d30593105f6a7d63589d60ed6792fbd7b25e9d9d2f64"
+      },
+      "drive_c/CdrtfeTests/original-b.bin": {
+        "sizeBytes": 35,
+        "sha256": "d440b8d79d638f8310158023ffa77dec4c07adf02bd5d57ff6a154c450f69fc4"
+      },
+      "drive_c/CdrtfeTests/original.cfp": {
+        "sizeBytes": 3664,
+        "sha256": "bb9d5ae0f8c792887508345fa563b2eadc05a020e526d9f7b5cc755587411121"
+      },
+      "drive_c/CdrtfeTests/original.cfp.files": {
+        "sizeBytes": 166,
+        "sha256": "0a9d6e30e02bfa5a658aaea26d2f2ee816907eace78b74a697a94707d3f76ac2"
+      }
+    },
+    "market": {
+      "system.reg": {
+        "sizeBytes": 3424840,
+        "sha256": "3a0310b1564226032ed1e7aa0c76b3b4c0b0a3f700be87edf72766963f02386c"
+      },
+      "user.reg": {
+        "sizeBytes": 102620,
+        "sha256": "9012d8b3055f9177b4ab1eef87f5d2381b934e18639e1933ba0ba4063707880a"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "b1fc4298fee834cda03334c38919dcf719b0b8148324228927b6d371675a7b4e"
+      },
+      "drive_c/CdrtfeTests/market-a.bin": {
+        "sizeBytes": 33,
+        "sha256": "9ebe3e399276f2ce5a7f7c1e05479fe04a5147e65f6f1f9ceda2e654725eda85"
+      },
+      "drive_c/CdrtfeTests/market-b.bin": {
+        "sizeBytes": 33,
+        "sha256": "9d37cd03923e14f928e29de82c2fd5afd15ddf4422094d3115e5f2da6d33ff83"
+      },
+      "drive_c/CdrtfeTests/market.cfp": {
+        "sizeBytes": 3662,
+        "sha256": "9d633dcd8fef4c0eaac5a0736063436e60fa2ee419514576114ae517a1812a46"
+      },
+      "drive_c/CdrtfeTests/market.cfp.files": {
+        "sizeBytes": 156,
+        "sha256": "8fb891ee2ec335348967bf75115e5b33dd8290e564697a7985e1605b75ca74e3"
+      }
+    }
+  },
+  "oldRegistryBytesAcrossGuiOrKeyValueEquivalenceNotClaimed": true,
+  "limits": [
+    "Finite ASCII two-file Data Disc project references only. Two immutable35B original BIN fixtures via native MyComputer/C/CdrtfeTests file dialog, actual Shift multiselect after CtrlA did not establish double selection. Original-a.bin/original-b.bin sources shown. Only native root Set CD label changed CD to ORIGINAL42. Native Project/Save project as original.cfp3664B plus original.cfp.files166B, no host output editing. No actual optical disc write, CD/device/media detection, ISO production or tool execution acceptance.",
+    "Host independently rebuilt all166 bytes of CFP.files from immutable ASCII input names, ORIGINAL42 label and fixed selected source structure. File list ASCII/noBOM/9CRLF; CFP ASCII/noBOM/295CRLF and selected Data-CD VolId ORIGINAL42 via independent ConfigParser. CFP full serialization/settings semantics and complete format unverified. Input BIN bytes held; synthetic BIN/CFP are not independent applications.",
+    "Second formal original process started fresh default CD root and empty file list, no automatic saved project restoration. Native Project/Load project explicitly doubleclicked original.cfp, restored ORIGINAL42 and exact two referenced sources. Actual Load dialog started CdrtfeTests; no claim that every process always remembers Save directory or that dialog-path cause was established. Default AutoSaveOnExit False declared in selected source and unchanged in native project. No host config reset or source/program repair.",
+    "Both original jobs job-1791975506632-2 and job-1791976591152-3 on sole ready gen-job-1791975365459-1 ended normally via native alt+F4. Complete nested job.events succeeded/exited.exit code0 successTrue/wine-server-stop-requested and separate ps noWine, full573Core/166StoreSQLite old fields held. Exit0 alone not acceptance. Title-X and initial File-menu interactions did not establish exit; Alt-L-f opened mkisofs Options, normal Cancel retained defaults. No actual Start/burn invoked.",
+    "Both formal launches first showed native severe component incompatibility or cygwin1.dll/version error notice; native OK then actual Data Disc editor usable. This remains an unresolved startup warning, not silent or unattended support. No exact runtime function, dynamic call trace, specific DLL root cause, actual optical/tool functionality or repair claim. Initial parent observer incorrectly assumed OK would quit and save editor-not-reached; running assertion stopped before state/CP, actual running job raw saved. Independent complete readonly live observation only whitelisted the sole running original job; no terminal CP or repeated launch from that recovery.",
+    "Official website setup/source1.5.9 fixed links observed via web tool, not raw HTML. SourceForge fixed directory also lists newer1.5.9.1, not selected; no latest claim. Installer7444776B SHAd6683fce47b9c85d2077b1be3b424a4a42be989830f52783673e01e9d06a8470 and source555044B SHA8108c91ecb84deabc7f72919d8e5825ed8366806ebc8f001b19dfa8e407e20eb, complete HTTPS200/ContentLength. Only local SHA, upstream digest/PGP/Authenticode/repro/source-binary/latest unverified. Both GET terminal before once original install; first complete partials/cache kept, no repeated GET.",
+    "RAR288unique227regular/safe paths and actual7Zip t exit0,16 selected raw files, not all source manual review. Main cdrtfe.dpr GPL2-or-later; license.txt adds LGPL/MPL1.1/CDDL combination exception and source conditions. Installed doc/license/COPYING.txt18332B exactly equals all selected source COPYING bytes; main special-exception license file not separately compared as installed named text. Full Delphi VCL/JCL/JVCL/Imaging/Mustangpeaks/Cygwin/cdrtools/m2cdm/flac/lame/mpg123/vorbis/tools/icons/translations license closure unverified. No entire Windows bundle GPL closure or public binary redistribution claim.",
+    "Actual two Inno5.5.7 data markers/bootstrap/mainPE14c. Fixed1.5.9 source cdrtfe.iss still defines1.5.8 and commentInno5.5.9, raw retained, no corresponding-package script claim. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:one-backslashCdrtfe /NOICONS /TASKS= /LANG=en; DIR14UTF8 hex2f4449523d433a5c436472746665. Default components retained, no patched-tools selection. Static admin/shell extensions/tasks not real Windows UAC/association/shortcut/uninstall proof. Main cdrtfe.exe2174928B SHAe2e6033383e0aaa2566802bf2c1fc06c7533b93a1d5e355e7a606c9e0a381714 is32bit, not entire app size.",
+    "All140 initial program files held across both original GUI/exits. Selected7 only three registries and four fixed BIN/CFP files. Actual registry before/after raw and UTF8 differences private; both system.reg/user.reg changed, causes/key-value equivalence unknown, userdef held. Not old registry/config bytes same across GUI and not full filesystem/config inventory. Bounded prefix-user/ProgramData cdrtfe-named discovery found none during second live read, not full FS absence or proof of creation time. Recent64IPC not full StoreSQLite; queries can write existing scratch.",
+    "Complete original terminal CP after-original-reopen-native-exit SHAe2515e322dcb91dff90757da3a07857f13c50087d6b934a3c9481e1b5dbbfbac and readonly V2 helper preserve both QuiteRSS99/all15 each plus SynWrite and every earlier fixed-data range, auth/boot/disabled-autolock53B and unchanged service PIDs/binary. Private fullCP, raw DB/cookies/auth, credentials/private keys/login images/exact redirect query and installer/program bytes not public. New library cannot substitute older low counts.",
+    "Six actual JPEGs:00 and03 startup notices diagnostic only,01 original two file references,02 volume after save,04 second fresh empty list,05 explicit Load Project. No login or market images. First native maximize showed transient blank regions until menu/repaint, native restore and noVNC side-panel overlap/folding only view actions, not application repair. Experimental browser clipped screenshot showed a dark crop in tool history; later explicit full614x672 screenshots used without viewport setting change, none of those dark crops were saved as these JPEGs.",
+    "Independent StoreIPC same-version market install, market GUI/native save/newprocess explicit Load, exact original rollback/third original Load, final normal Core/Store restarts, independent FINAL and Git publication pending at this frozen phase. Windows73 accepted and18 queue all old fields retained, no count addition. Candidate preparation and signing/preview are not completed acceptance. No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime fix, recover, VM reboot, auth submit or original-phase service restart.",
+    "Full recorder/audio/video/XCD/DAE/disc/device/ISO/burn/boot/multisession/advanced settings/large-bad inputs/broad formats/Unicode paths/direct Chinese keyboard/About/printing/background network exclusion/online services/migration/unattended/GUI market buttons untested. Default English and finite ASCII workflows only. Ubuntu independent/no concurrent4GiB VMs, old failures/licences/root/signatures/trust/cache held, Greenfish and CopyQ restrictions unchanged.",
+    "Host source-list V1 assumed LF separator but actual7Zip output CRLF: IndexError before archive test/source inventory/extraction/guest install. Original stdout/stderr raw held; V2 diagnostic newline normalization only, raw unchanged. Selected-source V1 any-later-version contiguous substring failed after12 raw copies because linewrapped; V2 diagnostic whitespace normalization and actual old iss version recorded, all source raw retained. Those direct-command exact stderr and quoting/rg failures only tool history, not fabricated saved raw. Parent inline python-c shell quotation SyntaxError and Windows rg wildcard error did not alter guest or count. Every failed gate stopped dependencies until actual diagnostics; no wildcard or reinstall recovery.",
+    "Later completion recorded separately: original2, independent market2 and exact rollback third original five formal native Alt-F4 succeeded/full nested exited0 success/wine-server-stop/independent ps absence. All five actual task milliseconds convert to UTC2026-10-14. Every fresh process default CD root and empty file list before explicit native Load saved CFP; no automatic restore or host reset. Both dialogs actual started CdrtfeTests after prior native file selection/save, cause not independently established.",
+    "Two independent generations140each/139cross same. Sole uninst/unins000.dat21032B differs: original62bcfd324236634e18c6f3a0bf71d4a70926cd24a40b3b57fe18a6557a31907b/market158397dc89cf0905dd1a60e8e986f48f56e78c77d8d73c81d14b12b75694a6e5. Both exact raw private; cause/uninstall unverified. Entire140 own-generation maps held across GUI/rollback/restart, no wildcard ignore.",
+    "Original CFP3664B/market3662B, both ASCII/noBOM295CRLF. Whole market CFP bytes exactly original native CFP with only VolId ORIGINAL42 to MARKET42 replacement; this is actual byte comparison, not complete CFP semantics/specification. Native paired CFP.files166/156B ASCII/noBOM9CRLF independently rebuilt all bytes from each immutable input names and fixed source structure. Original each35B/market each33B immutable BIN held; no actual disc or ISO/tool functionality accepted.",
+    "Complete market first575/167 and market reopen576/167 CP saved/readback before exact rollback. Rollback576/168 saved/readback before third original; third577/168 CP before final Core/Store each one normal restart. Before PIDs independent private saved/readback, both after changed, same running binary SHA. Final seven classes all fields exact with monotonic latestKnownTime separately, all old complete Core/SQLite history, both140/all7 each/QuiteRSS99+15 each/SynWrite/prior fixed data/auth/boot/53B disabledautolock held. Preview Store restart separate, no second final restart or VM reboot/recover.",
+    "Rollback actual selected original gen-job-1791975365459-1; market gen-job-1791977598043-4 immutable definition/digests/launchers/runtime all same. Actual Store installed appId/backend/version/canRollback dictionary fully same before/after, canRollback true, no guessed false. Recent64 actual exact shift and oldest affected ID still identical in full SQLite, not full history via recentIPC.",
+    "Later host market proof V1 had literal CRLF inside a bytes literal, compile SyntaxError before any read/write; V2 chr13/chr10 equivalent bytes expression passed without output edit. Market reopen/rollback/third dependent launches only after this V2 passed. Initial sign-pack draft V1 old-directory mapping collision caught by source inspection before any execution; V2 correctly old82/new83, actual sign/rootverify/transfer/stage/preview each once, no fabricated failed signing. Guessed rollback helper path ENOENT only tool history.",
+    "15 actual JPEGs with five startup notices diagnostic only; six original-first/reopen images frozen and separate six market/three third-original images. Original31 source/install/gui/receipt and signed marketPending phase labels raw unchanged; do not rewrite frozen pending tags after completion. Public current observer records host publication separately; final publication/FINAL/Git pending at current record freeze. No full private CP/DB/cookies/auth raw/credentials/private keys/program or installer bytes/login image/signed redirect query public."
+  ]
+}

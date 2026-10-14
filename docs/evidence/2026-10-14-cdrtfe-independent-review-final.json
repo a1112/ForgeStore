@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "applicationId": "cdrtfe",
+  "version": "1.5.9",
+  "reviewStatus": "FINAL",
+  "passed": true,
+  "blockingFindings": [],
+  "nonblockingFindings": [],
+  "baseCommit": "1aea77d0ac285db8751e3dbfe46783f07e61a597",
+  "prospectiveManifest": {
+    "file": "cdrtfe-prospective-files-20261014.json",
+    "sha256": "21684c442be5a9d1a38d54f31af7f3e4c1538cbbdbaeaffac4182714c2fb95c8",
+    "paths": 144,
+    "ledgerSubstitution": "Actual public ledger remains 73 accepted / 18 queue; private proposed 74 replaces only manifest ledger source for this review; no reviewer ledger application."
+  },
+  "reviewerMode": "Read-only independent artifact, source, signature, Git raw and finite evidence review. No guest GUI/current/full-private-checkpoint replay and no claim of whole-workspace bytes equal.",
+  "independentValidations": {
+    "manifest": {
+      "paths": 144,
+      "sha256": "21684c442be5a9d1a38d54f31af7f3e4c1538cbbdbaeaffac4182714c2fb95c8"
+    },
+    "ledger": {
+      "actual": 73,
+      "proposed": 74,
+      "queue": 18,
+      "oldFieldsPreserved": true
+    },
+    "frozen": {
+      "oldImmutable": 5663,
+      "original": 31
+    },
+    "selectedSourceRaw": 16,
+    "licenseVersionScope": true,
+    "nativePairedOutputs": true,
+    "tuf": {
+      "roles": [
+        "root",
+        "targets",
+        "snapshot",
+        "timestamp"
+      ],
+      "oldNoncatalogueRawAndPins": 157,
+      "publicTargets": 82,
+      "totalSignedTargets": 160,
+      "catalogueEntries": 76,
+      "oldCatalogueEntriesHeld": 75
+    },
+    "archive": {
+      "unique": 288,
+      "regular": 227,
+      "actualIndependent7ZipTestExit": 0,
+      "selectedRawArchiveMembers": 16,
+      "sha256": "8108c91ecb84deabc7f72919d8e5825ed8366806ebc8f001b19dfa8e407e20eb"
+    },
+    "lifecycleEvidence": {
+      "fiveSelectedJobsCompleteNestedEvents": true,
+      "programsEach": 140,
+      "selectedEach": 7,
+      "soleCrossDifference": "uninst/unins000.dat",
+      "installedCopyingRawEachEqualsSource": true,
+      "guestReplay": false
+    },
+    "privacy": {
+      "paths": 144,
+      "actualNewSecretPatternsOrPeFiles": 0,
+      "legacyQueryOccurrences": 4,
+      "legacyQueryExactBytesHeld": true,
+      "all15ImagesNoLogin": true
+    },
+    "privateCache": {
+      "files": 60,
+      "allRawPinsHeld": true,
+      "scope": "Only this host cache, not public working freeze or guest full filesystem"
+    },
+    "gitIndexHead": {
+      "passed": true,
+      "oldIndexHeadRawFiles": 6906,
+      "outsideEvidence": 1241,
+      "oldWorkingDiffs": 31,
+      "attrsOldPrefix58093Held": true,
+      "images": 15,
+      "allImageRawCacheEqual": true,
+      "allImageDimensions": [
+        614,
+        672
+      ]
+    },
+    "precheck": {
+      "passed": true,
+      "paths": 144,
+      "rawFilteredEqualEveryPath": true,
+      "relativeNoIndexDiagnostics": 0,
+      "preciseAttributePaths": 22,
+      "extraConflictMarkerRuleSingleExactPath": true,
+      "oldPrefixBytes": 58093,
+      "stageOrRenormalizeExecuted": false
+    },
+    "dataRetentionChain": {
+      "newLibrarySha256": "03f266f32380e992bab5d597d0eed966b9e67b1b115ce52ebc987a9c1260cdcf",
+      "strictPriorLibraryHash": "b40031709baa23cfdf4c748dc65bbd94bab7cb317b1af3d94f60a19e4661948c",
+      "extendsBothQuiteRss99Programs15SelectedEachAndAllPriorOutputs": true,
+      "finalCurrentHelperSha256": "a35b43f311f622514e13a040dbcf15a4bcf79ce38730e2126d2493645d1d09ad",
+      "observedGuestStateNotReplayedByReviewer": true
+    }
+  },
+  "finiteAcceptanceScope": [
+    "Two immutable ASCII original35B and market33B synthetic BIN references; native single root volume label and native CFP plus paired .files save; fresh empty Data Disc list then explicit Project/Load project in new formal original/market and exact-rollback third original processes. No synthetic fixture counted as application.",
+    "Native CFP original3664B/market3662B ASCII no BOM, each295CRLF; whole market bytes equal original single VolId replacement. Paired original166B/market156B files each9CRLF fully independently reconstructed from fixed source structure and immutable filenames. Complete CFP semantic specification is not established.",
+    "Five published selected formal jobs have complete nested events started, wine-server-stop-requested, exited code0/success true; actual timestamps UTC2026-10-14. Evidence separately records native alt+F4 and independent ps noWine; exit0 alone is not acceptance.",
+    "Exact selected original gen-job-1791975365459-1; independent market gen-job-1791977598043-4. Definition/digest/launcher/runtime all fields equal. Exact rollback Store receipt succeeded, full installed dictionary held and canRollback remains true. Recent64 shift is separate from full168 SQLite history.",
+    "Published digest-only CP sequence marketfirst575/167, marketreopen576/167, exactrollback576/168, thirdoriginal577/168, final577/168 is coherent. Final CP digest b88daeb2747b4480d42c9d472c1c9855283cffd44f2cba613f9fb762f950d157, final record04eae78669c111b2a41390a8bf431c4cf28b679f2cd33fffa10baa5d68e6a723. Final Core/Store normal restarts once and independent before PID save/readback, after PID differences and same binary hashes are artifact claims verified for internal consistency; no independent guest reexecution.",
+    "Both program maps140 each, 139 cross same; sole uninst/unins000.dat21032B original62bcfd324236634e18c6f3a0bf71d4a70926cd24a40b3b57fe18a6557a31907b / market158397dc89cf0905dd1a60e8e986f48f56e78c77d8d73c81d14b12b75694a6e5. Evidence states actual private raw held; no wildcard ignore, uninstall or causal equivalence claim. Each7 selected is bounded registry/fixed-file scope. Registry bytes changed with private actual raw/diffs, causes and key-value equivalence remain unknown.",
+    "15 JPEGs all actual cache-equal public614x672 bytes, visually reviewed individually through contact sheet plus full final third-original image. Five native component/cygwin warning frames are diagnostic, three empty-list frames and explicit-load frames support narrow process flow; no login images or original image reused as market."
+  ],
+  "preservationAndTrust": [
+    "All old5663 immutable working pins and original31 raw held; .gitattributes and real ledger are the only old mutable paths. Original source/install/gui/receipt and signed marketPending labels remain frozen phase history. Current/publication pending-at-record-freeze labels remain phase labels; this reviewer does not rewrite them.",
+    "All6906 old tracked index and HEAD blobs independently batch-read and matched parent audit raw pins/modes/OIDs;1241 outside old5665 freeze derived from actual key intersection. All31 preexisting working/index differences matched actual original working hashes/sizes; cause unknown, no whole-workspace byte equality claim. Index remained empty and HEAD unchanged.",
+    "Candidate83 root1 roles92 has76 entries=74 applications+2 fixtures,160 signed targets and87 public JSON files=82 target JSON+5 root/metadata JSON. All75 previous catalogue entries unchanged;157 prior noncatalogue signed target metadata and every physically public old target raw unchanged; trusted root exact original root. Four metadata role signatures independently RSA-PSS SHA256 salt32 with OLPC canonical JSON verified against root-authorized threshold; target/snapshot/timestamp length/hash/version chain and expiry checked.",
+    "22 initial attribute paths are exact rules for raw line endings/whitespace; single additional info.txt conflict-marker-size=50 preserves original Credits heading with seven equals delimiter and source max marker49. Old58093B LF attributes prefix unchanged, suffixLF only. Independent all144 raw/filter and relative no-index checks passed with zero diagnostic output; no stage or renormalize.",
+    "Prospective privacy inspection found no installer/program PE payload, credential/private-key token patterns, userinfo URLs, full CP/DB/cookies/auth raw or login image. Four legacy query occurrences are unchanged original public Inkscape ref40hex twice, WinMerge lang=en and old queue Greenfish filename; no signed redirect query. Public serviceBinaryPins are exactly the two preexisting Core/Store SHA256 strings, not binary payload. Four tiny BIN files are explicit synthetic fixtures."
+  ],
+  "sourceAndLicenseLimits": [
+    "Actual independent local RAR integrity test exit0,288 unique safe paths227 regular entries; all16 selected public raw match cache and actual extracted archive member bytes. Local source SHA8108c91ecb84deabc7f72919d8e5825ed8366806ebc8f001b19dfa8e407e20eb. Cache60 files raw held, including original package and complete first GET partials; no download or installation repeated by reviewer.",
+    "Main cdrtfe.dpr GPL2-or-later verified despite line wrapping; license.txt LGPL/MPL1.1/CDDL combination exception and source conditions retained. Both safe-export installed COPYING18332B raw equal source. Installed special exception named-text comparison and complete Delphi/Cygwin/cdrtools/codec/icon/translation license closure unverified.",
+    "Fixed1.5.9 archive contains iss declared1.5.8/comment Inno5.5.9 while actual package markers5.5.7. This mismatch explicitly retained; no source-binary correspondence, upstream strong digest, PGP, Authenticode, reproducible-build or latest-version claim. Official web fixed links were web-tool observations, not raw HTML."
+  ],
+  "remainingLimits": [
+    "Severe component compatibility or cygwin1.dll/version warning appears on each launch and requires native OK; unresolved and not repaired. Limited editor/reference flow does not demonstrate actual cdrtools/tool execution, disc writing, ISO production, optical device/media operation, audio/video/XCD/DAE or full recorder functionality. No unattended claim.",
+    "No Chinese GUI/path/direct keyboard/About/large malformed input/broad formats/printing/background-network exclusion/migration/GUI market button acceptance. Default English and ASCII only. No Core/program/global context/immutable definition/launcher envcwd/font/global DLL/runtime repair, auth submit, VM reboot/recover or disabling notifications.",
+    "Full private577Core/168SQLite seven-class CP and guest file state were not independently accessed/replayed by reviewer. Public digest-only receipts and helper/library structure reviewed; parent fresh actual observer and private checkpoint readback remain separate evidence. No full filesystem or full configuration equivalence.",
+    "All old trust/root/signature/failure history remains. Existing Greenfish/CopyQ/Zim/Aegisub/Texmaker/Artha/Provider restrictions and Scribus one private V1 raw-loss limitation are not expanded or repaired by this review."
+  ],
+  "failureHistoryReview": [
+    "Original source-list CRLF separator and license wrapped-substring assertions stopped before dependencies; raw source unchanged. Original parent OK-implies-quit observer stopped on actual running state before terminal CP; actual live read only whitelisted one job; later native normal exits established. No repeated install/launch/quit/restart manufactured from old running history.",
+    "Original sign draft wrong old-directory substitution caught before execution; actual V2 signed once. Market host native proof literal CRLF compile failure stopped before read/write, V2 byte expression then passed. Initial Git conflict-marker check stopped before stage; exact source-preserving attribute correction passed independent check. Unsaved exact stderr remains tool-history-only, not fabricated files.",
+    "Reviewer first frozen schema assumed object pins, actual freeze values are SHA strings; corrected actual-schema independent5663 verification passed. Reviewer extra diagnostic referenced not-yet-defined orig, then proper schema diagnostic passed. System Python lacked PIL before Git/image audit; bundled runtime ran actual audit. Node process global absent before archive test, minimal explicit noncredential child environment then actual test/member reads passed. These are reviewer tool history, not application failures."
+  ],
+  "publicationGate": "No unresolved blocker for finite cdrtfe artifact publication. Parent must receive explicit FINAL notification and final answer, then perform authorized ledger/review copy, genuine NUL stage, all index/commit raw checks and ordinary non-force push. No Git stage/commit/push, counter update, signatures or guest mutation performed by reviewer."
+}
