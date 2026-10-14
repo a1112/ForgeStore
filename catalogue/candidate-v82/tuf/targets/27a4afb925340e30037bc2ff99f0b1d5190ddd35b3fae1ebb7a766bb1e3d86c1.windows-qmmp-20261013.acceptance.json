@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applications": [
+    {
+      "id": "qmmp",
+      "version": "1.6.8",
+      "sha256": "641a2ba33795d52eb891dcdf0f71c53e024a487612a3ffde142137d79bef365e",
+      "size": 19615672,
+      "generationId": "gen-job-1791850231647-1",
+      "definitionDigest": "sha256:4f246f7d692a98c7b716f91b4047f478acace13ec79cd493f2c77d9f36851dc3",
+      "launcherSha256": "sha256:2fce3520e05d69997b49030ed8a265c4cf4bdd66bcb95513f142c48a0143291c",
+      "guiFileOperation": "passed-limited-native-two-wav-playlist-reorder-save-new-explicit-load",
+      "saveProof": {
+        "generationId": "gen-job-1791850231647-1",
+        "job": {
+          "applicationId": "qmmp",
+          "createdAtMilliseconds": 1791850329051,
+          "events": [
+            {
+              "elapsedMilliseconds": 0,
+              "kind": "started",
+              "processId": 62677,
+              "requestId": "job-1791850329051-2",
+              "schemaVersion": "1",
+              "sequence": 0
+            },
+            {
+              "elapsedMilliseconds": 191604,
+              "kind": "wine-server-stop-requested",
+              "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791850231647-1/prefix",
+              "requestId": "job-1791850329051-2",
+              "schemaVersion": "1",
+              "sequence": 1
+            },
+            {
+              "elapsedMilliseconds": 191646,
+              "exit": {
+                "code": 0,
+                "success": true
+              },
+              "kind": "exited",
+              "requestId": "job-1791850329051-2",
+              "schemaVersion": "1",
+              "sequence": 2
+            }
+          ],
+          "generationId": "gen-job-1791850231647-1",
+          "id": "job-1791850329051-2",
+          "inspection": {
+            "architecture": "x86",
+            "entryPointRva": 5248,
+            "fileDigest": "sha256:2fce3520e05d69997b49030ed8a265c4cf4bdd66bcb95513f142c48a0143291c",
+            "fileSizeBytes": 300544,
+            "format": "pe32",
+            "imageKind": "executable",
+            "importLibraries": [
+              "kernel32.dll",
+              "libgcc_s_dw2-1.dll",
+              "libstdc++-6.dll",
+              "msvcrt.dll",
+              "qmmp1.dll",
+              "qmmpui1.dll",
+              "qt5core.dll",
+              "qt5gui.dll",
+              "qt5network.dll",
+              "qt5widgets.dll",
+              "shell32.dll",
+              "user32.dll"
+            ],
+            "machineCode": 332,
+            "schemaVersion": "1",
+            "sections": [
+              {
+                "executable": true,
+                "name": ".text",
+                "rawDataSize": 67072,
+                "readable": true,
+                "virtualAddress": 4096,
+                "virtualSize": 66744,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".data",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 73728,
+                "virtualSize": 112,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rdata",
+                "rawDataSize": 152576,
+                "readable": true,
+                "virtualAddress": 77824,
+                "virtualSize": 152180,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".eh_fram",
+                "rawDataSize": 6656,
+                "readable": true,
+                "virtualAddress": 233472,
+                "virtualSize": 6536,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".bss",
+                "rawDataSize": 0,
+                "readable": true,
+                "virtualAddress": 241664,
+                "virtualSize": 192,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".idata",
+                "rawDataSize": 12800,
+                "readable": true,
+                "virtualAddress": 245760,
+                "virtualSize": 12348,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".CRT",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 262144,
+                "virtualSize": 48,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".tls",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 266240,
+                "virtualSize": 8,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rsrc",
+                "rawDataSize": 55296,
+                "readable": true,
+                "virtualAddress": 270336,
+                "virtualSize": 54904,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".reloc",
+                "rawDataSize": 3584,
+                "readable": true,
+                "virtualAddress": 327680,
+                "virtualSize": 3204,
+                "writable": false
+              }
+            ],
+            "subsystem": "windowsGui",
+            "subsystemCode": 2
+          },
+          "kind": "launch",
+          "launchPlan": {
+            "bottleExecutable": {
+              "architecture": "i386",
+              "bottleId": "gen-job-1791850231647-1",
+              "digest": "sha256:2fce3520e05d69997b49030ed8a265c4cf4bdd66bcb95513f142c48a0143291c",
+              "imageKind": "executable",
+              "inspectionSchemaVersion": "1",
+              "originalName": "qmmp.exe",
+              "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791850231647-1/prefix/drive_c/Qmmp/qmmp.exe",
+              "sizeBytes": 300544,
+              "subsystem": "windowsGui"
+            },
+            "decisionTrace": [
+              "runtime provider wine-linux-x86-64-preview selected as wine",
+              "translator native selected",
+              "graphics backend wined3d selected",
+              "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+              "Bottle CJK font pinned by digest",
+              "bottle-executable sha256:2fce3520e05d69997b49030ed8a265c4cf4bdd66bcb95513f142c48a0143291c pinned in place",
+              "inspection i386 windowsGui accepted"
+            ],
+            "graphics": {
+              "backend": "wined3d",
+              "version": "11.14"
+            },
+            "lifecycle": {
+              "terminationGraceMilliseconds": 3000,
+              "wineserver": {
+                "executable": "/usr/bin/wineserver",
+                "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791850231647-1/prefix"
+              }
+            },
+            "process": {
+              "arguments": [
+                "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791850231647-1/prefix/drive_c/Qmmp/qmmp.exe"
+              ],
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "DISPLAY": ":0",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791850231647-1/prefix",
+                "WINESERVER": "/usr/bin/wineserver",
+                "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+              },
+              "executable": "/usr/bin/wine",
+              "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791850231647-1"
+            },
+            "requestId": "job-1791850329051-2",
+            "runtime": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "sandbox": {
+              "network": "deny",
+              "profile": "desktop"
+            },
+            "schemaVersion": "1",
+            "translator": {
+              "provider": "native"
+            }
+          },
+          "schemaVersion": "1",
+          "status": "succeeded",
+          "updatedAtMilliseconds": 1791850522751
+        },
+        "inputPins": {
+          "drive_c/QmmpTests/原始音频A.wav": {
+            "sizeBytes": 32044,
+            "sha256": "cb5c6604e9a1f1990437133e550427afaa30b08c65408c2a1e51a914ebcbd39a"
+          },
+          "drive_c/QmmpTests/原始音频B.wav": {
+            "sizeBytes": 32044,
+            "sha256": "2dc569bae88701c3b9794a939681e716c6679279adf50ba967f7d2deed273098"
+          }
+        },
+        "outputFile": "drive_c/QmmpTests/original.m3u",
+        "outputPin": {
+          "sizeBytes": 91,
+          "sha256": "70a03edd1ed7aa0a8caffba708eadf353a2f64cf6f8ca2838668475a08b94c95"
+        },
+        "finiteM3uOrder": [
+          "原始音频A.wav",
+          "原始音频B.wav"
+        ],
+        "durationsMilliseconds": [
+          2000,
+          2000
+        ],
+        "normalQuitMethod": "native advertised CtrlQ",
+        "hearingOrAudioDeviceVerified": false,
+        "freshExplicitGuiReopenAccepted": false,
+        "published": false,
+        "checkpoint": {
+          "file": "after-original-save.json",
+          "sha256": "589e0abef58d5c984790a03a2c754002a069456c46291028ef619a4063aebb1b",
+          "coreJobs": 501,
+          "fullStoreRows": 146
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-ordered.jpg": {
+          "sizeBytes": 50314,
+          "sha256": "7b586f430e3b7a2b2cfcbd6068f65cd80484f9392d1cf91438f9a6faa7a9a94f",
+          "actualEncoding": "JPEG"
+        },
+        "02-original-save-dialog.jpg": {
+          "sizeBytes": 43227,
+          "sha256": "09eee2495716e94b710a782bec756913a667062acde22a78ae43d54d5032550a",
+          "actualEncoding": "JPEG"
+        },
+        "03-original-about.jpg": {
+          "sizeBytes": 63641,
+          "sha256": "1bb5a0fda8619d5d653842722a5f094e1a3ecb5fd79173a2abe3cf9e789ec8cf",
+          "actualEncoding": "JPEG"
+        },
+        "04-original-new-process-explicit-load.jpg": {
+          "sizeBytes": 50256,
+          "sha256": "6bce7bb7e91961b53087bce0fda9af291d9cf2ab51ace15f9a750e797ccafe67",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-qmmp-source.json",
+    "sha256": "88766ae4888127d73bc094ae0c5cc95f84c661d5dcd0a913c000dbaabe4f0983"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-qmmp-gui.json",
+    "sha256": "4debacddcdcdabd0a5bfb3aa50c77aef18ae932d8001e980572b8cd28bfda24d"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-13-qmmp-failures.json",
+    "sha256": "82d580e81c6f99aaa3f302deb3156c84220a2d6ebc785ac8a6006d84b267ea53"
+  },
+  "limits": [
+    "Only two tiny Chinese-name PCM WAV inputs, native Add File B then A through C-drive tree, mouse reorder A,B, native Save List to 91-byte UTF-8 no-BOM LF original.m3u and new formal process New List then explicit Load List. Each track shows0:02. No hearing, playback device, complete player, audio DSP, streaming, metadata editing, library, codecs, CD, recording/transcoding, plugins, other playlist formats, malformed/large files, printing, direct Chinese keyboard, networking, registration, migration, cross-version, unattended or GUI Store buttons accepted. Background networking not excluded.",
+    "Default skinned UI kept; Chinese names readable in native file list and this small playlist. Original About Qmmp1.6.8 Qt5.15.13 compiled Qt5.15.13; market About not independently measured. No Core/program/globalcontext/definition/launcher env/cwd/font/global DLL/runtime repair.",
+    "Both official fixed installer and source complete HTTPS200 Content-Length and official SourceForge displayed SHA256 matched; observations web-tool text not raw HTML. MD5 is only an additional weak check. Main GPL2-or-later and installed COPYING.txt exact18092 bytes equal selected source. CC-by-sa notice retained. Full bundled Qt/codecs/FFmpeg/TagLib/SDL/DirectSound/art/icons/translations licence closure, PGP/Authenticode/API digest/source-binary/repro/latest unverified.",
+    "Two normal CtrlQ exit0 plus wineserver stop are supporting evidence, not standalone acceptance. Scope only fixed files, all2166 installed programs, three registry files and selected Qmmp-named configuration, not whole application filesystem. Original signed marketPending stage frozen; later market completion recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

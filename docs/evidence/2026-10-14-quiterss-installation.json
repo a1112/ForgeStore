@@ -1,0 +1,535 @@
+{
+  "applicationId": "quiterss",
+  "generation": {
+    "bottleId": "gen-job-1791967395277-1",
+    "createdAtMilliseconds": 1791967395286,
+    "definition": {
+      "bottleId": "gui-quiterss",
+      "category": "productivity",
+      "compatibilityRating": "unknown",
+      "id": "quiterss",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\QuiteRSS",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "QuiteRSS-0.19.4-Setup.exe",
+        "sha256": "f02708905e34f176f1333d0c451054714b28d0679f0861a8c53608b32e413beb"
+      },
+      "launchers": [
+        {
+          "executable": "QuiteRSS/QuiteRSS.exe",
+          "id": "main",
+          "name": "QuiteRSS"
+        }
+      ],
+      "name": "QuiteRSS",
+      "publisher": "QuiteRSS Team",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "0.19.4"
+    },
+    "definitionDigest": "sha256:d47d42c9c17f3e634192067878ae6066cb35e807271353688606cab90f9889de",
+    "id": "gen-job-1791967395277-1",
+    "launcherDigests": {
+      "main": "sha256:c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791967410990
+  },
+  "definition": {
+    "bottleId": "gui-quiterss",
+    "category": "productivity",
+    "compatibilityRating": "unknown",
+    "id": "quiterss",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\QuiteRSS",
+        "/NOICONS",
+        "/TASKS="
+      ],
+      "fileName": "QuiteRSS-0.19.4-Setup.exe",
+      "sha256": "f02708905e34f176f1333d0c451054714b28d0679f0861a8c53608b32e413beb"
+    },
+    "launchers": [
+      {
+        "executable": "QuiteRSS/QuiteRSS.exe",
+        "id": "main",
+        "name": "QuiteRSS"
+      }
+    ],
+    "name": "QuiteRSS",
+    "publisher": "QuiteRSS Team",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "0.19.4"
+  },
+  "installedFiles": {
+    "Qt5Qml.dll": {
+      "sizeBytes": 3369080,
+      "sha256": "07e58e3c7e437291b1b1dfebc7d7aac855fc6b7c4da64959adf6852baee6093e"
+    },
+    "QuiteRSS.url": {
+      "sizeBytes": 45,
+      "sha256": "e3aa1bdd41643e35a143375e5d3566f59c9038716dcef7949fef2798ffaae33f"
+    },
+    "icuin59.dll": {
+      "sizeBytes": 1827960,
+      "sha256": "59f9402286523fb1479a36de15c338f6226264e90caf596c4f2453b2564cef9b"
+    },
+    "Qt5Network.dll": {
+      "sizeBytes": 1072760,
+      "sha256": "b1f69db86ae070d41e97eae8b22ff75df694de557476da2b9131e4302353a93d"
+    },
+    "icudt59.dll": {
+      "sizeBytes": 26299000,
+      "sha256": "887d282aaa73cb9fb39da56083dbb6ae684b123bd297041fec4f3b6da92680fa"
+    },
+    "Qt5Core.dll": {
+      "sizeBytes": 5140088,
+      "sha256": "cd98c1a8299a17906bc1cb553de33ee1b24e0fa728c15fc4beb5b802f09b774d"
+    },
+    "msvcp140.dll": {
+      "sizeBytes": 450024,
+      "sha256": "5136a49a682ac8d7f1ce71b211de8688fce42ed57210af087a8e2dbc8a934062"
+    },
+    "Qt5WebKitWidgets.dll": {
+      "sizeBytes": 198264,
+      "sha256": "d87f23c1830eb165ab28c85e49ed67844810221029b02270509e95241936ca5e"
+    },
+    "COPYING": {
+      "sizeBytes": 35231,
+      "sha256": "673cc10e3d37dc025fcdb443e138df498377854ec1a4533b9d51e0f973e80d55"
+    },
+    "libxslt.dll": {
+      "sizeBytes": 170616,
+      "sha256": "d62bc9d748b7cc399c842c1c86915785107fb6a4b562f0e096737338ba9baf9b"
+    },
+    "vcruntime140.dll": {
+      "sizeBytes": 80880,
+      "sha256": "8934aaeb65b6e6d253dfe72dea5d65856bd871e989d5d3a2a35edfe867bb4825"
+    },
+    "unins000.exe": {
+      "sizeBytes": 2564449,
+      "sha256": "89efe17b6cf0d020a7da4f92d2695cdef4598a658c9391ff1913cf1910d21746"
+    },
+    "Updater.exe": {
+      "sizeBytes": 95232,
+      "sha256": "abf59f420d7e7caefbb333e659f957b14cf3f3f575ae0b1c9a22ec326bba9577"
+    },
+    "libssl-1_1.dll": {
+      "sizeBytes": 530432,
+      "sha256": "194473a59a69e72655015dc582f1e1db7476b598c07cd94839d500e0c7135265"
+    },
+    "7za.exe": {
+      "sizeBytes": 739840,
+      "sha256": "ea308c76a2f927b160a143d94072b0dce232e04b751f0c6432a94e05164e716d"
+    },
+    "Qt5Sensors.dll": {
+      "sizeBytes": 167032,
+      "sha256": "9fe8e2b50abb14546bee5bca2ca501c2a4003fd3b6ab8ddf16827dded6054e1f"
+    },
+    "Qt5Widgets.dll": {
+      "sizeBytes": 4555384,
+      "sha256": "535c0b78c757fe6f11c4369b5b6993a3dd850b0269e4d0d2d0e5bf24d933f29b"
+    },
+    "README.md": {
+      "sizeBytes": 933,
+      "sha256": "9373e3df18d972b0b46fddbcdcf5df4b63f4b9e8decf40e8fcd0ab2c41672d92"
+    },
+    "Qt5Gui.dll": {
+      "sizeBytes": 5389944,
+      "sha256": "5588d0147628851f0eadb5707dfa2e4f6d80bea3eb6b63b50b2a7ef4d3543d77"
+    },
+    "icuuc59.dll": {
+      "sizeBytes": 1272440,
+      "sha256": "83c687dbd1011eea63b023d9283d14afe7c7836d4955f313153342465c521eab"
+    },
+    "Qt5Sql.dll": {
+      "sizeBytes": 164472,
+      "sha256": "16b58adab54b63411c3a94bcca463d78d25de1cc32ab2580d7ad306ad4b4297c"
+    },
+    "Qt5Multimedia.dll": {
+      "sizeBytes": 588408,
+      "sha256": "56e70af19b480b9c227f995db889b7cb3095590c577bd8a6adabeac724fb6b1a"
+    },
+    "Qt5Svg.dll": {
+      "sizeBytes": 270456,
+      "sha256": "a89ec09d35564fe8bc5c6c433684084592395403cde262fd626b196c10453d15"
+    },
+    "Qt5Positioning.dll": {
+      "sizeBytes": 262776,
+      "sha256": "7f3ec7dad9e07116e99f4ac930fdb5c787195cb5545ad04a6e1493ef956eb666"
+    },
+    "Qt5WebKit.dll": {
+      "sizeBytes": 28757624,
+      "sha256": "69055e018a4dad5ddf99d7b04fc00c796764517222b5fa3905252ddfdebbf90c"
+    },
+    "Qt5PrintSupport.dll": {
+      "sizeBytes": 274040,
+      "sha256": "7911a15365315ce82ede518a559e76cc357223e9b2942a7afa8612d48ad65562"
+    },
+    "libcrypto-1_1.dll": {
+      "sizeBytes": 2515456,
+      "sha256": "49b26d14cf68a370de47f8f3724e46e61bff98aba7dd7b8a7c1f87e83bb44064"
+    },
+    "HISTORY_RU": {
+      "sizeBytes": 89492,
+      "sha256": "20fd3ebf05288fb243976cc3101a99ee9c394b1791972bc7e820a01b7eb7634f"
+    },
+    "Qt5Quick.dll": {
+      "sizeBytes": 3238520,
+      "sha256": "bb0a19bfa5b536ca180dffdae76e417655a87c9161483af9cfa45da0883fa2dd"
+    },
+    "AUTHORS": {
+      "sizeBytes": 2988,
+      "sha256": "f9d94aa6fe6b786c2b80b00b7f3f5fceb3f0c5691549d8cf9d2d2e14b0f45700"
+    },
+    "HISTORY_EN": {
+      "sizeBytes": 48463,
+      "sha256": "3ba59dd6a26f96859230f4f5571751f216743842a4ca75a41156b58bd9fbd803"
+    },
+    "QuiteRSS.exe": {
+      "sizeBytes": 3322368,
+      "sha256": "c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea"
+    },
+    "libxml2.dll": {
+      "sizeBytes": 553080,
+      "sha256": "ed79e955e7f2ce29e4fe5c6ffcc47b56d0310a8b7a7352b1403fe0c39c6257dd"
+    },
+    "Qt5Xml.dll": {
+      "sizeBytes": 153720,
+      "sha256": "3a72e1c04aa5612ae5830ed8265ea32dd89be673c7bb8130005ae38b0ad5cd0f"
+    },
+    "Qt5WebChannel.dll": {
+      "sizeBytes": 99448,
+      "sha256": "c5fd3ae93ef1222f106c0e8bfc5bf179f526a376dc40ee8b4891de8dbad594df"
+    },
+    "unins000.dat": {
+      "sizeBytes": 12099,
+      "sha256": "7ab8fc4538651f4694b3b0052db2cf927dcecd034cc3b91fa899ce544fca2388"
+    },
+    "audio/qtaudio_windows.dll": {
+      "sizeBytes": 52856,
+      "sha256": "1b43a213229ad29827fef5fcd6225f06ed4bead1d8e506ddd26a2eb82ced6446"
+    },
+    "audio/qtaudio_wasapi.dll": {
+      "sizeBytes": 87672,
+      "sha256": "5db0c9cf2d8c2bd88b3cda54ca9cfc1ab426c6ee080b8bb7d0e8efbdcf7af21c"
+    },
+    "style/dark.qss": {
+      "sizeBytes": 6602,
+      "sha256": "f3a3cf6e0622e28c2734fd96bd6b324e77d0e02a3be7c0d6e037f7f432956c5d"
+    },
+    "style/green.qss": {
+      "sizeBytes": 6056,
+      "sha256": "9e2d2f2115156799e133f25bd18fd1c9dc5935caf056554d7b1eb05934ab1b8a"
+    },
+    "style/pink.qss": {
+      "sizeBytes": 6075,
+      "sha256": "69009f71ded2a83f419cd9cd81a59e6509ceba998d8cfc9b32c3cb5dcd29c5af"
+    },
+    "style/orange.qss": {
+      "sizeBytes": 6056,
+      "sha256": "21379ad2f3c79f67084122601f725a7eca6d8e62a37ddc1f49a142b499ef53d5"
+    },
+    "style/Rstyle_v1.2.css": {
+      "sizeBytes": 3225,
+      "sha256": "91d0fa7c55639e0b22b9d869acdcd5b84170a92449ab20f6d9aedd175690a793"
+    },
+    "style/web_dark.css": {
+      "sizeBytes": 415,
+      "sha256": "93f631b2d60fedee23b9b8f8262325110b849145322e5ae4523d88c668b9257e"
+    },
+    "style/purple.qss": {
+      "sizeBytes": 6076,
+      "sha256": "44fe72ad37567b243ce7300d7dc494b36bfaeda52709f7b14d74ce144c00ab13"
+    },
+    "style/gray.qss": {
+      "sizeBytes": 6074,
+      "sha256": "fe0cab4fd64e9df1ec2f6e8be149346b3d452efc0bc9ba62cc5f483295517edb"
+    },
+    "style/system2.qss": {
+      "sizeBytes": 4767,
+      "sha256": "f373f4d57c85e4f3cb5b0fcaf7aceaa7855fe446fdf3515eab00a0bccce8b7f9"
+    },
+    "style/news.css": {
+      "sizeBytes": 1950,
+      "sha256": "519c04d45cd28610da6cf65f25a86fa77ce602e1b6c370df01b69bdb0c11a324"
+    },
+    "style/system.qss": {
+      "sizeBytes": 2414,
+      "sha256": "997c27512e95176c19483461ac685b087335888a66a4293a28920497c22ca713"
+    },
+    "bearer/qgenericbearer.dll": {
+      "sizeBytes": 44152,
+      "sha256": "ea3a564dc39d620fba280d6de7cf82b14916bd082aa247e29195981f0f85bd5d"
+    },
+    "styles/qwindowsvistastyle.dll": {
+      "sizeBytes": 128632,
+      "sha256": "08821987588891496bd9d1fdae5d346159bc61e024836a663a7de806ccc23c72"
+    },
+    "iconengines/qsvgicon.dll": {
+      "sizeBytes": 34936,
+      "sha256": "ebc879971bb8f74cde797b99b88c0733aa845ec096c58c3f3f837dac2d89a482"
+    },
+    "lang/quiterss_vi.qm": {
+      "sizeBytes": 64411,
+      "sha256": "39a798492d619a53bd85d14b5112ae98f7782f10cf0cac6e24559431303a5fa5"
+    },
+    "lang/quiterss_pt_PT.qm": {
+      "sizeBytes": 83795,
+      "sha256": "964725bdf21a84bcec75743c463a24abba96595a0c6c6ccefbf2303d378a00a2"
+    },
+    "lang/quiterss_ko.qm": {
+      "sizeBytes": 64769,
+      "sha256": "790152328cd5de34f0b76cd167ccadee66d20647fdb5fa955dce1af75815f03c"
+    },
+    "lang/quiterss_it.qm": {
+      "sizeBytes": 86682,
+      "sha256": "2aa467dbb1b1f6df16f5835c445aa07f84069513dd3c2a006f9a1763d95624cf"
+    },
+    "lang/quiterss_ru.qm": {
+      "sizeBytes": 85175,
+      "sha256": "14fa8ecfd8b200413756c498ed071a7935eee38b8cd6f5ea41563f8b342d4a10"
+    },
+    "lang/quiterss_ar.qm": {
+      "sizeBytes": 74768,
+      "sha256": "2a64fee67e403ddf404cc7cac48f67252350a7993123286cd4d036a52563166e"
+    },
+    "lang/quiterss_ja.qm": {
+      "sizeBytes": 66967,
+      "sha256": "430ef9854695919b6c5c6ef475df740c41b345d394b2e40bdd37291de780978e"
+    },
+    "lang/quiterss_ro_RO.qm": {
+      "sizeBytes": 83527,
+      "sha256": "c6b1ac74f69a8cccd4ace35f487d3b24b64bb8e27f218191aa66a47072f19ce5"
+    },
+    "lang/quiterss_sr.qm": {
+      "sizeBytes": 78697,
+      "sha256": "0687c18b3f9f44413720892454c5d46808534a095a69ceebd90a468c55dff352"
+    },
+    "lang/quiterss_hi.qm": {
+      "sizeBytes": 70617,
+      "sha256": "5d3f9ebaf814413d2faad3ca118278ec8e5cd8fe623700f57e02fd9fefd28a7b"
+    },
+    "lang/quiterss_es.qm": {
+      "sizeBytes": 86650,
+      "sha256": "f3b7e04eeefa877c9178088c671b4a1fab80cd845b15cb55ec4a1d509ffece66"
+    },
+    "lang/quiterss_sv.qm": {
+      "sizeBytes": 80436,
+      "sha256": "6bedab7168a688e334da2706183584217ca08c25c7c6ce1396c17cae3d58072f"
+    },
+    "lang/quiterss_zh_CN.qm": {
+      "sizeBytes": 61207,
+      "sha256": "d6bb932b21a9c428bcc02400574c260b9681f3b9a6ccf4eb39c6519f344cba0f"
+    },
+    "lang/quiterss_zh_TW.qm": {
+      "sizeBytes": 61207,
+      "sha256": "21673a9f41741f1b8fdce7b9908b222b6512dbb3c9f9067126031c403972df63"
+    },
+    "lang/quiterss_cs.qm": {
+      "sizeBytes": 82262,
+      "sha256": "8107d6d60feeff588421f991ae55eabede0db0cf8f010f626772461eb8d41a19"
+    },
+    "lang/quiterss_nl.qm": {
+      "sizeBytes": 83276,
+      "sha256": "a495763e28ef7e4359eab4e488d7026da3b60304324be3900b3c46b810fd2b11"
+    },
+    "lang/quiterss_fr.qm": {
+      "sizeBytes": 89674,
+      "sha256": "80a607645e624f0558f6cb01ca9517ca3e121088ae7379b1d1a69b148f4cd977"
+    },
+    "lang/quiterss_tr.qm": {
+      "sizeBytes": 82119,
+      "sha256": "1e36a957e7cb27156bf67c3508ed5bc08d54d5fa8bcfed39a360cd18a9ac5d18"
+    },
+    "lang/quiterss_de.qm": {
+      "sizeBytes": 84975,
+      "sha256": "353031b01d0a5cbc7c1ebbe87c2e4e6a2ed4b24547b832d588655acb365b01c3"
+    },
+    "lang/quiterss_hu.qm": {
+      "sizeBytes": 85671,
+      "sha256": "498a983ed080768b0eb32bdc71cdba532040da00dc74e44cc0920cbf5750439a"
+    },
+    "lang/quiterss_sk.qm": {
+      "sizeBytes": 84320,
+      "sha256": "8d8cb79ff46bc73b2d7c7e4bf4dc76a7fa352078b83264d5a09777488c893270"
+    },
+    "lang/quiterss_tg_TJ.qm": {
+      "sizeBytes": 81818,
+      "sha256": "5b4de36462f0d2beb27776dd00ec3932ee8f475cda51c199135421146191fcd9"
+    },
+    "lang/quiterss_bg.qm": {
+      "sizeBytes": 83696,
+      "sha256": "7753c2eb5fe0d255a2e14bac742ad98a069158ae6c33947b62405410ca3e9f99"
+    },
+    "lang/quiterss_el_GR.qm": {
+      "sizeBytes": 88776,
+      "sha256": "aff1645080ec22beca6b7ca2e7a03f5ba1528d9423a49b97d2e72e037097ee1c"
+    },
+    "lang/quiterss_pl.qm": {
+      "sizeBytes": 83507,
+      "sha256": "c79246b5fdf7ec5e545de543cf6c368f0664cf3e38f6e204319a43f158ee3875"
+    },
+    "lang/quiterss_pt_BR.qm": {
+      "sizeBytes": 85860,
+      "sha256": "428440d82f1e6e4b3ab6b919dd3c8db1ee04ec9445cea5d638c255ca7bada9a4"
+    },
+    "lang/quiterss_lt.qm": {
+      "sizeBytes": 84177,
+      "sha256": "5290114834a39e20823bb28af0babbd77289e42bfd33bb523a5c3f5ee6337cde"
+    },
+    "lang/quiterss_fi.qm": {
+      "sizeBytes": 81987,
+      "sha256": "9bbdce216277ad034786ed8ef860cad7a5647feca98e84b74f9b654827718f63"
+    },
+    "lang/quiterss_uk.qm": {
+      "sizeBytes": 85493,
+      "sha256": "f6ece1cf68ed47ed802c48fceef032c24911c7061d933ac1c2b545b0a454e055"
+    },
+    "lang/quiterss_fa.qm": {
+      "sizeBytes": 77091,
+      "sha256": "ac1344b1dd53b1eadda788dd15eb8a5421f713fe61d6e6b760547cdf21613f21"
+    },
+    "lang/quiterss_gl.qm": {
+      "sizeBytes": 84831,
+      "sha256": "07bd4378caa017efd2bcc4381c2e73e7539d23262a6898a63a879be7b8c41e15"
+    },
+    "platforms/qwindows.dll": {
+      "sizeBytes": 1215096,
+      "sha256": "bdc0e1a89806f281622f4cb5e118e74be94316174b77e5d631306959db49d521"
+    },
+    "sound/notification.wav": {
+      "sizeBytes": 16128,
+      "sha256": "24ed4348f44e5ff60fbeec74d9be6c071246dac676ca8b052adb22cce2c07622"
+    },
+    "printsupport/windowsprintersupport.dll": {
+      "sizeBytes": 44152,
+      "sha256": "4ef8743ddc6704f03303e2ca7ce1923b122178750476f815d0d99b42fde0b87c"
+    },
+    "mediaservice/qtmedia_audioengine.dll": {
+      "sizeBytes": 55416,
+      "sha256": "a65e33eda77e0018141d02a867f0a5556ab7101903a1ab15d5e4d09c5715940a"
+    },
+    "mediaservice/wmfengine.dll": {
+      "sizeBytes": 178296,
+      "sha256": "03326a08a1e1814f600a4c0e96a01dd94cf9ae5208c170646ee8c67b60fdb576"
+    },
+    "mediaservice/dsengine.dll": {
+      "sizeBytes": 254072,
+      "sha256": "737049c3ab79751f5c6b533ed44e3b27c315e884e2f9d4bfe4f7991d40dbc475"
+    },
+    "imageformats/qtiff.dll": {
+      "sizeBytes": 339576,
+      "sha256": "6e3688eeb9e081f2c1e4acdfffd6acc231f3fb7cae445ac6ed1a283a596fba72"
+    },
+    "imageformats/qwbmp.dll": {
+      "sizeBytes": 25208,
+      "sha256": "d73e2e62e08538aee1f044ed3e86717eb2786d9120df72c8514f3abadf944bf9"
+    },
+    "imageformats/qtga.dll": {
+      "sizeBytes": 26232,
+      "sha256": "736f3ce363dba112a34a6c15846044590cf76a623c4c7b5e3dd35a66555ee923"
+    },
+    "imageformats/qicns.dll": {
+      "sizeBytes": 40056,
+      "sha256": "10aea44f33b30e5c38f1d0f3a380fa9e881d36aba2f76d4eabe76018c8d818cd"
+    },
+    "imageformats/qwebp.dll": {
+      "sizeBytes": 424568,
+      "sha256": "2d9451efb0b523e85438ba26e50859ac40c3db6e5070ba78815493cc7bef8f93"
+    },
+    "imageformats/qjpeg.dll": {
+      "sizeBytes": 370808,
+      "sha256": "4b418ebbe2d4c88ae412b1e18a42824fef9d26891c02e0e96dbce1cf8225f883"
+    },
+    "imageformats/qico.dll": {
+      "sizeBytes": 31864,
+      "sha256": "ca50e78e2989eb94f0a2bba733502f703f9b265c6573129b938771686e2d3e40"
+    },
+    "imageformats/qgif.dll": {
+      "sizeBytes": 31864,
+      "sha256": "7c2c2786154d9d6b3f92b4a6cc6a5114fe0631d993db277e694b81ff36882337"
+    },
+    "imageformats/qsvg.dll": {
+      "sizeBytes": 27256,
+      "sha256": "b8c0080be13e6f1eb6840e42dfa7ed53e7401c055a8fa18a2c97f2312c45afea"
+    },
+    "sqldrivers/qsqlite.dll": {
+      "sizeBytes": 930936,
+      "sha256": "51cfbf16951c5b2912060eecc30c865687a1e45f6a921f83577a1f0fe57d123b"
+    }
+  },
+  "installedLicenseNamedPins": {
+    "COPYING": {
+      "sizeBytes": 35231,
+      "sha256": "673cc10e3d37dc025fcdb443e138df498377854ec1a4533b9d51e0f973e80d55"
+    }
+  },
+  "installedCopyingComparedWholeRaw": true,
+  "onlyOneOriginalInstall": true,
+  "readyNotGuiAcceptance": true,
+  "limits": [
+    "Finite original local RSS and OPML only: native Import Feeds via actual Home/MyComputer/C/QuiteRSSTests tree doubleclicked immutable Chinese-name317B original OPML. Default English, Chinese folder and short article body readable. Selected single local RSS article ORIGINAL ARTICLE42 with original Chinese content STATUS BEFORE. Native Properties changed only feed title to STATUS AFTER ORIGINAL42; other options retained. Native Export Feeds saved original.opml567B UTF8/noBOM/13CRLF.",
+    "Host independently reconstructed entire native OPML output from immutable input, fixed source default QuiteRSS feed and only observed dateModified serialization value. Native output/expected bytes identical, no host output edit. dateModified is an observed variable, not independent clock or full OPML/RSS specification proof. Original input317B, local RSS435B and HTML168B all unchanged.",
+    "Two original formal jobs job-1791967602467-2 and job-1791969099012-3 used sole ready gen-job-1791967395277-1. New process automatically restored old tree/article; automatic restoration is not explicit import proof. Native Delete/Yes removed only synthetic original folder, left default QuiteRSS root and unchanged disk fixtures/saved output. Then native Import Feeds explicitly doubleclicked original.opml and restored edited feed title/local article/Chinese body. Not empty database or host reset. File dialogs started at Home each time, no remembered Save directory claim.",
+    "Both original normal CtrlQ exits independently verified full job.events succeeded/exited.exit code0 successTrue/wine-server-stop-requested and ps noWine. First window disappearance initially left job running/onlystarted/wineserver/winedevice; later independent readonly observation became succeeded without repeated Quit, kill or restart. Unique delay cause unknown. Exit0 alone is not application acceptance.",
+    "Both processes showed default upstream QuiteRSS feed SSL Certificate Error/issuer unavailable. Native No only, no accepted exception/OnlyForSession/certificate import/network disabled. Local feed normal Incoming News1 notification remained. No upstream online success, absence of background network or unattended behavior claim.",
+    "Official fixed directory HTTPS raw links and233B MD5 saved privately. Complete installer27681829B and source3771258B HTTPS200/ContentLength matched official weak MD5. Local SHA only; MD5 not strong authenticity. Both GET routes terminal before sole original install, full cache/first-get partials retained, no repeated GET. Upstream SHA/PGP/Authenticode/source-binary/repro/latest unverified.",
+    "Source447unique408regular/gzip complete EOF18145280B and safe paths,18 selected raw files, not all-source manual review. src/main/main.cpp GPL3-or-later. Installed COPYING35231B exactly equals full selected source COPYING, SHA673cc10e3d37dc025fcdb443e138df498377854ec1a4533b9d51e0f973e80d55. Complete Qt/WebKit/SQLite/OpenSSL/Adblock/icons/translations license closure unverified; not entire Windows bundle GPL closure. RC byte0xA9 retained, cp1252 diagnostic only, no source transcoding.",
+    "Actual two Inno Setup Data6.0.0(u) markers/bootstrap/main PE14c. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:one-backslashQuiteRSS /NOICONS /TASKS=, DIR16UTF8 hex2f4449523d433a5c5175697465525353. No installer iss/nsi in fixed source archive, no fabricated corresponding source. Not complete Inno/UAC/association/shortcut/uninstall verification. Main QuiteRSS.exe3322368B SHAc05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea is32bit, not whole application size.",
+    "All99 initial installed program files held across both GUI/exits. Selected15 include registry/INI/log/feeds.db/adblock/cookies/twoCA files/DesktopShortcut/fixed fixtures. Actual before/after raw, textdiff or database binary raw retained privately, causes/semantic equivalence unknown; not old registry/config/database bytes unchanged across GUI, not full filesystem. First discovery is not creation time. Core queries may write existing scratch; recent64IPC is not full Store SQLite.",
+    "First live external readonly feeds table was empty. Initial guessed parid failed; actual parentId schema retained. Host proof guessed three live disk rows and stopped with actual0. Fixed source defaults storeDBMemory true and Qt memory database/sqlite backup are static context only, not established unique runtime cause. After normal Quit disk DB57344B selected three feeds and one news title/guid/description matched immutable RSS, then same selected values after second exit; not whole database semantics. First historical live-empty label corrected separately; no second-process pre-Quit empty-disk claim.",
+    "Original finite GUI passed only. Independent StoreIPC same-version market install, market native read/titleedit/export/newprocess explicitImport, exact original rollback/third original explicitImport, final normal Core/Store restarts, independent FINAL and Git publication still pending at this frozen phase. No accepted/pending count addition, Windows72/18 fields retained. Synthetic RSS/HTML/OPML are not independent applications.",
+    "Five actual original JPEGs:00defaultSSL diagnosis,01localfeedread,02titleedit/export,03newprocess synthetic tree clear,04explicit saved OPML import/read. No login images or market screenshots. About/direct Chinese keyboard/full browser navigation/authcookies/online services/Atom/broad RSS formats/complex nesting/search/categories/tags/printing/large-bad inputs/broad encoding/migration/unattended/GUI market buttons untested. Ordinary dialog moving and splitter widening are view actions, not repairs.",
+    "No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime repair, recovery, VM reboot or service restart in original QuiteRSS phase. Existing IAB2/tab2 loopback6096 retained, Edge3 not restored, no agent auth submit or viewport change. User-requested53B disabled-autolock config separately pinned; old auth/account/password held. No password/login image/private keys/credentials/full private CP/database/cookies/binaries/exact redirect query public. All old failures/root/signatures/trust/history retained, Ubuntu independent/no concurrent4GiB VMs.",
+    "This candidate preparation safe export V1 mistakenly inspected outer poll.events, actual outer list empty while complete poll.job.events held all three terminal kinds. Independent readonly actual full state and poll responses saved privately, V2 uses nested job.events and exact complete job equality. No new job/CP/restart/GUI from these observers. Host guessed missing static-v2 filename stopped reading before mutation; actual cache static file read afterward. Historical tool failures are retained, not application failures."
+  ]
+}
