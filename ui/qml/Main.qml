@@ -7,11 +7,11 @@ ApplicationWindow {
     id: root
     component SafeLabel: Label { textFormat: Text.PlainText }
     objectName: "forgeStoreWindow"
-    width: 1160
-    height: 760
+    width: 1040
+    height: 700
     minimumWidth: 820
     minimumHeight: 580
-    visible: true
+    visible: false
     color: "#0b101a"
     property string language: "zh_CN"
     property var labels: Strings.forLanguage(language)
@@ -264,11 +264,13 @@ ApplicationWindow {
                                     }
                                     Button {
                                         text: root.labels.details
+                                        Layout.minimumWidth: 80
                                         onClicked: root.openDetails(modelData)
                                         Accessible.name: root.labels.openDetails + " " + root.localized(modelData.name)
                                     }
                                     Button {
                                         objectName: "discoverInstallButton"
+                                        Layout.minimumWidth: 80
                                         text: root.installedRecord(modelData.id) ? root.labels.update : root.labels.install
                                         enabled: root.backendReady(modelData)
                                         onClicked: storeBridge.enqueue(modelData.id, root.installedRecord(modelData.id) ? "update" : "install")
@@ -452,6 +454,7 @@ ApplicationWindow {
         background: Rectangle { color: "#142135"; border.color: "#34506f" }
         ScrollView {
             id: detailsScroll
+            objectName: "detailsScroll"
             anchors.fill: parent
             anchors.margins: 24
             clip: true
