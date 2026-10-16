@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; Core launcher-cwd-v11-r1/Store managed-msi-v2",
+  "applications": [
+    {
+      "id": "clementine",
+      "version": "1.3.1",
+      "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0",
+      "size": 22011528,
+      "generationId": "gen-job-1791826606830-1",
+      "definitionDigest": "sha256:a87fefc6eaab0a9d8df881d368ebec37470e6e05a7240ed3b4df0c7ab0b0159a",
+      "launcherSha256": "sha256:7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb",
+      "guiFileOperation": "passed-limited-native-two-track-playlist-reorder-xspf-save-fresh-explicit-load",
+      "saveProof": {
+        "generationId": "gen-job-1791826606830-1",
+        "job": {
+          "applicationId": "clementine",
+          "createdAtMilliseconds": 1791826754117,
+          "events": [
+            {
+              "elapsedMilliseconds": 0,
+              "kind": "started",
+              "processId": 25965,
+              "requestId": "job-1791826754117-2",
+              "schemaVersion": "1",
+              "sequence": 0
+            },
+            {
+              "elapsedMilliseconds": 1101200,
+              "kind": "wine-server-stop-requested",
+              "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791826606830-1/prefix",
+              "requestId": "job-1791826754117-2",
+              "schemaVersion": "1",
+              "sequence": 1
+            },
+            {
+              "elapsedMilliseconds": 1101242,
+              "exit": {
+                "code": 0,
+                "success": true
+              },
+              "kind": "exited",
+              "requestId": "job-1791826754117-2",
+              "schemaVersion": "1",
+              "sequence": 2
+            }
+          ],
+          "generationId": "gen-job-1791826606830-1",
+          "id": "job-1791826754117-2",
+          "inspection": {
+            "architecture": "x86",
+            "entryPointRva": 5328,
+            "fileDigest": "sha256:7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb",
+            "fileSizeBytes": 16620032,
+            "format": "pe32",
+            "imageKind": "executable",
+            "importLibraries": [
+              "dsound.dll",
+              "glew32.dll",
+              "kernel32.dll",
+              "libcdio-16.dll",
+              "libchromaprint.dll",
+              "libechonest.dll",
+              "libfftw3-3.dll",
+              "libgcc_s_sjlj-1.dll",
+              "libgio-2.0-0.dll",
+              "libglib-2.0-0.dll",
+              "libgobject-2.0-0.dll",
+              "libgpod.dll",
+              "libgstapp-1.0-0.dll",
+              "libgstaudio-1.0-0.dll",
+              "libgstbase-1.0-0.dll",
+              "libgstreamer-1.0-0.dll",
+              "libgsttag-1.0-0.dll",
+              "liblastfm.dll",
+              "libprotobuf-8.dll",
+              "libqjson.dll",
+              "libsqlite3-0.dll",
+              "libstdc++-6.dll",
+              "libtag.dll",
+              "msvcrt.dll",
+              "ole32.dll",
+              "opengl32.dll",
+              "pthreadgc2.dll",
+              "qtcore4.dll",
+              "qtgui4.dll",
+              "qtnetwork4.dll",
+              "qtopengl4.dll",
+              "qtsql4.dll",
+              "qtxml4.dll",
+              "user32.dll",
+              "ws2_32.dll",
+              "zlib1.dll"
+            ],
+            "machineCode": 332,
+            "schemaVersion": "1",
+            "sections": [
+              {
+                "executable": true,
+                "name": ".text",
+                "rawDataSize": 7442944,
+                "readable": true,
+                "virtualAddress": 4096,
+                "virtualSize": 7442904,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".data",
+                "rawDataSize": 2048,
+                "readable": true,
+                "virtualAddress": 7450624,
+                "virtualSize": 1552,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rdata",
+                "rawDataSize": 8667136,
+                "readable": true,
+                "virtualAddress": 7454720,
+                "virtualSize": 8666692,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".bss",
+                "rawDataSize": 0,
+                "readable": true,
+                "virtualAddress": 16121856,
+                "virtualSize": 163528,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".edata",
+                "rawDataSize": 4096,
+                "readable": true,
+                "virtualAddress": 16285696,
+                "virtualSize": 3786,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".idata",
+                "rawDataSize": 187904,
+                "readable": true,
+                "virtualAddress": 16289792,
+                "virtualSize": 187800,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".CRT",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 16478208,
+                "virtualSize": 52,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".tls",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 16482304,
+                "virtualSize": 32,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rsrc",
+                "rawDataSize": 49152,
+                "readable": true,
+                "virtualAddress": 16486400,
+                "virtualSize": 48788,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".reloc",
+                "rawDataSize": 264704,
+                "readable": true,
+                "virtualAddress": 16535552,
+                "virtualSize": 264532,
+                "writable": false
+              }
+            ],
+            "subsystem": "windowsGui",
+            "subsystemCode": 2
+          },
+          "kind": "launch",
+          "launchPlan": {
+            "bottleExecutable": {
+              "architecture": "i386",
+              "bottleId": "gen-job-1791826606830-1",
+              "digest": "sha256:7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb",
+              "imageKind": "executable",
+              "inspectionSchemaVersion": "1",
+              "originalName": "clementine.exe",
+              "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791826606830-1/prefix/drive_c/Clementine/clementine.exe",
+              "sizeBytes": 16620032,
+              "subsystem": "windowsGui"
+            },
+            "decisionTrace": [
+              "runtime provider wine-linux-x86-64-preview selected as wine",
+              "translator native selected",
+              "graphics backend wined3d selected",
+              "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+              "Bottle CJK font pinned by digest",
+              "bottle-executable sha256:7522c8d089314b29df65c011d6cbcbad3bea01d2c231a63c7becf8f6ce0e5bdb pinned in place",
+              "inspection i386 windowsGui accepted"
+            ],
+            "graphics": {
+              "backend": "wined3d",
+              "version": "11.14"
+            },
+            "lifecycle": {
+              "terminationGraceMilliseconds": 3000,
+              "wineserver": {
+                "executable": "/usr/bin/wineserver",
+                "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791826606830-1/prefix"
+              }
+            },
+            "process": {
+              "arguments": [
+                "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791826606830-1/prefix/drive_c/Clementine/clementine.exe"
+              ],
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "DISPLAY": ":0",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791826606830-1/prefix",
+                "WINESERVER": "/usr/bin/wineserver",
+                "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+              },
+              "executable": "/usr/bin/wine",
+              "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791826606830-1"
+            },
+            "requestId": "job-1791826754117-2",
+            "runtime": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "sandbox": {
+              "network": "deny",
+              "profile": "desktop"
+            },
+            "schemaVersion": "1",
+            "translator": {
+              "provider": "native"
+            }
+          },
+          "schemaVersion": "1",
+          "status": "succeeded",
+          "updatedAtMilliseconds": 1791827857512
+        },
+        "inputPins": {
+          "drive_c/ClementineTests/原始音频A.wav": {
+            "sizeBytes": 32044,
+            "sha256": "cb5c6604e9a1f1990437133e550427afaa30b08c65408c2a1e51a914ebcbd39a"
+          },
+          "drive_c/ClementineTests/原始音频B.wav": {
+            "sizeBytes": 32044,
+            "sha256": "2dc569bae88701c3b9794a939681e716c6679279adf50ba967f7d2deed273098"
+          }
+        },
+        "outputFile": "drive_c/ClementineTests/original.xspf",
+        "outputPin": {
+          "sizeBytes": 381,
+          "sha256": "045b192fdcf0f1cfbe9844756839de670abdaf39e0240a7fdeb86da3e8b6a1cb"
+        },
+        "finiteXspfOrder": [
+          "原始音频A.wav",
+          "原始音频B.wav"
+        ],
+        "durationsMilliseconds": [
+          2000,
+          2000
+        ],
+        "normalQuitMethod": "native Music/Quit",
+        "hearingOrAudioDeviceVerified": false,
+        "freshExplicitGuiReopenAccepted": false,
+        "published": false,
+        "checkpoint": {
+          "file": "after-original-save.json",
+          "sha256": "da3c0594148f6d054b207cf67d3f05a0e1bbd3d1742378cea99bbbdad49461a0",
+          "coreJobs": 470,
+          "fullStoreRows": 138
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "clementine-01-two-inputs-20261013.jpg": {
+          "sizeBytes": 22100,
+          "sha256": "8a420d4dcde7de9e108d3d393a8a119feac0c389dc08d6ad1229952eb5a57673",
+          "actualEncoding": "JPEG"
+        },
+        "clementine-02-about-20261013.jpg": {
+          "sizeBytes": 34322,
+          "sha256": "ea9359c2199f3c744dd96692c0587fb9113dc1ecd8239a0c8bf28e45f3f28a16",
+          "actualEncoding": "JPEG"
+        },
+        "clementine-03-original-explicit-load-20261013.jpg": {
+          "sizeBytes": 23290,
+          "sha256": "a5d4d6a5049013e2b8360646486400fb5eb6c5c243fc7ad5d98512482b287093",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-clementine-source.json",
+    "sha256": "7a303c834774b15bc71246dd24d1fecc78897adfd5f2e77f65f1d359e357c6f7"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-clementine-gui.json",
+    "sha256": "c86f75e2f7d75e5dc5ffa90b70bbe54b5fa5777c8bd0c0f85dcc0f42c233d6ab"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-13-clementine-failures.json",
+    "sha256": "3168b728b80f12242f55a67b1601acb2b566d89925a57dbb5dc2c2804d428625"
+  },
+  "limits": [
+    "Two Chinese-name tiny PCM WAV files sequentially added through native C-drive directory tree; native drag reordered B,A to A,B; native Save playlist original.xspf; new formal process native Playlist/Load playlist directory tree doubleclick original.xspf. Two tracks each0:02/total0:04. Finite playlist acceptance only, no hearing/playback/audio device acceptance.",
+    "Only tiny2-track flatplaylist reorder/save/fresh native Load; Chinese default labels readable. No directly typed Chinese, broad music library, metadata editing, codecs/media formats, actual hearing/playback/devices, ripping/transcoding, devices sync, visualisations, DSP/equalizer, streaming/online accounts, cloud/radio/podcast/search, plugins, large/bad files, printing, networking/download/new registration/migration/cross-version/unattended or GUI market buttons. No background-network absence claim.",
+    "First import toast Playlist finished observed and playback timer stayed0:00 in captured observations; no actual audio output measured. finite playlist operation only.",
+    "Original About1.3.1; market About untested. Second formal original process asked auto-check updates; nativeX closed. Program startup auto-restored earlier playlist is not explicit Load proof.",
+    "688 program files preserved, PE32 x86 executable inside win64 bottle. Three registry/selected Clementine caches privately retained; not full filesystem or complete SQLite/config semantic validation.",
+    "Official fixed1.3.1 assets downloaded200 exact ContentLength local hashes; API403 retained; not upstream digest, PGP/Authenticode/source-binary/reproducible/latest verification. Main GPL3-or-later header and original COPYING; optional nonGPL Spotify helper/static bundling context and component notices do not establish full installed closure; no installed main named-license comparison.",
+    "No Core/program/globalcontext/definition/launcher environment or workingDirectory/font/globalDLL/runtime fix. Partial remote frames and native chooser interaction limits kept, no concrete function/rootcause claim.",
+    "Market lifecycle pending at original freeze, later complete evidence separate."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

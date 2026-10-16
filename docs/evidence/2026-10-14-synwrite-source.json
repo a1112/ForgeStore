@@ -1,0 +1,374 @@
+{
+  "applicationId": "synwrite",
+  "version": "6.41.2780",
+  "fileDateAsiaShanghai": "2026-10-14",
+  "initialInstallAndSaveUtcDate": "2026-10-13",
+  "laterExitRebootReopenUtcDate": "2026-10-14",
+  "downloadTerminal": {
+    "passed": true,
+    "allDownloadRoutesTerminal": true,
+    "results": {
+      "SynWrite.6.41.2780.exe": {
+        "passed": true,
+        "file": "SynWrite.6.41.2780.exe",
+        "requestedUrl": "https://downloads.sourceforge.net/project/synwrite/Release/SynWrite.6.41.2780.exe",
+        "status": 200,
+        "contentLength": 11499333,
+        "sizeBytes": 11499333,
+        "sha256": "6f60ed7161cbd63725fa6bf3a2c4b65b598b3819ff5a6fd550b76324232563f1",
+        "fullHttpsGetTerminal": true,
+        "localSha256Only": true,
+        "upstreamDigestNotVerified": true,
+        "elapsedSeconds": 8.907
+      },
+      "SynWrite.6.41.2780.zip": {
+        "passed": true,
+        "file": "SynWrite.6.41.2780.zip",
+        "requestedUrl": "https://downloads.sourceforge.net/project/synwrite/Release/SynWrite.6.41.2780.zip",
+        "status": 200,
+        "contentLength": 13856627,
+        "sizeBytes": 13856627,
+        "sha256": "fd695ec90a28f7c44b5f53091958e394f999247c62095e2e96b6f57aa347399f",
+        "fullHttpsGetTerminal": true,
+        "localSha256Only": true,
+        "upstreamDigestNotVerified": true,
+        "elapsedSeconds": 5.938
+      }
+    },
+    "version": "6.41.2780",
+    "noDefinitionTaskInstallGuiMarketOrCount": true
+  },
+  "selectedSourcePins": {
+    "nested-source/Syn.dpr": {
+      "sizeBytes": 3363,
+      "sha256": "db83545199bc9513545051223d22da01923c06de165e7e6749128d75e65dbba5"
+    },
+    "nested-source/Syn2.dpr": {
+      "sizeBytes": 9198,
+      "sha256": "b9484397530a09a0d87e4d103f0df064f6feb362980b182f88aaf35de53a1069"
+    },
+    "nested-source/unMain.pas": {
+      "sizeBytes": 707732,
+      "sha256": "614ac8955d937de70b932567069da39648d3deff32c8be6529ae90268482b860"
+    },
+    "nested-source/unMainExe.pas": {
+      "sizeBytes": 14793,
+      "sha256": "faf79496b2a2d41ace29d5075ae1c9ca86bd59a5741a00cdf12e4e92aa7a1f4f"
+    },
+    "nested-source/unFrame.pas": {
+      "sizeBytes": 48073,
+      "sha256": "5530c11e6fbd247f956cef0c9135ff1f6b08eedb493cc8024d9adadc79cff5c9"
+    },
+    "nested-source/unProc.pas": {
+      "sizeBytes": 74146,
+      "sha256": "59ad4904fccb5be20f97ddd883b919c95f2c6e736b9ed11ca61c12b4e0613146"
+    },
+    "nested-source/unProcEditor.pas": {
+      "sizeBytes": 74655,
+      "sha256": "922dc9432a40b8cac772932e663d6d7b178da05f16d935e264be673123fcf6c9"
+    },
+    "nested-source/unAbout.pas": {
+      "sizeBytes": 1685,
+      "sha256": "cefc2241cf5dd2d515cfbc24f3ef2ffd14b1ac5bc80c22ce50ccb34500c303bd"
+    },
+    "nested-source/unAbout.dfm": {
+      "sizeBytes": 4487,
+      "sha256": "dcc5665dbea9d31e3e902d5567bd60170b363d21088e820fe3afdc6153a73d57"
+    },
+    "nested-source/Setup/setup.iss": {
+      "sizeBytes": 5227,
+      "sha256": "3dbf216a999d7d6f343f6e38472f6125bbf6f647854df0df78f99b15a9e06aa3"
+    },
+    "nested-source/makeSetup.bat": {
+      "sizeBytes": 103,
+      "sha256": "f9f8f78d1a8beb5d00bee2e346bc9272dd5a8f43ad2c710c387b1a00a67c7375"
+    },
+    "nested-source/ATxFProc.pas": {
+      "sizeBytes": 33845,
+      "sha256": "f1a139ce44046a0d472848e7c8dd1f21a6b0c602534afa417fab84dc7d4c5d9c"
+    },
+    "bundle-notices/Plugins/SynFTP/license_SynFTP.txt": {
+      "sizeBytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "bundle-notices/Plugins/SynFTP/source.txt": {
+      "sizeBytes": 57,
+      "sha256": "d0db0adb96a8c51535bc91b963c147738f91d8b9f94f8abd9ea9c63cfd7b7e70"
+    },
+    "bundle-notices/Data/icons/License.Silk.txt": {
+      "sizeBytes": 121,
+      "sha256": "1c63ef1660ef5c1f41847088ef98b8cf999768a3867fa2b0116d34ebc18ac956"
+    },
+    "bundle-notices/Tools/Unzip.Copying.txt": {
+      "sizeBytes": 10457,
+      "sha256": "1b0784b030224778a9e3af869440031b7cddf5df499fdcbfcb2eb58567a068f7"
+    },
+    "bundle-notices/Readme/History.txt": {
+      "sizeBytes": 79291,
+      "sha256": "a3dec971373f6531a83591a5633310744277f12d6b41cbe73f62797e7782a8e4"
+    },
+    "nested-source/ATLinkLabel.pas": {
+      "sizeBytes": 1583,
+      "sha256": "e43c8f5be091fdd537a1e5aa12faa9215db620a1edd8f265ca2b58ba094b525c"
+    },
+    "nested-source/ATPanelColor.pas": {
+      "sizeBytes": 1762,
+      "sha256": "dafa967ef500859c346cbdc9caf56a011f17dd4cadd111048d083543cca232e6"
+    },
+    "nested-source/unProcCustomDialog.pas": {
+      "sizeBytes": 22077,
+      "sha256": "39c2e5d0dfabb91eb27e75191beb5bf16e68552964220df042d9a387def98d32"
+    },
+    "nested-source/ImageToBmp.dpr": {
+      "sizeBytes": 1205,
+      "sha256": "94031c16ce9b277cfbaae2940321cf58be5b28cfde7c74f45e2c741d9b3383cd"
+    },
+    "nested-source/unLexerItems.pas": {
+      "sizeBytes": 10939,
+      "sha256": "150a753e326789c9c7c8e38a5ef5016f4e11b8c07e23b1f0ef7db275678b0bb2"
+    },
+    "nested-source/CFree/ATGroups/atgroups.pas": {
+      "sizeBytes": 43988,
+      "sha256": "c57cd7fc3585cd8969d4bfe9460428ebffbf17d031c56b3887b2b57c1a0c7015"
+    },
+    "nested-source/CFree/ATGroups/attabs.pas": {
+      "sizeBytes": 45051,
+      "sha256": "836c14c0cf6b666c8a0ba966e943366458e21b9776d45c9128a1c30e046676df"
+    }
+  },
+  "sourceReferences": {
+    "nested-source/Syn.dpr": "synwrite-20261014/source/nested-source/Syn.dpr",
+    "nested-source/Syn2.dpr": "synwrite-20261014/source/nested-source/Syn2.dpr",
+    "nested-source/unMain.pas": "synwrite-20261014/source/nested-source/unMain.pas",
+    "nested-source/unMainExe.pas": "synwrite-20261014/source/nested-source/unMainExe.pas",
+    "nested-source/unFrame.pas": "synwrite-20261014/source/nested-source/unFrame.pas",
+    "nested-source/unProc.pas": "synwrite-20261014/source/nested-source/unProc.pas",
+    "nested-source/unProcEditor.pas": "synwrite-20261014/source/nested-source/unProcEditor.pas",
+    "nested-source/unAbout.pas": "synwrite-20261014/source/nested-source/unAbout.pas",
+    "nested-source/unAbout.dfm": "synwrite-20261014/source/nested-source/unAbout.dfm",
+    "nested-source/Setup/setup.iss": "synwrite-20261014/source/nested-source/Setup/setup.iss",
+    "nested-source/makeSetup.bat": "synwrite-20261014/source/nested-source/makeSetup.bat",
+    "nested-source/ATxFProc.pas": "synwrite-20261014/source/nested-source/ATxFProc.pas",
+    "bundle-notices/Plugins/SynFTP/license_SynFTP.txt": "synwrite-20261014/source/bundle-notices/Plugins/SynFTP/license_SynFTP.txt",
+    "bundle-notices/Plugins/SynFTP/source.txt": "synwrite-20261014/source/bundle-notices/Plugins/SynFTP/source.txt",
+    "bundle-notices/Data/icons/License.Silk.txt": "synwrite-20261014/source/bundle-notices/Data/icons/License.Silk.txt",
+    "bundle-notices/Tools/Unzip.Copying.txt": "synwrite-20261014/source/bundle-notices/Tools/Unzip.Copying.txt",
+    "bundle-notices/Readme/History.txt": "synwrite-20261014/source/bundle-notices/Readme/History.txt",
+    "nested-source/ATLinkLabel.pas": "synwrite-20261014/source/nested-source/ATLinkLabel.pas",
+    "nested-source/ATPanelColor.pas": "synwrite-20261014/source/nested-source/ATPanelColor.pas",
+    "nested-source/unProcCustomDialog.pas": "synwrite-20261014/source/nested-source/unProcCustomDialog.pas",
+    "nested-source/ImageToBmp.dpr": "synwrite-20261014/source/nested-source/ImageToBmp.dpr",
+    "nested-source/unLexerItems.pas": "synwrite-20261014/source/nested-source/unLexerItems.pas",
+    "nested-source/CFree/ATGroups/atgroups.pas": "synwrite-20261014/source/nested-source/CFree/ATGroups/atgroups.pas",
+    "nested-source/CFree/ATGroups/attabs.pas": "synwrite-20261014/source/nested-source/CFree/ATGroups/attabs.pas"
+  },
+  "staticInspection": {
+    "passed": true,
+    "version": "6.41.2780",
+    "officialProjectLicenseMetadataObservedWebText": "MPL 1.1",
+    "fixedMainHeadersExplicitLicenseEstablished": false,
+    "officialPartialClosedSourceEControlRetained": true,
+    "nestedSourceSetupVersionActual": "6.40.2770",
+    "releaseZipSourceBinaryVersionCorrespondenceNotEstablished": true,
+    "completeDelphiVclEControlTntFastMmPythonSynFtpHtmlTidyToolsIconsTranslationsLicenseClosureVerified": false,
+    "installedMainLicenseComparisonVerified": false,
+    "selectedSourcePins": {
+      "nested-source/Syn.dpr": {
+        "sizeBytes": 3363,
+        "sha256": "db83545199bc9513545051223d22da01923c06de165e7e6749128d75e65dbba5"
+      },
+      "nested-source/Syn2.dpr": {
+        "sizeBytes": 9198,
+        "sha256": "b9484397530a09a0d87e4d103f0df064f6feb362980b182f88aaf35de53a1069"
+      },
+      "nested-source/unMain.pas": {
+        "sizeBytes": 707732,
+        "sha256": "614ac8955d937de70b932567069da39648d3deff32c8be6529ae90268482b860"
+      },
+      "nested-source/unMainExe.pas": {
+        "sizeBytes": 14793,
+        "sha256": "faf79496b2a2d41ace29d5075ae1c9ca86bd59a5741a00cdf12e4e92aa7a1f4f"
+      },
+      "nested-source/unFrame.pas": {
+        "sizeBytes": 48073,
+        "sha256": "5530c11e6fbd247f956cef0c9135ff1f6b08eedb493cc8024d9adadc79cff5c9"
+      },
+      "nested-source/unProc.pas": {
+        "sizeBytes": 74146,
+        "sha256": "59ad4904fccb5be20f97ddd883b919c95f2c6e736b9ed11ca61c12b4e0613146"
+      },
+      "nested-source/unProcEditor.pas": {
+        "sizeBytes": 74655,
+        "sha256": "922dc9432a40b8cac772932e663d6d7b178da05f16d935e264be673123fcf6c9"
+      },
+      "nested-source/unAbout.pas": {
+        "sizeBytes": 1685,
+        "sha256": "cefc2241cf5dd2d515cfbc24f3ef2ffd14b1ac5bc80c22ce50ccb34500c303bd"
+      },
+      "nested-source/unAbout.dfm": {
+        "sizeBytes": 4487,
+        "sha256": "dcc5665dbea9d31e3e902d5567bd60170b363d21088e820fe3afdc6153a73d57"
+      },
+      "nested-source/Setup/setup.iss": {
+        "sizeBytes": 5227,
+        "sha256": "3dbf216a999d7d6f343f6e38472f6125bbf6f647854df0df78f99b15a9e06aa3"
+      },
+      "nested-source/makeSetup.bat": {
+        "sizeBytes": 103,
+        "sha256": "f9f8f78d1a8beb5d00bee2e346bc9272dd5a8f43ad2c710c387b1a00a67c7375"
+      },
+      "nested-source/ATxFProc.pas": {
+        "sizeBytes": 33845,
+        "sha256": "f1a139ce44046a0d472848e7c8dd1f21a6b0c602534afa417fab84dc7d4c5d9c"
+      },
+      "bundle-notices/Plugins/SynFTP/license_SynFTP.txt": {
+        "sizeBytes": 35821,
+        "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+      },
+      "bundle-notices/Plugins/SynFTP/source.txt": {
+        "sizeBytes": 57,
+        "sha256": "d0db0adb96a8c51535bc91b963c147738f91d8b9f94f8abd9ea9c63cfd7b7e70"
+      },
+      "bundle-notices/Data/icons/License.Silk.txt": {
+        "sizeBytes": 121,
+        "sha256": "1c63ef1660ef5c1f41847088ef98b8cf999768a3867fa2b0116d34ebc18ac956"
+      },
+      "bundle-notices/Tools/Unzip.Copying.txt": {
+        "sizeBytes": 10457,
+        "sha256": "1b0784b030224778a9e3af869440031b7cddf5df499fdcbfcb2eb58567a068f7"
+      },
+      "bundle-notices/Readme/History.txt": {
+        "sizeBytes": 79291,
+        "sha256": "a3dec971373f6531a83591a5633310744277f12d6b41cbe73f62797e7782a8e4"
+      },
+      "nested-source/ATLinkLabel.pas": {
+        "sizeBytes": 1583,
+        "sha256": "e43c8f5be091fdd537a1e5aa12faa9215db620a1edd8f265ca2b58ba094b525c"
+      },
+      "nested-source/ATPanelColor.pas": {
+        "sizeBytes": 1762,
+        "sha256": "dafa967ef500859c346cbdc9caf56a011f17dd4cadd111048d083543cca232e6"
+      },
+      "nested-source/unProcCustomDialog.pas": {
+        "sizeBytes": 22077,
+        "sha256": "39c2e5d0dfabb91eb27e75191beb5bf16e68552964220df042d9a387def98d32"
+      },
+      "nested-source/ImageToBmp.dpr": {
+        "sizeBytes": 1205,
+        "sha256": "94031c16ce9b277cfbaae2940321cf58be5b28cfde7c74f45e2c741d9b3383cd"
+      },
+      "nested-source/unLexerItems.pas": {
+        "sizeBytes": 10939,
+        "sha256": "150a753e326789c9c7c8e38a5ef5016f4e11b8c07e23b1f0ef7db275678b0bb2"
+      },
+      "nested-source/CFree/ATGroups/atgroups.pas": {
+        "sizeBytes": 43988,
+        "sha256": "c57cd7fc3585cd8969d4bfe9460428ebffbf17d031c56b3887b2b57c1a0c7015"
+      },
+      "nested-source/CFree/ATGroups/attabs.pas": {
+        "sizeBytes": 45051,
+        "sha256": "836c14c0cf6b666c8a0ba966e943366458e21b9776d45c9128a1c30e046676df"
+      }
+    },
+    "sourceLicenseDiagnosticHits": {
+      "ATFileNotificationSimple.pas": [
+        "{  Copyright (C) Alexey Torgashin        }"
+      ],
+      "ATLinkLabel.pas": [
+        "Copyright (C) Alexey Torgashin, uvviewsoft.com",
+        "License: MPL 2.0 or LGPL"
+      ],
+      "ATPanelColor.pas": [
+        "Copyright (C) Alexey Torgashin, uvviewsoft.com",
+        "License: MPL 2.0 or LGPL"
+      ],
+      "ATxUtf8Detect.pas": [
+        "//Copyright (c) Christian Ghisler (ghisler.com)"
+      ],
+      "unLexerImportRules.pas": [
+        "Copyright (c) 2004 - 2008 EControl Ltd., Zaharov Michael"
+      ],
+      "unLexerItems.pas": [
+        "{ Copyright (c) 2004 - 2008 EControl Ltd., Zaharov Michael                    }"
+      ],
+      "unLexerProp.pas": [
+        "Copyright (c) 2004 - 2008 EControl Ltd., Zaharov Michael"
+      ],
+      "unLexerPropStyles.pas": [
+        "{ Copyright (c) 2004 - 2008 EControl Ltd., Zaharov Michael                    }"
+      ],
+      "unPrintSetup.pas": [
+        "Copyright (c) EControl"
+      ],
+      "unProcCustomDialog.pas": [
+        "This Source Code Form is subject to the terms of the Mozilla Public",
+        "License, v. 2.0. If a copy of the MPL was not distributed with this",
+        "file, You can obtain one at http://mozilla.org/MPL/2.0/.",
+        "Copyright (c) Alexey Torgashin"
+      ],
+      "VistaAltFixUnit.pas": [
+        "Copyright \\xa9 Norstedts Juridik AB"
+      ],
+      "ImageToBmp.dpr": [
+        "License: MPL 1.1"
+      ],
+      "CFree/ATGroups/atgroups.pas": [
+        "Copyright (c) Alexey Torgashin",
+        "License: MPL 2.0"
+      ],
+      "CFree/ATGroups/attabs.pas": [
+        "Copyright (c) Alexey Torgashin (UVViewSoft)",
+        "License: MPL 2.0 or LGPL"
+      ]
+    },
+    "wikiCandidateNames": [],
+    "wikiMembers": 77,
+    "nestedSourcePin": {
+      "sizeBytes": 696918,
+      "sha256": "f058912d8829d120fb9f50a41d7db5bcd6dc5bdcf2b820bdbd64dbfa9db11f53"
+    },
+    "sourceUniqueMembers": 249,
+    "allSourceCrcChecked": true,
+    "allSourceManuallyReviewed": false,
+    "outerBundleMembers": 413,
+    "outerBundleRegularFiles": 366,
+    "zipMainPin": {
+      "sizeBytes": 4270592,
+      "sha256": "0a7bba032dbd9c3b92f72f1fc4490ffa258adae495a25d71ab7c8b880cac8a96"
+    },
+    "zipMainMachine": "0x14c",
+    "installerMarkers": [
+      "Inno Setup Setup Data (5.5.7)",
+      "Inno Setup Setup Data (5.5.7)"
+    ],
+    "bootstrapMachine": "0x14c",
+    "nativeArguments": [
+      "/VERYSILENT",
+      "/SUPPRESSMSGBOXES",
+      "/NORESTART",
+      "/SP-",
+      "/DIR=C:\\SynWrite",
+      "/NOICONS",
+      "/TASKS="
+    ],
+    "directoryUtf8Bytes": 16,
+    "directoryUtf8Hex": "2f4449523d433a5c53796e5772697465",
+    "fullInnoUacAssociationShortcutUninstallBehaviorVerified": false,
+    "upstreamDigestPgpAuthenticodeReproLatestNotVerified": true,
+    "noDefinitionTaskInstallGuiOrCount": true,
+    "licenseExceptionSourceRawAdded": true
+  },
+  "limits": [
+    "Limited original text editing only: Chinese-name32B UTF8 BOM/twoCRLF input opened through actual MyComputer/C/SynWriteTests tree; default English, Chinese name/title and short Chinese first line readable. Only second STATUS BEFORE line changed to STATUS AFTER ORIGINAL42; native File/Save As to ASCII original.txt42B. Host independently reconstructs all output bytes from unchanged input. No host output edit or direct Chinese keyboard acceptance.",
+    "First official job-1791935640878-2 and new original job-1791959314979-1 use sole ready gen-job-1791935437260-1. New process showed empty Untitled editor, then native File/Open in remembered SynWriteTests directory explicitly doubleclicked original.txt; loaded Chinese first line and STATUS AFTER ORIGINAL42. Two normal File/Exit operations independently checked succeeded/exited.exit code0 successTrue, wine-server-stop-requested and actual ps noWine; exit0 alone not acceptance. One transient Untitled frame before each exit is not a new document edit.",
+    "Only three saved original JPEGs: initial preinstalled-plugins informational notice, original input, original saved output. Native notice OK; no plugin invoked. New original reopen has CUA tool-history screenshots only and no saved JPEG; no fabricated extra screenshot. About/full editor/plugins/FTP/Python/tools/printing/broad encodings/large-bad input/direct Chinese keyboard/network exclusion/new-machine registration/migration/unattended behavior and GUI market buttons not tested. Synthetic text not another application.",
+    "Original limited GUI passed; independent Store IPC market installation/update and same limited market edit/save/new-process explicit Open, exact original rollback/third-original explicit Open and final normal service restart remain pending at this frozen phase. No completed-count or pending-count addition. Windows71 accepted/18 queue fields retained.",
+    "Fixed official SourceForge Release installer11499333B SHA6f60ed7161cbd63725fa6bf3a2c4b65b598b3819ff5a6fd550b76324232563f1 and portable ZIP13856627B SHAfd695ec90a28f7c44b5f53091958e394f999247c62095e2e96b6f57aa347399f, complete HTTPS200/ContentLength; both GET routes terminal before sole original install. Local SHA only, upstream digest/PGP/Authenticode/repro/latest unverified. Cache/first partials retained without repeated GET.",
+    "Portable ZIP is binary-plus-partial-source bundle:413unique366regular/all CRC; nested Readme/Src.zip696918B SHAf058912d8829d120fb9f50a41d7db5bcd6dc5bdcf2b820bdbd64dbfa9db11f53,249unique/all CRC,24 selected raw source/component notice files. Not pure source or all-source manual review. Native Setup source version6.40.2770 is older than release6.41.2780; no source-binary version correspondence established.",
+    "Official homepage states approximately30percent EControl closed source. SourceForge MPL1.1 metadata is observed web text only, not whole Windows bundle license or proof main source headers establish MPL. Selected ATLinkLabel/ATPanelColor/attabs MPL2 or LGPL, ATGroups MPL2, ImageToBmp MPL1.1 and EControl copyright exceptions retained. Four installed named licenses are component notices, not main license same-text comparison. Complete DelphiVCL/EControl/Tnt/Python/plugins/tools/icons/translations license closure unverified. No installer/program binary published.",
+    "Actual two Inno Setup Setup Data5.5.7 markers/bootstrap and mainPE0x14c, mainSyn.exe4270592B SHA0a7bba032dbd9c3b92f72f1fc4490ffa258adae495a25d71ab7c8b880cac8a96 equals fixed portable main raw; main size not whole application. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:one-backslashSynWrite /NOICONS /TASKS=, DIR16UTF8 hex2f4449523d433a5c53796e5772697465. Not full Inno/UAC/associations/shortcuts/uninstall verification. No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime repair.",
+    "All368 initial installed files retain exact bytes; four native Settings INI files and three first-discovered StartMenu links selected separately. Initial Syn.ini40B became828B after normal first exit, actual raw/diff retained privately; SynHistory156B/SynHistoryStates136B first found after exit. First discovery not creation time. Reopen changes only selected system.reg/user.reg bytes at same sizes3423303/102502; actual before/after raw and UTF8diff18131/796B kept, cause/key-value equivalence unknown. Not old registry bytes unchanged across GUI, not full FS; recent64IPC not full SQLite; Core queries may write existing scratch.",
+    "User-authorized extra normal guest VM reboot completed through native SDDM power menu with independent bootId change. Before558162 terminal CP, full postboot558162 CP and original-reopen559162 CP saved/readback; all seven full state classes and old fixed acceptance data verified. Normal reboot is additional user step, not final application acceptance service restart. Initial CLI reboot denied interactive authentication; no retry/bypass/reset/kill. First postboot Core socket absent, normal single Core start return0 then proc/exe PermissionError and later inactive/dead; complete journal showed normal Started/Stopped, cause unestablished. Later native desktop and both services active; no second start or settings repair. All failures and raw helpers retained.",
+    "Natural lock and prior output-inactive/browser failures are external observations, not application failure or reason to relaunch. Latest original reopen followed user normal unlock; agent did not enter authentication data this phase. No password/login image/private key/credentials/full private CP/exact signed redirect query in public artifacts or recurring prompt. Existing IAB2/tab2 same loopback noVNC retained, no viewport/auth/lock/power changes. Ubuntu ledger/plan scope unchanged, no Ubuntu VM or concurrent4GiB VMs. Old failure/root/signatures/trust/freeze/history retained, no recovery/failed promotion or repeated install."
+  ]
+}

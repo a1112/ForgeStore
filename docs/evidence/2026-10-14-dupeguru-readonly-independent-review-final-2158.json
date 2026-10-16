@@ -1,0 +1,256 @@
+{
+  "FINAL": true,
+  "passed": true,
+  "verdict": "pass-corrected-independent-readonly-diagnostic-evidence-no-application-acceptance",
+  "applicationId": "dupeguru",
+  "version": "4.3.1",
+  "round": "20261014-2158-readonly-path-diagnosis",
+  "dateUtc": "2026-10-13T22:16:26.543738+00:00",
+  "baseCommit": "9f3734e0563b41d149104be1322707e3e6784529",
+  "prospectiveManifest": "dupeguru-readonly-prospective-files-v2-20261014-2158.json",
+  "prospectiveManifestSha256": "524c8fb782161dd7b2146dff32181c54f0b3221bf1ef4b4fb8031660ee05db14",
+  "prospectiveCount": 13,
+  "prospectiveFiles": {
+    "docs/evidence/2026-10-14-dupeguru-readonly-core-source-2158.json": {
+      "sizeBytes": 6073,
+      "sha256": "0601e091e0e6d80f15774382021354840747675ee79fc13a52c371b5f0041ba9"
+    },
+    "docs/evidence/2026-10-14-dupeguru-readonly-current-state-2158.json": {
+      "sizeBytes": 5476,
+      "sha256": "852b07a12efb056e73bc76ade3bfc2b5c9bb8dd4ca33e22bed488c86ce23e226"
+    },
+    "docs/evidence/2026-10-14-dupeguru-readonly-function-attribution-correction-2158.json": {
+      "sizeBytes": 1246,
+      "sha256": "878a9161c96bdd6ec457a884a7981cc0474ad94e126d0d230a0656cd83b64778"
+    },
+    "docs/evidence/2026-10-14-dupeguru-readonly-git-byte-preservation-precheck-2158.json": {
+      "sizeBytes": 485,
+      "sha256": "562540c5582557ddfe72f5af1e55cdb598aab71f9a8a1b71a9d7b6153649548b"
+    },
+    "docs/evidence/2026-10-14-dupeguru-readonly-git-precheck-final-2158.json": {
+      "sizeBytes": 679,
+      "sha256": "ce6f20e5e02f3dba685aa19166f79e1d99a6a0a1b871ed7df5c4a7814084c977"
+    },
+    "docs/evidence/2026-10-14-dupeguru-readonly-path-guard-2158.json": {
+      "sizeBytes": 12667,
+      "sha256": "c56b6ecf9fb1c8df44e8b3c2da16e03b3734b46e75d994257644e5a8105f84f7"
+    },
+    "docs/evidence/2026-10-14-dupeguru-readonly-scope-and-tool-history-2158.json": {
+      "sizeBytes": 4747,
+      "sha256": "f6233c2b7d418b642528c4e61b1245c32270733d9b73e75a7b89281c0df81955"
+    },
+    "docs/evidence/dupeguru-readonly-20261014-2158/core-reviewed-source/crates/compatforge-service/src/jobs.rs": {
+      "sizeBytes": 103973,
+      "sha256": "bc67173c2b971ea43c31d87e7ad21fc9d6b48ebdfbd64fddb6ab53e49e0c183d"
+    },
+    "docs/evidence/dupeguru-readonly-20261014-2158/core-reviewed-source/crates/compatforge-service/src/lifecycle.rs": {
+      "sizeBytes": 47804,
+      "sha256": "98483f3b5d2d607425919438d05b363c22b48bae8169efd1b445ce2ba464e236"
+    },
+    "docs/evidence/dupeguru-readonly-20261014-2158/core-reviewed-source/crates/compatforge-service/src/registry.rs": {
+      "sizeBytes": 38407,
+      "sha256": "20fbaff9767a405976239061295185c8e5dec2a75fede26061dae4afe9db3288"
+    },
+    "docs/windows-1000-progress.json": {
+      "sizeBytes": 88385,
+      "sha256": "93c8a0e9ac6f1ef58844cf74b8efb8eb3d5cc44c011a65376cee89bcb9228ebd"
+    },
+    "docs/windows-rolling-20261014-dupeguru-readonly-2158.md": {
+      "sizeBytes": 4209,
+      "sha256": "7959bd03cd10e591cc24d7c42e9a0d0c27207c5bbfe69278c90ef3453dfd02b8"
+    },
+    "docs/windows-rolling-20261014-dupeguru-readonly-v2-2158.md": {
+      "sizeBytes": 4509,
+      "sha256": "5af1bc748e1c076706cc5af4059894de7b6f74a74aff9eab3e2d79092cf35195"
+    }
+  },
+  "actualAuditExecution": {
+    "effectiveHelper": "review-dupeguru-readonly-final-audit-v2-20261014-2158.py",
+    "helperSha256": "a1880940529c1705b86808988c30a789037beefc61fb9e42de1a8e6afddfec9d",
+    "actualExitCode": 0,
+    "completePassingResultObservedInToolHistory": true,
+    "exactStandaloneStdoutRawSaved": false,
+    "noHistoricalExactRawFabricated": true,
+    "first11ByteAuditAlsoActuallyPassed": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": [],
+    "unresolved": [],
+    "resolved": [
+      {
+        "scope": "function attribution in first diagnostic report",
+        "initialIssue": "First prose attributed generation and job Failed writes together to lifecycle.finish. Actual source has lifecycle.finish changing generation/returning RegistryError, then jobs.poll receiving Err and persisting job Failed/error.",
+        "resolution": "Parent preserved original report/all11 prospective raw and manifest, added separate correction plus new V2 report and changed only latest ledger report reference. Independent complete13 V2 audit and exact report delta passed.",
+        "correctionEvidence": "docs/evidence/2026-10-14-dupeguru-readonly-function-attribution-correction-2158.json"
+      }
+    ],
+    "overall": "All findings resolved. Static path-guard explanation is scoped to preserved reviewed source plus Python lstat analogue, not original runtime trace."
+  },
+  "scope": {
+    "all13ActualSizeShaPinsRecomputed": true,
+    "all13RawFilteredGitBlobIdentityEqual": true,
+    "all13RelativeNoIndexZeroDiagnostics": true,
+    "indexEmptyBeforeAndAfter": true,
+    "old5252Evidence5250ImmutableAllRawHeld": true,
+    "all6493TrackedIndexParentHeadFullBlobBytesEqual": true,
+    "outside1241PinsRecomputedAndFullIndexParentBytesEqual": true,
+    "allWorkingTreeBytesClaimedEqual": false,
+    "gitattributesEntireRawEqualsParentHeadAndZeroNewRules": true,
+    "oldFirstFailedRound21809PrivateFinalSizeShaUnchanged": true,
+    "accepted70EveryFieldEqualParent": true,
+    "queue18EveryFieldEqualParentIncludingOriginalDupeGuruBlocker": true,
+    "statusAndActiveMarketEveryFieldEqualParent": true,
+    "onlyNextLatestAttemptLatestEnvironmentChanged": true,
+    "originalJobGenerationImmutableDefinitionAndFailureSafeRecordsRemainUnchanged": true,
+    "noNewTaskInstallationGuiMarketCompletionOrPendingIncrement": true,
+    "historicalCoreReviewedArchive3507933FullShaRecomputed": true,
+    "archiveThreeExactUniqueSelectedMembersWholeRawMatchNewPublicFiles": true,
+    "allCoreSourceHumanReviewed": false,
+    "historicalSourcePinAndFinalBuildJsonlBinary6942792SourceArchiveDigestAssociationCrossChecked": true,
+    "runningBinaryDigestSafeGuestReceiptMatchesHistoricalBuildDigest": true,
+    "jobsPollSupervisorCleanupTerminalWriteFinishErrToFailedStaticFlowRead": true,
+    "lifecycleFinishDeclaredLauncherDigestsBeforeReadyStaticFlowRead": true,
+    "launcherPathPrefixDriveCImmutableExecutableJoinStaticRead": true,
+    "checkPathAllowMissingFalseSymlinkMetadataMapsIoErrorStaticRead": true,
+    "registryIoDisplayStringRead": true,
+    "sourceAttributedGenerationFailedWriteLines401To445Finish": true,
+    "sourceAttributedJobFailedErrorWriteLines714To717JobsPoll": true,
+    "staticBranchMatchesMissingDeclaredDirectoryObservation": true,
+    "originalCoreSyscallCallStackInstallerTraceOrHistoricalUniqueFunctionCauseEstablished": false,
+    "sourceMainCheckoutAssumedCurrentDeployed": false,
+    "newCoreWorktreeEditBuildOrTestRunByReviewer": false,
+    "historicalBuildTestsRerunOrNewReproProof": false,
+    "safeStrictStdinPathProbeResultShaVerified": "7c3af621bcf81066a19c90f90870a50564aa204565df8a78d8152b13025b7419",
+    "declaredImmutableDupeGuruDupeGuruWin32FirstMissingDriveCDupeGuruErrno2AllPriorRegularDirectories": true,
+    "actualDefaultPathLowercaseDupeguruWin32RegularFileAndAllAncestorsDirectories": true,
+    "headerCaseNameInActualDefaultDirectoryMissingFinalComponentErrno2": true,
+    "helperCodeExplicitLstatRejectsSymlinksAndNonDirectoryAncestors": true,
+    "generalWindowsWineFilenameCaseBehaviourOrGuiExecutionClaimed": false,
+    "actualMain3374518Pe014cShaSafeReceiptCrossChecked": true,
+    "whyNsisMultiUserDidNotUseRequestedDirOrFullCommandlineContractEstablished": false,
+    "diagnosticBeforeAfterBothSevenFullClassesExactlySame549160SavedCpCodeAndSafeReceiptCrossChecked": true,
+    "620ProgramThreeRegistryAndOldFixedPinsSameCodeAndSafeReceiptCrossChecked": true,
+    "currentHelperUnchangedSha": "88cfcd27563c34334974e0d571273eeb646ae77c3c0788ce315dfcbd9e8026a5",
+    "currentPrivateCheckpointSameDigestOnly": "dded25331a5ad60c389ea16c9ddd429cd6a1f03deaa553d43386d3fbba26b73d",
+    "privateFullCpReadOrIndependentReplay": false,
+    "noNewCheckpointRestartRecoverReinstallDefinitionChangeExpectedPathProgramCopyPromotionSignGuiAuthVmActionByReviewer": true,
+    "candidateV79Root1Role88AllOldTufRootTrustFailureRawHeldByFreeze": true,
+    "newTufSigningOrActivationOrFreshSignatureExecutionClaimed": false,
+    "first11OriginalManifestAndEverySnapshotRawIncludingMutableLedgerIndependentlyRehashed": true,
+    "originalPublic4209ReportRawSameAndCorrected4509V2OnlyKnownProseReplacementPlusExplanation": true,
+    "separateCorrectionLineRangesAndNoGuestStateChangeClaimsConsistent": true,
+    "publicCoreSourcesReceiptsAndEvery13JsonReportPrivacyScanPassed": true,
+    "publicInstallerProgramBinaryFullCpCredentialsPrivateKeysPasswordExactRedirectQueryLoginImagesReadOrCopied": false,
+    "noNewScreenshotsOrGuestGuiIndependentReplay": true,
+    "queriesMayWriteExistingScratchAndPrivateDiagnosticRecordNotCp": true,
+    "wholeFsZeroWriteOrCreationTimeClaim": false
+  },
+  "sourceArchivePin": {
+    "sizeBytes": 3507933,
+    "sha256": "91f786cd32e8bd445edbfad383ee47fb682c54be02459daf779627f88e89c1da"
+  },
+  "historicalBuildAssociation": {
+    "binarySha256": "4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818",
+    "sizeBytes": 6942792,
+    "sourceArchiveSha256": "91f786cd32e8bd445edbfad383ee47fb682c54be02459daf779627f88e89c1da",
+    "baseV10CodeFilesMatched": 84
+  },
+  "selectedSourcePins": {
+    "crates/compatforge-service/src/jobs.rs": {
+      "sizeBytes": 103973,
+      "sha256": "bc67173c2b971ea43c31d87e7ad21fc9d6b48ebdfbd64fddb6ab53e49e0c183d"
+    },
+    "crates/compatforge-service/src/lifecycle.rs": {
+      "sizeBytes": 47804,
+      "sha256": "98483f3b5d2d607425919438d05b363c22b48bae8169efd1b445ce2ba464e236"
+    },
+    "crates/compatforge-service/src/registry.rs": {
+      "sizeBytes": 38407,
+      "sha256": "20fbaff9767a405976239061295185c8e5dec2a75fede26061dae4afe9db3288"
+    }
+  },
+  "diagnosticSummary": {
+    "coreJobs": 549,
+    "fullStoreRows": 160,
+    "coreRunningBinarySha256": "4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818",
+    "coreReviewedSourceArchiveSha256": "91f786cd32e8bd445edbfad383ee47fb682c54be02459daf779627f88e89c1da",
+    "generationId": "gen-job-1791927518934-1",
+    "generationStatus": "failed",
+    "immutableDefinitionDigest": "sha256:38d95e2c2b93929d2ccfdda45be61c250b7f7061c1ba18765c3f4f735cbb832a",
+    "declaredLauncher": "DupeGuru/dupeGuru-win32.exe",
+    "actualMainProgramPin": {
+      "sizeBytes": 3374518,
+      "sha256": "f650922fb2723ece734fb0a554e53da842cb6c693a6374f4201b35337f1e4d0c"
+    },
+    "actualMainPeMachine": "0x14c",
+    "checkpoint": {
+      "file": "after-failed-install-final-restart-readonly-v2.json",
+      "sha256": "dded25331a5ad60c389ea16c9ddd429cd6a1f03deaa553d43386d3fbba26b73d",
+      "coreJobs": 549,
+      "fullStoreRows": 160
+    }
+  },
+  "resolvedAttributionCorrection": {
+    "passed": true,
+    "reviewFinding": "Initial prose attributed both generation and job failure writes to lifecycle.finish; source has two separate steps",
+    "actualLifecycleFinishLines": {
+      "sourceReference": "dupeguru-readonly-20261014-2158/core-reviewed-source/crates/compatforge-service/src/lifecycle.rs",
+      "generationFailedAndErrorReturned": [
+        401,
+        445
+      ]
+    },
+    "actualJobsPollLines": {
+      "sourceReference": "dupeguru-readonly-20261014-2158/core-reviewed-source/crates/compatforge-service/src/jobs.rs",
+      "jobFailedAndErrorStoredAfterFinishErr": [
+        714,
+        717
+      ]
+    },
+    "initial11ProspectiveManifestAndAllActualRawPreservedPrivately": true,
+    "firstPublicReportRawPreserved": true,
+    "firstReportPin": {
+      "sizeBytes": 4209,
+      "sha256": "7959bd03cd10e591cc24d7c42e9a0d0c27207c5bbfe69278c90ef3453dfd02b8"
+    },
+    "correctedReportPin": {
+      "sizeBytes": 4509,
+      "sha256": "5af1bc748e1c076706cc5af4059894de7b6f74a74aff9eab3e2d79092cf35195"
+    },
+    "originalManifestSha256": "d3ea0aa19da81ed100ab90b2ae2d7091f6305d4aefbd620b05545fa50fd9ac12",
+    "noGuestStateCounterCheckpointRestartDefinitionOrCodeChange": true,
+    "staticBranchInferenceStillLimitedNoOriginalRuntimeCallStackOrInstallerTrace": true
+  },
+  "priorFailedRoundFinalHeld": {
+    "sizeBytes": 21809,
+    "sha256": "0ed7a0cef24ca67f8e26f67b25f01a3d8e12c183c9d2567217b97706b981c35e"
+  },
+  "firstManifestHeld": {
+    "file": "dupeguru-readonly-prospective-files-20261014-2158.json",
+    "sha256": "d3ea0aa19da81ed100ab90b2ae2d7091f6305d4aefbd620b05545fa50fd9ac12",
+    "files": 11,
+    "allActualRawSnapshotRehashed": true
+  },
+  "reviewHistory": [
+    "Fresh incremental second-round diagnosis review against base9f3734e0 and initial11/new13 manifests. First dupeGuru failed-install FINAL21809 bytes remain exactly unchanged, and no prior application FINAL substitutes this round.",
+    "Independent initial11 audit actualexit0 verified allbytes/source/probe/privacy. Source review found inaccurate combined attribution of generation/jobFailed to finish in first prose; reviewer withheldFINAL, parent preserved first11allraw and added explicit new correction/V2 report. Complete new13 audit actualexit0 verifies correct two-stage attribution and full preserved snapshot.",
+    "Reviewer initially guessed the historical build JSONL filename without date and type reported missing. Actual directory inventory identified artha-core-cwd-reviewed-build-20261011.jsonl; saved reader loaded its complete four JSONL records/final build association. Original missing-path exacttrace onlytoolhistory, not fabricated archivedstderr or runtime defect.",
+    "Some initial broad rg source output was truncated; saved bounded source-flow reader then read actual complete archived source and explicit relevant ranges. Truncation is not evidence all broad output was inspected. Selected entire raw files and exact archive members were independently compared.",
+    "Parent Windows literalglob/guessed currentcheckout lookups are toolhistory only. Actual preserved reviewed source was subsequently used; no false claim that maincheckout oldsource matches deployedbinary, no originalCoretrace rebuilt from staticdataflow.",
+    "All previous failed-install/error/helper/source licence/fullclosure/noGUI/fullCP/date-correction boundaries held. Old Scribus oneprivatecanonical exactraw loss not repaired or invented; no prior query content repeated."
+  ],
+  "limitations": [
+    "Passing FINAL approves corrected readonly diagnostic evidence, not application compatibility/repair/installation. Windows70accepted and18pending everyfield unchanged. Original dupeGuru job/gen remain failed with no selectedready generation and empty launcherDigests.",
+    "Independent host bytes/archive/source/staticflow/Git rawfilter/index/privacy and safe saved receipts/helpers review only. No guest SSH/API/GUI/filesystem probe/service/build/test/recovery action, no complete privateCP read or independent seven-class CP replay.",
+    "Historical reviewed source archive SHA and saved build binary SHA association plus supplied current /proc/exe digest support this selected source context, not a fresh build/reproducibility proof or original runtime function/syscall/callstack evidence. Only3 source files complete raw copied; not allCore source manual review.",
+    "Observed firstmissing declared drive_c/DupeGuru and finalcomponent case mismatch in actual Linux defaultdirectory match static check_path Io branch. Python lstat analogue is not originalCore calltrace. Why NSIS MultiUser defaulted rather than /D and full installer contract/unique original failurecause remain unresolved.",
+    "Correct static flow is lifecycle.finish Failedgeneration/RegistryError return, then jobs.poll Err handling Failedjob/error persistence. Initial prose combined attribution retained as history; separate correction/newreport must accompany it. No originalerror/job records rewritten.",
+    "620program/3registry and full549Core160SQLite all7class preservation are code assertions and safe receipt crosschecks, not filesystem/fullCP replay. Recent64IPC is not fullSQLite. Queries canwrite scratch and diagnosticrecord is privatewrite, notCP/allFSzero-write claim.",
+    "Same unique currenthelper strictSSHstdin and existingCP stillcurrent; no newCP/restart/signature/trustreset/newjob/GET/newprogram/repair/promote/recopyexpectedpath. No need hosthelper file on guest. Old548count helpers remain historical, not forced on current549.",
+    "No duplicate scan/mark/reference/delete/move/save/reopen/ChineseGUI/About/fullfeatures/network-backgroundexclusion/large-badinput/migration/unattended/market acceptance. MainGPLv3/orlaterunestablished/hscommonseparate/completebundleclosureunverified/installedlicencecomparisonunverified unchanged.",
+    "No screenshots/loginimage/browser/auth/password/power/VM/Ubuntu execution by reviewer. IndependentUbuntu2/Flatpak2timeouts and previous Greenfish/CopyQ/Zim/Aegisub/Texmaker/Artha/Provider constraints held.",
+    "13prospective bytes+5250immutable preserved, indexparent fullbytes6493/outside1241; no wholeworkingtreebytes claim. Actual Gitstage/index/cachedcheck/commit/ordinarypush remain parentwork after both explicitFINAL notification and finalanswer."
+  ]
+}

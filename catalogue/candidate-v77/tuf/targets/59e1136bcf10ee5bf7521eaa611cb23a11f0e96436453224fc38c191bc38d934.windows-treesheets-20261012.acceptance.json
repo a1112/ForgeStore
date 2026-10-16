@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "treesheets",
+      "version": "3328",
+      "sha256": "af984faea6b8d9f3eadc9ad679b2e6aaa0942279a79676b92d4a135f82ee0280",
+      "size": 7492630,
+      "generationId": "gen-job-1791810934295-1",
+      "definitionDigest": "sha256:8b9cca46676c6d57b42e63331fcae948176e89050521ad4529c1c100ea5bec7f",
+      "launcherSha256": "sha256:880db9c32d6a8dc70afcd62e95e9362305856f1828f3fb6e59de4c6d2d92ce25",
+      "guiFileOperation": "passed-limited-flat-csv-two-cell-edit-cts-save-csv-export-fresh-open-with-startup-warning",
+      "save": {
+        "fixedDataPins": {
+          "drive_c/TreeSheetsTests/原始表格.csv": {
+            "sizeBytes": 50,
+            "sha256": "90e0a00e0d63be50a6ccb23e625369b6b72a56ba7959c784d69f0c21073f080c"
+          },
+          "drive_c/TreeSheetsTests/original.cts": {
+            "sizeBytes": 143,
+            "sha256": "305cd394a7eec461b8002575e454638bdb5778f7f9d8f59b52c24bafd73eaeab"
+          },
+          "drive_c/TreeSheetsTests/original.csv": {
+            "sizeBytes": 72,
+            "sha256": "e2ebea12ea0081f0e84233c15ec055f61371260665ea9295bc71c5867a1d7dd4"
+          }
+        },
+        "finiteIndependentChecks": {
+          "cts": {
+            "passedFiniteCtsCheck": true,
+            "fileVersion": 25,
+            "noImageBlocks": true,
+            "rootGridDimensions": [
+              2,
+              2
+            ],
+            "textRows": [
+              [
+                "项目",
+                "STATUS AFTER ORIGINAL42"
+              ],
+              [
+                "原始笔记",
+                "ORIGINAL SECOND42"
+              ]
+            ],
+            "cellCountIncludingRoot": 5,
+            "allDecompressedPayloadBytesConsumed": true,
+            "compressedEofAndNoTrailingBytes": true,
+            "selectedSizeAndZoomBytes": [
+              1,
+              0,
+              0
+            ],
+            "completeCtsSpecificationVerified": false
+          },
+          "csv": {
+            "passedFiniteCsvCheck": true,
+            "textRows": [
+              [
+                "项目",
+                "STATUS AFTER ORIGINAL42"
+              ],
+              [
+                "原始笔记",
+                "ORIGINAL SECOND42"
+              ]
+            ],
+            "utf8Bom": false,
+            "crlfCount": 2,
+            "sizeBytes": 72,
+            "sha256": "e2ebea12ea0081f0e84233c15ec055f61371260665ea9295bc71c5867a1d7dd4",
+            "fullCsvSpecificationVerified": false
+          }
+        },
+        "programFileCount": 193,
+        "programPinsPreserved": true
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "treesheets-01-registry-error-diagnostic-20261012.jpg": {
+          "sizeBytes": 46591,
+          "sha256": "3cd78245e70f5d2a0b0a35a71ee2c9c4234f00be1a8ae867c8e82c780bc72bd9",
+          "actualEncoding": "JPEG"
+        },
+        "treesheets-02-original-import-20261012.jpg": {
+          "sizeBytes": 34449,
+          "sha256": "5b244cf6f67617ead16f27f52c534c2f252d0313908e40a0d59b712ad5a53845",
+          "actualEncoding": "JPEG"
+        },
+        "treesheets-03-original-saved-20261012.jpg": {
+          "sizeBytes": 34157,
+          "sha256": "c117f093f5e800bd372156eb925baab4565a712c9be2d3cffc3d3191faa48f7f",
+          "actualEncoding": "JPEG"
+        },
+        "treesheets-04-about-20261012.jpg": {
+          "sizeBytes": 37228,
+          "sha256": "a82e24a724d620a8d3d153083fe04d1a560506e9cb830d76e12fe77dbc534520",
+          "actualEncoding": "JPEG"
+        },
+        "treesheets-05-original-fresh-open-20261012.jpg": {
+          "sizeBytes": 35705,
+          "sha256": "4b4193eb19746c617e188559ea548a1787ec6bd11153aab31862cd4e3f41b043",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-treesheets-source.json",
+    "sha256": "834e522b9b61c51029466642f583f84a20c66c12fd7a2d03543c333b3aa90b9e"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-treesheets-gui.json",
+    "sha256": "78c73eb95f10f7f971452c4cdbc24fddb0a75a60a24828836574b5a42824be81"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-treesheets-failures.json",
+    "sha256": "2d10bfff9ffe58c028257b8e80438bb911c9ecb63fc2d2991e8f97effb937b6f"
+  },
+  "limits": [
+    "Only a tiny Chinese-name UTF8/LF flat 2x2 CSV imported using native C-drive directory tree, two cells doubleclick/CtrlA/ASCII keys edited, native SaveAs ASCII CTS and CSV Export, new formal process closed automatically restored output then explicitly Opened CTS.",
+    "Original50B input unchanged, CTS143B and CSV72B preserved. Finite v25 CTS magic/no image/single zlib/five cells/all payload bytes and exact two-row UTF8 quoted CSV/CRLF independently checked; not full CTS/CSV/TreeSheets specifications. Synthetic data not applications.",
+    "Original Help/About TreeSheets3328/wxWidgets3.3.2 measured; market About not independently tested. Default font Chinese readable, no font setting or new package.",
+    "Native startup missing HKCU Control Panel International User Profile registry key error2 appears and is acknowledged normally before usable main window. Source wxUILocale::UseDefault is static context, no actual runtime function trace/root cause/fix claimed.",
+    "No hierarchy/nested grids, broad cell styling/selection/search/replace/fold/filter/clipboard/images/attachments/XML/HTML/PDF/SVG/scripts/Lobster/plugins/printing/multi-document/large bad file or broad format acceptance. Tutorial visible is not functional tutorial acceptance.",
+    "No direct Chinese keyboard entry or complete full-path native chooser workflow, guest network/new-machine registration/migration/cross-version/unattended or GUI Store update/rollback buttons. No absence-of-background-network claim.",
+    "Main fixed-source Zlib notice retained; only Nuvola installed named license notice found, no installed main-license same-text comparison. Full bundle closure/Authenticode/GPG/source-binary correspondence/reproducible/latest unverified. Source hash is local, installer size/digest matches official fixed release API.",
+    "No Core/program/global context/definition/launcher/environment/workingDirectory/font package/DLL/runtime or registry repair; source lowest privileges and native Inno args not full install behavior or real WindowsUAC/admin proof.",
+    "Independent market, cached same-version update/exact original rollback/normal final restart pending at original freeze; completed evidence separate."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

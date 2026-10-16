@@ -1,0 +1,2431 @@
+{
+  "entries": [
+    {
+      "compatibility": {
+        "evidence": "windows-rolling-20260929.acceptance.json#7zip",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "d64a0468f5b5b0b0fc5b2188450bcd655b70809d97b1c4535f2884635094377d",
+          "size": 1658851,
+          "target": "7z2601-x64.exe",
+          "url": "https://www.7-zip.org/a/7z2601-x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "7zip"
+      },
+      "id": "7zip",
+      "license": "LGPL-2.1-or-later AND BSD-3-Clause AND BSD-2-Clause AND LicenseRef-unRAR-restriction",
+      "name": {
+        "en": "7-Zip",
+        "zhCN": "7-Zip"
+      },
+      "origin": "https://www.7-zip.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Igor Pavlov",
+      "summary": {
+        "en": "File archiver",
+        "zhCN": "压缩与解压文件"
+      },
+      "version": "26.01"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-rolling-20260929.acceptance.json#notepad-plus-plus",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "7c243203265ce8fdac76c839bf744ae35dcf620760eb97c2ea279af498560e45",
+          "size": 6898288,
+          "target": "npp.8.9.6.2.Installer.x64.exe",
+          "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.6.2/npp.8.9.6.2.Installer.x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "notepad-plus-plus"
+      },
+      "id": "notepad-plus-plus",
+      "license": "GPL-3.0-only; see upstream clarifications and bundled component notices",
+      "name": {
+        "en": "Notepad++",
+        "zhCN": "Notepad++"
+      },
+      "origin": "https://notepad-plus-plus.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Notepad++",
+      "summary": {
+        "en": "Text and code editor",
+        "zhCN": "文本与代码编辑器"
+      },
+      "version": "8.9.6.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-rolling-20260929.acceptance.json#sumatrapdf",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "1eee71cccd2ea6e94d5bcea54ee2f759844da3e1a0ee2f6045035b1d17b94381",
+          "size": 11075960,
+          "target": "SumatraPDF-3.6.1-64-install.exe",
+          "url": "https://www.sumatrapdfreader.org/dl/rel/3.6.1/SumatraPDF-3.6.1-64-install.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "sumatrapdf"
+      },
+      "id": "sumatrapdf",
+      "license": "GPL-3.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "SumatraPDF",
+        "zhCN": "SumatraPDF"
+      },
+      "origin": "https://www.sumatrapdfreader.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "SumatraPDF",
+      "summary": {
+        "en": "Lightweight document reader",
+        "zhCN": "轻量文档阅读器"
+      },
+      "version": "3.6.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-sqlitestudio-20260929.acceptance.json#sqlitestudio",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "5018ea571c2a3416944267d387cb75eea99d46ebd010f6aa5c35df1f7690c894",
+          "size": 35103114,
+          "target": "SQLiteStudio-3.4.17-windows-x64-installer.exe",
+          "url": "https://github.com/pawelsalawa/letos/releases/download/3.4.17/SQLiteStudio-3.4.17-windows-x64-installer.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "sqlitestudio"
+      },
+      "id": "sqlitestudio",
+      "license": "GPL-3.0-only with OpenSSL linking exception",
+      "name": {
+        "en": "SQLiteStudio",
+        "zhCN": "SQLiteStudio"
+      },
+      "origin": "https://github.com/pawelsalawa/letos/releases/tag/3.4.17",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "SQLiteStudio",
+      "summary": {
+        "en": "SQLite database editor and query tool",
+        "zhCN": "SQLite 数据库编辑与查询"
+      },
+      "version": "3.4.17"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-vlc-20260930.acceptance.json#vlc",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "20ad191348684b470ddc4e05204316f3d8e39655f412b3e392a0eef97639daaf",
+          "size": 45948080,
+          "target": "vlc-3.0.23-win64.exe",
+          "url": "https://get.videolan.org/vlc/3.0.23/win64/vlc-3.0.23-win64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "vlc"
+      },
+      "id": "vlc",
+      "license": "GPL-2.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "VLC media player",
+        "zhCN": "VLC 媒体播放器"
+      },
+      "origin": "https://downloads.videolan.org/videolan/vlc/3.0.23/win64/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "VideoLAN",
+      "summary": {
+        "en": "Local audio and video player",
+        "zhCN": "播放本地音视频文件"
+      },
+      "version": "3.0.23"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-texstudio-20260930.acceptance.json#texstudio",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "618c633e1ad6d9aba90ff8c4498d265b2cbfb6d02173d4577ca8ba3c989cc1e4",
+          "size": 154728568,
+          "target": "Texstudio-4.9.5-win-qt6-signed.exe",
+          "url": "https://github.com/texstudio-org/texstudio/releases/download/4.9.5/Texstudio-4.9.5-win-qt6-signed.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "texstudio"
+      },
+      "id": "texstudio",
+      "license": "GPL-2.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "TeXstudio",
+        "zhCN": "TeXstudio"
+      },
+      "origin": "https://github.com/texstudio-org/texstudio/releases/tag/4.9.5",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "TeXstudio Team",
+      "summary": {
+        "en": "LaTeX document editor",
+        "zhCN": "LaTeX 文档编辑器"
+      },
+      "version": "4.9.5"
+    },
+    {
+      "compatibility": {
+        "evidence": null,
+        "status": "unknown"
+      },
+      "delivery": {
+        "backend": "flatpak",
+        "reference": "app/org.forgeos.StoreFixture/x86_64/stable",
+        "remote": "forge-store-fixture"
+      },
+      "id": "org.forgeos.storefixture-flatpak",
+      "license": "MIT",
+      "name": {
+        "en": "Flatpak Fixture",
+        "zhCN": "Flatpak 示例"
+      },
+      "origin": "https://flatpak.org/",
+      "permissions": [],
+      "publisher": "ForgeOS",
+      "summary": {
+        "en": "Signed local repository test application",
+        "zhCN": "本地签名仓库验证程序"
+      },
+      "version": "2.0.0"
+    },
+    {
+      "compatibility": {
+        "evidence": null,
+        "status": "unknown"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "5d2b47555be52f41c45b2bd556da1385ed5f20b984099b305ef86209d8494fcd",
+          "size": 1605,
+          "target": "org.forgeos.storefixture-2.0.0.forgepkg",
+          "url": "file:///usr/share/forge-store/fixtures/5d2b47555be52f41c45b2bd556da1385ed5f20b984099b305ef86209d8494fcd.forgepkg"
+        },
+        "backend": "forge-package"
+      },
+      "id": "org.forgeos.storefixture",
+      "license": "MIT",
+      "name": {
+        "en": "ForgeOS Package Fixture",
+        "zhCN": "ForgeOS 包示例"
+      },
+      "origin": "https://github.com/lcxinc/ForgeOS",
+      "permissions": [],
+      "publisher": "ForgeOS",
+      "summary": {
+        "en": "Rollback capable native test application",
+        "zhCN": "可回退的原生示例应用"
+      },
+      "version": "2.0.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-winmerge-20260930.acceptance.json#winmerge",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "6ac1e3c0028c39e49962dacd662ab553989d7e817a5cdf96ebbbc1fb345bcff4",
+          "size": 17184616,
+          "target": "WinMerge-2.16.58.2-x64-PerUser-Setup.exe",
+          "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.58.2/WinMerge-2.16.58.2-x64-PerUser-Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "winmerge"
+      },
+      "id": "winmerge",
+      "license": "GPL-2.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "WinMerge",
+        "zhCN": "WinMerge"
+      },
+      "origin": "https://github.com/WinMerge/winmerge/releases/tag/v2.16.58.2",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "WinMerge",
+      "summary": {
+        "en": "File and folder comparison and merge tool",
+        "zhCN": "文件与文件夹比较合并工具"
+      },
+      "version": "2.16.58.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-geany-20260930.acceptance.json#geany",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "50c7835b31bc736d0b5e5f894aa8ec08a95185873fb64d29a95727d2859107d8",
+          "size": 28220816,
+          "target": "geany-2.1_setup.exe",
+          "url": "https://github.com/geany/geany/releases/download/2.1.0/geany-2.1_setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "geany"
+      },
+      "id": "geany",
+      "license": "GPL-2.0; bundled component notices apply",
+      "name": {
+        "en": "Geany",
+        "zhCN": "Geany"
+      },
+      "origin": "https://github.com/geany/geany/releases/tag/2.1.0",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Geany contributors",
+      "summary": {
+        "en": "Lightweight code editor",
+        "zhCN": "轻量代码编辑器"
+      },
+      "version": "2.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-kdiff3-20260930.acceptance.json#kdiff3",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "2d58b4d675934290146faf08a239788ffc36fd6ac2c480456100fb1d8ab2bb16",
+          "size": 81410248,
+          "target": "kdiff3-1.12.4-windows-x86_64.exe",
+          "url": "https://download.kde.org/stable/kdiff3/kdiff3-1.12.4-windows-x86_64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "kdiff3"
+      },
+      "id": "kdiff3",
+      "license": "GPL-2.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "KDiff3",
+        "zhCN": "KDiff3"
+      },
+      "origin": "https://download.kde.org/stable/kdiff3/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "KDE",
+      "summary": {
+        "en": "Text comparison and merge tool",
+        "zhCN": "文本比较与合并工具"
+      },
+      "version": "1.12.4"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-krita-20260930.acceptance.json#krita",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "0dd4d6f86878d42b058aa33bb2fded01c888768e6f1daa0319e5f5b5cc49e465",
+          "size": 165547784,
+          "target": "krita-x64-5.3.4-setup.exe",
+          "url": "https://download.kde.org/stable/krita/5.3.4/krita-x64-5.3.4-setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "krita"
+      },
+      "id": "krita",
+      "license": "GPL-3.0; bundled component notices apply",
+      "name": {
+        "en": "Krita",
+        "zhCN": "Krita"
+      },
+      "origin": "https://krita.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "KDE",
+      "summary": {
+        "en": "Digital painting and image editing",
+        "zhCN": "数字绘画与图像编辑工具"
+      },
+      "version": "5.3.4"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-peazip-20261001.acceptance.json#peazip",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "cb52763da39ef44f6b8ce3619eb76817aa8b2e4c3518c406dc5cc2857bcaeb76",
+          "size": 11391512,
+          "target": "peazip-11.3.0.WIN64.exe",
+          "url": "https://github.com/peazip/PeaZip/releases/download/11.3.0/peazip-11.3.0.WIN64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "peazip",
+        "wineAppearance": "classic"
+      },
+      "id": "peazip",
+      "license": "LGPL-3.0; bundled component notices apply",
+      "name": {
+        "en": "PeaZip",
+        "zhCN": "PeaZip"
+      },
+      "origin": "https://peazip.github.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Giorgio Tani",
+      "summary": {
+        "en": "Archive creation, extraction and file management",
+        "zhCN": "文件压缩、解压与归档管理工具"
+      },
+      "version": "11.3.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-doublecmd-20261002.acceptance.json#doublecmd",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "3824250b280d1eaefe6422690bb6a0fc652aa8006545c05a63f9d2e1cababfd4",
+          "size": 10639174,
+          "target": "doublecmd-1.2.9.x86_64-win64.exe",
+          "url": "https://github.com/doublecmd/doublecmd/releases/download/v1.2.9/doublecmd-1.2.9.x86_64-win64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "doublecmd",
+        "wineAppearance": "classic"
+      },
+      "id": "doublecmd",
+      "license": "GPL-2.0; bundled component notices apply",
+      "name": {
+        "en": "Double Commander",
+        "zhCN": "Double Commander"
+      },
+      "origin": "https://doublecmd.sourceforge.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Double Commander Project",
+      "summary": {
+        "en": "Two-panel file manager with copy, rename and viewer",
+        "zhCN": "双栏文件复制、重命名与内容查看工具"
+      },
+      "version": "1.2.9"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-xournalpp-20261003.acceptance.json#xournalpp",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "0524a354a2c2c680e9c4b3817a3fc9284b1e60760bac1a74c562701a4e355637",
+          "size": 96924916,
+          "target": "xournalpp-1.3.8-windows-setup-AMD64.exe",
+          "url": "https://github.com/xournalpp/xournalpp/releases/download/v1.3.8/xournalpp-1.3.8-windows-setup-AMD64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "xournalpp"
+      },
+      "id": "xournalpp",
+      "license": "GPL-2.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "Xournal++",
+        "zhCN": "Xournal++"
+      },
+      "origin": "https://xournalpp.github.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Xournal++ Team",
+      "summary": {
+        "en": "Handwritten notes, text editing and PDF export",
+        "zhCN": "手写笔记、文本编辑与 PDF 导出工具"
+      },
+      "version": "1.3.8"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-speedcrunch-20261003.acceptance.json#speedcrunch",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "702c362c9a02c3a79d018a4d68428dc80fad311adad506cc47b69927e47dbf89",
+          "size": 9451219,
+          "target": "SpeedCrunch-0.12-win32.exe",
+          "url": "https://bitbucket.org/heldercorreia/speedcrunch/downloads/SpeedCrunch-0.12-win32.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "speedcrunch"
+      },
+      "id": "speedcrunch",
+      "license": "GPL-2.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "SpeedCrunch",
+        "zhCN": "SpeedCrunch"
+      },
+      "origin": "https://www.speedcrunch.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The SpeedCrunch Developers",
+      "summary": {
+        "en": "High-precision calculator",
+        "zhCN": "高精度科学计算器"
+      },
+      "version": "0.12"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-inkscape-20261003.acceptance.json#inkscape",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "fa21d25e56dbfe41e9b014a4f37689edda4bb41d5a3597fe2787dff6c10e651f",
+          "size": 118507928,
+          "target": "inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe",
+          "url": "https://inkscape.org/gallery/item/59502/inkscape-1.4.4_2026-05-05_dcaf3e7-x64.signed.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "inkscape"
+      },
+      "id": "inkscape",
+      "license": "GPL-3.0-or-later; bundled component notices apply",
+      "name": {
+        "en": "Inkscape",
+        "zhCN": "Inkscape"
+      },
+      "origin": "https://inkscape.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Inkscape Project",
+      "summary": {
+        "en": "Vector graphics editor",
+        "zhCN": "Vector graphics editor"
+      },
+      "version": "1.4.4"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-qalculate-20261003.acceptance.json#qalculate",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "f677d8c3c63c7757e6efc7bee7d4ccded725437194dce94485fc3fb713692e25",
+          "size": 70448128,
+          "target": "qalculate-5.12.0-x64.msi",
+          "url": "https://github.com/Qalculate/libqalculate/releases/download/v5.12.0/qalculate-5.12.0-x64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "qalculate"
+      },
+      "id": "qalculate",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "Qalculate!",
+        "zhCN": "Qalculate!"
+      },
+      "origin": "https://qalculate.github.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Hanna Knutsson",
+      "summary": {
+        "en": "Multipurpose calculator",
+        "zhCN": "多用途计算器"
+      },
+      "version": "5.12.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-audacity-20261003.acceptance.json#audacity",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "e3096847ac4270d304e9b112d153642a72b66b42e13f83a32f06eecfb4ce7e48",
+          "size": 19943880,
+          "target": "audacity-win-3.7.9-64bit.exe",
+          "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.9/audacity-win-3.7.9-64bit.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "audacity"
+      },
+      "id": "audacity",
+      "license": "GPL-3.0-only",
+      "name": {
+        "en": "Audacity",
+        "zhCN": "Audacity"
+      },
+      "origin": "https://www.audacityteam.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Audacity Team",
+      "summary": {
+        "en": "Audio editor (3.7.9 maintenance branch)",
+        "zhCN": "音频编辑器（3.7.9 维护分支）"
+      },
+      "version": "3.7.9"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-windirstat-20261003.acceptance.json#windirstat",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "0a7d214586bb7c7fd030b8f2295bc7caa7f88a0cec094b196c803e2dba0d134d",
+          "size": 2433024,
+          "target": "WinDirStat-2.9.0-x64.msi",
+          "url": "https://github.com/windirstat/windirstat/releases/download/release/v2.9.0/WinDirStat-x64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "windirstat"
+      },
+      "id": "windirstat",
+      "license": "GPL-2.0-only",
+      "name": {
+        "en": "WinDirStat",
+        "zhCN": "WinDirStat"
+      },
+      "origin": "https://windirstat.net/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "WinDirStat Team",
+      "summary": {
+        "en": "Disk and directory usage analyzer",
+        "zhCN": "磁盘与目录占用分析工具"
+      },
+      "version": "2.9.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-notepad3-20261003.acceptance.json#notepad3",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "9cf68b38bcc1aa679050b9069174ab222383ba004c37bdd47056cafc71626be9",
+          "size": 4882616,
+          "target": "Notepad3_7.26.602.1_x64_Setup.exe",
+          "url": "https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_7.26.602.1/Notepad3_7.26.602.1_x64_Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "notepad3"
+      },
+      "id": "notepad3",
+      "license": "BSD-3-Clause",
+      "name": {
+        "en": "Notepad3",
+        "zhCN": "Notepad3"
+      },
+      "origin": "https://rizonesoft.com/downloads/notepad3/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Rizonesoft",
+      "summary": {
+        "en": "Lightweight text and code editor",
+        "zhCN": "轻量文本与代码编辑器"
+      },
+      "version": "7.26.602.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-jpegview-20261003.acceptance.json#jpegview",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "3108a85b5d408fa17027b25454f0ee7e7b450e680dbc1dab68d26d9099e18bf2",
+          "size": 5165056,
+          "target": "JPEGView64_en-us_1.3.46.msi",
+          "url": "https://github.com/sylikc/jpegview/releases/download/v1.3.46/JPEGView64_en-us_1.3.46.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "jpegview"
+      },
+      "id": "jpegview",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "JPEGView",
+        "zhCN": "JPEGView"
+      },
+      "origin": "https://github.com/sylikc/jpegview",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Kevin M (sylikc)",
+      "summary": {
+        "en": "Lightweight image viewer and editor",
+        "zhCN": "轻量图片查看与编辑器"
+      },
+      "version": "1.3.46"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-dia-20261005.acceptance.json#dia",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8257389d6264742d414404beaaaac869336c91f9f9af1e31ee081aa6e7857f3c",
+          "size": 19620143,
+          "target": "dia-setup-0.97.2-2-unsigned.exe",
+          "url": "https://downloads.sourceforge.net/project/dia-installer/dia-win32-installer/0.97.2/dia-setup-0.97.2-2-unsigned.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "dia"
+      },
+      "id": "dia",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "Dia",
+        "zhCN": "Dia"
+      },
+      "origin": "https://dia-installer.de/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Dia Developers",
+      "summary": {
+        "en": "Structured diagram editor",
+        "zhCN": "结构化流程图与图形编辑器"
+      },
+      "version": "0.97.2-2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-tuxpaint-20261005.acceptance.json#tuxpaint",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c",
+          "size": 50412612,
+          "target": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+          "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.35/tuxpaint-0.9.35-3-windows-x86_64-installer.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "tuxpaint"
+      },
+      "id": "tuxpaint",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "Tux Paint",
+        "zhCN": "Tux Paint"
+      },
+      "origin": "https://tuxpaint.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Tux Paint Development Team",
+      "summary": {
+        "en": "Drawing program for children",
+        "zhCN": "儿童绘画与创作工具"
+      },
+      "version": "0.9.35-3"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-mpchc-20261006-corrected.acceptance.json#mpchc",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "4a39ff780905c533f43b7e5684672a50345369b54e895e2ca6b7039194490d12",
+          "size": 22986429,
+          "target": "MPC-HC.2.8.2.x64.exe",
+          "url": "https://github.com/clsid2/mpc-hc/releases/download/2.8.2/MPC-HC.2.8.2.x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "mpchc"
+      },
+      "id": "mpchc",
+      "license": "GPL-3.0-or-later",
+      "name": {
+        "en": "MPC-HC (limited compatibility)",
+        "zhCN": "MPC-HC（受限兼容）"
+      },
+      "origin": "https://github.com/clsid2/mpc-hc",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "MPC-HC Team",
+      "summary": {
+        "en": "Requires manual VMR9 renderless; limited video/frame workflow tested. Timing issue unresolved; EOF and A/V sync unverified.",
+        "zhCN": "需手动选择 VMR9 renderless；有限视频/帧保存测试通过，时间轴异常未修复，自动结束与音画同步未验收"
+      },
+      "version": "2.8.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-lazpaint-20261009.acceptance.json#lazpaint",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "938fd2694247369f28fa219a8cf4b8c8a468c8691697e8c0519191ba2ecd3459",
+          "size": 14153628,
+          "target": "lazpaint7.3_setup_win32_win64.exe",
+          "url": "https://github.com/bgrabitmap/lazpaint/releases/download/v7.3/lazpaint7.3_setup_win32_win64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "lazpaint"
+      },
+      "id": "lazpaint",
+      "license": "GPL-3.0-only",
+      "name": {
+        "en": "LazPaint",
+        "zhCN": "LazPaint"
+      },
+      "origin": "https://github.com/bgrabitmap/lazpaint",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Circular, Fabien Wang, Lainz and others",
+      "summary": {
+        "en": "Chinese-name image load, single-layer painting, LZP save and PNG export tested; advanced editing and direct Chinese keyboard input unverified.",
+        "zhCN": "中文图像打开、单层绘图、LZP 保存与 PNG 导出已测；高级编辑和直接中文输入未验收"
+      },
+      "version": "7.3"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-akelpad-20261010.acceptance.json#akelpad",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "ad63ea4048d68721701a3c0d2d9041a158e90789c7fc24526380607aad136aca",
+          "size": 1241412,
+          "target": "AkelPad-4.9.9-setup.exe",
+          "url": "https://downloads.sourceforge.net/project/akelpad/AkelPad%204/4.9.9/AkelPad-4.9.9-setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "akelpad"
+      },
+      "id": "akelpad",
+      "license": "BSD (upstream declaration; clause count unverified)",
+      "name": {
+        "en": "AkelPad",
+        "zhCN": "AkelPad"
+      },
+      "origin": "https://akelpad.sourceforge.net/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Shengalts Aleksander and Kuznetsov Alexey",
+      "summary": {
+        "en": "Chinese-name UTF-8 BOM/CRLF text edit, save and fresh-process reopen tested; exact BSD clause count, advanced editor and direct Chinese input unverified.",
+        "zhCN": "中文名 UTF-8 BOM/CRLF 文本编辑、保存与新进程重开已测；BSD 条款数量、高级功能及直接中文输入未验收"
+      },
+      "version": "4.9.9"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-frhed-20261011.acceptance.json#frhed",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "941b6b7c436653a7e4c0c55ee5180c343e4b9da86b080530c3b4af8092f5c4e0",
+          "size": 725124,
+          "target": "Frhed-1.6.0-Setup.exe",
+          "url": "https://downloads.sourceforge.net/project/frhed/1.%20Stable%20Releases/1.6.0/Frhed-1.6.0-Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "frhed"
+      },
+      "id": "frhed",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "Frhed",
+        "zhCN": "Frhed"
+      },
+      "origin": "https://frhed.sourceforge.net/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Raihan Kibria",
+      "summary": {
+        "en": "64-byte binary hex edit, Save As and fresh-process reopen tested; ASCII paths only, advanced editor and physical disk support unverified.",
+        "zhCN": "64 字节二进制修改、另存与新进程重开已测；仅 ASCII 路径，高级编辑及物理磁盘功能未验收"
+      },
+      "version": "1.6.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-notepad2mod-20261011.acceptance.json#notepad2mod",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "ebd0bfd738ba9f07598369d09c91241807c94fe63f6629a0a9c66f2d66d3aed9",
+          "size": 1449064,
+          "target": "Notepad2-mod.4.2.25.998.exe",
+          "url": "https://github.com/XhmikosR/notepad2-mod/releases/download/4.2.25.998/Notepad2-mod.4.2.25.998.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "notepad2mod"
+      },
+      "id": "notepad2mod",
+      "license": "BSD-3-Clause",
+      "name": {
+        "en": "Notepad2-mod",
+        "zhCN": "Notepad2-mod"
+      },
+      "origin": "https://xhmikosr.github.io/notepad2-mod/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "XhmikosR and contributors",
+      "summary": {
+        "en": "Small Chinese-name UTF-8 BOM/CRLF text open, plain replacement, ASCII append, Save As and fresh-process reopen tested; advanced editor unverified.",
+        "zhCN": "小型中文名 UTF-8 BOM/CRLF 文本打开、普通替换、ASCII 追加、另存与新进程重开已测；高级编辑未验收"
+      },
+      "version": "4.2.25.998"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-dbbrowser-20261011.acceptance.json#dbbrowser",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688",
+          "size": 19857408,
+          "target": "DB.Browser.for.SQLite-v3.13.1-win64.msi",
+          "url": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "dbbrowser"
+      },
+      "id": "dbbrowser",
+      "license": "MPL-2.0 OR GPL-3.0-or-later",
+      "name": {
+        "en": "DB Browser for SQLite",
+        "zhCN": "DB Browser for SQLite"
+      },
+      "origin": "https://sqlitebrowser.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "DB Browser for SQLite Team",
+      "summary": {
+        "en": "Small Chinese-name SQLite open, Save As, SQL update/insert, Write Changes and fresh-process reopen tested; manually dismiss startup DPI warning.",
+        "zhCN": "小型中文名 SQLite 打开、另存、SQL 更新与插入、保存及新进程重开已测；启动需手动确认 DPI 警告"
+      },
+      "version": "3.13.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-dosbox-20261011-corrected.acceptance.json#dosbox",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "a9e270217d12867c2609d9423d1b2ed83fcf7cd08aeeee3ab09a4afdf9e9418e",
+          "size": 1493703,
+          "target": "DOSBox0.74-3-win32-installer.exe",
+          "url": "https://downloads.sourceforge.net/project/dosbox/dosbox/0.74-3/DOSBox0.74-3-win32-installer.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "dosbox"
+      },
+      "id": "dosbox",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "DOSBox",
+        "zhCN": "DOSBox"
+      },
+      "origin": "https://www.dosbox.com/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "DOSBox Team",
+      "summary": {
+        "en": "Small ASCII-folder mount, COPY, synthetic 16-bit DOS arithmetic/file program, result read and fresh-process reopen tested; games, audio and non-ASCII workflows unverified.",
+        "zhCN": "小型 ASCII 目录挂载、复制、16 位 DOS 计算与文件读写、新进程重开已测；游戏、音频及非 ASCII 流程未验收"
+      },
+      "version": "0.74-3"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-artha-20261011-cwd.acceptance.json#artha",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "db633951c6d8603062d8594c1b69c59188827875f0803069f0336ce9fcab2dc2",
+          "size": 12711596,
+          "target": "artha_1.0.3.0.exe",
+          "url": "https://downloads.sourceforge.net/project/artha/artha/1.0.3/artha_1.0.3.0.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "artha"
+      },
+      "id": "artha",
+      "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "Artha",
+        "zhCN": "Artha"
+      },
+      "origin": "https://artha.sourceforge.net/wiki/index.php/Download",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Sundaram Ramaswamy",
+      "summary": {
+        "en": "Limited English queries, ASCII-path history export and fresh-process recovery tested with native managed cwd; advanced functions and bundled licence closure unverified.",
+        "zhCN": "原生托管工作目录下有限英文查词、ASCII 路径历史导出与新进程恢复已测；高级功能及捆绑许可闭包未验收"
+      },
+      "version": "1.0.3.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-texworks-20261011.acceptance.json#texworks",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "24b7bccbf04ad136618216f0427f39fa6a60ef6163879db00fd8c17ab6b4b2e8",
+          "size": 29600489,
+          "target": "TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe",
+          "url": "https://github.com/TeXworks/texworks/releases/download/release-0.6.11/TeXworks-win10-setup-0.6.11-202602100835-git_7951fd8.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "texworks"
+      },
+      "id": "texworks",
+      "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "TeXworks",
+        "zhCN": "TeXworks"
+      },
+      "origin": "https://github.com/TeXworks/texworks/releases/tag/release-0.6.11",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "TeXworks project",
+      "summary": {
+        "en": "Limited small UTF-8 text open, replacement, ASCII edit, save and fresh-process reopen tested; TeX typesetting, PDF preview and advanced features unverified.",
+        "zhCN": "小型 UTF-8 文本打开、普通替换、ASCII 编辑、保存与新进程重开已测；TeX 排版、PDF 预览及高级功能未验收"
+      },
+      "version": "0.6.11"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-cherrytree-20261011.acceptance.json#cherrytree",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+          "size": 96911680,
+          "target": "cherrytree_1.7.2.1_win64_setup.exe",
+          "url": "https://github.com/giuspen/cherrytree/releases/download/v1.7.2/cherrytree_1.7.2.1_win64_setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "cherrytree"
+      },
+      "id": "cherrytree",
+      "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "CherryTree",
+        "zhCN": "CherryTree"
+      },
+      "origin": "https://github.com/giuspen/cherrytree/releases/tag/v1.7.2",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Giuseppe Penone",
+      "summary": {
+        "en": "Limited two-node XML note edit, save and fresh-process reopen tested with per-launcher Pango fontconfig backend; advanced note functions unverified.",
+        "zhCN": "逐启动器设置 Pango fontconfig 后端；有限两层 XML 笔记编辑、保存与新进程重开已测，高级功能未验收"
+      },
+      "version": "1.7.2.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-sigil-20261011.acceptance.json#sigil",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "7761dc54a4f100abff116c30e4aeb3ffbd2ad30277e65a1a5c0107e5cd11707e",
+          "size": 133608315,
+          "target": "Sigil-2.6.2-Windows-x64-Setup.exe",
+          "url": "https://github.com/Sigil-Ebook/Sigil/releases/download/2.6.2/Sigil-2.6.2-Windows-x64-Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "sigil"
+      },
+      "id": "sigil",
+      "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "Sigil",
+        "zhCN": "Sigil"
+      },
+      "origin": "https://github.com/Sigil-Ebook/Sigil/releases/tag/2.6.2",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Sigil-Ebook",
+      "summary": {
+        "en": "Limited one-chapter EPUB2 code edit, preview, save and fresh-process reopen tested with per-launcher software rendering; advanced EPUB features unverified.",
+        "zhCN": "逐启动器关闭 GPU 加速；有限单章节 EPUB2 代码编辑、预览、保存和新进程重开已测，高级功能未验收"
+      },
+      "version": "2.6.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-tiled-20261011.alias.acceptance.json#tiled",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "6c906099e4bb9a871c13a4f81ecf6554c835a36b2cfffb1dee44e215120a61c7",
+          "size": 22192128,
+          "target": "Tiled-1.11.2_Windows-10plus_x86_64.msi",
+          "url": "https://github.com/mapeditor/tiled/releases/download/v1.11.2/Tiled-1.11.2_Windows-10%2B_x86_64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "tiled"
+      },
+      "id": "tiled",
+      "license": "GPL-2.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "Tiled",
+        "zhCN": "Tiled 地图编辑器"
+      },
+      "origin": "https://github.com/mapeditor/tiled/releases/tag/v1.11.2",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "mapeditor.org",
+      "summary": {
+        "en": "Limited 4x4 orthogonal map erase/stamp, TMX save, JSON export and fresh-process reopen tested; advanced map and engine features unverified.",
+        "zhCN": "有限 4×4 正交地图擦除、图块绘制、TMX 保存、JSON 导出和新进程重开已测；高级地图和引擎功能未验收"
+      },
+      "version": "1.11.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-focuswriter-20261011.acceptance.json#focuswriter",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8534a4ceb4355184dea6841ee68d57deda5bc1d9466e703acf69022b0250a39c",
+          "size": 54323843,
+          "target": "FocusWriter_1.8.13.exe",
+          "url": "https://gottcode.org/focuswriter/FocusWriter_1.8.13.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "focuswriter"
+      },
+      "id": "focuswriter",
+      "license": "GPL-3.0-or-later (main program; bundled licence closure unverified)",
+      "name": {
+        "en": "FocusWriter",
+        "zhCN": "FocusWriter 写作工具"
+      },
+      "origin": "https://gottcode.org/focuswriter/archive/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Graeme Gott",
+      "summary": {
+        "en": "Limited small UTF-8 text edit, TXT/ODT save and fresh-process reopen tested; advanced writing features unverified.",
+        "zhCN": "有限小型 UTF-8 文本编辑、TXT/ODT 保存和新进程重开已测；高级写作功能未验收"
+      },
+      "version": "1.8.13"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-qxmledit-20261011.acceptance.json#qxmledit",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "9a0e8f6ad3fce01bb232ea0ac84e87029a81aee2fb9dfbe2152bbcc30a72ba48",
+          "size": 32537109,
+          "target": "QXmlEditInstaller-0.9.18.exe",
+          "url": "https://downloads.sourceforge.net/project/qxmledit/QXmlEdit-0.9.18/QXmlEditInstaller-0.9.18.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "qxmledit"
+      },
+      "id": "qxmledit",
+      "license": "LGPL-2.0-or-later (main source; upstream linking exception declared; bundle closure unverified)",
+      "name": {
+        "en": "QXmlEdit",
+        "zhCN": "QXmlEdit XML 编辑器"
+      },
+      "origin": "https://qxmledit.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Luca Bellonda",
+      "summary": {
+        "en": "Limited small XML tree text edit, save and fresh-process reopen tested; advanced XML functions unverified.",
+        "zhCN": "有限小型 XML 树文本修改、保存和新进程重开已测；高级 XML 功能未验收"
+      },
+      "version": "0.9.18"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-xmlcopyeditor-20261011.acceptance.json#xmlcopyeditor",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "7ba6900595d0ca68b79b2c14a43538d1190bf717228651701d40fc693660caf4",
+          "size": 20046337,
+          "target": "xmlcopyeditor-1.3.1.0-x64-install.exe",
+          "url": "https://downloads.sourceforge.net/project/xml-copy-editor/xmlcopyeditor-windows/1.3.1.0/xmlcopyeditor-1.3.1.0-x64-install.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "xmlcopyeditor"
+      },
+      "id": "xmlcopyeditor",
+      "license": "GPL-2.0-or-later (main source; full bundle closure unverified)",
+      "name": {
+        "en": "XML Copy Editor",
+        "zhCN": "XML Copy Editor XML 编辑器"
+      },
+      "origin": "https://xml-copy-editor.sourceforge.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Zane U. Ji",
+      "summary": {
+        "en": "Limited small XML edit, well-formedness check, save and fresh-process reopen tested; advanced XML functions unverified.",
+        "zhCN": "有限小型 XML 编辑、良构检查、保存和新进程重开已测；高级 XML 功能未验收"
+      },
+      "version": "1.3.1.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-rednotebook-20261011.acceptance.json#rednotebook",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "9b153c8a88db1743689672a488daa96cce817d97db18524db63e0e2c8248c43a",
+          "size": 25489461,
+          "target": "rednotebook-2.43.exe",
+          "url": "https://github.com/jendrikseipp/rednotebook/releases/download/v2.43/rednotebook-2.43.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "rednotebook"
+      },
+      "id": "rednotebook",
+      "license": "GPL-3.0-or-later (upstream combined-work declaration; main-source GPL-2.0-or-later; full bundle closure unverified)",
+      "name": {
+        "en": "RedNotebook",
+        "zhCN": "RedNotebook 日记"
+      },
+      "origin": "https://rednotebook.app/downloads.html",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Jendrik Seipp",
+      "summary": {
+        "en": "Limited mouse journal edit, Save As, plain-text export and fresh reopen tested; launcher font backend required; shortcuts and advanced functions unverified.",
+        "zhCN": "有限鼠标日记编辑、另存、纯文本导出和新进程重开已测；需启动器字体后端配置，快捷键和高级功能未验收"
+      },
+      "version": "2.43"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-windjview-20261011.acceptance.json#windjview",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "c46a0b6b2c1c289b99fc92212443c911b80a899ddc772442e1a47264c9039c5c",
+          "size": 2957069,
+          "target": "WinDjView-2.1-Setup.exe",
+          "url": "https://downloads.sourceforge.net/project/windjview/WinDjView/2.1/WinDjView-2.1-Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "windjview"
+      },
+      "id": "windjview",
+      "license": "GPL-2.0-or-later (main program; full bundle closure unverified)",
+      "name": {
+        "en": "WinDjView",
+        "zhCN": "WinDjView DjVu 阅读器"
+      },
+      "origin": "https://windjview.sourceforge.io/en",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Andrew Zhezherun",
+      "summary": {
+        "en": "Limited bitonal DjVu render, 90-degree rotate, BMP export and fresh reopen tested. Manual installation/path and startup prompt required; bundled promotion resources present; advanced and unattended functions unverified.",
+        "zhCN": "有限黑白 DjVu 显示、90度旋转、BMP导出和重开已测；需手动安装路径并确认启动提示，安装包有推广资源；高级与无人值守未验收"
+      },
+      "version": "2.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-nomacs-20261011.acceptance.json#nomacs",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "26b39f265461a12048e89a340926b4ace8d205c16551b0a3096d9988b04d5a6b",
+          "size": 47280128,
+          "target": "nomacs-setup-x64.msi",
+          "url": "https://github.com/nomacs/nomacs/releases/download/3.22.3/nomacs-setup-x64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "nomacs"
+      },
+      "id": "nomacs",
+      "license": "GPL-3.0-or-later (main program; full bundle closure unverified)",
+      "name": {
+        "en": "nomacs",
+        "zhCN": "nomacs 图像查看器"
+      },
+      "origin": "https://nomacs.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "TU Wien",
+      "summary": {
+        "en": "Limited small RGB PNG render, clockwise rotation, GUI Save As and fresh reopen tested. Startup prompts and advanced features unverified.",
+        "zhCN": "有限小型RGB PNG显示、顺时针旋转、另存为和新进程重开已测；首次提示需处理，高级功能未验收"
+      },
+      "version": "3.22.3"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-transmission-20261011.acceptance.json#transmission",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8fe99234539da38be335fc3d999d1364c0c203d5dbc53109519b1df634e0462d",
+          "size": 18149376,
+          "target": "transmission-4.0.6-qt5-x64.msi",
+          "url": "https://github.com/transmission/transmission/releases/download/4.0.6/transmission-4.0.6-qt5-x64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "transmission"
+      },
+      "id": "transmission",
+      "license": "GPL-2.0-only OR GPL-3.0-only (OpenSSL linking permission; full bundle closure unverified)",
+      "name": {
+        "en": "Transmission",
+        "zhCN": "Transmission 种子工具"
+      },
+      "origin": "https://transmissionbt.com/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Transmission Project",
+      "summary": {
+        "en": "Limited offline trackerless torrent creation, metadata hashes and fresh-process local-file verification tested; network transfers unverified.",
+        "zhCN": "有限离线种子创建、元数据摘要和新进程本地文件核验已测；联网传输未验收"
+      },
+      "version": "4.0.6"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-meld-20261011.acceptance.json#meld",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "e1525657ff0e0d9762619b4930fa758756d5e766967764bd12c2f3914f16ece8",
+          "size": 28401664,
+          "target": "Meld-3.22.2-mingw.msi",
+          "url": "https://download.gnome.org/binaries/win32/meld/3.22/Meld-3.22.2-mingw.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "meld"
+      },
+      "id": "meld",
+      "license": "GPL-2.0-or-later (main program; full bundle closure unverified)",
+      "name": {
+        "en": "Meld",
+        "zhCN": "Meld 鼠标差异合并"
+      },
+      "origin": "https://meldmerge.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Kai Willadsen",
+      "summary": {
+        "en": "Limited mouse-only comparison, single-block merge and save/reopen tested; keyboard editing/navigation remains broken.",
+        "zhCN": "仅有限鼠标比较、单差异块合并和保存重开通过；键盘编辑与导航仍有问题"
+      },
+      "version": "3.22.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-nsis-20261012.corrected.acceptance.json#nsis",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "38d49f8fe09b1c332b01d0940e57b7258f4447733643273a01c59959ad9d3b0a",
+          "size": 1564991,
+          "target": "nsis-3.11-setup.exe",
+          "url": "https://downloads.sourceforge.net/project/nsis/NSIS%203/3.11/nsis-3.11-setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "nsis"
+      },
+      "id": "nsis",
+      "license": "Zlib (main program; COPYING has additional component licenses; full closure unverified)",
+      "name": {
+        "en": "NSIS MakeNSISW",
+        "zhCN": "NSIS 安装器编译工具"
+      },
+      "origin": "https://nsis.sourceforge.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "NSIS Contributors",
+      "summary": {
+        "en": "Limited small-script GUI compile, generated silent installer output42 and fresh recompile tested.",
+        "zhCN": "有限小型脚本GUI编译、生成安装器执行与结果42、新进程重编译通过"
+      },
+      "version": "3.11"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-qbittorrent-20261012.acceptance.json#qbittorrent",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "ef6efe581d80efeb0a77df281d93f93021fbdcc48e4d8f7b341dc864f53c30dd",
+          "size": 41407004,
+          "target": "qbittorrent_5.2.4_x64_setup.exe",
+          "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-5.2.4/qbittorrent_5.2.4_x64_setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "qbittorrent"
+      },
+      "id": "qbittorrent",
+      "license": "GPL-3.0-or-later with OpenSSL linking exception (upstream COPYING declaration)",
+      "name": {
+        "en": "qBittorrent",
+        "zhCN": "qBittorrent 种子工具"
+      },
+      "origin": "https://www.qbittorrent.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The qBittorrent project",
+      "summary": {
+        "en": "Limited trackerless single-file torrent GUI creation and fresh-process stopped local-data recheck tested; network transfers unverified.",
+        "zhCN": "有限单文件无tracker种子GUI创建、新进程重开和停止状态本地重校验通过；网络传输未验收"
+      },
+      "version": "5.2.4"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-librecad-20261012.acceptance.json#librecad",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "738912fea40aca934689444af9c5cd281572417983cc081c204fe6c779f6941d",
+          "size": 54350692,
+          "target": "LibreCAD-v2.2.1.5-win64-msvc.exe",
+          "url": "https://github.com/LibreCAD/LibreCAD/releases/download/v2.2.1.5/LibreCAD-v2.2.1.5-win64-msvc.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "librecad"
+      },
+      "id": "librecad",
+      "license": "GPL-2.0-only",
+      "name": {
+        "en": "LibreCAD",
+        "zhCN": "LibreCAD 二维绘图"
+      },
+      "origin": "https://librecad.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "LibreCAD Team",
+      "summary": {
+        "en": "Limited ASCII-path small DXF line/circle GUI edit, Save As and fresh-process reopen tested; Chinese-path import failed.",
+        "zhCN": "仅 ASCII 路径小型 DXF 线圆绘图、另存及新进程重开通过；中文路径导入失败未修复"
+      },
+      "version": "2.2.1.5"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-mkvtoolnix-20261012.acceptance.json#mkvtoolnix",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "5c8fb973f181a51ff37b9e6c392f8cbc0b00c1dea2accbfc33a339b09d29d5f2",
+          "size": 32100808,
+          "target": "mkvtoolnix-64-bit-94.0-setup.exe",
+          "url": "https://mkvtoolnix.download/windows/releases/94.0/mkvtoolnix-64-bit-94.0-setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "mkvtoolnix"
+      },
+      "id": "mkvtoolnix",
+      "license": "GPL-2.0 (upstream declaration; or-later scope unverified)",
+      "name": {
+        "en": "MKVToolNix",
+        "zhCN": "MKVToolNix 音视频封装"
+      },
+      "origin": "https://mkvtoolnix.download/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Moritz Bunkus",
+      "summary": {
+        "en": "Limited small mono PCM WAV to Matroska audio GUI mux, title, new-process reopen and Info tool tested.",
+        "zhCN": "仅小型单声道 PCM WAV 封装、标题、新进程重开与文件结构查看通过"
+      },
+      "version": "94.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-notepadnext-20261012.acceptance.json#notepadnext",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "e867a0809a5b99272f60e2207852165e3d7939656157784d648fec7acfef3d1e",
+          "size": 10904664,
+          "target": "NotepadNext-v0.15-Installer.exe",
+          "url": "https://github.com/dail8859/NotepadNext/releases/download/v0.15/NotepadNext-v0.15-Installer.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "notepadnext"
+      },
+      "id": "notepadnext",
+      "license": "GPL-3.0-or-later",
+      "name": {
+        "en": "Notepad Next",
+        "zhCN": "Notepad Next 文本编辑器"
+      },
+      "origin": "https://github.com/dail8859/NotepadNext",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Justin Dailey",
+      "summary": {
+        "en": "Limited small UTF-8 BOM/CRLF text replacement, ASCII append, Save As and explicit new-process reopen tested.",
+        "zhCN": "仅小型 UTF-8 BOM/CRLF 文本替换、ASCII 追加、另存和新进程重开通过"
+      },
+      "version": "0.15"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-lmms-20261012.acceptance.json#lmms",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "5f20af1d782468507417d0785826b1f064fadba88ed1691e2def269922ace56b",
+          "size": 36829951,
+          "target": "lmms-1.2.2-win64.exe",
+          "url": "https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "lmms"
+      },
+      "id": "lmms",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "LMMS",
+        "zhCN": "LMMS 音乐制作工具"
+      },
+      "origin": "https://lmms.io",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "LMMS Developers",
+      "summary": {
+        "en": "Limited two-note single-oscillator project edit, Save As, WAV render and explicit new-process reopen tested; audio playback unverified.",
+        "zhCN": "仅单振荡器双音符工程编辑、另存、WAV 渲染和新进程重开通过，实际听音未验收"
+      },
+      "version": "1.2.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-mediainfo-20261012.acceptance.json#mediainfo",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "a209d32b95f9282662df5f1d4e76a6f00149af62e27d0f12c0428ba29ebe4393",
+          "size": 6357952,
+          "target": "MediaInfo_GUI_26.05_Windows_x64.exe",
+          "url": "https://mediaarea.net/download/binary/mediainfo-gui/26.05/MediaInfo_GUI_26.05_Windows_x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "mediainfo"
+      },
+      "id": "mediainfo",
+      "license": "BSD-2-Clause",
+      "name": {
+        "en": "MediaInfo",
+        "zhCN": "MediaInfo 媒体信息工具"
+      },
+      "origin": "https://mediaarea.net/en/MediaInfo",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "MediaArea.net",
+      "summary": {
+        "en": "Limited small PCM WAV metadata, XML export and fresh-process open tested; sponsor/update networking and advanced media functions unverified.",
+        "zhCN": "仅小型 PCM WAV 信息读取、XML 导出及新进程打开通过；赞助和更新联网、广泛媒体功能未验收"
+      },
+      "version": "26.05"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-doxygen-20261012.acceptance.json#doxygen",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "08261faf23a9bd4a337cb9d25e9b339d06c788ddadb03283519fa217db58f1bb",
+          "size": 58172541,
+          "target": "doxygen-1.13.2-setup.exe",
+          "url": "https://github.com/doxygen/doxygen/releases/download/Release_1_13_2/doxygen-1.13.2-setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "doxygen"
+      },
+      "id": "doxygen",
+      "license": "GPL-2.0 (upstream declaration; or-later scope unverified)",
+      "name": {
+        "en": "Doxygen",
+        "zhCN": "Doxygen 文档生成工具"
+      },
+      "origin": "https://www.doxygen.nl/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Dimitri van Heesch",
+      "summary": {
+        "en": "Limited small ASCII configuration/project-name edit, GUI HTML/XML generation and new-process regeneration tested; Chinese config path and advanced documentation unverified.",
+        "zhCN": "仅小型 ASCII 配置编辑、GUI HTML/XML 文档生成及新进程再生成通过；中文配置路径问题未修，高级功能未验收"
+      },
+      "version": "1.13.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-rapidcrc-20261012.acceptance.json#rapidcrc",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1",
+          "size": 671744,
+          "target": "RapidCRC-Setup-0.3.42-x64.msi",
+          "url": "https://dl.ov2.eu/programs/rapidcrc-unicode/RapidCRC-Setup-0.3.42-x64.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "rapidcrc"
+      },
+      "id": "rapidcrc",
+      "license": "GPL-2.0-or-later",
+      "name": {
+        "en": "RapidCRC Unicode",
+        "zhCN": "RapidCRC Unicode 校验工具"
+      },
+      "origin": "https://www.ov2.eu/programs/rapidcrc-unicode",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "OV2 / Sebastian Ewert",
+      "summary": {
+        "en": "Limited two small binary inputs including Chinese filename: GUI SHA256 computation/checksum save and fresh-process FileOK tested; advanced/shell/other algorithms unverified.",
+        "zhCN": "仅小型含中文文件名输入的 SHA-256 计算、GUI 校验文件保存与新进程 File OK 验证通过；其他算法和高级功能未验收"
+      },
+      "version": "0.3.42"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-cppcheck-20261012.acceptance.json#cppcheck",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "651c14395b8f8b2f18b7c08ff27533142ecafd60b6be0dc123f92fbd873cb638",
+          "size": 23576576,
+          "target": "cppcheck-2.18.0-x64-Setup.msi",
+          "url": "https://github.com/cppcheck-opensource/cppcheck/releases/download/2.18.0/cppcheck-2.18.0-x64-Setup.msi"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "cppcheck"
+      },
+      "id": "cppcheck",
+      "license": "GPL-3.0-or-later",
+      "name": {
+        "en": "Cppcheck",
+        "zhCN": "Cppcheck 静态分析工具"
+      },
+      "origin": "https://cppcheck.sourceforge.io/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Cppcheck team",
+      "summary": {
+        "en": "Limited tiny ASCII C++ nullptr analysis, XML report save and fresh-process Open XML tested; broad checks and projects unverified.",
+        "zhCN": "仅小型 ASCII C++ 空指针分析、XML 保存和新进程打开报告通过；其他检查和项目未验收"
+      },
+      "version": "2.18.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-poedit-20261012.acceptance.json#poedit",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "83d6ca0a5a0706309bdc1ed214e735fd4b44a8ac5b82817c4bc914fbd94f5904",
+          "size": 17869552,
+          "target": "Poedit-3.7-setup.exe",
+          "url": "https://download.poedit.com/Poedit-3.7-setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "poedit"
+      },
+      "id": "poedit",
+      "license": "Poedit Software License Agreement (Windows); MIT OSS source only",
+      "name": {
+        "en": "Poedit",
+        "zhCN": "Poedit 翻译编辑器"
+      },
+      "origin": "https://poedit.com/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Vaclav Slavik",
+      "summary": {
+        "en": "Limited two-entry PO edit, Save As/automatic MO and fresh Open tested; private local use only, broad gettext/Pro and public binary redistribution unverified.",
+        "zhCN": "仅两条PO编辑、另存/自动MO和新进程打开通过；仅本地私有使用，广泛gettext/Pro及公开二进制再分发未验收"
+      },
+      "version": "3.7"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-gnuplot-20261012.acceptance.json#gnuplot",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84",
+          "size": 49945304,
+          "target": "gp603-win64-mingw.exe",
+          "url": "https://downloads.sourceforge.net/project/gnuplot/gnuplot/6.0.3/gp603-win64-mingw.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "gnuplot"
+      },
+      "id": "gnuplot",
+      "license": "gnuplot custom license (SPDX gnuplot)",
+      "name": {
+        "en": "gnuplot",
+        "zhCN": "gnuplot 绘图工具"
+      },
+      "origin": "https://www.gnuplot.info/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "gnuplot development team",
+      "summary": {
+        "en": "Limited native-menu four-point plot/title/save PLT/SVG and fresh Open tested; native Change Directory required, broad graphs and terminals unverified.",
+        "zhCN": "仅菜单四点绘图/标题/保存PLT与SVG及新进程打开通过；需原生ChangeDirectory，广泛图形和输出终端未验收"
+      },
+      "version": "6.0.3"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-scribus-20261012.acceptance.json#scribus",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "615dace82119883cc6252da0dd69a1e1637610ff4c5550e5254b7747845f28d1",
+          "size": 124533360,
+          "target": "scribus-1.6.4-windows-x64.exe",
+          "url": "https://downloads.sourceforge.net/project/scribus/scribus/1.6.4/scribus-1.6.4-windows-x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "scribus"
+      },
+      "id": "scribus",
+      "license": "GPL-2.0-or-later with fixed Qt linking exception",
+      "name": {
+        "en": "Scribus",
+        "zhCN": "Scribus 页面排版"
+      },
+      "origin": "https://www.scribus.net/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Scribus Team",
+      "summary": {
+        "en": "Limited single-page Latin text edit, Save SLA/PDF export and fresh Open tested; native font substitution used, advanced layout unverified.",
+        "zhCN": "仅单页ASCII文字编辑、SLA保存/PDF导出与新进程打开通过；使用原生字体替换，高级排版未验收"
+      },
+      "version": "1.6.4"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-picard-20261012.acceptance.json#picard",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "cfe7fb0957f9bd561dfd97b4685cbd26adeb6d9485d25bbbdf39d86c552e1fec",
+          "size": 32331256,
+          "target": "picard-setup-2.13.3.exe",
+          "url": "https://data.musicbrainz.org/pub/musicbrainz/picard/picard-setup-2.13.3.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "picard"
+      },
+      "id": "picard",
+      "license": "GPL-2.0-or-later (fixed source declaration; full bundle closure unverified)",
+      "name": {
+        "en": "MusicBrainz Picard",
+        "zhCN": "Picard 音频标签"
+      },
+      "origin": "https://picard.musicbrainz.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "MusicBrainz",
+      "summary": {
+        "en": "Limited WAV Title/Artist working-copy edits, native Save and fresh Open tested; broad music identification, plugins and audio playback unverified.",
+        "zhCN": "仅小型WAV工作副本标题/艺术家编辑、保存与新进程打开通过；广泛识别、插件和听音未验收"
+      },
+      "version": "2.13.3"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-gvim-20261012.acceptance.json#gvim",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "243ed9ed2951c26d27801afbb4cc5fa92ed6395f8f388c6d432b62012c9f3684",
+          "size": 11654015,
+          "target": "gvim_9.2.0000_x64.exe",
+          "url": "https://www.vim.org/downloads/gvim_9.2.0000_x64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "gvim"
+      },
+      "id": "gvim",
+      "license": "Vim (custom upstream license; full bundle closure unverified)",
+      "name": {
+        "en": "gVim",
+        "zhCN": "gVim 文本编辑器"
+      },
+      "origin": "https://www.vim.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Vim Project",
+      "summary": {
+        "en": "Limited Chinese-name UTF8 text literal edit, native Save As and fresh Open tested; broad editor/scripting/plugins unverified.",
+        "zhCN": "仅中文名小型UTF8文本普通编辑、原生另存和新进程打开通过；广泛编辑、脚本和插件未验收"
+      },
+      "version": "9.2.0000"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-treesheets-20261012.acceptance.json#treesheets",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "af984faea6b8d9f3eadc9ad679b2e6aaa0942279a79676b92d4a135f82ee0280",
+          "size": 7492630,
+          "target": "TreeSheets-3328-winx64.exe",
+          "url": "https://github.com/aardappel/treesheets/releases/download/3328/TreeSheets-3328-winx64.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "treesheets"
+      },
+      "id": "treesheets",
+      "license": "Zlib fixed source; complete bundled closure unverified",
+      "name": {
+        "en": "TreeSheets",
+        "zhCN": "TreeSheets 网格笔记"
+      },
+      "origin": "https://github.com/aardappel/treesheets",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Wouter van Oortmerssen",
+      "summary": {
+        "en": "Limited Chinese-name flat 2x2 CSV import, two-cell edit, native CTS save/CSV export/fresh Open. Native startup registry warning acknowledged; hierarchy/scripts unverified.",
+        "zhCN": "仅中文名小型2x2 CSV导入、双单元格编辑、CTS保存/CSV导出及新进程打开；启动注册表提示需正常确认，层级和脚本未验收"
+      },
+      "version": "3328"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-codeblocks-20261012.acceptance.json#codeblocks",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "1b730f9c279f1babfdef92507078913df18cff9bbabc14dc69c2abe6628a94ed",
+          "size": 52312086,
+          "target": "codeblocks-25.03-setup-nonadmin.exe",
+          "url": "https://master.dl.sourceforge.net/project/codeblocks/Binaries/25.03/Windows/codeblocks-25.03-setup-nonadmin.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "codeblocks"
+      },
+      "id": "codeblocks",
+      "license": "GPL-3.0-only main fixed source; LGPL-3.0-only SDK; complete bundle closure unverified",
+      "name": {
+        "en": "Code::Blocks",
+        "zhCN": "Code::Blocks 源码编辑"
+      },
+      "origin": "https://www.codeblocks.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "The Code::Blocks Team",
+      "summary": {
+        "en": "Limited Chinese-name source open, literal replace, ASCII append, native C-file save and fresh Open. Startup bitmap assert needs Continue; compiler/build/debug unverified.",
+        "zhCN": "仅中文名小源码打开、普通替换、ASCII追加、原生c文件保存与新进程打开；启动位图断言需Continue，编译/调试未验收"
+      },
+      "version": "25.03"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-clementine-20261013.acceptance.json#clementine",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8ebf4808de874c0fe6a71a5953a3d302cb6348e6ca45dcc268fb4e5c641eddf0",
+          "size": 22011528,
+          "target": "ClementineSetup-1.3.1.exe",
+          "url": "https://github.com/clementine-player/Clementine/releases/download/1.3.1/ClementineSetup-1.3.1.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "clementine"
+      },
+      "id": "clementine",
+      "license": "GPL-3.0-or-later main fixed source; complete installed bundle closure unverified",
+      "name": {
+        "en": "Clementine",
+        "zhCN": "Clementine 播放列表"
+      },
+      "origin": "https://www.clementine-player.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Clementine",
+      "summary": {
+        "en": "Limited Chinese-name two-WAV playlist reorder, native XSPF save and fresh Load; hearing/playback/devices unverified.",
+        "zhCN": "仅中文名两WAV列表排序、原生XSPF保存与新进程加载；听音/播放/设备未验收"
+      },
+      "version": "1.3.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-fityk-20261013.acceptance.json#fityk",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "a1da22f9b5fdf99829e05554b0990d8c7bfd498dd7ac12f14e0fc9ea50033a60",
+          "size": 5253318,
+          "target": "fityk-1.3.1-setup.exe",
+          "url": "https://github.com/wojdyr/fityk/releases/download/v1.3.1/fityk-1.3.1-setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "fityk"
+      },
+      "id": "fityk",
+      "license": "GPL-2.0-or-later main fixed source and installed COPYING; full bundle closure unverified",
+      "name": {
+        "en": "Fityk",
+        "zhCN": "Fityk 四点数据编辑"
+      },
+      "origin": "https://fityk.nieto.pl/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Marcin Wojdyr",
+      "summary": {
+        "en": "Limited Chinese-name four-point table single Y edit, xy-only export and fresh load; fitting/full scientific analysis unverified.",
+        "zhCN": "仅中文名四点表格单Y编辑、xy导出与新进程加载；拟合及完整科学分析未验收"
+      },
+      "version": "1.3.1"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-devcpp-filename-alias-20261013.acceptance.json#devcpp",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "9dc1703385e46f8bd2fc081a78842e089c589969f3bbc582d82f741eaf1b0711",
+          "size": 2148605,
+          "target": "Dev-Cpp-5.11-No-Compiler-Setup.exe",
+          "url": "https://downloads.sourceforge.net/project/orwelldevcpp/Setup%20Releases/Dev-Cpp%205.11%20No%20Compiler%20Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "devcpp"
+      },
+      "id": "devcpp",
+      "license": "GPL-2.0-or-later main fixed source and installed COPYING; full bundle closure unverified",
+      "name": {
+        "en": "Orwell Dev-C++",
+        "zhCN": "Orwell Dev-C++ 有限ASCII编辑"
+      },
+      "origin": "https://sourceforge.net/projects/orwelldevcpp/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Orwell Dev-C++",
+      "summary": {
+        "en": "No Compiler edition; limited ASCII source-file editing/saveas/fresh Open. Chinese path failed; no compilation or complete IDE acceptance.",
+        "zhCN": "No Compiler版；仅ASCII源文件编辑、另存与新进程Open；中文路径失败，未验收编译或完整IDE"
+      },
+      "version": "5.11"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-pnotepad-20261013.acceptance.json#pnotepad",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "f71deb2c89c6aa622c8e47c024dd0d3805c677d4b98dc270eb5085fae5925f06",
+          "size": 2492493,
+          "target": "pn2421440_multilang.exe",
+          "url": "https://github.com/simonsteele/pn/releases/download/v2.4.2/pn2421440_multilang.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "pnotepad"
+      },
+      "id": "pnotepad",
+      "license": "BSD-3-Clause main selected source and installed license; full bundle closure unverified",
+      "name": {
+        "en": "Programmer's Notepad",
+        "zhCN": "程序员记事本 有限文本编辑"
+      },
+      "origin": "https://www.pnotepad.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Simon Steele",
+      "summary": {
+        "en": "Limited small Chinese-name UTF-8 BOM text edit/saveas/new explicit Open; no full editor or scripting acceptance.",
+        "zhCN": "仅小型中文名UTF-8 BOM文本编辑、另存和新进程显式Open；未验收完整编辑器或脚本"
+      },
+      "version": "2.4.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-qmmp-20261013.acceptance.json#qmmp",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "641a2ba33795d52eb891dcdf0f71c53e024a487612a3ffde142137d79bef365e",
+          "size": 19615672,
+          "target": "qmmp-1.6.8-win32.exe",
+          "url": "https://qmmp.ylsoftware.com/files/windows/1.6/qmmp-1.6.8-win32.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "qmmp"
+      },
+      "id": "qmmp",
+      "license": "GPL-2.0-or-later main; bundled closure unverified",
+      "name": {
+        "en": "Qmmp",
+        "zhCN": "Qmmp 有限播放列表"
+      },
+      "origin": "https://qmmp.ylsoftware.com/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Qmmp Development Team",
+      "summary": {
+        "en": "Limited two small WAV playlist reorder/save/new explicit load; playback device not accepted.",
+        "zhCN": "仅两个小WAV播放列表排序、保存和新进程显式加载；未验收播放设备"
+      },
+      "version": "1.6.8"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-smplayer-20261013.acceptance.json#smplayer",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "b2e4cee60e57385b4e20485ff29ec4794d55b1ce77e385542ba61c5e91277ba5",
+          "size": 47730614,
+          "target": "smplayer-23.12.0-win32-qt5.6-unsigned.exe",
+          "url": "https://github.com/smplayer-dev/smplayer/releases/download/v23.12.0/smplayer-23.12.0-win32-qt5.6-unsigned.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "smplayer"
+      },
+      "id": "smplayer",
+      "license": "GPL-2.0-or-later main; bundled closure unverified",
+      "name": {
+        "en": "SMPlayer",
+        "zhCN": "SMPlayer 有限M3U8播放列表"
+      },
+      "origin": "https://www.smplayer.info/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "SMPlayer Development Team",
+      "summary": {
+        "en": "Limited two small WAV playlist Move Up/SaveAs All files M3U8/new empty explicit load; hearing/device not accepted.",
+        "zhCN": "仅两个小WAV排序、All files保存M3U8和新进程空列表显式加载；未验收听音/设备"
+      },
+      "version": "23.12.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-antrenamer-20261013.acceptance.json#antrenamer",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "3c9bdc59842c786ef4cfba6ddbe39912326299104cc36a074b881d8ed68cc6c4",
+          "size": 1212478,
+          "target": "antrenamer_2.12_install.exe",
+          "url": "https://update.antp.be/renamer/old/antrenamer_2.12_install.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "antrenamer"
+      },
+      "id": "antrenamer",
+      "license": "GPL-2.0-or-later main; Common MPL exception; bundled closure unverified",
+      "name": {
+        "en": "Ant Renamer",
+        "zhCN": "Ant Renamer 有限批量改名"
+      },
+      "origin": "https://www.antp.be/software/renamer/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Antoine Potten",
+      "summary": {
+        "en": "Limited two small binary file rename, single-action batch save and fresh explicit file Add/batch Open.",
+        "zhCN": "仅两份小二进制文件真实改名、单动作batch保存与新进程显式加载"
+      },
+      "version": "2.12.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-graph-20261013.acceptance.json#graph",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "1967affa93df9bc9103d47f35f51ecd4422483154f07ffbdf813a66eb35d66a5",
+          "size": 10074640,
+          "target": "SetupGraph-4.4.2.exe",
+          "url": "https://www.padowan.dk/bin/SetupGraph-4.4.2.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "graph"
+      },
+      "id": "graph",
+      "license": "GPL-2.0-or-later main; bundled closure unverified",
+      "name": {
+        "en": "Graph",
+        "zhCN": "Graph 有限函数图编辑"
+      },
+      "origin": "https://www.padowan.dk/download/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Ivan Johansen",
+      "summary": {
+        "en": "Limited one standard function edit, GRF save and fresh explicit Open.",
+        "zhCN": "仅单个标准函数编辑、GRF保存与新进程显式打开"
+      },
+      "version": "4.4.2"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-texniccenter-20261013.acceptance.json#texniccenter",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "bb278021af9e493b718168d15f439dbb3ddc9ba1dd457683a2f26e0eb43c0f78",
+          "size": 12198304,
+          "target": "TXCSetup_2.02Stable_Win32.exe",
+          "url": "https://downloads.sourceforge.net/project/texniccenter/TeXnicCenter/2.02%20Stable/TXCSetup_2.02Stable_Win32.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "texniccenter"
+      },
+      "id": "texniccenter",
+      "license": "GPL-2.0-or-later main; bundled closure unverified",
+      "name": {
+        "en": "TeXnicCenter",
+        "zhCN": "TeXnicCenter 有限文本编辑"
+      },
+      "origin": "https://www.texniccenter.org/download",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "ToolsCenter",
+      "summary": {
+        "en": "Limited single text edit, TEX save and fresh explicit Open; no compilation.",
+        "zhCN": "仅单处文本编辑、TEX保存与新进程显式打开，未编译"
+      },
+      "version": "2.02"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-codelite-20261013.acceptance.json#codelite",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8dc40a5d1b855610377229a00d70426c5af7742532ba932e769ceba39af9851b",
+          "size": 56796290,
+          "target": "codelite-amd64-17.0.0.exe",
+          "url": "https://downloads.codelite.org/codelite/17.0.0/codelite-amd64-17.0.0.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "codelite"
+      },
+      "id": "codelite",
+      "license": "GPL-2.0-or-later main; wxCrafter separate EULA; complete bundle closure unverified",
+      "name": {
+        "en": "CodeLite",
+        "zhCN": "CodeLite 有限文本编辑"
+      },
+      "origin": "https://downloads.codelite.org/ReleaseArchive.php",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Eran Ifrah",
+      "summary": {
+        "en": "Limited single comment text edit, CPP save and new process explicit Open; no compilation.",
+        "zhCN": "仅单处注释文本编辑、CPP保存与新进程显式打开，未编译"
+      },
+      "version": "17.0.0"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-infrarecorder-20261013.acceptance.json#infrarecorder",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8cee83f7f489a6aef4218a953b87b1c22d6a93c966e79275c8cb2abe830d0731",
+          "size": 4151536,
+          "target": "ir053.exe",
+          "url": "https://downloads.sourceforge.net/project/infrarecorder/InfraRecorder/0.53/ir053.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "infrarecorder"
+      },
+      "id": "infrarecorder",
+      "license": "GPL-3.0-or-later main; complete bundle closure unverified",
+      "name": {
+        "en": "InfraRecorder",
+        "zhCN": "InfraRecorder 有限数据项目"
+      },
+      "origin": "https://infrarecorder.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Christian Kindahl",
+      "summary": {
+        "en": "Limited Data Disc project, two file references, virtual item name and volume label, IRP save/new process explicit Open. No actual burning.",
+        "zhCN": "仅有限数据项目双文件引用、项目名及卷标、IRP保存重开，未刻录"
+      },
+      "version": "0.53"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-taskcoach-20261014.acceptance.json#taskcoach",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd",
+          "size": 14097420,
+          "target": "TaskCoach-1.4.6-win32.exe",
+          "url": "https://downloads.sourceforge.net/taskcoach/TaskCoach-1.4.6-win32.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "taskcoach"
+      },
+      "id": "taskcoach",
+      "license": "GPL-3.0-or-later main; full bundle closure unverified",
+      "name": {
+        "en": "Task Coach",
+        "zhCN": "Task Coach 有限单任务主题编辑"
+      },
+      "origin": "https://taskcoach.org/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Task Coach developers",
+      "summary": {
+        "en": "Limited one task subject edit, native ASCII SaveAs before edit with default autosave retained, new empty-file explicit Open.",
+        "zhCN": "仅单任务主题编辑、原生ASCII另存后编辑及新正式空文件显式重开"
+      },
+      "version": "1.4.6"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-synwrite-20261014.acceptance.json#synwrite",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "6f60ed7161cbd63725fa6bf3a2c4b65b598b3819ff5a6fd550b76324232563f1",
+          "size": 11499333,
+          "target": "SynWrite.6.41.2780.exe",
+          "url": "https://downloads.sourceforge.net/project/synwrite/Release/SynWrite.6.41.2780.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "synwrite"
+      },
+      "id": "synwrite",
+      "license": "Partial-source bundle; MPL component notices, EControl closed source; main/full bundle license unverified",
+      "name": {
+        "en": "SynWrite",
+        "zhCN": "SynWrite 有限文本编辑"
+      },
+      "origin": "https://uvviewsoft.com/synwrite/",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "SynWrite developers",
+      "summary": {
+        "en": "Limited single STATUS line edit, native ASCII Save As, new empty-editor explicit Open.",
+        "zhCN": "仅单行文本编辑、原生ASCII另存及新正式空编辑器显式重开"
+      },
+      "version": "6.41.2780"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-quiterss-20261014.acceptance.json#quiterss",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "f02708905e34f176f1333d0c451054714b28d0679f0861a8c53608b32e413beb",
+          "size": 27681829,
+          "target": "QuiteRSS-0.19.4-Setup.exe",
+          "url": "https://quiterss.org/files/0.19.4_/QuiteRSS-0.19.4-Setup.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "quiterss"
+      },
+      "id": "quiterss",
+      "license": "GPL-3.0-or-later main source; bundled license closure unverified",
+      "name": {
+        "en": "QuiteRSS",
+        "zhCN": "QuiteRSS 有限本地RSS订阅"
+      },
+      "origin": "https://quiterss.org/",
+      "permissions": [
+        "user-files",
+        "network"
+      ],
+      "publisher": "QuiteRSS developers",
+      "summary": {
+        "en": "Limited local RSS read, feed-title edit, native OPML export and new-process explicit import.",
+        "zhCN": "仅本地RSS读取、订阅标题编辑、原生OPML导出与新正式进程显式导入"
+      },
+      "version": "0.19.4"
+    },
+    {
+      "compatibility": {
+        "evidence": "windows-cdrtfe-20261014.acceptance.json#cdrtfe",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "d6683fce47b9c85d2077b1be3b424a4a42be989830f52783673e01e9d06a8470",
+          "size": 7444776,
+          "target": "cdrtfe-1.5.9.exe",
+          "url": "https://downloads.sourceforge.net/project/cdrtfe/cdrtfe/cdrtfe%201.5.9/cdrtfe-1.5.9.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "cdrtfe"
+      },
+      "id": "cdrtfe",
+      "license": "GPL-2.0-or-later main source with LGPL/MPL1.1/CDDL combination exception; bundle closure unverified",
+      "name": {
+        "en": "cdrtfe",
+        "zhCN": "cdrtfe 有限ASCII数据工程"
+      },
+      "origin": "https://cdrtfe.sourceforge.io/",
+      "permissions": [
+        "user-files",
+        "network"
+      ],
+      "publisher": "Oliver Valencia",
+      "summary": {
+        "en": "Limited ASCII two-file data-project references, volume-label edit, native CFP save and explicit new-process load; no disc burning accepted.",
+        "zhCN": "仅ASCII双文件数据工程引用、卷标编辑、原生CFP保存与新进程显式加载；未验收刻录"
+      },
+      "version": "1.5.9"
+    }
+  ],
+  "schemaVersion": 1
+}

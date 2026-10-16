@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "gnuplot",
+      "version": "6.0.3",
+      "sha256": "93cef72ecb5db6af6e5cd68a273499e9b36de0b55cb86a4371e9100dd9870b84",
+      "size": 49945304,
+      "generationId": "gen-job-1791782752169-1",
+      "definitionDigest": "sha256:82ce764fef0275a66490135d03bf17940b098d856cdf31d5ced16117201c73a4",
+      "launcherSha256": "sha256:6b6f4759bad3afda47965ec1fd4e83359ef40a9cf8563a42ffff4bf2a466ea26",
+      "guiFileOperation": "passed-limited-native-menu-four-point-title-save-plt-svg-fresh-open",
+      "save": {
+        "fixedDataPins": {
+          "drive_c/GnuplotTests/original-input.plt": {
+            "sizeBytes": 234,
+            "sha256": "bbbc7a67b0894c755867c2db04c8f1d36a7e2867a93b412b4562d337390ae30b"
+          },
+          "drive_c/GnuplotTests/原始数据.dat": {
+            "sizeBytes": 16,
+            "sha256": "266d4190a68a5a246aefd1800503c415d80a61f6746f755f0fce53f15da20761"
+          },
+          "drive_c/GnuplotTests/original.plt": {
+            "sizeBytes": 5329,
+            "sha256": "ca73ae8e5da9ceb0f145a3ea76e0da99b99fc0024e1d49e7babdf782d39d9c26"
+          },
+          "drive_c/GnuplotTests/original.svg": {
+            "sizeBytes": 9941,
+            "sha256": "f88f85d3edc339de93ee782db89cab46d533405f6e97f185b732fbdb21eb3490"
+          }
+        },
+        "inputOriginalBytesPreserved": true,
+        "savedTitle": "AFTER ORIGINAL42",
+        "svgPointCenters": [
+          [
+            86.76,
+            408.55
+          ],
+          [
+            249.24,
+            373.09
+          ],
+          [
+            411.72,
+            266.73
+          ],
+          [
+            574.2,
+            89.46
+          ]
+        ],
+        "svgAxisFrame": {
+          "x": [
+            46.14,
+            614.82
+          ],
+          "y": [
+            54.01,
+            444.0
+          ]
+        },
+        "independentExpectedPoints": [
+          [
+            86.76,
+            408.54636363636365
+          ],
+          [
+            249.24,
+            373.0927272727273
+          ],
+          [
+            411.72,
+            266.7318181818182
+          ],
+          [
+            574.2,
+            89.46363636363634
+          ]
+        ],
+        "coordinateToleranceSvgUnits": 0.03,
+        "fourOriginalDataPointsMatched": true,
+        "savedPlotStateFiniteParse": true,
+        "svgFiniteXmlAndGeometryParse": true,
+        "completeSvgOrGnuplotSpecificationAccepted": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "gnuplot-01-original-open-failed.jpg": {
+          "sizeBytes": 58558,
+          "sha256": "b6eaa466961c938a8ebc4f795bbd0ffe0d91c9ecf2a76dcdcf4541506a6306c0"
+        },
+        "gnuplot-02-original-render.jpg": {
+          "sizeBytes": 49640,
+          "sha256": "12afe568498620f46869aa8e532947fcfea48a57ff1e05833c78e5097fe67447"
+        },
+        "gnuplot-03-original-after-title.jpg": {
+          "sizeBytes": 49601,
+          "sha256": "269dbb30e9397ad162d30da8e3cfd5e13b37ce783ada17ba8da3a1051182faaa"
+        },
+        "gnuplot-04-original-exported.jpg": {
+          "sizeBytes": 73865,
+          "sha256": "8f29a032c002a700f747bd41e15a1a4d46ae5fd6096f1e0cf6381248a203f6a8"
+        },
+        "gnuplot-05-original-reopen.jpg": {
+          "sizeBytes": 50229,
+          "sha256": "bf97c617f28899035cd1211b04809b3f1f1d91a3f36a0e0368613a6bf753d000"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-gnuplot-source.json",
+    "sha256": "bdf0a4494f0435917f02d9d9d10630bc65dbe86aae552897516b8568798ade89"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-gnuplot-gui.json",
+    "sha256": "e43e2ce316d617c103de077d3d4474becfdf1fbe11fc5d031c035069e0b2dd54"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-gnuplot-failures.json",
+    "sha256": "2d224795d98472122ee5b842544dc78dd88578d7ac101fb86ad33343d6bc18d8"
+  },
+  "limits": [
+    "Only tiny ASCII-path PLT referencing a Chinese-name four-point DAT, native Change Directory/Open, native title edit/Replot, Save PLT, SVG output, independent finite coordinates and explicit new-process Open PLT. Synthetic DAT/PLT/SVG do not count as applications.",
+    "First full-path Open returned basename and failed in default directory; normal exit0 is diagnostic only. Formal flow uses native directory tree selection every new process, not a launcher workingDirectory or Core repair.",
+    "Only four points and fixed axes; other expressions/functions/styles/formats, 3D/animation/interactive mouse, complex graphs/large or malformed data, scripts/macros/terminal backends broadly, printing, direct Chinese keyboard input/Chinese-path PLT GUI Open unverified.",
+    "Limited SVG XML and point geometry is not complete SVG or gnuplot specification validation or browser SVG rendering acceptance. Saved PLT reopens graph; window size differs from initial640x480 and no pixel-identical GUI claim.",
+    "Guest network downloads/new-machine registration/migration/cross-version/unattended and GUI Store update/rollback buttons unverified; no claim of no background networking.",
+    "Custom gnuplot license fixed; installedCopyright29CRLF normalized text equals source but raw bytes differ. Full bundled fonts/GDI+/wx/cairo/tools/docs/icons license closure, Authenticode/PGP/source-binary correspondence/reproducible build/latest unverified.",
+    "Independent market/update/exact rollback/normal restart pending at original freeze; completion recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

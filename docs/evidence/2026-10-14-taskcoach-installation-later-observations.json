@@ -1,0 +1,755 @@
+{
+  "applicationId": "taskcoach",
+  "marketInstallation": {
+    "passed": true,
+    "installJob": {
+      "applicationId": "taskcoach",
+      "createdAtMilliseconds": 1791932486056,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 148389,
+          "requestId": "job-1791932486056-4",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 5491,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791932486056-4/prefix",
+          "requestId": "job-1791932486056-4",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 5534,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791932486056-4",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791932486056-4",
+      "id": "job-1791932486056-4",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 39512,
+        "fileDigest": "sha256:5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd",
+        "fileSizeBytes": 14097420,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "kernel32.dll",
+          "oleaut32.dll",
+          "user32.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": "CODE",
+            "rawDataSize": 37376,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 37236,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "DATA",
+            "rawDataSize": 1024,
+            "readable": true,
+            "virtualAddress": 45056,
+            "virtualSize": 588,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": "BSS",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 49152,
+            "virtualSize": 3656,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".idata",
+            "rawDataSize": 2560,
+            "readable": true,
+            "virtualAddress": 53248,
+            "virtualSize": 2384,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 57344,
+            "virtualSize": 8,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 61440,
+            "virtualSize": 24,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 0,
+            "readable": true,
+            "virtualAddress": 65536,
+            "virtualSize": 2228,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 10752,
+            "readable": true,
+            "virtualAddress": 69632,
+            "virtualSize": 10752,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "install",
+      "launchPlan": {
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "guest-artifact sha256:5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd pinned",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "guestArtifact": {
+          "architecture": "i386",
+          "digest": "sha256:5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "TaskCoach-1.4.6-win32.exe",
+          "sizeBytes": 14097420,
+          "storedPath": "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd",
+          "subsystem": "windowsGui"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791932486056-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd",
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/DIR=C:\\TaskCoach",
+            "/NOICONS",
+            "/TASKS="
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791932486056-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791932486056-4"
+        },
+        "requestId": "job-1791932486056-4",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791932501758
+    },
+    "storeUpdateJob": {
+      "action": "update",
+      "appId": "taskcoach",
+      "backend": "compatforge",
+      "detail": null,
+      "id": "bc2abe45-5fda-4e43-ae54-622b7cf907a5",
+      "state": "succeeded"
+    },
+    "generation": {
+      "bottleId": "gen-job-1791932486056-4",
+      "createdAtMilliseconds": 1791932486063,
+      "definition": {
+        "bottleId": "gui-taskcoach",
+        "category": "productivity",
+        "compatibilityRating": "unknown",
+        "id": "taskcoach",
+        "installer": {
+          "arguments": [
+            "/VERYSILENT",
+            "/SUPPRESSMSGBOXES",
+            "/NORESTART",
+            "/SP-",
+            "/DIR=C:\\TaskCoach",
+            "/NOICONS",
+            "/TASKS="
+          ],
+          "fileName": "TaskCoach-1.4.6-win32.exe",
+          "sha256": "5c0e967868a6f09af4cde96ff3f9180d8a4f0bec1623025d591ba19b43b138fd"
+        },
+        "launchers": [
+          {
+            "executable": "TaskCoach/taskcoach.exe",
+            "id": "main",
+            "name": "TaskCoach"
+          }
+        ],
+        "name": "TaskCoach",
+        "publisher": "Task Coach developers",
+        "schemaVersion": "1",
+        "tags": [
+          "rolling-1000",
+          "managed-inno"
+        ],
+        "version": "1.4.6"
+      },
+      "definitionDigest": "sha256:4f7793037ce9eeef328d99917578540053497b977d9684471740942825b2957c",
+      "id": "gen-job-1791932486056-4",
+      "launcherDigests": {
+        "main": "sha256:73d63120ba95d817aec762bb18ee93d64c880c2a275bcdab4467762b39aadbc4"
+      },
+      "runtime": {
+        "binding": {
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINESERVER": "/usr/bin/wineserver"
+          },
+          "executable": "/usr/bin/wine",
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "providerId": "wine-linux-x86-64-preview",
+          "wineserverExecutable": "/usr/bin/wineserver"
+        },
+        "selection": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "version": "11.14"
+      },
+      "status": "ready",
+      "updatedAtMilliseconds": 1791932501772
+    },
+    "installedFiles": {
+      "_hashlib.pyd": {
+        "sizeBytes": 285184,
+        "sha256": "6f8a2f7fe1a702521706fcbe82592ac24e8c897f5bf47f798122dbd0b109c2a6"
+      },
+      "wx._core_.pyd": {
+        "sizeBytes": 981504,
+        "sha256": "2a3b76e608d5c65341b921b05d693dad928d9cd4ac6856198942053085859bce"
+      },
+      "wx._misc_.pyd": {
+        "sizeBytes": 674816,
+        "sha256": "41c5841f0162ad0d06c7bcd14eb075c4c82d4c01beec2d37937fb1015d710939"
+      },
+      "wxbase28uh_net_vc.dll": {
+        "sizeBytes": 122368,
+        "sha256": "14b4ea456e6afcdead1ec6f836e83f91978c47293a484486a36874e6c79db6ab"
+      },
+      "wxmsw28uh_gizmos_vc.dll": {
+        "sizeBytes": 146432,
+        "sha256": "2f095bcd16438303b450e2b6128b3b29f5bdf44976084652c071ad4557d1c0ac"
+      },
+      "library.zip": {
+        "sizeBytes": 5298106,
+        "sha256": "55c8461ac0b63d05ae7d6234f3a5fe231e475eed61d0990fa73ae61f17cb55a7"
+      },
+      "_win32sysloader.pyd": {
+        "sizeBytes": 8192,
+        "sha256": "b14541d5bb6e50658132ea42f5fc0fb011881e124c8285f026989a96113bd933"
+      },
+      "w9xpopen.exe": {
+        "sizeBytes": 49664,
+        "sha256": "81e882c3771e038306348f1fd332138d95b0f545f393843122f1635264e81003"
+      },
+      "_ctypes.pyd": {
+        "sizeBytes": 74240,
+        "sha256": "d14315cf03aa7d96b714bfc13f7990ec245d205e4a5f9f002d2805e369199239"
+      },
+      "wx._controls_.pyd": {
+        "sizeBytes": 966144,
+        "sha256": "c2b19fab06650f2a37f3565c17b54dd536af304f9f7c8e887301323985d0514a"
+      },
+      "taskcoach.exe": {
+        "sizeBytes": 120320,
+        "sha256": "73d63120ba95d817aec762bb18ee93d64c880c2a275bcdab4467762b39aadbc4"
+      },
+      "win32api.pyd": {
+        "sizeBytes": 98816,
+        "sha256": "9f3d6583a669ceb3cb5660786fbfbcd23472aa1ab76d9c0eb24302b6138baf3d"
+      },
+      "win32ui.pyd": {
+        "sizeBytes": 778752,
+        "sha256": "5c7608a735b55300432902d8316254cd675a4a98045bf7729c11b9409ba3c8ef"
+      },
+      "win32file.pyd": {
+        "sizeBytes": 119808,
+        "sha256": "11609667fa37e2f6269d38d558dd42358360f97652bc37b80cb06a3f99b0e810"
+      },
+      "wx._gdi_.pyd": {
+        "sizeBytes": 746496,
+        "sha256": "52a38d2aafef2647f13b8bb07ceb90cbc307e8f82dbbb0f7116296dd25d2e751"
+      },
+      "_ssl.pyd": {
+        "sizeBytes": 721920,
+        "sha256": "360b506df81ffc0b49ac15924314fa549084227b998b202572eed90b695dfd3a"
+      },
+      "unins000.exe": {
+        "sizeBytes": 695578,
+        "sha256": "abe8b91e0a3cdc177d7bd6e8395cf84ed6aeca88d6632ac7e638afe3fb605c91"
+      },
+      "wxmsw28uh_html_vc.dll": {
+        "sizeBytes": 479744,
+        "sha256": "a8fa125f2b45974969106462893a199214f200393c70d52bd3e3593c5c2de7af"
+      },
+      "_pysyncml.pyd": {
+        "sizeBytes": 338944,
+        "sha256": "dadb7267dcb982297c0f46e8e2534d546a31aa42d0dffc40120ef96322863cb0"
+      },
+      "_socket.pyd": {
+        "sizeBytes": 40960,
+        "sha256": "235cc97584c3d31e5f3146121f64699d30cf372a86868ea755a9a0afa6c56144"
+      },
+      "twisted.python._initgroups.pyd": {
+        "sizeBytes": 6656,
+        "sha256": "479a6757a9387aa908a64daf1f259e64fefdbef2626e26ba474514b3e2ca250e"
+      },
+      "wxbase28uh_vc.dll": {
+        "sizeBytes": 1300992,
+        "sha256": "b2fda02e2b3ac0ba6f15e8c49cf224a265cd30e219825702e418b6949bc15d37"
+      },
+      "select.pyd": {
+        "sizeBytes": 9728,
+        "sha256": "edccb048476f4b029eb3e675b16e0cfbe0bbc4d795977e4c7fcf6ae520d453f1"
+      },
+      "WININET.dll": {
+        "sizeBytes": 920064,
+        "sha256": "7939b15edb4b544aa3a8214b24a9338cf4466ebc87ae02fbec2da0cb5ce6e36e"
+      },
+      "urlmon.dll": {
+        "sizeBytes": 1216000,
+        "sha256": "a46da9858e9598dff1967d1f986640dc35a9e0ba049cae2951d851a27be5744b"
+      },
+      "Normaliz.dll": {
+        "sizeBytes": 23552,
+        "sha256": "99c7b1b04cd593139917ed3d68bec36c63bce76663505cb5d026b62af39bb383"
+      },
+      "win32security.pyd": {
+        "sizeBytes": 108544,
+        "sha256": "e15b6b7167cfdaacd783f822ab6a9b471245cd0e7a9e57004e2859d168f194b9"
+      },
+      "win32pipe.pyd": {
+        "sizeBytes": 24064,
+        "sha256": "955e1a98d2ddcaa64acf4e47135434e6557427b52d6bac59aaae2dafea463cd3"
+      },
+      "pyexpat.pyd": {
+        "sizeBytes": 103424,
+        "sha256": "103f4329d53cf937c7023e8f2c21d008b9b7abe88d78bc3b05bf048c63735d88"
+      },
+      "igraph._igraph.pyd": {
+        "sizeBytes": 3765248,
+        "sha256": "acb6c875f7235f4d7517aed6979d5ef91f0d93ba995609f45d86a547971c7d11"
+      },
+      "win32cred.pyd": {
+        "sizeBytes": 25600,
+        "sha256": "88a64ef29f6be9237e19a4a9432df360d999567d58053d0b16ef4b9f180a4097"
+      },
+      "iertutil.dll": {
+        "sizeBytes": 2006016,
+        "sha256": "af75ba79364b6c7b772763ea8d29c1c7f2ec2354807dd0ac0627a32436530662"
+      },
+      "bz2.pyd": {
+        "sizeBytes": 59904,
+        "sha256": "2e54bdd269ceaba1368298407245787de76f25210fed08e3338de9f8a579dcf7"
+      },
+      "wx._gizmos.pyd": {
+        "sizeBytes": 341504,
+        "sha256": "4c7bd76b7b0a8d5e9aa515d8831ac18758a6bbd93460745e4dd0329610aba905"
+      },
+      "pywintypes27.dll": {
+        "sizeBytes": 110080,
+        "sha256": "c97e1ab93e2d18a76b4bb1c8c43605d7de94d3baaeae0c9e28fd750e943d0335"
+      },
+      "TaskCoach.url": {
+        "sizeBytes": 47,
+        "sha256": "cd744c9d6ac69834bbc10c2e93ea25ec5b3a93b77d0ca0ce3e639fa56e782936"
+      },
+      "wxmsw28uh_adv_vc.dll": {
+        "sizeBytes": 730112,
+        "sha256": "f75cb85dc98d3914e3ba34ded3671e854750d537eb5c4ffaf7a782c76e854d6d"
+      },
+      "wxmsw28uh_core_vc.dll": {
+        "sizeBytes": 3165184,
+        "sha256": "db3b6329cb4db71e7015be336f20137115b639052d87d86fa99b3f2dfd0cba5f"
+      },
+      "wx._grid.pyd": {
+        "sizeBytes": 395776,
+        "sha256": "c8f4ac6cf2ffde47beae22c0f8852d70e500f0eeee84c1b79ace4dcddc96a903"
+      },
+      "sqlite3.dll": {
+        "sizeBytes": 337920,
+        "sha256": "c59f96044488efd96d51c4ddbddf8b0fe4bba79797b02263357bf0c20bf12f83"
+      },
+      "python27.dll": {
+        "sizeBytes": 2303488,
+        "sha256": "7d1c7acb763d2498fb169ce262f9ffc98cc60795eab8dd1ef3b9debde241ce8e"
+      },
+      "win32process.pyd": {
+        "sizeBytes": 35840,
+        "sha256": "ffa30e1701adc5abf10a4a55dc6a408b1376b5c458cbb1b7b6426073d2aa1661"
+      },
+      "unicodedata.pyd": {
+        "sizeBytes": 686592,
+        "sha256": "babac4908787ca7b033e8fa1612e04dea5456bcc97714e732138ddeb3888cd1b"
+      },
+      "_sqlite3.pyd": {
+        "sizeBytes": 41984,
+        "sha256": "866bcb56030eae4bf792bab5dcc1ccea50853a6dbc62955d98a92ce4010ed631"
+      },
+      "win32wnet.pyd": {
+        "sizeBytes": 25088,
+        "sha256": "b1f142d9ba52dd25a3be9384b3b8327b397152482705ed8053924c65ee1323c6"
+      },
+      "win32gui.pyd": {
+        "sizeBytes": 167936,
+        "sha256": "32dda26ef2c58acd107f2e4916a5c22dd4111254cf708344c2073d7204c567d2"
+      },
+      "gdiplus.dll": {
+        "sizeBytes": 1645320,
+        "sha256": "f1da32183b3da19f75fa4ef0974a64895266b16d119bbb1da9fe63867dba0645"
+      },
+      "cairo._cairo.pyd": {
+        "sizeBytes": 1229824,
+        "sha256": "d99eaed7605a22d3678f4175400d50a577f0761583a0d29212d204099d46a8c5"
+      },
+      "wx._combo.pyd": {
+        "sizeBytes": 146944,
+        "sha256": "d8a2ffbaac94d9303af421c583e7405ab38a837510f3f4dd60ee748d2048fc9d"
+      },
+      "taskcoach_console.exe": {
+        "sizeBytes": 20480,
+        "sha256": "97d5ecaefba05bb9fb91065efa5bb5119a86ac6b29dfb248d8e7cb63882bc23c"
+      },
+      "pythoncom27.dll": {
+        "sizeBytes": 364544,
+        "sha256": "e502aac9a5f0b66bddd4c29c9986c6aa93daa10ed4c02501fa27575369103bf6"
+      },
+      "wx._html.pyd": {
+        "sizeBytes": 346112,
+        "sha256": "4f0253cdbb510a50c5c05575650649122fedb8d119ce45b98db5cdaa21f27188"
+      },
+      "wx._wizard.pyd": {
+        "sizeBytes": 109568,
+        "sha256": "907b7250f51c8d6dd3379f5e2bf7ce22f0ce3bfa8d6ec3bed798315352289f89"
+      },
+      "zope.interface._zope_interface_coptimizations.pyd": {
+        "sizeBytes": 19456,
+        "sha256": "56f1463c5611570d6802d768a6bcca4c1476a7d26c3b0260d50d71074ad594c9"
+      },
+      "win32event.pyd": {
+        "sizeBytes": 18432,
+        "sha256": "194afcebc66e4fa6f42ddbb24fc4a439231c4c446b334a6198568cc01d763c18"
+      },
+      "_winxptheme.pyd": {
+        "sizeBytes": 16384,
+        "sha256": "cf3141bed08539beb6c791c9a70b9a30a9232fa4525184ccfc9f04dbf7aeb2ff"
+      },
+      "wx._windows_.pyd": {
+        "sizeBytes": 670720,
+        "sha256": "1941dc64d9aa97509225bfa0989d8ea6062471cb211198832d47c2c9f7e4a949"
+      },
+      "win32com.shell.shell.pyd": {
+        "sizeBytes": 320512,
+        "sha256": "29a56f50b7adcbb3015a2ebfdb2514edd5129bf3a7242d1e272551b09ef85227"
+      },
+      "unins000.dat": {
+        "sizeBytes": 8831,
+        "sha256": "d6e0a74615a2573a5f1ed66bd62f75fbc58429ba0e7c4a92bc0b687eb50d6e0b"
+      },
+      "Microsoft.VC90.CRT/msvcr90.dll": {
+        "sizeBytes": 655872,
+        "sha256": "ed0170d3de86da33e02bfa1605eec8ff6010583481b1c530843867c1939d2185"
+      },
+      "Microsoft.VC90.CRT/msvcp90.dll": {
+        "sizeBytes": 568832,
+        "sha256": "4f7ed27b532888ce72b96e52952073eab2354160d1156924489054b7fa9b0b1a"
+      },
+      "Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest": {
+        "sizeBytes": 496,
+        "sha256": "041c76639c796dc5781e88cfeb3f85652c4286b9fe9624c6161e44397b548d05"
+      },
+      "locale/nb/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 81953,
+        "sha256": "88fa2c5e16ac3b65a87fb7b59f7aa0b03b59db6953d4925690fefa861e7df71e"
+      },
+      "locale/ru/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 85182,
+        "sha256": "c825fca03f713cfce3b3721ec7eca1ed97db069df8f8f497bf2928b154edcdba"
+      },
+      "locale/lv/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 11727,
+        "sha256": "e331d450e76b1cedea45f6edfd787cbd583b9a45c4638e39c24d1983f66ae82e"
+      },
+      "locale/fi/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 93598,
+        "sha256": "5bbc366a82bad5770046cc240a47f8bea4b4b9ddcea4e2099db5d69c6f93c770"
+      },
+      "locale/gl_ES/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 44542,
+        "sha256": "2d8965d1b8a0a3a45ccbf119eec9d2d25c72fea4e7c8e46c951877ee4937f6c0"
+      },
+      "locale/zh_CN/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 84902,
+        "sha256": "90b6c470b8533ecbbcebda05ba7b56d6b53f3351d29d2cedf76d6dbb2bb4daf4"
+      },
+      "locale/nl/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 120324,
+        "sha256": "9cffad700acf8423568df614b81de01183498a93f301c73f8acfd1458a53089b"
+      },
+      "locale/zh_TW/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 87117,
+        "sha256": "92eb43ddee74dcdea609db51b189d3bbf6e7a1cabb9201ca4bcc9a7000a7017e"
+      },
+      "locale/ja/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 132145,
+        "sha256": "e8eb3ba5c8d92afa7ed5aeb402e93ac47eab85da515d0526dae87b2cd5962d82"
+      },
+      "locale/ms/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 108018,
+        "sha256": "e14e6840cee49d9ac0cea9e87e13a12e94f5fc43811373cd31778aa9f5e155bf"
+      },
+      "locale/eu/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 8525,
+        "sha256": "2a57098d1e820455ce5c34c6cda620dec8c724366f9dd3145dd6c85c315f0de5"
+      },
+      "locale/fr/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 117937,
+        "sha256": "13c91106b6cf1b563d4b1431a2b87f67dd3ed7ae9c5f30244eb32889f503403e"
+      },
+      "locale/es/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 115539,
+        "sha256": "3be1efac4b012fa2af0802616e681cb042d6790b5f2800bc4f0507f1b377dd54"
+      },
+      "locale/tr/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 114003,
+        "sha256": "90c79a632019adc79f94785cc62dab58f7de51a79510d332f3aaa9f88c13deff"
+      },
+      "locale/cs/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 61913,
+        "sha256": "176f7deaa1cfff756e06e495817e0ed4d581c0271e3e33457a5e592bd02636c0"
+      },
+      "locale/da/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 71143,
+        "sha256": "ff1c25554842833970d6377357eeb9a388e4ba5d2288400e4db0e4cc68759ae2"
+      },
+      "locale/it/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 113266,
+        "sha256": "b6cf64bc69478bbf156b3993a7b4140a777000f74fa163f40d9be18f04c84ab1"
+      },
+      "locale/pt/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 116649,
+        "sha256": "7843d41aefa0275304c913763483354686ee08d510a5c629b90b9163769206cf"
+      },
+      "locale/sk/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 88484,
+        "sha256": "b3245858df41291a8069d9554cefeb7232441956512d7c827f1c02bb49b62727"
+      },
+      "locale/pt_BR/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 116098,
+        "sha256": "6fb9c149dc59bc2b341d740f33466725770772818429c976a77b6b2bca201a48"
+      },
+      "locale/ca/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 61505,
+        "sha256": "90e50cd6d1c54b3fe881f860c04eb88a0159b580813c46b340d3a46178e4f785"
+      },
+      "locale/pl/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 91195,
+        "sha256": "f0c32ce2a93acc874afef397ded108358782cdbb40c525555549f54935f7521e"
+      },
+      "locale/id/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 68893,
+        "sha256": "b87c6d89dbc235a9c693a1749b5e696877094391beb3ebf641b180ea5a76714d"
+      },
+      "locale/de/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 93108,
+        "sha256": "9783c2e64a70b204316eae853c093b0355a480bdc6efeab9162dfbf09d332191"
+      },
+      "locale/el/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 86246,
+        "sha256": "1970b047ec953d278458f50e60ff1490b234d5ba961120baf7de9e4b9713804d"
+      },
+      "locale/vi/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 129827,
+        "sha256": "6ca7f14dbf98ed5d6091ef79dbbe4e973a0ff89fdd98ba9a7dd907cacfe4be51"
+      },
+      "locale/sl/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 119688,
+        "sha256": "68aec448527196f7dd16a987062aa51431686437638f9f3a44e719ed417994dd"
+      },
+      "locale/hi/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 155012,
+        "sha256": "2a6d918d902282b1f378633a63b00a4994208e671e8aa33ec1154cf41c310519"
+      },
+      "locale/sq/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 86731,
+        "sha256": "b07c1e6fb6bff98263c9868fbbd343b6d5c92cc42fbf977abfda98ec46dee4d5"
+      },
+      "locale/uk/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 111399,
+        "sha256": "d0c3e382aecc5f799edbebd25a6e63a51590851c1d0caec21022517c1529a34e"
+      },
+      "locale/af/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 69201,
+        "sha256": "7bb412bb57c83f64d22fae973f4dca4695ef84b34cf1c22691170ebc9ae8967a"
+      },
+      "locale/hu/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 92359,
+        "sha256": "235f30bd475d88a32bd4b2cb927edf995f090773830052f7d3bd59f71b493122"
+      },
+      "locale/sv/LC_MESSAGES/wxstd.mo": {
+        "sizeBytes": 109177,
+        "sha256": "2effd158d340fafb3c1f3a2ed67953957a6e8afdd8781e0c1c2a45b87fa48c1c"
+      }
+    },
+    "programFileCountEach": 95,
+    "actualProgramFileByteDifferences": {
+      "unins000.dat": {
+        "original": {
+          "sizeBytes": 8831,
+          "sha256": "45e097d35839ca131db4ebfe38fe834015f224a892c247525481b21e30769d59"
+        },
+        "market": {
+          "sizeBytes": 8831,
+          "sha256": "d6e0a74615a2573a5f1ed66bd62f75fbc58429ba0e7c4a92bc0b687eb50d6e0b"
+        }
+      }
+    },
+    "allOther94ProgramFilesByteEqual": true,
+    "definitionDigestsLaunchersAndRuntimeEqual": true,
+    "originalGenerationDefinitionAndAllFieldsUnchanged": true,
+    "uninstallerDifferenceCauseOrUninstallAccepted": false,
+    "registryPins": {
+      "system.reg": {
+        "sizeBytes": 3430934,
+        "sha256": "a86d3d393e7915743652de3fcb98ed45eeb8e064c831371dfb95d5fdbea3c6ce"
+      },
+      "user.reg": {
+        "sizeBytes": 101299,
+        "sha256": "9e1d08c4316007f61e64456f4cb5a595243cd420cce4cd802f6e9d7e95fbd9ab"
+      },
+      "userdef.reg": {
+        "sizeBytes": 4052,
+        "sha256": "edcf0cacfa5b0ab60f5302bfa4b5ec9bde3f99a7c7685311d9040a9d91d7d92d"
+      }
+    },
+    "coreJobs": 553,
+    "fullStoreRows": 161,
+    "checkpoint": {
+      "file": "after-market-install.json",
+      "sha256": "a410670f4158f942e7984dbad1b7245d78455721ed619aed575db32ca65d1013",
+      "coreJobs": 553,
+      "fullStoreRows": 161
+    },
+    "fixtureWrittenOrGuiLaunched": false
+  },
+  "initialReadonlyDiagnostic": {
+    "diagnosticOnly": true,
+    "coreJobs": 553,
+    "fullStoreRows": 161,
+    "generationId": "gen-job-1791932486056-4",
+    "actualProgramFileByteDifferences": {
+      "unins000.dat": {
+        "original": {
+          "sizeBytes": 8831,
+          "sha256": "45e097d35839ca131db4ebfe38fe834015f224a892c247525481b21e30769d59"
+        },
+        "market": {
+          "sizeBytes": 8831,
+          "sha256": "d6e0a74615a2573a5f1ed66bd62f75fbc58429ba0e7c4a92bc0b687eb50d6e0b"
+        }
+      }
+    },
+    "programFileCountEach": 95,
+    "originalFixedPinsPreserved": true,
+    "definitionLaunchersRuntimeAllFieldsMatch": true,
+    "noCheckpointFixtureGuiRestartRecover": true
+  },
+  "exactSoleMapThenFullCpBeforeGui": true,
+  "allEqualFailureInvented": false,
+  "repeatInstallation": false,
+  "limits": [
+    "Finite one-task subject edit only. Native Save As BEFORE edit preserves immutable Chinese-name input with default autosave retained; no autosave disabling or host output rewrite. Original STATUS AFTER ORIGINAL42 and market STATUS AFTER MARKET42, original732B/market730B UTF8 noBOM/27CRLF. Independent host whole finite output byte reconstruction uses immutable fixture, literal template and actual observed modification timestamp variable; not independent clock correctness or full TSK/XML specification.",
+    "Three new formal processes first native Close auto-restored file, visibly empty list, then explicit CtrlO Open in actual remembered previous SaveAs directory. Five normal native Quit exit0 plus exited event and separate ps wineserver absence; exit0 alone not acceptance. Default English/short Chinese description and dialog names readable, first main title question marks remains; no complete Unicode path or direct Chinese keyboard claim. Tips/toolbar balloons retained; About not tested.",
+    "No dates/status/priority/subtasks/effort/budget/categories/recurrence/reminders/sync/export/printing/large-bad input/full task-manager/unattended/network exclusion/migration/GUI market buttons acceptance. Empty default sync nodes do not prove sync or no background networking. Synthetic TSK does not add application count.",
+    "Main fixed source GPL3-or-later; complete Python2.7/wxPython/Twisted/py2exe/thirdparty/Nuvola/icons/translations closure and installed-main-license comparison unverified. Source COPYRIGHT exceptions retained. Eleven selected source raw,679 regular unique ZIP/allCRC, not entire source manual review. Latest/PGP/Authenticode/source-binary/repro unverified. Actual Inno5.2.3/bootstrap/mainPE0x14c;92 isolated extracted not95 installed;120320B py2exe main entry not whole application size. Native DIR17 one backslash, not full installer/UAC/association/shortcut/uninstall behavior.",
+    "Both95 installed files94 cross-generation same; exact8831B unins000.dat sole diff both actual raw privately held, cause/uninstall unverified. Not an all-equal gate failure; readonly diagnostic then literal full map asserted before CP/market GUI. Three registry plus selected TaskCoach-named prefix user/ProgramData and TaskCoachTests pins only, not full filesystem; first discovery not creation time. Actual GUI registry/config changes and private raw/diff retained; no old-registry-across-GUI byte or semantic equivalence claim. Core query may write existing scratch; recent64IPC not fullSQLite.",
+    "No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime repair, no recover/VMreboot. Full before-rollback555/161 CP readback before exact IPC rollback555/162, third original556/162 CP readback before one final Core and Store normal restart each. Seven full classes exact, finalCP private. Preview Store restart separate. Before-final PID record actually saved/readback; current live executable SHA checked. Original22 and signed marketPending phases frozen history, completion separately recorded.",
+    "File dates AsiaShanghai2026-10-14; actual installation/GUI UTC2026-10-13. Three normal authorized logins fresh fully masked characterwise single submit; auth/password/lock/power unchanged, no login images/password saved. Existing Edge noVNC temporary993x998 reset at end and same loopback handoff retained. Ubuntu ledger/window plan read, no UbuntuVM/switch/concurrent4GiBVM. All old failed generations,root,signatures,trust,freeze/history held; dupeGuru remains failed no ready/promote/reinstall. GreenfishEULA no program/shader change; CopyQ no notification/globalDLL masking; Zim/Aegisub unresolved; Texmaker source-only guard/cache held; Provider undeployed. Old Scribus one private canonicalV1 raw loss not fabricated. Public no installer/program binary,full privateCP,credentials,keys,password/login images/exact redirectquery."
+  ]
+}

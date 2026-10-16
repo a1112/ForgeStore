@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; launcher-cwd-v11-r1 Core and managed-msi-v2 Store",
+  "applications": [
+    {
+      "id": "rapidcrc",
+      "version": "0.3.42",
+      "sha256": "0d863d957da19fbde0ee0e34db106229305bffa0cf515d9bbbd3c6066964e8b1",
+      "size": 671744,
+      "generationId": "gen-job-1791768425155-1",
+      "definitionDigest": "sha256:fcb41571d426c5aace9ad59d6224652386d5e1fe96b4f688b64ecc6cabfe352e",
+      "launcherSha256": "sha256:4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244",
+      "guiFileOperation": "passed-limited-two-small-input-sha256-gui-save-new-process-two-file-ok",
+      "save": {
+        "generationId": "gen-job-1791768425155-1",
+        "fixedDataPins": {
+          "drive_c/RapidCRCTests/original-ascii.bin": {
+            "sizeBytes": 1024,
+            "sha256": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9"
+          },
+          "drive_c/RapidCRCTests/原始校验.bin": {
+            "sizeBytes": 1536,
+            "sha256": "d7d9adf3541ee86e20f6dfee9730e8a1610849b829030fc6a9138beec5006523"
+          },
+          "drive_c/RapidCRCTests/original.sha256": {
+            "sizeBytes": 170,
+            "sha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7"
+          }
+        },
+        "output": {
+          "sizeBytes": 170,
+          "sha256": "5cd3dd1bf41c8cff10bbca976b60ac965b8ea99e372f95b373dec94d83331cd7"
+        },
+        "entries": {
+          "original-ascii.bin": "785b0751fc2c53dc14a4ce3d800e69ef9ce1009eb327ccf458afe09c242c26c9",
+          "原始校验.bin": "d7d9adf3541ee86e20f6dfee9730e8a1610849b829030fc6a9138beec5006523"
+        },
+        "encoding": "UTF-8 without BOM",
+        "lineEndings": "CRLF",
+        "inputOriginalBytesPreserved": true,
+        "applicationConfigPins": {
+          "drive_c/users/forge/AppData/Roaming/RapidCRC/options_unicode.bin": {
+            "sizeBytes": 10784,
+            "sha256": "cb77670290bbabeff1d130d9c24db3b0ddab08d8cb94afdd548fb7e55647c3a8"
+          },
+          "drive_c/users/forge/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/RapidCRC (x64)/RapidCRC.lnk": {
+            "sizeBytes": 488,
+            "sha256": "bda6b5a7cf35e5065ec680536bf1817e699f3880b27cfc37a22907c7a8cbbd7f"
+          }
+        },
+        "registryPins": {
+          "system.reg": {
+            "sizeBytes": 3435417,
+            "sha256": "c275c891564ce7326abfc558230e8f38ffb4e0a25e0e5b27858621ae216d734f"
+          },
+          "user.reg": {
+            "sizeBytes": 101626,
+            "sha256": "2512c000028c92e78b271bf667a2a1994a5d17c36710a592bb113d4ea30ddc42"
+          },
+          "userdef.reg": {
+            "sizeBytes": 4052,
+            "sha256": "6d483ac021b514502a9a597a0f650360c9fe432a4079a3d562550198b877423b"
+          }
+        },
+        "installedFiles": {
+          "rcrcshex64.dll": {
+            "sizeBytes": 806400,
+            "sha256": "9c2cf0d8498bc8d36cc8f42ab2e614ff62f918b43b872d25381f9a16c52aab14"
+          },
+          "hashfile.ico": {
+            "sizeBytes": 99678,
+            "sha256": "7b1ce8618d91d1321404af4c65e5cce5c4f1161ada29c88469534cfcb499d5d6"
+          },
+          "RapidCRC.exe": {
+            "sizeBytes": 1143296,
+            "sha256": "4d34d58dbb99acdf1dc8d97cc0846cfccb1d63511b906aaa0e8cb528748a1244"
+          }
+        },
+        "syntheticFixtureNotAnApplication": true,
+        "fullFilesystemTraversed": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-initial-computation.jpg": {
+          "sizeBytes": 52867,
+          "sha256": "b346e99d95e89eecf0b8db1692c03a3e17fbd3870d16503129aeafa0b7a481f8"
+        },
+        "02-original-two-sha256-values.jpg": {
+          "sizeBytes": 63707,
+          "sha256": "f20b7508467ec7bfbf319f2e8d9d16c73c0c8f3e1d7039cba57e445ba71d47cf"
+        },
+        "03-original-sha256-save-dialog.jpg": {
+          "sizeBytes": 61971,
+          "sha256": "ff816f1ae9f6c66047e678a117c546731b87a1d67e9f292907d96d4b244eee08"
+        },
+        "04-original-new-process-two-ok.jpg": {
+          "sizeBytes": 49685,
+          "sha256": "bd4061083434be10cfee2d9a5611f9a0b2a54166053fc7ba22e75758de305035"
+        },
+        "05-original-new-process-two-ok-loaded.jpg": {
+          "sizeBytes": 49685,
+          "sha256": "bd4061083434be10cfee2d9a5611f9a0b2a54166053fc7ba22e75758de305035"
+        },
+        "06-original-list-doubleclick-result.jpg": {
+          "sizeBytes": 62492,
+          "sha256": "1402709fae0dba2edc9a5ec01797ffac255600defe17f51244064f93e15cf453"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-rapidcrc-source.json",
+    "sha256": "8dcc43f374aeb9d4030bdd3a483a9ed4bd8d89f91034c9db6ab227624ef3b37f"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-rapidcrc-gui.json",
+    "sha256": "aa41717f6e59f952549cdd6a0d2d4cfb82050d4580adf9f2b08da7f29da3eb39"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-rapidcrc-failures.json",
+    "sha256": "9904aec2c692d75305a648eba9f72dd59ce439b4fe1f63bdbfbaf48b42ff1f37"
+  },
+  "limits": [
+    "Only two small fixed binary inputs(1024/1536B), one Chinese basename: GUI SHA256 computation, ASCII checksum Save, UTF8/CRLF checksum independently parsed, new formal process explicit checksum Open with two FileOK rows. Synthetic inputs/checksum are not separate applications.",
+    "Initial typed-path fresh-process Open remained blank; later explicit file-list double-click loaded and verified both. Screenshots04/05 are not accepted. Initial onlyonefile CRC32 computation is diagnostic, not twofile SHA256 acceptance.",
+    "Other algorithms, mismatch/missing-file behavior, large files, directory/recursive queues, shell extension/associations, filename or NTFS stream writes, clipboard, direct Chinese keyboard input, advanced workflows and full checksum grammar unverified.",
+    "Main fixedsource GPL2-or-later; installed threefile package has no named license file. Full hashing libraries/WiX/icons/shell extension license closure and installed-license comparison unverified.",
+    "Fixed official MSI and source local HTTPS SHA256 only; upstream published digest, source-binary correspondence, Authenticode/PGP/reproducible build and latest version unverified.",
+    "Guest online download/new-machine registration/migration/cross-version/unattended use and GUI Store update/rollback buttons unverified. No Core/program/globalcontext/launcher environment/workingDirectory/font/DLL/runtime repair.",
+    "Independent market generation/update/rollback/normal restart pending at original freeze; completion recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applications": [
+    {
+      "id": "graph",
+      "version": "4.4.2",
+      "sha256": "1967affa93df9bc9103d47f35f51ecd4422483154f07ffbdf813a66eb35d66a5",
+      "size": 10074640,
+      "generationId": "gen-job-1791898411825-1",
+      "definitionDigest": "sha256:4e6f014cf99606fa5d6b1b81ff2241cda894c4e4e9960b457cb61a4490e396a5",
+      "launcherSha256": "sha256:1ed0175e8041b1e8e272ac625000fab2d7d0ffcbd4a25bb9579b253af6dae3af",
+      "guiFileOperation": "passed-limited-single-function-edit-grf-save-fresh-explicit-open",
+      "saveProof": {
+        "inputPins": {
+          "drive_c/GraphTests/原始函数.grf": {
+            "sizeBytes": 439,
+            "sha256": "50f9df28c35c5ad9d27fc427e7d5d05eefae1608044925ddf3b31efa4a02ab37"
+          }
+        },
+        "outputFile": "drive_c/GraphTests/original.grf",
+        "outputPin": {
+          "sizeBytes": 548,
+          "sha256": "7cc14222bc9589009be24f94ac7b5ffb6a7141f37505ddce33a9bd942516d4e2"
+        },
+        "allFields": {
+          "Graph": {
+            "Version": "4.4.2.543",
+            "MinVersion": "2.5",
+            "OS": "Windows NT 6.2"
+          },
+          "Axes": {
+            "xMin": "-3",
+            "xMax": "3",
+            "xTickUnit": "0.5",
+            "xGridUnit": "0.5",
+            "yMin": "-2",
+            "yMax": "12",
+            "yTickUnit": "1",
+            "yGridUnit": "1",
+            "AxesColor": "clBlue",
+            "GridColor": "0x00FF9999",
+            "ShowLegend": "0",
+            "Radian": "1"
+          },
+          "Func1": {
+            "FuncType": "0",
+            "y": "x^2+1",
+            "Color": "clRed",
+            "Size": "2"
+          },
+          "Data": {
+            "TextLabelCount": "0",
+            "FuncCount": "1",
+            "PointSeriesCount": "0",
+            "ShadeCount": "0",
+            "RelationCount": "0",
+            "OleObjectCount": "0"
+          }
+        },
+        "fullRawReconstructionMatched": true,
+        "modelScope": "Finite four-section one standard function GRF only; observed native version/OS serialization and automatic tick/grid defaults are explicit constants, not full GRF or scientific specification."
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-input.jpg": {
+          "sizeBytes": 40558,
+          "sha256": "4a5bd49d506326209900bba7474390aa4f711fb627c0938492a3aee2dd5bc097",
+          "actualEncoding": "JPEG"
+        },
+        "02-original-equation.jpg": {
+          "sizeBytes": 53295,
+          "sha256": "f9b4cc5333eda46112d966ef98a5b29c1f3d5d1f1b420dbbd98f1bafe05b06fe",
+          "actualEncoding": "JPEG"
+        },
+        "03-original-save-as.jpg": {
+          "sizeBytes": 47792,
+          "sha256": "9190d6417b451d1547e93affe5d6ee9e14cd36f88f642ba85da52416cd858eb7",
+          "actualEncoding": "JPEG"
+        },
+        "04-original-saved-function.jpg": {
+          "sizeBytes": 40982,
+          "sha256": "fca4b1817eddcd1b289f0ad8778913addc87124d96166fe5515193dbcb079bb5",
+          "actualEncoding": "JPEG"
+        },
+        "05-original-new-empty.jpg": {
+          "sizeBytes": 39707,
+          "sha256": "91833445b7a14a73a7c30290a36054254b3d71f27f93a01aef84bdb6af758b8a",
+          "actualEncoding": "JPEG"
+        },
+        "06-original-new-open.jpg": {
+          "sizeBytes": 40720,
+          "sha256": "7e87f0700cd9a439ec010c17cff6248aeacef0605c74bc5bde8ab7355428e698",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-graph-source.json",
+    "sha256": "26cee16bfac885c39c52e95518b1726c750ab2994be0c1027a7e6def4ecc76b6"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-graph-gui.json",
+    "sha256": "9b95e378528fb22190afb3fc22a53d13a2fd0e0600c4b47593b3b19470f3f275"
+  },
+  "limits": [
+    "Finite one standard function per role only: Chinese-name synthetic GRF native MyComputer/C/GraphTests Open, function row Edit, original x^2 to x^2+1, native Save as original.grf and fresh empty formal process explicit Open. Red curve observed. No scientific accuracy, calculus, fitting, export, plugins/Python, printing, full GRF, broad formats/large bad files/direct Chinese keyboard/network/background-network exclusion/registration/migration/unattended/GUI Store buttons acceptance. Synthetic GRF does not count as an application.",
+    "Original 439-byte ASCII input retained; actual 548-byte ASCII-compatible UTF8/no BOM/35CRLF output independently reconstructed in full. Four axis ranges retained; native automatic x tick/grid changed 1 to 0.5 and y 2 to 1. Explicit observed native Version4.4.2.543/OS Windows NT6.2 serialization constants are not a real Windows OS, About, full GRF or scientific specification proof. Original OS trailing blank and final empty lines retained.",
+    "Default English and Chinese filenames readable. Tip of the day Show tips at startup checked and normally closed in both processes. Unsubmitted initial symbol input did not match; CtrlA then native explicit Shift6/ShiftEqual produced exact x^2+1 before OK/save. No generic keyboard repair. Two normal native AltF4 exits0 and wineserver stopped, not acceptance alone. No Core/program/definition/launcher env/cwd/font/globalDLL/runtime repair.",
+    "Official fixed4.4.2 installer complete HTTPS200/ContentLength/local SHA only; source first GET early EOF3560727 bytes retained, one matching206prefix probe plus nine bounded tail206 ranges ContentRange/length/IfRange ETag and whole official displayed SHA verified, all1257 unique ZIP members/1162 files CRC passed. Fourteen selected original source members only, not full source manual review. GPL2-or-later main, installed14971-byte License exact Install/License only; root COPYING distinct. Full BCBVCL/Boost/dxgettext/GSL/Python/PDFlib-Lite/EasyNSE/icons/translations closure, PGP/Authenticode/source-binary correspondence/repro/latest unverified.",
+    "Actual Inno5.5.0 two markers and PE0x14c, native arguments /LANG=English and DIR13 bytes verified; source Beta output naming and regserver actions only static context, not binary correspondence or full Inno/UAC/associations/shortcut/uninstall behavior.78 program files strictly pinned. Selected registry/Graph named user files only, not all FS. Real registry raw/diffs private, cause/semantic equivalence unestablished; recently64 IPC not full SQLite, Core query may write scratch. Full seven-class523/152 before-market CP saved/read back.",
+    "First helper build assertion stopped before formal definition/task; parent erroneously continued installer-only transfer despite that assertion. Strict read-only diagnostic then verified unchanged520/152 all seven classes and actual transferred bytes before one original install; original helper/partial output/tool history retained, no repeated transfer or install. Do not claim all historical dependency gates effective. Exact initial host assertion/GetContent error only tool history, not fabricated raw.",
+    "Natural lock normal fresh complete masked field once submitted per authorization, no security/power changes or bypass; no password/login image saved. noVNC stale drawing ordinary browser reload/reconnect. One screenshot CDP timeout diagnostic, no fabricated crop. SourceForge web direct click exposed signed redirect query in tool error only; not copied/repeated/public/prompt. Earlier query history and Scribus one private canonicalV1 raw loss limitations preserved."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; Core launcher-cwd-v11-r1/Store managed-msi-v2",
+  "applications": [
+    {
+      "id": "pnotepad",
+      "version": "2.4.2",
+      "sha256": "f71deb2c89c6aa622c8e47c024dd0d3805c677d4b98dc270eb5085fae5925f06",
+      "size": 2492493,
+      "generationId": "gen-job-1791846321153-1",
+      "definitionDigest": "sha256:1dc00aa27f97dd7386f5aabf165442fd946d9834c947128fe534f8ebc2222f38",
+      "launcherSha256": "sha256:b01e6eae55751cc99212a7e93fdc72233a5ce0275bde819af88efcfeb0794dd7",
+      "guiFileOperation": "passed-limited-native-small-utf8bom-text-edit-saveas-new-explicit-open",
+      "saveProof": {
+        "passed": true,
+        "jobId": "job-1791846462416-2",
+        "generationId": "gen-job-1791846321153-1",
+        "inputPin": {
+          "sizeBytes": 38,
+          "sha256": "e3a1ba0d25f65570d787590f20b0b8a38be7da76705ef14b2e628f027f680a11"
+        },
+        "outputPin": {
+          "sizeBytes": 49,
+          "sha256": "d6d9ef7043260060dcffc55d0209bf0a0addcc75dc12534fda9fca93504f0664"
+        },
+        "outputRawBase64": "77u/5Y6f5aeL5Lit5paH5paH5pysDQpTVEFUVVMgQUZURVINCk9SSUdJTkFMNDINCg==",
+        "completeOutputBytesReconstructedFromActualImmutableInput": true,
+        "programFilesExactlyMatchInstalled": true,
+        "programFileCount": 94,
+        "guiAccepted": false,
+        "published": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-input.jpg": {
+          "sizeBytes": 27343,
+          "sha256": "1d065f9126534213075e460bb148a2390905c8d08e9cf516d99e9fd6a37b3459",
+          "actualEncoding": "JPEG"
+        },
+        "02-original-saved.jpg": {
+          "sizeBytes": 27575,
+          "sha256": "1dafa625a52965d22dbcae729ad747f81ad5a8521dbdce67852eca6008c83f74",
+          "actualEncoding": "JPEG"
+        },
+        "02a-original-missing-digit-diagnostic.jpg": {
+          "sizeBytes": 27595,
+          "sha256": "706c2a0e46e1fadaef19646753073b782d3e4877fb519f09a80e195f1b397895",
+          "actualEncoding": "JPEG"
+        },
+        "03-original-about.jpg": {
+          "sizeBytes": 42909,
+          "sha256": "8afa199ce1366b6dc672353ddcc7b93173e76112739192977053536e63f2e2c9",
+          "actualEncoding": "JPEG"
+        },
+        "04-original-explicit-reopen.jpg": {
+          "sizeBytes": 27396,
+          "sha256": "2212c65ade2e4e0d645aec51c2283ec67fb6a3f62b7299bf6f1bdd8a0a8f9e29",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-pnotepad-source.json",
+    "sha256": "802f0386b8fc7d627179648e5d2fe3484c16a3440d1604e9ef6df6528b6951cd"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-pnotepad-gui.json",
+    "sha256": "dd465d2f6bace2aa0aefa9d87546d3f16f51d088fecc1747ce4464490c270ad6"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-13-pnotepad-failures.json",
+    "sha256": "074aeda1a873cb83d2714b2d4e6d5eddb17eda9a64be1d5083cafc39fbdf53ff"
+  },
+  "limits": [
+    "Only one Chinese-name 38-byte UTF-8 BOM CRLF small text, native Open, one STATUS BEFORE-AFTER word replacement, ASCII ORIGINAL42 append, SaveAs49-byte original.txt, explicit new empty formal process Open and two normal File Exit0. Exit0 alone is not acceptance.",
+    "Default font displays this Chinese title and text. Direct Chinese keyboard, broad Unicode/encodings/formats/large-bad files, projects/search-replace advanced editing/ctags/tools/plugins/Python scripting/printing/networking/registration/migration/cross-version/unattended/GUI Store buttons not accepted; no absent-background-network claim.",
+    "Original About v2.4.2.1440-duke measured; market About not measured. Initial ORIGINAL4 saved diagnostic raw preserved and corrected through native GUI one digit; no general keyboard repair. No Core/program/globalcontext/definition/launcher env/cwd/font/global DLL/runtime modification.",
+    "94 installed program files unchanged through two GUI processes. Coverage only fixed data/program files/three registry/selected PN-name Roaming or Local config, not whole application filesystem. Actual registry/config byte changes are retained, cause/key equivalence unproved.",
+    "Official installer HTTPS200 Content-Length and displayed SHA256 matched; fixed commit source HTTPS200 without Content-Length, local SHA256 only. Main BSD3; actual installed1521-byte CRLF versus source1511-byte LF same text after exact separator-only reconstruction. Complete bundled licence closure/PGP/Authenticode/API digest/source-binary/repro/latest unverified.",
+    "Original marketPending signed stage is frozen; independent market completion separately recorded."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

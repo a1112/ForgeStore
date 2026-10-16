@@ -1,0 +1,2783 @@
+{
+  "applicationId": "dupeguru",
+  "installJob": {
+    "applicationId": "dupeguru",
+    "createdAtMilliseconds": 1791927518934,
+    "error": "registry I/O failed: No such file or directory (os error 2)",
+    "events": [
+      {
+        "elapsedMilliseconds": 0,
+        "kind": "started",
+        "processId": 140698,
+        "requestId": "job-1791927518934-1",
+        "schemaVersion": "1",
+        "sequence": 0
+      },
+      {
+        "elapsedMilliseconds": 6575,
+        "kind": "wine-server-stop-requested",
+        "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791927518934-1/prefix",
+        "requestId": "job-1791927518934-1",
+        "schemaVersion": "1",
+        "sequence": 1
+      },
+      {
+        "elapsedMilliseconds": 6618,
+        "exit": {
+          "code": 0,
+          "success": true
+        },
+        "kind": "exited",
+        "requestId": "job-1791927518934-1",
+        "schemaVersion": "1",
+        "sequence": 2
+      }
+    ],
+    "generationId": "gen-job-1791927518934-1",
+    "id": "job-1791927518934-1",
+    "inspection": {
+      "architecture": "x86",
+      "entryPointRva": 13784,
+      "fileDigest": "sha256:f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263",
+      "fileSizeBytes": 27547549,
+      "format": "pe32",
+      "imageKind": "executable",
+      "importLibraries": [
+        "advapi32.dll",
+        "comctl32.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "shell32.dll",
+        "user32.dll"
+      ],
+      "machineCode": 332,
+      "schemaVersion": "1",
+      "sections": [
+        {
+          "executable": true,
+          "name": ".text",
+          "rawDataSize": 26112,
+          "readable": true,
+          "virtualAddress": 4096,
+          "virtualSize": 25970,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".rdata",
+          "rawDataSize": 5120,
+          "readable": true,
+          "virtualAddress": 32768,
+          "virtualSize": 5016,
+          "writable": false
+        },
+        {
+          "executable": false,
+          "name": ".data",
+          "rawDataSize": 1536,
+          "readable": true,
+          "virtualAddress": 40960,
+          "virtualSize": 131960,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".ndata",
+          "rawDataSize": 0,
+          "readable": true,
+          "virtualAddress": 176128,
+          "virtualSize": 204800,
+          "writable": true
+        },
+        {
+          "executable": false,
+          "name": ".rsrc",
+          "rawDataSize": 25600,
+          "readable": true,
+          "virtualAddress": 380928,
+          "virtualSize": 25360,
+          "writable": false
+        }
+      ],
+      "subsystem": "windowsGui",
+      "subsystemCode": 2
+    },
+    "kind": "install",
+    "launchPlan": {
+      "decisionTrace": [
+        "runtime provider wine-linux-x86-64-preview selected as wine",
+        "translator native selected",
+        "graphics backend wined3d selected",
+        "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+        "Bottle CJK font pinned by digest",
+        "guest-artifact sha256:f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263 pinned",
+        "inspection i386 windowsGui accepted"
+      ],
+      "graphics": {
+        "backend": "wined3d",
+        "version": "11.14"
+      },
+      "guestArtifact": {
+        "architecture": "i386",
+        "digest": "sha256:f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263",
+        "imageKind": "executable",
+        "inspectionSchemaVersion": "1",
+        "originalName": "dupeGuru_win32_4.3.1.exe",
+        "sizeBytes": 27547549,
+        "storedPath": "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263",
+        "subsystem": "windowsGui"
+      },
+      "lifecycle": {
+        "terminationGraceMilliseconds": 3000,
+        "wineserver": {
+          "executable": "/usr/bin/wineserver",
+          "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791927518934-1/prefix"
+        }
+      },
+      "process": {
+        "arguments": [
+          "/home/forge/.local/share/compatforge/storage/guest-artifacts/objects/sha256/f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263",
+          "/S",
+          "/D=C:\\DupeGuru"
+        ],
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "DISPLAY": ":0",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791927518934-1/prefix",
+          "WINESERVER": "/usr/bin/wineserver",
+          "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+        },
+        "executable": "/usr/bin/wine",
+        "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791927518934-1"
+      },
+      "requestId": "job-1791927518934-1",
+      "runtime": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "sandbox": {
+        "network": "deny",
+        "profile": "desktop"
+      },
+      "schemaVersion": "1",
+      "translator": {
+        "provider": "native"
+      }
+    },
+    "schemaVersion": "1",
+    "status": "failed",
+    "updatedAtMilliseconds": 1791927536217
+  },
+  "generationState": {
+    "applicationId": "dupeguru",
+    "generations": [
+      {
+        "bottleId": "gen-job-1791927518934-1",
+        "createdAtMilliseconds": 1791927518943,
+        "definition": {
+          "bottleId": "gui-dupeguru",
+          "category": "utilities",
+          "compatibilityRating": "unknown",
+          "id": "dupeguru",
+          "installer": {
+            "arguments": [
+              "/S",
+              "/D=C:\\DupeGuru"
+            ],
+            "fileName": "dupeGuru_win32_4.3.1.exe",
+            "sha256": "f7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263"
+          },
+          "launchers": [
+            {
+              "executable": "DupeGuru/dupeGuru-win32.exe",
+              "id": "main",
+              "name": "DupeGuru"
+            }
+          ],
+          "name": "DupeGuru",
+          "publisher": "Hardcoded Software / dupeGuru contributors",
+          "schemaVersion": "1",
+          "tags": [
+            "rolling-1000",
+            "managed-nsis"
+          ],
+          "version": "4.3.1"
+        },
+        "definitionDigest": "sha256:38d95e2c2b93929d2ccfdda45be61c250b7f7061c1ba18765c3f4f735cbb832a",
+        "error": "registry I/O failed: No such file or directory (os error 2)",
+        "id": "gen-job-1791927518934-1",
+        "launcherDigests": {},
+        "runtime": {
+          "binding": {
+            "environment": {
+              "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+              "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+              "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+              "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+              "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+              "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+              "LANG": "C.UTF-8",
+              "LC_ALL": "C.UTF-8",
+              "WINEARCH": "win64",
+              "WINEDEBUG": "-all",
+              "WINEDLLOVERRIDES": "mscoree,mshtml=",
+              "WINESERVER": "/usr/bin/wineserver"
+            },
+            "executable": "/usr/bin/wine",
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "providerId": "wine-linux-x86-64-preview",
+            "wineserverExecutable": "/usr/bin/wineserver"
+          },
+          "selection": {
+            "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "packId": "wine-linux-x86-64-local-preview",
+            "provider": "wine"
+          },
+          "version": "11.14"
+        },
+        "status": "failed",
+        "updatedAtMilliseconds": 1791927536227
+      }
+    ],
+    "recoveryCapability": "kernel-boot-identity",
+    "schemaVersion": "1"
+  },
+  "onlyOneFormalInstallAttempt": true,
+  "installedReady": false,
+  "guiAccepted": false,
+  "published": false,
+  "actualProgramDirectory": "Program Files (x86)/Hardcoded Software/dupeGuru",
+  "actualProgramFiles": {
+    "api-ms-win-core-synch-l1-1-0.dll": {
+      "sizeBytes": 20232,
+      "sha256": "cc76a4e82e0e0cd08df3bb8f5ad57142305e0f666cc32599d76e363d0b43efcb"
+    },
+    "Qt5Qml.dll": {
+      "sizeBytes": 2975216,
+      "sha256": "e45f26ebbc2b0499e0e90f1666fd13f1bb2bed1073e828d30b6a3a70599d4bc9"
+    },
+    "_hashlib.pyd": {
+      "sizeBytes": 31744,
+      "sha256": "d7acfa2e747908591ad5b0eff338b1094f2044a8d75a3d7174776742a9027908"
+    },
+    "api-ms-win-core-libraryloader-l1-1-0.dll": {
+      "sizeBytes": 19208,
+      "sha256": "2dd4ebaa12cbba142b5d61a0ebf84a14d0d1bb8826ba42b63e303fe6721408df"
+    },
+    "api-ms-win-core-profile-l1-1-0.dll": {
+      "sizeBytes": 17672,
+      "sha256": "f941c232964d01e4680e54ab04955ec6264058011b03889fe29db86509511eba"
+    },
+    "dupeguru-win32.exe": {
+      "sizeBytes": 3374518,
+      "sha256": "f650922fb2723ece734fb0a554e53da842cb6c693a6374f4201b35337f1e4d0c"
+    },
+    "VCRUNTIME140.dll": {
+      "sizeBytes": 76168,
+      "sha256": "9faeaa45e8cc986af56f28350b38238b03c01c355e9564b849604b8d690919c5"
+    },
+    "pythoncom38.dll": {
+      "sizeBytes": 563200,
+      "sha256": "b0ff54fedbb68f4cf10dab58121d2036cc213a6f0f5105d12e1f1fb56f3556fa"
+    },
+    "Qt5DBus.dll": {
+      "sizeBytes": 345072,
+      "sha256": "b9bca43f52d5bfbf014d1c2643516b54eebb5b07d1dfca8f4c266628ef9d121a"
+    },
+    "MSVCP140.dll": {
+      "sizeBytes": 436616,
+      "sha256": "4190f0a1306257ced4975448794e1d42be312e334ffccfb4910a4a39cde9df57"
+    },
+    "_win32sysloader.pyd": {
+      "sizeBytes": 11776,
+      "sha256": "0d160da7b79ca8121ef4b824467e4df9bded0e253a8b5a78a1623876b349eb83"
+    },
+    "_ctypes.pyd": {
+      "sizeBytes": 110080,
+      "sha256": "b79ef5f3e2ba67441c5d18bd8aeb506d4f9660863e97849790655dde8658b6f4"
+    },
+    "api-ms-win-crt-utility-l1-1-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "7e6b33a4c0c84f18f2be294ec63212245af4fd8354636804ffe5ee9a0d526d95"
+    },
+    "Qt5Network.dll": {
+      "sizeBytes": 1051120,
+      "sha256": "37275f3ea79d15a2792bf21f71f1df825f201cf8b33aa1f94ca93d62d76b216c"
+    },
+    "api-ms-win-crt-convert-l1-1-0.dll": {
+      "sizeBytes": 22280,
+      "sha256": "b7c3ebc36c84630a52d23d1c0e79d61012dfa44cdebdf039af31ec9e322845a5"
+    },
+    "Qt5Core.dll": {
+      "sizeBytes": 5381616,
+      "sha256": "4f8dc460162407cfccb1be6ef9cce45c4449de838aeffa3fd33378f01a3f9cc4"
+    },
+    "win32trace.pyd": {
+      "sizeBytes": 18944,
+      "sha256": "e5cdccdd72f2c9fec6af890b99577ca00ddb284a42446d4f2e5c0aef48036025"
+    },
+    "api-ms-win-crt-locale-l1-1-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "8b543b1bb241f5b773eb76f652dad7b12e3e4a09230f2e804cd6b0622e8baf65"
+    },
+    "api-ms-win-crt-stdio-l1-1-0.dll": {
+      "sizeBytes": 24328,
+      "sha256": "7bcab4ca00fb1f85fea29dd3375f709317b984a6f3b9ba12b8cf1952f97beee5"
+    },
+    "api-ms-win-crt-math-l1-1-0.dll": {
+      "sizeBytes": 28936,
+      "sha256": "39723e61c98703034b264b97ee0fe12e696c6560483d799020f9847d8a952672"
+    },
+    "python3.dll": {
+      "sizeBytes": 52224,
+      "sha256": "c8dc00543a26fe3f453dc0f0735ea9fb6165462920761aeddab2b0f961d837c6"
+    },
+    "_overlapped.pyd": {
+      "sizeBytes": 32256,
+      "sha256": "67e1885d3d1881ba2bf7f6cad4a047237839a5c6ba9dfbdffcff19dbad42b0b0"
+    },
+    "win32api.pyd": {
+      "sizeBytes": 107520,
+      "sha256": "2d51fca2b5f52b89cef6a4bf5a512ad70d3c05ab9045f09ba94230f9d06b7c4f"
+    },
+    "api-ms-win-crt-time-l1-1-0.dll": {
+      "sizeBytes": 20744,
+      "sha256": "4d0f0ea6e8478132892f9e674e27e2bc346622fc8989c704e5b2299a18c1d138"
+    },
+    "win32ui.pyd": {
+      "sizeBytes": 1251328,
+      "sha256": "605d07be508346a034cfb90dad5d9d304ba4a888438e77cc976daf5234958d74"
+    },
+    "_ssl.pyd": {
+      "sizeBytes": 136192,
+      "sha256": "ad7b296d41df221cc8a87e2347b8c7de7bf866a79a4311d22e8a12ace2b88923"
+    },
+    "api-ms-win-crt-runtime-l1-1-0.dll": {
+      "sizeBytes": 22792,
+      "sha256": "1ee8e99190cc31b104fb75e66928b8c73138902fefedbcfb54c409df50a364df"
+    },
+    "_socket.pyd": {
+      "sizeBytes": 62976,
+      "sha256": "17061f7ca3bf9b435cb74fcf6fb24f8ec831a67ed93f35e5eabc9f79d8ea3b75"
+    },
+    "api-ms-win-core-memory-l1-1-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "ec573431338371504b7b9e57b2d91382b856aabf25d2b4ad96486efb794c198e"
+    },
+    "base_library.zip": {
+      "sizeBytes": 795972,
+      "sha256": "5bad30ad6f9537afefa2bbfccc180ac427c9b793f13e3ca703341efb2c93a812"
+    },
+    "api-ms-win-crt-heap-l1-1-0.dll": {
+      "sizeBytes": 19208,
+      "sha256": "675b1b82dd485cc8c8a099272db9241d0d2a7f45424901f35231b79186ec47ee"
+    },
+    "python38.dll": {
+      "sizeBytes": 4076032,
+      "sha256": "4aa8395110e22b3072dbd24f2cb841da694350253377219380e758751812c999"
+    },
+    "_queue.pyd": {
+      "sizeBytes": 18944,
+      "sha256": "6737ea7b1c563174e971265eaf55c163599018b89028280faa0f7a2ae2653221"
+    },
+    "libssl-1_1.dll": {
+      "sizeBytes": 546208,
+      "sha256": "ad857e12f5a589064ba335202c12be839c0fb4b57ecb8eebebd287668a1c1003"
+    },
+    "ucrtbase.dll": {
+      "sizeBytes": 1172232,
+      "sha256": "6f8f05993b8a25cadf5e301e58194c4d23402e467229b12e40956e4f128588b3"
+    },
+    "api-ms-win-crt-filesystem-l1-1-0.dll": {
+      "sizeBytes": 20232,
+      "sha256": "ac0cec8644340125507dd0bc9a90b1853a2d194eb60a049237fb5e752d349065"
+    },
+    "api-ms-win-core-processthreads-l1-1-0.dll": {
+      "sizeBytes": 20232,
+      "sha256": "4f187f1b4b14763360c325df6b04d3ec3cc6d2cecc9b796bc52a6c7196b0b2cc"
+    },
+    "select.pyd": {
+      "sizeBytes": 17920,
+      "sha256": "7cbee85114cec4b5ba6a137bece05ca7c30552ee34e7e6ac04cceaaa7032b0b4"
+    },
+    "api-ms-win-crt-process-l1-1-0.dll": {
+      "sizeBytes": 19208,
+      "sha256": "707c9a384440d0b2d067fc0335273f8851b02c3114842e17df9c54127910d7fb"
+    },
+    "libGLESv2.dll": {
+      "sizeBytes": 2937328,
+      "sha256": "8cfc024d09a6784486da7dc0ebfd90c0c8136b27c08ec1c3f352cd4fa43b9273"
+    },
+    "MSVCP140_1.dll": {
+      "sizeBytes": 29168,
+      "sha256": "b8cafc52b903ed0824882365b0a0d438460260b4ddf2487849eb3bd2241f7e8d"
+    },
+    "api-ms-win-core-namedpipe-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "dbd788b1c5694d65fa6f6e2202bfabb30adf77eb1973ceb9a737efb16e9edae2"
+    },
+    "api-ms-win-core-console-l1-1-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "24b07028c1e38b9ca2f197750654a0dfb7d33c2e52c9dd67100609499e8028db"
+    },
+    "api-ms-win-core-localization-l1-2-0.dll": {
+      "sizeBytes": 20744,
+      "sha256": "a7fa48de6c06666b80184afee7e544c258e0fb11399ab3fe47d4e74667779f41"
+    },
+    "mfc140u.dll": {
+      "sizeBytes": 5052184,
+      "sha256": "be8e091c229310475342a6a1e7f85991b6045ad924c999420166c26e0c314186"
+    },
+    "_decimal.pyd": {
+      "sizeBytes": 221184,
+      "sha256": "96b3ccad5b8b16f8c46a9e66c48602d2705373bb5efc306f12a75483c4d1213b"
+    },
+    "api-ms-win-core-util-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "34c5dee6d566252c0ceb7d9a21e24d5f297af2b26c32e0c7808bbd088aa9a6a9"
+    },
+    "api-ms-win-core-interlocked-l1-1-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "4997fda5d0e90b8a0ab7da314cb56f25d1450b366701c45c294d8dd3254de483"
+    },
+    "Qt5Widgets.dll": {
+      "sizeBytes": 4459504,
+      "sha256": "600285754e7eee7239b9d252dbed5c9d2c9c4c432751b8953dcb2e8b45e0408a"
+    },
+    "api-ms-win-core-debug-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "7e4cba620b87189278b5631536cdad9bfda6e12abd8e4eb647cb85369a204fe8"
+    },
+    "pyexpat.pyd": {
+      "sizeBytes": 173568,
+      "sha256": "a2a02fbdccfcc26d1f42265d85a4f8a2a5678a1b0e857b70ef1d0ea0e49ff3f0"
+    },
+    "Qt5Gui.dll": {
+      "sizeBytes": 5894128,
+      "sha256": "80016776efea2b2a838c3ffa4c82e5f146baff68c36073c0c34668809d1c4297"
+    },
+    "pywintypes38.dll": {
+      "sizeBytes": 119808,
+      "sha256": "0b9dfb94c44bf53d56265262f8fd8f19531e0b190b3323b27e8a26e39ea8bdf5"
+    },
+    "api-ms-win-core-datetime-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "c64b7c6400e9bacc1a4f1baed6374bfbce9a3f8cf20c2d03f81ef18262f89c60"
+    },
+    "api-ms-win-core-file-l1-1-0.dll": {
+      "sizeBytes": 21768,
+      "sha256": "1d1c11fc1ad1febf9308225c4ccf0431606a4ab08680ba04494d276cb310bf15"
+    },
+    "api-ms-win-core-sysinfo-l1-1-0.dll": {
+      "sizeBytes": 19208,
+      "sha256": "f94210b39cdc812beb7342a47e68673ea2116d0ad9266fcf8d7cedaa9561fc38"
+    },
+    "api-ms-win-core-file-l2-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "ae5e73416eb64bc18249ace99f6847024eceea7ce9c343696c84196460f3a357"
+    },
+    "libEGL.dll": {
+      "sizeBytes": 23024,
+      "sha256": "12903d93a7f57b479401602a533849e6f813ff5c2c92f3a02d468fc98e7ac1d5"
+    },
+    "api-ms-win-core-processthreads-l1-1-1.dll": {
+      "sizeBytes": 18696,
+      "sha256": "ff9b51aff7fbec8d7fe5cc478b12492a59b38b068dc2b518324173bb3179a0e1"
+    },
+    "_asyncio.pyd": {
+      "sizeBytes": 50176,
+      "sha256": "354a757d609c88a4629c8634b70adf65726cbb1bd3a83dba00a7b59ea29792d5"
+    },
+    "api-ms-win-core-string-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "339966ae75675a03f628c4ddd5d3218abb36cbcf6ddce83b88c07336d732b8ae"
+    },
+    "Qt5Svg.dll": {
+      "sizeBytes": 264176,
+      "sha256": "ade28d4cbac1e033468cb48f380352f0df7fbbce03261c48827b8a5ed7a1548e"
+    },
+    "api-ms-win-core-errorhandling-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "f8e3b45fd3e22866006f16a9e73e28b5e357f31f3c275b517692a5f16918b492"
+    },
+    "_elementtree.pyd": {
+      "sizeBytes": 182784,
+      "sha256": "ed1184c04de55ef884774ca1346f1d0a5d992c246b09fb9d9dbe8d1b9694b004"
+    },
+    "api-ms-win-core-handle-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "dba84e704ffe5fcd42548856258109dc77c6a46fd0b784119a3548ec47e5644b"
+    },
+    "Qt5QmlModels.dll": {
+      "sizeBytes": 350192,
+      "sha256": "065c8d687dc74964123f4bb06319565b163b164ab09dadc1eb6929ee19755735"
+    },
+    "Uninstall.exe": {
+      "sizeBytes": 79596,
+      "sha256": "31874f62ed4e9c99ccf66f6ce96be54a6a6c268a837a7aa9a468b9d1e31eb356"
+    },
+    "api-ms-win-core-timezone-l1-1-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "b5c725bbb475b5c06cc6cb2a2c3c70008f229659f88fba25ccd5d5c698d06a4b"
+    },
+    "sqlite3.dll": {
+      "sizeBytes": 1211904,
+      "sha256": "720c574c4141a501a86a5de99441a1c10401b01823ea1152e5d2259a90ea0552"
+    },
+    "_bz2.pyd": {
+      "sizeBytes": 72192,
+      "sha256": "c7a84a7189a51999a854e3761cad2a818e8c12fe0075f45bab18fa75c502ff81"
+    },
+    "unicodedata.pyd": {
+      "sizeBytes": 1083904,
+      "sha256": "2aa7635d186fc1a8c751f74430d5a2e806957a746746d8da4dc4afe0935ee714"
+    },
+    "_sqlite3.pyd": {
+      "sizeBytes": 62976,
+      "sha256": "d7bb60ba8d0b709cac9e30ca57ce545ad0e28be244120a5d613dc48d81ee79d4"
+    },
+    "opengl32sw.dll": {
+      "sizeBytes": 15995904,
+      "sha256": "25ae7577e066fa80519a8f1c314b15cdd22e4a8d3ecd2a36eccc79e40714a91d"
+    },
+    "win32wnet.pyd": {
+      "sizeBytes": 31232,
+      "sha256": "4b755c359c53a678b7860411a7ce1b3633ed56e445696d994c78cfca4a7465f0"
+    },
+    "api-ms-win-core-synch-l1-2-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "758a2f9ef6908b51745db50d89610fe1de921d93b2dbea919bfdba813d5d8893"
+    },
+    "libcrypto-1_1.dll": {
+      "sizeBytes": 2267040,
+      "sha256": "e498a3f2df1115dc530d39ee7492a7f0fd75b03ee8f0edded6312fc2799df217"
+    },
+    "api-ms-win-core-processenvironment-l1-1-0.dll": {
+      "sizeBytes": 19208,
+      "sha256": "9f1f26794fd664e0a8b6fbd53bfca33dcf7b0dc37faf3eb7782bc38dff62cd8c"
+    },
+    "api-ms-win-crt-conio-l1-1-0.dll": {
+      "sizeBytes": 19208,
+      "sha256": "a95b1af74623d6d5d892760166b9bfac8926929571301921f1e62458e6d1a503"
+    },
+    "Qt5Quick.dll": {
+      "sizeBytes": 3489776,
+      "sha256": "5f246016691ff883243ee9b3c9215eb16b859b12aefc5f4bbd2fbda3911883de"
+    },
+    "libffi-7.dll": {
+      "sizeBytes": 29208,
+      "sha256": "0c7ec6de19c246a23756b8550e6178ac2394b1093e96d0f43789124149486f57"
+    },
+    "_multiprocessing.pyd": {
+      "sizeBytes": 19456,
+      "sha256": "599e8332bb41c9bb11048a5e5869e8e94bddaeed490e54056fbfb6d565e97cb2"
+    },
+    "Qt5WebSockets.dll": {
+      "sizeBytes": 122352,
+      "sha256": "b8f83f5e56622afcc257fa6883ad2ddc24934f21619037ddc637c691acb80f33"
+    },
+    "api-ms-win-crt-multibyte-l1-1-0.dll": {
+      "sizeBytes": 26376,
+      "sha256": "a6b83b764555d517216e0e34c4945f7a7501c1b7a25308d8f85551fe353f9c15"
+    },
+    "api-ms-win-core-file-l1-2-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "9f7bda59faafc8a455f98397a63a7f7d114efc4e8a41808c791256ebf33c7613"
+    },
+    "api-ms-win-core-rtlsupport-l1-1-0.dll": {
+      "sizeBytes": 17672,
+      "sha256": "966a38ed7034f8d355e1e8772dfc92f23fb3c8a669780ed4ac3b075625d09744"
+    },
+    "d3dcompiler_47.dll": {
+      "sizeBytes": 3466856,
+      "sha256": "efbdbbcd0d954f8fdc53467de5d89ad525e4e4a9cfff8a15d07c6fdb350c407f"
+    },
+    "api-ms-win-crt-string-l1-1-0.dll": {
+      "sizeBytes": 24328,
+      "sha256": "73ab2161a7700835b2a15b7487045a695706cc18bcee283b114042570bb9c0aa"
+    },
+    "api-ms-win-core-heap-l1-1-0.dll": {
+      "sizeBytes": 18184,
+      "sha256": "535e9d20f00a2f1a62f843a4a26cfb763138d5dfe358b0126d33996fba9ca4d1"
+    },
+    "_lzma.pyd": {
+      "sizeBytes": 152064,
+      "sha256": "7f9c3ff8c0bb63bc7e8f68454313a18d90ca66d46416174d406555aa44394ea9"
+    },
+    "api-ms-win-crt-environment-l1-1-0.dll": {
+      "sizeBytes": 18696,
+      "sha256": "56d8b7ee7619579a3c648eb130c9354ba1ba5b33a07a4f350370ee7b3653749a"
+    },
+    "markupsafe/_speedups.cp38-win32.pyd": {
+      "sizeBytes": 13824,
+      "sha256": "3f7ad270a4051f80bdc052c349c512a822cbcb214cab556d37bf3c501cb01ca2"
+    },
+    "semantic_version-2.10.0.dist-info/METADATA": {
+      "sizeBytes": 9687,
+      "sha256": "7414d469a569046b6a246bfb1f105aab1b7abfdc32a95253f15432ea30159aa6"
+    },
+    "semantic_version-2.10.0.dist-info/RECORD": {
+      "sizeBytes": 1066,
+      "sha256": "b791c3db5ec452ebfaacc56bcfdcb41d4d40598867631043de8500e7d476fa03"
+    },
+    "semantic_version-2.10.0.dist-info/WHEEL": {
+      "sizeBytes": 110,
+      "sha256": "67e9f2629c2b712ab17ddbb1e4c6e7fc3439db988fec9d831b72601af398c934"
+    },
+    "semantic_version-2.10.0.dist-info/top_level.txt": {
+      "sizeBytes": 17,
+      "sha256": "f16345a85eb0f6c8305863a023106aeb91d0eb36a4384eed09a18acf48a74252"
+    },
+    "semantic_version-2.10.0.dist-info/REQUESTED": {
+      "sizeBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "semantic_version-2.10.0.dist-info/INSTALLER": {
+      "sizeBytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    "semantic_version-2.10.0.dist-info/LICENSE": {
+      "sizeBytes": 1317,
+      "sha256": "a85e7ef2fbc670d26781ed6844cd31a7e8ada65d21328f75a0b02402faae37ea"
+    },
+    "xxhash/_xxhash.cp38-win32.pyd": {
+      "sizeBytes": 57856,
+      "sha256": "35cbecc23d3219b79c116c561d71907a511e4476611f0d19ce714c6ca81e1509"
+    },
+    "PyQt5/QtGui.pyd": {
+      "sizeBytes": 1973760,
+      "sha256": "094db42843da43db9744302c5e002291f5d302429f578115f3f119a50b48b77b"
+    },
+    "PyQt5/sip.cp38-win32.pyd": {
+      "sizeBytes": 93696,
+      "sha256": "ddf94dae66dd685b4bbcdb5167d7ea1d23062944c0c86c7987cf8f80c80324e7"
+    },
+    "PyQt5/QtCore.pyd": {
+      "sizeBytes": 1927680,
+      "sha256": "09dec8dd2fb7ef6b9bff83369bdcdc1a8bdee07ad5847bfec1ec0749ff533ffe"
+    },
+    "PyQt5/QtWidgets.pyd": {
+      "sizeBytes": 3893248,
+      "sha256": "333cd32688683e0f94dd149acb254ca454c205e32635c059b6965be11f9a938b"
+    },
+    "qt/pe/_block_qt.cp38-win32.pyd": {
+      "sizeBytes": 9728,
+      "sha256": "b1555ad8dfc14e7a2dcef915ed427df5e8df19146b495fa8815cd149538cbdb3"
+    },
+    "core/pe/_block.cp38-win32.pyd": {
+      "sizeBytes": 11264,
+      "sha256": "40663708656727af9d6f7c91e45378ff083671b7fcac03b838f2e2288761ca90"
+    },
+    "core/pe/_cache.cp38-win32.pyd": {
+      "sizeBytes": 9728,
+      "sha256": "441fa61a9d3f24f16ef79f79432aebce810bc4a1b994790a068eeecfbb8541fc"
+    },
+    "help/uk/search.html": {
+      "sizeBytes": 2635,
+      "sha256": "8ef6bb38073e8f9827f4e3c05bf5de9ff99fe245d92dd4244b4a79a59d3de325"
+    },
+    "help/uk/folders.html": {
+      "sizeBytes": 6276,
+      "sha256": "c508bd703da5b1b6d2b78a38dfb4f9da3a117e45c64efaf2919c3ef122f9415c"
+    },
+    "help/uk/objects.inv": {
+      "sizeBytes": 487,
+      "sha256": "0d23506343b658c6a75ac9e53f5c677dda8350ff0fd8452293b482a47a30f15d"
+    },
+    "help/uk/reprioritize.html": {
+      "sizeBytes": 5766,
+      "sha256": "efa62042c9e9d3ac01f0b2208def2c872a9cf4baa0b8cae69ad20ad35550e057"
+    },
+    "help/uk/preferences.html": {
+      "sizeBytes": 8818,
+      "sha256": "915a06a6f80d1f0ddae83e3e36bace6c55f7716fae060eca01e6427b2d20085e"
+    },
+    "help/uk/changelog.html": {
+      "sizeBytes": 65864,
+      "sha256": "55779632cfa4617bbdd3f47f8523379631d261cf9b16c581e4b259007e45f194"
+    },
+    "help/uk/results.html": {
+      "sizeBytes": 23188,
+      "sha256": "5809f9bc216cf5ca44555a9e16bf9c0054585555fba098a851e472baf4d3fa53"
+    },
+    "help/uk/genindex.html": {
+      "sizeBytes": 1802,
+      "sha256": "9e05683a2f7e027bd07eb81d50759801a7bcc7e6c8d3e93da0260debac12dc93"
+    },
+    "help/uk/searchindex.js": {
+      "sizeBytes": 64997,
+      "sha256": "40f1f2e25c75ec78ad5c54eb4876543b79f08bb54d927890a1e131d7f3a259a1"
+    },
+    "help/uk/index.html": {
+      "sizeBytes": 4976,
+      "sha256": "b46928679952bb80a3c9bfd730ed02d8c56c5d6cf9b80c74d59c5d066486bc32"
+    },
+    "help/uk/.buildinfo": {
+      "sizeBytes": 234,
+      "sha256": "86103c4d1568c66418680c23dc1bd02372289d40f81630036db4d63ee30f63bb"
+    },
+    "help/uk/quick_start.html": {
+      "sizeBytes": 4422,
+      "sha256": "cd21eed30e8a854c57d50e362c45086b219ba5954fd7de06e75cb3515920e298"
+    },
+    "help/uk/faq.html": {
+      "sizeBytes": 10636,
+      "sha256": "1c9ecd607aa235cb9071a94d10b4b4e220f69f776ba6a4d0a20056c68eb8a1fb"
+    },
+    "help/de/search.html": {
+      "sizeBytes": 2629,
+      "sha256": "df3773f23259ad21e47719d60c21e4a655d7c7de25216fa5aca74b7d49addbad"
+    },
+    "help/de/folders.html": {
+      "sizeBytes": 5064,
+      "sha256": "797dd751d2e59b5f9dd225d29560ed8ab3c170adc9369ebf6e4f4f0242c8321d"
+    },
+    "help/de/objects.inv": {
+      "sizeBytes": 397,
+      "sha256": "b0473fb1fb2e0d3ce3d07289493016b846f2924a546da0118cb879dbfb481880"
+    },
+    "help/de/reprioritize.html": {
+      "sizeBytes": 4438,
+      "sha256": "41f599f83233a63cff6bc3a4b17e5aa22cf5c19459b873eca6f472df9d919891"
+    },
+    "help/de/preferences.html": {
+      "sizeBytes": 6914,
+      "sha256": "cb0948fce97a460b24e3aa877a43ac177333f85619af2b468c78d3d35a2d6691"
+    },
+    "help/de/changelog.html": {
+      "sizeBytes": 65999,
+      "sha256": "99c3643a1062c1a0afe474683bb61dcc8837a143c8efd2449dc049fbeaa4c4d9"
+    },
+    "help/de/results.html": {
+      "sizeBytes": 16234,
+      "sha256": "000d48862d53c49ac894eeeec95fbc95effb1ec17beb4eb0389c14a01bcc6af6"
+    },
+    "help/de/genindex.html": {
+      "sizeBytes": 1878,
+      "sha256": "929d3ae350869fe03856472748aa0385150e83c1aac877f880e4bcd9e83f448f"
+    },
+    "help/de/searchindex.js": {
+      "sizeBytes": 24879,
+      "sha256": "44cecff05bad26143353f6a6ac6fb031c206adaa06e71fcc25b850740b8159fd"
+    },
+    "help/de/index.html": {
+      "sizeBytes": 4716,
+      "sha256": "45aaf388920b1363c992522b5d12a764cb60ca81c6fad27c41ab79227cd89257"
+    },
+    "help/de/.buildinfo": {
+      "sizeBytes": 234,
+      "sha256": "cc8e80e9cc4062129542fab2fb0278c595de56de8de79069755dcdeb6f388413"
+    },
+    "help/de/quick_start.html": {
+      "sizeBytes": 3830,
+      "sha256": "4e00c10a96ae4e295dd14fb807220ccdb034e06225ace0ee0602ea2e111d084a"
+    },
+    "help/de/faq.html": {
+      "sizeBytes": 7916,
+      "sha256": "235aa260c1b93871c39f6caebe36e5c498c66e0b239c77dab3039318d91fcb3e"
+    },
+    "help/en/search.html": {
+      "sizeBytes": 2563,
+      "sha256": "d229f98dcc869b12c9f46d00efc5f8cd340c97f5e2585bbff1faadd28875d830"
+    },
+    "help/en/scan.html": {
+      "sizeBytes": 15288,
+      "sha256": "8c1922b29acaac16ec7d65ba43376a1ccaea63567f29de07d9f2a216a4f31fbc"
+    },
+    "help/en/folders.html": {
+      "sizeBytes": 6611,
+      "sha256": "02cb6bb2e06297d2e224daccd3d4af7185c68a4e230aa771a09b0cba3335bef3"
+    },
+    "help/en/objects.inv": {
+      "sizeBytes": 3435,
+      "sha256": "06192f178cb75b2cb18357d14aade35b927b02cc7193d8d9c4b09633a0cf7209"
+    },
+    "help/en/reprioritize.html": {
+      "sizeBytes": 4372,
+      "sha256": "fc8f1bad789f7ca8486fd8ca482e8ea1282045179a5ddc1dc7adb2b4fdcfb009"
+    },
+    "help/en/preferences.html": {
+      "sizeBytes": 8310,
+      "sha256": "cbc99532c90e597ce2167dc596e82a34077baf1394933ac33957251d2f7f7157"
+    },
+    "help/en/changelog.html": {
+      "sizeBytes": 65987,
+      "sha256": "cb36fafbda38800b10064107f5206ecd3b08e58096871bf60f6b65ea02bb57fb"
+    },
+    "help/en/results.html": {
+      "sizeBytes": 18365,
+      "sha256": "3f3be47f98d0a693a060235d32dd5131c317d0a2d37b941a7cbcd35e45356047"
+    },
+    "help/en/contribute.html": {
+      "sizeBytes": 9050,
+      "sha256": "34bd449cf03194b7f7abbab823800c465c8a8ee49490d35e8f397290934e0653"
+    },
+    "help/en/py-modindex.html": {
+      "sizeBytes": 7907,
+      "sha256": "6371f8b4650a1f383405ea3f5f9648ff55c89a3fc60d03ba58931fd1e799c280"
+    },
+    "help/en/genindex.html": {
+      "sizeBytes": 57431,
+      "sha256": "24af850abfd8e9043144b4acd3e4652370d3d82f1c2586966c5860695eb4b50f"
+    },
+    "help/en/searchindex.js": {
+      "sizeBytes": 61749,
+      "sha256": "e60653d97c8715b5748e42bea7415e3919ab6881e6e4ceacab7c248c3da87e5c"
+    },
+    "help/en/index.html": {
+      "sizeBytes": 11692,
+      "sha256": "e4de4820504c3e3f09dac9c34792f0609eaab223c01db238ed03dc3cc5314e8d"
+    },
+    "help/en/.buildinfo": {
+      "sizeBytes": 234,
+      "sha256": "86103c4d1568c66418680c23dc1bd02372289d40f81630036db4d63ee30f63bb"
+    },
+    "help/en/quick_start.html": {
+      "sizeBytes": 3668,
+      "sha256": "72810a1de36674f90f3076ef69be6b36609545acb7e120bb34dcbc2cd0e0fd40"
+    },
+    "help/en/faq.html": {
+      "sizeBytes": 21265,
+      "sha256": "cca8c5e50aeb3615f791dff08187a615ea5bd1e9cd5e31794cabbfa445490325"
+    },
+    "help/fr/search.html": {
+      "sizeBytes": 2645,
+      "sha256": "4d37daf1e4ba06d9fa7c89a9376049fba81d29d76c8987bcd6ceed98dc5a8f9f"
+    },
+    "help/fr/folders.html": {
+      "sizeBytes": 4527,
+      "sha256": "66222c11db3108c11faa10a4738eb4e90bf482c9fec8e043507694d99738d6c2"
+    },
+    "help/fr/objects.inv": {
+      "sizeBytes": 402,
+      "sha256": "3c42bbe2b5ee4d04dc022cb6e2dd37c97404a48976ee0db76dfb0dac7fd803f0"
+    },
+    "help/fr/reprioritize.html": {
+      "sizeBytes": 4447,
+      "sha256": "a070d177fa1071981a4405a9ce89344c7246268458fcc0f348cb05994dfc2dae"
+    },
+    "help/fr/preferences.html": {
+      "sizeBytes": 6855,
+      "sha256": "e8c4abb89c6d5cff53734a53d939f8c1405a88e50d45c55f49ac24ae4f4516f1"
+    },
+    "help/fr/changelog.html": {
+      "sizeBytes": 66877,
+      "sha256": "c92364e6ec929b760976187d1224445c12591fe193df59ab335d913476f5b7b3"
+    },
+    "help/fr/results.html": {
+      "sizeBytes": 15246,
+      "sha256": "90e42ef427de4450a71e839fe0fdf1dc3fda5b5e142393e92302e422ce8de61d"
+    },
+    "help/fr/genindex.html": {
+      "sizeBytes": 1830,
+      "sha256": "6a0d14629a2af61b9c94914d086c112bf2213b981e790bc70e6a6330bdbd50c8"
+    },
+    "help/fr/searchindex.js": {
+      "sizeBytes": 22538,
+      "sha256": "c08607301bd3c5525a729d6f6feaa8a1d512d53d07210b8c27f1356f596b2241"
+    },
+    "help/fr/index.html": {
+      "sizeBytes": 6935,
+      "sha256": "da9cd0f4c4509845d0849c4dcac6059d5e69556282f4810fc9e3182a5379dced"
+    },
+    "help/fr/.buildinfo": {
+      "sizeBytes": 234,
+      "sha256": "eafecd2a57900ba6486d464b020e3ff426a75357b8018e419719d18d28661488"
+    },
+    "help/fr/quick_start.html": {
+      "sizeBytes": 3752,
+      "sha256": "1f139de90457c42434e71313319e1146ab6186d8016d976be44afc7d74ceb91b"
+    },
+    "help/fr/faq.html": {
+      "sizeBytes": 13316,
+      "sha256": "7487e92df9240686e55d0fbc0110fd7c83b8608cd0e703940158346abc593826"
+    },
+    "help/hy/search.html": {
+      "sizeBytes": 2563,
+      "sha256": "aef72ee1b9155a094b61f17c62c687c57ffd93e6e51604f61d9294c9297f5b8e"
+    },
+    "help/hy/folders.html": {
+      "sizeBytes": 6349,
+      "sha256": "a9304fc37921a42d237dd365621bf7fffd33d840933855c9a7098bd154328fdb"
+    },
+    "help/hy/objects.inv": {
+      "sizeBytes": 475,
+      "sha256": "f19fafa5f91e1c3f4b71f4eb7b4686b98ee396e8881080d63f9652bbb96090cf"
+    },
+    "help/hy/reprioritize.html": {
+      "sizeBytes": 5779,
+      "sha256": "3f978c14a965dd869a56e31dee77b8430fd2d0826e05fb7b92ce36087aa17907"
+    },
+    "help/hy/preferences.html": {
+      "sizeBytes": 8687,
+      "sha256": "477e0f242daf55ed411bcfe13b50d25d3c35b056c6875a3bcbb531df0b6cde0e"
+    },
+    "help/hy/changelog.html": {
+      "sizeBytes": 66186,
+      "sha256": "247e1825d2f46aa802de8bea8241425311b876e35f820230300272029fbdf5c2"
+    },
+    "help/hy/results.html": {
+      "sizeBytes": 23142,
+      "sha256": "4b0ffb81d2e9be6bc6775e2f3e38d99f1d384f24f4eb80eddf34e001c931bcdd"
+    },
+    "help/hy/genindex.html": {
+      "sizeBytes": 1770,
+      "sha256": "389ce5d910dc582147b090bb3d85c0c77c291b8063e31244e4fb18ab5007f517"
+    },
+    "help/hy/searchindex.js": {
+      "sizeBytes": 62443,
+      "sha256": "6b85e856612d788e22cd91669e05c7853db087384ddd3d6a3a6d3a9d33b572fd"
+    },
+    "help/hy/index.html": {
+      "sizeBytes": 5174,
+      "sha256": "383737efabf7c6fba31b1a8f9ef5d7b538f0127175b39c3888c289b83fa8c229"
+    },
+    "help/hy/.buildinfo": {
+      "sizeBytes": 234,
+      "sha256": "86103c4d1568c66418680c23dc1bd02372289d40f81630036db4d63ee30f63bb"
+    },
+    "help/hy/quick_start.html": {
+      "sizeBytes": 4366,
+      "sha256": "4d0e792b9abad17de055cec0323ec6da516f5e4e107a5ad59b96e628da24252b"
+    },
+    "help/hy/faq.html": {
+      "sizeBytes": 10247,
+      "sha256": "81b8bfe25d82cc14e8b0dc6e0365e1bed5c3b8b2f50e8345cf954d93f7936599"
+    },
+    "help/ru/search.html": {
+      "sizeBytes": 2732,
+      "sha256": "dc9b61806583ceb723f9f1c86976bea63089dc0653a0411429a4e5e5659132af"
+    },
+    "help/ru/folders.html": {
+      "sizeBytes": 6497,
+      "sha256": "4efb91a7fba89ec6e7f5700826accbfe85ae4deb114bd7a2e4835683a4b3dd08"
+    },
+    "help/ru/objects.inv": {
+      "sizeBytes": 511,
+      "sha256": "aac38bf6ef1ad8526c4e04303f23e64e9cc60d5126c1ae54a7460c5415a89b4f"
+    },
+    "help/ru/reprioritize.html": {
+      "sizeBytes": 6015,
+      "sha256": "4f42ae44be607112690d9ca6263a8c5da68d627509d2e80bd928325f05b3c11a"
+    },
+    "help/ru/preferences.html": {
+      "sizeBytes": 8777,
+      "sha256": "bffd7d0a0cbe614c93714c402a6742cd82734f2416dcd408d0ae9f2b63dfff0c"
+    },
+    "help/ru/changelog.html": {
+      "sizeBytes": 66053,
+      "sha256": "8ed58fce0d0fb52fbeed276d4b3f60e9cfc54f9cf8e63c4e8b3faa7ec9c75ada"
+    },
+    "help/ru/results.html": {
+      "sizeBytes": 23905,
+      "sha256": "74fdcf7b396b4ae6a0f18df002be30bbfc54cf23af20b53baf09c1900b6acc7c"
+    },
+    "help/ru/genindex.html": {
+      "sizeBytes": 2009,
+      "sha256": "ccb4c96d32e64edd6d86d380c4e111246a1f62d97b1b29057dafba078c129499"
+    },
+    "help/ru/searchindex.js": {
+      "sizeBytes": 47028,
+      "sha256": "5a8e44b3ae7ef31ca898b741d03b3d4d2dab2cd16667184a6574772cae720f6e"
+    },
+    "help/ru/index.html": {
+      "sizeBytes": 5575,
+      "sha256": "de3b9bc379be13e7b5ee2427b8715f13c19140741ff4b5e5af153f5b76811389"
+    },
+    "help/ru/.buildinfo": {
+      "sizeBytes": 234,
+      "sha256": "5fd33adf7cb114820a1731040ac0c1c5d8ccfa21619d85acdea8b52168c87d5f"
+    },
+    "help/ru/quick_start.html": {
+      "sizeBytes": 4607,
+      "sha256": "0594a1c655cbd2447814eb09433d5223e805a4fbdeb36694c0d7199b2e22275c"
+    },
+    "help/ru/faq.html": {
+      "sizeBytes": 11128,
+      "sha256": "2f9b2b671be291de166170f6366fdae516ee327a2905626a3a9a296a5f5673bb"
+    },
+    "help/ru/_sources/index.rst.txt": {
+      "sizeBytes": 2148,
+      "sha256": "e1df6c4f0cd4e25cba937fa03defca5969746bb2be38bb0bdd51678df8414866"
+    },
+    "help/ru/_sources/folders.rst.txt": {
+      "sizeBytes": 3373,
+      "sha256": "cfdba5fef5708f5fba432c4127579b155889a1641435a6e0157ccbf8cd36201a"
+    },
+    "help/ru/_sources/reprioritize.rst.txt": {
+      "sizeBytes": 3207,
+      "sha256": "8d85681ef5423c597bae076d0ca5fe072f52eb3064776414ea555a878f0db200"
+    },
+    "help/ru/_sources/preferences.rst.txt": {
+      "sizeBytes": 16259,
+      "sha256": "5ee390dd30f91c13e23951d257b82d0b6eddbdc4fc5217edd6aa64b3152c0649"
+    },
+    "help/ru/_sources/changelog.rst.txt": {
+      "sizeBytes": 39473,
+      "sha256": "12b06ccd4caf9694b1300568ff2d7be3e91c429a1919b50c7f60fc3c5b248334"
+    },
+    "help/ru/_sources/results.rst.txt": {
+      "sizeBytes": 18905,
+      "sha256": "bdaaaa47d54ec8bf278c970ea8c308f378453e8d34895714514276ab3cf57279"
+    },
+    "help/ru/_sources/quick_start.rst.txt": {
+      "sizeBytes": 1781,
+      "sha256": "2ccbbf65719cd7d3d81a9937f0fc5ae8648af4bdcdf8ba740841a496b0dc29bc"
+    },
+    "help/ru/_sources/faq.rst.txt": {
+      "sizeBytes": 15289,
+      "sha256": "0ed614b74389dc6e1e54e2673f9209968b0b8d6afd9ff69045bf65f43617fa31"
+    },
+    "help/ru/.doctrees/reprioritize.doctree": {
+      "sizeBytes": 9149,
+      "sha256": "eeff84c4cf0de2e76717122274842fbd3b95cb0848c85c11cff8c294a06d2a7c"
+    },
+    "help/ru/.doctrees/quick_start.doctree": {
+      "sizeBytes": 8545,
+      "sha256": "96712d31726c5b1fdf50ff5aa10cbbd06221a8d170ca36bc8dd95b96d3a66941"
+    },
+    "help/ru/.doctrees/preferences.doctree": {
+      "sizeBytes": 61131,
+      "sha256": "2bcf31a6477c75858e78d42e6e7f903bfe48f16f2cb427ae05c115601ffb5e82"
+    },
+    "help/ru/.doctrees/changelog.doctree": {
+      "sizeBytes": 236869,
+      "sha256": "027169faff771917f3c6b970494dd3034a14bb7609bcd8bfa2644d385328f88e"
+    },
+    "help/ru/.doctrees/environment.pickle": {
+      "sizeBytes": 215352,
+      "sha256": "44068b90a0efe5430cf7d4e3a57fead55d2c896225cdf15f472a268f7debe2d9"
+    },
+    "help/ru/.doctrees/folders.doctree": {
+      "sizeBytes": 14896,
+      "sha256": "cea64ed0c874191d0589a46d86f0d890281781f9e7c633f86d80cabf88e3ea3e"
+    },
+    "help/ru/.doctrees/results.doctree": {
+      "sizeBytes": 66037,
+      "sha256": "1c9da381cf8e7f496e5d04bc85d1a7e75692c59c6b09814ff0fb0ff4879e1a3d"
+    },
+    "help/ru/.doctrees/index.doctree": {
+      "sizeBytes": 9156,
+      "sha256": "dce147181f84cd90bafb3af3726f1c76ff5dd24b48685d3dd12b8f9866a3001e"
+    },
+    "help/ru/.doctrees/faq.doctree": {
+      "sizeBytes": 61052,
+      "sha256": "5fb670a54d9ddcf1bef5ac2945dda3e38781418b441d3f6340e672491b99be74"
+    },
+    "help/ru/_static/bg-page.png": {
+      "sizeBytes": 82,
+      "sha256": "634f1cba7415d17dc6849a139f7c3a37b672ce9df5487baf1557f7a1fcd0bca4"
+    },
+    "help/ru/_static/russian-stemmer.js": {
+      "sizeBytes": 17996,
+      "sha256": "3668d3466b870d59d4e9c1ecfdac2a8a3171783787f00539b2e1c435124da6a0"
+    },
+    "help/ru/_static/documentation_options.js": {
+      "sizeBytes": 434,
+      "sha256": "b7ab193f647b0c4bdfe2e12ecb51b36daf45d00d2ae73968eb69770435ece191"
+    },
+    "help/ru/_static/plus.png": {
+      "sizeBytes": 90,
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+    },
+    "help/ru/_static/minus.png": {
+      "sizeBytes": 90,
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+    },
+    "help/ru/_static/jquery-3.6.0.js": {
+      "sizeBytes": 288580,
+      "sha256": "1fe2bb5390a75e5d61e72c107cab528fc3c29a837d69aab7d200e1dbb5dcd239"
+    },
+    "help/ru/_static/base-stemmer.js": {
+      "sizeBytes": 8133,
+      "sha256": "a75c8351f2274975d610d2c4627def2050e32f0943b7e3ec45858f5d0cae909e"
+    },
+    "help/ru/_static/_sphinx_javascript_frameworks_compat.js": {
+      "sizeBytes": 4418,
+      "sha256": "2f1e30341b31300bdc3af29ee4a64e0f40ed15492345387bb47542d9b9b4813c"
+    },
+    "help/ru/_static/underscore.js": {
+      "sizeBytes": 19530,
+      "sha256": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
+    },
+    "help/ru/_static/bullet_orange.png": {
+      "sizeBytes": 165,
+      "sha256": "90539037546bffe1fb30172419cecb4c558d19457897dee96c18e05d1305eabf"
+    },
+    "help/ru/_static/underscore-1.13.1.js": {
+      "sizeBytes": 68420,
+      "sha256": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+    },
+    "help/ru/_static/basic.css": {
+      "sizeBytes": 16130,
+      "sha256": "1e18416cb7b1e1745cdb1d79136584f35d1964a2b54feb80f374895365259412"
+    },
+    "help/ru/_static/searchtools.js": {
+      "sizeBytes": 17088,
+      "sha256": "306bb4ed7f0208f81bea031e26b9bf893360fe072a1707b04b3097dbed5d58ff"
+    },
+    "help/ru/_static/pygments.css": {
+      "sizeBytes": 4919,
+      "sha256": "f39056c9bbd9ef5700948e6eab0344473a1f8e500222a3e562f4039a4295336a"
+    },
+    "help/ru/_static/translations.js": {
+      "sizeBytes": 8313,
+      "sha256": "3931ffd8f7fa4cdda225aa4c2031d1d96c34935c2b9d15f43d5849df3005cd93"
+    },
+    "help/ru/_static/haiku.css": {
+      "sizeBytes": 7088,
+      "sha256": "e036ac04cbee0b0a3c447557998d8bc2ea2b5957a58d3d74a40f692cf7f56e8f"
+    },
+    "help/ru/_static/doctools.js": {
+      "sizeBytes": 8171,
+      "sha256": "2985f25f79e5ddcd1ed494ca63fc85f215f79e0cd156e622ce2bf3cf2cd9445f"
+    },
+    "help/ru/_static/language_data.js": {
+      "sizeBytes": 13981,
+      "sha256": "d28e201289133354fd7f0224f048e73c766b6a62d861cc2652002af9c4044d6b"
+    },
+    "help/ru/_static/file.png": {
+      "sizeBytes": 286,
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+    },
+    "help/ru/_static/alert_warning_32.png": {
+      "sizeBytes": 944,
+      "sha256": "e5c26075414392fb54dead9ef7a62ab249af3b180bdcbe136c849ef831d0ce83"
+    },
+    "help/ru/_static/jquery.js": {
+      "sizeBytes": 89501,
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+    },
+    "help/ru/_static/alert_info_32.png": {
+      "sizeBytes": 1128,
+      "sha256": "9808d822ceeabc176bbed33a857d1b7edaf6bb2349ac58c8f14efdc5dfd72f1a"
+    },
+    "help/hy/_sources/index.rst.txt": {
+      "sizeBytes": 2081,
+      "sha256": "4a63cc2ccb8e7c40357fbfb2bbc5a448e66838e8e4fdaa66e6c9f64a2ca1c0e2"
+    },
+    "help/hy/_sources/folders.rst.txt": {
+      "sizeBytes": 3324,
+      "sha256": "5b3190114863e879c18d67480ac4e8175b31baf662c79ef8b460ccc12abd6f36"
+    },
+    "help/hy/_sources/reprioritize.rst.txt": {
+      "sizeBytes": 3063,
+      "sha256": "dd949c26f0acb816b4d726ce00a4aea63b6bbff3e3cec313dda2c46090e67f5e"
+    },
+    "help/hy/_sources/preferences.rst.txt": {
+      "sizeBytes": 16162,
+      "sha256": "ed8bca756a493f4b9e3c503b2bdc8f50f5450bf22d4f0fee48ecd30c32bbf1e1"
+    },
+    "help/hy/_sources/changelog.rst.txt": {
+      "sizeBytes": 39473,
+      "sha256": "12b06ccd4caf9694b1300568ff2d7be3e91c429a1919b50c7f60fc3c5b248334"
+    },
+    "help/hy/_sources/results.rst.txt": {
+      "sizeBytes": 18214,
+      "sha256": "cee9d90a58a7ef35e7db88f72213f8bd45977c563a1d23f15e7189aa372f1da8"
+    },
+    "help/hy/_sources/quick_start.rst.txt": {
+      "sizeBytes": 1617,
+      "sha256": "8b1c784d65b5cadc4c86344a535f6cd3a9b020ea2ac50ee2e7ca3223c0ded3d7"
+    },
+    "help/hy/_sources/faq.rst.txt": {
+      "sizeBytes": 15241,
+      "sha256": "37aedd67811bf43b8499ce5b58a4ced74f850aa04b454af1b7a11a6af66afc22"
+    },
+    "help/hy/.doctrees/reprioritize.doctree": {
+      "sizeBytes": 8784,
+      "sha256": "e27c299a48b92a103410b5aeb1e8600598878a0e05cfd21883d2e617aefa35b6"
+    },
+    "help/hy/.doctrees/quick_start.doctree": {
+      "sizeBytes": 7992,
+      "sha256": "48ec988b9ab05f86fbbb261ec78f95ed85237f9f7e90274cbf09b0d8b0fb6086"
+    },
+    "help/hy/.doctrees/preferences.doctree": {
+      "sizeBytes": 60375,
+      "sha256": "d5acae3e23179a375a37945ecaa0e5ea77ff1e14ea7b8552ad86df8303b825ed"
+    },
+    "help/hy/.doctrees/changelog.doctree": {
+      "sizeBytes": 227195,
+      "sha256": "0b66a1c62c2b13f7d8a57e9c6293a9b6f9c79415999bcebf4084dc63563e256b"
+    },
+    "help/hy/.doctrees/environment.pickle": {
+      "sizeBytes": 210089,
+      "sha256": "78e20174bfaf6b66b0a1bc19eb19896e35d73ac7da829acc55954466f17b7035"
+    },
+    "help/hy/.doctrees/folders.doctree": {
+      "sizeBytes": 14466,
+      "sha256": "12dde0be66cef6137bad2c18e6845e8e2b969ea8ec252db73ea136e7524d719e"
+    },
+    "help/hy/.doctrees/results.doctree": {
+      "sizeBytes": 62753,
+      "sha256": "914ef8a87ee572652be723332222a71d9b98682d125c4532beb2c39dbbb1d60a"
+    },
+    "help/hy/.doctrees/index.doctree": {
+      "sizeBytes": 8804,
+      "sha256": "014dfd9a64de633b97fc1d9131787660895114e2ed189446aae558d10970cdbe"
+    },
+    "help/hy/.doctrees/faq.doctree": {
+      "sizeBytes": 62744,
+      "sha256": "daa730191f3d83b98eda2d630dd38be62014da9a4ffec44318e582cf62221c07"
+    },
+    "help/hy/_static/bg-page.png": {
+      "sizeBytes": 82,
+      "sha256": "634f1cba7415d17dc6849a139f7c3a37b672ce9df5487baf1557f7a1fcd0bca4"
+    },
+    "help/hy/_static/documentation_options.js": {
+      "sizeBytes": 434,
+      "sha256": "538c906e7cd495b77c04427695e163ac690928b48271c3afdb40a41684277dbc"
+    },
+    "help/hy/_static/plus.png": {
+      "sizeBytes": 90,
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+    },
+    "help/hy/_static/minus.png": {
+      "sizeBytes": 90,
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+    },
+    "help/hy/_static/jquery-3.6.0.js": {
+      "sizeBytes": 288580,
+      "sha256": "1fe2bb5390a75e5d61e72c107cab528fc3c29a837d69aab7d200e1dbb5dcd239"
+    },
+    "help/hy/_static/jquery-3.5.1.js": {
+      "sizeBytes": 287630,
+      "sha256": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37"
+    },
+    "help/hy/_static/_sphinx_javascript_frameworks_compat.js": {
+      "sizeBytes": 4418,
+      "sha256": "2f1e30341b31300bdc3af29ee4a64e0f40ed15492345387bb47542d9b9b4813c"
+    },
+    "help/hy/_static/underscore.js": {
+      "sizeBytes": 19530,
+      "sha256": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
+    },
+    "help/hy/_static/bullet_orange.png": {
+      "sizeBytes": 165,
+      "sha256": "90539037546bffe1fb30172419cecb4c558d19457897dee96c18e05d1305eabf"
+    },
+    "help/hy/_static/underscore-1.13.1.js": {
+      "sizeBytes": 68420,
+      "sha256": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+    },
+    "help/hy/_static/basic.css": {
+      "sizeBytes": 16130,
+      "sha256": "1e18416cb7b1e1745cdb1d79136584f35d1964a2b54feb80f374895365259412"
+    },
+    "help/hy/_static/searchtools.js": {
+      "sizeBytes": 17088,
+      "sha256": "306bb4ed7f0208f81bea031e26b9bf893360fe072a1707b04b3097dbed5d58ff"
+    },
+    "help/hy/_static/pygments.css": {
+      "sizeBytes": 4919,
+      "sha256": "f39056c9bbd9ef5700948e6eab0344473a1f8e500222a3e562f4039a4295336a"
+    },
+    "help/hy/_static/haiku.css": {
+      "sizeBytes": 7088,
+      "sha256": "e036ac04cbee0b0a3c447557998d8bc2ea2b5957a58d3d74a40f692cf7f56e8f"
+    },
+    "help/hy/_static/doctools.js": {
+      "sizeBytes": 8171,
+      "sha256": "2985f25f79e5ddcd1ed494ca63fc85f215f79e0cd156e622ce2bf3cf2cd9445f"
+    },
+    "help/hy/_static/language_data.js": {
+      "sizeBytes": 4957,
+      "sha256": "4cd3112cf96671d615280aceb56bf40e8c7d237a0a3c91bcf748fceb77c7126e"
+    },
+    "help/hy/_static/file.png": {
+      "sizeBytes": 286,
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+    },
+    "help/hy/_static/alert_warning_32.png": {
+      "sizeBytes": 944,
+      "sha256": "e5c26075414392fb54dead9ef7a62ab249af3b180bdcbe136c849ef831d0ce83"
+    },
+    "help/hy/_static/jquery.js": {
+      "sizeBytes": 89501,
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+    },
+    "help/hy/_static/alert_info_32.png": {
+      "sizeBytes": 1128,
+      "sha256": "9808d822ceeabc176bbed33a857d1b7edaf6bb2349ac58c8f14efdc5dfd72f1a"
+    },
+    "help/fr/_sources/index.rst.txt": {
+      "sizeBytes": 1457,
+      "sha256": "81066986cbd9c96e703c760989ca8dac22392050efe5a87dc056426c8304945a"
+    },
+    "help/fr/_sources/folders.rst.txt": {
+      "sizeBytes": 3460,
+      "sha256": "12f579d718f65da29b78f6ee64d5e4fdcb5fdd822f432344e2df1eced0793dd0"
+    },
+    "help/fr/_sources/reprioritize.rst.txt": {
+      "sizeBytes": 1785,
+      "sha256": "f22dd26d4b7bb4755fc923132123b0808778f13244af6240b1eee030a7248d15"
+    },
+    "help/fr/_sources/preferences.rst.txt": {
+      "sizeBytes": 8471,
+      "sha256": "5c32f976eeb0bf3683d98f6fb937c4288d0d20dc1bdd0547cd7904809caca8f0"
+    },
+    "help/fr/_sources/changelog.rst.txt": {
+      "sizeBytes": 39473,
+      "sha256": "12b06ccd4caf9694b1300568ff2d7be3e91c429a1919b50c7f60fc3c5b248334"
+    },
+    "help/fr/_sources/results.rst.txt": {
+      "sizeBytes": 10157,
+      "sha256": "ead5d89552d765538fdda5966583736ec695ea38ec0228f618b737cca10bcd63"
+    },
+    "help/fr/_sources/quick_start.rst.txt": {
+      "sizeBytes": 981,
+      "sha256": "779477cdc028f5b63c99e89da39ae752b58952ee32a12316b2dfed27a0ca5bf8"
+    },
+    "help/fr/_sources/faq.rst.txt": {
+      "sizeBytes": 10466,
+      "sha256": "8445ddca498ac3bdf4a24d23a9160ce01cafe955f9ee9c3a97cca233ee13fc05"
+    },
+    "help/fr/.doctrees/reprioritize.doctree": {
+      "sizeBytes": 6345,
+      "sha256": "92985ce129ab48f99c7d60d0214d9a26046cfcb7a1cc107e810114c78a54a48d"
+    },
+    "help/fr/.doctrees/quick_start.doctree": {
+      "sizeBytes": 6689,
+      "sha256": "b131f9fba568256fe90b9fb1fffa62c34dd664ce85fab3a1566324107e911973"
+    },
+    "help/fr/.doctrees/preferences.doctree": {
+      "sizeBytes": 38098,
+      "sha256": "18a98d75f3f1c74b9fa8c3daa8a83b43d7d35a5b2b4320c55ff6f7c7f56a6444"
+    },
+    "help/fr/.doctrees/changelog.doctree": {
+      "sizeBytes": 237041,
+      "sha256": "b9258011c43c079e2beadd7706e6235a54a55628f699aaa9690c2a02185d569b"
+    },
+    "help/fr/.doctrees/environment.pickle": {
+      "sizeBytes": 66909,
+      "sha256": "8dcda4d461c7aed057b844adbf606a2b710e758f3c056f8604a9cbad07b66b7a"
+    },
+    "help/fr/.doctrees/folders.doctree": {
+      "sizeBytes": 13863,
+      "sha256": "1810f7238256c08c9ebcd7c7237e000c7397b6ef029264acabf06b383cd2649e"
+    },
+    "help/fr/.doctrees/results.doctree": {
+      "sizeBytes": 41213,
+      "sha256": "0cbf23d8a2358abee2881290ef0131707cd56a0c4bf6e8a48a97462df122780b"
+    },
+    "help/fr/.doctrees/index.doctree": {
+      "sizeBytes": 7581,
+      "sha256": "f6fad8a9339646f09c5bbf7c81d129ebe6c174c0f2a7828f0b5a5f124eaf9646"
+    },
+    "help/fr/.doctrees/faq.doctree": {
+      "sizeBytes": 48701,
+      "sha256": "55c0c0ed8cabfe677c31a0fd40e0e8bc5818ae454a66f87cfc8f4ca77f6493c7"
+    },
+    "help/fr/_static/bg-page.png": {
+      "sizeBytes": 82,
+      "sha256": "634f1cba7415d17dc6849a139f7c3a37b672ce9df5487baf1557f7a1fcd0bca4"
+    },
+    "help/fr/_static/documentation_options.js": {
+      "sizeBytes": 434,
+      "sha256": "cff32ef4f36730e8b792db974f73900b71d63fb460d16de5fbfe812b4ed3bcbb"
+    },
+    "help/fr/_static/plus.png": {
+      "sizeBytes": 90,
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+    },
+    "help/fr/_static/minus.png": {
+      "sizeBytes": 90,
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+    },
+    "help/fr/_static/jquery-3.6.0.js": {
+      "sizeBytes": 288580,
+      "sha256": "1fe2bb5390a75e5d61e72c107cab528fc3c29a837d69aab7d200e1dbb5dcd239"
+    },
+    "help/fr/_static/jquery-3.5.1.js": {
+      "sizeBytes": 287630,
+      "sha256": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37"
+    },
+    "help/fr/_static/base-stemmer.js": {
+      "sizeBytes": 8133,
+      "sha256": "a75c8351f2274975d610d2c4627def2050e32f0943b7e3ec45858f5d0cae909e"
+    },
+    "help/fr/_static/_sphinx_javascript_frameworks_compat.js": {
+      "sizeBytes": 4418,
+      "sha256": "2f1e30341b31300bdc3af29ee4a64e0f40ed15492345387bb47542d9b9b4813c"
+    },
+    "help/fr/_static/underscore.js": {
+      "sizeBytes": 19530,
+      "sha256": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
+    },
+    "help/fr/_static/bullet_orange.png": {
+      "sizeBytes": 165,
+      "sha256": "90539037546bffe1fb30172419cecb4c558d19457897dee96c18e05d1305eabf"
+    },
+    "help/fr/_static/underscore-1.13.1.js": {
+      "sizeBytes": 68420,
+      "sha256": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+    },
+    "help/fr/_static/basic.css": {
+      "sizeBytes": 16130,
+      "sha256": "1e18416cb7b1e1745cdb1d79136584f35d1964a2b54feb80f374895365259412"
+    },
+    "help/fr/_static/searchtools.js": {
+      "sizeBytes": 17088,
+      "sha256": "306bb4ed7f0208f81bea031e26b9bf893360fe072a1707b04b3097dbed5d58ff"
+    },
+    "help/fr/_static/pygments.css": {
+      "sizeBytes": 4919,
+      "sha256": "f39056c9bbd9ef5700948e6eab0344473a1f8e500222a3e562f4039a4295336a"
+    },
+    "help/fr/_static/translations.js": {
+      "sizeBytes": 4311,
+      "sha256": "de4df5f2d9d1a6768a9ed68a603c98bb078cbdabd44f72c349db0e3e853b7c79"
+    },
+    "help/fr/_static/french-stemmer.js": {
+      "sizeBytes": 42080,
+      "sha256": "cddd378786ab5753ac9392b9050623ac0feb7fc2a7ec4f59507c7bf3c630a4b8"
+    },
+    "help/fr/_static/haiku.css": {
+      "sizeBytes": 7088,
+      "sha256": "e036ac04cbee0b0a3c447557998d8bc2ea2b5957a58d3d74a40f692cf7f56e8f"
+    },
+    "help/fr/_static/doctools.js": {
+      "sizeBytes": 8171,
+      "sha256": "2985f25f79e5ddcd1ed494ca63fc85f215f79e0cd156e622ce2bf3cf2cd9445f"
+    },
+    "help/fr/_static/language_data.js": {
+      "sizeBytes": 17035,
+      "sha256": "59a897e011bc5cee544ea787eb1ddbfb3282b0463d4177c04c506c8468604181"
+    },
+    "help/fr/_static/file.png": {
+      "sizeBytes": 286,
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+    },
+    "help/fr/_static/alert_warning_32.png": {
+      "sizeBytes": 944,
+      "sha256": "e5c26075414392fb54dead9ef7a62ab249af3b180bdcbe136c849ef831d0ce83"
+    },
+    "help/fr/_static/jquery.js": {
+      "sizeBytes": 89501,
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+    },
+    "help/fr/_static/alert_info_32.png": {
+      "sizeBytes": 1128,
+      "sha256": "9808d822ceeabc176bbed33a857d1b7edaf6bb2349ac58c8f14efdc5dfd72f1a"
+    },
+    "help/en/_sources/index.rst.txt": {
+      "sizeBytes": 1241,
+      "sha256": "3b830c158985a5429b36d9176fc7d84978bde8b36387ce938bc30f8ee2e48c52"
+    },
+    "help/en/_sources/folders.rst.txt": {
+      "sizeBytes": 2990,
+      "sha256": "fa5f5285d20aa419590ae9fdb4710d5e5203165b9ae6d82b761bd3861ccf156c"
+    },
+    "help/en/_sources/reprioritize.rst.txt": {
+      "sizeBytes": 1785,
+      "sha256": "f22dd26d4b7bb4755fc923132123b0808778f13244af6240b1eee030a7248d15"
+    },
+    "help/en/_sources/preferences.rst.txt": {
+      "sizeBytes": 3945,
+      "sha256": "0b627a73b7d3ec42419ce74c57cba07c92fec2ae1a1c1ea914518566c9e96117"
+    },
+    "help/en/_sources/changelog.rst.txt": {
+      "sizeBytes": 39473,
+      "sha256": "12b06ccd4caf9694b1300568ff2d7be3e91c429a1919b50c7f60fc3c5b248334"
+    },
+    "help/en/_sources/results.rst.txt": {
+      "sizeBytes": 12101,
+      "sha256": "35009199052d0ee872080d0326b766dc15b3c186f1179de14c1038f744cb22dd"
+    },
+    "help/en/_sources/quick_start.rst.txt": {
+      "sizeBytes": 952,
+      "sha256": "d84b7470263d17cd59a1f4f3d60a9c23d8992fccf649e53b62f6bc00b295c628"
+    },
+    "help/en/_sources/contribute.rst.txt": {
+      "sizeBytes": 5272,
+      "sha256": "e9e6b9d71a81290799d9aff6fcf1512528131b7e6f658468ffe11d6d5f979855"
+    },
+    "help/en/_sources/scan.rst.txt": {
+      "sizeBytes": 8963,
+      "sha256": "651327318ddb4c8258133714c7d625e52cfed7a265b8055b6b69642cd4691774"
+    },
+    "help/en/_sources/faq.rst.txt": {
+      "sizeBytes": 9279,
+      "sha256": "50ebff7fc24882516e1120ab1536eed21cb167e3faf859d5914c76f7c0724951"
+    },
+    "help/en/.doctrees/scan.doctree": {
+      "sizeBytes": 39084,
+      "sha256": "7a35e6b526959da78a260af5ecab8a4f9a6e869368d7d31d8befca4b162fbc7b"
+    },
+    "help/en/.doctrees/reprioritize.doctree": {
+      "sizeBytes": 6327,
+      "sha256": "fa23a19ba8f308c9214f295818af14aa6319abdac5f721b342167b20f0427625"
+    },
+    "help/en/.doctrees/quick_start.doctree": {
+      "sizeBytes": 6522,
+      "sha256": "c4184ae7845e7b18a42b7b12522fa2364c4bef20be54b459972351f3802cdf0b"
+    },
+    "help/en/.doctrees/contribute.doctree": {
+      "sizeBytes": 22770,
+      "sha256": "e079d801330295f923e07dc0b36a66b2e6f5b5fcc82c35dd393f76b3c77f14f5"
+    },
+    "help/en/.doctrees/preferences.doctree": {
+      "sizeBytes": 24931,
+      "sha256": "e2bd51f500059dd10a059967f55cde2505f872804fed9691e8b1408d53020f13"
+    },
+    "help/en/.doctrees/changelog.doctree": {
+      "sizeBytes": 236955,
+      "sha256": "44f23ea5716c26caf03305b2cef6bca969a7a60e1adeec67a27c0f6257b8496e"
+    },
+    "help/en/.doctrees/environment.pickle": {
+      "sizeBytes": 184863,
+      "sha256": "245eb527e1ed25b186bb90a3fb91da492f3eb68b462ffc906b5eb89c7b5f19c0"
+    },
+    "help/en/.doctrees/folders.doctree": {
+      "sizeBytes": 16366,
+      "sha256": "c5d7ebbd11df37e126b5c720ccb10fade0280baac1bb8946fea0d89e08c89078"
+    },
+    "help/en/.doctrees/results.doctree": {
+      "sizeBytes": 53177,
+      "sha256": "2e5522960321727de6afeee3372d3059a29797b1d26a3eb0946db56fadcd3704"
+    },
+    "help/en/.doctrees/index.doctree": {
+      "sizeBytes": 8797,
+      "sha256": "29073e6fab1ff57b4559aae27aba4c75ddcadb4d9854ad41591d0e425e5f5acc"
+    },
+    "help/en/.doctrees/faq.doctree": {
+      "sizeBytes": 48025,
+      "sha256": "e44986c390179b773984b678c6379f9615c1efb2364323295d7ca92b77778e40"
+    },
+    "help/en/_static/bg-page.png": {
+      "sizeBytes": 82,
+      "sha256": "634f1cba7415d17dc6849a139f7c3a37b672ce9df5487baf1557f7a1fcd0bca4"
+    },
+    "help/en/_static/documentation_options.js": {
+      "sizeBytes": 434,
+      "sha256": "7551fb31eba87d5e60a41f3b4457bea5380ce89bf7bdceea8c2c139f3c629778"
+    },
+    "help/en/_static/plus.png": {
+      "sizeBytes": 90,
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+    },
+    "help/en/_static/minus.png": {
+      "sizeBytes": 90,
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+    },
+    "help/en/_static/jquery-3.6.0.js": {
+      "sizeBytes": 288580,
+      "sha256": "1fe2bb5390a75e5d61e72c107cab528fc3c29a837d69aab7d200e1dbb5dcd239"
+    },
+    "help/en/_static/jquery-3.5.1.js": {
+      "sizeBytes": 287630,
+      "sha256": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37"
+    },
+    "help/en/_static/_sphinx_javascript_frameworks_compat.js": {
+      "sizeBytes": 4418,
+      "sha256": "2f1e30341b31300bdc3af29ee4a64e0f40ed15492345387bb47542d9b9b4813c"
+    },
+    "help/en/_static/underscore.js": {
+      "sizeBytes": 19530,
+      "sha256": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
+    },
+    "help/en/_static/bullet_orange.png": {
+      "sizeBytes": 165,
+      "sha256": "90539037546bffe1fb30172419cecb4c558d19457897dee96c18e05d1305eabf"
+    },
+    "help/en/_static/underscore-1.13.1.js": {
+      "sizeBytes": 68420,
+      "sha256": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+    },
+    "help/en/_static/basic.css": {
+      "sizeBytes": 16130,
+      "sha256": "1e18416cb7b1e1745cdb1d79136584f35d1964a2b54feb80f374895365259412"
+    },
+    "help/en/_static/searchtools.js": {
+      "sizeBytes": 17088,
+      "sha256": "306bb4ed7f0208f81bea031e26b9bf893360fe072a1707b04b3097dbed5d58ff"
+    },
+    "help/en/_static/pygments.css": {
+      "sizeBytes": 4919,
+      "sha256": "f39056c9bbd9ef5700948e6eab0344473a1f8e500222a3e562f4039a4295336a"
+    },
+    "help/en/_static/haiku.css": {
+      "sizeBytes": 7088,
+      "sha256": "e036ac04cbee0b0a3c447557998d8bc2ea2b5957a58d3d74a40f692cf7f56e8f"
+    },
+    "help/en/_static/doctools.js": {
+      "sizeBytes": 8171,
+      "sha256": "2985f25f79e5ddcd1ed494ca63fc85f215f79e0cd156e622ce2bf3cf2cd9445f"
+    },
+    "help/en/_static/language_data.js": {
+      "sizeBytes": 4957,
+      "sha256": "4cd3112cf96671d615280aceb56bf40e8c7d237a0a3c91bcf748fceb77c7126e"
+    },
+    "help/en/_static/file.png": {
+      "sizeBytes": 286,
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+    },
+    "help/en/_static/alert_warning_32.png": {
+      "sizeBytes": 944,
+      "sha256": "e5c26075414392fb54dead9ef7a62ab249af3b180bdcbe136c849ef831d0ce83"
+    },
+    "help/en/_static/jquery.js": {
+      "sizeBytes": 89501,
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+    },
+    "help/en/_static/alert_info_32.png": {
+      "sizeBytes": 1128,
+      "sha256": "9808d822ceeabc176bbed33a857d1b7edaf6bb2349ac58c8f14efdc5dfd72f1a"
+    },
+    "help/en/developer/index.html": {
+      "sizeBytes": 13678,
+      "sha256": "b6ea4497a91b7896985db9f6483204b8070a3c19680b7714249f6631a8900286"
+    },
+    "help/en/developer/hscommon/desktop.html": {
+      "sizeBytes": 7957,
+      "sha256": "773a2a70c400905f6ac5b5fb497eb1ec53a0cf3ef532e989ea02330b165c09c2"
+    },
+    "help/en/developer/hscommon/notify.html": {
+      "sizeBytes": 9290,
+      "sha256": "767777e5ad31b8d0ba3db4d3550b27e33478bf34486c1d385bd16c67093d0dd1"
+    },
+    "help/en/developer/hscommon/build.html": {
+      "sizeBytes": 13197,
+      "sha256": "7dddde6078e6f480e89cdc5255acf0edf3abf5db8f4ac7ba4b7e420dc32ed532"
+    },
+    "help/en/developer/hscommon/util.html": {
+      "sizeBytes": 36940,
+      "sha256": "2ebd1542a05c5af449700c5fc1763f48fb508a5dd41392717b004fee643811a7"
+    },
+    "help/en/developer/hscommon/path.html": {
+      "sizeBytes": 4932,
+      "sha256": "a18fea59b38f0914a03295f800b5ddbd1b6b2d47e628f55177296289f519715a"
+    },
+    "help/en/developer/hscommon/conflict.html": {
+      "sizeBytes": 8928,
+      "sha256": "01b745c5408404b54884de8cfa4beb1a9691e9aae519aba7e616c0f6aad4c42f"
+    },
+    "help/en/developer/hscommon/index.html": {
+      "sizeBytes": 4309,
+      "sha256": "a1236d5e4608e14a5441ea848bb18a923d91992741b6416a0ff6244a1587b97f"
+    },
+    "help/en/developer/core/engine.html": {
+      "sizeBytes": 25535,
+      "sha256": "2a65846bd1ce29c618a393d3bd5317fba551aeecf512f8ef5049199bacd72c90"
+    },
+    "help/en/developer/core/fs.html": {
+      "sizeBytes": 12962,
+      "sha256": "aa55cf9731638b149f06dd2a81db52baa8088d1a601e138151f4bf71561c2e69"
+    },
+    "help/en/developer/core/directories.html": {
+      "sizeBytes": 14779,
+      "sha256": "bf7b9c3a03df5345d69c2449e52a0edaf7859487a3bccfa8087fcda3918212cc"
+    },
+    "help/en/developer/core/results.html": {
+      "sizeBytes": 15647,
+      "sha256": "023df8f8dad0b4607c3c529a8ab95399d82a9334053607bfda54084a95aaaaf9"
+    },
+    "help/en/developer/core/index.html": {
+      "sizeBytes": 3522,
+      "sha256": "b60a25f3fd2c8e70873ec9fdd6492547c753b0e93cd818e13793883d4612a058"
+    },
+    "help/en/developer/core/app.html": {
+      "sizeBytes": 30075,
+      "sha256": "0295d033854eb387d796fc15566a250fb44ca6dda4a20a48f35f7978c427c166"
+    },
+    "help/en/developer/core/gui/deletion_options.html": {
+      "sizeBytes": 12149,
+      "sha256": "14f53810f782bc11b2729396d74a3cb9e20d9cf5dca251e70157ba6d1501ab5b"
+    },
+    "help/en/developer/core/gui/index.html": {
+      "sizeBytes": 4183,
+      "sha256": "a1c6a2904602895b9b9c4c41a1bca59ad12bc0cb3a75ee358f4837a695cfa555"
+    },
+    "help/en/developer/hscommon/jobprogress/performer.html": {
+      "sizeBytes": 4916,
+      "sha256": "fca177e3559ae41d6709947ee5a371f6f3ff615b9fb9795cbb57bd5cd40df605"
+    },
+    "help/en/developer/hscommon/jobprogress/job.html": {
+      "sizeBytes": 16206,
+      "sha256": "d46d8494676b4d1ffc0ae55c6203ec1fa67fcadd926d895b15729c3fb5808e50"
+    },
+    "help/en/developer/hscommon/gui/table.html": {
+      "sizeBytes": 52268,
+      "sha256": "f017737d346d006ef86c207adb415dcf9aaf2f329f2507d17cb937cbec03eacd"
+    },
+    "help/en/developer/hscommon/gui/column.html": {
+      "sizeBytes": 41861,
+      "sha256": "0fcdfba52c60a0e650d68ce518ecd24998d5fb95a7f99a982a32f2887fb6fc6f"
+    },
+    "help/en/developer/hscommon/gui/text_field.html": {
+      "sizeBytes": 15086,
+      "sha256": "72fb4fe1dc266e7d538317e24443e7046da90b90ac00987abbda0917e411782c"
+    },
+    "help/en/developer/hscommon/gui/tree.html": {
+      "sizeBytes": 21981,
+      "sha256": "d5796fc055884c01b3c6e5830943b8df4707c6983d5b75982e09e0ebc3f8b4a7"
+    },
+    "help/en/developer/hscommon/gui/base.html": {
+      "sizeBytes": 9225,
+      "sha256": "6689a9c33c00a9d7098c0a6458024349a56d03cd2ff718565a47658ec02edbb1"
+    },
+    "help/en/developer/hscommon/gui/progress_window.html": {
+      "sizeBytes": 19868,
+      "sha256": "bdb189a0698d039fac11d3c235fbbef70c20321a61a44f0dfd24d5efc252eb80"
+    },
+    "help/en/developer/hscommon/gui/selectable_list.html": {
+      "sizeBytes": 20782,
+      "sha256": "7948e389d1680ccdcec94d027f161e461f0438cfecd6f6e6403acae676983808"
+    },
+    "help/en/.doctrees/developer/index.doctree": {
+      "sizeBytes": 22229,
+      "sha256": "8b7e8ee59dbc5036ef94ae5291e116278e9b85706702253c9cff0c720874df1c"
+    },
+    "help/en/.doctrees/developer/hscommon/build.doctree": {
+      "sizeBytes": 33058,
+      "sha256": "c30b79d0af52a7f2fc778fed75de878312a9619daa0765640bb88da1f5d04966"
+    },
+    "help/en/.doctrees/developer/hscommon/util.doctree": {
+      "sizeBytes": 94617,
+      "sha256": "c940d4e39ea35565ad0de74f14728bb2c3a2c89d0a0f5dcc96dd19403ab19062"
+    },
+    "help/en/.doctrees/developer/hscommon/desktop.doctree": {
+      "sizeBytes": 16966,
+      "sha256": "7bb28230256b2e3028cef89a137204de0d820f2cb76d6efd7f3e0ae7427b8a87"
+    },
+    "help/en/.doctrees/developer/hscommon/index.doctree": {
+      "sizeBytes": 3290,
+      "sha256": "603fa6545b75ae0ab9a9e85610e506336ed90fa4ac8ceb0a5f7b5ceeee532d28"
+    },
+    "help/en/.doctrees/developer/hscommon/notify.doctree": {
+      "sizeBytes": 20876,
+      "sha256": "d892e0a6d9631a5ebed084f7886b33373c2de1a5b374225d3d1ea33a4371d191"
+    },
+    "help/en/.doctrees/developer/hscommon/path.doctree": {
+      "sizeBytes": 7927,
+      "sha256": "8f84612c2253a6ff46bb0ee3abb93dd2ed94ac370d1f4ca1a5c5331f9b78b2cb"
+    },
+    "help/en/.doctrees/developer/hscommon/conflict.doctree": {
+      "sizeBytes": 20086,
+      "sha256": "14f73322bd859c8760f5cfcdd85f2cd6b9a35fb8a40be368e9e4caa289bc6945"
+    },
+    "help/en/.doctrees/developer/core/engine.doctree": {
+      "sizeBytes": 65170,
+      "sha256": "ab0322c12be10026e74abbfb50519e9b90f0d86e00215f1e4019d64697b0cdc6"
+    },
+    "help/en/.doctrees/developer/core/app.doctree": {
+      "sizeBytes": 79338,
+      "sha256": "5d9345524bf72fd2c9d3b66b02e56bd8c55eb716ef323bdf40131f8e4a567e95"
+    },
+    "help/en/.doctrees/developer/core/directories.doctree": {
+      "sizeBytes": 38206,
+      "sha256": "cbaccb728c73bc169dfea78f7ee259c96e4204e2c51087f57b1b4f7e9186cb7b"
+    },
+    "help/en/.doctrees/developer/core/results.doctree": {
+      "sizeBytes": 40032,
+      "sha256": "e85fd326ed8eafca43b3b3f7c6061bb43aa0c909481ee306777c0765deefc0f5"
+    },
+    "help/en/.doctrees/developer/core/index.doctree": {
+      "sizeBytes": 2880,
+      "sha256": "327d64272bf0bffc6a147a3561e9e66647e9c3cbd1a73ba6462d4d170ed114c1"
+    },
+    "help/en/.doctrees/developer/core/fs.doctree": {
+      "sizeBytes": 30577,
+      "sha256": "cfaf175fe1d366f0a297d60b9d1abf33e6a52f07f934394ae3d9f8ffacdc5ba4"
+    },
+    "help/en/.doctrees/developer/core/gui/deletion_options.doctree": {
+      "sizeBytes": 28681,
+      "sha256": "50de49b01f53be41d2345552e4c982b0e245af72e1397ab20f0b8d5020abafae"
+    },
+    "help/en/.doctrees/developer/core/gui/index.doctree": {
+      "sizeBytes": 6930,
+      "sha256": "7860fb851d0dbbc8396f1778acd128c38427ae6ca85fcd7c9c60adc383f43e79"
+    },
+    "help/en/.doctrees/developer/hscommon/jobprogress/job.doctree": {
+      "sizeBytes": 42710,
+      "sha256": "458440f5b3ab7edf8fcc7c22215c80ddffc3a9808c29f0f4385414c4fbbc2959"
+    },
+    "help/en/.doctrees/developer/hscommon/jobprogress/performer.doctree": {
+      "sizeBytes": 9663,
+      "sha256": "aa04a3a0db65347c0dcb27948c998f894b3b18a4b2ddce444da7f8ebccff965e"
+    },
+    "help/en/.doctrees/developer/hscommon/gui/column.doctree": {
+      "sizeBytes": 113276,
+      "sha256": "2616066d2f795108726fe4a3a2f5a8170bb0e35f621f3bddf04f057d97b585ca"
+    },
+    "help/en/.doctrees/developer/hscommon/gui/progress_window.doctree": {
+      "sizeBytes": 50349,
+      "sha256": "35369d8dcc14d43b8cc55eee99a53806bfc6c7668ff672bc656070aa4e330e1e"
+    },
+    "help/en/.doctrees/developer/hscommon/gui/base.doctree": {
+      "sizeBytes": 20675,
+      "sha256": "16aa528b39c409c1045dfe7418a6213d0131dc32636f3dbd7cf25f22e311aa90"
+    },
+    "help/en/.doctrees/developer/hscommon/gui/text_field.doctree": {
+      "sizeBytes": 35015,
+      "sha256": "d7696fd20c52d06311114c58d86188cfff0342926230a25716ddb9934de0b144"
+    },
+    "help/en/.doctrees/developer/hscommon/gui/selectable_list.doctree": {
+      "sizeBytes": 52620,
+      "sha256": "5ff0d3c8c708238d04104726c19a760731639bfa8bf1248f8509498a60d56d4f"
+    },
+    "help/en/.doctrees/developer/hscommon/gui/table.doctree": {
+      "sizeBytes": 138721,
+      "sha256": "a4ad124043f72d2d21c584bd0f3d7fce453a8826bd63e8c982548093ac52da40"
+    },
+    "help/en/.doctrees/developer/hscommon/gui/tree.doctree": {
+      "sizeBytes": 57149,
+      "sha256": "f89a1aa8a2fdc298040c06bb33578f6ee7a5d59c0985df749b08ff5abdaa7387"
+    },
+    "help/en/_sources/developer/index.rst.txt": {
+      "sizeBytes": 3361,
+      "sha256": "a4d86f874826a746ad88348bcc47124a34a874b8597e3aa2339c896125987f5a"
+    },
+    "help/en/_sources/developer/hscommon/index.rst.txt": {
+      "sizeBytes": 174,
+      "sha256": "febe78cab36e6549ab88ba73a1a84b16bf5b425a0bafa9b4b7e37aebce79f8d6"
+    },
+    "help/en/_sources/developer/hscommon/path.rst.txt": {
+      "sizeBytes": 78,
+      "sha256": "154f24e440354733e57f7ab4f141cfdc6e64f37f436f44fda9d32c40d0a14768"
+    },
+    "help/en/_sources/developer/hscommon/build.rst.txt": {
+      "sizeBytes": 81,
+      "sha256": "352e920ec2aea4f212770f09d2cbfc7ffb129bab7c71d67c475562d7f3ed019c"
+    },
+    "help/en/_sources/developer/hscommon/notify.rst.txt": {
+      "sizeBytes": 84,
+      "sha256": "2485e82f51bc104268c32d42ca442af995af62625e950f25066fa13af8aa2c93"
+    },
+    "help/en/_sources/developer/hscommon/util.rst.txt": {
+      "sizeBytes": 78,
+      "sha256": "6344dc75d566874eb07f89c2e97386b048a3c08339b6fd86329ffa3a14d968f0"
+    },
+    "help/en/_sources/developer/hscommon/desktop.rst.txt": {
+      "sizeBytes": 87,
+      "sha256": "35d281dfccb520deff5374e156ecb7c3dd8520fc407a46b4b2a32dcc26d00a78"
+    },
+    "help/en/_sources/developer/hscommon/conflict.rst.txt": {
+      "sizeBytes": 90,
+      "sha256": "4bbde91fa885f70ae69618c0d898119dcd6b922e3cf86972e0d21f722d9fee45"
+    },
+    "help/en/_sources/developer/core/index.rst.txt": {
+      "sizeBytes": 126,
+      "sha256": "ada0425d7d63324b7853c54ae61a7c8b9c0d75e2a7c7daf72a4c6f64f9e5b62a"
+    },
+    "help/en/_sources/developer/core/fs.rst.txt": {
+      "sizeBytes": 60,
+      "sha256": "6c914f816a85d81f9cf0597bfa7fac3ccbe49b6cd5efced6e369dba01cc952f4"
+    },
+    "help/en/_sources/developer/core/results.rst.txt": {
+      "sizeBytes": 75,
+      "sha256": "a5f853e9e85e01fa3f185a072ec4f0ccc01e8106ae81eded16010771350b7b9a"
+    },
+    "help/en/_sources/developer/core/engine.rst.txt": {
+      "sizeBytes": 1345,
+      "sha256": "f89a0f52e5440e4825ef6c1c72637f1033328734b9f53c877dd8540f4b90e3f5"
+    },
+    "help/en/_sources/developer/core/directories.rst.txt": {
+      "sizeBytes": 87,
+      "sha256": "4a198f7f2146b30fe9a22a6f9f057d2c6c127d8102d28c2c0eefe02b0cdc35bf"
+    },
+    "help/en/_sources/developer/core/app.rst.txt": {
+      "sizeBytes": 63,
+      "sha256": "dda266b81e2140a3b1a93d7bb652e0304c9f28b750ef58dfb23ee3ceeb9e4e8e"
+    },
+    "help/en/_sources/developer/core/gui/index.rst.txt": {
+      "sizeBytes": 125,
+      "sha256": "97c23d2b7b9c6b40d07c6e4f95257ce007e01b1e13df910a4548f934b4cc2d68"
+    },
+    "help/en/_sources/developer/core/gui/deletion_options.rst.txt": {
+      "sizeBytes": 114,
+      "sha256": "5df33aff6107e83da87da58e1ae66658964efc460aeefdd0405bc0d5ad364710"
+    },
+    "help/en/_sources/developer/hscommon/jobprogress/performer.rst.txt": {
+      "sizeBytes": 246,
+      "sha256": "267cd6d04b452f5c4d942ad260725ef1fec87452d97ca582e174eb6bf40e4009"
+    },
+    "help/en/_sources/developer/hscommon/jobprogress/job.rst.txt": {
+      "sizeBytes": 287,
+      "sha256": "f44f30f10f5739ec3a25f3064cc677f1b598851546a8d7e735b3d8a5fb9a53ff"
+    },
+    "help/en/_sources/developer/hscommon/gui/column.rst.txt": {
+      "sizeBytes": 488,
+      "sha256": "95f29201bfc72fd50915d1dc870987678ac76b7ac8d51ccc9bf7a643ce5bed21"
+    },
+    "help/en/_sources/developer/hscommon/gui/selectable_list.rst.txt": {
+      "sizeBytes": 571,
+      "sha256": "5bec7518a9e8634a47c7ce20386bde56eeb1782e6e4fa312cc3eb7f1c76f34a2"
+    },
+    "help/en/_sources/developer/hscommon/gui/text_field.rst.txt": {
+      "sizeBytes": 306,
+      "sha256": "130a3b2a5d6637e9e4b7c3afc50bc9a7cf4289fedebbfd3aa1c974f0b2bc800b"
+    },
+    "help/en/_sources/developer/hscommon/gui/table.rst.txt": {
+      "sizeBytes": 473,
+      "sha256": "7a3439e1ce277022f7b85102cfe07986386747833b7127912994d5793ee60a32"
+    },
+    "help/en/_sources/developer/hscommon/gui/progress_window.rst.txt": {
+      "sizeBytes": 378,
+      "sha256": "3cd16ef39b9c249b05099899a2326b60fd4023d0942b5255f74b1b611ccb1779"
+    },
+    "help/en/_sources/developer/hscommon/gui/base.rst.txt": {
+      "sizeBytes": 210,
+      "sha256": "277fb91426e085aff53eadb68932011bce5e066d284bcc0cc68f3f5f0c89f657"
+    },
+    "help/en/_sources/developer/hscommon/gui/tree.rst.txt": {
+      "sizeBytes": 297,
+      "sha256": "e7b01300f69fe43e9a8e0289f1683c9a74244862357373dbc9966b35a50c53da"
+    },
+    "help/de/_sources/index.rst.txt": {
+      "sizeBytes": 1340,
+      "sha256": "fe51e7bc21cd50839731b65858cc6aeb5dbefad8d706baa78f1be1a682c2ba8a"
+    },
+    "help/de/_sources/folders.rst.txt": {
+      "sizeBytes": 2050,
+      "sha256": "42567cdd28a0a48784471b97d3dff92663c697b28c8fc89098f6d6b2f5882ad2"
+    },
+    "help/de/_sources/reprioritize.rst.txt": {
+      "sizeBytes": 1785,
+      "sha256": "342b1b095f3235a22f60ada9a2bbc7d5501a7ef53a053f52aee0c13dd47c1cde"
+    },
+    "help/de/_sources/preferences.rst.txt": {
+      "sizeBytes": 9603,
+      "sha256": "676c1568cf2436c96a3fd2ad9456ca58fcb661f025537c178f48a4404cc30fab"
+    },
+    "help/de/_sources/changelog.rst.txt": {
+      "sizeBytes": 39473,
+      "sha256": "12b06ccd4caf9694b1300568ff2d7be3e91c429a1919b50c7f60fc3c5b248334"
+    },
+    "help/de/_sources/results.rst.txt": {
+      "sizeBytes": 11205,
+      "sha256": "93141722806ff6f95bb7062f20758b719ad073c202709b4b5143bc4fc1e8ac7e"
+    },
+    "help/de/_sources/quick_start.rst.txt": {
+      "sizeBytes": 1100,
+      "sha256": "83f15845de74c2402001abf4fb702f94f6fd901f97df7c0c54f86eacd1b0bf64"
+    },
+    "help/de/_sources/faq.rst.txt": {
+      "sizeBytes": 9360,
+      "sha256": "973f2735534b381656a3617821413e5da6da2c0b66e7e416ff4b6d46dd118c93"
+    },
+    "help/de/.doctrees/reprioritize.doctree": {
+      "sizeBytes": 6327,
+      "sha256": "e0c12b0fc8458c38235ff40ddb7ec4c58c1251e0dbff2fb2eee4f0f78dfb74ce"
+    },
+    "help/de/.doctrees/quick_start.doctree": {
+      "sizeBytes": 6950,
+      "sha256": "34dc18c8c9879446a00013a521c0355089d917c9f4983beb53707df90c13824a"
+    },
+    "help/de/.doctrees/preferences.doctree": {
+      "sizeBytes": 41729,
+      "sha256": "9c1a1bfcce453c14124a80c9b2dfade61e4c9226d13daad0375331be417cdcc9"
+    },
+    "help/de/.doctrees/changelog.doctree": {
+      "sizeBytes": 236955,
+      "sha256": "73b265b865b9b33b123218401dff5d9a3b9f1e7c246753a79021a76ba23c0eab"
+    },
+    "help/de/.doctrees/environment.pickle": {
+      "sizeBytes": 176852,
+      "sha256": "a1389a02389565124611893a2e628b00ecb3a1ee0464f73f63d73d94cd0fac5d"
+    },
+    "help/de/.doctrees/folders.doctree": {
+      "sizeBytes": 11240,
+      "sha256": "07f4417a18de147dd0a313774c91096e46fa6efd57b934c0969efdfd79caa9a5"
+    },
+    "help/de/.doctrees/results.doctree": {
+      "sizeBytes": 45374,
+      "sha256": "52cb367c89ec1f2c2ee4beecf282b52ea387149f5b9102152dea97f5ca7c3b03"
+    },
+    "help/de/.doctrees/index.doctree": {
+      "sizeBytes": 7113,
+      "sha256": "58a8fd7b8b5cdad8541f715edf2f23d5b6ed0e911568bf85cc79bca12e2d445b"
+    },
+    "help/de/.doctrees/faq.doctree": {
+      "sizeBytes": 46591,
+      "sha256": "1554a8fee7e6ff3a2d43a44b776ac4f15db1195093b7cf2afda6a0bb1ced91a6"
+    },
+    "help/de/_static/bg-page.png": {
+      "sizeBytes": 82,
+      "sha256": "634f1cba7415d17dc6849a139f7c3a37b672ce9df5487baf1557f7a1fcd0bca4"
+    },
+    "help/de/_static/documentation_options.js": {
+      "sizeBytes": 434,
+      "sha256": "d203d8423ce10a47d432d9c2a8eeae7f1db4d836f060665d50c433892f70f0e5"
+    },
+    "help/de/_static/plus.png": {
+      "sizeBytes": 90,
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+    },
+    "help/de/_static/minus.png": {
+      "sizeBytes": 90,
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+    },
+    "help/de/_static/jquery-3.6.0.js": {
+      "sizeBytes": 288580,
+      "sha256": "1fe2bb5390a75e5d61e72c107cab528fc3c29a837d69aab7d200e1dbb5dcd239"
+    },
+    "help/de/_static/jquery-3.5.1.js": {
+      "sizeBytes": 287630,
+      "sha256": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37"
+    },
+    "help/de/_static/base-stemmer.js": {
+      "sizeBytes": 8133,
+      "sha256": "a75c8351f2274975d610d2c4627def2050e32f0943b7e3ec45858f5d0cae909e"
+    },
+    "help/de/_static/german-stemmer.js": {
+      "sizeBytes": 17647,
+      "sha256": "95ed717d7957a00d0291bab5429cfe80c2a098da36a37d4bc44ab272cb14de5b"
+    },
+    "help/de/_static/_sphinx_javascript_frameworks_compat.js": {
+      "sizeBytes": 4418,
+      "sha256": "2f1e30341b31300bdc3af29ee4a64e0f40ed15492345387bb47542d9b9b4813c"
+    },
+    "help/de/_static/underscore.js": {
+      "sizeBytes": 19530,
+      "sha256": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
+    },
+    "help/de/_static/bullet_orange.png": {
+      "sizeBytes": 165,
+      "sha256": "90539037546bffe1fb30172419cecb4c558d19457897dee96c18e05d1305eabf"
+    },
+    "help/de/_static/underscore-1.13.1.js": {
+      "sizeBytes": 68420,
+      "sha256": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+    },
+    "help/de/_static/basic.css": {
+      "sizeBytes": 16130,
+      "sha256": "1e18416cb7b1e1745cdb1d79136584f35d1964a2b54feb80f374895365259412"
+    },
+    "help/de/_static/searchtools.js": {
+      "sizeBytes": 17088,
+      "sha256": "306bb4ed7f0208f81bea031e26b9bf893360fe072a1707b04b3097dbed5d58ff"
+    },
+    "help/de/_static/pygments.css": {
+      "sizeBytes": 4919,
+      "sha256": "f39056c9bbd9ef5700948e6eab0344473a1f8e500222a3e562f4039a4295336a"
+    },
+    "help/de/_static/translations.js": {
+      "sizeBytes": 3594,
+      "sha256": "f97f3f979c27efc0f9b05bf1693b1a9a3ce7f0b3039c2f0af0d4bd264ab73ff3"
+    },
+    "help/de/_static/haiku.css": {
+      "sizeBytes": 7088,
+      "sha256": "e036ac04cbee0b0a3c447557998d8bc2ea2b5957a58d3d74a40f692cf7f56e8f"
+    },
+    "help/de/_static/doctools.js": {
+      "sizeBytes": 8171,
+      "sha256": "2985f25f79e5ddcd1ed494ca63fc85f215f79e0cd156e622ce2bf3cf2cd9445f"
+    },
+    "help/de/_static/language_data.js": {
+      "sizeBytes": 10782,
+      "sha256": "939631a4124d73bea61238730073d2effef44648a0f666d7b7aa656bca1345cb"
+    },
+    "help/de/_static/file.png": {
+      "sizeBytes": 286,
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+    },
+    "help/de/_static/alert_warning_32.png": {
+      "sizeBytes": 944,
+      "sha256": "e5c26075414392fb54dead9ef7a62ab249af3b180bdcbe136c849ef831d0ce83"
+    },
+    "help/de/_static/jquery.js": {
+      "sizeBytes": 89501,
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+    },
+    "help/de/_static/alert_info_32.png": {
+      "sizeBytes": 1128,
+      "sha256": "9808d822ceeabc176bbed33a857d1b7edaf6bb2349ac58c8f14efdc5dfd72f1a"
+    },
+    "help/uk/_sources/index.rst.txt": {
+      "sizeBytes": 2088,
+      "sha256": "7ebac726b579d9a8479f2f4e4ffa62ed539c284f76dac00374d789137f029d6c"
+    },
+    "help/uk/_sources/folders.rst.txt": {
+      "sizeBytes": 3306,
+      "sha256": "bf3104771537bf12d19393a4265708bff7affabee9291b87e737d2c275d9e4d2"
+    },
+    "help/uk/_sources/reprioritize.rst.txt": {
+      "sizeBytes": 3147,
+      "sha256": "eb59c46b7205e72f9ba56d54a1f9502009c51ff2034e7a3e44d90a71fed2ef49"
+    },
+    "help/uk/_sources/preferences.rst.txt": {
+      "sizeBytes": 15584,
+      "sha256": "2da6b3f14461ca6896624a3ef6be0a92cb2d916deea52bbfdbbde40545610462"
+    },
+    "help/uk/_sources/changelog.rst.txt": {
+      "sizeBytes": 39473,
+      "sha256": "12b06ccd4caf9694b1300568ff2d7be3e91c429a1919b50c7f60fc3c5b248334"
+    },
+    "help/uk/_sources/results.rst.txt": {
+      "sizeBytes": 18343,
+      "sha256": "6744a7357f046462d493329c5230897adafef13277e6571c18de27e7fdb71f33"
+    },
+    "help/uk/_sources/quick_start.rst.txt": {
+      "sizeBytes": 1736,
+      "sha256": "c8a1ad1444b851df0144f26faba8371208e72c2e34ba550dbe6ba4590ddabb0b"
+    },
+    "help/uk/_sources/faq.rst.txt": {
+      "sizeBytes": 14628,
+      "sha256": "9f467cc9246abd006d6a8407fb1829b2a1667c1dcff7a813b8be47eb83af5bb9"
+    },
+    "help/uk/.doctrees/reprioritize.doctree": {
+      "sizeBytes": 9031,
+      "sha256": "e0605a194ec553987881287dbbf9165f8da50d728af2d7f8fc00e0ffdead8553"
+    },
+    "help/uk/.doctrees/quick_start.doctree": {
+      "sizeBytes": 8314,
+      "sha256": "438e00aa66aa9b8dfe969450a3aa6f5b0ed8f5a064c0862f483a57174457e9d0"
+    },
+    "help/uk/.doctrees/preferences.doctree": {
+      "sizeBytes": 59341,
+      "sha256": "31e189c4286508fc663f8eb21a20a1168b961c1cd00234a1c9e1f46245e76f90"
+    },
+    "help/uk/.doctrees/changelog.doctree": {
+      "sizeBytes": 236869,
+      "sha256": "3d93227ef3a9f9d7d4dc85d2388d4e723aaeaec0766c26b630f327ac4e00283b"
+    },
+    "help/uk/.doctrees/environment.pickle": {
+      "sizeBytes": 211790,
+      "sha256": "16edc4cbe667e7744c5b98c68b70fd93716f393acf9e3cfb0968c49f3dac6b26"
+    },
+    "help/uk/.doctrees/folders.doctree": {
+      "sizeBytes": 14289,
+      "sha256": "4368e90e4395d57762107e3bfc8f2ef56fafc9ae873d73333769b94dda0a8d9b"
+    },
+    "help/uk/.doctrees/results.doctree": {
+      "sizeBytes": 64353,
+      "sha256": "0dccbd215aa0c13ae7e2ced0c73cb5cf1495c9086c3f42b563ebb42414e4bfd6"
+    },
+    "help/uk/.doctrees/index.doctree": {
+      "sizeBytes": 9083,
+      "sha256": "fedd092297a553505cb9aff40c22a4711e89089d15e485fc4d47eeda3236aeb4"
+    },
+    "help/uk/.doctrees/faq.doctree": {
+      "sizeBytes": 59964,
+      "sha256": "0738865f849b3051e9e3abdba4c850a8c0a93478e6aaebab9d84580f11fe14ef"
+    },
+    "help/uk/_static/bg-page.png": {
+      "sizeBytes": 82,
+      "sha256": "634f1cba7415d17dc6849a139f7c3a37b672ce9df5487baf1557f7a1fcd0bca4"
+    },
+    "help/uk/_static/documentation_options.js": {
+      "sizeBytes": 434,
+      "sha256": "e1019dae178749dc18689a0a76c66e6d92a1330622fc21f32ddbb9607951f6c8"
+    },
+    "help/uk/_static/plus.png": {
+      "sizeBytes": 90,
+      "sha256": "54115199b96a130cba02147c47c0deb43dcc9b9f08b5162bba8642b34980ac63"
+    },
+    "help/uk/_static/minus.png": {
+      "sizeBytes": 90,
+      "sha256": "47e7fc50db3699f1ca41ce9a2ffa202c00c5d1d5180c55f62ba859b1bd6cc008"
+    },
+    "help/uk/_static/jquery-3.6.0.js": {
+      "sizeBytes": 288580,
+      "sha256": "1fe2bb5390a75e5d61e72c107cab528fc3c29a837d69aab7d200e1dbb5dcd239"
+    },
+    "help/uk/_static/jquery-3.5.1.js": {
+      "sizeBytes": 287630,
+      "sha256": "416a3b2c3bf16d64f6b5b6d0f7b079df2267614dd6847fc2f3271b4409233c37"
+    },
+    "help/uk/_static/_sphinx_javascript_frameworks_compat.js": {
+      "sizeBytes": 4418,
+      "sha256": "2f1e30341b31300bdc3af29ee4a64e0f40ed15492345387bb47542d9b9b4813c"
+    },
+    "help/uk/_static/underscore.js": {
+      "sizeBytes": 19530,
+      "sha256": "218fb1c1fc72e9af6b866f430be2a67fa376392b4db2f4dbf32772671b6ae55c"
+    },
+    "help/uk/_static/bullet_orange.png": {
+      "sizeBytes": 165,
+      "sha256": "90539037546bffe1fb30172419cecb4c558d19457897dee96c18e05d1305eabf"
+    },
+    "help/uk/_static/underscore-1.13.1.js": {
+      "sizeBytes": 68420,
+      "sha256": "cc10f799cd0f6b65f95c4012445497e5ba3cb9f51964a9468940b27bde98b487"
+    },
+    "help/uk/_static/basic.css": {
+      "sizeBytes": 16130,
+      "sha256": "1e18416cb7b1e1745cdb1d79136584f35d1964a2b54feb80f374895365259412"
+    },
+    "help/uk/_static/searchtools.js": {
+      "sizeBytes": 17088,
+      "sha256": "306bb4ed7f0208f81bea031e26b9bf893360fe072a1707b04b3097dbed5d58ff"
+    },
+    "help/uk/_static/pygments.css": {
+      "sizeBytes": 4919,
+      "sha256": "f39056c9bbd9ef5700948e6eab0344473a1f8e500222a3e562f4039a4295336a"
+    },
+    "help/uk/_static/haiku.css": {
+      "sizeBytes": 7088,
+      "sha256": "e036ac04cbee0b0a3c447557998d8bc2ea2b5957a58d3d74a40f692cf7f56e8f"
+    },
+    "help/uk/_static/doctools.js": {
+      "sizeBytes": 8171,
+      "sha256": "2985f25f79e5ddcd1ed494ca63fc85f215f79e0cd156e622ce2bf3cf2cd9445f"
+    },
+    "help/uk/_static/language_data.js": {
+      "sizeBytes": 4957,
+      "sha256": "4cd3112cf96671d615280aceb56bf40e8c7d237a0a3c91bcf748fceb77c7126e"
+    },
+    "help/uk/_static/file.png": {
+      "sizeBytes": 286,
+      "sha256": "5c4bc9a16aebf38c4b950f59b8e501ca36495328cb9eb622218bce9064a35e3e"
+    },
+    "help/uk/_static/alert_warning_32.png": {
+      "sizeBytes": 944,
+      "sha256": "e5c26075414392fb54dead9ef7a62ab249af3b180bdcbe136c849ef831d0ce83"
+    },
+    "help/uk/_static/jquery.js": {
+      "sizeBytes": 89501,
+      "sha256": "ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e"
+    },
+    "help/uk/_static/alert_info_32.png": {
+      "sizeBytes": 1128,
+      "sha256": "9808d822ceeabc176bbed33a857d1b7edaf6bb2349ac58c8f14efdc5dfd72f1a"
+    },
+    "locale/ru/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1675,
+      "sha256": "4fc23d7a40a7aa4cf300b2a71cbfc1887a975721b572e52c20d0dac54b099d30"
+    },
+    "locale/ru/LC_MESSAGES/core.mo": {
+      "sizeBytes": 6608,
+      "sha256": "12327c3fea991ba635aa24eee77ed93f2ed9503b2471a7737858b0cecbdc4072"
+    },
+    "locale/ru/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 28716,
+      "sha256": "79e06892c26e0f6d935b4fe8a1e5704958dc6469027070654341d7cc1e88b71f"
+    },
+    "locale/ru/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 3667,
+      "sha256": "ada48589217e665dba396c63714f316bf0976b77c5c980fc9d3f7d7f7a2bd5b8"
+    },
+    "locale/zh_CN/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1227,
+      "sha256": "4ab327f469d5642d1a7165a668b7546add8c0d37498cf927e728e8d2a963a836"
+    },
+    "locale/zh_CN/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5055,
+      "sha256": "a732eec8b31c5c0693d0cc2ae9573c497a34bd57123a3e23e2a4265a60592ddb"
+    },
+    "locale/zh_CN/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 20186,
+      "sha256": "aa8ba81df4711bbc67647546ddd10ab65cb2a8dd28c5ea5cb85c7634abc664cb"
+    },
+    "locale/zh_CN/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2652,
+      "sha256": "c28e1e9ca362866ace2ab8f41838bfc21618ca623bbf41c9d6ea66a90b5b18f2"
+    },
+    "locale/nl/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1226,
+      "sha256": "fabaf323e5b69fb1bcda72a56747ff5b4562004e7a4942e8862bc35c6e30030a"
+    },
+    "locale/nl/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5179,
+      "sha256": "8b0bba74fe6e2c06c7b63f88efd53ba4ceeeccf952040d91db8c08ddd7a34658"
+    },
+    "locale/nl/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 21409,
+      "sha256": "ab41a79749e8c478c86ff7ad0759428de69518c02108b63dc1eefc8e566bcb99"
+    },
+    "locale/nl/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2686,
+      "sha256": "da5b6de2b7ee358565ae99959e20c346e16fc38f2f64e0a8ea53d81376affc01"
+    },
+    "locale/zh_TW/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1249,
+      "sha256": "8e53770237c9c426c96bd7126cd2f3a1a3eb92b2c11c7a1449e71b8a5e3ea17d"
+    },
+    "locale/zh_TW/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5059,
+      "sha256": "5cfeaa56b7edd2cab5d1cd17740e03685f788627ded2f2fc7b8203c7bb37218d"
+    },
+    "locale/zh_TW/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 20193,
+      "sha256": "6ad80943b174036cbe673eee394e2c3dcebd097d85b6a85deeb02fc806015bcd"
+    },
+    "locale/zh_TW/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 264,
+      "sha256": "b9bad5ed2dc9ec27983a2ec89646ea4a8147eac415e8322e49b81a8d60e9dca2"
+    },
+    "locale/pl_PL/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1428,
+      "sha256": "b83fc35865c90e9e1139fb267311ffb6b2a4db354642d0970cd99accabba9ace"
+    },
+    "locale/pl_PL/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5141,
+      "sha256": "68498c0e94bde8668c41437b770d05bbc4b061d9f0d9443f29fcd602343e3632"
+    },
+    "locale/pl_PL/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 21396,
+      "sha256": "5e4b1de637b389150929fe963ee2aa1090bf8ae5f136b289700eb0f5f6980e56"
+    },
+    "locale/pl_PL/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2846,
+      "sha256": "6cd3128452ef66e83b6d6722f96feab947990b4d509a408f0c0923c9caf10339"
+    },
+    "locale/ja/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1363,
+      "sha256": "162956be0727bb37c4a964dd1dc46a44de6ac0ff247336e6400e170980ce743a"
+    },
+    "locale/ja/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5779,
+      "sha256": "4d3729da361c4b25ecbd8ac47b23894fbcaba42201fca8e5fe245f0764e3dc63"
+    },
+    "locale/ja/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 23331,
+      "sha256": "5bbfd0e95ce4cb86dbe0d701192c5efe73f8786e132748827402e54a5961ec75"
+    },
+    "locale/ja/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 3053,
+      "sha256": "1e94b42c581ceb9465260017aefe17ce70dc8495120249243409a11e9b6c0a3e"
+    },
+    "locale/ms/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1258,
+      "sha256": "ad29e72aa1067a5f440025681d21dbc59c8973b476b1016c76b80527a7a720ee"
+    },
+    "locale/ms/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5344,
+      "sha256": "88d22941f5c11abe7d1a323dac568f69c9a7b5883eebb297267bd5cdaac8aa95"
+    },
+    "locale/ms/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 22356,
+      "sha256": "76364de95c91552b23e9f2f829e6359e482c1e157b61f71641c8f718741dcf1c"
+    },
+    "locale/ms/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2630,
+      "sha256": "9583b17d8f89500f82f6291fecf5baa6e19cf5085fdfe1d15302bb0eed5f1137"
+    },
+    "locale/hy/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1446,
+      "sha256": "b52617c3af416f29fa6433a44ef082908b8f79220d674d666e5d9ca64b46905f"
+    },
+    "locale/hy/LC_MESSAGES/core.mo": {
+      "sizeBytes": 6376,
+      "sha256": "7499b5ea230ba52a9b35c7721c8abd98bfad439d074563984ebd12339b850373"
+    },
+    "locale/hy/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 17770,
+      "sha256": "ea039f82353d6886151e17d9c22cff786e0bfca3c68770838a085937e4fa88b8"
+    },
+    "locale/hy/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 3454,
+      "sha256": "05b7e04a4a75ccfaa5a279b621d01e6d53a602460aea7354e966f6ae930cdc60"
+    },
+    "locale/fr/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1213,
+      "sha256": "5b6a47a881a2e1b1fe71ab6ca298c78f8935d5c92743bb001931609467107268"
+    },
+    "locale/fr/LC_MESSAGES/core.mo": {
+      "sizeBytes": 4959,
+      "sha256": "5b4aee4817a207832d1b4cfe7968c9e9a04ca116b2aaed9a598874f228d93348"
+    },
+    "locale/fr/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 21609,
+      "sha256": "5b337a4ae231cfbe7c8af81038918003ea5ae80bc5663215adab53ce81467a58"
+    },
+    "locale/fr/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2708,
+      "sha256": "ca8741b64ac8a9781a7216567c547f26f70ee045ffe3d7a86787002c10da2b8d"
+    },
+    "locale/es/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1286,
+      "sha256": "adbd14b74997455a7dea1db484b56984c3afd01b2e7cfa04a18ac4179f98bd8a"
+    },
+    "locale/es/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5438,
+      "sha256": "abc49c92e1bce2de5d0bb0a97e7c2e946f0a3a936a166b703361d6feecd143e7"
+    },
+    "locale/es/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 23108,
+      "sha256": "53a90acef36b739852512a247857559c167219931964eb2c599fc93aeed73b56"
+    },
+    "locale/es/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2677,
+      "sha256": "2c0bc2c95e1ee62e5109bb0efedd661f9dc01590c224bb67b3e9ffad9521b64b"
+    },
+    "locale/tr/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1251,
+      "sha256": "e072fe3e2bf8db9ee452c2ef21aea6e689d4baec17f3091c806e98fba1ff5908"
+    },
+    "locale/tr/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5144,
+      "sha256": "6e38226734f11d539d92473dc5ea6468e8ca948aa42e0991033b9c859ed24e36"
+    },
+    "locale/tr/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 22237,
+      "sha256": "2af0011a5764872f6512df59d5a405e2719808aee70a829d103e3d21fde2e3ce"
+    },
+    "locale/tr/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2727,
+      "sha256": "959a3d145531b4dc1fd31ed4b4551e3d24bc98253f5c1691f9cd11be2e1b1c46"
+    },
+    "locale/cs/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1325,
+      "sha256": "920447e9157f02de222853be3e8c0e8b9bad45a6e94db8bc110ea843bb32de05"
+    },
+    "locale/cs/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5053,
+      "sha256": "ddbc240eb2c4c6e4adb49b64e9b54f702c30e2a6807584c712e31efa979da1b8"
+    },
+    "locale/cs/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 21224,
+      "sha256": "1d8e0502e59b545af4a57f9ef87cfe63458f4ebed76b10d140c0902bf6388780"
+    },
+    "locale/cs/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2743,
+      "sha256": "d6fdd4de1d52ac8bbc9533e87f75bfa737c586656bb471caf969cc6105e10fc3"
+    },
+    "locale/en/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1005,
+      "sha256": "07b27ea981e855e8505ad0d3c806bc5d1ffb281db5ec159a6fff167b089e1fca"
+    },
+    "locale/en/LC_MESSAGES/core.mo": {
+      "sizeBytes": 4603,
+      "sha256": "97fe2b036739a225bb3801df3ad47e56e1eea2825189cd60d7b7d2d1368fb63b"
+    },
+    "locale/en/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 17573,
+      "sha256": "7d1a74a450ded81721dbeb7e270b9ba807870b1cd8d89a033698463868080a6f"
+    },
+    "locale/en/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2313,
+      "sha256": "fff74c262c07801a0da906772f8d865430844d7f518bd0f3966d50ecef7bb75a"
+    },
+    "locale/it/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1261,
+      "sha256": "a443d8608fa9c601b200824bef7c69178bcce90651602d2d3455d3ec4d685705"
+    },
+    "locale/it/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5392,
+      "sha256": "aaa0275387a0dcb9e729c9a7049ee16bc91966394eb146ab578c725cb8d72930"
+    },
+    "locale/it/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 23439,
+      "sha256": "e2c854f89f59f9b7f20680085c213e3186cf2767f3608cb521b6101d1dc865af"
+    },
+    "locale/it/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2724,
+      "sha256": "cf3486ed2ffc54a6d62292c1358a6642f5db2a8bd595e4b45225d78ee478b6f2"
+    },
+    "locale/ar/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 338,
+      "sha256": "75c868d602fdc4bc39d9578a8217b8bb328d92e4d85a8f486f70b1df43199160"
+    },
+    "locale/ar/LC_MESSAGES/core.mo": {
+      "sizeBytes": 338,
+      "sha256": "75c868d602fdc4bc39d9578a8217b8bb328d92e4d85a8f486f70b1df43199160"
+    },
+    "locale/ar/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 338,
+      "sha256": "75c868d602fdc4bc39d9578a8217b8bb328d92e4d85a8f486f70b1df43199160"
+    },
+    "locale/ar/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 338,
+      "sha256": "75c868d602fdc4bc39d9578a8217b8bb328d92e4d85a8f486f70b1df43199160"
+    },
+    "locale/pt_BR/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1260,
+      "sha256": "023a3d36cf4303fa4c5a7ce97ad91033c9f2eb82efe76197368fab5e3b8879bc"
+    },
+    "locale/pt_BR/LC_MESSAGES/core.mo": {
+      "sizeBytes": 4919,
+      "sha256": "a4da30052c48d68dc75bcd07973c527996d120c74406cb7ca67367f1eb31474d"
+    },
+    "locale/pt_BR/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 21236,
+      "sha256": "01c1c38550670c444547eecc828770cedddfc70e5e60a5752355d16df79e94ab"
+    },
+    "locale/pt_BR/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2725,
+      "sha256": "c9498bdc1c0bf5f5ea68d348f35272877dd6a28a8405a503324de7236076ed29"
+    },
+    "locale/ko/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1238,
+      "sha256": "b1d2873c9d048566a804905509a122577cc05c26f67d6dc753e16702eb214eb0"
+    },
+    "locale/ko/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5541,
+      "sha256": "1e177b09e1e2102ad2a8bc2f5894a7f07b3b3169630d2b88dafc2445ae678316"
+    },
+    "locale/ko/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 22691,
+      "sha256": "9b530b4668fee2ac62454403c84400ecd6c86e2bd6c2e7e0d627d5fe6298512a"
+    },
+    "locale/ko/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2835,
+      "sha256": "63ee13af4fe3d628d2c41678c5dc0ef8c9bca75397c4cc07b2d981580e993355"
+    },
+    "locale/de/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1237,
+      "sha256": "6dac07c7c9e9782094c5a6f284f79ddba5d5d34106b0a9e4965b038366f6f47e"
+    },
+    "locale/de/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5332,
+      "sha256": "ebe77907cc0273cb78fa12d87f87dddeefbd26f82c985210f92492cc0144dbbe"
+    },
+    "locale/de/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 22393,
+      "sha256": "38aedfa225886299c6f40771bd64a3150e98da146e60181a944de6d158b90971"
+    },
+    "locale/de/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 2823,
+      "sha256": "480448911589d4bc6c1cd4b3950c1450f7a2bb34bba8d2e69043f17cb116cc44"
+    },
+    "locale/el/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1558,
+      "sha256": "07f3992017886550bf9d872ac506efe5d74cb6d3b5e9a7ebb157bcff7d68b0f4"
+    },
+    "locale/el/LC_MESSAGES/core.mo": {
+      "sizeBytes": 6525,
+      "sha256": "44cc386b8b821e6ec5f93748dcae2d8f2d229e055a392d5003b72732adb569c6"
+    },
+    "locale/el/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 30229,
+      "sha256": "0ba777ccaba50cbcd640cf7f4abee4df3ea0813c7fd874ff82aa14244e75e73f"
+    },
+    "locale/el/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 3660,
+      "sha256": "3437ba7da2ff8cecb3702942a3fb6f859acea63ca9bb7156f18f1aa9d6725f96"
+    },
+    "locale/vi/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1319,
+      "sha256": "24fa1e2108c6c42836caeae4fc2817f126dc7215c0abe1f670c4b8a6956f4bb4"
+    },
+    "locale/vi/LC_MESSAGES/core.mo": {
+      "sizeBytes": 5755,
+      "sha256": "7896e0a557f626aecb8b66eba827be0d440b8d1bc48fd3f3cd6258daa07a73c3"
+    },
+    "locale/vi/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 24037,
+      "sha256": "7b1fcc186311af6f4e55b96dce3c8e6a116ce2fbeda59fc22588d95dffc678ab"
+    },
+    "locale/vi/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 3008,
+      "sha256": "81421f928782e6760f1c632457be6824d483b48e6c8522439c95a2f16cfa03ed"
+    },
+    "locale/uk/LC_MESSAGES/columns.mo": {
+      "sizeBytes": 1735,
+      "sha256": "d5dcc8b4acaff48bfa76cd858b072b4c1e83dacc05ff7c5bf38e65c24d324277"
+    },
+    "locale/uk/LC_MESSAGES/core.mo": {
+      "sizeBytes": 6562,
+      "sha256": "7269f313be57caca97af3c116d46c9e08ae2c5cdb6426fec09a4ff80c5570bed"
+    },
+    "locale/uk/LC_MESSAGES/ui.mo": {
+      "sizeBytes": 28418,
+      "sha256": "103d92f8121e718ff91189c82eac2174d066c22f64283171e0c4695b2ca4a82c"
+    },
+    "locale/uk/LC_MESSAGES/qtlib.mo": {
+      "sizeBytes": 3708,
+      "sha256": "c942d6561862bc866ea5acf7550e94eacb2889363e5348e390dfb11092bcb073"
+    },
+    "PyQt5/Qt5/translations/qtbase_da.qm": {
+      "sizeBytes": 181387,
+      "sha256": "7d1e5ca3310b54d104c19bf2abd402b38e584e87039a70e153c4a9af74b25c22"
+    },
+    "PyQt5/Qt5/translations/qtbase_ru.qm": {
+      "sizeBytes": 203767,
+      "sha256": "3da6605668f9178d11a838c4515478084dcfb4f9cf22f99d7a92b492db9c224b"
+    },
+    "PyQt5/Qt5/translations/qtbase_ja.qm": {
+      "sizeBytes": 129911,
+      "sha256": "cba382acc44d3680d400f2c625de93d0c4bd72a90102769edfd1fe91cb9b617b"
+    },
+    "PyQt5/Qt5/translations/qtbase_es.qm": {
+      "sizeBytes": 165170,
+      "sha256": "4ffda56ba3bb5414ab0482d1dde64a6f226e3488f6b7f3f11a150e01f53fa4c8"
+    },
+    "PyQt5/Qt5/translations/qtbase_en.qm": {
+      "sizeBytes": 16,
+      "sha256": "9959b510b15d18937848ad13007e30459d2e993c67e564badbfc18f935695c85"
+    },
+    "PyQt5/Qt5/translations/qtbase_fi.qm": {
+      "sizeBytes": 179941,
+      "sha256": "e47fe13713e184d07fa4495dde0c589b0e8f562e91574a3558a9363443a4fa72"
+    },
+    "PyQt5/Qt5/translations/qtbase_ar.qm": {
+      "sizeBytes": 160017,
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263"
+    },
+    "PyQt5/Qt5/translations/qtbase_zh_TW.qm": {
+      "sizeBytes": 127849,
+      "sha256": "085d29eaf9bbb788b2f2503d74a1ef963a9411ceb600441254ce49a120e1ab63"
+    },
+    "PyQt5/Qt5/translations/qtbase_it.qm": {
+      "sizeBytes": 161172,
+      "sha256": "7c7dc8b45bf4e41fec60021ab13d9c7655be007b8123db8d7537a119eb64a366"
+    },
+    "PyQt5/Qt5/translations/qtbase_pl.qm": {
+      "sizeBytes": 162982,
+      "sha256": "ce99032a3b0bf8abad758895cc22837088ead99fd2d2514e2d180693081cfe57"
+    },
+    "PyQt5/Qt5/translations/qtbase_uk.qm": {
+      "sizeBytes": 158274,
+      "sha256": "51b8ff55b37dc5907d637a8ddda12fbe816852b0244c74eb4f0fb84867a786e0"
+    },
+    "PyQt5/Qt5/translations/qtbase_lv.qm": {
+      "sizeBytes": 153608,
+      "sha256": "846e047573ae40c83671c3ba7f73e27efc24b98c82701da0df9973e574178bb2"
+    },
+    "PyQt5/Qt5/translations/qtbase_bg.qm": {
+      "sizeBytes": 165337,
+      "sha256": "e448ac9e3f16c29eb27af3012efe21052daa78fabfb34cd6dff2f69ee3bd3cdb"
+    },
+    "PyQt5/Qt5/translations/qtbase_de.qm": {
+      "sizeBytes": 220467,
+      "sha256": "553c046835db9adef15954fa9a576625366ba8bfd16637038c4bcd28e5ebace1"
+    },
+    "PyQt5/Qt5/translations/qtbase_gd.qm": {
+      "sizeBytes": 189580,
+      "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+    },
+    "PyQt5/Qt5/translations/qtbase_cs.qm": {
+      "sizeBytes": 174701,
+      "sha256": "03028b42df5479270371e4c3bdc7df2f56cbbe6dda956a2864ac6f6415861fe8"
+    },
+    "PyQt5/Qt5/translations/qtbase_fr.qm": {
+      "sizeBytes": 166167,
+      "sha256": "edb32a933cef376a2636634e14e2977ced6284e4aa9a4ac7e2292f9ca54c384a"
+    },
+    "PyQt5/Qt5/translations/qtbase_ko.qm": {
+      "sizeBytes": 156799,
+      "sha256": "0179ed1b136e1cb3f583351eaa2c545ba3d83a6ee3f82c32505926a1a5f5f183"
+    },
+    "PyQt5/Qt5/translations/qtbase_tr.qm": {
+      "sizeBytes": 194487,
+      "sha256": "6a0bf6e70e7920c2b193e76e92f78f315936955d3b06ac039d917f2e06c43281"
+    },
+    "PyQt5/Qt5/translations/qtbase_ca.qm": {
+      "sizeBytes": 210159,
+      "sha256": "52e94fcc9490889b55812c5433d009b44bdc2dc3170eb55b1af444ef4aae1d7f"
+    },
+    "PyQt5/Qt5/translations/qtbase_hu.qm": {
+      "sizeBytes": 160494,
+      "sha256": "c61b67bb9d1e84f0ab0792b6518fe055414a68e44d0c7bc7c862773800fa8299"
+    },
+    "PyQt5/Qt5/translations/qtbase_sk.qm": {
+      "sizeBytes": 125763,
+      "sha256": "d586ae2c314074cf398417fdecb40709d5478dfeb0a67c2fe60d509ee9b59ed7"
+    },
+    "PyQt5/Qt5/translations/qtbase_he.qm": {
+      "sizeBytes": 138690,
+      "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+    },
+    "PyQt5/Qt5/plugins/styles/qwindowsvistastyle.dll": {
+      "sizeBytes": 133104,
+      "sha256": "547606fc8a6b20a2616a4f390c6cf0e7aa713f6ad53bae23c8d1b021885aab0e"
+    },
+    "PyQt5/Qt5/plugins/iconengines/qsvgicon.dll": {
+      "sizeBytes": 35824,
+      "sha256": "5456152400a84c153728007bd1c7d549788d2300441addd40c18d7e17f757856"
+    },
+    "PyQt5/Qt5/plugins/platformthemes/qxdgdesktopportal.dll": {
+      "sizeBytes": 54256,
+      "sha256": "721ec33b6907df5621c0a1f06d35dae91372ccf71392046dfb926de11cb577aa"
+    },
+    "PyQt5/Qt5/plugins/platforms/qoffscreen.dll": {
+      "sizeBytes": 629232,
+      "sha256": "e8a180285147394733db92a532025a36824ea9416b993dfdcaa8e19a66b8b1b6"
+    },
+    "PyQt5/Qt5/plugins/platforms/qwebgl.dll": {
+      "sizeBytes": 407024,
+      "sha256": "30dfc5f5614427cda0b4c97f25c2d6d19702562ec33e49c020768288ca1bea7a"
+    },
+    "PyQt5/Qt5/plugins/platforms/qwindows.dll": {
+      "sizeBytes": 1219568,
+      "sha256": "4d1eaf41136ac3faefb76f5cf2efe8e7f8a11fd6a943a8b11f2f2a8be5cfe19b"
+    },
+    "PyQt5/Qt5/plugins/platforms/qminimal.dll": {
+      "sizeBytes": 701936,
+      "sha256": "81e59d22d5efdc2de84c75386bf136c9e4417eb9164decafb4198d28f29dba8a"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qtiff.dll": {
+      "sizeBytes": 353776,
+      "sha256": "5128aedf4bd9b747ac848bf85e0ffb99ba814bd8e671adff7d26391d31259050"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qwbmp.dll": {
+      "sizeBytes": 26608,
+      "sha256": "7c946f750413716a714884c8836d24aa6d2561b48e7f3397bab88af348e078ec"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qtga.dll": {
+      "sizeBytes": 27632,
+      "sha256": "ccd620e74045d9c9157903120140b97419cbbe91fd43337e640c67cd4522072a"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qicns.dll": {
+      "sizeBytes": 38384,
+      "sha256": "f96e413dc1b8a67c025b3d1769241ee96dd8b079b367a6c868d650a6b68154c4"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qwebp.dll": {
+      "sizeBytes": 412656,
+      "sha256": "50fcf1fed7612ae4c346d7ae7dec3ebbbd2ac31c5e954263a7bbc655502e3b03"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qjpeg.dll": {
+      "sizeBytes": 374256,
+      "sha256": "84c23191b5e35eaf899358c21445a5377845c0653668bbd99b1aa8796e0248c7"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qico.dll": {
+      "sizeBytes": 32240,
+      "sha256": "35cf0ae6bcd1b8322482d40bf2dd693e276548885284b88e6631ab18a0c2c60e"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qgif.dll": {
+      "sizeBytes": 34288,
+      "sha256": "f1fa3bfeea6a600f2c6d209775154cee349b7f687cb4f7213a8cad8870dbb812"
+    },
+    "PyQt5/Qt5/plugins/imageformats/qsvg.dll": {
+      "sizeBytes": 28656,
+      "sha256": "e45893bb7db31bfd32e87dc7a6b02709fca36eb83a25aedc45a39178ec80051e"
+    },
+    "win32com/shell/shell.pyd": {
+      "sizeBytes": 465920,
+      "sha256": "50273fc37878be22abfbdca67d1a73428b7bccd91f3cad2b0ecae7d5069063a8"
+    }
+  },
+  "actualMainPeMachine": "0x14c",
+  "registryPins": {
+    "system.reg": {
+      "sizeBytes": 3431707,
+      "sha256": "591f1909cfeb04ee827677a7509830eff7e76449789920379e4a2eb2e0322e2e"
+    },
+    "user.reg": {
+      "sizeBytes": 101299,
+      "sha256": "ea0f527d8a2e943e6fccf844703872c09b407190cdce437bb585593869f15c8c"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "dd73d85fd579c438f9564b61241fc718b063071cd130fa9f258682ca2df75a19"
+    }
+  },
+  "actualRequestedDirectoryAbsent": true,
+  "allThreeWineRegistriesExist": true,
+  "coreJournalPrivatePin": {
+    "sizeBytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "Only fixed official package/source review and one formal original installation attempt. Installer process exit0 with wineserver stop, but Core job and generation failed with registry I/O failed: No such file or directory (os error 2). No ready generation or successful installation acceptance; 620 files physically present in actual default directory do not prove installed-ready or GUI acceptance.",
+    "Requested /S and last /D=C:single-backslashDupeGuru; exact14UTF8B hex2f443d433a5c4475706547757275. Actual drive_c/DupeGuru absent; files found at drive_c/Program Files (x86)/Hardcoded Software/dupeGuru with lowercase dupeguru-win32.exe. Source setup.nsi uses MultiUser highest/INSTALLMODE/default INSTPATH and commandline plugin; observed default location differs, but exact runtime plugin argument contract/function trace and complete cause are not established. No reinstallation, alternate flags, definition/launcher repair, generation promotion, recover, Core/program/globalcontext/env/cwd/fonts/globalDLL/runtime repair.",
+    "All three Wine registry files present and privately saved at failure state. Core registry I/O error is not proof that Wine registry files were missing. Read-only Core journal command returned actual0B; no invented runtime stderr, stack trace, installer log, or unique function root cause. Host missing guessed Core source paths and invalid glob/truncated output only tool history, not completed checks.",
+    "No guest test fixtures or launch task, native duplicate scan, mark/reference changes, file copying/moving/deletion, results XML/CSV save, fresh explicit Open, About, Chinese display/input, independent market installation/update/rollback/GUI, signing/catalogue activation or completion. Synthetic fixtures not created. Not a full duplicate finder, fuzzy/music/picture, bad/large input, network background exclusion, migration or unattended acceptance.",
+    "Official website and fixed4.3.1 expanded assets observed as web-tool text, not original HTML. Installer27547549B SHAf7c537d5dd5ce36b9e6fe666e4ed994b91660db282cf9ab727ae41ce7aab1263 completeHTTPS200/ContentLength; source941409B SHAf4e55faa8519688a6d29b9f19aa900ec294646cf4f9c225d665c9c7d60315d7a completeHTTPS200 but noContentLength. Only localSHA; upstream digest/PGP/Authenticode/full tagcommit/source-binary correspondence/repro/latest unverified. Both full GET routes terminal before one transfer/installation. Original complete firstpartials/cache held; no repeat GET. Web binary restricted fetch only tool history, not corrupt package.",
+    "ZIP449 unique members366 regular files, allCRC passed,16 selected raw source files. Main core/app.py says GPLv3; no or-later grant established. Root GPLv3 and separate hscommon BSD-style notice retained. Full Python/PyQt/Qt/send2trash/xxhash/Pillow/Mutagen/OpenSSL/CRT/icons/translations licensing closure and installed main-license comparison unverified; public no installer/program binary.",
+    "Actual existing isolated7Zip TypeNsis and bootstrap/mainPE0x14c; main3374518B SHAf650922fb2723ece734fb0a554e53da842cb6c693a6374f4201b35337f1e4d0c not wholeapplication size. Source highest/associations/StartMenu static only, not complete nativeWindows UAC/NSIS/association/uninstall behaviour.",
+    "Original host download helper assumed passed in actual verified receipt and KeyError stopped before cache creation/anyGET. Original helper retained; newV2 exact actual verified/allTerminal/548160 schema before one download. Additional inline quoting SyntaxError stopped before reading or writing, exact initial errors toolhistory only. Source/raw helpers and original failures preserved, no fabricated exactraw.",
+    "Full failed549Core/160SQLite seven-class CP saved/readback before normal Core/Store restart once each. Original readiness call market(status,{}) raised TypeError after both successful normal restart commands and stopped before final capture/CP. Exact original wrapperstderr retained. Unique readonlyV2 validates actual active units, live seven classes/full fields/failed job/generation and620programs/3registry/old70+17fixedpins against saved CP, then exclusive final CP readback; no second restart. BeforeRestart PIDs were local variables not independently saved, cannot reconstruct or claim exact PID change. CurrentPIDs measured separately.",
+    "Current549fullCore/160fullStore allterminal; candidate-v79/root1/role88/72entries=70apps2fixtures,152targets83publicJSON held. Current private CP after-failed-install-final-restart-readonly-v2.json SHAdded25331a5ad60c389ea16c9ddd429cd6a1f03deaa553d43386d3fbba26b73d excluded. Unique readonly rolling-current-state-dupeguru-pending-20261014.py SHA88cfcd27563c34334974e0d571273eeb646ae77c3c0788ce315dfcbd9e8026a5 must run through rolling-guest-20261010.py strictSSH stdin, no guest hosthelper-file requirement. Old Infra548160/currenthelper/CP and all earlier snapshots only historical after newfailedtask; never force old count or reinstall.",
+    "Only failed-generation620programs/3registry plus all prior fixed acceptance pins, not all application FS. Initial private generation inventory2522 includes Wine/runtime files and is not application filecount. Registry raw saved only after failure, no pre-install actual registry raw/diff created retroactively. Query may write existing scratch; recent64 IPC not fullSQLite. FullCP/privatekeys/credentials/password/loginimages/exact signedredirectquery excluded frompublic/automation.",
+    "No GUI task started. Existing Edge noVNC temporary993x998 viewport restores0x0 page only; clock-click/Space displayed normal login flow without password submission, no screenshot saved. No account/password/lockscreen/power change or authentication bypass. All previous failures/helpers/root/signatures/trust/freezes and oldScribus oneprivatecanonicalV1 exactraw loss retained, no fabricated recovery. GreenfishEULA no program/shader alteration; CopyQ notifications/globalDLL held; Zim/Aegisub unresolved; Texmaker source-only architectureguard/cache held.",
+    "Ubuntu ledger and window plan freshly read; KateAPT/Snapcalculator2 independently tracked, Flatpak2runtime timeout caches held. No UbuntuVM or concurrent4GiBVM, no VM reboot/switch. Corelauncher-cwd-v11-r1/Storemanaged-msi-v2 preserved, Artha93650 unchanged, Providerfe66 notdeployed."
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-05",
+  "environment": "Isolated ForgeOS v12 x86_64 KVM VM, Wine 11.14 win64, managed Inno installation; AMD64 Program Files/TuxPaint/tuxpaint.exe launcher with --windowed. Existing authorized guest login; authentication unchanged.",
+  "applications": [
+    {
+      "id": "tuxpaint",
+      "version": "0.9.35-3",
+      "observedGuiVersion": "0.9.35",
+      "runtimeVersionStdout": "Tux Paint Version 0.9.35- x86_64 (2026-02-09)\nRunning on Microsoft Windows 10 (Build 19045)\n",
+      "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c",
+      "size": 50412612,
+      "installJobId": "job-1791190704821-2",
+      "launchJobId": "job-1791190778738-3",
+      "reopenJobId": "job-1791191516109-4",
+      "generationId": "gen-job-1791190704821-2",
+      "definitionDigest": "sha256:956e31aa1c03ce7856f271eddf6af57c57be5edfa1682c7c5eacdc8da10f4e56",
+      "launcherSha256": "sha256:29d4bc7e902c5ce8c203c941e71b4e440e29cf469d88ec1c62bdf40c036e5344",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "guiFileOperation": "passed",
+      "workflow": "Manually draw black L and red horizontal stroke, Undo and Redo observed, GUI Save PNG; normal exit, fresh managed process explicitly selects native saved thumbnail in real Open gallery and restores full drawing; normal exit. Every decoded RGB pixel matches specified stroke geometry; PNG and thumbnail pins unchanged.",
+      "files": {
+        "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005090145.png": {
+          "sizeBytes": 3019,
+          "sha256": "13b90710899d4d1c9be97b1446d743000f1ded0ab62c8b6cd6e1b35d20c13322"
+        },
+        "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/.thumbs/20261005090145-t.png": {
+          "sizeBytes": 654,
+          "sha256": "0cf1a097f19aa9b6a566380ec003610f1b0add465d6c025628979063ebbdee70"
+        }
+      },
+      "pixelVerification": {
+        "generationId": "gen-job-1791190704821-2",
+        "relativeFile": "drive_c/users/forge/AppData/Roaming/TuxPaint/saved/20261005090145.png",
+        "sizeBytes": 3019,
+        "sha256": "13b90710899d4d1c9be97b1446d743000f1ded0ab62c8b6cd6e1b35d20c13322",
+        "width": 608,
+        "height": 472,
+        "decodedRgbSha256": "f0f9caa1224c90ce84be3ab6c0934412aa2d7a7772e2b7cb0a7a8980ebeabef1",
+        "colorCounts": {
+          "255,255,255": 284972,
+          "0,0,0": 1068,
+          "255,0,0": 936
+        },
+        "marks": {
+          "black": {
+            "pixels": 1068,
+            "bounds": [
+              96,
+              134,
+              256,
+              331
+            ]
+          },
+          "red": {
+            "pixels": 936,
+            "bounds": [
+              200,
+              155,
+              511,
+              157
+            ]
+          }
+        },
+        "format": {
+          "bitDepth": 8,
+          "colorType": 2,
+          "interlaced": true,
+          "chunks": [
+            "IHDR",
+            "sRGB",
+            "gAMA",
+            "cHRM",
+            "tEXt",
+            "IDAT",
+            "IEND"
+          ],
+          "allChunkCrcsValid": true,
+          "allAdam7PixelsDecoded": true
+        },
+        "notBlank": true,
+        "guiUndoAndRedoObserved": true,
+        "backendGeneratedOutput": false,
+        "expectedRgbSha256": "f0f9caa1224c90ce84be3ab6c0934412aa2d7a7772e2b7cb0a7a8980ebeabef1",
+        "differentPixels": 0,
+        "allPixelsMatchManuallyDrawnThreePixelStrokes": true,
+        "expectedGeometry": {
+          "blackVertical": [
+            96,
+            134,
+            98,
+            331
+          ],
+          "blackHorizontal": [
+            96,
+            329,
+            256,
+            331
+          ],
+          "redHorizontal": [
+            200,
+            155,
+            511,
+            157
+          ],
+          "background": [
+            255,
+            255,
+            255
+          ]
+        }
+      },
+      "explicitFreshProcessGalleryReopenObserved": true,
+      "screenshots": {
+        "original-paint-saved.jpg": "ea2f864a94ebd0688b9810afecf3b9cadff6b940b3bb3c737af1198fa6a7bf35",
+        "original-reopen-gallery.jpg": "2f2120932cea57b091f18d1ab19c5bd33da88857cc04f08b0e43995f7e6ae677",
+        "original-reopen-start.jpg": "e324e5670a5831019f2c3eba7869c6235263a248df3fd806a0d5a0f362850ea4",
+        "original-reopened-paint.jpg": "2c83ac07060ff91b85a5762a569819ba2cdb55a401064933314b8d79a37bc62e"
+      }
+    }
+  ],
+  "licenseEvidence": {
+    "schemaVersion": 1,
+    "date": "2026-10-05",
+    "applicationId": "tuxpaint",
+    "version": "0.9.35-3",
+    "observedGuiVersion": "0.9.35",
+    "observedGuiVersionBasis": "Fresh-process startup splash: Version: 0.9.35 – 2026-02-09; captured startup canvas JPEG does not show that splash. Installer revision 0.9.35-3 is pinned separately.",
+    "runtimeVersionStdout": "Tux Paint Version 0.9.35- x86_64 (2026-02-09)\nRunning on Microsoft Windows 10 (Build 19045)\n",
+    "artifact": {
+      "fileName": "tuxpaint-0.9.35-3-windows-x86_64-installer.exe",
+      "sizeBytes": 50412612,
+      "sha256": "9d393d1c829ff9d74c1dff0c5726f47773a44c989bf0ce521d266f0a6fcf6c4c",
+      "sha1": "15cebc5246f24600f36ce935638fbc2d5e10ba5c",
+      "redirected": true,
+      "sourceUrl": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.35/tuxpaint-0.9.35-3-windows-x86_64-installer.exe"
+    },
+    "officialWindowsDownloadPage": "https://tuxpaint.org/download/windows/",
+    "sourceArchive": {
+      "url": "https://downloads.sourceforge.net/project/tuxpaint/tuxpaint/0.9.35/tuxpaint-0.9.35.tar.gz",
+      "fileName": "tuxpaint-0.9.35.tar.gz",
+      "sizeBytes": 25674042,
+      "sha256": "c1c18af91be77e94fdaab2c928204c4c39ba39ac5da2f441aaf2ecab6d8bd0ad",
+      "sha1": "9e9ab312abb947cdcfc5bc0efd193122624b0ded",
+      "redirected": true
+    },
+    "sourceFiles": [
+      {
+        "archivePath": "tuxpaint-0.9.35/docs/COPYING.txt",
+        "sha256": "a1615a051f4bfcda0ae29cf608bb5c50a9f156267ce21be79aad308eadb29db6",
+        "sizeBytes": 18482
+      },
+      {
+        "archivePath": "tuxpaint-0.9.35/src/tuxpaint.c",
+        "sha256": "306299a0d427ab4b62f3ef31fafbc6134bad440c96952328b81ea7fb5cf63933",
+        "sizeBytes": 981372
+      },
+      {
+        "archivePath": "tuxpaint-0.9.35/win32/tuxpaint.iss",
+        "sha256": "f8913efa70fb8f9132410856736b3e9a4e923bc3b713906c6df54469fd95cb9a",
+        "sizeBytes": 22463
+      },
+      {
+        "archivePath": "tuxpaint-0.9.35/docs/en/README.txt",
+        "sha256": "bcbb4926ec39b6a530444e93cc8d0cbcdf95c90c47878e0fdbf949060a0091fd",
+        "sizeBytes": 58534
+      }
+    ],
+    "officialPages": [
+      {
+        "url": "https://tuxpaint.org/download/windows/",
+        "fileName": "official-windows.html",
+        "sizeBytes": 14654,
+        "sha256": "c35df2a806d45c9230501908f88619dd84523b02d8f80e88b3ae181ccacc0046",
+        "sha1": "47378d7b501f0a13e90001afdafead29be47109e",
+        "redirected": false
+      },
+      {
+        "url": "https://tuxpaint.org/download/source/",
+        "fileName": "official-source.html",
+        "sizeBytes": 13648,
+        "sha256": "47a8b31d3bc0ab71d6a57f5526e1e4e59779f6b03b8a49178aca15e66c2abd22",
+        "sha1": "5861700ad4398325baf3fd5b4a9be2dbda1d56f2",
+        "redirected": false
+      }
+    ],
+    "license": {
+      "spdx": "GPL-2.0-or-later",
+      "basis": "Pinned src/tuxpaint.c explicitly permits GPL version 2 or any later version. Installed docs/COPYING.txt matches fixed source docs/COPYING.txt byte for byte. Bundled fonts/components have their own terms.",
+      "installedCopyingSha256": "a1615a051f4bfcda0ae29cf608bb5c50a9f156267ce21be79aad308eadb29db6",
+      "guiLicensePageVerified": false,
+      "completeComponentSourceAudit": false
+    },
+    "upstreamSha256Matched": false,
+    "authenticodeVerified": false,
+    "reproducibleBuildVerified": false,
+    "installerRevision3SourceCorrespondenceFullyVerified": false,
+    "installedLauncherArchitecture": "AMD64 0x8664",
+    "failures": []
+  },
+  "limits": [
+    "Manual GUI Paint draws black L and red bar; Undo removes and Redo restores the red bar. GUI Save creates a native timestamp-named PNG. Standard-library PNG CRC/Adam7 decode checks all 286976 RGB pixels against the specified three-pixel stroke geometry, with zero differences.",
+    "Normal exit and fresh managed process explicitly opens the saved thumbnail through the real Open gallery. PNG and thumbnail byte pins unchanged. Startup splash displays 0.9.35 / 2026-02-09; fixed installer package revision is 0.9.35-3.",
+    "Only controlled Paint/Undo/Redo/Save/Open PNG workflow tested. Chinese keyboard/text/filenames, stamps, labels, other tools/formats, export, printing and external raster viewers unverified.",
+    "Official package bytes pinned locally; no upstream SHA-256 match, Authenticode, reproducible build, complete bundled component audit or exact updated installer revision source audit claimed. Installed main GPL license matches fixed source.",
+    "Fresh-machine registration, guest online artifact download, cross-version upgrade and public installer redistribution unverified. Actual signed local market activation/update/rollback/restart must pass before completion is counted."
+  ]
+}

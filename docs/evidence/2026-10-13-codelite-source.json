@@ -1,0 +1,142 @@
+{
+  "applicationId": "codelite",
+  "fixedVersion": "17.0.0",
+  "downloadTerminal": {
+    "passed": true,
+    "allDownloadRoutesTerminal": true,
+    "results": {
+      "codelite-amd64-17.0.0.exe": {
+        "passed": true,
+        "file": "codelite-amd64-17.0.0.exe",
+        "requestedUrl": "https://downloads.codelite.org/codelite/17.0.0/codelite-amd64-17.0.0.exe",
+        "status": 200,
+        "sizeBytes": 56796290,
+        "contentLength": 56796290,
+        "sha256": "8dc40a5d1b855610377229a00d70426c5af7742532ba932e769ceba39af9851b",
+        "fullHttpsGetTerminal": true,
+        "elapsedSeconds": 18.031,
+        "upstreamDigestVerified": false
+      },
+      "codelite-17.0.0.tar.gz": {
+        "passed": true,
+        "file": "codelite-17.0.0.tar.gz",
+        "requestedUrl": "https://downloads.codelite.org/codelite/17.0.0/codelite-17.0.0.tar.gz",
+        "status": 200,
+        "sizeBytes": 33857665,
+        "contentLength": 33857665,
+        "sha256": "4064fcc0445fe94ecf4edddce100331a6292f6d138292f20452adc0910237ba7",
+        "fullHttpsGetTerminal": true,
+        "elapsedSeconds": 15.187,
+        "upstreamDigestVerified": false
+      }
+    },
+    "sourceFixedVersion": "17.0.0",
+    "noApplicationDefinitionTaskInstallGuiOrPublication": true
+  },
+  "downloadPhaseHistoricalFlagsNotCurrentInstallState": true,
+  "officialArchiveDiscovery": {
+    "passed": true,
+    "officialArchiveUrl": "https://downloads.codelite.org/ReleaseArchive.php",
+    "officialArchiveSha256": "d3701cc573a0b66dc9a5f0242cd760fb1e1b33c040ce29954f33a2dd61e2d14e",
+    "officialArchiveSizeBytes": 86712,
+    "fixedVersion": "17.0.0",
+    "urls": {
+      "codelite-amd64-17.0.0.exe": "https://downloads.codelite.org/codelite/17.0.0/codelite-amd64-17.0.0.exe",
+      "codelite-17.0.0.tar.gz": "https://downloads.codelite.org/codelite/17.0.0/codelite-17.0.0.tar.gz"
+    },
+    "installerAndSourceNotYetFetched": true,
+    "newAppTaskOrInstallation": false
+  },
+  "sourceInventorySummary": {
+    "uniqueMembers": 16825,
+    "files": 14412
+  },
+  "sourceGzipIntegrity": {
+    "passed": true,
+    "gzipStreamReadToEofAndTrailerValidated": true,
+    "uncompressedTarBytes": 137840640,
+    "uncompressedTarSha256": "dabb848c7be3ea131fff81711764a8e57656c7bae7091fbbe1ceca7654ab2c84",
+    "selectedMembersNotFullSourceManualReview": true
+  },
+  "selectedSourcePins": {
+    "README.md": {
+      "sizeBytes": 1445,
+      "sha256": "4cb09de62b701575de6c884054e1a5a22c9b8422ebc7bc689ea2fa860afffeb4"
+    },
+    "LICENSE": {
+      "sizeBytes": 18341,
+      "sha256": "57dd2a7d66d7b1055f71609b42701167fc3a2cdc1d92af051bb2850b98ae9a84"
+    },
+    "COPYING": {
+      "sizeBytes": 18528,
+      "sha256": "c196ed4339ec40fe44ecf8f69c711146c10ad452eb126e9ee3de2c5687ef472f"
+    },
+    "LiteEditor/app.cpp": {
+      "sizeBytes": 38247,
+      "sha256": "a5c9a3053488b65d657cab6d033d5fd5d0fdbccf32007569815904e41f0b6071"
+    },
+    "LiteEditor/app.h": {
+      "sizeBytes": 4747,
+      "sha256": "ed028430ba87a53c0bef083367f7c78de917ea8f432b0484cc5c3fec2e42d965"
+    },
+    "LiteEditor/frame.cpp": {
+      "sizeBytes": 229974,
+      "sha256": "56b7eed47317967adf961c5a6a583b3b0abb076504de9a02b2d35d537367990f"
+    },
+    "LiteEditor/autoversion.h.in": {
+      "sizeBytes": 1270,
+      "sha256": "f1b9806f30f70f001c7770a64a037ecb6bb34bb403a2cc0d249ab643eca63cb7"
+    },
+    "LiteEditor/autoversion.cpp": {
+      "sizeBytes": 1230,
+      "sha256": "724cbaa03e78de148abcc039f16fb386a79a7048c5feb9feb722f2028fb5ddea"
+    },
+    "InnoSetup/codelite64_mingw.iss.in": {
+      "sizeBytes": 9227,
+      "sha256": "2eb45f1bbfeefa3d8f6e0c995da360fa15d51654be6a2af9b1f3e89a8d9c1d4d"
+    },
+    "InnoSetup/modpath.iss": {
+      "sizeBytes": 6732,
+      "sha256": "4cc5c010c6c4b1ec2d01c07d673df1b0b0bdb9e99dcfe840991605dd2a601cd8"
+    },
+    "wxcrafter/resources/LICENSE": {
+      "sizeBytes": 5344,
+      "sha256": "d82379cd232347d30613ee969f158eac1ea8c431fbc5304e952018e9698e1bed"
+    },
+    "wxdap/LICENSE": {
+      "sizeBytes": 848,
+      "sha256": "6882372781c3a7d18bdd156a549c77e22cfa8821d043fd9d677c3a372ebf2e33"
+    }
+  },
+  "sourceReferences": {
+    "README.md": "codelite-20261013/source/README.md",
+    "LICENSE": "codelite-20261013/source/LICENSE",
+    "COPYING": "codelite-20261013/source/COPYING",
+    "LiteEditor/app.cpp": "codelite-20261013/source/LiteEditor/app.cpp",
+    "LiteEditor/app.h": "codelite-20261013/source/LiteEditor/app.h",
+    "LiteEditor/frame.cpp": "codelite-20261013/source/LiteEditor/frame.cpp",
+    "LiteEditor/autoversion.h.in": "codelite-20261013/source/LiteEditor/autoversion.h.in",
+    "LiteEditor/autoversion.cpp": "codelite-20261013/source/LiteEditor/autoversion.cpp",
+    "InnoSetup/codelite64_mingw.iss.in": "codelite-20261013/source/InnoSetup/codelite64_mingw.iss.in",
+    "InnoSetup/modpath.iss": "codelite-20261013/source/InnoSetup/modpath.iss",
+    "wxcrafter/resources/LICENSE": "codelite-20261013/source/wxcrafter/resources/LICENSE",
+    "wxdap/LICENSE": "codelite-20261013/source/wxdap/LICENSE"
+  },
+  "installedLicenseReference": "codelite-20261013/installed-LICENSE",
+  "installedLicenseComparison": {
+    "sameAllRawBytes": true,
+    "sizeBytes": 18341,
+    "sha256": "57dd2a7d66d7b1055f71609b42701167fc3a2cdc1d92af051bb2850b98ae9a84"
+  },
+  "limits": [
+    "Only one small Chinese-name UTF8 BOM/two-CRLF CPP comment input per role; native File/Open/Open File via My Computer/C/CodeLiteTests, single STATUS BEFORE to AFTER and ASCII // ORIGINAL42 or // MARKET42 appended, native Save As and new formal process explicit Open after native Close of automatic restoration. No compilation, build/link/run/debug, compiler installation, project, advanced editing, complete C++/editor/IDE, large/bad input, broad encoding/formats, printing, direct Chinese keyboard, network/background exclusion, registration/migration/unattended or GUI Store button acceptance. Synthetic text is not a separate app.",
+    "Original input38B unchanged; output52B UTF8 BOM/threeCRLF exactly reconstructed from immutable input. Original About17.0.0; market About not yet tested. Default English/Chinese file name and small Chinese comment readable, no font changes. First startup update download No and native setup wizard Cancel; second update No. Theme suggestion checkbox stayed unchecked in first process. Native auto-restored file closed before explicit Open; automatic restoration is not accepted as explicit loading.",
+    "Initial bulk // prefix actually delivered only slash in unsaved original buffer, actual diagnostic JPEG retained; same unsaved line corrected by individual slash/space/Shift letters before save. No generic keyboard fix. CtrlO at empty welcome screen did not show dialog in observed frames; native File/Open/Open File was used. CtrlShiftS actual Save As and AltX actual File/Exit. Normal0+wineserver-stop twice is not acceptance alone.",
+    "Official fixed CodeLite17.0.0 archive raw86712B saved. Installer56796290B and source33857665B both complete HTTPS200/ContentLength/localSHA; both routes terminal before original install, caches/partials retained without repeat GET. Source16825 unique TAR members/14412 regular files, full gzip stream EOF/trailer validated;12 selected raw members only, not full source manual review. Upstream digest/API/PGP/Authenticode/source-binary correspondence/repro/latest not verified.",
+    "Main LiteEditor/app.cpp GPL2-or-later. Installed LICENSE18341B exact selected root LICENSE raw, root COPYING separately retained. wxCrafter resources/LICENSE is separate SmartKoders EULA with use/backup, registered distribution and reverse engineering limits; not blanket entire binary GPL or public binary redistribution permission. Full wxWidgets/Scintilla/LLVM/clangd/ctags/cppcheck/SQLite/wxCrafter/wxdap/tools/icons/translations closure unverified. Public contains JSON evidence and no installer/program binary.",
+    "Two actual Inno6.1.0 markers; bootstrap0x14c, main0x8664. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:single-backslashCodeLite /NOICONS /TASKS=, DIR16UTF8B hex2f4449523d433a5c436f64654c697465; static iss PrivilegesRequired none, entry codelite.exe, skipifsilent only source context, no full Inno/UAC/associations/shortcuts/uninstall behavior. Main7258112B not whole application size.",
+    "Original332 programs preserved; three registry and selected ProgramData/CodeLite/prefix-user CodeLite-named configuration only, not whole FS. Actual first/new-process config and registry raw/diff saved privately, cause/semantic equivalence unestablished; first discovery not creation time. Complete537Core/156Store seven-class CP saved/readback before market. Recent64IPC not completeSQLite; Core query may write existing scratch. No Core/program/globalcontext/formaldefinition/launcher env/cwd/newfont/globalDLL/runtime fix.",
+    "Guessed host helper paths missing only tool history, exact stderr not separately saved or fabricated; no dependent action tied to those reads. Old noVNC tab was closed; new same-loopback Edge tab connected. Actual default viewport0x0 persisted after reset, documented browser viewport993x998 made canvas operable; no guest/auth/power change. Browser reference name undefined once only host error. Browser tab inventory emitted existing authorization callback URLs in tool history; that limited tool history scope retained, not copied/public/automation or repeated. Password/login images/private keys/credentials/full private CP/exact redirect query excluded. Normal login fresh masked six-character field once submitted, auth/lockscreen/power unchanged.",
+    "wxMEdit and wxHexEditor official archive-only research no package GET/install/task/pending/count. Old failures/helpers/TUF/root/signatures/trust/freezes/history held, no fabricated restoration of old Scribus one private canonicalV1 failure raw. UbuntuKateAPT/Snapcalculator2 separate; Flatpak2 runtime timeouts/cache held; UbuntuVM not run, two4GiB VMs not concurrent. Greenfish EULA no program modification/shader-cache deletion, CopyQ no notification disabling/globalDLL masking, Zim font/AegisubConcurrency unresolved, Texmaker source-only architecture guard held."
+  ]
+}

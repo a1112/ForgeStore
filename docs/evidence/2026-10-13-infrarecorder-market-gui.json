@@ -1,0 +1,1027 @@
+{
+  "passed": true,
+  "generation": {
+    "bottleId": "gen-job-1791923883267-4",
+    "createdAtMilliseconds": 1791923883273,
+    "definition": {
+      "bottleId": "gui-infrarecorder",
+      "category": "multimedia",
+      "compatibilityRating": "unknown",
+      "id": "infrarecorder",
+      "installer": {
+        "arguments": [
+          "/S",
+          "/D=C:\\InfraRecorder"
+        ],
+        "fileName": "ir053.exe",
+        "sha256": "8cee83f7f489a6aef4218a953b87b1c22d6a93c966e79275c8cb2abe830d0731"
+      },
+      "launchers": [
+        {
+          "executable": "InfraRecorder/infrarecorder.exe",
+          "id": "main",
+          "name": "InfraRecorder"
+        }
+      ],
+      "name": "InfraRecorder",
+      "publisher": "Christian Kindahl",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-nsis"
+      ],
+      "version": "0.53"
+    },
+    "definitionDigest": "sha256:a22833310627c53d6eb8d223c5731f4ce7f022f3c0a9d83d883c85bad0a1a9a1",
+    "id": "gen-job-1791923883267-4",
+    "launcherDigests": {
+      "main": "sha256:beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791923898218
+  },
+  "definition": {
+    "bottleId": "gui-infrarecorder",
+    "category": "multimedia",
+    "compatibilityRating": "unknown",
+    "id": "infrarecorder",
+    "installer": {
+      "arguments": [
+        "/S",
+        "/D=C:\\InfraRecorder"
+      ],
+      "fileName": "ir053.exe",
+      "sha256": "8cee83f7f489a6aef4218a953b87b1c22d6a93c966e79275c8cb2abe830d0731"
+    },
+    "launchers": [
+      {
+        "executable": "InfraRecorder/infrarecorder.exe",
+        "id": "main",
+        "name": "InfraRecorder"
+      }
+    ],
+    "name": "InfraRecorder",
+    "publisher": "Christian Kindahl",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-nsis"
+    ],
+    "version": "0.53"
+  },
+  "installedFiles": {
+    "uninstall.exe": {
+      "sizeBytes": 187752,
+      "sha256": "31708d97041cad00ece2b890923c99d9a8ca78cb2a98be9085a2b0fdda4bdd5d"
+    },
+    "license.txt": {
+      "sizeBytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "infrarecorder.exe": {
+      "sizeBytes": 2456328,
+      "sha256": "beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171"
+    },
+    "smoke.exe": {
+      "sizeBytes": 352008,
+      "sha256": "df6605785965d1bbb78a5afa23b1c7567ecad473bed1460497fcc6922d8e32f9"
+    },
+    "shell.dll": {
+      "sizeBytes": 148232,
+      "sha256": "9bae850af8f1a4890cb910e8fd729142e9896118e816320a96fd56ec4bbea319"
+    },
+    "infrarecorder.chm": {
+      "sizeBytes": 191306,
+      "sha256": "c2804c328463186c3fbaf8680e1302c018977d8a6f71435452afc4d68290c1c2"
+    },
+    "readme.txt": {
+      "sizeBytes": 2200,
+      "sha256": "4acb4cf0bd3df2bf445c17e9aa15f8633f8431557b2043b9b562c0608bae974a"
+    },
+    "codecs/wma.irc": {
+      "sizeBytes": 66312,
+      "sha256": "ca35ee703da6157419fb612ccaad415193d151a78b6b2008c79ce3dd63eff989"
+    },
+    "codecs/vorbis.irc": {
+      "sizeBytes": 1796872,
+      "sha256": "bf915638131f3e78e67853e1b49f387d69248560dcc9a5de3a900f911d7d9e1e"
+    },
+    "codecs/sndfile.irc": {
+      "sizeBytes": 62728,
+      "sha256": "97f3eb5133c904d0b16867d6f1ec1c014cfcbfa722e9d0dad66ec3db37583db4"
+    },
+    "codecs/libsndfile-1.dll": {
+      "sizeBytes": 2308360,
+      "sha256": "752ff577667d48985fc2f6068acdd82cc379ac60e6c7a543755131f09980f48c"
+    },
+    "languages/greek.irl": {
+      "sizeBytes": 52820,
+      "sha256": "8d05ea19ed781031548a493d5738d3753b8eca9755c276f9632370c6a85461f0"
+    },
+    "languages/chuvash.irl": {
+      "sizeBytes": 41878,
+      "sha256": "2677b3f0653e4febe1a664411cd0160a00482eb1da386754365726e87f2c131b"
+    },
+    "languages/slovenian.irl": {
+      "sizeBytes": 46150,
+      "sha256": "fdfed3aa59a7755b29825e2c9f39f6bedf70560b57a68f27bdc919cafb605e7f"
+    },
+    "languages/korean.irl": {
+      "sizeBytes": 29692,
+      "sha256": "fe0dea534f86acdea7b91c6ecac1e70422514adfdf5ca5d668045b36b67261c2"
+    },
+    "languages/thai.irl": {
+      "sizeBytes": 43902,
+      "sha256": "1083d592b3fa3210453d07dc8ae8546ea0641e2e005e9d94e83fdad0a6dca87f"
+    },
+    "languages/czech.chm": {
+      "sizeBytes": 178623,
+      "sha256": "0ea838fefb5ef66a01307d821678f3db911196a904a6b3dc4b6f85b92192e4f7"
+    },
+    "languages/swedish.irl": {
+      "sizeBytes": 50400,
+      "sha256": "34d104e4445fee8d36d39de39fc330bd6cb6a11f742560e35a012cbef060ace1"
+    },
+    "languages/dutch.irl": {
+      "sizeBytes": 50146,
+      "sha256": "67317bb95ac669dcfb3f03aac46df3412ef8d87e8f43be16a00944b3dbae67bf"
+    },
+    "languages/armenian.irl": {
+      "sizeBytes": 39916,
+      "sha256": "8095db030341d84529d0179e50d1fbb72de315b2930a0d82fb286ec3060ea445"
+    },
+    "languages/russian.chm": {
+      "sizeBytes": 146916,
+      "sha256": "116de4a767798c98317751adae00fb2405c042c7da1beec2c4086a88644f4ac9"
+    },
+    "languages/indonesian.irl": {
+      "sizeBytes": 48486,
+      "sha256": "776a953f2333dff781543648361c23db89fdeeb2ae9dd3d1ddcd0389befbcf56"
+    },
+    "languages/serbian-latin.irl": {
+      "sizeBytes": 42130,
+      "sha256": "49767deb7f5ccd14e414540872c05d5deddaba19b7870c5b78e7559197889815"
+    },
+    "languages/italian.irl": {
+      "sizeBytes": 53476,
+      "sha256": "fda99b361ae925d45e065d56a6b34a61654d0567fe95fd46839eb194fd04ba46"
+    },
+    "languages/farsi.irl": {
+      "sizeBytes": 45688,
+      "sha256": "40a39603531556f0c0bf62274285bd94462804dd4771efd5e9651ea5b1db5987"
+    },
+    "languages/ukrainian.irl": {
+      "sizeBytes": 48300,
+      "sha256": "4d498b3110ae4c719101a937ad68ec3ad4723fb10fe15543566b84d79dc4b5f0"
+    },
+    "languages/albanian.irl": {
+      "sizeBytes": 49706,
+      "sha256": "d4d73af5c1067c93287428f2a1723685e42c2802a93a38941438bff5548b3f3a"
+    },
+    "languages/slovak.irl": {
+      "sizeBytes": 50660,
+      "sha256": "4c5bb946a4687bad3ea8cb0437858cf9cd9cf0566c1175a6d47e72b416b00e24"
+    },
+    "languages/turkish.chm": {
+      "sizeBytes": 344032,
+      "sha256": "0fd40ef0e953f1936cc1466aa856184b42c2517a836de4d6c3b8cbefb1146ae0"
+    },
+    "languages/chinese-traditional.irl": {
+      "sizeBytes": 25094,
+      "sha256": "676d8be05f4dc6383a407220df63c634f6d7cf800a6630534db60ad78905a341"
+    },
+    "languages/portuguese.irl": {
+      "sizeBytes": 52330,
+      "sha256": "bc57e74581d33501c30a9a63a00670245defd385e9a53a1ca518e7ff3354f267"
+    },
+    "languages/basque.irl": {
+      "sizeBytes": 50020,
+      "sha256": "2d55f8e68b02a1fd894d48173c1d0d037b2ba6f63a333efd713c530c63a76ec2"
+    },
+    "languages/valencian.irl": {
+      "sizeBytes": 51426,
+      "sha256": "adc448aa15f64b814f6ed811477cc3f1c7a781c0e2a14441a6ee923b593cda28"
+    },
+    "languages/serbian-cyrillic.irl": {
+      "sizeBytes": 41776,
+      "sha256": "9aa9b85e2ff46012bee9ce1f6a1839adc555510dbb800f9e2a13b5dbd2cb08f7"
+    },
+    "languages/spanish.irl": {
+      "sizeBytes": 55614,
+      "sha256": "9987d019fd602685d0c61643d9e660ba5ae33b7941dc1509481dddcc85d93f5d"
+    },
+    "languages/chinese-simplified.irl": {
+      "sizeBytes": 26876,
+      "sha256": "7501e25399ce948b2a0573ed7fc47eafc431af78fb91de8977d381ffdbbc838b"
+    },
+    "languages/portuguese-brazilian.irl": {
+      "sizeBytes": 51032,
+      "sha256": "b5f5a4c2d8acd5d9c9d57895a4204edfdb97d19fe9f51da7b421280d3a0b4032"
+    },
+    "languages/finnish.irl": {
+      "sizeBytes": 46272,
+      "sha256": "ae3908109a25de9a0aaca1a61a19508bc456bc15a17f51b7f458182a5a01b923"
+    },
+    "languages/german.chm": {
+      "sizeBytes": 104474,
+      "sha256": "4433b1e32d4c1c35abbda03ebe086223a26cc073145689e9bc32b1e1886ea7be"
+    },
+    "languages/bulgarian.irl": {
+      "sizeBytes": 49442,
+      "sha256": "17a4efe0c954308f453c5cccf4bdcaa412c6d946ad6f9bfbb80fcbb3b33baa50"
+    },
+    "languages/french.chm": {
+      "sizeBytes": 229789,
+      "sha256": "541c93c2a4588105db7d1a52a5c399016025bfaf128b0a6f58bcd603ae0f5925"
+    },
+    "languages/romanian.irl": {
+      "sizeBytes": 48128,
+      "sha256": "9f4da251d193a37eecce38379448c2bfc348e9e72e9f75d95aa3ad3eaa063c46"
+    },
+    "languages/russian.irl": {
+      "sizeBytes": 47328,
+      "sha256": "c32936b5236ff5acd30882290dc68706e87e8d39ea8cc4c092ff6f5c171aa186"
+    },
+    "languages/catalan.irl": {
+      "sizeBytes": 52800,
+      "sha256": "3e5b5a5e8d8d533585301a13fab28ad90af24cee2a8244800328127d86fa38a5"
+    },
+    "languages/galician.irl": {
+      "sizeBytes": 53876,
+      "sha256": "5af92946641acec8fe14e7919790a8474f8a9c368547628c2405af2c048ac0ad"
+    },
+    "languages/hungarian.irl": {
+      "sizeBytes": 48370,
+      "sha256": "0e18a2b4b8369b2ebf8bff126d39f435bbc4339fd394c056170dd01b01d0f7cb"
+    },
+    "languages/hebrew.irl": {
+      "sizeBytes": 38620,
+      "sha256": "d67c1d70e4a83a6fc4fa1a9df16f4721ef14040f6dcb979a5ae91b6a5dd0cf42"
+    },
+    "languages/lithuanian.irl": {
+      "sizeBytes": 34350,
+      "sha256": "027e5dee069326ac2966fb8ead512897c4a5ea0082cf1db3145a29785437249e"
+    },
+    "languages/thai.chm": {
+      "sizeBytes": 189179,
+      "sha256": "23b9a0d9aba7ba9c939de0cc59bf0e23107dccb9cb3e5fafea74aec98850c644"
+    },
+    "languages/german.irl": {
+      "sizeBytes": 50066,
+      "sha256": "5a4886b6afba9614698c9fa3b28b1beccc117e9d60896c3d5a0e4290ba734c60"
+    },
+    "languages/ukrainian.chm": {
+      "sizeBytes": 158635,
+      "sha256": "74ece87a002f89702bc5b62c9822ce78786090bb58d0ec057a44569a8eb356cb"
+    },
+    "languages/georgian.irl": {
+      "sizeBytes": 47978,
+      "sha256": "fe93cffc00f15dd198440172560976f86bd1ce6cc76853b0cecdb410c760a6a8"
+    },
+    "languages/polish.irl": {
+      "sizeBytes": 51100,
+      "sha256": "0c7e1a80dc127acd89e918eb5e6689c9ebf55915742320303306ef7c4af9898b"
+    },
+    "languages/turkish.irl": {
+      "sizeBytes": 47256,
+      "sha256": "8e83173eee2a7b60a681ba6451b831039e59aafcd9f4ecccaf9a1ae8ac60500f"
+    },
+    "languages/vietnamese.irl": {
+      "sizeBytes": 47328,
+      "sha256": "92bea383f469b9512bae769095982b4d4971854cbcc390d666190cceee518b53"
+    },
+    "languages/norwegian.irl": {
+      "sizeBytes": 45606,
+      "sha256": "79f3dfc7dc88c89929341fed223d74efc9b5397a6055957ed69221d75c432bde"
+    },
+    "languages/macedonian.irl": {
+      "sizeBytes": 49670,
+      "sha256": "4ab9ca0865905c3f8ef021283a0d351f592ffe92e954dbdada58b8b427430393"
+    },
+    "languages/danish.irl": {
+      "sizeBytes": 46252,
+      "sha256": "c0ca5a6d7a2cf45a9e8d09ed2af712002cacdeed37d9e915f9a434dbb0abf5ec"
+    },
+    "languages/bosnian.irl": {
+      "sizeBytes": 33202,
+      "sha256": "f54623a146a8e299d1538781acecc7fe64bc309c231f4b4221e64b521b287970"
+    },
+    "languages/french.irl": {
+      "sizeBytes": 53406,
+      "sha256": "d26f0e0c732acc6751c77f20de932fcad76af093cdc90cf4b7743b1563052d93"
+    },
+    "languages/czech.irl": {
+      "sizeBytes": 46482,
+      "sha256": "c11285207a9707baaf801597d80c76357e3fad6c3d91a1bcfcdb432029f9ce4a"
+    },
+    "languages/arabic.irl": {
+      "sizeBytes": 37878,
+      "sha256": "3d0b85fd0626fba53fe25c7bac1a6cf6de5d8d5274a55a4f673e0030dcd98ac0"
+    },
+    "languages/estonian.irl": {
+      "sizeBytes": 45964,
+      "sha256": "f9920d0734d45d99bf2e71c4904e4a9259a485004f53488cf6752dea76c8f66c"
+    },
+    "languages/japanese.irl": {
+      "sizeBytes": 32196,
+      "sha256": "405b228fb9e206f14838338ee601231c5a44d5dca2a9f4656d8423c905e3f3a5"
+    },
+    "languages/latvian.irl": {
+      "sizeBytes": 46252,
+      "sha256": "499a1ac3de86266899b2431504e3aea249695e713ca2edfdc0280861bc21df13"
+    },
+    "languages/croatian.irl": {
+      "sizeBytes": 44610,
+      "sha256": "c96c142a8055c19d147fd7165c869123cd0f8ae829c3c2978b7c13f73a695a22"
+    },
+    "cdrtools/cygwin1.dll": {
+      "sizeBytes": 1876736,
+      "sha256": "3c8b82552cbf87332e01de2cfb4ad57c2699874bc84c234f8d5078c2cf0fa7ec"
+    },
+    "cdrtools/COPYING": {
+      "sizeBytes": 2274,
+      "sha256": "ccad071aa195ea5b1d24a4c850acc1337853adfcb9faf26a6eaa676f89221919"
+    },
+    "cdrtools/readcd.exe": {
+      "sizeBytes": 280688,
+      "sha256": "b2d0df10c88d2973e258fa298fb3949a40a470e8850ad1a0e0ddad526854c1bb"
+    },
+    "cdrtools/cdda2wav.exe": {
+      "sizeBytes": 321224,
+      "sha256": "027e2150d9f2b0af314716938b622ddc653ad56d6968a07189c5396b930b5e73"
+    },
+    "cdrtools/cdrecord.exe": {
+      "sizeBytes": 459808,
+      "sha256": "60ef6bf8b26012ed3bba899d6f47589ac5f40af3a35093c677234536b53d3ffb"
+    }
+  },
+  "fixedDataPins": {
+    "drive_c/InfraRecorderTests/市场文件A.bin": {
+      "sizeBytes": 48,
+      "sha256": "a35a9d0a2ecdd502c88b48ab66265e3c7bbf637b93f3d18b8aa3e4fa36aa8a1b"
+    },
+    "drive_c/InfraRecorderTests/市场文件B.bin": {
+      "sizeBytes": 48,
+      "sha256": "de50ce8b206ced31f08ae22ea6b8bda16f5af015ba5f7340e5ff060576e8c58a"
+    },
+    "drive_c/InfraRecorderTests/market.irp": {
+      "sizeBytes": 1844,
+      "sha256": "7c270d653fe219c8029a870b154a974b3ed7f370d4ccf3209344870821da5ef0"
+    }
+  },
+  "saveProof": {
+    "sizeBytes": 1844,
+    "sha256": "7c270d653fe219c8029a870b154a974b3ed7f370d4ccf3209344870821da5ef0",
+    "utf16LeBom": true,
+    "crLfCount": 37,
+    "wholeRawIndependentlyReconstructed": true,
+    "finiteProjectVersion": 3,
+    "type": 0,
+    "media": 4,
+    "label": "MARKET42",
+    "twoReferencedImmutableInputs": true,
+    "virtualProjectRenameOnly": true,
+    "physicalInputNamesAndContentPreserved": true,
+    "fileTimesFromActualInputMtimeDosTwoSecondResolution": true,
+    "completeIrpSpecificationOrActualDiscBurningVerified": false
+  },
+  "guiJobs": [
+    {
+      "applicationId": "infrarecorder",
+      "createdAtMilliseconds": 1791924141326,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 136176,
+          "requestId": "job-1791924141326-5",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 256649,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix",
+          "requestId": "job-1791924141326-5",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 256692,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791924141326-5",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791923883267-4",
+      "id": "job-1791924141326-5",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 634634,
+        "fileDigest": "sha256:beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171",
+        "fileSizeBytes": 2456328,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "shell32.dll",
+          "user32.dll",
+          "version.dll",
+          "winmm.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 768512,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 768233,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 173056,
+            "readable": true,
+            "virtualAddress": 774144,
+            "virtualSize": 173012,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 29696,
+            "readable": true,
+            "virtualAddress": 950272,
+            "virtualSize": 41712,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 1424896,
+            "readable": true,
+            "virtualAddress": 995328,
+            "virtualSize": 1424532,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 55296,
+            "readable": true,
+            "virtualAddress": 2420736,
+            "virtualSize": 55000,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791923883267-4",
+          "digest": "sha256:beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "infrarecorder.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix/drive_c/InfraRecorder/infrarecorder.exe",
+          "sizeBytes": 2456328,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171 pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix/drive_c/InfraRecorder/infrarecorder.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4"
+        },
+        "requestId": "job-1791924141326-5",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791924400079
+    },
+    {
+      "applicationId": "infrarecorder",
+      "createdAtMilliseconds": 1791924494557,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 136895,
+          "requestId": "job-1791924494557-6",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 113632,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix",
+          "requestId": "job-1791924494557-6",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 113674,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791924494557-6",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791923883267-4",
+      "id": "job-1791924494557-6",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 634634,
+        "fileDigest": "sha256:beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171",
+        "fileSizeBytes": 2456328,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "comctl32.dll",
+          "comdlg32.dll",
+          "gdi32.dll",
+          "kernel32.dll",
+          "msimg32.dll",
+          "ole32.dll",
+          "oleaut32.dll",
+          "shell32.dll",
+          "user32.dll",
+          "version.dll",
+          "winmm.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 768512,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 768233,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 173056,
+            "readable": true,
+            "virtualAddress": 774144,
+            "virtualSize": 173012,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 29696,
+            "readable": true,
+            "virtualAddress": 950272,
+            "virtualSize": 41712,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 1424896,
+            "readable": true,
+            "virtualAddress": 995328,
+            "virtualSize": 1424532,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 55296,
+            "readable": true,
+            "virtualAddress": 2420736,
+            "virtualSize": 55000,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791923883267-4",
+          "digest": "sha256:beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "infrarecorder.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix/drive_c/InfraRecorder/infrarecorder.exe",
+          "sizeBytes": 2456328,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:beed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171 pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix/drive_c/InfraRecorder/infrarecorder.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791923883267-4"
+        },
+        "requestId": "job-1791924494557-6",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791924610258
+    }
+  ],
+  "normalExitCodes": [
+    0,
+    0
+  ],
+  "registryPins": {
+    "user.reg": {
+      "sizeBytes": 101772,
+      "sha256": "4bdb54807d774e253268e103307a48781d6efb16c42af2826ee9539c0c452f93"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "2f191e19f8bedd0f6ee3476ce570fe6f85408a5aeeabd1e44d4c3dfe86966fc4"
+    },
+    "system.reg": {
+      "sizeBytes": 3423490,
+      "sha256": "720e2ba2530be8bab23a2c2f0fc24c8b66845d6506ea9625dc087991b33fa849"
+    }
+  },
+  "applicationConfigPins": {
+    "drive_c/users/forge/AppData/Roaming/InfraRecorder/settings.xml": {
+      "sizeBytes": 4742,
+      "sha256": "a56183113c31a1b5e4358ad2a06fc54bd4f1742e76b80b6eaf9a0d32678c5f67"
+    },
+    "drive_c/users/Public/Desktop/InfraRecorder.lnk": {
+      "sizeBytes": 422,
+      "sha256": "de4ac3c9f144d4f46f1d61626553add17aba1d50b91c94f2fad778ab1c87c5f5"
+    },
+    "drive_c/users/forge/AppData/Roaming/InfraRecorder/logs/261013.log": {
+      "sizeBytes": 506,
+      "sha256": "f8bb1821e726ded138b03d8c182bd8f69fd222164e54d201a08d6dcced1715a4"
+    }
+  },
+  "configurationChangesAfterFirstProcess": {
+    "user.reg": {
+      "old": {
+        "sizeBytes": 101772,
+        "sha256": "6704eda7579494f8a22ba666928f9ba1a2d9d6d943faa003239e0f305949184f"
+      },
+      "new": {
+        "sizeBytes": 101772,
+        "sha256": "4bdb54807d774e253268e103307a48781d6efb16c42af2826ee9539c0c452f93"
+      },
+      "diffLines": 20,
+      "binaryOnly": false,
+      "diagnosticTextEncoding": "utf8",
+      "causeOrKeyValueEquivalenceEstablished": false
+    },
+    "system.reg": {
+      "old": {
+        "sizeBytes": 3423490,
+        "sha256": "0b4d494f46c6165cc6f9503302537325e78bc75fc2fce57c471938d2c3ceb19f"
+      },
+      "new": {
+        "sizeBytes": 3423490,
+        "sha256": "720e2ba2530be8bab23a2c2f0fc24c8b66845d6506ea9625dc087991b33fa849"
+      },
+      "diffLines": 287,
+      "binaryOnly": false,
+      "diagnosticTextEncoding": "utf8",
+      "causeOrKeyValueEquivalenceEstablished": false
+    },
+    "drive_c/users/forge/AppData/Roaming/InfraRecorder/logs/261013.log": {
+      "old": {
+        "sizeBytes": 252,
+        "sha256": "6803a975bbd690a8231e30bff92579274fbb235972bef8324078f00d7f3ddc7d"
+      },
+      "new": {
+        "sizeBytes": 506,
+        "sha256": "f8bb1821e726ded138b03d8c182bd8f69fd222164e54d201a08d6dcced1715a4"
+      },
+      "diffLines": 10,
+      "binaryOnly": false,
+      "diagnosticTextEncoding": "utf-16",
+      "causeOrKeyValueEquivalenceEstablished": false
+    }
+  },
+  "finalDataAndConfigurationPins": {
+    "drive_c/InfraRecorderTests/市场文件A.bin": {
+      "sizeBytes": 48,
+      "sha256": "a35a9d0a2ecdd502c88b48ab66265e3c7bbf637b93f3d18b8aa3e4fa36aa8a1b"
+    },
+    "drive_c/InfraRecorderTests/市场文件B.bin": {
+      "sizeBytes": 48,
+      "sha256": "de50ce8b206ced31f08ae22ea6b8bda16f5af015ba5f7340e5ff060576e8c58a"
+    },
+    "drive_c/InfraRecorderTests/market.irp": {
+      "sizeBytes": 1844,
+      "sha256": "7c270d653fe219c8029a870b154a974b3ed7f370d4ccf3209344870821da5ef0"
+    },
+    "user.reg": {
+      "sizeBytes": 101772,
+      "sha256": "4bdb54807d774e253268e103307a48781d6efb16c42af2826ee9539c0c452f93"
+    },
+    "userdef.reg": {
+      "sizeBytes": 4052,
+      "sha256": "2f191e19f8bedd0f6ee3476ce570fe6f85408a5aeeabd1e44d4c3dfe86966fc4"
+    },
+    "system.reg": {
+      "sizeBytes": 3423490,
+      "sha256": "720e2ba2530be8bab23a2c2f0fc24c8b66845d6506ea9625dc087991b33fa849"
+    },
+    "drive_c/users/forge/AppData/Roaming/InfraRecorder/settings.xml": {
+      "sizeBytes": 4742,
+      "sha256": "a56183113c31a1b5e4358ad2a06fc54bd4f1742e76b80b6eaf9a0d32678c5f67"
+    },
+    "drive_c/users/Public/Desktop/InfraRecorder.lnk": {
+      "sizeBytes": 422,
+      "sha256": "de4ac3c9f144d4f46f1d61626553add17aba1d50b91c94f2fad778ab1c87c5f5"
+    },
+    "drive_c/users/forge/AppData/Roaming/InfraRecorder/logs/261013.log": {
+      "sizeBytes": 506,
+      "sha256": "f8bb1821e726ded138b03d8c182bd8f69fd222164e54d201a08d6dcced1715a4"
+    }
+  },
+  "guiAccepted": true,
+  "published": false,
+  "freshExplicitGuiSavedProjectOpenObserved": true,
+  "scope": "One native Data Disc project with two Chinese-name 48-byte immutable BIN references, virtual project-only rename A to market-renamed.bin and volume label ORIGINAL42, native File/Save Project As market.irp, fresh formal empty welcome then explicit CtrlO/doubleclick saved project. IRP1844B UTF16LE BOM37CRLF all raw independently reconstructed including actual input mtime DOS two-second FileTime. No actual disc or ISO writing, audio/video/media device/CD reading/encoding/plugin/full IRP or full burner/advanced/bad input/direct Chinese keyboard/network exclusion/migration/unattended/GUI market button acceptance.",
+  "configurationScope": "Three registry and selected InfraRecorder-named prefix-user files including actual Public Desktop shortcut and named ProgramData/config only, not full FS; first discovery is not creation-time proof.",
+  "runtimeFunctionOrRootCauseEstablished": false,
+  "launcherOrGlobalCoreProgramRuntimeFixApplied": false,
+  "mainInstalledLicenseSourceComparisonVerified": true,
+  "fullBundleLicenseClosureVerified": false,
+  "marketAboutObserved": false,
+  "checkpoint": {
+    "file": "before-rollback.json",
+    "sha256": "c7e0cdaef7aca6bbfc775fd0cb14f1622679fe61ce4b379abd52141bfe9e6c4f",
+    "coreJobs": 547,
+    "fullStoreRows": 159
+  },
+  "fixtureReferences": {
+    "drive_c/InfraRecorderTests/市场文件A.bin": "infrarecorder-20261013/market/市场文件A.bin",
+    "drive_c/InfraRecorderTests/市场文件B.bin": "infrarecorder-20261013/market/市场文件B.bin",
+    "drive_c/InfraRecorderTests/market.irp": "infrarecorder-20261013/market/market.irp"
+  },
+  "screenshots": {
+    "06-market-two-files-added.jpg": {
+      "sizeBytes": 34485,
+      "sha256": "34a3d04db861d0b8993946cf2dc5aa4261025cf5b89e173efb4cc66f7b49feba",
+      "reference": "infrarecorder-20261013/market/06-market-two-files-added.jpg",
+      "actualEncoding": "JPEG",
+      "diagnosticOnly": false
+    },
+    "07-market-native-saved.jpg": {
+      "sizeBytes": 34872,
+      "sha256": "f068ae7ea740e412579d77b3f909b0ed3a3db87bf3df0032e8ae83a12eb8e97f",
+      "reference": "infrarecorder-20261013/market/07-market-native-saved.jpg",
+      "actualEncoding": "JPEG",
+      "diagnosticOnly": false
+    },
+    "08a-market-new-process-empty-welcome.jpg": {
+      "sizeBytes": 24053,
+      "sha256": "6e5a9c80e1f161b750e0c7a21f606118494fd4ccf221371d24b0bc4b9e0f280a",
+      "reference": "infrarecorder-20261013/market/08a-market-new-process-empty-welcome.jpg",
+      "actualEncoding": "JPEG",
+      "diagnosticOnly": false
+    },
+    "08b-market-new-process-explicit-open.jpg": {
+      "sizeBytes": 35149,
+      "sha256": "c1e438c58e417a4f2d05022f19139ed5ac9c7065a98b494cd6c4659b83a6f1b4",
+      "reference": "infrarecorder-20261013/market/08b-market-new-process-explicit-open.jpg",
+      "actualEncoding": "JPEG",
+      "diagnosticOnly": false
+    },
+    "09a-rollback-original-empty-welcome.jpg": {
+      "sizeBytes": 24027,
+      "sha256": "19936d98305ef34a46ce467b3a90443d7f0822a789097e23a8497aa105e68eca",
+      "reference": "infrarecorder-20261013/market/09a-rollback-original-empty-welcome.jpg",
+      "actualEncoding": "JPEG",
+      "diagnosticOnly": false
+    },
+    "09b-rollback-original-explicit-open.jpg": {
+      "sizeBytes": 35274,
+      "sha256": "46cf90ab8157499371d0c7b5f93ec344d9e97f0cd33746954a4a2d8db599b3ae",
+      "reference": "infrarecorder-20261013/market/09b-rollback-original-explicit-open.jpg",
+      "actualEncoding": "JPEG",
+      "diagnosticOnly": false
+    }
+  },
+  "independentHostWholeRawVerification": {
+    "passed": true,
+    "sourceInputsAllRawIndependentlyMatched": true,
+    "actualInputMtimeSeparatelyObservedNotReadFromIrp": true,
+    "wholeRawIndependentlyReconstructed": true,
+    "saveProof": {
+      "sizeBytes": 1844,
+      "sha256": "7c270d653fe219c8029a870b154a974b3ed7f370d4ccf3209344870821da5ef0",
+      "utf16LeBom": true,
+      "crLfCount": 37,
+      "wholeRawIndependentlyReconstructed": true,
+      "finiteProjectVersion": 3,
+      "type": 0,
+      "media": 4,
+      "label": "MARKET42",
+      "twoReferencedImmutableInputs": true,
+      "virtualProjectRenameOnly": true,
+      "physicalInputNamesAndContentPreserved": true,
+      "fileTimesFromActualInputMtimeDosTwoSecondResolution": true,
+      "completeIrpSpecificationOrActualDiscBurningVerified": false
+    },
+    "actualInputTimes": {
+      "drive_c/InfraRecorderTests/市场文件A.bin": {
+        "pin": {
+          "sizeBytes": 48,
+          "sha256": "a35a9d0a2ecdd502c88b48ab66265e3c7bbf637b93f3d18b8aa3e4fa36aa8a1b"
+        },
+        "mtimeNs": 1791924141314549987,
+        "mtimeWholeUnixSeconds": 1791924141,
+        "windowsFileTimeWithDosTwoSecondResolution": 134363977400000000
+      },
+      "drive_c/InfraRecorderTests/市场文件B.bin": {
+        "pin": {
+          "sizeBytes": 48,
+          "sha256": "de50ce8b206ced31f08ae22ea6b8bda16f5af015ba5f7340e5ff060576e8c58a"
+        },
+        "mtimeNs": 1791924141314621225,
+        "mtimeWholeUnixSeconds": 1791924141,
+        "windowsFileTimeWithDosTwoSecondResolution": 134363977400000000
+      }
+    },
+    "dataLibrarySha256": "0eefadfdbb99ac492db29e36e64028c0dffe9871cc1e0921824cd5f9a50b003c"
+  },
+  "limits": [
+    "Only one native Data Disc project per role with two small immutable Chinese-name BIN references, native drag after actual ShiftDown double selection, F2 virtual project-only A rename to original-renamed.bin or market-renamed.bin, F2 root volume label ORIGINAL42 or MARKET42, File/Save Project As IRP and new formal empty welcome then explicit CtrlO/doubleclick IRP. Synthetic BIN/IRP are not separate apps. No actual disc/ISO/image writing, CD reading, erase/fixate, audio/video/encoding/device/playback/plugin/full IRP/burner/advanced/bad input/direct Chinese keyboard/network-background exclusion/migration/unattended/GUI market button acceptance.",
+    "Original inputs each50B unchanged. Original IRP1852B UTF16LE BOM37CRLF SHA69f3714167761a99e0407b2c63d799005a0ab3c66a3bcc6af49cc0d1895865a7 complete raw independently reconstructed: XML declaration, InfraRecorder/unique Project version3/type0/media4, label, actual default ISO/FileSystem/emptyFields/Boot, File0/File1 flags0, exact virtual InternalName and actual Chinese source FullPath, FileTime derived independently from actual input mtime at DOS two-second resolution. No complete XML/IRP/Windows API/time semantics or actual burn correctness claim. Input physical names/content preserved; project name edit is virtual only.",
+    "Default English/Chinese names readable without font changes. Original About0.53.0.0(unicode,x86), cdrtools installed version Unknown text only; market About untested. Two original File/Exit0 plus wineserver stop is not acceptance alone. New original starts empty Welcome, no automatic project restoration. Open dialog retains actual previous native save directory and doubleclick exact IRP, not claiming a repeated C-tree navigation in that new Open.",
+    "Official fixed installer4151536B SHA8cee83f7f489a6aef4218a953b87b1c22d6a93c966e79275c8cb2abe830d0731 matches official SourceForge displayed SHA observed as web-tool text, not original HTML. Source8370542B SHAe06fe21f65c094043b1ced6ac1995fce6946416070480318025b5fdc5844962f local only. Both complete HTTPS200/ContentLength; official MD5 both matched weak-only, not strong authenticity. Two GET routes terminal before original install; complete first partial/cache retained without repeat GET. ZIP681 unique members625 regular files/allCRC passed;18 selected source raw only, not all-source manual review. PGP/Authenticode/API digest/source-binary correspondence/repro/latest not verified.",
+    "Fixed main infrarecorder.cc explicitly GPL3-or-later. Installed license.txt35821B SHA0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b exactly all root source license.txt raw; license.rtf and help licence notices preserved separately. Full ATL/WTL/MSVC/ckcore/ckcdr/tinyxml/cdrtools/cdrdao/codecs/plugins/icons/translations bundle licence closure unverified. No MP3 plugin package download/install or plugin function acceptance. Public no installer/program binary.",
+    "Actual existing isolated7Zip lists TypeNsis, bootstrap/mainPE0x14c. Native /S and last /D=C:single-backslashInfraRecorder only, DIR19UTF8B hex2f443d433a5c496e6672615265636f72646572. Source native /S description, NSIS setup entry/license/associations/default shortcuts static only, not complete NSIS/UAC/installation/association/uninstall behaviour. Actual Public Desktop InfraRecorder shortcut protected by selectedpins; not no-shortcut claim. Main2456328B SHAbeed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171 is not whole app size. Original71 programs all raw held across bothGUI; no Core/program/globalcontext/definition/launcher env/cwd/fonts/globalDLL/runtime repair.",
+    "Only fixed data/two71 program maps/three registry and selected InfraRecorder-named prefix-user including Public shortcut and ProgramData/config paths, not all FS. Actual registry/log changes and raw/diff privately held; log diagnostic decoded actualUTF16 when BOM matched, not lossy UTF8 diff. Causes/key-value equivalence unestablished; first discovery not creation time. Complete544Core/158SQLite seven-class before-market CP saved/readback, full private CP excluded. Recent64 IPC not fullSQLite; Core query may write existing scratch.",
+    "First host7Zip guessed installed path assert after ZIPinventory and before any transfer/definition/task; original helper kept. NewV2 uses actual already-isolated tool and same packages, no repeated GET. Guessed helper reads/missingpaths and broad rg truncated synthetic fixture output only tool history, not checks completed or fabricated exactraw. Host display assumedUTF8 and raisedUnicodeDecodeError on actualFFFE IRP before Quit/CP/newlaunch; actualUTF16 fullraw reconstruction subsequently passed. Input-time observation V1 JSON readback failed because timezone tuple became list after write; old written JSON/error/helper kept, V2 list and full current fields equality with old written JSON actual verified, no CP/restart/quit/newlaunch during recovery. Empty wrapperstdout attempted read raisedJSONDecodeError, no dependent mutation continued.",
+    "Upper input browser selection briefly entered existing source A filename edit; Escape cancelled before typing/commit, then actual size-column selection+ShiftDown double selection and native drag succeeded. Inputs full raw/name assertions pass; no source physical rename. CtrlShiftS observed no SaveAs dialog, actual File menu SaveProjectAs used; not keyboard fix. Initial dialog MyComputer click hit noVNC left toolbar; normal collapse/window move then actual MyComputer/C/InfraRecorderTests save succeeded, no application repair. Two fresh-field fully masked normal authorised logins, auth/password/lockscreen/power unchanged; no login images/password/raw credentials saved.",
+    "All prior failures/helpers/root/signatures/trust/freezes/history kept, old Scribus one private canonicalV1 exactraw loss not fabricated. Greenfish EULA no program modification/shader deletion; CopyQ no notification disabling/globalDLL masking; Zim font/AegisubConcurrency unresolved; Texmaker source-only architecture guard/cache held. UbuntuKateAPT/Snapcalculator2 independently tracked, Flatpak2 runtime timeouts/cache held, no UbuntuVM or concurrent two4GiBVM this round. No full private CP/keys/credentials/password/login images/exact signedredirectquery public.",
+    "Original33 source/install/gui and signed marketPending receipt are frozen historical phase statements, completion separate. V78/role87 was signed and strictly transferred/staged once, then actual Store catalogue URL guard rejected query-bearing InfraRecorder origin. Immediate socket capture failed before after-activation CP or market tasks, readonly recovery V2 service-state assertion stopped before CP. Actual private unit/journal diagnostic and six non-market classes/full158-row SQLite backup readback saved, NOT complete seven-class live CP; Store normal stop then higher V79/role88 changes only origin to official HTTPS homepage, retains all151 noncatalogue V78 target pins/root and V78/role87 failures/signatures/trust. One higher signature/transfer/stage then normal start/live-socket readiness/full544158 seven-class CP passed before market update. No guard weakening/Core/Store code change/repeat V78 signature or transfer/trust reset.",
+    "Origin correction builder V1 incorrectly expected existing fixed file fixture backend name fixture; assertion stopped before any V79 directory write/sign/transfer. V2 checks exact existing org.forgeos.storefixture/forge-package/file target and all Windows application HTTPS URLs. Unexecuted activation draft compatforge-core.service name corrected to actual compatforge.service before first execution; not actual failed guest audit. Missing guessed stage/fixture-launch helper reads are tool history only, no fabricated exactraw.",
+    "Two market71-program maps all same as original, no uninstaller-data difference or all-equal failure invented. Actual diagnostic had noCP/fixture/GUI, strict literal differences=={} and full545159 CP readback before market inputs/GUI. Native market1844B IRP UTF16LE BOM37CRLF all raw host reconstructed from immutable fixture names/raw and separately observed actual source mtime; no complete IRP/burner/device acceptance. Two market native Exit0 with wineserver stop, fresh empty Welcome explicit CtrlO/doubleclick market.irp. Reopen readonly historical key exactOriginalIrpDoubleClickedInActualLastSaveDirectory inherited wrong key name; actual job/generation/saveProof label MARKET42/market.irp and JPEG08a08b are market; correction separate, raw kept. No new GUI/CP/restart for label correction.",
+    "Five native File/Exit0+wineserver stop, no actual disc burn/ISO image output/CD read/erase/audio/video/device/plugins accepted. Three fresh processes actually empty Welcome, explicit native Open dialog retains respective prior save directory, no auto-restore or repeated C-tree navigation claim. Third original actual registry and UTF16 log raw/diff private, causes/semantic equivalence unestablished; original pins updated only after observation and full CP readback, market allpins unchanged. Final Core/Store normal restart each once separate from failed preview/recovery normal Store stop/start. Full548160 seven-class CP and current readonly exactmatch; not fullFS/zero scratch writes.",
+    "Three fresh fully masked authorised normal logins this round, password/auth/lock/power unchanged and no saved login images. Browser viewport temporary993x998 for existing documented zero-viewport limitation, reset at end; no guest authentication/power changes."
+  ]
+}

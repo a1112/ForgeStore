@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 x86_64 KVM, KDE Wayland, Wine 11.14 win64, managed MSI fixed SQLite browser. Existing normal authentication retained.",
+  "applications": [
+    {
+      "id": "dbbrowser",
+      "version": "3.13.1",
+      "observedGuiVersion": "DB Browser for SQLite Version 3.13.1; build 5d84f53; x86_64; Qt 5.15.2; SQLite 3.46.1",
+      "sha256": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688",
+      "size": 19857408,
+      "installJobId": "job-1791686327258-1",
+      "launchJobId": "job-1791686437376-2",
+      "reopenJobId": "job-1791686769244-3",
+      "generationId": "gen-job-1791686327258-1",
+      "definitionDigest": "sha256:4359422777e4dc48af6a4e094f4525bb15642561acbe484a7c7129a1c66355a8",
+      "launcherSha256": "sha256:8baa96174172f2df10747be48e2cdae2ab7a22fecf8aace5a965f4f9f57b18b1",
+      "runtimePackDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+      "guiFileOperation": "passed-limited-sqlite-workflow-manual-dpi-warning",
+      "fixture": {
+        "file": "input/中文数据库.db",
+        "sizeBytes": 8192,
+        "sha256": "e58860f30a98ec6a87b983450ccb8259e5b3bfa2062eefcee1725ac116ba9c0d",
+        "rows": [
+          [
+            1,
+            "中文保留",
+            21
+          ],
+          [
+            2,
+            "before",
+            21
+          ]
+        ],
+        "syntheticFixtureOnly": true
+      },
+      "savedOutput": {
+        "file": "output/original-edited.db",
+        "sizeBytes": 8192,
+        "sha256": "4244e2645b4696f5a6770acd740d56e1873c4a34b12f15973540b1d946c0aa46",
+        "rows": [
+          [
+            1,
+            "中文保留",
+            21
+          ],
+          [
+            2,
+            "after",
+            22
+          ],
+          [
+            3,
+            "result",
+            42
+          ]
+        ],
+        "schema": "CREATE TABLE items (id INTEGER PRIMARY KEY,name TEXT NOT NULL,amount INTEGER NOT NULL)",
+        "integrityCheck": "ok"
+      },
+      "inputUnchanged": true,
+      "chineseContentPreserved": true,
+      "explicitFreshProcessOutputReopenObserved": true,
+      "startupDpiWarningUnresolved": true,
+      "unattendedLaunchVerified": false,
+      "fullDatabaseEditorAcceptance": false,
+      "screenshots": {
+        "original-about.jpg": {
+          "sizeBytes": 235837,
+          "sha256": "f62c7ad4abbba6d4de3dc654fd3c6170d085d248a8416a11aa6af78b2b1e8769"
+        },
+        "original-input.jpg": {
+          "sizeBytes": 175885,
+          "sha256": "e4f895f43544eaf75955537d5280ac445643601112e834f5fcafe6ea11e92fc6"
+        },
+        "original-reopened.jpg": {
+          "sizeBytes": 33014,
+          "sha256": "26bdb2887eaa4df2e346cbbaa48962713f55f16512ac1175f66252e95bfa6ca1"
+        },
+        "original-saved.jpg": {
+          "sizeBytes": 177238,
+          "sha256": "3dfd348c22d3edd0b48de77831c3767962838823e0f6de8ba841efb8249c6d0d"
+        },
+        "original-sql.jpg": {
+          "sizeBytes": 204787,
+          "sha256": "24dcd5b5374df7e4bef127ea854b2c55f054786bb05162afc598116abbf5bfa7"
+        },
+        "original-startup-warning.jpg": {
+          "sizeBytes": 169055,
+          "sha256": "6af4008c9a2076c8f8f37b35d9aff5121949ef1a18b4832eb5009bbba2abeccc"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-dbbrowser-source.json",
+    "sha256": "9ee0b7c3ad4fed64fcfa83f6bd29e3873fa608508fe24d77923a009a8d7f3fcd",
+    "artifact": {
+      "fileName": "DB.Browser.for.SQLite-v3.13.1-win64.msi",
+      "url": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.msi",
+      "sizeBytes": 19857408,
+      "sha256": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688",
+      "releaseBodyChecksum": "d023d54b3a5db10c7e896089bb3dbe6e7f4bc4eaa9bbecb34ca414be5970f688",
+      "githubAssetDigest": null,
+      "officialReleaseBodyChecksumMatched": true,
+      "actualHttpsBytesSha256Matched": true,
+      "compoundFileMagicMatched": true,
+      "sourceUrl": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1-win64.msi"
+    },
+    "sourceArchive": {
+      "url": "https://codeload.github.com/sqlitebrowser/sqlitebrowser/zip/5d84f53f85570a31767548cded89c96de6ff70ae",
+      "sizeBytes": 5396873,
+      "sha256": "d4f77fb61e848b55b3da582d8984a35bbb7dcea8ca77a42acf33f2dcbb3b41d9"
+    },
+    "license": "MPL-2.0 OR GPL-3.0-or-later",
+    "fullComponentLicenseClosureVerified": false
+  },
+  "limits": [
+    "Only fixed DB Browser for SQLite 3.13.1 x64 on Wine 11.14 win64 and two small 8192-byte SQLite fixtures are in scope; SQLCipher is not tested or separately counted.",
+    "Original GUI opened a Chinese filename, used Save Database As to an ASCII path, executed one UPDATE, one INSERT SELECT and one SELECT, clicked Write Changes, and explicitly reopened the saved database in a fresh process.",
+    "Startup displays EnableNonClientDpiScaling failed (120, Call not implemented); manually acknowledged in each tested process. DPI warning is not fixed and unattended launch is unverified.",
+    "Direct Chinese keyboard input, large databases, alternate schemas, import/export, encryption, remote connections, plugins and full database-editor acceptance are untested.",
+    "Fixed root license declares MPL-2.0 OR GPL-3.0-or-later; installed text matches only after CRLF normalization. Full bundled component and icon redistribution closure is unverified; fixed plugin notice qualifies project-specific CC BY-SA icon permission versus possible CC BY-NC-SA for others.",
+    "Authenticode, reproducible build, guest network download, new-machine registration, configuration migration and cross-version upgrades are unverified.",
+    "Independent market generation, cached same-version update, exact rollback and service restart were pending when original proof was frozen."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

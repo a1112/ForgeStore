@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "applications": [
+    {
+      "id": "smplayer",
+      "version": "23.12.0",
+      "sha256": "b2e4cee60e57385b4e20485ff29ec4794d55b1ce77e385542ba61c5e91277ba5",
+      "size": 47730614,
+      "generationId": "gen-job-1791853044103-1",
+      "definitionDigest": "sha256:648d8fd39af93980365bf0851275f088dc186e6c4f25068d4a427769fdcd1585",
+      "launcherSha256": "sha256:3da04b0f13627858afbf7b32f14e27883fed9903d025fb5568c55b86a1df7cc9",
+      "guiFileOperation": "passed-limited-native-two-wav-playlist-MoveUp-SaveAs-AllFiles-M3u8-new-empty-explicit-load",
+      "saveProof": {
+        "generationId": "gen-job-1791853044103-1",
+        "job": {
+          "applicationId": "smplayer",
+          "createdAtMilliseconds": 1791853189095,
+          "events": [
+            {
+              "elapsedMilliseconds": 0,
+              "kind": "started",
+              "processId": 69501,
+              "requestId": "job-1791853189095-2",
+              "schemaVersion": "1",
+              "sequence": 0
+            },
+            {
+              "elapsedMilliseconds": 932867,
+              "kind": "wine-server-stop-requested",
+              "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791853044103-1/prefix",
+              "requestId": "job-1791853189095-2",
+              "schemaVersion": "1",
+              "sequence": 1
+            },
+            {
+              "elapsedMilliseconds": 932909,
+              "exit": {
+                "code": 0,
+                "success": true
+              },
+              "kind": "exited",
+              "requestId": "job-1791853189095-2",
+              "schemaVersion": "1",
+              "sequence": 2
+            }
+          ],
+          "generationId": "gen-job-1791853044103-1",
+          "id": "job-1791853189095-2",
+          "inspection": {
+            "architecture": "x86",
+            "entryPointRva": 5312,
+            "fileDigest": "sha256:3da04b0f13627858afbf7b32f14e27883fed9903d025fb5568c55b86a1df7cc9",
+            "fileSizeBytes": 4462592,
+            "format": "pe32",
+            "imageKind": "executable",
+            "importLibraries": [
+              "ddraw.dll",
+              "dsound.dll",
+              "kernel32.dll",
+              "libgcc_s_dw2-1.dll",
+              "libstdc++-6.dll",
+              "msvcrt.dll",
+              "ole32.dll",
+              "qt5core.dll",
+              "qt5dbus.dll",
+              "qt5gui.dll",
+              "qt5network.dll",
+              "qt5qml.dll",
+              "qt5widgets.dll",
+              "qt5xml.dll",
+              "shell32.dll",
+              "user32.dll"
+            ],
+            "machineCode": 332,
+            "schemaVersion": "1",
+            "sections": [
+              {
+                "executable": true,
+                "name": ".text",
+                "rawDataSize": 2635264,
+                "readable": true,
+                "virtualAddress": 4096,
+                "virtualSize": 2635144,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".data",
+                "rawDataSize": 2560,
+                "readable": true,
+                "virtualAddress": 2641920,
+                "virtualSize": 2520,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rdata",
+                "rawDataSize": 1359872,
+                "readable": true,
+                "virtualAddress": 2646016,
+                "virtualSize": 1359388,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".eh_fram",
+                "rawDataSize": 219648,
+                "readable": true,
+                "virtualAddress": 4005888,
+                "virtualSize": 219456,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".bss",
+                "rawDataSize": 0,
+                "readable": true,
+                "virtualAddress": 4227072,
+                "virtualSize": 4292,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".idata",
+                "rawDataSize": 94208,
+                "readable": true,
+                "virtualAddress": 4235264,
+                "virtualSize": 94084,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".CRT",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 4329472,
+                "virtualSize": 52,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".tls",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 4333568,
+                "virtualSize": 32,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rsrc",
+                "rawDataSize": 148992,
+                "readable": true,
+                "virtualAddress": 4337664,
+                "virtualSize": 148744,
+                "writable": true
+              }
+            ],
+            "subsystem": "windowsGui",
+            "subsystemCode": 2
+          },
+          "kind": "launch",
+          "launchPlan": {
+            "bottleExecutable": {
+              "architecture": "i386",
+              "bottleId": "gen-job-1791853044103-1",
+              "digest": "sha256:3da04b0f13627858afbf7b32f14e27883fed9903d025fb5568c55b86a1df7cc9",
+              "imageKind": "executable",
+              "inspectionSchemaVersion": "1",
+              "originalName": "smplayer.exe",
+              "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791853044103-1/prefix/drive_c/SMPlayer/smplayer.exe",
+              "sizeBytes": 4462592,
+              "subsystem": "windowsGui"
+            },
+            "decisionTrace": [
+              "runtime provider wine-linux-x86-64-preview selected as wine",
+              "translator native selected",
+              "graphics backend wined3d selected",
+              "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+              "Bottle CJK font pinned by digest",
+              "bottle-executable sha256:3da04b0f13627858afbf7b32f14e27883fed9903d025fb5568c55b86a1df7cc9 pinned in place",
+              "inspection i386 windowsGui accepted"
+            ],
+            "graphics": {
+              "backend": "wined3d",
+              "version": "11.14"
+            },
+            "lifecycle": {
+              "terminationGraceMilliseconds": 3000,
+              "wineserver": {
+                "executable": "/usr/bin/wineserver",
+                "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791853044103-1/prefix"
+              }
+            },
+            "process": {
+              "arguments": [
+                "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791853044103-1/prefix/drive_c/SMPlayer/smplayer.exe"
+              ],
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "DISPLAY": ":0",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791853044103-1/prefix",
+                "WINESERVER": "/usr/bin/wineserver",
+                "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+              },
+              "executable": "/usr/bin/wine",
+              "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791853044103-1"
+            },
+            "requestId": "job-1791853189095-2",
+            "runtime": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "sandbox": {
+              "network": "deny",
+              "profile": "desktop"
+            },
+            "schemaVersion": "1",
+            "translator": {
+              "provider": "native"
+            }
+          },
+          "schemaVersion": "1",
+          "status": "succeeded",
+          "updatedAtMilliseconds": 1791854124293
+        },
+        "inputPins": {
+          "drive_c/SMPlayerTests/原始音频A.wav": {
+            "sizeBytes": 32044,
+            "sha256": "cb5c6604e9a1f1990437133e550427afaa30b08c65408c2a1e51a914ebcbd39a"
+          },
+          "drive_c/SMPlayerTests/原始音频B.wav": {
+            "sizeBytes": 32044,
+            "sha256": "2dc569bae88701c3b9794a939681e716c6679279adf50ba967f7d2deed273098"
+          }
+        },
+        "outputFile": "drive_c/SMPlayerTests/original.m3u8",
+        "outputPin": {
+          "sizeBytes": 166,
+          "sha256": "9c10045fdb2c35667bbee08cbe46e696e8f7fa6868df18d12c103262a1e66c2d"
+        },
+        "diagnosticOutputPins": {
+          "drive_c/SMPlayerTests/original.m3u": {
+            "sizeBytes": 134,
+            "sha256": "6b2f535eb18f8d65d76b9b9991e88df42fd34dbedc09dab803940b3d7d8e38c4"
+          },
+          "drive_c/SMPlayerTests/original.m3u8.m3u": {
+            "sizeBytes": 134,
+            "sha256": "6b2f535eb18f8d65d76b9b9991e88df42fd34dbedc09dab803940b3d7d8e38c4"
+          }
+        },
+        "finiteM3u8Order": [
+          "原始音频A.wav",
+          "原始音频B.wav"
+        ],
+        "inputDurationsMilliseconds": [
+          2000,
+          2000
+        ],
+        "extinfDurationFields": [
+          0,
+          0
+        ],
+        "normalQuitMethod": "native advertised CtrlQ after noVNC overlay blocked first menu attempt",
+        "hearingPlaybackOrAudioDeviceVerified": false,
+        "freshExplicitGuiReopenAccepted": false,
+        "published": false,
+        "checkpoint": {
+          "file": "after-original-save.json",
+          "sha256": "78e3d02ce8d3629c2c3c687489044123e1cf0a0923ca15255051ad9e10a8c374",
+          "coreJobs": 508,
+          "fullStoreRows": 148
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "01-original-ordered.jpg": {
+          "sizeBytes": 55349,
+          "sha256": "256253e08587b20161073ba53ef3fdf6f4862ba3bb3a5840551ca5fb655cd31c",
+          "actualEncoding": "JPEG"
+        },
+        "02-original-save-dialog.jpg": {
+          "sizeBytes": 46767,
+          "sha256": "96a2be53134dc00c30c447a0e2f3133aa362530b7b073205ab963a7c79f9ae66",
+          "actualEncoding": "JPEG"
+        },
+        "02b-original-m3u8-save-dialog.jpg": {
+          "sizeBytes": 48187,
+          "sha256": "6b6db8a2f50dac3334010ccbbefb636d44be8b2a2f8c7d130ce7a93eefe4cfe6",
+          "actualEncoding": "JPEG"
+        },
+        "02c-original-all-files-m3u8-save-dialog.jpg": {
+          "sizeBytes": 51798,
+          "sha256": "0661eccf81dae2bc37a068a3d131e18292401fe7614b7ef40ee6b502e9235bac",
+          "actualEncoding": "JPEG"
+        },
+        "03-original-about.jpg": {
+          "sizeBytes": 62508,
+          "sha256": "52eb688761138099ac3f9130cbdc6f1c660512d3927774f426e50fdd52ba528d",
+          "actualEncoding": "JPEG"
+        },
+        "04-original-new-process-explicit-load.jpg": {
+          "sizeBytes": 62316,
+          "sha256": "d7b9a6f8c9efead8acfc4b1540b4f00777a2ce66ffb03a83a2696d539b8c71e6",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-13-smplayer-source.json",
+    "sha256": "6a80d4a344d4e38cc6d8cc1b6edff2cca7e4d866985f8121c6f713f3512b96d4"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-13-smplayer-gui.json",
+    "sha256": "04ec4991b0758aee281a19279fe99df18836096f6827e2a32d3c8ace1a656c08"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-13-smplayer-failures.json",
+    "sha256": "bbe15f3c12ebd3380dc3ddc544b4eca83104edf77c5bae80c6ac53aeef1ed0c3"
+  },
+  "limits": [
+    "Only two tiny Chinese-name PCM WAV inputs, native Add files B then A through C-drive tree, native Move Up reorder A,B, native SaveAs All files to166-byte UTF8 no BOM six-LF trailing-LF original.m3u8 and fresh formal process Remove all empty then explicit Load. Saved EXTINF fields0; initial Add GUI lengths00:00:00, after explicit Load GUI lengths00:00:02 and main Stop observed. No hearing, actual audio-device, full-playback/player, video/DSP/metadata edit/library/stream/CD/transcode/YouTube/subtitle download/plugins/other formats/large-bad inputs/printing/direct Chinese keyboard/network/new registration/migration/cross-version/unattended/GUI Store button acceptance. Background networking not excluded.",
+    "Default UI retained. Chinese file names readable in native file list and this small playlist. Original About23.12.0 revision10207 32-bit Qt5.6.3 compiledQt5.6.3 UsingMPV0.34.0; version text not playback/device proof, market About not measured. No Core/program/globalcontext/definition/launcher env/cwd/font/global DLL/runtime repair.",
+    "Failed134B ASCII M3U with???? names and auto-appended original.m3u8.m3u retained. Readonly M3U8 FileNotFound stopped CP/Quit/new launch. Exact All files M3U8 native save passed; no general Chinese M3U/encoding/file-dialog or keyboard repair claimed. First Quit click hit noVNC overlay; nonterminal guard stopped CP/new launch before normal advertised CtrlQ and V2 terminal gate passed.",
+    "Official fixed release-expanded HTML direct links, both complete HTTPS200 ContentLength and local SHA. API403 limited before package GET; API digest/exact API size/tag commit SHA/upstream public SHA/PGP/Authenticode/source-binary/repro/latest unverified. Filename unsigned is not an independently measured Authenticode result. Main GPL2-or-later installed Copying.txt exact18328B equals selected source. Full Qt/MPlayer/mpv/FFmpeg/OpenSSL/libmaia/skins/icons/translations/codecs licence closure unverified.",
+    "Two normal CtrlQ exit0 and wineserver stop support, not sole acceptance. Only fixed files,261programs,three registry and selected SMPlayer named prefix-user config, not whole app filesystem. Original signed marketPending stage frozen, market completion separate."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

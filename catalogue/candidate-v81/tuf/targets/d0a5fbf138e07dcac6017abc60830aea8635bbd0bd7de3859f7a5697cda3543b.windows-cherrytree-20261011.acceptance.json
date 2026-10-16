@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "environment": "Original isolated ForgeOS v12 KVM, Wine 11.14 win64, fixed native launcher-cwd-v11-r1 Core and managed-msi-v2 Store.",
+  "applications": [
+    {
+      "id": "cherrytree",
+      "version": "1.7.2.1",
+      "observedGuiVersion": "1.7.2",
+      "sha256": "81048bf7b326516dace5a7078794d7bbe05ec44d5d7be9492f304b8347a4f898",
+      "size": 96911680,
+      "generationId": "gen-job-1791700398780-5",
+      "definitionDigest": "sha256:3b3cbb7cfec767ac3fe32c783528fd196ab066c89ff67300065c4543f6ee0521",
+      "launcherSha256": "sha256:a4e3a57a7c2fbcd96542866b17cc08f0b634fbd463c760e27fb92b5c10d131e6",
+      "launcherEnvironment": {
+        "PANGOCAIRO_BACKEND": "fc"
+      },
+      "installJobId": "job-1791700398780-5",
+      "launchJobId": "job-1791700486345-6",
+      "reopenJobId": "job-1791700690920-7",
+      "guiFileOperation": "passed-limited-xml-parent-child-edit-save-fresh-reopen",
+      "savedOutput": {
+        "file": "output/formal-edited.ctd",
+        "sizeBytes": 711,
+        "sha256": "d24ef00be53cdeea5a7efc294045010f33849bba938f0255c11b1f441ef0330a",
+        "nodes": [
+          {
+            "name": "FormalRoot",
+            "text": "ForgeOS formal root\nSTATUS=AFTER\n"
+          },
+          {
+            "name": "FormalChild",
+            "text": "ForgeOS formal child\nVALUE=21\nAPPENDED=ORIGINAL\n"
+          }
+        ],
+        "base64": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGNoZXJyeXRyZWU+CiAgPGJvb2ttYXJrcyBsaXN0PSIiLz4KICA8bm9kZSB1bmlxdWVfaWQ9IjEiIG1hc3Rlcl9pZD0iMCIgbmFtZT0iRm9ybWFsUm9vdCIgcHJvZ19sYW5nPSJjdXN0b20tY29sb3JzIiB0YWdzPSIiIHJlYWRvbmx5PSIwIiBub3NlYXJjaF9tZT0iMCIgbm9zZWFyY2hfY2g9IjAiIGN1c3RvbV9pY29uX2lkPSIwIiBpc19ib2xkPSIwIiBmb3JlZ3JvdW5kPSIiIHRzX2NyZWF0aW9uPSIxNzkxNjk5OTAzIiB0c19sYXN0c2F2ZT0iMTc5MTcwMDUyMCI+CiAgICA8cmljaF90ZXh0PkZvcmdlT1MgZm9ybWFsIHJvb3QKU1RBVFVTPUFGVEVSCjwvcmljaF90ZXh0PgogICAgPG5vZGUgdW5pcXVlX2lkPSIyIiBtYXN0ZXJfaWQ9IjAiIG5hbWU9IkZvcm1hbENoaWxkIiBwcm9nX2xhbmc9ImN1c3RvbS1jb2xvcnMiIHRhZ3M9IiIgcmVhZG9ubHk9IjAiIG5vc2VhcmNoX21lPSIwIiBub3NlYXJjaF9jaD0iMCIgY3VzdG9tX2ljb25faWQ9IjAiIGlzX2JvbGQ9IjAiIGZvcmVncm91bmQ9IiIgdHNfY3JlYXRpb249IjE3OTE3MDAxMjkiIHRzX2xhc3RzYXZlPSIxNzkxNzAwNjI4Ij4KICAgICAgPHJpY2hfdGV4dD5Gb3JnZU9TIGZvcm1hbCBjaGlsZApWQUxVRT0yMQpBUFBFTkRFRD1PUklHSU5BTAo8L3JpY2hfdGV4dD4KICAgIDwvbm9kZT4KICA8L25vZGU+CjwvY2hlcnJ5dHJlZT4K"
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "explicitFreshProcessReopenObserved": true,
+      "screenshots": {
+        "01-start.jpg": {
+          "sizeBytes": 129166,
+          "sha256": "f8911e2c0277ffe61eb8228231efb2eb6ffffb946c8b4f9b9f295cdd48d91634"
+        },
+        "02-original-root.jpg": {
+          "sizeBytes": 129892,
+          "sha256": "5e86ea80958484625b8d716401c89226078547f63e509470272dfc7b598878e4"
+        },
+        "03-autosave-storage-rendering.jpg": {
+          "sizeBytes": 181304,
+          "sha256": "ddfdb8ea68392309095757c2a554ced75d0778a14c892f62c3f17044253757ec"
+        },
+        "04-native-save-dialog.jpg": {
+          "sizeBytes": 129434,
+          "sha256": "359a6aaff495e6b7594980e0ebb7836062a92417fcac78e9db1da38819640fbc"
+        },
+        "05-child-saved-rendering.jpg": {
+          "sizeBytes": 137150,
+          "sha256": "4d2827dc6abc6fc39748f7359b2807e9bf9f8173e1f14b75cd7af1f2e271abff"
+        },
+        "06-child-save-complete.jpg": {
+          "sizeBytes": 136903,
+          "sha256": "321983743a10dcabbcba16fbdeae6c46a9d1689cf563a9967267a8fbe85008db"
+        },
+        "07-fresh-process-child-rendering.jpg": {
+          "sizeBytes": 136829,
+          "sha256": "1a256a2f1eb0c41539c5b3fb86598b1e09f924c0c796ff5750c323e2ea96130c"
+        },
+        "08-fresh-process-root-rendering.jpg": {
+          "sizeBytes": 135405,
+          "sha256": "f21739cdd831a51bc20e05a3ad3751d8476aab4d884158bd00fe6729bd00411c"
+        },
+        "09-fc-diagnostic-root-readable.jpg": {
+          "sizeBytes": 136786,
+          "sha256": "72e32513b10fe198b735b43ddaba81bf8895ce74ffa01532e3c182322d544e8b"
+        },
+        "10-fc-diagnostic-child-readable.jpg": {
+          "sizeBytes": 139695,
+          "sha256": "3edc53fead882ab90b37cd367a5ecf09c088719b5934cd8208f1c0cb5ea267e7"
+        },
+        "11-formal-original-input.jpg": {
+          "sizeBytes": 134361,
+          "sha256": "46fed5746db50403e89afe17f93cd5d12acc3bba934e7a4c8ce87ab81fb3a0b4"
+        },
+        "12-formal-original-replace.jpg": {
+          "sizeBytes": 149689,
+          "sha256": "ee06e9f591aaa23d3cd02e1f9caff96afa36fe83c6ea19bba660e78718439eae"
+        },
+        "13-formal-original-save-root.jpg": {
+          "sizeBytes": 135891,
+          "sha256": "6c4ff598f4b0e9e72d37ff59917e2ab9b39b0256a80ad21ef397db9449d4f225"
+        },
+        "14-formal-child-append-before-linebreak.jpg": {
+          "sizeBytes": 141201,
+          "sha256": "1b4f34ebad72bc18538b01e893399141d68595b5ad6708359ee0b8119e6b1942"
+        },
+        "15-formal-child-misplaced-linebreak.jpg": {
+          "sizeBytes": 141130,
+          "sha256": "a9e8ff20597c90b56f5317bac441f5d82278fe75d68b6d7b68e6d2c935be96d8"
+        },
+        "16-formal-original-child-corrected.jpg": {
+          "sizeBytes": 141081,
+          "sha256": "8e228ff487e68d151493b10d6ba78b3135583412710823ef357dbde896c53f54"
+        },
+        "17-formal-reopen-child.jpg": {
+          "sizeBytes": 141399,
+          "sha256": "9d475c7a830771c299a28fc38138978a04077a9ed4bae195f11c76963d01cb5b"
+        },
+        "18-formal-reopen-root.jpg": {
+          "sizeBytes": 137421,
+          "sha256": "fd0a35f100a2337d9bc427f9b2c1759f126ef2bda75549389fb6a1b0e33c3600"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-11-cherrytree-source.json",
+    "sha256": "a5517d7c8d6bc899ba893e7f73bb8eb106851f8f725299cebbafef981b486378",
+    "mainProgramLicense": "GPL-3.0-or-later",
+    "bundleLicenseClosureVerified": false
+  },
+  "guiEvidence": {
+    "reference": "2026-10-11-cherrytree-gui.json",
+    "sha256": "003746c95329ebd3c6dd4decc568a7764ccd28cc2a2161bfd62efa48d435af77"
+  },
+  "limits": [
+    "Only one small 694-byte Chinese-name XML .ctd input, two rich-text parent/child nodes, ordinary BEFORE to AFTER root replacement, ASCII child body editing, GUI Save As to ASCII output path and explicit new-process reopen were verified in the formal original generation.",
+    "Default Pango Win32 backend clipped GTK glyphs in two fresh managed processes; native launcher environment PANGOCAIRO_BACKEND=fc restores tested text. Program/runtime files and global context unchanged; exact defective function and upstream fix not established.",
+    "SQLite storage, encryption, embedded images/attachments/tables/codeboxes, import/export, links, formatting breadth, search breadth, large notes, other encodings, advanced functions and direct Chinese keyboard input unverified.",
+    "Main program GPL-3.0-or-later verified from fixed source; installed license differs in raw bytes and matches after 15 CRLF normalizations. Complete bundled licence closure, Authenticode, OpenPGP signature and reproducibility unverified.",
+    "Guest online download, fresh-machine registration, migration and cross-version upgrade unverified.",
+    "Independent market generation, cached same-version update, exact rollback and normal service restart pending at this freeze; completion recorded separately."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

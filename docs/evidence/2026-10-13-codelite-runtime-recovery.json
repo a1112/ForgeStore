@@ -1,0 +1,3577 @@
+{
+  "applicationId": "codelite",
+  "previewActivation": {
+    "activatedPreview": true,
+    "metadataVersion": 86,
+    "candidateVersion": 77,
+    "rootVersion": 1,
+    "entries": 71,
+    "coreJobs": 537,
+    "fullStoreRows": 156,
+    "entry": {
+      "compatibility": {
+        "evidence": "windows-codelite-20261013.acceptance.json#codelite",
+        "status": "tested"
+      },
+      "delivery": {
+        "artifact": {
+          "sha256": "8dc40a5d1b855610377229a00d70426c5af7742532ba932e769ceba39af9851b",
+          "size": 56796290,
+          "target": "codelite-amd64-17.0.0.exe",
+          "url": "https://downloads.codelite.org/codelite/17.0.0/codelite-amd64-17.0.0.exe"
+        },
+        "backend": "compatforge",
+        "reviewedApplicationId": "codelite"
+      },
+      "id": "codelite",
+      "license": "GPL-2.0-or-later main; wxCrafter separate EULA; complete bundle closure unverified",
+      "name": {
+        "en": "CodeLite",
+        "zhCN": "CodeLite 有限文本编辑"
+      },
+      "origin": "https://downloads.codelite.org/ReleaseArchive.php",
+      "permissions": [
+        "user-files"
+      ],
+      "publisher": "Eran Ifrah",
+      "summary": {
+        "en": "Limited single comment text edit, CPP save and new process explicit Open; no compilation.",
+        "zhCN": "仅单处注释文本编辑、CPP保存与新进程显式打开，未编译"
+      },
+      "version": "17.0.0"
+    },
+    "installed": {
+      "appId": "codelite",
+      "backend": "compatforge",
+      "canRollback": false,
+      "version": "17.0.0"
+    },
+    "oldFullFieldsAndEntriesPreserved": true,
+    "checkpoint": {
+      "file": "after-activation.json",
+      "sha256": "631f5bed6a20e4547b4467d4459842945311162ad61f9efa072acfe0542fbd35",
+      "coreJobs": 537,
+      "fullStoreRows": 156
+    },
+    "independentMarketGenerationPending": true,
+    "countsAsCompleted": false,
+    "guardRelaxed": false
+  },
+  "finalNormalRestart": {
+    "passed": true,
+    "coreJobs": 541,
+    "fullStoreRows": 158,
+    "metadataVersion": 86,
+    "rootVersion": 1,
+    "candidateCatalogue": "candidate-v77",
+    "catalogueEntries": 71,
+    "signedActualTargets": 150,
+    "publicCatalogueJsonFiles": 82,
+    "normalRestartFullSevenClassFieldEqualityPassed": true,
+    "allTerminal": true,
+    "oldProcessIds": {
+      "compatforge.service": "114558",
+      "forge-store.service": "119477"
+    },
+    "newProcessIds": {
+      "compatforge.service": "123176",
+      "forge-store.service": "123191"
+    },
+    "checkpoints": {
+      "beforeRestart": {
+        "file": "before-final-normal-restart.json",
+        "sha256": "7ee7826a778c86cc7dcdb1b45bff9a1eaf97d1c651ac11df6b227dc34b524d04",
+        "coreJobs": 541,
+        "fullStoreRows": 158
+      },
+      "afterRestart": {
+        "file": "after-final-restart.json",
+        "sha256": "cb2806a055178fb148afab85fcf3df2575b1a47bed0e831144613950a6b55303",
+        "coreJobs": 541,
+        "fullStoreRows": 158
+      }
+    },
+    "outputs": {
+      "original": {
+        "generationId": "gen-job-1791913844123-1",
+        "generation": {
+          "bottleId": "gen-job-1791913844123-1",
+          "createdAtMilliseconds": 1791913844134,
+          "definition": {
+            "bottleId": "gui-codelite",
+            "category": "education",
+            "compatibilityRating": "unknown",
+            "id": "codelite",
+            "installer": {
+              "arguments": [
+                "/VERYSILENT",
+                "/SUPPRESSMSGBOXES",
+                "/NORESTART",
+                "/SP-",
+                "/DIR=C:\\CodeLite",
+                "/NOICONS",
+                "/TASKS="
+              ],
+              "fileName": "codelite-amd64-17.0.0.exe",
+              "sha256": "8dc40a5d1b855610377229a00d70426c5af7742532ba932e769ceba39af9851b"
+            },
+            "launchers": [
+              {
+                "executable": "CodeLite/codelite.exe",
+                "id": "main",
+                "name": "CodeLite"
+              }
+            ],
+            "name": "CodeLite",
+            "publisher": "Eran Ifrah",
+            "schemaVersion": "1",
+            "tags": [
+              "rolling-1000",
+              "managed-inno"
+            ],
+            "version": "17.0.0"
+          },
+          "definitionDigest": "sha256:a2fb14b367292126ec782b0dd4da3fd17d55236e1f1b85b92b3a40d40e825af1",
+          "id": "gen-job-1791913844123-1",
+          "launcherDigests": {
+            "main": "sha256:5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066"
+          },
+          "runtime": {
+            "binding": {
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINESERVER": "/usr/bin/wineserver"
+              },
+              "executable": "/usr/bin/wine",
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "providerId": "wine-linux-x86-64-preview",
+              "wineserverExecutable": "/usr/bin/wineserver"
+            },
+            "selection": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "version": "11.14"
+          },
+          "status": "ready",
+          "updatedAtMilliseconds": 1791913862496
+        },
+        "installedFiles": {
+          "libunwind.dll": {
+            "sizeBytes": 36864,
+            "sha256": "e6655deba2247afd3ad8dfec26a4610e925414947d2a2bc1d71182b4f8d5dc04"
+          },
+          "mv.exe": {
+            "sizeBytes": 117888,
+            "sha256": "918ac677fe30c171121dd04d5cc03adade573049c8d831b68570c0272cde6506"
+          },
+          "libffi-8.dll": {
+            "sizeBytes": 36864,
+            "sha256": "fe153f53b531f3e8a4a9ca8735532a1f242f7e3a49b99c94c85d3ebdfe406382"
+          },
+          "libc++.dll": {
+            "sizeBytes": 1464832,
+            "sha256": "335e8e41c56e85e73ab1d458cff20c1a5232cc47c66e6ef31bcc075579cbca5b"
+          },
+          "clangd.exe": {
+            "sizeBytes": 27279360,
+            "sha256": "03d3357670405283b7030f692b8db8c995b210283592a14c482e69c224a26b86"
+          },
+          "clang-format.exe": {
+            "sizeBytes": 136704,
+            "sha256": "066618364dc1d6f61fdc3b6ec7ebd146e6541b5e5827fab009c2cb431a4383fb"
+          },
+          "ctagsd-tests.exe": {
+            "sizeBytes": 578560,
+            "sha256": "e14b1a48dc051085516b8072ab8148068978e16bb16f025751a89e04d7070c0e"
+          },
+          "libhunspell-1.7-0.dll": {
+            "sizeBytes": 551424,
+            "sha256": "27a2663077506b01f5b4eac2114ad9563137a98f185ff256df601d262181d203"
+          },
+          "libssh.dll": {
+            "sizeBytes": 479232,
+            "sha256": "57445b6cfc3882e734912628ec0b7cc7a9f801c1ceff052cc3398798e7ed0cfe"
+          },
+          "phprefactor.phar": {
+            "sizeBytes": 5634624,
+            "sha256": "b391d5324aaabed7239e361def9b6190298fd7c43fd8363afd0c3afdf7a92c4e"
+          },
+          "codelite-cc.exe": {
+            "sizeBytes": 94720,
+            "sha256": "ad2b42422c4cae28f8bc9657027f9bcf190a363f1c05783f628436a072c934dc"
+          },
+          "eoswiki.zip": {
+            "sizeBytes": 750,
+            "sha256": "d3bcb78d8a5703fee165bd773103fbd207ee50b4c7605455d19006193ac0f2ff"
+          },
+          "libdapcxx.dll": {
+            "sizeBytes": 778240,
+            "sha256": "c074811d46493465e9bd80353b2e09fea218840c03c365181326433e0d3ff1c8"
+          },
+          "libxml2-2.dll": {
+            "sizeBytes": 1437184,
+            "sha256": "3b79d840ddf9795a9f5f41b8ddf14a1b1b7b9e5ec81c18a56a9509b9a65b4c41"
+          },
+          "unins000.exe": {
+            "sizeBytes": 3158589,
+            "sha256": "d7b66673fa52252b23e75ec8cb0bc79fe613de079cabcf4492c89f5a63303328"
+          },
+          "codelite-bitmaps-light.zip": {
+            "sizeBytes": 997869,
+            "sha256": "7b9683e29673f4518716c10bba8680c87acf5c58662374a2aac03ee962aa3836"
+          },
+          "libzstd.dll": {
+            "sizeBytes": 850432,
+            "sha256": "761d8be814e12636ef90aae1c75eb496d564a27b958bc88eba975471063eb329"
+          },
+          "libwxsqlite3.dll": {
+            "sizeBytes": 155136,
+            "sha256": "404e7e11ba4db6d89c2aa3764bf4fd4546627cb1601514ceef7571d5057d0c8f"
+          },
+          "wxmsw330u_clang_custom.dll": {
+            "sizeBytes": 17881088,
+            "sha256": "b6aae772a8f2a0430cc6e964f3cf890e670ce2ba6bcb5b956d6227944f96e664"
+          },
+          "ctagsd.exe": {
+            "sizeBytes": 520192,
+            "sha256": "4de464ce70af338b4076f8d09fa5840cd6b1c9dcf0f4c4a931684f801171d13e"
+          },
+          "libiconv-2.dll": {
+            "sizeBytes": 1046528,
+            "sha256": "89f1aadd734a361145905c0e5c6b2bafd3dbe8dffbe5370d94d2f0039b89e5d9"
+          },
+          "codelite_open_helper.py": {
+            "sizeBytes": 1701,
+            "sha256": "981161f80954111a4f7e78e00c4b164f81b6ca05c159eb8432aafe4d537f9595"
+          },
+          "mkdir.exe": {
+            "sizeBytes": 69421,
+            "sha256": "c2e952d861bd9113894c08176db59313736c205f8dba7c164be934a9d1350fa3"
+          },
+          "codelite-bitmaps-dark.zip": {
+            "sizeBytes": 1002592,
+            "sha256": "d023ee726421811e0a3837887275c276f434e9ad4ff8aff699c68960f9ffc950"
+          },
+          "rust-gdb.bat": {
+            "sizeBytes": 645,
+            "sha256": "605dd335c06a35c04b3add48b5c1367b1bf41092b6d42ab2895b72a13e65f830"
+          },
+          "wx-config.exe": {
+            "sizeBytes": 1327104,
+            "sha256": "3876bc1782ad471e3aecdbedfe40b6d3028df34c8bca1c8bca48ad29ea72dade"
+          },
+          "liblzma-5.dll": {
+            "sizeBytes": 165376,
+            "sha256": "682d13c10ab21ce6bb59e3a23f0f455c9b9129442d4b4067f0f1a7cb3c8a02ca"
+          },
+          "libplugin.dll": {
+            "sizeBytes": 7395328,
+            "sha256": "709cb7ffd02e3824a59a2434029f8830dc5dc049a1b6c88ec3ba0f92f38dba66"
+          },
+          "codelite_cppcheck.exe": {
+            "sizeBytes": 2664448,
+            "sha256": "c14dce24ec66f07b8b4cca7360e1d14e300584d04ad3f0ad21bc7a25026a765e"
+          },
+          "msys-intl-8.dll": {
+            "sizeBytes": 43904,
+            "sha256": "595ee889c266572fbae0dabc9289d7536f3cba5321d1f8518205543627404a35"
+          },
+          "codelite-ctags.exe": {
+            "sizeBytes": 1389056,
+            "sha256": "3793b623cb957c65c42be87a3d2f73a1890837c41aa55041722cfddb8af4ffe7"
+          },
+          "msys-2.0.dll": {
+            "sizeBytes": 3588018,
+            "sha256": "eed4170bcd61bfbf22f690a814b295f78aa1baa9b240d32641052a122a5f2917"
+          },
+          "libsqlite3-0.dll": {
+            "sizeBytes": 1744896,
+            "sha256": "d190fbc2d7bc6444549ad9d364f938818b5276fc765761b0bb6ce9212a3d81bf"
+          },
+          "codelite-make.exe": {
+            "sizeBytes": 124416,
+            "sha256": "e02012d611035fcad7dbff97eebabe7d03b48b265fc633452cc7dbe5d431fef5"
+          },
+          "libwinpthread-1.dll": {
+            "sizeBytes": 84992,
+            "sha256": "65a7afe094ae91a52010e1644bcde3c278315316014b2662e0bc5adfa59d6c03"
+          },
+          "codelite-echo.exe": {
+            "sizeBytes": 78336,
+            "sha256": "478dadd4ee3dae9d0fdf30835c6147fad3762ccc4947afc0f3c1c64953641d43"
+          },
+          "libclang-cpp.dll": {
+            "sizeBytes": 56480768,
+            "sha256": "ff980bee01e4e4abad50c48a5a771e57819086e4930414db80e80f9d5efc0645"
+          },
+          "libcrypto-1_1-x64.dll": {
+            "sizeBytes": 2631680,
+            "sha256": "49b954153aa36de7668cca17d0b8beb8d1cb97680e9f57b54ce6a1d269e36a82"
+          },
+          "codelite.dll": {
+            "sizeBytes": 4014080,
+            "sha256": "3d9512dd565798dfa246877812ccff2edf63c2bacdfbe5f3b25340361b1c88d4"
+          },
+          "unittest++1.3.tar.gz": {
+            "sizeBytes": 29380,
+            "sha256": "6b44eabe41d0567a55d35a61030743d90bd7757f0bbbfd61c5b36ae588ecb23d"
+          },
+          "codelite-terminal.exe": {
+            "sizeBytes": 515072,
+            "sha256": "a064db7430ad5593c57242f916694ad8445c5594b7274083c85cb17c7467fb4e"
+          },
+          "codelite.exe": {
+            "sizeBytes": 7258112,
+            "sha256": "5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066"
+          },
+          "cp.exe": {
+            "sizeBytes": 111647,
+            "sha256": "ec8bd502ed395a585a159ff50addb38f3422869126518913917adeeed0ab0553"
+          },
+          "astyle.sample": {
+            "sizeBytes": 932,
+            "sha256": "ba2b772468ed175aaf501c7bc690d7f551f7436a14ac3d21f9a833e1ace7e8df"
+          },
+          "libwxshapeframework.dll": {
+            "sizeBytes": 873984,
+            "sha256": "8406ca24cce1af93ebc7a083eb52056155ddb932d14c0984ae0ef43d12290247"
+          },
+          "PHP.zip": {
+            "sizeBytes": 389317,
+            "sha256": "60e46242b502e6bfeb3da714fa6daaa4595ddd4d765053174df82faaf02b7a5e"
+          },
+          "msys-iconv-2.dll": {
+            "sizeBytes": 1023499,
+            "sha256": "7f1115edffe53e5f02bb12e6cb63c46a6e3613490a05333556ac4f78a152d921"
+          },
+          "ls.exe": {
+            "sizeBytes": 141831,
+            "sha256": "3051428b4d224e8fddbcae9bd9450ff950eb1dd9af0d08fa77a91efc3734c84b"
+          },
+          "zlib1.dll": {
+            "sizeBytes": 109568,
+            "sha256": "e7122f34fa1fa5b2888dfa22ce2d03b5be6c0273f33f0f2b26326dad66b1a4f0"
+          },
+          "libdatabaselayersqlite.dll": {
+            "sizeBytes": 203776,
+            "sha256": "622ef85f5d9a0b7caa0ee879b9dc0f82eab8441c52ce0d5cfea5a781b0a31b5a"
+          },
+          "rm.exe": {
+            "sizeBytes": 62343,
+            "sha256": "a06667fc54b513b1c9f049eddb631078ee511c8bff800ef7cc70b7b55e66fd6a"
+          },
+          "codelite-remote": {
+            "sizeBytes": 15030,
+            "sha256": "c03fc363b1c5b4b7c9f4faf0cd5c573ee7b12b2954457e33afc09815d343add9"
+          },
+          "php.sample": {
+            "sizeBytes": 948,
+            "sha256": "a6b2e979747525f594e16dc7a214bd0c96bc4c07cd45afe2e9cd4b6c6fafadfe"
+          },
+          "wxgui.zip": {
+            "sizeBytes": 314106,
+            "sha256": "991f1632534a54cc68216163e1f03d7109a5b75dc65b357eb293779f8265b7b8"
+          },
+          "codelite-exec.exe": {
+            "sizeBytes": 84480,
+            "sha256": "8e0ddb85bc9126f8a0d364e2c13b7165bb48b692e6cb9403f6705dbcec38bc4e"
+          },
+          "LICENSE": {
+            "sizeBytes": 18341,
+            "sha256": "57dd2a7d66d7b1055f71609b42701167fc3a2cdc1d92af051bb2850b98ae9a84"
+          },
+          "libLLVM-15.dll": {
+            "sizeBytes": 109964288,
+            "sha256": "2a7379cdb24b035443ddb99bd7e3b60f0534fc6c2f5750b52ec1506993bd10c6"
+          },
+          "unins000.dat": {
+            "sizeBytes": 57437,
+            "sha256": "c016f35f22ac59a6fcfb0e333410d8e01af362a842af8604a8887edb3bd67f4d"
+          },
+          "resources/compfile.png": {
+            "sizeBytes": 3265,
+            "sha256": "74f97dd5b7b5850ae8f3f475b9b02cbc700cf1f58b5bc4d8ad717b6be57a371c"
+          },
+          "resources/qt16_preferences.png": {
+            "sizeBytes": 819,
+            "sha256": "cdccff1a2a103601d6695e71afaaa72c42669b3aeb6650ccbdeecf064d0814ab"
+          },
+          "resources/cppcheck.png": {
+            "sizeBytes": 463,
+            "sha256": "30d135695e6c86606a9c8dd6abe9d02d710f82fc8aae445812d37d7ce1d1b2ec"
+          },
+          "resources/qt16_new.png": {
+            "sizeBytes": 855,
+            "sha256": "aec7b89c3fc191655776e37faee3405f60174a9c59a6d831d6fa13a2c2bb5128"
+          },
+          "resources/qt24_new.png": {
+            "sizeBytes": 1479,
+            "sha256": "5bf3fbef79846278358eef4fbf8fa03180d2f5ca86e6fc68a2d6eda0bca63f9c"
+          },
+          "resources/wxfb_modified.png": {
+            "sizeBytes": 791,
+            "sha256": "f39e69150382d801b3fae3bc7f8ed81f84b4b5d05e6aa2ebe85241dbf36c5207"
+          },
+          "resources/svn_diff.png": {
+            "sizeBytes": 1819,
+            "sha256": "8d8c2a7d447d6b5e9d1618d1acab24e4985ca8d8a9c40ff510a3c457e594073e"
+          },
+          "resources/abbrev.png": {
+            "sizeBytes": 478,
+            "sha256": "81ebd1f84ec27476eea86ede7d319bdf3c7dd5ed5ca82782bc656b3ab0d0babd"
+          },
+          "resources/svn_ssh.png": {
+            "sizeBytes": 1940,
+            "sha256": "b2e19eb61946b4c921a8a839ebb0df8c0dee65f57eb4e083733a1409439cea00"
+          },
+          "resources/connect_no.png": {
+            "sizeBytes": 1303,
+            "sha256": "a1156b9858b9789381849e8e192caad880cba83808c8905d0c498e3d2a13b687"
+          },
+          "resources/wxfb_conflict.png": {
+            "sizeBytes": 789,
+            "sha256": "768d887539bd3ae6e21a14e3f010e506ab300c85af098cd3bb292ea81efaeece"
+          },
+          "resources/svn_settings.png": {
+            "sizeBytes": 2778,
+            "sha256": "58cf0dd59b22f628a4c1e005d61130696f402369fa8d38a00fbde286b895ec6d"
+          },
+          "resources/wxfb_ok.png": {
+            "sizeBytes": 804,
+            "sha256": "b9ec532c5206e78246aec3352a5504dc4a439c079269b81ddfec72df0a347536"
+          },
+          "resources/qt24_preferences.png": {
+            "sizeBytes": 1457,
+            "sha256": "d686d5b23f97381f1cf9abf606a3d4128a9155370648cdfc6b73ae9fcf844356"
+          },
+          "bin/wx-config.exe": {
+            "sizeBytes": 1327104,
+            "sha256": "3876bc1782ad471e3aecdbedfe40b6d3028df34c8bca1c8bca48ad29ea72dade"
+          },
+          "bin/wx-config-msys2.exe": {
+            "sizeBytes": 2088448,
+            "sha256": "bcb4f3eca168511b86a10311b29c7ad97f3061193646d9b4235e3bb8b0054252"
+          },
+          "plugins/CMakePlugin.dll": {
+            "sizeBytes": 409088,
+            "sha256": "3c1ed30774ac6506274cad460a477a48b716dfaed53eb65141ea4fc0c0fcbe70"
+          },
+          "plugins/abbreviation.dll": {
+            "sizeBytes": 254464,
+            "sha256": "beb21e33e9fa560c81772e3cd1de774a40621f419cbc9457f0764a8bb69d61fa"
+          },
+          "plugins/PHPLint.dll": {
+            "sizeBytes": 240128,
+            "sha256": "dc18f9366d07b48e7adbe53e6839a66b055ccbae41cd235297afbb4eb1c7da23"
+          },
+          "plugins/CodeLiteDiff.dll": {
+            "sizeBytes": 180224,
+            "sha256": "6baff6b6654bc0af8e27d902123798affac1bc97895d35c12599817cd8e0546d"
+          },
+          "plugins/Tail.dll": {
+            "sizeBytes": 224256,
+            "sha256": "efe88b828eb397e861149b4fef40b54b5f916584233d1793528403f5eef0fa8f"
+          },
+          "plugins/ExternalTools.dll": {
+            "sizeBytes": 301056,
+            "sha256": "0c2cd84b55f9917df31811de70c93d0e74624db53c65a1eb90cd9b8bc65f7d0d"
+          },
+          "plugins/codelite_vim.dll": {
+            "sizeBytes": 226816,
+            "sha256": "b22e2ab2a7b6456b194082391e8efab8b85e842c2c01b73ddf179c41499ff3a4"
+          },
+          "plugins/PHPRefactoring.dll": {
+            "sizeBytes": 258048,
+            "sha256": "fb15f8afb81d401a5a38e967685dc2b79d5501c370117cb3d04cdf8c1aa8b0ec"
+          },
+          "plugins/Docker.dll": {
+            "sizeBytes": 443392,
+            "sha256": "f62005416b57fc1690001e655726b6dc188307233bc8f2847e8f50f64c115cf0"
+          },
+          "plugins/QMakePlugin.dll": {
+            "sizeBytes": 359424,
+            "sha256": "4e5706fe5455bb7e6566f5877920fe489a71a6be62728fc18d22469e94424d6b"
+          },
+          "plugins/DebugAdapterClient.dll": {
+            "sizeBytes": 671232,
+            "sha256": "e3e7ac09dfacf407d3d4f37bf555f4f20500ffac55783f668e2dbeec3a5cebce"
+          },
+          "plugins/ZoomNavigator.dll": {
+            "sizeBytes": 250880,
+            "sha256": "0ab96154aedfedb6f7357e5e64e8355b73aaa60cbd76044d22f2d25af466a74d"
+          },
+          "plugins/wxFormBuilder.dll": {
+            "sizeBytes": 223232,
+            "sha256": "ce45d2f4a24d4853237c8ecd3813907eb331555dae8e0017453306b165f58600"
+          },
+          "plugins/Copyright.dll": {
+            "sizeBytes": 215040,
+            "sha256": "eb610c447ab3faa772407e29d73d8f05655c13b84adb3cc2d0ce6782cc267835"
+          },
+          "plugins/codelitephp.dll": {
+            "sizeBytes": 1562112,
+            "sha256": "c72d0940caed3d0774b0e2b8465dc55c67867d619600faa29c9b0894868e66ab"
+          },
+          "plugins/UnitTestsPP.dll": {
+            "sizeBytes": 329216,
+            "sha256": "b17b0fd8924664e5ea3e13b754c04b72da7776381ba28a310b4220eae423a03d"
+          },
+          "plugins/HelpPlugin.dll": {
+            "sizeBytes": 200704,
+            "sha256": "b8ea08a8cc8775caad9cf5f1386eafac5d7b77b51d96866a020f0dd32a78ad60"
+          },
+          "plugins/SFTP.dll": {
+            "sizeBytes": 468992,
+            "sha256": "68ce06c4225e1577dff0251a1845e2c943db72e8928f32482868a120534da878"
+          },
+          "plugins/AutoSave.dll": {
+            "sizeBytes": 153600,
+            "sha256": "46209324774287c0e1a6674288c0e3752162c6368b182ca8599cad3e15d6a7da"
+          },
+          "plugins/SmartCompletion.dll": {
+            "sizeBytes": 220672,
+            "sha256": "8af16fd843e56f8163484893135509a50f584d254d05ab2ae2062a6930a7b454"
+          },
+          "plugins/ContinuousBuild.dll": {
+            "sizeBytes": 180736,
+            "sha256": "70b4373a8d5dba88943e09820f8a53d917b48e4d6c25b9ef59374b582bdc0481"
+          },
+          "plugins/git.dll": {
+            "sizeBytes": 1153536,
+            "sha256": "8f396045b0ae874f08a6ececda2302b269d3d4308aaa0670b0937beaff968057"
+          },
+          "plugins/LanguageServer.dll": {
+            "sizeBytes": 564224,
+            "sha256": "7139e28525e32bdf7b49b6d092bbd72d5587e5a69a1f81f7a08aa181e86b9816"
+          },
+          "plugins/cscope.dll": {
+            "sizeBytes": 333312,
+            "sha256": "219d49862ecdcdfeba9a36836a29495036d560455719b69c31fafb82402dafdb"
+          },
+          "plugins/WebTools.dll": {
+            "sizeBytes": 858624,
+            "sha256": "44279e24e47129331dda0ede350ccfc71b45cac30ff8181f7a645841b6cbb8ee"
+          },
+          "plugins/Rust.dll": {
+            "sizeBytes": 150016,
+            "sha256": "a4b334b9741c924f130d586b203bcb7c7c21c7c07ef6516aba7ad2d6d97b0bda"
+          },
+          "plugins/WordCompletion.dll": {
+            "sizeBytes": 233984,
+            "sha256": "d3c2a8689832a736e551b1317c6f36f4e282e15103405d894802aabc4ea5b5e5"
+          },
+          "plugins/Subversion.dll": {
+            "sizeBytes": 1039872,
+            "sha256": "d0a1a9280c8e1e0bd29a76b8151f4c53a0e778c0361d8861bf651728e714c909"
+          },
+          "plugins/SnipWiz.dll": {
+            "sizeBytes": 395264,
+            "sha256": "2829bf6dc0dc3db1ee409856f1d5187ab8437b6408072637eee16905138dd45c"
+          },
+          "plugins/Outline.dll": {
+            "sizeBytes": 169472,
+            "sha256": "e1162b998900bb3999586b7c51030c183c732e604070b8727f3bf940830842ea"
+          },
+          "plugins/CodeFormatter.dll": {
+            "sizeBytes": 399872,
+            "sha256": "563a18da26b32d85bc2fbfe65f83769ddc3e7593b67d1feb8424f1778b88bd8b"
+          },
+          "plugins/wxCrafter.dll": {
+            "sizeBytes": 4991488,
+            "sha256": "9ef83154abc852a77e1516a82dc9675698e5c6ef14fd0d2635520b61a93f1f9f"
+          },
+          "plugins/SpellCheck.dll": {
+            "sizeBytes": 329728,
+            "sha256": "e29a2c9bcdae96d7660f66dcdb404138d0066c56a818aa8c40af0f34989874ba"
+          },
+          "plugins/Remoty.dll": {
+            "sizeBytes": 468480,
+            "sha256": "9f9c286f2816b39572e95ab14272fab2beb111dda30b90f551d09066186edb40"
+          },
+          "plugins/EditorConfigPlugin.dll": {
+            "sizeBytes": 166912,
+            "sha256": "8b933907f4827c632a055b045c4218de570aef94dfef04ac88e16d2b2e59b303"
+          },
+          "plugins/cppchecker.dll": {
+            "sizeBytes": 410624,
+            "sha256": "1b6cccc0615002234bb5763757117c9e578a8378ee5b431e742b9d6c7e80c21e"
+          },
+          "plugins/DatabaseExplorer.dll": {
+            "sizeBytes": 1178624,
+            "sha256": "f9942ed1296be833fcae644e25aef75bcf754339e2d82eed4f6d570b3245b73c"
+          },
+          "plugins/Wizards.dll": {
+            "sizeBytes": 387584,
+            "sha256": "765afff5396f724208178648d14adee3cbdcf694486b35b3cfe83656fb3fbe5d"
+          },
+          "plugins/EOSWiki.dll": {
+            "sizeBytes": 210944,
+            "sha256": "67e01bf14cd8ad296c556edbcde0d5f3a25b86656179736532d2f71943006649"
+          },
+          "images/common_tasks.png": {
+            "sizeBytes": 1070,
+            "sha256": "655356fd51ad4c574dc4c9ab165259b6904b7e3c18d1f1b3b7fd00c574295a56"
+          },
+          "images/help_earth.png": {
+            "sizeBytes": 861,
+            "sha256": "f28a6d5a3e99c631cf8b6dde39e6facad7242a7bf8f88d950f2d58f5f774f3f6"
+          },
+          "images/splashscreen@2x.png": {
+            "sizeBytes": 106594,
+            "sha256": "7240d1d4bc54474de256433152d92dbcd6d76dccc509297dcbf54eca13ace7c1"
+          },
+          "images/plugin_ok.png": {
+            "sizeBytes": 769,
+            "sha256": "f9db35053d158ca37f453b52732fe74def48fede6dd4003eb5de11f935a7a6de"
+          },
+          "images/recent_files.png": {
+            "sizeBytes": 3705,
+            "sha256": "ad930a1852e12197a27cb7cd91438702ebe35d00517dabb551b6221eb0921a65"
+          },
+          "images/recent_workspaces.png": {
+            "sizeBytes": 3711,
+            "sha256": "ff77f56b4bc7c603fc62fa3e3834aaaf94724064f32762d6ec56514b37936d89"
+          },
+          "images/splashscreen.png": {
+            "sizeBytes": 106594,
+            "sha256": "7240d1d4bc54474de256433152d92dbcd6d76dccc509297dcbf54eca13ace7c1"
+          },
+          "images/plugin_not_ok.png": {
+            "sizeBytes": 745,
+            "sha256": "914fb664726b12d2af96114b0005573264aa4d78ae0a4280067ee6c9a84a062b"
+          },
+          "rc/menu.macos.xrc": {
+            "sizeBytes": 44976,
+            "sha256": "d2fe9c554377a0a989ce1819f7bc3b25d5e46a591005ae3a7255db1a1266dfd2"
+          },
+          "rc/menu.xrc": {
+            "sizeBytes": 44627,
+            "sha256": "fe7d0c30aca7ccc1cc8ce09a588d4dfa7b8739c3d298a918a88e01718e07758e"
+          },
+          "gdb_printers/helper.py": {
+            "sizeBytes": 2647,
+            "sha256": "8d62f36191bff3869057fa383b737d6a36a34d00c2d170fb1b2a4128b88dad4a"
+          },
+          "gdb_printers/wx.py": {
+            "sizeBytes": 4754,
+            "sha256": "e9d9ac34280fb152fc621e4850584b46e9aec5a1c58c70f2cf8ce0ce9e04a854"
+          },
+          "debuggers/DebuggerGDB.dll": {
+            "sizeBytes": 478208,
+            "sha256": "a0809b723c219e9871496372d6fc48b9f2cb8d8b11afda320963e6b30ebd8100"
+          },
+          "config/debuggers.xml.default": {
+            "sizeBytes": 1157,
+            "sha256": "3bbefe07d645e6c168f59a7cdaa66fb4dbc770bb96ba42b2fe203b57c19c295a"
+          },
+          "config/build_settings.xml.default": {
+            "sizeBytes": 22831,
+            "sha256": "ddf393142f4a8198590cb9342211d2d5c3c92494a781f4e34c3ab3a991e680d1"
+          },
+          "config/codelite.xml.default": {
+            "sizeBytes": 704,
+            "sha256": "1cc83201613e1b06476f9eeed06c05f8613f1ff4f2f2980085fb6fd2a1c5d852"
+          },
+          "lexers/lexers.json": {
+            "sizeBytes": 3839548,
+            "sha256": "64f9f09994d1f9993f5fb7e355537c607393eb76ec46efaf467149a7e6424bb8"
+          },
+          "dics/en_GB.aff": {
+            "sizeBytes": 27449,
+            "sha256": "fa4d026cdebf0cf09bb2b2faa0caa048b78566dc316b7c43eece9346227e919c"
+          },
+          "dics/en_US.aff": {
+            "sizeBytes": 3041,
+            "sha256": "85e46ddec65281bce052637c6dc90b0b9952f235ff1b3674b4b7ff8ccaeb999d"
+          },
+          "dics/en_US.dic": {
+            "sizeBytes": 534278,
+            "sha256": "ea16f7cd4051609f8c43e57a96b3e2883e735ba5a0c5c51e13458fad32d502f2"
+          },
+          "dics/en_GB.dic": {
+            "sizeBytes": 527337,
+            "sha256": "a1e08b003352fa887ca187e258122fba5ba85d6d8005dd2972120e380f0e9e82"
+          },
+          "config/cfg/motif.cfg": {
+            "sizeBytes": 4640,
+            "sha256": "8d6027d2b2c6d16ed1785d590b64b464e71e41c40a7d832503afe14de8f670a6"
+          },
+          "config/cfg/microsoft_sal.cfg": {
+            "sizeBytes": 26839,
+            "sha256": "a96ee8f1aa8a5bb99eebb0eb3f1f2fb28c1693af670b7739f65612b96467f6a2"
+          },
+          "config/cfg/posix.cfg": {
+            "sizeBytes": 106700,
+            "sha256": "53e1c00551cc3efba3dc25ef2664030d537bff5d64ce9db1f4ef4df25f90d0e5"
+          },
+          "config/cfg/gnu.cfg": {
+            "sizeBytes": 17290,
+            "sha256": "bca3d3760e81c31355ad466a87359ccfea501687735d257c44c6a6e606ebe0ab"
+          },
+          "config/cfg/embedded_sql.cfg": {
+            "sizeBytes": 109,
+            "sha256": "d7a0efdf29a440ba5c23bb9739872cbd35d760f7054a06e52726094984ca060a"
+          },
+          "config/cfg/bsd.cfg": {
+            "sizeBytes": 5825,
+            "sha256": "9e3ba91ad08221a0e2f9dc4d26e7d81928bed62a8f3ebf73a869dfc9c55a1699"
+          },
+          "config/cfg/windows.cfg": {
+            "sizeBytes": 478739,
+            "sha256": "294b937f37b01c854daf878631715ce0c3e6a7b09db5b1a0649cc44a1b7c08d7"
+          },
+          "config/cfg/std.cfg": {
+            "sizeBytes": 182709,
+            "sha256": "9d865e047d1ec3b50ac729f695e1d5ca74adf2ed31431cda640efce3a71f7451"
+          },
+          "config/cfg/cppcheck-cfg.rng": {
+            "sizeBytes": 14877,
+            "sha256": "c61defafd91695e273850321012e066ae786afc67dec66eab77805f51cd576d0"
+          },
+          "config/cfg/sdl.cfg": {
+            "sizeBytes": 1855,
+            "sha256": "bd489783cf6a1735c91f8aac06fbbe7967fdeb219567152cd27d698ddb194bfa"
+          },
+          "config/cfg/gtk.cfg": {
+            "sizeBytes": 511382,
+            "sha256": "46a9b9203e61771d16ad9fc54d7e63dbaabab2306c7c15a3b65234e13a293965"
+          },
+          "config/cfg/wxwidgets.cfg": {
+            "sizeBytes": 81081,
+            "sha256": "cfbfafa466a6f1e4d97b7ad799bf50595061c89806d61f973ca12c2f558aa4aa"
+          },
+          "config/cfg/avr.cfg": {
+            "sizeBytes": 12718,
+            "sha256": "45726e7b6d174e4c7322a87b3d5972c78617b1d8efe031129156c922aa9da86d"
+          },
+          "config/cfg/sfml.cfg": {
+            "sizeBytes": 9228,
+            "sha256": "272fe67983530da70b5bf80a01f9aef09f9776766b8ae9f5c2d5b8173bb469ce"
+          },
+          "config/cfg/cppcheck-lib.cfg": {
+            "sizeBytes": 1062,
+            "sha256": "6852f7396265a919c8f2bcd0ca8a89f59a2aa53214252619b9e2e52791a015ec"
+          },
+          "config/cfg/qt.cfg": {
+            "sizeBytes": 47195,
+            "sha256": "a42cf57c8f0d57ece077cb9ede50ee9786bebc592f97719bc3a0a6ac018937ea"
+          },
+          "gdb_printers/libstdcxx/__init__.py": {
+            "sizeBytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          "gdb_printers/boost/__init__.py": {
+            "sizeBytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "gdb_printers/boost/printers.py": {
+            "sizeBytes": 48582,
+            "sha256": "0313c294a35a7f908c5d31881089dd23c8cf145a1f43fbfce1774a83cc7b2655"
+          },
+          "gdb_printers/rustlib/etc/gdb_load_rust_pretty_printers.py": {
+            "sizeBytes": 63,
+            "sha256": "b88f1a7df63b71f95addb4962e0a5bdd78a4ab406dabfb731b02b27342f4d533"
+          },
+          "gdb_printers/rustlib/etc/rust_types.py": {
+            "sizeBytes": 3637,
+            "sha256": "52f137497bf4d3426fbce9d4b8f25069f9fe5e9e7ce9a707723df4e2b7b3670d"
+          },
+          "gdb_printers/rustlib/etc/gdb_providers.py": {
+            "sizeBytes": 13302,
+            "sha256": "5ceb623aa3ee477c4cff52b8d79fe4b80d27d01284c4ccfd7037fb4d200e4652"
+          },
+          "gdb_printers/rustlib/etc/gdb_lookup.py": {
+            "sizeBytes": 3014,
+            "sha256": "0a4117cadc59b715bd09b5a0d122c4dea37afe6ba0f96cbdccee037273ac405f"
+          },
+          "gdb_printers/libstdcxx/v6/__init__.py": {
+            "sizeBytes": 1161,
+            "sha256": "fc792a50d118d5feb068481d0328f89fe8762b7705011910281bfe65c1170c8f"
+          },
+          "gdb_printers/libstdcxx/v6/xmethods.py": {
+            "sizeBytes": 27705,
+            "sha256": "98db47a3b61cf963823b628160a329db5c38812a0886deeca7195046df87a908"
+          },
+          "gdb_printers/libstdcxx/v6/printers.py": {
+            "sizeBytes": 68367,
+            "sha256": "6a565bbeba13482791c9db00a131439278ff88ae1b5a4bc8d8fcdbf40cbfd488"
+          },
+          "templates/qmake/qmake.project": {
+            "sizeBytes": 3629,
+            "sha256": "a53cce13104ef73afa21604ffde2b0094efb760df7a811e47bfc46036edabfa7"
+          },
+          "templates/codedesigner/SCHTemplateWithMain.cdp": {
+            "sizeBytes": 9624,
+            "sha256": "a7bc828a145fc3aa51930712379373cf5b4af1e06396e19d379553129d5aeb10"
+          },
+          "templates/codedesigner/HSCHTemplateWithMain.cdp": {
+            "sizeBytes": 9617,
+            "sha256": "5c890ea3a91ec176b54aba714460d7b0aede5a95c9db44cfb160bf51a5be91f7"
+          },
+          "templates/codedesigner/SCHTemplate.cdp": {
+            "sizeBytes": 7251,
+            "sha256": "fe66720730f7c097af74c1d0e3cd81b5e932b4936c5a36867540e4c77b9cf013"
+          },
+          "templates/codedesigner/HSCHTemplate.cdp": {
+            "sizeBytes": 7248,
+            "sha256": "950aed933d3ee1192fa8b836505ef914046c6f704060b3a8cb6a97b0ab8e18fd"
+          },
+          "templates/codedesigner/CDTemplate.cdp": {
+            "sizeBytes": 9100,
+            "sha256": "8632e5d0a890c8ad45315d0eb0debc0c24977ddf7aaac409cc437e14d2b784e6"
+          },
+          "templates/formbuilder/PanelTemplate.fbp": {
+            "sizeBytes": 3500,
+            "sha256": "38224578c54f9efdd74b834c35362ceab7027edc4a0a0b01996dd7214fd34535"
+          },
+          "templates/formbuilder/DialogTemplate.fbp": {
+            "sizeBytes": 3994,
+            "sha256": "d1a75b11e9891bc3f6346c37ad6b50563828687e58bd384b557e1ada2e8c544f"
+          },
+          "templates/formbuilder/DialogTemplateWithButtons.fbp": {
+            "sizeBytes": 14723,
+            "sha256": "9a3c565a60feb38399c8dbeebea27bb8f020da0fd091c65993b01c19aa48688e"
+          },
+          "templates/formbuilder/FrameTemplate.fbp": {
+            "sizeBytes": 4015,
+            "sha256": "cdf3e291a3a3b4164d76423c53b7a13760de95a2303c3157878478b04da1d8f4"
+          },
+          "templates/databaselayer/viewClass_dba.ctmp": {
+            "sizeBytes": 1302,
+            "sha256": "c314ab0788716464737340b580e2b97a9ac066c78365c746d2506d6016b32d9c"
+          },
+          "templates/databaselayer/dataClass_dbl.ctmp": {
+            "sizeBytes": 3954,
+            "sha256": "68844cb3fa67aab901a426aa352353cba32b30440879e5ff06831d5e14db388f"
+          },
+          "templates/databaselayer/viewClass_wxdba.ctmp": {
+            "sizeBytes": 1825,
+            "sha256": "ba8094454e9cb1130119e5de3d348a75dcc6cd242ec5f711f6ca9a5e3a4ec9d7"
+          },
+          "templates/databaselayer/dataClass_wxdba.htmp": {
+            "sizeBytes": 2430,
+            "sha256": "389e5cab745f1753961915a55f8b751aa8c738d589f3c3827035234bde626586"
+          },
+          "templates/databaselayer/viewClass.ctmp": {
+            "sizeBytes": 223,
+            "sha256": "e2b3ff854239a8832ae4b537af2a4526c788f79a8f4baf05e87832886fc9c547"
+          },
+          "templates/databaselayer/dataClass_dba.htmp": {
+            "sizeBytes": 2166,
+            "sha256": "92c7b2ecf2fd825d9d3e9c7f12777586847615736fba0d03469ef7c8b7717a20"
+          },
+          "templates/databaselayer/viewClass_dba.htmp": {
+            "sizeBytes": 1283,
+            "sha256": "21543464a0e8805b7c02041d6f78f321ebcfb306815f3f72bd649471285bdab5"
+          },
+          "templates/databaselayer/viewClass_dbl.htmp": {
+            "sizeBytes": 1426,
+            "sha256": "5fc80e64ec0f2391e1d0b30e862914af46b146b7fde8329eab3b5a01b0bee9db"
+          },
+          "templates/databaselayer/viewClass_dbl.ctmp": {
+            "sizeBytes": 2081,
+            "sha256": "72654a4ab3c19024774ed2cb06f5fe8c6a0029d791674a77dc5ee39c99524c87"
+          },
+          "templates/databaselayer/dataClass_dba.ctmp": {
+            "sizeBytes": 3634,
+            "sha256": "8865a4601a4de1f8b9e20022948a42d9b61b1ece57618308c250a88f4cc560a6"
+          },
+          "templates/databaselayer/viewClass.htmp": {
+            "sizeBytes": 488,
+            "sha256": "6d0a6ac07af862e01591330f08c55a3e32ac64ce68fd5612451b83da93ffb0f2"
+          },
+          "templates/databaselayer/viewClass_wxdba.htmp": {
+            "sizeBytes": 1535,
+            "sha256": "e45a1bc9dc2e2450882cc4ddd50009fb2dd021c0fc04998d2bfce2bc337ebd7c"
+          },
+          "templates/databaselayer/dataClass.htmp": {
+            "sizeBytes": 865,
+            "sha256": "9b801978745caddc69e821284edfb0b61300d75da2fe3824ae48c7c9e5476469"
+          },
+          "templates/databaselayer/dataClass_dbl.htmp": {
+            "sizeBytes": 2236,
+            "sha256": "050d2c2b77bdfdab356617f107242aef6e9fcc5247ea840abf2fcfa72270a4b6"
+          },
+          "templates/databaselayer/dataClass.ctmp": {
+            "sizeBytes": 567,
+            "sha256": "75396536a28900bc2f5e2819f7e8f4c73712d93659a256c3be13b1a186c19c65"
+          },
+          "templates/databaselayer/dataClass_wxdba.ctmp": {
+            "sizeBytes": 4203,
+            "sha256": "6f3980250676ecea9d616c5277f9b0bf50dcf8f4ac41fd3d4023f13cb85c18a5"
+          },
+          "templates/gizmos/main-dialog.h.wizard": {
+            "sizeBytes": 1549,
+            "sha256": "e9d90ad75a5cb434c5c89715bd5d64927aaab64aaac55a67f26a2c616657dc89"
+          },
+          "templates/gizmos/gui-dialog.h.wizard": {
+            "sizeBytes": 1578,
+            "sha256": "b2da54aa509ccaefd64881613485a3c652f64f658a2f1e9c6a693e2e0f0bae4f"
+          },
+          "templates/gizmos/gui-frame.cpp.wizard": {
+            "sizeBytes": 1686,
+            "sha256": "a4b6fd9d6e1ac1a2543790e87dda09dd4576c4ca4d266619dc38472deb49b626"
+          },
+          "templates/gizmos/mainframe.h.wizard": {
+            "sizeBytes": 607,
+            "sha256": "60dc457901a749f6d4a54cd864c81ca3d1fde9a7dd1904194cfd94411769108e"
+          },
+          "templates/gizmos/wxproject-fb.project.wizard": {
+            "sizeBytes": 2808,
+            "sha256": "73c392a114e9b64fcf91ab21b4620eee19a29285a2e3f192957b36cb41987430"
+          },
+          "templates/gizmos/gui-dialog.cpp.wizard": {
+            "sizeBytes": 2080,
+            "sha256": "033dc6ee1bb405d00206a6a07484c293e5bfb973b96f7754fa3edf7eff0b3d1f"
+          },
+          "templates/gizmos/wxproject.project.wizard": {
+            "sizeBytes": 2810,
+            "sha256": "82f05e6ba073921bffd8f822871af131a97626572119f11a67bb51c737f59871"
+          },
+          "templates/gizmos/gui-frame.h.wizard": {
+            "sizeBytes": 1527,
+            "sha256": "81aacbb9bc6ca6b31944a1e26ee95f1725e749ca4b3096aaea6f735ac7fa6361"
+          },
+          "templates/gizmos/mainframe.cpp.wizard": {
+            "sizeBytes": 1394,
+            "sha256": "811ba55d0503fdae19fd7a423551516566f3ca9a7b03007ab15f12a20c3b911a"
+          },
+          "templates/gizmos/wx_pch.h.wizard": {
+            "sizeBytes": 692,
+            "sha256": "70a2e9f1f986777bf314f11de5ae6469f1020ad9ccd43c28a3996bc07c88a8d1"
+          },
+          "templates/gizmos/main.cpp.wizard": {
+            "sizeBytes": 289,
+            "sha256": "c99bc4289d1d39c01541afc170ff0cfdc46913c611a61c2d81a674e2272e8067"
+          },
+          "templates/gizmos/plugin.cpp.wizard": {
+            "sizeBytes": 1075,
+            "sha256": "e1a22be9277a15073ac4dfc9f0316b454cc7dec870e69c6c273a3dbecde8c3ae"
+          },
+          "templates/gizmos/wxmain.project.wizard": {
+            "sizeBytes": 2756,
+            "sha256": "66332a3798d658c8357b33924566d05a3484bcbc6d5131b5098ad4a405aaecc3"
+          },
+          "templates/gizmos/CMakeLists.txt.plugin.wizard": {
+            "sizeBytes": 1762,
+            "sha256": "728a58062ec131e0673f3e0092138b8d8ffe8a147eb3a53e9ecc6f02108b3dc8"
+          },
+          "templates/gizmos/gui-frame.fbp.wizard": {
+            "sizeBytes": 10986,
+            "sha256": "ba7e9d4b43dde37c77b379ebb663f828044d7530605f67fd9d1f0106a6c09a45"
+          },
+          "templates/gizmos/resources.rc.wizard": {
+            "sizeBytes": 24,
+            "sha256": "bb14b76f0e613fc8d3beaee8d22fd660c2d8ed96c5a963ad8dd8713f417e2d01"
+          },
+          "templates/gizmos/plugin.h.wizard": {
+            "sizeBytes": 700,
+            "sha256": "917092d44546a5d2f7dce72fdfa88a616eb7762ac5472a2d42c31e1fcf76c520"
+          },
+          "templates/gizmos/liteeditor-plugin.project.wizard": {
+            "sizeBytes": 4530,
+            "sha256": "28897e04fba71e8ada931e5b478b85836e3b4337efda7e7d66d3fdc0531471f1"
+          },
+          "templates/gizmos/app.cpp.wizard": {
+            "sizeBytes": 924,
+            "sha256": "d68b4f5507ad99f4b87bade93a6e7fe05f653a04e938279ce8a6588662061516"
+          },
+          "templates/gizmos/app.h.wizard": {
+            "sizeBytes": 230,
+            "sha256": "e10ef2dbc13ea616d6a479aa1690525e224fab919d2b585fe95350180d0700e2"
+          },
+          "templates/gizmos/main-dialog.cpp.wizard": {
+            "sizeBytes": 1540,
+            "sha256": "483b029c8beb898734d3fca404494481ec21ec157dbf963a7b9825fd41cddf38"
+          },
+          "templates/gizmos/gui-dialog.fbp.wizard": {
+            "sizeBytes": 12114,
+            "sha256": "6231d506b22cdf2c4b8ecb49f7c02e0899bcfe821831e2057735eb3e6f2049f3"
+          },
+          "templates/gizmos/main-frame.cpp.wizard": {
+            "sizeBytes": 1457,
+            "sha256": "6fdc3caf88300283f558ec2cf7039fa5b9a32975580a834e7b940acd47bedcca"
+          },
+          "templates/gizmos/main-frame.h.wizard": {
+            "sizeBytes": 1493,
+            "sha256": "f0a02b4b3e3b77da4be2a738638cf255fb0057046c46e37d6ec8a2a77aab10df"
+          },
+          "templates/projects/vc-dynamic-library/vc-dynamic-library.project": {
+            "sizeBytes": 4211,
+            "sha256": "c6cde2cbd675650c56158163d88eeb918ca423029fa97c3f5d43a20a0d82e19c"
+          },
+          "templates/projects/vc-dynamic-library/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/main_app.h": {
+            "sizeBytes": 564,
+            "sha256": "67cd662f8ac38e2d22b4d33deb81342681807e150f1ff32242c178d4f45430b1"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/main_app.cpp": {
+            "sizeBytes": 482,
+            "sha256": "01091de7e02f58c79b845c2464e3c3868dbbdf4f2f2c7ec842466f92a053ccec"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/wxWidgets_ConsoleApp.project": {
+            "sizeBytes": 4734,
+            "sha256": "934f4f187a872e9ce1cc6e204fff22947292a0be2fe8a222a93608645acb09e9"
+          },
+          "templates/projects/ConsoleClang/main.c": {
+            "sizeBytes": 99,
+            "sha256": "ec89f5b6e7718115234936d3a74d3ca503a200b180179444ad52a4f07a8ac757"
+          },
+          "templates/projects/ConsoleClang/ConsoleClang.project": {
+            "sizeBytes": 5079,
+            "sha256": "bccc622b929bcd396f5889b61ac28264ca11bfe9d22acdc499adc28cd2f9cae6"
+          },
+          "templates/projects/executable-qt-enabled/main.cpp": {
+            "sizeBytes": 355,
+            "sha256": "68fb92ed838b0d3e7b54fbbfd7ceaa551bf131b601b74b51a0d3690af261d383"
+          },
+          "templates/projects/executable-qt-enabled/executable-qt-enabled.project": {
+            "sizeBytes": 4828,
+            "sha256": "30b336199d0f4c5f3f7428c764a84418c33639b33837940d98c3d04432faf067"
+          },
+          "templates/projects/executable-qt-enabled/icon.png": {
+            "sizeBytes": 1351,
+            "sha256": "aeaa02c03ab1050b4d7cf4fb343f99935ca4cd9cc73e4a362d4dc57d3d175201"
+          },
+          "templates/projects/executable-qt-qmake-enabled/main.cpp": {
+            "sizeBytes": 356,
+            "sha256": "ac59e48c68af5eb117830b959f21a0bb452ffb5920d24358ab0aab00d9c4cfdb"
+          },
+          "templates/projects/executable-qt-qmake-enabled/icon.png": {
+            "sizeBytes": 1351,
+            "sha256": "aeaa02c03ab1050b4d7cf4fb343f99935ca4cd9cc73e4a362d4dc57d3d175201"
+          },
+          "templates/projects/executable-qt-qmake-enabled/executable-qt-qmake-enabled.project": {
+            "sizeBytes": 4860,
+            "sha256": "ae184178c7a2778ae6e5845dec00b4e29417a3d8f2499d0d8d5a9a5ea8b9ce7e"
+          },
+          "templates/projects/cobra-libraryU/cobra-library.project": {
+            "sizeBytes": 7065,
+            "sha256": "0836e6db114f42ab733a386680fbb0bec6f6cd37fd7a2411d611ba34e14d8601"
+          },
+          "templates/projects/cobra-libraryU/lib-build-files": {
+            "sizeBytes": 500,
+            "sha256": "d61f0740e86912feba08c3cd4ff54e91592a9105815e74622149e816ee760f70"
+          },
+          "templates/projects/cobra-executableU/cobra-executableU.project": {
+            "sizeBytes": 7190,
+            "sha256": "746f96c2813a9fbe549c1c249a5c28fb729cbcc69006d3a0b0678bb6e1b7e061"
+          },
+          "templates/projects/cobra-executableU/build-file": {
+            "sizeBytes": 510,
+            "sha256": "a0b5aaa1ce39cc99a60a4fbcd3de0d09dcaf908ec2ef16c22bc83a8426c1e6f9"
+          },
+          "templates/projects/c_gtk24_template/c_gtk24_template.project": {
+            "sizeBytes": 4731,
+            "sha256": "0e6efb0333027334f767a6992505c30a363b31f6ac4cc42916fb8f22a17bbb53"
+          },
+          "templates/projects/c_gtk24_template/main.c": {
+            "sizeBytes": 3385,
+            "sha256": "297d991c95eec707fdf827c741431b575cb8878aafad1ca944662e3cfb271111"
+          },
+          "templates/projects/c_gtk24_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/cobra-staticU/build-file": {
+            "sizeBytes": 510,
+            "sha256": "a0b5aaa1ce39cc99a60a4fbcd3de0d09dcaf908ec2ef16c22bc83a8426c1e6f9"
+          },
+          "templates/projects/cobra-staticU/cobra-staticU.project": {
+            "sizeBytes": 7257,
+            "sha256": "1ec31d34aa44b824706ae7b6d3631a31fb7d8f1e333e89163c6323d493265d6a"
+          },
+          "templates/projects/dynamic-library/dynamic-library.project": {
+            "sizeBytes": 1811,
+            "sha256": "79cd47e9685aabbc0a3a93aa94e3f34bc5f5beda4d2c72433f2f1da40598b253"
+          },
+          "templates/projects/dynamic-library/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/static-library/static-library.project": {
+            "sizeBytes": 4248,
+            "sha256": "7a9f6fd6410f5df1984c7adde30295a5aaeaa9a2319da040c291530bb826c93a"
+          },
+          "templates/projects/static-library/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/cpp_gtkmm3_template/main.cpp": {
+            "sizeBytes": 301,
+            "sha256": "7f5422bde222ce82818a7efeea7d0b41a5470ee43fe9e62777fdd2cbeb0a80d7"
+          },
+          "templates/projects/cpp_gtkmm3_template/mainwindow.h": {
+            "sizeBytes": 336,
+            "sha256": "960078c2edd7538465fa97c1345fef8b0ea46cf495b778f77e823cd6a50d0432"
+          },
+          "templates/projects/cpp_gtkmm3_template/cpp_gtkmm3_template.project": {
+            "sizeBytes": 4866,
+            "sha256": "7719324a38a902a834437730b342a92ce396631a305b06c40d6a2efd785dc546"
+          },
+          "templates/projects/cpp_gtkmm3_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/cpp_gtkmm3_template/mainwindow.cpp": {
+            "sizeBytes": 714,
+            "sha256": "5735125b593bb5a8b66ff457aea56a3a092b2523f9469cf1f335ede3c9179d45"
+          },
+          "templates/projects/executable-wx-dialog/main.h": {
+            "sizeBytes": 1503,
+            "sha256": "059ab512368063f911f895483569cb278ee096ef9c18abdd4031f1e9ea0b0177"
+          },
+          "templates/projects/executable-wx-dialog/executable-wx-dialog.project": {
+            "sizeBytes": 5318,
+            "sha256": "69fdcb38206ebc5200bc6c0aea58f115c34c15fe76c68ff16f321ab2fc23b3bd"
+          },
+          "templates/projects/executable-wx-dialog/gui.h": {
+            "sizeBytes": 1631,
+            "sha256": "784d969c9e204759f8d37926f64bd6157fb3947752f8f3d8e670c7746c96ce5d"
+          },
+          "templates/projects/executable-wx-dialog/main.cpp": {
+            "sizeBytes": 1477,
+            "sha256": "0acfa3b44d58b57b448fb03c99498108889e5baa54efc0167ed06d06cba30ef1"
+          },
+          "templates/projects/executable-wx-dialog/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wx-dialog/gui.fbp": {
+            "sizeBytes": 12105,
+            "sha256": "840927361f351508f15c4ff93aceb6ea775b4577bc7e12cbcdd18b8830ec0c8d"
+          },
+          "templates/projects/executable-wx-dialog/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/executable-wx-dialog/gui.cpp": {
+            "sizeBytes": 2086,
+            "sha256": "a994d81f19d18d6df2a04986dee8d6d67cfe36b3405b739aed1bb3653f4b0f5f"
+          },
+          "templates/projects/executable-wx-enabled/main.cpp": {
+            "sizeBytes": 875,
+            "sha256": "27c941828da6ab6a8d874ff6474848d91a92f6debe68c71a43de3ef86ab935e7"
+          },
+          "templates/projects/executable-wx-enabled/executable-wx-enabled.project": {
+            "sizeBytes": 4820,
+            "sha256": "ca531bcb6ed5d30c7601124de1f2a6dcfa0117eb5bc065a98442892a9181fa33"
+          },
+          "templates/projects/executable-wx-enabled/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/c_gtk3_template/main.c": {
+            "sizeBytes": 283,
+            "sha256": "6e9e3fd3966950641a4b50ca8e418a7faa5b5b8ddbb207e838141851d9753394"
+          },
+          "templates/projects/c_gtk3_template/c_gtk3_template.project": {
+            "sizeBytes": 4730,
+            "sha256": "c242a03afeb8360369a86add76f769ebfffcbd897ed4e1b2d503d8f406a835e4"
+          },
+          "templates/projects/c_gtk3_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/executable-wxcrafter-frame/MainFrame.cpp": {
+            "sizeBytes": 516,
+            "sha256": "e86fe54d3fea42d0aaae72a3f3ee5570c835ddd9a77820c83ee5c287e2eb8556"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter_bitmaps.cpp": {
+            "sizeBytes": 1550,
+            "sha256": "14726cebaedfb6aec398009e04d32e831bf132b762d5012c0fc2bc9474d70854"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter.hpp": {
+            "sizeBytes": 1916,
+            "sha256": "4b74fd902b521f90a379a821ebd6dc03c4fe15da8d530be56666b90eea206c52"
+          },
+          "templates/projects/executable-wxcrafter-frame/main.cpp": {
+            "sizeBytes": 547,
+            "sha256": "dbec8b47c4dac197b48299b391327c6278d12f7466af7db7d8b6eb4b750b6083"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter.wxcp": {
+            "sizeBytes": 12414,
+            "sha256": "df79dc41ec941f7c30432e59d8c96fd66c39486e4d80f6aeffe2bb04b9bd2929"
+          },
+          "templates/projects/executable-wxcrafter-frame/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wxcrafter-frame/MainFrame.hpp": {
+            "sizeBytes": 318,
+            "sha256": "a2662eef3fa52f425d83e84ad291d574d64e3e362bd78cd4fc72f0759fbe94aa"
+          },
+          "templates/projects/executable-wxcrafter-frame/icon.png": {
+            "sizeBytes": 1017,
+            "sha256": "39253b946d1de6e148f89d367bdef811a68c4359fe3f98726a3c31470a844195"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxCrafter_MainFrame.project": {
+            "sizeBytes": 5040,
+            "sha256": "ef0963ec8b33c5852fc2d0b5ddca1f8c1c1377a9309501529e75659c795f0e07"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter.cpp": {
+            "sizeBytes": 2689,
+            "sha256": "675bdb39c36a2b571ba592f23e977dfbd90b2cfb06918f1b32cb746612dc917a"
+          },
+          "templates/projects/executable-wx-frame/main.h": {
+            "sizeBytes": 1444,
+            "sha256": "dd2293e8feba2cf6183f5f20edbd51cfd42fcd43da90267e1c0829b5388a79a0"
+          },
+          "templates/projects/executable-wx-frame/gui.h": {
+            "sizeBytes": 1585,
+            "sha256": "51ad0659388832573a999aad15f6763f5b4fa1d837006f6dde6c96fb40e85d0c"
+          },
+          "templates/projects/executable-wx-frame/main.cpp": {
+            "sizeBytes": 1392,
+            "sha256": "f3f16b045012ba91c274f5457e52adcd28f830639576bfacca051d2653cb7401"
+          },
+          "templates/projects/executable-wx-frame/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wx-frame/gui.fbp": {
+            "sizeBytes": 10977,
+            "sha256": "3a0880fdd46da0f25535e66fc88d88591ddf1bcf6f3bf6d16f3515b71c378068"
+          },
+          "templates/projects/executable-wx-frame/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/executable-wx-frame/gui.cpp": {
+            "sizeBytes": 1692,
+            "sha256": "1e82e4966c59715915d7260316799073b7c10af28b28e137d9b4bce7c8f41a0c"
+          },
+          "templates/projects/executable-wx-frame/executable-wx-frame.project": {
+            "sizeBytes": 5316,
+            "sha256": "ab31fdb7d1b8714b101014b41423156a68ff65de9503ffb42f652e3840ee48a2"
+          },
+          "templates/projects/vc-executable/vc-executable.project": {
+            "sizeBytes": 4236,
+            "sha256": "dd8cdbaa0c1625a4cb128e566c53742e920db8c7ab67bd2965169a87d437e52d"
+          },
+          "templates/projects/vc-executable/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/dynamic-library-wx-enabled/dynamic-library-wx-enabled.project": {
+            "sizeBytes": 3974,
+            "sha256": "dbba96e55f926ee4b7c0b5ff73b795c1d12eba114f3165c413fed455b0725591"
+          },
+          "templates/projects/dynamic-library-wx-enabled/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/vc-static-lib/vc-static-lib.project": {
+            "sizeBytes": 4150,
+            "sha256": "1e774fb0923360b3b95b482edd33b434e5c59f85df5a6ba0bffd4113db12c4ac"
+          },
+          "templates/projects/vc-static-lib/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/executable-console-wx-enabled/main.cpp": {
+            "sizeBytes": 276,
+            "sha256": "9a63453dc4885876165ef02823632ebd5397f6c57cca12fa2b978f2c9ce7c092"
+          },
+          "templates/projects/executable-console-wx-enabled/executable-console-wx-enabled.project": {
+            "sizeBytes": 4901,
+            "sha256": "4580fa65037ac0572855106419749bd9f025dec2a3a9ec95bf95c7fc6ab6ef28"
+          },
+          "templates/projects/executable-console-wx-enabled/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/executable-wxcrafter-dialog/MainDialog.hpp": {
+            "sizeBytes": 217,
+            "sha256": "223be9d1e814e1f296f6e1957a6f76def23e9f5dd6a1e03eabbd53b4c25c7a04"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter_bitmaps.cpp": {
+            "sizeBytes": 1550,
+            "sha256": "14726cebaedfb6aec398009e04d32e831bf132b762d5012c0fc2bc9474d70854"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter.hpp": {
+            "sizeBytes": 1595,
+            "sha256": "d12efe9623ac13cde30a3bd4de36e36ed0f9935ee4bfb12df88a6909e722ad71"
+          },
+          "templates/projects/executable-wxcrafter-dialog/main.cpp": {
+            "sizeBytes": 515,
+            "sha256": "41eb7068f02296fad0df6e2f4033195c78d86473075c65ef6a2ea99b2e43c325"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter.wxcp": {
+            "sizeBytes": 11655,
+            "sha256": "c89b1d67bed19807efb54c61db961e5fd380adc10f356694bfce15057242d9d4"
+          },
+          "templates/projects/executable-wxcrafter-dialog/MainDialog.cpp": {
+            "sizeBytes": 138,
+            "sha256": "f24f835bc96933e8324f49d14c1345b87eacf4bfe13e8f3145afab606f7858b0"
+          },
+          "templates/projects/executable-wxcrafter-dialog/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxCrafter_MainDialog.project": {
+            "sizeBytes": 5044,
+            "sha256": "b895b29f1a58b096c35137cc96fec7202244515581134b25a6ce21347622a824"
+          },
+          "templates/projects/executable-wxcrafter-dialog/icon.png": {
+            "sizeBytes": 1017,
+            "sha256": "39253b946d1de6e148f89d367bdef811a68c4359fe3f98726a3c31470a844195"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter.cpp": {
+            "sizeBytes": 2293,
+            "sha256": "8c7eb4f5d5298a22f5db6d93f0c4d046a4f8c073c333ce0335fe3eaedc556787"
+          },
+          "templates/projects/executable-cobra/executable-cobra.project": {
+            "sizeBytes": 4497,
+            "sha256": "3791718566f089b41dbe8a99a73ffbabd95cca268c76b3ce6a2f4377b788e104"
+          },
+          "templates/projects/executable-cobra/main.cobra": {
+            "sizeBytes": 84,
+            "sha256": "c2dbae3c3c91c01d8bf951b40b80240efa54ddf10ba690a31b798a89e24dc425"
+          },
+          "templates/projects/executable-gcc/main.c": {
+            "sizeBytes": 93,
+            "sha256": "f35ffc3c38142562ced82c7d12c120f70bcdf1fcccb071c605fa97afa7446725"
+          },
+          "templates/projects/executable-gcc/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/executable-gcc/executable-gcc.project": {
+            "sizeBytes": 4492,
+            "sha256": "ae7fce06e7b375cccde8d46bdd031313e24f1b419cedd38733ac06245bc9986e"
+          },
+          "templates/projects/CMake_Executable/main.cpp": {
+            "sizeBytes": 116,
+            "sha256": "92570c9bcb7fe55b2c0c826b1c85fb8981424ae9f863ae77f458cd9571edd6df"
+          },
+          "templates/projects/CMake_Executable/icon.png": {
+            "sizeBytes": 1226,
+            "sha256": "35c67c9e5da50c136c0fec78c0512d0e600976d5afefa0a8326b327fd99fe238"
+          },
+          "templates/projects/CMake_Executable/CMake_Executable.project": {
+            "sizeBytes": 9272,
+            "sha256": "873ad8da36a59df84198b138c0f445a523bb21ec37d04e342bbd4e7a4195199f"
+          },
+          "templates/projects/CMake_Executable/CMakeLists.txt": {
+            "sizeBytes": 314,
+            "sha256": "740cc38c5efec0a48bf5bcc70e6c56e1cbd9f9e6908bf54038358fa36d15414a"
+          },
+          "templates/projects/non-code-project/non-code.project": {
+            "sizeBytes": 2619,
+            "sha256": "55422c5ff8480bb02883be3de6356855648263610329390945d488bd50d728ae"
+          },
+          "templates/projects/non-code-project/icon.png": {
+            "sizeBytes": 1216,
+            "sha256": "831ef5e9366245214e7225f8b01221ef1280745f448de04dd841affd8e5bc2ac"
+          },
+          "templates/projects/ConsoleClang++/ConsoleClang++.project": {
+            "sizeBytes": 4474,
+            "sha256": "ab1c8633ecb5fc1be853880e415debbac25977301f13e887b3342b34ef35b074"
+          },
+          "templates/projects/ConsoleClang++/main.cpp": {
+            "sizeBytes": 116,
+            "sha256": "92570c9bcb7fe55b2c0c826b1c85fb8981424ae9f863ae77f458cd9571edd6df"
+          },
+          "templates/projects/static-library-wx-enabled/main.cpp": {
+            "sizeBytes": 79,
+            "sha256": "d2eb0a13fda48ad8bf87278142fc81007f076237315aecfb78a0dd4e4239ecd6"
+          },
+          "templates/projects/static-library-wx-enabled/static-library-wx-enabled.project": {
+            "sizeBytes": 4752,
+            "sha256": "accd6e41795f0932c672cc3b8d07cee3461cced8176d7b0a2675bc82bf5b445a"
+          },
+          "templates/projects/static-library-wx-enabled/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/cpp_gtkmm24_template/main.cpp": {
+            "sizeBytes": 247,
+            "sha256": "7ac8654ff61960ca4d8a93bfd81a1e0afd769259da9148d2431ae1deff1ad069"
+          },
+          "templates/projects/cpp_gtkmm24_template/cpp_gtkmm24_template.project": {
+            "sizeBytes": 4867,
+            "sha256": "1f1e909f930d0bc6d72aea008ef563501d0f1e6cdc0d0d7dfb376c3bbf239532"
+          },
+          "templates/projects/cpp_gtkmm24_template/mainwindow.h": {
+            "sizeBytes": 318,
+            "sha256": "c042f9b1ce8a7abd7a1649b8d4517a54777a03c097f12cc4069bd39b44a5810e"
+          },
+          "templates/projects/cpp_gtkmm24_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/cpp_gtkmm24_template/mainwindow.cpp": {
+            "sizeBytes": 763,
+            "sha256": "3669d81f4c6cefdbfb7598f96c8436a78aa2dfe062c537364ba87f43fa032b10"
+          },
+          "templates/projects/executable/main.cpp": {
+            "sizeBytes": 93,
+            "sha256": "f35ffc3c38142562ced82c7d12c120f70bcdf1fcccb071c605fa97afa7446725"
+          },
+          "templates/projects/executable/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/executable/executable.project": {
+            "sizeBytes": 4496,
+            "sha256": "824a7c8c5c93ebbfd7b60fcf003551b7166d9a33e464b2956f9e8850540ae7da"
+          },
+          "templates/projects/custom-makefile/icon.png": {
+            "sizeBytes": 1216,
+            "sha256": "831ef5e9366245214e7225f8b01221ef1280745f448de04dd841affd8e5bc2ac"
+          },
+          "templates/projects/custom-makefile/custom-makefile.project": {
+            "sizeBytes": 4302,
+            "sha256": "ce411b6bb4c777fbdd77b45fe9fb05828d8907707397ef531e900c5b0697c346"
+          },
+          "templates/projects/executable-wx-xrc/main.h": {
+            "sizeBytes": 1170,
+            "sha256": "7286b65a7b0dae7c5f6be37751da6e1609888ac93bbca4b8540f28945d6aef38"
+          },
+          "templates/projects/executable-wx-xrc/main.cpp": {
+            "sizeBytes": 2070,
+            "sha256": "c650d918880c4038172f71d77181ca909a4164e5ca3294c92883fcba87de6901"
+          },
+          "templates/projects/executable-wx-xrc/gui.xrc": {
+            "sizeBytes": 1556,
+            "sha256": "8e9832a30adfdfe0cbc1a37844a4bfea85d65d532179a2fcac5376c23b6ed646"
+          },
+          "templates/projects/executable-wx-xrc/gui.wxcp": {
+            "sizeBytes": 11730,
+            "sha256": "f88c7c947084affea37eba37f031ac071ea412a1d4c52af7c8fcae1c31078c99"
+          },
+          "templates/projects/executable-wx-xrc/executable-wx-xrc.project": {
+            "sizeBytes": 5108,
+            "sha256": "f0ee9dad074bb64be17679284fd91f302eb80214b202b304050af8b607f5325a"
+          },
+          "templates/projects/executable-wx-xrc/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/UnitTest++/main.cpp": {
+            "sizeBytes": 2362,
+            "sha256": "710398ba750e0d1f0cdd3285d764b2a1924758370e1bf657492b42368897d612"
+          },
+          "templates/projects/UnitTest++/UnitTest++.project": {
+            "sizeBytes": 4519,
+            "sha256": "0d9c33ce61d6302afff93efda16c2fb9635ce11a49271dd234cb30fd36c6acff"
+          },
+          "templates/projects/UnitTest++/icon.png": {
+            "sizeBytes": 1216,
+            "sha256": "831ef5e9366245214e7225f8b01221ef1280745f448de04dd841affd8e5bc2ac"
+          },
+          "man/man1/codelite_fix_files.1": {
+            "sizeBytes": 580,
+            "sha256": "5e7407e515d43a60af79c69c95b44552dfbf96f846e8e998038dba7079a5e8a8"
+          },
+          "man/man1/codelite_open_helper.1": {
+            "sizeBytes": 830,
+            "sha256": "27ba97e8f2a719b6c07faa0ff3cdfb0c5020cbcb30875931ec9df6a9ba2cdd8e"
+          },
+          "man/man1/codelite-make.1": {
+            "sizeBytes": 1132,
+            "sha256": "95074c7418587a57e431b9e1738219509e9f44a41698934527b40747370b1c67"
+          },
+          "man/man1/codelite.1": {
+            "sizeBytes": 989,
+            "sha256": "09b523ecdfccbffe802396483499b2076c515862df32481d07c6484f01010d68"
+          }
+        },
+        "finalDataAndConfigurationPins": {
+          "drive_c/CodeLiteTests/原始代码.cpp": {
+            "sizeBytes": 38,
+            "sha256": "99f9dd815a09f0e53857fa48c4241531a65d7b4aae570fc4fa1af646af3730ce"
+          },
+          "drive_c/CodeLiteTests/original.cpp": {
+            "sizeBytes": 52,
+            "sha256": "3dd8b694918d34185b5c39057f9cf29450c4e0fa7c371c65afb2f9d20e6a13e2"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/boost/__init__.py": {
+            "sizeBytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/codelite.log": {
+            "sizeBytes": 472,
+            "sha256": "7ab49ccdea37db8053e933f3b88515fbde1aaf002a460a17558ac6c72f7cda4e"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/boost/printers.py": {
+            "sizeBytes": 48582,
+            "sha256": "0313c294a35a7f908c5d31881089dd23c8cf145a1f43fbfce1774a83cc7b2655"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/gdb_lookup.py": {
+            "sizeBytes": 3014,
+            "sha256": "0a4117cadc59b715bd09b5a0d122c4dea37afe6ba0f96cbdccee037273ac405f"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/build_settings.xml": {
+            "sizeBytes": 21283,
+            "sha256": "9ca3c2abe7ff7dddf0d93d8d95047f961a09267134ac396f1e024c81a0e6096f"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/code-completion.conf": {
+            "sizeBytes": 8042,
+            "sha256": "61f8b9883e5ab50e3f52ff5f3677bfecd5a36a8b4971aff3e3e5cc1d2c421665"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/__init__.py": {
+            "sizeBytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/v6/__init__.py": {
+            "sizeBytes": 1161,
+            "sha256": "fc792a50d118d5feb068481d0328f89fe8762b7705011910281bfe65c1170c8f"
+          },
+          "system.reg": {
+            "sizeBytes": 3424327,
+            "sha256": "72e107ce7c663d3df3d36807ac48eaa2875177fe657cb84cf96d6892053f566b"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/gdb_load_rust_pretty_printers.py": {
+            "sizeBytes": 63,
+            "sha256": "b88f1a7df63b71f95addb4962e0a5bdd78a4ab406dabfb731b02b27342f4d533"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/Default.session": {
+            "sizeBytes": 706,
+            "sha256": "3d32671a49e9acc12c09eaa6bc013519e2a5a58cf40eab6ede76727edaf59481"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/plugins.conf": {
+            "sizeBytes": 52,
+            "sha256": "27940c8cf4f80da6fa60dc5eba63a143dc466ef9c6192c14cf23d6f51f0fc6fa"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/keybindings.conf": {
+            "sizeBytes": 22686,
+            "sha256": "3f1c20ced9b67821301ad8703fa35401f7b7c179d06dd2e055079e6341deeeed"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/codelite.xml": {
+            "sizeBytes": 1291,
+            "sha256": "bbb99f12078bbdd54e16c913ca4aa32455a32d28babdd0a3c4dbee01bc0970af"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/debuggers.xml": {
+            "sizeBytes": 1133,
+            "sha256": "6137fb74f0a239f2b963e2e5337b9bd8d5ec12a2a901b7b8add32898abfd2fbd"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/ColoursAndFonts.conf": {
+            "sizeBytes": 37,
+            "sha256": "8971efb0f6468c2504f047324a5c3cd47ce7c87981c882eaa3ff278c89d22edb"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/codelite.conf": {
+            "sizeBytes": 901,
+            "sha256": "11fe36209ab48616c07ae13f385ec7f1e5b0125441a480f90bcba3e4c8e9934d"
+          },
+          "user.reg": {
+            "sizeBytes": 101299,
+            "sha256": "3e80e66163616a84bc5c93470fd8138a2ea3583421c5b4b61abc5aef1e5e3ac1"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/wx.py": {
+            "sizeBytes": 4754,
+            "sha256": "e9d9ac34280fb152fc621e4850584b46e9aec5a1c58c70f2cf8ce0ce9e04a854"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/environment_variables.xml": {
+            "sizeBytes": 319,
+            "sha256": "87b3d60ddc818a7c17bc1aa6eb8cde838b7289c9fec14b2e6a6780899263edf0"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/persistency.ini": {
+            "sizeBytes": 248,
+            "sha256": "8ce29cf8ed08c1abb38899e9924d2d065e4528fc05b93a43e98b9d792d8c7eed"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/default.layout": {
+            "sizeBytes": 746,
+            "sha256": "b43c53991256e60c75350fdac4ddf253e06399c820367d863d968f26bad5a87f"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/v6/printers.py": {
+            "sizeBytes": 68367,
+            "sha256": "6a565bbeba13482791c9db00a131439278ff88ae1b5a4bc8d8fcdbf40cbfd488"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/helper.py": {
+            "sizeBytes": 2647,
+            "sha256": "8d62f36191bff3869057fa383b737d6a36a34d00c2d170fb1b2a4128b88dad4a"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/lexers/lexers.json": {
+            "sizeBytes": 3839748,
+            "sha256": "5f502d31e7b99e12004e943d39a2076982aeda376fb6f450b830b6643f22dce7"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/v6/xmethods.py": {
+            "sizeBytes": 27705,
+            "sha256": "98db47a3b61cf963823b628160a329db5c38812a0886deeca7195046df87a908"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/sessions.xml": {
+            "sizeBytes": 99,
+            "sha256": "6b663b89140495cb13da345f9bfe7436b106eb5fa8bf722222bea4791cfe6c9e"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/rust_types.py": {
+            "sizeBytes": 3637,
+            "sha256": "52f137497bf4d3426fbce9d4b8f25069f9fe5e9e7ce9a707723df4e2b7b3670d"
+          },
+          "userdef.reg": {
+            "sizeBytes": 4052,
+            "sha256": "adfba0a1d6e227016d4b0b3f412340680340fee5833e8df3c61a42c7974c1f68"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/gdb_providers.py": {
+            "sizeBytes": 13302,
+            "sha256": "5ceb623aa3ee477c4cff52b8d79fe4b80d27d01284c4ccfd7037fb4d200e4652"
+          }
+        },
+        "currentlyAbsentPreviouslyPinnedPaths": [],
+        "createdConfigurationPaths": [],
+        "coverage": "332 program files, fixed input and saved CPP text bytes, three registry and selected prefix ProgramData/CodeLite and named prefix-user files; not full app filesystem"
+      },
+      "market": {
+        "generationId": "gen-job-1791915741089-4",
+        "generation": {
+          "bottleId": "gen-job-1791915741089-4",
+          "createdAtMilliseconds": 1791915741096,
+          "definition": {
+            "bottleId": "gui-codelite",
+            "category": "education",
+            "compatibilityRating": "unknown",
+            "id": "codelite",
+            "installer": {
+              "arguments": [
+                "/VERYSILENT",
+                "/SUPPRESSMSGBOXES",
+                "/NORESTART",
+                "/SP-",
+                "/DIR=C:\\CodeLite",
+                "/NOICONS",
+                "/TASKS="
+              ],
+              "fileName": "codelite-amd64-17.0.0.exe",
+              "sha256": "8dc40a5d1b855610377229a00d70426c5af7742532ba932e769ceba39af9851b"
+            },
+            "launchers": [
+              {
+                "executable": "CodeLite/codelite.exe",
+                "id": "main",
+                "name": "CodeLite"
+              }
+            ],
+            "name": "CodeLite",
+            "publisher": "Eran Ifrah",
+            "schemaVersion": "1",
+            "tags": [
+              "rolling-1000",
+              "managed-inno"
+            ],
+            "version": "17.0.0"
+          },
+          "definitionDigest": "sha256:a2fb14b367292126ec782b0dd4da3fd17d55236e1f1b85b92b3a40d40e825af1",
+          "id": "gen-job-1791915741089-4",
+          "launcherDigests": {
+            "main": "sha256:5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066"
+          },
+          "runtime": {
+            "binding": {
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINESERVER": "/usr/bin/wineserver"
+              },
+              "executable": "/usr/bin/wine",
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "providerId": "wine-linux-x86-64-preview",
+              "wineserverExecutable": "/usr/bin/wineserver"
+            },
+            "selection": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "version": "11.14"
+          },
+          "status": "ready",
+          "updatedAtMilliseconds": 1791915758187
+        },
+        "installedFiles": {
+          "libunwind.dll": {
+            "sizeBytes": 36864,
+            "sha256": "e6655deba2247afd3ad8dfec26a4610e925414947d2a2bc1d71182b4f8d5dc04"
+          },
+          "mv.exe": {
+            "sizeBytes": 117888,
+            "sha256": "918ac677fe30c171121dd04d5cc03adade573049c8d831b68570c0272cde6506"
+          },
+          "libffi-8.dll": {
+            "sizeBytes": 36864,
+            "sha256": "fe153f53b531f3e8a4a9ca8735532a1f242f7e3a49b99c94c85d3ebdfe406382"
+          },
+          "libc++.dll": {
+            "sizeBytes": 1464832,
+            "sha256": "335e8e41c56e85e73ab1d458cff20c1a5232cc47c66e6ef31bcc075579cbca5b"
+          },
+          "clangd.exe": {
+            "sizeBytes": 27279360,
+            "sha256": "03d3357670405283b7030f692b8db8c995b210283592a14c482e69c224a26b86"
+          },
+          "clang-format.exe": {
+            "sizeBytes": 136704,
+            "sha256": "066618364dc1d6f61fdc3b6ec7ebd146e6541b5e5827fab009c2cb431a4383fb"
+          },
+          "ctagsd-tests.exe": {
+            "sizeBytes": 578560,
+            "sha256": "e14b1a48dc051085516b8072ab8148068978e16bb16f025751a89e04d7070c0e"
+          },
+          "libhunspell-1.7-0.dll": {
+            "sizeBytes": 551424,
+            "sha256": "27a2663077506b01f5b4eac2114ad9563137a98f185ff256df601d262181d203"
+          },
+          "libssh.dll": {
+            "sizeBytes": 479232,
+            "sha256": "57445b6cfc3882e734912628ec0b7cc7a9f801c1ceff052cc3398798e7ed0cfe"
+          },
+          "phprefactor.phar": {
+            "sizeBytes": 5634624,
+            "sha256": "b391d5324aaabed7239e361def9b6190298fd7c43fd8363afd0c3afdf7a92c4e"
+          },
+          "codelite-cc.exe": {
+            "sizeBytes": 94720,
+            "sha256": "ad2b42422c4cae28f8bc9657027f9bcf190a363f1c05783f628436a072c934dc"
+          },
+          "eoswiki.zip": {
+            "sizeBytes": 750,
+            "sha256": "d3bcb78d8a5703fee165bd773103fbd207ee50b4c7605455d19006193ac0f2ff"
+          },
+          "libdapcxx.dll": {
+            "sizeBytes": 778240,
+            "sha256": "c074811d46493465e9bd80353b2e09fea218840c03c365181326433e0d3ff1c8"
+          },
+          "libxml2-2.dll": {
+            "sizeBytes": 1437184,
+            "sha256": "3b79d840ddf9795a9f5f41b8ddf14a1b1b7b9e5ec81c18a56a9509b9a65b4c41"
+          },
+          "unins000.exe": {
+            "sizeBytes": 3158589,
+            "sha256": "d7b66673fa52252b23e75ec8cb0bc79fe613de079cabcf4492c89f5a63303328"
+          },
+          "codelite-bitmaps-light.zip": {
+            "sizeBytes": 997869,
+            "sha256": "7b9683e29673f4518716c10bba8680c87acf5c58662374a2aac03ee962aa3836"
+          },
+          "libzstd.dll": {
+            "sizeBytes": 850432,
+            "sha256": "761d8be814e12636ef90aae1c75eb496d564a27b958bc88eba975471063eb329"
+          },
+          "libwxsqlite3.dll": {
+            "sizeBytes": 155136,
+            "sha256": "404e7e11ba4db6d89c2aa3764bf4fd4546627cb1601514ceef7571d5057d0c8f"
+          },
+          "wxmsw330u_clang_custom.dll": {
+            "sizeBytes": 17881088,
+            "sha256": "b6aae772a8f2a0430cc6e964f3cf890e670ce2ba6bcb5b956d6227944f96e664"
+          },
+          "ctagsd.exe": {
+            "sizeBytes": 520192,
+            "sha256": "4de464ce70af338b4076f8d09fa5840cd6b1c9dcf0f4c4a931684f801171d13e"
+          },
+          "libiconv-2.dll": {
+            "sizeBytes": 1046528,
+            "sha256": "89f1aadd734a361145905c0e5c6b2bafd3dbe8dffbe5370d94d2f0039b89e5d9"
+          },
+          "codelite_open_helper.py": {
+            "sizeBytes": 1701,
+            "sha256": "981161f80954111a4f7e78e00c4b164f81b6ca05c159eb8432aafe4d537f9595"
+          },
+          "mkdir.exe": {
+            "sizeBytes": 69421,
+            "sha256": "c2e952d861bd9113894c08176db59313736c205f8dba7c164be934a9d1350fa3"
+          },
+          "codelite-bitmaps-dark.zip": {
+            "sizeBytes": 1002592,
+            "sha256": "d023ee726421811e0a3837887275c276f434e9ad4ff8aff699c68960f9ffc950"
+          },
+          "rust-gdb.bat": {
+            "sizeBytes": 645,
+            "sha256": "605dd335c06a35c04b3add48b5c1367b1bf41092b6d42ab2895b72a13e65f830"
+          },
+          "wx-config.exe": {
+            "sizeBytes": 1327104,
+            "sha256": "3876bc1782ad471e3aecdbedfe40b6d3028df34c8bca1c8bca48ad29ea72dade"
+          },
+          "liblzma-5.dll": {
+            "sizeBytes": 165376,
+            "sha256": "682d13c10ab21ce6bb59e3a23f0f455c9b9129442d4b4067f0f1a7cb3c8a02ca"
+          },
+          "libplugin.dll": {
+            "sizeBytes": 7395328,
+            "sha256": "709cb7ffd02e3824a59a2434029f8830dc5dc049a1b6c88ec3ba0f92f38dba66"
+          },
+          "codelite_cppcheck.exe": {
+            "sizeBytes": 2664448,
+            "sha256": "c14dce24ec66f07b8b4cca7360e1d14e300584d04ad3f0ad21bc7a25026a765e"
+          },
+          "msys-intl-8.dll": {
+            "sizeBytes": 43904,
+            "sha256": "595ee889c266572fbae0dabc9289d7536f3cba5321d1f8518205543627404a35"
+          },
+          "codelite-ctags.exe": {
+            "sizeBytes": 1389056,
+            "sha256": "3793b623cb957c65c42be87a3d2f73a1890837c41aa55041722cfddb8af4ffe7"
+          },
+          "msys-2.0.dll": {
+            "sizeBytes": 3588018,
+            "sha256": "eed4170bcd61bfbf22f690a814b295f78aa1baa9b240d32641052a122a5f2917"
+          },
+          "libsqlite3-0.dll": {
+            "sizeBytes": 1744896,
+            "sha256": "d190fbc2d7bc6444549ad9d364f938818b5276fc765761b0bb6ce9212a3d81bf"
+          },
+          "codelite-make.exe": {
+            "sizeBytes": 124416,
+            "sha256": "e02012d611035fcad7dbff97eebabe7d03b48b265fc633452cc7dbe5d431fef5"
+          },
+          "libwinpthread-1.dll": {
+            "sizeBytes": 84992,
+            "sha256": "65a7afe094ae91a52010e1644bcde3c278315316014b2662e0bc5adfa59d6c03"
+          },
+          "codelite-echo.exe": {
+            "sizeBytes": 78336,
+            "sha256": "478dadd4ee3dae9d0fdf30835c6147fad3762ccc4947afc0f3c1c64953641d43"
+          },
+          "libclang-cpp.dll": {
+            "sizeBytes": 56480768,
+            "sha256": "ff980bee01e4e4abad50c48a5a771e57819086e4930414db80e80f9d5efc0645"
+          },
+          "libcrypto-1_1-x64.dll": {
+            "sizeBytes": 2631680,
+            "sha256": "49b954153aa36de7668cca17d0b8beb8d1cb97680e9f57b54ce6a1d269e36a82"
+          },
+          "codelite.dll": {
+            "sizeBytes": 4014080,
+            "sha256": "3d9512dd565798dfa246877812ccff2edf63c2bacdfbe5f3b25340361b1c88d4"
+          },
+          "unittest++1.3.tar.gz": {
+            "sizeBytes": 29380,
+            "sha256": "6b44eabe41d0567a55d35a61030743d90bd7757f0bbbfd61c5b36ae588ecb23d"
+          },
+          "codelite-terminal.exe": {
+            "sizeBytes": 515072,
+            "sha256": "a064db7430ad5593c57242f916694ad8445c5594b7274083c85cb17c7467fb4e"
+          },
+          "codelite.exe": {
+            "sizeBytes": 7258112,
+            "sha256": "5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066"
+          },
+          "cp.exe": {
+            "sizeBytes": 111647,
+            "sha256": "ec8bd502ed395a585a159ff50addb38f3422869126518913917adeeed0ab0553"
+          },
+          "astyle.sample": {
+            "sizeBytes": 932,
+            "sha256": "ba2b772468ed175aaf501c7bc690d7f551f7436a14ac3d21f9a833e1ace7e8df"
+          },
+          "libwxshapeframework.dll": {
+            "sizeBytes": 873984,
+            "sha256": "8406ca24cce1af93ebc7a083eb52056155ddb932d14c0984ae0ef43d12290247"
+          },
+          "PHP.zip": {
+            "sizeBytes": 389317,
+            "sha256": "60e46242b502e6bfeb3da714fa6daaa4595ddd4d765053174df82faaf02b7a5e"
+          },
+          "msys-iconv-2.dll": {
+            "sizeBytes": 1023499,
+            "sha256": "7f1115edffe53e5f02bb12e6cb63c46a6e3613490a05333556ac4f78a152d921"
+          },
+          "ls.exe": {
+            "sizeBytes": 141831,
+            "sha256": "3051428b4d224e8fddbcae9bd9450ff950eb1dd9af0d08fa77a91efc3734c84b"
+          },
+          "zlib1.dll": {
+            "sizeBytes": 109568,
+            "sha256": "e7122f34fa1fa5b2888dfa22ce2d03b5be6c0273f33f0f2b26326dad66b1a4f0"
+          },
+          "libdatabaselayersqlite.dll": {
+            "sizeBytes": 203776,
+            "sha256": "622ef85f5d9a0b7caa0ee879b9dc0f82eab8441c52ce0d5cfea5a781b0a31b5a"
+          },
+          "rm.exe": {
+            "sizeBytes": 62343,
+            "sha256": "a06667fc54b513b1c9f049eddb631078ee511c8bff800ef7cc70b7b55e66fd6a"
+          },
+          "codelite-remote": {
+            "sizeBytes": 15030,
+            "sha256": "c03fc363b1c5b4b7c9f4faf0cd5c573ee7b12b2954457e33afc09815d343add9"
+          },
+          "php.sample": {
+            "sizeBytes": 948,
+            "sha256": "a6b2e979747525f594e16dc7a214bd0c96bc4c07cd45afe2e9cd4b6c6fafadfe"
+          },
+          "wxgui.zip": {
+            "sizeBytes": 314106,
+            "sha256": "991f1632534a54cc68216163e1f03d7109a5b75dc65b357eb293779f8265b7b8"
+          },
+          "codelite-exec.exe": {
+            "sizeBytes": 84480,
+            "sha256": "8e0ddb85bc9126f8a0d364e2c13b7165bb48b692e6cb9403f6705dbcec38bc4e"
+          },
+          "LICENSE": {
+            "sizeBytes": 18341,
+            "sha256": "57dd2a7d66d7b1055f71609b42701167fc3a2cdc1d92af051bb2850b98ae9a84"
+          },
+          "libLLVM-15.dll": {
+            "sizeBytes": 109964288,
+            "sha256": "2a7379cdb24b035443ddb99bd7e3b60f0534fc6c2f5750b52ec1506993bd10c6"
+          },
+          "unins000.dat": {
+            "sizeBytes": 57437,
+            "sha256": "3ca27b8cbc89d9831157a87347a48b3bcc7977e0d9bd0889b7b16d8ed5a3716d"
+          },
+          "resources/compfile.png": {
+            "sizeBytes": 3265,
+            "sha256": "74f97dd5b7b5850ae8f3f475b9b02cbc700cf1f58b5bc4d8ad717b6be57a371c"
+          },
+          "resources/qt16_preferences.png": {
+            "sizeBytes": 819,
+            "sha256": "cdccff1a2a103601d6695e71afaaa72c42669b3aeb6650ccbdeecf064d0814ab"
+          },
+          "resources/cppcheck.png": {
+            "sizeBytes": 463,
+            "sha256": "30d135695e6c86606a9c8dd6abe9d02d710f82fc8aae445812d37d7ce1d1b2ec"
+          },
+          "resources/qt16_new.png": {
+            "sizeBytes": 855,
+            "sha256": "aec7b89c3fc191655776e37faee3405f60174a9c59a6d831d6fa13a2c2bb5128"
+          },
+          "resources/qt24_new.png": {
+            "sizeBytes": 1479,
+            "sha256": "5bf3fbef79846278358eef4fbf8fa03180d2f5ca86e6fc68a2d6eda0bca63f9c"
+          },
+          "resources/wxfb_modified.png": {
+            "sizeBytes": 791,
+            "sha256": "f39e69150382d801b3fae3bc7f8ed81f84b4b5d05e6aa2ebe85241dbf36c5207"
+          },
+          "resources/svn_diff.png": {
+            "sizeBytes": 1819,
+            "sha256": "8d8c2a7d447d6b5e9d1618d1acab24e4985ca8d8a9c40ff510a3c457e594073e"
+          },
+          "resources/abbrev.png": {
+            "sizeBytes": 478,
+            "sha256": "81ebd1f84ec27476eea86ede7d319bdf3c7dd5ed5ca82782bc656b3ab0d0babd"
+          },
+          "resources/svn_ssh.png": {
+            "sizeBytes": 1940,
+            "sha256": "b2e19eb61946b4c921a8a839ebb0df8c0dee65f57eb4e083733a1409439cea00"
+          },
+          "resources/connect_no.png": {
+            "sizeBytes": 1303,
+            "sha256": "a1156b9858b9789381849e8e192caad880cba83808c8905d0c498e3d2a13b687"
+          },
+          "resources/wxfb_conflict.png": {
+            "sizeBytes": 789,
+            "sha256": "768d887539bd3ae6e21a14e3f010e506ab300c85af098cd3bb292ea81efaeece"
+          },
+          "resources/svn_settings.png": {
+            "sizeBytes": 2778,
+            "sha256": "58cf0dd59b22f628a4c1e005d61130696f402369fa8d38a00fbde286b895ec6d"
+          },
+          "resources/wxfb_ok.png": {
+            "sizeBytes": 804,
+            "sha256": "b9ec532c5206e78246aec3352a5504dc4a439c079269b81ddfec72df0a347536"
+          },
+          "resources/qt24_preferences.png": {
+            "sizeBytes": 1457,
+            "sha256": "d686d5b23f97381f1cf9abf606a3d4128a9155370648cdfc6b73ae9fcf844356"
+          },
+          "bin/wx-config.exe": {
+            "sizeBytes": 1327104,
+            "sha256": "3876bc1782ad471e3aecdbedfe40b6d3028df34c8bca1c8bca48ad29ea72dade"
+          },
+          "bin/wx-config-msys2.exe": {
+            "sizeBytes": 2088448,
+            "sha256": "bcb4f3eca168511b86a10311b29c7ad97f3061193646d9b4235e3bb8b0054252"
+          },
+          "plugins/CMakePlugin.dll": {
+            "sizeBytes": 409088,
+            "sha256": "3c1ed30774ac6506274cad460a477a48b716dfaed53eb65141ea4fc0c0fcbe70"
+          },
+          "plugins/abbreviation.dll": {
+            "sizeBytes": 254464,
+            "sha256": "beb21e33e9fa560c81772e3cd1de774a40621f419cbc9457f0764a8bb69d61fa"
+          },
+          "plugins/PHPLint.dll": {
+            "sizeBytes": 240128,
+            "sha256": "dc18f9366d07b48e7adbe53e6839a66b055ccbae41cd235297afbb4eb1c7da23"
+          },
+          "plugins/CodeLiteDiff.dll": {
+            "sizeBytes": 180224,
+            "sha256": "6baff6b6654bc0af8e27d902123798affac1bc97895d35c12599817cd8e0546d"
+          },
+          "plugins/Tail.dll": {
+            "sizeBytes": 224256,
+            "sha256": "efe88b828eb397e861149b4fef40b54b5f916584233d1793528403f5eef0fa8f"
+          },
+          "plugins/ExternalTools.dll": {
+            "sizeBytes": 301056,
+            "sha256": "0c2cd84b55f9917df31811de70c93d0e74624db53c65a1eb90cd9b8bc65f7d0d"
+          },
+          "plugins/codelite_vim.dll": {
+            "sizeBytes": 226816,
+            "sha256": "b22e2ab2a7b6456b194082391e8efab8b85e842c2c01b73ddf179c41499ff3a4"
+          },
+          "plugins/PHPRefactoring.dll": {
+            "sizeBytes": 258048,
+            "sha256": "fb15f8afb81d401a5a38e967685dc2b79d5501c370117cb3d04cdf8c1aa8b0ec"
+          },
+          "plugins/Docker.dll": {
+            "sizeBytes": 443392,
+            "sha256": "f62005416b57fc1690001e655726b6dc188307233bc8f2847e8f50f64c115cf0"
+          },
+          "plugins/QMakePlugin.dll": {
+            "sizeBytes": 359424,
+            "sha256": "4e5706fe5455bb7e6566f5877920fe489a71a6be62728fc18d22469e94424d6b"
+          },
+          "plugins/DebugAdapterClient.dll": {
+            "sizeBytes": 671232,
+            "sha256": "e3e7ac09dfacf407d3d4f37bf555f4f20500ffac55783f668e2dbeec3a5cebce"
+          },
+          "plugins/ZoomNavigator.dll": {
+            "sizeBytes": 250880,
+            "sha256": "0ab96154aedfedb6f7357e5e64e8355b73aaa60cbd76044d22f2d25af466a74d"
+          },
+          "plugins/wxFormBuilder.dll": {
+            "sizeBytes": 223232,
+            "sha256": "ce45d2f4a24d4853237c8ecd3813907eb331555dae8e0017453306b165f58600"
+          },
+          "plugins/Copyright.dll": {
+            "sizeBytes": 215040,
+            "sha256": "eb610c447ab3faa772407e29d73d8f05655c13b84adb3cc2d0ce6782cc267835"
+          },
+          "plugins/codelitephp.dll": {
+            "sizeBytes": 1562112,
+            "sha256": "c72d0940caed3d0774b0e2b8465dc55c67867d619600faa29c9b0894868e66ab"
+          },
+          "plugins/UnitTestsPP.dll": {
+            "sizeBytes": 329216,
+            "sha256": "b17b0fd8924664e5ea3e13b754c04b72da7776381ba28a310b4220eae423a03d"
+          },
+          "plugins/HelpPlugin.dll": {
+            "sizeBytes": 200704,
+            "sha256": "b8ea08a8cc8775caad9cf5f1386eafac5d7b77b51d96866a020f0dd32a78ad60"
+          },
+          "plugins/SFTP.dll": {
+            "sizeBytes": 468992,
+            "sha256": "68ce06c4225e1577dff0251a1845e2c943db72e8928f32482868a120534da878"
+          },
+          "plugins/AutoSave.dll": {
+            "sizeBytes": 153600,
+            "sha256": "46209324774287c0e1a6674288c0e3752162c6368b182ca8599cad3e15d6a7da"
+          },
+          "plugins/SmartCompletion.dll": {
+            "sizeBytes": 220672,
+            "sha256": "8af16fd843e56f8163484893135509a50f584d254d05ab2ae2062a6930a7b454"
+          },
+          "plugins/ContinuousBuild.dll": {
+            "sizeBytes": 180736,
+            "sha256": "70b4373a8d5dba88943e09820f8a53d917b48e4d6c25b9ef59374b582bdc0481"
+          },
+          "plugins/git.dll": {
+            "sizeBytes": 1153536,
+            "sha256": "8f396045b0ae874f08a6ececda2302b269d3d4308aaa0670b0937beaff968057"
+          },
+          "plugins/LanguageServer.dll": {
+            "sizeBytes": 564224,
+            "sha256": "7139e28525e32bdf7b49b6d092bbd72d5587e5a69a1f81f7a08aa181e86b9816"
+          },
+          "plugins/cscope.dll": {
+            "sizeBytes": 333312,
+            "sha256": "219d49862ecdcdfeba9a36836a29495036d560455719b69c31fafb82402dafdb"
+          },
+          "plugins/WebTools.dll": {
+            "sizeBytes": 858624,
+            "sha256": "44279e24e47129331dda0ede350ccfc71b45cac30ff8181f7a645841b6cbb8ee"
+          },
+          "plugins/Rust.dll": {
+            "sizeBytes": 150016,
+            "sha256": "a4b334b9741c924f130d586b203bcb7c7c21c7c07ef6516aba7ad2d6d97b0bda"
+          },
+          "plugins/WordCompletion.dll": {
+            "sizeBytes": 233984,
+            "sha256": "d3c2a8689832a736e551b1317c6f36f4e282e15103405d894802aabc4ea5b5e5"
+          },
+          "plugins/Subversion.dll": {
+            "sizeBytes": 1039872,
+            "sha256": "d0a1a9280c8e1e0bd29a76b8151f4c53a0e778c0361d8861bf651728e714c909"
+          },
+          "plugins/SnipWiz.dll": {
+            "sizeBytes": 395264,
+            "sha256": "2829bf6dc0dc3db1ee409856f1d5187ab8437b6408072637eee16905138dd45c"
+          },
+          "plugins/Outline.dll": {
+            "sizeBytes": 169472,
+            "sha256": "e1162b998900bb3999586b7c51030c183c732e604070b8727f3bf940830842ea"
+          },
+          "plugins/CodeFormatter.dll": {
+            "sizeBytes": 399872,
+            "sha256": "563a18da26b32d85bc2fbfe65f83769ddc3e7593b67d1feb8424f1778b88bd8b"
+          },
+          "plugins/wxCrafter.dll": {
+            "sizeBytes": 4991488,
+            "sha256": "9ef83154abc852a77e1516a82dc9675698e5c6ef14fd0d2635520b61a93f1f9f"
+          },
+          "plugins/SpellCheck.dll": {
+            "sizeBytes": 329728,
+            "sha256": "e29a2c9bcdae96d7660f66dcdb404138d0066c56a818aa8c40af0f34989874ba"
+          },
+          "plugins/Remoty.dll": {
+            "sizeBytes": 468480,
+            "sha256": "9f9c286f2816b39572e95ab14272fab2beb111dda30b90f551d09066186edb40"
+          },
+          "plugins/EditorConfigPlugin.dll": {
+            "sizeBytes": 166912,
+            "sha256": "8b933907f4827c632a055b045c4218de570aef94dfef04ac88e16d2b2e59b303"
+          },
+          "plugins/cppchecker.dll": {
+            "sizeBytes": 410624,
+            "sha256": "1b6cccc0615002234bb5763757117c9e578a8378ee5b431e742b9d6c7e80c21e"
+          },
+          "plugins/DatabaseExplorer.dll": {
+            "sizeBytes": 1178624,
+            "sha256": "f9942ed1296be833fcae644e25aef75bcf754339e2d82eed4f6d570b3245b73c"
+          },
+          "plugins/Wizards.dll": {
+            "sizeBytes": 387584,
+            "sha256": "765afff5396f724208178648d14adee3cbdcf694486b35b3cfe83656fb3fbe5d"
+          },
+          "plugins/EOSWiki.dll": {
+            "sizeBytes": 210944,
+            "sha256": "67e01bf14cd8ad296c556edbcde0d5f3a25b86656179736532d2f71943006649"
+          },
+          "images/common_tasks.png": {
+            "sizeBytes": 1070,
+            "sha256": "655356fd51ad4c574dc4c9ab165259b6904b7e3c18d1f1b3b7fd00c574295a56"
+          },
+          "images/help_earth.png": {
+            "sizeBytes": 861,
+            "sha256": "f28a6d5a3e99c631cf8b6dde39e6facad7242a7bf8f88d950f2d58f5f774f3f6"
+          },
+          "images/splashscreen@2x.png": {
+            "sizeBytes": 106594,
+            "sha256": "7240d1d4bc54474de256433152d92dbcd6d76dccc509297dcbf54eca13ace7c1"
+          },
+          "images/plugin_ok.png": {
+            "sizeBytes": 769,
+            "sha256": "f9db35053d158ca37f453b52732fe74def48fede6dd4003eb5de11f935a7a6de"
+          },
+          "images/recent_files.png": {
+            "sizeBytes": 3705,
+            "sha256": "ad930a1852e12197a27cb7cd91438702ebe35d00517dabb551b6221eb0921a65"
+          },
+          "images/recent_workspaces.png": {
+            "sizeBytes": 3711,
+            "sha256": "ff77f56b4bc7c603fc62fa3e3834aaaf94724064f32762d6ec56514b37936d89"
+          },
+          "images/splashscreen.png": {
+            "sizeBytes": 106594,
+            "sha256": "7240d1d4bc54474de256433152d92dbcd6d76dccc509297dcbf54eca13ace7c1"
+          },
+          "images/plugin_not_ok.png": {
+            "sizeBytes": 745,
+            "sha256": "914fb664726b12d2af96114b0005573264aa4d78ae0a4280067ee6c9a84a062b"
+          },
+          "rc/menu.macos.xrc": {
+            "sizeBytes": 44976,
+            "sha256": "d2fe9c554377a0a989ce1819f7bc3b25d5e46a591005ae3a7255db1a1266dfd2"
+          },
+          "rc/menu.xrc": {
+            "sizeBytes": 44627,
+            "sha256": "fe7d0c30aca7ccc1cc8ce09a588d4dfa7b8739c3d298a918a88e01718e07758e"
+          },
+          "gdb_printers/helper.py": {
+            "sizeBytes": 2647,
+            "sha256": "8d62f36191bff3869057fa383b737d6a36a34d00c2d170fb1b2a4128b88dad4a"
+          },
+          "gdb_printers/wx.py": {
+            "sizeBytes": 4754,
+            "sha256": "e9d9ac34280fb152fc621e4850584b46e9aec5a1c58c70f2cf8ce0ce9e04a854"
+          },
+          "debuggers/DebuggerGDB.dll": {
+            "sizeBytes": 478208,
+            "sha256": "a0809b723c219e9871496372d6fc48b9f2cb8d8b11afda320963e6b30ebd8100"
+          },
+          "config/debuggers.xml.default": {
+            "sizeBytes": 1157,
+            "sha256": "3bbefe07d645e6c168f59a7cdaa66fb4dbc770bb96ba42b2fe203b57c19c295a"
+          },
+          "config/build_settings.xml.default": {
+            "sizeBytes": 22831,
+            "sha256": "ddf393142f4a8198590cb9342211d2d5c3c92494a781f4e34c3ab3a991e680d1"
+          },
+          "config/codelite.xml.default": {
+            "sizeBytes": 704,
+            "sha256": "1cc83201613e1b06476f9eeed06c05f8613f1ff4f2f2980085fb6fd2a1c5d852"
+          },
+          "lexers/lexers.json": {
+            "sizeBytes": 3839548,
+            "sha256": "64f9f09994d1f9993f5fb7e355537c607393eb76ec46efaf467149a7e6424bb8"
+          },
+          "dics/en_GB.aff": {
+            "sizeBytes": 27449,
+            "sha256": "fa4d026cdebf0cf09bb2b2faa0caa048b78566dc316b7c43eece9346227e919c"
+          },
+          "dics/en_US.aff": {
+            "sizeBytes": 3041,
+            "sha256": "85e46ddec65281bce052637c6dc90b0b9952f235ff1b3674b4b7ff8ccaeb999d"
+          },
+          "dics/en_US.dic": {
+            "sizeBytes": 534278,
+            "sha256": "ea16f7cd4051609f8c43e57a96b3e2883e735ba5a0c5c51e13458fad32d502f2"
+          },
+          "dics/en_GB.dic": {
+            "sizeBytes": 527337,
+            "sha256": "a1e08b003352fa887ca187e258122fba5ba85d6d8005dd2972120e380f0e9e82"
+          },
+          "config/cfg/motif.cfg": {
+            "sizeBytes": 4640,
+            "sha256": "8d6027d2b2c6d16ed1785d590b64b464e71e41c40a7d832503afe14de8f670a6"
+          },
+          "config/cfg/microsoft_sal.cfg": {
+            "sizeBytes": 26839,
+            "sha256": "a96ee8f1aa8a5bb99eebb0eb3f1f2fb28c1693af670b7739f65612b96467f6a2"
+          },
+          "config/cfg/posix.cfg": {
+            "sizeBytes": 106700,
+            "sha256": "53e1c00551cc3efba3dc25ef2664030d537bff5d64ce9db1f4ef4df25f90d0e5"
+          },
+          "config/cfg/gnu.cfg": {
+            "sizeBytes": 17290,
+            "sha256": "bca3d3760e81c31355ad466a87359ccfea501687735d257c44c6a6e606ebe0ab"
+          },
+          "config/cfg/embedded_sql.cfg": {
+            "sizeBytes": 109,
+            "sha256": "d7a0efdf29a440ba5c23bb9739872cbd35d760f7054a06e52726094984ca060a"
+          },
+          "config/cfg/bsd.cfg": {
+            "sizeBytes": 5825,
+            "sha256": "9e3ba91ad08221a0e2f9dc4d26e7d81928bed62a8f3ebf73a869dfc9c55a1699"
+          },
+          "config/cfg/windows.cfg": {
+            "sizeBytes": 478739,
+            "sha256": "294b937f37b01c854daf878631715ce0c3e6a7b09db5b1a0649cc44a1b7c08d7"
+          },
+          "config/cfg/std.cfg": {
+            "sizeBytes": 182709,
+            "sha256": "9d865e047d1ec3b50ac729f695e1d5ca74adf2ed31431cda640efce3a71f7451"
+          },
+          "config/cfg/cppcheck-cfg.rng": {
+            "sizeBytes": 14877,
+            "sha256": "c61defafd91695e273850321012e066ae786afc67dec66eab77805f51cd576d0"
+          },
+          "config/cfg/sdl.cfg": {
+            "sizeBytes": 1855,
+            "sha256": "bd489783cf6a1735c91f8aac06fbbe7967fdeb219567152cd27d698ddb194bfa"
+          },
+          "config/cfg/gtk.cfg": {
+            "sizeBytes": 511382,
+            "sha256": "46a9b9203e61771d16ad9fc54d7e63dbaabab2306c7c15a3b65234e13a293965"
+          },
+          "config/cfg/wxwidgets.cfg": {
+            "sizeBytes": 81081,
+            "sha256": "cfbfafa466a6f1e4d97b7ad799bf50595061c89806d61f973ca12c2f558aa4aa"
+          },
+          "config/cfg/avr.cfg": {
+            "sizeBytes": 12718,
+            "sha256": "45726e7b6d174e4c7322a87b3d5972c78617b1d8efe031129156c922aa9da86d"
+          },
+          "config/cfg/sfml.cfg": {
+            "sizeBytes": 9228,
+            "sha256": "272fe67983530da70b5bf80a01f9aef09f9776766b8ae9f5c2d5b8173bb469ce"
+          },
+          "config/cfg/cppcheck-lib.cfg": {
+            "sizeBytes": 1062,
+            "sha256": "6852f7396265a919c8f2bcd0ca8a89f59a2aa53214252619b9e2e52791a015ec"
+          },
+          "config/cfg/qt.cfg": {
+            "sizeBytes": 47195,
+            "sha256": "a42cf57c8f0d57ece077cb9ede50ee9786bebc592f97719bc3a0a6ac018937ea"
+          },
+          "gdb_printers/libstdcxx/__init__.py": {
+            "sizeBytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          "gdb_printers/boost/__init__.py": {
+            "sizeBytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "gdb_printers/boost/printers.py": {
+            "sizeBytes": 48582,
+            "sha256": "0313c294a35a7f908c5d31881089dd23c8cf145a1f43fbfce1774a83cc7b2655"
+          },
+          "gdb_printers/rustlib/etc/gdb_load_rust_pretty_printers.py": {
+            "sizeBytes": 63,
+            "sha256": "b88f1a7df63b71f95addb4962e0a5bdd78a4ab406dabfb731b02b27342f4d533"
+          },
+          "gdb_printers/rustlib/etc/rust_types.py": {
+            "sizeBytes": 3637,
+            "sha256": "52f137497bf4d3426fbce9d4b8f25069f9fe5e9e7ce9a707723df4e2b7b3670d"
+          },
+          "gdb_printers/rustlib/etc/gdb_providers.py": {
+            "sizeBytes": 13302,
+            "sha256": "5ceb623aa3ee477c4cff52b8d79fe4b80d27d01284c4ccfd7037fb4d200e4652"
+          },
+          "gdb_printers/rustlib/etc/gdb_lookup.py": {
+            "sizeBytes": 3014,
+            "sha256": "0a4117cadc59b715bd09b5a0d122c4dea37afe6ba0f96cbdccee037273ac405f"
+          },
+          "gdb_printers/libstdcxx/v6/__init__.py": {
+            "sizeBytes": 1161,
+            "sha256": "fc792a50d118d5feb068481d0328f89fe8762b7705011910281bfe65c1170c8f"
+          },
+          "gdb_printers/libstdcxx/v6/xmethods.py": {
+            "sizeBytes": 27705,
+            "sha256": "98db47a3b61cf963823b628160a329db5c38812a0886deeca7195046df87a908"
+          },
+          "gdb_printers/libstdcxx/v6/printers.py": {
+            "sizeBytes": 68367,
+            "sha256": "6a565bbeba13482791c9db00a131439278ff88ae1b5a4bc8d8fcdbf40cbfd488"
+          },
+          "templates/qmake/qmake.project": {
+            "sizeBytes": 3629,
+            "sha256": "a53cce13104ef73afa21604ffde2b0094efb760df7a811e47bfc46036edabfa7"
+          },
+          "templates/codedesigner/SCHTemplateWithMain.cdp": {
+            "sizeBytes": 9624,
+            "sha256": "a7bc828a145fc3aa51930712379373cf5b4af1e06396e19d379553129d5aeb10"
+          },
+          "templates/codedesigner/HSCHTemplateWithMain.cdp": {
+            "sizeBytes": 9617,
+            "sha256": "5c890ea3a91ec176b54aba714460d7b0aede5a95c9db44cfb160bf51a5be91f7"
+          },
+          "templates/codedesigner/SCHTemplate.cdp": {
+            "sizeBytes": 7251,
+            "sha256": "fe66720730f7c097af74c1d0e3cd81b5e932b4936c5a36867540e4c77b9cf013"
+          },
+          "templates/codedesigner/HSCHTemplate.cdp": {
+            "sizeBytes": 7248,
+            "sha256": "950aed933d3ee1192fa8b836505ef914046c6f704060b3a8cb6a97b0ab8e18fd"
+          },
+          "templates/codedesigner/CDTemplate.cdp": {
+            "sizeBytes": 9100,
+            "sha256": "8632e5d0a890c8ad45315d0eb0debc0c24977ddf7aaac409cc437e14d2b784e6"
+          },
+          "templates/formbuilder/PanelTemplate.fbp": {
+            "sizeBytes": 3500,
+            "sha256": "38224578c54f9efdd74b834c35362ceab7027edc4a0a0b01996dd7214fd34535"
+          },
+          "templates/formbuilder/DialogTemplate.fbp": {
+            "sizeBytes": 3994,
+            "sha256": "d1a75b11e9891bc3f6346c37ad6b50563828687e58bd384b557e1ada2e8c544f"
+          },
+          "templates/formbuilder/DialogTemplateWithButtons.fbp": {
+            "sizeBytes": 14723,
+            "sha256": "9a3c565a60feb38399c8dbeebea27bb8f020da0fd091c65993b01c19aa48688e"
+          },
+          "templates/formbuilder/FrameTemplate.fbp": {
+            "sizeBytes": 4015,
+            "sha256": "cdf3e291a3a3b4164d76423c53b7a13760de95a2303c3157878478b04da1d8f4"
+          },
+          "templates/databaselayer/viewClass_dba.ctmp": {
+            "sizeBytes": 1302,
+            "sha256": "c314ab0788716464737340b580e2b97a9ac066c78365c746d2506d6016b32d9c"
+          },
+          "templates/databaselayer/dataClass_dbl.ctmp": {
+            "sizeBytes": 3954,
+            "sha256": "68844cb3fa67aab901a426aa352353cba32b30440879e5ff06831d5e14db388f"
+          },
+          "templates/databaselayer/viewClass_wxdba.ctmp": {
+            "sizeBytes": 1825,
+            "sha256": "ba8094454e9cb1130119e5de3d348a75dcc6cd242ec5f711f6ca9a5e3a4ec9d7"
+          },
+          "templates/databaselayer/dataClass_wxdba.htmp": {
+            "sizeBytes": 2430,
+            "sha256": "389e5cab745f1753961915a55f8b751aa8c738d589f3c3827035234bde626586"
+          },
+          "templates/databaselayer/viewClass.ctmp": {
+            "sizeBytes": 223,
+            "sha256": "e2b3ff854239a8832ae4b537af2a4526c788f79a8f4baf05e87832886fc9c547"
+          },
+          "templates/databaselayer/dataClass_dba.htmp": {
+            "sizeBytes": 2166,
+            "sha256": "92c7b2ecf2fd825d9d3e9c7f12777586847615736fba0d03469ef7c8b7717a20"
+          },
+          "templates/databaselayer/viewClass_dba.htmp": {
+            "sizeBytes": 1283,
+            "sha256": "21543464a0e8805b7c02041d6f78f321ebcfb306815f3f72bd649471285bdab5"
+          },
+          "templates/databaselayer/viewClass_dbl.htmp": {
+            "sizeBytes": 1426,
+            "sha256": "5fc80e64ec0f2391e1d0b30e862914af46b146b7fde8329eab3b5a01b0bee9db"
+          },
+          "templates/databaselayer/viewClass_dbl.ctmp": {
+            "sizeBytes": 2081,
+            "sha256": "72654a4ab3c19024774ed2cb06f5fe8c6a0029d791674a77dc5ee39c99524c87"
+          },
+          "templates/databaselayer/dataClass_dba.ctmp": {
+            "sizeBytes": 3634,
+            "sha256": "8865a4601a4de1f8b9e20022948a42d9b61b1ece57618308c250a88f4cc560a6"
+          },
+          "templates/databaselayer/viewClass.htmp": {
+            "sizeBytes": 488,
+            "sha256": "6d0a6ac07af862e01591330f08c55a3e32ac64ce68fd5612451b83da93ffb0f2"
+          },
+          "templates/databaselayer/viewClass_wxdba.htmp": {
+            "sizeBytes": 1535,
+            "sha256": "e45a1bc9dc2e2450882cc4ddd50009fb2dd021c0fc04998d2bfce2bc337ebd7c"
+          },
+          "templates/databaselayer/dataClass.htmp": {
+            "sizeBytes": 865,
+            "sha256": "9b801978745caddc69e821284edfb0b61300d75da2fe3824ae48c7c9e5476469"
+          },
+          "templates/databaselayer/dataClass_dbl.htmp": {
+            "sizeBytes": 2236,
+            "sha256": "050d2c2b77bdfdab356617f107242aef6e9fcc5247ea840abf2fcfa72270a4b6"
+          },
+          "templates/databaselayer/dataClass.ctmp": {
+            "sizeBytes": 567,
+            "sha256": "75396536a28900bc2f5e2819f7e8f4c73712d93659a256c3be13b1a186c19c65"
+          },
+          "templates/databaselayer/dataClass_wxdba.ctmp": {
+            "sizeBytes": 4203,
+            "sha256": "6f3980250676ecea9d616c5277f9b0bf50dcf8f4ac41fd3d4023f13cb85c18a5"
+          },
+          "templates/gizmos/main-dialog.h.wizard": {
+            "sizeBytes": 1549,
+            "sha256": "e9d90ad75a5cb434c5c89715bd5d64927aaab64aaac55a67f26a2c616657dc89"
+          },
+          "templates/gizmos/gui-dialog.h.wizard": {
+            "sizeBytes": 1578,
+            "sha256": "b2da54aa509ccaefd64881613485a3c652f64f658a2f1e9c6a693e2e0f0bae4f"
+          },
+          "templates/gizmos/gui-frame.cpp.wizard": {
+            "sizeBytes": 1686,
+            "sha256": "a4b6fd9d6e1ac1a2543790e87dda09dd4576c4ca4d266619dc38472deb49b626"
+          },
+          "templates/gizmos/mainframe.h.wizard": {
+            "sizeBytes": 607,
+            "sha256": "60dc457901a749f6d4a54cd864c81ca3d1fde9a7dd1904194cfd94411769108e"
+          },
+          "templates/gizmos/wxproject-fb.project.wizard": {
+            "sizeBytes": 2808,
+            "sha256": "73c392a114e9b64fcf91ab21b4620eee19a29285a2e3f192957b36cb41987430"
+          },
+          "templates/gizmos/gui-dialog.cpp.wizard": {
+            "sizeBytes": 2080,
+            "sha256": "033dc6ee1bb405d00206a6a07484c293e5bfb973b96f7754fa3edf7eff0b3d1f"
+          },
+          "templates/gizmos/wxproject.project.wizard": {
+            "sizeBytes": 2810,
+            "sha256": "82f05e6ba073921bffd8f822871af131a97626572119f11a67bb51c737f59871"
+          },
+          "templates/gizmos/gui-frame.h.wizard": {
+            "sizeBytes": 1527,
+            "sha256": "81aacbb9bc6ca6b31944a1e26ee95f1725e749ca4b3096aaea6f735ac7fa6361"
+          },
+          "templates/gizmos/mainframe.cpp.wizard": {
+            "sizeBytes": 1394,
+            "sha256": "811ba55d0503fdae19fd7a423551516566f3ca9a7b03007ab15f12a20c3b911a"
+          },
+          "templates/gizmos/wx_pch.h.wizard": {
+            "sizeBytes": 692,
+            "sha256": "70a2e9f1f986777bf314f11de5ae6469f1020ad9ccd43c28a3996bc07c88a8d1"
+          },
+          "templates/gizmos/main.cpp.wizard": {
+            "sizeBytes": 289,
+            "sha256": "c99bc4289d1d39c01541afc170ff0cfdc46913c611a61c2d81a674e2272e8067"
+          },
+          "templates/gizmos/plugin.cpp.wizard": {
+            "sizeBytes": 1075,
+            "sha256": "e1a22be9277a15073ac4dfc9f0316b454cc7dec870e69c6c273a3dbecde8c3ae"
+          },
+          "templates/gizmos/wxmain.project.wizard": {
+            "sizeBytes": 2756,
+            "sha256": "66332a3798d658c8357b33924566d05a3484bcbc6d5131b5098ad4a405aaecc3"
+          },
+          "templates/gizmos/CMakeLists.txt.plugin.wizard": {
+            "sizeBytes": 1762,
+            "sha256": "728a58062ec131e0673f3e0092138b8d8ffe8a147eb3a53e9ecc6f02108b3dc8"
+          },
+          "templates/gizmos/gui-frame.fbp.wizard": {
+            "sizeBytes": 10986,
+            "sha256": "ba7e9d4b43dde37c77b379ebb663f828044d7530605f67fd9d1f0106a6c09a45"
+          },
+          "templates/gizmos/resources.rc.wizard": {
+            "sizeBytes": 24,
+            "sha256": "bb14b76f0e613fc8d3beaee8d22fd660c2d8ed96c5a963ad8dd8713f417e2d01"
+          },
+          "templates/gizmos/plugin.h.wizard": {
+            "sizeBytes": 700,
+            "sha256": "917092d44546a5d2f7dce72fdfa88a616eb7762ac5472a2d42c31e1fcf76c520"
+          },
+          "templates/gizmos/liteeditor-plugin.project.wizard": {
+            "sizeBytes": 4530,
+            "sha256": "28897e04fba71e8ada931e5b478b85836e3b4337efda7e7d66d3fdc0531471f1"
+          },
+          "templates/gizmos/app.cpp.wizard": {
+            "sizeBytes": 924,
+            "sha256": "d68b4f5507ad99f4b87bade93a6e7fe05f653a04e938279ce8a6588662061516"
+          },
+          "templates/gizmos/app.h.wizard": {
+            "sizeBytes": 230,
+            "sha256": "e10ef2dbc13ea616d6a479aa1690525e224fab919d2b585fe95350180d0700e2"
+          },
+          "templates/gizmos/main-dialog.cpp.wizard": {
+            "sizeBytes": 1540,
+            "sha256": "483b029c8beb898734d3fca404494481ec21ec157dbf963a7b9825fd41cddf38"
+          },
+          "templates/gizmos/gui-dialog.fbp.wizard": {
+            "sizeBytes": 12114,
+            "sha256": "6231d506b22cdf2c4b8ecb49f7c02e0899bcfe821831e2057735eb3e6f2049f3"
+          },
+          "templates/gizmos/main-frame.cpp.wizard": {
+            "sizeBytes": 1457,
+            "sha256": "6fdc3caf88300283f558ec2cf7039fa5b9a32975580a834e7b940acd47bedcca"
+          },
+          "templates/gizmos/main-frame.h.wizard": {
+            "sizeBytes": 1493,
+            "sha256": "f0a02b4b3e3b77da4be2a738638cf255fb0057046c46e37d6ec8a2a77aab10df"
+          },
+          "templates/projects/vc-dynamic-library/vc-dynamic-library.project": {
+            "sizeBytes": 4211,
+            "sha256": "c6cde2cbd675650c56158163d88eeb918ca423029fa97c3f5d43a20a0d82e19c"
+          },
+          "templates/projects/vc-dynamic-library/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/main_app.h": {
+            "sizeBytes": 564,
+            "sha256": "67cd662f8ac38e2d22b4d33deb81342681807e150f1ff32242c178d4f45430b1"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/main_app.cpp": {
+            "sizeBytes": 482,
+            "sha256": "01091de7e02f58c79b845c2464e3c3868dbbdf4f2f2c7ec842466f92a053ccec"
+          },
+          "templates/projects/wxWidgets_ConsoleApp/wxWidgets_ConsoleApp.project": {
+            "sizeBytes": 4734,
+            "sha256": "934f4f187a872e9ce1cc6e204fff22947292a0be2fe8a222a93608645acb09e9"
+          },
+          "templates/projects/ConsoleClang/main.c": {
+            "sizeBytes": 99,
+            "sha256": "ec89f5b6e7718115234936d3a74d3ca503a200b180179444ad52a4f07a8ac757"
+          },
+          "templates/projects/ConsoleClang/ConsoleClang.project": {
+            "sizeBytes": 5079,
+            "sha256": "bccc622b929bcd396f5889b61ac28264ca11bfe9d22acdc499adc28cd2f9cae6"
+          },
+          "templates/projects/executable-qt-enabled/main.cpp": {
+            "sizeBytes": 355,
+            "sha256": "68fb92ed838b0d3e7b54fbbfd7ceaa551bf131b601b74b51a0d3690af261d383"
+          },
+          "templates/projects/executable-qt-enabled/executable-qt-enabled.project": {
+            "sizeBytes": 4828,
+            "sha256": "30b336199d0f4c5f3f7428c764a84418c33639b33837940d98c3d04432faf067"
+          },
+          "templates/projects/executable-qt-enabled/icon.png": {
+            "sizeBytes": 1351,
+            "sha256": "aeaa02c03ab1050b4d7cf4fb343f99935ca4cd9cc73e4a362d4dc57d3d175201"
+          },
+          "templates/projects/executable-qt-qmake-enabled/main.cpp": {
+            "sizeBytes": 356,
+            "sha256": "ac59e48c68af5eb117830b959f21a0bb452ffb5920d24358ab0aab00d9c4cfdb"
+          },
+          "templates/projects/executable-qt-qmake-enabled/icon.png": {
+            "sizeBytes": 1351,
+            "sha256": "aeaa02c03ab1050b4d7cf4fb343f99935ca4cd9cc73e4a362d4dc57d3d175201"
+          },
+          "templates/projects/executable-qt-qmake-enabled/executable-qt-qmake-enabled.project": {
+            "sizeBytes": 4860,
+            "sha256": "ae184178c7a2778ae6e5845dec00b4e29417a3d8f2499d0d8d5a9a5ea8b9ce7e"
+          },
+          "templates/projects/cobra-libraryU/cobra-library.project": {
+            "sizeBytes": 7065,
+            "sha256": "0836e6db114f42ab733a386680fbb0bec6f6cd37fd7a2411d611ba34e14d8601"
+          },
+          "templates/projects/cobra-libraryU/lib-build-files": {
+            "sizeBytes": 500,
+            "sha256": "d61f0740e86912feba08c3cd4ff54e91592a9105815e74622149e816ee760f70"
+          },
+          "templates/projects/cobra-executableU/cobra-executableU.project": {
+            "sizeBytes": 7190,
+            "sha256": "746f96c2813a9fbe549c1c249a5c28fb729cbcc69006d3a0b0678bb6e1b7e061"
+          },
+          "templates/projects/cobra-executableU/build-file": {
+            "sizeBytes": 510,
+            "sha256": "a0b5aaa1ce39cc99a60a4fbcd3de0d09dcaf908ec2ef16c22bc83a8426c1e6f9"
+          },
+          "templates/projects/c_gtk24_template/c_gtk24_template.project": {
+            "sizeBytes": 4731,
+            "sha256": "0e6efb0333027334f767a6992505c30a363b31f6ac4cc42916fb8f22a17bbb53"
+          },
+          "templates/projects/c_gtk24_template/main.c": {
+            "sizeBytes": 3385,
+            "sha256": "297d991c95eec707fdf827c741431b575cb8878aafad1ca944662e3cfb271111"
+          },
+          "templates/projects/c_gtk24_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/cobra-staticU/build-file": {
+            "sizeBytes": 510,
+            "sha256": "a0b5aaa1ce39cc99a60a4fbcd3de0d09dcaf908ec2ef16c22bc83a8426c1e6f9"
+          },
+          "templates/projects/cobra-staticU/cobra-staticU.project": {
+            "sizeBytes": 7257,
+            "sha256": "1ec31d34aa44b824706ae7b6d3631a31fb7d8f1e333e89163c6323d493265d6a"
+          },
+          "templates/projects/dynamic-library/dynamic-library.project": {
+            "sizeBytes": 1811,
+            "sha256": "79cd47e9685aabbc0a3a93aa94e3f34bc5f5beda4d2c72433f2f1da40598b253"
+          },
+          "templates/projects/dynamic-library/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/static-library/static-library.project": {
+            "sizeBytes": 4248,
+            "sha256": "7a9f6fd6410f5df1984c7adde30295a5aaeaa9a2319da040c291530bb826c93a"
+          },
+          "templates/projects/static-library/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/cpp_gtkmm3_template/main.cpp": {
+            "sizeBytes": 301,
+            "sha256": "7f5422bde222ce82818a7efeea7d0b41a5470ee43fe9e62777fdd2cbeb0a80d7"
+          },
+          "templates/projects/cpp_gtkmm3_template/mainwindow.h": {
+            "sizeBytes": 336,
+            "sha256": "960078c2edd7538465fa97c1345fef8b0ea46cf495b778f77e823cd6a50d0432"
+          },
+          "templates/projects/cpp_gtkmm3_template/cpp_gtkmm3_template.project": {
+            "sizeBytes": 4866,
+            "sha256": "7719324a38a902a834437730b342a92ce396631a305b06c40d6a2efd785dc546"
+          },
+          "templates/projects/cpp_gtkmm3_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/cpp_gtkmm3_template/mainwindow.cpp": {
+            "sizeBytes": 714,
+            "sha256": "5735125b593bb5a8b66ff457aea56a3a092b2523f9469cf1f335ede3c9179d45"
+          },
+          "templates/projects/executable-wx-dialog/main.h": {
+            "sizeBytes": 1503,
+            "sha256": "059ab512368063f911f895483569cb278ee096ef9c18abdd4031f1e9ea0b0177"
+          },
+          "templates/projects/executable-wx-dialog/executable-wx-dialog.project": {
+            "sizeBytes": 5318,
+            "sha256": "69fdcb38206ebc5200bc6c0aea58f115c34c15fe76c68ff16f321ab2fc23b3bd"
+          },
+          "templates/projects/executable-wx-dialog/gui.h": {
+            "sizeBytes": 1631,
+            "sha256": "784d969c9e204759f8d37926f64bd6157fb3947752f8f3d8e670c7746c96ce5d"
+          },
+          "templates/projects/executable-wx-dialog/main.cpp": {
+            "sizeBytes": 1477,
+            "sha256": "0acfa3b44d58b57b448fb03c99498108889e5baa54efc0167ed06d06cba30ef1"
+          },
+          "templates/projects/executable-wx-dialog/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wx-dialog/gui.fbp": {
+            "sizeBytes": 12105,
+            "sha256": "840927361f351508f15c4ff93aceb6ea775b4577bc7e12cbcdd18b8830ec0c8d"
+          },
+          "templates/projects/executable-wx-dialog/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/executable-wx-dialog/gui.cpp": {
+            "sizeBytes": 2086,
+            "sha256": "a994d81f19d18d6df2a04986dee8d6d67cfe36b3405b739aed1bb3653f4b0f5f"
+          },
+          "templates/projects/executable-wx-enabled/main.cpp": {
+            "sizeBytes": 875,
+            "sha256": "27c941828da6ab6a8d874ff6474848d91a92f6debe68c71a43de3ef86ab935e7"
+          },
+          "templates/projects/executable-wx-enabled/executable-wx-enabled.project": {
+            "sizeBytes": 4820,
+            "sha256": "ca531bcb6ed5d30c7601124de1f2a6dcfa0117eb5bc065a98442892a9181fa33"
+          },
+          "templates/projects/executable-wx-enabled/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/c_gtk3_template/main.c": {
+            "sizeBytes": 283,
+            "sha256": "6e9e3fd3966950641a4b50ca8e418a7faa5b5b8ddbb207e838141851d9753394"
+          },
+          "templates/projects/c_gtk3_template/c_gtk3_template.project": {
+            "sizeBytes": 4730,
+            "sha256": "c242a03afeb8360369a86add76f769ebfffcbd897ed4e1b2d503d8f406a835e4"
+          },
+          "templates/projects/c_gtk3_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/executable-wxcrafter-frame/MainFrame.cpp": {
+            "sizeBytes": 516,
+            "sha256": "e86fe54d3fea42d0aaae72a3f3ee5570c835ddd9a77820c83ee5c287e2eb8556"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter_bitmaps.cpp": {
+            "sizeBytes": 1550,
+            "sha256": "14726cebaedfb6aec398009e04d32e831bf132b762d5012c0fc2bc9474d70854"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter.hpp": {
+            "sizeBytes": 1916,
+            "sha256": "4b74fd902b521f90a379a821ebd6dc03c4fe15da8d530be56666b90eea206c52"
+          },
+          "templates/projects/executable-wxcrafter-frame/main.cpp": {
+            "sizeBytes": 547,
+            "sha256": "dbec8b47c4dac197b48299b391327c6278d12f7466af7db7d8b6eb4b750b6083"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter.wxcp": {
+            "sizeBytes": 12414,
+            "sha256": "df79dc41ec941f7c30432e59d8c96fd66c39486e4d80f6aeffe2bb04b9bd2929"
+          },
+          "templates/projects/executable-wxcrafter-frame/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wxcrafter-frame/MainFrame.hpp": {
+            "sizeBytes": 318,
+            "sha256": "a2662eef3fa52f425d83e84ad291d574d64e3e362bd78cd4fc72f0759fbe94aa"
+          },
+          "templates/projects/executable-wxcrafter-frame/icon.png": {
+            "sizeBytes": 1017,
+            "sha256": "39253b946d1de6e148f89d367bdef811a68c4359fe3f98726a3c31470a844195"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxCrafter_MainFrame.project": {
+            "sizeBytes": 5040,
+            "sha256": "ef0963ec8b33c5852fc2d0b5ddca1f8c1c1377a9309501529e75659c795f0e07"
+          },
+          "templates/projects/executable-wxcrafter-frame/wxcrafter.cpp": {
+            "sizeBytes": 2689,
+            "sha256": "675bdb39c36a2b571ba592f23e977dfbd90b2cfb06918f1b32cb746612dc917a"
+          },
+          "templates/projects/executable-wx-frame/main.h": {
+            "sizeBytes": 1444,
+            "sha256": "dd2293e8feba2cf6183f5f20edbd51cfd42fcd43da90267e1c0829b5388a79a0"
+          },
+          "templates/projects/executable-wx-frame/gui.h": {
+            "sizeBytes": 1585,
+            "sha256": "51ad0659388832573a999aad15f6763f5b4fa1d837006f6dde6c96fb40e85d0c"
+          },
+          "templates/projects/executable-wx-frame/main.cpp": {
+            "sizeBytes": 1392,
+            "sha256": "f3f16b045012ba91c274f5457e52adcd28f830639576bfacca051d2653cb7401"
+          },
+          "templates/projects/executable-wx-frame/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wx-frame/gui.fbp": {
+            "sizeBytes": 10977,
+            "sha256": "3a0880fdd46da0f25535e66fc88d88591ddf1bcf6f3bf6d16f3515b71c378068"
+          },
+          "templates/projects/executable-wx-frame/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/executable-wx-frame/gui.cpp": {
+            "sizeBytes": 1692,
+            "sha256": "1e82e4966c59715915d7260316799073b7c10af28b28e137d9b4bce7c8f41a0c"
+          },
+          "templates/projects/executable-wx-frame/executable-wx-frame.project": {
+            "sizeBytes": 5316,
+            "sha256": "ab31fdb7d1b8714b101014b41423156a68ff65de9503ffb42f652e3840ee48a2"
+          },
+          "templates/projects/vc-executable/vc-executable.project": {
+            "sizeBytes": 4236,
+            "sha256": "dd8cdbaa0c1625a4cb128e566c53742e920db8c7ab67bd2965169a87d437e52d"
+          },
+          "templates/projects/vc-executable/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/dynamic-library-wx-enabled/dynamic-library-wx-enabled.project": {
+            "sizeBytes": 3974,
+            "sha256": "dbba96e55f926ee4b7c0b5ff73b795c1d12eba114f3165c413fed455b0725591"
+          },
+          "templates/projects/dynamic-library-wx-enabled/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/vc-static-lib/vc-static-lib.project": {
+            "sizeBytes": 4150,
+            "sha256": "1e774fb0923360b3b95b482edd33b434e5c59f85df5a6ba0bffd4113db12c4ac"
+          },
+          "templates/projects/vc-static-lib/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/executable-console-wx-enabled/main.cpp": {
+            "sizeBytes": 276,
+            "sha256": "9a63453dc4885876165ef02823632ebd5397f6c57cca12fa2b978f2c9ce7c092"
+          },
+          "templates/projects/executable-console-wx-enabled/executable-console-wx-enabled.project": {
+            "sizeBytes": 4901,
+            "sha256": "4580fa65037ac0572855106419749bd9f025dec2a3a9ec95bf95c7fc6ab6ef28"
+          },
+          "templates/projects/executable-console-wx-enabled/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/executable-wxcrafter-dialog/MainDialog.hpp": {
+            "sizeBytes": 217,
+            "sha256": "223be9d1e814e1f296f6e1957a6f76def23e9f5dd6a1e03eabbd53b4c25c7a04"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter_bitmaps.cpp": {
+            "sizeBytes": 1550,
+            "sha256": "14726cebaedfb6aec398009e04d32e831bf132b762d5012c0fc2bc9474d70854"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter.hpp": {
+            "sizeBytes": 1595,
+            "sha256": "d12efe9623ac13cde30a3bd4de36e36ed0f9935ee4bfb12df88a6909e722ad71"
+          },
+          "templates/projects/executable-wxcrafter-dialog/main.cpp": {
+            "sizeBytes": 515,
+            "sha256": "41eb7068f02296fad0df6e2f4033195c78d86473075c65ef6a2ea99b2e43c325"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter.wxcp": {
+            "sizeBytes": 11655,
+            "sha256": "c89b1d67bed19807efb54c61db961e5fd380adc10f356694bfce15057242d9d4"
+          },
+          "templates/projects/executable-wxcrafter-dialog/MainDialog.cpp": {
+            "sizeBytes": 138,
+            "sha256": "f24f835bc96933e8324f49d14c1345b87eacf4bfe13e8f3145afab606f7858b0"
+          },
+          "templates/projects/executable-wxcrafter-dialog/win_resources.rc": {
+            "sizeBytes": 543,
+            "sha256": "8e1b75ddc8835f3b134ffbb6b57e1d767798e0bf83c9defd4c1691112169d342"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxCrafter_MainDialog.project": {
+            "sizeBytes": 5044,
+            "sha256": "b895b29f1a58b096c35137cc96fec7202244515581134b25a6ce21347622a824"
+          },
+          "templates/projects/executable-wxcrafter-dialog/icon.png": {
+            "sizeBytes": 1017,
+            "sha256": "39253b946d1de6e148f89d367bdef811a68c4359fe3f98726a3c31470a844195"
+          },
+          "templates/projects/executable-wxcrafter-dialog/wxcrafter.cpp": {
+            "sizeBytes": 2293,
+            "sha256": "8c7eb4f5d5298a22f5db6d93f0c4d046a4f8c073c333ce0335fe3eaedc556787"
+          },
+          "templates/projects/executable-cobra/executable-cobra.project": {
+            "sizeBytes": 4497,
+            "sha256": "3791718566f089b41dbe8a99a73ffbabd95cca268c76b3ce6a2f4377b788e104"
+          },
+          "templates/projects/executable-cobra/main.cobra": {
+            "sizeBytes": 84,
+            "sha256": "c2dbae3c3c91c01d8bf951b40b80240efa54ddf10ba690a31b798a89e24dc425"
+          },
+          "templates/projects/executable-gcc/main.c": {
+            "sizeBytes": 93,
+            "sha256": "f35ffc3c38142562ced82c7d12c120f70bcdf1fcccb071c605fa97afa7446725"
+          },
+          "templates/projects/executable-gcc/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/executable-gcc/executable-gcc.project": {
+            "sizeBytes": 4492,
+            "sha256": "ae7fce06e7b375cccde8d46bdd031313e24f1b419cedd38733ac06245bc9986e"
+          },
+          "templates/projects/CMake_Executable/main.cpp": {
+            "sizeBytes": 116,
+            "sha256": "92570c9bcb7fe55b2c0c826b1c85fb8981424ae9f863ae77f458cd9571edd6df"
+          },
+          "templates/projects/CMake_Executable/icon.png": {
+            "sizeBytes": 1226,
+            "sha256": "35c67c9e5da50c136c0fec78c0512d0e600976d5afefa0a8326b327fd99fe238"
+          },
+          "templates/projects/CMake_Executable/CMake_Executable.project": {
+            "sizeBytes": 9272,
+            "sha256": "873ad8da36a59df84198b138c0f445a523bb21ec37d04e342bbd4e7a4195199f"
+          },
+          "templates/projects/CMake_Executable/CMakeLists.txt": {
+            "sizeBytes": 314,
+            "sha256": "740cc38c5efec0a48bf5bcc70e6c56e1cbd9f9e6908bf54038358fa36d15414a"
+          },
+          "templates/projects/non-code-project/non-code.project": {
+            "sizeBytes": 2619,
+            "sha256": "55422c5ff8480bb02883be3de6356855648263610329390945d488bd50d728ae"
+          },
+          "templates/projects/non-code-project/icon.png": {
+            "sizeBytes": 1216,
+            "sha256": "831ef5e9366245214e7225f8b01221ef1280745f448de04dd841affd8e5bc2ac"
+          },
+          "templates/projects/ConsoleClang++/ConsoleClang++.project": {
+            "sizeBytes": 4474,
+            "sha256": "ab1c8633ecb5fc1be853880e415debbac25977301f13e887b3342b34ef35b074"
+          },
+          "templates/projects/ConsoleClang++/main.cpp": {
+            "sizeBytes": 116,
+            "sha256": "92570c9bcb7fe55b2c0c826b1c85fb8981424ae9f863ae77f458cd9571edd6df"
+          },
+          "templates/projects/static-library-wx-enabled/main.cpp": {
+            "sizeBytes": 79,
+            "sha256": "d2eb0a13fda48ad8bf87278142fc81007f076237315aecfb78a0dd4e4239ecd6"
+          },
+          "templates/projects/static-library-wx-enabled/static-library-wx-enabled.project": {
+            "sizeBytes": 4752,
+            "sha256": "accd6e41795f0932c672cc3b8d07cee3461cced8176d7b0a2675bc82bf5b445a"
+          },
+          "templates/projects/static-library-wx-enabled/icon.png": {
+            "sizeBytes": 798,
+            "sha256": "4255b9c454cebe66b0fc452ba409e0a1fc18855b2fedd8621d1203e3343e9d73"
+          },
+          "templates/projects/cpp_gtkmm24_template/main.cpp": {
+            "sizeBytes": 247,
+            "sha256": "7ac8654ff61960ca4d8a93bfd81a1e0afd769259da9148d2431ae1deff1ad069"
+          },
+          "templates/projects/cpp_gtkmm24_template/cpp_gtkmm24_template.project": {
+            "sizeBytes": 4867,
+            "sha256": "1f1e909f930d0bc6d72aea008ef563501d0f1e6cdc0d0d7dfb376c3bbf239532"
+          },
+          "templates/projects/cpp_gtkmm24_template/mainwindow.h": {
+            "sizeBytes": 318,
+            "sha256": "c042f9b1ce8a7abd7a1649b8d4517a54777a03c097f12cc4069bd39b44a5810e"
+          },
+          "templates/projects/cpp_gtkmm24_template/icon.png": {
+            "sizeBytes": 1337,
+            "sha256": "4ccd654d386200370ec3d36fb795002aff6e33faddf8c257c7918bb1ab4555f2"
+          },
+          "templates/projects/cpp_gtkmm24_template/mainwindow.cpp": {
+            "sizeBytes": 763,
+            "sha256": "3669d81f4c6cefdbfb7598f96c8436a78aa2dfe062c537364ba87f43fa032b10"
+          },
+          "templates/projects/executable/main.cpp": {
+            "sizeBytes": 93,
+            "sha256": "f35ffc3c38142562ced82c7d12c120f70bcdf1fcccb071c605fa97afa7446725"
+          },
+          "templates/projects/executable/icon.png": {
+            "sizeBytes": 962,
+            "sha256": "ed4f271113cfccb72537a51fb9e3c0d5519f9271deaf301daa2fb21a24fba080"
+          },
+          "templates/projects/executable/executable.project": {
+            "sizeBytes": 4496,
+            "sha256": "824a7c8c5c93ebbfd7b60fcf003551b7166d9a33e464b2956f9e8850540ae7da"
+          },
+          "templates/projects/custom-makefile/icon.png": {
+            "sizeBytes": 1216,
+            "sha256": "831ef5e9366245214e7225f8b01221ef1280745f448de04dd841affd8e5bc2ac"
+          },
+          "templates/projects/custom-makefile/custom-makefile.project": {
+            "sizeBytes": 4302,
+            "sha256": "ce411b6bb4c777fbdd77b45fe9fb05828d8907707397ef531e900c5b0697c346"
+          },
+          "templates/projects/executable-wx-xrc/main.h": {
+            "sizeBytes": 1170,
+            "sha256": "7286b65a7b0dae7c5f6be37751da6e1609888ac93bbca4b8540f28945d6aef38"
+          },
+          "templates/projects/executable-wx-xrc/main.cpp": {
+            "sizeBytes": 2070,
+            "sha256": "c650d918880c4038172f71d77181ca909a4164e5ca3294c92883fcba87de6901"
+          },
+          "templates/projects/executable-wx-xrc/gui.xrc": {
+            "sizeBytes": 1556,
+            "sha256": "8e9832a30adfdfe0cbc1a37844a4bfea85d65d532179a2fcac5376c23b6ed646"
+          },
+          "templates/projects/executable-wx-xrc/gui.wxcp": {
+            "sizeBytes": 11730,
+            "sha256": "f88c7c947084affea37eba37f031ac071ea412a1d4c52af7c8fcae1c31078c99"
+          },
+          "templates/projects/executable-wx-xrc/executable-wx-xrc.project": {
+            "sizeBytes": 5108,
+            "sha256": "f0ee9dad074bb64be17679284fd91f302eb80214b202b304050af8b607f5325a"
+          },
+          "templates/projects/executable-wx-xrc/icon.png": {
+            "sizeBytes": 1109,
+            "sha256": "a05ee9924d8b1901e812ee6b31e6d3ac47e677770791c974c730ad04d2fe30c5"
+          },
+          "templates/projects/UnitTest++/main.cpp": {
+            "sizeBytes": 2362,
+            "sha256": "710398ba750e0d1f0cdd3285d764b2a1924758370e1bf657492b42368897d612"
+          },
+          "templates/projects/UnitTest++/UnitTest++.project": {
+            "sizeBytes": 4519,
+            "sha256": "0d9c33ce61d6302afff93efda16c2fb9635ce11a49271dd234cb30fd36c6acff"
+          },
+          "templates/projects/UnitTest++/icon.png": {
+            "sizeBytes": 1216,
+            "sha256": "831ef5e9366245214e7225f8b01221ef1280745f448de04dd841affd8e5bc2ac"
+          },
+          "man/man1/codelite_fix_files.1": {
+            "sizeBytes": 580,
+            "sha256": "5e7407e515d43a60af79c69c95b44552dfbf96f846e8e998038dba7079a5e8a8"
+          },
+          "man/man1/codelite_open_helper.1": {
+            "sizeBytes": 830,
+            "sha256": "27ba97e8f2a719b6c07faa0ff3cdfb0c5020cbcb30875931ec9df6a9ba2cdd8e"
+          },
+          "man/man1/codelite-make.1": {
+            "sizeBytes": 1132,
+            "sha256": "95074c7418587a57e431b9e1738219509e9f44a41698934527b40747370b1c67"
+          },
+          "man/man1/codelite.1": {
+            "sizeBytes": 989,
+            "sha256": "09b523ecdfccbffe802396483499b2076c515862df32481d07c6484f01010d68"
+          }
+        },
+        "finalDataAndConfigurationPins": {
+          "drive_c/CodeLiteTests/市场代码.cpp": {
+            "sizeBytes": 38,
+            "sha256": "66d22432331f99b6ac3b2400aeecf7d6b78cad30b86c718fa49865ef6e07b1f4"
+          },
+          "drive_c/CodeLiteTests/market.cpp": {
+            "sizeBytes": 50,
+            "sha256": "c1de002449f8997cd771e42d318eb60da1aae2277263efb6f3fff39cd871e539"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/wx.py": {
+            "sizeBytes": 4754,
+            "sha256": "e9d9ac34280fb152fc621e4850584b46e9aec5a1c58c70f2cf8ce0ce9e04a854"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/environment_variables.xml": {
+            "sizeBytes": 319,
+            "sha256": "87b3d60ddc818a7c17bc1aa6eb8cde838b7289c9fec14b2e6a6780899263edf0"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/v6/xmethods.py": {
+            "sizeBytes": 27705,
+            "sha256": "98db47a3b61cf963823b628160a329db5c38812a0886deeca7195046df87a908"
+          },
+          "system.reg": {
+            "sizeBytes": 3424327,
+            "sha256": "2d8f60503cef7dcd8f6a2af6486ea2c2e2a191ca24e1aa104d7978b56caad87f"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/codelite.xml": {
+            "sizeBytes": 1291,
+            "sha256": "bbb99f12078bbdd54e16c913ca4aa32455a32d28babdd0a3c4dbee01bc0970af"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/codelite.conf": {
+            "sizeBytes": 899,
+            "sha256": "937fb4499b505f1dfdf5f8c64f34ec043b7e040617f4a876a2b9409e919b3412"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/sessions.xml": {
+            "sizeBytes": 99,
+            "sha256": "6b663b89140495cb13da345f9bfe7436b106eb5fa8bf722222bea4791cfe6c9e"
+          },
+          "userdef.reg": {
+            "sizeBytes": 4052,
+            "sha256": "ce5b2a76bccd77ea74ff2ae4518bae8f610deca7104ccc2c76e14b6cc9c49526"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/boost/printers.py": {
+            "sizeBytes": 48582,
+            "sha256": "0313c294a35a7f908c5d31881089dd23c8cf145a1f43fbfce1774a83cc7b2655"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/ColoursAndFonts.conf": {
+            "sizeBytes": 37,
+            "sha256": "8971efb0f6468c2504f047324a5c3cd47ce7c87981c882eaa3ff278c89d22edb"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/v6/__init__.py": {
+            "sizeBytes": 1161,
+            "sha256": "fc792a50d118d5feb068481d0328f89fe8762b7705011910281bfe65c1170c8f"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/keybindings.conf": {
+            "sizeBytes": 22686,
+            "sha256": "3f30339b09e5673535494dcae756be07b76bdc2caa9a777d1b6fdf99ad60c5a7"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/Default.session": {
+            "sizeBytes": 704,
+            "sha256": "05d2b82481b41bdc286ca44a4092966540387d2205d239a6560e454db1fa365b"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/boost/__init__.py": {
+            "sizeBytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/code-completion.conf": {
+            "sizeBytes": 8042,
+            "sha256": "61f8b9883e5ab50e3f52ff5f3677bfecd5a36a8b4971aff3e3e5cc1d2c421665"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/__init__.py": {
+            "sizeBytes": 1,
+            "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/libstdcxx/v6/printers.py": {
+            "sizeBytes": 68367,
+            "sha256": "6a565bbeba13482791c9db00a131439278ff88ae1b5a4bc8d8fcdbf40cbfd488"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/rust_types.py": {
+            "sizeBytes": 3637,
+            "sha256": "52f137497bf4d3426fbce9d4b8f25069f9fe5e9e7ce9a707723df4e2b7b3670d"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/codelite.log": {
+            "sizeBytes": 354,
+            "sha256": "282f3951e999f0a5c1ee7240c9bc892e683d226a5dd0c737666807b50fdd04c4"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/gdb_providers.py": {
+            "sizeBytes": 13302,
+            "sha256": "5ceb623aa3ee477c4cff52b8d79fe4b80d27d01284c4ccfd7037fb4d200e4652"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/build_settings.xml": {
+            "sizeBytes": 21283,
+            "sha256": "9ca3c2abe7ff7dddf0d93d8d95047f961a09267134ac396f1e024c81a0e6096f"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/debuggers.xml": {
+            "sizeBytes": 1133,
+            "sha256": "6137fb74f0a239f2b963e2e5337b9bd8d5ec12a2a901b7b8add32898abfd2fbd"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/lexers/lexers.json": {
+            "sizeBytes": 3839748,
+            "sha256": "5f502d31e7b99e12004e943d39a2076982aeda376fb6f450b830b6643f22dce7"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/helper.py": {
+            "sizeBytes": 2647,
+            "sha256": "8d62f36191bff3869057fa383b737d6a36a34d00c2d170fb1b2a4128b88dad4a"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/gdb_lookup.py": {
+            "sizeBytes": 3014,
+            "sha256": "0a4117cadc59b715bd09b5a0d122c4dea37afe6ba0f96cbdccee037273ac405f"
+          },
+          "user.reg": {
+            "sizeBytes": 101299,
+            "sha256": "0dd58eda19e23996d1857ac2f21d99172611621c49788e7401ce21576dc11dc9"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/gdb_printers/rustlib/etc/gdb_load_rust_pretty_printers.py": {
+            "sizeBytes": 63,
+            "sha256": "b88f1a7df63b71f95addb4962e0a5bdd78a4ab406dabfb731b02b27342f4d533"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/plugins.conf": {
+            "sizeBytes": 52,
+            "sha256": "27940c8cf4f80da6fa60dc5eba63a143dc466ef9c6192c14cf23d6f51f0fc6fa"
+          },
+          "drive_c/users/forge/AppData/Roaming/codelite/config/default.layout": {
+            "sizeBytes": 746,
+            "sha256": "b43c53991256e60c75350fdac4ddf253e06399c820367d863d968f26bad5a87f"
+          }
+        },
+        "currentlyAbsentPreviouslyPinnedPaths": [],
+        "createdConfigurationPaths": [],
+        "coverage": "332 program files, fixed input and saved CPP text bytes, three registry and selected prefix ProgramData/CodeLite and named prefix-user files; not full app filesystem"
+      }
+    },
+    "actualThirdOriginalByteDifferences": {
+      "drive_c/users/forge/AppData/Roaming/codelite/codelite.log": {
+        "old": {
+          "sizeBytes": 354,
+          "sha256": "12eaaf07c60e3b56e2c79ae65bd06f003dccca8c9ae5b9f2baea67c787eeb32b"
+        },
+        "new": {
+          "sizeBytes": 472,
+          "sha256": "7ab49ccdea37db8053e933f3b88515fbde1aaf002a460a17558ac6c72f7cda4e"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 543,
+          "sha256": "53bf13e1037cccfe7808e2523e4bcc6dcad6fcfacd2596d4659f5482bd07b1cf"
+        },
+        "privateDiffLines": 7
+      },
+      "drive_c/users/forge/AppData/Roaming/codelite/config/keybindings.conf": {
+        "old": {
+          "sizeBytes": 22686,
+          "sha256": "3f30339b09e5673535494dcae756be07b76bdc2caa9a777d1b6fdf99ad60c5a7"
+        },
+        "new": {
+          "sizeBytes": 22686,
+          "sha256": "3f1c20ced9b67821301ad8703fa35401f7b7c179d06dd2e055079e6341deeeed"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 46625,
+          "sha256": "2b161ef9f6295cb60b14a0561360916b61cd2dd27bd84d8982b3027feb5a97fd"
+        },
+        "privateDiffLines": 1639
+      },
+      "system.reg": {
+        "old": {
+          "sizeBytes": 3424327,
+          "sha256": "43b8f286f101a8dd1254ec748a094154f90da0e7098932706405bebbed3dce77"
+        },
+        "new": {
+          "sizeBytes": 3424327,
+          "sha256": "72e107ce7c663d3df3d36807ac48eaa2875177fe657cb84cf96d6892053f566b"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 16081,
+          "sha256": "b45e9d89e40752cb75e7a1804ba02aa8960a18073d7b3c94adb7609d42a2f4f6"
+        },
+        "privateDiffLines": 287
+      },
+      "user.reg": {
+        "old": {
+          "sizeBytes": 101299,
+          "sha256": "2b11301361918eb8c0ef67e28bb31b41f5eaaad7f0240a7fee7d1181bab3f016"
+        },
+        "new": {
+          "sizeBytes": 101299,
+          "sha256": "3e80e66163616a84bc5c93470fd8138a2ea3583421c5b4b61abc5aef1e5e3ac1"
+        },
+        "actualPrivateBeforeAndAfterRawAvailable": true,
+        "causeOrKeyValueEquivalenceEstablished": false,
+        "privateDiffPin": {
+          "sizeBytes": 786,
+          "sha256": "6c7c68c4694e43de84028b2508717b2afe7e7a158c5a4b2b56f5d7000de3f57c"
+        },
+        "privateDiffLines": 20
+      }
+    },
+    "rollbackGuiJob": {
+      "applicationId": "codelite",
+      "createdAtMilliseconds": 1791916737169,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 122538,
+          "requestId": "job-1791916737169-7",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 227850,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791913844123-1/prefix",
+          "requestId": "job-1791916737169-7",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 227892,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791916737169-7",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791913844123-1",
+      "id": "job-1791916737169-7",
+      "inspection": {
+        "architecture": "x86_64",
+        "entryPointRva": 4416,
+        "fileDigest": "sha256:5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066",
+        "fileSizeBytes": 7258112,
+        "format": "pe32Plus",
+        "imageKind": "executable",
+        "importLibraries": [
+          "advapi32.dll",
+          "api-ms-win-crt-convert-l1-1-0.dll",
+          "api-ms-win-crt-environment-l1-1-0.dll",
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-private-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "codelite.dll",
+          "kernel32.dll",
+          "libc++.dll",
+          "libplugin.dll",
+          "wxmsw330u_clang_custom.dll"
+        ],
+        "machineCode": 34404,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 3470336,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 3469878,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 1469440,
+            "readable": true,
+            "virtualAddress": 3477504,
+            "virtualSize": 1468976,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".buildid",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 4947968,
+            "virtualSize": 53,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 490496,
+            "readable": true,
+            "virtualAddress": 4952064,
+            "virtualSize": 511696,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".pdata",
+            "rawDataSize": 64512,
+            "readable": true,
+            "virtualAddress": 5464064,
+            "virtualSize": 64008,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".tls",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 5529600,
+            "virtualSize": 16,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 149504,
+            "readable": true,
+            "virtualAddress": 5533696,
+            "virtualSize": 149304,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 139776,
+            "readable": true,
+            "virtualAddress": 5685248,
+            "virtualSize": 139760,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "/4",
+            "rawDataSize": 5632,
+            "readable": true,
+            "virtualAddress": 5828608,
+            "virtualSize": 5258,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "/18",
+            "rawDataSize": 512,
+            "readable": true,
+            "virtualAddress": 5836800,
+            "virtualSize": 48,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "/33",
+            "rawDataSize": 19456,
+            "readable": true,
+            "virtualAddress": 5840896,
+            "virtualSize": 19057,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "/45",
+            "rawDataSize": 8192,
+            "readable": true,
+            "virtualAddress": 5861376,
+            "virtualSize": 7793,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "/57",
+            "rawDataSize": 9216,
+            "readable": true,
+            "virtualAddress": 5869568,
+            "virtualSize": 9175,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "/68",
+            "rawDataSize": 1024,
+            "readable": true,
+            "virtualAddress": 5881856,
+            "virtualSize": 528,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": "/82",
+            "rawDataSize": 14336,
+            "readable": true,
+            "virtualAddress": 5885952,
+            "virtualSize": 14080,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "x86_64",
+          "bottleId": "gen-job-1791913844123-1",
+          "digest": "sha256:5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "codelite.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791913844123-1/prefix/drive_c/CodeLite/codelite.exe",
+          "sizeBytes": 7258112,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:5455dfc43e514ebe2da28af401a35583fc0195427f22c392f35f3a33fc6e0066 pinned in place",
+          "inspection x86_64 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791913844123-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791913844123-1/prefix/drive_c/CodeLite/codelite.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791913844123-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791913844123-1"
+        },
+        "requestId": "job-1791916737169-7",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791916967148
+    },
+    "currentActiveDefinition": {
+      "bottleId": "gui-codelite",
+      "category": "education",
+      "compatibilityRating": "unknown",
+      "id": "codelite",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\CodeLite",
+          "/NOICONS",
+          "/TASKS="
+        ],
+        "fileName": "codelite-amd64-17.0.0.exe",
+        "sha256": "8dc40a5d1b855610377229a00d70426c5af7742532ba932e769ceba39af9851b"
+      },
+      "launchers": [
+        {
+          "executable": "CodeLite/codelite.exe",
+          "id": "main",
+          "name": "CodeLite"
+        }
+      ],
+      "name": "CodeLite",
+      "publisher": "Eran Ifrah",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "17.0.0"
+    },
+    "allPreviousStateFieldsAndFixedDataPreserved": true,
+    "allAppFilesystemFilesTraversed": false,
+    "guiAcceptedLimitedTextBothGenerations": true,
+    "ipcMarketUpdateAndExactOriginalRollbackAccepted": true,
+    "fullCodeliteIdeFeaturesAccepted": false,
+    "recoveredApplicationOperation": false,
+    "vmRebooted": false,
+    "programOrRuntimeRepairApplied": false
+  },
+  "checkpointPrivateNotPublic": true,
+  "fullCpNotIndependentlyReplayedByHostReviewer": true,
+  "limits": [
+    "Only one small Chinese-name UTF8 BOM/two-CRLF CPP comment input per role; native File/Open/Open File via My Computer/C/CodeLiteTests, single STATUS BEFORE to AFTER and ASCII // ORIGINAL42 or // MARKET42 appended, native Save As and new formal process explicit Open after native Close of automatic restoration. No compilation, build/link/run/debug, compiler installation, project, advanced editing, complete C++/editor/IDE, large/bad input, broad encoding/formats, printing, direct Chinese keyboard, network/background exclusion, registration/migration/unattended or GUI Store button acceptance. Synthetic text is not a separate app.",
+    "Original input38B unchanged; output52B UTF8 BOM/threeCRLF exactly reconstructed from immutable input. Original About17.0.0; market About not yet tested. Default English/Chinese file name and small Chinese comment readable, no font changes. First startup update download No and native setup wizard Cancel; second update No. Theme suggestion checkbox stayed unchecked in first process. Native auto-restored file closed before explicit Open; automatic restoration is not accepted as explicit loading.",
+    "Initial bulk // prefix actually delivered only slash in unsaved original buffer, actual diagnostic JPEG retained; same unsaved line corrected by individual slash/space/Shift letters before save. No generic keyboard fix. CtrlO at empty welcome screen did not show dialog in observed frames; native File/Open/Open File was used. CtrlShiftS actual Save As and AltX actual File/Exit. Normal0+wineserver-stop twice is not acceptance alone.",
+    "Official fixed CodeLite17.0.0 archive raw86712B saved. Installer56796290B and source33857665B both complete HTTPS200/ContentLength/localSHA; both routes terminal before original install, caches/partials retained without repeat GET. Source16825 unique TAR members/14412 regular files, full gzip stream EOF/trailer validated;12 selected raw members only, not full source manual review. Upstream digest/API/PGP/Authenticode/source-binary correspondence/repro/latest not verified.",
+    "Main LiteEditor/app.cpp GPL2-or-later. Installed LICENSE18341B exact selected root LICENSE raw, root COPYING separately retained. wxCrafter resources/LICENSE is separate SmartKoders EULA with use/backup, registered distribution and reverse engineering limits; not blanket entire binary GPL or public binary redistribution permission. Full wxWidgets/Scintilla/LLVM/clangd/ctags/cppcheck/SQLite/wxCrafter/wxdap/tools/icons/translations closure unverified. Public contains JSON evidence and no installer/program binary.",
+    "Two actual Inno6.1.0 markers; bootstrap0x14c, main0x8664. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:single-backslashCodeLite /NOICONS /TASKS=, DIR16UTF8B hex2f4449523d433a5c436f64654c697465; static iss PrivilegesRequired none, entry codelite.exe, skipifsilent only source context, no full Inno/UAC/associations/shortcuts/uninstall behavior. Main7258112B not whole application size.",
+    "Original332 programs preserved; three registry and selected ProgramData/CodeLite/prefix-user CodeLite-named configuration only, not whole FS. Actual first/new-process config and registry raw/diff saved privately, cause/semantic equivalence unestablished; first discovery not creation time. Complete537Core/156Store seven-class CP saved/readback before market. Recent64IPC not completeSQLite; Core query may write existing scratch. No Core/program/globalcontext/formaldefinition/launcher env/cwd/newfont/globalDLL/runtime fix.",
+    "Guessed host helper paths missing only tool history, exact stderr not separately saved or fabricated; no dependent action tied to those reads. Old noVNC tab was closed; new same-loopback Edge tab connected. Actual default viewport0x0 persisted after reset, documented browser viewport993x998 made canvas operable; no guest/auth/power change. Browser reference name undefined once only host error. Browser tab inventory emitted existing authorization callback URLs in tool history; that limited tool history scope retained, not copied/public/automation or repeated. Password/login images/private keys/credentials/full private CP/exact redirect query excluded. Normal login fresh masked six-character field once submitted, auth/lockscreen/power unchanged.",
+    "wxMEdit and wxHexEditor official archive-only research no package GET/install/task/pending/count. Old failures/helpers/TUF/root/signatures/trust/freezes/history held, no fabricated restoration of old Scribus one private canonicalV1 failure raw. UbuntuKateAPT/Snapcalculator2 separate; Flatpak2 runtime timeouts/cache held; UbuntuVM not run, two4GiB VMs not concurrent. Greenfish EULA no program modification/shader-cache deletion, CopyQ no notification disabling/globalDLL masking, Zim font/AegisubConcurrency unresolved, Texmaker source-only architecture guard held."
+  ]
+}

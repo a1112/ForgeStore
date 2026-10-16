@@ -1,0 +1,607 @@
+{
+  "applicationId": "quiterss",
+  "version": "0.19.4",
+  "generationId": "gen-job-1791967395277-1",
+  "originalGuiJobs": [
+    {
+      "applicationId": "quiterss",
+      "createdAtMilliseconds": 1791967602467,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 14355,
+          "requestId": "job-1791967602467-2",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 1187808,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix",
+          "requestId": "job-1791967602467-2",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 1187850,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791967602467-2",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791967395277-1",
+      "id": "job-1791967602467-2",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 1538951,
+        "fileDigest": "sha256:c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea",
+        "fileSizeBytes": 3322368,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "kernel32.dll",
+          "qt5core.dll",
+          "qt5gui.dll",
+          "qt5multimedia.dll",
+          "qt5network.dll",
+          "qt5printsupport.dll",
+          "qt5sql.dll",
+          "qt5webkit.dll",
+          "qt5webkitwidgets.dll",
+          "qt5widgets.dll",
+          "qt5xml.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1708544,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1708427,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 1041408,
+            "readable": true,
+            "virtualAddress": 1716224,
+            "virtualSize": 1041072,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 12800,
+            "readable": true,
+            "virtualAddress": 2760704,
+            "virtualSize": 14880,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 372224,
+            "readable": true,
+            "virtualAddress": 2777088,
+            "virtualSize": 372056,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 186368,
+            "readable": true,
+            "virtualAddress": 3149824,
+            "virtualSize": 186132,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791967395277-1",
+          "digest": "sha256:c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "QuiteRSS.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix/drive_c/QuiteRSS/QuiteRSS.exe",
+          "sizeBytes": 3322368,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix/drive_c/QuiteRSS/QuiteRSS.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_KUuaJQ"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1"
+        },
+        "requestId": "job-1791967602467-2",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791968792390
+    },
+    {
+      "applicationId": "quiterss",
+      "createdAtMilliseconds": 1791969099012,
+      "events": [
+        {
+          "elapsedMilliseconds": 0,
+          "kind": "started",
+          "processId": 16474,
+          "requestId": "job-1791969099012-3",
+          "schemaVersion": "1",
+          "sequence": 0
+        },
+        {
+          "elapsedMilliseconds": 276746,
+          "kind": "wine-server-stop-requested",
+          "message": "stopping wineserver for prefix /home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix",
+          "requestId": "job-1791969099012-3",
+          "schemaVersion": "1",
+          "sequence": 1
+        },
+        {
+          "elapsedMilliseconds": 276788,
+          "exit": {
+            "code": 0,
+            "success": true
+          },
+          "kind": "exited",
+          "requestId": "job-1791969099012-3",
+          "schemaVersion": "1",
+          "sequence": 2
+        }
+      ],
+      "generationId": "gen-job-1791967395277-1",
+      "id": "job-1791969099012-3",
+      "inspection": {
+        "architecture": "x86",
+        "entryPointRva": 1538951,
+        "fileDigest": "sha256:c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea",
+        "fileSizeBytes": 3322368,
+        "format": "pe32",
+        "imageKind": "executable",
+        "importLibraries": [
+          "api-ms-win-crt-heap-l1-1-0.dll",
+          "api-ms-win-crt-locale-l1-1-0.dll",
+          "api-ms-win-crt-math-l1-1-0.dll",
+          "api-ms-win-crt-runtime-l1-1-0.dll",
+          "api-ms-win-crt-stdio-l1-1-0.dll",
+          "api-ms-win-crt-string-l1-1-0.dll",
+          "api-ms-win-crt-time-l1-1-0.dll",
+          "kernel32.dll",
+          "qt5core.dll",
+          "qt5gui.dll",
+          "qt5multimedia.dll",
+          "qt5network.dll",
+          "qt5printsupport.dll",
+          "qt5sql.dll",
+          "qt5webkit.dll",
+          "qt5webkitwidgets.dll",
+          "qt5widgets.dll",
+          "qt5xml.dll",
+          "shell32.dll",
+          "user32.dll",
+          "vcruntime140.dll"
+        ],
+        "machineCode": 332,
+        "schemaVersion": "1",
+        "sections": [
+          {
+            "executable": true,
+            "name": ".text",
+            "rawDataSize": 1708544,
+            "readable": true,
+            "virtualAddress": 4096,
+            "virtualSize": 1708427,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".rdata",
+            "rawDataSize": 1041408,
+            "readable": true,
+            "virtualAddress": 1716224,
+            "virtualSize": 1041072,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".data",
+            "rawDataSize": 12800,
+            "readable": true,
+            "virtualAddress": 2760704,
+            "virtualSize": 14880,
+            "writable": true
+          },
+          {
+            "executable": false,
+            "name": ".rsrc",
+            "rawDataSize": 372224,
+            "readable": true,
+            "virtualAddress": 2777088,
+            "virtualSize": 372056,
+            "writable": false
+          },
+          {
+            "executable": false,
+            "name": ".reloc",
+            "rawDataSize": 186368,
+            "readable": true,
+            "virtualAddress": 3149824,
+            "virtualSize": 186132,
+            "writable": false
+          }
+        ],
+        "subsystem": "windowsGui",
+        "subsystemCode": 2
+      },
+      "kind": "launch",
+      "launchPlan": {
+        "bottleExecutable": {
+          "architecture": "i386",
+          "bottleId": "gen-job-1791967395277-1",
+          "digest": "sha256:c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea",
+          "imageKind": "executable",
+          "inspectionSchemaVersion": "1",
+          "originalName": "QuiteRSS.exe",
+          "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix/drive_c/QuiteRSS/QuiteRSS.exe",
+          "sizeBytes": 3322368,
+          "subsystem": "windowsGui"
+        },
+        "decisionTrace": [
+          "runtime provider wine-linux-x86-64-preview selected as wine",
+          "translator native selected",
+          "graphics backend wined3d selected",
+          "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+          "Bottle CJK font pinned by digest",
+          "bottle-executable sha256:c05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea pinned in place",
+          "inspection i386 windowsGui accepted"
+        ],
+        "graphics": {
+          "backend": "wined3d",
+          "version": "11.14"
+        },
+        "lifecycle": {
+          "terminationGraceMilliseconds": 3000,
+          "wineserver": {
+            "executable": "/usr/bin/wineserver",
+            "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix"
+          }
+        },
+        "process": {
+          "arguments": [
+            "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix/drive_c/QuiteRSS/QuiteRSS.exe"
+          ],
+          "environment": {
+            "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+            "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+            "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+            "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+            "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+            "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+            "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+            "DISPLAY": ":0",
+            "LANG": "C.UTF-8",
+            "LC_ALL": "C.UTF-8",
+            "WINEARCH": "win64",
+            "WINEDEBUG": "-all",
+            "WINEDLLOVERRIDES": "mscoree,mshtml=",
+            "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1/prefix",
+            "WINESERVER": "/usr/bin/wineserver",
+            "XAUTHORITY": "/run/user/1000/xauth_KUuaJQ"
+          },
+          "executable": "/usr/bin/wine",
+          "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791967395277-1"
+        },
+        "requestId": "job-1791969099012-3",
+        "runtime": {
+          "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "packId": "wine-linux-x86-64-local-preview",
+          "provider": "wine"
+        },
+        "sandbox": {
+          "network": "deny",
+          "profile": "desktop"
+        },
+        "schemaVersion": "1",
+        "translator": {
+          "provider": "native"
+        }
+      },
+      "schemaVersion": "1",
+      "status": "succeeded",
+      "updatedAtMilliseconds": 1791969377806
+    }
+  ],
+  "fixtureReferences": {
+    "原始订阅.opml": {
+      "reference": "quiterss-20261014/original/原始订阅.opml",
+      "sizeBytes": 317,
+      "sha256": "e30fa1550f15c3a9a1d75458aa7f8cadd504e41cd43aa8a30f8e38e06b4e21b4"
+    },
+    "original-feed.xml": {
+      "reference": "quiterss-20261014/original/original-feed.xml",
+      "sizeBytes": 435,
+      "sha256": "da1d0c5e6fc9cd3fd8f2a2e0c1758363e804e96b183acc852880b733f90c7c3b"
+    },
+    "original-page.html": {
+      "reference": "quiterss-20261014/original/original-page.html",
+      "sizeBytes": 168,
+      "sha256": "f1e7f3eebe0ac8a9cc315a72b1b42234cbed32044d56cfd88bc632262cfb4e2d"
+    },
+    "original.opml": {
+      "reference": "quiterss-20261014/original/original.opml",
+      "sizeBytes": 567,
+      "sha256": "e296d7dd8511ef5ce535b366cdcee3f43cc1988b9336c21a96572d1ab1477b58"
+    }
+  },
+  "screenshots": {
+    "00-default-feed-certificate-warning.jpg": {
+      "sizeBytes": 28761,
+      "sha256": "a5bec954bd0fb7f5198a169eb886cf5df5bf23e3c41c85862ffb88e26e9f5611",
+      "actualEncoding": "JPEG",
+      "evidenceRole": "default-upstream-SSL-diagnosis-only"
+    },
+    "01-original-local-feed-read.jpg": {
+      "sizeBytes": 19953,
+      "sha256": "10f346dc1fce7bdb25ae2de981ed020153d5007efde94d5dfa95c05aa0fe7d41",
+      "actualEncoding": "JPEG",
+      "evidenceRole": "original-native-limited-operation"
+    },
+    "02-original-title-after-native-export.jpg": {
+      "sizeBytes": 20330,
+      "sha256": "ff6a706f166476378c431264719f849413fac1713519ee601ea3b6a0bd866329",
+      "actualEncoding": "JPEG",
+      "evidenceRole": "original-native-limited-operation"
+    },
+    "03-original-new-process-test-tree-cleared.jpg": {
+      "sizeBytes": 12506,
+      "sha256": "42cb9c36eca88b8eafb74a173f197a170d2d7afe7530ee64e703212eaf33f889",
+      "actualEncoding": "JPEG",
+      "evidenceRole": "original-native-limited-operation"
+    },
+    "04-original-explicit-saved-opml-import-read.jpg": {
+      "sizeBytes": 20692,
+      "sha256": "c923da8d3f971a1b3aa1f4fdae4fbc8004ab3e16ca6e8a8359d28e842b9f13dd",
+      "actualEncoding": "JPEG",
+      "evidenceRole": "original-native-limited-operation"
+    }
+  },
+  "originalLimitedGuiPassed": true,
+  "nativeOutputPin": {
+    "sizeBytes": 567,
+    "sha256": "e296d7dd8511ef5ce535b366cdcee3f43cc1988b9336c21a96572d1ab1477b58"
+  },
+  "normalQuitExitCodes": [
+    0,
+    0
+  ],
+  "fullTerminalCheckpointDigestOnly": {
+    "file": "after-original-reopen-native-exit.json",
+    "sha256": "678edb270f8b7181ad7f25dec69bb9ddab2443ee4b54586ca0aebb7a4057cb79",
+    "coreJobs": 566,
+    "fullStoreRows": 164
+  },
+  "selectedConfigurationDifferences": {
+    "system.reg": {
+      "before": {
+        "sizeBytes": 3899446,
+        "sha256": "cf9bfbad66fe16b41535c22217425835a74763f946b2a7c4cc644ea4a3a2f9b6"
+      },
+      "after": {
+        "sizeBytes": 3899446,
+        "sha256": "fb2bc7b5090dc002f8974c612d96248fc1ace55c7e8a26e47e7ec8e3784b720d"
+      },
+      "actualAfterRawHeld": true,
+      "causeOrSemanticEquivalenceEstablished": false,
+      "textDiffPin": {
+        "sizeBytes": 18006,
+        "sha256": "e3c3d0e187c07434d797a490e501b5c9f6ffde1daf8b570419f7ff8e38529a04"
+      }
+    },
+    "user.reg": {
+      "before": {
+        "sizeBytes": 107430,
+        "sha256": "29f783bdddc42024509295510025ac3416c12d45d29f8904cd48dbfc30b93c65"
+      },
+      "after": {
+        "sizeBytes": 107430,
+        "sha256": "eaf35316b8f69682eaf8f97012f45812f249ac613986df8589d2c4005d0ea915"
+      },
+      "actualAfterRawHeld": true,
+      "causeOrSemanticEquivalenceEstablished": false,
+      "textDiffPin": {
+        "sizeBytes": 5605,
+        "sha256": "793ed7f06406fa952cb2d56e0aa2f9123eb03acaece6a7f687a15333a0d25ea7"
+      }
+    },
+    "drive_c/users/forge/AppData/Roaming/QuiteRss/QuiteRss.ini": {
+      "before": {
+        "sizeBytes": 6804,
+        "sha256": "2e513d122af23ce1ae9c68ce6f636386dc124430a75e998dd627937da259b9fb"
+      },
+      "after": {
+        "sizeBytes": 6819,
+        "sha256": "8457d2f2ed1d44999e8c393ad23e4a4e5bd52c713a58a5eb1f1ec34e7334a432"
+      },
+      "actualAfterRawHeld": true,
+      "causeOrSemanticEquivalenceEstablished": false,
+      "textDiffPin": {
+        "sizeBytes": 4822,
+        "sha256": "f6cd571a10a01bf5030b27232fa8bc9461a1538d03f002e13aeb9ec13e43f6fe"
+      }
+    },
+    "drive_c/users/forge/AppData/Local/QuiteRss/QuiteRss/debug.log": {
+      "before": {
+        "sizeBytes": 1520,
+        "sha256": "3b0a6fa2f0327f655ed05b6406d53fb9b619437bbf53e407f6ffcf0b45cc9421"
+      },
+      "after": {
+        "sizeBytes": 2757,
+        "sha256": "8ae4a6a7533a27895b2ec782f3e6e88411b4b9f1e91d536e026ecf0755294765"
+      },
+      "actualAfterRawHeld": true,
+      "causeOrSemanticEquivalenceEstablished": false,
+      "textDiffPin": {
+        "sizeBytes": 1541,
+        "sha256": "7370d04e0f6c2148a490b7abdb126ad4dc3579ecc4e8a0cd320de6051b7c56d9"
+      }
+    },
+    "drive_c/users/forge/AppData/Local/QuiteRss/QuiteRss/feeds.db": {
+      "before": {
+        "sizeBytes": 57344,
+        "sha256": "de99319e4d792ce48cf26c84ed0c304a00b37cf69a22c5ac9b95438fc08fbe7d"
+      },
+      "after": {
+        "sizeBytes": 57344,
+        "sha256": "2d27130dcd71b46e8211ca5a74d72b9c95d09e22503912e1398fd7a4909b4d67"
+      },
+      "actualAfterRawHeld": true,
+      "causeOrSemanticEquivalenceEstablished": false,
+      "binaryRawComparisonOnly": true
+    },
+    "drive_c/users/forge/AppData/Local/QuiteRss/QuiteRss/adblock/customlist.txt": {
+      "before": {
+        "sizeBytes": 47,
+        "sha256": "638bfea58350a04d79291fefd2b00510bbda6bdb7eb377d05e3ebb5e487760f5"
+      },
+      "after": {
+        "sizeBytes": 101,
+        "sha256": "d5c558fb3ec29474dbad1048ce0336fbf412f965efa9d59e8a97e3b5a4fe6aa0"
+      },
+      "actualAfterRawHeld": true,
+      "causeOrSemanticEquivalenceEstablished": false,
+      "binaryRawComparisonOnly": true
+    }
+  },
+  "selectedPersistedFeedRows": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "rowToParent": 0,
+      "text": "QuiteRSS",
+      "htmlUrl": "https://quiterss.org",
+      "xmlUrl": "https://quiterss.org/en/rss.xml"
+    },
+    {
+      "id": 2,
+      "parentId": 0,
+      "rowToParent": 1,
+      "text": "原始目录",
+      "htmlUrl": null,
+      "xmlUrl": ""
+    },
+    {
+      "id": 3,
+      "parentId": 2,
+      "rowToParent": 0,
+      "text": "STATUS AFTER ORIGINAL42",
+      "htmlUrl": "file:///C:/QuiteRSSTests/original-page.html",
+      "xmlUrl": "file:///C:/QuiteRSSTests/original-feed.xml"
+    }
+  ],
+  "selectedPersistedNewsRows": [
+    {
+      "feedId": 3,
+      "title": "ORIGINAL ARTICLE42",
+      "guid": "forge-original-42",
+      "description": "原始中文内容 STATUS BEFORE"
+    }
+  ],
+  "firstProcessHistoricalLiveDiskEmptyObservationOnly": true,
+  "secondProcessPreQuitDiskWasEmptyNotClaimed": true,
+  "marketLifecyclePendingAtFreeze": true,
+  "limits": [
+    "Finite original local RSS and OPML only: native Import Feeds via actual Home/MyComputer/C/QuiteRSSTests tree doubleclicked immutable Chinese-name317B original OPML. Default English, Chinese folder and short article body readable. Selected single local RSS article ORIGINAL ARTICLE42 with original Chinese content STATUS BEFORE. Native Properties changed only feed title to STATUS AFTER ORIGINAL42; other options retained. Native Export Feeds saved original.opml567B UTF8/noBOM/13CRLF.",
+    "Host independently reconstructed entire native OPML output from immutable input, fixed source default QuiteRSS feed and only observed dateModified serialization value. Native output/expected bytes identical, no host output edit. dateModified is an observed variable, not independent clock or full OPML/RSS specification proof. Original input317B, local RSS435B and HTML168B all unchanged.",
+    "Two original formal jobs job-1791967602467-2 and job-1791969099012-3 used sole ready gen-job-1791967395277-1. New process automatically restored old tree/article; automatic restoration is not explicit import proof. Native Delete/Yes removed only synthetic original folder, left default QuiteRSS root and unchanged disk fixtures/saved output. Then native Import Feeds explicitly doubleclicked original.opml and restored edited feed title/local article/Chinese body. Not empty database or host reset. File dialogs started at Home each time, no remembered Save directory claim.",
+    "Both original normal CtrlQ exits independently verified full job.events succeeded/exited.exit code0 successTrue/wine-server-stop-requested and ps noWine. First window disappearance initially left job running/onlystarted/wineserver/winedevice; later independent readonly observation became succeeded without repeated Quit, kill or restart. Unique delay cause unknown. Exit0 alone is not application acceptance.",
+    "Both processes showed default upstream QuiteRSS feed SSL Certificate Error/issuer unavailable. Native No only, no accepted exception/OnlyForSession/certificate import/network disabled. Local feed normal Incoming News1 notification remained. No upstream online success, absence of background network or unattended behavior claim.",
+    "Official fixed directory HTTPS raw links and233B MD5 saved privately. Complete installer27681829B and source3771258B HTTPS200/ContentLength matched official weak MD5. Local SHA only; MD5 not strong authenticity. Both GET routes terminal before sole original install, full cache/first-get partials retained, no repeated GET. Upstream SHA/PGP/Authenticode/source-binary/repro/latest unverified.",
+    "Source447unique408regular/gzip complete EOF18145280B and safe paths,18 selected raw files, not all-source manual review. src/main/main.cpp GPL3-or-later. Installed COPYING35231B exactly equals full selected source COPYING, SHA673cc10e3d37dc025fcdb443e138df498377854ec1a4533b9d51e0f973e80d55. Complete Qt/WebKit/SQLite/OpenSSL/Adblock/icons/translations license closure unverified; not entire Windows bundle GPL closure. RC byte0xA9 retained, cp1252 diagnostic only, no source transcoding.",
+    "Actual two Inno Setup Data6.0.0(u) markers/bootstrap/main PE14c. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:one-backslashQuiteRSS /NOICONS /TASKS=, DIR16UTF8 hex2f4449523d433a5c5175697465525353. No installer iss/nsi in fixed source archive, no fabricated corresponding source. Not complete Inno/UAC/association/shortcut/uninstall verification. Main QuiteRSS.exe3322368B SHAc05141e215a253c9f779f37c6877993c2d74ad673d84a786bd63e595b62c40ea is32bit, not whole application size.",
+    "All99 initial installed program files held across both GUI/exits. Selected15 include registry/INI/log/feeds.db/adblock/cookies/twoCA files/DesktopShortcut/fixed fixtures. Actual before/after raw, textdiff or database binary raw retained privately, causes/semantic equivalence unknown; not old registry/config/database bytes unchanged across GUI, not full filesystem. First discovery is not creation time. Core queries may write existing scratch; recent64IPC is not full Store SQLite.",
+    "First live external readonly feeds table was empty. Initial guessed parid failed; actual parentId schema retained. Host proof guessed three live disk rows and stopped with actual0. Fixed source defaults storeDBMemory true and Qt memory database/sqlite backup are static context only, not established unique runtime cause. After normal Quit disk DB57344B selected three feeds and one news title/guid/description matched immutable RSS, then same selected values after second exit; not whole database semantics. First historical live-empty label corrected separately; no second-process pre-Quit empty-disk claim.",
+    "Original finite GUI passed only. Independent StoreIPC same-version market install, market native read/titleedit/export/newprocess explicitImport, exact original rollback/third original explicitImport, final normal Core/Store restarts, independent FINAL and Git publication still pending at this frozen phase. No accepted/pending count addition, Windows72/18 fields retained. Synthetic RSS/HTML/OPML are not independent applications.",
+    "Five actual original JPEGs:00defaultSSL diagnosis,01localfeedread,02titleedit/export,03newprocess synthetic tree clear,04explicit saved OPML import/read. No login images or market screenshots. About/direct Chinese keyboard/full browser navigation/authcookies/online services/Atom/broad RSS formats/complex nesting/search/categories/tags/printing/large-bad inputs/broad encoding/migration/unattended/GUI market buttons untested. Ordinary dialog moving and splitter widening are view actions, not repairs.",
+    "No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime repair, recovery, VM reboot or service restart in original QuiteRSS phase. Existing IAB2/tab2 loopback6096 retained, Edge3 not restored, no agent auth submit or viewport change. User-requested53B disabled-autolock config separately pinned; old auth/account/password held. No password/login image/private keys/credentials/full private CP/database/cookies/binaries/exact redirect query public. All old failures/root/signatures/trust/history retained, Ubuntu independent/no concurrent4GiB VMs.",
+    "This candidate preparation safe export V1 mistakenly inspected outer poll.events, actual outer list empty while complete poll.job.events held all three terminal kinds. Independent readonly actual full state and poll responses saved privately, V2 uses nested job.events and exact complete job equality. No new job/CP/restart/GUI from these observers. Host guessed missing static-v2 filename stopped reading before mutation; actual cache static file read afterward. Historical tool failures are retained, not application failures."
+  ]
+}

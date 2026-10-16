@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "applications": [
+    {
+      "id": "cdrtfe",
+      "version": "1.5.9",
+      "sha256": "d6683fce47b9c85d2077b1be3b424a4a42be989830f52783673e01e9d06a8470",
+      "size": 7444776,
+      "generationId": "gen-job-1791975365459-1",
+      "definitionDigest": "sha256:321fdcdcc89fbc20e212520bda9bfbc01159659efd4e9c22f505c324ae832f24",
+      "launcherSha256": "sha256:e2e6033383e0aaa2566802bf2c1fc06c7533b93a1d5e355e7a606c9e0a381714",
+      "guiFileOperation": "passed-limited-ASCII-two-BIN-references-volume-label-edit-native-CFP-and-files-save-new-empty-process-explicit-load",
+      "nativeOutputPins": {
+        "original.cfp": {
+          "sizeBytes": 3664,
+          "sha256": "bb9d5ae0f8c792887508345fa563b2eadc05a020e526d9f7b5cc755587411121"
+        },
+        "original.cfp.files": {
+          "sizeBytes": 166,
+          "sha256": "0a9d6e30e02bfa5a658aaea26d2f2ee816907eace78b74a697a94707d3f76ac2"
+        }
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "00-original-startup-error.jpg": {
+          "sizeBytes": 26141,
+          "sha256": "c641a0af228b069b2f2a7381ba71bca04a6ee0352dae6b530fc63c824a0ad15f",
+          "actualEncoding": "JPEG",
+          "evidenceRole": "native-startup-notice-diagnosis-only"
+        },
+        "01-original-two-input-references.jpg": {
+          "sizeBytes": 27561,
+          "sha256": "723834a2ae03543ba721acd4b2ba095f856a2f3fbaf9ef6aa56a5c40875447f8",
+          "actualEncoding": "JPEG",
+          "evidenceRole": "original-native-limited-operation"
+        },
+        "02-original-volume-after-native-save.jpg": {
+          "sizeBytes": 32165,
+          "sha256": "2f2b2fdba80de00b6fa4197565b89ccfe98b2fa4b3f863dae0b0b85c277e5053",
+          "actualEncoding": "JPEG",
+          "evidenceRole": "original-native-limited-operation"
+        },
+        "03-original-reopen-startup-warning.jpg": {
+          "sizeBytes": 26613,
+          "sha256": "0ac014fc30ac88040e5fe9b6bbd1ba8f38fe696956fed706d634687b38efee9b",
+          "actualEncoding": "JPEG",
+          "evidenceRole": "native-startup-notice-diagnosis-only"
+        },
+        "04-original-new-process-empty-list.jpg": {
+          "sizeBytes": 30619,
+          "sha256": "23e32cfe89c2c310205f6bf309be83024689f982352d5dd03cc6ee76172152ee",
+          "actualEncoding": "JPEG",
+          "evidenceRole": "original-native-limited-operation"
+        },
+        "05-original-explicit-load-saved-project.jpg": {
+          "sizeBytes": 32608,
+          "sha256": "ec0113361c9d97d6bfeaf51db5212c0c3922850c6d4ead43f3c1a10bbcbc5c2b",
+          "actualEncoding": "JPEG",
+          "evidenceRole": "original-native-limited-operation"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-14-cdrtfe-source.json",
+    "sha256": "c716eccd5953cb0ad6b7ee3c00b73efd13e6da044f3f6e499510a417cea970b2"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-14-cdrtfe-gui.json",
+    "sha256": "6e1322ff2c58ba48661a7b23a6bcbf5053baa3c68b6c17aa69d1c9eff2e5d0a4"
+  },
+  "limits": [
+    "Finite ASCII two-file Data Disc project references only. Two immutable35B original BIN fixtures via native MyComputer/C/CdrtfeTests file dialog, actual Shift multiselect after CtrlA did not establish double selection. Original-a.bin/original-b.bin sources shown. Only native root Set CD label changed CD to ORIGINAL42. Native Project/Save project as original.cfp3664B plus original.cfp.files166B, no host output editing. No actual optical disc write, CD/device/media detection, ISO production or tool execution acceptance.",
+    "Host independently rebuilt all166 bytes of CFP.files from immutable ASCII input names, ORIGINAL42 label and fixed selected source structure. File list ASCII/noBOM/9CRLF; CFP ASCII/noBOM/295CRLF and selected Data-CD VolId ORIGINAL42 via independent ConfigParser. CFP full serialization/settings semantics and complete format unverified. Input BIN bytes held; synthetic BIN/CFP are not independent applications.",
+    "Second formal original process started fresh default CD root and empty file list, no automatic saved project restoration. Native Project/Load project explicitly doubleclicked original.cfp, restored ORIGINAL42 and exact two referenced sources. Actual Load dialog started CdrtfeTests; no claim that every process always remembers Save directory or that dialog-path cause was established. Default AutoSaveOnExit False declared in selected source and unchanged in native project. No host config reset or source/program repair.",
+    "Both original jobs job-1791975506632-2 and job-1791976591152-3 on sole ready gen-job-1791975365459-1 ended normally via native alt+F4. Complete nested job.events succeeded/exited.exit code0 successTrue/wine-server-stop-requested and separate ps noWine, full573Core/166StoreSQLite old fields held. Exit0 alone not acceptance. Title-X and initial File-menu interactions did not establish exit; Alt-L-f opened mkisofs Options, normal Cancel retained defaults. No actual Start/burn invoked.",
+    "Both formal launches first showed native severe component incompatibility or cygwin1.dll/version error notice; native OK then actual Data Disc editor usable. This remains an unresolved startup warning, not silent or unattended support. No exact runtime function, dynamic call trace, specific DLL root cause, actual optical/tool functionality or repair claim. Initial parent observer incorrectly assumed OK would quit and save editor-not-reached; running assertion stopped before state/CP, actual running job raw saved. Independent complete readonly live observation only whitelisted the sole running original job; no terminal CP or repeated launch from that recovery.",
+    "Official website setup/source1.5.9 fixed links observed via web tool, not raw HTML. SourceForge fixed directory also lists newer1.5.9.1, not selected; no latest claim. Installer7444776B SHAd6683fce47b9c85d2077b1be3b424a4a42be989830f52783673e01e9d06a8470 and source555044B SHA8108c91ecb84deabc7f72919d8e5825ed8366806ebc8f001b19dfa8e407e20eb, complete HTTPS200/ContentLength. Only local SHA, upstream digest/PGP/Authenticode/repro/source-binary/latest unverified. Both GET terminal before once original install; first complete partials/cache kept, no repeated GET.",
+    "RAR288unique227regular/safe paths and actual7Zip t exit0,16 selected raw files, not all source manual review. Main cdrtfe.dpr GPL2-or-later; license.txt adds LGPL/MPL1.1/CDDL combination exception and source conditions. Installed doc/license/COPYING.txt18332B exactly equals all selected source COPYING bytes; main special-exception license file not separately compared as installed named text. Full Delphi VCL/JCL/JVCL/Imaging/Mustangpeaks/Cygwin/cdrtools/m2cdm/flac/lame/mpg123/vorbis/tools/icons/translations license closure unverified. No entire Windows bundle GPL closure or public binary redistribution claim.",
+    "Actual two Inno5.5.7 data markers/bootstrap/mainPE14c. Fixed1.5.9 source cdrtfe.iss still defines1.5.8 and commentInno5.5.9, raw retained, no corresponding-package script claim. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:one-backslashCdrtfe /NOICONS /TASKS= /LANG=en; DIR14UTF8 hex2f4449523d433a5c436472746665. Default components retained, no patched-tools selection. Static admin/shell extensions/tasks not real Windows UAC/association/shortcut/uninstall proof. Main cdrtfe.exe2174928B SHAe2e6033383e0aaa2566802bf2c1fc06c7533b93a1d5e355e7a606c9e0a381714 is32bit, not entire app size.",
+    "All140 initial program files held across both original GUI/exits. Selected7 only three registries and four fixed BIN/CFP files. Actual registry before/after raw and UTF8 differences private; both system.reg/user.reg changed, causes/key-value equivalence unknown, userdef held. Not old registry/config bytes same across GUI and not full filesystem/config inventory. Bounded prefix-user/ProgramData cdrtfe-named discovery found none during second live read, not full FS absence or proof of creation time. Recent64IPC not full StoreSQLite; queries can write existing scratch.",
+    "Complete original terminal CP after-original-reopen-native-exit SHAe2515e322dcb91dff90757da3a07857f13c50087d6b934a3c9481e1b5dbbfbac and readonly V2 helper preserve both QuiteRSS99/all15 each plus SynWrite and every earlier fixed-data range, auth/boot/disabled-autolock53B and unchanged service PIDs/binary. Private fullCP, raw DB/cookies/auth, credentials/private keys/login images/exact redirect query and installer/program bytes not public. New library cannot substitute older low counts.",
+    "Six actual JPEGs:00 and03 startup notices diagnostic only,01 original two file references,02 volume after save,04 second fresh empty list,05 explicit Load Project. No login or market images. First native maximize showed transient blank regions until menu/repaint, native restore and noVNC side-panel overlap/folding only view actions, not application repair. Experimental browser clipped screenshot showed a dark crop in tool history; later explicit full614x672 screenshots used without viewport setting change, none of those dark crops were saved as these JPEGs.",
+    "Independent StoreIPC same-version market install, market GUI/native save/newprocess explicit Load, exact original rollback/third original Load, final normal Core/Store restarts, independent FINAL and Git publication pending at this frozen phase. Windows73 accepted and18 queue all old fields retained, no count addition. Candidate preparation and signing/preview are not completed acceptance. No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime fix, recover, VM reboot, auth submit or original-phase service restart.",
+    "Full recorder/audio/video/XCD/DAE/disc/device/ISO/burn/boot/multisession/advanced settings/large-bad inputs/broad formats/Unicode paths/direct Chinese keyboard/About/printing/background network exclusion/online services/migration/unattended/GUI market buttons untested. Default English and finite ASCII workflows only. Ubuntu independent/no concurrent4GiB VMs, old failures/licences/root/signatures/trust/cache held, Greenfish and CopyQ restrictions unchanged.",
+    "Host source-list V1 assumed LF separator but actual7Zip output CRLF: IndexError before archive test/source inventory/extraction/guest install. Original stdout/stderr raw held; V2 diagnostic newline normalization only, raw unchanged. Selected-source V1 any-later-version contiguous substring failed after12 raw copies because linewrapped; V2 diagnostic whitespace normalization and actual old iss version recorded, all source raw retained. Those direct-command exact stderr and quoting/rg failures only tool history, not fabricated saved raw. Parent inline python-c shell quotation SyntaxError and Windows rg wildcard error did not alter guest or count. Every failed gate stopped dependencies until actual diagnostics; no wildcard or reinstall recovery."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

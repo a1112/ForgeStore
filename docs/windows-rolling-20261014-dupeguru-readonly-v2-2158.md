@@ -1,0 +1,21 @@
+# dupeGuru 4.3.1 Windows 登记入口只读诊断（2026-10-14 Asia/Shanghai，21:58 UTC 轮）
+
+本V2只更正函数归属：generation状态由lifecycle.finish写，job状态由jobs.poll接收Err后写。首11清单及全部原raw另存私有，首报告公共raw保持；无客体状态/计数/CP/restart变化。
+
+本轮未新增安装或验收：Windows70/1000、18pending全部旧字段保持。原job-1791927518934-1/gen-job-1791927518934-1、definition sha256:38d95e2c2b93929d2ccfdda45be61c250b7f7061c1ba18765c3f4f735cbb832a保持failed，仍无ready代次/GUI/市场。
+
+实际只读确认声明入口DupeGuru/dupeGuru-win32.exe的第一个缺失组件是drive_c/DupeGuru，errno2；此前每个祖先均真实目录、无symlink。实际默认目录Program Files (x86)/Hardcoded Software/dupeGuru中的dupeguru-win32.exe为常规PE0x14c、3374518B、SHAf650922fb2723ece734fb0a554e53da842cb6c693a6374f4201b35337f1e4d0c。即使只改目录，模板大小写dupeGuru-win32.exe在相同Linux目录仍缺失，实际main小写。此为Linux精确文件名/路径观察，不称Windows/Wine通用大小写或已修复。
+
+运行Core MainPID的/proc/exe实测SHA4dcf174ea80934e2d87fa47fbe17fee3fb308e00d7ff820c2e8c4aa06f4f8818，与历史已审Artha构建收据和sourceArchiveSHA91f786cd32e8bd445edbfad383ee47fb682c54be02459daf779627f88e89c1da关联相同。选定jobs.rs/lifecycle.rs/registry.rs三份完整源raw保存；不是重新构建、可复现证明或全部源人工审查。
+
+源码静态数据流：jobs poll在supervisor清理后写terminal记录并调用lifecycle.finish；安装进程Succeeded分支先核不可变definition的launcher_digests，再能写Ready/选代次。launcher_path拼prefix/drive_c+executable；check_path allow_missing=false逐symlink_metadata，缺组件映射RegistryError::Io，其Display是registry I/O failed；lifecycle.finish将generation置Failed、保持空launcherDigests并返回RegistryError；jobs.poll接收该Err后再将job置Failed/error。实际缺声明目录与此分支吻合。这是已固定源码加本次Python lstat只读类比，未获取原Core syscall/调用栈或安装器动态trace，不宣称历史唯一具体函数根因。NSIS MultiUser为何未采用/D、完整安装命令行契约仍未定。三个Wine registry存在，错误不当其丢失。
+
+不改Core/program/runtime/globalcontext/正式definition/launcher/env/cwd、globalDLL/font/安全设置；不重装、改flags、复制程序到期望目录、直接promote/ready或recover。不创建新任务/夹具/GUI/市场/签名，不因文件存在/exit0增加完成。原pending队列字段含原blocker说明保持，新的路径诊断只另记。
+
+诊断前后完整549Core/160SQLite七类全部字段与同一私有CP匹配，620程序/三registry/旧固定验收pins保持，无新CP/restart/VMreboot。唯一current helper仍rolling-current-state-dupeguru-pending-20261014.py SHA88cfcd27563c34334974e0d571273eeb646ae77c3c0788ce315dfcbd9e8026a5，经rolling-guest-20261010.py严格SSHstdin；私有after-failed-install-final-restart-readonly-v2.json SHAdded25331a5ad60c389ea16c9ddd429cd6a1f03deaa553d43386d3fbba26b73d不入库。最近64IPC不代替fullSQLite、query可写已有scratch；保存诊断record非CP，非全FS零写/遍历。
+
+当前candidate-v79/root1/role88/72entries=70apps2fixtures/152targets83公共JSON保持，dupeGuru仍不在目录。原所有错误/helper/签名/root/trust/freeze/report/UTC日期更正历史保持。原maincheckout源码旧，不误当已部署；猜路径及Windows literalglob rg错误只是工具历史，后按实际已保存sourcearchive继续，无补造exactraw。原安装包/source完整缓存不再GET，历史构建测试未重跑，本轮没有新构建测试。
+
+Ubuntu台账/计划新鲜读，KateAPT/Snap两款独立与Flatpak两timeout/cache保持，本轮无UbuntuVM/两4GiB并发/切换。无browser/密码/auth/power动作；原Edge/noVNC回环页面保持，私有CP/keys/credentials/password/login图/exactredirectquery不公共。GreenfishEULA/shader、CopyQnotifications/globalDLL、Zim/Aegisub/Texmaker、Artha93650及Provider未部署边界保持；旧Scribus一份private exactraw丢失不伪造。完整duplicatefinder/原中文GUI/扫描/保存重开/市场等仍全部未验收。
+
+独立FINAL和Git字节审计另记。本轮仅定位登记入口存在性与静态失败分支，不能提升原失败代次；下轮另选官方fixed候选，或继续有界只读核NSIS实际命令行行为。

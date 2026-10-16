@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "environment": "Original ForgeOS KVM Wine11.14 win64; Core launcher-cwd-v11-r1 and Store managed-msi-v2",
+  "applications": [
+    {
+      "id": "codeblocks",
+      "version": "25.03",
+      "sha256": "1b730f9c279f1babfdef92507078913df18cff9bbabc14dc69c2abe6628a94ed",
+      "size": 52312086,
+      "generationId": "gen-job-1791819425665-1",
+      "definitionDigest": "sha256:0e9ab1ff009ea88c328f49e3afcdcdf5a8064fb9fff21d3b8769a47209fd7005",
+      "launcherSha256": "sha256:d9b66585e73dda187ef1504b7ac7c5b88e6b18f7b0f3601c9f677b55e30132b0",
+      "guiFileOperation": "passed-limited-source-open-replace-append-native-c-save-fresh-open-with-unrepaired-startup-assert",
+      "save": {
+        "defaultFilterDiagnosticOutputPreserved": true,
+        "readOnly": true,
+        "generationId": "gen-job-1791819425665-1",
+        "job": {
+          "applicationId": "codeblocks",
+          "createdAtMilliseconds": 1791819731562,
+          "events": [
+            {
+              "elapsedMilliseconds": 0,
+              "kind": "started",
+              "processId": 18197,
+              "requestId": "job-1791819731562-2",
+              "schemaVersion": "1",
+              "sequence": 0
+            }
+          ],
+          "generationId": "gen-job-1791819425665-1",
+          "id": "job-1791819731562-2",
+          "inspection": {
+            "architecture": "x86_64",
+            "entryPointRva": 4342,
+            "fileDigest": "sha256:d9b66585e73dda187ef1504b7ac7c5b88e6b18f7b0f3601c9f677b55e30132b0",
+            "fileSizeBytes": 2845198,
+            "format": "pe32Plus",
+            "imageKind": "executable",
+            "importLibraries": [
+              "api-ms-win-crt-convert-l1-1-0.dll",
+              "api-ms-win-crt-environment-l1-1-0.dll",
+              "api-ms-win-crt-heap-l1-1-0.dll",
+              "api-ms-win-crt-locale-l1-1-0.dll",
+              "api-ms-win-crt-math-l1-1-0.dll",
+              "api-ms-win-crt-multibyte-l1-1-0.dll",
+              "api-ms-win-crt-private-l1-1-0.dll",
+              "api-ms-win-crt-runtime-l1-1-0.dll",
+              "api-ms-win-crt-stdio-l1-1-0.dll",
+              "api-ms-win-crt-string-l1-1-0.dll",
+              "api-ms-win-crt-time-l1-1-0.dll",
+              "api-ms-win-crt-utility-l1-1-0.dll",
+              "codeblocks.dll",
+              "comctl32.dll",
+              "exchndl.dll",
+              "kernel32.dll",
+              "shell32.dll",
+              "shfolder.dll",
+              "user32.dll",
+              "wxmsw32u_gcc_custom.dll"
+            ],
+            "machineCode": 34404,
+            "schemaVersion": "1",
+            "sections": [
+              {
+                "executable": true,
+                "name": ".text",
+                "rawDataSize": 1822208,
+                "readable": true,
+                "virtualAddress": 4096,
+                "virtualSize": 1822096,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".data",
+                "rawDataSize": 2048,
+                "readable": true,
+                "virtualAddress": 1826816,
+                "virtualSize": 1568,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rdata",
+                "rawDataSize": 305152,
+                "readable": true,
+                "virtualAddress": 1830912,
+                "virtualSize": 304856,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": "/4",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 2138112,
+                "virtualSize": 4,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".pdata",
+                "rawDataSize": 117248,
+                "readable": true,
+                "virtualAddress": 2142208,
+                "virtualSize": 117048,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".xdata",
+                "rawDataSize": 178176,
+                "readable": true,
+                "virtualAddress": 2260992,
+                "virtualSize": 177808,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".bss",
+                "rawDataSize": 0,
+                "readable": true,
+                "virtualAddress": 2441216,
+                "virtualSize": 62252,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".edata",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 2506752,
+                "virtualSize": 431,
+                "writable": false
+              },
+              {
+                "executable": false,
+                "name": ".idata",
+                "rawDataSize": 136704,
+                "readable": true,
+                "virtualAddress": 2510848,
+                "virtualSize": 136436,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".tls",
+                "rawDataSize": 512,
+                "readable": true,
+                "virtualAddress": 2650112,
+                "virtualSize": 16,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".rsrc",
+                "rawDataSize": 246272,
+                "readable": true,
+                "virtualAddress": 2654208,
+                "virtualSize": 246192,
+                "writable": true
+              },
+              {
+                "executable": false,
+                "name": ".reloc",
+                "rawDataSize": 34816,
+                "readable": true,
+                "virtualAddress": 2904064,
+                "virtualSize": 34672,
+                "writable": false
+              }
+            ],
+            "subsystem": "windowsGui",
+            "subsystemCode": 2
+          },
+          "kind": "launch",
+          "launchPlan": {
+            "bottleExecutable": {
+              "architecture": "x86_64",
+              "bottleId": "gen-job-1791819425665-1",
+              "digest": "sha256:d9b66585e73dda187ef1504b7ac7c5b88e6b18f7b0f3601c9f677b55e30132b0",
+              "imageKind": "executable",
+              "inspectionSchemaVersion": "1",
+              "originalName": "codeblocks.exe",
+              "path": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791819425665-1/prefix/drive_c/CodeBlocks/codeblocks.exe",
+              "sizeBytes": 2845198,
+              "subsystem": "windowsGui"
+            },
+            "decisionTrace": [
+              "runtime provider wine-linux-x86-64-preview selected as wine",
+              "translator native selected",
+              "graphics backend wined3d selected",
+              "runtime pack wine-linux-x86-64-local-preview pinned by digest",
+              "Bottle CJK font pinned by digest",
+              "bottle-executable sha256:d9b66585e73dda187ef1504b7ac7c5b88e6b18f7b0f3601c9f677b55e30132b0 pinned in place",
+              "inspection x86_64 windowsGui accepted"
+            ],
+            "graphics": {
+              "backend": "wined3d",
+              "version": "11.14"
+            },
+            "lifecycle": {
+              "terminationGraceMilliseconds": 3000,
+              "wineserver": {
+                "executable": "/usr/bin/wineserver",
+                "prefix": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791819425665-1/prefix"
+              }
+            },
+            "process": {
+              "arguments": [
+                "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791819425665-1/prefix/drive_c/CodeBlocks/codeblocks.exe"
+              ],
+              "environment": {
+                "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+                "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+                "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+                "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+                "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+                "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+                "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+                "DISPLAY": ":0",
+                "LANG": "C.UTF-8",
+                "LC_ALL": "C.UTF-8",
+                "WINEARCH": "win64",
+                "WINEDEBUG": "-all",
+                "WINEDLLOVERRIDES": "mscoree,mshtml=",
+                "WINEPREFIX": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791819425665-1/prefix",
+                "WINESERVER": "/usr/bin/wineserver",
+                "XAUTHORITY": "/run/user/1000/xauth_DfByvK"
+              },
+              "executable": "/usr/bin/wine",
+              "workingDirectory": "/home/forge/.local/share/compatforge/storage/bottles/gen-job-1791819425665-1"
+            },
+            "requestId": "job-1791819731562-2",
+            "runtime": {
+              "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+              "packId": "wine-linux-x86-64-local-preview",
+              "provider": "wine"
+            },
+            "sandbox": {
+              "network": "deny",
+              "profile": "desktop"
+            },
+            "schemaVersion": "1",
+            "translator": {
+              "provider": "native"
+            }
+          },
+          "schemaVersion": "1",
+          "status": "running",
+          "updatedAtMilliseconds": 1791819733701
+        },
+        "fixedDataPins": {
+          "drive_c/CodeBlocksTests/原始代码.cpp": {
+            "sizeBytes": 112,
+            "sha256": "f6078940fe846b6748dfbc9467e918073bbbadfc47e6274e5832588d669672c4"
+          },
+          "drive_c/CodeBlocksTests/original.c": {
+            "sizeBytes": 126,
+            "sha256": "fb7dc66cb00422a48a7d8171f9c1410c6d1556ff16d25138f41c7b4477e47654"
+          }
+        },
+        "finiteIndependentChecks": {
+          "actualImmutableInputReconstructionMatchesWholeOutputBytes": true,
+          "utf8BomPreserved": true,
+          "crlfCount": 8,
+          "decodedText": "// STATUS AFTER\r\n// ORIGINAL SOURCE\r\n// 中文内容：保存与重开。\r\nint main()\r\n{\r\n    return 0;\r\n}\r\n// ORIGINAL42\r\n",
+          "sizeBytes": 126,
+          "compilerExecuted": false
+        },
+        "outputRawBase64": "77u/Ly8gU1RBVFVTIEFGVEVSDQovLyBPUklHSU5BTCBTT1VSQ0UNCi8vIOS4reaWh+WGheWuue+8muS/neWtmOS4jumHjeW8gOOAgg0KaW50IG1haW4oKQ0Kew0KICAgIHJldHVybiAwOw0KfQ0KLy8gT1JJR0lOQUw0Mg0K",
+        "programFileCount": 1723,
+        "allProgramPinsPreserved": true,
+        "checkpointWritten": false,
+        "serviceRestarted": false,
+        "guiFreshReopenAccepted": false,
+        "published": false
+      },
+      "normalQuitExitCodes": [
+        0,
+        0
+      ],
+      "screenshots": {
+        "codeblocks-01-compiler-detection-diagnostic-20261012.jpg": {
+          "sizeBytes": 56092,
+          "sha256": "990f0abff214f8280d2e9fb241da0eb92ba0fc677737c48176ed9953fc968dd1",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-02-toolbar-assert-diagnostic-20261012.jpg": {
+          "sizeBytes": 49254,
+          "sha256": "71587f2949c7bfddde0ed05675cb6319c71def451165e8474fad1c48d38f9ae8",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-03-file-association-diagnostic-20261012.jpg": {
+          "sizeBytes": 71518,
+          "sha256": "572dd44b6fad3587853a7204afa83470f5e089145b017fc4950053212345874d",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-04-original-input-20261012.jpg": {
+          "sizeBytes": 61325,
+          "sha256": "abe3f06ae3e320b223bb66010cd8255b995bbb3ed7b565328fa7203629d50e14",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-05-original-saveas-20261012.jpg": {
+          "sizeBytes": 55900,
+          "sha256": "467911fe9fd47e6f0743c740a9a4fdba7f48ad9a1b247fa5a00119759fbf1e7b",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-05b-original-saveas-allfiles-20261012.jpg": {
+          "sizeBytes": 55712,
+          "sha256": "1473ee49951750fde8f6bafe5d3afa33f46df325848c0d437467b0dd0c552c6e",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-05c-original-saveas-c-20261012.jpg": {
+          "sizeBytes": 55646,
+          "sha256": "acdbe97d5cfd3112cbd2e81970368c592125646fe1cde6be95766f00132d5773",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-06-original-about-20261012.jpg": {
+          "sizeBytes": 73329,
+          "sha256": "e6a6b8cc87fd2d47db39c011824f2b6c69f6dd06c1837f44bf6a7ee2693e1542",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-07-reopen-toolbar-assert-20261012.jpg": {
+          "sizeBytes": 58710,
+          "sha256": "ad68a31dad1a7c79ba4ede2d8f6c112ec5ec7528df706a1953bdd93e89956fc6",
+          "actualEncoding": "JPEG"
+        },
+        "codeblocks-08-original-newprocess-open-20261012.jpg": {
+          "sizeBytes": 61173,
+          "sha256": "68f53967aa3a5aa511d9e12fbb4a1193921b0550050229ffaa2d1a68d8bd48e7",
+          "actualEncoding": "JPEG"
+        }
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "reference": "2026-10-12-codeblocks-source.json",
+    "sha256": "c94c15bb8cbc6ab41ba484cc184df74708a785cd11d224d03a3254a973dd7df3"
+  },
+  "guiEvidence": {
+    "reference": "2026-10-12-codeblocks-gui.json",
+    "sha256": "b1b9b139c48a6a1f217a2ab2cd5d15acefa0b6c77d4231823a63596403863489"
+  },
+  "failuresEvidence": {
+    "reference": "2026-10-12-codeblocks-failures.json",
+    "sha256": "b58e26bef0b339524bfeb42f885cdbc99d87939631752447ee16482a8df969c0"
+  },
+  "limits": [
+    "Chinese-name tiny UTF8BOM/CRLF C++ source native Open from C-drive tree; current-file Search/Replace STATUS BEFORE to AFTER with Yes one occurrence; native EOF ASCII comment append; Save file as ASCII original.c using All files; new formal process CtrlO native chooser retained CodeBlocksTests, explicit doubleclick original.c. No compiler execution.",
+    "Only native current-file literal replacement, EOF ASCII comment, SaveAs original.c and explicit fresh Open; not complete C/C++ formats or IDE. Original112B input remains; output126B UTF8BOM/eightCRLF exact full byte reconstruction. Synthetic source not separate application.",
+    "Both original formal processes toolbar Realize bitmap debug assertion acknowledged normally; second hidden behind splash required native window move. Warning remains unrepaired; do-not-show unchecked. Missing compiler detected; GNU GCC invalid default retained. No compiler package/build/debug/run/project acceptance.",
+    "SaveAs original.cpp created original.cpp.c; All files cpp path triggered file-exists No; diagnostic bytes retained. Precise cpp SaveAs unaccepted, tested original.c output only.",
+    "Native file-association default No unchanged; key-binding preservation warning and missing SpellChecker thesaurus kept; normal Quit layout prompt No with do-not-annoy unchecked. No global suppression or plugin disable.",
+    "Original About25.03 Mar30 2025 15:32:43 wxWidgets3.2.7 gcc14.2.0 Windows/unicode64 observed; build compiler string not installed compiler proof; market About untested. Default Chinese readable; no new fonts.",
+    "Main fixed source GPLv3-only; SDK LGPLv3-only; Scintilla component separate. No installed main named-license comparison or complete bundled closure, signature, source-binary correspondence, reproducible/latest verification. Installer digest matches exact raw official UTF16 manifest; source published SHA observation web text not raw HTML.",
+    "No project, compile/link/build/debug/program execution, broad syntax/parser semantics, compiler config, templates, plugins/scripts, multiple documents, large bad files, other encodings, printing, direct Chinese typing, full-path chooser, guest download/new registration/migration/cross-version/unattended or GUI market buttons. No background-network absence claim.",
+    "No Core/program/globalcontext/definition/launcher environment or workingDirectory/font/DLL/runtime repair. Native path selection/current directory behavior is not launcher repair.",
+    "Independent market update/exact rollback/final restart pending at original freeze, completed evidence separate."
+  ],
+  "marketLifecyclePendingAtFreeze": true,
+  "publicationEvidenceSeparate": true
+}

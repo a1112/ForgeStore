@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "reviewFinding": "Initial prose attributed both generation and job failure writes to lifecycle.finish; source has two separate steps",
+  "actualLifecycleFinishLines": {
+    "sourceReference": "dupeguru-readonly-20261014-2158/core-reviewed-source/crates/compatforge-service/src/lifecycle.rs",
+    "generationFailedAndErrorReturned": [
+      401,
+      445
+    ]
+  },
+  "actualJobsPollLines": {
+    "sourceReference": "dupeguru-readonly-20261014-2158/core-reviewed-source/crates/compatforge-service/src/jobs.rs",
+    "jobFailedAndErrorStoredAfterFinishErr": [
+      714,
+      717
+    ]
+  },
+  "initial11ProspectiveManifestAndAllActualRawPreservedPrivately": true,
+  "firstPublicReportRawPreserved": true,
+  "firstReportPin": {
+    "sizeBytes": 4209,
+    "sha256": "7959bd03cd10e591cc24d7c42e9a0d0c27207c5bbfe69278c90ef3453dfd02b8"
+  },
+  "correctedReportPin": {
+    "sizeBytes": 4509,
+    "sha256": "5af1bc748e1c076706cc5af4059894de7b6f74a74aff9eab3e2d79092cf35195"
+  },
+  "originalManifestSha256": "d3ea0aa19da81ed100ab90b2ae2d7091f6305d4aefbd620b05545fa50fd9ac12",
+  "noGuestStateCounterCheckpointRestartDefinitionOrCodeChange": true,
+  "staticBranchInferenceStillLimitedNoOriginalRuntimeCallStackOrInstallerTrace": true
+}

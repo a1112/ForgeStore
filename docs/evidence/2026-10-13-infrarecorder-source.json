@@ -1,0 +1,195 @@
+{
+  "applicationId": "infrarecorder",
+  "fixedVersion": "0.53",
+  "downloadTerminal": {
+    "passed": true,
+    "allDownloadRoutesTerminal": true,
+    "results": {
+      "ir053.exe": {
+        "passed": true,
+        "file": "ir053.exe",
+        "requestedUrl": "https://downloads.sourceforge.net/project/infrarecorder/InfraRecorder/0.53/ir053.exe",
+        "status": 200,
+        "sizeBytes": 4151536,
+        "contentLength": 4151536,
+        "sha256": "8cee83f7f489a6aef4218a953b87b1c22d6a93c966e79275c8cb2abe830d0731",
+        "fullHttpsGetTerminal": true,
+        "elapsedSeconds": 1.969,
+        "upstreamSha256Verified": true,
+        "officialMd5MatchedWeakOnly": true
+      },
+      "ir053_src.zip": {
+        "passed": true,
+        "file": "ir053_src.zip",
+        "requestedUrl": "https://downloads.sourceforge.net/project/infrarecorder/InfraRecorder/0.53/ir053_src.zip",
+        "status": 200,
+        "sizeBytes": 8370542,
+        "contentLength": 8370542,
+        "sha256": "e06fe21f65c094043b1ced6ac1995fce6946416070480318025b5fdc5844962f",
+        "fullHttpsGetTerminal": true,
+        "elapsedSeconds": 73.922,
+        "upstreamSha256Verified": false,
+        "officialMd5MatchedWeakOnly": true
+      }
+    },
+    "sourceFixedVersion": "0.53",
+    "noApplicationDefinitionTaskInstallGuiOrPublication": true
+  },
+  "downloadPhaseHistoricalFlagsNotCurrentInstallState": true,
+  "officialSourceDiscovery": {
+    "passed": true,
+    "applicationId": "infrarecorder",
+    "version": "0.53",
+    "officialDownloadPage": "https://infrarecorder.org/?page_id=5",
+    "officialFixedDirectory": "https://sourceforge.net/projects/infrarecorder/files/InfraRecorder/0.53/",
+    "observedAsWebToolTextNotOriginalHtml": true,
+    "officialPageMainLicenseStatement": "GPL version 3",
+    "urls": {
+      "ir053.exe": "https://downloads.sourceforge.net/project/infrarecorder/InfraRecorder/0.53/ir053.exe",
+      "ir053_src.zip": "https://downloads.sourceforge.net/project/infrarecorder/InfraRecorder/0.53/ir053_src.zip"
+    },
+    "officialMd5": {
+      "ir053.exe": "55b8e85efd9731d7b9d5f5f7e4de5a2d",
+      "ir053_src.zip": "31daa3bd789797ede6097d210c61b1bb"
+    },
+    "officialSourceForgeDisplayedSha256": {
+      "ir053.exe": "8cee83f7f489a6aef4218a953b87b1c22d6a93c966e79275c8cb2abe830d0731"
+    },
+    "md5NotStrongAuthenticity": true,
+    "sourceUpstreamSha256NotVerified": true,
+    "officialPageWebOpenTimeoutToolHistoryOnly": true,
+    "noProgramDownloadDefinitionTaskInstallGuiYet": true
+  },
+  "sourceArchiveSummary": {
+    "uniqueMembers": 681,
+    "regularFiles": 625,
+    "allZipCrcPassed": true
+  },
+  "staticInspection": {
+    "passed": true,
+    "installerType": "Nsis",
+    "bootstrapPeMachine": "0x14c",
+    "actualListSizeBytes": 13974,
+    "actualListSha256": "5b7d6c716bee4ea50c710228c721212164aef066a706c5c2555a5a64582c95dd",
+    "actualSevenZipExit": 0,
+    "existingIsolatedToolUsed": true,
+    "fullInstallerBehaviorNotVerified": true,
+    "priorHostFixedToolPathAssertionStoppedBeforeTransferOrTask": true,
+    "priorHelperSha256": "98fe9289e167795d3de74937cd5e87a0aa7665856b6f3892c970cd0ebf9141a7",
+    "priorFailureExactRawToolHistoryOnly": true,
+    "sourceInventoryPreserved": true,
+    "noPackageRepeatGet": true
+  },
+  "selectedSourcePins": {
+    "readme.txt": {
+      "sizeBytes": 2200,
+      "sha256": "4acb4cf0bd3df2bf445c17e9aa15f8633f8431557b2043b9b562c0608bae974a"
+    },
+    "license.txt": {
+      "sizeBytes": 35821,
+      "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+    },
+    "license.rtf": {
+      "sizeBytes": 38675,
+      "sha256": "af25be3905760f36b8b66644223aae57dd92596406d6bd83f91b145d223938f3"
+    },
+    "src/app/infrarecorder.cc": {
+      "sizeBytes": 14519,
+      "sha256": "ba14a416fa1f34b35cdab1f4b99bb9a01aab6b394d609d069b101d6a710a3933"
+    },
+    "src/app/version.hh": {
+      "sizeBytes": 1968,
+      "sha256": "278f79f03eef3e5bedce0244a528b4fa1f7c005d671c9fb2fe14576b0d35e451"
+    },
+    "src/setup/setup_nsis.nsi": {
+      "sizeBytes": 67935,
+      "sha256": "d32dad79dd9731e529370e922ac0b6ff08dc53504fa064e037bb0c3945f6abd5"
+    },
+    "src/app/project_manager.cc": {
+      "sizeBytes": 78318,
+      "sha256": "d6bdfbc15f3cd74e85baf7906c407626993a045192c2b0b0461adc676a872b9c"
+    },
+    "src/app/project_manager.hh": {
+      "sizeBytes": 7787,
+      "sha256": "6659572228a0e2c5c1b726b8c0cd85fd465852074e420ec1c9e9fbdbfe5502b0"
+    },
+    "src/app/dialog/project_prop_fields_page.cc": {
+      "sizeBytes": 7242,
+      "sha256": "34e46891b47aa46aae240d04d7ec0cc8d4749873092100d1e792adaa086481d0"
+    },
+    "src/app/dialog/main_frm.cc": {
+      "sizeBytes": 125147,
+      "sha256": "f66e96990199f2b007d8037d0cfe5509fa4fd858bc447af9be91f44eb833a057"
+    },
+    "src/app/control/project_tree_view_ctrl.cc": {
+      "sizeBytes": 7173,
+      "sha256": "a8a8359b03e8d367d9a0c525d567243a3e0645653a4430487df3d99638c94e6b"
+    },
+    "src/app/settings.cc": {
+      "sizeBytes": 18424,
+      "sha256": "10e826c0fee9f9e61b1afcda03f6d379929d0f3a40b5305e3827ca54cf53c2ef"
+    },
+    "doc/english/infra_recorder/license_agreement.html": {
+      "sizeBytes": 37923,
+      "sha256": "8e87199e2c737f44aa6a0642b564fbe5cfcd174d3eaea3d06389301fa363a8e8"
+    },
+    "src/app/registry.cc": {
+      "sizeBytes": 5280,
+      "sha256": "9c57505f68bb8f5375908e67719684c78af0e42005f0f0e7f564698cba7d1b00"
+    },
+    "src/app/tree_manager.cc": {
+      "sizeBytes": 64325,
+      "sha256": "26159561f9bdb629c7966a57d2183583d3861dab179c7f4707c5f6789ee822c4"
+    },
+    "src/base/xml_processor.cc": {
+      "sizeBytes": 21292,
+      "sha256": "365ebd5952aba3a8650a34c04f8932dcf4cfffb39e8ca225d7db37c1e7407ca2"
+    },
+    "src/app/dialog/project_prop_general_page.cc": {
+      "sizeBytes": 6864,
+      "sha256": "a83efe3d16453cd22ca039df573f9b78846c52c9d1dd9eb1259baed474b5441e"
+    },
+    "doc/english/infra_recorder/installation.html": {
+      "sizeBytes": 992,
+      "sha256": "e95d10782751b7a177916becacbc0846832409699868b3453a8b052a40905698"
+    }
+  },
+  "sourceReferences": {
+    "readme.txt": "infrarecorder-20261013/source/readme.txt",
+    "license.txt": "infrarecorder-20261013/source/license.txt",
+    "license.rtf": "infrarecorder-20261013/source/license.rtf",
+    "src/app/infrarecorder.cc": "infrarecorder-20261013/source/src/app/infrarecorder.cc",
+    "src/app/version.hh": "infrarecorder-20261013/source/src/app/version.hh",
+    "src/setup/setup_nsis.nsi": "infrarecorder-20261013/source/src/setup/setup_nsis.nsi",
+    "src/app/project_manager.cc": "infrarecorder-20261013/source/src/app/project_manager.cc",
+    "src/app/project_manager.hh": "infrarecorder-20261013/source/src/app/project_manager.hh",
+    "src/app/dialog/project_prop_fields_page.cc": "infrarecorder-20261013/source/src/app/dialog/project_prop_fields_page.cc",
+    "src/app/dialog/main_frm.cc": "infrarecorder-20261013/source/src/app/dialog/main_frm.cc",
+    "src/app/control/project_tree_view_ctrl.cc": "infrarecorder-20261013/source/src/app/control/project_tree_view_ctrl.cc",
+    "src/app/settings.cc": "infrarecorder-20261013/source/src/app/settings.cc",
+    "doc/english/infra_recorder/license_agreement.html": "infrarecorder-20261013/source/doc/english/infra_recorder/license_agreement.html",
+    "src/app/registry.cc": "infrarecorder-20261013/source/src/app/registry.cc",
+    "src/app/tree_manager.cc": "infrarecorder-20261013/source/src/app/tree_manager.cc",
+    "src/base/xml_processor.cc": "infrarecorder-20261013/source/src/base/xml_processor.cc",
+    "src/app/dialog/project_prop_general_page.cc": "infrarecorder-20261013/source/src/app/dialog/project_prop_general_page.cc",
+    "doc/english/infra_recorder/installation.html": "infrarecorder-20261013/source/doc/english/infra_recorder/installation.html"
+  },
+  "installedLicenseReference": "infrarecorder-20261013/installed-license.txt",
+  "installedLicenseComparison": {
+    "sameAllRawBytes": true,
+    "sizeBytes": 35821,
+    "sha256": "0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b"
+  },
+  "limits": [
+    "Only one native Data Disc project per role with two small immutable Chinese-name BIN references, native drag after actual ShiftDown double selection, F2 virtual project-only A rename to original-renamed.bin or market-renamed.bin, F2 root volume label ORIGINAL42 or MARKET42, File/Save Project As IRP and new formal empty welcome then explicit CtrlO/doubleclick IRP. Synthetic BIN/IRP are not separate apps. No actual disc/ISO/image writing, CD reading, erase/fixate, audio/video/encoding/device/playback/plugin/full IRP/burner/advanced/bad input/direct Chinese keyboard/network-background exclusion/migration/unattended/GUI market button acceptance.",
+    "Original inputs each50B unchanged. Original IRP1852B UTF16LE BOM37CRLF SHA69f3714167761a99e0407b2c63d799005a0ab3c66a3bcc6af49cc0d1895865a7 complete raw independently reconstructed: XML declaration, InfraRecorder/unique Project version3/type0/media4, label, actual default ISO/FileSystem/emptyFields/Boot, File0/File1 flags0, exact virtual InternalName and actual Chinese source FullPath, FileTime derived independently from actual input mtime at DOS two-second resolution. No complete XML/IRP/Windows API/time semantics or actual burn correctness claim. Input physical names/content preserved; project name edit is virtual only.",
+    "Default English/Chinese names readable without font changes. Original About0.53.0.0(unicode,x86), cdrtools installed version Unknown text only; market About untested. Two original File/Exit0 plus wineserver stop is not acceptance alone. New original starts empty Welcome, no automatic project restoration. Open dialog retains actual previous native save directory and doubleclick exact IRP, not claiming a repeated C-tree navigation in that new Open.",
+    "Official fixed installer4151536B SHA8cee83f7f489a6aef4218a953b87b1c22d6a93c966e79275c8cb2abe830d0731 matches official SourceForge displayed SHA observed as web-tool text, not original HTML. Source8370542B SHAe06fe21f65c094043b1ced6ac1995fce6946416070480318025b5fdc5844962f local only. Both complete HTTPS200/ContentLength; official MD5 both matched weak-only, not strong authenticity. Two GET routes terminal before original install; complete first partial/cache retained without repeat GET. ZIP681 unique members625 regular files/allCRC passed;18 selected source raw only, not all-source manual review. PGP/Authenticode/API digest/source-binary correspondence/repro/latest not verified.",
+    "Fixed main infrarecorder.cc explicitly GPL3-or-later. Installed license.txt35821B SHA0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b exactly all root source license.txt raw; license.rtf and help licence notices preserved separately. Full ATL/WTL/MSVC/ckcore/ckcdr/tinyxml/cdrtools/cdrdao/codecs/plugins/icons/translations bundle licence closure unverified. No MP3 plugin package download/install or plugin function acceptance. Public no installer/program binary.",
+    "Actual existing isolated7Zip lists TypeNsis, bootstrap/mainPE0x14c. Native /S and last /D=C:single-backslashInfraRecorder only, DIR19UTF8B hex2f443d433a5c496e6672615265636f72646572. Source native /S description, NSIS setup entry/license/associations/default shortcuts static only, not complete NSIS/UAC/installation/association/uninstall behaviour. Actual Public Desktop InfraRecorder shortcut protected by selectedpins; not no-shortcut claim. Main2456328B SHAbeed559a6b50ab6789a45d3bac87faef082f6cde44c2389c13e43dae8db30171 is not whole app size. Original71 programs all raw held across bothGUI; no Core/program/globalcontext/definition/launcher env/cwd/fonts/globalDLL/runtime repair.",
+    "Only fixed data/two71 program maps/three registry and selected InfraRecorder-named prefix-user including Public shortcut and ProgramData/config paths, not all FS. Actual registry/log changes and raw/diff privately held; log diagnostic decoded actualUTF16 when BOM matched, not lossy UTF8 diff. Causes/key-value equivalence unestablished; first discovery not creation time. Complete544Core/158SQLite seven-class before-market CP saved/readback, full private CP excluded. Recent64 IPC not fullSQLite; Core query may write existing scratch.",
+    "First host7Zip guessed installed path assert after ZIPinventory and before any transfer/definition/task; original helper kept. NewV2 uses actual already-isolated tool and same packages, no repeated GET. Guessed helper reads/missingpaths and broad rg truncated synthetic fixture output only tool history, not checks completed or fabricated exactraw. Host display assumedUTF8 and raisedUnicodeDecodeError on actualFFFE IRP before Quit/CP/newlaunch; actualUTF16 fullraw reconstruction subsequently passed. Input-time observation V1 JSON readback failed because timezone tuple became list after write; old written JSON/error/helper kept, V2 list and full current fields equality with old written JSON actual verified, no CP/restart/quit/newlaunch during recovery. Empty wrapperstdout attempted read raisedJSONDecodeError, no dependent mutation continued.",
+    "Upper input browser selection briefly entered existing source A filename edit; Escape cancelled before typing/commit, then actual size-column selection+ShiftDown double selection and native drag succeeded. Inputs full raw/name assertions pass; no source physical rename. CtrlShiftS observed no SaveAs dialog, actual File menu SaveProjectAs used; not keyboard fix. Initial dialog MyComputer click hit noVNC left toolbar; normal collapse/window move then actual MyComputer/C/InfraRecorderTests save succeeded, no application repair. Two fresh-field fully masked normal authorised logins, auth/password/lockscreen/power unchanged; no login images/password/raw credentials saved.",
+    "All prior failures/helpers/root/signatures/trust/freezes/history kept, old Scribus one private canonicalV1 exactraw loss not fabricated. Greenfish EULA no program modification/shader deletion; CopyQ no notification disabling/globalDLL masking; Zim font/AegisubConcurrency unresolved; Texmaker source-only architecture guard/cache held. UbuntuKateAPT/Snapcalculator2 independently tracked, Flatpak2 runtime timeouts/cache held, no UbuntuVM or concurrent two4GiBVM this round. No full private CP/keys/credentials/password/login images/exact signedredirectquery public."
+  ]
+}

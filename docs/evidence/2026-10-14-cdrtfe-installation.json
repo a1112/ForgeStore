@@ -1,0 +1,709 @@
+{
+  "applicationId": "cdrtfe",
+  "generation": {
+    "bottleId": "gen-job-1791975365459-1",
+    "createdAtMilliseconds": 1791975365467,
+    "definition": {
+      "bottleId": "gui-cdrtfe",
+      "category": "productivity",
+      "compatibilityRating": "unknown",
+      "id": "cdrtfe",
+      "installer": {
+        "arguments": [
+          "/VERYSILENT",
+          "/SUPPRESSMSGBOXES",
+          "/NORESTART",
+          "/SP-",
+          "/DIR=C:\\Cdrtfe",
+          "/NOICONS",
+          "/TASKS=",
+          "/LANG=en"
+        ],
+        "fileName": "cdrtfe-1.5.9.exe",
+        "sha256": "d6683fce47b9c85d2077b1be3b424a4a42be989830f52783673e01e9d06a8470"
+      },
+      "launchers": [
+        {
+          "executable": "Cdrtfe/cdrtfe.exe",
+          "id": "main",
+          "name": "Cdrtfe"
+        }
+      ],
+      "name": "Cdrtfe",
+      "publisher": "Oliver Valencia",
+      "schemaVersion": "1",
+      "tags": [
+        "rolling-1000",
+        "managed-inno"
+      ],
+      "version": "1.5.9"
+    },
+    "definitionDigest": "sha256:321fdcdcc89fbc20e212520bda9bfbc01159659efd4e9c22f505c324ae832f24",
+    "id": "gen-job-1791975365459-1",
+    "launcherDigests": {
+      "main": "sha256:e2e6033383e0aaa2566802bf2c1fc06c7533b93a1d5e355e7a606c9e0a381714"
+    },
+    "runtime": {
+      "binding": {
+        "environment": {
+          "COMPATFORGE_BOTTLE_FONT_FAMILY": "Noto Sans CJK SC",
+          "COMPATFORGE_BOTTLE_FONT_FILE": "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+          "COMPATFORGE_BOTTLE_FONT_SHA256": "sha256:b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+          "COMPATFORGE_RUNTIME_EXECUTABLE_SHA256": "sha256:2d7731d7532318e06f47bb2b9d6cd7f8a934856f6d4711314c047dc8660b97e9",
+          "COMPATFORGE_RUNTIME_PACK": "wine-linux-x86-64-local-preview",
+          "COMPATFORGE_RUNTIME_PACK_DIGEST": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+          "COMPATFORGE_WINESERVER_EXECUTABLE_SHA256": "sha256:e078d038b21543bd7cb4adf75b25c14a8490b38c5d098b20ad4750d89aaaec39",
+          "LANG": "C.UTF-8",
+          "LC_ALL": "C.UTF-8",
+          "WINEARCH": "win64",
+          "WINEDEBUG": "-all",
+          "WINEDLLOVERRIDES": "mscoree,mshtml=",
+          "WINESERVER": "/usr/bin/wineserver"
+        },
+        "executable": "/usr/bin/wine",
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "providerId": "wine-linux-x86-64-preview",
+        "wineserverExecutable": "/usr/bin/wineserver"
+      },
+      "selection": {
+        "packDigest": "sha256:6b2a66327849bd5da3933011afdd5db6129f6cf2e246b8082daeb601f0b3afba",
+        "packId": "wine-linux-x86-64-local-preview",
+        "provider": "wine"
+      },
+      "version": "11.14"
+    },
+    "status": "ready",
+    "updatedAtMilliseconds": 1791975379987
+  },
+  "definition": {
+    "bottleId": "gui-cdrtfe",
+    "category": "productivity",
+    "compatibilityRating": "unknown",
+    "id": "cdrtfe",
+    "installer": {
+      "arguments": [
+        "/VERYSILENT",
+        "/SUPPRESSMSGBOXES",
+        "/NORESTART",
+        "/SP-",
+        "/DIR=C:\\Cdrtfe",
+        "/NOICONS",
+        "/TASKS=",
+        "/LANG=en"
+      ],
+      "fileName": "cdrtfe-1.5.9.exe",
+      "sha256": "d6683fce47b9c85d2077b1be3b424a4a42be989830f52783673e01e9d06a8470"
+    },
+    "launchers": [
+      {
+        "executable": "Cdrtfe/cdrtfe.exe",
+        "id": "main",
+        "name": "Cdrtfe"
+      }
+    ],
+    "name": "Cdrtfe",
+    "publisher": "Oliver Valencia",
+    "schemaVersion": "1",
+    "tags": [
+      "rolling-1000",
+      "managed-inno"
+    ],
+    "version": "1.5.9"
+  },
+  "installedFiles": {
+    "cdrtfe.jdbg": {
+      "sizeBytes": 422776,
+      "sha256": "4287e5e8121ba72d8812c4b21812c05802fcd41786f8b7499662058d3209cf77"
+    },
+    "cdrtfeShlEx64.dll": {
+      "sizeBytes": 668264,
+      "sha256": "7272cf93a34490632dee8d99de128eac19a7e1b909bc15e3db6e3787921d194a"
+    },
+    "cdrtfeShlEx.dll": {
+      "sizeBytes": 462904,
+      "sha256": "ca384ebf48f5cea7cd6c70f17ef6955b36ac0ca5e4748cc3991c13b84476eea1"
+    },
+    "cdrtfedbg.dll": {
+      "sizeBytes": 469968,
+      "sha256": "f935c9aed096c977e67110e47c27459b3abb8636de9534dccc1d0fc0d380c914"
+    },
+    "cdrtfe.exe": {
+      "sizeBytes": 2174928,
+      "sha256": "e2e6033383e0aaa2566802bf2c1fc06c7533b93a1d5e355e7a606c9e0a381714"
+    },
+    "translations/cdrtfe_lang.ini": {
+      "sizeBytes": 2685,
+      "sha256": "7c28c51f962149e76cc8508e3badfb5c6c11701619f59a14ec6f79abf9ae4466"
+    },
+    "doc/changes.txt": {
+      "sizeBytes": 3322,
+      "sha256": "aff2264a0faf2f04e254f14bed6c0edcefb4d600d003cfee6b709efae947b50b"
+    },
+    "doc/readme_en.txt": {
+      "sizeBytes": 48866,
+      "sha256": "e0fb6634a7be6e326dfbd32cd511ebe8bba0238a32026e4a4f2de9282cea8b8c"
+    },
+    "doc/m2f2extract_en.txt": {
+      "sizeBytes": 3763,
+      "sha256": "0cb046337c27b5cbd98d564f425b3a18cf443e567bad2f621d93cf10375e904d"
+    },
+    "doc/readme_dvd_en.txt": {
+      "sizeBytes": 1203,
+      "sha256": "39e2d6b62a71d7b075ee32d4b620ee9411b60946320f6534c222a3078b6c0168"
+    },
+    "help/cdrtfe_english.chm": {
+      "sizeBytes": 413593,
+      "sha256": "295221e452ed1d0d477e6e1c233904ab648c4601e20b70cd48fd862ce5608ae4"
+    },
+    "help/cdrtfe_french.chm": {
+      "sizeBytes": 327112,
+      "sha256": "352b4a12315f08cce99f8e81f69506aa5a4e494785db417b155095002322f3dd"
+    },
+    "help/cdrtfe_greek.chm": {
+      "sizeBytes": 414319,
+      "sha256": "b7a31397de80bb92c63b728a1fc5a2c13214050fab5870794a79dae63efcf44e"
+    },
+    "help/cdrtfe_italian.chm": {
+      "sizeBytes": 382375,
+      "sha256": "7e2f3ca1b55046a0a9510830122e6ec754dd1574f67b0aff58b75ba2811b4917"
+    },
+    "help/cdrtfe_german.chm": {
+      "sizeBytes": 429804,
+      "sha256": "73cef0a5db8435cd8fdb23d813499a426af319e8059d73efe76ffca5b0fc64f3"
+    },
+    "uninst/unins000.exe": {
+      "sizeBytes": 728440,
+      "sha256": "21d26a8a66660f8cde6cb0648c1186ad01ce711780751ed5c8f99cab794f83a8"
+    },
+    "uninst/unins000.msg": {
+      "sizeBytes": 11401,
+      "sha256": "d816931a62cb3bc09ff5d8326d33dbe7c6129c3e804321dfd6c57f5ba93fb715"
+    },
+    "uninst/unins000.dat": {
+      "sizeBytes": 21032,
+      "sha256": "62bcfd324236634e18c6f3a0bf71d4a70926cd24a40b3b57fe18a6557a31907b"
+    },
+    "tools/xcd/d2fgui.exe": {
+      "sizeBytes": 435568,
+      "sha256": "e9222832b205279597ac58de2eb7e319672d6b677d9d5f79f924b3542b2e9513"
+    },
+    "tools/xcd/dat2file.exe": {
+      "sizeBytes": 33280,
+      "sha256": "0469f21ff844286ee11384928f776e0dca363bf6b53b73444da5fc1b5cf1c5fe"
+    },
+    "tools/xcd/rrdec.exe": {
+      "sizeBytes": 68096,
+      "sha256": "05b0dbe1c9585d4b3aab695ce102606ddcf94326ec335bc9fbff20229118cf86"
+    },
+    "tools/xcd/rrenc.exe": {
+      "sizeBytes": 67072,
+      "sha256": "0add4c28660b6a834b72979db849aad91b0f17fc4bd9b5f0a4380fffa2aa09ae"
+    },
+    "tools/xcd/Mode2CDMaker.exe": {
+      "sizeBytes": 46080,
+      "sha256": "8da8afd37888866a9241ad2dea9ae7c6f637e813d2c6df45d6ecc99bbc62bd69"
+    },
+    "tools/xcd/m2f2extract.exe": {
+      "sizeBytes": 581488,
+      "sha256": "ba87e6f6e6da4998d04c1143fee978b41b626ef8c38b8f882eb60dfbbc4a0a2a"
+    },
+    "tools/scripts/cmdshellinit.cmd": {
+      "sizeBytes": 366,
+      "sha256": "446a47c831d9022117d532582c36d7e44de9219451162a54e76b273a5d33ad4e"
+    },
+    "tools/scripts/cmdshell.cmd": {
+      "sizeBytes": 71,
+      "sha256": "85f0d568f38e149cd2ce49bc5af1958c42f2ff88a7f8d58aa305d6464406b5a8"
+    },
+    "tools/helper/cygpathprefix.exe": {
+      "sizeBytes": 4608,
+      "sha256": "2eefcc7e055a7f9c37fdbdd734f6b16b1cb194ec683dec8d855c347640273b0a"
+    },
+    "tools/cygwin/cygwin1.dll": {
+      "sizeBytes": 3458775,
+      "sha256": "4f7a2e8c5d627cd053850a57fa266271ef6bce01d127d89c222ec3d8db159a47"
+    },
+    "tools/cygwin/sh.exe": {
+      "sizeBytes": 74240,
+      "sha256": "73b27d9de4348c3c6804b86abb12841e67fb4f4923a21d5f10a63ce9cb7d6b97"
+    },
+    "tools/etc/fstab": {
+      "sizeBytes": 53,
+      "sha256": "65d81374eb75db53ad74a770f4b30c0f32ed97610c891ce4894d039863c6a52c"
+    },
+    "tools/vcdimager/vcdimager.exe": {
+      "sizeBytes": 152064,
+      "sha256": "6c7dd618d73d53ce1739d34c96a45ae29a2a0ad07c36472a514a7009a8b900e4"
+    },
+    "tools/sound/lame.exe": {
+      "sizeBytes": 1810446,
+      "sha256": "2f97d9b620952d1afbb4782118ead0a59247e1b68d6a0d494b1b09c103a0238e"
+    },
+    "tools/sound/oggdec.exe": {
+      "sizeBytes": 279566,
+      "sha256": "da1eec868bf90ece96e14fb819c732be5c80d682ab637f4c2f96a50b82aa149c"
+    },
+    "tools/sound/oggenc.exe": {
+      "sizeBytes": 872462,
+      "sha256": "53a68a0a21ccdd50f90e103ae4f340d41a63a2fcdb52ddfb70f720ef495ca304"
+    },
+    "tools/sound/wavegain.exe": {
+      "sizeBytes": 173568,
+      "sha256": "bf87f9dc0eb8d89bdb65b4f7520eef5df631bfba12eed0f861877386722799a8"
+    },
+    "tools/sound/flac.exe": {
+      "sizeBytes": 749070,
+      "sha256": "195057b18e88477c77c5230a7fe967157bde76782c1dbc6b58c7d55f2352ea06"
+    },
+    "tools/sound/mpg123.exe": {
+      "sizeBytes": 756664,
+      "sha256": "154627061a510d52156949e4682acbedad69b186319a5fa88e82f39c86fe273c"
+    },
+    "tools/cdrtools/isoinfo.exe": {
+      "sizeBytes": 1138688,
+      "sha256": "9eec89e7f1e471a527ed9063ab88275d21a5b38166e8c16b088eca81ffc7c68e"
+    },
+    "tools/cdrtools/mkisofs.exe": {
+      "sizeBytes": 1356288,
+      "sha256": "94c873e6a773b892f3bb6de90e987d13768126784aeb07dd936d181534f93947"
+    },
+    "tools/cdrtools/readcd.exe": {
+      "sizeBytes": 251904,
+      "sha256": "1e12c862cc845f65e0c78d78ee34291c9d3457d5bc1daf2f3fd028f1888abe62"
+    },
+    "tools/cdrtools/cdda2wav.exe": {
+      "sizeBytes": 276992,
+      "sha256": "e92c0e06f07d82174eb378e1ede69869f6f84b56d6d565e25558bad966547b44"
+    },
+    "tools/cdrtools/cdrecord.exe": {
+      "sizeBytes": 413184,
+      "sha256": "4586c7f68ff97b6d0323e761971311e16e54663d946d9c6de0584e6de28d3505"
+    },
+    "tools/cdrtools/.mkisofsrc": {
+      "sizeBytes": 56,
+      "sha256": "4cd915e44d257626d918cbdc11197b4b325fac630156e71b65c4717ed7f0d95b"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1255": {
+      "sizeBytes": 8299,
+      "sha256": "76d2ad106df8eba8ce278147f6df3b4f2d448ab98cdca2b4eb462097ed62c2d4"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1252": {
+      "sizeBytes": 9350,
+      "sha256": "222dcc703bd43968953430a247af7c65f3bd17994f397209b25f9fc59f4c812f"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-14": {
+      "sizeBytes": 11021,
+      "sha256": "3426e4b6b5b644920110ddd7d6404cd41b361eec966cfcb6cd135e1439f7719b"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-8": {
+      "sizeBytes": 8553,
+      "sha256": "4bea5cf4b048e3b7ccf704ea153edcf77d2a4c627dd8710f8f7e037afb62a171"
+    },
+    "tools/cdrtools/share/lib/siconv/CP737": {
+      "sizeBytes": 9881,
+      "sha256": "61b9466555de97aff659fbeb62d3d28984bb9dd2c79f3566634ba5b5dd3e7964"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-2": {
+      "sizeBytes": 10816,
+      "sha256": "5c81eca66455c5b36853c8a66495f58636643f6ddb261083d877a7f2a48287b7"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-4": {
+      "sizeBytes": 10792,
+      "sha256": "5bb8f1fa3fdf6df88ee3d1a17f58bdf5e336f6b665d58ea04bf7bd7bdbf259dc"
+    },
+    "tools/cdrtools/share/lib/siconv/CP874": {
+      "sizeBytes": 8434,
+      "sha256": "852ddbb6a165ab69066dfe0b28551c66391a51bb047b0dd9a278cccc45d454c1"
+    },
+    "tools/cdrtools/share/lib/siconv/CP864": {
+      "sizeBytes": 9614,
+      "sha256": "2ff333dae6c2b41bbdcca50d0b561b27757c96e9f73e2b96697624f1bc53a5a6"
+    },
+    "tools/cdrtools/share/lib/siconv/CP10029": {
+      "sizeBytes": 9916,
+      "sha256": "a7f11ae727877c170c6a184126fa251e7376086533a0d59dfecd2952412a8151"
+    },
+    "tools/cdrtools/share/lib/siconv/KOI8-R": {
+      "sizeBytes": 11204,
+      "sha256": "d635512126976aec2c4fab3aeeb346bb653e9211c44d2a018dd27fbe86c654ec"
+    },
+    "tools/cdrtools/share/lib/siconv/CP860": {
+      "sizeBytes": 9899,
+      "sha256": "46b005364aabda527cefb8c0e75baa43d9e24619972f69bf470bc0c5ff7d1505"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-15": {
+      "sizeBytes": 10601,
+      "sha256": "0e94e2789e46c7a1e7e453735947e5e593fed2ded6eef659a5282dfc413ff59f"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1253": {
+      "sizeBytes": 8933,
+      "sha256": "0b1a8554e4ddcecdbb28b4d13570b677ec0d6fb2d51f18f35536c2990082d582"
+    },
+    "tools/cdrtools/share/lib/siconv/CP869": {
+      "sizeBytes": 9372,
+      "sha256": "942091b441445eb7d2d1a6df2fba9b414555730b168046c88b112702a2c958cd"
+    },
+    "tools/cdrtools/share/lib/siconv/CP10081": {
+      "sizeBytes": 13706,
+      "sha256": "0671979d24f7dcf30b3efb739acad97a831cc44350408e16963de5d0a2f22b2c"
+    },
+    "tools/cdrtools/share/lib/siconv/CP850": {
+      "sizeBytes": 9694,
+      "sha256": "d53a7168c27a9b794aa754187105b4c86442bd6a89c43685367fed331521ef90"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-11": {
+      "sizeBytes": 9730,
+      "sha256": "a742830aea98cbd27e5ecf811277d0c68e1e7be5a29cf7b98719474cc9cd458a"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1258": {
+      "sizeBytes": 9203,
+      "sha256": "0e01f95268850ebe7840cb2e881138ee7a80bdf68e9a430caf0fff61c5270b5c"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1256": {
+      "sizeBytes": 8652,
+      "sha256": "10ec7a4976d36c4fa67012bb7066b9863097f21bb7cd38222bdac10cd686a510"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-16": {
+      "sizeBytes": 10886,
+      "sha256": "f6abb360ffac4700d51bb84c753b088d0f7d49bdc6bc482c458b2c3ef2725a54"
+    },
+    "tools/cdrtools/share/lib/siconv/CP10006": {
+      "sizeBytes": 14940,
+      "sha256": "cd01bc7368ff348eff7a0fe61e90613079242a90b3124219c34c05c9e4bf46cd"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1254": {
+      "sizeBytes": 9341,
+      "sha256": "c52a01e60080c91f7f4efd0147ce51099b4705b5f8e949a941c0e1f3c16af3fe"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-9": {
+      "sizeBytes": 10628,
+      "sha256": "976d48dfff033c7bfedd08bc61d26f0a5fefb4c3f48f8735f454e100cf40294c"
+    },
+    "tools/cdrtools/share/lib/siconv/CP775": {
+      "sizeBytes": 9820,
+      "sha256": "01e7706752ebb0b16060140ee5a12f7160cf81ae5de065316298f69e8dced64f"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1251": {
+      "sizeBytes": 9200,
+      "sha256": "f3fee47e8f2ebe11254ba739f28a28f3da2b67477434ce6b29c6113b365c2541"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-7": {
+      "sizeBytes": 10582,
+      "sha256": "7b8d7ce8242993556958a5f95529d9d71181e6a08a070d037f157a22a77716a9"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-10": {
+      "sizeBytes": 10989,
+      "sha256": "13339ad725052723ff6aac91ceef1a120a3231c4fac647e0b63d5565efdd2a53"
+    },
+    "tools/cdrtools/share/lib/siconv/CP437": {
+      "sizeBytes": 9848,
+      "sha256": "f57088661b6be1394d666ebab8d801b5f90f98e57d505521b9dbdd751a3288c1"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1250": {
+      "sizeBytes": 9525,
+      "sha256": "8b6c25cd85860679348c23971bf094cf0b247de3ebfe1a979239858b27d62318"
+    },
+    "tools/cdrtools/share/lib/siconv/CP1257": {
+      "sizeBytes": 9213,
+      "sha256": "071ac4b2b2fd7b84137452de17d5e926f8ee60b86ddf868bc78b9b3523d49f87"
+    },
+    "tools/cdrtools/share/lib/siconv/KOI8-U": {
+      "sizeBytes": 11267,
+      "sha256": "d36ca29a43ff9d397377f7a39f90991ef1d076ff831dfd4a03e3a55e068a9217"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-13": {
+      "sizeBytes": 10588,
+      "sha256": "6e07d8120d8225f0556c9c7f477c7d4392141290c3ae7f6a81c3926c34c0e52c"
+    },
+    "tools/cdrtools/share/lib/siconv/CP852": {
+      "sizeBytes": 9993,
+      "sha256": "485c52606c6838dd439eded02b9989b95abf25acbe52066dabc90ac07e8472a2"
+    },
+    "tools/cdrtools/share/lib/siconv/CP10000": {
+      "sizeBytes": 15283,
+      "sha256": "39eb15b8b8e27a313bf190e6d69d9e5122043c0ab5c64d2833744ed506f5cf5f"
+    },
+    "tools/cdrtools/share/lib/siconv/CP865": {
+      "sizeBytes": 9866,
+      "sha256": "2959ae36b21c1c34d59996e5f38315288cf67c1b915b884ad316136bd8f9c68e"
+    },
+    "tools/cdrtools/share/lib/siconv/CP855": {
+      "sizeBytes": 9616,
+      "sha256": "4de9bb811131c0ebe20fd08100ee446f97ed447e6930b04ce90315b77ecf3fd4"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-1": {
+      "sizeBytes": 10592,
+      "sha256": "884eb5ae5aa74867c7b2c93a40b9460920e26731dfafa58f783e9d568fc79055"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-5": {
+      "sizeBytes": 10427,
+      "sha256": "c1244fabad6e9b7a8053da89448c42388bbe93681742e01e74f7a22b7f08e3ed"
+    },
+    "tools/cdrtools/share/lib/siconv/CP862": {
+      "sizeBytes": 9450,
+      "sha256": "d7c931a3bbaf9a61378c30f5f0597f222128b9032867fae808588bc6ef06704a"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-3": {
+      "sizeBytes": 10498,
+      "sha256": "a7906a91ec3a4ac7f10ec7e25966d36d98fb720f401d595de5f9f06ab1f2b2a7"
+    },
+    "tools/cdrtools/share/lib/siconv/CP863": {
+      "sizeBytes": 9747,
+      "sha256": "b5c8f341331a6c741bed37dc3d225ea729d16c84d1764f3191f9278679a86748"
+    },
+    "tools/cdrtools/share/lib/siconv/CP10079": {
+      "sizeBytes": 14919,
+      "sha256": "8bb96e3626b623cc915a1f6e7d3d357cf90200b999420bd92abba683e57ab190"
+    },
+    "tools/cdrtools/share/lib/siconv/CP866": {
+      "sizeBytes": 9819,
+      "sha256": "e26fcfd1ca1ad13667bf1f98052fd01401f59aebef659bc5ce44f31f91054f02"
+    },
+    "tools/cdrtools/share/lib/siconv/iso8859-6": {
+      "sizeBytes": 8308,
+      "sha256": "a2917a1017ecb3c82fc44cd57365dbda0788f7cc1e8da94d8175f6600cf03548"
+    },
+    "tools/cdrtools/share/lib/siconv/CP861": {
+      "sizeBytes": 9880,
+      "sha256": "33af1ad5fa6b59b090cba9983050a2904ebbd232b473fb06f50572cf73d71ab3"
+    },
+    "tools/cdrtools/share/lib/siconv/CP10007": {
+      "sizeBytes": 14395,
+      "sha256": "ad7f4bdf4866bf55b78e9fe36aa368f10a3d2f696b00db0a3af84d3eb57f4c6a"
+    },
+    "tools/cdrtools/share/lib/siconv/CP857": {
+      "sizeBytes": 9671,
+      "sha256": "1932a00fed823086f2f3564663aaa9815c238c1e4010ecc4d33eed0fddb05434"
+    },
+    "doc/license/COPYING.txt": {
+      "sizeBytes": 18332,
+      "sha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e"
+    },
+    "doc/license/license_tools.txt": {
+      "sizeBytes": 1536,
+      "sha256": "ef275a99dedddd6359b9e0c12de7e66b34a2365a57183500c68a6032277e29a3"
+    },
+    "doc/license/CDDL.Schily.txt": {
+      "sizeBytes": 18557,
+      "sha256": "0770cbf84caf67c6e776ef1dcf89dc0cda47f8ede144f170a2850df9008739c7"
+    },
+    "translations/italian/cdrtfe_lang.ini": {
+      "sizeBytes": 43814,
+      "sha256": "1e3eca87724490137d6ce1d75e0c493d3e9b517780b332cdc59a83fdc7962f14"
+    },
+    "translations/italian/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1318,
+      "sha256": "6b6fd1af4d4cbbec90160a716046c5a127d22d64cabcaa132163590075ad9c22"
+    },
+    "translations/english/cdrtfe_lang.ini": {
+      "sizeBytes": 40870,
+      "sha256": "98dacb33b6c6f346621db06acc837f761065d5f76dc0dca6ec15401e3b4580b0"
+    },
+    "translations/english/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1209,
+      "sha256": "e462e339883ac7ab02549098c9d4f5c4b07d9a448b5744958364473e8cb513f4"
+    },
+    "translations/chinese (simplified)/cdrtfe_lang.ini": {
+      "sizeBytes": 36504,
+      "sha256": "4f5642b365f58bca327b5765c65ac8d1394230ce85d1fc62e4d667fd56a7eb29"
+    },
+    "translations/chinese (simplified)/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1062,
+      "sha256": "fb215aba8d301c4700bfcd99979ba902c5f8823ebf8562fea6454dc3e73cac5a"
+    },
+    "translations/arabic/cdrtfe_lang.ini": {
+      "sizeBytes": 41001,
+      "sha256": "4f52b737563d62040895e786ac6cdf20bf4ce48db8515bc1807f2b2ba619923e"
+    },
+    "translations/arabic/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1209,
+      "sha256": "c913e1b3b7c26e8f8bdd1aa32cab48103140d90d27ecb8fd2c6b0cc1dd66d7de"
+    },
+    "translations/turkish/cdrtfe_lang.ini": {
+      "sizeBytes": 42143,
+      "sha256": "e6efbea8074d68409aaa44c64e788ab0783a1cdcd2d4c7e721eb1cbe1d61deca"
+    },
+    "translations/turkish/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1254,
+      "sha256": "6139c808a1e2be6a0afc0a3cd9ef587b435c8f954da11e88af17f3ba277d0aa7"
+    },
+    "translations/russian/cdrtfe_lang.ini": {
+      "sizeBytes": 46574,
+      "sha256": "0ecdaaa243e81f989c51c5c4bd9a01d430b34833ec245357d6a0699ed1e50ac8"
+    },
+    "translations/russian/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1310,
+      "sha256": "48d31e9c045b1a30203c4e66531dfbfb6d23ff01e76312aa2cf8642d413926e5"
+    },
+    "translations/japanese/cdrtfe_lang.ini": {
+      "sizeBytes": 45200,
+      "sha256": "1bb328f4cf8e2d762f9e380fce22ac32665e88b803c36d791bf59e2dc00590a2"
+    },
+    "translations/japanese/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1209,
+      "sha256": "e462e339883ac7ab02549098c9d4f5c4b07d9a448b5744958364473e8cb513f4"
+    },
+    "translations/portuguese/cdrtfe_lang.ini": {
+      "sizeBytes": 43797,
+      "sha256": "ec6c95e6690e7e641c91043159c104880d98e715c20250f5a970092c60a8b250"
+    },
+    "translations/portuguese/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1340,
+      "sha256": "875ee550b8ed10fd1bd9ad8dec92e6ca56854944caa6f19c7445f4cae2d1e810"
+    },
+    "translations/french/cdrtfe_lang.ini": {
+      "sizeBytes": 44940,
+      "sha256": "e997c41b8fb1ac66f5de3d558c93c5008cc504fee3ce7fdd4ddc1e72db2306de"
+    },
+    "translations/french/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1342,
+      "sha256": "6e9486f8c043508eb0c82958008126ca079ee6fb2f13d18d206b0ab239d41409"
+    },
+    "translations/german/cdrtfe_lang.ini": {
+      "sizeBytes": 43786,
+      "sha256": "c827ef7cc8b0c4293dc1650954fe0e36fcf1a4588439224538fc42ce2eb53c40"
+    },
+    "translations/german/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1285,
+      "sha256": "f06a959856709c0299c4ed6d77d238a9d36109f75c135a274b4868a64e7277e8"
+    },
+    "translations/dutch/cdrtfe_lang.ini": {
+      "sizeBytes": 43507,
+      "sha256": "6cebd32a05be61d3d430a49ba4d66890748d83ece53ebeb8774774d91e17f250"
+    },
+    "translations/dutch/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1330,
+      "sha256": "021241148b75223e9012bc1b72785824489af8da2a2eed5642d60e4961eb4d70"
+    },
+    "translations/hungarian/cdrtfe_lang.ini": {
+      "sizeBytes": 44011,
+      "sha256": "dab2e961ffd62f578b7d3f871d0c10aace7d16a15001a7a4620da5d67edc1f57"
+    },
+    "translations/hungarian/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1209,
+      "sha256": "e462e339883ac7ab02549098c9d4f5c4b07d9a448b5744958364473e8cb513f4"
+    },
+    "translations/swedish/cdrtfe_lang.ini": {
+      "sizeBytes": 41186,
+      "sha256": "e276fe30883c295ba093de1c8ea1d4c5ecd018befacdb881eb8e55a03dff7244"
+    },
+    "translations/swedish/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 731,
+      "sha256": "2cf0158272514a841ef17f554d1b84845d7c0d9c26c4ee4d4977a35049076928"
+    },
+    "translations/ukrainian/cdrtfe_lang.ini": {
+      "sizeBytes": 42915,
+      "sha256": "2cddceb6da73a68f5fa174a49420147d385ba5229d2c5bb1cbb903039574aaa1"
+    },
+    "translations/ukrainian/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1300,
+      "sha256": "6930795a43c4dbb1a0e3ad2d87fa77b069f21c2d76b6c3bcb44c4abaaa703420"
+    },
+    "translations/korean/cdrtfe_lang.ini": {
+      "sizeBytes": 39458,
+      "sha256": "9bf7c503723d17c8d797973e70e9ca1686dbeea2d9aa4fce539eb3bdf67c65aa"
+    },
+    "translations/korean/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1221,
+      "sha256": "f0b0b20729c668cd161e7d91c3b151875bb95460d1029f0678d466bac8427766"
+    },
+    "translations/portuguese (brazilian)/cdrtfe_lang.ini": {
+      "sizeBytes": 43472,
+      "sha256": "17f38a7896b4cf6d27dbf6fe35e6c1018d31f2f775987069cc2e74e46103917c"
+    },
+    "translations/portuguese (brazilian)/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1356,
+      "sha256": "275ef017489ec93863f0ad040843476b4e7f6b14b273a285a54f38c1e6d72676"
+    },
+    "translations/czech/cdrtfe_lang.ini": {
+      "sizeBytes": 44512,
+      "sha256": "6c6020b00356dfe8481910672baef3084b04c10aa07ee7ec58bd64ccb001e04f"
+    },
+    "translations/czech/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1209,
+      "sha256": "e462e339883ac7ab02549098c9d4f5c4b07d9a448b5744958364473e8cb513f4"
+    },
+    "translations/spanish/cdrtfe_lang.ini": {
+      "sizeBytes": 44367,
+      "sha256": "11d798926c5e0f9ea0f46402d74929062ac9ca641e411c1309f14372391b0e32"
+    },
+    "translations/spanish/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1284,
+      "sha256": "81fd79d1bb5ac35b54302fad1f395b94d26195b38ac9249f7fea13bc415199b5"
+    },
+    "translations/chinese (traditional)/cdrtfe_lang.ini": {
+      "sizeBytes": 36195,
+      "sha256": "f681815b2a8633783c03ae2c44fd946c8e3c3c1f030f24f20d86ce45a518135c"
+    },
+    "translations/chinese (traditional)/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1065,
+      "sha256": "55c9075c1b2a699cb66fb48b72eaa6c6fb2d4fc8a2ea5f5b01574dd51bbe18f3"
+    },
+    "translations/catalan/cdrtfe_lang.ini": {
+      "sizeBytes": 44408,
+      "sha256": "220eda6c9799bc5fec5dcb70c5efdde4d8bc823985c22a5f85708a461c36ee06"
+    },
+    "translations/catalan/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 892,
+      "sha256": "3ae3a66bf1dfea38b60a3d580694c7d2074c84e261f947fb2910d48bd8829f2b"
+    },
+    "translations/polish/cdrtfe_lang.ini": {
+      "sizeBytes": 42327,
+      "sha256": "37b73d2384bc8bd0c7a958fad4dcb2c3438caa52f331774dc9cbbe3f06e24071"
+    },
+    "translations/polish/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1256,
+      "sha256": "0daeeb1d8f1ec6d78f50849853d22b2ee2f5469ea64557128ac34378eb94a295"
+    },
+    "translations/greek/cdrtfe_lang.ini": {
+      "sizeBytes": 44932,
+      "sha256": "ca5d6f34a36df9ac4ac2b85dc32ba917bc78bbc9c8805933171999528f418c48"
+    },
+    "translations/greek/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1287,
+      "sha256": "b93b9d9b2c87d0a231363b1853148407069d1bdf86cd30c7ac4b6686f8dd9928"
+    },
+    "translations/slovak/cdrtfe_lang.ini": {
+      "sizeBytes": 42363,
+      "sha256": "c1fa6f38a9f1152ce2fb341d5639a6429e2b6cd694faa9ac98aacf831a4c7906"
+    },
+    "translations/slovak/cdrtfeShlEx_lang.ini": {
+      "sizeBytes": 1303,
+      "sha256": "55cc6f00bb05b102f381ac2137e6c38b0940a947f67df607fdce25b9e3b85caa"
+    }
+  },
+  "installedLicenseNamedPins": {
+    "doc/license/COPYING.txt": {
+      "sizeBytes": 18332,
+      "sha256": "da0eca0fb517ac939d167924c9d4b3f8750a6b7191932ef2cb145acfa624ac7e"
+    },
+    "doc/license/license_tools.txt": {
+      "sizeBytes": 1536,
+      "sha256": "ef275a99dedddd6359b9e0c12de7e66b34a2365a57183500c68a6032277e29a3"
+    },
+    "doc/license/CDDL.Schily.txt": {
+      "sizeBytes": 18557,
+      "sha256": "0770cbf84caf67c6e776ef1dcf89dc0cda47f8ede144f170a2850df9008739c7"
+    }
+  },
+  "installedCopyingComparedWholeRaw": true,
+  "onlyOneOriginalInstall": true,
+  "readyNotGuiAcceptance": true,
+  "limits": [
+    "Finite ASCII two-file Data Disc project references only. Two immutable35B original BIN fixtures via native MyComputer/C/CdrtfeTests file dialog, actual Shift multiselect after CtrlA did not establish double selection. Original-a.bin/original-b.bin sources shown. Only native root Set CD label changed CD to ORIGINAL42. Native Project/Save project as original.cfp3664B plus original.cfp.files166B, no host output editing. No actual optical disc write, CD/device/media detection, ISO production or tool execution acceptance.",
+    "Host independently rebuilt all166 bytes of CFP.files from immutable ASCII input names, ORIGINAL42 label and fixed selected source structure. File list ASCII/noBOM/9CRLF; CFP ASCII/noBOM/295CRLF and selected Data-CD VolId ORIGINAL42 via independent ConfigParser. CFP full serialization/settings semantics and complete format unverified. Input BIN bytes held; synthetic BIN/CFP are not independent applications.",
+    "Second formal original process started fresh default CD root and empty file list, no automatic saved project restoration. Native Project/Load project explicitly doubleclicked original.cfp, restored ORIGINAL42 and exact two referenced sources. Actual Load dialog started CdrtfeTests; no claim that every process always remembers Save directory or that dialog-path cause was established. Default AutoSaveOnExit False declared in selected source and unchanged in native project. No host config reset or source/program repair.",
+    "Both original jobs job-1791975506632-2 and job-1791976591152-3 on sole ready gen-job-1791975365459-1 ended normally via native alt+F4. Complete nested job.events succeeded/exited.exit code0 successTrue/wine-server-stop-requested and separate ps noWine, full573Core/166StoreSQLite old fields held. Exit0 alone not acceptance. Title-X and initial File-menu interactions did not establish exit; Alt-L-f opened mkisofs Options, normal Cancel retained defaults. No actual Start/burn invoked.",
+    "Both formal launches first showed native severe component incompatibility or cygwin1.dll/version error notice; native OK then actual Data Disc editor usable. This remains an unresolved startup warning, not silent or unattended support. No exact runtime function, dynamic call trace, specific DLL root cause, actual optical/tool functionality or repair claim. Initial parent observer incorrectly assumed OK would quit and save editor-not-reached; running assertion stopped before state/CP, actual running job raw saved. Independent complete readonly live observation only whitelisted the sole running original job; no terminal CP or repeated launch from that recovery.",
+    "Official website setup/source1.5.9 fixed links observed via web tool, not raw HTML. SourceForge fixed directory also lists newer1.5.9.1, not selected; no latest claim. Installer7444776B SHAd6683fce47b9c85d2077b1be3b424a4a42be989830f52783673e01e9d06a8470 and source555044B SHA8108c91ecb84deabc7f72919d8e5825ed8366806ebc8f001b19dfa8e407e20eb, complete HTTPS200/ContentLength. Only local SHA, upstream digest/PGP/Authenticode/repro/source-binary/latest unverified. Both GET terminal before once original install; first complete partials/cache kept, no repeated GET.",
+    "RAR288unique227regular/safe paths and actual7Zip t exit0,16 selected raw files, not all source manual review. Main cdrtfe.dpr GPL2-or-later; license.txt adds LGPL/MPL1.1/CDDL combination exception and source conditions. Installed doc/license/COPYING.txt18332B exactly equals all selected source COPYING bytes; main special-exception license file not separately compared as installed named text. Full Delphi VCL/JCL/JVCL/Imaging/Mustangpeaks/Cygwin/cdrtools/m2cdm/flac/lame/mpg123/vorbis/tools/icons/translations license closure unverified. No entire Windows bundle GPL closure or public binary redistribution claim.",
+    "Actual two Inno5.5.7 data markers/bootstrap/mainPE14c. Fixed1.5.9 source cdrtfe.iss still defines1.5.8 and commentInno5.5.9, raw retained, no corresponding-package script claim. Native /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=C:one-backslashCdrtfe /NOICONS /TASKS= /LANG=en; DIR14UTF8 hex2f4449523d433a5c436472746665. Default components retained, no patched-tools selection. Static admin/shell extensions/tasks not real Windows UAC/association/shortcut/uninstall proof. Main cdrtfe.exe2174928B SHAe2e6033383e0aaa2566802bf2c1fc06c7533b93a1d5e355e7a606c9e0a381714 is32bit, not entire app size.",
+    "All140 initial program files held across both original GUI/exits. Selected7 only three registries and four fixed BIN/CFP files. Actual registry before/after raw and UTF8 differences private; both system.reg/user.reg changed, causes/key-value equivalence unknown, userdef held. Not old registry/config bytes same across GUI and not full filesystem/config inventory. Bounded prefix-user/ProgramData cdrtfe-named discovery found none during second live read, not full FS absence or proof of creation time. Recent64IPC not full StoreSQLite; queries can write existing scratch.",
+    "Complete original terminal CP after-original-reopen-native-exit SHAe2515e322dcb91dff90757da3a07857f13c50087d6b934a3c9481e1b5dbbfbac and readonly V2 helper preserve both QuiteRSS99/all15 each plus SynWrite and every earlier fixed-data range, auth/boot/disabled-autolock53B and unchanged service PIDs/binary. Private fullCP, raw DB/cookies/auth, credentials/private keys/login images/exact redirect query and installer/program bytes not public. New library cannot substitute older low counts.",
+    "Six actual JPEGs:00 and03 startup notices diagnostic only,01 original two file references,02 volume after save,04 second fresh empty list,05 explicit Load Project. No login or market images. First native maximize showed transient blank regions until menu/repaint, native restore and noVNC side-panel overlap/folding only view actions, not application repair. Experimental browser clipped screenshot showed a dark crop in tool history; later explicit full614x672 screenshots used without viewport setting change, none of those dark crops were saved as these JPEGs.",
+    "Independent StoreIPC same-version market install, market GUI/native save/newprocess explicit Load, exact original rollback/third original Load, final normal Core/Store restarts, independent FINAL and Git publication pending at this frozen phase. Windows73 accepted and18 queue all old fields retained, no count addition. Candidate preparation and signing/preview are not completed acceptance. No Core/program/globalcontext/immutabledefinition/launcher envcwd/font/globalDLL/runtime fix, recover, VM reboot, auth submit or original-phase service restart.",
+    "Full recorder/audio/video/XCD/DAE/disc/device/ISO/burn/boot/multisession/advanced settings/large-bad inputs/broad formats/Unicode paths/direct Chinese keyboard/About/printing/background network exclusion/online services/migration/unattended/GUI market buttons untested. Default English and finite ASCII workflows only. Ubuntu independent/no concurrent4GiB VMs, old failures/licences/root/signatures/trust/cache held, Greenfish and CopyQ restrictions unchanged.",
+    "Host source-list V1 assumed LF separator but actual7Zip output CRLF: IndexError before archive test/source inventory/extraction/guest install. Original stdout/stderr raw held; V2 diagnostic newline normalization only, raw unchanged. Selected-source V1 any-later-version contiguous substring failed after12 raw copies because linewrapped; V2 diagnostic whitespace normalization and actual old iss version recorded, all source raw retained. Those direct-command exact stderr and quoting/rg failures only tool history, not fabricated saved raw. Parent inline python-c shell quotation SyntaxError and Windows rg wildcard error did not alter guest or count. Every failed gate stopped dependencies until actual diagnostics; no wildcard or reinstall recovery."
+  ]
+}
