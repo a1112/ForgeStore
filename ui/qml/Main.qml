@@ -454,6 +454,7 @@ ApplicationWindow {
         background: Rectangle { color: "#142135"; border.color: "#34506f" }
         ScrollView {
             id: detailsScroll
+            objectName: "detailsScroll"
             anchors.fill: parent
             anchors.margins: 24
             clip: true

@@ -30,6 +30,8 @@ int main(int argc, char **argv) {
     if (engine.rootObjects().isEmpty()) return 1;
     auto *window = qobject_cast<QWindow *>(engine.rootObjects().first());
     if (!window) return 1;
+    // Allocate the hidden native window before measuring its frame margins.
+    window->create();
     const QString settingsPath = qEnvironmentVariable("FORGE_STORE_WINDOW_SETTINGS_PATH");
     std::unique_ptr<QSettings> settings = settingsPath.isEmpty()
         ? std::make_unique<QSettings>(QStringLiteral("Forge"), QStringLiteral("ForgeStore"))

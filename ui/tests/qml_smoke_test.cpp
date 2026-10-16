@@ -8,6 +8,7 @@
 #include <QProcess>
 #include <QProcessEnvironment>
 #include <QQuickItem>
+#include <QTemporaryDir>
 #include <QtTest>
 
 #include <memory>
@@ -17,6 +18,8 @@ class StoreWindowTest final : public QObject {
 
 private slots:
     void restoresSmallWindowWithoutEnlargingOnLargeScreen();
+    void firstLaunchKeepsDesktopSpaceOnSmallScreens();
+    void smallDetailsDrawerScrollsToPrimaryActions();
     void loadsChineseDesktopAndCanSwitchToEnglish();
     void loadsBundledQmlResources();
     void launchedApplicationKeepsWindowAlive();
@@ -34,6 +37,61 @@ void StoreWindowTest::restoresSmallWindowWithoutEnlargingOnLargeScreen() {
     QCOMPARE(restored.minimum, QSize(640, 400));
     const auto corrected = fitWindowGeometry(QRect(0, 0, 640, 480), QRect(-2000, 3000, 1400, 1000), QMargins(0, 32, 0, 0), false);
     QCOMPARE(corrected.geometry, QRect(0, 32, 640, 448));
+}
+
+void StoreWindowTest::firstLaunchKeepsDesktopSpaceOnSmallScreens() {
+    // QScreen and QWindow use logical coordinates at both device scales.
+    for (const QSize screen : {QSize(960, 600), QSize(1280, 720), QSize(1470, 833), QSize(1920, 1040)}) {
+        const auto fitted = fitWindowGeometry(QRect(QPoint(-screen.width(), 30), screen), QRect(0, 0, 1040, 700), QMargins(0, 32, 0, 0), true);
+        QVERIFY(fitted.geometry.width() <= int((screen.width() - 32) * .84));
+        QVERIFY(fitted.geometry.height() <= int((screen.height() - 64) * .84));
+        QVERIFY(fitted.minimum.width() <= fitted.geometry.width());
+        QVERIFY(fitted.minimum.height() <= fitted.geometry.height());
+        QVERIFY(QRect(QPoint(-screen.width(), 30), screen).contains(fitted.geometry));
+    }
+}
+
+void StoreWindowTest::smallDetailsDrawerScrollsToPrimaryActions() {
+    StoreBridge bridge(QStringLiteral("/tmp/unavailable-store.sock"));
+    QQmlEngine engine;
+    engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    QQmlComponent component(&engine, QUrl::fromLocalFile(QStringLiteral(FORGE_STORE_UI_SOURCE_DIR "/qml/Main.qml")));
+    std::unique_ptr<QObject> window(component.create());
+    QVERIFY2(window != nullptr, qPrintable(component.errorString()));
+    window->setProperty("minimumWidth", 1);
+    window->setProperty("minimumHeight", 1);
+    window->setProperty("visible", true);
+    const QVariantMap entry{{"id", "probe"}, {"name", QVariantMap{{"zhCN", "隔离测试应用"}}},
+        {"summary", QVariantMap{{"zhCN", QString(300, QChar(0x6587))}}}, {"version", "1"},
+        {"delivery", QVariantMap{{"backend", "compatforge"}}}};
+    window->setProperty("state", QVariantMap{{"catalogue", QVariantMap{{"entries", QVariantList{entry}}}},
+        {"installed", QVariantList{QVariantMap{{"appId", "probe"}, {"backend", "compatforge"}}}},
+        {"backends", QVariantMap{{"compatforge", QVariantMap{{"available", true}}}}}});
+    auto *drawer = window->findChild<QObject *>(QStringLiteral("detailsDrawer"));
+    auto *scroll = window->findChild<QObject *>(QStringLiteral("detailsScroll"));
+    QVERIFY(drawer && scroll);
+    for (const QSize size : {QSize(1040, 700), QSize(780, 450), QSize(640, 400)}) {
+        window->setProperty("width", size.width());
+        window->setProperty("height", size.height());
+        QVERIFY(QMetaObject::invokeMethod(window.get(), "openDetails", Q_ARG(QVariant, QVariant(entry))));
+        QTRY_VERIFY(drawer->property("opened").toBool());
+        auto *flick = qvariant_cast<QObject *>(scroll->property("contentItem"));
+        QVERIFY(flick);
+        QTest::qWait(50);
+        const qreal bottom = flick->property("contentHeight").toReal() - flick->property("height").toReal();
+        QVERIFY(bottom > 0);
+        flick->setProperty("contentY", bottom);
+        QTest::qWait(50);
+        for (const auto *name : {"detailsInstallButton", "detailsUninstallButton"}) {
+            auto *button = window->findChild<QQuickItem *>(QString::fromLatin1(name));
+            QVERIFY(button && button->isVisible());
+            const QPointF point = button->mapToScene(QPointF(0, 0));
+            QVERIFY2(point.x() >= -1 && point.y() >= -1 && point.x() + button->width() <= size.width() + 1 && point.y() + button->height() <= size.height() + 1,
+                qPrintable(QStringLiteral("%1 outside %2x%3 after scrolling").arg(QString::fromLatin1(name)).arg(size.width()).arg(size.height())));
+        }
+        QVERIFY(QMetaObject::invokeMethod(drawer, "close"));
+        QTRY_VERIFY(!drawer->property("opened").toBool());
+    }
 }
 
 void StoreWindowTest::loadsChineseDesktopAndCanSwitchToEnglish() {
@@ -66,11 +124,14 @@ void StoreWindowTest::loadsBundledQmlResources() {
 }
 
 void StoreWindowTest::launchedApplicationKeepsWindowAlive() {
+    QTemporaryDir isolated;
+    QVERIFY(isolated.isValid());
     QProcess process;
     auto environment = QProcessEnvironment::systemEnvironment();
     environment.insert(QStringLiteral("QT_QPA_PLATFORM"), QStringLiteral("offscreen"));
     environment.insert(QStringLiteral("FORGE_STORE_SOFTWARE_RENDER"), QStringLiteral("1"));
-    environment.insert(QStringLiteral("XDG_RUNTIME_DIR"), QStringLiteral("/tmp"));
+    environment.insert(QStringLiteral("XDG_RUNTIME_DIR"), isolated.path());
+    environment.insert(QStringLiteral("FORGE_STORE_WINDOW_SETTINGS_PATH"), isolated.filePath(QStringLiteral("window.ini")));
     process.setProcessEnvironment(environment);
     process.start(QStringLiteral(FORGE_STORE_UI_BINARY));
     QVERIFY2(process.waitForStarted(2000), qPrintable(process.errorString()));
@@ -348,10 +409,12 @@ void StoreWindowTest::longMetadataKeepsActionsInsideCard() {
     auto *installButton = card->findChild<QQuickItem *>(QStringLiteral("discoverInstallButton"));
     QVERIFY(detailsButton != nullptr && installButton != nullptr);
 
-    for (const QSize size : {QSize(1160, 760), QSize(820, 580)}) {
+    window->setProperty("minimumWidth", 1);
+    window->setProperty("minimumHeight", 1);
+    for (const QSize size : {QSize(1470, 833), QSize(1040, 700), QSize(820, 580), QSize(780, 450), QSize(640, 400)}) {
         QVERIFY(window->setProperty("width", size.width()));
         QVERIFY(window->setProperty("height", size.height()));
-        QTRY_VERIFY(card->width() > 400);
+        QTRY_VERIFY(card->width() > 250);
         QTest::qWait(80);
         for (QQuickItem *button : {detailsButton, installButton}) {
             const QPointF position = button->mapToItem(card, QPointF(0, 0));
