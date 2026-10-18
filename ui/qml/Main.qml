@@ -116,6 +116,7 @@ ApplicationWindow {
             width: parent.width
             height: 40
             targetWindow: root
+            titleGesturesEnabled: !details.visible
             labels: root.labels
             effects: root.effectsController
             foreground: root.highContrast ? systemPalette.windowText : "#f2f6fc"

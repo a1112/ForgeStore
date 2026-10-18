@@ -6,9 +6,22 @@ Item {
     id: chrome
     required property var targetWindow
     required property var labels
+    property bool titleGesturesEnabled: true
+    objectName: "windowChrome"
     property var effects
     property color foreground: "#f2f6fc"
     implicitHeight: 40
+
+    function titleDoubleClick() {
+        if (!enabled || !titleGesturesEnabled || targetWindow.visibility === Window.FullScreen) return
+        if (Qt.platform.os === "osx") {
+            if (effects) effects.titlebarDoubleClick()
+        } else maximizeOrRestore()
+    }
+    function startTitleDrag() {
+        if (!enabled || !titleGesturesEnabled || targetWindow.visibility === Window.FullScreen) return
+        targetWindow.startSystemMove()
+    }
 
     function maximizeOrRestore() {
         if (targetWindow.visibility === Window.Maximized || targetWindow.visibility === Window.FullScreen)
@@ -36,12 +49,12 @@ Item {
         TapHandler {
             acceptedButtons: Qt.LeftButton
             gesturePolicy: TapHandler.ReleaseWithinBounds
-            onDoubleTapped: chrome.maximizeOrRestore()
+            onDoubleTapped: chrome.titleDoubleClick()
         }
         DragHandler {
             target: null
             acceptedButtons: Qt.LeftButton
-            onActiveChanged: if (active) chrome.targetWindow.startSystemMove()
+            onActiveChanged: if (active) chrome.startTitleDrag()
         }
     }
     Row {

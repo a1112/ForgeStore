@@ -25,12 +25,30 @@ public:
     bool enabled = true;
     bool active = false;
     bool highContrast = false;
-    int radius = 10;
+    int radius = 10, titleDoubleClicks = 0;
+    Q_INVOKABLE void titlebarDoubleClick() { ++titleDoubleClicks; }
     Q_INVOKABLE void setEnabled(bool value) { enabled = value; emit changed(); }
 signals:
     void changed();
 };
 
+class SyntheticTitleTarget : public QObject {
+    Q_OBJECT
+    Q_PROPERTY(int visibility MEMBER visibility NOTIFY changed)
+    Q_PROPERTY(QString title MEMBER title CONSTANT)
+public:
+    int visibility = QWindow::Windowed;
+    QString title = QStringLiteral("Synthetic title target");
+    int moves = 0, maximizes = 0, restores = 0, minimizes = 0, fullscreens = 0;
+    Q_INVOKABLE bool startSystemMove() { ++moves; return true; }
+    Q_INVOKABLE void showMaximized() { ++maximizes; }
+    Q_INVOKABLE void showNormal() { ++restores; }
+    Q_INVOKABLE void showMinimized() { ++minimizes; }
+    Q_INVOKABLE void showFullScreen() { ++fullscreens; }
+    Q_INVOKABLE void close() {}
+signals:
+    void changed();
+};
 class Scene {
 public:
     StoreBridge bridge{QStringLiteral("/tmp/unavailable-forge-store-effects.sock")};
@@ -67,6 +85,70 @@ class WindowEffectsTest final : public QObject {
 private slots:
     void init() {
         QTest::failOnWarning(QRegularExpression(".*(Binding loop|Only binding to one of multiple|ReferenceError|TypeError).*"));
+    }
+    void nativeTitleDoubleClickPolicy() {
+        using Action = WindowEffectsPolicy::TitlebarAction;
+        for (std::string_view preference : {"Minimize", "None", "Maximize", "Zoom", "", "unknown"})
+            for (bool fullscreen : {false, true}) for (bool sheet : {false, true})
+                for (bool minimize : {false, true}) for (bool zoom : {false, true}) {
+                    Action expected = Action::None;
+                    if (!fullscreen && !sheet && preference != "None") {
+                        if (preference == "Minimize") { if (minimize) expected = Action::Minimize; }
+                        else if (zoom) expected = Action::Zoom;
+                    }
+                    QCOMPARE(WindowEffectsPolicy::titlebarDoubleClickAction(preference,fullscreen,sheet,minimize,zoom),expected);
+                }
+    }
+    void titleGesturesRespectFullscreenModalAndCancel() {
+        SyntheticTitleTarget target;
+        Scene scene;
+        QVERIFY(scene.window);
+        auto *chrome=scene.item("windowChrome");
+        auto *drag=scene.item("windowDragRegion"); QVERIFY(chrome && drag);
+        QVERIFY(chrome->setProperty("targetWindow",QVariant::fromValue(static_cast<QObject *>(&target))));
+
+        scene.window->requestActivate();
+        QCoreApplication::processEvents();
+        const QPoint origin=drag->mapToScene(QPointF(drag->width()/2,drag->height()/2)).toPoint();
+        target.visibility=QWindow::FullScreen; emit target.changed();
+        QVERIFY(QMetaObject::invokeMethod(chrome,"titleDoubleClick"));
+        QVERIFY(QMetaObject::invokeMethod(chrome,"startTitleDrag"));
+        QCOMPARE(scene.effects.titleDoubleClicks,0); QCOMPARE(target.moves,0); QCOMPARE(target.restores,0); QCOMPARE(target.maximizes,0);
+        target.visibility=QWindow::Windowed; emit target.changed();
+        QTest::mouseDClick(scene.window.get(),Qt::LeftButton,Qt::NoModifier,origin);
+#ifdef Q_OS_MACOS
+        QTRY_COMPARE(scene.effects.titleDoubleClicks,1); QCOMPARE(target.maximizes,0);
+#else
+        QTRY_COMPARE(target.maximizes,1); QCOMPARE(scene.effects.titleDoubleClicks,0);
+#endif
+        auto *drawer=scene.window->findChild<QObject *>("detailsDrawer"); QVERIFY(drawer);
+        const QVariantMap entry{{"id","synthetic"},{"name","Synthetic"}};
+        QVERIFY(QMetaObject::invokeMethod(scene.window.get(),"openDetails",Q_ARG(QVariant,QVariant(entry))));
+        QTRY_VERIFY(drawer->property("opened").toBool());
+        QVERIFY(!chrome->property("titleGesturesEnabled").toBool());
+        const int beforeDouble=scene.effects.titleDoubleClicks, beforeMax=target.maximizes;
+        QVERIFY(QMetaObject::invokeMethod(chrome,"titleDoubleClick"));
+        QVERIFY(QMetaObject::invokeMethod(chrome,"startTitleDrag"));
+        QCOMPARE(scene.effects.titleDoubleClicks,beforeDouble); QCOMPARE(target.maximizes,beforeMax); QCOMPARE(target.moves,0);
+        QVERIFY(QMetaObject::invokeMethod(drawer,"close"));
+        QTRY_VERIFY(!drawer->property("visible").toBool());
+        QVERIFY(chrome->property("titleGesturesEnabled").toBool());
+        QTest::mousePress(scene.window.get(),Qt::LeftButton,Qt::NoModifier,origin);
+        QTest::mouseMove(scene.window.get(),origin+QPoint(40,0),1);
+        QTest::mouseMove(scene.window.get(),origin+QPoint(60,0),1);
+        QTest::mouseRelease(scene.window.get(),Qt::LeftButton,Qt::NoModifier,origin+QPoint(60,0));
+        QTRY_COMPARE(target.moves,1);
+        QTest::mouseMove(scene.window.get(),origin+QPoint(80,0),1); QCOMPARE(target.moves,1);
+        target.visibility=QWindow::FullScreen; emit target.changed();
+        QTest::mouseDClick(scene.window.get(),Qt::LeftButton,Qt::NoModifier,origin);
+        QTest::mousePress(scene.window.get(),Qt::LeftButton,Qt::NoModifier,origin);
+        QTest::mouseMove(scene.window.get(),origin+QPoint(40,0),1);
+        QTest::mouseRelease(scene.window.get(),Qt::LeftButton,Qt::NoModifier,origin+QPoint(40,0));
+        QCOMPARE(scene.effects.titleDoubleClicks,beforeDouble); QCOMPARE(target.moves,1); QCOMPARE(target.restores,0);
+        auto *button=scene.item("windowMaximizeButton"); QVERIFY(button);
+        QVERIFY(QMetaObject::invokeMethod(button,"clicked"));
+        QCOMPARE(target.restores,1); QCOMPARE(scene.effects.titleDoubleClicks,beforeDouble);
+
     }
     void accessibilityPolicyAndPersistedOff() {
         for (bool enabled : {false, true})
