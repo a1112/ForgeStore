@@ -1,10 +1,20 @@
 #pragma once
 #include <QMargins>
+#include <QList>
 #include <QRect>
 #include <QSize>
 #include <algorithm>
 
 struct FittedWindowGeometry { QRect geometry; QSize minimum; };
+
+// Screen changes also happen during an ordinary drag between connected displays.
+// Recover only a rectangle that is no longer visible on any remaining screen.
+inline bool windowGeometryNeedsRecovery(QRect requested, const QList<QRect> &screens) {
+    return !screens.isEmpty() && std::none_of(screens.begin(), screens.end(), [requested](const QRect &screen) {
+        return requested.intersects(screen);
+    });
+}
+
 inline FittedWindowGeometry fitWindowGeometry(QRect available, QRect requested, QMargins frame, bool firstLaunch) {
     const int edge = firstLaunch ? 16 : 0;
     const QRect area = available.adjusted(edge + frame.left(), edge + frame.top(), -edge - frame.right(), -edge - frame.bottom());

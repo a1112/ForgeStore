@@ -19,6 +19,8 @@ class StoreWindowTest final : public QObject {
 private slots:
     void restoresSmallWindowWithoutEnlargingOnLargeScreen();
     void firstLaunchKeepsDesktopSpaceOnSmallScreens();
+    void crossingConnectedScreensKeepsTheDraggedRectangle();
+    void missingScreenRecoversOnlyUnreachableWindows();
     void smallDetailsDrawerScrollsToPrimaryActions();
     void loadsChineseDesktopAndCanSwitchToEnglish();
     void loadsBundledQmlResources();
@@ -49,6 +51,32 @@ void StoreWindowTest::firstLaunchKeepsDesktopSpaceOnSmallScreens() {
         QVERIFY(fitted.minimum.height() <= fitted.geometry.height());
         QVERIFY(QRect(QPoint(-screen.width(), 30), screen).contains(fitted.geometry));
     }
+}
+
+void StoreWindowTest::crossingConnectedScreensKeepsTheDraggedRectangle() {
+    // Qt screen rectangles are logical coordinates, including on mixed-DPI setups.
+    const QList<QRect> screens{QRect(0, 0, 1440, 900), QRect(1440, 0, 1440, 900)};
+    for (const QRect requested : {QRect(1050, 100, 800, 600), QRect(1400, 100, 800, 600),
+                                  QRect(1500, 100, 800, 600)}) {
+        QVERIFY(!windowGeometryNeedsRecovery(requested, screens));
+    }
+    // The previous unconditional screenChanged fit moved this window by 390px.
+    const QRect straddling(1050, 100, 800, 600);
+    QCOMPARE(fitWindowGeometry(screens.last(), straddling, QMargins(), false).geometry.x(), 1440);
+    QVERIFY(!windowGeometryNeedsRecovery(straddling, screens));
+    QVERIFY(!windowGeometryNeedsRecovery(QRect(-300, 100, 800, 600),
+                                         {QRect(-1440, 0, 1440, 900), screens.first()}));
+}
+
+void StoreWindowTest::missingScreenRecoversOnlyUnreachableWindows() {
+    const QRect remaining(0, 0, 1440, 900);
+    const QRect unplugged(1800, 100, 800, 600);
+    QVERIFY(windowGeometryNeedsRecovery(unplugged, {remaining}));
+    QVERIFY(remaining.contains(fitWindowGeometry(remaining, unplugged, QMargins(), false).geometry));
+    // Do not snap a window which is still partly visible, including at the seam.
+    QVERIFY(!windowGeometryNeedsRecovery(QRect(1439, 100, 800, 600), {remaining}));
+    QVERIFY(windowGeometryNeedsRecovery(QRect(1440, 100, 800, 600), {remaining}));
+    QVERIFY(!windowGeometryNeedsRecovery(unplugged, {}));
 }
 
 void StoreWindowTest::smallDetailsDrawerScrollsToPrimaryActions() {

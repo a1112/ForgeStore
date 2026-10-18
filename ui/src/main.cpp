@@ -58,7 +58,11 @@ int main(int argc, char **argv) {
     QObject::connect(window, &QWindow::widthChanged, &app, remember);
     QObject::connect(window, &QWindow::heightChanged, &app, remember);
     QObject::connect(window, &QWindow::screenChanged, &app, [window, fit](QScreen *target) {
-        if (window->visibility() == QWindow::Windowed) fit(target, window->geometry(), false);
+        if (window->visibility() != QWindow::Windowed) return;
+        QList<QRect> screens;
+        for (auto *screen : QGuiApplication::screens()) screens.append(screen->geometry());
+        const QRect requested = window->geometry();
+        if (windowGeometryNeedsRecovery(requested, screens)) fit(target, requested, false);
     });
     QObject::connect(&app, &QCoreApplication::aboutToQuit, &app, [&settings, &normalGeometry]() {
         settings->setValue(QStringLiteral("window/normalGeometry"), normalGeometry);
