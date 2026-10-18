@@ -1,18 +1,32 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
+import QtQuick.Window
 import "../translations/Strings.js" as Strings
 
 ApplicationWindow {
     id: root
-    component SafeLabel: Label { textFormat: Text.PlainText }
+    component SafeLabel: Label {
+        textFormat: Text.PlainText
+        Binding on color { when: root.highContrast; value: systemPalette.windowText }
+    }
+    component Surface: Rectangle {
+        Binding on color { when: root.highContrast; value: systemPalette.window }
+        Binding on border.color { when: root.highContrast; value: systemPalette.windowText }
+    }
     objectName: "forgeStoreWindow"
     width: 1040
     height: 700
     minimumWidth: 820
     minimumHeight: 580
     visible: false
-    color: "#0b101a"
+    color: "transparent"
+    property var effectsController: typeof windowEffects !== "undefined" ? windowEffects : null
+    readonly property bool highContrast: effectsController ? effectsController.highContrast : false
+    readonly property bool materialActive: effectsController ? effectsController.active : false
+    readonly property int windowRadius: effectsController ? effectsController.cornerRadius
+        : (visibility === Window.Maximized || visibility === Window.FullScreen ? 0 : 10)
+    SystemPalette { id: systemPalette }
     property string language: "zh_CN"
     property var labels: Strings.forLanguage(language)
     title: labels.title
@@ -79,26 +93,47 @@ ApplicationWindow {
     Shortcut { sequence: "Ctrl+F"; onActivated: { root.page = "discover"; searchField.forceActiveFocus() } }
     Shortcut { sequence: "Ctrl+R"; onActivated: storeBridge.refresh() }
     Shortcut { sequence: "Escape"; onActivated: details.close() }
+    Shortcut { sequences: [StandardKey.Close]; enabled: !details.visible; onActivated: root.close() }
+    Shortcut {
+        sequences: [StandardKey.FullScreen]
+        enabled: !details.visible
+        onActivated: root.visibility === Window.FullScreen ? root.showNormal() : root.showFullScreen()
+    }
 
-    background: Rectangle { color: "#0b101a" }
+    background: Surface {
+        objectName: "windowSurface"
+        color: root.materialActive ? "#b30b101a" : "#0b101a"
+        radius: root.windowRadius
+    }
 
-    header: Rectangle {
-        height: 70
-        color: "#142135"
+    header: Surface {
+        height: 110
+        color: root.materialActive ? "#b3142135" : "#142135"
+        radius: root.windowRadius
         border.color: "#283b56"
+        Surface { anchors.bottom: parent.bottom; width: parent.width; height: root.windowRadius; color: parent.color }
+        WindowChrome {
+            width: parent.width
+            height: 40
+            targetWindow: root
+            labels: root.labels
+            effects: root.effectsController
+            foreground: root.highContrast ? systemPalette.windowText : "#f2f6fc"
+        }
         RowLayout {
             anchors.fill: parent
+            anchors.topMargin: 40
             anchors.leftMargin: 24
             anchors.rightMargin: 22
             spacing: 16
-            Rectangle {
+            Surface {
                 width: 36; height: 36; radius: 11
                 color: "#3987d8"
                 SafeLabel { anchors.centerIn: parent; text: "◆"; color: "white"; font.pixelSize: 20 }
             }
             ColumnLayout {
                 spacing: 0
-                SafeLabel { text: "Forge"; color: "#f2f6fc"; font.pixelSize: 21; font.bold: true }
+                SafeLabel { objectName: "storeBrandLabel"; text: "Forge"; color: "#f2f6fc"; font.pixelSize: 21; font.bold: true }
                 SafeLabel { text: root.labels.title; color: "#a9bed8"; font.pixelSize: 12 }
             }
             Item { Layout.fillWidth: true }
@@ -120,7 +155,7 @@ ApplicationWindow {
         anchors.margins: 16
         spacing: 16
 
-        Rectangle {
+        Surface {
             Layout.preferredWidth: 194
             Layout.fillHeight: true
             radius: 17
@@ -157,7 +192,7 @@ ApplicationWindow {
             }
         }
 
-        Rectangle {
+        Surface {
             Layout.fillWidth: true
             Layout.fillHeight: true
             radius: 17
@@ -218,7 +253,7 @@ ApplicationWindow {
                         Repeater {
                             objectName: "discoverRepeater"
                             model: root.visibleEntries
-                            delegate: Rectangle {
+                            delegate: Surface {
                                 required property var modelData
                                 Layout.fillWidth: true
                                 implicitHeight: 106
@@ -229,7 +264,7 @@ ApplicationWindow {
                                     anchors.fill: parent
                                     anchors.margins: 14
                                     spacing: 14
-                                    Rectangle {
+                                    Surface {
                                         width: 50; height: 50; radius: 12
                                         color: root.backendKey(modelData) === "compatforge" ? "#386fd1" :
                                                root.backendKey(modelData) === "flatpak" ? "#8059bd" : "#c27b36"
@@ -296,7 +331,7 @@ ApplicationWindow {
                         Repeater {
                             objectName: "installedRepeater"
                             model: root.installed
-                            delegate: Rectangle {
+                            delegate: Surface {
                                 required property var modelData
                                 property var entry: root.findEntry(modelData.appId)
                                 Layout.fillWidth: true; implicitHeight: 92; radius: 13
@@ -355,7 +390,7 @@ ApplicationWindow {
                         Repeater {
                             objectName: "queueRepeater"
                             model: root.jobs
-                            delegate: Rectangle {
+                            delegate: Surface {
                                 required property var modelData
                                 Layout.fillWidth: true; implicitHeight: 112; radius: 13
                                 color: "#1b2d45"; border.color: "#34506f"
@@ -410,7 +445,7 @@ ApplicationWindow {
                         Repeater {
                             objectName: "diagnosticsRepeater"
                             model: Object.keys(root.backends).sort()
-                            delegate: Rectangle {
+                            delegate: Surface {
                                 required property string modelData
                                 property var record: root.backends[modelData]
                                 Layout.fillWidth: true; implicitHeight: 74; radius: 12
@@ -431,9 +466,11 @@ ApplicationWindow {
         }
     }
 
-    footer: Rectangle {
+    footer: Surface {
         height: 34
-        color: "#0b101a"
+        color: root.materialActive ? "#b30b101a" : "#0b101a"
+        radius: root.windowRadius
+        Surface { anchors.top: parent.top; width: parent.width; height: root.windowRadius; color: parent.color }
         SafeLabel {
             anchors.fill: parent
             anchors.leftMargin: 24
@@ -451,7 +488,7 @@ ApplicationWindow {
         width: Math.min(root.width * 0.42, 430)
         height: root.height
         modal: true
-        background: Rectangle { color: "#142135"; border.color: "#34506f" }
+        background: Surface { color: "#142135"; border.color: "#34506f" }
         ScrollView {
             id: detailsScroll
             objectName: "detailsScroll"
@@ -511,5 +548,15 @@ ApplicationWindow {
                 }
             }
         }
+    }
+
+    ResizeHandles {
+        objectName: "windowResizeHandles"
+        // ApplicationWindow.contentItem excludes its header/footer. Cover the full window.
+        parent: root.contentItem.parent
+        anchors.fill: parent
+        targetWindow: root
+        z: 100
+        enabled: !details.visible && Qt.platform.os !== "osx" && root.visibility === Window.Windowed
     }
 }

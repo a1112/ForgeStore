@@ -1,5 +1,6 @@
 #include "StoreBridge.h"
 #include "WindowGeometry.h"
+#include "windoweffects.h"
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
@@ -22,16 +23,25 @@ int main(int argc, char **argv) {
 
     const QString runtimeDirectory = qEnvironmentVariable("XDG_RUNTIME_DIR");
     StoreBridge bridge(runtimeDirectory + QStringLiteral("/forge-store/store.sock"));
+    WindowEffects effects;
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty(QStringLiteral("storeBridge"), &bridge);
+    engine.rootContext()->setContextProperty(QStringLiteral("windowEffects"), &effects);
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreationFailed, &app,
                      []() { QCoreApplication::exit(1); }, Qt::QueuedConnection);
     engine.load(QUrl(QStringLiteral("qrc:/forge-store/qml/Main.qml")));
     if (engine.rootObjects().isEmpty()) return 1;
     auto *window = qobject_cast<QWindow *>(engine.rootObjects().first());
     if (!window) return 1;
+#ifdef Q_OS_MACOS
+    // AppKit retains native resize/fullscreen behavior behind our visible chrome.
+    window->setFlags(Qt::Window);
+#else
+    window->setFlags(Qt::Window | Qt::FramelessWindowHint);
+#endif
     // Allocate the hidden native window before measuring its frame margins.
     window->create();
+    effects.setWindow(window);
     const QString settingsPath = qEnvironmentVariable("FORGE_STORE_WINDOW_SETTINGS_PATH");
     std::unique_ptr<QSettings> settings = settingsPath.isEmpty()
         ? std::make_unique<QSettings>(QStringLiteral("Forge"), QStringLiteral("ForgeStore"))
